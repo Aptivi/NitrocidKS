@@ -1,3 +1,7 @@
+# WARNING
+
+This version is no longer maintained; it has reached EOL since 9/6/2019. We recommend that you use the latest version.
+
 # |---+-> Kernel Simulator <-+---|
 
 The build is currently [![Build status](https://ci.appveyor.com/api/projects/status/9anm0jc0x9raoy8x/branch/master?svg=true)](https://ci.appveyor.com/project/EoflaOE/kernel-simulator/branch/master) [![Build Status](https://travis-ci.org/EoflaOE/Kernel-Simulator.svg?branch=master)](https://travis-ci.org/EoflaOE/Kernel-Simulator)
