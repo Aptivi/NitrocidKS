@@ -1,3 +1,7 @@
+# WARNING
+
+This version is no longer maintained; it has reached EOL since 3/31/2019. We recommend that you use the latest version.
+
 # |---+-> Kernel Simulator <-+---|
 
 INFO: This kernel simulator simulates our **future** kernel that is planned by us.
