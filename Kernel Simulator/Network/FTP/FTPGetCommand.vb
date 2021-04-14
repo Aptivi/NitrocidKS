@@ -199,7 +199,7 @@ Public Module FTPGetCommand
                             W("/", False, ColTypes.HelpCmd)
                         ElseIf DirListFTP.Type = FtpFileSystemObjectType.Link Then
                             W(">> ", False, ColTypes.HelpCmd)
-                            W(ClientFTP.DereferenceLink(DirListFTP), False, ColTypes.HelpDef)
+                            W(DirListFTP.LinkTarget, False, ColTypes.HelpDef)
                         End If
                         Console.WriteLine()
                     Next
