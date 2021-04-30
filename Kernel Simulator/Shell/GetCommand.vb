@@ -88,7 +88,7 @@ Module GetCommand
                     Next
                     Dim strArgs As String = requestedCommand.Substring(requestedCommand.IndexOf(" "), c)
                     Dim args() As String = strArgs.Split({" "c}, StringSplitOptions.RemoveEmptyEntries)
-                    If (args.Count - 1 = 0) Then
+                    If (args.Count - 1 >= 0) Then
                         HelpSystem.ShowHelp(args(0))
                     Else
                         Wln("Usage: help [command]" + vbNewLine + _
