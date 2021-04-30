@@ -515,50 +515,6 @@ Module GetCommand
                     Wln("Usage: md/mkdir <anything>", "neutralText")
                 End If
 
-            ElseIf (requestedCommand.Substring(0, index) = "panicsim") Then
-
-                'Kernel panic simulator
-                If (requestedCommand = "panicsim") Then
-                    Wln("Prompts are now deprecated and removed in future release.", "neutralText")
-                    PanicSim.panicPrompt()
-                Else
-                    Dim words = requestedCommand.Split({" "c})
-                    Dim c As Integer
-                    For arg = 1 To words.Count - 1
-                        c = c + words(arg).Count + 1
-                    Next
-                    Dim strArgs As String = requestedCommand.Substring(requestedCommand.IndexOf(" "), c)
-                    Dim args() As String = strArgs.Split({" "c}, StringSplitOptions.RemoveEmptyEntries)
-                    If (args.Count - 1 = 0) Then
-                        KernelError(CChar("C"), False, 0, args(0))
-                    ElseIf (args.Count - 1 = 1) Then
-                        If (args(1) <> "C") Then
-                            KernelError(CChar(args(1)), True, 30, args(0))
-                        ElseIf (args(1) = "C") Then
-                            KernelError(CChar(args(1)), False, 0, args(0))
-                        ElseIf (args(1) = "D") Then
-                            KernelError(CChar(args(1)), True, 5, args(0))
-                        Else
-                            Wln("Usage: panicsim <message> [S/F/D/[C]/U] [RebootTime:Seconds]" + vbNewLine + _
-                                "       panicsim: to be prompted about panic simulator options.", "neutralText")
-                        End If
-                    ElseIf (args.Count - 1 = 2) Then
-                        If (CDbl(args(2)) <= 3600 And (args(1) <> "C" Or args(1) <> "D")) Then
-                            KernelError(CChar(args(1)), True, CLng(args(2)), args(0))
-                        ElseIf (CDbl(args(2)) <= 3600 And args(1) = "C") Or (CDbl(args(2)) <= 0 And args(1) = "C") Then
-                            KernelError(CChar(args(1)), False, 0, args(0))
-                        ElseIf (CDbl(args(2)) <= 5 And args(1) = "D") Then
-                            KernelError(CChar(args(1)), True, CLng(args(2)), args(0))
-                        Else
-                            Wln("Usage: panicsim <message> [S/F/D/[C]/U] [RebootTime:Seconds]" + vbNewLine + _
-                                "       panicsim: to be prompted about panic simulator options.", "neutralText")
-                        End If
-                    Else
-                        Wln("Usage: panicsim <message> [S/F/D/[C]/U] [RebootTime:Seconds]" + vbNewLine + _
-                            "       panicsim: to be prompted about panic simulator options.", "neutralText")
-                    End If
-                End If
-
             ElseIf (requestedCommand.Substring(0, index) = "perm") Then
 
                 If (requestedCommand = "perm") Then

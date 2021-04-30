@@ -24,7 +24,6 @@
     Public lsNetByTreeCmdDesc As String = "Lists all network addresses on host using the tree"
     Public makeDirectoryCmdDesc As String = "Creates a directory (No prompt)"
     Public netInfoCmdDesc As String = "Lists information about all available interfaces"
-    Public panicSimCmdDesc As String = "Kernel Panic Simulator (real)"
     Public permCmdDesc As String = "Manage permissions for users (Only admins can access this command)"
     Public pingCmdDesc As String = "Check to see if specified address is available"
     Public readCmdDesc As String = "Writes file contents to the console"

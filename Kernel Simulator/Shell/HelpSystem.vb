@@ -26,22 +26,22 @@ Module HelpSystem
             'TODO: Modification Parser for mods with commands (Help, Commands, and everything).
             If (simHelp = False) Then
                 'It is messy. It will actually be converted to dictionary in 0.0.5.
-                Wln("- adduser: {0}" + vbNewLine + "- annoying-sound (Alias: beep): {1}" + vbNewLine + "- arginj: {2}" + vbNewLine + "- calc: {3}" + vbNewLine + _
-                    "- cdir (Alias: currentdir): {4}" + vbNewLine + "- changedir (Aliases: chdir, cd): {5}" + vbNewLine + "- chhostname: {6}" + vbNewLine + _
-                    "- chmotd: {7}" + vbNewLine + "- choice: {8}" + vbNewLine + "- chpwd: {9}" + vbNewLine + "- chusrname: {10}" + vbNewLine + "- cls: {11}" + vbNewLine + _
-                    "- debuglog: {12}" + vbNewLine + "- disco: {13}" + vbNewLine + "- echo: {14}" + vbNewLine + "- help: {15}" + vbNewLine + "- hwprobe: {16}" + vbNewLine + _
-                    "- list (Alias: ls): {17}" + vbNewLine + "- logout: {18}" + vbNewLine + "- lsdrivers: {19}" + vbNewLine + "- lsnet: {20}" + vbNewLine + _
-                    "- lsnettree: {21}" + vbNewLine + "- md (Alias: mkdir): {22}" + vbNewLine + "- netinfo: {23}" + vbNewLine + "- panicsim: {24}" + vbNewLine + _
-                    "- perm: {25}" + vbNewLine + "- ping: {26}" + vbNewLine + "- read: {27}" + vbNewLine + "- reboot: {28}" + vbNewLine + "- reloadconfig: {29}" + vbNewLine + _
-                    "- rd (Alias: rmdir): {30}" + vbNewLine + "- rmuser: {31}" + vbNewLine + "- scical: {32}" + vbNewLine + "- setcolors: {33}" + vbNewLine + _
-                    "- setthemes: {34}" + vbNewLine + "- showmotd: {35}" + vbNewLine + "- showtd: {36}" + vbNewLine + "- shutdown: {37}" + vbNewLine + _
-                    "- sysinfo: {38}" + vbNewLine + "- unitconv: {39}" + vbNewLine + "- version: {40}" + vbNewLine + vbNewLine + _
-                    "* You can use multiple commands at the same time using the colon between commands." + vbNewLine + _
-                    "* Pre-defined aliases will be removed in 0.0.5.", "neutralText", _
-                    adduserCmdDesc, annoyingSoundCmdDesc, argInjCmdDesc, calcCmdDesc, currentDirCmdDesc, changeDirCmdDesc, chHostNameCmdDesc, chMotdCmdDesc, _
-                    choiceCmdDesc, chPwdCmdDesc, chUsrNameCmdDesc, clsCmdDesc, debugLogCmdDesc, discoCmdDesc, echoCmdDesc, helpCmdDesc, hwProbeCmdDesc, listCmdDesc, _
-                    logoutCmdDesc, lsDriversCmdDesc, lsnetCmdDesc, lsNetByTreeCmdDesc, makeDirectoryCmdDesc, netInfoCmdDesc, panicSimCmdDesc, permCmdDesc, pingCmdDesc, _
-                    readCmdDesc, rebootCmdDesc, reloadConfigCmdDesc, rmDirCmdDesc, rmUserCmdDesc, sciCalCmdDesc, setColorsCmdDesc, setThemesCmdDesc, showMotdCmdDesc, _
+                Wln("- adduser: {0}" + vbNewLine + "- annoying-sound (Alias: beep): {1}" + vbNewLine + "- arginj: {2}" + vbNewLine + "- calc: {3}" + vbNewLine +
+                    "- cdir (Alias: currentdir): {4}" + vbNewLine + "- changedir (Aliases: chdir, cd): {5}" + vbNewLine + "- chhostname: {6}" + vbNewLine +
+                    "- chmotd: {7}" + vbNewLine + "- choice: {8}" + vbNewLine + "- chpwd: {9}" + vbNewLine + "- chusrname: {10}" + vbNewLine + "- cls: {11}" + vbNewLine +
+                    "- debuglog: {12}" + vbNewLine + "- disco: {13}" + vbNewLine + "- echo: {14}" + vbNewLine + "- help: {15}" + vbNewLine + "- hwprobe: {16}" + vbNewLine +
+                    "- list (Alias: ls): {17}" + vbNewLine + "- logout: {18}" + vbNewLine + "- lsdrivers: {19}" + vbNewLine + "- lsnet: {20}" + vbNewLine +
+                    "- lsnettree: {21}" + vbNewLine + "- md (Alias: mkdir): {22}" + vbNewLine + "- netinfo: {23}" + vbNewLine + "- panicsim: {24}" + vbNewLine +
+                    "- perm: {24}" + vbNewLine + "- ping: {25}" + vbNewLine + "- read: {26}" + vbNewLine + "- reboot: {27}" + vbNewLine + "- reloadconfig: {28}" + vbNewLine +
+                    "- rd (Alias: rmdir): {29}" + vbNewLine + "- rmuser: {30}" + vbNewLine + "- scical: {31}" + vbNewLine + "- setcolors: {32}" + vbNewLine +
+                    "- setthemes: {33}" + vbNewLine + "- showmotd: {34}" + vbNewLine + "- showtd: {35}" + vbNewLine + "- shutdown: {36}" + vbNewLine +
+                    "- sysinfo: {37}" + vbNewLine + "- unitconv: {38}" + vbNewLine + "- version: {39}" + vbNewLine + vbNewLine +
+                    "* You can use multiple commands at the same time using the colon between commands." + vbNewLine +
+                    "* Pre-defined aliases will be removed in 0.0.5.", "neutralText",
+                    adduserCmdDesc, annoyingSoundCmdDesc, argInjCmdDesc, calcCmdDesc, currentDirCmdDesc, changeDirCmdDesc, chHostNameCmdDesc, chMotdCmdDesc,
+                    choiceCmdDesc, chPwdCmdDesc, chUsrNameCmdDesc, clsCmdDesc, debugLogCmdDesc, discoCmdDesc, echoCmdDesc, helpCmdDesc, hwProbeCmdDesc, listCmdDesc,
+                    logoutCmdDesc, lsDriversCmdDesc, lsnetCmdDesc, lsNetByTreeCmdDesc, makeDirectoryCmdDesc, netInfoCmdDesc, permCmdDesc, pingCmdDesc,
+                    readCmdDesc, rebootCmdDesc, reloadConfigCmdDesc, rmDirCmdDesc, rmUserCmdDesc, sciCalCmdDesc, setColorsCmdDesc, setThemesCmdDesc, showMotdCmdDesc,
                     showTdCmdDesc, shutdownCmdDesc, sysInfoCmdDesc, unitConvCmdDesc, versionCmdDesc)
             Else
                 Wln(String.Join(", ", availableCommands), "neutralText")
@@ -146,11 +146,6 @@ Module HelpSystem
         ElseIf (command.Contains("netinfo")) Then
 
             Wln("Usage: netinfo: Get every network information", "neutralText")
-
-        ElseIf (command.Contains("panicsim")) Then
-
-            Wln("Usage: panicsim <message> [S/F/D/[C]/U] [RebootTime:Seconds]" + vbNewLine + _
-                "       panicsim: to be prompted about panic simulator options. (deprecated)", "neutralText")
 
         ElseIf (command.Contains("perm")) Then
 
