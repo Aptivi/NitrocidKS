@@ -156,6 +156,8 @@ Please note that dates mentioned here is for development date changes only. If y
 
 **7/17/2018 - 0.0.4.7:** Better Error Handling for "ping" command, Fixed "unitconv" usage message
 
+**4/30/2021 - 0.0.4.8:** Removed panicsim, Fixed time and date not showing on reboot, Now help displays "no help" when command is not found, Fixed help usage showing if the command and arguments are written
+
 **7/21/2018 - 0.0.4.9:** Better Error Handling for "unitconv" command, Added temporary aliases (not final because there is no "showaliases" command), fix some bugs, added time zones ("showtdzone", and show current time zone in "showtd"), Added "alias", "chmal", and "showmal", Made MOTD after login customizable, Allowed special characters on passwords to ensure security, Made Kernel Simulator single-instance to avoid interferences, and more.
 
 **8/1/2018 - 0.0.4.10:** Fused "sysinfo" with "lsdrivers", Improved Help definition (used dictionary for preparation for modding), added "lscomp" which can list all online and offline computers by names only, Added error handler for "lsnet" and "lsnettree", fixed grammatical mistakes in "lsnet" and "lsnettree", added mods (commands not implemented yet - <modname>.m), added screensavers, changed the behavior of showing MOTD, fixed bug where instance checking after reboot of the kernel would say that it has more than one instance and should close, and more.
@@ -267,6 +269,8 @@ Please note that dates mentioned here is for development date changes only. If y
 **5/19/2020 - 0.0.10:** Updated libraries, Fixed mods not being able to access the Encryption class, Simplified encryption code for mods, improved list of filesystems, fixed FTP crash when faced with multiple profiles, Now FTP addresses starting with ftpes:// will also be accepted, Made FTP profile listing more clear, Now the IMAP client will tell you if there's an attachment when reading, fixed misleading message when reading the first message, fixed IMAP shell crash when idle, added scripting support, now error messages have their own color, Restored `echo`, `beep`, and `choice` commands from 0.0.1 for script implementation, Added `input` command, Now IMAP client shows newest messages first, Fixed unexpected kernel crash when the IMAP shell crashed, Added debugging messages in IMAP shell, Added other folder support to IMAP client, Added code documentation for modders and developers using Visual Studio, Added usage commands support for FTP, Added new events for mods
 
 **7/8/2020 - 0.0.10.1:** Fixed OutOfMemoryException when hashing large files, Added a new CI test that encrypts a string
+
+**4/14/2021 - 0.0.10.2:** Fixed NullReferenceException when trying to get symlink target
 
 Items with asterisk means that the specified change/fix will be backported to previous version of KS which doesn't have it (only for Ubuntu PPA version, backports as Debian patches)
 
