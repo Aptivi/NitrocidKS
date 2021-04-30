@@ -93,6 +93,9 @@ Module Kernel
                 InitializeTimeDate()
                 TimeDateIsSet = True
             End If
+            If (Quiet = False) Then
+                ShowTime()
+            End If
             InitializeDirectoryFile.Init()
             Wdbg("Kernel initialized, version {0}.", True, KernelVersion)
             If (Quiet = True Or quietProbe = True) Then
