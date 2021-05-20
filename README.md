@@ -1,3 +1,7 @@
+# WARNING
+
+This version is no longer maintained; it has reached EOL since 5/19/2021. We recommend that you use the latest version.
+
 # |---+-> Kernel Simulator <-+---|
 
 ![Glitter Matrix screensaver](https://i.imgur.com/whpea5H.png)
