@@ -75,7 +75,6 @@ Public Module HelpSystem
                                                               {"showtd", DoTranslation("Shows date and time", currentLang)},
                                                               {"showtdzone", DoTranslation("Shows date and time in zones", currentLang)},
                                                               {"shutdown", DoTranslation("The kernel will be shut down", currentLang)},
-                                                              {"speak", DoTranslation("Speaks your string using the default voice", currentLang)},
                                                               {"spellbee", DoTranslation("See if you can spell words correctly on time", currentLang)},
                                                               {"sshell", DoTranslation("Connects to an SSH server.", currentLang)},
                                                               {"sumfile", DoTranslation("Calculates file sums.", currentLang)},

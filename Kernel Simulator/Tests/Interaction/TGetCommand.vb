@@ -21,7 +21,6 @@ Imports System.IO
 Imports System.Security.Cryptography
 Imports System.Text
 Imports System.Text.RegularExpressions
-Imports LibVLCSharp.Shared
 Imports Microsoft.VisualBasic.FileIO
 
 Module TGetCommand
@@ -180,16 +179,6 @@ Module TGetCommand
         ElseIf Cmd = "colortruetest" Then 'Usage: colortruetest <R;G;B>
             Dim esc As Char = GetEsc()
             Console.WriteLine(esc + "[38;2;" + FullArgsL(0) + "mIndex " + FullArgsL(0))
-        ElseIf Cmd = "soundtest" Then 'Usage: soundtest <file>
-            Core.Initialize()
-            Dim MLib As New LibVLC
-            Dim MP As New MediaPlayer(MLib)
-            AddHandler MLib.Log, Sub(sender, e) W($"{e.Level}@{e.Module}: {e.Message}", True, ColTypes.Neutral)
-            Dim MFile As New Media(MLib, FullArgs)
-            MP.Media = MFile
-            MP.Play()
-            While MP.State = VLCState.Playing
-            End While
         ElseIf Cmd = "sendnot" Then 'Usage: sendnot <Priority> <title> <desc>
             Dim Notif As New Notification With {.Priority = FullArgsL(0),
                                                 .Title = FullArgsQ(1),
