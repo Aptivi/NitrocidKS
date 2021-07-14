@@ -22,11 +22,8 @@ Imports System.Text
 Public Module Login
 
     'Variables
-    Public userword As New Dictionary(Of String, String)()      'List of usernames and passwords
-    Public answeruser As String                                 'Input of username
-    Public answerpass As String                                 'Input of password
-    Public password As String                                   'Password for user we're logging in to
     Public signedinusrnm As String                              'Username that is signed in
+    Friend userword As New Dictionary(Of String, String)()      'List of usernames and passwords
     Private showMOTDOnceFlag As Boolean = True                  'Show MOTD every LoginPrompt() session
 
     Sub LoginPrompt()
@@ -54,7 +51,7 @@ Public Module Login
             End If
 
             'Generate user list
-            If ShowAvailableUsers Then W(DoTranslation("Available usernames: {0}", currentLang), True, ColTypes.Neutral, String.Join(", ", userword.Keys))
+            If ShowAvailableUsers Then W(DoTranslation("Available usernames: {0}", currentLang), True, ColTypes.Neutral, String.Join(", ", ListAllUsers))
 
             'Read MOTD and MAL
             ReadMOTDFromFile(MessageType.MOTD)
@@ -69,7 +66,7 @@ Public Module Login
 
             'Prompt user to login
             W(DoTranslation("Username: ", currentLang), False, ColTypes.Input)
-            answeruser = Console.ReadLine()
+            Dim answeruser As String = Console.ReadLine()
 
             'Parse input
             If InStr(answeruser, " ") > 0 Then
@@ -101,7 +98,6 @@ Public Module Login
         'Prompts user to enter a user's password
         While True
             'Check to see if reboot is requested
-            answerpass = ""
             If RebootRequested = True Then
                 Wdbg("W", "Reboot has been requested. Exiting...")
                 RebootRequested = False
@@ -109,7 +105,7 @@ Public Module Login
             End If
 
             'Get the password from dictionary
-            password = userword.Item(usernamerequested)
+            Dim password As String = userword.Item(usernamerequested)
 
             'Check if there's a password
             If Not password = "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855" Then 'No password
@@ -118,7 +114,7 @@ Public Module Login
                 W(DoTranslation("{0}'s password: ", currentLang), False, ColTypes.Input, usernamerequested)
 
                 'Get input
-                answerpass = ReadLineNoInput("*"c)
+                Dim answerpass As String = ReadLineNoInput("*"c)
                 Console.WriteLine()
 
                 'Compute password hash
@@ -161,12 +157,7 @@ Public Module Login
             Exit Sub
         End If
 
-        'Resets inputs
-        answerpass = Nothing
-        answeruser = Nothing
-
         'Resets outputs
-        password = Nothing
         LoginFlag = False
         signedinusrnm = Nothing
 

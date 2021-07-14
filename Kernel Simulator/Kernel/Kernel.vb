@@ -140,8 +140,7 @@ Public Module Kernel
                 ElseIf LoginFlag = True And maintenance = True Then
                     LoginFlag = False
                     W(DoTranslation("Enter the admin password for maintenance.", currentLang), True, ColTypes.Neutral)
-                    answeruser = "root"
-                    ShowPasswordPrompt(answeruser)
+                    ShowPasswordPrompt("root")
                 End If
             Catch ex As Exception
                 If DebugMode = True Then

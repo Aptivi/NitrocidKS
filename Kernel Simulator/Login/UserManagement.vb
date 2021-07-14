@@ -252,4 +252,8 @@ Public Module UserManagement
 
     End Sub
 
+    Public Function ListAllUsers() As List(Of String)
+        Return userword.Keys.ToList
+    End Function
+
 End Module

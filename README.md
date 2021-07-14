@@ -6,8 +6,6 @@
 
 This simulator simulates our **future** kernel that is planned by us and is not a final planned version of Kernel, since it was minimal. KS _will_ continue to be developed, even if we made the real PC version of Kernel.
 
-The PPA for KS will come shortly as promised.
-
 ## |-----+--> _Notices_ <--+-----|
 
 - If you are going to use Chinese/Japanese/Korean language in their translated forms, use `SimSun` or other appropriate font.
@@ -250,7 +248,7 @@ Please note that dates mentioned here is for development date changes only. If y
 
 **3/22/2020 - 0.0.8.5:** Updated libraries, Removed filesystem structure parsing, Permanent list of usernames and passwords, Now, "Command defined by" part will update everytime a user wants to change language, Fixed CPU usage being high at all times; the Notifications will be listened to every 10 milliseconds instead of instantly, Added 24-bit true color testing test command. Use `testtruecolor <R;G;B>` to test, implying that R, G, and B isn't greater than 255 or less than 0, You can see passwords as stars, Added Bengali and Punjabi languages, Added `args` cmdline argument in case config can't be used, Made `search` show line number on every match, Added forgotten `search` help command, Added SHA1 algorithm to `sumfile` and test shell, Added `sumfiles` command
 
-**7/13/2021 - 0.0.8.6:** Removed `speak` command, Improved screensaver code (from 0.0.16)
+**7/14/2021 - 0.0.8.6:** Removed `speak` command, Improved screensaver code (from 0.0.16), Backported commit 8f75561
 
 ## |-----+--> _Contributors_ <--+-----|
 
