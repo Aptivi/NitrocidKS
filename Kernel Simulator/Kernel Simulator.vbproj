@@ -260,6 +260,7 @@
     <Compile Include="Misc\Scripts\BeepSynth.vb" />
     <Compile Include="Misc\StringEvaluators.vb" />
     <Compile Include="Misc\StringExtensions.vb" />
+    <Compile Include="Misc\Threading\ThreadManager.vb" />
     <Compile Include="Misc\Writers\DebugLogPrint.vb" />
     <Compile Include="Misc\Writers\TextWriterColor.vb" />
     <Compile Include="Modifications\ModParser.vb" />

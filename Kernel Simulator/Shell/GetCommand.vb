@@ -786,7 +786,7 @@ Public Module GetCommand
                 Dim modPath As String = paths("Mods")
                 If requestedCommand <> "setsaver" Then
                     If args.Count >= 0 Then
-                        If ScrnSvrdb.ContainsKey(strArgs) Then
+                        If ScrnSvrdb.ContainsKey(strArgs) Or CSvrdb.ContainsKey(strArgs) Then
                             SetDefaultScreensaver(strArgs)
                         Else
                             If FileIO.FileSystem.FileExists($"{modPath}{strArgs}") And Not SafeMode Then
