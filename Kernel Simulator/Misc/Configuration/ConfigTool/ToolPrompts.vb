@@ -258,7 +258,7 @@ Public Module ToolPrompts
                             If GetValue("setRootPasswd") Then
                                 KeyType = SettingsKeyType.SString
                                 KeyVar = "RootPasswd"
-                                W("*) " + DoTranslation("Write the root password to be set. Don't worry; the password are shown as stars.", currentLang), True, ColTypes.Neutral)
+                                W(DoTranslation("Write the root password to be set. Don't worry; the password are shown as stars.", currentLang), True, ColTypes.Neutral)
                             Else
                                 W("X) " + DoTranslation("Enable ""Change Root Password"" to use this option. Please go back.", currentLang) + vbNewLine, True, ColTypes.Err)
                             End If
@@ -340,19 +340,19 @@ Public Module ToolPrompts
                         Case 1 'Debug Port
                             KeyType = SettingsKeyType.SInt
                             KeyVar = "DebugPort"
-                            W("*) " + DoTranslation("Write a remote debugger port. It must be numeric, and must not be already used. Otherwise, remote debugger will fail to open the port.", currentLang), True, ColTypes.Neutral)
+                            W(DoTranslation("Write a remote debugger port. It must be numeric, and must not be already used. Otherwise, remote debugger will fail to open the port.", currentLang), True, ColTypes.Neutral)
                         Case 2 'Remote Debug Default Nick Prefix
                             KeyType = SettingsKeyType.SString
                             KeyVar = "RDebugDNP"
-                            W("*) " + DoTranslation("Write the default remote debug nickname prefix.", currentLang), True, ColTypes.Neutral)
+                            W(DoTranslation("Write the default remote debug nickname prefix.", currentLang), True, ColTypes.Neutral)
                         Case 3 'Download Retry Times
                             KeyType = SettingsKeyType.SInt
                             KeyVar = "DRetries"
-                            W("*) " + DoTranslation("Write how many times the ""get"" command should retry failed downloads. It must be numeric.", currentLang), True, ColTypes.Neutral)
+                            W(DoTranslation("Write how many times the ""get"" command should retry failed downloads. It must be numeric.", currentLang), True, ColTypes.Neutral)
                         Case 3 'Upload Retry Times
                             KeyType = SettingsKeyType.SInt
                             KeyVar = "URetries"
-                            W("*) " + DoTranslation("Write how many times the ""put"" command should retry failed uploads. It must be numeric.", currentLang), True, ColTypes.Neutral)
+                            W(DoTranslation("Write how many times the ""put"" command should retry failed uploads. It must be numeric.", currentLang), True, ColTypes.Neutral)
                         Case 4 'Show progress bar while downloading or uploading from "get" or "put" command
                             MaxKeyOptions = 2
                             KeyType = SettingsKeyType.SBoolean
@@ -389,7 +389,7 @@ Public Module ToolPrompts
                         Case 1 'Screensaver Timeout in ms
                             KeyType = SettingsKeyType.SInt
                             KeyVar = "ScrnTimeout"
-                            W("*) " + DoTranslation("Write when to launch screensaver after specified milliseconds. It must be numeric.", currentLang), True, ColTypes.Neutral)
+                            W(DoTranslation("Write when to launch screensaver after specified milliseconds. It must be numeric.", currentLang), True, ColTypes.Neutral)
                         Case 2 'ColorMix: Activate 255 colors
                             MaxKeyOptions = 2
                             KeyType = SettingsKeyType.SBoolean
@@ -470,7 +470,7 @@ Public Module ToolPrompts
                         Case 13 'Text shown
                             KeyType = SettingsKeyType.SString
                             KeyVar = "BouncingTextWrite"
-                            W("*) " + DoTranslation("Write any text you want shown. Shorter is better.", currentLang), True, ColTypes.Neutral)
+                            W(DoTranslation("Write any text you want shown. Shorter is better.", currentLang), True, ColTypes.Neutral)
                         Case Else
                             W("X) " + DoTranslation("Invalid key number entered. Please go back.", currentLang) + vbNewLine, True, ColTypes.Err)
                     End Select
@@ -486,7 +486,7 @@ Public Module ToolPrompts
                         Case 2 'Debug Size Quota in Bytes
                             KeyType = SettingsKeyType.SInt
                             KeyVar = "DebugQuota"
-                            W("*) " + DoTranslation("Write how many bytes can the debug log store. It must be numeric.", currentLang), True, ColTypes.Neutral)
+                            W(DoTranslation("Write how many bytes can the debug log store. It must be numeric.", currentLang), True, ColTypes.Neutral)
                         Case 3 'Size parse mode
                             MaxKeyOptions = 2
                             KeyType = SettingsKeyType.SBoolean
