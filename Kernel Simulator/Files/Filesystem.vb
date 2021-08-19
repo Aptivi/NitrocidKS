@@ -133,7 +133,11 @@ Public Module Filesystem
     Public Function NeutralizePath(ByVal Path As String)
         Path = Path.Replace("\", "/")
         If (EnvironmentOSType.Contains("Windows") And Not Path.Contains(":/")) Or (EnvironmentOSType.Contains("Unix") And Not Path.StartsWith("/")) Then
-            Path = $"{CurrDir}/{Path}"
+            If Not CurrDir.EndsWith("/") Then
+                Path = $"{CurrDir}/{Path}"
+            Else
+                Path = $"{CurrDir}{Path}"
+            End If
         End If
         Wdbg("I", "Prototype directory: {0}", Path)
         If Not CurrDir = "" Then
@@ -155,7 +159,11 @@ Public Module Filesystem
         Path = Path.Replace("\", "/")
         Source = Source.Replace("\", "/")
         If (EnvironmentOSType.Contains("Windows") And Not Path.Contains(":/")) Or (EnvironmentOSType.Contains("Unix") And Not Path.StartsWith("/")) Then
-            Path = $"{Source}/{Path}"
+            If Not CurrDir.EndsWith("/") Then
+                Path = $"{CurrDir}/{Path}"
+            Else
+                Path = $"{CurrDir}{Path}"
+            End If
         End If
         Wdbg("I", "Prototype directory: {0}", Path)
         If Not Source = "" Then
