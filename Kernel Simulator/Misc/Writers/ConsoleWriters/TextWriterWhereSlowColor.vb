@@ -82,15 +82,27 @@ Module TextWriterWhereSlowColor
             'Write text in another place slowly
             Dim OldLeft As Integer = CursorLeft
             Dim OldTop As Integer = CursorTop
+            Dim Paragraphs() As String = msg.SplitNewLines
             SetCursorPosition(Left, Top)
-            Dim chars As List(Of Char) = msg.ToCharArray.ToList
-            For Each ch As Char In chars
-                Thread.Sleep(MsEachLetter)
-                Write(ch)
+            For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
+                'We can now check to see if we're writing a letter past the console window width
+                Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
+                For Each ParagraphChar As Char In MessageParagraph
+                    Thread.Sleep(MsEachLetter)
+                    If CursorLeft = WindowWidth - 1 Then
+                        CursorTop += 1
+                        CursorLeft = Left
+                    End If
+                    Write(ParagraphChar)
+                    If Line Then WriteLine()
+                Next
+
+                'We're starting with the new paragraph, so we increase the CursorTop value by 1.
+                If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
+                    CursorTop += 1
+                    CursorLeft = Left
+                End If
             Next
-            If Line Then
-                WriteLine()
-            End If
             If [Return] Then SetCursorPosition(OldLeft, OldTop)
             If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then ResetColor()
             If colorType = ColTypes.Input And ColoredShell = True And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out)) Then
@@ -125,15 +137,27 @@ Module TextWriterWhereSlowColor
             'Write text in another place
             Dim OldLeft As Integer = CursorLeft
             Dim OldTop As Integer = CursorTop
+            Dim Paragraphs() As String = msg.SplitNewLines
             SetCursorPosition(Left, Top)
-            Dim chars As List(Of Char) = msg.ToCharArray.ToList
-            For Each ch As Char In chars
-                Thread.Sleep(MsEachLetter)
-                Write(ch)
+            For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
+                'We can now check to see if we're writing a letter past the console window width
+                Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
+                For Each ParagraphChar As Char In MessageParagraph
+                    Thread.Sleep(MsEachLetter)
+                    If CursorLeft = WindowWidth - 1 Then
+                        CursorTop += 1
+                        CursorLeft = Left
+                    End If
+                    Write(ParagraphChar)
+                    If Line Then WriteLine()
+                Next
+
+                'We're starting with the new paragraph, so we increase the CursorTop value by 1.
+                If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
+                    CursorTop += 1
+                    CursorLeft = Left
+                End If
             Next
-            If Line Then
-                WriteLine()
-            End If
             If [Return] Then SetCursorPosition(OldLeft, OldTop)
             If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then ResetColor()
             If ColoredShell = True And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out)) Then
@@ -169,15 +193,27 @@ Module TextWriterWhereSlowColor
             'Write text in another place
             Dim OldLeft As Integer = CursorLeft
             Dim OldTop As Integer = CursorTop
+            Dim Paragraphs() As String = msg.SplitNewLines
             SetCursorPosition(Left, Top)
-            Dim chars As List(Of Char) = msg.ToCharArray.ToList
-            For Each ch As Char In chars
-                Thread.Sleep(MsEachLetter)
-                Write(ch)
+            For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
+                'We can now check to see if we're writing a letter past the console window width
+                Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
+                For Each ParagraphChar As Char In MessageParagraph
+                    Thread.Sleep(MsEachLetter)
+                    If CursorLeft = WindowWidth - 1 Then
+                        CursorTop += 1
+                        CursorLeft = Left
+                    End If
+                    Write(ParagraphChar)
+                    If Line Then WriteLine()
+                Next
+
+                'We're starting with the new paragraph, so we increase the CursorTop value by 1.
+                If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
+                    CursorTop += 1
+                    CursorLeft = Left
+                End If
             Next
-            If Line Then
-                WriteLine()
-            End If
             If [Return] Then SetCursorPosition(OldLeft, OldTop)
             If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then ResetColor()
             If ColoredShell = True And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out)) Then
@@ -214,15 +250,27 @@ Module TextWriterWhereSlowColor
             'Write text in another place
             Dim OldLeft As Integer = CursorLeft
             Dim OldTop As Integer = CursorTop
+            Dim Paragraphs() As String = msg.SplitNewLines
             SetCursorPosition(Left, Top)
-            Dim chars As List(Of Char) = msg.ToCharArray.ToList
-            For Each ch As Char In chars
-                Thread.Sleep(MsEachLetter)
-                Write(ch)
+            For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
+                'We can now check to see if we're writing a letter past the console window width
+                Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
+                For Each ParagraphChar As Char In MessageParagraph
+                    Thread.Sleep(MsEachLetter)
+                    If CursorLeft = WindowWidth - 1 Then
+                        CursorTop += 1
+                        CursorLeft = Left
+                    End If
+                    Write(ParagraphChar)
+                    If Line Then WriteLine()
+                Next
+
+                'We're starting with the new paragraph, so we increase the CursorTop value by 1.
+                If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
+                    CursorTop += 1
+                    CursorLeft = Left
+                End If
             Next
-            If Line Then
-                WriteLine()
-            End If
             If [Return] Then SetCursorPosition(OldLeft, OldTop)
             If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then ResetColor()
             If ColoredShell = True And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out)) Then
@@ -260,15 +308,27 @@ Module TextWriterWhereSlowColor
             'Write text in another place
             Dim OldLeft As Integer = CursorLeft
             Dim OldTop As Integer = CursorTop
+            Dim Paragraphs() As String = msg.SplitNewLines
             SetCursorPosition(Left, Top)
-            Dim chars As List(Of Char) = msg.ToCharArray.ToList
-            For Each ch As Char In chars
-                Thread.Sleep(MsEachLetter)
-                Write(ch)
+            For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
+                'We can now check to see if we're writing a letter past the console window width
+                Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
+                For Each ParagraphChar As Char In MessageParagraph
+                    Thread.Sleep(MsEachLetter)
+                    If CursorLeft = WindowWidth - 1 Then
+                        CursorTop += 1
+                        CursorLeft = Left
+                    End If
+                    Write(ParagraphChar)
+                    If Line Then WriteLine()
+                Next
+
+                'We're starting with the new paragraph, so we increase the CursorTop value by 1.
+                If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
+                    CursorTop += 1
+                    CursorLeft = Left
+                End If
             Next
-            If Line Then
-                WriteLine()
-            End If
             If [Return] Then SetCursorPosition(OldLeft, OldTop)
             If BackgroundColor.PlainSequence = "0" Or BackgroundColor.PlainSequence = "0;0;0" Then ResetColor()
             If ColoredShell = True And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out)) Then
