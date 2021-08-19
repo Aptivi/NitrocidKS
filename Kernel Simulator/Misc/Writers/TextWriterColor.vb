@@ -229,14 +229,31 @@ Public Module TextWriterColor
             Write(esc + "[48;5;" + CStr(backgroundColor) + "m")
         End If
 
-        'Parse variables ({0}, {1}, ...) in the "text" string variable. (Used as a workaround for Linux)
-        msg = msg.FormatString(vars)
+        'Format the message as necessary
+        If Not vars.Length = 0 Then msg = String.Format(msg, vars)
 
-        'Write text in another place
+        'Write text in another place. By the way, we check the text for newlines and console width excess
         Dim OldLeft As Integer = CursorLeft
         Dim OldTop As Integer = CursorTop
+        Dim Paragraphs() As String = msg.SplitNewLines
         SetCursorPosition(Left, Top)
-        Write(msg)
+        For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
+            'We can now check to see if we're writing a letter past the console window width
+            Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
+            For Each ParagraphChar As Char In MessageParagraph
+                If CursorLeft = WindowWidth - 1 Then
+                    CursorTop += 1
+                    CursorLeft = Left
+                End If
+                Write(ParagraphChar)
+            Next
+
+            'We're starting with the new paragraph, so we increase the CursorTop value by 1.
+            If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
+                CursorTop += 1
+                CursorLeft = Left
+            End If
+        Next
         SetCursorPosition(OldLeft, OldTop)
         If backgroundColor = ConsoleColors.Black Then ResetColor()
         If colorType = ColTypes.Input And ColoredShell = True And (IsNothing(DefConsoleOut) Or Equals(DefConsoleOut, Out)) Then
@@ -361,14 +378,31 @@ Public Module TextWriterColor
             Write(esc + "[48;2;" + ColorRGBBG.ToString + "m")
         End If
 
-        'Parse variables ({0}, {1}, ...) in the "text" string variable. (Used as a workaround for Linux)
-        msg = msg.FormatString(vars)
+        'Format the message as necessary
+        If Not vars.Length = 0 Then msg = String.Format(msg, vars)
 
-        'Write text in another place
+        'Write text in another place. By the way, we check the text for newlines and console width excess
         Dim OldLeft As Integer = CursorLeft
         Dim OldTop As Integer = CursorTop
+        Dim Paragraphs() As String = msg.SplitNewLines
         SetCursorPosition(Left, Top)
-        Write(msg)
+        For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
+            'We can now check to see if we're writing a letter past the console window width
+            Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
+            For Each ParagraphChar As Char In MessageParagraph
+                If CursorLeft = WindowWidth - 1 Then
+                    CursorTop += 1
+                    CursorLeft = Left
+                End If
+                Write(ParagraphChar)
+            Next
+
+            'We're starting with the new paragraph, so we increase the CursorTop value by 1.
+            If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
+                CursorTop += 1
+                CursorLeft = Left
+            End If
+        Next
         SetCursorPosition(OldLeft, OldTop)
         If backgroundColor = ConsoleColors.Black Then ResetColor()
         If ColoredShell = True And (IsNothing(DefConsoleOut) Or Equals(DefConsoleOut, Out)) Then
@@ -392,14 +426,31 @@ Public Module TextWriterColor
             Write(esc + "[48;5;" + CStr(backgroundColor) + "m")
         End If
 
-        'Parse variables ({0}, {1}, ...) in the "text" string variable. (Used as a workaround for Linux)
-        msg = msg.FormatString(vars)
+        'Format the message as necessary
+        If Not vars.Length = 0 Then msg = String.Format(msg, vars)
 
-        'Write text in another place
+        'Write text in another place. By the way, we check the text for newlines and console width excess
         Dim OldLeft As Integer = CursorLeft
         Dim OldTop As Integer = CursorTop
+        Dim Paragraphs() As String = msg.SplitNewLines
         SetCursorPosition(Left, Top)
-        Write(msg)
+        For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
+            'We can now check to see if we're writing a letter past the console window width
+            Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
+            For Each ParagraphChar As Char In MessageParagraph
+                If CursorLeft = WindowWidth - 1 Then
+                    CursorTop += 1
+                    CursorLeft = Left
+                End If
+                Write(ParagraphChar)
+            Next
+
+            'We're starting with the new paragraph, so we increase the CursorTop value by 1.
+            If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
+                CursorTop += 1
+                CursorLeft = Left
+            End If
+        Next
         SetCursorPosition(OldLeft, OldTop)
         If backgroundColor = ConsoleColors.Black Then ResetColor()
         If ColoredShell = True And (IsNothing(DefConsoleOut) Or Equals(DefConsoleOut, Out)) Then
