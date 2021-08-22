@@ -16,6 +16,7 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Imports Extensification.StringExts
 Imports System.Console
 Imports System.IO
 Imports System.Threading
@@ -147,7 +148,7 @@ Public Module TextWriterColor
     ''' <param name="colorType">A type of colors that will be changed.</param>
     ''' <param name="vars">Endless amounts of any variables that is separated by commas.</param>
     ''' <remarks>This is used to reduce number of lines containing "System.Console.ForegroundColor = " and "System.Console.ResetColor()" text.</remarks>
-    Public Sub W(ByVal text As Object, ByVal Line As Boolean, ByVal colorType As ColTypes, ByVal ParamArray vars() As Object)
+    Public Sub W(ByVal text As String, ByVal Line As Boolean, ByVal colorType As ColTypes, ByVal ParamArray vars() As Object)
 
         Dim esc As Char = GetEsc()
         Try
@@ -179,12 +180,22 @@ Public Module TextWriterColor
                 Exit Sub
             End If
 
-            'Parse variables ({0}, {1}, ...) in the "text" string variable. (Used as a workaround for Linux)
-            For v As Integer = 0 To vars.Length - 1
-                text = text.Replace("{" + CStr(v) + "}", vars(v).ToString)
-            Next
+            'Write the text to console
+            If Line Then
+                If Not vars.Length = 0 Then
+                    WriteLine(text, vars)
+                Else
+                    WriteLine(text)
+                End If
+            Else
+                If Not vars.Length = 0 Then
+                    Write(text, vars)
+                Else
+                    Write(text)
+                End If
+            End If
 
-            If Line Then WriteLine(text) Else Write(text)
+            'Reset the colors
             If backgroundColor = ConsoleColors.Black Then ResetColor()
             If colorType = ColTypes.Input And ColoredShell = True Then Write(esc + "[38;5;" + CStr(inputColor) + "m")
         Catch ex As Exception
@@ -195,10 +206,8 @@ Public Module TextWriterColor
     End Sub
 
     Public Sub WriteSlowly(ByVal msg As String, ByVal Line As Boolean, ByVal MsEachLetter As Double, ParamArray ByVal vars() As Object)
-        'Parse variables ({0}, {1}, ...) in the "text" string variable. (Used as a workaround for Linux)
-        For v As Integer = 0 To vars.Length - 1
-            msg = msg.Replace("{" + CStr(v) + "}", vars(v).ToString)
-        Next
+        'Format string as needed
+        If Not vars.Length = 0 Then msg = String.Format(msg, vars)
 
         'Write text slowly
         Dim chars As List(Of Char) = msg.ToCharArray.ToList
@@ -241,10 +250,8 @@ Public Module TextWriterColor
             Exit Sub
         End If
 
-        'Parse variables ({0}, {1}, ...) in the "text" string variable. (Used as a workaround for Linux)
-        For v As Integer = 0 To vars.Length - 1
-            msg = msg.Replace("{" + CStr(v) + "}", vars(v).ToString)
-        Next
+        'Format string as needed
+        If Not vars.Length = 0 Then msg = String.Format(msg, vars)
 
         'Write text slowly
         Dim chars As List(Of Char) = msg.ToCharArray.ToList
@@ -288,32 +295,57 @@ Public Module TextWriterColor
             Exit Sub
         End If
 
-        'Parse variables ({0}, {1}, ...) in the "text" string variable. (Used as a workaround for Linux)
-        For v As Integer = 0 To vars.Length - 1
-            msg = msg.Replace("{" + CStr(v) + "}", vars(v).ToString)
-        Next
+        'Format the message as necessary
+        If Not vars.Length = 0 Then msg = String.Format(msg, vars)
 
-        'Write text in another place
+        'Write text in another place. By the way, we check the text for newlines and console width excess
         Dim OldLeft As Integer = CursorLeft
         Dim OldTop As Integer = CursorTop
+        Dim Paragraphs() As String = msg.SplitNewLines
         SetCursorPosition(Left, Top)
-        Write(msg)
+        For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
+            'We can now check to see if we're writing a letter past the console window width
+            Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
+            For Each ParagraphChar As Char In MessageParagraph
+                If CursorLeft = WindowWidth - 1 Then
+                    CursorTop += 1
+                    CursorLeft = Left
+                End If
+                Write(ParagraphChar)
+            Next
+
+            'We're starting with the new paragraph, so we increase the CursorTop value by 1.
+            If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
+                CursorTop += 1
+                CursorLeft = Left
+            End If
+        Next
         SetCursorPosition(OldLeft, OldTop)
     End Sub
 
-    Public Sub WriteC(ByVal text As Object, ByVal Line As Boolean, ByVal color As ConsoleColors, ByVal ParamArray vars() As Object)
+    Public Sub WriteC(ByVal text As String, ByVal Line As Boolean, ByVal color As ConsoleColors, ByVal ParamArray vars() As Object)
 
         Dim esc As Char = GetEsc()
         Try
             'Try to write to console
             Write(esc + "[38;5;" + CStr(color) + "m")
 
-            'Parse variables ({0}, {1}, ...) in the "text" string variable. (Used as a workaround for Linux)
-            For v As Integer = 0 To vars.Length - 1
-                text = text.Replace("{" + CStr(v) + "}", vars(v).ToString)
-            Next
+            'Write the text to console
+            If Line Then
+                If Not vars.Length = 0 Then
+                    WriteLine(text, vars)
+                Else
+                    WriteLine(text)
+                End If
+            Else
+                If Not vars.Length = 0 Then
+                    Write(text, vars)
+                Else
+                    Write(text)
+                End If
+            End If
 
-            If Line Then WriteLine(text) Else Write(text)
+            'Reset the colors
             If backgroundColor = ConsoleColors.Black Then ResetColor()
         Catch ex As Exception
             WStkTrc(ex)
