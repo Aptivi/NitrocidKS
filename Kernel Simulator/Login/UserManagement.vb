@@ -72,7 +72,9 @@ Public Module UserManagement
         'Opens file stream
         Dim UsersLines As List(Of String) = File.ReadAllLines(paths("Users")).ToList
         For Each Line As String In UsersLines
-            InitializeUser(Line.Remove(Line.IndexOf(",")), Line.Substring(Line.IndexOf(",") + 1), False)
+            Dim Username As String = Line.Remove(Line.IndexOf(","))
+            Dim Hash As String = Line.Split(","c)(1)
+            InitializeUser(Username, Hash, False)
         Next
     End Sub
 
