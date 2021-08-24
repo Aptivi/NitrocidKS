@@ -335,11 +335,6 @@ Public Module GetCommand
                     Done = True
                 End If
 
-            ElseIf requestedCommand = "debuglog" Then
-
-                PrintLog()
-                Done = True
-
             ElseIf words(0) = "dismissnotif" Then
 
                 If requestedCommand <> "dismissnotif" Then
