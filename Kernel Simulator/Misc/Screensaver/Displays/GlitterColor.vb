@@ -49,8 +49,6 @@ Module GlitterColorDisplay
                     Console.SetCursorPosition(Left, Top)
                     Dim esc As Char = GetEsc()
                     If GlitterColorTrueColor Then
-                        Console.BackgroundColor = ConsoleColor.Black
-                        ClearKeepPosition()
                         Dim RedColorNum As Integer = RandomDriver.Next(255)
                         Dim GreenColorNum As Integer = RandomDriver.Next(255)
                         Dim BlueColorNum As Integer = RandomDriver.Next(255)
