@@ -630,7 +630,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SString
                             KeyVar = NameOf(CurrDir)
                             W("*) " + DoTranslation("Shell Settings...") + " > " + DoTranslation("Current Directory") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Sets the shell's current directory. Write an absolute path to any existing directory."), True, ColTypes.Neutral)
+                            W(DoTranslation("Sets the shell's current directory. Write an absolute path to any existing directory."), True, ColTypes.Neutral)
                         Case 4 'Lookup Directories
                             KeyType = SettingsKeyType.SList
                             KeyVar = NameOf(PathsToLookup)
@@ -638,42 +638,42 @@ Public Module SettingsApp
                             TargetList = GetPathList()
                             NeutralizePaths = True
                             W("*) " + DoTranslation("Shell Settings...") + " > " + DoTranslation("Lookup Directories") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Group of paths separated by the colon. It works the same as PATH. Write a full path to a folder or a folder name. When you're finished, write ""q"". Write a minus sign next to the path to remove an existing directory."), True, ColTypes.Neutral)
+                            W(DoTranslation("Group of paths separated by the colon. It works the same as PATH. Write a full path to a folder or a folder name. When you're finished, write ""q"". Write a minus sign next to the path to remove an existing directory."), True, ColTypes.Neutral)
                         Case 5 'Prompt Style
                             KeyType = SettingsKeyType.SString
                             KeyVar = NameOf(ShellPromptStyle)
                             W("*) " + DoTranslation("Shell Settings...") + " > " + DoTranslation("Prompt Style") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write how you want your shell prompt to be. Leave blank to use default style. Placeholders are parsed."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write how you want your shell prompt to be. Leave blank to use default style. Placeholders are parsed."), True, ColTypes.Neutral)
                         Case 6 'FTP Prompt Style
                             KeyType = SettingsKeyType.SString
                             KeyVar = NameOf(FTPShellPromptStyle)
                             W("*) " + DoTranslation("Shell Settings...") + " > " + DoTranslation("FTP Prompt Style") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write how you want your shell prompt to be. Leave blank to use default style. Placeholders are parsed."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write how you want your shell prompt to be. Leave blank to use default style. Placeholders are parsed."), True, ColTypes.Neutral)
                         Case 7 'Mail Prompt Style
                             KeyType = SettingsKeyType.SString
                             KeyVar = NameOf(MailShellPromptStyle)
                             W("*) " + DoTranslation("Shell Settings...") + " > " + DoTranslation("Mail Prompt Style") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write how you want your shell prompt to be. Leave blank to use default style. Placeholders are parsed."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write how you want your shell prompt to be. Leave blank to use default style. Placeholders are parsed."), True, ColTypes.Neutral)
                         Case 8 'SFTP Prompt Style
                             KeyType = SettingsKeyType.SString
                             KeyVar = NameOf(SFTPShellPromptStyle)
                             W("*) " + DoTranslation("Shell Settings...") + " > " + DoTranslation("SFTP Prompt Style") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write how you want your shell prompt to be. Leave blank to use default style. Placeholders are parsed."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write how you want your shell prompt to be. Leave blank to use default style. Placeholders are parsed."), True, ColTypes.Neutral)
                         Case 9 'RSS Prompt Style
                             KeyType = SettingsKeyType.SString
                             KeyVar = NameOf(RSSShellPromptStyle)
                             W("*) " + DoTranslation("Shell Settings...") + " > " + DoTranslation("RSS Prompt Style") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write how you want your shell prompt to be. Leave blank to use default style. Placeholders are parsed."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write how you want your shell prompt to be. Leave blank to use default style. Placeholders are parsed."), True, ColTypes.Neutral)
                         Case 10 'Text Edit Prompt Style
                             KeyType = SettingsKeyType.SString
                             KeyVar = NameOf(TextEdit_PromptStyle)
                             W("*) " + DoTranslation("Shell Settings...") + " > " + DoTranslation("Text Edit Prompt Style") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write how you want your shell prompt to be. Leave blank to use default style. Placeholders are parsed."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write how you want your shell prompt to be. Leave blank to use default style. Placeholders are parsed."), True, ColTypes.Neutral)
                         Case 11 'Zip Shell Prompt Style
                             KeyType = SettingsKeyType.SString
                             KeyVar = NameOf(ZipShell_PromptStyle)
                             W("*) " + DoTranslation("Shell Settings...") + " > " + DoTranslation("Zip Shell Prompt Style") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write how you want your shell prompt to be. Leave blank to use default style. Placeholders are parsed."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write how you want your shell prompt to be. Leave blank to use default style. Placeholders are parsed."), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Shell Settings...") + " > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -781,7 +781,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(DebugQuota)
                             W("*) " + DoTranslation("Miscellaneous Settings...") + " > " + DoTranslation("Debug Size Quota in Bytes") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write how many bytes can the debug log store. It must be numeric."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write how many bytes can the debug log store. It must be numeric."), True, ColTypes.Neutral)
                         Case 4 'Show Hidden Files
                             KeyType = SettingsKeyType.SBoolean
                             KeyVar = NameOf(HiddenFiles)
@@ -804,17 +804,17 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(DebugPort)
                             W("*) " + DoTranslation("Network Settings...") + " > " + DoTranslation("Debug Port") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write a remote debugger port. It must be numeric, and must not be already used. Otherwise, remote debugger will fail to open the port."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write a remote debugger port. It must be numeric, and must not be already used. Otherwise, remote debugger will fail to open the port."), True, ColTypes.Neutral)
                         Case 2 'Download Retry Times
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(DRetries)
                             W("*) " + DoTranslation("Network Settings...") + " > " + DoTranslation("Download Retry Times") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write how many times the ""get"" command should retry failed downloads. It must be numeric."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write how many times the ""get"" command should retry failed downloads. It must be numeric."), True, ColTypes.Neutral)
                         Case 3 'Upload Retry Times
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(URetries)
                             W("*) " + DoTranslation("Network Settings...") + " > " + DoTranslation("Upload Retry Times") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write how many times the ""put"" command should retry failed uploads. It must be numeric."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write how many times the ""put"" command should retry failed uploads. It must be numeric."), True, ColTypes.Neutral)
                         Case 4 'Show progress bar while downloading or uploading from "get" or "put" command
                             KeyType = SettingsKeyType.SBoolean
                             KeyVar = NameOf(ShowProgress)
@@ -859,7 +859,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(RPCPort)
                             W("*) " + DoTranslation("Network Settings...") + " > " + DoTranslation("RPC Port") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write an RPC port. It must be numeric, and must not be already used. Otherwise, RPC will fail to open the port."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write an RPC port. It must be numeric, and must not be already used. Otherwise, RPC will fail to open the port."), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Network Settings...") + " > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -870,7 +870,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(ScrnTimeout)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > " + DoTranslation("Screensaver Timeout in ms") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write when to launch screensaver after specified milliseconds. It must be numeric."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write when to launch screensaver after specified milliseconds. It must be numeric."), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -891,7 +891,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(ColorMixDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > ColorMix > " + DoTranslation("Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > ColorMix > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -902,7 +902,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(MatrixDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Matrix > " + DoTranslation("Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Matrix > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -913,7 +913,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(GlitterMatrixDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > GlitterMatrix > " + DoTranslation("Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > GlitterMatrix > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -939,12 +939,12 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(DiscoDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Disco > " + DoTranslation("Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
                         Case 5 'Disco: Use Beats Per Second
                             KeyType = SettingsKeyType.SBoolean
                             KeyVar = NameOf(DiscoUseBeatsPerMinute)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Disco > " + DoTranslation("Use Beats Per Minute") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Whether to use the Beats Per Minute unit to write the next color."), True, ColTypes.Neutral)
+                            W(DoTranslation("Whether to use the Beats Per Minute unit to write the next color."), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Disco > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -965,7 +965,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(LinesDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Lines > " + DoTranslation("Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Lines > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -986,7 +986,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(GlitterColorDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > GlitterColor > " + DoTranslation("Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Lines > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -1007,12 +1007,12 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(BouncingTextDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > BouncingText > " + DoTranslation("Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
                         Case 4 'BouncingText: Text shown
                             KeyType = SettingsKeyType.SLongString
                             KeyVar = NameOf(BouncingTextWrite)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > BouncingText > " + DoTranslation("Text shown") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write any text you want shown. Shorter is better."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write any text you want shown. Shorter is better."), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > BouncingText > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -1049,7 +1049,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(BouncingBlockDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > BouncingBlock > " + DoTranslation("Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > BouncingBlock > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -1095,7 +1095,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(ProgressClockCycleColorsTicks)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > ProgressClock > " + DoTranslation("Ticks to change color") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("If color cycling is enabled, how many ticks before changing colors in ProgressClock? 1 tick = 0.5 seconds"), True, ColTypes.Neutral)
+                            W(DoTranslation("If color cycling is enabled, how many ticks before changing colors in ProgressClock? 1 tick = 0.5 seconds"), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > ProgressClock > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -1116,12 +1116,12 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(LighterDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Lighter > " + DoTranslation("Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
                         Case 4 'Lighter: Max Positions Count
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(LighterMaxPositions)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Lighter > " + DoTranslation("Max Positions Count") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many positions are lit before dimming?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many positions are lit before dimming?"), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Lighter > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -1132,22 +1132,22 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(FaderDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Fader > " + DoTranslation("Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
                         Case 2 'Fader: Fade Out Delay in Milliseconds
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(FaderFadeOutDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Fader > " + DoTranslation("Fade Out Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before fading out text?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before fading out text?"), True, ColTypes.Neutral)
                         Case 3 'Fader: Text shown
                             KeyType = SettingsKeyType.SLongString
                             KeyVar = NameOf(FaderWrite)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Fader > " + DoTranslation("Text shown") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write any text you want shown. Shorter is better."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write any text you want shown. Shorter is better."), True, ColTypes.Neutral)
                         Case 4 'Fader: Max Fade Steps
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(FaderMaxSteps)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Fader > " + DoTranslation("Max Fade Steps") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many fade steps to do?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many fade steps to do?"), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Fader > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -1158,32 +1158,32 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(TypoDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Typo > " + DoTranslation("Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
                         Case 2 'Typo: Write Again Delay in Milliseconds
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(TypoWriteAgainDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Typo > " + DoTranslation("Write Again Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before writing text again?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before writing text again?"), True, ColTypes.Neutral)
                         Case 3 'Typo: Text shown
                             KeyType = SettingsKeyType.SLongString
                             KeyVar = NameOf(TypoWrite)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Typo > " + DoTranslation("Text shown") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write any text you want shown. Longer is better."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write any text you want shown. Longer is better."), True, ColTypes.Neutral)
                         Case 4 'Typo: Minimum writing speed in WPM
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(TypoWritingSpeedMin)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Typo > " + DoTranslation("Minimum writing speed in WPM") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Minimum writing speed in WPM"), True, ColTypes.Neutral)
+                            W(DoTranslation("Minimum writing speed in WPM"), True, ColTypes.Neutral)
                         Case 5 'Typo: Maximum writing speed in WPM
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(TypoWritingSpeedMax)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Typo > " + DoTranslation("Maximum writing speed in WPM") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Maximum writing speed in WPM"), True, ColTypes.Neutral)
+                            W(DoTranslation("Maximum writing speed in WPM"), True, ColTypes.Neutral)
                         Case 6 'Typo: Probability of typo in percent
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(TypoMissStrikePossibility)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Typo > " + DoTranslation("Probability of typo in percent") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Probability of typo in percent"), True, ColTypes.Neutral)
+                            W(DoTranslation("Probability of typo in percent"), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Typo > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -1204,12 +1204,12 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(WipeDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Wipe > " + DoTranslation("Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
                         Case 4 'Wipe: Wipes to change direction
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(WipeWipesNeededToChangeDirection)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Wipe > " + DoTranslation("Wipes to change direction") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many wipes to do before changing direction randomly?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many wipes to do before changing direction randomly?"), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Wipe > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -1220,7 +1220,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SBoolean
                             KeyVar = NameOf(HackUserFromADHackerMode)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > HackUserFromAD > " + DoTranslation("Hacker Mode") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("If enabled, green console will be enabled.") + " l33t h4x0r!", True, ColTypes.Neutral)
+                            W(DoTranslation("If enabled, green console will be enabled.") + " l33t h4x0r!", True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > HackUserFromAD > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -1231,7 +1231,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SBoolean
                             KeyVar = NameOf(AptErrorSimHackerMode)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > AptErrorSim > " + DoTranslation("Hacker Mode") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("If enabled, green console will be enabled.") + " l33t h4x0r!", True, ColTypes.Neutral)
+                            W(DoTranslation("If enabled, green console will be enabled.") + " l33t h4x0r!", True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > AptErrorSim > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -1252,12 +1252,12 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(MarqueeDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Marquee > " + DoTranslation("Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
                         Case 4 'Marquee: Text shown
                             KeyType = SettingsKeyType.SLongString
                             KeyVar = NameOf(MarqueeWrite)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > Marquee > " + DoTranslation("Text shown") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("Write any text you want shown."), True, ColTypes.Neutral)
+                            W(DoTranslation("Write any text you want shown."), True, ColTypes.Neutral)
                         Case 5 'Marquee: Always centered
                             KeyType = SettingsKeyType.SBoolean
                             KeyVar = NameOf(MarqueeAlwaysCentered)
@@ -1278,17 +1278,17 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(FaderBackDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > FaderBack > " + DoTranslation("Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before making the next write?"), True, ColTypes.Neutral)
                         Case 2 'FaderBack: Fade Out Delay in Milliseconds
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(FaderBackFadeOutDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > FaderBack > " + DoTranslation("Fade Out Delay in Milliseconds") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many milliseconds to wait before fading out text?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many milliseconds to wait before fading out text?"), True, ColTypes.Neutral)
                         Case 3 'FaderBack: Max Fade Steps
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(FaderBackMaxSteps)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > FaderBack > " + DoTranslation("Max Fade Steps") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many fade steps to do?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many fade steps to do?"), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > FaderBack > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -1309,7 +1309,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(BeatFaderDelay)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > BeatFader > " + DoTranslation("Delay in Beats Per Minute") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many beats per minute to wait before making the next write?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many beats per minute to wait before making the next write?"), True, ColTypes.Neutral)
                         Case 4 'BeatFader: Cycle colors
                             KeyType = SettingsKeyType.SBoolean
                             KeyVar = NameOf(BeatFaderCycleColors)
@@ -1324,7 +1324,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(BeatFaderMaxSteps)
                             W("*) " + DoTranslation("Screensaver Settings...") + " > BeatFader > " + DoTranslation("Max Fade Steps") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("How many fade steps to do?"), True, ColTypes.Neutral)
+                            W(DoTranslation("How many fade steps to do?"), True, ColTypes.Neutral)
                         Case Else
                             W("*) " + DoTranslation("Screensaver Settings...") + " > BeatFader > ???" + vbNewLine, True, ColTypes.Neutral)
                             W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -1337,7 +1337,7 @@ Public Module SettingsApp
                         KeyType = SettingsKeyType.SVariant
                         KeyVar = CSvrdb.Values(SaverIndex).SaverSettings.Keys(KeyIndex)
                         W("*) " + DoTranslation("Screensaver Settings...") + " > {0} > {1}" + vbNewLine, True, ColTypes.Neutral, CSvrdb.Keys(SaverIndex), SaverSettings.Keys(KeyIndex))
-                        W("*) " + DoTranslation("Consult the screensaver manual or source code for information."), True, ColTypes.Neutral)
+                        W(DoTranslation("Consult the screensaver manual or source code for information."), True, ColTypes.Neutral)
                     Else
                         W("*) " + DoTranslation("Screensaver Settings...") + " > {0} > ???" + vbNewLine, True, ColTypes.Neutral, CSvrdb.Keys(SaverIndex))
                         W("X) " + DoTranslation("Invalid key number entered. Please go back."), True, ColTypes.Error)
@@ -1377,7 +1377,7 @@ Public Module SettingsApp
                             KeyType = SettingsKeyType.SInt
                             KeyVar = NameOf(TextEdit_AutoSaveInterval)
                             W("*) " + DoTranslation("Miscellaneous Settings...") + " > " + DoTranslation("Text editor autosave interval") + vbNewLine, True, ColTypes.Neutral)
-                            W("*) " + DoTranslation("If autosave is enabled, the text file will be saved for each ""n"" seconds."), True, ColTypes.Neutral)
+                            W(DoTranslation("If autosave is enabled, the text file will be saved for each ""n"" seconds."), True, ColTypes.Neutral)
                         Case 7 'Wrap list outputs
                             KeyType = SettingsKeyType.SBoolean
                             KeyVar = NameOf(WrapListOutputs)
