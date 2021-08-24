@@ -15,6 +15,8 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Imports System.IO
+
 Public Module Filesystem
 
     'Variables
@@ -49,10 +51,10 @@ Public Module Filesystem
         End If
     End Sub
     Public Sub ReadContents(ByVal filename As String)
-        Using FStream As New IO.StreamReader(filename)
+        Using FileStream = File.Open(filename, FileMode.OpenOrCreate, FileAccess.Read, FileShare.ReadWrite), FileStreamReader As New StreamReader(FileStream)
             Wdbg("I", "Stream to file {0} opened.", filename)
-            While Not FStream.EndOfStream
-                W(FStream.ReadLine, True, ColTypes.Neutral)
+            While Not FileStreamReader.EndOfStream
+                W(FileStreamReader.ReadLine, True, ColTypes.Neutral)
             End While
         End Using
     End Sub
