@@ -14,11 +14,13 @@ jobs:
       with:
         ref: ${{ github.ref }}
     - name: NuGet Installation
-      uses: warrenbuckley/Setup-Nuget@v1
+      uses: nuget/setup-nuget@v1
+      with: 
+        nuget-version: "latest"
     - name: CURL Installation
       run: choco install curl
     - name: MSBuild Installation
-      uses: microsoft/setup-msbuild@v1.0.0
+      uses: microsoft/setup-msbuild@v1.0.2
     - name: Dependency Restoration
       run: nuget restore "Kernel Simulator.sln"
     - name: Solution Compilation
