@@ -161,7 +161,11 @@ Public Module Filesystem
 
         'Append current directory to path
         If (IsOnWindows() And Not Path.Contains(":/")) Or (IsOnUnix() And Not Path.StartsWith("/")) Then
-            Path = $"{CurrDir}/{Path}"
+            If Not CurrDir.EndsWith("/") Then
+                Path = $"{CurrDir}/{Path}"
+            Else
+                Path = $"{CurrDir}{Path}"
+            End If
         End If
         Wdbg("I", "Prototype path: {0}", Path)
 
@@ -199,7 +203,11 @@ Public Module Filesystem
 
         'Append current directory to path
         If (IsOnWindows() And Not Path.Contains(":/")) Or (IsOnUnix() And Not Path.StartsWith("/")) Then
-            Path = $"{Source}/{Path}"
+            If Not CurrDir.EndsWith("/") Then
+                Path = $"{CurrDir}/{Path}"
+            Else
+                Path = $"{CurrDir}{Path}"
+            End If
         End If
         Wdbg("I", "Prototype path: {0}", Path)
 
