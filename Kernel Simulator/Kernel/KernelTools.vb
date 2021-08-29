@@ -477,7 +477,7 @@ Public Module KernelTools
     Sub CheckKernelUpdates()
         W(DoTranslation("Checking for system updates...", currentLang), True, ColTypes.Neutral)
         Dim AvailableUpdates As List(Of String) = FetchKernelUpdates()
-        If Not IsNothing(AvailableUpdates) And AvailableUpdates.Count > 0 Then
+        If Not IsNothing(AvailableUpdates) AndAlso AvailableUpdates.Count > 0 Then
             W(DoTranslation("Found new version: ", currentLang), False, ColTypes.HelpCmd)
             W(AvailableUpdates(0), True, ColTypes.HelpDef)
             W(DoTranslation("You can download it at: ", currentLang), False, ColTypes.HelpCmd)
