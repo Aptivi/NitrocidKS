@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConfigTools
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConfigTools
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="KS.Misc.Configuration.ConfigTools">
+  
+  
+  <h1 id="KS_Misc_Configuration_ConfigTools" data-uid="KS.Misc.Configuration.ConfigTools" class="text-break">Class ConfigTools
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">ConfigTools</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Configuration.html">KS.Misc.Configuration</a></h6>
+  <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
+  <h5 id="KS_Misc_Configuration_ConfigTools_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ConfigTools</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Configuration_ConfigTools_GetConfigCategory_KS_Misc_Configuration_Config_ConfigCategory_System_String_.md&amp;value=---%0Auid%3A%20KS.Misc.Configuration.ConfigTools.GetConfigCategory(KS.Misc.Configuration.Config.ConfigCategory%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Configuration/ConfigTools.vb/#L360">View Source</a>
+  </span>
+  <a id="KS_Misc_Configuration_ConfigTools_GetConfigCategory_" data-uid="KS.Misc.Configuration.ConfigTools.GetConfigCategory*"></a>
+  <h4 id="KS_Misc_Configuration_ConfigTools_GetConfigCategory_KS_Misc_Configuration_Config_ConfigCategory_System_String_" data-uid="KS.Misc.Configuration.ConfigTools.GetConfigCategory(KS.Misc.Configuration.Config.ConfigCategory,System.String)">GetConfigCategory(Config.ConfigCategory, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the JSON token for specific configuration category with an optional sub-category</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JToken GetConfigCategory(Config.ConfigCategory ConfigCategory, string ConfigSubCategoryName = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Misc.Configuration.Config.ConfigCategory.html">Config.ConfigCategory</a></td>
+        <td><span class="parametername">ConfigCategory</span></td>
+        <td><p>Config category</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ConfigSubCategoryName</span></td>
+        <td><p>Sub-category name. Should be an Object. Currently used for screensavers</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Configuration_ConfigTools_GetConfigValue_KS_Misc_Configuration_Config_ConfigCategory_JToken_System_String_.md&amp;value=---%0Auid%3A%20KS.Misc.Configuration.ConfigTools.GetConfigValue(KS.Misc.Configuration.Config.ConfigCategory%2CJToken%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Configuration/ConfigTools.vb/#L432">View Source</a>
+  </span>
+  <a id="KS_Misc_Configuration_ConfigTools_GetConfigValue_" data-uid="KS.Misc.Configuration.ConfigTools.GetConfigValue*"></a>
+  <h4 id="KS_Misc_Configuration_ConfigTools_GetConfigValue_KS_Misc_Configuration_Config_ConfigCategory_JToken_System_String_" data-uid="KS.Misc.Configuration.ConfigTools.GetConfigValue(KS.Misc.Configuration.Config.ConfigCategory,JToken,System.String)">GetConfigValue(Config.ConfigCategory, JToken, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of an entry in a category.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JToken GetConfigValue(Config.ConfigCategory ConfigCategory, JToken ConfigCategoryToken, string ConfigEntryName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Misc.Configuration.Config.ConfigCategory.html">Config.ConfigCategory</a></td>
+        <td><span class="parametername">ConfigCategory</span></td>
+        <td><p>Config category</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">JToken</span></td>
+        <td><span class="parametername">ConfigCategoryToken</span></td>
+        <td><p>Config category or sub-category token (You can get it from <a class="xref" href="KS.Misc.Configuration.ConfigTools.html#KS_Misc_Configuration_ConfigTools_GetConfigCategory_KS_Misc_Configuration_Config_ConfigCategory_System_String_">GetConfigCategory(Config.ConfigCategory, String)</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ConfigEntryName</span></td>
+        <td><p>Config entry name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Configuration_ConfigTools_ReloadConfig.md&amp;value=---%0Auid%3A%20KS.Misc.Configuration.ConfigTools.ReloadConfig%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Configuration/ConfigTools.vb/#L29">View Source</a>
+  </span>
+  <a id="KS_Misc_Configuration_ConfigTools_ReloadConfig_" data-uid="KS.Misc.Configuration.ConfigTools.ReloadConfig*"></a>
+  <h4 id="KS_Misc_Configuration_ConfigTools_ReloadConfig" data-uid="KS.Misc.Configuration.ConfigTools.ReloadConfig">ReloadConfig()</h4>
+  <div class="markdown level1 summary"><p>Reloads config</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ReloadConfig()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if successful; False if unsuccessful</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Configuration_ConfigTools_RepairConfig.md&amp;value=---%0Auid%3A%20KS.Misc.Configuration.ConfigTools.RepairConfig%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Configuration/ConfigTools.vb/#L46">View Source</a>
+  </span>
+  <a id="KS_Misc_Configuration_ConfigTools_RepairConfig_" data-uid="KS.Misc.Configuration.ConfigTools.RepairConfig*"></a>
+  <h4 id="KS_Misc_Configuration_ConfigTools_RepairConfig" data-uid="KS.Misc.Configuration.ConfigTools.RepairConfig">RepairConfig()</h4>
+  <div class="markdown level1 summary"><p>Checks to see if the config needs repair and repairs it as necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RepairConfig()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the config is repaired; False if no repairs done; Throws exceptions if unsuccessful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Configuration_ConfigTools_SetConfigValue_KS_Misc_Configuration_Config_ConfigCategory_JToken_System_String_JToken_.md&amp;value=---%0Auid%3A%20KS.Misc.Configuration.ConfigTools.SetConfigValue(KS.Misc.Configuration.Config.ConfigCategory%2CJToken%2CSystem.String%2CJToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Configuration/ConfigTools.vb/#L399">View Source</a>
+  </span>
+  <a id="KS_Misc_Configuration_ConfigTools_SetConfigValue_" data-uid="KS.Misc.Configuration.ConfigTools.SetConfigValue*"></a>
+  <h4 id="KS_Misc_Configuration_ConfigTools_SetConfigValue_KS_Misc_Configuration_Config_ConfigCategory_JToken_System_String_JToken_" data-uid="KS.Misc.Configuration.ConfigTools.SetConfigValue(KS.Misc.Configuration.Config.ConfigCategory,JToken,System.String,JToken)">SetConfigValue(Config.ConfigCategory, JToken, String, JToken)</h4>
+  <div class="markdown level1 summary"><p>Sets the value of an entry in a category.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetConfigValue(Config.ConfigCategory ConfigCategory, JToken ConfigCategoryToken, string ConfigEntryName, JToken ConfigValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Misc.Configuration.Config.ConfigCategory.html">Config.ConfigCategory</a></td>
+        <td><span class="parametername">ConfigCategory</span></td>
+        <td><p>Config category</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">JToken</span></td>
+        <td><span class="parametername">ConfigCategoryToken</span></td>
+        <td><p>Config category or sub-category token (You can get it from <a class="xref" href="KS.Misc.Configuration.ConfigTools.html#KS_Misc_Configuration_ConfigTools_GetConfigCategory_KS_Misc_Configuration_Config_ConfigCategory_System_String_">GetConfigCategory(Config.ConfigCategory, String)</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ConfigEntryName</span></td>
+        <td><p>Config entry name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">JToken</span></td>
+        <td><span class="parametername">ConfigValue</span></td>
+        <td><p>Config entry value to install</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Configuration_ConfigTools.md&amp;value=---%0Auid%3A%20KS.Misc.Configuration.ConfigTools%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Configuration/ConfigTools.vb/#L23" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
