@@ -14909,22 +14909,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.Customized.CustomSaverCompiler.CompileCustom
   nameWithType: CustomSaverCompiler.CompileCustom
-- uid: KS.Misc.Screensaver.Customized.CustomSaverCompiler.GenSaver(System.String,System.String,System.Boolean@)
-  name: GenSaver(String, String, ref Boolean)
-  href: api/KS.Misc.Screensaver.Customized.CustomSaverCompiler.html#KS_Misc_Screensaver_Customized_CustomSaverCompiler_GenSaver_System_String_System_String_System_Boolean__
-  commentId: M:KS.Misc.Screensaver.Customized.CustomSaverCompiler.GenSaver(System.String,System.String,System.Boolean@)
-  name.vb: GenSaver(String, String, ByRef Boolean)
-  fullName: KS.Misc.Screensaver.Customized.CustomSaverCompiler.GenSaver(System.String, System.String, ref System.Boolean)
-  fullName.vb: KS.Misc.Screensaver.Customized.CustomSaverCompiler.GenSaver(System.String, System.String, ByRef System.Boolean)
-  nameWithType: CustomSaverCompiler.GenSaver(String, String, ref Boolean)
-  nameWithType.vb: CustomSaverCompiler.GenSaver(String, String, ByRef Boolean)
-- uid: KS.Misc.Screensaver.Customized.CustomSaverCompiler.GenSaver*
-  name: GenSaver
-  href: api/KS.Misc.Screensaver.Customized.CustomSaverCompiler.html#KS_Misc_Screensaver_Customized_CustomSaverCompiler_GenSaver_
-  commentId: Overload:KS.Misc.Screensaver.Customized.CustomSaverCompiler.GenSaver
-  isSpec: "True"
-  fullName: KS.Misc.Screensaver.Customized.CustomSaverCompiler.GenSaver
-  nameWithType: CustomSaverCompiler.GenSaver
 - uid: KS.Misc.Screensaver.Customized.CustomSaverInfo
   name: CustomSaverInfo
   href: api/KS.Misc.Screensaver.Customized.CustomSaverInfo.html
