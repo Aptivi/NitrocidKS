@@ -13444,6 +13444,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Configuration.Config.CreateConfig
   nameWithType: Config.CreateConfig
+- uid: KS.Misc.Configuration.Config.GetNewConfigObject
+  name: GetNewConfigObject()
+  href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_GetNewConfigObject
+  commentId: M:KS.Misc.Configuration.Config.GetNewConfigObject
+  fullName: KS.Misc.Configuration.Config.GetNewConfigObject()
+  nameWithType: Config.GetNewConfigObject()
+- uid: KS.Misc.Configuration.Config.GetNewConfigObject*
+  name: GetNewConfigObject
+  href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_GetNewConfigObject_
+  commentId: Overload:KS.Misc.Configuration.Config.GetNewConfigObject
+  isSpec: "True"
+  fullName: KS.Misc.Configuration.Config.GetNewConfigObject
+  nameWithType: Config.GetNewConfigObject
 - uid: KS.Misc.Configuration.Config.InitializeConfig
   name: InitializeConfig()
   href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_InitializeConfig
@@ -18642,6 +18655,19 @@ references:
   commentId: T:KS.Misc.Timers.StopwatchScreen
   fullName: KS.Misc.Timers.StopwatchScreen
   nameWithType: StopwatchScreen
+- uid: KS.Misc.Timers.StopwatchScreen.MakeBorder
+  name: MakeBorder()
+  href: api/KS.Misc.Timers.StopwatchScreen.html#KS_Misc_Timers_StopwatchScreen_MakeBorder
+  commentId: M:KS.Misc.Timers.StopwatchScreen.MakeBorder
+  fullName: KS.Misc.Timers.StopwatchScreen.MakeBorder()
+  nameWithType: StopwatchScreen.MakeBorder()
+- uid: KS.Misc.Timers.StopwatchScreen.MakeBorder*
+  name: MakeBorder
+  href: api/KS.Misc.Timers.StopwatchScreen.html#KS_Misc_Timers_StopwatchScreen_MakeBorder_
+  commentId: Overload:KS.Misc.Timers.StopwatchScreen.MakeBorder
+  isSpec: "True"
+  fullName: KS.Misc.Timers.StopwatchScreen.MakeBorder
+  nameWithType: StopwatchScreen.MakeBorder
 - uid: KS.Misc.Timers.StopwatchScreen.OpenStopwatch
   name: OpenStopwatch()
   href: api/KS.Misc.Timers.StopwatchScreen.html#KS_Misc_Timers_StopwatchScreen_OpenStopwatch
