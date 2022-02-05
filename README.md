@@ -1,6 +1,6 @@
 # WARNING
 
-This version is no longer maintained; it has reached EOL since 3/8/2019. We recommend that you use the latest version.
+This version is no longer maintained; it has reached EOL since 7/25/2021. We recommend that you use the latest version.
 
 # |---+-> Kernel Simulator <-+---|
 
