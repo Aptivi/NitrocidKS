@@ -469,7 +469,7 @@ Public Module KernelTools
             UpdateDown.Headers.Add(HttpRequestHeader.UserAgent, "EoflaOE") 'Because api.github.com requires the UserAgent header to be put, else, 403 error occurs.
             Dim UpdateStr As String = UpdateDown.DownloadString("https://api.github.com/repos/EoflaOE/Kernel-Simulator/releases")
             Dim UpdateToken As JToken = JToken.Parse(UpdateStr)
-            Dim UpdateVer As New Version(UpdateToken.First.SelectToken("tag_name").ToString.ReplaceAll({"v", "-alpha"}, ""))
+            Dim UpdateVer As New Version(UpdateToken.First.SelectToken("tag_name").ToString.ReplaceAll({"v", "-alpha", "-beta"}, ""))
             Dim UpdateURL As String = UpdateToken.First.SelectToken("html_url")
             Dim CurrentVer As New Version(KernelVersion)
             If UpdateVer > CurrentVer Then
