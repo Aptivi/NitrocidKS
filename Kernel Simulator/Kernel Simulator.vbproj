@@ -20,7 +20,7 @@
     </TargetFrameworkProfile>
     <!-- KS Nuget Information -->
     <PackageId>KS</PackageId>
-    <Version>0.0.12.4</Version>
+    <Version>0.0.12.5</Version>
     <Authors>EoflaOE</Authors>
     <Title>Kernel Simulator</Title>
     <PackageDescription>Simulates our future-planned kernel</PackageDescription>
@@ -188,7 +188,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
-    <DefineConstants>SPECIFIER="NEARING"</DefineConstants>
+    <DefineConstants>SPECIFIER="REL"</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Extensification">

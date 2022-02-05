@@ -34,7 +34,6 @@ Public Module Kernel
     ''' Entry point
     ''' </summary>
     Sub Main()
-        'TODO: Re-write the whole kernel in Beta
         While True
             Try
                 'A title

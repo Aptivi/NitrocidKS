@@ -22,7 +22,6 @@ Imports Newtonsoft.Json.Linq
 
 Public Module HardwareProbe
 
-    'TODO: Re-write in Beta
     ''' <summary>
     ''' Starts probing hardware
     ''' </summary>
