@@ -12126,7 +12126,14 @@ references:
 - uid: KS.Login.Login.CurrentUser
   name: CurrentUser
   href: api/KS.Login.Login.html#KS_Login_Login_CurrentUser
-  commentId: F:KS.Login.Login.CurrentUser
+  commentId: P:KS.Login.Login.CurrentUser
+  fullName: KS.Login.Login.CurrentUser
+  nameWithType: Login.CurrentUser
+- uid: KS.Login.Login.CurrentUser*
+  name: CurrentUser
+  href: api/KS.Login.Login.html#KS_Login_Login_CurrentUser_
+  commentId: Overload:KS.Login.Login.CurrentUser
+  isSpec: "True"
   fullName: KS.Login.Login.CurrentUser
   nameWithType: Login.CurrentUser
 - uid: KS.Login.Login.LoginPrompt
