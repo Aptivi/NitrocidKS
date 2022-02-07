@@ -12161,19 +12161,6 @@ references:
   isSpec: "True"
   fullName: KS.Login.Login.ShowPasswordPrompt
   nameWithType: Login.ShowPasswordPrompt
-- uid: KS.Login.Login.SignIn(System.String)
-  name: SignIn(String)
-  href: api/KS.Login.Login.html#KS_Login_Login_SignIn_System_String_
-  commentId: M:KS.Login.Login.SignIn(System.String)
-  fullName: KS.Login.Login.SignIn(System.String)
-  nameWithType: Login.SignIn(String)
-- uid: KS.Login.Login.SignIn*
-  name: SignIn
-  href: api/KS.Login.Login.html#KS_Login_Login_SignIn_
-  commentId: Overload:KS.Login.Login.SignIn
-  isSpec: "True"
-  fullName: KS.Login.Login.SignIn
-  nameWithType: Login.SignIn
 - uid: KS.Login.Login.UsernamePrompt
   name: UsernamePrompt
   href: api/KS.Login.Login.html#KS_Login_Login_UsernamePrompt
