@@ -2170,6 +2170,12 @@ references:
   commentId: T:KS.ConsoleBase.ColorTools
   fullName: KS.ConsoleBase.ColorTools
   nameWithType: ColorTools
+- uid: KS.ConsoleBase.ColorTools.AlternativeOptionColor
+  name: AlternativeOptionColor
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_AlternativeOptionColor
+  commentId: F:KS.ConsoleBase.ColorTools.AlternativeOptionColor
+  fullName: KS.ConsoleBase.ColorTools.AlternativeOptionColor
+  nameWithType: ColorTools.AlternativeOptionColor
 - uid: KS.ConsoleBase.ColorTools.BackgroundColor
   name: BackgroundColor
   href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_BackgroundColor
@@ -2212,6 +2218,12 @@ references:
   commentId: T:KS.ConsoleBase.ColorTools.ColTypes
   fullName: KS.ConsoleBase.ColorTools.ColTypes
   nameWithType: ColorTools.ColTypes
+- uid: KS.ConsoleBase.ColorTools.ColTypes.AlternativeOption
+  name: AlternativeOption
+  href: api/KS.ConsoleBase.ColorTools.ColTypes.html#KS_ConsoleBase_ColorTools_ColTypes_AlternativeOption
+  commentId: F:KS.ConsoleBase.ColorTools.ColTypes.AlternativeOption
+  fullName: KS.ConsoleBase.ColorTools.ColTypes.AlternativeOption
+  nameWithType: ColorTools.ColTypes.AlternativeOption
 - uid: KS.ConsoleBase.ColorTools.ColTypes.BackOption
   name: BackOption
   href: api/KS.ConsoleBase.ColorTools.ColTypes.html#KS_ConsoleBase_ColorTools_ColTypes_BackOption
@@ -2611,12 +2623,12 @@ references:
   commentId: F:KS.ConsoleBase.ColorTools.SeparatorTextColor
   fullName: KS.ConsoleBase.ColorTools.SeparatorTextColor
   nameWithType: ColorTools.SeparatorTextColor
-- uid: KS.ConsoleBase.ColorTools.SetColors(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
-  name: SetColors(String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String)
-  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_SetColors_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_
-  commentId: M:KS.ConsoleBase.ColorTools.SetColors(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
-  fullName: KS.ConsoleBase.ColorTools.SetColors(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String)
-  nameWithType: ColorTools.SetColors(String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+- uid: KS.ConsoleBase.ColorTools.SetColors(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
+  name: SetColors(String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_SetColors_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_
+  commentId: M:KS.ConsoleBase.ColorTools.SetColors(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
+  fullName: KS.ConsoleBase.ColorTools.SetColors(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String)
+  nameWithType: ColorTools.SetColors(String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String)
 - uid: KS.ConsoleBase.ColorTools.SetColors*
   name: SetColors
   href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_SetColors_
@@ -3126,6 +3138,12 @@ references:
   commentId: T:KS.ConsoleBase.Themes.ThemeInfo
   fullName: KS.ConsoleBase.Themes.ThemeInfo
   nameWithType: ThemeInfo
+- uid: KS.ConsoleBase.Themes.ThemeInfo.#ctor(JToken)
+  name: ThemeInfo(JToken)
+  href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo__ctor_JToken_
+  commentId: M:KS.ConsoleBase.Themes.ThemeInfo.#ctor(JToken)
+  fullName: KS.ConsoleBase.Themes.ThemeInfo.ThemeInfo(JToken)
+  nameWithType: ThemeInfo.ThemeInfo(JToken)
 - uid: KS.ConsoleBase.Themes.ThemeInfo.#ctor(System.IO.StreamReader)
   name: ThemeInfo(StreamReader)
   href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo__ctor_System_IO_StreamReader_
@@ -3145,6 +3163,19 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Themes.ThemeInfo.ThemeInfo
   nameWithType: ThemeInfo.ThemeInfo
+- uid: KS.ConsoleBase.Themes.ThemeInfo.ThemeAlternativeOptionColor
+  name: ThemeAlternativeOptionColor
+  href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo_ThemeAlternativeOptionColor
+  commentId: P:KS.ConsoleBase.Themes.ThemeInfo.ThemeAlternativeOptionColor
+  fullName: KS.ConsoleBase.Themes.ThemeInfo.ThemeAlternativeOptionColor
+  nameWithType: ThemeInfo.ThemeAlternativeOptionColor
+- uid: KS.ConsoleBase.Themes.ThemeInfo.ThemeAlternativeOptionColor*
+  name: ThemeAlternativeOptionColor
+  href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo_ThemeAlternativeOptionColor_
+  commentId: Overload:KS.ConsoleBase.Themes.ThemeInfo.ThemeAlternativeOptionColor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Themes.ThemeInfo.ThemeAlternativeOptionColor
+  nameWithType: ThemeInfo.ThemeAlternativeOptionColor
 - uid: KS.ConsoleBase.Themes.ThemeInfo.ThemeBackgroundColor
   name: ThemeBackgroundColor
   href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo_ThemeBackgroundColor
