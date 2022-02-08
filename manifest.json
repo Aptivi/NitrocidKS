@@ -1449,7 +1449,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Configuration.Config.html",
-          "hash": "OpC4oaf27EzpaTPvvPYs57YIkFT+pzlk4HEF8Emhwug="
+          "hash": "slWBVZvPcXeTvfBM6zRw/ph5Rx2wUzF1hf6uQjWxyo8="
         }
       },
       "is_incremental": false,
@@ -1601,6 +1601,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Games.LoveHateRespond.CommentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Games.LoveHateRespond.CommentType.html",
+          "hash": "0/Lp2UzY8FrCxfBpAmpc6O6Gxs6BvJAZ2rs9EevBbRg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Games.LoveHateRespond.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Games.LoveHateRespond.html",
+          "hash": "ay4FNkNd3zW42zc08k8W19YXiYsHKVpHtufiqu5JfAM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Games.Solver.yml",
       "output": {
         ".html": {
@@ -1641,7 +1665,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Games.html",
-          "hash": "eL2FIWBxrCsmd/6Dc8cJt+emmllzNJPLD4nB0q1edYs="
+          "hash": "sUoaO44Dxm8dx+UuTYjJKfv9s8AcMKoMsN1genkjxrQ="
         }
       },
       "is_incremental": false,
@@ -4353,7 +4377,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "KSPZG3xTghbjPapwjplGpKnNn6a6UkFn6FVV+Y+iz9E="
+          "hash": "lw/SYNDaMINp8mN0Nl5HTpcGAiuTM5pF+oNHZjZYbGg="
         }
       },
       "is_incremental": false,
@@ -4404,7 +4428,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 362,
+          "total_file_count": 364,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

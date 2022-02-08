@@ -14023,6 +14023,49 @@ references:
   commentId: N:KS.Misc.Games
   fullName: KS.Misc.Games
   nameWithType: KS.Misc.Games
+- uid: KS.Misc.Games.LoveHateRespond
+  name: LoveHateRespond
+  href: api/KS.Misc.Games.LoveHateRespond.html
+  commentId: T:KS.Misc.Games.LoveHateRespond
+  fullName: KS.Misc.Games.LoveHateRespond
+  nameWithType: LoveHateRespond
+- uid: KS.Misc.Games.LoveHateRespond.CommentType
+  name: LoveHateRespond.CommentType
+  href: api/KS.Misc.Games.LoveHateRespond.CommentType.html
+  commentId: T:KS.Misc.Games.LoveHateRespond.CommentType
+  fullName: KS.Misc.Games.LoveHateRespond.CommentType
+  nameWithType: LoveHateRespond.CommentType
+- uid: KS.Misc.Games.LoveHateRespond.CommentType.Hate
+  name: Hate
+  href: api/KS.Misc.Games.LoveHateRespond.CommentType.html#KS_Misc_Games_LoveHateRespond_CommentType_Hate
+  commentId: F:KS.Misc.Games.LoveHateRespond.CommentType.Hate
+  fullName: KS.Misc.Games.LoveHateRespond.CommentType.Hate
+  nameWithType: LoveHateRespond.CommentType.Hate
+- uid: KS.Misc.Games.LoveHateRespond.CommentType.Love
+  name: Love
+  href: api/KS.Misc.Games.LoveHateRespond.CommentType.html#KS_Misc_Games_LoveHateRespond_CommentType_Love
+  commentId: F:KS.Misc.Games.LoveHateRespond.CommentType.Love
+  fullName: KS.Misc.Games.LoveHateRespond.CommentType.Love
+  nameWithType: LoveHateRespond.CommentType.Love
+- uid: KS.Misc.Games.LoveHateRespond.InitializeLoveHate
+  name: InitializeLoveHate()
+  href: api/KS.Misc.Games.LoveHateRespond.html#KS_Misc_Games_LoveHateRespond_InitializeLoveHate
+  commentId: M:KS.Misc.Games.LoveHateRespond.InitializeLoveHate
+  fullName: KS.Misc.Games.LoveHateRespond.InitializeLoveHate()
+  nameWithType: LoveHateRespond.InitializeLoveHate()
+- uid: KS.Misc.Games.LoveHateRespond.InitializeLoveHate*
+  name: InitializeLoveHate
+  href: api/KS.Misc.Games.LoveHateRespond.html#KS_Misc_Games_LoveHateRespond_InitializeLoveHate_
+  commentId: Overload:KS.Misc.Games.LoveHateRespond.InitializeLoveHate
+  isSpec: "True"
+  fullName: KS.Misc.Games.LoveHateRespond.InitializeLoveHate
+  nameWithType: LoveHateRespond.InitializeLoveHate
+- uid: KS.Misc.Games.LoveHateRespond.LoveOrHateUsersCount
+  name: LoveOrHateUsersCount
+  href: api/KS.Misc.Games.LoveHateRespond.html#KS_Misc_Games_LoveHateRespond_LoveOrHateUsersCount
+  commentId: F:KS.Misc.Games.LoveHateRespond.LoveOrHateUsersCount
+  fullName: KS.Misc.Games.LoveHateRespond.LoveOrHateUsersCount
+  nameWithType: LoveHateRespond.LoveOrHateUsersCount
 - uid: KS.Misc.Games.Solver
   name: Solver
   href: api/KS.Misc.Games.Solver.html
