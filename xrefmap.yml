@@ -1,12 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: KS
-  name: KS
-  href: api/KS.html
-  commentId: N:KS
-  fullName: KS
-  nameWithType: KS
 - uid: KS.Arguments.ArgumentBase
   name: KS.Arguments.ArgumentBase
   href: api/KS.Arguments.ArgumentBase.html
@@ -14941,6 +14935,25 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.StringEvaluators.EvaluateFast
   nameWithType: StringEvaluators.EvaluateFast
+- uid: KS.Misc.Reflection.StringQuery
+  name: StringQuery
+  href: api/KS.Misc.Reflection.StringQuery.html
+  commentId: T:KS.Misc.Reflection.StringQuery
+  fullName: KS.Misc.Reflection.StringQuery
+  nameWithType: StringQuery
+- uid: KS.Misc.Reflection.StringQuery.IsStringNumeric(System.String)
+  name: IsStringNumeric(String)
+  href: api/KS.Misc.Reflection.StringQuery.html#KS_Misc_Reflection_StringQuery_IsStringNumeric_System_String_
+  commentId: M:KS.Misc.Reflection.StringQuery.IsStringNumeric(System.String)
+  fullName: KS.Misc.Reflection.StringQuery.IsStringNumeric(System.String)
+  nameWithType: StringQuery.IsStringNumeric(String)
+- uid: KS.Misc.Reflection.StringQuery.IsStringNumeric*
+  name: IsStringNumeric
+  href: api/KS.Misc.Reflection.StringQuery.html#KS_Misc_Reflection_StringQuery_IsStringNumeric_
+  commentId: Overload:KS.Misc.Reflection.StringQuery.IsStringNumeric
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.StringQuery.IsStringNumeric
+  nameWithType: StringQuery.IsStringNumeric
 - uid: KS.Misc.Screensaver
   name: KS.Misc.Screensaver
   href: api/KS.Misc.Screensaver.html
@@ -18883,6 +18896,89 @@ references:
   fullName.vb: KS.Misc.Writers.ConsoleWriters.ListWriterColor.WriteList(Of TKey, TValue)(System.Collections.Generic.Dictionary(Of TKey, TValue), System.ConsoleColor, System.ConsoleColor, System.Boolean)
   nameWithType: ListWriterColor.WriteList<TKey, TValue>(Dictionary<TKey, TValue>, ConsoleColor, ConsoleColor, Boolean)
   nameWithType.vb: ListWriterColor.WriteList(Of TKey, TValue)(Dictionary(Of TKey, TValue), ConsoleColor, ConsoleColor, Boolean)
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterColor
+  name: TextWriterColor
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterColor.html
+  commentId: T:KS.Misc.Writers.ConsoleWriters.TextWriterColor
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterColor
+  nameWithType: TextWriterColor
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.Color,KS.ConsoleBase.Color,System.Object[])
+  name: Write(String, Boolean, Color, Color, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterColor_Write_System_String_System_Boolean_KS_ConsoleBase_Color_KS_ConsoleBase_Color_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.Color,KS.ConsoleBase.Color,System.Object[])
+  name.vb: Write(String, Boolean, Color, Color, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.Color, KS.ConsoleBase.Color, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.Color, KS.ConsoleBase.Color, System.Object())
+  nameWithType: TextWriterColor.Write(String, Boolean, Color, Color, Object[])
+  nameWithType.vb: TextWriterColor.Write(String, Boolean, Color, Color, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.Color,System.Object[])
+  name: Write(String, Boolean, Color, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterColor_Write_System_String_System_Boolean_KS_ConsoleBase_Color_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.Color,System.Object[])
+  name.vb: Write(String, Boolean, Color, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.Color, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.Color, System.Object())
+  nameWithType: TextWriterColor.Write(String, Boolean, Color, Object[])
+  nameWithType.vb: TextWriterColor.Write(String, Boolean, Color, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.ColorTools.ColTypes,KS.ConsoleBase.ColorTools.ColTypes,System.Object[])
+  name: Write(String, Boolean, ColorTools.ColTypes, ColorTools.ColTypes, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterColor_Write_System_String_System_Boolean_KS_ConsoleBase_ColorTools_ColTypes_KS_ConsoleBase_ColorTools_ColTypes_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.ColorTools.ColTypes,KS.ConsoleBase.ColorTools.ColTypes,System.Object[])
+  name.vb: Write(String, Boolean, ColorTools.ColTypes, ColorTools.ColTypes, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.ColorTools.ColTypes, KS.ConsoleBase.ColorTools.ColTypes, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.ColorTools.ColTypes, KS.ConsoleBase.ColorTools.ColTypes, System.Object())
+  nameWithType: TextWriterColor.Write(String, Boolean, ColorTools.ColTypes, ColorTools.ColTypes, Object[])
+  nameWithType.vb: TextWriterColor.Write(String, Boolean, ColorTools.ColTypes, ColorTools.ColTypes, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.ColorTools.ColTypes,System.Object[])
+  name: Write(String, Boolean, ColorTools.ColTypes, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterColor_Write_System_String_System_Boolean_KS_ConsoleBase_ColorTools_ColTypes_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.ColorTools.ColTypes,System.Object[])
+  name.vb: Write(String, Boolean, ColorTools.ColTypes, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.ColorTools.ColTypes, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.ColorTools.ColTypes, System.Object())
+  nameWithType: TextWriterColor.Write(String, Boolean, ColorTools.ColTypes, Object[])
+  nameWithType.vb: TextWriterColor.Write(String, Boolean, ColorTools.ColTypes, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String,System.Boolean,System.ConsoleColor,System.ConsoleColor,System.Object[])
+  name: Write(String, Boolean, ConsoleColor, ConsoleColor, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterColor_Write_System_String_System_Boolean_System_ConsoleColor_System_ConsoleColor_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String,System.Boolean,System.ConsoleColor,System.ConsoleColor,System.Object[])
+  name.vb: Write(String, Boolean, ConsoleColor, ConsoleColor, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String, System.Boolean, System.ConsoleColor, System.ConsoleColor, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String, System.Boolean, System.ConsoleColor, System.ConsoleColor, System.Object())
+  nameWithType: TextWriterColor.Write(String, Boolean, ConsoleColor, ConsoleColor, Object[])
+  nameWithType.vb: TextWriterColor.Write(String, Boolean, ConsoleColor, ConsoleColor, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String,System.Boolean,System.ConsoleColor,System.Object[])
+  name: Write(String, Boolean, ConsoleColor, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterColor_Write_System_String_System_Boolean_System_ConsoleColor_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String,System.Boolean,System.ConsoleColor,System.Object[])
+  name.vb: Write(String, Boolean, ConsoleColor, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String, System.Boolean, System.ConsoleColor, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write(System.String, System.Boolean, System.ConsoleColor, System.Object())
+  nameWithType: TextWriterColor.Write(String, Boolean, ConsoleColor, Object[])
+  nameWithType.vb: TextWriterColor.Write(String, Boolean, ConsoleColor, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write*
+  name: Write
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterColor_Write_
+  commentId: Overload:KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write
+  isSpec: "True"
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterColor.Write
+  nameWithType: TextWriterColor.Write
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterColor.WritePlain(System.String,System.Boolean,System.Object[])
+  name: WritePlain(String, Boolean, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterColor_WritePlain_System_String_System_Boolean_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterColor.WritePlain(System.String,System.Boolean,System.Object[])
+  name.vb: WritePlain(String, Boolean, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterColor.WritePlain(System.String, System.Boolean, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterColor.WritePlain(System.String, System.Boolean, System.Object())
+  nameWithType: TextWriterColor.WritePlain(String, Boolean, Object[])
+  nameWithType.vb: TextWriterColor.WritePlain(String, Boolean, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterColor.WritePlain*
+  name: WritePlain
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterColor_WritePlain_
+  commentId: Overload:KS.Misc.Writers.ConsoleWriters.TextWriterColor.WritePlain
+  isSpec: "True"
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterColor.WritePlain
+  nameWithType: TextWriterColor.WritePlain
 - uid: KS.Misc.Writers.ConsoleWriters.TextWriterSlowColor
   name: TextWriterSlowColor
   href: api/KS.Misc.Writers.ConsoleWriters.TextWriterSlowColor.html
@@ -27470,89 +27566,6 @@ references:
   fullName.vb: KS.Shell.Shells.ZipShell.ShellType
   nameWithType: ZipShell.IShell.ShellType
   nameWithType.vb: ZipShell.ShellType
-- uid: KS.TextWriterColor
-  name: TextWriterColor
-  href: api/KS.TextWriterColor.html
-  commentId: T:KS.TextWriterColor
-  fullName: KS.TextWriterColor
-  nameWithType: TextWriterColor
-- uid: KS.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.Color,KS.ConsoleBase.Color,System.Object[])
-  name: Write(String, Boolean, Color, Color, Object[])
-  href: api/KS.TextWriterColor.html#KS_TextWriterColor_Write_System_String_System_Boolean_KS_ConsoleBase_Color_KS_ConsoleBase_Color_System_Object___
-  commentId: M:KS.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.Color,KS.ConsoleBase.Color,System.Object[])
-  name.vb: Write(String, Boolean, Color, Color, Object())
-  fullName: KS.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.Color, KS.ConsoleBase.Color, System.Object[])
-  fullName.vb: KS.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.Color, KS.ConsoleBase.Color, System.Object())
-  nameWithType: TextWriterColor.Write(String, Boolean, Color, Color, Object[])
-  nameWithType.vb: TextWriterColor.Write(String, Boolean, Color, Color, Object())
-- uid: KS.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.Color,System.Object[])
-  name: Write(String, Boolean, Color, Object[])
-  href: api/KS.TextWriterColor.html#KS_TextWriterColor_Write_System_String_System_Boolean_KS_ConsoleBase_Color_System_Object___
-  commentId: M:KS.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.Color,System.Object[])
-  name.vb: Write(String, Boolean, Color, Object())
-  fullName: KS.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.Color, System.Object[])
-  fullName.vb: KS.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.Color, System.Object())
-  nameWithType: TextWriterColor.Write(String, Boolean, Color, Object[])
-  nameWithType.vb: TextWriterColor.Write(String, Boolean, Color, Object())
-- uid: KS.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.ColorTools.ColTypes,KS.ConsoleBase.ColorTools.ColTypes,System.Object[])
-  name: Write(String, Boolean, ColorTools.ColTypes, ColorTools.ColTypes, Object[])
-  href: api/KS.TextWriterColor.html#KS_TextWriterColor_Write_System_String_System_Boolean_KS_ConsoleBase_ColorTools_ColTypes_KS_ConsoleBase_ColorTools_ColTypes_System_Object___
-  commentId: M:KS.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.ColorTools.ColTypes,KS.ConsoleBase.ColorTools.ColTypes,System.Object[])
-  name.vb: Write(String, Boolean, ColorTools.ColTypes, ColorTools.ColTypes, Object())
-  fullName: KS.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.ColorTools.ColTypes, KS.ConsoleBase.ColorTools.ColTypes, System.Object[])
-  fullName.vb: KS.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.ColorTools.ColTypes, KS.ConsoleBase.ColorTools.ColTypes, System.Object())
-  nameWithType: TextWriterColor.Write(String, Boolean, ColorTools.ColTypes, ColorTools.ColTypes, Object[])
-  nameWithType.vb: TextWriterColor.Write(String, Boolean, ColorTools.ColTypes, ColorTools.ColTypes, Object())
-- uid: KS.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.ColorTools.ColTypes,System.Object[])
-  name: Write(String, Boolean, ColorTools.ColTypes, Object[])
-  href: api/KS.TextWriterColor.html#KS_TextWriterColor_Write_System_String_System_Boolean_KS_ConsoleBase_ColorTools_ColTypes_System_Object___
-  commentId: M:KS.TextWriterColor.Write(System.String,System.Boolean,KS.ConsoleBase.ColorTools.ColTypes,System.Object[])
-  name.vb: Write(String, Boolean, ColorTools.ColTypes, Object())
-  fullName: KS.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.ColorTools.ColTypes, System.Object[])
-  fullName.vb: KS.TextWriterColor.Write(System.String, System.Boolean, KS.ConsoleBase.ColorTools.ColTypes, System.Object())
-  nameWithType: TextWriterColor.Write(String, Boolean, ColorTools.ColTypes, Object[])
-  nameWithType.vb: TextWriterColor.Write(String, Boolean, ColorTools.ColTypes, Object())
-- uid: KS.TextWriterColor.Write(System.String,System.Boolean,System.ConsoleColor,System.ConsoleColor,System.Object[])
-  name: Write(String, Boolean, ConsoleColor, ConsoleColor, Object[])
-  href: api/KS.TextWriterColor.html#KS_TextWriterColor_Write_System_String_System_Boolean_System_ConsoleColor_System_ConsoleColor_System_Object___
-  commentId: M:KS.TextWriterColor.Write(System.String,System.Boolean,System.ConsoleColor,System.ConsoleColor,System.Object[])
-  name.vb: Write(String, Boolean, ConsoleColor, ConsoleColor, Object())
-  fullName: KS.TextWriterColor.Write(System.String, System.Boolean, System.ConsoleColor, System.ConsoleColor, System.Object[])
-  fullName.vb: KS.TextWriterColor.Write(System.String, System.Boolean, System.ConsoleColor, System.ConsoleColor, System.Object())
-  nameWithType: TextWriterColor.Write(String, Boolean, ConsoleColor, ConsoleColor, Object[])
-  nameWithType.vb: TextWriterColor.Write(String, Boolean, ConsoleColor, ConsoleColor, Object())
-- uid: KS.TextWriterColor.Write(System.String,System.Boolean,System.ConsoleColor,System.Object[])
-  name: Write(String, Boolean, ConsoleColor, Object[])
-  href: api/KS.TextWriterColor.html#KS_TextWriterColor_Write_System_String_System_Boolean_System_ConsoleColor_System_Object___
-  commentId: M:KS.TextWriterColor.Write(System.String,System.Boolean,System.ConsoleColor,System.Object[])
-  name.vb: Write(String, Boolean, ConsoleColor, Object())
-  fullName: KS.TextWriterColor.Write(System.String, System.Boolean, System.ConsoleColor, System.Object[])
-  fullName.vb: KS.TextWriterColor.Write(System.String, System.Boolean, System.ConsoleColor, System.Object())
-  nameWithType: TextWriterColor.Write(String, Boolean, ConsoleColor, Object[])
-  nameWithType.vb: TextWriterColor.Write(String, Boolean, ConsoleColor, Object())
-- uid: KS.TextWriterColor.Write*
-  name: Write
-  href: api/KS.TextWriterColor.html#KS_TextWriterColor_Write_
-  commentId: Overload:KS.TextWriterColor.Write
-  isSpec: "True"
-  fullName: KS.TextWriterColor.Write
-  nameWithType: TextWriterColor.Write
-- uid: KS.TextWriterColor.WritePlain(System.String,System.Boolean,System.Object[])
-  name: WritePlain(String, Boolean, Object[])
-  href: api/KS.TextWriterColor.html#KS_TextWriterColor_WritePlain_System_String_System_Boolean_System_Object___
-  commentId: M:KS.TextWriterColor.WritePlain(System.String,System.Boolean,System.Object[])
-  name.vb: WritePlain(String, Boolean, Object())
-  fullName: KS.TextWriterColor.WritePlain(System.String, System.Boolean, System.Object[])
-  fullName.vb: KS.TextWriterColor.WritePlain(System.String, System.Boolean, System.Object())
-  nameWithType: TextWriterColor.WritePlain(String, Boolean, Object[])
-  nameWithType.vb: TextWriterColor.WritePlain(String, Boolean, Object())
-- uid: KS.TextWriterColor.WritePlain*
-  name: WritePlain
-  href: api/KS.TextWriterColor.html#KS_TextWriterColor_WritePlain_
-  commentId: Overload:KS.TextWriterColor.WritePlain
-  isSpec: "True"
-  fullName: KS.TextWriterColor.WritePlain
-  nameWithType: TextWriterColor.WritePlain
 - uid: KS.TimeDate
   name: KS.TimeDate
   href: api/KS.TimeDate.html
