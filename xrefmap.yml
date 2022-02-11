@@ -14903,38 +14903,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.MethodManager.GetMethod
   nameWithType: MethodManager.GetMethod
-- uid: KS.Misc.Reflection.StringEvaluators
-  name: StringEvaluators
-  href: api/KS.Misc.Reflection.StringEvaluators.html
-  commentId: T:KS.Misc.Reflection.StringEvaluators
-  fullName: KS.Misc.Reflection.StringEvaluators
-  nameWithType: StringEvaluators
-- uid: KS.Misc.Reflection.StringEvaluators.Evaluate(System.String)
-  name: Evaluate(String)
-  href: api/KS.Misc.Reflection.StringEvaluators.html#KS_Misc_Reflection_StringEvaluators_Evaluate_System_String_
-  commentId: M:KS.Misc.Reflection.StringEvaluators.Evaluate(System.String)
-  fullName: KS.Misc.Reflection.StringEvaluators.Evaluate(System.String)
-  nameWithType: StringEvaluators.Evaluate(String)
-- uid: KS.Misc.Reflection.StringEvaluators.Evaluate*
-  name: Evaluate
-  href: api/KS.Misc.Reflection.StringEvaluators.html#KS_Misc_Reflection_StringEvaluators_Evaluate_
-  commentId: Overload:KS.Misc.Reflection.StringEvaluators.Evaluate
-  isSpec: "True"
-  fullName: KS.Misc.Reflection.StringEvaluators.Evaluate
-  nameWithType: StringEvaluators.Evaluate
-- uid: KS.Misc.Reflection.StringEvaluators.EvaluateFast(System.String,System.Type)
-  name: EvaluateFast(String, Type)
-  href: api/KS.Misc.Reflection.StringEvaluators.html#KS_Misc_Reflection_StringEvaluators_EvaluateFast_System_String_System_Type_
-  commentId: M:KS.Misc.Reflection.StringEvaluators.EvaluateFast(System.String,System.Type)
-  fullName: KS.Misc.Reflection.StringEvaluators.EvaluateFast(System.String, System.Type)
-  nameWithType: StringEvaluators.EvaluateFast(String, Type)
-- uid: KS.Misc.Reflection.StringEvaluators.EvaluateFast*
-  name: EvaluateFast
-  href: api/KS.Misc.Reflection.StringEvaluators.html#KS_Misc_Reflection_StringEvaluators_EvaluateFast_
-  commentId: Overload:KS.Misc.Reflection.StringEvaluators.EvaluateFast
-  isSpec: "True"
-  fullName: KS.Misc.Reflection.StringEvaluators.EvaluateFast
-  nameWithType: StringEvaluators.EvaluateFast
 - uid: KS.Misc.Reflection.StringQuery
   name: StringQuery
   href: api/KS.Misc.Reflection.StringQuery.html
@@ -29661,38 +29629,6 @@ references:
   isSpec: "True"
   fullName: KSTests.SpeedDialManagementTests.TestListSFTPSpeedDialEntries
   nameWithType: SpeedDialManagementTests.TestListSFTPSpeedDialEntries
-- uid: KSTests.StringEvaluatorActionTests
-  name: StringEvaluatorActionTests
-  href: api/KSTests.StringEvaluatorActionTests.html
-  commentId: T:KSTests.StringEvaluatorActionTests
-  fullName: KSTests.StringEvaluatorActionTests
-  nameWithType: StringEvaluatorActionTests
-- uid: KSTests.StringEvaluatorActionTests.TestEvaluateFastString
-  name: TestEvaluateFastString()
-  href: api/KSTests.StringEvaluatorActionTests.html#KSTests_StringEvaluatorActionTests_TestEvaluateFastString
-  commentId: M:KSTests.StringEvaluatorActionTests.TestEvaluateFastString
-  fullName: KSTests.StringEvaluatorActionTests.TestEvaluateFastString()
-  nameWithType: StringEvaluatorActionTests.TestEvaluateFastString()
-- uid: KSTests.StringEvaluatorActionTests.TestEvaluateFastString*
-  name: TestEvaluateFastString
-  href: api/KSTests.StringEvaluatorActionTests.html#KSTests_StringEvaluatorActionTests_TestEvaluateFastString_
-  commentId: Overload:KSTests.StringEvaluatorActionTests.TestEvaluateFastString
-  isSpec: "True"
-  fullName: KSTests.StringEvaluatorActionTests.TestEvaluateFastString
-  nameWithType: StringEvaluatorActionTests.TestEvaluateFastString
-- uid: KSTests.StringEvaluatorActionTests.TestEvaluateString
-  name: TestEvaluateString()
-  href: api/KSTests.StringEvaluatorActionTests.html#KSTests_StringEvaluatorActionTests_TestEvaluateString
-  commentId: M:KSTests.StringEvaluatorActionTests.TestEvaluateString
-  fullName: KSTests.StringEvaluatorActionTests.TestEvaluateString()
-  nameWithType: StringEvaluatorActionTests.TestEvaluateString()
-- uid: KSTests.StringEvaluatorActionTests.TestEvaluateString*
-  name: TestEvaluateString
-  href: api/KSTests.StringEvaluatorActionTests.html#KSTests_StringEvaluatorActionTests_TestEvaluateString_
-  commentId: Overload:KSTests.StringEvaluatorActionTests.TestEvaluateString
-  isSpec: "True"
-  fullName: KSTests.StringEvaluatorActionTests.TestEvaluateString
-  nameWithType: StringEvaluatorActionTests.TestEvaluateString
 - uid: KSTests.TextEditorInitializationTests
   name: TextEditorInitializationTests
   href: api/KSTests.TextEditorInitializationTests.html

@@ -1865,18 +1865,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Reflection.StringEvaluators.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Reflection.StringEvaluators.html",
-          "hash": "+YePFMjqmE+JL9YcgY36W8+FhFx22kAcIscbpZXS/kA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Reflection.StringQuery.yml",
       "output": {
         ".html": {
@@ -1893,7 +1881,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Reflection.html",
-          "hash": "RMY3n9GHMJrCUOqyKQWfHIfZOGfyQqKoLEhgLEA0Cwk="
+          "hash": "V75uGzrh2r9gG4Y2dtSUlZ0L/0O5J0hn/MHtG21mGC4="
         }
       },
       "is_incremental": false,
@@ -4241,18 +4229,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSTests.StringEvaluatorActionTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSTests.StringEvaluatorActionTests.html",
-          "hash": "sMfOM9A/4rQHCnLI62l8TLPxZ6w6Q8z78xfpppKtsz4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KSTests.TextEditorInitializationTests.yml",
       "output": {
         ".html": {
@@ -4365,7 +4341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KSTests.html",
-          "hash": "gs/S7Mv2vYqlLmBPAujXJzPVIHtOxDkt8NzxJXeVp00="
+          "hash": "hWzhi4xYhfTOxaYgptX943ryX+ku/QU/8ogvpyu5ceU="
         }
       },
       "is_incremental": false,
@@ -4377,7 +4353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Dh2CSZPYStM7elMsDpzS6BOovbg984OLoGpW0toD9EY="
+          "hash": "nMYaPaoB7fgQUhUtRek5/qzDZ6Bdhw3LWf2nnv1f6Oc="
         }
       },
       "is_incremental": false,
@@ -4428,7 +4404,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 364,
+          "total_file_count": 362,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
