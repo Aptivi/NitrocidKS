@@ -18609,51 +18609,6 @@ references:
   commentId: N:KS.Misc.Threading
   fullName: KS.Misc.Threading
   nameWithType: KS.Misc.Threading
-- uid: KS.Misc.Threading.NamedBackgroundWorker
-  name: NamedBackgroundWorker
-  href: api/KS.Misc.Threading.NamedBackgroundWorker.html
-  commentId: T:KS.Misc.Threading.NamedBackgroundWorker
-  fullName: KS.Misc.Threading.NamedBackgroundWorker
-  nameWithType: NamedBackgroundWorker
-- uid: KS.Misc.Threading.NamedBackgroundWorker.#ctor(System.String)
-  name: NamedBackgroundWorker(String)
-  href: api/KS.Misc.Threading.NamedBackgroundWorker.html#KS_Misc_Threading_NamedBackgroundWorker__ctor_System_String_
-  commentId: M:KS.Misc.Threading.NamedBackgroundWorker.#ctor(System.String)
-  fullName: KS.Misc.Threading.NamedBackgroundWorker.NamedBackgroundWorker(System.String)
-  nameWithType: NamedBackgroundWorker.NamedBackgroundWorker(String)
-- uid: KS.Misc.Threading.NamedBackgroundWorker.#ctor*
-  name: NamedBackgroundWorker
-  href: api/KS.Misc.Threading.NamedBackgroundWorker.html#KS_Misc_Threading_NamedBackgroundWorker__ctor_
-  commentId: Overload:KS.Misc.Threading.NamedBackgroundWorker.#ctor
-  isSpec: "True"
-  fullName: KS.Misc.Threading.NamedBackgroundWorker.NamedBackgroundWorker
-  nameWithType: NamedBackgroundWorker.NamedBackgroundWorker
-- uid: KS.Misc.Threading.NamedBackgroundWorker.OnDoWork(System.ComponentModel.DoWorkEventArgs)
-  name: OnDoWork(DoWorkEventArgs)
-  href: api/KS.Misc.Threading.NamedBackgroundWorker.html#KS_Misc_Threading_NamedBackgroundWorker_OnDoWork_System_ComponentModel_DoWorkEventArgs_
-  commentId: M:KS.Misc.Threading.NamedBackgroundWorker.OnDoWork(System.ComponentModel.DoWorkEventArgs)
-  fullName: KS.Misc.Threading.NamedBackgroundWorker.OnDoWork(System.ComponentModel.DoWorkEventArgs)
-  nameWithType: NamedBackgroundWorker.OnDoWork(DoWorkEventArgs)
-- uid: KS.Misc.Threading.NamedBackgroundWorker.OnDoWork*
-  name: OnDoWork
-  href: api/KS.Misc.Threading.NamedBackgroundWorker.html#KS_Misc_Threading_NamedBackgroundWorker_OnDoWork_
-  commentId: Overload:KS.Misc.Threading.NamedBackgroundWorker.OnDoWork
-  isSpec: "True"
-  fullName: KS.Misc.Threading.NamedBackgroundWorker.OnDoWork
-  nameWithType: NamedBackgroundWorker.OnDoWork
-- uid: KS.Misc.Threading.NamedBackgroundWorker.ThreadName
-  name: ThreadName
-  href: api/KS.Misc.Threading.NamedBackgroundWorker.html#KS_Misc_Threading_NamedBackgroundWorker_ThreadName
-  commentId: P:KS.Misc.Threading.NamedBackgroundWorker.ThreadName
-  fullName: KS.Misc.Threading.NamedBackgroundWorker.ThreadName
-  nameWithType: NamedBackgroundWorker.ThreadName
-- uid: KS.Misc.Threading.NamedBackgroundWorker.ThreadName*
-  name: ThreadName
-  href: api/KS.Misc.Threading.NamedBackgroundWorker.html#KS_Misc_Threading_NamedBackgroundWorker_ThreadName_
-  commentId: Overload:KS.Misc.Threading.NamedBackgroundWorker.ThreadName
-  isSpec: "True"
-  fullName: KS.Misc.Threading.NamedBackgroundWorker.ThreadName
-  nameWithType: NamedBackgroundWorker.ThreadName
 - uid: KS.Misc.Threading.ThreadManager
   name: ThreadManager
   href: api/KS.Misc.Threading.ThreadManager.html

@@ -927,12 +927,7 @@
   "api/KS.Misc.Threading.html": {
     "href": "api/KS.Misc.Threading.html",
     "title": "Namespace KS.Misc.Threading | Kernel Simulator API - Eofla Internals",
-    "keywords": "Namespace KS.Misc.Threading Classes NamedBackgroundWorker ThreadManager"
-  },
-  "api/KS.Misc.Threading.NamedBackgroundWorker.html": {
-    "href": "api/KS.Misc.Threading.NamedBackgroundWorker.html",
-    "title": "Class NamedBackgroundWorker | Kernel Simulator API - Eofla Internals",
-    "keywords": "Class NamedBackgroundWorker Inheritance System.Object System.MarshalByRefObject System.ComponentModel.Component System.ComponentModel.BackgroundWorker NamedBackgroundWorker Namespace : KS.Misc.Threading Assembly : Kernel Simulator.dll Syntax public class NamedBackgroundWorker : BackgroundWorker, IComponent, IDisposable Constructors | Improve this Doc View Source NamedBackgroundWorker(String) Makes a new background worker with the specified name Declaration public NamedBackgroundWorker(string ThreadName) Parameters Type Name Description System.String ThreadName The thread name Properties | Improve this Doc View Source ThreadName The thread name to identify the background worker Declaration public string ThreadName { get; } Property Value Type Description System.String Methods | Improve this Doc View Source OnDoWork(DoWorkEventArgs) Identifies, then raises the System.ComponentModel.BackgroundWorker.DoWork event. Declaration protected override void OnDoWork(DoWorkEventArgs e) Parameters Type Name Description System.ComponentModel.DoWorkEventArgs e Overrides System.ComponentModel.BackgroundWorker.OnDoWork(System.ComponentModel.DoWorkEventArgs)"
+    "keywords": "Namespace KS.Misc.Threading Classes ThreadManager"
   },
   "api/KS.Misc.Threading.ThreadManager.html": {
     "href": "api/KS.Misc.Threading.ThreadManager.html",

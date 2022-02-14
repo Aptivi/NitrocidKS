@@ -2222,18 +2222,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Threading.NamedBackgroundWorker.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Threading.NamedBackgroundWorker.html",
-          "hash": "SMCxbYc0fGmu4J5SCUvU/7XfY52r7n+4UX5PPf3QJdc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Threading.ThreadManager.yml",
       "output": {
         ".html": {
@@ -2250,7 +2238,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Threading.html",
-          "hash": "rztcLUSqQIVDCKDqha/diTJdAyo3p3CpcI7XsttCrbQ="
+          "hash": "Mi8BbW2rX/KfB1PHQZuC2yZ9c5VmtFudBdvVvjX1CbU="
         }
       },
       "is_incremental": false,
@@ -3918,7 +3906,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "QJTYjRgtQeZJOK4kmCHflUvhMzHesh48aS2MmgwxIss="
+          "hash": "on8TE6G4eUY89RpiHvpu1XVyOgmjGfLdGSX+XOW69W0="
         }
       },
       "is_incremental": false,
@@ -3969,7 +3957,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 325,
+          "total_file_count": 324,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
