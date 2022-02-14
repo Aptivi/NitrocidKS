@@ -27646,25 +27646,12 @@ references:
   isSpec: "True"
   fullName: KS.TimeDate.TimeDate.ShowCurrentTimes
   nameWithType: TimeDate.ShowCurrentTimes
-- uid: KS.TimeDate.TimeDate.TimeDateChange
-  name: TimeDateChange
-  href: api/KS.TimeDate.TimeDate.html#KS_TimeDate_TimeDate_TimeDateChange
-  commentId: P:KS.TimeDate.TimeDate.TimeDateChange
-  fullName: KS.TimeDate.TimeDate.TimeDateChange
-  nameWithType: TimeDate.TimeDateChange
-- uid: KS.TimeDate.TimeDate.TimeDateChange*
-  name: TimeDateChange
-  href: api/KS.TimeDate.TimeDate.html#KS_TimeDate_TimeDate_TimeDateChange_
-  commentId: Overload:KS.TimeDate.TimeDate.TimeDateChange
-  isSpec: "True"
-  fullName: KS.TimeDate.TimeDate.TimeDateChange
-  nameWithType: TimeDate.TimeDateChange
-- uid: KS.TimeDate.TimeDate.TimeDateChange_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)
-  name: TimeDateChange_DoWork(Object, DoWorkEventArgs)
-  href: api/KS.TimeDate.TimeDate.html#KS_TimeDate_TimeDate_TimeDateChange_DoWork_System_Object_System_ComponentModel_DoWorkEventArgs_
-  commentId: M:KS.TimeDate.TimeDate.TimeDateChange_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)
-  fullName: KS.TimeDate.TimeDate.TimeDateChange_DoWork(System.Object, System.ComponentModel.DoWorkEventArgs)
-  nameWithType: TimeDate.TimeDateChange_DoWork(Object, DoWorkEventArgs)
+- uid: KS.TimeDate.TimeDate.TimeDateChange_DoWork
+  name: TimeDateChange_DoWork()
+  href: api/KS.TimeDate.TimeDate.html#KS_TimeDate_TimeDate_TimeDateChange_DoWork
+  commentId: M:KS.TimeDate.TimeDate.TimeDateChange_DoWork
+  fullName: KS.TimeDate.TimeDate.TimeDateChange_DoWork()
+  nameWithType: TimeDate.TimeDateChange_DoWork()
 - uid: KS.TimeDate.TimeDate.TimeDateChange_DoWork*
   name: TimeDateChange_DoWork
   href: api/KS.TimeDate.TimeDate.html#KS_TimeDate_TimeDate_TimeDateChange_DoWork_
