@@ -15202,38 +15202,18 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.CustomDisplay
   fullName: KS.Misc.Screensaver.Displays.CustomDisplay
   nameWithType: CustomDisplay
-- uid: KS.Misc.Screensaver.Displays.CustomDisplay.CheckForError(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)
-  name: CheckForError(Object, RunWorkerCompletedEventArgs)
-  href: api/KS.Misc.Screensaver.Displays.CustomDisplay.html#KS_Misc_Screensaver_Displays_CustomDisplay_CheckForError_System_Object_System_ComponentModel_RunWorkerCompletedEventArgs_
-  commentId: M:KS.Misc.Screensaver.Displays.CustomDisplay.CheckForError(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)
-  fullName: KS.Misc.Screensaver.Displays.CustomDisplay.CheckForError(System.Object, System.ComponentModel.RunWorkerCompletedEventArgs)
-  nameWithType: CustomDisplay.CheckForError(Object, RunWorkerCompletedEventArgs)
-- uid: KS.Misc.Screensaver.Displays.CustomDisplay.CheckForError*
-  name: CheckForError
-  href: api/KS.Misc.Screensaver.Displays.CustomDisplay.html#KS_Misc_Screensaver_Displays_CustomDisplay_CheckForError_
-  commentId: Overload:KS.Misc.Screensaver.Displays.CustomDisplay.CheckForError
-  isSpec: "True"
-  fullName: KS.Misc.Screensaver.Displays.CustomDisplay.CheckForError
-  nameWithType: CustomDisplay.CheckForError
 - uid: KS.Misc.Screensaver.Displays.CustomDisplay.Custom
   name: Custom
   href: api/KS.Misc.Screensaver.Displays.CustomDisplay.html#KS_Misc_Screensaver_Displays_CustomDisplay_Custom
-  commentId: P:KS.Misc.Screensaver.Displays.CustomDisplay.Custom
+  commentId: F:KS.Misc.Screensaver.Displays.CustomDisplay.Custom
   fullName: KS.Misc.Screensaver.Displays.CustomDisplay.Custom
   nameWithType: CustomDisplay.Custom
-- uid: KS.Misc.Screensaver.Displays.CustomDisplay.Custom*
-  name: Custom
-  href: api/KS.Misc.Screensaver.Displays.CustomDisplay.html#KS_Misc_Screensaver_Displays_CustomDisplay_Custom_
-  commentId: Overload:KS.Misc.Screensaver.Displays.CustomDisplay.Custom
-  isSpec: "True"
-  fullName: KS.Misc.Screensaver.Displays.CustomDisplay.Custom
-  nameWithType: CustomDisplay.Custom
-- uid: KS.Misc.Screensaver.Displays.CustomDisplay.Custom_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)
-  name: Custom_DoWork(Object, DoWorkEventArgs)
-  href: api/KS.Misc.Screensaver.Displays.CustomDisplay.html#KS_Misc_Screensaver_Displays_CustomDisplay_Custom_DoWork_System_Object_System_ComponentModel_DoWorkEventArgs_
-  commentId: M:KS.Misc.Screensaver.Displays.CustomDisplay.Custom_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)
-  fullName: KS.Misc.Screensaver.Displays.CustomDisplay.Custom_DoWork(System.Object, System.ComponentModel.DoWorkEventArgs)
-  nameWithType: CustomDisplay.Custom_DoWork(Object, DoWorkEventArgs)
+- uid: KS.Misc.Screensaver.Displays.CustomDisplay.Custom_DoWork
+  name: Custom_DoWork()
+  href: api/KS.Misc.Screensaver.Displays.CustomDisplay.html#KS_Misc_Screensaver_Displays_CustomDisplay_Custom_DoWork
+  commentId: M:KS.Misc.Screensaver.Displays.CustomDisplay.Custom_DoWork
+  fullName: KS.Misc.Screensaver.Displays.CustomDisplay.Custom_DoWork()
+  nameWithType: CustomDisplay.Custom_DoWork()
 - uid: KS.Misc.Screensaver.Displays.CustomDisplay.Custom_DoWork*
   name: Custom_DoWork
   href: api/KS.Misc.Screensaver.Displays.CustomDisplay.html#KS_Misc_Screensaver_Displays_CustomDisplay_Custom_DoWork_
@@ -15247,19 +15227,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.LinotypoDisplay
   fullName: KS.Misc.Screensaver.Displays.LinotypoDisplay
   nameWithType: LinotypoDisplay
-- uid: KS.Misc.Screensaver.Displays.LinotypoDisplay.CheckForError(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)
-  name: CheckForError(Object, RunWorkerCompletedEventArgs)
-  href: api/KS.Misc.Screensaver.Displays.LinotypoDisplay.html#KS_Misc_Screensaver_Displays_LinotypoDisplay_CheckForError_System_Object_System_ComponentModel_RunWorkerCompletedEventArgs_
-  commentId: M:KS.Misc.Screensaver.Displays.LinotypoDisplay.CheckForError(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)
-  fullName: KS.Misc.Screensaver.Displays.LinotypoDisplay.CheckForError(System.Object, System.ComponentModel.RunWorkerCompletedEventArgs)
-  nameWithType: LinotypoDisplay.CheckForError(Object, RunWorkerCompletedEventArgs)
-- uid: KS.Misc.Screensaver.Displays.LinotypoDisplay.CheckForError*
-  name: CheckForError
-  href: api/KS.Misc.Screensaver.Displays.LinotypoDisplay.html#KS_Misc_Screensaver_Displays_LinotypoDisplay_CheckForError_
-  commentId: Overload:KS.Misc.Screensaver.Displays.LinotypoDisplay.CheckForError
-  isSpec: "True"
-  fullName: KS.Misc.Screensaver.Displays.LinotypoDisplay.CheckForError
-  nameWithType: LinotypoDisplay.CheckForError
 - uid: KS.Misc.Screensaver.Displays.LinotypoDisplay.FillType
   name: LinotypoDisplay.FillType
   href: api/KS.Misc.Screensaver.Displays.LinotypoDisplay.FillType.html
@@ -15300,12 +15267,12 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.Displays.LinotypoDisplay.HandleNextColumn
   nameWithType: LinotypoDisplay.HandleNextColumn
-- uid: KS.Misc.Screensaver.Displays.LinotypoDisplay.Linotypo_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)
-  name: Linotypo_DoWork(Object, DoWorkEventArgs)
-  href: api/KS.Misc.Screensaver.Displays.LinotypoDisplay.html#KS_Misc_Screensaver_Displays_LinotypoDisplay_Linotypo_DoWork_System_Object_System_ComponentModel_DoWorkEventArgs_
-  commentId: M:KS.Misc.Screensaver.Displays.LinotypoDisplay.Linotypo_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)
-  fullName: KS.Misc.Screensaver.Displays.LinotypoDisplay.Linotypo_DoWork(System.Object, System.ComponentModel.DoWorkEventArgs)
-  nameWithType: LinotypoDisplay.Linotypo_DoWork(Object, DoWorkEventArgs)
+- uid: KS.Misc.Screensaver.Displays.LinotypoDisplay.Linotypo_DoWork
+  name: Linotypo_DoWork()
+  href: api/KS.Misc.Screensaver.Displays.LinotypoDisplay.html#KS_Misc_Screensaver_Displays_LinotypoDisplay_Linotypo_DoWork
+  commentId: M:KS.Misc.Screensaver.Displays.LinotypoDisplay.Linotypo_DoWork
+  fullName: KS.Misc.Screensaver.Displays.LinotypoDisplay.Linotypo_DoWork()
+  nameWithType: LinotypoDisplay.Linotypo_DoWork()
 - uid: KS.Misc.Screensaver.Displays.LinotypoDisplay.Linotypo_DoWork*
   name: Linotypo_DoWork
   href: api/KS.Misc.Screensaver.Displays.LinotypoDisplay.html#KS_Misc_Screensaver_Displays_LinotypoDisplay_Linotypo_DoWork_
@@ -15510,12 +15477,6 @@ references:
   commentId: F:KS.Misc.Screensaver.Screensaver.ScreensaverDebug
   fullName: KS.Misc.Screensaver.Screensaver.ScreensaverDebug
   nameWithType: Screensaver.ScreensaverDebug
-- uid: KS.Misc.Screensaver.Screensaver.Screensavers
-  name: Screensavers
-  href: api/KS.Misc.Screensaver.Screensaver.html#KS_Misc_Screensaver_Screensaver_Screensavers
-  commentId: F:KS.Misc.Screensaver.Screensaver.Screensavers
-  fullName: KS.Misc.Screensaver.Screensaver.Screensavers
-  nameWithType: Screensaver.Screensavers
 - uid: KS.Misc.Screensaver.Screensaver.ScrnTimeout
   name: ScrnTimeout
   href: api/KS.Misc.Screensaver.Screensaver.html#KS_Misc_Screensaver_Screensaver_ScrnTimeout
@@ -18744,6 +18705,12 @@ references:
   commentId: M:KS.Misc.Threading.ThreadManager.SleepNoBlock(System.Int64,System.ComponentModel.BackgroundWorker)
   fullName: KS.Misc.Threading.ThreadManager.SleepNoBlock(System.Int64, System.ComponentModel.BackgroundWorker)
   nameWithType: ThreadManager.SleepNoBlock(Int64, BackgroundWorker)
+- uid: KS.Misc.Threading.ThreadManager.SleepNoBlock(System.Int64,System.Threading.Thread)
+  name: SleepNoBlock(Int64, Thread)
+  href: api/KS.Misc.Threading.ThreadManager.html#KS_Misc_Threading_ThreadManager_SleepNoBlock_System_Int64_System_Threading_Thread_
+  commentId: M:KS.Misc.Threading.ThreadManager.SleepNoBlock(System.Int64,System.Threading.Thread)
+  fullName: KS.Misc.Threading.ThreadManager.SleepNoBlock(System.Int64, System.Threading.Thread)
+  nameWithType: ThreadManager.SleepNoBlock(Int64, Thread)
 - uid: KS.Misc.Threading.ThreadManager.SleepNoBlock*
   name: SleepNoBlock
   href: api/KS.Misc.Threading.ThreadManager.html#KS_Misc_Threading_ThreadManager_SleepNoBlock_
