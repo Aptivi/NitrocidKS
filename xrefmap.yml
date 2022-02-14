@@ -15427,12 +15427,12 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.Screensaver.GetScreensaverInstance
   nameWithType: Screensaver.GetScreensaverInstance
-- uid: KS.Misc.Screensaver.Screensaver.HandleTimeout(System.Object,System.ComponentModel.DoWorkEventArgs)
-  name: HandleTimeout(Object, DoWorkEventArgs)
-  href: api/KS.Misc.Screensaver.Screensaver.html#KS_Misc_Screensaver_Screensaver_HandleTimeout_System_Object_System_ComponentModel_DoWorkEventArgs_
-  commentId: M:KS.Misc.Screensaver.Screensaver.HandleTimeout(System.Object,System.ComponentModel.DoWorkEventArgs)
-  fullName: KS.Misc.Screensaver.Screensaver.HandleTimeout(System.Object, System.ComponentModel.DoWorkEventArgs)
-  nameWithType: Screensaver.HandleTimeout(Object, DoWorkEventArgs)
+- uid: KS.Misc.Screensaver.Screensaver.HandleTimeout
+  name: HandleTimeout()
+  href: api/KS.Misc.Screensaver.Screensaver.html#KS_Misc_Screensaver_Screensaver_HandleTimeout
+  commentId: M:KS.Misc.Screensaver.Screensaver.HandleTimeout
+  fullName: KS.Misc.Screensaver.Screensaver.HandleTimeout()
+  nameWithType: Screensaver.HandleTimeout()
 - uid: KS.Misc.Screensaver.Screensaver.HandleTimeout*
   name: HandleTimeout
   href: api/KS.Misc.Screensaver.Screensaver.html#KS_Misc_Screensaver_Screensaver_HandleTimeout_
@@ -15509,19 +15509,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.Screensaver.ShowSavers
   nameWithType: Screensaver.ShowSavers
-- uid: KS.Misc.Screensaver.Screensaver.Timeout
-  name: Timeout
-  href: api/KS.Misc.Screensaver.Screensaver.html#KS_Misc_Screensaver_Screensaver_Timeout
-  commentId: P:KS.Misc.Screensaver.Screensaver.Timeout
-  fullName: KS.Misc.Screensaver.Screensaver.Timeout
-  nameWithType: Screensaver.Timeout
-- uid: KS.Misc.Screensaver.Screensaver.Timeout*
-  name: Timeout
-  href: api/KS.Misc.Screensaver.Screensaver.html#KS_Misc_Screensaver_Screensaver_Timeout_
-  commentId: Overload:KS.Misc.Screensaver.Screensaver.Timeout
-  isSpec: "True"
-  fullName: KS.Misc.Screensaver.Screensaver.Timeout
-  nameWithType: Screensaver.Timeout
 - uid: KS.Misc.Screensaver.ScreensaverSettings
   name: ScreensaverSettings
   href: api/KS.Misc.Screensaver.ScreensaverSettings.html
