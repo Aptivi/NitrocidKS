@@ -18609,6 +18609,83 @@ references:
   commentId: N:KS.Misc.Threading
   fullName: KS.Misc.Threading
   nameWithType: KS.Misc.Threading
+- uid: KS.Misc.Threading.KernelThread
+  name: KernelThread
+  href: api/KS.Misc.Threading.KernelThread.html
+  commentId: T:KS.Misc.Threading.KernelThread
+  fullName: KS.Misc.Threading.KernelThread
+  nameWithType: KernelThread
+- uid: KS.Misc.Threading.KernelThread.#ctor(System.String,System.Boolean,System.Threading.ParameterizedThreadStart)
+  name: KernelThread(String, Boolean, ParameterizedThreadStart)
+  href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread__ctor_System_String_System_Boolean_System_Threading_ParameterizedThreadStart_
+  commentId: M:KS.Misc.Threading.KernelThread.#ctor(System.String,System.Boolean,System.Threading.ParameterizedThreadStart)
+  fullName: KS.Misc.Threading.KernelThread.KernelThread(System.String, System.Boolean, System.Threading.ParameterizedThreadStart)
+  nameWithType: KernelThread.KernelThread(String, Boolean, ParameterizedThreadStart)
+- uid: KS.Misc.Threading.KernelThread.#ctor(System.String,System.Boolean,System.Threading.ThreadStart)
+  name: KernelThread(String, Boolean, ThreadStart)
+  href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread__ctor_System_String_System_Boolean_System_Threading_ThreadStart_
+  commentId: M:KS.Misc.Threading.KernelThread.#ctor(System.String,System.Boolean,System.Threading.ThreadStart)
+  fullName: KS.Misc.Threading.KernelThread.KernelThread(System.String, System.Boolean, System.Threading.ThreadStart)
+  nameWithType: KernelThread.KernelThread(String, Boolean, ThreadStart)
+- uid: KS.Misc.Threading.KernelThread.#ctor*
+  name: KernelThread
+  href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread__ctor_
+  commentId: Overload:KS.Misc.Threading.KernelThread.#ctor
+  isSpec: "True"
+  fullName: KS.Misc.Threading.KernelThread.KernelThread
+  nameWithType: KernelThread.KernelThread
+- uid: KS.Misc.Threading.KernelThread.IsAlive
+  name: IsAlive
+  href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread_IsAlive
+  commentId: P:KS.Misc.Threading.KernelThread.IsAlive
+  fullName: KS.Misc.Threading.KernelThread.IsAlive
+  nameWithType: KernelThread.IsAlive
+- uid: KS.Misc.Threading.KernelThread.IsAlive*
+  name: IsAlive
+  href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread_IsAlive_
+  commentId: Overload:KS.Misc.Threading.KernelThread.IsAlive
+  isSpec: "True"
+  fullName: KS.Misc.Threading.KernelThread.IsAlive
+  nameWithType: KernelThread.IsAlive
+- uid: KS.Misc.Threading.KernelThread.Start
+  name: Start()
+  href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread_Start
+  commentId: M:KS.Misc.Threading.KernelThread.Start
+  fullName: KS.Misc.Threading.KernelThread.Start()
+  nameWithType: KernelThread.Start()
+- uid: KS.Misc.Threading.KernelThread.Start*
+  name: Start
+  href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread_Start_
+  commentId: Overload:KS.Misc.Threading.KernelThread.Start
+  isSpec: "True"
+  fullName: KS.Misc.Threading.KernelThread.Start
+  nameWithType: KernelThread.Start
+- uid: KS.Misc.Threading.KernelThread.Stop
+  name: Stop()
+  href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread_Stop
+  commentId: M:KS.Misc.Threading.KernelThread.Stop
+  fullName: KS.Misc.Threading.KernelThread.Stop()
+  nameWithType: KernelThread.Stop()
+- uid: KS.Misc.Threading.KernelThread.Stop*
+  name: Stop
+  href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread_Stop_
+  commentId: Overload:KS.Misc.Threading.KernelThread.Stop
+  isSpec: "True"
+  fullName: KS.Misc.Threading.KernelThread.Stop
+  nameWithType: KernelThread.Stop
+- uid: KS.Misc.Threading.KernelThread.Wait
+  name: Wait()
+  href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread_Wait
+  commentId: M:KS.Misc.Threading.KernelThread.Wait
+  fullName: KS.Misc.Threading.KernelThread.Wait()
+  nameWithType: KernelThread.Wait()
+- uid: KS.Misc.Threading.KernelThread.Wait*
+  name: Wait
+  href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread_Wait_
+  commentId: Overload:KS.Misc.Threading.KernelThread.Wait
+  isSpec: "True"
+  fullName: KS.Misc.Threading.KernelThread.Wait
+  nameWithType: KernelThread.Wait
 - uid: KS.Misc.Threading.ThreadManager
   name: ThreadManager
   href: api/KS.Misc.Threading.ThreadManager.html
@@ -18641,6 +18718,12 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Threading.ThreadManager.GetActualTicks
   nameWithType: ThreadManager.GetActualTicks
+- uid: KS.Misc.Threading.ThreadManager.SleepNoBlock(System.Int64,KS.Misc.Threading.KernelThread)
+  name: SleepNoBlock(Int64, KernelThread)
+  href: api/KS.Misc.Threading.ThreadManager.html#KS_Misc_Threading_ThreadManager_SleepNoBlock_System_Int64_KS_Misc_Threading_KernelThread_
+  commentId: M:KS.Misc.Threading.ThreadManager.SleepNoBlock(System.Int64,KS.Misc.Threading.KernelThread)
+  fullName: KS.Misc.Threading.ThreadManager.SleepNoBlock(System.Int64, KS.Misc.Threading.KernelThread)
+  nameWithType: ThreadManager.SleepNoBlock(Int64, KernelThread)
 - uid: KS.Misc.Threading.ThreadManager.SleepNoBlock(System.Int64,System.ComponentModel.BackgroundWorker)
   name: SleepNoBlock(Int64, BackgroundWorker)
   href: api/KS.Misc.Threading.ThreadManager.html#KS_Misc_Threading_ThreadManager_SleepNoBlock_System_Int64_System_ComponentModel_BackgroundWorker_
