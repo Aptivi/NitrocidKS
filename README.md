@@ -1,3 +1,7 @@
+# WARNING
+
+This version is no longer maintained; it has reached EOL since 2/20/2022. We recommend that you use the latest version.
+
 # Kernel Simulator
 
 ![Kernel startup](https://i.imgur.com/KO1v1Kg.png)
