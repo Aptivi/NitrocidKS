@@ -86,7 +86,12 @@ Module TextWriterWhereColor
                 Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
                 For Each ParagraphChar As Char In MessageParagraph
                     If CursorLeft = WindowWidth - 1 Then
-                        CursorTop += 1
+                        If CursorTop = BufferHeight - 1 Then
+                            'We've reached the end of buffer. Write the line to scroll.
+                            WriteLine()
+                        Else
+                            CursorTop += 1
+                        End If
                         CursorLeft = Left
                     End If
                     Write(ParagraphChar)
@@ -94,7 +99,12 @@ Module TextWriterWhereColor
 
                 'We're starting with the new paragraph, so we increase the CursorTop value by 1.
                 If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
-                    CursorTop += 1
+                    If CursorTop = BufferHeight - 1 Then
+                        'We've reached the end of buffer. Write the line to scroll.
+                        WriteLine()
+                    Else
+                        CursorTop += 1
+                    End If
                     CursorLeft = Left
                 End If
             Next
@@ -137,7 +147,12 @@ Module TextWriterWhereColor
                 Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
                 For Each ParagraphChar As Char In MessageParagraph
                     If CursorLeft = WindowWidth - 1 Then
-                        CursorTop += 1
+                        If CursorTop = BufferHeight - 1 Then
+                            'We've reached the end of buffer. Write the line to scroll.
+                            WriteLine()
+                        Else
+                            CursorTop += 1
+                        End If
                         CursorLeft = Left
                     End If
                     Write(ParagraphChar)
@@ -145,7 +160,12 @@ Module TextWriterWhereColor
 
                 'We're starting with the new paragraph, so we increase the CursorTop value by 1.
                 If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
-                    CursorTop += 1
+                    If CursorTop = BufferHeight - 1 Then
+                        'We've reached the end of buffer. Write the line to scroll.
+                        WriteLine()
+                    Else
+                        CursorTop += 1
+                    End If
                     CursorLeft = Left
                 End If
             Next
@@ -189,7 +209,12 @@ Module TextWriterWhereColor
                 Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
                 For Each ParagraphChar As Char In MessageParagraph
                     If CursorLeft = WindowWidth - 1 Then
-                        CursorTop += 1
+                        If CursorTop = BufferHeight - 1 Then
+                            'We've reached the end of buffer. Write the line to scroll.
+                            WriteLine()
+                        Else
+                            CursorTop += 1
+                        End If
                         CursorLeft = Left
                     End If
                     Write(ParagraphChar)
@@ -197,7 +222,12 @@ Module TextWriterWhereColor
 
                 'We're starting with the new paragraph, so we increase the CursorTop value by 1.
                 If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
-                    CursorTop += 1
+                    If CursorTop = BufferHeight - 1 Then
+                        'We've reached the end of buffer. Write the line to scroll.
+                        WriteLine()
+                    Else
+                        CursorTop += 1
+                    End If
                     CursorLeft = Left
                 End If
             Next
@@ -242,7 +272,12 @@ Module TextWriterWhereColor
                 Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
                 For Each ParagraphChar As Char In MessageParagraph
                     If CursorLeft = WindowWidth - 1 Then
-                        CursorTop += 1
+                        If CursorTop = BufferHeight - 1 Then
+                            'We've reached the end of buffer. Write the line to scroll.
+                            WriteLine()
+                        Else
+                            CursorTop += 1
+                        End If
                         CursorLeft = Left
                     End If
                     Write(ParagraphChar)
@@ -250,7 +285,12 @@ Module TextWriterWhereColor
 
                 'We're starting with the new paragraph, so we increase the CursorTop value by 1.
                 If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
-                    CursorTop += 1
+                    If CursorTop = BufferHeight - 1 Then
+                        'We've reached the end of buffer. Write the line to scroll.
+                        WriteLine()
+                    Else
+                        CursorTop += 1
+                    End If
                     CursorLeft = Left
                 End If
             Next
@@ -296,7 +336,12 @@ Module TextWriterWhereColor
                 Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
                 For Each ParagraphChar As Char In MessageParagraph
                     If CursorLeft = WindowWidth - 1 Then
-                        CursorTop += 1
+                        If CursorTop = BufferHeight - 1 Then
+                            'We've reached the end of buffer. Write the line to scroll.
+                            WriteLine()
+                        Else
+                            CursorTop += 1
+                        End If
                         CursorLeft = Left
                     End If
                     Write(ParagraphChar)
@@ -304,7 +349,12 @@ Module TextWriterWhereColor
 
                 'We're starting with the new paragraph, so we increase the CursorTop value by 1.
                 If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
-                    CursorTop += 1
+                    If CursorTop = BufferHeight - 1 Then
+                        'We've reached the end of buffer. Write the line to scroll.
+                        WriteLine()
+                    Else
+                        CursorTop += 1
+                    End If
                     CursorLeft = Left
                 End If
             Next
