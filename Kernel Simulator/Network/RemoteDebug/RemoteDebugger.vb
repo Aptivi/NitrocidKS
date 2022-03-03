@@ -137,7 +137,7 @@ Public Module RemoteDebugger
                     Dim msg As String = Text.Encoding.Default.GetString(buff)
                     msg = msg.Replace(vbCr, vbNullChar) 'Remove all instances of vbCr (macOS newlines) } Windows hosts are affected, too, because it uses
                     msg = msg.Replace(vbLf, vbNullChar) 'Remove all instances of vbLf (Linux newlines) } vbCrLf, which means (vbCr + vbLf)
-                    If Not msg.StartsWith(vbNullChar) Then 'Don't post message if it starts with a null character.
+                    If Not Convert.ToInt32(msg(0)) = 0 Then 'Don't post message if it starts with a null character.
                         If msg.StartsWith("/") Then 'Message is a command
                             Dim cmd As String = msg.Replace("/", "").Replace(vbNullChar, "")
                             If DebugCommands.ContainsKey(cmd.Split(" ")(0)) Then 'Command is found or not
