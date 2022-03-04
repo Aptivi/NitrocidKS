@@ -136,12 +136,12 @@ Public Module HelpSystem
                     End If
                 Next
                 W(vbNewLine + DoTranslation("Mod commands:"), True, ColTypes.Neutral)
-                If moddefs.Count = 0 Then W(DoTranslation("No mod commands."), True, ColTypes.Neutral)
+                If moddefs.Count = 0 Then W("- " + DoTranslation("No mod commands."), True, ColTypes.Neutral)
                 For Each cmd As String In moddefs.Keys
                     W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, moddefs(cmd))
                 Next
                 W(vbNewLine + DoTranslation("Alias commands:"), True, ColTypes.Neutral)
-                If Aliases.Count = 0 Then W(DoTranslation("No alias commands."), True, ColTypes.Neutral)
+                If Aliases.Count = 0 Then W("- " + DoTranslation("No alias commands."), True, ColTypes.Neutral)
                 For Each cmd As String In Aliases.Keys
                     W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, definitions(Aliases(cmd)))
                 Next

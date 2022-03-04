@@ -39,12 +39,12 @@ Public Module ZipHelpSystem
                     W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, ZipShell_HelpEntries(cmd))
                 Next
                 W(vbNewLine + DoTranslation("Mod commands:"), True, ColTypes.Neutral)
-                If ZipShell_ModHelpEntries.Count = 0 Then W(DoTranslation("No mod commands."), True, ColTypes.Neutral)
+                If ZipShell_ModHelpEntries.Count = 0 Then W("- " + DoTranslation("No mod commands."), True, ColTypes.Neutral)
                 For Each cmd As String In ZipShell_ModHelpEntries.Keys
                     W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, ZipShell_ModHelpEntries(cmd))
                 Next
                 W(vbNewLine + DoTranslation("Alias commands:"), True, ColTypes.Neutral)
-                If ZIPShellAliases.Count = 0 Then W(DoTranslation("No alias commands."), True, ColTypes.Neutral)
+                If ZIPShellAliases.Count = 0 Then W("- " + DoTranslation("No alias commands."), True, ColTypes.Neutral)
                 For Each cmd As String In ZIPShellAliases.Keys
                     W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, ZIPShellAliases(MailShellAliases(cmd)))
                 Next

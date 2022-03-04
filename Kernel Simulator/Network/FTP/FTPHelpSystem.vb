@@ -59,12 +59,12 @@ Public Module FTPHelpSystem
                     W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, FTPDefinitions(cmd))
                 Next
                 W(vbNewLine + DoTranslation("Mod commands:"), True, ColTypes.Neutral)
-                If FTPModDefs.Count = 0 Then W(DoTranslation("No mod commands."), True, ColTypes.Neutral)
+                If FTPModDefs.Count = 0 Then W("- " + DoTranslation("No mod commands."), True, ColTypes.Neutral)
                 For Each cmd As String In FTPModDefs.Keys
                     W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, FTPModDefs(cmd))
                 Next
                 W(vbNewLine + DoTranslation("Alias commands:"), True, ColTypes.Neutral)
-                If FTPShellAliases.Count = 0 Then W(DoTranslation("No alias commands."), True, ColTypes.Neutral)
+                If FTPShellAliases.Count = 0 Then W("- " + DoTranslation("No alias commands."), True, ColTypes.Neutral)
                 For Each cmd As String In FTPShellAliases.Keys
                     W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, FTPDefinitions(FTPShellAliases(cmd)))
                 Next

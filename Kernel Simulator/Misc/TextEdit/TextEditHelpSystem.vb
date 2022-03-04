@@ -46,12 +46,12 @@ Public Module TextEditHelpSystem
                     W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, TextEdit_HelpEntries(cmd))
                 Next
                 W(vbNewLine + DoTranslation("Mod commands:"), True, ColTypes.Neutral)
-                If TextEdit_ModHelpEntries.Count = 0 Then W(DoTranslation("No mod commands."), True, ColTypes.Neutral)
+                If TextEdit_ModHelpEntries.Count = 0 Then W("- " + DoTranslation("No mod commands."), True, ColTypes.Neutral)
                 For Each cmd As String In TextEdit_ModHelpEntries.Keys
                     W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, TextEdit_ModHelpEntries(cmd))
                 Next
                 W(vbNewLine + DoTranslation("Alias commands:"), True, ColTypes.Neutral)
-                If TextShellAliases.Count = 0 Then W(DoTranslation("No alias commands."), True, ColTypes.Neutral)
+                If TextShellAliases.Count = 0 Then W("- " + DoTranslation("No alias commands."), True, ColTypes.Neutral)
                 For Each cmd As String In TextShellAliases.Keys
                     W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, TextEdit_HelpEntries(TextShellAliases(cmd)))
                 Next

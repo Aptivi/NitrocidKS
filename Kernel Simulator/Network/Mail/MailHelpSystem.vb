@@ -56,12 +56,12 @@ Public Module MailHelpSystem
                     W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, MailDefinitions(cmd))
                 Next
                 W(vbNewLine + DoTranslation("Mod commands:"), True, ColTypes.Neutral)
-                If MailModDefs.Count = 0 Then W(DoTranslation("No mod commands."), True, ColTypes.Neutral)
+                If MailModDefs.Count = 0 Then W("- " + DoTranslation("No mod commands."), True, ColTypes.Neutral)
                 For Each cmd As String In MailModDefs.Keys
                     W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, MailModDefs(cmd))
                 Next
                 W(vbNewLine + DoTranslation("Alias commands:"), True, ColTypes.Neutral)
-                If MailShellAliases.Count = 0 Then W(DoTranslation("No alias commands."), True, ColTypes.Neutral)
+                If MailShellAliases.Count = 0 Then W("- " + DoTranslation("No alias commands."), True, ColTypes.Neutral)
                 For Each cmd As String In MailShellAliases.Keys
                     W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, MailDefinitions(MailShellAliases(cmd)))
                 Next
