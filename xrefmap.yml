@@ -482,6 +482,19 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Color.G
   nameWithType: Color.G
+- uid: KS.ConsoleBase.Color.Hex
+  name: Hex
+  href: api/KS.ConsoleBase.Color.html#KS_ConsoleBase_Color_Hex
+  commentId: P:KS.ConsoleBase.Color.Hex
+  fullName: KS.ConsoleBase.Color.Hex
+  nameWithType: Color.Hex
+- uid: KS.ConsoleBase.Color.Hex*
+  name: Hex
+  href: api/KS.ConsoleBase.Color.html#KS_ConsoleBase_Color_Hex_
+  commentId: Overload:KS.ConsoleBase.Color.Hex
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Color.Hex
+  nameWithType: Color.Hex
 - uid: KS.ConsoleBase.Color.IsBright
   name: IsBright
   href: api/KS.ConsoleBase.Color.html#KS_ConsoleBase_Color_IsBright
@@ -2523,6 +2536,32 @@ references:
   commentId: F:KS.ConsoleBase.ColorTools.ContKernelErrorColor
   fullName: KS.ConsoleBase.ColorTools.ContKernelErrorColor
   nameWithType: ColorTools.ContKernelErrorColor
+- uid: KS.ConsoleBase.ColorTools.ConvertFromHexToRGB(System.String)
+  name: ConvertFromHexToRGB(String)
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_ConvertFromHexToRGB_System_String_
+  commentId: M:KS.ConsoleBase.ColorTools.ConvertFromHexToRGB(System.String)
+  fullName: KS.ConsoleBase.ColorTools.ConvertFromHexToRGB(System.String)
+  nameWithType: ColorTools.ConvertFromHexToRGB(String)
+- uid: KS.ConsoleBase.ColorTools.ConvertFromHexToRGB*
+  name: ConvertFromHexToRGB
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_ConvertFromHexToRGB_
+  commentId: Overload:KS.ConsoleBase.ColorTools.ConvertFromHexToRGB
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ColorTools.ConvertFromHexToRGB
+  nameWithType: ColorTools.ConvertFromHexToRGB
+- uid: KS.ConsoleBase.ColorTools.ConvertFromRGBToHex(System.String)
+  name: ConvertFromRGBToHex(String)
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_ConvertFromRGBToHex_System_String_
+  commentId: M:KS.ConsoleBase.ColorTools.ConvertFromRGBToHex(System.String)
+  fullName: KS.ConsoleBase.ColorTools.ConvertFromRGBToHex(System.String)
+  nameWithType: ColorTools.ConvertFromRGBToHex(String)
+- uid: KS.ConsoleBase.ColorTools.ConvertFromRGBToHex*
+  name: ConvertFromRGBToHex
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_ConvertFromRGBToHex_
+  commentId: Overload:KS.ConsoleBase.ColorTools.ConvertFromRGBToHex
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ColorTools.ConvertFromRGBToHex
+  nameWithType: ColorTools.ConvertFromRGBToHex
 - uid: KS.ConsoleBase.ColorTools.DevelopmentWarningColor
   name: DevelopmentWarningColor
   href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_DevelopmentWarningColor
@@ -3098,6 +3137,19 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.ConsoleExtensions.GetTerminalEmulator
   nameWithType: ConsoleExtensions.GetTerminalEmulator
+- uid: KS.ConsoleBase.ConsoleExtensions.GetTerminalType
+  name: GetTerminalType()
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_GetTerminalType
+  commentId: M:KS.ConsoleBase.ConsoleExtensions.GetTerminalType
+  fullName: KS.ConsoleBase.ConsoleExtensions.GetTerminalType()
+  nameWithType: ConsoleExtensions.GetTerminalType()
+- uid: KS.ConsoleBase.ConsoleExtensions.GetTerminalType*
+  name: GetTerminalType
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_GetTerminalType_
+  commentId: Overload:KS.ConsoleBase.ConsoleExtensions.GetTerminalType
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ConsoleExtensions.GetTerminalType
+  nameWithType: ConsoleExtensions.GetTerminalType
 - uid: KS.ConsoleBase.ConsoleExtensions.PercentRepeat(System.Int32,System.Int32,System.Int32)
   name: PercentRepeat(Int32, Int32, Int32)
   href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_PercentRepeat_System_Int32_System_Int32_System_Int32_
@@ -3124,6 +3176,25 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.ConsoleExtensions.PercentRepeatTargeted
   nameWithType: ConsoleExtensions.PercentRepeatTargeted
+- uid: KS.ConsoleBase.ConsoleSanityChecker
+  name: ConsoleSanityChecker
+  href: api/KS.ConsoleBase.ConsoleSanityChecker.html
+  commentId: T:KS.ConsoleBase.ConsoleSanityChecker
+  fullName: KS.ConsoleBase.ConsoleSanityChecker
+  nameWithType: ConsoleSanityChecker
+- uid: KS.ConsoleBase.ConsoleSanityChecker.CheckConsole
+  name: CheckConsole()
+  href: api/KS.ConsoleBase.ConsoleSanityChecker.html#KS_ConsoleBase_ConsoleSanityChecker_CheckConsole
+  commentId: M:KS.ConsoleBase.ConsoleSanityChecker.CheckConsole
+  fullName: KS.ConsoleBase.ConsoleSanityChecker.CheckConsole()
+  nameWithType: ConsoleSanityChecker.CheckConsole()
+- uid: KS.ConsoleBase.ConsoleSanityChecker.CheckConsole*
+  name: CheckConsole
+  href: api/KS.ConsoleBase.ConsoleSanityChecker.html#KS_ConsoleBase_ConsoleSanityChecker_CheckConsole_
+  commentId: Overload:KS.ConsoleBase.ConsoleSanityChecker.CheckConsole
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ConsoleSanityChecker.CheckConsole
+  nameWithType: ConsoleSanityChecker.CheckConsole
 - uid: KS.ConsoleBase.Input
   name: Input
   href: api/KS.ConsoleBase.Input.html
@@ -4563,6 +4634,12 @@ references:
   commentId: F:KS.Files.KernelPathType.CustomSaverSettings
   fullName: KS.Files.KernelPathType.CustomSaverSettings
   nameWithType: KernelPathType.CustomSaverSettings
+- uid: KS.Files.KernelPathType.CustomSplashes
+  name: CustomSplashes
+  href: api/KS.Files.KernelPathType.html#KS_Files_KernelPathType_CustomSplashes
+  commentId: F:KS.Files.KernelPathType.CustomSplashes
+  fullName: KS.Files.KernelPathType.CustomSplashes
+  nameWithType: KernelPathType.CustomSplashes
 - uid: KS.Files.KernelPathType.DebugDevNames
   name: DebugDevNames
   href: api/KS.Files.KernelPathType.html#KS_Files_KernelPathType_DebugDevNames
@@ -9541,6 +9618,68 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Exceptions.HTTPShellException.HTTPShellException
   nameWithType: HTTPShellException.HTTPShellException
+- uid: KS.Kernel.Exceptions.InsaneConsoleDetectedException
+  name: InsaneConsoleDetectedException
+  href: api/KS.Kernel.Exceptions.InsaneConsoleDetectedException.html
+  commentId: T:KS.Kernel.Exceptions.InsaneConsoleDetectedException
+  fullName: KS.Kernel.Exceptions.InsaneConsoleDetectedException
+  nameWithType: InsaneConsoleDetectedException
+- uid: KS.Kernel.Exceptions.InsaneConsoleDetectedException.#ctor
+  name: InsaneConsoleDetectedException()
+  href: api/KS.Kernel.Exceptions.InsaneConsoleDetectedException.html#KS_Kernel_Exceptions_InsaneConsoleDetectedException__ctor
+  commentId: M:KS.Kernel.Exceptions.InsaneConsoleDetectedException.#ctor
+  fullName: KS.Kernel.Exceptions.InsaneConsoleDetectedException.InsaneConsoleDetectedException()
+  nameWithType: InsaneConsoleDetectedException.InsaneConsoleDetectedException()
+- uid: KS.Kernel.Exceptions.InsaneConsoleDetectedException.#ctor(System.String)
+  name: InsaneConsoleDetectedException(String)
+  href: api/KS.Kernel.Exceptions.InsaneConsoleDetectedException.html#KS_Kernel_Exceptions_InsaneConsoleDetectedException__ctor_System_String_
+  commentId: M:KS.Kernel.Exceptions.InsaneConsoleDetectedException.#ctor(System.String)
+  fullName: KS.Kernel.Exceptions.InsaneConsoleDetectedException.InsaneConsoleDetectedException(System.String)
+  nameWithType: InsaneConsoleDetectedException.InsaneConsoleDetectedException(String)
+- uid: KS.Kernel.Exceptions.InsaneConsoleDetectedException.#ctor(System.String,System.Exception)
+  name: InsaneConsoleDetectedException(String, Exception)
+  href: api/KS.Kernel.Exceptions.InsaneConsoleDetectedException.html#KS_Kernel_Exceptions_InsaneConsoleDetectedException__ctor_System_String_System_Exception_
+  commentId: M:KS.Kernel.Exceptions.InsaneConsoleDetectedException.#ctor(System.String,System.Exception)
+  fullName: KS.Kernel.Exceptions.InsaneConsoleDetectedException.InsaneConsoleDetectedException(System.String, System.Exception)
+  nameWithType: InsaneConsoleDetectedException.InsaneConsoleDetectedException(String, Exception)
+- uid: KS.Kernel.Exceptions.InsaneConsoleDetectedException.#ctor(System.String,System.Exception,System.Object[])
+  name: InsaneConsoleDetectedException(String, Exception, Object[])
+  href: api/KS.Kernel.Exceptions.InsaneConsoleDetectedException.html#KS_Kernel_Exceptions_InsaneConsoleDetectedException__ctor_System_String_System_Exception_System_Object___
+  commentId: M:KS.Kernel.Exceptions.InsaneConsoleDetectedException.#ctor(System.String,System.Exception,System.Object[])
+  name.vb: InsaneConsoleDetectedException(String, Exception, Object())
+  fullName: KS.Kernel.Exceptions.InsaneConsoleDetectedException.InsaneConsoleDetectedException(System.String, System.Exception, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.InsaneConsoleDetectedException.InsaneConsoleDetectedException(System.String, System.Exception, System.Object())
+  nameWithType: InsaneConsoleDetectedException.InsaneConsoleDetectedException(String, Exception, Object[])
+  nameWithType.vb: InsaneConsoleDetectedException.InsaneConsoleDetectedException(String, Exception, Object())
+- uid: KS.Kernel.Exceptions.InsaneConsoleDetectedException.#ctor(System.String,System.Object[])
+  name: InsaneConsoleDetectedException(String, Object[])
+  href: api/KS.Kernel.Exceptions.InsaneConsoleDetectedException.html#KS_Kernel_Exceptions_InsaneConsoleDetectedException__ctor_System_String_System_Object___
+  commentId: M:KS.Kernel.Exceptions.InsaneConsoleDetectedException.#ctor(System.String,System.Object[])
+  name.vb: InsaneConsoleDetectedException(String, Object())
+  fullName: KS.Kernel.Exceptions.InsaneConsoleDetectedException.InsaneConsoleDetectedException(System.String, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.InsaneConsoleDetectedException.InsaneConsoleDetectedException(System.String, System.Object())
+  nameWithType: InsaneConsoleDetectedException.InsaneConsoleDetectedException(String, Object[])
+  nameWithType.vb: InsaneConsoleDetectedException.InsaneConsoleDetectedException(String, Object())
+- uid: KS.Kernel.Exceptions.InsaneConsoleDetectedException.#ctor*
+  name: InsaneConsoleDetectedException
+  href: api/KS.Kernel.Exceptions.InsaneConsoleDetectedException.html#KS_Kernel_Exceptions_InsaneConsoleDetectedException__ctor_
+  commentId: Overload:KS.Kernel.Exceptions.InsaneConsoleDetectedException.#ctor
+  isSpec: "True"
+  fullName: KS.Kernel.Exceptions.InsaneConsoleDetectedException.InsaneConsoleDetectedException
+  nameWithType: InsaneConsoleDetectedException.InsaneConsoleDetectedException
+- uid: KS.Kernel.Exceptions.InsaneConsoleDetectedException.InsanityReason
+  name: InsanityReason
+  href: api/KS.Kernel.Exceptions.InsaneConsoleDetectedException.html#KS_Kernel_Exceptions_InsaneConsoleDetectedException_InsanityReason
+  commentId: P:KS.Kernel.Exceptions.InsaneConsoleDetectedException.InsanityReason
+  fullName: KS.Kernel.Exceptions.InsaneConsoleDetectedException.InsanityReason
+  nameWithType: InsaneConsoleDetectedException.InsanityReason
+- uid: KS.Kernel.Exceptions.InsaneConsoleDetectedException.InsanityReason*
+  name: InsanityReason
+  href: api/KS.Kernel.Exceptions.InsaneConsoleDetectedException.html#KS_Kernel_Exceptions_InsaneConsoleDetectedException_InsanityReason_
+  commentId: Overload:KS.Kernel.Exceptions.InsaneConsoleDetectedException.InsanityReason
+  isSpec: "True"
+  fullName: KS.Kernel.Exceptions.InsaneConsoleDetectedException.InsanityReason
+  nameWithType: InsaneConsoleDetectedException.InsanityReason
 - uid: KS.Kernel.Exceptions.InvalidFeedTypeException
   name: InvalidFeedTypeException
   href: api/KS.Kernel.Exceptions.InvalidFeedTypeException.html
@@ -18250,6 +18389,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.ISplash.SplashClosing
   nameWithType: ISplash.SplashClosing
+- uid: KS.Misc.Splash.ISplash.SplashDisplaysProgress
+  name: SplashDisplaysProgress
+  href: api/KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_SplashDisplaysProgress
+  commentId: P:KS.Misc.Splash.ISplash.SplashDisplaysProgress
+  fullName: KS.Misc.Splash.ISplash.SplashDisplaysProgress
+  nameWithType: ISplash.SplashDisplaysProgress
+- uid: KS.Misc.Splash.ISplash.SplashDisplaysProgress*
+  name: SplashDisplaysProgress
+  href: api/KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_SplashDisplaysProgress_
+  commentId: Overload:KS.Misc.Splash.ISplash.SplashDisplaysProgress
+  isSpec: "True"
+  fullName: KS.Misc.Splash.ISplash.SplashDisplaysProgress
+  nameWithType: ISplash.SplashDisplaysProgress
 - uid: KS.Misc.Splash.ISplash.SplashName
   name: SplashName
   href: api/KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_SplashName
@@ -18418,6 +18570,32 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.SplashManager.CurrentSplashInfo
   nameWithType: SplashManager.CurrentSplashInfo
+- uid: KS.Misc.Splash.SplashManager.GetSplashInstance(System.Reflection.Assembly)
+  name: GetSplashInstance(Assembly)
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_GetSplashInstance_System_Reflection_Assembly_
+  commentId: M:KS.Misc.Splash.SplashManager.GetSplashInstance(System.Reflection.Assembly)
+  fullName: KS.Misc.Splash.SplashManager.GetSplashInstance(System.Reflection.Assembly)
+  nameWithType: SplashManager.GetSplashInstance(Assembly)
+- uid: KS.Misc.Splash.SplashManager.GetSplashInstance*
+  name: GetSplashInstance
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_GetSplashInstance_
+  commentId: Overload:KS.Misc.Splash.SplashManager.GetSplashInstance
+  isSpec: "True"
+  fullName: KS.Misc.Splash.SplashManager.GetSplashInstance
+  nameWithType: SplashManager.GetSplashInstance
+- uid: KS.Misc.Splash.SplashManager.LoadSplashes
+  name: LoadSplashes()
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_LoadSplashes
+  commentId: M:KS.Misc.Splash.SplashManager.LoadSplashes
+  fullName: KS.Misc.Splash.SplashManager.LoadSplashes()
+  nameWithType: SplashManager.LoadSplashes()
+- uid: KS.Misc.Splash.SplashManager.LoadSplashes*
+  name: LoadSplashes
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_LoadSplashes_
+  commentId: Overload:KS.Misc.Splash.SplashManager.LoadSplashes
+  isSpec: "True"
+  fullName: KS.Misc.Splash.SplashManager.LoadSplashes
+  nameWithType: SplashManager.LoadSplashes
 - uid: KS.Misc.Splash.SplashManager.OpenSplash
   name: OpenSplash()
   href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_OpenSplash
@@ -18434,7 +18612,14 @@ references:
 - uid: KS.Misc.Splash.SplashManager.Splashes
   name: Splashes
   href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_Splashes
-  commentId: F:KS.Misc.Splash.SplashManager.Splashes
+  commentId: P:KS.Misc.Splash.SplashManager.Splashes
+  fullName: KS.Misc.Splash.SplashManager.Splashes
+  nameWithType: SplashManager.Splashes
+- uid: KS.Misc.Splash.SplashManager.Splashes*
+  name: Splashes
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_Splashes_
+  commentId: Overload:KS.Misc.Splash.SplashManager.Splashes
+  isSpec: "True"
   fullName: KS.Misc.Splash.SplashManager.Splashes
   nameWithType: SplashManager.Splashes
 - uid: KS.Misc.Splash.SplashManager.SplashName
@@ -18443,6 +18628,19 @@ references:
   commentId: F:KS.Misc.Splash.SplashManager.SplashName
   fullName: KS.Misc.Splash.SplashManager.SplashName
   nameWithType: SplashManager.SplashName
+- uid: KS.Misc.Splash.SplashManager.UnloadSplashes
+  name: UnloadSplashes()
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_UnloadSplashes
+  commentId: M:KS.Misc.Splash.SplashManager.UnloadSplashes
+  fullName: KS.Misc.Splash.SplashManager.UnloadSplashes()
+  nameWithType: SplashManager.UnloadSplashes()
+- uid: KS.Misc.Splash.SplashManager.UnloadSplashes*
+  name: UnloadSplashes
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_UnloadSplashes_
+  commentId: Overload:KS.Misc.Splash.SplashManager.UnloadSplashes
+  isSpec: "True"
+  fullName: KS.Misc.Splash.SplashManager.UnloadSplashes
+  nameWithType: SplashManager.UnloadSplashes
 - uid: KS.Misc.Splash.SplashReport
   name: SplashReport
   href: api/KS.Misc.Splash.SplashReport.html

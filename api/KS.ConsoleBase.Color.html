@@ -103,7 +103,7 @@
     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_ConsoleBase_Color__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Color.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L135">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L170">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Color__ctor_" data-uid="KS.ConsoleBase.Color.#ctor*"></a>
   <h4 id="KS_ConsoleBase_Color__ctor_System_Int32_" data-uid="KS.ConsoleBase.Color.#ctor(System.Int32)">Color(Int32)</h4>
@@ -152,7 +152,7 @@
     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_ConsoleBase_Color__ctor_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Color.%23ctor(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L117">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L147">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Color__ctor_" data-uid="KS.ConsoleBase.Color.#ctor*"></a>
   <h4 id="KS_ConsoleBase_Color__ctor_System_Int32_System_Int32_System_Int32_" data-uid="KS.ConsoleBase.Color.#ctor(System.Int32,System.Int32,System.Int32)">Color(Int32, Int32, Int32)</h4>
@@ -237,7 +237,7 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">ColorSpecifier</span></td>
-        <td><p>A color specifier. It must be a valid number from 0-255 if using 255-colors, or a VT sequence if using true color as follows: &lt;R&gt;;&lt;G&gt;;&lt;B&gt;</p>
+        <td><p>A color specifier. It must be a valid number from 0-255 if using 255-colors, a VT sequence if using true color as follows: &lt;R&gt;;&lt;G&gt;;&lt;B&gt;, or a hexadecimal representation of a number (#AABBCC for example)</p>
 </td>
       </tr>
     </tbody>
@@ -264,7 +264,7 @@
     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_ConsoleBase_Color_B.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Color.B%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L55">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L51">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Color_B_" data-uid="KS.ConsoleBase.Color.B*"></a>
   <h4 id="KS_ConsoleBase_Color_B" data-uid="KS.ConsoleBase.Color.B">B</h4>
@@ -295,7 +295,7 @@
     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_ConsoleBase_Color_G.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Color.G%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L50">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L47">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Color_G_" data-uid="KS.ConsoleBase.Color.G*"></a>
   <h4 id="KS_ConsoleBase_Color_G" data-uid="KS.ConsoleBase.Color.G">G</h4>
@@ -317,6 +317,37 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_ConsoleBase_Color_Hex.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Color.Hex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L55">View Source</a>
+  </span>
+  <a id="KS_ConsoleBase_Color_Hex_" data-uid="KS.ConsoleBase.Color.Hex*"></a>
+  <h4 id="KS_ConsoleBase_Color_Hex" data-uid="KS.ConsoleBase.Color.Hex">Hex</h4>
+  <div class="markdown level1 summary"><p>Hexadecimal representation of the color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Hex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -388,7 +419,7 @@
     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_ConsoleBase_Color_PlainSequence.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Color.PlainSequence%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L28">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L27">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Color_PlainSequence_" data-uid="KS.ConsoleBase.Color.PlainSequence*"></a>
   <h4 id="KS_ConsoleBase_Color_PlainSequence" data-uid="KS.ConsoleBase.Color.PlainSequence">PlainSequence</h4>
@@ -419,7 +450,7 @@
     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_ConsoleBase_Color_PlainSequenceEnclosed.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Color.PlainSequenceEnclosed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L33">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L31">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Color_PlainSequenceEnclosed_" data-uid="KS.ConsoleBase.Color.PlainSequenceEnclosed*"></a>
   <h4 id="KS_ConsoleBase_Color_PlainSequenceEnclosed" data-uid="KS.ConsoleBase.Color.PlainSequenceEnclosed">PlainSequenceEnclosed</h4>
@@ -450,7 +481,7 @@
     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_ConsoleBase_Color_R.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Color.R%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L45">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L43">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Color_R_" data-uid="KS.ConsoleBase.Color.R*"></a>
   <h4 id="KS_ConsoleBase_Color_R" data-uid="KS.ConsoleBase.Color.R">R</h4>
@@ -512,7 +543,7 @@
     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_ConsoleBase_Color_VTSequenceBackground.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Color.VTSequenceBackground%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L41">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L39">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Color_VTSequenceBackground_" data-uid="KS.ConsoleBase.Color.VTSequenceBackground*"></a>
   <h4 id="KS_ConsoleBase_Color_VTSequenceBackground" data-uid="KS.ConsoleBase.Color.VTSequenceBackground">VTSequenceBackground</h4>
@@ -543,7 +574,7 @@
     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_ConsoleBase_Color_VTSequenceForeground.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Color.VTSequenceForeground%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L37">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Console/Color.vb/#L35">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Color_VTSequenceForeground_" data-uid="KS.ConsoleBase.Color.VTSequenceForeground*"></a>
   <h4 id="KS_ConsoleBase_Color_VTSequenceForeground" data-uid="KS.ConsoleBase.Color.VTSequenceForeground">VTSequenceForeground</h4>
