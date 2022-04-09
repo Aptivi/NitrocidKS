@@ -13682,12 +13682,6 @@ references:
   commentId: M:KS.Misc.Configuration.SettingsApp.FindSetting(System.String,JToken)
   fullName: KS.Misc.Configuration.SettingsApp.FindSetting(System.String, JToken)
   nameWithType: SettingsApp.FindSetting(String, JToken)
-- uid: KS.Misc.Configuration.SettingsApp.FindSetting(System.String,System.Boolean)
-  name: FindSetting(String, Boolean)
-  href: api/KS.Misc.Configuration.SettingsApp.html#KS_Misc_Configuration_SettingsApp_FindSetting_System_String_System_Boolean_
-  commentId: M:KS.Misc.Configuration.SettingsApp.FindSetting(System.String,System.Boolean)
-  fullName: KS.Misc.Configuration.SettingsApp.FindSetting(System.String, System.Boolean)
-  nameWithType: SettingsApp.FindSetting(String, Boolean)
 - uid: KS.Misc.Configuration.SettingsApp.FindSetting*
   name: FindSetting
   href: api/KS.Misc.Configuration.SettingsApp.html#KS_Misc_Configuration_SettingsApp_FindSetting_
@@ -13695,32 +13689,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Configuration.SettingsApp.FindSetting
   nameWithType: SettingsApp.FindSetting
-- uid: KS.Misc.Configuration.SettingsApp.GetConfigPropertyValueInVariableField(System.String,System.String)
-  name: GetConfigPropertyValueInVariableField(String, String)
-  href: api/KS.Misc.Configuration.SettingsApp.html#KS_Misc_Configuration_SettingsApp_GetConfigPropertyValueInVariableField_System_String_System_String_
-  commentId: M:KS.Misc.Configuration.SettingsApp.GetConfigPropertyValueInVariableField(System.String,System.String)
-  fullName: KS.Misc.Configuration.SettingsApp.GetConfigPropertyValueInVariableField(System.String, System.String)
-  nameWithType: SettingsApp.GetConfigPropertyValueInVariableField(String, String)
-- uid: KS.Misc.Configuration.SettingsApp.GetConfigPropertyValueInVariableField*
-  name: GetConfigPropertyValueInVariableField
-  href: api/KS.Misc.Configuration.SettingsApp.html#KS_Misc_Configuration_SettingsApp_GetConfigPropertyValueInVariableField_
-  commentId: Overload:KS.Misc.Configuration.SettingsApp.GetConfigPropertyValueInVariableField
-  isSpec: "True"
-  fullName: KS.Misc.Configuration.SettingsApp.GetConfigPropertyValueInVariableField
-  nameWithType: SettingsApp.GetConfigPropertyValueInVariableField
-- uid: KS.Misc.Configuration.SettingsApp.GetConfigValueField(System.String)
-  name: GetConfigValueField(String)
-  href: api/KS.Misc.Configuration.SettingsApp.html#KS_Misc_Configuration_SettingsApp_GetConfigValueField_System_String_
-  commentId: M:KS.Misc.Configuration.SettingsApp.GetConfigValueField(System.String)
-  fullName: KS.Misc.Configuration.SettingsApp.GetConfigValueField(System.String)
-  nameWithType: SettingsApp.GetConfigValueField(String)
-- uid: KS.Misc.Configuration.SettingsApp.GetConfigValueField*
-  name: GetConfigValueField
-  href: api/KS.Misc.Configuration.SettingsApp.html#KS_Misc_Configuration_SettingsApp_GetConfigValueField_
-  commentId: Overload:KS.Misc.Configuration.SettingsApp.GetConfigValueField
-  isSpec: "True"
-  fullName: KS.Misc.Configuration.SettingsApp.GetConfigValueField
-  nameWithType: SettingsApp.GetConfigValueField
 - uid: KS.Misc.Configuration.SettingsApp.OpenKey(System.String,System.Int32,JToken)
   name: OpenKey(String, Int32, JToken)
   href: api/KS.Misc.Configuration.SettingsApp.html#KS_Misc_Configuration_SettingsApp_OpenKey_System_String_System_Int32_JToken_
@@ -13760,19 +13728,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Configuration.SettingsApp.OpenSection
   nameWithType: SettingsApp.OpenSection
-- uid: KS.Misc.Configuration.SettingsApp.SetConfigValueField(System.String,System.Object)
-  name: SetConfigValueField(String, Object)
-  href: api/KS.Misc.Configuration.SettingsApp.html#KS_Misc_Configuration_SettingsApp_SetConfigValueField_System_String_System_Object_
-  commentId: M:KS.Misc.Configuration.SettingsApp.SetConfigValueField(System.String,System.Object)
-  fullName: KS.Misc.Configuration.SettingsApp.SetConfigValueField(System.String, System.Object)
-  nameWithType: SettingsApp.SetConfigValueField(String, Object)
-- uid: KS.Misc.Configuration.SettingsApp.SetConfigValueField*
-  name: SetConfigValueField
-  href: api/KS.Misc.Configuration.SettingsApp.html#KS_Misc_Configuration_SettingsApp_SetConfigValueField_
-  commentId: Overload:KS.Misc.Configuration.SettingsApp.SetConfigValueField
-  isSpec: "True"
-  fullName: KS.Misc.Configuration.SettingsApp.SetConfigValueField
-  nameWithType: SettingsApp.SetConfigValueField
 - uid: KS.Misc.Configuration.SettingsApp.VariableFinder(JToken)
   name: VariableFinder(JToken)
   href: api/KS.Misc.Configuration.SettingsApp.html#KS_Misc_Configuration_SettingsApp_VariableFinder_JToken_
