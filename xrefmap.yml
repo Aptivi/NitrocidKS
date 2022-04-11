@@ -2549,6 +2549,12 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.ColorTools.ConvertFromHexToRGB
   nameWithType: ColorTools.ConvertFromHexToRGB
+- uid: KS.ConsoleBase.ColorTools.ConvertFromRGBToHex(System.Int32,System.Int32,System.Int32)
+  name: ConvertFromRGBToHex(Int32, Int32, Int32)
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_ConvertFromRGBToHex_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.ColorTools.ConvertFromRGBToHex(System.Int32,System.Int32,System.Int32)
+  fullName: KS.ConsoleBase.ColorTools.ConvertFromRGBToHex(System.Int32, System.Int32, System.Int32)
+  nameWithType: ColorTools.ConvertFromRGBToHex(Int32, Int32, Int32)
 - uid: KS.ConsoleBase.ColorTools.ConvertFromRGBToHex(System.String)
   name: ConvertFromRGBToHex(String)
   href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_ConvertFromRGBToHex_System_String_
