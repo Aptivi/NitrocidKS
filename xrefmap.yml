@@ -15205,6 +15205,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.FieldManager.GetProperties
   nameWithType: FieldManager.GetProperties
+- uid: KS.Misc.Reflection.FieldManager.GetPropertiesNoEvaluation(System.Type)
+  name: GetPropertiesNoEvaluation(Type)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetPropertiesNoEvaluation_System_Type_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetPropertiesNoEvaluation(System.Type)
+  fullName: KS.Misc.Reflection.FieldManager.GetPropertiesNoEvaluation(System.Type)
+  nameWithType: FieldManager.GetPropertiesNoEvaluation(Type)
+- uid: KS.Misc.Reflection.FieldManager.GetPropertiesNoEvaluation*
+  name: GetPropertiesNoEvaluation
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetPropertiesNoEvaluation_
+  commentId: Overload:KS.Misc.Reflection.FieldManager.GetPropertiesNoEvaluation
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.FieldManager.GetPropertiesNoEvaluation
+  nameWithType: FieldManager.GetPropertiesNoEvaluation
 - uid: KS.Misc.Reflection.FieldManager.GetPropertyValueInVariable(System.String,System.String)
   name: GetPropertyValueInVariable(String, String)
   href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetPropertyValueInVariable_System_String_System_String_
