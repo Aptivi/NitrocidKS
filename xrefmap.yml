@@ -14031,6 +14031,19 @@ references:
   commentId: T:KS.Misc.Encryption.HashVerifier
   fullName: KS.Misc.Encryption.HashVerifier
   nameWithType: HashVerifier
+- uid: KS.Misc.Encryption.HashVerifier.GetExpectedHashLength(KS.Misc.Encryption.Encryption.Algorithms)
+  name: GetExpectedHashLength(Encryption.Algorithms)
+  href: api/KS.Misc.Encryption.HashVerifier.html#KS_Misc_Encryption_HashVerifier_GetExpectedHashLength_KS_Misc_Encryption_Encryption_Algorithms_
+  commentId: M:KS.Misc.Encryption.HashVerifier.GetExpectedHashLength(KS.Misc.Encryption.Encryption.Algorithms)
+  fullName: KS.Misc.Encryption.HashVerifier.GetExpectedHashLength(KS.Misc.Encryption.Encryption.Algorithms)
+  nameWithType: HashVerifier.GetExpectedHashLength(Encryption.Algorithms)
+- uid: KS.Misc.Encryption.HashVerifier.GetExpectedHashLength*
+  name: GetExpectedHashLength
+  href: api/KS.Misc.Encryption.HashVerifier.html#KS_Misc_Encryption_HashVerifier_GetExpectedHashLength_
+  commentId: Overload:KS.Misc.Encryption.HashVerifier.GetExpectedHashLength
+  isSpec: "True"
+  fullName: KS.Misc.Encryption.HashVerifier.GetExpectedHashLength
+  nameWithType: HashVerifier.GetExpectedHashLength
 - uid: KS.Misc.Encryption.HashVerifier.VerifyHashFromHash(System.String,KS.Misc.Encryption.Encryption.Algorithms,System.String,System.String)
   name: VerifyHashFromHash(String, Encryption.Algorithms, String, String)
   href: api/KS.Misc.Encryption.HashVerifier.html#KS_Misc_Encryption_HashVerifier_VerifyHashFromHash_System_String_KS_Misc_Encryption_Encryption_Algorithms_System_String_System_String_
