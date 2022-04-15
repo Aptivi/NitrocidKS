@@ -5024,6 +5024,30 @@ references:
   commentId: E:KS.Kernel.Events.HardwareProbing
   fullName: KS.Kernel.Events.HardwareProbing
   nameWithType: Events.HardwareProbing
+- uid: KS.Kernel.Events.HexCommandError
+  name: HexCommandError
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_HexCommandError
+  commentId: E:KS.Kernel.Events.HexCommandError
+  fullName: KS.Kernel.Events.HexCommandError
+  nameWithType: Events.HexCommandError
+- uid: KS.Kernel.Events.HexPostExecuteCommand
+  name: HexPostExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_HexPostExecuteCommand
+  commentId: E:KS.Kernel.Events.HexPostExecuteCommand
+  fullName: KS.Kernel.Events.HexPostExecuteCommand
+  nameWithType: Events.HexPostExecuteCommand
+- uid: KS.Kernel.Events.HexPreExecuteCommand
+  name: HexPreExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_HexPreExecuteCommand
+  commentId: E:KS.Kernel.Events.HexPreExecuteCommand
+  fullName: KS.Kernel.Events.HexPreExecuteCommand
+  nameWithType: Events.HexPreExecuteCommand
+- uid: KS.Kernel.Events.HexShellInitialized
+  name: HexShellInitialized
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_HexShellInitialized
+  commentId: E:KS.Kernel.Events.HexShellInitialized
+  fullName: KS.Kernel.Events.HexShellInitialized
+  nameWithType: Events.HexShellInitialized
 - uid: KS.Kernel.Events.HTTPCommandError
   name: HTTPCommandError
   href: api/KS.Kernel.Events.html#KS_Kernel_Events_HTTPCommandError
@@ -5728,6 +5752,58 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Events.RaiseHardwareProbing
   nameWithType: Events.RaiseHardwareProbing
+- uid: KS.Kernel.Events.RaiseHexCommandError(System.String,System.Exception)
+  name: RaiseHexCommandError(String, Exception)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseHexCommandError_System_String_System_Exception_
+  commentId: M:KS.Kernel.Events.RaiseHexCommandError(System.String,System.Exception)
+  fullName: KS.Kernel.Events.RaiseHexCommandError(System.String, System.Exception)
+  nameWithType: Events.RaiseHexCommandError(String, Exception)
+- uid: KS.Kernel.Events.RaiseHexCommandError*
+  name: RaiseHexCommandError
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseHexCommandError_
+  commentId: Overload:KS.Kernel.Events.RaiseHexCommandError
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseHexCommandError
+  nameWithType: Events.RaiseHexCommandError
+- uid: KS.Kernel.Events.RaiseHexPostExecuteCommand(System.String)
+  name: RaiseHexPostExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseHexPostExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RaiseHexPostExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RaiseHexPostExecuteCommand(System.String)
+  nameWithType: Events.RaiseHexPostExecuteCommand(String)
+- uid: KS.Kernel.Events.RaiseHexPostExecuteCommand*
+  name: RaiseHexPostExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseHexPostExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RaiseHexPostExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseHexPostExecuteCommand
+  nameWithType: Events.RaiseHexPostExecuteCommand
+- uid: KS.Kernel.Events.RaiseHexPreExecuteCommand(System.String)
+  name: RaiseHexPreExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseHexPreExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RaiseHexPreExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RaiseHexPreExecuteCommand(System.String)
+  nameWithType: Events.RaiseHexPreExecuteCommand(String)
+- uid: KS.Kernel.Events.RaiseHexPreExecuteCommand*
+  name: RaiseHexPreExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseHexPreExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RaiseHexPreExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseHexPreExecuteCommand
+  nameWithType: Events.RaiseHexPreExecuteCommand
+- uid: KS.Kernel.Events.RaiseHexShellInitialized
+  name: RaiseHexShellInitialized()
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseHexShellInitialized
+  commentId: M:KS.Kernel.Events.RaiseHexShellInitialized
+  fullName: KS.Kernel.Events.RaiseHexShellInitialized()
+  nameWithType: Events.RaiseHexShellInitialized()
+- uid: KS.Kernel.Events.RaiseHexShellInitialized*
+  name: RaiseHexShellInitialized
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseHexShellInitialized_
+  commentId: Overload:KS.Kernel.Events.RaiseHexShellInitialized
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseHexShellInitialized
+  nameWithType: Events.RaiseHexShellInitialized
 - uid: KS.Kernel.Events.RaiseHTTPCommandError(System.String,System.Exception)
   name: RaiseHTTPCommandError(String, Exception)
   href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseHTTPCommandError_System_String_System_Exception_
@@ -7405,6 +7481,58 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Events.RespondHardwareProbing
   nameWithType: Events.RespondHardwareProbing
+- uid: KS.Kernel.Events.RespondHexCommandError(System.String,System.Exception)
+  name: RespondHexCommandError(String, Exception)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondHexCommandError_System_String_System_Exception_
+  commentId: M:KS.Kernel.Events.RespondHexCommandError(System.String,System.Exception)
+  fullName: KS.Kernel.Events.RespondHexCommandError(System.String, System.Exception)
+  nameWithType: Events.RespondHexCommandError(String, Exception)
+- uid: KS.Kernel.Events.RespondHexCommandError*
+  name: RespondHexCommandError
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondHexCommandError_
+  commentId: Overload:KS.Kernel.Events.RespondHexCommandError
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondHexCommandError
+  nameWithType: Events.RespondHexCommandError
+- uid: KS.Kernel.Events.RespondHexPostExecuteCommand(System.String)
+  name: RespondHexPostExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondHexPostExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RespondHexPostExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RespondHexPostExecuteCommand(System.String)
+  nameWithType: Events.RespondHexPostExecuteCommand(String)
+- uid: KS.Kernel.Events.RespondHexPostExecuteCommand*
+  name: RespondHexPostExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondHexPostExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RespondHexPostExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondHexPostExecuteCommand
+  nameWithType: Events.RespondHexPostExecuteCommand
+- uid: KS.Kernel.Events.RespondHexPreExecuteCommand(System.String)
+  name: RespondHexPreExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondHexPreExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RespondHexPreExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RespondHexPreExecuteCommand(System.String)
+  nameWithType: Events.RespondHexPreExecuteCommand(String)
+- uid: KS.Kernel.Events.RespondHexPreExecuteCommand*
+  name: RespondHexPreExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondHexPreExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RespondHexPreExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondHexPreExecuteCommand
+  nameWithType: Events.RespondHexPreExecuteCommand
+- uid: KS.Kernel.Events.RespondHexShellInitialized
+  name: RespondHexShellInitialized()
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondHexShellInitialized
+  commentId: M:KS.Kernel.Events.RespondHexShellInitialized
+  fullName: KS.Kernel.Events.RespondHexShellInitialized()
+  nameWithType: Events.RespondHexShellInitialized()
+- uid: KS.Kernel.Events.RespondHexShellInitialized*
+  name: RespondHexShellInitialized
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondHexShellInitialized_
+  commentId: Overload:KS.Kernel.Events.RespondHexShellInitialized
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondHexShellInitialized
+  nameWithType: Events.RespondHexShellInitialized
 - uid: KS.Kernel.Events.RespondHTTPCommandError(System.String,System.Exception)
   name: RespondHTTPCommandError(String, Exception)
   href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondHTTPCommandError_System_String_System_Exception_
@@ -14348,6 +14476,261 @@ references:
   commentId: F:KS.Misc.Games.SpeedPress.SpeedPressTimeout
   fullName: KS.Misc.Games.SpeedPress.SpeedPressTimeout
   nameWithType: SpeedPress.SpeedPressTimeout
+- uid: KS.Misc.HexEdit
+  name: KS.Misc.HexEdit
+  href: api/KS.Misc.HexEdit.html
+  commentId: N:KS.Misc.HexEdit
+  fullName: KS.Misc.HexEdit
+  nameWithType: KS.Misc.HexEdit
+- uid: KS.Misc.HexEdit.HexEditShellCommon
+  name: HexEditShellCommon
+  href: api/KS.Misc.HexEdit.HexEditShellCommon.html
+  commentId: T:KS.Misc.HexEdit.HexEditShellCommon
+  fullName: KS.Misc.HexEdit.HexEditShellCommon
+  nameWithType: HexEditShellCommon
+- uid: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_AutoSave
+  name: HexEdit_AutoSave
+  href: api/KS.Misc.HexEdit.HexEditShellCommon.html#KS_Misc_HexEdit_HexEditShellCommon_HexEdit_AutoSave
+  commentId: F:KS.Misc.HexEdit.HexEditShellCommon.HexEdit_AutoSave
+  fullName: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_AutoSave
+  nameWithType: HexEditShellCommon.HexEdit_AutoSave
+- uid: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_AutoSaveFlag
+  name: HexEdit_AutoSaveFlag
+  href: api/KS.Misc.HexEdit.HexEditShellCommon.html#KS_Misc_HexEdit_HexEditShellCommon_HexEdit_AutoSaveFlag
+  commentId: F:KS.Misc.HexEdit.HexEditShellCommon.HexEdit_AutoSaveFlag
+  fullName: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_AutoSaveFlag
+  nameWithType: HexEditShellCommon.HexEdit_AutoSaveFlag
+- uid: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_AutoSaveInterval
+  name: HexEdit_AutoSaveInterval
+  href: api/KS.Misc.HexEdit.HexEditShellCommon.html#KS_Misc_HexEdit_HexEditShellCommon_HexEdit_AutoSaveInterval
+  commentId: F:KS.Misc.HexEdit.HexEditShellCommon.HexEdit_AutoSaveInterval
+  fullName: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_AutoSaveInterval
+  nameWithType: HexEditShellCommon.HexEdit_AutoSaveInterval
+- uid: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_Commands
+  name: HexEdit_Commands
+  href: api/KS.Misc.HexEdit.HexEditShellCommon.html#KS_Misc_HexEdit_HexEditShellCommon_HexEdit_Commands
+  commentId: F:KS.Misc.HexEdit.HexEditShellCommon.HexEdit_Commands
+  fullName: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_Commands
+  nameWithType: HexEditShellCommon.HexEdit_Commands
+- uid: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_FileBytes
+  name: HexEdit_FileBytes
+  href: api/KS.Misc.HexEdit.HexEditShellCommon.html#KS_Misc_HexEdit_HexEditShellCommon_HexEdit_FileBytes
+  commentId: F:KS.Misc.HexEdit.HexEditShellCommon.HexEdit_FileBytes
+  fullName: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_FileBytes
+  nameWithType: HexEditShellCommon.HexEdit_FileBytes
+- uid: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_FileStream
+  name: HexEdit_FileStream
+  href: api/KS.Misc.HexEdit.HexEditShellCommon.html#KS_Misc_HexEdit_HexEditShellCommon_HexEdit_FileStream
+  commentId: F:KS.Misc.HexEdit.HexEditShellCommon.HexEdit_FileStream
+  fullName: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_FileStream
+  nameWithType: HexEditShellCommon.HexEdit_FileStream
+- uid: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_ModCommands
+  name: HexEdit_ModCommands
+  href: api/KS.Misc.HexEdit.HexEditShellCommon.html#KS_Misc_HexEdit_HexEditShellCommon_HexEdit_ModCommands
+  commentId: F:KS.Misc.HexEdit.HexEditShellCommon.HexEdit_ModCommands
+  fullName: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_ModCommands
+  nameWithType: HexEditShellCommon.HexEdit_ModCommands
+- uid: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_PromptStyle
+  name: HexEdit_PromptStyle
+  href: api/KS.Misc.HexEdit.HexEditShellCommon.html#KS_Misc_HexEdit_HexEditShellCommon_HexEdit_PromptStyle
+  commentId: F:KS.Misc.HexEdit.HexEditShellCommon.HexEdit_PromptStyle
+  fullName: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_PromptStyle
+  nameWithType: HexEditShellCommon.HexEdit_PromptStyle
+- uid: KS.Misc.HexEdit.HexEditTools
+  name: HexEditTools
+  href: api/KS.Misc.HexEdit.HexEditTools.html
+  commentId: T:KS.Misc.HexEdit.HexEditTools
+  fullName: KS.Misc.HexEdit.HexEditTools
+  nameWithType: HexEditTools
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_AddNewByte(System.Byte)
+  name: HexEdit_AddNewByte(Byte)
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_AddNewByte_System_Byte_
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_AddNewByte(System.Byte)
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_AddNewByte(System.Byte)
+  nameWithType: HexEditTools.HexEdit_AddNewByte(Byte)
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_AddNewByte*
+  name: HexEdit_AddNewByte
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_AddNewByte_
+  commentId: Overload:KS.Misc.HexEdit.HexEditTools.HexEdit_AddNewByte
+  isSpec: "True"
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_AddNewByte
+  nameWithType: HexEditTools.HexEdit_AddNewByte
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_AddNewBytes(System.Byte[])
+  name: HexEdit_AddNewBytes(Byte[])
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_AddNewBytes_System_Byte___
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_AddNewBytes(System.Byte[])
+  name.vb: HexEdit_AddNewBytes(Byte())
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_AddNewBytes(System.Byte[])
+  fullName.vb: KS.Misc.HexEdit.HexEditTools.HexEdit_AddNewBytes(System.Byte())
+  nameWithType: HexEditTools.HexEdit_AddNewBytes(Byte[])
+  nameWithType.vb: HexEditTools.HexEdit_AddNewBytes(Byte())
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_AddNewBytes*
+  name: HexEdit_AddNewBytes
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_AddNewBytes_
+  commentId: Overload:KS.Misc.HexEdit.HexEditTools.HexEdit_AddNewBytes
+  isSpec: "True"
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_AddNewBytes
+  nameWithType: HexEditTools.HexEdit_AddNewBytes
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_CloseBinaryFile
+  name: HexEdit_CloseBinaryFile()
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_CloseBinaryFile
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_CloseBinaryFile
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_CloseBinaryFile()
+  nameWithType: HexEditTools.HexEdit_CloseBinaryFile()
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_CloseBinaryFile*
+  name: HexEdit_CloseBinaryFile
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_CloseBinaryFile_
+  commentId: Overload:KS.Misc.HexEdit.HexEditTools.HexEdit_CloseBinaryFile
+  isSpec: "True"
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_CloseBinaryFile
+  nameWithType: HexEditTools.HexEdit_CloseBinaryFile
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_DeleteByte(System.Int64)
+  name: HexEdit_DeleteByte(Int64)
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_DeleteByte_System_Int64_
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_DeleteByte(System.Int64)
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_DeleteByte(System.Int64)
+  nameWithType: HexEditTools.HexEdit_DeleteByte(Int64)
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_DeleteByte*
+  name: HexEdit_DeleteByte
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_DeleteByte_
+  commentId: Overload:KS.Misc.HexEdit.HexEditTools.HexEdit_DeleteByte
+  isSpec: "True"
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_DeleteByte
+  nameWithType: HexEditTools.HexEdit_DeleteByte
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_DeleteBytes(System.Int64)
+  name: HexEdit_DeleteBytes(Int64)
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_DeleteBytes_System_Int64_
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_DeleteBytes(System.Int64)
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_DeleteBytes(System.Int64)
+  nameWithType: HexEditTools.HexEdit_DeleteBytes(Int64)
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_DeleteBytes(System.Int64,System.Int64)
+  name: HexEdit_DeleteBytes(Int64, Int64)
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_DeleteBytes_System_Int64_System_Int64_
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_DeleteBytes(System.Int64,System.Int64)
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_DeleteBytes(System.Int64, System.Int64)
+  nameWithType: HexEditTools.HexEdit_DeleteBytes(Int64, Int64)
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_DeleteBytes*
+  name: HexEdit_DeleteBytes
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_DeleteBytes_
+  commentId: Overload:KS.Misc.HexEdit.HexEditTools.HexEdit_DeleteBytes
+  isSpec: "True"
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_DeleteBytes
+  nameWithType: HexEditTools.HexEdit_DeleteBytes
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_DisplayHex
+  name: HexEdit_DisplayHex()
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_DisplayHex
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_DisplayHex
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_DisplayHex()
+  nameWithType: HexEditTools.HexEdit_DisplayHex()
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_DisplayHex(System.Int64)
+  name: HexEdit_DisplayHex(Int64)
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_DisplayHex_System_Int64_
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_DisplayHex(System.Int64)
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_DisplayHex(System.Int64)
+  nameWithType: HexEditTools.HexEdit_DisplayHex(Int64)
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_DisplayHex(System.Int64,System.Int64)
+  name: HexEdit_DisplayHex(Int64, Int64)
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_DisplayHex_System_Int64_System_Int64_
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_DisplayHex(System.Int64,System.Int64)
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_DisplayHex(System.Int64, System.Int64)
+  nameWithType: HexEditTools.HexEdit_DisplayHex(Int64, Int64)
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_DisplayHex*
+  name: HexEdit_DisplayHex
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_DisplayHex_
+  commentId: Overload:KS.Misc.HexEdit.HexEditTools.HexEdit_DisplayHex
+  isSpec: "True"
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_DisplayHex
+  nameWithType: HexEditTools.HexEdit_DisplayHex
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_HandleAutoSaveBinaryFile
+  name: HexEdit_HandleAutoSaveBinaryFile()
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_HandleAutoSaveBinaryFile
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_HandleAutoSaveBinaryFile
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_HandleAutoSaveBinaryFile()
+  nameWithType: HexEditTools.HexEdit_HandleAutoSaveBinaryFile()
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_HandleAutoSaveBinaryFile*
+  name: HexEdit_HandleAutoSaveBinaryFile
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_HandleAutoSaveBinaryFile_
+  commentId: Overload:KS.Misc.HexEdit.HexEditTools.HexEdit_HandleAutoSaveBinaryFile
+  isSpec: "True"
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_HandleAutoSaveBinaryFile
+  nameWithType: HexEditTools.HexEdit_HandleAutoSaveBinaryFile
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_OpenBinaryFile(System.String)
+  name: HexEdit_OpenBinaryFile(String)
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_OpenBinaryFile_System_String_
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_OpenBinaryFile(System.String)
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_OpenBinaryFile(System.String)
+  nameWithType: HexEditTools.HexEdit_OpenBinaryFile(String)
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_OpenBinaryFile*
+  name: HexEdit_OpenBinaryFile
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_OpenBinaryFile_
+  commentId: Overload:KS.Misc.HexEdit.HexEditTools.HexEdit_OpenBinaryFile
+  isSpec: "True"
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_OpenBinaryFile
+  nameWithType: HexEditTools.HexEdit_OpenBinaryFile
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(System.Byte)
+  name: HexEdit_QueryByteAndDisplay(Byte)
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_QueryByteAndDisplay_System_Byte_
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(System.Byte)
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(System.Byte)
+  nameWithType: HexEditTools.HexEdit_QueryByteAndDisplay(Byte)
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(System.Byte,System.Int64)
+  name: HexEdit_QueryByteAndDisplay(Byte, Int64)
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_QueryByteAndDisplay_System_Byte_System_Int64_
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(System.Byte,System.Int64)
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(System.Byte, System.Int64)
+  nameWithType: HexEditTools.HexEdit_QueryByteAndDisplay(Byte, Int64)
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(System.Byte,System.Int64,System.Int64)
+  name: HexEdit_QueryByteAndDisplay(Byte, Int64, Int64)
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_QueryByteAndDisplay_System_Byte_System_Int64_System_Int64_
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(System.Byte,System.Int64,System.Int64)
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(System.Byte, System.Int64, System.Int64)
+  nameWithType: HexEditTools.HexEdit_QueryByteAndDisplay(Byte, Int64, Int64)
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay*
+  name: HexEdit_QueryByteAndDisplay
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_QueryByteAndDisplay_
+  commentId: Overload:KS.Misc.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay
+  isSpec: "True"
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay
+  nameWithType: HexEditTools.HexEdit_QueryByteAndDisplay
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_Replace(System.Byte,System.Byte)
+  name: HexEdit_Replace(Byte, Byte)
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_Replace_System_Byte_System_Byte_
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_Replace(System.Byte,System.Byte)
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_Replace(System.Byte, System.Byte)
+  nameWithType: HexEditTools.HexEdit_Replace(Byte, Byte)
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_Replace*
+  name: HexEdit_Replace
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_Replace_
+  commentId: Overload:KS.Misc.HexEdit.HexEditTools.HexEdit_Replace
+  isSpec: "True"
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_Replace
+  nameWithType: HexEditTools.HexEdit_Replace
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_SaveBinaryFile
+  name: HexEdit_SaveBinaryFile()
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_SaveBinaryFile
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_SaveBinaryFile
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_SaveBinaryFile()
+  nameWithType: HexEditTools.HexEdit_SaveBinaryFile()
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_SaveBinaryFile*
+  name: HexEdit_SaveBinaryFile
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_SaveBinaryFile_
+  commentId: Overload:KS.Misc.HexEdit.HexEditTools.HexEdit_SaveBinaryFile
+  isSpec: "True"
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_SaveBinaryFile
+  nameWithType: HexEditTools.HexEdit_SaveBinaryFile
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_WasHexEdited
+  name: HexEdit_WasHexEdited()
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_WasHexEdited
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_WasHexEdited
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_WasHexEdited()
+  nameWithType: HexEditTools.HexEdit_WasHexEdited()
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_WasHexEdited*
+  name: HexEdit_WasHexEdited
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_WasHexEdited_
+  commentId: Overload:KS.Misc.HexEdit.HexEditTools.HexEdit_WasHexEdited
+  isSpec: "True"
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_WasHexEdited
+  nameWithType: HexEditTools.HexEdit_WasHexEdited
 - uid: KS.Misc.JsonShell
   name: KS.Misc.JsonShell
   href: api/KS.Misc.JsonShell.html
@@ -26518,6 +26901,12 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.AliasManager.GetAliasesListFromType
   nameWithType: AliasManager.GetAliasesListFromType
+- uid: KS.Shell.ShellBase.AliasManager.HexShellAliases
+  name: HexShellAliases
+  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_HexShellAliases
+  commentId: F:KS.Shell.ShellBase.AliasManager.HexShellAliases
+  fullName: KS.Shell.ShellBase.AliasManager.HexShellAliases
+  nameWithType: AliasManager.HexShellAliases
 - uid: KS.Shell.ShellBase.AliasManager.HTTPShellAliases
   name: HTTPShellAliases
   href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_HTTPShellAliases
@@ -26947,6 +27336,12 @@ references:
   commentId: F:KS.Shell.ShellBase.HelpSystem.FTPModDefs
   fullName: KS.Shell.ShellBase.HelpSystem.FTPModDefs
   nameWithType: HelpSystem.FTPModDefs
+- uid: KS.Shell.ShellBase.HelpSystem.HexEdit_ModHelpEntries
+  name: HexEdit_ModHelpEntries
+  href: api/KS.Shell.ShellBase.HelpSystem.html#KS_Shell_ShellBase_HelpSystem_HexEdit_ModHelpEntries
+  commentId: F:KS.Shell.ShellBase.HelpSystem.HexEdit_ModHelpEntries
+  fullName: KS.Shell.ShellBase.HelpSystem.HexEdit_ModHelpEntries
+  nameWithType: HelpSystem.HexEdit_ModHelpEntries
 - uid: KS.Shell.ShellBase.HelpSystem.HTTPModDefs
   name: HTTPModDefs
   href: api/KS.Shell.ShellBase.HelpSystem.html#KS_Shell_ShellBase_HelpSystem_HTTPModDefs
@@ -27351,6 +27746,12 @@ references:
   commentId: F:KS.Shell.ShellBase.ShellType.FTPShell
   fullName: KS.Shell.ShellBase.ShellType.FTPShell
   nameWithType: ShellType.FTPShell
+- uid: KS.Shell.ShellBase.ShellType.HexShell
+  name: HexShell
+  href: api/KS.Shell.ShellBase.ShellType.html#KS_Shell_ShellBase_ShellType_HexShell
+  commentId: F:KS.Shell.ShellBase.ShellType.HexShell
+  fullName: KS.Shell.ShellBase.ShellType.HexShell
+  nameWithType: ShellType.HexShell
 - uid: KS.Shell.ShellBase.ShellType.HTTPShell
   name: HTTPShell
   href: api/KS.Shell.ShellBase.ShellType.html#KS_Shell_ShellBase_ShellType_HTTPShell
@@ -27480,6 +27881,69 @@ references:
   fullName.vb: KS.Shell.Shells.FTPShell.ShellType
   nameWithType: FTPShell.IShell.ShellType
   nameWithType.vb: FTPShell.ShellType
+- uid: KS.Shell.Shells.HexShell
+  name: HexShell
+  href: api/KS.Shell.Shells.HexShell.html
+  commentId: T:KS.Shell.Shells.HexShell
+  fullName: KS.Shell.Shells.HexShell
+  nameWithType: HexShell
+- uid: KS.Shell.Shells.HexShell.Bail
+  name: IShell.Bail
+  href: api/KS.Shell.Shells.HexShell.html#KS_Shell_Shells_HexShell_Bail
+  commentId: P:KS.Shell.Shells.HexShell.Bail
+  name.vb: Bail
+  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.IShell.Bail
+  fullName.vb: KS.Shell.Shells.HexShell.Bail
+  nameWithType: HexShell.IShell.Bail
+  nameWithType.vb: HexShell.Bail
+- uid: KS.Shell.Shells.HexShell.Bail*
+  name: IShell.Bail
+  href: api/KS.Shell.Shells.HexShell.html#KS_Shell_Shells_HexShell_Bail_
+  commentId: Overload:KS.Shell.Shells.HexShell.Bail
+  isSpec: "True"
+  name.vb: Bail
+  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.IShell.Bail
+  fullName.vb: KS.Shell.Shells.HexShell.Bail
+  nameWithType: HexShell.IShell.Bail
+  nameWithType.vb: HexShell.Bail
+- uid: KS.Shell.Shells.HexShell.InitializeShell(System.Object[])
+  name: IShell.InitializeShell(Object[])
+  href: api/KS.Shell.Shells.HexShell.html#KS_Shell_Shells_HexShell_InitializeShell_System_Object___
+  commentId: M:KS.Shell.Shells.HexShell.InitializeShell(System.Object[])
+  name.vb: InitializeShell(Object())
+  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
+  fullName.vb: KS.Shell.Shells.HexShell.InitializeShell(System.Object())
+  nameWithType: HexShell.IShell.InitializeShell(Object[])
+  nameWithType.vb: HexShell.InitializeShell(Object())
+- uid: KS.Shell.Shells.HexShell.InitializeShell*
+  name: IShell.InitializeShell
+  href: api/KS.Shell.Shells.HexShell.html#KS_Shell_Shells_HexShell_InitializeShell_
+  commentId: Overload:KS.Shell.Shells.HexShell.InitializeShell
+  isSpec: "True"
+  name.vb: InitializeShell
+  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.IShell.InitializeShell
+  fullName.vb: KS.Shell.Shells.HexShell.InitializeShell
+  nameWithType: HexShell.IShell.InitializeShell
+  nameWithType.vb: HexShell.InitializeShell
+- uid: KS.Shell.Shells.HexShell.ShellType
+  name: IShell.ShellType
+  href: api/KS.Shell.Shells.HexShell.html#KS_Shell_Shells_HexShell_ShellType
+  commentId: P:KS.Shell.Shells.HexShell.ShellType
+  name.vb: ShellType
+  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName.vb: KS.Shell.Shells.HexShell.ShellType
+  nameWithType: HexShell.IShell.ShellType
+  nameWithType.vb: HexShell.ShellType
+- uid: KS.Shell.Shells.HexShell.ShellType*
+  name: IShell.ShellType
+  href: api/KS.Shell.Shells.HexShell.html#KS_Shell_Shells_HexShell_ShellType_
+  commentId: Overload:KS.Shell.Shells.HexShell.ShellType
+  isSpec: "True"
+  name.vb: ShellType
+  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName.vb: KS.Shell.Shells.HexShell.ShellType
+  nameWithType: HexShell.IShell.ShellType
+  nameWithType.vb: HexShell.ShellType
 - uid: KS.Shell.Shells.HTTPShell
   name: HTTPShell
   href: api/KS.Shell.Shells.HTTPShell.html
