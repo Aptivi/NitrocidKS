@@ -26505,6 +26505,19 @@ references:
   commentId: F:KS.Shell.ShellBase.AliasManager.FTPShellAliases
   fullName: KS.Shell.ShellBase.AliasManager.FTPShellAliases
   nameWithType: AliasManager.FTPShellAliases
+- uid: KS.Shell.ShellBase.AliasManager.GetAliasesListFromType(KS.Shell.ShellBase.ShellType)
+  name: GetAliasesListFromType(ShellType)
+  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_GetAliasesListFromType_KS_Shell_ShellBase_ShellType_
+  commentId: M:KS.Shell.ShellBase.AliasManager.GetAliasesListFromType(KS.Shell.ShellBase.ShellType)
+  fullName: KS.Shell.ShellBase.AliasManager.GetAliasesListFromType(KS.Shell.ShellBase.ShellType)
+  nameWithType: AliasManager.GetAliasesListFromType(ShellType)
+- uid: KS.Shell.ShellBase.AliasManager.GetAliasesListFromType*
+  name: GetAliasesListFromType
+  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_GetAliasesListFromType_
+  commentId: Overload:KS.Shell.ShellBase.AliasManager.GetAliasesListFromType
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.AliasManager.GetAliasesListFromType
+  nameWithType: AliasManager.GetAliasesListFromType
 - uid: KS.Shell.ShellBase.AliasManager.HTTPShellAliases
   name: HTTPShellAliases
   href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_HTTPShellAliases
