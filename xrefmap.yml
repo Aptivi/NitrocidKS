@@ -25992,6 +25992,19 @@ references:
   isSpec: "True"
   fullName: KS.Network.RSS.RSSTools.MakeRssArticlesFromFeed
   nameWithType: RSSTools.MakeRssArticlesFromFeed
+- uid: KS.Network.RSS.RSSTools.OpenFeedSelector
+  name: OpenFeedSelector()
+  href: api/KS.Network.RSS.RSSTools.html#KS_Network_RSS_RSSTools_OpenFeedSelector
+  commentId: M:KS.Network.RSS.RSSTools.OpenFeedSelector
+  fullName: KS.Network.RSS.RSSTools.OpenFeedSelector()
+  nameWithType: RSSTools.OpenFeedSelector()
+- uid: KS.Network.RSS.RSSTools.OpenFeedSelector*
+  name: OpenFeedSelector
+  href: api/KS.Network.RSS.RSSTools.html#KS_Network_RSS_RSSTools_OpenFeedSelector_
+  commentId: Overload:KS.Network.RSS.RSSTools.OpenFeedSelector
+  isSpec: "True"
+  fullName: KS.Network.RSS.RSSTools.OpenFeedSelector
+  nameWithType: RSSTools.OpenFeedSelector
 - uid: KS.Network.RSS.RSSTools.RssHeadlineUrl
   name: RssHeadlineUrl
   href: api/KS.Network.RSS.RSSTools.html#KS_Network_RSS_RSSTools_RssHeadlineUrl
