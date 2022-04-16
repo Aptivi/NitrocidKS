@@ -27711,6 +27711,19 @@ references:
   commentId: T:KS.Shell.ShellBase.ShellStart
   fullName: KS.Shell.ShellBase.ShellStart
   nameWithType: ShellStart
+- uid: KS.Shell.ShellBase.ShellStart.GetShellExecutor(KS.Shell.ShellBase.ShellType)
+  name: GetShellExecutor(ShellType)
+  href: api/KS.Shell.ShellBase.ShellStart.html#KS_Shell_ShellBase_ShellStart_GetShellExecutor_KS_Shell_ShellBase_ShellType_
+  commentId: M:KS.Shell.ShellBase.ShellStart.GetShellExecutor(KS.Shell.ShellBase.ShellType)
+  fullName: KS.Shell.ShellBase.ShellStart.GetShellExecutor(KS.Shell.ShellBase.ShellType)
+  nameWithType: ShellStart.GetShellExecutor(ShellType)
+- uid: KS.Shell.ShellBase.ShellStart.GetShellExecutor*
+  name: GetShellExecutor
+  href: api/KS.Shell.ShellBase.ShellStart.html#KS_Shell_ShellBase_ShellStart_GetShellExecutor_
+  commentId: Overload:KS.Shell.ShellBase.ShellStart.GetShellExecutor
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.ShellStart.GetShellExecutor
+  nameWithType: ShellStart.GetShellExecutor
 - uid: KS.Shell.ShellBase.ShellStart.KillShell
   name: KillShell()
   href: api/KS.Shell.ShellBase.ShellStart.html#KS_Shell_ShellBase_ShellStart_KillShell
