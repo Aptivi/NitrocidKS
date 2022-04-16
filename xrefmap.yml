@@ -21456,6 +21456,19 @@ references:
   isSpec: "True"
   fullName: KS.Modifications.ModManager.InstallMod
   nameWithType: ModManager.InstallMod
+- uid: KS.Modifications.ModManager.ListModCommands(KS.Shell.ShellBase.ShellType)
+  name: ListModCommands(ShellType)
+  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_ListModCommands_KS_Shell_ShellBase_ShellType_
+  commentId: M:KS.Modifications.ModManager.ListModCommands(KS.Shell.ShellBase.ShellType)
+  fullName: KS.Modifications.ModManager.ListModCommands(KS.Shell.ShellBase.ShellType)
+  nameWithType: ModManager.ListModCommands(ShellType)
+- uid: KS.Modifications.ModManager.ListModCommands*
+  name: ListModCommands
+  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_ListModCommands_
+  commentId: Overload:KS.Modifications.ModManager.ListModCommands
+  isSpec: "True"
+  fullName: KS.Modifications.ModManager.ListModCommands
+  nameWithType: ModManager.ListModCommands
 - uid: KS.Modifications.ModManager.ListMods
   name: ListMods()
   href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_ListMods
