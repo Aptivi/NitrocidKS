@@ -827,12 +827,17 @@
   "api/KS.Misc.Reflection.html": {
     "href": "api/KS.Misc.Reflection.html",
     "title": "Namespace KS.Misc.Reflection | Kernel Simulator API - Eofla Internals",
-    "keywords": "Namespace KS.Misc.Reflection Classes FieldManager MethodManager StringQuery"
+    "keywords": "Namespace KS.Misc.Reflection Classes FieldManager MethodManager StringManipulate StringQuery"
   },
   "api/KS.Misc.Reflection.MethodManager.html": {
     "href": "api/KS.Misc.Reflection.MethodManager.html",
     "title": "Class MethodManager | Kernel Simulator API - Eofla Internals",
     "keywords": "Class MethodManager Inheritance MethodManager Namespace : KS.Misc.Reflection Assembly : Kernel Simulator.dll Syntax public class MethodManager Methods | Improve this Doc View Source GetMethod(String) Gets a method from method name Declaration public static MethodBase GetMethod(string Method) Parameters Type Name Description System.String Method Method name. Use operator NameOf to get name. Returns Type Description System.Reflection.MethodBase Method information"
+  },
+  "api/KS.Misc.Reflection.StringManipulate.html": {
+    "href": "api/KS.Misc.Reflection.StringManipulate.html",
+    "title": "Class StringManipulate | Kernel Simulator API - Eofla Internals",
+    "keywords": "Class StringManipulate Inheritance StringManipulate Namespace : KS.Misc.Reflection Assembly : Kernel Simulator.dll Syntax public class StringManipulate Methods | Improve this Doc View Source FormatString(String, Object[]) Formats the string Declaration public static string FormatString(string Format, params object[] Vars) Parameters Type Name Description System.String Format The string to format System.Object [] Vars The variables used Returns Type Description System.String A formatted string if successful, or the unformatted one if failed."
   },
   "api/KS.Misc.Reflection.StringQuery.html": {
     "href": "api/KS.Misc.Reflection.StringQuery.html",

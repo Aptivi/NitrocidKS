@@ -15677,6 +15677,28 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.MethodManager.GetMethod
   nameWithType: MethodManager.GetMethod
+- uid: KS.Misc.Reflection.StringManipulate
+  name: StringManipulate
+  href: api/KS.Misc.Reflection.StringManipulate.html
+  commentId: T:KS.Misc.Reflection.StringManipulate
+  fullName: KS.Misc.Reflection.StringManipulate
+  nameWithType: StringManipulate
+- uid: KS.Misc.Reflection.StringManipulate.FormatString(System.String,System.Object[])
+  name: FormatString(String, Object[])
+  href: api/KS.Misc.Reflection.StringManipulate.html#KS_Misc_Reflection_StringManipulate_FormatString_System_String_System_Object___
+  commentId: M:KS.Misc.Reflection.StringManipulate.FormatString(System.String,System.Object[])
+  name.vb: FormatString(String, Object())
+  fullName: KS.Misc.Reflection.StringManipulate.FormatString(System.String, System.Object[])
+  fullName.vb: KS.Misc.Reflection.StringManipulate.FormatString(System.String, System.Object())
+  nameWithType: StringManipulate.FormatString(String, Object[])
+  nameWithType.vb: StringManipulate.FormatString(String, Object())
+- uid: KS.Misc.Reflection.StringManipulate.FormatString*
+  name: FormatString
+  href: api/KS.Misc.Reflection.StringManipulate.html#KS_Misc_Reflection_StringManipulate_FormatString_
+  commentId: Overload:KS.Misc.Reflection.StringManipulate.FormatString
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.StringManipulate.FormatString
+  nameWithType: StringManipulate.FormatString
 - uid: KS.Misc.Reflection.StringQuery
   name: StringQuery
   href: api/KS.Misc.Reflection.StringQuery.html
