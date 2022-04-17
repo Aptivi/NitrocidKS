@@ -27074,25 +27074,6 @@ references:
   commentId: F:KS.Shell.ShellBase.AliasManager.ZIPShellAliases
   fullName: KS.Shell.ShellBase.AliasManager.ZIPShellAliases
   nameWithType: AliasManager.ZIPShellAliases
-- uid: KS.Shell.ShellBase.CancellationInstallers
-  name: CancellationInstallers
-  href: api/KS.Shell.ShellBase.CancellationInstallers.html
-  commentId: T:KS.Shell.ShellBase.CancellationInstallers
-  fullName: KS.Shell.ShellBase.CancellationInstallers
-  nameWithType: CancellationInstallers
-- uid: KS.Shell.ShellBase.CancellationInstallers.SwitchCancellationHandler(KS.Shell.ShellBase.ShellType)
-  name: SwitchCancellationHandler(ShellType)
-  href: api/KS.Shell.ShellBase.CancellationInstallers.html#KS_Shell_ShellBase_CancellationInstallers_SwitchCancellationHandler_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Shell.ShellBase.CancellationInstallers.SwitchCancellationHandler(KS.Shell.ShellBase.ShellType)
-  fullName: KS.Shell.ShellBase.CancellationInstallers.SwitchCancellationHandler(KS.Shell.ShellBase.ShellType)
-  nameWithType: CancellationInstallers.SwitchCancellationHandler(ShellType)
-- uid: KS.Shell.ShellBase.CancellationInstallers.SwitchCancellationHandler*
-  name: SwitchCancellationHandler
-  href: api/KS.Shell.ShellBase.CancellationInstallers.html#KS_Shell_ShellBase_CancellationInstallers_SwitchCancellationHandler_
-  commentId: Overload:KS.Shell.ShellBase.CancellationInstallers.SwitchCancellationHandler
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.CancellationInstallers.SwitchCancellationHandler
-  nameWithType: CancellationInstallers.SwitchCancellationHandler
 - uid: KS.Shell.ShellBase.CommandExecutor
   name: CommandExecutor
   href: api/KS.Shell.ShellBase.CommandExecutor.html
