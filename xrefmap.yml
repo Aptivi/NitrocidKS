@@ -14698,6 +14698,18 @@ references:
   commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_Replace(System.Byte,System.Byte)
   fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_Replace(System.Byte, System.Byte)
   nameWithType: HexEditTools.HexEdit_Replace(Byte, Byte)
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_Replace(System.Byte,System.Byte,System.Int64)
+  name: HexEdit_Replace(Byte, Byte, Int64)
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_Replace_System_Byte_System_Byte_System_Int64_
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_Replace(System.Byte,System.Byte,System.Int64)
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_Replace(System.Byte, System.Byte, System.Int64)
+  nameWithType: HexEditTools.HexEdit_Replace(Byte, Byte, Int64)
+- uid: KS.Misc.HexEdit.HexEditTools.HexEdit_Replace(System.Byte,System.Byte,System.Int64,System.Int64)
+  name: HexEdit_Replace(Byte, Byte, Int64, Int64)
+  href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_Replace_System_Byte_System_Byte_System_Int64_System_Int64_
+  commentId: M:KS.Misc.HexEdit.HexEditTools.HexEdit_Replace(System.Byte,System.Byte,System.Int64,System.Int64)
+  fullName: KS.Misc.HexEdit.HexEditTools.HexEdit_Replace(System.Byte, System.Byte, System.Int64, System.Int64)
+  nameWithType: HexEditTools.HexEdit_Replace(Byte, Byte, Int64, Int64)
 - uid: KS.Misc.HexEdit.HexEditTools.HexEdit_Replace*
   name: HexEdit_Replace
   href: api/KS.Misc.HexEdit.HexEditTools.html#KS_Misc_HexEdit_HexEditTools_HexEdit_Replace_
