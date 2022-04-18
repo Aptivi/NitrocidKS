@@ -5096,6 +5096,30 @@ references:
   commentId: E:KS.Kernel.Events.IMAPShellInitialized
   fullName: KS.Kernel.Events.IMAPShellInitialized
   nameWithType: Events.IMAPShellInitialized
+- uid: KS.Kernel.Events.JsonCommandError
+  name: JsonCommandError
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_JsonCommandError
+  commentId: E:KS.Kernel.Events.JsonCommandError
+  fullName: KS.Kernel.Events.JsonCommandError
+  nameWithType: Events.JsonCommandError
+- uid: KS.Kernel.Events.JsonPostExecuteCommand
+  name: JsonPostExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_JsonPostExecuteCommand
+  commentId: E:KS.Kernel.Events.JsonPostExecuteCommand
+  fullName: KS.Kernel.Events.JsonPostExecuteCommand
+  nameWithType: Events.JsonPostExecuteCommand
+- uid: KS.Kernel.Events.JsonPreExecuteCommand
+  name: JsonPreExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_JsonPreExecuteCommand
+  commentId: E:KS.Kernel.Events.JsonPreExecuteCommand
+  fullName: KS.Kernel.Events.JsonPreExecuteCommand
+  nameWithType: Events.JsonPreExecuteCommand
+- uid: KS.Kernel.Events.JsonShellInitialized
+  name: JsonShellInitialized
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_JsonShellInitialized
+  commentId: E:KS.Kernel.Events.JsonShellInitialized
+  fullName: KS.Kernel.Events.JsonShellInitialized
+  nameWithType: Events.JsonShellInitialized
 - uid: KS.Kernel.Events.KernelError
   name: KernelError
   href: api/KS.Kernel.Events.html#KS_Kernel_Events_KernelError
@@ -5908,6 +5932,58 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Events.RaiseIMAPShellInitialized
   nameWithType: Events.RaiseIMAPShellInitialized
+- uid: KS.Kernel.Events.RaiseJsonCommandError(System.String,System.Exception)
+  name: RaiseJsonCommandError(String, Exception)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseJsonCommandError_System_String_System_Exception_
+  commentId: M:KS.Kernel.Events.RaiseJsonCommandError(System.String,System.Exception)
+  fullName: KS.Kernel.Events.RaiseJsonCommandError(System.String, System.Exception)
+  nameWithType: Events.RaiseJsonCommandError(String, Exception)
+- uid: KS.Kernel.Events.RaiseJsonCommandError*
+  name: RaiseJsonCommandError
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseJsonCommandError_
+  commentId: Overload:KS.Kernel.Events.RaiseJsonCommandError
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseJsonCommandError
+  nameWithType: Events.RaiseJsonCommandError
+- uid: KS.Kernel.Events.RaiseJsonPostExecuteCommand(System.String)
+  name: RaiseJsonPostExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseJsonPostExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RaiseJsonPostExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RaiseJsonPostExecuteCommand(System.String)
+  nameWithType: Events.RaiseJsonPostExecuteCommand(String)
+- uid: KS.Kernel.Events.RaiseJsonPostExecuteCommand*
+  name: RaiseJsonPostExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseJsonPostExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RaiseJsonPostExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseJsonPostExecuteCommand
+  nameWithType: Events.RaiseJsonPostExecuteCommand
+- uid: KS.Kernel.Events.RaiseJsonPreExecuteCommand(System.String)
+  name: RaiseJsonPreExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseJsonPreExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RaiseJsonPreExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RaiseJsonPreExecuteCommand(System.String)
+  nameWithType: Events.RaiseJsonPreExecuteCommand(String)
+- uid: KS.Kernel.Events.RaiseJsonPreExecuteCommand*
+  name: RaiseJsonPreExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseJsonPreExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RaiseJsonPreExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseJsonPreExecuteCommand
+  nameWithType: Events.RaiseJsonPreExecuteCommand
+- uid: KS.Kernel.Events.RaiseJsonShellInitialized
+  name: RaiseJsonShellInitialized()
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseJsonShellInitialized
+  commentId: M:KS.Kernel.Events.RaiseJsonShellInitialized
+  fullName: KS.Kernel.Events.RaiseJsonShellInitialized()
+  nameWithType: Events.RaiseJsonShellInitialized()
+- uid: KS.Kernel.Events.RaiseJsonShellInitialized*
+  name: RaiseJsonShellInitialized
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseJsonShellInitialized_
+  commentId: Overload:KS.Kernel.Events.RaiseJsonShellInitialized
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseJsonShellInitialized
+  nameWithType: Events.RaiseJsonShellInitialized
 - uid: KS.Kernel.Events.RaiseKernelError(KS.Kernel.KernelErrorLevel,System.Boolean,System.Int64,System.String,System.Exception,System.Object[])
   name: RaiseKernelError(KernelErrorLevel, Boolean, Int64, String, Exception, Object[])
   href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseKernelError_KS_Kernel_KernelErrorLevel_System_Boolean_System_Int64_System_String_System_Exception_System_Object___
@@ -6788,6 +6864,58 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Events.RaiseStartKernel
   nameWithType: Events.RaiseStartKernel
+- uid: KS.Kernel.Events.RaiseTestCommandError(System.String,System.Exception)
+  name: RaiseTestCommandError(String, Exception)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseTestCommandError_System_String_System_Exception_
+  commentId: M:KS.Kernel.Events.RaiseTestCommandError(System.String,System.Exception)
+  fullName: KS.Kernel.Events.RaiseTestCommandError(System.String, System.Exception)
+  nameWithType: Events.RaiseTestCommandError(String, Exception)
+- uid: KS.Kernel.Events.RaiseTestCommandError*
+  name: RaiseTestCommandError
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseTestCommandError_
+  commentId: Overload:KS.Kernel.Events.RaiseTestCommandError
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseTestCommandError
+  nameWithType: Events.RaiseTestCommandError
+- uid: KS.Kernel.Events.RaiseTestPostExecuteCommand(System.String)
+  name: RaiseTestPostExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseTestPostExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RaiseTestPostExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RaiseTestPostExecuteCommand(System.String)
+  nameWithType: Events.RaiseTestPostExecuteCommand(String)
+- uid: KS.Kernel.Events.RaiseTestPostExecuteCommand*
+  name: RaiseTestPostExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseTestPostExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RaiseTestPostExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseTestPostExecuteCommand
+  nameWithType: Events.RaiseTestPostExecuteCommand
+- uid: KS.Kernel.Events.RaiseTestPreExecuteCommand(System.String)
+  name: RaiseTestPreExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseTestPreExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RaiseTestPreExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RaiseTestPreExecuteCommand(System.String)
+  nameWithType: Events.RaiseTestPreExecuteCommand(String)
+- uid: KS.Kernel.Events.RaiseTestPreExecuteCommand*
+  name: RaiseTestPreExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseTestPreExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RaiseTestPreExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseTestPreExecuteCommand
+  nameWithType: Events.RaiseTestPreExecuteCommand
+- uid: KS.Kernel.Events.RaiseTestShellInitialized
+  name: RaiseTestShellInitialized()
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseTestShellInitialized
+  commentId: M:KS.Kernel.Events.RaiseTestShellInitialized
+  fullName: KS.Kernel.Events.RaiseTestShellInitialized()
+  nameWithType: Events.RaiseTestShellInitialized()
+- uid: KS.Kernel.Events.RaiseTestShellInitialized*
+  name: RaiseTestShellInitialized
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseTestShellInitialized_
+  commentId: Overload:KS.Kernel.Events.RaiseTestShellInitialized
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseTestShellInitialized
+  nameWithType: Events.RaiseTestShellInitialized
 - uid: KS.Kernel.Events.RaiseTextCommandError(System.String,System.Exception)
   name: RaiseTextCommandError(String, Exception)
   href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseTextCommandError_System_String_System_Exception_
@@ -7637,6 +7765,58 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Events.RespondIMAPShellInitialized
   nameWithType: Events.RespondIMAPShellInitialized
+- uid: KS.Kernel.Events.RespondJsonCommandError(System.String,System.Exception)
+  name: RespondJsonCommandError(String, Exception)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondJsonCommandError_System_String_System_Exception_
+  commentId: M:KS.Kernel.Events.RespondJsonCommandError(System.String,System.Exception)
+  fullName: KS.Kernel.Events.RespondJsonCommandError(System.String, System.Exception)
+  nameWithType: Events.RespondJsonCommandError(String, Exception)
+- uid: KS.Kernel.Events.RespondJsonCommandError*
+  name: RespondJsonCommandError
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondJsonCommandError_
+  commentId: Overload:KS.Kernel.Events.RespondJsonCommandError
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondJsonCommandError
+  nameWithType: Events.RespondJsonCommandError
+- uid: KS.Kernel.Events.RespondJsonPostExecuteCommand(System.String)
+  name: RespondJsonPostExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondJsonPostExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RespondJsonPostExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RespondJsonPostExecuteCommand(System.String)
+  nameWithType: Events.RespondJsonPostExecuteCommand(String)
+- uid: KS.Kernel.Events.RespondJsonPostExecuteCommand*
+  name: RespondJsonPostExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondJsonPostExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RespondJsonPostExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondJsonPostExecuteCommand
+  nameWithType: Events.RespondJsonPostExecuteCommand
+- uid: KS.Kernel.Events.RespondJsonPreExecuteCommand(System.String)
+  name: RespondJsonPreExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondJsonPreExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RespondJsonPreExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RespondJsonPreExecuteCommand(System.String)
+  nameWithType: Events.RespondJsonPreExecuteCommand(String)
+- uid: KS.Kernel.Events.RespondJsonPreExecuteCommand*
+  name: RespondJsonPreExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondJsonPreExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RespondJsonPreExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondJsonPreExecuteCommand
+  nameWithType: Events.RespondJsonPreExecuteCommand
+- uid: KS.Kernel.Events.RespondJsonShellInitialized
+  name: RespondJsonShellInitialized()
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondJsonShellInitialized
+  commentId: M:KS.Kernel.Events.RespondJsonShellInitialized
+  fullName: KS.Kernel.Events.RespondJsonShellInitialized()
+  nameWithType: Events.RespondJsonShellInitialized()
+- uid: KS.Kernel.Events.RespondJsonShellInitialized*
+  name: RespondJsonShellInitialized
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondJsonShellInitialized_
+  commentId: Overload:KS.Kernel.Events.RespondJsonShellInitialized
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondJsonShellInitialized
+  nameWithType: Events.RespondJsonShellInitialized
 - uid: KS.Kernel.Events.RespondKernelError(KS.Kernel.KernelErrorLevel,System.Boolean,System.Int64,System.String,System.Exception,System.Object[])
   name: RespondKernelError(KernelErrorLevel, Boolean, Int64, String, Exception, Object[])
   href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondKernelError_KS_Kernel_KernelErrorLevel_System_Boolean_System_Int64_System_String_System_Exception_System_Object___
@@ -8517,6 +8697,58 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Events.RespondStartKernel
   nameWithType: Events.RespondStartKernel
+- uid: KS.Kernel.Events.RespondTestCommandError(System.String,System.Exception)
+  name: RespondTestCommandError(String, Exception)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondTestCommandError_System_String_System_Exception_
+  commentId: M:KS.Kernel.Events.RespondTestCommandError(System.String,System.Exception)
+  fullName: KS.Kernel.Events.RespondTestCommandError(System.String, System.Exception)
+  nameWithType: Events.RespondTestCommandError(String, Exception)
+- uid: KS.Kernel.Events.RespondTestCommandError*
+  name: RespondTestCommandError
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondTestCommandError_
+  commentId: Overload:KS.Kernel.Events.RespondTestCommandError
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondTestCommandError
+  nameWithType: Events.RespondTestCommandError
+- uid: KS.Kernel.Events.RespondTestPostExecuteCommand(System.String)
+  name: RespondTestPostExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondTestPostExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RespondTestPostExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RespondTestPostExecuteCommand(System.String)
+  nameWithType: Events.RespondTestPostExecuteCommand(String)
+- uid: KS.Kernel.Events.RespondTestPostExecuteCommand*
+  name: RespondTestPostExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondTestPostExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RespondTestPostExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondTestPostExecuteCommand
+  nameWithType: Events.RespondTestPostExecuteCommand
+- uid: KS.Kernel.Events.RespondTestPreExecuteCommand(System.String)
+  name: RespondTestPreExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondTestPreExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RespondTestPreExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RespondTestPreExecuteCommand(System.String)
+  nameWithType: Events.RespondTestPreExecuteCommand(String)
+- uid: KS.Kernel.Events.RespondTestPreExecuteCommand*
+  name: RespondTestPreExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondTestPreExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RespondTestPreExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondTestPreExecuteCommand
+  nameWithType: Events.RespondTestPreExecuteCommand
+- uid: KS.Kernel.Events.RespondTestShellInitialized
+  name: RespondTestShellInitialized()
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondTestShellInitialized
+  commentId: M:KS.Kernel.Events.RespondTestShellInitialized
+  fullName: KS.Kernel.Events.RespondTestShellInitialized()
+  nameWithType: Events.RespondTestShellInitialized()
+- uid: KS.Kernel.Events.RespondTestShellInitialized*
+  name: RespondTestShellInitialized
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondTestShellInitialized_
+  commentId: Overload:KS.Kernel.Events.RespondTestShellInitialized
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondTestShellInitialized
+  nameWithType: Events.RespondTestShellInitialized
 - uid: KS.Kernel.Events.RespondTextCommandError(System.String,System.Exception)
   name: RespondTextCommandError(String, Exception)
   href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondTextCommandError_System_String_System_Exception_
@@ -8908,6 +9140,30 @@ references:
   commentId: E:KS.Kernel.Events.SSHPreExecuteCommand
   fullName: KS.Kernel.Events.SSHPreExecuteCommand
   nameWithType: Events.SSHPreExecuteCommand
+- uid: KS.Kernel.Events.TestCommandError
+  name: TestCommandError
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_TestCommandError
+  commentId: E:KS.Kernel.Events.TestCommandError
+  fullName: KS.Kernel.Events.TestCommandError
+  nameWithType: Events.TestCommandError
+- uid: KS.Kernel.Events.TestPostExecuteCommand
+  name: TestPostExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_TestPostExecuteCommand
+  commentId: E:KS.Kernel.Events.TestPostExecuteCommand
+  fullName: KS.Kernel.Events.TestPostExecuteCommand
+  nameWithType: Events.TestPostExecuteCommand
+- uid: KS.Kernel.Events.TestPreExecuteCommand
+  name: TestPreExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_TestPreExecuteCommand
+  commentId: E:KS.Kernel.Events.TestPreExecuteCommand
+  fullName: KS.Kernel.Events.TestPreExecuteCommand
+  nameWithType: Events.TestPreExecuteCommand
+- uid: KS.Kernel.Events.TestShellInitialized
+  name: TestShellInitialized
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_TestShellInitialized
+  commentId: E:KS.Kernel.Events.TestShellInitialized
+  fullName: KS.Kernel.Events.TestShellInitialized
+  nameWithType: Events.TestShellInitialized
 - uid: KS.Kernel.Events.TextCommandError
   name: TextCommandError
   href: api/KS.Kernel.Events.html#KS_Kernel_Events_TextCommandError
