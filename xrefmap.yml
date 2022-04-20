@@ -19783,6 +19783,32 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Threading.KernelThread.IsAlive
   nameWithType: KernelThread.IsAlive
+- uid: KS.Misc.Threading.KernelThread.IsBackground
+  name: IsBackground
+  href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread_IsBackground
+  commentId: P:KS.Misc.Threading.KernelThread.IsBackground
+  fullName: KS.Misc.Threading.KernelThread.IsBackground
+  nameWithType: KernelThread.IsBackground
+- uid: KS.Misc.Threading.KernelThread.IsBackground*
+  name: IsBackground
+  href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread_IsBackground_
+  commentId: Overload:KS.Misc.Threading.KernelThread.IsBackground
+  isSpec: "True"
+  fullName: KS.Misc.Threading.KernelThread.IsBackground
+  nameWithType: KernelThread.IsBackground
+- uid: KS.Misc.Threading.KernelThread.Name
+  name: Name
+  href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread_Name
+  commentId: P:KS.Misc.Threading.KernelThread.Name
+  fullName: KS.Misc.Threading.KernelThread.Name
+  nameWithType: KernelThread.Name
+- uid: KS.Misc.Threading.KernelThread.Name*
+  name: Name
+  href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread_Name_
+  commentId: Overload:KS.Misc.Threading.KernelThread.Name
+  isSpec: "True"
+  fullName: KS.Misc.Threading.KernelThread.Name
+  nameWithType: KernelThread.Name
 - uid: KS.Misc.Threading.KernelThread.Start
   name: Start()
   href: api/KS.Misc.Threading.KernelThread.html#KS_Misc_Threading_KernelThread_Start
@@ -27160,6 +27186,43 @@ references:
   fullName.vb: KS.Shell.ShellBase.ShellExecutor.ShellType
   nameWithType: ShellExecutor.IShell.ShellType
   nameWithType.vb: ShellExecutor.ShellType
+- uid: KS.Shell.ShellBase.ShellInfo
+  name: ShellInfo
+  href: api/KS.Shell.ShellBase.ShellInfo.html
+  commentId: T:KS.Shell.ShellBase.ShellInfo
+  fullName: KS.Shell.ShellBase.ShellInfo
+  nameWithType: ShellInfo
+- uid: KS.Shell.ShellBase.ShellInfo.#ctor(KS.Shell.ShellBase.ShellType,KS.Shell.ShellBase.ShellExecutor,KS.Misc.Threading.KernelThread)
+  name: ShellInfo(ShellType, ShellExecutor, KernelThread)
+  href: api/KS.Shell.ShellBase.ShellInfo.html#KS_Shell_ShellBase_ShellInfo__ctor_KS_Shell_ShellBase_ShellType_KS_Shell_ShellBase_ShellExecutor_KS_Misc_Threading_KernelThread_
+  commentId: M:KS.Shell.ShellBase.ShellInfo.#ctor(KS.Shell.ShellBase.ShellType,KS.Shell.ShellBase.ShellExecutor,KS.Misc.Threading.KernelThread)
+  fullName: KS.Shell.ShellBase.ShellInfo.ShellInfo(KS.Shell.ShellBase.ShellType, KS.Shell.ShellBase.ShellExecutor, KS.Misc.Threading.KernelThread)
+  nameWithType: ShellInfo.ShellInfo(ShellType, ShellExecutor, KernelThread)
+- uid: KS.Shell.ShellBase.ShellInfo.#ctor*
+  name: ShellInfo
+  href: api/KS.Shell.ShellBase.ShellInfo.html#KS_Shell_ShellBase_ShellInfo__ctor_
+  commentId: Overload:KS.Shell.ShellBase.ShellInfo.#ctor
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.ShellInfo.ShellInfo
+  nameWithType: ShellInfo.ShellInfo
+- uid: KS.Shell.ShellBase.ShellInfo.ShellCommandThread
+  name: ShellCommandThread
+  href: api/KS.Shell.ShellBase.ShellInfo.html#KS_Shell_ShellBase_ShellInfo_ShellCommandThread
+  commentId: F:KS.Shell.ShellBase.ShellInfo.ShellCommandThread
+  fullName: KS.Shell.ShellBase.ShellInfo.ShellCommandThread
+  nameWithType: ShellInfo.ShellCommandThread
+- uid: KS.Shell.ShellBase.ShellInfo.ShellExecutor
+  name: ShellExecutor
+  href: api/KS.Shell.ShellBase.ShellInfo.html#KS_Shell_ShellBase_ShellInfo_ShellExecutor
+  commentId: F:KS.Shell.ShellBase.ShellInfo.ShellExecutor
+  fullName: KS.Shell.ShellBase.ShellInfo.ShellExecutor
+  nameWithType: ShellInfo.ShellExecutor
+- uid: KS.Shell.ShellBase.ShellInfo.ShellType
+  name: ShellType
+  href: api/KS.Shell.ShellBase.ShellInfo.html#KS_Shell_ShellBase_ShellInfo_ShellType
+  commentId: F:KS.Shell.ShellBase.ShellInfo.ShellType
+  fullName: KS.Shell.ShellBase.ShellInfo.ShellType
+  nameWithType: ShellInfo.ShellType
 - uid: KS.Shell.ShellBase.ShellStart
   name: ShellStart
   href: api/KS.Shell.ShellBase.ShellStart.html
