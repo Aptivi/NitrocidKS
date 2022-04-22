@@ -11719,6 +11719,55 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Exceptions.UESHConditionParseException.UESHConditionParseException
   nameWithType: UESHConditionParseException.UESHConditionParseException
+- uid: KS.Kernel.Exceptions.UESHScriptException
+  name: UESHScriptException
+  href: api/KS.Kernel.Exceptions.UESHScriptException.html
+  commentId: T:KS.Kernel.Exceptions.UESHScriptException
+  fullName: KS.Kernel.Exceptions.UESHScriptException
+  nameWithType: UESHScriptException
+- uid: KS.Kernel.Exceptions.UESHScriptException.#ctor
+  name: UESHScriptException()
+  href: api/KS.Kernel.Exceptions.UESHScriptException.html#KS_Kernel_Exceptions_UESHScriptException__ctor
+  commentId: M:KS.Kernel.Exceptions.UESHScriptException.#ctor
+  fullName: KS.Kernel.Exceptions.UESHScriptException.UESHScriptException()
+  nameWithType: UESHScriptException.UESHScriptException()
+- uid: KS.Kernel.Exceptions.UESHScriptException.#ctor(System.String)
+  name: UESHScriptException(String)
+  href: api/KS.Kernel.Exceptions.UESHScriptException.html#KS_Kernel_Exceptions_UESHScriptException__ctor_System_String_
+  commentId: M:KS.Kernel.Exceptions.UESHScriptException.#ctor(System.String)
+  fullName: KS.Kernel.Exceptions.UESHScriptException.UESHScriptException(System.String)
+  nameWithType: UESHScriptException.UESHScriptException(String)
+- uid: KS.Kernel.Exceptions.UESHScriptException.#ctor(System.String,System.Exception)
+  name: UESHScriptException(String, Exception)
+  href: api/KS.Kernel.Exceptions.UESHScriptException.html#KS_Kernel_Exceptions_UESHScriptException__ctor_System_String_System_Exception_
+  commentId: M:KS.Kernel.Exceptions.UESHScriptException.#ctor(System.String,System.Exception)
+  fullName: KS.Kernel.Exceptions.UESHScriptException.UESHScriptException(System.String, System.Exception)
+  nameWithType: UESHScriptException.UESHScriptException(String, Exception)
+- uid: KS.Kernel.Exceptions.UESHScriptException.#ctor(System.String,System.Exception,System.Object[])
+  name: UESHScriptException(String, Exception, Object[])
+  href: api/KS.Kernel.Exceptions.UESHScriptException.html#KS_Kernel_Exceptions_UESHScriptException__ctor_System_String_System_Exception_System_Object___
+  commentId: M:KS.Kernel.Exceptions.UESHScriptException.#ctor(System.String,System.Exception,System.Object[])
+  name.vb: UESHScriptException(String, Exception, Object())
+  fullName: KS.Kernel.Exceptions.UESHScriptException.UESHScriptException(System.String, System.Exception, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.UESHScriptException.UESHScriptException(System.String, System.Exception, System.Object())
+  nameWithType: UESHScriptException.UESHScriptException(String, Exception, Object[])
+  nameWithType.vb: UESHScriptException.UESHScriptException(String, Exception, Object())
+- uid: KS.Kernel.Exceptions.UESHScriptException.#ctor(System.String,System.Object[])
+  name: UESHScriptException(String, Object[])
+  href: api/KS.Kernel.Exceptions.UESHScriptException.html#KS_Kernel_Exceptions_UESHScriptException__ctor_System_String_System_Object___
+  commentId: M:KS.Kernel.Exceptions.UESHScriptException.#ctor(System.String,System.Object[])
+  name.vb: UESHScriptException(String, Object())
+  fullName: KS.Kernel.Exceptions.UESHScriptException.UESHScriptException(System.String, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.UESHScriptException.UESHScriptException(System.String, System.Object())
+  nameWithType: UESHScriptException.UESHScriptException(String, Object[])
+  nameWithType.vb: UESHScriptException.UESHScriptException(String, Object())
+- uid: KS.Kernel.Exceptions.UESHScriptException.#ctor*
+  name: UESHScriptException
+  href: api/KS.Kernel.Exceptions.UESHScriptException.html#KS_Kernel_Exceptions_UESHScriptException__ctor_
+  commentId: Overload:KS.Kernel.Exceptions.UESHScriptException.#ctor
+  isSpec: "True"
+  fullName: KS.Kernel.Exceptions.UESHScriptException.UESHScriptException
+  nameWithType: UESHScriptException.UESHScriptException
 - uid: KS.Kernel.Exceptions.UserCreationException
   name: UserCreationException
   href: api/KS.Kernel.Exceptions.UserCreationException.html

@@ -1082,6 +1082,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Exceptions.UESHScriptException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Exceptions.UESHScriptException.html",
+          "hash": "Pv0oE/bbOK8stxrGl2L8ekpFHL65zAhivYBeJzeEFII="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Exceptions.UserCreationException.yml",
       "output": {
         ".html": {
@@ -1110,7 +1122,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.html",
-          "hash": "BRmYSOrMC1Elp63TO5bPDlauirHXIgc8qP3cZBWkAgU="
+          "hash": "2saqdN5oFMG6dAZniSYE4aOmlB0tdJQdzTjZdFR3Zg4="
         }
       },
       "is_incremental": false,
@@ -4026,7 +4038,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "gN2zr8REZ7HTqegdqDKkjufnxayM6VutoXjN/6i1dT4="
+          "hash": "wtsEzn+2HTfdCPOW9T63GC2vfbQsVZ61FtLI6GQ3Z3s="
         }
       },
       "is_incremental": false,
@@ -4077,7 +4089,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 334,
+          "total_file_count": 335,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
