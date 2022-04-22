@@ -11050,6 +11050,55 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Exceptions.NoSuchScreensaverException.NoSuchScreensaverException
   nameWithType: NoSuchScreensaverException.NoSuchScreensaverException
+- uid: KS.Kernel.Exceptions.NoSuchThemeException
+  name: NoSuchThemeException
+  href: api/KS.Kernel.Exceptions.NoSuchThemeException.html
+  commentId: T:KS.Kernel.Exceptions.NoSuchThemeException
+  fullName: KS.Kernel.Exceptions.NoSuchThemeException
+  nameWithType: NoSuchThemeException
+- uid: KS.Kernel.Exceptions.NoSuchThemeException.#ctor
+  name: NoSuchThemeException()
+  href: api/KS.Kernel.Exceptions.NoSuchThemeException.html#KS_Kernel_Exceptions_NoSuchThemeException__ctor
+  commentId: M:KS.Kernel.Exceptions.NoSuchThemeException.#ctor
+  fullName: KS.Kernel.Exceptions.NoSuchThemeException.NoSuchThemeException()
+  nameWithType: NoSuchThemeException.NoSuchThemeException()
+- uid: KS.Kernel.Exceptions.NoSuchThemeException.#ctor(System.String)
+  name: NoSuchThemeException(String)
+  href: api/KS.Kernel.Exceptions.NoSuchThemeException.html#KS_Kernel_Exceptions_NoSuchThemeException__ctor_System_String_
+  commentId: M:KS.Kernel.Exceptions.NoSuchThemeException.#ctor(System.String)
+  fullName: KS.Kernel.Exceptions.NoSuchThemeException.NoSuchThemeException(System.String)
+  nameWithType: NoSuchThemeException.NoSuchThemeException(String)
+- uid: KS.Kernel.Exceptions.NoSuchThemeException.#ctor(System.String,System.Exception)
+  name: NoSuchThemeException(String, Exception)
+  href: api/KS.Kernel.Exceptions.NoSuchThemeException.html#KS_Kernel_Exceptions_NoSuchThemeException__ctor_System_String_System_Exception_
+  commentId: M:KS.Kernel.Exceptions.NoSuchThemeException.#ctor(System.String,System.Exception)
+  fullName: KS.Kernel.Exceptions.NoSuchThemeException.NoSuchThemeException(System.String, System.Exception)
+  nameWithType: NoSuchThemeException.NoSuchThemeException(String, Exception)
+- uid: KS.Kernel.Exceptions.NoSuchThemeException.#ctor(System.String,System.Exception,System.Object[])
+  name: NoSuchThemeException(String, Exception, Object[])
+  href: api/KS.Kernel.Exceptions.NoSuchThemeException.html#KS_Kernel_Exceptions_NoSuchThemeException__ctor_System_String_System_Exception_System_Object___
+  commentId: M:KS.Kernel.Exceptions.NoSuchThemeException.#ctor(System.String,System.Exception,System.Object[])
+  name.vb: NoSuchThemeException(String, Exception, Object())
+  fullName: KS.Kernel.Exceptions.NoSuchThemeException.NoSuchThemeException(System.String, System.Exception, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.NoSuchThemeException.NoSuchThemeException(System.String, System.Exception, System.Object())
+  nameWithType: NoSuchThemeException.NoSuchThemeException(String, Exception, Object[])
+  nameWithType.vb: NoSuchThemeException.NoSuchThemeException(String, Exception, Object())
+- uid: KS.Kernel.Exceptions.NoSuchThemeException.#ctor(System.String,System.Object[])
+  name: NoSuchThemeException(String, Object[])
+  href: api/KS.Kernel.Exceptions.NoSuchThemeException.html#KS_Kernel_Exceptions_NoSuchThemeException__ctor_System_String_System_Object___
+  commentId: M:KS.Kernel.Exceptions.NoSuchThemeException.#ctor(System.String,System.Object[])
+  name.vb: NoSuchThemeException(String, Object())
+  fullName: KS.Kernel.Exceptions.NoSuchThemeException.NoSuchThemeException(System.String, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.NoSuchThemeException.NoSuchThemeException(System.String, System.Object())
+  nameWithType: NoSuchThemeException.NoSuchThemeException(String, Object[])
+  nameWithType.vb: NoSuchThemeException.NoSuchThemeException(String, Object())
+- uid: KS.Kernel.Exceptions.NoSuchThemeException.#ctor*
+  name: NoSuchThemeException
+  href: api/KS.Kernel.Exceptions.NoSuchThemeException.html#KS_Kernel_Exceptions_NoSuchThemeException__ctor_
+  commentId: Overload:KS.Kernel.Exceptions.NoSuchThemeException.#ctor
+  isSpec: "True"
+  fullName: KS.Kernel.Exceptions.NoSuchThemeException.NoSuchThemeException
+  nameWithType: NoSuchThemeException.NoSuchThemeException
 - uid: KS.Kernel.Exceptions.NullUsersException
   name: NullUsersException
   href: api/KS.Kernel.Exceptions.NullUsersException.html
