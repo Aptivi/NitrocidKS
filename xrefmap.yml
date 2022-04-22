@@ -5246,6 +5246,12 @@ references:
   commentId: E:KS.Kernel.Events.PlaceholderParsed
   fullName: KS.Kernel.Events.PlaceholderParsed
   nameWithType: Events.PlaceholderParsed
+- uid: KS.Kernel.Events.PlaceholderParseError
+  name: PlaceholderParseError
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_PlaceholderParseError
+  commentId: E:KS.Kernel.Events.PlaceholderParseError
+  fullName: KS.Kernel.Events.PlaceholderParseError
+  nameWithType: Events.PlaceholderParseError
 - uid: KS.Kernel.Events.PlaceholderParsing
   name: PlaceholderParsing
   href: api/KS.Kernel.Events.html#KS_Kernel_Events_PlaceholderParsing
@@ -6253,6 +6259,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Events.RaisePlaceholderParsed
   nameWithType: Events.RaisePlaceholderParsed
+- uid: KS.Kernel.Events.RaisePlaceholderParseError(System.String,System.Exception)
+  name: RaisePlaceholderParseError(String, Exception)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaisePlaceholderParseError_System_String_System_Exception_
+  commentId: M:KS.Kernel.Events.RaisePlaceholderParseError(System.String,System.Exception)
+  fullName: KS.Kernel.Events.RaisePlaceholderParseError(System.String, System.Exception)
+  nameWithType: Events.RaisePlaceholderParseError(String, Exception)
+- uid: KS.Kernel.Events.RaisePlaceholderParseError*
+  name: RaisePlaceholderParseError
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaisePlaceholderParseError_
+  commentId: Overload:KS.Kernel.Events.RaisePlaceholderParseError
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaisePlaceholderParseError
+  nameWithType: Events.RaisePlaceholderParseError
 - uid: KS.Kernel.Events.RaisePlaceholderParsing(System.String)
   name: RaisePlaceholderParsing(String)
   href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaisePlaceholderParsing_System_String_
@@ -8086,6 +8105,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Events.RespondPlaceholderParsed
   nameWithType: Events.RespondPlaceholderParsed
+- uid: KS.Kernel.Events.RespondPlaceholderParseError(System.String,System.Exception)
+  name: RespondPlaceholderParseError(String, Exception)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondPlaceholderParseError_System_String_System_Exception_
+  commentId: M:KS.Kernel.Events.RespondPlaceholderParseError(System.String,System.Exception)
+  fullName: KS.Kernel.Events.RespondPlaceholderParseError(System.String, System.Exception)
+  nameWithType: Events.RespondPlaceholderParseError(String, Exception)
+- uid: KS.Kernel.Events.RespondPlaceholderParseError*
+  name: RespondPlaceholderParseError
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondPlaceholderParseError_
+  commentId: Overload:KS.Kernel.Events.RespondPlaceholderParseError
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondPlaceholderParseError
+  nameWithType: Events.RespondPlaceholderParseError
 - uid: KS.Kernel.Events.RespondPlaceholderParsing(System.String)
   name: RespondPlaceholderParsing(String)
   href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondPlaceholderParsing_System_String_
@@ -10364,6 +10396,55 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Exceptions.InvalidPathException.InvalidPathException
   nameWithType: InvalidPathException.InvalidPathException
+- uid: KS.Kernel.Exceptions.InvalidPlaceholderException
+  name: InvalidPlaceholderException
+  href: api/KS.Kernel.Exceptions.InvalidPlaceholderException.html
+  commentId: T:KS.Kernel.Exceptions.InvalidPlaceholderException
+  fullName: KS.Kernel.Exceptions.InvalidPlaceholderException
+  nameWithType: InvalidPlaceholderException
+- uid: KS.Kernel.Exceptions.InvalidPlaceholderException.#ctor
+  name: InvalidPlaceholderException()
+  href: api/KS.Kernel.Exceptions.InvalidPlaceholderException.html#KS_Kernel_Exceptions_InvalidPlaceholderException__ctor
+  commentId: M:KS.Kernel.Exceptions.InvalidPlaceholderException.#ctor
+  fullName: KS.Kernel.Exceptions.InvalidPlaceholderException.InvalidPlaceholderException()
+  nameWithType: InvalidPlaceholderException.InvalidPlaceholderException()
+- uid: KS.Kernel.Exceptions.InvalidPlaceholderException.#ctor(System.String)
+  name: InvalidPlaceholderException(String)
+  href: api/KS.Kernel.Exceptions.InvalidPlaceholderException.html#KS_Kernel_Exceptions_InvalidPlaceholderException__ctor_System_String_
+  commentId: M:KS.Kernel.Exceptions.InvalidPlaceholderException.#ctor(System.String)
+  fullName: KS.Kernel.Exceptions.InvalidPlaceholderException.InvalidPlaceholderException(System.String)
+  nameWithType: InvalidPlaceholderException.InvalidPlaceholderException(String)
+- uid: KS.Kernel.Exceptions.InvalidPlaceholderException.#ctor(System.String,System.Exception)
+  name: InvalidPlaceholderException(String, Exception)
+  href: api/KS.Kernel.Exceptions.InvalidPlaceholderException.html#KS_Kernel_Exceptions_InvalidPlaceholderException__ctor_System_String_System_Exception_
+  commentId: M:KS.Kernel.Exceptions.InvalidPlaceholderException.#ctor(System.String,System.Exception)
+  fullName: KS.Kernel.Exceptions.InvalidPlaceholderException.InvalidPlaceholderException(System.String, System.Exception)
+  nameWithType: InvalidPlaceholderException.InvalidPlaceholderException(String, Exception)
+- uid: KS.Kernel.Exceptions.InvalidPlaceholderException.#ctor(System.String,System.Exception,System.Object[])
+  name: InvalidPlaceholderException(String, Exception, Object[])
+  href: api/KS.Kernel.Exceptions.InvalidPlaceholderException.html#KS_Kernel_Exceptions_InvalidPlaceholderException__ctor_System_String_System_Exception_System_Object___
+  commentId: M:KS.Kernel.Exceptions.InvalidPlaceholderException.#ctor(System.String,System.Exception,System.Object[])
+  name.vb: InvalidPlaceholderException(String, Exception, Object())
+  fullName: KS.Kernel.Exceptions.InvalidPlaceholderException.InvalidPlaceholderException(System.String, System.Exception, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.InvalidPlaceholderException.InvalidPlaceholderException(System.String, System.Exception, System.Object())
+  nameWithType: InvalidPlaceholderException.InvalidPlaceholderException(String, Exception, Object[])
+  nameWithType.vb: InvalidPlaceholderException.InvalidPlaceholderException(String, Exception, Object())
+- uid: KS.Kernel.Exceptions.InvalidPlaceholderException.#ctor(System.String,System.Object[])
+  name: InvalidPlaceholderException(String, Object[])
+  href: api/KS.Kernel.Exceptions.InvalidPlaceholderException.html#KS_Kernel_Exceptions_InvalidPlaceholderException__ctor_System_String_System_Object___
+  commentId: M:KS.Kernel.Exceptions.InvalidPlaceholderException.#ctor(System.String,System.Object[])
+  name.vb: InvalidPlaceholderException(String, Object())
+  fullName: KS.Kernel.Exceptions.InvalidPlaceholderException.InvalidPlaceholderException(System.String, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.InvalidPlaceholderException.InvalidPlaceholderException(System.String, System.Object())
+  nameWithType: InvalidPlaceholderException.InvalidPlaceholderException(String, Object[])
+  nameWithType.vb: InvalidPlaceholderException.InvalidPlaceholderException(String, Object())
+- uid: KS.Kernel.Exceptions.InvalidPlaceholderException.#ctor*
+  name: InvalidPlaceholderException
+  href: api/KS.Kernel.Exceptions.InvalidPlaceholderException.html#KS_Kernel_Exceptions_InvalidPlaceholderException__ctor_
+  commentId: Overload:KS.Kernel.Exceptions.InvalidPlaceholderException.#ctor
+  isSpec: "True"
+  fullName: KS.Kernel.Exceptions.InvalidPlaceholderException.InvalidPlaceholderException
+  nameWithType: InvalidPlaceholderException.InvalidPlaceholderException
 - uid: KS.Kernel.Exceptions.KernelErrorException
   name: KernelErrorException
   href: api/KS.Kernel.Exceptions.KernelErrorException.html
@@ -15835,12 +15916,12 @@ references:
   commentId: T:KS.Misc.Probers.PlaceParse
   fullName: KS.Misc.Probers.PlaceParse
   nameWithType: PlaceParse
-- uid: KS.Misc.Probers.PlaceParse.ProbePlaces(System.String)
-  name: ProbePlaces(String)
-  href: api/KS.Misc.Probers.PlaceParse.html#KS_Misc_Probers_PlaceParse_ProbePlaces_System_String_
-  commentId: M:KS.Misc.Probers.PlaceParse.ProbePlaces(System.String)
-  fullName: KS.Misc.Probers.PlaceParse.ProbePlaces(System.String)
-  nameWithType: PlaceParse.ProbePlaces(String)
+- uid: KS.Misc.Probers.PlaceParse.ProbePlaces(System.String,System.Boolean)
+  name: ProbePlaces(String, Boolean)
+  href: api/KS.Misc.Probers.PlaceParse.html#KS_Misc_Probers_PlaceParse_ProbePlaces_System_String_System_Boolean_
+  commentId: M:KS.Misc.Probers.PlaceParse.ProbePlaces(System.String,System.Boolean)
+  fullName: KS.Misc.Probers.PlaceParse.ProbePlaces(System.String, System.Boolean)
+  nameWithType: PlaceParse.ProbePlaces(String, Boolean)
 - uid: KS.Misc.Probers.PlaceParse.ProbePlaces*
   name: ProbePlaces
   href: api/KS.Misc.Probers.PlaceParse.html#KS_Misc_Probers_PlaceParse_ProbePlaces_
