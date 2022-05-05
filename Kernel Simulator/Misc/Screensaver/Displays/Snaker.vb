@@ -152,6 +152,9 @@ Namespace Misc.Screensaver.Displays
 
                         Dim DidHorizontal As Boolean = False
                         Dim DidVertical As Boolean = False
+                        Dim AppleDrawn As Boolean = False
+                        Dim SnakeLastTailToWipeX As Integer
+                        Dim SnakeLastTailToWipeY As Integer
 
                         Do Until Dead
                             'Delay
@@ -159,20 +162,21 @@ Namespace Misc.Screensaver.Displays
                             If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
                             If ResizeSyncing Then Exit Do
 
-                            'Clear the stage
+                            'Remove excess mass
                             Console.BackgroundColor = ConsoleColor.Black
-                            For x As Integer = 4 To FloorRightEdge - 1
-                                For y As Integer = 2 To FloorBottomEdge - 1
-                                    Console.SetCursorPosition(x, y)
-                                    Console.Write(" ")
-                                Next
-                            Next
+                            Console.SetCursorPosition(SnakeLastTailToWipeX, SnakeLastTailToWipeY)
+                            Console.Write(" ")
+
+                            'Set the snake color
                             SetConsoleColor(SnakeColor, True)
 
-                            'Always draw an apple
-                            Console.SetCursorPosition(SnakeAppleX, SnakeAppleY)
-                            Console.Write("+")
-                            Wdbg(DebugLevel.I, "Drawn apple at ({0}, {1})", SnakeAppleX, SnakeAppleY)
+                            'Draw an apple
+                            If Not AppleDrawn Then
+                                AppleDrawn = True
+                                Console.SetCursorPosition(SnakeAppleX, SnakeAppleY)
+                                Console.Write("+")
+                                Wdbg(DebugLevel.I, "Drawn apple at ({0}, {1})", SnakeAppleX, SnakeAppleY)
+                            End If
 
                             'Make a snake
                             For PositionIndex As Integer = SnakeMassPositions.Count - 1 To 0 Step -1
@@ -230,6 +234,9 @@ Namespace Misc.Screensaver.Displays
                             SnakeMassPositions.AddIfNotFound($"{SnakeCurrentX}/{SnakeCurrentY}")
                             If SnakeMassPositions.Count > SnakeLength Then
                                 Wdbg(DebugLevel.I, "Mass position count {0} exceeds snake length of {1}. Removing index 0...", SnakeMassPositions.Count, SnakeLength)
+                                Dim LastTailPositionStrings() As String = SnakeMassPositions(0).Split("/")
+                                SnakeLastTailToWipeX = LastTailPositionStrings(0)
+                                SnakeLastTailToWipeY = LastTailPositionStrings(1)
                                 SnakeMassPositions.RemoveAt(0)
                             End If
 
@@ -258,6 +265,7 @@ Namespace Misc.Screensaver.Displays
                                 'Relocate the apple
                                 SnakeAppleX = RandomDriver.Next(FloorLeftEdge + 1, FloorRightEdge - 1)
                                 SnakeAppleY = RandomDriver.Next(FloorTopEdge + 1, FloorBottomEdge - 1)
+                                AppleDrawn = False
                                 Wdbg(DebugLevel.I, "New snake apple position ({0}, {1})", SnakeAppleX, SnakeAppleY)
                             End If
                         Loop
