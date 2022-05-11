@@ -176,11 +176,11 @@ Public Module Shell
                     strcommand = Console.ReadLine()
 
                     If Not InSaver Then
-                        'Fire event of PreRaiseCommand
+                        'Fire event of PreRaiseExecuteCommand
                         EventManager.RaisePreExecuteCommand(strcommand)
 
-                        'Check for a type of command
-                        If Not (strcommand = Nothing Or strcommand?.StartsWith(" ") = True) Then
+                        'Check to see if the command is a comment
+                        If Not (strcommand = Nothing Or strcommand?.StartsWithAnyOf({" ", "#"})) Then
                             Dim Done As Boolean = False
                             Dim Commands As String() = strcommand.Split({" : "}, StringSplitOptions.RemoveEmptyEntries)
                             For Each Command As String In Commands
