@@ -16,6 +16,8 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Imports Extensification.StringExts
+
 Public Module Shell
 
     'Available Commands  (availableCommands)
@@ -132,7 +134,7 @@ Public Module Shell
         'Reads command written by user
         Try
             If ArgsMode = False Then
-                If Not (strcommand = Nothing Or strcommand.StartsWith(" ") = True) Then
+                If Not (strcommand = Nothing Or strcommand?.StartsWithAnyOf({" ", "#"})) Then
                     Dim groupCmds() As String = strcommand.Split({" : "}, StringSplitOptions.RemoveEmptyEntries)
                     For Each cmd In groupCmds
                         'Get the index of the first space
