@@ -52,7 +52,7 @@ Module SSH
             'Wait until disconnection
             While SSH.IsConnected
                 Threading.Thread.Sleep(1)
-                If DisconnectionRequested Then
+                If DisconnectionRequested Or SSHS.GetType.GetField("_input", Reflection.BindingFlags.NonPublic Or Reflection.BindingFlags.Instance).GetValue(SSHS) Is Nothing Then
                     SSHS.Stop()
                     SSH.Disconnect()
                 End If
