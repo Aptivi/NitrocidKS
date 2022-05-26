@@ -472,7 +472,7 @@
   "api/KS.Kernel.html": {
     "href": "api/KS.Kernel.html",
     "title": "Namespace KS.Kernel | Kernel Simulator API - Eofla Internals",
-    "keywords": "Namespace KS.Kernel Classes Events EventsManager Flags Kernel KernelTools KernelUpdate Enums KernelErrorLevel One-lettered kernel error level enumeration PowerMode Kernel power modes"
+    "keywords": "Namespace KS.Kernel Classes Events EventsManager Flags Kernel KernelTools KernelUpdate KernelUpdateInfo Enums KernelErrorLevel One-lettered kernel error level enumeration PowerMode Kernel power modes"
   },
   "api/KS.Kernel.Kernel.html": {
     "href": "api/KS.Kernel.Kernel.html",
@@ -493,6 +493,11 @@
     "href": "api/KS.Kernel.KernelUpdate.html",
     "title": "Class KernelUpdate | Kernel Simulator API - Eofla Internals",
     "keywords": "Class KernelUpdate Inheritance System.Object KernelUpdate Namespace : KS.Kernel Assembly : Kernel Simulator.dll Syntax public class KernelUpdate Constructors | Improve this Doc View Source KernelUpdate(JToken) Installs a new instance of class KernelUpdate Declaration protected KernelUpdate(JToken UpdateToken) Parameters Type Name Description JToken UpdateToken The kernel update token Properties | Improve this Doc View Source Updated Is the kernel up to date? Declaration public bool Updated { get; } Property Value Type Description System.Boolean | Improve this Doc View Source UpdateURL Update file URL Declaration public Uri UpdateURL { get; } Property Value Type Description System.Uri | Improve this Doc View Source UpdateVersion Updated kernel version Declaration public Version UpdateVersion { get; } Property Value Type Description System.Version"
+  },
+  "api/KS.Kernel.KernelUpdateInfo.html": {
+    "href": "api/KS.Kernel.KernelUpdateInfo.html",
+    "title": "Class KernelUpdateInfo | Kernel Simulator API - Eofla Internals",
+    "keywords": "Class KernelUpdateInfo Inheritance System.Object KernelUpdateInfo Namespace : KS.Kernel Assembly : Kernel Simulator.dll Syntax public class KernelUpdateInfo Constructors | Improve this Doc View Source KernelUpdateInfo(Version, String) Installs a new instance of class KernelUpdateInfo Declaration protected KernelUpdateInfo(Version UpdateVer, string UpdateUrl) Parameters Type Name Description System.Version UpdateVer The kernel version fetched from the update token System.String UpdateUrl The kernel URL fetched from the update token Properties | Improve this Doc View Source UpdateURL Update file URL Declaration public Uri UpdateURL { get; } Property Value Type Description System.Uri | Improve this Doc View Source UpdateVersion Updated kernel version Declaration public Version UpdateVersion { get; } Property Value Type Description System.Version"
   },
   "api/KS.Kernel.PowerMode.html": {
     "href": "api/KS.Kernel.PowerMode.html",
@@ -812,7 +817,7 @@
   "api/KS.Misc.Platform.PlatformDetector.html": {
     "href": "api/KS.Misc.Platform.PlatformDetector.html",
     "title": "Class PlatformDetector | Kernel Simulator API - Eofla Internals",
-    "keywords": "Class PlatformDetector Inheritance PlatformDetector Namespace : KS.Misc.Platform Assembly : Kernel Simulator.dll Syntax public class PlatformDetector Methods | Improve this Doc View Source IsOnMacOS() Is this system a macOS system? Declaration public static bool IsOnMacOS() Returns Type Description System.Boolean | Improve this Doc View Source IsOnUnix() Is this system a Unix system? True for macOS, too! Declaration public static bool IsOnUnix() Returns Type Description System.Boolean | Improve this Doc View Source IsOnWindows() Is this system a Windows system? Declaration public static bool IsOnWindows() Returns Type Description System.Boolean"
+    "keywords": "Class PlatformDetector Inheritance PlatformDetector Namespace : KS.Misc.Platform Assembly : Kernel Simulator.dll Syntax public class PlatformDetector Methods | Improve this Doc View Source IsOnMacOS() Is this system a macOS system? Declaration public static bool IsOnMacOS() Returns Type Description System.Boolean | Improve this Doc View Source IsOnMonoRuntime() Are we running KS on Mono? Declaration public static bool IsOnMonoRuntime() Returns Type Description System.Boolean | Improve this Doc View Source IsOnUnix() Is this system a Unix system? True for macOS, too! Declaration public static bool IsOnUnix() Returns Type Description System.Boolean | Improve this Doc View Source IsOnWindows() Is this system a Windows system? Declaration public static bool IsOnWindows() Returns Type Description System.Boolean"
   },
   "api/KS.Misc.Probers.html": {
     "href": "api/KS.Misc.Probers.html",

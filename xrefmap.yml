@@ -12589,6 +12589,51 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.KernelUpdate.UpdateVersion
   nameWithType: KernelUpdate.UpdateVersion
+- uid: KS.Kernel.KernelUpdateInfo
+  name: KernelUpdateInfo
+  href: api/KS.Kernel.KernelUpdateInfo.html
+  commentId: T:KS.Kernel.KernelUpdateInfo
+  fullName: KS.Kernel.KernelUpdateInfo
+  nameWithType: KernelUpdateInfo
+- uid: KS.Kernel.KernelUpdateInfo.#ctor(System.Version,System.String)
+  name: KernelUpdateInfo(Version, String)
+  href: api/KS.Kernel.KernelUpdateInfo.html#KS_Kernel_KernelUpdateInfo__ctor_System_Version_System_String_
+  commentId: M:KS.Kernel.KernelUpdateInfo.#ctor(System.Version,System.String)
+  fullName: KS.Kernel.KernelUpdateInfo.KernelUpdateInfo(System.Version, System.String)
+  nameWithType: KernelUpdateInfo.KernelUpdateInfo(Version, String)
+- uid: KS.Kernel.KernelUpdateInfo.#ctor*
+  name: KernelUpdateInfo
+  href: api/KS.Kernel.KernelUpdateInfo.html#KS_Kernel_KernelUpdateInfo__ctor_
+  commentId: Overload:KS.Kernel.KernelUpdateInfo.#ctor
+  isSpec: "True"
+  fullName: KS.Kernel.KernelUpdateInfo.KernelUpdateInfo
+  nameWithType: KernelUpdateInfo.KernelUpdateInfo
+- uid: KS.Kernel.KernelUpdateInfo.UpdateURL
+  name: UpdateURL
+  href: api/KS.Kernel.KernelUpdateInfo.html#KS_Kernel_KernelUpdateInfo_UpdateURL
+  commentId: P:KS.Kernel.KernelUpdateInfo.UpdateURL
+  fullName: KS.Kernel.KernelUpdateInfo.UpdateURL
+  nameWithType: KernelUpdateInfo.UpdateURL
+- uid: KS.Kernel.KernelUpdateInfo.UpdateURL*
+  name: UpdateURL
+  href: api/KS.Kernel.KernelUpdateInfo.html#KS_Kernel_KernelUpdateInfo_UpdateURL_
+  commentId: Overload:KS.Kernel.KernelUpdateInfo.UpdateURL
+  isSpec: "True"
+  fullName: KS.Kernel.KernelUpdateInfo.UpdateURL
+  nameWithType: KernelUpdateInfo.UpdateURL
+- uid: KS.Kernel.KernelUpdateInfo.UpdateVersion
+  name: UpdateVersion
+  href: api/KS.Kernel.KernelUpdateInfo.html#KS_Kernel_KernelUpdateInfo_UpdateVersion
+  commentId: P:KS.Kernel.KernelUpdateInfo.UpdateVersion
+  fullName: KS.Kernel.KernelUpdateInfo.UpdateVersion
+  nameWithType: KernelUpdateInfo.UpdateVersion
+- uid: KS.Kernel.KernelUpdateInfo.UpdateVersion*
+  name: UpdateVersion
+  href: api/KS.Kernel.KernelUpdateInfo.html#KS_Kernel_KernelUpdateInfo_UpdateVersion_
+  commentId: Overload:KS.Kernel.KernelUpdateInfo.UpdateVersion
+  isSpec: "True"
+  fullName: KS.Kernel.KernelUpdateInfo.UpdateVersion
+  nameWithType: KernelUpdateInfo.UpdateVersion
 - uid: KS.Kernel.PowerMode
   name: PowerMode
   href: api/KS.Kernel.PowerMode.html
@@ -15865,6 +15910,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Platform.PlatformDetector.IsOnMacOS
   nameWithType: PlatformDetector.IsOnMacOS
+- uid: KS.Misc.Platform.PlatformDetector.IsOnMonoRuntime
+  name: IsOnMonoRuntime()
+  href: api/KS.Misc.Platform.PlatformDetector.html#KS_Misc_Platform_PlatformDetector_IsOnMonoRuntime
+  commentId: M:KS.Misc.Platform.PlatformDetector.IsOnMonoRuntime
+  fullName: KS.Misc.Platform.PlatformDetector.IsOnMonoRuntime()
+  nameWithType: PlatformDetector.IsOnMonoRuntime()
+- uid: KS.Misc.Platform.PlatformDetector.IsOnMonoRuntime*
+  name: IsOnMonoRuntime
+  href: api/KS.Misc.Platform.PlatformDetector.html#KS_Misc_Platform_PlatformDetector_IsOnMonoRuntime_
+  commentId: Overload:KS.Misc.Platform.PlatformDetector.IsOnMonoRuntime
+  isSpec: "True"
+  fullName: KS.Misc.Platform.PlatformDetector.IsOnMonoRuntime
+  nameWithType: PlatformDetector.IsOnMonoRuntime
 - uid: KS.Misc.Platform.PlatformDetector.IsOnUnix
   name: IsOnUnix()
   href: api/KS.Misc.Platform.PlatformDetector.html#KS_Misc_Platform_PlatformDetector_IsOnUnix

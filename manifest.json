@@ -1170,7 +1170,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.KernelTools.html",
-          "hash": "iBJzNXi3DEe5QFKHFXAUvVu8R1Z6GLXAvlshup2KJVQ="
+          "hash": "YzeMiHH660QaovexLEBisf6x2MBrSZVDyRXdFcBLOXA="
         }
       },
       "is_incremental": false,
@@ -1183,6 +1183,18 @@
         ".html": {
           "relative_path": "api/KS.Kernel.KernelUpdate.html",
           "hash": "WuVIAl0UU/U/UZ9H09beKcSdKyDXYkAkK6z+gaXOtlQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.KernelUpdateInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.KernelUpdateInfo.html",
+          "hash": "LLsXCUX6Ydl0q6vSK1ZijmpJpgYOIU2zQKq/GGXrJ+A="
         }
       },
       "is_incremental": false,
@@ -1206,7 +1218,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.html",
-          "hash": "csHJRZCHWEikYrvrEyCBNHOPoljANaywzzbMRMLwpRg="
+          "hash": "kMEOV6kP5bLZlACis++LAjmjzGEkTHUTbfw20zHCm3A="
         }
       },
       "is_incremental": false,
@@ -1938,7 +1950,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Platform.PlatformDetector.html",
-          "hash": "7cCLatO34VoEQjYdGKaWR8iGkc8E5523KIMpEtNHNaE="
+          "hash": "xnP2FwjDJP6byrTKb+oit4WDkhX8YTdBBYvYWsBsZE4="
         }
       },
       "is_incremental": false,
@@ -2238,7 +2250,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Splash.SplashManager.html",
-          "hash": "g1WIjsL5KrEltukQKcpmFbeOVcNLrxfA4YT8h4zeIIg="
+          "hash": "CMXLpfCQmgO6H5SV60wK1ODXr9p8wQ194AO4iKsonQM="
         }
       },
       "is_incremental": false,
@@ -2406,7 +2418,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.ConsoleWriters.ListWriterColor.html",
-          "hash": "rrLXNVWk8WrZ+LVcT33pvLELAWQLrL85+exfsbg7FWs="
+          "hash": "5nncaOs/bmB6Dh2MNxfFdfzto1X0EJYAv5fTbiq7cvE="
         }
       },
       "is_incremental": false,
@@ -3006,7 +3018,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.Mail.Directory.MailManager.html",
-          "hash": "5HRs+/x59g17jCgFKXGH+BqXGMHCDzi3TRX6jYTjAnk="
+          "hash": "Z51FJxBMAg5A1AkpRPt8VrGGysifzrDHun7oOighH1I="
         }
       },
       "is_incremental": false,
@@ -4038,7 +4050,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wtsEzn+2HTfdCPOW9T63GC2vfbQsVZ61FtLI6GQ3Z3s="
+          "hash": "6yKgQsAcbtI02HEMnPTWkbQ6jcn22aL025YEI+wI86U="
         }
       },
       "is_incremental": false,
@@ -4089,7 +4101,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 335,
+          "total_file_count": 336,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
