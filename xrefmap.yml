@@ -10347,6 +10347,55 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Exceptions.InvalidManpageException.InvalidManpageException
   nameWithType: InvalidManpageException.InvalidManpageException
+- uid: KS.Kernel.Exceptions.InvalidModException
+  name: InvalidModException
+  href: api/KS.Kernel.Exceptions.InvalidModException.html
+  commentId: T:KS.Kernel.Exceptions.InvalidModException
+  fullName: KS.Kernel.Exceptions.InvalidModException
+  nameWithType: InvalidModException
+- uid: KS.Kernel.Exceptions.InvalidModException.#ctor
+  name: InvalidModException()
+  href: api/KS.Kernel.Exceptions.InvalidModException.html#KS_Kernel_Exceptions_InvalidModException__ctor
+  commentId: M:KS.Kernel.Exceptions.InvalidModException.#ctor
+  fullName: KS.Kernel.Exceptions.InvalidModException.InvalidModException()
+  nameWithType: InvalidModException.InvalidModException()
+- uid: KS.Kernel.Exceptions.InvalidModException.#ctor(System.String)
+  name: InvalidModException(String)
+  href: api/KS.Kernel.Exceptions.InvalidModException.html#KS_Kernel_Exceptions_InvalidModException__ctor_System_String_
+  commentId: M:KS.Kernel.Exceptions.InvalidModException.#ctor(System.String)
+  fullName: KS.Kernel.Exceptions.InvalidModException.InvalidModException(System.String)
+  nameWithType: InvalidModException.InvalidModException(String)
+- uid: KS.Kernel.Exceptions.InvalidModException.#ctor(System.String,System.Exception)
+  name: InvalidModException(String, Exception)
+  href: api/KS.Kernel.Exceptions.InvalidModException.html#KS_Kernel_Exceptions_InvalidModException__ctor_System_String_System_Exception_
+  commentId: M:KS.Kernel.Exceptions.InvalidModException.#ctor(System.String,System.Exception)
+  fullName: KS.Kernel.Exceptions.InvalidModException.InvalidModException(System.String, System.Exception)
+  nameWithType: InvalidModException.InvalidModException(String, Exception)
+- uid: KS.Kernel.Exceptions.InvalidModException.#ctor(System.String,System.Exception,System.Object[])
+  name: InvalidModException(String, Exception, Object[])
+  href: api/KS.Kernel.Exceptions.InvalidModException.html#KS_Kernel_Exceptions_InvalidModException__ctor_System_String_System_Exception_System_Object___
+  commentId: M:KS.Kernel.Exceptions.InvalidModException.#ctor(System.String,System.Exception,System.Object[])
+  name.vb: InvalidModException(String, Exception, Object())
+  fullName: KS.Kernel.Exceptions.InvalidModException.InvalidModException(System.String, System.Exception, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.InvalidModException.InvalidModException(System.String, System.Exception, System.Object())
+  nameWithType: InvalidModException.InvalidModException(String, Exception, Object[])
+  nameWithType.vb: InvalidModException.InvalidModException(String, Exception, Object())
+- uid: KS.Kernel.Exceptions.InvalidModException.#ctor(System.String,System.Object[])
+  name: InvalidModException(String, Object[])
+  href: api/KS.Kernel.Exceptions.InvalidModException.html#KS_Kernel_Exceptions_InvalidModException__ctor_System_String_System_Object___
+  commentId: M:KS.Kernel.Exceptions.InvalidModException.#ctor(System.String,System.Object[])
+  name.vb: InvalidModException(String, Object())
+  fullName: KS.Kernel.Exceptions.InvalidModException.InvalidModException(System.String, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.InvalidModException.InvalidModException(System.String, System.Object())
+  nameWithType: InvalidModException.InvalidModException(String, Object[])
+  nameWithType.vb: InvalidModException.InvalidModException(String, Object())
+- uid: KS.Kernel.Exceptions.InvalidModException.#ctor*
+  name: InvalidModException
+  href: api/KS.Kernel.Exceptions.InvalidModException.html#KS_Kernel_Exceptions_InvalidModException__ctor_
+  commentId: Overload:KS.Kernel.Exceptions.InvalidModException.#ctor
+  isSpec: "True"
+  fullName: KS.Kernel.Exceptions.InvalidModException.InvalidModException
+  nameWithType: InvalidModException.InvalidModException
 - uid: KS.Kernel.Exceptions.InvalidPathException
   name: InvalidPathException
   href: api/KS.Kernel.Exceptions.InvalidPathException.html
