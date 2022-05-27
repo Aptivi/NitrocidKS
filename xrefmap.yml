@@ -10837,6 +10837,55 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Exceptions.ModUninstallException.ModUninstallException
   nameWithType: ModUninstallException.ModUninstallException
+- uid: KS.Kernel.Exceptions.MOTDException
+  name: MOTDException
+  href: api/KS.Kernel.Exceptions.MOTDException.html
+  commentId: T:KS.Kernel.Exceptions.MOTDException
+  fullName: KS.Kernel.Exceptions.MOTDException
+  nameWithType: MOTDException
+- uid: KS.Kernel.Exceptions.MOTDException.#ctor
+  name: MOTDException()
+  href: api/KS.Kernel.Exceptions.MOTDException.html#KS_Kernel_Exceptions_MOTDException__ctor
+  commentId: M:KS.Kernel.Exceptions.MOTDException.#ctor
+  fullName: KS.Kernel.Exceptions.MOTDException.MOTDException()
+  nameWithType: MOTDException.MOTDException()
+- uid: KS.Kernel.Exceptions.MOTDException.#ctor(System.String)
+  name: MOTDException(String)
+  href: api/KS.Kernel.Exceptions.MOTDException.html#KS_Kernel_Exceptions_MOTDException__ctor_System_String_
+  commentId: M:KS.Kernel.Exceptions.MOTDException.#ctor(System.String)
+  fullName: KS.Kernel.Exceptions.MOTDException.MOTDException(System.String)
+  nameWithType: MOTDException.MOTDException(String)
+- uid: KS.Kernel.Exceptions.MOTDException.#ctor(System.String,System.Exception)
+  name: MOTDException(String, Exception)
+  href: api/KS.Kernel.Exceptions.MOTDException.html#KS_Kernel_Exceptions_MOTDException__ctor_System_String_System_Exception_
+  commentId: M:KS.Kernel.Exceptions.MOTDException.#ctor(System.String,System.Exception)
+  fullName: KS.Kernel.Exceptions.MOTDException.MOTDException(System.String, System.Exception)
+  nameWithType: MOTDException.MOTDException(String, Exception)
+- uid: KS.Kernel.Exceptions.MOTDException.#ctor(System.String,System.Exception,System.Object[])
+  name: MOTDException(String, Exception, Object[])
+  href: api/KS.Kernel.Exceptions.MOTDException.html#KS_Kernel_Exceptions_MOTDException__ctor_System_String_System_Exception_System_Object___
+  commentId: M:KS.Kernel.Exceptions.MOTDException.#ctor(System.String,System.Exception,System.Object[])
+  name.vb: MOTDException(String, Exception, Object())
+  fullName: KS.Kernel.Exceptions.MOTDException.MOTDException(System.String, System.Exception, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.MOTDException.MOTDException(System.String, System.Exception, System.Object())
+  nameWithType: MOTDException.MOTDException(String, Exception, Object[])
+  nameWithType.vb: MOTDException.MOTDException(String, Exception, Object())
+- uid: KS.Kernel.Exceptions.MOTDException.#ctor(System.String,System.Object[])
+  name: MOTDException(String, Object[])
+  href: api/KS.Kernel.Exceptions.MOTDException.html#KS_Kernel_Exceptions_MOTDException__ctor_System_String_System_Object___
+  commentId: M:KS.Kernel.Exceptions.MOTDException.#ctor(System.String,System.Object[])
+  name.vb: MOTDException(String, Object())
+  fullName: KS.Kernel.Exceptions.MOTDException.MOTDException(System.String, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.MOTDException.MOTDException(System.String, System.Object())
+  nameWithType: MOTDException.MOTDException(String, Object[])
+  nameWithType.vb: MOTDException.MOTDException(String, Object())
+- uid: KS.Kernel.Exceptions.MOTDException.#ctor*
+  name: MOTDException
+  href: api/KS.Kernel.Exceptions.MOTDException.html#KS_Kernel_Exceptions_MOTDException__ctor_
+  commentId: Overload:KS.Kernel.Exceptions.MOTDException.#ctor
+  isSpec: "True"
+  fullName: KS.Kernel.Exceptions.MOTDException.MOTDException
+  nameWithType: MOTDException.MOTDException
 - uid: KS.Kernel.Exceptions.NoSuchLanguageException
   name: NoSuchLanguageException
   href: api/KS.Kernel.Exceptions.NoSuchLanguageException.html

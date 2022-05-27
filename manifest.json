@@ -818,6 +818,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Exceptions.MOTDException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Exceptions.MOTDException.html",
+          "hash": "kJBcAqPntQkdCsyduSwVRtndYlqoB41n4VrppHWVBGE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Exceptions.MailException.yml",
       "output": {
         ".html": {
@@ -1122,7 +1134,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.html",
-          "hash": "2saqdN5oFMG6dAZniSYE4aOmlB0tdJQdzTjZdFR3Zg4="
+          "hash": "2zbw01nxlyu9kygWExZwDcWPbcAZqEsXMB0mXWgVY3U="
         }
       },
       "is_incremental": false,
@@ -1974,7 +1986,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Probers.MOTDParse.MessageType.html",
-          "hash": "1Lyb0vz6vKAlSKqq+g9z/oPzPSTwdZkzHfOnXN9ksAs="
+          "hash": "XnW1hXzjzrEGUgZpUQ1ZwhtKlftZTm6fKpMRDvDKikE="
         }
       },
       "is_incremental": false,
@@ -1986,7 +1998,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Probers.MOTDParse.html",
-          "hash": "eE8rAvcL9NNwVlgjK5eXnXMtYQ8accf/x3lDpJujLbw="
+          "hash": "XXteWIkpnoDTwe0V0DKxylPHPHUtXuYOCK/uhAPwA70="
         }
       },
       "is_incremental": false,
@@ -4050,7 +4062,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "6yKgQsAcbtI02HEMnPTWkbQ6jcn22aL025YEI+wI86U="
+          "hash": "hyOR7AItidXuXqow9kKza5o8rqwRpjkDjEaHxE/mqmA="
         }
       },
       "is_incremental": false,
@@ -4101,7 +4113,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 336,
+          "total_file_count": 337,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
