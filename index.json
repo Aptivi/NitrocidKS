@@ -849,6 +849,11 @@
     "title": "Class PlaceParse | Kernel Simulator API - Eofla Internals",
     "keywords": "Class PlaceParse Inheritance PlaceParse Namespace : KS.Misc.Probers Assembly : Kernel Simulator.dll Syntax public class PlaceParse Methods | Improve this Doc View Source ProbePlaces(String, Boolean) Probes the placeholders found in string Declaration public static string ProbePlaces(string text, bool ThrowIfFailure = false) Parameters Type Name Description System.String text Specified string System.Boolean ThrowIfFailure Throw if the placeholder parsing fails Returns Type Description System.String A string that has the parsed placeholders"
   },
+  "api/KS.Misc.Reflection.AssemblyLookup.html": {
+    "href": "api/KS.Misc.Reflection.AssemblyLookup.html",
+    "title": "Class AssemblyLookup | Kernel Simulator API - Eofla Internals",
+    "keywords": "Class AssemblyLookup Inheritance AssemblyLookup Namespace : KS.Misc.Reflection Assembly : Kernel Simulator.dll Syntax public class AssemblyLookup Methods | Improve this Doc View Source AddPathToAssemblySearchPath(String) Adds the path pointing to the dependencies to the assembly search path Declaration public static void AddPathToAssemblySearchPath(string Path) Parameters Type Name Description System.String Path Path to the dependencies"
+  },
   "api/KS.Misc.Reflection.FieldManager.html": {
     "href": "api/KS.Misc.Reflection.FieldManager.html",
     "title": "Class FieldManager | Kernel Simulator API - Eofla Internals",
@@ -857,7 +862,7 @@
   "api/KS.Misc.Reflection.html": {
     "href": "api/KS.Misc.Reflection.html",
     "title": "Namespace KS.Misc.Reflection | Kernel Simulator API - Eofla Internals",
-    "keywords": "Namespace KS.Misc.Reflection Classes FieldManager MethodManager StringManipulate StringQuery"
+    "keywords": "Namespace KS.Misc.Reflection Classes AssemblyLookup FieldManager MethodManager StringManipulate StringQuery"
   },
   "api/KS.Misc.Reflection.MethodManager.html": {
     "href": "api/KS.Misc.Reflection.MethodManager.html",

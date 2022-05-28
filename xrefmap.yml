@@ -16140,6 +16140,25 @@ references:
   commentId: N:KS.Misc.Reflection
   fullName: KS.Misc.Reflection
   nameWithType: KS.Misc.Reflection
+- uid: KS.Misc.Reflection.AssemblyLookup
+  name: AssemblyLookup
+  href: api/KS.Misc.Reflection.AssemblyLookup.html
+  commentId: T:KS.Misc.Reflection.AssemblyLookup
+  fullName: KS.Misc.Reflection.AssemblyLookup
+  nameWithType: AssemblyLookup
+- uid: KS.Misc.Reflection.AssemblyLookup.AddPathToAssemblySearchPath(System.String)
+  name: AddPathToAssemblySearchPath(String)
+  href: api/KS.Misc.Reflection.AssemblyLookup.html#KS_Misc_Reflection_AssemblyLookup_AddPathToAssemblySearchPath_System_String_
+  commentId: M:KS.Misc.Reflection.AssemblyLookup.AddPathToAssemblySearchPath(System.String)
+  fullName: KS.Misc.Reflection.AssemblyLookup.AddPathToAssemblySearchPath(System.String)
+  nameWithType: AssemblyLookup.AddPathToAssemblySearchPath(String)
+- uid: KS.Misc.Reflection.AssemblyLookup.AddPathToAssemblySearchPath*
+  name: AddPathToAssemblySearchPath
+  href: api/KS.Misc.Reflection.AssemblyLookup.html#KS_Misc_Reflection_AssemblyLookup_AddPathToAssemblySearchPath_
+  commentId: Overload:KS.Misc.Reflection.AssemblyLookup.AddPathToAssemblySearchPath
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.AssemblyLookup.AddPathToAssemblySearchPath
+  nameWithType: AssemblyLookup.AddPathToAssemblySearchPath
 - uid: KS.Misc.Reflection.FieldManager
   name: FieldManager
   href: api/KS.Misc.Reflection.FieldManager.html
