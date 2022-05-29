@@ -26351,6 +26351,19 @@ references:
   isSpec: "True"
   fullName: KS.RSSBookmarkManager.GetBookmark
   nameWithType: RSSBookmarkManager.GetBookmark
+- uid: KS.RSSBookmarkManager.GetBookmarks
+  name: GetBookmarks()
+  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_GetBookmarks
+  commentId: M:KS.RSSBookmarkManager.GetBookmarks
+  fullName: KS.RSSBookmarkManager.GetBookmarks()
+  nameWithType: RSSBookmarkManager.GetBookmarks()
+- uid: KS.RSSBookmarkManager.GetBookmarks*
+  name: GetBookmarks
+  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_GetBookmarks_
+  commentId: Overload:KS.RSSBookmarkManager.GetBookmarks
+  isSpec: "True"
+  fullName: KS.RSSBookmarkManager.GetBookmarks
+  nameWithType: RSSBookmarkManager.GetBookmarks
 - uid: KS.RSSBookmarkManager.RemoveRSSFeedFromBookmark
   name: RemoveRSSFeedFromBookmark()
   href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_RemoveRSSFeedFromBookmark
