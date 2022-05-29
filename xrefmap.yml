@@ -15620,6 +15620,38 @@ references:
   isSpec: "True"
   fullName: KS.Misc.JsonShell.JsonTools.JsonShell_WasJsonEdited
   nameWithType: JsonTools.JsonShell_WasJsonEdited
+- uid: KS.Misc.NamesManager
+  name: NamesManager
+  href: api/KS.Misc.NamesManager.html
+  commentId: T:KS.Misc.NamesManager
+  fullName: KS.Misc.NamesManager
+  nameWithType: NamesManager
+- uid: KS.Misc.NamesManager.GenerateNames(System.Int32)
+  name: GenerateNames(Int32)
+  href: api/KS.Misc.NamesManager.html#KS_Misc_NamesManager_GenerateNames_System_Int32_
+  commentId: M:KS.Misc.NamesManager.GenerateNames(System.Int32)
+  fullName: KS.Misc.NamesManager.GenerateNames(System.Int32)
+  nameWithType: NamesManager.GenerateNames(Int32)
+- uid: KS.Misc.NamesManager.GenerateNames*
+  name: GenerateNames
+  href: api/KS.Misc.NamesManager.html#KS_Misc_NamesManager_GenerateNames_
+  commentId: Overload:KS.Misc.NamesManager.GenerateNames
+  isSpec: "True"
+  fullName: KS.Misc.NamesManager.GenerateNames
+  nameWithType: NamesManager.GenerateNames
+- uid: KS.Misc.NamesManager.PopulateNames
+  name: PopulateNames()
+  href: api/KS.Misc.NamesManager.html#KS_Misc_NamesManager_PopulateNames
+  commentId: M:KS.Misc.NamesManager.PopulateNames
+  fullName: KS.Misc.NamesManager.PopulateNames()
+  nameWithType: NamesManager.PopulateNames()
+- uid: KS.Misc.NamesManager.PopulateNames*
+  name: PopulateNames
+  href: api/KS.Misc.NamesManager.html#KS_Misc_NamesManager_PopulateNames_
+  commentId: Overload:KS.Misc.NamesManager.PopulateNames
+  isSpec: "True"
+  fullName: KS.Misc.NamesManager.PopulateNames
+  nameWithType: NamesManager.PopulateNames
 - uid: KS.Misc.Notifications
   name: KS.Misc.Notifications
   href: api/KS.Misc.Notifications.html

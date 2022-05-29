@@ -1934,6 +1934,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.NamesManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.NamesManager.html",
+          "hash": "/0hry2+cdLY0M87JgM6mKuR/aY4ccLqd9TT/5uU+qFw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Notifications.Notification.yml",
       "output": {
         ".html": {
@@ -2802,7 +2814,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.html",
-          "hash": "oZvtIsfey2FwMCuM6c52LxHs7TEY5E/drb1q2i5ADgQ="
+          "hash": "g9H9/wBdMFgpWsCarKG4YiEqH01HzsZp4NPTIFCwzCo="
         }
       },
       "is_incremental": false,
@@ -3702,7 +3714,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shell.html",
-          "hash": "sILrPcuYGkYDujdweDc3F2ijSygTs1PljKBOfwj66WI="
+          "hash": "qENL96Fs+CQhR/MYHju1tdwz2Wn/rAyjBa1U+W3Hn9M="
         }
       },
       "is_incremental": false,
@@ -4134,7 +4146,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "VF6e5FAwbpBnSjZHb4w8nnvuZMIONms3KuWCgAzDdVs="
+          "hash": "qsx3vdEvrcfdXDuP8C3/zGFFK5SgB88YdvxlwiHnKmY="
         }
       },
       "is_incremental": false,
@@ -4185,7 +4197,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 343,
+          "total_file_count": 344,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
