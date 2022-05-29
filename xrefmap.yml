@@ -1,6 +1,12 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: KS
+  name: KS
+  href: api/KS.html
+  commentId: N:KS
+  fullName: KS
+  nameWithType: KS
 - uid: KS.Arguments
   name: KS.Arguments
   href: api/KS.Arguments.html
@@ -10102,6 +10108,104 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Exceptions.InsaneConsoleDetectedException.InsanityReason
   nameWithType: InsaneConsoleDetectedException.InsanityReason
+- uid: KS.Kernel.Exceptions.InvalidFeedException
+  name: InvalidFeedException
+  href: api/KS.Kernel.Exceptions.InvalidFeedException.html
+  commentId: T:KS.Kernel.Exceptions.InvalidFeedException
+  fullName: KS.Kernel.Exceptions.InvalidFeedException
+  nameWithType: InvalidFeedException
+- uid: KS.Kernel.Exceptions.InvalidFeedException.#ctor
+  name: InvalidFeedException()
+  href: api/KS.Kernel.Exceptions.InvalidFeedException.html#KS_Kernel_Exceptions_InvalidFeedException__ctor
+  commentId: M:KS.Kernel.Exceptions.InvalidFeedException.#ctor
+  fullName: KS.Kernel.Exceptions.InvalidFeedException.InvalidFeedException()
+  nameWithType: InvalidFeedException.InvalidFeedException()
+- uid: KS.Kernel.Exceptions.InvalidFeedException.#ctor(System.String)
+  name: InvalidFeedException(String)
+  href: api/KS.Kernel.Exceptions.InvalidFeedException.html#KS_Kernel_Exceptions_InvalidFeedException__ctor_System_String_
+  commentId: M:KS.Kernel.Exceptions.InvalidFeedException.#ctor(System.String)
+  fullName: KS.Kernel.Exceptions.InvalidFeedException.InvalidFeedException(System.String)
+  nameWithType: InvalidFeedException.InvalidFeedException(String)
+- uid: KS.Kernel.Exceptions.InvalidFeedException.#ctor(System.String,System.Exception)
+  name: InvalidFeedException(String, Exception)
+  href: api/KS.Kernel.Exceptions.InvalidFeedException.html#KS_Kernel_Exceptions_InvalidFeedException__ctor_System_String_System_Exception_
+  commentId: M:KS.Kernel.Exceptions.InvalidFeedException.#ctor(System.String,System.Exception)
+  fullName: KS.Kernel.Exceptions.InvalidFeedException.InvalidFeedException(System.String, System.Exception)
+  nameWithType: InvalidFeedException.InvalidFeedException(String, Exception)
+- uid: KS.Kernel.Exceptions.InvalidFeedException.#ctor(System.String,System.Exception,System.Object[])
+  name: InvalidFeedException(String, Exception, Object[])
+  href: api/KS.Kernel.Exceptions.InvalidFeedException.html#KS_Kernel_Exceptions_InvalidFeedException__ctor_System_String_System_Exception_System_Object___
+  commentId: M:KS.Kernel.Exceptions.InvalidFeedException.#ctor(System.String,System.Exception,System.Object[])
+  name.vb: InvalidFeedException(String, Exception, Object())
+  fullName: KS.Kernel.Exceptions.InvalidFeedException.InvalidFeedException(System.String, System.Exception, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.InvalidFeedException.InvalidFeedException(System.String, System.Exception, System.Object())
+  nameWithType: InvalidFeedException.InvalidFeedException(String, Exception, Object[])
+  nameWithType.vb: InvalidFeedException.InvalidFeedException(String, Exception, Object())
+- uid: KS.Kernel.Exceptions.InvalidFeedException.#ctor(System.String,System.Object[])
+  name: InvalidFeedException(String, Object[])
+  href: api/KS.Kernel.Exceptions.InvalidFeedException.html#KS_Kernel_Exceptions_InvalidFeedException__ctor_System_String_System_Object___
+  commentId: M:KS.Kernel.Exceptions.InvalidFeedException.#ctor(System.String,System.Object[])
+  name.vb: InvalidFeedException(String, Object())
+  fullName: KS.Kernel.Exceptions.InvalidFeedException.InvalidFeedException(System.String, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.InvalidFeedException.InvalidFeedException(System.String, System.Object())
+  nameWithType: InvalidFeedException.InvalidFeedException(String, Object[])
+  nameWithType.vb: InvalidFeedException.InvalidFeedException(String, Object())
+- uid: KS.Kernel.Exceptions.InvalidFeedException.#ctor*
+  name: InvalidFeedException
+  href: api/KS.Kernel.Exceptions.InvalidFeedException.html#KS_Kernel_Exceptions_InvalidFeedException__ctor_
+  commentId: Overload:KS.Kernel.Exceptions.InvalidFeedException.#ctor
+  isSpec: "True"
+  fullName: KS.Kernel.Exceptions.InvalidFeedException.InvalidFeedException
+  nameWithType: InvalidFeedException.InvalidFeedException
+- uid: KS.Kernel.Exceptions.InvalidFeedLinkException
+  name: InvalidFeedLinkException
+  href: api/KS.Kernel.Exceptions.InvalidFeedLinkException.html
+  commentId: T:KS.Kernel.Exceptions.InvalidFeedLinkException
+  fullName: KS.Kernel.Exceptions.InvalidFeedLinkException
+  nameWithType: InvalidFeedLinkException
+- uid: KS.Kernel.Exceptions.InvalidFeedLinkException.#ctor
+  name: InvalidFeedLinkException()
+  href: api/KS.Kernel.Exceptions.InvalidFeedLinkException.html#KS_Kernel_Exceptions_InvalidFeedLinkException__ctor
+  commentId: M:KS.Kernel.Exceptions.InvalidFeedLinkException.#ctor
+  fullName: KS.Kernel.Exceptions.InvalidFeedLinkException.InvalidFeedLinkException()
+  nameWithType: InvalidFeedLinkException.InvalidFeedLinkException()
+- uid: KS.Kernel.Exceptions.InvalidFeedLinkException.#ctor(System.String)
+  name: InvalidFeedLinkException(String)
+  href: api/KS.Kernel.Exceptions.InvalidFeedLinkException.html#KS_Kernel_Exceptions_InvalidFeedLinkException__ctor_System_String_
+  commentId: M:KS.Kernel.Exceptions.InvalidFeedLinkException.#ctor(System.String)
+  fullName: KS.Kernel.Exceptions.InvalidFeedLinkException.InvalidFeedLinkException(System.String)
+  nameWithType: InvalidFeedLinkException.InvalidFeedLinkException(String)
+- uid: KS.Kernel.Exceptions.InvalidFeedLinkException.#ctor(System.String,System.Exception)
+  name: InvalidFeedLinkException(String, Exception)
+  href: api/KS.Kernel.Exceptions.InvalidFeedLinkException.html#KS_Kernel_Exceptions_InvalidFeedLinkException__ctor_System_String_System_Exception_
+  commentId: M:KS.Kernel.Exceptions.InvalidFeedLinkException.#ctor(System.String,System.Exception)
+  fullName: KS.Kernel.Exceptions.InvalidFeedLinkException.InvalidFeedLinkException(System.String, System.Exception)
+  nameWithType: InvalidFeedLinkException.InvalidFeedLinkException(String, Exception)
+- uid: KS.Kernel.Exceptions.InvalidFeedLinkException.#ctor(System.String,System.Exception,System.Object[])
+  name: InvalidFeedLinkException(String, Exception, Object[])
+  href: api/KS.Kernel.Exceptions.InvalidFeedLinkException.html#KS_Kernel_Exceptions_InvalidFeedLinkException__ctor_System_String_System_Exception_System_Object___
+  commentId: M:KS.Kernel.Exceptions.InvalidFeedLinkException.#ctor(System.String,System.Exception,System.Object[])
+  name.vb: InvalidFeedLinkException(String, Exception, Object())
+  fullName: KS.Kernel.Exceptions.InvalidFeedLinkException.InvalidFeedLinkException(System.String, System.Exception, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.InvalidFeedLinkException.InvalidFeedLinkException(System.String, System.Exception, System.Object())
+  nameWithType: InvalidFeedLinkException.InvalidFeedLinkException(String, Exception, Object[])
+  nameWithType.vb: InvalidFeedLinkException.InvalidFeedLinkException(String, Exception, Object())
+- uid: KS.Kernel.Exceptions.InvalidFeedLinkException.#ctor(System.String,System.Object[])
+  name: InvalidFeedLinkException(String, Object[])
+  href: api/KS.Kernel.Exceptions.InvalidFeedLinkException.html#KS_Kernel_Exceptions_InvalidFeedLinkException__ctor_System_String_System_Object___
+  commentId: M:KS.Kernel.Exceptions.InvalidFeedLinkException.#ctor(System.String,System.Object[])
+  name.vb: InvalidFeedLinkException(String, Object())
+  fullName: KS.Kernel.Exceptions.InvalidFeedLinkException.InvalidFeedLinkException(System.String, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.InvalidFeedLinkException.InvalidFeedLinkException(System.String, System.Object())
+  nameWithType: InvalidFeedLinkException.InvalidFeedLinkException(String, Object[])
+  nameWithType.vb: InvalidFeedLinkException.InvalidFeedLinkException(String, Object())
+- uid: KS.Kernel.Exceptions.InvalidFeedLinkException.#ctor*
+  name: InvalidFeedLinkException
+  href: api/KS.Kernel.Exceptions.InvalidFeedLinkException.html#KS_Kernel_Exceptions_InvalidFeedLinkException__ctor_
+  commentId: Overload:KS.Kernel.Exceptions.InvalidFeedLinkException.#ctor
+  isSpec: "True"
+  fullName: KS.Kernel.Exceptions.InvalidFeedLinkException.InvalidFeedLinkException
+  nameWithType: InvalidFeedLinkException.InvalidFeedLinkException
 - uid: KS.Kernel.Exceptions.InvalidFeedTypeException
   name: InvalidFeedTypeException
   href: api/KS.Kernel.Exceptions.InvalidFeedTypeException.html
@@ -26177,6 +26281,44 @@ references:
   commentId: F:KS.Network.SSH.SSH.SSHBanner
   fullName: KS.Network.SSH.SSH.SSHBanner
   nameWithType: SSH.SSHBanner
+- uid: KS.RSSBookmarkManager
+  name: RSSBookmarkManager
+  href: api/KS.RSSBookmarkManager.html
+  commentId: T:KS.RSSBookmarkManager
+  fullName: KS.RSSBookmarkManager
+  nameWithType: RSSBookmarkManager
+- uid: KS.RSSBookmarkManager.AddRSSFeedToBookmark
+  name: AddRSSFeedToBookmark()
+  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_AddRSSFeedToBookmark
+  commentId: M:KS.RSSBookmarkManager.AddRSSFeedToBookmark
+  fullName: KS.RSSBookmarkManager.AddRSSFeedToBookmark()
+  nameWithType: RSSBookmarkManager.AddRSSFeedToBookmark()
+- uid: KS.RSSBookmarkManager.AddRSSFeedToBookmark(System.String)
+  name: AddRSSFeedToBookmark(String)
+  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_AddRSSFeedToBookmark_System_String_
+  commentId: M:KS.RSSBookmarkManager.AddRSSFeedToBookmark(System.String)
+  fullName: KS.RSSBookmarkManager.AddRSSFeedToBookmark(System.String)
+  nameWithType: RSSBookmarkManager.AddRSSFeedToBookmark(String)
+- uid: KS.RSSBookmarkManager.AddRSSFeedToBookmark*
+  name: AddRSSFeedToBookmark
+  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_AddRSSFeedToBookmark_
+  commentId: Overload:KS.RSSBookmarkManager.AddRSSFeedToBookmark
+  isSpec: "True"
+  fullName: KS.RSSBookmarkManager.AddRSSFeedToBookmark
+  nameWithType: RSSBookmarkManager.AddRSSFeedToBookmark
+- uid: KS.RSSBookmarkManager.GetBookmark(System.Int32)
+  name: GetBookmark(Int32)
+  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_GetBookmark_System_Int32_
+  commentId: M:KS.RSSBookmarkManager.GetBookmark(System.Int32)
+  fullName: KS.RSSBookmarkManager.GetBookmark(System.Int32)
+  nameWithType: RSSBookmarkManager.GetBookmark(Int32)
+- uid: KS.RSSBookmarkManager.GetBookmark*
+  name: GetBookmark
+  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_GetBookmark_
+  commentId: Overload:KS.RSSBookmarkManager.GetBookmark
+  isSpec: "True"
+  fullName: KS.RSSBookmarkManager.GetBookmark
+  nameWithType: RSSBookmarkManager.GetBookmark
 - uid: KS.Scripting
   name: KS.Scripting
   href: api/KS.Scripting.html

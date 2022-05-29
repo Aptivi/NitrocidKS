@@ -686,6 +686,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Exceptions.InvalidFeedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Exceptions.InvalidFeedException.html",
+          "hash": "NnIM4+PSe19erOA6zoppKo3A1VC49eB71+jxZ+q6C1s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Exceptions.InvalidFeedLinkException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Exceptions.InvalidFeedLinkException.html",
+          "hash": "ligFT+NjLFrtEI3f31MMCsnGAL57pzm1UF+Bkzeei88="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Exceptions.InvalidFeedTypeException.yml",
       "output": {
         ".html": {
@@ -1146,7 +1170,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.html",
-          "hash": "OAfteU6bd9sPCRtwVBKGvqDuc0rkZHUTTUW6WR3LeyQ="
+          "hash": "2JrI42lLI6ZnHpaK4aqNdndPNJX3xJpLbPqs3IYdKGI="
         }
       },
       "is_incremental": false,
@@ -3318,7 +3342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.RSS.RSSShellCommon.html",
-          "hash": "vEVYouumAZpGIvA3bFnjFgeNLqU1gIovkauB/579c+8="
+          "hash": "P0eAkv6l+T+rvR8gUh98JL+jjkyOB1hGmkAgQasaJqg="
         }
       },
       "is_incremental": false,
@@ -3547,6 +3571,18 @@
         ".html": {
           "relative_path": "api/KS.Network.html",
           "hash": "/j85NCfWUy4neOzbJEky4jdHbh6OemsdXJ07sU3PBe0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.RSSBookmarkManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.RSSBookmarkManager.html",
+          "hash": "VY5Kf2ar2xA1Bm4xZ53oHEyMVqoi0qoz5u0ItLoPX24="
         }
       },
       "is_incremental": false,
@@ -4081,12 +4117,24 @@
       "version": ""
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.html",
+          "hash": "TXjcMTRMSlZN+UWVWMo94dyKuOkq8uX102OaxIDK3gs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "vQWYrHsjpYFgPbRNDsHXxyHglAacfhemCmbixjOcdh0="
+          "hash": "VF6e5FAwbpBnSjZHb4w8nnvuZMIONms3KuWCgAzDdVs="
         }
       },
       "is_incremental": false,
@@ -4110,7 +4158,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "Heb8acH6N6DegKxJdxxnK3iWfxe17ByXCnfSZ4ubLes="
+          "hash": "7fHmsACVLYQCjX3GhRk432RyWfdiVR+lk61XtlsZxTw="
         }
       },
       "is_incremental": false,
@@ -4137,7 +4185,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 339,
+          "total_file_count": 343,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
