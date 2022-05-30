@@ -16333,51 +16333,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.FieldManager.GetField
   nameWithType: FieldManager.GetField
-- uid: KS.Misc.Reflection.FieldManager.GetProperties(System.Type)
-  name: GetProperties(Type)
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetProperties_System_Type_
-  commentId: M:KS.Misc.Reflection.FieldManager.GetProperties(System.Type)
-  fullName: KS.Misc.Reflection.FieldManager.GetProperties(System.Type)
-  nameWithType: FieldManager.GetProperties(Type)
-- uid: KS.Misc.Reflection.FieldManager.GetProperties*
-  name: GetProperties
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetProperties_
-  commentId: Overload:KS.Misc.Reflection.FieldManager.GetProperties
-  isSpec: "True"
-  fullName: KS.Misc.Reflection.FieldManager.GetProperties
-  nameWithType: FieldManager.GetProperties
-- uid: KS.Misc.Reflection.FieldManager.GetPropertiesNoEvaluation(System.Type)
-  name: GetPropertiesNoEvaluation(Type)
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetPropertiesNoEvaluation_System_Type_
-  commentId: M:KS.Misc.Reflection.FieldManager.GetPropertiesNoEvaluation(System.Type)
-  fullName: KS.Misc.Reflection.FieldManager.GetPropertiesNoEvaluation(System.Type)
-  nameWithType: FieldManager.GetPropertiesNoEvaluation(Type)
-- uid: KS.Misc.Reflection.FieldManager.GetPropertiesNoEvaluation*
-  name: GetPropertiesNoEvaluation
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetPropertiesNoEvaluation_
-  commentId: Overload:KS.Misc.Reflection.FieldManager.GetPropertiesNoEvaluation
-  isSpec: "True"
-  fullName: KS.Misc.Reflection.FieldManager.GetPropertiesNoEvaluation
-  nameWithType: FieldManager.GetPropertiesNoEvaluation
-- uid: KS.Misc.Reflection.FieldManager.GetPropertyValueInVariable(System.String,System.String)
-  name: GetPropertyValueInVariable(String, String)
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetPropertyValueInVariable_System_String_System_String_
-  commentId: M:KS.Misc.Reflection.FieldManager.GetPropertyValueInVariable(System.String,System.String)
-  fullName: KS.Misc.Reflection.FieldManager.GetPropertyValueInVariable(System.String, System.String)
-  nameWithType: FieldManager.GetPropertyValueInVariable(String, String)
-- uid: KS.Misc.Reflection.FieldManager.GetPropertyValueInVariable(System.String,System.String,System.Type)
-  name: GetPropertyValueInVariable(String, String, Type)
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetPropertyValueInVariable_System_String_System_String_System_Type_
-  commentId: M:KS.Misc.Reflection.FieldManager.GetPropertyValueInVariable(System.String,System.String,System.Type)
-  fullName: KS.Misc.Reflection.FieldManager.GetPropertyValueInVariable(System.String, System.String, System.Type)
-  nameWithType: FieldManager.GetPropertyValueInVariable(String, String, Type)
-- uid: KS.Misc.Reflection.FieldManager.GetPropertyValueInVariable*
-  name: GetPropertyValueInVariable
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetPropertyValueInVariable_
-  commentId: Overload:KS.Misc.Reflection.FieldManager.GetPropertyValueInVariable
-  isSpec: "True"
-  fullName: KS.Misc.Reflection.FieldManager.GetPropertyValueInVariable
-  nameWithType: FieldManager.GetPropertyValueInVariable
 - uid: KS.Misc.Reflection.FieldManager.GetValue(System.String)
   name: GetValue(String)
   href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetValue_System_String_
@@ -16435,6 +16390,57 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.MethodManager.GetMethod
   nameWithType: MethodManager.GetMethod
+- uid: KS.Misc.Reflection.PropertyManager
+  name: PropertyManager
+  href: api/KS.Misc.Reflection.PropertyManager.html
+  commentId: T:KS.Misc.Reflection.PropertyManager
+  fullName: KS.Misc.Reflection.PropertyManager
+  nameWithType: PropertyManager
+- uid: KS.Misc.Reflection.PropertyManager.GetProperties(System.Type)
+  name: GetProperties(Type)
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetProperties_System_Type_
+  commentId: M:KS.Misc.Reflection.PropertyManager.GetProperties(System.Type)
+  fullName: KS.Misc.Reflection.PropertyManager.GetProperties(System.Type)
+  nameWithType: PropertyManager.GetProperties(Type)
+- uid: KS.Misc.Reflection.PropertyManager.GetProperties*
+  name: GetProperties
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetProperties_
+  commentId: Overload:KS.Misc.Reflection.PropertyManager.GetProperties
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.PropertyManager.GetProperties
+  nameWithType: PropertyManager.GetProperties
+- uid: KS.Misc.Reflection.PropertyManager.GetPropertiesNoEvaluation(System.Type)
+  name: GetPropertiesNoEvaluation(Type)
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetPropertiesNoEvaluation_System_Type_
+  commentId: M:KS.Misc.Reflection.PropertyManager.GetPropertiesNoEvaluation(System.Type)
+  fullName: KS.Misc.Reflection.PropertyManager.GetPropertiesNoEvaluation(System.Type)
+  nameWithType: PropertyManager.GetPropertiesNoEvaluation(Type)
+- uid: KS.Misc.Reflection.PropertyManager.GetPropertiesNoEvaluation*
+  name: GetPropertiesNoEvaluation
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetPropertiesNoEvaluation_
+  commentId: Overload:KS.Misc.Reflection.PropertyManager.GetPropertiesNoEvaluation
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.PropertyManager.GetPropertiesNoEvaluation
+  nameWithType: PropertyManager.GetPropertiesNoEvaluation
+- uid: KS.Misc.Reflection.PropertyManager.GetPropertyValueInVariable(System.String,System.String)
+  name: GetPropertyValueInVariable(String, String)
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetPropertyValueInVariable_System_String_System_String_
+  commentId: M:KS.Misc.Reflection.PropertyManager.GetPropertyValueInVariable(System.String,System.String)
+  fullName: KS.Misc.Reflection.PropertyManager.GetPropertyValueInVariable(System.String, System.String)
+  nameWithType: PropertyManager.GetPropertyValueInVariable(String, String)
+- uid: KS.Misc.Reflection.PropertyManager.GetPropertyValueInVariable(System.String,System.String,System.Type)
+  name: GetPropertyValueInVariable(String, String, Type)
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetPropertyValueInVariable_System_String_System_String_System_Type_
+  commentId: M:KS.Misc.Reflection.PropertyManager.GetPropertyValueInVariable(System.String,System.String,System.Type)
+  fullName: KS.Misc.Reflection.PropertyManager.GetPropertyValueInVariable(System.String, System.String, System.Type)
+  nameWithType: PropertyManager.GetPropertyValueInVariable(String, String, Type)
+- uid: KS.Misc.Reflection.PropertyManager.GetPropertyValueInVariable*
+  name: GetPropertyValueInVariable
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetPropertyValueInVariable_
+  commentId: Overload:KS.Misc.Reflection.PropertyManager.GetPropertyValueInVariable
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.PropertyManager.GetPropertyValueInVariable
+  nameWithType: PropertyManager.GetPropertyValueInVariable
 - uid: KS.Misc.Reflection.StringManipulate
   name: StringManipulate
   href: api/KS.Misc.Reflection.StringManipulate.html
