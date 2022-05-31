@@ -194,11 +194,6 @@
     "title": "Namespace KS.Hardware | Kernel Simulator API - Eofla Internals",
     "keywords": "Namespace KS.Hardware Classes HardwareList HardwareProbe"
   },
-  "api/KS.html": {
-    "href": "api/KS.html",
-    "title": "Namespace KS | Kernel Simulator API - Eofla Internals",
-    "keywords": "Namespace KS Classes RSSBookmarkManager"
-  },
   "api/KS.Kernel.Events.html": {
     "href": "api/KS.Kernel.Events.html",
     "title": "Class Events | Kernel Simulator API - Eofla Internals",
@@ -1427,7 +1422,7 @@
   "api/KS.Network.RSS.html": {
     "href": "api/KS.Network.RSS.html",
     "title": "Namespace KS.Network.RSS | Kernel Simulator API - Eofla Internals",
-    "keywords": "Namespace KS.Network.RSS Classes RSSShellCommon RSSTools"
+    "keywords": "Namespace KS.Network.RSS Classes RSSBookmarkManager RSSShellCommon RSSTools"
   },
   "api/KS.Network.RSS.Instance.html": {
     "href": "api/KS.Network.RSS.Instance.html",
@@ -1448,6 +1443,11 @@
     "href": "api/KS.Network.RSS.Instance.RSSFeedType.html",
     "title": "Enum RSSFeedType | Kernel Simulator API - Eofla Internals",
     "keywords": "Enum RSSFeedType Enumeration for RSS feed type Namespace : KS.Network.RSS.Instance Assembly : Kernel Simulator.dll Syntax public enum RSSFeedType Fields Name Description Atom The RSS format is Atom Infer Try to infer RSS type RSS1 The RSS format is RSS 1.0 RSS2 The RSS format is RSS 2.0"
+  },
+  "api/KS.Network.RSS.RSSBookmarkManager.html": {
+    "href": "api/KS.Network.RSS.RSSBookmarkManager.html",
+    "title": "Class RSSBookmarkManager | Kernel Simulator API - Eofla Internals",
+    "keywords": "Class RSSBookmarkManager Inheritance RSSBookmarkManager Namespace : KS.Network.RSS Assembly : Kernel Simulator.dll Syntax public class RSSBookmarkManager Methods | Improve this Doc View Source AddRSSFeedToBookmark() Adds the current RSS feed to the bookmarks Declaration public static void AddRSSFeedToBookmark() | Improve this Doc View Source AddRSSFeedToBookmark(String) Adds the RSS feed URL to the bookmarks Declaration public static void AddRSSFeedToBookmark(string FeedURL) Parameters Type Name Description System.String FeedURL The feed URL to parse | Improve this Doc View Source GetBookmark(Int32) Gets the bookmark URL from number Declaration public static string GetBookmark(int Num) Parameters Type Name Description System.Int32 Num Returns Type Description System.String | Improve this Doc View Source GetBookmarks() Gets all RSS bookmarks Declaration public static List<string> GetBookmarks() Returns Type Description System.Collections.Generic.List < System.String > | Improve this Doc View Source RemoveRSSFeedFromBookmark() Removes the current RSS feed from the bookmarks Declaration public static void RemoveRSSFeedFromBookmark() | Improve this Doc View Source RemoveRSSFeedFromBookmark(String) Removes the RSS feed URL from the bookmarks Declaration public static void RemoveRSSFeedFromBookmark(string FeedURL) Parameters Type Name Description System.String FeedURL The feed URL to parse"
   },
   "api/KS.Network.RSS.RSSShellCommon.html": {
     "href": "api/KS.Network.RSS.RSSShellCommon.html",
@@ -1498,11 +1498,6 @@
     "href": "api/KS.Network.SSH.SSH.html",
     "title": "Class SSH | Kernel Simulator API - Eofla Internals",
     "keywords": "Class SSH Inheritance SSH Namespace : KS.Network.SSH Assembly : Kernel Simulator.dll Syntax public class SSH Fields | Improve this Doc View Source SSHBanner Whether or not to show the SSH banner on connection Declaration public static bool SSHBanner Field Value Type Description System.Boolean Methods | Improve this Doc View Source GetConnectionInfo(String, Int32, String, List<AuthenticationMethod>) Gets connection info from the information that the user provided Declaration public static ConnectionInfo GetConnectionInfo(string Address, int Port, string Username, List<AuthenticationMethod> AuthMethods) Parameters Type Name Description System.String Address An IP address or hostname System.Int32 Port A port of the SSH/SFTP server. It's usually 22 System.String Username A username to authenticate with System.Collections.Generic.List < AuthenticationMethod > AuthMethods Authentication methods list. Returns Type Description ConnectionInfo | Improve this Doc View Source InitializeSSH(String, Int32, String, SSH.ConnectionType, String) Opens a session to specified address using the specified port and the username Declaration public static void InitializeSSH(string Address, int Port, string Username, SSH.ConnectionType Connection, string Command = \"\") Parameters Type Name Description System.String Address An IP address or hostname System.Int32 Port A port of the SSH server. It's usually 22 System.String Username A username to authenticate with SSH.ConnectionType Connection System.String Command | Improve this Doc View Source OpenCommand(SshClient, String) Opens an SSH shell for a command Declaration public static void OpenCommand(SshClient SSHClient, string Command) Parameters Type Name Description SshClient SSHClient SSH client instance System.String Command | Improve this Doc View Source OpenShell(SshClient) Opens an SSH shell Declaration public static void OpenShell(SshClient SSHClient) Parameters Type Name Description SshClient SSHClient SSH client instance | Improve this Doc View Source PromptConnectionInfo(String, Int32, String) Prompts the user for the connection info Declaration public static ConnectionInfo PromptConnectionInfo(string Address, int Port, string Username) Parameters Type Name Description System.String Address An IP address or hostname System.Int32 Port A port of the SSH/SFTP server. It's usually 22 System.String Username A username to authenticate with Returns Type Description ConnectionInfo"
-  },
-  "api/KS.RSSBookmarkManager.html": {
-    "href": "api/KS.RSSBookmarkManager.html",
-    "title": "Class RSSBookmarkManager | Kernel Simulator API - Eofla Internals",
-    "keywords": "Class RSSBookmarkManager Inheritance RSSBookmarkManager Namespace : KS Assembly : Kernel Simulator.dll Syntax public class RSSBookmarkManager Methods | Improve this Doc View Source AddRSSFeedToBookmark() Adds the current RSS feed to the bookmarks Declaration public static void AddRSSFeedToBookmark() | Improve this Doc View Source AddRSSFeedToBookmark(String) Adds the RSS feed URL to the bookmarks Declaration public static void AddRSSFeedToBookmark(string FeedURL) Parameters Type Name Description System.String FeedURL The feed URL to parse | Improve this Doc View Source GetBookmark(Int32) Gets the bookmark URL from number Declaration public static string GetBookmark(int Num) Parameters Type Name Description System.Int32 Num Returns Type Description System.String | Improve this Doc View Source GetBookmarks() Gets all RSS bookmarks Declaration public static List<string> GetBookmarks() Returns Type Description System.Collections.Generic.List < System.String > | Improve this Doc View Source RemoveRSSFeedFromBookmark() Removes the current RSS feed from the bookmarks Declaration public static void RemoveRSSFeedFromBookmark() | Improve this Doc View Source RemoveRSSFeedFromBookmark(String) Removes the RSS feed URL from the bookmarks Declaration public static void RemoveRSSFeedFromBookmark(string FeedURL) Parameters Type Name Description System.String FeedURL The feed URL to parse"
   },
   "api/KS.Scripting.html": {
     "href": "api/KS.Scripting.html",

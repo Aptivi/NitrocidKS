@@ -1,12 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: KS
-  name: KS
-  href: api/KS.html
-  commentId: N:KS
-  fullName: KS
-  nameWithType: KS
 - uid: KS.Arguments
   name: KS.Arguments
   href: api/KS.Arguments.html
@@ -26184,6 +26178,76 @@ references:
   commentId: F:KS.Network.RSS.Instance.RSSFeedType.RSS2
   fullName: KS.Network.RSS.Instance.RSSFeedType.RSS2
   nameWithType: RSSFeedType.RSS2
+- uid: KS.Network.RSS.RSSBookmarkManager
+  name: RSSBookmarkManager
+  href: api/KS.Network.RSS.RSSBookmarkManager.html
+  commentId: T:KS.Network.RSS.RSSBookmarkManager
+  fullName: KS.Network.RSS.RSSBookmarkManager
+  nameWithType: RSSBookmarkManager
+- uid: KS.Network.RSS.RSSBookmarkManager.AddRSSFeedToBookmark
+  name: AddRSSFeedToBookmark()
+  href: api/KS.Network.RSS.RSSBookmarkManager.html#KS_Network_RSS_RSSBookmarkManager_AddRSSFeedToBookmark
+  commentId: M:KS.Network.RSS.RSSBookmarkManager.AddRSSFeedToBookmark
+  fullName: KS.Network.RSS.RSSBookmarkManager.AddRSSFeedToBookmark()
+  nameWithType: RSSBookmarkManager.AddRSSFeedToBookmark()
+- uid: KS.Network.RSS.RSSBookmarkManager.AddRSSFeedToBookmark(System.String)
+  name: AddRSSFeedToBookmark(String)
+  href: api/KS.Network.RSS.RSSBookmarkManager.html#KS_Network_RSS_RSSBookmarkManager_AddRSSFeedToBookmark_System_String_
+  commentId: M:KS.Network.RSS.RSSBookmarkManager.AddRSSFeedToBookmark(System.String)
+  fullName: KS.Network.RSS.RSSBookmarkManager.AddRSSFeedToBookmark(System.String)
+  nameWithType: RSSBookmarkManager.AddRSSFeedToBookmark(String)
+- uid: KS.Network.RSS.RSSBookmarkManager.AddRSSFeedToBookmark*
+  name: AddRSSFeedToBookmark
+  href: api/KS.Network.RSS.RSSBookmarkManager.html#KS_Network_RSS_RSSBookmarkManager_AddRSSFeedToBookmark_
+  commentId: Overload:KS.Network.RSS.RSSBookmarkManager.AddRSSFeedToBookmark
+  isSpec: "True"
+  fullName: KS.Network.RSS.RSSBookmarkManager.AddRSSFeedToBookmark
+  nameWithType: RSSBookmarkManager.AddRSSFeedToBookmark
+- uid: KS.Network.RSS.RSSBookmarkManager.GetBookmark(System.Int32)
+  name: GetBookmark(Int32)
+  href: api/KS.Network.RSS.RSSBookmarkManager.html#KS_Network_RSS_RSSBookmarkManager_GetBookmark_System_Int32_
+  commentId: M:KS.Network.RSS.RSSBookmarkManager.GetBookmark(System.Int32)
+  fullName: KS.Network.RSS.RSSBookmarkManager.GetBookmark(System.Int32)
+  nameWithType: RSSBookmarkManager.GetBookmark(Int32)
+- uid: KS.Network.RSS.RSSBookmarkManager.GetBookmark*
+  name: GetBookmark
+  href: api/KS.Network.RSS.RSSBookmarkManager.html#KS_Network_RSS_RSSBookmarkManager_GetBookmark_
+  commentId: Overload:KS.Network.RSS.RSSBookmarkManager.GetBookmark
+  isSpec: "True"
+  fullName: KS.Network.RSS.RSSBookmarkManager.GetBookmark
+  nameWithType: RSSBookmarkManager.GetBookmark
+- uid: KS.Network.RSS.RSSBookmarkManager.GetBookmarks
+  name: GetBookmarks()
+  href: api/KS.Network.RSS.RSSBookmarkManager.html#KS_Network_RSS_RSSBookmarkManager_GetBookmarks
+  commentId: M:KS.Network.RSS.RSSBookmarkManager.GetBookmarks
+  fullName: KS.Network.RSS.RSSBookmarkManager.GetBookmarks()
+  nameWithType: RSSBookmarkManager.GetBookmarks()
+- uid: KS.Network.RSS.RSSBookmarkManager.GetBookmarks*
+  name: GetBookmarks
+  href: api/KS.Network.RSS.RSSBookmarkManager.html#KS_Network_RSS_RSSBookmarkManager_GetBookmarks_
+  commentId: Overload:KS.Network.RSS.RSSBookmarkManager.GetBookmarks
+  isSpec: "True"
+  fullName: KS.Network.RSS.RSSBookmarkManager.GetBookmarks
+  nameWithType: RSSBookmarkManager.GetBookmarks
+- uid: KS.Network.RSS.RSSBookmarkManager.RemoveRSSFeedFromBookmark
+  name: RemoveRSSFeedFromBookmark()
+  href: api/KS.Network.RSS.RSSBookmarkManager.html#KS_Network_RSS_RSSBookmarkManager_RemoveRSSFeedFromBookmark
+  commentId: M:KS.Network.RSS.RSSBookmarkManager.RemoveRSSFeedFromBookmark
+  fullName: KS.Network.RSS.RSSBookmarkManager.RemoveRSSFeedFromBookmark()
+  nameWithType: RSSBookmarkManager.RemoveRSSFeedFromBookmark()
+- uid: KS.Network.RSS.RSSBookmarkManager.RemoveRSSFeedFromBookmark(System.String)
+  name: RemoveRSSFeedFromBookmark(String)
+  href: api/KS.Network.RSS.RSSBookmarkManager.html#KS_Network_RSS_RSSBookmarkManager_RemoveRSSFeedFromBookmark_System_String_
+  commentId: M:KS.Network.RSS.RSSBookmarkManager.RemoveRSSFeedFromBookmark(System.String)
+  fullName: KS.Network.RSS.RSSBookmarkManager.RemoveRSSFeedFromBookmark(System.String)
+  nameWithType: RSSBookmarkManager.RemoveRSSFeedFromBookmark(String)
+- uid: KS.Network.RSS.RSSBookmarkManager.RemoveRSSFeedFromBookmark*
+  name: RemoveRSSFeedFromBookmark
+  href: api/KS.Network.RSS.RSSBookmarkManager.html#KS_Network_RSS_RSSBookmarkManager_RemoveRSSFeedFromBookmark_
+  commentId: Overload:KS.Network.RSS.RSSBookmarkManager.RemoveRSSFeedFromBookmark
+  isSpec: "True"
+  fullName: KS.Network.RSS.RSSBookmarkManager.RemoveRSSFeedFromBookmark
+  nameWithType: RSSBookmarkManager.RemoveRSSFeedFromBookmark
 - uid: KS.Network.RSS.RSSShellCommon
   name: RSSShellCommon
   href: api/KS.Network.RSS.RSSShellCommon.html
@@ -26585,76 +26649,6 @@ references:
   commentId: F:KS.Network.SSH.SSH.SSHBanner
   fullName: KS.Network.SSH.SSH.SSHBanner
   nameWithType: SSH.SSHBanner
-- uid: KS.RSSBookmarkManager
-  name: RSSBookmarkManager
-  href: api/KS.RSSBookmarkManager.html
-  commentId: T:KS.RSSBookmarkManager
-  fullName: KS.RSSBookmarkManager
-  nameWithType: RSSBookmarkManager
-- uid: KS.RSSBookmarkManager.AddRSSFeedToBookmark
-  name: AddRSSFeedToBookmark()
-  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_AddRSSFeedToBookmark
-  commentId: M:KS.RSSBookmarkManager.AddRSSFeedToBookmark
-  fullName: KS.RSSBookmarkManager.AddRSSFeedToBookmark()
-  nameWithType: RSSBookmarkManager.AddRSSFeedToBookmark()
-- uid: KS.RSSBookmarkManager.AddRSSFeedToBookmark(System.String)
-  name: AddRSSFeedToBookmark(String)
-  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_AddRSSFeedToBookmark_System_String_
-  commentId: M:KS.RSSBookmarkManager.AddRSSFeedToBookmark(System.String)
-  fullName: KS.RSSBookmarkManager.AddRSSFeedToBookmark(System.String)
-  nameWithType: RSSBookmarkManager.AddRSSFeedToBookmark(String)
-- uid: KS.RSSBookmarkManager.AddRSSFeedToBookmark*
-  name: AddRSSFeedToBookmark
-  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_AddRSSFeedToBookmark_
-  commentId: Overload:KS.RSSBookmarkManager.AddRSSFeedToBookmark
-  isSpec: "True"
-  fullName: KS.RSSBookmarkManager.AddRSSFeedToBookmark
-  nameWithType: RSSBookmarkManager.AddRSSFeedToBookmark
-- uid: KS.RSSBookmarkManager.GetBookmark(System.Int32)
-  name: GetBookmark(Int32)
-  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_GetBookmark_System_Int32_
-  commentId: M:KS.RSSBookmarkManager.GetBookmark(System.Int32)
-  fullName: KS.RSSBookmarkManager.GetBookmark(System.Int32)
-  nameWithType: RSSBookmarkManager.GetBookmark(Int32)
-- uid: KS.RSSBookmarkManager.GetBookmark*
-  name: GetBookmark
-  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_GetBookmark_
-  commentId: Overload:KS.RSSBookmarkManager.GetBookmark
-  isSpec: "True"
-  fullName: KS.RSSBookmarkManager.GetBookmark
-  nameWithType: RSSBookmarkManager.GetBookmark
-- uid: KS.RSSBookmarkManager.GetBookmarks
-  name: GetBookmarks()
-  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_GetBookmarks
-  commentId: M:KS.RSSBookmarkManager.GetBookmarks
-  fullName: KS.RSSBookmarkManager.GetBookmarks()
-  nameWithType: RSSBookmarkManager.GetBookmarks()
-- uid: KS.RSSBookmarkManager.GetBookmarks*
-  name: GetBookmarks
-  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_GetBookmarks_
-  commentId: Overload:KS.RSSBookmarkManager.GetBookmarks
-  isSpec: "True"
-  fullName: KS.RSSBookmarkManager.GetBookmarks
-  nameWithType: RSSBookmarkManager.GetBookmarks
-- uid: KS.RSSBookmarkManager.RemoveRSSFeedFromBookmark
-  name: RemoveRSSFeedFromBookmark()
-  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_RemoveRSSFeedFromBookmark
-  commentId: M:KS.RSSBookmarkManager.RemoveRSSFeedFromBookmark
-  fullName: KS.RSSBookmarkManager.RemoveRSSFeedFromBookmark()
-  nameWithType: RSSBookmarkManager.RemoveRSSFeedFromBookmark()
-- uid: KS.RSSBookmarkManager.RemoveRSSFeedFromBookmark(System.String)
-  name: RemoveRSSFeedFromBookmark(String)
-  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_RemoveRSSFeedFromBookmark_System_String_
-  commentId: M:KS.RSSBookmarkManager.RemoveRSSFeedFromBookmark(System.String)
-  fullName: KS.RSSBookmarkManager.RemoveRSSFeedFromBookmark(System.String)
-  nameWithType: RSSBookmarkManager.RemoveRSSFeedFromBookmark(String)
-- uid: KS.RSSBookmarkManager.RemoveRSSFeedFromBookmark*
-  name: RemoveRSSFeedFromBookmark
-  href: api/KS.RSSBookmarkManager.html#KS_RSSBookmarkManager_RemoveRSSFeedFromBookmark_
-  commentId: Overload:KS.RSSBookmarkManager.RemoveRSSFeedFromBookmark
-  isSpec: "True"
-  fullName: KS.RSSBookmarkManager.RemoveRSSFeedFromBookmark
-  nameWithType: RSSBookmarkManager.RemoveRSSFeedFromBookmark
 - uid: KS.Scripting
   name: KS.Scripting
   href: api/KS.Scripting.html
