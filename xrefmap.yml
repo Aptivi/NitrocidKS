@@ -13991,25 +13991,6 @@ references:
   commentId: T:KS.Misc.Calendar.Events.EventInfo
   fullName: KS.Misc.Calendar.Events.EventInfo
   nameWithType: EventInfo
-- uid: KS.Misc.Calendar.Events.EventInfo.#ctor
-  name: EventInfo()
-  href: api/KS.Misc.Calendar.Events.EventInfo.html#KS_Misc_Calendar_Events_EventInfo__ctor
-  commentId: M:KS.Misc.Calendar.Events.EventInfo.#ctor
-  fullName: KS.Misc.Calendar.Events.EventInfo.EventInfo()
-  nameWithType: EventInfo.EventInfo()
-- uid: KS.Misc.Calendar.Events.EventInfo.#ctor(System.DateTime,System.String)
-  name: EventInfo(DateTime, String)
-  href: api/KS.Misc.Calendar.Events.EventInfo.html#KS_Misc_Calendar_Events_EventInfo__ctor_System_DateTime_System_String_
-  commentId: M:KS.Misc.Calendar.Events.EventInfo.#ctor(System.DateTime,System.String)
-  fullName: KS.Misc.Calendar.Events.EventInfo.EventInfo(System.DateTime, System.String)
-  nameWithType: EventInfo.EventInfo(DateTime, String)
-- uid: KS.Misc.Calendar.Events.EventInfo.#ctor*
-  name: EventInfo
-  href: api/KS.Misc.Calendar.Events.EventInfo.html#KS_Misc_Calendar_Events_EventInfo__ctor_
-  commentId: Overload:KS.Misc.Calendar.Events.EventInfo.#ctor
-  isSpec: "True"
-  fullName: KS.Misc.Calendar.Events.EventInfo.EventInfo
-  nameWithType: EventInfo.EventInfo
 - uid: KS.Misc.Calendar.Events.EventInfo.EventDate
   name: EventDate
   href: api/KS.Misc.Calendar.Events.EventInfo.html#KS_Misc_Calendar_Events_EventInfo_EventDate
@@ -14182,25 +14163,6 @@ references:
   commentId: T:KS.Misc.Calendar.Reminders.ReminderInfo
   fullName: KS.Misc.Calendar.Reminders.ReminderInfo
   nameWithType: ReminderInfo
-- uid: KS.Misc.Calendar.Reminders.ReminderInfo.#ctor
-  name: ReminderInfo()
-  href: api/KS.Misc.Calendar.Reminders.ReminderInfo.html#KS_Misc_Calendar_Reminders_ReminderInfo__ctor
-  commentId: M:KS.Misc.Calendar.Reminders.ReminderInfo.#ctor
-  fullName: KS.Misc.Calendar.Reminders.ReminderInfo.ReminderInfo()
-  nameWithType: ReminderInfo.ReminderInfo()
-- uid: KS.Misc.Calendar.Reminders.ReminderInfo.#ctor(System.DateTime,System.String,KS.Misc.Notifications.Notifications.NotifPriority)
-  name: ReminderInfo(DateTime, String, Notifications.NotifPriority)
-  href: api/KS.Misc.Calendar.Reminders.ReminderInfo.html#KS_Misc_Calendar_Reminders_ReminderInfo__ctor_System_DateTime_System_String_KS_Misc_Notifications_Notifications_NotifPriority_
-  commentId: M:KS.Misc.Calendar.Reminders.ReminderInfo.#ctor(System.DateTime,System.String,KS.Misc.Notifications.Notifications.NotifPriority)
-  fullName: KS.Misc.Calendar.Reminders.ReminderInfo.ReminderInfo(System.DateTime, System.String, KS.Misc.Notifications.Notifications.NotifPriority)
-  nameWithType: ReminderInfo.ReminderInfo(DateTime, String, Notifications.NotifPriority)
-- uid: KS.Misc.Calendar.Reminders.ReminderInfo.#ctor*
-  name: ReminderInfo
-  href: api/KS.Misc.Calendar.Reminders.ReminderInfo.html#KS_Misc_Calendar_Reminders_ReminderInfo__ctor_
-  commentId: Overload:KS.Misc.Calendar.Reminders.ReminderInfo.#ctor
-  isSpec: "True"
-  fullName: KS.Misc.Calendar.Reminders.ReminderInfo.ReminderInfo
-  nameWithType: ReminderInfo.ReminderInfo
 - uid: KS.Misc.Calendar.Reminders.ReminderInfo.NotifyReminder
   name: NotifyReminder()
   href: api/KS.Misc.Calendar.Reminders.ReminderInfo.html#KS_Misc_Calendar_Reminders_ReminderInfo_NotifyReminder
