@@ -3226,6 +3226,12 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Input.ReadKeyTimeout
   nameWithType: Input.ReadKeyTimeout
+- uid: KS.ConsoleBase.Input.ReadLine
+  name: ReadLine()
+  href: api/KS.ConsoleBase.Input.html#KS_ConsoleBase_Input_ReadLine
+  commentId: M:KS.ConsoleBase.Input.ReadLine
+  fullName: KS.ConsoleBase.Input.ReadLine()
+  nameWithType: Input.ReadLine()
 - uid: KS.ConsoleBase.Input.ReadLine(System.String,System.String)
   name: ReadLine(String, String)
   href: api/KS.ConsoleBase.Input.html#KS_ConsoleBase_Input_ReadLine_System_String_System_String_
