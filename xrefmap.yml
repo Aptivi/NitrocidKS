@@ -3232,12 +3232,24 @@ references:
   commentId: M:KS.ConsoleBase.Input.ReadLine
   fullName: KS.ConsoleBase.Input.ReadLine()
   nameWithType: Input.ReadLine()
+- uid: KS.ConsoleBase.Input.ReadLine(System.Boolean)
+  name: ReadLine(Boolean)
+  href: api/KS.ConsoleBase.Input.html#KS_ConsoleBase_Input_ReadLine_System_Boolean_
+  commentId: M:KS.ConsoleBase.Input.ReadLine(System.Boolean)
+  fullName: KS.ConsoleBase.Input.ReadLine(System.Boolean)
+  nameWithType: Input.ReadLine(Boolean)
 - uid: KS.ConsoleBase.Input.ReadLine(System.String,System.String)
   name: ReadLine(String, String)
   href: api/KS.ConsoleBase.Input.html#KS_ConsoleBase_Input_ReadLine_System_String_System_String_
   commentId: M:KS.ConsoleBase.Input.ReadLine(System.String,System.String)
   fullName: KS.ConsoleBase.Input.ReadLine(System.String, System.String)
   nameWithType: Input.ReadLine(String, String)
+- uid: KS.ConsoleBase.Input.ReadLine(System.String,System.String,System.Boolean)
+  name: ReadLine(String, String, Boolean)
+  href: api/KS.ConsoleBase.Input.html#KS_ConsoleBase_Input_ReadLine_System_String_System_String_System_Boolean_
+  commentId: M:KS.ConsoleBase.Input.ReadLine(System.String,System.String,System.Boolean)
+  fullName: KS.ConsoleBase.Input.ReadLine(System.String, System.String, System.Boolean)
+  nameWithType: Input.ReadLine(String, String, Boolean)
 - uid: KS.ConsoleBase.Input.ReadLine*
   name: ReadLine
   href: api/KS.ConsoleBase.Input.html#KS_ConsoleBase_Input_ReadLine_
