@@ -28055,6 +28055,12 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.ShellInfo.ShellInfo
   nameWithType: ShellInfo.ShellInfo
+- uid: KS.Shell.ShellBase.ShellInfo.AltCommandThreads
+  name: AltCommandThreads
+  href: api/KS.Shell.ShellBase.ShellInfo.html#KS_Shell_ShellBase_ShellInfo_AltCommandThreads
+  commentId: F:KS.Shell.ShellBase.ShellInfo.AltCommandThreads
+  fullName: KS.Shell.ShellBase.ShellInfo.AltCommandThreads
+  nameWithType: ShellInfo.AltCommandThreads
 - uid: KS.Shell.ShellBase.ShellInfo.ShellCommandThread
   name: ShellCommandThread
   href: api/KS.Shell.ShellBase.ShellInfo.html#KS_Shell_ShellBase_ShellInfo_ShellCommandThread
