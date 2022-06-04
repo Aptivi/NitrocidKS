@@ -12237,6 +12237,45 @@ references:
   commentId: F:KS.Kernel.Flags.HiddenFiles
   fullName: KS.Kernel.Flags.HiddenFiles
   nameWithType: Flags.HiddenFiles
+- uid: KS.Kernel.Flags.InputClipboardEnabled
+  name: InputClipboardEnabled
+  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_InputClipboardEnabled
+  commentId: P:KS.Kernel.Flags.InputClipboardEnabled
+  fullName: KS.Kernel.Flags.InputClipboardEnabled
+  nameWithType: Flags.InputClipboardEnabled
+- uid: KS.Kernel.Flags.InputClipboardEnabled*
+  name: InputClipboardEnabled
+  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_InputClipboardEnabled_
+  commentId: Overload:KS.Kernel.Flags.InputClipboardEnabled
+  isSpec: "True"
+  fullName: KS.Kernel.Flags.InputClipboardEnabled
+  nameWithType: Flags.InputClipboardEnabled
+- uid: KS.Kernel.Flags.InputHistoryEnabled
+  name: InputHistoryEnabled
+  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_InputHistoryEnabled
+  commentId: P:KS.Kernel.Flags.InputHistoryEnabled
+  fullName: KS.Kernel.Flags.InputHistoryEnabled
+  nameWithType: Flags.InputHistoryEnabled
+- uid: KS.Kernel.Flags.InputHistoryEnabled*
+  name: InputHistoryEnabled
+  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_InputHistoryEnabled_
+  commentId: Overload:KS.Kernel.Flags.InputHistoryEnabled
+  isSpec: "True"
+  fullName: KS.Kernel.Flags.InputHistoryEnabled
+  nameWithType: Flags.InputHistoryEnabled
+- uid: KS.Kernel.Flags.InputUndoEnabled
+  name: InputUndoEnabled
+  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_InputUndoEnabled
+  commentId: P:KS.Kernel.Flags.InputUndoEnabled
+  fullName: KS.Kernel.Flags.InputUndoEnabled
+  nameWithType: Flags.InputUndoEnabled
+- uid: KS.Kernel.Flags.InputUndoEnabled*
+  name: InputUndoEnabled
+  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_InputUndoEnabled_
+  commentId: Overload:KS.Kernel.Flags.InputUndoEnabled
+  isSpec: "True"
+  fullName: KS.Kernel.Flags.InputUndoEnabled
+  nameWithType: Flags.InputUndoEnabled
 - uid: KS.Kernel.Flags.LangChangeCulture
   name: LangChangeCulture
   href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_LangChangeCulture
