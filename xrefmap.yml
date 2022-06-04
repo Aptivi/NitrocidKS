@@ -24016,6 +24016,32 @@ references:
   isSpec: "True"
   fullName: KS.My.Resources.Resources.ukr_T
   nameWithType: Resources.ukr_T
+- uid: KS.My.Resources.Resources.VisualStudioDark
+  name: VisualStudioDark
+  href: api/KS.My.Resources.Resources.html#KS_My_Resources_Resources_VisualStudioDark
+  commentId: P:KS.My.Resources.Resources.VisualStudioDark
+  fullName: KS.My.Resources.Resources.VisualStudioDark
+  nameWithType: Resources.VisualStudioDark
+- uid: KS.My.Resources.Resources.VisualStudioDark*
+  name: VisualStudioDark
+  href: api/KS.My.Resources.Resources.html#KS_My_Resources_Resources_VisualStudioDark_
+  commentId: Overload:KS.My.Resources.Resources.VisualStudioDark
+  isSpec: "True"
+  fullName: KS.My.Resources.Resources.VisualStudioDark
+  nameWithType: Resources.VisualStudioDark
+- uid: KS.My.Resources.Resources.VisualStudioLight
+  name: VisualStudioLight
+  href: api/KS.My.Resources.Resources.html#KS_My_Resources_Resources_VisualStudioLight
+  commentId: P:KS.My.Resources.Resources.VisualStudioLight
+  fullName: KS.My.Resources.Resources.VisualStudioLight
+  nameWithType: Resources.VisualStudioLight
+- uid: KS.My.Resources.Resources.VisualStudioLight*
+  name: VisualStudioLight
+  href: api/KS.My.Resources.Resources.html#KS_My_Resources_Resources_VisualStudioLight_
+  commentId: Overload:KS.My.Resources.Resources.VisualStudioLight
+  isSpec: "True"
+  fullName: KS.My.Resources.Resources.VisualStudioLight
+  nameWithType: Resources.VisualStudioLight
 - uid: KS.My.Resources.Resources.vtn
   name: vtn
   href: api/KS.My.Resources.Resources.html#KS_My_Resources_Resources_vtn
