@@ -18701,13 +18701,27 @@ references:
 - uid: KS.Misc.Screensaver.ScreensaverSettings.NoiseDensity
   name: NoiseDensity
   href: api/KS.Misc.Screensaver.ScreensaverSettings.html#KS_Misc_Screensaver_ScreensaverSettings_NoiseDensity
-  commentId: F:KS.Misc.Screensaver.ScreensaverSettings.NoiseDensity
+  commentId: P:KS.Misc.Screensaver.ScreensaverSettings.NoiseDensity
+  fullName: KS.Misc.Screensaver.ScreensaverSettings.NoiseDensity
+  nameWithType: ScreensaverSettings.NoiseDensity
+- uid: KS.Misc.Screensaver.ScreensaverSettings.NoiseDensity*
+  name: NoiseDensity
+  href: api/KS.Misc.Screensaver.ScreensaverSettings.html#KS_Misc_Screensaver_ScreensaverSettings_NoiseDensity_
+  commentId: Overload:KS.Misc.Screensaver.ScreensaverSettings.NoiseDensity
+  isSpec: "True"
   fullName: KS.Misc.Screensaver.ScreensaverSettings.NoiseDensity
   nameWithType: ScreensaverSettings.NoiseDensity
 - uid: KS.Misc.Screensaver.ScreensaverSettings.NoiseNewScreenDelay
   name: NoiseNewScreenDelay
   href: api/KS.Misc.Screensaver.ScreensaverSettings.html#KS_Misc_Screensaver_ScreensaverSettings_NoiseNewScreenDelay
-  commentId: F:KS.Misc.Screensaver.ScreensaverSettings.NoiseNewScreenDelay
+  commentId: P:KS.Misc.Screensaver.ScreensaverSettings.NoiseNewScreenDelay
+  fullName: KS.Misc.Screensaver.ScreensaverSettings.NoiseNewScreenDelay
+  nameWithType: ScreensaverSettings.NoiseNewScreenDelay
+- uid: KS.Misc.Screensaver.ScreensaverSettings.NoiseNewScreenDelay*
+  name: NoiseNewScreenDelay
+  href: api/KS.Misc.Screensaver.ScreensaverSettings.html#KS_Misc_Screensaver_ScreensaverSettings_NoiseNewScreenDelay_
+  commentId: Overload:KS.Misc.Screensaver.ScreensaverSettings.NoiseNewScreenDelay
+  isSpec: "True"
   fullName: KS.Misc.Screensaver.ScreensaverSettings.NoiseNewScreenDelay
   nameWithType: ScreensaverSettings.NoiseNewScreenDelay
 - uid: KS.Misc.Screensaver.ScreensaverSettings.PersonLookupDelay
