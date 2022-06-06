@@ -338,7 +338,7 @@
   </span>
   <a id="KS_Misc_Splash_ISplash_Display_" data-uid="KS.Misc.Splash.ISplash.Display*"></a>
   <h4 id="KS_Misc_Splash_ISplash_Display" data-uid="KS.Misc.Splash.ISplash.Display">Display()</h4>
-  <div class="markdown level1 summary"><p>The screen which is meant to be looped. You can set it to do nothing. Should be async.</p>
+  <div class="markdown level1 summary"><p>The screen which is meant to be looped. You can set it to do nothing. Should be async. It should also handle <span class="xref">System.Threading.ThreadInterruptedException</span> to avoid kernel exiting on startup.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
