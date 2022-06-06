@@ -1302,7 +1302,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Languages.LanguageManager.html",
-          "hash": "Fc32eEsbH5syu+imK49F9FRqXzA5UxeMGgFdxCnwUKg="
+          "hash": "Z/4Gy2nK3t4xoM9HUnwAKg3uXdF5udIalc98QJ1CS4o="
         }
       },
       "is_incremental": false,
@@ -1422,7 +1422,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Login.UserManagement.html",
-          "hash": "22WEGCFMB72Al/+64nXLJhWLWO/iyKFhjGuE8czFLEw="
+          "hash": "A7hKjTOMuwR11SkufMg77zX6V5UvrVBwUClafcLSx2c="
         }
       },
       "is_incremental": false,
@@ -1542,7 +1542,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Calendar.Events.EventInfo.html",
-          "hash": "Bludl3DLwkfclkkICFj1865DcO3z3du8XPmv6wnJ6is="
+          "hash": "Pzut4zBQ8sWgqGSlf85aj1kqGNi11/arTqpoQzt4wpk="
         }
       },
       "is_incremental": false,
@@ -1578,7 +1578,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Calendar.Reminders.ReminderInfo.html",
-          "hash": "hHt6r6NbBORgNCrEegs1fJsk5FcDlcrkAeSZx4/jF3w="
+          "hash": "XgA76A0dqovmNlFW5+m1z3YHiOOWANckjYnZ0CeJBKA="
         }
       },
       "is_incremental": false,
@@ -1794,7 +1794,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Games.LoveHateRespond.CommentType.html",
-          "hash": "FNX/a3WP6fmg7wRKHVURhVB7uYoqBccmAdAu0OJpHzw="
+          "hash": "2OXg+i3aEMz9SzGoMObwcKYZqsIYQZgDdlO12QvUF1g="
         }
       },
       "is_incremental": false,
@@ -1806,7 +1806,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Games.LoveHateRespond.html",
-          "hash": "6z1tABN5qUwBnmpA1Wj3egmv1E9mRzEglzPG4fCfSMQ="
+          "hash": "H/hiHMJEXTu3dfm4f/k+6phC5J/FTQ1PpANW+GoVnOE="
         }
       },
       "is_incremental": false,
@@ -1866,7 +1866,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.HexEdit.HexEditShellCommon.html",
-          "hash": "Gx1rKNe7ngxC/GwCU59Q87jna3d6Rs4gHRdSRDcEUGw="
+          "hash": "0HI24Yu5rSZnr/pRNzoqBF73L8kB1y9gBEzbPFC+6o0="
         }
       },
       "is_incremental": false,
@@ -1902,7 +1902,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.JsonShell.JsonShellCommon.html",
-          "hash": "si/RFiA3rxknvmLUbwPzvvQdSZ7H8HPIOYkEYTQkVNo="
+          "hash": "7RkhJwhf4Kjrvk3+6J9n+VEGSOWhJOsT2Vz0XfCMKGA="
         }
       },
       "is_incremental": false,
@@ -2210,11 +2210,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.CustomDisplay.yml",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.BarRotDisplay.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.CustomDisplay.html",
-          "hash": "GGftISCQ6Rbi089moG1oi7waY7kzv+aXC9WJdTANtLI="
+          "relative_path": "api/KS.Misc.Screensaver.Displays.BarRotDisplay.html",
+          "hash": "sSgN+0MfZBOzk8mkdNTO8tY1hfnd+TKxv7Ova2lqw7c="
         }
       },
       "is_incremental": false,
@@ -2222,11 +2222,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.LinotypoDisplay.FillType.yml",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.BeatFaderDisplay.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.LinotypoDisplay.FillType.html",
-          "hash": "GzshhxrfanB8S4ky/gt2m/d/3gfbwDlrj98ylaLgLaI="
+          "relative_path": "api/KS.Misc.Screensaver.Displays.BeatFaderDisplay.html",
+          "hash": "Z3CyIvfaBEaOcA5gJyXlEeJp5tVesb2ynwxV+r9MeNY="
         }
       },
       "is_incremental": false,
@@ -2234,11 +2234,383 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.LinotypoDisplay.yml",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.BouncingBlockDisplay.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.LinotypoDisplay.html",
-          "hash": "5Ced53kfCFt6HUDr+KLZfr7gyMGM998pdiecmzRiiMo="
+          "relative_path": "api/KS.Misc.Screensaver.Displays.BouncingBlockDisplay.html",
+          "hash": "VFwpr8VvGIHwJdjYEf9tZYc9tzU3MlMn/UEfPgrvKJU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.BouncingTextDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.BouncingTextDisplay.html",
+          "hash": "5vOtnPP5+VPkNjmCCMCkgmMzrrb1SX7FdcKcx6vkUq0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.ColorMixDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.ColorMixDisplay.html",
+          "hash": "yXvAELU8VZeuMT2P237iY3OvgJWfY09EzIfU+xPlOZ8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.DateAndTimeDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.DateAndTimeDisplay.html",
+          "hash": "8Mrk2UaoVcUZSI5EMXJY8CY8qM+Habtig8A+86lQatI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.DiscoDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.DiscoDisplay.html",
+          "hash": "Pry3MM5dk6bMZ5NGUhIKGa+BXaOhrtQo3Evhf6K9Gwg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.DissolveDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.DissolveDisplay.html",
+          "hash": "0QS0Yddrh2ETXpQ47RSEQWINccM6YHE/iRd8Vb0FKzc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.FaderBackDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.FaderBackDisplay.html",
+          "hash": "mObU0XTAB96EXFRH4VWkq40jZYPRc8cWVl7uz2fKWVU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.FaderDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.FaderDisplay.html",
+          "hash": "IX7xZzQLYdBf0WP7wTBEurkU+vQaZTXaYtjt/Jz/he8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.FigletDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.FigletDisplay.html",
+          "hash": "985sWbHpMhEug6uiYBslNpLlYndkT1AV54k+aF01vN0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.FireworksDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.FireworksDisplay.html",
+          "hash": "BS+xcLIACgPR/n4T7jcprJvB7PgDtS/bOYAujwm00fw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.FlashColorDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.FlashColorDisplay.html",
+          "hash": "NYNTI/M9IsIJ01kZFXnbvfA2wpYzLH8C/GnUtkdcSFQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.FlashTextDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.FlashTextDisplay.html",
+          "hash": "CIVMmG4ow1vrgX4SfttDHs+RhWsCZw7FRN0XPI5aaY8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.GlitterColorDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.GlitterColorDisplay.html",
+          "hash": "qc6wg/pioZ1yyGeH5HnFoL/RlFDioGti3lsHU2jAM5E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.html",
+          "hash": "q55e9qrPPrKJF5jQfe9GE+J/KwjZ7IVC8lW9EOse5sI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.LighterDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.LighterDisplay.html",
+          "hash": "yvoYDcx+abbyWGTmKNM8mh1E2kH5um3LR4Yilx3/CYg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.LinesDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.LinesDisplay.html",
+          "hash": "9CJbzIlI/2OJVA5KQGjr9asfHjZUWrMWlRbo/giHLh4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.MarqueeDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.MarqueeDisplay.html",
+          "hash": "iH9E83x9mD4SC6e9z1F1jK+6O4r+tJbp26E5lwoqzxg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.MatrixDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.MatrixDisplay.html",
+          "hash": "9t2xzmoOQDjGFAVapAmXjuliTkQUhNcv+0DR5gtpY5I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.NoiseDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.NoiseDisplay.html",
+          "hash": "+wls1TjDTxug7pL5Ma8G4Pp5twACqkeWGNycAdNw5gA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.PersonLookupDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.PersonLookupDisplay.html",
+          "hash": "2sp7mYyC1vHEO1MxwoiPWvMl9AtahM9pEFwf3e8MTE0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.PlainDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.PlainDisplay.html",
+          "hash": "PanQ/kyZWRkrrxiIATbXT+KvW032N97d5vMzdxdHQpc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.ProgressClockDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.ProgressClockDisplay.html",
+          "hash": "UxauclbyBGb1P1j45IL+JZCRm3ij/njbwENmqrENBO4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.RampDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.RampDisplay.html",
+          "hash": "FfUCLWbdJyN7lfjljx9KSbF+eug4MBsW+LUKDkX1DlM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.RandomSaverDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.RandomSaverDisplay.html",
+          "hash": "PWxekEFSOd/aB8Vg5tfcdSv4kOOebSzT7nfQpPsJc/g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.SnakerDisplay.SnakeDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.SnakerDisplay.SnakeDirection.html",
+          "hash": "U9hcAneaTDOORNDL4w91sbMyKLy+e5ynfefwCQuwSV8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.SnakerDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.SnakerDisplay.html",
+          "hash": "J1k2ess2FKLHIzRfo5sm8VEb3cdkufp0+maDvDWEPrI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.SpotWriteDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.SpotWriteDisplay.html",
+          "hash": "OUZKyKgEthN1MQdDfHZ7IqO+iOKRpZyFm7mmuRkxuRE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.StackBoxDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.StackBoxDisplay.html",
+          "hash": "v292A86Ew8Z+ZVmAlNfXejHl3T5QuAJDYAgd9bGFBds="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.TypewriterDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.TypewriterDisplay.html",
+          "hash": "W/Qo4LHyRK9MmerTYiWV+wqtgBBK+22K7Y9J1qtX0xI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.TypoDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.TypoDisplay.html",
+          "hash": "lwRH+VDmhLwCX1eFaLrHCWo9M0DAQ1foE215nF7cU00="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.WindowsLogoDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.WindowsLogoDisplay.html",
+          "hash": "X8jizHUlWIkx7iq9uu8xxcJ/fQ9aJr89UiK+94CHEXc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.WipeDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.WipeDisplay.html",
+          "hash": "saJPQa/0xJuV6csn3s0KjT+z2t797nSlNZkCbNWhBg4="
         }
       },
       "is_incremental": false,
@@ -2250,7 +2622,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.html",
-          "hash": "6/uMSaV1sKnlSZpUWmoz5msiwLAnnXfbUGj51nyxbzU="
+          "hash": "YsT5slNYyuwOFAYtH5AS2av1+XSHHD0YLGM5rJdpn2g="
         }
       },
       "is_incremental": false,
@@ -2282,23 +2654,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.ScreensaverSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.ScreensaverSettings.html",
-          "hash": "Cbv9A+PC10MChT9IfrI2emC/nYvy/CxDgXBRPMYtwp4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.html",
-          "hash": "IuXAbPdFqj/zkJFfnrD5TgZCJX7LMlv8taC7XHijZWo="
+          "hash": "LIOAVJ0FYBTg2/xD3QjHzeWfJMXSCa6Eucrj3Fv/fcA="
         }
       },
       "is_incremental": false,
@@ -2382,7 +2742,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.TextEdit.TextEditShellCommon.html",
-          "hash": "5y0/BNqrWf+iebf2+3piQg50hYntsr9YbYZP4gmK6zU="
+          "hash": "7HgPLk2CZuQ+uMPY+MTr8vCzD4cCHThDjwO3hapVaCc="
         }
       },
       "is_incremental": false,
@@ -2502,7 +2862,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.ConsoleWriters.ListWriterColor.html",
-          "hash": "GPZMI8z5lLvXdHw/CCfP65wNWSwt8O9t9mV/ix5q9ms="
+          "hash": "tZNdFSy3NUWgoaYqHXoZV/DdGh9FH6knfp27nomlLSk="
         }
       },
       "is_incremental": false,
@@ -2514,7 +2874,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.ConsoleWriters.TextWriterColor.html",
-          "hash": "HFfjW0Ye4brLFzf3iw71PaW1WqQK5A8GcudxAUC2fUY="
+          "hash": "655k2uVqD66Nubfk37dczbnwtjfvsQWDHfXZ2VpbLmg="
         }
       },
       "is_incremental": false,
@@ -2526,7 +2886,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.ConsoleWriters.TextWriterSlowColor.html",
-          "hash": "7LPP3dI7gwLH/9I56S6CyRzuK4zb/Dd7gYXvCYDkkPM="
+          "hash": "09XVX5EYFx2JWIPmhavoF5eGZjMlbG1DUkwulxOAXLo="
         }
       },
       "is_incremental": false,
@@ -2538,7 +2898,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.html",
-          "hash": "RdXZ9vWdwtDdHfGqh5IF54GHTYAl81Gd2UiXr6BLel8="
+          "hash": "96PZoRZlAjYhcB+AQR5oT3+9ILFhkv5IBFrYdKtD514="
         }
       },
       "is_incremental": false,
@@ -2550,7 +2910,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.html",
-          "hash": "PTShSvSXf5eDbijxxkfFTXOTQQVHsNEX5k6NyhaVIII="
+          "hash": "vhCoet8zlk3h9xookuy4dIZxMuYQ//sMaUIZemo6gmI="
         }
       },
       "is_incremental": false,
@@ -2562,7 +2922,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.ConsoleWriters.TextWriterWrappedColor.html",
-          "hash": "wdjczKwOWv1DQZ9qT3zyUI1wgdnjbOxCnAFz0KacY8A="
+          "hash": "lrYFBrYE0TUxjR/wUHEHAUsUNX9IPHV5AdnnT8FNvTg="
         }
       },
       "is_incremental": false,
@@ -2658,7 +3018,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.FancyWriters.ProgressColor.html",
-          "hash": "RxAxm+6zZvarPADnQEY+ZxshhOUIYOLKm7qIxXA5nec="
+          "hash": "MbDXFb4qC21qHy/MvCbzSI35/ljyWAxH/xjJEvW0uhk="
         }
       },
       "is_incremental": false,
@@ -2766,7 +3126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.MiscWriters.LineHandleWriter.html",
-          "hash": "/CZZ/TnA3kYOkKe3PkRPFEnilUWFIqlx/zQuZ23YZWw="
+          "hash": "AuLW2TJaUhoDxhLXzD4gs6kp6eC+KRaBnFvheula4xk="
         }
       },
       "is_incremental": false,
@@ -2874,7 +3234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.ModManager.html",
-          "hash": "vMR+1yo+3H5seSypjlTrbn3dv2E+oEiV6/ofcOXcaWU="
+          "hash": "90v5YXVUTutvRvA69ga3clXf2YqRf2zIBrt5OqVFmVE="
         }
       },
       "is_incremental": false,
@@ -2886,7 +3246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.ModParser.html",
-          "hash": "SMOWTFlwDVUSlOIcGBEkEqvx9rOn363fCDpWcWZuQqk="
+          "hash": "HYL+lzddL8tBmCYfZyvGKIC8RFQFbfb74Uc1M+QGwAw="
         }
       },
       "is_incremental": false,
@@ -2946,7 +3306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.FTP.FTPShellCommon.html",
-          "hash": "dy7ayANmG5vQP4JN9y/rHQpVJ9HrNYiXyw8giXt72cc="
+          "hash": "y/uPU0dpQvH4L+C61mEmyKPWfxQH202cF1P4qvWiwk4="
         }
       },
       "is_incremental": false,
@@ -2958,7 +3318,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.FTP.FTPTools.html",
-          "hash": "v/bQ57/6ZY25k0JHQOhWrTrAEVmpAmN25G2m4z1N7/o="
+          "hash": "4mEmjzrrDybDO7Cz1YU24nXsp8oKiCEe7yKmXKzq/MQ="
         }
       },
       "is_incremental": false,
@@ -3054,7 +3414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.HTTP.HTTPShellCommon.html",
-          "hash": "YnsRnY0S/Nw2hvIarhZkAHaBQPoESWzVNI9uKWCc0/k="
+          "hash": "ucT1dTMfqJaLdp43zF9dujapEdjc4HZKsFKeQxu6r3k="
         }
       },
       "is_incremental": false,
@@ -3138,7 +3498,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.Mail.MailShellCommon.html",
-          "hash": "MSJqBjM8WxNYDrTfCIgi2SHaL5DK7sIRvBwy+lBp4Pg="
+          "hash": "f3C7yhAKWhSjm7NPjcay5UNsOScOmVwgffn1d1Gr0Vc="
         }
       },
       "is_incremental": false,
@@ -3378,7 +3738,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.RSS.RSSShellCommon.html",
-          "hash": "MSuxmbRqXRv/9w03iKmzn+w0ykemgyCRHacMwILsoRQ="
+          "hash": "YInk3ZxzSzWK8LDUV1dPxGrpmli6BkropE8bfhfOCCg="
         }
       },
       "is_incremental": false,
@@ -3510,7 +3870,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.SFTP.SFTPShellCommon.html",
-          "hash": "LBp0vMQdr4ldQZr9oH53PTRl92HcDJjNPphsm2HyN0k="
+          "hash": "mQd3WHOroaQ7z0debXxZwHuTe5SQAnZqoIqMMekLrPk="
         }
       },
       "is_incremental": false,
@@ -3582,7 +3942,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.SSH.SSH.html",
-          "hash": "otj1DOAqxv36p+l2APP6Dlznr1vHcAkifU8LdPUPBKo="
+          "hash": "TT0r8Lw/dpExlbhwT4r6ca5DqfcbBhXFl6G1oN9n5+c="
         }
       },
       "is_incremental": false,
@@ -3906,7 +4266,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shell.html",
-          "hash": "rSZEw2H39PONw3xvVDir+CSX7nn6Ag/1ly9FZzWDSho="
+          "hash": "whCnkiceIYV4U+/8k5TyljuELkxm8TL+lX3AVFZy5vY="
         }
       },
       "is_incremental": false,
@@ -3978,7 +4338,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.HelpSystem.html",
-          "hash": "E7WdyB1ejY0cQIjJsIKnUHqxv3cQpQ3lVGpgsuLZsFA="
+          "hash": "E8GX+eF7LzYS7Y+60hXPOAOHgH/ctWA8u+3puNYQ8ok="
         }
       },
       "is_incremental": false,
@@ -4122,7 +4482,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.JsonShell.html",
-          "hash": "NuWyxaUyaLUkXWYncM6s2YYhnA8PsuSMYQPJ3xPFuAM="
+          "hash": "Q7+ACTFDMJFbzRIvVTSdrWcClAJFC97C6o2rrf08mpI="
         }
       },
       "is_incremental": false,
@@ -4326,7 +4686,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Jqq1eaDt6DIb09b4Bql45hhb6kLUFeF6HLV4Hfcr04E="
+          "hash": "Iu29hxXSOO1iY39XcI8gpP7fQPNfJFGXzoxjABi/NXI="
         }
       },
       "is_incremental": false,
@@ -4377,7 +4737,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 359,
+          "total_file_count": 389,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
