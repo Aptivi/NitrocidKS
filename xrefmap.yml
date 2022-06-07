@@ -2580,6 +2580,19 @@ references:
   commentId: F:KS.ConsoleBase.ColorTools.ErrorColor
   fullName: KS.ConsoleBase.ColorTools.ErrorColor
   nameWithType: ColorTools.ErrorColor
+- uid: KS.ConsoleBase.ColorTools.GetGray
+  name: GetGray()
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_GetGray
+  commentId: M:KS.ConsoleBase.ColorTools.GetGray
+  fullName: KS.ConsoleBase.ColorTools.GetGray()
+  nameWithType: ColorTools.GetGray()
+- uid: KS.ConsoleBase.ColorTools.GetGray*
+  name: GetGray
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_GetGray_
+  commentId: Overload:KS.ConsoleBase.ColorTools.GetGray
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ColorTools.GetGray
+  nameWithType: ColorTools.GetGray
 - uid: KS.ConsoleBase.ColorTools.HighPriorityBorderColor
   name: HighPriorityBorderColor
   href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_HighPriorityBorderColor
@@ -15238,12 +15251,6 @@ references:
   commentId: F:KS.Misc.HexEdit.HexEditShellCommon.HexEdit_FileStream
   fullName: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_FileStream
   nameWithType: HexEditShellCommon.HexEdit_FileStream
-- uid: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_ModCommands
-  name: HexEdit_ModCommands
-  href: api/KS.Misc.HexEdit.HexEditShellCommon.html#KS_Misc_HexEdit_HexEditShellCommon_HexEdit_ModCommands
-  commentId: F:KS.Misc.HexEdit.HexEditShellCommon.HexEdit_ModCommands
-  fullName: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_ModCommands
-  nameWithType: HexEditShellCommon.HexEdit_ModCommands
 - uid: KS.Misc.HexEdit.HexEditShellCommon.HexEdit_PromptStyle
   name: HexEdit_PromptStyle
   href: api/KS.Misc.HexEdit.HexEditShellCommon.html#KS_Misc_HexEdit_HexEditShellCommon_HexEdit_PromptStyle
@@ -15511,12 +15518,6 @@ references:
   commentId: F:KS.Misc.JsonShell.JsonShellCommon.JsonShell_Formatting
   fullName: KS.Misc.JsonShell.JsonShellCommon.JsonShell_Formatting
   nameWithType: JsonShellCommon.JsonShell_Formatting
-- uid: KS.Misc.JsonShell.JsonShellCommon.JsonShell_ModCommands
-  name: JsonShell_ModCommands
-  href: api/KS.Misc.JsonShell.JsonShellCommon.html#KS_Misc_JsonShell_JsonShellCommon_JsonShell_ModCommands
-  commentId: F:KS.Misc.JsonShell.JsonShellCommon.JsonShell_ModCommands
-  fullName: KS.Misc.JsonShell.JsonShellCommon.JsonShell_ModCommands
-  nameWithType: JsonShellCommon.JsonShell_ModCommands
 - uid: KS.Misc.JsonShell.JsonShellCommon.JsonShell_PromptStyle
   name: JsonShell_PromptStyle
   href: api/KS.Misc.JsonShell.JsonShellCommon.html#KS_Misc_JsonShell_JsonShellCommon_JsonShell_PromptStyle
@@ -23628,12 +23629,6 @@ references:
   commentId: F:KS.Misc.TextEdit.TextEditShellCommon.TextEdit_FileStream
   fullName: KS.Misc.TextEdit.TextEditShellCommon.TextEdit_FileStream
   nameWithType: TextEditShellCommon.TextEdit_FileStream
-- uid: KS.Misc.TextEdit.TextEditShellCommon.TextEdit_ModCommands
-  name: TextEdit_ModCommands
-  href: api/KS.Misc.TextEdit.TextEditShellCommon.html#KS_Misc_TextEdit_TextEditShellCommon_TextEdit_ModCommands
-  commentId: F:KS.Misc.TextEdit.TextEditShellCommon.TextEdit_ModCommands
-  fullName: KS.Misc.TextEdit.TextEditShellCommon.TextEdit_ModCommands
-  nameWithType: TextEditShellCommon.TextEdit_ModCommands
 - uid: KS.Misc.TextEdit.TextEditShellCommon.TextEdit_PromptStyle
   name: TextEdit_PromptStyle
   href: api/KS.Misc.TextEdit.TextEditShellCommon.html#KS_Misc_TextEdit_TextEditShellCommon_TextEdit_PromptStyle
@@ -27660,7 +27655,14 @@ references:
 - uid: KS.Network.FTP.FTPShellCommon.ClientFTP
   name: ClientFTP
   href: api/KS.Network.FTP.FTPShellCommon.html#KS_Network_FTP_FTPShellCommon_ClientFTP
-  commentId: F:KS.Network.FTP.FTPShellCommon.ClientFTP
+  commentId: P:KS.Network.FTP.FTPShellCommon.ClientFTP
+  fullName: KS.Network.FTP.FTPShellCommon.ClientFTP
+  nameWithType: FTPShellCommon.ClientFTP
+- uid: KS.Network.FTP.FTPShellCommon.ClientFTP*
+  name: ClientFTP
+  href: api/KS.Network.FTP.FTPShellCommon.html#KS_Network_FTP_FTPShellCommon_ClientFTP_
+  commentId: Overload:KS.Network.FTP.FTPShellCommon.ClientFTP
+  isSpec: "True"
   fullName: KS.Network.FTP.FTPShellCommon.ClientFTP
   nameWithType: FTPShellCommon.ClientFTP
 - uid: KS.Network.FTP.FTPShellCommon.FtpAlwaysAcceptInvalidCerts
@@ -27675,12 +27677,6 @@ references:
   commentId: F:KS.Network.FTP.FTPShellCommon.FTPCommands
   fullName: KS.Network.FTP.FTPShellCommon.FTPCommands
   nameWithType: FTPShellCommon.FTPCommands
-- uid: KS.Network.FTP.FTPShellCommon.FtpConnected
-  name: FtpConnected
-  href: api/KS.Network.FTP.FTPShellCommon.html#KS_Network_FTP_FTPShellCommon_FtpConnected
-  commentId: F:KS.Network.FTP.FTPShellCommon.FtpConnected
-  fullName: KS.Network.FTP.FTPShellCommon.FtpConnected
-  nameWithType: FTPShellCommon.FtpConnected
 - uid: KS.Network.FTP.FTPShellCommon.FtpConnectTimeout
   name: FtpConnectTimeout
   href: api/KS.Network.FTP.FTPShellCommon.html#KS_Network_FTP_FTPShellCommon_FtpConnectTimeout
@@ -27705,12 +27701,6 @@ references:
   commentId: F:KS.Network.FTP.FTPShellCommon.FtpDataConnectTimeout
   fullName: KS.Network.FTP.FTPShellCommon.FtpDataConnectTimeout
   nameWithType: FTPShellCommon.FtpDataConnectTimeout
-- uid: KS.Network.FTP.FTPShellCommon.FTPModCommands
-  name: FTPModCommands
-  href: api/KS.Network.FTP.FTPShellCommon.html#KS_Network_FTP_FTPShellCommon_FTPModCommands
-  commentId: F:KS.Network.FTP.FTPShellCommon.FTPModCommands
-  fullName: KS.Network.FTP.FTPShellCommon.FTPModCommands
-  nameWithType: FTPShellCommon.FTPModCommands
 - uid: KS.Network.FTP.FTPShellCommon.FtpNewConnectionsToSpeedDial
   name: FtpNewConnectionsToSpeedDial
   href: api/KS.Network.FTP.FTPShellCommon.html#KS_Network_FTP_FTPShellCommon_FtpNewConnectionsToSpeedDial
@@ -27753,12 +27743,6 @@ references:
   commentId: F:KS.Network.FTP.FTPShellCommon.FtpShowMotd
   fullName: KS.Network.FTP.FTPShellCommon.FtpShowMotd
   nameWithType: FTPShellCommon.FtpShowMotd
-- uid: KS.Network.FTP.FTPShellCommon.FtpSite
-  name: FtpSite
-  href: api/KS.Network.FTP.FTPShellCommon.html#KS_Network_FTP_FTPShellCommon_FtpSite
-  commentId: F:KS.Network.FTP.FTPShellCommon.FtpSite
-  fullName: KS.Network.FTP.FTPShellCommon.FtpSite
-  nameWithType: FTPShellCommon.FtpSite
 - uid: KS.Network.FTP.FTPShellCommon.FtpTryToValidateCertificate
   name: FtpTryToValidateCertificate
   href: api/KS.Network.FTP.FTPShellCommon.html#KS_Network_FTP_FTPShellCommon_FtpTryToValidateCertificate
@@ -27771,12 +27755,6 @@ references:
   commentId: F:KS.Network.FTP.FTPShellCommon.FtpUseFirstProfile
   fullName: KS.Network.FTP.FTPShellCommon.FtpUseFirstProfile
   nameWithType: FTPShellCommon.FtpUseFirstProfile
-- uid: KS.Network.FTP.FTPShellCommon.FtpUser
-  name: FtpUser
-  href: api/KS.Network.FTP.FTPShellCommon.html#KS_Network_FTP_FTPShellCommon_FtpUser
-  commentId: F:KS.Network.FTP.FTPShellCommon.FtpUser
-  fullName: KS.Network.FTP.FTPShellCommon.FtpUser
-  nameWithType: FTPShellCommon.FtpUser
 - uid: KS.Network.FTP.FTPShellCommon.FtpUserPromptStyle
   name: FtpUserPromptStyle
   href: api/KS.Network.FTP.FTPShellCommon.html#KS_Network_FTP_FTPShellCommon_FtpUserPromptStyle
@@ -28003,12 +27981,6 @@ references:
   isSpec: "True"
   fullName: KS.Network.HTTP.HTTPShellCommon.HTTPConnected
   nameWithType: HTTPShellCommon.HTTPConnected
-- uid: KS.Network.HTTP.HTTPShellCommon.HTTPModCommands
-  name: HTTPModCommands
-  href: api/KS.Network.HTTP.HTTPShellCommon.html#KS_Network_HTTP_HTTPShellCommon_HTTPModCommands
-  commentId: F:KS.Network.HTTP.HTTPShellCommon.HTTPModCommands
-  fullName: KS.Network.HTTP.HTTPShellCommon.HTTPModCommands
-  nameWithType: HTTPShellCommon.HTTPModCommands
 - uid: KS.Network.HTTP.HTTPShellCommon.HTTPShellPromptStyle
   name: HTTPShellPromptStyle
   href: api/KS.Network.HTTP.HTTPShellCommon.html#KS_Network_HTTP_HTTPShellCommon_HTTPShellPromptStyle
@@ -28400,12 +28372,6 @@ references:
   commentId: F:KS.Network.Mail.MailShellCommon.MailCommands
   fullName: KS.Network.Mail.MailShellCommon.MailCommands
   nameWithType: MailShellCommon.MailCommands
-- uid: KS.Network.Mail.MailShellCommon.MailModCommands
-  name: MailModCommands
-  href: api/KS.Network.Mail.MailShellCommon.html#KS_Network_Mail_MailShellCommon_MailModCommands
-  commentId: F:KS.Network.Mail.MailShellCommon.MailModCommands
-  fullName: KS.Network.Mail.MailShellCommon.MailModCommands
-  nameWithType: MailShellCommon.MailModCommands
 - uid: KS.Network.Mail.MailShellCommon.MailShellPromptStyle
   name: MailShellPromptStyle
   href: api/KS.Network.Mail.MailShellCommon.html#KS_Network_Mail_MailShellCommon_MailShellPromptStyle
@@ -29707,12 +29673,6 @@ references:
   commentId: F:KS.Network.RSS.RSSShellCommon.RSSKeepAlive
   fullName: KS.Network.RSS.RSSShellCommon.RSSKeepAlive
   nameWithType: RSSShellCommon.RSSKeepAlive
-- uid: KS.Network.RSS.RSSShellCommon.RSSModCommands
-  name: RSSModCommands
-  href: api/KS.Network.RSS.RSSShellCommon.html#KS_Network_RSS_RSSShellCommon_RSSModCommands
-  commentId: F:KS.Network.RSS.RSSShellCommon.RSSModCommands
-  fullName: KS.Network.RSS.RSSShellCommon.RSSModCommands
-  nameWithType: RSSShellCommon.RSSModCommands
 - uid: KS.Network.RSS.RSSShellCommon.RSSRefreshFeeds
   name: RSSRefreshFeeds
   href: api/KS.Network.RSS.RSSShellCommon.html#KS_Network_RSS_RSSShellCommon_RSSRefreshFeeds
@@ -29829,7 +29789,14 @@ references:
 - uid: KS.Network.SFTP.SFTPShellCommon.ClientSFTP
   name: ClientSFTP
   href: api/KS.Network.SFTP.SFTPShellCommon.html#KS_Network_SFTP_SFTPShellCommon_ClientSFTP
-  commentId: F:KS.Network.SFTP.SFTPShellCommon.ClientSFTP
+  commentId: P:KS.Network.SFTP.SFTPShellCommon.ClientSFTP
+  fullName: KS.Network.SFTP.SFTPShellCommon.ClientSFTP
+  nameWithType: SFTPShellCommon.ClientSFTP
+- uid: KS.Network.SFTP.SFTPShellCommon.ClientSFTP*
+  name: ClientSFTP
+  href: api/KS.Network.SFTP.SFTPShellCommon.html#KS_Network_SFTP_SFTPShellCommon_ClientSFTP_
+  commentId: Overload:KS.Network.SFTP.SFTPShellCommon.ClientSFTP
+  isSpec: "True"
   fullName: KS.Network.SFTP.SFTPShellCommon.ClientSFTP
   nameWithType: SFTPShellCommon.ClientSFTP
 - uid: KS.Network.SFTP.SFTPShellCommon.SFTPCommands
@@ -29838,12 +29805,6 @@ references:
   commentId: F:KS.Network.SFTP.SFTPShellCommon.SFTPCommands
   fullName: KS.Network.SFTP.SFTPShellCommon.SFTPCommands
   nameWithType: SFTPShellCommon.SFTPCommands
-- uid: KS.Network.SFTP.SFTPShellCommon.SFTPConnected
-  name: SFTPConnected
-  href: api/KS.Network.SFTP.SFTPShellCommon.html#KS_Network_SFTP_SFTPShellCommon_SFTPConnected
-  commentId: F:KS.Network.SFTP.SFTPShellCommon.SFTPConnected
-  fullName: KS.Network.SFTP.SFTPShellCommon.SFTPConnected
-  nameWithType: SFTPShellCommon.SFTPConnected
 - uid: KS.Network.SFTP.SFTPShellCommon.SFTPCurrDirect
   name: SFTPCurrDirect
   href: api/KS.Network.SFTP.SFTPShellCommon.html#KS_Network_SFTP_SFTPShellCommon_SFTPCurrDirect
@@ -29856,12 +29817,6 @@ references:
   commentId: F:KS.Network.SFTP.SFTPShellCommon.SFTPCurrentRemoteDir
   fullName: KS.Network.SFTP.SFTPShellCommon.SFTPCurrentRemoteDir
   nameWithType: SFTPShellCommon.SFTPCurrentRemoteDir
-- uid: KS.Network.SFTP.SFTPShellCommon.SFTPModCommands
-  name: SFTPModCommands
-  href: api/KS.Network.SFTP.SFTPShellCommon.html#KS_Network_SFTP_SFTPShellCommon_SFTPModCommands
-  commentId: F:KS.Network.SFTP.SFTPShellCommon.SFTPModCommands
-  fullName: KS.Network.SFTP.SFTPShellCommon.SFTPModCommands
-  nameWithType: SFTPShellCommon.SFTPModCommands
 - uid: KS.Network.SFTP.SFTPShellCommon.SFTPNewConnectionsToSpeedDial
   name: SFTPNewConnectionsToSpeedDial
   href: api/KS.Network.SFTP.SFTPShellCommon.html#KS_Network_SFTP_SFTPShellCommon_SFTPNewConnectionsToSpeedDial
@@ -29880,18 +29835,6 @@ references:
   commentId: F:KS.Network.SFTP.SFTPShellCommon.SFTPShowDetailsInList
   fullName: KS.Network.SFTP.SFTPShellCommon.SFTPShowDetailsInList
   nameWithType: SFTPShellCommon.SFTPShowDetailsInList
-- uid: KS.Network.SFTP.SFTPShellCommon.SFTPSite
-  name: SFTPSite
-  href: api/KS.Network.SFTP.SFTPShellCommon.html#KS_Network_SFTP_SFTPShellCommon_SFTPSite
-  commentId: F:KS.Network.SFTP.SFTPShellCommon.SFTPSite
-  fullName: KS.Network.SFTP.SFTPShellCommon.SFTPSite
-  nameWithType: SFTPShellCommon.SFTPSite
-- uid: KS.Network.SFTP.SFTPShellCommon.SFTPUser
-  name: SFTPUser
-  href: api/KS.Network.SFTP.SFTPShellCommon.html#KS_Network_SFTP_SFTPShellCommon_SFTPUser
-  commentId: F:KS.Network.SFTP.SFTPShellCommon.SFTPUser
-  fullName: KS.Network.SFTP.SFTPShellCommon.SFTPUser
-  nameWithType: SFTPShellCommon.SFTPUser
 - uid: KS.Network.SFTP.SFTPShellCommon.SFTPUserPromptStyle
   name: SFTPUserPromptStyle
   href: api/KS.Network.SFTP.SFTPShellCommon.html#KS_Network_SFTP_SFTPShellCommon_SFTPUserPromptStyle
@@ -31535,18 +31478,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.Shell.GetLine
   nameWithType: Shell.GetLine
-- uid: KS.Shell.Shell.InjectedCommands
-  name: InjectedCommands
-  href: api/KS.Shell.Shell.html#KS_Shell_Shell_InjectedCommands
-  commentId: F:KS.Shell.Shell.InjectedCommands
-  fullName: KS.Shell.Shell.InjectedCommands
-  nameWithType: Shell.InjectedCommands
-- uid: KS.Shell.Shell.ModCommands
-  name: ModCommands
-  href: api/KS.Shell.Shell.html#KS_Shell_Shell_ModCommands
-  commentId: F:KS.Shell.Shell.ModCommands
-  fullName: KS.Shell.Shell.ModCommands
-  nameWithType: Shell.ModCommands
 - uid: KS.Shell.Shell.PathLookupDelimiter
   name: PathLookupDelimiter
   href: api/KS.Shell.Shell.html#KS_Shell_Shell_PathLookupDelimiter
