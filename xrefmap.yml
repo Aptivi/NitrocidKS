@@ -3270,19 +3270,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Input.ReadLine
   nameWithType: Input.ReadLine
-- uid: KS.ConsoleBase.Input.ReadLineLong
-  name: ReadLineLong()
-  href: api/KS.ConsoleBase.Input.html#KS_ConsoleBase_Input_ReadLineLong
-  commentId: M:KS.ConsoleBase.Input.ReadLineLong
-  fullName: KS.ConsoleBase.Input.ReadLineLong()
-  nameWithType: Input.ReadLineLong()
-- uid: KS.ConsoleBase.Input.ReadLineLong*
-  name: ReadLineLong
-  href: api/KS.ConsoleBase.Input.html#KS_ConsoleBase_Input_ReadLineLong_
-  commentId: Overload:KS.ConsoleBase.Input.ReadLineLong
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Input.ReadLineLong
-  nameWithType: Input.ReadLineLong
 - uid: KS.ConsoleBase.Input.ReadLineNoInput
   name: ReadLineNoInput()
   href: api/KS.ConsoleBase.Input.html#KS_ConsoleBase_Input_ReadLineNoInput
