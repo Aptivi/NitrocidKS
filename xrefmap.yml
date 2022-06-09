@@ -23580,6 +23580,19 @@ references:
   commentId: T:KS.Misc.Text.CharManager
   fullName: KS.Misc.Text.CharManager
   nameWithType: CharManager
+- uid: KS.Misc.Text.CharManager.GetAllLetters
+  name: GetAllLetters()
+  href: api/KS.Misc.Text.CharManager.html#KS_Misc_Text_CharManager_GetAllLetters
+  commentId: M:KS.Misc.Text.CharManager.GetAllLetters
+  fullName: KS.Misc.Text.CharManager.GetAllLetters()
+  nameWithType: CharManager.GetAllLetters()
+- uid: KS.Misc.Text.CharManager.GetAllLetters*
+  name: GetAllLetters
+  href: api/KS.Misc.Text.CharManager.html#KS_Misc_Text_CharManager_GetAllLetters_
+  commentId: Overload:KS.Misc.Text.CharManager.GetAllLetters
+  isSpec: "True"
+  fullName: KS.Misc.Text.CharManager.GetAllLetters
+  nameWithType: CharManager.GetAllLetters
 - uid: KS.Misc.Text.CharManager.GetAllLettersAndNumbers
   name: GetAllLettersAndNumbers()
   href: api/KS.Misc.Text.CharManager.html#KS_Misc_Text_CharManager_GetAllLettersAndNumbers
@@ -23593,6 +23606,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Text.CharManager.GetAllLettersAndNumbers
   nameWithType: CharManager.GetAllLettersAndNumbers
+- uid: KS.Misc.Text.CharManager.GetAllNumbers
+  name: GetAllNumbers()
+  href: api/KS.Misc.Text.CharManager.html#KS_Misc_Text_CharManager_GetAllNumbers
+  commentId: M:KS.Misc.Text.CharManager.GetAllNumbers
+  fullName: KS.Misc.Text.CharManager.GetAllNumbers()
+  nameWithType: CharManager.GetAllNumbers()
+- uid: KS.Misc.Text.CharManager.GetAllNumbers*
+  name: GetAllNumbers
+  href: api/KS.Misc.Text.CharManager.html#KS_Misc_Text_CharManager_GetAllNumbers_
+  commentId: Overload:KS.Misc.Text.CharManager.GetAllNumbers
+  isSpec: "True"
+  fullName: KS.Misc.Text.CharManager.GetAllNumbers
+  nameWithType: CharManager.GetAllNumbers
 - uid: KS.Misc.TextEdit
   name: KS.Misc.TextEdit
   href: api/KS.Misc.TextEdit.html

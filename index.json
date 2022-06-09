@@ -1142,7 +1142,7 @@
   "api/KS.Misc.Text.CharManager.html": {
     "href": "api/KS.Misc.Text.CharManager.html",
     "title": "Class CharManager | Kernel Simulator API - Eofla Internals",
-    "keywords": "Class CharManager Inheritance CharManager Namespace : KS.Misc.Text Assembly : Kernel Simulator.dll Syntax public class CharManager Methods | Improve this Doc View Source GetAllLettersAndNumbers() Gets all the letters and the numbers. Declaration public static char[] GetAllLettersAndNumbers() Returns Type Description System.Char []"
+    "keywords": "Class CharManager Inheritance CharManager Namespace : KS.Misc.Text Assembly : Kernel Simulator.dll Syntax public class CharManager Methods | Improve this Doc View Source GetAllLetters() Gets all the letters. Declaration public static char[] GetAllLetters() Returns Type Description System.Char [] | Improve this Doc View Source GetAllLettersAndNumbers() Gets all the letters and the numbers. Declaration public static char[] GetAllLettersAndNumbers() Returns Type Description System.Char [] | Improve this Doc View Source GetAllNumbers() Gets all the numbers. Declaration public static char[] GetAllNumbers() Returns Type Description System.Char []"
   },
   "api/KS.Misc.Text.html": {
     "href": "api/KS.Misc.Text.html",
