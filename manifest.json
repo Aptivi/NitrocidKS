@@ -2738,6 +2738,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Text.CharManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Text.CharManager.html",
+          "hash": "AAVAw3GkjOzaR2Tlp52DEWSCR0IcaIN3YjI+xiasYsk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Text.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Text.html",
+          "hash": "Z6Ac0iy1s9ibdiHUj6UEemTIUdE+PXHBgssbobyzNcc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.TextEdit.TextEditShellCommon.yml",
       "output": {
         ".html": {
@@ -2874,7 +2898,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.ConsoleWriters.TextWriterColor.html",
-          "hash": "655k2uVqD66Nubfk37dczbnwtjfvsQWDHfXZ2VpbLmg="
+          "hash": "KITx5XP796yvtO11PeISvFBj8nCJprRIYm/DJ9Dg+/o="
         }
       },
       "is_incremental": false,
@@ -4686,7 +4710,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Iu29hxXSOO1iY39XcI8gpP7fQPNfJFGXzoxjABi/NXI="
+          "hash": "sVWFWjuZAJjzhFAN/2Ul9eEpvsKdERBKT0hoBfTmmHo="
         }
       },
       "is_incremental": false,
@@ -4737,7 +4761,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 389,
+          "total_file_count": 391,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

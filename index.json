@@ -1139,6 +1139,16 @@
     "title": "Class SplashSettings | Kernel Simulator API - Eofla Internals",
     "keywords": "Class SplashSettings Inheritance SplashSettings Namespace : KS.Misc.Splash Assembly : Kernel Simulator.dll Syntax public class SplashSettings Fields | Improve this Doc View Source ProgressProgressColor [Progress] The progress color Declaration public static string ProgressProgressColor Field Value Type Description System.String | Improve this Doc View Source ProgressProgressTextLocation [Progress] The progress text location Declaration public static TextLocation ProgressProgressTextLocation Field Value Type Description TextLocation | Improve this Doc View Source SimpleProgressTextLocation [Simple] The progress text location Declaration public static TextLocation SimpleProgressTextLocation Field Value Type Description TextLocation"
   },
+  "api/KS.Misc.Text.CharManager.html": {
+    "href": "api/KS.Misc.Text.CharManager.html",
+    "title": "Class CharManager | Kernel Simulator API - Eofla Internals",
+    "keywords": "Class CharManager Inheritance CharManager Namespace : KS.Misc.Text Assembly : Kernel Simulator.dll Syntax public class CharManager Methods | Improve this Doc View Source GetAllLettersAndNumbers() Gets all the letters and the numbers. Declaration public static char[] GetAllLettersAndNumbers() Returns Type Description System.Char []"
+  },
+  "api/KS.Misc.Text.html": {
+    "href": "api/KS.Misc.Text.html",
+    "title": "Namespace KS.Misc.Text | Kernel Simulator API - Eofla Internals",
+    "keywords": "Namespace KS.Misc.Text Classes CharManager"
+  },
   "api/KS.Misc.TextEdit.html": {
     "href": "api/KS.Misc.TextEdit.html",
     "title": "Namespace KS.Misc.TextEdit | Kernel Simulator API - Eofla Internals",

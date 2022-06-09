@@ -23568,6 +23568,31 @@ references:
   commentId: F:KS.Misc.Splash.SplashSettings.SimpleProgressTextLocation
   fullName: KS.Misc.Splash.SplashSettings.SimpleProgressTextLocation
   nameWithType: SplashSettings.SimpleProgressTextLocation
+- uid: KS.Misc.Text
+  name: KS.Misc.Text
+  href: api/KS.Misc.Text.html
+  commentId: N:KS.Misc.Text
+  fullName: KS.Misc.Text
+  nameWithType: KS.Misc.Text
+- uid: KS.Misc.Text.CharManager
+  name: CharManager
+  href: api/KS.Misc.Text.CharManager.html
+  commentId: T:KS.Misc.Text.CharManager
+  fullName: KS.Misc.Text.CharManager
+  nameWithType: CharManager
+- uid: KS.Misc.Text.CharManager.GetAllLettersAndNumbers
+  name: GetAllLettersAndNumbers()
+  href: api/KS.Misc.Text.CharManager.html#KS_Misc_Text_CharManager_GetAllLettersAndNumbers
+  commentId: M:KS.Misc.Text.CharManager.GetAllLettersAndNumbers
+  fullName: KS.Misc.Text.CharManager.GetAllLettersAndNumbers()
+  nameWithType: CharManager.GetAllLettersAndNumbers()
+- uid: KS.Misc.Text.CharManager.GetAllLettersAndNumbers*
+  name: GetAllLettersAndNumbers
+  href: api/KS.Misc.Text.CharManager.html#KS_Misc_Text_CharManager_GetAllLettersAndNumbers_
+  commentId: Overload:KS.Misc.Text.CharManager.GetAllLettersAndNumbers
+  isSpec: "True"
+  fullName: KS.Misc.Text.CharManager.GetAllLettersAndNumbers
+  nameWithType: CharManager.GetAllLettersAndNumbers
 - uid: KS.Misc.TextEdit
   name: KS.Misc.TextEdit
   href: api/KS.Misc.TextEdit.html
