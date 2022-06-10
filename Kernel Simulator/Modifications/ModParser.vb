@@ -34,7 +34,6 @@ Public Module ModParser
         Sub InitEvents(ByVal ev As String)
     End Interface
     Public scripts As New Dictionary(Of String, IScript)
-    Private ReadOnly modPath As String = paths("Mods")
 
     '------------------------------------------- Generators -------------------------------------------
     Private Function GenMod(ByVal PLang As String, ByVal code As String) As IScript
@@ -101,6 +100,7 @@ Public Module ModParser
     '------------------------------------------- Parsers -------------------------------------------
     Sub ParseMods(ByVal StartStop As Boolean)
         'StartStop: If true, the mods start, otherwise, the mod stops.
+        Dim modPath As String = paths("Mods")
         Wdbg("I", "Safe mode: {0}", SafeMode)
         If Not SafeMode Then
             If Not FileIO.FileSystem.DirectoryExists(modPath) Then FileIO.FileSystem.CreateDirectory(modPath)
@@ -128,6 +128,7 @@ Public Module ModParser
         End If
     End Sub
     Sub StartParse(ByVal modFile As String, Optional ByVal StartStop As Boolean = True)
+        Dim modPath As String = paths("Mods")
         modFile = modFile.Replace(modPath, "")
         If Not modFile.EndsWith(".m") Then
             'Ignore all mods who doesn't end with .m
