@@ -197,8 +197,9 @@ Public Module Kernel
     ''' </summary>
     Public Function IsOnMacOS() As Boolean
         If IsOnUnix() Then
+            Dim UnameExecutable As String = If(File.Exists("/usr/bin/uname"), "/usr/bin/uname", "/bin/uname")
             Dim UnameS As New Process
-            Dim UnameSInfo As New ProcessStartInfo With {.FileName = "/usr/bin/uname", .Arguments = "-s",
+            Dim UnameSInfo As New ProcessStartInfo With {.FileName = UnameExecutable, .Arguments = "-s",
                                                          .CreateNoWindow = True,
                                                          .UseShellExecute = False,
                                                          .WindowStyle = ProcessWindowStyle.Hidden,
