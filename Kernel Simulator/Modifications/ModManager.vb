@@ -20,21 +20,20 @@ Imports System.IO
 
 Public Module ModManager
 
-    Friend ReadOnly modPath As String = paths("Mods")
-
     ''' <summary>
     ''' Loads all mods in KSMods
     ''' </summary>
     Sub StartMods()
+        Dim ModPath As String = paths("Mods")
         Wdbg("I", "Safe mode: {0}", SafeMode)
         If Not SafeMode Then
-            If Not Directory.Exists(modPath) Then Directory.CreateDirectory(modPath)
-            Dim count As Integer = Directory.EnumerateFiles(modPath).Count
+            If Not Directory.Exists(ModPath) Then Directory.CreateDirectory(ModPath)
+            Dim count As Integer = Directory.EnumerateFiles(ModPath).Count
             Wdbg("I", "Files count: {0}", count)
             If count <> 0 Then
                 W(DoTranslation("mod: Loading mods..."), True, ColTypes.Neutral)
                 Wdbg("I", "Mods are being loaded. Total mods with screensavers = {0}", count)
-                For Each modFile As String In Directory.EnumerateFiles(modPath)
+                For Each modFile As String In Directory.EnumerateFiles(ModPath)
                     W(DoTranslation("Starting mod") + " {0}...", True, ColTypes.Neutral, Path.GetFileName(modFile))
                     ParseMod(modFile.Replace("\", "/"))
                 Next
@@ -58,6 +57,7 @@ Public Module ModManager
     ''' Stops all mods in KSMods
     ''' </summary>
     Sub StopMods()
+        Dim ModPath As String = paths("Mods")
         Wdbg("I", "Safe mode: {0}", SafeMode)
         If Not SafeMode Then
             If Not Directory.Exists(modPath) Then Directory.CreateDirectory(modPath)

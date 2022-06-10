@@ -187,7 +187,8 @@ NextEntry:
     ''' </summary>
     ''' <param name="modFile">Mod file name with extension. It should end with .vb or .cs</param>
     Sub ParseMod(ByVal modFile As String)
-        modFile = modFile.Replace(modPath, "")
+        Dim ModPath As String = paths("Mods")
+        modFile = modFile.Replace(ModPath, "")
         If modFile.EndsWith(".ss.vb") Then
             'Mod is a screensaver that has a language of VB.NET
             Wdbg("W", "Mod file {0} is a screensaver. Language: VB.NET", modFile)
@@ -199,18 +200,18 @@ NextEntry:
         ElseIf modFile.EndsWith(".cs") Then
             'Mod has a language of C#
             Wdbg("I", "Mod language is C# from extension "".cs""")
-            Dim script As IScript = GenMod("C#", File.ReadAllText(modPath + modFile))
+            Dim script As IScript = GenMod("C#", File.ReadAllText(ModPath + modFile))
             FinalizeMods(script, modFile)
         ElseIf modFile.EndsWith(".vb") Then
             'Mod has a language of VB.NET
             Wdbg("I", "Mod language is VB.NET from extension "".vb""")
-            Dim script As IScript = GenMod("VB.NET", File.ReadAllText(modPath + modFile))
+            Dim script As IScript = GenMod("VB.NET", File.ReadAllText(ModPath + modFile))
             FinalizeMods(script, modFile)
         ElseIf modFile.EndsWith(".dll") Then
             'Mod is a dynamic DLL
             Try
-                Dim script As IScript = GetModInstance(Assembly.LoadFrom(modPath + modFile))
-                If script Is Nothing Then CompileCustom(modPath + modFile)
+                Dim script As IScript = GetModInstance(Assembly.LoadFrom(ModPath + modFile))
+                If script Is Nothing Then CompileCustom(ModPath + modFile)
                 FinalizeMods(script, modFile)
             Catch ex As ReflectionTypeLoadException
                 Wdbg("E", "Error trying to load dynamic mod {0}: {1}", modFile, ex.Message)
@@ -234,6 +235,7 @@ NextEntry:
     ''' <param name="script">Instance of script</param>
     ''' <param name="modFile">Mod file name with extension. It should end with .vb, .ss.vb, .ss.cs, or .cs</param>
     Sub FinalizeMods(ByVal script As IScript, ByVal modFile As String)
+        Dim ModPath As String = paths("Mods")
         Dim ModParts As New Dictionary(Of String, IScript)
         Dim ModInstance As ModInfo
 
