@@ -78,7 +78,6 @@ Public Module ModParser
 
     'Variables
     Public scripts As New Dictionary(Of String, Dictionary(Of String, IScript))
-    Private ReadOnly modPath As String = paths("Mods")
 
     '------------------------------------------- Generators -------------------------------------------
     ''' <summary>
@@ -154,6 +153,7 @@ Public Module ModParser
     ''' </summary>
     ''' <param name="StartStop">If true, the mods start, otherwise, the mod stops.</param>
     Sub ParseMods(ByVal StartStop As Boolean)
+        Dim modPath As String = paths("Mods")
         Wdbg("I", "Safe mode: {0}", SafeMode)
         If Not SafeMode Then
             If Not FileIO.FileSystem.DirectoryExists(modPath) Then FileIO.FileSystem.CreateDirectory(modPath)
@@ -193,6 +193,7 @@ Public Module ModParser
     ''' <param name="modFile">Mod file name with extension. It should end with .m or CS.m</param>
     ''' <param name="StartStop">Whether to start or stop mods</param>
     Sub StartParse(ByVal modFile As String, Optional ByVal StartStop As Boolean = True)
+        Dim modPath As String = paths("Mods")
         modFile = modFile.Replace(modPath, "")
         If Not modFile.EndsWith(".m") Then
             'Ignore all mods that its file name doesn't end with .m
