@@ -74,7 +74,6 @@ Public Module ModParser
     ''' Mods with their parts and scripts.
     ''' </summary>
     Public scripts As New Dictionary(Of String, ModInfo)
-    Private ReadOnly modPath As String = paths("Mods")
 
     ''' <summary>
     ''' Compiles the script and returns the instance of script interface
@@ -186,6 +185,7 @@ NextEntry:
     ''' Loads all mods in KSMods
     ''' </summary>
     Sub StartMods()
+        Dim modPath As String = paths("Mods")
         Wdbg("I", "Safe mode: {0}", SafeMode)
         If Not SafeMode Then
             If Not Directory.Exists(modPath) Then Directory.CreateDirectory(modPath)
@@ -210,6 +210,7 @@ NextEntry:
     ''' Stops all mods in KSMods
     ''' </summary>
     Sub StopMods()
+        Dim modPath As String = paths("Mods")
         Wdbg("I", "Safe mode: {0}", SafeMode)
         If Not SafeMode Then
             If Not Directory.Exists(modPath) Then Directory.CreateDirectory(modPath)
@@ -244,6 +245,7 @@ NextEntry:
     ''' </summary>
     ''' <param name="modFile">Mod file name with extension. It should end with .vb or .cs</param>
     Sub ParseMod(ByVal modFile As String)
+        Dim modPath As String = paths("Mods")
         modFile = modFile.Replace(modPath, "")
         If modFile.EndsWith(".ss.vb") Then
             'Mod is a screensaver that has a language of VB.NET
@@ -291,6 +293,7 @@ NextEntry:
     ''' <param name="script">Instance of script</param>
     ''' <param name="modFile">Mod file name with extension. It should end with .vb, .ss.vb, .ss.cs, or .cs</param>
     Sub FinalizeMods(ByVal script As IScript, ByVal modFile As String)
+        Dim modPath As String = paths("Mods")
         Dim ModParts As New Dictionary(Of String, IScript)
         Dim ModInstance As ModInfo
 
