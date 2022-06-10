@@ -38,13 +38,13 @@ Namespace Modifications
     Public Module ModManager
 
         Public BlacklistedModsString As String = ""
-        Friend ReadOnly ModPath As String = GetKernelPath(KernelPathType.Mods)
         Friend Mods As New Dictionary(Of String, ModInfo)
 
         ''' <summary>
         ''' Loads all mods in KSMods
         ''' </summary>
         Public Sub StartMods()
+            Dim ModPath As String = GetKernelPath(KernelPathType.Mods)
             Wdbg(DebugLevel.I, "Safe mode: {0}", SafeMode)
             If Not SafeMode Then
                 'We're not in safe mode. We're good now.
@@ -81,6 +81,7 @@ Namespace Modifications
         ''' </summary>
         ''' <param name="ModFilename">Mod filename found in KSMods</param>
         Public Sub StartMod(ModFilename As String)
+            Dim ModPath As String = GetKernelPath(KernelPathType.Mods)
             Wdbg(DebugLevel.I, "Safe mode: {0}", SafeMode)
             ModFilename = Path.Combine(ModPath, ModFilename)
             Wdbg(DebugLevel.I, "Mod file path: {0}", ModFilename)
@@ -112,6 +113,7 @@ Namespace Modifications
         ''' Stops all mods in KSMods
         ''' </summary>
         Public Sub StopMods()
+            Dim ModPath As String = GetKernelPath(KernelPathType.Mods)
             Wdbg(DebugLevel.I, "Safe mode: {0}", SafeMode)
             If Not SafeMode Then
                 'We're not in safe mode. We're good now.
@@ -200,6 +202,7 @@ Namespace Modifications
         ''' </summary>
         ''' <param name="ModFilename">Mod filename found in KSMods</param>
         Public Sub StopMod(ModFilename As String)
+            Dim ModPath As String = GetKernelPath(KernelPathType.Mods)
             Wdbg(DebugLevel.I, "Safe mode: {0}", SafeMode)
             ModFilename = Path.Combine(ModPath, ModFilename)
             Wdbg(DebugLevel.I, "Mod file path: {0}", ModFilename)

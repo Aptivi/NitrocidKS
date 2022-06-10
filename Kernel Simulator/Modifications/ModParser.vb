@@ -50,6 +50,7 @@ Namespace Modifications
         ''' </summary>
         ''' <param name="modFile">Mod file name with extension. It should end with .dll</param>
         Sub ParseMod(modFile As String)
+            Dim ModPath As String = GetKernelPath(KernelPathType.Mods)
             modFile = Path.GetFileName(modFile)
             If modFile.EndsWith(".dll") Then
                 'Mod is a dynamic DLL
@@ -80,6 +81,7 @@ Namespace Modifications
         ''' <param name="script">Instance of script</param>
         ''' <param name="modFile">Mod file name with extension. It should end with .dll</param>
         Sub FinalizeMods(script As IScript, modFile As String)
+            Dim ModPath As String = GetKernelPath(KernelPathType.Mods)
             Dim ModParts As New Dictionary(Of String, PartInfo)
             Dim ModInstance As ModInfo
             Dim PartInstance As PartInfo
