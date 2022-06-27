@@ -12469,6 +12469,12 @@ references:
   commentId: F:KS.Kernel.Flags.SimHelp
   fullName: KS.Kernel.Flags.SimHelp
   nameWithType: Flags.SimHelp
+- uid: KS.Kernel.Flags.SimulateNoAPM
+  name: SimulateNoAPM
+  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_SimulateNoAPM
+  commentId: F:KS.Kernel.Flags.SimulateNoAPM
+  fullName: KS.Kernel.Flags.SimulateNoAPM
+  nameWithType: Flags.SimulateNoAPM
 - uid: KS.Kernel.Flags.SlotProbe
   name: SlotProbe
   href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_SlotProbe
