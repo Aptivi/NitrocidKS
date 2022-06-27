@@ -4115,6 +4115,19 @@ references:
   isSpec: "True"
   fullName: KS.Files.Filesystem.GetFilesystemEntries
   nameWithType: Filesystem.GetFilesystemEntries
+- uid: KS.Files.Filesystem.GetInvalidPathChars
+  name: GetInvalidPathChars()
+  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetInvalidPathChars
+  commentId: M:KS.Files.Filesystem.GetInvalidPathChars
+  fullName: KS.Files.Filesystem.GetInvalidPathChars()
+  nameWithType: Filesystem.GetInvalidPathChars()
+- uid: KS.Files.Filesystem.GetInvalidPathChars*
+  name: GetInvalidPathChars
+  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetInvalidPathChars_
+  commentId: Overload:KS.Files.Filesystem.GetInvalidPathChars
+  isSpec: "True"
+  fullName: KS.Files.Filesystem.GetInvalidPathChars
+  nameWithType: Filesystem.GetInvalidPathChars
 - uid: KS.Files.Filesystem.GetLineEndingFromFile(System.String)
   name: GetLineEndingFromFile(String)
   href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetLineEndingFromFile_System_String_
@@ -17995,6 +18008,31 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.Displays.ColorMixDisplay.ColorMixTrueColor
   nameWithType: ColorMixDisplay.ColorMixTrueColor
+- uid: KS.Misc.Screensaver.Displays.CustomDisplay
+  name: CustomDisplay
+  href: api/KS.Misc.Screensaver.Displays.CustomDisplay.html
+  commentId: T:KS.Misc.Screensaver.Displays.CustomDisplay
+  fullName: KS.Misc.Screensaver.Displays.CustomDisplay
+  nameWithType: CustomDisplay
+- uid: KS.Misc.Screensaver.Displays.CustomDisplay.Custom
+  name: Custom
+  href: api/KS.Misc.Screensaver.Displays.CustomDisplay.html#KS_Misc_Screensaver_Displays_CustomDisplay_Custom
+  commentId: F:KS.Misc.Screensaver.Displays.CustomDisplay.Custom
+  fullName: KS.Misc.Screensaver.Displays.CustomDisplay.Custom
+  nameWithType: CustomDisplay.Custom
+- uid: KS.Misc.Screensaver.Displays.CustomDisplay.Custom_DoWork
+  name: Custom_DoWork()
+  href: api/KS.Misc.Screensaver.Displays.CustomDisplay.html#KS_Misc_Screensaver_Displays_CustomDisplay_Custom_DoWork
+  commentId: M:KS.Misc.Screensaver.Displays.CustomDisplay.Custom_DoWork
+  fullName: KS.Misc.Screensaver.Displays.CustomDisplay.Custom_DoWork()
+  nameWithType: CustomDisplay.Custom_DoWork()
+- uid: KS.Misc.Screensaver.Displays.CustomDisplay.Custom_DoWork*
+  name: Custom_DoWork
+  href: api/KS.Misc.Screensaver.Displays.CustomDisplay.html#KS_Misc_Screensaver_Displays_CustomDisplay_Custom_DoWork_
+  commentId: Overload:KS.Misc.Screensaver.Displays.CustomDisplay.Custom_DoWork
+  isSpec: "True"
+  fullName: KS.Misc.Screensaver.Displays.CustomDisplay.Custom_DoWork
+  nameWithType: CustomDisplay.Custom_DoWork
 - uid: KS.Misc.Screensaver.Displays.DateAndTimeDisplay
   name: DateAndTimeDisplay
   href: api/KS.Misc.Screensaver.Displays.DateAndTimeDisplay.html
