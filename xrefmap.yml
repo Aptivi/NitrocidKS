@@ -3226,6 +3226,19 @@ references:
   commentId: F:KS.ConsoleBase.Input.CurrentMask
   fullName: KS.ConsoleBase.Input.CurrentMask
   nameWithType: Input.CurrentMask
+- uid: KS.ConsoleBase.Input.DetectKeypress
+  name: DetectKeypress()
+  href: api/KS.ConsoleBase.Input.html#KS_ConsoleBase_Input_DetectKeypress
+  commentId: M:KS.ConsoleBase.Input.DetectKeypress
+  fullName: KS.ConsoleBase.Input.DetectKeypress()
+  nameWithType: Input.DetectKeypress()
+- uid: KS.ConsoleBase.Input.DetectKeypress*
+  name: DetectKeypress
+  href: api/KS.ConsoleBase.Input.html#KS_ConsoleBase_Input_DetectKeypress_
+  commentId: Overload:KS.ConsoleBase.Input.DetectKeypress
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Input.DetectKeypress
+  nameWithType: Input.DetectKeypress
 - uid: KS.ConsoleBase.Input.ReadKeyTimeout(System.Boolean,System.TimeSpan)
   name: ReadKeyTimeout(Boolean, TimeSpan)
   href: api/KS.ConsoleBase.Input.html#KS_ConsoleBase_Input_ReadKeyTimeout_System_Boolean_System_TimeSpan_
