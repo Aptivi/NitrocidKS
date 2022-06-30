@@ -28843,30 +28843,30 @@ references:
   commentId: T:KS.Network.NetworkTransfer
   fullName: KS.Network.NetworkTransfer
   nameWithType: NetworkTransfer
-- uid: KS.Network.NetworkTransfer.DownloadFile(System.String,System.Boolean,System.Net.NetworkCredential)
-  name: DownloadFile(String, Boolean, NetworkCredential)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadFile_System_String_System_Boolean_System_Net_NetworkCredential_
-  commentId: M:KS.Network.NetworkTransfer.DownloadFile(System.String,System.Boolean,System.Net.NetworkCredential)
-  fullName: KS.Network.NetworkTransfer.DownloadFile(System.String, System.Boolean, System.Net.NetworkCredential)
-  nameWithType: NetworkTransfer.DownloadFile(String, Boolean, NetworkCredential)
-- uid: KS.Network.NetworkTransfer.DownloadFile(System.String,System.Boolean,System.String,System.Net.NetworkCredential)
-  name: DownloadFile(String, Boolean, String, NetworkCredential)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadFile_System_String_System_Boolean_System_String_System_Net_NetworkCredential_
-  commentId: M:KS.Network.NetworkTransfer.DownloadFile(System.String,System.Boolean,System.String,System.Net.NetworkCredential)
-  fullName: KS.Network.NetworkTransfer.DownloadFile(System.String, System.Boolean, System.String, System.Net.NetworkCredential)
-  nameWithType: NetworkTransfer.DownloadFile(String, Boolean, String, NetworkCredential)
-- uid: KS.Network.NetworkTransfer.DownloadFile(System.String,System.Net.NetworkCredential)
-  name: DownloadFile(String, NetworkCredential)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadFile_System_String_System_Net_NetworkCredential_
-  commentId: M:KS.Network.NetworkTransfer.DownloadFile(System.String,System.Net.NetworkCredential)
-  fullName: KS.Network.NetworkTransfer.DownloadFile(System.String, System.Net.NetworkCredential)
-  nameWithType: NetworkTransfer.DownloadFile(String, NetworkCredential)
-- uid: KS.Network.NetworkTransfer.DownloadFile(System.String,System.String,System.Net.NetworkCredential)
-  name: DownloadFile(String, String, NetworkCredential)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadFile_System_String_System_String_System_Net_NetworkCredential_
-  commentId: M:KS.Network.NetworkTransfer.DownloadFile(System.String,System.String,System.Net.NetworkCredential)
-  fullName: KS.Network.NetworkTransfer.DownloadFile(System.String, System.String, System.Net.NetworkCredential)
-  nameWithType: NetworkTransfer.DownloadFile(String, String, NetworkCredential)
+- uid: KS.Network.NetworkTransfer.DownloadFile(System.String)
+  name: DownloadFile(String)
+  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadFile_System_String_
+  commentId: M:KS.Network.NetworkTransfer.DownloadFile(System.String)
+  fullName: KS.Network.NetworkTransfer.DownloadFile(System.String)
+  nameWithType: NetworkTransfer.DownloadFile(String)
+- uid: KS.Network.NetworkTransfer.DownloadFile(System.String,System.Boolean)
+  name: DownloadFile(String, Boolean)
+  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadFile_System_String_System_Boolean_
+  commentId: M:KS.Network.NetworkTransfer.DownloadFile(System.String,System.Boolean)
+  fullName: KS.Network.NetworkTransfer.DownloadFile(System.String, System.Boolean)
+  nameWithType: NetworkTransfer.DownloadFile(String, Boolean)
+- uid: KS.Network.NetworkTransfer.DownloadFile(System.String,System.Boolean,System.String)
+  name: DownloadFile(String, Boolean, String)
+  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadFile_System_String_System_Boolean_System_String_
+  commentId: M:KS.Network.NetworkTransfer.DownloadFile(System.String,System.Boolean,System.String)
+  fullName: KS.Network.NetworkTransfer.DownloadFile(System.String, System.Boolean, System.String)
+  nameWithType: NetworkTransfer.DownloadFile(String, Boolean, String)
+- uid: KS.Network.NetworkTransfer.DownloadFile(System.String,System.String)
+  name: DownloadFile(String, String)
+  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadFile_System_String_System_String_
+  commentId: M:KS.Network.NetworkTransfer.DownloadFile(System.String,System.String)
+  fullName: KS.Network.NetworkTransfer.DownloadFile(System.String, System.String)
+  nameWithType: NetworkTransfer.DownloadFile(String, String)
 - uid: KS.Network.NetworkTransfer.DownloadFile*
   name: DownloadFile
   href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadFile_
@@ -28886,18 +28886,18 @@ references:
   commentId: F:KS.Network.NetworkTransfer.DownloadPercentagePrint
   fullName: KS.Network.NetworkTransfer.DownloadPercentagePrint
   nameWithType: NetworkTransfer.DownloadPercentagePrint
-- uid: KS.Network.NetworkTransfer.DownloadString(System.String,System.Boolean,System.Net.NetworkCredential)
-  name: DownloadString(String, Boolean, NetworkCredential)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadString_System_String_System_Boolean_System_Net_NetworkCredential_
-  commentId: M:KS.Network.NetworkTransfer.DownloadString(System.String,System.Boolean,System.Net.NetworkCredential)
-  fullName: KS.Network.NetworkTransfer.DownloadString(System.String, System.Boolean, System.Net.NetworkCredential)
-  nameWithType: NetworkTransfer.DownloadString(String, Boolean, NetworkCredential)
-- uid: KS.Network.NetworkTransfer.DownloadString(System.String,System.Net.NetworkCredential)
-  name: DownloadString(String, NetworkCredential)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadString_System_String_System_Net_NetworkCredential_
-  commentId: M:KS.Network.NetworkTransfer.DownloadString(System.String,System.Net.NetworkCredential)
-  fullName: KS.Network.NetworkTransfer.DownloadString(System.String, System.Net.NetworkCredential)
-  nameWithType: NetworkTransfer.DownloadString(String, NetworkCredential)
+- uid: KS.Network.NetworkTransfer.DownloadString(System.String)
+  name: DownloadString(String)
+  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadString_System_String_
+  commentId: M:KS.Network.NetworkTransfer.DownloadString(System.String)
+  fullName: KS.Network.NetworkTransfer.DownloadString(System.String)
+  nameWithType: NetworkTransfer.DownloadString(String)
+- uid: KS.Network.NetworkTransfer.DownloadString(System.String,System.Boolean)
+  name: DownloadString(String, Boolean)
+  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadString_System_String_System_Boolean_
+  commentId: M:KS.Network.NetworkTransfer.DownloadString(System.String,System.Boolean)
+  fullName: KS.Network.NetworkTransfer.DownloadString(System.String, System.Boolean)
+  nameWithType: NetworkTransfer.DownloadString(String, Boolean)
 - uid: KS.Network.NetworkTransfer.DownloadString*
   name: DownloadString
   href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadString_
@@ -28905,18 +28905,18 @@ references:
   isSpec: "True"
   fullName: KS.Network.NetworkTransfer.DownloadString
   nameWithType: NetworkTransfer.DownloadString
-- uid: KS.Network.NetworkTransfer.UploadFile(System.String,System.String,System.Boolean,System.Net.NetworkCredential)
-  name: UploadFile(String, String, Boolean, NetworkCredential)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadFile_System_String_System_String_System_Boolean_System_Net_NetworkCredential_
-  commentId: M:KS.Network.NetworkTransfer.UploadFile(System.String,System.String,System.Boolean,System.Net.NetworkCredential)
-  fullName: KS.Network.NetworkTransfer.UploadFile(System.String, System.String, System.Boolean, System.Net.NetworkCredential)
-  nameWithType: NetworkTransfer.UploadFile(String, String, Boolean, NetworkCredential)
-- uid: KS.Network.NetworkTransfer.UploadFile(System.String,System.String,System.Net.NetworkCredential)
-  name: UploadFile(String, String, NetworkCredential)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadFile_System_String_System_String_System_Net_NetworkCredential_
-  commentId: M:KS.Network.NetworkTransfer.UploadFile(System.String,System.String,System.Net.NetworkCredential)
-  fullName: KS.Network.NetworkTransfer.UploadFile(System.String, System.String, System.Net.NetworkCredential)
-  nameWithType: NetworkTransfer.UploadFile(String, String, NetworkCredential)
+- uid: KS.Network.NetworkTransfer.UploadFile(System.String,System.String)
+  name: UploadFile(String, String)
+  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadFile_System_String_System_String_
+  commentId: M:KS.Network.NetworkTransfer.UploadFile(System.String,System.String)
+  fullName: KS.Network.NetworkTransfer.UploadFile(System.String, System.String)
+  nameWithType: NetworkTransfer.UploadFile(String, String)
+- uid: KS.Network.NetworkTransfer.UploadFile(System.String,System.String,System.Boolean)
+  name: UploadFile(String, String, Boolean)
+  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadFile_System_String_System_String_System_Boolean_
+  commentId: M:KS.Network.NetworkTransfer.UploadFile(System.String,System.String,System.Boolean)
+  fullName: KS.Network.NetworkTransfer.UploadFile(System.String, System.String, System.Boolean)
+  nameWithType: NetworkTransfer.UploadFile(String, String, Boolean)
 - uid: KS.Network.NetworkTransfer.UploadFile*
   name: UploadFile
   href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadFile_
@@ -28936,18 +28936,18 @@ references:
   commentId: F:KS.Network.NetworkTransfer.UploadPercentagePrint
   fullName: KS.Network.NetworkTransfer.UploadPercentagePrint
   nameWithType: NetworkTransfer.UploadPercentagePrint
-- uid: KS.Network.NetworkTransfer.UploadString(System.String,System.String,System.Boolean,System.Net.NetworkCredential)
-  name: UploadString(String, String, Boolean, NetworkCredential)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadString_System_String_System_String_System_Boolean_System_Net_NetworkCredential_
-  commentId: M:KS.Network.NetworkTransfer.UploadString(System.String,System.String,System.Boolean,System.Net.NetworkCredential)
-  fullName: KS.Network.NetworkTransfer.UploadString(System.String, System.String, System.Boolean, System.Net.NetworkCredential)
-  nameWithType: NetworkTransfer.UploadString(String, String, Boolean, NetworkCredential)
-- uid: KS.Network.NetworkTransfer.UploadString(System.String,System.String,System.Net.NetworkCredential)
-  name: UploadString(String, String, NetworkCredential)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadString_System_String_System_String_System_Net_NetworkCredential_
-  commentId: M:KS.Network.NetworkTransfer.UploadString(System.String,System.String,System.Net.NetworkCredential)
-  fullName: KS.Network.NetworkTransfer.UploadString(System.String, System.String, System.Net.NetworkCredential)
-  nameWithType: NetworkTransfer.UploadString(String, String, NetworkCredential)
+- uid: KS.Network.NetworkTransfer.UploadString(System.String,System.String)
+  name: UploadString(String, String)
+  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadString_System_String_System_String_
+  commentId: M:KS.Network.NetworkTransfer.UploadString(System.String,System.String)
+  fullName: KS.Network.NetworkTransfer.UploadString(System.String, System.String)
+  nameWithType: NetworkTransfer.UploadString(String, String)
+- uid: KS.Network.NetworkTransfer.UploadString(System.String,System.String,System.Boolean)
+  name: UploadString(String, String, Boolean)
+  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadString_System_String_System_String_System_Boolean_
+  commentId: M:KS.Network.NetworkTransfer.UploadString(System.String,System.String,System.Boolean)
+  fullName: KS.Network.NetworkTransfer.UploadString(System.String, System.String, System.Boolean)
+  nameWithType: NetworkTransfer.UploadString(String, String, Boolean)
 - uid: KS.Network.NetworkTransfer.UploadString*
   name: UploadString
   href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadString_
