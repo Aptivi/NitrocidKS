@@ -3674,6 +3674,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Network.NetworkTransferInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Network.NetworkTransferInfo.html",
+          "hash": "b3z7wgqDtR3kyfzfXolt+v8VQJKwsRPxuSkdmKzUt9I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Network.NetworkTransferType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Network.NetworkTransferType.html",
+          "hash": "yFTvm3CRV6vx8NMpOZpSNNJOeohMbPJBTwcD4/nKb0o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Network.RPC.RPCCommands.yml",
       "output": {
         ".html": {
@@ -4002,7 +4026,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.html",
-          "hash": "/j85NCfWUy4neOzbJEky4jdHbh6OemsdXJ07sU3PBe0="
+          "hash": "FVUfkSgc4IiNVhOWPJYcsfH+bwlPKWczu6DHAJJlXHc="
         }
       },
       "is_incremental": false,
@@ -4722,7 +4746,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "GdpjRK0AYPm5m1Uef+J/DSR554VkiXWv9NniVDZW6I8="
+          "hash": "oZfEoT5R6lz+XdGOSBrNHbMBeDSngT3JbIT7ZXtZPCI="
         }
       },
       "is_incremental": false,
@@ -7641,7 +7665,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 392,
+          "total_file_count": 394,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
