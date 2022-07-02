@@ -100,18 +100,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Network_NetworkTransferInfo__ctor_System_IO_Stream_System_Int64_System_String_System_String_KS_Network_NetworkTransferType_.md&amp;value=---%0Auid%3A%20KS.Network.NetworkTransferInfo.%23ctor(System.IO.Stream%2CSystem.Int64%2CSystem.String%2CSystem.String%2CKS.Network.NetworkTransferType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Network_NetworkTransferInfo__ctor_System_Int64_System_Int64_KS_Network_NetworkTransferType_.md&amp;value=---%0Auid%3A%20KS.Network.NetworkTransferInfo.%23ctor(System.Int64%2CSystem.Int64%2CKS.Network.NetworkTransferType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Network/NetworkTransferInfo.vb/#L59">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Network/NetworkTransferInfo.vb/#L51">View Source</a>
   </span>
   <a id="KS_Network_NetworkTransferInfo__ctor_" data-uid="KS.Network.NetworkTransferInfo.#ctor*"></a>
-  <h4 id="KS_Network_NetworkTransferInfo__ctor_System_IO_Stream_System_Int64_System_String_System_String_KS_Network_NetworkTransferType_" data-uid="KS.Network.NetworkTransferInfo.#ctor(System.IO.Stream,System.Int64,System.String,System.String,KS.Network.NetworkTransferType)">NetworkTransferInfo(Stream, Int64, String, String, NetworkTransferType)</h4>
+  <h4 id="KS_Network_NetworkTransferInfo__ctor_System_Int64_System_Int64_KS_Network_NetworkTransferType_" data-uid="KS.Network.NetworkTransferInfo.#ctor(System.Int64,System.Int64,KS.Network.NetworkTransferType)">NetworkTransferInfo(Int64, Int64, NetworkTransferType)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected NetworkTransferInfo(Stream FileStream, long FileSize, string SourcePath, string TargetPath, NetworkTransferType TransferType)</code></pre>
+    <pre><code class="lang-csharp hljs">protected NetworkTransferInfo(long DoneSize, long FileSize, NetworkTransferType TransferType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -124,23 +124,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
-        <td><span class="parametername">FileStream</span></td>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">DoneSize</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">FileSize</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">SourcePath</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">TargetPath</span></td>
         <td></td>
       </tr>
       <tr>
@@ -152,6 +142,37 @@
   </table>
   <h3 id="properties">Properties
   </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Network_NetworkTransferInfo_DoneSize.md&amp;value=---%0Auid%3A%20KS.Network.NetworkTransferInfo.DoneSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Network/NetworkTransferInfo.vb/#L29">View Source</a>
+  </span>
+  <a id="KS_Network_NetworkTransferInfo_DoneSize_" data-uid="KS.Network.NetworkTransferInfo.DoneSize*"></a>
+  <h4 id="KS_Network_NetworkTransferInfo_DoneSize" data-uid="KS.Network.NetworkTransferInfo.DoneSize">DoneSize</h4>
+  <div class="markdown level1 summary"><p>How many bytes downloaded/uploaded</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long DoneSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Network_NetworkTransferInfo_FileSize.md&amp;value=---%0Auid%3A%20KS.Network.NetworkTransferInfo.FileSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -185,41 +206,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Network_NetworkTransferInfo_FileStream.md&amp;value=---%0Auid%3A%20KS.Network.NetworkTransferInfo.FileStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Network/NetworkTransferInfo.vb/#L29">View Source</a>
-  </span>
-  <a id="KS_Network_NetworkTransferInfo_FileStream_" data-uid="KS.Network.NetworkTransferInfo.FileStream*"></a>
-  <h4 id="KS_Network_NetworkTransferInfo_FileStream" data-uid="KS.Network.NetworkTransferInfo.FileStream">FileStream</h4>
-  <div class="markdown level1 summary"><p>Target file stream</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Stream FileStream { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Network_NetworkTransferInfo_MessageSuppressed.md&amp;value=---%0Auid%3A%20KS.Network.NetworkTransferInfo.MessageSuppressed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Network/NetworkTransferInfo.vb/#L50">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Network/NetworkTransferInfo.vb/#L42">View Source</a>
   </span>
   <a id="KS_Network_NetworkTransferInfo_MessageSuppressed_" data-uid="KS.Network.NetworkTransferInfo.MessageSuppressed*"></a>
   <h4 id="KS_Network_NetworkTransferInfo_MessageSuppressed" data-uid="KS.Network.NetworkTransferInfo.MessageSuppressed">MessageSuppressed</h4>
@@ -247,72 +237,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Network_NetworkTransferInfo_SourcePath.md&amp;value=---%0Auid%3A%20KS.Network.NetworkTransferInfo.SourcePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Network/NetworkTransferInfo.vb/#L37">View Source</a>
-  </span>
-  <a id="KS_Network_NetworkTransferInfo_SourcePath_" data-uid="KS.Network.NetworkTransferInfo.SourcePath*"></a>
-  <h4 id="KS_Network_NetworkTransferInfo_SourcePath" data-uid="KS.Network.NetworkTransferInfo.SourcePath">SourcePath</h4>
-  <div class="markdown level1 summary"><p>The source path/URL</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SourcePath { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Network_NetworkTransferInfo_TargetPath.md&amp;value=---%0Auid%3A%20KS.Network.NetworkTransferInfo.TargetPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Network/NetworkTransferInfo.vb/#L41">View Source</a>
-  </span>
-  <a id="KS_Network_NetworkTransferInfo_TargetPath_" data-uid="KS.Network.NetworkTransferInfo.TargetPath*"></a>
-  <h4 id="KS_Network_NetworkTransferInfo_TargetPath" data-uid="KS.Network.NetworkTransferInfo.TargetPath">TargetPath</h4>
-  <div class="markdown level1 summary"><p>The target path/URL</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string TargetPath { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Network_NetworkTransferInfo_TransferType.md&amp;value=---%0Auid%3A%20KS.Network.NetworkTransferInfo.TransferType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Network/NetworkTransferInfo.vb/#L45">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Network/NetworkTransferInfo.vb/#L37">View Source</a>
   </span>
   <a id="KS_Network_NetworkTransferInfo_TransferType_" data-uid="KS.Network.NetworkTransferInfo.TransferType*"></a>
   <h4 id="KS_Network_NetworkTransferInfo_TransferType" data-uid="KS.Network.NetworkTransferInfo.TransferType">TransferType</h4>

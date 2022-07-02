@@ -28961,12 +28961,12 @@ references:
   commentId: T:KS.Network.NetworkTransferInfo
   fullName: KS.Network.NetworkTransferInfo
   nameWithType: NetworkTransferInfo
-- uid: KS.Network.NetworkTransferInfo.#ctor(System.IO.Stream,System.Int64,System.String,System.String,KS.Network.NetworkTransferType)
-  name: NetworkTransferInfo(Stream, Int64, String, String, NetworkTransferType)
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo__ctor_System_IO_Stream_System_Int64_System_String_System_String_KS_Network_NetworkTransferType_
-  commentId: M:KS.Network.NetworkTransferInfo.#ctor(System.IO.Stream,System.Int64,System.String,System.String,KS.Network.NetworkTransferType)
-  fullName: KS.Network.NetworkTransferInfo.NetworkTransferInfo(System.IO.Stream, System.Int64, System.String, System.String, KS.Network.NetworkTransferType)
-  nameWithType: NetworkTransferInfo.NetworkTransferInfo(Stream, Int64, String, String, NetworkTransferType)
+- uid: KS.Network.NetworkTransferInfo.#ctor(System.Int64,System.Int64,KS.Network.NetworkTransferType)
+  name: NetworkTransferInfo(Int64, Int64, NetworkTransferType)
+  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo__ctor_System_Int64_System_Int64_KS_Network_NetworkTransferType_
+  commentId: M:KS.Network.NetworkTransferInfo.#ctor(System.Int64,System.Int64,KS.Network.NetworkTransferType)
+  fullName: KS.Network.NetworkTransferInfo.NetworkTransferInfo(System.Int64, System.Int64, KS.Network.NetworkTransferType)
+  nameWithType: NetworkTransferInfo.NetworkTransferInfo(Int64, Int64, NetworkTransferType)
 - uid: KS.Network.NetworkTransferInfo.#ctor*
   name: NetworkTransferInfo
   href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo__ctor_
@@ -28974,6 +28974,19 @@ references:
   isSpec: "True"
   fullName: KS.Network.NetworkTransferInfo.NetworkTransferInfo
   nameWithType: NetworkTransferInfo.NetworkTransferInfo
+- uid: KS.Network.NetworkTransferInfo.DoneSize
+  name: DoneSize
+  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_DoneSize
+  commentId: P:KS.Network.NetworkTransferInfo.DoneSize
+  fullName: KS.Network.NetworkTransferInfo.DoneSize
+  nameWithType: NetworkTransferInfo.DoneSize
+- uid: KS.Network.NetworkTransferInfo.DoneSize*
+  name: DoneSize
+  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_DoneSize_
+  commentId: Overload:KS.Network.NetworkTransferInfo.DoneSize
+  isSpec: "True"
+  fullName: KS.Network.NetworkTransferInfo.DoneSize
+  nameWithType: NetworkTransferInfo.DoneSize
 - uid: KS.Network.NetworkTransferInfo.FileSize
   name: FileSize
   href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_FileSize
@@ -28987,19 +29000,6 @@ references:
   isSpec: "True"
   fullName: KS.Network.NetworkTransferInfo.FileSize
   nameWithType: NetworkTransferInfo.FileSize
-- uid: KS.Network.NetworkTransferInfo.FileStream
-  name: FileStream
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_FileStream
-  commentId: P:KS.Network.NetworkTransferInfo.FileStream
-  fullName: KS.Network.NetworkTransferInfo.FileStream
-  nameWithType: NetworkTransferInfo.FileStream
-- uid: KS.Network.NetworkTransferInfo.FileStream*
-  name: FileStream
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_FileStream_
-  commentId: Overload:KS.Network.NetworkTransferInfo.FileStream
-  isSpec: "True"
-  fullName: KS.Network.NetworkTransferInfo.FileStream
-  nameWithType: NetworkTransferInfo.FileStream
 - uid: KS.Network.NetworkTransferInfo.MessageSuppressed
   name: MessageSuppressed
   href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_MessageSuppressed
@@ -29013,32 +29013,6 @@ references:
   isSpec: "True"
   fullName: KS.Network.NetworkTransferInfo.MessageSuppressed
   nameWithType: NetworkTransferInfo.MessageSuppressed
-- uid: KS.Network.NetworkTransferInfo.SourcePath
-  name: SourcePath
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_SourcePath
-  commentId: P:KS.Network.NetworkTransferInfo.SourcePath
-  fullName: KS.Network.NetworkTransferInfo.SourcePath
-  nameWithType: NetworkTransferInfo.SourcePath
-- uid: KS.Network.NetworkTransferInfo.SourcePath*
-  name: SourcePath
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_SourcePath_
-  commentId: Overload:KS.Network.NetworkTransferInfo.SourcePath
-  isSpec: "True"
-  fullName: KS.Network.NetworkTransferInfo.SourcePath
-  nameWithType: NetworkTransferInfo.SourcePath
-- uid: KS.Network.NetworkTransferInfo.TargetPath
-  name: TargetPath
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_TargetPath
-  commentId: P:KS.Network.NetworkTransferInfo.TargetPath
-  fullName: KS.Network.NetworkTransferInfo.TargetPath
-  nameWithType: NetworkTransferInfo.TargetPath
-- uid: KS.Network.NetworkTransferInfo.TargetPath*
-  name: TargetPath
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_TargetPath_
-  commentId: Overload:KS.Network.NetworkTransferInfo.TargetPath
-  isSpec: "True"
-  fullName: KS.Network.NetworkTransferInfo.TargetPath
-  nameWithType: NetworkTransferInfo.TargetPath
 - uid: KS.Network.NetworkTransferInfo.TransferType
   name: TransferType
   href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_TransferType
