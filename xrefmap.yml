@@ -469,6 +469,19 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Color.B
   nameWithType: Color.B
+- uid: KS.ConsoleBase.Color.Empty
+  name: Empty
+  href: api/KS.ConsoleBase.Color.html#KS_ConsoleBase_Color_Empty
+  commentId: P:KS.ConsoleBase.Color.Empty
+  fullName: KS.ConsoleBase.Color.Empty
+  nameWithType: Color.Empty
+- uid: KS.ConsoleBase.Color.Empty*
+  name: Empty
+  href: api/KS.ConsoleBase.Color.html#KS_ConsoleBase_Color_Empty_
+  commentId: Overload:KS.ConsoleBase.Color.Empty
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Color.Empty
+  nameWithType: Color.Empty
 - uid: KS.ConsoleBase.Color.G
   name: G
   href: api/KS.ConsoleBase.Color.html#KS_ConsoleBase_Color_G
