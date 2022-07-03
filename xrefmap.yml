@@ -19633,6 +19633,51 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextWrite
   nameWithType: FlashTextDisplay.FlashTextWrite
+- uid: KS.Misc.Screensaver.Displays.GlitchDisplay
+  name: GlitchDisplay
+  href: api/KS.Misc.Screensaver.Displays.GlitchDisplay.html
+  commentId: T:KS.Misc.Screensaver.Displays.GlitchDisplay
+  fullName: KS.Misc.Screensaver.Displays.GlitchDisplay
+  nameWithType: GlitchDisplay
+- uid: KS.Misc.Screensaver.Displays.GlitchDisplay.Glitch_DoWork
+  name: Glitch_DoWork()
+  href: api/KS.Misc.Screensaver.Displays.GlitchDisplay.html#KS_Misc_Screensaver_Displays_GlitchDisplay_Glitch_DoWork
+  commentId: M:KS.Misc.Screensaver.Displays.GlitchDisplay.Glitch_DoWork
+  fullName: KS.Misc.Screensaver.Displays.GlitchDisplay.Glitch_DoWork()
+  nameWithType: GlitchDisplay.Glitch_DoWork()
+- uid: KS.Misc.Screensaver.Displays.GlitchDisplay.Glitch_DoWork*
+  name: Glitch_DoWork
+  href: api/KS.Misc.Screensaver.Displays.GlitchDisplay.html#KS_Misc_Screensaver_Displays_GlitchDisplay_Glitch_DoWork_
+  commentId: Overload:KS.Misc.Screensaver.Displays.GlitchDisplay.Glitch_DoWork
+  isSpec: "True"
+  fullName: KS.Misc.Screensaver.Displays.GlitchDisplay.Glitch_DoWork
+  nameWithType: GlitchDisplay.Glitch_DoWork
+- uid: KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDelay
+  name: GlitchDelay
+  href: api/KS.Misc.Screensaver.Displays.GlitchDisplay.html#KS_Misc_Screensaver_Displays_GlitchDisplay_GlitchDelay
+  commentId: P:KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDelay
+  fullName: KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDelay
+  nameWithType: GlitchDisplay.GlitchDelay
+- uid: KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDelay*
+  name: GlitchDelay
+  href: api/KS.Misc.Screensaver.Displays.GlitchDisplay.html#KS_Misc_Screensaver_Displays_GlitchDisplay_GlitchDelay_
+  commentId: Overload:KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDelay
+  isSpec: "True"
+  fullName: KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDelay
+  nameWithType: GlitchDisplay.GlitchDelay
+- uid: KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDensity
+  name: GlitchDensity
+  href: api/KS.Misc.Screensaver.Displays.GlitchDisplay.html#KS_Misc_Screensaver_Displays_GlitchDisplay_GlitchDensity
+  commentId: P:KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDensity
+  fullName: KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDensity
+  nameWithType: GlitchDisplay.GlitchDensity
+- uid: KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDensity*
+  name: GlitchDensity
+  href: api/KS.Misc.Screensaver.Displays.GlitchDisplay.html#KS_Misc_Screensaver_Displays_GlitchDisplay_GlitchDensity_
+  commentId: Overload:KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDensity
+  isSpec: "True"
+  fullName: KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDensity
+  nameWithType: GlitchDisplay.GlitchDensity
 - uid: KS.Misc.Screensaver.Displays.GlitterColorDisplay
   name: GlitterColorDisplay
   href: api/KS.Misc.Screensaver.Displays.GlitterColorDisplay.html
@@ -27198,6 +27243,19 @@ references:
   isSpec: "True"
   fullName: KS.My.Resources.Resources.pir
   nameWithType: Resources.pir
+- uid: KS.My.Resources.Resources.pla
+  name: pla
+  href: api/KS.My.Resources.Resources.html#KS_My_Resources_Resources_pla
+  commentId: P:KS.My.Resources.Resources.pla
+  fullName: KS.My.Resources.Resources.pla
+  nameWithType: Resources.pla
+- uid: KS.My.Resources.Resources.pla*
+  name: pla
+  href: api/KS.My.Resources.Resources.html#KS_My_Resources_Resources_pla_
+  commentId: Overload:KS.My.Resources.Resources.pla
+  isSpec: "True"
+  fullName: KS.My.Resources.Resources.pla
+  nameWithType: Resources.pla
 - uid: KS.My.Resources.Resources.Planted_Wood
   name: Planted_Wood
   href: api/KS.My.Resources.Resources.html#KS_My_Resources_Resources_Planted_Wood
