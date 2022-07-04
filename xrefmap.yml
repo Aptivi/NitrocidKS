@@ -2172,21 +2172,6 @@ references:
   commentId: F:KS.ConsoleBase.Color255.ConsoleColors.Yellow4_87af00
   fullName: KS.ConsoleBase.Color255.ConsoleColors.Yellow4_87af00
   nameWithType: Color255.ConsoleColors.Yellow4_87af00
-- uid: KS.ConsoleBase.Color255.GetConsoleMode(System.IntPtr,System.Int32@)
-  name: GetConsoleMode(IntPtr, ref Int32)
-  href: api/KS.ConsoleBase.Color255.html#KS_ConsoleBase_Color255_GetConsoleMode_System_IntPtr_System_Int32__
-  commentId: M:KS.ConsoleBase.Color255.GetConsoleMode(System.IntPtr,System.Int32@)
-  name.vb: GetConsoleMode(IntPtr, ByRef Int32)
-  fullName: KS.ConsoleBase.Color255.GetConsoleMode(System.IntPtr, ref System.Int32)
-  fullName.vb: KS.ConsoleBase.Color255.GetConsoleMode(System.IntPtr, ByRef System.Int32)
-  nameWithType: Color255.GetConsoleMode(IntPtr, ref Int32)
-  nameWithType.vb: Color255.GetConsoleMode(IntPtr, ByRef Int32)
-- uid: KS.ConsoleBase.Color255.GetConsoleMode*
-  name: GetConsoleMode
-  href: api/KS.ConsoleBase.Color255.html#KS_ConsoleBase_Color255_GetConsoleMode_
-  commentId: Overload:KS.ConsoleBase.Color255.GetConsoleMode
-  fullName: KS.ConsoleBase.Color255.GetConsoleMode
-  nameWithType: Color255.GetConsoleMode
 - uid: KS.ConsoleBase.Color255.GetEsc
   name: GetEsc()
   href: api/KS.ConsoleBase.Color255.html#KS_ConsoleBase_Color255_GetEsc
@@ -2200,18 +2185,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Color255.GetEsc
   nameWithType: Color255.GetEsc
-- uid: KS.ConsoleBase.Color255.GetStdHandle(System.Int32)
-  name: GetStdHandle(Int32)
-  href: api/KS.ConsoleBase.Color255.html#KS_ConsoleBase_Color255_GetStdHandle_System_Int32_
-  commentId: M:KS.ConsoleBase.Color255.GetStdHandle(System.Int32)
-  fullName: KS.ConsoleBase.Color255.GetStdHandle(System.Int32)
-  nameWithType: Color255.GetStdHandle(Int32)
-- uid: KS.ConsoleBase.Color255.GetStdHandle*
-  name: GetStdHandle
-  href: api/KS.ConsoleBase.Color255.html#KS_ConsoleBase_Color255_GetStdHandle_
-  commentId: Overload:KS.ConsoleBase.Color255.GetStdHandle
-  fullName: KS.ConsoleBase.Color255.GetStdHandle
-  nameWithType: Color255.GetStdHandle
 - uid: KS.ConsoleBase.Color255.Initialize255
   name: Initialize255()
   href: api/KS.ConsoleBase.Color255.html#KS_ConsoleBase_Color255_Initialize255
@@ -2225,18 +2198,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Color255.Initialize255
   nameWithType: Color255.Initialize255
-- uid: KS.ConsoleBase.Color255.SetConsoleMode(System.IntPtr,System.Int32)
-  name: SetConsoleMode(IntPtr, Int32)
-  href: api/KS.ConsoleBase.Color255.html#KS_ConsoleBase_Color255_SetConsoleMode_System_IntPtr_System_Int32_
-  commentId: M:KS.ConsoleBase.Color255.SetConsoleMode(System.IntPtr,System.Int32)
-  fullName: KS.ConsoleBase.Color255.SetConsoleMode(System.IntPtr, System.Int32)
-  nameWithType: Color255.SetConsoleMode(IntPtr, Int32)
-- uid: KS.ConsoleBase.Color255.SetConsoleMode*
-  name: SetConsoleMode
-  href: api/KS.ConsoleBase.Color255.html#KS_ConsoleBase_Color255_SetConsoleMode_
-  commentId: Overload:KS.ConsoleBase.Color255.SetConsoleMode
-  fullName: KS.ConsoleBase.Color255.SetConsoleMode
-  nameWithType: Color255.SetConsoleMode
 - uid: KS.ConsoleBase.ColorSetErrorReasons
   name: ColorSetErrorReasons
   href: api/KS.ConsoleBase.ColorSetErrorReasons.html
