@@ -25902,25 +25902,6 @@ references:
   isSpec: "True"
   fullName: KS.Modifications.IScript.Version
   nameWithType: IScript.Version
-- uid: KS.Modifications.ModExecutor
-  name: ModExecutor
-  href: api/KS.Modifications.ModExecutor.html
-  commentId: T:KS.Modifications.ModExecutor
-  fullName: KS.Modifications.ModExecutor
-  nameWithType: ModExecutor
-- uid: KS.Modifications.ModExecutor.ExecuteModCommand(System.String)
-  name: ExecuteModCommand(String)
-  href: api/KS.Modifications.ModExecutor.html#KS_Modifications_ModExecutor_ExecuteModCommand_System_String_
-  commentId: M:KS.Modifications.ModExecutor.ExecuteModCommand(System.String)
-  fullName: KS.Modifications.ModExecutor.ExecuteModCommand(System.String)
-  nameWithType: ModExecutor.ExecuteModCommand(String)
-- uid: KS.Modifications.ModExecutor.ExecuteModCommand*
-  name: ExecuteModCommand
-  href: api/KS.Modifications.ModExecutor.html#KS_Modifications_ModExecutor_ExecuteModCommand_
-  commentId: Overload:KS.Modifications.ModExecutor.ExecuteModCommand
-  isSpec: "True"
-  fullName: KS.Modifications.ModExecutor.ExecuteModCommand
-  nameWithType: ModExecutor.ExecuteModCommand
 - uid: KS.Modifications.ModInfo
   name: ModInfo
   href: api/KS.Modifications.ModInfo.html

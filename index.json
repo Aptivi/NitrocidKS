@@ -1347,17 +1347,12 @@
   "api/KS.Modifications.html": {
     "href": "api/KS.Modifications.html",
     "title": "Namespace KS.Modifications | Kernel Simulator API - Eofla Internals",
-    "keywords": "Namespace KS.Modifications Classes ModExecutor ModInfo ModManager ModParser PartInfo Interfaces IScript Interface for mods"
+    "keywords": "Namespace KS.Modifications Classes ModInfo ModManager ModParser PartInfo Interfaces IScript Interface for mods"
   },
   "api/KS.Modifications.IScript.html": {
     "href": "api/KS.Modifications.IScript.html",
     "title": "Interface IScript | Kernel Simulator API - Eofla Internals",
     "keywords": "Interface IScript Interface for mods Namespace : KS.Modifications Assembly : Kernel Simulator.dll Syntax public interface IScript Properties | Improve this Doc View Source Commands List of commands for mod Declaration Dictionary<string, CommandInfo> Commands { get; set; } Property Value Type Description System.Collections.Generic.Dictionary < System.String , CommandInfo > | Improve this Doc View Source ModPart Name of part of mod Declaration string ModPart { get; set; } Property Value Type Description System.String | Improve this Doc View Source Name Mod name Declaration string Name { get; set; } Property Value Type Description System.String | Improve this Doc View Source Version Mod version Declaration string Version { get; set; } Property Value Type Description System.String Methods | Improve this Doc View Source InitEvents(String) Code executed when initializing events Declaration void InitEvents(string ev) Parameters Type Name Description System.String ev Event name. Look it up on Events | Improve this Doc View Source InitEvents(String, Object[]) Code executed when initializing events Declaration void InitEvents(string ev, params object[] Args) Parameters Type Name Description System.String ev Event name. Look it up on Events System.Object [] Args Arguments. | Improve this Doc View Source PerformCmd(CommandInfo, String) Code executed when performing command Declaration [Obsolete(\"Investigate the usage of CommandInfo.CommandBase.Execute instead.\")] void PerformCmd(CommandInfo Command, string Args = \"\") Parameters Type Name Description CommandInfo Command A command. System.String Args | Improve this Doc View Source StartMod() Code executed when starting mod Declaration void StartMod() | Improve this Doc View Source StopMod() Code executed when stopping mod Declaration void StopMod()"
-  },
-  "api/KS.Modifications.ModExecutor.html": {
-    "href": "api/KS.Modifications.ModExecutor.html",
-    "title": "Class ModExecutor | Kernel Simulator API - Eofla Internals",
-    "keywords": "Class ModExecutor Inheritance ModExecutor Namespace : KS.Modifications Assembly : Kernel Simulator.dll Syntax public class ModExecutor Methods | Improve this Doc View Source ExecuteModCommand(String) Executes the command provided by a mod Declaration public static void ExecuteModCommand(string cmd) Parameters Type Name Description System.String cmd A mod command with arguments"
   },
   "api/KS.Modifications.ModInfo.html": {
     "href": "api/KS.Modifications.ModInfo.html",
