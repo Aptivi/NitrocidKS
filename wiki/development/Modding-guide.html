@@ -95,7 +95,7 @@
 <li>You will see that your KS executable files are added to the references. In your project file, this will be added:</li>
 </ol>
 <pre><code class="lang-xml">    &lt;PackageReference Include=&quot;KS&quot;&gt;
-      &lt;Version&gt;0.0.21.1&lt;/Version&gt;
+      &lt;Version&gt;0.0.23.0&lt;/Version&gt;
     &lt;/PackageReference&gt;
 </code></pre>
 <ol start="6">
@@ -121,11 +121,19 @@ Property Version As String Implements IScript.Version
 </ol>
 <pre><code class="lang-vb">Sub StartMod() Implements IScript.StartMod
     'If you're going to add commands, write your commands here. Explain what are your commands and what they're going to do.
-    Commands = New Dictionary(Of String, CommandInfo) From {{&quot;command&quot;, New CommandInfo(&quot;command&quot;, ShellType.Shell, &quot;&quot;, {&quot;&lt;Required&gt; [Optional]&quot;}, True, 1, Nothing)}, ...}
-    Name = &quot;ModName&quot;                 'Replace ModName with your mod name whatever you like, but it SHOULD reflect the mod purpose. You can also use verbs, adjectives, space galaxy names, and so on. This field is required.
-    Version = &quot;1.0&quot;                  'You can specify your mod version, but it should follow the versioning guidelines and you can find it on the Internet. This field is required.
-    CmdType = ShellCommandType.Shell 'Specify the shell command type
-    ModPart = &quot;Main&quot;                 'The name of the mod part
+    Commands = New Dictionary(Of String, CommandInfo) From {{&quot;command&quot;, New CommandInfo(&quot;command&quot;, ShellType.Shell, &quot;&quot;, {&quot;&lt;Required&gt; [Optional]&quot;}, True, 1, New MyModCommand)}, ...}
+
+    'Replace ModName with your mod name whatever you like, but it SHOULD reflect the mod purpose. You can also use verbs, adjectives, space galaxy names, and so on. This field is required.
+    Name = &quot;ModName&quot;
+
+    'You can specify your mod version, but it should follow the versioning guidelines and you can find it on the Internet. This field is required.
+    Version = &quot;1.0&quot;
+
+    'Specify the shell command type
+    CmdType = ShellCommandType.Shell
+    
+    'The name of the mod part
+    ModPart = &quot;Main&quot;
 
     'Your code below
 End Sub
@@ -140,73 +148,61 @@ End Sub
 </code></pre>
 <ol start="6">
 <li>Make a command handler, which can be one of the following forms:
-i) If you're making your commands in your mod, write the response code below:</li>
+i) If you're making your commands in your mod, make a class that implements both CommandExecutor and ICommand for each command and include your statements for each:</li>
 </ol>
-<pre><code class="lang-vb">Sub PerformCmd(ByVal Command As CommandInfo, Optional ByVal args As String = &quot;&quot;) Implements IScript.PerformCmd
-    If Command.Command = &quot;&quot; Then
-        'Your code below for the first command
-    ElseIf Command.Command = &quot;&quot; Then
-        'Your code below for the second command
-    ElseIf ...
-    End If
-End Sub
+<pre><code class="lang-vb">Class MyModCommand
+    Inherits CommandExecutor
+    Implements ICommand
+
+    Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
+        'Your code below for your command
+    End Sub
+
+End Class
 </code></pre>
-<p>ii) If you're making your commands which handle arguments, write the response code below:</p>
-<pre><code class="lang-vb">Sub PerformCmd(ByVal Command As CommandInfo, Optional ByVal args As String = &quot;&quot;) Implements IScript.PerformCmd
-    If Command.Command = &quot;&quot; Then
-        If (args = &quot;YourArgHere&quot;) Then 'Replace YourArgsHere with your argument set
-            'Your code below for the first command
+<p>ii) If you're making your commands which handle text arguments, write the response code below:</p>
+<pre><code class="lang-vb">Class MyModCommand
+    Inherits CommandExecutor
+    Implements ICommand
+
+    Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
+        If StringArgs = &quot;Something&quot; Then
+            'Write your code
         End If
-    ElseIf Command.Command = &quot;&quot; Then
-        If (args = &quot;YourArgHere&quot;) Then 'Replace YourArgsHere with your argument set
-            'Your code below for the second command
-        End If
-    ElseIf ...
-    End If
-End Sub
+    End Sub
+
+End Class
 </code></pre>
-<p>iii) If you're making your commands which handle subsequent arguments, write the response code below: (you can change how you handle spaces between arguments)</p>
-<pre><code class="lang-vb">Sub PerformCmd(ByVal Command As CommandInfo, Optional ByVal args As String = &quot;&quot;) Implements IScript.PerformCmd
-    Dim splitArgs As String() = args.Split({&quot; &quot;c})
-    If Command.Command = &quot;&quot; Then
-        If splitArgs.Length &gt; Command.MinimumArguments Then
-            If (splitArgs(0) = &quot;Part1&quot; And splitArgs(1) = &quot;Part2&quot;) Then 'Replace Part1 with your argument, and Part2 with your argument. You can also replace the splitArgs(0) = &quot;Part1&quot; And splitArgs(1) = &quot;Part2&quot; with your statement
-                'Your code below
-            Else
-                'Your argument mismatch code below
-            End If
-        Else
-            'Your code that handles not enough arguments
+<p>iii) If you're making your commands which handle subsequent arguments, write the response code below:</p>
+<pre><code class="lang-vb">Class MyModCommand
+    Inherits CommandExecutor
+    Implements ICommand
+
+    Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
+        If ListArgsOnly(0) = &quot;Arg1&quot; Then
+            'Write your code for the first argument
         End If
-    ElseIf Command.Command = &quot;&quot; Then
-        If splitArgs.Length &gt; Command.MinimumArguments Then
-            If (splitArgs(0) = &quot;Part1&quot; And splitArgs(1) = &quot;Part2&quot;) Then 'Replace Part1 with your argument, and Part2 with your argument. You can also replace the splitArgs(0) = &quot;Part1&quot; And splitArgs(1) = &quot;Part2&quot; with your statement
-                'Your code below
-            Else
-                'Your argument mismatch code below
-            End If
-        Else
-            'Your code that handles not enough arguments
-        End If
-    ElseIf ...
-    End If
-End Sub
+    End Sub
+
+End Class
 </code></pre>
 <ol start="7">
 <li>Make an event handler code for your mod, which can be one of the following:
 i) If you're making your event handler which handles what happened in the kernel, write the handle code below:</li>
 </ol>
 <pre><code class="lang-vb">Sub InitEvents(ByVal ev As String) Implements IScript.InitEvents
-    If (ev = &quot;EventName&quot;) Then 'Replace EventName with events that are found on &quot;Events for Mod Developers&quot;
+    'Replace EventName with events that are found on &quot;Events for Mod Developers&quot;
+    If ev = &quot;EventName&quot; Then
         'Your code below
     End If
 End Sub
 </code></pre>
 <p>ii) If you're handling multiple events, write the handle code below:</p>
 <pre><code class="lang-vb">Sub InitEvents(ByVal ev As String) Implements IScript.InitEvents
-    If (ev = &quot;EventName&quot;) Then 'Replace EventName with events that are found on &quot;Events for Mod Developers&quot; 
+    'Replace EventName with events that are found on &quot;Events for Mod Developers&quot;
+    If ev = &quot;EventName&quot; Then
         'Your code below
-    ElseIf (ev = &quot;AnotherEvent&quot;) Then ' Replace AnotherEvent with events that are found on &quot;Events for Mod Developers&quot; 
+    ElseIf ev = &quot;AnotherEvent&quot; Then
         'Your code below
     End If
 End Sub
@@ -216,9 +212,10 @@ End Sub
 <li>Make the same event handler code, but this time, with arguments provided:</li>
 </ol>
 <pre><code class="lang-vb">Sub InitEvents(ByVal ev As String, ParamArray Args As Object()) Implements IScript.InitEvents
-    If (ev = &quot;EventName&quot;) Then 'Replace EventName with events that are found on &quot;Events for Mod Developers&quot; 
+    'Replace EventName with events that are found on &quot;Events for Mod Developers&quot;
+    If ev = &quot;EventName&quot; Then
         'Your code below
-    ElseIf (ev = &quot;AnotherEvent&quot;) Then ' Replace AnotherEvent with events that are found on &quot;Events for Mod Developers&quot; 
+    ElseIf ev = &quot;AnotherEvent&quot; Then
         'Your code below
     End If
 End Sub
