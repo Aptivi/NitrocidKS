@@ -4825,12 +4825,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "wiki/arguments/Kernel-arguments-for-KS.md",
       "output": {
         ".html": {
           "relative_path": "wiki/arguments/Kernel-arguments-for-KS.html",
-          "hash": "ri19xrWnQGLu7fGN+fi0FzGMk5ieYlHkGkExKgx6LNU="
+          "hash": "7FEoY/Hnx3/l1n3PdIXf41Y7paqVzNs3bFXPak4Siyk="
         }
       },
       "is_incremental": false,
