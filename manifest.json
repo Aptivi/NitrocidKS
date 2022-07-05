@@ -1694,6 +1694,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Dictionary.DictionaryManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Dictionary.DictionaryManager.html",
+          "hash": "OnskeDNF2kUq7k4vK/DdNr19Drpw8+LC95ImqBRf4WU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Dictionary.DictionaryWord.Definition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Dictionary.DictionaryWord.Definition.html",
+          "hash": "Z4SxmMt8uDlo+AGf4TvkMKSVhHZM9jirsIerODD59N8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Dictionary.DictionaryWord.License.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Dictionary.DictionaryWord.License.html",
+          "hash": "6wjbckDvHCnSNxVbP1Vqg5Fa0s/jl/cjri8SxJMDonI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Dictionary.DictionaryWord.Meaning.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Dictionary.DictionaryWord.Meaning.html",
+          "hash": "MoXu0pXpeF1BvGnbpS905yATbW9K6Jd2yagGCOm0quE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Dictionary.DictionaryWord.Phonetic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Dictionary.DictionaryWord.Phonetic.html",
+          "hash": "Yp8BwRfm4vHOoG/HnSjSA/6FHeWE+3I3YI0vqvL7OD4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Dictionary.DictionaryWord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Dictionary.DictionaryWord.html",
+          "hash": "cgneFiWvT003pu2TsyvqjZZOnf8z9g4Mr9cJWgYUdwc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Dictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Dictionary.html",
+          "hash": "diTmb3L+exHDfAbOERSjbUX9DnhP4Ak9NEFQRzwW7CM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Encryption.Encryption.Algorithms.yml",
       "output": {
         ".html": {
@@ -4338,7 +4422,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shell.html",
-          "hash": "KKmFT0rmjfT0zFNK7BD4MlhZBAdTBoWR+B9CE59tNfo="
+          "hash": "wcmJJEKqukMNPptt6hQXDFImxsDtuuJY1EUlVv3/PPo="
         }
       },
       "is_incremental": false,
@@ -4758,7 +4842,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "LnhMnas9Tj7jef2UeSyDHBFKz8EZXKjXNP/RxCp4ujI="
+          "hash": "lJADee5eWgN+lRCxa2xLiHcu/5wCQmqVNa0hOIfez0M="
         }
       },
       "is_incremental": false,
@@ -4881,7 +4965,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/commands/Commands-for-KS.html",
-          "hash": "NIhps5eJ8NfCSJ53y/1ZOQqYkpL9/zO4BZd718Gp+RU="
+          "hash": "WySOAtWgMubLyxI7UtSeSWqCJSf0f9UkFQIz//wQkfI="
         }
       },
       "is_incremental": false,
@@ -6262,6 +6346,18 @@
         ".html": {
           "relative_path": "wiki/commands/uesh/KS-Command-copy.html",
           "hash": "hoAh8rWQSpnl6ga6m+x9eYJi9nedcwXIuL/KYbbHijk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/commands/uesh/KS-Command-dict.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/commands/uesh/KS-Command-dict.html",
+          "hash": "/oovQ/OmR9haD4MaBjH2kJKCWp5UtV4mUoPlnBfEP5U="
         }
       },
       "is_incremental": false,
@@ -7674,13 +7770,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 239,
+          "total_file_count": 240,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 395,
+          "total_file_count": 402,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
