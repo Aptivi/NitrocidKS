@@ -3410,30 +3410,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.My.Resources.Resources.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.My.Resources.Resources.html",
-          "hash": "P7RjmFiQvjtsfc165pa69vZOpBzPVCjFGgoiT+g2Nqw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.My.Resources.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.My.Resources.html",
-          "hash": "yJHKVeT9kj0/Dt59SByG/bCr/72gHA9awKvFiBedTXc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Network.FTP.FTPShellCommon.yml",
       "output": {
         ".html": {
@@ -4842,7 +4818,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "lJADee5eWgN+lRCxa2xLiHcu/5wCQmqVNa0hOIfez0M="
+          "hash": "VjYCxYNV8QusqGp3yzgiA4AfNNduSH9zK3bV4cU3H6I="
         }
       },
       "is_incremental": false,
@@ -7776,7 +7752,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 402,
+          "total_file_count": 400,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
