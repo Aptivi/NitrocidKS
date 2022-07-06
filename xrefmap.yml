@@ -27662,6 +27662,32 @@ references:
   isSpec: "True"
   fullName: KS.My.Resources.Resources.Pastel_3
   nameWithType: Resources.Pastel_3
+- uid: KS.My.Resources.Resources.PhosphoricBG
+  name: PhosphoricBG
+  href: api/KS.My.Resources.Resources.html#KS_My_Resources_Resources_PhosphoricBG
+  commentId: P:KS.My.Resources.Resources.PhosphoricBG
+  fullName: KS.My.Resources.Resources.PhosphoricBG
+  nameWithType: Resources.PhosphoricBG
+- uid: KS.My.Resources.Resources.PhosphoricBG*
+  name: PhosphoricBG
+  href: api/KS.My.Resources.Resources.html#KS_My_Resources_Resources_PhosphoricBG_
+  commentId: Overload:KS.My.Resources.Resources.PhosphoricBG
+  isSpec: "True"
+  fullName: KS.My.Resources.Resources.PhosphoricBG
+  nameWithType: Resources.PhosphoricBG
+- uid: KS.My.Resources.Resources.PhosphoricFG
+  name: PhosphoricFG
+  href: api/KS.My.Resources.Resources.html#KS_My_Resources_Resources_PhosphoricFG
+  commentId: P:KS.My.Resources.Resources.PhosphoricFG
+  fullName: KS.My.Resources.Resources.PhosphoricFG
+  nameWithType: Resources.PhosphoricFG
+- uid: KS.My.Resources.Resources.PhosphoricFG*
+  name: PhosphoricFG
+  href: api/KS.My.Resources.Resources.html#KS_My_Resources_Resources_PhosphoricFG_
+  commentId: Overload:KS.My.Resources.Resources.PhosphoricFG
+  isSpec: "True"
+  fullName: KS.My.Resources.Resources.PhosphoricFG
+  nameWithType: Resources.PhosphoricFG
 - uid: KS.My.Resources.Resources.pir
   name: pir
   href: api/KS.My.Resources.Resources.html#KS_My_Resources_Resources_pir
