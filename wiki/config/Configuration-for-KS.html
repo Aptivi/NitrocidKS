@@ -220,6 +220,12 @@
 <td style="text-align: left;">Figlet font name supported by Figgle</td>
 <td style="text-align: left;">Write a figlet font that is supported by the Figgle library. Consult the library documentation for more information</td>
 </tr>
+<tr>
+<td style="text-align: left;">Simulate No APM Mode</td>
+<td style="text-align: left;"><code>boolean</code></td>
+<td style="text-align: left;"><code>true</code> or <code>false</code></td>
+<td style="text-align: left;">If enabled, it will show the &quot;It's now safe to turn off your computer&quot; message on kernel shutdown.</td>
+</tr>
 </tbody>
 </table>
 <h3 id="colors">Colors</h3>
@@ -486,12 +492,6 @@
 <td style="text-align: left;"><code>boolean</code></td>
 <td style="text-align: left;"><code>true</code> or <code>false</code></td>
 <td style="text-align: left;">You can make hardware probing verbose, by showing what probed.</td>
-</tr>
-<tr>
-<td style="text-align: left;">Use legacy hardware listing</td>
-<td style="text-align: left;"><code>boolean</code></td>
-<td style="text-align: left;"><code>true</code> or <code>false</code></td>
-<td style="text-align: left;">Uses the pre-0.0.20.x way of listing hardware. Otherwise, uses the modern way.</td>
 </tr>
 </tbody>
 </table>
@@ -1436,6 +1436,84 @@
 <td style="text-align: left;"><code>boolean</code></td>
 <td style="text-align: left;"><code>true</code> or <code>false</code></td>
 <td style="text-align: left;">Self-explanatory</td>
+</tr>
+<tr>
+<td style="text-align: left;">Password mask character</td>
+<td style="text-align: left;"><code>char</code></td>
+<td style="text-align: left;">A single character</td>
+<td style="text-align: left;">A character that is placed to enter the password.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Upper left corner character for progress bars</td>
+<td style="text-align: left;"><code>char</code></td>
+<td style="text-align: left;">A single character</td>
+<td style="text-align: left;">A character that resembles the upper left corner.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Upper right corner character for progress bars</td>
+<td style="text-align: left;"><code>char</code></td>
+<td style="text-align: left;">A single character</td>
+<td style="text-align: left;">A character that resembles the upper right corner.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lower left corner character for progress bars</td>
+<td style="text-align: left;"><code>char</code></td>
+<td style="text-align: left;">A single character</td>
+<td style="text-align: left;">A character that resembles the lower left corner.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lower right corner character for progress bars</td>
+<td style="text-align: left;"><code>char</code></td>
+<td style="text-align: left;">A single character</td>
+<td style="text-align: left;">A character that resembles the lower right corner.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Upper frame character for progress bars</td>
+<td style="text-align: left;"><code>char</code></td>
+<td style="text-align: left;">A single character</td>
+<td style="text-align: left;">A character that resembles the upper frame.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lower frame character for progress bars</td>
+<td style="text-align: left;"><code>char</code></td>
+<td style="text-align: left;">A single character</td>
+<td style="text-align: left;">A character that resembles the lower frame.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Left frame character for progress bars</td>
+<td style="text-align: left;"><code>char</code></td>
+<td style="text-align: left;">A single character</td>
+<td style="text-align: left;">A character that resembles the left frame.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Right frame character for progress bars</td>
+<td style="text-align: left;"><code>char</code></td>
+<td style="text-align: left;">A single character</td>
+<td style="text-align: left;">A character that resembles the right frame.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Users count for love or hate comments</td>
+<td style="text-align: left;"><code>integer</code></td>
+<td style="text-align: left;">Interval in milliseconds</td>
+<td style="text-align: left;">How many user names to generate in LoveHate game?</td>
+</tr>
+<tr>
+<td style="text-align: left;">Input history enabled</td>
+<td style="text-align: left;"><code>boolean</code></td>
+<td style="text-align: left;"><code>true</code> or <code>false</code></td>
+<td style="text-align: left;">Whether the input history is enabled</td>
+</tr>
+<tr>
+<td style="text-align: left;">Input clipboard enabled</td>
+<td style="text-align: left;"><code>boolean</code></td>
+<td style="text-align: left;"><code>true</code> or <code>false</code></td>
+<td style="text-align: left;">Whether the input clipboard is enabled. Use <code>CTRL + Y</code> to paste or yank the contents back.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Input undo enabled</td>
+<td style="text-align: left;"><code>boolean</code></td>
+<td style="text-align: left;"><code>true</code> or <code>false</code></td>
+<td style="text-align: left;">Whether the input undo is enabled</td>
 </tr>
 </tbody>
 </table>
