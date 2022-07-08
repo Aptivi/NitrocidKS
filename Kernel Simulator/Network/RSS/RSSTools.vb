@@ -168,27 +168,31 @@ Namespace Network.RSS
         ''' Refreshes the feeds
         ''' </summary>
         Friend Sub RefreshFeeds()
-            Dim OldFeedsList As New List(Of RSSArticle)(RSSFeedInstance.FeedArticles)
-            Dim NewFeedsList As List(Of RSSArticle)
-            While RSSFeedInstance IsNot Nothing
-                If RSSFeedInstance IsNot Nothing Then
-                    'Refresh the feed
-                    RSSFeedInstance.Refresh()
+            Try
+                Dim OldFeedsList As New List(Of RSSArticle)(RSSFeedInstance.FeedArticles)
+                Dim NewFeedsList As List(Of RSSArticle)
+                While RSSFeedInstance IsNot Nothing
+                    If RSSFeedInstance IsNot Nothing Then
+                        'Refresh the feed
+                        RSSFeedInstance.Refresh()
 
-                    'Check for new feeds
-                    NewFeedsList = RSSFeedInstance.FeedArticles.Except(OldFeedsList).ToList
-                    If NewFeedsList.Count > 0 And NewFeedsList(0).ArticleTitle <> OldFeedsList(0).ArticleTitle Then
-                        'Update the list
-                        Wdbg(DebugLevel.W, "Feeds received! Recents count was {0}, Old count was {1}", RSSFeedInstance.FeedArticles.Count, OldFeedsList.Count)
-                        OldFeedsList = New List(Of RSSArticle)(RSSFeedInstance.FeedArticles)
-                        For Each NewFeed As RSSArticle In NewFeedsList
-                            Dim FeedNotif As New Notification(NewFeed.ArticleTitle, NewFeed.ArticleDescription, NotifPriority.Low, NotifType.Normal)
-                            NotifySend(FeedNotif)
-                        Next
+                        'Check for new feeds
+                        NewFeedsList = RSSFeedInstance.FeedArticles.Except(OldFeedsList).ToList
+                        If NewFeedsList.Count > 0 And NewFeedsList(0).ArticleTitle <> OldFeedsList(0).ArticleTitle Then
+                            'Update the list
+                            Wdbg(DebugLevel.W, "Feeds received! Recents count was {0}, Old count was {1}", RSSFeedInstance.FeedArticles.Count, OldFeedsList.Count)
+                            OldFeedsList = New List(Of RSSArticle)(RSSFeedInstance.FeedArticles)
+                            For Each NewFeed As RSSArticle In NewFeedsList
+                                Dim FeedNotif As New Notification(NewFeed.ArticleTitle, NewFeed.ArticleDescription, NotifPriority.Low, NotifType.Normal)
+                                NotifySend(FeedNotif)
+                            Next
+                        End If
                     End If
-                End If
-                Thread.Sleep(RSSRefreshInterval)
-            End While
+                    Thread.Sleep(RSSRefreshInterval)
+                End While
+            Catch ex As ThreadInterruptedException
+                Wdbg(DebugLevel.W, "Aborting refresher...")
+            End Try
         End Sub
 
         ''' <summary>
