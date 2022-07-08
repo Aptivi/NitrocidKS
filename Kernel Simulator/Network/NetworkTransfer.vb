@@ -110,11 +110,11 @@ Namespace Network
             If ShowProgress And Not SuppressDownloadMessage Then Console.WriteLine()
             SuppressDownloadMessage = False
             If IsError Then
-                DownloadNotif.ProgressFailed = True
+                If DownloadNotificationProvoke Then DownloadNotif.ProgressFailed = True
                 CancellationToken.Cancel()
                 Throw ReasonError
             Else
-                DownloadNotif.Progress = 100
+                If DownloadNotificationProvoke Then DownloadNotif.Progress = 100
                 Return True
             End If
         End Function
@@ -170,11 +170,11 @@ Namespace Network
             If ShowProgress And Not SuppressUploadMessage Then Console.WriteLine()
             SuppressUploadMessage = False
             If IsError Then
-                UploadNotif.ProgressFailed = True
+                If UploadNotificationProvoke Then UploadNotif.ProgressFailed = True
                 CancellationToken.Cancel()
                 Throw ReasonError
             Else
-                UploadNotif.Progress = 100
+                If UploadNotificationProvoke Then UploadNotif.Progress = 100
                 Return True
             End If
         End Function
