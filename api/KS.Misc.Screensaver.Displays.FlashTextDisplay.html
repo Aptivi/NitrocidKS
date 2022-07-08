@@ -87,64 +87,55 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">FlashTextDisplay</span></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html">BaseScreensaver</a></div>
+    <div class="level2"><span class="xref">FlashTextDisplay</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Screensaver.Displays.html">KS.Misc.Screensaver.Displays</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FlashTextDisplay</code></pre>
+    <pre><code class="lang-csharp hljs">public class FlashTextDisplay : BaseScreensaver, IScreensaver</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="eii">Explicit Interface Implementations
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashText255Colors.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashText255Colors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_ScreensaverLogic.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.ScreensaverLogic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L42">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L232">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashText255Colors_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashText255Colors*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashText255Colors" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashText255Colors">FlashText255Colors</h4>
-  <div class="markdown level1 summary"><p>[FlashText] Enable 255 color support. Has a higher priority than 16 color support.</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_ScreensaverLogic_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.ScreensaverLogic*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_ScreensaverLogic" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.ScreensaverLogic">IScreensaver.ScreensaverLogic()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool FlashText255Colors { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverLogic()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverLogic">BaseScreensaver.IScreensaver.ScreensaverLogic()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextBackgroundColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextBackgroundColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_ScreensaverName.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.ScreensaverName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L87">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L213">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextBackgroundColor_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextBackgroundColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextBackgroundColor" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextBackgroundColor">FlashTextBackgroundColor</h4>
-  <div class="markdown level1 summary"><p>[FlashText] Screensaver background color</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_ScreensaverName_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.ScreensaverName*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_ScreensaverName" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.ScreensaverName">IScreensaver.ScreensaverName</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string FlashTextBackgroundColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string IScreensaver.ScreensaverName { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -159,23 +150,41 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverName">BaseScreensaver.IScreensaver.ScreensaverName</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextDelay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_ScreensaverPreparation.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.ScreensaverPreparation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L64">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L217">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextDelay_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextDelay*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextDelay" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextDelay">FlashTextDelay</h4>
-  <div class="markdown level1 summary"><p>[FlashText] How many milliseconds to wait before making the next write?</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_ScreensaverPreparation_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.ScreensaverPreparation*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_ScreensaverPreparation" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.ScreensaverPreparation">IScreensaver.ScreensaverPreparation()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FlashTextDelay { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverPreparation()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverPreparation">BaseScreensaver.IScreensaver.ScreensaverPreparation()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_ScreensaverSettings.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.ScreensaverSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L215">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_ScreensaverSettings_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.ScreensaverSettings*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_ScreensaverSettings" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.ScreensaverSettings">IScreensaver.ScreensaverSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Dictionary&lt;string, object&gt; IScreensaver.ScreensaverSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -185,338 +194,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMaximumBlueColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMaximumBlueColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L177">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMaximumBlueColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMaximumBlueColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMaximumBlueColorLevel" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMaximumBlueColorLevel">FlashTextMaximumBlueColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FlashText] The maximum blue color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FlashTextMaximumBlueColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMaximumColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMaximumColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L190">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMaximumColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMaximumColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMaximumColorLevel" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMaximumColorLevel">FlashTextMaximumColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FlashText] The maximum color level (255 colors or 16 colors)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FlashTextMaximumColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMaximumGreenColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMaximumGreenColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L164">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMaximumGreenColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMaximumGreenColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMaximumGreenColorLevel" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMaximumGreenColorLevel">FlashTextMaximumGreenColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FlashText] The maximum green color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FlashTextMaximumGreenColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMaximumRedColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMaximumRedColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L151">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMaximumRedColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMaximumRedColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMaximumRedColorLevel" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMaximumRedColorLevel">FlashTextMaximumRedColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FlashText] The maximum red color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FlashTextMaximumRedColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMinimumBlueColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMinimumBlueColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L124">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMinimumBlueColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMinimumBlueColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMinimumBlueColorLevel" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMinimumBlueColorLevel">FlashTextMinimumBlueColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FlashText] The minimum blue color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FlashTextMinimumBlueColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMinimumColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMinimumColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L137">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMinimumColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMinimumColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMinimumColorLevel" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMinimumColorLevel">FlashTextMinimumColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FlashText] The minimum color level (255 colors or 16 colors)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FlashTextMinimumColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMinimumGreenColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMinimumGreenColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L111">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMinimumGreenColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMinimumGreenColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMinimumGreenColorLevel" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMinimumGreenColorLevel">FlashTextMinimumGreenColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FlashText] The minimum green color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FlashTextMinimumGreenColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMinimumRedColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMinimumRedColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L98">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMinimumRedColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMinimumRedColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextMinimumRedColorLevel" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextMinimumRedColorLevel">FlashTextMinimumRedColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FlashText] The minimum red color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FlashTextMinimumRedColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextTrueColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextTrueColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L53">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextTrueColor_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextTrueColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextTrueColor" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextTrueColor">FlashTextTrueColor</h4>
-  <div class="markdown level1 summary"><p>[FlashText] Enable truecolor support. Has a higher priority than 255 color support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool FlashTextTrueColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextWrite.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextWrite%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L76">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextWrite_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextWrite*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashTextWrite" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashTextWrite">FlashTextWrite</h4>
-  <div class="markdown level1 summary"><p>[FlashText] Text for FlashText. Shorter is better.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string FlashTextWrite { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashText_DoWork.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashText_DoWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L205">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashText_DoWork_" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashText_DoWork*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FlashTextDisplay_FlashText_DoWork" data-uid="KS.Misc.Screensaver.Displays.FlashTextDisplay.FlashText_DoWork">FlashText_DoWork()</h4>
-  <div class="markdown level1 summary"><p>Handles the code of Flash Text</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void FlashText_DoWork()</code></pre>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverSettings">BaseScreensaver.IScreensaver.ScreensaverSettings</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a>
   </div>
 </article>
           </div>
@@ -529,7 +216,7 @@
                     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FlashTextDisplay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FlashTextDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FlashText.vb/#L203" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

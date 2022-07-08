@@ -87,64 +87,55 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">LinesDisplay</span></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html">BaseScreensaver</a></div>
+    <div class="level2"><span class="xref">LinesDisplay</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Screensaver.Displays.html">KS.Misc.Screensaver.Displays</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Misc_Screensaver_Displays_LinesDisplay_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LinesDisplay</code></pre>
+    <pre><code class="lang-csharp hljs">public class LinesDisplay : BaseScreensaver, IScreensaver</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="eii">Explicit Interface Implementations
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_Lines255Colors.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.Lines255Colors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_ScreensaverLogic.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.ScreensaverLogic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L42">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L225">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_Lines255Colors_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.Lines255Colors*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_Lines255Colors" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.Lines255Colors">Lines255Colors</h4>
-  <div class="markdown level1 summary"><p>[Lines] Enable 255 color support. Has a higher priority than 16 color support.</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_ScreensaverLogic_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.ScreensaverLogic*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_ScreensaverLogic" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.ScreensaverLogic">IScreensaver.ScreensaverLogic()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Lines255Colors { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverLogic()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverLogic">BaseScreensaver.IScreensaver.ScreensaverLogic()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_LinesBackgroundColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.LinesBackgroundColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_ScreensaverName.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.ScreensaverName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L88">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L213">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesBackgroundColor_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesBackgroundColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesBackgroundColor" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesBackgroundColor">LinesBackgroundColor</h4>
-  <div class="markdown level1 summary"><p>[Lines] Screensaver background color</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_ScreensaverName_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.ScreensaverName*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_ScreensaverName" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.ScreensaverName">IScreensaver.ScreensaverName</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LinesBackgroundColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string IScreensaver.ScreensaverName { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -159,23 +150,41 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverName">BaseScreensaver.IScreensaver.ScreensaverName</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_LinesDelay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.LinesDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_ScreensaverPreparation.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.ScreensaverPreparation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L64">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L217">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesDelay_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesDelay*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesDelay" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesDelay">LinesDelay</h4>
-  <div class="markdown level1 summary"><p>[Lines] How many milliseconds to wait before making the next write?</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_ScreensaverPreparation_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.ScreensaverPreparation*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_ScreensaverPreparation" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.ScreensaverPreparation">IScreensaver.ScreensaverPreparation()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int LinesDelay { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverPreparation()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverPreparation">BaseScreensaver.IScreensaver.ScreensaverPreparation()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_ScreensaverSettings.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.ScreensaverSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L215">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_ScreensaverSettings_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.ScreensaverSettings*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_ScreensaverSettings" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.ScreensaverSettings">IScreensaver.ScreensaverSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Dictionary&lt;string, object&gt; IScreensaver.ScreensaverSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -185,338 +194,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_LinesLineChar.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.LinesLineChar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L76">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesLineChar_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesLineChar*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesLineChar" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesLineChar">LinesLineChar</h4>
-  <div class="markdown level1 summary"><p>[Lines] Line character</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LinesLineChar { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_LinesMaximumBlueColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.LinesMaximumBlueColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L178">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMaximumBlueColorLevel_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMaximumBlueColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMaximumBlueColorLevel" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMaximumBlueColorLevel">LinesMaximumBlueColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Lines] The maximum blue color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int LinesMaximumBlueColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_LinesMaximumColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.LinesMaximumColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L191">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMaximumColorLevel_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMaximumColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMaximumColorLevel" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMaximumColorLevel">LinesMaximumColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Lines] The maximum color level (255 colors or 16 colors)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int LinesMaximumColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_LinesMaximumGreenColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.LinesMaximumGreenColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L165">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMaximumGreenColorLevel_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMaximumGreenColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMaximumGreenColorLevel" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMaximumGreenColorLevel">LinesMaximumGreenColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Lines] The maximum green color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int LinesMaximumGreenColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_LinesMaximumRedColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.LinesMaximumRedColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L152">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMaximumRedColorLevel_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMaximumRedColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMaximumRedColorLevel" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMaximumRedColorLevel">LinesMaximumRedColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Lines] The maximum red color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int LinesMaximumRedColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_LinesMinimumBlueColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.LinesMinimumBlueColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L125">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMinimumBlueColorLevel_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMinimumBlueColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMinimumBlueColorLevel" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMinimumBlueColorLevel">LinesMinimumBlueColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Lines] The minimum blue color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int LinesMinimumBlueColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_LinesMinimumColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.LinesMinimumColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L138">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMinimumColorLevel_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMinimumColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMinimumColorLevel" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMinimumColorLevel">LinesMinimumColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Lines] The minimum color level (255 colors or 16 colors)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int LinesMinimumColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_LinesMinimumGreenColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.LinesMinimumGreenColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L112">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMinimumGreenColorLevel_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMinimumGreenColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMinimumGreenColorLevel" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMinimumGreenColorLevel">LinesMinimumGreenColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Lines] The minimum green color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int LinesMinimumGreenColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_LinesMinimumRedColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.LinesMinimumRedColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L99">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMinimumRedColorLevel_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMinimumRedColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesMinimumRedColorLevel" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesMinimumRedColorLevel">LinesMinimumRedColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Lines] The minimum red color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int LinesMinimumRedColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_LinesTrueColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.LinesTrueColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L53">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesTrueColor_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesTrueColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_LinesTrueColor" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.LinesTrueColor">LinesTrueColor</h4>
-  <div class="markdown level1 summary"><p>[Lines] Enable truecolor support. Has a higher priority than 255 color support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool LinesTrueColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay_Lines_DoWork.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay.Lines_DoWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L206">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_LinesDisplay_Lines_DoWork_" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.Lines_DoWork*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_LinesDisplay_Lines_DoWork" data-uid="KS.Misc.Screensaver.Displays.LinesDisplay.Lines_DoWork">Lines_DoWork()</h4>
-  <div class="markdown level1 summary"><p>Handles the code of Lines</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Lines_DoWork()</code></pre>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverSettings">BaseScreensaver.IScreensaver.ScreensaverSettings</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a>
   </div>
 </article>
           </div>
@@ -529,7 +216,7 @@
                     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_LinesDisplay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.LinesDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Lines.vb/#L204" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -87,33 +87,55 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">GlitchDisplay</span></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html">BaseScreensaver</a></div>
+    <div class="level2"><span class="xref">GlitchDisplay</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Screensaver.Displays.html">KS.Misc.Screensaver.Displays</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Misc_Screensaver_Displays_GlitchDisplay_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GlitchDisplay</code></pre>
+    <pre><code class="lang-csharp hljs">public class GlitchDisplay : BaseScreensaver, IScreensaver</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="eii">Explicit Interface Implementations
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_GlitchDisplay_GlitchDelay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_GlitchDisplay_ScreensaverLogic.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.GlitchDisplay.ScreensaverLogic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Glitch.vb/#L31">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Glitch.vb/#L79">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_GlitchDisplay_GlitchDelay_" data-uid="KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDelay*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_GlitchDisplay_GlitchDelay" data-uid="KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDelay">GlitchDelay</h4>
-  <div class="markdown level1 summary"><p>[Glitch] How many milliseconds to wait before making the next write?</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_GlitchDisplay_ScreensaverLogic_" data-uid="KS.Misc.Screensaver.Displays.GlitchDisplay.ScreensaverLogic*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_GlitchDisplay_ScreensaverLogic" data-uid="KS.Misc.Screensaver.Displays.GlitchDisplay.ScreensaverLogic">IScreensaver.ScreensaverLogic()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GlitchDelay { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverLogic()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverLogic">BaseScreensaver.IScreensaver.ScreensaverLogic()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_GlitchDisplay_ScreensaverName.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.GlitchDisplay.ScreensaverName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Glitch.vb/#L64">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_GlitchDisplay_ScreensaverName_" data-uid="KS.Misc.Screensaver.Displays.GlitchDisplay.ScreensaverName*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_GlitchDisplay_ScreensaverName" data-uid="KS.Misc.Screensaver.Displays.GlitchDisplay.ScreensaverName">IScreensaver.ScreensaverName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string IScreensaver.ScreensaverName { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -123,28 +145,46 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverName">BaseScreensaver.IScreensaver.ScreensaverName</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_GlitchDisplay_GlitchDensity.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDensity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_GlitchDisplay_ScreensaverPreparation.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.GlitchDisplay.ScreensaverPreparation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Glitch.vb/#L43">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Glitch.vb/#L68">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_GlitchDisplay_GlitchDensity_" data-uid="KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDensity*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_GlitchDisplay_GlitchDensity" data-uid="KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchDensity">GlitchDensity</h4>
-  <div class="markdown level1 summary"><p>[Glitch] The Glitch density in percent</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_GlitchDisplay_ScreensaverPreparation_" data-uid="KS.Misc.Screensaver.Displays.GlitchDisplay.ScreensaverPreparation*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_GlitchDisplay_ScreensaverPreparation" data-uid="KS.Misc.Screensaver.Displays.GlitchDisplay.ScreensaverPreparation">IScreensaver.ScreensaverPreparation()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GlitchDensity { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverPreparation()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverPreparation">BaseScreensaver.IScreensaver.ScreensaverPreparation()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_GlitchDisplay_ScreensaverSettings.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.GlitchDisplay.ScreensaverSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Glitch.vb/#L66">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_GlitchDisplay_ScreensaverSettings_" data-uid="KS.Misc.Screensaver.Displays.GlitchDisplay.ScreensaverSettings*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_GlitchDisplay_ScreensaverSettings" data-uid="KS.Misc.Screensaver.Displays.GlitchDisplay.ScreensaverSettings">IScreensaver.ScreensaverSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Dictionary&lt;string, object&gt; IScreensaver.ScreensaverSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -154,28 +194,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_GlitchDisplay_Glitch_DoWork.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.GlitchDisplay.Glitch_DoWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Glitch.vb/#L57">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_GlitchDisplay_Glitch_DoWork_" data-uid="KS.Misc.Screensaver.Displays.GlitchDisplay.Glitch_DoWork*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_GlitchDisplay_Glitch_DoWork" data-uid="KS.Misc.Screensaver.Displays.GlitchDisplay.Glitch_DoWork">Glitch_DoWork()</h4>
-  <div class="markdown level1 summary"><p>Handles the code of Glitch</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Glitch_DoWork()</code></pre>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverSettings">BaseScreensaver.IScreensaver.ScreensaverSettings</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a>
   </div>
 </article>
           </div>
@@ -188,7 +216,7 @@
                     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_GlitchDisplay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.GlitchDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Glitch.vb/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Glitch.vb/#L55" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -87,33 +87,55 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">NoiseDisplay</span></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html">BaseScreensaver</a></div>
+    <div class="level2"><span class="xref">NoiseDisplay</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Screensaver.Displays.html">KS.Misc.Screensaver.Displays</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Misc_Screensaver_Displays_NoiseDisplay_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class NoiseDisplay</code></pre>
+    <pre><code class="lang-csharp hljs">public class NoiseDisplay : BaseScreensaver, IScreensaver</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="eii">Explicit Interface Implementations
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_NoiseDisplay_NoiseDensity.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.NoiseDisplay.NoiseDensity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverLogic.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverLogic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Noise.vb/#L43">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Noise.vb/#L75">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_NoiseDisplay_NoiseDensity_" data-uid="KS.Misc.Screensaver.Displays.NoiseDisplay.NoiseDensity*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_NoiseDisplay_NoiseDensity" data-uid="KS.Misc.Screensaver.Displays.NoiseDisplay.NoiseDensity">NoiseDensity</h4>
-  <div class="markdown level1 summary"><p>[Noise] The noise density in percent</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverLogic_" data-uid="KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverLogic*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverLogic" data-uid="KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverLogic">IScreensaver.ScreensaverLogic()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int NoiseDensity { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverLogic()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverLogic">BaseScreensaver.IScreensaver.ScreensaverLogic()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverName.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Noise.vb/#L64">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverName_" data-uid="KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverName*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverName" data-uid="KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverName">IScreensaver.ScreensaverName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string IScreensaver.ScreensaverName { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -123,28 +145,46 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverName">BaseScreensaver.IScreensaver.ScreensaverName</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_NoiseDisplay_NoiseNewScreenDelay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.NoiseDisplay.NoiseNewScreenDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverPreparation.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverPreparation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Noise.vb/#L31">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Noise.vb/#L68">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_NoiseDisplay_NoiseNewScreenDelay_" data-uid="KS.Misc.Screensaver.Displays.NoiseDisplay.NoiseNewScreenDelay*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_NoiseDisplay_NoiseNewScreenDelay" data-uid="KS.Misc.Screensaver.Displays.NoiseDisplay.NoiseNewScreenDelay">NoiseNewScreenDelay</h4>
-  <div class="markdown level1 summary"><p>[Noise] How many milliseconds to wait before making the new screen?</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverPreparation_" data-uid="KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverPreparation*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverPreparation" data-uid="KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverPreparation">IScreensaver.ScreensaverPreparation()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int NoiseNewScreenDelay { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverPreparation()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverPreparation">BaseScreensaver.IScreensaver.ScreensaverPreparation()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverSettings.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Noise.vb/#L66">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverSettings_" data-uid="KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverSettings*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverSettings" data-uid="KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverSettings">IScreensaver.ScreensaverSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Dictionary&lt;string, object&gt; IScreensaver.ScreensaverSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -154,28 +194,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_NoiseDisplay_Noise_DoWork.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.NoiseDisplay.Noise_DoWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Noise.vb/#L57">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_NoiseDisplay_Noise_DoWork_" data-uid="KS.Misc.Screensaver.Displays.NoiseDisplay.Noise_DoWork*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_NoiseDisplay_Noise_DoWork" data-uid="KS.Misc.Screensaver.Displays.NoiseDisplay.Noise_DoWork">Noise_DoWork()</h4>
-  <div class="markdown level1 summary"><p>Handles the code of Noise</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Noise_DoWork()</code></pre>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverSettings">BaseScreensaver.IScreensaver.ScreensaverSettings</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a>
   </div>
 </article>
           </div>
@@ -188,7 +216,7 @@
                     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_NoiseDisplay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.NoiseDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Noise.vb/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Noise.vb/#L55" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

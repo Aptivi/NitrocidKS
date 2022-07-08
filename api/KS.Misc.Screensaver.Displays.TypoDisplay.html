@@ -87,280 +87,123 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">TypoDisplay</span></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html">BaseScreensaver</a></div>
+    <div class="level2"><span class="xref">TypoDisplay</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Screensaver.Displays.html">KS.Misc.Screensaver.Displays</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Misc_Screensaver_Displays_TypoDisplay_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TypoDisplay</code></pre>
+    <pre><code class="lang-csharp hljs">public class TypoDisplay : BaseScreensaver, IScreensaver</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="eii">Explicit Interface Implementations
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_TypoDisplay_TypoDelay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.TypoDisplay.TypoDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_TypoDisplay_ScreensaverLogic.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.TypoDisplay.ScreensaverLogic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Typo.vb/#L37">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Typo.vb/#L152">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoDelay_" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoDelay*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoDelay" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoDelay">TypoDelay</h4>
-  <div class="markdown level1 summary"><p>[Typo] How many milliseconds to wait before making the next write?</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TypoDelay { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_TypoDisplay_TypoMissPossibility.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.TypoDisplay.TypoMissPossibility%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Typo.vb/#L109">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoMissPossibility_" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoMissPossibility*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoMissPossibility" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoMissPossibility">TypoMissPossibility</h4>
-  <div class="markdown level1 summary"><p>[Typo] Possibility that the writer missed a character in percent</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TypoMissPossibility { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_TypoDisplay_TypoMissStrikePossibility.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.TypoDisplay.TypoMissStrikePossibility%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Typo.vb/#L97">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoMissStrikePossibility_" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoMissStrikePossibility*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoMissStrikePossibility" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoMissStrikePossibility">TypoMissStrikePossibility</h4>
-  <div class="markdown level1 summary"><p>[Typo] Possibility that the writer made a typo in percent</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TypoMissStrikePossibility { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_TypoDisplay_TypoTextColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.TypoDisplay.TypoTextColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Typo.vb/#L121">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoTextColor_" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoTextColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoTextColor" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoTextColor">TypoTextColor</h4>
-  <div class="markdown level1 summary"><p>[Typo] Text color</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string TypoTextColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_TypoDisplay_TypoWrite.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.TypoDisplay.TypoWrite%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Typo.vb/#L61">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoWrite_" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoWrite*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoWrite" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoWrite">TypoWrite</h4>
-  <div class="markdown level1 summary"><p>[Typo] Text for Typo. Longer is better.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string TypoWrite { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_TypoDisplay_TypoWriteAgainDelay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.TypoDisplay.TypoWriteAgainDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Typo.vb/#L49">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoWriteAgainDelay_" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoWriteAgainDelay*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoWriteAgainDelay" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoWriteAgainDelay">TypoWriteAgainDelay</h4>
-  <div class="markdown level1 summary"><p>[Typo] How many milliseconds to wait before writing the text again?</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TypoWriteAgainDelay { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_TypoDisplay_TypoWritingSpeedMax.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.TypoDisplay.TypoWritingSpeedMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Typo.vb/#L85">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoWritingSpeedMax_" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoWritingSpeedMax*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoWritingSpeedMax" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoWritingSpeedMax">TypoWritingSpeedMax</h4>
-  <div class="markdown level1 summary"><p>[Typo] Maximum writing speed in WPM</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TypoWritingSpeedMax { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_TypoDisplay_TypoWritingSpeedMin.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.TypoDisplay.TypoWritingSpeedMin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Typo.vb/#L73">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoWritingSpeedMin_" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoWritingSpeedMin*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_TypoDisplay_TypoWritingSpeedMin" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.TypoWritingSpeedMin">TypoWritingSpeedMin</h4>
-  <div class="markdown level1 summary"><p>[Typo] Minimum writing speed in WPM</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int TypoWritingSpeedMin { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_TypoDisplay_Typo_DoWork.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.TypoDisplay.Typo_DoWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Typo.vb/#L130">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_TypoDisplay_Typo_DoWork_" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.Typo_DoWork*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_TypoDisplay_Typo_DoWork" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.Typo_DoWork">Typo_DoWork()</h4>
+  <a id="KS_Misc_Screensaver_Displays_TypoDisplay_ScreensaverLogic_" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.ScreensaverLogic*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_TypoDisplay_ScreensaverLogic" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.ScreensaverLogic">IScreensaver.ScreensaverLogic()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Typo_DoWork()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverLogic()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverLogic">BaseScreensaver.IScreensaver.ScreensaverLogic()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_TypoDisplay_ScreensaverName.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.TypoDisplay.ScreensaverName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Typo.vb/#L139">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_TypoDisplay_ScreensaverName_" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.ScreensaverName*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_TypoDisplay_ScreensaverName" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.ScreensaverName">IScreensaver.ScreensaverName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string IScreensaver.ScreensaverName { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverName">BaseScreensaver.IScreensaver.ScreensaverName</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_TypoDisplay_ScreensaverPreparation.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.TypoDisplay.ScreensaverPreparation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Typo.vb/#L143">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_TypoDisplay_ScreensaverPreparation_" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.ScreensaverPreparation*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_TypoDisplay_ScreensaverPreparation" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.ScreensaverPreparation">IScreensaver.ScreensaverPreparation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverPreparation()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverPreparation">BaseScreensaver.IScreensaver.ScreensaverPreparation()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_TypoDisplay_ScreensaverSettings.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.TypoDisplay.ScreensaverSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Typo.vb/#L141">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_TypoDisplay_ScreensaverSettings_" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.ScreensaverSettings*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_TypoDisplay_ScreensaverSettings" data-uid="KS.Misc.Screensaver.Displays.TypoDisplay.ScreensaverSettings">IScreensaver.ScreensaverSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Dictionary&lt;string, object&gt; IScreensaver.ScreensaverSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverSettings">BaseScreensaver.IScreensaver.ScreensaverSettings</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a>
   </div>
 </article>
           </div>
@@ -373,7 +216,7 @@
                     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_TypoDisplay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.TypoDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Typo.vb/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Typo.vb/#L130" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

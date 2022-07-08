@@ -87,95 +87,55 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">FigletDisplay</span></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html">BaseScreensaver</a></div>
+    <div class="level2"><span class="xref">FigletDisplay</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Screensaver.Displays.html">KS.Misc.Screensaver.Displays</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Misc_Screensaver_Displays_FigletDisplay_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FigletDisplay</code></pre>
+    <pre><code class="lang-csharp hljs">public class FigletDisplay : BaseScreensaver, IScreensaver</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="eii">Explicit Interface Implementations
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_Figlet255Colors.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.Figlet255Colors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_ScreensaverLogic.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.ScreensaverLogic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L44">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L227">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_Figlet255Colors_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.Figlet255Colors*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_Figlet255Colors" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.Figlet255Colors">Figlet255Colors</h4>
-  <div class="markdown level1 summary"><p>[Figlet] Enable 255 color support. Has a higher priority than 16 color support.</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_ScreensaverLogic_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.ScreensaverLogic*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_ScreensaverLogic" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.ScreensaverLogic">IScreensaver.ScreensaverLogic()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Figlet255Colors { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverLogic()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverLogic">BaseScreensaver.IScreensaver.ScreensaverLogic()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_FigletDelay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.FigletDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_ScreensaverName.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.ScreensaverName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L66">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L214">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletDelay_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletDelay*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletDelay" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletDelay">FigletDelay</h4>
-  <div class="markdown level1 summary"><p>[Figlet] How many milliseconds to wait before making the next write?</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_ScreensaverName_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.ScreensaverName*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_ScreensaverName" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.ScreensaverName">IScreensaver.ScreensaverName</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FigletDelay { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string IScreensaver.ScreensaverName { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_FigletFont.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.FigletFont%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L90">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletFont_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletFont*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletFont" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletFont">FigletFont</h4>
-  <div class="markdown level1 summary"><p>[Figlet] Figlet font supported by the figlet library used.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string FigletFont { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -190,23 +150,41 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverName">BaseScreensaver.IScreensaver.ScreensaverName</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_FigletMaximumBlueColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.FigletMaximumBlueColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_ScreensaverPreparation.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.ScreensaverPreparation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L180">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L218">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMaximumBlueColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMaximumBlueColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMaximumBlueColorLevel" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMaximumBlueColorLevel">FigletMaximumBlueColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Figlet] The maximum blue color level (true color)</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_ScreensaverPreparation_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.ScreensaverPreparation*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_ScreensaverPreparation" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.ScreensaverPreparation">IScreensaver.ScreensaverPreparation()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FigletMaximumBlueColorLevel { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverPreparation()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverPreparation">BaseScreensaver.IScreensaver.ScreensaverPreparation()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_ScreensaverSettings.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.ScreensaverSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L216">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_ScreensaverSettings_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.ScreensaverSettings*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_ScreensaverSettings" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.ScreensaverSettings">IScreensaver.ScreensaverSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Dictionary&lt;string, object&gt; IScreensaver.ScreensaverSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -216,307 +194,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_FigletMaximumColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.FigletMaximumColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L193">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMaximumColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMaximumColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMaximumColorLevel" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMaximumColorLevel">FigletMaximumColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Figlet] The maximum color level (255 colors or 16 colors)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FigletMaximumColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_FigletMaximumGreenColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.FigletMaximumGreenColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L167">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMaximumGreenColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMaximumGreenColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMaximumGreenColorLevel" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMaximumGreenColorLevel">FigletMaximumGreenColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Figlet] The maximum green color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FigletMaximumGreenColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_FigletMaximumRedColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.FigletMaximumRedColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L154">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMaximumRedColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMaximumRedColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMaximumRedColorLevel" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMaximumRedColorLevel">FigletMaximumRedColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Figlet] The maximum red color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FigletMaximumRedColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_FigletMinimumBlueColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.FigletMinimumBlueColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L127">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMinimumBlueColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMinimumBlueColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMinimumBlueColorLevel" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMinimumBlueColorLevel">FigletMinimumBlueColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Figlet] The minimum blue color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FigletMinimumBlueColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_FigletMinimumColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.FigletMinimumColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L140">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMinimumColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMinimumColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMinimumColorLevel" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMinimumColorLevel">FigletMinimumColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Figlet] The minimum color level (255 colors or 16 colors)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FigletMinimumColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_FigletMinimumGreenColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.FigletMinimumGreenColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L114">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMinimumGreenColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMinimumGreenColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMinimumGreenColorLevel" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMinimumGreenColorLevel">FigletMinimumGreenColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Figlet] The minimum green color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FigletMinimumGreenColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_FigletMinimumRedColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.FigletMinimumRedColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L101">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMinimumRedColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMinimumRedColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletMinimumRedColorLevel" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletMinimumRedColorLevel">FigletMinimumRedColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Figlet] The minimum red color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FigletMinimumRedColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_FigletText.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.FigletText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L78">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletText_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletText*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletText" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletText">FigletText</h4>
-  <div class="markdown level1 summary"><p>[Figlet] Text for Figlet. Shorter is better.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string FigletText { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_FigletTrueColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.FigletTrueColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L55">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletTrueColor_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletTrueColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_FigletTrueColor" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.FigletTrueColor">FigletTrueColor</h4>
-  <div class="markdown level1 summary"><p>[Figlet] Enable truecolor support. Has a higher priority than 255 color support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool FigletTrueColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay_Figlet_DoWork.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay.Figlet_DoWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L208">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FigletDisplay_Figlet_DoWork_" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.Figlet_DoWork*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FigletDisplay_Figlet_DoWork" data-uid="KS.Misc.Screensaver.Displays.FigletDisplay.Figlet_DoWork">Figlet_DoWork()</h4>
-  <div class="markdown level1 summary"><p>Handles the code of Figlet</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Figlet_DoWork()</code></pre>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverSettings">BaseScreensaver.IScreensaver.ScreensaverSettings</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a>
   </div>
 </article>
           </div>
@@ -529,7 +216,7 @@
                     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FigletDisplay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FigletDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L24" class="contribution-link">View Source</a>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Figlet.vb/#L205" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

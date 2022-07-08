@@ -87,1179 +87,123 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">RampDisplay</span></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html">BaseScreensaver</a></div>
+    <div class="level2"><span class="xref">RampDisplay</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Screensaver.Displays.html">KS.Misc.Screensaver.Displays</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Misc_Screensaver_Displays_RampDisplay_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RampDisplay</code></pre>
+    <pre><code class="lang-csharp hljs">public class RampDisplay : BaseScreensaver, IScreensaver</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="eii">Explicit Interface Implementations
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_Ramp255Colors.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.Ramp255Colors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_ScreensaverLogic.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.ScreensaverLogic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L66">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L540">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_Ramp255Colors_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.Ramp255Colors*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_Ramp255Colors" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.Ramp255Colors">Ramp255Colors</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Enable 255 color support. Has a higher priority than 16 color support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Ramp255Colors { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampDelay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L88">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampDelay_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampDelay*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampDelay" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampDelay">RampDelay</h4>
-  <div class="markdown level1 summary"><p>[Ramp] How many milliseconds to wait before making the next write?</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampDelay { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampLeftFrameChar.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampLeftFrameChar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L184">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampLeftFrameChar_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLeftFrameChar*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampLeftFrameChar" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLeftFrameChar">RampLeftFrameChar</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Left frame character</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampLeftFrameChar { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampLeftFrameColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampLeftFrameColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L486">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampLeftFrameColor_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLeftFrameColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampLeftFrameColor" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLeftFrameColor">RampLeftFrameColor</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Left frame color.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampLeftFrameColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampLowerFrameChar.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampLowerFrameChar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L172">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampLowerFrameChar_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLowerFrameChar*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampLowerFrameChar" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLowerFrameChar">RampLowerFrameChar</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Lower frame character</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampLowerFrameChar { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampLowerFrameColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampLowerFrameColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L475">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampLowerFrameColor_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLowerFrameColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampLowerFrameColor" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLowerFrameColor">RampLowerFrameColor</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Lower frame color.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampLowerFrameColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampLowerLeftCornerChar.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampLowerLeftCornerChar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L136">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampLowerLeftCornerChar_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLowerLeftCornerChar*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampLowerLeftCornerChar" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLowerLeftCornerChar">RampLowerLeftCornerChar</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Lower left corner character</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampLowerLeftCornerChar { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampLowerLeftCornerColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampLowerLeftCornerColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L442">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampLowerLeftCornerColor_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLowerLeftCornerColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampLowerLeftCornerColor" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLowerLeftCornerColor">RampLowerLeftCornerColor</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Lower left corner color.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampLowerLeftCornerColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampLowerRightCornerChar.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampLowerRightCornerChar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L148">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampLowerRightCornerChar_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLowerRightCornerChar*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampLowerRightCornerChar" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLowerRightCornerChar">RampLowerRightCornerChar</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Lower right corner character</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampLowerRightCornerChar { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampLowerRightCornerColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampLowerRightCornerColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L453">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampLowerRightCornerColor_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLowerRightCornerColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampLowerRightCornerColor" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampLowerRightCornerColor">RampLowerRightCornerColor</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Lower right corner color.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampLowerRightCornerColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumBlueColorLevelEnd.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumBlueColorLevelEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L393">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumBlueColorLevelEnd_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumBlueColorLevelEnd*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumBlueColorLevelEnd" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumBlueColorLevelEnd">RampMaximumBlueColorLevelEnd</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The maximum blue color level (true color - end)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMaximumBlueColorLevelEnd { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumBlueColorLevelStart.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumBlueColorLevelStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L287">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumBlueColorLevelStart_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumBlueColorLevelStart*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumBlueColorLevelStart" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumBlueColorLevelStart">RampMaximumBlueColorLevelStart</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The maximum blue color level (true color - start)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMaximumBlueColorLevelStart { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumColorLevelEnd.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumColorLevelEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L406">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumColorLevelEnd_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumColorLevelEnd*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumColorLevelEnd" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumColorLevelEnd">RampMaximumColorLevelEnd</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The maximum color level (255 colors or 16 colors - end)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMaximumColorLevelEnd { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumColorLevelStart.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumColorLevelStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L300">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumColorLevelStart_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumColorLevelStart*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumColorLevelStart" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumColorLevelStart">RampMaximumColorLevelStart</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The maximum color level (255 colors or 16 colors - start)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMaximumColorLevelStart { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumGreenColorLevelEnd.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumGreenColorLevelEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L380">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumGreenColorLevelEnd_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumGreenColorLevelEnd*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumGreenColorLevelEnd" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumGreenColorLevelEnd">RampMaximumGreenColorLevelEnd</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The maximum green color level (true color - end)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMaximumGreenColorLevelEnd { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumGreenColorLevelStart.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumGreenColorLevelStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L274">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumGreenColorLevelStart_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumGreenColorLevelStart*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumGreenColorLevelStart" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumGreenColorLevelStart">RampMaximumGreenColorLevelStart</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The maximum green color level (true color - start)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMaximumGreenColorLevelStart { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumRedColorLevelEnd.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumRedColorLevelEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L367">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumRedColorLevelEnd_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumRedColorLevelEnd*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumRedColorLevelEnd" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumRedColorLevelEnd">RampMaximumRedColorLevelEnd</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The maximum red color level (true color - end)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMaximumRedColorLevelEnd { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumRedColorLevelStart.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumRedColorLevelStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L261">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumRedColorLevelStart_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumRedColorLevelStart*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMaximumRedColorLevelStart" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMaximumRedColorLevelStart">RampMaximumRedColorLevelStart</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The maximum red color level (true color - start)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMaximumRedColorLevelStart { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumBlueColorLevelEnd.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumBlueColorLevelEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L340">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumBlueColorLevelEnd_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumBlueColorLevelEnd*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumBlueColorLevelEnd" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumBlueColorLevelEnd">RampMinimumBlueColorLevelEnd</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The minimum blue color level (true color - end)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMinimumBlueColorLevelEnd { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumBlueColorLevelStart.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumBlueColorLevelStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L234">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumBlueColorLevelStart_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumBlueColorLevelStart*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumBlueColorLevelStart" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumBlueColorLevelStart">RampMinimumBlueColorLevelStart</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The minimum blue color level (true color - start)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMinimumBlueColorLevelStart { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumColorLevelEnd.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumColorLevelEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L353">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumColorLevelEnd_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumColorLevelEnd*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumColorLevelEnd" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumColorLevelEnd">RampMinimumColorLevelEnd</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The minimum color level (255 colors or 16 colors - end)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMinimumColorLevelEnd { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumColorLevelStart.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumColorLevelStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L247">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumColorLevelStart_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumColorLevelStart*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumColorLevelStart" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumColorLevelStart">RampMinimumColorLevelStart</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The minimum color level (255 colors or 16 colors - start)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMinimumColorLevelStart { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumGreenColorLevelEnd.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumGreenColorLevelEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L327">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumGreenColorLevelEnd_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumGreenColorLevelEnd*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumGreenColorLevelEnd" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumGreenColorLevelEnd">RampMinimumGreenColorLevelEnd</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The minimum green color level (true color - end)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMinimumGreenColorLevelEnd { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumGreenColorLevelStart.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumGreenColorLevelStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L221">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumGreenColorLevelStart_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumGreenColorLevelStart*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumGreenColorLevelStart" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumGreenColorLevelStart">RampMinimumGreenColorLevelStart</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The minimum green color level (true color - start)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMinimumGreenColorLevelStart { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumRedColorLevelEnd.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumRedColorLevelEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L314">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumRedColorLevelEnd_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumRedColorLevelEnd*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumRedColorLevelEnd" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumRedColorLevelEnd">RampMinimumRedColorLevelEnd</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The minimum red color level (true color - end)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMinimumRedColorLevelEnd { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumRedColorLevelStart.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumRedColorLevelStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L208">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumRedColorLevelStart_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumRedColorLevelStart*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampMinimumRedColorLevelStart" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampMinimumRedColorLevelStart">RampMinimumRedColorLevelStart</h4>
-  <div class="markdown level1 summary"><p>[Ramp] The minimum red color level (true color - start)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampMinimumRedColorLevelStart { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampNextRampDelay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampNextRampDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L100">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampNextRampDelay_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampNextRampDelay*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampNextRampDelay" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampNextRampDelay">RampNextRampDelay</h4>
-  <div class="markdown level1 summary"><p>[Ramp] How many milliseconds to wait before starting the next ramp?</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RampNextRampDelay { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampRightFrameChar.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampRightFrameChar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L196">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampRightFrameChar_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampRightFrameChar*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampRightFrameChar" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampRightFrameChar">RampRightFrameChar</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Right frame character</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampRightFrameChar { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampRightFrameColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampRightFrameColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L497">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampRightFrameColor_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampRightFrameColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampRightFrameColor" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampRightFrameColor">RampRightFrameColor</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Right frame color.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampRightFrameColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampTrueColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampTrueColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L77">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampTrueColor_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampTrueColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampTrueColor" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampTrueColor">RampTrueColor</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Enable truecolor support. Has a higher priority than 255 color support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RampTrueColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampUpperFrameChar.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampUpperFrameChar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L160">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampUpperFrameChar_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampUpperFrameChar*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampUpperFrameChar" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampUpperFrameChar">RampUpperFrameChar</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Upper frame character</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampUpperFrameChar { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampUpperFrameColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampUpperFrameColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L464">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampUpperFrameColor_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampUpperFrameColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampUpperFrameColor" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampUpperFrameColor">RampUpperFrameColor</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Upper frame color.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampUpperFrameColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampUpperLeftCornerChar.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampUpperLeftCornerChar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L112">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampUpperLeftCornerChar_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampUpperLeftCornerChar*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampUpperLeftCornerChar" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampUpperLeftCornerChar">RampUpperLeftCornerChar</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Upper left corner character</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampUpperLeftCornerChar { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampUpperLeftCornerColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampUpperLeftCornerColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L420">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampUpperLeftCornerColor_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampUpperLeftCornerColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampUpperLeftCornerColor" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampUpperLeftCornerColor">RampUpperLeftCornerColor</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Upper left corner color.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampUpperLeftCornerColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampUpperRightCornerChar.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampUpperRightCornerChar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L124">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampUpperRightCornerChar_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampUpperRightCornerChar*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampUpperRightCornerChar" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampUpperRightCornerChar">RampUpperRightCornerChar</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Upper right corner character</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampUpperRightCornerChar { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampUpperRightCornerColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampUpperRightCornerColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L431">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampUpperRightCornerColor_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampUpperRightCornerColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampUpperRightCornerColor" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampUpperRightCornerColor">RampUpperRightCornerColor</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Upper right corner color.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RampUpperRightCornerColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_RampUseBorderColors.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.RampUseBorderColors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L508">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_RampUseBorderColors_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampUseBorderColors*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_RampUseBorderColors" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.RampUseBorderColors">RampUseBorderColors</h4>
-  <div class="markdown level1 summary"><p>[Ramp] Use the border colors.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RampUseBorderColors { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_Ramp_DoWork.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.Ramp_DoWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L517">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_RampDisplay_Ramp_DoWork_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.Ramp_DoWork*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_Ramp_DoWork" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.Ramp_DoWork">Ramp_DoWork()</h4>
+  <a id="KS_Misc_Screensaver_Displays_RampDisplay_ScreensaverLogic_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.ScreensaverLogic*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_ScreensaverLogic" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.ScreensaverLogic">IScreensaver.ScreensaverLogic()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Ramp_DoWork()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverLogic()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverLogic">BaseScreensaver.IScreensaver.ScreensaverLogic()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_ScreensaverName.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.ScreensaverName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L526">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_RampDisplay_ScreensaverName_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.ScreensaverName*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_ScreensaverName" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.ScreensaverName">IScreensaver.ScreensaverName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string IScreensaver.ScreensaverName { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverName">BaseScreensaver.IScreensaver.ScreensaverName</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_ScreensaverPreparation.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.ScreensaverPreparation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L530">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_RampDisplay_ScreensaverPreparation_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.ScreensaverPreparation*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_ScreensaverPreparation" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.ScreensaverPreparation">IScreensaver.ScreensaverPreparation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverPreparation()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverPreparation">BaseScreensaver.IScreensaver.ScreensaverPreparation()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay_ScreensaverSettings.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay.ScreensaverSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L528">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_RampDisplay_ScreensaverSettings_" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.ScreensaverSettings*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_RampDisplay_ScreensaverSettings" data-uid="KS.Misc.Screensaver.Displays.RampDisplay.ScreensaverSettings">IScreensaver.ScreensaverSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Dictionary&lt;string, object&gt; IScreensaver.ScreensaverSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverSettings">BaseScreensaver.IScreensaver.ScreensaverSettings</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a>
   </div>
 </article>
           </div>
@@ -1272,7 +216,7 @@
                     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_RampDisplay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.RampDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Ramp.vb/#L517" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

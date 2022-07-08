@@ -87,33 +87,55 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">FallingLineDisplay</span></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html">BaseScreensaver</a></div>
+    <div class="level2"><span class="xref">FallingLineDisplay</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Screensaver.Displays.html">KS.Misc.Screensaver.Displays</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FallingLineDisplay</code></pre>
+    <pre><code class="lang-csharp hljs">public class FallingLineDisplay : BaseScreensaver, IScreensaver</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="eii">Explicit Interface Implementations
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLine255Colors.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLine255Colors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_ScreensaverLogic.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.ScreensaverLogic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L41">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L218">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLine255Colors_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLine255Colors*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLine255Colors" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLine255Colors">FallingLine255Colors</h4>
-  <div class="markdown level1 summary"><p>[FallingLine] Enable 255 color support. Has a higher priority than 16 color support.</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_ScreensaverLogic_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.ScreensaverLogic*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_ScreensaverLogic" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.ScreensaverLogic">IScreensaver.ScreensaverLogic()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool FallingLine255Colors { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverLogic()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverLogic">BaseScreensaver.IScreensaver.ScreensaverLogic()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_ScreensaverName.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.ScreensaverName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L203">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_ScreensaverName_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.ScreensaverName*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_ScreensaverName" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.ScreensaverName">IScreensaver.ScreensaverName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string IScreensaver.ScreensaverName { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -123,28 +145,46 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverName">BaseScreensaver.IScreensaver.ScreensaverName</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineDelay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_ScreensaverPreparation.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.ScreensaverPreparation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L63">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L207">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineDelay_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineDelay*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineDelay" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineDelay">FallingLineDelay</h4>
-  <div class="markdown level1 summary"><p>[FallingLine] How many milliseconds to wait before making the next write?</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_ScreensaverPreparation_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.ScreensaverPreparation*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_ScreensaverPreparation" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.ScreensaverPreparation">IScreensaver.ScreensaverPreparation()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FallingLineDelay { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverPreparation()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverPreparation">BaseScreensaver.IScreensaver.ScreensaverPreparation()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_ScreensaverSettings.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.ScreensaverSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L205">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_ScreensaverSettings_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.ScreensaverSettings*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_ScreensaverSettings" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.ScreensaverSettings">IScreensaver.ScreensaverSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Dictionary&lt;string, object&gt; IScreensaver.ScreensaverSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -154,338 +194,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMaximumBlueColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMaximumBlueColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L166">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMaximumBlueColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMaximumBlueColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMaximumBlueColorLevel" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMaximumBlueColorLevel">FallingLineMaximumBlueColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FallingLine] The maximum blue color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FallingLineMaximumBlueColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMaximumColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMaximumColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L179">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMaximumColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMaximumColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMaximumColorLevel" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMaximumColorLevel">FallingLineMaximumColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FallingLine] The maximum color level (255 colors or 16 colors)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FallingLineMaximumColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMaximumGreenColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMaximumGreenColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L153">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMaximumGreenColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMaximumGreenColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMaximumGreenColorLevel" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMaximumGreenColorLevel">FallingLineMaximumGreenColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FallingLine] The maximum green color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FallingLineMaximumGreenColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMaximumRedColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMaximumRedColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L140">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMaximumRedColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMaximumRedColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMaximumRedColorLevel" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMaximumRedColorLevel">FallingLineMaximumRedColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FallingLine] The maximum red color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FallingLineMaximumRedColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMaxSteps.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMaxSteps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L75">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMaxSteps_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMaxSteps*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMaxSteps" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMaxSteps">FallingLineMaxSteps</h4>
-  <div class="markdown level1 summary"><p>[FallingLine] How many fade steps to do?</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FallingLineMaxSteps { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMinimumBlueColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMinimumBlueColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L113">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMinimumBlueColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMinimumBlueColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMinimumBlueColorLevel" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMinimumBlueColorLevel">FallingLineMinimumBlueColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FallingLine] The minimum blue color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FallingLineMinimumBlueColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMinimumColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMinimumColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L126">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMinimumColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMinimumColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMinimumColorLevel" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMinimumColorLevel">FallingLineMinimumColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FallingLine] The minimum color level (255 colors or 16 colors)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FallingLineMinimumColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMinimumGreenColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMinimumGreenColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L100">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMinimumGreenColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMinimumGreenColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMinimumGreenColorLevel" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMinimumGreenColorLevel">FallingLineMinimumGreenColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FallingLine] The minimum green color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FallingLineMinimumGreenColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMinimumRedColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMinimumRedColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L87">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMinimumRedColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMinimumRedColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineMinimumRedColorLevel" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineMinimumRedColorLevel">FallingLineMinimumRedColorLevel</h4>
-  <div class="markdown level1 summary"><p>[FallingLine] The minimum red color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FallingLineMinimumRedColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineTrueColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineTrueColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L52">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineTrueColor_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineTrueColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLineTrueColor" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLineTrueColor">FallingLineTrueColor</h4>
-  <div class="markdown level1 summary"><p>[FallingLine] Enable truecolor support. Has a higher priority than 255 color support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool FallingLineTrueColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLine_DoWork.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLine_DoWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L194">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLine_DoWork_" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLine_DoWork*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FallingLineDisplay_FallingLine_DoWork" data-uid="KS.Misc.Screensaver.Displays.FallingLineDisplay.FallingLine_DoWork">FallingLine_DoWork()</h4>
-  <div class="markdown level1 summary"><p>Handles the code of FallingLine</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void FallingLine_DoWork()</code></pre>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverSettings">BaseScreensaver.IScreensaver.ScreensaverSettings</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a>
   </div>
 </article>
           </div>
@@ -498,7 +216,7 @@
                     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FallingLineDisplay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FallingLineDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/FallingLine.vb/#L192" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -87,33 +87,55 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">FireworksDisplay</span></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html">BaseScreensaver</a></div>
+    <div class="level2"><span class="xref">FireworksDisplay</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Screensaver.Displays.html">KS.Misc.Screensaver.Displays</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Misc_Screensaver_Displays_FireworksDisplay_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FireworksDisplay</code></pre>
+    <pre><code class="lang-csharp hljs">public class FireworksDisplay : BaseScreensaver, IScreensaver</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="eii">Explicit Interface Implementations
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_Fireworks255Colors.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.Fireworks255Colors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_ScreensaverLogic.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.ScreensaverLogic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L42">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L217">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_Fireworks255Colors_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.Fireworks255Colors*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_Fireworks255Colors" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.Fireworks255Colors">Fireworks255Colors</h4>
-  <div class="markdown level1 summary"><p>[Fireworks] Enable 255 color support. Has a higher priority than 16 color support.</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_ScreensaverLogic_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.ScreensaverLogic*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_ScreensaverLogic" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.ScreensaverLogic">IScreensaver.ScreensaverLogic()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Fireworks255Colors { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverLogic()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverLogic">BaseScreensaver.IScreensaver.ScreensaverLogic()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_ScreensaverName.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.ScreensaverName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L202">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_ScreensaverName_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.ScreensaverName*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_ScreensaverName" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.ScreensaverName">IScreensaver.ScreensaverName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string IScreensaver.ScreensaverName { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -123,28 +145,46 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverName">BaseScreensaver.IScreensaver.ScreensaverName</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksDelay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_ScreensaverPreparation.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.ScreensaverPreparation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L64">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L206">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksDelay_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksDelay*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksDelay" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksDelay">FireworksDelay</h4>
-  <div class="markdown level1 summary"><p>[Fireworks] How many milliseconds to wait before making the next write?</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_ScreensaverPreparation_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.ScreensaverPreparation*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_ScreensaverPreparation" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.ScreensaverPreparation">IScreensaver.ScreensaverPreparation()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FireworksDelay { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverPreparation()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverPreparation">BaseScreensaver.IScreensaver.ScreensaverPreparation()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_ScreensaverSettings.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.ScreensaverSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L204">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_ScreensaverSettings_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.ScreensaverSettings*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_ScreensaverSettings" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.ScreensaverSettings">IScreensaver.ScreensaverSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Dictionary&lt;string, object&gt; IScreensaver.ScreensaverSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -154,338 +194,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMaximumBlueColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMaximumBlueColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L167">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMaximumBlueColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMaximumBlueColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMaximumBlueColorLevel" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMaximumBlueColorLevel">FireworksMaximumBlueColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Fireworks] The maximum blue color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FireworksMaximumBlueColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMaximumColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMaximumColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L180">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMaximumColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMaximumColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMaximumColorLevel" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMaximumColorLevel">FireworksMaximumColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Fireworks] The maximum color level (255 colors or 16 colors)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FireworksMaximumColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMaximumGreenColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMaximumGreenColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L154">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMaximumGreenColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMaximumGreenColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMaximumGreenColorLevel" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMaximumGreenColorLevel">FireworksMaximumGreenColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Fireworks] The maximum green color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FireworksMaximumGreenColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMaximumRedColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMaximumRedColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L141">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMaximumRedColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMaximumRedColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMaximumRedColorLevel" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMaximumRedColorLevel">FireworksMaximumRedColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Fireworks] The maximum red color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FireworksMaximumRedColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMinimumBlueColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMinimumBlueColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L114">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMinimumBlueColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMinimumBlueColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMinimumBlueColorLevel" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMinimumBlueColorLevel">FireworksMinimumBlueColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Fireworks] The minimum blue color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FireworksMinimumBlueColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMinimumColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMinimumColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L127">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMinimumColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMinimumColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMinimumColorLevel" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMinimumColorLevel">FireworksMinimumColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Fireworks] The minimum color level (255 colors or 16 colors)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FireworksMinimumColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMinimumGreenColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMinimumGreenColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L101">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMinimumGreenColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMinimumGreenColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMinimumGreenColorLevel" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMinimumGreenColorLevel">FireworksMinimumGreenColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Fireworks] The minimum green color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FireworksMinimumGreenColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMinimumRedColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMinimumRedColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L88">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMinimumRedColorLevel_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMinimumRedColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksMinimumRedColorLevel" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksMinimumRedColorLevel">FireworksMinimumRedColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Fireworks] The minimum red color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FireworksMinimumRedColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksRadius.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksRadius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L76">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksRadius_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksRadius*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksRadius" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksRadius">FireworksRadius</h4>
-  <div class="markdown level1 summary"><p>[Fireworks] The radius of the explosion</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FireworksRadius { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksTrueColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksTrueColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L53">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksTrueColor_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksTrueColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_FireworksTrueColor" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.FireworksTrueColor">FireworksTrueColor</h4>
-  <div class="markdown level1 summary"><p>[Fireworks] Enable truecolor support. Has a higher priority than 255 color support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool FireworksTrueColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay_Fireworks_DoWork.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay.Fireworks_DoWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L195">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_FireworksDisplay_Fireworks_DoWork_" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.Fireworks_DoWork*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_FireworksDisplay_Fireworks_DoWork" data-uid="KS.Misc.Screensaver.Displays.FireworksDisplay.Fireworks_DoWork">Fireworks_DoWork()</h4>
-  <div class="markdown level1 summary"><p>Handles the code of Fireworks</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Fireworks_DoWork()</code></pre>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverSettings">BaseScreensaver.IScreensaver.ScreensaverSettings</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a>
   </div>
 </article>
           </div>
@@ -498,7 +216,7 @@
                     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_FireworksDisplay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.FireworksDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L23" class="contribution-link">View Source</a>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Fireworks.vb/#L193" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

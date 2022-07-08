@@ -87,64 +87,55 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">BouncingBlockDisplay</span></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html">BaseScreensaver</a></div>
+    <div class="level2"><span class="xref">BouncingBlockDisplay</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Screensaver.Displays.html">KS.Misc.Screensaver.Displays</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BouncingBlockDisplay</code></pre>
+    <pre><code class="lang-csharp hljs">public class BouncingBlockDisplay : BaseScreensaver, IScreensaver</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="eii">Explicit Interface Implementations
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlock255Colors.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlock255Colors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_ScreensaverLogic.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ScreensaverLogic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L42">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L227">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlock255Colors_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlock255Colors*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlock255Colors" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlock255Colors">BouncingBlock255Colors</h4>
-  <div class="markdown level1 summary"><p>[BouncingBlock] Enable 255 color support. Has a higher priority than 16 color support.</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_ScreensaverLogic_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ScreensaverLogic*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_ScreensaverLogic" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ScreensaverLogic">IScreensaver.ScreensaverLogic()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool BouncingBlock255Colors { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverLogic()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverLogic">BaseScreensaver.IScreensaver.ScreensaverLogic()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockBackgroundColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockBackgroundColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_ScreensaverName.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ScreensaverName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L76">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L214">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockBackgroundColor_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockBackgroundColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockBackgroundColor" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockBackgroundColor">BouncingBlockBackgroundColor</h4>
-  <div class="markdown level1 summary"><p>[BouncingBlock] Screensaver background color</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_ScreensaverName_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ScreensaverName*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_ScreensaverName" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ScreensaverName">IScreensaver.ScreensaverName</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string BouncingBlockBackgroundColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string IScreensaver.ScreensaverName { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -159,23 +150,41 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverName">BaseScreensaver.IScreensaver.ScreensaverName</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockDelay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_ScreensaverPreparation.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ScreensaverPreparation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L64">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L218">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockDelay_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockDelay*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockDelay" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockDelay">BouncingBlockDelay</h4>
-  <div class="markdown level1 summary"><p>[BouncingBlock] How many milliseconds to wait before making the next write?</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_ScreensaverPreparation_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ScreensaverPreparation*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_ScreensaverPreparation" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ScreensaverPreparation">IScreensaver.ScreensaverPreparation()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BouncingBlockDelay { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverPreparation()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverPreparation">BaseScreensaver.IScreensaver.ScreensaverPreparation()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_ScreensaverSettings.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ScreensaverSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L216">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_ScreensaverSettings_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ScreensaverSettings*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_ScreensaverSettings" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ScreensaverSettings">IScreensaver.ScreensaverSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Dictionary&lt;string, object&gt; IScreensaver.ScreensaverSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -185,338 +194,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockForegroundColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockForegroundColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L87">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockForegroundColor_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockForegroundColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockForegroundColor" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockForegroundColor">BouncingBlockForegroundColor</h4>
-  <div class="markdown level1 summary"><p>[BouncingBlock] Screensaver foreground color</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string BouncingBlockForegroundColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMaximumBlueColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMaximumBlueColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L177">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMaximumBlueColorLevel_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMaximumBlueColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMaximumBlueColorLevel" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMaximumBlueColorLevel">BouncingBlockMaximumBlueColorLevel</h4>
-  <div class="markdown level1 summary"><p>[BouncingBlock] The maximum blue color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BouncingBlockMaximumBlueColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMaximumColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMaximumColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L190">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMaximumColorLevel_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMaximumColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMaximumColorLevel" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMaximumColorLevel">BouncingBlockMaximumColorLevel</h4>
-  <div class="markdown level1 summary"><p>[BouncingBlock] The maximum color level (255 colors or 16 colors)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BouncingBlockMaximumColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMaximumGreenColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMaximumGreenColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L164">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMaximumGreenColorLevel_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMaximumGreenColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMaximumGreenColorLevel" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMaximumGreenColorLevel">BouncingBlockMaximumGreenColorLevel</h4>
-  <div class="markdown level1 summary"><p>[BouncingBlock] The maximum green color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BouncingBlockMaximumGreenColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMaximumRedColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMaximumRedColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L151">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMaximumRedColorLevel_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMaximumRedColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMaximumRedColorLevel" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMaximumRedColorLevel">BouncingBlockMaximumRedColorLevel</h4>
-  <div class="markdown level1 summary"><p>[BouncingBlock] The maximum red color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BouncingBlockMaximumRedColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMinimumBlueColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMinimumBlueColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L124">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMinimumBlueColorLevel_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMinimumBlueColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMinimumBlueColorLevel" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMinimumBlueColorLevel">BouncingBlockMinimumBlueColorLevel</h4>
-  <div class="markdown level1 summary"><p>[BouncingBlock] The minimum blue color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BouncingBlockMinimumBlueColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMinimumColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMinimumColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L137">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMinimumColorLevel_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMinimumColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMinimumColorLevel" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMinimumColorLevel">BouncingBlockMinimumColorLevel</h4>
-  <div class="markdown level1 summary"><p>[BouncingBlock] The minimum color level (255 colors or 16 colors)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BouncingBlockMinimumColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMinimumGreenColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMinimumGreenColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L111">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMinimumGreenColorLevel_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMinimumGreenColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMinimumGreenColorLevel" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMinimumGreenColorLevel">BouncingBlockMinimumGreenColorLevel</h4>
-  <div class="markdown level1 summary"><p>[BouncingBlock] The minimum green color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BouncingBlockMinimumGreenColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMinimumRedColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMinimumRedColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L98">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMinimumRedColorLevel_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMinimumRedColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockMinimumRedColorLevel" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockMinimumRedColorLevel">BouncingBlockMinimumRedColorLevel</h4>
-  <div class="markdown level1 summary"><p>[BouncingBlock] The minimum red color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BouncingBlockMinimumRedColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockTrueColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockTrueColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L53">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockTrueColor_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockTrueColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlockTrueColor" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlockTrueColor">BouncingBlockTrueColor</h4>
-  <div class="markdown level1 summary"><p>[BouncingBlock] Enable truecolor support. Has a higher priority than 255 color support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool BouncingBlockTrueColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlock_DoWork.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlock_DoWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L205">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlock_DoWork_" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlock_DoWork*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_BouncingBlockDisplay_BouncingBlock_DoWork" data-uid="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.BouncingBlock_DoWork">BouncingBlock_DoWork()</h4>
-  <div class="markdown level1 summary"><p>Handles the code of Bouncing Block</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void BouncingBlock_DoWork()</code></pre>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverSettings">BaseScreensaver.IScreensaver.ScreensaverSettings</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a>
   </div>
 </article>
           </div>
@@ -529,7 +216,7 @@
                     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_BouncingBlockDisplay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.BouncingBlockDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/BouncingBlock.vb/#L203" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

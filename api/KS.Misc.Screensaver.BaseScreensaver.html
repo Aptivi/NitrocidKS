@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseScreensaver
+   | Kernel Simulator API - Eofla Internals </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseScreensaver
+   | Kernel Simulator API - Eofla Internals ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="KS.Misc.Screensaver.BaseScreensaver">
+  
+  
+  <h1 id="KS_Misc_Screensaver_BaseScreensaver" data-uid="KS.Misc.Screensaver.BaseScreensaver" class="text-break">Class BaseScreensaver
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BaseScreensaver</span></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.BarRotDisplay.html">BarRotDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.BeatFaderDisplay.html">BeatFaderDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.BouncingBlockDisplay.html">BouncingBlockDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.BouncingTextDisplay.html">BouncingTextDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.ColorMixDisplay.html">ColorMixDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.CustomDisplay.html">CustomDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.DateAndTimeDisplay.html">DateAndTimeDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.DiscoDisplay.html">DiscoDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.DissolveDisplay.html">DissolveDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.FaderBackDisplay.html">FaderBackDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.FaderDisplay.html">FaderDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.FallingLineDisplay.html">FallingLineDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.FigletDisplay.html">FigletDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.FireworksDisplay.html">FireworksDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.FlashColorDisplay.html">FlashColorDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.FlashTextDisplay.html">FlashTextDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.GlitchDisplay.html">GlitchDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.GlitterColorDisplay.html">GlitterColorDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.html">GlitterMatrixDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.LighterDisplay.html">LighterDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.LinesDisplay.html">LinesDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.MarqueeDisplay.html">MarqueeDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.MatrixDisplay.html">MatrixDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.NoiseDisplay.html">NoiseDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.PersonLookupDisplay.html">PersonLookupDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.PlainDisplay.html">PlainDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.ProgressClockDisplay.html">ProgressClockDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.RampDisplay.html">RampDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.RandomSaverDisplay.html">RandomSaverDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.SnakerDisplay.html">SnakerDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.SpotWriteDisplay.html">SpotWriteDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.StackBoxDisplay.html">StackBoxDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.TypewriterDisplay.html">TypewriterDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.TypoDisplay.html">TypoDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.WindowsLogoDisplay.html">WindowsLogoDisplay</a></div>
+      <div class="level2"><a class="xref" href="KS.Misc.Screensaver.Displays.WipeDisplay.html">WipeDisplay</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Screensaver.html">KS.Misc.Screensaver</a></h6>
+  <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
+  <h5 id="KS_Misc_Screensaver_BaseScreensaver_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseScreensaver : IScreensaver</code></pre>
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_BaseScreensaver_ScreensaverLogic.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.BaseScreensaver.ScreensaverLogic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/BaseScreensaver.vb/#L34">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_BaseScreensaver_ScreensaverLogic_" data-uid="KS.Misc.Screensaver.BaseScreensaver.ScreensaverLogic*"></a>
+  <h4 id="KS_Misc_Screensaver_BaseScreensaver_ScreensaverLogic" data-uid="KS.Misc.Screensaver.BaseScreensaver.ScreensaverLogic">IScreensaver.ScreensaverLogic()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void IScreensaver.ScreensaverLogic()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_BaseScreensaver_ScreensaverName.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.BaseScreensaver.ScreensaverName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/BaseScreensaver.vb/#L23">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_BaseScreensaver_ScreensaverName_" data-uid="KS.Misc.Screensaver.BaseScreensaver.ScreensaverName*"></a>
+  <h4 id="KS_Misc_Screensaver_BaseScreensaver_ScreensaverName" data-uid="KS.Misc.Screensaver.BaseScreensaver.ScreensaverName">IScreensaver.ScreensaverName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string IScreensaver.ScreensaverName { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_BaseScreensaver_ScreensaverPreparation.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.BaseScreensaver.ScreensaverPreparation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/BaseScreensaver.vb/#L27">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_BaseScreensaver_ScreensaverPreparation_" data-uid="KS.Misc.Screensaver.BaseScreensaver.ScreensaverPreparation*"></a>
+  <h4 id="KS_Misc_Screensaver_BaseScreensaver_ScreensaverPreparation" data-uid="KS.Misc.Screensaver.BaseScreensaver.ScreensaverPreparation">IScreensaver.ScreensaverPreparation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void IScreensaver.ScreensaverPreparation()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_BaseScreensaver_ScreensaverSettings.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.BaseScreensaver.ScreensaverSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/BaseScreensaver.vb/#L25">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_BaseScreensaver_ScreensaverSettings_" data-uid="KS.Misc.Screensaver.BaseScreensaver.ScreensaverSettings*"></a>
+  <h4 id="KS_Misc_Screensaver_BaseScreensaver_ScreensaverSettings" data-uid="KS.Misc.Screensaver.BaseScreensaver.ScreensaverSettings">IScreensaver.ScreensaverSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Dictionary&lt;string, object&gt; IScreensaver.ScreensaverSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_BaseScreensaver.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.BaseScreensaver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/BaseScreensaver.vb/#L20" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

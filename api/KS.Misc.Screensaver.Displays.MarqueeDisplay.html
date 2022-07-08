@@ -87,95 +87,55 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">MarqueeDisplay</span></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html">BaseScreensaver</a></div>
+    <div class="level2"><span class="xref">MarqueeDisplay</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Screensaver.Displays.html">KS.Misc.Screensaver.Displays</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MarqueeDisplay</code></pre>
+    <pre><code class="lang-csharp hljs">public class MarqueeDisplay : BaseScreensaver, IScreensaver</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="eii">Explicit Interface Implementations
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_Marquee255Colors.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.Marquee255Colors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_ScreensaverLogic.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.ScreensaverLogic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L44">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L231">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_Marquee255Colors_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.Marquee255Colors*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_Marquee255Colors" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.Marquee255Colors">Marquee255Colors</h4>
-  <div class="markdown level1 summary"><p>[Marquee] Enable 255 color support. Has a higher priority than 16 color support.</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_ScreensaverLogic_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.ScreensaverLogic*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_ScreensaverLogic" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.ScreensaverLogic">IScreensaver.ScreensaverLogic()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Marquee255Colors { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverLogic()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverLogic">BaseScreensaver.IScreensaver.ScreensaverLogic()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeAlwaysCentered.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeAlwaysCentered%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_ScreensaverName.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.ScreensaverName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L88">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L216">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeAlwaysCentered_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeAlwaysCentered*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeAlwaysCentered" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeAlwaysCentered">MarqueeAlwaysCentered</h4>
-  <div class="markdown level1 summary"><p>[Marquee] Whether the text is always on center.</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_ScreensaverName_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.ScreensaverName*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_ScreensaverName" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.ScreensaverName">IScreensaver.ScreensaverName</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool MarqueeAlwaysCentered { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string IScreensaver.ScreensaverName { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeBackgroundColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeBackgroundColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L110">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeBackgroundColor_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeBackgroundColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeBackgroundColor" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeBackgroundColor">MarqueeBackgroundColor</h4>
-  <div class="markdown level1 summary"><p>[Marquee] Screensaver background color</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string MarqueeBackgroundColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -190,23 +150,41 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverName">BaseScreensaver.IScreensaver.ScreensaverName</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeDelay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_ScreensaverPreparation.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.ScreensaverPreparation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L66">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L220">View Source</a>
   </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeDelay_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeDelay*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeDelay" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeDelay">MarqueeDelay</h4>
-  <div class="markdown level1 summary"><p>[Marquee] How many milliseconds to wait before making the next write?</p>
-</div>
+  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_ScreensaverPreparation_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.ScreensaverPreparation*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_ScreensaverPreparation" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.ScreensaverPreparation">IScreensaver.ScreensaverPreparation()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MarqueeDelay { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void IScreensaver.ScreensaverPreparation()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverPreparation">BaseScreensaver.IScreensaver.ScreensaverPreparation()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_ScreensaverSettings.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.ScreensaverSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L218">View Source</a>
+  </span>
+  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_ScreensaverSettings_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.ScreensaverSettings*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_ScreensaverSettings" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.ScreensaverSettings">IScreensaver.ScreensaverSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Dictionary&lt;string, object&gt; IScreensaver.ScreensaverSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -216,369 +194,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMaximumBlueColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMaximumBlueColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L187">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMaximumBlueColorLevel_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMaximumBlueColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMaximumBlueColorLevel" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMaximumBlueColorLevel">MarqueeMaximumBlueColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Marquee] The maximum blue color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MarqueeMaximumBlueColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMaximumColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMaximumColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L198">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMaximumColorLevel_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMaximumColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMaximumColorLevel" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMaximumColorLevel">MarqueeMaximumColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Marquee] The maximum color level (255 colors or 16 colors)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MarqueeMaximumColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMaximumGreenColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMaximumGreenColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L176">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMaximumGreenColorLevel_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMaximumGreenColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMaximumGreenColorLevel" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMaximumGreenColorLevel">MarqueeMaximumGreenColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Marquee] The maximum green color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MarqueeMaximumGreenColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMaximumRedColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMaximumRedColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L165">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMaximumRedColorLevel_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMaximumRedColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMaximumRedColorLevel" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMaximumRedColorLevel">MarqueeMaximumRedColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Marquee] The maximum red color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MarqueeMaximumRedColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMinimumBlueColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMinimumBlueColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L143">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMinimumBlueColorLevel_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMinimumBlueColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMinimumBlueColorLevel" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMinimumBlueColorLevel">MarqueeMinimumBlueColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Marquee] The minimum blue color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MarqueeMinimumBlueColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMinimumColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMinimumColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L154">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMinimumColorLevel_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMinimumColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMinimumColorLevel" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMinimumColorLevel">MarqueeMinimumColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Marquee] The minimum color level (255 colors or 16 colors)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MarqueeMinimumColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMinimumGreenColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMinimumGreenColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L132">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMinimumGreenColorLevel_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMinimumGreenColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMinimumGreenColorLevel" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMinimumGreenColorLevel">MarqueeMinimumGreenColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Marquee] The minimum green color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MarqueeMinimumGreenColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMinimumRedColorLevel.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMinimumRedColorLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L121">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMinimumRedColorLevel_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMinimumRedColorLevel*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeMinimumRedColorLevel" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeMinimumRedColorLevel">MarqueeMinimumRedColorLevel</h4>
-  <div class="markdown level1 summary"><p>[Marquee] The minimum red color level (true color)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MarqueeMinimumRedColorLevel { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeTrueColor.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeTrueColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L55">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeTrueColor_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeTrueColor*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeTrueColor" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeTrueColor">MarqueeTrueColor</h4>
-  <div class="markdown level1 summary"><p>[Marquee] Enable truecolor support. Has a higher priority than 255 color support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool MarqueeTrueColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeUseConsoleAPI.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeUseConsoleAPI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L99">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeUseConsoleAPI_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeUseConsoleAPI*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeUseConsoleAPI" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeUseConsoleAPI">MarqueeUseConsoleAPI</h4>
-  <div class="markdown level1 summary"><p>[Marquee] Whether to use the Console.Clear() API (slow) or use the line-clearing VT sequence (fast).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool MarqueeUseConsoleAPI { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeWrite.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeWrite%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L77">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeWrite_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeWrite*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_MarqueeWrite" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.MarqueeWrite">MarqueeWrite</h4>
-  <div class="markdown level1 summary"><p>[Marquee] Text for Marquee. Shorter is better.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string MarqueeWrite { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay_Marquee_DoWork.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay.Marquee_DoWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L210">View Source</a>
-  </span>
-  <a id="KS_Misc_Screensaver_Displays_MarqueeDisplay_Marquee_DoWork_" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.Marquee_DoWork*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MarqueeDisplay_Marquee_DoWork" data-uid="KS.Misc.Screensaver.Displays.MarqueeDisplay.Marquee_DoWork">Marquee_DoWork()</h4>
-  <div class="markdown level1 summary"><p>Handles the code of Marquee</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Marquee_DoWork()</code></pre>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverSettings">BaseScreensaver.IScreensaver.ScreensaverSettings</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a>
   </div>
 </article>
           </div>
@@ -591,7 +216,7 @@
                     <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Screensaver_Displays_MarqueeDisplay.md&amp;value=---%0Auid%3A%20KS.Misc.Screensaver.Displays.MarqueeDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Screensaver/Displays/Marquee.vb/#L207" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
