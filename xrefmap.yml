@@ -18768,6 +18768,19 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.CustomDisplay
   fullName: KS.Misc.Screensaver.Displays.CustomDisplay
   nameWithType: CustomDisplay
+- uid: KS.Misc.Screensaver.Displays.CustomDisplay.#ctor(KS.Misc.Screensaver.BaseScreensaver)
+  name: CustomDisplay(BaseScreensaver)
+  href: api/KS.Misc.Screensaver.Displays.CustomDisplay.html#KS_Misc_Screensaver_Displays_CustomDisplay__ctor_KS_Misc_Screensaver_BaseScreensaver_
+  commentId: M:KS.Misc.Screensaver.Displays.CustomDisplay.#ctor(KS.Misc.Screensaver.BaseScreensaver)
+  fullName: KS.Misc.Screensaver.Displays.CustomDisplay.CustomDisplay(KS.Misc.Screensaver.BaseScreensaver)
+  nameWithType: CustomDisplay.CustomDisplay(BaseScreensaver)
+- uid: KS.Misc.Screensaver.Displays.CustomDisplay.#ctor*
+  name: CustomDisplay
+  href: api/KS.Misc.Screensaver.Displays.CustomDisplay.html#KS_Misc_Screensaver_Displays_CustomDisplay__ctor_
+  commentId: Overload:KS.Misc.Screensaver.Displays.CustomDisplay.#ctor
+  isSpec: "True"
+  fullName: KS.Misc.Screensaver.Displays.CustomDisplay.CustomDisplay
+  nameWithType: CustomDisplay.CustomDisplay
 - uid: KS.Misc.Screensaver.Displays.CustomDisplay.ScreensaverLogic
   name: IScreensaver.ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.CustomDisplay.html#KS_Misc_Screensaver_Displays_CustomDisplay_ScreensaverLogic
@@ -18844,6 +18857,88 @@ references:
   fullName.vb: KS.Misc.Screensaver.Displays.CustomDisplay.ScreensaverSettings
   nameWithType: CustomDisplay.IScreensaver.ScreensaverSettings
   nameWithType.vb: CustomDisplay.ScreensaverSettings
+- uid: KS.Misc.Screensaver.Displays.CustomLegacyDisplay
+  name: CustomLegacyDisplay
+  href: api/KS.Misc.Screensaver.Displays.CustomLegacyDisplay.html
+  commentId: T:KS.Misc.Screensaver.Displays.CustomLegacyDisplay
+  fullName: KS.Misc.Screensaver.Displays.CustomLegacyDisplay
+  nameWithType: CustomLegacyDisplay
+- uid: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverLogic
+  name: IScreensaver.ScreensaverLogic()
+  href: api/KS.Misc.Screensaver.Displays.CustomLegacyDisplay.html#KS_Misc_Screensaver_Displays_CustomLegacyDisplay_ScreensaverLogic
+  commentId: M:KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverLogic
+  name.vb: ScreensaverLogic()
+  fullName: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.KS.Misc.Screensaver.IScreensaver.ScreensaverLogic()
+  fullName.vb: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverLogic()
+  nameWithType: CustomLegacyDisplay.IScreensaver.ScreensaverLogic()
+  nameWithType.vb: CustomLegacyDisplay.ScreensaverLogic()
+- uid: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverLogic*
+  name: IScreensaver.ScreensaverLogic
+  href: api/KS.Misc.Screensaver.Displays.CustomLegacyDisplay.html#KS_Misc_Screensaver_Displays_CustomLegacyDisplay_ScreensaverLogic_
+  commentId: Overload:KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverLogic
+  isSpec: "True"
+  name.vb: ScreensaverLogic
+  fullName: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.KS.Misc.Screensaver.IScreensaver.ScreensaverLogic
+  fullName.vb: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverLogic
+  nameWithType: CustomLegacyDisplay.IScreensaver.ScreensaverLogic
+  nameWithType.vb: CustomLegacyDisplay.ScreensaverLogic
+- uid: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverName
+  name: IScreensaver.ScreensaverName
+  href: api/KS.Misc.Screensaver.Displays.CustomLegacyDisplay.html#KS_Misc_Screensaver_Displays_CustomLegacyDisplay_ScreensaverName
+  commentId: P:KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverName
+  name.vb: ScreensaverName
+  fullName: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.KS.Misc.Screensaver.IScreensaver.ScreensaverName
+  fullName.vb: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverName
+  nameWithType: CustomLegacyDisplay.IScreensaver.ScreensaverName
+  nameWithType.vb: CustomLegacyDisplay.ScreensaverName
+- uid: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverName*
+  name: IScreensaver.ScreensaverName
+  href: api/KS.Misc.Screensaver.Displays.CustomLegacyDisplay.html#KS_Misc_Screensaver_Displays_CustomLegacyDisplay_ScreensaverName_
+  commentId: Overload:KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverName
+  isSpec: "True"
+  name.vb: ScreensaverName
+  fullName: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.KS.Misc.Screensaver.IScreensaver.ScreensaverName
+  fullName.vb: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverName
+  nameWithType: CustomLegacyDisplay.IScreensaver.ScreensaverName
+  nameWithType.vb: CustomLegacyDisplay.ScreensaverName
+- uid: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverPreparation
+  name: IScreensaver.ScreensaverPreparation()
+  href: api/KS.Misc.Screensaver.Displays.CustomLegacyDisplay.html#KS_Misc_Screensaver_Displays_CustomLegacyDisplay_ScreensaverPreparation
+  commentId: M:KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverPreparation
+  name.vb: ScreensaverPreparation()
+  fullName: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.KS.Misc.Screensaver.IScreensaver.ScreensaverPreparation()
+  fullName.vb: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverPreparation()
+  nameWithType: CustomLegacyDisplay.IScreensaver.ScreensaverPreparation()
+  nameWithType.vb: CustomLegacyDisplay.ScreensaverPreparation()
+- uid: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverPreparation*
+  name: IScreensaver.ScreensaverPreparation
+  href: api/KS.Misc.Screensaver.Displays.CustomLegacyDisplay.html#KS_Misc_Screensaver_Displays_CustomLegacyDisplay_ScreensaverPreparation_
+  commentId: Overload:KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverPreparation
+  isSpec: "True"
+  name.vb: ScreensaverPreparation
+  fullName: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.KS.Misc.Screensaver.IScreensaver.ScreensaverPreparation
+  fullName.vb: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverPreparation
+  nameWithType: CustomLegacyDisplay.IScreensaver.ScreensaverPreparation
+  nameWithType.vb: CustomLegacyDisplay.ScreensaverPreparation
+- uid: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverSettings
+  name: IScreensaver.ScreensaverSettings
+  href: api/KS.Misc.Screensaver.Displays.CustomLegacyDisplay.html#KS_Misc_Screensaver_Displays_CustomLegacyDisplay_ScreensaverSettings
+  commentId: P:KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverSettings
+  name.vb: ScreensaverSettings
+  fullName: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.KS.Misc.Screensaver.IScreensaver.ScreensaverSettings
+  fullName.vb: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverSettings
+  nameWithType: CustomLegacyDisplay.IScreensaver.ScreensaverSettings
+  nameWithType.vb: CustomLegacyDisplay.ScreensaverSettings
+- uid: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverSettings*
+  name: IScreensaver.ScreensaverSettings
+  href: api/KS.Misc.Screensaver.Displays.CustomLegacyDisplay.html#KS_Misc_Screensaver_Displays_CustomLegacyDisplay_ScreensaverSettings_
+  commentId: Overload:KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverSettings
+  isSpec: "True"
+  name.vb: ScreensaverSettings
+  fullName: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.KS.Misc.Screensaver.IScreensaver.ScreensaverSettings
+  fullName.vb: KS.Misc.Screensaver.Displays.CustomLegacyDisplay.ScreensaverSettings
+  nameWithType: CustomLegacyDisplay.IScreensaver.ScreensaverSettings
+  nameWithType.vb: CustomLegacyDisplay.ScreensaverSettings
 - uid: KS.Misc.Screensaver.Displays.DateAndTimeDisplay
   name: DateAndTimeDisplay
   href: api/KS.Misc.Screensaver.Displays.DateAndTimeDisplay.html
