@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>What is remote debugging? | Kernel Simulator API - Eofla Internals </title>
+    <title>Remote debugging guide | Kernel Simulator API - Eofla Internals </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="What is remote debugging? | Kernel Simulator API - Eofla Internals ">
+    <meta name="title" content="Remote debugging guide | Kernel Simulator API - Eofla Internals ">
     <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,8 +77,9 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h2 id="what-is-remote-debugging">What is remote debugging?</h2>
+<h1 id="remote-debugging-guide">Remote debugging guide</h1>
 
+<h2 id="what-is-remote-debugging">What is remote debugging?</h2>
 <p>Remote debugging is the way of viewing debug information about one device on another device around the network. It requires a high-speed LAN connection to be able to activate remote debugging using raw connection.</p>
 <p>By default, it listens on port 3014, and can be changed by kernel configuration. The debugging output will be the same as the output file, but missing all the messages before you connected. The first message you will get is <code>Debug device &lt;LocalIP&gt; joined</code>.</p>
 <p>It not only provides facilities to look at the debug output live, but you can also chat with the other debuggers to discuss about the current problem that happened, like asking questions, and more.</p>
