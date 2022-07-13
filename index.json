@@ -702,7 +702,7 @@
   "api/KS.Misc.Dictionary.DictionaryManager.html": {
     "href": "api/KS.Misc.Dictionary.DictionaryManager.html",
     "title": "Class DictionaryManager | Kernel Simulator API - Eofla Internals",
-    "keywords": "Class DictionaryManager Inheritance DictionaryManager Namespace : KS.Misc.Dictionary Assembly : Kernel Simulator.dll Syntax public class DictionaryManager Methods | Improve this Doc View Source GetWordInfo(String) Gets the word information Declaration public static DictionaryWord GetWordInfo(string Word) Parameters Type Name Description System.String Word Returns Type Description DictionaryWord"
+    "keywords": "Class DictionaryManager Inheritance DictionaryManager Namespace : KS.Misc.Dictionary Assembly : Kernel Simulator.dll Syntax public class DictionaryManager Methods | Improve this Doc View Source GetWordInfo(String) Gets the word information Declaration public static DictionaryWord[] GetWordInfo(string Word) Parameters Type Name Description System.String Word Returns Type Description DictionaryWord []"
   },
   "api/KS.Misc.Dictionary.DictionaryWord.Definition.html": {
     "href": "api/KS.Misc.Dictionary.DictionaryWord.Definition.html",
