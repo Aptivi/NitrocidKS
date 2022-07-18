@@ -32980,6 +32980,38 @@ references:
   fullName.vb: KS.Scripting.Conditions.Types.NotEqualsCondition.IsConditionSatisfied
   nameWithType: NotEqualsCondition.ICondition.IsConditionSatisfied
   nameWithType.vb: NotEqualsCondition.IsConditionSatisfied
+- uid: KS.Scripting.Conditions.UESHConditional
+  name: UESHConditional
+  href: api/KS.Scripting.Conditions.UESHConditional.html
+  commentId: T:KS.Scripting.Conditions.UESHConditional
+  fullName: KS.Scripting.Conditions.UESHConditional
+  nameWithType: UESHConditional
+- uid: KS.Scripting.Conditions.UESHConditional.AvailableConditions
+  name: AvailableConditions
+  href: api/KS.Scripting.Conditions.UESHConditional.html#KS_Scripting_Conditions_UESHConditional_AvailableConditions
+  commentId: P:KS.Scripting.Conditions.UESHConditional.AvailableConditions
+  fullName: KS.Scripting.Conditions.UESHConditional.AvailableConditions
+  nameWithType: UESHConditional.AvailableConditions
+- uid: KS.Scripting.Conditions.UESHConditional.AvailableConditions*
+  name: AvailableConditions
+  href: api/KS.Scripting.Conditions.UESHConditional.html#KS_Scripting_Conditions_UESHConditional_AvailableConditions_
+  commentId: Overload:KS.Scripting.Conditions.UESHConditional.AvailableConditions
+  isSpec: "True"
+  fullName: KS.Scripting.Conditions.UESHConditional.AvailableConditions
+  nameWithType: UESHConditional.AvailableConditions
+- uid: KS.Scripting.Conditions.UESHConditional.ConditionSatisfied(System.String)
+  name: ConditionSatisfied(String)
+  href: api/KS.Scripting.Conditions.UESHConditional.html#KS_Scripting_Conditions_UESHConditional_ConditionSatisfied_System_String_
+  commentId: M:KS.Scripting.Conditions.UESHConditional.ConditionSatisfied(System.String)
+  fullName: KS.Scripting.Conditions.UESHConditional.ConditionSatisfied(System.String)
+  nameWithType: UESHConditional.ConditionSatisfied(String)
+- uid: KS.Scripting.Conditions.UESHConditional.ConditionSatisfied*
+  name: ConditionSatisfied
+  href: api/KS.Scripting.Conditions.UESHConditional.html#KS_Scripting_Conditions_UESHConditional_ConditionSatisfied_
+  commentId: Overload:KS.Scripting.Conditions.UESHConditional.ConditionSatisfied
+  isSpec: "True"
+  fullName: KS.Scripting.Conditions.UESHConditional.ConditionSatisfied
+  nameWithType: UESHConditional.ConditionSatisfied
 - uid: KS.Scripting.Interaction
   name: KS.Scripting.Interaction
   href: api/KS.Scripting.Interaction.html
@@ -33085,38 +33117,6 @@ references:
   isSpec: "True"
   fullName: KS.Scripting.Interaction.UESHCommands.PromptSelection
   nameWithType: UESHCommands.PromptSelection
-- uid: KS.Scripting.UESHConditional
-  name: UESHConditional
-  href: api/KS.Scripting.UESHConditional.html
-  commentId: T:KS.Scripting.UESHConditional
-  fullName: KS.Scripting.UESHConditional
-  nameWithType: UESHConditional
-- uid: KS.Scripting.UESHConditional.AvailableConditions
-  name: AvailableConditions
-  href: api/KS.Scripting.UESHConditional.html#KS_Scripting_UESHConditional_AvailableConditions
-  commentId: P:KS.Scripting.UESHConditional.AvailableConditions
-  fullName: KS.Scripting.UESHConditional.AvailableConditions
-  nameWithType: UESHConditional.AvailableConditions
-- uid: KS.Scripting.UESHConditional.AvailableConditions*
-  name: AvailableConditions
-  href: api/KS.Scripting.UESHConditional.html#KS_Scripting_UESHConditional_AvailableConditions_
-  commentId: Overload:KS.Scripting.UESHConditional.AvailableConditions
-  isSpec: "True"
-  fullName: KS.Scripting.UESHConditional.AvailableConditions
-  nameWithType: UESHConditional.AvailableConditions
-- uid: KS.Scripting.UESHConditional.ConditionSatisfied(System.String)
-  name: ConditionSatisfied(String)
-  href: api/KS.Scripting.UESHConditional.html#KS_Scripting_UESHConditional_ConditionSatisfied_System_String_
-  commentId: M:KS.Scripting.UESHConditional.ConditionSatisfied(System.String)
-  fullName: KS.Scripting.UESHConditional.ConditionSatisfied(System.String)
-  nameWithType: UESHConditional.ConditionSatisfied(String)
-- uid: KS.Scripting.UESHConditional.ConditionSatisfied*
-  name: ConditionSatisfied
-  href: api/KS.Scripting.UESHConditional.html#KS_Scripting_UESHConditional_ConditionSatisfied_
-  commentId: Overload:KS.Scripting.UESHConditional.ConditionSatisfied
-  isSpec: "True"
-  fullName: KS.Scripting.UESHConditional.ConditionSatisfied
-  nameWithType: UESHConditional.ConditionSatisfied
 - uid: KS.Scripting.UESHOperators
   name: UESHOperators
   href: api/KS.Scripting.UESHOperators.html
