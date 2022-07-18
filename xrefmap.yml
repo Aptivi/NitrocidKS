@@ -28942,19 +28942,6 @@ references:
   isSpec: "True"
   fullName: KS.Modifications.IScript.Name
   nameWithType: IScript.Name
-- uid: KS.Modifications.IScript.PerformCmd(KS.Shell.ShellBase.CommandInfo,System.String)
-  name: PerformCmd(CommandInfo, String)
-  href: api/KS.Modifications.IScript.html#KS_Modifications_IScript_PerformCmd_KS_Shell_ShellBase_CommandInfo_System_String_
-  commentId: M:KS.Modifications.IScript.PerformCmd(KS.Shell.ShellBase.CommandInfo,System.String)
-  fullName: KS.Modifications.IScript.PerformCmd(KS.Shell.ShellBase.CommandInfo, System.String)
-  nameWithType: IScript.PerformCmd(CommandInfo, String)
-- uid: KS.Modifications.IScript.PerformCmd*
-  name: PerformCmd
-  href: api/KS.Modifications.IScript.html#KS_Modifications_IScript_PerformCmd_
-  commentId: Overload:KS.Modifications.IScript.PerformCmd
-  isSpec: "True"
-  fullName: KS.Modifications.IScript.PerformCmd
-  nameWithType: IScript.PerformCmd
 - uid: KS.Modifications.IScript.StartMod
   name: StartMod()
   href: api/KS.Modifications.IScript.html#KS_Modifications_IScript_StartMod

@@ -303,9 +303,7 @@ End Class
 <ol start="5">
 <li>Since we're not implementing commands nor event handlers, we're going to leave these blank:</li>
 </ol>
-<pre><code class="lang-vb">    Sub PerformCmd(ByVal Command As CommandInfo, Optional ByVal args As String = &quot;&quot;) Implements IScript.PerformCmd
-    End Sub
-    Sub InitEvents(ByVal ev As String) Implements IScript.InitEvents
+<pre><code class="lang-vb">    Sub InitEvents(ByVal ev As String) Implements IScript.InitEvents
     End Sub
     Sub InitEvents(ByVal ev As String, ParamArray Args As Object()) Implements IScript.InitEvents
     End Sub
@@ -332,8 +330,6 @@ End Class
         End Sub
         Sub StopMod() Implements IScript.StopMod
             Write(&quot;Goodbye World&quot;, True, ColTypes.Neutral)
-        End Sub
-        Sub PerformCmd(Command As CommandInfo, Optional args As String = &quot;&quot;) Implements IScript.PerformCmd
         End Sub
         Sub InitEvents(ev As String) Implements IScript.InitEvents
         End Sub
@@ -364,9 +360,6 @@ End Class
         public void StopMod()
         {
             TextWriterColor.Write(&quot;Goodbye World&quot;, true, ColorTools.ColTypes.Neutral);
-        }
-        public void PerformCmd(CommandInfo Command, string args = &quot;&quot;)
-        {
         }
         public void InitEvents(string ev)
         {
