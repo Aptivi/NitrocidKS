@@ -1698,7 +1698,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Dictionary.DictionaryManager.html",
-          "hash": "k3J1Pj8wsI0+aBSsmHe+3swSW0Q7k+3xxi7vB36GM6Y="
+          "hash": "Cpsm7pLZ9QId7za/bQdeJ3vF8fKfTas6OeG9qKycWlk="
         }
       },
       "is_incremental": false,
@@ -2250,19 +2250,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.BaseScreensaver.html",
-          "hash": "np10ddgU7kE7XH1lgqdhKg/YiIcJa2oDJZEV50JN2m4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Customized.CustomSaverCompiler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Customized.CustomSaverCompiler.html",
-          "hash": "C/TrOea2cADHFYWMvtDQELFq86K4bkq9owkhmbqhcMo="
+          "hash": "d7ormxgIx98QuKD3Bl5Zmk0Hl9jBLAYuEHPRbY71Sls="
         }
       },
       "is_incremental": false,
@@ -2274,7 +2262,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Customized.CustomSaverInfo.html",
-          "hash": "Lllie2b9OjzcoJpQbzBvq6u8KIfX6kDhFtq32bSAmks="
+          "hash": "9o90L9bpJ4OaaMe//Rssg42Mp88sffR7YdhBEHSsrCY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Customized.CustomSaverParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Customized.CustomSaverParser.html",
+          "hash": "28fMC776D0DQNGlgWU4IPO3HWSeQI/i0olDZPOyCqWM="
         }
       },
       "is_incremental": false,
@@ -2286,7 +2286,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Customized.CustomSaverTools.html",
-          "hash": "GiaJvnGLRukqxPnYa20F2F8oIAKG+6QoaAsRirlVCao="
+          "hash": "PxpdDUjeRrLKWGhOY0qeipO7dGIOoiZ42AaOPtepS98="
         }
       },
       "is_incremental": false,
@@ -2298,7 +2298,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Customized.html",
-          "hash": "tQV02Hf2KRXQBcLipwtr61dk5IFk5Zm2bCR31PwaEpw="
+          "hash": "YA7BbSuEpGXYuXiL8Nzj/TPeUNaO1N5ROd2sSfb/dY8="
         }
       },
       "is_incremental": false,
@@ -2310,7 +2310,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.BarRotDisplay.html",
-          "hash": "8ap7/HeNol0YUsc3V+XJRK3IIwRfQgniJNwZavWXe9o="
+          "hash": "oUiPlII8cOfGU0OHWFfcDhvHLMBs1jrayXQfkM3TQ1w="
         }
       },
       "is_incremental": false,
@@ -2322,7 +2322,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.BarRotSettings.html",
-          "hash": "cNFwyC6EW+bCQRgRi0pB/9AEEdKLp9EW2ifkK1EkJGo="
+          "hash": "vtoodWiBa+PubmBe76xiISuMUWHfUfk8bdJkOaAJoMk="
         }
       },
       "is_incremental": false,
@@ -2334,7 +2334,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.BeatFaderDisplay.html",
-          "hash": "g8SShPeycqLECxnqtir/SYd6/ZfEBT6Zq+ivBt/6UhM="
+          "hash": "FVMObPj3M9cx+SZN2CzQXnhfMWHnhkYCk6IidhJnICA="
         }
       },
       "is_incremental": false,
@@ -2346,7 +2346,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.BeatFaderSettings.html",
-          "hash": "LwD5wnMmil2eRXYvMKWHfSUPLxptToAsjK1x8bqSXGY="
+          "hash": "/w3OyW2FK5c5F80O9xYKodrBmjrcwCAz6+HtSDAf89A="
         }
       },
       "is_incremental": false,
@@ -2358,7 +2358,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.BouncingBlockDisplay.html",
-          "hash": "dmG0Ywd1yzf6y1oIp8T64zCC+M9T/G5UK8oGEjsazhU="
+          "hash": "hUnXnqd9NX3DTxl2uDPQnHN5JU6hhH3+DZmFhJVUcp0="
         }
       },
       "is_incremental": false,
@@ -2370,7 +2370,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.BouncingBlockSettings.html",
-          "hash": "1tzmESfL5nImhPWhNuXnlpHGZPFa+ACSZ1ypgSnD9r4="
+          "hash": "nK8ufyE5z/d2ChlPnk/5pvORBlqCJZp0tmwIhCX+Je8="
         }
       },
       "is_incremental": false,
@@ -2382,7 +2382,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.BouncingTextDisplay.html",
-          "hash": "zWWvL3lG2ceFDOiVOe491scYtG6ZZkabmy18uKnLLlU="
+          "hash": "27jrTNKtuXCN6ICB3isepBDXfd7wuiaLfxLYwvYbpwU="
         }
       },
       "is_incremental": false,
@@ -2394,7 +2394,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.BouncingTextSettings.html",
-          "hash": "iI7xw4PnBSoZmbdfjTgZJ0ybGdIe1aJZITVuzx/uAp8="
+          "hash": "l524XIx4lBA101IsE115Ww3t+jlW1Z/u66z1Ndr4rQI="
         }
       },
       "is_incremental": false,
@@ -2406,7 +2406,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.ColorMixDisplay.html",
-          "hash": "t4BJyQTGivi0Hpzlxs5A62zGOeXk61y7gwdgILck+60="
+          "hash": "koo0Tq6RYELnz1vh2xBaRu1igSEG8+MBjrWXo5DIJgM="
         }
       },
       "is_incremental": false,
@@ -2418,7 +2418,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.ColorMixSettings.html",
-          "hash": "eOWmDX5uqaAF3hS0/ml3562seYkAFvf5bYvV5oMYJtQ="
+          "hash": "+YdQHdfNDCwU0/KHGty31/ir/ndtY+RR1l+EW/pvoqE="
         }
       },
       "is_incremental": false,
@@ -2430,19 +2430,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.CustomDisplay.html",
-          "hash": "tn4B00SOlcJ94XENS8rdp5alOK0oqQ4RsH9mVp1RBzg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.CustomLegacyDisplay.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.CustomLegacyDisplay.html",
-          "hash": "UxDVejLlj9XvuNNSSXMtt+CIDQe4HM7/PQAHH4ms/pw="
+          "hash": "91pmjqoYz1UIKWtP/ztAMN48QkYAmIcCpM9NIipIL9A="
         }
       },
       "is_incremental": false,
@@ -2454,7 +2442,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.DateAndTimeDisplay.html",
-          "hash": "tP80nQTKzJcs4Ai0bYreNul6NEuaXDgcp3WYBVv6jmQ="
+          "hash": "2P/pAVyRA+IGSMI8/AgCqn97F6IdKrjHfMWB5lrQrOo="
         }
       },
       "is_incremental": false,
@@ -2466,7 +2454,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.DateAndTimeSettings.html",
-          "hash": "xpYYMCRL9V01dj38w6Cpjb+FYMpk2rMOtx3XJSMoMF8="
+          "hash": "UNu6Qxe2434fJU9Y0Qq61y9vsAW7IiPaVRsyhcEf4ck="
         }
       },
       "is_incremental": false,
@@ -2478,7 +2466,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.DiscoDisplay.html",
-          "hash": "jlwwrpr8WU1M4hmnRSzveYp1bZiJWJRbD3S7a1C3QNU="
+          "hash": "6R9wNNVh4k9lGSfOHzEtqQvh38t9BI2a9OWt/ItIDzA="
         }
       },
       "is_incremental": false,
@@ -2490,7 +2478,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.DiscoSettings.html",
-          "hash": "klabxcLhaokpkSi2HzOsQoimcUgZdVTUAQqK72nv9gQ="
+          "hash": "jNgTwDB6D7jk5bKYrFvcdIkiGYdorqwO18VJ2JK1gRg="
         }
       },
       "is_incremental": false,
@@ -2526,7 +2514,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FaderBackDisplay.html",
-          "hash": "aCagUdEEcEJKfRg/WvqFbXOgZvTGZCQF/PIvrEwCj00="
+          "hash": "36v9geu1lqvXIK4gmNhOi45d9uJXMQ9Sscq2QUceOt0="
         }
       },
       "is_incremental": false,
@@ -2538,7 +2526,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FaderBackSettings.html",
-          "hash": "vMpGY89L48/qSMfb3u3llC4ACov96KwYRwkp/Cslo4w="
+          "hash": "GaeZ0LKzb5akHeDrDeFkJ+8SJdIJmBzpA1vZIIguFLY="
         }
       },
       "is_incremental": false,
@@ -2550,7 +2538,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FaderDisplay.html",
-          "hash": "4GhE3l23eLlpic57KL1TCmlSbfqH7Ii2y9bTdLju5U0="
+          "hash": "35jER31aEeMUK5rDZz48a3+stAw2qXvsxeCumVjZ/pY="
         }
       },
       "is_incremental": false,
@@ -2562,7 +2550,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FaderSettings.html",
-          "hash": "VGr0G3JD2dcHqG8yRXNs5ftfMCljAJhPFcuEPOdj9lA="
+          "hash": "NsBf/C7gVNgXMwtWbUICtUF61H2TlXZWZ7l7P6dD9WE="
         }
       },
       "is_incremental": false,
@@ -2574,7 +2562,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FallingLineDisplay.html",
-          "hash": "VkRI3cpc6asFSGi+3EbGoAY3Q0rDcGBA2EmPT32Bagc="
+          "hash": "BiNu/YWeJK6MbddW26zBHDs5nNIkxdWYh88FhH10MKU="
         }
       },
       "is_incremental": false,
@@ -2586,7 +2574,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FallingLineSettings.html",
-          "hash": "sKdVbV7ys6AfL9TM66E93tKcwdSr3gNNSYGZyxtAOio="
+          "hash": "NEXELuGw9Q++70DEnxvNi8JLsnMqda2vwSQHP/8B9lY="
         }
       },
       "is_incremental": false,
@@ -2598,7 +2586,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FigletDisplay.html",
-          "hash": "spPJ+EQP7pqTTock/Fgh1avk+Q/MqH2okuSoiOD1fKM="
+          "hash": "fGBkKs/p9bJ3rljVIuDqYXCv0VdRyDxnok0DQVvk2w8="
         }
       },
       "is_incremental": false,
@@ -2610,7 +2598,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FigletSettings.html",
-          "hash": "AplpQXm+tfUcRmpQp6sZcJ1yyd1/+Sk9GVtuZO6Xog8="
+          "hash": "NRRVzSicnVVfAdNTAAObcDkbnx6OKxxNbpivCDrrzgw="
         }
       },
       "is_incremental": false,
@@ -2622,7 +2610,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FireworksDisplay.html",
-          "hash": "NmbFmV6L1X4eUqOsBOdkpUDD8PdzzCB7qQpVhdOskpg="
+          "hash": "gi1rg7bMIb7O9fu4Qu01RhwC+TeIz7F8TT3IpGyHqrY="
         }
       },
       "is_incremental": false,
@@ -2634,7 +2622,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FireworksSettings.html",
-          "hash": "pJoWIcfHDLWJRjmzaCCGOZ2/8UgD8G4ijK7m8lXE+/o="
+          "hash": "ej91g17KYTy+Eslw4DaX6w3OvvlMqYhERFbfYHogPl8="
         }
       },
       "is_incremental": false,
@@ -2646,7 +2634,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FlashColorDisplay.html",
-          "hash": "pQI/euUYOOyO38nssj+LH/xr09F71tEDNBPSM2EZFt4="
+          "hash": "0Id5mvDgReFl0RNFXMLRkRNBkyQpe2d1PPRJvMbdYEg="
         }
       },
       "is_incremental": false,
@@ -2658,7 +2646,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FlashColorSettings.html",
-          "hash": "JGUqsnx4ujqbMrkAvaevLVdH4Mo6A16puuL0/gakY3U="
+          "hash": "An1ZTK/3Ap4F2jmjiSwB/r7KCaqyVX3AmBcTh/oMono="
         }
       },
       "is_incremental": false,
@@ -2670,7 +2658,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FlashTextDisplay.html",
-          "hash": "sNiploskG109aNG41z+lIVbp3VvtDHcrF1jvNJb3S74="
+          "hash": "QR0yfmjgh773HWX8qg2tohOcyC0ilL+RB08lI6ZQgrA="
         }
       },
       "is_incremental": false,
@@ -2682,7 +2670,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FlashTextSettings.html",
-          "hash": "cEGu9gJX0kXTSTFwD0Kwcenne+S/k7TigMQdjP+iwdQ="
+          "hash": "07vgH8VYHWo+kipxWAftkWEbfUh0qx9Z/G9Vt0Q+Hec="
         }
       },
       "is_incremental": false,
@@ -2694,7 +2682,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.GlitchDisplay.html",
-          "hash": "pLXfzHgn2O0YD0pHzMGVwV78lWojHzHLskCFntOtByg="
+          "hash": "EL0QRaFgAGpRrPUasd9koKcYc8TuHFNLSMqabjVXXas="
         }
       },
       "is_incremental": false,
@@ -2706,7 +2694,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.GlitchSettings.html",
-          "hash": "7GDso5+rkq4P3RCFXS2qRW4FWPGdxalkFfl+KOZ8UxE="
+          "hash": "pZk2FQ3Cw2OVfaeFx3v8s0VZzQQ3Gdo5BNVyR4pDoJM="
         }
       },
       "is_incremental": false,
@@ -2718,7 +2706,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.GlitterColorDisplay.html",
-          "hash": "+mpLhTjgPeoL57LxZAfbRigxv1heiMinKBE7RLRmc/U="
+          "hash": "ZzoXq8DM+w5RM9T8hBlDQvBg3Qji+9w+XnhqTO421lg="
         }
       },
       "is_incremental": false,
@@ -2730,7 +2718,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.GlitterColorSettings.html",
-          "hash": "SkzFUEufQSmmW5N2uH2dcVVHSaBB0OXkCiEaopKPHRI="
+          "hash": "iKIfJz6nN+KKai0appQz2mgbJ3h23krUji99RqaqgTI="
         }
       },
       "is_incremental": false,
@@ -2766,7 +2754,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.LighterDisplay.html",
-          "hash": "1THPsHOWBKMmF7Xro+2mgpT5KujqTRrswbqErvsxpCc="
+          "hash": "zd8arJGfEaSFJe5pB3iFxenWpTyWyC+orhdKPYThK+s="
         }
       },
       "is_incremental": false,
@@ -2778,7 +2766,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.LighterSettings.html",
-          "hash": "llV2LkqWM7fgcED6c4aEIEoX8xut0bKVpZZzwCj1NoQ="
+          "hash": "Pja1tQSpkwL+rm2tdcq3RvFib5cER07/98tkxJYS2zY="
         }
       },
       "is_incremental": false,
@@ -2790,7 +2778,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.LinesDisplay.html",
-          "hash": "1HohBLrhhuz6D4Qk6Wm4qCH+yjXTubcvr/1INmX0UEw="
+          "hash": "QQfsImmyWB+tVNk5L0gPogtqa+sTVUXlCfUJKvxA5bI="
         }
       },
       "is_incremental": false,
@@ -2802,7 +2790,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.LinesSettings.html",
-          "hash": "7iewPbkOx5a+Mh0MfWsHabPz5OhMf5EtslPVIV1k96s="
+          "hash": "vBdPTVsYroaV/r6RDNt7m95cic9kIaNH19IJfV2OjqU="
         }
       },
       "is_incremental": false,
@@ -2814,7 +2802,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.LinotypoSettings.FillType.html",
-          "hash": "PJaxdxGOTC5U3xIhxWGM/0iOtYIw0ozZMhoPt58o9lU="
+          "hash": "EW1AXkRu4p8vFhqLPNJAgwzDysQjLOE26THaRVVSsLA="
         }
       },
       "is_incremental": false,
@@ -2826,7 +2814,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.LinotypoSettings.html",
-          "hash": "fsdjEepO326on9WNvSUrIfuN2BPY8dnnYvDsBzgs7hA="
+          "hash": "htEdIbCtBp9dFj5hF8NJUwMtjaBL6GbVp+qGjl4IL0Q="
         }
       },
       "is_incremental": false,
@@ -2838,7 +2826,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.MarqueeDisplay.html",
-          "hash": "HGPKHdmzRrHKdwlSl0avT1jdYDfLTxeUCwevBaUz4fE="
+          "hash": "pnUHg7qmyfFUkPX997b0JMx7LRZ9tstSP1icXrpkHpI="
         }
       },
       "is_incremental": false,
@@ -2850,7 +2838,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.MarqueeSettings.html",
-          "hash": "dGmcI5rGd71r9cH+H+0yFPJtbP/whhvf9pd5LDQJlFQ="
+          "hash": "z+5iFe9oUBAoPi2qLifhDcIPtEqxAcdZaH5IjaQGtJk="
         }
       },
       "is_incremental": false,
@@ -2862,7 +2850,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.MatrixDisplay.html",
-          "hash": "t5P8paoXoPpB+dz7xleHs925TCjvKfhrfwrxty+DPUw="
+          "hash": "tOOer8PKstbMDVmJMbLPAoCxeGYuwbZ42xErkLZfcvI="
         }
       },
       "is_incremental": false,
@@ -2874,7 +2862,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.MatrixSettings.html",
-          "hash": "RL0hs2jU9ezP2sWUxIqmbJ6EIZbH3xOOlufAudaoiP8="
+          "hash": "m4aqI07xbyrYEo+UFUL7Pq3d9avJ9q4P+2u2cMKZVq4="
         }
       },
       "is_incremental": false,
@@ -2886,7 +2874,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.NoiseDisplay.html",
-          "hash": "gsgfU0ZNaThmHeZLaTmsPcEX321nG8dhKi5YnrKXOEc="
+          "hash": "bCfrundZvg3QPClg3a8B9zI2LWHbh9XSVq6+qo5zt+c="
         }
       },
       "is_incremental": false,
@@ -2898,7 +2886,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.NoiseSettings.html",
-          "hash": "4OIeCqLLZZ5CqAD23nES+CuphGWeozq0Kvq3r/xyzio="
+          "hash": "GKUT8lzA7iAhCd1FlW/i/vrR/wfyYP6NS8J6POe6vE0="
         }
       },
       "is_incremental": false,
@@ -2910,7 +2898,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.PersonLookupDisplay.html",
-          "hash": "AXoKXbBslGUm/UKhBFscQMnRMNmv5CrK9YvlX9buv6I="
+          "hash": "yQSAS1Mb145bJIuK4Ai8lQQPlnEsSPK4aIYb8V+IExY="
         }
       },
       "is_incremental": false,
@@ -2922,7 +2910,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.PersonLookupSettings.html",
-          "hash": "4A9tPpnWzxYpkDUQqUOjb/MQ1dsMwJ3Nx9p1cpsQkOo="
+          "hash": "KuvwyfXR08YnaeroLwKlIcbh7DC7zGNDT/PCxZ62oJk="
         }
       },
       "is_incremental": false,
@@ -2934,7 +2922,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.PlainDisplay.html",
-          "hash": "vO+Kjic2WEAg00a1Zcd9+kZD6DalH0BzvwztCDULZ7M="
+          "hash": "gAHvz0chicyuj5dZpABA2IsaJRu31wNXsqBpkVG/G+0="
         }
       },
       "is_incremental": false,
@@ -2946,7 +2934,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.ProgressClockDisplay.html",
-          "hash": "hKbeKtW27NEH6qSWiNtfYxQ8pAbMt4bs7IOisH3RFdY="
+          "hash": "6c+gCaFi5rsZPpVXpXwJiJ6/6k90X6YxxQFlseIhCqw="
         }
       },
       "is_incremental": false,
@@ -2958,7 +2946,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.ProgressClockSettings.html",
-          "hash": "hlggjhz5XeHBibh/whd4g93XZwIPsCVqkb3CDBcG59w="
+          "hash": "RJmMrBNoBj/xt2O1gi/zlb6NW/bIRp9OM7rWfBXMLeo="
         }
       },
       "is_incremental": false,
@@ -2970,7 +2958,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.RampDisplay.html",
-          "hash": "jIMu8Pq4pl52f5kf1uTjpVord/uF50mobDmJsFaY6sY="
+          "hash": "ks0s3GpkYlg3IatJ/bd8f6pYo9cCfGM+bQWqszBHW4Q="
         }
       },
       "is_incremental": false,
@@ -2982,7 +2970,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.RampSettings.html",
-          "hash": "H7FEDx9Z3u6vt02YNlLjSf9dGPkt6ww9zfDzyBNV3Oo="
+          "hash": "0iCqdg6S6oGbKdKP//Vyz4WRoch937q2plVKJKUC9Ls="
         }
       },
       "is_incremental": false,
@@ -2994,7 +2982,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.RandomSaverDisplay.html",
-          "hash": "ngDe3pAQus8sakhd50j+rvrbELvKrk4/F/vLB3jZY3E="
+          "hash": "xUlL3dPMibzcvCfoGwdPDZtd5rMt/mU2uIyyFef/x+g="
         }
       },
       "is_incremental": false,
@@ -3006,7 +2994,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.SnakerDisplay.html",
-          "hash": "9zdIxmLUrITRnnE2+pbQCVQFwfzuUriap98+qfRZO6s="
+          "hash": "aXekZ5Ewves9+30iflRFSzT40aV7gsH4391bAPaIwjE="
         }
       },
       "is_incremental": false,
@@ -3018,7 +3006,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.SnakerSettings.html",
-          "hash": "H0G4OIXqVaqQSL06JnfJsBvPx8n5Xpq5ur1CUqKI12s="
+          "hash": "YYq/3Inj+qRjEmDem+XsuSS9iD6Dq0+cFwH9eUXm9XU="
         }
       },
       "is_incremental": false,
@@ -3054,7 +3042,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.StackBoxDisplay.html",
-          "hash": "c02LpIZqWgGTxlmACwF0OcdQ6wtjSkND+fm1AtFzkXY="
+          "hash": "gSJl2Lj0y1q5wZ6mZcmr/lMjCjZxbTP7RwzR+b2adOk="
         }
       },
       "is_incremental": false,
@@ -3066,7 +3054,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.StackBoxSettings.html",
-          "hash": "al6aiTzlno8RxURgkIfi1a+xyihVJUv+3k0wx+plEHU="
+          "hash": "sOvYOTPgiAacDJqZosxyr4h00+g36ToqBYT+W5ksxXU="
         }
       },
       "is_incremental": false,
@@ -3078,7 +3066,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.TypewriterDisplay.html",
-          "hash": "0Qi7CfcyPz7EXvno8NllY73aBomgJK063/b6Y5xs8Nk="
+          "hash": "g7p2nAmeyTBli96zNKlIReE9P2ysGVuyII3gh07lZEg="
         }
       },
       "is_incremental": false,
@@ -3090,7 +3078,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.TypewriterSettings.html",
-          "hash": "3TTFSsdrMNKnIK1zYLPOwxlJW1LeSiRSaFk5mRMNxpw="
+          "hash": "Yt8vZS4RVXVM26tYAypXtnLATeJt/zH3r3IkpgL4r1s="
         }
       },
       "is_incremental": false,
@@ -3102,7 +3090,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.TypoDisplay.html",
-          "hash": "I50vq6msZIMWSzUZY07q/+AlqIGpnpG31yu0sSQbJwE="
+          "hash": "PB+9eQHrO6Hyc/+wqNo2WzoFlMD+XIO/QFDWFXkkNHw="
         }
       },
       "is_incremental": false,
@@ -3114,7 +3102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.TypoSettings.html",
-          "hash": "WkXUVaAFsUg1lvDxWR75yEnX7af+a7BXEoml8PWjcjA="
+          "hash": "3/QcvtNyfdBafnBRfXq0STzQTBU7BJzUb+WH4Xtxtq4="
         }
       },
       "is_incremental": false,
@@ -3126,7 +3114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.WindowsLogoDisplay.html",
-          "hash": "uZM7LIdpAyY6X7Lz2fW6Z+En9xXy5aM1v6rzdmxyKGo="
+          "hash": "JR6aN1ohD2JCze9EH7VTboY/WF5vIvQBSnRV9GIvOiM="
         }
       },
       "is_incremental": false,
@@ -3138,7 +3126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.WipeDisplay.html",
-          "hash": "pcpPsM07m3FVAezQ5eI5Vtk+glUyPu94+wAqN2S8WP8="
+          "hash": "wE700nxr3XBDOU8WVlx61zIsWd2y8386OcVxiOyY7bM="
         }
       },
       "is_incremental": false,
@@ -3150,7 +3138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.WipeSettings.html",
-          "hash": "yMi9QNUU59kePepfny2Pn0LVan6DNit9lfPn1/qYNIo="
+          "hash": "b52I90oCkf03XhAAIUtyAJvsL7WiQ4Ot6T5ivszPKd8="
         }
       },
       "is_incremental": false,
@@ -3162,19 +3150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.html",
-          "hash": "z4UZYzIAz9YaJmdlIPJx9Mp8fXYa50i4+Z4sSKrKOGo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.ICustomSaver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.ICustomSaver.html",
-          "hash": "58i2nZ8YW3KqCZ7GTAJZwMDGkiqBTZ2nl5ot+HFwCik="
+          "hash": "5Ny+oE5k0J2Rz/SCvMdaYeSGXJHUfULNw8mZ90NUneo="
         }
       },
       "is_incremental": false,
@@ -3198,7 +3174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Screensaver.html",
-          "hash": "gq9cmaI5pPCrsb65SGbBLM/+f2N+Tc43pkVc8fozgqU="
+          "hash": "cyJm+/UN2D/Bh0cYafSeSK09MCw67OkGidUzKl0mzyQ="
         }
       },
       "is_incremental": false,
@@ -3222,7 +3198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.html",
-          "hash": "z0PNjX1pTt8ROQstwDpvQ1Iv0jTmYap3JKhmNg9pFK8="
+          "hash": "CR9tHAZotosjznVuyylsuFjKqYfOaeaYPjjUf0VFkyQ="
         }
       },
       "is_incremental": false,
@@ -3810,7 +3786,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.ModManager.html",
-          "hash": "5Zn3WJbAnUfc2g8gy5ByeilUsaDLw/CgRMYx1r+aazo="
+          "hash": "vG985vZlWyALz/vrBaZCwr/DUzxiydvaHuZyt+69FiQ="
         }
       },
       "is_incremental": false,
@@ -3822,7 +3798,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.ModParser.html",
-          "hash": "o8ZDGmTs7IIZqmams9UxmJd6lvA77miqmI2iQsIhk64="
+          "hash": "IWNacNXkPQu8zZo6YINqw7vQRJ3B70eVKrZQ0bqzlnI="
         }
       },
       "is_incremental": false,
@@ -4194,7 +4170,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.NetworkTransferInfo.html",
-          "hash": "etDS2WJAsvHFlCUWoIA63QsQFoJJVo9qEpm472USkbQ="
+          "hash": "8k0fDGbSRqWon7g3UNep4AApA5KDKq1/G+94/4O7Dzc="
         }
       },
       "is_incremental": false,
@@ -4842,7 +4818,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shell.html",
-          "hash": "mItxnNEirbnxyo6672oDsO8Mitx60HDkV2CpZ4dmExY="
+          "hash": "wcmJJEKqukMNPptt6hQXDFImxsDtuuJY1EUlVv3/PPo="
         }
       },
       "is_incremental": false,
@@ -5022,7 +4998,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.FTPShell.html",
-          "hash": "K3aMjjkGYT9YkKbWQFH3WmXQ9EM9OWrX6W1zwJHJ9Wc="
+          "hash": "SCz/7cPCu8Pt6WYPLwh1Ke9zROpA4wlNbUM9OpLyEUk="
         }
       },
       "is_incremental": false,
@@ -5262,7 +5238,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "QIhSZedTaZE5zstEQk6Vb3kiiueFSVyYjvhufjYDWw4="
+          "hash": "8Z4IKWnj/SsPJWkift8SIdbtr1qDXEjWnmKAorFEnIU="
         }
       },
       "is_incremental": false,
@@ -8082,7 +8058,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Compatibility-Notes-for-Second-Generation-KS.html",
-          "hash": "7Jhpier1am4UUW3OkOj6n9LN2BuxT/VrU8ZUSYObhqE="
+          "hash": "Mo0iaq1Tp70KO5V9KoVmv/J9NkeQZZ/cI1c6jX0UXWg="
         }
       },
       "is_incremental": false,
@@ -8106,7 +8082,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Release-Notes-for-Second-Generation-KS.html",
-          "hash": "jCXe8Z2kT1WipdxkabCzuVznpgDaX6VpABKhvgFb8og="
+          "hash": "cQsMnV+GKLo5tOIqZbvrl/ZR7HWPDTxH3kc2oyMgB80="
         }
       },
       "is_incremental": false,
@@ -8193,7 +8169,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 437,
+          "total_file_count": 435,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
