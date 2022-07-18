@@ -1778,6 +1778,114 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Editors.HexEdit.HexEditShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Editors.HexEdit.HexEditShellCommon.html",
+          "hash": "tzaj41JdPFRLwrOXDOno2adJZZYYxcuK+PhL3rzi6iE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Editors.HexEdit.HexEditTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Editors.HexEdit.HexEditTools.html",
+          "hash": "bYCLwMul312RrkPhXa7WeFxjNh05Q49cWb4TGxy3HU4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Editors.HexEdit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Editors.HexEdit.html",
+          "hash": "GrXmSt7VLx/ZQEcqljOMphgMcVAEM2LvuoZQVQ4gZKA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Editors.JsonShell.JsonShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Editors.JsonShell.JsonShellCommon.html",
+          "hash": "GNrhGE1zXwEtcgSL0iCcgGCkzxUK6QyOElf3IoHAaC8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Editors.JsonShell.JsonTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Editors.JsonShell.JsonTools.html",
+          "hash": "wBn4fCPy9d7xhLWJKWYaB4ho3UN9dR7t27b8U70VRAY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Editors.JsonShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Editors.JsonShell.html",
+          "hash": "oRL9HoA0HTgHUAG+0u2P5QJBjWEz6iCY2iijvTawwMU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Editors.TextEdit.TextEditShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Editors.TextEdit.TextEditShellCommon.html",
+          "hash": "ZAEPT66/GGw0T745KOBzPs1xlR5V4le562/6ZcuozNM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Editors.TextEdit.TextEditTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Editors.TextEdit.TextEditTools.html",
+          "hash": "06RaK8p91ZFqxeswNve7FZhigbuedwtfTG1s2qbCwW4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Editors.TextEdit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Editors.TextEdit.html",
+          "hash": "/c2xHv21KDZZ3Awo3r132TglGWe2V0CYN8XIbxY91/E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Encryption.Encryption.Algorithms.yml",
       "output": {
         ".html": {
@@ -1939,78 +2047,6 @@
         ".html": {
           "relative_path": "api/KS.Misc.Games.html",
           "hash": "ePLBaoJnPC0elBZOBi0ZbqyRgTR+Yg5AgNWd/2OdZR0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.HexEdit.HexEditShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.HexEdit.HexEditShellCommon.html",
-          "hash": "FEYwDLgQt2XQ6MXOmgt2CXmRDiQY7ILeZ0QyUcEHXGk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.HexEdit.HexEditTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.HexEdit.HexEditTools.html",
-          "hash": "7FQg42ryNzheVuymZ6E9hnQNtqRSFUUdNuXOC5Eq/e4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.HexEdit.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.HexEdit.html",
-          "hash": "KSmprubj+aRlUqlveOj1hv8DZJMzYUIpN+3gV3OqXKA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.JsonShell.JsonShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.JsonShell.JsonShellCommon.html",
-          "hash": "ZvOXu17uxKPTcK7A2mcbGuRSTspIUK3uy17RAc3xBYU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.JsonShell.JsonTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.JsonShell.JsonTools.html",
-          "hash": "oS6pF8W6RUV+ADE4QVEQyaMD3P+pA9auDGZ6btp4+rM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.JsonShell.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.JsonShell.html",
-          "hash": "KwmbVG9UDy2d5u3sZ6yiWX72dWp/E9eMcyR/S6FFY+k="
         }
       },
       "is_incremental": false,
@@ -3295,42 +3331,6 @@
         ".html": {
           "relative_path": "api/KS.Misc.Text.html",
           "hash": "Z6Ac0iy1s9ibdiHUj6UEemTIUdE+PXHBgssbobyzNcc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.TextEdit.TextEditShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.TextEdit.TextEditShellCommon.html",
-          "hash": "fk2pK1LxQFXTMYeuFFfav17I+DcDIfDsu51NNwDc2Mg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.TextEdit.TextEditTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.TextEdit.TextEditTools.html",
-          "hash": "V8/HdrxwQT5RT+L+Gu9Odp+cqX1qN6A6wCuLCwe/mfA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.TextEdit.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.TextEdit.html",
-          "hash": "wU1dRB7W9tqk+Wu1ExtVtKhqp6hDbv+dgi7MBx8kNsY="
         }
       },
       "is_incremental": false,
@@ -5238,7 +5238,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "8Z4IKWnj/SsPJWkift8SIdbtr1qDXEjWnmKAorFEnIU="
+          "hash": "7AelK9P8aQb8WFJGRBZ+c4AHS9zcA5Rl7a0gplNVA88="
         }
       },
       "is_incremental": false,
