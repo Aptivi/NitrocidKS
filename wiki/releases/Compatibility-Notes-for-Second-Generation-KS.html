@@ -683,6 +683,29 @@
 </ul>
 </li>
 </ul>
+<h5 id="restructured-the-filesystem-api">Restructured the filesystem API</h5>
+<p>Filesystem module was a <code>god class</code>, so we decided to consolidate it to their own separate files to accomodate with the upcoming changes. However, you need to use their own namespace (for example, if you want to copy a file, import <code>KS.Files.Operations</code>) to be able to use them.</p>
+<p>We have also removed <code>SetSizeParseMode()</code> as it's redundant and it was there for compatibility reasons. You have more than enough APIs to do the same thing this function does, don't you?</p>
+<p>However, the base <code>Filesystem</code> module will stay so that path neutralization and invalid path detection routines will still be available under the same namespace in 0.0.24.0 and above.</p>
+<ul>
+<li><p>Removed functions:</p>
+<ul>
+<li><code>SetSizeParseMode()</code></li>
+</ul>
+</li>
+<li><p>New namespaces:</p>
+<ul>
+<li><code>KS.Files.Attributes</code></li>
+<li><code>KS.Files.Folders</code></li>
+<li><code>KS.Files.LineEndings</code></li>
+<li><code>KS.Files.Operations</code></li>
+<li><code>KS.Files.PathLookup</code></li>
+<li><code>KS.Files.Print</code></li>
+<li><code>KS.Files.Querying</code></li>
+<li><code>KS.Files.Read</code></li>
+</ul>
+</li>
+</ul>
 </article>
           </div>
           

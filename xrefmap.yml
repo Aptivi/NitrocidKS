@@ -3898,345 +3898,57 @@ references:
   commentId: N:KS.Files
   fullName: KS.Files
   nameWithType: KS.Files
+- uid: KS.Files.AttributeManager
+  name: AttributeManager
+  href: api/KS.Files.AttributeManager.html
+  commentId: T:KS.Files.AttributeManager
+  fullName: KS.Files.AttributeManager
+  nameWithType: AttributeManager
+- uid: KS.Files.AttributeManager.AddAttributeToFile(System.String,System.IO.FileAttributes)
+  name: AddAttributeToFile(String, FileAttributes)
+  href: api/KS.Files.AttributeManager.html#KS_Files_AttributeManager_AddAttributeToFile_System_String_System_IO_FileAttributes_
+  commentId: M:KS.Files.AttributeManager.AddAttributeToFile(System.String,System.IO.FileAttributes)
+  fullName: KS.Files.AttributeManager.AddAttributeToFile(System.String, System.IO.FileAttributes)
+  nameWithType: AttributeManager.AddAttributeToFile(String, FileAttributes)
+- uid: KS.Files.AttributeManager.AddAttributeToFile*
+  name: AddAttributeToFile
+  href: api/KS.Files.AttributeManager.html#KS_Files_AttributeManager_AddAttributeToFile_
+  commentId: Overload:KS.Files.AttributeManager.AddAttributeToFile
+  isSpec: "True"
+  fullName: KS.Files.AttributeManager.AddAttributeToFile
+  nameWithType: AttributeManager.AddAttributeToFile
+- uid: KS.Files.AttributeManager.RemoveAttribute(System.IO.FileAttributes,System.IO.FileAttributes)
+  name: RemoveAttribute(FileAttributes, FileAttributes)
+  href: api/KS.Files.AttributeManager.html#KS_Files_AttributeManager_RemoveAttribute_System_IO_FileAttributes_System_IO_FileAttributes_
+  commentId: M:KS.Files.AttributeManager.RemoveAttribute(System.IO.FileAttributes,System.IO.FileAttributes)
+  fullName: KS.Files.AttributeManager.RemoveAttribute(System.IO.FileAttributes, System.IO.FileAttributes)
+  nameWithType: AttributeManager.RemoveAttribute(FileAttributes, FileAttributes)
+- uid: KS.Files.AttributeManager.RemoveAttribute*
+  name: RemoveAttribute
+  href: api/KS.Files.AttributeManager.html#KS_Files_AttributeManager_RemoveAttribute_
+  commentId: Overload:KS.Files.AttributeManager.RemoveAttribute
+  isSpec: "True"
+  fullName: KS.Files.AttributeManager.RemoveAttribute
+  nameWithType: AttributeManager.RemoveAttribute
+- uid: KS.Files.AttributeManager.RemoveAttributeFromFile(System.String,System.IO.FileAttributes)
+  name: RemoveAttributeFromFile(String, FileAttributes)
+  href: api/KS.Files.AttributeManager.html#KS_Files_AttributeManager_RemoveAttributeFromFile_System_String_System_IO_FileAttributes_
+  commentId: M:KS.Files.AttributeManager.RemoveAttributeFromFile(System.String,System.IO.FileAttributes)
+  fullName: KS.Files.AttributeManager.RemoveAttributeFromFile(System.String, System.IO.FileAttributes)
+  nameWithType: AttributeManager.RemoveAttributeFromFile(String, FileAttributes)
+- uid: KS.Files.AttributeManager.RemoveAttributeFromFile*
+  name: RemoveAttributeFromFile
+  href: api/KS.Files.AttributeManager.html#KS_Files_AttributeManager_RemoveAttributeFromFile_
+  commentId: Overload:KS.Files.AttributeManager.RemoveAttributeFromFile
+  isSpec: "True"
+  fullName: KS.Files.AttributeManager.RemoveAttributeFromFile
+  nameWithType: AttributeManager.RemoveAttributeFromFile
 - uid: KS.Files.Filesystem
   name: Filesystem
   href: api/KS.Files.Filesystem.html
   commentId: T:KS.Files.Filesystem
   fullName: KS.Files.Filesystem
   nameWithType: Filesystem
-- uid: KS.Files.Filesystem.AddAttributeToFile(System.String,System.IO.FileAttributes)
-  name: AddAttributeToFile(String, FileAttributes)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_AddAttributeToFile_System_String_System_IO_FileAttributes_
-  commentId: M:KS.Files.Filesystem.AddAttributeToFile(System.String,System.IO.FileAttributes)
-  fullName: KS.Files.Filesystem.AddAttributeToFile(System.String, System.IO.FileAttributes)
-  nameWithType: Filesystem.AddAttributeToFile(String, FileAttributes)
-- uid: KS.Files.Filesystem.AddAttributeToFile*
-  name: AddAttributeToFile
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_AddAttributeToFile_
-  commentId: Overload:KS.Files.Filesystem.AddAttributeToFile
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.AddAttributeToFile
-  nameWithType: Filesystem.AddAttributeToFile
-- uid: KS.Files.Filesystem.AddToPathLookup(System.String)
-  name: AddToPathLookup(String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_AddToPathLookup_System_String_
-  commentId: M:KS.Files.Filesystem.AddToPathLookup(System.String)
-  fullName: KS.Files.Filesystem.AddToPathLookup(System.String)
-  nameWithType: Filesystem.AddToPathLookup(String)
-- uid: KS.Files.Filesystem.AddToPathLookup(System.String,System.String)
-  name: AddToPathLookup(String, String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_AddToPathLookup_System_String_System_String_
-  commentId: M:KS.Files.Filesystem.AddToPathLookup(System.String,System.String)
-  fullName: KS.Files.Filesystem.AddToPathLookup(System.String, System.String)
-  nameWithType: Filesystem.AddToPathLookup(String, String)
-- uid: KS.Files.Filesystem.AddToPathLookup*
-  name: AddToPathLookup
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_AddToPathLookup_
-  commentId: Overload:KS.Files.Filesystem.AddToPathLookup
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.AddToPathLookup
-  nameWithType: Filesystem.AddToPathLookup
-- uid: KS.Files.Filesystem.CombineFiles(System.String,System.String[])
-  name: CombineFiles(String, String[])
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_CombineFiles_System_String_System_String___
-  commentId: M:KS.Files.Filesystem.CombineFiles(System.String,System.String[])
-  name.vb: CombineFiles(String, String())
-  fullName: KS.Files.Filesystem.CombineFiles(System.String, System.String[])
-  fullName.vb: KS.Files.Filesystem.CombineFiles(System.String, System.String())
-  nameWithType: Filesystem.CombineFiles(String, String[])
-  nameWithType.vb: Filesystem.CombineFiles(String, String())
-- uid: KS.Files.Filesystem.CombineFiles*
-  name: CombineFiles
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_CombineFiles_
-  commentId: Overload:KS.Files.Filesystem.CombineFiles
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.CombineFiles
-  nameWithType: Filesystem.CombineFiles
-- uid: KS.Files.Filesystem.ConvertLineEndings(System.String)
-  name: ConvertLineEndings(String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ConvertLineEndings_System_String_
-  commentId: M:KS.Files.Filesystem.ConvertLineEndings(System.String)
-  fullName: KS.Files.Filesystem.ConvertLineEndings(System.String)
-  nameWithType: Filesystem.ConvertLineEndings(String)
-- uid: KS.Files.Filesystem.ConvertLineEndings(System.String,KS.Files.FilesystemNewlineStyle)
-  name: ConvertLineEndings(String, FilesystemNewlineStyle)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ConvertLineEndings_System_String_KS_Files_FilesystemNewlineStyle_
-  commentId: M:KS.Files.Filesystem.ConvertLineEndings(System.String,KS.Files.FilesystemNewlineStyle)
-  fullName: KS.Files.Filesystem.ConvertLineEndings(System.String, KS.Files.FilesystemNewlineStyle)
-  nameWithType: Filesystem.ConvertLineEndings(String, FilesystemNewlineStyle)
-- uid: KS.Files.Filesystem.ConvertLineEndings*
-  name: ConvertLineEndings
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ConvertLineEndings_
-  commentId: Overload:KS.Files.Filesystem.ConvertLineEndings
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.ConvertLineEndings
-  nameWithType: Filesystem.ConvertLineEndings
-- uid: KS.Files.Filesystem.CopyDirectory(System.String,System.String)
-  name: CopyDirectory(String, String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_CopyDirectory_System_String_System_String_
-  commentId: M:KS.Files.Filesystem.CopyDirectory(System.String,System.String)
-  fullName: KS.Files.Filesystem.CopyDirectory(System.String, System.String)
-  nameWithType: Filesystem.CopyDirectory(String, String)
-- uid: KS.Files.Filesystem.CopyDirectory(System.String,System.String,System.Boolean)
-  name: CopyDirectory(String, String, Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_CopyDirectory_System_String_System_String_System_Boolean_
-  commentId: M:KS.Files.Filesystem.CopyDirectory(System.String,System.String,System.Boolean)
-  fullName: KS.Files.Filesystem.CopyDirectory(System.String, System.String, System.Boolean)
-  nameWithType: Filesystem.CopyDirectory(String, String, Boolean)
-- uid: KS.Files.Filesystem.CopyDirectory*
-  name: CopyDirectory
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_CopyDirectory_
-  commentId: Overload:KS.Files.Filesystem.CopyDirectory
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.CopyDirectory
-  nameWithType: Filesystem.CopyDirectory
-- uid: KS.Files.Filesystem.CopyFileOrDir(System.String,System.String)
-  name: CopyFileOrDir(String, String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_CopyFileOrDir_System_String_System_String_
-  commentId: M:KS.Files.Filesystem.CopyFileOrDir(System.String,System.String)
-  fullName: KS.Files.Filesystem.CopyFileOrDir(System.String, System.String)
-  nameWithType: Filesystem.CopyFileOrDir(String, String)
-- uid: KS.Files.Filesystem.CopyFileOrDir*
-  name: CopyFileOrDir
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_CopyFileOrDir_
-  commentId: Overload:KS.Files.Filesystem.CopyFileOrDir
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.CopyFileOrDir
-  nameWithType: Filesystem.CopyFileOrDir
-- uid: KS.Files.Filesystem.CreateList(System.String,System.Boolean)
-  name: CreateList(String, Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_CreateList_System_String_System_Boolean_
-  commentId: M:KS.Files.Filesystem.CreateList(System.String,System.Boolean)
-  fullName: KS.Files.Filesystem.CreateList(System.String, System.Boolean)
-  nameWithType: Filesystem.CreateList(String, Boolean)
-- uid: KS.Files.Filesystem.CreateList*
-  name: CreateList
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_CreateList_
-  commentId: Overload:KS.Files.Filesystem.CreateList
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.CreateList
-  nameWithType: Filesystem.CreateList
-- uid: KS.Files.Filesystem.CurrDir
-  name: CurrDir
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_CurrDir
-  commentId: F:KS.Files.Filesystem.CurrDir
-  fullName: KS.Files.Filesystem.CurrDir
-  nameWithType: Filesystem.CurrDir
-- uid: KS.Files.Filesystem.FileExists(System.String,System.Boolean)
-  name: FileExists(String, Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_FileExists_System_String_System_Boolean_
-  commentId: M:KS.Files.Filesystem.FileExists(System.String,System.Boolean)
-  fullName: KS.Files.Filesystem.FileExists(System.String, System.Boolean)
-  nameWithType: Filesystem.FileExists(String, Boolean)
-- uid: KS.Files.Filesystem.FileExists*
-  name: FileExists
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_FileExists_
-  commentId: Overload:KS.Files.Filesystem.FileExists
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.FileExists
-  nameWithType: Filesystem.FileExists
-- uid: KS.Files.Filesystem.FileExistsInPath(System.String,System.String@)
-  name: FileExistsInPath(String, ref String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_FileExistsInPath_System_String_System_String__
-  commentId: M:KS.Files.Filesystem.FileExistsInPath(System.String,System.String@)
-  name.vb: FileExistsInPath(String, ByRef String)
-  fullName: KS.Files.Filesystem.FileExistsInPath(System.String, ref System.String)
-  fullName.vb: KS.Files.Filesystem.FileExistsInPath(System.String, ByRef System.String)
-  nameWithType: Filesystem.FileExistsInPath(String, ref String)
-  nameWithType.vb: Filesystem.FileExistsInPath(String, ByRef String)
-- uid: KS.Files.Filesystem.FileExistsInPath*
-  name: FileExistsInPath
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_FileExistsInPath_
-  commentId: Overload:KS.Files.Filesystem.FileExistsInPath
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.FileExistsInPath
-  nameWithType: Filesystem.FileExistsInPath
-- uid: KS.Files.Filesystem.FolderExists(System.String,System.Boolean)
-  name: FolderExists(String, Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_FolderExists_System_String_System_Boolean_
-  commentId: M:KS.Files.Filesystem.FolderExists(System.String,System.Boolean)
-  fullName: KS.Files.Filesystem.FolderExists(System.String, System.Boolean)
-  nameWithType: Filesystem.FolderExists(String, Boolean)
-- uid: KS.Files.Filesystem.FolderExists*
-  name: FolderExists
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_FolderExists_
-  commentId: Overload:KS.Files.Filesystem.FolderExists
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.FolderExists
-  nameWithType: Filesystem.FolderExists
-- uid: KS.Files.Filesystem.GetAllSizesInFolder(System.IO.DirectoryInfo)
-  name: GetAllSizesInFolder(DirectoryInfo)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetAllSizesInFolder_System_IO_DirectoryInfo_
-  commentId: M:KS.Files.Filesystem.GetAllSizesInFolder(System.IO.DirectoryInfo)
-  fullName: KS.Files.Filesystem.GetAllSizesInFolder(System.IO.DirectoryInfo)
-  nameWithType: Filesystem.GetAllSizesInFolder(DirectoryInfo)
-- uid: KS.Files.Filesystem.GetAllSizesInFolder(System.IO.DirectoryInfo,System.Boolean)
-  name: GetAllSizesInFolder(DirectoryInfo, Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetAllSizesInFolder_System_IO_DirectoryInfo_System_Boolean_
-  commentId: M:KS.Files.Filesystem.GetAllSizesInFolder(System.IO.DirectoryInfo,System.Boolean)
-  fullName: KS.Files.Filesystem.GetAllSizesInFolder(System.IO.DirectoryInfo, System.Boolean)
-  nameWithType: Filesystem.GetAllSizesInFolder(DirectoryInfo, Boolean)
-- uid: KS.Files.Filesystem.GetAllSizesInFolder*
-  name: GetAllSizesInFolder
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetAllSizesInFolder_
-  commentId: Overload:KS.Files.Filesystem.GetAllSizesInFolder
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.GetAllSizesInFolder
-  nameWithType: Filesystem.GetAllSizesInFolder
-- uid: KS.Files.Filesystem.GetFilesystemEntries(System.String,System.Boolean)
-  name: GetFilesystemEntries(String, Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetFilesystemEntries_System_String_System_Boolean_
-  commentId: M:KS.Files.Filesystem.GetFilesystemEntries(System.String,System.Boolean)
-  fullName: KS.Files.Filesystem.GetFilesystemEntries(System.String, System.Boolean)
-  nameWithType: Filesystem.GetFilesystemEntries(String, Boolean)
-- uid: KS.Files.Filesystem.GetFilesystemEntries(System.String,System.String)
-  name: GetFilesystemEntries(String, String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetFilesystemEntries_System_String_System_String_
-  commentId: M:KS.Files.Filesystem.GetFilesystemEntries(System.String,System.String)
-  fullName: KS.Files.Filesystem.GetFilesystemEntries(System.String, System.String)
-  nameWithType: Filesystem.GetFilesystemEntries(String, String)
-- uid: KS.Files.Filesystem.GetFilesystemEntries*
-  name: GetFilesystemEntries
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetFilesystemEntries_
-  commentId: Overload:KS.Files.Filesystem.GetFilesystemEntries
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.GetFilesystemEntries
-  nameWithType: Filesystem.GetFilesystemEntries
-- uid: KS.Files.Filesystem.GetInvalidPathChars
-  name: GetInvalidPathChars()
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetInvalidPathChars
-  commentId: M:KS.Files.Filesystem.GetInvalidPathChars
-  fullName: KS.Files.Filesystem.GetInvalidPathChars()
-  nameWithType: Filesystem.GetInvalidPathChars()
-- uid: KS.Files.Filesystem.GetInvalidPathChars*
-  name: GetInvalidPathChars
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetInvalidPathChars_
-  commentId: Overload:KS.Files.Filesystem.GetInvalidPathChars
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.GetInvalidPathChars
-  nameWithType: Filesystem.GetInvalidPathChars
-- uid: KS.Files.Filesystem.GetLineEndingFromFile(System.String)
-  name: GetLineEndingFromFile(String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetLineEndingFromFile_System_String_
-  commentId: M:KS.Files.Filesystem.GetLineEndingFromFile(System.String)
-  fullName: KS.Files.Filesystem.GetLineEndingFromFile(System.String)
-  nameWithType: Filesystem.GetLineEndingFromFile(String)
-- uid: KS.Files.Filesystem.GetLineEndingFromFile*
-  name: GetLineEndingFromFile
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetLineEndingFromFile_
-  commentId: Overload:KS.Files.Filesystem.GetLineEndingFromFile
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.GetLineEndingFromFile
-  nameWithType: Filesystem.GetLineEndingFromFile
-- uid: KS.Files.Filesystem.GetLineEndingString(KS.Files.FilesystemNewlineStyle)
-  name: GetLineEndingString(FilesystemNewlineStyle)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetLineEndingString_KS_Files_FilesystemNewlineStyle_
-  commentId: M:KS.Files.Filesystem.GetLineEndingString(KS.Files.FilesystemNewlineStyle)
-  fullName: KS.Files.Filesystem.GetLineEndingString(KS.Files.FilesystemNewlineStyle)
-  nameWithType: Filesystem.GetLineEndingString(FilesystemNewlineStyle)
-- uid: KS.Files.Filesystem.GetLineEndingString*
-  name: GetLineEndingString
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetLineEndingString_
-  commentId: Overload:KS.Files.Filesystem.GetLineEndingString
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.GetLineEndingString
-  nameWithType: Filesystem.GetLineEndingString
-- uid: KS.Files.Filesystem.GetPathList
-  name: GetPathList()
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetPathList
-  commentId: M:KS.Files.Filesystem.GetPathList
-  fullName: KS.Files.Filesystem.GetPathList()
-  nameWithType: Filesystem.GetPathList()
-- uid: KS.Files.Filesystem.GetPathList*
-  name: GetPathList
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_GetPathList_
-  commentId: Overload:KS.Files.Filesystem.GetPathList
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.GetPathList
-  nameWithType: Filesystem.GetPathList
-- uid: KS.Files.Filesystem.List(System.String)
-  name: List(String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_List_System_String_
-  commentId: M:KS.Files.Filesystem.List(System.String)
-  fullName: KS.Files.Filesystem.List(System.String)
-  nameWithType: Filesystem.List(String)
-- uid: KS.Files.Filesystem.List(System.String,System.Boolean)
-  name: List(String, Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_List_System_String_System_Boolean_
-  commentId: M:KS.Files.Filesystem.List(System.String,System.Boolean)
-  fullName: KS.Files.Filesystem.List(System.String, System.Boolean)
-  nameWithType: Filesystem.List(String, Boolean)
-- uid: KS.Files.Filesystem.List(System.String,System.Boolean,System.Boolean)
-  name: List(String, Boolean, Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_List_System_String_System_Boolean_System_Boolean_
-  commentId: M:KS.Files.Filesystem.List(System.String,System.Boolean,System.Boolean)
-  fullName: KS.Files.Filesystem.List(System.String, System.Boolean, System.Boolean)
-  nameWithType: Filesystem.List(String, Boolean, Boolean)
-- uid: KS.Files.Filesystem.List(System.String,System.Boolean,System.Boolean,System.Boolean)
-  name: List(String, Boolean, Boolean, Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_List_System_String_System_Boolean_System_Boolean_System_Boolean_
-  commentId: M:KS.Files.Filesystem.List(System.String,System.Boolean,System.Boolean,System.Boolean)
-  fullName: KS.Files.Filesystem.List(System.String, System.Boolean, System.Boolean, System.Boolean)
-  nameWithType: Filesystem.List(String, Boolean, Boolean, Boolean)
-- uid: KS.Files.Filesystem.List*
-  name: List
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_List_
-  commentId: Overload:KS.Files.Filesystem.List
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.List
-  nameWithType: Filesystem.List
-- uid: KS.Files.Filesystem.MakeDirectory(System.String,System.Boolean)
-  name: MakeDirectory(String, Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_MakeDirectory_System_String_System_Boolean_
-  commentId: M:KS.Files.Filesystem.MakeDirectory(System.String,System.Boolean)
-  fullName: KS.Files.Filesystem.MakeDirectory(System.String, System.Boolean)
-  nameWithType: Filesystem.MakeDirectory(String, Boolean)
-- uid: KS.Files.Filesystem.MakeDirectory*
-  name: MakeDirectory
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_MakeDirectory_
-  commentId: Overload:KS.Files.Filesystem.MakeDirectory
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.MakeDirectory
-  nameWithType: Filesystem.MakeDirectory
-- uid: KS.Files.Filesystem.MakeFile(System.String,System.Boolean)
-  name: MakeFile(String, Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_MakeFile_System_String_System_Boolean_
-  commentId: M:KS.Files.Filesystem.MakeFile(System.String,System.Boolean)
-  fullName: KS.Files.Filesystem.MakeFile(System.String, System.Boolean)
-  nameWithType: Filesystem.MakeFile(String, Boolean)
-- uid: KS.Files.Filesystem.MakeFile*
-  name: MakeFile
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_MakeFile_
-  commentId: Overload:KS.Files.Filesystem.MakeFile
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.MakeFile
-  nameWithType: Filesystem.MakeFile
-- uid: KS.Files.Filesystem.MakeJsonFile(System.String,System.Boolean)
-  name: MakeJsonFile(String, Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_MakeJsonFile_System_String_System_Boolean_
-  commentId: M:KS.Files.Filesystem.MakeJsonFile(System.String,System.Boolean)
-  fullName: KS.Files.Filesystem.MakeJsonFile(System.String, System.Boolean)
-  nameWithType: Filesystem.MakeJsonFile(String, Boolean)
-- uid: KS.Files.Filesystem.MakeJsonFile*
-  name: MakeJsonFile
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_MakeJsonFile_
-  commentId: Overload:KS.Files.Filesystem.MakeJsonFile
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.MakeJsonFile
-  nameWithType: Filesystem.MakeJsonFile
-- uid: KS.Files.Filesystem.MoveFileOrDir(System.String,System.String)
-  name: MoveFileOrDir(String, String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_MoveFileOrDir_System_String_System_String_
-  commentId: M:KS.Files.Filesystem.MoveFileOrDir(System.String,System.String)
-  fullName: KS.Files.Filesystem.MoveFileOrDir(System.String, System.String)
-  nameWithType: Filesystem.MoveFileOrDir(String, String)
-- uid: KS.Files.Filesystem.MoveFileOrDir*
-  name: MoveFileOrDir
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_MoveFileOrDir_
-  commentId: Overload:KS.Files.Filesystem.MoveFileOrDir
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.MoveFileOrDir
-  nameWithType: Filesystem.MoveFileOrDir
 - uid: KS.Files.Filesystem.NeutralizePath(System.String,System.Boolean)
   name: NeutralizePath(String, Boolean)
   href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_NeutralizePath_System_String_System_Boolean_
@@ -4256,274 +3968,12 @@ references:
   isSpec: "True"
   fullName: KS.Files.Filesystem.NeutralizePath
   nameWithType: Filesystem.NeutralizePath
-- uid: KS.Files.Filesystem.NewlineStyle
-  name: NewlineStyle
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_NewlineStyle
-  commentId: P:KS.Files.Filesystem.NewlineStyle
-  fullName: KS.Files.Filesystem.NewlineStyle
-  nameWithType: Filesystem.NewlineStyle
-- uid: KS.Files.Filesystem.NewlineStyle*
-  name: NewlineStyle
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_NewlineStyle_
-  commentId: Overload:KS.Files.Filesystem.NewlineStyle
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.NewlineStyle
-  nameWithType: Filesystem.NewlineStyle
-- uid: KS.Files.Filesystem.PrintContents(System.String)
-  name: PrintContents(String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_PrintContents_System_String_
-  commentId: M:KS.Files.Filesystem.PrintContents(System.String)
-  fullName: KS.Files.Filesystem.PrintContents(System.String)
-  nameWithType: Filesystem.PrintContents(String)
-- uid: KS.Files.Filesystem.PrintContents(System.String,System.Boolean)
-  name: PrintContents(String, Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_PrintContents_System_String_System_Boolean_
-  commentId: M:KS.Files.Filesystem.PrintContents(System.String,System.Boolean)
-  fullName: KS.Files.Filesystem.PrintContents(System.String, System.Boolean)
-  nameWithType: Filesystem.PrintContents(String, Boolean)
-- uid: KS.Files.Filesystem.PrintContents*
-  name: PrintContents
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_PrintContents_
-  commentId: Overload:KS.Files.Filesystem.PrintContents
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.PrintContents
-  nameWithType: Filesystem.PrintContents
-- uid: KS.Files.Filesystem.PrintDirectoryInfo(System.IO.FileSystemInfo)
-  name: PrintDirectoryInfo(FileSystemInfo)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_PrintDirectoryInfo_System_IO_FileSystemInfo_
-  commentId: M:KS.Files.Filesystem.PrintDirectoryInfo(System.IO.FileSystemInfo)
-  fullName: KS.Files.Filesystem.PrintDirectoryInfo(System.IO.FileSystemInfo)
-  nameWithType: Filesystem.PrintDirectoryInfo(FileSystemInfo)
-- uid: KS.Files.Filesystem.PrintDirectoryInfo(System.IO.FileSystemInfo,System.Boolean)
-  name: PrintDirectoryInfo(FileSystemInfo, Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_PrintDirectoryInfo_System_IO_FileSystemInfo_System_Boolean_
-  commentId: M:KS.Files.Filesystem.PrintDirectoryInfo(System.IO.FileSystemInfo,System.Boolean)
-  fullName: KS.Files.Filesystem.PrintDirectoryInfo(System.IO.FileSystemInfo, System.Boolean)
-  nameWithType: Filesystem.PrintDirectoryInfo(FileSystemInfo, Boolean)
-- uid: KS.Files.Filesystem.PrintDirectoryInfo*
-  name: PrintDirectoryInfo
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_PrintDirectoryInfo_
-  commentId: Overload:KS.Files.Filesystem.PrintDirectoryInfo
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.PrintDirectoryInfo
-  nameWithType: Filesystem.PrintDirectoryInfo
-- uid: KS.Files.Filesystem.PrintFileInfo(System.IO.FileSystemInfo)
-  name: PrintFileInfo(FileSystemInfo)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_PrintFileInfo_System_IO_FileSystemInfo_
-  commentId: M:KS.Files.Filesystem.PrintFileInfo(System.IO.FileSystemInfo)
-  fullName: KS.Files.Filesystem.PrintFileInfo(System.IO.FileSystemInfo)
-  nameWithType: Filesystem.PrintFileInfo(FileSystemInfo)
-- uid: KS.Files.Filesystem.PrintFileInfo(System.IO.FileSystemInfo,System.Boolean)
-  name: PrintFileInfo(FileSystemInfo, Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_PrintFileInfo_System_IO_FileSystemInfo_System_Boolean_
-  commentId: M:KS.Files.Filesystem.PrintFileInfo(System.IO.FileSystemInfo,System.Boolean)
-  fullName: KS.Files.Filesystem.PrintFileInfo(System.IO.FileSystemInfo, System.Boolean)
-  nameWithType: Filesystem.PrintFileInfo(FileSystemInfo, Boolean)
-- uid: KS.Files.Filesystem.PrintFileInfo*
-  name: PrintFileInfo
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_PrintFileInfo_
-  commentId: Overload:KS.Files.Filesystem.PrintFileInfo
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.PrintFileInfo
-  nameWithType: Filesystem.PrintFileInfo
-- uid: KS.Files.Filesystem.ReadAllLinesNoBlock(System.String)
-  name: ReadAllLinesNoBlock(String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ReadAllLinesNoBlock_System_String_
-  commentId: M:KS.Files.Filesystem.ReadAllLinesNoBlock(System.String)
-  fullName: KS.Files.Filesystem.ReadAllLinesNoBlock(System.String)
-  nameWithType: Filesystem.ReadAllLinesNoBlock(String)
-- uid: KS.Files.Filesystem.ReadAllLinesNoBlock*
-  name: ReadAllLinesNoBlock
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ReadAllLinesNoBlock_
-  commentId: Overload:KS.Files.Filesystem.ReadAllLinesNoBlock
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.ReadAllLinesNoBlock
-  nameWithType: Filesystem.ReadAllLinesNoBlock
-- uid: KS.Files.Filesystem.ReadContents(System.String)
-  name: ReadContents(String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ReadContents_System_String_
-  commentId: M:KS.Files.Filesystem.ReadContents(System.String)
-  fullName: KS.Files.Filesystem.ReadContents(System.String)
-  nameWithType: Filesystem.ReadContents(String)
-- uid: KS.Files.Filesystem.ReadContents*
-  name: ReadContents
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ReadContents_
-  commentId: Overload:KS.Files.Filesystem.ReadContents
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.ReadContents
-  nameWithType: Filesystem.ReadContents
-- uid: KS.Files.Filesystem.RemoveAttribute(System.IO.FileAttributes,System.IO.FileAttributes)
-  name: RemoveAttribute(FileAttributes, FileAttributes)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_RemoveAttribute_System_IO_FileAttributes_System_IO_FileAttributes_
-  commentId: M:KS.Files.Filesystem.RemoveAttribute(System.IO.FileAttributes,System.IO.FileAttributes)
-  fullName: KS.Files.Filesystem.RemoveAttribute(System.IO.FileAttributes, System.IO.FileAttributes)
-  nameWithType: Filesystem.RemoveAttribute(FileAttributes, FileAttributes)
-- uid: KS.Files.Filesystem.RemoveAttribute*
-  name: RemoveAttribute
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_RemoveAttribute_
-  commentId: Overload:KS.Files.Filesystem.RemoveAttribute
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.RemoveAttribute
-  nameWithType: Filesystem.RemoveAttribute
-- uid: KS.Files.Filesystem.RemoveAttributeFromFile(System.String,System.IO.FileAttributes)
-  name: RemoveAttributeFromFile(String, FileAttributes)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_RemoveAttributeFromFile_System_String_System_IO_FileAttributes_
-  commentId: M:KS.Files.Filesystem.RemoveAttributeFromFile(System.String,System.IO.FileAttributes)
-  fullName: KS.Files.Filesystem.RemoveAttributeFromFile(System.String, System.IO.FileAttributes)
-  nameWithType: Filesystem.RemoveAttributeFromFile(String, FileAttributes)
-- uid: KS.Files.Filesystem.RemoveAttributeFromFile*
-  name: RemoveAttributeFromFile
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_RemoveAttributeFromFile_
-  commentId: Overload:KS.Files.Filesystem.RemoveAttributeFromFile
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.RemoveAttributeFromFile
-  nameWithType: Filesystem.RemoveAttributeFromFile
-- uid: KS.Files.Filesystem.RemoveDirectory(System.String)
-  name: RemoveDirectory(String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_RemoveDirectory_System_String_
-  commentId: M:KS.Files.Filesystem.RemoveDirectory(System.String)
-  fullName: KS.Files.Filesystem.RemoveDirectory(System.String)
-  nameWithType: Filesystem.RemoveDirectory(String)
-- uid: KS.Files.Filesystem.RemoveDirectory*
-  name: RemoveDirectory
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_RemoveDirectory_
-  commentId: Overload:KS.Files.Filesystem.RemoveDirectory
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.RemoveDirectory
-  nameWithType: Filesystem.RemoveDirectory
-- uid: KS.Files.Filesystem.RemoveFile(System.String)
-  name: RemoveFile(String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_RemoveFile_System_String_
-  commentId: M:KS.Files.Filesystem.RemoveFile(System.String)
-  fullName: KS.Files.Filesystem.RemoveFile(System.String)
-  nameWithType: Filesystem.RemoveFile(String)
-- uid: KS.Files.Filesystem.RemoveFile*
-  name: RemoveFile
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_RemoveFile_
-  commentId: Overload:KS.Files.Filesystem.RemoveFile
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.RemoveFile
-  nameWithType: Filesystem.RemoveFile
-- uid: KS.Files.Filesystem.RemoveFromPathLookup(System.String)
-  name: RemoveFromPathLookup(String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_RemoveFromPathLookup_System_String_
-  commentId: M:KS.Files.Filesystem.RemoveFromPathLookup(System.String)
-  fullName: KS.Files.Filesystem.RemoveFromPathLookup(System.String)
-  nameWithType: Filesystem.RemoveFromPathLookup(String)
-- uid: KS.Files.Filesystem.RemoveFromPathLookup(System.String,System.String)
-  name: RemoveFromPathLookup(String, String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_RemoveFromPathLookup_System_String_System_String_
-  commentId: M:KS.Files.Filesystem.RemoveFromPathLookup(System.String,System.String)
-  fullName: KS.Files.Filesystem.RemoveFromPathLookup(System.String, System.String)
-  nameWithType: Filesystem.RemoveFromPathLookup(String, String)
-- uid: KS.Files.Filesystem.RemoveFromPathLookup*
-  name: RemoveFromPathLookup
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_RemoveFromPathLookup_
-  commentId: Overload:KS.Files.Filesystem.RemoveFromPathLookup
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.RemoveFromPathLookup
-  nameWithType: Filesystem.RemoveFromPathLookup
-- uid: KS.Files.Filesystem.SaveCurrDir
-  name: SaveCurrDir()
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SaveCurrDir
-  commentId: M:KS.Files.Filesystem.SaveCurrDir
-  fullName: KS.Files.Filesystem.SaveCurrDir()
-  nameWithType: Filesystem.SaveCurrDir()
-- uid: KS.Files.Filesystem.SaveCurrDir*
-  name: SaveCurrDir
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SaveCurrDir_
-  commentId: Overload:KS.Files.Filesystem.SaveCurrDir
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.SaveCurrDir
-  nameWithType: Filesystem.SaveCurrDir
-- uid: KS.Files.Filesystem.SearchFileForString(System.String,System.String)
-  name: SearchFileForString(String, String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SearchFileForString_System_String_System_String_
-  commentId: M:KS.Files.Filesystem.SearchFileForString(System.String,System.String)
-  fullName: KS.Files.Filesystem.SearchFileForString(System.String, System.String)
-  nameWithType: Filesystem.SearchFileForString(String, String)
-- uid: KS.Files.Filesystem.SearchFileForString*
-  name: SearchFileForString
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SearchFileForString_
-  commentId: Overload:KS.Files.Filesystem.SearchFileForString
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.SearchFileForString
-  nameWithType: Filesystem.SearchFileForString
-- uid: KS.Files.Filesystem.SearchFileForStringRegexp(System.String,System.Text.RegularExpressions.Regex)
-  name: SearchFileForStringRegexp(String, Regex)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SearchFileForStringRegexp_System_String_System_Text_RegularExpressions_Regex_
-  commentId: M:KS.Files.Filesystem.SearchFileForStringRegexp(System.String,System.Text.RegularExpressions.Regex)
-  fullName: KS.Files.Filesystem.SearchFileForStringRegexp(System.String, System.Text.RegularExpressions.Regex)
-  nameWithType: Filesystem.SearchFileForStringRegexp(String, Regex)
-- uid: KS.Files.Filesystem.SearchFileForStringRegexp*
-  name: SearchFileForStringRegexp
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SearchFileForStringRegexp_
-  commentId: Overload:KS.Files.Filesystem.SearchFileForStringRegexp
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.SearchFileForStringRegexp
-  nameWithType: Filesystem.SearchFileForStringRegexp
-- uid: KS.Files.Filesystem.SetCurrDir(System.String)
-  name: SetCurrDir(String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SetCurrDir_System_String_
-  commentId: M:KS.Files.Filesystem.SetCurrDir(System.String)
-  fullName: KS.Files.Filesystem.SetCurrDir(System.String)
-  nameWithType: Filesystem.SetCurrDir(String)
-- uid: KS.Files.Filesystem.SetCurrDir*
-  name: SetCurrDir
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SetCurrDir_
-  commentId: Overload:KS.Files.Filesystem.SetCurrDir
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.SetCurrDir
-  nameWithType: Filesystem.SetCurrDir
-- uid: KS.Files.Filesystem.SetSizeParseMode(System.Boolean)
-  name: SetSizeParseMode(Boolean)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SetSizeParseMode_System_Boolean_
-  commentId: M:KS.Files.Filesystem.SetSizeParseMode(System.Boolean)
-  fullName: KS.Files.Filesystem.SetSizeParseMode(System.Boolean)
-  nameWithType: Filesystem.SetSizeParseMode(Boolean)
-- uid: KS.Files.Filesystem.SetSizeParseMode*
-  name: SetSizeParseMode
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SetSizeParseMode_
-  commentId: Overload:KS.Files.Filesystem.SetSizeParseMode
-  isSpec: "True"
-  fullName: KS.Files.Filesystem.SetSizeParseMode
-  nameWithType: Filesystem.SetSizeParseMode
-- uid: KS.Files.Filesystem.ShowFileDetailsList
-  name: ShowFileDetailsList
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ShowFileDetailsList
-  commentId: F:KS.Files.Filesystem.ShowFileDetailsList
-  fullName: KS.Files.Filesystem.ShowFileDetailsList
-  nameWithType: Filesystem.ShowFileDetailsList
 - uid: KS.Files.Filesystem.ShowFilesystemProgress
   name: ShowFilesystemProgress
   href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ShowFilesystemProgress
   commentId: F:KS.Files.Filesystem.ShowFilesystemProgress
   fullName: KS.Files.Filesystem.ShowFilesystemProgress
   nameWithType: Filesystem.ShowFilesystemProgress
-- uid: KS.Files.Filesystem.ShowTotalSizeInList
-  name: ShowTotalSizeInList
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ShowTotalSizeInList
-  commentId: F:KS.Files.Filesystem.ShowTotalSizeInList
-  fullName: KS.Files.Filesystem.ShowTotalSizeInList
-  nameWithType: Filesystem.ShowTotalSizeInList
-- uid: KS.Files.Filesystem.SortDirection
-  name: SortDirection
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SortDirection
-  commentId: F:KS.Files.Filesystem.SortDirection
-  fullName: KS.Files.Filesystem.SortDirection
-  nameWithType: Filesystem.SortDirection
-- uid: KS.Files.Filesystem.SortList
-  name: SortList
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SortList
-  commentId: F:KS.Files.Filesystem.SortList
-  fullName: KS.Files.Filesystem.SortList
-  nameWithType: Filesystem.SortList
-- uid: KS.Files.Filesystem.SortMode
-  name: SortMode
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SortMode
-  commentId: F:KS.Files.Filesystem.SortMode
-  fullName: KS.Files.Filesystem.SortMode
-  nameWithType: Filesystem.SortMode
 - uid: KS.Files.Filesystem.ThrowOnInvalidPath(System.String)
   name: ThrowOnInvalidPath(String)
   href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ThrowOnInvalidPath_System_String_
@@ -4537,110 +3987,236 @@ references:
   isSpec: "True"
   fullName: KS.Files.Filesystem.ThrowOnInvalidPath
   nameWithType: Filesystem.ThrowOnInvalidPath
-- uid: KS.Files.Filesystem.TryParseFileName(System.String)
-  name: TryParseFileName(String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_TryParseFileName_System_String_
-  commentId: M:KS.Files.Filesystem.TryParseFileName(System.String)
-  fullName: KS.Files.Filesystem.TryParseFileName(System.String)
-  nameWithType: Filesystem.TryParseFileName(String)
-- uid: KS.Files.Filesystem.TryParseFileName*
-  name: TryParseFileName
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_TryParseFileName_
-  commentId: Overload:KS.Files.Filesystem.TryParseFileName
+- uid: KS.Files.Folders
+  name: KS.Files.Folders
+  href: api/KS.Files.Folders.html
+  commentId: N:KS.Files.Folders
+  fullName: KS.Files.Folders
+  nameWithType: KS.Files.Folders
+- uid: KS.Files.Folders.CurrentDirectory
+  name: CurrentDirectory
+  href: api/KS.Files.Folders.CurrentDirectory.html
+  commentId: T:KS.Files.Folders.CurrentDirectory
+  fullName: KS.Files.Folders.CurrentDirectory
+  nameWithType: CurrentDirectory
+- uid: KS.Files.Folders.CurrentDirectory.CurrentDir
+  name: CurrentDir
+  href: api/KS.Files.Folders.CurrentDirectory.html#KS_Files_Folders_CurrentDirectory_CurrentDir
+  commentId: P:KS.Files.Folders.CurrentDirectory.CurrentDir
+  fullName: KS.Files.Folders.CurrentDirectory.CurrentDir
+  nameWithType: CurrentDirectory.CurrentDir
+- uid: KS.Files.Folders.CurrentDirectory.CurrentDir*
+  name: CurrentDir
+  href: api/KS.Files.Folders.CurrentDirectory.html#KS_Files_Folders_CurrentDirectory_CurrentDir_
+  commentId: Overload:KS.Files.Folders.CurrentDirectory.CurrentDir
   isSpec: "True"
-  fullName: KS.Files.Filesystem.TryParseFileName
-  nameWithType: Filesystem.TryParseFileName
-- uid: KS.Files.Filesystem.TryParsePath(System.String)
-  name: TryParsePath(String)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_TryParsePath_System_String_
-  commentId: M:KS.Files.Filesystem.TryParsePath(System.String)
-  fullName: KS.Files.Filesystem.TryParsePath(System.String)
-  nameWithType: Filesystem.TryParsePath(String)
-- uid: KS.Files.Filesystem.TryParsePath*
-  name: TryParsePath
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_TryParsePath_
-  commentId: Overload:KS.Files.Filesystem.TryParsePath
+  fullName: KS.Files.Folders.CurrentDirectory.CurrentDir
+  nameWithType: CurrentDirectory.CurrentDir
+- uid: KS.Files.Folders.CurrentDirectory.SaveCurrDir
+  name: SaveCurrDir()
+  href: api/KS.Files.Folders.CurrentDirectory.html#KS_Files_Folders_CurrentDirectory_SaveCurrDir
+  commentId: M:KS.Files.Folders.CurrentDirectory.SaveCurrDir
+  fullName: KS.Files.Folders.CurrentDirectory.SaveCurrDir()
+  nameWithType: CurrentDirectory.SaveCurrDir()
+- uid: KS.Files.Folders.CurrentDirectory.SaveCurrDir*
+  name: SaveCurrDir
+  href: api/KS.Files.Folders.CurrentDirectory.html#KS_Files_Folders_CurrentDirectory_SaveCurrDir_
+  commentId: Overload:KS.Files.Folders.CurrentDirectory.SaveCurrDir
   isSpec: "True"
-  fullName: KS.Files.Filesystem.TryParsePath
-  nameWithType: Filesystem.TryParsePath
-- uid: KS.Files.FilesystemNewlineStyle
-  name: FilesystemNewlineStyle
-  href: api/KS.Files.FilesystemNewlineStyle.html
-  commentId: T:KS.Files.FilesystemNewlineStyle
-  fullName: KS.Files.FilesystemNewlineStyle
-  nameWithType: FilesystemNewlineStyle
-- uid: KS.Files.FilesystemNewlineStyle.CR
-  name: CR
-  href: api/KS.Files.FilesystemNewlineStyle.html#KS_Files_FilesystemNewlineStyle_CR
-  commentId: F:KS.Files.FilesystemNewlineStyle.CR
-  fullName: KS.Files.FilesystemNewlineStyle.CR
-  nameWithType: FilesystemNewlineStyle.CR
-- uid: KS.Files.FilesystemNewlineStyle.CRLF
-  name: CRLF
-  href: api/KS.Files.FilesystemNewlineStyle.html#KS_Files_FilesystemNewlineStyle_CRLF
-  commentId: F:KS.Files.FilesystemNewlineStyle.CRLF
-  fullName: KS.Files.FilesystemNewlineStyle.CRLF
-  nameWithType: FilesystemNewlineStyle.CRLF
-- uid: KS.Files.FilesystemNewlineStyle.LF
-  name: LF
-  href: api/KS.Files.FilesystemNewlineStyle.html#KS_Files_FilesystemNewlineStyle_LF
-  commentId: F:KS.Files.FilesystemNewlineStyle.LF
-  fullName: KS.Files.FilesystemNewlineStyle.LF
-  nameWithType: FilesystemNewlineStyle.LF
-- uid: KS.Files.FilesystemSortDirection
+  fullName: KS.Files.Folders.CurrentDirectory.SaveCurrDir
+  nameWithType: CurrentDirectory.SaveCurrDir
+- uid: KS.Files.Folders.CurrentDirectory.SetCurrDir(System.String)
+  name: SetCurrDir(String)
+  href: api/KS.Files.Folders.CurrentDirectory.html#KS_Files_Folders_CurrentDirectory_SetCurrDir_System_String_
+  commentId: M:KS.Files.Folders.CurrentDirectory.SetCurrDir(System.String)
+  fullName: KS.Files.Folders.CurrentDirectory.SetCurrDir(System.String)
+  nameWithType: CurrentDirectory.SetCurrDir(String)
+- uid: KS.Files.Folders.CurrentDirectory.SetCurrDir*
+  name: SetCurrDir
+  href: api/KS.Files.Folders.CurrentDirectory.html#KS_Files_Folders_CurrentDirectory_SetCurrDir_
+  commentId: Overload:KS.Files.Folders.CurrentDirectory.SetCurrDir
+  isSpec: "True"
+  fullName: KS.Files.Folders.CurrentDirectory.SetCurrDir
+  nameWithType: CurrentDirectory.SetCurrDir
+- uid: KS.Files.Folders.CurrentDirectory.TrySaveCurrDir
+  name: TrySaveCurrDir()
+  href: api/KS.Files.Folders.CurrentDirectory.html#KS_Files_Folders_CurrentDirectory_TrySaveCurrDir
+  commentId: M:KS.Files.Folders.CurrentDirectory.TrySaveCurrDir
+  fullName: KS.Files.Folders.CurrentDirectory.TrySaveCurrDir()
+  nameWithType: CurrentDirectory.TrySaveCurrDir()
+- uid: KS.Files.Folders.CurrentDirectory.TrySaveCurrDir*
+  name: TrySaveCurrDir
+  href: api/KS.Files.Folders.CurrentDirectory.html#KS_Files_Folders_CurrentDirectory_TrySaveCurrDir_
+  commentId: Overload:KS.Files.Folders.CurrentDirectory.TrySaveCurrDir
+  isSpec: "True"
+  fullName: KS.Files.Folders.CurrentDirectory.TrySaveCurrDir
+  nameWithType: CurrentDirectory.TrySaveCurrDir
+- uid: KS.Files.Folders.CurrentDirectory.TrySetCurrDir(System.String)
+  name: TrySetCurrDir(String)
+  href: api/KS.Files.Folders.CurrentDirectory.html#KS_Files_Folders_CurrentDirectory_TrySetCurrDir_System_String_
+  commentId: M:KS.Files.Folders.CurrentDirectory.TrySetCurrDir(System.String)
+  fullName: KS.Files.Folders.CurrentDirectory.TrySetCurrDir(System.String)
+  nameWithType: CurrentDirectory.TrySetCurrDir(String)
+- uid: KS.Files.Folders.CurrentDirectory.TrySetCurrDir*
+  name: TrySetCurrDir
+  href: api/KS.Files.Folders.CurrentDirectory.html#KS_Files_Folders_CurrentDirectory_TrySetCurrDir_
+  commentId: Overload:KS.Files.Folders.CurrentDirectory.TrySetCurrDir
+  isSpec: "True"
+  fullName: KS.Files.Folders.CurrentDirectory.TrySetCurrDir
+  nameWithType: CurrentDirectory.TrySetCurrDir
+- uid: KS.Files.Folders.FilesystemSortDirection
   name: FilesystemSortDirection
-  href: api/KS.Files.FilesystemSortDirection.html
-  commentId: T:KS.Files.FilesystemSortDirection
-  fullName: KS.Files.FilesystemSortDirection
+  href: api/KS.Files.Folders.FilesystemSortDirection.html
+  commentId: T:KS.Files.Folders.FilesystemSortDirection
+  fullName: KS.Files.Folders.FilesystemSortDirection
   nameWithType: FilesystemSortDirection
-- uid: KS.Files.FilesystemSortDirection.Ascending
+- uid: KS.Files.Folders.FilesystemSortDirection.Ascending
   name: Ascending
-  href: api/KS.Files.FilesystemSortDirection.html#KS_Files_FilesystemSortDirection_Ascending
-  commentId: F:KS.Files.FilesystemSortDirection.Ascending
-  fullName: KS.Files.FilesystemSortDirection.Ascending
+  href: api/KS.Files.Folders.FilesystemSortDirection.html#KS_Files_Folders_FilesystemSortDirection_Ascending
+  commentId: F:KS.Files.Folders.FilesystemSortDirection.Ascending
+  fullName: KS.Files.Folders.FilesystemSortDirection.Ascending
   nameWithType: FilesystemSortDirection.Ascending
-- uid: KS.Files.FilesystemSortDirection.Descending
+- uid: KS.Files.Folders.FilesystemSortDirection.Descending
   name: Descending
-  href: api/KS.Files.FilesystemSortDirection.html#KS_Files_FilesystemSortDirection_Descending
-  commentId: F:KS.Files.FilesystemSortDirection.Descending
-  fullName: KS.Files.FilesystemSortDirection.Descending
+  href: api/KS.Files.Folders.FilesystemSortDirection.html#KS_Files_Folders_FilesystemSortDirection_Descending
+  commentId: F:KS.Files.Folders.FilesystemSortDirection.Descending
+  fullName: KS.Files.Folders.FilesystemSortDirection.Descending
   nameWithType: FilesystemSortDirection.Descending
-- uid: KS.Files.FilesystemSortOptions
+- uid: KS.Files.Folders.FilesystemSortOptions
   name: FilesystemSortOptions
-  href: api/KS.Files.FilesystemSortOptions.html
-  commentId: T:KS.Files.FilesystemSortOptions
-  fullName: KS.Files.FilesystemSortOptions
+  href: api/KS.Files.Folders.FilesystemSortOptions.html
+  commentId: T:KS.Files.Folders.FilesystemSortOptions
+  fullName: KS.Files.Folders.FilesystemSortOptions
   nameWithType: FilesystemSortOptions
-- uid: KS.Files.FilesystemSortOptions.CreationTime
+- uid: KS.Files.Folders.FilesystemSortOptions.CreationTime
   name: CreationTime
-  href: api/KS.Files.FilesystemSortOptions.html#KS_Files_FilesystemSortOptions_CreationTime
-  commentId: F:KS.Files.FilesystemSortOptions.CreationTime
-  fullName: KS.Files.FilesystemSortOptions.CreationTime
+  href: api/KS.Files.Folders.FilesystemSortOptions.html#KS_Files_Folders_FilesystemSortOptions_CreationTime
+  commentId: F:KS.Files.Folders.FilesystemSortOptions.CreationTime
+  fullName: KS.Files.Folders.FilesystemSortOptions.CreationTime
   nameWithType: FilesystemSortOptions.CreationTime
-- uid: KS.Files.FilesystemSortOptions.FullName
+- uid: KS.Files.Folders.FilesystemSortOptions.FullName
   name: FullName
-  href: api/KS.Files.FilesystemSortOptions.html#KS_Files_FilesystemSortOptions_FullName
-  commentId: F:KS.Files.FilesystemSortOptions.FullName
-  fullName: KS.Files.FilesystemSortOptions.FullName
+  href: api/KS.Files.Folders.FilesystemSortOptions.html#KS_Files_Folders_FilesystemSortOptions_FullName
+  commentId: F:KS.Files.Folders.FilesystemSortOptions.FullName
+  fullName: KS.Files.Folders.FilesystemSortOptions.FullName
   nameWithType: FilesystemSortOptions.FullName
-- uid: KS.Files.FilesystemSortOptions.LastAccessTime
+- uid: KS.Files.Folders.FilesystemSortOptions.LastAccessTime
   name: LastAccessTime
-  href: api/KS.Files.FilesystemSortOptions.html#KS_Files_FilesystemSortOptions_LastAccessTime
-  commentId: F:KS.Files.FilesystemSortOptions.LastAccessTime
-  fullName: KS.Files.FilesystemSortOptions.LastAccessTime
+  href: api/KS.Files.Folders.FilesystemSortOptions.html#KS_Files_Folders_FilesystemSortOptions_LastAccessTime
+  commentId: F:KS.Files.Folders.FilesystemSortOptions.LastAccessTime
+  fullName: KS.Files.Folders.FilesystemSortOptions.LastAccessTime
   nameWithType: FilesystemSortOptions.LastAccessTime
-- uid: KS.Files.FilesystemSortOptions.LastWriteTime
+- uid: KS.Files.Folders.FilesystemSortOptions.LastWriteTime
   name: LastWriteTime
-  href: api/KS.Files.FilesystemSortOptions.html#KS_Files_FilesystemSortOptions_LastWriteTime
-  commentId: F:KS.Files.FilesystemSortOptions.LastWriteTime
-  fullName: KS.Files.FilesystemSortOptions.LastWriteTime
+  href: api/KS.Files.Folders.FilesystemSortOptions.html#KS_Files_Folders_FilesystemSortOptions_LastWriteTime
+  commentId: F:KS.Files.Folders.FilesystemSortOptions.LastWriteTime
+  fullName: KS.Files.Folders.FilesystemSortOptions.LastWriteTime
   nameWithType: FilesystemSortOptions.LastWriteTime
-- uid: KS.Files.FilesystemSortOptions.Length
+- uid: KS.Files.Folders.FilesystemSortOptions.Length
   name: Length
-  href: api/KS.Files.FilesystemSortOptions.html#KS_Files_FilesystemSortOptions_Length
-  commentId: F:KS.Files.FilesystemSortOptions.Length
-  fullName: KS.Files.FilesystemSortOptions.Length
+  href: api/KS.Files.Folders.FilesystemSortOptions.html#KS_Files_Folders_FilesystemSortOptions_Length
+  commentId: F:KS.Files.Folders.FilesystemSortOptions.Length
+  fullName: KS.Files.Folders.FilesystemSortOptions.Length
   nameWithType: FilesystemSortOptions.Length
+- uid: KS.Files.Folders.Listing
+  name: Listing
+  href: api/KS.Files.Folders.Listing.html
+  commentId: T:KS.Files.Folders.Listing
+  fullName: KS.Files.Folders.Listing
+  nameWithType: Listing
+- uid: KS.Files.Folders.Listing.CreateList(System.String,System.Boolean)
+  name: CreateList(String, Boolean)
+  href: api/KS.Files.Folders.Listing.html#KS_Files_Folders_Listing_CreateList_System_String_System_Boolean_
+  commentId: M:KS.Files.Folders.Listing.CreateList(System.String,System.Boolean)
+  fullName: KS.Files.Folders.Listing.CreateList(System.String, System.Boolean)
+  nameWithType: Listing.CreateList(String, Boolean)
+- uid: KS.Files.Folders.Listing.CreateList*
+  name: CreateList
+  href: api/KS.Files.Folders.Listing.html#KS_Files_Folders_Listing_CreateList_
+  commentId: Overload:KS.Files.Folders.Listing.CreateList
+  isSpec: "True"
+  fullName: KS.Files.Folders.Listing.CreateList
+  nameWithType: Listing.CreateList
+- uid: KS.Files.Folders.Listing.GetFilesystemEntries(System.String,System.Boolean)
+  name: GetFilesystemEntries(String, Boolean)
+  href: api/KS.Files.Folders.Listing.html#KS_Files_Folders_Listing_GetFilesystemEntries_System_String_System_Boolean_
+  commentId: M:KS.Files.Folders.Listing.GetFilesystemEntries(System.String,System.Boolean)
+  fullName: KS.Files.Folders.Listing.GetFilesystemEntries(System.String, System.Boolean)
+  nameWithType: Listing.GetFilesystemEntries(String, Boolean)
+- uid: KS.Files.Folders.Listing.GetFilesystemEntries(System.String,System.String)
+  name: GetFilesystemEntries(String, String)
+  href: api/KS.Files.Folders.Listing.html#KS_Files_Folders_Listing_GetFilesystemEntries_System_String_System_String_
+  commentId: M:KS.Files.Folders.Listing.GetFilesystemEntries(System.String,System.String)
+  fullName: KS.Files.Folders.Listing.GetFilesystemEntries(System.String, System.String)
+  nameWithType: Listing.GetFilesystemEntries(String, String)
+- uid: KS.Files.Folders.Listing.GetFilesystemEntries*
+  name: GetFilesystemEntries
+  href: api/KS.Files.Folders.Listing.html#KS_Files_Folders_Listing_GetFilesystemEntries_
+  commentId: Overload:KS.Files.Folders.Listing.GetFilesystemEntries
+  isSpec: "True"
+  fullName: KS.Files.Folders.Listing.GetFilesystemEntries
+  nameWithType: Listing.GetFilesystemEntries
+- uid: KS.Files.Folders.Listing.List(System.String)
+  name: List(String)
+  href: api/KS.Files.Folders.Listing.html#KS_Files_Folders_Listing_List_System_String_
+  commentId: M:KS.Files.Folders.Listing.List(System.String)
+  fullName: KS.Files.Folders.Listing.List(System.String)
+  nameWithType: Listing.List(String)
+- uid: KS.Files.Folders.Listing.List(System.String,System.Boolean)
+  name: List(String, Boolean)
+  href: api/KS.Files.Folders.Listing.html#KS_Files_Folders_Listing_List_System_String_System_Boolean_
+  commentId: M:KS.Files.Folders.Listing.List(System.String,System.Boolean)
+  fullName: KS.Files.Folders.Listing.List(System.String, System.Boolean)
+  nameWithType: Listing.List(String, Boolean)
+- uid: KS.Files.Folders.Listing.List(System.String,System.Boolean,System.Boolean)
+  name: List(String, Boolean, Boolean)
+  href: api/KS.Files.Folders.Listing.html#KS_Files_Folders_Listing_List_System_String_System_Boolean_System_Boolean_
+  commentId: M:KS.Files.Folders.Listing.List(System.String,System.Boolean,System.Boolean)
+  fullName: KS.Files.Folders.Listing.List(System.String, System.Boolean, System.Boolean)
+  nameWithType: Listing.List(String, Boolean, Boolean)
+- uid: KS.Files.Folders.Listing.List(System.String,System.Boolean,System.Boolean,System.Boolean)
+  name: List(String, Boolean, Boolean, Boolean)
+  href: api/KS.Files.Folders.Listing.html#KS_Files_Folders_Listing_List_System_String_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:KS.Files.Folders.Listing.List(System.String,System.Boolean,System.Boolean,System.Boolean)
+  fullName: KS.Files.Folders.Listing.List(System.String, System.Boolean, System.Boolean, System.Boolean)
+  nameWithType: Listing.List(String, Boolean, Boolean, Boolean)
+- uid: KS.Files.Folders.Listing.List*
+  name: List
+  href: api/KS.Files.Folders.Listing.html#KS_Files_Folders_Listing_List_
+  commentId: Overload:KS.Files.Folders.Listing.List
+  isSpec: "True"
+  fullName: KS.Files.Folders.Listing.List
+  nameWithType: Listing.List
+- uid: KS.Files.Folders.Listing.ShowFileDetailsList
+  name: ShowFileDetailsList
+  href: api/KS.Files.Folders.Listing.html#KS_Files_Folders_Listing_ShowFileDetailsList
+  commentId: F:KS.Files.Folders.Listing.ShowFileDetailsList
+  fullName: KS.Files.Folders.Listing.ShowFileDetailsList
+  nameWithType: Listing.ShowFileDetailsList
+- uid: KS.Files.Folders.Listing.ShowTotalSizeInList
+  name: ShowTotalSizeInList
+  href: api/KS.Files.Folders.Listing.html#KS_Files_Folders_Listing_ShowTotalSizeInList
+  commentId: F:KS.Files.Folders.Listing.ShowTotalSizeInList
+  fullName: KS.Files.Folders.Listing.ShowTotalSizeInList
+  nameWithType: Listing.ShowTotalSizeInList
+- uid: KS.Files.Folders.Listing.SortDirection
+  name: SortDirection
+  href: api/KS.Files.Folders.Listing.html#KS_Files_Folders_Listing_SortDirection
+  commentId: F:KS.Files.Folders.Listing.SortDirection
+  fullName: KS.Files.Folders.Listing.SortDirection
+  nameWithType: Listing.SortDirection
+- uid: KS.Files.Folders.Listing.SortList
+  name: SortList
+  href: api/KS.Files.Folders.Listing.html#KS_Files_Folders_Listing_SortList
+  commentId: F:KS.Files.Folders.Listing.SortList
+  fullName: KS.Files.Folders.Listing.SortList
+  nameWithType: Listing.SortList
+- uid: KS.Files.Folders.Listing.SortMode
+  name: SortMode
+  href: api/KS.Files.Folders.Listing.html#KS_Files_Folders_Listing_SortMode
+  commentId: F:KS.Files.Folders.Listing.SortMode
+  fullName: KS.Files.Folders.Listing.SortMode
+  nameWithType: Listing.SortMode
 - uid: KS.Files.KernelPathType
   name: KernelPathType
   href: api/KS.Files.KernelPathType.html
@@ -4737,6 +4313,347 @@ references:
   commentId: F:KS.Files.KernelPathType.Users
   fullName: KS.Files.KernelPathType.Users
   nameWithType: KernelPathType.Users
+- uid: KS.Files.LineEndings
+  name: KS.Files.LineEndings
+  href: api/KS.Files.LineEndings.html
+  commentId: N:KS.Files.LineEndings
+  fullName: KS.Files.LineEndings
+  nameWithType: KS.Files.LineEndings
+- uid: KS.Files.LineEndings.FilesystemNewlineStyle
+  name: FilesystemNewlineStyle
+  href: api/KS.Files.LineEndings.FilesystemNewlineStyle.html
+  commentId: T:KS.Files.LineEndings.FilesystemNewlineStyle
+  fullName: KS.Files.LineEndings.FilesystemNewlineStyle
+  nameWithType: FilesystemNewlineStyle
+- uid: KS.Files.LineEndings.FilesystemNewlineStyle.CR
+  name: CR
+  href: api/KS.Files.LineEndings.FilesystemNewlineStyle.html#KS_Files_LineEndings_FilesystemNewlineStyle_CR
+  commentId: F:KS.Files.LineEndings.FilesystemNewlineStyle.CR
+  fullName: KS.Files.LineEndings.FilesystemNewlineStyle.CR
+  nameWithType: FilesystemNewlineStyle.CR
+- uid: KS.Files.LineEndings.FilesystemNewlineStyle.CRLF
+  name: CRLF
+  href: api/KS.Files.LineEndings.FilesystemNewlineStyle.html#KS_Files_LineEndings_FilesystemNewlineStyle_CRLF
+  commentId: F:KS.Files.LineEndings.FilesystemNewlineStyle.CRLF
+  fullName: KS.Files.LineEndings.FilesystemNewlineStyle.CRLF
+  nameWithType: FilesystemNewlineStyle.CRLF
+- uid: KS.Files.LineEndings.FilesystemNewlineStyle.LF
+  name: LF
+  href: api/KS.Files.LineEndings.FilesystemNewlineStyle.html#KS_Files_LineEndings_FilesystemNewlineStyle_LF
+  commentId: F:KS.Files.LineEndings.FilesystemNewlineStyle.LF
+  fullName: KS.Files.LineEndings.FilesystemNewlineStyle.LF
+  nameWithType: FilesystemNewlineStyle.LF
+- uid: KS.Files.LineEndings.LineEndingsConverter
+  name: LineEndingsConverter
+  href: api/KS.Files.LineEndings.LineEndingsConverter.html
+  commentId: T:KS.Files.LineEndings.LineEndingsConverter
+  fullName: KS.Files.LineEndings.LineEndingsConverter
+  nameWithType: LineEndingsConverter
+- uid: KS.Files.LineEndings.LineEndingsConverter.ConvertLineEndings(System.String)
+  name: ConvertLineEndings(String)
+  href: api/KS.Files.LineEndings.LineEndingsConverter.html#KS_Files_LineEndings_LineEndingsConverter_ConvertLineEndings_System_String_
+  commentId: M:KS.Files.LineEndings.LineEndingsConverter.ConvertLineEndings(System.String)
+  fullName: KS.Files.LineEndings.LineEndingsConverter.ConvertLineEndings(System.String)
+  nameWithType: LineEndingsConverter.ConvertLineEndings(String)
+- uid: KS.Files.LineEndings.LineEndingsConverter.ConvertLineEndings(System.String,KS.Files.LineEndings.FilesystemNewlineStyle)
+  name: ConvertLineEndings(String, FilesystemNewlineStyle)
+  href: api/KS.Files.LineEndings.LineEndingsConverter.html#KS_Files_LineEndings_LineEndingsConverter_ConvertLineEndings_System_String_KS_Files_LineEndings_FilesystemNewlineStyle_
+  commentId: M:KS.Files.LineEndings.LineEndingsConverter.ConvertLineEndings(System.String,KS.Files.LineEndings.FilesystemNewlineStyle)
+  fullName: KS.Files.LineEndings.LineEndingsConverter.ConvertLineEndings(System.String, KS.Files.LineEndings.FilesystemNewlineStyle)
+  nameWithType: LineEndingsConverter.ConvertLineEndings(String, FilesystemNewlineStyle)
+- uid: KS.Files.LineEndings.LineEndingsConverter.ConvertLineEndings*
+  name: ConvertLineEndings
+  href: api/KS.Files.LineEndings.LineEndingsConverter.html#KS_Files_LineEndings_LineEndingsConverter_ConvertLineEndings_
+  commentId: Overload:KS.Files.LineEndings.LineEndingsConverter.ConvertLineEndings
+  isSpec: "True"
+  fullName: KS.Files.LineEndings.LineEndingsConverter.ConvertLineEndings
+  nameWithType: LineEndingsConverter.ConvertLineEndings
+- uid: KS.Files.LineEndings.LineEndingsTools
+  name: LineEndingsTools
+  href: api/KS.Files.LineEndings.LineEndingsTools.html
+  commentId: T:KS.Files.LineEndings.LineEndingsTools
+  fullName: KS.Files.LineEndings.LineEndingsTools
+  nameWithType: LineEndingsTools
+- uid: KS.Files.LineEndings.LineEndingsTools.GetLineEndingFromFile(System.String)
+  name: GetLineEndingFromFile(String)
+  href: api/KS.Files.LineEndings.LineEndingsTools.html#KS_Files_LineEndings_LineEndingsTools_GetLineEndingFromFile_System_String_
+  commentId: M:KS.Files.LineEndings.LineEndingsTools.GetLineEndingFromFile(System.String)
+  fullName: KS.Files.LineEndings.LineEndingsTools.GetLineEndingFromFile(System.String)
+  nameWithType: LineEndingsTools.GetLineEndingFromFile(String)
+- uid: KS.Files.LineEndings.LineEndingsTools.GetLineEndingFromFile*
+  name: GetLineEndingFromFile
+  href: api/KS.Files.LineEndings.LineEndingsTools.html#KS_Files_LineEndings_LineEndingsTools_GetLineEndingFromFile_
+  commentId: Overload:KS.Files.LineEndings.LineEndingsTools.GetLineEndingFromFile
+  isSpec: "True"
+  fullName: KS.Files.LineEndings.LineEndingsTools.GetLineEndingFromFile
+  nameWithType: LineEndingsTools.GetLineEndingFromFile
+- uid: KS.Files.LineEndings.LineEndingsTools.GetLineEndingString(KS.Files.LineEndings.FilesystemNewlineStyle)
+  name: GetLineEndingString(FilesystemNewlineStyle)
+  href: api/KS.Files.LineEndings.LineEndingsTools.html#KS_Files_LineEndings_LineEndingsTools_GetLineEndingString_KS_Files_LineEndings_FilesystemNewlineStyle_
+  commentId: M:KS.Files.LineEndings.LineEndingsTools.GetLineEndingString(KS.Files.LineEndings.FilesystemNewlineStyle)
+  fullName: KS.Files.LineEndings.LineEndingsTools.GetLineEndingString(KS.Files.LineEndings.FilesystemNewlineStyle)
+  nameWithType: LineEndingsTools.GetLineEndingString(FilesystemNewlineStyle)
+- uid: KS.Files.LineEndings.LineEndingsTools.GetLineEndingString*
+  name: GetLineEndingString
+  href: api/KS.Files.LineEndings.LineEndingsTools.html#KS_Files_LineEndings_LineEndingsTools_GetLineEndingString_
+  commentId: Overload:KS.Files.LineEndings.LineEndingsTools.GetLineEndingString
+  isSpec: "True"
+  fullName: KS.Files.LineEndings.LineEndingsTools.GetLineEndingString
+  nameWithType: LineEndingsTools.GetLineEndingString
+- uid: KS.Files.LineEndings.LineEndingsTools.NewlineStyle
+  name: NewlineStyle
+  href: api/KS.Files.LineEndings.LineEndingsTools.html#KS_Files_LineEndings_LineEndingsTools_NewlineStyle
+  commentId: P:KS.Files.LineEndings.LineEndingsTools.NewlineStyle
+  fullName: KS.Files.LineEndings.LineEndingsTools.NewlineStyle
+  nameWithType: LineEndingsTools.NewlineStyle
+- uid: KS.Files.LineEndings.LineEndingsTools.NewlineStyle*
+  name: NewlineStyle
+  href: api/KS.Files.LineEndings.LineEndingsTools.html#KS_Files_LineEndings_LineEndingsTools_NewlineStyle_
+  commentId: Overload:KS.Files.LineEndings.LineEndingsTools.NewlineStyle
+  isSpec: "True"
+  fullName: KS.Files.LineEndings.LineEndingsTools.NewlineStyle
+  nameWithType: LineEndingsTools.NewlineStyle
+- uid: KS.Files.Operations
+  name: KS.Files.Operations
+  href: api/KS.Files.Operations.html
+  commentId: N:KS.Files.Operations
+  fullName: KS.Files.Operations
+  nameWithType: KS.Files.Operations
+- uid: KS.Files.Operations.Combination
+  name: Combination
+  href: api/KS.Files.Operations.Combination.html
+  commentId: T:KS.Files.Operations.Combination
+  fullName: KS.Files.Operations.Combination
+  nameWithType: Combination
+- uid: KS.Files.Operations.Combination.CombineFiles(System.String,System.String[])
+  name: CombineFiles(String, String[])
+  href: api/KS.Files.Operations.Combination.html#KS_Files_Operations_Combination_CombineFiles_System_String_System_String___
+  commentId: M:KS.Files.Operations.Combination.CombineFiles(System.String,System.String[])
+  name.vb: CombineFiles(String, String())
+  fullName: KS.Files.Operations.Combination.CombineFiles(System.String, System.String[])
+  fullName.vb: KS.Files.Operations.Combination.CombineFiles(System.String, System.String())
+  nameWithType: Combination.CombineFiles(String, String[])
+  nameWithType.vb: Combination.CombineFiles(String, String())
+- uid: KS.Files.Operations.Combination.CombineFiles*
+  name: CombineFiles
+  href: api/KS.Files.Operations.Combination.html#KS_Files_Operations_Combination_CombineFiles_
+  commentId: Overload:KS.Files.Operations.Combination.CombineFiles
+  isSpec: "True"
+  fullName: KS.Files.Operations.Combination.CombineFiles
+  nameWithType: Combination.CombineFiles
+- uid: KS.Files.Operations.Copying
+  name: Copying
+  href: api/KS.Files.Operations.Copying.html
+  commentId: T:KS.Files.Operations.Copying
+  fullName: KS.Files.Operations.Copying
+  nameWithType: Copying
+- uid: KS.Files.Operations.Copying.CopyDirectory(System.String,System.String)
+  name: CopyDirectory(String, String)
+  href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_CopyDirectory_System_String_System_String_
+  commentId: M:KS.Files.Operations.Copying.CopyDirectory(System.String,System.String)
+  fullName: KS.Files.Operations.Copying.CopyDirectory(System.String, System.String)
+  nameWithType: Copying.CopyDirectory(String, String)
+- uid: KS.Files.Operations.Copying.CopyDirectory(System.String,System.String,System.Boolean)
+  name: CopyDirectory(String, String, Boolean)
+  href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_CopyDirectory_System_String_System_String_System_Boolean_
+  commentId: M:KS.Files.Operations.Copying.CopyDirectory(System.String,System.String,System.Boolean)
+  fullName: KS.Files.Operations.Copying.CopyDirectory(System.String, System.String, System.Boolean)
+  nameWithType: Copying.CopyDirectory(String, String, Boolean)
+- uid: KS.Files.Operations.Copying.CopyDirectory*
+  name: CopyDirectory
+  href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_CopyDirectory_
+  commentId: Overload:KS.Files.Operations.Copying.CopyDirectory
+  isSpec: "True"
+  fullName: KS.Files.Operations.Copying.CopyDirectory
+  nameWithType: Copying.CopyDirectory
+- uid: KS.Files.Operations.Copying.CopyFileOrDir(System.String,System.String)
+  name: CopyFileOrDir(String, String)
+  href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_CopyFileOrDir_System_String_System_String_
+  commentId: M:KS.Files.Operations.Copying.CopyFileOrDir(System.String,System.String)
+  fullName: KS.Files.Operations.Copying.CopyFileOrDir(System.String, System.String)
+  nameWithType: Copying.CopyFileOrDir(String, String)
+- uid: KS.Files.Operations.Copying.CopyFileOrDir*
+  name: CopyFileOrDir
+  href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_CopyFileOrDir_
+  commentId: Overload:KS.Files.Operations.Copying.CopyFileOrDir
+  isSpec: "True"
+  fullName: KS.Files.Operations.Copying.CopyFileOrDir
+  nameWithType: Copying.CopyFileOrDir
+- uid: KS.Files.Operations.Making
+  name: Making
+  href: api/KS.Files.Operations.Making.html
+  commentId: T:KS.Files.Operations.Making
+  fullName: KS.Files.Operations.Making
+  nameWithType: Making
+- uid: KS.Files.Operations.Making.MakeDirectory(System.String,System.Boolean)
+  name: MakeDirectory(String, Boolean)
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_MakeDirectory_System_String_System_Boolean_
+  commentId: M:KS.Files.Operations.Making.MakeDirectory(System.String,System.Boolean)
+  fullName: KS.Files.Operations.Making.MakeDirectory(System.String, System.Boolean)
+  nameWithType: Making.MakeDirectory(String, Boolean)
+- uid: KS.Files.Operations.Making.MakeDirectory*
+  name: MakeDirectory
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_MakeDirectory_
+  commentId: Overload:KS.Files.Operations.Making.MakeDirectory
+  isSpec: "True"
+  fullName: KS.Files.Operations.Making.MakeDirectory
+  nameWithType: Making.MakeDirectory
+- uid: KS.Files.Operations.Making.MakeFile(System.String,System.Boolean)
+  name: MakeFile(String, Boolean)
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_MakeFile_System_String_System_Boolean_
+  commentId: M:KS.Files.Operations.Making.MakeFile(System.String,System.Boolean)
+  fullName: KS.Files.Operations.Making.MakeFile(System.String, System.Boolean)
+  nameWithType: Making.MakeFile(String, Boolean)
+- uid: KS.Files.Operations.Making.MakeFile*
+  name: MakeFile
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_MakeFile_
+  commentId: Overload:KS.Files.Operations.Making.MakeFile
+  isSpec: "True"
+  fullName: KS.Files.Operations.Making.MakeFile
+  nameWithType: Making.MakeFile
+- uid: KS.Files.Operations.Making.MakeJsonFile(System.String,System.Boolean)
+  name: MakeJsonFile(String, Boolean)
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_MakeJsonFile_System_String_System_Boolean_
+  commentId: M:KS.Files.Operations.Making.MakeJsonFile(System.String,System.Boolean)
+  fullName: KS.Files.Operations.Making.MakeJsonFile(System.String, System.Boolean)
+  nameWithType: Making.MakeJsonFile(String, Boolean)
+- uid: KS.Files.Operations.Making.MakeJsonFile*
+  name: MakeJsonFile
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_MakeJsonFile_
+  commentId: Overload:KS.Files.Operations.Making.MakeJsonFile
+  isSpec: "True"
+  fullName: KS.Files.Operations.Making.MakeJsonFile
+  nameWithType: Making.MakeJsonFile
+- uid: KS.Files.Operations.Moving
+  name: Moving
+  href: api/KS.Files.Operations.Moving.html
+  commentId: T:KS.Files.Operations.Moving
+  fullName: KS.Files.Operations.Moving
+  nameWithType: Moving
+- uid: KS.Files.Operations.Moving.MoveFileOrDir(System.String,System.String)
+  name: MoveFileOrDir(String, String)
+  href: api/KS.Files.Operations.Moving.html#KS_Files_Operations_Moving_MoveFileOrDir_System_String_System_String_
+  commentId: M:KS.Files.Operations.Moving.MoveFileOrDir(System.String,System.String)
+  fullName: KS.Files.Operations.Moving.MoveFileOrDir(System.String, System.String)
+  nameWithType: Moving.MoveFileOrDir(String, String)
+- uid: KS.Files.Operations.Moving.MoveFileOrDir*
+  name: MoveFileOrDir
+  href: api/KS.Files.Operations.Moving.html#KS_Files_Operations_Moving_MoveFileOrDir_
+  commentId: Overload:KS.Files.Operations.Moving.MoveFileOrDir
+  isSpec: "True"
+  fullName: KS.Files.Operations.Moving.MoveFileOrDir
+  nameWithType: Moving.MoveFileOrDir
+- uid: KS.Files.Operations.Removing
+  name: Removing
+  href: api/KS.Files.Operations.Removing.html
+  commentId: T:KS.Files.Operations.Removing
+  fullName: KS.Files.Operations.Removing
+  nameWithType: Removing
+- uid: KS.Files.Operations.Removing.RemoveDirectory(System.String)
+  name: RemoveDirectory(String)
+  href: api/KS.Files.Operations.Removing.html#KS_Files_Operations_Removing_RemoveDirectory_System_String_
+  commentId: M:KS.Files.Operations.Removing.RemoveDirectory(System.String)
+  fullName: KS.Files.Operations.Removing.RemoveDirectory(System.String)
+  nameWithType: Removing.RemoveDirectory(String)
+- uid: KS.Files.Operations.Removing.RemoveDirectory*
+  name: RemoveDirectory
+  href: api/KS.Files.Operations.Removing.html#KS_Files_Operations_Removing_RemoveDirectory_
+  commentId: Overload:KS.Files.Operations.Removing.RemoveDirectory
+  isSpec: "True"
+  fullName: KS.Files.Operations.Removing.RemoveDirectory
+  nameWithType: Removing.RemoveDirectory
+- uid: KS.Files.Operations.Removing.RemoveFile(System.String)
+  name: RemoveFile(String)
+  href: api/KS.Files.Operations.Removing.html#KS_Files_Operations_Removing_RemoveFile_System_String_
+  commentId: M:KS.Files.Operations.Removing.RemoveFile(System.String)
+  fullName: KS.Files.Operations.Removing.RemoveFile(System.String)
+  nameWithType: Removing.RemoveFile(String)
+- uid: KS.Files.Operations.Removing.RemoveFile*
+  name: RemoveFile
+  href: api/KS.Files.Operations.Removing.html#KS_Files_Operations_Removing_RemoveFile_
+  commentId: Overload:KS.Files.Operations.Removing.RemoveFile
+  isSpec: "True"
+  fullName: KS.Files.Operations.Removing.RemoveFile
+  nameWithType: Removing.RemoveFile
+- uid: KS.Files.PathLookup
+  name: KS.Files.PathLookup
+  href: api/KS.Files.PathLookup.html
+  commentId: N:KS.Files.PathLookup
+  fullName: KS.Files.PathLookup
+  nameWithType: KS.Files.PathLookup
+- uid: KS.Files.PathLookup.PathLookupTools
+  name: PathLookupTools
+  href: api/KS.Files.PathLookup.PathLookupTools.html
+  commentId: T:KS.Files.PathLookup.PathLookupTools
+  fullName: KS.Files.PathLookup.PathLookupTools
+  nameWithType: PathLookupTools
+- uid: KS.Files.PathLookup.PathLookupTools.AddToPathLookup(System.String)
+  name: AddToPathLookup(String)
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_AddToPathLookup_System_String_
+  commentId: M:KS.Files.PathLookup.PathLookupTools.AddToPathLookup(System.String)
+  fullName: KS.Files.PathLookup.PathLookupTools.AddToPathLookup(System.String)
+  nameWithType: PathLookupTools.AddToPathLookup(String)
+- uid: KS.Files.PathLookup.PathLookupTools.AddToPathLookup(System.String,System.String)
+  name: AddToPathLookup(String, String)
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_AddToPathLookup_System_String_System_String_
+  commentId: M:KS.Files.PathLookup.PathLookupTools.AddToPathLookup(System.String,System.String)
+  fullName: KS.Files.PathLookup.PathLookupTools.AddToPathLookup(System.String, System.String)
+  nameWithType: PathLookupTools.AddToPathLookup(String, String)
+- uid: KS.Files.PathLookup.PathLookupTools.AddToPathLookup*
+  name: AddToPathLookup
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_AddToPathLookup_
+  commentId: Overload:KS.Files.PathLookup.PathLookupTools.AddToPathLookup
+  isSpec: "True"
+  fullName: KS.Files.PathLookup.PathLookupTools.AddToPathLookup
+  nameWithType: PathLookupTools.AddToPathLookup
+- uid: KS.Files.PathLookup.PathLookupTools.FileExistsInPath(System.String,System.String@)
+  name: FileExistsInPath(String, ref String)
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_FileExistsInPath_System_String_System_String__
+  commentId: M:KS.Files.PathLookup.PathLookupTools.FileExistsInPath(System.String,System.String@)
+  name.vb: FileExistsInPath(String, ByRef String)
+  fullName: KS.Files.PathLookup.PathLookupTools.FileExistsInPath(System.String, ref System.String)
+  fullName.vb: KS.Files.PathLookup.PathLookupTools.FileExistsInPath(System.String, ByRef System.String)
+  nameWithType: PathLookupTools.FileExistsInPath(String, ref String)
+  nameWithType.vb: PathLookupTools.FileExistsInPath(String, ByRef String)
+- uid: KS.Files.PathLookup.PathLookupTools.FileExistsInPath*
+  name: FileExistsInPath
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_FileExistsInPath_
+  commentId: Overload:KS.Files.PathLookup.PathLookupTools.FileExistsInPath
+  isSpec: "True"
+  fullName: KS.Files.PathLookup.PathLookupTools.FileExistsInPath
+  nameWithType: PathLookupTools.FileExistsInPath
+- uid: KS.Files.PathLookup.PathLookupTools.GetPathList
+  name: GetPathList()
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_GetPathList
+  commentId: M:KS.Files.PathLookup.PathLookupTools.GetPathList
+  fullName: KS.Files.PathLookup.PathLookupTools.GetPathList()
+  nameWithType: PathLookupTools.GetPathList()
+- uid: KS.Files.PathLookup.PathLookupTools.GetPathList*
+  name: GetPathList
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_GetPathList_
+  commentId: Overload:KS.Files.PathLookup.PathLookupTools.GetPathList
+  isSpec: "True"
+  fullName: KS.Files.PathLookup.PathLookupTools.GetPathList
+  nameWithType: PathLookupTools.GetPathList
+- uid: KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup(System.String)
+  name: RemoveFromPathLookup(String)
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_RemoveFromPathLookup_System_String_
+  commentId: M:KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup(System.String)
+  fullName: KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup(System.String)
+  nameWithType: PathLookupTools.RemoveFromPathLookup(String)
+- uid: KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup(System.String,System.String)
+  name: RemoveFromPathLookup(String, String)
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_RemoveFromPathLookup_System_String_System_String_
+  commentId: M:KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup(System.String,System.String)
+  fullName: KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup(System.String, System.String)
+  nameWithType: PathLookupTools.RemoveFromPathLookup(String, String)
+- uid: KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup*
+  name: RemoveFromPathLookup
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_RemoveFromPathLookup_
+  commentId: Overload:KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup
+  isSpec: "True"
+  fullName: KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup
+  nameWithType: PathLookupTools.RemoveFromPathLookup
 - uid: KS.Files.Paths
   name: Paths
   href: api/KS.Files.Paths.html
@@ -4795,6 +4712,265 @@ references:
   isSpec: "True"
   fullName: KS.Files.Paths.TempPath
   nameWithType: Paths.TempPath
+- uid: KS.Files.Print
+  name: KS.Files.Print
+  href: api/KS.Files.Print.html
+  commentId: N:KS.Files.Print
+  fullName: KS.Files.Print
+  nameWithType: KS.Files.Print
+- uid: KS.Files.Print.DirectoryInfoPrinter
+  name: DirectoryInfoPrinter
+  href: api/KS.Files.Print.DirectoryInfoPrinter.html
+  commentId: T:KS.Files.Print.DirectoryInfoPrinter
+  fullName: KS.Files.Print.DirectoryInfoPrinter
+  nameWithType: DirectoryInfoPrinter
+- uid: KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo(System.IO.FileSystemInfo)
+  name: PrintDirectoryInfo(FileSystemInfo)
+  href: api/KS.Files.Print.DirectoryInfoPrinter.html#KS_Files_Print_DirectoryInfoPrinter_PrintDirectoryInfo_System_IO_FileSystemInfo_
+  commentId: M:KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo(System.IO.FileSystemInfo)
+  fullName: KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo(System.IO.FileSystemInfo)
+  nameWithType: DirectoryInfoPrinter.PrintDirectoryInfo(FileSystemInfo)
+- uid: KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo(System.IO.FileSystemInfo,System.Boolean)
+  name: PrintDirectoryInfo(FileSystemInfo, Boolean)
+  href: api/KS.Files.Print.DirectoryInfoPrinter.html#KS_Files_Print_DirectoryInfoPrinter_PrintDirectoryInfo_System_IO_FileSystemInfo_System_Boolean_
+  commentId: M:KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo(System.IO.FileSystemInfo,System.Boolean)
+  fullName: KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo(System.IO.FileSystemInfo, System.Boolean)
+  nameWithType: DirectoryInfoPrinter.PrintDirectoryInfo(FileSystemInfo, Boolean)
+- uid: KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo*
+  name: PrintDirectoryInfo
+  href: api/KS.Files.Print.DirectoryInfoPrinter.html#KS_Files_Print_DirectoryInfoPrinter_PrintDirectoryInfo_
+  commentId: Overload:KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo
+  isSpec: "True"
+  fullName: KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo
+  nameWithType: DirectoryInfoPrinter.PrintDirectoryInfo
+- uid: KS.Files.Print.FileContentPrinter
+  name: FileContentPrinter
+  href: api/KS.Files.Print.FileContentPrinter.html
+  commentId: T:KS.Files.Print.FileContentPrinter
+  fullName: KS.Files.Print.FileContentPrinter
+  nameWithType: FileContentPrinter
+- uid: KS.Files.Print.FileContentPrinter.PrintContents(System.String)
+  name: PrintContents(String)
+  href: api/KS.Files.Print.FileContentPrinter.html#KS_Files_Print_FileContentPrinter_PrintContents_System_String_
+  commentId: M:KS.Files.Print.FileContentPrinter.PrintContents(System.String)
+  fullName: KS.Files.Print.FileContentPrinter.PrintContents(System.String)
+  nameWithType: FileContentPrinter.PrintContents(String)
+- uid: KS.Files.Print.FileContentPrinter.PrintContents(System.String,System.Boolean)
+  name: PrintContents(String, Boolean)
+  href: api/KS.Files.Print.FileContentPrinter.html#KS_Files_Print_FileContentPrinter_PrintContents_System_String_System_Boolean_
+  commentId: M:KS.Files.Print.FileContentPrinter.PrintContents(System.String,System.Boolean)
+  fullName: KS.Files.Print.FileContentPrinter.PrintContents(System.String, System.Boolean)
+  nameWithType: FileContentPrinter.PrintContents(String, Boolean)
+- uid: KS.Files.Print.FileContentPrinter.PrintContents*
+  name: PrintContents
+  href: api/KS.Files.Print.FileContentPrinter.html#KS_Files_Print_FileContentPrinter_PrintContents_
+  commentId: Overload:KS.Files.Print.FileContentPrinter.PrintContents
+  isSpec: "True"
+  fullName: KS.Files.Print.FileContentPrinter.PrintContents
+  nameWithType: FileContentPrinter.PrintContents
+- uid: KS.Files.Print.FileInfoPrinter
+  name: FileInfoPrinter
+  href: api/KS.Files.Print.FileInfoPrinter.html
+  commentId: T:KS.Files.Print.FileInfoPrinter
+  fullName: KS.Files.Print.FileInfoPrinter
+  nameWithType: FileInfoPrinter
+- uid: KS.Files.Print.FileInfoPrinter.PrintFileInfo(System.IO.FileSystemInfo)
+  name: PrintFileInfo(FileSystemInfo)
+  href: api/KS.Files.Print.FileInfoPrinter.html#KS_Files_Print_FileInfoPrinter_PrintFileInfo_System_IO_FileSystemInfo_
+  commentId: M:KS.Files.Print.FileInfoPrinter.PrintFileInfo(System.IO.FileSystemInfo)
+  fullName: KS.Files.Print.FileInfoPrinter.PrintFileInfo(System.IO.FileSystemInfo)
+  nameWithType: FileInfoPrinter.PrintFileInfo(FileSystemInfo)
+- uid: KS.Files.Print.FileInfoPrinter.PrintFileInfo(System.IO.FileSystemInfo,System.Boolean)
+  name: PrintFileInfo(FileSystemInfo, Boolean)
+  href: api/KS.Files.Print.FileInfoPrinter.html#KS_Files_Print_FileInfoPrinter_PrintFileInfo_System_IO_FileSystemInfo_System_Boolean_
+  commentId: M:KS.Files.Print.FileInfoPrinter.PrintFileInfo(System.IO.FileSystemInfo,System.Boolean)
+  fullName: KS.Files.Print.FileInfoPrinter.PrintFileInfo(System.IO.FileSystemInfo, System.Boolean)
+  nameWithType: FileInfoPrinter.PrintFileInfo(FileSystemInfo, Boolean)
+- uid: KS.Files.Print.FileInfoPrinter.PrintFileInfo*
+  name: PrintFileInfo
+  href: api/KS.Files.Print.FileInfoPrinter.html#KS_Files_Print_FileInfoPrinter_PrintFileInfo_
+  commentId: Overload:KS.Files.Print.FileInfoPrinter.PrintFileInfo
+  isSpec: "True"
+  fullName: KS.Files.Print.FileInfoPrinter.PrintFileInfo
+  nameWithType: FileInfoPrinter.PrintFileInfo
+- uid: KS.Files.Querying
+  name: KS.Files.Querying
+  href: api/KS.Files.Querying.html
+  commentId: N:KS.Files.Querying
+  fullName: KS.Files.Querying
+  nameWithType: KS.Files.Querying
+- uid: KS.Files.Querying.Checking
+  name: Checking
+  href: api/KS.Files.Querying.Checking.html
+  commentId: T:KS.Files.Querying.Checking
+  fullName: KS.Files.Querying.Checking
+  nameWithType: Checking
+- uid: KS.Files.Querying.Checking.FileExists(System.String,System.Boolean)
+  name: FileExists(String, Boolean)
+  href: api/KS.Files.Querying.Checking.html#KS_Files_Querying_Checking_FileExists_System_String_System_Boolean_
+  commentId: M:KS.Files.Querying.Checking.FileExists(System.String,System.Boolean)
+  fullName: KS.Files.Querying.Checking.FileExists(System.String, System.Boolean)
+  nameWithType: Checking.FileExists(String, Boolean)
+- uid: KS.Files.Querying.Checking.FileExists*
+  name: FileExists
+  href: api/KS.Files.Querying.Checking.html#KS_Files_Querying_Checking_FileExists_
+  commentId: Overload:KS.Files.Querying.Checking.FileExists
+  isSpec: "True"
+  fullName: KS.Files.Querying.Checking.FileExists
+  nameWithType: Checking.FileExists
+- uid: KS.Files.Querying.Checking.FolderExists(System.String,System.Boolean)
+  name: FolderExists(String, Boolean)
+  href: api/KS.Files.Querying.Checking.html#KS_Files_Querying_Checking_FolderExists_System_String_System_Boolean_
+  commentId: M:KS.Files.Querying.Checking.FolderExists(System.String,System.Boolean)
+  fullName: KS.Files.Querying.Checking.FolderExists(System.String, System.Boolean)
+  nameWithType: Checking.FolderExists(String, Boolean)
+- uid: KS.Files.Querying.Checking.FolderExists*
+  name: FolderExists
+  href: api/KS.Files.Querying.Checking.html#KS_Files_Querying_Checking_FolderExists_
+  commentId: Overload:KS.Files.Querying.Checking.FolderExists
+  isSpec: "True"
+  fullName: KS.Files.Querying.Checking.FolderExists
+  nameWithType: Checking.FolderExists
+- uid: KS.Files.Querying.Parsing
+  name: Parsing
+  href: api/KS.Files.Querying.Parsing.html
+  commentId: T:KS.Files.Querying.Parsing
+  fullName: KS.Files.Querying.Parsing
+  nameWithType: Parsing
+- uid: KS.Files.Querying.Parsing.GetInvalidPathChars
+  name: GetInvalidPathChars()
+  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_GetInvalidPathChars
+  commentId: M:KS.Files.Querying.Parsing.GetInvalidPathChars
+  fullName: KS.Files.Querying.Parsing.GetInvalidPathChars()
+  nameWithType: Parsing.GetInvalidPathChars()
+- uid: KS.Files.Querying.Parsing.GetInvalidPathChars*
+  name: GetInvalidPathChars
+  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_GetInvalidPathChars_
+  commentId: Overload:KS.Files.Querying.Parsing.GetInvalidPathChars
+  isSpec: "True"
+  fullName: KS.Files.Querying.Parsing.GetInvalidPathChars
+  nameWithType: Parsing.GetInvalidPathChars
+- uid: KS.Files.Querying.Parsing.TryParseFileName(System.String)
+  name: TryParseFileName(String)
+  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_TryParseFileName_System_String_
+  commentId: M:KS.Files.Querying.Parsing.TryParseFileName(System.String)
+  fullName: KS.Files.Querying.Parsing.TryParseFileName(System.String)
+  nameWithType: Parsing.TryParseFileName(String)
+- uid: KS.Files.Querying.Parsing.TryParseFileName*
+  name: TryParseFileName
+  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_TryParseFileName_
+  commentId: Overload:KS.Files.Querying.Parsing.TryParseFileName
+  isSpec: "True"
+  fullName: KS.Files.Querying.Parsing.TryParseFileName
+  nameWithType: Parsing.TryParseFileName
+- uid: KS.Files.Querying.Parsing.TryParsePath(System.String)
+  name: TryParsePath(String)
+  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_TryParsePath_System_String_
+  commentId: M:KS.Files.Querying.Parsing.TryParsePath(System.String)
+  fullName: KS.Files.Querying.Parsing.TryParsePath(System.String)
+  nameWithType: Parsing.TryParsePath(String)
+- uid: KS.Files.Querying.Parsing.TryParsePath*
+  name: TryParsePath
+  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_TryParsePath_
+  commentId: Overload:KS.Files.Querying.Parsing.TryParsePath
+  isSpec: "True"
+  fullName: KS.Files.Querying.Parsing.TryParsePath
+  nameWithType: Parsing.TryParsePath
+- uid: KS.Files.Querying.Searching
+  name: Searching
+  href: api/KS.Files.Querying.Searching.html
+  commentId: T:KS.Files.Querying.Searching
+  fullName: KS.Files.Querying.Searching
+  nameWithType: Searching
+- uid: KS.Files.Querying.Searching.SearchFileForString(System.String,System.String)
+  name: SearchFileForString(String, String)
+  href: api/KS.Files.Querying.Searching.html#KS_Files_Querying_Searching_SearchFileForString_System_String_System_String_
+  commentId: M:KS.Files.Querying.Searching.SearchFileForString(System.String,System.String)
+  fullName: KS.Files.Querying.Searching.SearchFileForString(System.String, System.String)
+  nameWithType: Searching.SearchFileForString(String, String)
+- uid: KS.Files.Querying.Searching.SearchFileForString*
+  name: SearchFileForString
+  href: api/KS.Files.Querying.Searching.html#KS_Files_Querying_Searching_SearchFileForString_
+  commentId: Overload:KS.Files.Querying.Searching.SearchFileForString
+  isSpec: "True"
+  fullName: KS.Files.Querying.Searching.SearchFileForString
+  nameWithType: Searching.SearchFileForString
+- uid: KS.Files.Querying.Searching.SearchFileForStringRegexp(System.String,System.Text.RegularExpressions.Regex)
+  name: SearchFileForStringRegexp(String, Regex)
+  href: api/KS.Files.Querying.Searching.html#KS_Files_Querying_Searching_SearchFileForStringRegexp_System_String_System_Text_RegularExpressions_Regex_
+  commentId: M:KS.Files.Querying.Searching.SearchFileForStringRegexp(System.String,System.Text.RegularExpressions.Regex)
+  fullName: KS.Files.Querying.Searching.SearchFileForStringRegexp(System.String, System.Text.RegularExpressions.Regex)
+  nameWithType: Searching.SearchFileForStringRegexp(String, Regex)
+- uid: KS.Files.Querying.Searching.SearchFileForStringRegexp*
+  name: SearchFileForStringRegexp
+  href: api/KS.Files.Querying.Searching.html#KS_Files_Querying_Searching_SearchFileForStringRegexp_
+  commentId: Overload:KS.Files.Querying.Searching.SearchFileForStringRegexp
+  isSpec: "True"
+  fullName: KS.Files.Querying.Searching.SearchFileForStringRegexp
+  nameWithType: Searching.SearchFileForStringRegexp
+- uid: KS.Files.Querying.SizeGetter
+  name: SizeGetter
+  href: api/KS.Files.Querying.SizeGetter.html
+  commentId: T:KS.Files.Querying.SizeGetter
+  fullName: KS.Files.Querying.SizeGetter
+  nameWithType: SizeGetter
+- uid: KS.Files.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo)
+  name: GetAllSizesInFolder(DirectoryInfo)
+  href: api/KS.Files.Querying.SizeGetter.html#KS_Files_Querying_SizeGetter_GetAllSizesInFolder_System_IO_DirectoryInfo_
+  commentId: M:KS.Files.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo)
+  fullName: KS.Files.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo)
+  nameWithType: SizeGetter.GetAllSizesInFolder(DirectoryInfo)
+- uid: KS.Files.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo,System.Boolean)
+  name: GetAllSizesInFolder(DirectoryInfo, Boolean)
+  href: api/KS.Files.Querying.SizeGetter.html#KS_Files_Querying_SizeGetter_GetAllSizesInFolder_System_IO_DirectoryInfo_System_Boolean_
+  commentId: M:KS.Files.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo,System.Boolean)
+  fullName: KS.Files.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo, System.Boolean)
+  nameWithType: SizeGetter.GetAllSizesInFolder(DirectoryInfo, Boolean)
+- uid: KS.Files.Querying.SizeGetter.GetAllSizesInFolder*
+  name: GetAllSizesInFolder
+  href: api/KS.Files.Querying.SizeGetter.html#KS_Files_Querying_SizeGetter_GetAllSizesInFolder_
+  commentId: Overload:KS.Files.Querying.SizeGetter.GetAllSizesInFolder
+  isSpec: "True"
+  fullName: KS.Files.Querying.SizeGetter.GetAllSizesInFolder
+  nameWithType: SizeGetter.GetAllSizesInFolder
+- uid: KS.Files.Read
+  name: KS.Files.Read
+  href: api/KS.Files.Read.html
+  commentId: N:KS.Files.Read
+  fullName: KS.Files.Read
+  nameWithType: KS.Files.Read
+- uid: KS.Files.Read.FileRead
+  name: FileRead
+  href: api/KS.Files.Read.FileRead.html
+  commentId: T:KS.Files.Read.FileRead
+  fullName: KS.Files.Read.FileRead
+  nameWithType: FileRead
+- uid: KS.Files.Read.FileRead.ReadAllLinesNoBlock(System.String)
+  name: ReadAllLinesNoBlock(String)
+  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadAllLinesNoBlock_System_String_
+  commentId: M:KS.Files.Read.FileRead.ReadAllLinesNoBlock(System.String)
+  fullName: KS.Files.Read.FileRead.ReadAllLinesNoBlock(System.String)
+  nameWithType: FileRead.ReadAllLinesNoBlock(String)
+- uid: KS.Files.Read.FileRead.ReadAllLinesNoBlock*
+  name: ReadAllLinesNoBlock
+  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadAllLinesNoBlock_
+  commentId: Overload:KS.Files.Read.FileRead.ReadAllLinesNoBlock
+  isSpec: "True"
+  fullName: KS.Files.Read.FileRead.ReadAllLinesNoBlock
+  nameWithType: FileRead.ReadAllLinesNoBlock
+- uid: KS.Files.Read.FileRead.ReadContents(System.String)
+  name: ReadContents(String)
+  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadContents_System_String_
+  commentId: M:KS.Files.Read.FileRead.ReadContents(System.String)
+  fullName: KS.Files.Read.FileRead.ReadContents(System.String)
+  nameWithType: FileRead.ReadContents(String)
+- uid: KS.Files.Read.FileRead.ReadContents*
+  name: ReadContents
+  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadContents_
+  commentId: Overload:KS.Files.Read.FileRead.ReadContents
+  isSpec: "True"
+  fullName: KS.Files.Read.FileRead.ReadContents
+  nameWithType: FileRead.ReadContents
 - uid: KS.Hardware
   name: KS.Hardware
   href: api/KS.Hardware.html
