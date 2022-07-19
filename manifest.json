@@ -170,23 +170,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Color255.ConsoleColors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.ConsoleBase.Color255.ConsoleColors.html",
-          "hash": "nvoYo/J7CFsyeFnln1AWoi6KoboGt1AEOcuAPsMibN8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.Color255.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.Color255.html",
-          "hash": "rdqwcF8f+4x8pSloqy+2vOEZ1gZSP1skvdUSk8sQVV4="
+          "hash": "L1WX2LRXonpStzsOGLxXuyCwo+z7Hr2s1YAFP0Xw3Vw="
         }
       },
       "is_incremental": false,
@@ -246,7 +234,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.ColorWheelOpen.html",
-          "hash": "BKbSI2w1RanpufY6b6HxQyDKTT+IOunsMDVctaj0lbs="
+          "hash": "j/A9BzknW/Q2PvXhQPZF59kLhirKRZipnuT/mhmun2k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.ConsoleColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.ConsoleColors.html",
+          "hash": "GQpxSnkr6Ra62GCOhhgRybxVXB5Eaz92NUowTFhAjOw="
         }
       },
       "is_incremental": false,
@@ -258,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.ConsoleColorsInfo.html",
-          "hash": "LoaLwRX6NvzaH4/mm9DZIYkFh7nVGFgARhgMV/FWSG0="
+          "hash": "vVjjTAu2UMtvpyJftWvN02iIQWzq0Dr3mBLZzk0rQLY="
         }
       },
       "is_incremental": false,
@@ -354,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.html",
-          "hash": "10NyMYheimC8yOF6xfuWqsIE+l/YRtYOxRhmAd5Q0Do="
+          "hash": "DPIO6r5A7R2DiQzc6MhMU5xRkvFCSA4Oa/KkH9Kksfc="
         }
       },
       "is_incremental": false,
@@ -3522,7 +3522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Screensaver.html",
-          "hash": "cyJm+/UN2D/Bh0cYafSeSK09MCw67OkGidUzKl0mzyQ="
+          "hash": "3iZCfHPbVbY7NzP/cYfS9dsgKSKlI4VYwBKgb0a/A/Y="
         }
       },
       "is_incremental": false,
@@ -5550,7 +5550,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "rjgCiC+e5FXmKmonBws1J2bUM6Mi052tTf7lFbbfm1w="
+          "hash": "DTRmdyWMUyrVIsGOZzQMLZAwKrQ8DCUmPBNDzMgGhS8="
         }
       },
       "is_incremental": false,
