@@ -1506,7 +1506,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Kernel.html",
-          "hash": "ubMfv5Xo5sARU9XFNLJoozrg5PtbtuvM0uc5x3OIf98="
+          "hash": "Fu/Ipt1wHozyNmFToCvCt2Ih9Gohn9u6uNSn0LjyGkQ="
         }
       },
       "is_incremental": false,
@@ -5066,6 +5066,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.CommandAutoComplete.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.CommandAutoComplete.html",
+          "hash": "L9HGpo0RVkOX5lALCJixv4Na58ZZrKMzAJFUb7Ixayc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.CommandExecutor.yml",
       "output": {
         ".html": {
@@ -5190,7 +5202,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.ShellStart.html",
-          "hash": "UG2i7yIhC9Gtyujg1dJwmN3ppkGrQe0emjPrMug6VBc="
+          "hash": "I1/0AtEut/5mRLgV2XzTKgfg5fFJ5e1WuhuVqYWnUjo="
         }
       },
       "is_incremental": false,
@@ -5214,7 +5226,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.html",
-          "hash": "Ha7KZ1LJyt52u0HRhHyan3P0+PEmefLLmuUNFbJ1PZI="
+          "hash": "pXWMdbqtTQZeeE0OgHO5g7k2leOVpIWjlVRcNNpI6HQ="
         }
       },
       "is_incremental": false,
@@ -5466,7 +5478,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "SobIyDgHxPRpOdyyuVOAioJPiVe5/QcrUTLK2wHBwsU="
+          "hash": "V3JE1qf9cjRQVPVqwPO1c9EVkQAsjPfLQa9Vn5FixWg="
         }
       },
       "is_incremental": false,
@@ -8397,7 +8409,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 454,
+          "total_file_count": 455,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

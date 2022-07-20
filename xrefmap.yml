@@ -33502,6 +33502,51 @@ references:
   commentId: F:KS.Shell.ShellBase.AliasManager.ZIPShellAliases
   fullName: KS.Shell.ShellBase.AliasManager.ZIPShellAliases
   nameWithType: AliasManager.ZIPShellAliases
+- uid: KS.Shell.ShellBase.CommandAutoComplete
+  name: CommandAutoComplete
+  href: api/KS.Shell.ShellBase.CommandAutoComplete.html
+  commentId: T:KS.Shell.ShellBase.CommandAutoComplete
+  fullName: KS.Shell.ShellBase.CommandAutoComplete
+  nameWithType: CommandAutoComplete
+- uid: KS.Shell.ShellBase.CommandAutoComplete.#ctor(KS.Shell.ShellBase.ShellType)
+  name: CommandAutoComplete(ShellType)
+  href: api/KS.Shell.ShellBase.CommandAutoComplete.html#KS_Shell_ShellBase_CommandAutoComplete__ctor_KS_Shell_ShellBase_ShellType_
+  commentId: M:KS.Shell.ShellBase.CommandAutoComplete.#ctor(KS.Shell.ShellBase.ShellType)
+  fullName: KS.Shell.ShellBase.CommandAutoComplete.CommandAutoComplete(KS.Shell.ShellBase.ShellType)
+  nameWithType: CommandAutoComplete.CommandAutoComplete(ShellType)
+- uid: KS.Shell.ShellBase.CommandAutoComplete.#ctor*
+  name: CommandAutoComplete
+  href: api/KS.Shell.ShellBase.CommandAutoComplete.html#KS_Shell_ShellBase_CommandAutoComplete__ctor_
+  commentId: Overload:KS.Shell.ShellBase.CommandAutoComplete.#ctor
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.CommandAutoComplete.CommandAutoComplete
+  nameWithType: CommandAutoComplete.CommandAutoComplete
+- uid: KS.Shell.ShellBase.CommandAutoComplete.GetSuggestions(System.String,System.Int32)
+  name: GetSuggestions(String, Int32)
+  href: api/KS.Shell.ShellBase.CommandAutoComplete.html#KS_Shell_ShellBase_CommandAutoComplete_GetSuggestions_System_String_System_Int32_
+  commentId: M:KS.Shell.ShellBase.CommandAutoComplete.GetSuggestions(System.String,System.Int32)
+  fullName: KS.Shell.ShellBase.CommandAutoComplete.GetSuggestions(System.String, System.Int32)
+  nameWithType: CommandAutoComplete.GetSuggestions(String, Int32)
+- uid: KS.Shell.ShellBase.CommandAutoComplete.GetSuggestions*
+  name: GetSuggestions
+  href: api/KS.Shell.ShellBase.CommandAutoComplete.html#KS_Shell_ShellBase_CommandAutoComplete_GetSuggestions_
+  commentId: Overload:KS.Shell.ShellBase.CommandAutoComplete.GetSuggestions
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.CommandAutoComplete.GetSuggestions
+  nameWithType: CommandAutoComplete.GetSuggestions
+- uid: KS.Shell.ShellBase.CommandAutoComplete.Separators
+  name: Separators
+  href: api/KS.Shell.ShellBase.CommandAutoComplete.html#KS_Shell_ShellBase_CommandAutoComplete_Separators
+  commentId: P:KS.Shell.ShellBase.CommandAutoComplete.Separators
+  fullName: KS.Shell.ShellBase.CommandAutoComplete.Separators
+  nameWithType: CommandAutoComplete.Separators
+- uid: KS.Shell.ShellBase.CommandAutoComplete.Separators*
+  name: Separators
+  href: api/KS.Shell.ShellBase.CommandAutoComplete.html#KS_Shell_ShellBase_CommandAutoComplete_Separators_
+  commentId: Overload:KS.Shell.ShellBase.CommandAutoComplete.Separators
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.CommandAutoComplete.Separators
+  nameWithType: CommandAutoComplete.Separators
 - uid: KS.Shell.ShellBase.CommandExecutor
   name: CommandExecutor
   href: api/KS.Shell.ShellBase.CommandExecutor.html
