@@ -829,41 +829,6 @@
     "title": "Enum SettingsType | Kernel Simulator API - Eofla Internals",
     "keywords": "Enum SettingsType The settings type Namespace : KS.Misc.Configuration Assembly : Kernel Simulator.dll Syntax public enum SettingsType Fields Name Description Normal The normal kernel settings Screensaver The screensaver settings Splash The splash settings"
   },
-  "api/KS.Misc.Dictionary.DictionaryManager.html": {
-    "href": "api/KS.Misc.Dictionary.DictionaryManager.html",
-    "title": "Class DictionaryManager | Kernel Simulator API - Eofla Internals",
-    "keywords": "Class DictionaryManager Inheritance DictionaryManager Namespace : KS.Misc.Dictionary Assembly : Kernel Simulator.dll Syntax public class DictionaryManager Methods | Improve this Doc View Source GetWordInfo(String) Gets the word information Declaration public static DictionaryWord[] GetWordInfo(string Word) Parameters Type Name Description System.String Word Returns Type Description DictionaryWord []"
-  },
-  "api/KS.Misc.Dictionary.DictionaryWord.Definition.html": {
-    "href": "api/KS.Misc.Dictionary.DictionaryWord.Definition.html",
-    "title": "Class DictionaryWord.Definition | Kernel Simulator API - Eofla Internals",
-    "keywords": "Class DictionaryWord.Definition Inheritance System.Object DictionaryWord.Definition Namespace : KS.Misc.Dictionary Assembly : Kernel Simulator.dll Syntax public class Definition Properties | Improve this Doc View Source Antonyms Declaration public List<object> Antonyms { get; set; } Property Value Type Description System.Collections.Generic.List < System.Object > | Improve this Doc View Source Definition Declaration public string Definition { get; set; } Property Value Type Description System.String | Improve this Doc View Source Example Declaration public string Example { get; set; } Property Value Type Description System.String | Improve this Doc View Source Synonyms Declaration public List<string> Synonyms { get; set; } Property Value Type Description System.Collections.Generic.List < System.String >"
-  },
-  "api/KS.Misc.Dictionary.DictionaryWord.html": {
-    "href": "api/KS.Misc.Dictionary.DictionaryWord.html",
-    "title": "Class DictionaryWord | Kernel Simulator API - Eofla Internals",
-    "keywords": "Class DictionaryWord Inheritance System.Object DictionaryWord Namespace : KS.Misc.Dictionary Assembly : Kernel Simulator.dll Syntax public class DictionaryWord Properties | Improve this Doc View Source LicenseInfo Declaration public DictionaryWord.License LicenseInfo { get; set; } Property Value Type Description DictionaryWord.License | Improve this Doc View Source Meanings Declaration public List<DictionaryWord.Meaning> Meanings { get; set; } Property Value Type Description System.Collections.Generic.List < DictionaryWord.Meaning > | Improve this Doc View Source Phonetics Declaration public List<DictionaryWord.Phonetic> Phonetics { get; set; } Property Value Type Description System.Collections.Generic.List < DictionaryWord.Phonetic > | Improve this Doc View Source PhoneticWord Declaration public string PhoneticWord { get; set; } Property Value Type Description System.String | Improve this Doc View Source SourceUrls Declaration public List<string> SourceUrls { get; set; } Property Value Type Description System.Collections.Generic.List < System.String > | Improve this Doc View Source Word Declaration public string Word { get; set; } Property Value Type Description System.String"
-  },
-  "api/KS.Misc.Dictionary.DictionaryWord.License.html": {
-    "href": "api/KS.Misc.Dictionary.DictionaryWord.License.html",
-    "title": "Class DictionaryWord.License | Kernel Simulator API - Eofla Internals",
-    "keywords": "Class DictionaryWord.License Inheritance System.Object DictionaryWord.License Namespace : KS.Misc.Dictionary Assembly : Kernel Simulator.dll Syntax public class License Properties | Improve this Doc View Source Name Declaration public string Name { get; set; } Property Value Type Description System.String | Improve this Doc View Source Url Declaration public string Url { get; set; } Property Value Type Description System.String"
-  },
-  "api/KS.Misc.Dictionary.DictionaryWord.Meaning.html": {
-    "href": "api/KS.Misc.Dictionary.DictionaryWord.Meaning.html",
-    "title": "Class DictionaryWord.Meaning | Kernel Simulator API - Eofla Internals",
-    "keywords": "Class DictionaryWord.Meaning Inheritance System.Object DictionaryWord.Meaning Namespace : KS.Misc.Dictionary Assembly : Kernel Simulator.dll Syntax public class Meaning Properties | Improve this Doc View Source Antonyms Declaration public List<string> Antonyms { get; set; } Property Value Type Description System.Collections.Generic.List < System.String > | Improve this Doc View Source Definitions Declaration public List<DictionaryWord.Definition> Definitions { get; set; } Property Value Type Description System.Collections.Generic.List < DictionaryWord.Definition > | Improve this Doc View Source PartOfSpeech Declaration public string PartOfSpeech { get; set; } Property Value Type Description System.String | Improve this Doc View Source Synonyms Declaration public List<string> Synonyms { get; set; } Property Value Type Description System.Collections.Generic.List < System.String >"
-  },
-  "api/KS.Misc.Dictionary.DictionaryWord.Phonetic.html": {
-    "href": "api/KS.Misc.Dictionary.DictionaryWord.Phonetic.html",
-    "title": "Class DictionaryWord.Phonetic | Kernel Simulator API - Eofla Internals",
-    "keywords": "Class DictionaryWord.Phonetic Inheritance System.Object DictionaryWord.Phonetic Namespace : KS.Misc.Dictionary Assembly : Kernel Simulator.dll Syntax public class Phonetic Properties | Improve this Doc View Source Audio Declaration public string Audio { get; set; } Property Value Type Description System.String | Improve this Doc View Source License Declaration public DictionaryWord.License License { get; set; } Property Value Type Description DictionaryWord.License | Improve this Doc View Source SourceUrl Declaration public string SourceUrl { get; set; } Property Value Type Description System.String | Improve this Doc View Source Text Declaration public string Text { get; set; } Property Value Type Description System.String"
-  },
-  "api/KS.Misc.Dictionary.html": {
-    "href": "api/KS.Misc.Dictionary.html",
-    "title": "Namespace KS.Misc.Dictionary | Kernel Simulator API - Eofla Internals",
-    "keywords": "Namespace KS.Misc.Dictionary Classes DictionaryManager DictionaryWord DictionaryWord.Definition DictionaryWord.License DictionaryWord.Meaning DictionaryWord.Phonetic"
-  },
   "api/KS.Misc.Editors.HexEdit.HexEditShellCommon.html": {
     "href": "api/KS.Misc.Editors.HexEdit.HexEditShellCommon.html",
     "title": "Class HexEditShellCommon | Kernel Simulator API - Eofla Internals",
