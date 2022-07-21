@@ -706,6 +706,22 @@
 </ul>
 </li>
 </ul>
+<h5 id="separated-consolecolors-enumeration">Separated ConsoleColors enumeration</h5>
+<p>It was previously inside the Colors255 module. Now, it resides in its own code file. It's in the same namespace.</p>
+<h5 id="removed-ksmiscdictionary-to-substitute-with-dictify">Removed KS.Misc.Dictionary to substitute with Dictify</h5>
+<p>We have removed this namespace that existed in 0.0.23.0 to use the Doctify library so if we try to update it for bug fixes or feature additions, we don't depend on Kernel Simulator for this feature.</p>
+<ul>
+<li><p>Affected functions:</p>
+<ul>
+<li><code>GetWordInfo()</code></li>
+</ul>
+</li>
+<li><p>Affected classes:</p>
+<ul>
+<li><code>DictionaryWord</code></li>
+</ul>
+</li>
+</ul>
 </article>
           </div>
           
