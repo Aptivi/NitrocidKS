@@ -30465,213 +30465,6 @@ references:
   commentId: F:KS.Network.NetworkTools.UploadRetries
   fullName: KS.Network.NetworkTools.UploadRetries
   nameWithType: NetworkTools.UploadRetries
-- uid: KS.Network.NetworkTransfer
-  name: NetworkTransfer
-  href: api/KS.Network.NetworkTransfer.html
-  commentId: T:KS.Network.NetworkTransfer
-  fullName: KS.Network.NetworkTransfer
-  nameWithType: NetworkTransfer
-- uid: KS.Network.NetworkTransfer.DownloadFile(System.String)
-  name: DownloadFile(String)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadFile_System_String_
-  commentId: M:KS.Network.NetworkTransfer.DownloadFile(System.String)
-  fullName: KS.Network.NetworkTransfer.DownloadFile(System.String)
-  nameWithType: NetworkTransfer.DownloadFile(String)
-- uid: KS.Network.NetworkTransfer.DownloadFile(System.String,System.Boolean)
-  name: DownloadFile(String, Boolean)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadFile_System_String_System_Boolean_
-  commentId: M:KS.Network.NetworkTransfer.DownloadFile(System.String,System.Boolean)
-  fullName: KS.Network.NetworkTransfer.DownloadFile(System.String, System.Boolean)
-  nameWithType: NetworkTransfer.DownloadFile(String, Boolean)
-- uid: KS.Network.NetworkTransfer.DownloadFile(System.String,System.Boolean,System.String)
-  name: DownloadFile(String, Boolean, String)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadFile_System_String_System_Boolean_System_String_
-  commentId: M:KS.Network.NetworkTransfer.DownloadFile(System.String,System.Boolean,System.String)
-  fullName: KS.Network.NetworkTransfer.DownloadFile(System.String, System.Boolean, System.String)
-  nameWithType: NetworkTransfer.DownloadFile(String, Boolean, String)
-- uid: KS.Network.NetworkTransfer.DownloadFile(System.String,System.String)
-  name: DownloadFile(String, String)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadFile_System_String_System_String_
-  commentId: M:KS.Network.NetworkTransfer.DownloadFile(System.String,System.String)
-  fullName: KS.Network.NetworkTransfer.DownloadFile(System.String, System.String)
-  nameWithType: NetworkTransfer.DownloadFile(String, String)
-- uid: KS.Network.NetworkTransfer.DownloadFile*
-  name: DownloadFile
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadFile_
-  commentId: Overload:KS.Network.NetworkTransfer.DownloadFile
-  isSpec: "True"
-  fullName: KS.Network.NetworkTransfer.DownloadFile
-  nameWithType: NetworkTransfer.DownloadFile
-- uid: KS.Network.NetworkTransfer.DownloadNotificationProvoke
-  name: DownloadNotificationProvoke
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadNotificationProvoke
-  commentId: F:KS.Network.NetworkTransfer.DownloadNotificationProvoke
-  fullName: KS.Network.NetworkTransfer.DownloadNotificationProvoke
-  nameWithType: NetworkTransfer.DownloadNotificationProvoke
-- uid: KS.Network.NetworkTransfer.DownloadPercentagePrint
-  name: DownloadPercentagePrint
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadPercentagePrint
-  commentId: F:KS.Network.NetworkTransfer.DownloadPercentagePrint
-  fullName: KS.Network.NetworkTransfer.DownloadPercentagePrint
-  nameWithType: NetworkTransfer.DownloadPercentagePrint
-- uid: KS.Network.NetworkTransfer.DownloadString(System.String)
-  name: DownloadString(String)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadString_System_String_
-  commentId: M:KS.Network.NetworkTransfer.DownloadString(System.String)
-  fullName: KS.Network.NetworkTransfer.DownloadString(System.String)
-  nameWithType: NetworkTransfer.DownloadString(String)
-- uid: KS.Network.NetworkTransfer.DownloadString(System.String,System.Boolean)
-  name: DownloadString(String, Boolean)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadString_System_String_System_Boolean_
-  commentId: M:KS.Network.NetworkTransfer.DownloadString(System.String,System.Boolean)
-  fullName: KS.Network.NetworkTransfer.DownloadString(System.String, System.Boolean)
-  nameWithType: NetworkTransfer.DownloadString(String, Boolean)
-- uid: KS.Network.NetworkTransfer.DownloadString*
-  name: DownloadString
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_DownloadString_
-  commentId: Overload:KS.Network.NetworkTransfer.DownloadString
-  isSpec: "True"
-  fullName: KS.Network.NetworkTransfer.DownloadString
-  nameWithType: NetworkTransfer.DownloadString
-- uid: KS.Network.NetworkTransfer.UploadFile(System.String,System.String)
-  name: UploadFile(String, String)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadFile_System_String_System_String_
-  commentId: M:KS.Network.NetworkTransfer.UploadFile(System.String,System.String)
-  fullName: KS.Network.NetworkTransfer.UploadFile(System.String, System.String)
-  nameWithType: NetworkTransfer.UploadFile(String, String)
-- uid: KS.Network.NetworkTransfer.UploadFile(System.String,System.String,System.Boolean)
-  name: UploadFile(String, String, Boolean)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadFile_System_String_System_String_System_Boolean_
-  commentId: M:KS.Network.NetworkTransfer.UploadFile(System.String,System.String,System.Boolean)
-  fullName: KS.Network.NetworkTransfer.UploadFile(System.String, System.String, System.Boolean)
-  nameWithType: NetworkTransfer.UploadFile(String, String, Boolean)
-- uid: KS.Network.NetworkTransfer.UploadFile*
-  name: UploadFile
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadFile_
-  commentId: Overload:KS.Network.NetworkTransfer.UploadFile
-  isSpec: "True"
-  fullName: KS.Network.NetworkTransfer.UploadFile
-  nameWithType: NetworkTransfer.UploadFile
-- uid: KS.Network.NetworkTransfer.UploadNotificationProvoke
-  name: UploadNotificationProvoke
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadNotificationProvoke
-  commentId: F:KS.Network.NetworkTransfer.UploadNotificationProvoke
-  fullName: KS.Network.NetworkTransfer.UploadNotificationProvoke
-  nameWithType: NetworkTransfer.UploadNotificationProvoke
-- uid: KS.Network.NetworkTransfer.UploadPercentagePrint
-  name: UploadPercentagePrint
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadPercentagePrint
-  commentId: F:KS.Network.NetworkTransfer.UploadPercentagePrint
-  fullName: KS.Network.NetworkTransfer.UploadPercentagePrint
-  nameWithType: NetworkTransfer.UploadPercentagePrint
-- uid: KS.Network.NetworkTransfer.UploadString(System.String,System.String)
-  name: UploadString(String, String)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadString_System_String_System_String_
-  commentId: M:KS.Network.NetworkTransfer.UploadString(System.String,System.String)
-  fullName: KS.Network.NetworkTransfer.UploadString(System.String, System.String)
-  nameWithType: NetworkTransfer.UploadString(String, String)
-- uid: KS.Network.NetworkTransfer.UploadString(System.String,System.String,System.Boolean)
-  name: UploadString(String, String, Boolean)
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadString_System_String_System_String_System_Boolean_
-  commentId: M:KS.Network.NetworkTransfer.UploadString(System.String,System.String,System.Boolean)
-  fullName: KS.Network.NetworkTransfer.UploadString(System.String, System.String, System.Boolean)
-  nameWithType: NetworkTransfer.UploadString(String, String, Boolean)
-- uid: KS.Network.NetworkTransfer.UploadString*
-  name: UploadString
-  href: api/KS.Network.NetworkTransfer.html#KS_Network_NetworkTransfer_UploadString_
-  commentId: Overload:KS.Network.NetworkTransfer.UploadString
-  isSpec: "True"
-  fullName: KS.Network.NetworkTransfer.UploadString
-  nameWithType: NetworkTransfer.UploadString
-- uid: KS.Network.NetworkTransferInfo
-  name: NetworkTransferInfo
-  href: api/KS.Network.NetworkTransferInfo.html
-  commentId: T:KS.Network.NetworkTransferInfo
-  fullName: KS.Network.NetworkTransferInfo
-  nameWithType: NetworkTransferInfo
-- uid: KS.Network.NetworkTransferInfo.#ctor(System.Int64,System.Int64,KS.Network.NetworkTransferType)
-  name: NetworkTransferInfo(Int64, Int64, NetworkTransferType)
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo__ctor_System_Int64_System_Int64_KS_Network_NetworkTransferType_
-  commentId: M:KS.Network.NetworkTransferInfo.#ctor(System.Int64,System.Int64,KS.Network.NetworkTransferType)
-  fullName: KS.Network.NetworkTransferInfo.NetworkTransferInfo(System.Int64, System.Int64, KS.Network.NetworkTransferType)
-  nameWithType: NetworkTransferInfo.NetworkTransferInfo(Int64, Int64, NetworkTransferType)
-- uid: KS.Network.NetworkTransferInfo.#ctor*
-  name: NetworkTransferInfo
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo__ctor_
-  commentId: Overload:KS.Network.NetworkTransferInfo.#ctor
-  isSpec: "True"
-  fullName: KS.Network.NetworkTransferInfo.NetworkTransferInfo
-  nameWithType: NetworkTransferInfo.NetworkTransferInfo
-- uid: KS.Network.NetworkTransferInfo.DoneSize
-  name: DoneSize
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_DoneSize
-  commentId: P:KS.Network.NetworkTransferInfo.DoneSize
-  fullName: KS.Network.NetworkTransferInfo.DoneSize
-  nameWithType: NetworkTransferInfo.DoneSize
-- uid: KS.Network.NetworkTransferInfo.DoneSize*
-  name: DoneSize
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_DoneSize_
-  commentId: Overload:KS.Network.NetworkTransferInfo.DoneSize
-  isSpec: "True"
-  fullName: KS.Network.NetworkTransferInfo.DoneSize
-  nameWithType: NetworkTransferInfo.DoneSize
-- uid: KS.Network.NetworkTransferInfo.FileSize
-  name: FileSize
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_FileSize
-  commentId: P:KS.Network.NetworkTransferInfo.FileSize
-  fullName: KS.Network.NetworkTransferInfo.FileSize
-  nameWithType: NetworkTransferInfo.FileSize
-- uid: KS.Network.NetworkTransferInfo.FileSize*
-  name: FileSize
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_FileSize_
-  commentId: Overload:KS.Network.NetworkTransferInfo.FileSize
-  isSpec: "True"
-  fullName: KS.Network.NetworkTransferInfo.FileSize
-  nameWithType: NetworkTransferInfo.FileSize
-- uid: KS.Network.NetworkTransferInfo.MessageSuppressed
-  name: MessageSuppressed
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_MessageSuppressed
-  commentId: P:KS.Network.NetworkTransferInfo.MessageSuppressed
-  fullName: KS.Network.NetworkTransferInfo.MessageSuppressed
-  nameWithType: NetworkTransferInfo.MessageSuppressed
-- uid: KS.Network.NetworkTransferInfo.MessageSuppressed*
-  name: MessageSuppressed
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_MessageSuppressed_
-  commentId: Overload:KS.Network.NetworkTransferInfo.MessageSuppressed
-  isSpec: "True"
-  fullName: KS.Network.NetworkTransferInfo.MessageSuppressed
-  nameWithType: NetworkTransferInfo.MessageSuppressed
-- uid: KS.Network.NetworkTransferInfo.TransferType
-  name: TransferType
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_TransferType
-  commentId: P:KS.Network.NetworkTransferInfo.TransferType
-  fullName: KS.Network.NetworkTransferInfo.TransferType
-  nameWithType: NetworkTransferInfo.TransferType
-- uid: KS.Network.NetworkTransferInfo.TransferType*
-  name: TransferType
-  href: api/KS.Network.NetworkTransferInfo.html#KS_Network_NetworkTransferInfo_TransferType_
-  commentId: Overload:KS.Network.NetworkTransferInfo.TransferType
-  isSpec: "True"
-  fullName: KS.Network.NetworkTransferInfo.TransferType
-  nameWithType: NetworkTransferInfo.TransferType
-- uid: KS.Network.NetworkTransferType
-  name: NetworkTransferType
-  href: api/KS.Network.NetworkTransferType.html
-  commentId: T:KS.Network.NetworkTransferType
-  fullName: KS.Network.NetworkTransferType
-  nameWithType: NetworkTransferType
-- uid: KS.Network.NetworkTransferType.Download
-  name: Download
-  href: api/KS.Network.NetworkTransferType.html#KS_Network_NetworkTransferType_Download
-  commentId: F:KS.Network.NetworkTransferType.Download
-  fullName: KS.Network.NetworkTransferType.Download
-  nameWithType: NetworkTransferType.Download
-- uid: KS.Network.NetworkTransferType.Upload
-  name: Upload
-  href: api/KS.Network.NetworkTransferType.html#KS_Network_NetworkTransferType_Upload
-  commentId: F:KS.Network.NetworkTransferType.Upload
-  fullName: KS.Network.NetworkTransferType.Upload
-  nameWithType: NetworkTransferType.Upload
 - uid: KS.Network.RemoteDebug
   name: KS.Network.RemoteDebug
   href: api/KS.Network.RemoteDebug.html
@@ -31833,6 +31626,219 @@ references:
   commentId: F:KS.Network.SSH.SSH.SSHBanner
   fullName: KS.Network.SSH.SSH.SSHBanner
   nameWithType: SSH.SSHBanner
+- uid: KS.Network.Transfer
+  name: KS.Network.Transfer
+  href: api/KS.Network.Transfer.html
+  commentId: N:KS.Network.Transfer
+  fullName: KS.Network.Transfer
+  nameWithType: KS.Network.Transfer
+- uid: KS.Network.Transfer.NetworkTransfer
+  name: NetworkTransfer
+  href: api/KS.Network.Transfer.NetworkTransfer.html
+  commentId: T:KS.Network.Transfer.NetworkTransfer
+  fullName: KS.Network.Transfer.NetworkTransfer
+  nameWithType: NetworkTransfer
+- uid: KS.Network.Transfer.NetworkTransfer.DownloadFile(System.String)
+  name: DownloadFile(String)
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_DownloadFile_System_String_
+  commentId: M:KS.Network.Transfer.NetworkTransfer.DownloadFile(System.String)
+  fullName: KS.Network.Transfer.NetworkTransfer.DownloadFile(System.String)
+  nameWithType: NetworkTransfer.DownloadFile(String)
+- uid: KS.Network.Transfer.NetworkTransfer.DownloadFile(System.String,System.Boolean)
+  name: DownloadFile(String, Boolean)
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_DownloadFile_System_String_System_Boolean_
+  commentId: M:KS.Network.Transfer.NetworkTransfer.DownloadFile(System.String,System.Boolean)
+  fullName: KS.Network.Transfer.NetworkTransfer.DownloadFile(System.String, System.Boolean)
+  nameWithType: NetworkTransfer.DownloadFile(String, Boolean)
+- uid: KS.Network.Transfer.NetworkTransfer.DownloadFile(System.String,System.Boolean,System.String)
+  name: DownloadFile(String, Boolean, String)
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_DownloadFile_System_String_System_Boolean_System_String_
+  commentId: M:KS.Network.Transfer.NetworkTransfer.DownloadFile(System.String,System.Boolean,System.String)
+  fullName: KS.Network.Transfer.NetworkTransfer.DownloadFile(System.String, System.Boolean, System.String)
+  nameWithType: NetworkTransfer.DownloadFile(String, Boolean, String)
+- uid: KS.Network.Transfer.NetworkTransfer.DownloadFile(System.String,System.String)
+  name: DownloadFile(String, String)
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_DownloadFile_System_String_System_String_
+  commentId: M:KS.Network.Transfer.NetworkTransfer.DownloadFile(System.String,System.String)
+  fullName: KS.Network.Transfer.NetworkTransfer.DownloadFile(System.String, System.String)
+  nameWithType: NetworkTransfer.DownloadFile(String, String)
+- uid: KS.Network.Transfer.NetworkTransfer.DownloadFile*
+  name: DownloadFile
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_DownloadFile_
+  commentId: Overload:KS.Network.Transfer.NetworkTransfer.DownloadFile
+  isSpec: "True"
+  fullName: KS.Network.Transfer.NetworkTransfer.DownloadFile
+  nameWithType: NetworkTransfer.DownloadFile
+- uid: KS.Network.Transfer.NetworkTransfer.DownloadNotificationProvoke
+  name: DownloadNotificationProvoke
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_DownloadNotificationProvoke
+  commentId: F:KS.Network.Transfer.NetworkTransfer.DownloadNotificationProvoke
+  fullName: KS.Network.Transfer.NetworkTransfer.DownloadNotificationProvoke
+  nameWithType: NetworkTransfer.DownloadNotificationProvoke
+- uid: KS.Network.Transfer.NetworkTransfer.DownloadPercentagePrint
+  name: DownloadPercentagePrint
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_DownloadPercentagePrint
+  commentId: F:KS.Network.Transfer.NetworkTransfer.DownloadPercentagePrint
+  fullName: KS.Network.Transfer.NetworkTransfer.DownloadPercentagePrint
+  nameWithType: NetworkTransfer.DownloadPercentagePrint
+- uid: KS.Network.Transfer.NetworkTransfer.DownloadString(System.String)
+  name: DownloadString(String)
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_DownloadString_System_String_
+  commentId: M:KS.Network.Transfer.NetworkTransfer.DownloadString(System.String)
+  fullName: KS.Network.Transfer.NetworkTransfer.DownloadString(System.String)
+  nameWithType: NetworkTransfer.DownloadString(String)
+- uid: KS.Network.Transfer.NetworkTransfer.DownloadString(System.String,System.Boolean)
+  name: DownloadString(String, Boolean)
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_DownloadString_System_String_System_Boolean_
+  commentId: M:KS.Network.Transfer.NetworkTransfer.DownloadString(System.String,System.Boolean)
+  fullName: KS.Network.Transfer.NetworkTransfer.DownloadString(System.String, System.Boolean)
+  nameWithType: NetworkTransfer.DownloadString(String, Boolean)
+- uid: KS.Network.Transfer.NetworkTransfer.DownloadString*
+  name: DownloadString
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_DownloadString_
+  commentId: Overload:KS.Network.Transfer.NetworkTransfer.DownloadString
+  isSpec: "True"
+  fullName: KS.Network.Transfer.NetworkTransfer.DownloadString
+  nameWithType: NetworkTransfer.DownloadString
+- uid: KS.Network.Transfer.NetworkTransfer.UploadFile(System.String,System.String)
+  name: UploadFile(String, String)
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_UploadFile_System_String_System_String_
+  commentId: M:KS.Network.Transfer.NetworkTransfer.UploadFile(System.String,System.String)
+  fullName: KS.Network.Transfer.NetworkTransfer.UploadFile(System.String, System.String)
+  nameWithType: NetworkTransfer.UploadFile(String, String)
+- uid: KS.Network.Transfer.NetworkTransfer.UploadFile(System.String,System.String,System.Boolean)
+  name: UploadFile(String, String, Boolean)
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_UploadFile_System_String_System_String_System_Boolean_
+  commentId: M:KS.Network.Transfer.NetworkTransfer.UploadFile(System.String,System.String,System.Boolean)
+  fullName: KS.Network.Transfer.NetworkTransfer.UploadFile(System.String, System.String, System.Boolean)
+  nameWithType: NetworkTransfer.UploadFile(String, String, Boolean)
+- uid: KS.Network.Transfer.NetworkTransfer.UploadFile*
+  name: UploadFile
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_UploadFile_
+  commentId: Overload:KS.Network.Transfer.NetworkTransfer.UploadFile
+  isSpec: "True"
+  fullName: KS.Network.Transfer.NetworkTransfer.UploadFile
+  nameWithType: NetworkTransfer.UploadFile
+- uid: KS.Network.Transfer.NetworkTransfer.UploadNotificationProvoke
+  name: UploadNotificationProvoke
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_UploadNotificationProvoke
+  commentId: F:KS.Network.Transfer.NetworkTransfer.UploadNotificationProvoke
+  fullName: KS.Network.Transfer.NetworkTransfer.UploadNotificationProvoke
+  nameWithType: NetworkTransfer.UploadNotificationProvoke
+- uid: KS.Network.Transfer.NetworkTransfer.UploadPercentagePrint
+  name: UploadPercentagePrint
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_UploadPercentagePrint
+  commentId: F:KS.Network.Transfer.NetworkTransfer.UploadPercentagePrint
+  fullName: KS.Network.Transfer.NetworkTransfer.UploadPercentagePrint
+  nameWithType: NetworkTransfer.UploadPercentagePrint
+- uid: KS.Network.Transfer.NetworkTransfer.UploadString(System.String,System.String)
+  name: UploadString(String, String)
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_UploadString_System_String_System_String_
+  commentId: M:KS.Network.Transfer.NetworkTransfer.UploadString(System.String,System.String)
+  fullName: KS.Network.Transfer.NetworkTransfer.UploadString(System.String, System.String)
+  nameWithType: NetworkTransfer.UploadString(String, String)
+- uid: KS.Network.Transfer.NetworkTransfer.UploadString(System.String,System.String,System.Boolean)
+  name: UploadString(String, String, Boolean)
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_UploadString_System_String_System_String_System_Boolean_
+  commentId: M:KS.Network.Transfer.NetworkTransfer.UploadString(System.String,System.String,System.Boolean)
+  fullName: KS.Network.Transfer.NetworkTransfer.UploadString(System.String, System.String, System.Boolean)
+  nameWithType: NetworkTransfer.UploadString(String, String, Boolean)
+- uid: KS.Network.Transfer.NetworkTransfer.UploadString*
+  name: UploadString
+  href: api/KS.Network.Transfer.NetworkTransfer.html#KS_Network_Transfer_NetworkTransfer_UploadString_
+  commentId: Overload:KS.Network.Transfer.NetworkTransfer.UploadString
+  isSpec: "True"
+  fullName: KS.Network.Transfer.NetworkTransfer.UploadString
+  nameWithType: NetworkTransfer.UploadString
+- uid: KS.Network.Transfer.NetworkTransferInfo
+  name: NetworkTransferInfo
+  href: api/KS.Network.Transfer.NetworkTransferInfo.html
+  commentId: T:KS.Network.Transfer.NetworkTransferInfo
+  fullName: KS.Network.Transfer.NetworkTransferInfo
+  nameWithType: NetworkTransferInfo
+- uid: KS.Network.Transfer.NetworkTransferInfo.#ctor(System.Int64,System.Int64,KS.Network.Transfer.NetworkTransferType)
+  name: NetworkTransferInfo(Int64, Int64, NetworkTransferType)
+  href: api/KS.Network.Transfer.NetworkTransferInfo.html#KS_Network_Transfer_NetworkTransferInfo__ctor_System_Int64_System_Int64_KS_Network_Transfer_NetworkTransferType_
+  commentId: M:KS.Network.Transfer.NetworkTransferInfo.#ctor(System.Int64,System.Int64,KS.Network.Transfer.NetworkTransferType)
+  fullName: KS.Network.Transfer.NetworkTransferInfo.NetworkTransferInfo(System.Int64, System.Int64, KS.Network.Transfer.NetworkTransferType)
+  nameWithType: NetworkTransferInfo.NetworkTransferInfo(Int64, Int64, NetworkTransferType)
+- uid: KS.Network.Transfer.NetworkTransferInfo.#ctor*
+  name: NetworkTransferInfo
+  href: api/KS.Network.Transfer.NetworkTransferInfo.html#KS_Network_Transfer_NetworkTransferInfo__ctor_
+  commentId: Overload:KS.Network.Transfer.NetworkTransferInfo.#ctor
+  isSpec: "True"
+  fullName: KS.Network.Transfer.NetworkTransferInfo.NetworkTransferInfo
+  nameWithType: NetworkTransferInfo.NetworkTransferInfo
+- uid: KS.Network.Transfer.NetworkTransferInfo.DoneSize
+  name: DoneSize
+  href: api/KS.Network.Transfer.NetworkTransferInfo.html#KS_Network_Transfer_NetworkTransferInfo_DoneSize
+  commentId: P:KS.Network.Transfer.NetworkTransferInfo.DoneSize
+  fullName: KS.Network.Transfer.NetworkTransferInfo.DoneSize
+  nameWithType: NetworkTransferInfo.DoneSize
+- uid: KS.Network.Transfer.NetworkTransferInfo.DoneSize*
+  name: DoneSize
+  href: api/KS.Network.Transfer.NetworkTransferInfo.html#KS_Network_Transfer_NetworkTransferInfo_DoneSize_
+  commentId: Overload:KS.Network.Transfer.NetworkTransferInfo.DoneSize
+  isSpec: "True"
+  fullName: KS.Network.Transfer.NetworkTransferInfo.DoneSize
+  nameWithType: NetworkTransferInfo.DoneSize
+- uid: KS.Network.Transfer.NetworkTransferInfo.FileSize
+  name: FileSize
+  href: api/KS.Network.Transfer.NetworkTransferInfo.html#KS_Network_Transfer_NetworkTransferInfo_FileSize
+  commentId: P:KS.Network.Transfer.NetworkTransferInfo.FileSize
+  fullName: KS.Network.Transfer.NetworkTransferInfo.FileSize
+  nameWithType: NetworkTransferInfo.FileSize
+- uid: KS.Network.Transfer.NetworkTransferInfo.FileSize*
+  name: FileSize
+  href: api/KS.Network.Transfer.NetworkTransferInfo.html#KS_Network_Transfer_NetworkTransferInfo_FileSize_
+  commentId: Overload:KS.Network.Transfer.NetworkTransferInfo.FileSize
+  isSpec: "True"
+  fullName: KS.Network.Transfer.NetworkTransferInfo.FileSize
+  nameWithType: NetworkTransferInfo.FileSize
+- uid: KS.Network.Transfer.NetworkTransferInfo.MessageSuppressed
+  name: MessageSuppressed
+  href: api/KS.Network.Transfer.NetworkTransferInfo.html#KS_Network_Transfer_NetworkTransferInfo_MessageSuppressed
+  commentId: P:KS.Network.Transfer.NetworkTransferInfo.MessageSuppressed
+  fullName: KS.Network.Transfer.NetworkTransferInfo.MessageSuppressed
+  nameWithType: NetworkTransferInfo.MessageSuppressed
+- uid: KS.Network.Transfer.NetworkTransferInfo.MessageSuppressed*
+  name: MessageSuppressed
+  href: api/KS.Network.Transfer.NetworkTransferInfo.html#KS_Network_Transfer_NetworkTransferInfo_MessageSuppressed_
+  commentId: Overload:KS.Network.Transfer.NetworkTransferInfo.MessageSuppressed
+  isSpec: "True"
+  fullName: KS.Network.Transfer.NetworkTransferInfo.MessageSuppressed
+  nameWithType: NetworkTransferInfo.MessageSuppressed
+- uid: KS.Network.Transfer.NetworkTransferInfo.TransferType
+  name: TransferType
+  href: api/KS.Network.Transfer.NetworkTransferInfo.html#KS_Network_Transfer_NetworkTransferInfo_TransferType
+  commentId: P:KS.Network.Transfer.NetworkTransferInfo.TransferType
+  fullName: KS.Network.Transfer.NetworkTransferInfo.TransferType
+  nameWithType: NetworkTransferInfo.TransferType
+- uid: KS.Network.Transfer.NetworkTransferInfo.TransferType*
+  name: TransferType
+  href: api/KS.Network.Transfer.NetworkTransferInfo.html#KS_Network_Transfer_NetworkTransferInfo_TransferType_
+  commentId: Overload:KS.Network.Transfer.NetworkTransferInfo.TransferType
+  isSpec: "True"
+  fullName: KS.Network.Transfer.NetworkTransferInfo.TransferType
+  nameWithType: NetworkTransferInfo.TransferType
+- uid: KS.Network.Transfer.NetworkTransferType
+  name: NetworkTransferType
+  href: api/KS.Network.Transfer.NetworkTransferType.html
+  commentId: T:KS.Network.Transfer.NetworkTransferType
+  fullName: KS.Network.Transfer.NetworkTransferType
+  nameWithType: NetworkTransferType
+- uid: KS.Network.Transfer.NetworkTransferType.Download
+  name: Download
+  href: api/KS.Network.Transfer.NetworkTransferType.html#KS_Network_Transfer_NetworkTransferType_Download
+  commentId: F:KS.Network.Transfer.NetworkTransferType.Download
+  fullName: KS.Network.Transfer.NetworkTransferType.Download
+  nameWithType: NetworkTransferType.Download
+- uid: KS.Network.Transfer.NetworkTransferType.Upload
+  name: Upload
+  href: api/KS.Network.Transfer.NetworkTransferType.html#KS_Network_Transfer_NetworkTransferType_Upload
+  commentId: F:KS.Network.Transfer.NetworkTransferType.Upload
+  fullName: KS.Network.Transfer.NetworkTransferType.Upload
+  nameWithType: NetworkTransferType.Upload
 - uid: KS.Scripting
   name: KS.Scripting
   href: api/KS.Scripting.html
