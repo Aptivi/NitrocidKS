@@ -31923,6 +31923,15 @@ references:
   fullName.vb: KS.Scripting.Conditions.BaseCondition.IsConditionSatisfied(System.String, System.String)
   nameWithType: BaseCondition.ICondition.IsConditionSatisfied(String, String)
   nameWithType.vb: BaseCondition.IsConditionSatisfied(String, String)
+- uid: KS.Scripting.Conditions.BaseCondition.IsConditionSatisfied(System.String[])
+  name: ICondition.IsConditionSatisfied(String[])
+  href: api/KS.Scripting.Conditions.BaseCondition.html#KS_Scripting_Conditions_BaseCondition_IsConditionSatisfied_System_String___
+  commentId: M:KS.Scripting.Conditions.BaseCondition.IsConditionSatisfied(System.String[])
+  name.vb: IsConditionSatisfied(String())
+  fullName: KS.Scripting.Conditions.BaseCondition.KS.Scripting.Conditions.ICondition.IsConditionSatisfied(System.String[])
+  fullName.vb: KS.Scripting.Conditions.BaseCondition.IsConditionSatisfied(System.String())
+  nameWithType: BaseCondition.ICondition.IsConditionSatisfied(String[])
+  nameWithType.vb: BaseCondition.IsConditionSatisfied(String())
 - uid: KS.Scripting.Conditions.BaseCondition.IsConditionSatisfied*
   name: ICondition.IsConditionSatisfied
   href: api/KS.Scripting.Conditions.BaseCondition.html#KS_Scripting_Conditions_BaseCondition_IsConditionSatisfied_
@@ -31933,30 +31942,6 @@ references:
   fullName.vb: KS.Scripting.Conditions.BaseCondition.IsConditionSatisfied
   nameWithType: BaseCondition.ICondition.IsConditionSatisfied
   nameWithType.vb: BaseCondition.IsConditionSatisfied
-- uid: KS.Scripting.Conditions.ConditionPosition
-  name: ConditionPosition
-  href: api/KS.Scripting.Conditions.ConditionPosition.html
-  commentId: T:KS.Scripting.Conditions.ConditionPosition
-  fullName: KS.Scripting.Conditions.ConditionPosition
-  nameWithType: ConditionPosition
-- uid: KS.Scripting.Conditions.ConditionPosition.First
-  name: First
-  href: api/KS.Scripting.Conditions.ConditionPosition.html#KS_Scripting_Conditions_ConditionPosition_First
-  commentId: F:KS.Scripting.Conditions.ConditionPosition.First
-  fullName: KS.Scripting.Conditions.ConditionPosition.First
-  nameWithType: ConditionPosition.First
-- uid: KS.Scripting.Conditions.ConditionPosition.Last
-  name: Last
-  href: api/KS.Scripting.Conditions.ConditionPosition.html#KS_Scripting_Conditions_ConditionPosition_Last
-  commentId: F:KS.Scripting.Conditions.ConditionPosition.Last
-  fullName: KS.Scripting.Conditions.ConditionPosition.Last
-  nameWithType: ConditionPosition.Last
-- uid: KS.Scripting.Conditions.ConditionPosition.Middle
-  name: Middle
-  href: api/KS.Scripting.Conditions.ConditionPosition.html#KS_Scripting_Conditions_ConditionPosition_Middle
-  commentId: F:KS.Scripting.Conditions.ConditionPosition.Middle
-  fullName: KS.Scripting.Conditions.ConditionPosition.Middle
-  nameWithType: ConditionPosition.Middle
 - uid: KS.Scripting.Conditions.ICondition
   name: ICondition
   href: api/KS.Scripting.Conditions.ICondition.html
@@ -32008,6 +31993,15 @@ references:
   commentId: M:KS.Scripting.Conditions.ICondition.IsConditionSatisfied(System.String,System.String)
   fullName: KS.Scripting.Conditions.ICondition.IsConditionSatisfied(System.String, System.String)
   nameWithType: ICondition.IsConditionSatisfied(String, String)
+- uid: KS.Scripting.Conditions.ICondition.IsConditionSatisfied(System.String[])
+  name: IsConditionSatisfied(String[])
+  href: api/KS.Scripting.Conditions.ICondition.html#KS_Scripting_Conditions_ICondition_IsConditionSatisfied_System_String___
+  commentId: M:KS.Scripting.Conditions.ICondition.IsConditionSatisfied(System.String[])
+  name.vb: IsConditionSatisfied(String())
+  fullName: KS.Scripting.Conditions.ICondition.IsConditionSatisfied(System.String[])
+  fullName.vb: KS.Scripting.Conditions.ICondition.IsConditionSatisfied(System.String())
+  nameWithType: ICondition.IsConditionSatisfied(String[])
+  nameWithType.vb: ICondition.IsConditionSatisfied(String())
 - uid: KS.Scripting.Conditions.ICondition.IsConditionSatisfied*
   name: IsConditionSatisfied
   href: api/KS.Scripting.Conditions.ICondition.html#KS_Scripting_Conditions_ICondition_IsConditionSatisfied_
