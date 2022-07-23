@@ -1298,6 +1298,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Exceptions.NoSuchShellPresetException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Exceptions.NoSuchShellPresetException.html",
+          "hash": "nJI4l0mO8ELhFNDjfu1Nb7xNOs+MaSEujDuhVRjKN8s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Exceptions.NoSuchThemeException.yml",
       "output": {
         ".html": {
@@ -1482,7 +1494,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.html",
-          "hash": "2JrI42lLI6ZnHpaK4aqNdndPNJX3xJpLbPqs3IYdKGI="
+          "hash": "uvgsmeWdLHBcJHQUDMlXxBCt2swN7VzeoCDC3iyCmbY="
         }
       },
       "is_incremental": false,
@@ -5066,11 +5078,83 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.IPromptPreset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.IPromptPreset.html",
+          "hash": "mchpg112qV8zIYVoqs6VIHtYwbGxyHx+KGu34DGXAlM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.DefaultPreset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.DefaultPreset.html",
+          "hash": "HuWR/SERj2SL9xVNLrv1NGSzZ87R5ETwbKRuVEPmkrY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.html",
+          "hash": "LyBrZ2yl4C5c+pMNz72R9Cjr5yJaZIwcj6mgImw0t+A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.PromptPresetBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.PromptPresetBase.html",
+          "hash": "eNkBSHS5SpVob7mJAKPKtJj4x5gm0NTMK4l6/Bxv1mo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.PromptPresetManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.PromptPresetManager.html",
+          "hash": "JWrybtokGjvIlcoG+Ja/uIdr81YBVYV3oG9e2SxwAyY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.html",
+          "hash": "HSy5RL1qQ1zDsKQStoXbt0kbp3hbwnMDtHecJMru1zI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shell.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shell.html",
-          "hash": "6vzHlWM323Z3id1QuWmd4XHu7WIczcFEiFk6SbRUckI="
+          "hash": "kaD/Gvb5maOXPTmtCQTsTPXZ6CfrlG5zBLma8RCr0cs="
         }
       },
       "is_incremental": false,
@@ -5370,7 +5454,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESHShell.html",
-          "hash": "g3b5IUQw8ENzwPO1IwpZiwTfHXZ8uKSKVV0jS6W7XHE="
+          "hash": "ieVKQBPCL+Iklmshi1uriqr/lkQkloOX6FdfHeBWKFw="
         }
       },
       "is_incremental": false,
@@ -5502,7 +5586,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "HcBC7++K3Sw9TGCYNNF4TKu/MWWGs4vHxBNX1doXmhI="
+          "hash": "hFMOBEyY0VRkXOevOa4zStwFuBogTY90juYXG7sde4M="
         }
       },
       "is_incremental": false,
@@ -8346,7 +8430,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Release-Notes-for-Second-Generation-KS.html",
-          "hash": "1Lo2gI4lwPLsA91NZZ+fiPl6VrVkn801Ycszp9buUIA="
+          "hash": "wSftBWr+ymMogWFUGklDXLyH4+LJR0R9VJAzJKAInbE="
         }
       },
       "is_incremental": false,
@@ -8433,7 +8517,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 457,
+          "total_file_count": 464,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

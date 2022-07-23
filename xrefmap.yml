@@ -11534,6 +11534,55 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Exceptions.NoSuchScreensaverException.NoSuchScreensaverException
   nameWithType: NoSuchScreensaverException.NoSuchScreensaverException
+- uid: KS.Kernel.Exceptions.NoSuchShellPresetException
+  name: NoSuchShellPresetException
+  href: api/KS.Kernel.Exceptions.NoSuchShellPresetException.html
+  commentId: T:KS.Kernel.Exceptions.NoSuchShellPresetException
+  fullName: KS.Kernel.Exceptions.NoSuchShellPresetException
+  nameWithType: NoSuchShellPresetException
+- uid: KS.Kernel.Exceptions.NoSuchShellPresetException.#ctor
+  name: NoSuchShellPresetException()
+  href: api/KS.Kernel.Exceptions.NoSuchShellPresetException.html#KS_Kernel_Exceptions_NoSuchShellPresetException__ctor
+  commentId: M:KS.Kernel.Exceptions.NoSuchShellPresetException.#ctor
+  fullName: KS.Kernel.Exceptions.NoSuchShellPresetException.NoSuchShellPresetException()
+  nameWithType: NoSuchShellPresetException.NoSuchShellPresetException()
+- uid: KS.Kernel.Exceptions.NoSuchShellPresetException.#ctor(System.String)
+  name: NoSuchShellPresetException(String)
+  href: api/KS.Kernel.Exceptions.NoSuchShellPresetException.html#KS_Kernel_Exceptions_NoSuchShellPresetException__ctor_System_String_
+  commentId: M:KS.Kernel.Exceptions.NoSuchShellPresetException.#ctor(System.String)
+  fullName: KS.Kernel.Exceptions.NoSuchShellPresetException.NoSuchShellPresetException(System.String)
+  nameWithType: NoSuchShellPresetException.NoSuchShellPresetException(String)
+- uid: KS.Kernel.Exceptions.NoSuchShellPresetException.#ctor(System.String,System.Exception)
+  name: NoSuchShellPresetException(String, Exception)
+  href: api/KS.Kernel.Exceptions.NoSuchShellPresetException.html#KS_Kernel_Exceptions_NoSuchShellPresetException__ctor_System_String_System_Exception_
+  commentId: M:KS.Kernel.Exceptions.NoSuchShellPresetException.#ctor(System.String,System.Exception)
+  fullName: KS.Kernel.Exceptions.NoSuchShellPresetException.NoSuchShellPresetException(System.String, System.Exception)
+  nameWithType: NoSuchShellPresetException.NoSuchShellPresetException(String, Exception)
+- uid: KS.Kernel.Exceptions.NoSuchShellPresetException.#ctor(System.String,System.Exception,System.Object[])
+  name: NoSuchShellPresetException(String, Exception, Object[])
+  href: api/KS.Kernel.Exceptions.NoSuchShellPresetException.html#KS_Kernel_Exceptions_NoSuchShellPresetException__ctor_System_String_System_Exception_System_Object___
+  commentId: M:KS.Kernel.Exceptions.NoSuchShellPresetException.#ctor(System.String,System.Exception,System.Object[])
+  name.vb: NoSuchShellPresetException(String, Exception, Object())
+  fullName: KS.Kernel.Exceptions.NoSuchShellPresetException.NoSuchShellPresetException(System.String, System.Exception, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.NoSuchShellPresetException.NoSuchShellPresetException(System.String, System.Exception, System.Object())
+  nameWithType: NoSuchShellPresetException.NoSuchShellPresetException(String, Exception, Object[])
+  nameWithType.vb: NoSuchShellPresetException.NoSuchShellPresetException(String, Exception, Object())
+- uid: KS.Kernel.Exceptions.NoSuchShellPresetException.#ctor(System.String,System.Object[])
+  name: NoSuchShellPresetException(String, Object[])
+  href: api/KS.Kernel.Exceptions.NoSuchShellPresetException.html#KS_Kernel_Exceptions_NoSuchShellPresetException__ctor_System_String_System_Object___
+  commentId: M:KS.Kernel.Exceptions.NoSuchShellPresetException.#ctor(System.String,System.Object[])
+  name.vb: NoSuchShellPresetException(String, Object())
+  fullName: KS.Kernel.Exceptions.NoSuchShellPresetException.NoSuchShellPresetException(System.String, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.NoSuchShellPresetException.NoSuchShellPresetException(System.String, System.Object())
+  nameWithType: NoSuchShellPresetException.NoSuchShellPresetException(String, Object[])
+  nameWithType.vb: NoSuchShellPresetException.NoSuchShellPresetException(String, Object())
+- uid: KS.Kernel.Exceptions.NoSuchShellPresetException.#ctor*
+  name: NoSuchShellPresetException
+  href: api/KS.Kernel.Exceptions.NoSuchShellPresetException.html#KS_Kernel_Exceptions_NoSuchShellPresetException__ctor_
+  commentId: Overload:KS.Kernel.Exceptions.NoSuchShellPresetException.#ctor
+  isSpec: "True"
+  fullName: KS.Kernel.Exceptions.NoSuchShellPresetException.NoSuchShellPresetException
+  nameWithType: NoSuchShellPresetException.NoSuchShellPresetException
 - uid: KS.Kernel.Exceptions.NoSuchThemeException
   name: NoSuchThemeException
   href: api/KS.Kernel.Exceptions.NoSuchThemeException.html
@@ -33717,6 +33766,263 @@ references:
   commentId: N:KS.Shell
   fullName: KS.Shell
   nameWithType: KS.Shell
+- uid: KS.Shell.Prompts
+  name: KS.Shell.Prompts
+  href: api/KS.Shell.Prompts.html
+  commentId: N:KS.Shell.Prompts
+  fullName: KS.Shell.Prompts
+  nameWithType: KS.Shell.Prompts
+- uid: KS.Shell.Prompts.IPromptPreset
+  name: IPromptPreset
+  href: api/KS.Shell.Prompts.IPromptPreset.html
+  commentId: T:KS.Shell.Prompts.IPromptPreset
+  fullName: KS.Shell.Prompts.IPromptPreset
+  nameWithType: IPromptPreset
+- uid: KS.Shell.Prompts.IPromptPreset.PresetName
+  name: PresetName
+  href: api/KS.Shell.Prompts.IPromptPreset.html#KS_Shell_Prompts_IPromptPreset_PresetName
+  commentId: P:KS.Shell.Prompts.IPromptPreset.PresetName
+  fullName: KS.Shell.Prompts.IPromptPreset.PresetName
+  nameWithType: IPromptPreset.PresetName
+- uid: KS.Shell.Prompts.IPromptPreset.PresetName*
+  name: PresetName
+  href: api/KS.Shell.Prompts.IPromptPreset.html#KS_Shell_Prompts_IPromptPreset_PresetName_
+  commentId: Overload:KS.Shell.Prompts.IPromptPreset.PresetName
+  isSpec: "True"
+  fullName: KS.Shell.Prompts.IPromptPreset.PresetName
+  nameWithType: IPromptPreset.PresetName
+- uid: KS.Shell.Prompts.IPromptPreset.PresetPrompt
+  name: PresetPrompt
+  href: api/KS.Shell.Prompts.IPromptPreset.html#KS_Shell_Prompts_IPromptPreset_PresetPrompt
+  commentId: P:KS.Shell.Prompts.IPromptPreset.PresetPrompt
+  fullName: KS.Shell.Prompts.IPromptPreset.PresetPrompt
+  nameWithType: IPromptPreset.PresetPrompt
+- uid: KS.Shell.Prompts.IPromptPreset.PresetPrompt*
+  name: PresetPrompt
+  href: api/KS.Shell.Prompts.IPromptPreset.html#KS_Shell_Prompts_IPromptPreset_PresetPrompt_
+  commentId: Overload:KS.Shell.Prompts.IPromptPreset.PresetPrompt
+  isSpec: "True"
+  fullName: KS.Shell.Prompts.IPromptPreset.PresetPrompt
+  nameWithType: IPromptPreset.PresetPrompt
+- uid: KS.Shell.Prompts.IPromptPreset.PresetPromptBuilder
+  name: PresetPromptBuilder()
+  href: api/KS.Shell.Prompts.IPromptPreset.html#KS_Shell_Prompts_IPromptPreset_PresetPromptBuilder
+  commentId: M:KS.Shell.Prompts.IPromptPreset.PresetPromptBuilder
+  fullName: KS.Shell.Prompts.IPromptPreset.PresetPromptBuilder()
+  nameWithType: IPromptPreset.PresetPromptBuilder()
+- uid: KS.Shell.Prompts.IPromptPreset.PresetPromptBuilder*
+  name: PresetPromptBuilder
+  href: api/KS.Shell.Prompts.IPromptPreset.html#KS_Shell_Prompts_IPromptPreset_PresetPromptBuilder_
+  commentId: Overload:KS.Shell.Prompts.IPromptPreset.PresetPromptBuilder
+  isSpec: "True"
+  fullName: KS.Shell.Prompts.IPromptPreset.PresetPromptBuilder
+  nameWithType: IPromptPreset.PresetPromptBuilder
+- uid: KS.Shell.Prompts.Presets
+  name: KS.Shell.Prompts.Presets
+  href: api/KS.Shell.Prompts.Presets.html
+  commentId: N:KS.Shell.Prompts.Presets
+  fullName: KS.Shell.Prompts.Presets
+  nameWithType: KS.Shell.Prompts.Presets
+- uid: KS.Shell.Prompts.Presets.DefaultPreset
+  name: DefaultPreset
+  href: api/KS.Shell.Prompts.Presets.DefaultPreset.html
+  commentId: T:KS.Shell.Prompts.Presets.DefaultPreset
+  fullName: KS.Shell.Prompts.Presets.DefaultPreset
+  nameWithType: DefaultPreset
+- uid: KS.Shell.Prompts.Presets.DefaultPreset.PresetName
+  name: IPromptPreset.PresetName
+  href: api/KS.Shell.Prompts.Presets.DefaultPreset.html#KS_Shell_Prompts_Presets_DefaultPreset_PresetName
+  commentId: P:KS.Shell.Prompts.Presets.DefaultPreset.PresetName
+  name.vb: PresetName
+  fullName: KS.Shell.Prompts.Presets.DefaultPreset.KS.Shell.Prompts.IPromptPreset.PresetName
+  fullName.vb: KS.Shell.Prompts.Presets.DefaultPreset.PresetName
+  nameWithType: DefaultPreset.IPromptPreset.PresetName
+  nameWithType.vb: DefaultPreset.PresetName
+- uid: KS.Shell.Prompts.Presets.DefaultPreset.PresetName*
+  name: IPromptPreset.PresetName
+  href: api/KS.Shell.Prompts.Presets.DefaultPreset.html#KS_Shell_Prompts_Presets_DefaultPreset_PresetName_
+  commentId: Overload:KS.Shell.Prompts.Presets.DefaultPreset.PresetName
+  isSpec: "True"
+  name.vb: PresetName
+  fullName: KS.Shell.Prompts.Presets.DefaultPreset.KS.Shell.Prompts.IPromptPreset.PresetName
+  fullName.vb: KS.Shell.Prompts.Presets.DefaultPreset.PresetName
+  nameWithType: DefaultPreset.IPromptPreset.PresetName
+  nameWithType.vb: DefaultPreset.PresetName
+- uid: KS.Shell.Prompts.Presets.DefaultPreset.PresetPrompt
+  name: IPromptPreset.PresetPrompt
+  href: api/KS.Shell.Prompts.Presets.DefaultPreset.html#KS_Shell_Prompts_Presets_DefaultPreset_PresetPrompt
+  commentId: P:KS.Shell.Prompts.Presets.DefaultPreset.PresetPrompt
+  name.vb: PresetPrompt
+  fullName: KS.Shell.Prompts.Presets.DefaultPreset.KS.Shell.Prompts.IPromptPreset.PresetPrompt
+  fullName.vb: KS.Shell.Prompts.Presets.DefaultPreset.PresetPrompt
+  nameWithType: DefaultPreset.IPromptPreset.PresetPrompt
+  nameWithType.vb: DefaultPreset.PresetPrompt
+- uid: KS.Shell.Prompts.Presets.DefaultPreset.PresetPrompt*
+  name: IPromptPreset.PresetPrompt
+  href: api/KS.Shell.Prompts.Presets.DefaultPreset.html#KS_Shell_Prompts_Presets_DefaultPreset_PresetPrompt_
+  commentId: Overload:KS.Shell.Prompts.Presets.DefaultPreset.PresetPrompt
+  isSpec: "True"
+  name.vb: PresetPrompt
+  fullName: KS.Shell.Prompts.Presets.DefaultPreset.KS.Shell.Prompts.IPromptPreset.PresetPrompt
+  fullName.vb: KS.Shell.Prompts.Presets.DefaultPreset.PresetPrompt
+  nameWithType: DefaultPreset.IPromptPreset.PresetPrompt
+  nameWithType.vb: DefaultPreset.PresetPrompt
+- uid: KS.Shell.Prompts.Presets.DefaultPreset.PresetPromptBuilder
+  name: IPromptPreset.PresetPromptBuilder()
+  href: api/KS.Shell.Prompts.Presets.DefaultPreset.html#KS_Shell_Prompts_Presets_DefaultPreset_PresetPromptBuilder
+  commentId: M:KS.Shell.Prompts.Presets.DefaultPreset.PresetPromptBuilder
+  name.vb: PresetPromptBuilder()
+  fullName: KS.Shell.Prompts.Presets.DefaultPreset.KS.Shell.Prompts.IPromptPreset.PresetPromptBuilder()
+  fullName.vb: KS.Shell.Prompts.Presets.DefaultPreset.PresetPromptBuilder()
+  nameWithType: DefaultPreset.IPromptPreset.PresetPromptBuilder()
+  nameWithType.vb: DefaultPreset.PresetPromptBuilder()
+- uid: KS.Shell.Prompts.Presets.DefaultPreset.PresetPromptBuilder*
+  name: IPromptPreset.PresetPromptBuilder
+  href: api/KS.Shell.Prompts.Presets.DefaultPreset.html#KS_Shell_Prompts_Presets_DefaultPreset_PresetPromptBuilder_
+  commentId: Overload:KS.Shell.Prompts.Presets.DefaultPreset.PresetPromptBuilder
+  isSpec: "True"
+  name.vb: PresetPromptBuilder
+  fullName: KS.Shell.Prompts.Presets.DefaultPreset.KS.Shell.Prompts.IPromptPreset.PresetPromptBuilder
+  fullName.vb: KS.Shell.Prompts.Presets.DefaultPreset.PresetPromptBuilder
+  nameWithType: DefaultPreset.IPromptPreset.PresetPromptBuilder
+  nameWithType.vb: DefaultPreset.PresetPromptBuilder
+- uid: KS.Shell.Prompts.PromptPresetBase
+  name: PromptPresetBase
+  href: api/KS.Shell.Prompts.PromptPresetBase.html
+  commentId: T:KS.Shell.Prompts.PromptPresetBase
+  fullName: KS.Shell.Prompts.PromptPresetBase
+  nameWithType: PromptPresetBase
+- uid: KS.Shell.Prompts.PromptPresetBase.PresetName
+  name: IPromptPreset.PresetName
+  href: api/KS.Shell.Prompts.PromptPresetBase.html#KS_Shell_Prompts_PromptPresetBase_PresetName
+  commentId: P:KS.Shell.Prompts.PromptPresetBase.PresetName
+  name.vb: PresetName
+  fullName: KS.Shell.Prompts.PromptPresetBase.KS.Shell.Prompts.IPromptPreset.PresetName
+  fullName.vb: KS.Shell.Prompts.PromptPresetBase.PresetName
+  nameWithType: PromptPresetBase.IPromptPreset.PresetName
+  nameWithType.vb: PromptPresetBase.PresetName
+- uid: KS.Shell.Prompts.PromptPresetBase.PresetName*
+  name: IPromptPreset.PresetName
+  href: api/KS.Shell.Prompts.PromptPresetBase.html#KS_Shell_Prompts_PromptPresetBase_PresetName_
+  commentId: Overload:KS.Shell.Prompts.PromptPresetBase.PresetName
+  isSpec: "True"
+  name.vb: PresetName
+  fullName: KS.Shell.Prompts.PromptPresetBase.KS.Shell.Prompts.IPromptPreset.PresetName
+  fullName.vb: KS.Shell.Prompts.PromptPresetBase.PresetName
+  nameWithType: PromptPresetBase.IPromptPreset.PresetName
+  nameWithType.vb: PromptPresetBase.PresetName
+- uid: KS.Shell.Prompts.PromptPresetBase.PresetPrompt
+  name: IPromptPreset.PresetPrompt
+  href: api/KS.Shell.Prompts.PromptPresetBase.html#KS_Shell_Prompts_PromptPresetBase_PresetPrompt
+  commentId: P:KS.Shell.Prompts.PromptPresetBase.PresetPrompt
+  name.vb: PresetPrompt
+  fullName: KS.Shell.Prompts.PromptPresetBase.KS.Shell.Prompts.IPromptPreset.PresetPrompt
+  fullName.vb: KS.Shell.Prompts.PromptPresetBase.PresetPrompt
+  nameWithType: PromptPresetBase.IPromptPreset.PresetPrompt
+  nameWithType.vb: PromptPresetBase.PresetPrompt
+- uid: KS.Shell.Prompts.PromptPresetBase.PresetPrompt*
+  name: IPromptPreset.PresetPrompt
+  href: api/KS.Shell.Prompts.PromptPresetBase.html#KS_Shell_Prompts_PromptPresetBase_PresetPrompt_
+  commentId: Overload:KS.Shell.Prompts.PromptPresetBase.PresetPrompt
+  isSpec: "True"
+  name.vb: PresetPrompt
+  fullName: KS.Shell.Prompts.PromptPresetBase.KS.Shell.Prompts.IPromptPreset.PresetPrompt
+  fullName.vb: KS.Shell.Prompts.PromptPresetBase.PresetPrompt
+  nameWithType: PromptPresetBase.IPromptPreset.PresetPrompt
+  nameWithType.vb: PromptPresetBase.PresetPrompt
+- uid: KS.Shell.Prompts.PromptPresetBase.PresetPromptBuilder
+  name: IPromptPreset.PresetPromptBuilder()
+  href: api/KS.Shell.Prompts.PromptPresetBase.html#KS_Shell_Prompts_PromptPresetBase_PresetPromptBuilder
+  commentId: M:KS.Shell.Prompts.PromptPresetBase.PresetPromptBuilder
+  name.vb: PresetPromptBuilder()
+  fullName: KS.Shell.Prompts.PromptPresetBase.KS.Shell.Prompts.IPromptPreset.PresetPromptBuilder()
+  fullName.vb: KS.Shell.Prompts.PromptPresetBase.PresetPromptBuilder()
+  nameWithType: PromptPresetBase.IPromptPreset.PresetPromptBuilder()
+  nameWithType.vb: PromptPresetBase.PresetPromptBuilder()
+- uid: KS.Shell.Prompts.PromptPresetBase.PresetPromptBuilder*
+  name: IPromptPreset.PresetPromptBuilder
+  href: api/KS.Shell.Prompts.PromptPresetBase.html#KS_Shell_Prompts_PromptPresetBase_PresetPromptBuilder_
+  commentId: Overload:KS.Shell.Prompts.PromptPresetBase.PresetPromptBuilder
+  isSpec: "True"
+  name.vb: PresetPromptBuilder
+  fullName: KS.Shell.Prompts.PromptPresetBase.KS.Shell.Prompts.IPromptPreset.PresetPromptBuilder
+  fullName.vb: KS.Shell.Prompts.PromptPresetBase.PresetPromptBuilder
+  nameWithType: PromptPresetBase.IPromptPreset.PresetPromptBuilder
+  nameWithType.vb: PromptPresetBase.PresetPromptBuilder
+- uid: KS.Shell.Prompts.PromptPresetManager
+  name: PromptPresetManager
+  href: api/KS.Shell.Prompts.PromptPresetManager.html
+  commentId: T:KS.Shell.Prompts.PromptPresetManager
+  fullName: KS.Shell.Prompts.PromptPresetManager
+  nameWithType: PromptPresetManager
+- uid: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.ShellType,KS.Shell.Prompts.PromptPresetBase@)
+  name: GetCurrentPresetBaseFromShell(ShellType, ref PromptPresetBase)
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_GetCurrentPresetBaseFromShell_KS_Shell_ShellBase_ShellType_KS_Shell_Prompts_PromptPresetBase__
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.ShellType,KS.Shell.Prompts.PromptPresetBase@)
+  name.vb: GetCurrentPresetBaseFromShell(ShellType, ByRef PromptPresetBase)
+  fullName: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.ShellType, ref KS.Shell.Prompts.PromptPresetBase)
+  fullName.vb: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.ShellType, ByRef KS.Shell.Prompts.PromptPresetBase)
+  nameWithType: PromptPresetManager.GetCurrentPresetBaseFromShell(ShellType, ref PromptPresetBase)
+  nameWithType.vb: PromptPresetManager.GetCurrentPresetBaseFromShell(ShellType, ByRef PromptPresetBase)
+- uid: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell*
+  name: GetCurrentPresetBaseFromShell
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_GetCurrentPresetBaseFromShell_
+  commentId: Overload:KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell
+  isSpec: "True"
+  fullName: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell
+  nameWithType: PromptPresetManager.GetCurrentPresetBaseFromShell
+- uid: KS.Shell.Prompts.PromptPresetManager.GetCustomPresetsFromShell(KS.Shell.ShellBase.ShellType)
+  name: GetCustomPresetsFromShell(ShellType)
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_GetCustomPresetsFromShell_KS_Shell_ShellBase_ShellType_
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.GetCustomPresetsFromShell(KS.Shell.ShellBase.ShellType)
+  fullName: KS.Shell.Prompts.PromptPresetManager.GetCustomPresetsFromShell(KS.Shell.ShellBase.ShellType)
+  nameWithType: PromptPresetManager.GetCustomPresetsFromShell(ShellType)
+- uid: KS.Shell.Prompts.PromptPresetManager.GetCustomPresetsFromShell*
+  name: GetCustomPresetsFromShell
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_GetCustomPresetsFromShell_
+  commentId: Overload:KS.Shell.Prompts.PromptPresetManager.GetCustomPresetsFromShell
+  isSpec: "True"
+  fullName: KS.Shell.Prompts.PromptPresetManager.GetCustomPresetsFromShell
+  nameWithType: PromptPresetManager.GetCustomPresetsFromShell
+- uid: KS.Shell.Prompts.PromptPresetManager.GetPresetsFromShell(KS.Shell.ShellBase.ShellType)
+  name: GetPresetsFromShell(ShellType)
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_GetPresetsFromShell_KS_Shell_ShellBase_ShellType_
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.GetPresetsFromShell(KS.Shell.ShellBase.ShellType)
+  fullName: KS.Shell.Prompts.PromptPresetManager.GetPresetsFromShell(KS.Shell.ShellBase.ShellType)
+  nameWithType: PromptPresetManager.GetPresetsFromShell(ShellType)
+- uid: KS.Shell.Prompts.PromptPresetManager.GetPresetsFromShell*
+  name: GetPresetsFromShell
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_GetPresetsFromShell_
+  commentId: Overload:KS.Shell.Prompts.PromptPresetManager.GetPresetsFromShell
+  isSpec: "True"
+  fullName: KS.Shell.Prompts.PromptPresetManager.GetPresetsFromShell
+  nameWithType: PromptPresetManager.GetPresetsFromShell
+- uid: KS.Shell.Prompts.PromptPresetManager.SetPreset(System.String,KS.Shell.ShellBase.ShellType)
+  name: SetPreset(String, ShellType)
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_SetPreset_System_String_KS_Shell_ShellBase_ShellType_
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.SetPreset(System.String,KS.Shell.ShellBase.ShellType)
+  fullName: KS.Shell.Prompts.PromptPresetManager.SetPreset(System.String, KS.Shell.ShellBase.ShellType)
+  nameWithType: PromptPresetManager.SetPreset(String, ShellType)
+- uid: KS.Shell.Prompts.PromptPresetManager.SetPreset*
+  name: SetPreset
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_SetPreset_
+  commentId: Overload:KS.Shell.Prompts.PromptPresetManager.SetPreset
+  isSpec: "True"
+  fullName: KS.Shell.Prompts.PromptPresetManager.SetPreset
+  nameWithType: PromptPresetManager.SetPreset
+- uid: KS.Shell.Prompts.PromptPresetManager.WriteShellPrompt(KS.Shell.ShellBase.ShellType)
+  name: WriteShellPrompt(ShellType)
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_WriteShellPrompt_KS_Shell_ShellBase_ShellType_
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.WriteShellPrompt(KS.Shell.ShellBase.ShellType)
+  fullName: KS.Shell.Prompts.PromptPresetManager.WriteShellPrompt(KS.Shell.ShellBase.ShellType)
+  nameWithType: PromptPresetManager.WriteShellPrompt(ShellType)
+- uid: KS.Shell.Prompts.PromptPresetManager.WriteShellPrompt*
+  name: WriteShellPrompt
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_WriteShellPrompt_
+  commentId: Overload:KS.Shell.Prompts.PromptPresetManager.WriteShellPrompt
+  isSpec: "True"
+  fullName: KS.Shell.Prompts.PromptPresetManager.WriteShellPrompt
+  nameWithType: PromptPresetManager.WriteShellPrompt
 - uid: KS.Shell.Shell
   name: Shell
   href: api/KS.Shell.Shell.html

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class UESHShell
+    <title>Class PromptPresetBase
    | Kernel Simulator API - Eofla Internals </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class UESHShell
+    <meta name="title" content="Class PromptPresetBase
    | Kernel Simulator API - Eofla Internals ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -78,63 +78,45 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="KS.Shell.Shells.UESHShell">
+            <article class="content wrap" id="_content" data-uid="KS.Shell.Prompts.PromptPresetBase">
   
   
-  <h1 id="KS_Shell_Shells_UESHShell" data-uid="KS.Shell.Shells.UESHShell" class="text-break">Class UESHShell
+  <h1 id="KS_Shell_Prompts_PromptPresetBase" data-uid="KS.Shell.Prompts.PromptPresetBase" class="text-break">Class PromptPresetBase
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="KS.Shell.ShellBase.ShellExecutor.html">ShellExecutor</a></div>
-    <div class="level2"><span class="xref">UESHShell</span></div>
+    <div class="level1"><span class="xref">PromptPresetBase</span></div>
+      <div class="level2"><a class="xref" href="KS.Shell.Prompts.Presets.DefaultPreset.html">DefaultPreset</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="KS.Shell.ShellBase.IShell.html">IShell</a></div>
+    <div><a class="xref" href="KS.Shell.Prompts.IPromptPreset.html">IPromptPreset</a></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Shell.Shells.html">KS.Shell.Shells</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Shell.Prompts.html">KS.Shell.Prompts</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
-  <h5 id="KS_Shell_Shells_UESHShell_syntax">Syntax</h5>
+  <h5 id="KS_Shell_Prompts_PromptPresetBase_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UESHShell : ShellExecutor, IShell</code></pre>
-  </div>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESHShell_CommandPromptWrite.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESHShell.CommandPromptWrite%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESHShell.vb/#L110">View Source</a>
-  </span>
-  <a id="KS_Shell_Shells_UESHShell_CommandPromptWrite_" data-uid="KS.Shell.Shells.UESHShell.CommandPromptWrite*"></a>
-  <h4 id="KS_Shell_Shells_UESHShell_CommandPromptWrite" data-uid="KS.Shell.Shells.UESHShell.CommandPromptWrite">CommandPromptWrite()</h4>
-  <div class="markdown level1 summary"><p>Writes the input for command prompt</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CommandPromptWrite()</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class PromptPresetBase : IPromptPreset</code></pre>
   </div>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESHShell_Bail.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESHShell.Bail%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Prompts_PromptPresetBase_PresetName.md&amp;value=---%0Auid%3A%20KS.Shell.Prompts.PromptPresetBase.PresetName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESHShell.vb/#L34">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Prompts/PromptPresetBase.vb/#L23">View Source</a>
   </span>
-  <a id="KS_Shell_Shells_UESHShell_Bail_" data-uid="KS.Shell.Shells.UESHShell.Bail*"></a>
-  <h4 id="KS_Shell_Shells_UESHShell_Bail" data-uid="KS.Shell.Shells.UESHShell.Bail">IShell.Bail</h4>
+  <a id="KS_Shell_Prompts_PromptPresetBase_PresetName_" data-uid="KS.Shell.Prompts.PromptPresetBase.PresetName*"></a>
+  <h4 id="KS_Shell_Prompts_PromptPresetBase_PresetName" data-uid="KS.Shell.Prompts.PromptPresetBase.PresetName">IPromptPreset.PresetName</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool IShell.Bail { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual string IPromptPreset.PresetName { get; }</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -146,61 +128,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="KS.Shell.ShellBase.ShellExecutor.html#KS_Shell_ShellBase_ShellExecutor_Bail">ShellExecutor.IShell.Bail</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESHShell_InitializeShell_System_Object___.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESHShell.InitializeShell(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Prompts_PromptPresetBase_PresetPrompt.md&amp;value=---%0Auid%3A%20KS.Shell.Prompts.PromptPresetBase.PresetPrompt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESHShell.vb/#L36">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Prompts/PromptPresetBase.vb/#L25">View Source</a>
   </span>
-  <a id="KS_Shell_Shells_UESHShell_InitializeShell_" data-uid="KS.Shell.Shells.UESHShell.InitializeShell*"></a>
-  <h4 id="KS_Shell_Shells_UESHShell_InitializeShell_System_Object___" data-uid="KS.Shell.Shells.UESHShell.InitializeShell(System.Object[])">IShell.InitializeShell(Object[])</h4>
+  <a id="KS_Shell_Prompts_PromptPresetBase_PresetPrompt_" data-uid="KS.Shell.Prompts.PromptPresetBase.PresetPrompt*"></a>
+  <h4 id="KS_Shell_Prompts_PromptPresetBase_PresetPrompt" data-uid="KS.Shell.Prompts.PromptPresetBase.PresetPrompt">IPromptPreset.PresetPrompt</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void IShell.InitializeShell(params object[] ShellArgs)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span>[]</td>
-        <td><span class="parametername">ShellArgs</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="KS.Shell.ShellBase.ShellExecutor.html#KS_Shell_ShellBase_ShellExecutor_InitializeShell_System_Object___">ShellExecutor.IShell.InitializeShell(Object[])</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESHShell_ShellType.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESHShell.ShellType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESHShell.vb/#L28">View Source</a>
-  </span>
-  <a id="KS_Shell_Shells_UESHShell_ShellType_" data-uid="KS.Shell.Shells.UESHShell.ShellType*"></a>
-  <h4 id="KS_Shell_Shells_UESHShell_ShellType" data-uid="KS.Shell.Shells.UESHShell.ShellType">IShell.ShellType</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override ShellType IShell.ShellType { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual string IPromptPreset.PresetPrompt { get; }</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -212,16 +158,44 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="KS.Shell.ShellBase.ShellType.html">ShellType</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="KS.Shell.ShellBase.ShellExecutor.html#KS_Shell_ShellBase_ShellExecutor_ShellType">ShellExecutor.IShell.ShellType</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Prompts_PromptPresetBase_PresetPromptBuilder.md&amp;value=---%0Auid%3A%20KS.Shell.Prompts.PromptPresetBase.PresetPromptBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Prompts/PromptPresetBase.vb/#L27">View Source</a>
+  </span>
+  <a id="KS_Shell_Prompts_PromptPresetBase_PresetPromptBuilder_" data-uid="KS.Shell.Prompts.PromptPresetBase.PresetPromptBuilder*"></a>
+  <h4 id="KS_Shell_Prompts_PromptPresetBase_PresetPromptBuilder" data-uid="KS.Shell.Prompts.PromptPresetBase.PresetPromptBuilder">IPromptPreset.PresetPromptBuilder()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string IPromptPreset.PresetPromptBuilder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="KS.Shell.ShellBase.IShell.html">IShell</a>
+      <a class="xref" href="KS.Shell.Prompts.IPromptPreset.html">IPromptPreset</a>
   </div>
 </article>
           </div>
@@ -231,10 +205,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESHShell.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESHShell%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Prompts_PromptPresetBase.md&amp;value=---%0Auid%3A%20KS.Shell.Prompts.PromptPresetBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESHShell.vb/#L24" class="contribution-link">View Source</a>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Prompts/PromptPresetBase.vb/#L20" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
