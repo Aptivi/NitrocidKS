@@ -4007,6 +4007,32 @@ references:
   isSpec: "True"
   fullName: KS.Files.AttributeManager.RemoveAttributeFromFile
   nameWithType: AttributeManager.RemoveAttributeFromFile
+- uid: KS.Files.AttributeManager.TryAddAttributeToFile(System.String,System.IO.FileAttributes)
+  name: TryAddAttributeToFile(String, FileAttributes)
+  href: api/KS.Files.AttributeManager.html#KS_Files_AttributeManager_TryAddAttributeToFile_System_String_System_IO_FileAttributes_
+  commentId: M:KS.Files.AttributeManager.TryAddAttributeToFile(System.String,System.IO.FileAttributes)
+  fullName: KS.Files.AttributeManager.TryAddAttributeToFile(System.String, System.IO.FileAttributes)
+  nameWithType: AttributeManager.TryAddAttributeToFile(String, FileAttributes)
+- uid: KS.Files.AttributeManager.TryAddAttributeToFile*
+  name: TryAddAttributeToFile
+  href: api/KS.Files.AttributeManager.html#KS_Files_AttributeManager_TryAddAttributeToFile_
+  commentId: Overload:KS.Files.AttributeManager.TryAddAttributeToFile
+  isSpec: "True"
+  fullName: KS.Files.AttributeManager.TryAddAttributeToFile
+  nameWithType: AttributeManager.TryAddAttributeToFile
+- uid: KS.Files.AttributeManager.TryRemoveAttributeFromFile(System.String,System.IO.FileAttributes)
+  name: TryRemoveAttributeFromFile(String, FileAttributes)
+  href: api/KS.Files.AttributeManager.html#KS_Files_AttributeManager_TryRemoveAttributeFromFile_System_String_System_IO_FileAttributes_
+  commentId: M:KS.Files.AttributeManager.TryRemoveAttributeFromFile(System.String,System.IO.FileAttributes)
+  fullName: KS.Files.AttributeManager.TryRemoveAttributeFromFile(System.String, System.IO.FileAttributes)
+  nameWithType: AttributeManager.TryRemoveAttributeFromFile(String, FileAttributes)
+- uid: KS.Files.AttributeManager.TryRemoveAttributeFromFile*
+  name: TryRemoveAttributeFromFile
+  href: api/KS.Files.AttributeManager.html#KS_Files_AttributeManager_TryRemoveAttributeFromFile_
+  commentId: Overload:KS.Files.AttributeManager.TryRemoveAttributeFromFile
+  isSpec: "True"
+  fullName: KS.Files.AttributeManager.TryRemoveAttributeFromFile
+  nameWithType: AttributeManager.TryRemoveAttributeFromFile
 - uid: KS.Files.Filesystem
   name: Filesystem
   href: api/KS.Files.Filesystem.html
@@ -4543,6 +4569,19 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Copying.CopyFileOrDir
   nameWithType: Copying.CopyFileOrDir
+- uid: KS.Files.Operations.Copying.TryCopyFileOrDir(System.String,System.String)
+  name: TryCopyFileOrDir(String, String)
+  href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_TryCopyFileOrDir_System_String_System_String_
+  commentId: M:KS.Files.Operations.Copying.TryCopyFileOrDir(System.String,System.String)
+  fullName: KS.Files.Operations.Copying.TryCopyFileOrDir(System.String, System.String)
+  nameWithType: Copying.TryCopyFileOrDir(String, String)
+- uid: KS.Files.Operations.Copying.TryCopyFileOrDir*
+  name: TryCopyFileOrDir
+  href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_TryCopyFileOrDir_
+  commentId: Overload:KS.Files.Operations.Copying.TryCopyFileOrDir
+  isSpec: "True"
+  fullName: KS.Files.Operations.Copying.TryCopyFileOrDir
+  nameWithType: Copying.TryCopyFileOrDir
 - uid: KS.Files.Operations.Making
   name: Making
   href: api/KS.Files.Operations.Making.html
@@ -4588,6 +4627,45 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Making.MakeJsonFile
   nameWithType: Making.MakeJsonFile
+- uid: KS.Files.Operations.Making.TryMakeDirectory(System.String,System.Boolean)
+  name: TryMakeDirectory(String, Boolean)
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_TryMakeDirectory_System_String_System_Boolean_
+  commentId: M:KS.Files.Operations.Making.TryMakeDirectory(System.String,System.Boolean)
+  fullName: KS.Files.Operations.Making.TryMakeDirectory(System.String, System.Boolean)
+  nameWithType: Making.TryMakeDirectory(String, Boolean)
+- uid: KS.Files.Operations.Making.TryMakeDirectory*
+  name: TryMakeDirectory
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_TryMakeDirectory_
+  commentId: Overload:KS.Files.Operations.Making.TryMakeDirectory
+  isSpec: "True"
+  fullName: KS.Files.Operations.Making.TryMakeDirectory
+  nameWithType: Making.TryMakeDirectory
+- uid: KS.Files.Operations.Making.TryMakeFile(System.String,System.Boolean)
+  name: TryMakeFile(String, Boolean)
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_TryMakeFile_System_String_System_Boolean_
+  commentId: M:KS.Files.Operations.Making.TryMakeFile(System.String,System.Boolean)
+  fullName: KS.Files.Operations.Making.TryMakeFile(System.String, System.Boolean)
+  nameWithType: Making.TryMakeFile(String, Boolean)
+- uid: KS.Files.Operations.Making.TryMakeFile*
+  name: TryMakeFile
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_TryMakeFile_
+  commentId: Overload:KS.Files.Operations.Making.TryMakeFile
+  isSpec: "True"
+  fullName: KS.Files.Operations.Making.TryMakeFile
+  nameWithType: Making.TryMakeFile
+- uid: KS.Files.Operations.Making.TryMakeJsonFile(System.String,System.Boolean)
+  name: TryMakeJsonFile(String, Boolean)
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_TryMakeJsonFile_System_String_System_Boolean_
+  commentId: M:KS.Files.Operations.Making.TryMakeJsonFile(System.String,System.Boolean)
+  fullName: KS.Files.Operations.Making.TryMakeJsonFile(System.String, System.Boolean)
+  nameWithType: Making.TryMakeJsonFile(String, Boolean)
+- uid: KS.Files.Operations.Making.TryMakeJsonFile*
+  name: TryMakeJsonFile
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_TryMakeJsonFile_
+  commentId: Overload:KS.Files.Operations.Making.TryMakeJsonFile
+  isSpec: "True"
+  fullName: KS.Files.Operations.Making.TryMakeJsonFile
+  nameWithType: Making.TryMakeJsonFile
 - uid: KS.Files.Operations.Moving
   name: Moving
   href: api/KS.Files.Operations.Moving.html
@@ -4607,6 +4685,19 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Moving.MoveFileOrDir
   nameWithType: Moving.MoveFileOrDir
+- uid: KS.Files.Operations.Moving.TryMoveFileOrDir(System.String,System.String)
+  name: TryMoveFileOrDir(String, String)
+  href: api/KS.Files.Operations.Moving.html#KS_Files_Operations_Moving_TryMoveFileOrDir_System_String_System_String_
+  commentId: M:KS.Files.Operations.Moving.TryMoveFileOrDir(System.String,System.String)
+  fullName: KS.Files.Operations.Moving.TryMoveFileOrDir(System.String, System.String)
+  nameWithType: Moving.TryMoveFileOrDir(String, String)
+- uid: KS.Files.Operations.Moving.TryMoveFileOrDir*
+  name: TryMoveFileOrDir
+  href: api/KS.Files.Operations.Moving.html#KS_Files_Operations_Moving_TryMoveFileOrDir_
+  commentId: Overload:KS.Files.Operations.Moving.TryMoveFileOrDir
+  isSpec: "True"
+  fullName: KS.Files.Operations.Moving.TryMoveFileOrDir
+  nameWithType: Moving.TryMoveFileOrDir
 - uid: KS.Files.Operations.Removing
   name: Removing
   href: api/KS.Files.Operations.Removing.html
@@ -4639,6 +4730,32 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Removing.RemoveFile
   nameWithType: Removing.RemoveFile
+- uid: KS.Files.Operations.Removing.TryRemoveDirectory(System.String)
+  name: TryRemoveDirectory(String)
+  href: api/KS.Files.Operations.Removing.html#KS_Files_Operations_Removing_TryRemoveDirectory_System_String_
+  commentId: M:KS.Files.Operations.Removing.TryRemoveDirectory(System.String)
+  fullName: KS.Files.Operations.Removing.TryRemoveDirectory(System.String)
+  nameWithType: Removing.TryRemoveDirectory(String)
+- uid: KS.Files.Operations.Removing.TryRemoveDirectory*
+  name: TryRemoveDirectory
+  href: api/KS.Files.Operations.Removing.html#KS_Files_Operations_Removing_TryRemoveDirectory_
+  commentId: Overload:KS.Files.Operations.Removing.TryRemoveDirectory
+  isSpec: "True"
+  fullName: KS.Files.Operations.Removing.TryRemoveDirectory
+  nameWithType: Removing.TryRemoveDirectory
+- uid: KS.Files.Operations.Removing.TryRemoveFile(System.String)
+  name: TryRemoveFile(String)
+  href: api/KS.Files.Operations.Removing.html#KS_Files_Operations_Removing_TryRemoveFile_System_String_
+  commentId: M:KS.Files.Operations.Removing.TryRemoveFile(System.String)
+  fullName: KS.Files.Operations.Removing.TryRemoveFile(System.String)
+  nameWithType: Removing.TryRemoveFile(String)
+- uid: KS.Files.Operations.Removing.TryRemoveFile*
+  name: TryRemoveFile
+  href: api/KS.Files.Operations.Removing.html#KS_Files_Operations_Removing_TryRemoveFile_
+  commentId: Overload:KS.Files.Operations.Removing.TryRemoveFile
+  isSpec: "True"
+  fullName: KS.Files.Operations.Removing.TryRemoveFile
+  nameWithType: Removing.TryRemoveFile
 - uid: KS.Files.PathLookup
   name: KS.Files.PathLookup
   href: api/KS.Files.PathLookup.html
@@ -4718,6 +4835,44 @@ references:
   isSpec: "True"
   fullName: KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup
   nameWithType: PathLookupTools.RemoveFromPathLookup
+- uid: KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup(System.String)
+  name: TryAddToPathLookup(String)
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_TryAddToPathLookup_System_String_
+  commentId: M:KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup(System.String)
+  fullName: KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup(System.String)
+  nameWithType: PathLookupTools.TryAddToPathLookup(String)
+- uid: KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup(System.String,System.String)
+  name: TryAddToPathLookup(String, String)
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_TryAddToPathLookup_System_String_System_String_
+  commentId: M:KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup(System.String,System.String)
+  fullName: KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup(System.String, System.String)
+  nameWithType: PathLookupTools.TryAddToPathLookup(String, String)
+- uid: KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup*
+  name: TryAddToPathLookup
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_TryAddToPathLookup_
+  commentId: Overload:KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup
+  isSpec: "True"
+  fullName: KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup
+  nameWithType: PathLookupTools.TryAddToPathLookup
+- uid: KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup(System.String)
+  name: TryRemoveFromPathLookup(String)
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_TryRemoveFromPathLookup_System_String_
+  commentId: M:KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup(System.String)
+  fullName: KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup(System.String)
+  nameWithType: PathLookupTools.TryRemoveFromPathLookup(String)
+- uid: KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup(System.String,System.String)
+  name: TryRemoveFromPathLookup(String, String)
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_TryRemoveFromPathLookup_System_String_System_String_
+  commentId: M:KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup(System.String,System.String)
+  fullName: KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup(System.String, System.String)
+  nameWithType: PathLookupTools.TryRemoveFromPathLookup(String, String)
+- uid: KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup*
+  name: TryRemoveFromPathLookup
+  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_TryRemoveFromPathLookup_
+  commentId: Overload:KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup
+  isSpec: "True"
+  fullName: KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup
+  nameWithType: PathLookupTools.TryRemoveFromPathLookup
 - uid: KS.Files.Paths
   name: Paths
   href: api/KS.Files.Paths.html
