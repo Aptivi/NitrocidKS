@@ -33030,6 +33030,88 @@ references:
   commentId: N:KS.Scripting.Conditions.Types
   fullName: KS.Scripting.Conditions.Types
   nameWithType: KS.Scripting.Conditions.Types
+- uid: KS.Scripting.Conditions.Types.ContainsCondition
+  name: ContainsCondition
+  href: api/KS.Scripting.Conditions.Types.ContainsCondition.html
+  commentId: T:KS.Scripting.Conditions.Types.ContainsCondition
+  fullName: KS.Scripting.Conditions.Types.ContainsCondition
+  nameWithType: ContainsCondition
+- uid: KS.Scripting.Conditions.Types.ContainsCondition.ConditionName
+  name: ICondition.ConditionName
+  href: api/KS.Scripting.Conditions.Types.ContainsCondition.html#KS_Scripting_Conditions_Types_ContainsCondition_ConditionName
+  commentId: P:KS.Scripting.Conditions.Types.ContainsCondition.ConditionName
+  name.vb: ConditionName
+  fullName: KS.Scripting.Conditions.Types.ContainsCondition.KS.Scripting.Conditions.ICondition.ConditionName
+  fullName.vb: KS.Scripting.Conditions.Types.ContainsCondition.ConditionName
+  nameWithType: ContainsCondition.ICondition.ConditionName
+  nameWithType.vb: ContainsCondition.ConditionName
+- uid: KS.Scripting.Conditions.Types.ContainsCondition.ConditionName*
+  name: ICondition.ConditionName
+  href: api/KS.Scripting.Conditions.Types.ContainsCondition.html#KS_Scripting_Conditions_Types_ContainsCondition_ConditionName_
+  commentId: Overload:KS.Scripting.Conditions.Types.ContainsCondition.ConditionName
+  isSpec: "True"
+  name.vb: ConditionName
+  fullName: KS.Scripting.Conditions.Types.ContainsCondition.KS.Scripting.Conditions.ICondition.ConditionName
+  fullName.vb: KS.Scripting.Conditions.Types.ContainsCondition.ConditionName
+  nameWithType: ContainsCondition.ICondition.ConditionName
+  nameWithType.vb: ContainsCondition.ConditionName
+- uid: KS.Scripting.Conditions.Types.ContainsCondition.ConditionPosition
+  name: ICondition.ConditionPosition
+  href: api/KS.Scripting.Conditions.Types.ContainsCondition.html#KS_Scripting_Conditions_Types_ContainsCondition_ConditionPosition
+  commentId: P:KS.Scripting.Conditions.Types.ContainsCondition.ConditionPosition
+  name.vb: ConditionPosition
+  fullName: KS.Scripting.Conditions.Types.ContainsCondition.KS.Scripting.Conditions.ICondition.ConditionPosition
+  fullName.vb: KS.Scripting.Conditions.Types.ContainsCondition.ConditionPosition
+  nameWithType: ContainsCondition.ICondition.ConditionPosition
+  nameWithType.vb: ContainsCondition.ConditionPosition
+- uid: KS.Scripting.Conditions.Types.ContainsCondition.ConditionPosition*
+  name: ICondition.ConditionPosition
+  href: api/KS.Scripting.Conditions.Types.ContainsCondition.html#KS_Scripting_Conditions_Types_ContainsCondition_ConditionPosition_
+  commentId: Overload:KS.Scripting.Conditions.Types.ContainsCondition.ConditionPosition
+  isSpec: "True"
+  name.vb: ConditionPosition
+  fullName: KS.Scripting.Conditions.Types.ContainsCondition.KS.Scripting.Conditions.ICondition.ConditionPosition
+  fullName.vb: KS.Scripting.Conditions.Types.ContainsCondition.ConditionPosition
+  nameWithType: ContainsCondition.ICondition.ConditionPosition
+  nameWithType.vb: ContainsCondition.ConditionPosition
+- uid: KS.Scripting.Conditions.Types.ContainsCondition.ConditionRequiredArguments
+  name: ICondition.ConditionRequiredArguments
+  href: api/KS.Scripting.Conditions.Types.ContainsCondition.html#KS_Scripting_Conditions_Types_ContainsCondition_ConditionRequiredArguments
+  commentId: P:KS.Scripting.Conditions.Types.ContainsCondition.ConditionRequiredArguments
+  name.vb: ConditionRequiredArguments
+  fullName: KS.Scripting.Conditions.Types.ContainsCondition.KS.Scripting.Conditions.ICondition.ConditionRequiredArguments
+  fullName.vb: KS.Scripting.Conditions.Types.ContainsCondition.ConditionRequiredArguments
+  nameWithType: ContainsCondition.ICondition.ConditionRequiredArguments
+  nameWithType.vb: ContainsCondition.ConditionRequiredArguments
+- uid: KS.Scripting.Conditions.Types.ContainsCondition.ConditionRequiredArguments*
+  name: ICondition.ConditionRequiredArguments
+  href: api/KS.Scripting.Conditions.Types.ContainsCondition.html#KS_Scripting_Conditions_Types_ContainsCondition_ConditionRequiredArguments_
+  commentId: Overload:KS.Scripting.Conditions.Types.ContainsCondition.ConditionRequiredArguments
+  isSpec: "True"
+  name.vb: ConditionRequiredArguments
+  fullName: KS.Scripting.Conditions.Types.ContainsCondition.KS.Scripting.Conditions.ICondition.ConditionRequiredArguments
+  fullName.vb: KS.Scripting.Conditions.Types.ContainsCondition.ConditionRequiredArguments
+  nameWithType: ContainsCondition.ICondition.ConditionRequiredArguments
+  nameWithType.vb: ContainsCondition.ConditionRequiredArguments
+- uid: KS.Scripting.Conditions.Types.ContainsCondition.IsConditionSatisfied(System.String,System.String)
+  name: ICondition.IsConditionSatisfied(String, String)
+  href: api/KS.Scripting.Conditions.Types.ContainsCondition.html#KS_Scripting_Conditions_Types_ContainsCondition_IsConditionSatisfied_System_String_System_String_
+  commentId: M:KS.Scripting.Conditions.Types.ContainsCondition.IsConditionSatisfied(System.String,System.String)
+  name.vb: IsConditionSatisfied(String, String)
+  fullName: KS.Scripting.Conditions.Types.ContainsCondition.KS.Scripting.Conditions.ICondition.IsConditionSatisfied(System.String, System.String)
+  fullName.vb: KS.Scripting.Conditions.Types.ContainsCondition.IsConditionSatisfied(System.String, System.String)
+  nameWithType: ContainsCondition.ICondition.IsConditionSatisfied(String, String)
+  nameWithType.vb: ContainsCondition.IsConditionSatisfied(String, String)
+- uid: KS.Scripting.Conditions.Types.ContainsCondition.IsConditionSatisfied*
+  name: ICondition.IsConditionSatisfied
+  href: api/KS.Scripting.Conditions.Types.ContainsCondition.html#KS_Scripting_Conditions_Types_ContainsCondition_IsConditionSatisfied_
+  commentId: Overload:KS.Scripting.Conditions.Types.ContainsCondition.IsConditionSatisfied
+  isSpec: "True"
+  name.vb: IsConditionSatisfied
+  fullName: KS.Scripting.Conditions.Types.ContainsCondition.KS.Scripting.Conditions.ICondition.IsConditionSatisfied
+  fullName.vb: KS.Scripting.Conditions.Types.ContainsCondition.IsConditionSatisfied
+  nameWithType: ContainsCondition.ICondition.IsConditionSatisfied
+  nameWithType.vb: ContainsCondition.IsConditionSatisfied
 - uid: KS.Scripting.Conditions.Types.DirectoryExistsCondition
   name: DirectoryExistsCondition
   href: api/KS.Scripting.Conditions.Types.DirectoryExistsCondition.html
@@ -33774,6 +33856,88 @@ references:
   commentId: T:KS.Scripting.Conditions.Types.NoneCondition
   fullName: KS.Scripting.Conditions.Types.NoneCondition
   nameWithType: NoneCondition
+- uid: KS.Scripting.Conditions.Types.NotContainsCondition
+  name: NotContainsCondition
+  href: api/KS.Scripting.Conditions.Types.NotContainsCondition.html
+  commentId: T:KS.Scripting.Conditions.Types.NotContainsCondition
+  fullName: KS.Scripting.Conditions.Types.NotContainsCondition
+  nameWithType: NotContainsCondition
+- uid: KS.Scripting.Conditions.Types.NotContainsCondition.ConditionName
+  name: ICondition.ConditionName
+  href: api/KS.Scripting.Conditions.Types.NotContainsCondition.html#KS_Scripting_Conditions_Types_NotContainsCondition_ConditionName
+  commentId: P:KS.Scripting.Conditions.Types.NotContainsCondition.ConditionName
+  name.vb: ConditionName
+  fullName: KS.Scripting.Conditions.Types.NotContainsCondition.KS.Scripting.Conditions.ICondition.ConditionName
+  fullName.vb: KS.Scripting.Conditions.Types.NotContainsCondition.ConditionName
+  nameWithType: NotContainsCondition.ICondition.ConditionName
+  nameWithType.vb: NotContainsCondition.ConditionName
+- uid: KS.Scripting.Conditions.Types.NotContainsCondition.ConditionName*
+  name: ICondition.ConditionName
+  href: api/KS.Scripting.Conditions.Types.NotContainsCondition.html#KS_Scripting_Conditions_Types_NotContainsCondition_ConditionName_
+  commentId: Overload:KS.Scripting.Conditions.Types.NotContainsCondition.ConditionName
+  isSpec: "True"
+  name.vb: ConditionName
+  fullName: KS.Scripting.Conditions.Types.NotContainsCondition.KS.Scripting.Conditions.ICondition.ConditionName
+  fullName.vb: KS.Scripting.Conditions.Types.NotContainsCondition.ConditionName
+  nameWithType: NotContainsCondition.ICondition.ConditionName
+  nameWithType.vb: NotContainsCondition.ConditionName
+- uid: KS.Scripting.Conditions.Types.NotContainsCondition.ConditionPosition
+  name: ICondition.ConditionPosition
+  href: api/KS.Scripting.Conditions.Types.NotContainsCondition.html#KS_Scripting_Conditions_Types_NotContainsCondition_ConditionPosition
+  commentId: P:KS.Scripting.Conditions.Types.NotContainsCondition.ConditionPosition
+  name.vb: ConditionPosition
+  fullName: KS.Scripting.Conditions.Types.NotContainsCondition.KS.Scripting.Conditions.ICondition.ConditionPosition
+  fullName.vb: KS.Scripting.Conditions.Types.NotContainsCondition.ConditionPosition
+  nameWithType: NotContainsCondition.ICondition.ConditionPosition
+  nameWithType.vb: NotContainsCondition.ConditionPosition
+- uid: KS.Scripting.Conditions.Types.NotContainsCondition.ConditionPosition*
+  name: ICondition.ConditionPosition
+  href: api/KS.Scripting.Conditions.Types.NotContainsCondition.html#KS_Scripting_Conditions_Types_NotContainsCondition_ConditionPosition_
+  commentId: Overload:KS.Scripting.Conditions.Types.NotContainsCondition.ConditionPosition
+  isSpec: "True"
+  name.vb: ConditionPosition
+  fullName: KS.Scripting.Conditions.Types.NotContainsCondition.KS.Scripting.Conditions.ICondition.ConditionPosition
+  fullName.vb: KS.Scripting.Conditions.Types.NotContainsCondition.ConditionPosition
+  nameWithType: NotContainsCondition.ICondition.ConditionPosition
+  nameWithType.vb: NotContainsCondition.ConditionPosition
+- uid: KS.Scripting.Conditions.Types.NotContainsCondition.ConditionRequiredArguments
+  name: ICondition.ConditionRequiredArguments
+  href: api/KS.Scripting.Conditions.Types.NotContainsCondition.html#KS_Scripting_Conditions_Types_NotContainsCondition_ConditionRequiredArguments
+  commentId: P:KS.Scripting.Conditions.Types.NotContainsCondition.ConditionRequiredArguments
+  name.vb: ConditionRequiredArguments
+  fullName: KS.Scripting.Conditions.Types.NotContainsCondition.KS.Scripting.Conditions.ICondition.ConditionRequiredArguments
+  fullName.vb: KS.Scripting.Conditions.Types.NotContainsCondition.ConditionRequiredArguments
+  nameWithType: NotContainsCondition.ICondition.ConditionRequiredArguments
+  nameWithType.vb: NotContainsCondition.ConditionRequiredArguments
+- uid: KS.Scripting.Conditions.Types.NotContainsCondition.ConditionRequiredArguments*
+  name: ICondition.ConditionRequiredArguments
+  href: api/KS.Scripting.Conditions.Types.NotContainsCondition.html#KS_Scripting_Conditions_Types_NotContainsCondition_ConditionRequiredArguments_
+  commentId: Overload:KS.Scripting.Conditions.Types.NotContainsCondition.ConditionRequiredArguments
+  isSpec: "True"
+  name.vb: ConditionRequiredArguments
+  fullName: KS.Scripting.Conditions.Types.NotContainsCondition.KS.Scripting.Conditions.ICondition.ConditionRequiredArguments
+  fullName.vb: KS.Scripting.Conditions.Types.NotContainsCondition.ConditionRequiredArguments
+  nameWithType: NotContainsCondition.ICondition.ConditionRequiredArguments
+  nameWithType.vb: NotContainsCondition.ConditionRequiredArguments
+- uid: KS.Scripting.Conditions.Types.NotContainsCondition.IsConditionSatisfied(System.String,System.String)
+  name: ICondition.IsConditionSatisfied(String, String)
+  href: api/KS.Scripting.Conditions.Types.NotContainsCondition.html#KS_Scripting_Conditions_Types_NotContainsCondition_IsConditionSatisfied_System_String_System_String_
+  commentId: M:KS.Scripting.Conditions.Types.NotContainsCondition.IsConditionSatisfied(System.String,System.String)
+  name.vb: IsConditionSatisfied(String, String)
+  fullName: KS.Scripting.Conditions.Types.NotContainsCondition.KS.Scripting.Conditions.ICondition.IsConditionSatisfied(System.String, System.String)
+  fullName.vb: KS.Scripting.Conditions.Types.NotContainsCondition.IsConditionSatisfied(System.String, System.String)
+  nameWithType: NotContainsCondition.ICondition.IsConditionSatisfied(String, String)
+  nameWithType.vb: NotContainsCondition.IsConditionSatisfied(String, String)
+- uid: KS.Scripting.Conditions.Types.NotContainsCondition.IsConditionSatisfied*
+  name: ICondition.IsConditionSatisfied
+  href: api/KS.Scripting.Conditions.Types.NotContainsCondition.html#KS_Scripting_Conditions_Types_NotContainsCondition_IsConditionSatisfied_
+  commentId: Overload:KS.Scripting.Conditions.Types.NotContainsCondition.IsConditionSatisfied
+  isSpec: "True"
+  name.vb: IsConditionSatisfied
+  fullName: KS.Scripting.Conditions.Types.NotContainsCondition.KS.Scripting.Conditions.ICondition.IsConditionSatisfied
+  fullName.vb: KS.Scripting.Conditions.Types.NotContainsCondition.IsConditionSatisfied
+  nameWithType: NotContainsCondition.ICondition.IsConditionSatisfied
+  nameWithType.vb: NotContainsCondition.IsConditionSatisfied
 - uid: KS.Scripting.Conditions.Types.NotEqualsCondition
   name: NotEqualsCondition
   href: api/KS.Scripting.Conditions.Types.NotEqualsCondition.html
@@ -33999,6 +34163,19 @@ references:
   commentId: T:KS.Scripting.UESHOperators
   fullName: KS.Scripting.UESHOperators
   nameWithType: UESHOperators
+- uid: KS.Scripting.UESHOperators.UESHVariableContains(System.String,System.String)
+  name: UESHVariableContains(String, String)
+  href: api/KS.Scripting.UESHOperators.html#KS_Scripting_UESHOperators_UESHVariableContains_System_String_System_String_
+  commentId: M:KS.Scripting.UESHOperators.UESHVariableContains(System.String,System.String)
+  fullName: KS.Scripting.UESHOperators.UESHVariableContains(System.String, System.String)
+  nameWithType: UESHOperators.UESHVariableContains(String, String)
+- uid: KS.Scripting.UESHOperators.UESHVariableContains*
+  name: UESHVariableContains
+  href: api/KS.Scripting.UESHOperators.html#KS_Scripting_UESHOperators_UESHVariableContains_
+  commentId: Overload:KS.Scripting.UESHOperators.UESHVariableContains
+  isSpec: "True"
+  fullName: KS.Scripting.UESHOperators.UESHVariableContains
+  nameWithType: UESHOperators.UESHVariableContains
 - uid: KS.Scripting.UESHOperators.UESHVariableDirectoryDoesNotExist(System.String)
   name: UESHVariableDirectoryDoesNotExist(String)
   href: api/KS.Scripting.UESHOperators.html#KS_Scripting_UESHOperators_UESHVariableDirectoryDoesNotExist_System_String_
@@ -34116,6 +34293,19 @@ references:
   isSpec: "True"
   fullName: KS.Scripting.UESHOperators.UESHVariableLessThanOrEqual
   nameWithType: UESHOperators.UESHVariableLessThanOrEqual
+- uid: KS.Scripting.UESHOperators.UESHVariableNotContains(System.String,System.String)
+  name: UESHVariableNotContains(String, String)
+  href: api/KS.Scripting.UESHOperators.html#KS_Scripting_UESHOperators_UESHVariableNotContains_System_String_System_String_
+  commentId: M:KS.Scripting.UESHOperators.UESHVariableNotContains(System.String,System.String)
+  fullName: KS.Scripting.UESHOperators.UESHVariableNotContains(System.String, System.String)
+  nameWithType: UESHOperators.UESHVariableNotContains(String, String)
+- uid: KS.Scripting.UESHOperators.UESHVariableNotContains*
+  name: UESHVariableNotContains
+  href: api/KS.Scripting.UESHOperators.html#KS_Scripting_UESHOperators_UESHVariableNotContains_
+  commentId: Overload:KS.Scripting.UESHOperators.UESHVariableNotContains
+  isSpec: "True"
+  fullName: KS.Scripting.UESHOperators.UESHVariableNotContains
+  nameWithType: UESHOperators.UESHVariableNotContains
 - uid: KS.Scripting.UESHOperators.UESHVariableNotEqual(System.String,System.String)
   name: UESHVariableNotEqual(String, String)
   href: api/KS.Scripting.UESHOperators.html#KS_Scripting_UESHOperators_UESHVariableNotEqual_System_String_System_String_

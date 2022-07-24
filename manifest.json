@@ -4818,7 +4818,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Scripting.Conditions.BaseCondition.html",
-          "hash": "rkNrHnV4ET+Vh8DtivHgP8t2CB0xvdZnp7sAUfM4tAE="
+          "hash": "XQ2fWSBeKDthubYqgrbRULh7oXx4njiRZ33v9dQ3Qy4="
         }
       },
       "is_incremental": false,
@@ -4831,6 +4831,18 @@
         ".html": {
           "relative_path": "api/KS.Scripting.Conditions.ICondition.html",
           "hash": "bLWaE9/iUnhrOncqkce2sk4weSzVoHGfQlg7Nwk3QdM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Scripting.Conditions.Types.ContainsCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Scripting.Conditions.Types.ContainsCondition.html",
+          "hash": "bU+zODRMZZs6wRC5wOaWgbyT9PG3K8jFqV21el3Op2k="
         }
       },
       "is_incremental": false,
@@ -4958,6 +4970,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Scripting.Conditions.Types.NotContainsCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Scripting.Conditions.Types.NotContainsCondition.html",
+          "hash": "uGW7J3PymbMXrw2pRSkDZkOvNoAGTeczQePbxPrlobE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Scripting.Conditions.Types.NotEqualsCondition.yml",
       "output": {
         ".html": {
@@ -4974,7 +4998,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Scripting.Conditions.Types.html",
-          "hash": "sNWeXre7eJ79/dT0uQd0IZbGMJoOHqPdJddfG9KF92s="
+          "hash": "TEfVstUJ39WDPUAwWRRj0BlF2pAUFxHvJhHJPIJh/Zw="
         }
       },
       "is_incremental": false,
@@ -4986,7 +5010,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Scripting.Conditions.UESHConditional.html",
-          "hash": "cASI+dBdCaZl1IvRUfhKDdZPBCbC6LJTI8d1f19mh4A="
+          "hash": "tjA29I7A+2PgRUEnPaKq5AVQ8T33HvJtrdP6ge1Awz0="
         }
       },
       "is_incremental": false,
@@ -5046,7 +5070,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Scripting.UESHOperators.html",
-          "hash": "tKF2/wiLdT1Gj6S5nFqXxmU+bBqtFBdvxdhtbuyjZBY="
+          "hash": "7TQwEuA9sBg/KudsRFkiI/GPI+S8h9vBqbjrorygqlo="
         }
       },
       "is_incremental": false,
@@ -5598,7 +5622,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Rta8G4sGKWzfukzAOrGmE7oRJIj+UFBfbwl1jE2GaBk="
+          "hash": "RB0YwT66O03F6HHRm49MvBp+AIre55zEg5d0M5Vyydk="
         }
       },
       "is_incremental": false,
@@ -8442,7 +8466,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Release-Notes-for-Second-Generation-KS.html",
-          "hash": "wSftBWr+ymMogWFUGklDXLyH4+LJR0R9VJAzJKAInbE="
+          "hash": "kNDn3lDN581q3xJYAv7Q2plkFrCio2oi1DuPKlDGrng="
         }
       },
       "is_incremental": false,
@@ -8478,7 +8502,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/ueshdevelopment/UESH-Conditions.html",
-          "hash": "1nYRD96nqoEwalu4XS9txT81TFgiqXSCFnMpX3QtmPE="
+          "hash": "JAg+/xQirheHsOWOoJpu87th4yjxnPaRUf/W4Oguy4g="
         }
       },
       "is_incremental": false,
@@ -8529,7 +8553,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 465,
+          "total_file_count": 467,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
