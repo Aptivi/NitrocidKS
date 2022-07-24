@@ -12047,6 +12047,55 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Exceptions.RemoteDebugDeviceNotFoundException.RemoteDebugDeviceNotFoundException
   nameWithType: RemoteDebugDeviceNotFoundException.RemoteDebugDeviceNotFoundException
+- uid: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException
+  name: RemoteDebugDeviceOperationException
+  href: api/KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.html
+  commentId: T:KS.Kernel.Exceptions.RemoteDebugDeviceOperationException
+  fullName: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException
+  nameWithType: RemoteDebugDeviceOperationException
+- uid: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.#ctor
+  name: RemoteDebugDeviceOperationException()
+  href: api/KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.html#KS_Kernel_Exceptions_RemoteDebugDeviceOperationException__ctor
+  commentId: M:KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.#ctor
+  fullName: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException()
+  nameWithType: RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException()
+- uid: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.#ctor(System.String)
+  name: RemoteDebugDeviceOperationException(String)
+  href: api/KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.html#KS_Kernel_Exceptions_RemoteDebugDeviceOperationException__ctor_System_String_
+  commentId: M:KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.#ctor(System.String)
+  fullName: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException(System.String)
+  nameWithType: RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException(String)
+- uid: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.#ctor(System.String,System.Exception)
+  name: RemoteDebugDeviceOperationException(String, Exception)
+  href: api/KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.html#KS_Kernel_Exceptions_RemoteDebugDeviceOperationException__ctor_System_String_System_Exception_
+  commentId: M:KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.#ctor(System.String,System.Exception)
+  fullName: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException(System.String, System.Exception)
+  nameWithType: RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException(String, Exception)
+- uid: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.#ctor(System.String,System.Exception,System.Object[])
+  name: RemoteDebugDeviceOperationException(String, Exception, Object[])
+  href: api/KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.html#KS_Kernel_Exceptions_RemoteDebugDeviceOperationException__ctor_System_String_System_Exception_System_Object___
+  commentId: M:KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.#ctor(System.String,System.Exception,System.Object[])
+  name.vb: RemoteDebugDeviceOperationException(String, Exception, Object())
+  fullName: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException(System.String, System.Exception, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException(System.String, System.Exception, System.Object())
+  nameWithType: RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException(String, Exception, Object[])
+  nameWithType.vb: RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException(String, Exception, Object())
+- uid: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.#ctor(System.String,System.Object[])
+  name: RemoteDebugDeviceOperationException(String, Object[])
+  href: api/KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.html#KS_Kernel_Exceptions_RemoteDebugDeviceOperationException__ctor_System_String_System_Object___
+  commentId: M:KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.#ctor(System.String,System.Object[])
+  name.vb: RemoteDebugDeviceOperationException(String, Object())
+  fullName: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException(System.String, System.Object[])
+  fullName.vb: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException(System.String, System.Object())
+  nameWithType: RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException(String, Object[])
+  nameWithType.vb: RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException(String, Object())
+- uid: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.#ctor*
+  name: RemoteDebugDeviceOperationException
+  href: api/KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.html#KS_Kernel_Exceptions_RemoteDebugDeviceOperationException__ctor_
+  commentId: Overload:KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.#ctor
+  isSpec: "True"
+  fullName: KS.Kernel.Exceptions.RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException
+  nameWithType: RemoteDebugDeviceOperationException.RemoteDebugDeviceOperationException
 - uid: KS.Kernel.Exceptions.RSSNetworkException
   name: RSSNetworkException
   href: api/KS.Kernel.Exceptions.RSSNetworkException.html
@@ -15127,6 +15176,44 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Configuration.Config.ReadConfig
   nameWithType: Config.ReadConfig
+- uid: KS.Misc.Configuration.Config.TryCreateConfig
+  name: TryCreateConfig()
+  href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_TryCreateConfig
+  commentId: M:KS.Misc.Configuration.Config.TryCreateConfig
+  fullName: KS.Misc.Configuration.Config.TryCreateConfig()
+  nameWithType: Config.TryCreateConfig()
+- uid: KS.Misc.Configuration.Config.TryCreateConfig(System.String)
+  name: TryCreateConfig(String)
+  href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_TryCreateConfig_System_String_
+  commentId: M:KS.Misc.Configuration.Config.TryCreateConfig(System.String)
+  fullName: KS.Misc.Configuration.Config.TryCreateConfig(System.String)
+  nameWithType: Config.TryCreateConfig(String)
+- uid: KS.Misc.Configuration.Config.TryCreateConfig*
+  name: TryCreateConfig
+  href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_TryCreateConfig_
+  commentId: Overload:KS.Misc.Configuration.Config.TryCreateConfig
+  isSpec: "True"
+  fullName: KS.Misc.Configuration.Config.TryCreateConfig
+  nameWithType: Config.TryCreateConfig
+- uid: KS.Misc.Configuration.Config.TryReadConfig
+  name: TryReadConfig()
+  href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_TryReadConfig
+  commentId: M:KS.Misc.Configuration.Config.TryReadConfig
+  fullName: KS.Misc.Configuration.Config.TryReadConfig()
+  nameWithType: Config.TryReadConfig()
+- uid: KS.Misc.Configuration.Config.TryReadConfig(System.String)
+  name: TryReadConfig(String)
+  href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_TryReadConfig_System_String_
+  commentId: M:KS.Misc.Configuration.Config.TryReadConfig(System.String)
+  fullName: KS.Misc.Configuration.Config.TryReadConfig(System.String)
+  nameWithType: Config.TryReadConfig(String)
+- uid: KS.Misc.Configuration.Config.TryReadConfig*
+  name: TryReadConfig
+  href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_TryReadConfig_
+  commentId: Overload:KS.Misc.Configuration.Config.TryReadConfig
+  isSpec: "True"
+  fullName: KS.Misc.Configuration.Config.TryReadConfig
+  nameWithType: Config.TryReadConfig
 - uid: KS.Misc.Configuration.ConfigTools
   name: ConfigTools
   href: api/KS.Misc.Configuration.ConfigTools.html
@@ -15198,6 +15285,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Configuration.ConfigTools.SetConfigValue
   nameWithType: ConfigTools.SetConfigValue
+- uid: KS.Misc.Configuration.ConfigTools.TryReloadConfig
+  name: TryReloadConfig()
+  href: api/KS.Misc.Configuration.ConfigTools.html#KS_Misc_Configuration_ConfigTools_TryReloadConfig
+  commentId: M:KS.Misc.Configuration.ConfigTools.TryReloadConfig
+  fullName: KS.Misc.Configuration.ConfigTools.TryReloadConfig()
+  nameWithType: ConfigTools.TryReloadConfig()
+- uid: KS.Misc.Configuration.ConfigTools.TryReloadConfig*
+  name: TryReloadConfig
+  href: api/KS.Misc.Configuration.ConfigTools.html#KS_Misc_Configuration_ConfigTools_TryReloadConfig_
+  commentId: Overload:KS.Misc.Configuration.ConfigTools.TryReloadConfig
+  isSpec: "True"
+  fullName: KS.Misc.Configuration.ConfigTools.TryReloadConfig
+  nameWithType: ConfigTools.TryReloadConfig
 - uid: KS.Misc.Configuration.SettingsApp
   name: SettingsApp
   href: api/KS.Misc.Configuration.SettingsApp.html
@@ -31283,6 +31383,32 @@ references:
   commentId: F:KS.Network.NetworkTools.SpeedDialType.SFTP
   fullName: KS.Network.NetworkTools.SpeedDialType.SFTP
   nameWithType: NetworkTools.SpeedDialType.SFTP
+- uid: KS.Network.NetworkTools.TryAddEntryToSpeedDial(System.String,System.Int32,System.String,KS.Network.NetworkTools.SpeedDialType,FtpEncryptionMode,System.Boolean)
+  name: TryAddEntryToSpeedDial(String, Int32, String, NetworkTools.SpeedDialType, FtpEncryptionMode, Boolean)
+  href: api/KS.Network.NetworkTools.html#KS_Network_NetworkTools_TryAddEntryToSpeedDial_System_String_System_Int32_System_String_KS_Network_NetworkTools_SpeedDialType_FtpEncryptionMode_System_Boolean_
+  commentId: M:KS.Network.NetworkTools.TryAddEntryToSpeedDial(System.String,System.Int32,System.String,KS.Network.NetworkTools.SpeedDialType,FtpEncryptionMode,System.Boolean)
+  fullName: KS.Network.NetworkTools.TryAddEntryToSpeedDial(System.String, System.Int32, System.String, KS.Network.NetworkTools.SpeedDialType, FtpEncryptionMode, System.Boolean)
+  nameWithType: NetworkTools.TryAddEntryToSpeedDial(String, Int32, String, NetworkTools.SpeedDialType, FtpEncryptionMode, Boolean)
+- uid: KS.Network.NetworkTools.TryAddEntryToSpeedDial*
+  name: TryAddEntryToSpeedDial
+  href: api/KS.Network.NetworkTools.html#KS_Network_NetworkTools_TryAddEntryToSpeedDial_
+  commentId: Overload:KS.Network.NetworkTools.TryAddEntryToSpeedDial
+  isSpec: "True"
+  fullName: KS.Network.NetworkTools.TryAddEntryToSpeedDial
+  nameWithType: NetworkTools.TryAddEntryToSpeedDial
+- uid: KS.Network.NetworkTools.TryChangeHostname(System.String)
+  name: TryChangeHostname(String)
+  href: api/KS.Network.NetworkTools.html#KS_Network_NetworkTools_TryChangeHostname_System_String_
+  commentId: M:KS.Network.NetworkTools.TryChangeHostname(System.String)
+  fullName: KS.Network.NetworkTools.TryChangeHostname(System.String)
+  nameWithType: NetworkTools.TryChangeHostname(String)
+- uid: KS.Network.NetworkTools.TryChangeHostname*
+  name: TryChangeHostname
+  href: api/KS.Network.NetworkTools.html#KS_Network_NetworkTools_TryChangeHostname_
+  commentId: Overload:KS.Network.NetworkTools.TryChangeHostname
+  isSpec: "True"
+  fullName: KS.Network.NetworkTools.TryChangeHostname
+  nameWithType: NetworkTools.TryChangeHostname
 - uid: KS.Network.NetworkTools.UploadRetries
   name: UploadRetries
   href: api/KS.Network.NetworkTools.html#KS_Network_NetworkTools_UploadRetries
@@ -31691,6 +31817,71 @@ references:
   isSpec: "True"
   fullName: KS.Network.RemoteDebug.RemoteDebugTools.SetDeviceProperty
   nameWithType: RemoteDebugTools.SetDeviceProperty
+- uid: KS.Network.RemoteDebug.RemoteDebugTools.TryAddDeviceToJson(System.String,System.Boolean)
+  name: TryAddDeviceToJson(String, Boolean)
+  href: api/KS.Network.RemoteDebug.RemoteDebugTools.html#KS_Network_RemoteDebug_RemoteDebugTools_TryAddDeviceToJson_System_String_System_Boolean_
+  commentId: M:KS.Network.RemoteDebug.RemoteDebugTools.TryAddDeviceToJson(System.String,System.Boolean)
+  fullName: KS.Network.RemoteDebug.RemoteDebugTools.TryAddDeviceToJson(System.String, System.Boolean)
+  nameWithType: RemoteDebugTools.TryAddDeviceToJson(String, Boolean)
+- uid: KS.Network.RemoteDebug.RemoteDebugTools.TryAddDeviceToJson*
+  name: TryAddDeviceToJson
+  href: api/KS.Network.RemoteDebug.RemoteDebugTools.html#KS_Network_RemoteDebug_RemoteDebugTools_TryAddDeviceToJson_
+  commentId: Overload:KS.Network.RemoteDebug.RemoteDebugTools.TryAddDeviceToJson
+  isSpec: "True"
+  fullName: KS.Network.RemoteDebug.RemoteDebugTools.TryAddDeviceToJson
+  nameWithType: RemoteDebugTools.TryAddDeviceToJson
+- uid: KS.Network.RemoteDebug.RemoteDebugTools.TryAddToBlockList(System.String)
+  name: TryAddToBlockList(String)
+  href: api/KS.Network.RemoteDebug.RemoteDebugTools.html#KS_Network_RemoteDebug_RemoteDebugTools_TryAddToBlockList_System_String_
+  commentId: M:KS.Network.RemoteDebug.RemoteDebugTools.TryAddToBlockList(System.String)
+  fullName: KS.Network.RemoteDebug.RemoteDebugTools.TryAddToBlockList(System.String)
+  nameWithType: RemoteDebugTools.TryAddToBlockList(String)
+- uid: KS.Network.RemoteDebug.RemoteDebugTools.TryAddToBlockList*
+  name: TryAddToBlockList
+  href: api/KS.Network.RemoteDebug.RemoteDebugTools.html#KS_Network_RemoteDebug_RemoteDebugTools_TryAddToBlockList_
+  commentId: Overload:KS.Network.RemoteDebug.RemoteDebugTools.TryAddToBlockList
+  isSpec: "True"
+  fullName: KS.Network.RemoteDebug.RemoteDebugTools.TryAddToBlockList
+  nameWithType: RemoteDebugTools.TryAddToBlockList
+- uid: KS.Network.RemoteDebug.RemoteDebugTools.TryRemoveDeviceFromJson(System.String)
+  name: TryRemoveDeviceFromJson(String)
+  href: api/KS.Network.RemoteDebug.RemoteDebugTools.html#KS_Network_RemoteDebug_RemoteDebugTools_TryRemoveDeviceFromJson_System_String_
+  commentId: M:KS.Network.RemoteDebug.RemoteDebugTools.TryRemoveDeviceFromJson(System.String)
+  fullName: KS.Network.RemoteDebug.RemoteDebugTools.TryRemoveDeviceFromJson(System.String)
+  nameWithType: RemoteDebugTools.TryRemoveDeviceFromJson(String)
+- uid: KS.Network.RemoteDebug.RemoteDebugTools.TryRemoveDeviceFromJson*
+  name: TryRemoveDeviceFromJson
+  href: api/KS.Network.RemoteDebug.RemoteDebugTools.html#KS_Network_RemoteDebug_RemoteDebugTools_TryRemoveDeviceFromJson_
+  commentId: Overload:KS.Network.RemoteDebug.RemoteDebugTools.TryRemoveDeviceFromJson
+  isSpec: "True"
+  fullName: KS.Network.RemoteDebug.RemoteDebugTools.TryRemoveDeviceFromJson
+  nameWithType: RemoteDebugTools.TryRemoveDeviceFromJson
+- uid: KS.Network.RemoteDebug.RemoteDebugTools.TryRemoveFromBlockList(System.String)
+  name: TryRemoveFromBlockList(String)
+  href: api/KS.Network.RemoteDebug.RemoteDebugTools.html#KS_Network_RemoteDebug_RemoteDebugTools_TryRemoveFromBlockList_System_String_
+  commentId: M:KS.Network.RemoteDebug.RemoteDebugTools.TryRemoveFromBlockList(System.String)
+  fullName: KS.Network.RemoteDebug.RemoteDebugTools.TryRemoveFromBlockList(System.String)
+  nameWithType: RemoteDebugTools.TryRemoveFromBlockList(String)
+- uid: KS.Network.RemoteDebug.RemoteDebugTools.TryRemoveFromBlockList*
+  name: TryRemoveFromBlockList
+  href: api/KS.Network.RemoteDebug.RemoteDebugTools.html#KS_Network_RemoteDebug_RemoteDebugTools_TryRemoveFromBlockList_
+  commentId: Overload:KS.Network.RemoteDebug.RemoteDebugTools.TryRemoveFromBlockList
+  isSpec: "True"
+  fullName: KS.Network.RemoteDebug.RemoteDebugTools.TryRemoveFromBlockList
+  nameWithType: RemoteDebugTools.TryRemoveFromBlockList
+- uid: KS.Network.RemoteDebug.RemoteDebugTools.TrySetDeviceProperty(System.String,KS.Network.RemoteDebug.RemoteDebugTools.DeviceProperty,System.Object)
+  name: TrySetDeviceProperty(String, RemoteDebugTools.DeviceProperty, Object)
+  href: api/KS.Network.RemoteDebug.RemoteDebugTools.html#KS_Network_RemoteDebug_RemoteDebugTools_TrySetDeviceProperty_System_String_KS_Network_RemoteDebug_RemoteDebugTools_DeviceProperty_System_Object_
+  commentId: M:KS.Network.RemoteDebug.RemoteDebugTools.TrySetDeviceProperty(System.String,KS.Network.RemoteDebug.RemoteDebugTools.DeviceProperty,System.Object)
+  fullName: KS.Network.RemoteDebug.RemoteDebugTools.TrySetDeviceProperty(System.String, KS.Network.RemoteDebug.RemoteDebugTools.DeviceProperty, System.Object)
+  nameWithType: RemoteDebugTools.TrySetDeviceProperty(String, RemoteDebugTools.DeviceProperty, Object)
+- uid: KS.Network.RemoteDebug.RemoteDebugTools.TrySetDeviceProperty*
+  name: TrySetDeviceProperty
+  href: api/KS.Network.RemoteDebug.RemoteDebugTools.html#KS_Network_RemoteDebug_RemoteDebugTools_TrySetDeviceProperty_
+  commentId: Overload:KS.Network.RemoteDebug.RemoteDebugTools.TrySetDeviceProperty
+  isSpec: "True"
+  fullName: KS.Network.RemoteDebug.RemoteDebugTools.TrySetDeviceProperty
+  nameWithType: RemoteDebugTools.TrySetDeviceProperty
 - uid: KS.Network.RPC
   name: KS.Network.RPC
   href: api/KS.Network.RPC.html
