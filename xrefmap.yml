@@ -13939,6 +13939,71 @@ references:
   isSpec: "True"
   fullName: KS.Login.PermissionManagement.RemovePermission
   nameWithType: PermissionManagement.RemovePermission
+- uid: KS.Login.PermissionManagement.TryAddPermission(KS.Login.PermissionManagement.PermissionType,System.String)
+  name: TryAddPermission(PermissionManagement.PermissionType, String)
+  href: api/KS.Login.PermissionManagement.html#KS_Login_PermissionManagement_TryAddPermission_KS_Login_PermissionManagement_PermissionType_System_String_
+  commentId: M:KS.Login.PermissionManagement.TryAddPermission(KS.Login.PermissionManagement.PermissionType,System.String)
+  fullName: KS.Login.PermissionManagement.TryAddPermission(KS.Login.PermissionManagement.PermissionType, System.String)
+  nameWithType: PermissionManagement.TryAddPermission(PermissionManagement.PermissionType, String)
+- uid: KS.Login.PermissionManagement.TryAddPermission*
+  name: TryAddPermission
+  href: api/KS.Login.PermissionManagement.html#KS_Login_PermissionManagement_TryAddPermission_
+  commentId: Overload:KS.Login.PermissionManagement.TryAddPermission
+  isSpec: "True"
+  fullName: KS.Login.PermissionManagement.TryAddPermission
+  nameWithType: PermissionManagement.TryAddPermission
+- uid: KS.Login.PermissionManagement.TryInitPermissionsForNewUser(System.String)
+  name: TryInitPermissionsForNewUser(String)
+  href: api/KS.Login.PermissionManagement.html#KS_Login_PermissionManagement_TryInitPermissionsForNewUser_System_String_
+  commentId: M:KS.Login.PermissionManagement.TryInitPermissionsForNewUser(System.String)
+  fullName: KS.Login.PermissionManagement.TryInitPermissionsForNewUser(System.String)
+  nameWithType: PermissionManagement.TryInitPermissionsForNewUser(String)
+- uid: KS.Login.PermissionManagement.TryInitPermissionsForNewUser*
+  name: TryInitPermissionsForNewUser
+  href: api/KS.Login.PermissionManagement.html#KS_Login_PermissionManagement_TryInitPermissionsForNewUser_
+  commentId: Overload:KS.Login.PermissionManagement.TryInitPermissionsForNewUser
+  isSpec: "True"
+  fullName: KS.Login.PermissionManagement.TryInitPermissionsForNewUser
+  nameWithType: PermissionManagement.TryInitPermissionsForNewUser
+- uid: KS.Login.PermissionManagement.TryLoadPermissions
+  name: TryLoadPermissions()
+  href: api/KS.Login.PermissionManagement.html#KS_Login_PermissionManagement_TryLoadPermissions
+  commentId: M:KS.Login.PermissionManagement.TryLoadPermissions
+  fullName: KS.Login.PermissionManagement.TryLoadPermissions()
+  nameWithType: PermissionManagement.TryLoadPermissions()
+- uid: KS.Login.PermissionManagement.TryLoadPermissions*
+  name: TryLoadPermissions
+  href: api/KS.Login.PermissionManagement.html#KS_Login_PermissionManagement_TryLoadPermissions_
+  commentId: Overload:KS.Login.PermissionManagement.TryLoadPermissions
+  isSpec: "True"
+  fullName: KS.Login.PermissionManagement.TryLoadPermissions
+  nameWithType: PermissionManagement.TryLoadPermissions
+- uid: KS.Login.PermissionManagement.TryPermissionEditForNewUser(System.String,System.String)
+  name: TryPermissionEditForNewUser(String, String)
+  href: api/KS.Login.PermissionManagement.html#KS_Login_PermissionManagement_TryPermissionEditForNewUser_System_String_System_String_
+  commentId: M:KS.Login.PermissionManagement.TryPermissionEditForNewUser(System.String,System.String)
+  fullName: KS.Login.PermissionManagement.TryPermissionEditForNewUser(System.String, System.String)
+  nameWithType: PermissionManagement.TryPermissionEditForNewUser(String, String)
+- uid: KS.Login.PermissionManagement.TryPermissionEditForNewUser*
+  name: TryPermissionEditForNewUser
+  href: api/KS.Login.PermissionManagement.html#KS_Login_PermissionManagement_TryPermissionEditForNewUser_
+  commentId: Overload:KS.Login.PermissionManagement.TryPermissionEditForNewUser
+  isSpec: "True"
+  fullName: KS.Login.PermissionManagement.TryPermissionEditForNewUser
+  nameWithType: PermissionManagement.TryPermissionEditForNewUser
+- uid: KS.Login.PermissionManagement.TryRemovePermission(KS.Login.PermissionManagement.PermissionType,System.String)
+  name: TryRemovePermission(PermissionManagement.PermissionType, String)
+  href: api/KS.Login.PermissionManagement.html#KS_Login_PermissionManagement_TryRemovePermission_KS_Login_PermissionManagement_PermissionType_System_String_
+  commentId: M:KS.Login.PermissionManagement.TryRemovePermission(KS.Login.PermissionManagement.PermissionType,System.String)
+  fullName: KS.Login.PermissionManagement.TryRemovePermission(KS.Login.PermissionManagement.PermissionType, System.String)
+  nameWithType: PermissionManagement.TryRemovePermission(PermissionManagement.PermissionType, String)
+- uid: KS.Login.PermissionManagement.TryRemovePermission*
+  name: TryRemovePermission
+  href: api/KS.Login.PermissionManagement.html#KS_Login_PermissionManagement_TryRemovePermission_
+  commentId: Overload:KS.Login.PermissionManagement.TryRemovePermission
+  isSpec: "True"
+  fullName: KS.Login.PermissionManagement.TryRemovePermission
+  nameWithType: PermissionManagement.TryRemovePermission
 - uid: KS.Login.UserInfo
   name: UserInfo
   href: api/KS.Login.UserInfo.html
@@ -14202,6 +14267,45 @@ references:
   isSpec: "True"
   fullName: KS.Login.UserManagement.SetUserProperty
   nameWithType: UserManagement.SetUserProperty
+- uid: KS.Login.UserManagement.TryChangePassword(System.String,System.String,System.String)
+  name: TryChangePassword(String, String, String)
+  href: api/KS.Login.UserManagement.html#KS_Login_UserManagement_TryChangePassword_System_String_System_String_System_String_
+  commentId: M:KS.Login.UserManagement.TryChangePassword(System.String,System.String,System.String)
+  fullName: KS.Login.UserManagement.TryChangePassword(System.String, System.String, System.String)
+  nameWithType: UserManagement.TryChangePassword(String, String, String)
+- uid: KS.Login.UserManagement.TryChangePassword*
+  name: TryChangePassword
+  href: api/KS.Login.UserManagement.html#KS_Login_UserManagement_TryChangePassword_
+  commentId: Overload:KS.Login.UserManagement.TryChangePassword
+  isSpec: "True"
+  fullName: KS.Login.UserManagement.TryChangePassword
+  nameWithType: UserManagement.TryChangePassword
+- uid: KS.Login.UserManagement.TryChangeUsername(System.String,System.String)
+  name: TryChangeUsername(String, String)
+  href: api/KS.Login.UserManagement.html#KS_Login_UserManagement_TryChangeUsername_System_String_System_String_
+  commentId: M:KS.Login.UserManagement.TryChangeUsername(System.String,System.String)
+  fullName: KS.Login.UserManagement.TryChangeUsername(System.String, System.String)
+  nameWithType: UserManagement.TryChangeUsername(String, String)
+- uid: KS.Login.UserManagement.TryChangeUsername*
+  name: TryChangeUsername
+  href: api/KS.Login.UserManagement.html#KS_Login_UserManagement_TryChangeUsername_
+  commentId: Overload:KS.Login.UserManagement.TryChangeUsername
+  isSpec: "True"
+  fullName: KS.Login.UserManagement.TryChangeUsername
+  nameWithType: UserManagement.TryChangeUsername
+- uid: KS.Login.UserManagement.TryRemoveUser(System.String)
+  name: TryRemoveUser(String)
+  href: api/KS.Login.UserManagement.html#KS_Login_UserManagement_TryRemoveUser_System_String_
+  commentId: M:KS.Login.UserManagement.TryRemoveUser(System.String)
+  fullName: KS.Login.UserManagement.TryRemoveUser(System.String)
+  nameWithType: UserManagement.TryRemoveUser(String)
+- uid: KS.Login.UserManagement.TryRemoveUser*
+  name: TryRemoveUser
+  href: api/KS.Login.UserManagement.html#KS_Login_UserManagement_TryRemoveUser_
+  commentId: Overload:KS.Login.UserManagement.TryRemoveUser
+  isSpec: "True"
+  fullName: KS.Login.UserManagement.TryRemoveUser
+  nameWithType: UserManagement.TryRemoveUser
 - uid: KS.Login.UserManagement.UserExists(System.String)
   name: UserExists(String)
   href: api/KS.Login.UserManagement.html#KS_Login_UserManagement_UserExists_System_String_
