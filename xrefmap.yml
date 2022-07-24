@@ -1296,6 +1296,57 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.ColorTools.TryParseColor
   nameWithType: ColorTools.TryParseColor
+- uid: KS.ConsoleBase.ColorTools.TrySetColors(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
+  name: TrySetColors(String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_TrySetColors_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_
+  commentId: M:KS.ConsoleBase.ColorTools.TrySetColors(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
+  fullName: KS.ConsoleBase.ColorTools.TrySetColors(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String)
+  nameWithType: ColorTools.TrySetColors(String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String)
+- uid: KS.ConsoleBase.ColorTools.TrySetColors*
+  name: TrySetColors
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_TrySetColors_
+  commentId: Overload:KS.ConsoleBase.ColorTools.TrySetColors
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ColorTools.TrySetColors
+  nameWithType: ColorTools.TrySetColors
+- uid: KS.ConsoleBase.ColorTools.TrySetConsoleColor(KS.ConsoleBase.Color,System.Boolean)
+  name: TrySetConsoleColor(Color, Boolean)
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_TrySetConsoleColor_KS_ConsoleBase_Color_System_Boolean_
+  commentId: M:KS.ConsoleBase.ColorTools.TrySetConsoleColor(KS.ConsoleBase.Color,System.Boolean)
+  fullName: KS.ConsoleBase.ColorTools.TrySetConsoleColor(KS.ConsoleBase.Color, System.Boolean)
+  nameWithType: ColorTools.TrySetConsoleColor(Color, Boolean)
+- uid: KS.ConsoleBase.ColorTools.TrySetConsoleColor(KS.ConsoleBase.ColorTools.ColTypes)
+  name: TrySetConsoleColor(ColorTools.ColTypes)
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_TrySetConsoleColor_KS_ConsoleBase_ColorTools_ColTypes_
+  commentId: M:KS.ConsoleBase.ColorTools.TrySetConsoleColor(KS.ConsoleBase.ColorTools.ColTypes)
+  fullName: KS.ConsoleBase.ColorTools.TrySetConsoleColor(KS.ConsoleBase.ColorTools.ColTypes)
+  nameWithType: ColorTools.TrySetConsoleColor(ColorTools.ColTypes)
+- uid: KS.ConsoleBase.ColorTools.TrySetConsoleColor(KS.ConsoleBase.ColorTools.ColTypes,System.Boolean)
+  name: TrySetConsoleColor(ColorTools.ColTypes, Boolean)
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_TrySetConsoleColor_KS_ConsoleBase_ColorTools_ColTypes_System_Boolean_
+  commentId: M:KS.ConsoleBase.ColorTools.TrySetConsoleColor(KS.ConsoleBase.ColorTools.ColTypes,System.Boolean)
+  fullName: KS.ConsoleBase.ColorTools.TrySetConsoleColor(KS.ConsoleBase.ColorTools.ColTypes, System.Boolean)
+  nameWithType: ColorTools.TrySetConsoleColor(ColorTools.ColTypes, Boolean)
+- uid: KS.ConsoleBase.ColorTools.TrySetConsoleColor*
+  name: TrySetConsoleColor
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_TrySetConsoleColor_
+  commentId: Overload:KS.ConsoleBase.ColorTools.TrySetConsoleColor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ColorTools.TrySetConsoleColor
+  nameWithType: ColorTools.TrySetConsoleColor
+- uid: KS.ConsoleBase.ColorTools.TrySetInputColor
+  name: TrySetInputColor()
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_TrySetInputColor
+  commentId: M:KS.ConsoleBase.ColorTools.TrySetInputColor
+  fullName: KS.ConsoleBase.ColorTools.TrySetInputColor()
+  nameWithType: ColorTools.TrySetInputColor()
+- uid: KS.ConsoleBase.ColorTools.TrySetInputColor*
+  name: TrySetInputColor
+  href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_TrySetInputColor_
+  commentId: Overload:KS.ConsoleBase.ColorTools.TrySetInputColor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ColorTools.TrySetInputColor
+  nameWithType: ColorTools.TrySetInputColor
 - uid: KS.ConsoleBase.ColorTools.UncontKernelErrorColor
   name: UncontKernelErrorColor
   href: api/KS.ConsoleBase.ColorTools.html#KS_ConsoleBase_ColorTools_UncontKernelErrorColor
@@ -3892,6 +3943,19 @@ references:
   commentId: F:KS.ConsoleBase.Themes.ThemeTools.Themes
   fullName: KS.ConsoleBase.Themes.ThemeTools.Themes
   nameWithType: ThemeTools.Themes
+- uid: KS.ConsoleBase.Themes.ThemeTools.TrySetColorsTheme(KS.ConsoleBase.Themes.ThemeInfo)
+  name: TrySetColorsTheme(ThemeInfo)
+  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_TrySetColorsTheme_KS_ConsoleBase_Themes_ThemeInfo_
+  commentId: M:KS.ConsoleBase.Themes.ThemeTools.TrySetColorsTheme(KS.ConsoleBase.Themes.ThemeInfo)
+  fullName: KS.ConsoleBase.Themes.ThemeTools.TrySetColorsTheme(KS.ConsoleBase.Themes.ThemeInfo)
+  nameWithType: ThemeTools.TrySetColorsTheme(ThemeInfo)
+- uid: KS.ConsoleBase.Themes.ThemeTools.TrySetColorsTheme*
+  name: TrySetColorsTheme
+  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_TrySetColorsTheme_
+  commentId: Overload:KS.ConsoleBase.Themes.ThemeTools.TrySetColorsTheme
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Themes.ThemeTools.TrySetColorsTheme
+  nameWithType: ThemeTools.TrySetColorsTheme
 - uid: KS.Files
   name: KS.Files
   href: api/KS.Files.html
