@@ -4818,7 +4818,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Scripting.Conditions.BaseCondition.html",
-          "hash": "XQ2fWSBeKDthubYqgrbRULh7oXx4njiRZ33v9dQ3Qy4="
+          "hash": "Y6cnNIe/CRb7T8UsfDrp5U4VDwjOCbDPY5wofTQXveM="
         }
       },
       "is_incremental": false,
@@ -4934,6 +4934,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Scripting.Conditions.Types.InvalidFileNameCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Scripting.Conditions.Types.InvalidFileNameCondition.html",
+          "hash": "Vp50jCFIqUsmVOxZT4xttVL0+IYIxD9RlniovsQp4us="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Scripting.Conditions.Types.InvalidPathCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Scripting.Conditions.Types.InvalidPathCondition.html",
+          "hash": "/5xc91LPvLhAL7J6Aia+rNVPWzY7qLKsbthLVKQZv4k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Scripting.Conditions.Types.LessThanCondition.yml",
       "output": {
         ".html": {
@@ -4994,11 +5018,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Scripting.Conditions.Types.ValidFileNameCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Scripting.Conditions.Types.ValidFileNameCondition.html",
+          "hash": "nernJOP+p0qTy5kuCVK7y4ROQ/rtdb498lxcx9CdGq8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Scripting.Conditions.Types.ValidPathCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Scripting.Conditions.Types.ValidPathCondition.html",
+          "hash": "zZQh3wl2QL1Cw+1f58sxx/mxFnBTBg8x+27jSASO/Eg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Scripting.Conditions.Types.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Scripting.Conditions.Types.html",
-          "hash": "TEfVstUJ39WDPUAwWRRj0BlF2pAUFxHvJhHJPIJh/Zw="
+          "hash": "l3kLsDpWx8C8x3vKiEIYGloOCaHSGH+HZIoB9y82Q/U="
         }
       },
       "is_incremental": false,
@@ -5010,7 +5058,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Scripting.Conditions.UESHConditional.html",
-          "hash": "tjA29I7A+2PgRUEnPaKq5AVQ8T33HvJtrdP6ge1Awz0="
+          "hash": "cUUx3//AB7QH0uX4IDLerzMyW+mnnIs42x2lV0W+IKM="
         }
       },
       "is_incremental": false,
@@ -5070,7 +5118,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Scripting.UESHOperators.html",
-          "hash": "7TQwEuA9sBg/KudsRFkiI/GPI+S8h9vBqbjrorygqlo="
+          "hash": "qDNQ6MX4kjn61pMYXayn+4WBUbz6ZPANMd0dmqgVicM="
         }
       },
       "is_incremental": false,
@@ -5622,7 +5670,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "RB0YwT66O03F6HHRm49MvBp+AIre55zEg5d0M5Vyydk="
+          "hash": "dUvbzsamMcaIWLSXaDwbTW+MCCx4CzvxrXmJCvnBOHU="
         }
       },
       "is_incremental": false,
@@ -8502,7 +8550,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/ueshdevelopment/UESH-Conditions.html",
-          "hash": "JAg+/xQirheHsOWOoJpu87th4yjxnPaRUf/W4Oguy4g="
+          "hash": "qpKpTREicV1qJO+ybZRoabDe3uXswVhV2Jg9t7o86Uk="
         }
       },
       "is_incremental": false,
@@ -8553,7 +8601,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 467,
+          "total_file_count": 471,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

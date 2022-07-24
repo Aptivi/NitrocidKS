@@ -33686,6 +33686,170 @@ references:
   fullName.vb: KS.Scripting.Conditions.Types.GreaterThanOrEqualCondition.IsConditionSatisfied
   nameWithType: GreaterThanOrEqualCondition.ICondition.IsConditionSatisfied
   nameWithType.vb: GreaterThanOrEqualCondition.IsConditionSatisfied
+- uid: KS.Scripting.Conditions.Types.InvalidFileNameCondition
+  name: InvalidFileNameCondition
+  href: api/KS.Scripting.Conditions.Types.InvalidFileNameCondition.html
+  commentId: T:KS.Scripting.Conditions.Types.InvalidFileNameCondition
+  fullName: KS.Scripting.Conditions.Types.InvalidFileNameCondition
+  nameWithType: InvalidFileNameCondition
+- uid: KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionName
+  name: ICondition.ConditionName
+  href: api/KS.Scripting.Conditions.Types.InvalidFileNameCondition.html#KS_Scripting_Conditions_Types_InvalidFileNameCondition_ConditionName
+  commentId: P:KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionName
+  name.vb: ConditionName
+  fullName: KS.Scripting.Conditions.Types.InvalidFileNameCondition.KS.Scripting.Conditions.ICondition.ConditionName
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionName
+  nameWithType: InvalidFileNameCondition.ICondition.ConditionName
+  nameWithType.vb: InvalidFileNameCondition.ConditionName
+- uid: KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionName*
+  name: ICondition.ConditionName
+  href: api/KS.Scripting.Conditions.Types.InvalidFileNameCondition.html#KS_Scripting_Conditions_Types_InvalidFileNameCondition_ConditionName_
+  commentId: Overload:KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionName
+  isSpec: "True"
+  name.vb: ConditionName
+  fullName: KS.Scripting.Conditions.Types.InvalidFileNameCondition.KS.Scripting.Conditions.ICondition.ConditionName
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionName
+  nameWithType: InvalidFileNameCondition.ICondition.ConditionName
+  nameWithType.vb: InvalidFileNameCondition.ConditionName
+- uid: KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionPosition
+  name: ICondition.ConditionPosition
+  href: api/KS.Scripting.Conditions.Types.InvalidFileNameCondition.html#KS_Scripting_Conditions_Types_InvalidFileNameCondition_ConditionPosition
+  commentId: P:KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionPosition
+  name.vb: ConditionPosition
+  fullName: KS.Scripting.Conditions.Types.InvalidFileNameCondition.KS.Scripting.Conditions.ICondition.ConditionPosition
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionPosition
+  nameWithType: InvalidFileNameCondition.ICondition.ConditionPosition
+  nameWithType.vb: InvalidFileNameCondition.ConditionPosition
+- uid: KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionPosition*
+  name: ICondition.ConditionPosition
+  href: api/KS.Scripting.Conditions.Types.InvalidFileNameCondition.html#KS_Scripting_Conditions_Types_InvalidFileNameCondition_ConditionPosition_
+  commentId: Overload:KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionPosition
+  isSpec: "True"
+  name.vb: ConditionPosition
+  fullName: KS.Scripting.Conditions.Types.InvalidFileNameCondition.KS.Scripting.Conditions.ICondition.ConditionPosition
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionPosition
+  nameWithType: InvalidFileNameCondition.ICondition.ConditionPosition
+  nameWithType.vb: InvalidFileNameCondition.ConditionPosition
+- uid: KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionRequiredArguments
+  name: ICondition.ConditionRequiredArguments
+  href: api/KS.Scripting.Conditions.Types.InvalidFileNameCondition.html#KS_Scripting_Conditions_Types_InvalidFileNameCondition_ConditionRequiredArguments
+  commentId: P:KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionRequiredArguments
+  name.vb: ConditionRequiredArguments
+  fullName: KS.Scripting.Conditions.Types.InvalidFileNameCondition.KS.Scripting.Conditions.ICondition.ConditionRequiredArguments
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionRequiredArguments
+  nameWithType: InvalidFileNameCondition.ICondition.ConditionRequiredArguments
+  nameWithType.vb: InvalidFileNameCondition.ConditionRequiredArguments
+- uid: KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionRequiredArguments*
+  name: ICondition.ConditionRequiredArguments
+  href: api/KS.Scripting.Conditions.Types.InvalidFileNameCondition.html#KS_Scripting_Conditions_Types_InvalidFileNameCondition_ConditionRequiredArguments_
+  commentId: Overload:KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionRequiredArguments
+  isSpec: "True"
+  name.vb: ConditionRequiredArguments
+  fullName: KS.Scripting.Conditions.Types.InvalidFileNameCondition.KS.Scripting.Conditions.ICondition.ConditionRequiredArguments
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidFileNameCondition.ConditionRequiredArguments
+  nameWithType: InvalidFileNameCondition.ICondition.ConditionRequiredArguments
+  nameWithType.vb: InvalidFileNameCondition.ConditionRequiredArguments
+- uid: KS.Scripting.Conditions.Types.InvalidFileNameCondition.IsConditionSatisfied(System.String,System.String)
+  name: ICondition.IsConditionSatisfied(String, String)
+  href: api/KS.Scripting.Conditions.Types.InvalidFileNameCondition.html#KS_Scripting_Conditions_Types_InvalidFileNameCondition_IsConditionSatisfied_System_String_System_String_
+  commentId: M:KS.Scripting.Conditions.Types.InvalidFileNameCondition.IsConditionSatisfied(System.String,System.String)
+  name.vb: IsConditionSatisfied(String, String)
+  fullName: KS.Scripting.Conditions.Types.InvalidFileNameCondition.KS.Scripting.Conditions.ICondition.IsConditionSatisfied(System.String, System.String)
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidFileNameCondition.IsConditionSatisfied(System.String, System.String)
+  nameWithType: InvalidFileNameCondition.ICondition.IsConditionSatisfied(String, String)
+  nameWithType.vb: InvalidFileNameCondition.IsConditionSatisfied(String, String)
+- uid: KS.Scripting.Conditions.Types.InvalidFileNameCondition.IsConditionSatisfied*
+  name: ICondition.IsConditionSatisfied
+  href: api/KS.Scripting.Conditions.Types.InvalidFileNameCondition.html#KS_Scripting_Conditions_Types_InvalidFileNameCondition_IsConditionSatisfied_
+  commentId: Overload:KS.Scripting.Conditions.Types.InvalidFileNameCondition.IsConditionSatisfied
+  isSpec: "True"
+  name.vb: IsConditionSatisfied
+  fullName: KS.Scripting.Conditions.Types.InvalidFileNameCondition.KS.Scripting.Conditions.ICondition.IsConditionSatisfied
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidFileNameCondition.IsConditionSatisfied
+  nameWithType: InvalidFileNameCondition.ICondition.IsConditionSatisfied
+  nameWithType.vb: InvalidFileNameCondition.IsConditionSatisfied
+- uid: KS.Scripting.Conditions.Types.InvalidPathCondition
+  name: InvalidPathCondition
+  href: api/KS.Scripting.Conditions.Types.InvalidPathCondition.html
+  commentId: T:KS.Scripting.Conditions.Types.InvalidPathCondition
+  fullName: KS.Scripting.Conditions.Types.InvalidPathCondition
+  nameWithType: InvalidPathCondition
+- uid: KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionName
+  name: ICondition.ConditionName
+  href: api/KS.Scripting.Conditions.Types.InvalidPathCondition.html#KS_Scripting_Conditions_Types_InvalidPathCondition_ConditionName
+  commentId: P:KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionName
+  name.vb: ConditionName
+  fullName: KS.Scripting.Conditions.Types.InvalidPathCondition.KS.Scripting.Conditions.ICondition.ConditionName
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionName
+  nameWithType: InvalidPathCondition.ICondition.ConditionName
+  nameWithType.vb: InvalidPathCondition.ConditionName
+- uid: KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionName*
+  name: ICondition.ConditionName
+  href: api/KS.Scripting.Conditions.Types.InvalidPathCondition.html#KS_Scripting_Conditions_Types_InvalidPathCondition_ConditionName_
+  commentId: Overload:KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionName
+  isSpec: "True"
+  name.vb: ConditionName
+  fullName: KS.Scripting.Conditions.Types.InvalidPathCondition.KS.Scripting.Conditions.ICondition.ConditionName
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionName
+  nameWithType: InvalidPathCondition.ICondition.ConditionName
+  nameWithType.vb: InvalidPathCondition.ConditionName
+- uid: KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionPosition
+  name: ICondition.ConditionPosition
+  href: api/KS.Scripting.Conditions.Types.InvalidPathCondition.html#KS_Scripting_Conditions_Types_InvalidPathCondition_ConditionPosition
+  commentId: P:KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionPosition
+  name.vb: ConditionPosition
+  fullName: KS.Scripting.Conditions.Types.InvalidPathCondition.KS.Scripting.Conditions.ICondition.ConditionPosition
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionPosition
+  nameWithType: InvalidPathCondition.ICondition.ConditionPosition
+  nameWithType.vb: InvalidPathCondition.ConditionPosition
+- uid: KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionPosition*
+  name: ICondition.ConditionPosition
+  href: api/KS.Scripting.Conditions.Types.InvalidPathCondition.html#KS_Scripting_Conditions_Types_InvalidPathCondition_ConditionPosition_
+  commentId: Overload:KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionPosition
+  isSpec: "True"
+  name.vb: ConditionPosition
+  fullName: KS.Scripting.Conditions.Types.InvalidPathCondition.KS.Scripting.Conditions.ICondition.ConditionPosition
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionPosition
+  nameWithType: InvalidPathCondition.ICondition.ConditionPosition
+  nameWithType.vb: InvalidPathCondition.ConditionPosition
+- uid: KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionRequiredArguments
+  name: ICondition.ConditionRequiredArguments
+  href: api/KS.Scripting.Conditions.Types.InvalidPathCondition.html#KS_Scripting_Conditions_Types_InvalidPathCondition_ConditionRequiredArguments
+  commentId: P:KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionRequiredArguments
+  name.vb: ConditionRequiredArguments
+  fullName: KS.Scripting.Conditions.Types.InvalidPathCondition.KS.Scripting.Conditions.ICondition.ConditionRequiredArguments
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionRequiredArguments
+  nameWithType: InvalidPathCondition.ICondition.ConditionRequiredArguments
+  nameWithType.vb: InvalidPathCondition.ConditionRequiredArguments
+- uid: KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionRequiredArguments*
+  name: ICondition.ConditionRequiredArguments
+  href: api/KS.Scripting.Conditions.Types.InvalidPathCondition.html#KS_Scripting_Conditions_Types_InvalidPathCondition_ConditionRequiredArguments_
+  commentId: Overload:KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionRequiredArguments
+  isSpec: "True"
+  name.vb: ConditionRequiredArguments
+  fullName: KS.Scripting.Conditions.Types.InvalidPathCondition.KS.Scripting.Conditions.ICondition.ConditionRequiredArguments
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidPathCondition.ConditionRequiredArguments
+  nameWithType: InvalidPathCondition.ICondition.ConditionRequiredArguments
+  nameWithType.vb: InvalidPathCondition.ConditionRequiredArguments
+- uid: KS.Scripting.Conditions.Types.InvalidPathCondition.IsConditionSatisfied(System.String,System.String)
+  name: ICondition.IsConditionSatisfied(String, String)
+  href: api/KS.Scripting.Conditions.Types.InvalidPathCondition.html#KS_Scripting_Conditions_Types_InvalidPathCondition_IsConditionSatisfied_System_String_System_String_
+  commentId: M:KS.Scripting.Conditions.Types.InvalidPathCondition.IsConditionSatisfied(System.String,System.String)
+  name.vb: IsConditionSatisfied(String, String)
+  fullName: KS.Scripting.Conditions.Types.InvalidPathCondition.KS.Scripting.Conditions.ICondition.IsConditionSatisfied(System.String, System.String)
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidPathCondition.IsConditionSatisfied(System.String, System.String)
+  nameWithType: InvalidPathCondition.ICondition.IsConditionSatisfied(String, String)
+  nameWithType.vb: InvalidPathCondition.IsConditionSatisfied(String, String)
+- uid: KS.Scripting.Conditions.Types.InvalidPathCondition.IsConditionSatisfied*
+  name: ICondition.IsConditionSatisfied
+  href: api/KS.Scripting.Conditions.Types.InvalidPathCondition.html#KS_Scripting_Conditions_Types_InvalidPathCondition_IsConditionSatisfied_
+  commentId: Overload:KS.Scripting.Conditions.Types.InvalidPathCondition.IsConditionSatisfied
+  isSpec: "True"
+  name.vb: IsConditionSatisfied
+  fullName: KS.Scripting.Conditions.Types.InvalidPathCondition.KS.Scripting.Conditions.ICondition.IsConditionSatisfied
+  fullName.vb: KS.Scripting.Conditions.Types.InvalidPathCondition.IsConditionSatisfied
+  nameWithType: InvalidPathCondition.ICondition.IsConditionSatisfied
+  nameWithType.vb: InvalidPathCondition.IsConditionSatisfied
 - uid: KS.Scripting.Conditions.Types.LessThanCondition
   name: LessThanCondition
   href: api/KS.Scripting.Conditions.Types.LessThanCondition.html
@@ -34020,6 +34184,170 @@ references:
   fullName.vb: KS.Scripting.Conditions.Types.NotEqualsCondition.IsConditionSatisfied
   nameWithType: NotEqualsCondition.ICondition.IsConditionSatisfied
   nameWithType.vb: NotEqualsCondition.IsConditionSatisfied
+- uid: KS.Scripting.Conditions.Types.ValidFileNameCondition
+  name: ValidFileNameCondition
+  href: api/KS.Scripting.Conditions.Types.ValidFileNameCondition.html
+  commentId: T:KS.Scripting.Conditions.Types.ValidFileNameCondition
+  fullName: KS.Scripting.Conditions.Types.ValidFileNameCondition
+  nameWithType: ValidFileNameCondition
+- uid: KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionName
+  name: ICondition.ConditionName
+  href: api/KS.Scripting.Conditions.Types.ValidFileNameCondition.html#KS_Scripting_Conditions_Types_ValidFileNameCondition_ConditionName
+  commentId: P:KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionName
+  name.vb: ConditionName
+  fullName: KS.Scripting.Conditions.Types.ValidFileNameCondition.KS.Scripting.Conditions.ICondition.ConditionName
+  fullName.vb: KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionName
+  nameWithType: ValidFileNameCondition.ICondition.ConditionName
+  nameWithType.vb: ValidFileNameCondition.ConditionName
+- uid: KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionName*
+  name: ICondition.ConditionName
+  href: api/KS.Scripting.Conditions.Types.ValidFileNameCondition.html#KS_Scripting_Conditions_Types_ValidFileNameCondition_ConditionName_
+  commentId: Overload:KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionName
+  isSpec: "True"
+  name.vb: ConditionName
+  fullName: KS.Scripting.Conditions.Types.ValidFileNameCondition.KS.Scripting.Conditions.ICondition.ConditionName
+  fullName.vb: KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionName
+  nameWithType: ValidFileNameCondition.ICondition.ConditionName
+  nameWithType.vb: ValidFileNameCondition.ConditionName
+- uid: KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionPosition
+  name: ICondition.ConditionPosition
+  href: api/KS.Scripting.Conditions.Types.ValidFileNameCondition.html#KS_Scripting_Conditions_Types_ValidFileNameCondition_ConditionPosition
+  commentId: P:KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionPosition
+  name.vb: ConditionPosition
+  fullName: KS.Scripting.Conditions.Types.ValidFileNameCondition.KS.Scripting.Conditions.ICondition.ConditionPosition
+  fullName.vb: KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionPosition
+  nameWithType: ValidFileNameCondition.ICondition.ConditionPosition
+  nameWithType.vb: ValidFileNameCondition.ConditionPosition
+- uid: KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionPosition*
+  name: ICondition.ConditionPosition
+  href: api/KS.Scripting.Conditions.Types.ValidFileNameCondition.html#KS_Scripting_Conditions_Types_ValidFileNameCondition_ConditionPosition_
+  commentId: Overload:KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionPosition
+  isSpec: "True"
+  name.vb: ConditionPosition
+  fullName: KS.Scripting.Conditions.Types.ValidFileNameCondition.KS.Scripting.Conditions.ICondition.ConditionPosition
+  fullName.vb: KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionPosition
+  nameWithType: ValidFileNameCondition.ICondition.ConditionPosition
+  nameWithType.vb: ValidFileNameCondition.ConditionPosition
+- uid: KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionRequiredArguments
+  name: ICondition.ConditionRequiredArguments
+  href: api/KS.Scripting.Conditions.Types.ValidFileNameCondition.html#KS_Scripting_Conditions_Types_ValidFileNameCondition_ConditionRequiredArguments
+  commentId: P:KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionRequiredArguments
+  name.vb: ConditionRequiredArguments
+  fullName: KS.Scripting.Conditions.Types.ValidFileNameCondition.KS.Scripting.Conditions.ICondition.ConditionRequiredArguments
+  fullName.vb: KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionRequiredArguments
+  nameWithType: ValidFileNameCondition.ICondition.ConditionRequiredArguments
+  nameWithType.vb: ValidFileNameCondition.ConditionRequiredArguments
+- uid: KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionRequiredArguments*
+  name: ICondition.ConditionRequiredArguments
+  href: api/KS.Scripting.Conditions.Types.ValidFileNameCondition.html#KS_Scripting_Conditions_Types_ValidFileNameCondition_ConditionRequiredArguments_
+  commentId: Overload:KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionRequiredArguments
+  isSpec: "True"
+  name.vb: ConditionRequiredArguments
+  fullName: KS.Scripting.Conditions.Types.ValidFileNameCondition.KS.Scripting.Conditions.ICondition.ConditionRequiredArguments
+  fullName.vb: KS.Scripting.Conditions.Types.ValidFileNameCondition.ConditionRequiredArguments
+  nameWithType: ValidFileNameCondition.ICondition.ConditionRequiredArguments
+  nameWithType.vb: ValidFileNameCondition.ConditionRequiredArguments
+- uid: KS.Scripting.Conditions.Types.ValidFileNameCondition.IsConditionSatisfied(System.String,System.String)
+  name: ICondition.IsConditionSatisfied(String, String)
+  href: api/KS.Scripting.Conditions.Types.ValidFileNameCondition.html#KS_Scripting_Conditions_Types_ValidFileNameCondition_IsConditionSatisfied_System_String_System_String_
+  commentId: M:KS.Scripting.Conditions.Types.ValidFileNameCondition.IsConditionSatisfied(System.String,System.String)
+  name.vb: IsConditionSatisfied(String, String)
+  fullName: KS.Scripting.Conditions.Types.ValidFileNameCondition.KS.Scripting.Conditions.ICondition.IsConditionSatisfied(System.String, System.String)
+  fullName.vb: KS.Scripting.Conditions.Types.ValidFileNameCondition.IsConditionSatisfied(System.String, System.String)
+  nameWithType: ValidFileNameCondition.ICondition.IsConditionSatisfied(String, String)
+  nameWithType.vb: ValidFileNameCondition.IsConditionSatisfied(String, String)
+- uid: KS.Scripting.Conditions.Types.ValidFileNameCondition.IsConditionSatisfied*
+  name: ICondition.IsConditionSatisfied
+  href: api/KS.Scripting.Conditions.Types.ValidFileNameCondition.html#KS_Scripting_Conditions_Types_ValidFileNameCondition_IsConditionSatisfied_
+  commentId: Overload:KS.Scripting.Conditions.Types.ValidFileNameCondition.IsConditionSatisfied
+  isSpec: "True"
+  name.vb: IsConditionSatisfied
+  fullName: KS.Scripting.Conditions.Types.ValidFileNameCondition.KS.Scripting.Conditions.ICondition.IsConditionSatisfied
+  fullName.vb: KS.Scripting.Conditions.Types.ValidFileNameCondition.IsConditionSatisfied
+  nameWithType: ValidFileNameCondition.ICondition.IsConditionSatisfied
+  nameWithType.vb: ValidFileNameCondition.IsConditionSatisfied
+- uid: KS.Scripting.Conditions.Types.ValidPathCondition
+  name: ValidPathCondition
+  href: api/KS.Scripting.Conditions.Types.ValidPathCondition.html
+  commentId: T:KS.Scripting.Conditions.Types.ValidPathCondition
+  fullName: KS.Scripting.Conditions.Types.ValidPathCondition
+  nameWithType: ValidPathCondition
+- uid: KS.Scripting.Conditions.Types.ValidPathCondition.ConditionName
+  name: ICondition.ConditionName
+  href: api/KS.Scripting.Conditions.Types.ValidPathCondition.html#KS_Scripting_Conditions_Types_ValidPathCondition_ConditionName
+  commentId: P:KS.Scripting.Conditions.Types.ValidPathCondition.ConditionName
+  name.vb: ConditionName
+  fullName: KS.Scripting.Conditions.Types.ValidPathCondition.KS.Scripting.Conditions.ICondition.ConditionName
+  fullName.vb: KS.Scripting.Conditions.Types.ValidPathCondition.ConditionName
+  nameWithType: ValidPathCondition.ICondition.ConditionName
+  nameWithType.vb: ValidPathCondition.ConditionName
+- uid: KS.Scripting.Conditions.Types.ValidPathCondition.ConditionName*
+  name: ICondition.ConditionName
+  href: api/KS.Scripting.Conditions.Types.ValidPathCondition.html#KS_Scripting_Conditions_Types_ValidPathCondition_ConditionName_
+  commentId: Overload:KS.Scripting.Conditions.Types.ValidPathCondition.ConditionName
+  isSpec: "True"
+  name.vb: ConditionName
+  fullName: KS.Scripting.Conditions.Types.ValidPathCondition.KS.Scripting.Conditions.ICondition.ConditionName
+  fullName.vb: KS.Scripting.Conditions.Types.ValidPathCondition.ConditionName
+  nameWithType: ValidPathCondition.ICondition.ConditionName
+  nameWithType.vb: ValidPathCondition.ConditionName
+- uid: KS.Scripting.Conditions.Types.ValidPathCondition.ConditionPosition
+  name: ICondition.ConditionPosition
+  href: api/KS.Scripting.Conditions.Types.ValidPathCondition.html#KS_Scripting_Conditions_Types_ValidPathCondition_ConditionPosition
+  commentId: P:KS.Scripting.Conditions.Types.ValidPathCondition.ConditionPosition
+  name.vb: ConditionPosition
+  fullName: KS.Scripting.Conditions.Types.ValidPathCondition.KS.Scripting.Conditions.ICondition.ConditionPosition
+  fullName.vb: KS.Scripting.Conditions.Types.ValidPathCondition.ConditionPosition
+  nameWithType: ValidPathCondition.ICondition.ConditionPosition
+  nameWithType.vb: ValidPathCondition.ConditionPosition
+- uid: KS.Scripting.Conditions.Types.ValidPathCondition.ConditionPosition*
+  name: ICondition.ConditionPosition
+  href: api/KS.Scripting.Conditions.Types.ValidPathCondition.html#KS_Scripting_Conditions_Types_ValidPathCondition_ConditionPosition_
+  commentId: Overload:KS.Scripting.Conditions.Types.ValidPathCondition.ConditionPosition
+  isSpec: "True"
+  name.vb: ConditionPosition
+  fullName: KS.Scripting.Conditions.Types.ValidPathCondition.KS.Scripting.Conditions.ICondition.ConditionPosition
+  fullName.vb: KS.Scripting.Conditions.Types.ValidPathCondition.ConditionPosition
+  nameWithType: ValidPathCondition.ICondition.ConditionPosition
+  nameWithType.vb: ValidPathCondition.ConditionPosition
+- uid: KS.Scripting.Conditions.Types.ValidPathCondition.ConditionRequiredArguments
+  name: ICondition.ConditionRequiredArguments
+  href: api/KS.Scripting.Conditions.Types.ValidPathCondition.html#KS_Scripting_Conditions_Types_ValidPathCondition_ConditionRequiredArguments
+  commentId: P:KS.Scripting.Conditions.Types.ValidPathCondition.ConditionRequiredArguments
+  name.vb: ConditionRequiredArguments
+  fullName: KS.Scripting.Conditions.Types.ValidPathCondition.KS.Scripting.Conditions.ICondition.ConditionRequiredArguments
+  fullName.vb: KS.Scripting.Conditions.Types.ValidPathCondition.ConditionRequiredArguments
+  nameWithType: ValidPathCondition.ICondition.ConditionRequiredArguments
+  nameWithType.vb: ValidPathCondition.ConditionRequiredArguments
+- uid: KS.Scripting.Conditions.Types.ValidPathCondition.ConditionRequiredArguments*
+  name: ICondition.ConditionRequiredArguments
+  href: api/KS.Scripting.Conditions.Types.ValidPathCondition.html#KS_Scripting_Conditions_Types_ValidPathCondition_ConditionRequiredArguments_
+  commentId: Overload:KS.Scripting.Conditions.Types.ValidPathCondition.ConditionRequiredArguments
+  isSpec: "True"
+  name.vb: ConditionRequiredArguments
+  fullName: KS.Scripting.Conditions.Types.ValidPathCondition.KS.Scripting.Conditions.ICondition.ConditionRequiredArguments
+  fullName.vb: KS.Scripting.Conditions.Types.ValidPathCondition.ConditionRequiredArguments
+  nameWithType: ValidPathCondition.ICondition.ConditionRequiredArguments
+  nameWithType.vb: ValidPathCondition.ConditionRequiredArguments
+- uid: KS.Scripting.Conditions.Types.ValidPathCondition.IsConditionSatisfied(System.String,System.String)
+  name: ICondition.IsConditionSatisfied(String, String)
+  href: api/KS.Scripting.Conditions.Types.ValidPathCondition.html#KS_Scripting_Conditions_Types_ValidPathCondition_IsConditionSatisfied_System_String_System_String_
+  commentId: M:KS.Scripting.Conditions.Types.ValidPathCondition.IsConditionSatisfied(System.String,System.String)
+  name.vb: IsConditionSatisfied(String, String)
+  fullName: KS.Scripting.Conditions.Types.ValidPathCondition.KS.Scripting.Conditions.ICondition.IsConditionSatisfied(System.String, System.String)
+  fullName.vb: KS.Scripting.Conditions.Types.ValidPathCondition.IsConditionSatisfied(System.String, System.String)
+  nameWithType: ValidPathCondition.ICondition.IsConditionSatisfied(String, String)
+  nameWithType.vb: ValidPathCondition.IsConditionSatisfied(String, String)
+- uid: KS.Scripting.Conditions.Types.ValidPathCondition.IsConditionSatisfied*
+  name: ICondition.IsConditionSatisfied
+  href: api/KS.Scripting.Conditions.Types.ValidPathCondition.html#KS_Scripting_Conditions_Types_ValidPathCondition_IsConditionSatisfied_
+  commentId: Overload:KS.Scripting.Conditions.Types.ValidPathCondition.IsConditionSatisfied
+  isSpec: "True"
+  name.vb: IsConditionSatisfied
+  fullName: KS.Scripting.Conditions.Types.ValidPathCondition.KS.Scripting.Conditions.ICondition.IsConditionSatisfied
+  fullName.vb: KS.Scripting.Conditions.Types.ValidPathCondition.IsConditionSatisfied
+  nameWithType: ValidPathCondition.ICondition.IsConditionSatisfied
+  nameWithType.vb: ValidPathCondition.IsConditionSatisfied
 - uid: KS.Scripting.Conditions.UESHConditional
   name: UESHConditional
   href: api/KS.Scripting.Conditions.UESHConditional.html
@@ -34267,6 +34595,32 @@ references:
   isSpec: "True"
   fullName: KS.Scripting.UESHOperators.UESHVariableGreaterThanOrEqual
   nameWithType: UESHOperators.UESHVariableGreaterThanOrEqual
+- uid: KS.Scripting.UESHOperators.UESHVariableInvalidFileName(System.String)
+  name: UESHVariableInvalidFileName(String)
+  href: api/KS.Scripting.UESHOperators.html#KS_Scripting_UESHOperators_UESHVariableInvalidFileName_System_String_
+  commentId: M:KS.Scripting.UESHOperators.UESHVariableInvalidFileName(System.String)
+  fullName: KS.Scripting.UESHOperators.UESHVariableInvalidFileName(System.String)
+  nameWithType: UESHOperators.UESHVariableInvalidFileName(String)
+- uid: KS.Scripting.UESHOperators.UESHVariableInvalidFileName*
+  name: UESHVariableInvalidFileName
+  href: api/KS.Scripting.UESHOperators.html#KS_Scripting_UESHOperators_UESHVariableInvalidFileName_
+  commentId: Overload:KS.Scripting.UESHOperators.UESHVariableInvalidFileName
+  isSpec: "True"
+  fullName: KS.Scripting.UESHOperators.UESHVariableInvalidFileName
+  nameWithType: UESHOperators.UESHVariableInvalidFileName
+- uid: KS.Scripting.UESHOperators.UESHVariableInvalidPath(System.String)
+  name: UESHVariableInvalidPath(String)
+  href: api/KS.Scripting.UESHOperators.html#KS_Scripting_UESHOperators_UESHVariableInvalidPath_System_String_
+  commentId: M:KS.Scripting.UESHOperators.UESHVariableInvalidPath(System.String)
+  fullName: KS.Scripting.UESHOperators.UESHVariableInvalidPath(System.String)
+  nameWithType: UESHOperators.UESHVariableInvalidPath(String)
+- uid: KS.Scripting.UESHOperators.UESHVariableInvalidPath*
+  name: UESHVariableInvalidPath
+  href: api/KS.Scripting.UESHOperators.html#KS_Scripting_UESHOperators_UESHVariableInvalidPath_
+  commentId: Overload:KS.Scripting.UESHOperators.UESHVariableInvalidPath
+  isSpec: "True"
+  fullName: KS.Scripting.UESHOperators.UESHVariableInvalidPath
+  nameWithType: UESHOperators.UESHVariableInvalidPath
 - uid: KS.Scripting.UESHOperators.UESHVariableLessThan(System.String,System.String)
   name: UESHVariableLessThan(String, String)
   href: api/KS.Scripting.UESHOperators.html#KS_Scripting_UESHOperators_UESHVariableLessThan_System_String_System_String_
@@ -34319,6 +34673,32 @@ references:
   isSpec: "True"
   fullName: KS.Scripting.UESHOperators.UESHVariableNotEqual
   nameWithType: UESHOperators.UESHVariableNotEqual
+- uid: KS.Scripting.UESHOperators.UESHVariableValidFileName(System.String)
+  name: UESHVariableValidFileName(String)
+  href: api/KS.Scripting.UESHOperators.html#KS_Scripting_UESHOperators_UESHVariableValidFileName_System_String_
+  commentId: M:KS.Scripting.UESHOperators.UESHVariableValidFileName(System.String)
+  fullName: KS.Scripting.UESHOperators.UESHVariableValidFileName(System.String)
+  nameWithType: UESHOperators.UESHVariableValidFileName(String)
+- uid: KS.Scripting.UESHOperators.UESHVariableValidFileName*
+  name: UESHVariableValidFileName
+  href: api/KS.Scripting.UESHOperators.html#KS_Scripting_UESHOperators_UESHVariableValidFileName_
+  commentId: Overload:KS.Scripting.UESHOperators.UESHVariableValidFileName
+  isSpec: "True"
+  fullName: KS.Scripting.UESHOperators.UESHVariableValidFileName
+  nameWithType: UESHOperators.UESHVariableValidFileName
+- uid: KS.Scripting.UESHOperators.UESHVariableValidPath(System.String)
+  name: UESHVariableValidPath(String)
+  href: api/KS.Scripting.UESHOperators.html#KS_Scripting_UESHOperators_UESHVariableValidPath_System_String_
+  commentId: M:KS.Scripting.UESHOperators.UESHVariableValidPath(System.String)
+  fullName: KS.Scripting.UESHOperators.UESHVariableValidPath(System.String)
+  nameWithType: UESHOperators.UESHVariableValidPath(String)
+- uid: KS.Scripting.UESHOperators.UESHVariableValidPath*
+  name: UESHVariableValidPath
+  href: api/KS.Scripting.UESHOperators.html#KS_Scripting_UESHOperators_UESHVariableValidPath_
+  commentId: Overload:KS.Scripting.UESHOperators.UESHVariableValidPath
+  isSpec: "True"
+  fullName: KS.Scripting.UESHOperators.UESHVariableValidPath
+  nameWithType: UESHOperators.UESHVariableValidPath
 - uid: KS.Scripting.UESHParse
   name: UESHParse
   href: api/KS.Scripting.UESHParse.html
