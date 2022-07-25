@@ -724,6 +724,24 @@
 </ul>
 <h5 id="moved-network-transfer-apis-to-its-own-namespace">Moved network transfer APIs to its own namespace</h5>
 <p>We have moved all network transfer APIs to <code>KS.Network.Transfer</code> to further organize the network APIs.</p>
+<h5 id="moved-color-related-console-apis-to-its-own-namespace">Moved color-related console APIs to its own namespace</h5>
+<p>We have moved all color-related console APIs to <code>KS.ConsoleBase.Themes</code> as it keeps getting expanded.</p>
+<h5 id="moved-input-related-console-apis-to-its-own-namespace">Moved input-related console APIs to its own namespace</h5>
+<p>We have moved all input-related console APIs to <code>KS.ConsoleBase.Inputs</code> as it keeps getting expanded.</p>
+<h5 id="removed-the-progress-and-its-report-positions-from-splashinfo">Removed the progress and its report positions from SplashInfo.</h5>
+<p>The splashes are the ones who are rensponsible for setting their own progress positions.</p>
+<ul>
+<li>Removed properties:
+<ul>
+<li>ProgressWritePositionX</li>
+<li>ProgressWritePositionY</li>
+<li>ProgressReportWritePositionX</li>
+<li>ProgressReportWritePositionY</li>
+</ul>
+</li>
+</ul>
+<h5 id="replaced-commandpromptwrite">Replaced <code>CommandPromptWrite()</code></h5>
+<p><code>CommandPromptWrite()</code> used to be the helper for UESH to write its own prompt, but it's eventually replaced by the more powerful <code>WriteShellPrompt()</code> to accommodate all possible cases, like custom</p>
 </article>
           </div>
           
