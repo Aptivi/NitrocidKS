@@ -5047,6 +5047,19 @@ references:
   isSpec: "True"
   fullName: KS.Files.Paths.InitPaths
   nameWithType: Paths.InitPaths
+- uid: KS.Files.Paths.RetroKSDownloadPath
+  name: RetroKSDownloadPath
+  href: api/KS.Files.Paths.html#KS_Files_Paths_RetroKSDownloadPath
+  commentId: P:KS.Files.Paths.RetroKSDownloadPath
+  fullName: KS.Files.Paths.RetroKSDownloadPath
+  nameWithType: Paths.RetroKSDownloadPath
+- uid: KS.Files.Paths.RetroKSDownloadPath*
+  name: RetroKSDownloadPath
+  href: api/KS.Files.Paths.html#KS_Files_Paths_RetroKSDownloadPath_
+  commentId: Overload:KS.Files.Paths.RetroKSDownloadPath
+  isSpec: "True"
+  fullName: KS.Files.Paths.RetroKSDownloadPath
+  nameWithType: Paths.RetroKSDownloadPath
 - uid: KS.Files.Paths.TempPath
   name: TempPath
   href: api/KS.Files.Paths.html#KS_Files_Paths_TempPath
