@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class CommandExecutor
+    <title>Class CommandManager
    | Kernel Simulator API - Eofla Internals </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class CommandExecutor
+    <meta name="title" content="Class CommandManager
    | Kernel Simulator API - Eofla Internals ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -78,45 +78,40 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="KS.Shell.ShellBase.CommandExecutor">
+            <article class="content wrap" id="_content" data-uid="KS.Shell.ShellBase.Commands.CommandManager">
   
   
-  <h1 id="KS_Shell_ShellBase_CommandExecutor" data-uid="KS.Shell.ShellBase.CommandExecutor" class="text-break">Class CommandExecutor
+  <h1 id="KS_Shell_ShellBase_Commands_CommandManager" data-uid="KS.Shell.ShellBase.Commands.CommandManager" class="text-break">Class CommandManager
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">CommandExecutor</span></div>
-      <div class="level2"><a class="xref" href="KS.Network.RemoteDebug.Interface.RemoteDebugCommandExecutor.html">RemoteDebugCommandExecutor</a></div>
+    <div class="level0"><span class="xref">CommandManager</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="KS.Shell.ShellBase.ICommand.html">ICommand</a></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Shell.ShellBase.html">KS.Shell.ShellBase</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Shell.ShellBase.Commands.html">KS.Shell.ShellBase.Commands</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
-  <h5 id="KS_Shell_ShellBase_CommandExecutor_syntax">Syntax</h5>
+  <h5 id="KS_Shell_ShellBase_Commands_CommandManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class CommandExecutor : ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public class CommandManager</code></pre>
   </div>
-  <h3 id="eii">Explicit Interface Implementations
+  <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_CommandExecutor_Execute_System_String_System_String___System_String___System_String___.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.CommandExecutor.Execute(System.String%2CSystem.String%5B%5D%2CSystem.String%5B%5D%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_Commands_CommandManager_IsCommandFound_System_String_.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Shell/ShellBase/CommandExecutor.vb/#L23">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Shell/ShellBase/Commands/CommandManager.vb/#L78">View Source</a>
   </span>
-  <a id="KS_Shell_ShellBase_CommandExecutor_Execute_" data-uid="KS.Shell.ShellBase.CommandExecutor.Execute*"></a>
-  <h4 id="KS_Shell_ShellBase_CommandExecutor_Execute_System_String_System_String___System_String___System_String___" data-uid="KS.Shell.ShellBase.CommandExecutor.Execute(System.String,System.String[],System.String[],System.String[])">ICommand.Execute(String, String[], String[], String[])</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="KS_Shell_ShellBase_Commands_CommandManager_IsCommandFound_" data-uid="KS.Shell.ShellBase.Commands.CommandManager.IsCommandFound*"></a>
+  <h4 id="KS_Shell_ShellBase_Commands_CommandManager_IsCommandFound_System_String_" data-uid="KS.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String)">IsCommandFound(String)</h4>
+  <div class="markdown level1 summary"><p>Checks to see if the command is found in all the shells</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void ICommand.Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsCommandFound(string Command)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -130,45 +125,84 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">StringArgs</span></td>
-        <td></td>
+        <td><span class="parametername">Command</span></td>
+        <td><p>A command</p>
+</td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><span class="xref">System.String</span>[]</td>
-        <td><span class="parametername">ListArgs</span></td>
-        <td></td>
+        <th>Type</th>
+        <th>Description</th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
-        <td><span class="xref">System.String</span>[]</td>
-        <td><span class="parametername">ListArgsOnly</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span>[]</td>
-        <td><span class="parametername">ListSwitchesOnly</span></td>
-        <td></td>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if found; False if not found.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_CommandExecutor_HelpHelper.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.CommandExecutor.HelpHelper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_Commands_CommandManager_IsCommandFound_System_String_KS_Shell_ShellBase_Shells_ShellType_.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String%2CKS.Shell.ShellBase.Shells.ShellType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Shell/ShellBase/CommandExecutor.vb/#L28">View Source</a>
+    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Shell/ShellBase/Commands/CommandManager.vb/#L41">View Source</a>
   </span>
-  <a id="KS_Shell_ShellBase_CommandExecutor_HelpHelper_" data-uid="KS.Shell.ShellBase.CommandExecutor.HelpHelper*"></a>
-  <h4 id="KS_Shell_ShellBase_CommandExecutor_HelpHelper" data-uid="KS.Shell.ShellBase.CommandExecutor.HelpHelper">ICommand.HelpHelper()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="KS_Shell_ShellBase_Commands_CommandManager_IsCommandFound_" data-uid="KS.Shell.ShellBase.Commands.CommandManager.IsCommandFound*"></a>
+  <h4 id="KS_Shell_ShellBase_Commands_CommandManager_IsCommandFound_System_String_KS_Shell_ShellBase_Shells_ShellType_" data-uid="KS.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String,KS.Shell.ShellBase.Shells.ShellType)">IsCommandFound(String, ShellType)</h4>
+  <div class="markdown level1 summary"><p>Checks to see if the command is found in selected shell command type</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void ICommand.HelpHelper()</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsCommandFound(string Command, ShellType ShellType)</code></pre>
   </div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="KS.Shell.ShellBase.ICommand.html">ICommand</a>
-  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Command</span></td>
+        <td><p>A command</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.Shell.ShellBase.Shells.ShellType.html">ShellType</a></td>
+        <td><span class="parametername">ShellType</span></td>
+        <td><p>The shell type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if found; False if not found or shell type is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -177,10 +211,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_CommandExecutor.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.CommandExecutor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_Commands_CommandManager.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Commands.CommandManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Shell/ShellBase/CommandExecutor.vb/#L20" class="contribution-link">View Source</a>
+                    <a href="https://github.com/EoflaOE/Kernel-Simulator/blob/master/Kernel Simulator/Shell/ShellBase/Commands/CommandManager.vb/#L33" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

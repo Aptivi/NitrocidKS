@@ -29455,13 +29455,13 @@ references:
   commentId: T:KS.Misc.Writers.MiscWriters.Decisive
   fullName: KS.Misc.Writers.MiscWriters.Decisive
   nameWithType: Decisive
-- uid: KS.Misc.Writers.MiscWriters.Decisive.DecisiveWrite(KS.Shell.ShellBase.ShellType,System.IO.StreamWriter,System.String,System.Boolean,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Object[])
+- uid: KS.Misc.Writers.MiscWriters.Decisive.DecisiveWrite(KS.Shell.ShellBase.Shells.ShellType,System.IO.StreamWriter,System.String,System.Boolean,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Object[])
   name: DecisiveWrite(ShellType, StreamWriter, String, Boolean, ColorTools.ColTypes, Object[])
-  href: api/KS.Misc.Writers.MiscWriters.Decisive.html#KS_Misc_Writers_MiscWriters_Decisive_DecisiveWrite_KS_Shell_ShellBase_ShellType_System_IO_StreamWriter_System_String_System_Boolean_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_Object___
-  commentId: M:KS.Misc.Writers.MiscWriters.Decisive.DecisiveWrite(KS.Shell.ShellBase.ShellType,System.IO.StreamWriter,System.String,System.Boolean,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Object[])
+  href: api/KS.Misc.Writers.MiscWriters.Decisive.html#KS_Misc_Writers_MiscWriters_Decisive_DecisiveWrite_KS_Shell_ShellBase_Shells_ShellType_System_IO_StreamWriter_System_String_System_Boolean_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_Object___
+  commentId: M:KS.Misc.Writers.MiscWriters.Decisive.DecisiveWrite(KS.Shell.ShellBase.Shells.ShellType,System.IO.StreamWriter,System.String,System.Boolean,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Object[])
   name.vb: DecisiveWrite(ShellType, StreamWriter, String, Boolean, ColorTools.ColTypes, Object())
-  fullName: KS.Misc.Writers.MiscWriters.Decisive.DecisiveWrite(KS.Shell.ShellBase.ShellType, System.IO.StreamWriter, System.String, System.Boolean, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Object[])
-  fullName.vb: KS.Misc.Writers.MiscWriters.Decisive.DecisiveWrite(KS.Shell.ShellBase.ShellType, System.IO.StreamWriter, System.String, System.Boolean, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Object())
+  fullName: KS.Misc.Writers.MiscWriters.Decisive.DecisiveWrite(KS.Shell.ShellBase.Shells.ShellType, System.IO.StreamWriter, System.String, System.Boolean, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Object[])
+  fullName.vb: KS.Misc.Writers.MiscWriters.Decisive.DecisiveWrite(KS.Shell.ShellBase.Shells.ShellType, System.IO.StreamWriter, System.String, System.Boolean, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Object())
   nameWithType: Decisive.DecisiveWrite(ShellType, StreamWriter, String, Boolean, ColorTools.ColTypes, Object[])
   nameWithType.vb: Decisive.DecisiveWrite(ShellType, StreamWriter, String, Boolean, ColorTools.ColTypes, Object())
 - uid: KS.Misc.Writers.MiscWriters.Decisive.DecisiveWrite*
@@ -29913,11 +29913,11 @@ references:
   isSpec: "True"
   fullName: KS.Modifications.ModManager.InstallMod
   nameWithType: ModManager.InstallMod
-- uid: KS.Modifications.ModManager.ListModCommands(KS.Shell.ShellBase.ShellType)
+- uid: KS.Modifications.ModManager.ListModCommands(KS.Shell.ShellBase.Shells.ShellType)
   name: ListModCommands(ShellType)
-  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_ListModCommands_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Modifications.ModManager.ListModCommands(KS.Shell.ShellBase.ShellType)
-  fullName: KS.Modifications.ModManager.ListModCommands(KS.Shell.ShellBase.ShellType)
+  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_ListModCommands_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Modifications.ModManager.ListModCommands(KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Modifications.ModManager.ListModCommands(KS.Shell.ShellBase.Shells.ShellType)
   nameWithType: ModManager.ListModCommands(ShellType)
 - uid: KS.Modifications.ModManager.ListModCommands*
   name: ListModCommands
@@ -30996,12 +30996,6 @@ references:
   commentId: F:KS.Network.Mail.MailShellCommon.Mail_NotifyNewMail
   fullName: KS.Network.Mail.MailShellCommon.Mail_NotifyNewMail
   nameWithType: MailShellCommon.Mail_NotifyNewMail
-- uid: KS.Network.Mail.MailShellCommon.Mail_POP3PingInterval
-  name: Mail_POP3PingInterval
-  href: api/KS.Network.Mail.MailShellCommon.html#KS_Network_Mail_MailShellCommon_Mail_POP3PingInterval
-  commentId: F:KS.Network.Mail.MailShellCommon.Mail_POP3PingInterval
-  fullName: KS.Network.Mail.MailShellCommon.Mail_POP3PingInterval
-  nameWithType: MailShellCommon.Mail_POP3PingInterval
 - uid: KS.Network.Mail.MailShellCommon.Mail_Progress
   name: Mail_Progress
   href: api/KS.Network.Mail.MailShellCommon.html#KS_Network_Mail_MailShellCommon_Mail_Progress
@@ -31038,12 +31032,6 @@ references:
   commentId: F:KS.Network.Mail.MailShellCommon.Mail_TextFormat
   fullName: KS.Network.Mail.MailShellCommon.Mail_TextFormat
   nameWithType: MailShellCommon.Mail_TextFormat
-- uid: KS.Network.Mail.MailShellCommon.Mail_UsePop3
-  name: Mail_UsePop3
-  href: api/KS.Network.Mail.MailShellCommon.html#KS_Network_Mail_MailShellCommon_Mail_UsePop3
-  commentId: F:KS.Network.Mail.MailShellCommon.Mail_UsePop3
-  fullName: KS.Network.Mail.MailShellCommon.Mail_UsePop3
-  nameWithType: MailShellCommon.Mail_UsePop3
 - uid: KS.Network.Mail.MailShellCommon.MailCommands
   name: MailCommands
   href: api/KS.Network.Mail.MailShellCommon.html#KS_Network_Mail_MailShellCommon_MailCommands
@@ -35231,11 +35219,11 @@ references:
   commentId: T:KS.Shell.Prompts.CustomShellPromptStyle
   fullName: KS.Shell.Prompts.CustomShellPromptStyle
   nameWithType: CustomShellPromptStyle
-- uid: KS.Shell.Prompts.CustomShellPromptStyle.GetCustomShellPromptStyle(KS.Shell.ShellBase.ShellType)
+- uid: KS.Shell.Prompts.CustomShellPromptStyle.GetCustomShellPromptStyle(KS.Shell.ShellBase.Shells.ShellType)
   name: GetCustomShellPromptStyle(ShellType)
-  href: api/KS.Shell.Prompts.CustomShellPromptStyle.html#KS_Shell_Prompts_CustomShellPromptStyle_GetCustomShellPromptStyle_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Shell.Prompts.CustomShellPromptStyle.GetCustomShellPromptStyle(KS.Shell.ShellBase.ShellType)
-  fullName: KS.Shell.Prompts.CustomShellPromptStyle.GetCustomShellPromptStyle(KS.Shell.ShellBase.ShellType)
+  href: api/KS.Shell.Prompts.CustomShellPromptStyle.html#KS_Shell_Prompts_CustomShellPromptStyle_GetCustomShellPromptStyle_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.Prompts.CustomShellPromptStyle.GetCustomShellPromptStyle(KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.Prompts.CustomShellPromptStyle.GetCustomShellPromptStyle(KS.Shell.ShellBase.Shells.ShellType)
   nameWithType: CustomShellPromptStyle.GetCustomShellPromptStyle(ShellType)
 - uid: KS.Shell.Prompts.CustomShellPromptStyle.GetCustomShellPromptStyle*
   name: GetCustomShellPromptStyle
@@ -36320,13 +36308,13 @@ references:
   commentId: T:KS.Shell.Prompts.PromptPresetManager
   fullName: KS.Shell.Prompts.PromptPresetManager
   nameWithType: PromptPresetManager
-- uid: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.ShellType,KS.Shell.Prompts.PromptPresetBase@)
+- uid: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.Shells.ShellType,KS.Shell.Prompts.PromptPresetBase@)
   name: GetCurrentPresetBaseFromShell(ShellType, ref PromptPresetBase)
-  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_GetCurrentPresetBaseFromShell_KS_Shell_ShellBase_ShellType_KS_Shell_Prompts_PromptPresetBase__
-  commentId: M:KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.ShellType,KS.Shell.Prompts.PromptPresetBase@)
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_GetCurrentPresetBaseFromShell_KS_Shell_ShellBase_Shells_ShellType_KS_Shell_Prompts_PromptPresetBase__
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.Shells.ShellType,KS.Shell.Prompts.PromptPresetBase@)
   name.vb: GetCurrentPresetBaseFromShell(ShellType, ByRef PromptPresetBase)
-  fullName: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.ShellType, ref KS.Shell.Prompts.PromptPresetBase)
-  fullName.vb: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.ShellType, ByRef KS.Shell.Prompts.PromptPresetBase)
+  fullName: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.Shells.ShellType, ref KS.Shell.Prompts.PromptPresetBase)
+  fullName.vb: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.Shells.ShellType, ByRef KS.Shell.Prompts.PromptPresetBase)
   nameWithType: PromptPresetManager.GetCurrentPresetBaseFromShell(ShellType, ref PromptPresetBase)
   nameWithType.vb: PromptPresetManager.GetCurrentPresetBaseFromShell(ShellType, ByRef PromptPresetBase)
 - uid: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell*
@@ -36336,11 +36324,11 @@ references:
   isSpec: "True"
   fullName: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell
   nameWithType: PromptPresetManager.GetCurrentPresetBaseFromShell
-- uid: KS.Shell.Prompts.PromptPresetManager.GetCustomPresetsFromShell(KS.Shell.ShellBase.ShellType)
+- uid: KS.Shell.Prompts.PromptPresetManager.GetCustomPresetsFromShell(KS.Shell.ShellBase.Shells.ShellType)
   name: GetCustomPresetsFromShell(ShellType)
-  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_GetCustomPresetsFromShell_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Shell.Prompts.PromptPresetManager.GetCustomPresetsFromShell(KS.Shell.ShellBase.ShellType)
-  fullName: KS.Shell.Prompts.PromptPresetManager.GetCustomPresetsFromShell(KS.Shell.ShellBase.ShellType)
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_GetCustomPresetsFromShell_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.GetCustomPresetsFromShell(KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.Prompts.PromptPresetManager.GetCustomPresetsFromShell(KS.Shell.ShellBase.Shells.ShellType)
   nameWithType: PromptPresetManager.GetCustomPresetsFromShell(ShellType)
 - uid: KS.Shell.Prompts.PromptPresetManager.GetCustomPresetsFromShell*
   name: GetCustomPresetsFromShell
@@ -36349,11 +36337,11 @@ references:
   isSpec: "True"
   fullName: KS.Shell.Prompts.PromptPresetManager.GetCustomPresetsFromShell
   nameWithType: PromptPresetManager.GetCustomPresetsFromShell
-- uid: KS.Shell.Prompts.PromptPresetManager.GetPresetsFromShell(KS.Shell.ShellBase.ShellType)
+- uid: KS.Shell.Prompts.PromptPresetManager.GetPresetsFromShell(KS.Shell.ShellBase.Shells.ShellType)
   name: GetPresetsFromShell(ShellType)
-  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_GetPresetsFromShell_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Shell.Prompts.PromptPresetManager.GetPresetsFromShell(KS.Shell.ShellBase.ShellType)
-  fullName: KS.Shell.Prompts.PromptPresetManager.GetPresetsFromShell(KS.Shell.ShellBase.ShellType)
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_GetPresetsFromShell_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.GetPresetsFromShell(KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.Prompts.PromptPresetManager.GetPresetsFromShell(KS.Shell.ShellBase.Shells.ShellType)
   nameWithType: PromptPresetManager.GetPresetsFromShell(ShellType)
 - uid: KS.Shell.Prompts.PromptPresetManager.GetPresetsFromShell*
   name: GetPresetsFromShell
@@ -36362,11 +36350,11 @@ references:
   isSpec: "True"
   fullName: KS.Shell.Prompts.PromptPresetManager.GetPresetsFromShell
   nameWithType: PromptPresetManager.GetPresetsFromShell
-- uid: KS.Shell.Prompts.PromptPresetManager.SetPreset(System.String,KS.Shell.ShellBase.ShellType,System.Boolean)
+- uid: KS.Shell.Prompts.PromptPresetManager.SetPreset(System.String,KS.Shell.ShellBase.Shells.ShellType,System.Boolean)
   name: SetPreset(String, ShellType, Boolean)
-  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_SetPreset_System_String_KS_Shell_ShellBase_ShellType_System_Boolean_
-  commentId: M:KS.Shell.Prompts.PromptPresetManager.SetPreset(System.String,KS.Shell.ShellBase.ShellType,System.Boolean)
-  fullName: KS.Shell.Prompts.PromptPresetManager.SetPreset(System.String, KS.Shell.ShellBase.ShellType, System.Boolean)
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_SetPreset_System_String_KS_Shell_ShellBase_Shells_ShellType_System_Boolean_
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.SetPreset(System.String,KS.Shell.ShellBase.Shells.ShellType,System.Boolean)
+  fullName: KS.Shell.Prompts.PromptPresetManager.SetPreset(System.String, KS.Shell.ShellBase.Shells.ShellType, System.Boolean)
   nameWithType: PromptPresetManager.SetPreset(String, ShellType, Boolean)
 - uid: KS.Shell.Prompts.PromptPresetManager.SetPreset*
   name: SetPreset
@@ -36375,11 +36363,11 @@ references:
   isSpec: "True"
   fullName: KS.Shell.Prompts.PromptPresetManager.SetPreset
   nameWithType: PromptPresetManager.SetPreset
-- uid: KS.Shell.Prompts.PromptPresetManager.WriteShellPrompt(KS.Shell.ShellBase.ShellType)
+- uid: KS.Shell.Prompts.PromptPresetManager.WriteShellPrompt(KS.Shell.ShellBase.Shells.ShellType)
   name: WriteShellPrompt(ShellType)
-  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_WriteShellPrompt_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Shell.Prompts.PromptPresetManager.WriteShellPrompt(KS.Shell.ShellBase.ShellType)
-  fullName: KS.Shell.Prompts.PromptPresetManager.WriteShellPrompt(KS.Shell.ShellBase.ShellType)
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_WriteShellPrompt_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.WriteShellPrompt(KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.Prompts.PromptPresetManager.WriteShellPrompt(KS.Shell.ShellBase.Shells.ShellType)
   nameWithType: PromptPresetManager.WriteShellPrompt(ShellType)
 - uid: KS.Shell.Prompts.PromptPresetManager.WriteShellPrompt*
   name: WriteShellPrompt
@@ -36406,11 +36394,11 @@ references:
   commentId: F:KS.Shell.Shell.Commands
   fullName: KS.Shell.Shell.Commands
   nameWithType: Shell.Commands
-- uid: KS.Shell.Shell.GetLine(System.String,System.Boolean,System.String,KS.Shell.ShellBase.ShellType)
+- uid: KS.Shell.Shell.GetLine(System.String,System.Boolean,System.String,KS.Shell.ShellBase.Shells.ShellType)
   name: GetLine(String, Boolean, String, ShellType)
-  href: api/KS.Shell.Shell.html#KS_Shell_Shell_GetLine_System_String_System_Boolean_System_String_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Shell.Shell.GetLine(System.String,System.Boolean,System.String,KS.Shell.ShellBase.ShellType)
-  fullName: KS.Shell.Shell.GetLine(System.String, System.Boolean, System.String, KS.Shell.ShellBase.ShellType)
+  href: api/KS.Shell.Shell.html#KS_Shell_Shell_GetLine_System_String_System_Boolean_System_String_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.Shell.GetLine(System.String,System.Boolean,System.String,KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.Shell.GetLine(System.String, System.Boolean, System.String, KS.Shell.ShellBase.Shells.ShellType)
   nameWithType: Shell.GetLine(String, Boolean, String, ShellType)
 - uid: KS.Shell.Shell.GetLine*
   name: GetLine
@@ -36443,187 +36431,193 @@ references:
   commentId: N:KS.Shell.ShellBase
   fullName: KS.Shell.ShellBase
   nameWithType: KS.Shell.ShellBase
-- uid: KS.Shell.ShellBase.AliasManager
+- uid: KS.Shell.ShellBase.Aliases
+  name: KS.Shell.ShellBase.Aliases
+  href: api/KS.Shell.ShellBase.Aliases.html
+  commentId: N:KS.Shell.ShellBase.Aliases
+  fullName: KS.Shell.ShellBase.Aliases
+  nameWithType: KS.Shell.ShellBase.Aliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager
   name: AliasManager
-  href: api/KS.Shell.ShellBase.AliasManager.html
-  commentId: T:KS.Shell.ShellBase.AliasManager
-  fullName: KS.Shell.ShellBase.AliasManager
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html
+  commentId: T:KS.Shell.ShellBase.Aliases.AliasManager
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager
   nameWithType: AliasManager
-- uid: KS.Shell.ShellBase.AliasManager.AddAlias(System.String,System.String,KS.Shell.ShellBase.ShellType)
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.AddAlias(System.String,System.String,KS.Shell.ShellBase.Shells.ShellType)
   name: AddAlias(String, String, ShellType)
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_AddAlias_System_String_System_String_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Shell.ShellBase.AliasManager.AddAlias(System.String,System.String,KS.Shell.ShellBase.ShellType)
-  fullName: KS.Shell.ShellBase.AliasManager.AddAlias(System.String, System.String, KS.Shell.ShellBase.ShellType)
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_AddAlias_System_String_System_String_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.ShellBase.Aliases.AliasManager.AddAlias(System.String,System.String,KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.AddAlias(System.String, System.String, KS.Shell.ShellBase.Shells.ShellType)
   nameWithType: AliasManager.AddAlias(String, String, ShellType)
-- uid: KS.Shell.ShellBase.AliasManager.AddAlias*
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.AddAlias*
   name: AddAlias
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_AddAlias_
-  commentId: Overload:KS.Shell.ShellBase.AliasManager.AddAlias
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_AddAlias_
+  commentId: Overload:KS.Shell.ShellBase.Aliases.AliasManager.AddAlias
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.AliasManager.AddAlias
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.AddAlias
   nameWithType: AliasManager.AddAlias
-- uid: KS.Shell.ShellBase.AliasManager.Aliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.Aliases
   name: Aliases
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_Aliases
-  commentId: F:KS.Shell.ShellBase.AliasManager.Aliases
-  fullName: KS.Shell.ShellBase.AliasManager.Aliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_Aliases
+  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.Aliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.Aliases
   nameWithType: AliasManager.Aliases
-- uid: KS.Shell.ShellBase.AliasManager.DoesAliasExist(System.String,KS.Shell.ShellBase.ShellType)
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.DoesAliasExist(System.String,KS.Shell.ShellBase.Shells.ShellType)
   name: DoesAliasExist(String, ShellType)
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_DoesAliasExist_System_String_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Shell.ShellBase.AliasManager.DoesAliasExist(System.String,KS.Shell.ShellBase.ShellType)
-  fullName: KS.Shell.ShellBase.AliasManager.DoesAliasExist(System.String, KS.Shell.ShellBase.ShellType)
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_DoesAliasExist_System_String_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.ShellBase.Aliases.AliasManager.DoesAliasExist(System.String,KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.DoesAliasExist(System.String, KS.Shell.ShellBase.Shells.ShellType)
   nameWithType: AliasManager.DoesAliasExist(String, ShellType)
-- uid: KS.Shell.ShellBase.AliasManager.DoesAliasExist*
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.DoesAliasExist*
   name: DoesAliasExist
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_DoesAliasExist_
-  commentId: Overload:KS.Shell.ShellBase.AliasManager.DoesAliasExist
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_DoesAliasExist_
+  commentId: Overload:KS.Shell.ShellBase.Aliases.AliasManager.DoesAliasExist
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.AliasManager.DoesAliasExist
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.DoesAliasExist
   nameWithType: AliasManager.DoesAliasExist
-- uid: KS.Shell.ShellBase.AliasManager.FTPShellAliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.FTPShellAliases
   name: FTPShellAliases
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_FTPShellAliases
-  commentId: F:KS.Shell.ShellBase.AliasManager.FTPShellAliases
-  fullName: KS.Shell.ShellBase.AliasManager.FTPShellAliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_FTPShellAliases
+  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.FTPShellAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.FTPShellAliases
   nameWithType: AliasManager.FTPShellAliases
-- uid: KS.Shell.ShellBase.AliasManager.GetAliasesListFromType(KS.Shell.ShellBase.ShellType)
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.GetAliasesListFromType(KS.Shell.ShellBase.Shells.ShellType)
   name: GetAliasesListFromType(ShellType)
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_GetAliasesListFromType_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Shell.ShellBase.AliasManager.GetAliasesListFromType(KS.Shell.ShellBase.ShellType)
-  fullName: KS.Shell.ShellBase.AliasManager.GetAliasesListFromType(KS.Shell.ShellBase.ShellType)
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_GetAliasesListFromType_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.ShellBase.Aliases.AliasManager.GetAliasesListFromType(KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.GetAliasesListFromType(KS.Shell.ShellBase.Shells.ShellType)
   nameWithType: AliasManager.GetAliasesListFromType(ShellType)
-- uid: KS.Shell.ShellBase.AliasManager.GetAliasesListFromType*
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.GetAliasesListFromType*
   name: GetAliasesListFromType
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_GetAliasesListFromType_
-  commentId: Overload:KS.Shell.ShellBase.AliasManager.GetAliasesListFromType
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_GetAliasesListFromType_
+  commentId: Overload:KS.Shell.ShellBase.Aliases.AliasManager.GetAliasesListFromType
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.AliasManager.GetAliasesListFromType
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.GetAliasesListFromType
   nameWithType: AliasManager.GetAliasesListFromType
-- uid: KS.Shell.ShellBase.AliasManager.HexShellAliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.HexShellAliases
   name: HexShellAliases
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_HexShellAliases
-  commentId: F:KS.Shell.ShellBase.AliasManager.HexShellAliases
-  fullName: KS.Shell.ShellBase.AliasManager.HexShellAliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_HexShellAliases
+  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.HexShellAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.HexShellAliases
   nameWithType: AliasManager.HexShellAliases
-- uid: KS.Shell.ShellBase.AliasManager.HTTPShellAliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.HTTPShellAliases
   name: HTTPShellAliases
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_HTTPShellAliases
-  commentId: F:KS.Shell.ShellBase.AliasManager.HTTPShellAliases
-  fullName: KS.Shell.ShellBase.AliasManager.HTTPShellAliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_HTTPShellAliases
+  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.HTTPShellAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.HTTPShellAliases
   nameWithType: AliasManager.HTTPShellAliases
-- uid: KS.Shell.ShellBase.AliasManager.InitAliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.InitAliases
   name: InitAliases()
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_InitAliases
-  commentId: M:KS.Shell.ShellBase.AliasManager.InitAliases
-  fullName: KS.Shell.ShellBase.AliasManager.InitAliases()
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_InitAliases
+  commentId: M:KS.Shell.ShellBase.Aliases.AliasManager.InitAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.InitAliases()
   nameWithType: AliasManager.InitAliases()
-- uid: KS.Shell.ShellBase.AliasManager.InitAliases*
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.InitAliases*
   name: InitAliases
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_InitAliases_
-  commentId: Overload:KS.Shell.ShellBase.AliasManager.InitAliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_InitAliases_
+  commentId: Overload:KS.Shell.ShellBase.Aliases.AliasManager.InitAliases
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.AliasManager.InitAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.InitAliases
   nameWithType: AliasManager.InitAliases
-- uid: KS.Shell.ShellBase.AliasManager.JsonShellAliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.JsonShellAliases
   name: JsonShellAliases
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_JsonShellAliases
-  commentId: F:KS.Shell.ShellBase.AliasManager.JsonShellAliases
-  fullName: KS.Shell.ShellBase.AliasManager.JsonShellAliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_JsonShellAliases
+  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.JsonShellAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.JsonShellAliases
   nameWithType: AliasManager.JsonShellAliases
-- uid: KS.Shell.ShellBase.AliasManager.MailShellAliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.MailShellAliases
   name: MailShellAliases
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_MailShellAliases
-  commentId: F:KS.Shell.ShellBase.AliasManager.MailShellAliases
-  fullName: KS.Shell.ShellBase.AliasManager.MailShellAliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_MailShellAliases
+  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.MailShellAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.MailShellAliases
   nameWithType: AliasManager.MailShellAliases
-- uid: KS.Shell.ShellBase.AliasManager.ManageAlias(System.String,KS.Shell.ShellBase.ShellType,System.String,System.String)
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.ManageAlias(System.String,KS.Shell.ShellBase.Shells.ShellType,System.String,System.String)
   name: ManageAlias(String, ShellType, String, String)
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_ManageAlias_System_String_KS_Shell_ShellBase_ShellType_System_String_System_String_
-  commentId: M:KS.Shell.ShellBase.AliasManager.ManageAlias(System.String,KS.Shell.ShellBase.ShellType,System.String,System.String)
-  fullName: KS.Shell.ShellBase.AliasManager.ManageAlias(System.String, KS.Shell.ShellBase.ShellType, System.String, System.String)
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_ManageAlias_System_String_KS_Shell_ShellBase_Shells_ShellType_System_String_System_String_
+  commentId: M:KS.Shell.ShellBase.Aliases.AliasManager.ManageAlias(System.String,KS.Shell.ShellBase.Shells.ShellType,System.String,System.String)
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.ManageAlias(System.String, KS.Shell.ShellBase.Shells.ShellType, System.String, System.String)
   nameWithType: AliasManager.ManageAlias(String, ShellType, String, String)
-- uid: KS.Shell.ShellBase.AliasManager.ManageAlias*
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.ManageAlias*
   name: ManageAlias
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_ManageAlias_
-  commentId: Overload:KS.Shell.ShellBase.AliasManager.ManageAlias
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_ManageAlias_
+  commentId: Overload:KS.Shell.ShellBase.Aliases.AliasManager.ManageAlias
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.AliasManager.ManageAlias
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.ManageAlias
   nameWithType: AliasManager.ManageAlias
-- uid: KS.Shell.ShellBase.AliasManager.PurgeAliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.PurgeAliases
   name: PurgeAliases()
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_PurgeAliases
-  commentId: M:KS.Shell.ShellBase.AliasManager.PurgeAliases
-  fullName: KS.Shell.ShellBase.AliasManager.PurgeAliases()
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_PurgeAliases
+  commentId: M:KS.Shell.ShellBase.Aliases.AliasManager.PurgeAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.PurgeAliases()
   nameWithType: AliasManager.PurgeAliases()
-- uid: KS.Shell.ShellBase.AliasManager.PurgeAliases*
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.PurgeAliases*
   name: PurgeAliases
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_PurgeAliases_
-  commentId: Overload:KS.Shell.ShellBase.AliasManager.PurgeAliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_PurgeAliases_
+  commentId: Overload:KS.Shell.ShellBase.Aliases.AliasManager.PurgeAliases
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.AliasManager.PurgeAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.PurgeAliases
   nameWithType: AliasManager.PurgeAliases
-- uid: KS.Shell.ShellBase.AliasManager.RemoteDebugAliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.RemoteDebugAliases
   name: RemoteDebugAliases
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_RemoteDebugAliases
-  commentId: F:KS.Shell.ShellBase.AliasManager.RemoteDebugAliases
-  fullName: KS.Shell.ShellBase.AliasManager.RemoteDebugAliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_RemoteDebugAliases
+  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.RemoteDebugAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.RemoteDebugAliases
   nameWithType: AliasManager.RemoteDebugAliases
-- uid: KS.Shell.ShellBase.AliasManager.RemoveAlias(System.String,KS.Shell.ShellBase.ShellType)
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.RemoveAlias(System.String,KS.Shell.ShellBase.Shells.ShellType)
   name: RemoveAlias(String, ShellType)
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_RemoveAlias_System_String_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Shell.ShellBase.AliasManager.RemoveAlias(System.String,KS.Shell.ShellBase.ShellType)
-  fullName: KS.Shell.ShellBase.AliasManager.RemoveAlias(System.String, KS.Shell.ShellBase.ShellType)
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_RemoveAlias_System_String_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.ShellBase.Aliases.AliasManager.RemoveAlias(System.String,KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.RemoveAlias(System.String, KS.Shell.ShellBase.Shells.ShellType)
   nameWithType: AliasManager.RemoveAlias(String, ShellType)
-- uid: KS.Shell.ShellBase.AliasManager.RemoveAlias*
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.RemoveAlias*
   name: RemoveAlias
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_RemoveAlias_
-  commentId: Overload:KS.Shell.ShellBase.AliasManager.RemoveAlias
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_RemoveAlias_
+  commentId: Overload:KS.Shell.ShellBase.Aliases.AliasManager.RemoveAlias
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.AliasManager.RemoveAlias
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.RemoveAlias
   nameWithType: AliasManager.RemoveAlias
-- uid: KS.Shell.ShellBase.AliasManager.RSSShellAliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.RSSShellAliases
   name: RSSShellAliases
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_RSSShellAliases
-  commentId: F:KS.Shell.ShellBase.AliasManager.RSSShellAliases
-  fullName: KS.Shell.ShellBase.AliasManager.RSSShellAliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_RSSShellAliases
+  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.RSSShellAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.RSSShellAliases
   nameWithType: AliasManager.RSSShellAliases
-- uid: KS.Shell.ShellBase.AliasManager.SaveAliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.SaveAliases
   name: SaveAliases()
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_SaveAliases
-  commentId: M:KS.Shell.ShellBase.AliasManager.SaveAliases
-  fullName: KS.Shell.ShellBase.AliasManager.SaveAliases()
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_SaveAliases
+  commentId: M:KS.Shell.ShellBase.Aliases.AliasManager.SaveAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.SaveAliases()
   nameWithType: AliasManager.SaveAliases()
-- uid: KS.Shell.ShellBase.AliasManager.SaveAliases*
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.SaveAliases*
   name: SaveAliases
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_SaveAliases_
-  commentId: Overload:KS.Shell.ShellBase.AliasManager.SaveAliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_SaveAliases_
+  commentId: Overload:KS.Shell.ShellBase.Aliases.AliasManager.SaveAliases
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.AliasManager.SaveAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.SaveAliases
   nameWithType: AliasManager.SaveAliases
-- uid: KS.Shell.ShellBase.AliasManager.SFTPShellAliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.SFTPShellAliases
   name: SFTPShellAliases
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_SFTPShellAliases
-  commentId: F:KS.Shell.ShellBase.AliasManager.SFTPShellAliases
-  fullName: KS.Shell.ShellBase.AliasManager.SFTPShellAliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_SFTPShellAliases
+  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.SFTPShellAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.SFTPShellAliases
   nameWithType: AliasManager.SFTPShellAliases
-- uid: KS.Shell.ShellBase.AliasManager.TestShellAliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.TestShellAliases
   name: TestShellAliases
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_TestShellAliases
-  commentId: F:KS.Shell.ShellBase.AliasManager.TestShellAliases
-  fullName: KS.Shell.ShellBase.AliasManager.TestShellAliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_TestShellAliases
+  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.TestShellAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.TestShellAliases
   nameWithType: AliasManager.TestShellAliases
-- uid: KS.Shell.ShellBase.AliasManager.TextShellAliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.TextShellAliases
   name: TextShellAliases
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_TextShellAliases
-  commentId: F:KS.Shell.ShellBase.AliasManager.TextShellAliases
-  fullName: KS.Shell.ShellBase.AliasManager.TextShellAliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_TextShellAliases
+  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.TextShellAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.TextShellAliases
   nameWithType: AliasManager.TextShellAliases
-- uid: KS.Shell.ShellBase.AliasManager.ZIPShellAliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.ZIPShellAliases
   name: ZIPShellAliases
-  href: api/KS.Shell.ShellBase.AliasManager.html#KS_Shell_ShellBase_AliasManager_ZIPShellAliases
-  commentId: F:KS.Shell.ShellBase.AliasManager.ZIPShellAliases
-  fullName: KS.Shell.ShellBase.AliasManager.ZIPShellAliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_ZIPShellAliases
+  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.ZIPShellAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.ZIPShellAliases
   nameWithType: AliasManager.ZIPShellAliases
 - uid: KS.Shell.ShellBase.CommandAutoComplete
   name: CommandAutoComplete
@@ -36631,11 +36625,11 @@ references:
   commentId: T:KS.Shell.ShellBase.CommandAutoComplete
   fullName: KS.Shell.ShellBase.CommandAutoComplete
   nameWithType: CommandAutoComplete
-- uid: KS.Shell.ShellBase.CommandAutoComplete.#ctor(KS.Shell.ShellBase.ShellType)
+- uid: KS.Shell.ShellBase.CommandAutoComplete.#ctor(KS.Shell.ShellBase.Shells.ShellType)
   name: CommandAutoComplete(ShellType)
-  href: api/KS.Shell.ShellBase.CommandAutoComplete.html#KS_Shell_ShellBase_CommandAutoComplete__ctor_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Shell.ShellBase.CommandAutoComplete.#ctor(KS.Shell.ShellBase.ShellType)
-  fullName: KS.Shell.ShellBase.CommandAutoComplete.CommandAutoComplete(KS.Shell.ShellBase.ShellType)
+  href: api/KS.Shell.ShellBase.CommandAutoComplete.html#KS_Shell_ShellBase_CommandAutoComplete__ctor_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.ShellBase.CommandAutoComplete.#ctor(KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.ShellBase.CommandAutoComplete.CommandAutoComplete(KS.Shell.ShellBase.Shells.ShellType)
   nameWithType: CommandAutoComplete.CommandAutoComplete(ShellType)
 - uid: KS.Shell.ShellBase.CommandAutoComplete.#ctor*
   name: CommandAutoComplete
@@ -36670,756 +36664,768 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.CommandAutoComplete.Separators
   nameWithType: CommandAutoComplete.Separators
-- uid: KS.Shell.ShellBase.CommandExecutor
+- uid: KS.Shell.ShellBase.Commands
+  name: KS.Shell.ShellBase.Commands
+  href: api/KS.Shell.ShellBase.Commands.html
+  commentId: N:KS.Shell.ShellBase.Commands
+  fullName: KS.Shell.ShellBase.Commands
+  nameWithType: KS.Shell.ShellBase.Commands
+- uid: KS.Shell.ShellBase.Commands.CommandExecutor
   name: CommandExecutor
-  href: api/KS.Shell.ShellBase.CommandExecutor.html
-  commentId: T:KS.Shell.ShellBase.CommandExecutor
-  fullName: KS.Shell.ShellBase.CommandExecutor
+  href: api/KS.Shell.ShellBase.Commands.CommandExecutor.html
+  commentId: T:KS.Shell.ShellBase.Commands.CommandExecutor
+  fullName: KS.Shell.ShellBase.Commands.CommandExecutor
   nameWithType: CommandExecutor
-- uid: KS.Shell.ShellBase.CommandExecutor.Execute(System.String,System.String[],System.String[],System.String[])
+- uid: KS.Shell.ShellBase.Commands.CommandExecutor.Execute(System.String,System.String[],System.String[],System.String[])
   name: ICommand.Execute(String, String[], String[], String[])
-  href: api/KS.Shell.ShellBase.CommandExecutor.html#KS_Shell_ShellBase_CommandExecutor_Execute_System_String_System_String___System_String___System_String___
-  commentId: M:KS.Shell.ShellBase.CommandExecutor.Execute(System.String,System.String[],System.String[],System.String[])
+  href: api/KS.Shell.ShellBase.Commands.CommandExecutor.html#KS_Shell_ShellBase_Commands_CommandExecutor_Execute_System_String_System_String___System_String___System_String___
+  commentId: M:KS.Shell.ShellBase.Commands.CommandExecutor.Execute(System.String,System.String[],System.String[],System.String[])
   name.vb: Execute(String, String(), String(), String())
-  fullName: KS.Shell.ShellBase.CommandExecutor.KS.Shell.ShellBase.ICommand.Execute(System.String, System.String[], System.String[], System.String[])
-  fullName.vb: KS.Shell.ShellBase.CommandExecutor.Execute(System.String, System.String(), System.String(), System.String())
+  fullName: KS.Shell.ShellBase.Commands.CommandExecutor.KS.Shell.ShellBase.Commands.ICommand.Execute(System.String, System.String[], System.String[], System.String[])
+  fullName.vb: KS.Shell.ShellBase.Commands.CommandExecutor.Execute(System.String, System.String(), System.String(), System.String())
   nameWithType: CommandExecutor.ICommand.Execute(String, String[], String[], String[])
   nameWithType.vb: CommandExecutor.Execute(String, String(), String(), String())
-- uid: KS.Shell.ShellBase.CommandExecutor.Execute*
+- uid: KS.Shell.ShellBase.Commands.CommandExecutor.Execute*
   name: ICommand.Execute
-  href: api/KS.Shell.ShellBase.CommandExecutor.html#KS_Shell_ShellBase_CommandExecutor_Execute_
-  commentId: Overload:KS.Shell.ShellBase.CommandExecutor.Execute
+  href: api/KS.Shell.ShellBase.Commands.CommandExecutor.html#KS_Shell_ShellBase_Commands_CommandExecutor_Execute_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandExecutor.Execute
   isSpec: "True"
   name.vb: Execute
-  fullName: KS.Shell.ShellBase.CommandExecutor.KS.Shell.ShellBase.ICommand.Execute
-  fullName.vb: KS.Shell.ShellBase.CommandExecutor.Execute
+  fullName: KS.Shell.ShellBase.Commands.CommandExecutor.KS.Shell.ShellBase.Commands.ICommand.Execute
+  fullName.vb: KS.Shell.ShellBase.Commands.CommandExecutor.Execute
   nameWithType: CommandExecutor.ICommand.Execute
   nameWithType.vb: CommandExecutor.Execute
-- uid: KS.Shell.ShellBase.CommandExecutor.HelpHelper
+- uid: KS.Shell.ShellBase.Commands.CommandExecutor.HelpHelper
   name: ICommand.HelpHelper()
-  href: api/KS.Shell.ShellBase.CommandExecutor.html#KS_Shell_ShellBase_CommandExecutor_HelpHelper
-  commentId: M:KS.Shell.ShellBase.CommandExecutor.HelpHelper
+  href: api/KS.Shell.ShellBase.Commands.CommandExecutor.html#KS_Shell_ShellBase_Commands_CommandExecutor_HelpHelper
+  commentId: M:KS.Shell.ShellBase.Commands.CommandExecutor.HelpHelper
   name.vb: HelpHelper()
-  fullName: KS.Shell.ShellBase.CommandExecutor.KS.Shell.ShellBase.ICommand.HelpHelper()
-  fullName.vb: KS.Shell.ShellBase.CommandExecutor.HelpHelper()
+  fullName: KS.Shell.ShellBase.Commands.CommandExecutor.KS.Shell.ShellBase.Commands.ICommand.HelpHelper()
+  fullName.vb: KS.Shell.ShellBase.Commands.CommandExecutor.HelpHelper()
   nameWithType: CommandExecutor.ICommand.HelpHelper()
   nameWithType.vb: CommandExecutor.HelpHelper()
-- uid: KS.Shell.ShellBase.CommandExecutor.HelpHelper*
+- uid: KS.Shell.ShellBase.Commands.CommandExecutor.HelpHelper*
   name: ICommand.HelpHelper
-  href: api/KS.Shell.ShellBase.CommandExecutor.html#KS_Shell_ShellBase_CommandExecutor_HelpHelper_
-  commentId: Overload:KS.Shell.ShellBase.CommandExecutor.HelpHelper
+  href: api/KS.Shell.ShellBase.Commands.CommandExecutor.html#KS_Shell_ShellBase_Commands_CommandExecutor_HelpHelper_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandExecutor.HelpHelper
   isSpec: "True"
   name.vb: HelpHelper
-  fullName: KS.Shell.ShellBase.CommandExecutor.KS.Shell.ShellBase.ICommand.HelpHelper
-  fullName.vb: KS.Shell.ShellBase.CommandExecutor.HelpHelper
+  fullName: KS.Shell.ShellBase.Commands.CommandExecutor.KS.Shell.ShellBase.Commands.ICommand.HelpHelper
+  fullName.vb: KS.Shell.ShellBase.Commands.CommandExecutor.HelpHelper
   nameWithType: CommandExecutor.ICommand.HelpHelper
   nameWithType.vb: CommandExecutor.HelpHelper
-- uid: KS.Shell.ShellBase.CommandInfo
+- uid: KS.Shell.ShellBase.Commands.CommandInfo
   name: CommandInfo
-  href: api/KS.Shell.ShellBase.CommandInfo.html
-  commentId: T:KS.Shell.ShellBase.CommandInfo
-  fullName: KS.Shell.ShellBase.CommandInfo
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html
+  commentId: T:KS.Shell.ShellBase.Commands.CommandInfo
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo
   nameWithType: CommandInfo
-- uid: KS.Shell.ShellBase.CommandInfo.#ctor(System.String,KS.Shell.ShellBase.ShellType,System.String,System.String[],System.Boolean,System.Int32,KS.Shell.ShellBase.CommandExecutor,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType,System.String,System.String[],System.Boolean,System.Int32,KS.Shell.ShellBase.Commands.CommandExecutor,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
   name: CommandInfo(String, ShellType, String, String[], Boolean, Int32, CommandExecutor, Boolean, Boolean, Boolean, Boolean, Boolean)
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo__ctor_System_String_KS_Shell_ShellBase_ShellType_System_String_System_String___System_Boolean_System_Int32_KS_Shell_ShellBase_CommandExecutor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
-  commentId: M:KS.Shell.ShellBase.CommandInfo.#ctor(System.String,KS.Shell.ShellBase.ShellType,System.String,System.String[],System.Boolean,System.Int32,KS.Shell.ShellBase.CommandExecutor,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo__ctor_System_String_KS_Shell_ShellBase_Shells_ShellType_System_String_System_String___System_Boolean_System_Int32_KS_Shell_ShellBase_Commands_CommandExecutor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType,System.String,System.String[],System.Boolean,System.Int32,KS.Shell.ShellBase.Commands.CommandExecutor,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
   name.vb: CommandInfo(String, ShellType, String, String(), Boolean, Int32, CommandExecutor, Boolean, Boolean, Boolean, Boolean, Boolean)
-  fullName: KS.Shell.ShellBase.CommandInfo.CommandInfo(System.String, KS.Shell.ShellBase.ShellType, System.String, System.String[], System.Boolean, System.Int32, KS.Shell.ShellBase.CommandExecutor, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
-  fullName.vb: KS.Shell.ShellBase.CommandInfo.CommandInfo(System.String, KS.Shell.ShellBase.ShellType, System.String, System.String(), System.Boolean, System.Int32, KS.Shell.ShellBase.CommandExecutor, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.CommandInfo(System.String, KS.Shell.ShellBase.Shells.ShellType, System.String, System.String[], System.Boolean, System.Int32, KS.Shell.ShellBase.Commands.CommandExecutor, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
+  fullName.vb: KS.Shell.ShellBase.Commands.CommandInfo.CommandInfo(System.String, KS.Shell.ShellBase.Shells.ShellType, System.String, System.String(), System.Boolean, System.Int32, KS.Shell.ShellBase.Commands.CommandExecutor, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
   nameWithType: CommandInfo.CommandInfo(String, ShellType, String, String[], Boolean, Int32, CommandExecutor, Boolean, Boolean, Boolean, Boolean, Boolean)
   nameWithType.vb: CommandInfo.CommandInfo(String, ShellType, String, String(), Boolean, Int32, CommandExecutor, Boolean, Boolean, Boolean, Boolean, Boolean)
-- uid: KS.Shell.ShellBase.CommandInfo.#ctor*
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.#ctor*
   name: CommandInfo
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo__ctor_
-  commentId: Overload:KS.Shell.ShellBase.CommandInfo.#ctor
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo__ctor_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.#ctor
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.CommandInfo.CommandInfo
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.CommandInfo
   nameWithType: CommandInfo.CommandInfo
-- uid: KS.Shell.ShellBase.CommandInfo.ArgumentsRequired
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.ArgumentsRequired
   name: ArgumentsRequired
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_ArgumentsRequired
-  commentId: P:KS.Shell.ShellBase.CommandInfo.ArgumentsRequired
-  fullName: KS.Shell.ShellBase.CommandInfo.ArgumentsRequired
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_ArgumentsRequired
+  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.ArgumentsRequired
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.ArgumentsRequired
   nameWithType: CommandInfo.ArgumentsRequired
-- uid: KS.Shell.ShellBase.CommandInfo.ArgumentsRequired*
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.ArgumentsRequired*
   name: ArgumentsRequired
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_ArgumentsRequired_
-  commentId: Overload:KS.Shell.ShellBase.CommandInfo.ArgumentsRequired
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_ArgumentsRequired_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.ArgumentsRequired
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.CommandInfo.ArgumentsRequired
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.ArgumentsRequired
   nameWithType: CommandInfo.ArgumentsRequired
-- uid: KS.Shell.ShellBase.CommandInfo.Command
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.Command
   name: Command
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_Command
-  commentId: P:KS.Shell.ShellBase.CommandInfo.Command
-  fullName: KS.Shell.ShellBase.CommandInfo.Command
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Command
+  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.Command
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Command
   nameWithType: CommandInfo.Command
-- uid: KS.Shell.ShellBase.CommandInfo.Command*
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.Command*
   name: Command
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_Command_
-  commentId: Overload:KS.Shell.ShellBase.CommandInfo.Command
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Command_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.Command
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.CommandInfo.Command
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Command
   nameWithType: CommandInfo.Command
-- uid: KS.Shell.ShellBase.CommandInfo.CommandBase
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.CommandBase
   name: CommandBase
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_CommandBase
-  commentId: P:KS.Shell.ShellBase.CommandInfo.CommandBase
-  fullName: KS.Shell.ShellBase.CommandInfo.CommandBase
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_CommandBase
+  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.CommandBase
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.CommandBase
   nameWithType: CommandInfo.CommandBase
-- uid: KS.Shell.ShellBase.CommandInfo.CommandBase*
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.CommandBase*
   name: CommandBase
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_CommandBase_
-  commentId: Overload:KS.Shell.ShellBase.CommandInfo.CommandBase
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_CommandBase_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.CommandBase
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.CommandInfo.CommandBase
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.CommandBase
   nameWithType: CommandInfo.CommandBase
-- uid: KS.Shell.ShellBase.CommandInfo.GetTranslatedHelpEntry
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.GetTranslatedHelpEntry
   name: GetTranslatedHelpEntry()
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_GetTranslatedHelpEntry
-  commentId: M:KS.Shell.ShellBase.CommandInfo.GetTranslatedHelpEntry
-  fullName: KS.Shell.ShellBase.CommandInfo.GetTranslatedHelpEntry()
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_GetTranslatedHelpEntry
+  commentId: M:KS.Shell.ShellBase.Commands.CommandInfo.GetTranslatedHelpEntry
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.GetTranslatedHelpEntry()
   nameWithType: CommandInfo.GetTranslatedHelpEntry()
-- uid: KS.Shell.ShellBase.CommandInfo.GetTranslatedHelpEntry*
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.GetTranslatedHelpEntry*
   name: GetTranslatedHelpEntry
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_GetTranslatedHelpEntry_
-  commentId: Overload:KS.Shell.ShellBase.CommandInfo.GetTranslatedHelpEntry
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_GetTranslatedHelpEntry_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.GetTranslatedHelpEntry
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.CommandInfo.GetTranslatedHelpEntry
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.GetTranslatedHelpEntry
   nameWithType: CommandInfo.GetTranslatedHelpEntry
-- uid: KS.Shell.ShellBase.CommandInfo.HelpDefinition
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.HelpDefinition
   name: HelpDefinition
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_HelpDefinition
-  commentId: P:KS.Shell.ShellBase.CommandInfo.HelpDefinition
-  fullName: KS.Shell.ShellBase.CommandInfo.HelpDefinition
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_HelpDefinition
+  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.HelpDefinition
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.HelpDefinition
   nameWithType: CommandInfo.HelpDefinition
-- uid: KS.Shell.ShellBase.CommandInfo.HelpDefinition*
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.HelpDefinition*
   name: HelpDefinition
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_HelpDefinition_
-  commentId: Overload:KS.Shell.ShellBase.CommandInfo.HelpDefinition
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_HelpDefinition_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.HelpDefinition
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.CommandInfo.HelpDefinition
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.HelpDefinition
   nameWithType: CommandInfo.HelpDefinition
-- uid: KS.Shell.ShellBase.CommandInfo.HelpUsages
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.HelpUsages
   name: HelpUsages
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_HelpUsages
-  commentId: P:KS.Shell.ShellBase.CommandInfo.HelpUsages
-  fullName: KS.Shell.ShellBase.CommandInfo.HelpUsages
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_HelpUsages
+  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.HelpUsages
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.HelpUsages
   nameWithType: CommandInfo.HelpUsages
-- uid: KS.Shell.ShellBase.CommandInfo.HelpUsages*
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.HelpUsages*
   name: HelpUsages
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_HelpUsages_
-  commentId: Overload:KS.Shell.ShellBase.CommandInfo.HelpUsages
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_HelpUsages_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.HelpUsages
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.CommandInfo.HelpUsages
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.HelpUsages
   nameWithType: CommandInfo.HelpUsages
-- uid: KS.Shell.ShellBase.CommandInfo.MinimumArguments
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.MinimumArguments
   name: MinimumArguments
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_MinimumArguments
-  commentId: P:KS.Shell.ShellBase.CommandInfo.MinimumArguments
-  fullName: KS.Shell.ShellBase.CommandInfo.MinimumArguments
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_MinimumArguments
+  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.MinimumArguments
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.MinimumArguments
   nameWithType: CommandInfo.MinimumArguments
-- uid: KS.Shell.ShellBase.CommandInfo.MinimumArguments*
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.MinimumArguments*
   name: MinimumArguments
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_MinimumArguments_
-  commentId: Overload:KS.Shell.ShellBase.CommandInfo.MinimumArguments
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_MinimumArguments_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.MinimumArguments
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.CommandInfo.MinimumArguments
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.MinimumArguments
   nameWithType: CommandInfo.MinimumArguments
-- uid: KS.Shell.ShellBase.CommandInfo.NoMaintenance
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.NoMaintenance
   name: NoMaintenance
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_NoMaintenance
-  commentId: P:KS.Shell.ShellBase.CommandInfo.NoMaintenance
-  fullName: KS.Shell.ShellBase.CommandInfo.NoMaintenance
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_NoMaintenance
+  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.NoMaintenance
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.NoMaintenance
   nameWithType: CommandInfo.NoMaintenance
-- uid: KS.Shell.ShellBase.CommandInfo.NoMaintenance*
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.NoMaintenance*
   name: NoMaintenance
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_NoMaintenance_
-  commentId: Overload:KS.Shell.ShellBase.CommandInfo.NoMaintenance
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_NoMaintenance_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.NoMaintenance
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.CommandInfo.NoMaintenance
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.NoMaintenance
   nameWithType: CommandInfo.NoMaintenance
-- uid: KS.Shell.ShellBase.CommandInfo.Obsolete
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.Obsolete
   name: Obsolete
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_Obsolete
-  commentId: P:KS.Shell.ShellBase.CommandInfo.Obsolete
-  fullName: KS.Shell.ShellBase.CommandInfo.Obsolete
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Obsolete
+  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.Obsolete
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Obsolete
   nameWithType: CommandInfo.Obsolete
-- uid: KS.Shell.ShellBase.CommandInfo.Obsolete*
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.Obsolete*
   name: Obsolete
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_Obsolete_
-  commentId: Overload:KS.Shell.ShellBase.CommandInfo.Obsolete
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Obsolete_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.Obsolete
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.CommandInfo.Obsolete
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Obsolete
   nameWithType: CommandInfo.Obsolete
-- uid: KS.Shell.ShellBase.CommandInfo.SettingVariable
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.SettingVariable
   name: SettingVariable
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_SettingVariable
-  commentId: P:KS.Shell.ShellBase.CommandInfo.SettingVariable
-  fullName: KS.Shell.ShellBase.CommandInfo.SettingVariable
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_SettingVariable
+  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.SettingVariable
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.SettingVariable
   nameWithType: CommandInfo.SettingVariable
-- uid: KS.Shell.ShellBase.CommandInfo.SettingVariable*
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.SettingVariable*
   name: SettingVariable
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_SettingVariable_
-  commentId: Overload:KS.Shell.ShellBase.CommandInfo.SettingVariable
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_SettingVariable_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.SettingVariable
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.CommandInfo.SettingVariable
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.SettingVariable
   nameWithType: CommandInfo.SettingVariable
-- uid: KS.Shell.ShellBase.CommandInfo.Strict
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.Strict
   name: Strict
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_Strict
-  commentId: P:KS.Shell.ShellBase.CommandInfo.Strict
-  fullName: KS.Shell.ShellBase.CommandInfo.Strict
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Strict
+  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.Strict
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Strict
   nameWithType: CommandInfo.Strict
-- uid: KS.Shell.ShellBase.CommandInfo.Strict*
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.Strict*
   name: Strict
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_Strict_
-  commentId: Overload:KS.Shell.ShellBase.CommandInfo.Strict
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Strict_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.Strict
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.CommandInfo.Strict
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Strict
   nameWithType: CommandInfo.Strict
-- uid: KS.Shell.ShellBase.CommandInfo.Type
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.Type
   name: Type
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_Type
-  commentId: P:KS.Shell.ShellBase.CommandInfo.Type
-  fullName: KS.Shell.ShellBase.CommandInfo.Type
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Type
+  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.Type
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Type
   nameWithType: CommandInfo.Type
-- uid: KS.Shell.ShellBase.CommandInfo.Type*
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.Type*
   name: Type
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_Type_
-  commentId: Overload:KS.Shell.ShellBase.CommandInfo.Type
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Type_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.Type
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.CommandInfo.Type
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Type
   nameWithType: CommandInfo.Type
-- uid: KS.Shell.ShellBase.CommandInfo.Wrappable
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.Wrappable
   name: Wrappable
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_Wrappable
-  commentId: P:KS.Shell.ShellBase.CommandInfo.Wrappable
-  fullName: KS.Shell.ShellBase.CommandInfo.Wrappable
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Wrappable
+  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.Wrappable
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Wrappable
   nameWithType: CommandInfo.Wrappable
-- uid: KS.Shell.ShellBase.CommandInfo.Wrappable*
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.Wrappable*
   name: Wrappable
-  href: api/KS.Shell.ShellBase.CommandInfo.html#KS_Shell_ShellBase_CommandInfo_Wrappable_
-  commentId: Overload:KS.Shell.ShellBase.CommandInfo.Wrappable
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Wrappable_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.Wrappable
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.CommandInfo.Wrappable
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Wrappable
   nameWithType: CommandInfo.Wrappable
-- uid: KS.Shell.ShellBase.CommandManager
+- uid: KS.Shell.ShellBase.Commands.CommandManager
   name: CommandManager
-  href: api/KS.Shell.ShellBase.CommandManager.html
-  commentId: T:KS.Shell.ShellBase.CommandManager
-  fullName: KS.Shell.ShellBase.CommandManager
+  href: api/KS.Shell.ShellBase.Commands.CommandManager.html
+  commentId: T:KS.Shell.ShellBase.Commands.CommandManager
+  fullName: KS.Shell.ShellBase.Commands.CommandManager
   nameWithType: CommandManager
-- uid: KS.Shell.ShellBase.CommandManager.IsCommandFound(System.String)
+- uid: KS.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String)
   name: IsCommandFound(String)
-  href: api/KS.Shell.ShellBase.CommandManager.html#KS_Shell_ShellBase_CommandManager_IsCommandFound_System_String_
-  commentId: M:KS.Shell.ShellBase.CommandManager.IsCommandFound(System.String)
-  fullName: KS.Shell.ShellBase.CommandManager.IsCommandFound(System.String)
+  href: api/KS.Shell.ShellBase.Commands.CommandManager.html#KS_Shell_ShellBase_Commands_CommandManager_IsCommandFound_System_String_
+  commentId: M:KS.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String)
+  fullName: KS.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String)
   nameWithType: CommandManager.IsCommandFound(String)
-- uid: KS.Shell.ShellBase.CommandManager.IsCommandFound(System.String,KS.Shell.ShellBase.ShellType)
+- uid: KS.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String,KS.Shell.ShellBase.Shells.ShellType)
   name: IsCommandFound(String, ShellType)
-  href: api/KS.Shell.ShellBase.CommandManager.html#KS_Shell_ShellBase_CommandManager_IsCommandFound_System_String_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Shell.ShellBase.CommandManager.IsCommandFound(System.String,KS.Shell.ShellBase.ShellType)
-  fullName: KS.Shell.ShellBase.CommandManager.IsCommandFound(System.String, KS.Shell.ShellBase.ShellType)
+  href: api/KS.Shell.ShellBase.Commands.CommandManager.html#KS_Shell_ShellBase_Commands_CommandManager_IsCommandFound_System_String_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String,KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String, KS.Shell.ShellBase.Shells.ShellType)
   nameWithType: CommandManager.IsCommandFound(String, ShellType)
-- uid: KS.Shell.ShellBase.CommandManager.IsCommandFound*
+- uid: KS.Shell.ShellBase.Commands.CommandManager.IsCommandFound*
   name: IsCommandFound
-  href: api/KS.Shell.ShellBase.CommandManager.html#KS_Shell_ShellBase_CommandManager_IsCommandFound_
-  commentId: Overload:KS.Shell.ShellBase.CommandManager.IsCommandFound
+  href: api/KS.Shell.ShellBase.Commands.CommandManager.html#KS_Shell_ShellBase_Commands_CommandManager_IsCommandFound_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandManager.IsCommandFound
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.CommandManager.IsCommandFound
+  fullName: KS.Shell.ShellBase.Commands.CommandManager.IsCommandFound
   nameWithType: CommandManager.IsCommandFound
-- uid: KS.Shell.ShellBase.GetCommand
+- uid: KS.Shell.ShellBase.Commands.GetCommand
   name: GetCommand
-  href: api/KS.Shell.ShellBase.GetCommand.html
-  commentId: T:KS.Shell.ShellBase.GetCommand
-  fullName: KS.Shell.ShellBase.GetCommand
+  href: api/KS.Shell.ShellBase.Commands.GetCommand.html
+  commentId: T:KS.Shell.ShellBase.Commands.GetCommand
+  fullName: KS.Shell.ShellBase.Commands.GetCommand
   nameWithType: GetCommand
-- uid: KS.Shell.ShellBase.GetCommand.GetCommands(KS.Shell.ShellBase.ShellType)
+- uid: KS.Shell.ShellBase.Commands.GetCommand.GetCommands(KS.Shell.ShellBase.Shells.ShellType)
   name: GetCommands(ShellType)
-  href: api/KS.Shell.ShellBase.GetCommand.html#KS_Shell_ShellBase_GetCommand_GetCommands_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Shell.ShellBase.GetCommand.GetCommands(KS.Shell.ShellBase.ShellType)
-  fullName: KS.Shell.ShellBase.GetCommand.GetCommands(KS.Shell.ShellBase.ShellType)
+  href: api/KS.Shell.ShellBase.Commands.GetCommand.html#KS_Shell_ShellBase_Commands_GetCommand_GetCommands_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.ShellBase.Commands.GetCommand.GetCommands(KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.ShellBase.Commands.GetCommand.GetCommands(KS.Shell.ShellBase.Shells.ShellType)
   nameWithType: GetCommand.GetCommands(ShellType)
-- uid: KS.Shell.ShellBase.GetCommand.GetCommands*
+- uid: KS.Shell.ShellBase.Commands.GetCommand.GetCommands*
   name: GetCommands
-  href: api/KS.Shell.ShellBase.GetCommand.html#KS_Shell_ShellBase_GetCommand_GetCommands_
-  commentId: Overload:KS.Shell.ShellBase.GetCommand.GetCommands
+  href: api/KS.Shell.ShellBase.Commands.GetCommand.html#KS_Shell_ShellBase_Commands_GetCommand_GetCommands_
+  commentId: Overload:KS.Shell.ShellBase.Commands.GetCommand.GetCommands
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.GetCommand.GetCommands
+  fullName: KS.Shell.ShellBase.Commands.GetCommand.GetCommands
   nameWithType: GetCommand.GetCommands
-- uid: KS.Shell.ShellBase.HelpSystem
+- uid: KS.Shell.ShellBase.Commands.HelpSystem
   name: HelpSystem
-  href: api/KS.Shell.ShellBase.HelpSystem.html
-  commentId: T:KS.Shell.ShellBase.HelpSystem
-  fullName: KS.Shell.ShellBase.HelpSystem
+  href: api/KS.Shell.ShellBase.Commands.HelpSystem.html
+  commentId: T:KS.Shell.ShellBase.Commands.HelpSystem
+  fullName: KS.Shell.ShellBase.Commands.HelpSystem
   nameWithType: HelpSystem
-- uid: KS.Shell.ShellBase.HelpSystem.ShowHelp(KS.Shell.ShellBase.ShellType)
+- uid: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(KS.Shell.ShellBase.Shells.ShellType)
   name: ShowHelp(ShellType)
-  href: api/KS.Shell.ShellBase.HelpSystem.html#KS_Shell_ShellBase_HelpSystem_ShowHelp_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Shell.ShellBase.HelpSystem.ShowHelp(KS.Shell.ShellBase.ShellType)
-  fullName: KS.Shell.ShellBase.HelpSystem.ShowHelp(KS.Shell.ShellBase.ShellType)
+  href: api/KS.Shell.ShellBase.Commands.HelpSystem.html#KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(KS.Shell.ShellBase.Shells.ShellType)
   nameWithType: HelpSystem.ShowHelp(ShellType)
-- uid: KS.Shell.ShellBase.HelpSystem.ShowHelp(System.String)
+- uid: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String)
   name: ShowHelp(String)
-  href: api/KS.Shell.ShellBase.HelpSystem.html#KS_Shell_ShellBase_HelpSystem_ShowHelp_System_String_
-  commentId: M:KS.Shell.ShellBase.HelpSystem.ShowHelp(System.String)
-  fullName: KS.Shell.ShellBase.HelpSystem.ShowHelp(System.String)
+  href: api/KS.Shell.ShellBase.Commands.HelpSystem.html#KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_System_String_
+  commentId: M:KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String)
+  fullName: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String)
   nameWithType: HelpSystem.ShowHelp(String)
-- uid: KS.Shell.ShellBase.HelpSystem.ShowHelp(System.String,KS.Shell.ShellBase.ShellType,System.IO.StreamWriter)
+- uid: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,KS.Shell.ShellBase.Shells.ShellType,System.IO.StreamWriter)
   name: ShowHelp(String, ShellType, StreamWriter)
-  href: api/KS.Shell.ShellBase.HelpSystem.html#KS_Shell_ShellBase_HelpSystem_ShowHelp_System_String_KS_Shell_ShellBase_ShellType_System_IO_StreamWriter_
-  commentId: M:KS.Shell.ShellBase.HelpSystem.ShowHelp(System.String,KS.Shell.ShellBase.ShellType,System.IO.StreamWriter)
-  fullName: KS.Shell.ShellBase.HelpSystem.ShowHelp(System.String, KS.Shell.ShellBase.ShellType, System.IO.StreamWriter)
+  href: api/KS.Shell.ShellBase.Commands.HelpSystem.html#KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_System_String_KS_Shell_ShellBase_Shells_ShellType_System_IO_StreamWriter_
+  commentId: M:KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,KS.Shell.ShellBase.Shells.ShellType,System.IO.StreamWriter)
+  fullName: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String, KS.Shell.ShellBase.Shells.ShellType, System.IO.StreamWriter)
   nameWithType: HelpSystem.ShowHelp(String, ShellType, StreamWriter)
-- uid: KS.Shell.ShellBase.HelpSystem.ShowHelp*
+- uid: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp*
   name: ShowHelp
-  href: api/KS.Shell.ShellBase.HelpSystem.html#KS_Shell_ShellBase_HelpSystem_ShowHelp_
-  commentId: Overload:KS.Shell.ShellBase.HelpSystem.ShowHelp
+  href: api/KS.Shell.ShellBase.Commands.HelpSystem.html#KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_
+  commentId: Overload:KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.HelpSystem.ShowHelp
+  fullName: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp
   nameWithType: HelpSystem.ShowHelp
-- uid: KS.Shell.ShellBase.ICommand
+- uid: KS.Shell.ShellBase.Commands.ICommand
   name: ICommand
-  href: api/KS.Shell.ShellBase.ICommand.html
-  commentId: T:KS.Shell.ShellBase.ICommand
-  fullName: KS.Shell.ShellBase.ICommand
+  href: api/KS.Shell.ShellBase.Commands.ICommand.html
+  commentId: T:KS.Shell.ShellBase.Commands.ICommand
+  fullName: KS.Shell.ShellBase.Commands.ICommand
   nameWithType: ICommand
-- uid: KS.Shell.ShellBase.ICommand.Execute(System.String,System.String[],System.String[],System.String[])
+- uid: KS.Shell.ShellBase.Commands.ICommand.Execute(System.String,System.String[],System.String[],System.String[])
   name: Execute(String, String[], String[], String[])
-  href: api/KS.Shell.ShellBase.ICommand.html#KS_Shell_ShellBase_ICommand_Execute_System_String_System_String___System_String___System_String___
-  commentId: M:KS.Shell.ShellBase.ICommand.Execute(System.String,System.String[],System.String[],System.String[])
+  href: api/KS.Shell.ShellBase.Commands.ICommand.html#KS_Shell_ShellBase_Commands_ICommand_Execute_System_String_System_String___System_String___System_String___
+  commentId: M:KS.Shell.ShellBase.Commands.ICommand.Execute(System.String,System.String[],System.String[],System.String[])
   name.vb: Execute(String, String(), String(), String())
-  fullName: KS.Shell.ShellBase.ICommand.Execute(System.String, System.String[], System.String[], System.String[])
-  fullName.vb: KS.Shell.ShellBase.ICommand.Execute(System.String, System.String(), System.String(), System.String())
+  fullName: KS.Shell.ShellBase.Commands.ICommand.Execute(System.String, System.String[], System.String[], System.String[])
+  fullName.vb: KS.Shell.ShellBase.Commands.ICommand.Execute(System.String, System.String(), System.String(), System.String())
   nameWithType: ICommand.Execute(String, String[], String[], String[])
   nameWithType.vb: ICommand.Execute(String, String(), String(), String())
-- uid: KS.Shell.ShellBase.ICommand.Execute*
+- uid: KS.Shell.ShellBase.Commands.ICommand.Execute*
   name: Execute
-  href: api/KS.Shell.ShellBase.ICommand.html#KS_Shell_ShellBase_ICommand_Execute_
-  commentId: Overload:KS.Shell.ShellBase.ICommand.Execute
+  href: api/KS.Shell.ShellBase.Commands.ICommand.html#KS_Shell_ShellBase_Commands_ICommand_Execute_
+  commentId: Overload:KS.Shell.ShellBase.Commands.ICommand.Execute
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.ICommand.Execute
+  fullName: KS.Shell.ShellBase.Commands.ICommand.Execute
   nameWithType: ICommand.Execute
-- uid: KS.Shell.ShellBase.ICommand.HelpHelper
+- uid: KS.Shell.ShellBase.Commands.ICommand.HelpHelper
   name: HelpHelper()
-  href: api/KS.Shell.ShellBase.ICommand.html#KS_Shell_ShellBase_ICommand_HelpHelper
-  commentId: M:KS.Shell.ShellBase.ICommand.HelpHelper
-  fullName: KS.Shell.ShellBase.ICommand.HelpHelper()
+  href: api/KS.Shell.ShellBase.Commands.ICommand.html#KS_Shell_ShellBase_Commands_ICommand_HelpHelper
+  commentId: M:KS.Shell.ShellBase.Commands.ICommand.HelpHelper
+  fullName: KS.Shell.ShellBase.Commands.ICommand.HelpHelper()
   nameWithType: ICommand.HelpHelper()
-- uid: KS.Shell.ShellBase.ICommand.HelpHelper*
+- uid: KS.Shell.ShellBase.Commands.ICommand.HelpHelper*
   name: HelpHelper
-  href: api/KS.Shell.ShellBase.ICommand.html#KS_Shell_ShellBase_ICommand_HelpHelper_
-  commentId: Overload:KS.Shell.ShellBase.ICommand.HelpHelper
+  href: api/KS.Shell.ShellBase.Commands.ICommand.html#KS_Shell_ShellBase_Commands_ICommand_HelpHelper_
+  commentId: Overload:KS.Shell.ShellBase.Commands.ICommand.HelpHelper
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.ICommand.HelpHelper
+  fullName: KS.Shell.ShellBase.Commands.ICommand.HelpHelper
   nameWithType: ICommand.HelpHelper
-- uid: KS.Shell.ShellBase.IShell
-  name: IShell
-  href: api/KS.Shell.ShellBase.IShell.html
-  commentId: T:KS.Shell.ShellBase.IShell
-  fullName: KS.Shell.ShellBase.IShell
-  nameWithType: IShell
-- uid: KS.Shell.ShellBase.IShell.Bail
-  name: Bail
-  href: api/KS.Shell.ShellBase.IShell.html#KS_Shell_ShellBase_IShell_Bail
-  commentId: P:KS.Shell.ShellBase.IShell.Bail
-  fullName: KS.Shell.ShellBase.IShell.Bail
-  nameWithType: IShell.Bail
-- uid: KS.Shell.ShellBase.IShell.Bail*
-  name: Bail
-  href: api/KS.Shell.ShellBase.IShell.html#KS_Shell_ShellBase_IShell_Bail_
-  commentId: Overload:KS.Shell.ShellBase.IShell.Bail
+- uid: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo
+  name: ProvidedCommandArgumentsInfo
+  href: api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html
+  commentId: T:KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo
+  fullName: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo
+  nameWithType: ProvidedCommandArgumentsInfo
+- uid: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.ArgumentsList
+  name: ArgumentsList
+  href: api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_Commands_ProvidedCommandArgumentsInfo_ArgumentsList
+  commentId: P:KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.ArgumentsList
+  fullName: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.ArgumentsList
+  nameWithType: ProvidedCommandArgumentsInfo.ArgumentsList
+- uid: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.ArgumentsList*
+  name: ArgumentsList
+  href: api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_Commands_ProvidedCommandArgumentsInfo_ArgumentsList_
+  commentId: Overload:KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.ArgumentsList
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.ArgumentsList
+  nameWithType: ProvidedCommandArgumentsInfo.ArgumentsList
+- uid: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.ArgumentsText
+  name: ArgumentsText
+  href: api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_Commands_ProvidedCommandArgumentsInfo_ArgumentsText
+  commentId: P:KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.ArgumentsText
+  fullName: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.ArgumentsText
+  nameWithType: ProvidedCommandArgumentsInfo.ArgumentsText
+- uid: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.ArgumentsText*
+  name: ArgumentsText
+  href: api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_Commands_ProvidedCommandArgumentsInfo_ArgumentsText_
+  commentId: Overload:KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.ArgumentsText
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.ArgumentsText
+  nameWithType: ProvidedCommandArgumentsInfo.ArgumentsText
+- uid: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.Command
+  name: Command
+  href: api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_Commands_ProvidedCommandArgumentsInfo_Command
+  commentId: P:KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.Command
+  fullName: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.Command
+  nameWithType: ProvidedCommandArgumentsInfo.Command
+- uid: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.Command*
+  name: Command
+  href: api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_Commands_ProvidedCommandArgumentsInfo_Command_
+  commentId: Overload:KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.Command
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.Command
+  nameWithType: ProvidedCommandArgumentsInfo.Command
+- uid: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.FullArgumentsList
+  name: FullArgumentsList
+  href: api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_Commands_ProvidedCommandArgumentsInfo_FullArgumentsList
+  commentId: P:KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.FullArgumentsList
+  fullName: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.FullArgumentsList
+  nameWithType: ProvidedCommandArgumentsInfo.FullArgumentsList
+- uid: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.FullArgumentsList*
+  name: FullArgumentsList
+  href: api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_Commands_ProvidedCommandArgumentsInfo_FullArgumentsList_
+  commentId: Overload:KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.FullArgumentsList
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.FullArgumentsList
+  nameWithType: ProvidedCommandArgumentsInfo.FullArgumentsList
+- uid: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.RequiredArgumentsProvided
+  name: RequiredArgumentsProvided
+  href: api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_Commands_ProvidedCommandArgumentsInfo_RequiredArgumentsProvided
+  commentId: P:KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.RequiredArgumentsProvided
+  fullName: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.RequiredArgumentsProvided
+  nameWithType: ProvidedCommandArgumentsInfo.RequiredArgumentsProvided
+- uid: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.RequiredArgumentsProvided*
+  name: RequiredArgumentsProvided
+  href: api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_Commands_ProvidedCommandArgumentsInfo_RequiredArgumentsProvided_
+  commentId: Overload:KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.RequiredArgumentsProvided
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.RequiredArgumentsProvided
+  nameWithType: ProvidedCommandArgumentsInfo.RequiredArgumentsProvided
+- uid: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.SwitchesList
+  name: SwitchesList
+  href: api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_Commands_ProvidedCommandArgumentsInfo_SwitchesList
+  commentId: P:KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.SwitchesList
+  fullName: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.SwitchesList
+  nameWithType: ProvidedCommandArgumentsInfo.SwitchesList
+- uid: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.SwitchesList*
+  name: SwitchesList
+  href: api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_Commands_ProvidedCommandArgumentsInfo_SwitchesList_
+  commentId: Overload:KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.SwitchesList
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.SwitchesList
+  nameWithType: ProvidedCommandArgumentsInfo.SwitchesList
+- uid: KS.Shell.ShellBase.Shells
+  name: KS.Shell.ShellBase.Shells
+  href: api/KS.Shell.ShellBase.Shells.html
+  commentId: N:KS.Shell.ShellBase.Shells
+  fullName: KS.Shell.ShellBase.Shells
+  nameWithType: KS.Shell.ShellBase.Shells
+- uid: KS.Shell.ShellBase.Shells.IShell
+  name: IShell
+  href: api/KS.Shell.ShellBase.Shells.IShell.html
+  commentId: T:KS.Shell.ShellBase.Shells.IShell
+  fullName: KS.Shell.ShellBase.Shells.IShell
+  nameWithType: IShell
+- uid: KS.Shell.ShellBase.Shells.IShell.Bail
+  name: Bail
+  href: api/KS.Shell.ShellBase.Shells.IShell.html#KS_Shell_ShellBase_Shells_IShell_Bail
+  commentId: P:KS.Shell.ShellBase.Shells.IShell.Bail
+  fullName: KS.Shell.ShellBase.Shells.IShell.Bail
   nameWithType: IShell.Bail
-- uid: KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
+- uid: KS.Shell.ShellBase.Shells.IShell.Bail*
+  name: Bail
+  href: api/KS.Shell.ShellBase.Shells.IShell.html#KS_Shell_ShellBase_Shells_IShell_Bail_
+  commentId: Overload:KS.Shell.ShellBase.Shells.IShell.Bail
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.IShell.Bail
+  nameWithType: IShell.Bail
+- uid: KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
   name: InitializeShell(Object[])
-  href: api/KS.Shell.ShellBase.IShell.html#KS_Shell_ShellBase_IShell_InitializeShell_System_Object___
-  commentId: M:KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
+  href: api/KS.Shell.ShellBase.Shells.IShell.html#KS_Shell_ShellBase_Shells_IShell_InitializeShell_System_Object___
+  commentId: M:KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
   name.vb: InitializeShell(Object())
-  fullName: KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
-  fullName.vb: KS.Shell.ShellBase.IShell.InitializeShell(System.Object())
+  fullName: KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
+  fullName.vb: KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object())
   nameWithType: IShell.InitializeShell(Object[])
   nameWithType.vb: IShell.InitializeShell(Object())
-- uid: KS.Shell.ShellBase.IShell.InitializeShell*
+- uid: KS.Shell.ShellBase.Shells.IShell.InitializeShell*
   name: InitializeShell
-  href: api/KS.Shell.ShellBase.IShell.html#KS_Shell_ShellBase_IShell_InitializeShell_
-  commentId: Overload:KS.Shell.ShellBase.IShell.InitializeShell
+  href: api/KS.Shell.ShellBase.Shells.IShell.html#KS_Shell_ShellBase_Shells_IShell_InitializeShell_
+  commentId: Overload:KS.Shell.ShellBase.Shells.IShell.InitializeShell
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.IShell.InitializeShell
+  fullName: KS.Shell.ShellBase.Shells.IShell.InitializeShell
   nameWithType: IShell.InitializeShell
-- uid: KS.Shell.ShellBase.IShell.ShellType
+- uid: KS.Shell.ShellBase.Shells.IShell.ShellType
   name: ShellType
-  href: api/KS.Shell.ShellBase.IShell.html#KS_Shell_ShellBase_IShell_ShellType
-  commentId: P:KS.Shell.ShellBase.IShell.ShellType
-  fullName: KS.Shell.ShellBase.IShell.ShellType
+  href: api/KS.Shell.ShellBase.Shells.IShell.html#KS_Shell_ShellBase_Shells_IShell_ShellType
+  commentId: P:KS.Shell.ShellBase.Shells.IShell.ShellType
+  fullName: KS.Shell.ShellBase.Shells.IShell.ShellType
   nameWithType: IShell.ShellType
-- uid: KS.Shell.ShellBase.IShell.ShellType*
+- uid: KS.Shell.ShellBase.Shells.IShell.ShellType*
   name: ShellType
-  href: api/KS.Shell.ShellBase.IShell.html#KS_Shell_ShellBase_IShell_ShellType_
-  commentId: Overload:KS.Shell.ShellBase.IShell.ShellType
+  href: api/KS.Shell.ShellBase.Shells.IShell.html#KS_Shell_ShellBase_Shells_IShell_ShellType_
+  commentId: Overload:KS.Shell.ShellBase.Shells.IShell.ShellType
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.ShellBase.Shells.IShell.ShellType
   nameWithType: IShell.ShellType
-- uid: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo
-  name: ProvidedCommandArgumentsInfo
-  href: api/KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.html
-  commentId: T:KS.Shell.ShellBase.ProvidedCommandArgumentsInfo
-  fullName: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo
-  nameWithType: ProvidedCommandArgumentsInfo
-- uid: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.ArgumentsList
-  name: ArgumentsList
-  href: api/KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_ProvidedCommandArgumentsInfo_ArgumentsList
-  commentId: P:KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.ArgumentsList
-  fullName: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.ArgumentsList
-  nameWithType: ProvidedCommandArgumentsInfo.ArgumentsList
-- uid: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.ArgumentsList*
-  name: ArgumentsList
-  href: api/KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_ProvidedCommandArgumentsInfo_ArgumentsList_
-  commentId: Overload:KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.ArgumentsList
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.ArgumentsList
-  nameWithType: ProvidedCommandArgumentsInfo.ArgumentsList
-- uid: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.ArgumentsText
-  name: ArgumentsText
-  href: api/KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_ProvidedCommandArgumentsInfo_ArgumentsText
-  commentId: P:KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.ArgumentsText
-  fullName: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.ArgumentsText
-  nameWithType: ProvidedCommandArgumentsInfo.ArgumentsText
-- uid: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.ArgumentsText*
-  name: ArgumentsText
-  href: api/KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_ProvidedCommandArgumentsInfo_ArgumentsText_
-  commentId: Overload:KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.ArgumentsText
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.ArgumentsText
-  nameWithType: ProvidedCommandArgumentsInfo.ArgumentsText
-- uid: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.Command
-  name: Command
-  href: api/KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_ProvidedCommandArgumentsInfo_Command
-  commentId: P:KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.Command
-  fullName: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.Command
-  nameWithType: ProvidedCommandArgumentsInfo.Command
-- uid: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.Command*
-  name: Command
-  href: api/KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_ProvidedCommandArgumentsInfo_Command_
-  commentId: Overload:KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.Command
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.Command
-  nameWithType: ProvidedCommandArgumentsInfo.Command
-- uid: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.FullArgumentsList
-  name: FullArgumentsList
-  href: api/KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_ProvidedCommandArgumentsInfo_FullArgumentsList
-  commentId: P:KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.FullArgumentsList
-  fullName: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.FullArgumentsList
-  nameWithType: ProvidedCommandArgumentsInfo.FullArgumentsList
-- uid: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.FullArgumentsList*
-  name: FullArgumentsList
-  href: api/KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_ProvidedCommandArgumentsInfo_FullArgumentsList_
-  commentId: Overload:KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.FullArgumentsList
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.FullArgumentsList
-  nameWithType: ProvidedCommandArgumentsInfo.FullArgumentsList
-- uid: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.RequiredArgumentsProvided
-  name: RequiredArgumentsProvided
-  href: api/KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_ProvidedCommandArgumentsInfo_RequiredArgumentsProvided
-  commentId: P:KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.RequiredArgumentsProvided
-  fullName: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.RequiredArgumentsProvided
-  nameWithType: ProvidedCommandArgumentsInfo.RequiredArgumentsProvided
-- uid: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.RequiredArgumentsProvided*
-  name: RequiredArgumentsProvided
-  href: api/KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_ProvidedCommandArgumentsInfo_RequiredArgumentsProvided_
-  commentId: Overload:KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.RequiredArgumentsProvided
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.RequiredArgumentsProvided
-  nameWithType: ProvidedCommandArgumentsInfo.RequiredArgumentsProvided
-- uid: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.SwitchesList
-  name: SwitchesList
-  href: api/KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_ProvidedCommandArgumentsInfo_SwitchesList
-  commentId: P:KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.SwitchesList
-  fullName: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.SwitchesList
-  nameWithType: ProvidedCommandArgumentsInfo.SwitchesList
-- uid: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.SwitchesList*
-  name: SwitchesList
-  href: api/KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.html#KS_Shell_ShellBase_ProvidedCommandArgumentsInfo_SwitchesList_
-  commentId: Overload:KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.SwitchesList
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.ProvidedCommandArgumentsInfo.SwitchesList
-  nameWithType: ProvidedCommandArgumentsInfo.SwitchesList
-- uid: KS.Shell.ShellBase.ShellExecutor
+- uid: KS.Shell.ShellBase.Shells.ShellExecutor
   name: ShellExecutor
-  href: api/KS.Shell.ShellBase.ShellExecutor.html
-  commentId: T:KS.Shell.ShellBase.ShellExecutor
-  fullName: KS.Shell.ShellBase.ShellExecutor
+  href: api/KS.Shell.ShellBase.Shells.ShellExecutor.html
+  commentId: T:KS.Shell.ShellBase.Shells.ShellExecutor
+  fullName: KS.Shell.ShellBase.Shells.ShellExecutor
   nameWithType: ShellExecutor
-- uid: KS.Shell.ShellBase.ShellExecutor.Bail
+- uid: KS.Shell.ShellBase.Shells.ShellExecutor.Bail
   name: IShell.Bail
-  href: api/KS.Shell.ShellBase.ShellExecutor.html#KS_Shell_ShellBase_ShellExecutor_Bail
-  commentId: P:KS.Shell.ShellBase.ShellExecutor.Bail
+  href: api/KS.Shell.ShellBase.Shells.ShellExecutor.html#KS_Shell_ShellBase_Shells_ShellExecutor_Bail
+  commentId: P:KS.Shell.ShellBase.Shells.ShellExecutor.Bail
   name.vb: Bail
-  fullName: KS.Shell.ShellBase.ShellExecutor.KS.Shell.ShellBase.IShell.Bail
-  fullName.vb: KS.Shell.ShellBase.ShellExecutor.Bail
+  fullName: KS.Shell.ShellBase.Shells.ShellExecutor.KS.Shell.ShellBase.Shells.IShell.Bail
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellExecutor.Bail
   nameWithType: ShellExecutor.IShell.Bail
   nameWithType.vb: ShellExecutor.Bail
-- uid: KS.Shell.ShellBase.ShellExecutor.Bail*
+- uid: KS.Shell.ShellBase.Shells.ShellExecutor.Bail*
   name: IShell.Bail
-  href: api/KS.Shell.ShellBase.ShellExecutor.html#KS_Shell_ShellBase_ShellExecutor_Bail_
-  commentId: Overload:KS.Shell.ShellBase.ShellExecutor.Bail
+  href: api/KS.Shell.ShellBase.Shells.ShellExecutor.html#KS_Shell_ShellBase_Shells_ShellExecutor_Bail_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellExecutor.Bail
   isSpec: "True"
   name.vb: Bail
-  fullName: KS.Shell.ShellBase.ShellExecutor.KS.Shell.ShellBase.IShell.Bail
-  fullName.vb: KS.Shell.ShellBase.ShellExecutor.Bail
+  fullName: KS.Shell.ShellBase.Shells.ShellExecutor.KS.Shell.ShellBase.Shells.IShell.Bail
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellExecutor.Bail
   nameWithType: ShellExecutor.IShell.Bail
   nameWithType.vb: ShellExecutor.Bail
-- uid: KS.Shell.ShellBase.ShellExecutor.InitializeShell(System.Object[])
+- uid: KS.Shell.ShellBase.Shells.ShellExecutor.InitializeShell(System.Object[])
   name: IShell.InitializeShell(Object[])
-  href: api/KS.Shell.ShellBase.ShellExecutor.html#KS_Shell_ShellBase_ShellExecutor_InitializeShell_System_Object___
-  commentId: M:KS.Shell.ShellBase.ShellExecutor.InitializeShell(System.Object[])
+  href: api/KS.Shell.ShellBase.Shells.ShellExecutor.html#KS_Shell_ShellBase_Shells_ShellExecutor_InitializeShell_System_Object___
+  commentId: M:KS.Shell.ShellBase.Shells.ShellExecutor.InitializeShell(System.Object[])
   name.vb: InitializeShell(Object())
-  fullName: KS.Shell.ShellBase.ShellExecutor.KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
-  fullName.vb: KS.Shell.ShellBase.ShellExecutor.InitializeShell(System.Object())
+  fullName: KS.Shell.ShellBase.Shells.ShellExecutor.KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellExecutor.InitializeShell(System.Object())
   nameWithType: ShellExecutor.IShell.InitializeShell(Object[])
   nameWithType.vb: ShellExecutor.InitializeShell(Object())
-- uid: KS.Shell.ShellBase.ShellExecutor.InitializeShell*
+- uid: KS.Shell.ShellBase.Shells.ShellExecutor.InitializeShell*
   name: IShell.InitializeShell
-  href: api/KS.Shell.ShellBase.ShellExecutor.html#KS_Shell_ShellBase_ShellExecutor_InitializeShell_
-  commentId: Overload:KS.Shell.ShellBase.ShellExecutor.InitializeShell
+  href: api/KS.Shell.ShellBase.Shells.ShellExecutor.html#KS_Shell_ShellBase_Shells_ShellExecutor_InitializeShell_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellExecutor.InitializeShell
   isSpec: "True"
   name.vb: InitializeShell
-  fullName: KS.Shell.ShellBase.ShellExecutor.KS.Shell.ShellBase.IShell.InitializeShell
-  fullName.vb: KS.Shell.ShellBase.ShellExecutor.InitializeShell
+  fullName: KS.Shell.ShellBase.Shells.ShellExecutor.KS.Shell.ShellBase.Shells.IShell.InitializeShell
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellExecutor.InitializeShell
   nameWithType: ShellExecutor.IShell.InitializeShell
   nameWithType.vb: ShellExecutor.InitializeShell
-- uid: KS.Shell.ShellBase.ShellExecutor.ShellType
+- uid: KS.Shell.ShellBase.Shells.ShellExecutor.ShellType
   name: IShell.ShellType
-  href: api/KS.Shell.ShellBase.ShellExecutor.html#KS_Shell_ShellBase_ShellExecutor_ShellType
-  commentId: P:KS.Shell.ShellBase.ShellExecutor.ShellType
+  href: api/KS.Shell.ShellBase.Shells.ShellExecutor.html#KS_Shell_ShellBase_Shells_ShellExecutor_ShellType
+  commentId: P:KS.Shell.ShellBase.Shells.ShellExecutor.ShellType
   name.vb: ShellType
-  fullName: KS.Shell.ShellBase.ShellExecutor.KS.Shell.ShellBase.IShell.ShellType
-  fullName.vb: KS.Shell.ShellBase.ShellExecutor.ShellType
+  fullName: KS.Shell.ShellBase.Shells.ShellExecutor.KS.Shell.ShellBase.Shells.IShell.ShellType
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellExecutor.ShellType
   nameWithType: ShellExecutor.IShell.ShellType
   nameWithType.vb: ShellExecutor.ShellType
-- uid: KS.Shell.ShellBase.ShellExecutor.ShellType*
+- uid: KS.Shell.ShellBase.Shells.ShellExecutor.ShellType*
   name: IShell.ShellType
-  href: api/KS.Shell.ShellBase.ShellExecutor.html#KS_Shell_ShellBase_ShellExecutor_ShellType_
-  commentId: Overload:KS.Shell.ShellBase.ShellExecutor.ShellType
+  href: api/KS.Shell.ShellBase.Shells.ShellExecutor.html#KS_Shell_ShellBase_Shells_ShellExecutor_ShellType_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellExecutor.ShellType
   isSpec: "True"
   name.vb: ShellType
-  fullName: KS.Shell.ShellBase.ShellExecutor.KS.Shell.ShellBase.IShell.ShellType
-  fullName.vb: KS.Shell.ShellBase.ShellExecutor.ShellType
+  fullName: KS.Shell.ShellBase.Shells.ShellExecutor.KS.Shell.ShellBase.Shells.IShell.ShellType
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellExecutor.ShellType
   nameWithType: ShellExecutor.IShell.ShellType
   nameWithType.vb: ShellExecutor.ShellType
-- uid: KS.Shell.ShellBase.ShellInfo
+- uid: KS.Shell.ShellBase.Shells.ShellInfo
   name: ShellInfo
-  href: api/KS.Shell.ShellBase.ShellInfo.html
-  commentId: T:KS.Shell.ShellBase.ShellInfo
-  fullName: KS.Shell.ShellBase.ShellInfo
+  href: api/KS.Shell.ShellBase.Shells.ShellInfo.html
+  commentId: T:KS.Shell.ShellBase.Shells.ShellInfo
+  fullName: KS.Shell.ShellBase.Shells.ShellInfo
   nameWithType: ShellInfo
-- uid: KS.Shell.ShellBase.ShellInfo.#ctor(KS.Shell.ShellBase.ShellType,KS.Shell.ShellBase.ShellExecutor,KS.Misc.Threading.KernelThread)
+- uid: KS.Shell.ShellBase.Shells.ShellInfo.#ctor(KS.Shell.ShellBase.Shells.ShellType,KS.Shell.ShellBase.Shells.ShellExecutor,KS.Misc.Threading.KernelThread)
   name: ShellInfo(ShellType, ShellExecutor, KernelThread)
-  href: api/KS.Shell.ShellBase.ShellInfo.html#KS_Shell_ShellBase_ShellInfo__ctor_KS_Shell_ShellBase_ShellType_KS_Shell_ShellBase_ShellExecutor_KS_Misc_Threading_KernelThread_
-  commentId: M:KS.Shell.ShellBase.ShellInfo.#ctor(KS.Shell.ShellBase.ShellType,KS.Shell.ShellBase.ShellExecutor,KS.Misc.Threading.KernelThread)
-  fullName: KS.Shell.ShellBase.ShellInfo.ShellInfo(KS.Shell.ShellBase.ShellType, KS.Shell.ShellBase.ShellExecutor, KS.Misc.Threading.KernelThread)
+  href: api/KS.Shell.ShellBase.Shells.ShellInfo.html#KS_Shell_ShellBase_Shells_ShellInfo__ctor_KS_Shell_ShellBase_Shells_ShellType_KS_Shell_ShellBase_Shells_ShellExecutor_KS_Misc_Threading_KernelThread_
+  commentId: M:KS.Shell.ShellBase.Shells.ShellInfo.#ctor(KS.Shell.ShellBase.Shells.ShellType,KS.Shell.ShellBase.Shells.ShellExecutor,KS.Misc.Threading.KernelThread)
+  fullName: KS.Shell.ShellBase.Shells.ShellInfo.ShellInfo(KS.Shell.ShellBase.Shells.ShellType, KS.Shell.ShellBase.Shells.ShellExecutor, KS.Misc.Threading.KernelThread)
   nameWithType: ShellInfo.ShellInfo(ShellType, ShellExecutor, KernelThread)
-- uid: KS.Shell.ShellBase.ShellInfo.#ctor*
+- uid: KS.Shell.ShellBase.Shells.ShellInfo.#ctor*
   name: ShellInfo
-  href: api/KS.Shell.ShellBase.ShellInfo.html#KS_Shell_ShellBase_ShellInfo__ctor_
-  commentId: Overload:KS.Shell.ShellBase.ShellInfo.#ctor
+  href: api/KS.Shell.ShellBase.Shells.ShellInfo.html#KS_Shell_ShellBase_Shells_ShellInfo__ctor_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellInfo.#ctor
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.ShellInfo.ShellInfo
+  fullName: KS.Shell.ShellBase.Shells.ShellInfo.ShellInfo
   nameWithType: ShellInfo.ShellInfo
-- uid: KS.Shell.ShellBase.ShellInfo.AltCommandThreads
+- uid: KS.Shell.ShellBase.Shells.ShellInfo.AltCommandThreads
   name: AltCommandThreads
-  href: api/KS.Shell.ShellBase.ShellInfo.html#KS_Shell_ShellBase_ShellInfo_AltCommandThreads
-  commentId: F:KS.Shell.ShellBase.ShellInfo.AltCommandThreads
-  fullName: KS.Shell.ShellBase.ShellInfo.AltCommandThreads
+  href: api/KS.Shell.ShellBase.Shells.ShellInfo.html#KS_Shell_ShellBase_Shells_ShellInfo_AltCommandThreads
+  commentId: F:KS.Shell.ShellBase.Shells.ShellInfo.AltCommandThreads
+  fullName: KS.Shell.ShellBase.Shells.ShellInfo.AltCommandThreads
   nameWithType: ShellInfo.AltCommandThreads
-- uid: KS.Shell.ShellBase.ShellInfo.ShellCommandThread
+- uid: KS.Shell.ShellBase.Shells.ShellInfo.ShellCommandThread
   name: ShellCommandThread
-  href: api/KS.Shell.ShellBase.ShellInfo.html#KS_Shell_ShellBase_ShellInfo_ShellCommandThread
-  commentId: F:KS.Shell.ShellBase.ShellInfo.ShellCommandThread
-  fullName: KS.Shell.ShellBase.ShellInfo.ShellCommandThread
+  href: api/KS.Shell.ShellBase.Shells.ShellInfo.html#KS_Shell_ShellBase_Shells_ShellInfo_ShellCommandThread
+  commentId: F:KS.Shell.ShellBase.Shells.ShellInfo.ShellCommandThread
+  fullName: KS.Shell.ShellBase.Shells.ShellInfo.ShellCommandThread
   nameWithType: ShellInfo.ShellCommandThread
-- uid: KS.Shell.ShellBase.ShellInfo.ShellExecutor
+- uid: KS.Shell.ShellBase.Shells.ShellInfo.ShellExecutor
   name: ShellExecutor
-  href: api/KS.Shell.ShellBase.ShellInfo.html#KS_Shell_ShellBase_ShellInfo_ShellExecutor
-  commentId: F:KS.Shell.ShellBase.ShellInfo.ShellExecutor
-  fullName: KS.Shell.ShellBase.ShellInfo.ShellExecutor
+  href: api/KS.Shell.ShellBase.Shells.ShellInfo.html#KS_Shell_ShellBase_Shells_ShellInfo_ShellExecutor
+  commentId: F:KS.Shell.ShellBase.Shells.ShellInfo.ShellExecutor
+  fullName: KS.Shell.ShellBase.Shells.ShellInfo.ShellExecutor
   nameWithType: ShellInfo.ShellExecutor
-- uid: KS.Shell.ShellBase.ShellInfo.ShellType
+- uid: KS.Shell.ShellBase.Shells.ShellInfo.ShellType
   name: ShellType
-  href: api/KS.Shell.ShellBase.ShellInfo.html#KS_Shell_ShellBase_ShellInfo_ShellType
-  commentId: F:KS.Shell.ShellBase.ShellInfo.ShellType
-  fullName: KS.Shell.ShellBase.ShellInfo.ShellType
+  href: api/KS.Shell.ShellBase.Shells.ShellInfo.html#KS_Shell_ShellBase_Shells_ShellInfo_ShellType
+  commentId: F:KS.Shell.ShellBase.Shells.ShellInfo.ShellType
+  fullName: KS.Shell.ShellBase.Shells.ShellInfo.ShellType
   nameWithType: ShellInfo.ShellType
-- uid: KS.Shell.ShellBase.ShellStart
+- uid: KS.Shell.ShellBase.Shells.ShellStart
   name: ShellStart
-  href: api/KS.Shell.ShellBase.ShellStart.html
-  commentId: T:KS.Shell.ShellBase.ShellStart
-  fullName: KS.Shell.ShellBase.ShellStart
+  href: api/KS.Shell.ShellBase.Shells.ShellStart.html
+  commentId: T:KS.Shell.ShellBase.Shells.ShellStart
+  fullName: KS.Shell.ShellBase.Shells.ShellStart
   nameWithType: ShellStart
-- uid: KS.Shell.ShellBase.ShellStart.GetShellExecutor(KS.Shell.ShellBase.ShellType)
+- uid: KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor(KS.Shell.ShellBase.Shells.ShellType)
   name: GetShellExecutor(ShellType)
-  href: api/KS.Shell.ShellBase.ShellStart.html#KS_Shell_ShellBase_ShellStart_GetShellExecutor_KS_Shell_ShellBase_ShellType_
-  commentId: M:KS.Shell.ShellBase.ShellStart.GetShellExecutor(KS.Shell.ShellBase.ShellType)
-  fullName: KS.Shell.ShellBase.ShellStart.GetShellExecutor(KS.Shell.ShellBase.ShellType)
+  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_GetShellExecutor_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor(KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor(KS.Shell.ShellBase.Shells.ShellType)
   nameWithType: ShellStart.GetShellExecutor(ShellType)
-- uid: KS.Shell.ShellBase.ShellStart.GetShellExecutor*
+- uid: KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor*
   name: GetShellExecutor
-  href: api/KS.Shell.ShellBase.ShellStart.html#KS_Shell_ShellBase_ShellStart_GetShellExecutor_
-  commentId: Overload:KS.Shell.ShellBase.ShellStart.GetShellExecutor
+  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_GetShellExecutor_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.ShellStart.GetShellExecutor
+  fullName: KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor
   nameWithType: ShellStart.GetShellExecutor
-- uid: KS.Shell.ShellBase.ShellStart.KillShell
+- uid: KS.Shell.ShellBase.Shells.ShellStart.KillShell
   name: KillShell()
-  href: api/KS.Shell.ShellBase.ShellStart.html#KS_Shell_ShellBase_ShellStart_KillShell
-  commentId: M:KS.Shell.ShellBase.ShellStart.KillShell
-  fullName: KS.Shell.ShellBase.ShellStart.KillShell()
+  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_KillShell
+  commentId: M:KS.Shell.ShellBase.Shells.ShellStart.KillShell
+  fullName: KS.Shell.ShellBase.Shells.ShellStart.KillShell()
   nameWithType: ShellStart.KillShell()
-- uid: KS.Shell.ShellBase.ShellStart.KillShell*
+- uid: KS.Shell.ShellBase.Shells.ShellStart.KillShell*
   name: KillShell
-  href: api/KS.Shell.ShellBase.ShellStart.html#KS_Shell_ShellBase_ShellStart_KillShell_
-  commentId: Overload:KS.Shell.ShellBase.ShellStart.KillShell
+  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_KillShell_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellStart.KillShell
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.ShellStart.KillShell
+  fullName: KS.Shell.ShellBase.Shells.ShellStart.KillShell
   nameWithType: ShellStart.KillShell
-- uid: KS.Shell.ShellBase.ShellStart.KillShellForced
+- uid: KS.Shell.ShellBase.Shells.ShellStart.KillShellForced
   name: KillShellForced()
-  href: api/KS.Shell.ShellBase.ShellStart.html#KS_Shell_ShellBase_ShellStart_KillShellForced
-  commentId: M:KS.Shell.ShellBase.ShellStart.KillShellForced
-  fullName: KS.Shell.ShellBase.ShellStart.KillShellForced()
+  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_KillShellForced
+  commentId: M:KS.Shell.ShellBase.Shells.ShellStart.KillShellForced
+  fullName: KS.Shell.ShellBase.Shells.ShellStart.KillShellForced()
   nameWithType: ShellStart.KillShellForced()
-- uid: KS.Shell.ShellBase.ShellStart.KillShellForced*
+- uid: KS.Shell.ShellBase.Shells.ShellStart.KillShellForced*
   name: KillShellForced
-  href: api/KS.Shell.ShellBase.ShellStart.html#KS_Shell_ShellBase_ShellStart_KillShellForced_
-  commentId: Overload:KS.Shell.ShellBase.ShellStart.KillShellForced
+  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_KillShellForced_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellStart.KillShellForced
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.ShellStart.KillShellForced
+  fullName: KS.Shell.ShellBase.Shells.ShellStart.KillShellForced
   nameWithType: ShellStart.KillShellForced
-- uid: KS.Shell.ShellBase.ShellStart.PurgeShells
+- uid: KS.Shell.ShellBase.Shells.ShellStart.PurgeShells
   name: PurgeShells()
-  href: api/KS.Shell.ShellBase.ShellStart.html#KS_Shell_ShellBase_ShellStart_PurgeShells
-  commentId: M:KS.Shell.ShellBase.ShellStart.PurgeShells
-  fullName: KS.Shell.ShellBase.ShellStart.PurgeShells()
+  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_PurgeShells
+  commentId: M:KS.Shell.ShellBase.Shells.ShellStart.PurgeShells
+  fullName: KS.Shell.ShellBase.Shells.ShellStart.PurgeShells()
   nameWithType: ShellStart.PurgeShells()
-- uid: KS.Shell.ShellBase.ShellStart.PurgeShells*
+- uid: KS.Shell.ShellBase.Shells.ShellStart.PurgeShells*
   name: PurgeShells
-  href: api/KS.Shell.ShellBase.ShellStart.html#KS_Shell_ShellBase_ShellStart_PurgeShells_
-  commentId: Overload:KS.Shell.ShellBase.ShellStart.PurgeShells
+  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_PurgeShells_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellStart.PurgeShells
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.ShellStart.PurgeShells
+  fullName: KS.Shell.ShellBase.Shells.ShellStart.PurgeShells
   nameWithType: ShellStart.PurgeShells
-- uid: KS.Shell.ShellBase.ShellStart.StartShell(KS.Shell.ShellBase.ShellType,System.Object[])
+- uid: KS.Shell.ShellBase.Shells.ShellStart.StartShell(KS.Shell.ShellBase.Shells.ShellType,System.Object[])
   name: StartShell(ShellType, Object[])
-  href: api/KS.Shell.ShellBase.ShellStart.html#KS_Shell_ShellBase_ShellStart_StartShell_KS_Shell_ShellBase_ShellType_System_Object___
-  commentId: M:KS.Shell.ShellBase.ShellStart.StartShell(KS.Shell.ShellBase.ShellType,System.Object[])
+  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_StartShell_KS_Shell_ShellBase_Shells_ShellType_System_Object___
+  commentId: M:KS.Shell.ShellBase.Shells.ShellStart.StartShell(KS.Shell.ShellBase.Shells.ShellType,System.Object[])
   name.vb: StartShell(ShellType, Object())
-  fullName: KS.Shell.ShellBase.ShellStart.StartShell(KS.Shell.ShellBase.ShellType, System.Object[])
-  fullName.vb: KS.Shell.ShellBase.ShellStart.StartShell(KS.Shell.ShellBase.ShellType, System.Object())
+  fullName: KS.Shell.ShellBase.Shells.ShellStart.StartShell(KS.Shell.ShellBase.Shells.ShellType, System.Object[])
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellStart.StartShell(KS.Shell.ShellBase.Shells.ShellType, System.Object())
   nameWithType: ShellStart.StartShell(ShellType, Object[])
   nameWithType.vb: ShellStart.StartShell(ShellType, Object())
-- uid: KS.Shell.ShellBase.ShellStart.StartShell*
+- uid: KS.Shell.ShellBase.Shells.ShellStart.StartShell*
   name: StartShell
-  href: api/KS.Shell.ShellBase.ShellStart.html#KS_Shell_ShellBase_ShellStart_StartShell_
-  commentId: Overload:KS.Shell.ShellBase.ShellStart.StartShell
+  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_StartShell_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellStart.StartShell
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.ShellStart.StartShell
+  fullName: KS.Shell.ShellBase.Shells.ShellStart.StartShell
   nameWithType: ShellStart.StartShell
-- uid: KS.Shell.ShellBase.ShellStart.StartShellForced(KS.Shell.ShellBase.ShellType,System.Object[])
+- uid: KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(KS.Shell.ShellBase.Shells.ShellType,System.Object[])
   name: StartShellForced(ShellType, Object[])
-  href: api/KS.Shell.ShellBase.ShellStart.html#KS_Shell_ShellBase_ShellStart_StartShellForced_KS_Shell_ShellBase_ShellType_System_Object___
-  commentId: M:KS.Shell.ShellBase.ShellStart.StartShellForced(KS.Shell.ShellBase.ShellType,System.Object[])
+  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_StartShellForced_KS_Shell_ShellBase_Shells_ShellType_System_Object___
+  commentId: M:KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(KS.Shell.ShellBase.Shells.ShellType,System.Object[])
   name.vb: StartShellForced(ShellType, Object())
-  fullName: KS.Shell.ShellBase.ShellStart.StartShellForced(KS.Shell.ShellBase.ShellType, System.Object[])
-  fullName.vb: KS.Shell.ShellBase.ShellStart.StartShellForced(KS.Shell.ShellBase.ShellType, System.Object())
+  fullName: KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(KS.Shell.ShellBase.Shells.ShellType, System.Object[])
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(KS.Shell.ShellBase.Shells.ShellType, System.Object())
   nameWithType: ShellStart.StartShellForced(ShellType, Object[])
   nameWithType.vb: ShellStart.StartShellForced(ShellType, Object())
-- uid: KS.Shell.ShellBase.ShellStart.StartShellForced*
+- uid: KS.Shell.ShellBase.Shells.ShellStart.StartShellForced*
   name: StartShellForced
-  href: api/KS.Shell.ShellBase.ShellStart.html#KS_Shell_ShellBase_ShellStart_StartShellForced_
-  commentId: Overload:KS.Shell.ShellBase.ShellStart.StartShellForced
+  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_StartShellForced_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellStart.StartShellForced
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.ShellStart.StartShellForced
+  fullName: KS.Shell.ShellBase.Shells.ShellStart.StartShellForced
   nameWithType: ShellStart.StartShellForced
-- uid: KS.Shell.ShellBase.ShellType
+- uid: KS.Shell.ShellBase.Shells.ShellType
   name: ShellType
-  href: api/KS.Shell.ShellBase.ShellType.html
-  commentId: T:KS.Shell.ShellBase.ShellType
-  fullName: KS.Shell.ShellBase.ShellType
+  href: api/KS.Shell.ShellBase.Shells.ShellType.html
+  commentId: T:KS.Shell.ShellBase.Shells.ShellType
+  fullName: KS.Shell.ShellBase.Shells.ShellType
   nameWithType: ShellType
-- uid: KS.Shell.ShellBase.ShellType.FTPShell
+- uid: KS.Shell.ShellBase.Shells.ShellType.FTPShell
   name: FTPShell
-  href: api/KS.Shell.ShellBase.ShellType.html#KS_Shell_ShellBase_ShellType_FTPShell
-  commentId: F:KS.Shell.ShellBase.ShellType.FTPShell
-  fullName: KS.Shell.ShellBase.ShellType.FTPShell
+  href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_FTPShell
+  commentId: F:KS.Shell.ShellBase.Shells.ShellType.FTPShell
+  fullName: KS.Shell.ShellBase.Shells.ShellType.FTPShell
   nameWithType: ShellType.FTPShell
-- uid: KS.Shell.ShellBase.ShellType.HexShell
+- uid: KS.Shell.ShellBase.Shells.ShellType.HexShell
   name: HexShell
-  href: api/KS.Shell.ShellBase.ShellType.html#KS_Shell_ShellBase_ShellType_HexShell
-  commentId: F:KS.Shell.ShellBase.ShellType.HexShell
-  fullName: KS.Shell.ShellBase.ShellType.HexShell
+  href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_HexShell
+  commentId: F:KS.Shell.ShellBase.Shells.ShellType.HexShell
+  fullName: KS.Shell.ShellBase.Shells.ShellType.HexShell
   nameWithType: ShellType.HexShell
-- uid: KS.Shell.ShellBase.ShellType.HTTPShell
+- uid: KS.Shell.ShellBase.Shells.ShellType.HTTPShell
   name: HTTPShell
-  href: api/KS.Shell.ShellBase.ShellType.html#KS_Shell_ShellBase_ShellType_HTTPShell
-  commentId: F:KS.Shell.ShellBase.ShellType.HTTPShell
-  fullName: KS.Shell.ShellBase.ShellType.HTTPShell
+  href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_HTTPShell
+  commentId: F:KS.Shell.ShellBase.Shells.ShellType.HTTPShell
+  fullName: KS.Shell.ShellBase.Shells.ShellType.HTTPShell
   nameWithType: ShellType.HTTPShell
-- uid: KS.Shell.ShellBase.ShellType.JsonShell
+- uid: KS.Shell.ShellBase.Shells.ShellType.JsonShell
   name: JsonShell
-  href: api/KS.Shell.ShellBase.ShellType.html#KS_Shell_ShellBase_ShellType_JsonShell
-  commentId: F:KS.Shell.ShellBase.ShellType.JsonShell
-  fullName: KS.Shell.ShellBase.ShellType.JsonShell
+  href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_JsonShell
+  commentId: F:KS.Shell.ShellBase.Shells.ShellType.JsonShell
+  fullName: KS.Shell.ShellBase.Shells.ShellType.JsonShell
   nameWithType: ShellType.JsonShell
-- uid: KS.Shell.ShellBase.ShellType.MailShell
+- uid: KS.Shell.ShellBase.Shells.ShellType.MailShell
   name: MailShell
-  href: api/KS.Shell.ShellBase.ShellType.html#KS_Shell_ShellBase_ShellType_MailShell
-  commentId: F:KS.Shell.ShellBase.ShellType.MailShell
-  fullName: KS.Shell.ShellBase.ShellType.MailShell
+  href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_MailShell
+  commentId: F:KS.Shell.ShellBase.Shells.ShellType.MailShell
+  fullName: KS.Shell.ShellBase.Shells.ShellType.MailShell
   nameWithType: ShellType.MailShell
-- uid: KS.Shell.ShellBase.ShellType.RemoteDebugShell
+- uid: KS.Shell.ShellBase.Shells.ShellType.RemoteDebugShell
   name: RemoteDebugShell
-  href: api/KS.Shell.ShellBase.ShellType.html#KS_Shell_ShellBase_ShellType_RemoteDebugShell
-  commentId: F:KS.Shell.ShellBase.ShellType.RemoteDebugShell
-  fullName: KS.Shell.ShellBase.ShellType.RemoteDebugShell
+  href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_RemoteDebugShell
+  commentId: F:KS.Shell.ShellBase.Shells.ShellType.RemoteDebugShell
+  fullName: KS.Shell.ShellBase.Shells.ShellType.RemoteDebugShell
   nameWithType: ShellType.RemoteDebugShell
-- uid: KS.Shell.ShellBase.ShellType.RSSShell
+- uid: KS.Shell.ShellBase.Shells.ShellType.RSSShell
   name: RSSShell
-  href: api/KS.Shell.ShellBase.ShellType.html#KS_Shell_ShellBase_ShellType_RSSShell
-  commentId: F:KS.Shell.ShellBase.ShellType.RSSShell
-  fullName: KS.Shell.ShellBase.ShellType.RSSShell
+  href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_RSSShell
+  commentId: F:KS.Shell.ShellBase.Shells.ShellType.RSSShell
+  fullName: KS.Shell.ShellBase.Shells.ShellType.RSSShell
   nameWithType: ShellType.RSSShell
-- uid: KS.Shell.ShellBase.ShellType.SFTPShell
+- uid: KS.Shell.ShellBase.Shells.ShellType.SFTPShell
   name: SFTPShell
-  href: api/KS.Shell.ShellBase.ShellType.html#KS_Shell_ShellBase_ShellType_SFTPShell
-  commentId: F:KS.Shell.ShellBase.ShellType.SFTPShell
-  fullName: KS.Shell.ShellBase.ShellType.SFTPShell
+  href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_SFTPShell
+  commentId: F:KS.Shell.ShellBase.Shells.ShellType.SFTPShell
+  fullName: KS.Shell.ShellBase.Shells.ShellType.SFTPShell
   nameWithType: ShellType.SFTPShell
-- uid: KS.Shell.ShellBase.ShellType.Shell
+- uid: KS.Shell.ShellBase.Shells.ShellType.Shell
   name: Shell
-  href: api/KS.Shell.ShellBase.ShellType.html#KS_Shell_ShellBase_ShellType_Shell
-  commentId: F:KS.Shell.ShellBase.ShellType.Shell
-  fullName: KS.Shell.ShellBase.ShellType.Shell
+  href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_Shell
+  commentId: F:KS.Shell.ShellBase.Shells.ShellType.Shell
+  fullName: KS.Shell.ShellBase.Shells.ShellType.Shell
   nameWithType: ShellType.Shell
-- uid: KS.Shell.ShellBase.ShellType.TestShell
+- uid: KS.Shell.ShellBase.Shells.ShellType.TestShell
   name: TestShell
-  href: api/KS.Shell.ShellBase.ShellType.html#KS_Shell_ShellBase_ShellType_TestShell
-  commentId: F:KS.Shell.ShellBase.ShellType.TestShell
-  fullName: KS.Shell.ShellBase.ShellType.TestShell
+  href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_TestShell
+  commentId: F:KS.Shell.ShellBase.Shells.ShellType.TestShell
+  fullName: KS.Shell.ShellBase.Shells.ShellType.TestShell
   nameWithType: ShellType.TestShell
-- uid: KS.Shell.ShellBase.ShellType.TextShell
+- uid: KS.Shell.ShellBase.Shells.ShellType.TextShell
   name: TextShell
-  href: api/KS.Shell.ShellBase.ShellType.html#KS_Shell_ShellBase_ShellType_TextShell
-  commentId: F:KS.Shell.ShellBase.ShellType.TextShell
-  fullName: KS.Shell.ShellBase.ShellType.TextShell
+  href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_TextShell
+  commentId: F:KS.Shell.ShellBase.Shells.ShellType.TextShell
+  fullName: KS.Shell.ShellBase.Shells.ShellType.TextShell
   nameWithType: ShellType.TextShell
-- uid: KS.Shell.ShellBase.ShellType.ZIPShell
+- uid: KS.Shell.ShellBase.Shells.ShellType.ZIPShell
   name: ZIPShell
-  href: api/KS.Shell.ShellBase.ShellType.html#KS_Shell_ShellBase_ShellType_ZIPShell
-  commentId: F:KS.Shell.ShellBase.ShellType.ZIPShell
-  fullName: KS.Shell.ShellBase.ShellType.ZIPShell
+  href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_ZIPShell
+  commentId: F:KS.Shell.ShellBase.Shells.ShellType.ZIPShell
+  fullName: KS.Shell.ShellBase.Shells.ShellType.ZIPShell
   nameWithType: ShellType.ZIPShell
 - uid: KS.Shell.Shells
   name: KS.Shell.Shells
@@ -37438,7 +37444,7 @@ references:
   href: api/KS.Shell.Shells.FTPShell.html#KS_Shell_Shells_FTPShell_Bail
   commentId: P:KS.Shell.Shells.FTPShell.Bail
   name.vb: Bail
-  fullName: KS.Shell.Shells.FTPShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.FTPShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.FTPShell.Bail
   nameWithType: FTPShell.IShell.Bail
   nameWithType.vb: FTPShell.Bail
@@ -37448,7 +37454,7 @@ references:
   commentId: Overload:KS.Shell.Shells.FTPShell.Bail
   isSpec: "True"
   name.vb: Bail
-  fullName: KS.Shell.Shells.FTPShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.FTPShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.FTPShell.Bail
   nameWithType: FTPShell.IShell.Bail
   nameWithType.vb: FTPShell.Bail
@@ -37457,7 +37463,7 @@ references:
   href: api/KS.Shell.Shells.FTPShell.html#KS_Shell_Shells_FTPShell_InitializeShell_System_Object___
   commentId: M:KS.Shell.Shells.FTPShell.InitializeShell(System.Object[])
   name.vb: InitializeShell(Object())
-  fullName: KS.Shell.Shells.FTPShell.KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
+  fullName: KS.Shell.Shells.FTPShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
   fullName.vb: KS.Shell.Shells.FTPShell.InitializeShell(System.Object())
   nameWithType: FTPShell.IShell.InitializeShell(Object[])
   nameWithType.vb: FTPShell.InitializeShell(Object())
@@ -37467,7 +37473,7 @@ references:
   commentId: Overload:KS.Shell.Shells.FTPShell.InitializeShell
   isSpec: "True"
   name.vb: InitializeShell
-  fullName: KS.Shell.Shells.FTPShell.KS.Shell.ShellBase.IShell.InitializeShell
+  fullName: KS.Shell.Shells.FTPShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell
   fullName.vb: KS.Shell.Shells.FTPShell.InitializeShell
   nameWithType: FTPShell.IShell.InitializeShell
   nameWithType.vb: FTPShell.InitializeShell
@@ -37476,7 +37482,7 @@ references:
   href: api/KS.Shell.Shells.FTPShell.html#KS_Shell_Shells_FTPShell_ShellType
   commentId: P:KS.Shell.Shells.FTPShell.ShellType
   name.vb: ShellType
-  fullName: KS.Shell.Shells.FTPShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.FTPShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.FTPShell.ShellType
   nameWithType: FTPShell.IShell.ShellType
   nameWithType.vb: FTPShell.ShellType
@@ -37486,7 +37492,7 @@ references:
   commentId: Overload:KS.Shell.Shells.FTPShell.ShellType
   isSpec: "True"
   name.vb: ShellType
-  fullName: KS.Shell.Shells.FTPShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.FTPShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.FTPShell.ShellType
   nameWithType: FTPShell.IShell.ShellType
   nameWithType.vb: FTPShell.ShellType
@@ -37501,7 +37507,7 @@ references:
   href: api/KS.Shell.Shells.HexShell.html#KS_Shell_Shells_HexShell_Bail
   commentId: P:KS.Shell.Shells.HexShell.Bail
   name.vb: Bail
-  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.HexShell.Bail
   nameWithType: HexShell.IShell.Bail
   nameWithType.vb: HexShell.Bail
@@ -37511,7 +37517,7 @@ references:
   commentId: Overload:KS.Shell.Shells.HexShell.Bail
   isSpec: "True"
   name.vb: Bail
-  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.HexShell.Bail
   nameWithType: HexShell.IShell.Bail
   nameWithType.vb: HexShell.Bail
@@ -37520,7 +37526,7 @@ references:
   href: api/KS.Shell.Shells.HexShell.html#KS_Shell_Shells_HexShell_InitializeShell_System_Object___
   commentId: M:KS.Shell.Shells.HexShell.InitializeShell(System.Object[])
   name.vb: InitializeShell(Object())
-  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
+  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
   fullName.vb: KS.Shell.Shells.HexShell.InitializeShell(System.Object())
   nameWithType: HexShell.IShell.InitializeShell(Object[])
   nameWithType.vb: HexShell.InitializeShell(Object())
@@ -37530,7 +37536,7 @@ references:
   commentId: Overload:KS.Shell.Shells.HexShell.InitializeShell
   isSpec: "True"
   name.vb: InitializeShell
-  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.IShell.InitializeShell
+  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell
   fullName.vb: KS.Shell.Shells.HexShell.InitializeShell
   nameWithType: HexShell.IShell.InitializeShell
   nameWithType.vb: HexShell.InitializeShell
@@ -37539,7 +37545,7 @@ references:
   href: api/KS.Shell.Shells.HexShell.html#KS_Shell_Shells_HexShell_ShellType
   commentId: P:KS.Shell.Shells.HexShell.ShellType
   name.vb: ShellType
-  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.HexShell.ShellType
   nameWithType: HexShell.IShell.ShellType
   nameWithType.vb: HexShell.ShellType
@@ -37549,7 +37555,7 @@ references:
   commentId: Overload:KS.Shell.Shells.HexShell.ShellType
   isSpec: "True"
   name.vb: ShellType
-  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.HexShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.HexShell.ShellType
   nameWithType: HexShell.IShell.ShellType
   nameWithType.vb: HexShell.ShellType
@@ -37564,7 +37570,7 @@ references:
   href: api/KS.Shell.Shells.HTTPShell.html#KS_Shell_Shells_HTTPShell_Bail
   commentId: P:KS.Shell.Shells.HTTPShell.Bail
   name.vb: Bail
-  fullName: KS.Shell.Shells.HTTPShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.HTTPShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.HTTPShell.Bail
   nameWithType: HTTPShell.IShell.Bail
   nameWithType.vb: HTTPShell.Bail
@@ -37574,7 +37580,7 @@ references:
   commentId: Overload:KS.Shell.Shells.HTTPShell.Bail
   isSpec: "True"
   name.vb: Bail
-  fullName: KS.Shell.Shells.HTTPShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.HTTPShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.HTTPShell.Bail
   nameWithType: HTTPShell.IShell.Bail
   nameWithType.vb: HTTPShell.Bail
@@ -37583,7 +37589,7 @@ references:
   href: api/KS.Shell.Shells.HTTPShell.html#KS_Shell_Shells_HTTPShell_InitializeShell_System_Object___
   commentId: M:KS.Shell.Shells.HTTPShell.InitializeShell(System.Object[])
   name.vb: InitializeShell(Object())
-  fullName: KS.Shell.Shells.HTTPShell.KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
+  fullName: KS.Shell.Shells.HTTPShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
   fullName.vb: KS.Shell.Shells.HTTPShell.InitializeShell(System.Object())
   nameWithType: HTTPShell.IShell.InitializeShell(Object[])
   nameWithType.vb: HTTPShell.InitializeShell(Object())
@@ -37593,7 +37599,7 @@ references:
   commentId: Overload:KS.Shell.Shells.HTTPShell.InitializeShell
   isSpec: "True"
   name.vb: InitializeShell
-  fullName: KS.Shell.Shells.HTTPShell.KS.Shell.ShellBase.IShell.InitializeShell
+  fullName: KS.Shell.Shells.HTTPShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell
   fullName.vb: KS.Shell.Shells.HTTPShell.InitializeShell
   nameWithType: HTTPShell.IShell.InitializeShell
   nameWithType.vb: HTTPShell.InitializeShell
@@ -37602,7 +37608,7 @@ references:
   href: api/KS.Shell.Shells.HTTPShell.html#KS_Shell_Shells_HTTPShell_ShellType
   commentId: P:KS.Shell.Shells.HTTPShell.ShellType
   name.vb: ShellType
-  fullName: KS.Shell.Shells.HTTPShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.HTTPShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.HTTPShell.ShellType
   nameWithType: HTTPShell.IShell.ShellType
   nameWithType.vb: HTTPShell.ShellType
@@ -37612,7 +37618,7 @@ references:
   commentId: Overload:KS.Shell.Shells.HTTPShell.ShellType
   isSpec: "True"
   name.vb: ShellType
-  fullName: KS.Shell.Shells.HTTPShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.HTTPShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.HTTPShell.ShellType
   nameWithType: HTTPShell.IShell.ShellType
   nameWithType.vb: HTTPShell.ShellType
@@ -37627,7 +37633,7 @@ references:
   href: api/KS.Shell.Shells.JsonShell.html#KS_Shell_Shells_JsonShell_Bail
   commentId: P:KS.Shell.Shells.JsonShell.Bail
   name.vb: Bail
-  fullName: KS.Shell.Shells.JsonShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.JsonShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.JsonShell.Bail
   nameWithType: JsonShell.IShell.Bail
   nameWithType.vb: JsonShell.Bail
@@ -37637,7 +37643,7 @@ references:
   commentId: Overload:KS.Shell.Shells.JsonShell.Bail
   isSpec: "True"
   name.vb: Bail
-  fullName: KS.Shell.Shells.JsonShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.JsonShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.JsonShell.Bail
   nameWithType: JsonShell.IShell.Bail
   nameWithType.vb: JsonShell.Bail
@@ -37646,7 +37652,7 @@ references:
   href: api/KS.Shell.Shells.JsonShell.html#KS_Shell_Shells_JsonShell_InitializeShell_System_Object___
   commentId: M:KS.Shell.Shells.JsonShell.InitializeShell(System.Object[])
   name.vb: InitializeShell(Object())
-  fullName: KS.Shell.Shells.JsonShell.KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
+  fullName: KS.Shell.Shells.JsonShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
   fullName.vb: KS.Shell.Shells.JsonShell.InitializeShell(System.Object())
   nameWithType: JsonShell.IShell.InitializeShell(Object[])
   nameWithType.vb: JsonShell.InitializeShell(Object())
@@ -37656,7 +37662,7 @@ references:
   commentId: Overload:KS.Shell.Shells.JsonShell.InitializeShell
   isSpec: "True"
   name.vb: InitializeShell
-  fullName: KS.Shell.Shells.JsonShell.KS.Shell.ShellBase.IShell.InitializeShell
+  fullName: KS.Shell.Shells.JsonShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell
   fullName.vb: KS.Shell.Shells.JsonShell.InitializeShell
   nameWithType: JsonShell.IShell.InitializeShell
   nameWithType.vb: JsonShell.InitializeShell
@@ -37665,7 +37671,7 @@ references:
   href: api/KS.Shell.Shells.JsonShell.html#KS_Shell_Shells_JsonShell_ShellType
   commentId: P:KS.Shell.Shells.JsonShell.ShellType
   name.vb: ShellType
-  fullName: KS.Shell.Shells.JsonShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.JsonShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.JsonShell.ShellType
   nameWithType: JsonShell.IShell.ShellType
   nameWithType.vb: JsonShell.ShellType
@@ -37675,7 +37681,7 @@ references:
   commentId: Overload:KS.Shell.Shells.JsonShell.ShellType
   isSpec: "True"
   name.vb: ShellType
-  fullName: KS.Shell.Shells.JsonShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.JsonShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.JsonShell.ShellType
   nameWithType: JsonShell.IShell.ShellType
   nameWithType.vb: JsonShell.ShellType
@@ -37690,7 +37696,7 @@ references:
   href: api/KS.Shell.Shells.MailShell.html#KS_Shell_Shells_MailShell_Bail
   commentId: P:KS.Shell.Shells.MailShell.Bail
   name.vb: Bail
-  fullName: KS.Shell.Shells.MailShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.MailShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.MailShell.Bail
   nameWithType: MailShell.IShell.Bail
   nameWithType.vb: MailShell.Bail
@@ -37700,7 +37706,7 @@ references:
   commentId: Overload:KS.Shell.Shells.MailShell.Bail
   isSpec: "True"
   name.vb: Bail
-  fullName: KS.Shell.Shells.MailShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.MailShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.MailShell.Bail
   nameWithType: MailShell.IShell.Bail
   nameWithType.vb: MailShell.Bail
@@ -37709,7 +37715,7 @@ references:
   href: api/KS.Shell.Shells.MailShell.html#KS_Shell_Shells_MailShell_InitializeShell_System_Object___
   commentId: M:KS.Shell.Shells.MailShell.InitializeShell(System.Object[])
   name.vb: InitializeShell(Object())
-  fullName: KS.Shell.Shells.MailShell.KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
+  fullName: KS.Shell.Shells.MailShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
   fullName.vb: KS.Shell.Shells.MailShell.InitializeShell(System.Object())
   nameWithType: MailShell.IShell.InitializeShell(Object[])
   nameWithType.vb: MailShell.InitializeShell(Object())
@@ -37719,7 +37725,7 @@ references:
   commentId: Overload:KS.Shell.Shells.MailShell.InitializeShell
   isSpec: "True"
   name.vb: InitializeShell
-  fullName: KS.Shell.Shells.MailShell.KS.Shell.ShellBase.IShell.InitializeShell
+  fullName: KS.Shell.Shells.MailShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell
   fullName.vb: KS.Shell.Shells.MailShell.InitializeShell
   nameWithType: MailShell.IShell.InitializeShell
   nameWithType.vb: MailShell.InitializeShell
@@ -37728,7 +37734,7 @@ references:
   href: api/KS.Shell.Shells.MailShell.html#KS_Shell_Shells_MailShell_ShellType
   commentId: P:KS.Shell.Shells.MailShell.ShellType
   name.vb: ShellType
-  fullName: KS.Shell.Shells.MailShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.MailShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.MailShell.ShellType
   nameWithType: MailShell.IShell.ShellType
   nameWithType.vb: MailShell.ShellType
@@ -37738,7 +37744,7 @@ references:
   commentId: Overload:KS.Shell.Shells.MailShell.ShellType
   isSpec: "True"
   name.vb: ShellType
-  fullName: KS.Shell.Shells.MailShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.MailShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.MailShell.ShellType
   nameWithType: MailShell.IShell.ShellType
   nameWithType.vb: MailShell.ShellType
@@ -37753,7 +37759,7 @@ references:
   href: api/KS.Shell.Shells.RSSShell.html#KS_Shell_Shells_RSSShell_Bail
   commentId: P:KS.Shell.Shells.RSSShell.Bail
   name.vb: Bail
-  fullName: KS.Shell.Shells.RSSShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.RSSShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.RSSShell.Bail
   nameWithType: RSSShell.IShell.Bail
   nameWithType.vb: RSSShell.Bail
@@ -37763,7 +37769,7 @@ references:
   commentId: Overload:KS.Shell.Shells.RSSShell.Bail
   isSpec: "True"
   name.vb: Bail
-  fullName: KS.Shell.Shells.RSSShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.RSSShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.RSSShell.Bail
   nameWithType: RSSShell.IShell.Bail
   nameWithType.vb: RSSShell.Bail
@@ -37772,7 +37778,7 @@ references:
   href: api/KS.Shell.Shells.RSSShell.html#KS_Shell_Shells_RSSShell_InitializeShell_System_Object___
   commentId: M:KS.Shell.Shells.RSSShell.InitializeShell(System.Object[])
   name.vb: InitializeShell(Object())
-  fullName: KS.Shell.Shells.RSSShell.KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
+  fullName: KS.Shell.Shells.RSSShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
   fullName.vb: KS.Shell.Shells.RSSShell.InitializeShell(System.Object())
   nameWithType: RSSShell.IShell.InitializeShell(Object[])
   nameWithType.vb: RSSShell.InitializeShell(Object())
@@ -37782,7 +37788,7 @@ references:
   commentId: Overload:KS.Shell.Shells.RSSShell.InitializeShell
   isSpec: "True"
   name.vb: InitializeShell
-  fullName: KS.Shell.Shells.RSSShell.KS.Shell.ShellBase.IShell.InitializeShell
+  fullName: KS.Shell.Shells.RSSShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell
   fullName.vb: KS.Shell.Shells.RSSShell.InitializeShell
   nameWithType: RSSShell.IShell.InitializeShell
   nameWithType.vb: RSSShell.InitializeShell
@@ -37791,7 +37797,7 @@ references:
   href: api/KS.Shell.Shells.RSSShell.html#KS_Shell_Shells_RSSShell_ShellType
   commentId: P:KS.Shell.Shells.RSSShell.ShellType
   name.vb: ShellType
-  fullName: KS.Shell.Shells.RSSShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.RSSShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.RSSShell.ShellType
   nameWithType: RSSShell.IShell.ShellType
   nameWithType.vb: RSSShell.ShellType
@@ -37801,7 +37807,7 @@ references:
   commentId: Overload:KS.Shell.Shells.RSSShell.ShellType
   isSpec: "True"
   name.vb: ShellType
-  fullName: KS.Shell.Shells.RSSShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.RSSShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.RSSShell.ShellType
   nameWithType: RSSShell.IShell.ShellType
   nameWithType.vb: RSSShell.ShellType
@@ -37816,7 +37822,7 @@ references:
   href: api/KS.Shell.Shells.SFTPShell.html#KS_Shell_Shells_SFTPShell_Bail
   commentId: P:KS.Shell.Shells.SFTPShell.Bail
   name.vb: Bail
-  fullName: KS.Shell.Shells.SFTPShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.SFTPShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.SFTPShell.Bail
   nameWithType: SFTPShell.IShell.Bail
   nameWithType.vb: SFTPShell.Bail
@@ -37826,7 +37832,7 @@ references:
   commentId: Overload:KS.Shell.Shells.SFTPShell.Bail
   isSpec: "True"
   name.vb: Bail
-  fullName: KS.Shell.Shells.SFTPShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.SFTPShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.SFTPShell.Bail
   nameWithType: SFTPShell.IShell.Bail
   nameWithType.vb: SFTPShell.Bail
@@ -37835,7 +37841,7 @@ references:
   href: api/KS.Shell.Shells.SFTPShell.html#KS_Shell_Shells_SFTPShell_InitializeShell_System_Object___
   commentId: M:KS.Shell.Shells.SFTPShell.InitializeShell(System.Object[])
   name.vb: InitializeShell(Object())
-  fullName: KS.Shell.Shells.SFTPShell.KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
+  fullName: KS.Shell.Shells.SFTPShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
   fullName.vb: KS.Shell.Shells.SFTPShell.InitializeShell(System.Object())
   nameWithType: SFTPShell.IShell.InitializeShell(Object[])
   nameWithType.vb: SFTPShell.InitializeShell(Object())
@@ -37845,7 +37851,7 @@ references:
   commentId: Overload:KS.Shell.Shells.SFTPShell.InitializeShell
   isSpec: "True"
   name.vb: InitializeShell
-  fullName: KS.Shell.Shells.SFTPShell.KS.Shell.ShellBase.IShell.InitializeShell
+  fullName: KS.Shell.Shells.SFTPShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell
   fullName.vb: KS.Shell.Shells.SFTPShell.InitializeShell
   nameWithType: SFTPShell.IShell.InitializeShell
   nameWithType.vb: SFTPShell.InitializeShell
@@ -37854,7 +37860,7 @@ references:
   href: api/KS.Shell.Shells.SFTPShell.html#KS_Shell_Shells_SFTPShell_ShellType
   commentId: P:KS.Shell.Shells.SFTPShell.ShellType
   name.vb: ShellType
-  fullName: KS.Shell.Shells.SFTPShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.SFTPShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.SFTPShell.ShellType
   nameWithType: SFTPShell.IShell.ShellType
   nameWithType.vb: SFTPShell.ShellType
@@ -37864,7 +37870,7 @@ references:
   commentId: Overload:KS.Shell.Shells.SFTPShell.ShellType
   isSpec: "True"
   name.vb: ShellType
-  fullName: KS.Shell.Shells.SFTPShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.SFTPShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.SFTPShell.ShellType
   nameWithType: SFTPShell.IShell.ShellType
   nameWithType.vb: SFTPShell.ShellType
@@ -37879,7 +37885,7 @@ references:
   href: api/KS.Shell.Shells.TestShell.html#KS_Shell_Shells_TestShell_Bail
   commentId: P:KS.Shell.Shells.TestShell.Bail
   name.vb: Bail
-  fullName: KS.Shell.Shells.TestShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.TestShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.TestShell.Bail
   nameWithType: TestShell.IShell.Bail
   nameWithType.vb: TestShell.Bail
@@ -37889,7 +37895,7 @@ references:
   commentId: Overload:KS.Shell.Shells.TestShell.Bail
   isSpec: "True"
   name.vb: Bail
-  fullName: KS.Shell.Shells.TestShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.TestShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.TestShell.Bail
   nameWithType: TestShell.IShell.Bail
   nameWithType.vb: TestShell.Bail
@@ -37898,7 +37904,7 @@ references:
   href: api/KS.Shell.Shells.TestShell.html#KS_Shell_Shells_TestShell_InitializeShell_System_Object___
   commentId: M:KS.Shell.Shells.TestShell.InitializeShell(System.Object[])
   name.vb: InitializeShell(Object())
-  fullName: KS.Shell.Shells.TestShell.KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
+  fullName: KS.Shell.Shells.TestShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
   fullName.vb: KS.Shell.Shells.TestShell.InitializeShell(System.Object())
   nameWithType: TestShell.IShell.InitializeShell(Object[])
   nameWithType.vb: TestShell.InitializeShell(Object())
@@ -37908,7 +37914,7 @@ references:
   commentId: Overload:KS.Shell.Shells.TestShell.InitializeShell
   isSpec: "True"
   name.vb: InitializeShell
-  fullName: KS.Shell.Shells.TestShell.KS.Shell.ShellBase.IShell.InitializeShell
+  fullName: KS.Shell.Shells.TestShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell
   fullName.vb: KS.Shell.Shells.TestShell.InitializeShell
   nameWithType: TestShell.IShell.InitializeShell
   nameWithType.vb: TestShell.InitializeShell
@@ -37917,7 +37923,7 @@ references:
   href: api/KS.Shell.Shells.TestShell.html#KS_Shell_Shells_TestShell_ShellType
   commentId: P:KS.Shell.Shells.TestShell.ShellType
   name.vb: ShellType
-  fullName: KS.Shell.Shells.TestShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.TestShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.TestShell.ShellType
   nameWithType: TestShell.IShell.ShellType
   nameWithType.vb: TestShell.ShellType
@@ -37927,7 +37933,7 @@ references:
   commentId: Overload:KS.Shell.Shells.TestShell.ShellType
   isSpec: "True"
   name.vb: ShellType
-  fullName: KS.Shell.Shells.TestShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.TestShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.TestShell.ShellType
   nameWithType: TestShell.IShell.ShellType
   nameWithType.vb: TestShell.ShellType
@@ -37942,7 +37948,7 @@ references:
   href: api/KS.Shell.Shells.TextShell.html#KS_Shell_Shells_TextShell_Bail
   commentId: P:KS.Shell.Shells.TextShell.Bail
   name.vb: Bail
-  fullName: KS.Shell.Shells.TextShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.TextShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.TextShell.Bail
   nameWithType: TextShell.IShell.Bail
   nameWithType.vb: TextShell.Bail
@@ -37952,7 +37958,7 @@ references:
   commentId: Overload:KS.Shell.Shells.TextShell.Bail
   isSpec: "True"
   name.vb: Bail
-  fullName: KS.Shell.Shells.TextShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.TextShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.TextShell.Bail
   nameWithType: TextShell.IShell.Bail
   nameWithType.vb: TextShell.Bail
@@ -37961,7 +37967,7 @@ references:
   href: api/KS.Shell.Shells.TextShell.html#KS_Shell_Shells_TextShell_InitializeShell_System_Object___
   commentId: M:KS.Shell.Shells.TextShell.InitializeShell(System.Object[])
   name.vb: InitializeShell(Object())
-  fullName: KS.Shell.Shells.TextShell.KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
+  fullName: KS.Shell.Shells.TextShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
   fullName.vb: KS.Shell.Shells.TextShell.InitializeShell(System.Object())
   nameWithType: TextShell.IShell.InitializeShell(Object[])
   nameWithType.vb: TextShell.InitializeShell(Object())
@@ -37971,7 +37977,7 @@ references:
   commentId: Overload:KS.Shell.Shells.TextShell.InitializeShell
   isSpec: "True"
   name.vb: InitializeShell
-  fullName: KS.Shell.Shells.TextShell.KS.Shell.ShellBase.IShell.InitializeShell
+  fullName: KS.Shell.Shells.TextShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell
   fullName.vb: KS.Shell.Shells.TextShell.InitializeShell
   nameWithType: TextShell.IShell.InitializeShell
   nameWithType.vb: TextShell.InitializeShell
@@ -37980,7 +37986,7 @@ references:
   href: api/KS.Shell.Shells.TextShell.html#KS_Shell_Shells_TextShell_ShellType
   commentId: P:KS.Shell.Shells.TextShell.ShellType
   name.vb: ShellType
-  fullName: KS.Shell.Shells.TextShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.TextShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.TextShell.ShellType
   nameWithType: TextShell.IShell.ShellType
   nameWithType.vb: TextShell.ShellType
@@ -37990,7 +37996,7 @@ references:
   commentId: Overload:KS.Shell.Shells.TextShell.ShellType
   isSpec: "True"
   name.vb: ShellType
-  fullName: KS.Shell.Shells.TextShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.TextShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.TextShell.ShellType
   nameWithType: TextShell.IShell.ShellType
   nameWithType.vb: TextShell.ShellType
@@ -38005,7 +38011,7 @@ references:
   href: api/KS.Shell.Shells.UESHShell.html#KS_Shell_Shells_UESHShell_Bail
   commentId: P:KS.Shell.Shells.UESHShell.Bail
   name.vb: Bail
-  fullName: KS.Shell.Shells.UESHShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.UESHShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.UESHShell.Bail
   nameWithType: UESHShell.IShell.Bail
   nameWithType.vb: UESHShell.Bail
@@ -38015,7 +38021,7 @@ references:
   commentId: Overload:KS.Shell.Shells.UESHShell.Bail
   isSpec: "True"
   name.vb: Bail
-  fullName: KS.Shell.Shells.UESHShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.UESHShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.UESHShell.Bail
   nameWithType: UESHShell.IShell.Bail
   nameWithType.vb: UESHShell.Bail
@@ -38024,7 +38030,7 @@ references:
   href: api/KS.Shell.Shells.UESHShell.html#KS_Shell_Shells_UESHShell_InitializeShell_System_Object___
   commentId: M:KS.Shell.Shells.UESHShell.InitializeShell(System.Object[])
   name.vb: InitializeShell(Object())
-  fullName: KS.Shell.Shells.UESHShell.KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
+  fullName: KS.Shell.Shells.UESHShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
   fullName.vb: KS.Shell.Shells.UESHShell.InitializeShell(System.Object())
   nameWithType: UESHShell.IShell.InitializeShell(Object[])
   nameWithType.vb: UESHShell.InitializeShell(Object())
@@ -38034,7 +38040,7 @@ references:
   commentId: Overload:KS.Shell.Shells.UESHShell.InitializeShell
   isSpec: "True"
   name.vb: InitializeShell
-  fullName: KS.Shell.Shells.UESHShell.KS.Shell.ShellBase.IShell.InitializeShell
+  fullName: KS.Shell.Shells.UESHShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell
   fullName.vb: KS.Shell.Shells.UESHShell.InitializeShell
   nameWithType: UESHShell.IShell.InitializeShell
   nameWithType.vb: UESHShell.InitializeShell
@@ -38043,7 +38049,7 @@ references:
   href: api/KS.Shell.Shells.UESHShell.html#KS_Shell_Shells_UESHShell_ShellType
   commentId: P:KS.Shell.Shells.UESHShell.ShellType
   name.vb: ShellType
-  fullName: KS.Shell.Shells.UESHShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.UESHShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.UESHShell.ShellType
   nameWithType: UESHShell.IShell.ShellType
   nameWithType.vb: UESHShell.ShellType
@@ -38053,7 +38059,7 @@ references:
   commentId: Overload:KS.Shell.Shells.UESHShell.ShellType
   isSpec: "True"
   name.vb: ShellType
-  fullName: KS.Shell.Shells.UESHShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.UESHShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.UESHShell.ShellType
   nameWithType: UESHShell.IShell.ShellType
   nameWithType.vb: UESHShell.ShellType
@@ -38068,7 +38074,7 @@ references:
   href: api/KS.Shell.Shells.ZipShell.html#KS_Shell_Shells_ZipShell_Bail
   commentId: P:KS.Shell.Shells.ZipShell.Bail
   name.vb: Bail
-  fullName: KS.Shell.Shells.ZipShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.ZipShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.ZipShell.Bail
   nameWithType: ZipShell.IShell.Bail
   nameWithType.vb: ZipShell.Bail
@@ -38078,7 +38084,7 @@ references:
   commentId: Overload:KS.Shell.Shells.ZipShell.Bail
   isSpec: "True"
   name.vb: Bail
-  fullName: KS.Shell.Shells.ZipShell.KS.Shell.ShellBase.IShell.Bail
+  fullName: KS.Shell.Shells.ZipShell.KS.Shell.ShellBase.Shells.IShell.Bail
   fullName.vb: KS.Shell.Shells.ZipShell.Bail
   nameWithType: ZipShell.IShell.Bail
   nameWithType.vb: ZipShell.Bail
@@ -38087,7 +38093,7 @@ references:
   href: api/KS.Shell.Shells.ZipShell.html#KS_Shell_Shells_ZipShell_InitializeShell_System_Object___
   commentId: M:KS.Shell.Shells.ZipShell.InitializeShell(System.Object[])
   name.vb: InitializeShell(Object())
-  fullName: KS.Shell.Shells.ZipShell.KS.Shell.ShellBase.IShell.InitializeShell(System.Object[])
+  fullName: KS.Shell.Shells.ZipShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
   fullName.vb: KS.Shell.Shells.ZipShell.InitializeShell(System.Object())
   nameWithType: ZipShell.IShell.InitializeShell(Object[])
   nameWithType.vb: ZipShell.InitializeShell(Object())
@@ -38097,7 +38103,7 @@ references:
   commentId: Overload:KS.Shell.Shells.ZipShell.InitializeShell
   isSpec: "True"
   name.vb: InitializeShell
-  fullName: KS.Shell.Shells.ZipShell.KS.Shell.ShellBase.IShell.InitializeShell
+  fullName: KS.Shell.Shells.ZipShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell
   fullName.vb: KS.Shell.Shells.ZipShell.InitializeShell
   nameWithType: ZipShell.IShell.InitializeShell
   nameWithType.vb: ZipShell.InitializeShell
@@ -38106,7 +38112,7 @@ references:
   href: api/KS.Shell.Shells.ZipShell.html#KS_Shell_Shells_ZipShell_ShellType
   commentId: P:KS.Shell.Shells.ZipShell.ShellType
   name.vb: ShellType
-  fullName: KS.Shell.Shells.ZipShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.ZipShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.ZipShell.ShellType
   nameWithType: ZipShell.IShell.ShellType
   nameWithType.vb: ZipShell.ShellType
@@ -38116,7 +38122,7 @@ references:
   commentId: Overload:KS.Shell.Shells.ZipShell.ShellType
   isSpec: "True"
   name.vb: ShellType
-  fullName: KS.Shell.Shells.ZipShell.KS.Shell.ShellBase.IShell.ShellType
+  fullName: KS.Shell.Shells.ZipShell.KS.Shell.ShellBase.Shells.IShell.ShellType
   fullName.vb: KS.Shell.Shells.ZipShell.ShellType
   nameWithType: ZipShell.IShell.ShellType
   nameWithType.vb: ZipShell.ShellType

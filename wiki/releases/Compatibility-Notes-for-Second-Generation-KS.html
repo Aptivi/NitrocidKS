@@ -709,7 +709,7 @@
 <h5 id="separated-consolecolors-enumeration">Separated ConsoleColors enumeration</h5>
 <p>It was previously inside the Colors255 module. Now, it resides in its own code file. It's in the same namespace.</p>
 <h5 id="removed-ksmiscdictionary-to-substitute-with-dictify">Removed KS.Misc.Dictionary to substitute with Dictify</h5>
-<p>We have removed this namespace that existed in 0.0.23.0 to use the Doctify library so if we try to update it for bug fixes or feature additions, we don't depend on Kernel Simulator for this feature.</p>
+<p>We have removed this namespace that existed in 0.0.23.0 to use the Dictify library so if we try to update it for bug fixes or feature additions, we don't depend on Kernel Simulator for this feature.</p>
 <ul>
 <li><p>Affected functions:</p>
 <ul>
@@ -729,7 +729,7 @@
 <h5 id="moved-input-related-console-apis-to-its-own-namespace">Moved input-related console APIs to its own namespace</h5>
 <p>We have moved all input-related console APIs to <code>KS.ConsoleBase.Inputs</code> as it keeps getting expanded.</p>
 <h5 id="removed-the-progress-and-its-report-positions-from-splashinfo">Removed the progress and its report positions from SplashInfo.</h5>
-<p>The splashes are the ones who are rensponsible for setting their own progress positions.</p>
+<p>The splashes are the ones who are responsible for setting their own progress positions.</p>
 <ul>
 <li>Removed properties:
 <ul>
@@ -741,7 +741,14 @@
 </li>
 </ul>
 <h5 id="replaced-commandpromptwrite">Replaced <code>CommandPromptWrite()</code></h5>
-<p><code>CommandPromptWrite()</code> used to be the helper for UESH to write its own prompt, but it's eventually replaced by the more powerful <code>WriteShellPrompt()</code> to accommodate all possible cases, like custom</p>
+<p><code>CommandPromptWrite()</code> used to be the helper for UESH to write its own prompt, but it's eventually replaced by the more powerful <code>WriteShellPrompt()</code> to accommodate all possible cases, like custom variables, and so on.</p>
+<h5 id="organized-the-shellbase-namespaces">Organized the ShellBase namespaces</h5>
+<p>The shell base has been divided to three types:</p>
+<ul>
+<li>Aliases</li>
+<li>Commands</li>
+<li>Shells</li>
+</ul>
 </article>
           </div>
           
