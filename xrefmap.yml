@@ -36384,15 +36384,12 @@ references:
   commentId: T:KS.Shell.Prompts.PromptPresetManager
   fullName: KS.Shell.Prompts.PromptPresetManager
   nameWithType: PromptPresetManager
-- uid: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.Shells.ShellType,KS.Shell.Prompts.PromptPresetBase@)
-  name: GetCurrentPresetBaseFromShell(ShellType, ref PromptPresetBase)
-  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_GetCurrentPresetBaseFromShell_KS_Shell_ShellBase_Shells_ShellType_KS_Shell_Prompts_PromptPresetBase__
-  commentId: M:KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.Shells.ShellType,KS.Shell.Prompts.PromptPresetBase@)
-  name.vb: GetCurrentPresetBaseFromShell(ShellType, ByRef PromptPresetBase)
-  fullName: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.Shells.ShellType, ref KS.Shell.Prompts.PromptPresetBase)
-  fullName.vb: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.Shells.ShellType, ByRef KS.Shell.Prompts.PromptPresetBase)
-  nameWithType: PromptPresetManager.GetCurrentPresetBaseFromShell(ShellType, ref PromptPresetBase)
-  nameWithType.vb: PromptPresetManager.GetCurrentPresetBaseFromShell(ShellType, ByRef PromptPresetBase)
+- uid: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.Shells.ShellType)
+  name: GetCurrentPresetBaseFromShell(ShellType)
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_GetCurrentPresetBaseFromShell_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell(KS.Shell.ShellBase.Shells.ShellType)
+  nameWithType: PromptPresetManager.GetCurrentPresetBaseFromShell(ShellType)
 - uid: KS.Shell.Prompts.PromptPresetManager.GetCurrentPresetBaseFromShell*
   name: GetCurrentPresetBaseFromShell
   href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_GetCurrentPresetBaseFromShell_
