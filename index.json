@@ -1067,7 +1067,7 @@
   "api/KS.Misc.Games.html": {
     "href": "api/KS.Misc.Games.html",
     "title": "Namespace KS.Misc.Games | Kernel Simulator API - Eofla Internals",
-    "keywords": "Namespace KS.Misc.Games Classes LoveHateRespond Solver SpeedPress Enums LoveHateRespond.CommentType SpeedPress.SpeedPressDifficulty SpeedPress difficulty"
+    "keywords": "Namespace KS.Misc.Games Classes LoveHateRespond MeteorShooter Solver SpeedPress Enums LoveHateRespond.CommentType SpeedPress.SpeedPressDifficulty SpeedPress difficulty"
   },
   "api/KS.Misc.Games.LoveHateRespond.CommentType.html": {
     "href": "api/KS.Misc.Games.LoveHateRespond.CommentType.html",
@@ -1078,6 +1078,11 @@
     "href": "api/KS.Misc.Games.LoveHateRespond.html",
     "title": "Class LoveHateRespond | Kernel Simulator API - Eofla Internals",
     "keywords": "Class LoveHateRespond Inheritance LoveHateRespond Namespace : KS.Misc.Games Assembly : Kernel Simulator.dll Syntax public class LoveHateRespond Fields | Improve this Doc View Source LoveOrHateUsersCount How many users to add to the love/hate comment room? Declaration public static int LoveOrHateUsersCount Field Value Type Description System.Int32 Methods | Improve this Doc View Source InitializeLoveHate() Initializes the game Declaration public static void InitializeLoveHate()"
+  },
+  "api/KS.Misc.Games.MeteorShooter.html": {
+    "href": "api/KS.Misc.Games.MeteorShooter.html",
+    "title": "Class MeteorShooter | Kernel Simulator API - Eofla Internals",
+    "keywords": "Class MeteorShooter Inheritance MeteorShooter Namespace : KS.Misc.Games Assembly : Kernel Simulator.dll Syntax public class MeteorShooter Fields | Improve this Doc View Source MeteorUsePowerLine Declaration public static bool MeteorUsePowerLine Field Value Type Description System.Boolean Methods | Improve this Doc View Source DrawBullet(Int32, Int32) Declaration public static void DrawBullet(int BulletX, int BulletY) Parameters Type Name Description System.Int32 BulletX System.Int32 BulletY | Improve this Doc View Source DrawGame() Declaration public static void DrawGame() | Improve this Doc View Source DrawMeteor(Int32, Int32) Declaration public static void DrawMeteor(int MeteorX, int MeteorY) Parameters Type Name Description System.Int32 MeteorX System.Int32 MeteorY | Improve this Doc View Source DrawSpaceship() Declaration public static void DrawSpaceship() | Improve this Doc View Source InitializeMeteor() Initializes the Meteor game Declaration public static void InitializeMeteor()"
   },
   "api/KS.Misc.Games.Solver.html": {
     "href": "api/KS.Misc.Games.Solver.html",

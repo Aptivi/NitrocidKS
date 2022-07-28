@@ -2594,6 +2594,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Games.MeteorShooter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Games.MeteorShooter.html",
+          "hash": "KvmfPxxwucKs4uHPDfhey7JtER5ldk0indNFj+ZPkuE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Games.Solver.yml",
       "output": {
         ".html": {
@@ -2634,7 +2646,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Games.html",
-          "hash": "ePLBaoJnPC0elBZOBi0ZbqyRgTR+Yg5AgNWd/2OdZR0="
+          "hash": "Zya1ZBAKwypRbYxE+xWWDU/ZSpRtVHeO+P2YAFjlGmk="
         }
       },
       "is_incremental": false,
@@ -6438,7 +6450,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "5CdTMl+q1agnkaqE04bv7I/Mfh8rrMJ2D/enYlb2GaA="
+          "hash": "F6gfBH0tBdezUbMnCvQFFhvaeHDzamtTbMIXNrbMa+8="
         }
       },
       "is_incremental": false,
@@ -9372,7 +9384,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 535,
+          "total_file_count": 536,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

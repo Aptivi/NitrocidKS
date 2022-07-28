@@ -17851,6 +17851,83 @@ references:
   commentId: F:KS.Misc.Games.LoveHateRespond.LoveOrHateUsersCount
   fullName: KS.Misc.Games.LoveHateRespond.LoveOrHateUsersCount
   nameWithType: LoveHateRespond.LoveOrHateUsersCount
+- uid: KS.Misc.Games.MeteorShooter
+  name: MeteorShooter
+  href: api/KS.Misc.Games.MeteorShooter.html
+  commentId: T:KS.Misc.Games.MeteorShooter
+  fullName: KS.Misc.Games.MeteorShooter
+  nameWithType: MeteorShooter
+- uid: KS.Misc.Games.MeteorShooter.DrawBullet(System.Int32,System.Int32)
+  name: DrawBullet(Int32, Int32)
+  href: api/KS.Misc.Games.MeteorShooter.html#KS_Misc_Games_MeteorShooter_DrawBullet_System_Int32_System_Int32_
+  commentId: M:KS.Misc.Games.MeteorShooter.DrawBullet(System.Int32,System.Int32)
+  fullName: KS.Misc.Games.MeteorShooter.DrawBullet(System.Int32, System.Int32)
+  nameWithType: MeteorShooter.DrawBullet(Int32, Int32)
+- uid: KS.Misc.Games.MeteorShooter.DrawBullet*
+  name: DrawBullet
+  href: api/KS.Misc.Games.MeteorShooter.html#KS_Misc_Games_MeteorShooter_DrawBullet_
+  commentId: Overload:KS.Misc.Games.MeteorShooter.DrawBullet
+  isSpec: "True"
+  fullName: KS.Misc.Games.MeteorShooter.DrawBullet
+  nameWithType: MeteorShooter.DrawBullet
+- uid: KS.Misc.Games.MeteorShooter.DrawGame
+  name: DrawGame()
+  href: api/KS.Misc.Games.MeteorShooter.html#KS_Misc_Games_MeteorShooter_DrawGame
+  commentId: M:KS.Misc.Games.MeteorShooter.DrawGame
+  fullName: KS.Misc.Games.MeteorShooter.DrawGame()
+  nameWithType: MeteorShooter.DrawGame()
+- uid: KS.Misc.Games.MeteorShooter.DrawGame*
+  name: DrawGame
+  href: api/KS.Misc.Games.MeteorShooter.html#KS_Misc_Games_MeteorShooter_DrawGame_
+  commentId: Overload:KS.Misc.Games.MeteorShooter.DrawGame
+  isSpec: "True"
+  fullName: KS.Misc.Games.MeteorShooter.DrawGame
+  nameWithType: MeteorShooter.DrawGame
+- uid: KS.Misc.Games.MeteorShooter.DrawMeteor(System.Int32,System.Int32)
+  name: DrawMeteor(Int32, Int32)
+  href: api/KS.Misc.Games.MeteorShooter.html#KS_Misc_Games_MeteorShooter_DrawMeteor_System_Int32_System_Int32_
+  commentId: M:KS.Misc.Games.MeteorShooter.DrawMeteor(System.Int32,System.Int32)
+  fullName: KS.Misc.Games.MeteorShooter.DrawMeteor(System.Int32, System.Int32)
+  nameWithType: MeteorShooter.DrawMeteor(Int32, Int32)
+- uid: KS.Misc.Games.MeteorShooter.DrawMeteor*
+  name: DrawMeteor
+  href: api/KS.Misc.Games.MeteorShooter.html#KS_Misc_Games_MeteorShooter_DrawMeteor_
+  commentId: Overload:KS.Misc.Games.MeteorShooter.DrawMeteor
+  isSpec: "True"
+  fullName: KS.Misc.Games.MeteorShooter.DrawMeteor
+  nameWithType: MeteorShooter.DrawMeteor
+- uid: KS.Misc.Games.MeteorShooter.DrawSpaceship
+  name: DrawSpaceship()
+  href: api/KS.Misc.Games.MeteorShooter.html#KS_Misc_Games_MeteorShooter_DrawSpaceship
+  commentId: M:KS.Misc.Games.MeteorShooter.DrawSpaceship
+  fullName: KS.Misc.Games.MeteorShooter.DrawSpaceship()
+  nameWithType: MeteorShooter.DrawSpaceship()
+- uid: KS.Misc.Games.MeteorShooter.DrawSpaceship*
+  name: DrawSpaceship
+  href: api/KS.Misc.Games.MeteorShooter.html#KS_Misc_Games_MeteorShooter_DrawSpaceship_
+  commentId: Overload:KS.Misc.Games.MeteorShooter.DrawSpaceship
+  isSpec: "True"
+  fullName: KS.Misc.Games.MeteorShooter.DrawSpaceship
+  nameWithType: MeteorShooter.DrawSpaceship
+- uid: KS.Misc.Games.MeteorShooter.InitializeMeteor
+  name: InitializeMeteor()
+  href: api/KS.Misc.Games.MeteorShooter.html#KS_Misc_Games_MeteorShooter_InitializeMeteor
+  commentId: M:KS.Misc.Games.MeteorShooter.InitializeMeteor
+  fullName: KS.Misc.Games.MeteorShooter.InitializeMeteor()
+  nameWithType: MeteorShooter.InitializeMeteor()
+- uid: KS.Misc.Games.MeteorShooter.InitializeMeteor*
+  name: InitializeMeteor
+  href: api/KS.Misc.Games.MeteorShooter.html#KS_Misc_Games_MeteorShooter_InitializeMeteor_
+  commentId: Overload:KS.Misc.Games.MeteorShooter.InitializeMeteor
+  isSpec: "True"
+  fullName: KS.Misc.Games.MeteorShooter.InitializeMeteor
+  nameWithType: MeteorShooter.InitializeMeteor
+- uid: KS.Misc.Games.MeteorShooter.MeteorUsePowerLine
+  name: MeteorUsePowerLine
+  href: api/KS.Misc.Games.MeteorShooter.html#KS_Misc_Games_MeteorShooter_MeteorUsePowerLine
+  commentId: F:KS.Misc.Games.MeteorShooter.MeteorUsePowerLine
+  fullName: KS.Misc.Games.MeteorShooter.MeteorUsePowerLine
+  nameWithType: MeteorShooter.MeteorUsePowerLine
 - uid: KS.Misc.Games.Solver
   name: Solver
   href: api/KS.Misc.Games.Solver.html
