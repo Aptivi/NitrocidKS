@@ -7074,6 +7074,58 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Events.RaiseProcessError
   nameWithType: Events.RaiseProcessError
+- uid: KS.Kernel.Events.RaiseRarCommandError(System.String,System.Exception)
+  name: RaiseRarCommandError(String, Exception)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseRarCommandError_System_String_System_Exception_
+  commentId: M:KS.Kernel.Events.RaiseRarCommandError(System.String,System.Exception)
+  fullName: KS.Kernel.Events.RaiseRarCommandError(System.String, System.Exception)
+  nameWithType: Events.RaiseRarCommandError(String, Exception)
+- uid: KS.Kernel.Events.RaiseRarCommandError*
+  name: RaiseRarCommandError
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseRarCommandError_
+  commentId: Overload:KS.Kernel.Events.RaiseRarCommandError
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseRarCommandError
+  nameWithType: Events.RaiseRarCommandError
+- uid: KS.Kernel.Events.RaiseRarPostExecuteCommand(System.String)
+  name: RaiseRarPostExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseRarPostExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RaiseRarPostExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RaiseRarPostExecuteCommand(System.String)
+  nameWithType: Events.RaiseRarPostExecuteCommand(String)
+- uid: KS.Kernel.Events.RaiseRarPostExecuteCommand*
+  name: RaiseRarPostExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseRarPostExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RaiseRarPostExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseRarPostExecuteCommand
+  nameWithType: Events.RaiseRarPostExecuteCommand
+- uid: KS.Kernel.Events.RaiseRarPreExecuteCommand(System.String)
+  name: RaiseRarPreExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseRarPreExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RaiseRarPreExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RaiseRarPreExecuteCommand(System.String)
+  nameWithType: Events.RaiseRarPreExecuteCommand(String)
+- uid: KS.Kernel.Events.RaiseRarPreExecuteCommand*
+  name: RaiseRarPreExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseRarPreExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RaiseRarPreExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseRarPreExecuteCommand
+  nameWithType: Events.RaiseRarPreExecuteCommand
+- uid: KS.Kernel.Events.RaiseRarShellInitialized
+  name: RaiseRarShellInitialized()
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseRarShellInitialized
+  commentId: M:KS.Kernel.Events.RaiseRarShellInitialized
+  fullName: KS.Kernel.Events.RaiseRarShellInitialized()
+  nameWithType: Events.RaiseRarShellInitialized()
+- uid: KS.Kernel.Events.RaiseRarShellInitialized*
+  name: RaiseRarShellInitialized
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseRarShellInitialized_
+  commentId: Overload:KS.Kernel.Events.RaiseRarShellInitialized
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RaiseRarShellInitialized
+  nameWithType: Events.RaiseRarShellInitialized
 - uid: KS.Kernel.Events.RaiseRemoteDebugCommandError(System.String,System.String,System.Exception)
   name: RaiseRemoteDebugCommandError(String, String, Exception)
   href: api/KS.Kernel.Events.html#KS_Kernel_Events_RaiseRemoteDebugCommandError_System_String_System_String_System_Exception_
@@ -7750,6 +7802,30 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Events.RaiseZipShellInitialized
   nameWithType: Events.RaiseZipShellInitialized
+- uid: KS.Kernel.Events.RarCommandError
+  name: RarCommandError
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RarCommandError
+  commentId: E:KS.Kernel.Events.RarCommandError
+  fullName: KS.Kernel.Events.RarCommandError
+  nameWithType: Events.RarCommandError
+- uid: KS.Kernel.Events.RarPostExecuteCommand
+  name: RarPostExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RarPostExecuteCommand
+  commentId: E:KS.Kernel.Events.RarPostExecuteCommand
+  fullName: KS.Kernel.Events.RarPostExecuteCommand
+  nameWithType: Events.RarPostExecuteCommand
+- uid: KS.Kernel.Events.RarPreExecuteCommand
+  name: RarPreExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RarPreExecuteCommand
+  commentId: E:KS.Kernel.Events.RarPreExecuteCommand
+  fullName: KS.Kernel.Events.RarPreExecuteCommand
+  nameWithType: Events.RarPreExecuteCommand
+- uid: KS.Kernel.Events.RarShellInitialized
+  name: RarShellInitialized
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RarShellInitialized
+  commentId: E:KS.Kernel.Events.RarShellInitialized
+  fullName: KS.Kernel.Events.RarShellInitialized
+  nameWithType: Events.RarShellInitialized
 - uid: KS.Kernel.Events.RemoteDebugCommandError
   name: RemoteDebugCommandError
   href: api/KS.Kernel.Events.html#KS_Kernel_Events_RemoteDebugCommandError
@@ -8920,6 +8996,58 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Events.RespondProcessError
   nameWithType: Events.RespondProcessError
+- uid: KS.Kernel.Events.RespondRarCommandError(System.String,System.Exception)
+  name: RespondRarCommandError(String, Exception)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondRarCommandError_System_String_System_Exception_
+  commentId: M:KS.Kernel.Events.RespondRarCommandError(System.String,System.Exception)
+  fullName: KS.Kernel.Events.RespondRarCommandError(System.String, System.Exception)
+  nameWithType: Events.RespondRarCommandError(String, Exception)
+- uid: KS.Kernel.Events.RespondRarCommandError*
+  name: RespondRarCommandError
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondRarCommandError_
+  commentId: Overload:KS.Kernel.Events.RespondRarCommandError
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondRarCommandError
+  nameWithType: Events.RespondRarCommandError
+- uid: KS.Kernel.Events.RespondRarPostExecuteCommand(System.String)
+  name: RespondRarPostExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondRarPostExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RespondRarPostExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RespondRarPostExecuteCommand(System.String)
+  nameWithType: Events.RespondRarPostExecuteCommand(String)
+- uid: KS.Kernel.Events.RespondRarPostExecuteCommand*
+  name: RespondRarPostExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondRarPostExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RespondRarPostExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondRarPostExecuteCommand
+  nameWithType: Events.RespondRarPostExecuteCommand
+- uid: KS.Kernel.Events.RespondRarPreExecuteCommand(System.String)
+  name: RespondRarPreExecuteCommand(String)
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondRarPreExecuteCommand_System_String_
+  commentId: M:KS.Kernel.Events.RespondRarPreExecuteCommand(System.String)
+  fullName: KS.Kernel.Events.RespondRarPreExecuteCommand(System.String)
+  nameWithType: Events.RespondRarPreExecuteCommand(String)
+- uid: KS.Kernel.Events.RespondRarPreExecuteCommand*
+  name: RespondRarPreExecuteCommand
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondRarPreExecuteCommand_
+  commentId: Overload:KS.Kernel.Events.RespondRarPreExecuteCommand
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondRarPreExecuteCommand
+  nameWithType: Events.RespondRarPreExecuteCommand
+- uid: KS.Kernel.Events.RespondRarShellInitialized
+  name: RespondRarShellInitialized()
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondRarShellInitialized
+  commentId: M:KS.Kernel.Events.RespondRarShellInitialized
+  fullName: KS.Kernel.Events.RespondRarShellInitialized()
+  nameWithType: Events.RespondRarShellInitialized()
+- uid: KS.Kernel.Events.RespondRarShellInitialized*
+  name: RespondRarShellInitialized
+  href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondRarShellInitialized_
+  commentId: Overload:KS.Kernel.Events.RespondRarShellInitialized
+  isSpec: "True"
+  fullName: KS.Kernel.Events.RespondRarShellInitialized
+  nameWithType: Events.RespondRarShellInitialized
 - uid: KS.Kernel.Events.RespondRemoteDebugCommandError(System.String,System.String,System.Exception)
   name: RespondRemoteDebugCommandError(String, String, Exception)
   href: api/KS.Kernel.Events.html#KS_Kernel_Events_RespondRemoteDebugCommandError_System_String_System_String_System_Exception_
@@ -18688,6 +18816,70 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Probers.PlaceParse.ProbePlaces
   nameWithType: PlaceParse.ProbePlaces
+- uid: KS.Misc.RarFile
+  name: KS.Misc.RarFile
+  href: api/KS.Misc.RarFile.html
+  commentId: N:KS.Misc.RarFile
+  fullName: KS.Misc.RarFile
+  nameWithType: KS.Misc.RarFile
+- uid: KS.Misc.RarFile.RarTools
+  name: RarTools
+  href: api/KS.Misc.RarFile.RarTools.html
+  commentId: T:KS.Misc.RarFile.RarTools
+  fullName: KS.Misc.RarFile.RarTools
+  nameWithType: RarTools
+- uid: KS.Misc.RarFile.RarTools.ChangeWorkingArchiveDirectory(System.String)
+  name: ChangeWorkingArchiveDirectory(String)
+  href: api/KS.Misc.RarFile.RarTools.html#KS_Misc_RarFile_RarTools_ChangeWorkingArchiveDirectory_System_String_
+  commentId: M:KS.Misc.RarFile.RarTools.ChangeWorkingArchiveDirectory(System.String)
+  fullName: KS.Misc.RarFile.RarTools.ChangeWorkingArchiveDirectory(System.String)
+  nameWithType: RarTools.ChangeWorkingArchiveDirectory(String)
+- uid: KS.Misc.RarFile.RarTools.ChangeWorkingArchiveDirectory*
+  name: ChangeWorkingArchiveDirectory
+  href: api/KS.Misc.RarFile.RarTools.html#KS_Misc_RarFile_RarTools_ChangeWorkingArchiveDirectory_
+  commentId: Overload:KS.Misc.RarFile.RarTools.ChangeWorkingArchiveDirectory
+  isSpec: "True"
+  fullName: KS.Misc.RarFile.RarTools.ChangeWorkingArchiveDirectory
+  nameWithType: RarTools.ChangeWorkingArchiveDirectory
+- uid: KS.Misc.RarFile.RarTools.ChangeWorkingRarLocalDirectory(System.String)
+  name: ChangeWorkingRarLocalDirectory(String)
+  href: api/KS.Misc.RarFile.RarTools.html#KS_Misc_RarFile_RarTools_ChangeWorkingRarLocalDirectory_System_String_
+  commentId: M:KS.Misc.RarFile.RarTools.ChangeWorkingRarLocalDirectory(System.String)
+  fullName: KS.Misc.RarFile.RarTools.ChangeWorkingRarLocalDirectory(System.String)
+  nameWithType: RarTools.ChangeWorkingRarLocalDirectory(String)
+- uid: KS.Misc.RarFile.RarTools.ChangeWorkingRarLocalDirectory*
+  name: ChangeWorkingRarLocalDirectory
+  href: api/KS.Misc.RarFile.RarTools.html#KS_Misc_RarFile_RarTools_ChangeWorkingRarLocalDirectory_
+  commentId: Overload:KS.Misc.RarFile.RarTools.ChangeWorkingRarLocalDirectory
+  isSpec: "True"
+  fullName: KS.Misc.RarFile.RarTools.ChangeWorkingRarLocalDirectory
+  nameWithType: RarTools.ChangeWorkingRarLocalDirectory
+- uid: KS.Misc.RarFile.RarTools.ExtractRarFileEntry(System.String,System.String,System.Boolean)
+  name: ExtractRarFileEntry(String, String, Boolean)
+  href: api/KS.Misc.RarFile.RarTools.html#KS_Misc_RarFile_RarTools_ExtractRarFileEntry_System_String_System_String_System_Boolean_
+  commentId: M:KS.Misc.RarFile.RarTools.ExtractRarFileEntry(System.String,System.String,System.Boolean)
+  fullName: KS.Misc.RarFile.RarTools.ExtractRarFileEntry(System.String, System.String, System.Boolean)
+  nameWithType: RarTools.ExtractRarFileEntry(String, String, Boolean)
+- uid: KS.Misc.RarFile.RarTools.ExtractRarFileEntry*
+  name: ExtractRarFileEntry
+  href: api/KS.Misc.RarFile.RarTools.html#KS_Misc_RarFile_RarTools_ExtractRarFileEntry_
+  commentId: Overload:KS.Misc.RarFile.RarTools.ExtractRarFileEntry
+  isSpec: "True"
+  fullName: KS.Misc.RarFile.RarTools.ExtractRarFileEntry
+  nameWithType: RarTools.ExtractRarFileEntry
+- uid: KS.Misc.RarFile.RarTools.ListRarEntries(System.String)
+  name: ListRarEntries(String)
+  href: api/KS.Misc.RarFile.RarTools.html#KS_Misc_RarFile_RarTools_ListRarEntries_System_String_
+  commentId: M:KS.Misc.RarFile.RarTools.ListRarEntries(System.String)
+  fullName: KS.Misc.RarFile.RarTools.ListRarEntries(System.String)
+  nameWithType: RarTools.ListRarEntries(String)
+- uid: KS.Misc.RarFile.RarTools.ListRarEntries*
+  name: ListRarEntries
+  href: api/KS.Misc.RarFile.RarTools.html#KS_Misc_RarFile_RarTools_ListRarEntries_
+  commentId: Overload:KS.Misc.RarFile.RarTools.ListRarEntries
+  isSpec: "True"
+  fullName: KS.Misc.RarFile.RarTools.ListRarEntries
+  nameWithType: RarTools.ListRarEntries
 - uid: KS.Misc.Reflection
   name: KS.Misc.Reflection
   href: api/KS.Misc.Reflection.html
@@ -37899,6 +38091,94 @@ references:
   fullName.vb: KS.Shell.Prompts.Presets.Mail.MailDefaultPreset.PresetShellType
   nameWithType: MailDefaultPreset.IPromptPreset.PresetShellType
   nameWithType.vb: MailDefaultPreset.PresetShellType
+- uid: KS.Shell.Prompts.Presets.RAR
+  name: KS.Shell.Prompts.Presets.RAR
+  href: api/KS.Shell.Prompts.Presets.RAR.html
+  commentId: N:KS.Shell.Prompts.Presets.RAR
+  fullName: KS.Shell.Prompts.Presets.RAR
+  nameWithType: KS.Shell.Prompts.Presets.RAR
+- uid: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset
+  name: RarDefaultPreset
+  href: api/KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.html
+  commentId: T:KS.Shell.Prompts.Presets.RAR.RarDefaultPreset
+  fullName: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset
+  nameWithType: RarDefaultPreset
+- uid: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetName
+  name: IPromptPreset.PresetName
+  href: api/KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.html#KS_Shell_Prompts_Presets_RAR_RarDefaultPreset_PresetName
+  commentId: P:KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetName
+  name.vb: PresetName
+  fullName: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.KS.Shell.Prompts.IPromptPreset.PresetName
+  fullName.vb: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetName
+  nameWithType: RarDefaultPreset.IPromptPreset.PresetName
+  nameWithType.vb: RarDefaultPreset.PresetName
+- uid: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetName*
+  name: IPromptPreset.PresetName
+  href: api/KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.html#KS_Shell_Prompts_Presets_RAR_RarDefaultPreset_PresetName_
+  commentId: Overload:KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetName
+  isSpec: "True"
+  name.vb: PresetName
+  fullName: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.KS.Shell.Prompts.IPromptPreset.PresetName
+  fullName.vb: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetName
+  nameWithType: RarDefaultPreset.IPromptPreset.PresetName
+  nameWithType.vb: RarDefaultPreset.PresetName
+- uid: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetPrompt
+  name: IPromptPreset.PresetPrompt
+  href: api/KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.html#KS_Shell_Prompts_Presets_RAR_RarDefaultPreset_PresetPrompt
+  commentId: P:KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetPrompt
+  name.vb: PresetPrompt
+  fullName: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.KS.Shell.Prompts.IPromptPreset.PresetPrompt
+  fullName.vb: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetPrompt
+  nameWithType: RarDefaultPreset.IPromptPreset.PresetPrompt
+  nameWithType.vb: RarDefaultPreset.PresetPrompt
+- uid: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetPrompt*
+  name: IPromptPreset.PresetPrompt
+  href: api/KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.html#KS_Shell_Prompts_Presets_RAR_RarDefaultPreset_PresetPrompt_
+  commentId: Overload:KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetPrompt
+  isSpec: "True"
+  name.vb: PresetPrompt
+  fullName: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.KS.Shell.Prompts.IPromptPreset.PresetPrompt
+  fullName.vb: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetPrompt
+  nameWithType: RarDefaultPreset.IPromptPreset.PresetPrompt
+  nameWithType.vb: RarDefaultPreset.PresetPrompt
+- uid: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetPromptBuilder
+  name: IPromptPreset.PresetPromptBuilder()
+  href: api/KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.html#KS_Shell_Prompts_Presets_RAR_RarDefaultPreset_PresetPromptBuilder
+  commentId: M:KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetPromptBuilder
+  name.vb: PresetPromptBuilder()
+  fullName: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.KS.Shell.Prompts.IPromptPreset.PresetPromptBuilder()
+  fullName.vb: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetPromptBuilder()
+  nameWithType: RarDefaultPreset.IPromptPreset.PresetPromptBuilder()
+  nameWithType.vb: RarDefaultPreset.PresetPromptBuilder()
+- uid: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetPromptBuilder*
+  name: IPromptPreset.PresetPromptBuilder
+  href: api/KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.html#KS_Shell_Prompts_Presets_RAR_RarDefaultPreset_PresetPromptBuilder_
+  commentId: Overload:KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetPromptBuilder
+  isSpec: "True"
+  name.vb: PresetPromptBuilder
+  fullName: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.KS.Shell.Prompts.IPromptPreset.PresetPromptBuilder
+  fullName.vb: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetPromptBuilder
+  nameWithType: RarDefaultPreset.IPromptPreset.PresetPromptBuilder
+  nameWithType.vb: RarDefaultPreset.PresetPromptBuilder
+- uid: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetShellType
+  name: IPromptPreset.PresetShellType
+  href: api/KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.html#KS_Shell_Prompts_Presets_RAR_RarDefaultPreset_PresetShellType
+  commentId: P:KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetShellType
+  name.vb: PresetShellType
+  fullName: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.KS.Shell.Prompts.IPromptPreset.PresetShellType
+  fullName.vb: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetShellType
+  nameWithType: RarDefaultPreset.IPromptPreset.PresetShellType
+  nameWithType.vb: RarDefaultPreset.PresetShellType
+- uid: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetShellType*
+  name: IPromptPreset.PresetShellType
+  href: api/KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.html#KS_Shell_Prompts_Presets_RAR_RarDefaultPreset_PresetShellType_
+  commentId: Overload:KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetShellType
+  isSpec: "True"
+  name.vb: PresetShellType
+  fullName: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.KS.Shell.Prompts.IPromptPreset.PresetShellType
+  fullName.vb: KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.PresetShellType
+  nameWithType: RarDefaultPreset.IPromptPreset.PresetShellType
+  nameWithType.vb: RarDefaultPreset.PresetShellType
 - uid: KS.Shell.Prompts.Presets.RSS
   name: KS.Shell.Prompts.Presets.RSS
   href: api/KS.Shell.Prompts.Presets.RSS.html
@@ -38786,6 +39066,12 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Aliases.AliasManager.PurgeAliases
   nameWithType: AliasManager.PurgeAliases
+- uid: KS.Shell.ShellBase.Aliases.AliasManager.RARShellAliases
+  name: RARShellAliases
+  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_RARShellAliases
+  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.RARShellAliases
+  fullName: KS.Shell.ShellBase.Aliases.AliasManager.RARShellAliases
+  nameWithType: AliasManager.RARShellAliases
 - uid: KS.Shell.ShellBase.Aliases.AliasManager.RemoteDebugAliases
   name: RemoteDebugAliases
   href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_RemoteDebugAliases
@@ -39614,6 +39900,12 @@ references:
   commentId: F:KS.Shell.ShellBase.Shells.ShellType.MailShell
   fullName: KS.Shell.ShellBase.Shells.ShellType.MailShell
   nameWithType: ShellType.MailShell
+- uid: KS.Shell.ShellBase.Shells.ShellType.RARShell
+  name: RARShell
+  href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_RARShell
+  commentId: F:KS.Shell.ShellBase.Shells.ShellType.RARShell
+  fullName: KS.Shell.ShellBase.Shells.ShellType.RARShell
+  nameWithType: ShellType.RARShell
 - uid: KS.Shell.ShellBase.Shells.ShellType.RemoteDebugShell
   name: RemoteDebugShell
   href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_RemoteDebugShell
@@ -39977,6 +40269,69 @@ references:
   fullName.vb: KS.Shell.Shells.MailShell.ShellType
   nameWithType: MailShell.IShell.ShellType
   nameWithType.vb: MailShell.ShellType
+- uid: KS.Shell.Shells.RarShell
+  name: RarShell
+  href: api/KS.Shell.Shells.RarShell.html
+  commentId: T:KS.Shell.Shells.RarShell
+  fullName: KS.Shell.Shells.RarShell
+  nameWithType: RarShell
+- uid: KS.Shell.Shells.RarShell.Bail
+  name: IShell.Bail
+  href: api/KS.Shell.Shells.RarShell.html#KS_Shell_Shells_RarShell_Bail
+  commentId: P:KS.Shell.Shells.RarShell.Bail
+  name.vb: Bail
+  fullName: KS.Shell.Shells.RarShell.KS.Shell.ShellBase.Shells.IShell.Bail
+  fullName.vb: KS.Shell.Shells.RarShell.Bail
+  nameWithType: RarShell.IShell.Bail
+  nameWithType.vb: RarShell.Bail
+- uid: KS.Shell.Shells.RarShell.Bail*
+  name: IShell.Bail
+  href: api/KS.Shell.Shells.RarShell.html#KS_Shell_Shells_RarShell_Bail_
+  commentId: Overload:KS.Shell.Shells.RarShell.Bail
+  isSpec: "True"
+  name.vb: Bail
+  fullName: KS.Shell.Shells.RarShell.KS.Shell.ShellBase.Shells.IShell.Bail
+  fullName.vb: KS.Shell.Shells.RarShell.Bail
+  nameWithType: RarShell.IShell.Bail
+  nameWithType.vb: RarShell.Bail
+- uid: KS.Shell.Shells.RarShell.InitializeShell(System.Object[])
+  name: IShell.InitializeShell(Object[])
+  href: api/KS.Shell.Shells.RarShell.html#KS_Shell_Shells_RarShell_InitializeShell_System_Object___
+  commentId: M:KS.Shell.Shells.RarShell.InitializeShell(System.Object[])
+  name.vb: InitializeShell(Object())
+  fullName: KS.Shell.Shells.RarShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell(System.Object[])
+  fullName.vb: KS.Shell.Shells.RarShell.InitializeShell(System.Object())
+  nameWithType: RarShell.IShell.InitializeShell(Object[])
+  nameWithType.vb: RarShell.InitializeShell(Object())
+- uid: KS.Shell.Shells.RarShell.InitializeShell*
+  name: IShell.InitializeShell
+  href: api/KS.Shell.Shells.RarShell.html#KS_Shell_Shells_RarShell_InitializeShell_
+  commentId: Overload:KS.Shell.Shells.RarShell.InitializeShell
+  isSpec: "True"
+  name.vb: InitializeShell
+  fullName: KS.Shell.Shells.RarShell.KS.Shell.ShellBase.Shells.IShell.InitializeShell
+  fullName.vb: KS.Shell.Shells.RarShell.InitializeShell
+  nameWithType: RarShell.IShell.InitializeShell
+  nameWithType.vb: RarShell.InitializeShell
+- uid: KS.Shell.Shells.RarShell.ShellType
+  name: IShell.ShellType
+  href: api/KS.Shell.Shells.RarShell.html#KS_Shell_Shells_RarShell_ShellType
+  commentId: P:KS.Shell.Shells.RarShell.ShellType
+  name.vb: ShellType
+  fullName: KS.Shell.Shells.RarShell.KS.Shell.ShellBase.Shells.IShell.ShellType
+  fullName.vb: KS.Shell.Shells.RarShell.ShellType
+  nameWithType: RarShell.IShell.ShellType
+  nameWithType.vb: RarShell.ShellType
+- uid: KS.Shell.Shells.RarShell.ShellType*
+  name: IShell.ShellType
+  href: api/KS.Shell.Shells.RarShell.html#KS_Shell_Shells_RarShell_ShellType_
+  commentId: Overload:KS.Shell.Shells.RarShell.ShellType
+  isSpec: "True"
+  name.vb: ShellType
+  fullName: KS.Shell.Shells.RarShell.KS.Shell.ShellBase.Shells.IShell.ShellType
+  fullName.vb: KS.Shell.Shells.RarShell.ShellType
+  nameWithType: RarShell.IShell.ShellType
+  nameWithType.vb: RarShell.ShellType
 - uid: KS.Shell.Shells.RSSShell
   name: RSSShell
   href: api/KS.Shell.Shells.RSSShell.html

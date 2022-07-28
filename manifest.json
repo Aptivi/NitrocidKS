@@ -882,7 +882,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Events.html",
-          "hash": "9DxjswW4smsjYMrXVnMxsSzTlSBWnmXYNLqCRvlxm24="
+          "hash": "VzP0NTfeG3p106Kp/+tO/ED2YlDk+cknJ05wCL4/DlA="
         }
       },
       "is_incremental": false,
@@ -2298,7 +2298,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Configuration.Config.ConfigCategory.html",
-          "hash": "sMFAHEbIk2z2M7qLZIuXH2zjBaDy/m8SAqWxoxUpAFg="
+          "hash": "PJpUn+izSFQ+raVN/PeC4n9TRJzakd5hDZmwBREZkBw="
         }
       },
       "is_incremental": false,
@@ -2310,7 +2310,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Configuration.Config.html",
-          "hash": "+MxyyLqJrE0PRxwnoeM7yi6Tym2Spnwn2z0PpBKBdFE="
+          "hash": "KMBLOLzLN8RiEAaeVFhQNaY3H4IWsgnOwy4F7HwalR0="
         }
       },
       "is_incremental": false,
@@ -2791,6 +2791,30 @@
         ".html": {
           "relative_path": "api/KS.Misc.Probers.html",
           "hash": "44vzriX+dVtH0y3kkMrj8CUUVG37Cw7Bnbs6YCnqtCE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.RarFile.RarTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.RarFile.RarTools.html",
+          "hash": "dc+VXsDNKzJeAPSamdzyYE0kdjTdwqBqcE3FlPeqZaU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.RarFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.RarFile.html",
+          "hash": "UQme5Q/2xcw5iK0oHcHl7KBAhJfn31nh8CXqoHfHB0g="
         }
       },
       "is_incremental": false,
@@ -4506,7 +4530,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.ModManager.html",
-          "hash": "EP9VhdKxHvr8+F+Q4e5DWfyOR8PhdLpiuHXozbYN598="
+          "hash": "c/KAS5ksCZcH6tdansU9KgBLuqQy0H7gzS828djWOyg="
         }
       },
       "is_incremental": false,
@@ -5646,7 +5670,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.CustomShellPromptStyle.html",
-          "hash": "8RzhvuSTfK4RpnZYHrNdLRDmxLlbINzGJR8GWjaJlp4="
+          "hash": "tFfdk3HqtgqT+2uJDX9XkDa9jek08mfoXNyIrYPrLso="
         }
       },
       "is_incremental": false,
@@ -5779,6 +5803,30 @@
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Mail.html",
           "hash": "i+zO6OwIoWRuh33XTzXyNeVbJQUt5I+6DUbb4pwpYC0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.RAR.RarDefaultPreset.html",
+          "hash": "KOAdKxVbdRCx2CFN00g/j3bjHtaBNCCH1LxCUACVhxQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.RAR.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.RAR.html",
+          "hash": "BHzJJ3l3MBIJ4dAcvMD7LZbwVsg9gnVOZfsa4kKUQIQ="
         }
       },
       "is_incremental": false,
@@ -5946,7 +5994,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.PromptPresetBase.html",
-          "hash": "GYXZ7WKHWnqhJNatLO6rmJuDhOY4n60uwjD3rWGRYdg="
+          "hash": "csrDmYeedBvo4Fisc7lx6nXmMDi14sXPuQUgweiI0+o="
         }
       },
       "is_incremental": false,
@@ -5958,7 +6006,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.PromptPresetManager.html",
-          "hash": "kLxYfb0VoA2bh7FmoTsflaDHnepMffjm4FZlaer9gC8="
+          "hash": "1fY6F+veBSxNIafRpBT3yM+NkBl+2FzJuhS6qYxHVsk="
         }
       },
       "is_incremental": false,
@@ -5994,7 +6042,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Aliases.AliasManager.html",
-          "hash": "0YTIDvJiWuEP+hvPz+SsI3EDdi9eMWQXgsVsXHFzuL0="
+          "hash": "QLDpRkIWHisaLMPjbAT9IzAvQsH1B+9pFCq+5A91pDQ="
         }
       },
       "is_incremental": false,
@@ -6054,7 +6102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandManager.html",
-          "hash": "VGQTnxeCdSHW6OB5ASJQTfDbM1dxLgcTeKge3a9iNl4="
+          "hash": "tdXT8HUO9Zf13Or6kaW6v83qHSJgIQH3PtFDYOkH+WI="
         }
       },
       "is_incremental": false,
@@ -6066,7 +6114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.GetCommand.html",
-          "hash": "mIPoWPKTzb7MoIqu/bkwV8XW2eGHbtDYuI9HTNLSby8="
+          "hash": "FNamq80tE0ajogs/5iLFfLjMOYQ32nO65jnpCgfNU58="
         }
       },
       "is_incremental": false,
@@ -6078,7 +6126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.HelpSystem.html",
-          "hash": "WB/PCFuaDifjMYV1oGllZYonYbpAiTmbz9XjJkllsgI="
+          "hash": "SDmRpjNNX6sABkUcccLMu2rS3H4rDS9iA1AKaWV08O4="
         }
       },
       "is_incremental": false,
@@ -6138,7 +6186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.ShellExecutor.html",
-          "hash": "BBI6X5xLeV9yOJKed747jmC93jEJQhTwfFaSQLjpv3E="
+          "hash": "eEz6iTfplkxxeUV5lKu1GRkoNsY+oXEp6cNR+cURF5w="
         }
       },
       "is_incremental": false,
@@ -6174,7 +6222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.ShellType.html",
-          "hash": "PBmJlpCIv33kejTzZbD2K9F+zWG/5z886Z1FTp3/42k="
+          "hash": "VyLH+5fT2z3RlDXOxI9IpZkF0+cBQASWvhRdR34LuYY="
         }
       },
       "is_incremental": false,
@@ -6278,6 +6326,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RarShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RarShell.html",
+          "hash": "qfQHSPyXa7HaEjfJ+rwcIy1GNBfuOWzEaluUNf8Rb+Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.SFTPShell.yml",
       "output": {
         ".html": {
@@ -6342,7 +6402,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.html",
-          "hash": "XYAooM82+HPGnUxmuwzX8ZP9DpFsEJeJ82i2ziItKr0="
+          "hash": "9D8QgoQIJzHrFYmkF6gT8PvjQm6gqugH+ftnFgBxtvk="
         }
       },
       "is_incremental": false,
@@ -6450,7 +6510,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "F6gfBH0tBdezUbMnCvQFFhvaeHDzamtTbMIXNrbMa+8="
+          "hash": "hXzLW+Myy1dYhob9pSPPTHuyDdZLawRy5FzfH62C0dg="
         }
       },
       "is_incremental": false,
@@ -9384,7 +9444,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 536,
+          "total_file_count": 541,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
