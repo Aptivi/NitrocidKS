@@ -31375,62 +31375,62 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Writers.FancyWriters.FigletWhereColor.WriteFigletWherePlain
   nameWithType: FigletWhereColor.WriteFigletWherePlain
-- uid: KS.Misc.Writers.FancyWriters.ProgressColor
-  name: ProgressColor
-  href: api/KS.Misc.Writers.FancyWriters.ProgressColor.html
-  commentId: T:KS.Misc.Writers.FancyWriters.ProgressColor
-  fullName: KS.Misc.Writers.FancyWriters.ProgressColor
-  nameWithType: ProgressColor
-- uid: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress(System.Double,System.Int32,System.Int32)
+- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor
+  name: ProgressBarColor
+  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html
+  commentId: T:KS.Misc.Writers.FancyWriters.ProgressBarColor
+  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor
+  nameWithType: ProgressBarColor
+- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32)
   name: WriteProgress(Double, Int32, Int32)
-  href: api/KS.Misc.Writers.FancyWriters.ProgressColor.html#KS_Misc_Writers_FancyWriters_ProgressColor_WriteProgress_System_Double_System_Int32_System_Int32_
-  commentId: M:KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress(System.Double,System.Int32,System.Int32)
-  fullName: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress(System.Double, System.Int32, System.Int32)
-  nameWithType: ProgressColor.WriteProgress(Double, Int32, Int32)
-- uid: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.Color)
+  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgress_System_Double_System_Int32_System_Int32_
+  commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32)
+  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double, System.Int32, System.Int32)
+  nameWithType: ProgressBarColor.WriteProgress(Double, Int32, Int32)
+- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.Color)
   name: WriteProgress(Double, Int32, Int32, Color)
-  href: api/KS.Misc.Writers.FancyWriters.ProgressColor.html#KS_Misc_Writers_FancyWriters_ProgressColor_WriteProgress_System_Double_System_Int32_System_Int32_KS_ConsoleBase_Colors_Color_
-  commentId: M:KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.Color)
-  fullName: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress(System.Double, System.Int32, System.Int32, KS.ConsoleBase.Colors.Color)
-  nameWithType: ProgressColor.WriteProgress(Double, Int32, Int32, Color)
-- uid: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.Color,KS.ConsoleBase.Colors.Color)
+  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgress_System_Double_System_Int32_System_Int32_KS_ConsoleBase_Colors_Color_
+  commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.Color)
+  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double, System.Int32, System.Int32, KS.ConsoleBase.Colors.Color)
+  nameWithType: ProgressBarColor.WriteProgress(Double, Int32, Int32, Color)
+- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.Color,KS.ConsoleBase.Colors.Color)
   name: WriteProgress(Double, Int32, Int32, Color, Color)
-  href: api/KS.Misc.Writers.FancyWriters.ProgressColor.html#KS_Misc_Writers_FancyWriters_ProgressColor_WriteProgress_System_Double_System_Int32_System_Int32_KS_ConsoleBase_Colors_Color_KS_ConsoleBase_Colors_Color_
-  commentId: M:KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.Color,KS.ConsoleBase.Colors.Color)
-  fullName: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress(System.Double, System.Int32, System.Int32, KS.ConsoleBase.Colors.Color, KS.ConsoleBase.Colors.Color)
-  nameWithType: ProgressColor.WriteProgress(Double, Int32, Int32, Color, Color)
-- uid: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes)
+  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgress_System_Double_System_Int32_System_Int32_KS_ConsoleBase_Colors_Color_KS_ConsoleBase_Colors_Color_
+  commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.Color,KS.ConsoleBase.Colors.Color)
+  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double, System.Int32, System.Int32, KS.ConsoleBase.Colors.Color, KS.ConsoleBase.Colors.Color)
+  nameWithType: ProgressBarColor.WriteProgress(Double, Int32, Int32, Color, Color)
+- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes)
   name: WriteProgress(Double, Int32, Int32, ColorTools.ColTypes)
-  href: api/KS.Misc.Writers.FancyWriters.ProgressColor.html#KS_Misc_Writers_FancyWriters_ProgressColor_WriteProgress_System_Double_System_Int32_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_
-  commentId: M:KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes)
-  fullName: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress(System.Double, System.Int32, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes)
-  nameWithType: ProgressColor.WriteProgress(Double, Int32, Int32, ColorTools.ColTypes)
-- uid: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes)
+  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgress_System_Double_System_Int32_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_
+  commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes)
+  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double, System.Int32, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes)
+  nameWithType: ProgressBarColor.WriteProgress(Double, Int32, Int32, ColorTools.ColTypes)
+- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes)
   name: WriteProgress(Double, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes)
-  href: api/KS.Misc.Writers.FancyWriters.ProgressColor.html#KS_Misc_Writers_FancyWriters_ProgressColor_WriteProgress_System_Double_System_Int32_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_KS_ConsoleBase_Colors_ColorTools_ColTypes_
-  commentId: M:KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes)
-  fullName: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress(System.Double, System.Int32, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, KS.ConsoleBase.Colors.ColorTools.ColTypes)
-  nameWithType: ProgressColor.WriteProgress(Double, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes)
-- uid: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress*
+  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgress_System_Double_System_Int32_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_KS_ConsoleBase_Colors_ColorTools_ColTypes_
+  commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes)
+  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double, System.Int32, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, KS.ConsoleBase.Colors.ColorTools.ColTypes)
+  nameWithType: ProgressBarColor.WriteProgress(Double, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes)
+- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress*
   name: WriteProgress
-  href: api/KS.Misc.Writers.FancyWriters.ProgressColor.html#KS_Misc_Writers_FancyWriters_ProgressColor_WriteProgress_
-  commentId: Overload:KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress
+  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgress_
+  commentId: Overload:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress
   isSpec: "True"
-  fullName: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgress
-  nameWithType: ProgressColor.WriteProgress
-- uid: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgressPlain(System.Double,System.Int32,System.Int32)
+  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress
+  nameWithType: ProgressBarColor.WriteProgress
+- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgressPlain(System.Double,System.Int32,System.Int32)
   name: WriteProgressPlain(Double, Int32, Int32)
-  href: api/KS.Misc.Writers.FancyWriters.ProgressColor.html#KS_Misc_Writers_FancyWriters_ProgressColor_WriteProgressPlain_System_Double_System_Int32_System_Int32_
-  commentId: M:KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgressPlain(System.Double,System.Int32,System.Int32)
-  fullName: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgressPlain(System.Double, System.Int32, System.Int32)
-  nameWithType: ProgressColor.WriteProgressPlain(Double, Int32, Int32)
-- uid: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgressPlain*
+  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgressPlain_System_Double_System_Int32_System_Int32_
+  commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgressPlain(System.Double,System.Int32,System.Int32)
+  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgressPlain(System.Double, System.Int32, System.Int32)
+  nameWithType: ProgressBarColor.WriteProgressPlain(Double, Int32, Int32)
+- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgressPlain*
   name: WriteProgressPlain
-  href: api/KS.Misc.Writers.FancyWriters.ProgressColor.html#KS_Misc_Writers_FancyWriters_ProgressColor_WriteProgressPlain_
-  commentId: Overload:KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgressPlain
+  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgressPlain_
+  commentId: Overload:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgressPlain
   isSpec: "True"
-  fullName: KS.Misc.Writers.FancyWriters.ProgressColor.WriteProgressPlain
-  nameWithType: ProgressColor.WriteProgressPlain
+  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgressPlain
+  nameWithType: ProgressBarColor.WriteProgressPlain
 - uid: KS.Misc.Writers.FancyWriters.SeparatorWriterColor
   name: SeparatorWriterColor
   href: api/KS.Misc.Writers.FancyWriters.SeparatorWriterColor.html
