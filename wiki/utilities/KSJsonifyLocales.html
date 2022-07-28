@@ -83,7 +83,7 @@
 <h3 id="how-it-works">How it works</h3>
 <h4 id="the-normal-flow">The normal flow</h4>
 <p>KSJsonifyLocales contains the Translations folder that has the translation text files inside. When this program is run, it reads the entire folder, parses all the files, and converts them to the JSON output, which can be found in Translations/Done folder in the same place as the executable.</p>
-<p>If run with <code>--CopyToResources</code>, it will copy the results directly to Kernel Simulator's resources, but it is untested, so use at your own risk.</p>
+<p>If run with <code>--CopyToResources</code>, it will copy the results directly to Kernel Simulator's resources, assuming that it's run on KSBuild found inside the source code folder. This usually works with git clones of KS.</p>
 <p>To illustrate this, KSJsonifyLocales will:</p>
 <ul>
 <li>read the Translations folder,</li>
@@ -91,7 +91,7 @@
 <li>add them to the list of language files,</li>
 <li>read both the English and the target language lines,</li>
 <li>save them to JSON, and</li>
-<li>save them to Translations/Done or (optionally) ../Resources, assuming that the executable is found one level above the Kernel Simulator source folder</li>
+<li>save them to Translations/Done or (optionally) ../../Resources, assuming that the executable is found one level above the Kernel Simulator source folder</li>
 </ul>
 <h4 id="what-else-can-it-do">What else can it do?</h4>
 <p>These switches can change the way how KSJsonifyLocales runs. In ordrer to use any of the switches, you must provide one of the first three switches so that the language parsing can be modified using the switches other than them. Refer to the table below for description:</p>
@@ -128,16 +128,16 @@
 <h3 id="custom-languages">Custom languages</h3>
 <p>The CustomLanguages folder is for the custom languages which change the language of the messages found in Kernel Simulator. This folder can be used to store the text files of your custom languages, but you have to place the metadata information for each custom language to be read by the kernel as it starts up. It can be accessed in the same location as the Kernel Simulator executable.</p>
 <p>This metadata information should be stored in a file called Metadata.json in the format below to be jsonified by this tool. It should not be removed.</p>
-<pre><code>&quot;lng&quot;: {
-    &quot;name&quot;: &quot;Language&quot;,
-    &quot;transliterable&quot;: false / true
-}
+<pre><code class="lang-json">    &quot;lng&quot;: {
+        &quot;name&quot;: &quot;Language&quot;,
+        &quot;transliterable&quot;: false / true
+    }
 </code></pre>
 <p>Example:</p>
-<pre><code>&quot;afr&quot;: {
-    &quot;name&quot;: &quot;Afrikaans&quot;,
-    &quot;transliterable&quot;: false
-}
+<pre><code class="lang-json">    &quot;afr&quot;: {
+        &quot;name&quot;: &quot;Afrikaans&quot;,
+        &quot;transliterable&quot;: false
+    }
 </code></pre>
 <p>The outputs for the custom languages can be found in the KSLanguages folder in your system profile directory (<code>$HOME</code> or <code>%USERPROFILE%</code>) stored as lng.json. For example, afr.json.</p>
 <p>If there's a transliterable version of a language that you're going to add, you must implement two versions of the language:</p>
@@ -145,7 +145,8 @@
 <li>The translated version (lng-T, for e.g. arb-T)</li>
 <li>The transliterated version (lng, for e.g. arb)</li>
 </ul>
-<p>WARNING: The custom language shouldn't be under the same three-letter language name; it should be unique. If you're creating a fixed version of the existing language, you should append a number after it. For example, &quot;afr-1&quot;, not &quot;afr&quot;.</p>
+<p>[!WARNING]
+The custom language shouldn't be under the same three-letter language name; it should be unique. If you're creating a fixed version of the existing language, you should append a number after it. For example, &quot;afr-1&quot;, not &quot;afr&quot;.</p>
 <h3 id="how-to-use">How to use</h3>
 <ul>
 <li>On Windows, you can just double-click on the KSJsonifyLocales.exe file. It's usually found on the same directory as Kernel Simulator.</li>

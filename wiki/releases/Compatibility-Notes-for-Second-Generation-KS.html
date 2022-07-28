@@ -83,7 +83,8 @@
 <h3 id="breaking-api-changes-second-generation-revision-0">Breaking API changes (Second-generation, Revision 0)</h3>
 <p>Each breaking change have their own workarounds and description, including the reason why we've removed the API function. You need to provide alternatives for the below deprecated functions or APIs in your mods.</p>
 <h4 id="00200-notes">0.0.20.0 notes</h4>
-<p>When upgrading your mods to support 0.0.20.0, you must follow the compatibility notes to ensure that your mod works with 0.0.20.0. If you want to support the first-generation KS, you must separate your mod codebase to two parts: one for the first-gen and the other for the second-gen. They can't coexist with each other in your KSMods directory.</p>
+<p>[!WARNING]
+When upgrading your mods to support 0.0.20.0, you must follow the compatibility notes to ensure that your mod works with 0.0.20.0. If you want to support the first-generation KS, you must separate your mod codebase to two parts: one for the first-gen and the other for the second-gen. They can't coexist with each other in your KSMods directory.</p>
 <h5 id="unified-help-system-to-support-every-shell">Unified help system to support every shell</h5>
 <p>We have unified the help system to support every shell provided in KS. This results in us having to do these changes:</p>
 <ul>
@@ -319,10 +320,10 @@
 <h6 id="reasons">Reasons</h6>
 <p>It has been recently reported that a single-lettered function or sub is not a good way to describe writing your text into the console or even doing anything. For example, if you're going to make a function that adds the two numbers from the two variables and returns the result, you're not going to name that function &quot;A,&quot; because, while it provides the shortcut to this function, it also creates problems, especially if you no longer understood what that function did or even meant for. The problem grows even worse when you decided to leave that function undocumented because you would like &quot;to be the only person that can understand it and nobody else.&quot; It also may pose confusions, because what if &quot;A&quot; is meant by &quot;AllNumbers,&quot; &quot;AddNumbers,&quot; &quot;AddTwoNumbers,&quot; or, obviously, &quot;Addition?&quot;</p>
 <p>Moreover, there was a need to overload all the writing functions by renaming their names to their appropriate &quot;Write&quot; functions so that we wouldn't have to use the separate functions for their colored versions. However, if it was bound to cause problems in later commits, we'll revert this change.</p>
-<h6 id="actions">Actions</h6>
-<p>Your mods might break if any of them uses the console writing functions from KS, so change all the <code>W()</code> instances to <code>Write()</code> and remove any &quot;C&quot; or &quot;C16&quot; suffixes.</p>
-<h6 id="side-effects">Side Effects</h6>
-<p>When writing such functions, you'll discover that the arguments parsing is stricter than the previous, due to how we've implemented the message argument. Make explicit casts while we're testing the new overloads to make sure that everything is the same as before.</p>
+<p>[!WARNING]
+Your mods might break if any of them uses the console writing functions from KS, so change all the <code>W()</code> instances to <code>Write()</code> and remove any &quot;C&quot; or &quot;C16&quot; suffixes.</p>
+<p>[!WARNING]
+When writing such functions, you'll discover that the arguments parsing is stricter than the previous, due to how we've implemented the message argument. Make explicit casts while we're testing the new overloads to make sure that everything is the same as before.</p>
 <h5 id="actually-removed-aliastype">Actually removed AliasType</h5>
 <p>It's basically a carbon-copy of ShellCommandType</p>
 <h5 id="reworked-on-the-fetch-kernel-update-api">Reworked on the fetch kernel update API</h5>
@@ -573,7 +574,8 @@
 <li>Likeliness to come back: Highly unlikely</li>
 </ul>
 <h4 id="00210-notes">0.0.21.0 notes</h4>
-<p>When upgrading your mods to support 0.0.21.0, you must follow the compatibility notes to ensure that your mod works with 0.0.21.0. If you want to support the first-generation KS, you must separate your mod codebase to two parts: one for the first-gen and the other for the second-gen. They can't coexist with each other in your KSMods directory.</p>
+<p>[!WARNING]
+When upgrading your mods to support 0.0.21.0, you must follow the compatibility notes to ensure that your mod works with 0.0.21.0. If you want to support the first-generation KS, you must separate your mod codebase to two parts: one for the first-gen and the other for the second-gen. They can't coexist with each other in your KSMods directory.</p>
 <h5 id="consolidated-the-obsolete-functions">Consolidated the obsolete functions</h5>
 <p>The three deprecated functions are just wrappers to the reflection routines in Kernel Simulator. The one sub is about finding settings, but since we already have <code>FindSetting(String, JToken)</code>, why don't we just go ahead and remove the <code>FindSetting(String, Boolean)</code> one, since it doesn't support splashes?</p>
 <ul>
@@ -621,7 +623,8 @@
 <li>Likeliness to come back: Highly unlikely</li>
 </ul>
 <h4 id="00220-notes">0.0.22.0 notes</h4>
-<p>When upgrading your mods to support 0.0.22.0, you must follow the compatibility notes to ensure that your mod works with 0.0.22.0. If you want to support the first-generation KS, you must separate your mod codebase to two parts: one for the first-gen and the other for the second-gen. They can't coexist with each other in your KSMods directory.</p>
+<p>[!WARNING]
+When upgrading your mods to support 0.0.22.0, you must follow the compatibility notes to ensure that your mod works with 0.0.22.0. If you want to support the first-generation KS, you must separate your mod codebase to two parts: one for the first-gen and the other for the second-gen. They can't coexist with each other in your KSMods directory.</p>
 <h5 id="separated-properties-code-to-propertymanager">Separated properties code to PropertyManager</h5>
 <p>As we feel that properties reflection code should have their own place, we moved it to PropertyManager module.</p>
 <ul>
@@ -658,12 +661,14 @@
 <li>Likeliness to come back: Highly unlikely</li>
 </ul>
 <h4 id="00230-notes">0.0.23.0 notes</h4>
-<p>When upgrading your mods to support 0.0.23.0, you must follow the compatibility notes to ensure that your mod works with 0.0.23.0. If you want to support the first-generation KS, you must separate your mod codebase to two parts: one for the first-gen and the other for the second-gen. They can't coexist with each other in your KSMods directory.</p>
+<p>[!WARNING]
+When upgrading your mods to support 0.0.23.0, you must follow the compatibility notes to ensure that your mod works with 0.0.23.0. If you want to support the first-generation KS, you must separate your mod codebase to two parts: one for the first-gen and the other for the second-gen. They can't coexist with each other in your KSMods directory.</p>
 <h5 id="deprecation-of-icustomsaver">Deprecation of ICustomSaver</h5>
 <p>As we've implemented <code>BaseScreensaver</code> to better handle screensavers, we decided to deprecate <code>ICustomSaver</code> in favor of the new screensaver model. This will merge all kernel threads of individual screensavers to one master screensaver thread.</p>
 <h3 id="breaking-api-changes-second-generation-revision-1">Breaking API changes (Second-generation, Revision 1)</h3>
 <h4 id="00240-notes">0.0.24.0 notes</h4>
-<p>When upgrading your mods to support 0.0.24.0, you must follow the compatibility notes to ensure that your mod works with 0.0.24.0. If you want to support the first-generation KS, you must separate your mod codebase to two parts: one for the first-gen and the other for the second-gen. They can't coexist with each other in your KSMods directory.</p>
+<p>[!WARNING]
+When upgrading your mods to support 0.0.24.0, you must follow the compatibility notes to ensure that your mod works with 0.0.24.0. If you want to support the first-generation KS, you must separate your mod codebase to two parts: one for the first-gen and the other for the second-gen. They can't coexist with each other in your KSMods directory.</p>
 <h5 id="removed-support-for-icustomsaver">Removed support for ICustomSaver</h5>
 <p>ICustomSaver is now replaced by the newer IScreensaver, effectively breaking all screensavers that use the old ICustomSaver interface. All guides for custom screensavers should be updated to reflect this change. If any of the screensavers that we've made in the guide still uses the old interface, raise an issue.</p>
 <p>To finalize this change, we've also renamed the module name of the screensaver parser from CustomSaverCompiler to CustomSaverParser.</p>
@@ -686,7 +691,8 @@
 <h5 id="restructured-the-filesystem-api">Restructured the filesystem API</h5>
 <p>Filesystem module was a <code>god class</code>, so we decided to consolidate it to their own separate files to accomodate with the upcoming changes. However, you need to use their own namespace (for example, if you want to copy a file, import <code>KS.Files.Operations</code>) to be able to use them.</p>
 <p>We have also removed <code>SetSizeParseMode()</code> as it's redundant and it was there for compatibility reasons. You have more than enough APIs to do the same thing this function does, don't you?</p>
-<p>However, the base <code>Filesystem</code> module will stay so that path neutralization and invalid path detection routines will still be available under the same namespace in 0.0.24.0 and above.</p>
+<p>[!NOTE]
+The base <code>Filesystem</code> module will stay so that path neutralization and invalid path detection routines will still be available under the same namespace in 0.0.24.0 and above.</p>
 <ul>
 <li><p>Removed functions:</p>
 <ul>
