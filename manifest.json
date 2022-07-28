@@ -1946,6 +1946,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.BeatFader.BeatFader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.BeatFader.BeatFader.html",
+          "hash": "W2JsCXHYd8I/jUV+kj59jd6L+l7B2Dk16a1xjOjnmx0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.BeatFader.BeatFaderSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.BeatFader.BeatFaderSettings.html",
+          "hash": "JgooIC3QZzHblbJYdHLnKIkhTU6C9s3Y9dTKNakNTts="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.BeatFader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.BeatFader.html",
+          "hash": "pBxMPWGKf0sCaLhKjnABJ2soSV8qD8hkYE7FsDWJfRA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Animations.BeatPulse.BeatPulse.yml",
       "output": {
         ".html": {
@@ -2011,6 +2047,78 @@
         ".html": {
           "relative_path": "api/KS.Misc.Animations.EdgePulse.html",
           "hash": "Yxm2nkhCaLT9xA8rdJaJEVgp79QeWEzG62PjSTW933c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.Fader.Fader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.Fader.Fader.html",
+          "hash": "Wq3WCgNhE9o0oCfMWoHyYA8xUHMQGeCnb8RsZfgu2LQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.Fader.FaderSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.Fader.FaderSettings.html",
+          "hash": "hOs6TF6+o9QobRGKB9Ok4eebEH2upxKKemLBak0G86c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.Fader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.Fader.html",
+          "hash": "1Lt7DdEX+5SB1WxrtrF6VV1l/2iJQL7jiOa0wZxON+U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.FaderBack.FaderBack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.FaderBack.FaderBack.html",
+          "hash": "NYd4cumetL5ea4SFmDFou3tBqiV8PtWWzbZSOSkk35I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.FaderBack.FaderBackSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.FaderBack.FaderBackSettings.html",
+          "hash": "UqH8YJsOVOajm+mMIJfz8a6DdRaIZFAe6zVCD3H1qwY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.FaderBack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.FaderBack.html",
+          "hash": "vlYgcW06gaMtJmrKEVeOroqEWOF4CUX1pQkrzrp84Qs="
         }
       },
       "is_incremental": false,
@@ -2874,7 +2982,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.BeatFaderDisplay.html",
-          "hash": "FVMObPj3M9cx+SZN2CzQXnhfMWHnhkYCk6IidhJnICA="
+          "hash": "7GJ+lpbnlHTnNThn0wZTw77kn1aYu8Kdx6znyl74pO8="
         }
       },
       "is_incremental": false,
@@ -3102,7 +3210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FaderBackDisplay.html",
-          "hash": "36v9geu1lqvXIK4gmNhOi45d9uJXMQ9Sscq2QUceOt0="
+          "hash": "bBjGL4HayeCVO5sQg6aOB5fy6FPOp7NIdwpEHq9+cJg="
         }
       },
       "is_incremental": false,
@@ -3126,7 +3234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.FaderDisplay.html",
-          "hash": "35jER31aEeMUK5rDZz48a3+stAw2qXvsxeCumVjZ/pY="
+          "hash": "7fQiMGGOC1y81zY7wPQuZuV6wH2LmBLqjMbUP3EU1JQ="
         }
       },
       "is_incremental": false,
@@ -3870,7 +3978,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Splash.SplashManager.html",
-          "hash": "iuDL67Ujx8A/zbbAO/yPqb+LhbfOFPycDgYNr2cO8uo="
+          "hash": "Y1WaJuYYdSJluFBPP0pNYQBWgUnX+Q1uiaS/QFoXtu4="
         }
       },
       "is_incremental": false,
@@ -6330,7 +6438,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Kyw4i+5KwD9SmQFrbk3eljERaeX0fJWNk8qhyWQcA14="
+          "hash": "5CdTMl+q1agnkaqE04bv7I/Mfh8rrMJ2D/enYlb2GaA="
         }
       },
       "is_incremental": false,
@@ -9264,7 +9372,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 526,
+          "total_file_count": 535,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
