@@ -117,7 +117,7 @@
   "api/KS.ConsoleBase.ConsoleSanityChecker.html": {
     "href": "api/KS.ConsoleBase.ConsoleSanityChecker.html",
     "title": "Class ConsoleSanityChecker | Kernel Simulator API - Eofla Internals",
-    "keywords": "Class ConsoleSanityChecker Inheritance ConsoleSanityChecker Namespace : KS.ConsoleBase Assembly : Kernel Simulator.dll Syntax public class ConsoleSanityChecker Methods | Improve this Doc View Source CheckConsole() Checks the running console for sanity, like the incompatible consoles, insane console types, etc. Declaration public static void CheckConsole()"
+    "keywords": "Class ConsoleSanityChecker Inheritance ConsoleSanityChecker Namespace : KS.ConsoleBase Assembly : Kernel Simulator.dll Syntax public class ConsoleSanityChecker Methods | Improve this Doc View Source CheckConsole() Checks the running console for sanity, like the incompatible consoles, insane console types, etc. The severity of the checks can be describes in two categories: Error: We'll throw InsaneConsoleDetectedException when we detect that the console is not conforming to the standards. Warning: We'll just issue a warning in yellow text using the plain 16-color writer when we detect that the console is not supporting optional features, like 256-colors. Declaration public static void CheckConsole()"
   },
   "api/KS.ConsoleBase.html": {
     "href": "api/KS.ConsoleBase.html",
