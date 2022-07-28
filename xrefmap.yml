@@ -38965,12 +38965,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Aliases.AliasManager.AddAlias
   nameWithType: AliasManager.AddAlias
-- uid: KS.Shell.ShellBase.Aliases.AliasManager.Aliases
-  name: Aliases
-  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_Aliases
-  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.Aliases
-  fullName: KS.Shell.ShellBase.Aliases.AliasManager.Aliases
-  nameWithType: AliasManager.Aliases
 - uid: KS.Shell.ShellBase.Aliases.AliasManager.DoesAliasExist(System.String,KS.Shell.ShellBase.Shells.ShellType)
   name: DoesAliasExist(String, ShellType)
   href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_DoesAliasExist_System_String_KS_Shell_ShellBase_Shells_ShellType_
@@ -38984,12 +38978,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Aliases.AliasManager.DoesAliasExist
   nameWithType: AliasManager.DoesAliasExist
-- uid: KS.Shell.ShellBase.Aliases.AliasManager.FTPShellAliases
-  name: FTPShellAliases
-  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_FTPShellAliases
-  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.FTPShellAliases
-  fullName: KS.Shell.ShellBase.Aliases.AliasManager.FTPShellAliases
-  nameWithType: AliasManager.FTPShellAliases
 - uid: KS.Shell.ShellBase.Aliases.AliasManager.GetAliasesListFromType(KS.Shell.ShellBase.Shells.ShellType)
   name: GetAliasesListFromType(ShellType)
   href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_GetAliasesListFromType_KS_Shell_ShellBase_Shells_ShellType_
@@ -39003,18 +38991,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Aliases.AliasManager.GetAliasesListFromType
   nameWithType: AliasManager.GetAliasesListFromType
-- uid: KS.Shell.ShellBase.Aliases.AliasManager.HexShellAliases
-  name: HexShellAliases
-  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_HexShellAliases
-  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.HexShellAliases
-  fullName: KS.Shell.ShellBase.Aliases.AliasManager.HexShellAliases
-  nameWithType: AliasManager.HexShellAliases
-- uid: KS.Shell.ShellBase.Aliases.AliasManager.HTTPShellAliases
-  name: HTTPShellAliases
-  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_HTTPShellAliases
-  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.HTTPShellAliases
-  fullName: KS.Shell.ShellBase.Aliases.AliasManager.HTTPShellAliases
-  nameWithType: AliasManager.HTTPShellAliases
 - uid: KS.Shell.ShellBase.Aliases.AliasManager.InitAliases
   name: InitAliases()
   href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_InitAliases
@@ -39028,18 +39004,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Aliases.AliasManager.InitAliases
   nameWithType: AliasManager.InitAliases
-- uid: KS.Shell.ShellBase.Aliases.AliasManager.JsonShellAliases
-  name: JsonShellAliases
-  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_JsonShellAliases
-  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.JsonShellAliases
-  fullName: KS.Shell.ShellBase.Aliases.AliasManager.JsonShellAliases
-  nameWithType: AliasManager.JsonShellAliases
-- uid: KS.Shell.ShellBase.Aliases.AliasManager.MailShellAliases
-  name: MailShellAliases
-  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_MailShellAliases
-  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.MailShellAliases
-  fullName: KS.Shell.ShellBase.Aliases.AliasManager.MailShellAliases
-  nameWithType: AliasManager.MailShellAliases
 - uid: KS.Shell.ShellBase.Aliases.AliasManager.ManageAlias(System.String,KS.Shell.ShellBase.Shells.ShellType,System.String,System.String)
   name: ManageAlias(String, ShellType, String, String)
   href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_ManageAlias_System_String_KS_Shell_ShellBase_Shells_ShellType_System_String_System_String_
@@ -39066,18 +39030,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Aliases.AliasManager.PurgeAliases
   nameWithType: AliasManager.PurgeAliases
-- uid: KS.Shell.ShellBase.Aliases.AliasManager.RARShellAliases
-  name: RARShellAliases
-  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_RARShellAliases
-  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.RARShellAliases
-  fullName: KS.Shell.ShellBase.Aliases.AliasManager.RARShellAliases
-  nameWithType: AliasManager.RARShellAliases
-- uid: KS.Shell.ShellBase.Aliases.AliasManager.RemoteDebugAliases
-  name: RemoteDebugAliases
-  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_RemoteDebugAliases
-  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.RemoteDebugAliases
-  fullName: KS.Shell.ShellBase.Aliases.AliasManager.RemoteDebugAliases
-  nameWithType: AliasManager.RemoteDebugAliases
 - uid: KS.Shell.ShellBase.Aliases.AliasManager.RemoveAlias(System.String,KS.Shell.ShellBase.Shells.ShellType)
   name: RemoveAlias(String, ShellType)
   href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_RemoveAlias_System_String_KS_Shell_ShellBase_Shells_ShellType_
@@ -39091,12 +39043,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Aliases.AliasManager.RemoveAlias
   nameWithType: AliasManager.RemoveAlias
-- uid: KS.Shell.ShellBase.Aliases.AliasManager.RSSShellAliases
-  name: RSSShellAliases
-  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_RSSShellAliases
-  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.RSSShellAliases
-  fullName: KS.Shell.ShellBase.Aliases.AliasManager.RSSShellAliases
-  nameWithType: AliasManager.RSSShellAliases
 - uid: KS.Shell.ShellBase.Aliases.AliasManager.SaveAliases
   name: SaveAliases()
   href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_SaveAliases
@@ -39110,30 +39056,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Aliases.AliasManager.SaveAliases
   nameWithType: AliasManager.SaveAliases
-- uid: KS.Shell.ShellBase.Aliases.AliasManager.SFTPShellAliases
-  name: SFTPShellAliases
-  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_SFTPShellAliases
-  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.SFTPShellAliases
-  fullName: KS.Shell.ShellBase.Aliases.AliasManager.SFTPShellAliases
-  nameWithType: AliasManager.SFTPShellAliases
-- uid: KS.Shell.ShellBase.Aliases.AliasManager.TestShellAliases
-  name: TestShellAliases
-  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_TestShellAliases
-  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.TestShellAliases
-  fullName: KS.Shell.ShellBase.Aliases.AliasManager.TestShellAliases
-  nameWithType: AliasManager.TestShellAliases
-- uid: KS.Shell.ShellBase.Aliases.AliasManager.TextShellAliases
-  name: TextShellAliases
-  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_TextShellAliases
-  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.TextShellAliases
-  fullName: KS.Shell.ShellBase.Aliases.AliasManager.TextShellAliases
-  nameWithType: AliasManager.TextShellAliases
-- uid: KS.Shell.ShellBase.Aliases.AliasManager.ZIPShellAliases
-  name: ZIPShellAliases
-  href: api/KS.Shell.ShellBase.Aliases.AliasManager.html#KS_Shell_ShellBase_Aliases_AliasManager_ZIPShellAliases
-  commentId: F:KS.Shell.ShellBase.Aliases.AliasManager.ZIPShellAliases
-  fullName: KS.Shell.ShellBase.Aliases.AliasManager.ZIPShellAliases
-  nameWithType: AliasManager.ZIPShellAliases
 - uid: KS.Shell.ShellBase.CommandAutoComplete
   name: CommandAutoComplete
   href: api/KS.Shell.ShellBase.CommandAutoComplete.html
