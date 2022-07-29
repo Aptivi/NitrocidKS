@@ -30804,6 +30804,42 @@ references:
   commentId: T:KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor
   fullName: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor
   nameWithType: TextWriterWhereColor
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String,System.Int32,System.Int32,KS.ConsoleBase.Colors.Color,KS.ConsoleBase.Colors.Color,System.Object[])
+  name: WriteWhere(String, Int32, Int32, Color, Color, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereColor_WriteWhere_System_String_System_Int32_System_Int32_KS_ConsoleBase_Colors_Color_KS_ConsoleBase_Colors_Color_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String,System.Int32,System.Int32,KS.ConsoleBase.Colors.Color,KS.ConsoleBase.Colors.Color,System.Object[])
+  name.vb: WriteWhere(String, Int32, Int32, Color, Color, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String, System.Int32, System.Int32, KS.ConsoleBase.Colors.Color, KS.ConsoleBase.Colors.Color, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String, System.Int32, System.Int32, KS.ConsoleBase.Colors.Color, KS.ConsoleBase.Colors.Color, System.Object())
+  nameWithType: TextWriterWhereColor.WriteWhere(String, Int32, Int32, Color, Color, Object[])
+  nameWithType.vb: TextWriterWhereColor.WriteWhere(String, Int32, Int32, Color, Color, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String,System.Int32,System.Int32,KS.ConsoleBase.Colors.Color,System.Object[])
+  name: WriteWhere(String, Int32, Int32, Color, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereColor_WriteWhere_System_String_System_Int32_System_Int32_KS_ConsoleBase_Colors_Color_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String,System.Int32,System.Int32,KS.ConsoleBase.Colors.Color,System.Object[])
+  name.vb: WriteWhere(String, Int32, Int32, Color, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String, System.Int32, System.Int32, KS.ConsoleBase.Colors.Color, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String, System.Int32, System.Int32, KS.ConsoleBase.Colors.Color, System.Object())
+  nameWithType: TextWriterWhereColor.WriteWhere(String, Int32, Int32, Color, Object[])
+  nameWithType.vb: TextWriterWhereColor.WriteWhere(String, Int32, Int32, Color, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Object[])
+  name: WriteWhere(String, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereColor_WriteWhere_System_String_System_Int32_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Object[])
+  name.vb: WriteWhere(String, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String, System.Int32, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String, System.Int32, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Object())
+  nameWithType: TextWriterWhereColor.WriteWhere(String, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes, Object[])
+  nameWithType.vb: TextWriterWhereColor.WriteWhere(String, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Object[])
+  name: WriteWhere(String, Int32, Int32, ColorTools.ColTypes, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereColor_WriteWhere_System_String_System_Int32_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Object[])
+  name.vb: WriteWhere(String, Int32, Int32, ColorTools.ColTypes, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String, System.Int32, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String, System.Int32, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Object())
+  nameWithType: TextWriterWhereColor.WriteWhere(String, Int32, Int32, ColorTools.ColTypes, Object[])
+  nameWithType.vb: TextWriterWhereColor.WriteWhere(String, Int32, Int32, ColorTools.ColTypes, Object())
 - uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String,System.Int32,System.Int32,System.Boolean,KS.ConsoleBase.Colors.Color,KS.ConsoleBase.Colors.Color,System.Object[])
   name: WriteWhere(String, Int32, Int32, Boolean, Color, Color, Object[])
   href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereColor_WriteWhere_System_String_System_Int32_System_Int32_System_Boolean_KS_ConsoleBase_Colors_Color_KS_ConsoleBase_Colors_Color_System_Object___
@@ -30858,6 +30894,24 @@ references:
   fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String, System.Int32, System.Int32, System.Boolean, System.ConsoleColor, System.Object())
   nameWithType: TextWriterWhereColor.WriteWhere(String, Int32, Int32, Boolean, ConsoleColor, Object[])
   nameWithType.vb: TextWriterWhereColor.WriteWhere(String, Int32, Int32, Boolean, ConsoleColor, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String,System.Int32,System.Int32,System.ConsoleColor,System.ConsoleColor,System.Object[])
+  name: WriteWhere(String, Int32, Int32, ConsoleColor, ConsoleColor, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereColor_WriteWhere_System_String_System_Int32_System_Int32_System_ConsoleColor_System_ConsoleColor_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String,System.Int32,System.Int32,System.ConsoleColor,System.ConsoleColor,System.Object[])
+  name.vb: WriteWhere(String, Int32, Int32, ConsoleColor, ConsoleColor, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String, System.Int32, System.Int32, System.ConsoleColor, System.ConsoleColor, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String, System.Int32, System.Int32, System.ConsoleColor, System.ConsoleColor, System.Object())
+  nameWithType: TextWriterWhereColor.WriteWhere(String, Int32, Int32, ConsoleColor, ConsoleColor, Object[])
+  nameWithType.vb: TextWriterWhereColor.WriteWhere(String, Int32, Int32, ConsoleColor, ConsoleColor, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String,System.Int32,System.Int32,System.ConsoleColor,System.Object[])
+  name: WriteWhere(String, Int32, Int32, ConsoleColor, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereColor_WriteWhere_System_String_System_Int32_System_Int32_System_ConsoleColor_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String,System.Int32,System.Int32,System.ConsoleColor,System.Object[])
+  name.vb: WriteWhere(String, Int32, Int32, ConsoleColor, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String, System.Int32, System.Int32, System.ConsoleColor, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String, System.Int32, System.Int32, System.ConsoleColor, System.Object())
+  nameWithType: TextWriterWhereColor.WriteWhere(String, Int32, Int32, ConsoleColor, Object[])
+  nameWithType.vb: TextWriterWhereColor.WriteWhere(String, Int32, Int32, ConsoleColor, Object())
 - uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere*
   name: WriteWhere
   href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereColor_WriteWhere_
@@ -30874,6 +30928,15 @@ references:
   fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object())
   nameWithType: TextWriterWhereColor.WriteWherePlain(String, Int32, Int32, Boolean, Object[])
   nameWithType.vb: TextWriterWhereColor.WriteWherePlain(String, Int32, Int32, Boolean, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereColor_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object())
+  nameWithType: TextWriterWhereColor.WriteWherePlain(String, Int32, Int32, Object[])
+  nameWithType.vb: TextWriterWhereColor.WriteWherePlain(String, Int32, Int32, Object())
 - uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain*
   name: WriteWherePlain
   href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereColor_WriteWherePlain_
