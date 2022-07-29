@@ -6066,7 +6066,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.CommandAutoComplete.html",
-          "hash": "mHMev23C/V3G1i+UeGkJmXUj8nFORPjFKckfkU9+CwM="
+          "hash": "+naqJUxS2G5v5EJL6daer2OHB1o+hR6CEeZoxXVEJ2I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html",
+          "hash": "7NcXCYb3qlgN8CFaOGtuFA+9tgGAJqEHhx19AXYHmuo="
         }
       },
       "is_incremental": false,
@@ -6090,7 +6102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandInfo.html",
-          "hash": "KmRpCxaHJzW0N8JaeAD6c8qC1bNYtZILcg/mwC5N0os="
+          "hash": "P+4BnQ5zUC3AddI5Sk8Bw69ticcalUQVULR2knHR5/k="
         }
       },
       "is_incremental": false,
@@ -6114,7 +6126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.GetCommand.html",
-          "hash": "FNamq80tE0ajogs/5iLFfLjMOYQ32nO65jnpCgfNU58="
+          "hash": "V4h+8wGDGGMoDY0R1BzvUtRZR1TbP7b5PClWxsjygP0="
         }
       },
       "is_incremental": false,
@@ -6162,7 +6174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.html",
-          "hash": "ZoCdfxWrtHvtixejqDAmt/JkZColUHTZ5L1cUGpRATE="
+          "hash": "+4QGRr9rUsqNxyScL3h6pvLHUBBir5UNAXaVjgfVcZw="
         }
       },
       "is_incremental": false,
@@ -6510,7 +6522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "AD0deh9Hp4M/Nf44ZUZhhsOQ6M4N767gdqHaZuXOlQc="
+          "hash": "xnPzXHzZp6QLQoUdnaovKyBFbGdA4fB3BYk2xR1ZuM8="
         }
       },
       "is_incremental": false,
@@ -9444,7 +9456,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 541,
+          "total_file_count": 542,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
