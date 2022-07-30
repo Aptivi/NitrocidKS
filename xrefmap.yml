@@ -3226,6 +3226,19 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.ConsoleExtensions.PercentRepeatTargeted
   nameWithType: ConsoleExtensions.PercentRepeatTargeted
+- uid: KS.ConsoleBase.ConsoleExtensions.SetTitle(System.String)
+  name: SetTitle(String)
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_SetTitle_System_String_
+  commentId: M:KS.ConsoleBase.ConsoleExtensions.SetTitle(System.String)
+  fullName: KS.ConsoleBase.ConsoleExtensions.SetTitle(System.String)
+  nameWithType: ConsoleExtensions.SetTitle(String)
+- uid: KS.ConsoleBase.ConsoleExtensions.SetTitle*
+  name: SetTitle
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_SetTitle_
+  commentId: Overload:KS.ConsoleBase.ConsoleExtensions.SetTitle
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ConsoleExtensions.SetTitle
+  nameWithType: ConsoleExtensions.SetTitle
 - uid: KS.ConsoleBase.ConsoleSanityChecker
   name: ConsoleSanityChecker
   href: api/KS.ConsoleBase.ConsoleSanityChecker.html
