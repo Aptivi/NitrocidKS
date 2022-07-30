@@ -16740,6 +16740,18 @@ references:
   commentId: M:KS.Misc.Configuration.ConfigTools.GetConfigValue(KS.Misc.Configuration.Config.ConfigCategory,JToken,System.String)
   fullName: KS.Misc.Configuration.ConfigTools.GetConfigValue(KS.Misc.Configuration.Config.ConfigCategory, JToken, System.String)
   nameWithType: ConfigTools.GetConfigValue(Config.ConfigCategory, JToken, String)
+- uid: KS.Misc.Configuration.ConfigTools.GetConfigValue(KS.Misc.Configuration.Config.ConfigCategory,System.String)
+  name: GetConfigValue(Config.ConfigCategory, String)
+  href: api/KS.Misc.Configuration.ConfigTools.html#KS_Misc_Configuration_ConfigTools_GetConfigValue_KS_Misc_Configuration_Config_ConfigCategory_System_String_
+  commentId: M:KS.Misc.Configuration.ConfigTools.GetConfigValue(KS.Misc.Configuration.Config.ConfigCategory,System.String)
+  fullName: KS.Misc.Configuration.ConfigTools.GetConfigValue(KS.Misc.Configuration.Config.ConfigCategory, System.String)
+  nameWithType: ConfigTools.GetConfigValue(Config.ConfigCategory, String)
+- uid: KS.Misc.Configuration.ConfigTools.GetConfigValue(KS.Misc.Configuration.Config.ConfigCategory,System.String,System.String)
+  name: GetConfigValue(Config.ConfigCategory, String, String)
+  href: api/KS.Misc.Configuration.ConfigTools.html#KS_Misc_Configuration_ConfigTools_GetConfigValue_KS_Misc_Configuration_Config_ConfigCategory_System_String_System_String_
+  commentId: M:KS.Misc.Configuration.ConfigTools.GetConfigValue(KS.Misc.Configuration.Config.ConfigCategory,System.String,System.String)
+  fullName: KS.Misc.Configuration.ConfigTools.GetConfigValue(KS.Misc.Configuration.Config.ConfigCategory, System.String, System.String)
+  nameWithType: ConfigTools.GetConfigValue(Config.ConfigCategory, String, String)
 - uid: KS.Misc.Configuration.ConfigTools.GetConfigValue*
   name: GetConfigValue
   href: api/KS.Misc.Configuration.ConfigTools.html#KS_Misc_Configuration_ConfigTools_GetConfigValue_
@@ -16779,6 +16791,18 @@ references:
   commentId: M:KS.Misc.Configuration.ConfigTools.SetConfigValue(KS.Misc.Configuration.Config.ConfigCategory,JToken,System.String,JToken)
   fullName: KS.Misc.Configuration.ConfigTools.SetConfigValue(KS.Misc.Configuration.Config.ConfigCategory, JToken, System.String, JToken)
   nameWithType: ConfigTools.SetConfigValue(Config.ConfigCategory, JToken, String, JToken)
+- uid: KS.Misc.Configuration.ConfigTools.SetConfigValue(KS.Misc.Configuration.Config.ConfigCategory,System.String,JToken)
+  name: SetConfigValue(Config.ConfigCategory, String, JToken)
+  href: api/KS.Misc.Configuration.ConfigTools.html#KS_Misc_Configuration_ConfigTools_SetConfigValue_KS_Misc_Configuration_Config_ConfigCategory_System_String_JToken_
+  commentId: M:KS.Misc.Configuration.ConfigTools.SetConfigValue(KS.Misc.Configuration.Config.ConfigCategory,System.String,JToken)
+  fullName: KS.Misc.Configuration.ConfigTools.SetConfigValue(KS.Misc.Configuration.Config.ConfigCategory, System.String, JToken)
+  nameWithType: ConfigTools.SetConfigValue(Config.ConfigCategory, String, JToken)
+- uid: KS.Misc.Configuration.ConfigTools.SetConfigValue(KS.Misc.Configuration.Config.ConfigCategory,System.String,System.String,JToken)
+  name: SetConfigValue(Config.ConfigCategory, String, String, JToken)
+  href: api/KS.Misc.Configuration.ConfigTools.html#KS_Misc_Configuration_ConfigTools_SetConfigValue_KS_Misc_Configuration_Config_ConfigCategory_System_String_System_String_JToken_
+  commentId: M:KS.Misc.Configuration.ConfigTools.SetConfigValue(KS.Misc.Configuration.Config.ConfigCategory,System.String,System.String,JToken)
+  fullName: KS.Misc.Configuration.ConfigTools.SetConfigValue(KS.Misc.Configuration.Config.ConfigCategory, System.String, System.String, JToken)
+  nameWithType: ConfigTools.SetConfigValue(Config.ConfigCategory, String, String, JToken)
 - uid: KS.Misc.Configuration.ConfigTools.SetConfigValue*
   name: SetConfigValue
   href: api/KS.Misc.Configuration.ConfigTools.html#KS_Misc_Configuration_ConfigTools_SetConfigValue_
