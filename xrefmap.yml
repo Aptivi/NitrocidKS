@@ -16955,12 +16955,6 @@ references:
   commentId: F:KS.Misc.Editors.HexEdit.HexEditShellCommon.HexEdit_FileStream
   fullName: KS.Misc.Editors.HexEdit.HexEditShellCommon.HexEdit_FileStream
   nameWithType: HexEditShellCommon.HexEdit_FileStream
-- uid: KS.Misc.Editors.HexEdit.HexEditShellCommon.HexEdit_PromptStyle
-  name: HexEdit_PromptStyle
-  href: api/KS.Misc.Editors.HexEdit.HexEditShellCommon.html#KS_Misc_Editors_HexEdit_HexEditShellCommon_HexEdit_PromptStyle
-  commentId: F:KS.Misc.Editors.HexEdit.HexEditShellCommon.HexEdit_PromptStyle
-  fullName: KS.Misc.Editors.HexEdit.HexEditShellCommon.HexEdit_PromptStyle
-  nameWithType: HexEditShellCommon.HexEdit_PromptStyle
 - uid: KS.Misc.Editors.HexEdit.HexEditTools
   name: HexEditTools
   href: api/KS.Misc.Editors.HexEdit.HexEditTools.html
@@ -17222,12 +17216,6 @@ references:
   commentId: F:KS.Misc.Editors.JsonShell.JsonShellCommon.JsonShell_Formatting
   fullName: KS.Misc.Editors.JsonShell.JsonShellCommon.JsonShell_Formatting
   nameWithType: JsonShellCommon.JsonShell_Formatting
-- uid: KS.Misc.Editors.JsonShell.JsonShellCommon.JsonShell_PromptStyle
-  name: JsonShell_PromptStyle
-  href: api/KS.Misc.Editors.JsonShell.JsonShellCommon.html#KS_Misc_Editors_JsonShell_JsonShellCommon_JsonShell_PromptStyle
-  commentId: F:KS.Misc.Editors.JsonShell.JsonShellCommon.JsonShell_PromptStyle
-  fullName: KS.Misc.Editors.JsonShell.JsonShellCommon.JsonShell_PromptStyle
-  nameWithType: JsonShellCommon.JsonShell_PromptStyle
 - uid: KS.Misc.Editors.JsonShell.JsonTools
   name: JsonTools
   href: api/KS.Misc.Editors.JsonShell.JsonTools.html
@@ -17405,12 +17393,6 @@ references:
   commentId: F:KS.Misc.Editors.TextEdit.TextEditShellCommon.TextEdit_FileStream
   fullName: KS.Misc.Editors.TextEdit.TextEditShellCommon.TextEdit_FileStream
   nameWithType: TextEditShellCommon.TextEdit_FileStream
-- uid: KS.Misc.Editors.TextEdit.TextEditShellCommon.TextEdit_PromptStyle
-  name: TextEdit_PromptStyle
-  href: api/KS.Misc.Editors.TextEdit.TextEditShellCommon.html#KS_Misc_Editors_TextEdit_TextEditShellCommon_TextEdit_PromptStyle
-  commentId: F:KS.Misc.Editors.TextEdit.TextEditShellCommon.TextEdit_PromptStyle
-  fullName: KS.Misc.Editors.TextEdit.TextEditShellCommon.TextEdit_PromptStyle
-  nameWithType: TextEditShellCommon.TextEdit_PromptStyle
 - uid: KS.Misc.Editors.TextEdit.TextEditTools
   name: TextEditTools
   href: api/KS.Misc.Editors.TextEdit.TextEditTools.html
@@ -32890,12 +32872,6 @@ references:
   commentId: F:KS.Network.FTP.FTPShellCommon.FtpRecursiveHashing
   fullName: KS.Network.FTP.FTPShellCommon.FtpRecursiveHashing
   nameWithType: FTPShellCommon.FtpRecursiveHashing
-- uid: KS.Network.FTP.FTPShellCommon.FTPShellPromptStyle
-  name: FTPShellPromptStyle
-  href: api/KS.Network.FTP.FTPShellCommon.html#KS_Network_FTP_FTPShellCommon_FTPShellPromptStyle
-  commentId: F:KS.Network.FTP.FTPShellCommon.FTPShellPromptStyle
-  fullName: KS.Network.FTP.FTPShellCommon.FTPShellPromptStyle
-  nameWithType: FTPShellCommon.FTPShellPromptStyle
 - uid: KS.Network.FTP.FTPShellCommon.FtpShowDetailsInList
   name: FtpShowDetailsInList
   href: api/KS.Network.FTP.FTPShellCommon.html#KS_Network_FTP_FTPShellCommon_FtpShowDetailsInList
@@ -33525,12 +33501,6 @@ references:
   commentId: F:KS.Network.Mail.MailShellCommon.MailCommands
   fullName: KS.Network.Mail.MailShellCommon.MailCommands
   nameWithType: MailShellCommon.MailCommands
-- uid: KS.Network.Mail.MailShellCommon.MailShellPromptStyle
-  name: MailShellPromptStyle
-  href: api/KS.Network.Mail.MailShellCommon.html#KS_Network_Mail_MailShellCommon_MailShellPromptStyle
-  commentId: F:KS.Network.Mail.MailShellCommon.MailShellPromptStyle
-  fullName: KS.Network.Mail.MailShellCommon.MailShellPromptStyle
-  nameWithType: MailShellCommon.MailShellPromptStyle
 - uid: KS.Network.Mail.PGP
   name: KS.Network.Mail.PGP
   href: api/KS.Network.Mail.PGP.html
@@ -34811,12 +34781,6 @@ references:
   commentId: F:KS.Network.RSS.RSSShellCommon.RSSRefreshInterval
   fullName: KS.Network.RSS.RSSShellCommon.RSSRefreshInterval
   nameWithType: RSSShellCommon.RSSRefreshInterval
-- uid: KS.Network.RSS.RSSShellCommon.RSSShellPromptStyle
-  name: RSSShellPromptStyle
-  href: api/KS.Network.RSS.RSSShellCommon.html#KS_Network_RSS_RSSShellCommon_RSSShellPromptStyle
-  commentId: F:KS.Network.RSS.RSSShellCommon.RSSShellPromptStyle
-  fullName: KS.Network.RSS.RSSShellCommon.RSSShellPromptStyle
-  nameWithType: RSSShellCommon.RSSShellPromptStyle
 - uid: KS.Network.RSS.RSSTools
   name: RSSTools
   href: api/KS.Network.RSS.RSSTools.html
@@ -34949,12 +34913,6 @@ references:
   commentId: F:KS.Network.SFTP.SFTPShellCommon.SFTPNewConnectionsToSpeedDial
   fullName: KS.Network.SFTP.SFTPShellCommon.SFTPNewConnectionsToSpeedDial
   nameWithType: SFTPShellCommon.SFTPNewConnectionsToSpeedDial
-- uid: KS.Network.SFTP.SFTPShellCommon.SFTPShellPromptStyle
-  name: SFTPShellPromptStyle
-  href: api/KS.Network.SFTP.SFTPShellCommon.html#KS_Network_SFTP_SFTPShellCommon_SFTPShellPromptStyle
-  commentId: F:KS.Network.SFTP.SFTPShellCommon.SFTPShellPromptStyle
-  fullName: KS.Network.SFTP.SFTPShellCommon.SFTPShellPromptStyle
-  nameWithType: SFTPShellCommon.SFTPShellPromptStyle
 - uid: KS.Network.SFTP.SFTPShellCommon.SFTPShowDetailsInList
   name: SFTPShowDetailsInList
   href: api/KS.Network.SFTP.SFTPShellCommon.html#KS_Network_SFTP_SFTPShellCommon_SFTPShowDetailsInList
@@ -37700,25 +37658,6 @@ references:
   commentId: N:KS.Shell.Prompts
   fullName: KS.Shell.Prompts
   nameWithType: KS.Shell.Prompts
-- uid: KS.Shell.Prompts.CustomShellPromptStyle
-  name: CustomShellPromptStyle
-  href: api/KS.Shell.Prompts.CustomShellPromptStyle.html
-  commentId: T:KS.Shell.Prompts.CustomShellPromptStyle
-  fullName: KS.Shell.Prompts.CustomShellPromptStyle
-  nameWithType: CustomShellPromptStyle
-- uid: KS.Shell.Prompts.CustomShellPromptStyle.GetCustomShellPromptStyle(KS.Shell.ShellBase.Shells.ShellType)
-  name: GetCustomShellPromptStyle(ShellType)
-  href: api/KS.Shell.Prompts.CustomShellPromptStyle.html#KS_Shell_Prompts_CustomShellPromptStyle_GetCustomShellPromptStyle_KS_Shell_ShellBase_Shells_ShellType_
-  commentId: M:KS.Shell.Prompts.CustomShellPromptStyle.GetCustomShellPromptStyle(KS.Shell.ShellBase.Shells.ShellType)
-  fullName: KS.Shell.Prompts.CustomShellPromptStyle.GetCustomShellPromptStyle(KS.Shell.ShellBase.Shells.ShellType)
-  nameWithType: CustomShellPromptStyle.GetCustomShellPromptStyle(ShellType)
-- uid: KS.Shell.Prompts.CustomShellPromptStyle.GetCustomShellPromptStyle*
-  name: GetCustomShellPromptStyle
-  href: api/KS.Shell.Prompts.CustomShellPromptStyle.html#KS_Shell_Prompts_CustomShellPromptStyle_GetCustomShellPromptStyle_
-  commentId: Overload:KS.Shell.Prompts.CustomShellPromptStyle.GetCustomShellPromptStyle
-  isSpec: "True"
-  fullName: KS.Shell.Prompts.CustomShellPromptStyle.GetCustomShellPromptStyle
-  nameWithType: CustomShellPromptStyle.GetCustomShellPromptStyle
 - uid: KS.Shell.Prompts.IPromptPreset
   name: IPromptPreset
   href: api/KS.Shell.Prompts.IPromptPreset.html
@@ -39067,12 +39006,6 @@ references:
   commentId: F:KS.Shell.Shell.PathsToLookup
   fullName: KS.Shell.Shell.PathsToLookup
   nameWithType: Shell.PathsToLookup
-- uid: KS.Shell.Shell.ShellPromptStyle
-  name: ShellPromptStyle
-  href: api/KS.Shell.Shell.html#KS_Shell_Shell_ShellPromptStyle
-  commentId: F:KS.Shell.Shell.ShellPromptStyle
-  fullName: KS.Shell.Shell.ShellPromptStyle
-  nameWithType: Shell.ShellPromptStyle
 - uid: KS.Shell.Shell.UnifiedCommandDict
   name: UnifiedCommandDict
   href: api/KS.Shell.Shell.html#KS_Shell_Shell_UnifiedCommandDict
