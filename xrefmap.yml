@@ -38985,6 +38985,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.Prompts.PromptPresetManager.GetPresetsFromShell
   nameWithType: PromptPresetManager.GetPresetsFromShell
+- uid: KS.Shell.Prompts.PromptPresetManager.PromptForPresets
+  name: PromptForPresets()
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_PromptForPresets
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.PromptForPresets
+  fullName: KS.Shell.Prompts.PromptPresetManager.PromptForPresets()
+  nameWithType: PromptPresetManager.PromptForPresets()
+- uid: KS.Shell.Prompts.PromptPresetManager.PromptForPresets*
+  name: PromptForPresets
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_PromptForPresets_
+  commentId: Overload:KS.Shell.Prompts.PromptPresetManager.PromptForPresets
+  isSpec: "True"
+  fullName: KS.Shell.Prompts.PromptPresetManager.PromptForPresets
+  nameWithType: PromptPresetManager.PromptForPresets
 - uid: KS.Shell.Prompts.PromptPresetManager.SetPreset(System.String,KS.Shell.ShellBase.Shells.ShellType,System.Boolean)
   name: SetPreset(String, ShellType, Boolean)
   href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_SetPreset_System_String_KS_Shell_ShellBase_Shells_ShellType_System_Boolean_
