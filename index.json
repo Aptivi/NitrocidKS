@@ -1102,12 +1102,7 @@
   "api/KS.Misc.html": {
     "href": "api/KS.Misc.html",
     "title": "Namespace KS.Misc | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Misc Classes NamesManager Enums TextLocation The console text location (used for screensavers and splashes)"
-  },
-  "api/KS.Misc.NamesManager.html": {
-    "href": "api/KS.Misc.NamesManager.html",
-    "title": "Class NamesManager | Kernel Simulator API - Aptivi",
-    "keywords": "Class NamesManager Inheritance NamesManager Namespace : KS.Misc Assembly : Kernel Simulator.dll Syntax public class NamesManager Methods | Improve this Doc View Source GenerateNames(Int32) Generates the names Declaration public static List<string> GenerateNames(int Count) Parameters Type Name Description System.Int32 Count Returns Type Description System.Collections.Generic.List < System.String > List of generated names | Improve this Doc View Source GenerateNames(Int32, String, String, String, String) Generates the names Declaration public static List<string> GenerateNames(int Count, string NamePrefix, string NameSuffix, string SurnamePrefix, string SurnameSuffix) Parameters Type Name Description System.Int32 Count System.String NamePrefix System.String NameSuffix System.String SurnamePrefix System.String SurnameSuffix Returns Type Description System.Collections.Generic.List < System.String > List of generated names | Improve this Doc View Source PopulateNames() Populates the names and the surnames for the purpose of initialization Declaration public static void PopulateNames()"
+    "keywords": "Namespace KS.Misc Enums TextLocation The console text location (used for screensavers and splashes)"
   },
   "api/KS.Misc.Notifications.html": {
     "href": "api/KS.Misc.Notifications.html",

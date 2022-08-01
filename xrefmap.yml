@@ -18179,44 +18179,6 @@ references:
   commentId: F:KS.Misc.Games.SpeedPress.SpeedPressTimeout
   fullName: KS.Misc.Games.SpeedPress.SpeedPressTimeout
   nameWithType: SpeedPress.SpeedPressTimeout
-- uid: KS.Misc.NamesManager
-  name: NamesManager
-  href: api/KS.Misc.NamesManager.html
-  commentId: T:KS.Misc.NamesManager
-  fullName: KS.Misc.NamesManager
-  nameWithType: NamesManager
-- uid: KS.Misc.NamesManager.GenerateNames(System.Int32)
-  name: GenerateNames(Int32)
-  href: api/KS.Misc.NamesManager.html#KS_Misc_NamesManager_GenerateNames_System_Int32_
-  commentId: M:KS.Misc.NamesManager.GenerateNames(System.Int32)
-  fullName: KS.Misc.NamesManager.GenerateNames(System.Int32)
-  nameWithType: NamesManager.GenerateNames(Int32)
-- uid: KS.Misc.NamesManager.GenerateNames(System.Int32,System.String,System.String,System.String,System.String)
-  name: GenerateNames(Int32, String, String, String, String)
-  href: api/KS.Misc.NamesManager.html#KS_Misc_NamesManager_GenerateNames_System_Int32_System_String_System_String_System_String_System_String_
-  commentId: M:KS.Misc.NamesManager.GenerateNames(System.Int32,System.String,System.String,System.String,System.String)
-  fullName: KS.Misc.NamesManager.GenerateNames(System.Int32, System.String, System.String, System.String, System.String)
-  nameWithType: NamesManager.GenerateNames(Int32, String, String, String, String)
-- uid: KS.Misc.NamesManager.GenerateNames*
-  name: GenerateNames
-  href: api/KS.Misc.NamesManager.html#KS_Misc_NamesManager_GenerateNames_
-  commentId: Overload:KS.Misc.NamesManager.GenerateNames
-  isSpec: "True"
-  fullName: KS.Misc.NamesManager.GenerateNames
-  nameWithType: NamesManager.GenerateNames
-- uid: KS.Misc.NamesManager.PopulateNames
-  name: PopulateNames()
-  href: api/KS.Misc.NamesManager.html#KS_Misc_NamesManager_PopulateNames
-  commentId: M:KS.Misc.NamesManager.PopulateNames
-  fullName: KS.Misc.NamesManager.PopulateNames()
-  nameWithType: NamesManager.PopulateNames()
-- uid: KS.Misc.NamesManager.PopulateNames*
-  name: PopulateNames
-  href: api/KS.Misc.NamesManager.html#KS_Misc_NamesManager_PopulateNames_
-  commentId: Overload:KS.Misc.NamesManager.PopulateNames
-  isSpec: "True"
-  fullName: KS.Misc.NamesManager.PopulateNames
-  nameWithType: NamesManager.PopulateNames
 - uid: KS.Misc.Notifications
   name: KS.Misc.Notifications
   href: api/KS.Misc.Notifications.html
