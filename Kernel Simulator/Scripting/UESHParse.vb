@@ -85,6 +85,9 @@ Public Module UESHParse
                     Wdbg("I", "Line {0} is a comment.", Line)
                 End If
             End While
+
+            'Close the stream
+            FileStream.Close()
             EventManager.RaiseUESHPostExecute(scriptpath + " " + scriptarguments)
         Catch ex As Exception
             EventManager.RaiseUESHError(scriptpath + " " + scriptarguments, ex)
