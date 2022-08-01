@@ -477,6 +477,7 @@ Public Module Filesystem
         While Not FOpen.EndOfStream
             AllLnList.Add(FOpen.ReadLine)
         End While
+        FOpen.Close()
         Return AllLnList.ToArray
     End Function
 
