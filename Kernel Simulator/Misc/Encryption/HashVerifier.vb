@@ -79,6 +79,7 @@ Public Module HashVerifier
                         End If
                     End If
                 Loop
+                HashStream.Close()
             Else
                 Throw New FileNotFoundException("Hashes file {0} not found.".FormatString(HashesFile))
             End If
@@ -216,6 +217,7 @@ Public Module HashVerifier
                         End If
                     End If
                 Loop
+                HashStream.Close()
             Else
                 Throw New FileNotFoundException("Hashes file {0} not found.".FormatString(HashesFile))
             End If
