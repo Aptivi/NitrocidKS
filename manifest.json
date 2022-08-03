@@ -6681,7 +6681,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/commands/Commands-for-KS.html",
-          "hash": "nSsQh+6yVCgYBMhy5UcfAJSONHSogB14jEeX7KAoebw="
+          "hash": "Tnhf63d+XVwFM0WWQAlQeLWe/z5XfwDfhmER9eQbBF0="
         }
       },
       "is_incremental": false,
@@ -8429,6 +8429,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "wiki/commands/uesh/KS-Command-lsvars.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/commands/uesh/KS-Command-lsvars.html",
+          "hash": "VD6t5oO9YxZK29DNrgB9ZDd1IooDrl9aFMAZVtm8MDs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "wiki/commands/uesh/KS-Command-mail.md",
       "output": {
         ".html": {
@@ -8446,6 +8458,18 @@
         ".html": {
           "relative_path": "wiki/commands/uesh/KS-Command-md.html",
           "hash": "eY5HHkeNlL2gl1q8OxBQkWF+VJfP5YjcYHpGEmaXmKM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/commands/uesh/KS-Command-meteor.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/commands/uesh/KS-Command-meteor.html",
+          "hash": "//EwU4ZQNa3HAzvzSPM1V6Z1FcbC1JgdBmXCRwYhjEw="
         }
       },
       "is_incremental": false,
@@ -8573,6 +8597,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "wiki/commands/uesh/KS-Command-rarshell.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/commands/uesh/KS-Command-rarshell.html",
+          "hash": "nLIoZgYwaiu5afiXVqztXsWe8gsUeYkh3mVe8cMnvz0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "wiki/commands/uesh/KS-Command-rdebug.md",
       "output": {
         ".html": {
@@ -8626,6 +8662,18 @@
         ".html": {
           "relative_path": "wiki/commands/uesh/KS-Command-reportbug.html",
           "hash": "exP7FpSyBMjKDAdfwSaWeXXYVbFBmXQsVKnu1X1XJUs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/commands/uesh/KS-Command-retroks.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/commands/uesh/KS-Command-retroks.html",
+          "hash": "fhZ+RC/XQiYaSsj0l9zXcwXZH9G6PxKu2ee1l4cm1Zs="
         }
       },
       "is_incremental": false,
@@ -9017,6 +9065,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "wiki/commands/uesh/KS-Command-unitconv.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/commands/uesh/KS-Command-unitconv.html",
+          "hash": "9VmKzhTJlRWsyMCYXQMs3bJpI3CVe8SXku18dIeGAHg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "wiki/commands/uesh/KS-Command-unzip.md",
       "output": {
         ".html": {
@@ -9106,6 +9166,30 @@
         ".html": {
           "relative_path": "wiki/commands/uesh/KS-Command-zipshell.html",
           "hash": "eZuI91z//9G2MIZLnNt7EIpLp/wStxf7E06XfOI9RnM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/commands/unified/KS-Command-exit.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/commands/unified/KS-Command-exit.html",
+          "hash": "Oeff0SIurkSMnClrWpWkSMSUeq9c2diR7ZivktAWROU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/commands/unified/KS-Command-presets.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/commands/unified/KS-Command-presets.html",
+          "hash": "P07OCZgBT6CQs1XdSgEiOLLDs6dDCQKoaQ8zuzIp300="
         }
       },
       "is_incremental": false,
@@ -9486,7 +9570,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 240,
+          "total_file_count": 247,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

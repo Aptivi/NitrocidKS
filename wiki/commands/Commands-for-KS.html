@@ -82,6 +82,26 @@
 <p>The commands in the entirety of the kernel are programs that allow you to do what they're supposed to do. They can be either implemented internally (which is what we call the normal commands), implemented as an alias (an alias to normal commands or mods), or created by mods.</p>
 <p>All the shells (either normal or custom) share a common command input parser, such as arguments, switches, and so on. Some commands have arguments (either required, for which you should provide to make the command work, or optional, for which you can omit), and some don't provide any.</p>
 <p>The switches are special arguments that have the dash in front of them. They change how the commands work, but must be implemented before they actually work.</p>
+<h2 id="general-commands">General commands</h2>
+<p>These commands that are mentioned below are available in all of the shells.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Command</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="unified/KS-Command-exit.html">exit</a></td>
+<td style="text-align: left;">Exits the subshell</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="unified/KS-Command-presets.html">presets</a></td>
+<td style="text-align: left;">Changes the shell preset</td>
+</tr>
+</tbody>
+</table>
 <h2 id="uesh-shell-commands">UESH shell commands</h2>
 <p>The below commands for Kernel Simulator can be used in the normal UESH shell, the one that is started after you log in to your account.</p>
 <p>For more information about every command, click the command.</p>
@@ -286,10 +306,6 @@
 <td style="text-align: left;">Opens the text editor shell to an existing text file.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="uesh/KS-Command-exit.html">exit</a></td>
-<td style="text-align: left;">Exits the subshell</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="uesh/KS-Command-fileinfo.html">fileinfo</a></td>
 <td style="text-align: left;">Gets file information</td>
 </tr>
@@ -362,12 +378,20 @@
 <td style="text-align: left;">You can log off your account when you're finished working.</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="uesh/KS-Command-lsvars.html">lsvars</a></td>
+<td style="text-align: left;">Lists variables</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="uesh/KS-Command-mail.html">mail</a></td>
 <td style="text-align: left;">Opens the mail shell to your mail account.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="uesh/KS-Command-md.html">md</a></td>
 <td style="text-align: left;">You can make your directory on the root directory.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="uesh/KS-Command-meteor.html">meteor</a></td>
+<td style="text-align: left;">You're a spaceship and the meteors are destroying you.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="uesh/KS-Command-mkfile.html">mkfile</a></td>
@@ -398,6 +422,10 @@
 <td style="text-align: left;">Uploads a file to the URL using a file.</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="uesh/KS-Command-rarshell.html">rarshell</a></td>
+<td style="text-align: left;">Opens a RAR shell to the specified rar file</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="uesh/KS-Command-rm.html">rm</a></td>
 <td style="text-align: left;">You can remove a directory or file.</td>
 </tr>
@@ -408,6 +436,10 @@
 <tr>
 <td style="text-align: left;"><a href="uesh/KS-Command-reportbug.html">reportbug</a></td>
 <td style="text-align: left;">Opens a prompt to let you file a bug report.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="uesh/KS-Command-retroks.html">retroks</a></td>
+<td style="text-align: left;">Retro Kernel Simulator based on 0.0.4.1</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="uesh/KS-Command-rss.html">rss</a></td>
@@ -492,6 +524,10 @@
 <tr>
 <td style="text-align: left;"><a href="uesh/KS-Command-timer.html">timer</a></td>
 <td style="text-align: left;">A simple timer</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="uesh/KS-Command-unitconv.html">unitconv</a></td>
+<td style="text-align: left;">Unit conversion</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="uesh/KS-Command-unzip.html">unzip</a></td>
