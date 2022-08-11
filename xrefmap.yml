@@ -39511,6 +39511,12 @@ references:
   commentId: T:KS.Shell.ShellBase.Commands.CommandArgumentInfo
   fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo
   nameWithType: CommandArgumentInfo
+- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor
+  name: CommandArgumentInfo()
+  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo__ctor
+  commentId: M:KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor
+  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo.CommandArgumentInfo()
+  nameWithType: CommandArgumentInfo.CommandArgumentInfo()
 - uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor(System.String[],System.Boolean,System.Int32,System.Func{System.String[]})
   name: CommandArgumentInfo(String[], Boolean, Int32, Func<String[]>)
   href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo__ctor_System_String___System_Boolean_System_Int32_System_Func_System_String____
