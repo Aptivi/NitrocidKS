@@ -881,11 +881,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.yml",
+      "source_relative_path": "api/KS.Kernel.Events.Events.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Kernel.Events.html",
-          "hash": "GHgfqTS/4H6zsktMpTdgaPeRqbgweD+fjkysK2/o8gk="
+          "relative_path": "api/KS.Kernel.Events.Events.html",
+          "hash": "nBPT17yw4jcSJN96nXbEoNs301JKBA2R9ORV84lFYhI="
         }
       },
       "is_incremental": false,
@@ -893,11 +893,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.EventsManager.yml",
+      "source_relative_path": "api/KS.Kernel.Events.EventsManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Kernel.EventsManager.html",
-          "hash": "WTC5rhTzAGAM/6QGgRiF0poxA9IcDVg3ZvClGjSSUL4="
+          "relative_path": "api/KS.Kernel.Events.EventsManager.html",
+          "hash": "ZHH9mmQuKcOLZG1MiN2WGgGrMnf7/JDrgDFABQKf02U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Events.html",
+          "hash": "eO9icqrVTTejDJczkg+bInfKaUmSJGAJljkhwxMu96A="
         }
       },
       "is_incremental": false,
@@ -1617,7 +1629,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Kernel.html",
-          "hash": "jjxX5AeO2knx3VTpqPDDyqbxIRej707uRdBr9KMStu0="
+          "hash": "aX7uwBLuHKGbrcp43HZEQ7/gZr+gBdo4Ri3TnHo2svA="
         }
       },
       "is_incremental": false,
@@ -1689,7 +1701,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.html",
-          "hash": "ZB6enVuxJ27EVW9rKnH3BjcVIVI0nqcf9HrPnBWMH28="
+          "hash": "wb1LCeH6TF9Q7Tk2m7Wai9Xu1w2YSEwyEL8GT3VP2WA="
         }
       },
       "is_incremental": false,
@@ -4497,7 +4509,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.IScript.html",
-          "hash": "qzYQuCLua/vw3IYksqJkCH0m/dWmsg1QLWoF3bO+EEw="
+          "hash": "0GVOLruT3buYijZdaKqLTeHy1Rju9I1OEsPTOxT8+C8="
         }
       },
       "is_incremental": false,
@@ -6573,7 +6585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "oxp9pKA1A4q5cxz2RS+jYTrC1GS8jxBehRcZs1aTV6k="
+          "hash": "DsbBR8FoNExEKh80ogUzB/F9iDrM7jG6GbXgSFaPb28="
         }
       },
       "is_incremental": false,
@@ -9588,7 +9600,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 546,
+          "total_file_count": 547,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
