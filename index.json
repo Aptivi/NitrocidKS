@@ -2557,7 +2557,7 @@
   "api/KS.Shell.ShellBase.Commands.CommandFlags.html": {
     "href": "api/KS.Shell.ShellBase.Commands.CommandFlags.html",
     "title": "Enum CommandFlags | Kernel Simulator API - Aptivi",
-    "keywords": "Enum CommandFlags Command flags Namespace : KS.Shell.ShellBase.Commands Assembly : Kernel Simulator.dll Syntax public enum CommandFlags Fields Name Description NoMaintenance This command can't run in maintenance mode. None No flags Obsolete The command is obsolete. RedirectionSupported Redirection is supported, meaning that all the output to the commands can be redirected to a file. SettingVariable The command is setting a variable. Strict The command is strict, meaning that it's only available for administrators. Wrappable The command is wrappable."
+    "keywords": "Enum CommandFlags Command flags Namespace : KS.Shell.ShellBase.Commands Assembly : Kernel Simulator.dll Syntax public enum CommandFlags Fields Name Description NoMaintenance This command can't run in maintenance mode. None No flags Obsolete The command is obsolete. RedirectionSupported Redirection is supported, meaning that all the output to the commands can be redirected to a file. SettingVariable The command is setting a variable. Strict The command is strict, meaning that it's only available for administrators. UninvokableByKernelArgument This command can't run when it's injected. Wrappable The command is wrappable."
   },
   "api/KS.Shell.ShellBase.Commands.CommandInfo.html": {
     "href": "api/KS.Shell.ShellBase.Commands.CommandInfo.html",
