@@ -39629,18 +39629,66 @@ references:
   fullName.vb: KS.Shell.ShellBase.Commands.CommandExecutor.HelpHelper
   nameWithType: CommandExecutor.ICommand.HelpHelper
   nameWithType.vb: CommandExecutor.HelpHelper
+- uid: KS.Shell.ShellBase.Commands.CommandFlags
+  name: CommandFlags
+  href: api/KS.Shell.ShellBase.Commands.CommandFlags.html
+  commentId: T:KS.Shell.ShellBase.Commands.CommandFlags
+  fullName: KS.Shell.ShellBase.Commands.CommandFlags
+  nameWithType: CommandFlags
+- uid: KS.Shell.ShellBase.Commands.CommandFlags.NoMaintenance
+  name: NoMaintenance
+  href: api/KS.Shell.ShellBase.Commands.CommandFlags.html#KS_Shell_ShellBase_Commands_CommandFlags_NoMaintenance
+  commentId: F:KS.Shell.ShellBase.Commands.CommandFlags.NoMaintenance
+  fullName: KS.Shell.ShellBase.Commands.CommandFlags.NoMaintenance
+  nameWithType: CommandFlags.NoMaintenance
+- uid: KS.Shell.ShellBase.Commands.CommandFlags.None
+  name: None
+  href: api/KS.Shell.ShellBase.Commands.CommandFlags.html#KS_Shell_ShellBase_Commands_CommandFlags_None
+  commentId: F:KS.Shell.ShellBase.Commands.CommandFlags.None
+  fullName: KS.Shell.ShellBase.Commands.CommandFlags.None
+  nameWithType: CommandFlags.None
+- uid: KS.Shell.ShellBase.Commands.CommandFlags.Obsolete
+  name: Obsolete
+  href: api/KS.Shell.ShellBase.Commands.CommandFlags.html#KS_Shell_ShellBase_Commands_CommandFlags_Obsolete
+  commentId: F:KS.Shell.ShellBase.Commands.CommandFlags.Obsolete
+  fullName: KS.Shell.ShellBase.Commands.CommandFlags.Obsolete
+  nameWithType: CommandFlags.Obsolete
+- uid: KS.Shell.ShellBase.Commands.CommandFlags.RedirectionSupported
+  name: RedirectionSupported
+  href: api/KS.Shell.ShellBase.Commands.CommandFlags.html#KS_Shell_ShellBase_Commands_CommandFlags_RedirectionSupported
+  commentId: F:KS.Shell.ShellBase.Commands.CommandFlags.RedirectionSupported
+  fullName: KS.Shell.ShellBase.Commands.CommandFlags.RedirectionSupported
+  nameWithType: CommandFlags.RedirectionSupported
+- uid: KS.Shell.ShellBase.Commands.CommandFlags.SettingVariable
+  name: SettingVariable
+  href: api/KS.Shell.ShellBase.Commands.CommandFlags.html#KS_Shell_ShellBase_Commands_CommandFlags_SettingVariable
+  commentId: F:KS.Shell.ShellBase.Commands.CommandFlags.SettingVariable
+  fullName: KS.Shell.ShellBase.Commands.CommandFlags.SettingVariable
+  nameWithType: CommandFlags.SettingVariable
+- uid: KS.Shell.ShellBase.Commands.CommandFlags.Strict
+  name: Strict
+  href: api/KS.Shell.ShellBase.Commands.CommandFlags.html#KS_Shell_ShellBase_Commands_CommandFlags_Strict
+  commentId: F:KS.Shell.ShellBase.Commands.CommandFlags.Strict
+  fullName: KS.Shell.ShellBase.Commands.CommandFlags.Strict
+  nameWithType: CommandFlags.Strict
+- uid: KS.Shell.ShellBase.Commands.CommandFlags.Wrappable
+  name: Wrappable
+  href: api/KS.Shell.ShellBase.Commands.CommandFlags.html#KS_Shell_ShellBase_Commands_CommandFlags_Wrappable
+  commentId: F:KS.Shell.ShellBase.Commands.CommandFlags.Wrappable
+  fullName: KS.Shell.ShellBase.Commands.CommandFlags.Wrappable
+  nameWithType: CommandFlags.Wrappable
 - uid: KS.Shell.ShellBase.Commands.CommandInfo
   name: CommandInfo
   href: api/KS.Shell.ShellBase.Commands.CommandInfo.html
   commentId: T:KS.Shell.ShellBase.Commands.CommandInfo
   fullName: KS.Shell.ShellBase.Commands.CommandInfo
   nameWithType: CommandInfo
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType,System.String,KS.Shell.ShellBase.Commands.CommandArgumentInfo,KS.Shell.ShellBase.Commands.CommandExecutor,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
-  name: CommandInfo(String, ShellType, String, CommandArgumentInfo, CommandExecutor, Boolean, Boolean, Boolean, Boolean, Boolean)
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo__ctor_System_String_KS_Shell_ShellBase_Shells_ShellType_System_String_KS_Shell_ShellBase_Commands_CommandArgumentInfo_KS_Shell_ShellBase_Commands_CommandExecutor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
-  commentId: M:KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType,System.String,KS.Shell.ShellBase.Commands.CommandArgumentInfo,KS.Shell.ShellBase.Commands.CommandExecutor,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.CommandInfo(System.String, KS.Shell.ShellBase.Shells.ShellType, System.String, KS.Shell.ShellBase.Commands.CommandArgumentInfo, KS.Shell.ShellBase.Commands.CommandExecutor, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
-  nameWithType: CommandInfo.CommandInfo(String, ShellType, String, CommandArgumentInfo, CommandExecutor, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType,System.String,KS.Shell.ShellBase.Commands.CommandArgumentInfo,KS.Shell.ShellBase.Commands.CommandExecutor,KS.Shell.ShellBase.Commands.CommandFlags)
+  name: CommandInfo(String, ShellType, String, CommandArgumentInfo, CommandExecutor, CommandFlags)
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo__ctor_System_String_KS_Shell_ShellBase_Shells_ShellType_System_String_KS_Shell_ShellBase_Commands_CommandArgumentInfo_KS_Shell_ShellBase_Commands_CommandExecutor_KS_Shell_ShellBase_Commands_CommandFlags_
+  commentId: M:KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType,System.String,KS.Shell.ShellBase.Commands.CommandArgumentInfo,KS.Shell.ShellBase.Commands.CommandExecutor,KS.Shell.ShellBase.Commands.CommandFlags)
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.CommandInfo(System.String, KS.Shell.ShellBase.Shells.ShellType, System.String, KS.Shell.ShellBase.Commands.CommandArgumentInfo, KS.Shell.ShellBase.Commands.CommandExecutor, KS.Shell.ShellBase.Commands.CommandFlags)
+  nameWithType: CommandInfo.CommandInfo(String, ShellType, String, CommandArgumentInfo, CommandExecutor, CommandFlags)
 - uid: KS.Shell.ShellBase.Commands.CommandInfo.#ctor*
   name: CommandInfo
   href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo__ctor_
@@ -39687,6 +39735,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.CommandInfo.CommandBase
   nameWithType: CommandInfo.CommandBase
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.Flags
+  name: Flags
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Flags
+  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.Flags
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Flags
+  nameWithType: CommandInfo.Flags
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.Flags*
+  name: Flags
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Flags_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.Flags
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Flags
+  nameWithType: CommandInfo.Flags
 - uid: KS.Shell.ShellBase.Commands.CommandInfo.GetTranslatedHelpEntry
   name: GetTranslatedHelpEntry()
   href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_GetTranslatedHelpEntry
@@ -39713,58 +39774,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.CommandInfo.HelpDefinition
   nameWithType: CommandInfo.HelpDefinition
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.NoMaintenance
-  name: NoMaintenance
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_NoMaintenance
-  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.NoMaintenance
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.NoMaintenance
-  nameWithType: CommandInfo.NoMaintenance
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.NoMaintenance*
-  name: NoMaintenance
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_NoMaintenance_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.NoMaintenance
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.NoMaintenance
-  nameWithType: CommandInfo.NoMaintenance
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.Obsolete
-  name: Obsolete
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Obsolete
-  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.Obsolete
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Obsolete
-  nameWithType: CommandInfo.Obsolete
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.Obsolete*
-  name: Obsolete
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Obsolete_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.Obsolete
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Obsolete
-  nameWithType: CommandInfo.Obsolete
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.SettingVariable
-  name: SettingVariable
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_SettingVariable
-  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.SettingVariable
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.SettingVariable
-  nameWithType: CommandInfo.SettingVariable
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.SettingVariable*
-  name: SettingVariable
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_SettingVariable_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.SettingVariable
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.SettingVariable
-  nameWithType: CommandInfo.SettingVariable
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.Strict
-  name: Strict
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Strict
-  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.Strict
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Strict
-  nameWithType: CommandInfo.Strict
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.Strict*
-  name: Strict
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Strict_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.Strict
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Strict
-  nameWithType: CommandInfo.Strict
 - uid: KS.Shell.ShellBase.Commands.CommandInfo.Type
   name: Type
   href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Type
@@ -39778,19 +39787,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.CommandInfo.Type
   nameWithType: CommandInfo.Type
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.Wrappable
-  name: Wrappable
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Wrappable
-  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.Wrappable
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Wrappable
-  nameWithType: CommandInfo.Wrappable
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.Wrappable*
-  name: Wrappable
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Wrappable_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.Wrappable
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Wrappable
-  nameWithType: CommandInfo.Wrappable
 - uid: KS.Shell.ShellBase.Commands.CommandManager
   name: CommandManager
   href: api/KS.Shell.ShellBase.Commands.CommandManager.html

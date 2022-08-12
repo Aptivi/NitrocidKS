@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace KS.Shell.ShellBase.Commands
+    <title>Enum CommandFlags
    | Kernel Simulator API - Aptivi </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace KS.Shell.ShellBase.Commands
+    <meta name="title" content="Enum CommandFlags
    | Kernel Simulator API - Aptivi ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -78,39 +78,67 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="KS.Shell.ShellBase.Commands">
+            <article class="content wrap" id="_content" data-uid="KS.Shell.ShellBase.Commands.CommandFlags">
   
-  <h1 id="KS_Shell_ShellBase_Commands" data-uid="KS.Shell.ShellBase.Commands" class="text-break">Namespace KS.Shell.ShellBase.Commands
+  
+  <h1 id="KS_Shell_ShellBase_Commands_CommandFlags" data-uid="KS.Shell.ShellBase.Commands.CommandFlags" class="text-break">Enum CommandFlags
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Command flags</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Shell.ShellBase.Commands.html">KS.Shell.ShellBase.Commands</a></h6>
+  <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
+  <h5 id="KS_Shell_ShellBase_Commands_CommandFlags_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum CommandFlags</code></pre>
+  </div>
+  <h3 id="fields">Fields
   </h3>
-      <h4><a class="xref" href="KS.Shell.ShellBase.Commands.CommandArgumentInfo.html">CommandArgumentInfo</a></h4>
-      <section></section>
-      <h4><a class="xref" href="KS.Shell.ShellBase.Commands.CommandExecutor.html">CommandExecutor</a></h4>
-      <section></section>
-      <h4><a class="xref" href="KS.Shell.ShellBase.Commands.CommandInfo.html">CommandInfo</a></h4>
-      <section></section>
-      <h4><a class="xref" href="KS.Shell.ShellBase.Commands.CommandManager.html">CommandManager</a></h4>
-      <section></section>
-      <h4><a class="xref" href="KS.Shell.ShellBase.Commands.GetCommand.html">GetCommand</a></h4>
-      <section></section>
-      <h4><a class="xref" href="KS.Shell.ShellBase.Commands.HelpSystem.html">HelpSystem</a></h4>
-      <section></section>
-      <h4><a class="xref" href="KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html">ProvidedCommandArgumentsInfo</a></h4>
-      <section></section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="KS.Shell.ShellBase.Commands.ICommand.html">ICommand</a></h4>
-      <section><p>Base command executor</p>
-</section>
-    <h3 id="enums">Enums
-  </h3>
-      <h4><a class="xref" href="KS.Shell.ShellBase.Commands.CommandFlags.html">CommandFlags</a></h4>
-      <section><p>Command flags</p>
-</section>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="KS_Shell_ShellBase_Commands_CommandFlags_NoMaintenance">NoMaintenance</td>
+        <td><p>This command can't run in maintenance mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="KS_Shell_ShellBase_Commands_CommandFlags_None">None</td>
+        <td><p>No flags</p>
+</td>
+      </tr>
+      <tr>
+        <td id="KS_Shell_ShellBase_Commands_CommandFlags_Obsolete">Obsolete</td>
+        <td><p>The command is obsolete.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="KS_Shell_ShellBase_Commands_CommandFlags_RedirectionSupported">RedirectionSupported</td>
+        <td><p>Redirection is supported, meaning that all the output to the commands can be redirected to a file.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="KS_Shell_ShellBase_Commands_CommandFlags_SettingVariable">SettingVariable</td>
+        <td><p>The command is setting a variable.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="KS_Shell_ShellBase_Commands_CommandFlags_Strict">Strict</td>
+        <td><p>The command is strict, meaning that it's only available for administrators.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="KS_Shell_ShellBase_Commands_CommandFlags_Wrappable">Wrappable</td>
+        <td><p>The command is wrappable.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
 </article>
           </div>
           
@@ -118,6 +146,12 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_Commands_CommandFlags.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Commands.CommandFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/ShellBase/Commands/CommandFlags.vb/#L23" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

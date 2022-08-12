@@ -6069,7 +6069,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shell.html",
-          "hash": "GZwFh4QDXNDLYdioZmDQ+H3cfcOOc45WYpOtUewmo7w="
+          "hash": "LPOQyyDvgXLg7RHDu4KRJrordVE5EGcl02NwMgfc8bg="
         }
       },
       "is_incremental": false,
@@ -6137,11 +6137,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Commands.CommandFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Commands.CommandFlags.html",
+          "hash": "HT/RdcMyw4qMO18p9bd0oFmJJ3nLD7VmYx/PBa8jxnU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.Commands.CommandInfo.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandInfo.html",
-          "hash": "aPteNnRMJEbTUVAzoSixv87LhFIp2Xu75IDz/rxCWtU="
+          "hash": "zd1rsY691O2JhZFCMSnUEgxsqnBZ+U0BDtondDjEobU="
         }
       },
       "is_incremental": false,
@@ -6213,7 +6225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.html",
-          "hash": "rXRoJxPOhZs/gBXyewUaC8arQnRrYunHCHV4u7feJAw="
+          "hash": "FKUbzJzHhrgMfFiJHw9vZ3ucQnR0nP4kjL9C3/yFMfE="
         }
       },
       "is_incremental": false,
@@ -6561,7 +6573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "98pCO0Dz2JCXv818ceJ77BONPUqM+TjKv5rV2SfY160="
+          "hash": "oxp9pKA1A4q5cxz2RS+jYTrC1GS8jxBehRcZs1aTV6k="
         }
       },
       "is_incremental": false,
@@ -9576,7 +9588,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 545,
+          "total_file_count": 546,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
