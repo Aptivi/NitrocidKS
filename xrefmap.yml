@@ -18710,6 +18710,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Platform.KernelPlatform.IsOnWindows
   nameWithType: KernelPlatform.IsOnWindows
+- uid: KS.Misc.Platform.KernelPlatform.IsRunningFromGrilo
+  name: IsRunningFromGrilo()
+  href: api/KS.Misc.Platform.KernelPlatform.html#KS_Misc_Platform_KernelPlatform_IsRunningFromGrilo
+  commentId: M:KS.Misc.Platform.KernelPlatform.IsRunningFromGrilo
+  fullName: KS.Misc.Platform.KernelPlatform.IsRunningFromGrilo()
+  nameWithType: KernelPlatform.IsRunningFromGrilo()
+- uid: KS.Misc.Platform.KernelPlatform.IsRunningFromGrilo*
+  name: IsRunningFromGrilo
+  href: api/KS.Misc.Platform.KernelPlatform.html#KS_Misc_Platform_KernelPlatform_IsRunningFromGrilo_
+  commentId: Overload:KS.Misc.Platform.KernelPlatform.IsRunningFromGrilo
+  isSpec: "True"
+  fullName: KS.Misc.Platform.KernelPlatform.IsRunningFromGrilo
+  nameWithType: KernelPlatform.IsRunningFromGrilo
 - uid: KS.Misc.Probers
   name: KS.Misc.Probers
   href: api/KS.Misc.Probers.html
