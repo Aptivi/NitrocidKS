@@ -5849,11 +5849,83 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLine1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLine1Preset.html",
+          "hash": "RmhUqyu59Bf+yDSRDUoAl+PLbR5jaQwJTMa8xxNuArs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLine2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLine2Preset.html",
+          "hash": "0G1iiVVBiW+4RyQsqxGLq1AEJ4DtJYa8q7v2bHiUH2Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLine3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLine3Preset.html",
+          "hash": "TnZ1OEIKhZaa98r8tVEjtMIEjToP7uATvCDuobprPnc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLineBG1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLineBG1Preset.html",
+          "hash": "emB5WtWe00pe2OS5Gfkc1aW6by/FQEBisVnElcmOua8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLineBG2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLineBG2Preset.html",
+          "hash": "YCalYYqLNqdBDJEYRKQdB1omvXZ/9jfybf/4NiBzKVM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLineBG3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLineBG3Preset.html",
+          "hash": "+WWP03L67M0pLr5a545Xuq2py9VkeNsjDg3apNZ3Nrw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Prompts.Presets.Json.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Json.html",
-          "hash": "9P5rrcGaJ5LZaR7c3iDKXOkqULK2iIfz5BVvmoyzQ+U="
+          "hash": "kf6NLoeGfI+8gwRkVCyZi2Oa8F9L8wEW64yIZsShmIk="
         }
       },
       "is_incremental": false,
@@ -6633,7 +6705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.PromptPresetBase.html",
-          "hash": "og6hmjc8nFM64V6do3LUKrMWzPvtGw46iTTZ2i8Ivdk="
+          "hash": "KdJ5KW/cfGTKaYiHickbCSzUhswMRty006VTM87auyM="
         }
       },
       "is_incremental": false,
@@ -6645,7 +6717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.PromptPresetManager.html",
-          "hash": "DGma/YQhRnr6azB0Tlz/8UYRWb/IQ6yB+iw4ItcVrNo="
+          "hash": "5E55wYIKqO6vZAe5AMbdAtoU5uEqzQapi9zC+wQDr+0="
         }
       },
       "is_incremental": false,
@@ -7173,7 +7245,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "b4Uxt+NDs0dIo5GKv4Aq0WGmfpRVHIFQXVKdWQmLMZg="
+          "hash": "X0GoipOe8Y8LwsuIyIqawUmx0i6XkKEhupZ1TRHnax0="
         }
       },
       "is_incremental": false,
@@ -10200,7 +10272,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 596,
+          "total_file_count": 602,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
