@@ -6029,11 +6029,83 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.ZIP.ZipPowerLine1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.ZIP.ZipPowerLine1Preset.html",
+          "hash": "+qGeYpLgv/aMJepeoarkezuj6ENJ1PgUQ/h0n7n+9FM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.ZIP.ZipPowerLine2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.ZIP.ZipPowerLine2Preset.html",
+          "hash": "OeM6tKGir6K8z56vJI4cmfLQkq2+uEDbPRJcaLx9Mnc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.ZIP.ZipPowerLine3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.ZIP.ZipPowerLine3Preset.html",
+          "hash": "414FdisRGN1IYArQF2XoZkR83jV4Y9UJfVJpy3x3bEA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.ZIP.ZipPowerLineBG1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.ZIP.ZipPowerLineBG1Preset.html",
+          "hash": "v503OQta0vHzwWmgVgCkRcY/Lwt+BBb6k7wTwE0ciE4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.ZIP.ZipPowerLineBG2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.ZIP.ZipPowerLineBG2Preset.html",
+          "hash": "maO8Fph9p3UvgmboqWFUPkC7dPA3CZUcZ8o1RHHhd6w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.ZIP.ZipPowerLineBG3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.ZIP.ZipPowerLineBG3Preset.html",
+          "hash": "e5e5z4jcGEPmdpPb2jOcRgFgTH9yOH7ilST5Fp1DNhE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Prompts.Presets.ZIP.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.ZIP.html",
-          "hash": "cBe5VLxX7o0m8ZuP+bigt5d31NPkECN+KogTryFpZwg="
+          "hash": "1PtS0Qy5V3jeiUGEDbxRcwYartLP+g8UxFc21VauPFE="
         }
       },
       "is_incremental": false,
@@ -6045,7 +6117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.PromptPresetBase.html",
-          "hash": "JyiI0CYtAyLNFI5wW0WC+RG48TYFaQXIvfCtSCi/7B0="
+          "hash": "sDxgfwlSBMfZhh5avEn9mdYBzi5maelFP9wyddKeNgc="
         }
       },
       "is_incremental": false,
@@ -6057,7 +6129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.PromptPresetManager.html",
-          "hash": "bTWgVe1sjTx6mfREzgW7DgJCJhcgZ0enpsQHSe46T9A="
+          "hash": "d5d43v9/dG35mQEGtDG80PnqNudJkyasnLEZcEZk3JQ="
         }
       },
       "is_incremental": false,
@@ -6585,7 +6657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "DsbBR8FoNExEKh80ogUzB/F9iDrM7jG6GbXgSFaPb28="
+          "hash": "yQmgHhyveNqVZM6xnmxlBx8gWl6snv1fwdPRKykKnxQ="
         }
       },
       "is_incremental": false,
@@ -9612,7 +9684,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 547,
+          "total_file_count": 553,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
