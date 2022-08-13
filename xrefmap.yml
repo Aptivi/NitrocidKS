@@ -30372,6 +30372,19 @@ references:
   commentId: T:KS.Misc.Threading.ThreadManager
   fullName: KS.Misc.Threading.ThreadManager
   nameWithType: ThreadManager
+- uid: KS.Misc.Threading.ThreadManager.ActiveThreads
+  name: ActiveThreads
+  href: api/KS.Misc.Threading.ThreadManager.html#KS_Misc_Threading_ThreadManager_ActiveThreads
+  commentId: P:KS.Misc.Threading.ThreadManager.ActiveThreads
+  fullName: KS.Misc.Threading.ThreadManager.ActiveThreads
+  nameWithType: ThreadManager.ActiveThreads
+- uid: KS.Misc.Threading.ThreadManager.ActiveThreads*
+  name: ActiveThreads
+  href: api/KS.Misc.Threading.ThreadManager.html#KS_Misc_Threading_ThreadManager_ActiveThreads_
+  commentId: Overload:KS.Misc.Threading.ThreadManager.ActiveThreads
+  isSpec: "True"
+  fullName: KS.Misc.Threading.ThreadManager.ActiveThreads
+  nameWithType: ThreadManager.ActiveThreads
 - uid: KS.Misc.Threading.ThreadManager.GetActualMilliseconds(System.Int32)
   name: GetActualMilliseconds(Int32)
   href: api/KS.Misc.Threading.ThreadManager.html#KS_Misc_Threading_ThreadManager_GetActualMilliseconds_System_Int32_
