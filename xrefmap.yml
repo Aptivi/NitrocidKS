@@ -39295,6 +39295,12 @@ references:
   commentId: F:KS.Shell.Shell.Commands
   fullName: KS.Shell.Shell.Commands
   nameWithType: Shell.Commands
+- uid: KS.Shell.Shell.GetLine(System.String)
+  name: GetLine(String)
+  href: api/KS.Shell.Shell.html#KS_Shell_Shell_GetLine_System_String_
+  commentId: M:KS.Shell.Shell.GetLine(System.String)
+  fullName: KS.Shell.Shell.GetLine(System.String)
+  nameWithType: Shell.GetLine(String)
 - uid: KS.Shell.Shell.GetLine(System.String,System.String,KS.Shell.ShellBase.Shells.ShellType)
   name: GetLine(String, String, ShellType)
   href: api/KS.Shell.Shell.html#KS_Shell_Shell_GetLine_System_String_System_String_KS_Shell_ShellBase_Shells_ShellType_
