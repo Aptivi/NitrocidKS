@@ -18652,64 +18652,64 @@ references:
   commentId: N:KS.Misc.Platform
   fullName: KS.Misc.Platform
   nameWithType: KS.Misc.Platform
-- uid: KS.Misc.Platform.PlatformDetector
-  name: PlatformDetector
-  href: api/KS.Misc.Platform.PlatformDetector.html
-  commentId: T:KS.Misc.Platform.PlatformDetector
-  fullName: KS.Misc.Platform.PlatformDetector
-  nameWithType: PlatformDetector
-- uid: KS.Misc.Platform.PlatformDetector.IsOnMacOS
+- uid: KS.Misc.Platform.KernelPlatform
+  name: KernelPlatform
+  href: api/KS.Misc.Platform.KernelPlatform.html
+  commentId: T:KS.Misc.Platform.KernelPlatform
+  fullName: KS.Misc.Platform.KernelPlatform
+  nameWithType: KernelPlatform
+- uid: KS.Misc.Platform.KernelPlatform.IsOnMacOS
   name: IsOnMacOS()
-  href: api/KS.Misc.Platform.PlatformDetector.html#KS_Misc_Platform_PlatformDetector_IsOnMacOS
-  commentId: M:KS.Misc.Platform.PlatformDetector.IsOnMacOS
-  fullName: KS.Misc.Platform.PlatformDetector.IsOnMacOS()
-  nameWithType: PlatformDetector.IsOnMacOS()
-- uid: KS.Misc.Platform.PlatformDetector.IsOnMacOS*
+  href: api/KS.Misc.Platform.KernelPlatform.html#KS_Misc_Platform_KernelPlatform_IsOnMacOS
+  commentId: M:KS.Misc.Platform.KernelPlatform.IsOnMacOS
+  fullName: KS.Misc.Platform.KernelPlatform.IsOnMacOS()
+  nameWithType: KernelPlatform.IsOnMacOS()
+- uid: KS.Misc.Platform.KernelPlatform.IsOnMacOS*
   name: IsOnMacOS
-  href: api/KS.Misc.Platform.PlatformDetector.html#KS_Misc_Platform_PlatformDetector_IsOnMacOS_
-  commentId: Overload:KS.Misc.Platform.PlatformDetector.IsOnMacOS
+  href: api/KS.Misc.Platform.KernelPlatform.html#KS_Misc_Platform_KernelPlatform_IsOnMacOS_
+  commentId: Overload:KS.Misc.Platform.KernelPlatform.IsOnMacOS
   isSpec: "True"
-  fullName: KS.Misc.Platform.PlatformDetector.IsOnMacOS
-  nameWithType: PlatformDetector.IsOnMacOS
-- uid: KS.Misc.Platform.PlatformDetector.IsOnMonoRuntime
+  fullName: KS.Misc.Platform.KernelPlatform.IsOnMacOS
+  nameWithType: KernelPlatform.IsOnMacOS
+- uid: KS.Misc.Platform.KernelPlatform.IsOnMonoRuntime
   name: IsOnMonoRuntime()
-  href: api/KS.Misc.Platform.PlatformDetector.html#KS_Misc_Platform_PlatformDetector_IsOnMonoRuntime
-  commentId: M:KS.Misc.Platform.PlatformDetector.IsOnMonoRuntime
-  fullName: KS.Misc.Platform.PlatformDetector.IsOnMonoRuntime()
-  nameWithType: PlatformDetector.IsOnMonoRuntime()
-- uid: KS.Misc.Platform.PlatformDetector.IsOnMonoRuntime*
+  href: api/KS.Misc.Platform.KernelPlatform.html#KS_Misc_Platform_KernelPlatform_IsOnMonoRuntime
+  commentId: M:KS.Misc.Platform.KernelPlatform.IsOnMonoRuntime
+  fullName: KS.Misc.Platform.KernelPlatform.IsOnMonoRuntime()
+  nameWithType: KernelPlatform.IsOnMonoRuntime()
+- uid: KS.Misc.Platform.KernelPlatform.IsOnMonoRuntime*
   name: IsOnMonoRuntime
-  href: api/KS.Misc.Platform.PlatformDetector.html#KS_Misc_Platform_PlatformDetector_IsOnMonoRuntime_
-  commentId: Overload:KS.Misc.Platform.PlatformDetector.IsOnMonoRuntime
+  href: api/KS.Misc.Platform.KernelPlatform.html#KS_Misc_Platform_KernelPlatform_IsOnMonoRuntime_
+  commentId: Overload:KS.Misc.Platform.KernelPlatform.IsOnMonoRuntime
   isSpec: "True"
-  fullName: KS.Misc.Platform.PlatformDetector.IsOnMonoRuntime
-  nameWithType: PlatformDetector.IsOnMonoRuntime
-- uid: KS.Misc.Platform.PlatformDetector.IsOnUnix
+  fullName: KS.Misc.Platform.KernelPlatform.IsOnMonoRuntime
+  nameWithType: KernelPlatform.IsOnMonoRuntime
+- uid: KS.Misc.Platform.KernelPlatform.IsOnUnix
   name: IsOnUnix()
-  href: api/KS.Misc.Platform.PlatformDetector.html#KS_Misc_Platform_PlatformDetector_IsOnUnix
-  commentId: M:KS.Misc.Platform.PlatformDetector.IsOnUnix
-  fullName: KS.Misc.Platform.PlatformDetector.IsOnUnix()
-  nameWithType: PlatformDetector.IsOnUnix()
-- uid: KS.Misc.Platform.PlatformDetector.IsOnUnix*
+  href: api/KS.Misc.Platform.KernelPlatform.html#KS_Misc_Platform_KernelPlatform_IsOnUnix
+  commentId: M:KS.Misc.Platform.KernelPlatform.IsOnUnix
+  fullName: KS.Misc.Platform.KernelPlatform.IsOnUnix()
+  nameWithType: KernelPlatform.IsOnUnix()
+- uid: KS.Misc.Platform.KernelPlatform.IsOnUnix*
   name: IsOnUnix
-  href: api/KS.Misc.Platform.PlatformDetector.html#KS_Misc_Platform_PlatformDetector_IsOnUnix_
-  commentId: Overload:KS.Misc.Platform.PlatformDetector.IsOnUnix
+  href: api/KS.Misc.Platform.KernelPlatform.html#KS_Misc_Platform_KernelPlatform_IsOnUnix_
+  commentId: Overload:KS.Misc.Platform.KernelPlatform.IsOnUnix
   isSpec: "True"
-  fullName: KS.Misc.Platform.PlatformDetector.IsOnUnix
-  nameWithType: PlatformDetector.IsOnUnix
-- uid: KS.Misc.Platform.PlatformDetector.IsOnWindows
+  fullName: KS.Misc.Platform.KernelPlatform.IsOnUnix
+  nameWithType: KernelPlatform.IsOnUnix
+- uid: KS.Misc.Platform.KernelPlatform.IsOnWindows
   name: IsOnWindows()
-  href: api/KS.Misc.Platform.PlatformDetector.html#KS_Misc_Platform_PlatformDetector_IsOnWindows
-  commentId: M:KS.Misc.Platform.PlatformDetector.IsOnWindows
-  fullName: KS.Misc.Platform.PlatformDetector.IsOnWindows()
-  nameWithType: PlatformDetector.IsOnWindows()
-- uid: KS.Misc.Platform.PlatformDetector.IsOnWindows*
+  href: api/KS.Misc.Platform.KernelPlatform.html#KS_Misc_Platform_KernelPlatform_IsOnWindows
+  commentId: M:KS.Misc.Platform.KernelPlatform.IsOnWindows
+  fullName: KS.Misc.Platform.KernelPlatform.IsOnWindows()
+  nameWithType: KernelPlatform.IsOnWindows()
+- uid: KS.Misc.Platform.KernelPlatform.IsOnWindows*
   name: IsOnWindows
-  href: api/KS.Misc.Platform.PlatformDetector.html#KS_Misc_Platform_PlatformDetector_IsOnWindows_
-  commentId: Overload:KS.Misc.Platform.PlatformDetector.IsOnWindows
+  href: api/KS.Misc.Platform.KernelPlatform.html#KS_Misc_Platform_KernelPlatform_IsOnWindows_
+  commentId: Overload:KS.Misc.Platform.KernelPlatform.IsOnWindows
   isSpec: "True"
-  fullName: KS.Misc.Platform.PlatformDetector.IsOnWindows
-  nameWithType: PlatformDetector.IsOnWindows
+  fullName: KS.Misc.Platform.KernelPlatform.IsOnWindows
+  nameWithType: KernelPlatform.IsOnWindows
 - uid: KS.Misc.Probers
   name: KS.Misc.Probers
   href: api/KS.Misc.Probers.html

@@ -787,7 +787,16 @@
 <p>When upgrading your mods to support 0.1.0, you must follow the compatibility notes to ensure that your mod works with 0.1.0. If you want to support the first-generation KS, you must separate your mod codebase to two parts: one for the first-gen and the other for the second-gen. They can't coexist with each other in your KSMods directory.</p>
 </div>
 <h5 id="moved-events-to-kskernelevents">Moved events to KS.Kernel.Events</h5>
-<p>All of the event-related code files are moved to KS.Kernel.Events to separate these from the actual kernel code. However, because events are part of the kernel, we prefer to put it on KS.Kernel namespace rather than KS.Misc.</p>
+<p>All of the event-related code files are moved to <code>KS.Kernel.Events</code> to separate these from the actual kernel code. However, because events are part of the kernel, we prefer to put it on <code>KS.Kernel</code> namespace rather than <code>KS.Misc</code>.</p>
+<h5 id="moved-platformdetector-to-kskernelkernelplatform">Moved PlatformDetector to KS.Kernel.KernelPlatform</h5>
+<p>It has come to the conclusion that <code>PlatformDetector</code> is now promoted to the Kernel namespace under the name <code>KernelPlatform</code> so you can access it under the <code>KS.Kernel</code> namespace.</p>
+<ul>
+<li>Affected classes:
+<ul>
+<li>PlatformDetector -&gt; KernelPlatform</li>
+</ul>
+</li>
+</ul>
 </article>
           </div>
           
