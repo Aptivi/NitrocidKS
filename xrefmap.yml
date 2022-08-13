@@ -39295,6 +39295,19 @@ references:
   commentId: F:KS.Shell.Shell.Commands
   fullName: KS.Shell.Shell.Commands
   nameWithType: Shell.Commands
+- uid: KS.Shell.Shell.CurrentShellType
+  name: CurrentShellType
+  href: api/KS.Shell.Shell.html#KS_Shell_Shell_CurrentShellType
+  commentId: P:KS.Shell.Shell.CurrentShellType
+  fullName: KS.Shell.Shell.CurrentShellType
+  nameWithType: Shell.CurrentShellType
+- uid: KS.Shell.Shell.CurrentShellType*
+  name: CurrentShellType
+  href: api/KS.Shell.Shell.html#KS_Shell_Shell_CurrentShellType_
+  commentId: Overload:KS.Shell.Shell.CurrentShellType
+  isSpec: "True"
+  fullName: KS.Shell.Shell.CurrentShellType
+  nameWithType: Shell.CurrentShellType
 - uid: KS.Shell.Shell.GetLine(System.String)
   name: GetLine(String)
   href: api/KS.Shell.Shell.html#KS_Shell_Shell_GetLine_System_String_
@@ -39314,6 +39327,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.Shell.GetLine
   nameWithType: Shell.GetLine
+- uid: KS.Shell.Shell.LastShellType
+  name: LastShellType
+  href: api/KS.Shell.Shell.html#KS_Shell_Shell_LastShellType
+  commentId: P:KS.Shell.Shell.LastShellType
+  fullName: KS.Shell.Shell.LastShellType
+  nameWithType: Shell.LastShellType
+- uid: KS.Shell.Shell.LastShellType*
+  name: LastShellType
+  href: api/KS.Shell.Shell.html#KS_Shell_Shell_LastShellType_
+  commentId: Overload:KS.Shell.Shell.LastShellType
+  isSpec: "True"
+  fullName: KS.Shell.Shell.LastShellType
+  nameWithType: Shell.LastShellType
 - uid: KS.Shell.Shell.PathLookupDelimiter
   name: PathLookupDelimiter
   href: api/KS.Shell.Shell.html#KS_Shell_Shell_PathLookupDelimiter
