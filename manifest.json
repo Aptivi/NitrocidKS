@@ -1653,7 +1653,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.KernelTools.html",
-          "hash": "JCOkB6rT+PvF+qIJ4voxSYyz20xHPxhYuu1Rp/QIMug="
+          "hash": "3J+hexCWgpUNUjv9CM5bd+sZ3XwOsjJ+kEBd1Bb8zP8="
         }
       },
       "is_incremental": false,
@@ -5897,11 +5897,83 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLine1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLine1Preset.html",
+          "hash": "qnLamMPC90ezPMAKjzk7T/+PUARBbhs+49c+qvkithM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLine2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLine2Preset.html",
+          "hash": "51QPrIOzdS1M287Rlqm6kl1hW2cdXh8Z/EMKI4P9aBo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLine3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLine3Preset.html",
+          "hash": "M2/RQ3pi6QJx2O/qb7/JQu+C37+5znrIB7PySrPgtKo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLineBG1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLineBG1Preset.html",
+          "hash": "bJmtWZ6BYXLlogpqKkt6cJQCp31fmZ+8Rcf5QZEGDn0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLineBG2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLineBG2Preset.html",
+          "hash": "/4517SlE50oABNw0W62hdyRYS8MRSxHQRn4UFIPibKI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLineBG3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLineBG3Preset.html",
+          "hash": "JV8fZhiZIt1PlfI9Fj7bsZuXJkYQnsOkQOdR9KiUt/k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Prompts.Presets.Test.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Test.html",
-          "hash": "XIjswT7P5B8BDl2NsVZhNQ0e5J1M7MIuG4G41X9VCjE="
+          "hash": "LAqqJjD6R77uQBauNaGMNwLuDDITuEwB4kikZLzj8TQ="
         }
       },
       "is_incremental": false,
@@ -5921,11 +5993,83 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLine1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLine1Preset.html",
+          "hash": "BdjsDA3AMYDKcW8NUCSF3ge+bfuYAmTht6TrYDwxvR4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLine2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLine2Preset.html",
+          "hash": "3FA7qmA7j5VABW1TMueGtwEEvenxoFsafsP4e9IdLZw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLine3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLine3Preset.html",
+          "hash": "Xg5pQGmVJ6XgEu5LYBrSUDi3kcmkdW6l2jViN46f3yc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLineBG1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLineBG1Preset.html",
+          "hash": "6sTreK915fFqqhWy6mqTop+/YFSZMLz4veNuM5lHdI8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLineBG2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLineBG2Preset.html",
+          "hash": "VZV2BLGsYwyoQlTvzeWLtx4DWmubmAJRUOwTLdlhtf0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLineBG3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLineBG3Preset.html",
+          "hash": "Rrn0CKhhAbDnGN/+Rmz5xNUtLQZzm+PgJNmsR8P3vsM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Prompts.Presets.Text.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Text.html",
-          "hash": "C2tJOKRxdhSKcMERN1H4nVaqNfDYWyp3UtFfw8MuKwY="
+          "hash": "9qiMjgx36J8yFSvN+/nQI8b7gezODejmhJBSJbu+w58="
         }
       },
       "is_incremental": false,
@@ -6029,78 +6173,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.ZIP.TextPowerLine1Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.ZIP.TextPowerLine1Preset.html",
-          "hash": "0Lbyci3hP6NCB99nyEtcb4wT2paTDAudRkrAMfNcrpQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.ZIP.TextPowerLine2Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.ZIP.TextPowerLine2Preset.html",
-          "hash": "XkTU/zf1fYRx53H6d3Vdd+niphf5OKhlzsCggxePl5E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.ZIP.TextPowerLine3Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.ZIP.TextPowerLine3Preset.html",
-          "hash": "kvaZofE7hK1RIhDrb649AewjgLsDB8V0vuVDwA8b+1k="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.ZIP.TextPowerLineBG1Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.ZIP.TextPowerLineBG1Preset.html",
-          "hash": "gua3+um0Sulepr0YUBMgMDSrqJvB9URTO4vIJbt513w="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.ZIP.TextPowerLineBG2Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.ZIP.TextPowerLineBG2Preset.html",
-          "hash": "2UGQR+XKdeemobhYNNMdK1zjn+6TJP8QVwx53a03noc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.ZIP.TextPowerLineBG3Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.ZIP.TextPowerLineBG3Preset.html",
-          "hash": "YyDEKh3E2hpU7yh29uXZTClwU2mlJbBEmIGkzgYZnIQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Prompts.Presets.ZIP.ZipDefaultPreset.yml",
       "output": {
         ".html": {
@@ -6189,7 +6261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.ZIP.html",
-          "hash": "Ynv0K+wDg5ApkEdkGL3HymQBf9pXqL0aHg9NJPgonzQ="
+          "hash": "1PtS0Qy5V3jeiUGEDbxRcwYartLP+g8UxFc21VauPFE="
         }
       },
       "is_incremental": false,
@@ -6201,7 +6273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.PromptPresetBase.html",
-          "hash": "X2hxN/bh/uQpraIXkbp1IoHPdsqrcoe5gatll9yLPtA="
+          "hash": "osO9YXEli8460lwD9Sdxg9V8nd+MHRq5R7L1NGAdWIA="
         }
       },
       "is_incremental": false,
@@ -6213,7 +6285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.PromptPresetManager.html",
-          "hash": "Q/m0ftuRT6OpyjLXS397mPX1m0BqHjrvUBLjy1yAaX8="
+          "hash": "EVmLRWtJL+UyJ3j3+yOTxVQS5FS7/on4s9PDUUILo50="
         }
       },
       "is_incremental": false,
@@ -6741,7 +6813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "QdtuXvvDqL9Xull1DagqMxYxlmEJtN8nMR0YNexoRNk="
+          "hash": "J0CEJU9Vo3tkY7PeYoRPw8TUkMGuzuDKIPaEzEFoTDg="
         }
       },
       "is_incremental": false,
@@ -9768,7 +9840,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 560,
+          "total_file_count": 566,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
