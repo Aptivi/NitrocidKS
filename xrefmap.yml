@@ -13457,19 +13457,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.KernelTools.GeneratePanicDump
   nameWithType: KernelTools.GeneratePanicDump
-- uid: KS.Kernel.KernelTools.GetCompileDate
-  name: GetCompileDate()
-  href: api/KS.Kernel.KernelTools.html#KS_Kernel_KernelTools_GetCompileDate
-  commentId: M:KS.Kernel.KernelTools.GetCompileDate
-  fullName: KS.Kernel.KernelTools.GetCompileDate()
-  nameWithType: KernelTools.GetCompileDate()
-- uid: KS.Kernel.KernelTools.GetCompileDate*
-  name: GetCompileDate
-  href: api/KS.Kernel.KernelTools.html#KS_Kernel_KernelTools_GetCompileDate_
-  commentId: Overload:KS.Kernel.KernelTools.GetCompileDate
-  isSpec: "True"
-  fullName: KS.Kernel.KernelTools.GetCompileDate
-  nameWithType: KernelTools.GetCompileDate
 - uid: KS.Kernel.KernelTools.GetCompilerVars
   name: GetCompilerVars()
   href: api/KS.Kernel.KernelTools.html#KS_Kernel_KernelTools_GetCompilerVars
