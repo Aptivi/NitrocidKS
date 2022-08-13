@@ -12929,12 +12929,6 @@ references:
   commentId: F:KS.Kernel.Flags.ColorWheelTrueColor
   fullName: KS.Kernel.Flags.ColorWheelTrueColor
   nameWithType: Flags.ColorWheelTrueColor
-- uid: KS.Kernel.Flags.CommandFlag
-  name: CommandFlag
-  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_CommandFlag
-  commentId: F:KS.Kernel.Flags.CommandFlag
-  fullName: KS.Kernel.Flags.CommandFlag
-  nameWithType: Flags.CommandFlag
 - uid: KS.Kernel.Flags.CornerTimeDate
   name: CornerTimeDate
   href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_CornerTimeDate
@@ -13118,12 +13112,6 @@ references:
   commentId: F:KS.Kernel.Flags.PrintLineNumbers
   fullName: KS.Kernel.Flags.PrintLineNumbers
   nameWithType: Flags.PrintLineNumbers
-- uid: KS.Kernel.Flags.ProbeInjectedCommands
-  name: ProbeInjectedCommands
-  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_ProbeInjectedCommands
-  commentId: F:KS.Kernel.Flags.ProbeInjectedCommands
-  fullName: KS.Kernel.Flags.ProbeInjectedCommands
-  nameWithType: Flags.ProbeInjectedCommands
 - uid: KS.Kernel.Flags.QuietHardwareProbe
   name: QuietHardwareProbe
   href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_QuietHardwareProbe
@@ -39307,12 +39295,12 @@ references:
   commentId: F:KS.Shell.Shell.Commands
   fullName: KS.Shell.Shell.Commands
   nameWithType: Shell.Commands
-- uid: KS.Shell.Shell.GetLine(System.String,System.Boolean,System.String,KS.Shell.ShellBase.Shells.ShellType)
-  name: GetLine(String, Boolean, String, ShellType)
-  href: api/KS.Shell.Shell.html#KS_Shell_Shell_GetLine_System_String_System_Boolean_System_String_KS_Shell_ShellBase_Shells_ShellType_
-  commentId: M:KS.Shell.Shell.GetLine(System.String,System.Boolean,System.String,KS.Shell.ShellBase.Shells.ShellType)
-  fullName: KS.Shell.Shell.GetLine(System.String, System.Boolean, System.String, KS.Shell.ShellBase.Shells.ShellType)
-  nameWithType: Shell.GetLine(String, Boolean, String, ShellType)
+- uid: KS.Shell.Shell.GetLine(System.String,System.String,KS.Shell.ShellBase.Shells.ShellType)
+  name: GetLine(String, String, ShellType)
+  href: api/KS.Shell.Shell.html#KS_Shell_Shell_GetLine_System_String_System_String_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.Shell.GetLine(System.String,System.String,KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.Shell.GetLine(System.String, System.String, KS.Shell.ShellBase.Shells.ShellType)
+  nameWithType: Shell.GetLine(String, String, ShellType)
 - uid: KS.Shell.Shell.GetLine*
   name: GetLine
   href: api/KS.Shell.Shell.html#KS_Shell_Shell_GetLine_
@@ -39677,12 +39665,6 @@ references:
   commentId: F:KS.Shell.ShellBase.Commands.CommandFlags.Strict
   fullName: KS.Shell.ShellBase.Commands.CommandFlags.Strict
   nameWithType: CommandFlags.Strict
-- uid: KS.Shell.ShellBase.Commands.CommandFlags.UninvokableByKernelArgument
-  name: UninvokableByKernelArgument
-  href: api/KS.Shell.ShellBase.Commands.CommandFlags.html#KS_Shell_ShellBase_Commands_CommandFlags_UninvokableByKernelArgument
-  commentId: F:KS.Shell.ShellBase.Commands.CommandFlags.UninvokableByKernelArgument
-  fullName: KS.Shell.ShellBase.Commands.CommandFlags.UninvokableByKernelArgument
-  nameWithType: CommandFlags.UninvokableByKernelArgument
 - uid: KS.Shell.ShellBase.Commands.CommandFlags.Wrappable
   name: Wrappable
   href: api/KS.Shell.ShellBase.Commands.CommandFlags.html#KS_Shell_ShellBase_Commands_CommandFlags_Wrappable
