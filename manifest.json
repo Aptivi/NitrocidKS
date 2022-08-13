@@ -2325,7 +2325,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Configuration.Config.html",
-          "hash": "ONQFLOXy56FVBn1Vvs3kAWMvbEA3qHU+cHtZmsH2DFE="
+          "hash": "uYx4WNIyZ4UUwTUXr5zioKdxVxxLHG2BtyEOVa4G+yc="
         }
       },
       "is_incremental": false,
@@ -2925,7 +2925,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.BaseScreensaver.html",
-          "hash": "FsyWRferKBczKhnHw4QlQSatjVebYl0BzkoiYfqU3Gg="
+          "hash": "y+C579ZocZdYoHs+lu2l/5HDIOiMoyuhEB5rz2a04e8="
         }
       },
       "is_incremental": false,
@@ -3857,6 +3857,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.StarfieldDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.StarfieldDisplay.html",
+          "hash": "WF7oAo80q8fj0ITiBq/fepgE3ks3147TZWHPmHOIpNQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.StarfieldSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.StarfieldSettings.html",
+          "hash": "HT1mrPsjyHRSpVgemxP2SISOcROi0j/7BeftRr3vFLs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.Displays.TypewriterDisplay.yml",
       "output": {
         ".html": {
@@ -3945,7 +3969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.html",
-          "hash": "L0uubjSuf3F9RD0wiEZqcI7Jc98sCxPloFF0AyjMWtg="
+          "hash": "yiY7RwcYDfWP2qMym/v4QfP+GItxlSRphRd+9DpjxTo="
         }
       },
       "is_incremental": false,
@@ -3969,7 +3993,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Screensaver.html",
-          "hash": "SVJw5rX2gRfibE2Lt0kAt/JxNdemYIDMvoIpussgG04="
+          "hash": "tNrLxCYHpRNlWmw+vxMBE4dXn0PYcgGhKvjlUo6Q5hg="
         }
       },
       "is_incremental": false,
@@ -7389,7 +7413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "eDRU64FRo1bBftJvPCDaEPXhnq5DTxV7TbVVSVd9sfY="
+          "hash": "WHD2kaYK+/SFX7pQsSJ5ZN1Uif5SYpGCii2HFqQpJ1k="
         }
       },
       "is_incremental": false,
@@ -10329,7 +10353,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Release-Notes-for-Second-Generation-KS.html",
-          "hash": "1sGMcv+TfgcCXn7bIoJkdwXJLmqxdmg/i2zDhPuVt88="
+          "hash": "dWBrXszL8y0Xsh13jYV0p2kIpLIQVQ2ElrYs0MWy1RI="
         }
       },
       "is_incremental": false,
@@ -10416,7 +10440,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 614,
+          "total_file_count": 616,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
