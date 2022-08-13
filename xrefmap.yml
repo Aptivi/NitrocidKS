@@ -16633,31 +16633,18 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Configuration.Config.InitializeConfig
   nameWithType: Config.InitializeConfig
-- uid: KS.Misc.Configuration.Config.InitializeConfigToken
-  name: InitializeConfigToken()
-  href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_InitializeConfigToken
-  commentId: M:KS.Misc.Configuration.Config.InitializeConfigToken
-  fullName: KS.Misc.Configuration.Config.InitializeConfigToken()
-  nameWithType: Config.InitializeConfigToken()
-- uid: KS.Misc.Configuration.Config.InitializeConfigToken(System.String)
-  name: InitializeConfigToken(String)
-  href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_InitializeConfigToken_System_String_
-  commentId: M:KS.Misc.Configuration.Config.InitializeConfigToken(System.String)
-  fullName: KS.Misc.Configuration.Config.InitializeConfigToken(System.String)
-  nameWithType: Config.InitializeConfigToken(String)
-- uid: KS.Misc.Configuration.Config.InitializeConfigToken*
-  name: InitializeConfigToken
-  href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_InitializeConfigToken_
-  commentId: Overload:KS.Misc.Configuration.Config.InitializeConfigToken
-  isSpec: "True"
-  fullName: KS.Misc.Configuration.Config.InitializeConfigToken
-  nameWithType: Config.InitializeConfigToken
 - uid: KS.Misc.Configuration.Config.ReadConfig
   name: ReadConfig()
   href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_ReadConfig
   commentId: M:KS.Misc.Configuration.Config.ReadConfig
   fullName: KS.Misc.Configuration.Config.ReadConfig()
   nameWithType: Config.ReadConfig()
+- uid: KS.Misc.Configuration.Config.ReadConfig(JToken)
+  name: ReadConfig(JToken)
+  href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_ReadConfig_JToken_
+  commentId: M:KS.Misc.Configuration.Config.ReadConfig(JToken)
+  fullName: KS.Misc.Configuration.Config.ReadConfig(JToken)
+  nameWithType: Config.ReadConfig(JToken)
 - uid: KS.Misc.Configuration.Config.ReadConfig(System.String)
   name: ReadConfig(String)
   href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_ReadConfig_System_String_
@@ -16696,6 +16683,12 @@ references:
   commentId: M:KS.Misc.Configuration.Config.TryReadConfig
   fullName: KS.Misc.Configuration.Config.TryReadConfig()
   nameWithType: Config.TryReadConfig()
+- uid: KS.Misc.Configuration.Config.TryReadConfig(JToken)
+  name: TryReadConfig(JToken)
+  href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_TryReadConfig_JToken_
+  commentId: M:KS.Misc.Configuration.Config.TryReadConfig(JToken)
+  fullName: KS.Misc.Configuration.Config.TryReadConfig(JToken)
+  nameWithType: Config.TryReadConfig(JToken)
 - uid: KS.Misc.Configuration.Config.TryReadConfig(System.String)
   name: TryReadConfig(String)
   href: api/KS.Misc.Configuration.Config.html#KS_Misc_Configuration_Config_TryReadConfig_System_String_
