@@ -2493,7 +2493,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Configuration.Config.ConfigCategory.html",
-          "hash": "ZJTmyDv1SQf61QtitJC/ChsE5l1qBGnrGcG52DhTgFM="
+          "hash": "svIT1sxfE7vthk6Tiq/PPo3gnzuXyUi9GFFzCxgKgfo="
         }
       },
       "is_incremental": false,
@@ -2505,7 +2505,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Configuration.Config.html",
-          "hash": "VCutnyGbD9Cp+PWRjEh7NGWZPVFk+KBbUGytPurPwH0="
+          "hash": "8w29lchFE/W8BN9pdHXHEcM2kBTzzv7a1Uf9l7HEm4g="
         }
       },
       "is_incremental": false,
@@ -5573,299 +5573,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_CdlCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_CdlCommand.html",
-          "hash": "069DHfL7dcWKNPgx/1/xe00JboBwbfFyS4ESbP27HOk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_CdrCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_CdrCommand.html",
-          "hash": "3KSq0PJFxqg/Ew0gQk2eeMAtu2n3sFE7AQv54kqoV4I="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_ConnectCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_ConnectCommand.html",
-          "hash": "CdixuOFYuRdWNnm8V3t+0lbMZzqXjomrCEkh7Kdot/c="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_CpCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_CpCommand.html",
-          "hash": "+/JYykhv1y37Nc9RBXediD8bursHt/FrJMzKo0QbxEI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_DelCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_DelCommand.html",
-          "hash": "rCzEeWVACj9qAnsdPH4JRnHJhepv+QmRt1ckEAL8xGc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_DisconnectCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_DisconnectCommand.html",
-          "hash": "gYRBxIwgUdLFsZIrI+xnlOdldhOsbcIdF+R42DmigpY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_ExecuteCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_ExecuteCommand.html",
-          "hash": "CSZLKVhWk/0uSOAvtXJGUQl60frGki+0Hscgj2wF7uk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_GetCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_GetCommand.html",
-          "hash": "mKjif0YsVrfjfyHEKk5fETOQySYTzWMnHts03h7hlq0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_GetFolderCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_GetFolderCommand.html",
-          "hash": "f7oC1EiI0e1HkX7BtkMPTO7ITp614CD9RIdJGYA2VKo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_InfoCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_InfoCommand.html",
-          "hash": "pPQm8z1LcJNc5yj2dpYAekUBOANbD7ah6G3Ayfr+Fyk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_LslCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_LslCommand.html",
-          "hash": "x8X1ZhLcHTN/Ul4jmeoxSEwAe1wAE10KMQSqaGAF0G0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_LsrCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_LsrCommand.html",
-          "hash": "BCALqlDsuwFHnosrXAlIKkK67A0JvDr1K9rOhXve8P4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_MvCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_MvCommand.html",
-          "hash": "OKkPk1peZ7Fw/7wqDs9QlQ+lxoCC7c/ihOUm0b4ne5Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_PermCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_PermCommand.html",
-          "hash": "l5b6YNKwUvupxcVAG21Ka20KcyGX0IldjsfCyDPvLEU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_PutCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_PutCommand.html",
-          "hash": "4gG10EUQ3d9EQehyQcQV8jKsNxaqa+vJ+xOMZDbi5og="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_PutFolderCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_PutFolderCommand.html",
-          "hash": "MIH48CZrYtrIaa9zPnbctoPpRb7IcQuRRpmonTPtRBE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_PwdlCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_PwdlCommand.html",
-          "hash": "SXmif8U7W/XriJBcCr/jlkO2bAP+QcxCvO+qyw1XW3g="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_PwdrCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_PwdrCommand.html",
-          "hash": "cP4P1F1asdHZNefLf+PIKB8cHTr4S0DOiKmHaPOv58E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_QuickConnectCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_QuickConnectCommand.html",
-          "hash": "qvFJwbd0nHVxZsZmbnT6JuKkbNxxLNUv/6gnr+fonHI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_SumFileCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_SumFileCommand.html",
-          "hash": "EoIU5i+bGfBfycjZH4HTtsLeCnIKitBEo7t1TucLt88="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_SumFilesCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_SumFilesCommand.html",
-          "hash": "9HqhKtsYrbV+t9wW/b4+YCT394jLEZuZBFLXYZumy+k="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.FTP_TypeCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.FTP_TypeCommand.html",
-          "hash": "ukFvNoKwnhwJk47dhmRgtlkrlsjuzUtz0LrQL4twMX8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.Commands.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.Commands.html",
-          "hash": "VYBEcdtnmZC7Gk5HmLMcEy7aT68B6YOccq702z+wooE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.FTP.FTPShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.FTP.FTPShellCommon.html",
-          "hash": "LrQ2WzvIG6tGjkynNX4bh0shO5/Ffus+HdSH5Jsx7jo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Network.FTP.FTPTools.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.FTP.FTPTools.html",
-          "hash": "Lv6DFx7rreGM8BacrIPxMlIx2XkX8ATYQDPa4RBhRxQ="
+          "hash": "4QKuX5B9DaBZjYC4T5e++HaR7HPDab9BHWQCtZtZYwM="
         }
       },
       "is_incremental": false,
@@ -5877,7 +5589,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.FTP.FTPTracer.html",
-          "hash": "j5XRI9OtYwn2tEYN94QlD9YhTqUYL887DTkjJVffYcc="
+          "hash": "2Fh4Due+8vWJ78Jc08R8nWR5QE/3R/kNSafiURLnmj8="
         }
       },
       "is_incremental": false,
@@ -5889,7 +5601,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.FTP.Filesystem.FTPFilesystem.html",
-          "hash": "OXL+yTea0Yz2IgMpPJIHtivxZwH7JIik0IhIvP3dH2Y="
+          "hash": "QPiiNKC2G3a77j2Ua/xa/dT6jPZg5hSVYBFRByzKCEo="
         }
       },
       "is_incremental": false,
@@ -5901,7 +5613,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.FTP.Filesystem.FTPHashing.html",
-          "hash": "qTytwGR0i6c3hAgi0ebPlPf84eBMa+LBkOpshl7Ffpw="
+          "hash": "fZG++gysGxojY2DWDAk0gKhSTPebwBi3313EYl5JejM="
         }
       },
       "is_incremental": false,
@@ -5925,7 +5637,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.FTP.Transfer.FTPTransfer.html",
-          "hash": "u4m1/b7xLPOXNbI/Wle9xG8N/vBCGMWpnXRMcWzcg/k="
+          "hash": "JAhB662A2VwxaV1n1pRVdyWGR8xBFqNJiQydkxcRtmU="
         }
       },
       "is_incremental": false,
@@ -5961,79 +5673,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.FTP.html",
-          "hash": "2exFNxMTW4qz/ig03E/dejbhdTVCxnUsouxWVjZcKnM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.HTTP.Commands.HTTP_DeleteCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.HTTP.Commands.HTTP_DeleteCommand.html",
-          "hash": "LYPPJyW2VwTuVl1VmDnMTjDFm9+Wbf1bjrb2znBoFW4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.HTTP.Commands.HTTP_GetCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.HTTP.Commands.HTTP_GetCommand.html",
-          "hash": "XxyT+IRfl0BxC3M6tWy36FC7WnXW1T+JnVNzluQSw10="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.HTTP.Commands.HTTP_GetStringCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.HTTP.Commands.HTTP_GetStringCommand.html",
-          "hash": "Nf01spun5NBRHKiWFmeoIi9BUJuSV/gFOrwhARq55tg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.HTTP.Commands.HTTP_SetSiteCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.HTTP.Commands.HTTP_SetSiteCommand.html",
-          "hash": "a9D/QfhnR+r2FT8pHKukQvY6Dhxsx1xxFlkRwL65BEE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.HTTP.Commands.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.HTTP.Commands.html",
-          "hash": "ggIfpRGFjeENQAF58WHwlfOL/JvS5LCAasvUTJJoFBQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.HTTP.HTTPShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.HTTP.HTTPShellCommon.html",
-          "hash": "mcHV1HO2YZw6T1M3/qRo3/TT5KC0RVdDVcue5yiU3DQ="
+          "hash": "l0xUOM+EX+Z5jcZWKnuuoIeThigi/WEi1eEC7SASNz4="
         }
       },
       "is_incremental": false,
@@ -6045,7 +5685,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.HTTP.HTTPTools.html",
-          "hash": "qJTdOK2B/4L0b1HTw1Mkyrq/tB+5oApINUkb6JC87+Q="
+          "hash": "VdI0+TuEB+EO8Fc3xYMointbev+12KN2WQUmc+Qo8aU="
         }
       },
       "is_incremental": false,
@@ -6057,7 +5697,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.HTTP.html",
-          "hash": "Q+P7fuQgPzaeHJl2yX3WuZTWkyqnlza2GJZE0Pgi9fs="
+          "hash": "UdWsi9theMyv77SWJWP/e1a2+cUTxvZLXg4+urpfJDA="
         }
       },
       "is_incremental": false,
@@ -6497,126 +6137,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.RSS.Commands.RSS_ArticleInfoCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.RSS.Commands.RSS_ArticleInfoCommand.html",
-          "hash": "/abDn9tGqmIMY1CFx+a6F4RIwWZhHxAGgJzTFEnAFT8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.RSS.Commands.RSS_BookmarkCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.RSS.Commands.RSS_BookmarkCommand.html",
-          "hash": "YO3Usy19kmrjokGaD9pDGeWH8Y+Uw467N2/Okvq7bG4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.RSS.Commands.RSS_ChFeedCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.RSS.Commands.RSS_ChFeedCommand.html",
-          "hash": "KtgngCaDlOxF/5b9dE3bu1NLfRPnVcv/haN5WzWWTpc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.RSS.Commands.RSS_FeedInfoCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.RSS.Commands.RSS_FeedInfoCommand.html",
-          "hash": "PNOjDO3Nqq+i58lK0smJC0N5d1N87FKMtkZkHRBX6BQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.RSS.Commands.RSS_ListBookmarkCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.RSS.Commands.RSS_ListBookmarkCommand.html",
-          "hash": "6nrKw8ojgxwS3eMd/h9LRbHean6FfneP2mFeqMWrSNI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.RSS.Commands.RSS_ListCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.RSS.Commands.RSS_ListCommand.html",
-          "hash": "H06AeBJsALTSQzML1+cjV8Gkhz2Z/fgcjRkULhVk4fA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.RSS.Commands.RSS_ReadCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.RSS.Commands.RSS_ReadCommand.html",
-          "hash": "CRQ5xcjHA7JixSWETACqI2geWLrcYCa8mGkkKYvYa6Q="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.RSS.Commands.RSS_SelFeedCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.RSS.Commands.RSS_SelFeedCommand.html",
-          "hash": "n5+4CcdzJAfQ6mPyudIJVEDG7G2vRYQHeFIg36zztrg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.RSS.Commands.RSS_UnbookmarkCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.RSS.Commands.RSS_UnbookmarkCommand.html",
-          "hash": "dkA8UdR39lUrZLH/J1N36oi6I2GoQdh2IBfrl6c4iUg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.RSS.Commands.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.RSS.Commands.html",
-          "hash": "q9E608hYiOZPUkAbHl7O8dYOhutC8nwHVn1PIL4Tlmk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Network.RSS.Instance.RSSArticle.yml",
       "output": {
         ".html": {
@@ -6669,19 +6189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.RSS.RSSBookmarkManager.html",
-          "hash": "9LSAqHWIDGqvgKaM0wbmaWKS4GW7VTRgvd7Z3eJXBMU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.RSS.RSSShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.RSS.RSSShellCommon.html",
-          "hash": "tJGHxFM2s24kM56h0YyAWqAaKLNFSWPnOr3es/5ZRsI="
+          "hash": "prhg+JBrAN5yR1nX4J/LNNa7WS+HxOL4GhRXRt53vqU="
         }
       },
       "is_incremental": false,
@@ -6693,7 +6201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.RSS.RSSTools.html",
-          "hash": "JV0krH1CTg6o3aQEeF94PkZie7W/I4C0D6axpbNbTUQ="
+          "hash": "10NJ5Zed7jJgBDz85ZYGHZB+fSLynJ5ERe/Bdx6jnnE="
         }
       },
       "is_incremental": false,
@@ -6705,7 +6213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.RSS.html",
-          "hash": "qqVKcG0Oju4nx6crqz3T6xejpT7chWdcSR5s4nKgqYI="
+          "hash": "gZSM7sfkI6sp+n7hySERbfFJ9nXDUhxL6/MVynEjIhY="
         }
       },
       "is_incremental": false,
@@ -6893,167 +6401,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SFTP.Commands.SFTP_CdlCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SFTP.Commands.SFTP_CdlCommand.html",
-          "hash": "JkR3taLT6dFhyZNR5FLQx7EcEm2DVuEKdu0Szs/c3o4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SFTP.Commands.SFTP_CdrCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SFTP.Commands.SFTP_CdrCommand.html",
-          "hash": "1a2X/vJ8DJN99P9kjid+xWZjm4dv0ZTIIVnOqtJU5jY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SFTP.Commands.SFTP_ConnectCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SFTP.Commands.SFTP_ConnectCommand.html",
-          "hash": "KFnK4k+ypnoXaXZPltnchCi1iB/rzLr6WPcfXhyihFM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SFTP.Commands.SFTP_DelCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SFTP.Commands.SFTP_DelCommand.html",
-          "hash": "zAldZGdhKSOXQ6HrR0KLOhd0ZdNPEd1L13HjOqfZgto="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SFTP.Commands.SFTP_DisconnectCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SFTP.Commands.SFTP_DisconnectCommand.html",
-          "hash": "maHkZVfljSdrUFmyC/hjgF4JH1DZo+HvFWKSIDWlV1A="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SFTP.Commands.SFTP_GetCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SFTP.Commands.SFTP_GetCommand.html",
-          "hash": "XwGfKZue07jnd8pjblj/1YX5I08627oPiB90BBTp/tE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SFTP.Commands.SFTP_LslCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SFTP.Commands.SFTP_LslCommand.html",
-          "hash": "GDqy+kpxKEtv5Soi/oIVMA1i7mPJffvj4Vx+Vo/1w3I="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SFTP.Commands.SFTP_LsrCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SFTP.Commands.SFTP_LsrCommand.html",
-          "hash": "zDTDzXaBI36O+h5agKZSuQzNlwLWMo0IWWxZCcHKSVk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SFTP.Commands.SFTP_PutCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SFTP.Commands.SFTP_PutCommand.html",
-          "hash": "91zlbyJ56s3mxjh0zstq7CdSsj7ZDGDJWFFYPAc7bMI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SFTP.Commands.SFTP_PwdlCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SFTP.Commands.SFTP_PwdlCommand.html",
-          "hash": "xFWuHCvnrys8zS7xN4GXzaqYLbjNIQYgp7Itd/oUUFg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SFTP.Commands.SFTP_PwdrCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SFTP.Commands.SFTP_PwdrCommand.html",
-          "hash": "X5Wtsx6/0DqVakUhqvlFKmFpvrauvRvybIcxMSHGZYs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SFTP.Commands.SFTP_QuickConnectCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SFTP.Commands.SFTP_QuickConnectCommand.html",
-          "hash": "KJKLxqtcbHTMSY7RKiLV16d5/55yct85+MMqGyjTb/E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SFTP.Commands.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SFTP.Commands.html",
-          "hash": "9gRr0os7O8Q/kEic9i1/6gdBcQbOEyO2eQm5FAXr3OU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Network.SFTP.Filesystem.SFTPFilesystem.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.SFTP.Filesystem.SFTPFilesystem.html",
-          "hash": "12G7+UP7Ptnqfu4H7u7N8tFyHjvZ/KWuEt1cHTIODHE="
+          "hash": "CfBn7H28AEoUsG3maz9rFobEoV5f+Em9xza6ToyzPqI="
         }
       },
       "is_incremental": false,
@@ -7073,23 +6425,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SFTP.SFTPShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SFTP.SFTPShellCommon.html",
-          "hash": "Fne/EhPxzUZJwt1smrJ96MDSI7Q4Oh2OTWue8LHS9/s="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Network.SFTP.SFTPTools.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.SFTP.SFTPTools.html",
-          "hash": "8mTfZOmdqBUl3xk3nR1yaG9odmf/5wpP822dzi7FvX8="
+          "hash": "noe/lkrxJYdzj7ekmfwj+z/EE6ytjNFyJ7Frii75buA="
         }
       },
       "is_incremental": false,
@@ -7101,7 +6441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.SFTP.Transfer.SFTPTransfer.html",
-          "hash": "MXETPxo0VDj/td9HfrPWbs4aQz6baLVj2fD5TNKRa0w="
+          "hash": "Ht5rCAOVlloM0Knn56vthdM4D1xrx+BrQMK3bGLO6Mg="
         }
       },
       "is_incremental": false,
@@ -7125,7 +6465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.SFTP.html",
-          "hash": "Ekkzow/keZhlghQicbH4EWwCiI5Oux8n+3cmWgM2ut0="
+          "hash": "t3231ZF923hbAYLVF8xylZie6WuKXhhyIzCOce5jebE="
         }
       },
       "is_incremental": false,
@@ -10353,7 +9693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandExecutor.html",
-          "hash": "jO4s5lPD3TOH9t+HZ1a08K9PkN+k5AGbbADGBfPoXzY="
+          "hash": "se+snPhj13mvPjIi60sGPRaPLNPL3P0gw0tTbtYScaY="
         }
       },
       "is_incremental": false,
@@ -10485,7 +9825,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.ShellExecutor.html",
-          "hash": "m9Vg4hE3/EHwC/WwLqWiQQl63IYwkLid4xJQqAtIgXg="
+          "hash": "5hKcC21s6l43UQTCJ+8OO9Z95TAtk69O3JHF5bmyJJk="
         }
       },
       "is_incremental": false,
@@ -10509,7 +9849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.ShellStart.html",
-          "hash": "5YG8kRNxsV7DBaFGUGXOq67lYTGGvGqY+guSnS78cbQ="
+          "hash": "fe+qnO2b+y5V/1gZ9I+s1E19ux1NBSqCz22GArpG0YM="
         }
       },
       "is_incremental": false,
@@ -10553,11 +9893,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.FTPShell.yml",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_CdlCommand.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.Shells.FTPShell.html",
-          "hash": "SCqDiVIItPXJHVAbid27YoNjMULODVIwRHZ3BAXnAhk="
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_CdlCommand.html",
+          "hash": "gQxtXrNBHxHag7KnP7i7wzIIYsWipLRo//QSR1S8YFo="
         }
       },
       "is_incremental": false,
@@ -10565,11 +9905,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.HTTPShell.yml",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_CdrCommand.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.Shells.HTTPShell.html",
-          "hash": "Pr9ud+q9qklZKhpo60nb+NoBBzs1OnoXG49fuXspUWo="
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_CdrCommand.html",
+          "hash": "9YCTovh876WGS0PeLex/86Z4swYwFBf6Tuuq4KjgLFA="
         }
       },
       "is_incremental": false,
@@ -10577,11 +9917,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.HexShell.yml",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_ConnectCommand.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.Shells.HexShell.html",
-          "hash": "dnCpQbH5YocQVzBg6vWWONWIRCSF9DHIC9/dqfdGkPM="
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_ConnectCommand.html",
+          "hash": "ohuMLYgYu/uPOfW9ld7C3+UKGV5ACROiMycr1QDKF08="
         }
       },
       "is_incremental": false,
@@ -10589,11 +9929,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.JsonShell.yml",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_CpCommand.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.Shells.JsonShell.html",
-          "hash": "ZMLP5kuOLi8mJaM7pID4AVFTEz5PvkAkCvX5uJ4xaKs="
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_CpCommand.html",
+          "hash": "1HzEWHsSiiL3fvRlmpeJwLBQO4EtyTH4H3Q3buiTIds="
         }
       },
       "is_incremental": false,
@@ -10601,11 +9941,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.MailShell.yml",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_DelCommand.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.Shells.MailShell.html",
-          "hash": "7/sHuj5/mSrBsmLyM0tp43Ao2mBShDXILKZ5gtz90Jk="
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_DelCommand.html",
+          "hash": "PhwVgWbPN8SbSl0HlxwWLDrsWi3ILORf0UvEIrGOHy0="
         }
       },
       "is_incremental": false,
@@ -10613,11 +9953,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.RSSShell.yml",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_DisconnectCommand.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.Shells.RSSShell.html",
-          "hash": "L496StXiQF/93cVoCMinyyMFR6c9fRNcUZXZ6szlymM="
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_DisconnectCommand.html",
+          "hash": "Lf229xzEhesIyAMoZkWn/L9OvsnzxkO+WVtKG8pGU4E="
         }
       },
       "is_incremental": false,
@@ -10625,11 +9965,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.RarShell.yml",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_ExecuteCommand.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.Shells.RarShell.html",
-          "hash": "bQwGf63snHxqiocRYA9bW3ZdTo71p0SXnJUFMMOtIKA="
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_ExecuteCommand.html",
+          "hash": "XKdgbPYZMNZ2Mg0nS2/ISxvGUsRMi/grGFNLFC/WK4E="
         }
       },
       "is_incremental": false,
@@ -10637,11 +9977,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.SFTPShell.yml",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_GetCommand.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.Shells.SFTPShell.html",
-          "hash": "KdGzcAwY3PKdgEx8ohK/8cBnz/BvToEbop05lsBadao="
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_GetCommand.html",
+          "hash": "IblaOHfnE5VwV6O0T+fo+N4vdFFPGGyQFGxPlPGJElk="
         }
       },
       "is_incremental": false,
@@ -10649,11 +9989,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.TestShell.yml",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_GetFolderCommand.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.Shells.TestShell.html",
-          "hash": "hBlgwMKHoigGLCligUhtgKK8fU2LQv+rBWOfxM7kc3Q="
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_GetFolderCommand.html",
+          "hash": "fnG345GUrzbOcpg0R2b+8GpR6Eb3V9IfYru0U2/KLR8="
         }
       },
       "is_incremental": false,
@@ -10661,11 +10001,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.TextShell.yml",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_InfoCommand.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.Shells.TextShell.html",
-          "hash": "vsIEFC83IeYw5+9usiQpYRbGTSKE1R+yOV0pzn5d9SQ="
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_InfoCommand.html",
+          "hash": "+md/bosCFoyqIjgclMSQ7nbMP92d1MEq8jp561lq+Uw="
         }
       },
       "is_incremental": false,
@@ -10673,11 +10013,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.UESHShell.yml",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_LslCommand.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.Shells.UESHShell.html",
-          "hash": "WiuJj7OxrDW9smOTe9/pBDeN5qTQt0qRU9Cvf46FWgw="
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_LslCommand.html",
+          "hash": "VNjx0gnQubxcac5RduIrMCYlODhj41F9O6/eNyZlG38="
         }
       },
       "is_incremental": false,
@@ -10685,11 +10025,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.ZipShell.yml",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_LsrCommand.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.Shells.ZipShell.html",
-          "hash": "h0AaJAc6/HP/XmlFgqFJdBC5HF9qvrTXJXFXiyrLbrI="
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_LsrCommand.html",
+          "hash": "ODOvE3QGFpESnF26giGnde/1RMvSNRSOOZSRcC7ySZ0="
         }
       },
       "is_incremental": false,
@@ -10697,11 +10037,1595 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.yml",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_MvCommand.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.Shells.html",
-          "hash": "eorTx8vZAR3qhNQUA29KmPRrg22uPWqOJGLJoRHh9rs="
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_MvCommand.html",
+          "hash": "+sOuzplGIYArCWAomSQyqMa/hf6BN/zWtuQ+4YdZQMs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_PermCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_PermCommand.html",
+          "hash": "85cbFxps/YuM3iHZX2/c5AlI9vqVSjAc5Ng1LZf4pHI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_PutCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_PutCommand.html",
+          "hash": "T5h2rC+tW2PSPPTRmLUQq/+FMjslT8H4YAMyyWp/y8E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_PutFolderCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_PutFolderCommand.html",
+          "hash": "7Fc+3VSGldNrSG0r8lRT9GZQgXvAHJ6UUwI1AUGbv/U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_PwdlCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_PwdlCommand.html",
+          "hash": "Plfcl2E4FaDLZjSdZkYRHudpkg6X9ddiJEEw+vWocV0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_PwdrCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_PwdrCommand.html",
+          "hash": "+mzx2Kw/I7rgYg08B+kxLosUaPQKFcAQ9TQ4GxcqHSg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_QuickConnectCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_QuickConnectCommand.html",
+          "hash": "zXv9TKzZaYYZ3HCl7yRWCW9XnMHz6fd+TDI1FEstVvA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_SumFileCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_SumFileCommand.html",
+          "hash": "0A7Y3Ml0Yd0x0GNL+ilgfTYUKx3Kt5FIcqqk2VNcNmI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_SumFilesCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_SumFilesCommand.html",
+          "hash": "3uHkIFxFZT1N4t5B7vjuON+1QwWC/CsrGev0waKZGBc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_TypeCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_TypeCommand.html",
+          "hash": "GUF+T06p4+gat5AjuPGPO1gtw3uCE1nMEo5fQNzADHo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.FTP.Commands.html",
+          "hash": "nIoMUbPLo8BeAXVRdiw+yhiqALn10YaFtg/vhDcd5gI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.FTPShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.FTP.FTPShell.html",
+          "hash": "nGXln+m0mU/F1iBvn+lMFDJxHlNghZ/i/Y3mqOUwtOY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.FTPShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.FTP.FTPShellCommon.html",
+          "hash": "cMfFiJN2dAf3OrxLlnS61qcKIUbmzwarSeOjrOrZhrM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.FTP.html",
+          "hash": "khQZhsHJ0S1N5HjJ8t0t/gdkFSi1ReeIbhoFuyABVrU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.HTTP.Commands.HTTP_DeleteCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.HTTP.Commands.HTTP_DeleteCommand.html",
+          "hash": "mDf+lJZ2ij/EdKbUgJuNTA0wk+DbMluIaSrE3sf78fI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.HTTP.Commands.HTTP_GetCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.HTTP.Commands.HTTP_GetCommand.html",
+          "hash": "HN1ZD9DFqoF3mwSjQ4+csT9pZ4HoDKWF7iPTCSrKC2I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.HTTP.Commands.HTTP_GetStringCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.HTTP.Commands.HTTP_GetStringCommand.html",
+          "hash": "cbQFBTjkCfJC5+4g5VFa2hmdaPf5P472837JbdpOWbE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.HTTP.Commands.HTTP_SetSiteCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.HTTP.Commands.HTTP_SetSiteCommand.html",
+          "hash": "phDfzzASrqfeHpk7z/LoM+y3KNp+JuY8jS3h2jpgvtc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.HTTP.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.HTTP.Commands.html",
+          "hash": "CvF7AcCqyliW7ZcGtfYhGeb+aIOC2nkgMTua1cg/Ur8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.HTTP.HTTPShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.HTTP.HTTPShell.html",
+          "hash": "tKoBcJ7u3Q3IlVslACTqFhR1decLNNHYd//Cjs/jZYg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.HTTP.HTTPShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.HTTP.HTTPShellCommon.html",
+          "hash": "mJTv6w9GDUb4yFKTLJ2nf/ZAubT4snm25FexVtbRh+s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.HTTP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.HTTP.html",
+          "hash": "SpYTxdVPPJJjmpx6mUTXM+wn9/5bZumJuBE6KUJK2iM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Hex.HexShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Hex.HexShell.html",
+          "hash": "iOfAXkj/WA0DZfF7lkPFQ+opDMPmLeaB3Rqps+fmz8Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Hex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Hex.html",
+          "hash": "CNx1kxHI8K5nAb91BxYvtJvu0kQs4ssy+f1QDoTk90U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Json.JsonShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Json.JsonShell.html",
+          "hash": "dr1l4fR0pNWqmJ6rwYevx6Nv1ZweQyfr8lBqSsRiank="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Json.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Json.html",
+          "hash": "deTRr/A5R45yL4IgnMeG3qXzh/i9CnE6LZYt0iON1yQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.MailShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.MailShell.html",
+          "hash": "H1dvQaoREQgae2w1mW2QYMu4zX4rjb57M3VGQYkjYmo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.html",
+          "hash": "3282UGmJggwDz/WM6YksdF0f9yq3Cp1GY6ZLvi/Y92k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_ArticleInfoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_ArticleInfoCommand.html",
+          "hash": "LHKD7TWNXLiwVwVg7wh9asHsSfWT+YtM3sGe0XNV9Hg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_BookmarkCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_BookmarkCommand.html",
+          "hash": "6ZbtsdcieZZ0xcCvVYHv44xsxTe7o3x6klU2GHkhRdk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_ChFeedCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_ChFeedCommand.html",
+          "hash": "OdTFyD23nZfSs5c71fzeZDL1QaJsnBRsAs+sZfojKaw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_FeedInfoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_FeedInfoCommand.html",
+          "hash": "mm6VThNQPG+AD83P4SAv9lRwF89Qoa8+K/spw4vBhag="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_ListBookmarkCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_ListBookmarkCommand.html",
+          "hash": "S8Pw/5AkmgfRfdHKv5nd5BQ1C14F0xxfN8U48hoE32g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_ListCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_ListCommand.html",
+          "hash": "xkSXQ/0x7+BsKqD17I038kGwS8O/GHUMnOGZRxj160M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_ReadCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_ReadCommand.html",
+          "hash": "1FIJw/K7uye4h7MqDngIJTIaD7KlyBkk4ChvOlkAl/g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_SelFeedCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_SelFeedCommand.html",
+          "hash": "JVl7T3ryQhsmu4Iw9FXuUHGEvPcSb0Zo9uFcAXW1xEc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_UnbookmarkCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_UnbookmarkCommand.html",
+          "hash": "mCNjL3xD0Rn9Kz+aRJZMuvwhyzBMXmvoR8rykvYoisg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RSS.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RSS.Commands.html",
+          "hash": "t74mwfvsGPeXOAIr1KQPC9yK9M48GOU6qPnsE5Vtf4M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RSS.RSSShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RSS.RSSShell.html",
+          "hash": "uHTmZHaoeDD5F29I9jDvDt/bTomUfLLd5sBxDc09v4s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RSS.RSSShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RSS.RSSShellCommon.html",
+          "hash": "JqNMxKO7ih1x8OREJ8dPWek+rSN3N65XuprThhktd8c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RSS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RSS.html",
+          "hash": "nagHhPzngSmut6lgWaSV6o8IusydwJEDfVRllyyzTOE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Rar.RarShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Rar.RarShell.html",
+          "hash": "wLV+s6mS4F51bgE8MQOSgydu9+VCgNuoOqlz4U9cRLU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Rar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Rar.html",
+          "hash": "PEL8DH/4qowN4GSD3BRFwOAAfPvynGRU4qq1X2Mvg34="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_CdlCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_CdlCommand.html",
+          "hash": "6SDId8VMFN7hqh38rsG33S3cUxdGyzlhEA4HjewPryU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_CdrCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_CdrCommand.html",
+          "hash": "Svmks3rH8QYu6oPbskirb6/Ys3ja87I9In0Cbu/630M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_ConnectCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_ConnectCommand.html",
+          "hash": "FkCUsyWwQfmB//GJAyxO3F88H2VLrRgxy585VoDmRlc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_DelCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_DelCommand.html",
+          "hash": "LHwZu4axfvHwrs3mzuDEl372uccFffIbEX3SlcW5CP0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_DisconnectCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_DisconnectCommand.html",
+          "hash": "Z3KF27IVSidBNqCwzRBth5joXj9acwJsZNqQGu3pNnA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_GetCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_GetCommand.html",
+          "hash": "+M9mxOZnRUrBxippQlJ0TENaDmEcrZGSfdt0cr9Tlpo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_LslCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_LslCommand.html",
+          "hash": "e8E9qqsvr9Zz0RCu6H/dKu355BxiyZi1G0Ot7X5dxG4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_LsrCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_LsrCommand.html",
+          "hash": "5aoC8jQHRlo3T5/QTUBNReeElVdYVLa3+WCZ7xm89kE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_PutCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_PutCommand.html",
+          "hash": "Pv6crsgLdRx9OGT5fqQ5P68cC6CmSXQAnzHhuHEyLWg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_PwdlCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_PwdlCommand.html",
+          "hash": "g3B2W/mutqZTHbHyIh1vePrWRUPgHrkv9GwjfnUYRTs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_PwdrCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_PwdrCommand.html",
+          "hash": "YEQpT7JGPjny95j+uyJFP7eJCZjTEozQYU+cSS/UWiU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_QuickConnectCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_QuickConnectCommand.html",
+          "hash": "QxuqTEziTY9yr6nfPExWyYyNE3yzFXAxttR3O84l9mA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.Commands.html",
+          "hash": "SWlUmVoOuqQ/nCe2joD02aXeUf1I/ycZndkj2N6RtMw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.SFTPShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.SFTPShell.html",
+          "hash": "kslTHWQ2cHK3OZnDNtXA/uwC9ZN1CSBDCDU2BTTxE/s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.SFTPShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.SFTPShellCommon.html",
+          "hash": "lt1zb5mOHI2956c4OGmkWBaHEUmCnMLJ5t0CM0u6uTA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.html",
+          "hash": "l8nCU8e+dcCKcn36EG7JypLEwpvmu0Xobsi/kSN+IJc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_BlacklistModCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_BlacklistModCommand.html",
+          "hash": "qfgOD2BR/sGp0IzpcUkeuVBG/da9C7cEWjf8PUXd9Y8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckLocalLinesCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckLocalLinesCommand.html",
+          "hash": "a9Rq4tCjmoeSQ+5AmVx1SdyigJd+Y0CKRqGiUJIfDcI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckSettingsEntryVarsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckSettingsEntryVarsCommand.html",
+          "hash": "Arc8qyunCu4ZZeVjsKq53uSlpLZKmVrWqEv2mEoR4xs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckStringCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckStringCommand.html",
+          "hash": "jss1z6rcb0gqkGacwKJKNlabMdswmMJns4ov6Qu+uRc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckStringsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckStringsCommand.html",
+          "hash": "505dUdHfnLiaZ/lA/lQP5ftXuHEALv8QgCDopDOEJQ0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ColorTestCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ColorTestCommand.html",
+          "hash": "v0r/xnaFmbeVsbNLwBZLwfFJMVnlgmLKM/RISiaLEe0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ColorTrueTestCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ColorTrueTestCommand.html",
+          "hash": "9AtLe0muesUqSyKGTBKvpRaPTYjT44b1qx/HT8/N2gQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ColorWheelCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ColorWheelCommand.html",
+          "hash": "qgCQn6I4Rez1mJpxh14avDWQd52+Uq391mG8lcihGgk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_DCalendCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_DCalendCommand.html",
+          "hash": "Mk0VYHJ6x8DFxMhnbuWSLwMNbqzvLKDaMmn0B9slCkA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_DebugCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_DebugCommand.html",
+          "hash": "/uXUTZuPaIZuMsz8thYeaxjb15WMYqw/nyrF6hpN18s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_GetCustomSaverSettingCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_GetCustomSaverSettingCommand.html",
+          "hash": "+l5RqtjvBFv8oCuqlr1QmQdz4EvZQdGpcHbm1uDc41o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_GetLineStyleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_GetLineStyleCommand.html",
+          "hash": "qxDU6c5UH45RlCKfIEikLaoiUQWroHF5UWFtPjdvVP8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ListCodePagesCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ListCodePagesCommand.html",
+          "hash": "2t1kIOcskS2yOA6IjkJfQK+We219mJuc6cHuSXy+7S0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_LoadModsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_LoadModsCommand.html",
+          "hash": "OraxscVlOQiHSlyqVvMxnY9nR21jUBaJ1sd5SCCH14M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_LsCompilerVarsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_LsCompilerVarsCommand.html",
+          "hash": "c8Ulb2fEVy08Ml8AgnIeEFQibRbiykmHM4P3zyLs0VE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_LsCulturesCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_LsCulturesCommand.html",
+          "hash": "G8LOcQrwp0eLJeHrhEfurR2o6XmP8m09sAZNsgZ1g3c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PanicCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PanicCommand.html",
+          "hash": "1+9i7m9VXkYku74n2blaFW3rpCosQLf7iZnbp5IkfF8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PanicFCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PanicFCommand.html",
+          "hash": "Zw7lVWFLMyUopRW0zs0B1eqIiNKdkOoMiYF+Z9+kMxU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PlacesCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PlacesCommand.html",
+          "hash": "CfAKOBe81Sq0Eq3BLcAZ7RPktTObre1psFq/c8Dwgwg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PowerLineTestCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PowerLineTestCommand.html",
+          "hash": "/XdAa2tOF4YQdoHP78JB/eMFBwyt1lBjrx3w7i0wAmY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintCommand.html",
+          "hash": "DrdvRCZXgpGnUGTibLnYzEsQ+nW4mbOZZHF34HwvJbc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintDCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintDCommand.html",
+          "hash": "528a17657E8O4E5qPMS7QObfOpNM9R/P9B2uqWTkIXI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintDFCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintDFCommand.html",
+          "hash": "fFohmHYwrJZcLWize1W8DQm/J/10k4NnfZfD3ne8jNQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintFCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintFCommand.html",
+          "hash": "zCKFzgykAQO0zctI8fEeeCL6sGdZjFmTu3rk8+eQe1Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintFigletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintFigletCommand.html",
+          "hash": "i+N+A3GjxZVCXI0qmt0bga/5xwkXrmBib/HT538JIv8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintFigletFCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintFigletFCommand.html",
+          "hash": "+boMZlQ1Oq+i1ZwhNnb12sUUfIx4/5tCeniYIDLfTXY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepColorCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepColorCommand.html",
+          "hash": "ogVqc8NYapJjdIYSXDbaIISYH6hfPWqAGOZLCqHE2mo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepColorFCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepColorFCommand.html",
+          "hash": "w+xtUC5lla+Uyt6YIxRuAqIHymoNSuYEbOJUfnjT7sw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepCommand.html",
+          "hash": "aJLiSJyW/BHEkjMyW2kEIZBNzJMWz9yh8qF7le2gbXs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepFCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepFCommand.html",
+          "hash": "KjyF/QOSdSfXYHzMy2F5RigYd1yNmWfNuZt1j7ue0O0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ProbeHwCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ProbeHwCommand.html",
+          "hash": "wFM8eYIlDLAXThkrEO3EdytnW3tOcz4hNDDqztaQrXI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_RDebugCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_RDebugCommand.html",
+          "hash": "ljdx/u9bRbYcHnEq7uTEIPGSNZI1208IYDDtxavwPTw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ReloadModsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ReloadModsCommand.html",
+          "hash": "Ezqp8zKZLOTp4zvdeVWx6Oq1UxbIUbTH6AA+XX8OUbk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SendNotCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SendNotCommand.html",
+          "hash": "1M6+fAV/MYq9zg2z125T2jxdt2Yjk+h4069LvRj+SzI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SendNotProgCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SendNotProgCommand.html",
+          "hash": "coeDFriAot0Oy8nCLanjgFE5GI9Re6vuOiur4MLaFHo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SetCustomSaverSettingCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SetCustomSaverSettingCommand.html",
+          "hash": "W/J9SPGtANyYOnXwUtOoVMcVQ4am+OLZc2CHf5y2aGc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowDateCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowDateCommand.html",
+          "hash": "Wf+VtDZo1MWbjfHB9sp+3fIeiWROAdhbBgzlGaH5Gts="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowDateUtcCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowDateUtcCommand.html",
+          "hash": "1zo0g1X/p5ovVqZ6vw0XCRu9pbqnAvSnHGTzWysWyB8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTDCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTDCommand.html",
+          "hash": "PaWyvS4ASBzd6d9NduI7j5IVcMywPXn9uZK+kq6VEvw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTDUtcCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTDUtcCommand.html",
+          "hash": "HZyDM51sR6RCa6bPHKqNMmG94lOzii1WrNZE0gFdDGA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTimeCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTimeCommand.html",
+          "hash": "44yV+24tODBpoaH4FIARaqRGOpWxUHfnb8dEBSksBms="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTimeUtcCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTimeUtcCommand.html",
+          "hash": "Y8GGzdLljgchZ42/73ml8SH9zwU7kaS7B43tcwF/KxA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShutdownCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShutdownCommand.html",
+          "hash": "utESoG+kel1NGn6ionHDRUxgEv1DD7llU4Yxd3M2IJs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SleepTookCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SleepTookCommand.html",
+          "hash": "63BNXIsJvMNGcwrfF5uvi/MXOX6CYFROU7Sc7NB5DFo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_StartCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_StartCommand.html",
+          "hash": "twg0JyJQTdZj9bqTypVnaR31ypCJly8FrXn4O6q7IAI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_StopModsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_StopModsCommand.html",
+          "hash": "2Xg5ioXhsW1f2scCm3C4GbZ6wqzXcJ2/sT+KRuZ/uAs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestCRC32Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestCRC32Command.html",
+          "hash": "jOHoJhDaYr5kf1PAtLF0GN08fWRlcU5eQqD6t3OGphc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestDictWriterCharCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestDictWriterCharCommand.html",
+          "hash": "yqG1EJhV1zF9JHPMsCoJbW6GONcgH57QIFp18fAwNzk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestDictWriterIntCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestDictWriterIntCommand.html",
+          "hash": "v0j2sTaUivOhxmYHupHCgaAT/Ss6bjvM/LNizgWoylw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestDictWriterStrCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestDictWriterStrCommand.html",
+          "hash": "+SxKxZdZ4Uq9gcimFdoVEbZthUu7MN17yP4HFAxxEJk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestEventCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestEventCommand.html",
+          "hash": "WYCd71EnptsJNywiTUMBKruFnSSu2njhNA1bckvCL1Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestExecuteAsmCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestExecuteAsmCommand.html",
+          "hash": "9z6CCPs6bGmhHGZb7RGAKh+zORsk2VSFIVurRqzCP2o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestListWriterCharCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestListWriterCharCommand.html",
+          "hash": "96qoDlW5bq+Bh7SE5Ex4NkRLIHq00TeK1YpaEA95avk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestListWriterIntCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestListWriterIntCommand.html",
+          "hash": "oKD6rT3KT6szYdoKin/8t3tFBvrJV7V+7bK0CKKDMOw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestListWriterStrCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestListWriterStrCommand.html",
+          "hash": "SwgZgrRmyQ4qIM3m9LIIzv4hvfb7R82vYFjhQmkm0sg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestMD5Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestMD5Command.html",
+          "hash": "72O2fgpMZJzktRK0Kh8PZySpFwq3bZR6WCH21mNN8XQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestRegExpCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestRegExpCommand.html",
+          "hash": "cbpRPLRAQH+oCMh2lndJFr23ww7njRrkaS+XnRLjbgI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA1Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA1Command.html",
+          "hash": "wAv+AqDgwcGMReUHoRfoeg+s3HrqUPx6nS8vTMD8Bjc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA256Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA256Command.html",
+          "hash": "cez4y5l4WTp14MSOmjfbNvyspgkvsgJc0CZ9onNXQi0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA384Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA384Command.html",
+          "hash": "5hnsxBV6qqoJ3unqoenS4VqgmP6isIu6loZzPJJdvfA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA512Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA512Command.html",
+          "hash": "Dra++SbH1iq8AzPV20A1mxhs9YkqXLDkZ9DSWfhD32g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestTableCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestTableCommand.html",
+          "hash": "yemQSw1w4zNBT/8zCnrQQYicT0PpsgpfWR4eB08t754="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TranslateCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TranslateCommand.html",
+          "hash": "IDDY+oLL3oIqxRYtvy4btKtpUV5c9qT7P/z/X+fng+Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_UnblacklistModCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_UnblacklistModCommand.html",
+          "hash": "79XB1mh5wehpyGOzfsJEORYr+ZPuel53B9zLCMaavus="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.Commands.html",
+          "hash": "DMVzGMmaJFxw3CErwl+U4ZEfFC7mh5o0AHtyIGxdKIY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.TestShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.TestShell.html",
+          "hash": "SuS3MzQsvg8HFmLxiT/T2u09vv8XL9nhGNIRBcwQ1hE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.TestShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.TestShellCommon.html",
+          "hash": "2R5qNW+qJM3iW8SKrF9WGQSr1tfZns6FXw68uBsTkUw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.html",
+          "hash": "q+2U5IIyYQ31om60q2Hb7SEWtfVnlqv75fh6Z8YIGqA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.TextShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.TextShell.html",
+          "hash": "mZS9//wQYC1pPjc92w5kYzOZVIu14n9X73aV0D71bsc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.html",
+          "hash": "w4HSnBUOm4hhRTeH1wwPdHrQVZIwyRb/zIac3y9OspQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.UESHShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.UESHShell.html",
+          "hash": "KTYQJ1iwa1SkYJulzHi1dD18ySfYSxoqJ+cuLUxEgOY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.html",
+          "hash": "EhEU/OsGEJYJevPfWtORWlhpBahE9UXckmk8SYNv82s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Zip.ZipShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Zip.ZipShell.html",
+          "hash": "N7qRxuCPh8V3/OMEzhjHqKsJ2j1xv1aQZgvfyrtbGNE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Zip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Zip.html",
+          "hash": "2lDoaRagB8i0R/MGWe0IdGBEpsTJr2q0tvbS9BfQ040="
         }
       },
       "is_incremental": false,
@@ -10738,810 +11662,6 @@
         ".html": {
           "relative_path": "api/KS.Shell.html",
           "hash": "rewIDF0KF1TuIbSrIhIxZyP7D3uuXB9Daio0/zEee9U="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_BlacklistModCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_BlacklistModCommand.html",
-          "hash": "A+hc+YkI8K04uTJ3fbnSDDEc431lA0AS1LRcd0kWU4w="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_CheckLocalLinesCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_CheckLocalLinesCommand.html",
-          "hash": "J+ETVBDQr42YUfVwo1fTRq+cBlgk1y0wBZ2stTydMcQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_CheckSettingsEntryVarsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_CheckSettingsEntryVarsCommand.html",
-          "hash": "mNerB2d0z4oUmcqxZMd8EVfTD7AJF1mTgb/LZmUcZsI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_CheckStringCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_CheckStringCommand.html",
-          "hash": "Dv+g9rAMeYFrN+ivMf3oBT8UVIvCNs5aRQnK7TfinhI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_CheckStringsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_CheckStringsCommand.html",
-          "hash": "BJX2p05vVFG+rxpGg1/Ayrdosp7oiVDpf54Y2nhzmcc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_ColorTestCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_ColorTestCommand.html",
-          "hash": "OXTfnAeCvBRN0Eiur/mpLlNd3X2acuf9aLMN2Yw3dFY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_ColorTrueTestCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_ColorTrueTestCommand.html",
-          "hash": "d5Skgov0x+hm7w1LSdAwNmEVKlbi0xcWKE4je+MYdoE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_ColorWheelCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_ColorWheelCommand.html",
-          "hash": "c9Yo+NWkBOEBSCNSUmP6tnW5w8nbrTQf9S6YPRfwJIg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_DCalendCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_DCalendCommand.html",
-          "hash": "U3hd/Nxlh26JTO3OifK6XmcYVvl3X5jKEuHhlJtO2SM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_DebugCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_DebugCommand.html",
-          "hash": "6rKLLWhlH9hwCAWXwyNqzRy7RAqG6OSOUE1eI7gbFsQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_GetCustomSaverSettingCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_GetCustomSaverSettingCommand.html",
-          "hash": "U0jWdM9cPZSddMUDTPFq0KVz3uSP2H49uoYqcofSBq0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_GetLineStyleCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_GetLineStyleCommand.html",
-          "hash": "PIT+UkG0aQ2SrAW1uVFBpki7gGYSj4bd3FZWfGn1x88="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_ListCodePagesCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_ListCodePagesCommand.html",
-          "hash": "lBmWGek/DbVxyD1gbuBmu6QWCVOa0j75Q3Wt+pvph58="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_LoadModsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_LoadModsCommand.html",
-          "hash": "DjLIBajkhLMJuA/irzeeZiScuXTlhjOKzza4kvisrrE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_LsCompilerVarsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_LsCompilerVarsCommand.html",
-          "hash": "t1KBGDZ72VsCKjIBpgQ6+xzztZj6ETdrZN8NXrOOqIk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_LsCulturesCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_LsCulturesCommand.html",
-          "hash": "uOt3gRix/UlZY2OHtuxhS6clLMeT4zrh22bmnMwnNBc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_PanicCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_PanicCommand.html",
-          "hash": "3AtMmzMlpP0HAcjfwRW+WpNQxRl0jsq5rHfZZNG8m6k="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_PanicFCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_PanicFCommand.html",
-          "hash": "jdPhD2CGiZ0QLw501Rx9+iARjiFqtRdVJhHV+3L+3tY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_PlacesCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_PlacesCommand.html",
-          "hash": "eXnEleKeMa1TTJFLg/cd3Zc5dbL0FtVVmpq/miU2GJE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_PowerLineTestCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_PowerLineTestCommand.html",
-          "hash": "lntaLASzTiOUjDlKyUFX3U/wL7/kEn88qqZeLYBiR38="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_PrintCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_PrintCommand.html",
-          "hash": "dBGUdBtAGgz+7i+gnKoq02DlYjGMUVmR6lS46XUpQFI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_PrintDCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_PrintDCommand.html",
-          "hash": "fQOb6SSCNKi85YeERp+rEEOYLWXp7izop6XOtrRYkFo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_PrintDFCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_PrintDFCommand.html",
-          "hash": "tq9WhQSkSTtJyznHhecSpOv0Z7AxmUGT53qM6QxGTq8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_PrintFCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_PrintFCommand.html",
-          "hash": "UeZKQkMkcORAyPO6Iw+p8NbxWlwqR/xDL8KU3ut9eaw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_PrintFigletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_PrintFigletCommand.html",
-          "hash": "g7m1WVNFi4MjRzcm3ggtgYrXwBcW71J1C0RN7MhKROk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_PrintFigletFCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_PrintFigletFCommand.html",
-          "hash": "48Iu18ztSW57ROju01y9ApUFvv8ApefiBjpSJ7NaZuk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_PrintSepColorCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_PrintSepColorCommand.html",
-          "hash": "90CP+IetI0xILQzKMfoxAysq6sAZVyLmheHzs/aliV4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_PrintSepColorFCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_PrintSepColorFCommand.html",
-          "hash": "PaOWapAEg1D/vLg05ACJBXUlfEnGFmo9Q2wN0iMY9bg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_PrintSepCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_PrintSepCommand.html",
-          "hash": "hrzvcY2ibr8vDYdN1MI6VrVRQV1fp9+bUuwXu0WhQ6o="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_PrintSepFCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_PrintSepFCommand.html",
-          "hash": "UGlluzz6krIoiA5DkK2S5v6cQgQN6XJAWhHlyLq8500="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_ProbeHwCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_ProbeHwCommand.html",
-          "hash": "Prs/fAWWZ9ADxy6Wm0ceucSkix6UVWJnzn2YBXs6WNw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_RDebugCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_RDebugCommand.html",
-          "hash": "+/k2G7OeIQaa83VkwyBwtCW6ktboSAYb5EnErQWGHOA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_ReloadModsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_ReloadModsCommand.html",
-          "hash": "1JYgsGHL2i9xs/r49ys6Vfowm5CaLVBd1rt/QMznxzU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_SendNotCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_SendNotCommand.html",
-          "hash": "0iby1x0XWJlJbLPFjeEYCtR57G8CMNdj5yDB6MbQ7rc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_SendNotProgCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_SendNotProgCommand.html",
-          "hash": "115izVKOfbxoAaDUpYeE2IajsS0UmOc1qGXxwLHDM20="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_SetCustomSaverSettingCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_SetCustomSaverSettingCommand.html",
-          "hash": "hIZbdZdUHR3zkmS//73mHYQB7/O51wuNhciU5O4VMsw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_ShowDateCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_ShowDateCommand.html",
-          "hash": "JU4K+hWapYM/QwQc/QsTMAAo6UXb3G5nbcNq06URfOg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_ShowDateUtcCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_ShowDateUtcCommand.html",
-          "hash": "ZY3X8N7bkefKqxezWF/widh6V4j3h54U7HCYZBIazT4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_ShowTDCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_ShowTDCommand.html",
-          "hash": "+0MRR9b3t243N0T+HAfcH+02qjuicdMAqaid2rNIzK4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_ShowTDUtcCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_ShowTDUtcCommand.html",
-          "hash": "pvFdKAvAbyBCZlKO6E6qAs3hXHd6PGho/YceEM/edAA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_ShowTimeCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_ShowTimeCommand.html",
-          "hash": "fFCjv4idteajwC1dOs1FbTMhZ/ILqJjxU/bNDQtp5tk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_ShowTimeUtcCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_ShowTimeUtcCommand.html",
-          "hash": "k/2nGiudsoqR+oXzGLBGupb20JxcbZHQ7+u2iOg6EgE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_ShutdownCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_ShutdownCommand.html",
-          "hash": "ATYqitsY3THCRqeD/5+pztvs5mXsAP1DE0E6oavshVA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_SleepTookCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_SleepTookCommand.html",
-          "hash": "JjWZO5Nk750OPa5PCm0nqxoUlVJ0S8UCdMKbhbi0hgw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_StartCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_StartCommand.html",
-          "hash": "aV8mroZu9tL/tupeQSxbmVCqcbPmA7nVtSXQ8mSnFgc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_StopModsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_StopModsCommand.html",
-          "hash": "BXj6zulSXPMl7hxnzU+9PIEw1X+Fh6vmie1gauTPUus="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestCRC32Command.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestCRC32Command.html",
-          "hash": "V99rPcyORqiAg/iHMR8HI6w7exBtk+jNh4yNhzGlmPg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestDictWriterCharCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestDictWriterCharCommand.html",
-          "hash": "is/mLXTM5G3vQ5AsOEECiayCt71A7dQeBIKHZPWczmA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestDictWriterIntCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestDictWriterIntCommand.html",
-          "hash": "R1f+7Z/FP/4cQ+3UHHachVtiJa15VcK7CrmNwS5D4uY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestDictWriterStrCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestDictWriterStrCommand.html",
-          "hash": "/eaaBJ38RGmI4jfHNexoppeCeIefF+v1wvhGxA8+3Is="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestEventCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestEventCommand.html",
-          "hash": "ysX40ajfTG5ZIp1Rfn0UvIQzx3zohG1zgqlyW472qeA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestExecuteAsmCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestExecuteAsmCommand.html",
-          "hash": "S+UvrgpNNdzsLanFETiVmT2epyyLMO3KzV6t0kG7xq8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestListWriterCharCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestListWriterCharCommand.html",
-          "hash": "Dn8VrA8/SRfLaLp8dPHT6CRuLSH2vZXbyiK83Xs1Ujc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestListWriterIntCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestListWriterIntCommand.html",
-          "hash": "FOsggM3SoRvxmfFFcXff82ovBefRKB7zeWzGW1SJpgA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestListWriterStrCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestListWriterStrCommand.html",
-          "hash": "5o4Th/4XTpTEl5jVtfOhk4Syfl+v6+hx996uwtOBeQc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestMD5Command.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestMD5Command.html",
-          "hash": "OD1OCMbQXF+7tAsR2Xd3abEkZtb4b7q+pjvztZUy+Co="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestRegExpCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestRegExpCommand.html",
-          "hash": "aFZCjo4ebZQ/EjW+vQVBoYS3nsRQ3mXZaFIEvRXZymg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestSHA1Command.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestSHA1Command.html",
-          "hash": "7edIrEbj0un/8+6LShn0dTmqPiMRVZfTZrtOtf8LX/4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestSHA256Command.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestSHA256Command.html",
-          "hash": "tGS6PSiyrNSQy/QMzt/8Y82E/vC12Fh7ADtwod5Pigg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestSHA384Command.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestSHA384Command.html",
-          "hash": "ZMZq0x9hh7+AjoKCj5v8+wfDQ3Sn7zZddgpEZtgYI7g="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestSHA512Command.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestSHA512Command.html",
-          "hash": "rQXY2tlj39KPFwH2V0LB2REiKZR/9+YDDFQuXFsdWI4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TestTableCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TestTableCommand.html",
-          "hash": "jExnI/XRrv+wJ1iS36ezar/Hu07u2opxS3t+SQmmxCc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_TranslateCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_TranslateCommand.html",
-          "hash": "Fb7oujgYleXloQ5cJ2v4QOAY7CrL7omOP2Qy5mvewck="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.Test_UnblacklistModCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.Test_UnblacklistModCommand.html",
-          "hash": "LkGarSbIsPV6Ui/nn2vro7RkVjMj/r92RzSV9yIk/CQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.Commands.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.Commands.html",
-          "hash": "SQGOgAXSoWW37AHrCZ6ZBukf6QnPY9zbYM0abKvCpPU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.TestShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.TestShellCommon.html",
-          "hash": "bgmv0gMAeLHpbnjvbGOSDDI28eMltC5lVJWXg7n/XXw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TestShell.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TestShell.html",
-          "hash": "VPmKzoypCOkesoKsjdOhHIOpAWuX6whi11mQjKhPmjY="
         }
       },
       "is_incremental": false,
@@ -11637,7 +11757,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wkT783r8/YVG/x8f75GajycLcTpw9WYwbe+aFelpJT8="
+          "hash": "chx18QbMRJKbmv1l1ReJHOPhvM8R9CoQbZ+W3FV5NTY="
         }
       },
       "is_incremental": false,
@@ -14664,7 +14784,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 968,
+          "total_file_count": 978,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
