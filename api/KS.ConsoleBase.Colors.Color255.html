@@ -129,6 +129,57 @@
   </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="KS_ConsoleBase_Colors_Color255_GetConsoleMode_" data-uid="KS.ConsoleBase.Colors.Color255.GetConsoleMode*"></a>
+  <h4 id="KS_ConsoleBase_Colors_Color255_GetConsoleMode_System_IntPtr_System_Int32__" data-uid="KS.ConsoleBase.Colors.Color255.GetConsoleMode(System.IntPtr,System.Int32@)">GetConsoleMode(IntPtr, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>[Windows] Gets console mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static extern bool GetConsoleMode(IntPtr handle, ref int mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Console handle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>Mode</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if succeeded, false if failed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_ConsoleBase_Colors_Color255_GetEsc.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Colors.Color255.GetEsc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -161,6 +212,51 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="KS_ConsoleBase_Colors_Color255_GetStdHandle_" data-uid="KS.ConsoleBase.Colors.Color255.GetStdHandle*"></a>
+  <h4 id="KS_ConsoleBase_Colors_Color255_GetStdHandle_System_Int32_" data-uid="KS.ConsoleBase.Colors.Color255.GetStdHandle(System.Int32)">GetStdHandle(Int32)</h4>
+  <div class="markdown level1 summary"><p>[Windows] Gets console handle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static extern IntPtr GetStdHandle(int handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle number</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><p>True if succeeded, false if failed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_ConsoleBase_Colors_Color255_Initialize255.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Colors.Color255.Initialize255%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -177,6 +273,57 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void Initialize255()</code></pre>
   </div>
+  
+  
+  <a id="KS_ConsoleBase_Colors_Color255_SetConsoleMode_" data-uid="KS.ConsoleBase.Colors.Color255.SetConsoleMode*"></a>
+  <h4 id="KS_ConsoleBase_Colors_Color255_SetConsoleMode_System_IntPtr_System_Int32_" data-uid="KS.ConsoleBase.Colors.Color255.SetConsoleMode(System.IntPtr,System.Int32)">SetConsoleMode(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>[Windows] Sets console mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static extern bool SetConsoleMode(IntPtr hConsoleHandle, int mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">hConsoleHandle</span></td>
+        <td><p>Console Handle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>Mode</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if succeeded, false if failed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
