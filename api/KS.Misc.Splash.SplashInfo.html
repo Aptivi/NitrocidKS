@@ -100,19 +100,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Splash_SplashInfo__ctor_System_String_System_Boolean_KS_Misc_Splash_ISplash_.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.SplashInfo.%23ctor(System.String%2CSystem.Boolean%2CKS.Misc.Splash.ISplash)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Splash_SplashInfo__ctor_System_String_KS_Misc_Splash_ISplash_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.SplashInfo.%23ctor(System.String%2CKS.Misc.Splash.ISplash%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Misc/Splash/SplashInfo.vb/#L41">View Source</a>
   </span>
   <a id="KS_Misc_Splash_SplashInfo__ctor_" data-uid="KS.Misc.Splash.SplashInfo.#ctor*"></a>
-  <h4 id="KS_Misc_Splash_SplashInfo__ctor_System_String_System_Boolean_KS_Misc_Splash_ISplash_" data-uid="KS.Misc.Splash.SplashInfo.#ctor(System.String,System.Boolean,KS.Misc.Splash.ISplash)">SplashInfo(String, Boolean, ISplash)</h4>
+  <h4 id="KS_Misc_Splash_SplashInfo__ctor_System_String_KS_Misc_Splash_ISplash_System_Boolean_" data-uid="KS.Misc.Splash.SplashInfo.#ctor(System.String,KS.Misc.Splash.ISplash,System.Boolean)">SplashInfo(String, ISplash, Boolean)</h4>
   <div class="markdown level1 summary"><p>Installs a new class instance of splash info</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected SplashInfo(string SplashName, bool DisplaysProgress, ISplash EntryPoint)</code></pre>
+    <pre><code class="lang-csharp hljs">protected SplashInfo(string SplashName, ISplash EntryPoint, bool DisplaysProgress = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -131,15 +131,15 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">DisplaysProgress</span></td>
-        <td><p>Does the splash display progress?</p>
-</td>
-      </tr>
-      <tr>
         <td><a class="xref" href="KS.Misc.Splash.ISplash.html">ISplash</a></td>
         <td><span class="parametername">EntryPoint</span></td>
         <td><p>Splash entry point</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">DisplaysProgress</span></td>
+        <td><p>Does the splash display progress?</p>
 </td>
       </tr>
     </tbody>

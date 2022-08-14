@@ -30059,12 +30059,12 @@ references:
   commentId: T:KS.Misc.Splash.SplashInfo
   fullName: KS.Misc.Splash.SplashInfo
   nameWithType: SplashInfo
-- uid: KS.Misc.Splash.SplashInfo.#ctor(System.String,System.Boolean,KS.Misc.Splash.ISplash)
-  name: SplashInfo(String, Boolean, ISplash)
-  href: api/KS.Misc.Splash.SplashInfo.html#KS_Misc_Splash_SplashInfo__ctor_System_String_System_Boolean_KS_Misc_Splash_ISplash_
-  commentId: M:KS.Misc.Splash.SplashInfo.#ctor(System.String,System.Boolean,KS.Misc.Splash.ISplash)
-  fullName: KS.Misc.Splash.SplashInfo.SplashInfo(System.String, System.Boolean, KS.Misc.Splash.ISplash)
-  nameWithType: SplashInfo.SplashInfo(String, Boolean, ISplash)
+- uid: KS.Misc.Splash.SplashInfo.#ctor(System.String,KS.Misc.Splash.ISplash,System.Boolean)
+  name: SplashInfo(String, ISplash, Boolean)
+  href: api/KS.Misc.Splash.SplashInfo.html#KS_Misc_Splash_SplashInfo__ctor_System_String_KS_Misc_Splash_ISplash_System_Boolean_
+  commentId: M:KS.Misc.Splash.SplashInfo.#ctor(System.String,KS.Misc.Splash.ISplash,System.Boolean)
+  fullName: KS.Misc.Splash.SplashInfo.SplashInfo(System.String, KS.Misc.Splash.ISplash, System.Boolean)
+  nameWithType: SplashInfo.SplashInfo(String, ISplash, Boolean)
 - uid: KS.Misc.Splash.SplashInfo.#ctor*
   name: SplashInfo
   href: api/KS.Misc.Splash.SplashInfo.html#KS_Misc_Splash_SplashInfo__ctor_
