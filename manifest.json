@@ -557,42 +557,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Themes.Studio.ThemeStudio.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.ConsoleBase.Themes.Studio.ThemeStudio.html",
-          "hash": "gsPkcRc/Wu3ZVSPh32JcmcHo6F7jZTE39g6ZintPlGg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Themes.Studio.ThemeStudioTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.ConsoleBase.Themes.Studio.ThemeStudioTools.html",
-          "hash": "SyXThrA3WEHU0IoPhELGkJ0oD8fuYbhW+nSM6B0PSsg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Themes.Studio.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.ConsoleBase.Themes.Studio.html",
-          "hash": "GRnDjNco5zwJ6zGiwvhfzyszLwgUmFUuLDnk0IHKKQQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.Themes.ThemeInfo.yml",
       "output": {
         ".html": {
@@ -1853,18 +1817,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.KernelGRILOBoot.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.KernelGRILOBoot.html",
-          "hash": "oQZF/Gs56pV1hH7sVQSoGyJ27ScKC6WYcrLhJDxYRe8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.KernelTools.yml",
       "output": {
         ".html": {
@@ -1917,7 +1869,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.html",
-          "hash": "giAN4CSUZdsOPWsvW4SNdPU/kSOoFKIg96Vd6GSWI3k="
+          "hash": "wb1LCeH6TF9Q7Tk2m7Wai9Xu1w2YSEwyEL8GT3VP2WA="
         }
       },
       "is_incremental": false,
@@ -11685,7 +11637,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "15gijVVXTCFpXn2Y5VpUEXG2DhWKOO6lleKfZb0SzwM="
+          "hash": "wkT783r8/YVG/x8f75GajycLcTpw9WYwbe+aFelpJT8="
         }
       },
       "is_incremental": false,
@@ -14712,7 +14664,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 972,
+          "total_file_count": 968,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
