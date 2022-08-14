@@ -3174,32 +3174,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions
   nameWithType: ConsoleExtensions.GetFilteredPositions
-- uid: KS.ConsoleBase.ConsoleExtensions.GetTerminalEmulator
-  name: GetTerminalEmulator()
-  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_GetTerminalEmulator
-  commentId: M:KS.ConsoleBase.ConsoleExtensions.GetTerminalEmulator
-  fullName: KS.ConsoleBase.ConsoleExtensions.GetTerminalEmulator()
-  nameWithType: ConsoleExtensions.GetTerminalEmulator()
-- uid: KS.ConsoleBase.ConsoleExtensions.GetTerminalEmulator*
-  name: GetTerminalEmulator
-  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_GetTerminalEmulator_
-  commentId: Overload:KS.ConsoleBase.ConsoleExtensions.GetTerminalEmulator
-  isSpec: "True"
-  fullName: KS.ConsoleBase.ConsoleExtensions.GetTerminalEmulator
-  nameWithType: ConsoleExtensions.GetTerminalEmulator
-- uid: KS.ConsoleBase.ConsoleExtensions.GetTerminalType
-  name: GetTerminalType()
-  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_GetTerminalType
-  commentId: M:KS.ConsoleBase.ConsoleExtensions.GetTerminalType
-  fullName: KS.ConsoleBase.ConsoleExtensions.GetTerminalType()
-  nameWithType: ConsoleExtensions.GetTerminalType()
-- uid: KS.ConsoleBase.ConsoleExtensions.GetTerminalType*
-  name: GetTerminalType
-  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_GetTerminalType_
-  commentId: Overload:KS.ConsoleBase.ConsoleExtensions.GetTerminalType
-  isSpec: "True"
-  fullName: KS.ConsoleBase.ConsoleExtensions.GetTerminalType
-  nameWithType: ConsoleExtensions.GetTerminalType
 - uid: KS.ConsoleBase.ConsoleExtensions.PercentRepeat(System.Int32,System.Int32,System.Int32)
   name: PercentRepeat(Int32, Int32, Int32)
   href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_PercentRepeat_System_Int32_System_Int32_System_Int32_
@@ -18638,6 +18612,32 @@ references:
   commentId: T:KS.Misc.Platform.KernelPlatform
   fullName: KS.Misc.Platform.KernelPlatform
   nameWithType: KernelPlatform
+- uid: KS.Misc.Platform.KernelPlatform.GetTerminalEmulator
+  name: GetTerminalEmulator()
+  href: api/KS.Misc.Platform.KernelPlatform.html#KS_Misc_Platform_KernelPlatform_GetTerminalEmulator
+  commentId: M:KS.Misc.Platform.KernelPlatform.GetTerminalEmulator
+  fullName: KS.Misc.Platform.KernelPlatform.GetTerminalEmulator()
+  nameWithType: KernelPlatform.GetTerminalEmulator()
+- uid: KS.Misc.Platform.KernelPlatform.GetTerminalEmulator*
+  name: GetTerminalEmulator
+  href: api/KS.Misc.Platform.KernelPlatform.html#KS_Misc_Platform_KernelPlatform_GetTerminalEmulator_
+  commentId: Overload:KS.Misc.Platform.KernelPlatform.GetTerminalEmulator
+  isSpec: "True"
+  fullName: KS.Misc.Platform.KernelPlatform.GetTerminalEmulator
+  nameWithType: KernelPlatform.GetTerminalEmulator
+- uid: KS.Misc.Platform.KernelPlatform.GetTerminalType
+  name: GetTerminalType()
+  href: api/KS.Misc.Platform.KernelPlatform.html#KS_Misc_Platform_KernelPlatform_GetTerminalType
+  commentId: M:KS.Misc.Platform.KernelPlatform.GetTerminalType
+  fullName: KS.Misc.Platform.KernelPlatform.GetTerminalType()
+  nameWithType: KernelPlatform.GetTerminalType()
+- uid: KS.Misc.Platform.KernelPlatform.GetTerminalType*
+  name: GetTerminalType
+  href: api/KS.Misc.Platform.KernelPlatform.html#KS_Misc_Platform_KernelPlatform_GetTerminalType_
+  commentId: Overload:KS.Misc.Platform.KernelPlatform.GetTerminalType
+  isSpec: "True"
+  fullName: KS.Misc.Platform.KernelPlatform.GetTerminalType
+  nameWithType: KernelPlatform.GetTerminalType
 - uid: KS.Misc.Platform.KernelPlatform.IsOnMacOS
   name: IsOnMacOS()
   href: api/KS.Misc.Platform.KernelPlatform.html#KS_Misc_Platform_KernelPlatform_IsOnMacOS
