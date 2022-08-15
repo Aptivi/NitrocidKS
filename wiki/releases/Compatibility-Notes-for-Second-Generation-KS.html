@@ -809,6 +809,15 @@
 <p>This function is now removed as a result of recent configuration improvements.</p>
 <h5 id="graduated-configuration-to-kskernel">Graduated <code>Configuration</code> to <code>KS.Kernel</code></h5>
 <p>This configuration logic is smart enough to be graduated, since it's the core function in the kernel. It's used everywhere, including the <code>settings</code> command, which is an application that lets you adjust settings on the go.</p>
+<h5 id="graduated-findsetting-and-checksettingsvariables">Graduated <code>FindSetting</code> and <code>CheckSettingsVariables</code></h5>
+<p>These two functions are probably unrelated to the settings app, but one of them is what <code>KS.Misc.Settings.SettingsApp</code> uses, and one of them is renamed to accomodate with the graduation.</p>
+<ul>
+<li>Renamed functions:
+<ul>
+<li>CheckSettingsVariables() -&gt; CheckConfigVariables()</li>
+</ul>
+</li>
+</ul>
 </article>
           </div>
           
