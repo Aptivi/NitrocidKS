@@ -805,6 +805,8 @@
 <h5 id="moved-shell-common-folders-to-ksshellshells">Moved shell common folders to KS.Shell.Shells</h5>
 <p>This is to separate the shell code for each tool from their folders to a unified namespace, <code>KS.Shell.Shells</code>. It houses every shell for every tool. This is to make creation of built-in shells easier.</p>
 <p>This means that <code>*ShellCommon</code> modules are moved to <code>KS.Shell.Shells.*</code> and every call to that module should be redirected to that namespace. The tools, however, stays intact.</p>
+<h5 id="removed-makepermanent">Removed MakePermanent()</h5>
+<p>This function is now removed as a result of recent configuration improvements.</p>
 </article>
           </div>
           
