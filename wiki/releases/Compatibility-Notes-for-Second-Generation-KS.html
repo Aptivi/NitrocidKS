@@ -807,6 +807,8 @@
 <p>This means that <code>*ShellCommon</code> modules are moved to <code>KS.Shell.Shells.*</code> and every call to that module should be redirected to that namespace. The tools, however, stays intact.</p>
 <h5 id="removed-makepermanent">Removed MakePermanent()</h5>
 <p>This function is now removed as a result of recent configuration improvements.</p>
+<h5 id="graduated-configuration-to-kskernel">Graduated <code>Configuration</code> to <code>KS.Kernel</code></h5>
+<p>This configuration logic is smart enough to be graduated, since it's the core function in the kernel. It's used everywhere, including the <code>settings</code> command, which is an application that lets you adjust settings on the go.</p>
 </article>
           </div>
           

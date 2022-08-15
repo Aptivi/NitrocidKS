@@ -1049,6 +1049,54 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Configuration.Config.ConfigCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Configuration.Config.ConfigCategory.html",
+          "hash": "7Fp+5UWckLXyaEiCJ9PpsMMEXllyqnjpbYMaV8RCwUQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Configuration.Config.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Configuration.Config.html",
+          "hash": "SKwLrLhx3G5Ytg6VIq7LkQoPnZ/TPABvtnJ7epkUTzw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Configuration.ConfigTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Configuration.ConfigTools.html",
+          "hash": "oghJ+CcVT83edKGNyntGfqaVMRYHbWHTnH62z5SmeAU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Configuration.html",
+          "hash": "HEGD8z646qKmM16V5caRPEAfbEGA/ChoKvImtOE6l5M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Events.Events.yml",
       "output": {
         ".html": {
@@ -2482,90 +2530,6 @@
         ".html": {
           "relative_path": "api/KS.Misc.Calendar.html",
           "hash": "IKyXsjee8mFa1huI44ScUVouFMl6WG1KXle9k2+1DkI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Configuration.Config.ConfigCategory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Configuration.Config.ConfigCategory.html",
-          "hash": "Hlx9W1I2sqdgTh84/Cyk54pEkWw+Q1iumcyfP+dAx4c="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Configuration.Config.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Configuration.Config.html",
-          "hash": "gaoQhH9fkn3emcKwbOnlYjATjys5HiGoI+7xIa14GiQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Configuration.ConfigTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Configuration.ConfigTools.html",
-          "hash": "JDyh8advOWih0aSpcJLs1WlADyMe7a23iz7Hx+pudcA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Configuration.SettingsApp.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Configuration.SettingsApp.html",
-          "hash": "aJu5dGeHLUYq5FB5Jt76MRrakRtYkN7/mbmfi4RG0+g="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Configuration.SettingsKeyType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Configuration.SettingsKeyType.html",
-          "hash": "ORvkpQ0B89uSLvQqRPMfq8fGI1zvGN0+miX9t6e7oFo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Configuration.SettingsType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Configuration.SettingsType.html",
-          "hash": "9WjAlCEyd8a6vaRjS5BOH7ZpJd1XnnMJE4cOQFHLjt4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Configuration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Configuration.html",
-          "hash": "/Zl3ohhzS2eumLVL9Mt9z6KXJc/87MImTGF/Cq4fh9w="
         }
       },
       "is_incremental": false,
@@ -4282,6 +4246,54 @@
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.html",
           "hash": "MjE7963rTg9RKtTKgpKBFDyYkWnrrIACTyldsyBFOVI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Settings.SettingsApp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Settings.SettingsApp.html",
+          "hash": "7G0f7Ge98HpPXf4SK4VxDI7Jbs1pQFpsAQI6fQt6u7g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Settings.SettingsKeyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Settings.SettingsKeyType.html",
+          "hash": "n+V3/307bcId5SYtMK3u0XfrJc+9cGfsNhyARQLtcM0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Settings.SettingsType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Settings.SettingsType.html",
+          "hash": "DXdkkTrg62xVahLuirgMUesEoJ2anNRP7s6ZPQO0oVA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Settings.html",
+          "hash": "Kx2h7GyhuIwEs3WUtOKniKdPVZ6a8oxdx9nXPOlhyZ0="
         }
       },
       "is_incremental": false,
@@ -11781,7 +11793,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "uSJti87wmfV7ZYJxDQ7NK8+tyTONTpQuaTzisMjFPDU="
+          "hash": "7ntamuADaKzSBSg/qFsYYkoyTEjyLoeNP5xcv2GHWY8="
         }
       },
       "is_incremental": false,
@@ -14697,7 +14709,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Compatibility-Notes-for-Second-Generation-KS.html",
-          "hash": "IZ5iZRFbvIaEcjdSJWmpdd2FxWlCf0svHQ3nTTks0Us="
+          "hash": "HWI/0Xpwe6O1LSeBqQyuXDIVFq+BEPxFn90TW44P8JU="
         }
       },
       "is_incremental": false,
@@ -14808,7 +14820,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 980,
+          "total_file_count": 981,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
