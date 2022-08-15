@@ -2493,7 +2493,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Configuration.Config.ConfigCategory.html",
-          "hash": "svIT1sxfE7vthk6Tiq/PPo3gnzuXyUi9GFFzCxgKgfo="
+          "hash": "Hlx9W1I2sqdgTh84/Cyk54pEkWw+Q1iumcyfP+dAx4c="
         }
       },
       "is_incremental": false,
@@ -2505,7 +2505,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Configuration.Config.html",
-          "hash": "8w29lchFE/W8BN9pdHXHEcM2kBTzzv7a1Uf9l7HEm4g="
+          "hash": "JnPxgCcZ2VRlzSAVKPjN0ypOMsQXCRGbBDJQFrWH2Ko="
         }
       },
       "is_incremental": false,
@@ -3465,7 +3465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Probers.PlaceParse.html",
-          "hash": "ZG6+CSG087FWFJZVr0gyy1CjXQZzfeO3TFPaeu3lUW4="
+          "hash": "z2TXAZModWcZFnKT7gPs8oPYGbusKc2pLH72KCvDA6c="
         }
       },
       "is_incremental": false,
@@ -5505,7 +5505,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.ModManager.html",
-          "hash": "ik139uZXIvR7vT0EOc3V/6/Wpy4Exqs6iAYDwahdBKs="
+          "hash": "vPsYXEzNPiTy+KEdsOg2sh5ptti0YyPyBc9qIyC0F30="
         }
       },
       "is_incremental": false,
@@ -5705,191 +5705,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.Commands.Mail_CdCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.Commands.Mail_CdCommand.html",
-          "hash": "Ue3WARGOz5lZ/QfwotP9Vrf+VxE6y22oOlQGuKvEeAQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.Commands.Mail_ListCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.Commands.Mail_ListCommand.html",
-          "hash": "SqvcMxBwVOdpYAuJXgnGPegxNirewBLad3FGdvrDINI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.Commands.Mail_LsDirsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.Commands.Mail_LsDirsCommand.html",
-          "hash": "9V8CwFyYmS5OFc6yI3XdYb3M4Ah/FayOgNB9GGQ3FHY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.Commands.Mail_MkdirCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.Commands.Mail_MkdirCommand.html",
-          "hash": "+1KvgFzpzrHat39aU44V9RogL7zNRxUhBCK5aD2vi3s="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.Commands.Mail_MvAllCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.Commands.Mail_MvAllCommand.html",
-          "hash": "2hfh7f0I7G1ddaP4qPUCEAcrBcjy2U6woU1gATE0nws="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.Commands.Mail_MvCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.Commands.Mail_MvCommand.html",
-          "hash": "Q5/3B/mfirFOSEAsWoCqBWCA+rNkaUgD6wgh6/Fque0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.Commands.Mail_ReadCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.Commands.Mail_ReadCommand.html",
-          "hash": "7N9kQHc5NMuu8VNN4+eeCLYakkLRjy1/W8iPQKOqlrQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.Commands.Mail_ReadEncCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.Commands.Mail_ReadEncCommand.html",
-          "hash": "vmH/FbGtmxQYBl4HeatO0QJSwaro2AsE38Kd/1Q8dxw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.Commands.Mail_RenCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.Commands.Mail_RenCommand.html",
-          "hash": "AL7lFcXfnMF9FxzWoyd9WZ5BSCjPWUdzGVKXzM5MeXw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.Commands.Mail_RmAllCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.Commands.Mail_RmAllCommand.html",
-          "hash": "AaPp8LJKgzLn3zoHxCAHq6CsH18dEbdyD2zMupp65yI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.Commands.Mail_RmCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.Commands.Mail_RmCommand.html",
-          "hash": "i1F27x10E0Vjj0QyMxU3BvYpw0QIUE/WGXgCcTSXH2w="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.Commands.Mail_RmdirCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.Commands.Mail_RmdirCommand.html",
-          "hash": "fYNGMpAR0oQiFhOhsCZjU4RQHS8k6LuiALBvYX4kz8w="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.Commands.Mail_SendCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.Commands.Mail_SendCommand.html",
-          "hash": "FryjuAbuV6D8Smn0fg4OA8XMdOoua09wEo+EioBQVFM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.Commands.Mail_SendEncCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.Commands.Mail_SendEncCommand.html",
-          "hash": "ZYg5tq8e3zdmGMhj3F2YtOoPTUUTOOFUT+bDu3LC9D8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.Commands.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.Commands.html",
-          "hash": "35m+anSeD7mUqsMpxrgeiLtFyRB7pmBV38UHClZQC2I="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Network.Mail.Directory.MailDirectory.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.Mail.Directory.MailDirectory.html",
-          "hash": "UzdstwEbcPIcagXiPtLdxvCZdT6N6JcMLlznvobt9dc="
+          "hash": "GT1OEo7ebNHQ9nQ6fW3/DaHUeytCD2CjFi7K2DLHQCA="
         }
       },
       "is_incremental": false,
@@ -5901,7 +5721,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.Mail.Directory.MailManager.html",
-          "hash": "A3g77hn74mvAhOaTbb6FzXAm8aUtowDbSAhOCd1n+Bs="
+          "hash": "Nx97ie08zxvZwRw1JdZRgLPQRr74Tu9LMdtM7bXl0z0="
         }
       },
       "is_incremental": false,
@@ -5925,7 +5745,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.Mail.MailHandlers.html",
-          "hash": "+rMLI3jmu8qqujRVDaLix2s5KwFhiw9D67N2HqD1tMw="
+          "hash": "RZD+Km8kK4ip5XE/8lf4EZnVHSQyfIi/IvlhYwXNVIc="
         }
       },
       "is_incremental": false,
@@ -5950,18 +5770,6 @@
         ".html": {
           "relative_path": "api/KS.Network.Mail.MailLogin.html",
           "hash": "zQg66kWq+YS3tgh0nNmdmcDNlwX3WoWLOfQaKaMIgOM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Mail.MailShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Mail.MailShellCommon.html",
-          "hash": "xywnUYXslJoKf9Ao72kHjYT7IsWfLYe6mSH9/YvIGE4="
         }
       },
       "is_incremental": false,
@@ -5997,7 +5805,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.Mail.Transfer.MailPingers.html",
-          "hash": "6PVdrUf3JjLtOsrzSWQe9Ys5hMGj0tAgXrLZPxhvjQU="
+          "hash": "AfyFTGXGw8rihVhX4DtUzg+Gl3FxtOAaPwSf4Of3CiU="
         }
       },
       "is_incremental": false,
@@ -6009,7 +5817,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.Mail.Transfer.MailTransfer.html",
-          "hash": "oIRxHKMPBeixMi0tjwESTGON8S1K3ZlCIO8LjmNiS+A="
+          "hash": "jrby7WYnygq0xiAwoC1KeNSZMMtuPMEWVa0/EaYGCcQ="
         }
       },
       "is_incremental": false,
@@ -6021,7 +5829,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.Mail.Transfer.MailTransferProgress.html",
-          "hash": "mLBBztWdfCgH3sd/bwVeO2Pi9KJyLwK0+QybJWW39iU="
+          "hash": "BpQJ8+V5oJse+Y2yRP9thTCjl+7l4gbRPQ5et6oLw6g="
         }
       },
       "is_incremental": false,
@@ -6045,7 +5853,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.Mail.html",
-          "hash": "a8yRCkr6bJank4y00n0/uDpbj0vnUYtg+jRg27cgBGw="
+          "hash": "LMLB8goZl8tjJzJyiPoy/K4r2kjicIh1S66Ow1OakIs="
         }
       },
       "is_incremental": false,
@@ -7665,7 +7473,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Commands.MailCommand.html",
-          "hash": "5Hf2rzYa+graGpLfme1PNkwAvxRmI+g6YcwywNI1l+c="
+          "hash": "1eNg/qq16SYC1Q7UJqehJBlPVFMZS104p+cspORphqo="
         }
       },
       "is_incremental": false,
@@ -8805,7 +8613,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailDefaultPreset.html",
-          "hash": "VXI/xKa/EMiiz6eyJISNmDFlVvKlj5dnW0+rS/OAHEs="
+          "hash": "Gal1BIb+sYZOGXZxilb3K7aljueS8tPelMu3HaYNhsU="
         }
       },
       "is_incremental": false,
@@ -8817,7 +8625,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLine1Preset.html",
-          "hash": "pOM+Oa+F5SnRcd5JPRSJxx0oISYcFyGqLtYhkb8KFo4="
+          "hash": "81g0W4io3i81yeizJqxHiIrqXJyUiGFcGZlPiwftWhg="
         }
       },
       "is_incremental": false,
@@ -8829,7 +8637,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLine2Preset.html",
-          "hash": "EiG7w5fy70fbPF1i2TBii/MVBqS6C0Qtvl/F/vZ5Q6Q="
+          "hash": "74kuU8dc3jUlg+tL10J9HcsFrdJI0Hjb/6l+U9p4hc4="
         }
       },
       "is_incremental": false,
@@ -8841,7 +8649,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLine3Preset.html",
-          "hash": "ZWUlYECvmmL5WdhQRrrvbNUmyrLHpO7NehlN+FKV+ng="
+          "hash": "XPlCO9px6rshFeByF8Agb3oFpP+b7dzRMI7Qt8Ha3Is="
         }
       },
       "is_incremental": false,
@@ -8853,7 +8661,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLineBG1Preset.html",
-          "hash": "ayaXQIJgCo41rQu+Q2AUQVn81tIUmQU8dIGNdza2cE0="
+          "hash": "JBIKGHr1ss0mIaymeealuPOthe2USZwLfl+FZAkCc0A="
         }
       },
       "is_incremental": false,
@@ -8865,7 +8673,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLineBG2Preset.html",
-          "hash": "AhY2QhzQEJRgtFr3uNPmuAA8PWpgbz9yio5VA/vhW50="
+          "hash": "5VtK50V21+6VdoDALBWP8Ll20aXg/uUQzn2/o+DlBxk="
         }
       },
       "is_incremental": false,
@@ -8877,7 +8685,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLineBG3Preset.html",
-          "hash": "dK6mOihZxLg9nT/PnCgikIIKEf8eZR95OuL5+nVTgyo="
+          "hash": "zmiz2Ig9wanh2zV/rJOJbo8HBtCwLijS/zuqwgs3SuE="
         }
       },
       "is_incremental": false,
@@ -9693,7 +9501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandExecutor.html",
-          "hash": "se+snPhj13mvPjIi60sGPRaPLNPL3P0gw0tTbtYScaY="
+          "hash": "ZmFUxRXk8WpK2HQHIOmQoW7kJkVVZwNXXeTZYZqa7sg="
         }
       },
       "is_incremental": false,
@@ -10349,6 +10157,186 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_CdCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_CdCommand.html",
+          "hash": "gTmvQdUsYF8HbCR4c3zT2E/Yu7h7tVWUBaLU0y5yQHU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_ListCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_ListCommand.html",
+          "hash": "Jp9Xocg6edvRl8AuNzJa8EJa5L99/OJXEYlrR2NzulY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_LsDirsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_LsDirsCommand.html",
+          "hash": "uGyFIRp2i3f3AE7M+2Ic+VRjU9hwIm6eJVQCkjsDOrc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_MkdirCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_MkdirCommand.html",
+          "hash": "v0IhzU12dcNQwlB0xLH9EjxxNvQr8vlFd+osGFFDa90="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_MvAllCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_MvAllCommand.html",
+          "hash": "4NRzDVaTqd5nUEjMfg4A93ZtGEHKTOscwwgP6541d78="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_MvCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_MvCommand.html",
+          "hash": "xC8XAVEkv396jq9RE5fNcgVO6scsEy3icpQm1NYHtoA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_ReadCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_ReadCommand.html",
+          "hash": "WSFU+ydDVlvctgjHEUgy/X/3bbAWHKwqG90x1XZtGts="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_ReadEncCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_ReadEncCommand.html",
+          "hash": "9qdrq7yIfWRgJ7Ok2fHWoqNaJatDkHrz/RTrNf0gSlA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_RenCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_RenCommand.html",
+          "hash": "g/IAb90LanDz8+mPuhlpbmm5yrx72Q0mA08e/wM5/iM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_RmAllCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_RmAllCommand.html",
+          "hash": "vctZg4rNlG5HOYSsSKIgw5EjfyIbaCp5L3i3Av4arno="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_RmCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_RmCommand.html",
+          "hash": "bdQdYe1zirn2UgKdzEBBs1W3/YDCLWSAkGKIceBQthI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_RmdirCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_RmdirCommand.html",
+          "hash": "JnomdQExW01yqC/Bv+XzEJLY0+dlB438DERzc52dE3I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_SendCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_SendCommand.html",
+          "hash": "XLGi0/WI4U70UKKGH11BcBYk2WnNFMSQZ03YFqKi81E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_SendEncCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Commands.Mail_SendEncCommand.html",
+          "hash": "LRy9SBaoMsgTF3r6FJYRKqSAr3pe1koI8Ud9BOcnJCw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Commands.html",
+          "hash": "TAMmxjnuOmlJARYH+sQ3RCdjBMtVH8yvYv6Ou/J4sVA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.Mail.MailShell.yml",
       "output": {
         ".html": {
@@ -10361,11 +10349,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.MailShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.MailShellCommon.html",
+          "hash": "WEbLyM+tqPrKluF55OsO0nuUY9/nKP+3LaFbsx0TnWU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.Mail.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Mail.html",
-          "hash": "3282UGmJggwDz/WM6YksdF0f9yq3Cp1GY6ZLvi/Y92k="
+          "hash": "cQd+sVdEoPu/bPCvCmYLUoA03uVBTq6Rs8lKpQ6scq0="
         }
       },
       "is_incremental": false,
@@ -11757,7 +11757,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "chx18QbMRJKbmv1l1ReJHOPhvM8R9CoQbZ+W3FV5NTY="
+          "hash": "Sa5/C9EDgToPgFO+kfu5ENRvgZ1MXoZr8GnITlwhmig="
         }
       },
       "is_incremental": false,
