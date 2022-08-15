@@ -822,6 +822,8 @@
 <p>These power management functions were there in <code>KernelTools</code> since the earliest version of KS. Now, they're relocated to <code>KS.Kernel.Power</code>.</p>
 <h5 id="removed-initpaths-in-favor-of-properties">Removed <code>InitPaths</code> in favor of properties</h5>
 <p>Now, we don't have to initialize paths everytime we make an internal app that depends on Kernel Simulator's paths. The call to the function that gets the path, <code>GetKernelPath</code>, however won't be removed because it's widely used and is unaffected. This reduces the <code>NullReferenceException</code> bugs regarding paths.</p>
+<h5 id="moved-kernel-update-code-to-kernelupdates">Moved kernel update code to <code>Kernel.Updates</code></h5>
+<p>Same story as in power management.</p>
 </article>
           </div>
           

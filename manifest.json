@@ -1869,31 +1869,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.KernelTools.html",
-          "hash": "Qcp/9y2WPCTPfrgxN47ffHkImnL+SjIXAluq6Njvbxo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.KernelUpdate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.KernelUpdate.html",
-          "hash": "mO9MWE+hvVZ1ZIBxKknMOCw/k26d6ArqxyY4MFnuxa8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.KernelUpdateInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.KernelUpdateInfo.html",
-          "hash": "vvZm6+tAwQmPp6AK/VHZm48Cs+78NCUkXeDHmfioGwc="
+          "hash": "El9yofmphCt+MMAUo9g19LxCx8aja+gVRDgNHgVPFKI="
         }
       },
       "is_incremental": false,
@@ -1937,11 +1913,59 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Updates.KernelUpdate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Updates.KernelUpdate.html",
+          "hash": "Ixec2j/KUBZZbQ6KFgowcjEQ0ZeqpHn8Fnjumvcd/Kw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Updates.KernelUpdateInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Updates.KernelUpdateInfo.html",
+          "hash": "DUM8NUR5d4JvJwMcjfvHV7yTRH+43cXENDLxcJNpyAU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Updates.UpdateManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Updates.UpdateManager.html",
+          "hash": "t1MLfWvnu3ebESG4OpJm2iqcuu/Th8S5O3BIbhTaYgk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Updates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Updates.html",
+          "hash": "lLRkKFyKil6/7Rj7cIk5XnzzqZZk0BE/yNbP53knbbM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.html",
-          "hash": "mdaEZ4Ocjjc2+4laiYuMd5ArM9+zdXFmfT8MZg2LRnc="
+          "hash": "JctOFtOKM2zrxXvlUjt4t/4g/d58bXrNCMHfUVfVn88="
         }
       },
       "is_incremental": false,
@@ -11025,7 +11049,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.RetroKSCommand.html",
-          "hash": "tGUTCU8CXQ52NIjFvwbA/J+QRW1YB2dB5gbv37plf7g="
+          "hash": "0PGpb/XFq6emFXpemKmPrR1XgPQRz6xSly++GM3H/Lc="
         }
       },
       "is_incremental": false,
@@ -11817,7 +11841,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "nLLLNzF85UKxz7iWq2ZuMSjDgbnr+tbWRl21fbVEPVk="
+          "hash": "o78010J1BN8HFQ3x/Y/bavpDKuh2ETsG2FrtYxyIyYo="
         }
       },
       "is_incremental": false,
@@ -14733,7 +14757,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Compatibility-Notes-for-Second-Generation-KS.html",
-          "hash": "TJu5Rnw8J99sESbEIRritj5D1zeusDFBsPMk1cSSL8U="
+          "hash": "h+0Dwg0Xign8ubxfmFk8T1am4rBcCP1WlgTQCwWyHMs="
         }
       },
       "is_incremental": false,
@@ -14844,7 +14868,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 983,
+          "total_file_count": 985,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
