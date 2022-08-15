@@ -83,7 +83,8 @@
   
   <h1 id="KS_Shell_Shells_UESH_Commands_SettingsCommand" data-uid="KS.Shell.Shells.UESH.Commands.SettingsCommand" class="text-break">Class SettingsCommand
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Lets you change kernel settings</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -128,6 +129,25 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">class SettingsCommand : CommandExecutor, ICommand</code></pre>
   </div>
+  <h5 id="KS_Shell_Shells_UESH_Commands_SettingsCommand_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This command starts up the Settings application, which allows you to change the kernel settings available to you. It's the successor to the defunct Kernel Simulator Configuration Tool application, and is native to the kernel.
+<br>
+It starts with the list of sections to start from. Once the user selects one, they'll be greeted with various options that are configurable. When they choose one, they'll be able to change the setting there.
+<br>
+If you just want to try out a setting without saving to the configuration file, you can change a setting and exit it immediately. It only survives the current session until you decide to save the changes to the configuration file.
+<br>
+Some settings allow you to specify a string, a number, or by the usage of another API, like the ColorWheel() tool.
+<br>
+In the string or long string values, if you used the /clear value, it will blank out the value. In some settings, if you just pressed ENTER, it'll use the same value that the kernel uses at the moment.
+<br>
+We've made sure that this application is user-friendly.
+<br>
+For the screensaver and splashes, refer to the command usage below.
+<br></p>
+<table><thead><tr><th>Switches</th><th>Description</th></tr></thead><tbody><tr><td>-saver</td><td>Opens the screensaver settings</td></tr><tr><td>-splash</td><td>Opens the splash settings</td></tr></tbody></table>
+<br>
+The user must have at least the administrative privileges before they can run the below commands.
+</div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -135,7 +155,7 @@
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESH_Commands_SettingsCommand_HelpHelper.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESH.Commands.SettingsCommand.HelpHelper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/Settings.vb/#L35">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/Settings.vb/#L70">View Source</a>
   </span>
   <a id="KS_Shell_Shells_UESH_Commands_SettingsCommand_HelpHelper_" data-uid="KS.Shell.Shells.UESH.Commands.SettingsCommand.HelpHelper*"></a>
   <h4 id="KS_Shell_Shells_UESH_Commands_SettingsCommand_HelpHelper" data-uid="KS.Shell.Shells.UESH.Commands.SettingsCommand.HelpHelper">HelpHelper()</h4>
@@ -154,7 +174,7 @@
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESH_Commands_SettingsCommand_Execute_System_String_System_String___System_String___System_String___.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESH.Commands.SettingsCommand.Execute(System.String%2CSystem.String%5B%5D%2CSystem.String%5B%5D%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/Settings.vb/#L26">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/Settings.vb/#L61">View Source</a>
   </span>
   <a id="KS_Shell_Shells_UESH_Commands_SettingsCommand_Execute_" data-uid="KS.Shell.Shells.UESH.Commands.SettingsCommand.Execute*"></a>
   <h4 id="KS_Shell_Shells_UESH_Commands_SettingsCommand_Execute_System_String_System_String___System_String___System_String___" data-uid="KS.Shell.Shells.UESH.Commands.SettingsCommand.Execute(System.String,System.String[],System.String[],System.String[])">ICommand.Execute(String, String[], String[], String[])</h4>
@@ -213,7 +233,7 @@
                     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESH_Commands_SettingsCommand.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESH.Commands.SettingsCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/Settings.vb/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/Settings.vb/#L57" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

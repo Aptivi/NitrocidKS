@@ -83,7 +83,8 @@
   
   <h1 id="KS_Shell_Shells_UESH_Commands_AddUserCommand" data-uid="KS.Shell.Shells.UESH.Commands.AddUserCommand" class="text-break">Class AddUserCommand
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>You can add the user's name whenever you need, with the password if required.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -131,6 +132,13 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">class AddUserCommand : CommandExecutor, ICommand</code></pre>
   </div>
+  <h5 id="KS_Shell_Shells_UESH_Commands_AddUserCommand_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>If you need to add a person that wants to use the kernel, you can add users for them, and let them specify the password if they need. This way, adduser will only create an account and gets the permissions for the new user ready, and the new user will be a normal account for security reasons.
+<br>
+However if you need to add a person that has admin rights, you should set the permission for the user to allow admin rights. If you want to temporarily disable an account so it blocks the log-on request to that account, you should set the disabled permission to Enabled.
+<br>
+The user must have at least the administrative privileges before they can run the below commands.</p>
+</div>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
   <span class="small pull-right mobile-hide">
@@ -138,7 +146,7 @@
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESH_Commands_AddUserCommand_Execute_System_String_System_String___System_String___System_String___.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESH.Commands.AddUserCommand.Execute(System.String%2CSystem.String%5B%5D%2CSystem.String%5B%5D%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/AddUser.vb/#L24">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/AddUser.vb/#L34">View Source</a>
   </span>
   <a id="KS_Shell_Shells_UESH_Commands_AddUserCommand_Execute_" data-uid="KS.Shell.Shells.UESH.Commands.AddUserCommand.Execute*"></a>
   <h4 id="KS_Shell_Shells_UESH_Commands_AddUserCommand_Execute_System_String_System_String___System_String___System_String___" data-uid="KS.Shell.Shells.UESH.Commands.AddUserCommand.Execute(System.String,System.String[],System.String[],System.String[])">ICommand.Execute(String, String[], String[], String[])</h4>
@@ -197,7 +205,7 @@
                     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESH_Commands_AddUserCommand.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESH.Commands.AddUserCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/AddUser.vb/#L20" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/AddUser.vb/#L30" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

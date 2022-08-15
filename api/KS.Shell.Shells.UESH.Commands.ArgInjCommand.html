@@ -83,7 +83,8 @@
   
   <h1 id="KS_Shell_Shells_UESH_Commands_ArgInjCommand" data-uid="KS.Shell.Shells.UESH.Commands.ArgInjCommand" class="text-break">Class ArgInjCommand
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>You can set the arguments to launch at reboot.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -128,6 +129,13 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">class ArgInjCommand : CommandExecutor, ICommand</code></pre>
   </div>
+  <h5 id="KS_Shell_Shells_UESH_Commands_ArgInjCommand_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>If you need to reboot your kernel to run the debugger, or if you want to disable hardware probing to save time when booting, then this command is for you. It allows you to set arguments so they will be run once at each reboot.
+<br>
+You can use this command if you need to inject arguments while on the kernel. You can also separate many arguments by spaces so you don't have to run arguments one by one to conserve reboots.
+<br>
+The user must have at least the administrative privileges before they can run the below commands.</p>
+</div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -135,7 +143,7 @@
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESH_Commands_ArgInjCommand_HelpHelper.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESH.Commands.ArgInjCommand.HelpHelper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/ArgInj.vb/#L48">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/ArgInj.vb/#L58">View Source</a>
   </span>
   <a id="KS_Shell_Shells_UESH_Commands_ArgInjCommand_HelpHelper_" data-uid="KS.Shell.Shells.UESH.Commands.ArgInjCommand.HelpHelper*"></a>
   <h4 id="KS_Shell_Shells_UESH_Commands_ArgInjCommand_HelpHelper" data-uid="KS.Shell.Shells.UESH.Commands.ArgInjCommand.HelpHelper">HelpHelper()</h4>
@@ -154,7 +162,7 @@
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESH_Commands_ArgInjCommand_Execute_System_String_System_String___System_String___System_String___.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESH.Commands.ArgInjCommand.Execute(System.String%2CSystem.String%5B%5D%2CSystem.String%5B%5D%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/ArgInj.vb/#L27">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/ArgInj.vb/#L37">View Source</a>
   </span>
   <a id="KS_Shell_Shells_UESH_Commands_ArgInjCommand_Execute_" data-uid="KS.Shell.Shells.UESH.Commands.ArgInjCommand.Execute*"></a>
   <h4 id="KS_Shell_Shells_UESH_Commands_ArgInjCommand_Execute_System_String_System_String___System_String___System_String___" data-uid="KS.Shell.Shells.UESH.Commands.ArgInjCommand.Execute(System.String,System.String[],System.String[],System.String[])">ICommand.Execute(String, String[], String[], String[])</h4>
@@ -213,7 +221,7 @@
                     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESH_Commands_ArgInjCommand.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESH.Commands.ArgInjCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/ArgInj.vb/#L23" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/UESH/Commands/ArgInj.vb/#L33" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
