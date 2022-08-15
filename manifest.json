@@ -2573,155 +2573,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_AddByteCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_AddByteCommand.html",
-          "hash": "9QxrWiCiHSUw7qseU73MfLfFHhO+K2AtCYahkM/4O9E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_AddBytesCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_AddBytesCommand.html",
-          "hash": "8yPyYtaEN1vmT8EQ85p/TG2fFNPvzg8QHOVswdbN4t4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_ClearCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_ClearCommand.html",
-          "hash": "zrE2EW1XLgYMhuy/YhTxVWIH+J/gP4ufaWb8BrW6lgU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_DelByteCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_DelByteCommand.html",
-          "hash": "u9VnThgMzQSAhrmytbrSvohwp+cDzx8+rpohprQjxEk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_DelBytesCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_DelBytesCommand.html",
-          "hash": "yV3TIRIpja3Mlotwu5IQV8TalkHgNiEXfgcstDnzcM0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_ExitNoSaveCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_ExitNoSaveCommand.html",
-          "hash": "5Umi/tOSndfj7KEUetHZTfmgslG5n/5EGaYZjGUeP9M="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_PrintCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_PrintCommand.html",
-          "hash": "LxGypCsZjCuaTDpQ0VqFZ8OFXTTLzLGG3DCl9PS7BNY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_QueryByteCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_QueryByteCommand.html",
-          "hash": "PmdacDvzmr5Qn1kt+FI+7nvn97gN2bWF28Gs1uWoUVw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_ReplaceCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_ReplaceCommand.html",
-          "hash": "Ldpj9/DU8gCzeT36edLWSGoxsE9+nmtylzMoC0md5tE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_SaveCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.HexEdit.Commands.HexEdit_SaveCommand.html",
-          "hash": "rcq0BZU7EiKgPKqhxh1t1+iAdRkbZ2347qwmknjSYnI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.HexEdit.Commands.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.HexEdit.Commands.html",
-          "hash": "D9H0lpsAyZCO5fCubWx5sBYcDxRa47zHC0l8p1bxd4Q="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.HexEdit.HexEditShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.HexEdit.HexEditShellCommon.html",
-          "hash": "oQaS2J6CCXEQquNNWXDKPSzXHdWT1dHDbvgAtDsRmrs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Editors.HexEdit.HexEditTools.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Editors.HexEdit.HexEditTools.html",
-          "hash": "rwVdy8jt+vhuxoROU+TOgijqNoTvob3Ldp3Ma/rXtaY="
+          "hash": "0csSpQDDPe3uXlnxLmwd+HFEgGDIIyyyWZXm59E14ao="
         }
       },
       "is_incremental": false,
@@ -2733,103 +2589,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Editors.HexEdit.html",
-          "hash": "NKEbHGW8HrDIvRvgaPUjJWQZjZCd6jMljDNMHkiP5Lo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.JsonShell.Commands.JsonShell_AddPropertyCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.JsonShell.Commands.JsonShell_AddPropertyCommand.html",
-          "hash": "QS9Z3GBN3w0Krm+0MSuYliUcDGIpx9yZaEoBu2kQtzs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.JsonShell.Commands.JsonShell_ClearCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.JsonShell.Commands.JsonShell_ClearCommand.html",
-          "hash": "aMEuzvSP1Ons9L1zLrd1SXJAnzugyFM8WCxlvq3Tivg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.JsonShell.Commands.JsonShell_DelPropertyCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.JsonShell.Commands.JsonShell_DelPropertyCommand.html",
-          "hash": "kaFu4DvnUzFbZH4Kd6oiI3oIkzt67c1fO/QBCw9dCvE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.JsonShell.Commands.JsonShell_ExitNoSaveCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.JsonShell.Commands.JsonShell_ExitNoSaveCommand.html",
-          "hash": "VoNacj5fJHZuY2n9mod5Y9g7A1cnPwQ/GxDEdH6ujFo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.JsonShell.Commands.JsonShell_PrintCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.JsonShell.Commands.JsonShell_PrintCommand.html",
-          "hash": "0iTGTF+6sqGq7VO8j+CIMGRM/b7IRSWBoxv52qChRdI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.JsonShell.Commands.JsonShell_SaveCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.JsonShell.Commands.JsonShell_SaveCommand.html",
-          "hash": "djVnsyxKyTMzB2ikLGQNNIChpEisbbJw8IOIeOC4D9o="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.JsonShell.Commands.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.JsonShell.Commands.html",
-          "hash": "bJyLaTAXx8FzOqSaun+aWi1yQQTdzyiFTgqd58i5cVE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.JsonShell.JsonShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.JsonShell.JsonShellCommon.html",
-          "hash": "nub3fVKUNrEMmIjSEBLyeLk73E356ghp4cAVEzr9yGE="
+          "hash": "Pt/17G7JAmSo+LdY5l3yhWotovg96RAL1GhdS0PEL/0="
         }
       },
       "is_incremental": false,
@@ -2841,7 +2601,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Editors.JsonShell.JsonTools.html",
-          "hash": "x17v0ATYA0RlUB5tEWamT3n5KouymilsIkecPyI7HAc="
+          "hash": "OU6Mu7eEtZvPOD3lFcybzBFdGIzPsGdqkJuBtCczCf8="
         }
       },
       "is_incremental": false,
@@ -2853,235 +2613,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Editors.JsonShell.html",
-          "hash": "whrLwAxU3lu/9mcJmje8wzZ5oKfWIa6yCEUX62buG8M="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_AddLineCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_AddLineCommand.html",
-          "hash": "b3GamIegIBRpzBDfMl/UngA4IPcz5K3tT7jp8hqAHrI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_AddLinesCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_AddLinesCommand.html",
-          "hash": "D5RwtCDGFlm/WA9qJMIS+vIFujlNMKEMaFlI5tpXc/o="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_ClearCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_ClearCommand.html",
-          "hash": "jBkGuuc4TWyB0PDGHKEH7jouWqfmL5b7e+tsuCLp4Fo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_DelCharNumCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_DelCharNumCommand.html",
-          "hash": "gZfxRPQnhlsJIwj/Z7tF++iR5dkIe+Lo5PIiA57y33U="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_DelLineCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_DelLineCommand.html",
-          "hash": "/nvsY5+chF2YPvRKC8e+//gUAH949F+76HOVhKb0ZFU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_DelWordCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_DelWordCommand.html",
-          "hash": "pcOGKGd4vgmnVSWPDTzLk/mPcJAm24vm5N7MmEkUXOw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_EditLineCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_EditLineCommand.html",
-          "hash": "qYJWRUSiXLGzL3LzHQl6wmRd7I7MGbICgi3KGpccrT0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_ExitNoSaveCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_ExitNoSaveCommand.html",
-          "hash": "URNtaUqM4iW7u2aD7CrbjBeCuilyt53N4Li6fmcNx6E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_PrintCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_PrintCommand.html",
-          "hash": "TygAoF4o9Y60aoV2rUrgl2LKLkPaQXhacLMAOpje5ps="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_QueryCharCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_QueryCharCommand.html",
-          "hash": "2lBC/VUHMKPC38qFBnUbXm+vrE34zeZRe+imKseJz/w="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_QueryWordCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_QueryWordCommand.html",
-          "hash": "HmiEVaU1U0yDIlROCnwfGtuVK0pdhHO5Xmtt9q58Rko="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_QueryWordRegexCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_QueryWordRegexCommand.html",
-          "hash": "rFkv0S4SR1j8BOiZVeFWJsA552/CXvslWsa/Q2WmcbM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_ReplaceCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_ReplaceCommand.html",
-          "hash": "B0YpLe6CrafbA5cibrFXN1j37hRRfpn3lhpvsf7OZz4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_ReplaceInlineCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_ReplaceInlineCommand.html",
-          "hash": "sQ2bKggQBqiRKc+2GfGjQrkDPJWfpdd6Vg8JNoVAtP4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_ReplaceInlineRegexCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_ReplaceInlineRegexCommand.html",
-          "hash": "w6LpXGiEOzCG+dwLs0P0JcAiaPT1Y63gzc1z4w7diOQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_ReplaceRegexCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_ReplaceRegexCommand.html",
-          "hash": "3T/lvsifm/w7+DVcPQ9BdbzYSaEH5Ou/kHvMIDV6kIk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_SaveCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.TextEdit_SaveCommand.html",
-          "hash": "2NlLfAudQdBBtZ8U+vIu9XHJKeePNoA/+oSGuEiIr70="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.Commands.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.Commands.html",
-          "hash": "phAhBFVZWY6SHTSMsHp8FTPjZcPxOLBf1y5XuTiJ5hE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.TextEditShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.TextEditShellCommon.html",
-          "hash": "fjP0BvzB6jSOEfXqqtATh5PtVEm2X/NjLIf6mgznxd8="
+          "hash": "oGELPIlLT9pNCefx6AtceLLkr8U/7AMQsje307Y/pv0="
         }
       },
       "is_incremental": false,
@@ -3093,7 +2625,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Editors.TextEdit.TextEditTools.html",
-          "hash": "L4sPjjvHolpUWkElwFCGdz4yxzP/rRu9+UrnOrodneA="
+          "hash": "zB9yZn5au9JlwxnQEWopigwGK2udH8/fVKJnc8VWMsw="
         }
       },
       "is_incremental": false,
@@ -3105,7 +2637,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Editors.TextEdit.html",
-          "hash": "Huehoj4zj+4miMzA1ip/hKOrZ1NGfnbTjS2htEdQJsU="
+          "hash": "RTuVjWWodXgf8ZLClnmwkJGxjp0d82BkackPIVNIiMc="
         }
       },
       "is_incremental": false,
@@ -3485,95 +3017,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.RarFile.Commands.RarShell_CDirCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.RarFile.Commands.RarShell_CDirCommand.html",
-          "hash": "pBy5DWW6PxVwxkey0NQc8feexgWT8XMZtPa/dyFQJSU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.RarFile.Commands.RarShell_ChADirCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.RarFile.Commands.RarShell_ChADirCommand.html",
-          "hash": "IoxQZz71DnIxAXOOaGC13re7pqmVl3SMzL4UNLmItnI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.RarFile.Commands.RarShell_ChDirCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.RarFile.Commands.RarShell_ChDirCommand.html",
-          "hash": "MrGnm+kcxhvvxdVfTkZ+GIn9xhmKpGYZHQ4LMXJhZcI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.RarFile.Commands.RarShell_GetCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.RarFile.Commands.RarShell_GetCommand.html",
-          "hash": "yR+Z33aaccEL9eHiULn6GY3qs5xpK9yCIk0Y00J78C8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.RarFile.Commands.RarShell_ListCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.RarFile.Commands.RarShell_ListCommand.html",
-          "hash": "eufRG5gMagnzxpciQpqiDAVVl+EZPECYNduGRcX8eiY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.RarFile.Commands.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.RarFile.Commands.html",
-          "hash": "WB3JychyuB7mlS283zAkZP+m3oMl+3+dN5hq2hTAg3Q="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.RarFile.RarShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.RarFile.RarShellCommon.html",
-          "hash": "ksYfUFVxA3s1NOo1wdM4vu7UnsZVaVrFmrWOtgR77/I="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.RarFile.RarTools.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.RarFile.RarTools.html",
-          "hash": "cXvYbAdxMa/CL3EsEKiSO26xcJIYGwpX0Vx/zZs6Bo0="
+          "hash": "/NpnICXEbDYg+gH84JST+6iZSh2rnngNB3IMBcCCB2M="
         }
       },
       "is_incremental": false,
@@ -3585,7 +3033,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.RarFile.html",
-          "hash": "irWhAeHLqJwdfMrUF0blal4PF3tmq7qVnGyX0rKxh1s="
+          "hash": "FIqAJR0JjbvyG7MPe/HAnuvIYwx1rfx68uqyNSfPg7s="
         }
       },
       "is_incremental": false,
@@ -5333,107 +4781,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.ZipFile.Commands.ZipShell_CDirCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.ZipFile.Commands.ZipShell_CDirCommand.html",
-          "hash": "r9RURm6GWshcxJw9iuAFiLDpTnbXrLejKAKWMJSQmCI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.ZipFile.Commands.ZipShell_ChADirCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.ZipFile.Commands.ZipShell_ChADirCommand.html",
-          "hash": "B7ZH4kSzhqqeGU5q0fHP6v6wvQYgiwWrCAPeKYbwqUo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.ZipFile.Commands.ZipShell_ChDirCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.ZipFile.Commands.ZipShell_ChDirCommand.html",
-          "hash": "oBygq/9OhHapovHYoDzvhNlVBdlirenFY2SFfg5ans0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.ZipFile.Commands.ZipShell_GetCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.ZipFile.Commands.ZipShell_GetCommand.html",
-          "hash": "gXwWYb2rf1Libgqv9WZLfSI0+CiqLhy/Ww1miydNAQc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.ZipFile.Commands.ZipShell_ListCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.ZipFile.Commands.ZipShell_ListCommand.html",
-          "hash": "B1a9dm8gKunswOdTP3ydt0F8ry5fTk7KV9DdmQznBPs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.ZipFile.Commands.ZipShell_PackCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.ZipFile.Commands.ZipShell_PackCommand.html",
-          "hash": "epSOIpjOf5hiUiTtF+cLu8BesgARu0IRgb4jl2HgYL4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.ZipFile.Commands.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.ZipFile.Commands.html",
-          "hash": "0rScNDDWA9UPn0GeGrFphKd4ginfkwhWMhB2VS5tYKc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.ZipFile.ZipShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.ZipFile.ZipShellCommon.html",
-          "hash": "EocyrDZyuwyIqNvYD5jMS0r3kcpqIbQf4mpZ2Kjadz0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.ZipFile.ZipTools.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.ZipFile.ZipTools.html",
-          "hash": "LDNsrHsX2zKCOicCBiHP3+01ikhDgqycAWQmY3u5LxI="
+          "hash": "l4m1Jwb823v85FbOEUmzBZ2Pfrx+Rty0ucdNLxIja5w="
         }
       },
       "is_incremental": false,
@@ -5445,7 +4797,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.ZipFile.html",
-          "hash": "ss7orVzHe5U/FIl83qs1zT31dVQsobAaHLUZNZZbsHM="
+          "hash": "En1vuI4Z6wtVzBZtrd24CgZHc3+WJMXPsgJ88aK0rq4="
         }
       },
       "is_incremental": false,
@@ -5505,7 +4857,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.ModManager.html",
-          "hash": "vPsYXEzNPiTy+KEdsOg2sh5ptti0YyPyBc9qIyC0F30="
+          "hash": "shfBHHGib9KJnxTqW+6rf6fq30n9y3AkO1N20cF5qyE="
         }
       },
       "is_incremental": false,
@@ -6741,7 +6093,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Scripting.UESHVariables.html",
-          "hash": "+NSXLbOaENJVv48FJWfFZXwMee/EMD3xcv3Gu93J2c4="
+          "hash": "bpFNUoSHXgmbD2FVWVCGrWKa8BisasurU5Epzqd0zbE="
         }
       },
       "is_incremental": false,
@@ -6761,491 +6113,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.AddUserCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.AddUserCommand.html",
-          "hash": "Q6N4ABU2E1GRYaTQfSqfllaFsaRAcB+B8KaNAtFc1D0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.AliasCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.AliasCommand.html",
-          "hash": "eLXSYtTUPPNzja7VvCkdsZGW4Y1wG8GGfoC0OwdVYAg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ArgInjCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ArgInjCommand.html",
-          "hash": "Xdn4rHt2IYbbOezw5icFKSr9X4nRKqsfTCMgRz5YTMk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.BeepCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.BeepCommand.html",
-          "hash": "wJ1HXD4JEA596388hE/9WwUg+Xl2if1w3xrJvwdtiP0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.BlockDbgDevCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.BlockDbgDevCommand.html",
-          "hash": "xVVk7EGJZSo7vgfXflZ5/tBY2T1yLCkz8cUdz6JNxkc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.CalcCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.CalcCommand.html",
-          "hash": "g2FFaCLXz34wOYEYIDFkWKSQ9/v55tKwWUvFm+OdXAQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.CalendarCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.CalendarCommand.html",
-          "hash": "8mJX+A/pX/uJPEx2yPfR+Zbu2PSSI6EjbZ1D/Ktl5Ds="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.CatCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.CatCommand.html",
-          "hash": "trY8kg2Z/v9UJXksQ6Zp0A7/ugbTNdF/+7GkrW7SeOc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.CdbgLogCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.CdbgLogCommand.html",
-          "hash": "We8jn02ODTjunqUD64C2NldxKXxvrmMTvNE/fDjLjBo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ChAttrCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ChAttrCommand.html",
-          "hash": "ROdzFhMBpfSXNpm55+MD12kLtn0DL1ztX+lfJP+vzCk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ChDirCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ChDirCommand.html",
-          "hash": "BwnRsImOC8IdgDAPzu6CEDl33nbUUz/F0j5+gz+guXE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ChHostNameCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ChHostNameCommand.html",
-          "hash": "HaH6XJD/BA3wXo4GPTvPrBX4/1N+Dcd05LADcz/U2fo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ChLangCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ChLangCommand.html",
-          "hash": "X7aADKfDcqxR5cKedAjDyUKRxE6p+leE/J6q5Nuh5pE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ChMalCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ChMalCommand.html",
-          "hash": "HLwwBMOQCMB7kxrjmrHPC0QRqkcxlwz88UZiLWvqFlQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ChMotdCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ChMotdCommand.html",
-          "hash": "NoAUHifbBW/OrFIPWhTaxH5p0eRiuAl/lr+c+k2tBZ4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ChPwdCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ChPwdCommand.html",
-          "hash": "cBOzPByxollwu+9NsmDEDKwIzL8MAsuqxMKh+/AeY5U="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ChUsrNameCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ChUsrNameCommand.html",
-          "hash": "/N3E1zIUQ+sKPZAU0x7dE5NuYPqIlRfJurImnC4KJ4c="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ChoiceCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ChoiceCommand.html",
-          "hash": "Fg9sVA/1MLVRy6a4mEc9vcQnwx8rZla6rELoQoIKstI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ClearFiredEventsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ClearFiredEventsCommand.html",
-          "hash": "cJdlCEZy/JCbwRdT7Ceurp7ZQEuvKqvPllPNlc5x1lk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ClsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ClsCommand.html",
-          "hash": "DTbI4pEwOqt9TrZwypYiDV+gyQmuwdeqFl3U172NU68="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ColorHexToRgbCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ColorHexToRgbCommand.html",
-          "hash": "IA3GcxAVSPgpE2llkAdnUMMa9miOOGIhQPKYzXhNvjw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ColorHexToRgbKSCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ColorHexToRgbKSCommand.html",
-          "hash": "6RZ5w2OrJXy6VlCKTovbsrmSS29h5jDSP0kLJOZAVrQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ColorRgbToHexCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ColorRgbToHexCommand.html",
-          "hash": "C1nN9BBfRmvnF6t/2/VUtG1NTCAIf6xBVT8hPUS27rk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.CombineCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.CombineCommand.html",
-          "hash": "wGl+qmNh3KYUxmHhNcF3+Nt4H1i4US2uMIdXArchFkg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ConvertLineEndingsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ConvertLineEndingsCommand.html",
-          "hash": "PkTCYi6lVRJRP/ahO++1kgKWxPTSRNY+Fm/QfPRexmA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.CopyCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.CopyCommand.html",
-          "hash": "ElfltHKGdUm/8yEa/J0io6L+kSQ2CQVPWA+Q7SYVX4Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.DictCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.DictCommand.html",
-          "hash": "q4PiZHcAAvJ7B3LgS0Lk0hcIbPrN2Tz1NqV6DW+QkNU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.DirInfoCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.DirInfoCommand.html",
-          "hash": "K8zJhtcueJJSaifJzm/8bXKQmL8FAOogrR6424Ep6MY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.DisconnDbgDevCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.DisconnDbgDevCommand.html",
-          "hash": "eHQPTmhRQBhj89WfBdk8dsT6OtRsMeeDu/nbP7s48JQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.DismissNotifCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.DismissNotifCommand.html",
-          "hash": "QB+fTLou9C22l6sy0xMcKlwiSyN1nr2AFMHVcIKd7AI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.DismissNotifsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.DismissNotifsCommand.html",
-          "hash": "orAK/ZVyTmwQmgYY+rYOvGQrJzXB6myHwLCmrn6g1zQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.EchoCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.EchoCommand.html",
-          "hash": "HjXJtqcJ3lU+UsmpCdlhdAQAb0Twxb8RUhb5mrpwKc0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.EditCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.EditCommand.html",
-          "hash": "URcE4peCc09d6TUQh4v5JXM7TZLsluXOwndlIcJS/3M="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Commands.ExitUnifiedCommand.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Commands.ExitUnifiedCommand.html",
           "hash": "/8k/mq+RyJUtvKPNc4PzUJGjcE5VfBkvRClZeAdyqcw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.FileInfoCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.FileInfoCommand.html",
-          "hash": "ZMuaHHuR4PHQI4EKDvjrcdCmkGF1Hz4ytHrs6UjGvjk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.FindCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.FindCommand.html",
-          "hash": "Mzc3+ScacuRrIQTtLoQo7SIzw2jEJDv/qYl08LSClTY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.FiredEventsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.FiredEventsCommand.html",
-          "hash": "4HG28a84GqEB4SwWbZ0c7LmalzPIIz1jJPtqxlQzzSM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.FtpCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.FtpCommand.html",
-          "hash": "x4Fcb1PU4FOf/x4QqxYtYed84PMRswrmWRzWsrLsLCE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.GenNameCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.GenNameCommand.html",
-          "hash": "V/BGxf+eRn7YDqRzvCtTHy4SSUZNzNmfDRrxX2TFCfo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.GetTimeInfoCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.GetTimeInfoCommand.html",
-          "hash": "nknJwzuwJK9rNsvpoJl8/BRxmJ5/hL/SiYKN7C480Jg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.Get_Command.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.Get_Command.html",
-          "hash": "N+fg3e/gELtuulRKmiBHxA2S2aDgkaN5yCbZc+yWa0Q="
         }
       },
       "is_incremental": false,
@@ -7265,947 +6137,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.HexEditCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.HexEditCommand.html",
-          "hash": "jn9jmdkNaDitf+LQZNvd5+Q0AK4XYslscY9jHWVDgtY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.HttpCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.HttpCommand.html",
-          "hash": "lVMrPLbCLCKZTP1N9N400MG2i0fc7ax1v09r06hDNAs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.HwInfoCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.HwInfoCommand.html",
-          "hash": "7S8qGfZxU3HyzuKlug96iNaYlK1kr3lKkiDHqHO2V3w="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.IfCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.IfCommand.html",
-          "hash": "B9bT/cyyb1x0rpksk6icIDd4EkBfP0m0XRdb4kqKbjw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.InputCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.InputCommand.html",
-          "hash": "+j1a/XN9QO3mJb8LcPAus2/vTL5t71cZ009LcUHQmxs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.JsonBeautifyCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.JsonBeautifyCommand.html",
-          "hash": "+CIU8B6EOQvj7lQUCKhdZPx1nLiHIfj4k5tNGTvUkWw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.JsonMinifyCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.JsonMinifyCommand.html",
-          "hash": "1A+gKlS1fRrTuiITvy8z7DUE4GqyBtbniZi81v2Iafs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.JsonShellCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.JsonShellCommand.html",
-          "hash": "3+y/iWyn8Q/2w228T792qeobhVczASNOrVvbiBi7OyU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.KeyInfoCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.KeyInfoCommand.html",
-          "hash": "c9eYo5jkxoPp/iwsT/mtyS1bHa1Y4H2NAGh+rT8B1Us="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.LangManCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.LangManCommand.html",
-          "hash": "e2nAgTI7T5NYnuoGMLJ/1v0k0/NA/lCaALfp5OBA3mk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ListCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ListCommand.html",
-          "hash": "9sZMmUAEQKMPn5WDgAkpyYOIa7vOtxdiQ/FEOKgP0E0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ListUnitsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ListUnitsCommand.html",
-          "hash": "tq4PSmtFCirN6w5K8SDLIkzNWjqrva+SfbFF6zwmG5g="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.LockScreenCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.LockScreenCommand.html",
-          "hash": "dvX/7h/HrEMoDuHpdYGhj3UTanpV+N+q+R94zcxYQwY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.LogoutCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.LogoutCommand.html",
-          "hash": "5/fD/2H0xYjO0TGdjoto/ahmQ9ZuJmToglwb+VN7a3E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.LoveHateCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.LoveHateCommand.html",
-          "hash": "cTM8UBz9Ppx6roOhSvP1KWM6jGWaQjMutClJ94wTLzY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.LsDbgDevCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.LsDbgDevCommand.html",
-          "hash": "AHN8VBloIeumljO5h06tH5ey4hP5scn47BWZ5lIozwM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.LsVarsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.LsVarsCommand.html",
-          "hash": "buTFammYghejob011QG0AzxdlV58NmTFa2dBsEReLtI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.MailCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.MailCommand.html",
-          "hash": "1eNg/qq16SYC1Q7UJqehJBlPVFMZS104p+cspORphqo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.MdCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.MdCommand.html",
-          "hash": "b/vTolJoAoqGUPdRTpma+cj/edyKebn+xPF0mqQuNqU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.MeteorCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.MeteorCommand.html",
-          "hash": "HfmQUdR7PFonicDvmJxmcjvMXdsA4Gx+TQX6uc+19rE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.MkFileCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.MkFileCommand.html",
-          "hash": "eFUqotFW5JfmIcwrDv2sD8okf/O3PDdTqBotPVKPT60="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.MkThemeCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.MkThemeCommand.html",
-          "hash": "d4nVMI9g1nVZUZzEpnq3cFgxW8VYwT8N4UztYXvCSA4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ModManCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ModManCommand.html",
-          "hash": "xtDlqPeiDYan2QJpp2TU0yoxU1etZeWsTqYoVvimJRs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ModManualCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ModManualCommand.html",
-          "hash": "jSJ2XjdpdBwOotxdn/1NvimGUz4vkXSGHltYD9OGUto="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.MoveCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.MoveCommand.html",
-          "hash": "lppr1E6+y/ThfwUaeiyZe3iNxm59xRG6rsJzFqm4bkI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.NetInfoCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.NetInfoCommand.html",
-          "hash": "oWpXcZ+jA5Z6ski+LhpIhAJRZSDHuGpAkB5ZUO3/bI8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.OpenCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.OpenCommand.html",
-          "hash": "X39+sL/6SLNzfLz71wH/Foiq4/fmEp6XUa28bWZmNZg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.PermCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.PermCommand.html",
-          "hash": "h1ucEVEh0oPk57QerQANOXQnIzCgirYwKjxuyZcDwzA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.PingCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.PingCommand.html",
-          "hash": "1yoSI/W+YcEFPhd11zArCmGH8XC7AFzg+YXMSGS/RBQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.PutCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.PutCommand.html",
-          "hash": "N8B2YCAAFlN+TsZPs2VM2YRcXllFVbiiNgj0SHr9DO4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.RarShellCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.RarShellCommand.html",
-          "hash": "68h0KsDhnNyiQwnPvtL8rYm7wWvb41Ufj3zEAJEcgQY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.RdebugCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.RdebugCommand.html",
-          "hash": "KukOyOAEVDTZ995Jv0PJLK+DLs0F1Dx8EdskA9sl2qE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.RebootCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.RebootCommand.html",
-          "hash": "jTE0X+V93WGVQNh4540D+rLyHgBM/TOr8THhV+1tzGc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ReloadConfigCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ReloadConfigCommand.html",
-          "hash": "ySt9RWXbCcM6nN2lHs296urPVQh1W8rzb0t4e+3R6M8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ReloadSaverCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ReloadSaverCommand.html",
-          "hash": "w6A7j7h0KwE9kKFomtP8Hqug0p3jiS/cDuXkVnYjibA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ReportBugCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ReportBugCommand.html",
-          "hash": "Cr6XEvouMcmHc8NCHuYp9ZxN9GjL18JUK+dTCFO3PtM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.RetroKSCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.RetroKSCommand.html",
-          "hash": "pa6dcLIAb004aDPgnnFh4QLXUJc78d3KQXxTtLHRvTA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.RexecCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.RexecCommand.html",
-          "hash": "cHZ9Po7vh+UgDqHVU9NJFsrR5/JElRWTUvpiHgJjXJ8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.RmCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.RmCommand.html",
-          "hash": "ustajx5X5l0+XTBgATW4Ftc/AVFWk490Tfh2LfE93Uo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.RmUserCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.RmUserCommand.html",
-          "hash": "WzH3m2UEJ1/prFJYrboWXQ2iCHIhZsC0Lput+NMZaeA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.RssCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.RssCommand.html",
-          "hash": "1ehI7Uw7ban4mqoBaMr3vu4i6E8sfHAvMFbzHcvIjw0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SaveCurrDirCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SaveCurrDirCommand.html",
-          "hash": "xb48sPZ9tfYMqjAg/oVmC06GngLdJqKqJPkLYJQj+jg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SaveScreenCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SaveScreenCommand.html",
-          "hash": "8Pjn3nCOhtk0yf/RkLA15aahT79kdj3sB6Dyn/5hYKY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SearchCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SearchCommand.html",
-          "hash": "B+JyYuSOa+1GbUB5eDCuotE3HRSsTpSz0KhAz6XEY1g="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SearchWordCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SearchWordCommand.html",
-          "hash": "ucTdQusp8/3YP62ncUpWwjFNMXvbOwKyZGJDjmhEhho="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SelectCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SelectCommand.html",
-          "hash": "a5hpsr5pCadael61q7E+rno4e3R+9tjA0Rkw0IZTSKI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SetCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SetCommand.html",
-          "hash": "V9Caw4p26DNQeitDk6LB9RKsKNgkh+4Q/Qubp0NbWZ8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SetRangeCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SetRangeCommand.html",
-          "hash": "khK6dLyoBv1F4CB5Jns80Ex7bX20WpLEvddV/mD00eI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SetSaverCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SetSaverCommand.html",
-          "hash": "tWxJMzhm0C20XRV0dJItnYBtLgOHY0OTXQmyb2BMKsM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SetThemesCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SetThemesCommand.html",
-          "hash": "Zbl6fCTs4Esnb5uqt5qy9vb5CBeSNohlmjXzCkJK5Qw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SettingsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SettingsCommand.html",
-          "hash": "IYvR1YlDZ8UCUq7PA3fH+zaiOJjEbapkG3y43j4KohM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SftpCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SftpCommand.html",
-          "hash": "nCAUYZXHVVN14Kye0946f0Y2mF46S9wxlY+st3tIC0Q="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ShowNotifsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ShowNotifsCommand.html",
-          "hash": "QxsOhNkqURaiaINKE1iDH3/7JejcWPuBGKzXKIsU+Lc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ShowTdCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ShowTdCommand.html",
-          "hash": "GJvUKlfUEztXj/DNltlQNWbmvD+vq9c2aZUtEukTrcQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ShowTdZoneCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ShowTdZoneCommand.html",
-          "hash": "ojMO2nV1ZSVzQLZqZZtyuytK7P+Gj6AcWP4kPmwH0tA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ShutdownCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ShutdownCommand.html",
-          "hash": "AJQSfSClbelcjvCayUJHfCR4Il+6WP7SYgcUn4Xw2Ws="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SnakerCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SnakerCommand.html",
-          "hash": "I3xStO8kdVnvCInUnKfOMKSYrbiKMWSF+ocMXz2xO4I="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SolverCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SolverCommand.html",
-          "hash": "ujwTk7NntYgYUBP/RmFemzIH7k7N3QyBlAVbi8BKmlY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SpeedPressCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SpeedPressCommand.html",
-          "hash": "AJ5XX/l0V2IIV8L5D1IepT59ERi8lbkNOfksh3YstEA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SpellBeeCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SpellBeeCommand.html",
-          "hash": "CYlL0a2bBPHBSZiN74+fgHuJODoM2lnMyjxRz4Cbud8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SshcmdCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SshcmdCommand.html",
-          "hash": "CfR5BwVsAbFOQcyif7A4IkyTsmZoVcyKbFwncns0Mqc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SshellCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SshellCommand.html",
-          "hash": "R51Xb+TypGhucnX5ICHFnyUubdi5HC6pvT02sqDQnKc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.StopwatchCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.StopwatchCommand.html",
-          "hash": "HEztKc/B/rMZqJUdspqeY6IgmUqBYT6fZmaE53ROsAw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SumFileCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SumFileCommand.html",
-          "hash": "sDkUNNovSpySSWEudMG4NlZXJCyvDDSjJF97Hqhh3TI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SumFilesCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SumFilesCommand.html",
-          "hash": "znW2VB3+lwrrpECjYziOYltFdk+qW3FcZwgCsX1w4cA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.SysInfoCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.SysInfoCommand.html",
-          "hash": "aXpG6KZwFcb+oqTB6JBPuiBdbpNaCk1/GR1ejb46/RA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.TestShellCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.TestShellCommand.html",
-          "hash": "gfvzQAuKUgOGAUN4z6We0AvV30yW9/+Yu38x3OH5Zc0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.TimerCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.TimerCommand.html",
-          "hash": "PkLloT0tBPmlCU4pGXObeifkNKim80kKnOD9G0hVqNk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.UnZipCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.UnZipCommand.html",
-          "hash": "3Y4qPUVQLJ8UOcpUM9xxkvDX1Q1nkuvJSConbFK8Bj4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.UnblockDbgDevCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.UnblockDbgDevCommand.html",
-          "hash": "58eCvYlZSenjqUE7P4TpfBxNAfmAflAXyODEbxD6Eos="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.UnitConvCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.UnitConvCommand.html",
-          "hash": "79OsNdFT2xvmAW7D/BmdFoSPk+qu1y+WsTDxwyiPWGc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.UpdateCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.UpdateCommand.html",
-          "hash": "MhHq25dg97F/jjR7AtFEaV43KsqyYUQ1eS9YsBP7dUI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.UserManualCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.UserManualCommand.html",
-          "hash": "OmrsYxNW0ukBmv8QGLkWty6jyABNKXMUBzl/SaMaWzo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.VerifyCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.VerifyCommand.html",
-          "hash": "xMBirxLjU/AGiGLRr8NrBicaUWt/IDGRrrN5jCcjFck="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.WeatherCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.WeatherCommand.html",
-          "hash": "vGp5xS9KlqQkunHVf9SzGCmGKi+tgoJm7uo5Ji7UV6o="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.WrapCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.WrapCommand.html",
-          "hash": "IXP3aaZDI4eFNywEUQGskP/MwmGZPcynjRz1imEa2Gs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ZipCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ZipCommand.html",
-          "hash": "LOZGAGMlkgiqpaz9Ko9wKcsM2ZVt1H6ro47/RDj6JyE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Commands.ZipShellCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Commands.ZipShellCommand.html",
-          "hash": "snSTkp2FAfHskANUfEZsTAkBrmSDOPodMQmT+7/MPeg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Commands.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Commands.html",
-          "hash": "vWJZQ3x0+6d9xhe9UVEKdS+RlB3cWahkWQE4R9WXkwM="
+          "hash": "+9z7MZHhG0XhR/qUM9inrJF8fMLouVjFu0Sz/rEA8hQ="
         }
       },
       "is_incremental": false,
@@ -8421,7 +6357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Hex.HexDefaultPreset.html",
-          "hash": "V9NbLxw3zvYyV6zUQxf2Q4NfmuqFbqktgso3E6UxKDg="
+          "hash": "TWyVVy6TsIavD8tQ60yZ3cu4D9D7WCHR5ypWJ0XIucE="
         }
       },
       "is_incremental": false,
@@ -8517,7 +6453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonDefaultPreset.html",
-          "hash": "U25KkwrST4Egf/iBy3wDdvHzJpRIfS2T3lWsoca1aE8="
+          "hash": "PcF3zsnsRxW0SKmrfmJhTRhYFaFGV8QJZHPUOSYARFg="
         }
       },
       "is_incremental": false,
@@ -9093,7 +7029,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Text.TextDefaultPreset.html",
-          "hash": "/9sHkLSTAXj67/Z13izQiHXXMPlgYkL6/IkwJlWMNrM="
+          "hash": "n7doGk9YkSEO2XDZtnUjMocJwcbBsVTxzGZ/Xyn6Pzg="
         }
       },
       "is_incremental": false,
@@ -9417,7 +7353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shell.html",
-          "hash": "lLUey66VCrkpFZBYrP8AUwAl/fSxZFC6eSSyJsNqlLQ="
+          "hash": "9Ir26dM0xvr0Lp836xmqerrf+ZHRjNPFu9haobsxNg8="
         }
       },
       "is_incremental": false,
@@ -9501,7 +7437,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandExecutor.html",
-          "hash": "ZmFUxRXk8WpK2HQHIOmQoW7kJkVVZwNXXeTZYZqa7sg="
+          "hash": "Eg2zHtDRXcPalxnmYvWuPjm30qPsMdXqIy93acrmReI="
         }
       },
       "is_incremental": false,
@@ -9537,7 +7473,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandManager.html",
-          "hash": "koreHq7LP1aYaC9CyKaHKfM5tbkkuFrueKUxNym0vnE="
+          "hash": "YJPcOi/L42dIV56/cpSNLolnE4q3t10kTrLs3Cug9yU="
         }
       },
       "is_incremental": false,
@@ -9549,7 +7485,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.GetCommand.ExecuteCommandThreadParameters.html",
-          "hash": "ohji/b5fPhpoysa0AGZdMW28bi8nhhRzDGlnXX5jFVI="
+          "hash": "VtKkZJgm0xFXbi+GbvNF7WQZGqgoQtk/NlzjrJl7j7g="
         }
       },
       "is_incremental": false,
@@ -9561,7 +7497,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.GetCommand.html",
-          "hash": "xeNw+RbPsgorY4LVocLvoSiO5bxBm9FMch9Eu6dQD+s="
+          "hash": "1Fy1pbhv5hQTNaICwJzOcdiefWkeUagBYsK2OnLzEvU="
         }
       },
       "is_incremental": false,
@@ -10109,6 +8045,150 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_AddByteCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_AddByteCommand.html",
+          "hash": "LAss6CAzB9eB1Ogi/248atK1c6IliBkE00f7SZ3GTTY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_AddBytesCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_AddBytesCommand.html",
+          "hash": "VH0jJBkALTAnYZDfr7dae9rwbXp/EuSOD6d8UcYufwA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_ClearCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_ClearCommand.html",
+          "hash": "z/6pS1mAzIv4UfhmjDrhdJh83yLJpoH1nh0ESVXxKsM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_DelByteCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_DelByteCommand.html",
+          "hash": "iVaQGNlbDh0mZX0Mu1hJFD05giyZwfakHVKEzwbHoVg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_DelBytesCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_DelBytesCommand.html",
+          "hash": "rZt1Yivk+Ug7pX6Im/mFquxkNuj4nrvIvAD9Ox5MlWU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_ExitNoSaveCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_ExitNoSaveCommand.html",
+          "hash": "rd5cimAO0TPWkMGtRUkPV3pfw51FOAR8T4QYwMYUBUo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_PrintCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_PrintCommand.html",
+          "hash": "I+yjxrbVsySZIucmFs4oQd5536/jmVZN/VLnq2y2vG8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_QueryByteCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_QueryByteCommand.html",
+          "hash": "xOJUJscpordaxnT/toSO0bHfSu4ysCeVbbhsxWWyq/w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_ReplaceCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_ReplaceCommand.html",
+          "hash": "dmGcoGK3P3w8dgPDlt9/6mvJmBkrFKpGChXk6dMflaw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_SaveCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Hex.Commands.HexEdit_SaveCommand.html",
+          "hash": "aZsSBeBUd3Tq2jJOjrzloEbXwbalJ3Nnv6EO+4oG4tw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Hex.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Hex.Commands.html",
+          "hash": "XpbOrSqu+BrLl8TGx2YlOOc+oybdhpEI3QD3MIaY1Mg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Hex.HexEditShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Hex.HexEditShellCommon.html",
+          "hash": "JOFIbtNerj/cD5jSR199n7aVg5+hfzSHx3bbUS/u1t0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.Hex.HexShell.yml",
       "output": {
         ".html": {
@@ -10125,7 +8205,91 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Hex.html",
-          "hash": "CNx1kxHI8K5nAb91BxYvtJvu0kQs4ssy+f1QDoTk90U="
+          "hash": "zU8ITGRSxvVKBrYm9oW+qdd+tiTWPpxiLu7kfaZ7XCE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Json.Commands.JsonShell_AddPropertyCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Json.Commands.JsonShell_AddPropertyCommand.html",
+          "hash": "pTOWyeGoeq4SfRzwgttLIO4FFtpCBjbMIxTrmcT4c4M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Json.Commands.JsonShell_ClearCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Json.Commands.JsonShell_ClearCommand.html",
+          "hash": "eZwvp+RI+xegWOERIfNMYtPoCzgPp/g3KC3AvLhEjLs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Json.Commands.JsonShell_DelPropertyCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Json.Commands.JsonShell_DelPropertyCommand.html",
+          "hash": "pDjzZnnCKsWxYU5ib7h7lP4GzIf74YdomEP9Lto9wAs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Json.Commands.JsonShell_ExitNoSaveCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Json.Commands.JsonShell_ExitNoSaveCommand.html",
+          "hash": "jGf4pksPVHBwS3VgoRh7VlvdtQvE+odQTCsmE62Dboc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Json.Commands.JsonShell_PrintCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Json.Commands.JsonShell_PrintCommand.html",
+          "hash": "v5JTH32PPiFS07ScOfD9Vliq8aYlwhfA5tFdBMxcIg0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Json.Commands.JsonShell_SaveCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Json.Commands.JsonShell_SaveCommand.html",
+          "hash": "Pl392q0sQoHgmRLpwIaflbjpJP2HhG54qoyW/oZDrQE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Json.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Json.Commands.html",
+          "hash": "pL5hOFtMSXfZYgKg2rlrUyUbHN0pWy2w0YaMCc8F5vA="
         }
       },
       "is_incremental": false,
@@ -10145,11 +8309,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Json.JsonShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Json.JsonShellCommon.html",
+          "hash": "QDxQP/ORP8rYWw2uu/gTMi4oW/zZfba2ggGMAYFGP9M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.Json.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Json.html",
-          "hash": "deTRr/A5R45yL4IgnMeG3qXzh/i9CnE6LZYt0iON1yQ="
+          "hash": "OVSGdyqMpupRa/TR95S9QalcdsoNE/Py9inhg3bQ3j0="
         }
       },
       "is_incremental": false,
@@ -10529,6 +8705,78 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Rar.Commands.RarShell_CDirCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Rar.Commands.RarShell_CDirCommand.html",
+          "hash": "ZFEwvy+p7K7wjPkjsm+5fsrOUJL9dQrX35k9tvzXK3Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Rar.Commands.RarShell_ChADirCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Rar.Commands.RarShell_ChADirCommand.html",
+          "hash": "kD+L3yiBzlH7fNwpq4uLUPu34pKQAzsc6pVhF0n2iZU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Rar.Commands.RarShell_ChDirCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Rar.Commands.RarShell_ChDirCommand.html",
+          "hash": "zCd1Fs3WTyiai2ksGB8SLo9zt4yrJQQFr3s79OUygro="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Rar.Commands.RarShell_GetCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Rar.Commands.RarShell_GetCommand.html",
+          "hash": "rE1X9Xw49uxtyWutbvJNxzCpYgh3sCgGJhxe5D2y4ZM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Rar.Commands.RarShell_ListCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Rar.Commands.RarShell_ListCommand.html",
+          "hash": "2yGFb2emdaWOXlO9KtKktYKGve5i59U0DiVMcbO6Vic="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Rar.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Rar.Commands.html",
+          "hash": "21mJk7FLcZ773bfQ01K/HblycWnOE5Hn/yZ93K1gh3M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.Rar.RarShell.yml",
       "output": {
         ".html": {
@@ -10541,11 +8789,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Rar.RarShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Rar.RarShellCommon.html",
+          "hash": "O4WmKuMn4Ck+xkzaugmdQOlZIrxvGt4hfL7VPxAU3WA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.Rar.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Rar.html",
-          "hash": "PEL8DH/4qowN4GSD3BRFwOAAfPvynGRU4qq1X2Mvg34="
+          "hash": "lMCInfUBm2kxLJbek4HRYMQEhliGGPmcZ/bunpSFCAA="
         }
       },
       "is_incremental": false,
@@ -11561,6 +9821,234 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_AddLineCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_AddLineCommand.html",
+          "hash": "mM56jcihPGzD+B6+w0b7IPCX+wUWQQMRr8V0RfIEgeg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_AddLinesCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_AddLinesCommand.html",
+          "hash": "qET0TAxEoDJjhAWEW86qM7wFDxAZpug+WKYH+AYpuT8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_ClearCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_ClearCommand.html",
+          "hash": "6ktqBwNIwnEiPPKk+5irI44SMpUlmQbLUcTIyGy/IoY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_DelCharNumCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_DelCharNumCommand.html",
+          "hash": "5g1s2l7I/bjyVGwTTfPRYSjsGM6iOPKy/N8pXY8nGiU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_DelLineCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_DelLineCommand.html",
+          "hash": "fA36WZAnIsRg/C5W+Z/dFlPO2KqZ+2uaiqdIhMLeFXw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_DelWordCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_DelWordCommand.html",
+          "hash": "CSfL9wUQ4pbv12V2pFIG0PP0zYVaO70m7TixilQuR3A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_EditLineCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_EditLineCommand.html",
+          "hash": "cN133I7XB7YPntUrn2FmaNK9b7sd3C0pwfGUcYqkP/s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_ExitNoSaveCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_ExitNoSaveCommand.html",
+          "hash": "zHccT7yi29OPIdQcQMReRqCYJ2us27e25I5K8BWySsA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_PrintCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_PrintCommand.html",
+          "hash": "+2481lOXd1AIIeXDu5559EoUX/TJdNYDQ/Y7YVrc7+4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_QueryCharCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_QueryCharCommand.html",
+          "hash": "JOM4+0d8yZT7ySyOwBcHXf8IJ4U3C/jYS9CzMdPhRYk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_QueryWordCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_QueryWordCommand.html",
+          "hash": "pzDlXRJTOy2SjKc6dV6gikgg63zvbxyrdd60DHcoSbw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_QueryWordRegexCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_QueryWordRegexCommand.html",
+          "hash": "KqrJZ5kFWc/4geXLsvOIXWent51KV4g3Tgj+fG6T7hw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_ReplaceCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_ReplaceCommand.html",
+          "hash": "qK5FSxXSFRi6yBnuE0NyW1IokVSEnjCgFCN81oazNI8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_ReplaceInlineCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_ReplaceInlineCommand.html",
+          "hash": "cqUf/XxQX3b0nVAnr9+K8y+nMd05sBywD1o9KtDaiVk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_ReplaceInlineRegexCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_ReplaceInlineRegexCommand.html",
+          "hash": "S6xecUqimsew4eJbSz5UBH6XWlXvhbSbbul3kC/kjYk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_ReplaceRegexCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_ReplaceRegexCommand.html",
+          "hash": "8YtOgURJmrLvlxWHVWKWs3Cxupu3lkvatNkH/h4DT6k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_SaveCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.TextEdit_SaveCommand.html",
+          "hash": "RvCIkxQukpWe4uTM/7A02cHG8aF5wq0aVkVYbH/69io="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.Commands.html",
+          "hash": "eiuhlgsfhnkG0WXt9fgkjo3S1Pyl9RzyhUkMfOohIuI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.TextEditShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.TextEditShellCommon.html",
+          "hash": "Glsig1BOljmXL0og6Sf1j5msQgYRZfMTy5IlOBDsgk4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.Text.TextShell.yml",
       "output": {
         ".html": {
@@ -11577,7 +10065,1435 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Text.html",
-          "hash": "w4HSnBUOm4hhRTeH1wwPdHrQVZIwyRb/zIac3y9OspQ="
+          "hash": "k7adGaBALKRhEsDJSQqfqIt1p17Yy28na21IxS/EYnE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.AddUserCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.AddUserCommand.html",
+          "hash": "wowGsc1nXJ5ko7wH87EdqhPahNZuUHcPd6xh/Fg2SF4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.AliasCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.AliasCommand.html",
+          "hash": "CQsozL1iikZt7s6xRYICE0bDrG1TplR4QlzvcNEeHGs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ArgInjCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ArgInjCommand.html",
+          "hash": "f+nyj3XrbQuZs49hrrKblPgsY/RQdlFSzL/Vk83Kr/Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.BeepCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.BeepCommand.html",
+          "hash": "drSTpnk4yapxqDSUtWW8xoIxP87wobO7spe0ksJkCm4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.BlockDbgDevCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.BlockDbgDevCommand.html",
+          "hash": "4A4loWYfEpgJpLYmE6iUQa59x7GBh7L4jdGrYA+SRMw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.CalcCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.CalcCommand.html",
+          "hash": "vgBnTWkfgP4BUNR+OflCBnMPAf9nJoAOo2ND70hdk8k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.CalendarCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.CalendarCommand.html",
+          "hash": "a/eGs3S/kKeXyUH+88HC/TsHpw//vfsY6hquO0eybC0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.CatCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.CatCommand.html",
+          "hash": "eJBahK81vCsIBjbHp34czZDAsrKRhvrNCubmh4Nesc8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.CdbgLogCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.CdbgLogCommand.html",
+          "hash": "ckp0nAe+yaNuBos+EzkyJTb0crk5Maaa5CBwOXAA6qw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ChAttrCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ChAttrCommand.html",
+          "hash": "vfPgEpnFOoNqODAyVJHta8hIf/9MHk75HfoKb/T6RvY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ChDirCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ChDirCommand.html",
+          "hash": "PRIPwuRGSytpKR+loqHRGn11/FDm2yWguayFxbyEeeo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ChHostNameCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ChHostNameCommand.html",
+          "hash": "5c1wA6E5EfxF61QwDSJr3Co68I0s3j4qLqMrEVBb3+E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ChLangCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ChLangCommand.html",
+          "hash": "Lv0d/foi81uqAsHS6++4hKq+v2FNK4rQlv25QGTit7c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ChMalCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ChMalCommand.html",
+          "hash": "7e4HIdqZ307yOXib/hgmIFXrGk5OLLn0CjOKs9nOdgI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ChMotdCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ChMotdCommand.html",
+          "hash": "xWmSMhwZnCG7ELxMYnfxRgxMe1P7RLbrVTdVSHFNFOc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ChPwdCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ChPwdCommand.html",
+          "hash": "zfNh5si2vf8UXtGfylHBLlotgwe8jpffI1fAdPdDfg8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ChUsrNameCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ChUsrNameCommand.html",
+          "hash": "cRtMCCzMxbQSYFoc+QeTZkiPOuHijyVgsKrvX4cv3uU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ChoiceCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ChoiceCommand.html",
+          "hash": "+/jRs+iUl3U2Gq7iNRhWJq/bnAjznG99NSeO8WQZlew="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ClearFiredEventsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ClearFiredEventsCommand.html",
+          "hash": "LB6oIq7cF/FWVuTczvYGPHM5jb8Um+yZ+TjkyDnw1Oc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ClsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ClsCommand.html",
+          "hash": "T3EbO5o3kIj7GByw9NvVNoB1uJEZ8CqeTNtMforfApk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ColorHexToRgbCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ColorHexToRgbCommand.html",
+          "hash": "NFWQX61N+GCAqsq+4QJze3l4zqHgCUNFiEvdPXrAVag="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ColorHexToRgbKSCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ColorHexToRgbKSCommand.html",
+          "hash": "BVvoevi/62LET+dKo6OL7COH9O/j5YlWociwvfzTFiw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ColorRgbToHexCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ColorRgbToHexCommand.html",
+          "hash": "DwLtQzZ2RxH7ezPbFv4ziageRc83EMO1J5vLoXLa1yo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.CombineCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.CombineCommand.html",
+          "hash": "ZEQ9setbdDHKvI5mOA9y9GMN2dx/6sMT+A7AQu6b4ZU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ConvertLineEndingsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ConvertLineEndingsCommand.html",
+          "hash": "yo4c/I0G8dDPfklbEyu/HeB8q7Q5gsax/093U5LTeqA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.CopyCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.CopyCommand.html",
+          "hash": "x3Y1jzrvAPhKMBahmV2OxeabeMMS/CD8yWFJIsmYPqA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.DictCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.DictCommand.html",
+          "hash": "LtOZ2AdB5DxQdlo6IPsh6ibqrs67Z4s/BtA8Phfw/6Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.DirInfoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.DirInfoCommand.html",
+          "hash": "NzPMCFB6awj41g3BFaN2ZcCzcCWKJRWcLzMAUohUBSo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.DisconnDbgDevCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.DisconnDbgDevCommand.html",
+          "hash": "ealnnq85ugYcVA4sHrGofMv9OjEVK6Yo6Q/BgZUhPkw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.DismissNotifCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.DismissNotifCommand.html",
+          "hash": "dL3MMEFTM4n8jp9s0XvTa6ul2Eq6cvW3h1KZG+tj15E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.DismissNotifsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.DismissNotifsCommand.html",
+          "hash": "qBy6yqiBJLMqtj76KFvYg8kz4QZyYqGQKZGiqafc4uo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.EchoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.EchoCommand.html",
+          "hash": "B+lAFnZnOlGKCjiqd4IR0jG7pxF+zb0vRNRM8AtXOa4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.EditCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.EditCommand.html",
+          "hash": "D/ZyPh+pXwKjHUz7zlpjjje+fdYsSMt+QSgH8qe1t0g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.FileInfoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.FileInfoCommand.html",
+          "hash": "uNA//OQrMHMLH4IaPMjQxpf3ni+ZHVJLt6KgwWbwU8c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.FindCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.FindCommand.html",
+          "hash": "UcMnlIaLqVcFHao7hdfC6Gjlvn5L4Wmb1mDCz+xfCS4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.FiredEventsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.FiredEventsCommand.html",
+          "hash": "kYp1DPDHVPpkx7XknfWeL1tVtwM7Ng6BtHU/IkJLoic="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.FtpCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.FtpCommand.html",
+          "hash": "YNqvd2fDDP6ay0ubFsjdCmAxlYXM0buOBBVNs4aj/RU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.GenNameCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.GenNameCommand.html",
+          "hash": "96S777bpkiy7vydYSbqsSMg6ylvKWxYkeL9sma1gvXE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.GetTimeInfoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.GetTimeInfoCommand.html",
+          "hash": "nIkjbd6M2s0ng/PTedlX1I7J1jtkznGm3GvzEBs8rVs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.Get_Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.Get_Command.html",
+          "hash": "ZPPjon2Wn0O5ABG8A4XlMxlcn/5Ms7gXHyTfN2snkxw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.HexEditCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.HexEditCommand.html",
+          "hash": "2S8v87x4FafZyyj0hNGk9bNvg133p8U0sR090Atf4cI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.HttpCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.HttpCommand.html",
+          "hash": "N/10rI0NjFG4DdUyKBzHMYc3TQaAg0aeRHWfsKBVXFY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.HwInfoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.HwInfoCommand.html",
+          "hash": "XXMViuNksZW7nshCkje4FXsfZYYI7i7DaRf8cMIfRNw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.IfCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.IfCommand.html",
+          "hash": "LdUsDdmTJP9+fyMtvqFR1OPtdyfK/tVpjn3O1Eda9+w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.InputCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.InputCommand.html",
+          "hash": "vmQ/9UzYTN1pDTLEO2uFxe/gBrQHEiMNviMVJF+ipNM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.JsonBeautifyCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.JsonBeautifyCommand.html",
+          "hash": "NZvDEozCw0ybbMrAkDyqBSsbmGJ2i3zmvRIjwc0FpKs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.JsonMinifyCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.JsonMinifyCommand.html",
+          "hash": "g58y3NxbgyPwbCpv6sD+EoC88AH3pjBuVkaaFXiT2MU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.JsonShellCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.JsonShellCommand.html",
+          "hash": "Z17V2P904PVd5ukLODlV7eu6AH5Fme7wozoJOiwQSQQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.KeyInfoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.KeyInfoCommand.html",
+          "hash": "Ydrig/13nr/6IAo/LGQcaqTU1rCQg1EshPT2igRHJWk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.LangManCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.LangManCommand.html",
+          "hash": "nM816uBuOl6/QhyUiSgnt1o3dHmcH9uq84XiBbt5Q6M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ListCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ListCommand.html",
+          "hash": "odjD3RxhanSGClhTkEhlRiNhXx4sd/ZebdehDMe5PEI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ListUnitsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ListUnitsCommand.html",
+          "hash": "d/MMfPCiO6a7TXwEjNZFqjzIoCnY1YfUyfjFb3yauoc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.LockScreenCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.LockScreenCommand.html",
+          "hash": "zOTbTmLvQQ/p2su3IhGAdufpf9OKjY5G2h6RJ2VnqGw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.LogoutCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.LogoutCommand.html",
+          "hash": "4c56MHOrJEDgBxvzVolW/QanR/YoJ3Q+eMvVQXxL/yw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.LoveHateCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.LoveHateCommand.html",
+          "hash": "9f1IK6fVTks9ViXpN7EqMDtsj12Z+8ygtGnrHWtLV5k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.LsDbgDevCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.LsDbgDevCommand.html",
+          "hash": "2n0QUxw1PbY1Ovy7UMneXNvo/6xOnQHphcfVbyjFlr4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.LsVarsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.LsVarsCommand.html",
+          "hash": "NK8XWgJRoPgIAEBu4CM57DJhZEo23MDptjGxD+Cp7PY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.MailCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.MailCommand.html",
+          "hash": "xxI/oV7KKiNoSgv/gMOy08oPd/TY6L7I2XVVjaaKDtw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.MdCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.MdCommand.html",
+          "hash": "lKxtQ55Hxv8dMrND6kgPWt7FXq8ArxV2ivLElnkGKU0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.MeteorCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.MeteorCommand.html",
+          "hash": "isRBCsQGeGrhI6CBs2vjANpUm24V826NLBojj2/SnmQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.MkFileCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.MkFileCommand.html",
+          "hash": "Uajv7E3iOM7nMByiHPYmzTlsFTxgOSLbnASiUcG2DQs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.MkThemeCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.MkThemeCommand.html",
+          "hash": "89KIAvK2tR9PT4Z4Hde8uzC/ieZ3RUcLpJkEK5SoRGk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ModManCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ModManCommand.html",
+          "hash": "0Bx9Iof/c8BsxhHFxjpO7UYuFzOY+j5pa4Xb8vbZqd4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ModManualCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ModManualCommand.html",
+          "hash": "FDlwkKoxJPcJirPpBHTeoEzgU18jMiH5lQsfWyv1ckE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.MoveCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.MoveCommand.html",
+          "hash": "eXqnyCGZpptNqlzEUNWR1j+pvy+1fiPZL4jGK5VHtUQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.NetInfoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.NetInfoCommand.html",
+          "hash": "qeeIdzE2dyi15wnPaWz7fkLIHnhjDXaHr42uIdsUzxY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.OpenCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.OpenCommand.html",
+          "hash": "+uwQjdvjS/moorHowI0DQKaUE0x8FGPxQgDgQ7WLUNY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.PermCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.PermCommand.html",
+          "hash": "ueWIwMsN3liozHRuzpx6xoeDkpbyZbfADjnHdU5VdcU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.PingCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.PingCommand.html",
+          "hash": "4x8JdtlXqYT9p77ssGZzH9mYsqkAuBC2lS1tpni514k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.PutCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.PutCommand.html",
+          "hash": "YMEWFMxbJWFJHFr6HAXBZqZQGqf4U61JirFpGulzxbg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.RarShellCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.RarShellCommand.html",
+          "hash": "BID4mCyhqUcykIEtkrqmqhX+cQe1QSPhC6rfQmHTRcE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.RdebugCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.RdebugCommand.html",
+          "hash": "zu7yaIohfuDyJFm7AdRq3sXd0pDunKQtumO9ZjTh24o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.RebootCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.RebootCommand.html",
+          "hash": "AVJIaeMfgwi3Y2a+zlrHF4xXhDhRu5p7ttFgF8V1xtk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ReloadConfigCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ReloadConfigCommand.html",
+          "hash": "qtq5kemrGiqeshum3KbnucUZ/CNgbJ6WqCi0Jfgcshw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ReloadSaverCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ReloadSaverCommand.html",
+          "hash": "PgWeWMYMlVhGQIdgDqRckEXtDemuPgF9jA0wk3NatoA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ReportBugCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ReportBugCommand.html",
+          "hash": "DNmg4Ypw+bZeQpaaBj1Od3PMgqkEY+bYi6/1gpsHCz4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.RetroKSCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.RetroKSCommand.html",
+          "hash": "tGUTCU8CXQ52NIjFvwbA/J+QRW1YB2dB5gbv37plf7g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.RexecCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.RexecCommand.html",
+          "hash": "5G5lbWhrb5/lSkXJ2b8entiKKS6SgnKp/eDhJJSQOIg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.RmCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.RmCommand.html",
+          "hash": "JM4KsJ3Whf9JZQRFGGtSj32xRP8l6M/nwWbqZpvcPK4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.RmUserCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.RmUserCommand.html",
+          "hash": "SKaSDKM4iFnq4Wkle9+5wharHWryEydmPPflG6dsLrc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.RssCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.RssCommand.html",
+          "hash": "vUpYq9pxSewilWvj67KlcMU5X1FvgbU74Gs0JE2GR94="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SaveCurrDirCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SaveCurrDirCommand.html",
+          "hash": "XRo99dUWZKQM9r60o+qGBXW8OQPHwWzwlUZ4TT39Fjk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SaveScreenCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SaveScreenCommand.html",
+          "hash": "tFq1Jw5orZPq0nXatsufrF7mSxFW6TNVg8TdlRCou5Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SearchCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SearchCommand.html",
+          "hash": "Sy6AlbXAurMsiUcRy1szv70g6x7+i3sogaDOAzyphYQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SearchWordCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SearchWordCommand.html",
+          "hash": "vJB4eXr74XB+Mh1ZgMHgdB8PYSSU/1adYRDWST7pwUM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SelectCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SelectCommand.html",
+          "hash": "5cNAWeB+zppcYRDY88VR7YJlOpgbuUoScTzzzkmAmXQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SetCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SetCommand.html",
+          "hash": "TIIDenGv7MwtCBqvVF6FKEgC0tvqyDyy6zLXFDTEmQY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SetRangeCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SetRangeCommand.html",
+          "hash": "saLqh4cvZX3T20plQJ/Qd9Ofe5gNCWeEQQQ97zh1YBE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SetSaverCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SetSaverCommand.html",
+          "hash": "zB8emKEqVkiFH9EALk4D5gkly/s0QUv/tH9/EKJlV+8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SetThemesCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SetThemesCommand.html",
+          "hash": "EZdVl1g2HeXcRFL7S1y+xrfBCqGLn7nmR8VRTJ6NzAw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SettingsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SettingsCommand.html",
+          "hash": "+YMGC1y/yNcjEFCzwIL1KrLBgfl1Vv1iJRou70Slq3I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SftpCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SftpCommand.html",
+          "hash": "RvhvjJe/npwHXG5Qtn/9NcQNGdl88D6/MZDkM0GhJj0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ShowNotifsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ShowNotifsCommand.html",
+          "hash": "mOKJiOzK4LcZyYgKjEomJClD4ROq31CTx5G7KEVThac="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ShowTdCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ShowTdCommand.html",
+          "hash": "sFw40XtuXCojWPEQTEE/2/rDUI+OUun8IDuSkqd2ClQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ShowTdZoneCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ShowTdZoneCommand.html",
+          "hash": "jdlJPwHBQUopVhpmsQkuj0MITb1stbB+pKkHzV75gh8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ShutdownCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ShutdownCommand.html",
+          "hash": "hp6C4uDpnLqusJHNq2csQQIU9mLXwYs9Rz6WxAK63NE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SnakerCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SnakerCommand.html",
+          "hash": "kudL+fbCK/QTQepn0sMfLJDWbQjy/S47lSyXWQYeHWI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SolverCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SolverCommand.html",
+          "hash": "KRNe6Ws8gWgoOuSniuszZ3JczzcsxWwEt0Haw4wninA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SpeedPressCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SpeedPressCommand.html",
+          "hash": "exQvj3wqpkUlH0cNrotEkCvJ5XSFPrLU8nLXv/e6FXU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SpellBeeCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SpellBeeCommand.html",
+          "hash": "W0o2lM4mcjN8bLp6ibt6uA0AcpbCGNQt7vilFs9KxCc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SshcmdCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SshcmdCommand.html",
+          "hash": "gK3AjCROuM8qf8HhTDdZKhx7D9FIuNtuE6hxAwwiYQw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SshellCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SshellCommand.html",
+          "hash": "9toJcObZPH4k2TAzQbR7SMDFUuBoYJY9VofrcU29gOQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.StopwatchCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.StopwatchCommand.html",
+          "hash": "r/1gqfL8BPw/nkucCVQIQcpT4S4LpquXHOUktcJAWRw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SumFileCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SumFileCommand.html",
+          "hash": "JX2ZGeSWvs4Cne+z2qigIZfRcxf2eE5TNv8q3qqKq8s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SumFilesCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SumFilesCommand.html",
+          "hash": "1Aq4pd7LG8nAgaU1hi++gqlh6M04kWIoEhdTWPSoWf8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SysInfoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SysInfoCommand.html",
+          "hash": "n9XoqG4WkqqK3sfztQETUBmtqJ0UqOwI4KgwPLsVxsM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.TestShellCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.TestShellCommand.html",
+          "hash": "mdBBQQ5URK9rV0kcfUw/fyyPIHfG7yKQG15lAqKqYZw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.TimerCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.TimerCommand.html",
+          "hash": "CKt8jd3y9Dujbk8FyReEQrfbZ/yqsg2x/fjkSlDsVks="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.UnZipCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.UnZipCommand.html",
+          "hash": "wOP7GM4eMZ8gYDLCET4MByPRQnUmVZjIq2qDcReDq8M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.UnblockDbgDevCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.UnblockDbgDevCommand.html",
+          "hash": "NV36uRAyMHbdQB+mHbbjZo0g/GrVxruTimwHp6UYQFc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.UnitConvCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.UnitConvCommand.html",
+          "hash": "0OW7kC++lVOuakNRewKFSdECBdwM6JHxOEV7xuGOyuQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.UpdateCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.UpdateCommand.html",
+          "hash": "NbhlTZ4kMaJAi2+QIvgWnWdKz6LUZ4pbMBqxuUZxXak="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.UserManualCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.UserManualCommand.html",
+          "hash": "IaLrZfy5qLNthB2bO8jxWCs4vaNjpsI5e+cK5A1rykk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.VerifyCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.VerifyCommand.html",
+          "hash": "FSQLFIXU27OE8/u02nd3wGUcmujSfVomGIz1P0EQY+I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.WeatherCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.WeatherCommand.html",
+          "hash": "GWdq2Mub9o6HV4eiPFxstwDuRIa5+VnS3sFln0Rjzoo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.WrapCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.WrapCommand.html",
+          "hash": "Ng9GtGOcCNAKDgwJYSYIu05HRrHUYTOHGHX887zolEk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ZipCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ZipCommand.html",
+          "hash": "oQf1T9KhvPuMhhk9rv8ugnQwbqctT1MdjGP1PYV9xW8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ZipShellCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ZipShellCommand.html",
+          "hash": "rNnIQ05NOP+A8cTt1/1fvngDwfJP1yl2hjAgLfyZtwA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.html",
+          "hash": "tQfwy+BYJn9OwwXLqNF37Z0NnY12CBTrYUjNlvHZg+Y="
         }
       },
       "is_incremental": false,
@@ -11597,11 +11513,107 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.UESHShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.UESHShellCommon.html",
+          "hash": "zTWqgFiGbXdL8g8yTnB9WY/RCWd3coc5TneB9BACLbY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.html",
-          "hash": "EhEU/OsGEJYJevPfWtORWlhpBahE9UXckmk8SYNv82s="
+          "hash": "ExwlI6gFydmzpRInfYYvPdp3NRLPAI5XYM6H1wZrH2k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Zip.Commands.ZipShell_CDirCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Zip.Commands.ZipShell_CDirCommand.html",
+          "hash": "06RPCleQnZylMZzodYhdtzzMsgU3Ek1dhcJAtgp+bvU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Zip.Commands.ZipShell_ChADirCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Zip.Commands.ZipShell_ChADirCommand.html",
+          "hash": "hqdxhvVElY2EXM5EdV3uGFh3eYk+f9hTKrRkIK0shN4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Zip.Commands.ZipShell_ChDirCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Zip.Commands.ZipShell_ChDirCommand.html",
+          "hash": "Dc13d7BOPXvHn6e7AAYIHJyk+0JgENs2dT4+tAbNO7I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Zip.Commands.ZipShell_GetCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Zip.Commands.ZipShell_GetCommand.html",
+          "hash": "+6e1/OFKvsWZTJTS+cVL87YNZ5sUWENC120hqDPg0A8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Zip.Commands.ZipShell_ListCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Zip.Commands.ZipShell_ListCommand.html",
+          "hash": "noMQzqSI4monLsgxT1VpHzSdy8uJmeUgD4SiBU9puJs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Zip.Commands.ZipShell_PackCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Zip.Commands.ZipShell_PackCommand.html",
+          "hash": "iCSBONB8RsrinXTx7QGMPvmpdL+3A5hEKv9CdnOToAY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Zip.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Zip.Commands.html",
+          "hash": "ufLQMS5OmBLJQQO3ZtzpQyPfTNb9AQxJ9xpiyALDQVc="
         }
       },
       "is_incremental": false,
@@ -11621,11 +11633,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Zip.ZipShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Zip.ZipShellCommon.html",
+          "hash": "NZ2h6r2R5ivMYyIkBZHsg+1eeIg0i9mWG4HtVdS8+Z8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.Zip.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Zip.html",
-          "hash": "2lDoaRagB8i0R/MGWe0IdGBEpsTJr2q0tvbS9BfQ040="
+          "hash": "rGfFplxfYiJWz1aJPwzVA2yJ6IHPtumUSHC++nJe8qU="
         }
       },
       "is_incremental": false,
@@ -11757,7 +11781,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Sa5/C9EDgToPgFO+kfu5ENRvgZ1MXoZr8GnITlwhmig="
+          "hash": "uSJti87wmfV7ZYJxDQ7NK8+tyTONTpQuaTzisMjFPDU="
         }
       },
       "is_incremental": false,
@@ -14673,7 +14697,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Compatibility-Notes-for-Second-Generation-KS.html",
-          "hash": "AMsKVRdLd1WIztDACvf0uq1OgpVHJYGRnArmAFfO7Rs="
+          "hash": "sNIVz3RnQssiKuIbL/AwI5ZaCC1kDZmnh0GFjVCzlM0="
         }
       },
       "is_incremental": false,
@@ -14784,7 +14808,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 978,
+          "total_file_count": 980,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
