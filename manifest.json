@@ -1869,7 +1869,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.KernelTools.html",
-          "hash": "lDNn0btFUczJMZRIBbccs7xobecjim9zD78sfOvplcw="
+          "hash": "aSwQBQAXD8igLXhyNGE7EraQjrqeSVCQGf8SjG/8cpQ="
         }
       },
       "is_incremental": false,
@@ -1901,11 +1901,35 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.PowerMode.yml",
+      "source_relative_path": "api/KS.Kernel.Power.PowerManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Kernel.PowerMode.html",
-          "hash": "NLKYlYfEZ064eroZMN/Y1iRrQZi0K2tB5xJDvwHtLEc="
+          "relative_path": "api/KS.Kernel.Power.PowerManager.html",
+          "hash": "cf3tnIhNdXXkShftRBznU4ZA5yhSG5hWG2ADZrjhVSU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Power.PowerMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Power.PowerMode.html",
+          "hash": "sEHtu4GaDPhnIH0X7/08tKqC4yneGEJQ9dlPjfvkhvY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Power.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Power.html",
+          "hash": "RIW93hKoSUA+e4HnFV6cz6Yp19SQYrIGWbyBugEtRDE="
         }
       },
       "is_incremental": false,
@@ -1917,7 +1941,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.html",
-          "hash": "wb1LCeH6TF9Q7Tk2m7Wai9Xu1w2YSEwyEL8GT3VP2WA="
+          "hash": "mdaEZ4Ocjjc2+4laiYuMd5ArM9+zdXFmfT8MZg2LRnc="
         }
       },
       "is_incremental": false,
@@ -5277,7 +5301,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.RPC.RPCCommands.html",
-          "hash": "AEVZ3Ger1vfw4VFa6oHYU2P6inQn5eAsmsvmt/ikrtc="
+          "hash": "lt2AHGvTSsZF8Kh1ctyTxVmFWCwZmWYrXsSJ18HarzA="
         }
       },
       "is_incremental": false,
@@ -10953,7 +10977,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.RebootCommand.html",
-          "hash": "AVJIaeMfgwi3Y2a+zlrHF4xXhDhRu5p7ttFgF8V1xtk="
+          "hash": "mceFLSGtohQVh5isizvRjJ56kQfczb042z82arCDMSg="
         }
       },
       "is_incremental": false,
@@ -11229,7 +11253,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.ShutdownCommand.html",
-          "hash": "hp6C4uDpnLqusJHNq2csQQIU9mLXwYs9Rz6WxAK63NE="
+          "hash": "D6YjiUnTU+2/9Rq4wAcEavUBj0IuH4M1iKczAXk4SCc="
         }
       },
       "is_incremental": false,
@@ -11361,7 +11385,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.TestShellCommand.html",
-          "hash": "mdBBQQ5URK9rV0kcfUw/fyyPIHfG7yKQG15lAqKqYZw="
+          "hash": "ANVBpR+/G8xDBpgCX0KvY1DLh2XLU8VsmLo/u0V7QHs="
         }
       },
       "is_incremental": false,
@@ -11793,7 +11817,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "7ntamuADaKzSBSg/qFsYYkoyTEjyLoeNP5xcv2GHWY8="
+          "hash": "nLLLNzF85UKxz7iWq2ZuMSjDgbnr+tbWRl21fbVEPVk="
         }
       },
       "is_incremental": false,
@@ -14709,7 +14733,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Compatibility-Notes-for-Second-Generation-KS.html",
-          "hash": "1q2Rehlu1TNMO4YFbpKggDmQoIZPXDPc1BywZrZ8BAs="
+          "hash": "U5/bRZOyy/2pxN2L3admuSlgKYWObVbGr+vvzckYgEs="
         }
       },
       "is_incremental": false,
@@ -14820,7 +14844,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 981,
+          "total_file_count": 983,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
