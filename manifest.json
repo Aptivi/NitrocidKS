@@ -7497,7 +7497,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandExecutor.html",
-          "hash": "Eg2zHtDRXcPalxnmYvWuPjm30qPsMdXqIy93acrmReI="
+          "hash": "LWcASShK8uU9sf7eRCl8na7jeAK6kXLn/PYS5UcUCkk="
         }
       },
       "is_incremental": false,
@@ -11393,18 +11393,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.SysInfoCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.UESH.Commands.SysInfoCommand.html",
-          "hash": "n9XoqG4WkqqK3sfztQETUBmtqJ0UqOwI4KgwPLsVxsM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.TestShellCommand.yml",
       "output": {
         ".html": {
@@ -11553,7 +11541,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.html",
-          "hash": "tQfwy+BYJn9OwwXLqNF37Z0NnY12CBTrYUjNlvHZg+Y="
+          "hash": "8ZjMb+UsJmLDY9xIPaG4xW/9gEO7jBVfGQYtUjx7bbo="
         }
       },
       "is_incremental": false,
@@ -11841,7 +11829,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "o78010J1BN8HFQ3x/Y/bavpDKuh2ETsG2FrtYxyIyYo="
+          "hash": "2uPNaVLi31YpVO+A0O066Lmp7Snr0O0WFlX1yZVICCo="
         }
       },
       "is_incremental": false,
@@ -11961,7 +11949,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/commands/Commands-for-KS.html",
-          "hash": "AomDv6Yll0JEjHKTxHXOcfErESMVwdc026XiRammzhw="
+          "hash": "WvavDmwe+TpvBYssu9Rbj3Jfbq2E/EeoKQs2x0nk4vM="
         }
       },
       "is_incremental": false,
@@ -14309,18 +14297,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "wiki/commands/uesh/KS-Command-sysinfo.md",
-      "output": {
-        ".html": {
-          "relative_path": "wiki/commands/uesh/KS-Command-sysinfo.html",
-          "hash": "9Zo+6VfJC2L0s5DmseSBQOPbdyEsmL+ISNK2eG13v60="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "wiki/commands/uesh/KS-Command-testshell.md",
       "output": {
         ".html": {
@@ -14862,13 +14838,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 248,
+          "total_file_count": 247,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 985,
+          "total_file_count": 984,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
