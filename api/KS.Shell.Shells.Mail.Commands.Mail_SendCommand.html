@@ -83,7 +83,8 @@
   
   <h1 id="KS_Shell_Shells_Mail_Commands_Mail_SendCommand" data-uid="KS.Shell.Shells.Mail.Commands.Mail_SendCommand" class="text-break">Class Mail_SendCommand
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Sends a mail</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -131,6 +132,13 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">class Mail_SendCommand : CommandExecutor, ICommand</code></pre>
   </div>
+  <h5 id="KS_Shell_Shells_Mail_Commands_Mail_SendCommand_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This command opens to a prompt which will tell you to provide the following details:
+<br></p>
+<ul><li>Recipient mail addressThe account who will receive the mail.</li><li>SubjectThe title of the message.</li><li>BodyThe body of the message. This is where most information lies.</li><li>AttachmentsIf you want to provide attachments, enter the file name. It supports relative and absolute directories.</li></ul>
+<br>
+This command doesn&apos;t support encryption. Use sendenc for this functionality.
+</div>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
   <span class="small pull-right mobile-hide">
@@ -138,7 +146,7 @@
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_Mail_Commands_Mail_SendCommand_Execute_System_String_System_String___System_String___System_String___.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.Mail.Commands.Mail_SendCommand.Execute(System.String%2CSystem.String%5B%5D%2CSystem.String%5B%5D%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/Mail/Commands/Send.vb/#L28">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/Mail/Commands/Send.vb/#L55">View Source</a>
   </span>
   <a id="KS_Shell_Shells_Mail_Commands_Mail_SendCommand_Execute_" data-uid="KS.Shell.Shells.Mail.Commands.Mail_SendCommand.Execute*"></a>
   <h4 id="KS_Shell_Shells_Mail_Commands_Mail_SendCommand_Execute_System_String_System_String___System_String___System_String___" data-uid="KS.Shell.Shells.Mail.Commands.Mail_SendCommand.Execute(System.String,System.String[],System.String[],System.String[])">ICommand.Execute(String, String[], String[], String[])</h4>
@@ -197,7 +205,7 @@
                     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_Mail_Commands_Mail_SendCommand.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.Mail.Commands.Mail_SendCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/Mail/Commands/Send.vb/#L24" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/Shells/Mail/Commands/Send.vb/#L51" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
