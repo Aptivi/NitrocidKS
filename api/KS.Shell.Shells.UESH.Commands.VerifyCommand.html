@@ -83,7 +83,8 @@
   
   <h1 id="KS_Shell_Shells_UESH_Commands_VerifyCommand" data-uid="KS.Shell.Shells.UESH.Commands.VerifyCommand" class="text-break">Class VerifyCommand
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Verifies the file</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -107,6 +108,17 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">class VerifyCommand : CommandExecutor, ICommand</code></pre>
   </div>
+  <h5 id="KS_Shell_Shells_UESH_Commands_VerifyCommand_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>If you've previously calculated the hash sum of a file using the supported algorithms, and you have the expected hash or file that contains the hashes list, you can use this command to verify the sanity of the file.
+<br>
+It can handle three types:
+<br></p>
+<ul><li>FirstIt can verify files by comparing expected hash with the actual hash.</li><li>SecondIt can verify files by opening the hashes file that sumfiles generated and finding the hash of the file.</li><li>ThirdIt can verify files by opening the hashes file that some other tool generated and finding the hash of the file, assuming that it&apos;s in this format: <code>&lt;expected hash> &lt;file name></code></li></ul>
+<br>
+If the hashes match, that means that the file is not corrupted. However, if they don&apos;t match, the file is corrupted and must be redownloaded.
+<br>
+If you run across a hash file that verify can&apos;t parse, feel free to post an issue or make a PR.
+</div>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
   <span class="small pull-right mobile-hide">
