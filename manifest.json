@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.Colors.ColorTools.html",
-          "hash": "B3gBlb028QGaFJEljWx92d4RQ0dcUzekJFT9wCk5dtY="
+          "hash": "K+27B7qZKlqVM9Ru1FmB6vn28oQCdkNUBaCzKo+cUIw="
         }
       },
       "is_incremental": false,
@@ -11001,7 +11001,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.RebootCommand.html",
-          "hash": "rSNv/seqOOSRxDnLoBBznPqVu1XW0OgHCFG7ogt1B/0="
+          "hash": "1ux+JMN74d42t9FuwvIVUK/cqlVNsAIc7P/75Xi3v8E="
         }
       },
       "is_incremental": false,
@@ -11877,7 +11877,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Home.html",
-          "hash": "g2o5qA0RIQ5OA5pZki/xGlJpLQufA8gXat8xBRJhxjA="
+          "hash": "TEWYD7aTguMRnBMU0S/WN5prwGTX702R0mGs0kF5bwQ="
         }
       },
       "is_incremental": false,
@@ -14733,7 +14733,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Compatibility-Notes-for-Second-Generation-KS.html",
-          "hash": "h+0Dwg0Xign8ubxfmFk8T1am4rBcCP1WlgTQCwWyHMs="
+          "hash": "MiQoBPXNhz3bWy8Q2XtdPYvCN3ZUXRboE8X3d7cq7RA="
         }
       },
       "is_incremental": false,
@@ -14757,19 +14757,22 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Release-Notes-for-Second-Generation-KS.html",
-          "hash": "HpspLsRFdmk4LAJytcBf2hgG4yXU2uUPvAex36hnth4="
+          "hash": "g6BZqikFcuJKYcSueag95+hhC39XGgoJoU+pe0emRGg="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "wiki/toc.md",
       "output": {
         ".html": {
           "relative_path": "wiki/toc.html",
-          "hash": "QGAKgXn8XhdPKWcx0KV/+ft3ZAzfaIxJqYy6PoKIsY8="
+          "hash": "+ttj/7KfjxrchHBoSif/I6aajPAx5z7An3lMTU2UxXQ="
         }
       },
       "is_incremental": false,
