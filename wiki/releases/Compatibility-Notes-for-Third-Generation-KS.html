@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Breaking API changes (Third generation) | Kernel Simulator API - Aptivi </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Breaking API changes (Third generation) | Kernel Simulator API - Aptivi ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="breaking-api-changes-third-generation">Breaking API changes (Third generation)</h3>
+
+<h4 id="010-notes">0.1.0 notes</h4>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>When upgrading your mods to support 0.1.0, you must follow the compatibility notes to ensure that your mod works with 0.1.0. If you want to support both the first-generation and the second-generation KS, you must separate your mod codebase to three parts: one for the first-gen, the other for the second-gen, and the other for the third-gen. They can't coexist with each other in your KSMods directory.</p>
+</div>
+<h5 id="moved-events-to-kskernelevents">Moved events to KS.Kernel.Events</h5>
+<p>All of the event-related code files are moved to <code>KS.Kernel.Events</code> to separate these from the actual kernel code. However, because events are part of the kernel, we prefer to put it on <code>KS.Kernel</code> namespace rather than <code>KS.Misc</code>.</p>
+<h5 id="moved-platformdetector-to-kskernelkernelplatform">Moved PlatformDetector to KS.Kernel.KernelPlatform</h5>
+<p>It has come to the conclusion that <code>PlatformDetector</code> is now promoted to the Kernel namespace under the name <code>KernelPlatform</code> so you can access it under the <code>KS.Kernel</code> namespace.</p>
+<ul>
+<li>Affected classes:
+<ul>
+<li>PlatformDetector -&gt; KernelPlatform</li>
+</ul>
+</li>
+</ul>
+<h5 id="separated-the-motd-and-mal-parsers">Separated the MOTD and MAL parsers</h5>
+<p>MOTD and MAL parsers were unified since early versions of Kernel Simulator. However, it didn't occur to us that we need to separate them for a very long time. Now is the time to separate them, effectively removing <code>MessageType</code> enumeration.</p>
+<h5 id="moved-getterminal-to-kernelplatform">Moved GetTerminal* to KernelPlatform</h5>
+<p>These two functions are actually part of the terminal, and they make use of the $TERM_PROGRAM and $TERM environment variables, which are dependent on the terminal.</p>
+<p>Since these usually are undefined in Windows, we put these functions to KernelPlatform to accomodate the change as platform-dependent, but we don't actually check for Linux to execute these functions, because some terminal emulators in Windows actually define these variables.</p>
+<h5 id="moved-shell-common-folders-to-ksshellshells">Moved shell common folders to KS.Shell.Shells</h5>
+<p>This is to separate the shell code for each tool from their folders to a unified namespace, <code>KS.Shell.Shells</code>. It houses every shell for every tool. This is to make creation of built-in shells easier.</p>
+<p>This means that <code>*ShellCommon</code> modules are moved to <code>KS.Shell.Shells.*</code> and every call to that module should be redirected to that namespace. The tools, however, stays intact.</p>
+<h5 id="removed-makepermanent">Removed MakePermanent()</h5>
+<p>This function is now removed as a result of recent configuration improvements.</p>
+<h5 id="graduated-configuration-to-kskernel">Graduated <code>Configuration</code> to <code>KS.Kernel</code></h5>
+<p>This configuration logic is smart enough to be graduated, since it's the core function in the kernel. It's used everywhere, including the <code>settings</code> command, which is an application that lets you adjust settings on the go.</p>
+<h5 id="graduated-findsetting-and-checksettingsvariables">Graduated <code>FindSetting</code> and <code>CheckSettingsVariables</code></h5>
+<p>These two functions are probably unrelated to the settings app, but one of them is what <code>KS.Misc.Settings.SettingsApp</code> uses, and one of them is renamed to accomodate with the graduation.</p>
+<ul>
+<li>Renamed functions:
+<ul>
+<li>CheckSettingsVariables() -&gt; CheckConfigVariables()</li>
+</ul>
+</li>
+</ul>
+<h5 id="moved-power-management-functions-to-kskernelpower">Moved power management functions to <code>KS.Kernel.Power</code></h5>
+<p>These power management functions were there in <code>KernelTools</code> since the earliest version of KS. Now, they're relocated to <code>KS.Kernel.Power</code>.</p>
+<h5 id="removed-initpaths-in-favor-of-properties">Removed <code>InitPaths</code> in favor of properties</h5>
+<p>Now, we don't have to initialize paths everytime we make an internal app that depends on Kernel Simulator's paths. The call to the function that gets the path, <code>GetKernelPath</code>, however won't be removed because it's widely used and is unaffected. This reduces the <code>NullReferenceException</code> bugs regarding paths.</p>
+<h5 id="moved-kernel-update-code-to-kernelupdates">Moved kernel update code to <code>Kernel.Updates</code></h5>
+<p>Same story as in power management.</p>
+<h5 id="removed-listargs-from-icommand-and-iargument">Removed <code>ListArgs()</code> from <code>ICommand</code> and <code>IArgument</code></h5>
+<p>It seems that <code>ListArgs()</code> is now no longer a reliable way to check for arguments, as it could be <code>null</code> when no argument is provided. While it contains a collection of switches and arguments, it's sequential. We have separated between switches and arguments as demonstrated in both the <code>ListArgsOnly()</code> and <code>ListSwitchesOnly()</code> arrays.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/DocGen/wiki/releases/Compatibility-Notes-for-Third-Generation-KS.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
