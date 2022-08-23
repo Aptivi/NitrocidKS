@@ -126,6 +126,8 @@
 <p>It seems that <code>ListArgs()</code> is now no longer a reliable way to check for arguments, as it could be <code>null</code> when no argument is provided. While it contains a collection of switches and arguments, it's sequential. We have separated between switches and arguments as demonstrated in both the <code>ListArgsOnly()</code> and <code>ListSwitchesOnly()</code> arrays.</p>
 <h5 id="moved-getesc-to-misctextcharmanager">Moved <code>GetEsc()</code> to <code>Misc.Text.CharManager</code></h5>
 <p><code>GetEsc()</code> is now widely used for color manipulation, but we need to move it to a better place as migration to <code>ColorSeq</code> is done. We have deleted <code>Color255</code> from <code>KS.ConsoleBase</code> as a result of this migration.</p>
+<h5 id="removed-fullargumentlist">Removed FullArgumentList</h5>
+<p>Following the removal of <code>ListArgs()</code>, we can safely remove this property.</p>
 </article>
           </div>
           
