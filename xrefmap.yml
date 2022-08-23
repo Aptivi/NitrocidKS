@@ -1229,12 +1229,12 @@ references:
   commentId: M:KS.ConsoleBase.Colors.ColorTools.SetConsoleColor(KS.ConsoleBase.Colors.ColorTools.ColTypes)
   fullName: KS.ConsoleBase.Colors.ColorTools.SetConsoleColor(KS.ConsoleBase.Colors.ColorTools.ColTypes)
   nameWithType: ColorTools.SetConsoleColor(ColorTools.ColTypes)
-- uid: KS.ConsoleBase.Colors.ColorTools.SetConsoleColor(KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean)
-  name: SetConsoleColor(ColorTools.ColTypes, Boolean)
-  href: api/KS.ConsoleBase.Colors.ColorTools.html#KS_ConsoleBase_Colors_ColorTools_SetConsoleColor_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_Boolean_
-  commentId: M:KS.ConsoleBase.Colors.ColorTools.SetConsoleColor(KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean)
-  fullName: KS.ConsoleBase.Colors.ColorTools.SetConsoleColor(KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Boolean)
-  nameWithType: ColorTools.SetConsoleColor(ColorTools.ColTypes, Boolean)
+- uid: KS.ConsoleBase.Colors.ColorTools.SetConsoleColor(KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean,System.Boolean)
+  name: SetConsoleColor(ColorTools.ColTypes, Boolean, Boolean)
+  href: api/KS.ConsoleBase.Colors.ColorTools.html#KS_ConsoleBase_Colors_ColorTools_SetConsoleColor_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_Boolean_System_Boolean_
+  commentId: M:KS.ConsoleBase.Colors.ColorTools.SetConsoleColor(KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean,System.Boolean)
+  fullName: KS.ConsoleBase.Colors.ColorTools.SetConsoleColor(KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Boolean, System.Boolean)
+  nameWithType: ColorTools.SetConsoleColor(ColorTools.ColTypes, Boolean, Boolean)
 - uid: KS.ConsoleBase.Colors.ColorTools.SetConsoleColor*
   name: SetConsoleColor
   href: api/KS.ConsoleBase.Colors.ColorTools.html#KS_ConsoleBase_Colors_ColorTools_SetConsoleColor_
