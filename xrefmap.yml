@@ -21083,30 +21083,12 @@ references:
   commentId: F:KS.Misc.Screensaver.Displays.BeatFaderDisplay.BeatFaderSettingsInstance
   fullName: KS.Misc.Screensaver.Displays.BeatFaderDisplay.BeatFaderSettingsInstance
   nameWithType: BeatFaderDisplay.BeatFaderSettingsInstance
-- uid: KS.Misc.Screensaver.Displays.BeatFaderDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.BeatFaderDisplay.html#KS_Misc_Screensaver_Displays_BeatFaderDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.BeatFaderDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.BeatFaderDisplay.CurrentWindowHeight
-  nameWithType: BeatFaderDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.BeatFaderDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.BeatFaderDisplay.html#KS_Misc_Screensaver_Displays_BeatFaderDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.BeatFaderDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.BeatFaderDisplay.CurrentWindowWidth
-  nameWithType: BeatFaderDisplay.CurrentWindowWidth
 - uid: KS.Misc.Screensaver.Displays.BeatFaderDisplay.RandomDriver
   name: RandomDriver
   href: api/KS.Misc.Screensaver.Displays.BeatFaderDisplay.html#KS_Misc_Screensaver_Displays_BeatFaderDisplay_RandomDriver
   commentId: F:KS.Misc.Screensaver.Displays.BeatFaderDisplay.RandomDriver
   fullName: KS.Misc.Screensaver.Displays.BeatFaderDisplay.RandomDriver
   nameWithType: BeatFaderDisplay.RandomDriver
-- uid: KS.Misc.Screensaver.Displays.BeatFaderDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.BeatFaderDisplay.html#KS_Misc_Screensaver_Displays_BeatFaderDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.BeatFaderDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.BeatFaderDisplay.ResizeSyncing
-  nameWithType: BeatFaderDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.BeatFaderDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.BeatFaderDisplay.html#KS_Misc_Screensaver_Displays_BeatFaderDisplay_ScreensaverLogic
@@ -24086,18 +24068,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.FaderBackDisplay
   fullName: KS.Misc.Screensaver.Displays.FaderBackDisplay
   nameWithType: FaderBackDisplay
-- uid: KS.Misc.Screensaver.Displays.FaderBackDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.FaderBackDisplay.html#KS_Misc_Screensaver_Displays_FaderBackDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.FaderBackDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.FaderBackDisplay.CurrentWindowHeight
-  nameWithType: FaderBackDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.FaderBackDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.FaderBackDisplay.html#KS_Misc_Screensaver_Displays_FaderBackDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.FaderBackDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.FaderBackDisplay.CurrentWindowWidth
-  nameWithType: FaderBackDisplay.CurrentWindowWidth
 - uid: KS.Misc.Screensaver.Displays.FaderBackDisplay.FaderBackSettingsInstance
   name: FaderBackSettingsInstance
   href: api/KS.Misc.Screensaver.Displays.FaderBackDisplay.html#KS_Misc_Screensaver_Displays_FaderBackDisplay_FaderBackSettingsInstance
@@ -24110,12 +24080,6 @@ references:
   commentId: F:KS.Misc.Screensaver.Displays.FaderBackDisplay.RandomDriver
   fullName: KS.Misc.Screensaver.Displays.FaderBackDisplay.RandomDriver
   nameWithType: FaderBackDisplay.RandomDriver
-- uid: KS.Misc.Screensaver.Displays.FaderBackDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.FaderBackDisplay.html#KS_Misc_Screensaver_Displays_FaderBackDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.FaderBackDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.FaderBackDisplay.ResizeSyncing
-  nameWithType: FaderBackDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.FaderBackDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.FaderBackDisplay.html#KS_Misc_Screensaver_Displays_FaderBackDisplay_ScreensaverLogic
@@ -24351,18 +24315,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.FaderDisplay
   fullName: KS.Misc.Screensaver.Displays.FaderDisplay
   nameWithType: FaderDisplay
-- uid: KS.Misc.Screensaver.Displays.FaderDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.FaderDisplay.html#KS_Misc_Screensaver_Displays_FaderDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.FaderDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.FaderDisplay.CurrentWindowHeight
-  nameWithType: FaderDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.FaderDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.FaderDisplay.html#KS_Misc_Screensaver_Displays_FaderDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.FaderDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.FaderDisplay.CurrentWindowWidth
-  nameWithType: FaderDisplay.CurrentWindowWidth
 - uid: KS.Misc.Screensaver.Displays.FaderDisplay.FaderSettingsInstance
   name: FaderSettingsInstance
   href: api/KS.Misc.Screensaver.Displays.FaderDisplay.html#KS_Misc_Screensaver_Displays_FaderDisplay_FaderSettingsInstance
@@ -24375,12 +24327,6 @@ references:
   commentId: F:KS.Misc.Screensaver.Displays.FaderDisplay.RandomDriver
   fullName: KS.Misc.Screensaver.Displays.FaderDisplay.RandomDriver
   nameWithType: FaderDisplay.RandomDriver
-- uid: KS.Misc.Screensaver.Displays.FaderDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.FaderDisplay.html#KS_Misc_Screensaver_Displays_FaderDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.FaderDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.FaderDisplay.ResizeSyncing
-  nameWithType: FaderDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.FaderDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.FaderDisplay.html#KS_Misc_Screensaver_Displays_FaderDisplay_ScreensaverLogic
