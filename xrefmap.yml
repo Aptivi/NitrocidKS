@@ -54620,6 +54620,28 @@ references:
   isSpec: "True"
   fullName: KS.Shell.Shells.Test.Commands.Test_TestDictWriterStrCommand.Execute
   nameWithType: Test_TestDictWriterStrCommand.Execute
+- uid: KS.Shell.Shells.Test.Commands.Test_TestEventCommand
+  name: Test_TestEventCommand
+  href: api/KS.Shell.Shells.Test.Commands.Test_TestEventCommand.html
+  commentId: T:KS.Shell.Shells.Test.Commands.Test_TestEventCommand
+  fullName: KS.Shell.Shells.Test.Commands.Test_TestEventCommand
+  nameWithType: Test_TestEventCommand
+- uid: KS.Shell.Shells.Test.Commands.Test_TestEventCommand.Execute(System.String,System.String[],System.String[])
+  name: Execute(String, String[], String[])
+  href: api/KS.Shell.Shells.Test.Commands.Test_TestEventCommand.html#KS_Shell_Shells_Test_Commands_Test_TestEventCommand_Execute_System_String_System_String___System_String___
+  commentId: M:KS.Shell.Shells.Test.Commands.Test_TestEventCommand.Execute(System.String,System.String[],System.String[])
+  name.vb: Execute(String, String(), String())
+  fullName: KS.Shell.Shells.Test.Commands.Test_TestEventCommand.Execute(System.String, System.String[], System.String[])
+  fullName.vb: KS.Shell.Shells.Test.Commands.Test_TestEventCommand.Execute(System.String, System.String(), System.String())
+  nameWithType: Test_TestEventCommand.Execute(String, String[], String[])
+  nameWithType.vb: Test_TestEventCommand.Execute(String, String(), String())
+- uid: KS.Shell.Shells.Test.Commands.Test_TestEventCommand.Execute*
+  name: Execute
+  href: api/KS.Shell.Shells.Test.Commands.Test_TestEventCommand.html#KS_Shell_Shells_Test_Commands_Test_TestEventCommand_Execute_
+  commentId: Overload:KS.Shell.Shells.Test.Commands.Test_TestEventCommand.Execute
+  isSpec: "True"
+  fullName: KS.Shell.Shells.Test.Commands.Test_TestEventCommand.Execute
+  nameWithType: Test_TestEventCommand.Execute
 - uid: KS.Shell.Shells.Test.Commands.Test_TestExecuteAsmCommand
   name: Test_TestExecuteAsmCommand
   href: api/KS.Shell.Shells.Test.Commands.Test_TestExecuteAsmCommand.html
