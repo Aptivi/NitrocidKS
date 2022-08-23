@@ -4797,7 +4797,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.BaseScreensaver.html",
-          "hash": "oeDBYXsUsQwbKyBhC6uoYOx7OE/cmLVgH6M8cg0Zsow="
+          "hash": "1Ta8s3Q16F1jMyKWCLYnucojp0fi9EhKiYGSga7F/Ho="
         }
       },
       "is_incremental": false,
@@ -5393,6 +5393,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.GradientRotDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.GradientRotDisplay.html",
+          "hash": "kvCLoHUwtg9whKCmakM0aTPOSslRs6TYEoUu1q5xmFI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.GradientRotSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.GradientRotSettings.html",
+          "hash": "WzVnOAzVl8Y3oQ9B4V3aJLB5d9WDEN+MKTH+SoiNFDo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.Displays.IndeterminateDisplay.IndeterminateDirection.yml",
       "output": {
         ".html": {
@@ -5901,7 +5925,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.html",
-          "hash": "DzthkX4eeMpeGzPh+5h1RJ7BFsskbKf8VwDT0aZxt8I="
+          "hash": "f1AjfnxIlZSnTtSv5sII3X/0JbQCVl9xr04RCNBcZrM="
         }
       },
       "is_incremental": false,
@@ -5925,7 +5949,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Screensaver.html",
-          "hash": "UrydRae6tQT4UwIO17Af2hWJAfFxzI0fmCGFdfzWL6g="
+          "hash": "uhQ8IkD/C68d/CpRcGgtBS9iJlNpBpDV7axgQY25C/A="
         }
       },
       "is_incremental": false,
@@ -13485,7 +13509,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Lo20Eb+MEjjKcu3fTQZz6UTY8XAJVKs+CuTXSd8Aj3Q="
+          "hash": "YSXMXpcm95VuI87fZtl81uSevydddEbAh7aVWdqAmB0="
         }
       },
       "is_incremental": false,
@@ -16524,7 +16548,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1122,
+          "total_file_count": 1124,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
