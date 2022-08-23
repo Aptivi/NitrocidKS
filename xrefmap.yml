@@ -34335,6 +34335,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.SplashManager.CurrentSplashInfo
   nameWithType: SplashManager.CurrentSplashInfo
+- uid: KS.Misc.Splash.SplashManager.GetNamesOfSplashes
+  name: GetNamesOfSplashes()
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_GetNamesOfSplashes
+  commentId: M:KS.Misc.Splash.SplashManager.GetNamesOfSplashes
+  fullName: KS.Misc.Splash.SplashManager.GetNamesOfSplashes()
+  nameWithType: SplashManager.GetNamesOfSplashes()
+- uid: KS.Misc.Splash.SplashManager.GetNamesOfSplashes*
+  name: GetNamesOfSplashes
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_GetNamesOfSplashes_
+  commentId: Overload:KS.Misc.Splash.SplashManager.GetNamesOfSplashes
+  isSpec: "True"
+  fullName: KS.Misc.Splash.SplashManager.GetNamesOfSplashes
+  nameWithType: SplashManager.GetNamesOfSplashes
 - uid: KS.Misc.Splash.SplashManager.GetSplashInstance(System.Reflection.Assembly)
   name: GetSplashInstance(Assembly)
   href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_GetSplashInstance_System_Reflection_Assembly_
