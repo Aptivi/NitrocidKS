@@ -2012,7 +2012,7 @@
   "api/KS.Misc.Screensaver.Customized.CustomSaverParser.html": {
     "href": "api/KS.Misc.Screensaver.Customized.CustomSaverParser.html",
     "title": "Class CustomSaverParser | Kernel Simulator API - Aptivi",
-    "keywords": "Class CustomSaverParser Inheritance System.Object CustomSaverParser Namespace : KS.Misc.Screensaver.Customized Assembly : Kernel Simulator.dll Syntax public static class CustomSaverParser Methods | Improve this Doc View Source ParseCustomSaver(String) Compiles the custom screensaver file and configures it so it can be viewed Declaration public static void ParseCustomSaver(string file) Parameters Type Name Description System.String file File name with .ss.vb"
+    "keywords": "Class CustomSaverParser Inheritance System.Object CustomSaverParser Namespace : KS.Misc.Screensaver.Customized Assembly : Kernel Simulator.dll Syntax public static class CustomSaverParser Methods | Improve this Doc View Source ParseCustomSaver(String) Compiles the custom screensaver file and configures it so it can be viewed Declaration public static void ParseCustomSaver(string file) Parameters Type Name Description System.String file File name with .dll"
   },
   "api/KS.Misc.Screensaver.Customized.CustomSaverTools.html": {
     "href": "api/KS.Misc.Screensaver.Customized.CustomSaverTools.html",
