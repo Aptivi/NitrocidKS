@@ -13521,7 +13521,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.TimeDate.TimeDate.FormatType.html",
-          "hash": "3tIbgZdJCZve33IKvfpJQYCLxDnT4De+mXnFyAtaPhk="
+          "hash": "XBvA29r6S01Ubz6dyRPgOrPyhto6V7/OgdheA+EsTHY="
         }
       },
       "is_incremental": false,
@@ -13533,7 +13533,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.TimeDate.TimeDate.html",
-          "hash": "MM/eR8KJXvz77G/a0fcxFXIGMtCt31wl+i8rOXuVc3M="
+          "hash": "vPkpn09lptfEkpehQYC/MeBnVtumaMvIXYzkAZG6Iqw="
         }
       },
       "is_incremental": false,
@@ -13577,6 +13577,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.TimeDate.TimeDateTopRight.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.TimeDate.TimeDateTopRight.html",
+          "hash": "8Mvf6fyKOF9AmIjDenqHzMnuU0BMR6DI38DpRmTJdrA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.TimeDate.TimeZones.yml",
       "output": {
         ".html": {
@@ -13593,7 +13605,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.TimeDate.html",
-          "hash": "j2dtgvVsRPXqV3Qyjrt+yE27rHiXEKozw+0i8wpg96o="
+          "hash": "4daR48TPQvO3EoUPn2diEl02LyYRGXRlYkWz+qB0HfU="
         }
       },
       "is_incremental": false,
@@ -13629,7 +13641,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "SjMdx83ae9P1nqsXiUU98jpUOX6Empd5+i4drq9gI20="
+          "hash": "dz/OCZ1GtI7TsV4XuAy0yLil+slyBxdw4h1TbiCVnME="
         }
       },
       "is_incremental": false,
@@ -16668,7 +16680,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1134,
+          "total_file_count": 1135,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
