@@ -6629,11 +6629,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html",
+          "hash": "C7yMyU4DD34wlYlltS37nHyXS8oNLIelV+qtAkiB5Ws="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html",
+          "hash": "OEInq23XGfPlCX2kghjvSxW6jDZR2ywDSqp2M4bR7XA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Writers.WriterBase.PlainWriters.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.WriterBase.PlainWriters.html",
-          "hash": "ueUvFThnggXmMNZSh3kOfjuBomdByVGILOJRGdGcIg8="
+          "hash": "iD09FRz98QjsoeXSIFh8RZ57332Ay8CaBs0SZpNyqjw="
         }
       },
       "is_incremental": false,
@@ -6645,7 +6669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.WriterBase.WriterPlainManager.html",
-          "hash": "njoML9YSFpRzTvGpza2G+3ncjuuhtxif0UNh76AWV5w="
+          "hash": "slVhdQ5f//VkDWlvyjgJEIdP9qM1EYnJpWWxtmmXA78="
         }
       },
       "is_incremental": false,
@@ -9213,7 +9237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shell.html",
-          "hash": "JwxCzuwWZRCvObmD0Q/NnDlLU1t2AJ5uaH03audP9H0="
+          "hash": "va5jQ1//MukscKH3dFbBfbb4AmJPGjPTtHX4/Ldrx+4="
         }
       },
       "is_incremental": false,
@@ -9261,7 +9285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.CancellationHandlers.html",
-          "hash": "0Pnd68ehuODix0OApLAv+I1EC0NDZHvhRh0d7R9Mrfo="
+          "hash": "myFfmbnjMwGOWsovZzSfkvP1QHNnXKmONyvICTvl56Y="
         }
       },
       "is_incremental": false,
@@ -13716,7 +13740,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "fDopxurycqNbN9DkV6LVWQTiYlb/ChhdNAQ8hpKlDSc="
+          "hash": "+64PNTIX03Up+Zb00u0hiDZah2cOeeYK0pAlhlDWIuY="
         }
       },
       "is_incremental": false,
@@ -16755,7 +16779,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1141,
+          "total_file_count": 1143,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
