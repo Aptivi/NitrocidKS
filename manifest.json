@@ -413,6 +413,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.ConsoleWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.ConsoleWrapper.html",
+          "hash": "tP3lJCZd3OwG69Y6td/zPCRqzQ1muyA+6MkuvQ5DakM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.Inputs.Input.yml",
       "output": {
         ".html": {
@@ -549,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.html",
-          "hash": "Kk9sflu4jwmrx251Ekh5z7g8cOIMn0Az5+pc93rdIUI="
+          "hash": "LdgFF3TBXalE2xGO8dd35Ns4csSZdixGB7123DI3Zts="
         }
       },
       "is_incremental": false,
@@ -5601,7 +5613,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.MarqueeSettings.html",
-          "hash": "i+ylf6w6CR5O/Qdw9jWpbVeoTHuCqr2asnndL2qYZPQ="
+          "hash": "GsUZ71+Gm6F/DAsNSxINnliPSDR9KbgVeu0Z5HhNWKg="
         }
       },
       "is_incremental": false,
@@ -13617,7 +13629,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "B6DzDXRdG0DdfHmK/UNKlGVO4l3NHFkvmggjIDNv/Tg="
+          "hash": "SjMdx83ae9P1nqsXiUU98jpUOX6Empd5+i4drq9gI20="
         }
       },
       "is_incremental": false,
@@ -16656,7 +16668,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1133,
+          "total_file_count": 1134,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
