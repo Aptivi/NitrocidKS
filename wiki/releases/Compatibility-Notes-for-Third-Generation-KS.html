@@ -130,6 +130,17 @@
 <p>Following the removal of <code>ListArgs()</code>, we can safely remove this property.</p>
 <h5 id="removed-consolewriterswriteplain-in-favor-of-the-plain-writers">Removed <code>ConsoleWriters.*.Write*Plain</code> in favor of the plain writers</h5>
 <p>The plain writer interfaces feel like they're a great addition to control the console writers.</p>
+<h5 id="updated-debug-and-notifications-namespaces">Updated debug and notifications namespaces</h5>
+<p>We felt that moving debug-related functions to <code>KS.Kernel</code> would be more convenient, so we moved these functions to it. Also, we've renamed the notifications namespace.</p>
+<ul>
+<li>Affected namespaces:
+<ul>
+<li><code>KS.Misc.Writers.DebugWriters</code> -&gt; <code>KS.Debugging</code></li>
+<li><code>KS.Network.RemoteDebug</code> -&gt; <code>KS.Debugging.RemoteDebug</code></li>
+<li><code>KS.Misc.Notifiers</code> -&gt; <code>KS.Misc.Notifications</code></li>
+</ul>
+</li>
+</ul>
 </article>
           </div>
           

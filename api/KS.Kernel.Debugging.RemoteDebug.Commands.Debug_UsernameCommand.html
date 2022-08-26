@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ExitUnifiedCommand
+    <title>Class Debug_UsernameCommand
    | Kernel Simulator API - Aptivi </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ExitUnifiedCommand
+    <meta name="title" content="Class Debug_UsernameCommand
    | Kernel Simulator API - Aptivi ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -78,55 +78,56 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="KS.Shell.Commands.ExitUnifiedCommand">
+            <article class="content wrap" id="_content" data-uid="KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand">
   
   
-  <h1 id="KS_Shell_Commands_ExitUnifiedCommand" data-uid="KS.Shell.Commands.ExitUnifiedCommand" class="text-break">Class ExitUnifiedCommand
+  <h1 id="KS_Kernel_Debugging_RemoteDebug_Commands_Debug_UsernameCommand" data-uid="KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand" class="text-break">Class Debug_UsernameCommand
   </h1>
-  <div class="markdown level0 summary"><p>Exits the subshell</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="KS.Shell.ShellBase.Commands.CommandExecutor.html">CommandExecutor</a></div>
-    <div class="level2"><span class="xref">ExitUnifiedCommand</span></div>
+    <div class="level2"><a class="xref" href="KS.Kernel.Debugging.RemoteDebug.Interface.RemoteDebugCommandExecutor.html">RemoteDebugCommandExecutor</a></div>
+    <div class="level3"><span class="xref">Debug_UsernameCommand</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="KS.Shell.ShellBase.Commands.ICommand.html">ICommand</a></div>
+    <div><a class="xref" href="KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.html">IRemoteDebugCommand</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <a class="xref" href="KS.Shell.ShellBase.Commands.CommandExecutor.html#KS_Shell_ShellBase_Commands_CommandExecutor_Execute_System_String_System_String___System_String___">CommandExecutor.Execute(String, String[], String[])</a>
+    </div>
+    <div>
       <a class="xref" href="KS.Shell.ShellBase.Commands.CommandExecutor.html#KS_Shell_ShellBase_Commands_CommandExecutor_HelpHelper">CommandExecutor.HelpHelper()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Shell.Commands.html">KS.Shell.Commands</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Kernel.Debugging.RemoteDebug.Commands.html">KS.Kernel.Debugging.RemoteDebug.Commands</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
-  <h5 id="KS_Shell_Commands_ExitUnifiedCommand_syntax">Syntax</h5>
+  <h5 id="KS_Kernel_Debugging_RemoteDebug_Commands_Debug_UsernameCommand_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">class ExitUnifiedCommand : CommandExecutor, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">class Debug_UsernameCommand : RemoteDebugCommandExecutor, ICommand, IRemoteDebugCommand</code></pre>
   </div>
-  <h5 id="KS_Shell_Commands_ExitUnifiedCommand_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>If the UESH shell is a subshell, you can exit it. However, you can't use this command to log out of your account, because it can't exit the mother shell. The only to exit it is to use the logout command.</p>
-</div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Commands_ExitUnifiedCommand_Execute_System_String_System_String___System_String___.md&amp;value=---%0Auid%3A%20KS.Shell.Commands.ExitUnifiedCommand.Execute(System.String%2CSystem.String%5B%5D%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_Commands_Debug_UsernameCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand.Execute(System.String%2CSystem.String%5B%5D%2CSystem.String%5B%5D%2CSystem.IO.StreamWriter%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/UnifiedCommands/Exit.cs/#L33">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Kernel/Debugging/RemoteDebug/Commands/Username.cs/#L27">View Source</a>
   </span>
-  <a id="KS_Shell_Commands_ExitUnifiedCommand_Execute_" data-uid="KS.Shell.Commands.ExitUnifiedCommand.Execute*"></a>
-  <h4 id="KS_Shell_Commands_ExitUnifiedCommand_Execute_System_String_System_String___System_String___" data-uid="KS.Shell.Commands.ExitUnifiedCommand.Execute(System.String,System.String[],System.String[])">Execute(String, String[], String[])</h4>
+  <a id="KS_Kernel_Debugging_RemoteDebug_Commands_Debug_UsernameCommand_Execute_" data-uid="KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand.Execute*"></a>
+  <h4 id="KS_Kernel_Debugging_RemoteDebug_Commands_Debug_UsernameCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_" data-uid="KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand.Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)">Execute(String, String[], String[], StreamWriter, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly, StreamWriter SocketStreamWriter, string DeviceAddress)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -153,13 +154,26 @@
         <td><span class="parametername">ListSwitchesOnly</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">System.IO.StreamWriter</span></td>
+        <td><span class="parametername">SocketStreamWriter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">DeviceAddress</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="KS.Shell.ShellBase.Commands.CommandExecutor.html#KS_Shell_ShellBase_Commands_CommandExecutor_Execute_System_String_System_String___System_String___">CommandExecutor.Execute(String, String[], String[])</a></div>
+  <div><a class="xref" href="KS.Kernel.Debugging.RemoteDebug.Interface.RemoteDebugCommandExecutor.html#KS_Kernel_Debugging_RemoteDebug_Interface_RemoteDebugCommandExecutor_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_">RemoteDebugCommandExecutor.Execute(String, String[], String[], StreamWriter, String)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="KS.Shell.ShellBase.Commands.ICommand.html">ICommand</a>
+  </div>
+  <div>
+      <a class="xref" href="KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.html">IRemoteDebugCommand</a>
   </div>
 </article>
           </div>
@@ -169,10 +183,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Commands_ExitUnifiedCommand.md&amp;value=---%0Auid%3A%20KS.Shell.Commands.ExitUnifiedCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_Commands_Debug_UsernameCommand.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/UnifiedCommands/Exit.cs/#L30" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Kernel/Debugging/RemoteDebug/Commands/Username.cs/#L24" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
