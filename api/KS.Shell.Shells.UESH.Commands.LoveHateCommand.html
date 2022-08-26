@@ -94,10 +94,14 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.html">IRemoteDebugCommand</a></div>
     <div><a class="xref" href="KS.Shell.ShellBase.Commands.ICommand.html">ICommand</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="KS.Shell.ShellBase.Commands.CommandExecutor.html#KS_Shell_ShellBase_Commands_CommandExecutor_KS_Kernel_Debugging_RemoteDebug_Interface_IRemoteDebugCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_">CommandExecutor.IRemoteDebugCommand.Execute(String, String[], String[], StreamWriter, String)</a>
+    </div>
     <div>
       <a class="xref" href="KS.Shell.ShellBase.Commands.CommandExecutor.html#KS_Shell_ShellBase_Commands_CommandExecutor_HelpHelper">CommandExecutor.HelpHelper()</a>
     </div>
@@ -106,7 +110,7 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Shell_Shells_UESH_Commands_LoveHateCommand_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">class LoveHateCommand : CommandExecutor, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">class LoveHateCommand : CommandExecutor, IRemoteDebugCommand, ICommand</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -155,6 +159,9 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="KS.Shell.ShellBase.Commands.CommandExecutor.html#KS_Shell_ShellBase_Commands_CommandExecutor_Execute_System_String_System_String___System_String___">CommandExecutor.Execute(String, String[], String[])</a></div>
   <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.html">IRemoteDebugCommand</a>
+  </div>
   <div>
       <a class="xref" href="KS.Shell.ShellBase.Commands.ICommand.html">ICommand</a>
   </div>

@@ -95,6 +95,7 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="KS.Shell.ShellBase.Commands.ICommand.html">ICommand</a></div>
+    <div><a class="xref" href="KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.html">IRemoteDebugCommand</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -106,7 +107,7 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Shell_UnifiedCommands_HelpUnifiedCommand_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">class HelpUnifiedCommand : CommandExecutor, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">class HelpUnifiedCommand : CommandExecutor, ICommand, IRemoteDebugCommand</code></pre>
   </div>
   <h5 id="KS_Shell_UnifiedCommands_HelpUnifiedCommand_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>This command allows you to get help for any specific command, including its usage. If no command is specified, all commands are listed.</p>
@@ -118,7 +119,7 @@
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_UnifiedCommands_HelpUnifiedCommand_Execute_System_String_System_String___System_String___.md&amp;value=---%0Auid%3A%20KS.Shell.UnifiedCommands.HelpUnifiedCommand.Execute(System.String%2CSystem.String%5B%5D%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/UnifiedCommands/Help.cs/#L33">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/UnifiedCommands/Help.cs/#L36">View Source</a>
   </span>
   <a id="KS_Shell_UnifiedCommands_HelpUnifiedCommand_Execute_" data-uid="KS.Shell.UnifiedCommands.HelpUnifiedCommand.Execute*"></a>
   <h4 id="KS_Shell_UnifiedCommands_HelpUnifiedCommand_Execute_System_String_System_String___System_String___" data-uid="KS.Shell.UnifiedCommands.HelpUnifiedCommand.Execute(System.String,System.String[],System.String[])">Execute(String, String[], String[])</h4>
@@ -162,7 +163,7 @@
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_UnifiedCommands_HelpUnifiedCommand_ListCmds.md&amp;value=---%0Auid%3A%20KS.Shell.UnifiedCommands.HelpUnifiedCommand.ListCmds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/UnifiedCommands/Help.cs/#L45">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/UnifiedCommands/Help.cs/#L60">View Source</a>
   </span>
   <a id="KS_Shell_UnifiedCommands_HelpUnifiedCommand_ListCmds_" data-uid="KS.Shell.UnifiedCommands.HelpUnifiedCommand.ListCmds*"></a>
   <h4 id="KS_Shell_UnifiedCommands_HelpUnifiedCommand_ListCmds" data-uid="KS.Shell.UnifiedCommands.HelpUnifiedCommand.ListCmds">ListCmds()</h4>
@@ -187,9 +188,66 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_UnifiedCommands_HelpUnifiedCommand_KS_Kernel_Debugging_RemoteDebug_Interface_IRemoteDebugCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_.md&amp;value=---%0Auid%3A%20KS.Shell.UnifiedCommands.HelpUnifiedCommand.KS%23Kernel%23Debugging%23RemoteDebug%23Interface%23IRemoteDebugCommand%23Execute(System.String%2CSystem.String%5B%5D%2CSystem.String%5B%5D%2CSystem.IO.StreamWriter%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/UnifiedCommands/Help.cs/#L48">View Source</a>
+  </span>
+  <a id="KS_Shell_UnifiedCommands_HelpUnifiedCommand_KS_Kernel_Debugging_RemoteDebug_Interface_IRemoteDebugCommand_Execute_" data-uid="KS.Shell.UnifiedCommands.HelpUnifiedCommand.KS#Kernel#Debugging#RemoteDebug#Interface#IRemoteDebugCommand#Execute*"></a>
+  <h4 id="KS_Shell_UnifiedCommands_HelpUnifiedCommand_KS_Kernel_Debugging_RemoteDebug_Interface_IRemoteDebugCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_" data-uid="KS.Shell.UnifiedCommands.HelpUnifiedCommand.KS#Kernel#Debugging#RemoteDebug#Interface#IRemoteDebugCommand#Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)">IRemoteDebugCommand.Execute(String, String[], String[], StreamWriter, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IRemoteDebugCommand.Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly, StreamWriter SocketStreamWriter, string DeviceAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">StringArgs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">ListArgsOnly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">ListSwitchesOnly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.StreamWriter</span></td>
+        <td><span class="parametername">SocketStreamWriter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">DeviceAddress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="KS.Shell.ShellBase.Commands.ICommand.html">ICommand</a>
+  </div>
+  <div>
+      <a class="xref" href="KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.html">IRemoteDebugCommand</a>
   </div>
 </article>
           </div>
@@ -202,7 +260,7 @@
                     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_UnifiedCommands_HelpUnifiedCommand.md&amp;value=---%0Auid%3A%20KS.Shell.UnifiedCommands.HelpUnifiedCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/UnifiedCommands/Help.cs/#L30" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/Kernel Simulator/Shell/UnifiedCommands/Help.cs/#L33" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
