@@ -143,6 +143,8 @@
 </ul>
 <h5 id="merged-parsecmd-with-executecommand">Merged <code>ParseCmd</code> with <code>ExecuteCommand</code></h5>
 <p>It has come to the conclusion that <code>ParseCmd</code> is now very similar to <code>ExecuteCommand</code> with treating the remote debug shell specially. This is no longer needed as <code>ProvidedCommandArgumentsInfo</code> has been provided the IP address of the target device, making <code>ParseCmd</code> redundant.</p>
+<h5 id="removed-executerdalias">Removed <code>ExecuteRDAlias()</code></h5>
+<p>This function is not needed to execute aliases since there has been recent improvements to the executor in both 0.0.20.0 and 0.0.24.0.</p>
 </article>
           </div>
           
