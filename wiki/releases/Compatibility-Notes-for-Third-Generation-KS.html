@@ -145,6 +145,19 @@
 <p>It has come to the conclusion that <code>ParseCmd</code> is now very similar to <code>ExecuteCommand</code> with treating the remote debug shell specially. This is no longer needed as <code>ProvidedCommandArgumentsInfo</code> has been provided the IP address of the target device, making <code>ParseCmd</code> redundant.</p>
 <h5 id="removed-executerdalias">Removed <code>ExecuteRDAlias()</code></h5>
 <p>This function is not needed to execute aliases since there has been recent improvements to the executor in both 0.0.20.0 and 0.0.24.0.</p>
+<h5 id="renamed-debug-writer-function-names">Renamed debug writer function names</h5>
+<p>We needed to do the same thing as we've renamed <code>W()</code> to <code>Write()</code>, so we renamed the following:</p>
+<ul>
+<li>Wdbg() -&gt; WriteDebug()</li>
+<li>WdbgConditional() -&gt; WriteDebugConditional()</li>
+<li>WdbgDevicesOnly() -&gt; WriteDebugDevicesOnly()</li>
+<li>WStkTrcConditional() -&gt; WriteDebugStackTraceConditional()</li>
+<li>WStkTrc() -&gt; WriteDebugStackTrace</li>
+</ul>
+<h5 id="moved-mal-and-motd-message-to-miscprobersmotd">Moved MAL and MOTD message to Misc.Probers.Motd</h5>
+<p>These have no relationship with the kernel directly.</p>
+<h5 id="moved-hostname-from-kernel-to-networktools">Moved HostName from Kernel to NetworkTools</h5>
+<p>It has no relationship with the kernel either.</p>
 </article>
           </div>
           
