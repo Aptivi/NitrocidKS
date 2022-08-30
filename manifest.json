@@ -9297,7 +9297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandExecutor.html",
-          "hash": "6YY0of0JApGY6sUphH++iQ7HuV1PT8to+OSX7gvyiQo="
+          "hash": "6cA8QlvjW9lqFL5STHOpanZ6aitzGovaJ5QFpAIh/CI="
         }
       },
       "is_incremental": false,
@@ -11981,6 +11981,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ArchiveCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ArchiveCommand.html",
+          "hash": "TGID9q9ju1SwFuvjczluNMEkkpLhBNc8Xqq7Xj+dXI8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ArgInjCommand.yml",
       "output": {
         ".html": {
@@ -13380,7 +13392,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.html",
-          "hash": "kwA4fOUvXk7Ti6MD1kJgL5D8z9pn+E6wYIVN+TST67Q="
+          "hash": "TcS25xRL/D+w9/+HhRDvhsGsFwKSCeHtZPWav/A7X6Q="
         }
       },
       "is_incremental": false,
@@ -13728,7 +13740,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "xmBor699CG5tSvz/EGAEK2BG03KsCFhLEBnokG8kWmI="
+          "hash": "uHiQ/ENmkfMkxyCz+FOTbOJIvU1CtcgJQ3Nhv2jB6Ew="
         }
       },
       "is_incremental": false,
@@ -16767,7 +16779,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1142,
+          "total_file_count": 1143,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
