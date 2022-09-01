@@ -5587,7 +5587,7 @@
   "api/KS.Shell.Shells.UESH.html": {
     "href": "api/KS.Shell.Shells.UESH.html",
     "title": "Namespace KS.Shell.Shells.UESH | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Shell.Shells.UESH Classes UESHShell UESHShellCommon"
+    "keywords": "Namespace KS.Shell.Shells.UESH Classes UESHShell UESHShellCommon UESH common shell properties"
   },
   "api/KS.Shell.Shells.UESH.UESHShell.html": {
     "href": "api/KS.Shell.Shells.UESH.UESHShell.html",
@@ -5597,7 +5597,7 @@
   "api/KS.Shell.Shells.UESH.UESHShellCommon.html": {
     "href": "api/KS.Shell.Shells.UESH.UESHShellCommon.html",
     "title": "Class UESHShellCommon | Kernel Simulator API - Aptivi",
-    "keywords": "Class UESHShellCommon Inheritance System.Object UESHShellCommon Namespace : KS.Shell.Shells.UESH Assembly : Kernel Simulator.dll Syntax public static class UESHShellCommon Fields | Improve this Doc View Source Commands List of commands Declaration public static readonly Dictionary<string, CommandInfo> Commands Field Value Type Description System.Collections.Generic.Dictionary < System.String , CommandInfo > | Improve this Doc View Source ModCommands Declaration static readonly Dictionary<string, CommandInfo> ModCommands Field Value Type Description System.Collections.Generic.Dictionary < System.String , CommandInfo >"
+    "keywords": "Class UESHShellCommon UESH common shell properties Inheritance System.Object UESHShellCommon Namespace : KS.Shell.Shells.UESH Assembly : Kernel Simulator.dll Syntax public static class UESHShellCommon Fields | Improve this Doc View Source Commands List of commands Declaration public static readonly Dictionary<string, CommandInfo> Commands Field Value Type Description System.Collections.Generic.Dictionary < System.String , CommandInfo > | Improve this Doc View Source ModCommands Declaration static readonly Dictionary<string, CommandInfo> ModCommands Field Value Type Description System.Collections.Generic.Dictionary < System.String , CommandInfo >"
   },
   "api/KS.Shell.Shells.Zip.Commands.html": {
     "href": "api/KS.Shell.Shells.Zip.Commands.html",
