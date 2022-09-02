@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Arguments.ArgumentBase.ArgumentExecutor.html",
-          "hash": "UQcP3OuqByhigi7/b+z305LsjORw33HdWFQdAUFuDyE="
+          "hash": "17DniKpjDzL0Gq1S07Inw3wIAo3PFCOebXY7MCEL1KA="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Arguments.ArgumentBase.PreBootCommandLineArgsParse.html",
-          "hash": "ODmYaqJepEt0B3vEc8s+dXIeupe2vkksAfZobgTklJ4="
+          "hash": "zlnGX9YDBAaNPGsLI4acGwUpqe2IWDKLAnk432LtVa4="
         }
       },
       "is_incremental": false,
@@ -293,6 +293,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Arguments.PreBootCommandLineArguments.PreBootCommandLine_NewReaderArgument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Arguments.PreBootCommandLineArguments.PreBootCommandLine_NewReaderArgument.html",
+          "hash": "nUltXY/fUKCtgzgGCliOtTJcJHCMk+SB/+cXRPX/caY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Arguments.PreBootCommandLineArguments.PreBootCommandLine_ResetArgument.yml",
       "output": {
         ".html": {
@@ -309,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Arguments.PreBootCommandLineArguments.html",
-          "hash": "WpMQT3f/gYLHV/fWkV5CAo0WyLdvME698Q9CCji0gzc="
+          "hash": "8DIB2CsgoEy754zb4yUZShvPtJlIdak/PujLsYcs9DQ="
         }
       },
       "is_incremental": false,
@@ -1017,7 +1029,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Config.ConfigCategory.html",
-          "hash": "l+20dv8QQ9J8MQnceXFUJfhUYaLzL+J37ZI4bW/7heM="
+          "hash": "AdGbzCJqwKesFtxNz2ssBDsXM/MUwMhRivPYYCh4ndU="
         }
       },
       "is_incremental": false,
@@ -1029,7 +1041,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Config.html",
-          "hash": "cgSjzdMNgfacgAQgslxV3/0dDqXFrpSo4TyWmF7r4bA="
+          "hash": "A4B0tkcxF8nD8sry9lhWPz7rkOQnXIoXF/1QyH3L24g="
         }
       },
       "is_incremental": false,
@@ -3789,7 +3801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Flags.html",
-          "hash": "uRp3dxWBf2hjo9rM2umduMi2bS38pTBJ0eYurtzLtjw="
+          "hash": "zKgI7kh1ArrFD4lYQL+Fk1+enzZg5OrhlSrTxNZpVtk="
         }
       },
       "is_incremental": false,
@@ -3945,7 +3957,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Languages.CultureManager.html",
-          "hash": "dDHwzXm01liRbpxd5lCFc6cSfLvnqcNXOYi1VGS7VNE="
+          "hash": "9xRS50gv4EvAGvJhOnK3eyk5j1BlCqd66fuqqJMo3PI="
         }
       },
       "is_incremental": false,
@@ -14052,7 +14064,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "0B9C5bGfATD4+LhnrCIyBWKfyWo9OMfn1ZNM1Nu8H/I="
+          "hash": "hlvoRG3oKd+imldclOQ5kbI1jRO7B0x6qX7NW/Qeu9A="
         }
       },
       "is_incremental": false,
@@ -17091,7 +17103,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1169,
+          "total_file_count": 1170,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
