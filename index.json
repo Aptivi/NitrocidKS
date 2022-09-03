@@ -442,7 +442,7 @@
   "api/KS.Kernel.Debugging.DebugLevel.html": {
     "href": "api/KS.Kernel.Debugging.DebugLevel.html",
     "title": "Enum DebugLevel | Kernel Simulator API - Aptivi",
-    "keywords": "Enum DebugLevel One-lettered debugging level enumeration Namespace : KS.Kernel.Debugging Assembly : Kernel Simulator.dll Syntax public enum DebugLevel Fields Name Description E Error message F Fatal error message I Informational message W Warning message"
+    "keywords": "Enum DebugLevel One-lettered debugging level enumeration Namespace : KS.Kernel.Debugging Assembly : Kernel Simulator.dll Syntax public enum DebugLevel Fields Name Description D Debug verbose message E Error message F Fatal error message I Informational message T Trace verbose message W Warning message"
   },
   "api/KS.Kernel.Debugging.DebugManager.html": {
     "href": "api/KS.Kernel.Debugging.DebugManager.html",
