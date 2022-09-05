@@ -3245,6 +3245,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Exceptions.GroupManagementException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Exceptions.GroupManagementException.html",
+          "hash": "PqLe46hUlw4MFiXcccQ38hXAbjR1p6tWK81haEH20xk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Exceptions.HTTPShellException.yml",
       "output": {
         ".html": {
@@ -3617,18 +3629,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Exceptions.PermissionManagementException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Exceptions.PermissionManagementException.html",
-          "hash": "atrQz4+ShO9TfJdOypN66ZuOPB/Nfhl14OhJv3Y5t60="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Exceptions.RSSNetworkException.yml",
       "output": {
         ".html": {
@@ -3789,7 +3789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.html",
-          "hash": "XjXbPhzyfmAlEpDF87ppkiJMq6ChJFFo89Qom/cIk5M="
+          "hash": "VhgmiaJ94djXTnLWNTF0+SKKR7qRxaxyqdWE6O13SEE="
         }
       },
       "is_incremental": false,
@@ -3813,7 +3813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Kernel.html",
-          "hash": "TmJBZ3h7+oZsFqosZNPkb2lgPAagJrS3xdr13DJUr2I="
+          "hash": "IYmbU/dU+Hg3iKgyk4dOH38hhX2LUpfxregfc0ok+qI="
         }
       },
       "is_incremental": false,
@@ -3849,7 +3849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.KernelTools.html",
-          "hash": "brr60N9P2eqJfrURDiogAwvbOY2+2Cs+ZYj5SvPnhsU="
+          "hash": "5XMzqX+jaFQ1gujL89TTDZ+w5ZyaOMxmfaGJctSk4mA="
         }
       },
       "is_incremental": false,
@@ -4017,7 +4017,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Login.Login.html",
-          "hash": "gsKl9MX0qe4KMPgXNGl9cDY09SJLivXjderJ1SbUOY4="
+          "hash": "HZZa9UFb2b+Fbjx/ngb+lD2ad5oIsghHk4BfheuvRMY="
         }
       },
       "is_incremental": false,
@@ -4037,83 +4037,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Login.PermissionManagement.PermissionManagementMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Login.PermissionManagement.PermissionManagementMode.html",
-          "hash": "g4i+dN4A6sCMUKC4Ji7lvcyYaM8pwmZpzZasKrKeloc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Login.PermissionManagement.PermissionType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Login.PermissionManagement.PermissionType.html",
-          "hash": "rMwojLHQZ7SPOGMmIWH7EeSrKjFsryNZotNQRDlTj8k="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Login.PermissionManagement.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Login.PermissionManagement.html",
-          "hash": "+PfUTQHYul1Qxz1qglwkdilXYvHT2H/mC0WwB1rQTMc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Login.UserInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Login.UserInfo.html",
-          "hash": "WOv9cr0xKGak6NZP+xhidpnddnc7r6Bpri9Hf3ABpck="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Login.UserManagement.UserProperty.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Login.UserManagement.UserProperty.html",
-          "hash": "yFwEFHvQImoDbiUOqJ+zmAbUd9wOX79vVxq9cchEglM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Login.UserManagement.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Login.UserManagement.html",
-          "hash": "b2CjrV8ok/NdVG2Yg9WiaGKw6dIaVY9u1zP4gbYYCqA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Login.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Login.html",
-          "hash": "KemirRMV7FsgbVuSNldY4WTkzNpVTDnogClppZLShMY="
+          "hash": "+z7aZdaGJmh+kegSsip8jPtZ5RFVKI39Dj8qsjDgtR4="
         }
       },
       "is_incremental": false,
@@ -7101,7 +7029,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.FTP.Filesystem.FTPFilesystem.html",
-          "hash": "6rsgnsoS6NRl8m1QrRDQZYlY025x8T+fGVyZtM4qjVk="
+          "hash": "9pCeKCG0BUjbfraF3zKreiE9+9WnTX0mzw4Lb/Fh0Zc="
         }
       },
       "is_incremental": false,
@@ -14036,6 +13964,102 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Groups.GroupManagement.GroupManagementMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Groups.GroupManagement.GroupManagementMode.html",
+          "hash": "6uOgTXom//rFKVPOINkU/Q82IFKvaeJEIw0LyZ81HMI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Groups.GroupManagement.GroupType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Groups.GroupManagement.GroupType.html",
+          "hash": "0tyU6r8Fr2I++tpQy9ko3O/OqysQp38aAYkhvetyeXY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Groups.GroupManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Groups.GroupManagement.html",
+          "hash": "cZwWIkUUYbr54oLgwAusD1IN8jtrzoMvVwpBQd7tUlQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Groups.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Groups.html",
+          "hash": "1cuUsVjbSS2OHrA8ozl5RNVNw6PjBGcBBH+7tp0cQdE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.UserInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.UserInfo.html",
+          "hash": "KAOV8fDtJi0P6ucUFziIf4f20C5RvD0yhVeuld3XrcQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.UserManagement.UserProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.UserManagement.UserProperty.html",
+          "hash": "XUeO/46U+SLYhRbeI2bMbnoSZQ2vqI8HLTjUx3iO20o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.UserManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.UserManagement.html",
+          "hash": "egGBmuUgJAi8VfPa6UrXb/AXMsz9eUJfthdL4z61Rk8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.html",
+          "hash": "qxuVKF/WA8SNCY/o/PQqJx9Pnza5Mde46o8PCCAZYnw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Properties.Resources.Resources.yml",
       "output": {
         ".html": {
@@ -14064,7 +14088,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "hlvoRG3oKd+imldclOQ5kbI1jRO7B0x6qX7NW/Qeu9A="
+          "hash": "YwtR0GMU7XAlavoo4n+wLkZsXVFNpH/ned4DRD1Azck="
         }
       },
       "is_incremental": false,
@@ -16980,7 +17004,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Compatibility-Notes-for-Third-Generation-KS.html",
-          "hash": "4a6BS7KvYMEo8SfO6aL7o82efhuYBkJZ21Lq9lmK0yA="
+          "hash": "uoSZVjmi07ITLtRm1rffwO20vQIBXfY01iv0qYDbbEo="
         }
       },
       "is_incremental": false,
@@ -17103,7 +17127,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1170,
+          "total_file_count": 1172,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
