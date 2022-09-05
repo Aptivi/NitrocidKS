@@ -9465,7 +9465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandExecutor.html",
-          "hash": "lDxpqEBNBJe3XAQoqF8BjkpuBi+KMZg536AywGhiQZo="
+          "hash": "6eCqyq7MfzpY4PCPDiuzdY4q6+7lZS2zsNkYJ8bFTjw="
         }
       },
       "is_incremental": false,
@@ -13124,18 +13124,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.RarShellCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.UESH.Commands.RarShellCommand.html",
-          "hash": "1gMv7P2PgKhqZOg77Hm8s0gD1Ci4xgcXup8zSLge2/g="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.RdebugCommand.yml",
       "output": {
         ".html": {
@@ -13688,23 +13676,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ZipShellCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ZipShellCommand.html",
-          "hash": "05Iog1MwDwF6ztiwduUiNYwzDOABXmOshngSTPYrbJc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.html",
-          "hash": "UTbRJS6zphWRH0SVNeLRWdTEg+svbPjd5qkRqrRdfHM="
+          "hash": "jtXh0NJuLyYDEjtQO/7KUKIrjwk3fNRf+A0AuPo6A4c="
         }
       },
       "is_incremental": false,
@@ -14148,7 +14124,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "vVIhtM5kVUu8+czGAsv69SBy/MtsxOxKl3KKZeGHeA8="
+          "hash": "D/BXX6I0bFphm23r4ek8Jz+QlmVjmSg/uknV96BJYLY="
         }
       },
       "is_incremental": false,
@@ -17187,7 +17163,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1177,
+          "total_file_count": 1175,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
