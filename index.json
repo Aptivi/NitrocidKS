@@ -3882,7 +3882,7 @@
   "api/KS.Shell.ShellBase.Shells.html": {
     "href": "api/KS.Shell.ShellBase.Shells.html",
     "title": "Namespace KS.Shell.ShellBase.Shells | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Shell.ShellBase.Shells Classes ShellExecutor ShellInfo ShellStart Interfaces IShell Base shell functions Enums ShellType Shell type enumeration"
+    "keywords": "Namespace KS.Shell.ShellBase.Shells Classes ShellExecutor The shell executor class ShellInfo ShellStart Interfaces IShell Base shell functions Enums ShellType Shell type enumeration"
   },
   "api/KS.Shell.ShellBase.Shells.IShell.html": {
     "href": "api/KS.Shell.ShellBase.Shells.IShell.html",
@@ -3892,7 +3892,7 @@
   "api/KS.Shell.ShellBase.Shells.ShellExecutor.html": {
     "href": "api/KS.Shell.ShellBase.Shells.ShellExecutor.html",
     "title": "Class ShellExecutor | Kernel Simulator API - Aptivi",
-    "keywords": "Class ShellExecutor Inheritance System.Object ShellExecutor ArchiveShell FTPShell HexShell HTTPShell JsonShell MailShell RSSShell SFTPShell TestShell TextShell UESHShell Implements IShell Namespace : KS.Shell.ShellBase.Shells Assembly : Kernel Simulator.dll Syntax public abstract class ShellExecutor : IShell Properties | Improve this Doc View Source Bail Declaration public virtual bool Bail { get; set; } Property Value Type Description System.Boolean | Improve this Doc View Source ShellType Declaration public virtual ShellType ShellType { get; } Property Value Type Description ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) Declaration public virtual void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Implements IShell"
+    "keywords": "Class ShellExecutor The shell executor class Inheritance System.Object ShellExecutor ArchiveShell FTPShell HexShell HTTPShell JsonShell MailShell RSSShell SFTPShell TestShell TextShell UESHShell Implements IShell Namespace : KS.Shell.ShellBase.Shells Assembly : Kernel Simulator.dll Syntax public abstract class ShellExecutor : IShell Properties | Improve this Doc View Source Bail If true, will exit the shell Declaration public virtual bool Bail { get; set; } Property Value Type Description System.Boolean | Improve this Doc View Source ShellType The shell type Declaration public virtual ShellType ShellType { get; } Property Value Type Description ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) The shell initializer Declaration public virtual void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Implements IShell"
   },
   "api/KS.Shell.ShellBase.Shells.ShellInfo.html": {
     "href": "api/KS.Shell.ShellBase.Shells.ShellInfo.html",
@@ -3912,7 +3912,7 @@
   "api/KS.Shell.Shells.Archive.ArchiveShell.html": {
     "href": "api/KS.Shell.Shells.Archive.ArchiveShell.html",
     "title": "Class ArchiveShell | Kernel Simulator API - Aptivi",
-    "keywords": "Class ArchiveShell Archive shell class Inheritance System.Object ShellExecutor ArchiveShell Implements IShell Namespace : KS.Shell.Shells.Archive Assembly : Kernel Simulator.dll Syntax public class ArchiveShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
+    "keywords": "Class ArchiveShell Archive shell class Inheritance System.Object ShellExecutor ArchiveShell Implements IShell Namespace : KS.Shell.Shells.Archive Assembly : Kernel Simulator.dll Syntax public class ArchiveShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail If true, will exit the shell Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType The shell type Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) The shell initializer Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
   },
   "api/KS.Shell.Shells.Archive.ArchiveShellCommon.html": {
     "href": "api/KS.Shell.Shells.Archive.ArchiveShellCommon.html",
@@ -4077,7 +4077,7 @@
   "api/KS.Shell.Shells.FTP.FTPShell.html": {
     "href": "api/KS.Shell.Shells.FTP.FTPShell.html",
     "title": "Class FTPShell | Kernel Simulator API - Aptivi",
-    "keywords": "Class FTPShell Inheritance System.Object ShellExecutor FTPShell Implements IShell Namespace : KS.Shell.Shells.FTP Assembly : Kernel Simulator.dll Syntax public class FTPShell : ShellExecutor, IShell Fields | Improve this Doc View Source FtpInitialized Declaration bool FtpInitialized Field Value Type Description System.Boolean Properties | Improve this Doc View Source Bail Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
+    "keywords": "Class FTPShell The FTP shell Inheritance System.Object ShellExecutor FTPShell Implements IShell Namespace : KS.Shell.Shells.FTP Assembly : Kernel Simulator.dll Syntax public class FTPShell : ShellExecutor, IShell Fields | Improve this Doc View Source FtpInitialized Declaration bool FtpInitialized Field Value Type Description System.Boolean Properties | Improve this Doc View Source Bail If true, will exit the shell Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType The shell type Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) The shell initializer Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
   },
   "api/KS.Shell.Shells.FTP.FTPShellCommon.html": {
     "href": "api/KS.Shell.Shells.FTP.FTPShellCommon.html",
@@ -4087,7 +4087,7 @@
   "api/KS.Shell.Shells.FTP.html": {
     "href": "api/KS.Shell.Shells.FTP.html",
     "title": "Namespace KS.Shell.Shells.FTP | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Shell.Shells.FTP Classes FTPShell FTPShellCommon"
+    "keywords": "Namespace KS.Shell.Shells.FTP Classes FTPShell The FTP shell FTPShellCommon"
   },
   "api/KS.Shell.Shells.Hex.Commands.HexEdit_AddByteCommand.html": {
     "href": "api/KS.Shell.Shells.Hex.Commands.HexEdit_AddByteCommand.html",
@@ -4152,12 +4152,12 @@
   "api/KS.Shell.Shells.Hex.HexShell.html": {
     "href": "api/KS.Shell.Shells.Hex.HexShell.html",
     "title": "Class HexShell | Kernel Simulator API - Aptivi",
-    "keywords": "Class HexShell Inheritance System.Object ShellExecutor HexShell Implements IShell Namespace : KS.Shell.Shells.Hex Assembly : Kernel Simulator.dll Syntax public class HexShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
+    "keywords": "Class HexShell The hex editor class Inheritance System.Object ShellExecutor HexShell Implements IShell Namespace : KS.Shell.Shells.Hex Assembly : Kernel Simulator.dll Syntax public class HexShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail If true, will exit the shell Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType The shell type Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) The shell initializer Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
   },
   "api/KS.Shell.Shells.Hex.html": {
     "href": "api/KS.Shell.Shells.Hex.html",
     "title": "Namespace KS.Shell.Shells.Hex | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Shell.Shells.Hex Classes HexEditShellCommon HexShell"
+    "keywords": "Namespace KS.Shell.Shells.Hex Classes HexEditShellCommon HexShell The hex editor class"
   },
   "api/KS.Shell.Shells.HTTP.Commands.html": {
     "href": "api/KS.Shell.Shells.HTTP.Commands.html",
@@ -4187,12 +4187,12 @@
   "api/KS.Shell.Shells.HTTP.html": {
     "href": "api/KS.Shell.Shells.HTTP.html",
     "title": "Namespace KS.Shell.Shells.HTTP | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Shell.Shells.HTTP Classes HTTPShell HTTPShellCommon"
+    "keywords": "Namespace KS.Shell.Shells.HTTP Classes HTTPShell The HTTP shell HTTPShellCommon"
   },
   "api/KS.Shell.Shells.HTTP.HTTPShell.html": {
     "href": "api/KS.Shell.Shells.HTTP.HTTPShell.html",
     "title": "Class HTTPShell | Kernel Simulator API - Aptivi",
-    "keywords": "Class HTTPShell Inheritance System.Object ShellExecutor HTTPShell Implements IShell Namespace : KS.Shell.Shells.HTTP Assembly : Kernel Simulator.dll Syntax public class HTTPShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
+    "keywords": "Class HTTPShell The HTTP shell Inheritance System.Object ShellExecutor HTTPShell Implements IShell Namespace : KS.Shell.Shells.HTTP Assembly : Kernel Simulator.dll Syntax public class HTTPShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail If true, will exit the shell Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType The shell type Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) The shell initializer Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
   },
   "api/KS.Shell.Shells.HTTP.HTTPShellCommon.html": {
     "href": "api/KS.Shell.Shells.HTTP.HTTPShellCommon.html",
@@ -4237,12 +4237,12 @@
   "api/KS.Shell.Shells.Json.html": {
     "href": "api/KS.Shell.Shells.Json.html",
     "title": "Namespace KS.Shell.Shells.Json | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Shell.Shells.Json Classes JsonShell JsonShellCommon"
+    "keywords": "Namespace KS.Shell.Shells.Json Classes JsonShell The JSON editor shell JsonShellCommon"
   },
   "api/KS.Shell.Shells.Json.JsonShell.html": {
     "href": "api/KS.Shell.Shells.Json.JsonShell.html",
     "title": "Class JsonShell | Kernel Simulator API - Aptivi",
-    "keywords": "Class JsonShell Inheritance System.Object ShellExecutor JsonShell Implements IShell Namespace : KS.Shell.Shells.Json Assembly : Kernel Simulator.dll Syntax public class JsonShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
+    "keywords": "Class JsonShell The JSON editor shell Inheritance System.Object ShellExecutor JsonShell Implements IShell Namespace : KS.Shell.Shells.Json Assembly : Kernel Simulator.dll Syntax public class JsonShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail If true, will exit the shell Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType The shell type Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) The shell initializer Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
   },
   "api/KS.Shell.Shells.Json.JsonShellCommon.html": {
     "href": "api/KS.Shell.Shells.Json.JsonShellCommon.html",
@@ -4327,12 +4327,12 @@
   "api/KS.Shell.Shells.Mail.html": {
     "href": "api/KS.Shell.Shells.Mail.html",
     "title": "Namespace KS.Shell.Shells.Mail | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Shell.Shells.Mail Classes MailShell MailShellCommon"
+    "keywords": "Namespace KS.Shell.Shells.Mail Classes MailShell The mail shell MailShellCommon"
   },
   "api/KS.Shell.Shells.Mail.MailShell.html": {
     "href": "api/KS.Shell.Shells.Mail.MailShell.html",
     "title": "Class MailShell | Kernel Simulator API - Aptivi",
-    "keywords": "Class MailShell Inheritance System.Object ShellExecutor MailShell Implements IShell Namespace : KS.Shell.Shells.Mail Assembly : Kernel Simulator.dll Syntax public class MailShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
+    "keywords": "Class MailShell The mail shell Inheritance System.Object ShellExecutor MailShell Implements IShell Namespace : KS.Shell.Shells.Mail Assembly : Kernel Simulator.dll Syntax public class MailShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail If true, will exit the shell Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType The shell type Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) The shell initializer Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
   },
   "api/KS.Shell.Shells.Mail.MailShellCommon.html": {
     "href": "api/KS.Shell.Shells.Mail.MailShellCommon.html",
@@ -4392,12 +4392,12 @@
   "api/KS.Shell.Shells.RSS.html": {
     "href": "api/KS.Shell.Shells.RSS.html",
     "title": "Namespace KS.Shell.Shells.RSS | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Shell.Shells.RSS Classes RSSShell RSSShellCommon"
+    "keywords": "Namespace KS.Shell.Shells.RSS Classes RSSShell The RSS shell RSSShellCommon"
   },
   "api/KS.Shell.Shells.RSS.RSSShell.html": {
     "href": "api/KS.Shell.Shells.RSS.RSSShell.html",
     "title": "Class RSSShell | Kernel Simulator API - Aptivi",
-    "keywords": "Class RSSShell Inheritance System.Object ShellExecutor RSSShell Implements IShell Namespace : KS.Shell.Shells.RSS Assembly : Kernel Simulator.dll Syntax public class RSSShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
+    "keywords": "Class RSSShell The RSS shell Inheritance System.Object ShellExecutor RSSShell Implements IShell Namespace : KS.Shell.Shells.RSS Assembly : Kernel Simulator.dll Syntax public class RSSShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail If true, will exit the shell Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType The shell type Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) The shell initializer Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
   },
   "api/KS.Shell.Shells.RSS.RSSShellCommon.html": {
     "href": "api/KS.Shell.Shells.RSS.RSSShellCommon.html",
@@ -4472,12 +4472,12 @@
   "api/KS.Shell.Shells.SFTP.html": {
     "href": "api/KS.Shell.Shells.SFTP.html",
     "title": "Namespace KS.Shell.Shells.SFTP | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Shell.Shells.SFTP Classes SFTPShell SFTPShellCommon"
+    "keywords": "Namespace KS.Shell.Shells.SFTP Classes SFTPShell The SFTP shell SFTPShellCommon"
   },
   "api/KS.Shell.Shells.SFTP.SFTPShell.html": {
     "href": "api/KS.Shell.Shells.SFTP.SFTPShell.html",
     "title": "Class SFTPShell | Kernel Simulator API - Aptivi",
-    "keywords": "Class SFTPShell Inheritance System.Object ShellExecutor SFTPShell Implements IShell Namespace : KS.Shell.Shells.SFTP Assembly : Kernel Simulator.dll Syntax public class SFTPShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
+    "keywords": "Class SFTPShell The SFTP shell Inheritance System.Object ShellExecutor SFTPShell Implements IShell Namespace : KS.Shell.Shells.SFTP Assembly : Kernel Simulator.dll Syntax public class SFTPShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail If true, will exit the shell Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType The shell type Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) The shell initializer Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
   },
   "api/KS.Shell.Shells.SFTP.SFTPShellCommon.html": {
     "href": "api/KS.Shell.Shells.SFTP.SFTPShellCommon.html",
@@ -4822,12 +4822,12 @@
   "api/KS.Shell.Shells.Test.html": {
     "href": "api/KS.Shell.Shells.Test.html",
     "title": "Namespace KS.Shell.Shells.Test | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Shell.Shells.Test Classes TestShell TestShellCommon"
+    "keywords": "Namespace KS.Shell.Shells.Test Classes TestShell The test shell TestShellCommon"
   },
   "api/KS.Shell.Shells.Test.TestShell.html": {
     "href": "api/KS.Shell.Shells.Test.TestShell.html",
     "title": "Class TestShell | Kernel Simulator API - Aptivi",
-    "keywords": "Class TestShell Inheritance System.Object ShellExecutor TestShell Implements IShell Namespace : KS.Shell.Shells.Test Assembly : Kernel Simulator.dll Syntax public class TestShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
+    "keywords": "Class TestShell The test shell Inheritance System.Object ShellExecutor TestShell Implements IShell Namespace : KS.Shell.Shells.Test Assembly : Kernel Simulator.dll Syntax public class TestShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail If true, will exit the shell Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType The shell type Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) The shell initializer Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
   },
   "api/KS.Shell.Shells.Test.TestShellCommon.html": {
     "href": "api/KS.Shell.Shells.Test.TestShellCommon.html",
@@ -4927,7 +4927,7 @@
   "api/KS.Shell.Shells.Text.html": {
     "href": "api/KS.Shell.Shells.Text.html",
     "title": "Namespace KS.Shell.Shells.Text | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Shell.Shells.Text Classes TextEditShellCommon TextShell"
+    "keywords": "Namespace KS.Shell.Shells.Text Classes TextEditShellCommon TextShell The text editor shell"
   },
   "api/KS.Shell.Shells.Text.TextEditShellCommon.html": {
     "href": "api/KS.Shell.Shells.Text.TextEditShellCommon.html",
@@ -4937,7 +4937,7 @@
   "api/KS.Shell.Shells.Text.TextShell.html": {
     "href": "api/KS.Shell.Shells.Text.TextShell.html",
     "title": "Class TextShell | Kernel Simulator API - Aptivi",
-    "keywords": "Class TextShell Inheritance System.Object ShellExecutor TextShell Implements IShell Namespace : KS.Shell.Shells.Text Assembly : Kernel Simulator.dll Syntax public class TextShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
+    "keywords": "Class TextShell The text editor shell Inheritance System.Object ShellExecutor TextShell Implements IShell Namespace : KS.Shell.Shells.Text Assembly : Kernel Simulator.dll Syntax public class TextShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail If true, will exit the shell Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType The shell type Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) The shell initializer Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
   },
   "api/KS.Shell.Shells.UESH.Commands.AddUserCommand.html": {
     "href": "api/KS.Shell.Shells.UESH.Commands.AddUserCommand.html",
@@ -5542,12 +5542,12 @@
   "api/KS.Shell.Shells.UESH.html": {
     "href": "api/KS.Shell.Shells.UESH.html",
     "title": "Namespace KS.Shell.Shells.UESH | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Shell.Shells.UESH Classes UESHShell UESHShellCommon UESH common shell properties"
+    "keywords": "Namespace KS.Shell.Shells.UESH Classes UESHShell The UESH shell UESHShellCommon UESH common shell properties"
   },
   "api/KS.Shell.Shells.UESH.UESHShell.html": {
     "href": "api/KS.Shell.Shells.UESH.UESHShell.html",
     "title": "Class UESHShell | Kernel Simulator API - Aptivi",
-    "keywords": "Class UESHShell Inheritance System.Object ShellExecutor UESHShell Implements IShell Namespace : KS.Shell.Shells.UESH Assembly : Kernel Simulator.dll Syntax public class UESHShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
+    "keywords": "Class UESHShell The UESH shell Inheritance System.Object ShellExecutor UESHShell Implements IShell Namespace : KS.Shell.Shells.UESH Assembly : Kernel Simulator.dll Syntax public class UESHShell : ShellExecutor, IShell Properties | Improve this Doc View Source Bail If true, will exit the shell Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides ShellExecutor.Bail | Improve this Doc View Source ShellType The shell type Declaration public override ShellType ShellType { get; } Property Value Type Description ShellType Overrides ShellExecutor.ShellType Methods | Improve this Doc View Source InitializeShell(Object[]) The shell initializer Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides ShellExecutor.InitializeShell(Object[]) Implements IShell"
   },
   "api/KS.Shell.Shells.UESH.UESHShellCommon.html": {
     "href": "api/KS.Shell.Shells.UESH.UESHShellCommon.html",
