@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>chdir Zip command | Kernel Simulator API - Aptivi </title>
+    <title>get Archive command | Kernel Simulator API - Aptivi </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="chdir Zip command | Kernel Simulator API - Aptivi ">
+    <meta name="title" content="get Archive command | Kernel Simulator API - Aptivi ">
     <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,19 +77,34 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h2 id="chdir-zip-command">chdir Zip command</h2>
+<h2 id="get-archive-command">get Archive command</h2>
 
 <h3 id="summary">Summary</h3>
-<p>Changes current local directory</p>
+<p>Extract a file from an archive</p>
 <h3 id="description">Description</h3>
-<p>If you want to interact with the ZIP file in another local directory, you can use this command to change the current local directory. This change isn't applied to the main shell.</p>
+<p>If you want to get a single file from an archive, you can use this command to extract such file to the current working directory, or a specified directory.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Switches</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">-absolute</td>
+<td style="text-align: left;">Uses the full target path</td>
+</tr>
+</tbody>
+</table>
 <h3 id="command-usage">Command usage</h3>
 <ul>
-<li><code>chdir &lt;directory&gt;</code></li>
+<li><code>get &lt;entry&gt; [where] [-absolute]</code></li>
 </ul>
 <h3 id="examples">Examples</h3>
 <ul>
-<li><code>chdir Systems</code>: Changes the local directory to Systems</li>
+<li><code>get Linux/KNOPPIX7.iso</code>: Extracts Linux/KNOPPIX7.iso</li>
+<li><code>get Windows/Windows10.iso &quot;Windows 10&quot;</code>: Extracts Windows/Windows10.iso to a folder called &quot;Windows 10&quot;</li>
 </ul>
 </article>
           </div>
@@ -99,7 +114,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/DocGen/wiki/commands/zip/KS-Zip-Command-chdir.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/DocGen/wiki/commands/archive/KS-Archive-Command-get.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

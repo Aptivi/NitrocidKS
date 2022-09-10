@@ -5689,6 +5689,41 @@
     "title": "Commands for (S)FTP client for KS | Kernel Simulator API - Aptivi",
     "keywords": "Commands for (S)FTP client for KS The commands below are available for the (S)FTP client that is built-in to KS. Some of the commands are available only for FTP shells. For more information about every command, click on the command. Administrative commands Command Description cp Copies a file to the server del You can delete unwanted files from the server mv Moves a remote file to another remote directory put Send your local file to the server putfolder Send your local folder to the server perm Sets file permissions. This only works on FTP servers that run on Unix. Normal user commands Command Description pwdl Get your current working local directory pwdr Get your current working server directory cdl Changes your local directory to another directory that exists cdr Changes your remote directory to another directory that exists in the server connect Lets you communicate with the server, and with the credentials if specified disconnect When you're finished communicating with the server, use this command to let the server know that you're leaving get Gets the remote file from the server to your current local working directory getfolder Gets the remote folder from the server to your current local working directory lsl Lists the contents of your current working directory, or specified directory lsr Lists the contents of your current working server directory, or specified directory quickconnect Use the speed dial to quickly connect to any FTP server. Automatically filled when connecting to a server for the first time. type Changes the data type (ASCII, Binary)"
   },
+  "wiki/commands/archive/KS-Archive-Command-cdir.html": {
+    "href": "wiki/commands/archive/KS-Archive-Command-cdir.html",
+    "title": "cdir Archive command | Kernel Simulator API - Aptivi",
+    "keywords": "cdir Archive command Summary Gets current local directory Description Should you want to get the current local directory in the archive shell, you can use this command. Command usage cdir"
+  },
+  "wiki/commands/archive/KS-Archive-Command-chadir.html": {
+    "href": "wiki/commands/archive/KS-Archive-Command-chadir.html",
+    "title": "chadir Archive command | Kernel Simulator API - Aptivi",
+    "keywords": "chadir Archive command Summary Changes current archive directory Description If you want to go to a folder inside the archive, you can use this command to change the working archive directory. Command usage chadir <archivedirectory> Examples chadir Linux : Changes the archive directory to Linux"
+  },
+  "wiki/commands/archive/KS-Archive-Command-chdir.html": {
+    "href": "wiki/commands/archive/KS-Archive-Command-chdir.html",
+    "title": "chdir Archive command | Kernel Simulator API - Aptivi",
+    "keywords": "chdir Archive command Summary Changes current local directory Description If you want to interact with the archive file in another local directory, you can use this command to change the current local directory. This change isn't applied to the main shell. Command usage chdir <directory> Examples chdir Systems : Changes the local directory to Systems"
+  },
+  "wiki/commands/archive/KS-Archive-Command-get.html": {
+    "href": "wiki/commands/archive/KS-Archive-Command-get.html",
+    "title": "get Archive command | Kernel Simulator API - Aptivi",
+    "keywords": "get Archive command Summary Extract a file from an archive Description If you want to get a single file from an archive, you can use this command to extract such file to the current working directory, or a specified directory. Switches Description -absolute Uses the full target path Command usage get <entry> [where] [-absolute] Examples get Linux/KNOPPIX7.iso : Extracts Linux/KNOPPIX7.iso get Windows/Windows10.iso \"Windows 10\" : Extracts Windows/Windows10.iso to a folder called \"Windows 10\""
+  },
+  "wiki/commands/archive/KS-Archive-Command-list.html": {
+    "href": "wiki/commands/archive/KS-Archive-Command-list.html",
+    "title": "list Archive command | Kernel Simulator API - Aptivi",
+    "keywords": "list Archive command Summary Lists archive file entries Description If you want to know what this archive file contains, you can use this command to list all the files and folders included in the archive. Command usage list [archivedirectory] Examples list Linux : Lists the contents of \"Linux\""
+  },
+  "wiki/commands/archive/KS-Archive-Command-pack.html": {
+    "href": "wiki/commands/archive/KS-Archive-Command-pack.html",
+    "title": "pack Archive command | Kernel Simulator API - Aptivi",
+    "keywords": "pack Archive command Summary Compresses a file to an archive Description If you want to compress a single file from an archive, you can use this command. Command usage pack <file> [where] Examples pack KNOPPIX7.iso : Packs KNOPPIX7.iso pack Windows10.iso Windows : Packs Windows10.iso to a folder in the archive called Windows"
+  },
+  "wiki/commands/Archive-commands-for-KS.html": {
+    "href": "wiki/commands/Archive-commands-for-KS.html",
+    "title": "Brief overview of the archive shell | Kernel Simulator API - Aptivi",
+    "keywords": "Brief overview of the archive shell The archive shell, invoked by archive , is one of the shells available in the kernel that provides you basic archive functions. For more information about every command, click the command. All archive commands Command Description cdir Gets current local directory for this shell. chadir Changes archive directory. chdir Changes local directory. get Extracts a file. list Lists files. pack Packs a local file to the archive."
+  },
   "wiki/commands/Commands-for-KS.html": {
     "href": "wiki/commands/Commands-for-KS.html",
     "title": "Commands for KS | Kernel Simulator API - Aptivi",
@@ -6733,41 +6768,6 @@
     "href": "wiki/commands/unified/KS-Command-presets.html",
     "title": "presets command | Kernel Simulator API - Aptivi",
     "keywords": "presets command Summary Changes your shell presets Description This command allows you to change your shell presets to either one of the pre-defined presets or your custom preset installed by a mod. Command usage presets"
-  },
-  "wiki/commands/zip/KS-Zip-Command-cdir.html": {
-    "href": "wiki/commands/zip/KS-Zip-Command-cdir.html",
-    "title": "cdir Zip command | Kernel Simulator API - Aptivi",
-    "keywords": "cdir Zip command Summary Gets current local directory Description Should you want to get the current local directory in the ZIP shell, you can use this command. Command usage cdir"
-  },
-  "wiki/commands/zip/KS-Zip-Command-chadir.html": {
-    "href": "wiki/commands/zip/KS-Zip-Command-chadir.html",
-    "title": "chadir Zip command | Kernel Simulator API - Aptivi",
-    "keywords": "chadir Zip command Summary Changes current archive directory Description If you want to go to a folder inside the ZIP archive, you can use this command to change the working archive directory. Command usage chadir <archivedirectory> Examples chadir Linux : Changes the archive directory to Linux"
-  },
-  "wiki/commands/zip/KS-Zip-Command-chdir.html": {
-    "href": "wiki/commands/zip/KS-Zip-Command-chdir.html",
-    "title": "chdir Zip command | Kernel Simulator API - Aptivi",
-    "keywords": "chdir Zip command Summary Changes current local directory Description If you want to interact with the ZIP file in another local directory, you can use this command to change the current local directory. This change isn't applied to the main shell. Command usage chdir <directory> Examples chdir Systems : Changes the local directory to Systems"
-  },
-  "wiki/commands/zip/KS-Zip-Command-get.html": {
-    "href": "wiki/commands/zip/KS-Zip-Command-get.html",
-    "title": "get Zip command | Kernel Simulator API - Aptivi",
-    "keywords": "get Zip command Summary Extract a file from a ZIP archive Description If you want to get a single file from the ZIP archive, you can use this command to extract such file to the current working directory, or a specified directory. Switches Description -absolute Uses the full target path Command usage get <entry> [where] [-absolute] Examples get Linux/KNOPPIX7.iso : Extracts Linux/KNOPPIX7.iso get Windows/Windows10.iso \"Windows 10\" : Extracts Windows/Windows10.iso to a folder called \"Windows 10\""
-  },
-  "wiki/commands/zip/KS-Zip-Command-list.html": {
-    "href": "wiki/commands/zip/KS-Zip-Command-list.html",
-    "title": "list Zip command | Kernel Simulator API - Aptivi",
-    "keywords": "list Zip command Summary Lists ZIP file entries Description If you want to know what this ZIP file contains, you can use this command to list all the files and folders included in the archive. Command usage list [archivedirectory] Examples list Linux : Lists the contents of \"Linux\""
-  },
-  "wiki/commands/zip/KS-Zip-Command-pack.html": {
-    "href": "wiki/commands/zip/KS-Zip-Command-pack.html",
-    "title": "pack Zip command | Kernel Simulator API - Aptivi",
-    "keywords": "pack Zip command Summary Compresses a file to a ZIP archive Description If you want to compress a single file from the ZIP archive, you can use this command. Command usage pack <file> [where] Examples pack KNOPPIX7.iso : Packs KNOPPIX7.iso pack Windows10.iso Windows : Packs Windows10.iso to a folder in the archive called Windows"
-  },
-  "wiki/commands/ZIP-commands-for-KS.html": {
-    "href": "wiki/commands/ZIP-commands-for-KS.html",
-    "title": "Brief overview of ZIP shell | Kernel Simulator API - Aptivi",
-    "keywords": "Brief overview of ZIP shell The ZIP shell, invoked by zipshell , is one of the shells available in the kernel that provides you basic ZIP functions. For more information about every command, click the command. All ZIP commands Command Description cdir Gets current local directory for this shell. chadir Changes archive directory. chdir Changes local directory. get Extracts a file. list Lists files. pack Packs a local file to the archive."
   },
   "wiki/config/Configuration-for-KS.html": {
     "href": "wiki/config/Configuration-for-KS.html",

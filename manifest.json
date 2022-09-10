@@ -13736,6 +13736,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "wiki/commands/Archive-commands-for-KS.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/commands/Archive-commands-for-KS.html",
+          "hash": "RFBUJf5n/iBrR+CLSyr9PH/3/vzmzU8i5ol/T1w7j0A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "wiki/commands/Commands-for-KS.md",
       "output": {
         ".html": {
@@ -13832,11 +13844,71 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "wiki/commands/ZIP-commands-for-KS.md",
+      "source_relative_path": "wiki/commands/archive/KS-Archive-Command-cdir.md",
       "output": {
         ".html": {
-          "relative_path": "wiki/commands/ZIP-commands-for-KS.html",
-          "hash": "3ExBVPOzjNQOrXx9xMCjbC6mnm7dBiVlz4orFIHkztM="
+          "relative_path": "wiki/commands/archive/KS-Archive-Command-cdir.html",
+          "hash": "hdLClH9da0V9R4UgexbqYWNFaYzAyEPOy1TmHyvz8Lw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/commands/archive/KS-Archive-Command-chadir.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/commands/archive/KS-Archive-Command-chadir.html",
+          "hash": "V9B6WFMetdi6+sBIy7do0IKrJW3h0VpXEr5GNOpGq9U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/commands/archive/KS-Archive-Command-chdir.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/commands/archive/KS-Archive-Command-chdir.html",
+          "hash": "+lJD1UaMg8XJ00B0Y8QWpMXa62FoYowBL3wOvdG26gM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/commands/archive/KS-Archive-Command-get.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/commands/archive/KS-Archive-Command-get.html",
+          "hash": "SAF1frzn7UAfhHfFSqNLI7KSY+gmfsVvXA/cRl7LvLs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/commands/archive/KS-Archive-Command-list.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/commands/archive/KS-Archive-Command-list.html",
+          "hash": "o9iY7ghdD3Vtlo/1MtDGruKQjFYqSNFwT1tlMPQIt6g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/commands/archive/KS-Archive-Command-pack.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/commands/archive/KS-Archive-Command-pack.html",
+          "hash": "UQMIrl81SPCcwJUr+J2gXLGDsd857ymWziHOJwgod+A="
         }
       },
       "is_incremental": false,
@@ -16256,78 +16328,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "wiki/commands/zip/KS-Zip-Command-cdir.md",
-      "output": {
-        ".html": {
-          "relative_path": "wiki/commands/zip/KS-Zip-Command-cdir.html",
-          "hash": "SA7bvdJw9/C83f+cjw3rBhuDIAtciGAszO9bn086868="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "wiki/commands/zip/KS-Zip-Command-chadir.md",
-      "output": {
-        ".html": {
-          "relative_path": "wiki/commands/zip/KS-Zip-Command-chadir.html",
-          "hash": "qbjMvIOgCbU1J03aIrNzuUv27lW8OJLgcdmJQn23d1Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "wiki/commands/zip/KS-Zip-Command-chdir.md",
-      "output": {
-        ".html": {
-          "relative_path": "wiki/commands/zip/KS-Zip-Command-chdir.html",
-          "hash": "zvk0pyo4ak59w2zHAjfA6AXQbfFplwT+pDA2oVnXxxs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "wiki/commands/zip/KS-Zip-Command-get.md",
-      "output": {
-        ".html": {
-          "relative_path": "wiki/commands/zip/KS-Zip-Command-get.html",
-          "hash": "GHSaI+xnOElKG3G9uG4f6XJLdKIMdNl2f8uZRk+EEdQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "wiki/commands/zip/KS-Zip-Command-list.md",
-      "output": {
-        ".html": {
-          "relative_path": "wiki/commands/zip/KS-Zip-Command-list.html",
-          "hash": "X2tauN+K0jEMfDaLcg37sUTafKllrvTR3D2yyL+bZJc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "wiki/commands/zip/KS-Zip-Command-pack.md",
-      "output": {
-        ".html": {
-          "relative_path": "wiki/commands/zip/KS-Zip-Command-pack.html",
-          "hash": "rY6N6NStfXv8f65qJRrU3TllzRznI+zWPdvyfZmtbbE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "wiki/config/Configuration-for-KS.md",
       "output": {
         ".html": {
@@ -16584,7 +16584,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/toc.html",
-          "hash": "Bu93it4WEaBVOSZWrx+up7NnUjeMDdzSwuR6BZXOHiY="
+          "hash": "6I5tesEqDMkqe2z3ShfL4FABsRS04+VPj3vZrWCbt4A="
         }
       },
       "is_incremental": false,
