@@ -581,6 +581,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.RNG.RandomDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.RNG.RandomDriver.html",
+          "hash": "siuPWuACYnsM6jIEuQ4PMyZTqM7bT88bEUdAx3p/nUA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.RNG.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.RNG.html",
+          "hash": "OoSVyp7oz7CduNrn6bQz+Hg8nDgn0cUz2Xx1/CNspGo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Files.Attributes.AttributeManager.yml",
       "output": {
         ".html": {
@@ -13620,7 +13644,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "WOL+qo2Gpx0Y3rkNeqLk58PwEFB26DXBEwjYZJVTNA4="
+          "hash": "qe/jh9nmq4e30Ybn5VQft2udGieatwACL+pCXN+eALM="
         }
       },
       "is_incremental": false,
@@ -16659,7 +16683,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1133,
+          "total_file_count": 1135,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
