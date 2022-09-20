@@ -1061,11 +1061,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Configuration.Config.ConfigCategory.yml",
+      "source_relative_path": "api/KS.Kernel.Configuration.Config.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Kernel.Configuration.Config.ConfigCategory.html",
-          "hash": "NkXyZs3E4vaxMshpC7uChH0YIFiseZzzXXuv4cWa4dc="
+          "relative_path": "api/KS.Kernel.Configuration.Config.html",
+          "hash": "TsJhzcMQf2V3/+rqkaXgb0MmWOyI6QNb/ls60KL2n2k="
         }
       },
       "is_incremental": false,
@@ -1073,11 +1073,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Configuration.Config.yml",
+      "source_relative_path": "api/KS.Kernel.Configuration.ConfigCategory.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Kernel.Configuration.Config.html",
-          "hash": "BVFRFQQPzTjfvw1FTDY1VEAPxoCTcarS26YXKrRjQJ0="
+          "relative_path": "api/KS.Kernel.Configuration.ConfigCategory.html",
+          "hash": "uf7u4+dU4LYkARxcjQHOUOv4PZ2HLkmcBJWM1QnmBrA="
         }
       },
       "is_incremental": false,
@@ -1089,7 +1089,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.ConfigTools.html",
-          "hash": "VGpr1Dp61uG4xwjd3dH33yr9RZPm+bZ1iDaJs1xYcVQ="
+          "hash": "oWz76VnYgrxUohZsIWj7XvfOGD40nvd5/czai4XXLx8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Configuration.ConfigType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Configuration.ConfigType.html",
+          "hash": "b8If1dMKhp3Z69LWCLPp9KxEThXm9DeiKVjSUmMqSDs="
         }
       },
       "is_incremental": false,
@@ -1101,7 +1113,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.html",
-          "hash": "ql+sP07U88D7rYeNWai2lJLd5XurUmEuj5srqpRpCuw="
+          "hash": "dI8KycfoiGoG7fk0Sqc+zz7Cl0VUJ0qBri7VNFz7dXk="
         }
       },
       "is_incremental": false,
@@ -13656,7 +13668,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "I36JsI7nT/WLVTNHlKod/ODmpy9qL6AzJLc1VSuaaqo="
+          "hash": "ZHOnOCE7AfO4ly3l9tuJvA1W6I4XNk4W0oRU45bgugA="
         }
       },
       "is_incremental": false,
@@ -16572,7 +16584,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Compatibility-Notes-for-Third-Generation-KS.html",
-          "hash": "cQdBVo81y96xS/N/lrF8lj7YZzqaN9wvHdiGc8SSAJE="
+          "hash": "p0eoeV4sTBs9G2Em5eZptxmClek4tpKqSvke+KGegs8="
         }
       },
       "is_incremental": false,
@@ -16695,7 +16707,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1136,
+          "total_file_count": 1137,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
