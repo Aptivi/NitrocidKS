@@ -597,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.RNG.RandomDriver.html",
-          "hash": "siuPWuACYnsM6jIEuQ4PMyZTqM7bT88bEUdAx3p/nUA="
+          "hash": "K1UTPBtyjELkm9nsDYzz43FWcuvwvEpt5xuiOPxLspM="
         }
       },
       "is_incremental": false,
@@ -4769,6 +4769,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Games.RussianRoulette.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Games.RussianRoulette.html",
+          "hash": "qT7M6lRO0LPgbgv0/Av3hGFijlVxsWn0+FUROI0444I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Games.Snaker.SnakeDirection.yml",
       "output": {
         ".html": {
@@ -4845,7 +4857,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Games.html",
-          "hash": "4GaPPgCoJ8/RpeyYRTN5his3nIxY8E+kQz7vVJbYIns="
+          "hash": "XidqFnj9HUEE6MZbrPAeWwPtrEqJ9+pdMoxkRs4iR2c="
         }
       },
       "is_incremental": false,
@@ -9237,7 +9249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandExecutor.html",
-          "hash": "pXbrvKK3WNdcbTJHEnaSjO66mXXLczpXl2yJwLnUSZk="
+          "hash": "vAuPSUsjKi0/a8SXbbngTC74NmpB+Pt4ZlAzV8ikQ3c="
         }
       },
       "is_incremental": false,
@@ -12896,6 +12908,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.RouletteCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.RouletteCommand.html",
+          "hash": "q5SeBbHUQBuk//rDTh/KthuMLU17+iOS50KpjQ11o7g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.RssCommand.yml",
       "output": {
         ".html": {
@@ -13344,7 +13368,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.html",
-          "hash": "jtXh0NJuLyYDEjtQO/7KUKIrjwk3fNRf+A0AuPo6A4c="
+          "hash": "SRPv/UvVMPVNpghVdNM7BoWnVBeSwK4Q+HW2iyQaQFc="
         }
       },
       "is_incremental": false,
@@ -13668,7 +13692,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ZHOnOCE7AfO4ly3l9tuJvA1W6I4XNk4W0oRU45bgugA="
+          "hash": "xgXVgRCJ8XhrLopilTRmRqyy/g8HUJvzgjoRh5b10Io="
         }
       },
       "is_incremental": false,
@@ -16707,7 +16731,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1137,
+          "total_file_count": 1139,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
