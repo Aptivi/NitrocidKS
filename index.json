@@ -2,7 +2,7 @@
   "api/KS.Arguments.ArgumentBase.ArgumentExecutor.html": {
     "href": "api/KS.Arguments.ArgumentBase.ArgumentExecutor.html",
     "title": "Class ArgumentExecutor | Kernel Simulator API - Aptivi",
-    "keywords": "Class ArgumentExecutor Argument executor base class Inheritance System.Object ArgumentExecutor CommandLine_ArgsArgument CommandLine_DebugArgument CommandLine_HelpArgument CommandLine_TestInteractiveArgument DebugArgument MaintenanceArgument QuietArgument SafeArgument TestInteractiveArgument PreBootCommandLine_BypassSizeDetectionArgument PreBootCommandLine_NewReaderArgument PreBootCommandLine_NewWriterArgument PreBootCommandLine_ResetArgument Implements IArgument Namespace : KS.Arguments.ArgumentBase Assembly : Kernel Simulator.dll Syntax public abstract class ArgumentExecutor : IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Executes the argument Declaration public virtual void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs String of arguments System.String [] ListArgsOnly List of argument arguments System.String [] ListSwitchesOnly List of argument switches Exceptions Type Condition System.InvalidOperationException Implements IArgument"
+    "keywords": "Class ArgumentExecutor Argument executor base class Inheritance System.Object ArgumentExecutor CommandLine_ArgsArgument CommandLine_BypassSizeDetectionArgument CommandLine_DebugArgument CommandLine_HelpArgument CommandLine_NewReaderArgument CommandLine_NewWriterArgument CommandLine_ResetArgument CommandLine_TestInteractiveArgument DebugArgument MaintenanceArgument QuietArgument SafeArgument TestInteractiveArgument Implements IArgument Namespace : KS.Arguments.ArgumentBase Assembly : Kernel Simulator.dll Syntax public abstract class ArgumentExecutor : IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Executes the argument Declaration public virtual void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs String of arguments System.String [] ListArgsOnly List of argument arguments System.String [] ListSwitchesOnly List of argument switches Exceptions Type Condition System.InvalidOperationException Implements IArgument"
   },
   "api/KS.Arguments.ArgumentBase.ArgumentHelpSystem.html": {
     "href": "api/KS.Arguments.ArgumentBase.ArgumentHelpSystem.html",
@@ -22,7 +22,7 @@
   "api/KS.Arguments.ArgumentBase.ArgumentType.html": {
     "href": "api/KS.Arguments.ArgumentBase.ArgumentType.html",
     "title": "Enum ArgumentType | Kernel Simulator API - Aptivi",
-    "keywords": "Enum ArgumentType Argument type enumeration Namespace : KS.Arguments.ArgumentBase Assembly : Kernel Simulator.dll Syntax public enum ArgumentType Fields Name Description CommandLineArgs Command line arguments KernelArgs Kernel arguments PreBootCommandLineArgs Pre-boot command line arguments"
+    "keywords": "Enum ArgumentType Argument type enumeration Namespace : KS.Arguments.ArgumentBase Assembly : Kernel Simulator.dll Syntax public enum ArgumentType Fields Name Description CommandLineArgs Command line arguments KernelArgs Kernel arguments"
   },
   "api/KS.Arguments.ArgumentBase.CommandLineArgs.html": {
     "href": "api/KS.Arguments.ArgumentBase.CommandLineArgs.html",
@@ -32,17 +32,12 @@
   "api/KS.Arguments.ArgumentBase.html": {
     "href": "api/KS.Arguments.ArgumentBase.html",
     "title": "Namespace KS.Arguments.ArgumentBase | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Arguments.ArgumentBase Classes ArgumentExecutor Argument executor base class ArgumentHelpSystem Argument help system module ArgumentInfo Argument information class ArgumentParse Argument parser class CommandLineArgs Command line argument class PreBootCommandLineArgsParse Pre-boot command line arguments parser ProvidedArgumentArgumentsInfo Provided argument parameters information class Interfaces IArgument Base kernel argument executor Enums ArgumentType Argument type enumeration"
+    "keywords": "Namespace KS.Arguments.ArgumentBase Classes ArgumentExecutor Argument executor base class ArgumentHelpSystem Argument help system module ArgumentInfo Argument information class ArgumentParse Argument parser class CommandLineArgs Command line argument class ProvidedArgumentArgumentsInfo Provided argument parameters information class Interfaces IArgument Base kernel argument executor Enums ArgumentType Argument type enumeration"
   },
   "api/KS.Arguments.ArgumentBase.IArgument.html": {
     "href": "api/KS.Arguments.ArgumentBase.IArgument.html",
     "title": "Interface IArgument | Kernel Simulator API - Aptivi",
     "keywords": "Interface IArgument Base kernel argument executor Namespace : KS.Arguments.ArgumentBase Assembly : Kernel Simulator.dll Syntax public interface IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Executes the kernel argument with the given argument Declaration void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs Arguments in a string System.String [] ListArgsOnly List of provided arguments System.String [] ListSwitchesOnly List of provided switches"
-  },
-  "api/KS.Arguments.ArgumentBase.PreBootCommandLineArgsParse.html": {
-    "href": "api/KS.Arguments.ArgumentBase.PreBootCommandLineArgsParse.html",
-    "title": "Class PreBootCommandLineArgsParse | Kernel Simulator API - Aptivi",
-    "keywords": "Class PreBootCommandLineArgsParse Pre-boot command line arguments parser Inheritance System.Object PreBootCommandLineArgsParse Namespace : KS.Arguments.ArgumentBase Assembly : Kernel Simulator.dll Syntax public static class PreBootCommandLineArgsParse Fields | Improve this Doc View Source AvailablePreBootCMDLineArgs Available pre-boot command line arguments Declaration public static readonly Dictionary<string, ArgumentInfo> AvailablePreBootCMDLineArgs Field Value Type Description System.Collections.Generic.Dictionary < System.String , ArgumentInfo >"
   },
   "api/KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo.html": {
     "href": "api/KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo.html",
@@ -59,6 +54,11 @@
     "title": "Class CommandLine_ArgsArgument | Kernel Simulator API - Aptivi",
     "keywords": "Class CommandLine_ArgsArgument Inheritance System.Object ArgumentExecutor CommandLine_ArgsArgument Implements IArgument Namespace : KS.Arguments.CommandLineArguments Assembly : Kernel Simulator.dll Syntax class CommandLine_ArgsArgument : ArgumentExecutor, IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly Overrides ArgumentExecutor.Execute(String, String[], String[]) Implements IArgument"
   },
+  "api/KS.Arguments.CommandLineArguments.CommandLine_BypassSizeDetectionArgument.html": {
+    "href": "api/KS.Arguments.CommandLineArguments.CommandLine_BypassSizeDetectionArgument.html",
+    "title": "Class CommandLine_BypassSizeDetectionArgument | Kernel Simulator API - Aptivi",
+    "keywords": "Class CommandLine_BypassSizeDetectionArgument Inheritance System.Object ArgumentExecutor CommandLine_BypassSizeDetectionArgument Implements IArgument Namespace : KS.Arguments.CommandLineArguments Assembly : Kernel Simulator.dll Syntax class CommandLine_BypassSizeDetectionArgument : ArgumentExecutor, IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly Overrides ArgumentExecutor.Execute(String, String[], String[]) Implements IArgument"
+  },
   "api/KS.Arguments.CommandLineArguments.CommandLine_DebugArgument.html": {
     "href": "api/KS.Arguments.CommandLineArguments.CommandLine_DebugArgument.html",
     "title": "Class CommandLine_DebugArgument | Kernel Simulator API - Aptivi",
@@ -69,6 +69,21 @@
     "title": "Class CommandLine_HelpArgument | Kernel Simulator API - Aptivi",
     "keywords": "Class CommandLine_HelpArgument Inheritance System.Object ArgumentExecutor CommandLine_HelpArgument Implements IArgument Namespace : KS.Arguments.CommandLineArguments Assembly : Kernel Simulator.dll Syntax class CommandLine_HelpArgument : ArgumentExecutor, IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly Overrides ArgumentExecutor.Execute(String, String[], String[]) Implements IArgument"
   },
+  "api/KS.Arguments.CommandLineArguments.CommandLine_NewReaderArgument.html": {
+    "href": "api/KS.Arguments.CommandLineArguments.CommandLine_NewReaderArgument.html",
+    "title": "Class CommandLine_NewReaderArgument | Kernel Simulator API - Aptivi",
+    "keywords": "Class CommandLine_NewReaderArgument Inheritance System.Object ArgumentExecutor CommandLine_NewReaderArgument Implements IArgument Namespace : KS.Arguments.CommandLineArguments Assembly : Kernel Simulator.dll Syntax class CommandLine_NewReaderArgument : ArgumentExecutor, IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly Overrides ArgumentExecutor.Execute(String, String[], String[]) Implements IArgument"
+  },
+  "api/KS.Arguments.CommandLineArguments.CommandLine_NewWriterArgument.html": {
+    "href": "api/KS.Arguments.CommandLineArguments.CommandLine_NewWriterArgument.html",
+    "title": "Class CommandLine_NewWriterArgument | Kernel Simulator API - Aptivi",
+    "keywords": "Class CommandLine_NewWriterArgument Inheritance System.Object ArgumentExecutor CommandLine_NewWriterArgument Implements IArgument Namespace : KS.Arguments.CommandLineArguments Assembly : Kernel Simulator.dll Syntax class CommandLine_NewWriterArgument : ArgumentExecutor, IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly Overrides ArgumentExecutor.Execute(String, String[], String[]) Implements IArgument"
+  },
+  "api/KS.Arguments.CommandLineArguments.CommandLine_ResetArgument.html": {
+    "href": "api/KS.Arguments.CommandLineArguments.CommandLine_ResetArgument.html",
+    "title": "Class CommandLine_ResetArgument | Kernel Simulator API - Aptivi",
+    "keywords": "Class CommandLine_ResetArgument Inheritance System.Object ArgumentExecutor CommandLine_ResetArgument Implements IArgument Namespace : KS.Arguments.CommandLineArguments Assembly : Kernel Simulator.dll Syntax class CommandLine_ResetArgument : ArgumentExecutor, IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly Overrides ArgumentExecutor.Execute(String, String[], String[]) Implements IArgument"
+  },
   "api/KS.Arguments.CommandLineArguments.CommandLine_TestInteractiveArgument.html": {
     "href": "api/KS.Arguments.CommandLineArguments.CommandLine_TestInteractiveArgument.html",
     "title": "Class CommandLine_TestInteractiveArgument | Kernel Simulator API - Aptivi",
@@ -77,7 +92,7 @@
   "api/KS.Arguments.CommandLineArguments.html": {
     "href": "api/KS.Arguments.CommandLineArguments.html",
     "title": "Namespace KS.Arguments.CommandLineArguments | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Arguments.CommandLineArguments Classes CommandLine_ArgsArgument CommandLine_DebugArgument CommandLine_HelpArgument CommandLine_TestInteractiveArgument"
+    "keywords": "Namespace KS.Arguments.CommandLineArguments Classes CommandLine_ArgsArgument CommandLine_BypassSizeDetectionArgument CommandLine_DebugArgument CommandLine_HelpArgument CommandLine_NewReaderArgument CommandLine_NewWriterArgument CommandLine_ResetArgument CommandLine_TestInteractiveArgument"
   },
   "api/KS.Arguments.html": {
     "href": "api/KS.Arguments.html",
@@ -113,31 +128,6 @@
     "href": "api/KS.Arguments.KernelArguments.TestInteractiveArgument.html",
     "title": "Class TestInteractiveArgument | Kernel Simulator API - Aptivi",
     "keywords": "Class TestInteractiveArgument Inheritance System.Object ArgumentExecutor TestInteractiveArgument Implements IArgument Namespace : KS.Arguments.KernelArguments Assembly : Kernel Simulator.dll Syntax class TestInteractiveArgument : ArgumentExecutor, IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly Overrides ArgumentExecutor.Execute(String, String[], String[]) Implements IArgument"
-  },
-  "api/KS.Arguments.PreBootCommandLineArguments.html": {
-    "href": "api/KS.Arguments.PreBootCommandLineArguments.html",
-    "title": "Namespace KS.Arguments.PreBootCommandLineArguments | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Arguments.PreBootCommandLineArguments Classes PreBootCommandLine_BypassSizeDetectionArgument PreBootCommandLine_NewReaderArgument PreBootCommandLine_NewWriterArgument PreBootCommandLine_ResetArgument"
-  },
-  "api/KS.Arguments.PreBootCommandLineArguments.PreBootCommandLine_BypassSizeDetectionArgument.html": {
-    "href": "api/KS.Arguments.PreBootCommandLineArguments.PreBootCommandLine_BypassSizeDetectionArgument.html",
-    "title": "Class PreBootCommandLine_BypassSizeDetectionArgument | Kernel Simulator API - Aptivi",
-    "keywords": "Class PreBootCommandLine_BypassSizeDetectionArgument Inheritance System.Object ArgumentExecutor PreBootCommandLine_BypassSizeDetectionArgument Implements IArgument Namespace : KS.Arguments.PreBootCommandLineArguments Assembly : Kernel Simulator.dll Syntax class PreBootCommandLine_BypassSizeDetectionArgument : ArgumentExecutor, IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly Overrides ArgumentExecutor.Execute(String, String[], String[]) Implements IArgument"
-  },
-  "api/KS.Arguments.PreBootCommandLineArguments.PreBootCommandLine_NewReaderArgument.html": {
-    "href": "api/KS.Arguments.PreBootCommandLineArguments.PreBootCommandLine_NewReaderArgument.html",
-    "title": "Class PreBootCommandLine_NewReaderArgument | Kernel Simulator API - Aptivi",
-    "keywords": "Class PreBootCommandLine_NewReaderArgument Inheritance System.Object ArgumentExecutor PreBootCommandLine_NewReaderArgument Implements IArgument Namespace : KS.Arguments.PreBootCommandLineArguments Assembly : Kernel Simulator.dll Syntax class PreBootCommandLine_NewReaderArgument : ArgumentExecutor, IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly Overrides ArgumentExecutor.Execute(String, String[], String[]) Implements IArgument"
-  },
-  "api/KS.Arguments.PreBootCommandLineArguments.PreBootCommandLine_NewWriterArgument.html": {
-    "href": "api/KS.Arguments.PreBootCommandLineArguments.PreBootCommandLine_NewWriterArgument.html",
-    "title": "Class PreBootCommandLine_NewWriterArgument | Kernel Simulator API - Aptivi",
-    "keywords": "Class PreBootCommandLine_NewWriterArgument Inheritance System.Object ArgumentExecutor PreBootCommandLine_NewWriterArgument Implements IArgument Namespace : KS.Arguments.PreBootCommandLineArguments Assembly : Kernel Simulator.dll Syntax class PreBootCommandLine_NewWriterArgument : ArgumentExecutor, IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly Overrides ArgumentExecutor.Execute(String, String[], String[]) Implements IArgument"
-  },
-  "api/KS.Arguments.PreBootCommandLineArguments.PreBootCommandLine_ResetArgument.html": {
-    "href": "api/KS.Arguments.PreBootCommandLineArguments.PreBootCommandLine_ResetArgument.html",
-    "title": "Class PreBootCommandLine_ResetArgument | Kernel Simulator API - Aptivi",
-    "keywords": "Class PreBootCommandLine_ResetArgument Inheritance System.Object ArgumentExecutor PreBootCommandLine_ResetArgument Implements IArgument Namespace : KS.Arguments.PreBootCommandLineArguments Assembly : Kernel Simulator.dll Syntax class PreBootCommandLine_ResetArgument : ArgumentExecutor, IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly Overrides ArgumentExecutor.Execute(String, String[], String[]) Implements IArgument"
   },
   "api/KS.ConsoleBase.Colors.ColorSetErrorReasons.html": {
     "href": "api/KS.ConsoleBase.Colors.ColorSetErrorReasons.html",
