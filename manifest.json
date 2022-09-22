@@ -569,6 +569,150 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encryption.Encryption.Algorithms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encryption.Encryption.Algorithms.html",
+          "hash": "eMHHa0fha64+9UvmQXUI9TIh/uhgAdWuoPmzaf2Prts="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encryption.Encryption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encryption.Encryption.html",
+          "hash": "aF+xLum/LxfJ/bstZY89iQMrDXAIQWzd9xwfmK3IURM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encryption.Encryptors.CRC32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encryption.Encryptors.CRC32.html",
+          "hash": "MNYxFPhKif/1rCFOB/naK0YxoL4kTIZKb8IgWnzENNY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encryption.Encryptors.MD5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encryption.Encryptors.MD5.html",
+          "hash": "sShh+VV5av4gN0xN5N9ddd+pC1Pffg97QNwBdnjtDK4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encryption.Encryptors.SHA1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encryption.Encryptors.SHA1.html",
+          "hash": "MWm0rK/VEbnTYo/HRx15mHnKbQ7f2gSfhpgyL+dnIvI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encryption.Encryptors.SHA256.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encryption.Encryptors.SHA256.html",
+          "hash": "T1SUvRm4CDPqbaF+YDdbbvRmYm8431yurSUTVLV4Pbs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encryption.Encryptors.SHA384.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encryption.Encryptors.SHA384.html",
+          "hash": "XxhrGza+6AGkH1/aredwU5wHLjPKebKr11B9gKoGpFo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encryption.Encryptors.SHA512.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encryption.Encryptors.SHA512.html",
+          "hash": "DsCJdKiT0SLFIIvvHTkcLIH3aIpZKbRzmIuyzNjBkU4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encryption.Encryptors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encryption.Encryptors.html",
+          "hash": "YWtY6nS8koevf9CPLq7pdgONoy7DWk5+IekBr7Jo5C0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encryption.HashVerifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encryption.HashVerifier.html",
+          "hash": "NScJSDv8EfAKck2GINfVHwbyPS0OZQpD7tr2Fc3m6tg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encryption.IEncryptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encryption.IEncryptor.html",
+          "hash": "731L2g6DbJL+QaM3osrjg0YHHYOoyqvHjpw9qL7GjKk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encryption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encryption.html",
+          "hash": "79ZTdudTeW2a9fm17MfUTo3RtBecXF0Fg8mWAxLJyLE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.RNG.RandomDriver.yml",
       "output": {
         ".html": {
@@ -4594,54 +4738,6 @@
         ".html": {
           "relative_path": "api/KS.Misc.Editors.TextEdit.html",
           "hash": "ZaYmpQzXBtTPzJBDeSv2yX1NrCFG7raGks7N3ntwbOk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Encryption.Encryption.Algorithms.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Encryption.Encryption.Algorithms.html",
-          "hash": "j7n02u5fdz2UBXOkvnMtIG7+9+hGd7YvBISIXHhC06Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Encryption.Encryption.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Encryption.Encryption.html",
-          "hash": "reWtwIJEOCnNYNlCdq6KNhPhI0wJbw9oUWFC4wFbd7w="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Encryption.HashVerifier.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Encryption.HashVerifier.html",
-          "hash": "QMdIIqR8M/fgeMcn52SE2NF54X4T5Z+G3kBTE5rR2w0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Encryption.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Encryption.html",
-          "hash": "wQ+f1aautUjRvoigBaNt/rDdX615jMN4iBhiRDgy/Nc="
         }
       },
       "is_incremental": false,
@@ -13668,7 +13764,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "0p0I3r9BMXkcG5yBhhRPtMvrT+sGJmmD4R7C4osL3CE="
+          "hash": "CnOlDR8VXVE+vudO7Y1vuqgzdCXcwOOBFsO6DgRmBSA="
         }
       },
       "is_incremental": false,
@@ -16584,7 +16680,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Compatibility-Notes-for-Third-Generation-KS.html",
-          "hash": "p0eoeV4sTBs9G2Em5eZptxmClek4tpKqSvke+KGegs8="
+          "hash": "OL6yzuqg5/2vBPB1r4Pfeu3DpI9QQXB0OI7oUjOJaPU="
         }
       },
       "is_incremental": false,
@@ -16707,7 +16803,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1137,
+          "total_file_count": 1145,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

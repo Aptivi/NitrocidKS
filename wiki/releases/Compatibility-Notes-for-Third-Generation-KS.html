@@ -166,6 +166,10 @@
 <p>Also, we have added <code>GetColor()</code> and <code>SetColor()</code> functions to ColorTools to perform operations on these color types.</p>
 <h5 id="moved-configcategory-outside-config-class">Moved ConfigCategory outside Config class</h5>
 <p>We have moved ConfigCategory outside the Config class to better organize the enumerations relating to the configuration.</p>
+<h5 id="implemented-interface-for-encryptors">Implemented interface for encryptors</h5>
+<p>This will make implementing future encryptors easier for mods, since it'll now use our own encryption algorithm manager instead of relying on the mod's algorithm management.</p>
+<p>An interface, IEncryptor, was created to help you implement the encryptor faster. You can use Encryption in KS.Drivers.Encryption to use helper functions.</p>
+<p>However, this is only the initial stage of the implementation.</p>
 </article>
           </div>
           
