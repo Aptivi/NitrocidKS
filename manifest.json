@@ -7557,7 +7557,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.RSS.RSSTools.html",
-          "hash": "87Cob7EQbY7GAP7+WsLR8/9rCJqzxMGrUSh5Jk4V3Bg="
+          "hash": "BxvNkyu2dSR8kANsN8hqnhU5QoWhHmO2pZtiplbIEPw="
         }
       },
       "is_incremental": false,
@@ -9321,7 +9321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandExecutor.html",
-          "hash": "vAuPSUsjKi0/a8SXbbngTC74NmpB+Pt4ZlAzV8ikQ3c="
+          "hash": "jBWFqC5kkTciIR8xpBVWqGE+2Y862eZeNkrDGHFVcyc="
         }
       },
       "is_incremental": false,
@@ -10637,6 +10637,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_SearchCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_SearchCommand.html",
+          "hash": "YW1WxLgk1z5DQGm3rOoNbN4NEGZk2GSXAvHeGoykmtM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_SelFeedCommand.yml",
       "output": {
         ".html": {
@@ -10665,7 +10677,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.RSS.Commands.html",
-          "hash": "F4Yr/Qf5OOYo2XVov2LwU3nwjxC0o7C1unY5L6aW+mE="
+          "hash": "1qXeEG2SQ0AMEJfiwi9zbivKP3XcJg0Plk48iPZtN8M="
         }
       },
       "is_incremental": false,
@@ -10689,7 +10701,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.RSS.RSSShellCommon.html",
-          "hash": "cMwHmBPm+BC3AMfcdWI/FvDrkvQ/ERio6hMaJYBVFEU="
+          "hash": "yLNbLtGZqFnmUCI4Gh3uaTdcUnyP2DAJM3h2FNQxpFE="
         }
       },
       "is_incremental": false,
@@ -13764,7 +13776,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "CnOlDR8VXVE+vudO7Y1vuqgzdCXcwOOBFsO6DgRmBSA="
+          "hash": "Uf4j5icZHkOHCt4PKInGkAXxJBWUZ2uN8uRz0pmjne8="
         }
       },
       "is_incremental": false,
@@ -16803,7 +16815,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1145,
+          "total_file_count": 1146,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
