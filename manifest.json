@@ -4701,7 +4701,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Editors.JsonShell.JsonTools.html",
-          "hash": "3AJIpDniKRsgrhoGiD6s1zHYf5NZcjaffFlm3oWbtQU="
+          "hash": "etrRknVJ5Grlnp/hGJ25lOrpb0t5LG3qjulDpyy6u6Q="
         }
       },
       "is_incremental": false,
@@ -9345,7 +9345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandExecutor.html",
-          "hash": "GTqJMfd7vIKK27DVWQbUlmtupkEsr3XXa5fx7Id9Wuo="
+          "hash": "xxzTSsN5AqXDqh/48JGhNL9CqCSFCmYFNn8lydb/Ao8="
         }
       },
       "is_incremental": false,
@@ -10245,7 +10245,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Json.Commands.JsonShell_AddArrayCommand.html",
-          "hash": "3D2OAa3xDiyZPHPTsXRX47oTYROww0DejQ1amM+17Ik="
+          "hash": "T3ZYje00/xQhFuvpKKx0T+miU6pVjsdoko+bvmRlDlY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Json.Commands.JsonShell_AddObjectCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Json.Commands.JsonShell_AddObjectCommand.html",
+          "hash": "HlbQPUiz9GcSy667/i8rp7q5SH7eiiJdOeZpSCJbNbA="
         }
       },
       "is_incremental": false,
@@ -10341,7 +10353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Json.Commands.html",
-          "hash": "odPByhReF6hSVTnWMFc+RBMxde11EENeE3QuKt61k/E="
+          "hash": "flJClJt/juWyIijRRy6SAjujPKaishSfh+Km81wVYXA="
         }
       },
       "is_incremental": false,
@@ -10365,7 +10377,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Json.JsonShellCommon.html",
-          "hash": "hQxb9BP1CYSn4BF/buejDg5K8oeMb+GUpLYn7lU3f08="
+          "hash": "2SOGb531JQYY/22yyykOUuHDjDhLhHJFPzi3ftupMJc="
         }
       },
       "is_incremental": false,
@@ -13824,7 +13836,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "CRRcKVcu/OA3dju00Lp1mpgL5IwW3OmhSc2QOq/5k1Q="
+          "hash": "rrCKCo5nKMxeUIZDX5uXbgROGoVwHAH5FviLd9PjDjk="
         }
       },
       "is_incremental": false,
@@ -16863,7 +16875,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1150,
+          "total_file_count": 1151,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
