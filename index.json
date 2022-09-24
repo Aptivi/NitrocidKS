@@ -2,7 +2,7 @@
   "api/KS.Arguments.ArgumentBase.ArgumentExecutor.html": {
     "href": "api/KS.Arguments.ArgumentBase.ArgumentExecutor.html",
     "title": "Class ArgumentExecutor | Kernel Simulator API - Aptivi",
-    "keywords": "Class ArgumentExecutor Argument executor base class Inheritance System.Object ArgumentExecutor CommandLine_ArgsArgument CommandLine_BypassSizeDetectionArgument CommandLine_DebugArgument CommandLine_HelpArgument CommandLine_NewReaderArgument CommandLine_NewWriterArgument CommandLine_ResetArgument CommandLine_TestInteractiveArgument DebugArgument MaintenanceArgument QuietArgument SafeArgument TestInteractiveArgument Implements IArgument Namespace : KS.Arguments.ArgumentBase Assembly : Kernel Simulator.dll Syntax public abstract class ArgumentExecutor : IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Executes the argument Declaration public virtual void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs String of arguments System.String [] ListArgsOnly List of argument arguments System.String [] ListSwitchesOnly List of argument switches Exceptions Type Condition System.InvalidOperationException Implements IArgument"
+    "keywords": "Class ArgumentExecutor Argument executor base class Inheritance System.Object ArgumentExecutor CommandLine_ArgsArgument CommandLine_BypassSizeDetectionArgument CommandLine_DebugArgument CommandLine_HelpArgument CommandLine_NewReaderArgument CommandLine_NewWriterArgument CommandLine_ResetArgument CommandLine_TestInteractiveArgument MaintenanceArgument QuietArgument SafeArgument TestInteractiveArgument Implements IArgument Namespace : KS.Arguments.ArgumentBase Assembly : Kernel Simulator.dll Syntax public abstract class ArgumentExecutor : IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Executes the argument Declaration public virtual void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs String of arguments System.String [] ListArgsOnly List of argument arguments System.String [] ListSwitchesOnly List of argument switches Exceptions Type Condition System.InvalidOperationException Implements IArgument"
   },
   "api/KS.Arguments.ArgumentBase.ArgumentHelpSystem.html": {
     "href": "api/KS.Arguments.ArgumentBase.ArgumentHelpSystem.html",
@@ -99,15 +99,10 @@
     "title": "Namespace KS.Arguments | Kernel Simulator API - Aptivi",
     "keywords": "Namespace KS.Arguments Classes ArgumentPrompt Argument prompt module"
   },
-  "api/KS.Arguments.KernelArguments.DebugArgument.html": {
-    "href": "api/KS.Arguments.KernelArguments.DebugArgument.html",
-    "title": "Class DebugArgument | Kernel Simulator API - Aptivi",
-    "keywords": "Class DebugArgument Inheritance System.Object ArgumentExecutor DebugArgument Implements IArgument Namespace : KS.Arguments.KernelArguments Assembly : Kernel Simulator.dll Syntax class DebugArgument : ArgumentExecutor, IArgument Methods | Improve this Doc View Source Execute(String, String[], String[]) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly Overrides ArgumentExecutor.Execute(String, String[], String[]) Implements IArgument"
-  },
   "api/KS.Arguments.KernelArguments.html": {
     "href": "api/KS.Arguments.KernelArguments.html",
     "title": "Namespace KS.Arguments.KernelArguments | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Arguments.KernelArguments Classes DebugArgument MaintenanceArgument QuietArgument SafeArgument TestInteractiveArgument"
+    "keywords": "Namespace KS.Arguments.KernelArguments Classes MaintenanceArgument QuietArgument SafeArgument TestInteractiveArgument"
   },
   "api/KS.Arguments.KernelArguments.MaintenanceArgument.html": {
     "href": "api/KS.Arguments.KernelArguments.MaintenanceArgument.html",
