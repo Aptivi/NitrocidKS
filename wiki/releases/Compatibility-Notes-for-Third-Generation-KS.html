@@ -199,6 +199,9 @@
 <p>This is actually a character management function and not a function directly to the kernel.</p>
 <h5 id="moved-kslogin-to-ksuserslogin">Moved KS.Login to KS.Users.Login</h5>
 <p>This has to do with the user management namespace, so we moved it to that namespace.</p>
+<h5 id="moved-kernelapiversion-to-kerneltools">Moved Kernel[Api]Version to KernelTools</h5>
+<p>We don't want the <code>Kernel</code> class to be publicly accessible, since it has been planned back at 0.0.1 as the class responsible for being an entry point.</p>
+<p>These variables, <code>KernelVersion</code> and <code>KernelApiVersion</code>, are successfully moved to <code>KernelTools</code>.</p>
 </article>
           </div>
           
