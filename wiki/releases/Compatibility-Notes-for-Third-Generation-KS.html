@@ -177,6 +177,28 @@
 <p>We have improved the color tools module, so SetColors is no longer used. We've removed it for this reason. Use <code>SetColor()</code> instead.</p>
 <h5 id="changed-algorithm-enum-to-encryptionalgorithms">Changed algorithm enum to EncryptionAlgorithms</h5>
 <p>As part of an ongoing change to the encryption driver, we've changed the algorithm enumeration to EncryptionAlgorithms outside the Encryption module.</p>
+<h5 id="renamed-two-classes-related-to-shell">Renamed two classes related to shell</h5>
+<p>We have renamed the below two shell-related classes to the ones that suit the narrative of the classes.</p>
+<ul>
+<li>Affected classes:
+<ul>
+<li>ShellInfo -&gt; ShellExecuteInfo</li>
+<li>ShellExecutor -&gt; BaseShell</li>
+</ul>
+</li>
+</ul>
+<h5 id="moved-textlocation-to-misctext">Moved TextLocation to Misc.Text</h5>
+<p>This is a text-related enum of text vertical location (top, bottom).</p>
+<h5 id="moved-getcommands-to-commandmanager">Moved GetCommands to CommandManager</h5>
+<p>This sub is more of a command management routine than the &quot;getting command&quot; module work itself.</p>
+<h5 id="changed-the-entire-event-system">Changed the entire event system</h5>
+<p>We have moved all the events to its own dedicated array containing all the available events that the kernel introduced, removing the giant Events class and its variable, <code>KernelEventManager</code>, in the Kernel entry point class. This will reduce the need of importing the Kernel namespace and class everytime we need to directly manage the events.</p>
+<p>Event firing and response functions are moved to the EventsManager class in one function, <code>FireEvent</code>.</p>
+<p>This reduces the amount of lines by more than 3500 lines.</p>
+<h5 id="moved-newline-from-kernel-to-charmanager">Moved NewLine from Kernel to CharManager</h5>
+<p>This is actually a character management function and not a function directly to the kernel.</p>
+<h5 id="moved-kslogin-to-ksuserslogin">Moved KS.Login to KS.Users.Login</h5>
+<p>This has to do with the user management namespace, so we moved it to that namespace.</p>
 </article>
           </div>
           

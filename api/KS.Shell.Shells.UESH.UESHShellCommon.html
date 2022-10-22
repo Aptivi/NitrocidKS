@@ -89,15 +89,35 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">UESHShellCommon</span></div>
+    <div class="level1"><a class="xref" href="KS.Shell.ShellBase.Shells.BaseShellInfo.html">BaseShellInfo</a></div>
+    <div class="level2"><span class="xref">UESHShellCommon</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Shell.ShellBase.Shells.IShellInfo.html">IShellInfo</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_ShellLock">BaseShellInfo.ShellLock</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_Aliases">BaseShellInfo.Aliases</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_ModCommands">BaseShellInfo.ModCommands</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_CustomShellPresets">BaseShellInfo.CustomShellPresets</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Shell.Shells.UESH.html">KS.Shell.Shells.UESH</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Shell_Shells_UESH_UESHShellCommon_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class UESHShellCommon</code></pre>
+    <pre><code class="lang-csharp hljs">class UESHShellCommon : BaseShellInfo, IShellInfo</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
@@ -106,15 +126,16 @@
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/Shells/UESH/UESHShellCommon.cs/#L37">View Source</a>
   </span>
+  <a id="KS_Shell_Shells_UESH_UESHShellCommon_Commands_" data-uid="KS.Shell.Shells.UESH.UESHShellCommon.Commands*"></a>
   <h4 id="KS_Shell_Shells_UESH_UESHShellCommon_Commands" data-uid="KS.Shell.Shells.UESH.UESHShellCommon.Commands">Commands</h4>
   <div class="markdown level1 summary"><p>List of commands</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly Dictionary&lt;string, CommandInfo&gt; Commands</code></pre>
+    <pre><code class="lang-csharp hljs">public override Dictionary&lt;string, CommandInfo&gt; Commands { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -129,21 +150,24 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_Commands">BaseShellInfo.Commands</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESH_UESHShellCommon_ModCommands.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESH.UESHShellCommon.ModCommands%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESH_UESHShellCommon_CurrentPreset.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESH.UESHShellCommon.CurrentPreset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/Shells/UESH/UESHShellCommon.cs/#L32">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/Shells/UESH/UESHShellCommon.cs/#L171">View Source</a>
   </span>
-  <h4 id="KS_Shell_Shells_UESH_UESHShellCommon_ModCommands" data-uid="KS.Shell.Shells.UESH.UESHShellCommon.ModCommands">ModCommands</h4>
+  <a id="KS_Shell_Shells_UESH_UESHShellCommon_CurrentPreset_" data-uid="KS.Shell.Shells.UESH.UESHShellCommon.CurrentPreset*"></a>
+  <h4 id="KS_Shell_Shells_UESH_UESHShellCommon_CurrentPreset" data-uid="KS.Shell.Shells.UESH.UESHShellCommon.CurrentPreset">CurrentPreset</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, CommandInfo&gt; ModCommands</code></pre>
+    <pre><code class="lang-csharp hljs">public override PromptPresetBase CurrentPreset { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -153,11 +177,81 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Shell.ShellBase.Commands.CommandInfo.html">CommandInfo</a>&gt;</td>
+        <td><a class="xref" href="KS.Shell.Prompts.PromptPresetBase.html">PromptPresetBase</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_CurrentPreset">BaseShellInfo.CurrentPreset</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESH_UESHShellCommon_ShellBase.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESH.UESHShellCommon.ShellBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/Shells/UESH/UESHShellCommon.cs/#L169">View Source</a>
+  </span>
+  <a id="KS_Shell_Shells_UESH_UESHShellCommon_ShellBase_" data-uid="KS.Shell.Shells.UESH.UESHShellCommon.ShellBase*"></a>
+  <h4 id="KS_Shell_Shells_UESH_UESHShellCommon_ShellBase" data-uid="KS.Shell.Shells.UESH.UESHShellCommon.ShellBase">ShellBase</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override BaseShell ShellBase { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Shell.ShellBase.Shells.BaseShell.html">BaseShell</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_ShellBase">BaseShellInfo.ShellBase</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESH_UESHShellCommon_ShellPresets.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESH.UESHShellCommon.ShellPresets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/Shells/UESH/UESHShellCommon.cs/#L158">View Source</a>
+  </span>
+  <a id="KS_Shell_Shells_UESH_UESHShellCommon_ShellPresets_" data-uid="KS.Shell.Shells.UESH.UESHShellCommon.ShellPresets*"></a>
+  <h4 id="KS_Shell_Shells_UESH_UESHShellCommon_ShellPresets" data-uid="KS.Shell.Shells.UESH.UESHShellCommon.ShellPresets">ShellPresets</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Dictionary&lt;string, PromptPresetBase&gt; ShellPresets { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Shell.Prompts.PromptPresetBase.html">PromptPresetBase</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_ShellPresets">BaseShellInfo.ShellPresets</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Shell.ShellBase.Shells.IShellInfo.html">IShellInfo</a>
+  </div>
 </article>
           </div>
           
@@ -169,7 +263,7 @@
                     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_Shells_UESH_UESHShellCommon.md&amp;value=---%0Auid%3A%20KS.Shell.Shells.UESH.UESHShellCommon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/Shells/UESH/UESHShellCommon.cs/#L30" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/Shells/UESH/UESHShellCommon.cs/#L32" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

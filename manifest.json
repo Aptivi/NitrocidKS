@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Arguments.ArgumentPrompt.html",
-          "hash": "1Wk/aBefgTsKGS3tyIB79yi1/6AAzwjM5k9A6TlFMsk="
+          "hash": "eF9csiV/GLTgcDgjQk47eDBmxewqyaPhdyzefpvb38I="
         }
       },
       "is_incremental": false,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.Colors.ColorWheelOpen.html",
-          "hash": "34fnypToVe0fyr6RyL4oUKNSwSXAf21/76Bvh/jfjtY="
+          "hash": "yRNd+5ESSTkGHv65S/XwkDeaAeDvbp7g9ZVIdfOyX5c="
         }
       },
       "is_incremental": false,
@@ -381,7 +381,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.ConsoleExtensions.html",
-          "hash": "Z0TpHAnUbSyw3DiClEBoVkQ6932SJFj+ZJoNk0jEIRg="
+          "hash": "/ME9vyYiaqj8pjO5CFqTe9immP97r+Dmy4MVqmMqGDY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.ConsoleResizeListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.ConsoleResizeListener.html",
+          "hash": "NmtQQ02tYrl5nar6YmX2fhopTuP7SOpzOPuqB0sE8OE="
         }
       },
       "is_incremental": false,
@@ -393,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.ConsoleSanityChecker.html",
-          "hash": "dgGDkfq+MebFk8xZgppC0oJi54taU6Cv8ZWLsxxrfhc="
+          "hash": "YKlaw7TH9GtCeVKgDYj+wiwi4vRPFfgqyn3huun0UAY="
         }
       },
       "is_incremental": false,
@@ -429,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.Inputs.Styles.ChoiceStyle.ChoiceOutputType.html",
-          "hash": "yIxLmg6GcZdk8esYqsB8ebAuiaYgt0eMHH9z/nyrxTA="
+          "hash": "bZ16Vc1f79TG7X3OQV4WTQy3vs2JJHWr2FFBCCabEVE="
         }
       },
       "is_incremental": false,
@@ -441,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.Inputs.Styles.ChoiceStyle.html",
-          "hash": "X8+A2Aqd9zayYn0Rl1FaYmgzUQyqb94GWzwgQAtiCGs="
+          "hash": "yQtjjnJIWUxEnhS0F7UhjnU4OVvk8Xas6Yn6JMB0BsM="
         }
       },
       "is_incremental": false,
@@ -465,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.Inputs.Styles.SelectionStyle.html",
-          "hash": "m4yX5g21ZmB2pDdBZ2bntDWecPOqij4CQdxju+rze3Y="
+          "hash": "NSEZUlgvXPOI8HKfcGwcilCYfbpkCYSW9UqZz/Mqjww="
         }
       },
       "is_incremental": false,
@@ -525,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.Themes.ThemeTools.html",
-          "hash": "SOObd0cjQh+FnVQ/VhJ35cFf6vWRw3yLTcCOGbPYbq0="
+          "hash": "dg1lONe/rcjtqnPMIrNm++QVy2lITYm9G46+9WO5LjM="
         }
       },
       "is_incremental": false,
@@ -549,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.html",
-          "hash": "O9NkgcAKVuQkf/KgQ1+ub/t7vfSMqR1/OWdOKZmsUyg="
+          "hash": "NFyvQa3IHj4wiKc6ZwHh+0lgybf0BKh+tzY4Eq1DNNw="
         }
       },
       "is_incremental": false,
@@ -801,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Folders.Listing.html",
-          "hash": "2ZjI7WA19lJbxe60Qrtwd1Dms31bCXE9efvauEPEPU8="
+          "hash": "wyBG7qdUAm2knWbeWk7Fo8Tp4YjYda3AGffCpp0DKYY="
         }
       },
       "is_incremental": false,
@@ -821,11 +833,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Interactive.FileManagerBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Interactive.FileManagerBinding.html",
+          "hash": "qRP216odWUDQJ8vFlgK+VLVq1nKQeV9TyRxLd10IZzY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Interactive.FileManagerCli.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Interactive.FileManagerCli.html",
+          "hash": "fYgUd4Zvx3GOO07OXNokQDZMB1nflBDeEX/Sw4uf+nU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Interactive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Interactive.html",
+          "hash": "9XX0vLpls8Y3jxNhfYUDfogKcghf/m/PFqrODR/TlxQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Files.KernelPathType.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.KernelPathType.html",
-          "hash": "LtMN3Vakkm+9tnWssv52e/pwh5vNpN5UruPD6H4xbws="
+          "hash": "ky9bVkU2pRx5/VP5l7b2mrwS/ICuWN527WncUaixvZA="
         }
       },
       "is_incremental": false,
@@ -861,7 +909,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.LineEndings.LineEndingsTools.html",
-          "hash": "3AoQ1iSjAJoR/ZuqyYAO9L1bT4Libgc8Xx8ca1ioMWA="
+          "hash": "fA3tUJFAaT7UWSZEi2mi3Bs1EwgFlKJSx1ZGbrgNPm4="
         }
       },
       "is_incremental": false,
@@ -909,7 +957,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Operations.Making.html",
-          "hash": "fTcOrY09za4Fm6znmq0nGTbyW/+FJb45O/mgmdjMMds="
+          "hash": "/ruqlsm4c8Y3cxv8/ZzgjQbN5EA5zW8fRKawxSrsQ5Q="
         }
       },
       "is_incremental": false,
@@ -981,7 +1029,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Paths.html",
-          "hash": "5IYbUiDp3jr5ilwPJYQi+Wv+Ighl13v9VVRi+OqbHxU="
+          "hash": "BSDt/2kirYPPHzXyV4tf4xupTJExYZ5LPScbBn8pNS0="
         }
       },
       "is_incremental": false,
@@ -1005,7 +1053,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Print.FileContentPrinter.html",
-          "hash": "IwCwLehgTdxQvOboLen7rDyyLOiWdb0mPtxWCunDAhQ="
+          "hash": "9dk8VKrm4fyD6EiHZ2BxeB9dFPhbEUs7+8ssZjmgge0="
         }
       },
       "is_incremental": false,
@@ -1042,6 +1090,18 @@
         ".html": {
           "relative_path": "api/KS.Files.Querying.Checking.html",
           "hash": "31M+zRJNoxUkAlJnSgCY0bGSfwCIyvUslRPX3eOivS4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Querying.Getting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Querying.Getting.html",
+          "hash": "6JijwL4m1suc6HjOSf6MwHiAjpOC2l6oQlLW6x2uJQE="
         }
       },
       "is_incremental": false,
@@ -1089,7 +1149,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Querying.html",
-          "hash": "IBMJMpgjKT+SPDFmzSQsF8f1wizqg9pUtzYpecU8Rv0="
+          "hash": "rOAwzqx4829KxQpnxJnKhkiR4ixSxMagwPA3QAhPUZg="
         }
       },
       "is_incremental": false,
@@ -1169,11 +1229,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Administration.Journalling.JournalManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Administration.Journalling.JournalManager.html",
+          "hash": "3fXhMTlgEtuYG8PNLl61CCPtvLHZf5wu6tGeeWgQwRQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Administration.Journalling.JournalStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Administration.Journalling.JournalStatus.html",
+          "hash": "2jd+WGc8t+oYCAna0H6RcVewg/fVKpFInyFqZRaFjbM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Administration.Journalling.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Administration.Journalling.html",
+          "hash": "DwtAI2nVYEfgH16IUXOqkjhdXVw0l9YaLBs01vvT57Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Configuration.Config.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Config.html",
-          "hash": "MpTaCaYCg1nkWlorhI/MrhoniqiPqOAtPtkUNX6bwvc="
+          "hash": "i6iaEU4o4HW1nQkiN1LAgYGDt9lzzMJSsHLFd8VLfPE="
         }
       },
       "is_incremental": false,
@@ -1245,7 +1341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.DebugManager.html",
-          "hash": "FSvatCYrtaXhgRC+EOrYYhkAyLCZoPtw/34I1YFnVGY="
+          "hash": "QW6BHJL4maI/8qS5sdQ7frouf57hyr9X0T1yR+5ApDo="
         }
       },
       "is_incremental": false,
@@ -1257,7 +1353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.DebugWriter.html",
-          "hash": "i0QG9h5aYOD4NbPUVk9PbHpYgVDP5QReLOTz3G7fFKY="
+          "hash": "HiR1TCpB3z/HP0vN+kzMDUTOu0OvWu5B/WDj52GdU+I="
         }
       },
       "is_incremental": false,
@@ -1317,7 +1413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand.html",
-          "hash": "sS0aFrSyxckvia30UmYasisY1nYhuGFvbgbSuSOIFZ4="
+          "hash": "oNBa32KWWdsg9byZ5cZDWkQuNl8xQxFZZfX7AP55l+Y="
         }
       },
       "is_incremental": false,
@@ -1457,1739 +1553,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ArchiveCommandErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ArchiveCommandErrorEventHandler.html",
-          "hash": "I4T1qV5otILNq65hp9ln4bkjkw971b0yT+IRerTT3Gk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ArchivePostExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ArchivePostExecuteCommandEventHandler.html",
-          "hash": "RS1rSi4UiVwIXkvmIKXE4M64G3gGp0ubqayLLYXFA9I="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ArchivePreExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ArchivePreExecuteCommandEventHandler.html",
-          "hash": "JdeDTWNPfo3vnVqNXLL629gcmu++n8U+8NPaEnmGkzQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ArchiveShellInitializedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ArchiveShellInitializedEventHandler.html",
-          "hash": "+o9PM3hTysIGNLViCDI13bMMaIbWAI1D2lWXxapuFEs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ArgumentsInjectedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ArgumentsInjectedEventHandler.html",
-          "hash": "L55cWkBezCxbTALGed8rVBbjtvlMPRy6CH8W//X6BYE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ColorResetEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ColorResetEventHandler.html",
-          "hash": "t73/jrftdxZT4X5MHLsVj1CSPkbPYda136HNGfd1LGo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ColorSetErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ColorSetErrorEventHandler.html",
-          "hash": "U53cu+euXIWuA8mU8HEmw782KYyLP8nbYLWTv7jF8Bw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ColorSetEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ColorSetEventHandler.html",
-          "hash": "SSxYevU3Ybc1MCp9nxNP3dWM0TTUUzi4jLsyY/4uR/Q="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.CommandErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.CommandErrorEventHandler.html",
-          "hash": "h0n80WLcorF20yiMa/pYQA3fy+omvxMP2Bcf4vj50X4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ConfigReadErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ConfigReadErrorEventHandler.html",
-          "hash": "cI93p/VxBp+mIov3W00xH9r/hwe5fduiJFkDBFj4OV0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ConfigReadEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ConfigReadEventHandler.html",
-          "hash": "3206+4duqgedKx8tAaxgvFuSZ1l62FvxeEcbq2jtk9w="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ConfigSaveErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ConfigSaveErrorEventHandler.html",
-          "hash": "z3iaw9Sf/1q7DHWeCgIsoaJEUk008+Jy30GeOjk2PSI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ConfigSavedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ConfigSavedEventHandler.html",
-          "hash": "DKadGIaSpY22YM7zkv89D+q83uvOP2dBzN2ZWtqdkMQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ContKernelErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ContKernelErrorEventHandler.html",
-          "hash": "OW9I5wRp6mjPBDCjbOOLO8bV2LhXxOxZX0TMM2JRumY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.CurrentDirectoryChangedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.CurrentDirectoryChangedEventHandler.html",
-          "hash": "U0b8tWdqnxhfxU1/eQGnqwUnDBbEftBWkYJIRd33tYw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.DirectoryCopiedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.DirectoryCopiedEventHandler.html",
-          "hash": "bno5kbqGhu/KeGFFkNkPlHQPJK/pqo9OUEfUngt0OUw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.DirectoryCreatedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.DirectoryCreatedEventHandler.html",
-          "hash": "vzagve3gevw4frcPXFst1hYzAbgVz+29DJyAJx9f3Vs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.DirectoryMovedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.DirectoryMovedEventHandler.html",
-          "hash": "7ziDAPzS7xkvfSQzrTvfo7oZb211dwnjl5ITyN/73zY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.DirectoryRemovedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.DirectoryRemovedEventHandler.html",
-          "hash": "cqsJIHJv12rzPWyMd590ucHI1zhxtRCnJUz/CSKBSDA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.FTPCommandErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.FTPCommandErrorEventHandler.html",
-          "hash": "A1p9kHMQcXldBxzcb3AM9fDlc80PP/N4h6WIJxs6PWY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.FTPPostDownloadEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.FTPPostDownloadEventHandler.html",
-          "hash": "TZHL4/rixkVd1NyXLJQeXCfisJZP8vS7clPYGNtJAIM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.FTPPostExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.FTPPostExecuteCommandEventHandler.html",
-          "hash": "SsYqgY/jiyRfcpnGH6nhDWRuXMlCIb43PEhriJepaFA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.FTPPostUploadEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.FTPPostUploadEventHandler.html",
-          "hash": "gJxsU1DYrKoQtSMsLDFjwSk/QGjKtisv+PWdR9V5eBw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.FTPPreDownloadEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.FTPPreDownloadEventHandler.html",
-          "hash": "nL0mq2wvt0aL/XkeQgmMviDMSsBGd6D7rcHBN0RcUPo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.FTPPreExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.FTPPreExecuteCommandEventHandler.html",
-          "hash": "39e45m/ECCzVPX8fbrEAnBOQVKRiZhLCTL9cxj4PyOw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.FTPPreUploadEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.FTPPreUploadEventHandler.html",
-          "hash": "k0fHHgvxBbLGWdriNWgL2YpkrBMpDnJ+4GGXeyNL7Q0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.FTPShellInitializedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.FTPShellInitializedEventHandler.html",
-          "hash": "WLNeyXRCW5SaIsh+RTYYQ4vJJCPpF+k+5QPjrPPzADQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.FileAttributeAddedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.FileAttributeAddedEventHandler.html",
-          "hash": "AN4kOLDUlFmtuFLvu0CIzzV4xXhIcU1DjVBXDUfwbg8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.FileAttributeRemovedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.FileAttributeRemovedEventHandler.html",
-          "hash": "bk2TOqGR7hQH+YE9SoofJKXng78Llhm9rlT9S9s1Fjs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.FileCopiedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.FileCopiedEventHandler.html",
-          "hash": "msK70M6xerpDhgo3gpfOOaskAp9JCyzJpO8PtE5UCWw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.FileCreatedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.FileCreatedEventHandler.html",
-          "hash": "XURM9ll6PzOSjV+uJfl6QiygDAYW1OkRE9FhA9/40QI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.FileMovedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.FileMovedEventHandler.html",
-          "hash": "L4mj9Jj0aYeJJBJNZ5BwIQ27ISBUrGSlLINqAjJWjwE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.FileRemovedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.FileRemovedEventHandler.html",
-          "hash": "qpDSnKZqU2h6e5Bxgt5TRPrSO4XGFn67T8r4MqrGg+Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.GarbageCollectedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.GarbageCollectedEventHandler.html",
-          "hash": "gioQOwFdr3kIPeBgdFqnna9vAPB3lscexTwWeu7iLK4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.HTTPCommandErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.HTTPCommandErrorEventHandler.html",
-          "hash": "oVTCuu9nphl3tRUtCqctTzA3umJN+M0AHp0tI/uOc8c="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.HTTPPostExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.HTTPPostExecuteCommandEventHandler.html",
-          "hash": "cmmC3MZDwIFIcU4NeCrvD/4wBETRWqjfEwn5p6qkXlI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.HTTPPreExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.HTTPPreExecuteCommandEventHandler.html",
-          "hash": "uk8+VwuvdWxwd+2mha0igxZrgsJgEQ3IJXa/GkdVuZ8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.HTTPShellInitializedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.HTTPShellInitializedEventHandler.html",
-          "hash": "liB98nPu2GzbhT5jQ8nSCGa85F68NB4oxUQ9FZSYKsg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.HardwareProbedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.HardwareProbedEventHandler.html",
-          "hash": "rh8GTIKPvQER4kYXISfnjCjI8+Ne6P486psmEjkiiIY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.HardwareProbingEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.HardwareProbingEventHandler.html",
-          "hash": "YPtsEm6b3juLHUHE43A9IFUveainEhtlYLjwW4d3NNY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.HexCommandErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.HexCommandErrorEventHandler.html",
-          "hash": "mUzE3T6GIBihALi8ZmrtRWc0ygFogZeosS53uaipu8I="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.HexPostExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.HexPostExecuteCommandEventHandler.html",
-          "hash": "2AbwgM+1C6aOisSgAntkQBHGgRXLPfJCLLjSjduGmZA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.HexPreExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.HexPreExecuteCommandEventHandler.html",
-          "hash": "KL2xewcec2STxkeQSACrQmfscxXT5KOrs4VrWqDTC+o="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.HexShellInitializedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.HexShellInitializedEventHandler.html",
-          "hash": "F2GO+bkim3JP2qkkGYXld/Yb3stkL2VM4QpuJKtnYy4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.IMAPCommandErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.IMAPCommandErrorEventHandler.html",
-          "hash": "sBq767aDuoWmnUrQSE7fxRmtVppDPCPYz4F5jO9qcjA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.IMAPPostExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.IMAPPostExecuteCommandEventHandler.html",
-          "hash": "D9KNwbgC39FSZtKS1dgtSobVaygysEG341qtBoJ4bZc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.IMAPPreExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.IMAPPreExecuteCommandEventHandler.html",
-          "hash": "w73kqeTL6A8FpTXnlP72mbVge2LbdjMNBj7ODBApoR4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.IMAPShellInitializedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.IMAPShellInitializedEventHandler.html",
-          "hash": "xgbfRex0vptEGm6z5VETbCxAH1J1wedpVD5jcNTG1gs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.JsonCommandErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.JsonCommandErrorEventHandler.html",
-          "hash": "EIt4qlkU3vwySLVjBZorsUIWL5WFnUHFLOfPIcgguhg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.JsonPostExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.JsonPostExecuteCommandEventHandler.html",
-          "hash": "YkR3dA6M8ESREg1Tft1/7wKhKGo3/M8BMI3KDt0jVr8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.JsonPreExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.JsonPreExecuteCommandEventHandler.html",
-          "hash": "XhGWl1A37CQM1uQt5Y97QMF+vntIm3qpS2A7IyBCJz4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.JsonShellInitializedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.JsonShellInitializedEventHandler.html",
-          "hash": "NSvr31zz/4apXc691YUk7uDp5EI18/lt4yJMI3XQ5NM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.KernelErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.KernelErrorEventHandler.html",
-          "hash": "121sMtGFZ6UwHhGrwAZeDDSQCflz8/1jaxN5TISKYvc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.KernelStartedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.KernelStartedEventHandler.html",
-          "hash": "1ZTCNcR9FzfGvQyE2zvxAvf+K5gvfNo/twoQ5UGhiyQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.LanguageInstallErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.LanguageInstallErrorEventHandler.html",
-          "hash": "B6pPkTFVtkfPIN7rtPoq1N40fN6r+q34Otb5ZNDG4qM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.LanguageInstalledEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.LanguageInstalledEventHandler.html",
-          "hash": "ruFfmuuOUyhTDs5c5/8FTzqnvzA9/DCihlJIbgBmTyo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.LanguageUninstallErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.LanguageUninstallErrorEventHandler.html",
-          "hash": "5+Y/8e3Y2zz+5WuuSYpcMmFN5mNFmASOE1c51W7ndPY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.LanguageUninstalledEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.LanguageUninstalledEventHandler.html",
-          "hash": "fxBxL/QN7wPZqkZ6zr5Vn6ALlo9A91KQXmNMxH5qlg0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.LanguagesInstallErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.LanguagesInstallErrorEventHandler.html",
-          "hash": "7qsLTzF7UD8u1e9B2NmDWq51luro/VFPNue19mFuwr4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.LanguagesInstalledEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.LanguagesInstalledEventHandler.html",
-          "hash": "qlgeY3mSLRPbu+PIJEg9tu6WrwAHdiaCKBUXJNnzJAg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.LanguagesUninstallErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.LanguagesUninstallErrorEventHandler.html",
-          "hash": "qzoYGdsMOMJSvrkejoCWAjj7E/9Mt1apoXeFbmVgL9g="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.LanguagesUninstalledEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.LanguagesUninstalledEventHandler.html",
-          "hash": "wJ4NxGkvXkMO+TUOtCf2T9c411PRwmyFCdM5UNR/fTY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.LoginErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.LoginErrorEventHandler.html",
-          "hash": "qKstVzs78MqLo1HfKCu/3DMtOgPIQJ1tC60sV8dBI3U="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ModFinalizationFailedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ModFinalizationFailedEventHandler.html",
-          "hash": "NBSFTHhNNiN66g+MpGZvwn/ABJzqHGHUmiKCIkMOxD0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ModFinalizedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ModFinalizedEventHandler.html",
-          "hash": "f36mAL95/EePeIODmHXn/J3uy+tzfPih/idSMbVLNB0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ModParseErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ModParseErrorEventHandler.html",
-          "hash": "DHr8NRYdRXh4uvTktWaiU1Y9cKWm8DyOYdKGtxC5i9w="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ModParsedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ModParsedEventHandler.html",
-          "hash": "qPM4Iou1ayyr6gwdy5A2e5TFsZ6LPKauMj6Z6jruiPk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.NotificationDismissedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.NotificationDismissedEventHandler.html",
-          "hash": "zS6T269WkqDLIWE9uVXofzTKHdxvhJVOaGR+FW+19EY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.NotificationReceivedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.NotificationReceivedEventHandler.html",
-          "hash": "nw0TosDAeQFWHJ+1KCcbrewz97r4f+odSvFHNasJ/Zc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.NotificationSentEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.NotificationSentEventHandler.html",
-          "hash": "bOYkxrHjLRHYoqvvZhXza+lcHTWofp8+D1nR9ERipxM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.NotificationsReceivedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.NotificationsReceivedEventHandler.html",
-          "hash": "nSiLYmlmCxEzQxOot6oMeXZoYEViA1jln7VJ2pzjClc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.NotificationsSentEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.NotificationsSentEventHandler.html",
-          "hash": "AA2MsNZe/gGRq9vZg55nryrLRvN2kQ23r9Arlk1QJmk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PlaceholderParseErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PlaceholderParseErrorEventHandler.html",
-          "hash": "qmNq1VkBR+8cPfzEu3DXA/O/hxr7v0dq/Q/q+Lf8sws="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PlaceholderParsedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PlaceholderParsedEventHandler.html",
-          "hash": "ukJMK2l6HuMLLYf0HqwQ8/dieynINaUW+avfom08a/Q="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PlaceholderParsingEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PlaceholderParsingEventHandler.html",
-          "hash": "35tXIc8CPhsBY9o8UbCLjqHqAfrIc139QmtzvwA6S0A="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PostExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PostExecuteCommandEventHandler.html",
-          "hash": "6Lau6anU6WmH0MDF+LkPkhDLkJXXhMYFUJYdMUfZOEA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PostExecuteModCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PostExecuteModCommandEventHandler.html",
-          "hash": "WhsXK1Bxx86xT15MntQPLJGfSQoejca5IemhC+l1SP8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PostLoginEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PostLoginEventHandler.html",
-          "hash": "Yau5z0DlCP2PzKG/zS9ZB/5O6Uc5DVWiIMuOgSkxQJQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PostRebootEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PostRebootEventHandler.html",
-          "hash": "Gw9m/hM8ZudfCOoqoRIihjIJ7QMbhsBlL0pXzUH2cZw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PostReloadConfigEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PostReloadConfigEventHandler.html",
-          "hash": "PqeSY9nVIvnzFgqiKt36y0lV5lY3gw+/aFHByOuqD70="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PostShowScreensaverEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PostShowScreensaverEventHandler.html",
-          "hash": "H6cJ5jKAmkw0Hez7K6Pk9uEg6jLaucK6uZrQ8MULNys="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PostShutdownEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PostShutdownEventHandler.html",
-          "hash": "6VswsnwjLXIv8TNSdl/vlCsyENWmA9yrLJG0jfW3dSU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PostUnlockEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PostUnlockEventHandler.html",
-          "hash": "qLx6HsR46MSdJGnVwazr8MEqXrY9ag/U2KX7R99eVCs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PreExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PreExecuteCommandEventHandler.html",
-          "hash": "itCKWkIBfV/vWcVRPuKw9kkpHbjXCaspZy6pggqVF3I="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PreExecuteModCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PreExecuteModCommandEventHandler.html",
-          "hash": "wT6VNrXqAi0p2Y89mt/brMWfCDqh8hMlFV9xBP14I4M="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PreLoginEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PreLoginEventHandler.html",
-          "hash": "rCa3WPqC477wRMsbrOSVrRRAH0FfybXb/1oZc9tWnr0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PreRebootEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PreRebootEventHandler.html",
-          "hash": "O7jL7E7iKcw13rC9Wo8KELR16V/yEvZgXbbcj7SbKI4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PreReloadConfigEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PreReloadConfigEventHandler.html",
-          "hash": "KpJ5+ADJ7VL/Anuv3UV/GEuDKhT9O7RoNqA4WaCjT/Q="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PreShowScreensaverEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PreShowScreensaverEventHandler.html",
-          "hash": "WdFVDKrzMpOoFN8hfbNihL6AiYc8w11r6a+Rmez7xg4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PreShutdownEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PreShutdownEventHandler.html",
-          "hash": "x1WzuT4O7/zBZ3155zSMCTwebj8zhnZ5gDytPnVy3/c="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.PreUnlockEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.PreUnlockEventHandler.html",
-          "hash": "1a1r8fM3FlN2xh+Y6VFBZNayKYtYg0WEkpq3DCj6c5A="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ProcessErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ProcessErrorEventHandler.html",
-          "hash": "6JevXmI8xqk2R5ZConUlZv85H+xzvwc73+bkik5e6+g="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.RPCCommandErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.RPCCommandErrorEventHandler.html",
-          "hash": "R5rBZElvnPwtfQy4K/F1WaKusywJNuX8+p3xdXMKZBQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.RPCCommandReceivedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.RPCCommandReceivedEventHandler.html",
-          "hash": "9PqujLnuaDQMOn/STMjI+krvw534R43h6JRaiJilTkU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.RPCCommandSentEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.RPCCommandSentEventHandler.html",
-          "hash": "4OSyspMCNpDp2EGdoKLWQSZS7FcNAfV8+lnWHfgCWGE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.RSSCommandErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.RSSCommandErrorEventHandler.html",
-          "hash": "tkG0IjYNL+12lowlQJ0xnYBdVY6ocqYls/v/nGyDb1c="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.RSSPostExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.RSSPostExecuteCommandEventHandler.html",
-          "hash": "nF4fJqIvxRUUjZsn3RIMb9PVBC0fB7M8gzVWMg+4vE8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.RSSPreExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.RSSPreExecuteCommandEventHandler.html",
-          "hash": "fSNcx1TdEVNcELhpw7aZbx6emu7TMA/P7xOtj0YeiZA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.RSSShellInitializedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.RSSShellInitializedEventHandler.html",
-          "hash": "zhdnNridp6pyW8zhgu/uXi+qEx3/rnurifhg4FEiGrI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.RemoteDebugCommandErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.RemoteDebugCommandErrorEventHandler.html",
-          "hash": "aYhxJ1WydTtNowGQy8CS9dFC9EaulPARZ1vpaoUlbVk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.RemoteDebugConnectionAcceptedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.RemoteDebugConnectionAcceptedEventHandler.html",
-          "hash": "4fR4F1KJMJpqc4wxdI5KhwKNtvWREQBj3jaouerA03k="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.RemoteDebugConnectionDisconnectedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.RemoteDebugConnectionDisconnectedEventHandler.html",
-          "hash": "cmPy7zIZDPWBZCsv+KZ/nrWA4tP8D79kJWJUMGlFDcU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.RemoteDebugExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.RemoteDebugExecuteCommandEventHandler.html",
-          "hash": "2heYjfM0Mj3039OmA/RNAucoMiVJtPf3FW2y7C/tvXM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SFTPCommandErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SFTPCommandErrorEventHandler.html",
-          "hash": "s0a1kFYHVvRHIlFX1nFpliggE0kIdtM6ovRYKhcwo/Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SFTPDownloadErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SFTPDownloadErrorEventHandler.html",
-          "hash": "CcqR8DKf9RKPhPFiZuoFg4HM2nozX4GYyRWcFxvxJUQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SFTPPostDownloadEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SFTPPostDownloadEventHandler.html",
-          "hash": "LocSsNPOOqwfTCboa+fSEwtekNS4WWYjq71HfPiJDcY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SFTPPostExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SFTPPostExecuteCommandEventHandler.html",
-          "hash": "mAfh2Y5I8PYFsmDHSVGM4Jg2Km0BfL24qyD1on2KY3Q="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SFTPPostUploadEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SFTPPostUploadEventHandler.html",
-          "hash": "lJI1B3EHq+lR/3iZgklx005oDnzFL87T2X/+h6GRXTs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SFTPPreDownloadEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SFTPPreDownloadEventHandler.html",
-          "hash": "mqhXS6/cq+2W79CJfgPntx3+VjorSNgpgYYTp4NYlEM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SFTPPreExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SFTPPreExecuteCommandEventHandler.html",
-          "hash": "IcT7t16s/qmPR5NXx2DdSzGfYkZoZZERnufG/099nXA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SFTPPreUploadEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SFTPPreUploadEventHandler.html",
-          "hash": "Fd4978EHeMFVUIF/dv3blDmsdsDtYu5Mt0HMzsHQinU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SFTPShellInitializedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SFTPShellInitializedEventHandler.html",
-          "hash": "6Fk/QjA2/BSoCecWsejETwS+Aol1YZyfSX2WVMhoHXE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SFTPUploadErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SFTPUploadErrorEventHandler.html",
-          "hash": "MF+2QTut3Bq2JsjdeAGTFZcsH8DF/WcguL21KkGa+GA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SSHCommandErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SSHCommandErrorEventHandler.html",
-          "hash": "+NoND5YALY4/V0GCxnp27Bq2OdcENy+J3S/McSjSWH8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SSHConnectedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SSHConnectedEventHandler.html",
-          "hash": "5bJXHS5/Y1WiWwf/EmfO9CFPlJhSCGgcRcCOtBQfjUE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SSHDisconnectedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SSHDisconnectedEventHandler.html",
-          "hash": "ZR41k+W2liVwoDx/6mDGwqZpNe9FpJCASgowFMMRm2s="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SSHErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SSHErrorEventHandler.html",
-          "hash": "9ffdSd5IINojgRp3ZVVZ0sj6nWDsbb85QD2L7FlGD3A="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SSHPostExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SSHPostExecuteCommandEventHandler.html",
-          "hash": "CMJYx9W1JfqeqgI5lxZQ7SWBMYcqBrRGJfIGrWpSkcs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.SSHPreExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.SSHPreExecuteCommandEventHandler.html",
-          "hash": "mHLCgOnxu7BIJiE1jdJUxJHPy2Y4bJAzCzB2hah5V/4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ShellInitializedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ShellInitializedEventHandler.html",
-          "hash": "OdyOG74e4mMygVAetXt2pNHrSB2A/TCRmaCVPimCGqw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.TestCommandErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.TestCommandErrorEventHandler.html",
-          "hash": "0O/SGP81r/RGyHtQ63OMhF5NUJ2LpOweNeJTNJf44kg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.TestPostExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.TestPostExecuteCommandEventHandler.html",
-          "hash": "9Xuzh5nWpQlNndUkG2RqXbmNfffCJMhBrV9McVYoc5E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.TestPreExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.TestPreExecuteCommandEventHandler.html",
-          "hash": "lIfMTpbBXMClrbnpy8caYLAp6VBJ+p7FC447LvtlnLw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.TestShellInitializedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.TestShellInitializedEventHandler.html",
-          "hash": "ljxaYJQIv3aDs+PzsWsuvpjxdbJ0+OYYshIF2iUlRBQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.TextCommandErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.TextCommandErrorEventHandler.html",
-          "hash": "PxhRDQMw7kdbNBxsFI7Rdf3bCGTJgdm14vjvEEagUg0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.TextPostExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.TextPostExecuteCommandEventHandler.html",
-          "hash": "gq0rLtQI6nxCU1cxGYGUIrW7Cs3Ch40a3K/jpxidb9M="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.TextPreExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.TextPreExecuteCommandEventHandler.html",
-          "hash": "eu1LexFcvxs5gNIHbE31L1xOmOQ5b7dNqNzpV8ce7nY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.TextShellInitializedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.TextShellInitializedEventHandler.html",
-          "hash": "L+7bZqV2MU+35/UR+cH6prq9zG8CZakJYiMm0FEFU3A="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ThemeSetErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ThemeSetErrorEventHandler.html",
-          "hash": "SG5CKExxl4PMKzoVu7OFWmdTNmkCCs3tUhpCw18T5Go="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ThemeSetEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ThemeSetEventHandler.html",
-          "hash": "DRMagQCq4L2gKVmh2q8lD9vCtEgjUwuNuZPiEjNWCdk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ThemeStudioExitEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ThemeStudioExitEventHandler.html",
-          "hash": "9Sbhfq56dHvVOzrS5yQ0agA3zCtN8cOyEnE6cCSr8Wg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ThemeStudioStartedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ThemeStudioStartedEventHandler.html",
-          "hash": "dbwt1XErZ1vrUEAs43stH+DppKgYhC2VgV6PUOv++xs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.UESHErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.UESHErrorEventHandler.html",
-          "hash": "nZgLmd8HhoR7KaNmGPIkQgMJyaWTo5vyC8pRUdGyo8A="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.UESHPostExecuteEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.UESHPostExecuteEventHandler.html",
-          "hash": "YGnp4Y5h4i6sN9SGgZZStsjFZUyT0rPqvpAupLwGp7I="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.UESHPreExecuteEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.UESHPreExecuteEventHandler.html",
-          "hash": "t4LAFRpaMbr+/P2AhzWl46rees2NCKXN94L1YiRvUcU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.UserAddedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.UserAddedEventHandler.html",
-          "hash": "jjywvOjNuAkjQ0B3CAKDiQm9wTvFLhxXP2RIHbZkuJM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.UserPasswordChangedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.UserPasswordChangedEventHandler.html",
-          "hash": "vIwUnkZ7qtKIkJCVlBhDPI6oTeY1CuUANhP23F6VE6Q="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.UserRemovedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.UserRemovedEventHandler.html",
-          "hash": "uGXFM5EmW1r9r5n07b/UIUmIDh3QMqdvzsBYtqHylAk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.UsernameChangedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.UsernameChangedEventHandler.html",
-          "hash": "SLFPWPKBwJvUa5y+mtsahxbLBbjAU8PE/CgHGCB2G9c="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ZipCommandErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ZipCommandErrorEventHandler.html",
-          "hash": "r1ZJFdjHg9KYbtN0zKXIDBNpujRqAA6PLwRQ0WUcKR0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ZipPostExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ZipPostExecuteCommandEventHandler.html",
-          "hash": "6M2u1anKAsMmogjLURtgDfz7gCV2mXFePDoMLa6bblo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ZipPreExecuteCommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ZipPreExecuteCommandEventHandler.html",
-          "hash": "1/SB4CMqG3AZEQybQLX3AYSBoutGqHAUKLJZG2BSzyY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.ZipShellInitializedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.ZipShellInitializedEventHandler.html",
-          "hash": "lX87CRMt6CPrvLQvrTOsbUR8oivGPxScPug7GuDWiC4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Events.Events.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Events.Events.html",
-          "hash": "pU/uLDyNLxYyOZA3Gll55n+qBq6jRK6lYQ5Hf7hczlU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Events.EventsManager.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Events.EventsManager.html",
-          "hash": "6MU3+w65Hrnfw780C/OQ/GcCEnKfqai3ip5VKvMzZ+o="
+          "hash": "uK903m1pFNNB6JNeTFvEuCW/HsOuqqWEjI1f8+aAXnA="
         }
       },
       "is_incremental": false,
@@ -3201,7 +1569,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Events.html",
-          "hash": "qTXNNyeYsiptvPaM4tVnMR22CPB12cQy7E9xQlzj6ug="
+          "hash": "uDkXbDL0n+QpYysDbQZgWDcHzwIYZgy9x9vFgM1OcGk="
         }
       },
       "is_incremental": false,
@@ -3629,6 +1997,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Exceptions.NoSuchEventException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Exceptions.NoSuchEventException.html",
+          "hash": "gqZYPI+zc6cm4Ibs6PvCiAIXWEUP1mhiiv8EZETfz2Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Exceptions.NoSuchLanguageException.yml",
       "output": {
         ".html": {
@@ -3897,7 +2277,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.html",
-          "hash": "VhgmiaJ94djXTnLWNTF0+SKKR7qRxaxyqdWE6O13SEE="
+          "hash": "ZoFvcnB+0iFGwTOGBmfiUUkxIfeOqg5aV7sN7vx/AxQ="
         }
       },
       "is_incremental": false,
@@ -3909,7 +2289,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Flags.html",
-          "hash": "CJYvI9/c97qGKd6CJ5/4cIpxFCZ2OXxAIufppxCP5zc="
+          "hash": "Kup/XeruSr4UaQayNcdEGr6DvALa125nAx0yukNh1tA="
         }
       },
       "is_incremental": false,
@@ -3921,7 +2301,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Kernel.html",
-          "hash": "XisW80BLhKZESGiaGST9wYddzAekjbCh53MiQhifM24="
+          "hash": "KuCNqFNqn4EQkkOh/rbAEAkCehZH51TtMYQxI64BIwY="
         }
       },
       "is_incremental": false,
@@ -3933,7 +2313,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.KernelErrorLevel.html",
-          "hash": "GMNmM8PnE+JoLEKOrjLty5IPuBciSkeAWDxevLxn/gw="
+          "hash": "d2iFWHWwONJ0cbvO5pDt4AoXR32QgjNC1bQycUP4YqU="
         }
       },
       "is_incremental": false,
@@ -3957,7 +2337,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.KernelTools.html",
-          "hash": "dC8dLGnq+ClFNZsPg1qojZt5N27v4Q9yAEYhRjyOtus="
+          "hash": "anBxEehn1U2eWrrawhElk1cjcn+rf6e/oMYeRttiVgw="
         }
       },
       "is_incremental": false,
@@ -4029,7 +2409,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Updates.UpdateManager.html",
-          "hash": "dCprbRSOhCyzyILelV429s2TJJ9mzA/HMTHFuXSA/0o="
+          "hash": "FaJCGRklyB4P3nzAbFJTWKVoBJnEjIUPqYyIiwkDIZQ="
         }
       },
       "is_incremental": false,
@@ -4089,7 +2469,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Languages.LanguageManager.html",
-          "hash": "Zt+eWgNGgAxHsjH/ZCNVkIOtZfVu81fKQKaYvN/Ffi0="
+          "hash": "hVsOKTMs+c+fFFMLYk5BP7xgnXkFNanAKlXoE++QXFM="
         }
       },
       "is_incremental": false,
@@ -4114,42 +2494,6 @@
         ".html": {
           "relative_path": "api/KS.Languages.html",
           "hash": "6CPdruwcgQZwTgnhPI1fEANp55ZAt0qVL5t9bhZx3Dg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Login.Login.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Login.Login.html",
-          "hash": "9c43f5eVco2TEo6iBPzhpzXMBg52iPLCdViurR12Kxo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Login.LoginErrorReasons.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Login.LoginErrorReasons.html",
-          "hash": "wInANEtcTezUrjKne0oqsCdi3v1lQvpUY3ctdY42p3U="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Login.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Login.html",
-          "hash": "9NxUl6yQ4FWGfU8gSeldhca675rCiLRf2xg+r1FuTIA="
         }
       },
       "is_incremental": false,
@@ -4713,7 +3057,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Editors.TextEdit.TextEditTools.html",
-          "hash": "XnKicZ1jXTrslNCixDSS7F81k0BaR+fy5hPxeidNgdw="
+          "hash": "gXKBBGt88eeosDqxGsf230sQ4vHqpgTj+RDdJMWXW+A="
         }
       },
       "is_incremental": false,
@@ -4737,7 +3081,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Execution.ProcessExecutor.ExecuteProcessThreadParameters.html",
-          "hash": "0a+lbRDIEl85WyQPmAvxKkJ/3P6qiANCUwgJpok6HdY="
+          "hash": "Kx8OQ01tppQF/r8mGxABGdQ4FlBmXNwL9NnfoY2MU0A="
         }
       },
       "is_incremental": false,
@@ -4749,7 +3093,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Execution.ProcessExecutor.html",
-          "hash": "57CLqPtsRRjEB00Sjun/Gs9XlikSmp0LqvBq84qvKSM="
+          "hash": "uJXRx/ZlQESgt+GqtB3tmG8jvvXH2HORpLMhrqxRm9E="
         }
       },
       "is_incremental": false,
@@ -4786,30 +3130,6 @@
         ".html": {
           "relative_path": "api/KS.Misc.Forecast.html",
           "hash": "AxUuf/e4BtAPYSzjkZd9UTMbYlWjh1E6RXcYQb/5p+8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Games.LoveHateRespond.CommentType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Games.LoveHateRespond.CommentType.html",
-          "hash": "9bz2icshzZxGP5DAPhS8uG+RkTx/JskhjoP2J+QmfMg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Games.LoveHateRespond.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Games.LoveHateRespond.html",
-          "hash": "uQ+kivqO5l3h0arX8qWKFy9Xrn+ZOJAsyz+Ri9Ao2JQ="
         }
       },
       "is_incremental": false,
@@ -4881,7 +3201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Games.SpeedPress.SpeedPressDifficulty.html",
-          "hash": "3GXCdG8zdQEa/kmXt8Ow/ZnlamHTEHAI6sSy7Hqp+KQ="
+          "hash": "oMT82gjpOcXSQZW3CGK1Ed5dAdiXnS9S0Yf7EoIYgEE="
         }
       },
       "is_incremental": false,
@@ -4893,7 +3213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Games.SpeedPress.html",
-          "hash": "j8Iws5PJzcIjA78NAPhdBn7rVXO+H/lm5i2pujKhWxg="
+          "hash": "942cIuOGZpnxQ0mdTMRuyH0d/wP+M878aZ1pVGvhOIU="
         }
       },
       "is_incremental": false,
@@ -4917,7 +3237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Games.html",
-          "hash": "XidqFnj9HUEE6MZbrPAeWwPtrEqJ9+pdMoxkRs4iR2c="
+          "hash": "aEpLVGpV+RgEiqg6E+JX2QRsZhSBtl4GGuV21lBIo+Q="
         }
       },
       "is_incremental": false,
@@ -4941,7 +3261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Notifications.Notifications.NotifPriority.html",
-          "hash": "wu3Fm/ZiDE39o5X3yAdjJPpCISO2dKC27AojrJJ2V5Q="
+          "hash": "k27O+V+QFGLcpajIyYonKWC60gLQHI3MdArrPXf+W8o="
         }
       },
       "is_incremental": false,
@@ -4953,7 +3273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Notifications.Notifications.NotifType.html",
-          "hash": "9dVHC2EN2GL9eQOV9cZ/wtdDquivFUVRVRof+nV2CGc="
+          "hash": "fzz7UJczmRH2rpJXbmXxMNVHUi0g2K5k4wWrRxqhZQA="
         }
       },
       "is_incremental": false,
@@ -4965,7 +3285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Notifications.Notifications.html",
-          "hash": "ptyhRYOixl0LaHFcTLS/b7XLeRbHqKJIWYd2x8Azco0="
+          "hash": "OQ8I5nnNqaYKmlanMqEkPCvjbXKzyx1PWNO8c3uDNfA="
         }
       },
       "is_incremental": false,
@@ -5025,7 +3345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Probers.PlaceParse.html",
-          "hash": "zHFoYwug7qis/m77jfRjEzbdNRINRCWPuWIKwDlirHU="
+          "hash": "UWbvacE5GCy+qFEvFVCYWblWQph8H6fizRh1vh7UPx8="
         }
       },
       "is_incremental": false,
@@ -6417,7 +4737,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Screensaver.html",
-          "hash": "8HSvrkdRfIEUon9K6LwwjObJDJIXOB8ZFseAW2THBU8="
+          "hash": "tCANfTFIAEErzh4yvmNQoB/ROHx3a9vvCo7c/rTa4Qg="
         }
       },
       "is_incremental": false,
@@ -6453,7 +4773,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Settings.SettingsApp.html",
-          "hash": "YWzNNv6njwxnhOr6VIDiOpycU2QO+bceIiKnjqQihYY="
+          "hash": "prLlPph7tfljIlz/62L/YCEyT5v5SP+CxCj00ltZcyk="
         }
       },
       "is_incremental": false,
@@ -6501,7 +4821,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Splash.ISplash.html",
-          "hash": "hFOf/0weUoPh3dQKC6I5Uyuwkkm/x1g+HKe2LelW0Gw="
+          "hash": "5FvZxvzLGvnt9p76iKtZ7tQWsuOw5LuMXJcUs4lLjmA="
         }
       },
       "is_incremental": false,
@@ -6537,7 +4857,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Splash.SplashReport.html",
-          "hash": "MBeqI+9URxPw1FqqLZTcBHOKZx2hfRbfCNiErmYSg+w="
+          "hash": "jeX8t6Ao4TUPe67lCqq/iw82MmNuc3GWkot5FyFtdZU="
         }
       },
       "is_incremental": false,
@@ -6549,7 +4869,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Splash.SplashSettings.html",
-          "hash": "mi5iAq/RYakdx1bDzdBKdQHsK2a9FCy8ixnRF9pPQ1U="
+          "hash": "ztwwQFQbylAF5ShXLfZxJRr35VCKfLWElcx+bFlFhns="
         }
       },
       "is_incremental": false,
@@ -6573,7 +4893,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Text.CharManager.html",
-          "hash": "Je7ECxzBiS/8ZxUL1hqp79fj2BegXdJs0ll4oNdhG90="
+          "hash": "tT2rPGZEib6uLqCFumUG0RiKnsU+GgJxhxpprU1C3bg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Text.TextLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Text.TextLocation.html",
+          "hash": "WW8rdQ8zg9KEfaCnjNM0oCCI2QWsA2zkpp1FdpL9njI="
         }
       },
       "is_incremental": false,
@@ -6585,19 +4917,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Text.html",
-          "hash": "4vwNIJNIEy4dRqk8SsCsQXlhnhzCrGdcs5QUKFtjJgU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.TextLocation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.TextLocation.html",
-          "hash": "rLRnbtWU4zbeab0iEyinGp0KTaZbl5bxrkkT5xKgFxg="
+          "hash": "1/SGdKKuCcJPFaSqi2vX/0ECt1nkpHRKAgTr2diIKNc="
         }
       },
       "is_incremental": false,
@@ -6729,7 +5049,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereColor.html",
-          "hash": "e7w4fSRjYkhVhhaLj8Ab/1ZW/wfI5xdu064EwBZjP/U="
+          "hash": "49Aj6SYDNZbuReKLpixbVg6cf7+oqREc8CRCGuR5Fbs="
         }
       },
       "is_incremental": false,
@@ -6773,11 +5093,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Writers.FancyWriters.BorderColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Writers.FancyWriters.BorderColor.html",
+          "hash": "U/wRPB+rzUu1ULPe2fOoDV4jra9ypkLsd0O1VRLrwZM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Writers.FancyWriters.FigletColor.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.FancyWriters.FigletColor.html",
-          "hash": "3VpqekZXrpyDdlYHq2bbPV7Xn4yyt5sd6fIr+O39gtc="
+          "hash": "gTESBwnGHBv578v4yy73Ip439b7LiYnUC9xJRQx8U2M="
         }
       },
       "is_incremental": false,
@@ -6789,7 +5121,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.FancyWriters.FigletWhereColor.html",
-          "hash": "qBblLx5HQLHYOanCC4htzibaN+nhP1W7fEpLeGhSKFM="
+          "hash": "yvkQW50WHj8mI0OsBpCtxuJ2tvc6zc1nUhESzbukCAs="
         }
       },
       "is_incremental": false,
@@ -6801,7 +5133,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html",
-          "hash": "zTC3qxifj4ncqPnhG2KBZKzHM+9rkKGwXP6/ayirgjo="
+          "hash": "C9LYsEGLP0resJkAl2tLJBDop7zBsz8ukdXN27e0ugU="
         }
       },
       "is_incremental": false,
@@ -6833,6 +5165,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html",
+          "hash": "8zcfVb7xL45rH3xb9n2WR/SemThxqHcd9xCwdaCTIj4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Writers.FancyWriters.Tools.CellOptions.yml",
       "output": {
         ".html": {
@@ -6849,7 +5193,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.FancyWriters.Tools.FigletTools.html",
-          "hash": "JWwNn/ge7qKmF69CqZW1wgSFRQvaDOqrI3cP9s1Daw4="
+          "hash": "DkeDuNaYwYqsf8ZDdlWdhfu8cUerjP3NxubMqQ4zTuA="
         }
       },
       "is_incremental": false,
@@ -6885,7 +5229,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.FancyWriters.html",
-          "hash": "XtOLR8vnp87r3U4EwRlcBcoynPmfpSlfr2mogc9ZntI="
+          "hash": "VK69Y9IrH6uYcLEPagjFakcraCQgWb/IHu1u//df3qo="
         }
       },
       "is_incremental": false,
@@ -6897,7 +5241,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.MiscWriters.Decisive.html",
-          "hash": "FKitkcgjFDU4Epp2b4NepobbfqZt/2MAyTX57oQAewM="
+          "hash": "xAyWnZqDxtsqao6FRLUhtZG9KacS6d5SeIWuKAtJaAI="
         }
       },
       "is_incremental": false,
@@ -6921,7 +5265,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.MiscWriters.WelcomeMessage.html",
-          "hash": "t6OKdqrz1lnFaGENQLjATRCT0gspLRVAPtensOBmqjk="
+          "hash": "gijaK9NPNmveGNy8XWTwOtUzU428JomxEFzSlDAtYPY="
         }
       },
       "is_incremental": false,
@@ -7025,23 +5369,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.html",
-          "hash": "PEK8bgvnOTBd6F1GCVnpyMDy6/55Zpt2ckyw6CVpxRU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Modifications.IScript.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.IScript.html",
-          "hash": "sYJ+uWoznN4XdXbiE5xXyAWq3nmOyJL+n/yCHOt6Dns="
+          "hash": "s6+M0AbH8e3h0b8KmhcP+8T4/hRokdlE1Fmqlpb0vtE="
         }
       },
       "is_incremental": false,
@@ -7077,7 +5409,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.ModManager.html",
-          "hash": "m0bSz7uISQq+CoNlBi8AzVo027nRg5MG8MsavE60hdg="
+          "hash": "uT0hrLYQbPu3bI/qcXO82z1fosppgX6uTYlscsWuHKw="
         }
       },
       "is_incremental": false,
@@ -7089,7 +5421,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.ModParser.html",
-          "hash": "TKhX0ZBA+rKUaBOekwBu+gRWr7edbPmXRLCTS2P5+3A="
+          "hash": "IMtwIBZVrURhFwXkLiJowxBhQU59erx4Ld2ow7EgRZM="
         }
       },
       "is_incremental": false,
@@ -7137,7 +5469,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.FTP.FTPTools.html",
-          "hash": "iYMubF9QQ8YoFIBlCmRd8bAZQgHuagoeAS7EKo3Zziw="
+          "hash": "aT8naXtAQ45zU0QUGjRSPjwQ0FHEVtrtvtPHMPpUbpo="
         }
       },
       "is_incremental": false,
@@ -7365,7 +5697,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.Mail.Transfer.MailTransfer.html",
-          "hash": "V4NjP6NHPDHqQEQtpc9iuZTQzoqOgigQP+yl0l8zS/0="
+          "hash": "fTqFW5t3FfbC3w/ejyhyiCyNFYEGbdubr9AqE3hecOU="
         }
       },
       "is_incremental": false,
@@ -7425,7 +5757,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.NetworkAdapterPrint.html",
-          "hash": "uirYo6MsLOF5AcaHqnB7hixEr45W+TKMjG9hTHuFBIs="
+          "hash": "0O1nnM9XVI0DnA2Qt/RWj99KSH5HNswgfVYWykDI7NE="
         }
       },
       "is_incremental": false,
@@ -7461,7 +5793,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.RPC.RPCCommands.html",
-          "hash": "IkZA/2Ocfw0hPhminRtnnUAvhjw3E1wCxzoZoA40Mnw="
+          "hash": "BtbomN1ysDg5H6QdQ4prgR8fcY1AZv5FQ7QTf9V7mJg="
         }
       },
       "is_incremental": false,
@@ -7569,7 +5901,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.RSS.RSSTools.html",
-          "hash": "BxvNkyu2dSR8kANsN8hqnhU5QoWhHmO2pZtiplbIEPw="
+          "hash": "3OrKmscL/jKoC9fpHhjB9xRtIk0R8Fuk7PL2tOcnHXI="
         }
       },
       "is_incremental": false,
@@ -7665,7 +5997,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.SSH.SSH.ConnectionType.html",
-          "hash": "RV8jOSwWh6waICsHScwh9+KqEzqmYN0+alk855cgGl4="
+          "hash": "JuhLZ7zfjZw0EsUazb7MvHB504pcFJ799sTwF+8Rk5w="
         }
       },
       "is_incremental": false,
@@ -7677,7 +6009,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.SSH.SSH.html",
-          "hash": "d/B2ZHNM1LRk+ynpKL3MEtER8yI7VX3S19mpkSYhPGk="
+          "hash": "6E+RlqsUCPoS2OwQJ1mH6+l6hmA85md5Iij6e6Rk/HE="
         }
       },
       "is_incremental": false,
@@ -8121,7 +6453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Scripting.UESHVariables.html",
-          "hash": "qUeG9kUBB4uyQ4sV0KrUuQV5QNTK2C+qe1+2RwkZmIo="
+          "hash": "tnuE4JLLdK+gA551MY2iN8aIkZpMIYl3CHviCgiUhac="
         }
       },
       "is_incremental": false,
@@ -8145,7 +6477,103 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.IPromptPreset.html",
-          "hash": "U8UIjRTIJNPypxb2ce3UmfZ7150IZMXNJgAxIeoiUKU="
+          "hash": "DBkSsVqSQMdWYIxUGxhM77+2sqX8doOJ2tBHIU2jgJo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Admin.AdminDefaultPreset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Admin.AdminDefaultPreset.html",
+          "hash": "tPUCLkXX6RhduraoEMfY3A20yuCWjiIEW3JA5hMPiPU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Admin.AdminPowerLine1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Admin.AdminPowerLine1Preset.html",
+          "hash": "jsjex3RXfISy5CXlx6kImrEIbusvCgfvvRp0LVSYE1A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Admin.AdminPowerLine2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Admin.AdminPowerLine2Preset.html",
+          "hash": "4sVBRx33FgnsP0Lp+YQBZZcSZoxJq7InOGQGLqnNO2o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Admin.AdminPowerLine3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Admin.AdminPowerLine3Preset.html",
+          "hash": "GD2glqP73TOvH+gf92kRn1bpmrLxCZ8eIFsRnhWoG7s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Admin.AdminPowerLineBG1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Admin.AdminPowerLineBG1Preset.html",
+          "hash": "/Ok92sPSmF7OWax5ovu/MlvZp4OhJw+6Vh28O0Ads0k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Admin.AdminPowerLineBG2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Admin.AdminPowerLineBG2Preset.html",
+          "hash": "4fVNJRO5ENUngMvggb468TTRlnRiIhIJUS+7tnWODl0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Admin.AdminPowerLineBG3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Admin.AdminPowerLineBG3Preset.html",
+          "hash": "5QRefr8UcuFIlQUuNdMH9XgGfBXf9Gb2i9DS2i3/cJs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Admin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Admin.html",
+          "hash": "/zfEdsxj1PLJvYRrNDy5MPjqlxogBBkC/j12e1ErQ2c="
         }
       },
       "is_incremental": false,
@@ -8157,7 +6585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchiveDefaultPreset.html",
-          "hash": "sdHNY+e+hS8nUuz4qhzBwzQITrlTPi05aL0YEReI5xM="
+          "hash": "lnU4Yjkv7of9stOCTO1RdjRlA+AEztO3PwAEEz2F954="
         }
       },
       "is_incremental": false,
@@ -8169,7 +6597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLine1Preset.html",
-          "hash": "uRqNDHP+5lQV3rdUsiRldo0o6gtqeoRowpbrzKNnkO0="
+          "hash": "YJUJ/Ze7rpenrwF995aN6D5V3C+bcazgLnAs6RJKxso="
         }
       },
       "is_incremental": false,
@@ -8181,7 +6609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLine2Preset.html",
-          "hash": "vAHx7GPNsaRonhW6/EUVlMMI434IbLrRivLD/V1EF4I="
+          "hash": "k+ppyyBQuRVutoa4C4rk7FrzlSGm61uqpKmbKi1RBMw="
         }
       },
       "is_incremental": false,
@@ -8193,7 +6621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLine3Preset.html",
-          "hash": "8g7xmRU+VV7Xu0SdLXlRjkJFYab3a00UAfXIomVPrt0="
+          "hash": "ffxKnQCJ3EQJnayeq8eRBr3rkHoUslmTrJomKq5JR2E="
         }
       },
       "is_incremental": false,
@@ -8205,7 +6633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLineBG1Preset.html",
-          "hash": "FqQBYf5gY9XddUNdKLhuiq3ACm93HlcAYID6EM4ZXno="
+          "hash": "3CbJfTGgv9ilTC2uw17E3KfcAGPAkYTf+QNmWpocGHg="
         }
       },
       "is_incremental": false,
@@ -8217,7 +6645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLineBG2Preset.html",
-          "hash": "mstCT/mgZbl5c8w890fgd0fYxohcB/aaxDQ4awzzUL0="
+          "hash": "vhhDUted8npjiKOpNbAkWJLnjFqjLLW5MUjsh4210us="
         }
       },
       "is_incremental": false,
@@ -8229,7 +6657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLineBG3Preset.html",
-          "hash": "JBp6ni273n5EfU3+pX2reteEc4YVoEzjbHtObfBCufw="
+          "hash": "cIk8/j1HKcvokGBacElvbdixiOOut8GA1QrnQ5/nSnY="
         }
       },
       "is_incremental": false,
@@ -8253,7 +6681,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.FTP.FTPDefaultPreset.html",
-          "hash": "zBS5Arz1ooFcG+kCxnBkifn3BpxHX3elViS9ySgWkZ4="
+          "hash": "qW6qLWEVeYzSOuDWjf/CIVMF1N+JcCxMiqbPwPiXJ14="
         }
       },
       "is_incremental": false,
@@ -8265,7 +6693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.FTP.FtpPowerLine1Preset.html",
-          "hash": "koAAYDdfv0NPMNPuouVHGM0MhpHgtcq1LeeZPKJyj5M="
+          "hash": "w4CXfVVJOBwYJQVT4G2LhRGtdnW/FySyXSHCH7QISts="
         }
       },
       "is_incremental": false,
@@ -8277,7 +6705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.FTP.FtpPowerLine2Preset.html",
-          "hash": "DLmSIHW73b36//y2fFV6MDwj86Hhf0sLJC3N/DY48Mk="
+          "hash": "8SyVMYYEYgD11U8r91sFUeHMILKZfje3Q1p1ccwCkXU="
         }
       },
       "is_incremental": false,
@@ -8289,7 +6717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.FTP.FtpPowerLine3Preset.html",
-          "hash": "lsNgR61vmk2ICB/CUm45vBUVky2nBEhYJ199uVYEZqI="
+          "hash": "RJB7zxT/s/vJWYk4yflxvA6J3g+0Fv6zUBwJJmF6CLE="
         }
       },
       "is_incremental": false,
@@ -8301,7 +6729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.FTP.FtpPowerLineBG1Preset.html",
-          "hash": "OscjzSbCjyzCPZkWBEO7FXSN0JalaBTWbrSrlTykfqc="
+          "hash": "FfDzPFoxLkJsG1D7Pbpa0zwP1yg0GrlWF0SDzt6ho4o="
         }
       },
       "is_incremental": false,
@@ -8313,7 +6741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.FTP.FtpPowerLineBG2Preset.html",
-          "hash": "7q7n2qY8Ytv7Y9kl1GXDZFyH4BhW6N5NSXgalAaBJJA="
+          "hash": "tTk5tQpSDNwBbo6saBnvIymiHYYg57XJhvodytl1UfE="
         }
       },
       "is_incremental": false,
@@ -8325,7 +6753,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.FTP.FtpPowerLineBG3Preset.html",
-          "hash": "2EMbNNrt9QbRiXAcrQJJTdsiASGIjgqqKTkSQSs8J+o="
+          "hash": "CfyuaGiQFgxgxePerxH6uZteNtb7ZYfirFT5wQJkS40="
         }
       },
       "is_incremental": false,
@@ -8349,7 +6777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.HTTP.HTTPDefaultPreset.html",
-          "hash": "s9r/H9fM1Ya1Lm+iOKGSQ0LQP13LRK2njQWwXlP2hxE="
+          "hash": "sNYIzKKBoevQmIl+l92wPE/q87H/PMKCkL6eUs1uAGY="
         }
       },
       "is_incremental": false,
@@ -8361,7 +6789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.HTTP.HTTPPowerLine1Preset.html",
-          "hash": "Z6p64RhKPxWYbSK0mt2eUjlhSEiC64SBtvkncoBnq14="
+          "hash": "Vi3e2tTiJ5PEJmfJiX2cATPzCSpGJrjJot+lY11Vlds="
         }
       },
       "is_incremental": false,
@@ -8373,7 +6801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.HTTP.HTTPPowerLine2Preset.html",
-          "hash": "sfDcT+GH6rqRg3/Qunal/JvZCiyYt/mUc0DAHgHVyiw="
+          "hash": "11iLyj51TnAFH3aB1Y2dWsZGPDHbyUtAm5M26h3pugQ="
         }
       },
       "is_incremental": false,
@@ -8385,7 +6813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.HTTP.HTTPPowerLine3Preset.html",
-          "hash": "PkcyfhLgUCYdZ+xdvJCq5AlqOAtms5o5T+jpdmXxzvs="
+          "hash": "Ft7gI8vAeLEjTX3ZFOScj9nFim4pl7FN9FhQVsuoy84="
         }
       },
       "is_incremental": false,
@@ -8397,7 +6825,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.HTTP.HTTPPowerLineBG1Preset.html",
-          "hash": "TsQ3by8z6YsLPP9xIdIsin0ma/TRXpaQ+kEUnMuvAJE="
+          "hash": "mJqUaL/W7UsYlavvqa8ojDFsZlYda9OH6TgAfQk5daA="
         }
       },
       "is_incremental": false,
@@ -8409,7 +6837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.HTTP.HTTPPowerLineBG2Preset.html",
-          "hash": "au5Z447fRnq7nY9Lsco3obcHfzv0/IHsqofQqr4lsV8="
+          "hash": "hLNTJz4SMf06MdXjzhsE6yCTXXVMS/vv9WbK8SjfsXg="
         }
       },
       "is_incremental": false,
@@ -8421,7 +6849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.HTTP.HTTPPowerLineBG3Preset.html",
-          "hash": "+QlQQQTaeNTd5fv5jjCGK7uNLf+6gUYLRl8aLH17tZ0="
+          "hash": "nYameG5NcQkRSGbraqb9d3KDLHLC9aNZZ4TSDKtXwKo="
         }
       },
       "is_incremental": false,
@@ -8445,7 +6873,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Hex.HexDefaultPreset.html",
-          "hash": "sdwvuW1etWsmE9KrjYAQJRWEe6V0zYXLcgF4RpEaa9Y="
+          "hash": "UOYC3YzqyiigGEDqK3ouzYUaP7nSdNXUiZDnND4nBKQ="
         }
       },
       "is_incremental": false,
@@ -8457,7 +6885,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Hex.HexPowerLine1Preset.html",
-          "hash": "HGqWn2WvnCWowxn8kNDbhj/QbWaeee6PhVKhNMHNVWI="
+          "hash": "vuATw4iJwfMOqAk0n1x6vGPq2fkl8U+Ucwtqf5TFkWI="
         }
       },
       "is_incremental": false,
@@ -8469,7 +6897,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Hex.HexPowerLine2Preset.html",
-          "hash": "zBsC/QqCznLpSwF+M9ORepEKNiptIrYF/701ohjgfbg="
+          "hash": "6UJP8cG3cUGXeBuaGPg2x3dEPoEZ87An2iJuuUGO8RI="
         }
       },
       "is_incremental": false,
@@ -8481,7 +6909,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Hex.HexPowerLine3Preset.html",
-          "hash": "dsuWhyathn5ZNdoON6rDEZ3zC9fNJvsmEUccgv5uLyQ="
+          "hash": "RYnlWN4o+K5h1UaVkuhcCGrTY1Nq0JInofTYZbKxjLk="
         }
       },
       "is_incremental": false,
@@ -8493,7 +6921,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Hex.HexPowerLineBG1Preset.html",
-          "hash": "1neZAM6lsk42HnFC/fRb7VHI1arrCCq9FnIDxFOU/Nk="
+          "hash": "vqbqX21ql8LsXJZF7XdkJk0aHl1R+I73hoBFbmIHeBo="
         }
       },
       "is_incremental": false,
@@ -8505,7 +6933,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Hex.HexPowerLineBG2Preset.html",
-          "hash": "277SiVzAfp6LA/NhUGHHAetj3kCuQ1PWv9jlmVZzDy0="
+          "hash": "VFUDlzPLlkrQprmj0JbbRTZ2eYjha0MCjH0lpxkeG8Q="
         }
       },
       "is_incremental": false,
@@ -8517,7 +6945,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Hex.HexPowerLineBG3Preset.html",
-          "hash": "E9CgZ38qvbCMeiGjVb2cDCNksManhpkYDYxExRKSVwg="
+          "hash": "7R4kcVTzEGYpuG6GYLvNahthTJylwAsSkMj/gv0b7WY="
         }
       },
       "is_incremental": false,
@@ -8541,7 +6969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonDefaultPreset.html",
-          "hash": "YfpaBk9sNdIZQ4d6T4frCWKFico92MFJW8W5YKDXUvE="
+          "hash": "7jVabOLEmMlUFdVBeE0xpmzGEoLiObmA+Usz/43b0pA="
         }
       },
       "is_incremental": false,
@@ -8553,7 +6981,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLine1Preset.html",
-          "hash": "RjVCrz5JBX4SiXR9gntzllBmF9Vy8XEylFPpiIKQZYw="
+          "hash": "HI/ge76EEb6I98hVByeFConySL4zMx9ToFdJXpi4owM="
         }
       },
       "is_incremental": false,
@@ -8565,7 +6993,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLine2Preset.html",
-          "hash": "HGvQQ69M0xrxc2uIfeFoSGcMoZM+92Xc6yoWT7fQlUM="
+          "hash": "A3+0SlCyEc5eUGjeAmi6aDQTmEpEtdMoRTt9/mSLQk4="
         }
       },
       "is_incremental": false,
@@ -8577,7 +7005,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLine3Preset.html",
-          "hash": "vXFKYv46ID5/oVeVkK9qJvw41mpdHf41sP3aHyiviWQ="
+          "hash": "/lz3z12fPr7oKObCn9xIc3vCjThofsE8DjrSmse5/nU="
         }
       },
       "is_incremental": false,
@@ -8589,7 +7017,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLineBG1Preset.html",
-          "hash": "rC5oz/aayFfbCTgSA/GAEZAbh7HSN95V2eCg+Bd6+GE="
+          "hash": "X6ZOADbiB6OuNzsueXJgrUXZmb5S2egv2glT1F1sloE="
         }
       },
       "is_incremental": false,
@@ -8601,7 +7029,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLineBG2Preset.html",
-          "hash": "MXk10q7bUOQqop071uDX7ecw8feu/BTw1YhLUR0qfN0="
+          "hash": "848r0Rb+hTE5YlSRNfjtNklR7hoi91nPQZucTwtELrI="
         }
       },
       "is_incremental": false,
@@ -8613,7 +7041,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Json.JsonPowerLineBG3Preset.html",
-          "hash": "Fvri6nvSd9jITwQzFsBsfI4AP7s/Ycx4JAzmWdlFxoc="
+          "hash": "g2rjdfCVnL+KFn3u+ns57hDbF90kNiI6///qX9BSWSM="
         }
       },
       "is_incremental": false,
@@ -8637,7 +7065,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailDefaultPreset.html",
-          "hash": "ZK99ftDz/RUnXLiu7MfR4Z+iHudkkgr8xZzfudQB1VQ="
+          "hash": "9T7tf4SN/QQPVm1b32BW6eog5Ni+yoAd5MKalpZuHxM="
         }
       },
       "is_incremental": false,
@@ -8649,7 +7077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLine1Preset.html",
-          "hash": "+wYm/bQaujhmbQChkQFkpci+sP8XUHPdglhHgNzl8Zg="
+          "hash": "9F7sr6jAr3Vt8/1KzYHRGvppFPdEoH9GfXKAOkydhXo="
         }
       },
       "is_incremental": false,
@@ -8661,7 +7089,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLine2Preset.html",
-          "hash": "IA0EnrJ8Dc9rUSYIb7uHdLJQ8pMyvoGqgxjo8LhfFe8="
+          "hash": "4v/xR6F6MzrjZ6qHw4uLAudqHzhDXYBMLqG4lvoNNLc="
         }
       },
       "is_incremental": false,
@@ -8673,7 +7101,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLine3Preset.html",
-          "hash": "FKg4x2iwAVb1AdEoTpbMxXTFJprCG0r3Sua7XQcxYCk="
+          "hash": "KomfzTyGcJ58pYPRcGtQHYtA5UzWolyaUYQTb2A3TzQ="
         }
       },
       "is_incremental": false,
@@ -8685,7 +7113,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLineBG1Preset.html",
-          "hash": "PKjZrZhQH5jbWeTwW+uY8Zq1bTsoD6lgeAZhi2N5+Uk="
+          "hash": "T0FF1NLnHxjqHM97CfMwvKnXsHK1bZSRIZa+DzRtN6o="
         }
       },
       "is_incremental": false,
@@ -8697,7 +7125,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLineBG2Preset.html",
-          "hash": "2Mrbd1rhTgIGMSjX2FUc0EzCZMAuqznQvP0CbMP1jQg="
+          "hash": "yGrqcSYEjABfbnFXYbFtQI0v6jDmwT6qccGqxYWYau8="
         }
       },
       "is_incremental": false,
@@ -8709,7 +7137,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLineBG3Preset.html",
-          "hash": "NRrs1Te2iX/aNxPELYBGAFpKrLiMOYp9ovXsAjL5IjQ="
+          "hash": "RkLLjrOGRMnPRFcEFxwgNue8BTjDGyAiPheZjzK/n2U="
         }
       },
       "is_incremental": false,
@@ -8733,7 +7161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.RSS.RSSDefaultPreset.html",
-          "hash": "pEHVnLuductTEeP8OE8JjUyGzlilRVBjNlbAkws2TKw="
+          "hash": "+E/o+SEaju731sOB4+t4Ce/gmW290e/jI6g83ndMZDE="
         }
       },
       "is_incremental": false,
@@ -8745,7 +7173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.RSS.RSSPowerLine1Preset.html",
-          "hash": "CDABk7eSSRwJpgDxdVbS65GbQglAHuDAcOa/TxPSY7o="
+          "hash": "R1KopG9R56Xfr1GbpQdBYPIJ5Bp/xJpVsqKNH3Ql/n4="
         }
       },
       "is_incremental": false,
@@ -8757,7 +7185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.RSS.RSSPowerLine2Preset.html",
-          "hash": "63Q6bM2yK1dq9m6EpgTlt1ZRlcEUkIDqrFuqLH666UY="
+          "hash": "4C+U9PJVl4D+WXc6AoD47V05sl0TKS4JTP+9sX9XgY0="
         }
       },
       "is_incremental": false,
@@ -8769,7 +7197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.RSS.RSSPowerLine3Preset.html",
-          "hash": "Bqx5FBVrTlX+pbnFrGC2P1T6DutG2/QT8EeJ/x2Ddjc="
+          "hash": "MRyKvEgGFTgSZkBVgWeZu97xwALtIt3zt9HLcwOLvBQ="
         }
       },
       "is_incremental": false,
@@ -8781,7 +7209,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.RSS.RSSPowerLineBG1Preset.html",
-          "hash": "owN3IQY6JkHN7TS35F5YP+IIF67Okrrs9vp0udXt0Gs="
+          "hash": "iU4L9Z1EVh2e/A0j3a/RL/tvyEt4nyDbeftc8Q1tllg="
         }
       },
       "is_incremental": false,
@@ -8793,7 +7221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.RSS.RSSPowerLineBG2Preset.html",
-          "hash": "/QrPx3dRnb9c7IEb0Myh6kG1d8vWAVfTrKt9i7WXVe8="
+          "hash": "0qaYygPksN08X3i3odZJVfAr1nA+3SjN3h7EYYfvRBA="
         }
       },
       "is_incremental": false,
@@ -8805,7 +7233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.RSS.RSSPowerLineBG3Preset.html",
-          "hash": "+Tvb9Mf7N7xhL+VzZyLIvVBS+BDUOPkKFagqpnzXr3E="
+          "hash": "HXpRU+2iWxKeOnv6k4xCpjDMhvSKJyTjp7QG5B8gs9c="
         }
       },
       "is_incremental": false,
@@ -8829,7 +7257,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.SFTP.SFTPDefaultPreset.html",
-          "hash": "GBt8PlTtP2W9gDiTjC14ibp4pmN2eyDZjZYdhNo9LJk="
+          "hash": "LKsTtHXj0JO2iD9SeAuobtTsgWMkeO2vDYgnPK8r1O0="
         }
       },
       "is_incremental": false,
@@ -8841,7 +7269,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.SFTP.SftpPowerLine1Preset.html",
-          "hash": "CeszR1iQNse1jG7yEOWQMOlejWuUmN29mzzwI5Q2O0A="
+          "hash": "Wp2oOxz8iHCeWW6PhOMw4R8fr9GxGIIaW/GueNJhQKQ="
         }
       },
       "is_incremental": false,
@@ -8853,7 +7281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.SFTP.SftpPowerLine2Preset.html",
-          "hash": "hLDa3WMyzphcG91faBzsqUF2eywfuCaVktyRdQYC4p8="
+          "hash": "P3hHS3Ouqi8J0yGBtAcoI/4uGkr9UAWE5D0EDR4Lpnc="
         }
       },
       "is_incremental": false,
@@ -8865,7 +7293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.SFTP.SftpPowerLine3Preset.html",
-          "hash": "zVLsXPtTnZqtUXXRX9qbgu/8s99JyBoVQ4uJ+jc+l8w="
+          "hash": "jxlkl4oRaHwkzblyavkGjqvvy9eU9tfGi8BFsodZFDE="
         }
       },
       "is_incremental": false,
@@ -8877,7 +7305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.SFTP.SftpPowerLineBG1Preset.html",
-          "hash": "BDNKSqmJeaqkAZEigbN4I7ju3rXe8PBxk3CHkY00KRg="
+          "hash": "UGGOpqhF6QVe1XThw+EjElVkzMPyn4+1CW93cWDrHD4="
         }
       },
       "is_incremental": false,
@@ -8889,7 +7317,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.SFTP.SftpPowerLineBG2Preset.html",
-          "hash": "hldPUTGded0kc4ekIIdqWYwwwLDVTYNevEx49RXaALE="
+          "hash": "J7qe91Jy0KsmCLGFiO33kpPaktAmUcpps8YprUm8z00="
         }
       },
       "is_incremental": false,
@@ -8901,7 +7329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.SFTP.SftpPowerLineBG3Preset.html",
-          "hash": "+HRfvRQ7nSFlVrCL+2WMaXwFjjwt/Qn+LxlZtl+mudw="
+          "hash": "MBMLHcMxM0s8PeveClBmy7AS/HYUJeQNjxZVtt20slM="
         }
       },
       "is_incremental": false,
@@ -8925,7 +7353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestDefaultPreset.html",
-          "hash": "Tbw6DC4EqwrCVPFdSv3Jgct5tUMrVIQMODl3yErV8MM="
+          "hash": "PvpkGbhPakUB8fIw6+wrGwZK8wxlR7JQ/6mOWV44HlM="
         }
       },
       "is_incremental": false,
@@ -8937,7 +7365,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLine1Preset.html",
-          "hash": "DZQMapYjOO3RYefxc1EJL6ICufFIEN0xfyJOM2gT7+U="
+          "hash": "m0uTQXcHwcCnytj22b3fwTXGUlLh7FkItf3JEF2JA2I="
         }
       },
       "is_incremental": false,
@@ -8949,7 +7377,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLine2Preset.html",
-          "hash": "968317ACcpKQdol0OSh4DRjF8WtX802sZF2UWH9Nscw="
+          "hash": "F4B4u6bQmWieOwC6otqPsCvWbqsaXuJMHvlfYzx1+u4="
         }
       },
       "is_incremental": false,
@@ -8961,7 +7389,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLine3Preset.html",
-          "hash": "ajVXgDIwMKCesa7rKggv0BkT1ek5XPeTDXXMjwvqTeQ="
+          "hash": "Cm+yaomH5GzvuaBrgcFAOy9CtRTkH9WzHWcmATVNkNY="
         }
       },
       "is_incremental": false,
@@ -8973,7 +7401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLineBG1Preset.html",
-          "hash": "iXJRQ2W8sIWWBh3DnB8ax3Gi3Y17Vczrx4ctJZ2jeR8="
+          "hash": "fhQGE2UaJGnYSqjwdh2+d5HJo9pR3LlVjolIgRxYwzE="
         }
       },
       "is_incremental": false,
@@ -8985,7 +7413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLineBG2Preset.html",
-          "hash": "3Iftq1jF8YnxdmpJ8JY9UXB5aVBXZP7/ozie+D86yfY="
+          "hash": "oGWi1ibj1QWO5zWz0nh0WBRjNeqOmuoR2BSgfYQACcQ="
         }
       },
       "is_incremental": false,
@@ -8997,7 +7425,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLineBG3Preset.html",
-          "hash": "BKx3K8Dhy2yfgLPj96jhWFxXlhathhgJ5aLR45E3Ujo="
+          "hash": "LRfIOGYenxCLEXSO5C2eHdED83ufrlBSvnEadGe8Bik="
         }
       },
       "is_incremental": false,
@@ -9021,7 +7449,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Text.TextDefaultPreset.html",
-          "hash": "MTFMFfxByeebUg2VxmpcEZB440GApAtlUTk5dedZ1Fc="
+          "hash": "LxC2I83HpTzLumdmcB2Gsi7/9QruMlG0wHSoamGQGZo="
         }
       },
       "is_incremental": false,
@@ -9033,7 +7461,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLine1Preset.html",
-          "hash": "sqjukHBR8R+BLLElsZz+h42eE2jcbXKUzAArqUz0G/M="
+          "hash": "sZkz+4C9ZkxQbbcHMdBkjuVOdHGUTsca/avvYuv5BKs="
         }
       },
       "is_incremental": false,
@@ -9045,7 +7473,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLine2Preset.html",
-          "hash": "yoGg9FPGhMud5jPy8qhT2C8sgLeG5Cm9/Zpux6C8qKg="
+          "hash": "kTOqw6LyGgfu6x+GZT+918sXaFjhF3Lofcej2yVGV1Q="
         }
       },
       "is_incremental": false,
@@ -9057,7 +7485,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLine3Preset.html",
-          "hash": "u2Zle/jq13RGimustEWkzhfHwcNr5FLDIHEBm5eLNHE="
+          "hash": "evawnaeRMr1h31lPrW/rQsPpvh/UcC6QfNx+8rJNZdI="
         }
       },
       "is_incremental": false,
@@ -9069,7 +7497,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLineBG1Preset.html",
-          "hash": "+dMBWl0VES7m5paeF9gISlBeygDlSfXNsxuQ1lbPsHE="
+          "hash": "cCnW3a1IwMPFHTYqgFMRBCsn/+hbIJ2aQSIOnaWksMQ="
         }
       },
       "is_incremental": false,
@@ -9081,7 +7509,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLineBG2Preset.html",
-          "hash": "V8xM2tfqu+DauPduaBJFtrXl72rtyjwTgNRjgc6XVc0="
+          "hash": "JXDIOWyt3zQT1lHu/E8pOPJbbhsRkOMtP/hITr6QC1c="
         }
       },
       "is_incremental": false,
@@ -9093,7 +7521,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.Text.TextPowerLineBG3Preset.html",
-          "hash": "IsakAHnJ431xBe+59/njkmuD68tunSPmhLTKLcJ25dw="
+          "hash": "5NsOoZ3bL/3RcB1RW7DGoU7MxCMFXvvHywgDR0D9gjk="
         }
       },
       "is_incremental": false,
@@ -9117,7 +7545,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.UESH.DefaultPreset.html",
-          "hash": "OKFcL+fk1l5ogAUDPAlE3djAlLqfrLW1OcROX3LxHWw="
+          "hash": "bihIby4tqU5pTgrRzbGqylZwmxNbv/QRmLaRpEN0j/I="
         }
       },
       "is_incremental": false,
@@ -9129,7 +7557,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.UESH.PowerLine1Preset.html",
-          "hash": "LQ7qqul3hHkChL6V7RiSAiwILgvCOEirzCTqej0KDIY="
+          "hash": "YQYH9X7ti1o/PWIRmuaBEsFKfcP4umj3Tge+F0hD2Mo="
         }
       },
       "is_incremental": false,
@@ -9141,7 +7569,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.UESH.PowerLine2Preset.html",
-          "hash": "qv9LEQL46MaWDvmAZfR647CHe4rrrH+fc2BcxA1Jxj4="
+          "hash": "4cGp3rD+ogns1G8KV3qEjHY0vCN3HBxgSxpWdGa5QLQ="
         }
       },
       "is_incremental": false,
@@ -9153,7 +7581,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.UESH.PowerLine3Preset.html",
-          "hash": "Cyjl+jhvepLyG6QGl3cIz3olZ9n+W0kiGSFiE5ioILo="
+          "hash": "gLTMyumXS69HYzrjZdC/xxFJ0M90y+GW9giUddEp3zY="
         }
       },
       "is_incremental": false,
@@ -9165,7 +7593,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.UESH.PowerLineBG1Preset.html",
-          "hash": "aTXMkWgVanhPco2FzWQJw+1fHqQPyBqA76dDRIW0PD8="
+          "hash": "YFuIEDnoGt+MvrfjkSyjPmeS8TnaoxjtVWm7xljdt/o="
         }
       },
       "is_incremental": false,
@@ -9177,7 +7605,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.UESH.PowerLineBG2Preset.html",
-          "hash": "KhvQ6hrAuy/ityc7kmVcYxaceVVgwbaE1vTlLGZe02Q="
+          "hash": "HI0g9yE+e5QwyP8KR+OwPd9SpHnvjzEK+Ji2/6j/PTk="
         }
       },
       "is_incremental": false,
@@ -9189,7 +7617,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.Presets.UESH.PowerLineBG3Preset.html",
-          "hash": "4OVHwFRCw2KGmGD0PJL+36c/Rp7+sznKxuceA/HLR74="
+          "hash": "471pRTNEIsSd/ux1SYRvrJwWu2Pj+zguDg4Mg6fdQJQ="
         }
       },
       "is_incremental": false,
@@ -9213,7 +7641,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.PromptPresetBase.html",
-          "hash": "tB197a/wprgI88YgdaZSUN28/tq11eM5ErhmeK1SaNk="
+          "hash": "cFQHpFRDQGGUPktPynaoa5RH6JibYQ3mQ08pTWMB5FU="
         }
       },
       "is_incremental": false,
@@ -9225,7 +7653,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.PromptPresetManager.html",
-          "hash": "CtpVypJTtOl12r5IGllK1IY0OsfKmlIS6pN1H2iCA1Q="
+          "hash": "IU0iNFZzqrFkGaYaTaBQEmWwvRCdYR5lTt4/uerq1Pw="
         }
       },
       "is_incremental": false,
@@ -9249,7 +7677,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shell.html",
-          "hash": "+63TVdRedVbNXU3F2luiw3DTOtaa3ipz3LOY6gYcpNA="
+          "hash": "p+KNPPawIIWPOHNAp3Tzqrc4b9kJPIRBP+RRIz/BLhE="
         }
       },
       "is_incremental": false,
@@ -9261,7 +7689,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Aliases.AliasExecutor.html",
-          "hash": "pdFCU0Zq146NvsGeTYDCaTnf2hIdPGOzcTEbZ40TgP8="
+          "hash": "EgeJ75zIulqQmJbCub0XpYqr04p6YNE0ehMbExSqWGU="
         }
       },
       "is_incremental": false,
@@ -9273,7 +7701,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Aliases.AliasManager.html",
-          "hash": "ed8DTjavn6+DBoNX2e4kQ+BDFfnBRcORunBt8LYjzcY="
+          "hash": "tgbDBaDo+/lfvpHuPqK3w8BT54lW6uBq3FuTkn01OiI="
         }
       },
       "is_incremental": false,
@@ -9297,7 +7725,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CancellationHandlers.html",
-          "hash": "nVjs43aRhBX3iIG11FnNjKdouDVqHHIU+IV+RUsachU="
+          "hash": "fiM15XlpQlUVxNkdVW6h13/MKg1OmvgdldMcvQ4rQDU="
         }
       },
       "is_incremental": false,
@@ -9321,7 +7749,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandAutoComplete.html",
-          "hash": "3Zu4HbztFKYrlFOARVZjBIjM2CXkQ2ageLYrmUndF5E="
+          "hash": "Q+oR0f15kCAJQGb10iXyfV+yknWzp9VaoS3Urd4HL6E="
         }
       },
       "is_incremental": false,
@@ -9333,7 +7761,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandExecutor.html",
-          "hash": "xxzTSsN5AqXDqh/48JGhNL9CqCSFCmYFNn8lydb/Ao8="
+          "hash": "pMA90IBpQqBy196MOKMZmZTsBlcS7yGJHdcFAQ9Hx/Q="
         }
       },
       "is_incremental": false,
@@ -9357,7 +7785,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandInfo.html",
-          "hash": "6mEOeuhvCftAG68ty5Gbjr1IBkObTaYMQ51i9ah5m9s="
+          "hash": "uLAimhjMRI9yTENuDjl8UWw+YDyvQwJIV5U+fxwaHfA="
         }
       },
       "is_incremental": false,
@@ -9369,7 +7797,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandManager.html",
-          "hash": "4b36VZiw/0pggNxavesPYtYKv/eDXCegAUjQAzc/tjU="
+          "hash": "j0z/qgWPVm+zLC4CNyN4jadrQVcHnDH/xfeqXY31h1k="
         }
       },
       "is_incremental": false,
@@ -9381,7 +7809,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.GetCommand.ExecuteCommandParameters.html",
-          "hash": "oyGzRKlsvwl3wG2DjJ9CmxZqpioqAbGC/BkUtMqF134="
+          "hash": "N+pKX0JurAX1oj5dwJEWHs47MTSDi7AtiJJpKQG9tbk="
         }
       },
       "is_incremental": false,
@@ -9393,7 +7821,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.GetCommand.html",
-          "hash": "ps1TzEgCOSwok+sYSuLqkXpjF0vrujk0S/iHhmo1g9Q="
+          "hash": "7b0UpIn4aP2EHS0SNAFKDFad+WK6DnujdJwqPy/7olk="
         }
       },
       "is_incremental": false,
@@ -9405,7 +7833,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.HelpSystem.html",
-          "hash": "9zANpx62PQnzOl31NYeaOnN8bbu2aRCtyauYzgfp85M="
+          "hash": "J9+4ynTMDEb88kkgSx9w0k9RPp4u+4DgCJtIVEyeVhU="
         }
       },
       "is_incremental": false,
@@ -9429,7 +7857,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html",
-          "hash": "KIOwybsCOFZwvmCVSepTNkPv83Vogf4xXiN4vgyl/Wc="
+          "hash": "nmX1d4rjcQUedLUFJ3ETe29xL0oKtHe2oEmyTDdWKBQ="
         }
       },
       "is_incremental": false,
@@ -9449,6 +7877,54 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Commands.UnifiedCommands.ExitUnifiedCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Commands.UnifiedCommands.ExitUnifiedCommand.html",
+          "hash": "pl7Mo04qpCZsXo9lLK+NDMd6YB/PbC/cO0uMDle2MR8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand.html",
+          "hash": "GnSaLcRlTTTyK0AFWiWlob4hDER5KwnSJKEPL2hsh0Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Commands.UnifiedCommands.PresetsUnifiedCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Commands.UnifiedCommands.PresetsUnifiedCommand.html",
+          "hash": "ak9zTDLsfIzh6aY0+Slqf7x3x/+w9gahKJ00RN7YG0k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Commands.UnifiedCommands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Commands.UnifiedCommands.html",
+          "hash": "WX9PF87mlZpF5Dxb5PHDFp/xQRvYLqO4NZUUJeT8K9c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.Commands.yml",
       "output": {
         ".html": {
@@ -9461,11 +7937,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Shells.BaseShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Shells.BaseShell.html",
+          "hash": "OhnVgZpAYfjVVkWdI/YmEsJB2HNigclOs+k43fdfLYY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Shells.BaseShellInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Shells.BaseShellInfo.html",
+          "hash": "oUU2yAXewvuH4qrRE4Tst22+rbAzG6RiJOKgRKL0vBQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.Shells.IShell.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.IShell.html",
-          "hash": "pcQfi0RLktq3eBO2RfFRoRG/QqBmM9oX8JsIL8llyxU="
+          "hash": "0ovXail6HUzxKg6f/dqS9wRNGJEwLlhuWxxGcDPqwsI="
         }
       },
       "is_incremental": false,
@@ -9473,11 +7973,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Shells.ShellExecutor.yml",
+      "source_relative_path": "api/KS.Shell.ShellBase.Shells.IShellInfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Shells.ShellExecutor.html",
-          "hash": "2pVGVly4EjVgs5kDdFPRKInurZlSa8fiFSnKEQebu/E="
+          "relative_path": "api/KS.Shell.ShellBase.Shells.IShellInfo.html",
+          "hash": "4y2CxFjKg4h0/gN/gD9zMmocn/PRqF4sLbJlCAj2PiU="
         }
       },
       "is_incremental": false,
@@ -9485,11 +7985,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Shells.ShellInfo.yml",
+      "source_relative_path": "api/KS.Shell.ShellBase.Shells.ShellExecuteInfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Shells.ShellInfo.html",
-          "hash": "dEIS6hbrCMwPSrpXREne8ydwpA57Az0MKB1RL6qBT8w="
+          "relative_path": "api/KS.Shell.ShellBase.Shells.ShellExecuteInfo.html",
+          "hash": "BmA5dxlXwSeOX+LzmtyzWYoKcuIHpmTm71R92CcpPHc="
         }
       },
       "is_incremental": false,
@@ -9501,7 +8001,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.ShellStart.html",
-          "hash": "IddraLsqp7NHH7tiDMKasJq5RqNn9TaReIOJs38tLHA="
+          "hash": "c05cdRLFO1IoxYktMqNE59rcze3Bh1pvukBsRjQxjLk="
         }
       },
       "is_incremental": false,
@@ -9513,7 +8013,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.ShellType.html",
-          "hash": "2xIMFJ+vW3O9ZiC4c8+70ASsBESsnVlYbXcIX7sF9+o="
+          "hash": "X/nrb3vMpZMLdVurHJzEidzydOJIW1tODp+84zob4W0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Shells.ShellTypeManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Shells.ShellTypeManager.html",
+          "hash": "K0zJx3zgDV0kJ2UAuK/eBsBBbB0bA1SU99bB4UOrJqE="
         }
       },
       "is_incremental": false,
@@ -9525,7 +8037,103 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.html",
-          "hash": "Q/H82LOzZcCiNfnLr3jrnDMtrM1f6Q5d/cHlkzqFGoc="
+          "hash": "dxuh0T276Uc0K/wcyVwVrUh8khmUKMnwpX/tc4z4LC8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Admin.AdminShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Admin.AdminShell.html",
+          "hash": "u6ey7JPNjN354gkTfNfKjaKFwtj7roMVUezbaHE4caE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Admin.AdminShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Admin.AdminShellCommon.html",
+          "hash": "uLgTDe7cWLGaZf0WS3EI1RYGIOrIR/OGnbUMQsrQMtw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Admin.AdminShellInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Admin.AdminShellInfo.html",
+          "hash": "CCFlsHFeK/uMjaPSkbP8SluOr6McLmPu8JRx+MQnOUs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Admin.Commands.Admin_CdbgLogCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Admin.Commands.Admin_CdbgLogCommand.html",
+          "hash": "PcNKxYjMmNHrkFs43xMFF5J4wNfmNmTeNmKZH9Q5QNE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Admin.Commands.JournalCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Admin.Commands.JournalCommand.html",
+          "hash": "xTDEmssRzWUksEzDUVEs52kO7lDdRelkGDY/qxJuMds="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Admin.Commands.LsEventsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Admin.Commands.LsEventsCommand.html",
+          "hash": "fAVQuRpgkeSJsN80HfnYOr9KLmEr4f/0tGmRIHu9T3Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Admin.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Admin.Commands.html",
+          "hash": "Y3dmUto0IYrRl7WRafbcRvnulkAMopfpKi2BUg3RqvI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Admin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Admin.html",
+          "hash": "xwBcMrMlawzBAAQh66mF4NWrYI2M1iC6HPQaYs80TDM="
         }
       },
       "is_incremental": false,
@@ -9537,7 +8145,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Archive.ArchiveShell.html",
-          "hash": "k3PNxtbqkDTBjnB4WL10mrvL1vjOZvQqSh0qqB9ewHM="
+          "hash": "opCLR2UWYYBqUaJqP8iVeA9+OxxTU8qwPQp3f27sk5A="
         }
       },
       "is_incremental": false,
@@ -9550,6 +8158,18 @@
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Archive.ArchiveShellCommon.html",
           "hash": "O+P7zWxfAJQuo+AaaZHjEhZrUa+PjSeAElY5TJLj1BA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Archive.ArchiveShellInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Archive.ArchiveShellInfo.html",
+          "hash": "eBRSPTrgR2l4rdM56HHeoEjSvDEBVzdGfCJay901J/k="
         }
       },
       "is_incremental": false,
@@ -9645,7 +8265,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Archive.html",
-          "hash": "pC7ZuoV+zpDJCWKC02hf6j8WIgbCNsc23ClAdIN9cfM="
+          "hash": "NilifeHXXT7A5YIiYQK23t7qAlH3KxMN2LiuCdlcoy0="
         }
       },
       "is_incremental": false,
@@ -9693,7 +8313,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_CpCommand.html",
-          "hash": "63Bk7L/NJ0QJFJGRJOCO2YqZ7oFabD9Y9fxZSG7wO2k="
+          "hash": "DtJdYJBStUT2wrMwVzcvUvMg706ik4o/dvpDNQ6sIYw="
         }
       },
       "is_incremental": false,
@@ -9801,7 +8421,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_MvCommand.html",
-          "hash": "Pezsaq7DBVqaT3DO6lApcTbxzamDrcIgQ0ncX6fzRMU="
+          "hash": "JVR2/0/iegvDSkM8G7+Rkde8tD8JrZZOl8xkPcmZlvc="
         }
       },
       "is_incremental": false,
@@ -9837,7 +8457,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.FTP.Commands.FTP_PutFolderCommand.html",
-          "hash": "6EsxwfyFMaNrWsgDTwm1CzsjZBTMhQ7mH5MkpsYjDTM="
+          "hash": "4tiP9dK4NPErxih1JOLobWWqGJHBKrLBUjK+ZY5vxyk="
         }
       },
       "is_incremental": false,
@@ -9933,7 +8553,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.FTP.FTPShell.html",
-          "hash": "HcamkvcMpjou+sfNv0kDhNght8rrZaji1VJCcPfAZbU="
+          "hash": "jMEn/5ecoTyBNbP6bkh94fMOEqrFm/jltcBb209IzuM="
         }
       },
       "is_incremental": false,
@@ -9945,7 +8565,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.FTP.FTPShellCommon.html",
-          "hash": "xmqGAlJk6dI8g2v8DNp4fV9PE0vklY4H6qIfL1/QREg="
+          "hash": "5fUYPTimzfsK6KezaifsU2W1eKCTJao50CnkQCazNbc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.FTP.FTPShellInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.FTP.FTPShellInfo.html",
+          "hash": "twBusjzgOY069gIbl/5h5b08hCw4QRptITOoqvUs96M="
         }
       },
       "is_incremental": false,
@@ -9957,7 +8589,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.FTP.html",
-          "hash": "xsl8cthZ+CwDaY0H78uw+7Jf2Mrp3trNw0mHLKUgPYY="
+          "hash": "/GaU+kuEDGWIFNQRgz1MvjJD4ZXk3NK6+oRRyamKUL0="
         }
       },
       "is_incremental": false,
@@ -10029,7 +8661,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.HTTP.HTTPShell.html",
-          "hash": "i3mYqUhlYRnkL6AkZXFsS4hVL53ZLzsY+lpRKVpX6cg="
+          "hash": "DakSDxHCLQeRVPdHkE/TrmI+x8bqPioipuNt4HsfiBg="
         }
       },
       "is_incremental": false,
@@ -10041,7 +8673,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.HTTP.HTTPShellCommon.html",
-          "hash": "lkASdnifp7ic4sX10Nh41erQtnsbl0y9Mu3iqNRSPos="
+          "hash": "moVTATqNCjA3Tv4xJtv2RIymiRlNikoCtVngZ6NMxy0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.HTTP.HTTPShellInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.HTTP.HTTPShellInfo.html",
+          "hash": "9La7HCrlsnrXazoDPo33C9cBjrnp8Fab7hFsp2kPH6Q="
         }
       },
       "is_incremental": false,
@@ -10053,7 +8697,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.HTTP.html",
-          "hash": "pALwC44io9QlRXdQITTLSXq6WvYNml3I6iP2iWDih2Q="
+          "hash": "1Ejt/Y0Sh9o1Kxi9QYeMPe5pWCN0Ztt/U2gSTR3m1XQ="
         }
       },
       "is_incremental": false,
@@ -10197,7 +8841,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Hex.HexEditShellCommon.html",
-          "hash": "MD+bFIY6fc/dmHL5ih2ze1yLdGsukwjrTp92Y8TW1Xg="
+          "hash": "wFJ2yRpQ3duJ9w9OtzXRQVBMQQlRad78xQmfmRIIyfM="
         }
       },
       "is_incremental": false,
@@ -10209,7 +8853,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Hex.HexShell.html",
-          "hash": "6wdiIfwvsFMyzUIif5OmQV31JFjYj6GcQSxnWnKZVjc="
+          "hash": "Xd5JnwwehJrthdMYYDrq6dOYxQFcfe8HzcVrc9TWe+g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Hex.HexShellInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Hex.HexShellInfo.html",
+          "hash": "WQ8AFxE/6TcfL4fmAvmQGexfne5GWN2RT2PO0yklPGE="
         }
       },
       "is_incremental": false,
@@ -10221,7 +8877,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Hex.html",
-          "hash": "/oDZqS2et2ArFhh86ro/IISyeaZ3zjasq0lAe4G5vas="
+          "hash": "rpMeM0TmiM5muOEBdZcwXZKhYd2d6O8pYN8UpcoaEz0="
         }
       },
       "is_incremental": false,
@@ -10353,7 +9009,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Json.JsonShell.html",
-          "hash": "WLQfUZ5PRIKytxWaAYPkXtzUeAC8bOaoRDRyiawDOBc="
+          "hash": "oONcs5TlLU/cGdfM1ctIdeAMGjQ/CJWzjqUdDD44cAo="
         }
       },
       "is_incremental": false,
@@ -10365,7 +9021,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Json.JsonShellCommon.html",
-          "hash": "2SOGb531JQYY/22yyykOUuHDjDhLhHJFPzi3ftupMJc="
+          "hash": "BpCrkTdXgZVZ4sKgYHokaPXElcrwo+5+TRGQc8cNajk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Json.JsonShellInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Json.JsonShellInfo.html",
+          "hash": "AulQMuCd5Nj7l+VZMKAVVY1rH4zwwpDNrOmnDiIeC3E="
         }
       },
       "is_incremental": false,
@@ -10377,7 +9045,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Json.html",
-          "hash": "B6eB/xwtXQJ73mT1EXqOUnnYfyYtg+8+q+beZPiZcG4="
+          "hash": "guFeDrJytHjg1+aBZawztlJTrWsVSA/oiuyZ19tpsp8="
         }
       },
       "is_incremental": false,
@@ -10569,7 +9237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Mail.MailShell.html",
-          "hash": "Oe8aPmIVoVx0MkmFX717ShrIeKCd0XJ3LRij3x/o2/I="
+          "hash": "919OTyXCsNmqih45duyQREs3ud70Cxo+DIz5ykcqgbY="
         }
       },
       "is_incremental": false,
@@ -10581,7 +9249,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Mail.MailShellCommon.html",
-          "hash": "rwOrGf0rhowlMQIo1mnTCOrTsOOaUPJKwmMi/MsY1z8="
+          "hash": "aU7EONe0xsywruPEHj5V/VDqeFlL/Vec+4FxGUZTOCw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.MailShellInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.MailShellInfo.html",
+          "hash": "0mDYeA9sRgCTocmAj8DbcZkNlwYT7rOGp5HxAwcfHhI="
         }
       },
       "is_incremental": false,
@@ -10593,7 +9273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Mail.html",
-          "hash": "XSm0V6ddeJLAA2QVb0W8d1VhKFuQq/pCrFQrgR5Ln9E="
+          "hash": "w+bIi4tydjYC9EY5JEBjDVcZM2d6tdlFCtOWKz8UPEg="
         }
       },
       "is_incremental": false,
@@ -10605,7 +9285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.RSS.Commands.RSS_ArticleInfoCommand.html",
-          "hash": "0CmQrWZPPOfeWIjNceYVtv5dm+1WLGsk+CJnporIiy0="
+          "hash": "nN3ApvmPPYmeEc6YZIuWdgzdQ6S2Oz1iiCYU8YKpQhk="
         }
       },
       "is_incremental": false,
@@ -10737,7 +9417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.RSS.RSSShell.html",
-          "hash": "GZS67aCYROFxTT22dPbb4QNwckSagpWtWElqXlFvSiE="
+          "hash": "yFLlVazA6aOo2ClN4f8vjlMD13gGXnyhbM07CiMOByg="
         }
       },
       "is_incremental": false,
@@ -10749,7 +9429,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.RSS.RSSShellCommon.html",
-          "hash": "yLNbLtGZqFnmUCI4Gh3uaTdcUnyP2DAJM3h2FNQxpFE="
+          "hash": "xZoL+EA4arO/KsIZT51xnmpBHbD3pR6k2eiKsX/MmW4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.RSS.RSSShellInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.RSS.RSSShellInfo.html",
+          "hash": "QNb63ZoIUN2h40WwebgVUDcgDRrB/vPfL6uIRUBWr0M="
         }
       },
       "is_incremental": false,
@@ -10761,7 +9453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.RSS.html",
-          "hash": "Uuqq27RgywEudvTP7leA8gjpZL7FhnJCjKlnF9Px528="
+          "hash": "eMzV0UepCImSC7NA0a1U1IaGhdQ/NfX8xfvMldG/rFI="
         }
       },
       "is_incremental": false,
@@ -10869,7 +9561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.SFTP.Commands.SFTP_PutCommand.html",
-          "hash": "lktfisdbFbdfmGL11SHpXJPmWT4+1gKd8EJ0vUfKegU="
+          "hash": "dXE5ZoNoirQgKq75/fAO7lvYuYxeAi2v91HJEc5h1e4="
         }
       },
       "is_incremental": false,
@@ -10929,7 +9621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.SFTP.SFTPShell.html",
-          "hash": "EvlGpJCzfyfy4UinaeZQ/tlRAwFpqD4+hjF+uOVv5aw="
+          "hash": "QwUu+Z5ySOff6dEd4LpFCjew3jRhABa7dK+telGa7xg="
         }
       },
       "is_incremental": false,
@@ -10941,7 +9633,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.SFTP.SFTPShellCommon.html",
-          "hash": "w+tbHqliFOKPxZxHDRcoU/368PDx5qZI/sChubP9XBQ="
+          "hash": "/39y4SDftjHcdY5MC37lmlhhJVfxVlRrTWIH0fuHWbM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.SFTP.SFTPShellInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.SFTP.SFTPShellInfo.html",
+          "hash": "TYTEqQ/ZXbDE7ZCLsKyRG2SPYAm42/shQLXkF9rdrrI="
         }
       },
       "is_incremental": false,
@@ -10953,7 +9657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.SFTP.html",
-          "hash": "TF7KT0ydTPjVvDsF6YVpGSQwRhFkDxIj2tMrTTzGcWQ="
+          "hash": "fnmpWocHBdeSemT+GyoAwn6Aei60YUJu4KShIRlKEJ4="
         }
       },
       "is_incremental": false,
@@ -11577,7 +10281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestEventCommand.html",
-          "hash": "aF3FbKhroA8Rct/Rwh/FFQOkbjdZH4xYv9I4X++4wiw="
+          "hash": "UHHcSq2tB0PoKQevJV9vA9qUzW3vaOTntKQ3fPxB/5Y="
         }
       },
       "is_incremental": false,
@@ -11769,7 +10473,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Test.TestShell.html",
-          "hash": "iPY0iXqp6mCdMOFBmFWikOWCZQ70twJ3jVepk2NHwHo="
+          "hash": "6P9qvX6ha3p3nd07GJ6EGoqqlIvYgbuPLBfWYlDU2NU="
         }
       },
       "is_incremental": false,
@@ -11781,7 +10485,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Test.TestShellCommon.html",
-          "hash": "qSv8xttHL/KNqwyFix3JGjXBAjTXPFfDLSv3lreie08="
+          "hash": "8E0SF8kS39CjGSvagaLOC73TA+IJJZUvImKWBGjwMg0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Test.TestShellInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Test.TestShellInfo.html",
+          "hash": "6ArSZDkhlqbYzuYbkjHi0uBRLK2B+nqcO3vgZnUhVpA="
         }
       },
       "is_incremental": false,
@@ -11793,7 +10509,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Test.html",
-          "hash": "ZF/w+9A/8WC6AZGnBcZitwIE1g18Sf9Kgugkl9GBgXQ="
+          "hash": "OcLoNs3tcXVdwQV7COg0xKdbxBnB/yU7FqYjFrQ9jYs="
         }
       },
       "is_incremental": false,
@@ -12021,7 +10737,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Text.TextEditShellCommon.html",
-          "hash": "99FnbxzPGnMUi/EQbn35J205orG3DYv6NdXAoHkzj90="
+          "hash": "+Vo6HS8nbZYWCAK36/I5bC7PYqT46pmvakIDUnFGfGQ="
         }
       },
       "is_incremental": false,
@@ -12033,7 +10749,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Text.TextShell.html",
-          "hash": "0jDWWLlYJDxMtWTtXLZqhu9hT6v8bTSNgO1jVLyZiBs="
+          "hash": "bg6uz8uysNYgtoxT6bVXmrfUgxxblyrjCVVJbHo9OkY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Text.TextShellInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Text.TextShellInfo.html",
+          "hash": "F5formEVcttgq9L6LeToBhBUZNJTo93Op0pkiCROJ3Y="
         }
       },
       "is_incremental": false,
@@ -12045,7 +10773,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Text.html",
-          "hash": "QHnOSOcorW72rz6RStV5jiAqTRORh4xUe7gSp19wlew="
+          "hash": "iwBExuv1fX4YKcGNMRVK37ravDzCLDj3GYAqsmqaz4M="
         }
       },
       "is_incremental": false,
@@ -12065,11 +10793,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.AdminCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.AdminCommand.html",
+          "hash": "zl1egk9QeJ3NEnfDMncGgU91TTquDLUVymdvMk6o4MI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.AliasCommand.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.AliasCommand.html",
-          "hash": "0tVowTh6ulsmK/j/SWkdDdkr/MvnJJ9uLeQ899cHqeM="
+          "hash": "TToxTKiEyu2lKsutfaEKvhCqF273GQTKrY0hut/qmEo="
         }
       },
       "is_incremental": false,
@@ -12154,18 +10894,6 @@
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.CatCommand.html",
           "hash": "M+o2y+4CVCxcDfZ1YyJ4NIlpCFyk7FVVt7UPvY6TBiA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.CdbgLogCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.UESH.Commands.CdbgLogCommand.html",
-          "hash": "P0UvoPqm7DJ43gS3hJ2elh5j/+C8lj5YzfVHTahpvcQ="
         }
       },
       "is_incremental": false,
@@ -12261,7 +10989,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.ChUsrNameCommand.html",
-          "hash": "btW1BInDuANgkycRb+MQ9KYrQUmJgte1wdU3FOU+VEk="
+          "hash": "hB2TRlZK/sukZ+yge0AKnfCfWpyl2Z7nQ2uwFnNhszQ="
         }
       },
       "is_incremental": false,
@@ -12273,7 +11001,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.ChoiceCommand.html",
-          "hash": "tq9cbwVRAPsTvFiUilMEsQd6gB1CBCEHsHTcwQXnvfE="
+          "hash": "O8FIZHLv9iUHhgVUDZPWt5uT6I1vDO4uoxbZH1l7z4I="
         }
       },
       "is_incremental": false,
@@ -12497,18 +11225,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.FiredEventsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.UESH.Commands.FiredEventsCommand.html",
-          "hash": "sgNXtIdgAsiGgggLmpCH+UH7on7qiN99vtATwXPMLl0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.FtpCommand.yml",
       "output": {
         ".html": {
@@ -12537,7 +11253,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.GetTimeInfoCommand.html",
-          "hash": "Ivan82Eyp9t6BpqPbPdcpaczrldwKfPaimZlgn8kXhk="
+          "hash": "xGvFyPLBKMqxL06pb8gucetpaXx03EZcrNIAzNvGwCk="
         }
       },
       "is_incremental": false,
@@ -12696,7 +11412,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.ListCommand.html",
-          "hash": "OIahDG1UcGgcz7NXkJcAH6GeTcEk3woxX2rtnzMRwSM="
+          "hash": "yC5WYvuG0uqxqYWUNmRe9hMCGzDKrYZC41rOXiB3pL8="
         }
       },
       "is_incremental": false,
@@ -12733,18 +11449,6 @@
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.LogoutCommand.html",
           "hash": "iWvKc2UmEQCP86KBzjyqV4qTXwLBhE/FpGERjybRcSw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.LoveHateCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.UESH.Commands.LoveHateCommand.html",
-          "hash": "kqzqDquEA799qpzEAwXLiXJqxl6wc7KNVjIqr71hc6Q="
         }
       },
       "is_incremental": false,
@@ -13116,7 +11820,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.SelectCommand.html",
-          "hash": "Gw0ZWSBvAr2yBFCCyr/s7FsSqsx5/y0Dp5SejWs2WGo="
+          "hash": "P8VKHN2cwM/HD2q4g7h6QIRGrgRfqSQvMOiHQHEPOT8="
         }
       },
       "is_incremental": false,
@@ -13352,18 +12056,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.TestShellCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.UESH.Commands.TestShellCommand.html",
-          "hash": "Ca5xfApDt+1gSGG5PodYjwarGiSsVRGKW2B8Tgz2j4A="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ThemeSelCommand.yml",
       "output": {
         ".html": {
@@ -13476,7 +12168,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.WrapCommand.html",
-          "hash": "5k909xZc1rxiqPfb0EK+VkKmvBe6KrOFwGe6plkGFxo="
+          "hash": "ceSUhljvjyit0Q5NZHBpO+ze7fiLYz9Rxv7nrhw341E="
         }
       },
       "is_incremental": false,
@@ -13500,7 +12192,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.html",
-          "hash": "SRPv/UvVMPVNpghVdNM7BoWnVBeSwK4Q+HW2iyQaQFc="
+          "hash": "SV3PA5v1321CSoaa4k4PaIxOL20n4TxM0BbsObicd5Q="
         }
       },
       "is_incremental": false,
@@ -13512,7 +12204,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.UESHShell.html",
-          "hash": "vYZ18EbVVc1TXe3FremmSxESirHFMUrSX7C92ozje7Y="
+          "hash": "A+vFOD21MYdNW3noziKS25+bQQABFcLu1a6wguzlPi4="
         }
       },
       "is_incremental": false,
@@ -13524,7 +12216,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.UESHShellCommon.html",
-          "hash": "QAi7XC43v5yf8l9SprXMRohR3DuHhnusPD9GrLynhhI="
+          "hash": "TLakCXHIPJjob0C+RGK/IGNZv9Rg+Ek5YRTdyFDo2Pc="
         }
       },
       "is_incremental": false,
@@ -13537,54 +12229,6 @@
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.html",
           "hash": "JHgPUtLhOGZ+7l0KtSRwlxrLvUYxkm15kG+cWWsxMbg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.UnifiedCommands.ExitUnifiedCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.UnifiedCommands.ExitUnifiedCommand.html",
-          "hash": "GCczoA8W/wh1JB0clzsv1wdgu548GzBQK7o6OTAUTTY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.UnifiedCommands.HelpUnifiedCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.UnifiedCommands.HelpUnifiedCommand.html",
-          "hash": "Edjszow3UXuyx7B9jyvNkCn2558Puphvzb5W+AtcLuE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.UnifiedCommands.PresetsUnifiedCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.UnifiedCommands.PresetsUnifiedCommand.html",
-          "hash": "gG3tZonuGl6zkJ/6DnLWB8Qmu7J3TOdaUbiLDDVAp/c="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.UnifiedCommands.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.UnifiedCommands.html",
-          "hash": "Kfbc3uYMGf7u8hI2adjNhQOOXfSr8oRjntBPS4njSes="
         }
       },
       "is_incremental": false,
@@ -13704,7 +12348,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Users.Groups.GroupManagement.GroupManagementMode.html",
-          "hash": "QVZ8RdlVNWfDZsu3nYLUyt8MgMhuJafGQHO0cNjfn/A="
+          "hash": "tZOXZESvazEiDqMlcZceQKQduCzqiHEUD32mYd176Po="
         }
       },
       "is_incremental": false,
@@ -13716,7 +12360,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Users.Groups.GroupManagement.GroupType.html",
-          "hash": "L4924RnqEC7x9dhCJ0UQfMCmSXnBm+fkLd0gI9EXF6k="
+          "hash": "FTn/Ckb5gyBtxbaEGqwGyOfHoJInV4Yj1Ex9EFR4MLM="
         }
       },
       "is_incremental": false,
@@ -13728,7 +12372,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Users.Groups.GroupManagement.html",
-          "hash": "dPNnIqv/BwgMVtKwj1TZUOWGdpuGtzl2rlwUmgC61oE="
+          "hash": "KZvvq6ga6cNuKIOH2DBdZBTJE6D78XohLdQ4fyGQHXU="
         }
       },
       "is_incremental": false,
@@ -13741,6 +12385,42 @@
         ".html": {
           "relative_path": "api/KS.Users.Groups.html",
           "hash": "xvMuyf+FCnjSf65SQGCxg8jWxxh2TQOE/5fsmOnSGz0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Login.Login.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Login.Login.html",
+          "hash": "IFlWKUMKPGLZC2iZQLZZEZablpAiMrCWNzyGDRLniT8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Login.LoginErrorReasons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Login.LoginErrorReasons.html",
+          "hash": "ciNscLdj8lJc2URRc6o/txA5eAZSv91OL7jsWHtEOQE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Login.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Login.html",
+          "hash": "W1Q0cGVaQV4B1ayIQ3xpqo9/XIR5xAis7FX6h1RaZV8="
         }
       },
       "is_incremental": false,
@@ -13764,7 +12444,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Users.UserManagement.UserProperty.html",
-          "hash": "wKs0ib/5r2f8Vo9E/37kFeQEdkyr9HvnSLvCIUnuDTk="
+          "hash": "Qe9qxFUdUzDC3IhG8/o5Q3FXipU6c+c+lUJC24Xzupc="
         }
       },
       "is_incremental": false,
@@ -13776,7 +12456,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Users.UserManagement.html",
-          "hash": "smFzTeW7E1OV7Px4UwspyuRngWsvvP7xZJ6viaKrhbQ="
+          "hash": "BmpZSmqcm5OpVTC6edUdH/oC643Vn3gSgfvaj2v3jsA="
         }
       },
       "is_incremental": false,
@@ -13800,7 +12480,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Properties.Resources.Resources.html",
-          "hash": "avBruOztj+5TxslJBKUhcHQlccPDEuRj01f7z6eO/5c="
+          "hash": "LnRvZicdh2lewH5agIVCNfUI06Gh0xp1MwUKlaNp/io="
         }
       },
       "is_incremental": false,
@@ -13824,7 +12504,18 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "3LOkfOaFAtVfCgd4JVJRDJNr47mTXNmKg6T1mI7KAKs="
+          "hash": "WC3dDovisDVcVe0XkuBszrvXk/ok8pB6aeID/yOPaxA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
         }
       },
       "is_incremental": false,
@@ -13837,6 +12528,17 @@
         ".html": {
           "relative_path": "index.html",
           "hash": "+rW5twvAXvlmrMTb/39sNObdIcpNvjJDPnex0t1xvkY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "logo.svg"
         }
       },
       "is_incremental": false,
@@ -16740,7 +15442,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Compatibility-Notes-for-Third-Generation-KS.html",
-          "hash": "mg3fNzqE5gezWdJofjxE6uSS96k/tlKuYpdk2je0Tyg="
+          "hash": "8uq4PoYWWe+hYVpGE4LGuBMAIVak/6AnXKT9Wi5b0N8="
         }
       },
       "is_incremental": false,
@@ -16863,7 +15565,14 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1150,
+          "total_file_count": 1040,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

@@ -104,14 +104,14 @@
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_Shells_ShellStart_ShellStack.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Shells.ShellStart.ShellStack%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L44">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L34">View Source</a>
   </span>
   <h4 id="KS_Shell_ShellBase_Shells_ShellStart_ShellStack" data-uid="KS.Shell.ShellBase.Shells.ShellStart.ShellStack">ShellStack</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static List&lt;ShellInfo&gt; ShellStack</code></pre>
+    <pre><code class="lang-csharp hljs">static List&lt;ShellExecuteInfo&gt; ShellStack</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -123,7 +123,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="KS.Shell.ShellBase.Shells.ShellInfo.html">ShellInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="KS.Shell.ShellBase.Shells.ShellExecuteInfo.html">ShellExecuteInfo</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -135,7 +135,7 @@
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_Shells_ShellStart_GetShellExecutor_KS_Shell_ShellBase_Shells_ShellType_.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor(KS.Shell.ShellBase.Shells.ShellType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L136">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L142">View Source</a>
   </span>
   <a id="KS_Shell_ShellBase_Shells_ShellStart_GetShellExecutor_" data-uid="KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor*"></a>
   <h4 id="KS_Shell_ShellBase_Shells_ShellStart_GetShellExecutor_KS_Shell_ShellBase_Shells_ShellType_" data-uid="KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor(KS.Shell.ShellBase.Shells.ShellType)">GetShellExecutor(ShellType)</h4>
@@ -144,7 +144,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ShellExecutor GetShellExecutor(ShellType ShellType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static BaseShell GetShellExecutor(ShellType ShellType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -174,7 +174,56 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="KS.Shell.ShellBase.Shells.ShellExecutor.html">ShellExecutor</a></td>
+        <td><a class="xref" href="KS.Shell.ShellBase.Shells.BaseShell.html">BaseShell</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_Shells_ShellStart_GetShellExecutor_System_String_.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L149">View Source</a>
+  </span>
+  <a id="KS_Shell_ShellBase_Shells_ShellStart_GetShellExecutor_" data-uid="KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor*"></a>
+  <h4 id="KS_Shell_ShellBase_Shells_ShellStart_GetShellExecutor_System_String_" data-uid="KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor(System.String)">GetShellExecutor(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the shell executor based on the shell type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BaseShell GetShellExecutor(string ShellType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ShellType</span></td>
+        <td><p>The requested shell type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Shell.ShellBase.Shells.BaseShell.html">BaseShell</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -184,7 +233,7 @@
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_Shells_ShellStart_KillShell.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Shells.ShellStart.KillShell%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L99">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L105">View Source</a>
   </span>
   <a id="KS_Shell_ShellBase_Shells_ShellStart_KillShell_" data-uid="KS.Shell.ShellBase.Shells.ShellStart.KillShell*"></a>
   <h4 id="KS_Shell_ShellBase_Shells_ShellStart_KillShell" data-uid="KS.Shell.ShellBase.Shells.ShellStart.KillShell">KillShell()</h4>
@@ -200,7 +249,7 @@
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_Shells_ShellStart_KillShellForced.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Shells.ShellStart.KillShellForced%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L116">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L122">View Source</a>
   </span>
   <a id="KS_Shell_ShellBase_Shells_ShellStart_KillShellForced_" data-uid="KS.Shell.ShellBase.Shells.ShellStart.KillShellForced*"></a>
   <h4 id="KS_Shell_ShellBase_Shells_ShellStart_KillShellForced" data-uid="KS.Shell.ShellBase.Shells.ShellStart.KillShellForced">KillShellForced()</h4>
@@ -216,7 +265,7 @@
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_Shells_ShellStart_PurgeShells.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Shells.ShellStart.PurgeShells%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L128">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L134">View Source</a>
   </span>
   <a id="KS_Shell_ShellBase_Shells_ShellStart_PurgeShells_" data-uid="KS.Shell.ShellBase.Shells.ShellStart.PurgeShells*"></a>
   <h4 id="KS_Shell_ShellBase_Shells_ShellStart_PurgeShells" data-uid="KS.Shell.ShellBase.Shells.ShellStart.PurgeShells">PurgeShells()</h4>
@@ -232,7 +281,7 @@
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_Shells_ShellStart_StartShell_KS_Shell_ShellBase_Shells_ShellType_System_Object___.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Shells.ShellStart.StartShell(KS.Shell.ShellBase.Shells.ShellType%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L51">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L41">View Source</a>
   </span>
   <a id="KS_Shell_ShellBase_Shells_ShellStart_StartShell_" data-uid="KS.Shell.ShellBase.Shells.ShellStart.StartShell*"></a>
   <h4 id="KS_Shell_ShellBase_Shells_ShellStart_StartShell_KS_Shell_ShellBase_Shells_ShellType_System_Object___" data-uid="KS.Shell.ShellBase.Shells.ShellStart.StartShell(KS.Shell.ShellBase.Shells.ShellType,System.Object[])">StartShell(ShellType, Object[])</h4>
@@ -269,10 +318,50 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_Shells_ShellStart_StartShell_System_String_System_Object___.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Shells.ShellStart.StartShell(System.String%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L49">View Source</a>
+  </span>
+  <a id="KS_Shell_ShellBase_Shells_ShellStart_StartShell_" data-uid="KS.Shell.ShellBase.Shells.ShellStart.StartShell*"></a>
+  <h4 id="KS_Shell_ShellBase_Shells_ShellStart_StartShell_System_String_System_Object___" data-uid="KS.Shell.ShellBase.Shells.ShellStart.StartShell(System.String,System.Object[])">StartShell(String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Starts the shell</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StartShell(string ShellType, params object[] ShellArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ShellType</span></td>
+        <td><p>The shell type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">ShellArgs</span></td>
+        <td><p>Arguments to pass to shell</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_Shells_ShellStart_StartShellForced_KS_Shell_ShellBase_Shells_ShellType_System_Object___.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(KS.Shell.ShellBase.Shells.ShellType%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L65">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L63">View Source</a>
   </span>
   <a id="KS_Shell_ShellBase_Shells_ShellStart_StartShellForced_" data-uid="KS.Shell.ShellBase.Shells.ShellStart.StartShellForced*"></a>
   <h4 id="KS_Shell_ShellBase_Shells_ShellStart_StartShellForced_KS_Shell_ShellBase_Shells_ShellType_System_Object___" data-uid="KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(KS.Shell.ShellBase.Shells.ShellType,System.Object[])">StartShellForced(ShellType, Object[])</h4>
@@ -307,6 +396,46 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_Shells_ShellStart_StartShellForced_System_String_System_Object___.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(System.String%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L71">View Source</a>
+  </span>
+  <a id="KS_Shell_ShellBase_Shells_ShellStart_StartShellForced_" data-uid="KS.Shell.ShellBase.Shells.ShellStart.StartShellForced*"></a>
+  <h4 id="KS_Shell_ShellBase_Shells_ShellStart_StartShellForced_System_String_System_Object___" data-uid="KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(System.String,System.Object[])">StartShellForced(String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Force starts the shell</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StartShellForced(string ShellType, params object[] ShellArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ShellType</span></td>
+        <td><p>The shell type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">ShellArgs</span></td>
+        <td><p>Arguments to pass to shell</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -318,7 +447,7 @@
                     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Shell_ShellBase_Shells_ShellStart.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Shells.ShellStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L41" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Shell/ShellBase/Shells/ShellStart.cs/#L31" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
