@@ -202,6 +202,16 @@
 <h5 id="moved-kernelapiversion-to-kerneltools">Moved Kernel[Api]Version to KernelTools</h5>
 <p>We don't want the <code>Kernel</code> class to be publicly accessible, since it has been planned back at 0.0.1 as the class responsible for being an entry point.</p>
 <p>These variables, <code>KernelVersion</code> and <code>KernelApiVersion</code>, are successfully moved to <code>KernelTools</code>.</p>
+<h5 id="removed-coloredshell">Removed <code>ColoredShell</code></h5>
+<p>The colors are now an essential part of KS, so we decided to take out support for uncolored shell.</p>
+<h5 id="finally-condensed-tablecolor">Finally condensed <code>TableColor</code></h5>
+<p>We noticed that the code is repetitive for making tables, and we don't want to update six locations every bug fix, so we decided to condense it to a single code.</p>
+<p>As a side-effect, we've changed the color signatures from foreground and background pairs to header, value, separator, and background colors. Consequently, we've removed the <code>ConsoleColor</code> version of <code>TableColor</code> as we found it irrelevant thanks to the enhanced <code>Color</code> class found in the ColorSeq library.</p>
+<h5 id="tried-to-balance-color-support-for-writers">Tried to balance color support for writers</h5>
+<p>Migration from <code>ConsoleColor</code> to <code>ConsoleColors</code> is complete. This means that all the writers in the <code>KS.Misc.*Writers</code> now have the <code>ConsoleColors</code> support.</p>
+<p>The latest ColorSeq version, 1.0.2, will be used to make it easier to achieve.</p>
+<h5 id="added-last-argument-support-to-auto-completer">Added last argument support to auto completer</h5>
+<p>This is to aid in trying to autocomplete subjects starting from the last argument</p>
 </article>
           </div>
           
