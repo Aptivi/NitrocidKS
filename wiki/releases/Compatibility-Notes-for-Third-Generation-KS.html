@@ -212,6 +212,13 @@
 <p>The latest ColorSeq version, 1.0.2, will be used to make it easier to achieve.</p>
 <h5 id="added-last-argument-support-to-auto-completer">Added last argument support to auto completer</h5>
 <p>This is to aid in trying to autocomplete subjects starting from the last argument</p>
+<h5 id="renamed-command-executor-and-base-to-reduce-confusion">Renamed command executor and base to reduce confusion</h5>
+<p>Base command class had the name of <code>CommandExecutor</code>. However, it behaved like the base class for your mod commands, so we renamed it to <code>BaseCommand</code>. This caused us to rename the command execution class to <code>CommandExecutor</code>.</p>
+<p>Affected classes:</p>
+<ul>
+<li><code>CommandExecutor</code> -&gt; <code>BaseCommand</code></li>
+<li><code>GetCommand</code> -&gt; <code>CommandExecutor</code></li>
+</ul>
 </article>
           </div>
           

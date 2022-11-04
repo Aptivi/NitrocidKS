@@ -89,7 +89,7 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="KS.Shell.ShellBase.Commands.CommandExecutor.html">CommandExecutor</a></div>
+    <div class="level1"><a class="xref" href="KS.Shell.ShellBase.Commands.BaseCommand.html">BaseCommand</a></div>
     <div class="level2"><span class="xref">TextEdit_AddLinesCommand</span></div>
   </div>
   <div classs="implements">
@@ -100,17 +100,17 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="KS.Shell.ShellBase.Commands.CommandExecutor.html#KS_Shell_ShellBase_Commands_CommandExecutor_KS_Kernel_Debugging_RemoteDebug_Interface_IRemoteDebugCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_">CommandExecutor.IRemoteDebugCommand.Execute(String, String[], String[], StreamWriter, String)</a>
+      <a class="xref" href="KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_KS_Kernel_Debugging_RemoteDebug_Interface_IRemoteDebugCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_">BaseCommand.IRemoteDebugCommand.Execute(String, String[], String[], StreamWriter, String)</a>
     </div>
     <div>
-      <a class="xref" href="KS.Shell.ShellBase.Commands.CommandExecutor.html#KS_Shell_ShellBase_Commands_CommandExecutor_HelpHelper">CommandExecutor.HelpHelper()</a>
+      <a class="xref" href="KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_HelpHelper">BaseCommand.HelpHelper()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Shell.Shells.Text.Commands.html">KS.Shell.Shells.Text.Commands</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Shell_Shells_Text_Commands_TextEdit_AddLinesCommand_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">class TextEdit_AddLinesCommand : CommandExecutor, IRemoteDebugCommand, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">class TextEdit_AddLinesCommand : BaseCommand, IRemoteDebugCommand, ICommand</code></pre>
   </div>
   <h5 id="KS_Shell_Shells_Text_Commands_TextEdit_AddLinesCommand_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>You can use this command to add new lines at the end of the file.</p>
@@ -160,7 +160,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="KS.Shell.ShellBase.Commands.CommandExecutor.html#KS_Shell_ShellBase_Commands_CommandExecutor_Execute_System_String_System_String___System_String___">CommandExecutor.Execute(String, String[], String[])</a></div>
+  <div><a class="xref" href="KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_Execute_System_String_System_String___System_String___">BaseCommand.Execute(String, String[], String[])</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.html">IRemoteDebugCommand</a>
