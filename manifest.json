@@ -389,6 +389,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.ConsoleChecker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.ConsoleChecker.html",
+          "hash": "+twEkdL2Ck3soXh1DjbfOyVpX7xPVeQoD31cGh4We3o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.ConsoleExtensions.yml",
       "output": {
         ".html": {
@@ -406,18 +418,6 @@
         ".html": {
           "relative_path": "api/KS.ConsoleBase.ConsoleResizeListener.html",
           "hash": "NmtQQ02tYrl5nar6YmX2fhopTuP7SOpzOPuqB0sE8OE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.ConsoleSanityChecker.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.ConsoleBase.ConsoleSanityChecker.html",
-          "hash": "YKlaw7TH9GtCeVKgDYj+wiwi4vRPFfgqyn3huun0UAY="
         }
       },
       "is_incremental": false,
@@ -573,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.html",
-          "hash": "NFyvQa3IHj4wiKc6ZwHh+0lgybf0BKh+tzY4Eq1DNNw="
+          "hash": "x8uH8Gp7H8WHbZqRpY0VFOEFQ5t6DH8PwO2p9OA62to="
         }
       },
       "is_incremental": false,
@@ -12504,7 +12504,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "QMc7vtLktCZid+TSPqSR3aQFJso11sihCcAH4EBZl/M="
+          "hash": "W3n7z1WngmWzyZEc8XptcuulLwLy5Iw/DxSzXFdtnbY="
         }
       },
       "is_incremental": false,
@@ -15442,7 +15442,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Compatibility-Notes-for-Third-Generation-KS.html",
-          "hash": "EvhD6C+PjqIqOrY2GU1e327bw3cx8A4sRhyITAg/nqU="
+          "hash": "2sLlnsB7ClKSmmBLMxpPuSrok1CwqQgSki582VDcgjI="
         }
       },
       "is_incremental": false,
