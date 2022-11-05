@@ -5153,6 +5153,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Writers.FancyWriters.ProgressBarVerticalColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Writers.FancyWriters.ProgressBarVerticalColor.html",
+          "hash": "qJcMKGOL78cNO6etrwdEbXKBz0L0PmHGExwHfGJcQi8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Writers.FancyWriters.SeparatorWriterColor.yml",
       "output": {
         ".html": {
@@ -5241,7 +5253,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.FancyWriters.html",
-          "hash": "VK69Y9IrH6uYcLEPagjFakcraCQgWb/IHu1u//df3qo="
+          "hash": "v1fNIgWHEw4i9zyGOKaTVSjaGPeIk+JIQijjaLUcE9U="
         }
       },
       "is_incremental": false,
@@ -12504,7 +12516,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "W3n7z1WngmWzyZEc8XptcuulLwLy5Iw/DxSzXFdtnbY="
+          "hash": "aDFb3UHn2YHHUiR3BPnv1xKIr4dXvX9+ZyqCwxAhhiM="
         }
       },
       "is_incremental": false,
@@ -15565,7 +15577,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1040,
+          "total_file_count": 1041,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
