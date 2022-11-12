@@ -5501,6 +5501,66 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Network.Base.NetworkAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Network.Base.NetworkAdapter.html",
+          "hash": "7I9BCqtfDPAidCOotLewDB0UHkNaEq+VrGba3o5H3nk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Network.Base.NetworkAdapterPrint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Network.Base.NetworkAdapterPrint.html",
+          "hash": "jdTpek3O+os9h1BnCqCF17xix47/uQpGA2kRrzYbGtU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Network.Base.NetworkTools.SpeedDialType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Network.Base.NetworkTools.SpeedDialType.html",
+          "hash": "AL/0lIrswP+IY6gOh7yiS8hqMXfMbDvwd9mZzCI9jlU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Network.Base.NetworkTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Network.Base.NetworkTools.html",
+          "hash": "qZXPFtG2sU+EvGFjznjuwlQfLIQb8uNnZC+mrBKeKlI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Network.Base.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Network.Base.html",
+          "hash": "ibH+OjsgOeO3+4thcRgRrIFXno/75D1NdJt8ytRrTOs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Network.FTP.FTPLogger.yml",
       "output": {
         ".html": {
@@ -5517,7 +5577,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.FTP.FTPTools.html",
-          "hash": "aT8naXtAQ45zU0QUGjRSPjwQ0FHEVtrtvtPHMPpUbpo="
+          "hash": "05AlNZZF9QVEpuP3UDBEj/CGaP+BX1dAyeEDULjN+/I="
         }
       },
       "is_incremental": false,
@@ -5789,54 +5849,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.NetworkAdapter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.NetworkAdapter.html",
-          "hash": "ikWRMGfpWt7mBANcikCpESUFPGe6gBW4RVSkqgZpQoE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.NetworkAdapterPrint.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.NetworkAdapterPrint.html",
-          "hash": "0O1nnM9XVI0DnA2Qt/RWj99KSH5HNswgfVYWykDI7NE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.NetworkTools.SpeedDialType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.NetworkTools.SpeedDialType.html",
-          "hash": "sFS5AKfXj0/GZVOpKKzZAJA32AlRcePD8bNgh7YTNzU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.NetworkTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.NetworkTools.html",
-          "hash": "D7YYk5z+FcNVwPyARnmBDgT/jSZpo3S5BxGnxmrwnOA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Network.RPC.RPCCommands.yml",
       "output": {
         ".html": {
@@ -5997,7 +6009,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.SFTP.SFTPTools.html",
-          "hash": "v5C8C+6FBgiZihHqQM4Mt+ANqcWojVjyiyMzQN0mDwk="
+          "hash": "ueBYJY+Sibf1SAg/k0U52NmcL9tFArnJJeu22kDhppU="
         }
       },
       "is_incremental": false,
@@ -6081,7 +6093,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.Transfer.NetworkTransfer.html",
-          "hash": "mB2A/V6pnCQTg96vV3XB6aFauNXXhpgIQqMHyRH6ibo="
+          "hash": "obdewaBb4huQ4KoXI4jOWJnD7jHHPwOhdL51L4kbzHU="
         }
       },
       "is_incremental": false,
@@ -6118,18 +6130,6 @@
         ".html": {
           "relative_path": "api/KS.Network.Transfer.html",
           "hash": "CaLGixIZM1CcNODY1FIIAIxQ39/7PkDQ1yxLtiAT3G0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.html",
-          "hash": "us+7K+WQKMPcNb3CxZp51aQp5DRQkvZN+mIH5jJtwao="
         }
       },
       "is_incremental": false,
@@ -12528,7 +12528,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "bwPzHbId+VSZ8ikcbvb+wODB9hbD3bzXMGlI1fhC5RI="
+          "hash": "FyOcXcyRXaeCQJH0eIfCdActwnxAQGjr/wPtjkIFNV0="
         }
       },
       "is_incremental": false,
@@ -15466,7 +15466,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Compatibility-Notes-for-Third-Generation-KS.html",
-          "hash": "eRC6YEgVjsFid05eBODldmGm6RpfnX1ZdHDnohiaV4M="
+          "hash": "jrZE/8++DakIMKxqbrDKVOjOM0IHMLE+s5KOB4HHX/s="
         }
       },
       "is_incremental": false,
