@@ -167,7 +167,7 @@
   "api/KS.ConsoleBase.ConsoleResizeListener.html": {
     "href": "api/KS.ConsoleBase.ConsoleResizeListener.html",
     "title": "Class ConsoleResizeListener | Kernel Simulator API - Aptivi",
-    "keywords": "Class ConsoleResizeListener Inheritance System.Object ConsoleResizeListener Namespace : KS.ConsoleBase Assembly : Kernel Simulator.dll Syntax static class ConsoleResizeListener Fields | Improve this Doc View Source CurrentWindowHeight Declaration static int CurrentWindowHeight Field Value Type Description System.Int32 | Improve this Doc View Source CurrentWindowWidth Declaration static int CurrentWindowWidth Field Value Type Description System.Int32 | Improve this Doc View Source ResizeListenerThread Declaration static readonly KernelThread ResizeListenerThread Field Value Type Description KernelThread Methods | Improve this Doc View Source PollForResize() Declaration static void PollForResize() | Improve this Doc View Source StartResizeListener() Declaration static void StartResizeListener()"
+    "keywords": "Class ConsoleResizeListener The console resize listener module Inheritance System.Object ConsoleResizeListener Namespace : KS.ConsoleBase Assembly : Kernel Simulator.dll Syntax public static class ConsoleResizeListener Fields | Improve this Doc View Source CurrentWindowHeight Declaration static int CurrentWindowHeight Field Value Type Description System.Int32 | Improve this Doc View Source CurrentWindowWidth Declaration static int CurrentWindowWidth Field Value Type Description System.Int32 | Improve this Doc View Source ResizeDetected Declaration static bool ResizeDetected Field Value Type Description System.Boolean | Improve this Doc View Source ResizeListenerThread Declaration static readonly KernelThread ResizeListenerThread Field Value Type Description KernelThread Properties | Improve this Doc View Source Resized This property checks to see if the console has been resized since the last time it has been called or the listener has started. Declaration public static bool Resized { get; } Property Value Type Description System.Boolean Methods | Improve this Doc View Source PollForResize() Declaration static void PollForResize() | Improve this Doc View Source StartResizeListener() Declaration static void StartResizeListener()"
   },
   "api/KS.ConsoleBase.ConsoleWrapper.html": {
     "href": "api/KS.ConsoleBase.ConsoleWrapper.html",
@@ -177,7 +177,7 @@
   "api/KS.ConsoleBase.html": {
     "href": "api/KS.ConsoleBase.html",
     "title": "Namespace KS.ConsoleBase | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.ConsoleBase Classes ConsoleChecker Console sanity checking module ConsoleExtensions Additional routines for the console ConsoleResizeListener ConsoleWrapper Wrapper for the System.Console class to ensure safety against dumb consoles."
+    "keywords": "Namespace KS.ConsoleBase Classes ConsoleChecker Console sanity checking module ConsoleExtensions Additional routines for the console ConsoleResizeListener The console resize listener module ConsoleWrapper Wrapper for the System.Console class to ensure safety against dumb consoles."
   },
   "api/KS.ConsoleBase.Inputs.html": {
     "href": "api/KS.ConsoleBase.Inputs.html",
