@@ -7281,6 +7281,12 @@ references:
   commentId: F:KS.Kernel.Exceptions.KernelExceptionType.MOTD
   fullName: KS.Kernel.Exceptions.KernelExceptionType.MOTD
   nameWithType: KernelExceptionType.MOTD
+- uid: KS.Kernel.Exceptions.KernelExceptionType.Network
+  name: Network
+  href: api/KS.Kernel.Exceptions.KernelExceptionType.html#KS_Kernel_Exceptions_KernelExceptionType_Network
+  commentId: F:KS.Kernel.Exceptions.KernelExceptionType.Network
+  fullName: KS.Kernel.Exceptions.KernelExceptionType.Network
+  nameWithType: KernelExceptionType.Network
 - uid: KS.Kernel.Exceptions.KernelExceptionType.NoSuchEvent
   name: NoSuchEvent
   href: api/KS.Kernel.Exceptions.KernelExceptionType.html#KS_Kernel_Exceptions_KernelExceptionType_NoSuchEvent
