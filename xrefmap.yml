@@ -725,6 +725,25 @@ references:
   commentId: T:KS.ConsoleBase.Colors.ColorTools
   fullName: KS.ConsoleBase.Colors.ColorTools
   nameWithType: ColorTools
+- uid: KS.ConsoleBase.Colors.ColorTools.BlindnessDeficiency
+  name: BlindnessDeficiency
+  href: api/KS.ConsoleBase.Colors.ColorTools.html#KS_ConsoleBase_Colors_ColorTools_BlindnessDeficiency
+  commentId: P:KS.ConsoleBase.Colors.ColorTools.BlindnessDeficiency
+  fullName: KS.ConsoleBase.Colors.ColorTools.BlindnessDeficiency
+  nameWithType: ColorTools.BlindnessDeficiency
+- uid: KS.ConsoleBase.Colors.ColorTools.BlindnessDeficiency*
+  name: BlindnessDeficiency
+  href: api/KS.ConsoleBase.Colors.ColorTools.html#KS_ConsoleBase_Colors_ColorTools_BlindnessDeficiency_
+  commentId: Overload:KS.ConsoleBase.Colors.ColorTools.BlindnessDeficiency
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Colors.ColorTools.BlindnessDeficiency
+  nameWithType: ColorTools.BlindnessDeficiency
+- uid: KS.ConsoleBase.Colors.ColorTools.BlindnessSeverity
+  name: BlindnessSeverity
+  href: api/KS.ConsoleBase.Colors.ColorTools.html#KS_ConsoleBase_Colors_ColorTools_BlindnessSeverity
+  commentId: F:KS.ConsoleBase.Colors.ColorTools.BlindnessSeverity
+  fullName: KS.ConsoleBase.Colors.ColorTools.BlindnessSeverity
+  nameWithType: ColorTools.BlindnessSeverity
 - uid: KS.ConsoleBase.Colors.ColorTools.cachedBackgroundColor
   name: cachedBackgroundColor
   href: api/KS.ConsoleBase.Colors.ColorTools.html#KS_ConsoleBase_Colors_ColorTools_cachedBackgroundColor
@@ -737,6 +756,19 @@ references:
   commentId: F:KS.ConsoleBase.Colors.ColorTools.cachedForegroundColor
   fullName: KS.ConsoleBase.Colors.ColorTools.cachedForegroundColor
   nameWithType: ColorTools.cachedForegroundColor
+- uid: KS.ConsoleBase.Colors.ColorTools.ColorBlind
+  name: ColorBlind
+  href: api/KS.ConsoleBase.Colors.ColorTools.html#KS_ConsoleBase_Colors_ColorTools_ColorBlind
+  commentId: P:KS.ConsoleBase.Colors.ColorTools.ColorBlind
+  fullName: KS.ConsoleBase.Colors.ColorTools.ColorBlind
+  nameWithType: ColorTools.ColorBlind
+- uid: KS.ConsoleBase.Colors.ColorTools.ColorBlind*
+  name: ColorBlind
+  href: api/KS.ConsoleBase.Colors.ColorTools.html#KS_ConsoleBase_Colors_ColorTools_ColorBlind_
+  commentId: Overload:KS.ConsoleBase.Colors.ColorTools.ColorBlind
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Colors.ColorTools.ColorBlind
+  nameWithType: ColorTools.ColorBlind
 - uid: KS.ConsoleBase.Colors.ColorTools.ColTypes
   name: ColorTools.ColTypes
   href: api/KS.ConsoleBase.Colors.ColorTools.ColTypes.html
