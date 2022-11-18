@@ -1613,11 +1613,239 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.RDebug.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.RDebug.html",
+          "hash": "EZyqrjJjoIWZCLApwAJGccdp8sqruUxgqIWxutIZV6A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowDate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowDate.html",
+          "hash": "fdb0LLPb0XfxhScV9uKYq4lDvx+f5v8BRPPnxKmJBKY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowDateUtc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowDateUtc.html",
+          "hash": "Ei6fKeSt5/DVB33W9x3xrRKr/wg+y1cNeEJy3VAo7/4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowTime.html",
+          "hash": "D35AYAl4HWX57IlgJDEf1ePDMdOOzHPPDB/6hGs07dk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowTimeDate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowTimeDate.html",
+          "hash": "IDfD0ekg4bekUqeY1qEMBBQWwBV15RoMALeIflenxOY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowTimeDateUtc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowTimeDateUtc.html",
+          "hash": "5OJq2+Sc8ZYIo/ovp1XMnDsDuUowy7JxcKIfIzp3Ty8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowTimeUtc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowTimeUtc.html",
+          "hash": "8PAb3XMu4lPtJuE/ZkqudqvOsa5Ej4h43uzEUkK5TME="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestCRC32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestCRC32.html",
+          "hash": "gUN7wdqosox/mbj/XE8D38r+Plu7Pt8Nawzuw/GR5U4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestDictWriterChar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestDictWriterChar.html",
+          "hash": "gKLKg8HMglnEzSszRp00wIEXChYSZSM3Pm48aqWpcb0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestDictWriterInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestDictWriterInt.html",
+          "hash": "1iInsenMXodfuJuJXg3PbGwICpNIRLbdfBt10FLi+4k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestDictWriterStr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestDictWriterStr.html",
+          "hash": "1Q8qmKn6/oLSDqLT532nt7R3JZtbBfAnQ0EAw3fRO44="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestListWriterChar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestListWriterChar.html",
+          "hash": "H1fTLwPXoheKhkig16XczDt7ZKW7r202dgy84+BPjIc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestListWriterInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestListWriterInt.html",
+          "hash": "bgvzRq+aflLNHzDCEtxRAzYvmmpJpuEB0SNVTtgfUb0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestListWriterStr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestListWriterStr.html",
+          "hash": "wcCT3LxroeQlCyJTQB0LGBigOY5yA5vgWVUSC8f851k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestMD5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestMD5.html",
+          "hash": "ltBOwTGODajh7SWfLViri0KgnvRmCcq1GckSyi1hA7k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestSHA1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestSHA1.html",
+          "hash": "b7ZaiBnC3yy7X26r87vDahDIYCLwqODobIHtPzeBtPc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestSHA256.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestSHA256.html",
+          "hash": "ZOWy9HE/jzu6cJs7iBPpcVY6mMSiONLSRMIdjKRQsE4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestSHA384.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestSHA384.html",
+          "hash": "iskuNkY33t/YAqXRhv9ai2gUoJKSUrQdxGW/GLoM03s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestSHA512.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestSHA512.html",
+          "hash": "6Wmn65R/OYx/iqSyVuf0szfDWuVjR+umLl660AotIT0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.html",
-          "hash": "Eq5nt8xHoIg3gpvFsXbRQA7UAq+hc2U7mfuhlRdNHoM="
+          "hash": "XgEsGxwiJlwLZqH+PpyXFxkBFKU1TFMjsedUOhs4AeY="
         }
       },
       "is_incremental": false,
@@ -1629,7 +1857,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.TestFacade.html",
-          "hash": "J1GsJTO+t6uxjEEdLDoGhDK4Gw06k/DYesJJymf20vA="
+          "hash": "Z9tE8WiphC7nOLMVlXVtHuxUsNPp2E4miygNV+nqSDM="
         }
       },
       "is_incremental": false,
@@ -1641,7 +1869,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.TestInteractive.html",
-          "hash": "h0FNl9zp/LDxaQDFJMI4CyuNiLOWhwnlA8RNLmUlqXM="
+          "hash": "Ils2bk4tR+6+20+m+7BH15TgEKzVcIrZsU+dh0190Z0="
         }
       },
       "is_incremental": false,
@@ -10053,7 +10281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Test.TestShellInfo.html",
-          "hash": "6ArSZDkhlqbYzuYbkjHi0uBRLK2B+nqcO3vgZnUhVpA="
+          "hash": "HHpviSsyLkdzTf4xqq+t83lOJbMxKlc0lsgJtKtWngc="
         }
       },
       "is_incremental": false,
@@ -12036,7 +12264,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "aP4jRidmLFPVZ2Gh8f02+oYOKa8iBQ1rnDxGU10tXdg="
+          "hash": "SK/+dzv4plJbGoqBuhK/4bCPMnPw7EIL1OF9w17RsPw="
         }
       },
       "is_incremental": false,
@@ -15097,7 +15325,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1001,
+          "total_file_count": 1020,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
