@@ -7875,6 +7875,12 @@ references:
   commentId: F:KS.Kernel.Flags.EnableFigletTimer
   fullName: KS.Kernel.Flags.EnableFigletTimer
   nameWithType: Flags.EnableFigletTimer
+- uid: KS.Kernel.Flags.EnableScrollBarInSelection
+  name: EnableScrollBarInSelection
+  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_EnableScrollBarInSelection
+  commentId: F:KS.Kernel.Flags.EnableScrollBarInSelection
+  fullName: KS.Kernel.Flags.EnableScrollBarInSelection
+  nameWithType: Flags.EnableScrollBarInSelection
 - uid: KS.Kernel.Flags.EnableSplash
   name: EnableSplash
   href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_EnableSplash
