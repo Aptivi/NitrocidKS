@@ -22013,6 +22013,64 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.Displays.IndeterminateSettings.IndeterminateUseBorderColors
   nameWithType: IndeterminateSettings.IndeterminateUseBorderColors
+- uid: KS.Misc.Screensaver.Displays.KSXDisplay
+  name: KSXDisplay
+  href: api/KS.Misc.Screensaver.Displays.KSXDisplay.html
+  commentId: T:KS.Misc.Screensaver.Displays.KSXDisplay
+  fullName: KS.Misc.Screensaver.Displays.KSXDisplay
+  nameWithType: KSXDisplay
+- uid: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverLogic
+  name: ScreensaverLogic()
+  href: api/KS.Misc.Screensaver.Displays.KSXDisplay.html#KS_Misc_Screensaver_Displays_KSXDisplay_ScreensaverLogic
+  commentId: M:KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverLogic
+  fullName: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverLogic()
+  nameWithType: KSXDisplay.ScreensaverLogic()
+- uid: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverLogic*
+  name: ScreensaverLogic
+  href: api/KS.Misc.Screensaver.Displays.KSXDisplay.html#KS_Misc_Screensaver_Displays_KSXDisplay_ScreensaverLogic_
+  commentId: Overload:KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverLogic
+  isSpec: "True"
+  fullName: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverLogic
+  nameWithType: KSXDisplay.ScreensaverLogic
+- uid: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverName
+  name: ScreensaverName
+  href: api/KS.Misc.Screensaver.Displays.KSXDisplay.html#KS_Misc_Screensaver_Displays_KSXDisplay_ScreensaverName
+  commentId: P:KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverName
+  fullName: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverName
+  nameWithType: KSXDisplay.ScreensaverName
+- uid: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverName*
+  name: ScreensaverName
+  href: api/KS.Misc.Screensaver.Displays.KSXDisplay.html#KS_Misc_Screensaver_Displays_KSXDisplay_ScreensaverName_
+  commentId: Overload:KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverName
+  isSpec: "True"
+  fullName: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverName
+  nameWithType: KSXDisplay.ScreensaverName
+- uid: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverPreparation
+  name: ScreensaverPreparation()
+  href: api/KS.Misc.Screensaver.Displays.KSXDisplay.html#KS_Misc_Screensaver_Displays_KSXDisplay_ScreensaverPreparation
+  commentId: M:KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverPreparation
+  fullName: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverPreparation()
+  nameWithType: KSXDisplay.ScreensaverPreparation()
+- uid: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverPreparation*
+  name: ScreensaverPreparation
+  href: api/KS.Misc.Screensaver.Displays.KSXDisplay.html#KS_Misc_Screensaver_Displays_KSXDisplay_ScreensaverPreparation_
+  commentId: Overload:KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverPreparation
+  isSpec: "True"
+  fullName: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverPreparation
+  nameWithType: KSXDisplay.ScreensaverPreparation
+- uid: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverSettings
+  name: ScreensaverSettings
+  href: api/KS.Misc.Screensaver.Displays.KSXDisplay.html#KS_Misc_Screensaver_Displays_KSXDisplay_ScreensaverSettings
+  commentId: P:KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverSettings
+  fullName: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverSettings
+  nameWithType: KSXDisplay.ScreensaverSettings
+- uid: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverSettings*
+  name: ScreensaverSettings
+  href: api/KS.Misc.Screensaver.Displays.KSXDisplay.html#KS_Misc_Screensaver_Displays_KSXDisplay_ScreensaverSettings_
+  commentId: Overload:KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverSettings
+  isSpec: "True"
+  fullName: KS.Misc.Screensaver.Displays.KSXDisplay.ScreensaverSettings
+  nameWithType: KSXDisplay.ScreensaverSettings
 - uid: KS.Misc.Screensaver.Displays.LighterDisplay
   name: LighterDisplay
   href: api/KS.Misc.Screensaver.Displays.LighterDisplay.html
