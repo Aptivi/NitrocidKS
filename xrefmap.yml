@@ -741,7 +741,14 @@ references:
 - uid: KS.ConsoleBase.Colors.ColorTools.BlindnessSeverity
   name: BlindnessSeverity
   href: api/KS.ConsoleBase.Colors.ColorTools.html#KS_ConsoleBase_Colors_ColorTools_BlindnessSeverity
-  commentId: F:KS.ConsoleBase.Colors.ColorTools.BlindnessSeverity
+  commentId: P:KS.ConsoleBase.Colors.ColorTools.BlindnessSeverity
+  fullName: KS.ConsoleBase.Colors.ColorTools.BlindnessSeverity
+  nameWithType: ColorTools.BlindnessSeverity
+- uid: KS.ConsoleBase.Colors.ColorTools.BlindnessSeverity*
+  name: BlindnessSeverity
+  href: api/KS.ConsoleBase.Colors.ColorTools.html#KS_ConsoleBase_Colors_ColorTools_BlindnessSeverity_
+  commentId: Overload:KS.ConsoleBase.Colors.ColorTools.BlindnessSeverity
+  isSpec: "True"
   fullName: KS.ConsoleBase.Colors.ColorTools.BlindnessSeverity
   nameWithType: ColorTools.BlindnessSeverity
 - uid: KS.ConsoleBase.Colors.ColorTools.cachedBackgroundColor
