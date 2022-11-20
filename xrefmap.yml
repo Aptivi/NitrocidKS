@@ -10678,18 +10678,6 @@ references:
   commentId: T:KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse
   fullName: KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse
   nameWithType: BeatEdgePulse
-- uid: KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.html#KS_Misc_Animations_BeatEdgePulse_BeatEdgePulse_CurrentWindowHeight
-  commentId: F:KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.CurrentWindowHeight
-  fullName: KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.CurrentWindowHeight
-  nameWithType: BeatEdgePulse.CurrentWindowHeight
-- uid: KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.html#KS_Misc_Animations_BeatEdgePulse_BeatEdgePulse_CurrentWindowWidth
-  commentId: F:KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.CurrentWindowWidth
-  fullName: KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.CurrentWindowWidth
-  nameWithType: BeatEdgePulse.CurrentWindowWidth
 - uid: KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.FillIn
   name: FillIn()
   href: api/KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.html#KS_Misc_Animations_BeatEdgePulse_BeatEdgePulse_FillIn
@@ -10703,12 +10691,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.FillIn
   nameWithType: BeatEdgePulse.FillIn
-- uid: KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.html#KS_Misc_Animations_BeatEdgePulse_BeatEdgePulse_ResizeSyncing
-  commentId: F:KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.ResizeSyncing
-  fullName: KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.ResizeSyncing
-  nameWithType: BeatEdgePulse.ResizeSyncing
 - uid: KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.Simulate(KS.Misc.Animations.BeatEdgePulse.BeatEdgePulseSettings)
   name: Simulate(BeatEdgePulseSettings)
   href: api/KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.html#KS_Misc_Animations_BeatEdgePulse_BeatEdgePulse_Simulate_KS_Misc_Animations_BeatEdgePulse_BeatEdgePulseSettings_
@@ -10987,24 +10969,6 @@ references:
   commentId: T:KS.Misc.Animations.BeatFader.BeatFader
   fullName: KS.Misc.Animations.BeatFader.BeatFader
   nameWithType: BeatFader
-- uid: KS.Misc.Animations.BeatFader.BeatFader.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Animations.BeatFader.BeatFader.html#KS_Misc_Animations_BeatFader_BeatFader_CurrentWindowHeight
-  commentId: F:KS.Misc.Animations.BeatFader.BeatFader.CurrentWindowHeight
-  fullName: KS.Misc.Animations.BeatFader.BeatFader.CurrentWindowHeight
-  nameWithType: BeatFader.CurrentWindowHeight
-- uid: KS.Misc.Animations.BeatFader.BeatFader.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Animations.BeatFader.BeatFader.html#KS_Misc_Animations_BeatFader_BeatFader_CurrentWindowWidth
-  commentId: F:KS.Misc.Animations.BeatFader.BeatFader.CurrentWindowWidth
-  fullName: KS.Misc.Animations.BeatFader.BeatFader.CurrentWindowWidth
-  nameWithType: BeatFader.CurrentWindowWidth
-- uid: KS.Misc.Animations.BeatFader.BeatFader.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Animations.BeatFader.BeatFader.html#KS_Misc_Animations_BeatFader_BeatFader_ResizeSyncing
-  commentId: F:KS.Misc.Animations.BeatFader.BeatFader.ResizeSyncing
-  fullName: KS.Misc.Animations.BeatFader.BeatFader.ResizeSyncing
-  nameWithType: BeatFader.ResizeSyncing
 - uid: KS.Misc.Animations.BeatFader.BeatFader.Simulate(KS.Misc.Animations.BeatFader.BeatFaderSettings)
   name: Simulate(BeatFaderSettings)
   href: api/KS.Misc.Animations.BeatFader.BeatFader.html#KS_Misc_Animations_BeatFader_BeatFader_Simulate_KS_Misc_Animations_BeatFader_BeatFaderSettings_
@@ -11283,24 +11247,6 @@ references:
   commentId: T:KS.Misc.Animations.BeatPulse.BeatPulse
   fullName: KS.Misc.Animations.BeatPulse.BeatPulse
   nameWithType: BeatPulse
-- uid: KS.Misc.Animations.BeatPulse.BeatPulse.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Animations.BeatPulse.BeatPulse.html#KS_Misc_Animations_BeatPulse_BeatPulse_CurrentWindowHeight
-  commentId: F:KS.Misc.Animations.BeatPulse.BeatPulse.CurrentWindowHeight
-  fullName: KS.Misc.Animations.BeatPulse.BeatPulse.CurrentWindowHeight
-  nameWithType: BeatPulse.CurrentWindowHeight
-- uid: KS.Misc.Animations.BeatPulse.BeatPulse.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Animations.BeatPulse.BeatPulse.html#KS_Misc_Animations_BeatPulse_BeatPulse_CurrentWindowWidth
-  commentId: F:KS.Misc.Animations.BeatPulse.BeatPulse.CurrentWindowWidth
-  fullName: KS.Misc.Animations.BeatPulse.BeatPulse.CurrentWindowWidth
-  nameWithType: BeatPulse.CurrentWindowWidth
-- uid: KS.Misc.Animations.BeatPulse.BeatPulse.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Animations.BeatPulse.BeatPulse.html#KS_Misc_Animations_BeatPulse_BeatPulse_ResizeSyncing
-  commentId: F:KS.Misc.Animations.BeatPulse.BeatPulse.ResizeSyncing
-  fullName: KS.Misc.Animations.BeatPulse.BeatPulse.ResizeSyncing
-  nameWithType: BeatPulse.ResizeSyncing
 - uid: KS.Misc.Animations.BeatPulse.BeatPulse.Simulate(KS.Misc.Animations.BeatPulse.BeatPulseSettings)
   name: Simulate(BeatPulseSettings)
   href: api/KS.Misc.Animations.BeatPulse.BeatPulse.html#KS_Misc_Animations_BeatPulse_BeatPulse_Simulate_KS_Misc_Animations_BeatPulse_BeatPulseSettings_
@@ -11579,18 +11525,6 @@ references:
   commentId: T:KS.Misc.Animations.EdgePulse.EdgePulse
   fullName: KS.Misc.Animations.EdgePulse.EdgePulse
   nameWithType: EdgePulse
-- uid: KS.Misc.Animations.EdgePulse.EdgePulse.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Animations.EdgePulse.EdgePulse.html#KS_Misc_Animations_EdgePulse_EdgePulse_CurrentWindowHeight
-  commentId: F:KS.Misc.Animations.EdgePulse.EdgePulse.CurrentWindowHeight
-  fullName: KS.Misc.Animations.EdgePulse.EdgePulse.CurrentWindowHeight
-  nameWithType: EdgePulse.CurrentWindowHeight
-- uid: KS.Misc.Animations.EdgePulse.EdgePulse.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Animations.EdgePulse.EdgePulse.html#KS_Misc_Animations_EdgePulse_EdgePulse_CurrentWindowWidth
-  commentId: F:KS.Misc.Animations.EdgePulse.EdgePulse.CurrentWindowWidth
-  fullName: KS.Misc.Animations.EdgePulse.EdgePulse.CurrentWindowWidth
-  nameWithType: EdgePulse.CurrentWindowWidth
 - uid: KS.Misc.Animations.EdgePulse.EdgePulse.FillIn
   name: FillIn()
   href: api/KS.Misc.Animations.EdgePulse.EdgePulse.html#KS_Misc_Animations_EdgePulse_EdgePulse_FillIn
@@ -11604,12 +11538,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Animations.EdgePulse.EdgePulse.FillIn
   nameWithType: EdgePulse.FillIn
-- uid: KS.Misc.Animations.EdgePulse.EdgePulse.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Animations.EdgePulse.EdgePulse.html#KS_Misc_Animations_EdgePulse_EdgePulse_ResizeSyncing
-  commentId: F:KS.Misc.Animations.EdgePulse.EdgePulse.ResizeSyncing
-  fullName: KS.Misc.Animations.EdgePulse.EdgePulse.ResizeSyncing
-  nameWithType: EdgePulse.ResizeSyncing
 - uid: KS.Misc.Animations.EdgePulse.EdgePulse.Simulate(KS.Misc.Animations.EdgePulse.EdgePulseSettings)
   name: Simulate(EdgePulseSettings)
   href: api/KS.Misc.Animations.EdgePulse.EdgePulse.html#KS_Misc_Animations_EdgePulse_EdgePulse_Simulate_KS_Misc_Animations_EdgePulse_EdgePulseSettings_
@@ -11793,24 +11721,6 @@ references:
   commentId: T:KS.Misc.Animations.Fader.Fader
   fullName: KS.Misc.Animations.Fader.Fader
   nameWithType: Fader
-- uid: KS.Misc.Animations.Fader.Fader.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Animations.Fader.Fader.html#KS_Misc_Animations_Fader_Fader_CurrentWindowHeight
-  commentId: F:KS.Misc.Animations.Fader.Fader.CurrentWindowHeight
-  fullName: KS.Misc.Animations.Fader.Fader.CurrentWindowHeight
-  nameWithType: Fader.CurrentWindowHeight
-- uid: KS.Misc.Animations.Fader.Fader.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Animations.Fader.Fader.html#KS_Misc_Animations_Fader_Fader_CurrentWindowWidth
-  commentId: F:KS.Misc.Animations.Fader.Fader.CurrentWindowWidth
-  fullName: KS.Misc.Animations.Fader.Fader.CurrentWindowWidth
-  nameWithType: Fader.CurrentWindowWidth
-- uid: KS.Misc.Animations.Fader.Fader.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Animations.Fader.Fader.html#KS_Misc_Animations_Fader_Fader_ResizeSyncing
-  commentId: F:KS.Misc.Animations.Fader.Fader.ResizeSyncing
-  fullName: KS.Misc.Animations.Fader.Fader.ResizeSyncing
-  nameWithType: Fader.ResizeSyncing
 - uid: KS.Misc.Animations.Fader.Fader.Simulate(KS.Misc.Animations.Fader.FaderSettings)
   name: Simulate(FaderSettings)
   href: api/KS.Misc.Animations.Fader.Fader.html#KS_Misc_Animations_Fader_Fader_Simulate_KS_Misc_Animations_Fader_FaderSettings_
@@ -12051,24 +11961,6 @@ references:
   commentId: T:KS.Misc.Animations.FaderBack.FaderBack
   fullName: KS.Misc.Animations.FaderBack.FaderBack
   nameWithType: FaderBack
-- uid: KS.Misc.Animations.FaderBack.FaderBack.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Animations.FaderBack.FaderBack.html#KS_Misc_Animations_FaderBack_FaderBack_CurrentWindowHeight
-  commentId: F:KS.Misc.Animations.FaderBack.FaderBack.CurrentWindowHeight
-  fullName: KS.Misc.Animations.FaderBack.FaderBack.CurrentWindowHeight
-  nameWithType: FaderBack.CurrentWindowHeight
-- uid: KS.Misc.Animations.FaderBack.FaderBack.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Animations.FaderBack.FaderBack.html#KS_Misc_Animations_FaderBack_FaderBack_CurrentWindowWidth
-  commentId: F:KS.Misc.Animations.FaderBack.FaderBack.CurrentWindowWidth
-  fullName: KS.Misc.Animations.FaderBack.FaderBack.CurrentWindowWidth
-  nameWithType: FaderBack.CurrentWindowWidth
-- uid: KS.Misc.Animations.FaderBack.FaderBack.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Animations.FaderBack.FaderBack.html#KS_Misc_Animations_FaderBack_FaderBack_ResizeSyncing
-  commentId: F:KS.Misc.Animations.FaderBack.FaderBack.ResizeSyncing
-  fullName: KS.Misc.Animations.FaderBack.FaderBack.ResizeSyncing
-  nameWithType: FaderBack.ResizeSyncing
 - uid: KS.Misc.Animations.FaderBack.FaderBack.Simulate(KS.Misc.Animations.FaderBack.FaderBackSettings)
   name: Simulate(FaderBackSettings)
   href: api/KS.Misc.Animations.FaderBack.FaderBack.html#KS_Misc_Animations_FaderBack_FaderBack_Simulate_KS_Misc_Animations_FaderBack_FaderBackSettings_
@@ -12271,24 +12163,6 @@ references:
   commentId: T:KS.Misc.Animations.Pulse.Pulse
   fullName: KS.Misc.Animations.Pulse.Pulse
   nameWithType: Pulse
-- uid: KS.Misc.Animations.Pulse.Pulse.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Animations.Pulse.Pulse.html#KS_Misc_Animations_Pulse_Pulse_CurrentWindowHeight
-  commentId: F:KS.Misc.Animations.Pulse.Pulse.CurrentWindowHeight
-  fullName: KS.Misc.Animations.Pulse.Pulse.CurrentWindowHeight
-  nameWithType: Pulse.CurrentWindowHeight
-- uid: KS.Misc.Animations.Pulse.Pulse.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Animations.Pulse.Pulse.html#KS_Misc_Animations_Pulse_Pulse_CurrentWindowWidth
-  commentId: F:KS.Misc.Animations.Pulse.Pulse.CurrentWindowWidth
-  fullName: KS.Misc.Animations.Pulse.Pulse.CurrentWindowWidth
-  nameWithType: Pulse.CurrentWindowWidth
-- uid: KS.Misc.Animations.Pulse.Pulse.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Animations.Pulse.Pulse.html#KS_Misc_Animations_Pulse_Pulse_ResizeSyncing
-  commentId: F:KS.Misc.Animations.Pulse.Pulse.ResizeSyncing
-  fullName: KS.Misc.Animations.Pulse.Pulse.ResizeSyncing
-  nameWithType: Pulse.ResizeSyncing
 - uid: KS.Misc.Animations.Pulse.Pulse.Simulate(KS.Misc.Animations.Pulse.PulseSettings)
   name: Simulate(PulseSettings)
   href: api/KS.Misc.Animations.Pulse.Pulse.html#KS_Misc_Animations_Pulse_Pulse_Simulate_KS_Misc_Animations_Pulse_PulseSettings_
@@ -12490,12 +12364,6 @@ references:
   commentId: F:KS.Misc.Animations.Spin.Spin.CurrentWindowWidth
   fullName: KS.Misc.Animations.Spin.Spin.CurrentWindowWidth
   nameWithType: Spin.CurrentWindowWidth
-- uid: KS.Misc.Animations.Spin.Spin.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Animations.Spin.Spin.html#KS_Misc_Animations_Spin_Spin_ResizeSyncing
-  commentId: F:KS.Misc.Animations.Spin.Spin.ResizeSyncing
-  fullName: KS.Misc.Animations.Spin.Spin.ResizeSyncing
-  nameWithType: Spin.ResizeSyncing
 - uid: KS.Misc.Animations.Spin.Spin.Simulate(KS.Misc.Animations.Spin.SpinSettings)
   name: Simulate(SpinSettings)
   href: api/KS.Misc.Animations.Spin.Spin.html#KS_Misc_Animations_Spin_Spin_Simulate_KS_Misc_Animations_Spin_SpinSettings_
@@ -17124,30 +16992,12 @@ references:
   commentId: F:KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ColumnBlock
   fullName: KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ColumnBlock
   nameWithType: BouncingBlockDisplay.ColumnBlock
-- uid: KS.Misc.Screensaver.Displays.BouncingBlockDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.BouncingBlockDisplay.html#KS_Misc_Screensaver_Displays_BouncingBlockDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.BouncingBlockDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.BouncingBlockDisplay.CurrentWindowHeight
-  nameWithType: BouncingBlockDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.BouncingBlockDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.BouncingBlockDisplay.html#KS_Misc_Screensaver_Displays_BouncingBlockDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.BouncingBlockDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.BouncingBlockDisplay.CurrentWindowWidth
-  nameWithType: BouncingBlockDisplay.CurrentWindowWidth
 - uid: KS.Misc.Screensaver.Displays.BouncingBlockDisplay.Direction
   name: Direction
   href: api/KS.Misc.Screensaver.Displays.BouncingBlockDisplay.html#KS_Misc_Screensaver_Displays_BouncingBlockDisplay_Direction
   commentId: F:KS.Misc.Screensaver.Displays.BouncingBlockDisplay.Direction
   fullName: KS.Misc.Screensaver.Displays.BouncingBlockDisplay.Direction
   nameWithType: BouncingBlockDisplay.Direction
-- uid: KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.BouncingBlockDisplay.html#KS_Misc_Screensaver_Displays_BouncingBlockDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.BouncingBlockDisplay.ResizeSyncing
-  nameWithType: BouncingBlockDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.BouncingBlockDisplay.RowBlock
   name: RowBlock
   href: api/KS.Misc.Screensaver.Displays.BouncingBlockDisplay.html#KS_Misc_Screensaver_Displays_BouncingBlockDisplay_RowBlock
@@ -17477,30 +17327,12 @@ references:
   commentId: F:KS.Misc.Screensaver.Displays.BouncingTextDisplay.ColumnLastLetter
   fullName: KS.Misc.Screensaver.Displays.BouncingTextDisplay.ColumnLastLetter
   nameWithType: BouncingTextDisplay.ColumnLastLetter
-- uid: KS.Misc.Screensaver.Displays.BouncingTextDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.BouncingTextDisplay.html#KS_Misc_Screensaver_Displays_BouncingTextDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.BouncingTextDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.BouncingTextDisplay.CurrentWindowHeight
-  nameWithType: BouncingTextDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.BouncingTextDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.BouncingTextDisplay.html#KS_Misc_Screensaver_Displays_BouncingTextDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.BouncingTextDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.BouncingTextDisplay.CurrentWindowWidth
-  nameWithType: BouncingTextDisplay.CurrentWindowWidth
 - uid: KS.Misc.Screensaver.Displays.BouncingTextDisplay.Direction
   name: Direction
   href: api/KS.Misc.Screensaver.Displays.BouncingTextDisplay.html#KS_Misc_Screensaver_Displays_BouncingTextDisplay_Direction
   commentId: F:KS.Misc.Screensaver.Displays.BouncingTextDisplay.Direction
   fullName: KS.Misc.Screensaver.Displays.BouncingTextDisplay.Direction
   nameWithType: BouncingTextDisplay.Direction
-- uid: KS.Misc.Screensaver.Displays.BouncingTextDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.BouncingTextDisplay.html#KS_Misc_Screensaver_Displays_BouncingTextDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.BouncingTextDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.BouncingTextDisplay.ResizeSyncing
-  nameWithType: BouncingTextDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.BouncingTextDisplay.RowText
   name: RowText
   href: api/KS.Misc.Screensaver.Displays.BouncingTextDisplay.html#KS_Misc_Screensaver_Displays_BouncingTextDisplay_RowText
@@ -17818,24 +17650,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.ColorMixDisplay
   fullName: KS.Misc.Screensaver.Displays.ColorMixDisplay
   nameWithType: ColorMixDisplay
-- uid: KS.Misc.Screensaver.Displays.ColorMixDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.ColorMixDisplay.html#KS_Misc_Screensaver_Displays_ColorMixDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.ColorMixDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.ColorMixDisplay.CurrentWindowHeight
-  nameWithType: ColorMixDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.ColorMixDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.ColorMixDisplay.html#KS_Misc_Screensaver_Displays_ColorMixDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.ColorMixDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.ColorMixDisplay.CurrentWindowWidth
-  nameWithType: ColorMixDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.ColorMixDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.ColorMixDisplay.html#KS_Misc_Screensaver_Displays_ColorMixDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.ColorMixDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.ColorMixDisplay.ResizeSyncing
-  nameWithType: ColorMixDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.ColorMixDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.ColorMixDisplay.html#KS_Misc_Screensaver_Displays_ColorMixDisplay_ScreensaverLogic
@@ -18807,24 +18621,6 @@ references:
   commentId: F:KS.Misc.Screensaver.Displays.DissolveDisplay.CoveredPositions
   fullName: KS.Misc.Screensaver.Displays.DissolveDisplay.CoveredPositions
   nameWithType: DissolveDisplay.CoveredPositions
-- uid: KS.Misc.Screensaver.Displays.DissolveDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.DissolveDisplay.html#KS_Misc_Screensaver_Displays_DissolveDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.DissolveDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.DissolveDisplay.CurrentWindowHeight
-  nameWithType: DissolveDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.DissolveDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.DissolveDisplay.html#KS_Misc_Screensaver_Displays_DissolveDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.DissolveDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.DissolveDisplay.CurrentWindowWidth
-  nameWithType: DissolveDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.DissolveDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.DissolveDisplay.html#KS_Misc_Screensaver_Displays_DissolveDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.DissolveDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.DissolveDisplay.ResizeSyncing
-  nameWithType: DissolveDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.DissolveDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.DissolveDisplay.html#KS_Misc_Screensaver_Displays_DissolveDisplay_ScreensaverLogic
@@ -19909,24 +19705,6 @@ references:
   commentId: F:KS.Misc.Screensaver.Displays.FallingLineDisplay.CoveredPositions
   fullName: KS.Misc.Screensaver.Displays.FallingLineDisplay.CoveredPositions
   nameWithType: FallingLineDisplay.CoveredPositions
-- uid: KS.Misc.Screensaver.Displays.FallingLineDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.FallingLineDisplay.html#KS_Misc_Screensaver_Displays_FallingLineDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.FallingLineDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.FallingLineDisplay.CurrentWindowHeight
-  nameWithType: FallingLineDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.FallingLineDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.FallingLineDisplay.html#KS_Misc_Screensaver_Displays_FallingLineDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.FallingLineDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.FallingLineDisplay.CurrentWindowWidth
-  nameWithType: FallingLineDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.FallingLineDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.FallingLineDisplay.html#KS_Misc_Screensaver_Displays_FallingLineDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.FallingLineDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.FallingLineDisplay.ResizeSyncing
-  nameWithType: FallingLineDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.FallingLineDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.FallingLineDisplay.html#KS_Misc_Screensaver_Displays_FallingLineDisplay_ScreensaverLogic
@@ -20200,24 +19978,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.FigletDisplay
   fullName: KS.Misc.Screensaver.Displays.FigletDisplay
   nameWithType: FigletDisplay
-- uid: KS.Misc.Screensaver.Displays.FigletDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.FigletDisplay.html#KS_Misc_Screensaver_Displays_FigletDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.FigletDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.FigletDisplay.CurrentWindowHeight
-  nameWithType: FigletDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.FigletDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.FigletDisplay.html#KS_Misc_Screensaver_Displays_FigletDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.FigletDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.FigletDisplay.CurrentWindowWidth
-  nameWithType: FigletDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.FigletDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.FigletDisplay.html#KS_Misc_Screensaver_Displays_FigletDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.FigletDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.FigletDisplay.ResizeSyncing
-  nameWithType: FigletDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.FigletDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.FigletDisplay.html#KS_Misc_Screensaver_Displays_FigletDisplay_ScreensaverLogic
@@ -20510,24 +20270,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.FireworksDisplay
   fullName: KS.Misc.Screensaver.Displays.FireworksDisplay
   nameWithType: FireworksDisplay
-- uid: KS.Misc.Screensaver.Displays.FireworksDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.FireworksDisplay.html#KS_Misc_Screensaver_Displays_FireworksDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.FireworksDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.FireworksDisplay.CurrentWindowHeight
-  nameWithType: FireworksDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.FireworksDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.FireworksDisplay.html#KS_Misc_Screensaver_Displays_FireworksDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.FireworksDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.FireworksDisplay.CurrentWindowWidth
-  nameWithType: FireworksDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.FireworksDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.FireworksDisplay.html#KS_Misc_Screensaver_Displays_FireworksDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.FireworksDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.FireworksDisplay.ResizeSyncing
-  nameWithType: FireworksDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.FireworksDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.FireworksDisplay.html#KS_Misc_Screensaver_Displays_FireworksDisplay_ScreensaverLogic
@@ -20801,24 +20543,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.FlashColorDisplay
   fullName: KS.Misc.Screensaver.Displays.FlashColorDisplay
   nameWithType: FlashColorDisplay
-- uid: KS.Misc.Screensaver.Displays.FlashColorDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.FlashColorDisplay.html#KS_Misc_Screensaver_Displays_FlashColorDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.FlashColorDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.FlashColorDisplay.CurrentWindowHeight
-  nameWithType: FlashColorDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.FlashColorDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.FlashColorDisplay.html#KS_Misc_Screensaver_Displays_FlashColorDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.FlashColorDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.FlashColorDisplay.CurrentWindowWidth
-  nameWithType: FlashColorDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.FlashColorDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.FlashColorDisplay.html#KS_Misc_Screensaver_Displays_FlashColorDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.FlashColorDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.FlashColorDisplay.ResizeSyncing
-  nameWithType: FlashColorDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.FlashColorDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.FlashColorDisplay.html#KS_Misc_Screensaver_Displays_FlashColorDisplay_ScreensaverLogic
@@ -21092,30 +20816,12 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.FlashTextDisplay
   fullName: KS.Misc.Screensaver.Displays.FlashTextDisplay
   nameWithType: FlashTextDisplay
-- uid: KS.Misc.Screensaver.Displays.FlashTextDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.FlashTextDisplay.html#KS_Misc_Screensaver_Displays_FlashTextDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.FlashTextDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.FlashTextDisplay.CurrentWindowHeight
-  nameWithType: FlashTextDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.FlashTextDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.FlashTextDisplay.html#KS_Misc_Screensaver_Displays_FlashTextDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.FlashTextDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.FlashTextDisplay.CurrentWindowWidth
-  nameWithType: FlashTextDisplay.CurrentWindowWidth
 - uid: KS.Misc.Screensaver.Displays.FlashTextDisplay.Left
   name: Left
   href: api/KS.Misc.Screensaver.Displays.FlashTextDisplay.html#KS_Misc_Screensaver_Displays_FlashTextDisplay_Left
   commentId: F:KS.Misc.Screensaver.Displays.FlashTextDisplay.Left
   fullName: KS.Misc.Screensaver.Displays.FlashTextDisplay.Left
   nameWithType: FlashTextDisplay.Left
-- uid: KS.Misc.Screensaver.Displays.FlashTextDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.FlashTextDisplay.html#KS_Misc_Screensaver_Displays_FlashTextDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.FlashTextDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.FlashTextDisplay.ResizeSyncing
-  nameWithType: FlashTextDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.FlashTextDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.FlashTextDisplay.html#KS_Misc_Screensaver_Displays_FlashTextDisplay_ScreensaverLogic
@@ -21438,24 +21144,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.GlitchDisplay
   fullName: KS.Misc.Screensaver.Displays.GlitchDisplay
   nameWithType: GlitchDisplay
-- uid: KS.Misc.Screensaver.Displays.GlitchDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.GlitchDisplay.html#KS_Misc_Screensaver_Displays_GlitchDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.GlitchDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.GlitchDisplay.CurrentWindowHeight
-  nameWithType: GlitchDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.GlitchDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.GlitchDisplay.html#KS_Misc_Screensaver_Displays_GlitchDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.GlitchDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.GlitchDisplay.CurrentWindowWidth
-  nameWithType: GlitchDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.GlitchDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.GlitchDisplay.html#KS_Misc_Screensaver_Displays_GlitchDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.GlitchDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.GlitchDisplay.ResizeSyncing
-  nameWithType: GlitchDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.GlitchDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.GlitchDisplay.html#KS_Misc_Screensaver_Displays_GlitchDisplay_ScreensaverLogic
@@ -21594,24 +21282,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.GlitterColorDisplay
   fullName: KS.Misc.Screensaver.Displays.GlitterColorDisplay
   nameWithType: GlitterColorDisplay
-- uid: KS.Misc.Screensaver.Displays.GlitterColorDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.GlitterColorDisplay.html#KS_Misc_Screensaver_Displays_GlitterColorDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.GlitterColorDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.GlitterColorDisplay.CurrentWindowHeight
-  nameWithType: GlitterColorDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.GlitterColorDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.GlitterColorDisplay.html#KS_Misc_Screensaver_Displays_GlitterColorDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.GlitterColorDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.GlitterColorDisplay.CurrentWindowWidth
-  nameWithType: GlitterColorDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.GlitterColorDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.GlitterColorDisplay.html#KS_Misc_Screensaver_Displays_GlitterColorDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.GlitterColorDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.GlitterColorDisplay.ResizeSyncing
-  nameWithType: GlitterColorDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.GlitterColorDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.GlitterColorDisplay.html#KS_Misc_Screensaver_Displays_GlitterColorDisplay_ScreensaverLogic
@@ -21866,24 +21536,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.GlitterMatrixDisplay
   fullName: KS.Misc.Screensaver.Displays.GlitterMatrixDisplay
   nameWithType: GlitterMatrixDisplay
-- uid: KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.html#KS_Misc_Screensaver_Displays_GlitterMatrixDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.CurrentWindowHeight
-  nameWithType: GlitterMatrixDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.html#KS_Misc_Screensaver_Displays_GlitterMatrixDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.CurrentWindowWidth
-  nameWithType: GlitterMatrixDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.html#KS_Misc_Screensaver_Displays_GlitterMatrixDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.ResizeSyncing
-  nameWithType: GlitterMatrixDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.GlitterMatrixDisplay.html#KS_Misc_Screensaver_Displays_GlitterMatrixDisplay_ScreensaverLogic
@@ -22005,24 +21657,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.GradientDisplay
   fullName: KS.Misc.Screensaver.Displays.GradientDisplay
   nameWithType: GradientDisplay
-- uid: KS.Misc.Screensaver.Displays.GradientDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.GradientDisplay.html#KS_Misc_Screensaver_Displays_GradientDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.GradientDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.GradientDisplay.CurrentWindowHeight
-  nameWithType: GradientDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.GradientDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.GradientDisplay.html#KS_Misc_Screensaver_Displays_GradientDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.GradientDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.GradientDisplay.CurrentWindowWidth
-  nameWithType: GradientDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.GradientDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.GradientDisplay.html#KS_Misc_Screensaver_Displays_GradientDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.GradientDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.GradientDisplay.ResizeSyncing
-  nameWithType: GradientDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.GradientDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.GradientDisplay.html#KS_Misc_Screensaver_Displays_GradientDisplay_ScreensaverLogic
@@ -22081,24 +21715,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.GradientRotDisplay
   fullName: KS.Misc.Screensaver.Displays.GradientRotDisplay
   nameWithType: GradientRotDisplay
-- uid: KS.Misc.Screensaver.Displays.GradientRotDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.GradientRotDisplay.html#KS_Misc_Screensaver_Displays_GradientRotDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.GradientRotDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.GradientRotDisplay.CurrentWindowHeight
-  nameWithType: GradientRotDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.GradientRotDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.GradientRotDisplay.html#KS_Misc_Screensaver_Displays_GradientRotDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.GradientRotDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.GradientRotDisplay.CurrentWindowWidth
-  nameWithType: GradientRotDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.GradientRotDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.GradientRotDisplay.html#KS_Misc_Screensaver_Displays_GradientRotDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.GradientRotDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.GradientRotDisplay.ResizeSyncing
-  nameWithType: GradientRotDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.GradientRotDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.GradientRotDisplay.html#KS_Misc_Screensaver_Displays_GradientRotDisplay_ScreensaverLogic
@@ -22695,18 +22311,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.Displays.IndeterminateDisplay.IndeterminateDisplay
   nameWithType: IndeterminateDisplay.IndeterminateDisplay
-- uid: KS.Misc.Screensaver.Displays.IndeterminateDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.IndeterminateDisplay.html#KS_Misc_Screensaver_Displays_IndeterminateDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.IndeterminateDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.IndeterminateDisplay.CurrentWindowHeight
-  nameWithType: IndeterminateDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.IndeterminateDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.IndeterminateDisplay.html#KS_Misc_Screensaver_Displays_IndeterminateDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.IndeterminateDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.IndeterminateDisplay.CurrentWindowWidth
-  nameWithType: IndeterminateDisplay.CurrentWindowWidth
 - uid: KS.Misc.Screensaver.Displays.IndeterminateDisplay.IndeterminateCurrentBlockDirection
   name: IndeterminateCurrentBlockDirection
   href: api/KS.Misc.Screensaver.Displays.IndeterminateDisplay.html#KS_Misc_Screensaver_Displays_IndeterminateDisplay_IndeterminateCurrentBlockDirection
@@ -22755,12 +22359,6 @@ references:
   commentId: F:KS.Misc.Screensaver.Displays.IndeterminateDisplay.RampFrameBlockWidth
   fullName: KS.Misc.Screensaver.Displays.IndeterminateDisplay.RampFrameBlockWidth
   nameWithType: IndeterminateDisplay.RampFrameBlockWidth
-- uid: KS.Misc.Screensaver.Displays.IndeterminateDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.IndeterminateDisplay.html#KS_Misc_Screensaver_Displays_IndeterminateDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.IndeterminateDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.IndeterminateDisplay.ResizeSyncing
-  nameWithType: IndeterminateDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.IndeterminateDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.IndeterminateDisplay.html#KS_Misc_Screensaver_Displays_IndeterminateDisplay_ScreensaverLogic
@@ -23402,24 +23000,6 @@ references:
   commentId: F:KS.Misc.Screensaver.Displays.LighterDisplay.CoveredPositions
   fullName: KS.Misc.Screensaver.Displays.LighterDisplay.CoveredPositions
   nameWithType: LighterDisplay.CoveredPositions
-- uid: KS.Misc.Screensaver.Displays.LighterDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.LighterDisplay.html#KS_Misc_Screensaver_Displays_LighterDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.LighterDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.LighterDisplay.CurrentWindowHeight
-  nameWithType: LighterDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.LighterDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.LighterDisplay.html#KS_Misc_Screensaver_Displays_LighterDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.LighterDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.LighterDisplay.CurrentWindowWidth
-  nameWithType: LighterDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.LighterDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.LighterDisplay.html#KS_Misc_Screensaver_Displays_LighterDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.LighterDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.LighterDisplay.ResizeSyncing
-  nameWithType: LighterDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.LighterDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.LighterDisplay.html#KS_Misc_Screensaver_Displays_LighterDisplay_ScreensaverLogic
@@ -23965,24 +23545,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.LinesDisplay
   fullName: KS.Misc.Screensaver.Displays.LinesDisplay
   nameWithType: LinesDisplay
-- uid: KS.Misc.Screensaver.Displays.LinesDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.LinesDisplay.html#KS_Misc_Screensaver_Displays_LinesDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.LinesDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.LinesDisplay.CurrentWindowHeight
-  nameWithType: LinesDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.LinesDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.LinesDisplay.html#KS_Misc_Screensaver_Displays_LinesDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.LinesDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.LinesDisplay.CurrentWindowWidth
-  nameWithType: LinesDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.LinesDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.LinesDisplay.html#KS_Misc_Screensaver_Displays_LinesDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.LinesDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.LinesDisplay.ResizeSyncing
-  nameWithType: LinesDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.LinesDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.LinesDisplay.html#KS_Misc_Screensaver_Displays_LinesDisplay_ScreensaverLogic
@@ -24275,18 +23837,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.LinotypoDisplay
   fullName: KS.Misc.Screensaver.Displays.LinotypoDisplay
   nameWithType: LinotypoDisplay
-- uid: KS.Misc.Screensaver.Displays.LinotypoDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.LinotypoDisplay.html#KS_Misc_Screensaver_Displays_LinotypoDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.LinotypoDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.LinotypoDisplay.CurrentWindowHeight
-  nameWithType: LinotypoDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.LinotypoDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.LinotypoDisplay.html#KS_Misc_Screensaver_Displays_LinotypoDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.LinotypoDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.LinotypoDisplay.CurrentWindowWidth
-  nameWithType: LinotypoDisplay.CurrentWindowWidth
 - uid: KS.Misc.Screensaver.Displays.LinotypoDisplay.HandleNextColumn(System.Int32@,System.Int32@,System.Int32)
   name: HandleNextColumn(ref Int32, ref Int32, Int32)
   href: api/KS.Misc.Screensaver.Displays.LinotypoDisplay.html#KS_Misc_Screensaver_Displays_LinotypoDisplay_HandleNextColumn_System_Int32__System_Int32__System_Int32_
@@ -24303,12 +23853,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.Displays.LinotypoDisplay.HandleNextColumn
   nameWithType: LinotypoDisplay.HandleNextColumn
-- uid: KS.Misc.Screensaver.Displays.LinotypoDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.LinotypoDisplay.html#KS_Misc_Screensaver_Displays_LinotypoDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.LinotypoDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.LinotypoDisplay.ResizeSyncing
-  nameWithType: LinotypoDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.LinotypoDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.LinotypoDisplay.html#KS_Misc_Screensaver_Displays_LinotypoDisplay_ScreensaverLogic
@@ -24625,24 +24169,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.MarqueeDisplay
   fullName: KS.Misc.Screensaver.Displays.MarqueeDisplay
   nameWithType: MarqueeDisplay
-- uid: KS.Misc.Screensaver.Displays.MarqueeDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.MarqueeDisplay.html#KS_Misc_Screensaver_Displays_MarqueeDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.MarqueeDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.MarqueeDisplay.CurrentWindowHeight
-  nameWithType: MarqueeDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.MarqueeDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.MarqueeDisplay.html#KS_Misc_Screensaver_Displays_MarqueeDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.MarqueeDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.MarqueeDisplay.CurrentWindowWidth
-  nameWithType: MarqueeDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.MarqueeDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.MarqueeDisplay.html#KS_Misc_Screensaver_Displays_MarqueeDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.MarqueeDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.MarqueeDisplay.ResizeSyncing
-  nameWithType: MarqueeDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.MarqueeDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.MarqueeDisplay.html#KS_Misc_Screensaver_Displays_MarqueeDisplay_ScreensaverLogic
@@ -24973,24 +24499,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.MatrixDisplay
   fullName: KS.Misc.Screensaver.Displays.MatrixDisplay
   nameWithType: MatrixDisplay
-- uid: KS.Misc.Screensaver.Displays.MatrixDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.MatrixDisplay.html#KS_Misc_Screensaver_Displays_MatrixDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.MatrixDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.MatrixDisplay.CurrentWindowHeight
-  nameWithType: MatrixDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.MatrixDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.MatrixDisplay.html#KS_Misc_Screensaver_Displays_MatrixDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.MatrixDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.MatrixDisplay.CurrentWindowWidth
-  nameWithType: MatrixDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.MatrixDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.MatrixDisplay.html#KS_Misc_Screensaver_Displays_MatrixDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.MatrixDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.MatrixDisplay.ResizeSyncing
-  nameWithType: MatrixDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.MatrixDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.MatrixDisplay.html#KS_Misc_Screensaver_Displays_MatrixDisplay_ScreensaverLogic
@@ -25145,24 +24653,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.NoiseDisplay
   fullName: KS.Misc.Screensaver.Displays.NoiseDisplay
   nameWithType: NoiseDisplay
-- uid: KS.Misc.Screensaver.Displays.NoiseDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.NoiseDisplay.html#KS_Misc_Screensaver_Displays_NoiseDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.NoiseDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.NoiseDisplay.CurrentWindowHeight
-  nameWithType: NoiseDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.NoiseDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.NoiseDisplay.html#KS_Misc_Screensaver_Displays_NoiseDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.NoiseDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.NoiseDisplay.CurrentWindowWidth
-  nameWithType: NoiseDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.NoiseDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.NoiseDisplay.html#KS_Misc_Screensaver_Displays_NoiseDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.NoiseDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.NoiseDisplay.ResizeSyncing
-  nameWithType: NoiseDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.NoiseDisplay.html#KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverLogic
@@ -25189,19 +24679,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverName
   nameWithType: NoiseDisplay.ScreensaverName
-- uid: KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverPreparation
-  name: ScreensaverPreparation()
-  href: api/KS.Misc.Screensaver.Displays.NoiseDisplay.html#KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverPreparation
-  commentId: M:KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverPreparation
-  fullName: KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverPreparation()
-  nameWithType: NoiseDisplay.ScreensaverPreparation()
-- uid: KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverPreparation*
-  name: ScreensaverPreparation
-  href: api/KS.Misc.Screensaver.Displays.NoiseDisplay.html#KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverPreparation_
-  commentId: Overload:KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverPreparation
-  isSpec: "True"
-  fullName: KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverPreparation
-  nameWithType: NoiseDisplay.ScreensaverPreparation
 - uid: KS.Misc.Screensaver.Displays.NoiseDisplay.ScreensaverSettings
   name: ScreensaverSettings
   href: api/KS.Misc.Screensaver.Displays.NoiseDisplay.html#KS_Misc_Screensaver_Displays_NoiseDisplay_ScreensaverSettings
@@ -25468,24 +24945,6 @@ references:
   commentId: F:KS.Misc.Screensaver.Displays.ProgressClockDisplay.CurrentTicks
   fullName: KS.Misc.Screensaver.Displays.ProgressClockDisplay.CurrentTicks
   nameWithType: ProgressClockDisplay.CurrentTicks
-- uid: KS.Misc.Screensaver.Displays.ProgressClockDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.ProgressClockDisplay.html#KS_Misc_Screensaver_Displays_ProgressClockDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.ProgressClockDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.ProgressClockDisplay.CurrentWindowHeight
-  nameWithType: ProgressClockDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.ProgressClockDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.ProgressClockDisplay.html#KS_Misc_Screensaver_Displays_ProgressClockDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.ProgressClockDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.ProgressClockDisplay.CurrentWindowWidth
-  nameWithType: ProgressClockDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.ProgressClockDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.ProgressClockDisplay.html#KS_Misc_Screensaver_Displays_ProgressClockDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.ProgressClockDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.ProgressClockDisplay.ResizeSyncing
-  nameWithType: ProgressClockDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.ProgressClockDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.ProgressClockDisplay.html#KS_Misc_Screensaver_Displays_ProgressClockDisplay_ScreensaverLogic
@@ -27032,24 +26491,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.RampDisplay
   fullName: KS.Misc.Screensaver.Displays.RampDisplay
   nameWithType: RampDisplay
-- uid: KS.Misc.Screensaver.Displays.RampDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.RampDisplay.html#KS_Misc_Screensaver_Displays_RampDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.RampDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.RampDisplay.CurrentWindowHeight
-  nameWithType: RampDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.RampDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.RampDisplay.html#KS_Misc_Screensaver_Displays_RampDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.RampDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.RampDisplay.CurrentWindowWidth
-  nameWithType: RampDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.RampDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.RampDisplay.html#KS_Misc_Screensaver_Displays_RampDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.RampDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.RampDisplay.ResizeSyncing
-  nameWithType: RampDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.RampDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.RampDisplay.html#KS_Misc_Screensaver_Displays_RampDisplay_ScreensaverLogic
@@ -27824,19 +27265,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.Displays.RandomSaverDisplay.ScreensaverName
   nameWithType: RandomSaverDisplay.ScreensaverName
-- uid: KS.Misc.Screensaver.Displays.RandomSaverDisplay.ScreensaverPreparation
-  name: ScreensaverPreparation()
-  href: api/KS.Misc.Screensaver.Displays.RandomSaverDisplay.html#KS_Misc_Screensaver_Displays_RandomSaverDisplay_ScreensaverPreparation
-  commentId: M:KS.Misc.Screensaver.Displays.RandomSaverDisplay.ScreensaverPreparation
-  fullName: KS.Misc.Screensaver.Displays.RandomSaverDisplay.ScreensaverPreparation()
-  nameWithType: RandomSaverDisplay.ScreensaverPreparation()
-- uid: KS.Misc.Screensaver.Displays.RandomSaverDisplay.ScreensaverPreparation*
-  name: ScreensaverPreparation
-  href: api/KS.Misc.Screensaver.Displays.RandomSaverDisplay.html#KS_Misc_Screensaver_Displays_RandomSaverDisplay_ScreensaverPreparation_
-  commentId: Overload:KS.Misc.Screensaver.Displays.RandomSaverDisplay.ScreensaverPreparation
-  isSpec: "True"
-  fullName: KS.Misc.Screensaver.Displays.RandomSaverDisplay.ScreensaverPreparation
-  nameWithType: RandomSaverDisplay.ScreensaverPreparation
 - uid: KS.Misc.Screensaver.Displays.RandomSaverDisplay.ScreensaverSettings
   name: ScreensaverSettings
   href: api/KS.Misc.Screensaver.Displays.RandomSaverDisplay.html#KS_Misc_Screensaver_Displays_RandomSaverDisplay_ScreensaverSettings
@@ -27882,19 +27310,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.Displays.SirenDisplay.ScreensaverName
   nameWithType: SirenDisplay.ScreensaverName
-- uid: KS.Misc.Screensaver.Displays.SirenDisplay.ScreensaverPreparation
-  name: ScreensaverPreparation()
-  href: api/KS.Misc.Screensaver.Displays.SirenDisplay.html#KS_Misc_Screensaver_Displays_SirenDisplay_ScreensaverPreparation
-  commentId: M:KS.Misc.Screensaver.Displays.SirenDisplay.ScreensaverPreparation
-  fullName: KS.Misc.Screensaver.Displays.SirenDisplay.ScreensaverPreparation()
-  nameWithType: SirenDisplay.ScreensaverPreparation()
-- uid: KS.Misc.Screensaver.Displays.SirenDisplay.ScreensaverPreparation*
-  name: ScreensaverPreparation
-  href: api/KS.Misc.Screensaver.Displays.SirenDisplay.html#KS_Misc_Screensaver_Displays_SirenDisplay_ScreensaverPreparation_
-  commentId: Overload:KS.Misc.Screensaver.Displays.SirenDisplay.ScreensaverPreparation
-  isSpec: "True"
-  fullName: KS.Misc.Screensaver.Displays.SirenDisplay.ScreensaverPreparation
-  nameWithType: SirenDisplay.ScreensaverPreparation
 - uid: KS.Misc.Screensaver.Displays.SirenDisplay.ScreensaverSettings
   name: ScreensaverSettings
   href: api/KS.Misc.Screensaver.Displays.SirenDisplay.html#KS_Misc_Screensaver_Displays_SirenDisplay_ScreensaverSettings
@@ -27970,24 +27385,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.SnakeFillDisplay
   fullName: KS.Misc.Screensaver.Displays.SnakeFillDisplay
   nameWithType: SnakeFillDisplay
-- uid: KS.Misc.Screensaver.Displays.SnakeFillDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.SnakeFillDisplay.html#KS_Misc_Screensaver_Displays_SnakeFillDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.SnakeFillDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.SnakeFillDisplay.CurrentWindowHeight
-  nameWithType: SnakeFillDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.SnakeFillDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.SnakeFillDisplay.html#KS_Misc_Screensaver_Displays_SnakeFillDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.SnakeFillDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.SnakeFillDisplay.CurrentWindowWidth
-  nameWithType: SnakeFillDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.SnakeFillDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.SnakeFillDisplay.html#KS_Misc_Screensaver_Displays_SnakeFillDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.SnakeFillDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.SnakeFillDisplay.ResizeSyncing
-  nameWithType: SnakeFillDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.SnakeFillDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.SnakeFillDisplay.html#KS_Misc_Screensaver_Displays_SnakeFillDisplay_ScreensaverLogic
@@ -28591,24 +27988,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.SpotWriteDisplay
   fullName: KS.Misc.Screensaver.Displays.SpotWriteDisplay
   nameWithType: SpotWriteDisplay
-- uid: KS.Misc.Screensaver.Displays.SpotWriteDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.SpotWriteDisplay.html#KS_Misc_Screensaver_Displays_SpotWriteDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.SpotWriteDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.SpotWriteDisplay.CurrentWindowHeight
-  nameWithType: SpotWriteDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.SpotWriteDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.SpotWriteDisplay.html#KS_Misc_Screensaver_Displays_SpotWriteDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.SpotWriteDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.SpotWriteDisplay.CurrentWindowWidth
-  nameWithType: SpotWriteDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.SpotWriteDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.SpotWriteDisplay.html#KS_Misc_Screensaver_Displays_SpotWriteDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.SpotWriteDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.SpotWriteDisplay.ResizeSyncing
-  nameWithType: SpotWriteDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.SpotWriteDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.SpotWriteDisplay.html#KS_Misc_Screensaver_Displays_SpotWriteDisplay_ScreensaverLogic
@@ -28749,24 +28128,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.StackBoxDisplay
   fullName: KS.Misc.Screensaver.Displays.StackBoxDisplay
   nameWithType: StackBoxDisplay
-- uid: KS.Misc.Screensaver.Displays.StackBoxDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.StackBoxDisplay.html#KS_Misc_Screensaver_Displays_StackBoxDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.StackBoxDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.StackBoxDisplay.CurrentWindowHeight
-  nameWithType: StackBoxDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.StackBoxDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.StackBoxDisplay.html#KS_Misc_Screensaver_Displays_StackBoxDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.StackBoxDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.StackBoxDisplay.CurrentWindowWidth
-  nameWithType: StackBoxDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.StackBoxDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.StackBoxDisplay.html#KS_Misc_Screensaver_Displays_StackBoxDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.StackBoxDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.StackBoxDisplay.ResizeSyncing
-  nameWithType: StackBoxDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.StackBoxDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.StackBoxDisplay.html#KS_Misc_Screensaver_Displays_StackBoxDisplay_ScreensaverLogic
@@ -29040,24 +28401,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.StarfieldDisplay
   fullName: KS.Misc.Screensaver.Displays.StarfieldDisplay
   nameWithType: StarfieldDisplay
-- uid: KS.Misc.Screensaver.Displays.StarfieldDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.StarfieldDisplay.html#KS_Misc_Screensaver_Displays_StarfieldDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.StarfieldDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.StarfieldDisplay.CurrentWindowHeight
-  nameWithType: StarfieldDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.StarfieldDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.StarfieldDisplay.html#KS_Misc_Screensaver_Displays_StarfieldDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.StarfieldDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.StarfieldDisplay.CurrentWindowWidth
-  nameWithType: StarfieldDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.StarfieldDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.StarfieldDisplay.html#KS_Misc_Screensaver_Displays_StarfieldDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.StarfieldDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.StarfieldDisplay.ResizeSyncing
-  nameWithType: StarfieldDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.StarfieldDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.StarfieldDisplay.html#KS_Misc_Screensaver_Displays_StarfieldDisplay_ScreensaverLogic
@@ -29147,24 +28490,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.TypewriterDisplay
   fullName: KS.Misc.Screensaver.Displays.TypewriterDisplay
   nameWithType: TypewriterDisplay
-- uid: KS.Misc.Screensaver.Displays.TypewriterDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.TypewriterDisplay.html#KS_Misc_Screensaver_Displays_TypewriterDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.TypewriterDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.TypewriterDisplay.CurrentWindowHeight
-  nameWithType: TypewriterDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.TypewriterDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.TypewriterDisplay.html#KS_Misc_Screensaver_Displays_TypewriterDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.TypewriterDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.TypewriterDisplay.CurrentWindowWidth
-  nameWithType: TypewriterDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.TypewriterDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.TypewriterDisplay.html#KS_Misc_Screensaver_Displays_TypewriterDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.TypewriterDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.TypewriterDisplay.ResizeSyncing
-  nameWithType: TypewriterDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.TypewriterDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.TypewriterDisplay.html#KS_Misc_Screensaver_Displays_TypewriterDisplay_ScreensaverLogic
@@ -29362,24 +28687,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.TypoDisplay
   fullName: KS.Misc.Screensaver.Displays.TypoDisplay
   nameWithType: TypoDisplay
-- uid: KS.Misc.Screensaver.Displays.TypoDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.TypoDisplay.html#KS_Misc_Screensaver_Displays_TypoDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.TypoDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.TypoDisplay.CurrentWindowHeight
-  nameWithType: TypoDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.TypoDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.TypoDisplay.html#KS_Misc_Screensaver_Displays_TypoDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.TypoDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.TypoDisplay.CurrentWindowWidth
-  nameWithType: TypoDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.TypoDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.TypoDisplay.html#KS_Misc_Screensaver_Displays_TypoDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.TypoDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.TypoDisplay.ResizeSyncing
-  nameWithType: TypoDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.TypoDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.TypoDisplay.html#KS_Misc_Screensaver_Displays_TypoDisplay_ScreensaverLogic
@@ -29596,30 +28903,12 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.WindowsLogoDisplay
   fullName: KS.Misc.Screensaver.Displays.WindowsLogoDisplay
   nameWithType: WindowsLogoDisplay
-- uid: KS.Misc.Screensaver.Displays.WindowsLogoDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.WindowsLogoDisplay.html#KS_Misc_Screensaver_Displays_WindowsLogoDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.WindowsLogoDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.WindowsLogoDisplay.CurrentWindowHeight
-  nameWithType: WindowsLogoDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.WindowsLogoDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.WindowsLogoDisplay.html#KS_Misc_Screensaver_Displays_WindowsLogoDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.WindowsLogoDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.WindowsLogoDisplay.CurrentWindowWidth
-  nameWithType: WindowsLogoDisplay.CurrentWindowWidth
 - uid: KS.Misc.Screensaver.Displays.WindowsLogoDisplay.Drawn
   name: Drawn
   href: api/KS.Misc.Screensaver.Displays.WindowsLogoDisplay.html#KS_Misc_Screensaver_Displays_WindowsLogoDisplay_Drawn
   commentId: F:KS.Misc.Screensaver.Displays.WindowsLogoDisplay.Drawn
   fullName: KS.Misc.Screensaver.Displays.WindowsLogoDisplay.Drawn
   nameWithType: WindowsLogoDisplay.Drawn
-- uid: KS.Misc.Screensaver.Displays.WindowsLogoDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.WindowsLogoDisplay.html#KS_Misc_Screensaver_Displays_WindowsLogoDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.WindowsLogoDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.WindowsLogoDisplay.ResizeSyncing
-  nameWithType: WindowsLogoDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.WindowsLogoDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.WindowsLogoDisplay.html#KS_Misc_Screensaver_Displays_WindowsLogoDisplay_ScreensaverLogic
@@ -29678,24 +28967,6 @@ references:
   commentId: T:KS.Misc.Screensaver.Displays.WipeDisplay
   fullName: KS.Misc.Screensaver.Displays.WipeDisplay
   nameWithType: WipeDisplay
-- uid: KS.Misc.Screensaver.Displays.WipeDisplay.CurrentWindowHeight
-  name: CurrentWindowHeight
-  href: api/KS.Misc.Screensaver.Displays.WipeDisplay.html#KS_Misc_Screensaver_Displays_WipeDisplay_CurrentWindowHeight
-  commentId: F:KS.Misc.Screensaver.Displays.WipeDisplay.CurrentWindowHeight
-  fullName: KS.Misc.Screensaver.Displays.WipeDisplay.CurrentWindowHeight
-  nameWithType: WipeDisplay.CurrentWindowHeight
-- uid: KS.Misc.Screensaver.Displays.WipeDisplay.CurrentWindowWidth
-  name: CurrentWindowWidth
-  href: api/KS.Misc.Screensaver.Displays.WipeDisplay.html#KS_Misc_Screensaver_Displays_WipeDisplay_CurrentWindowWidth
-  commentId: F:KS.Misc.Screensaver.Displays.WipeDisplay.CurrentWindowWidth
-  fullName: KS.Misc.Screensaver.Displays.WipeDisplay.CurrentWindowWidth
-  nameWithType: WipeDisplay.CurrentWindowWidth
-- uid: KS.Misc.Screensaver.Displays.WipeDisplay.ResizeSyncing
-  name: ResizeSyncing
-  href: api/KS.Misc.Screensaver.Displays.WipeDisplay.html#KS_Misc_Screensaver_Displays_WipeDisplay_ResizeSyncing
-  commentId: F:KS.Misc.Screensaver.Displays.WipeDisplay.ResizeSyncing
-  fullName: KS.Misc.Screensaver.Displays.WipeDisplay.ResizeSyncing
-  nameWithType: WipeDisplay.ResizeSyncing
 - uid: KS.Misc.Screensaver.Displays.WipeDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.WipeDisplay.html#KS_Misc_Screensaver_Displays_WipeDisplay_ScreensaverLogic
