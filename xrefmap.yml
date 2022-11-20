@@ -1537,19 +1537,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.ConsoleResizeListener.PollForResize
   nameWithType: ConsoleResizeListener.PollForResize
-- uid: KS.ConsoleBase.ConsoleResizeListener.Resized
-  name: Resized
-  href: api/KS.ConsoleBase.ConsoleResizeListener.html#KS_ConsoleBase_ConsoleResizeListener_Resized
-  commentId: P:KS.ConsoleBase.ConsoleResizeListener.Resized
-  fullName: KS.ConsoleBase.ConsoleResizeListener.Resized
-  nameWithType: ConsoleResizeListener.Resized
-- uid: KS.ConsoleBase.ConsoleResizeListener.Resized*
-  name: Resized
-  href: api/KS.ConsoleBase.ConsoleResizeListener.html#KS_ConsoleBase_ConsoleResizeListener_Resized_
-  commentId: Overload:KS.ConsoleBase.ConsoleResizeListener.Resized
-  isSpec: "True"
-  fullName: KS.ConsoleBase.ConsoleResizeListener.Resized
-  nameWithType: ConsoleResizeListener.Resized
 - uid: KS.ConsoleBase.ConsoleResizeListener.ResizeDetected
   name: ResizeDetected
   href: api/KS.ConsoleBase.ConsoleResizeListener.html#KS_ConsoleBase_ConsoleResizeListener_ResizeDetected
@@ -1575,6 +1562,19 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.ConsoleResizeListener.StartResizeListener
   nameWithType: ConsoleResizeListener.StartResizeListener
+- uid: KS.ConsoleBase.ConsoleResizeListener.WasResized(System.Boolean)
+  name: WasResized(Boolean)
+  href: api/KS.ConsoleBase.ConsoleResizeListener.html#KS_ConsoleBase_ConsoleResizeListener_WasResized_System_Boolean_
+  commentId: M:KS.ConsoleBase.ConsoleResizeListener.WasResized(System.Boolean)
+  fullName: KS.ConsoleBase.ConsoleResizeListener.WasResized(System.Boolean)
+  nameWithType: ConsoleResizeListener.WasResized(Boolean)
+- uid: KS.ConsoleBase.ConsoleResizeListener.WasResized*
+  name: WasResized
+  href: api/KS.ConsoleBase.ConsoleResizeListener.html#KS_ConsoleBase_ConsoleResizeListener_WasResized_
+  commentId: Overload:KS.ConsoleBase.ConsoleResizeListener.WasResized
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ConsoleResizeListener.WasResized
+  nameWithType: ConsoleResizeListener.WasResized
 - uid: KS.ConsoleBase.ConsoleWrapper
   name: ConsoleWrapper
   href: api/KS.ConsoleBase.ConsoleWrapper.html
