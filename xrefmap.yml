@@ -8411,6 +8411,12 @@ references:
   commentId: F:KS.Kernel.Flags.AutoDownloadUpdate
   fullName: KS.Kernel.Flags.AutoDownloadUpdate
   nameWithType: Flags.AutoDownloadUpdate
+- uid: KS.Kernel.Flags.BeepOnShutdown
+  name: BeepOnShutdown
+  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_BeepOnShutdown
+  commentId: F:KS.Kernel.Flags.BeepOnShutdown
+  fullName: KS.Kernel.Flags.BeepOnShutdown
+  nameWithType: Flags.BeepOnShutdown
 - uid: KS.Kernel.Flags.CancellationHandlerInstalled
   name: CancellationHandlerInstalled
   href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_CancellationHandlerInstalled
@@ -8471,6 +8477,12 @@ references:
   commentId: F:KS.Kernel.Flags.DebugMode
   fullName: KS.Kernel.Flags.DebugMode
   nameWithType: Flags.DebugMode
+- uid: KS.Kernel.Flags.DelayOnShutdown
+  name: DelayOnShutdown
+  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_DelayOnShutdown
+  commentId: F:KS.Kernel.Flags.DelayOnShutdown
+  fullName: KS.Kernel.Flags.DelayOnShutdown
+  nameWithType: Flags.DelayOnShutdown
 - uid: KS.Kernel.Flags.DrawBorderNotification
   name: DrawBorderNotification
   href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_DrawBorderNotification
