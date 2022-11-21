@@ -1281,7 +1281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Config.html",
-          "hash": "KC06+ZEpsDyiuqSWxKjN5q2z7IrG2nrNSbyENb13tT0="
+          "hash": "rUR+dK832f2eyToUQgsV+ULBGm1sUoBjMY1de/afvhs="
         }
       },
       "is_incremental": false,
@@ -1553,6 +1553,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.BenchmarkSleepOne.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.BenchmarkSleepOne.html",
+          "hash": "b3klg78twksW5HItFimq4x9KOl+gLy0NOeoMN31+fOI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.BenchmarkTickSleepOne.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.BenchmarkTickSleepOne.html",
+          "hash": "5wVnDTXOBlFn6ejX3mDENEFKDlaPu7maG8xe0xd1DvI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.BlacklistMod.yml",
       "output": {
         ".html": {
@@ -1673,6 +1697,54 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.GetCustomSaverSetting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.GetCustomSaverSetting.html",
+          "hash": "xkYz5e1QzLKreZkIT/SbZW7IfASyWC8HSAWGvThuczM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ListCodepages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ListCodepages.html",
+          "hash": "Iy6bNeDO5kA6pBSqtwyE9XC3DX9JS8z38naPMIpzi2U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.html",
+          "hash": "2HBXdg0qHEMFvA9H3x4okCI0l8KBHXaT7mkPNs98q9c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ListCultures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ListCultures.html",
+          "hash": "R19XIYqJdOfXOIpN6c+nfj96OQyf9AhqvOGfvt1B5FA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.LoadMods.yml",
       "output": {
         ".html": {
@@ -1702,6 +1774,18 @@
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.PanicF.html",
           "hash": "JoA42nhBana10VJexDHQudhFa/GE+kuyj39G3GENI2I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.PowerLineTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.PowerLineTest.html",
+          "hash": "zlMKknncUIWJ8a81MFkxgFXYoADAE4FB0bOWFX8FUp0="
         }
       },
       "is_incremental": false,
@@ -1841,6 +1925,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ProbeHardware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ProbeHardware.html",
+          "hash": "dti7GKV3Tl4cMtSMk/+SYwp3AvUSnspafDw/B8ccQ8Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.RDebug.yml",
       "output": {
         ".html": {
@@ -1865,11 +1961,71 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.SendNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.SendNotification.html",
+          "hash": "dOJDo3Ke276syC7aO0zWxyP6kVL48jVDJox9/6qnf2o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.SendNotificationProg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.SendNotificationProg.html",
+          "hash": "quOAykiYV9gbyQJAadx+o+IUkw/+4jHBnkPuPM23mRs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.SendNotificationProgF.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.SendNotificationProgF.html",
+          "hash": "OnVYUGNoh2edXy2Ajpb2catnrafbXMGB5d7Ue6Ofv6E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.SetCustomSaverSetting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.SetCustomSaverSetting.html",
+          "hash": "qweu20uGZng6JdZGxDDLfOk08cd0ChaB5ZJhX9EGGLg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowDate.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowDate.html",
           "hash": "fdb0LLPb0XfxhScV9uKYq4lDvx+f5v8BRPPnxKmJBKY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowDateDiffCalendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ShowDateDiffCalendar.html",
+          "hash": "JIXFX9jqtCbtKB9kQAhZdoTrdG8j7+WCGTrRxZb2AlA="
         }
       },
       "is_incremental": false,
@@ -1949,6 +2105,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestArgs.html",
+          "hash": "GwWxO3o5NhvUpUJ0Y/KdNx38ZVye8dgUxvW9aPluxqU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestCRC32.yml",
       "output": {
         ".html": {
@@ -1990,6 +2158,30 @@
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestDictWriterStr.html",
           "hash": "1Q8qmKn6/oLSDqLT532nt7R3JZtbBfAnQ0EAw3fRO44="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestEvent.html",
+          "hash": "kT9KkexT2RGVPzQtTR5EL9OAEtSwm6EVJtHDBWmUucw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestExecuteAssembly.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestExecuteAssembly.html",
+          "hash": "agxxuW/UhlJQ0u6XgH1m8eMp6BaFhdiDKQniMkpNqh8="
         }
       },
       "is_incremental": false,
@@ -2045,6 +2237,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestRegExp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestRegExp.html",
+          "hash": "lp08zLFkZTB+brHs43Cu1CVZ8hDiNv6A7SXmDhdGFms="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestSHA1.yml",
       "output": {
         ".html": {
@@ -2093,11 +2297,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestSwitches.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestSwitches.html",
+          "hash": "nampf+DbN7kI87BPMtNCR9EZpXN0hCEmORPilzufWek="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestTable.html",
+          "hash": "pgWJubmSzPQtoB72t3WJ60qDvXpysTfCoUL3e2wunRQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestTranslate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestTranslate.html",
+          "hash": "b0Wk0x1/6LPQ2zYtIi53pOqeNZgt0B48i59E7YH5UEw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.html",
-          "hash": "k7A7ijiaXvJVlgp9LIMrSUTATfBOWrWvlU5EP7B1hJ4="
+          "hash": "curlzrVaQ86AY4coLsQBuB8E6+FIv0TcGQTABoORI8s="
         }
       },
       "is_incremental": false,
@@ -2109,7 +2349,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.TestFacade.html",
-          "hash": "F48NXSKXR4aF9qFl3hCopU9QyKIq5PyYuG4pelbPpIA="
+          "hash": "I5g5O8rfUsVYpexUIQUOJF0xB/N2kOgsd0Vz/PyCRmU="
         }
       },
       "is_incremental": false,
@@ -2121,7 +2361,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.TestInteractive.html",
-          "hash": "l1hK1XQU9BGTmLbQR0ycRTf3iCZ4/1T7HGFyZg5gXXw="
+          "hash": "GWjC5y4T4V1Mvw+b2rdLmkzl29yJv0hnBQ6Kr7+QTKM="
         }
       },
       "is_incremental": false,
@@ -7385,102 +7625,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Test.TestDefaultPreset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestDefaultPreset.html",
-          "hash": "89kP9Sw3lN2U6dXtAYRw1m7PAh5lN59slkDNfXXOQxw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLine1Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLine1Preset.html",
-          "hash": "uY4CD4dSKFkayYT7VGoKh37tgazF5NJILWp6R57RuVM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLine2Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLine2Preset.html",
-          "hash": "QjrW4YTXV134Q4hmi7i1idyImF+MzUR0/jwcfCy6xUM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLine3Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLine3Preset.html",
-          "hash": "mPKsMivPd/klxT8pXr/fhv2V3VTNIkOXQg/sYMbeRys="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLineBG1Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLineBG1Preset.html",
-          "hash": "SrXszE3mJg+LwAU3mIDZbMXptumYu1D8+EK+mcUwO6c="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLineBG2Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLineBG2Preset.html",
-          "hash": "69vdC2IQL9KWc3597c07afYbmRaJjxOrguTCbgqs6hY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLineBG3Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Test.TestPowerLineBG3Preset.html",
-          "hash": "J8+YP5VRHSvI4eGWIsJhcaTXFGY+jqEkGeoKHUxaYpk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Test.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Test.html",
-          "hash": "11I2sDqE34m8Vw5YS1bsV3nLKZGuPurFZKu1UvO4NfI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Prompts.Presets.Text.TextDefaultPreset.yml",
       "output": {
         ".html": {
@@ -7677,7 +7821,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.PromptPresetBase.html",
-          "hash": "OOLgDLMbq7r1gjVwLatuK9VWrOVQs5b1YdViHyw3nRI="
+          "hash": "PFoQxmr5+Ha4QQ5XyUaTkBDba0ha0fo5TCYfT8Schyk="
         }
       },
       "is_incremental": false,
@@ -7689,7 +7833,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.PromptPresetManager.html",
-          "hash": "Z6i9KiDqfEROTMtVR2XrnokhRHP2K4KuVXROD/rheUY="
+          "hash": "rivOrirhJu+JJFnwC1auEVNHjYkE4WNr2D54IyBdMO4="
         }
       },
       "is_incremental": false,
@@ -7713,7 +7857,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shell.html",
-          "hash": "xne6ObdW4e97ZI88dBeijU9lJtIhfZ4Z3WyRjW2mrdI="
+          "hash": "BEhRV18218odKjYNNWxdiRTrKbdqrMzjpFWm+HoNWAA="
         }
       },
       "is_incremental": false,
@@ -7761,7 +7905,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.BaseCommand.html",
-          "hash": "QrSb4NzG0IdSnR5ylvbgp2YqU4CVLbl52+ZKi5812Hw="
+          "hash": "F/Gx8+PxMDBIqFQbMRqMhrc8ECFo5K2TY5wHOWETeIY="
         }
       },
       "is_incremental": false,
@@ -7857,7 +8001,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandManager.html",
-          "hash": "j0z/qgWPVm+zLC4CNyN4jadrQVcHnDH/xfeqXY31h1k="
+          "hash": "lL/oFiWvq+kVsiIT8M/LDGUe7M3kiNNoVQIQD65nY30="
         }
       },
       "is_incremental": false,
@@ -7977,7 +8121,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.BaseShell.html",
-          "hash": "OhnVgZpAYfjVVkWdI/YmEsJB2HNigclOs+k43fdfLYY="
+          "hash": "CMyzHEPNX3BbZtyyaORlUA2ENVBWa7BpH4545adqmBU="
         }
       },
       "is_incremental": false,
@@ -7989,7 +8133,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.BaseShellInfo.html",
-          "hash": "6gVC3Tt5hX58R4sxtxLIknaS80k7Z9yboGW5dqTB8rg="
+          "hash": "XfSIDS/1f4gGm3AjJx2Cd8F2CJEGJJeISF5BK4Z7dyM="
         }
       },
       "is_incremental": false,
@@ -8049,7 +8193,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.ShellType.html",
-          "hash": "X/nrb3vMpZMLdVurHJzEidzydOJIW1tODp+84zob4W0="
+          "hash": "Rp/s4KGHTjlGkMqvb17h9Csh9zZ5n25krUiQL7PJ8Dc="
         }
       },
       "is_incremental": false,
@@ -9694,858 +9838,6 @@
         ".html": {
           "relative_path": "api/KS.Shell.Shells.SFTP.html",
           "hash": "fnmpWocHBdeSemT+GyoAwn6Aei60YUJu4KShIRlKEJ4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_BlacklistModCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_BlacklistModCommand.html",
-          "hash": "moFgKudcOs0yoQLLQszgCS+z7hcIYS3gnPphdhfjmcQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckLocalLinesCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckLocalLinesCommand.html",
-          "hash": "nHhU3F2jo+quiLBT/DR3PBiMbuLDitpCFlJ2DjiqHv8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckSettingsEntryVarsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckSettingsEntryVarsCommand.html",
-          "hash": "ewlkbtLX0B0GdrSRZ9DHADjt1Ck5/3d+lLoZ7ZuDaEI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckStringCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckStringCommand.html",
-          "hash": "HNmyDtDoyaG0vhuzVER6rlEz+OlvONV6yWboY7L6MrU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckStringsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_CheckStringsCommand.html",
-          "hash": "YJkZpmeD4iLwqK2eXqG/k8So7OBHWR+CvKhevseVlyA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ColorTestCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ColorTestCommand.html",
-          "hash": "lCsNT6ZAf3+CY3+CaWKNp/eRh4Gl38fNIkTniwyuW3s="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ColorTrueTestCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ColorTrueTestCommand.html",
-          "hash": "+WUCG/T8T1Toa5UbWGJiX8jTnijkRZDI8EMM8UK8gjI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ColorWheelCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ColorWheelCommand.html",
-          "hash": "wkAtgqJIX0WczYBdfQffmjh2GlIYnJXPcYUORSNVV9w="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_DCalendCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_DCalendCommand.html",
-          "hash": "Zc75mNjN3rrb6TIuINhnNSMqifdOi3QHFb+k3W60jqw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_DebugCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_DebugCommand.html",
-          "hash": "/9vhoXnqC3vmS1TOcD8+M8McP6xuEyzdrdngSfuEOYs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_GetCustomSaverSettingCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_GetCustomSaverSettingCommand.html",
-          "hash": "qZKcE8ezHpKPpYhgPx62b480QpteKWgf08Z8HCnz+MQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_GetLineStyleCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_GetLineStyleCommand.html",
-          "hash": "hhtXvTxZZj/UDE5xumRUmL/pEdcsbSxLQmFwK/Be3Pc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ListCodePagesCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ListCodePagesCommand.html",
-          "hash": "bYXpFiJGyxb6JMm/b3zCK4v4ajNZ3GtYlSHKG6acWi4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_LoadModsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_LoadModsCommand.html",
-          "hash": "FavedFDbcZIxzzUJRy2112XwldqhPPBjb/DhIC2vtQU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_LsCompilerVarsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_LsCompilerVarsCommand.html",
-          "hash": "6XivJMjQRqvUbaa/bWzbdVBxjQ5IyYiHhgcxzTEmQgc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_LsCulturesCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_LsCulturesCommand.html",
-          "hash": "jTmbUtPgcuN5eBwxoQIj4MSw+DeGP12SUMbncCi/LjU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PanicCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PanicCommand.html",
-          "hash": "MxMv58UCqQMOZycN9ZENrpdqRxDQqb19odRK+hnmb7M="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PanicFCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PanicFCommand.html",
-          "hash": "tzrHmqhAWvc/WQGlpqL+4XNfcVbaA9DQa6JHCdVihso="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PlacesCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PlacesCommand.html",
-          "hash": "mxQ98Jo/KExdEuNL/piprqZ9slVdqm3PT11HJlQj89g="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PowerLineTestCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PowerLineTestCommand.html",
-          "hash": "iGPfJm/4GfE9lmvAcV63CS2KT0fGkoPtm07PpIJfd4U="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintCommand.html",
-          "hash": "QpsDxI9ySuZW0Rgy1x/TuVAjRulDwV4QqSWjvyCa4Xw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintDCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintDCommand.html",
-          "hash": "JDfn6zsdaLI09bqYxmEHpN50lVjuN7N/O7BjV+Jfm2o="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintDFCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintDFCommand.html",
-          "hash": "CHwJbqFfCBTJ65udB2HJGoQDGiNctod8Xizq3K0hDYU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintFCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintFCommand.html",
-          "hash": "CrvHoYLhqnD/reFDwhuwsLpTyef9DDYpIfK1+gWpH+M="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintFigletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintFigletCommand.html",
-          "hash": "96AHjlZ8RVKdG3t0XwbsQjtV2piop+VCb1UU2kTh3No="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintFigletFCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintFigletFCommand.html",
-          "hash": "hBC8zPOBG8nPYW2dxCX1yA3HQKjrFCWV8cT+OEj2IT0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepColorCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepColorCommand.html",
-          "hash": "LDuHQFsaN8dZKJvB6r75rlfcPeQ9XQaSxJZyr7wAP3E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepColorFCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepColorFCommand.html",
-          "hash": "AMWN6WzMGjV3sxqVMHFYq8TPUKvMCkynTn9CWSl5UL4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepCommand.html",
-          "hash": "wxXFBrEuqTPGE5fwBvDzD6iqIBnYcTlFjzVfv8ujm+A="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepFCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_PrintSepFCommand.html",
-          "hash": "yk0GheE7dvX5W+4cS1oBaGplxvC7B2RAsTTsWJRbu24="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ProbeHwCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ProbeHwCommand.html",
-          "hash": "RDVSgneEHSDFNCykc6tfgUGUV5FYoAdpA2AXcJVRTWE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_RDebugCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_RDebugCommand.html",
-          "hash": "wx7TovqbWrGRiQUAsKIMcpkfyWt6g91WjfD/JMpTb9c="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ReloadModsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ReloadModsCommand.html",
-          "hash": "STnTDIOT78iME8MXqLfxHhhZHiUxP90Mwvxb165YFIk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SendNotCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SendNotCommand.html",
-          "hash": "TXofumVeRO1TKtwBhc+LJtv/ac4UAPvDRVrAR6p5Fp0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SendNotProgCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SendNotProgCommand.html",
-          "hash": "Kn5+cWOpfxjgG5KXDTroctls5ItsQr4FiU7n3ponXlY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SetCustomSaverSettingCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SetCustomSaverSettingCommand.html",
-          "hash": "GlPU7oAYtLAuMXkug5dxdg8uY1P7myAHVm1VlDv1o4g="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowDateCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowDateCommand.html",
-          "hash": "xbUw4hfQ5xBsLUfKd49yGO2x8no3ZMwy1VFLr1BTb1M="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowDateUtcCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowDateUtcCommand.html",
-          "hash": "4EArwhLv7fOiRJSFjTC9EpzgUK5U/eWNdgaRwXNX1dU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTDCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTDCommand.html",
-          "hash": "JcOQEc7GMMN4zuPswzakzL8wjDvPn7WNp48M/wlEVGw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTDUtcCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTDUtcCommand.html",
-          "hash": "pbvgmxL1S4TVg4QljlCCtOqKbwSWs9NrMPvNkvUokjw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTimeCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTimeCommand.html",
-          "hash": "eAe0t1E+5NZnot6JH33oy8vIxgcl+xHzee3PgW+VFUY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTimeUtcCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShowTimeUtcCommand.html",
-          "hash": "GuPyi2niI5b+/Rd+Lxc/YTZ7CVX5tiG8+W39u9tXO+c="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShutdownCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_ShutdownCommand.html",
-          "hash": "FYkTWXwKTpko0yiR92pSWyMvLyOftfFFF/1koTu54MU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SleepTookCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_SleepTookCommand.html",
-          "hash": "zcCa/FCJcRjOOugCzabwvs5sjbahCP06g/v5saXI4bc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_StartCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_StartCommand.html",
-          "hash": "2bX7afrn473Duwa54tOwAmW2arpFVC9AUHt0/nDq+xM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_StopModsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_StopModsCommand.html",
-          "hash": "K4gwY3MdSMvNQ1/LRtxeezvlP4AyRmQuGf5JUBTj75o="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestArgsCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestArgsCommand.html",
-          "hash": "Uivo6sKfKEr92+OWezuuupU5CAocCr4zQeUqDu3sE28="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestCRC32Command.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestCRC32Command.html",
-          "hash": "w6o0lmVeHyFLj6lQ1MLTffRFNXe0Vjuao6jSNWyGUco="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestDictWriterCharCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestDictWriterCharCommand.html",
-          "hash": "j58imv5I/qoP/gEuaxtz6om4LPDUBAQPhKbqFizgD3E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestDictWriterIntCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestDictWriterIntCommand.html",
-          "hash": "Ca8mgpEDp3HLOa+UPECTGSoa19Oxb9SRzlAMkt6D0J4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestDictWriterStrCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestDictWriterStrCommand.html",
-          "hash": "UVkTnEMNGHI6Z4dXGedSQ+IBSg6CqkjPOBFBIxJw/Nw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestEventCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestEventCommand.html",
-          "hash": "u4FJXkxRIl7YT4FJLUB4hlb3oXLPlTXKcIdIJ+U+c00="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestExecuteAsmCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestExecuteAsmCommand.html",
-          "hash": "Zzo1RwKeNWXbJY0ERtNvQ03oWqSaJ/LgBrOUhXX7NJ4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestListWriterCharCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestListWriterCharCommand.html",
-          "hash": "HJDAm6Eos4f9tPWmCrwqLPs6zB7JiwZR+5ApEWE6oxA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestListWriterIntCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestListWriterIntCommand.html",
-          "hash": "wKvzzXJ45R3PVx7HOt+it5GFU/8yIs3qOl49y70pciw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestListWriterStrCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestListWriterStrCommand.html",
-          "hash": "xghdHNKU/MyiTPwGylA0Nx+6P9CG/9TY5IkEE5+VUFQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestMD5Command.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestMD5Command.html",
-          "hash": "RAcR7ccl8w6q5Oueh+f3fR4vw/8m7CRlXDUgDpehpO0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestRegExpCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestRegExpCommand.html",
-          "hash": "3gxC1qfeU6tyPLzUKZUCSRDrzKpCzee4h66aMDkQvwg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA1Command.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA1Command.html",
-          "hash": "M4fXnjZZpv/DM2JDsDuJzhj254rmX9HQLvXu1webZD4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA256Command.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA256Command.html",
-          "hash": "3cqLsBKCpnK4ymAPotjJCR6FqLgPGCq0cVhv7FDJ3l0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA384Command.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA384Command.html",
-          "hash": "XUvc8zdQkdnHWKXHn24yHbiuxM9No32qObcJ9FD8fHY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA512Command.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSHA512Command.html",
-          "hash": "cLYJvdd9r+7YkZK7JSejHrl4extcP1UTFjwYUhe5G9I="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSwitchesCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestSwitchesCommand.html",
-          "hash": "bHD1bb+jO1gr25mcn3cZbkGSL9Le/T06ad4MfZAEyAE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestTableCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TestTableCommand.html",
-          "hash": "PFyIRUx1khAyYvPhMl+QQFP6fLwkJS+HQEoQ/Hn+rGM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TranslateCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_TranslateCommand.html",
-          "hash": "e9+5UlKGrIJvUyyvq00H5JraL7KLW6dph1cNI/rq3HE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.Test_UnblacklistModCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.Test_UnblacklistModCommand.html",
-          "hash": "yBhcFKwFdNs8bV23QEctLAfv7Lvjh1awYYrc84Kk6v8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.Commands.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.Commands.html",
-          "hash": "MHnqIyO0KvsCqR+C5YVS3QiKVO3b+Ud5dt/40JTEewg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.TestShell.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.TestShell.html",
-          "hash": "6P9qvX6ha3p3nd07GJ6EGoqqlIvYgbuPLBfWYlDU2NU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.TestShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.TestShellCommon.html",
-          "hash": "8E0SF8kS39CjGSvagaLOC73TA+IJJZUvImKWBGjwMg0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.TestShellInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.TestShellInfo.html",
-          "hash": "aUZEr/e8RGqawTuN5uNDquT6YRBMAmqN5XSTyAylrs0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Test.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Test.html",
-          "hash": "OcLoNs3tcXVdwQV7COg0xKdbxBnB/yU7FqYjFrQ9jYs="
         }
       },
       "is_incremental": false,
@@ -12516,7 +11808,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "hyNZf8ySz7pcenPIrCD98eewfzS2h9OUCwcvhfEQL0g="
+          "hash": "9MnUDbJ+JhJziflARf4NHFs9pA91xZl2Pqq5iPu5aIo="
         }
       },
       "is_incremental": false,
@@ -15577,7 +14869,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1041,
+          "total_file_count": 982,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
