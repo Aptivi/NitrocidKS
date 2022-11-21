@@ -30339,6 +30339,12 @@ references:
   commentId: F:KS.Misc.Settings.SettingsKeyType.SList
   fullName: KS.Misc.Settings.SettingsKeyType.SList
   nameWithType: SettingsKeyType.SList
+- uid: KS.Misc.Settings.SettingsKeyType.SPreset
+  name: SPreset
+  href: api/KS.Misc.Settings.SettingsKeyType.html#KS_Misc_Settings_SettingsKeyType_SPreset
+  commentId: F:KS.Misc.Settings.SettingsKeyType.SPreset
+  fullName: KS.Misc.Settings.SettingsKeyType.SPreset
+  nameWithType: SettingsKeyType.SPreset
 - uid: KS.Misc.Settings.SettingsKeyType.SSelection
   name: SSelection
   href: api/KS.Misc.Settings.SettingsKeyType.html#KS_Misc_Settings_SettingsKeyType_SSelection
@@ -45106,6 +45112,18 @@ references:
   commentId: M:KS.Shell.Prompts.PromptPresetManager.PromptForPresets
   fullName: KS.Shell.Prompts.PromptPresetManager.PromptForPresets()
   nameWithType: PromptPresetManager.PromptForPresets()
+- uid: KS.Shell.Prompts.PromptPresetManager.PromptForPresets(KS.Shell.ShellBase.Shells.ShellType)
+  name: PromptForPresets(ShellType)
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_PromptForPresets_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.PromptForPresets(KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.Prompts.PromptPresetManager.PromptForPresets(KS.Shell.ShellBase.Shells.ShellType)
+  nameWithType: PromptPresetManager.PromptForPresets(ShellType)
+- uid: KS.Shell.Prompts.PromptPresetManager.PromptForPresets(System.String)
+  name: PromptForPresets(String)
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_PromptForPresets_System_String_
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.PromptForPresets(System.String)
+  fullName: KS.Shell.Prompts.PromptPresetManager.PromptForPresets(System.String)
+  nameWithType: PromptPresetManager.PromptForPresets(String)
 - uid: KS.Shell.Prompts.PromptPresetManager.PromptForPresets*
   name: PromptForPresets
   href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_PromptForPresets_
