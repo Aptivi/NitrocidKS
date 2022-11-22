@@ -1281,7 +1281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Config.html",
-          "hash": "d1eiiHIRtYW5PvepkWQB/PpIe/fs1YVsc7o192JZsUM="
+          "hash": "YygkdNHtPqAuzda/Mkjn/rTsYmZOxmBGPUpAcr0l//Y="
         }
       },
       "is_incremental": false,
@@ -2765,6 +2765,102 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.BSOD.BSOD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.BSOD.BSOD.html",
+          "hash": "DwI5TdogSuWaZf9KH3ThuKDzt+Ip7saF1a+v/xsFinM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.BSOD.BSODSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.BSOD.BSODSettings.html",
+          "hash": "oLAN4zuUb01WfaeSPN8j6zxUyppy8y0yYO85RH8V9Kw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.BSOD.Simulations.BaseBSOD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.BaseBSOD.html",
+          "hash": "pMZBIBKHPdqAHsJnTqgC5aCXx+CXvKQIjx7BFL6QVGQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.BSOD.Simulations.WindowsXP.BugCheckCodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.WindowsXP.BugCheckCodes.html",
+          "hash": "P5ZiV2pJk/pP6Uo6Q5Xlc88sWo1pvz11PjPhT8NNHzc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.BSOD.Simulations.WindowsXP.BugCheckParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.WindowsXP.BugCheckParams.html",
+          "hash": "20aP9HoiClQfueMp5TtyIHmzMBtiyb1E2BywThH4+No="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.BSOD.Simulations.WindowsXP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.WindowsXP.html",
+          "hash": "arJywRMBjpSEHOWmGOrGfgwvH72kE+5Jzno9S92VaUc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.BSOD.Simulations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.html",
+          "hash": "A1rLCNRpkMmUhX2SU2MQGlvUMWacdGJF4uhYJteASBw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.BSOD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.BSOD.html",
+          "hash": "SSPty+dvjXEonx61nLu8uXCOd99mqTUaN26bshF28nY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Animations.BeatEdgePulse.BeatEdgePulse.yml",
       "output": {
         ".html": {
@@ -3657,7 +3753,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.BaseScreensaver.html",
-          "hash": "z32iFoULtxajKBxwkYtoCP2m2oZH0xSzUbP8+WSkZBI="
+          "hash": "vplOFjrmWIedHeC9q1PSfZG+20hRgbUqzZu37BfO44I="
         }
       },
       "is_incremental": false,
@@ -3706,6 +3802,30 @@
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Customized.html",
           "hash": "oi+yC5Jfv5hRCOHGZeH60TcnYacw9+Lc9IxKPaSCH6c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.BSODDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.BSODDisplay.html",
+          "hash": "ZiLikiG6y7D/aDL94gYeU05amzoJQwi5mjLBGU3XJSE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.BSODSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.BSODSettings.html",
+          "hash": "aaU06Gpw0vGThBhLdOnKKrsUJm9ssSIS0xDCLDmDlu8="
         }
       },
       "is_incremental": false,
@@ -4953,7 +5073,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.html",
-          "hash": "QKEpphgX1MZsJHOJ0JUBG04BSG9UkE8viG7gAxvIrf4="
+          "hash": "jAS21FwTbJe3NNaOZPm6yAIuXjuy2MfJB8H8kp6rGVI="
         }
       },
       "is_incremental": false,
@@ -4977,7 +5097,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Screensaver.html",
-          "hash": "ODwtS80KHHZDakYI01331PbYR1Vpas3I2mjHOfAwPa0="
+          "hash": "w9BN7eVMj+V0Q+09UoceLpVSSdrJiWb1t3pCdXkGfa8="
         }
       },
       "is_incremental": false,
@@ -11808,7 +11928,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "9MnUDbJ+JhJziflARf4NHFs9pA91xZl2Pqq5iPu5aIo="
+          "hash": "wLH1/z55UcouCB2xZum1o+YnH6XwKhCTigpB2vRCi14="
         }
       },
       "is_incremental": false,
@@ -14869,7 +14989,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 982,
+          "total_file_count": 992,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
