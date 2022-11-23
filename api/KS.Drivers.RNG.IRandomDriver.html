@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RandomDriver
+    <title>Interface IRandomDriver
    | Kernel Simulator API - Aptivi </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RandomDriver
+    <meta name="title" content="Interface IRandomDriver
    | Kernel Simulator API - Aptivi ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -78,42 +78,46 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="KS.Drivers.RNG.RandomDriver">
+            <article class="content wrap" id="_content" data-uid="KS.Drivers.RNG.IRandomDriver">
   
   
-  <h1 id="KS_Drivers_RNG_RandomDriver" data-uid="KS.Drivers.RNG.RandomDriver" class="text-break">Class RandomDriver
+  <h1 id="KS_Drivers_RNG_IRandomDriver" data-uid="KS.Drivers.RNG.IRandomDriver" class="text-break">Interface IRandomDriver
   </h1>
-  <div class="markdown level0 summary"><p>Random driver module</p>
+  <div class="markdown level0 summary"><p>Random driver interface for drivers</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">RandomDriver</span></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="KS.Drivers.IDriver.html#KS_Drivers_IDriver_DriverName">IDriver.DriverName</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Drivers.IDriver.html#KS_Drivers_IDriver_DriverType">IDriver.DriverType</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Drivers.RNG.html">KS.Drivers.RNG</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
-  <h5 id="KS_Drivers_RNG_RandomDriver_syntax">Syntax</h5>
+  <h5 id="KS_Drivers_RNG_IRandomDriver_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class RandomDriver</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IRandomDriver : IDriver</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_RandomDriver_Random.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.RandomDriver.Random%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_IRandomDriver_Random.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.IRandomDriver.Random%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/RandomDriver.cs/#L29">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/IRandomDriver.cs/#L29">View Source</a>
   </span>
-  <a id="KS_Drivers_RNG_RandomDriver_Random_" data-uid="KS.Drivers.RNG.RandomDriver.Random*"></a>
-  <h4 id="KS_Drivers_RNG_RandomDriver_Random" data-uid="KS.Drivers.RNG.RandomDriver.Random">Random()</h4>
+  <a id="KS_Drivers_RNG_IRandomDriver_Random_" data-uid="KS.Drivers.RNG.IRandomDriver.Random*"></a>
+  <h4 id="KS_Drivers_RNG_IRandomDriver_Random" data-uid="KS.Drivers.RNG.IRandomDriver.Random">Random()</h4>
   <div class="markdown level1 summary"><p>Gets a random number from 0 to <span class="xref">System.Int32.MaxValue</span></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int Random()</code></pre>
+    <pre><code class="lang-csharp hljs">int Random()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -132,19 +136,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_RandomDriver_Random_System_Int32_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.RandomDriver.Random(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_IRandomDriver_Random_System_Int32_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.IRandomDriver.Random(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/RandomDriver.cs/#L35">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/IRandomDriver.cs/#L35">View Source</a>
   </span>
-  <a id="KS_Drivers_RNG_RandomDriver_Random_" data-uid="KS.Drivers.RNG.RandomDriver.Random*"></a>
-  <h4 id="KS_Drivers_RNG_RandomDriver_Random_System_Int32_" data-uid="KS.Drivers.RNG.RandomDriver.Random(System.Int32)">Random(Int32)</h4>
+  <a id="KS_Drivers_RNG_IRandomDriver_Random_" data-uid="KS.Drivers.RNG.IRandomDriver.Random*"></a>
+  <h4 id="KS_Drivers_RNG_IRandomDriver_Random_System_Int32_" data-uid="KS.Drivers.RNG.IRandomDriver.Random(System.Int32)">Random(Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a random number from 0 to <code data-dev-comment-type="paramref" class="paramref">max</code></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int Random(int max)</code></pre>
+    <pre><code class="lang-csharp hljs">int Random(int max)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -181,19 +185,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_RandomDriver_Random_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.RandomDriver.Random(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_IRandomDriver_Random_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.IRandomDriver.Random(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/RandomDriver.cs/#L42">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/IRandomDriver.cs/#L42">View Source</a>
   </span>
-  <a id="KS_Drivers_RNG_RandomDriver_Random_" data-uid="KS.Drivers.RNG.RandomDriver.Random*"></a>
-  <h4 id="KS_Drivers_RNG_RandomDriver_Random_System_Int32_System_Int32_" data-uid="KS.Drivers.RNG.RandomDriver.Random(System.Int32,System.Int32)">Random(Int32, Int32)</h4>
+  <a id="KS_Drivers_RNG_IRandomDriver_Random_" data-uid="KS.Drivers.RNG.IRandomDriver.Random*"></a>
+  <h4 id="KS_Drivers_RNG_IRandomDriver_Random_System_Int32_System_Int32_" data-uid="KS.Drivers.RNG.IRandomDriver.Random(System.Int32,System.Int32)">Random(Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a random number from <code data-dev-comment-type="paramref" class="paramref">min</code> to <code data-dev-comment-type="paramref" class="paramref">max</code></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int Random(int min, int max)</code></pre>
+    <pre><code class="lang-csharp hljs">int Random(int min, int max)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -236,19 +240,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_RandomDriver_RandomChance_System_Double_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.RandomDriver.RandomChance(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_IRandomDriver_RandomChance_System_Double_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.IRandomDriver.RandomChance(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/RandomDriver.cs/#L95">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/IRandomDriver.cs/#L95">View Source</a>
   </span>
-  <a id="KS_Drivers_RNG_RandomDriver_RandomChance_" data-uid="KS.Drivers.RNG.RandomDriver.RandomChance*"></a>
-  <h4 id="KS_Drivers_RNG_RandomDriver_RandomChance_System_Double_" data-uid="KS.Drivers.RNG.RandomDriver.RandomChance(System.Double)">RandomChance(Double)</h4>
+  <a id="KS_Drivers_RNG_IRandomDriver_RandomChance_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomChance*"></a>
+  <h4 id="KS_Drivers_RNG_IRandomDriver_RandomChance_System_Double_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomChance(System.Double)">RandomChance(Double)</h4>
   <div class="markdown level1 summary"><p>Gets a random chance from the probability by raw value</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RandomChance(double prob)</code></pre>
+    <pre><code class="lang-csharp hljs">bool RandomChance(double prob)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -285,19 +289,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_RandomDriver_RandomChance_System_Int32_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.RandomDriver.RandomChance(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_IRandomDriver_RandomChance_System_Int32_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.IRandomDriver.RandomChance(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/RandomDriver.cs/#L102">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/IRandomDriver.cs/#L103">View Source</a>
   </span>
-  <a id="KS_Drivers_RNG_RandomDriver_RandomChance_" data-uid="KS.Drivers.RNG.RandomDriver.RandomChance*"></a>
-  <h4 id="KS_Drivers_RNG_RandomDriver_RandomChance_System_Int32_" data-uid="KS.Drivers.RNG.RandomDriver.RandomChance(System.Int32)">RandomChance(Int32)</h4>
+  <a id="KS_Drivers_RNG_IRandomDriver_RandomChance_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomChance*"></a>
+  <h4 id="KS_Drivers_RNG_IRandomDriver_RandomChance_System_Int32_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomChance(System.Int32)">RandomChance(Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a random chance from the probability by percentage</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RandomChance(int probPercent)</code></pre>
+    <pre><code class="lang-csharp hljs">bool RandomChance(int probPercent)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -332,24 +336,25 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="KS_Drivers_RNG_RandomDriver_RandomChance_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If the specified probability by percent is larger than 100% or smaller than 0%, then the probability by percentage will be set to a random value from 0% to 100%</p>
+  <h5 id="KS_Drivers_RNG_IRandomDriver_RandomChance_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the specified probability by percent is larger than 100% or smaller than 0%, then the probability by percentage
+will be set to a random value from 0% to 100%, depending on the driver implementation.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_RandomDriver_RandomDouble.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.RandomDriver.RandomDouble%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_IRandomDriver_RandomDouble.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.IRandomDriver.RandomDouble%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/RandomDriver.cs/#L83">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/IRandomDriver.cs/#L83">View Source</a>
   </span>
-  <a id="KS_Drivers_RNG_RandomDriver_RandomDouble_" data-uid="KS.Drivers.RNG.RandomDriver.RandomDouble*"></a>
-  <h4 id="KS_Drivers_RNG_RandomDriver_RandomDouble" data-uid="KS.Drivers.RNG.RandomDriver.RandomDouble">RandomDouble()</h4>
+  <a id="KS_Drivers_RNG_IRandomDriver_RandomDouble_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomDouble*"></a>
+  <h4 id="KS_Drivers_RNG_IRandomDriver_RandomDouble" data-uid="KS.Drivers.RNG.IRandomDriver.RandomDouble">RandomDouble()</h4>
   <div class="markdown level1 summary"><p>Gets a random double-precision number from 0 to less than 1.0</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double RandomDouble()</code></pre>
+    <pre><code class="lang-csharp hljs">double RandomDouble()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -368,19 +373,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_RandomDriver_RandomDouble_System_Double_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.RandomDriver.RandomDouble(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_IRandomDriver_RandomDouble_System_Double_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.IRandomDriver.RandomDouble(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/RandomDriver.cs/#L89">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/IRandomDriver.cs/#L89">View Source</a>
   </span>
-  <a id="KS_Drivers_RNG_RandomDriver_RandomDouble_" data-uid="KS.Drivers.RNG.RandomDriver.RandomDouble*"></a>
-  <h4 id="KS_Drivers_RNG_RandomDriver_RandomDouble_System_Double_" data-uid="KS.Drivers.RNG.RandomDriver.RandomDouble(System.Double)">RandomDouble(Double)</h4>
+  <a id="KS_Drivers_RNG_IRandomDriver_RandomDouble_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomDouble*"></a>
+  <h4 id="KS_Drivers_RNG_IRandomDriver_RandomDouble_System_Double_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomDouble(System.Double)">RandomDouble(Double)</h4>
   <div class="markdown level1 summary"><p>Gets a random double-precision number from 0 to less than <code data-dev-comment-type="paramref" class="paramref">max</code></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double RandomDouble(double max)</code></pre>
+    <pre><code class="lang-csharp hljs">double RandomDouble(double max)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -417,19 +422,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_RandomDriver_RandomIdx.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.RandomDriver.RandomIdx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_IRandomDriver_RandomIdx.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.IRandomDriver.RandomIdx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/RandomDriver.cs/#L65">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/IRandomDriver.cs/#L65">View Source</a>
   </span>
-  <a id="KS_Drivers_RNG_RandomDriver_RandomIdx_" data-uid="KS.Drivers.RNG.RandomDriver.RandomIdx*"></a>
-  <h4 id="KS_Drivers_RNG_RandomDriver_RandomIdx" data-uid="KS.Drivers.RNG.RandomDriver.RandomIdx">RandomIdx()</h4>
+  <a id="KS_Drivers_RNG_IRandomDriver_RandomIdx_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomIdx*"></a>
+  <h4 id="KS_Drivers_RNG_IRandomDriver_RandomIdx" data-uid="KS.Drivers.RNG.IRandomDriver.RandomIdx">RandomIdx()</h4>
   <div class="markdown level1 summary"><p>Gets a random index number from 0 to <span class="xref">System.Int32.MaxValue</span> - 1</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RandomIdx()</code></pre>
+    <pre><code class="lang-csharp hljs">int RandomIdx()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -448,19 +453,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_RandomDriver_RandomIdx_System_Int32_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.RandomDriver.RandomIdx(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_IRandomDriver_RandomIdx_System_Int32_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.IRandomDriver.RandomIdx(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/RandomDriver.cs/#L71">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/IRandomDriver.cs/#L71">View Source</a>
   </span>
-  <a id="KS_Drivers_RNG_RandomDriver_RandomIdx_" data-uid="KS.Drivers.RNG.RandomDriver.RandomIdx*"></a>
-  <h4 id="KS_Drivers_RNG_RandomDriver_RandomIdx_System_Int32_" data-uid="KS.Drivers.RNG.RandomDriver.RandomIdx(System.Int32)">RandomIdx(Int32)</h4>
+  <a id="KS_Drivers_RNG_IRandomDriver_RandomIdx_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomIdx*"></a>
+  <h4 id="KS_Drivers_RNG_IRandomDriver_RandomIdx_System_Int32_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomIdx(System.Int32)">RandomIdx(Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a random index number from 0 to <code data-dev-comment-type="paramref" class="paramref">max</code> - 1</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RandomIdx(int max)</code></pre>
+    <pre><code class="lang-csharp hljs">int RandomIdx(int max)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -497,19 +502,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_RandomDriver_RandomIdx_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.RandomDriver.RandomIdx(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_IRandomDriver_RandomIdx_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.IRandomDriver.RandomIdx(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/RandomDriver.cs/#L78">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/IRandomDriver.cs/#L78">View Source</a>
   </span>
-  <a id="KS_Drivers_RNG_RandomDriver_RandomIdx_" data-uid="KS.Drivers.RNG.RandomDriver.RandomIdx*"></a>
-  <h4 id="KS_Drivers_RNG_RandomDriver_RandomIdx_System_Int32_System_Int32_" data-uid="KS.Drivers.RNG.RandomDriver.RandomIdx(System.Int32,System.Int32)">RandomIdx(Int32, Int32)</h4>
+  <a id="KS_Drivers_RNG_IRandomDriver_RandomIdx_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomIdx*"></a>
+  <h4 id="KS_Drivers_RNG_IRandomDriver_RandomIdx_System_Int32_System_Int32_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomIdx(System.Int32,System.Int32)">RandomIdx(Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a random index number from <code data-dev-comment-type="paramref" class="paramref">min</code> to <code data-dev-comment-type="paramref" class="paramref">max</code> - 1</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RandomIdx(int min, int max)</code></pre>
+    <pre><code class="lang-csharp hljs">int RandomIdx(int min, int max)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -552,19 +557,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_RandomDriver_RandomRussianRoulette.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.RandomDriver.RandomRussianRoulette%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_IRandomDriver_RandomRussianRoulette.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.IRandomDriver.RandomRussianRoulette%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/RandomDriver.cs/#L108">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/IRandomDriver.cs/#L109">View Source</a>
   </span>
-  <a id="KS_Drivers_RNG_RandomDriver_RandomRussianRoulette_" data-uid="KS.Drivers.RNG.RandomDriver.RandomRussianRoulette*"></a>
-  <h4 id="KS_Drivers_RNG_RandomDriver_RandomRussianRoulette" data-uid="KS.Drivers.RNG.RandomDriver.RandomRussianRoulette">RandomRussianRoulette()</h4>
+  <a id="KS_Drivers_RNG_IRandomDriver_RandomRussianRoulette_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomRussianRoulette*"></a>
+  <h4 id="KS_Drivers_RNG_IRandomDriver_RandomRussianRoulette" data-uid="KS.Drivers.RNG.IRandomDriver.RandomRussianRoulette">RandomRussianRoulette()</h4>
   <div class="markdown level1 summary"><p>Random Russian Roulette!</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RandomRussianRoulette()</code></pre>
+    <pre><code class="lang-csharp hljs">bool RandomRussianRoulette()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -584,19 +589,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_RandomDriver_RandomShort.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.RandomDriver.RandomShort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_IRandomDriver_RandomShort.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.IRandomDriver.RandomShort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/RandomDriver.cs/#L47">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/IRandomDriver.cs/#L47">View Source</a>
   </span>
-  <a id="KS_Drivers_RNG_RandomDriver_RandomShort_" data-uid="KS.Drivers.RNG.RandomDriver.RandomShort*"></a>
-  <h4 id="KS_Drivers_RNG_RandomDriver_RandomShort" data-uid="KS.Drivers.RNG.RandomDriver.RandomShort">RandomShort()</h4>
+  <a id="KS_Drivers_RNG_IRandomDriver_RandomShort_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomShort*"></a>
+  <h4 id="KS_Drivers_RNG_IRandomDriver_RandomShort" data-uid="KS.Drivers.RNG.IRandomDriver.RandomShort">RandomShort()</h4>
   <div class="markdown level1 summary"><p>Gets a random number from 0 to <span class="xref">System.Int16.MaxValue</span></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static short RandomShort()</code></pre>
+    <pre><code class="lang-csharp hljs">short RandomShort()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -615,19 +620,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_RandomDriver_RandomShort_System_Int16_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.RandomDriver.RandomShort(System.Int16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_IRandomDriver_RandomShort_System_Int16_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.IRandomDriver.RandomShort(System.Int16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/RandomDriver.cs/#L53">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/IRandomDriver.cs/#L53">View Source</a>
   </span>
-  <a id="KS_Drivers_RNG_RandomDriver_RandomShort_" data-uid="KS.Drivers.RNG.RandomDriver.RandomShort*"></a>
-  <h4 id="KS_Drivers_RNG_RandomDriver_RandomShort_System_Int16_" data-uid="KS.Drivers.RNG.RandomDriver.RandomShort(System.Int16)">RandomShort(Int16)</h4>
+  <a id="KS_Drivers_RNG_IRandomDriver_RandomShort_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomShort*"></a>
+  <h4 id="KS_Drivers_RNG_IRandomDriver_RandomShort_System_Int16_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomShort(System.Int16)">RandomShort(Int16)</h4>
   <div class="markdown level1 summary"><p>Gets a random number from 0 to <code data-dev-comment-type="paramref" class="paramref">max</code></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static short RandomShort(short max)</code></pre>
+    <pre><code class="lang-csharp hljs">short RandomShort(short max)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -664,19 +669,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_RandomDriver_RandomShort_System_Int16_System_Int16_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.RandomDriver.RandomShort(System.Int16%2CSystem.Int16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_IRandomDriver_RandomShort_System_Int16_System_Int16_.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.IRandomDriver.RandomShort(System.Int16%2CSystem.Int16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/RandomDriver.cs/#L60">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/IRandomDriver.cs/#L60">View Source</a>
   </span>
-  <a id="KS_Drivers_RNG_RandomDriver_RandomShort_" data-uid="KS.Drivers.RNG.RandomDriver.RandomShort*"></a>
-  <h4 id="KS_Drivers_RNG_RandomDriver_RandomShort_System_Int16_System_Int16_" data-uid="KS.Drivers.RNG.RandomDriver.RandomShort(System.Int16,System.Int16)">RandomShort(Int16, Int16)</h4>
+  <a id="KS_Drivers_RNG_IRandomDriver_RandomShort_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomShort*"></a>
+  <h4 id="KS_Drivers_RNG_IRandomDriver_RandomShort_System_Int16_System_Int16_" data-uid="KS.Drivers.RNG.IRandomDriver.RandomShort(System.Int16,System.Int16)">RandomShort(Int16, Int16)</h4>
   <div class="markdown level1 summary"><p>Gets a random number from <code data-dev-comment-type="paramref" class="paramref">min</code> to <code data-dev-comment-type="paramref" class="paramref">max</code></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static short RandomShort(short min, short max)</code></pre>
+    <pre><code class="lang-csharp hljs">short RandomShort(short min, short max)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -725,10 +730,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_RandomDriver.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.RandomDriver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_RNG_IRandomDriver.md&amp;value=---%0Auid%3A%20KS.Drivers.RNG.IRandomDriver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/RandomDriver.cs/#L24" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/RNG/IRandomDriver.cs/#L24" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
