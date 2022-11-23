@@ -1997,6 +1997,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.html",
+          "hash": "eutLbt22cPM0K3AZBR/ZTwIF8okWUWknQc6FaiYt+Q4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ProbeHardware.yml",
       "output": {
         ".html": {
@@ -2409,7 +2421,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.html",
-          "hash": "curlzrVaQ86AY4coLsQBuB8E6+FIv0TcGQTABoORI8s="
+          "hash": "+DN0N8mXLhkc3T21g3h7eNH97Ir0Um3Au2rwg4Oo1S0="
         }
       },
       "is_incremental": false,
@@ -2421,7 +2433,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.TestFacade.html",
-          "hash": "I5g5O8rfUsVYpexUIQUOJF0xB/N2kOgsd0Vz/PyCRmU="
+          "hash": "Go7/EjJJfr/oUvYORuWbkCawfYj8JV5EEdGFemKU+w4="
         }
       },
       "is_incremental": false,
@@ -2433,7 +2445,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.TestInteractive.html",
-          "hash": "GWjC5y4T4V1Mvw+b2rdLmkzl29yJv0hnBQ6Kr7+QTKM="
+          "hash": "Eh+3zzstLb1TeC9BXH7TV+b7xAhlPuKEOpwQAcugg8Y="
         }
       },
       "is_incremental": false,
@@ -12000,7 +12012,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "m1fIklS8luPWtF4UgzPgmDaJL0So4AiHv2KfVl6rWDI="
+          "hash": "U7TVs3epYHXhsUEqXn0wLkndqidD5d4Qr0Mn/EK1Dmw="
         }
       },
       "is_incremental": false,
@@ -15061,7 +15073,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 998,
+          "total_file_count": 999,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

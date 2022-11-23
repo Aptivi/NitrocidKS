@@ -8280,6 +8280,38 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Debugging.Testing.Facades.PrintSepF.TestName
   nameWithType: PrintSepF.TestName
+- uid: KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines
+  name: PrintWithNewLines
+  href: api/KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.html
+  commentId: T:KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines
+  fullName: KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines
+  nameWithType: PrintWithNewLines
+- uid: KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.Run
+  name: Run()
+  href: api/KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.html#KS_Kernel_Debugging_Testing_Facades_PrintWithNewLines_Run
+  commentId: M:KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.Run
+  fullName: KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.Run()
+  nameWithType: PrintWithNewLines.Run()
+- uid: KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.Run*
+  name: Run
+  href: api/KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.html#KS_Kernel_Debugging_Testing_Facades_PrintWithNewLines_Run_
+  commentId: Overload:KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.Run
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.Run
+  nameWithType: PrintWithNewLines.Run
+- uid: KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.TestName
+  name: TestName
+  href: api/KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.html#KS_Kernel_Debugging_Testing_Facades_PrintWithNewLines_TestName
+  commentId: P:KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.TestName
+  fullName: KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.TestName
+  nameWithType: PrintWithNewLines.TestName
+- uid: KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.TestName*
+  name: TestName
+  href: api/KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.html#KS_Kernel_Debugging_Testing_Facades_PrintWithNewLines_TestName_
+  commentId: Overload:KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.TestName
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.TestName
+  nameWithType: PrintWithNewLines.TestName
 - uid: KS.Kernel.Debugging.Testing.Facades.ProbeHardware
   name: ProbeHardware
   href: api/KS.Kernel.Debugging.Testing.Facades.ProbeHardware.html
