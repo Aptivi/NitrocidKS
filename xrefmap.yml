@@ -2414,12 +2414,629 @@ references:
   commentId: N:KS.Drivers
   fullName: KS.Drivers
   nameWithType: KS.Drivers
+- uid: KS.Drivers.Console
+  name: KS.Drivers.Console
+  href: api/KS.Drivers.Console.html
+  commentId: N:KS.Drivers.Console
+  fullName: KS.Drivers.Console
+  nameWithType: KS.Drivers.Console
+- uid: KS.Drivers.Console.Consoles
+  name: KS.Drivers.Console.Consoles
+  href: api/KS.Drivers.Console.Consoles.html
+  commentId: N:KS.Drivers.Console.Consoles
+  fullName: KS.Drivers.Console.Consoles
+  nameWithType: KS.Drivers.Console.Consoles
+- uid: KS.Drivers.Console.Consoles.File
+  name: File
+  href: api/KS.Drivers.Console.Consoles.File.html
+  commentId: T:KS.Drivers.Console.Consoles.File
+  fullName: KS.Drivers.Console.Consoles.File
+  nameWithType: File
+- uid: KS.Drivers.Console.Consoles.File.DriverName
+  name: DriverName
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_DriverName
+  commentId: P:KS.Drivers.Console.Consoles.File.DriverName
+  fullName: KS.Drivers.Console.Consoles.File.DriverName
+  nameWithType: File.DriverName
+- uid: KS.Drivers.Console.Consoles.File.DriverName*
+  name: DriverName
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_DriverName_
+  commentId: Overload:KS.Drivers.Console.Consoles.File.DriverName
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.File.DriverName
+  nameWithType: File.DriverName
+- uid: KS.Drivers.Console.Consoles.File.DriverType
+  name: DriverType
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_DriverType
+  commentId: P:KS.Drivers.Console.Consoles.File.DriverType
+  fullName: KS.Drivers.Console.Consoles.File.DriverType
+  nameWithType: File.DriverType
+- uid: KS.Drivers.Console.Consoles.File.DriverType*
+  name: DriverType
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_DriverType_
+  commentId: Overload:KS.Drivers.Console.Consoles.File.DriverType
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.File.DriverType
+  nameWithType: File.DriverType
+- uid: KS.Drivers.Console.Consoles.File.FilterVT
+  name: FilterVT
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_FilterVT
+  commentId: P:KS.Drivers.Console.Consoles.File.FilterVT
+  fullName: KS.Drivers.Console.Consoles.File.FilterVT
+  nameWithType: File.FilterVT
+- uid: KS.Drivers.Console.Consoles.File.FilterVT*
+  name: FilterVT
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_FilterVT_
+  commentId: Overload:KS.Drivers.Console.Consoles.File.FilterVT
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.File.FilterVT
+  nameWithType: File.FilterVT
+- uid: KS.Drivers.Console.Consoles.File.PathToWrite
+  name: PathToWrite
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_PathToWrite
+  commentId: P:KS.Drivers.Console.Consoles.File.PathToWrite
+  fullName: KS.Drivers.Console.Consoles.File.PathToWrite
+  nameWithType: File.PathToWrite
+- uid: KS.Drivers.Console.Consoles.File.PathToWrite*
+  name: PathToWrite
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_PathToWrite_
+  commentId: Overload:KS.Drivers.Console.Consoles.File.PathToWrite
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.File.PathToWrite
+  nameWithType: File.PathToWrite
+- uid: KS.Drivers.Console.Consoles.File.WritePlain
+  name: WritePlain()
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_WritePlain
+  commentId: M:KS.Drivers.Console.Consoles.File.WritePlain
+  fullName: KS.Drivers.Console.Consoles.File.WritePlain()
+  nameWithType: File.WritePlain()
+- uid: KS.Drivers.Console.Consoles.File.WritePlain(System.String,System.Boolean,System.Object[])
+  name: WritePlain(String, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_WritePlain_System_String_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.File.WritePlain(System.String,System.Boolean,System.Object[])
+  name.vb: WritePlain(String, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.File.WritePlain(System.String, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.File.WritePlain(System.String, System.Boolean, System.Object())
+  nameWithType: File.WritePlain(String, Boolean, Object[])
+  nameWithType.vb: File.WritePlain(String, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.File.WritePlain*
+  name: WritePlain
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_WritePlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.File.WritePlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.File.WritePlain
+  nameWithType: File.WritePlain
+- uid: KS.Drivers.Console.Consoles.File.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
+  name: WriteSlowlyPlain(String, Boolean, Double, Object[])
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.File.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
+  name.vb: WriteSlowlyPlain(String, Boolean, Double, Object())
+  fullName: KS.Drivers.Console.Consoles.File.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.File.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object())
+  nameWithType: File.WriteSlowlyPlain(String, Boolean, Double, Object[])
+  nameWithType.vb: File.WriteSlowlyPlain(String, Boolean, Double, Object())
+- uid: KS.Drivers.Console.Consoles.File.WriteSlowlyPlain*
+  name: WriteSlowlyPlain
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_WriteSlowlyPlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.File.WriteSlowlyPlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.File.WriteSlowlyPlain
+  nameWithType: File.WriteSlowlyPlain
+- uid: KS.Drivers.Console.Consoles.File.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.File.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
+  fullName: KS.Drivers.Console.Consoles.File.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.File.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object())
+  nameWithType: File.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
+  nameWithType.vb: File.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
+- uid: KS.Drivers.Console.Consoles.File.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.File.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.File.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.File.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object())
+  nameWithType: File.WriteWherePlain(String, Int32, Int32, Boolean, Object[])
+  nameWithType.vb: File.WriteWherePlain(String, Int32, Int32, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.File.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Object[])
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.File.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Object())
+  fullName: KS.Drivers.Console.Consoles.File.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.File.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object())
+  nameWithType: File.WriteWherePlain(String, Int32, Int32, Object[])
+  nameWithType.vb: File.WriteWherePlain(String, Int32, Int32, Object())
+- uid: KS.Drivers.Console.Consoles.File.WriteWherePlain*
+  name: WriteWherePlain
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_WriteWherePlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.File.WriteWherePlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.File.WriteWherePlain
+  nameWithType: File.WriteWherePlain
+- uid: KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
+  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
+  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object())
+  nameWithType: File.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
+  nameWithType.vb: File.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
+  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
+  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
+  fullName: KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object())
+  nameWithType: File.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
+  nameWithType.vb: File.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
+- uid: KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain*
+  name: WriteWhereSlowlyPlain
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_WriteWhereSlowlyPlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain
+  nameWithType: File.WriteWhereSlowlyPlain
+- uid: KS.Drivers.Console.Consoles.File.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
+  name: WriteWrappedPlain(String, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_WriteWrappedPlain_System_String_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.File.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
+  name.vb: WriteWrappedPlain(String, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.File.WriteWrappedPlain(System.String, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.File.WriteWrappedPlain(System.String, System.Boolean, System.Object())
+  nameWithType: File.WriteWrappedPlain(String, Boolean, Object[])
+  nameWithType.vb: File.WriteWrappedPlain(String, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.File.WriteWrappedPlain*
+  name: WriteWrappedPlain
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_WriteWrappedPlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.File.WriteWrappedPlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.File.WriteWrappedPlain
+  nameWithType: File.WriteWrappedPlain
+- uid: KS.Drivers.Console.Consoles.Null
+  name: "Null"
+  href: api/KS.Drivers.Console.Consoles.Null.html
+  commentId: T:KS.Drivers.Console.Consoles.Null
+  fullName: KS.Drivers.Console.Consoles.Null
+  nameWithType: "Null"
+- uid: KS.Drivers.Console.Consoles.Null.DriverName
+  name: DriverName
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_DriverName
+  commentId: P:KS.Drivers.Console.Consoles.Null.DriverName
+  fullName: KS.Drivers.Console.Consoles.Null.DriverName
+  nameWithType: Null.DriverName
+- uid: KS.Drivers.Console.Consoles.Null.DriverName*
+  name: DriverName
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_DriverName_
+  commentId: Overload:KS.Drivers.Console.Consoles.Null.DriverName
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.Null.DriverName
+  nameWithType: Null.DriverName
+- uid: KS.Drivers.Console.Consoles.Null.DriverType
+  name: DriverType
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_DriverType
+  commentId: P:KS.Drivers.Console.Consoles.Null.DriverType
+  fullName: KS.Drivers.Console.Consoles.Null.DriverType
+  nameWithType: Null.DriverType
+- uid: KS.Drivers.Console.Consoles.Null.DriverType*
+  name: DriverType
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_DriverType_
+  commentId: Overload:KS.Drivers.Console.Consoles.Null.DriverType
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.Null.DriverType
+  nameWithType: Null.DriverType
+- uid: KS.Drivers.Console.Consoles.Null.WritePlain
+  name: WritePlain()
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_WritePlain
+  commentId: M:KS.Drivers.Console.Consoles.Null.WritePlain
+  fullName: KS.Drivers.Console.Consoles.Null.WritePlain()
+  nameWithType: Null.WritePlain()
+- uid: KS.Drivers.Console.Consoles.Null.WritePlain(System.String,System.Boolean,System.Object[])
+  name: WritePlain(String, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_WritePlain_System_String_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Null.WritePlain(System.String,System.Boolean,System.Object[])
+  name.vb: WritePlain(String, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.Null.WritePlain(System.String, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Null.WritePlain(System.String, System.Boolean, System.Object())
+  nameWithType: Null.WritePlain(String, Boolean, Object[])
+  nameWithType.vb: Null.WritePlain(String, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.Null.WritePlain*
+  name: WritePlain
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_WritePlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.Null.WritePlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.Null.WritePlain
+  nameWithType: Null.WritePlain
+- uid: KS.Drivers.Console.Consoles.Null.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
+  name: WriteSlowlyPlain(String, Boolean, Double, Object[])
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Null.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
+  name.vb: WriteSlowlyPlain(String, Boolean, Double, Object())
+  fullName: KS.Drivers.Console.Consoles.Null.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Null.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object())
+  nameWithType: Null.WriteSlowlyPlain(String, Boolean, Double, Object[])
+  nameWithType.vb: Null.WriteSlowlyPlain(String, Boolean, Double, Object())
+- uid: KS.Drivers.Console.Consoles.Null.WriteSlowlyPlain*
+  name: WriteSlowlyPlain
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_WriteSlowlyPlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.Null.WriteSlowlyPlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.Null.WriteSlowlyPlain
+  nameWithType: Null.WriteSlowlyPlain
+- uid: KS.Drivers.Console.Consoles.Null.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Null.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
+  fullName: KS.Drivers.Console.Consoles.Null.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Null.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object())
+  nameWithType: Null.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
+  nameWithType.vb: Null.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
+- uid: KS.Drivers.Console.Consoles.Null.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Null.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.Null.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Null.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object())
+  nameWithType: Null.WriteWherePlain(String, Int32, Int32, Boolean, Object[])
+  nameWithType.vb: Null.WriteWherePlain(String, Int32, Int32, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.Null.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Object[])
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Null.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Object())
+  fullName: KS.Drivers.Console.Consoles.Null.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Null.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object())
+  nameWithType: Null.WriteWherePlain(String, Int32, Int32, Object[])
+  nameWithType.vb: Null.WriteWherePlain(String, Int32, Int32, Object())
+- uid: KS.Drivers.Console.Consoles.Null.WriteWherePlain*
+  name: WriteWherePlain
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_WriteWherePlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.Null.WriteWherePlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.Null.WriteWherePlain
+  nameWithType: Null.WriteWherePlain
+- uid: KS.Drivers.Console.Consoles.Null.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
+  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Null.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
+  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.Null.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Null.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object())
+  nameWithType: Null.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
+  nameWithType.vb: Null.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.Null.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
+  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Null.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
+  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
+  fullName: KS.Drivers.Console.Consoles.Null.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Null.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object())
+  nameWithType: Null.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
+  nameWithType.vb: Null.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
+- uid: KS.Drivers.Console.Consoles.Null.WriteWhereSlowlyPlain*
+  name: WriteWhereSlowlyPlain
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_WriteWhereSlowlyPlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.Null.WriteWhereSlowlyPlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.Null.WriteWhereSlowlyPlain
+  nameWithType: Null.WriteWhereSlowlyPlain
+- uid: KS.Drivers.Console.Consoles.Null.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
+  name: WriteWrappedPlain(String, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_WriteWrappedPlain_System_String_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Null.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
+  name.vb: WriteWrappedPlain(String, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.Null.WriteWrappedPlain(System.String, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Null.WriteWrappedPlain(System.String, System.Boolean, System.Object())
+  nameWithType: Null.WriteWrappedPlain(String, Boolean, Object[])
+  nameWithType.vb: Null.WriteWrappedPlain(String, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.Null.WriteWrappedPlain*
+  name: WriteWrappedPlain
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_WriteWrappedPlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.Null.WriteWrappedPlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.Null.WriteWrappedPlain
+  nameWithType: Null.WriteWrappedPlain
+- uid: KS.Drivers.Console.Consoles.Terminal
+  name: Terminal
+  href: api/KS.Drivers.Console.Consoles.Terminal.html
+  commentId: T:KS.Drivers.Console.Consoles.Terminal
+  fullName: KS.Drivers.Console.Consoles.Terminal
+  nameWithType: Terminal
+- uid: KS.Drivers.Console.Consoles.Terminal.DriverName
+  name: DriverName
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_DriverName
+  commentId: P:KS.Drivers.Console.Consoles.Terminal.DriverName
+  fullName: KS.Drivers.Console.Consoles.Terminal.DriverName
+  nameWithType: Terminal.DriverName
+- uid: KS.Drivers.Console.Consoles.Terminal.DriverName*
+  name: DriverName
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_DriverName_
+  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.DriverName
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.Terminal.DriverName
+  nameWithType: Terminal.DriverName
+- uid: KS.Drivers.Console.Consoles.Terminal.DriverType
+  name: DriverType
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_DriverType
+  commentId: P:KS.Drivers.Console.Consoles.Terminal.DriverType
+  fullName: KS.Drivers.Console.Consoles.Terminal.DriverType
+  nameWithType: Terminal.DriverType
+- uid: KS.Drivers.Console.Consoles.Terminal.DriverType*
+  name: DriverType
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_DriverType_
+  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.DriverType
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.Terminal.DriverType
+  nameWithType: Terminal.DriverType
+- uid: KS.Drivers.Console.Consoles.Terminal.WritePlain
+  name: WritePlain()
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WritePlain
+  commentId: M:KS.Drivers.Console.Consoles.Terminal.WritePlain
+  fullName: KS.Drivers.Console.Consoles.Terminal.WritePlain()
+  nameWithType: Terminal.WritePlain()
+- uid: KS.Drivers.Console.Consoles.Terminal.WritePlain(System.String,System.Boolean,System.Object[])
+  name: WritePlain(String, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WritePlain_System_String_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Terminal.WritePlain(System.String,System.Boolean,System.Object[])
+  name.vb: WritePlain(String, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.Terminal.WritePlain(System.String, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WritePlain(System.String, System.Boolean, System.Object())
+  nameWithType: Terminal.WritePlain(String, Boolean, Object[])
+  nameWithType.vb: Terminal.WritePlain(String, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.Terminal.WritePlain*
+  name: WritePlain
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WritePlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.WritePlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.Terminal.WritePlain
+  nameWithType: Terminal.WritePlain
+- uid: KS.Drivers.Console.Consoles.Terminal.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
+  name: WriteSlowlyPlain(String, Boolean, Double, Object[])
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
+  name.vb: WriteSlowlyPlain(String, Boolean, Double, Object())
+  fullName: KS.Drivers.Console.Consoles.Terminal.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object())
+  nameWithType: Terminal.WriteSlowlyPlain(String, Boolean, Double, Object[])
+  nameWithType.vb: Terminal.WriteSlowlyPlain(String, Boolean, Double, Object())
+- uid: KS.Drivers.Console.Consoles.Terminal.WriteSlowlyPlain*
+  name: WriteSlowlyPlain
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteSlowlyPlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.WriteSlowlyPlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.Terminal.WriteSlowlyPlain
+  nameWithType: Terminal.WriteSlowlyPlain
+- uid: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
+  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object())
+  nameWithType: Terminal.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
+  nameWithType.vb: Terminal.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
+- uid: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object())
+  nameWithType: Terminal.WriteWherePlain(String, Int32, Int32, Boolean, Object[])
+  nameWithType.vb: Terminal.WriteWherePlain(String, Int32, Int32, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Object[])
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Object())
+  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object())
+  nameWithType: Terminal.WriteWherePlain(String, Int32, Int32, Object[])
+  nameWithType.vb: Terminal.WriteWherePlain(String, Int32, Int32, Object())
+- uid: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain*
+  name: WriteWherePlain
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWherePlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.WriteWherePlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain
+  nameWithType: Terminal.WriteWherePlain
+- uid: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
+  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
+  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object())
+  nameWithType: Terminal.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
+  nameWithType.vb: Terminal.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
+  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
+  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
+  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object())
+  nameWithType: Terminal.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
+  nameWithType.vb: Terminal.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
+- uid: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain*
+  name: WriteWhereSlowlyPlain
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWhereSlowlyPlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain
+  nameWithType: Terminal.WriteWhereSlowlyPlain
+- uid: KS.Drivers.Console.Consoles.Terminal.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
+  name: WriteWrappedPlain(String, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWrappedPlain_System_String_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
+  name.vb: WriteWrappedPlain(String, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWrappedPlain(System.String, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WriteWrappedPlain(System.String, System.Boolean, System.Object())
+  nameWithType: Terminal.WriteWrappedPlain(String, Boolean, Object[])
+  nameWithType.vb: Terminal.WriteWrappedPlain(String, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.Terminal.WriteWrappedPlain*
+  name: WriteWrappedPlain
+  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWrappedPlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.WriteWrappedPlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWrappedPlain
+  nameWithType: Terminal.WriteWrappedPlain
+- uid: KS.Drivers.Console.IConsoleDriver
+  name: IConsoleDriver
+  href: api/KS.Drivers.Console.IConsoleDriver.html
+  commentId: T:KS.Drivers.Console.IConsoleDriver
+  fullName: KS.Drivers.Console.IConsoleDriver
+  nameWithType: IConsoleDriver
+- uid: KS.Drivers.Console.IConsoleDriver.WritePlain
+  name: WritePlain()
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WritePlain
+  commentId: M:KS.Drivers.Console.IConsoleDriver.WritePlain
+  fullName: KS.Drivers.Console.IConsoleDriver.WritePlain()
+  nameWithType: IConsoleDriver.WritePlain()
+- uid: KS.Drivers.Console.IConsoleDriver.WritePlain(System.String,System.Boolean,System.Object[])
+  name: WritePlain(String, Boolean, Object[])
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WritePlain_System_String_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.IConsoleDriver.WritePlain(System.String,System.Boolean,System.Object[])
+  name.vb: WritePlain(String, Boolean, Object())
+  fullName: KS.Drivers.Console.IConsoleDriver.WritePlain(System.String, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.IConsoleDriver.WritePlain(System.String, System.Boolean, System.Object())
+  nameWithType: IConsoleDriver.WritePlain(String, Boolean, Object[])
+  nameWithType.vb: IConsoleDriver.WritePlain(String, Boolean, Object())
+- uid: KS.Drivers.Console.IConsoleDriver.WritePlain*
+  name: WritePlain
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WritePlain_
+  commentId: Overload:KS.Drivers.Console.IConsoleDriver.WritePlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.IConsoleDriver.WritePlain
+  nameWithType: IConsoleDriver.WritePlain
+- uid: KS.Drivers.Console.IConsoleDriver.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
+  name: WriteSlowlyPlain(String, Boolean, Double, Object[])
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___
+  commentId: M:KS.Drivers.Console.IConsoleDriver.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
+  name.vb: WriteSlowlyPlain(String, Boolean, Double, Object())
+  fullName: KS.Drivers.Console.IConsoleDriver.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object[])
+  fullName.vb: KS.Drivers.Console.IConsoleDriver.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object())
+  nameWithType: IConsoleDriver.WriteSlowlyPlain(String, Boolean, Double, Object[])
+  nameWithType.vb: IConsoleDriver.WriteSlowlyPlain(String, Boolean, Double, Object())
+- uid: KS.Drivers.Console.IConsoleDriver.WriteSlowlyPlain*
+  name: WriteSlowlyPlain
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WriteSlowlyPlain_
+  commentId: Overload:KS.Drivers.Console.IConsoleDriver.WriteSlowlyPlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.IConsoleDriver.WriteSlowlyPlain
+  nameWithType: IConsoleDriver.WriteSlowlyPlain
+- uid: KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
+  fullName: KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object[])
+  fullName.vb: KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object())
+  nameWithType: IConsoleDriver.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
+  nameWithType.vb: IConsoleDriver.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
+- uid: KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Boolean, Object[])
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Object())
+  fullName: KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object())
+  nameWithType: IConsoleDriver.WriteWherePlain(String, Int32, Int32, Boolean, Object[])
+  nameWithType.vb: IConsoleDriver.WriteWherePlain(String, Int32, Int32, Boolean, Object())
+- uid: KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Object[])
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Object())
+  fullName: KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object[])
+  fullName.vb: KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object())
+  nameWithType: IConsoleDriver.WriteWherePlain(String, Int32, Int32, Object[])
+  nameWithType.vb: IConsoleDriver.WriteWherePlain(String, Int32, Int32, Object())
+- uid: KS.Drivers.Console.IConsoleDriver.WriteWherePlain*
+  name: WriteWherePlain
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WriteWherePlain_
+  commentId: Overload:KS.Drivers.Console.IConsoleDriver.WriteWherePlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.IConsoleDriver.WriteWherePlain
+  nameWithType: IConsoleDriver.WriteWherePlain
+- uid: KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
+  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
+  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
+  fullName: KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object())
+  nameWithType: IConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
+  nameWithType.vb: IConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
+- uid: KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
+  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___
+  commentId: M:KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
+  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
+  fullName: KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object[])
+  fullName.vb: KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object())
+  nameWithType: IConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
+  nameWithType.vb: IConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
+- uid: KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain*
+  name: WriteWhereSlowlyPlain
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WriteWhereSlowlyPlain_
+  commentId: Overload:KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain
+  nameWithType: IConsoleDriver.WriteWhereSlowlyPlain
+- uid: KS.Drivers.Console.IConsoleDriver.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
+  name: WriteWrappedPlain(String, Boolean, Object[])
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WriteWrappedPlain_System_String_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.IConsoleDriver.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
+  name.vb: WriteWrappedPlain(String, Boolean, Object())
+  fullName: KS.Drivers.Console.IConsoleDriver.WriteWrappedPlain(System.String, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.IConsoleDriver.WriteWrappedPlain(System.String, System.Boolean, System.Object())
+  nameWithType: IConsoleDriver.WriteWrappedPlain(String, Boolean, Object[])
+  nameWithType.vb: IConsoleDriver.WriteWrappedPlain(String, Boolean, Object())
+- uid: KS.Drivers.Console.IConsoleDriver.WriteWrappedPlain*
+  name: WriteWrappedPlain
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WriteWrappedPlain_
+  commentId: Overload:KS.Drivers.Console.IConsoleDriver.WriteWrappedPlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.IConsoleDriver.WriteWrappedPlain
+  nameWithType: IConsoleDriver.WriteWrappedPlain
 - uid: KS.Drivers.DriverHandler
   name: DriverHandler
   href: api/KS.Drivers.DriverHandler.html
   commentId: T:KS.Drivers.DriverHandler
   fullName: KS.Drivers.DriverHandler
   nameWithType: DriverHandler
+- uid: KS.Drivers.DriverHandler.consoleDrivers
+  name: consoleDrivers
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_consoleDrivers
+  commentId: F:KS.Drivers.DriverHandler.consoleDrivers
+  fullName: KS.Drivers.DriverHandler.consoleDrivers
+  nameWithType: DriverHandler.consoleDrivers
+- uid: KS.Drivers.DriverHandler.currentConsoleDriver
+  name: currentConsoleDriver
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_currentConsoleDriver
+  commentId: F:KS.Drivers.DriverHandler.currentConsoleDriver
+  fullName: KS.Drivers.DriverHandler.currentConsoleDriver
+  nameWithType: DriverHandler.currentConsoleDriver
+- uid: KS.Drivers.DriverHandler.CurrentConsoleDriver
+  name: CurrentConsoleDriver
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_CurrentConsoleDriver
+  commentId: P:KS.Drivers.DriverHandler.CurrentConsoleDriver
+  fullName: KS.Drivers.DriverHandler.CurrentConsoleDriver
+  nameWithType: DriverHandler.CurrentConsoleDriver
+- uid: KS.Drivers.DriverHandler.CurrentConsoleDriver*
+  name: CurrentConsoleDriver
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_CurrentConsoleDriver_
+  commentId: Overload:KS.Drivers.DriverHandler.CurrentConsoleDriver
+  isSpec: "True"
+  fullName: KS.Drivers.DriverHandler.CurrentConsoleDriver
+  nameWithType: DriverHandler.CurrentConsoleDriver
 - uid: KS.Drivers.DriverHandler.currentRandomDriver
   name: currentRandomDriver
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_currentRandomDriver
@@ -2464,6 +3081,12 @@ references:
   commentId: T:KS.Drivers.DriverTypes
   fullName: KS.Drivers.DriverTypes
   nameWithType: DriverTypes
+- uid: KS.Drivers.DriverTypes.Console
+  name: Console
+  href: api/KS.Drivers.DriverTypes.html#KS_Drivers_DriverTypes_Console
+  commentId: F:KS.Drivers.DriverTypes.Console
+  fullName: KS.Drivers.DriverTypes.Console
+  nameWithType: DriverTypes.Console
 - uid: KS.Drivers.DriverTypes.RNG
   name: RNG
   href: api/KS.Drivers.DriverTypes.html#KS_Drivers_DriverTypes_RNG
@@ -34171,583 +34794,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Writers.MiscWriters.WelcomeMessage.WriteMessage
   nameWithType: WelcomeMessage.WriteMessage
-- uid: KS.Misc.Writers.WriterBase
-  name: KS.Misc.Writers.WriterBase
-  href: api/KS.Misc.Writers.WriterBase.html
-  commentId: N:KS.Misc.Writers.WriterBase
-  fullName: KS.Misc.Writers.WriterBase
-  nameWithType: KS.Misc.Writers.WriterBase
-- uid: KS.Misc.Writers.WriterBase.IWriterPlain
-  name: IWriterPlain
-  href: api/KS.Misc.Writers.WriterBase.IWriterPlain.html
-  commentId: T:KS.Misc.Writers.WriterBase.IWriterPlain
-  fullName: KS.Misc.Writers.WriterBase.IWriterPlain
-  nameWithType: IWriterPlain
-- uid: KS.Misc.Writers.WriterBase.IWriterPlain.WritePlain
-  name: WritePlain()
-  href: api/KS.Misc.Writers.WriterBase.IWriterPlain.html#KS_Misc_Writers_WriterBase_IWriterPlain_WritePlain
-  commentId: M:KS.Misc.Writers.WriterBase.IWriterPlain.WritePlain
-  fullName: KS.Misc.Writers.WriterBase.IWriterPlain.WritePlain()
-  nameWithType: IWriterPlain.WritePlain()
-- uid: KS.Misc.Writers.WriterBase.IWriterPlain.WritePlain(System.String,System.Boolean,System.Object[])
-  name: WritePlain(String, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.IWriterPlain.html#KS_Misc_Writers_WriterBase_IWriterPlain_WritePlain_System_String_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.IWriterPlain.WritePlain(System.String,System.Boolean,System.Object[])
-  name.vb: WritePlain(String, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.IWriterPlain.WritePlain(System.String, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.IWriterPlain.WritePlain(System.String, System.Boolean, System.Object())
-  nameWithType: IWriterPlain.WritePlain(String, Boolean, Object[])
-  nameWithType.vb: IWriterPlain.WritePlain(String, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.IWriterPlain.WritePlain*
-  name: WritePlain
-  href: api/KS.Misc.Writers.WriterBase.IWriterPlain.html#KS_Misc_Writers_WriterBase_IWriterPlain_WritePlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.IWriterPlain.WritePlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.IWriterPlain.WritePlain
-  nameWithType: IWriterPlain.WritePlain
-- uid: KS.Misc.Writers.WriterBase.IWriterPlain.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
-  name: WriteSlowlyPlain(String, Boolean, Double, Object[])
-  href: api/KS.Misc.Writers.WriterBase.IWriterPlain.html#KS_Misc_Writers_WriterBase_IWriterPlain_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.IWriterPlain.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
-  name.vb: WriteSlowlyPlain(String, Boolean, Double, Object())
-  fullName: KS.Misc.Writers.WriterBase.IWriterPlain.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.IWriterPlain.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object())
-  nameWithType: IWriterPlain.WriteSlowlyPlain(String, Boolean, Double, Object[])
-  nameWithType.vb: IWriterPlain.WriteSlowlyPlain(String, Boolean, Double, Object())
-- uid: KS.Misc.Writers.WriterBase.IWriterPlain.WriteSlowlyPlain*
-  name: WriteSlowlyPlain
-  href: api/KS.Misc.Writers.WriterBase.IWriterPlain.html#KS_Misc_Writers_WriterBase_IWriterPlain_WriteSlowlyPlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.IWriterPlain.WriteSlowlyPlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.IWriterPlain.WriteSlowlyPlain
-  nameWithType: IWriterPlain.WriteSlowlyPlain
-- uid: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
-  name: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
-  href: api/KS.Misc.Writers.WriterBase.IWriterPlain.html#KS_Misc_Writers_WriterBase_IWriterPlain_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.IWriterPlain.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
-  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
-  fullName: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object())
-  nameWithType: IWriterPlain.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
-  nameWithType.vb: IWriterPlain.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
-- uid: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
-  name: WriteWherePlain(String, Int32, Int32, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.IWriterPlain.html#KS_Misc_Writers_WriterBase_IWriterPlain_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.IWriterPlain.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
-  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object())
-  nameWithType: IWriterPlain.WriteWherePlain(String, Int32, Int32, Boolean, Object[])
-  nameWithType.vb: IWriterPlain.WriteWherePlain(String, Int32, Int32, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
-  name: WriteWherePlain(String, Int32, Int32, Object[])
-  href: api/KS.Misc.Writers.WriterBase.IWriterPlain.html#KS_Misc_Writers_WriterBase_IWriterPlain_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.IWriterPlain.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
-  name.vb: WriteWherePlain(String, Int32, Int32, Object())
-  fullName: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object())
-  nameWithType: IWriterPlain.WriteWherePlain(String, Int32, Int32, Object[])
-  nameWithType.vb: IWriterPlain.WriteWherePlain(String, Int32, Int32, Object())
-- uid: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWherePlain*
-  name: WriteWherePlain
-  href: api/KS.Misc.Writers.WriterBase.IWriterPlain.html#KS_Misc_Writers_WriterBase_IWriterPlain_WriteWherePlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.IWriterPlain.WriteWherePlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWherePlain
-  nameWithType: IWriterPlain.WriteWherePlain
-- uid: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
-  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.IWriterPlain.html#KS_Misc_Writers_WriterBase_IWriterPlain_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.IWriterPlain.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
-  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object())
-  nameWithType: IWriterPlain.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
-  nameWithType.vb: IWriterPlain.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
-  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
-  href: api/KS.Misc.Writers.WriterBase.IWriterPlain.html#KS_Misc_Writers_WriterBase_IWriterPlain_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.IWriterPlain.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
-  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
-  fullName: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object())
-  nameWithType: IWriterPlain.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
-  nameWithType.vb: IWriterPlain.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
-- uid: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWhereSlowlyPlain*
-  name: WriteWhereSlowlyPlain
-  href: api/KS.Misc.Writers.WriterBase.IWriterPlain.html#KS_Misc_Writers_WriterBase_IWriterPlain_WriteWhereSlowlyPlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.IWriterPlain.WriteWhereSlowlyPlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWhereSlowlyPlain
-  nameWithType: IWriterPlain.WriteWhereSlowlyPlain
-- uid: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
-  name: WriteWrappedPlain(String, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.IWriterPlain.html#KS_Misc_Writers_WriterBase_IWriterPlain_WriteWrappedPlain_System_String_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.IWriterPlain.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
-  name.vb: WriteWrappedPlain(String, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWrappedPlain(System.String, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWrappedPlain(System.String, System.Boolean, System.Object())
-  nameWithType: IWriterPlain.WriteWrappedPlain(String, Boolean, Object[])
-  nameWithType.vb: IWriterPlain.WriteWrappedPlain(String, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWrappedPlain*
-  name: WriteWrappedPlain
-  href: api/KS.Misc.Writers.WriterBase.IWriterPlain.html#KS_Misc_Writers_WriterBase_IWriterPlain_WriteWrappedPlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.IWriterPlain.WriteWrappedPlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.IWriterPlain.WriteWrappedPlain
-  nameWithType: IWriterPlain.WriteWrappedPlain
-- uid: KS.Misc.Writers.WriterBase.PlainWriters
-  name: KS.Misc.Writers.WriterBase.PlainWriters
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.html
-  commentId: N:KS.Misc.Writers.WriterBase.PlainWriters
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters
-  nameWithType: KS.Misc.Writers.WriterBase.PlainWriters
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter
-  name: ConsolePlainWriter
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.html
-  commentId: T:KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter
-  nameWithType: ConsolePlainWriter
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WritePlain
-  name: WritePlain()
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_ConsolePlainWriter_WritePlain
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WritePlain
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WritePlain()
-  nameWithType: ConsolePlainWriter.WritePlain()
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WritePlain(System.String,System.Boolean,System.Object[])
-  name: WritePlain(String, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_ConsolePlainWriter_WritePlain_System_String_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WritePlain(System.String,System.Boolean,System.Object[])
-  name.vb: WritePlain(String, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WritePlain(System.String, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WritePlain(System.String, System.Boolean, System.Object())
-  nameWithType: ConsolePlainWriter.WritePlain(String, Boolean, Object[])
-  nameWithType.vb: ConsolePlainWriter.WritePlain(String, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WritePlain*
-  name: WritePlain
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_ConsolePlainWriter_WritePlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WritePlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WritePlain
-  nameWithType: ConsolePlainWriter.WritePlain
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
-  name: WriteSlowlyPlain(String, Boolean, Double, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_ConsolePlainWriter_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
-  name.vb: WriteSlowlyPlain(String, Boolean, Double, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object())
-  nameWithType: ConsolePlainWriter.WriteSlowlyPlain(String, Boolean, Double, Object[])
-  nameWithType.vb: ConsolePlainWriter.WriteSlowlyPlain(String, Boolean, Double, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteSlowlyPlain*
-  name: WriteSlowlyPlain
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_ConsolePlainWriter_WriteSlowlyPlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteSlowlyPlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteSlowlyPlain
-  nameWithType: ConsolePlainWriter.WriteSlowlyPlain
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
-  name: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_ConsolePlainWriter_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
-  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object())
-  nameWithType: ConsolePlainWriter.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
-  nameWithType.vb: ConsolePlainWriter.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
-  name: WriteWherePlain(String, Int32, Int32, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_ConsolePlainWriter_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
-  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object())
-  nameWithType: ConsolePlainWriter.WriteWherePlain(String, Int32, Int32, Boolean, Object[])
-  nameWithType.vb: ConsolePlainWriter.WriteWherePlain(String, Int32, Int32, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
-  name: WriteWherePlain(String, Int32, Int32, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_ConsolePlainWriter_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
-  name.vb: WriteWherePlain(String, Int32, Int32, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object())
-  nameWithType: ConsolePlainWriter.WriteWherePlain(String, Int32, Int32, Object[])
-  nameWithType.vb: ConsolePlainWriter.WriteWherePlain(String, Int32, Int32, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWherePlain*
-  name: WriteWherePlain
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_ConsolePlainWriter_WriteWherePlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWherePlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWherePlain
-  nameWithType: ConsolePlainWriter.WriteWherePlain
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
-  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_ConsolePlainWriter_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
-  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object())
-  nameWithType: ConsolePlainWriter.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
-  nameWithType.vb: ConsolePlainWriter.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
-  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_ConsolePlainWriter_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
-  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object())
-  nameWithType: ConsolePlainWriter.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
-  nameWithType.vb: ConsolePlainWriter.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWhereSlowlyPlain*
-  name: WriteWhereSlowlyPlain
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_ConsolePlainWriter_WriteWhereSlowlyPlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWhereSlowlyPlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWhereSlowlyPlain
-  nameWithType: ConsolePlainWriter.WriteWhereSlowlyPlain
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
-  name: WriteWrappedPlain(String, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_ConsolePlainWriter_WriteWrappedPlain_System_String_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
-  name.vb: WriteWrappedPlain(String, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWrappedPlain(System.String, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWrappedPlain(System.String, System.Boolean, System.Object())
-  nameWithType: ConsolePlainWriter.WriteWrappedPlain(String, Boolean, Object[])
-  nameWithType.vb: ConsolePlainWriter.WriteWrappedPlain(String, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWrappedPlain*
-  name: WriteWrappedPlain
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_ConsolePlainWriter_WriteWrappedPlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWrappedPlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.ConsolePlainWriter.WriteWrappedPlain
-  nameWithType: ConsolePlainWriter.WriteWrappedPlain
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter
-  name: FilePlainWriter
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html
-  commentId: T:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter
-  nameWithType: FilePlainWriter
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.FilterVT
-  name: FilterVT
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_FilterVT
-  commentId: P:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.FilterVT
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.FilterVT
-  nameWithType: FilePlainWriter.FilterVT
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.FilterVT*
-  name: FilterVT
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_FilterVT_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.FilterVT
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.FilterVT
-  nameWithType: FilePlainWriter.FilterVT
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.PathToWrite
-  name: PathToWrite
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_PathToWrite
-  commentId: P:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.PathToWrite
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.PathToWrite
-  nameWithType: FilePlainWriter.PathToWrite
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.PathToWrite*
-  name: PathToWrite
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_PathToWrite_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.PathToWrite
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.PathToWrite
-  nameWithType: FilePlainWriter.PathToWrite
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WritePlain
-  name: WritePlain()
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_WritePlain
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WritePlain
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WritePlain()
-  nameWithType: FilePlainWriter.WritePlain()
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WritePlain(System.String,System.Boolean,System.Object[])
-  name: WritePlain(String, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_WritePlain_System_String_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WritePlain(System.String,System.Boolean,System.Object[])
-  name.vb: WritePlain(String, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WritePlain(System.String, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WritePlain(System.String, System.Boolean, System.Object())
-  nameWithType: FilePlainWriter.WritePlain(String, Boolean, Object[])
-  nameWithType.vb: FilePlainWriter.WritePlain(String, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WritePlain*
-  name: WritePlain
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_WritePlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WritePlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WritePlain
-  nameWithType: FilePlainWriter.WritePlain
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
-  name: WriteSlowlyPlain(String, Boolean, Double, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
-  name.vb: WriteSlowlyPlain(String, Boolean, Double, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object())
-  nameWithType: FilePlainWriter.WriteSlowlyPlain(String, Boolean, Double, Object[])
-  nameWithType.vb: FilePlainWriter.WriteSlowlyPlain(String, Boolean, Double, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteSlowlyPlain*
-  name: WriteSlowlyPlain
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_WriteSlowlyPlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteSlowlyPlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteSlowlyPlain
-  nameWithType: FilePlainWriter.WriteSlowlyPlain
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
-  name: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
-  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object())
-  nameWithType: FilePlainWriter.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
-  nameWithType.vb: FilePlainWriter.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
-  name: WriteWherePlain(String, Int32, Int32, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
-  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object())
-  nameWithType: FilePlainWriter.WriteWherePlain(String, Int32, Int32, Boolean, Object[])
-  nameWithType.vb: FilePlainWriter.WriteWherePlain(String, Int32, Int32, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
-  name: WriteWherePlain(String, Int32, Int32, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
-  name.vb: WriteWherePlain(String, Int32, Int32, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object())
-  nameWithType: FilePlainWriter.WriteWherePlain(String, Int32, Int32, Object[])
-  nameWithType.vb: FilePlainWriter.WriteWherePlain(String, Int32, Int32, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWherePlain*
-  name: WriteWherePlain
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_WriteWherePlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWherePlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWherePlain
-  nameWithType: FilePlainWriter.WriteWherePlain
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
-  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
-  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object())
-  nameWithType: FilePlainWriter.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
-  nameWithType.vb: FilePlainWriter.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
-  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
-  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object())
-  nameWithType: FilePlainWriter.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
-  nameWithType.vb: FilePlainWriter.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWhereSlowlyPlain*
-  name: WriteWhereSlowlyPlain
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_WriteWhereSlowlyPlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWhereSlowlyPlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWhereSlowlyPlain
-  nameWithType: FilePlainWriter.WriteWhereSlowlyPlain
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
-  name: WriteWrappedPlain(String, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_WriteWrappedPlain_System_String_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
-  name.vb: WriteWrappedPlain(String, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWrappedPlain(System.String, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWrappedPlain(System.String, System.Boolean, System.Object())
-  nameWithType: FilePlainWriter.WriteWrappedPlain(String, Boolean, Object[])
-  nameWithType.vb: FilePlainWriter.WriteWrappedPlain(String, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWrappedPlain*
-  name: WriteWrappedPlain
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_FilePlainWriter_WriteWrappedPlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWrappedPlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.FilePlainWriter.WriteWrappedPlain
-  nameWithType: FilePlainWriter.WriteWrappedPlain
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter
-  name: NullPlainWriter
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html
-  commentId: T:KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter
-  nameWithType: NullPlainWriter
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain
-  name: WritePlain()
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WritePlain
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain()
-  nameWithType: NullPlainWriter.WritePlain()
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain(System.String,System.Boolean,System.Object[])
-  name: WritePlain(String, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WritePlain_System_String_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain(System.String,System.Boolean,System.Object[])
-  name.vb: WritePlain(String, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain(System.String, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain(System.String, System.Boolean, System.Object())
-  nameWithType: NullPlainWriter.WritePlain(String, Boolean, Object[])
-  nameWithType.vb: NullPlainWriter.WritePlain(String, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain*
-  name: WritePlain
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WritePlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain
-  nameWithType: NullPlainWriter.WritePlain
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
-  name: WriteSlowlyPlain(String, Boolean, Double, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
-  name.vb: WriteSlowlyPlain(String, Boolean, Double, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object())
-  nameWithType: NullPlainWriter.WriteSlowlyPlain(String, Boolean, Double, Object[])
-  nameWithType.vb: NullPlainWriter.WriteSlowlyPlain(String, Boolean, Double, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteSlowlyPlain*
-  name: WriteSlowlyPlain
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteSlowlyPlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteSlowlyPlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteSlowlyPlain
-  nameWithType: NullPlainWriter.WriteSlowlyPlain
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
-  name: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
-  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object())
-  nameWithType: NullPlainWriter.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
-  nameWithType.vb: NullPlainWriter.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
-  name: WriteWherePlain(String, Int32, Int32, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
-  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object())
-  nameWithType: NullPlainWriter.WriteWherePlain(String, Int32, Int32, Boolean, Object[])
-  nameWithType.vb: NullPlainWriter.WriteWherePlain(String, Int32, Int32, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
-  name: WriteWherePlain(String, Int32, Int32, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
-  name.vb: WriteWherePlain(String, Int32, Int32, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object())
-  nameWithType: NullPlainWriter.WriteWherePlain(String, Int32, Int32, Object[])
-  nameWithType.vb: NullPlainWriter.WriteWherePlain(String, Int32, Int32, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain*
-  name: WriteWherePlain
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWherePlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain
-  nameWithType: NullPlainWriter.WriteWherePlain
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
-  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
-  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object())
-  nameWithType: NullPlainWriter.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
-  nameWithType.vb: NullPlainWriter.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
-  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
-  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object())
-  nameWithType: NullPlainWriter.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
-  nameWithType.vb: NullPlainWriter.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain*
-  name: WriteWhereSlowlyPlain
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWhereSlowlyPlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain
-  nameWithType: NullPlainWriter.WriteWhereSlowlyPlain
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
-  name: WriteWrappedPlain(String, Boolean, Object[])
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWrappedPlain_System_String_System_Boolean_System_Object___
-  commentId: M:KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
-  name.vb: WriteWrappedPlain(String, Boolean, Object())
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWrappedPlain(System.String, System.Boolean, System.Object[])
-  fullName.vb: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWrappedPlain(System.String, System.Boolean, System.Object())
-  nameWithType: NullPlainWriter.WriteWrappedPlain(String, Boolean, Object[])
-  nameWithType.vb: NullPlainWriter.WriteWrappedPlain(String, Boolean, Object())
-- uid: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWrappedPlain*
-  name: WriteWrappedPlain
-  href: api/KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.html#KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWrappedPlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWrappedPlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWrappedPlain
-  nameWithType: NullPlainWriter.WriteWrappedPlain
-- uid: KS.Misc.Writers.WriterBase.WriterPlainManager
-  name: WriterPlainManager
-  href: api/KS.Misc.Writers.WriterBase.WriterPlainManager.html
-  commentId: T:KS.Misc.Writers.WriterBase.WriterPlainManager
-  fullName: KS.Misc.Writers.WriterBase.WriterPlainManager
-  nameWithType: WriterPlainManager
-- uid: KS.Misc.Writers.WriterBase.WriterPlainManager.ChangePlain(System.String)
-  name: ChangePlain(String)
-  href: api/KS.Misc.Writers.WriterBase.WriterPlainManager.html#KS_Misc_Writers_WriterBase_WriterPlainManager_ChangePlain_System_String_
-  commentId: M:KS.Misc.Writers.WriterBase.WriterPlainManager.ChangePlain(System.String)
-  fullName: KS.Misc.Writers.WriterBase.WriterPlainManager.ChangePlain(System.String)
-  nameWithType: WriterPlainManager.ChangePlain(String)
-- uid: KS.Misc.Writers.WriterBase.WriterPlainManager.ChangePlain*
-  name: ChangePlain
-  href: api/KS.Misc.Writers.WriterBase.WriterPlainManager.html#KS_Misc_Writers_WriterBase_WriterPlainManager_ChangePlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.WriterPlainManager.ChangePlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.WriterPlainManager.ChangePlain
-  nameWithType: WriterPlainManager.ChangePlain
-- uid: KS.Misc.Writers.WriterBase.WriterPlainManager.currentPlain
-  name: currentPlain
-  href: api/KS.Misc.Writers.WriterBase.WriterPlainManager.html#KS_Misc_Writers_WriterBase_WriterPlainManager_currentPlain
-  commentId: F:KS.Misc.Writers.WriterBase.WriterPlainManager.currentPlain
-  fullName: KS.Misc.Writers.WriterBase.WriterPlainManager.currentPlain
-  nameWithType: WriterPlainManager.currentPlain
-- uid: KS.Misc.Writers.WriterBase.WriterPlainManager.CurrentPlain
-  name: CurrentPlain
-  href: api/KS.Misc.Writers.WriterBase.WriterPlainManager.html#KS_Misc_Writers_WriterBase_WriterPlainManager_CurrentPlain
-  commentId: P:KS.Misc.Writers.WriterBase.WriterPlainManager.CurrentPlain
-  fullName: KS.Misc.Writers.WriterBase.WriterPlainManager.CurrentPlain
-  nameWithType: WriterPlainManager.CurrentPlain
-- uid: KS.Misc.Writers.WriterBase.WriterPlainManager.CurrentPlain*
-  name: CurrentPlain
-  href: api/KS.Misc.Writers.WriterBase.WriterPlainManager.html#KS_Misc_Writers_WriterBase_WriterPlainManager_CurrentPlain_
-  commentId: Overload:KS.Misc.Writers.WriterBase.WriterPlainManager.CurrentPlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.WriterPlainManager.CurrentPlain
-  nameWithType: WriterPlainManager.CurrentPlain
-- uid: KS.Misc.Writers.WriterBase.WriterPlainManager.currentPlainName
-  name: currentPlainName
-  href: api/KS.Misc.Writers.WriterBase.WriterPlainManager.html#KS_Misc_Writers_WriterBase_WriterPlainManager_currentPlainName
-  commentId: F:KS.Misc.Writers.WriterBase.WriterPlainManager.currentPlainName
-  fullName: KS.Misc.Writers.WriterBase.WriterPlainManager.currentPlainName
-  nameWithType: WriterPlainManager.currentPlainName
-- uid: KS.Misc.Writers.WriterBase.WriterPlainManager.CurrentPlainName
-  name: CurrentPlainName
-  href: api/KS.Misc.Writers.WriterBase.WriterPlainManager.html#KS_Misc_Writers_WriterBase_WriterPlainManager_CurrentPlainName
-  commentId: P:KS.Misc.Writers.WriterBase.WriterPlainManager.CurrentPlainName
-  fullName: KS.Misc.Writers.WriterBase.WriterPlainManager.CurrentPlainName
-  nameWithType: WriterPlainManager.CurrentPlainName
-- uid: KS.Misc.Writers.WriterBase.WriterPlainManager.CurrentPlainName*
-  name: CurrentPlainName
-  href: api/KS.Misc.Writers.WriterBase.WriterPlainManager.html#KS_Misc_Writers_WriterBase_WriterPlainManager_CurrentPlainName_
-  commentId: Overload:KS.Misc.Writers.WriterBase.WriterPlainManager.CurrentPlainName
-  isSpec: "True"
-  fullName: KS.Misc.Writers.WriterBase.WriterPlainManager.CurrentPlainName
-  nameWithType: WriterPlainManager.CurrentPlainName
-- uid: KS.Misc.Writers.WriterBase.WriterPlainManager.plains
-  name: plains
-  href: api/KS.Misc.Writers.WriterBase.WriterPlainManager.html#KS_Misc_Writers_WriterBase_WriterPlainManager_plains
-  commentId: F:KS.Misc.Writers.WriterBase.WriterPlainManager.plains
-  fullName: KS.Misc.Writers.WriterBase.WriterPlainManager.plains
-  nameWithType: WriterPlainManager.plains
 - uid: KS.Modifications
   name: KS.Modifications
   href: api/KS.Modifications.html

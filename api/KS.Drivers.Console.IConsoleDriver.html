@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class NullPlainWriter
+    <title>Interface IConsoleDriver
    | Kernel Simulator API - Aptivi </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class NullPlainWriter
+    <meta name="title" content="Interface IConsoleDriver
    | Kernel Simulator API - Aptivi ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -78,61 +78,62 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter">
+            <article class="content wrap" id="_content" data-uid="KS.Drivers.Console.IConsoleDriver">
   
   
-  <h1 id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter" class="text-break">Class NullPlainWriter
+  <h1 id="KS_Drivers_Console_IConsoleDriver" data-uid="KS.Drivers.Console.IConsoleDriver" class="text-break">Interface IConsoleDriver
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Console driver interface</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">NullPlainWriter</span></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="KS.Drivers.IDriver.html#KS_Drivers_IDriver_DriverName">IDriver.DriverName</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Drivers.IDriver.html#KS_Drivers_IDriver_DriverType">IDriver.DriverType</a>
+    </div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="KS.Misc.Writers.WriterBase.IWriterPlain.html">IWriterPlain</a></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Writers.WriterBase.PlainWriters.html">KS.Misc.Writers.WriterBase.PlainWriters</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Drivers.Console.html">KS.Drivers.Console</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
-  <h5 id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_syntax">Syntax</h5>
+  <h5 id="KS_Drivers_Console_IConsoleDriver_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">class NullPlainWriter : IWriterPlain</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IConsoleDriver : IDriver</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WritePlain.md&amp;value=---%0Auid%3A%20KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_IConsoleDriver_WritePlain.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.IConsoleDriver.WritePlain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Misc/Writers/WriterBase/PlainWriters/NullPlainWriter.cs/#L32">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Console/IConsoleDriver.cs/#L29">View Source</a>
   </span>
-  <a id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WritePlain_" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain*"></a>
-  <h4 id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WritePlain" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain">WritePlain()</h4>
-  <div class="markdown level1 summary"><p>Outputs new line to the void</p>
+  <a id="KS_Drivers_Console_IConsoleDriver_WritePlain_" data-uid="KS.Drivers.Console.IConsoleDriver.WritePlain*"></a>
+  <h4 id="KS_Drivers_Console_IConsoleDriver_WritePlain" data-uid="KS.Drivers.Console.IConsoleDriver.WritePlain">WritePlain()</h4>
+  <div class="markdown level1 summary"><p>Outputs the new line into the terminal prompt without colors</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WritePlain()</code></pre>
+    <pre><code class="lang-csharp hljs">void WritePlain()</code></pre>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WritePlain_System_String_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain(System.String%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_IConsoleDriver_WritePlain_System_String_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.IConsoleDriver.WritePlain(System.String%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Misc/Writers/WriterBase/PlainWriters/NullPlainWriter.cs/#L26">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Console/IConsoleDriver.cs/#L37">View Source</a>
   </span>
-  <a id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WritePlain_" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain*"></a>
-  <h4 id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WritePlain_System_String_System_Boolean_System_Object___" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WritePlain(System.String,System.Boolean,System.Object[])">WritePlain(String, Boolean, Object[])</h4>
-  <div class="markdown level1 summary"><p>Outputs text to the void</p>
+  <a id="KS_Drivers_Console_IConsoleDriver_WritePlain_" data-uid="KS.Drivers.Console.IConsoleDriver.WritePlain*"></a>
+  <h4 id="KS_Drivers_Console_IConsoleDriver_WritePlain_System_String_System_Boolean_System_Object___" data-uid="KS.Drivers.Console.IConsoleDriver.WritePlain(System.String,System.Boolean,System.Object[])">WritePlain(String, Boolean, Object[])</h4>
+  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt without colors</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WritePlain(string Text, bool Line, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">void WritePlain(string Text, bool Line, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,19 +167,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteSlowlyPlain(System.String%2CSystem.Boolean%2CSystem.Double%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_IConsoleDriver_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.IConsoleDriver.WriteSlowlyPlain(System.String%2CSystem.Boolean%2CSystem.Double%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Misc/Writers/WriterBase/PlainWriters/NullPlainWriter.cs/#L38">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Console/IConsoleDriver.cs/#L46">View Source</a>
   </span>
-  <a id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteSlowlyPlain_" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteSlowlyPlain*"></a>
-  <h4 id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])">WriteSlowlyPlain(String, Boolean, Double, Object[])</h4>
-  <div class="markdown level1 summary"><p>Outputs text slowly to the void</p>
+  <a id="KS_Drivers_Console_IConsoleDriver_WriteSlowlyPlain_" data-uid="KS.Drivers.Console.IConsoleDriver.WriteSlowlyPlain*"></a>
+  <h4 id="KS_Drivers_Console_IConsoleDriver_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___" data-uid="KS.Drivers.Console.IConsoleDriver.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])">WriteSlowlyPlain(String, Boolean, Double, Object[])</h4>
+  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt slowly with no color support.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteSlowlyPlain(string msg, bool Line, double MsEachLetter, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">void WriteSlowlyPlain(string msg, bool Line, double MsEachLetter, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -218,19 +219,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Int32%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_IConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Int32%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Misc/Writers/WriterBase/PlainWriters/NullPlainWriter.cs/#L56">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Console/IConsoleDriver.cs/#L76">View Source</a>
   </span>
-  <a id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWherePlain_" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain*"></a>
-  <h4 id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])">WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])</h4>
-  <div class="markdown level1 summary"><p>Just writes text to the void without line terminator, since we can't do positioning.</p>
+  <a id="KS_Drivers_Console_IConsoleDriver_WriteWherePlain_" data-uid="KS.Drivers.Console.IConsoleDriver.WriteWherePlain*"></a>
+  <h4 id="KS_Drivers_Console_IConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___" data-uid="KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])">WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])</h4>
+  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt with location support.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteWherePlain(string msg, int Left, int Top, bool Return, int RightMargin, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">void WriteWherePlain(string msg, int Left, int Top, bool Return, int RightMargin, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -282,19 +283,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_IConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Misc/Writers/WriterBase/PlainWriters/NullPlainWriter.cs/#L50">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Console/IConsoleDriver.cs/#L65">View Source</a>
   </span>
-  <a id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWherePlain_" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain*"></a>
-  <h4 id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])">WriteWherePlain(String, Int32, Int32, Boolean, Object[])</h4>
-  <div class="markdown level1 summary"><p>Just writes text to the void without line terminator, since we can't do positioning.</p>
+  <a id="KS_Drivers_Console_IConsoleDriver_WriteWherePlain_" data-uid="KS.Drivers.Console.IConsoleDriver.WriteWherePlain*"></a>
+  <h4 id="KS_Drivers_Console_IConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___" data-uid="KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])">WriteWherePlain(String, Int32, Int32, Boolean, Object[])</h4>
+  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt with location support.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteWherePlain(string msg, int Left, int Top, bool Return, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">void WriteWherePlain(string msg, int Left, int Top, bool Return, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -340,19 +341,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_IConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Misc/Writers/WriterBase/PlainWriters/NullPlainWriter.cs/#L44">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Console/IConsoleDriver.cs/#L55">View Source</a>
   </span>
-  <a id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWherePlain_" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain*"></a>
-  <h4 id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])">WriteWherePlain(String, Int32, Int32, Object[])</h4>
-  <div class="markdown level1 summary"><p>Just writes text to the void without line terminator, since we can't do positioning.</p>
+  <a id="KS_Drivers_Console_IConsoleDriver_WriteWherePlain_" data-uid="KS.Drivers.Console.IConsoleDriver.WriteWherePlain*"></a>
+  <h4 id="KS_Drivers_Console_IConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___" data-uid="KS.Drivers.Console.IConsoleDriver.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])">WriteWherePlain(String, Int32, Int32, Object[])</h4>
+  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt with location support.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteWherePlain(string msg, int Left, int Top, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">void WriteWherePlain(string msg, int Left, int Top, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -392,19 +393,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain(System.String%2CSystem.Boolean%2CSystem.Int32%2CSystem.Int32%2CSystem.Double%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_IConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String%2CSystem.Boolean%2CSystem.Int32%2CSystem.Int32%2CSystem.Double%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Misc/Writers/WriterBase/PlainWriters/NullPlainWriter.cs/#L68">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Console/IConsoleDriver.cs/#L99">View Source</a>
   </span>
-  <a id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWhereSlowlyPlain_" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain*"></a>
-  <h4 id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])">WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])</h4>
-  <div class="markdown level1 summary"><p>Just writes text slowly to the void, since we can't do positioning.</p>
+  <a id="KS_Drivers_Console_IConsoleDriver_WriteWhereSlowlyPlain_" data-uid="KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain*"></a>
+  <h4 id="KS_Drivers_Console_IConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___" data-uid="KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])">WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])</h4>
+  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt with location support.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteWhereSlowlyPlain(string msg, bool Line, int Left, int Top, double MsEachLetter, bool Return, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">void WriteWhereSlowlyPlain(string msg, bool Line, int Left, int Top, double MsEachLetter, bool Return, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -462,19 +463,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain(System.String%2CSystem.Boolean%2CSystem.Int32%2CSystem.Int32%2CSystem.Double%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_IConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String%2CSystem.Boolean%2CSystem.Int32%2CSystem.Int32%2CSystem.Double%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Misc/Writers/WriterBase/PlainWriters/NullPlainWriter.cs/#L62">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Console/IConsoleDriver.cs/#L87">View Source</a>
   </span>
-  <a id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWhereSlowlyPlain_" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain*"></a>
-  <h4 id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])">WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])</h4>
-  <div class="markdown level1 summary"><p>Just writes text slowly to the void, since we can't do positioning.</p>
+  <a id="KS_Drivers_Console_IConsoleDriver_WriteWhereSlowlyPlain_" data-uid="KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain*"></a>
+  <h4 id="KS_Drivers_Console_IConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___" data-uid="KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])">WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])</h4>
+  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt with location support.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteWhereSlowlyPlain(string msg, bool Line, int Left, int Top, double MsEachLetter, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">void WriteWhereSlowlyPlain(string msg, bool Line, int Left, int Top, double MsEachLetter, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -526,19 +527,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWrappedPlain_System_String_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWrappedPlain(System.String%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_IConsoleDriver_WriteWrappedPlain_System_String_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.IConsoleDriver.WriteWrappedPlain(System.String%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Misc/Writers/WriterBase/PlainWriters/NullPlainWriter.cs/#L74">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Console/IConsoleDriver.cs/#L107">View Source</a>
   </span>
-  <a id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWrappedPlain_" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWrappedPlain*"></a>
-  <h4 id="KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter_WriteWrappedPlain_System_String_System_Boolean_System_Object___" data-uid="KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter.WriteWrappedPlain(System.String,System.Boolean,System.Object[])">WriteWrappedPlain(String, Boolean, Object[])</h4>
-  <div class="markdown level1 summary"><p>Just writes text to the void, since we can't do positioning.</p>
+  <a id="KS_Drivers_Console_IConsoleDriver_WriteWrappedPlain_" data-uid="KS.Drivers.Console.IConsoleDriver.WriteWrappedPlain*"></a>
+  <h4 id="KS_Drivers_Console_IConsoleDriver_WriteWrappedPlain_System_String_System_Boolean_System_Object___" data-uid="KS.Drivers.Console.IConsoleDriver.WriteWrappedPlain(System.String,System.Boolean,System.Object[])">WriteWrappedPlain(String, Boolean, Object[])</h4>
+  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt, wraps the long terminal output if needed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteWrappedPlain(string Text, bool Line, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">void WriteWrappedPlain(string Text, bool Line, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -570,10 +571,6 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="KS.Misc.Writers.WriterBase.IWriterPlain.html">IWriterPlain</a>
-  </div>
 </article>
           </div>
           
@@ -582,10 +579,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Misc_Writers_WriterBase_PlainWriters_NullPlainWriter.md&amp;value=---%0Auid%3A%20KS.Misc.Writers.WriterBase.PlainWriters.NullPlainWriter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_IConsoleDriver.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.IConsoleDriver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Misc/Writers/WriterBase/PlainWriters/NullPlainWriter.cs/#L20" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Console/IConsoleDriver.cs/#L24" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
