@@ -1451,15 +1451,15 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.ConsoleExtensions.FilterVTSequences
   nameWithType: ConsoleExtensions.FilterVTSequences
-- uid: KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions(System.String,System.Int32@,System.Int32@,System.Object[])
-  name: GetFilteredPositions(String, ref Int32, ref Int32, Object[])
-  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_GetFilteredPositions_System_String_System_Int32__System_Int32__System_Object___
-  commentId: M:KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions(System.String,System.Int32@,System.Int32@,System.Object[])
-  name.vb: GetFilteredPositions(String, ByRef Int32, ByRef Int32, Object())
-  fullName: KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions(System.String, ref System.Int32, ref System.Int32, System.Object[])
-  fullName.vb: KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions(System.String, ByRef System.Int32, ByRef System.Int32, System.Object())
-  nameWithType: ConsoleExtensions.GetFilteredPositions(String, ref Int32, ref Int32, Object[])
-  nameWithType.vb: ConsoleExtensions.GetFilteredPositions(String, ByRef Int32, ByRef Int32, Object())
+- uid: KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions(System.String,System.Object[])
+  name: GetFilteredPositions(String, Object[])
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_GetFilteredPositions_System_String_System_Object___
+  commentId: M:KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions(System.String,System.Object[])
+  name.vb: GetFilteredPositions(String, Object())
+  fullName: KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions(System.String, System.Object[])
+  fullName.vb: KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions(System.String, System.Object())
+  nameWithType: ConsoleExtensions.GetFilteredPositions(String, Object[])
+  nameWithType.vb: ConsoleExtensions.GetFilteredPositions(String, Object())
 - uid: KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions*
   name: GetFilteredPositions
   href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_GetFilteredPositions_
