@@ -2075,22 +2075,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Inputs.Input.ReadLineUnsafe
   nameWithType: Input.ReadLineUnsafe
-- uid: KS.ConsoleBase.Inputs.Input.ReadLineUntil(System.Boolean@)
-  name: ReadLineUntil(ref Boolean)
-  href: api/KS.ConsoleBase.Inputs.Input.html#KS_ConsoleBase_Inputs_Input_ReadLineUntil_System_Boolean__
-  commentId: M:KS.ConsoleBase.Inputs.Input.ReadLineUntil(System.Boolean@)
-  name.vb: ReadLineUntil(ByRef Boolean)
-  fullName: KS.ConsoleBase.Inputs.Input.ReadLineUntil(ref System.Boolean)
-  fullName.vb: KS.ConsoleBase.Inputs.Input.ReadLineUntil(ByRef System.Boolean)
-  nameWithType: Input.ReadLineUntil(ref Boolean)
-  nameWithType.vb: Input.ReadLineUntil(ByRef Boolean)
-- uid: KS.ConsoleBase.Inputs.Input.ReadLineUntil*
-  name: ReadLineUntil
-  href: api/KS.ConsoleBase.Inputs.Input.html#KS_ConsoleBase_Inputs_Input_ReadLineUntil_
-  commentId: Overload:KS.ConsoleBase.Inputs.Input.ReadLineUntil
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Inputs.Input.ReadLineUntil
-  nameWithType: Input.ReadLineUntil
 - uid: KS.ConsoleBase.Inputs.Styles
   name: KS.ConsoleBase.Inputs.Styles
   href: api/KS.ConsoleBase.Inputs.Styles.html

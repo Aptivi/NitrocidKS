@@ -136,7 +136,7 @@
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_ConsoleBase_Inputs_Input_DetectKeypress.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Inputs.Input.DetectKeypress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/ConsoleBase/Inputs/Input.cs/#L240">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/ConsoleBase/Inputs/Input.cs/#L242">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Inputs_Input_DetectKeypress_" data-uid="KS.ConsoleBase.Inputs.Input.DetectKeypress*"></a>
   <h4 id="KS_ConsoleBase_Inputs_Input_DetectKeypress" data-uid="KS.ConsoleBase.Inputs.Input.DetectKeypress">DetectKeypress()</h4>
@@ -145,8 +145,23 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DetectKeypress()</code></pre>
+    <pre><code class="lang-csharp hljs">public static ConsoleKeyInfo DetectKeypress()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ConsoleKeyInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_ConsoleBase_Inputs_Input_ReadKeyTimeout_System_Boolean_System_TimeSpan_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Inputs.Input.ReadKeyTimeout(System.Boolean%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -655,56 +670,6 @@
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">UseCtrlCAsInput</span></td>
         <td><p>Whether to treat CTRL + C as input</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_ConsoleBase_Inputs_Input_ReadLineUntil_System_Boolean__.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Inputs.Input.ReadLineUntil(System.Boolean%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/ConsoleBase/Inputs/Input.cs/#L193">View Source</a>
-  </span>
-  <a id="KS_ConsoleBase_Inputs_Input_ReadLineUntil_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineUntil*"></a>
-  <h4 id="KS_ConsoleBase_Inputs_Input_ReadLineUntil_System_Boolean__" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineUntil(System.Boolean@)">ReadLineUntil(ref Boolean)</h4>
-  <div class="markdown level1 summary"><p>Reads the next line of characters until the condition is met or the user pressed ENTER</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;It'll make its return on a new generation of ReadLine.Reboot&quot;)]
-public static string ReadLineUntil(ref bool Condition)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">Condition</span></td>
-        <td><p>The condition to be met</p>
 </td>
       </tr>
     </tbody>
