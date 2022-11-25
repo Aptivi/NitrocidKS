@@ -11589,6 +11589,32 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Debugging.Testing.TestInteractive.Open
   nameWithType: TestInteractive.Open
+- uid: KS.Kernel.Debugging.Testing.TestInteractive.PrintTestStats
+  name: PrintTestStats()
+  href: api/KS.Kernel.Debugging.Testing.TestInteractive.html#KS_Kernel_Debugging_Testing_TestInteractive_PrintTestStats
+  commentId: M:KS.Kernel.Debugging.Testing.TestInteractive.PrintTestStats
+  fullName: KS.Kernel.Debugging.Testing.TestInteractive.PrintTestStats()
+  nameWithType: TestInteractive.PrintTestStats()
+- uid: KS.Kernel.Debugging.Testing.TestInteractive.PrintTestStats*
+  name: PrintTestStats
+  href: api/KS.Kernel.Debugging.Testing.TestInteractive.html#KS_Kernel_Debugging_Testing_TestInteractive_PrintTestStats_
+  commentId: Overload:KS.Kernel.Debugging.Testing.TestInteractive.PrintTestStats
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.Testing.TestInteractive.PrintTestStats
+  nameWithType: TestInteractive.PrintTestStats
+- uid: KS.Kernel.Debugging.Testing.TestInteractive.RunFacade(KS.Kernel.Debugging.Testing.TestFacade)
+  name: RunFacade(TestFacade)
+  href: api/KS.Kernel.Debugging.Testing.TestInteractive.html#KS_Kernel_Debugging_Testing_TestInteractive_RunFacade_KS_Kernel_Debugging_Testing_TestFacade_
+  commentId: M:KS.Kernel.Debugging.Testing.TestInteractive.RunFacade(KS.Kernel.Debugging.Testing.TestFacade)
+  fullName: KS.Kernel.Debugging.Testing.TestInteractive.RunFacade(KS.Kernel.Debugging.Testing.TestFacade)
+  nameWithType: TestInteractive.RunFacade(TestFacade)
+- uid: KS.Kernel.Debugging.Testing.TestInteractive.RunFacade*
+  name: RunFacade
+  href: api/KS.Kernel.Debugging.Testing.TestInteractive.html#KS_Kernel_Debugging_Testing_TestInteractive_RunFacade_
+  commentId: Overload:KS.Kernel.Debugging.Testing.TestInteractive.RunFacade
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.Testing.TestInteractive.RunFacade
+  nameWithType: TestInteractive.RunFacade
 - uid: KS.Kernel.Debugging.Testing.TestInteractive.ShutdownFlag
   name: ShutdownFlag
   href: api/KS.Kernel.Debugging.Testing.TestInteractive.html#KS_Kernel_Debugging_Testing_TestInteractive_ShutdownFlag
