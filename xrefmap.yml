@@ -8295,6 +8295,38 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Debugging.Testing.Facades.Debug.TestName
   nameWithType: Debug.TestName
+- uid: KS.Kernel.Debugging.Testing.Facades.EnableNotifications
+  name: EnableNotifications
+  href: api/KS.Kernel.Debugging.Testing.Facades.EnableNotifications.html
+  commentId: T:KS.Kernel.Debugging.Testing.Facades.EnableNotifications
+  fullName: KS.Kernel.Debugging.Testing.Facades.EnableNotifications
+  nameWithType: EnableNotifications
+- uid: KS.Kernel.Debugging.Testing.Facades.EnableNotifications.Run
+  name: Run()
+  href: api/KS.Kernel.Debugging.Testing.Facades.EnableNotifications.html#KS_Kernel_Debugging_Testing_Facades_EnableNotifications_Run
+  commentId: M:KS.Kernel.Debugging.Testing.Facades.EnableNotifications.Run
+  fullName: KS.Kernel.Debugging.Testing.Facades.EnableNotifications.Run()
+  nameWithType: EnableNotifications.Run()
+- uid: KS.Kernel.Debugging.Testing.Facades.EnableNotifications.Run*
+  name: Run
+  href: api/KS.Kernel.Debugging.Testing.Facades.EnableNotifications.html#KS_Kernel_Debugging_Testing_Facades_EnableNotifications_Run_
+  commentId: Overload:KS.Kernel.Debugging.Testing.Facades.EnableNotifications.Run
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.Testing.Facades.EnableNotifications.Run
+  nameWithType: EnableNotifications.Run
+- uid: KS.Kernel.Debugging.Testing.Facades.EnableNotifications.TestName
+  name: TestName
+  href: api/KS.Kernel.Debugging.Testing.Facades.EnableNotifications.html#KS_Kernel_Debugging_Testing_Facades_EnableNotifications_TestName
+  commentId: P:KS.Kernel.Debugging.Testing.Facades.EnableNotifications.TestName
+  fullName: KS.Kernel.Debugging.Testing.Facades.EnableNotifications.TestName
+  nameWithType: EnableNotifications.TestName
+- uid: KS.Kernel.Debugging.Testing.Facades.EnableNotifications.TestName*
+  name: TestName
+  href: api/KS.Kernel.Debugging.Testing.Facades.EnableNotifications.html#KS_Kernel_Debugging_Testing_Facades_EnableNotifications_TestName_
+  commentId: Overload:KS.Kernel.Debugging.Testing.Facades.EnableNotifications.TestName
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.Testing.Facades.EnableNotifications.TestName
+  nameWithType: EnableNotifications.TestName
 - uid: KS.Kernel.Debugging.Testing.Facades.GetCustomSaverSetting
   name: GetCustomSaverSetting
   href: api/KS.Kernel.Debugging.Testing.Facades.GetCustomSaverSetting.html
