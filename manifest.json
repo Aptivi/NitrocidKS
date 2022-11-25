@@ -2937,7 +2937,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Animations.BSOD.BSOD.html",
-          "hash": "/V7iWwGLMf5tIdbWg7J/vFBO2A1lCoKFdHdpwXrODZ0="
+          "hash": "iYow2ZRCnrRecJRyufeJU3uUXYIch5SaDpb7Ix4bhkc="
         }
       },
       "is_incremental": false,
@@ -2961,7 +2961,31 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.BaseBSOD.html",
-          "hash": "rHSUVeXEppuMRCAyi54zqHTspgqAKl8r4Lw43A/1oPI="
+          "hash": "EyHTaRlnOt4DLjJ9NMCy/d1sMaDVsgD6DOmM9QMwDYE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.BSOD.Simulations.Windows2K.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.Windows2K.html",
+          "hash": "sAexFx49tvPUFWq4Uw3QWwE146V6XJJV8d1cZX5uthM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.BSOD.Simulations.Windows98.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.Windows98.html",
+          "hash": "JXXMjojnWuz4ORw1J36HQMlTi/MN+Vqr+b5OiLphYLM="
         }
       },
       "is_incremental": false,
@@ -3009,7 +3033,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.html",
-          "hash": "A1rLCNRpkMmUhX2SU2MQGlvUMWacdGJF4uhYJteASBw="
+          "hash": "Jb8jCUF+3wB27FtvwcpswtIlXm87e3S5BORqNMZxA1Q="
         }
       },
       "is_incremental": false,
@@ -12012,7 +12036,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "fRETDmDr3F2tha1jEjft2AhVhVnNl0J7V5Nbr5t2ouU="
+          "hash": "Ih7VTqmi2auiMVAserdrt9BJzviRyQYk7l2rdW72GYs="
         }
       },
       "is_incremental": false,
@@ -15073,7 +15097,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 999,
+          "total_file_count": 1001,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

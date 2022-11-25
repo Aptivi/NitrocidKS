@@ -1262,7 +1262,7 @@
   "api/KS.Misc.Animations.BSOD.BSOD.html": {
     "href": "api/KS.Misc.Animations.BSOD.BSOD.html",
     "title": "Class BSOD | Kernel Simulator API - Aptivi",
-    "keywords": "Class BSOD BSOD animation module Inheritance System.Object BSOD Namespace : KS.Misc.Animations.BSOD Assembly : Kernel Simulator.dll Syntax public static class BSOD Fields | Improve this Doc View Source BSODList Declaration static List<BaseBSOD> BSODList Field Value Type Description System.Collections.Generic.List < BaseBSOD > Methods | Improve this Doc View Source Simulate(BSODSettings) Simulates the BSOD animation Declaration public static void Simulate(BSODSettings Settings) Parameters Type Name Description BSODSettings Settings"
+    "keywords": "Class BSOD BSOD animation module Inheritance System.Object BSOD Namespace : KS.Misc.Animations.BSOD Assembly : Kernel Simulator.dll Syntax public static class BSOD Fields | Improve this Doc View Source BSODList Declaration static readonly List<BaseBSOD> BSODList Field Value Type Description System.Collections.Generic.List < BaseBSOD > Methods | Improve this Doc View Source Simulate(BSODSettings) Simulates the BSOD animation Declaration public static void Simulate(BSODSettings Settings) Parameters Type Name Description BSODSettings Settings"
   },
   "api/KS.Misc.Animations.BSOD.BSODSettings.html": {
     "href": "api/KS.Misc.Animations.BSOD.BSODSettings.html",
@@ -1277,12 +1277,22 @@
   "api/KS.Misc.Animations.BSOD.Simulations.BaseBSOD.html": {
     "href": "api/KS.Misc.Animations.BSOD.Simulations.BaseBSOD.html",
     "title": "Class BaseBSOD | Kernel Simulator API - Aptivi",
-    "keywords": "Class BaseBSOD Inheritance System.Object BaseBSOD WindowsXP Namespace : KS.Misc.Animations.BSOD.Simulations Assembly : Kernel Simulator.dll Syntax abstract class BaseBSOD Methods | Improve this Doc View Source Simulate() Declaration public virtual void Simulate()"
+    "keywords": "Class BaseBSOD Inheritance System.Object BaseBSOD Windows2K Windows98 WindowsXP Namespace : KS.Misc.Animations.BSOD.Simulations Assembly : Kernel Simulator.dll Syntax abstract class BaseBSOD Methods | Improve this Doc View Source Simulate() Declaration public virtual void Simulate()"
   },
   "api/KS.Misc.Animations.BSOD.Simulations.html": {
     "href": "api/KS.Misc.Animations.BSOD.Simulations.html",
     "title": "Namespace KS.Misc.Animations.BSOD.Simulations | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Misc.Animations.BSOD.Simulations Classes BaseBSOD WindowsXP WindowsXP.BugCheckParams Enums WindowsXP.BugCheckCodes"
+    "keywords": "Namespace KS.Misc.Animations.BSOD.Simulations Classes BaseBSOD Windows2K Windows98 WindowsXP WindowsXP.BugCheckParams Enums WindowsXP.BugCheckCodes"
+  },
+  "api/KS.Misc.Animations.BSOD.Simulations.Windows2K.html": {
+    "href": "api/KS.Misc.Animations.BSOD.Simulations.Windows2K.html",
+    "title": "Class Windows2K | Kernel Simulator API - Aptivi",
+    "keywords": "Class Windows2K Inheritance System.Object BaseBSOD Windows2K Namespace : KS.Misc.Animations.BSOD.Simulations Assembly : Kernel Simulator.dll Syntax class Windows2K : BaseBSOD Methods | Improve this Doc View Source Simulate() Declaration public override void Simulate() Overrides BaseBSOD.Simulate()"
+  },
+  "api/KS.Misc.Animations.BSOD.Simulations.Windows98.html": {
+    "href": "api/KS.Misc.Animations.BSOD.Simulations.Windows98.html",
+    "title": "Class Windows98 | Kernel Simulator API - Aptivi",
+    "keywords": "Class Windows98 Inheritance System.Object BaseBSOD Windows98 Namespace : KS.Misc.Animations.BSOD.Simulations Assembly : Kernel Simulator.dll Syntax class Windows98 : BaseBSOD Methods | Improve this Doc View Source Simulate() Declaration public override void Simulate() Overrides BaseBSOD.Simulate()"
   },
   "api/KS.Misc.Animations.BSOD.Simulations.WindowsXP.BugCheckCodes.html": {
     "href": "api/KS.Misc.Animations.BSOD.Simulations.WindowsXP.BugCheckCodes.html",
