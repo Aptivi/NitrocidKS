@@ -4460,6 +4460,25 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.CurrentRandomDriver
   nameWithType: DriverHandler.CurrentRandomDriver
+- uid: KS.Drivers.DriverHandler.GetConsoleDriver
+  name: GetConsoleDriver()
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetConsoleDriver
+  commentId: M:KS.Drivers.DriverHandler.GetConsoleDriver
+  fullName: KS.Drivers.DriverHandler.GetConsoleDriver()
+  nameWithType: DriverHandler.GetConsoleDriver()
+- uid: KS.Drivers.DriverHandler.GetConsoleDriver(System.String)
+  name: GetConsoleDriver(String)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetConsoleDriver_System_String_
+  commentId: M:KS.Drivers.DriverHandler.GetConsoleDriver(System.String)
+  fullName: KS.Drivers.DriverHandler.GetConsoleDriver(System.String)
+  nameWithType: DriverHandler.GetConsoleDriver(String)
+- uid: KS.Drivers.DriverHandler.GetConsoleDriver*
+  name: GetConsoleDriver
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetConsoleDriver_
+  commentId: Overload:KS.Drivers.DriverHandler.GetConsoleDriver
+  isSpec: "True"
+  fullName: KS.Drivers.DriverHandler.GetConsoleDriver
+  nameWithType: DriverHandler.GetConsoleDriver
 - uid: KS.Drivers.DriverHandler.GetDriver(KS.Drivers.DriverTypes,System.String)
   name: GetDriver(DriverTypes, String)
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetDriver_KS_Drivers_DriverTypes_System_String_
@@ -4473,6 +4492,25 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.GetDriver
   nameWithType: DriverHandler.GetDriver
+- uid: KS.Drivers.DriverHandler.GetRandomDriver
+  name: GetRandomDriver()
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetRandomDriver
+  commentId: M:KS.Drivers.DriverHandler.GetRandomDriver
+  fullName: KS.Drivers.DriverHandler.GetRandomDriver()
+  nameWithType: DriverHandler.GetRandomDriver()
+- uid: KS.Drivers.DriverHandler.GetRandomDriver(System.String)
+  name: GetRandomDriver(String)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetRandomDriver_System_String_
+  commentId: M:KS.Drivers.DriverHandler.GetRandomDriver(System.String)
+  fullName: KS.Drivers.DriverHandler.GetRandomDriver(System.String)
+  nameWithType: DriverHandler.GetRandomDriver(String)
+- uid: KS.Drivers.DriverHandler.GetRandomDriver*
+  name: GetRandomDriver
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetRandomDriver_
+  commentId: Overload:KS.Drivers.DriverHandler.GetRandomDriver
+  isSpec: "True"
+  fullName: KS.Drivers.DriverHandler.GetRandomDriver
+  nameWithType: DriverHandler.GetRandomDriver
 - uid: KS.Drivers.DriverHandler.randomDrivers
   name: randomDrivers
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_randomDrivers
