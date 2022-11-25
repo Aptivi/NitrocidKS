@@ -405,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.ConsoleExtensions.html",
-          "hash": "m4DcbFttvS2oPhY+C9UtzKfh/RD5wXBAqO4XCNV+9G4="
+          "hash": "KwUerfn4ospihXzXNposzr46q8H2qYH+mYLDBCPQE0Q="
         }
       },
       "is_incremental": false,
@@ -2093,6 +2093,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.html",
+          "hash": "WdFQ2x3WGsuHMAHKqmZOYTJfx7hJTPOrePJ1uhh8DBM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ProbeHardware.yml",
       "output": {
         ".html": {
@@ -2505,7 +2517,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.html",
-          "hash": "JK8137ltlRQMfLJR8H3ccpAxZFFBWcaw+Y/GYWp5+iE="
+          "hash": "LBoAEvTd6oGrJWBtgL0/4ZZ2oPY45CruJlsbO+Lrteo="
         }
       },
       "is_incremental": false,
@@ -2517,7 +2529,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.TestFacade.html",
-          "hash": "mTE84tAmRHZUv4Wj+CaN7aUW8x6jb5mwpXPT0gYq59o="
+          "hash": "KTfoF3tDgLOmspTvmznN86VSvye4hJyueEghBcwZd6M="
         }
       },
       "is_incremental": false,
@@ -2529,7 +2541,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.TestInteractive.html",
-          "hash": "BIT2BnbGs7eBUCboGbJXPlmnTyIabbKZnGB+vK74BMo="
+          "hash": "nDabQjMpc988S6I5gOjuHTWoDKAHj+a2gWhGJ2Ip84Y="
         }
       },
       "is_incremental": false,
@@ -12036,7 +12048,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Ih7VTqmi2auiMVAserdrt9BJzviRyQYk7l2rdW72GYs="
+          "hash": "2WfC2B4oMpeg+8GS0B/NgtHRC7cRvf2ANAIqM84PlxA="
         }
       },
       "is_incremental": false,
@@ -15097,7 +15109,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1001,
+          "total_file_count": 1002,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

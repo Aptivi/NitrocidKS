@@ -10387,6 +10387,38 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Debugging.Testing.Facades.PrintWithNewLines.TestName
   nameWithType: PrintWithNewLines.TestName
+- uid: KS.Kernel.Debugging.Testing.Facades.PrintWithNulls
+  name: PrintWithNulls
+  href: api/KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.html
+  commentId: T:KS.Kernel.Debugging.Testing.Facades.PrintWithNulls
+  fullName: KS.Kernel.Debugging.Testing.Facades.PrintWithNulls
+  nameWithType: PrintWithNulls
+- uid: KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.Run
+  name: Run()
+  href: api/KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.html#KS_Kernel_Debugging_Testing_Facades_PrintWithNulls_Run
+  commentId: M:KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.Run
+  fullName: KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.Run()
+  nameWithType: PrintWithNulls.Run()
+- uid: KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.Run*
+  name: Run
+  href: api/KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.html#KS_Kernel_Debugging_Testing_Facades_PrintWithNulls_Run_
+  commentId: Overload:KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.Run
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.Run
+  nameWithType: PrintWithNulls.Run
+- uid: KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.TestName
+  name: TestName
+  href: api/KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.html#KS_Kernel_Debugging_Testing_Facades_PrintWithNulls_TestName
+  commentId: P:KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.TestName
+  fullName: KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.TestName
+  nameWithType: PrintWithNulls.TestName
+- uid: KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.TestName*
+  name: TestName
+  href: api/KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.html#KS_Kernel_Debugging_Testing_Facades_PrintWithNulls_TestName_
+  commentId: Overload:KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.TestName
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.Testing.Facades.PrintWithNulls.TestName
+  nameWithType: PrintWithNulls.TestName
 - uid: KS.Kernel.Debugging.Testing.Facades.ProbeHardware
   name: ProbeHardware
   href: api/KS.Kernel.Debugging.Testing.Facades.ProbeHardware.html
