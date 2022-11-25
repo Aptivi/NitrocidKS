@@ -3957,7 +3957,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.BaseScreensaver.html",
-          "hash": "vplOFjrmWIedHeC9q1PSfZG+20hRgbUqzZu37BfO44I="
+          "hash": "5uYIIWrmut0ohosXXVfL/6v6qVIhSxAiZZeqUZYtJRo="
         }
       },
       "is_incremental": false,
@@ -4865,6 +4865,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.NewYearDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.NewYearDisplay.html",
+          "hash": "89aIWFAoOpVpis/ztxGad3K9gFaYan33gceupct96OY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.Displays.NoiseDisplay.yml",
       "output": {
         ".html": {
@@ -5277,7 +5289,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.html",
-          "hash": "jAS21FwTbJe3NNaOZPm6yAIuXjuy2MfJB8H8kp6rGVI="
+          "hash": "ZdTK+8yE4ZVtZHt7zkjpR9ljLKJEo73w6Pf8kt2WIsM="
         }
       },
       "is_incremental": false,
@@ -5301,7 +5313,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Screensaver.html",
-          "hash": "enZIIrnMe6hrMu6bHUBsrjthkrSNVNOCyEQJtgmrKXo="
+          "hash": "M3jjeV2nCTonKti5iFDrLenrrDDYTmLjhJpXGZ+/rR4="
         }
       },
       "is_incremental": false,
@@ -12048,7 +12060,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "2WfC2B4oMpeg+8GS0B/NgtHRC7cRvf2ANAIqM84PlxA="
+          "hash": "UjD1dz0CckPWoZihaMMFq+D8iPCwxDQbOsieoVrZReg="
         }
       },
       "is_incremental": false,
@@ -15109,7 +15121,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1002,
+          "total_file_count": 1003,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
