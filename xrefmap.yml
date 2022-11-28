@@ -33537,12 +33537,6 @@ references:
   commentId: M:KS.Misc.Threading.ThreadManager.SleepNoBlock(System.Int64,KS.Misc.Threading.KernelThread)
   fullName: KS.Misc.Threading.ThreadManager.SleepNoBlock(System.Int64, KS.Misc.Threading.KernelThread)
   nameWithType: ThreadManager.SleepNoBlock(Int64, KernelThread)
-- uid: KS.Misc.Threading.ThreadManager.SleepNoBlock(System.Int64,System.ComponentModel.BackgroundWorker)
-  name: SleepNoBlock(Int64, BackgroundWorker)
-  href: api/KS.Misc.Threading.ThreadManager.html#KS_Misc_Threading_ThreadManager_SleepNoBlock_System_Int64_System_ComponentModel_BackgroundWorker_
-  commentId: M:KS.Misc.Threading.ThreadManager.SleepNoBlock(System.Int64,System.ComponentModel.BackgroundWorker)
-  fullName: KS.Misc.Threading.ThreadManager.SleepNoBlock(System.Int64, System.ComponentModel.BackgroundWorker)
-  nameWithType: ThreadManager.SleepNoBlock(Int64, BackgroundWorker)
 - uid: KS.Misc.Threading.ThreadManager.SleepNoBlock(System.Int64,System.Threading.Thread)
   name: SleepNoBlock(Int64, Thread)
   href: api/KS.Misc.Threading.ThreadManager.html#KS_Misc_Threading_ThreadManager_SleepNoBlock_System_Int64_System_Threading_Thread_
