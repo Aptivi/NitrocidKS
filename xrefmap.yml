@@ -14850,6 +14850,25 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Animations.BSOD.Simulations.Linux.Simulate
   nameWithType: Linux.Simulate
+- uid: KS.Misc.Animations.BSOD.Simulations.VGA
+  name: VGA
+  href: api/KS.Misc.Animations.BSOD.Simulations.VGA.html
+  commentId: T:KS.Misc.Animations.BSOD.Simulations.VGA
+  fullName: KS.Misc.Animations.BSOD.Simulations.VGA
+  nameWithType: VGA
+- uid: KS.Misc.Animations.BSOD.Simulations.VGA.Simulate
+  name: Simulate()
+  href: api/KS.Misc.Animations.BSOD.Simulations.VGA.html#KS_Misc_Animations_BSOD_Simulations_VGA_Simulate
+  commentId: M:KS.Misc.Animations.BSOD.Simulations.VGA.Simulate
+  fullName: KS.Misc.Animations.BSOD.Simulations.VGA.Simulate()
+  nameWithType: VGA.Simulate()
+- uid: KS.Misc.Animations.BSOD.Simulations.VGA.Simulate*
+  name: Simulate
+  href: api/KS.Misc.Animations.BSOD.Simulations.VGA.html#KS_Misc_Animations_BSOD_Simulations_VGA_Simulate_
+  commentId: Overload:KS.Misc.Animations.BSOD.Simulations.VGA.Simulate
+  isSpec: "True"
+  fullName: KS.Misc.Animations.BSOD.Simulations.VGA.Simulate
+  nameWithType: VGA.Simulate
 - uid: KS.Misc.Animations.BSOD.Simulations.Windows2K
   name: Windows2K
   href: api/KS.Misc.Animations.BSOD.Simulations.Windows2K.html
@@ -15612,6 +15631,135 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Animations.FaderBack.FaderBackSettings.FaderBackMinimumRedColorLevel
   nameWithType: FaderBackSettings.FaderBackMinimumRedColorLevel
+- uid: KS.Misc.Animations.Glitch
+  name: KS.Misc.Animations.Glitch
+  href: api/KS.Misc.Animations.Glitch.html
+  commentId: N:KS.Misc.Animations.Glitch
+  fullName: KS.Misc.Animations.Glitch
+  nameWithType: KS.Misc.Animations.Glitch
+- uid: KS.Misc.Animations.Glitch.Glitch
+  name: Glitch
+  href: api/KS.Misc.Animations.Glitch.Glitch.html
+  commentId: T:KS.Misc.Animations.Glitch.Glitch
+  fullName: KS.Misc.Animations.Glitch.Glitch
+  nameWithType: Glitch
+- uid: KS.Misc.Animations.Glitch.Glitch.Simulate(KS.Misc.Animations.Glitch.GlitchSettings)
+  name: Simulate(GlitchSettings)
+  href: api/KS.Misc.Animations.Glitch.Glitch.html#KS_Misc_Animations_Glitch_Glitch_Simulate_KS_Misc_Animations_Glitch_GlitchSettings_
+  commentId: M:KS.Misc.Animations.Glitch.Glitch.Simulate(KS.Misc.Animations.Glitch.GlitchSettings)
+  fullName: KS.Misc.Animations.Glitch.Glitch.Simulate(KS.Misc.Animations.Glitch.GlitchSettings)
+  nameWithType: Glitch.Simulate(GlitchSettings)
+- uid: KS.Misc.Animations.Glitch.Glitch.Simulate*
+  name: Simulate
+  href: api/KS.Misc.Animations.Glitch.Glitch.html#KS_Misc_Animations_Glitch_Glitch_Simulate_
+  commentId: Overload:KS.Misc.Animations.Glitch.Glitch.Simulate
+  isSpec: "True"
+  fullName: KS.Misc.Animations.Glitch.Glitch.Simulate
+  nameWithType: Glitch.Simulate
+- uid: KS.Misc.Animations.Glitch.GlitchColorType
+  name: GlitchColorType
+  href: api/KS.Misc.Animations.Glitch.GlitchColorType.html
+  commentId: T:KS.Misc.Animations.Glitch.GlitchColorType
+  fullName: KS.Misc.Animations.Glitch.GlitchColorType
+  nameWithType: GlitchColorType
+- uid: KS.Misc.Animations.Glitch.GlitchColorType.Blue
+  name: Blue
+  href: api/KS.Misc.Animations.Glitch.GlitchColorType.html#KS_Misc_Animations_Glitch_GlitchColorType_Blue
+  commentId: F:KS.Misc.Animations.Glitch.GlitchColorType.Blue
+  fullName: KS.Misc.Animations.Glitch.GlitchColorType.Blue
+  nameWithType: GlitchColorType.Blue
+- uid: KS.Misc.Animations.Glitch.GlitchColorType.Green
+  name: Green
+  href: api/KS.Misc.Animations.Glitch.GlitchColorType.html#KS_Misc_Animations_Glitch_GlitchColorType_Green
+  commentId: F:KS.Misc.Animations.Glitch.GlitchColorType.Green
+  fullName: KS.Misc.Animations.Glitch.GlitchColorType.Green
+  nameWithType: GlitchColorType.Green
+- uid: KS.Misc.Animations.Glitch.GlitchColorType.Red
+  name: Red
+  href: api/KS.Misc.Animations.Glitch.GlitchColorType.html#KS_Misc_Animations_Glitch_GlitchColorType_Red
+  commentId: F:KS.Misc.Animations.Glitch.GlitchColorType.Red
+  fullName: KS.Misc.Animations.Glitch.GlitchColorType.Red
+  nameWithType: GlitchColorType.Red
+- uid: KS.Misc.Animations.Glitch.GlitchSettings
+  name: GlitchSettings
+  href: api/KS.Misc.Animations.Glitch.GlitchSettings.html
+  commentId: T:KS.Misc.Animations.Glitch.GlitchSettings
+  fullName: KS.Misc.Animations.Glitch.GlitchSettings
+  nameWithType: GlitchSettings
+- uid: KS.Misc.Animations.Glitch.GlitchSettings._GlitchDelay
+  name: _GlitchDelay
+  href: api/KS.Misc.Animations.Glitch.GlitchSettings.html#KS_Misc_Animations_Glitch_GlitchSettings__GlitchDelay
+  commentId: F:KS.Misc.Animations.Glitch.GlitchSettings._GlitchDelay
+  fullName: KS.Misc.Animations.Glitch.GlitchSettings._GlitchDelay
+  nameWithType: GlitchSettings._GlitchDelay
+- uid: KS.Misc.Animations.Glitch.GlitchSettings._GlitchDensity
+  name: _GlitchDensity
+  href: api/KS.Misc.Animations.Glitch.GlitchSettings.html#KS_Misc_Animations_Glitch_GlitchSettings__GlitchDensity
+  commentId: F:KS.Misc.Animations.Glitch.GlitchSettings._GlitchDensity
+  fullName: KS.Misc.Animations.Glitch.GlitchSettings._GlitchDensity
+  nameWithType: GlitchSettings._GlitchDensity
+- uid: KS.Misc.Animations.Glitch.GlitchSettings.GlitchDelay
+  name: GlitchDelay
+  href: api/KS.Misc.Animations.Glitch.GlitchSettings.html#KS_Misc_Animations_Glitch_GlitchSettings_GlitchDelay
+  commentId: P:KS.Misc.Animations.Glitch.GlitchSettings.GlitchDelay
+  fullName: KS.Misc.Animations.Glitch.GlitchSettings.GlitchDelay
+  nameWithType: GlitchSettings.GlitchDelay
+- uid: KS.Misc.Animations.Glitch.GlitchSettings.GlitchDelay*
+  name: GlitchDelay
+  href: api/KS.Misc.Animations.Glitch.GlitchSettings.html#KS_Misc_Animations_Glitch_GlitchSettings_GlitchDelay_
+  commentId: Overload:KS.Misc.Animations.Glitch.GlitchSettings.GlitchDelay
+  isSpec: "True"
+  fullName: KS.Misc.Animations.Glitch.GlitchSettings.GlitchDelay
+  nameWithType: GlitchSettings.GlitchDelay
+- uid: KS.Misc.Animations.Glitch.GlitchSettings.GlitchDensity
+  name: GlitchDensity
+  href: api/KS.Misc.Animations.Glitch.GlitchSettings.html#KS_Misc_Animations_Glitch_GlitchSettings_GlitchDensity
+  commentId: P:KS.Misc.Animations.Glitch.GlitchSettings.GlitchDensity
+  fullName: KS.Misc.Animations.Glitch.GlitchSettings.GlitchDensity
+  nameWithType: GlitchSettings.GlitchDensity
+- uid: KS.Misc.Animations.Glitch.GlitchSettings.GlitchDensity*
+  name: GlitchDensity
+  href: api/KS.Misc.Animations.Glitch.GlitchSettings.html#KS_Misc_Animations_Glitch_GlitchSettings_GlitchDensity_
+  commentId: Overload:KS.Misc.Animations.Glitch.GlitchSettings.GlitchDensity
+  isSpec: "True"
+  fullName: KS.Misc.Animations.Glitch.GlitchSettings.GlitchDensity
+  nameWithType: GlitchSettings.GlitchDensity
+- uid: KS.Misc.Animations.Glitch.GlitchType
+  name: GlitchType
+  href: api/KS.Misc.Animations.Glitch.GlitchType.html
+  commentId: T:KS.Misc.Animations.Glitch.GlitchType
+  fullName: KS.Misc.Animations.Glitch.GlitchType
+  nameWithType: GlitchType
+- uid: KS.Misc.Animations.Glitch.GlitchType.RandomLetter
+  name: RandomLetter
+  href: api/KS.Misc.Animations.Glitch.GlitchType.html#KS_Misc_Animations_Glitch_GlitchType_RandomLetter
+  commentId: F:KS.Misc.Animations.Glitch.GlitchType.RandomLetter
+  fullName: KS.Misc.Animations.Glitch.GlitchType.RandomLetter
+  nameWithType: GlitchType.RandomLetter
+- uid: KS.Misc.Animations.Glitch.GlitchType.RandomSymbol
+  name: RandomSymbol
+  href: api/KS.Misc.Animations.Glitch.GlitchType.html#KS_Misc_Animations_Glitch_GlitchType_RandomSymbol
+  commentId: F:KS.Misc.Animations.Glitch.GlitchType.RandomSymbol
+  fullName: KS.Misc.Animations.Glitch.GlitchType.RandomSymbol
+  nameWithType: GlitchType.RandomSymbol
+- uid: KS.Misc.Animations.Glitch.GlitchType.RedGreenBlueColor
+  name: RedGreenBlueColor
+  href: api/KS.Misc.Animations.Glitch.GlitchType.html#KS_Misc_Animations_Glitch_GlitchType_RedGreenBlueColor
+  commentId: F:KS.Misc.Animations.Glitch.GlitchType.RedGreenBlueColor
+  fullName: KS.Misc.Animations.Glitch.GlitchType.RedGreenBlueColor
+  nameWithType: GlitchType.RedGreenBlueColor
+- uid: KS.Misc.Animations.Glitch.GlitchType.RedGreenBlueColorWithRandomLetter
+  name: RedGreenBlueColorWithRandomLetter
+  href: api/KS.Misc.Animations.Glitch.GlitchType.html#KS_Misc_Animations_Glitch_GlitchType_RedGreenBlueColorWithRandomLetter
+  commentId: F:KS.Misc.Animations.Glitch.GlitchType.RedGreenBlueColorWithRandomLetter
+  fullName: KS.Misc.Animations.Glitch.GlitchType.RedGreenBlueColorWithRandomLetter
+  nameWithType: GlitchType.RedGreenBlueColorWithRandomLetter
+- uid: KS.Misc.Animations.Glitch.GlitchType.RedGreenBlueColorWithRandomSymbol
+  name: RedGreenBlueColorWithRandomSymbol
+  href: api/KS.Misc.Animations.Glitch.GlitchType.html#KS_Misc_Animations_Glitch_GlitchType_RedGreenBlueColorWithRandomSymbol
+  commentId: F:KS.Misc.Animations.Glitch.GlitchType.RedGreenBlueColorWithRandomSymbol
+  fullName: KS.Misc.Animations.Glitch.GlitchType.RedGreenBlueColorWithRandomSymbol
+  nameWithType: GlitchType.RedGreenBlueColorWithRandomSymbol
 - uid: KS.Misc.Animations.Pulse
   name: KS.Misc.Animations.Pulse
   href: api/KS.Misc.Animations.Pulse.html
@@ -24430,36 +24578,18 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.Displays.FlashTextSettings.FlashTextWrite
   nameWithType: FlashTextSettings.FlashTextWrite
-- uid: KS.Misc.Screensaver.Displays.GlitchColorType
-  name: GlitchColorType
-  href: api/KS.Misc.Screensaver.Displays.GlitchColorType.html
-  commentId: T:KS.Misc.Screensaver.Displays.GlitchColorType
-  fullName: KS.Misc.Screensaver.Displays.GlitchColorType
-  nameWithType: GlitchColorType
-- uid: KS.Misc.Screensaver.Displays.GlitchColorType.Blue
-  name: Blue
-  href: api/KS.Misc.Screensaver.Displays.GlitchColorType.html#KS_Misc_Screensaver_Displays_GlitchColorType_Blue
-  commentId: F:KS.Misc.Screensaver.Displays.GlitchColorType.Blue
-  fullName: KS.Misc.Screensaver.Displays.GlitchColorType.Blue
-  nameWithType: GlitchColorType.Blue
-- uid: KS.Misc.Screensaver.Displays.GlitchColorType.Green
-  name: Green
-  href: api/KS.Misc.Screensaver.Displays.GlitchColorType.html#KS_Misc_Screensaver_Displays_GlitchColorType_Green
-  commentId: F:KS.Misc.Screensaver.Displays.GlitchColorType.Green
-  fullName: KS.Misc.Screensaver.Displays.GlitchColorType.Green
-  nameWithType: GlitchColorType.Green
-- uid: KS.Misc.Screensaver.Displays.GlitchColorType.Red
-  name: Red
-  href: api/KS.Misc.Screensaver.Displays.GlitchColorType.html#KS_Misc_Screensaver_Displays_GlitchColorType_Red
-  commentId: F:KS.Misc.Screensaver.Displays.GlitchColorType.Red
-  fullName: KS.Misc.Screensaver.Displays.GlitchColorType.Red
-  nameWithType: GlitchColorType.Red
 - uid: KS.Misc.Screensaver.Displays.GlitchDisplay
   name: GlitchDisplay
   href: api/KS.Misc.Screensaver.Displays.GlitchDisplay.html
   commentId: T:KS.Misc.Screensaver.Displays.GlitchDisplay
   fullName: KS.Misc.Screensaver.Displays.GlitchDisplay
   nameWithType: GlitchDisplay
+- uid: KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchSettingsInstance
+  name: GlitchSettingsInstance
+  href: api/KS.Misc.Screensaver.Displays.GlitchDisplay.html#KS_Misc_Screensaver_Displays_GlitchDisplay_GlitchSettingsInstance
+  commentId: F:KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchSettingsInstance
+  fullName: KS.Misc.Screensaver.Displays.GlitchDisplay.GlitchSettingsInstance
+  nameWithType: GlitchDisplay.GlitchSettingsInstance
 - uid: KS.Misc.Screensaver.Displays.GlitchDisplay.ScreensaverLogic
   name: ScreensaverLogic()
   href: api/KS.Misc.Screensaver.Displays.GlitchDisplay.html#KS_Misc_Screensaver_Displays_GlitchDisplay_ScreensaverLogic
@@ -24543,42 +24673,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.Displays.GlitchSettings.GlitchDensity
   nameWithType: GlitchSettings.GlitchDensity
-- uid: KS.Misc.Screensaver.Displays.GlitchType
-  name: GlitchType
-  href: api/KS.Misc.Screensaver.Displays.GlitchType.html
-  commentId: T:KS.Misc.Screensaver.Displays.GlitchType
-  fullName: KS.Misc.Screensaver.Displays.GlitchType
-  nameWithType: GlitchType
-- uid: KS.Misc.Screensaver.Displays.GlitchType.RandomLetter
-  name: RandomLetter
-  href: api/KS.Misc.Screensaver.Displays.GlitchType.html#KS_Misc_Screensaver_Displays_GlitchType_RandomLetter
-  commentId: F:KS.Misc.Screensaver.Displays.GlitchType.RandomLetter
-  fullName: KS.Misc.Screensaver.Displays.GlitchType.RandomLetter
-  nameWithType: GlitchType.RandomLetter
-- uid: KS.Misc.Screensaver.Displays.GlitchType.RandomSymbol
-  name: RandomSymbol
-  href: api/KS.Misc.Screensaver.Displays.GlitchType.html#KS_Misc_Screensaver_Displays_GlitchType_RandomSymbol
-  commentId: F:KS.Misc.Screensaver.Displays.GlitchType.RandomSymbol
-  fullName: KS.Misc.Screensaver.Displays.GlitchType.RandomSymbol
-  nameWithType: GlitchType.RandomSymbol
-- uid: KS.Misc.Screensaver.Displays.GlitchType.RedGreenBlueColor
-  name: RedGreenBlueColor
-  href: api/KS.Misc.Screensaver.Displays.GlitchType.html#KS_Misc_Screensaver_Displays_GlitchType_RedGreenBlueColor
-  commentId: F:KS.Misc.Screensaver.Displays.GlitchType.RedGreenBlueColor
-  fullName: KS.Misc.Screensaver.Displays.GlitchType.RedGreenBlueColor
-  nameWithType: GlitchType.RedGreenBlueColor
-- uid: KS.Misc.Screensaver.Displays.GlitchType.RedGreenBlueColorWithRandomLetter
-  name: RedGreenBlueColorWithRandomLetter
-  href: api/KS.Misc.Screensaver.Displays.GlitchType.html#KS_Misc_Screensaver_Displays_GlitchType_RedGreenBlueColorWithRandomLetter
-  commentId: F:KS.Misc.Screensaver.Displays.GlitchType.RedGreenBlueColorWithRandomLetter
-  fullName: KS.Misc.Screensaver.Displays.GlitchType.RedGreenBlueColorWithRandomLetter
-  nameWithType: GlitchType.RedGreenBlueColorWithRandomLetter
-- uid: KS.Misc.Screensaver.Displays.GlitchType.RedGreenBlueColorWithRandomSymbol
-  name: RedGreenBlueColorWithRandomSymbol
-  href: api/KS.Misc.Screensaver.Displays.GlitchType.html#KS_Misc_Screensaver_Displays_GlitchType_RedGreenBlueColorWithRandomSymbol
-  commentId: F:KS.Misc.Screensaver.Displays.GlitchType.RedGreenBlueColorWithRandomSymbol
-  fullName: KS.Misc.Screensaver.Displays.GlitchType.RedGreenBlueColorWithRandomSymbol
-  nameWithType: GlitchType.RedGreenBlueColorWithRandomSymbol
 - uid: KS.Misc.Screensaver.Displays.GlitterColorDisplay
   name: GlitterColorDisplay
   href: api/KS.Misc.Screensaver.Displays.GlitterColorDisplay.html

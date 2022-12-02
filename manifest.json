@@ -2949,7 +2949,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Animations.BSOD.BSOD.html",
-          "hash": "4IC3tgfqLDrpymj095Q7rb4FDXQJI8HWHBfcW8wiRxg="
+          "hash": "NdH/Viz+AGMVdOFdguDp6+SNV207KmKMdnDBgPh9JTM="
         }
       },
       "is_incremental": false,
@@ -2973,7 +2973,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.BaseBSOD.html",
-          "hash": "GaoVEpmQBxC1nIudKPqxWnLtOnJYFxefMqpjKWqxlI0="
+          "hash": "FTbSAqc3MEUbYAjs8p7uUul+u3Jzqo8J4wXdH4sXP8A="
         }
       },
       "is_incremental": false,
@@ -2986,6 +2986,18 @@
         ".html": {
           "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.Linux.html",
           "hash": "5U8+dYFdkueuSoSJdQFoIOzmE7KDY6OtIkJWK3YhTno="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.BSOD.Simulations.VGA.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.VGA.html",
+          "hash": "jjyACYQ76OvRhqGqoJ6a5W7jok7iiFixgqSNjI5HZLQ="
         }
       },
       "is_incremental": false,
@@ -3057,7 +3069,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.html",
-          "hash": "G0p3BtOugkAAnBq+CZnlB3MXZT5l3nM3FN76EO6Oysc="
+          "hash": "su0TxXbraPqLD6zljwOcLLjJu/d8E7dQ4KzSGnJdiQI="
         }
       },
       "is_incremental": false,
@@ -3286,6 +3298,66 @@
         ".html": {
           "relative_path": "api/KS.Misc.Animations.FaderBack.html",
           "hash": "2ZCzwVjQeNyFhLm4JonM0uqCYNhoLmUUT5D7d4c1O84="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.Glitch.Glitch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.Glitch.Glitch.html",
+          "hash": "6zCiu0TwZZaY7lGyciOmExz8JAQvZsNvKMaSjlE5Y3o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.Glitch.GlitchColorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.Glitch.GlitchColorType.html",
+          "hash": "rchQYuTl+DLGVIv6sSfLrywqRV6Vfe/fvIPYTefJkxU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.Glitch.GlitchSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.Glitch.GlitchSettings.html",
+          "hash": "xbAcTLCwyQHk9D/qduNnugsmVMmRmNB5aX5fRXRzbF4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.Glitch.GlitchType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.Glitch.GlitchType.html",
+          "hash": "NvJIJ3L9O57f9TKhdJmrbW9mpDnH1TyF8fa2MA8YtaY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.Glitch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.Glitch.html",
+          "hash": "wu++t6m4d1aQx4oXn2xoCoexRROANCXGzmCvxW1zThY="
         }
       },
       "is_incremental": false,
@@ -4517,23 +4589,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.GlitchColorType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.GlitchColorType.html",
-          "hash": "aaHd+BUrYhVTMMME/LcoGRQZAHkwj/LWg5zsfAdWr6A="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.Displays.GlitchDisplay.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.GlitchDisplay.html",
-          "hash": "CoMqf1rp71wtXS46L/5eGiT5Cy6sAvyAjcqwftlRSbY="
+          "hash": "TfE0vV+G93TgUoA0wMPQXZqJuXcO3k94bg6av7ouxyw="
         }
       },
       "is_incremental": false,
@@ -4545,19 +4605,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.GlitchSettings.html",
-          "hash": "INQnNyokEru5Im2Yq0PWFiiINqRikmM70jkGYzUavKs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.GlitchType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.GlitchType.html",
-          "hash": "bPbBt+6a+PAcjkBlvG7YBkykWv+BzWbDQ9sKPhApyN4="
+          "hash": "6pMjt1VjxcOnV1XY2813B09yrzAKYNHhQd2Kgms0qU8="
         }
       },
       "is_incremental": false,
@@ -5301,7 +5349,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.html",
-          "hash": "ZdTK+8yE4ZVtZHt7zkjpR9ljLKJEo73w6Pf8kt2WIsM="
+          "hash": "Uhc36mpjqN8Ri244VEw1cEpbbr87esd03EbNLZFChgU="
         }
       },
       "is_incremental": false,
@@ -12072,7 +12120,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "e59q0g+wd6gJW85+O+cTY4TkS7BK0MphM/ajN8neEg8="
+          "hash": "2vvsjXxpLK9iz3IzzWg4EdzAyVT8ZxY50QMZayzY1gU="
         }
       },
       "is_incremental": false,
@@ -15133,7 +15181,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1004,
+          "total_file_count": 1008,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
