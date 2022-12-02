@@ -13500,6 +13500,12 @@ references:
   commentId: F:KS.Languages.LanguageInfo.LanguageResource
   fullName: KS.Languages.LanguageInfo.LanguageResource
   nameWithType: LanguageInfo.LanguageResource
+- uid: KS.Languages.LanguageInfo.Strings
+  name: Strings
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Strings
+  commentId: F:KS.Languages.LanguageInfo.Strings
+  fullName: KS.Languages.LanguageInfo.Strings
+  nameWithType: LanguageInfo.Strings
 - uid: KS.Languages.LanguageInfo.ThreeLetterLanguageName
   name: ThreeLetterLanguageName
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_ThreeLetterLanguageName
@@ -13524,10 +13530,23 @@ references:
   commentId: F:KS.Languages.LanguageManager.BaseLanguages
   fullName: KS.Languages.LanguageManager.BaseLanguages
   nameWithType: LanguageManager.BaseLanguages
+- uid: KS.Languages.LanguageManager.currentLanguage
+  name: currentLanguage
+  href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_currentLanguage
+  commentId: F:KS.Languages.LanguageManager.currentLanguage
+  fullName: KS.Languages.LanguageManager.currentLanguage
+  nameWithType: LanguageManager.currentLanguage
 - uid: KS.Languages.LanguageManager.CurrentLanguage
   name: CurrentLanguage
   href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_CurrentLanguage
-  commentId: F:KS.Languages.LanguageManager.CurrentLanguage
+  commentId: P:KS.Languages.LanguageManager.CurrentLanguage
+  fullName: KS.Languages.LanguageManager.CurrentLanguage
+  nameWithType: LanguageManager.CurrentLanguage
+- uid: KS.Languages.LanguageManager.CurrentLanguage*
+  name: CurrentLanguage
+  href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_CurrentLanguage_
+  commentId: Overload:KS.Languages.LanguageManager.CurrentLanguage
+  isSpec: "True"
   fullName: KS.Languages.LanguageManager.CurrentLanguage
   nameWithType: LanguageManager.CurrentLanguage
 - uid: KS.Languages.LanguageManager.CustomLanguages
@@ -13664,6 +13683,12 @@ references:
   commentId: M:KS.Languages.Translate.DoTranslation(System.String)
   fullName: KS.Languages.Translate.DoTranslation(System.String)
   nameWithType: Translate.DoTranslation(String)
+- uid: KS.Languages.Translate.DoTranslation(System.String,KS.Languages.LanguageInfo)
+  name: DoTranslation(String, LanguageInfo)
+  href: api/KS.Languages.Translate.html#KS_Languages_Translate_DoTranslation_System_String_KS_Languages_LanguageInfo_
+  commentId: M:KS.Languages.Translate.DoTranslation(System.String,KS.Languages.LanguageInfo)
+  fullName: KS.Languages.Translate.DoTranslation(System.String, KS.Languages.LanguageInfo)
+  nameWithType: Translate.DoTranslation(String, LanguageInfo)
 - uid: KS.Languages.Translate.DoTranslation(System.String,System.String)
   name: DoTranslation(String, String)
   href: api/KS.Languages.Translate.html#KS_Languages_Translate_DoTranslation_System_String_System_String_
@@ -13677,6 +13702,12 @@ references:
   isSpec: "True"
   fullName: KS.Languages.Translate.DoTranslation
   nameWithType: Translate.DoTranslation
+- uid: KS.Languages.Translate.PrepareDict(KS.Languages.LanguageInfo)
+  name: PrepareDict(LanguageInfo)
+  href: api/KS.Languages.Translate.html#KS_Languages_Translate_PrepareDict_KS_Languages_LanguageInfo_
+  commentId: M:KS.Languages.Translate.PrepareDict(KS.Languages.LanguageInfo)
+  fullName: KS.Languages.Translate.PrepareDict(KS.Languages.LanguageInfo)
+  nameWithType: Translate.PrepareDict(LanguageInfo)
 - uid: KS.Languages.Translate.PrepareDict(System.String)
   name: PrepareDict(String)
   href: api/KS.Languages.Translate.html#KS_Languages_Translate_PrepareDict_System_String_
@@ -13690,12 +13721,6 @@ references:
   isSpec: "True"
   fullName: KS.Languages.Translate.PrepareDict
   nameWithType: Translate.PrepareDict
-- uid: KS.Languages.Translate.translatedString
-  name: translatedString
-  href: api/KS.Languages.Translate.html#KS_Languages_Translate_translatedString
-  commentId: F:KS.Languages.Translate.translatedString
-  fullName: KS.Languages.Translate.translatedString
-  nameWithType: Translate.translatedString
 - uid: KS.ManPages
   name: KS.ManPages
   href: api/KS.ManPages.html
@@ -32771,6 +32796,12 @@ references:
   commentId: F:KS.Misc.Settings.SettingsKeyType.SIntSlider
   fullName: KS.Misc.Settings.SettingsKeyType.SIntSlider
   nameWithType: SettingsKeyType.SIntSlider
+- uid: KS.Misc.Settings.SettingsKeyType.SLang
+  name: SLang
+  href: api/KS.Misc.Settings.SettingsKeyType.html#KS_Misc_Settings_SettingsKeyType_SLang
+  commentId: F:KS.Misc.Settings.SettingsKeyType.SLang
+  fullName: KS.Misc.Settings.SettingsKeyType.SLang
+  nameWithType: SettingsKeyType.SLang
 - uid: KS.Misc.Settings.SettingsKeyType.SList
   name: SList
   href: api/KS.Misc.Settings.SettingsKeyType.html#KS_Misc_Settings_SettingsKeyType_SList
