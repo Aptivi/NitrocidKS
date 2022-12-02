@@ -57373,19 +57373,6 @@ references:
   isSpec: "True"
   fullName: KS.Users.UserManagement.ChangeUsername
   nameWithType: UserManagement.ChangeUsername
-- uid: KS.Users.UserManagement.FirstUserTrigger
-  name: FirstUserTrigger()
-  href: api/KS.Users.UserManagement.html#KS_Users_UserManagement_FirstUserTrigger
-  commentId: M:KS.Users.UserManagement.FirstUserTrigger
-  fullName: KS.Users.UserManagement.FirstUserTrigger()
-  nameWithType: UserManagement.FirstUserTrigger()
-- uid: KS.Users.UserManagement.FirstUserTrigger*
-  name: FirstUserTrigger
-  href: api/KS.Users.UserManagement.html#KS_Users_UserManagement_FirstUserTrigger_
-  commentId: Overload:KS.Users.UserManagement.FirstUserTrigger
-  isSpec: "True"
-  fullName: KS.Users.UserManagement.FirstUserTrigger
-  nameWithType: UserManagement.FirstUserTrigger
 - uid: KS.Users.UserManagement.GetUserDollarSign
   name: GetUserDollarSign()
   href: api/KS.Users.UserManagement.html#KS_Users_UserManagement_GetUserDollarSign
