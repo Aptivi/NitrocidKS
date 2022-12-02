@@ -2949,7 +2949,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Animations.BSOD.BSOD.html",
-          "hash": "iYow2ZRCnrRecJRyufeJU3uUXYIch5SaDpb7Ix4bhkc="
+          "hash": "4IC3tgfqLDrpymj095Q7rb4FDXQJI8HWHBfcW8wiRxg="
         }
       },
       "is_incremental": false,
@@ -2973,7 +2973,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.BaseBSOD.html",
-          "hash": "EyHTaRlnOt4DLjJ9NMCy/d1sMaDVsgD6DOmM9QMwDYE="
+          "hash": "GaoVEpmQBxC1nIudKPqxWnLtOnJYFxefMqpjKWqxlI0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.BSOD.Simulations.Linux.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.Linux.html",
+          "hash": "5U8+dYFdkueuSoSJdQFoIOzmE7KDY6OtIkJWK3YhTno="
         }
       },
       "is_incremental": false,
@@ -3045,7 +3057,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Animations.BSOD.Simulations.html",
-          "hash": "Jb8jCUF+3wB27FtvwcpswtIlXm87e3S5BORqNMZxA1Q="
+          "hash": "G0p3BtOugkAAnBq+CZnlB3MXZT5l3nM3FN76EO6Oysc="
         }
       },
       "is_incremental": false,
@@ -12060,7 +12072,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "UjD1dz0CckPWoZihaMMFq+D8iPCwxDQbOsieoVrZReg="
+          "hash": "e59q0g+wd6gJW85+O+cTY4TkS7BK0MphM/ajN8neEg8="
         }
       },
       "is_incremental": false,
@@ -15121,7 +15133,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1003,
+          "total_file_count": 1004,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

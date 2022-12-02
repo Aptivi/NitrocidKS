@@ -1282,12 +1282,17 @@
   "api/KS.Misc.Animations.BSOD.Simulations.BaseBSOD.html": {
     "href": "api/KS.Misc.Animations.BSOD.Simulations.BaseBSOD.html",
     "title": "Class BaseBSOD | Kernel Simulator API - Aptivi",
-    "keywords": "Class BaseBSOD Inheritance System.Object BaseBSOD Windows2K Windows98 WindowsXP Namespace : KS.Misc.Animations.BSOD.Simulations Assembly : Kernel Simulator.dll Syntax abstract class BaseBSOD Methods | Improve this Doc View Source Simulate() Declaration public virtual void Simulate()"
+    "keywords": "Class BaseBSOD Inheritance System.Object BaseBSOD Linux Windows2K Windows98 WindowsXP Namespace : KS.Misc.Animations.BSOD.Simulations Assembly : Kernel Simulator.dll Syntax abstract class BaseBSOD Methods | Improve this Doc View Source Simulate() Declaration public virtual void Simulate()"
   },
   "api/KS.Misc.Animations.BSOD.Simulations.html": {
     "href": "api/KS.Misc.Animations.BSOD.Simulations.html",
     "title": "Namespace KS.Misc.Animations.BSOD.Simulations | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Misc.Animations.BSOD.Simulations Classes BaseBSOD Windows2K Windows98 WindowsXP WindowsXP.BugCheckParams Enums WindowsXP.BugCheckCodes"
+    "keywords": "Namespace KS.Misc.Animations.BSOD.Simulations Classes BaseBSOD Linux Windows2K Windows98 WindowsXP WindowsXP.BugCheckParams Enums WindowsXP.BugCheckCodes"
+  },
+  "api/KS.Misc.Animations.BSOD.Simulations.Linux.html": {
+    "href": "api/KS.Misc.Animations.BSOD.Simulations.Linux.html",
+    "title": "Class Linux | Kernel Simulator API - Aptivi",
+    "keywords": "Class Linux Inheritance System.Object BaseBSOD Linux Namespace : KS.Misc.Animations.BSOD.Simulations Assembly : Kernel Simulator.dll Syntax class Linux : BaseBSOD Methods | Improve this Doc View Source Simulate() Declaration public override void Simulate() Overrides BaseBSOD.Simulate()"
   },
   "api/KS.Misc.Animations.BSOD.Simulations.Windows2K.html": {
     "href": "api/KS.Misc.Animations.BSOD.Simulations.Windows2K.html",

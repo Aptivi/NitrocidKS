@@ -14831,6 +14831,25 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Animations.BSOD.Simulations.BaseBSOD.Simulate
   nameWithType: BaseBSOD.Simulate
+- uid: KS.Misc.Animations.BSOD.Simulations.Linux
+  name: Linux
+  href: api/KS.Misc.Animations.BSOD.Simulations.Linux.html
+  commentId: T:KS.Misc.Animations.BSOD.Simulations.Linux
+  fullName: KS.Misc.Animations.BSOD.Simulations.Linux
+  nameWithType: Linux
+- uid: KS.Misc.Animations.BSOD.Simulations.Linux.Simulate
+  name: Simulate()
+  href: api/KS.Misc.Animations.BSOD.Simulations.Linux.html#KS_Misc_Animations_BSOD_Simulations_Linux_Simulate
+  commentId: M:KS.Misc.Animations.BSOD.Simulations.Linux.Simulate
+  fullName: KS.Misc.Animations.BSOD.Simulations.Linux.Simulate()
+  nameWithType: Linux.Simulate()
+- uid: KS.Misc.Animations.BSOD.Simulations.Linux.Simulate*
+  name: Simulate
+  href: api/KS.Misc.Animations.BSOD.Simulations.Linux.html#KS_Misc_Animations_BSOD_Simulations_Linux_Simulate_
+  commentId: Overload:KS.Misc.Animations.BSOD.Simulations.Linux.Simulate
+  isSpec: "True"
+  fullName: KS.Misc.Animations.BSOD.Simulations.Linux.Simulate
+  nameWithType: Linux.Simulate
 - uid: KS.Misc.Animations.BSOD.Simulations.Windows2K
   name: Windows2K
   href: api/KS.Misc.Animations.BSOD.Simulations.Windows2K.html
