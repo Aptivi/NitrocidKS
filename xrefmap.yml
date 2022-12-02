@@ -4589,6 +4589,18 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.CurrentRandomDriver
   nameWithType: DriverHandler.CurrentRandomDriver
+- uid: KS.Drivers.DriverHandler.customConsoleDrivers
+  name: customConsoleDrivers
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_customConsoleDrivers
+  commentId: F:KS.Drivers.DriverHandler.customConsoleDrivers
+  fullName: KS.Drivers.DriverHandler.customConsoleDrivers
+  nameWithType: DriverHandler.customConsoleDrivers
+- uid: KS.Drivers.DriverHandler.customRandomDrivers
+  name: customRandomDrivers
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_customRandomDrivers
+  commentId: F:KS.Drivers.DriverHandler.customRandomDrivers
+  fullName: KS.Drivers.DriverHandler.customRandomDrivers
+  nameWithType: DriverHandler.customRandomDrivers
 - uid: KS.Drivers.DriverHandler.GetConsoleDriver
   name: GetConsoleDriver()
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetConsoleDriver
@@ -4640,12 +4652,51 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.GetRandomDriver
   nameWithType: DriverHandler.GetRandomDriver
+- uid: KS.Drivers.DriverHandler.IsRegistered(KS.Drivers.DriverTypes,System.String)
+  name: IsRegistered(DriverTypes, String)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_IsRegistered_KS_Drivers_DriverTypes_System_String_
+  commentId: M:KS.Drivers.DriverHandler.IsRegistered(KS.Drivers.DriverTypes,System.String)
+  fullName: KS.Drivers.DriverHandler.IsRegistered(KS.Drivers.DriverTypes, System.String)
+  nameWithType: DriverHandler.IsRegistered(DriverTypes, String)
+- uid: KS.Drivers.DriverHandler.IsRegistered*
+  name: IsRegistered
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_IsRegistered_
+  commentId: Overload:KS.Drivers.DriverHandler.IsRegistered
+  isSpec: "True"
+  fullName: KS.Drivers.DriverHandler.IsRegistered
+  nameWithType: DriverHandler.IsRegistered
 - uid: KS.Drivers.DriverHandler.randomDrivers
   name: randomDrivers
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_randomDrivers
   commentId: F:KS.Drivers.DriverHandler.randomDrivers
   fullName: KS.Drivers.DriverHandler.randomDrivers
   nameWithType: DriverHandler.randomDrivers
+- uid: KS.Drivers.DriverHandler.RegisterDriver(KS.Drivers.DriverTypes,KS.Drivers.IDriver)
+  name: RegisterDriver(DriverTypes, IDriver)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_RegisterDriver_KS_Drivers_DriverTypes_KS_Drivers_IDriver_
+  commentId: M:KS.Drivers.DriverHandler.RegisterDriver(KS.Drivers.DriverTypes,KS.Drivers.IDriver)
+  fullName: KS.Drivers.DriverHandler.RegisterDriver(KS.Drivers.DriverTypes, KS.Drivers.IDriver)
+  nameWithType: DriverHandler.RegisterDriver(DriverTypes, IDriver)
+- uid: KS.Drivers.DriverHandler.RegisterDriver*
+  name: RegisterDriver
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_RegisterDriver_
+  commentId: Overload:KS.Drivers.DriverHandler.RegisterDriver
+  isSpec: "True"
+  fullName: KS.Drivers.DriverHandler.RegisterDriver
+  nameWithType: DriverHandler.RegisterDriver
+- uid: KS.Drivers.DriverHandler.UnregisterDriver(KS.Drivers.DriverTypes,System.String)
+  name: UnregisterDriver(DriverTypes, String)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_UnregisterDriver_KS_Drivers_DriverTypes_System_String_
+  commentId: M:KS.Drivers.DriverHandler.UnregisterDriver(KS.Drivers.DriverTypes,System.String)
+  fullName: KS.Drivers.DriverHandler.UnregisterDriver(KS.Drivers.DriverTypes, System.String)
+  nameWithType: DriverHandler.UnregisterDriver(DriverTypes, String)
+- uid: KS.Drivers.DriverHandler.UnregisterDriver*
+  name: UnregisterDriver
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_UnregisterDriver_
+  commentId: Overload:KS.Drivers.DriverHandler.UnregisterDriver
+  isSpec: "True"
+  fullName: KS.Drivers.DriverHandler.UnregisterDriver
+  nameWithType: DriverHandler.UnregisterDriver
 - uid: KS.Drivers.DriverTypes
   name: DriverTypes
   href: api/KS.Drivers.DriverTypes.html
