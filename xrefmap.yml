@@ -13622,12 +13622,6 @@ references:
   commentId: F:KS.Languages.LanguageInfo.FullLanguageName
   fullName: KS.Languages.LanguageInfo.FullLanguageName
   nameWithType: LanguageInfo.FullLanguageName
-- uid: KS.Languages.LanguageInfo.LanguageResource
-  name: LanguageResource
-  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_LanguageResource
-  commentId: F:KS.Languages.LanguageInfo.LanguageResource
-  fullName: KS.Languages.LanguageInfo.LanguageResource
-  nameWithType: LanguageInfo.LanguageResource
 - uid: KS.Languages.LanguageInfo.Strings
   name: Strings
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Strings
@@ -13830,25 +13824,6 @@ references:
   isSpec: "True"
   fullName: KS.Languages.Translate.DoTranslation
   nameWithType: Translate.DoTranslation
-- uid: KS.Languages.Translate.PrepareDict(KS.Languages.LanguageInfo)
-  name: PrepareDict(LanguageInfo)
-  href: api/KS.Languages.Translate.html#KS_Languages_Translate_PrepareDict_KS_Languages_LanguageInfo_
-  commentId: M:KS.Languages.Translate.PrepareDict(KS.Languages.LanguageInfo)
-  fullName: KS.Languages.Translate.PrepareDict(KS.Languages.LanguageInfo)
-  nameWithType: Translate.PrepareDict(LanguageInfo)
-- uid: KS.Languages.Translate.PrepareDict(System.String)
-  name: PrepareDict(String)
-  href: api/KS.Languages.Translate.html#KS_Languages_Translate_PrepareDict_System_String_
-  commentId: M:KS.Languages.Translate.PrepareDict(System.String)
-  fullName: KS.Languages.Translate.PrepareDict(System.String)
-  nameWithType: Translate.PrepareDict(String)
-- uid: KS.Languages.Translate.PrepareDict*
-  name: PrepareDict
-  href: api/KS.Languages.Translate.html#KS_Languages_Translate_PrepareDict_
-  commentId: Overload:KS.Languages.Translate.PrepareDict
-  isSpec: "True"
-  fullName: KS.Languages.Translate.PrepareDict
-  nameWithType: Translate.PrepareDict
 - uid: KS.ManPages
   name: KS.ManPages
   href: api/KS.ManPages.html
