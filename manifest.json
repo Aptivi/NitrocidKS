@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Arguments.ArgumentBase.ArgumentExecutor.html",
-          "hash": "hS2Z5tx/XeYogByvKeekweEwe9wFvkE5o6QB+JR69jI="
+          "hash": "M/mHbtuqDa+sYlMn+urlyjY7A+oTkQKJgagzIUt528g="
         }
       },
       "is_incremental": false,
@@ -233,6 +233,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument.html",
+          "hash": "+esvxOd1GLyucHsYV2ZKbffZVMXfT5D8X6J9PRtBLfA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_TestInteractiveArgument.yml",
       "output": {
         ".html": {
@@ -249,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Arguments.CommandLineArguments.html",
-          "hash": "jFR1kgI4e/IyfjSIWlutwLpGk+rcANNcLmqmDBqLp1c="
+          "hash": "40gq9cYkGTrONd2b/yKzuJKfV1wtO/Lzt6nXyjI9Bqs="
         }
       },
       "is_incremental": false,
@@ -581,11 +593,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Console.Consoles.BaseConsoleDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html",
+          "hash": "KWR/h88rSlBO8eJDxzqxyB+hH0S4XaS+dUgi7ITcYgI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.Console.Consoles.File.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Console.Consoles.File.html",
-          "hash": "m/wyuzL2UvL9DDH9Y1M0xJI8kEpC2pRtHQn8R+r34vo="
+          "hash": "71bOkWGQ5KvG2AsOb4mzDNlmhyeUc69eaRNizj6fxmE="
         }
       },
       "is_incremental": false,
@@ -597,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Console.Consoles.Null.html",
-          "hash": "YbtallGR3pNtlRT3uOo/ayFfMkz2J5Jkj8BfNx8uP/M="
+          "hash": "c2ajn5Q9osZzVXlCdTy/YNGpyvj2a/pD+daXWbfG5LA="
         }
       },
       "is_incremental": false,
@@ -609,7 +633,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Console.Consoles.Terminal.html",
-          "hash": "I8CzoYP/45cOhvEr74X6EyCy0BOEnby+vTDGWbB0kpI="
+          "hash": "pFFRk8JtdjrIPWT6rtzlshCoslk8b2WQhvPDANrG2dI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Console.Consoles.TerminalDebug.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Console.Consoles.TerminalDebug.html",
+          "hash": "j7rU9EF3WBPVC28Y/Cjt14FQykPlK28MhJjCTEVKB/8="
         }
       },
       "is_incremental": false,
@@ -621,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Console.Consoles.html",
-          "hash": "LQicHGFENmva0gxEN4IlYkjxIxXl7nwWoBabHlCaQls="
+          "hash": "JW3gxjkwth0o+zrRH/p9yz42ZGn1oLnzRQxh77i0dH0="
         }
       },
       "is_incremental": false,
@@ -657,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.DriverHandler.html",
-          "hash": "Vwqf7eu0dQRptEcbsMlKKpyAWNe6cXkCQqP1fbie9B8="
+          "hash": "nn4yYaCpfsoCltk4AiCfzNB/O+MiFAGMye3iQy20JIQ="
         }
       },
       "is_incremental": false,
@@ -12120,7 +12156,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "2vvsjXxpLK9iz3IzzWg4EdzAyVT8ZxY50QMZayzY1gU="
+          "hash": "V+tUQuVlCMUii6m/Dg+FeyohiLjvbUTXrhPnLHTtagk="
         }
       },
       "is_incremental": false,
@@ -15181,7 +15217,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1008,
+          "total_file_count": 1011,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -573,6 +573,28 @@ references:
   isSpec: "True"
   fullName: KS.Arguments.CommandLineArguments.CommandLine_ResetArgument.Execute
   nameWithType: CommandLine_ResetArgument.Execute
+- uid: KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument
+  name: CommandLine_TerminalDebugArgument
+  href: api/KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument.html
+  commentId: T:KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument
+  fullName: KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument
+  nameWithType: CommandLine_TerminalDebugArgument
+- uid: KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument.Execute(System.String,System.String[],System.String[])
+  name: Execute(String, String[], String[])
+  href: api/KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument.html#KS_Arguments_CommandLineArguments_CommandLine_TerminalDebugArgument_Execute_System_String_System_String___System_String___
+  commentId: M:KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument.Execute(System.String,System.String[],System.String[])
+  name.vb: Execute(String, String(), String())
+  fullName: KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument.Execute(System.String, System.String[], System.String[])
+  fullName.vb: KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument.Execute(System.String, System.String(), System.String())
+  nameWithType: CommandLine_TerminalDebugArgument.Execute(String, String[], String[])
+  nameWithType.vb: CommandLine_TerminalDebugArgument.Execute(String, String(), String())
+- uid: KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument.Execute*
+  name: Execute
+  href: api/KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument.html#KS_Arguments_CommandLineArguments_CommandLine_TerminalDebugArgument_Execute_
+  commentId: Overload:KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument.Execute
+  isSpec: "True"
+  fullName: KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument.Execute
+  nameWithType: CommandLine_TerminalDebugArgument.Execute
 - uid: KS.Arguments.CommandLineArguments.CommandLine_TestInteractiveArgument
   name: CommandLine_TestInteractiveArgument
   href: api/KS.Arguments.CommandLineArguments.CommandLine_TestInteractiveArgument.html
@@ -2398,6 +2420,531 @@ references:
   commentId: N:KS.Drivers.Console.Consoles
   fullName: KS.Drivers.Console.Consoles
   nameWithType: KS.Drivers.Console.Consoles
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver
+  name: BaseConsoleDriver
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html
+  commentId: T:KS.Drivers.Console.Consoles.BaseConsoleDriver
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver
+  nameWithType: BaseConsoleDriver
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver._dumb
+  name: _dumb
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver__dumb
+  commentId: F:KS.Drivers.Console.Consoles.BaseConsoleDriver._dumb
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver._dumb
+  nameWithType: BaseConsoleDriver._dumb
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver._dumbSet
+  name: _dumbSet
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver__dumbSet
+  commentId: F:KS.Drivers.Console.Consoles.BaseConsoleDriver._dumbSet
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver._dumbSet
+  nameWithType: BaseConsoleDriver._dumbSet
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.BackgroundColor
+  name: BackgroundColor
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_BackgroundColor
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.BackgroundColor
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.BackgroundColor
+  nameWithType: BaseConsoleDriver.BackgroundColor
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.BackgroundColor*
+  name: BackgroundColor
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_BackgroundColor_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.BackgroundColor
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.BackgroundColor
+  nameWithType: BaseConsoleDriver.BackgroundColor
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.Beep
+  name: Beep()
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Beep
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.Beep
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.Beep()
+  nameWithType: BaseConsoleDriver.Beep()
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.Beep*
+  name: Beep
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Beep_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.Beep
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.Beep
+  nameWithType: BaseConsoleDriver.Beep
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.BufferHeight
+  name: BufferHeight
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_BufferHeight
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.BufferHeight
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.BufferHeight
+  nameWithType: BaseConsoleDriver.BufferHeight
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.BufferHeight*
+  name: BufferHeight
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_BufferHeight_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.BufferHeight
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.BufferHeight
+  nameWithType: BaseConsoleDriver.BufferHeight
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.BufferWidth
+  name: BufferWidth
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_BufferWidth
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.BufferWidth
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.BufferWidth
+  nameWithType: BaseConsoleDriver.BufferWidth
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.BufferWidth*
+  name: BufferWidth
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_BufferWidth_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.BufferWidth
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.BufferWidth
+  nameWithType: BaseConsoleDriver.BufferWidth
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.Clear(System.Boolean)
+  name: Clear(Boolean)
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Clear_System_Boolean_
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.Clear(System.Boolean)
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.Clear(System.Boolean)
+  nameWithType: BaseConsoleDriver.Clear(Boolean)
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.Clear*
+  name: Clear
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Clear_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.Clear
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.Clear
+  nameWithType: BaseConsoleDriver.Clear
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorLeft
+  name: CursorLeft
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_CursorLeft
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorLeft
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorLeft
+  nameWithType: BaseConsoleDriver.CursorLeft
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorLeft*
+  name: CursorLeft
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_CursorLeft_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorLeft
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorLeft
+  nameWithType: BaseConsoleDriver.CursorLeft
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorTop
+  name: CursorTop
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_CursorTop
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorTop
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorTop
+  nameWithType: BaseConsoleDriver.CursorTop
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorTop*
+  name: CursorTop
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_CursorTop_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorTop
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorTop
+  nameWithType: BaseConsoleDriver.CursorTop
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorVisible
+  name: CursorVisible
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_CursorVisible
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorVisible
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorVisible
+  nameWithType: BaseConsoleDriver.CursorVisible
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorVisible*
+  name: CursorVisible
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_CursorVisible_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorVisible
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.CursorVisible
+  nameWithType: BaseConsoleDriver.CursorVisible
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverName
+  name: DriverName
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_DriverName
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverName
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverName
+  nameWithType: BaseConsoleDriver.DriverName
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverName*
+  name: DriverName
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_DriverName_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverName
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverName
+  nameWithType: BaseConsoleDriver.DriverName
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverType
+  name: DriverType
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_DriverType
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverType
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverType
+  nameWithType: BaseConsoleDriver.DriverType
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverType*
+  name: DriverType
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_DriverType_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverType
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverType
+  nameWithType: BaseConsoleDriver.DriverType
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.ForegroundColor
+  name: ForegroundColor
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_ForegroundColor
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.ForegroundColor
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.ForegroundColor
+  nameWithType: BaseConsoleDriver.ForegroundColor
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.ForegroundColor*
+  name: ForegroundColor
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_ForegroundColor_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.ForegroundColor
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.ForegroundColor
+  nameWithType: BaseConsoleDriver.ForegroundColor
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.InputEncoding
+  name: InputEncoding
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_InputEncoding
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.InputEncoding
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.InputEncoding
+  nameWithType: BaseConsoleDriver.InputEncoding
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.InputEncoding*
+  name: InputEncoding
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_InputEncoding_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.InputEncoding
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.InputEncoding
+  nameWithType: BaseConsoleDriver.InputEncoding
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.IsDumb
+  name: IsDumb
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_IsDumb
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.IsDumb
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.IsDumb
+  nameWithType: BaseConsoleDriver.IsDumb
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.IsDumb*
+  name: IsDumb
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_IsDumb_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.IsDumb
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.IsDumb
+  nameWithType: BaseConsoleDriver.IsDumb
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.KeyAvailable
+  name: KeyAvailable
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_KeyAvailable
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.KeyAvailable
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.KeyAvailable
+  nameWithType: BaseConsoleDriver.KeyAvailable
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.KeyAvailable*
+  name: KeyAvailable
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_KeyAvailable_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.KeyAvailable
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.KeyAvailable
+  nameWithType: BaseConsoleDriver.KeyAvailable
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardError
+  name: OpenStandardError()
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_OpenStandardError
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardError
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardError()
+  nameWithType: BaseConsoleDriver.OpenStandardError()
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardError*
+  name: OpenStandardError
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_OpenStandardError_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardError
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardError
+  nameWithType: BaseConsoleDriver.OpenStandardError
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardInput
+  name: OpenStandardInput()
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_OpenStandardInput
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardInput
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardInput()
+  nameWithType: BaseConsoleDriver.OpenStandardInput()
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardInput*
+  name: OpenStandardInput
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_OpenStandardInput_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardInput
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardInput
+  nameWithType: BaseConsoleDriver.OpenStandardInput
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardOutput
+  name: OpenStandardOutput()
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_OpenStandardOutput
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardOutput
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardOutput()
+  nameWithType: BaseConsoleDriver.OpenStandardOutput()
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardOutput*
+  name: OpenStandardOutput
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_OpenStandardOutput_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardOutput
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.OpenStandardOutput
+  nameWithType: BaseConsoleDriver.OpenStandardOutput
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.Out
+  name: Out
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Out
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.Out
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.Out
+  nameWithType: BaseConsoleDriver.Out
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.Out*
+  name: Out
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Out_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.Out
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.Out
+  nameWithType: BaseConsoleDriver.Out
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.OutputEncoding
+  name: OutputEncoding
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_OutputEncoding
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.OutputEncoding
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.OutputEncoding
+  nameWithType: BaseConsoleDriver.OutputEncoding
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.OutputEncoding*
+  name: OutputEncoding
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_OutputEncoding_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.OutputEncoding
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.OutputEncoding
+  nameWithType: BaseConsoleDriver.OutputEncoding
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.ReadKey(System.Boolean)
+  name: ReadKey(Boolean)
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_ReadKey_System_Boolean_
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.ReadKey(System.Boolean)
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.ReadKey(System.Boolean)
+  nameWithType: BaseConsoleDriver.ReadKey(Boolean)
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.ReadKey*
+  name: ReadKey
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_ReadKey_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.ReadKey
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.ReadKey
+  nameWithType: BaseConsoleDriver.ReadKey
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.ResetColor
+  name: ResetColor()
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_ResetColor
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.ResetColor
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.ResetColor()
+  nameWithType: BaseConsoleDriver.ResetColor()
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.ResetColor*
+  name: ResetColor
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_ResetColor_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.ResetColor
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.ResetColor
+  nameWithType: BaseConsoleDriver.ResetColor
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.SetCursorPosition(System.Int32,System.Int32)
+  name: SetCursorPosition(Int32, Int32)
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_SetCursorPosition_System_Int32_System_Int32_
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.SetCursorPosition(System.Int32,System.Int32)
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.SetCursorPosition(System.Int32, System.Int32)
+  nameWithType: BaseConsoleDriver.SetCursorPosition(Int32, Int32)
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.SetCursorPosition*
+  name: SetCursorPosition
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_SetCursorPosition_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.SetCursorPosition
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.SetCursorPosition
+  nameWithType: BaseConsoleDriver.SetCursorPosition
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.SetOut(System.IO.TextWriter)
+  name: SetOut(TextWriter)
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_SetOut_System_IO_TextWriter_
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.SetOut(System.IO.TextWriter)
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.SetOut(System.IO.TextWriter)
+  nameWithType: BaseConsoleDriver.SetOut(TextWriter)
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.SetOut*
+  name: SetOut
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_SetOut_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.SetOut
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.SetOut
+  nameWithType: BaseConsoleDriver.SetOut
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowHeight
+  name: WindowHeight
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WindowHeight
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowHeight
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowHeight
+  nameWithType: BaseConsoleDriver.WindowHeight
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowHeight*
+  name: WindowHeight
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WindowHeight_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowHeight
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowHeight
+  nameWithType: BaseConsoleDriver.WindowHeight
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowTop
+  name: WindowTop
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WindowTop
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowTop
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowTop
+  nameWithType: BaseConsoleDriver.WindowTop
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowTop*
+  name: WindowTop
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WindowTop_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowTop
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowTop
+  nameWithType: BaseConsoleDriver.WindowTop
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowWidth
+  name: WindowWidth
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WindowWidth
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowWidth
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowWidth
+  nameWithType: BaseConsoleDriver.WindowWidth
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowWidth*
+  name: WindowWidth
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WindowWidth_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowWidth
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WindowWidth
+  nameWithType: BaseConsoleDriver.WindowWidth
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.Write(System.Char)
+  name: Write(Char)
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Write_System_Char_
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.Write(System.Char)
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.Write(System.Char)
+  nameWithType: BaseConsoleDriver.Write(Char)
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.Write(System.String)
+  name: Write(String)
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Write_System_String_
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.Write(System.String)
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.Write(System.String)
+  nameWithType: BaseConsoleDriver.Write(String)
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.Write(System.String,System.Object[])
+  name: Write(String, Object[])
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Write_System_String_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.Write(System.String,System.Object[])
+  name.vb: Write(String, Object())
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.Write(System.String, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.BaseConsoleDriver.Write(System.String, System.Object())
+  nameWithType: BaseConsoleDriver.Write(String, Object[])
+  nameWithType.vb: BaseConsoleDriver.Write(String, Object())
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.Write*
+  name: Write
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Write_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.Write
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.Write
+  nameWithType: BaseConsoleDriver.Write
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteLine
+  name: WriteLine()
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteLine
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteLine
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteLine()
+  nameWithType: BaseConsoleDriver.WriteLine()
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteLine(System.String)
+  name: WriteLine(String)
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteLine_System_String_
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteLine(System.String)
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteLine(System.String)
+  nameWithType: BaseConsoleDriver.WriteLine(String)
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteLine(System.String,System.Object[])
+  name: WriteLine(String, Object[])
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteLine_System_String_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteLine(System.String,System.Object[])
+  name.vb: WriteLine(String, Object())
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteLine(System.String, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteLine(System.String, System.Object())
+  nameWithType: BaseConsoleDriver.WriteLine(String, Object[])
+  nameWithType.vb: BaseConsoleDriver.WriteLine(String, Object())
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteLine*
+  name: WriteLine
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteLine_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteLine
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteLine
+  nameWithType: BaseConsoleDriver.WriteLine
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WritePlain
+  name: WritePlain()
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WritePlain
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.WritePlain
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WritePlain()
+  nameWithType: BaseConsoleDriver.WritePlain()
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WritePlain(System.String,System.Boolean,System.Object[])
+  name: WritePlain(String, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WritePlain_System_String_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.WritePlain(System.String,System.Boolean,System.Object[])
+  name.vb: WritePlain(String, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WritePlain(System.String, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.BaseConsoleDriver.WritePlain(System.String, System.Boolean, System.Object())
+  nameWithType: BaseConsoleDriver.WritePlain(String, Boolean, Object[])
+  nameWithType.vb: BaseConsoleDriver.WritePlain(String, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WritePlain*
+  name: WritePlain
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WritePlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.WritePlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WritePlain
+  nameWithType: BaseConsoleDriver.WritePlain
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
+  name: WriteSlowlyPlain(String, Boolean, Double, Object[])
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
+  name.vb: WriteSlowlyPlain(String, Boolean, Double, Object())
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object())
+  nameWithType: BaseConsoleDriver.WriteSlowlyPlain(String, Boolean, Double, Object[])
+  nameWithType.vb: BaseConsoleDriver.WriteSlowlyPlain(String, Boolean, Double, Object())
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteSlowlyPlain*
+  name: WriteSlowlyPlain
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteSlowlyPlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteSlowlyPlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteSlowlyPlain
+  nameWithType: BaseConsoleDriver.WriteSlowlyPlain
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object())
+  nameWithType: BaseConsoleDriver.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
+  nameWithType.vb: BaseConsoleDriver.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object())
+  nameWithType: BaseConsoleDriver.WriteWherePlain(String, Int32, Int32, Boolean, Object[])
+  nameWithType.vb: BaseConsoleDriver.WriteWherePlain(String, Int32, Int32, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name: WriteWherePlain(String, Int32, Int32, Object[])
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name.vb: WriteWherePlain(String, Int32, Int32, Object())
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object())
+  nameWithType: BaseConsoleDriver.WriteWherePlain(String, Int32, Int32, Object[])
+  nameWithType.vb: BaseConsoleDriver.WriteWherePlain(String, Int32, Int32, Object())
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain*
+  name: WriteWherePlain
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWherePlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain
+  nameWithType: BaseConsoleDriver.WriteWherePlain
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
+  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
+  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object())
+  nameWithType: BaseConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
+  nameWithType.vb: BaseConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
+  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
+  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object())
+  nameWithType: BaseConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
+  nameWithType.vb: BaseConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain*
+  name: WriteWhereSlowlyPlain
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWhereSlowlyPlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain
+  nameWithType: BaseConsoleDriver.WriteWhereSlowlyPlain
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
+  name: WriteWrappedPlain(String, Boolean, Object[])
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWrappedPlain_System_String_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
+  name.vb: WriteWrappedPlain(String, Boolean, Object())
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWrappedPlain(System.String, System.Boolean, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWrappedPlain(System.String, System.Boolean, System.Object())
+  nameWithType: BaseConsoleDriver.WriteWrappedPlain(String, Boolean, Object[])
+  nameWithType.vb: BaseConsoleDriver.WriteWrappedPlain(String, Boolean, Object())
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWrappedPlain*
+  name: WriteWrappedPlain
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWrappedPlain_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWrappedPlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWrappedPlain
+  nameWithType: BaseConsoleDriver.WriteWrappedPlain
 - uid: KS.Drivers.Console.Consoles.File
   name: File
   href: api/KS.Drivers.Console.Consoles.File.html
@@ -3430,525 +3977,94 @@ references:
   commentId: T:KS.Drivers.Console.Consoles.Terminal
   fullName: KS.Drivers.Console.Consoles.Terminal
   nameWithType: Terminal
-- uid: KS.Drivers.Console.Consoles.Terminal._dumb
-  name: _dumb
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal__dumb
-  commentId: F:KS.Drivers.Console.Consoles.Terminal._dumb
-  fullName: KS.Drivers.Console.Consoles.Terminal._dumb
-  nameWithType: Terminal._dumb
-- uid: KS.Drivers.Console.Consoles.Terminal._dumbSet
-  name: _dumbSet
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal__dumbSet
-  commentId: F:KS.Drivers.Console.Consoles.Terminal._dumbSet
-  fullName: KS.Drivers.Console.Consoles.Terminal._dumbSet
-  nameWithType: Terminal._dumbSet
-- uid: KS.Drivers.Console.Consoles.Terminal.BackgroundColor
-  name: BackgroundColor
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_BackgroundColor
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.BackgroundColor
-  fullName: KS.Drivers.Console.Consoles.Terminal.BackgroundColor
-  nameWithType: Terminal.BackgroundColor
-- uid: KS.Drivers.Console.Consoles.Terminal.BackgroundColor*
-  name: BackgroundColor
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_BackgroundColor_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.BackgroundColor
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.BackgroundColor
-  nameWithType: Terminal.BackgroundColor
-- uid: KS.Drivers.Console.Consoles.Terminal.Beep
-  name: Beep()
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_Beep
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.Beep
-  fullName: KS.Drivers.Console.Consoles.Terminal.Beep()
-  nameWithType: Terminal.Beep()
-- uid: KS.Drivers.Console.Consoles.Terminal.Beep*
-  name: Beep
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_Beep_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.Beep
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.Beep
-  nameWithType: Terminal.Beep
-- uid: KS.Drivers.Console.Consoles.Terminal.BufferHeight
-  name: BufferHeight
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_BufferHeight
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.BufferHeight
-  fullName: KS.Drivers.Console.Consoles.Terminal.BufferHeight
-  nameWithType: Terminal.BufferHeight
-- uid: KS.Drivers.Console.Consoles.Terminal.BufferHeight*
-  name: BufferHeight
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_BufferHeight_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.BufferHeight
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.BufferHeight
-  nameWithType: Terminal.BufferHeight
-- uid: KS.Drivers.Console.Consoles.Terminal.BufferWidth
-  name: BufferWidth
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_BufferWidth
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.BufferWidth
-  fullName: KS.Drivers.Console.Consoles.Terminal.BufferWidth
-  nameWithType: Terminal.BufferWidth
-- uid: KS.Drivers.Console.Consoles.Terminal.BufferWidth*
-  name: BufferWidth
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_BufferWidth_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.BufferWidth
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.BufferWidth
-  nameWithType: Terminal.BufferWidth
-- uid: KS.Drivers.Console.Consoles.Terminal.Clear(System.Boolean)
-  name: Clear(Boolean)
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_Clear_System_Boolean_
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.Clear(System.Boolean)
-  fullName: KS.Drivers.Console.Consoles.Terminal.Clear(System.Boolean)
-  nameWithType: Terminal.Clear(Boolean)
-- uid: KS.Drivers.Console.Consoles.Terminal.Clear*
-  name: Clear
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_Clear_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.Clear
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.Clear
-  nameWithType: Terminal.Clear
-- uid: KS.Drivers.Console.Consoles.Terminal.CursorLeft
-  name: CursorLeft
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_CursorLeft
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.CursorLeft
-  fullName: KS.Drivers.Console.Consoles.Terminal.CursorLeft
-  nameWithType: Terminal.CursorLeft
-- uid: KS.Drivers.Console.Consoles.Terminal.CursorLeft*
-  name: CursorLeft
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_CursorLeft_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.CursorLeft
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.CursorLeft
-  nameWithType: Terminal.CursorLeft
-- uid: KS.Drivers.Console.Consoles.Terminal.CursorTop
-  name: CursorTop
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_CursorTop
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.CursorTop
-  fullName: KS.Drivers.Console.Consoles.Terminal.CursorTop
-  nameWithType: Terminal.CursorTop
-- uid: KS.Drivers.Console.Consoles.Terminal.CursorTop*
-  name: CursorTop
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_CursorTop_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.CursorTop
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.CursorTop
-  nameWithType: Terminal.CursorTop
-- uid: KS.Drivers.Console.Consoles.Terminal.CursorVisible
-  name: CursorVisible
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_CursorVisible
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.CursorVisible
-  fullName: KS.Drivers.Console.Consoles.Terminal.CursorVisible
-  nameWithType: Terminal.CursorVisible
-- uid: KS.Drivers.Console.Consoles.Terminal.CursorVisible*
-  name: CursorVisible
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_CursorVisible_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.CursorVisible
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.CursorVisible
-  nameWithType: Terminal.CursorVisible
-- uid: KS.Drivers.Console.Consoles.Terminal.DriverName
+- uid: KS.Drivers.Console.Consoles.TerminalDebug
+  name: TerminalDebug
+  href: api/KS.Drivers.Console.Consoles.TerminalDebug.html
+  commentId: T:KS.Drivers.Console.Consoles.TerminalDebug
+  fullName: KS.Drivers.Console.Consoles.TerminalDebug
+  nameWithType: TerminalDebug
+- uid: KS.Drivers.Console.Consoles.TerminalDebug.DriverName
   name: DriverName
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_DriverName
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.DriverName
-  fullName: KS.Drivers.Console.Consoles.Terminal.DriverName
-  nameWithType: Terminal.DriverName
-- uid: KS.Drivers.Console.Consoles.Terminal.DriverName*
+  href: api/KS.Drivers.Console.Consoles.TerminalDebug.html#KS_Drivers_Console_Consoles_TerminalDebug_DriverName
+  commentId: P:KS.Drivers.Console.Consoles.TerminalDebug.DriverName
+  fullName: KS.Drivers.Console.Consoles.TerminalDebug.DriverName
+  nameWithType: TerminalDebug.DriverName
+- uid: KS.Drivers.Console.Consoles.TerminalDebug.DriverName*
   name: DriverName
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_DriverName_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.DriverName
+  href: api/KS.Drivers.Console.Consoles.TerminalDebug.html#KS_Drivers_Console_Consoles_TerminalDebug_DriverName_
+  commentId: Overload:KS.Drivers.Console.Consoles.TerminalDebug.DriverName
   isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.DriverName
-  nameWithType: Terminal.DriverName
-- uid: KS.Drivers.Console.Consoles.Terminal.DriverType
+  fullName: KS.Drivers.Console.Consoles.TerminalDebug.DriverName
+  nameWithType: TerminalDebug.DriverName
+- uid: KS.Drivers.Console.Consoles.TerminalDebug.DriverType
   name: DriverType
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_DriverType
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.DriverType
-  fullName: KS.Drivers.Console.Consoles.Terminal.DriverType
-  nameWithType: Terminal.DriverType
-- uid: KS.Drivers.Console.Consoles.Terminal.DriverType*
+  href: api/KS.Drivers.Console.Consoles.TerminalDebug.html#KS_Drivers_Console_Consoles_TerminalDebug_DriverType
+  commentId: P:KS.Drivers.Console.Consoles.TerminalDebug.DriverType
+  fullName: KS.Drivers.Console.Consoles.TerminalDebug.DriverType
+  nameWithType: TerminalDebug.DriverType
+- uid: KS.Drivers.Console.Consoles.TerminalDebug.DriverType*
   name: DriverType
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_DriverType_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.DriverType
+  href: api/KS.Drivers.Console.Consoles.TerminalDebug.html#KS_Drivers_Console_Consoles_TerminalDebug_DriverType_
+  commentId: Overload:KS.Drivers.Console.Consoles.TerminalDebug.DriverType
   isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.DriverType
-  nameWithType: Terminal.DriverType
-- uid: KS.Drivers.Console.Consoles.Terminal.ForegroundColor
-  name: ForegroundColor
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_ForegroundColor
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.ForegroundColor
-  fullName: KS.Drivers.Console.Consoles.Terminal.ForegroundColor
-  nameWithType: Terminal.ForegroundColor
-- uid: KS.Drivers.Console.Consoles.Terminal.ForegroundColor*
-  name: ForegroundColor
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_ForegroundColor_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.ForegroundColor
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.ForegroundColor
-  nameWithType: Terminal.ForegroundColor
-- uid: KS.Drivers.Console.Consoles.Terminal.InputEncoding
-  name: InputEncoding
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_InputEncoding
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.InputEncoding
-  fullName: KS.Drivers.Console.Consoles.Terminal.InputEncoding
-  nameWithType: Terminal.InputEncoding
-- uid: KS.Drivers.Console.Consoles.Terminal.InputEncoding*
-  name: InputEncoding
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_InputEncoding_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.InputEncoding
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.InputEncoding
-  nameWithType: Terminal.InputEncoding
-- uid: KS.Drivers.Console.Consoles.Terminal.IsDumb
-  name: IsDumb
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_IsDumb
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.IsDumb
-  fullName: KS.Drivers.Console.Consoles.Terminal.IsDumb
-  nameWithType: Terminal.IsDumb
-- uid: KS.Drivers.Console.Consoles.Terminal.IsDumb*
-  name: IsDumb
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_IsDumb_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.IsDumb
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.IsDumb
-  nameWithType: Terminal.IsDumb
-- uid: KS.Drivers.Console.Consoles.Terminal.KeyAvailable
-  name: KeyAvailable
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_KeyAvailable
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.KeyAvailable
-  fullName: KS.Drivers.Console.Consoles.Terminal.KeyAvailable
-  nameWithType: Terminal.KeyAvailable
-- uid: KS.Drivers.Console.Consoles.Terminal.KeyAvailable*
-  name: KeyAvailable
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_KeyAvailable_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.KeyAvailable
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.KeyAvailable
-  nameWithType: Terminal.KeyAvailable
-- uid: KS.Drivers.Console.Consoles.Terminal.OpenStandardError
-  name: OpenStandardError()
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_OpenStandardError
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.OpenStandardError
-  fullName: KS.Drivers.Console.Consoles.Terminal.OpenStandardError()
-  nameWithType: Terminal.OpenStandardError()
-- uid: KS.Drivers.Console.Consoles.Terminal.OpenStandardError*
-  name: OpenStandardError
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_OpenStandardError_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.OpenStandardError
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.OpenStandardError
-  nameWithType: Terminal.OpenStandardError
-- uid: KS.Drivers.Console.Consoles.Terminal.OpenStandardInput
-  name: OpenStandardInput()
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_OpenStandardInput
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.OpenStandardInput
-  fullName: KS.Drivers.Console.Consoles.Terminal.OpenStandardInput()
-  nameWithType: Terminal.OpenStandardInput()
-- uid: KS.Drivers.Console.Consoles.Terminal.OpenStandardInput*
-  name: OpenStandardInput
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_OpenStandardInput_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.OpenStandardInput
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.OpenStandardInput
-  nameWithType: Terminal.OpenStandardInput
-- uid: KS.Drivers.Console.Consoles.Terminal.OpenStandardOutput
-  name: OpenStandardOutput()
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_OpenStandardOutput
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.OpenStandardOutput
-  fullName: KS.Drivers.Console.Consoles.Terminal.OpenStandardOutput()
-  nameWithType: Terminal.OpenStandardOutput()
-- uid: KS.Drivers.Console.Consoles.Terminal.OpenStandardOutput*
-  name: OpenStandardOutput
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_OpenStandardOutput_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.OpenStandardOutput
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.OpenStandardOutput
-  nameWithType: Terminal.OpenStandardOutput
-- uid: KS.Drivers.Console.Consoles.Terminal.Out
-  name: Out
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_Out
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.Out
-  fullName: KS.Drivers.Console.Consoles.Terminal.Out
-  nameWithType: Terminal.Out
-- uid: KS.Drivers.Console.Consoles.Terminal.Out*
-  name: Out
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_Out_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.Out
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.Out
-  nameWithType: Terminal.Out
-- uid: KS.Drivers.Console.Consoles.Terminal.OutputEncoding
-  name: OutputEncoding
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_OutputEncoding
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.OutputEncoding
-  fullName: KS.Drivers.Console.Consoles.Terminal.OutputEncoding
-  nameWithType: Terminal.OutputEncoding
-- uid: KS.Drivers.Console.Consoles.Terminal.OutputEncoding*
-  name: OutputEncoding
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_OutputEncoding_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.OutputEncoding
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.OutputEncoding
-  nameWithType: Terminal.OutputEncoding
-- uid: KS.Drivers.Console.Consoles.Terminal.ReadKey(System.Boolean)
-  name: ReadKey(Boolean)
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_ReadKey_System_Boolean_
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.ReadKey(System.Boolean)
-  fullName: KS.Drivers.Console.Consoles.Terminal.ReadKey(System.Boolean)
-  nameWithType: Terminal.ReadKey(Boolean)
-- uid: KS.Drivers.Console.Consoles.Terminal.ReadKey*
-  name: ReadKey
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_ReadKey_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.ReadKey
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.ReadKey
-  nameWithType: Terminal.ReadKey
-- uid: KS.Drivers.Console.Consoles.Terminal.ResetColor
-  name: ResetColor()
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_ResetColor
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.ResetColor
-  fullName: KS.Drivers.Console.Consoles.Terminal.ResetColor()
-  nameWithType: Terminal.ResetColor()
-- uid: KS.Drivers.Console.Consoles.Terminal.ResetColor*
-  name: ResetColor
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_ResetColor_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.ResetColor
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.ResetColor
-  nameWithType: Terminal.ResetColor
-- uid: KS.Drivers.Console.Consoles.Terminal.SetCursorPosition(System.Int32,System.Int32)
-  name: SetCursorPosition(Int32, Int32)
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_SetCursorPosition_System_Int32_System_Int32_
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.SetCursorPosition(System.Int32,System.Int32)
-  fullName: KS.Drivers.Console.Consoles.Terminal.SetCursorPosition(System.Int32, System.Int32)
-  nameWithType: Terminal.SetCursorPosition(Int32, Int32)
-- uid: KS.Drivers.Console.Consoles.Terminal.SetCursorPosition*
-  name: SetCursorPosition
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_SetCursorPosition_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.SetCursorPosition
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.SetCursorPosition
-  nameWithType: Terminal.SetCursorPosition
-- uid: KS.Drivers.Console.Consoles.Terminal.SetOut(System.IO.TextWriter)
-  name: SetOut(TextWriter)
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_SetOut_System_IO_TextWriter_
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.SetOut(System.IO.TextWriter)
-  fullName: KS.Drivers.Console.Consoles.Terminal.SetOut(System.IO.TextWriter)
-  nameWithType: Terminal.SetOut(TextWriter)
-- uid: KS.Drivers.Console.Consoles.Terminal.SetOut*
-  name: SetOut
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_SetOut_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.SetOut
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.SetOut
-  nameWithType: Terminal.SetOut
-- uid: KS.Drivers.Console.Consoles.Terminal.WindowHeight
-  name: WindowHeight
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WindowHeight
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.WindowHeight
-  fullName: KS.Drivers.Console.Consoles.Terminal.WindowHeight
-  nameWithType: Terminal.WindowHeight
-- uid: KS.Drivers.Console.Consoles.Terminal.WindowHeight*
-  name: WindowHeight
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WindowHeight_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.WindowHeight
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.WindowHeight
-  nameWithType: Terminal.WindowHeight
-- uid: KS.Drivers.Console.Consoles.Terminal.WindowTop
-  name: WindowTop
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WindowTop
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.WindowTop
-  fullName: KS.Drivers.Console.Consoles.Terminal.WindowTop
-  nameWithType: Terminal.WindowTop
-- uid: KS.Drivers.Console.Consoles.Terminal.WindowTop*
-  name: WindowTop
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WindowTop_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.WindowTop
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.WindowTop
-  nameWithType: Terminal.WindowTop
-- uid: KS.Drivers.Console.Consoles.Terminal.WindowWidth
-  name: WindowWidth
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WindowWidth
-  commentId: P:KS.Drivers.Console.Consoles.Terminal.WindowWidth
-  fullName: KS.Drivers.Console.Consoles.Terminal.WindowWidth
-  nameWithType: Terminal.WindowWidth
-- uid: KS.Drivers.Console.Consoles.Terminal.WindowWidth*
-  name: WindowWidth
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WindowWidth_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.WindowWidth
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.WindowWidth
-  nameWithType: Terminal.WindowWidth
-- uid: KS.Drivers.Console.Consoles.Terminal.Write(System.Char)
+  fullName: KS.Drivers.Console.Consoles.TerminalDebug.DriverType
+  nameWithType: TerminalDebug.DriverType
+- uid: KS.Drivers.Console.Consoles.TerminalDebug.Write(System.Char)
   name: Write(Char)
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_Write_System_Char_
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.Write(System.Char)
-  fullName: KS.Drivers.Console.Consoles.Terminal.Write(System.Char)
-  nameWithType: Terminal.Write(Char)
-- uid: KS.Drivers.Console.Consoles.Terminal.Write(System.String)
+  href: api/KS.Drivers.Console.Consoles.TerminalDebug.html#KS_Drivers_Console_Consoles_TerminalDebug_Write_System_Char_
+  commentId: M:KS.Drivers.Console.Consoles.TerminalDebug.Write(System.Char)
+  fullName: KS.Drivers.Console.Consoles.TerminalDebug.Write(System.Char)
+  nameWithType: TerminalDebug.Write(Char)
+- uid: KS.Drivers.Console.Consoles.TerminalDebug.Write(System.String)
   name: Write(String)
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_Write_System_String_
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.Write(System.String)
-  fullName: KS.Drivers.Console.Consoles.Terminal.Write(System.String)
-  nameWithType: Terminal.Write(String)
-- uid: KS.Drivers.Console.Consoles.Terminal.Write(System.String,System.Object[])
+  href: api/KS.Drivers.Console.Consoles.TerminalDebug.html#KS_Drivers_Console_Consoles_TerminalDebug_Write_System_String_
+  commentId: M:KS.Drivers.Console.Consoles.TerminalDebug.Write(System.String)
+  fullName: KS.Drivers.Console.Consoles.TerminalDebug.Write(System.String)
+  nameWithType: TerminalDebug.Write(String)
+- uid: KS.Drivers.Console.Consoles.TerminalDebug.Write(System.String,System.Object[])
   name: Write(String, Object[])
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_Write_System_String_System_Object___
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.Write(System.String,System.Object[])
+  href: api/KS.Drivers.Console.Consoles.TerminalDebug.html#KS_Drivers_Console_Consoles_TerminalDebug_Write_System_String_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.TerminalDebug.Write(System.String,System.Object[])
   name.vb: Write(String, Object())
-  fullName: KS.Drivers.Console.Consoles.Terminal.Write(System.String, System.Object[])
-  fullName.vb: KS.Drivers.Console.Consoles.Terminal.Write(System.String, System.Object())
-  nameWithType: Terminal.Write(String, Object[])
-  nameWithType.vb: Terminal.Write(String, Object())
-- uid: KS.Drivers.Console.Consoles.Terminal.Write*
+  fullName: KS.Drivers.Console.Consoles.TerminalDebug.Write(System.String, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.TerminalDebug.Write(System.String, System.Object())
+  nameWithType: TerminalDebug.Write(String, Object[])
+  nameWithType.vb: TerminalDebug.Write(String, Object())
+- uid: KS.Drivers.Console.Consoles.TerminalDebug.Write*
   name: Write
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_Write_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.Write
+  href: api/KS.Drivers.Console.Consoles.TerminalDebug.html#KS_Drivers_Console_Consoles_TerminalDebug_Write_
+  commentId: Overload:KS.Drivers.Console.Consoles.TerminalDebug.Write
   isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.Write
-  nameWithType: Terminal.Write
-- uid: KS.Drivers.Console.Consoles.Terminal.WriteLine
+  fullName: KS.Drivers.Console.Consoles.TerminalDebug.Write
+  nameWithType: TerminalDebug.Write
+- uid: KS.Drivers.Console.Consoles.TerminalDebug.WriteLine
   name: WriteLine()
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteLine
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteLine
-  fullName: KS.Drivers.Console.Consoles.Terminal.WriteLine()
-  nameWithType: Terminal.WriteLine()
-- uid: KS.Drivers.Console.Consoles.Terminal.WriteLine(System.String)
+  href: api/KS.Drivers.Console.Consoles.TerminalDebug.html#KS_Drivers_Console_Consoles_TerminalDebug_WriteLine
+  commentId: M:KS.Drivers.Console.Consoles.TerminalDebug.WriteLine
+  fullName: KS.Drivers.Console.Consoles.TerminalDebug.WriteLine()
+  nameWithType: TerminalDebug.WriteLine()
+- uid: KS.Drivers.Console.Consoles.TerminalDebug.WriteLine(System.String)
   name: WriteLine(String)
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteLine_System_String_
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteLine(System.String)
-  fullName: KS.Drivers.Console.Consoles.Terminal.WriteLine(System.String)
-  nameWithType: Terminal.WriteLine(String)
-- uid: KS.Drivers.Console.Consoles.Terminal.WriteLine(System.String,System.Object[])
+  href: api/KS.Drivers.Console.Consoles.TerminalDebug.html#KS_Drivers_Console_Consoles_TerminalDebug_WriteLine_System_String_
+  commentId: M:KS.Drivers.Console.Consoles.TerminalDebug.WriteLine(System.String)
+  fullName: KS.Drivers.Console.Consoles.TerminalDebug.WriteLine(System.String)
+  nameWithType: TerminalDebug.WriteLine(String)
+- uid: KS.Drivers.Console.Consoles.TerminalDebug.WriteLine(System.String,System.Object[])
   name: WriteLine(String, Object[])
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteLine_System_String_System_Object___
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteLine(System.String,System.Object[])
+  href: api/KS.Drivers.Console.Consoles.TerminalDebug.html#KS_Drivers_Console_Consoles_TerminalDebug_WriteLine_System_String_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.TerminalDebug.WriteLine(System.String,System.Object[])
   name.vb: WriteLine(String, Object())
-  fullName: KS.Drivers.Console.Consoles.Terminal.WriteLine(System.String, System.Object[])
-  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WriteLine(System.String, System.Object())
-  nameWithType: Terminal.WriteLine(String, Object[])
-  nameWithType.vb: Terminal.WriteLine(String, Object())
-- uid: KS.Drivers.Console.Consoles.Terminal.WriteLine*
+  fullName: KS.Drivers.Console.Consoles.TerminalDebug.WriteLine(System.String, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.TerminalDebug.WriteLine(System.String, System.Object())
+  nameWithType: TerminalDebug.WriteLine(String, Object[])
+  nameWithType.vb: TerminalDebug.WriteLine(String, Object())
+- uid: KS.Drivers.Console.Consoles.TerminalDebug.WriteLine*
   name: WriteLine
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteLine_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.WriteLine
+  href: api/KS.Drivers.Console.Consoles.TerminalDebug.html#KS_Drivers_Console_Consoles_TerminalDebug_WriteLine_
+  commentId: Overload:KS.Drivers.Console.Consoles.TerminalDebug.WriteLine
   isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.WriteLine
-  nameWithType: Terminal.WriteLine
-- uid: KS.Drivers.Console.Consoles.Terminal.WritePlain
-  name: WritePlain()
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WritePlain
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.WritePlain
-  fullName: KS.Drivers.Console.Consoles.Terminal.WritePlain()
-  nameWithType: Terminal.WritePlain()
-- uid: KS.Drivers.Console.Consoles.Terminal.WritePlain(System.String,System.Boolean,System.Object[])
-  name: WritePlain(String, Boolean, Object[])
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WritePlain_System_String_System_Boolean_System_Object___
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.WritePlain(System.String,System.Boolean,System.Object[])
-  name.vb: WritePlain(String, Boolean, Object())
-  fullName: KS.Drivers.Console.Consoles.Terminal.WritePlain(System.String, System.Boolean, System.Object[])
-  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WritePlain(System.String, System.Boolean, System.Object())
-  nameWithType: Terminal.WritePlain(String, Boolean, Object[])
-  nameWithType.vb: Terminal.WritePlain(String, Boolean, Object())
-- uid: KS.Drivers.Console.Consoles.Terminal.WritePlain*
-  name: WritePlain
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WritePlain_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.WritePlain
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.WritePlain
-  nameWithType: Terminal.WritePlain
-- uid: KS.Drivers.Console.Consoles.Terminal.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
-  name: WriteSlowlyPlain(String, Boolean, Double, Object[])
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteSlowlyPlain(System.String,System.Boolean,System.Double,System.Object[])
-  name.vb: WriteSlowlyPlain(String, Boolean, Double, Object())
-  fullName: KS.Drivers.Console.Consoles.Terminal.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object[])
-  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WriteSlowlyPlain(System.String, System.Boolean, System.Double, System.Object())
-  nameWithType: Terminal.WriteSlowlyPlain(String, Boolean, Double, Object[])
-  nameWithType.vb: Terminal.WriteSlowlyPlain(String, Boolean, Double, Object())
-- uid: KS.Drivers.Console.Consoles.Terminal.WriteSlowlyPlain*
-  name: WriteSlowlyPlain
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteSlowlyPlain_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.WriteSlowlyPlain
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.WriteSlowlyPlain
-  nameWithType: Terminal.WriteSlowlyPlain
-- uid: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
-  name: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
-  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
-  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object[])
-  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Int32, System.Object())
-  nameWithType: Terminal.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])
-  nameWithType.vb: Terminal.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object())
-- uid: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
-  name: WriteWherePlain(String, Int32, Int32, Boolean, Object[])
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
-  name.vb: WriteWherePlain(String, Int32, Int32, Boolean, Object())
-  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object[])
-  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String, System.Int32, System.Int32, System.Boolean, System.Object())
-  nameWithType: Terminal.WriteWherePlain(String, Int32, Int32, Boolean, Object[])
-  nameWithType.vb: Terminal.WriteWherePlain(String, Int32, Int32, Boolean, Object())
-- uid: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
-  name: WriteWherePlain(String, Int32, Int32, Object[])
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
-  name.vb: WriteWherePlain(String, Int32, Int32, Object())
-  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object[])
-  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain(System.String, System.Int32, System.Int32, System.Object())
-  nameWithType: Terminal.WriteWherePlain(String, Int32, Int32, Object[])
-  nameWithType.vb: Terminal.WriteWherePlain(String, Int32, Int32, Object())
-- uid: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain*
-  name: WriteWherePlain
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWherePlain_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.WriteWherePlain
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWherePlain
-  nameWithType: Terminal.WriteWherePlain
-- uid: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
-  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
-  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
-  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object[])
-  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Object())
-  nameWithType: Terminal.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
-  nameWithType.vb: Terminal.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object())
-- uid: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
-  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
-  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
-  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object[])
-  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Object())
-  nameWithType: Terminal.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])
-  nameWithType.vb: Terminal.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object())
-- uid: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain*
-  name: WriteWhereSlowlyPlain
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWhereSlowlyPlain_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWhereSlowlyPlain
-  nameWithType: Terminal.WriteWhereSlowlyPlain
-- uid: KS.Drivers.Console.Consoles.Terminal.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
-  name: WriteWrappedPlain(String, Boolean, Object[])
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWrappedPlain_System_String_System_Boolean_System_Object___
-  commentId: M:KS.Drivers.Console.Consoles.Terminal.WriteWrappedPlain(System.String,System.Boolean,System.Object[])
-  name.vb: WriteWrappedPlain(String, Boolean, Object())
-  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWrappedPlain(System.String, System.Boolean, System.Object[])
-  fullName.vb: KS.Drivers.Console.Consoles.Terminal.WriteWrappedPlain(System.String, System.Boolean, System.Object())
-  nameWithType: Terminal.WriteWrappedPlain(String, Boolean, Object[])
-  nameWithType.vb: Terminal.WriteWrappedPlain(String, Boolean, Object())
-- uid: KS.Drivers.Console.Consoles.Terminal.WriteWrappedPlain*
-  name: WriteWrappedPlain
-  href: api/KS.Drivers.Console.Consoles.Terminal.html#KS_Drivers_Console_Consoles_Terminal_WriteWrappedPlain_
-  commentId: Overload:KS.Drivers.Console.Consoles.Terminal.WriteWrappedPlain
-  isSpec: "True"
-  fullName: KS.Drivers.Console.Consoles.Terminal.WriteWrappedPlain
-  nameWithType: Terminal.WriteWrappedPlain
+  fullName: KS.Drivers.Console.Consoles.TerminalDebug.WriteLine
+  nameWithType: TerminalDebug.WriteLine
 - uid: KS.Drivers.Console.IConsoleDriver
   name: IConsoleDriver
   href: api/KS.Drivers.Console.IConsoleDriver.html

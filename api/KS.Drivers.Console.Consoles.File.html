@@ -88,18 +88,31 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">File</span></div>
+    <div class="level1"><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html">BaseConsoleDriver</a></div>
+    <div class="level2"><span class="xref">File</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="KS.Drivers.Console.IConsoleDriver.html">IConsoleDriver</a></div>
     <div><a class="xref" href="KS.Drivers.IDriver.html">IDriver</a></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver__dumbSet">BaseConsoleDriver._dumbSet</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver__dumb">BaseConsoleDriver._dumb</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_IsDumb">BaseConsoleDriver.IsDumb</a>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Drivers.Console.Consoles.html">KS.Drivers.Console.Consoles</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Drivers_Console_Consoles_File_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">class File : IConsoleDriver, IDriver</code></pre>
+    <pre><code class="lang-csharp hljs">class File : BaseConsoleDriver, IConsoleDriver, IDriver</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -116,7 +129,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConsoleColor BackgroundColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override ConsoleColor BackgroundColor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -133,6 +146,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_BackgroundColor">BaseConsoleDriver.BackgroundColor</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_BufferHeight.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.BufferHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -146,7 +161,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int BufferHeight { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override int BufferHeight { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -163,6 +178,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_BufferHeight">BaseConsoleDriver.BufferHeight</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_BufferWidth.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.BufferWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -176,7 +193,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int BufferWidth { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override int BufferWidth { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -193,6 +210,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_BufferWidth">BaseConsoleDriver.BufferWidth</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_CursorLeft.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.CursorLeft%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -206,7 +225,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int CursorLeft { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override int CursorLeft { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -223,6 +242,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_CursorLeft">BaseConsoleDriver.CursorLeft</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_CursorTop.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.CursorTop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -236,7 +257,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int CursorTop { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override int CursorTop { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -253,6 +274,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_CursorTop">BaseConsoleDriver.CursorTop</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_CursorVisible.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.CursorVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -266,7 +289,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CursorVisible { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool CursorVisible { set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -283,6 +306,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_CursorVisible">BaseConsoleDriver.CursorVisible</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_DriverName.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.DriverName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -296,7 +321,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string DriverName { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string DriverName { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -313,6 +338,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_DriverName">BaseConsoleDriver.DriverName</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_DriverType.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.DriverType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -326,7 +353,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DriverTypes DriverType { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override DriverTypes DriverType { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -343,6 +370,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_DriverType">BaseConsoleDriver.DriverType</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_FilterVT.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.FilterVT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -386,7 +415,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConsoleColor ForegroundColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override ConsoleColor ForegroundColor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -403,6 +432,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_ForegroundColor">BaseConsoleDriver.ForegroundColor</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_InputEncoding.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.InputEncoding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -416,7 +447,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Encoding InputEncoding { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override Encoding InputEncoding { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -433,6 +464,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_InputEncoding">BaseConsoleDriver.InputEncoding</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_KeyAvailable.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.KeyAvailable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -446,7 +479,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool KeyAvailable { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool KeyAvailable { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -463,6 +496,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_KeyAvailable">BaseConsoleDriver.KeyAvailable</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_Out.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.Out%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -476,7 +511,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TextWriter Out { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override TextWriter Out { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -493,6 +528,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Out">BaseConsoleDriver.Out</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_OutputEncoding.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.OutputEncoding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -506,7 +543,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Encoding OutputEncoding { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override Encoding OutputEncoding { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -523,6 +560,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_OutputEncoding">BaseConsoleDriver.OutputEncoding</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_PathToWrite.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.PathToWrite%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -566,7 +605,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int WindowHeight { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override int WindowHeight { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -583,6 +622,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WindowHeight">BaseConsoleDriver.WindowHeight</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_WindowTop.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.WindowTop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -596,7 +637,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int WindowTop { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override int WindowTop { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -613,6 +654,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WindowTop">BaseConsoleDriver.WindowTop</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_WindowWidth.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.WindowWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -626,7 +669,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int WindowWidth { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override int WindowWidth { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -643,6 +686,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WindowWidth">BaseConsoleDriver.WindowWidth</a></div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -658,8 +703,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Beep()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Beep()</code></pre>
   </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Beep">BaseConsoleDriver.Beep()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_Clear_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.Clear(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -673,7 +720,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Clear(bool loadBack = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Clear(bool loadBack = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -692,6 +739,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Clear_System_Boolean_">BaseConsoleDriver.Clear(Boolean)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_OpenStandardError.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.OpenStandardError%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -705,7 +754,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Stream OpenStandardError()</code></pre>
+    <pre><code class="lang-csharp hljs">public override Stream OpenStandardError()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -722,6 +771,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_OpenStandardError">BaseConsoleDriver.OpenStandardError()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_OpenStandardInput.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.OpenStandardInput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -735,7 +786,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Stream OpenStandardInput()</code></pre>
+    <pre><code class="lang-csharp hljs">public override Stream OpenStandardInput()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -752,6 +803,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_OpenStandardInput">BaseConsoleDriver.OpenStandardInput()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_OpenStandardOutput.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.OpenStandardOutput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -765,7 +818,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Stream OpenStandardOutput()</code></pre>
+    <pre><code class="lang-csharp hljs">public override Stream OpenStandardOutput()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -782,6 +835,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_OpenStandardOutput">BaseConsoleDriver.OpenStandardOutput()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_ReadKey_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.ReadKey(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -795,7 +850,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConsoleKeyInfo ReadKey(bool intercept = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public override ConsoleKeyInfo ReadKey(bool intercept = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -829,6 +884,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_ReadKey_System_Boolean_">BaseConsoleDriver.ReadKey(Boolean)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_ResetColor.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.ResetColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -842,8 +899,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ResetColor()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void ResetColor()</code></pre>
   </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_ResetColor">BaseConsoleDriver.ResetColor()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_SetCursorPosition_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.SetCursorPosition(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -857,7 +916,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetCursorPosition(int left, int top)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void SetCursorPosition(int left, int top)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -881,6 +940,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_SetCursorPosition_System_Int32_System_Int32_">BaseConsoleDriver.SetCursorPosition(Int32, Int32)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_SetOut_System_IO_TextWriter_.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.SetOut(System.IO.TextWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -894,7 +955,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetOut(TextWriter newOut)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void SetOut(TextWriter newOut)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -913,6 +974,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_SetOut_System_IO_TextWriter_">BaseConsoleDriver.SetOut(TextWriter)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_Write_System_Char_.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.Write(System.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -927,7 +990,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Write(char value)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Write(char value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -947,6 +1010,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Write_System_Char_">BaseConsoleDriver.Write(Char)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_Write_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.Write(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -961,7 +1026,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Write(string text)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Write(string text)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -981,6 +1046,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Write_System_String_">BaseConsoleDriver.Write(String)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_Write_System_String_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.Write(System.String%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -995,7 +1062,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Write(string text, params object[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Write(string text, params object[] args)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1021,6 +1088,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_Write_System_String_System_Object___">BaseConsoleDriver.Write(String, Object[])</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_WriteLine.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.WriteLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1035,8 +1104,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteLine()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void WriteLine()</code></pre>
   </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteLine">BaseConsoleDriver.WriteLine()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_WriteLine_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.WriteLine(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1051,7 +1122,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteLine(string text)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void WriteLine(string text)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1071,6 +1142,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteLine_System_String_">BaseConsoleDriver.WriteLine(String)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_WriteLine_System_String_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.WriteLine(System.String%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1085,7 +1158,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteLine(string text, params object[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void WriteLine(string text, params object[] args)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1111,6 +1184,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteLine_System_String_System_Object___">BaseConsoleDriver.WriteLine(String, Object[])</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_WritePlain.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.WritePlain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1125,8 +1200,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WritePlain()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void WritePlain()</code></pre>
   </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WritePlain">BaseConsoleDriver.WritePlain()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_WritePlain_System_String_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.WritePlain(System.String%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1141,7 +1218,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WritePlain(string Text, bool Line, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void WritePlain(string Text, bool Line, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1173,6 +1250,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WritePlain_System_String_System_Boolean_System_Object___">BaseConsoleDriver.WritePlain(String, Boolean, Object[])</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.WriteSlowlyPlain(System.String%2CSystem.Boolean%2CSystem.Double%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1187,7 +1266,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteSlowlyPlain(string msg, bool Line, double MsEachLetter, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void WriteSlowlyPlain(string msg, bool Line, double MsEachLetter, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1225,6 +1304,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteSlowlyPlain_System_String_System_Boolean_System_Double_System_Object___">BaseConsoleDriver.WriteSlowlyPlain(String, Boolean, Double, Object[])</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.WriteWherePlain(System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Int32%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1239,7 +1320,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteWherePlain(string msg, int Left, int Top, bool Return, int RightMargin, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void WriteWherePlain(string msg, int Left, int Top, bool Return, int RightMargin, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1289,6 +1370,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___">BaseConsoleDriver.WriteWherePlain(String, Int32, Int32, Boolean, Int32, Object[])</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.WriteWherePlain(System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1303,7 +1386,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteWherePlain(string msg, int Left, int Top, bool Return, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void WriteWherePlain(string msg, int Left, int Top, bool Return, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1347,6 +1430,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___">BaseConsoleDriver.WriteWherePlain(String, Int32, Int32, Boolean, Object[])</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.WriteWherePlain(System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1361,7 +1446,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteWherePlain(string msg, int Left, int Top, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void WriteWherePlain(string msg, int Left, int Top, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1399,6 +1484,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___">BaseConsoleDriver.WriteWherePlain(String, Int32, Int32, Object[])</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain(System.String%2CSystem.Boolean%2CSystem.Int32%2CSystem.Int32%2CSystem.Double%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1413,7 +1500,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteWhereSlowlyPlain(string msg, bool Line, int Left, int Top, double MsEachLetter, bool Return, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void WriteWhereSlowlyPlain(string msg, bool Line, int Left, int Top, double MsEachLetter, bool Return, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1469,6 +1556,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___">BaseConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain(System.String%2CSystem.Boolean%2CSystem.Int32%2CSystem.Int32%2CSystem.Double%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1483,7 +1572,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteWhereSlowlyPlain(string msg, bool Line, int Left, int Top, double MsEachLetter, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void WriteWhereSlowlyPlain(string msg, bool Line, int Left, int Top, double MsEachLetter, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1533,6 +1622,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___">BaseConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Object[])</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Console_Consoles_File_WriteWrappedPlain_System_String_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20KS.Drivers.Console.Consoles.File.WriteWrappedPlain(System.String%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1547,7 +1638,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteWrappedPlain(string Text, bool Line, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void WriteWrappedPlain(string Text, bool Line, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1579,6 +1670,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWrappedPlain_System_String_System_Boolean_System_Object___">BaseConsoleDriver.WriteWrappedPlain(String, Boolean, Object[])</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="KS.Drivers.Console.IConsoleDriver.html">IConsoleDriver</a>
