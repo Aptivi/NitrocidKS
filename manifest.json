@@ -597,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html",
-          "hash": "KWR/h88rSlBO8eJDxzqxyB+hH0S4XaS+dUgi7ITcYgI="
+          "hash": "dTC5jmAylX7RFW/VjXd0wAgWylrYFoNNpIs9q2wK3Nc="
         }
       },
       "is_incremental": false,
@@ -657,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Console.Consoles.html",
-          "hash": "JW3gxjkwth0o+zrRH/p9yz42ZGn1oLnzRQxh77i0dH0="
+          "hash": "pc+ppmWE3eWQDmrnBTTm/TgOQW5/fHdOFPykYbR9wTE="
         }
       },
       "is_incremental": false,
@@ -693,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.DriverHandler.html",
-          "hash": "nn4yYaCpfsoCltk4AiCfzNB/O+MiFAGMye3iQy20JIQ="
+          "hash": "WIl4RqRETT2OUjMyx56nmxdQzSkbbPTCI/1TqPI017M="
         }
       },
       "is_incremental": false,
@@ -869,11 +869,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Drivers.RNG.DefaultRandom.yml",
+      "source_relative_path": "api/KS.Drivers.RNG.BaseRandomDriver.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Drivers.RNG.DefaultRandom.html",
-          "hash": "WgfKVnAtVaSEM2lgm6BCBFFBW5g5pxi7ELCfnkiZsFY="
+          "relative_path": "api/KS.Drivers.RNG.BaseRandomDriver.html",
+          "hash": "il6Y6s0kIB5UWStPQQYdteO8tK4kp3nGSGZSy+YekRs="
         }
       },
       "is_incremental": false,
@@ -905,11 +905,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.RNG.Randoms.DefaultRandom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.RNG.Randoms.DefaultRandom.html",
+          "hash": "zgoPJHnLheyiOVuirhRc6Of54Oe96bF78ZaepFKj518="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.RNG.Randoms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.RNG.Randoms.html",
+          "hash": "TN+CABYbFotR32zunGbjiFKykwlx11FvmNKZNN/hatA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.RNG.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.RNG.html",
-          "hash": "5XbYmgVRMBqDzlPW+UHB1rENUd/ZagIcCtDzFFp/KeA="
+          "hash": "vN83M9ONk7AdmdwJffNYh2A3slwtjewSZrvhFnh3vIw="
         }
       },
       "is_incremental": false,
@@ -12156,7 +12180,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "V+tUQuVlCMUii6m/Dg+FeyohiLjvbUTXrhPnLHTtagk="
+          "hash": "eR8znRpba8YiMnED34Cedl+GnyzJvCdRERjUpiROFsQ="
         }
       },
       "is_incremental": false,
@@ -15217,7 +15241,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1011,
+          "total_file_count": 1013,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

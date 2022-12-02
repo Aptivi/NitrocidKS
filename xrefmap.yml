@@ -5738,170 +5738,170 @@ references:
   commentId: N:KS.Drivers.RNG
   fullName: KS.Drivers.RNG
   nameWithType: KS.Drivers.RNG
-- uid: KS.Drivers.RNG.DefaultRandom
-  name: DefaultRandom
-  href: api/KS.Drivers.RNG.DefaultRandom.html
-  commentId: T:KS.Drivers.RNG.DefaultRandom
-  fullName: KS.Drivers.RNG.DefaultRandom
-  nameWithType: DefaultRandom
-- uid: KS.Drivers.RNG.DefaultRandom.DriverName
+- uid: KS.Drivers.RNG.BaseRandomDriver
+  name: BaseRandomDriver
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html
+  commentId: T:KS.Drivers.RNG.BaseRandomDriver
+  fullName: KS.Drivers.RNG.BaseRandomDriver
+  nameWithType: BaseRandomDriver
+- uid: KS.Drivers.RNG.BaseRandomDriver.DriverName
   name: DriverName
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_DriverName
-  commentId: P:KS.Drivers.RNG.DefaultRandom.DriverName
-  fullName: KS.Drivers.RNG.DefaultRandom.DriverName
-  nameWithType: DefaultRandom.DriverName
-- uid: KS.Drivers.RNG.DefaultRandom.DriverName*
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_DriverName
+  commentId: P:KS.Drivers.RNG.BaseRandomDriver.DriverName
+  fullName: KS.Drivers.RNG.BaseRandomDriver.DriverName
+  nameWithType: BaseRandomDriver.DriverName
+- uid: KS.Drivers.RNG.BaseRandomDriver.DriverName*
   name: DriverName
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_DriverName_
-  commentId: Overload:KS.Drivers.RNG.DefaultRandom.DriverName
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_DriverName_
+  commentId: Overload:KS.Drivers.RNG.BaseRandomDriver.DriverName
   isSpec: "True"
-  fullName: KS.Drivers.RNG.DefaultRandom.DriverName
-  nameWithType: DefaultRandom.DriverName
-- uid: KS.Drivers.RNG.DefaultRandom.DriverType
+  fullName: KS.Drivers.RNG.BaseRandomDriver.DriverName
+  nameWithType: BaseRandomDriver.DriverName
+- uid: KS.Drivers.RNG.BaseRandomDriver.DriverType
   name: DriverType
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_DriverType
-  commentId: P:KS.Drivers.RNG.DefaultRandom.DriverType
-  fullName: KS.Drivers.RNG.DefaultRandom.DriverType
-  nameWithType: DefaultRandom.DriverType
-- uid: KS.Drivers.RNG.DefaultRandom.DriverType*
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_DriverType
+  commentId: P:KS.Drivers.RNG.BaseRandomDriver.DriverType
+  fullName: KS.Drivers.RNG.BaseRandomDriver.DriverType
+  nameWithType: BaseRandomDriver.DriverType
+- uid: KS.Drivers.RNG.BaseRandomDriver.DriverType*
   name: DriverType
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_DriverType_
-  commentId: Overload:KS.Drivers.RNG.DefaultRandom.DriverType
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_DriverType_
+  commentId: Overload:KS.Drivers.RNG.BaseRandomDriver.DriverType
   isSpec: "True"
-  fullName: KS.Drivers.RNG.DefaultRandom.DriverType
-  nameWithType: DefaultRandom.DriverType
-- uid: KS.Drivers.RNG.DefaultRandom.random
+  fullName: KS.Drivers.RNG.BaseRandomDriver.DriverType
+  nameWithType: BaseRandomDriver.DriverType
+- uid: KS.Drivers.RNG.BaseRandomDriver.random
   name: random
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_random
-  commentId: F:KS.Drivers.RNG.DefaultRandom.random
-  fullName: KS.Drivers.RNG.DefaultRandom.random
-  nameWithType: DefaultRandom.random
-- uid: KS.Drivers.RNG.DefaultRandom.Random
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_random
+  commentId: F:KS.Drivers.RNG.BaseRandomDriver.random
+  fullName: KS.Drivers.RNG.BaseRandomDriver.random
+  nameWithType: BaseRandomDriver.random
+- uid: KS.Drivers.RNG.BaseRandomDriver.Random
   name: Random()
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_Random
-  commentId: M:KS.Drivers.RNG.DefaultRandom.Random
-  fullName: KS.Drivers.RNG.DefaultRandom.Random()
-  nameWithType: DefaultRandom.Random()
-- uid: KS.Drivers.RNG.DefaultRandom.Random(System.Int32)
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_Random
+  commentId: M:KS.Drivers.RNG.BaseRandomDriver.Random
+  fullName: KS.Drivers.RNG.BaseRandomDriver.Random()
+  nameWithType: BaseRandomDriver.Random()
+- uid: KS.Drivers.RNG.BaseRandomDriver.Random(System.Int32)
   name: Random(Int32)
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_Random_System_Int32_
-  commentId: M:KS.Drivers.RNG.DefaultRandom.Random(System.Int32)
-  fullName: KS.Drivers.RNG.DefaultRandom.Random(System.Int32)
-  nameWithType: DefaultRandom.Random(Int32)
-- uid: KS.Drivers.RNG.DefaultRandom.Random(System.Int32,System.Int32)
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_Random_System_Int32_
+  commentId: M:KS.Drivers.RNG.BaseRandomDriver.Random(System.Int32)
+  fullName: KS.Drivers.RNG.BaseRandomDriver.Random(System.Int32)
+  nameWithType: BaseRandomDriver.Random(Int32)
+- uid: KS.Drivers.RNG.BaseRandomDriver.Random(System.Int32,System.Int32)
   name: Random(Int32, Int32)
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_Random_System_Int32_System_Int32_
-  commentId: M:KS.Drivers.RNG.DefaultRandom.Random(System.Int32,System.Int32)
-  fullName: KS.Drivers.RNG.DefaultRandom.Random(System.Int32, System.Int32)
-  nameWithType: DefaultRandom.Random(Int32, Int32)
-- uid: KS.Drivers.RNG.DefaultRandom.Random*
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_Random_System_Int32_System_Int32_
+  commentId: M:KS.Drivers.RNG.BaseRandomDriver.Random(System.Int32,System.Int32)
+  fullName: KS.Drivers.RNG.BaseRandomDriver.Random(System.Int32, System.Int32)
+  nameWithType: BaseRandomDriver.Random(Int32, Int32)
+- uid: KS.Drivers.RNG.BaseRandomDriver.Random*
   name: Random
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_Random_
-  commentId: Overload:KS.Drivers.RNG.DefaultRandom.Random
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_Random_
+  commentId: Overload:KS.Drivers.RNG.BaseRandomDriver.Random
   isSpec: "True"
-  fullName: KS.Drivers.RNG.DefaultRandom.Random
-  nameWithType: DefaultRandom.Random
-- uid: KS.Drivers.RNG.DefaultRandom.RandomChance(System.Double)
+  fullName: KS.Drivers.RNG.BaseRandomDriver.Random
+  nameWithType: BaseRandomDriver.Random
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomChance(System.Double)
   name: RandomChance(Double)
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomChance_System_Double_
-  commentId: M:KS.Drivers.RNG.DefaultRandom.RandomChance(System.Double)
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomChance(System.Double)
-  nameWithType: DefaultRandom.RandomChance(Double)
-- uid: KS.Drivers.RNG.DefaultRandom.RandomChance(System.Int32)
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomChance_System_Double_
+  commentId: M:KS.Drivers.RNG.BaseRandomDriver.RandomChance(System.Double)
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomChance(System.Double)
+  nameWithType: BaseRandomDriver.RandomChance(Double)
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomChance(System.Int32)
   name: RandomChance(Int32)
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomChance_System_Int32_
-  commentId: M:KS.Drivers.RNG.DefaultRandom.RandomChance(System.Int32)
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomChance(System.Int32)
-  nameWithType: DefaultRandom.RandomChance(Int32)
-- uid: KS.Drivers.RNG.DefaultRandom.RandomChance*
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomChance_System_Int32_
+  commentId: M:KS.Drivers.RNG.BaseRandomDriver.RandomChance(System.Int32)
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomChance(System.Int32)
+  nameWithType: BaseRandomDriver.RandomChance(Int32)
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomChance*
   name: RandomChance
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomChance_
-  commentId: Overload:KS.Drivers.RNG.DefaultRandom.RandomChance
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomChance_
+  commentId: Overload:KS.Drivers.RNG.BaseRandomDriver.RandomChance
   isSpec: "True"
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomChance
-  nameWithType: DefaultRandom.RandomChance
-- uid: KS.Drivers.RNG.DefaultRandom.RandomDouble
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomChance
+  nameWithType: BaseRandomDriver.RandomChance
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomDouble
   name: RandomDouble()
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomDouble
-  commentId: M:KS.Drivers.RNG.DefaultRandom.RandomDouble
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomDouble()
-  nameWithType: DefaultRandom.RandomDouble()
-- uid: KS.Drivers.RNG.DefaultRandom.RandomDouble(System.Double)
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomDouble
+  commentId: M:KS.Drivers.RNG.BaseRandomDriver.RandomDouble
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomDouble()
+  nameWithType: BaseRandomDriver.RandomDouble()
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomDouble(System.Double)
   name: RandomDouble(Double)
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomDouble_System_Double_
-  commentId: M:KS.Drivers.RNG.DefaultRandom.RandomDouble(System.Double)
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomDouble(System.Double)
-  nameWithType: DefaultRandom.RandomDouble(Double)
-- uid: KS.Drivers.RNG.DefaultRandom.RandomDouble*
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomDouble_System_Double_
+  commentId: M:KS.Drivers.RNG.BaseRandomDriver.RandomDouble(System.Double)
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomDouble(System.Double)
+  nameWithType: BaseRandomDriver.RandomDouble(Double)
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomDouble*
   name: RandomDouble
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomDouble_
-  commentId: Overload:KS.Drivers.RNG.DefaultRandom.RandomDouble
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomDouble_
+  commentId: Overload:KS.Drivers.RNG.BaseRandomDriver.RandomDouble
   isSpec: "True"
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomDouble
-  nameWithType: DefaultRandom.RandomDouble
-- uid: KS.Drivers.RNG.DefaultRandom.RandomIdx
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomDouble
+  nameWithType: BaseRandomDriver.RandomDouble
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomIdx
   name: RandomIdx()
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomIdx
-  commentId: M:KS.Drivers.RNG.DefaultRandom.RandomIdx
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomIdx()
-  nameWithType: DefaultRandom.RandomIdx()
-- uid: KS.Drivers.RNG.DefaultRandom.RandomIdx(System.Int32)
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomIdx
+  commentId: M:KS.Drivers.RNG.BaseRandomDriver.RandomIdx
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomIdx()
+  nameWithType: BaseRandomDriver.RandomIdx()
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomIdx(System.Int32)
   name: RandomIdx(Int32)
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomIdx_System_Int32_
-  commentId: M:KS.Drivers.RNG.DefaultRandom.RandomIdx(System.Int32)
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomIdx(System.Int32)
-  nameWithType: DefaultRandom.RandomIdx(Int32)
-- uid: KS.Drivers.RNG.DefaultRandom.RandomIdx(System.Int32,System.Int32)
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomIdx_System_Int32_
+  commentId: M:KS.Drivers.RNG.BaseRandomDriver.RandomIdx(System.Int32)
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomIdx(System.Int32)
+  nameWithType: BaseRandomDriver.RandomIdx(Int32)
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomIdx(System.Int32,System.Int32)
   name: RandomIdx(Int32, Int32)
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomIdx_System_Int32_System_Int32_
-  commentId: M:KS.Drivers.RNG.DefaultRandom.RandomIdx(System.Int32,System.Int32)
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomIdx(System.Int32, System.Int32)
-  nameWithType: DefaultRandom.RandomIdx(Int32, Int32)
-- uid: KS.Drivers.RNG.DefaultRandom.RandomIdx*
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomIdx_System_Int32_System_Int32_
+  commentId: M:KS.Drivers.RNG.BaseRandomDriver.RandomIdx(System.Int32,System.Int32)
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomIdx(System.Int32, System.Int32)
+  nameWithType: BaseRandomDriver.RandomIdx(Int32, Int32)
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomIdx*
   name: RandomIdx
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomIdx_
-  commentId: Overload:KS.Drivers.RNG.DefaultRandom.RandomIdx
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomIdx_
+  commentId: Overload:KS.Drivers.RNG.BaseRandomDriver.RandomIdx
   isSpec: "True"
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomIdx
-  nameWithType: DefaultRandom.RandomIdx
-- uid: KS.Drivers.RNG.DefaultRandom.RandomRussianRoulette
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomIdx
+  nameWithType: BaseRandomDriver.RandomIdx
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomRussianRoulette
   name: RandomRussianRoulette()
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomRussianRoulette
-  commentId: M:KS.Drivers.RNG.DefaultRandom.RandomRussianRoulette
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomRussianRoulette()
-  nameWithType: DefaultRandom.RandomRussianRoulette()
-- uid: KS.Drivers.RNG.DefaultRandom.RandomRussianRoulette*
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomRussianRoulette
+  commentId: M:KS.Drivers.RNG.BaseRandomDriver.RandomRussianRoulette
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomRussianRoulette()
+  nameWithType: BaseRandomDriver.RandomRussianRoulette()
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomRussianRoulette*
   name: RandomRussianRoulette
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomRussianRoulette_
-  commentId: Overload:KS.Drivers.RNG.DefaultRandom.RandomRussianRoulette
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomRussianRoulette_
+  commentId: Overload:KS.Drivers.RNG.BaseRandomDriver.RandomRussianRoulette
   isSpec: "True"
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomRussianRoulette
-  nameWithType: DefaultRandom.RandomRussianRoulette
-- uid: KS.Drivers.RNG.DefaultRandom.RandomShort
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomRussianRoulette
+  nameWithType: BaseRandomDriver.RandomRussianRoulette
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomShort
   name: RandomShort()
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomShort
-  commentId: M:KS.Drivers.RNG.DefaultRandom.RandomShort
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomShort()
-  nameWithType: DefaultRandom.RandomShort()
-- uid: KS.Drivers.RNG.DefaultRandom.RandomShort(System.Int16)
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomShort
+  commentId: M:KS.Drivers.RNG.BaseRandomDriver.RandomShort
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomShort()
+  nameWithType: BaseRandomDriver.RandomShort()
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomShort(System.Int16)
   name: RandomShort(Int16)
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomShort_System_Int16_
-  commentId: M:KS.Drivers.RNG.DefaultRandom.RandomShort(System.Int16)
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomShort(System.Int16)
-  nameWithType: DefaultRandom.RandomShort(Int16)
-- uid: KS.Drivers.RNG.DefaultRandom.RandomShort(System.Int16,System.Int16)
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomShort_System_Int16_
+  commentId: M:KS.Drivers.RNG.BaseRandomDriver.RandomShort(System.Int16)
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomShort(System.Int16)
+  nameWithType: BaseRandomDriver.RandomShort(Int16)
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomShort(System.Int16,System.Int16)
   name: RandomShort(Int16, Int16)
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomShort_System_Int16_System_Int16_
-  commentId: M:KS.Drivers.RNG.DefaultRandom.RandomShort(System.Int16,System.Int16)
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomShort(System.Int16, System.Int16)
-  nameWithType: DefaultRandom.RandomShort(Int16, Int16)
-- uid: KS.Drivers.RNG.DefaultRandom.RandomShort*
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomShort_System_Int16_System_Int16_
+  commentId: M:KS.Drivers.RNG.BaseRandomDriver.RandomShort(System.Int16,System.Int16)
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomShort(System.Int16, System.Int16)
+  nameWithType: BaseRandomDriver.RandomShort(Int16, Int16)
+- uid: KS.Drivers.RNG.BaseRandomDriver.RandomShort*
   name: RandomShort
-  href: api/KS.Drivers.RNG.DefaultRandom.html#KS_Drivers_RNG_DefaultRandom_RandomShort_
-  commentId: Overload:KS.Drivers.RNG.DefaultRandom.RandomShort
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_RandomShort_
+  commentId: Overload:KS.Drivers.RNG.BaseRandomDriver.RandomShort
   isSpec: "True"
-  fullName: KS.Drivers.RNG.DefaultRandom.RandomShort
-  nameWithType: DefaultRandom.RandomShort
+  fullName: KS.Drivers.RNG.BaseRandomDriver.RandomShort
+  nameWithType: BaseRandomDriver.RandomShort
 - uid: KS.Drivers.RNG.IRandomDriver
   name: IRandomDriver
   href: api/KS.Drivers.RNG.IRandomDriver.html
@@ -6166,6 +6166,18 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.RNG.RandomDriver.RandomShort
   nameWithType: RandomDriver.RandomShort
+- uid: KS.Drivers.RNG.Randoms
+  name: KS.Drivers.RNG.Randoms
+  href: api/KS.Drivers.RNG.Randoms.html
+  commentId: N:KS.Drivers.RNG.Randoms
+  fullName: KS.Drivers.RNG.Randoms
+  nameWithType: KS.Drivers.RNG.Randoms
+- uid: KS.Drivers.RNG.Randoms.DefaultRandom
+  name: DefaultRandom
+  href: api/KS.Drivers.RNG.Randoms.DefaultRandom.html
+  commentId: T:KS.Drivers.RNG.Randoms.DefaultRandom
+  fullName: KS.Drivers.RNG.Randoms.DefaultRandom
+  nameWithType: DefaultRandom
 - uid: KS.Files
   name: KS.Files
   href: api/KS.Files.html
