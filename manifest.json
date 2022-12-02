@@ -693,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.DriverHandler.html",
-          "hash": "WIl4RqRETT2OUjMyx56nmxdQzSkbbPTCI/1TqPI017M="
+          "hash": "9m/cIIWdJZLgpVHPzyssiJfwd+p9zyd1nfq3ORtFosQ="
         }
       },
       "is_incremental": false,
@@ -873,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.RNG.BaseRandomDriver.html",
-          "hash": "il6Y6s0kIB5UWStPQQYdteO8tK4kp3nGSGZSy+YekRs="
+          "hash": "YsyZF46l175jY0apwLSTRXpPI3hjp5O0F/CDuEM2gh8="
         }
       },
       "is_incremental": false,
@@ -917,11 +917,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.RNG.Randoms.DefaultRandomDebug.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.RNG.Randoms.DefaultRandomDebug.html",
+          "hash": "GlrWJnilFwIL1uyHqedPp2ygV0qHzfFNkJzBNXtwQC0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.RNG.Randoms.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.RNG.Randoms.html",
-          "hash": "TN+CABYbFotR32zunGbjiFKykwlx11FvmNKZNN/hatA="
+          "hash": "fl3iCsNwK29eBqQv8OYcR+oeSXFfUs4Z1aL0sWTD9Q8="
         }
       },
       "is_incremental": false,
@@ -12180,7 +12192,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "eR8znRpba8YiMnED34Cedl+GnyzJvCdRERjUpiROFsQ="
+          "hash": "ilNAERRZH1fR84M/VViRzDs9Alt03AYG1NVvmIi6emg="
         }
       },
       "is_incremental": false,
@@ -15241,7 +15253,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1013,
+          "total_file_count": 1014,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
