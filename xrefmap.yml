@@ -36831,83 +36831,6 @@ references:
   commentId: N:KS.Network.Base
   fullName: KS.Network.Base
   nameWithType: KS.Network.Base
-- uid: KS.Network.Base.NetworkAdapter
-  name: NetworkAdapter
-  href: api/KS.Network.Base.NetworkAdapter.html
-  commentId: T:KS.Network.Base.NetworkAdapter
-  fullName: KS.Network.Base.NetworkAdapter
-  nameWithType: NetworkAdapter
-- uid: KS.Network.Base.NetworkAdapter.IsInternetAdapter(System.Net.NetworkInformation.NetworkInterface)
-  name: IsInternetAdapter(NetworkInterface)
-  href: api/KS.Network.Base.NetworkAdapter.html#KS_Network_Base_NetworkAdapter_IsInternetAdapter_System_Net_NetworkInformation_NetworkInterface_
-  commentId: M:KS.Network.Base.NetworkAdapter.IsInternetAdapter(System.Net.NetworkInformation.NetworkInterface)
-  fullName: KS.Network.Base.NetworkAdapter.IsInternetAdapter(System.Net.NetworkInformation.NetworkInterface)
-  nameWithType: NetworkAdapter.IsInternetAdapter(NetworkInterface)
-- uid: KS.Network.Base.NetworkAdapter.IsInternetAdapter*
-  name: IsInternetAdapter
-  href: api/KS.Network.Base.NetworkAdapter.html#KS_Network_Base_NetworkAdapter_IsInternetAdapter_
-  commentId: Overload:KS.Network.Base.NetworkAdapter.IsInternetAdapter
-  isSpec: "True"
-  fullName: KS.Network.Base.NetworkAdapter.IsInternetAdapter
-  nameWithType: NetworkAdapter.IsInternetAdapter
-- uid: KS.Network.Base.NetworkAdapterPrint
-  name: NetworkAdapterPrint
-  href: api/KS.Network.Base.NetworkAdapterPrint.html
-  commentId: T:KS.Network.Base.NetworkAdapterPrint
-  fullName: KS.Network.Base.NetworkAdapterPrint
-  nameWithType: NetworkAdapterPrint
-- uid: KS.Network.Base.NetworkAdapterPrint.PrintAdapterIPv4Info(System.Net.NetworkInformation.NetworkInterface,System.Net.NetworkInformation.IPv4InterfaceProperties,System.Net.NetworkInformation.IPv4InterfaceStatistics,System.Int64)
-  name: PrintAdapterIPv4Info(NetworkInterface, IPv4InterfaceProperties, IPv4InterfaceStatistics, Int64)
-  href: api/KS.Network.Base.NetworkAdapterPrint.html#KS_Network_Base_NetworkAdapterPrint_PrintAdapterIPv4Info_System_Net_NetworkInformation_NetworkInterface_System_Net_NetworkInformation_IPv4InterfaceProperties_System_Net_NetworkInformation_IPv4InterfaceStatistics_System_Int64_
-  commentId: M:KS.Network.Base.NetworkAdapterPrint.PrintAdapterIPv4Info(System.Net.NetworkInformation.NetworkInterface,System.Net.NetworkInformation.IPv4InterfaceProperties,System.Net.NetworkInformation.IPv4InterfaceStatistics,System.Int64)
-  fullName: KS.Network.Base.NetworkAdapterPrint.PrintAdapterIPv4Info(System.Net.NetworkInformation.NetworkInterface, System.Net.NetworkInformation.IPv4InterfaceProperties, System.Net.NetworkInformation.IPv4InterfaceStatistics, System.Int64)
-  nameWithType: NetworkAdapterPrint.PrintAdapterIPv4Info(NetworkInterface, IPv4InterfaceProperties, IPv4InterfaceStatistics, Int64)
-- uid: KS.Network.Base.NetworkAdapterPrint.PrintAdapterIPv4Info*
-  name: PrintAdapterIPv4Info
-  href: api/KS.Network.Base.NetworkAdapterPrint.html#KS_Network_Base_NetworkAdapterPrint_PrintAdapterIPv4Info_
-  commentId: Overload:KS.Network.Base.NetworkAdapterPrint.PrintAdapterIPv4Info
-  isSpec: "True"
-  fullName: KS.Network.Base.NetworkAdapterPrint.PrintAdapterIPv4Info
-  nameWithType: NetworkAdapterPrint.PrintAdapterIPv4Info
-- uid: KS.Network.Base.NetworkAdapterPrint.PrintAdapterIPv6Info(System.Net.NetworkInformation.NetworkInterface,System.Net.NetworkInformation.IPv6InterfaceProperties,System.Int64)
-  name: PrintAdapterIPv6Info(NetworkInterface, IPv6InterfaceProperties, Int64)
-  href: api/KS.Network.Base.NetworkAdapterPrint.html#KS_Network_Base_NetworkAdapterPrint_PrintAdapterIPv6Info_System_Net_NetworkInformation_NetworkInterface_System_Net_NetworkInformation_IPv6InterfaceProperties_System_Int64_
-  commentId: M:KS.Network.Base.NetworkAdapterPrint.PrintAdapterIPv6Info(System.Net.NetworkInformation.NetworkInterface,System.Net.NetworkInformation.IPv6InterfaceProperties,System.Int64)
-  fullName: KS.Network.Base.NetworkAdapterPrint.PrintAdapterIPv6Info(System.Net.NetworkInformation.NetworkInterface, System.Net.NetworkInformation.IPv6InterfaceProperties, System.Int64)
-  nameWithType: NetworkAdapterPrint.PrintAdapterIPv6Info(NetworkInterface, IPv6InterfaceProperties, Int64)
-- uid: KS.Network.Base.NetworkAdapterPrint.PrintAdapterIPv6Info*
-  name: PrintAdapterIPv6Info
-  href: api/KS.Network.Base.NetworkAdapterPrint.html#KS_Network_Base_NetworkAdapterPrint_PrintAdapterIPv6Info_
-  commentId: Overload:KS.Network.Base.NetworkAdapterPrint.PrintAdapterIPv6Info
-  isSpec: "True"
-  fullName: KS.Network.Base.NetworkAdapterPrint.PrintAdapterIPv6Info
-  nameWithType: NetworkAdapterPrint.PrintAdapterIPv6Info
-- uid: KS.Network.Base.NetworkAdapterPrint.PrintAdapterProperties
-  name: PrintAdapterProperties()
-  href: api/KS.Network.Base.NetworkAdapterPrint.html#KS_Network_Base_NetworkAdapterPrint_PrintAdapterProperties
-  commentId: M:KS.Network.Base.NetworkAdapterPrint.PrintAdapterProperties
-  fullName: KS.Network.Base.NetworkAdapterPrint.PrintAdapterProperties()
-  nameWithType: NetworkAdapterPrint.PrintAdapterProperties()
-- uid: KS.Network.Base.NetworkAdapterPrint.PrintAdapterProperties*
-  name: PrintAdapterProperties
-  href: api/KS.Network.Base.NetworkAdapterPrint.html#KS_Network_Base_NetworkAdapterPrint_PrintAdapterProperties_
-  commentId: Overload:KS.Network.Base.NetworkAdapterPrint.PrintAdapterProperties
-  isSpec: "True"
-  fullName: KS.Network.Base.NetworkAdapterPrint.PrintAdapterProperties
-  nameWithType: NetworkAdapterPrint.PrintAdapterProperties
-- uid: KS.Network.Base.NetworkAdapterPrint.PrintGeneralNetInfo(System.Net.NetworkInformation.IPGlobalStatistics,System.Net.NetworkInformation.IPGlobalStatistics)
-  name: PrintGeneralNetInfo(IPGlobalStatistics, IPGlobalStatistics)
-  href: api/KS.Network.Base.NetworkAdapterPrint.html#KS_Network_Base_NetworkAdapterPrint_PrintGeneralNetInfo_System_Net_NetworkInformation_IPGlobalStatistics_System_Net_NetworkInformation_IPGlobalStatistics_
-  commentId: M:KS.Network.Base.NetworkAdapterPrint.PrintGeneralNetInfo(System.Net.NetworkInformation.IPGlobalStatistics,System.Net.NetworkInformation.IPGlobalStatistics)
-  fullName: KS.Network.Base.NetworkAdapterPrint.PrintGeneralNetInfo(System.Net.NetworkInformation.IPGlobalStatistics, System.Net.NetworkInformation.IPGlobalStatistics)
-  nameWithType: NetworkAdapterPrint.PrintGeneralNetInfo(IPGlobalStatistics, IPGlobalStatistics)
-- uid: KS.Network.Base.NetworkAdapterPrint.PrintGeneralNetInfo*
-  name: PrintGeneralNetInfo
-  href: api/KS.Network.Base.NetworkAdapterPrint.html#KS_Network_Base_NetworkAdapterPrint_PrintGeneralNetInfo_
-  commentId: Overload:KS.Network.Base.NetworkAdapterPrint.PrintGeneralNetInfo
-  isSpec: "True"
-  fullName: KS.Network.Base.NetworkAdapterPrint.PrintGeneralNetInfo
-  nameWithType: NetworkAdapterPrint.PrintGeneralNetInfo
 - uid: KS.Network.Base.NetworkTools
   name: NetworkTools
   href: api/KS.Network.Base.NetworkTools.html
@@ -54882,28 +54805,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.Shells.UESH.Commands.MoveCommand.Execute
   nameWithType: MoveCommand.Execute
-- uid: KS.Shell.Shells.UESH.Commands.NetInfoCommand
-  name: NetInfoCommand
-  href: api/KS.Shell.Shells.UESH.Commands.NetInfoCommand.html
-  commentId: T:KS.Shell.Shells.UESH.Commands.NetInfoCommand
-  fullName: KS.Shell.Shells.UESH.Commands.NetInfoCommand
-  nameWithType: NetInfoCommand
-- uid: KS.Shell.Shells.UESH.Commands.NetInfoCommand.Execute(System.String,System.String[],System.String[])
-  name: Execute(String, String[], String[])
-  href: api/KS.Shell.Shells.UESH.Commands.NetInfoCommand.html#KS_Shell_Shells_UESH_Commands_NetInfoCommand_Execute_System_String_System_String___System_String___
-  commentId: M:KS.Shell.Shells.UESH.Commands.NetInfoCommand.Execute(System.String,System.String[],System.String[])
-  name.vb: Execute(String, String(), String())
-  fullName: KS.Shell.Shells.UESH.Commands.NetInfoCommand.Execute(System.String, System.String[], System.String[])
-  fullName.vb: KS.Shell.Shells.UESH.Commands.NetInfoCommand.Execute(System.String, System.String(), System.String())
-  nameWithType: NetInfoCommand.Execute(String, String[], String[])
-  nameWithType.vb: NetInfoCommand.Execute(String, String(), String())
-- uid: KS.Shell.Shells.UESH.Commands.NetInfoCommand.Execute*
-  name: Execute
-  href: api/KS.Shell.Shells.UESH.Commands.NetInfoCommand.html#KS_Shell_Shells_UESH_Commands_NetInfoCommand_Execute_
-  commentId: Overload:KS.Shell.Shells.UESH.Commands.NetInfoCommand.Execute
-  isSpec: "True"
-  fullName: KS.Shell.Shells.UESH.Commands.NetInfoCommand.Execute
-  nameWithType: NetInfoCommand.Execute
 - uid: KS.Shell.Shells.UESH.Commands.OpenCommand
   name: OpenCommand
   href: api/KS.Shell.Shells.UESH.Commands.OpenCommand.html

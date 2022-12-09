@@ -5969,30 +5969,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Base.NetworkAdapter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Base.NetworkAdapter.html",
-          "hash": "7I9BCqtfDPAidCOotLewDB0UHkNaEq+VrGba3o5H3nk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.Base.NetworkAdapterPrint.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.Base.NetworkAdapterPrint.html",
-          "hash": "jdTpek3O+os9h1BnCqCF17xix47/uQpGA2kRrzYbGtU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Network.Base.NetworkTools.yml",
       "output": {
         ".html": {
@@ -6057,7 +6033,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.Base.html",
-          "hash": "/L0gmKMMC5kuHqCKmzb0rDwhUQk5H//x/aR0KpRZVYU="
+          "hash": "oTDOCKF/BHWEf14wjK3XzADnUcFRTy3wiJc+YamNBqw="
         }
       },
       "is_incremental": false,
@@ -8169,7 +8145,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.BaseCommand.html",
-          "hash": "PMZTnblPxefUuYgpxE5v/MK4GDZbr4q8AzADJmfhM2s="
+          "hash": "EXkS5Y1Vnryfoh96nxnQYRE8RYs7VkTXNC4Y15bN/Uw="
         }
       },
       "is_incremental": false,
@@ -11144,18 +11120,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.NetInfoCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.UESH.Commands.NetInfoCommand.html",
-          "hash": "ZOG2Rp3K5CLvP6dbq2U/IgLwFH2RbqAMAdnfmnWq6xM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.OpenCommand.yml",
       "output": {
         ".html": {
@@ -11760,7 +11724,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.html",
-          "hash": "LWDHcUCMWOvWU+GVldcTg/FnE6FvyWZpCfI8+bxFWZ8="
+          "hash": "96KsKKNhJ5kerJrSEYSIadvh62PvFM6yMtPJDR9bglo="
         }
       },
       "is_incremental": false,
@@ -11784,7 +11748,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.UESHShellInfo.html",
-          "hash": "E68Im001S6ej5tJSXCjrdDi/gWKDV+kSL937KdSc4UY="
+          "hash": "RiYX+4QYKBXv8B+G9EsiPXCqzBotWshop/KJYLDigzk="
         }
       },
       "is_incremental": false,
@@ -12072,7 +12036,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "8gH2oeFU0N4ombqgaaah8TCKKvtx5V93KndB38l+Hnw="
+          "hash": "0+CRbRuiw8uCWm60o5ThjW370+WKcCF+Gd7q/PfEfv4="
         }
       },
       "is_incremental": false,
@@ -15133,7 +15097,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1004,
+          "total_file_count": 1001,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
