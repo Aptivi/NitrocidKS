@@ -278,6 +278,8 @@
 <p>PrepareDict used to populate the string dictionary with definitions to the localized string. Now, because the language management routine was remodeled, we've removed PrepareDict as part of the change.</p>
 <h5 id="removed-network-adapter-querying">Removed network adapter querying</h5>
 <p>This functionality is no longer maintained.</p>
+<h5 id="theme-preview-is-no-longer-exclusive-to-studio">Theme preview is no longer exclusive to studio</h5>
+<p>The theme preview routine used to depend on the theme studio to do its job, under the name of <code>ThemeStudioTools.PreparePreview()</code>. However, because there were recent improvements to the theming system, we've finally condensed the preview routine to <code>ThemeTools.PreviewTheme()</code>. You can no longer use the old method, because it also required loading the theme information to the theme studio itself. What if it was called in a context that has no relationship with the theme studio, such as in the case of <code>themesel</code>?</p>
 </article>
           </div>
           

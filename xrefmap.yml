@@ -1204,19 +1204,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Colors.ColorTools.PopulateColorsEmpty
   nameWithType: ColorTools.PopulateColorsEmpty
-- uid: KS.ConsoleBase.Colors.ColorTools.ResetColors
-  name: ResetColors()
-  href: api/KS.ConsoleBase.Colors.ColorTools.html#KS_ConsoleBase_Colors_ColorTools_ResetColors
-  commentId: M:KS.ConsoleBase.Colors.ColorTools.ResetColors
-  fullName: KS.ConsoleBase.Colors.ColorTools.ResetColors()
-  nameWithType: ColorTools.ResetColors()
-- uid: KS.ConsoleBase.Colors.ColorTools.ResetColors*
-  name: ResetColors
-  href: api/KS.ConsoleBase.Colors.ColorTools.html#KS_ConsoleBase_Colors_ColorTools_ResetColors_
-  commentId: Overload:KS.ConsoleBase.Colors.ColorTools.ResetColors
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Colors.ColorTools.ResetColors
-  nameWithType: ColorTools.ResetColors
 - uid: KS.ConsoleBase.Colors.ColorTools.SetColor(KS.ConsoleBase.Colors.ColorTools.ColTypes,Color)
   name: SetColor(ColorTools.ColTypes, Color)
   href: api/KS.ConsoleBase.Colors.ColorTools.html#KS_ConsoleBase_Colors_ColorTools_SetColor_KS_ConsoleBase_Colors_ColorTools_ColTypes_Color_
@@ -2389,6 +2376,66 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Themes.ThemeTools.ApplyThemeFromResources
   nameWithType: ThemeTools.ApplyThemeFromResources
+- uid: KS.ConsoleBase.Themes.ThemeTools.GetColorsFromTheme(KS.ConsoleBase.Themes.ThemeInfo)
+  name: GetColorsFromTheme(ThemeInfo)
+  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_GetColorsFromTheme_KS_ConsoleBase_Themes_ThemeInfo_
+  commentId: M:KS.ConsoleBase.Themes.ThemeTools.GetColorsFromTheme(KS.ConsoleBase.Themes.ThemeInfo)
+  fullName: KS.ConsoleBase.Themes.ThemeTools.GetColorsFromTheme(KS.ConsoleBase.Themes.ThemeInfo)
+  nameWithType: ThemeTools.GetColorsFromTheme(ThemeInfo)
+- uid: KS.ConsoleBase.Themes.ThemeTools.GetColorsFromTheme(System.String)
+  name: GetColorsFromTheme(String)
+  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_GetColorsFromTheme_System_String_
+  commentId: M:KS.ConsoleBase.Themes.ThemeTools.GetColorsFromTheme(System.String)
+  fullName: KS.ConsoleBase.Themes.ThemeTools.GetColorsFromTheme(System.String)
+  nameWithType: ThemeTools.GetColorsFromTheme(String)
+- uid: KS.ConsoleBase.Themes.ThemeTools.GetColorsFromTheme*
+  name: GetColorsFromTheme
+  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_GetColorsFromTheme_
+  commentId: Overload:KS.ConsoleBase.Themes.ThemeTools.GetColorsFromTheme
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Themes.ThemeTools.GetColorsFromTheme
+  nameWithType: ThemeTools.GetColorsFromTheme
+- uid: KS.ConsoleBase.Themes.ThemeTools.GetThemeInfo(System.String)
+  name: GetThemeInfo(String)
+  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_GetThemeInfo_System_String_
+  commentId: M:KS.ConsoleBase.Themes.ThemeTools.GetThemeInfo(System.String)
+  fullName: KS.ConsoleBase.Themes.ThemeTools.GetThemeInfo(System.String)
+  nameWithType: ThemeTools.GetThemeInfo(String)
+- uid: KS.ConsoleBase.Themes.ThemeTools.GetThemeInfo*
+  name: GetThemeInfo
+  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_GetThemeInfo_
+  commentId: Overload:KS.ConsoleBase.Themes.ThemeTools.GetThemeInfo
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Themes.ThemeTools.GetThemeInfo
+  nameWithType: ThemeTools.GetThemeInfo
+- uid: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(KS.ConsoleBase.Themes.ThemeInfo)
+  name: PreviewTheme(ThemeInfo)
+  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_PreviewTheme_KS_ConsoleBase_Themes_ThemeInfo_
+  commentId: M:KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(KS.ConsoleBase.Themes.ThemeInfo)
+  fullName: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(KS.ConsoleBase.Themes.ThemeInfo)
+  nameWithType: ThemeTools.PreviewTheme(ThemeInfo)
+- uid: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(System.Collections.Generic.Dictionary{KS.ConsoleBase.Colors.ColorTools.ColTypes,Color})
+  name: PreviewTheme(Dictionary<ColorTools.ColTypes, Color>)
+  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_PreviewTheme_System_Collections_Generic_Dictionary_KS_ConsoleBase_Colors_ColorTools_ColTypes_Color__
+  commentId: M:KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(System.Collections.Generic.Dictionary{KS.ConsoleBase.Colors.ColorTools.ColTypes,Color})
+  name.vb: PreviewTheme(Dictionary(Of ColorTools.ColTypes, Color))
+  fullName: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(System.Collections.Generic.Dictionary<KS.ConsoleBase.Colors.ColorTools.ColTypes, Color>)
+  fullName.vb: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(System.Collections.Generic.Dictionary(Of KS.ConsoleBase.Colors.ColorTools.ColTypes, Color))
+  nameWithType: ThemeTools.PreviewTheme(Dictionary<ColorTools.ColTypes, Color>)
+  nameWithType.vb: ThemeTools.PreviewTheme(Dictionary(Of ColorTools.ColTypes, Color))
+- uid: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(System.String)
+  name: PreviewTheme(String)
+  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_PreviewTheme_System_String_
+  commentId: M:KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(System.String)
+  fullName: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(System.String)
+  nameWithType: ThemeTools.PreviewTheme(String)
+- uid: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme*
+  name: PreviewTheme
+  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_PreviewTheme_
+  commentId: Overload:KS.ConsoleBase.Themes.ThemeTools.PreviewTheme
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme
+  nameWithType: ThemeTools.PreviewTheme
 - uid: KS.ConsoleBase.Themes.ThemeTools.SetColorsTheme(KS.ConsoleBase.Themes.ThemeInfo)
   name: SetColorsTheme(ThemeInfo)
   href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_SetColorsTheme_KS_ConsoleBase_Themes_ThemeInfo_
