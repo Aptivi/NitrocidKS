@@ -2320,12 +2320,31 @@ references:
   commentId: F:KS.ConsoleBase.Themes.ThemeInfo.ThemeColors
   fullName: KS.ConsoleBase.Themes.ThemeInfo.ThemeColors
   nameWithType: ThemeInfo.ThemeColors
+- uid: KS.ConsoleBase.Themes.ThemeInfo.TrueColorRequired
+  name: TrueColorRequired
+  href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo_TrueColorRequired
+  commentId: P:KS.ConsoleBase.Themes.ThemeInfo.TrueColorRequired
+  fullName: KS.ConsoleBase.Themes.ThemeInfo.TrueColorRequired
+  nameWithType: ThemeInfo.TrueColorRequired
+- uid: KS.ConsoleBase.Themes.ThemeInfo.TrueColorRequired*
+  name: TrueColorRequired
+  href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo_TrueColorRequired_
+  commentId: Overload:KS.ConsoleBase.Themes.ThemeInfo.TrueColorRequired
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Themes.ThemeInfo.TrueColorRequired
+  nameWithType: ThemeInfo.TrueColorRequired
 - uid: KS.ConsoleBase.Themes.ThemeSetErrorReasons
   name: ThemeSetErrorReasons
   href: api/KS.ConsoleBase.Themes.ThemeSetErrorReasons.html
   commentId: T:KS.ConsoleBase.Themes.ThemeSetErrorReasons
   fullName: KS.ConsoleBase.Themes.ThemeSetErrorReasons
   nameWithType: ThemeSetErrorReasons
+- uid: KS.ConsoleBase.Themes.ThemeSetErrorReasons.ConsoleUnsupported
+  name: ConsoleUnsupported
+  href: api/KS.ConsoleBase.Themes.ThemeSetErrorReasons.html#KS_ConsoleBase_Themes_ThemeSetErrorReasons_ConsoleUnsupported
+  commentId: F:KS.ConsoleBase.Themes.ThemeSetErrorReasons.ConsoleUnsupported
+  fullName: KS.ConsoleBase.Themes.ThemeSetErrorReasons.ConsoleUnsupported
+  nameWithType: ThemeSetErrorReasons.ConsoleUnsupported
 - uid: KS.ConsoleBase.Themes.ThemeSetErrorReasons.NotFound
   name: NotFound
   href: api/KS.ConsoleBase.Themes.ThemeSetErrorReasons.html#KS_ConsoleBase_Themes_ThemeSetErrorReasons_NotFound
@@ -12437,6 +12456,12 @@ references:
   commentId: F:KS.Kernel.Exceptions.KernelExceptionType.Unknown
   fullName: KS.Kernel.Exceptions.KernelExceptionType.Unknown
   nameWithType: KernelExceptionType.Unknown
+- uid: KS.Kernel.Exceptions.KernelExceptionType.UnsupportedConsole
+  name: UnsupportedConsole
+  href: api/KS.Kernel.Exceptions.KernelExceptionType.html#KS_Kernel_Exceptions_KernelExceptionType_UnsupportedConsole
+  commentId: F:KS.Kernel.Exceptions.KernelExceptionType.UnsupportedConsole
+  fullName: KS.Kernel.Exceptions.KernelExceptionType.UnsupportedConsole
+  nameWithType: KernelExceptionType.UnsupportedConsole
 - uid: KS.Kernel.Exceptions.KernelExceptionType.UserCreation
   name: UserCreation
   href: api/KS.Kernel.Exceptions.KernelExceptionType.html#KS_Kernel_Exceptions_KernelExceptionType_UserCreation
@@ -12527,6 +12552,12 @@ references:
   commentId: F:KS.Kernel.Flags.ColorWheelTrueColor
   fullName: KS.Kernel.Flags.ColorWheelTrueColor
   nameWithType: Flags.ColorWheelTrueColor
+- uid: KS.Kernel.Flags.ConsoleSupportsTrueColor
+  name: ConsoleSupportsTrueColor
+  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_ConsoleSupportsTrueColor
+  commentId: F:KS.Kernel.Flags.ConsoleSupportsTrueColor
+  fullName: KS.Kernel.Flags.ConsoleSupportsTrueColor
+  nameWithType: Flags.ConsoleSupportsTrueColor
 - uid: KS.Kernel.Flags.CornerTimeDate
   name: CornerTimeDate
   href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_CornerTimeDate
@@ -12581,6 +12612,12 @@ references:
   commentId: F:KS.Kernel.Flags.ExtensiveAdapterInformation
   fullName: KS.Kernel.Flags.ExtensiveAdapterInformation
   nameWithType: Flags.ExtensiveAdapterInformation
+- uid: KS.Kernel.Flags.FirstTime
+  name: FirstTime
+  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_FirstTime
+  commentId: F:KS.Kernel.Flags.FirstTime
+  fullName: KS.Kernel.Flags.FirstTime
+  nameWithType: Flags.FirstTime
 - uid: KS.Kernel.Flags.FTPFirstProfileOnly
   name: FTPFirstProfileOnly
   href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_FTPFirstProfileOnly
