@@ -1377,7 +1377,7 @@
   "api/KS.Misc.Animations.Glitch.Glitch.html": {
     "href": "api/KS.Misc.Animations.Glitch.Glitch.html",
     "title": "Class Glitch | Kernel Simulator API - Aptivi",
-    "keywords": "Class Glitch Glitch animation module Inheritance System.Object Glitch Namespace : KS.Misc.Animations.Glitch Assembly : Kernel Simulator.dll Syntax public static class Glitch Methods | Improve this Doc View Source Simulate(GlitchSettings) Simulates the glitching animation Declaration public static void Simulate(GlitchSettings Settings) Parameters Type Name Description GlitchSettings Settings"
+    "keywords": "Class Glitch Glitch animation module Inheritance System.Object Glitch Namespace : KS.Misc.Animations.Glitch Assembly : Kernel Simulator.dll Syntax public static class Glitch Methods | Improve this Doc View Source GlitchAt() Glitch at specified position Declaration public static void GlitchAt() | Improve this Doc View Source GlitchAt(Int32, Int32) Glitch at specified position Declaration public static void GlitchAt(int CoverX, int CoverY) Parameters Type Name Description System.Int32 CoverX System.Int32 CoverY | Improve this Doc View Source Simulate(GlitchSettings) Simulates the glitching animation Declaration public static void Simulate(GlitchSettings Settings) Parameters Type Name Description GlitchSettings Settings"
   },
   "api/KS.Misc.Animations.Glitch.GlitchColorType.html": {
     "href": "api/KS.Misc.Animations.Glitch.GlitchColorType.html",

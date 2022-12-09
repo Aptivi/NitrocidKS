@@ -16252,6 +16252,25 @@ references:
   commentId: T:KS.Misc.Animations.Glitch.Glitch
   fullName: KS.Misc.Animations.Glitch.Glitch
   nameWithType: Glitch
+- uid: KS.Misc.Animations.Glitch.Glitch.GlitchAt
+  name: GlitchAt()
+  href: api/KS.Misc.Animations.Glitch.Glitch.html#KS_Misc_Animations_Glitch_Glitch_GlitchAt
+  commentId: M:KS.Misc.Animations.Glitch.Glitch.GlitchAt
+  fullName: KS.Misc.Animations.Glitch.Glitch.GlitchAt()
+  nameWithType: Glitch.GlitchAt()
+- uid: KS.Misc.Animations.Glitch.Glitch.GlitchAt(System.Int32,System.Int32)
+  name: GlitchAt(Int32, Int32)
+  href: api/KS.Misc.Animations.Glitch.Glitch.html#KS_Misc_Animations_Glitch_Glitch_GlitchAt_System_Int32_System_Int32_
+  commentId: M:KS.Misc.Animations.Glitch.Glitch.GlitchAt(System.Int32,System.Int32)
+  fullName: KS.Misc.Animations.Glitch.Glitch.GlitchAt(System.Int32, System.Int32)
+  nameWithType: Glitch.GlitchAt(Int32, Int32)
+- uid: KS.Misc.Animations.Glitch.Glitch.GlitchAt*
+  name: GlitchAt
+  href: api/KS.Misc.Animations.Glitch.Glitch.html#KS_Misc_Animations_Glitch_Glitch_GlitchAt_
+  commentId: Overload:KS.Misc.Animations.Glitch.Glitch.GlitchAt
+  isSpec: "True"
+  fullName: KS.Misc.Animations.Glitch.Glitch.GlitchAt
+  nameWithType: Glitch.GlitchAt
 - uid: KS.Misc.Animations.Glitch.Glitch.Simulate(KS.Misc.Animations.Glitch.GlitchSettings)
   name: Simulate(GlitchSettings)
   href: api/KS.Misc.Animations.Glitch.Glitch.html#KS_Misc_Animations_Glitch_Glitch_Simulate_KS_Misc_Animations_Glitch_GlitchSettings_
