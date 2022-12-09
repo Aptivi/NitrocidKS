@@ -36418,6 +36418,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Writers.FancyWriters.Tools.FigletTools.GetFigletHeight
   nameWithType: FigletTools.GetFigletHeight
+- uid: KS.Misc.Writers.FancyWriters.Tools.FigletTools.GetFigletLines(System.String,FiggleFont)
+  name: GetFigletLines(String, FiggleFont)
+  href: api/KS.Misc.Writers.FancyWriters.Tools.FigletTools.html#KS_Misc_Writers_FancyWriters_Tools_FigletTools_GetFigletLines_System_String_FiggleFont_
+  commentId: M:KS.Misc.Writers.FancyWriters.Tools.FigletTools.GetFigletLines(System.String,FiggleFont)
+  fullName: KS.Misc.Writers.FancyWriters.Tools.FigletTools.GetFigletLines(System.String, FiggleFont)
+  nameWithType: FigletTools.GetFigletLines(String, FiggleFont)
+- uid: KS.Misc.Writers.FancyWriters.Tools.FigletTools.GetFigletLines*
+  name: GetFigletLines
+  href: api/KS.Misc.Writers.FancyWriters.Tools.FigletTools.html#KS_Misc_Writers_FancyWriters_Tools_FigletTools_GetFigletLines_
+  commentId: Overload:KS.Misc.Writers.FancyWriters.Tools.FigletTools.GetFigletLines
+  isSpec: "True"
+  fullName: KS.Misc.Writers.FancyWriters.Tools.FigletTools.GetFigletLines
+  nameWithType: FigletTools.GetFigletLines
 - uid: KS.Misc.Writers.FancyWriters.Tools.FigletTools.GetFigletWidth(System.String,FiggleFont)
   name: GetFigletWidth(String, FiggleFont)
   href: api/KS.Misc.Writers.FancyWriters.Tools.FigletTools.html#KS_Misc_Writers_FancyWriters_Tools_FigletTools_GetFigletWidth_System_String_FiggleFont_
