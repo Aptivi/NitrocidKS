@@ -9075,190 +9075,6 @@ references:
   commentId: N:KS.Kernel.Debugging.RemoteDebug
   fullName: KS.Kernel.Debugging.RemoteDebug
   nameWithType: KS.Kernel.Debugging.RemoteDebug
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands
-  name: KS.Kernel.Debugging.RemoteDebug.Commands
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.html
-  commentId: N:KS.Kernel.Debugging.RemoteDebug.Commands
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands
-  nameWithType: KS.Kernel.Debugging.RemoteDebug.Commands
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_ExitCommand
-  name: Debug_ExitCommand
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_ExitCommand.html
-  commentId: T:KS.Kernel.Debugging.RemoteDebug.Commands.Debug_ExitCommand
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_ExitCommand
-  nameWithType: Debug_ExitCommand
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_ExitCommand.Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name: Execute(String, String[], String[], StreamWriter, String)
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_ExitCommand.html#KS_Kernel_Debugging_RemoteDebug_Commands_Debug_ExitCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.Commands.Debug_ExitCommand.Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name.vb: Execute(String, String(), String(), StreamWriter, String)
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_ExitCommand.Execute(System.String, System.String[], System.String[], System.IO.StreamWriter, System.String)
-  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_ExitCommand.Execute(System.String, System.String(), System.String(), System.IO.StreamWriter, System.String)
-  nameWithType: Debug_ExitCommand.Execute(String, String[], String[], StreamWriter, String)
-  nameWithType.vb: Debug_ExitCommand.Execute(String, String(), String(), StreamWriter, String)
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_ExitCommand.Execute*
-  name: Execute
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_ExitCommand.html#KS_Kernel_Debugging_RemoteDebug_Commands_Debug_ExitCommand_Execute_
-  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Commands.Debug_ExitCommand.Execute
-  isSpec: "True"
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_ExitCommand.Execute
-  nameWithType: Debug_ExitCommand.Execute
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_HelpCommand
-  name: Debug_HelpCommand
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_HelpCommand.html
-  commentId: T:KS.Kernel.Debugging.RemoteDebug.Commands.Debug_HelpCommand
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_HelpCommand
-  nameWithType: Debug_HelpCommand
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_HelpCommand.Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name: Execute(String, String[], String[], StreamWriter, String)
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_HelpCommand.html#KS_Kernel_Debugging_RemoteDebug_Commands_Debug_HelpCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.Commands.Debug_HelpCommand.Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name.vb: Execute(String, String(), String(), StreamWriter, String)
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_HelpCommand.Execute(System.String, System.String[], System.String[], System.IO.StreamWriter, System.String)
-  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_HelpCommand.Execute(System.String, System.String(), System.String(), System.IO.StreamWriter, System.String)
-  nameWithType: Debug_HelpCommand.Execute(String, String[], String[], StreamWriter, String)
-  nameWithType.vb: Debug_HelpCommand.Execute(String, String(), String(), StreamWriter, String)
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_HelpCommand.Execute*
-  name: Execute
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_HelpCommand.html#KS_Kernel_Debugging_RemoteDebug_Commands_Debug_HelpCommand_Execute_
-  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Commands.Debug_HelpCommand.Execute
-  isSpec: "True"
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_HelpCommand.Execute
-  nameWithType: Debug_HelpCommand.Execute
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_RegisterCommand
-  name: Debug_RegisterCommand
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_RegisterCommand.html
-  commentId: T:KS.Kernel.Debugging.RemoteDebug.Commands.Debug_RegisterCommand
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_RegisterCommand
-  nameWithType: Debug_RegisterCommand
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_RegisterCommand.Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name: Execute(String, String[], String[], StreamWriter, String)
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_RegisterCommand.html#KS_Kernel_Debugging_RemoteDebug_Commands_Debug_RegisterCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.Commands.Debug_RegisterCommand.Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name.vb: Execute(String, String(), String(), StreamWriter, String)
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_RegisterCommand.Execute(System.String, System.String[], System.String[], System.IO.StreamWriter, System.String)
-  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_RegisterCommand.Execute(System.String, System.String(), System.String(), System.IO.StreamWriter, System.String)
-  nameWithType: Debug_RegisterCommand.Execute(String, String[], String[], StreamWriter, String)
-  nameWithType.vb: Debug_RegisterCommand.Execute(String, String(), String(), StreamWriter, String)
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_RegisterCommand.Execute*
-  name: Execute
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_RegisterCommand.html#KS_Kernel_Debugging_RemoteDebug_Commands_Debug_RegisterCommand_Execute_
-  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Commands.Debug_RegisterCommand.Execute
-  isSpec: "True"
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_RegisterCommand.Execute
-  nameWithType: Debug_RegisterCommand.Execute
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_TraceCommand
-  name: Debug_TraceCommand
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_TraceCommand.html
-  commentId: T:KS.Kernel.Debugging.RemoteDebug.Commands.Debug_TraceCommand
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_TraceCommand
-  nameWithType: Debug_TraceCommand
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_TraceCommand.Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name: Execute(String, String[], String[], StreamWriter, String)
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_TraceCommand.html#KS_Kernel_Debugging_RemoteDebug_Commands_Debug_TraceCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.Commands.Debug_TraceCommand.Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name.vb: Execute(String, String(), String(), StreamWriter, String)
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_TraceCommand.Execute(System.String, System.String[], System.String[], System.IO.StreamWriter, System.String)
-  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_TraceCommand.Execute(System.String, System.String(), System.String(), System.IO.StreamWriter, System.String)
-  nameWithType: Debug_TraceCommand.Execute(String, String[], String[], StreamWriter, String)
-  nameWithType.vb: Debug_TraceCommand.Execute(String, String(), String(), StreamWriter, String)
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_TraceCommand.Execute*
-  name: Execute
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_TraceCommand.html#KS_Kernel_Debugging_RemoteDebug_Commands_Debug_TraceCommand_Execute_
-  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Commands.Debug_TraceCommand.Execute
-  isSpec: "True"
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_TraceCommand.Execute
-  nameWithType: Debug_TraceCommand.Execute
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand
-  name: Debug_UsernameCommand
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand.html
-  commentId: T:KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand
-  nameWithType: Debug_UsernameCommand
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand.Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name: Execute(String, String[], String[], StreamWriter, String)
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand.html#KS_Kernel_Debugging_RemoteDebug_Commands_Debug_UsernameCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand.Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name.vb: Execute(String, String(), String(), StreamWriter, String)
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand.Execute(System.String, System.String[], System.String[], System.IO.StreamWriter, System.String)
-  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand.Execute(System.String, System.String(), System.String(), System.IO.StreamWriter, System.String)
-  nameWithType: Debug_UsernameCommand.Execute(String, String[], String[], StreamWriter, String)
-  nameWithType.vb: Debug_UsernameCommand.Execute(String, String(), String(), StreamWriter, String)
-- uid: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand.Execute*
-  name: Execute
-  href: api/KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand.html#KS_Kernel_Debugging_RemoteDebug_Commands_Debug_UsernameCommand_Execute_
-  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand.Execute
-  isSpec: "True"
-  fullName: KS.Kernel.Debugging.RemoteDebug.Commands.Debug_UsernameCommand.Execute
-  nameWithType: Debug_UsernameCommand.Execute
-- uid: KS.Kernel.Debugging.RemoteDebug.Interface
-  name: KS.Kernel.Debugging.RemoteDebug.Interface
-  href: api/KS.Kernel.Debugging.RemoteDebug.Interface.html
-  commentId: N:KS.Kernel.Debugging.RemoteDebug.Interface
-  fullName: KS.Kernel.Debugging.RemoteDebug.Interface
-  nameWithType: KS.Kernel.Debugging.RemoteDebug.Interface
-- uid: KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand
-  name: IRemoteDebugCommand
-  href: api/KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.html
-  commentId: T:KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand
-  fullName: KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand
-  nameWithType: IRemoteDebugCommand
-- uid: KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name: Execute(String, String[], String[], StreamWriter, String)
-  href: api/KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.html#KS_Kernel_Debugging_RemoteDebug_Interface_IRemoteDebugCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name.vb: Execute(String, String(), String(), StreamWriter, String)
-  fullName: KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(System.String, System.String[], System.String[], System.IO.StreamWriter, System.String)
-  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(System.String, System.String(), System.String(), System.IO.StreamWriter, System.String)
-  nameWithType: IRemoteDebugCommand.Execute(String, String[], String[], StreamWriter, String)
-  nameWithType.vb: IRemoteDebugCommand.Execute(String, String(), String(), StreamWriter, String)
-- uid: KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute*
-  name: Execute
-  href: api/KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.html#KS_Kernel_Debugging_RemoteDebug_Interface_IRemoteDebugCommand_Execute_
-  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute
-  isSpec: "True"
-  fullName: KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute
-  nameWithType: IRemoteDebugCommand.Execute
-- uid: KS.Kernel.Debugging.RemoteDebug.Interface.RemoteDebugCommandExecutor
-  name: RemoteDebugCommandExecutor
-  href: api/KS.Kernel.Debugging.RemoteDebug.Interface.RemoteDebugCommandExecutor.html
-  commentId: T:KS.Kernel.Debugging.RemoteDebug.Interface.RemoteDebugCommandExecutor
-  fullName: KS.Kernel.Debugging.RemoteDebug.Interface.RemoteDebugCommandExecutor
-  nameWithType: RemoteDebugCommandExecutor
-- uid: KS.Kernel.Debugging.RemoteDebug.Interface.RemoteDebugCommandExecutor.Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name: Execute(String, String[], String[], StreamWriter, String)
-  href: api/KS.Kernel.Debugging.RemoteDebug.Interface.RemoteDebugCommandExecutor.html#KS_Kernel_Debugging_RemoteDebug_Interface_RemoteDebugCommandExecutor_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.Interface.RemoteDebugCommandExecutor.Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name.vb: Execute(String, String(), String(), StreamWriter, String)
-  fullName: KS.Kernel.Debugging.RemoteDebug.Interface.RemoteDebugCommandExecutor.Execute(System.String, System.String[], System.String[], System.IO.StreamWriter, System.String)
-  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Interface.RemoteDebugCommandExecutor.Execute(System.String, System.String(), System.String(), System.IO.StreamWriter, System.String)
-  nameWithType: RemoteDebugCommandExecutor.Execute(String, String[], String[], StreamWriter, String)
-  nameWithType.vb: RemoteDebugCommandExecutor.Execute(String, String(), String(), StreamWriter, String)
-- uid: KS.Kernel.Debugging.RemoteDebug.Interface.RemoteDebugCommandExecutor.Execute*
-  name: Execute
-  href: api/KS.Kernel.Debugging.RemoteDebug.Interface.RemoteDebugCommandExecutor.html#KS_Kernel_Debugging_RemoteDebug_Interface_RemoteDebugCommandExecutor_Execute_
-  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Interface.RemoteDebugCommandExecutor.Execute
-  isSpec: "True"
-  fullName: KS.Kernel.Debugging.RemoteDebug.Interface.RemoteDebugCommandExecutor.Execute
-  nameWithType: RemoteDebugCommandExecutor.Execute
-- uid: KS.Kernel.Debugging.RemoteDebug.RemoteDebugCmd
-  name: RemoteDebugCmd
-  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteDebugCmd.html
-  commentId: T:KS.Kernel.Debugging.RemoteDebug.RemoteDebugCmd
-  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteDebugCmd
-  nameWithType: RemoteDebugCmd
-- uid: KS.Kernel.Debugging.RemoteDebug.RemoteDebugCmd.DebugCommands
-  name: DebugCommands
-  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteDebugCmd.html#KS_Kernel_Debugging_RemoteDebug_RemoteDebugCmd_DebugCommands
-  commentId: F:KS.Kernel.Debugging.RemoteDebug.RemoteDebugCmd.DebugCommands
-  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteDebugCmd.DebugCommands
-  nameWithType: RemoteDebugCmd.DebugCommands
-- uid: KS.Kernel.Debugging.RemoteDebug.RemoteDebugCmd.DebugModCmds
-  name: DebugModCmds
-  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteDebugCmd.html#KS_Kernel_Debugging_RemoteDebug_RemoteDebugCmd_DebugModCmds
-  commentId: F:KS.Kernel.Debugging.RemoteDebug.RemoteDebugCmd.DebugModCmds
-  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteDebugCmd.DebugModCmds
-  nameWithType: RemoteDebugCmd.DebugModCmds
 - uid: KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice
   name: RemoteDebugDevice
   href: api/KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice.html
@@ -47705,18 +47521,18 @@ references:
   commentId: T:KS.Shell.ShellBase.Aliases.AliasExecutor
   fullName: KS.Shell.ShellBase.Aliases.AliasExecutor
   nameWithType: AliasExecutor
-- uid: KS.Shell.ShellBase.Aliases.AliasExecutor.ExecuteAlias(System.String,KS.Shell.ShellBase.Shells.ShellType,System.IO.StreamWriter,System.String)
-  name: ExecuteAlias(String, ShellType, StreamWriter, String)
-  href: api/KS.Shell.ShellBase.Aliases.AliasExecutor.html#KS_Shell_ShellBase_Aliases_AliasExecutor_ExecuteAlias_System_String_KS_Shell_ShellBase_Shells_ShellType_System_IO_StreamWriter_System_String_
-  commentId: M:KS.Shell.ShellBase.Aliases.AliasExecutor.ExecuteAlias(System.String,KS.Shell.ShellBase.Shells.ShellType,System.IO.StreamWriter,System.String)
-  fullName: KS.Shell.ShellBase.Aliases.AliasExecutor.ExecuteAlias(System.String, KS.Shell.ShellBase.Shells.ShellType, System.IO.StreamWriter, System.String)
-  nameWithType: AliasExecutor.ExecuteAlias(String, ShellType, StreamWriter, String)
-- uid: KS.Shell.ShellBase.Aliases.AliasExecutor.ExecuteAlias(System.String,System.String,System.IO.StreamWriter,System.String)
-  name: ExecuteAlias(String, String, StreamWriter, String)
-  href: api/KS.Shell.ShellBase.Aliases.AliasExecutor.html#KS_Shell_ShellBase_Aliases_AliasExecutor_ExecuteAlias_System_String_System_String_System_IO_StreamWriter_System_String_
-  commentId: M:KS.Shell.ShellBase.Aliases.AliasExecutor.ExecuteAlias(System.String,System.String,System.IO.StreamWriter,System.String)
-  fullName: KS.Shell.ShellBase.Aliases.AliasExecutor.ExecuteAlias(System.String, System.String, System.IO.StreamWriter, System.String)
-  nameWithType: AliasExecutor.ExecuteAlias(String, String, StreamWriter, String)
+- uid: KS.Shell.ShellBase.Aliases.AliasExecutor.ExecuteAlias(System.String,KS.Shell.ShellBase.Shells.ShellType)
+  name: ExecuteAlias(String, ShellType)
+  href: api/KS.Shell.ShellBase.Aliases.AliasExecutor.html#KS_Shell_ShellBase_Aliases_AliasExecutor_ExecuteAlias_System_String_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.ShellBase.Aliases.AliasExecutor.ExecuteAlias(System.String,KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.ShellBase.Aliases.AliasExecutor.ExecuteAlias(System.String, KS.Shell.ShellBase.Shells.ShellType)
+  nameWithType: AliasExecutor.ExecuteAlias(String, ShellType)
+- uid: KS.Shell.ShellBase.Aliases.AliasExecutor.ExecuteAlias(System.String,System.String)
+  name: ExecuteAlias(String, String)
+  href: api/KS.Shell.ShellBase.Aliases.AliasExecutor.html#KS_Shell_ShellBase_Aliases_AliasExecutor_ExecuteAlias_System_String_System_String_
+  commentId: M:KS.Shell.ShellBase.Aliases.AliasExecutor.ExecuteAlias(System.String,System.String)
+  fullName: KS.Shell.ShellBase.Aliases.AliasExecutor.ExecuteAlias(System.String, System.String)
+  nameWithType: AliasExecutor.ExecuteAlias(String, String)
 - uid: KS.Shell.ShellBase.Aliases.AliasExecutor.ExecuteAlias*
   name: ExecuteAlias
   href: api/KS.Shell.ShellBase.Aliases.AliasExecutor.html#KS_Shell_ShellBase_Aliases_AliasExecutor_ExecuteAlias_
@@ -47930,24 +47746,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.BaseCommand.HelpHelper
   nameWithType: BaseCommand.HelpHelper
-- uid: KS.Shell.ShellBase.Commands.BaseCommand.KS#Kernel#Debugging#RemoteDebug#Interface#IRemoteDebugCommand#Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name: IRemoteDebugCommand.Execute(String, String[], String[], StreamWriter, String)
-  href: api/KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_KS_Kernel_Debugging_RemoteDebug_Interface_IRemoteDebugCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_
-  commentId: M:KS.Shell.ShellBase.Commands.BaseCommand.KS#Kernel#Debugging#RemoteDebug#Interface#IRemoteDebugCommand#Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name.vb: KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(String, String(), String(), StreamWriter, String)
-  fullName: KS.Shell.ShellBase.Commands.BaseCommand.KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(System.String, System.String[], System.String[], System.IO.StreamWriter, System.String)
-  fullName.vb: KS.Shell.ShellBase.Commands.BaseCommand.KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(System.String, System.String(), System.String(), System.IO.StreamWriter, System.String)
-  nameWithType: BaseCommand.IRemoteDebugCommand.Execute(String, String[], String[], StreamWriter, String)
-  nameWithType.vb: BaseCommand.KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(String, String(), String(), StreamWriter, String)
-- uid: KS.Shell.ShellBase.Commands.BaseCommand.KS#Kernel#Debugging#RemoteDebug#Interface#IRemoteDebugCommand#Execute*
-  name: IRemoteDebugCommand.Execute
-  href: api/KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_KS_Kernel_Debugging_RemoteDebug_Interface_IRemoteDebugCommand_Execute_
-  commentId: Overload:KS.Shell.ShellBase.Commands.BaseCommand.KS#Kernel#Debugging#RemoteDebug#Interface#IRemoteDebugCommand#Execute
-  isSpec: "True"
-  name.vb: KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute
-  fullName: KS.Shell.ShellBase.Commands.BaseCommand.KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute
-  nameWithType: BaseCommand.IRemoteDebugCommand.Execute
-  nameWithType.vb: BaseCommand.KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute
 - uid: KS.Shell.ShellBase.Commands.CancellationHandlers
   name: CancellationHandlers
   href: api/KS.Shell.ShellBase.Commands.CancellationHandlers.html
@@ -48157,18 +47955,18 @@ references:
   commentId: T:KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters
   fullName: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters
   nameWithType: CommandExecutor.ExecuteCommandParameters
-- uid: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType,System.IO.StreamWriter,System.String)
-  name: ExecuteCommandParameters(String, ShellType, StreamWriter, String)
-  href: api/KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.html#KS_Shell_ShellBase_Commands_CommandExecutor_ExecuteCommandParameters__ctor_System_String_KS_Shell_ShellBase_Shells_ShellType_System_IO_StreamWriter_System_String_
-  commentId: M:KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType,System.IO.StreamWriter,System.String)
-  fullName: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.ExecuteCommandParameters(System.String, KS.Shell.ShellBase.Shells.ShellType, System.IO.StreamWriter, System.String)
-  nameWithType: CommandExecutor.ExecuteCommandParameters.ExecuteCommandParameters(String, ShellType, StreamWriter, String)
-- uid: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.#ctor(System.String,System.String,System.IO.StreamWriter,System.String)
-  name: ExecuteCommandParameters(String, String, StreamWriter, String)
-  href: api/KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.html#KS_Shell_ShellBase_Commands_CommandExecutor_ExecuteCommandParameters__ctor_System_String_System_String_System_IO_StreamWriter_System_String_
-  commentId: M:KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.#ctor(System.String,System.String,System.IO.StreamWriter,System.String)
-  fullName: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.ExecuteCommandParameters(System.String, System.String, System.IO.StreamWriter, System.String)
-  nameWithType: CommandExecutor.ExecuteCommandParameters.ExecuteCommandParameters(String, String, StreamWriter, String)
+- uid: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType)
+  name: ExecuteCommandParameters(String, ShellType)
+  href: api/KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.html#KS_Shell_ShellBase_Commands_CommandExecutor_ExecuteCommandParameters__ctor_System_String_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.ExecuteCommandParameters(System.String, KS.Shell.ShellBase.Shells.ShellType)
+  nameWithType: CommandExecutor.ExecuteCommandParameters.ExecuteCommandParameters(String, ShellType)
+- uid: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.#ctor(System.String,System.String)
+  name: ExecuteCommandParameters(String, String)
+  href: api/KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.html#KS_Shell_ShellBase_Commands_CommandExecutor_ExecuteCommandParameters__ctor_System_String_System_String_
+  commentId: M:KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.#ctor(System.String,System.String)
+  fullName: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.ExecuteCommandParameters(System.String, System.String)
+  nameWithType: CommandExecutor.ExecuteCommandParameters.ExecuteCommandParameters(String, String)
 - uid: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.#ctor*
   name: ExecuteCommandParameters
   href: api/KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.html#KS_Shell_ShellBase_Commands_CommandExecutor_ExecuteCommandParameters__ctor_
@@ -48176,18 +47974,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.ExecuteCommandParameters
   nameWithType: CommandExecutor.ExecuteCommandParameters.ExecuteCommandParameters
-- uid: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.Address
-  name: Address
-  href: api/KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.html#KS_Shell_ShellBase_Commands_CommandExecutor_ExecuteCommandParameters_Address
-  commentId: F:KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.Address
-  fullName: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.Address
-  nameWithType: CommandExecutor.ExecuteCommandParameters.Address
-- uid: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.DebugDeviceSocket
-  name: DebugDeviceSocket
-  href: api/KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.html#KS_Shell_ShellBase_Commands_CommandExecutor_ExecuteCommandParameters_DebugDeviceSocket
-  commentId: F:KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.DebugDeviceSocket
-  fullName: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.DebugDeviceSocket
-  nameWithType: CommandExecutor.ExecuteCommandParameters.DebugDeviceSocket
 - uid: KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.RequestedCommand
   name: RequestedCommand
   href: api/KS.Shell.ShellBase.Commands.CommandExecutor.ExecuteCommandParameters.html#KS_Shell_ShellBase_Commands_CommandExecutor_ExecuteCommandParameters_RequestedCommand
@@ -48654,24 +48440,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.UnifiedCommands.ExitUnifiedCommand.Execute
   nameWithType: ExitUnifiedCommand.Execute
-- uid: KS.Shell.ShellBase.Commands.UnifiedCommands.ExitUnifiedCommand.KS#Kernel#Debugging#RemoteDebug#Interface#IRemoteDebugCommand#Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name: IRemoteDebugCommand.Execute(String, String[], String[], StreamWriter, String)
-  href: api/KS.Shell.ShellBase.Commands.UnifiedCommands.ExitUnifiedCommand.html#KS_Shell_ShellBase_Commands_UnifiedCommands_ExitUnifiedCommand_KS_Kernel_Debugging_RemoteDebug_Interface_IRemoteDebugCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_
-  commentId: M:KS.Shell.ShellBase.Commands.UnifiedCommands.ExitUnifiedCommand.KS#Kernel#Debugging#RemoteDebug#Interface#IRemoteDebugCommand#Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name.vb: KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(String, String(), String(), StreamWriter, String)
-  fullName: KS.Shell.ShellBase.Commands.UnifiedCommands.ExitUnifiedCommand.KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(System.String, System.String[], System.String[], System.IO.StreamWriter, System.String)
-  fullName.vb: KS.Shell.ShellBase.Commands.UnifiedCommands.ExitUnifiedCommand.KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(System.String, System.String(), System.String(), System.IO.StreamWriter, System.String)
-  nameWithType: ExitUnifiedCommand.IRemoteDebugCommand.Execute(String, String[], String[], StreamWriter, String)
-  nameWithType.vb: ExitUnifiedCommand.KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(String, String(), String(), StreamWriter, String)
-- uid: KS.Shell.ShellBase.Commands.UnifiedCommands.ExitUnifiedCommand.KS#Kernel#Debugging#RemoteDebug#Interface#IRemoteDebugCommand#Execute*
-  name: IRemoteDebugCommand.Execute
-  href: api/KS.Shell.ShellBase.Commands.UnifiedCommands.ExitUnifiedCommand.html#KS_Shell_ShellBase_Commands_UnifiedCommands_ExitUnifiedCommand_KS_Kernel_Debugging_RemoteDebug_Interface_IRemoteDebugCommand_Execute_
-  commentId: Overload:KS.Shell.ShellBase.Commands.UnifiedCommands.ExitUnifiedCommand.KS#Kernel#Debugging#RemoteDebug#Interface#IRemoteDebugCommand#Execute
-  isSpec: "True"
-  name.vb: KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute
-  fullName: KS.Shell.ShellBase.Commands.UnifiedCommands.ExitUnifiedCommand.KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute
-  nameWithType: ExitUnifiedCommand.IRemoteDebugCommand.Execute
-  nameWithType.vb: ExitUnifiedCommand.KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute
 - uid: KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand
   name: HelpUnifiedCommand
   href: api/KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand.html
@@ -48694,24 +48462,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand.Execute
   nameWithType: HelpUnifiedCommand.Execute
-- uid: KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand.KS#Kernel#Debugging#RemoteDebug#Interface#IRemoteDebugCommand#Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name: IRemoteDebugCommand.Execute(String, String[], String[], StreamWriter, String)
-  href: api/KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand.html#KS_Shell_ShellBase_Commands_UnifiedCommands_HelpUnifiedCommand_KS_Kernel_Debugging_RemoteDebug_Interface_IRemoteDebugCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_
-  commentId: M:KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand.KS#Kernel#Debugging#RemoteDebug#Interface#IRemoteDebugCommand#Execute(System.String,System.String[],System.String[],System.IO.StreamWriter,System.String)
-  name.vb: KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(String, String(), String(), StreamWriter, String)
-  fullName: KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand.KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(System.String, System.String[], System.String[], System.IO.StreamWriter, System.String)
-  fullName.vb: KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand.KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(System.String, System.String(), System.String(), System.IO.StreamWriter, System.String)
-  nameWithType: HelpUnifiedCommand.IRemoteDebugCommand.Execute(String, String[], String[], StreamWriter, String)
-  nameWithType.vb: HelpUnifiedCommand.KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute(String, String(), String(), StreamWriter, String)
-- uid: KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand.KS#Kernel#Debugging#RemoteDebug#Interface#IRemoteDebugCommand#Execute*
-  name: IRemoteDebugCommand.Execute
-  href: api/KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand.html#KS_Shell_ShellBase_Commands_UnifiedCommands_HelpUnifiedCommand_KS_Kernel_Debugging_RemoteDebug_Interface_IRemoteDebugCommand_Execute_
-  commentId: Overload:KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand.KS#Kernel#Debugging#RemoteDebug#Interface#IRemoteDebugCommand#Execute
-  isSpec: "True"
-  name.vb: KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute
-  fullName: KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand.KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute
-  nameWithType: HelpUnifiedCommand.IRemoteDebugCommand.Execute
-  nameWithType.vb: HelpUnifiedCommand.KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.Execute
 - uid: KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand.ListCmds
   name: ListCmds()
   href: api/KS.Shell.ShellBase.Commands.UnifiedCommands.HelpUnifiedCommand.html#KS_Shell_ShellBase_Commands_UnifiedCommands_HelpUnifiedCommand_ListCmds
@@ -49292,12 +49042,6 @@ references:
   commentId: F:KS.Shell.ShellBase.Shells.ShellType.MailShell
   fullName: KS.Shell.ShellBase.Shells.ShellType.MailShell
   nameWithType: ShellType.MailShell
-- uid: KS.Shell.ShellBase.Shells.ShellType.RemoteDebugShell
-  name: RemoteDebugShell
-  href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_RemoteDebugShell
-  commentId: F:KS.Shell.ShellBase.Shells.ShellType.RemoteDebugShell
-  fullName: KS.Shell.ShellBase.Shells.ShellType.RemoteDebugShell
-  nameWithType: ShellType.RemoteDebugShell
 - uid: KS.Shell.ShellBase.Shells.ShellType.RSSShell
   name: RSSShell
   href: api/KS.Shell.ShellBase.Shells.ShellType.html#KS_Shell_ShellBase_Shells_ShellType_RSSShell

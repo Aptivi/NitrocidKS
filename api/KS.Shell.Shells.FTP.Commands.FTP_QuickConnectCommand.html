@@ -94,14 +94,10 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.html">IRemoteDebugCommand</a></div>
     <div><a class="xref" href="KS.Shell.ShellBase.Commands.ICommand.html">ICommand</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_KS_Kernel_Debugging_RemoteDebug_Interface_IRemoteDebugCommand_Execute_System_String_System_String___System_String___System_IO_StreamWriter_System_String_">BaseCommand.IRemoteDebugCommand.Execute(String, String[], String[], StreamWriter, String)</a>
-    </div>
     <div>
       <a class="xref" href="KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_HelpHelper">BaseCommand.HelpHelper()</a>
     </div>
@@ -110,7 +106,7 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Shell_Shells_FTP_Commands_FTP_QuickConnectCommand_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">class FTP_QuickConnectCommand : BaseCommand, IRemoteDebugCommand, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">class FTP_QuickConnectCommand : BaseCommand, ICommand</code></pre>
   </div>
   <h5 id="KS_Shell_Shells_FTP_Commands_FTP_QuickConnectCommand_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>We have implemented speed dial to the FTP client to quickly connect to the last-connected FTP server. This is so you don't have to repeat the connect command to the same server over and over.
@@ -164,9 +160,6 @@ For this, we have implemented this command for easier access to FTP servers.</p>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_Execute_System_String_System_String___System_String___">BaseCommand.Execute(String, String[], String[])</a></div>
   <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="KS.Kernel.Debugging.RemoteDebug.Interface.IRemoteDebugCommand.html">IRemoteDebugCommand</a>
-  </div>
   <div>
       <a class="xref" href="KS.Shell.ShellBase.Commands.ICommand.html">ICommand</a>
   </div>
