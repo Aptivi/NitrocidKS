@@ -4589,6 +4589,25 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.CurrentConsoleDriver
   nameWithType: DriverHandler.CurrentConsoleDriver
+- uid: KS.Drivers.DriverHandler.currentNetworkDriver
+  name: currentNetworkDriver
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_currentNetworkDriver
+  commentId: F:KS.Drivers.DriverHandler.currentNetworkDriver
+  fullName: KS.Drivers.DriverHandler.currentNetworkDriver
+  nameWithType: DriverHandler.currentNetworkDriver
+- uid: KS.Drivers.DriverHandler.CurrentNetworkDriver
+  name: CurrentNetworkDriver
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_CurrentNetworkDriver
+  commentId: P:KS.Drivers.DriverHandler.CurrentNetworkDriver
+  fullName: KS.Drivers.DriverHandler.CurrentNetworkDriver
+  nameWithType: DriverHandler.CurrentNetworkDriver
+- uid: KS.Drivers.DriverHandler.CurrentNetworkDriver*
+  name: CurrentNetworkDriver
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_CurrentNetworkDriver_
+  commentId: Overload:KS.Drivers.DriverHandler.CurrentNetworkDriver
+  isSpec: "True"
+  fullName: KS.Drivers.DriverHandler.CurrentNetworkDriver
+  nameWithType: DriverHandler.CurrentNetworkDriver
 - uid: KS.Drivers.DriverHandler.currentRandomDriver
   name: currentRandomDriver
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_currentRandomDriver
@@ -4614,6 +4633,12 @@ references:
   commentId: F:KS.Drivers.DriverHandler.customConsoleDrivers
   fullName: KS.Drivers.DriverHandler.customConsoleDrivers
   nameWithType: DriverHandler.customConsoleDrivers
+- uid: KS.Drivers.DriverHandler.customNetworkDrivers
+  name: customNetworkDrivers
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_customNetworkDrivers
+  commentId: F:KS.Drivers.DriverHandler.customNetworkDrivers
+  fullName: KS.Drivers.DriverHandler.customNetworkDrivers
+  nameWithType: DriverHandler.customNetworkDrivers
 - uid: KS.Drivers.DriverHandler.customRandomDrivers
   name: customRandomDrivers
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_customRandomDrivers
@@ -4652,6 +4677,25 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.GetDriver
   nameWithType: DriverHandler.GetDriver
+- uid: KS.Drivers.DriverHandler.GetNetworkDriver
+  name: GetNetworkDriver()
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetNetworkDriver
+  commentId: M:KS.Drivers.DriverHandler.GetNetworkDriver
+  fullName: KS.Drivers.DriverHandler.GetNetworkDriver()
+  nameWithType: DriverHandler.GetNetworkDriver()
+- uid: KS.Drivers.DriverHandler.GetNetworkDriver(System.String)
+  name: GetNetworkDriver(String)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetNetworkDriver_System_String_
+  commentId: M:KS.Drivers.DriverHandler.GetNetworkDriver(System.String)
+  fullName: KS.Drivers.DriverHandler.GetNetworkDriver(System.String)
+  nameWithType: DriverHandler.GetNetworkDriver(String)
+- uid: KS.Drivers.DriverHandler.GetNetworkDriver*
+  name: GetNetworkDriver
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetNetworkDriver_
+  commentId: Overload:KS.Drivers.DriverHandler.GetNetworkDriver
+  isSpec: "True"
+  fullName: KS.Drivers.DriverHandler.GetNetworkDriver
+  nameWithType: DriverHandler.GetNetworkDriver
 - uid: KS.Drivers.DriverHandler.GetRandomDriver
   name: GetRandomDriver()
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetRandomDriver
@@ -4684,6 +4728,12 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.IsRegistered
   nameWithType: DriverHandler.IsRegistered
+- uid: KS.Drivers.DriverHandler.networkDrivers
+  name: networkDrivers
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_networkDrivers
+  commentId: F:KS.Drivers.DriverHandler.networkDrivers
+  fullName: KS.Drivers.DriverHandler.networkDrivers
+  nameWithType: DriverHandler.networkDrivers
 - uid: KS.Drivers.DriverHandler.randomDrivers
   name: randomDrivers
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_randomDrivers
@@ -4728,6 +4778,12 @@ references:
   commentId: F:KS.Drivers.DriverTypes.Console
   fullName: KS.Drivers.DriverTypes.Console
   nameWithType: DriverTypes.Console
+- uid: KS.Drivers.DriverTypes.Network
+  name: Network
+  href: api/KS.Drivers.DriverTypes.html#KS_Drivers_DriverTypes_Network
+  commentId: F:KS.Drivers.DriverTypes.Network
+  fullName: KS.Drivers.DriverTypes.Network
+  nameWithType: DriverTypes.Network
 - uid: KS.Drivers.DriverTypes.RNG
   name: RNG
   href: api/KS.Drivers.DriverTypes.html#KS_Drivers_DriverTypes_RNG
@@ -5802,6 +5858,322 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.IDriver.DriverType
   nameWithType: IDriver.DriverType
+- uid: KS.Drivers.Network
+  name: KS.Drivers.Network
+  href: api/KS.Drivers.Network.html
+  commentId: N:KS.Drivers.Network
+  fullName: KS.Drivers.Network
+  nameWithType: KS.Drivers.Network
+- uid: KS.Drivers.Network.BaseNetworkDriver
+  name: BaseNetworkDriver
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html
+  commentId: T:KS.Drivers.Network.BaseNetworkDriver
+  fullName: KS.Drivers.Network.BaseNetworkDriver
+  nameWithType: BaseNetworkDriver
+- uid: KS.Drivers.Network.BaseNetworkDriver.DownloadFile(System.String)
+  name: DownloadFile(String)
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DownloadFile_System_String_
+  commentId: M:KS.Drivers.Network.BaseNetworkDriver.DownloadFile(System.String)
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DownloadFile(System.String)
+  nameWithType: BaseNetworkDriver.DownloadFile(String)
+- uid: KS.Drivers.Network.BaseNetworkDriver.DownloadFile(System.String,System.Boolean)
+  name: DownloadFile(String, Boolean)
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DownloadFile_System_String_System_Boolean_
+  commentId: M:KS.Drivers.Network.BaseNetworkDriver.DownloadFile(System.String,System.Boolean)
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DownloadFile(System.String, System.Boolean)
+  nameWithType: BaseNetworkDriver.DownloadFile(String, Boolean)
+- uid: KS.Drivers.Network.BaseNetworkDriver.DownloadFile(System.String,System.Boolean,System.String)
+  name: DownloadFile(String, Boolean, String)
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DownloadFile_System_String_System_Boolean_System_String_
+  commentId: M:KS.Drivers.Network.BaseNetworkDriver.DownloadFile(System.String,System.Boolean,System.String)
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DownloadFile(System.String, System.Boolean, System.String)
+  nameWithType: BaseNetworkDriver.DownloadFile(String, Boolean, String)
+- uid: KS.Drivers.Network.BaseNetworkDriver.DownloadFile(System.String,System.String)
+  name: DownloadFile(String, String)
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DownloadFile_System_String_System_String_
+  commentId: M:KS.Drivers.Network.BaseNetworkDriver.DownloadFile(System.String,System.String)
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DownloadFile(System.String, System.String)
+  nameWithType: BaseNetworkDriver.DownloadFile(String, String)
+- uid: KS.Drivers.Network.BaseNetworkDriver.DownloadFile*
+  name: DownloadFile
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DownloadFile_
+  commentId: Overload:KS.Drivers.Network.BaseNetworkDriver.DownloadFile
+  isSpec: "True"
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DownloadFile
+  nameWithType: BaseNetworkDriver.DownloadFile
+- uid: KS.Drivers.Network.BaseNetworkDriver.DownloadString(System.String)
+  name: DownloadString(String)
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DownloadString_System_String_
+  commentId: M:KS.Drivers.Network.BaseNetworkDriver.DownloadString(System.String)
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DownloadString(System.String)
+  nameWithType: BaseNetworkDriver.DownloadString(String)
+- uid: KS.Drivers.Network.BaseNetworkDriver.DownloadString(System.String,System.Boolean)
+  name: DownloadString(String, Boolean)
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DownloadString_System_String_System_Boolean_
+  commentId: M:KS.Drivers.Network.BaseNetworkDriver.DownloadString(System.String,System.Boolean)
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DownloadString(System.String, System.Boolean)
+  nameWithType: BaseNetworkDriver.DownloadString(String, Boolean)
+- uid: KS.Drivers.Network.BaseNetworkDriver.DownloadString*
+  name: DownloadString
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DownloadString_
+  commentId: Overload:KS.Drivers.Network.BaseNetworkDriver.DownloadString
+  isSpec: "True"
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DownloadString
+  nameWithType: BaseNetworkDriver.DownloadString
+- uid: KS.Drivers.Network.BaseNetworkDriver.DriverName
+  name: DriverName
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DriverName
+  commentId: P:KS.Drivers.Network.BaseNetworkDriver.DriverName
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DriverName
+  nameWithType: BaseNetworkDriver.DriverName
+- uid: KS.Drivers.Network.BaseNetworkDriver.DriverName*
+  name: DriverName
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DriverName_
+  commentId: Overload:KS.Drivers.Network.BaseNetworkDriver.DriverName
+  isSpec: "True"
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DriverName
+  nameWithType: BaseNetworkDriver.DriverName
+- uid: KS.Drivers.Network.BaseNetworkDriver.DriverType
+  name: DriverType
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DriverType
+  commentId: P:KS.Drivers.Network.BaseNetworkDriver.DriverType
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DriverType
+  nameWithType: BaseNetworkDriver.DriverType
+- uid: KS.Drivers.Network.BaseNetworkDriver.DriverType*
+  name: DriverType
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DriverType_
+  commentId: Overload:KS.Drivers.Network.BaseNetworkDriver.DriverType
+  isSpec: "True"
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DriverType
+  nameWithType: BaseNetworkDriver.DriverType
+- uid: KS.Drivers.Network.BaseNetworkDriver.GetFilenameFromUrl(System.String)
+  name: GetFilenameFromUrl(String)
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_GetFilenameFromUrl_System_String_
+  commentId: M:KS.Drivers.Network.BaseNetworkDriver.GetFilenameFromUrl(System.String)
+  fullName: KS.Drivers.Network.BaseNetworkDriver.GetFilenameFromUrl(System.String)
+  nameWithType: BaseNetworkDriver.GetFilenameFromUrl(String)
+- uid: KS.Drivers.Network.BaseNetworkDriver.GetFilenameFromUrl*
+  name: GetFilenameFromUrl
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_GetFilenameFromUrl_
+  commentId: Overload:KS.Drivers.Network.BaseNetworkDriver.GetFilenameFromUrl
+  isSpec: "True"
+  fullName: KS.Drivers.Network.BaseNetworkDriver.GetFilenameFromUrl
+  nameWithType: BaseNetworkDriver.GetFilenameFromUrl
+- uid: KS.Drivers.Network.BaseNetworkDriver.NetworkAvailable
+  name: NetworkAvailable
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_NetworkAvailable
+  commentId: P:KS.Drivers.Network.BaseNetworkDriver.NetworkAvailable
+  fullName: KS.Drivers.Network.BaseNetworkDriver.NetworkAvailable
+  nameWithType: BaseNetworkDriver.NetworkAvailable
+- uid: KS.Drivers.Network.BaseNetworkDriver.NetworkAvailable*
+  name: NetworkAvailable
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_NetworkAvailable_
+  commentId: Overload:KS.Drivers.Network.BaseNetworkDriver.NetworkAvailable
+  isSpec: "True"
+  fullName: KS.Drivers.Network.BaseNetworkDriver.NetworkAvailable
+  nameWithType: BaseNetworkDriver.NetworkAvailable
+- uid: KS.Drivers.Network.BaseNetworkDriver.PingAddress(System.String,System.Int32,System.Byte[])
+  name: PingAddress(String, Int32, Byte[])
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_PingAddress_System_String_System_Int32_System_Byte___
+  commentId: M:KS.Drivers.Network.BaseNetworkDriver.PingAddress(System.String,System.Int32,System.Byte[])
+  name.vb: PingAddress(String, Int32, Byte())
+  fullName: KS.Drivers.Network.BaseNetworkDriver.PingAddress(System.String, System.Int32, System.Byte[])
+  fullName.vb: KS.Drivers.Network.BaseNetworkDriver.PingAddress(System.String, System.Int32, System.Byte())
+  nameWithType: BaseNetworkDriver.PingAddress(String, Int32, Byte[])
+  nameWithType.vb: BaseNetworkDriver.PingAddress(String, Int32, Byte())
+- uid: KS.Drivers.Network.BaseNetworkDriver.PingAddress*
+  name: PingAddress
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_PingAddress_
+  commentId: Overload:KS.Drivers.Network.BaseNetworkDriver.PingAddress
+  isSpec: "True"
+  fullName: KS.Drivers.Network.BaseNetworkDriver.PingAddress
+  nameWithType: BaseNetworkDriver.PingAddress
+- uid: KS.Drivers.Network.BaseNetworkDriver.UploadFile(System.String,System.String)
+  name: UploadFile(String, String)
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_UploadFile_System_String_System_String_
+  commentId: M:KS.Drivers.Network.BaseNetworkDriver.UploadFile(System.String,System.String)
+  fullName: KS.Drivers.Network.BaseNetworkDriver.UploadFile(System.String, System.String)
+  nameWithType: BaseNetworkDriver.UploadFile(String, String)
+- uid: KS.Drivers.Network.BaseNetworkDriver.UploadFile(System.String,System.String,System.Boolean)
+  name: UploadFile(String, String, Boolean)
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_UploadFile_System_String_System_String_System_Boolean_
+  commentId: M:KS.Drivers.Network.BaseNetworkDriver.UploadFile(System.String,System.String,System.Boolean)
+  fullName: KS.Drivers.Network.BaseNetworkDriver.UploadFile(System.String, System.String, System.Boolean)
+  nameWithType: BaseNetworkDriver.UploadFile(String, String, Boolean)
+- uid: KS.Drivers.Network.BaseNetworkDriver.UploadFile*
+  name: UploadFile
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_UploadFile_
+  commentId: Overload:KS.Drivers.Network.BaseNetworkDriver.UploadFile
+  isSpec: "True"
+  fullName: KS.Drivers.Network.BaseNetworkDriver.UploadFile
+  nameWithType: BaseNetworkDriver.UploadFile
+- uid: KS.Drivers.Network.BaseNetworkDriver.UploadString(System.String,System.String)
+  name: UploadString(String, String)
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_UploadString_System_String_System_String_
+  commentId: M:KS.Drivers.Network.BaseNetworkDriver.UploadString(System.String,System.String)
+  fullName: KS.Drivers.Network.BaseNetworkDriver.UploadString(System.String, System.String)
+  nameWithType: BaseNetworkDriver.UploadString(String, String)
+- uid: KS.Drivers.Network.BaseNetworkDriver.UploadString(System.String,System.String,System.Boolean)
+  name: UploadString(String, String, Boolean)
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_UploadString_System_String_System_String_System_Boolean_
+  commentId: M:KS.Drivers.Network.BaseNetworkDriver.UploadString(System.String,System.String,System.Boolean)
+  fullName: KS.Drivers.Network.BaseNetworkDriver.UploadString(System.String, System.String, System.Boolean)
+  nameWithType: BaseNetworkDriver.UploadString(String, String, Boolean)
+- uid: KS.Drivers.Network.BaseNetworkDriver.UploadString*
+  name: UploadString
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_UploadString_
+  commentId: Overload:KS.Drivers.Network.BaseNetworkDriver.UploadString
+  isSpec: "True"
+  fullName: KS.Drivers.Network.BaseNetworkDriver.UploadString
+  nameWithType: BaseNetworkDriver.UploadString
+- uid: KS.Drivers.Network.Bases
+  name: KS.Drivers.Network.Bases
+  href: api/KS.Drivers.Network.Bases.html
+  commentId: N:KS.Drivers.Network.Bases
+  fullName: KS.Drivers.Network.Bases
+  nameWithType: KS.Drivers.Network.Bases
+- uid: KS.Drivers.Network.Bases.DefaultNetwork
+  name: DefaultNetwork
+  href: api/KS.Drivers.Network.Bases.DefaultNetwork.html
+  commentId: T:KS.Drivers.Network.Bases.DefaultNetwork
+  fullName: KS.Drivers.Network.Bases.DefaultNetwork
+  nameWithType: DefaultNetwork
+- uid: KS.Drivers.Network.INetworkDriver
+  name: INetworkDriver
+  href: api/KS.Drivers.Network.INetworkDriver.html
+  commentId: T:KS.Drivers.Network.INetworkDriver
+  fullName: KS.Drivers.Network.INetworkDriver
+  nameWithType: INetworkDriver
+- uid: KS.Drivers.Network.INetworkDriver.DownloadFile(System.String)
+  name: DownloadFile(String)
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_DownloadFile_System_String_
+  commentId: M:KS.Drivers.Network.INetworkDriver.DownloadFile(System.String)
+  fullName: KS.Drivers.Network.INetworkDriver.DownloadFile(System.String)
+  nameWithType: INetworkDriver.DownloadFile(String)
+- uid: KS.Drivers.Network.INetworkDriver.DownloadFile(System.String,System.Boolean)
+  name: DownloadFile(String, Boolean)
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_DownloadFile_System_String_System_Boolean_
+  commentId: M:KS.Drivers.Network.INetworkDriver.DownloadFile(System.String,System.Boolean)
+  fullName: KS.Drivers.Network.INetworkDriver.DownloadFile(System.String, System.Boolean)
+  nameWithType: INetworkDriver.DownloadFile(String, Boolean)
+- uid: KS.Drivers.Network.INetworkDriver.DownloadFile(System.String,System.Boolean,System.String)
+  name: DownloadFile(String, Boolean, String)
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_DownloadFile_System_String_System_Boolean_System_String_
+  commentId: M:KS.Drivers.Network.INetworkDriver.DownloadFile(System.String,System.Boolean,System.String)
+  fullName: KS.Drivers.Network.INetworkDriver.DownloadFile(System.String, System.Boolean, System.String)
+  nameWithType: INetworkDriver.DownloadFile(String, Boolean, String)
+- uid: KS.Drivers.Network.INetworkDriver.DownloadFile(System.String,System.String)
+  name: DownloadFile(String, String)
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_DownloadFile_System_String_System_String_
+  commentId: M:KS.Drivers.Network.INetworkDriver.DownloadFile(System.String,System.String)
+  fullName: KS.Drivers.Network.INetworkDriver.DownloadFile(System.String, System.String)
+  nameWithType: INetworkDriver.DownloadFile(String, String)
+- uid: KS.Drivers.Network.INetworkDriver.DownloadFile*
+  name: DownloadFile
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_DownloadFile_
+  commentId: Overload:KS.Drivers.Network.INetworkDriver.DownloadFile
+  isSpec: "True"
+  fullName: KS.Drivers.Network.INetworkDriver.DownloadFile
+  nameWithType: INetworkDriver.DownloadFile
+- uid: KS.Drivers.Network.INetworkDriver.DownloadString(System.String)
+  name: DownloadString(String)
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_DownloadString_System_String_
+  commentId: M:KS.Drivers.Network.INetworkDriver.DownloadString(System.String)
+  fullName: KS.Drivers.Network.INetworkDriver.DownloadString(System.String)
+  nameWithType: INetworkDriver.DownloadString(String)
+- uid: KS.Drivers.Network.INetworkDriver.DownloadString(System.String,System.Boolean)
+  name: DownloadString(String, Boolean)
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_DownloadString_System_String_System_Boolean_
+  commentId: M:KS.Drivers.Network.INetworkDriver.DownloadString(System.String,System.Boolean)
+  fullName: KS.Drivers.Network.INetworkDriver.DownloadString(System.String, System.Boolean)
+  nameWithType: INetworkDriver.DownloadString(String, Boolean)
+- uid: KS.Drivers.Network.INetworkDriver.DownloadString*
+  name: DownloadString
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_DownloadString_
+  commentId: Overload:KS.Drivers.Network.INetworkDriver.DownloadString
+  isSpec: "True"
+  fullName: KS.Drivers.Network.INetworkDriver.DownloadString
+  nameWithType: INetworkDriver.DownloadString
+- uid: KS.Drivers.Network.INetworkDriver.GetFilenameFromUrl(System.String)
+  name: GetFilenameFromUrl(String)
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_GetFilenameFromUrl_System_String_
+  commentId: M:KS.Drivers.Network.INetworkDriver.GetFilenameFromUrl(System.String)
+  fullName: KS.Drivers.Network.INetworkDriver.GetFilenameFromUrl(System.String)
+  nameWithType: INetworkDriver.GetFilenameFromUrl(String)
+- uid: KS.Drivers.Network.INetworkDriver.GetFilenameFromUrl*
+  name: GetFilenameFromUrl
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_GetFilenameFromUrl_
+  commentId: Overload:KS.Drivers.Network.INetworkDriver.GetFilenameFromUrl
+  isSpec: "True"
+  fullName: KS.Drivers.Network.INetworkDriver.GetFilenameFromUrl
+  nameWithType: INetworkDriver.GetFilenameFromUrl
+- uid: KS.Drivers.Network.INetworkDriver.NetworkAvailable
+  name: NetworkAvailable
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_NetworkAvailable
+  commentId: P:KS.Drivers.Network.INetworkDriver.NetworkAvailable
+  fullName: KS.Drivers.Network.INetworkDriver.NetworkAvailable
+  nameWithType: INetworkDriver.NetworkAvailable
+- uid: KS.Drivers.Network.INetworkDriver.NetworkAvailable*
+  name: NetworkAvailable
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_NetworkAvailable_
+  commentId: Overload:KS.Drivers.Network.INetworkDriver.NetworkAvailable
+  isSpec: "True"
+  fullName: KS.Drivers.Network.INetworkDriver.NetworkAvailable
+  nameWithType: INetworkDriver.NetworkAvailable
+- uid: KS.Drivers.Network.INetworkDriver.PingAddress(System.String,System.Int32,System.Byte[])
+  name: PingAddress(String, Int32, Byte[])
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_PingAddress_System_String_System_Int32_System_Byte___
+  commentId: M:KS.Drivers.Network.INetworkDriver.PingAddress(System.String,System.Int32,System.Byte[])
+  name.vb: PingAddress(String, Int32, Byte())
+  fullName: KS.Drivers.Network.INetworkDriver.PingAddress(System.String, System.Int32, System.Byte[])
+  fullName.vb: KS.Drivers.Network.INetworkDriver.PingAddress(System.String, System.Int32, System.Byte())
+  nameWithType: INetworkDriver.PingAddress(String, Int32, Byte[])
+  nameWithType.vb: INetworkDriver.PingAddress(String, Int32, Byte())
+- uid: KS.Drivers.Network.INetworkDriver.PingAddress*
+  name: PingAddress
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_PingAddress_
+  commentId: Overload:KS.Drivers.Network.INetworkDriver.PingAddress
+  isSpec: "True"
+  fullName: KS.Drivers.Network.INetworkDriver.PingAddress
+  nameWithType: INetworkDriver.PingAddress
+- uid: KS.Drivers.Network.INetworkDriver.UploadFile(System.String,System.String)
+  name: UploadFile(String, String)
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_UploadFile_System_String_System_String_
+  commentId: M:KS.Drivers.Network.INetworkDriver.UploadFile(System.String,System.String)
+  fullName: KS.Drivers.Network.INetworkDriver.UploadFile(System.String, System.String)
+  nameWithType: INetworkDriver.UploadFile(String, String)
+- uid: KS.Drivers.Network.INetworkDriver.UploadFile(System.String,System.String,System.Boolean)
+  name: UploadFile(String, String, Boolean)
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_UploadFile_System_String_System_String_System_Boolean_
+  commentId: M:KS.Drivers.Network.INetworkDriver.UploadFile(System.String,System.String,System.Boolean)
+  fullName: KS.Drivers.Network.INetworkDriver.UploadFile(System.String, System.String, System.Boolean)
+  nameWithType: INetworkDriver.UploadFile(String, String, Boolean)
+- uid: KS.Drivers.Network.INetworkDriver.UploadFile*
+  name: UploadFile
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_UploadFile_
+  commentId: Overload:KS.Drivers.Network.INetworkDriver.UploadFile
+  isSpec: "True"
+  fullName: KS.Drivers.Network.INetworkDriver.UploadFile
+  nameWithType: INetworkDriver.UploadFile
+- uid: KS.Drivers.Network.INetworkDriver.UploadString(System.String,System.String)
+  name: UploadString(String, String)
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_UploadString_System_String_System_String_
+  commentId: M:KS.Drivers.Network.INetworkDriver.UploadString(System.String,System.String)
+  fullName: KS.Drivers.Network.INetworkDriver.UploadString(System.String, System.String)
+  nameWithType: INetworkDriver.UploadString(String, String)
+- uid: KS.Drivers.Network.INetworkDriver.UploadString(System.String,System.String,System.Boolean)
+  name: UploadString(String, String, Boolean)
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_UploadString_System_String_System_String_System_Boolean_
+  commentId: M:KS.Drivers.Network.INetworkDriver.UploadString(System.String,System.String,System.Boolean)
+  fullName: KS.Drivers.Network.INetworkDriver.UploadString(System.String, System.String, System.Boolean)
+  nameWithType: INetworkDriver.UploadString(String, String, Boolean)
+- uid: KS.Drivers.Network.INetworkDriver.UploadString*
+  name: UploadString
+  href: api/KS.Drivers.Network.INetworkDriver.html#KS_Drivers_Network_INetworkDriver_UploadString_
+  commentId: Overload:KS.Drivers.Network.INetworkDriver.UploadString
+  isSpec: "True"
+  fullName: KS.Drivers.Network.INetworkDriver.UploadString
+  nameWithType: INetworkDriver.UploadString
 - uid: KS.Drivers.RNG
   name: KS.Drivers.RNG
   href: api/KS.Drivers.RNG.html
