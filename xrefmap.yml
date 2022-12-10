@@ -2491,6 +2491,32 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverName
   nameWithType: BaseConsoleDriver.DriverName
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverPromiseAction
+  name: DriverPromiseAction
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_DriverPromiseAction
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverPromiseAction
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverPromiseAction
+  nameWithType: BaseConsoleDriver.DriverPromiseAction
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverPromiseAction*
+  name: DriverPromiseAction
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_DriverPromiseAction_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverPromiseAction
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverPromiseAction
+  nameWithType: BaseConsoleDriver.DriverPromiseAction
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverPromiseRequired
+  name: DriverPromiseRequired
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_DriverPromiseRequired
+  commentId: P:KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverPromiseRequired
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverPromiseRequired
+  nameWithType: BaseConsoleDriver.DriverPromiseRequired
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverPromiseRequired*
+  name: DriverPromiseRequired
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_DriverPromiseRequired_
+  commentId: Overload:KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverPromiseRequired
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverPromiseRequired
+  nameWithType: BaseConsoleDriver.DriverPromiseRequired
 - uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.DriverType
   name: DriverType
   href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_DriverType
@@ -3004,6 +3030,19 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Console.Consoles.File.DriverName
   nameWithType: File.DriverName
+- uid: KS.Drivers.Console.Consoles.File.DriverPromiseRequired
+  name: DriverPromiseRequired
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_DriverPromiseRequired
+  commentId: P:KS.Drivers.Console.Consoles.File.DriverPromiseRequired
+  fullName: KS.Drivers.Console.Consoles.File.DriverPromiseRequired
+  nameWithType: File.DriverPromiseRequired
+- uid: KS.Drivers.Console.Consoles.File.DriverPromiseRequired*
+  name: DriverPromiseRequired
+  href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_DriverPromiseRequired_
+  commentId: Overload:KS.Drivers.Console.Consoles.File.DriverPromiseRequired
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.File.DriverPromiseRequired
+  nameWithType: File.DriverPromiseRequired
 - uid: KS.Drivers.Console.Consoles.File.DriverType
   name: DriverType
   href: api/KS.Drivers.Console.Consoles.File.html#KS_Drivers_Console_Consoles_File_DriverType
@@ -3530,6 +3569,19 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Console.Consoles.Null.DriverName
   nameWithType: Null.DriverName
+- uid: KS.Drivers.Console.Consoles.Null.DriverPromiseRequired
+  name: DriverPromiseRequired
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_DriverPromiseRequired
+  commentId: P:KS.Drivers.Console.Consoles.Null.DriverPromiseRequired
+  fullName: KS.Drivers.Console.Consoles.Null.DriverPromiseRequired
+  nameWithType: Null.DriverPromiseRequired
+- uid: KS.Drivers.Console.Consoles.Null.DriverPromiseRequired*
+  name: DriverPromiseRequired
+  href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_DriverPromiseRequired_
+  commentId: Overload:KS.Drivers.Console.Consoles.Null.DriverPromiseRequired
+  isSpec: "True"
+  fullName: KS.Drivers.Console.Consoles.Null.DriverPromiseRequired
+  nameWithType: Null.DriverPromiseRequired
 - uid: KS.Drivers.Console.Consoles.Null.DriverType
   name: DriverType
   href: api/KS.Drivers.Console.Consoles.Null.html#KS_Drivers_Console_Consoles_Null_DriverType
@@ -5762,6 +5814,32 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.IDriver.DriverName
   nameWithType: IDriver.DriverName
+- uid: KS.Drivers.IDriver.DriverPromiseAction
+  name: DriverPromiseAction
+  href: api/KS.Drivers.IDriver.html#KS_Drivers_IDriver_DriverPromiseAction
+  commentId: P:KS.Drivers.IDriver.DriverPromiseAction
+  fullName: KS.Drivers.IDriver.DriverPromiseAction
+  nameWithType: IDriver.DriverPromiseAction
+- uid: KS.Drivers.IDriver.DriverPromiseAction*
+  name: DriverPromiseAction
+  href: api/KS.Drivers.IDriver.html#KS_Drivers_IDriver_DriverPromiseAction_
+  commentId: Overload:KS.Drivers.IDriver.DriverPromiseAction
+  isSpec: "True"
+  fullName: KS.Drivers.IDriver.DriverPromiseAction
+  nameWithType: IDriver.DriverPromiseAction
+- uid: KS.Drivers.IDriver.DriverPromiseRequired
+  name: DriverPromiseRequired
+  href: api/KS.Drivers.IDriver.html#KS_Drivers_IDriver_DriverPromiseRequired
+  commentId: P:KS.Drivers.IDriver.DriverPromiseRequired
+  fullName: KS.Drivers.IDriver.DriverPromiseRequired
+  nameWithType: IDriver.DriverPromiseRequired
+- uid: KS.Drivers.IDriver.DriverPromiseRequired*
+  name: DriverPromiseRequired
+  href: api/KS.Drivers.IDriver.html#KS_Drivers_IDriver_DriverPromiseRequired_
+  commentId: Overload:KS.Drivers.IDriver.DriverPromiseRequired
+  isSpec: "True"
+  fullName: KS.Drivers.IDriver.DriverPromiseRequired
+  nameWithType: IDriver.DriverPromiseRequired
 - uid: KS.Drivers.IDriver.DriverType
   name: DriverType
   href: api/KS.Drivers.IDriver.html#KS_Drivers_IDriver_DriverType
@@ -5850,6 +5928,32 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Network.BaseNetworkDriver.DriverName
   nameWithType: BaseNetworkDriver.DriverName
+- uid: KS.Drivers.Network.BaseNetworkDriver.DriverPromiseAction
+  name: DriverPromiseAction
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DriverPromiseAction
+  commentId: P:KS.Drivers.Network.BaseNetworkDriver.DriverPromiseAction
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DriverPromiseAction
+  nameWithType: BaseNetworkDriver.DriverPromiseAction
+- uid: KS.Drivers.Network.BaseNetworkDriver.DriverPromiseAction*
+  name: DriverPromiseAction
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DriverPromiseAction_
+  commentId: Overload:KS.Drivers.Network.BaseNetworkDriver.DriverPromiseAction
+  isSpec: "True"
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DriverPromiseAction
+  nameWithType: BaseNetworkDriver.DriverPromiseAction
+- uid: KS.Drivers.Network.BaseNetworkDriver.DriverPromiseRequired
+  name: DriverPromiseRequired
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DriverPromiseRequired
+  commentId: P:KS.Drivers.Network.BaseNetworkDriver.DriverPromiseRequired
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DriverPromiseRequired
+  nameWithType: BaseNetworkDriver.DriverPromiseRequired
+- uid: KS.Drivers.Network.BaseNetworkDriver.DriverPromiseRequired*
+  name: DriverPromiseRequired
+  href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DriverPromiseRequired_
+  commentId: Overload:KS.Drivers.Network.BaseNetworkDriver.DriverPromiseRequired
+  isSpec: "True"
+  fullName: KS.Drivers.Network.BaseNetworkDriver.DriverPromiseRequired
+  nameWithType: BaseNetworkDriver.DriverPromiseRequired
 - uid: KS.Drivers.Network.BaseNetworkDriver.DriverType
   name: DriverType
   href: api/KS.Drivers.Network.BaseNetworkDriver.html#KS_Drivers_Network_BaseNetworkDriver_DriverType
@@ -6116,6 +6220,32 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.RNG.BaseRandomDriver.DriverName
   nameWithType: BaseRandomDriver.DriverName
+- uid: KS.Drivers.RNG.BaseRandomDriver.DriverPromiseAction
+  name: DriverPromiseAction
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_DriverPromiseAction
+  commentId: P:KS.Drivers.RNG.BaseRandomDriver.DriverPromiseAction
+  fullName: KS.Drivers.RNG.BaseRandomDriver.DriverPromiseAction
+  nameWithType: BaseRandomDriver.DriverPromiseAction
+- uid: KS.Drivers.RNG.BaseRandomDriver.DriverPromiseAction*
+  name: DriverPromiseAction
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_DriverPromiseAction_
+  commentId: Overload:KS.Drivers.RNG.BaseRandomDriver.DriverPromiseAction
+  isSpec: "True"
+  fullName: KS.Drivers.RNG.BaseRandomDriver.DriverPromiseAction
+  nameWithType: BaseRandomDriver.DriverPromiseAction
+- uid: KS.Drivers.RNG.BaseRandomDriver.DriverPromiseRequired
+  name: DriverPromiseRequired
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_DriverPromiseRequired
+  commentId: P:KS.Drivers.RNG.BaseRandomDriver.DriverPromiseRequired
+  fullName: KS.Drivers.RNG.BaseRandomDriver.DriverPromiseRequired
+  nameWithType: BaseRandomDriver.DriverPromiseRequired
+- uid: KS.Drivers.RNG.BaseRandomDriver.DriverPromiseRequired*
+  name: DriverPromiseRequired
+  href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_DriverPromiseRequired_
+  commentId: Overload:KS.Drivers.RNG.BaseRandomDriver.DriverPromiseRequired
+  isSpec: "True"
+  fullName: KS.Drivers.RNG.BaseRandomDriver.DriverPromiseRequired
+  nameWithType: BaseRandomDriver.DriverPromiseRequired
 - uid: KS.Drivers.RNG.BaseRandomDriver.DriverType
   name: DriverType
   href: api/KS.Drivers.RNG.BaseRandomDriver.html#KS_Drivers_RNG_BaseRandomDriver_DriverType
@@ -12445,6 +12575,12 @@ references:
   commentId: F:KS.Kernel.Exceptions.KernelExceptionType.ConsoleReadTimeout
   fullName: KS.Kernel.Exceptions.KernelExceptionType.ConsoleReadTimeout
   nameWithType: KernelExceptionType.ConsoleReadTimeout
+- uid: KS.Kernel.Exceptions.KernelExceptionType.DriverPromiseBroken
+  name: DriverPromiseBroken
+  href: api/KS.Kernel.Exceptions.KernelExceptionType.html#KS_Kernel_Exceptions_KernelExceptionType_DriverPromiseBroken
+  commentId: F:KS.Kernel.Exceptions.KernelExceptionType.DriverPromiseBroken
+  fullName: KS.Kernel.Exceptions.KernelExceptionType.DriverPromiseBroken
+  nameWithType: KernelExceptionType.DriverPromiseBroken
 - uid: KS.Kernel.Exceptions.KernelExceptionType.Filesystem
   name: Filesystem
   href: api/KS.Kernel.Exceptions.KernelExceptionType.html#KS_Kernel_Exceptions_KernelExceptionType_Filesystem
