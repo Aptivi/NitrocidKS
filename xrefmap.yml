@@ -1,12 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: KS.Arguments
-  name: KS.Arguments
-  href: api/KS.Arguments.html
-  commentId: N:KS.Arguments
-  fullName: KS.Arguments
-  nameWithType: KS.Arguments
 - uid: KS.Arguments.ArgumentBase
   name: KS.Arguments.ArgumentBase
   href: api/KS.Arguments.ArgumentBase.html
@@ -41,24 +35,18 @@ references:
   commentId: T:KS.Arguments.ArgumentBase.ArgumentHelpSystem
   fullName: KS.Arguments.ArgumentBase.ArgumentHelpSystem
   nameWithType: ArgumentHelpSystem
-- uid: KS.Arguments.ArgumentBase.ArgumentHelpSystem.ShowArgsHelp(KS.Arguments.ArgumentBase.ArgumentType)
-  name: ShowArgsHelp(ArgumentType)
-  href: api/KS.Arguments.ArgumentBase.ArgumentHelpSystem.html#KS_Arguments_ArgumentBase_ArgumentHelpSystem_ShowArgsHelp_KS_Arguments_ArgumentBase_ArgumentType_
-  commentId: M:KS.Arguments.ArgumentBase.ArgumentHelpSystem.ShowArgsHelp(KS.Arguments.ArgumentBase.ArgumentType)
-  fullName: KS.Arguments.ArgumentBase.ArgumentHelpSystem.ShowArgsHelp(KS.Arguments.ArgumentBase.ArgumentType)
-  nameWithType: ArgumentHelpSystem.ShowArgsHelp(ArgumentType)
+- uid: KS.Arguments.ArgumentBase.ArgumentHelpSystem.ShowArgsHelp
+  name: ShowArgsHelp()
+  href: api/KS.Arguments.ArgumentBase.ArgumentHelpSystem.html#KS_Arguments_ArgumentBase_ArgumentHelpSystem_ShowArgsHelp
+  commentId: M:KS.Arguments.ArgumentBase.ArgumentHelpSystem.ShowArgsHelp
+  fullName: KS.Arguments.ArgumentBase.ArgumentHelpSystem.ShowArgsHelp()
+  nameWithType: ArgumentHelpSystem.ShowArgsHelp()
 - uid: KS.Arguments.ArgumentBase.ArgumentHelpSystem.ShowArgsHelp(System.String)
   name: ShowArgsHelp(String)
   href: api/KS.Arguments.ArgumentBase.ArgumentHelpSystem.html#KS_Arguments_ArgumentBase_ArgumentHelpSystem_ShowArgsHelp_System_String_
   commentId: M:KS.Arguments.ArgumentBase.ArgumentHelpSystem.ShowArgsHelp(System.String)
   fullName: KS.Arguments.ArgumentBase.ArgumentHelpSystem.ShowArgsHelp(System.String)
   nameWithType: ArgumentHelpSystem.ShowArgsHelp(String)
-- uid: KS.Arguments.ArgumentBase.ArgumentHelpSystem.ShowArgsHelp(System.String,KS.Arguments.ArgumentBase.ArgumentType)
-  name: ShowArgsHelp(String, ArgumentType)
-  href: api/KS.Arguments.ArgumentBase.ArgumentHelpSystem.html#KS_Arguments_ArgumentBase_ArgumentHelpSystem_ShowArgsHelp_System_String_KS_Arguments_ArgumentBase_ArgumentType_
-  commentId: M:KS.Arguments.ArgumentBase.ArgumentHelpSystem.ShowArgsHelp(System.String,KS.Arguments.ArgumentBase.ArgumentType)
-  fullName: KS.Arguments.ArgumentBase.ArgumentHelpSystem.ShowArgsHelp(System.String, KS.Arguments.ArgumentBase.ArgumentType)
-  nameWithType: ArgumentHelpSystem.ShowArgsHelp(String, ArgumentType)
 - uid: KS.Arguments.ArgumentBase.ArgumentHelpSystem.ShowArgsHelp*
   name: ShowArgsHelp
   href: api/KS.Arguments.ArgumentBase.ArgumentHelpSystem.html#KS_Arguments_ArgumentBase_ArgumentHelpSystem_ShowArgsHelp_
@@ -72,12 +60,12 @@ references:
   commentId: T:KS.Arguments.ArgumentBase.ArgumentInfo
   fullName: KS.Arguments.ArgumentBase.ArgumentInfo
   nameWithType: ArgumentInfo
-- uid: KS.Arguments.ArgumentBase.ArgumentInfo.#ctor(System.String,KS.Arguments.ArgumentBase.ArgumentType,System.String,KS.Shell.ShellBase.Commands.CommandArgumentInfo,KS.Arguments.ArgumentBase.ArgumentExecutor,System.Boolean,System.Action)
-  name: ArgumentInfo(String, ArgumentType, String, CommandArgumentInfo, ArgumentExecutor, Boolean, Action)
-  href: api/KS.Arguments.ArgumentBase.ArgumentInfo.html#KS_Arguments_ArgumentBase_ArgumentInfo__ctor_System_String_KS_Arguments_ArgumentBase_ArgumentType_System_String_KS_Shell_ShellBase_Commands_CommandArgumentInfo_KS_Arguments_ArgumentBase_ArgumentExecutor_System_Boolean_System_Action_
-  commentId: M:KS.Arguments.ArgumentBase.ArgumentInfo.#ctor(System.String,KS.Arguments.ArgumentBase.ArgumentType,System.String,KS.Shell.ShellBase.Commands.CommandArgumentInfo,KS.Arguments.ArgumentBase.ArgumentExecutor,System.Boolean,System.Action)
-  fullName: KS.Arguments.ArgumentBase.ArgumentInfo.ArgumentInfo(System.String, KS.Arguments.ArgumentBase.ArgumentType, System.String, KS.Shell.ShellBase.Commands.CommandArgumentInfo, KS.Arguments.ArgumentBase.ArgumentExecutor, System.Boolean, System.Action)
-  nameWithType: ArgumentInfo.ArgumentInfo(String, ArgumentType, String, CommandArgumentInfo, ArgumentExecutor, Boolean, Action)
+- uid: KS.Arguments.ArgumentBase.ArgumentInfo.#ctor(System.String,System.String,KS.Shell.ShellBase.Commands.CommandArgumentInfo,KS.Arguments.ArgumentBase.ArgumentExecutor,System.Boolean,System.Action)
+  name: ArgumentInfo(String, String, CommandArgumentInfo, ArgumentExecutor, Boolean, Action)
+  href: api/KS.Arguments.ArgumentBase.ArgumentInfo.html#KS_Arguments_ArgumentBase_ArgumentInfo__ctor_System_String_System_String_KS_Shell_ShellBase_Commands_CommandArgumentInfo_KS_Arguments_ArgumentBase_ArgumentExecutor_System_Boolean_System_Action_
+  commentId: M:KS.Arguments.ArgumentBase.ArgumentInfo.#ctor(System.String,System.String,KS.Shell.ShellBase.Commands.CommandArgumentInfo,KS.Arguments.ArgumentBase.ArgumentExecutor,System.Boolean,System.Action)
+  fullName: KS.Arguments.ArgumentBase.ArgumentInfo.ArgumentInfo(System.String, System.String, KS.Shell.ShellBase.Commands.CommandArgumentInfo, KS.Arguments.ArgumentBase.ArgumentExecutor, System.Boolean, System.Action)
+  nameWithType: ArgumentInfo.ArgumentInfo(String, String, CommandArgumentInfo, ArgumentExecutor, Boolean, Action)
 - uid: KS.Arguments.ArgumentBase.ArgumentInfo.#ctor*
   name: ArgumentInfo
   href: api/KS.Arguments.ArgumentBase.ArgumentInfo.html#KS_Arguments_ArgumentBase_ArgumentInfo__ctor_
@@ -176,40 +164,27 @@ references:
   isSpec: "True"
   fullName: KS.Arguments.ArgumentBase.ArgumentInfo.Obsolete
   nameWithType: ArgumentInfo.Obsolete
-- uid: KS.Arguments.ArgumentBase.ArgumentInfo.Type
-  name: Type
-  href: api/KS.Arguments.ArgumentBase.ArgumentInfo.html#KS_Arguments_ArgumentBase_ArgumentInfo_Type
-  commentId: P:KS.Arguments.ArgumentBase.ArgumentInfo.Type
-  fullName: KS.Arguments.ArgumentBase.ArgumentInfo.Type
-  nameWithType: ArgumentInfo.Type
-- uid: KS.Arguments.ArgumentBase.ArgumentInfo.Type*
-  name: Type
-  href: api/KS.Arguments.ArgumentBase.ArgumentInfo.html#KS_Arguments_ArgumentBase_ArgumentInfo_Type_
-  commentId: Overload:KS.Arguments.ArgumentBase.ArgumentInfo.Type
-  isSpec: "True"
-  fullName: KS.Arguments.ArgumentBase.ArgumentInfo.Type
-  nameWithType: ArgumentInfo.Type
 - uid: KS.Arguments.ArgumentBase.ArgumentParse
   name: ArgumentParse
   href: api/KS.Arguments.ArgumentBase.ArgumentParse.html
   commentId: T:KS.Arguments.ArgumentBase.ArgumentParse
   fullName: KS.Arguments.ArgumentBase.ArgumentParse
   nameWithType: ArgumentParse
-- uid: KS.Arguments.ArgumentBase.ArgumentParse.AvailableArgs
-  name: AvailableArgs
-  href: api/KS.Arguments.ArgumentBase.ArgumentParse.html#KS_Arguments_ArgumentBase_ArgumentParse_AvailableArgs
-  commentId: F:KS.Arguments.ArgumentBase.ArgumentParse.AvailableArgs
-  fullName: KS.Arguments.ArgumentBase.ArgumentParse.AvailableArgs
-  nameWithType: ArgumentParse.AvailableArgs
-- uid: KS.Arguments.ArgumentBase.ArgumentParse.ParseArguments(System.Collections.Generic.List{System.String},KS.Arguments.ArgumentBase.ArgumentType)
-  name: ParseArguments(List<String>, ArgumentType)
-  href: api/KS.Arguments.ArgumentBase.ArgumentParse.html#KS_Arguments_ArgumentBase_ArgumentParse_ParseArguments_System_Collections_Generic_List_System_String__KS_Arguments_ArgumentBase_ArgumentType_
-  commentId: M:KS.Arguments.ArgumentBase.ArgumentParse.ParseArguments(System.Collections.Generic.List{System.String},KS.Arguments.ArgumentBase.ArgumentType)
-  name.vb: ParseArguments(List(Of String), ArgumentType)
-  fullName: KS.Arguments.ArgumentBase.ArgumentParse.ParseArguments(System.Collections.Generic.List<System.String>, KS.Arguments.ArgumentBase.ArgumentType)
-  fullName.vb: KS.Arguments.ArgumentBase.ArgumentParse.ParseArguments(System.Collections.Generic.List(Of System.String), KS.Arguments.ArgumentBase.ArgumentType)
-  nameWithType: ArgumentParse.ParseArguments(List<String>, ArgumentType)
-  nameWithType.vb: ArgumentParse.ParseArguments(List(Of String), ArgumentType)
+- uid: KS.Arguments.ArgumentBase.ArgumentParse.AvailableCMDLineArgs
+  name: AvailableCMDLineArgs
+  href: api/KS.Arguments.ArgumentBase.ArgumentParse.html#KS_Arguments_ArgumentBase_ArgumentParse_AvailableCMDLineArgs
+  commentId: F:KS.Arguments.ArgumentBase.ArgumentParse.AvailableCMDLineArgs
+  fullName: KS.Arguments.ArgumentBase.ArgumentParse.AvailableCMDLineArgs
+  nameWithType: ArgumentParse.AvailableCMDLineArgs
+- uid: KS.Arguments.ArgumentBase.ArgumentParse.ParseArguments(System.Collections.Generic.List{System.String})
+  name: ParseArguments(List<String>)
+  href: api/KS.Arguments.ArgumentBase.ArgumentParse.html#KS_Arguments_ArgumentBase_ArgumentParse_ParseArguments_System_Collections_Generic_List_System_String__
+  commentId: M:KS.Arguments.ArgumentBase.ArgumentParse.ParseArguments(System.Collections.Generic.List{System.String})
+  name.vb: ParseArguments(List(Of String))
+  fullName: KS.Arguments.ArgumentBase.ArgumentParse.ParseArguments(System.Collections.Generic.List<System.String>)
+  fullName.vb: KS.Arguments.ArgumentBase.ArgumentParse.ParseArguments(System.Collections.Generic.List(Of System.String))
+  nameWithType: ArgumentParse.ParseArguments(List<String>)
+  nameWithType.vb: ArgumentParse.ParseArguments(List(Of String))
 - uid: KS.Arguments.ArgumentBase.ArgumentParse.ParseArguments*
   name: ParseArguments
   href: api/KS.Arguments.ArgumentBase.ArgumentParse.html#KS_Arguments_ArgumentBase_ArgumentParse_ParseArguments_
@@ -217,36 +192,6 @@ references:
   isSpec: "True"
   fullName: KS.Arguments.ArgumentBase.ArgumentParse.ParseArguments
   nameWithType: ArgumentParse.ParseArguments
-- uid: KS.Arguments.ArgumentBase.ArgumentType
-  name: ArgumentType
-  href: api/KS.Arguments.ArgumentBase.ArgumentType.html
-  commentId: T:KS.Arguments.ArgumentBase.ArgumentType
-  fullName: KS.Arguments.ArgumentBase.ArgumentType
-  nameWithType: ArgumentType
-- uid: KS.Arguments.ArgumentBase.ArgumentType.CommandLineArgs
-  name: CommandLineArgs
-  href: api/KS.Arguments.ArgumentBase.ArgumentType.html#KS_Arguments_ArgumentBase_ArgumentType_CommandLineArgs
-  commentId: F:KS.Arguments.ArgumentBase.ArgumentType.CommandLineArgs
-  fullName: KS.Arguments.ArgumentBase.ArgumentType.CommandLineArgs
-  nameWithType: ArgumentType.CommandLineArgs
-- uid: KS.Arguments.ArgumentBase.ArgumentType.KernelArgs
-  name: KernelArgs
-  href: api/KS.Arguments.ArgumentBase.ArgumentType.html#KS_Arguments_ArgumentBase_ArgumentType_KernelArgs
-  commentId: F:KS.Arguments.ArgumentBase.ArgumentType.KernelArgs
-  fullName: KS.Arguments.ArgumentBase.ArgumentType.KernelArgs
-  nameWithType: ArgumentType.KernelArgs
-- uid: KS.Arguments.ArgumentBase.CommandLineArgs
-  name: CommandLineArgs
-  href: api/KS.Arguments.ArgumentBase.CommandLineArgs.html
-  commentId: T:KS.Arguments.ArgumentBase.CommandLineArgs
-  fullName: KS.Arguments.ArgumentBase.CommandLineArgs
-  nameWithType: CommandLineArgs
-- uid: KS.Arguments.ArgumentBase.CommandLineArgs.AvailableCMDLineArgs
-  name: AvailableCMDLineArgs
-  href: api/KS.Arguments.ArgumentBase.CommandLineArgs.html#KS_Arguments_ArgumentBase_CommandLineArgs_AvailableCMDLineArgs
-  commentId: F:KS.Arguments.ArgumentBase.CommandLineArgs.AvailableCMDLineArgs
-  fullName: KS.Arguments.ArgumentBase.CommandLineArgs.AvailableCMDLineArgs
-  nameWithType: CommandLineArgs.AvailableCMDLineArgs
 - uid: KS.Arguments.ArgumentBase.IArgument
   name: IArgument
   href: api/KS.Arguments.ArgumentBase.IArgument.html
@@ -275,12 +220,12 @@ references:
   commentId: T:KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo
   fullName: KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo
   nameWithType: ProvidedArgumentArgumentsInfo
-- uid: KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo.#ctor(System.String,KS.Arguments.ArgumentBase.ArgumentType)
-  name: ProvidedArgumentArgumentsInfo(String, ArgumentType)
-  href: api/KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo.html#KS_Arguments_ArgumentBase_ProvidedArgumentArgumentsInfo__ctor_System_String_KS_Arguments_ArgumentBase_ArgumentType_
-  commentId: M:KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo.#ctor(System.String,KS.Arguments.ArgumentBase.ArgumentType)
-  fullName: KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo.ProvidedArgumentArgumentsInfo(System.String, KS.Arguments.ArgumentBase.ArgumentType)
-  nameWithType: ProvidedArgumentArgumentsInfo.ProvidedArgumentArgumentsInfo(String, ArgumentType)
+- uid: KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo.#ctor(System.String)
+  name: ProvidedArgumentArgumentsInfo(String)
+  href: api/KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo.html#KS_Arguments_ArgumentBase_ProvidedArgumentArgumentsInfo__ctor_System_String_
+  commentId: M:KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo.#ctor(System.String)
+  fullName: KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo.ProvidedArgumentArgumentsInfo(System.String)
+  nameWithType: ProvidedArgumentArgumentsInfo.ProvidedArgumentArgumentsInfo(String)
 - uid: KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo.#ctor*
   name: ProvidedArgumentArgumentsInfo
   href: api/KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo.html#KS_Arguments_ArgumentBase_ProvidedArgumentArgumentsInfo__ctor_
@@ -366,59 +311,12 @@ references:
   isSpec: "True"
   fullName: KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo.SwitchesList
   nameWithType: ProvidedArgumentArgumentsInfo.SwitchesList
-- uid: KS.Arguments.ArgumentPrompt
-  name: ArgumentPrompt
-  href: api/KS.Arguments.ArgumentPrompt.html
-  commentId: T:KS.Arguments.ArgumentPrompt
-  fullName: KS.Arguments.ArgumentPrompt
-  nameWithType: ArgumentPrompt
-- uid: KS.Arguments.ArgumentPrompt.EnteredArguments
-  name: EnteredArguments
-  href: api/KS.Arguments.ArgumentPrompt.html#KS_Arguments_ArgumentPrompt_EnteredArguments
-  commentId: F:KS.Arguments.ArgumentPrompt.EnteredArguments
-  fullName: KS.Arguments.ArgumentPrompt.EnteredArguments
-  nameWithType: ArgumentPrompt.EnteredArguments
-- uid: KS.Arguments.ArgumentPrompt.PromptArgs(System.Boolean)
-  name: PromptArgs(Boolean)
-  href: api/KS.Arguments.ArgumentPrompt.html#KS_Arguments_ArgumentPrompt_PromptArgs_System_Boolean_
-  commentId: M:KS.Arguments.ArgumentPrompt.PromptArgs(System.Boolean)
-  fullName: KS.Arguments.ArgumentPrompt.PromptArgs(System.Boolean)
-  nameWithType: ArgumentPrompt.PromptArgs(Boolean)
-- uid: KS.Arguments.ArgumentPrompt.PromptArgs*
-  name: PromptArgs
-  href: api/KS.Arguments.ArgumentPrompt.html#KS_Arguments_ArgumentPrompt_PromptArgs_
-  commentId: Overload:KS.Arguments.ArgumentPrompt.PromptArgs
-  isSpec: "True"
-  fullName: KS.Arguments.ArgumentPrompt.PromptArgs
-  nameWithType: ArgumentPrompt.PromptArgs
 - uid: KS.Arguments.CommandLineArguments
   name: KS.Arguments.CommandLineArguments
   href: api/KS.Arguments.CommandLineArguments.html
   commentId: N:KS.Arguments.CommandLineArguments
   fullName: KS.Arguments.CommandLineArguments
   nameWithType: KS.Arguments.CommandLineArguments
-- uid: KS.Arguments.CommandLineArguments.CommandLine_ArgsArgument
-  name: CommandLine_ArgsArgument
-  href: api/KS.Arguments.CommandLineArguments.CommandLine_ArgsArgument.html
-  commentId: T:KS.Arguments.CommandLineArguments.CommandLine_ArgsArgument
-  fullName: KS.Arguments.CommandLineArguments.CommandLine_ArgsArgument
-  nameWithType: CommandLine_ArgsArgument
-- uid: KS.Arguments.CommandLineArguments.CommandLine_ArgsArgument.Execute(System.String,System.String[],System.String[])
-  name: Execute(String, String[], String[])
-  href: api/KS.Arguments.CommandLineArguments.CommandLine_ArgsArgument.html#KS_Arguments_CommandLineArguments_CommandLine_ArgsArgument_Execute_System_String_System_String___System_String___
-  commentId: M:KS.Arguments.CommandLineArguments.CommandLine_ArgsArgument.Execute(System.String,System.String[],System.String[])
-  name.vb: Execute(String, String(), String())
-  fullName: KS.Arguments.CommandLineArguments.CommandLine_ArgsArgument.Execute(System.String, System.String[], System.String[])
-  fullName.vb: KS.Arguments.CommandLineArguments.CommandLine_ArgsArgument.Execute(System.String, System.String(), System.String())
-  nameWithType: CommandLine_ArgsArgument.Execute(String, String[], String[])
-  nameWithType.vb: CommandLine_ArgsArgument.Execute(String, String(), String())
-- uid: KS.Arguments.CommandLineArguments.CommandLine_ArgsArgument.Execute*
-  name: Execute
-  href: api/KS.Arguments.CommandLineArguments.CommandLine_ArgsArgument.html#KS_Arguments_CommandLineArguments_CommandLine_ArgsArgument_Execute_
-  commentId: Overload:KS.Arguments.CommandLineArguments.CommandLine_ArgsArgument.Execute
-  isSpec: "True"
-  fullName: KS.Arguments.CommandLineArguments.CommandLine_ArgsArgument.Execute
-  nameWithType: CommandLine_ArgsArgument.Execute
 - uid: KS.Arguments.CommandLineArguments.CommandLine_BypassSizeDetectionArgument
   name: CommandLine_BypassSizeDetectionArgument
   href: api/KS.Arguments.CommandLineArguments.CommandLine_BypassSizeDetectionArgument.html
@@ -617,100 +515,72 @@ references:
   isSpec: "True"
   fullName: KS.Arguments.CommandLineArguments.CommandLine_TestInteractiveArgument.Execute
   nameWithType: CommandLine_TestInteractiveArgument.Execute
-- uid: KS.Arguments.KernelArguments
-  name: KS.Arguments.KernelArguments
-  href: api/KS.Arguments.KernelArguments.html
-  commentId: N:KS.Arguments.KernelArguments
-  fullName: KS.Arguments.KernelArguments
-  nameWithType: KS.Arguments.KernelArguments
-- uid: KS.Arguments.KernelArguments.MaintenanceArgument
+- uid: KS.Arguments.CommandLineArguments.MaintenanceArgument
   name: MaintenanceArgument
-  href: api/KS.Arguments.KernelArguments.MaintenanceArgument.html
-  commentId: T:KS.Arguments.KernelArguments.MaintenanceArgument
-  fullName: KS.Arguments.KernelArguments.MaintenanceArgument
+  href: api/KS.Arguments.CommandLineArguments.MaintenanceArgument.html
+  commentId: T:KS.Arguments.CommandLineArguments.MaintenanceArgument
+  fullName: KS.Arguments.CommandLineArguments.MaintenanceArgument
   nameWithType: MaintenanceArgument
-- uid: KS.Arguments.KernelArguments.MaintenanceArgument.Execute(System.String,System.String[],System.String[])
+- uid: KS.Arguments.CommandLineArguments.MaintenanceArgument.Execute(System.String,System.String[],System.String[])
   name: Execute(String, String[], String[])
-  href: api/KS.Arguments.KernelArguments.MaintenanceArgument.html#KS_Arguments_KernelArguments_MaintenanceArgument_Execute_System_String_System_String___System_String___
-  commentId: M:KS.Arguments.KernelArguments.MaintenanceArgument.Execute(System.String,System.String[],System.String[])
+  href: api/KS.Arguments.CommandLineArguments.MaintenanceArgument.html#KS_Arguments_CommandLineArguments_MaintenanceArgument_Execute_System_String_System_String___System_String___
+  commentId: M:KS.Arguments.CommandLineArguments.MaintenanceArgument.Execute(System.String,System.String[],System.String[])
   name.vb: Execute(String, String(), String())
-  fullName: KS.Arguments.KernelArguments.MaintenanceArgument.Execute(System.String, System.String[], System.String[])
-  fullName.vb: KS.Arguments.KernelArguments.MaintenanceArgument.Execute(System.String, System.String(), System.String())
+  fullName: KS.Arguments.CommandLineArguments.MaintenanceArgument.Execute(System.String, System.String[], System.String[])
+  fullName.vb: KS.Arguments.CommandLineArguments.MaintenanceArgument.Execute(System.String, System.String(), System.String())
   nameWithType: MaintenanceArgument.Execute(String, String[], String[])
   nameWithType.vb: MaintenanceArgument.Execute(String, String(), String())
-- uid: KS.Arguments.KernelArguments.MaintenanceArgument.Execute*
+- uid: KS.Arguments.CommandLineArguments.MaintenanceArgument.Execute*
   name: Execute
-  href: api/KS.Arguments.KernelArguments.MaintenanceArgument.html#KS_Arguments_KernelArguments_MaintenanceArgument_Execute_
-  commentId: Overload:KS.Arguments.KernelArguments.MaintenanceArgument.Execute
+  href: api/KS.Arguments.CommandLineArguments.MaintenanceArgument.html#KS_Arguments_CommandLineArguments_MaintenanceArgument_Execute_
+  commentId: Overload:KS.Arguments.CommandLineArguments.MaintenanceArgument.Execute
   isSpec: "True"
-  fullName: KS.Arguments.KernelArguments.MaintenanceArgument.Execute
+  fullName: KS.Arguments.CommandLineArguments.MaintenanceArgument.Execute
   nameWithType: MaintenanceArgument.Execute
-- uid: KS.Arguments.KernelArguments.QuietArgument
+- uid: KS.Arguments.CommandLineArguments.QuietArgument
   name: QuietArgument
-  href: api/KS.Arguments.KernelArguments.QuietArgument.html
-  commentId: T:KS.Arguments.KernelArguments.QuietArgument
-  fullName: KS.Arguments.KernelArguments.QuietArgument
+  href: api/KS.Arguments.CommandLineArguments.QuietArgument.html
+  commentId: T:KS.Arguments.CommandLineArguments.QuietArgument
+  fullName: KS.Arguments.CommandLineArguments.QuietArgument
   nameWithType: QuietArgument
-- uid: KS.Arguments.KernelArguments.QuietArgument.Execute(System.String,System.String[],System.String[])
+- uid: KS.Arguments.CommandLineArguments.QuietArgument.Execute(System.String,System.String[],System.String[])
   name: Execute(String, String[], String[])
-  href: api/KS.Arguments.KernelArguments.QuietArgument.html#KS_Arguments_KernelArguments_QuietArgument_Execute_System_String_System_String___System_String___
-  commentId: M:KS.Arguments.KernelArguments.QuietArgument.Execute(System.String,System.String[],System.String[])
+  href: api/KS.Arguments.CommandLineArguments.QuietArgument.html#KS_Arguments_CommandLineArguments_QuietArgument_Execute_System_String_System_String___System_String___
+  commentId: M:KS.Arguments.CommandLineArguments.QuietArgument.Execute(System.String,System.String[],System.String[])
   name.vb: Execute(String, String(), String())
-  fullName: KS.Arguments.KernelArguments.QuietArgument.Execute(System.String, System.String[], System.String[])
-  fullName.vb: KS.Arguments.KernelArguments.QuietArgument.Execute(System.String, System.String(), System.String())
+  fullName: KS.Arguments.CommandLineArguments.QuietArgument.Execute(System.String, System.String[], System.String[])
+  fullName.vb: KS.Arguments.CommandLineArguments.QuietArgument.Execute(System.String, System.String(), System.String())
   nameWithType: QuietArgument.Execute(String, String[], String[])
   nameWithType.vb: QuietArgument.Execute(String, String(), String())
-- uid: KS.Arguments.KernelArguments.QuietArgument.Execute*
+- uid: KS.Arguments.CommandLineArguments.QuietArgument.Execute*
   name: Execute
-  href: api/KS.Arguments.KernelArguments.QuietArgument.html#KS_Arguments_KernelArguments_QuietArgument_Execute_
-  commentId: Overload:KS.Arguments.KernelArguments.QuietArgument.Execute
+  href: api/KS.Arguments.CommandLineArguments.QuietArgument.html#KS_Arguments_CommandLineArguments_QuietArgument_Execute_
+  commentId: Overload:KS.Arguments.CommandLineArguments.QuietArgument.Execute
   isSpec: "True"
-  fullName: KS.Arguments.KernelArguments.QuietArgument.Execute
+  fullName: KS.Arguments.CommandLineArguments.QuietArgument.Execute
   nameWithType: QuietArgument.Execute
-- uid: KS.Arguments.KernelArguments.SafeArgument
+- uid: KS.Arguments.CommandLineArguments.SafeArgument
   name: SafeArgument
-  href: api/KS.Arguments.KernelArguments.SafeArgument.html
-  commentId: T:KS.Arguments.KernelArguments.SafeArgument
-  fullName: KS.Arguments.KernelArguments.SafeArgument
+  href: api/KS.Arguments.CommandLineArguments.SafeArgument.html
+  commentId: T:KS.Arguments.CommandLineArguments.SafeArgument
+  fullName: KS.Arguments.CommandLineArguments.SafeArgument
   nameWithType: SafeArgument
-- uid: KS.Arguments.KernelArguments.SafeArgument.Execute(System.String,System.String[],System.String[])
+- uid: KS.Arguments.CommandLineArguments.SafeArgument.Execute(System.String,System.String[],System.String[])
   name: Execute(String, String[], String[])
-  href: api/KS.Arguments.KernelArguments.SafeArgument.html#KS_Arguments_KernelArguments_SafeArgument_Execute_System_String_System_String___System_String___
-  commentId: M:KS.Arguments.KernelArguments.SafeArgument.Execute(System.String,System.String[],System.String[])
+  href: api/KS.Arguments.CommandLineArguments.SafeArgument.html#KS_Arguments_CommandLineArguments_SafeArgument_Execute_System_String_System_String___System_String___
+  commentId: M:KS.Arguments.CommandLineArguments.SafeArgument.Execute(System.String,System.String[],System.String[])
   name.vb: Execute(String, String(), String())
-  fullName: KS.Arguments.KernelArguments.SafeArgument.Execute(System.String, System.String[], System.String[])
-  fullName.vb: KS.Arguments.KernelArguments.SafeArgument.Execute(System.String, System.String(), System.String())
+  fullName: KS.Arguments.CommandLineArguments.SafeArgument.Execute(System.String, System.String[], System.String[])
+  fullName.vb: KS.Arguments.CommandLineArguments.SafeArgument.Execute(System.String, System.String(), System.String())
   nameWithType: SafeArgument.Execute(String, String[], String[])
   nameWithType.vb: SafeArgument.Execute(String, String(), String())
-- uid: KS.Arguments.KernelArguments.SafeArgument.Execute*
+- uid: KS.Arguments.CommandLineArguments.SafeArgument.Execute*
   name: Execute
-  href: api/KS.Arguments.KernelArguments.SafeArgument.html#KS_Arguments_KernelArguments_SafeArgument_Execute_
-  commentId: Overload:KS.Arguments.KernelArguments.SafeArgument.Execute
+  href: api/KS.Arguments.CommandLineArguments.SafeArgument.html#KS_Arguments_CommandLineArguments_SafeArgument_Execute_
+  commentId: Overload:KS.Arguments.CommandLineArguments.SafeArgument.Execute
   isSpec: "True"
-  fullName: KS.Arguments.KernelArguments.SafeArgument.Execute
+  fullName: KS.Arguments.CommandLineArguments.SafeArgument.Execute
   nameWithType: SafeArgument.Execute
-- uid: KS.Arguments.KernelArguments.TestInteractiveArgument
-  name: TestInteractiveArgument
-  href: api/KS.Arguments.KernelArguments.TestInteractiveArgument.html
-  commentId: T:KS.Arguments.KernelArguments.TestInteractiveArgument
-  fullName: KS.Arguments.KernelArguments.TestInteractiveArgument
-  nameWithType: TestInteractiveArgument
-- uid: KS.Arguments.KernelArguments.TestInteractiveArgument.Execute(System.String,System.String[],System.String[])
-  name: Execute(String, String[], String[])
-  href: api/KS.Arguments.KernelArguments.TestInteractiveArgument.html#KS_Arguments_KernelArguments_TestInteractiveArgument_Execute_System_String_System_String___System_String___
-  commentId: M:KS.Arguments.KernelArguments.TestInteractiveArgument.Execute(System.String,System.String[],System.String[])
-  name.vb: Execute(String, String(), String())
-  fullName: KS.Arguments.KernelArguments.TestInteractiveArgument.Execute(System.String, System.String[], System.String[])
-  fullName.vb: KS.Arguments.KernelArguments.TestInteractiveArgument.Execute(System.String, System.String(), System.String())
-  nameWithType: TestInteractiveArgument.Execute(String, String[], String[])
-  nameWithType.vb: TestInteractiveArgument.Execute(String, String(), String())
-- uid: KS.Arguments.KernelArguments.TestInteractiveArgument.Execute*
-  name: Execute
-  href: api/KS.Arguments.KernelArguments.TestInteractiveArgument.html#KS_Arguments_KernelArguments_TestInteractiveArgument_Execute_
-  commentId: Overload:KS.Arguments.KernelArguments.TestInteractiveArgument.Execute
-  isSpec: "True"
-  fullName: KS.Arguments.KernelArguments.TestInteractiveArgument.Execute
-  nameWithType: TestInteractiveArgument.Execute
 - uid: KS.ConsoleBase
   name: KS.ConsoleBase
   href: api/KS.ConsoleBase.html
@@ -12899,18 +12769,6 @@ references:
   commentId: T:KS.Kernel.Flags
   fullName: KS.Kernel.Flags
   nameWithType: Flags
-- uid: KS.Kernel.Flags.ArgsInjected
-  name: ArgsInjected
-  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_ArgsInjected
-  commentId: F:KS.Kernel.Flags.ArgsInjected
-  fullName: KS.Kernel.Flags.ArgsInjected
-  nameWithType: Flags.ArgsInjected
-- uid: KS.Kernel.Flags.ArgsOnBoot
-  name: ArgsOnBoot
-  href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_ArgsOnBoot
-  commentId: F:KS.Kernel.Flags.ArgsOnBoot
-  fullName: KS.Kernel.Flags.ArgsOnBoot
-  nameWithType: Flags.ArgsOnBoot
 - uid: KS.Kernel.Flags.AutoDownloadUpdate
   name: AutoDownloadUpdate
   href: api/KS.Kernel.Flags.html#KS_Kernel_Flags_AutoDownloadUpdate
@@ -53832,41 +53690,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.Shells.UESH.Commands.ArchiveCommand.Execute
   nameWithType: ArchiveCommand.Execute
-- uid: KS.Shell.Shells.UESH.Commands.ArgInjCommand
-  name: ArgInjCommand
-  href: api/KS.Shell.Shells.UESH.Commands.ArgInjCommand.html
-  commentId: T:KS.Shell.Shells.UESH.Commands.ArgInjCommand
-  fullName: KS.Shell.Shells.UESH.Commands.ArgInjCommand
-  nameWithType: ArgInjCommand
-- uid: KS.Shell.Shells.UESH.Commands.ArgInjCommand.Execute(System.String,System.String[],System.String[])
-  name: Execute(String, String[], String[])
-  href: api/KS.Shell.Shells.UESH.Commands.ArgInjCommand.html#KS_Shell_Shells_UESH_Commands_ArgInjCommand_Execute_System_String_System_String___System_String___
-  commentId: M:KS.Shell.Shells.UESH.Commands.ArgInjCommand.Execute(System.String,System.String[],System.String[])
-  name.vb: Execute(String, String(), String())
-  fullName: KS.Shell.Shells.UESH.Commands.ArgInjCommand.Execute(System.String, System.String[], System.String[])
-  fullName.vb: KS.Shell.Shells.UESH.Commands.ArgInjCommand.Execute(System.String, System.String(), System.String())
-  nameWithType: ArgInjCommand.Execute(String, String[], String[])
-  nameWithType.vb: ArgInjCommand.Execute(String, String(), String())
-- uid: KS.Shell.Shells.UESH.Commands.ArgInjCommand.Execute*
-  name: Execute
-  href: api/KS.Shell.Shells.UESH.Commands.ArgInjCommand.html#KS_Shell_Shells_UESH_Commands_ArgInjCommand_Execute_
-  commentId: Overload:KS.Shell.Shells.UESH.Commands.ArgInjCommand.Execute
-  isSpec: "True"
-  fullName: KS.Shell.Shells.UESH.Commands.ArgInjCommand.Execute
-  nameWithType: ArgInjCommand.Execute
-- uid: KS.Shell.Shells.UESH.Commands.ArgInjCommand.HelpHelper
-  name: HelpHelper()
-  href: api/KS.Shell.Shells.UESH.Commands.ArgInjCommand.html#KS_Shell_Shells_UESH_Commands_ArgInjCommand_HelpHelper
-  commentId: M:KS.Shell.Shells.UESH.Commands.ArgInjCommand.HelpHelper
-  fullName: KS.Shell.Shells.UESH.Commands.ArgInjCommand.HelpHelper()
-  nameWithType: ArgInjCommand.HelpHelper()
-- uid: KS.Shell.Shells.UESH.Commands.ArgInjCommand.HelpHelper*
-  name: HelpHelper
-  href: api/KS.Shell.Shells.UESH.Commands.ArgInjCommand.html#KS_Shell_Shells_UESH_Commands_ArgInjCommand_HelpHelper_
-  commentId: Overload:KS.Shell.Shells.UESH.Commands.ArgInjCommand.HelpHelper
-  isSpec: "True"
-  fullName: KS.Shell.Shells.UESH.Commands.ArgInjCommand.HelpHelper
-  nameWithType: ArgInjCommand.HelpHelper
 - uid: KS.Shell.Shells.UESH.Commands.BeepCommand
   name: BeepCommand
   href: api/KS.Shell.Shells.UESH.Commands.BeepCommand.html

@@ -101,18 +101,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Arguments_ArgumentBase_ArgumentParse_AvailableArgs.md&amp;value=---%0Auid%3A%20KS.Arguments.ArgumentBase.ArgumentParse.AvailableArgs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Arguments_ArgumentBase_ArgumentParse_AvailableCMDLineArgs.md&amp;value=---%0Auid%3A%20KS.Arguments.ArgumentBase.ArgumentParse.AvailableCMDLineArgs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Arguments/ArgumentBase/ArgumentParse.cs/#L39">View Source</a>
   </span>
-  <h4 id="KS_Arguments_ArgumentBase_ArgumentParse_AvailableArgs" data-uid="KS.Arguments.ArgumentBase.ArgumentParse.AvailableArgs">AvailableArgs</h4>
-  <div class="markdown level1 summary"><p>Lists all available arguments</p>
+  <h4 id="KS_Arguments_ArgumentBase_ArgumentParse_AvailableCMDLineArgs" data-uid="KS.Arguments.ArgumentBase.ArgumentParse.AvailableCMDLineArgs">AvailableCMDLineArgs</h4>
+  <div class="markdown level1 summary"><p>Available command line arguments</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly Dictionary&lt;string, ArgumentInfo&gt; AvailableArgs</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly Dictionary&lt;string, ArgumentInfo&gt; AvailableCMDLineArgs</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -133,19 +133,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Arguments_ArgumentBase_ArgumentParse_ParseArguments_System_Collections_Generic_List_System_String__KS_Arguments_ArgumentBase_ArgumentType_.md&amp;value=---%0Auid%3A%20KS.Arguments.ArgumentBase.ArgumentParse.ParseArguments(System.Collections.Generic.List%7BSystem.String%7D%2CKS.Arguments.ArgumentBase.ArgumentType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Arguments_ArgumentBase_ArgumentParse_ParseArguments_System_Collections_Generic_List_System_String__.md&amp;value=---%0Auid%3A%20KS.Arguments.ArgumentBase.ArgumentParse.ParseArguments(System.Collections.Generic.List%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Arguments/ArgumentBase/ArgumentParse.cs/#L52">View Source</a>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Arguments/ArgumentBase/ArgumentParse.cs/#L59">View Source</a>
   </span>
   <a id="KS_Arguments_ArgumentBase_ArgumentParse_ParseArguments_" data-uid="KS.Arguments.ArgumentBase.ArgumentParse.ParseArguments*"></a>
-  <h4 id="KS_Arguments_ArgumentBase_ArgumentParse_ParseArguments_System_Collections_Generic_List_System_String__KS_Arguments_ArgumentBase_ArgumentType_" data-uid="KS.Arguments.ArgumentBase.ArgumentParse.ParseArguments(System.Collections.Generic.List{System.String},KS.Arguments.ArgumentBase.ArgumentType)">ParseArguments(List&lt;String&gt;, ArgumentType)</h4>
+  <h4 id="KS_Arguments_ArgumentBase_ArgumentParse_ParseArguments_System_Collections_Generic_List_System_String__" data-uid="KS.Arguments.ArgumentBase.ArgumentParse.ParseArguments(System.Collections.Generic.List{System.String})">ParseArguments(List&lt;String&gt;)</h4>
   <div class="markdown level1 summary"><p>Parses specified arguments</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ParseArguments(List&lt;string&gt; ArgumentsInput, ArgumentType ArgumentType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ParseArguments(List&lt;string&gt; ArgumentsInput)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,12 +161,6 @@
         <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">ArgumentsInput</span></td>
         <td><p>Input Arguments</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.Arguments.ArgumentBase.ArgumentType.html">ArgumentType</a></td>
-        <td><span class="parametername">ArgumentType</span></td>
-        <td><p>Argument type</p>
 </td>
       </tr>
     </tbody>
