@@ -58007,19 +58007,6 @@ references:
   isSpec: "True"
   fullName: Properties.Resources.Resources.Bluesome
   nameWithType: Resources.Bluesome
-- uid: Properties.Resources.Resources.Bluespire
-  name: Bluespire
-  href: api/Properties.Resources.Resources.html#Properties_Resources_Resources_Bluespire
-  commentId: P:Properties.Resources.Resources.Bluespire
-  fullName: Properties.Resources.Resources.Bluespire
-  nameWithType: Resources.Bluespire
-- uid: Properties.Resources.Resources.Bluespire*
-  name: Bluespire
-  href: api/Properties.Resources.Resources.html#Properties_Resources_Resources_Bluespire_
-  commentId: Overload:Properties.Resources.Resources.Bluespire
-  isSpec: "True"
-  fullName: Properties.Resources.Resources.Bluespire
-  nameWithType: Resources.Bluespire
 - uid: Properties.Resources.Resources.Breeze
   name: Breeze
   href: api/Properties.Resources.Resources.html#Properties_Resources_Resources_Breeze
@@ -59306,6 +59293,19 @@ references:
   isSpec: "True"
   fullName: Properties.Resources.Resources.TrafficLight
   nameWithType: Resources.TrafficLight
+- uid: Properties.Resources.Resources.Trance
+  name: Trance
+  href: api/Properties.Resources.Resources.html#Properties_Resources_Resources_Trance
+  commentId: P:Properties.Resources.Resources.Trance
+  fullName: Properties.Resources.Resources.Trance
+  nameWithType: Resources.Trance
+- uid: Properties.Resources.Resources.Trance*
+  name: Trance
+  href: api/Properties.Resources.Resources.html#Properties_Resources_Resources_Trance_
+  commentId: Overload:Properties.Resources.Resources.Trance
+  isSpec: "True"
+  fullName: Properties.Resources.Resources.Trance
+  nameWithType: Resources.Trance
 - uid: Properties.Resources.Resources.Ubuntu
   name: Ubuntu
   href: api/Properties.Resources.Resources.html#Properties_Resources_Resources_Ubuntu
