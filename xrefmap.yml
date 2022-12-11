@@ -10460,38 +10460,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Debugging.Testing.Facades.ListCodepages.TestName
   nameWithType: ListCodepages.TestName
-- uid: KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables
-  name: ListCompilerVariables
-  href: api/KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.html
-  commentId: T:KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables
-  fullName: KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables
-  nameWithType: ListCompilerVariables
-- uid: KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.Run
-  name: Run()
-  href: api/KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.html#KS_Kernel_Debugging_Testing_Facades_ListCompilerVariables_Run
-  commentId: M:KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.Run
-  fullName: KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.Run()
-  nameWithType: ListCompilerVariables.Run()
-- uid: KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.Run*
-  name: Run
-  href: api/KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.html#KS_Kernel_Debugging_Testing_Facades_ListCompilerVariables_Run_
-  commentId: Overload:KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.Run
-  isSpec: "True"
-  fullName: KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.Run
-  nameWithType: ListCompilerVariables.Run
-- uid: KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.TestName
-  name: TestName
-  href: api/KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.html#KS_Kernel_Debugging_Testing_Facades_ListCompilerVariables_TestName
-  commentId: P:KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.TestName
-  fullName: KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.TestName
-  nameWithType: ListCompilerVariables.TestName
-- uid: KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.TestName*
-  name: TestName
-  href: api/KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.html#KS_Kernel_Debugging_Testing_Facades_ListCompilerVariables_TestName_
-  commentId: Overload:KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.TestName
-  isSpec: "True"
-  fullName: KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.TestName
-  nameWithType: ListCompilerVariables.TestName
 - uid: KS.Kernel.Debugging.Testing.Facades.ListCultures
   name: ListCultures
   href: api/KS.Kernel.Debugging.Testing.Facades.ListCultures.html
@@ -13636,19 +13604,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.KernelTools.GeneratePanicDump
   nameWithType: KernelTools.GeneratePanicDump
-- uid: KS.Kernel.KernelTools.GetCompilerVars
-  name: GetCompilerVars()
-  href: api/KS.Kernel.KernelTools.html#KS_Kernel_KernelTools_GetCompilerVars
-  commentId: M:KS.Kernel.KernelTools.GetCompilerVars
-  fullName: KS.Kernel.KernelTools.GetCompilerVars()
-  nameWithType: KernelTools.GetCompilerVars()
-- uid: KS.Kernel.KernelTools.GetCompilerVars*
-  name: GetCompilerVars
-  href: api/KS.Kernel.KernelTools.html#KS_Kernel_KernelTools_GetCompilerVars_
-  commentId: Overload:KS.Kernel.KernelTools.GetCompilerVars
-  isSpec: "True"
-  fullName: KS.Kernel.KernelTools.GetCompilerVars
-  nameWithType: KernelTools.GetCompilerVars
 - uid: KS.Kernel.KernelTools.InitEverything
   name: InitEverything()
   href: api/KS.Kernel.KernelTools.html#KS_Kernel_KernelTools_InitEverything

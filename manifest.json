@@ -1829,18 +1829,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ListCompilerVariables.html",
-          "hash": "MMypMWHdFzDF7sw9KXRY50Q0HrRr8MkUnR/JQPOc8oU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ListCultures.yml",
       "output": {
         ".html": {
@@ -2469,7 +2457,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.html",
-          "hash": "LBoAEvTd6oGrJWBtgL0/4ZZ2oPY45CruJlsbO+Lrteo="
+          "hash": "KLbeJAtlwtsvGLppL81srweZbyJcKnWcTsLTCKMYmbE="
         }
       },
       "is_incremental": false,
@@ -2481,7 +2469,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.TestFacade.html",
-          "hash": "KTfoF3tDgLOmspTvmznN86VSvye4hJyueEghBcwZd6M="
+          "hash": "WDuGzcunhqj86BjSeTcVh43tXpjfr/PRkDPSR7wAUpU="
         }
       },
       "is_incremental": false,
@@ -2493,7 +2481,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.TestInteractive.html",
-          "hash": "B+E7U4qy0Rs1bclALqeFGh52VYaOu/YXpF/x51KDq0g="
+          "hash": "5q/NY25AwIIMEdgfVH6YWtaopCtA7bNpAi4rGXVv1NI="
         }
       },
       "is_incremental": false,
@@ -2673,7 +2661,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.KernelTools.html",
-          "hash": "iCaRosfnLNPf5GY3VIpDRKLqscOozaQgYfFLvIfO0wA="
+          "hash": "PzhBk47rB3svh94hhADrCYDmJILiqU/bBpc7u6L9Os0="
         }
       },
       "is_incremental": false,
@@ -12024,7 +12012,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "HwEMrbo8K/3+SX9MBAhtbp/HawqCHxFTgF+8CHrbomw="
+          "hash": "gmDz52usI1ZlLD1CrdaYGUxy4lX2v3qpApmOJlI2Wzs="
         }
       },
       "is_incremental": false,
@@ -14962,7 +14950,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Compatibility-Notes-for-Third-Generation-KS.html",
-          "hash": "+IaG0R68fhp/Wt+LdGv/Xq+g0GOT0eDX/pk+rt95V0s="
+          "hash": "2DN+OKOFa0LwzWhYhycpda4RNsmEvqm0m+4c9J0CkwQ="
         }
       },
       "is_incremental": false,
@@ -15085,7 +15073,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1000,
+          "total_file_count": 999,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
