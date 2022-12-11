@@ -1967,6 +1967,92 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Inputs.Input.ReadLineUnsafe
   nameWithType: Input.ReadLineUnsafe
+- uid: KS.ConsoleBase.Inputs.InputChoiceInfo
+  name: InputChoiceInfo
+  href: api/KS.ConsoleBase.Inputs.InputChoiceInfo.html
+  commentId: T:KS.ConsoleBase.Inputs.InputChoiceInfo
+  fullName: KS.ConsoleBase.Inputs.InputChoiceInfo
+  nameWithType: InputChoiceInfo
+- uid: KS.ConsoleBase.Inputs.InputChoiceInfo.#ctor(System.String,System.String)
+  name: InputChoiceInfo(String, String)
+  href: api/KS.ConsoleBase.Inputs.InputChoiceInfo.html#KS_ConsoleBase_Inputs_InputChoiceInfo__ctor_System_String_System_String_
+  commentId: M:KS.ConsoleBase.Inputs.InputChoiceInfo.#ctor(System.String,System.String)
+  fullName: KS.ConsoleBase.Inputs.InputChoiceInfo.InputChoiceInfo(System.String, System.String)
+  nameWithType: InputChoiceInfo.InputChoiceInfo(String, String)
+- uid: KS.ConsoleBase.Inputs.InputChoiceInfo.#ctor(System.String,System.String,System.String)
+  name: InputChoiceInfo(String, String, String)
+  href: api/KS.ConsoleBase.Inputs.InputChoiceInfo.html#KS_ConsoleBase_Inputs_InputChoiceInfo__ctor_System_String_System_String_System_String_
+  commentId: M:KS.ConsoleBase.Inputs.InputChoiceInfo.#ctor(System.String,System.String,System.String)
+  fullName: KS.ConsoleBase.Inputs.InputChoiceInfo.InputChoiceInfo(System.String, System.String, System.String)
+  nameWithType: InputChoiceInfo.InputChoiceInfo(String, String, String)
+- uid: KS.ConsoleBase.Inputs.InputChoiceInfo.#ctor*
+  name: InputChoiceInfo
+  href: api/KS.ConsoleBase.Inputs.InputChoiceInfo.html#KS_ConsoleBase_Inputs_InputChoiceInfo__ctor_
+  commentId: Overload:KS.ConsoleBase.Inputs.InputChoiceInfo.#ctor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Inputs.InputChoiceInfo.InputChoiceInfo
+  nameWithType: InputChoiceInfo.InputChoiceInfo
+- uid: KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceDescription
+  name: ChoiceDescription
+  href: api/KS.ConsoleBase.Inputs.InputChoiceInfo.html#KS_ConsoleBase_Inputs_InputChoiceInfo_ChoiceDescription
+  commentId: P:KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceDescription
+  fullName: KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceDescription
+  nameWithType: InputChoiceInfo.ChoiceDescription
+- uid: KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceDescription*
+  name: ChoiceDescription
+  href: api/KS.ConsoleBase.Inputs.InputChoiceInfo.html#KS_ConsoleBase_Inputs_InputChoiceInfo_ChoiceDescription_
+  commentId: Overload:KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceDescription
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceDescription
+  nameWithType: InputChoiceInfo.ChoiceDescription
+- uid: KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceName
+  name: ChoiceName
+  href: api/KS.ConsoleBase.Inputs.InputChoiceInfo.html#KS_ConsoleBase_Inputs_InputChoiceInfo_ChoiceName
+  commentId: P:KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceName
+  fullName: KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceName
+  nameWithType: InputChoiceInfo.ChoiceName
+- uid: KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceName*
+  name: ChoiceName
+  href: api/KS.ConsoleBase.Inputs.InputChoiceInfo.html#KS_ConsoleBase_Inputs_InputChoiceInfo_ChoiceName_
+  commentId: Overload:KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceName
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceName
+  nameWithType: InputChoiceInfo.ChoiceName
+- uid: KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceTitle
+  name: ChoiceTitle
+  href: api/KS.ConsoleBase.Inputs.InputChoiceInfo.html#KS_ConsoleBase_Inputs_InputChoiceInfo_ChoiceTitle
+  commentId: P:KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceTitle
+  fullName: KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceTitle
+  nameWithType: InputChoiceInfo.ChoiceTitle
+- uid: KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceTitle*
+  name: ChoiceTitle
+  href: api/KS.ConsoleBase.Inputs.InputChoiceInfo.html#KS_ConsoleBase_Inputs_InputChoiceInfo_ChoiceTitle_
+  commentId: Overload:KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceTitle
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Inputs.InputChoiceInfo.ChoiceTitle
+  nameWithType: InputChoiceInfo.ChoiceTitle
+- uid: KS.ConsoleBase.Inputs.InputChoiceTools
+  name: InputChoiceTools
+  href: api/KS.ConsoleBase.Inputs.InputChoiceTools.html
+  commentId: T:KS.ConsoleBase.Inputs.InputChoiceTools
+  fullName: KS.ConsoleBase.Inputs.InputChoiceTools
+  nameWithType: InputChoiceTools
+- uid: KS.ConsoleBase.Inputs.InputChoiceTools.GetInputChoices(System.String,System.String[])
+  name: GetInputChoices(String, String[])
+  href: api/KS.ConsoleBase.Inputs.InputChoiceTools.html#KS_ConsoleBase_Inputs_InputChoiceTools_GetInputChoices_System_String_System_String___
+  commentId: M:KS.ConsoleBase.Inputs.InputChoiceTools.GetInputChoices(System.String,System.String[])
+  name.vb: GetInputChoices(String, String())
+  fullName: KS.ConsoleBase.Inputs.InputChoiceTools.GetInputChoices(System.String, System.String[])
+  fullName.vb: KS.ConsoleBase.Inputs.InputChoiceTools.GetInputChoices(System.String, System.String())
+  nameWithType: InputChoiceTools.GetInputChoices(String, String[])
+  nameWithType.vb: InputChoiceTools.GetInputChoices(String, String())
+- uid: KS.ConsoleBase.Inputs.InputChoiceTools.GetInputChoices*
+  name: GetInputChoices
+  href: api/KS.ConsoleBase.Inputs.InputChoiceTools.html#KS_ConsoleBase_Inputs_InputChoiceTools_GetInputChoices_
+  commentId: Overload:KS.ConsoleBase.Inputs.InputChoiceTools.GetInputChoices
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Inputs.InputChoiceTools.GetInputChoices
+  nameWithType: InputChoiceTools.GetInputChoices
 - uid: KS.ConsoleBase.Inputs.Styles
   name: KS.ConsoleBase.Inputs.Styles
   href: api/KS.ConsoleBase.Inputs.Styles.html
@@ -2015,6 +2101,24 @@ references:
   commentId: F:KS.ConsoleBase.Inputs.Styles.ChoiceStyle.DefaultChoiceOutputType
   fullName: KS.ConsoleBase.Inputs.Styles.ChoiceStyle.DefaultChoiceOutputType
   nameWithType: ChoiceStyle.DefaultChoiceOutputType
+- uid: KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(System.String,System.Collections.Generic.List{KS.ConsoleBase.Inputs.InputChoiceInfo},KS.ConsoleBase.Inputs.Styles.ChoiceStyle.ChoiceOutputType,System.Boolean)
+  name: PromptChoice(String, List<InputChoiceInfo>, ChoiceStyle.ChoiceOutputType, Boolean)
+  href: api/KS.ConsoleBase.Inputs.Styles.ChoiceStyle.html#KS_ConsoleBase_Inputs_Styles_ChoiceStyle_PromptChoice_System_String_System_Collections_Generic_List_KS_ConsoleBase_Inputs_InputChoiceInfo__KS_ConsoleBase_Inputs_Styles_ChoiceStyle_ChoiceOutputType_System_Boolean_
+  commentId: M:KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(System.String,System.Collections.Generic.List{KS.ConsoleBase.Inputs.InputChoiceInfo},KS.ConsoleBase.Inputs.Styles.ChoiceStyle.ChoiceOutputType,System.Boolean)
+  name.vb: PromptChoice(String, List(Of InputChoiceInfo), ChoiceStyle.ChoiceOutputType, Boolean)
+  fullName: KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(System.String, System.Collections.Generic.List<KS.ConsoleBase.Inputs.InputChoiceInfo>, KS.ConsoleBase.Inputs.Styles.ChoiceStyle.ChoiceOutputType, System.Boolean)
+  fullName.vb: KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(System.String, System.Collections.Generic.List(Of KS.ConsoleBase.Inputs.InputChoiceInfo), KS.ConsoleBase.Inputs.Styles.ChoiceStyle.ChoiceOutputType, System.Boolean)
+  nameWithType: ChoiceStyle.PromptChoice(String, List<InputChoiceInfo>, ChoiceStyle.ChoiceOutputType, Boolean)
+  nameWithType.vb: ChoiceStyle.PromptChoice(String, List(Of InputChoiceInfo), ChoiceStyle.ChoiceOutputType, Boolean)
+- uid: KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(System.String,System.Collections.Generic.List{KS.ConsoleBase.Inputs.InputChoiceInfo},System.Collections.Generic.List{KS.ConsoleBase.Inputs.InputChoiceInfo},KS.ConsoleBase.Inputs.Styles.ChoiceStyle.ChoiceOutputType,System.Boolean)
+  name: PromptChoice(String, List<InputChoiceInfo>, List<InputChoiceInfo>, ChoiceStyle.ChoiceOutputType, Boolean)
+  href: api/KS.ConsoleBase.Inputs.Styles.ChoiceStyle.html#KS_ConsoleBase_Inputs_Styles_ChoiceStyle_PromptChoice_System_String_System_Collections_Generic_List_KS_ConsoleBase_Inputs_InputChoiceInfo__System_Collections_Generic_List_KS_ConsoleBase_Inputs_InputChoiceInfo__KS_ConsoleBase_Inputs_Styles_ChoiceStyle_ChoiceOutputType_System_Boolean_
+  commentId: M:KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(System.String,System.Collections.Generic.List{KS.ConsoleBase.Inputs.InputChoiceInfo},System.Collections.Generic.List{KS.ConsoleBase.Inputs.InputChoiceInfo},KS.ConsoleBase.Inputs.Styles.ChoiceStyle.ChoiceOutputType,System.Boolean)
+  name.vb: PromptChoice(String, List(Of InputChoiceInfo), List(Of InputChoiceInfo), ChoiceStyle.ChoiceOutputType, Boolean)
+  fullName: KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(System.String, System.Collections.Generic.List<KS.ConsoleBase.Inputs.InputChoiceInfo>, System.Collections.Generic.List<KS.ConsoleBase.Inputs.InputChoiceInfo>, KS.ConsoleBase.Inputs.Styles.ChoiceStyle.ChoiceOutputType, System.Boolean)
+  fullName.vb: KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(System.String, System.Collections.Generic.List(Of KS.ConsoleBase.Inputs.InputChoiceInfo), System.Collections.Generic.List(Of KS.ConsoleBase.Inputs.InputChoiceInfo), KS.ConsoleBase.Inputs.Styles.ChoiceStyle.ChoiceOutputType, System.Boolean)
+  nameWithType: ChoiceStyle.PromptChoice(String, List<InputChoiceInfo>, List<InputChoiceInfo>, ChoiceStyle.ChoiceOutputType, Boolean)
+  nameWithType.vb: ChoiceStyle.PromptChoice(String, List(Of InputChoiceInfo), List(Of InputChoiceInfo), ChoiceStyle.ChoiceOutputType, Boolean)
 - uid: KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(System.String,System.String,KS.ConsoleBase.Inputs.Styles.ChoiceStyle.ChoiceOutputType,System.Boolean)
   name: PromptChoice(String, String, ChoiceStyle.ChoiceOutputType, Boolean)
   href: api/KS.ConsoleBase.Inputs.Styles.ChoiceStyle.html#KS_ConsoleBase_Inputs_Styles_ChoiceStyle_PromptChoice_System_String_System_String_KS_ConsoleBase_Inputs_Styles_ChoiceStyle_ChoiceOutputType_System_Boolean_
@@ -2071,6 +2175,24 @@ references:
   commentId: T:KS.ConsoleBase.Inputs.Styles.SelectionStyle
   fullName: KS.ConsoleBase.Inputs.Styles.SelectionStyle
   nameWithType: SelectionStyle
+- uid: KS.ConsoleBase.Inputs.Styles.SelectionStyle.PromptSelection(System.String,System.Collections.Generic.List{KS.ConsoleBase.Inputs.InputChoiceInfo})
+  name: PromptSelection(String, List<InputChoiceInfo>)
+  href: api/KS.ConsoleBase.Inputs.Styles.SelectionStyle.html#KS_ConsoleBase_Inputs_Styles_SelectionStyle_PromptSelection_System_String_System_Collections_Generic_List_KS_ConsoleBase_Inputs_InputChoiceInfo__
+  commentId: M:KS.ConsoleBase.Inputs.Styles.SelectionStyle.PromptSelection(System.String,System.Collections.Generic.List{KS.ConsoleBase.Inputs.InputChoiceInfo})
+  name.vb: PromptSelection(String, List(Of InputChoiceInfo))
+  fullName: KS.ConsoleBase.Inputs.Styles.SelectionStyle.PromptSelection(System.String, System.Collections.Generic.List<KS.ConsoleBase.Inputs.InputChoiceInfo>)
+  fullName.vb: KS.ConsoleBase.Inputs.Styles.SelectionStyle.PromptSelection(System.String, System.Collections.Generic.List(Of KS.ConsoleBase.Inputs.InputChoiceInfo))
+  nameWithType: SelectionStyle.PromptSelection(String, List<InputChoiceInfo>)
+  nameWithType.vb: SelectionStyle.PromptSelection(String, List(Of InputChoiceInfo))
+- uid: KS.ConsoleBase.Inputs.Styles.SelectionStyle.PromptSelection(System.String,System.Collections.Generic.List{KS.ConsoleBase.Inputs.InputChoiceInfo},System.Collections.Generic.List{KS.ConsoleBase.Inputs.InputChoiceInfo})
+  name: PromptSelection(String, List<InputChoiceInfo>, List<InputChoiceInfo>)
+  href: api/KS.ConsoleBase.Inputs.Styles.SelectionStyle.html#KS_ConsoleBase_Inputs_Styles_SelectionStyle_PromptSelection_System_String_System_Collections_Generic_List_KS_ConsoleBase_Inputs_InputChoiceInfo__System_Collections_Generic_List_KS_ConsoleBase_Inputs_InputChoiceInfo__
+  commentId: M:KS.ConsoleBase.Inputs.Styles.SelectionStyle.PromptSelection(System.String,System.Collections.Generic.List{KS.ConsoleBase.Inputs.InputChoiceInfo},System.Collections.Generic.List{KS.ConsoleBase.Inputs.InputChoiceInfo})
+  name.vb: PromptSelection(String, List(Of InputChoiceInfo), List(Of InputChoiceInfo))
+  fullName: KS.ConsoleBase.Inputs.Styles.SelectionStyle.PromptSelection(System.String, System.Collections.Generic.List<KS.ConsoleBase.Inputs.InputChoiceInfo>, System.Collections.Generic.List<KS.ConsoleBase.Inputs.InputChoiceInfo>)
+  fullName.vb: KS.ConsoleBase.Inputs.Styles.SelectionStyle.PromptSelection(System.String, System.Collections.Generic.List(Of KS.ConsoleBase.Inputs.InputChoiceInfo), System.Collections.Generic.List(Of KS.ConsoleBase.Inputs.InputChoiceInfo))
+  nameWithType: SelectionStyle.PromptSelection(String, List<InputChoiceInfo>, List<InputChoiceInfo>)
+  nameWithType.vb: SelectionStyle.PromptSelection(String, List(Of InputChoiceInfo), List(Of InputChoiceInfo))
 - uid: KS.ConsoleBase.Inputs.Styles.SelectionStyle.PromptSelection(System.String,System.String)
   name: PromptSelection(String, String)
   href: api/KS.ConsoleBase.Inputs.Styles.SelectionStyle.html#KS_ConsoleBase_Inputs_Styles_SelectionStyle_PromptSelection_System_String_System_String_
