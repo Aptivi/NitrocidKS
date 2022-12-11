@@ -13623,19 +13623,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.KernelTools.CheckDebugSymbols
   nameWithType: KernelTools.CheckDebugSymbols
-- uid: KS.Kernel.KernelTools.FactoryReset
-  name: FactoryReset()
-  href: api/KS.Kernel.KernelTools.html#KS_Kernel_KernelTools_FactoryReset
-  commentId: M:KS.Kernel.KernelTools.FactoryReset
-  fullName: KS.Kernel.KernelTools.FactoryReset()
-  nameWithType: KernelTools.FactoryReset()
-- uid: KS.Kernel.KernelTools.FactoryReset*
-  name: FactoryReset
-  href: api/KS.Kernel.KernelTools.html#KS_Kernel_KernelTools_FactoryReset_
-  commentId: Overload:KS.Kernel.KernelTools.FactoryReset
-  isSpec: "True"
-  fullName: KS.Kernel.KernelTools.FactoryReset
-  nameWithType: KernelTools.FactoryReset
 - uid: KS.Kernel.KernelTools.GeneratePanicDump(System.String,KS.Kernel.KernelErrorLevel,System.Exception)
   name: GeneratePanicDump(String, KernelErrorLevel, Exception)
   href: api/KS.Kernel.KernelTools.html#KS_Kernel_KernelTools_GeneratePanicDump_System_String_KS_Kernel_KernelErrorLevel_System_Exception_
