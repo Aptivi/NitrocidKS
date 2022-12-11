@@ -35736,12 +35736,12 @@ references:
   commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Boolean)
   fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double, System.Int32, System.Int32, System.Int32, System.Boolean)
   nameWithType: ProgressBarColor.WriteProgress(Double, Int32, Int32, Int32, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Color,Color,Color,System.Boolean)
-  name: WriteProgress(Double, Int32, Int32, Int32, Int32, Color, Color, Color, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_Color_Color_Color_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Color,Color,Color,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double, System.Int32, System.Int32, System.Int32, System.Int32, Color, Color, Color, System.Boolean)
-  nameWithType: ProgressBarColor.WriteProgress(Double, Int32, Int32, Int32, Int32, Color, Color, Color, Boolean)
+- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Color,Color,Color,System.Boolean,System.Boolean)
+  name: WriteProgress(Double, Int32, Int32, Int32, Int32, Color, Color, Color, Boolean, Boolean)
+  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_Color_Color_Color_System_Boolean_System_Boolean_
+  commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Color,Color,Color,System.Boolean,System.Boolean)
+  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double, System.Int32, System.Int32, System.Int32, System.Int32, Color, Color, Color, System.Boolean, System.Boolean)
+  nameWithType: ProgressBarColor.WriteProgress(Double, Int32, Int32, Int32, Int32, Color, Color, Color, Boolean, Boolean)
 - uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Color,Color,System.Boolean)
   name: WriteProgress(Double, Int32, Int32, Int32, Int32, Color, Color, Boolean)
   href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_Color_Color_System_Boolean_
@@ -35754,12 +35754,12 @@ references:
   commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Color,System.Boolean)
   fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double, System.Int32, System.Int32, System.Int32, System.Int32, Color, System.Boolean)
   nameWithType: ProgressBarColor.WriteProgress(Double, Int32, Int32, Int32, Int32, Color, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,ConsoleColors,ConsoleColors,ConsoleColors,System.Boolean)
-  name: WriteProgress(Double, Int32, Int32, Int32, Int32, ConsoleColors, ConsoleColors, ConsoleColors, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_ConsoleColors_ConsoleColors_ConsoleColors_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,ConsoleColors,ConsoleColors,ConsoleColors,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double, System.Int32, System.Int32, System.Int32, System.Int32, ConsoleColors, ConsoleColors, ConsoleColors, System.Boolean)
-  nameWithType: ProgressBarColor.WriteProgress(Double, Int32, Int32, Int32, Int32, ConsoleColors, ConsoleColors, ConsoleColors, Boolean)
+- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,ConsoleColors,ConsoleColors,ConsoleColors,System.Boolean,System.Boolean)
+  name: WriteProgress(Double, Int32, Int32, Int32, Int32, ConsoleColors, ConsoleColors, ConsoleColors, Boolean, Boolean)
+  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_ConsoleColors_ConsoleColors_ConsoleColors_System_Boolean_System_Boolean_
+  commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,ConsoleColors,ConsoleColors,ConsoleColors,System.Boolean,System.Boolean)
+  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double, System.Int32, System.Int32, System.Int32, System.Int32, ConsoleColors, ConsoleColors, ConsoleColors, System.Boolean, System.Boolean)
+  nameWithType: ProgressBarColor.WriteProgress(Double, Int32, Int32, Int32, Int32, ConsoleColors, ConsoleColors, ConsoleColors, Boolean, Boolean)
 - uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,ConsoleColors,ConsoleColors,System.Boolean)
   name: WriteProgress(Double, Int32, Int32, Int32, Int32, ConsoleColors, ConsoleColors, Boolean)
   href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_ConsoleColors_ConsoleColors_System_Boolean_
@@ -35772,12 +35772,12 @@ references:
   commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,ConsoleColors,System.Boolean)
   fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double, System.Int32, System.Int32, System.Int32, System.Int32, ConsoleColors, System.Boolean)
   nameWithType: ProgressBarColor.WriteProgress(Double, Int32, Int32, Int32, Int32, ConsoleColors, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean)
-  name: WriteProgress(Double, Int32, Int32, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes, ColorTools.ColTypes, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_KS_ConsoleBase_Colors_ColorTools_ColTypes_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double, System.Int32, System.Int32, System.Int32, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, KS.ConsoleBase.Colors.ColorTools.ColTypes, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Boolean)
-  nameWithType: ProgressBarColor.WriteProgress(Double, Int32, Int32, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes, ColorTools.ColTypes, Boolean)
+- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean,System.Boolean)
+  name: WriteProgress(Double, Int32, Int32, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes, ColorTools.ColTypes, Boolean, Boolean)
+  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_KS_ConsoleBase_Colors_ColorTools_ColTypes_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_Boolean_System_Boolean_
+  commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean,System.Boolean)
+  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double, System.Int32, System.Int32, System.Int32, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, KS.ConsoleBase.Colors.ColorTools.ColTypes, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Boolean, System.Boolean)
+  nameWithType: ProgressBarColor.WriteProgress(Double, Int32, Int32, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes, ColorTools.ColTypes, Boolean, Boolean)
 - uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean)
   name: WriteProgress(Double, Int32, Int32, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes, Boolean)
   href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_Boolean_
@@ -35815,12 +35815,12 @@ references:
   commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgressPlain(System.Double,System.Int32,System.Int32,System.Int32,System.Boolean)
   fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgressPlain(System.Double, System.Int32, System.Int32, System.Int32, System.Boolean)
   nameWithType: ProgressBarColor.WriteProgressPlain(Double, Int32, Int32, Int32, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgressPlain(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)
-  name: WriteProgressPlain(Double, Int32, Int32, Int32, Int32, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgressPlain_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgressPlain(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgressPlain(System.Double, System.Int32, System.Int32, System.Int32, System.Int32, System.Boolean)
-  nameWithType: ProgressBarColor.WriteProgressPlain(Double, Int32, Int32, Int32, Int32, Boolean)
+- uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgressPlain(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)
+  name: WriteProgressPlain(Double, Int32, Int32, Int32, Int32, Boolean, Boolean)
+  href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgressPlain_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Boolean_
+  commentId: M:KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgressPlain(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)
+  fullName: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgressPlain(System.Double, System.Int32, System.Int32, System.Int32, System.Int32, System.Boolean, System.Boolean)
+  nameWithType: ProgressBarColor.WriteProgressPlain(Double, Int32, Int32, Int32, Int32, Boolean, Boolean)
 - uid: KS.Misc.Writers.FancyWriters.ProgressBarColor.WriteProgressPlain*
   name: WriteProgressPlain
   href: api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html#KS_Misc_Writers_FancyWriters_ProgressBarColor_WriteProgressPlain_
@@ -36117,122 +36117,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Writers.FancyWriters.TableColor.WriteTable
   nameWithType: TableColor.WriteTable
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor
-  name: TargetedProgressBarColor
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html
-  commentId: T:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor
-  nameWithType: TargetedProgressBarColor
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,Color,Color,System.Boolean)
-  name: WriteProgressTargeted(Double, Int32, Int32, Color, Color, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargeted_System_Double_System_Int32_System_Int32_Color_Color_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,Color,Color,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double, System.Int32, System.Int32, Color, Color, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargeted(Double, Int32, Int32, Color, Color, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,Color,System.Boolean)
-  name: WriteProgressTargeted(Double, Int32, Int32, Color, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargeted_System_Double_System_Int32_System_Int32_Color_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,Color,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double, System.Int32, System.Int32, Color, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargeted(Double, Int32, Int32, Color, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,ConsoleColors,ConsoleColors,System.Boolean)
-  name: WriteProgressTargeted(Double, Int32, Int32, ConsoleColors, ConsoleColors, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargeted_System_Double_System_Int32_System_Int32_ConsoleColors_ConsoleColors_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,ConsoleColors,ConsoleColors,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double, System.Int32, System.Int32, ConsoleColors, ConsoleColors, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargeted(Double, Int32, Int32, ConsoleColors, ConsoleColors, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,ConsoleColors,System.Boolean)
-  name: WriteProgressTargeted(Double, Int32, Int32, ConsoleColors, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargeted_System_Double_System_Int32_System_Int32_ConsoleColors_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,ConsoleColors,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double, System.Int32, System.Int32, ConsoleColors, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargeted(Double, Int32, Int32, ConsoleColors, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean)
-  name: WriteProgressTargeted(Double, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargeted_System_Double_System_Int32_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double, System.Int32, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargeted(Double, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean)
-  name: WriteProgressTargeted(Double, Int32, Int32, ColorTools.ColTypes, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargeted_System_Double_System_Int32_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double, System.Int32, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargeted(Double, Int32, Int32, ColorTools.ColTypes, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Boolean)
-  name: WriteProgressTargeted(Double, Int32, Int32, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargeted_System_Double_System_Int32_System_Int32_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double, System.Int32, System.Int32, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargeted(Double, Int32, Int32, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Int32,Color,Color,System.Boolean)
-  name: WriteProgressTargeted(Double, Int32, Int32, Int32, Color, Color, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargeted_System_Double_System_Int32_System_Int32_System_Int32_Color_Color_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Int32,Color,Color,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double, System.Int32, System.Int32, System.Int32, Color, Color, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargeted(Double, Int32, Int32, Int32, Color, Color, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Int32,Color,System.Boolean)
-  name: WriteProgressTargeted(Double, Int32, Int32, Int32, Color, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargeted_System_Double_System_Int32_System_Int32_System_Int32_Color_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Int32,Color,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double, System.Int32, System.Int32, System.Int32, Color, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargeted(Double, Int32, Int32, Int32, Color, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Int32,ConsoleColors,ConsoleColors,System.Boolean)
-  name: WriteProgressTargeted(Double, Int32, Int32, Int32, ConsoleColors, ConsoleColors, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargeted_System_Double_System_Int32_System_Int32_System_Int32_ConsoleColors_ConsoleColors_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Int32,ConsoleColors,ConsoleColors,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double, System.Int32, System.Int32, System.Int32, ConsoleColors, ConsoleColors, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargeted(Double, Int32, Int32, Int32, ConsoleColors, ConsoleColors, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Int32,ConsoleColors,System.Boolean)
-  name: WriteProgressTargeted(Double, Int32, Int32, Int32, ConsoleColors, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargeted_System_Double_System_Int32_System_Int32_System_Int32_ConsoleColors_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Int32,ConsoleColors,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double, System.Int32, System.Int32, System.Int32, ConsoleColors, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargeted(Double, Int32, Int32, Int32, ConsoleColors, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean)
-  name: WriteProgressTargeted(Double, Int32, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargeted_System_Double_System_Int32_System_Int32_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double, System.Int32, System.Int32, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargeted(Double, Int32, Int32, Int32, ColorTools.ColTypes, ColorTools.ColTypes, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean)
-  name: WriteProgressTargeted(Double, Int32, Int32, Int32, ColorTools.ColTypes, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargeted_System_Double_System_Int32_System_Int32_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double, System.Int32, System.Int32, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargeted(Double, Int32, Int32, Int32, ColorTools.ColTypes, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Int32,System.Boolean)
-  name: WriteProgressTargeted(Double, Int32, Int32, Int32, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargeted_System_Double_System_Int32_System_Int32_System_Int32_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double,System.Int32,System.Int32,System.Int32,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted(System.Double, System.Int32, System.Int32, System.Int32, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargeted(Double, Int32, Int32, Int32, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted*
-  name: WriteProgressTargeted
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargeted_
-  commentId: Overload:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted
-  isSpec: "True"
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargeted
-  nameWithType: TargetedProgressBarColor.WriteProgressTargeted
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargetedPlain(System.Double,System.Int32,System.Int32,System.Boolean)
-  name: WriteProgressTargetedPlain(Double, Int32, Int32, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargetedPlain_System_Double_System_Int32_System_Int32_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargetedPlain(System.Double,System.Int32,System.Int32,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargetedPlain(System.Double, System.Int32, System.Int32, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargetedPlain(Double, Int32, Int32, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargetedPlain(System.Double,System.Int32,System.Int32,System.Int32,System.Boolean)
-  name: WriteProgressTargetedPlain(Double, Int32, Int32, Int32, Boolean)
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargetedPlain_System_Double_System_Int32_System_Int32_System_Int32_System_Boolean_
-  commentId: M:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargetedPlain(System.Double,System.Int32,System.Int32,System.Int32,System.Boolean)
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargetedPlain(System.Double, System.Int32, System.Int32, System.Int32, System.Boolean)
-  nameWithType: TargetedProgressBarColor.WriteProgressTargetedPlain(Double, Int32, Int32, Int32, Boolean)
-- uid: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargetedPlain*
-  name: WriteProgressTargetedPlain
-  href: api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html#KS_Misc_Writers_FancyWriters_TargetedProgressBarColor_WriteProgressTargetedPlain_
-  commentId: Overload:KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargetedPlain
-  isSpec: "True"
-  fullName: KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.WriteProgressTargetedPlain
-  nameWithType: TargetedProgressBarColor.WriteProgressTargetedPlain
 - uid: KS.Misc.Writers.FancyWriters.Tools
   name: KS.Misc.Writers.FancyWriters.Tools
   href: api/KS.Misc.Writers.FancyWriters.Tools.html

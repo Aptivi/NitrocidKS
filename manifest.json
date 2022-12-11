@@ -5709,7 +5709,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.FancyWriters.ProgressBarColor.html",
-          "hash": "ZJ7DTnfk7I0iEkwSF7nibo0+oQWv7ZVsolLr9PPoXpU="
+          "hash": "UBEubGAKHWcOU9ZlPW0woh0Pnde8ZHh5kla+DsaH4Yg="
         }
       },
       "is_incremental": false,
@@ -5746,18 +5746,6 @@
         ".html": {
           "relative_path": "api/KS.Misc.Writers.FancyWriters.TableColor.html",
           "hash": "scKvwxOJEy+Xm3m/mzqqhVEATOmnuS1APGz8M9Fe2b8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Writers.FancyWriters.TargetedProgressBarColor.html",
-          "hash": "28x7Qzl2gpXFNymeGdX8GR/ayV4DNzO2L4HsyKYzJoA="
         }
       },
       "is_incremental": false,
@@ -5817,7 +5805,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.FancyWriters.html",
-          "hash": "v1fNIgWHEw4i9zyGOKaTVSjaGPeIk+JIQijjaLUcE9U="
+          "hash": "ehVboaez7mF1+x+BHzfTr3xWuV9HhZxcOtvxhf/IvvM="
         }
       },
       "is_incremental": false,
@@ -12012,7 +12000,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "gmDz52usI1ZlLD1CrdaYGUxy4lX2v3qpApmOJlI2Wzs="
+          "hash": "1Du6lwgposJHSS7VDhj/CyE8WoQPrdizljBp+iOkjss="
         }
       },
       "is_incremental": false,
@@ -15073,7 +15061,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 999,
+          "total_file_count": 998,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
