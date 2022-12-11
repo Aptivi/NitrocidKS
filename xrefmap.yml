@@ -2840,6 +2840,15 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWherePlain
   nameWithType: BaseConsoleDriver.WriteWherePlain
+- uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,System.Object[])
+  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Int32, Object[])
+  href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,System.Object[])
+  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Int32, Object())
+  fullName: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, System.Object[])
+  fullName.vb: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, System.Object())
+  nameWithType: BaseConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Int32, Object[])
+  nameWithType.vb: BaseConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Int32, Object())
 - uid: KS.Drivers.Console.Consoles.BaseConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
   name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
   href: api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___
@@ -4434,6 +4443,15 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Console.IConsoleDriver.WriteWherePlain
   nameWithType: IConsoleDriver.WriteWherePlain
+- uid: KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,System.Object[])
+  name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Int32, Object[])
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,System.Object[])
+  name.vb: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Int32, Object())
+  fullName: KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, System.Object[])
+  fullName.vb: KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, System.Object())
+  nameWithType: IConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Int32, Object[])
+  nameWithType.vb: IConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Int32, Object())
 - uid: KS.Drivers.Console.IConsoleDriver.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
   name: WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Object[])
   href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___
@@ -35112,6 +35130,60 @@ references:
   fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Object())
   nameWithType: TextWriterWhereSlowColor.WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, ColorTools.ColTypes, Object[])
   nameWithType.vb: TextWriterWhereSlowColor.WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, ColorTools.ColTypes, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,Color,Color,System.Object[])
+  name: WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, Color, Color, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereSlowColor_WriteWhereSlowly_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Int32_Color_Color_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,Color,Color,System.Object[])
+  name.vb: WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, Color, Color, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, Color, Color, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, Color, Color, System.Object())
+  nameWithType: TextWriterWhereSlowColor.WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, Color, Color, Object[])
+  nameWithType.vb: TextWriterWhereSlowColor.WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, Color, Color, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,Color,System.Object[])
+  name: WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, Color, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereSlowColor_WriteWhereSlowly_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Int32_Color_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,Color,System.Object[])
+  name.vb: WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, Color, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, Color, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, Color, System.Object())
+  nameWithType: TextWriterWhereSlowColor.WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, Color, Object[])
+  nameWithType.vb: TextWriterWhereSlowColor.WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, Color, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,ConsoleColors,ConsoleColors,System.Object[])
+  name: WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ConsoleColors, ConsoleColors, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereSlowColor_WriteWhereSlowly_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Int32_ConsoleColors_ConsoleColors_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,ConsoleColors,ConsoleColors,System.Object[])
+  name.vb: WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ConsoleColors, ConsoleColors, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, ConsoleColors, ConsoleColors, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, ConsoleColors, ConsoleColors, System.Object())
+  nameWithType: TextWriterWhereSlowColor.WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ConsoleColors, ConsoleColors, Object[])
+  nameWithType.vb: TextWriterWhereSlowColor.WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ConsoleColors, ConsoleColors, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,ConsoleColors,System.Object[])
+  name: WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ConsoleColors, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereSlowColor_WriteWhereSlowly_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Int32_ConsoleColors_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,ConsoleColors,System.Object[])
+  name.vb: WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ConsoleColors, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, ConsoleColors, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, ConsoleColors, System.Object())
+  nameWithType: TextWriterWhereSlowColor.WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ConsoleColors, Object[])
+  nameWithType.vb: TextWriterWhereSlowColor.WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ConsoleColors, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Object[])
+  name: WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ColorTools.ColTypes, ColorTools.ColTypes, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereSlowColor_WriteWhereSlowly_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Object[])
+  name.vb: WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ColorTools.ColTypes, ColorTools.ColTypes, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Object())
+  nameWithType: TextWriterWhereSlowColor.WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ColorTools.ColTypes, ColorTools.ColTypes, Object[])
+  nameWithType.vb: TextWriterWhereSlowColor.WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ColorTools.ColTypes, ColorTools.ColTypes, Object())
+- uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Object[])
+  name: WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ColorTools.ColTypes, Object[])
+  href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereSlowColor_WriteWhereSlowly_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_Object___
+  commentId: M:KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.Object[])
+  name.vb: WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ColorTools.ColTypes, Object())
+  fullName: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Object[])
+  fullName.vb: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly(System.String, System.Boolean, System.Int32, System.Int32, System.Double, System.Boolean, System.Int32, KS.ConsoleBase.Colors.ColorTools.ColTypes, System.Object())
+  nameWithType: TextWriterWhereSlowColor.WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ColorTools.ColTypes, Object[])
+  nameWithType.vb: TextWriterWhereSlowColor.WriteWhereSlowly(String, Boolean, Int32, Int32, Double, Boolean, Int32, ColorTools.ColTypes, Object())
 - uid: KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowly*
   name: WriteWhereSlowly
   href: api/KS.Misc.Writers.ConsoleWriters.TextWriterWhereSlowColor.html#KS_Misc_Writers_ConsoleWriters_TextWriterWhereSlowColor_WriteWhereSlowly_
