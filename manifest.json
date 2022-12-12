@@ -633,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.DriverHandler.html",
-          "hash": "RffXxBtIfh9THX/ET5grB17JpHQuIZnyh5b7v2w9tp4="
+          "hash": "IvpSpaMP5YsnxxMCNyNbjRQ50aMl8OxVOI2oSScL5VY="
         }
       },
       "is_incremental": false,
@@ -645,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.DriverTypes.html",
-          "hash": "mH7eRItY6HAqUCJPygtXQAs2U0M4RiSK148dbkZaKZ0="
+          "hash": "GF4aLVHNfd4N7fGimI1NWufra1eJuwqcujnXGkFdBMg="
         }
       },
       "is_incremental": false,
@@ -797,6 +797,66 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Filesystem.BaseFilesystemDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Filesystem.BaseFilesystemDriver.html",
+          "hash": "xbupo0UMicFtL8hMDXBW0bWskq6K4d1Yr2W9FYH00es="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Filesystem.Bases.DefaultFilesystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Filesystem.Bases.DefaultFilesystem.html",
+          "hash": "ee3SeBcWXZnAO8w1rJ059rXpicKVBhNHiYrwMCn2pbk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Filesystem.Bases.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Filesystem.Bases.html",
+          "hash": "iKZ7mppPJibsbpnb7rXwxT0yun06+gjuf/HAhqrjYhU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Filesystem.IFilesystemDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Filesystem.IFilesystemDriver.html",
+          "hash": "M82aoUlaIkF7MdmtfBUNOIiEUCS3T36vcSOwW6cFOq8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Filesystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Filesystem.html",
+          "hash": "RFeH6hHrQPUOrFxQtixk6ymGSYQK875thKR506XnsOM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.IDriver.yml",
       "output": {
         ".html": {
@@ -813,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Network.BaseNetworkDriver.html",
-          "hash": "EIjAIoYE0ObK9K2SpXtzSkKJEOucQkhSNxTrfP8IF6c="
+          "hash": "Pc8uQnT6KCl1LMbaO6Z0VcdcLcZtMPDs7a+CWPJtcqE="
         }
       },
       "is_incremental": false,
@@ -849,7 +909,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Network.INetworkDriver.html",
-          "hash": "2zlt+dpL/HA4jkZ9Sl/H6CUnf4NR3UUs0gdW47/LsWo="
+          "hash": "yELHQxZxTH3ccln6gFPay7l3GCFInlSBfXW+DiHUfHg="
         }
       },
       "is_incremental": false,
@@ -969,7 +1029,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Attributes.AttributeManager.html",
-          "hash": "byETlvNUgIMHjJaDrkIgsjmCXvpz2wVpL2aZDxTL+g4="
+          "hash": "RspGyMmF6/AwqsPP1AUyu2mJ28Qmaz+YmtOIa+ldU8Q="
         }
       },
       "is_incremental": false,
@@ -1041,7 +1101,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Folders.Listing.html",
-          "hash": "nofeehGZP6UwB9ygZXbuyBmZVfaDX7AMORDe+wBlYH4="
+          "hash": "mEAVXuoKorXtiy0R1tZmzISV5kAPkoFSSauhblxpQdE="
         }
       },
       "is_incremental": false,
@@ -1125,7 +1185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.LineEndings.LineEndingsConverter.html",
-          "hash": "YkUIS+HnqpMjIhPzUm8EA51wgVhhDCX6D3NuQgBpwk0="
+          "hash": "0ziR2PWC/cLfbv34OQmlTdWH+f/j31VPe+vucrhdziM="
         }
       },
       "is_incremental": false,
@@ -1137,7 +1197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.LineEndings.LineEndingsTools.html",
-          "hash": "fA3tUJFAaT7UWSZEi2mi3Bs1EwgFlKJSx1ZGbrgNPm4="
+          "hash": "IGRzYgwWDt1zJuHqBudQW7IyEBUwKROvUq+6POXwqgc="
         }
       },
       "is_incremental": false,
@@ -1161,7 +1221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Operations.Combination.html",
-          "hash": "A16lkrFlxWzN2r2s0XAtLq6n6Y4yKgZOXut14wmLyBQ="
+          "hash": "MYxazjPq0MygIyWPQJk1LAmr7YYoSxxLlZcQGP+iWmU="
         }
       },
       "is_incremental": false,
@@ -1173,7 +1233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Operations.Copying.html",
-          "hash": "kNa6tRgrjbn0AeMBO6rHVFLqYG6f6cXX9+OGjbYD0ds="
+          "hash": "PBL9K6mt8zZB9B0NU6LuacNKEengwuvS6KGtNnaqlNo="
         }
       },
       "is_incremental": false,
@@ -1185,7 +1245,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Operations.Making.html",
-          "hash": "/ruqlsm4c8Y3cxv8/ZzgjQbN5EA5zW8fRKawxSrsQ5Q="
+          "hash": "7c/S71JWuSbU+XsHNQn72nYRZ53krPurPPBfSCv74aY="
         }
       },
       "is_incremental": false,
@@ -1197,7 +1257,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Operations.Moving.html",
-          "hash": "8nuz11ih0wTmS28pYHNQE0vGZgRSWTVahm4tzRP2kQQ="
+          "hash": "RJOEAXfm7BeqY/6ejRAId+QDbaYjX2FXv1ZSCVzF9GA="
         }
       },
       "is_incremental": false,
@@ -1209,7 +1269,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Operations.Removing.html",
-          "hash": "36+nZo+DffJGrfdAqRfmlbnxaN40kfCDr+sy4tMrIl8="
+          "hash": "GvsP+k2jv5dsH6PBCmteHOnIOB7D6qyURO9Y8P8xCDc="
         }
       },
       "is_incremental": false,
@@ -1233,7 +1293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.PathLookup.PathLookupTools.html",
-          "hash": "eKH1qjYBCw8A03Nkge9X/N/zjPcPaEE7ARxjKjcQRiA="
+          "hash": "D+UiMeyYsuLufk2L2Pb9y0q4aQAs5s3dEg+XoUjUj6o="
         }
       },
       "is_incremental": false,
@@ -1269,7 +1329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Print.DirectoryInfoPrinter.html",
-          "hash": "Xft2NH3+gATnLIncuxikg6VsQnJ+VcUjc8LVqa2WgMU="
+          "hash": "WwzDUfU9JnuuN1LB3odJtHBQHhoqjNEW7bsZ1zsTeYI="
         }
       },
       "is_incremental": false,
@@ -1281,7 +1341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Print.FileContentPrinter.html",
-          "hash": "9dk8VKrm4fyD6EiHZ2BxeB9dFPhbEUs7+8ssZjmgge0="
+          "hash": "m0OQERpGbYHVlzWPzLMyTpdIDtAsusT72gvrpF1F3dU="
         }
       },
       "is_incremental": false,
@@ -1293,7 +1353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Print.FileInfoPrinter.html",
-          "hash": "PQssUEuKtsNot4NNj3JCf3onwlQ+i3T0Kyrp8ZuKRcU="
+          "hash": "ulobft9iKHqhAYNFX9NXRqWah9//hBVFLxLX8BmBUpk="
         }
       },
       "is_incremental": false,
@@ -1317,7 +1377,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Querying.Checking.html",
-          "hash": "31M+zRJNoxUkAlJnSgCY0bGSfwCIyvUslRPX3eOivS4="
+          "hash": "5Tg8KW577dugCANTj+ebVuD+KWU73FwXqbgQIuSfNRc="
         }
       },
       "is_incremental": false,
@@ -1329,7 +1389,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Querying.Getting.html",
-          "hash": "6JijwL4m1suc6HjOSf6MwHiAjpOC2l6oQlLW6x2uJQE="
+          "hash": "Frv9a0EKeCqa5wC3hsAUNX7PH8YW6fPt+I8ndC5l83k="
         }
       },
       "is_incremental": false,
@@ -1341,7 +1401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Querying.Parsing.html",
-          "hash": "MLNO74v29E9tQNvG9dEetV8XgNp+3WHsXXZgETomcXE="
+          "hash": "yqdpJvw5cURXt41e3D2TAPqarXbgn43zDkbHUxAK/54="
         }
       },
       "is_incremental": false,
@@ -1353,7 +1413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Querying.Searching.html",
-          "hash": "Qtsy6eGd6Q+Q3oRfAkXZuKyHpXALbYpL5NpOQCN6f6g="
+          "hash": "m8YfCmsFNQXUiPjOYGhJ7TSLYF6OqoF+984RqvXYHvQ="
         }
       },
       "is_incremental": false,
@@ -1365,7 +1425,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Querying.SizeGetter.html",
-          "hash": "YxmA3nIJCtl0LxNYrUJ52cVUuPUbDiKoqRQ+ZmDJxM8="
+          "hash": "AGeou63iNzHUgXv3ayVYQ2HsjzjapSDxu4YkmdmIqkk="
         }
       },
       "is_incremental": false,
@@ -1389,7 +1449,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Read.FileRead.html",
-          "hash": "BMd0yTA+iFmdj5S3OjYEZA93Dzu0lJOmRWDcRqSVYa0="
+          "hash": "+ruTKEmpXgJkwhMKt+VzNRw4EH2V/nzQoYTMat1tRZ0="
         }
       },
       "is_incremental": false,
@@ -12000,7 +12060,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "1Du6lwgposJHSS7VDhj/CyE8WoQPrdizljBp+iOkjss="
+          "hash": "I3V4Ra2B7b6tYihpJHeKUTCeeK4JYcRFypeT+0i2quM="
         }
       },
       "is_incremental": false,
@@ -15061,7 +15121,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 998,
+          "total_file_count": 1003,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

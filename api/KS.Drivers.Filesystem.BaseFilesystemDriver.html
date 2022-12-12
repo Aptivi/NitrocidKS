@@ -1,0 +1,2679 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseFilesystemDriver
+   | Kernel Simulator API - Aptivi </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseFilesystemDriver
+   | Kernel Simulator API - Aptivi ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver">
+  
+  
+  <h1 id="KS_Drivers_Filesystem_BaseFilesystemDriver" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver" class="text-break">Class BaseFilesystemDriver
+  </h1>
+  <div class="markdown level0 summary"><p>Base Filesystem driver</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BaseFilesystemDriver</span></div>
+      <div class="level2"><a class="xref" href="KS.Drivers.Filesystem.Bases.DefaultFilesystem.html">DefaultFilesystem</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Drivers.Filesystem.IFilesystemDriver.html">IFilesystemDriver</a></div>
+    <div><a class="xref" href="KS.Drivers.IDriver.html">IDriver</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Drivers.Filesystem.html">KS.Drivers.Filesystem</a></h6>
+  <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
+  <h5 id="KS_Drivers_Filesystem_BaseFilesystemDriver_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseFilesystemDriver : IFilesystemDriver, IDriver</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_DriverName.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.DriverName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L54">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_DriverName_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.DriverName*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_DriverName" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.DriverName">DriverName</h4>
+  <div class="markdown level1 summary"><p>Driver name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string DriverName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_DriverType.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.DriverType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L57">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_DriverType_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.DriverType*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_DriverType" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.DriverType">DriverType</h4>
+  <div class="markdown level1 summary"><p>Driver type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DriverTypes DriverType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Drivers.DriverTypes.html">DriverTypes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_AddAttributeToFile_System_String_System_IO_FileAttributes_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.AddAttributeToFile(System.String%2CSystem.IO.FileAttributes)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L60">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_AddAttributeToFile_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.AddAttributeToFile*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_AddAttributeToFile_System_String_System_IO_FileAttributes_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.AddAttributeToFile(System.String,System.IO.FileAttributes)">AddAttributeToFile(String, FileAttributes)</h4>
+  <div class="markdown level1 summary"><p>Adds attribute to file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddAttributeToFile(string FilePath, FileAttributes Attributes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">FilePath</span></td>
+        <td><p>File path</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileAttributes</span></td>
+        <td><span class="parametername">Attributes</span></td>
+        <td><p>Attributes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_AddToPathLookup_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.AddToPathLookup(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L72">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_AddToPathLookup_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.AddToPathLookup*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_AddToPathLookup_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.AddToPathLookup(System.String)">AddToPathLookup(String)</h4>
+  <div class="markdown level1 summary"><p>Adds a (non-)neutralized path to lookup</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddToPathLookup(string Path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_AddToPathLookup_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.AddToPathLookup(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L82">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_AddToPathLookup_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.AddToPathLookup*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_AddToPathLookup_System_String_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.AddToPathLookup(System.String,System.String)">AddToPathLookup(String, String)</h4>
+  <div class="markdown level1 summary"><p>Adds a (non-)neutralized path to lookup</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddToPathLookup(string Path, string RootPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">RootPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_CombineBinaryFiles_System_String_System_String___.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.CombineBinaryFiles(System.String%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L93">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_CombineBinaryFiles_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.CombineBinaryFiles*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_CombineBinaryFiles_System_String_System_String___" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.CombineBinaryFiles(System.String,System.String[])">CombineBinaryFiles(String, String[])</h4>
+  <div class="markdown level1 summary"><p>Combines the binary files and puts the combined output to the array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] CombineBinaryFiles(string Input, string[] TargetInputs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Input</span></td>
+        <td><p>An input file</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">TargetInputs</span></td>
+        <td><p>The target inputs to merge</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_CombineTextFiles_System_String_System_String___.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.CombineTextFiles(System.String%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L126">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_CombineTextFiles_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.CombineTextFiles*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_CombineTextFiles_System_String_System_String___" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.CombineTextFiles(System.String,System.String[])">CombineTextFiles(String, String[])</h4>
+  <div class="markdown level1 summary"><p>Combines the text files and puts the combined output to the array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string[] CombineTextFiles(string Input, string[] TargetInputs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Input</span></td>
+        <td><p>An input file</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">TargetInputs</span></td>
+        <td><p>The target inputs to merge</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_ConvertLineEndings_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.ConvertLineEndings(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L159">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_ConvertLineEndings_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.ConvertLineEndings*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_ConvertLineEndings_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.ConvertLineEndings(System.String)">ConvertLineEndings(String)</h4>
+  <div class="markdown level1 summary"><p>Converts the line endings to the newline style for the current platform</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ConvertLineEndings(string TextFile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">TextFile</span></td>
+        <td><p>Text file name with extension or file path</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_ConvertLineEndings_System_String_KS_Files_LineEndings_FilesystemNewlineStyle_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.ConvertLineEndings(System.String%2CKS.Files.LineEndings.FilesystemNewlineStyle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L163">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_ConvertLineEndings_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.ConvertLineEndings*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_ConvertLineEndings_System_String_KS_Files_LineEndings_FilesystemNewlineStyle_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.ConvertLineEndings(System.String,KS.Files.LineEndings.FilesystemNewlineStyle)">ConvertLineEndings(String, FilesystemNewlineStyle)</h4>
+  <div class="markdown level1 summary"><p>Converts the line endings to the specified newline style</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ConvertLineEndings(string TextFile, FilesystemNewlineStyle LineEndingStyle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">TextFile</span></td>
+        <td><p>Text file name with extension or file path</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.Files.LineEndings.FilesystemNewlineStyle.html">FilesystemNewlineStyle</a></td>
+        <td><span class="parametername">LineEndingStyle</span></td>
+        <td><p>Line ending style</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_CopyDirectory_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.CopyDirectory(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L187">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_CopyDirectory_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.CopyDirectory*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_CopyDirectory_System_String_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.CopyDirectory(System.String,System.String)">CopyDirectory(String, String)</h4>
+  <div class="markdown level1 summary"><p>Copies the directory from source to destination</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CopyDirectory(string Source, string Destination)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Source</span></td>
+        <td><p>Source directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Destination</span></td>
+        <td><p>Target directory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_CopyDirectory_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.CopyDirectory(System.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L191">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_CopyDirectory_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.CopyDirectory*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_CopyDirectory_System_String_System_String_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.CopyDirectory(System.String,System.String,System.Boolean)">CopyDirectory(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Copies the directory from source to destination</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CopyDirectory(string Source, string Destination, bool ShowProgress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Source</span></td>
+        <td><p>Source directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Destination</span></td>
+        <td><p>Target directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ShowProgress</span></td>
+        <td><p>Whether or not to show what files are being copied</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_CopyFileOrDir_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.CopyFileOrDir(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L234">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_CopyFileOrDir_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.CopyFileOrDir*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_CopyFileOrDir_System_String_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.CopyFileOrDir(System.String,System.String)">CopyFileOrDir(String, String)</h4>
+  <div class="markdown level1 summary"><p>Copies a file or directory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CopyFileOrDir(string Source, string Destination)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Source</span></td>
+        <td><p>Source file or directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Destination</span></td>
+        <td><p>Target file or directory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_CreateList_System_String_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.CreateList(System.String%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L276">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_CreateList_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.CreateList*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_CreateList_System_String_System_Boolean_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.CreateList(System.String,System.Boolean,System.Boolean)">CreateList(String, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a list of files and directories</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual List&lt;FileSystemInfo&gt; CreateList(string folder, bool Sorted = false, bool Recursive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">folder</span></td>
+        <td><p>Full path to folder</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">Sorted</span></td>
+        <td><p>Whether the list is sorted or not</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">Recursive</span></td>
+        <td><p>Whether the list is recursive or not</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.IO.FileSystemInfo</span>&gt;</td>
+        <td><p>List of filesystem entries if any. Empty list if folder is not found or is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_DisplayInHex_System_Int64_System_Int64_System_Byte___.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.DisplayInHex(System.Int64%2CSystem.Int64%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L346">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_DisplayInHex_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.DisplayInHex*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_DisplayInHex_System_Int64_System_Int64_System_Byte___" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.DisplayInHex(System.Int64,System.Int64,System.Byte[])">DisplayInHex(Int64, Int64, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Renders the file in hex</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DisplayInHex(long StartByte, long EndByte, byte[] FileByte)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">StartByte</span></td>
+        <td><p>Start byte position</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">EndByte</span></td>
+        <td><p>End byte position</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">FileByte</span></td>
+        <td><p>File content in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_FileExists_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.FileExists(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L408">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_FileExists_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.FileExists*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_FileExists_System_String_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.FileExists(System.String,System.Boolean)">FileExists(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Checks to see if the file exists. Windows 10/11 bug aware.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool FileExists(string File, bool Neutralize = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">File</span></td>
+        <td><p>Target file</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">Neutralize</span></td>
+        <td><p>Whether to neutralize the path</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if exists; False if not. Throws on trying to trigger the Windows 10/11 BSOD/corruption bug</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_FileExistsInPath_System_String_System_String__.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.FileExistsInPath(System.String%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L417">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_FileExistsInPath_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.FileExistsInPath*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_FileExistsInPath_System_String_System_String__" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.FileExistsInPath(System.String,System.String@)">FileExistsInPath(String, ref String)</h4>
+  <div class="markdown level1 summary"><p>Checks to see if the file exists in PATH and writes the result (path to file) to a string variable, if any.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool FileExistsInPath(string FilePath, ref string Result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">FilePath</span></td>
+        <td><p>A full path to file or just a file name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Result</span></td>
+        <td><p>The neutralized path</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if successful; False if unsuccessful</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_FolderExists_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.FolderExists(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L435">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_FolderExists_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.FolderExists*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_FolderExists_System_String_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.FolderExists(System.String,System.Boolean)">FolderExists(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Checks to see if the folder exists. Windows 10/11 bug aware.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool FolderExists(string Folder, bool Neutralize = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Folder</span></td>
+        <td><p>Target folder</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">Neutralize</span></td>
+        <td><p>Whether to neutralize the path</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if exists; False if not. Throws on trying to trigger the Windows 10/11 BSOD/corruption bug</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_GetAllSizesInFolder_System_IO_DirectoryInfo_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.GetAllSizesInFolder(System.IO.DirectoryInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L444">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetAllSizesInFolder_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetAllSizesInFolder*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetAllSizesInFolder_System_IO_DirectoryInfo_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetAllSizesInFolder(System.IO.DirectoryInfo)">GetAllSizesInFolder(DirectoryInfo)</h4>
+  <div class="markdown level1 summary"><p>Gets all file sizes in a folder, depending on the kernel setting <a class="xref" href="KS.Kernel.Flags.html#KS_Kernel_Flags_FullParseMode">FullParseMode</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual long GetAllSizesInFolder(DirectoryInfo DirectoryInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.DirectoryInfo</span></td>
+        <td><span class="parametername">DirectoryInfo</span></td>
+        <td><p>Directory information</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>Directory Size</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_GetAllSizesInFolder_System_IO_DirectoryInfo_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.GetAllSizesInFolder(System.IO.DirectoryInfo%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L448">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetAllSizesInFolder_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetAllSizesInFolder*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetAllSizesInFolder_System_IO_DirectoryInfo_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetAllSizesInFolder(System.IO.DirectoryInfo,System.Boolean)">GetAllSizesInFolder(DirectoryInfo, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets all file sizes in a folder, and optionally parses the entire folder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual long GetAllSizesInFolder(DirectoryInfo DirectoryInfo, bool FullParseMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.DirectoryInfo</span></td>
+        <td><span class="parametername">DirectoryInfo</span></td>
+        <td><p>Directory information</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">FullParseMode</span></td>
+        <td><p>Whether to parse all the directories</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>Directory Size</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_GetFilesystemEntries_System_String_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.GetFilesystemEntries(System.String%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L476">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetFilesystemEntries_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetFilesystemEntries*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetFilesystemEntries_System_String_System_Boolean_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetFilesystemEntries(System.String,System.Boolean,System.Boolean)">GetFilesystemEntries(String, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the filesystem entries of the parent with the specified pattern (wildcards, ...)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string[] GetFilesystemEntries(string Path, bool IsFile = false, bool Recursive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Path</span></td>
+        <td><p>The path, including the pattern</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">IsFile</span></td>
+        <td><p>Is the entry a file?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">Recursive</span></td>
+        <td><p>Whether the list is recursive or not</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>The array of full paths</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_GetFilesystemEntries_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.GetFilesystemEntries(System.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L523">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetFilesystemEntries_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetFilesystemEntries*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetFilesystemEntries_System_String_System_String_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetFilesystemEntries(System.String,System.String,System.Boolean)">GetFilesystemEntries(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the filesystem entries of the parent with the specified pattern (wildcards, ...)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string[] GetFilesystemEntries(string Parent, string Pattern, bool Recursive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Parent</span></td>
+        <td><p>The parent path. It can be neutralized if necessary</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Pattern</span></td>
+        <td><p>The pattern</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">Recursive</span></td>
+        <td><p>Whether the list is recursive or not</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>The array of full paths</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_GetInvalidPathChars.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.GetInvalidPathChars%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L553">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetInvalidPathChars_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetInvalidPathChars*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetInvalidPathChars" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetInvalidPathChars">GetInvalidPathChars()</h4>
+  <div class="markdown level1 summary"><p>Gets all the invalid path characters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual char[] GetInvalidPathChars()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_GetLineEndingFromFile_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.GetLineEndingFromFile(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L568">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetLineEndingFromFile_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetLineEndingFromFile*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetLineEndingFromFile_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetLineEndingFromFile(System.String)">GetLineEndingFromFile(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the line ending style from file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FilesystemNewlineStyle GetLineEndingFromFile(string TextFile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">TextFile</span></td>
+        <td><p>Target text file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Files.LineEndings.FilesystemNewlineStyle.html">FilesystemNewlineStyle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_GetNumberedFileName_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.GetNumberedFileName(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L620">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetNumberedFileName_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetNumberedFileName*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetNumberedFileName_System_String_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetNumberedFileName(System.String,System.String)">GetNumberedFileName(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the file name with the file number suffix applied</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetNumberedFileName(string path, string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Path to the directory that the generated numbered file name will situate</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name with an extension</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Numbered file name with the file number suffix applied in this format: [filename]-[number].[ext]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_GetPathList.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.GetPathList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L643">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetPathList_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetPathList*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_GetPathList" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.GetPathList">GetPathList()</h4>
+  <div class="markdown level1 summary"><p>Gets the lookup path list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual List&lt;string&gt; GetPathList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_IsBinaryFile_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.IsBinaryFile(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L647">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_IsBinaryFile_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.IsBinaryFile*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_IsBinaryFile_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.IsBinaryFile(System.String)">IsBinaryFile(String)</h4>
+  <div class="markdown level1 summary"><p>Is the file a binary file?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsBinaryFile(string Path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Path</span></td>
+        <td><p>Path to file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_IsJson_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.IsJson(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L669">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_IsJson_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.IsJson*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_IsJson_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.IsJson(System.String)">IsJson(String)</h4>
+  <div class="markdown level1 summary"><p>Is the file a JSON file?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsJson(string Path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Path</span></td>
+        <td><p>Path to file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_MakeDirectory_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.MakeDirectory(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L696">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_MakeDirectory_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.MakeDirectory*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_MakeDirectory_System_String_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.MakeDirectory(System.String,System.Boolean)">MakeDirectory(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Makes a directory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MakeDirectory(string NewDirectory, bool ThrowIfDirectoryExists = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">NewDirectory</span></td>
+        <td><p>New directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ThrowIfDirectoryExists</span></td>
+        <td><p>If directory exists, throw an exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_MakeFile_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.MakeFile(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L715">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_MakeFile_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.MakeFile*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_MakeFile_System_String_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.MakeFile(System.String,System.Boolean)">MakeFile(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Makes a file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MakeFile(string NewFile, bool ThrowIfFileExists = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">NewFile</span></td>
+        <td><p>New file</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ThrowIfFileExists</span></td>
+        <td><p>If file exists, throw an exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_MakeJsonFile_System_String_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.MakeJsonFile(System.String%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L745">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_MakeJsonFile_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.MakeJsonFile*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_MakeJsonFile_System_String_System_Boolean_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.MakeJsonFile(System.String,System.Boolean,System.Boolean)">MakeJsonFile(String, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Makes an empty JSON file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MakeJsonFile(string NewFile, bool ThrowIfFileExists = true, bool useArray = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">NewFile</span></td>
+        <td><p>New JSON file</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ThrowIfFileExists</span></td>
+        <td><p>If file exists, throw an exception.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useArray</span></td>
+        <td><p>Use array instead of object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_MoveDirectory_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.MoveDirectory(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L779">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_MoveDirectory_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.MoveDirectory*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_MoveDirectory_System_String_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.MoveDirectory(System.String,System.String)">MoveDirectory(String, String)</h4>
+  <div class="markdown level1 summary"><p>Moves the directory from source to destination</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MoveDirectory(string Source, string Destination)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Source</span></td>
+        <td><p>Source directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Destination</span></td>
+        <td><p>Target directory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_MoveDirectory_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.MoveDirectory(System.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L783">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_MoveDirectory_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.MoveDirectory*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_MoveDirectory_System_String_System_String_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.MoveDirectory(System.String,System.String,System.Boolean)">MoveDirectory(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Moves the directory from source to destination</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MoveDirectory(string Source, string Destination, bool ShowProgress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Source</span></td>
+        <td><p>Source directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Destination</span></td>
+        <td><p>Target directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ShowProgress</span></td>
+        <td><p>Whether or not to show what files are being moved</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_MoveFileOrDir_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.MoveFileOrDir(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L829">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_MoveFileOrDir_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.MoveFileOrDir*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_MoveFileOrDir_System_String_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.MoveFileOrDir(System.String,System.String)">MoveFileOrDir(String, String)</h4>
+  <div class="markdown level1 summary"><p>Moves a file or directory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MoveFileOrDir(string Source, string Destination)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Source</span></td>
+        <td><p>Source file or directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Destination</span></td>
+        <td><p>Target file or directory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_PrintContents_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.PrintContents(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L871">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_PrintContents_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.PrintContents*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_PrintContents_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.PrintContents(System.String)">PrintContents(String)</h4>
+  <div class="markdown level1 summary"><p>Prints the contents of a file to the console</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PrintContents(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Full path to file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_PrintContents_System_String_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.PrintContents(System.String%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L875">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_PrintContents_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.PrintContents*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_PrintContents_System_String_System_Boolean_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.PrintContents(System.String,System.Boolean,System.Boolean)">PrintContents(String, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Prints the contents of a file to the console</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PrintContents(string filename, bool PrintLineNumbers, bool ForcePlain = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Full path to file with wildcards supported</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">PrintLineNumbers</span></td>
+        <td><p>Whether to also print the line numbers or not</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ForcePlain</span></td>
+        <td><p>Forces binary files to be printed verbatim</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_PrintDirectoryInfo_System_IO_FileSystemInfo_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.PrintDirectoryInfo(System.IO.FileSystemInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L906">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_PrintDirectoryInfo_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.PrintDirectoryInfo*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_PrintDirectoryInfo_System_IO_FileSystemInfo_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.PrintDirectoryInfo(System.IO.FileSystemInfo)">PrintDirectoryInfo(FileSystemInfo)</h4>
+  <div class="markdown level1 summary"><p>Prints the directory information to the console</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PrintDirectoryInfo(FileSystemInfo DirectoryInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileSystemInfo</span></td>
+        <td><span class="parametername">DirectoryInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_PrintDirectoryInfo_System_IO_FileSystemInfo_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.PrintDirectoryInfo(System.IO.FileSystemInfo%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L910">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_PrintDirectoryInfo_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.PrintDirectoryInfo*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_PrintDirectoryInfo_System_IO_FileSystemInfo_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.PrintDirectoryInfo(System.IO.FileSystemInfo,System.Boolean)">PrintDirectoryInfo(FileSystemInfo, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Prints the directory information to the console</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PrintDirectoryInfo(FileSystemInfo DirectoryInfo, bool ShowDirectoryDetails)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileSystemInfo</span></td>
+        <td><span class="parametername">DirectoryInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ShowDirectoryDetails</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_PrintFileInfo_System_IO_FileSystemInfo_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.PrintFileInfo(System.IO.FileSystemInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L940">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_PrintFileInfo_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.PrintFileInfo*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_PrintFileInfo_System_IO_FileSystemInfo_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.PrintFileInfo(System.IO.FileSystemInfo)">PrintFileInfo(FileSystemInfo)</h4>
+  <div class="markdown level1 summary"><p>Prints the file information to the console</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PrintFileInfo(FileSystemInfo FileInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileSystemInfo</span></td>
+        <td><span class="parametername">FileInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_PrintFileInfo_System_IO_FileSystemInfo_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.PrintFileInfo(System.IO.FileSystemInfo%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L944">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_PrintFileInfo_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.PrintFileInfo*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_PrintFileInfo_System_IO_FileSystemInfo_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.PrintFileInfo(System.IO.FileSystemInfo,System.Boolean)">PrintFileInfo(FileSystemInfo, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Prints the file information to the console</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PrintFileInfo(FileSystemInfo FileInfo, bool ShowFileDetails)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileSystemInfo</span></td>
+        <td><span class="parametername">FileInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ShowFileDetails</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_ReadAllBytes_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllBytes(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L980">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_ReadAllBytes_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllBytes*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_ReadAllBytes_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllBytes(System.String)">ReadAllBytes(String)</h4>
+  <div class="markdown level1 summary"><p>Reads all the bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] ReadAllBytes(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Path to the file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_ReadAllLinesNoBlock_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllLinesNoBlock(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L989">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_ReadAllLinesNoBlock_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllLinesNoBlock*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_ReadAllLinesNoBlock_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllLinesNoBlock(System.String)">ReadAllLinesNoBlock(String)</h4>
+  <div class="markdown level1 summary"><p>Opens a file, reads all lines, and returns the array of lines</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string[] ReadAllLinesNoBlock(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Path to file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>Array of lines</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_ReadContents_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.ReadContents(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L1004">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_ReadContents_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.ReadContents*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_ReadContents_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.ReadContents(System.String)">ReadContents(String)</h4>
+  <div class="markdown level1 summary"><p>Reads the contents of a file and writes it to the array. This is blocking and will put a lock on the file until read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string[] ReadContents(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Full path to file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>An array full of file contents</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveAttributeFromFile_System_String_System_IO_FileAttributes_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveAttributeFromFile(System.String%2CSystem.IO.FileAttributes)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L1020">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveAttributeFromFile_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveAttributeFromFile*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveAttributeFromFile_System_String_System_IO_FileAttributes_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveAttributeFromFile(System.String,System.IO.FileAttributes)">RemoveAttributeFromFile(String, FileAttributes)</h4>
+  <div class="markdown level1 summary"><p>Removes attribute from file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveAttributeFromFile(string FilePath, FileAttributes Attributes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">FilePath</span></td>
+        <td><p>File path</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileAttributes</span></td>
+        <td><span class="parametername">Attributes</span></td>
+        <td><p>Attributes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveDirectory_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveDirectory(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L1035">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveDirectory_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveDirectory*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveDirectory_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveDirectory(System.String)">RemoveDirectory(String)</h4>
+  <div class="markdown level1 summary"><p>Removes a directory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveDirectory(string Target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Target</span></td>
+        <td><p>Target directory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveDirectory_System_String_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveDirectory(System.String%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L1039">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveDirectory_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveDirectory*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveDirectory_System_String_System_Boolean_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveDirectory(System.String,System.Boolean,System.Boolean)">RemoveDirectory(String, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Removes a directory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveDirectory(string Target, bool ShowProgress, bool secureRemove = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Target</span></td>
+        <td><p>Target directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ShowProgress</span></td>
+        <td><p>Whether or not to show what files are being removed</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">secureRemove</span></td>
+        <td><p>Securely remove file by filling it with zeroes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveFile_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveFile(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L1078">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveFile_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveFile*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveFile_System_String_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveFile(System.String,System.Boolean)">RemoveFile(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Removes a file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveFile(string Target, bool secureRemove = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Target</span></td>
+        <td><p>Target directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">secureRemove</span></td>
+        <td><p>Securely remove file by filling it with zeroes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveFileOrDir_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveFileOrDir(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L1099">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveFileOrDir_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveFileOrDir*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveFileOrDir_System_String_System_Boolean_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveFileOrDir(System.String,System.Boolean)">RemoveFileOrDir(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Removes file or directory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveFileOrDir(string Target, bool secureRemove = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Target</span></td>
+        <td><p>Path to file or directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">secureRemove</span></td>
+        <td><p>Securely remove file by filling it with zeroes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveFromPathLookup_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveFromPathLookup(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L1119">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveFromPathLookup_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveFromPathLookup*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveFromPathLookup_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveFromPathLookup(System.String)">RemoveFromPathLookup(String)</h4>
+  <div class="markdown level1 summary"><p>Removes an existing (non-)neutralized path from lookup</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveFromPathLookup(string Path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveFromPathLookup_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveFromPathLookup(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L1129">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveFromPathLookup_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveFromPathLookup*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_RemoveFromPathLookup_System_String_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveFromPathLookup(System.String,System.String)">RemoveFromPathLookup(String, String)</h4>
+  <div class="markdown level1 summary"><p>Removes an existing (non-)neutralized path from lookup</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveFromPathLookup(string Path, string RootPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">RootPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_SearchFileForString_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.SearchFileForString(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L1140">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_SearchFileForString_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.SearchFileForString*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_SearchFileForString_System_String_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.SearchFileForString(System.String,System.String)">SearchFileForString(String, String)</h4>
+  <div class="markdown level1 summary"><p>Searches a file for string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual List&lt;string&gt; SearchFileForString(string FilePath, string StringLookup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">FilePath</span></td>
+        <td><p>File path</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">StringLookup</span></td>
+        <td><p>String to find</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The list if successful; null if unsuccessful</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_SearchFileForStringRegexp_System_String_System_Text_RegularExpressions_Regex_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.SearchFileForStringRegexp(System.String%2CSystem.Text.RegularExpressions.Regex)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L1169">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_SearchFileForStringRegexp_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.SearchFileForStringRegexp*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_SearchFileForStringRegexp_System_String_System_Text_RegularExpressions_Regex_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.SearchFileForStringRegexp(System.String,System.Text.RegularExpressions.Regex)">SearchFileForStringRegexp(String, Regex)</h4>
+  <div class="markdown level1 summary"><p>Searches a file for string using regexp</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual List&lt;string&gt; SearchFileForStringRegexp(string FilePath, Regex StringLookup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">FilePath</span></td>
+        <td><p>File path</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.RegularExpressions.Regex</span></td>
+        <td><span class="parametername">StringLookup</span></td>
+        <td><p>String to find</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The list if successful; null if unsuccessful</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_SortSelector_System_IO_FileSystemInfo_System_Int32_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.SortSelector(System.IO.FileSystemInfo%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L1198">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_SortSelector_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.SortSelector*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_SortSelector_System_IO_FileSystemInfo_System_Int32_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.SortSelector(System.IO.FileSystemInfo,System.Int32)">SortSelector(FileSystemInfo, Int32)</h4>
+  <div class="markdown level1 summary"><p>Helper for sorting filesystem entries</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string SortSelector(FileSystemInfo FileSystemEntry, int MaxLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileSystemInfo</span></td>
+        <td><span class="parametername">FileSystemEntry</span></td>
+        <td><p>File system entry</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">MaxLength</span></td>
+        <td><p>For size, how many zeroes to pad the size string to the left?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_TryParseFileName_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.TryParseFileName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L1231">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_TryParseFileName_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.TryParseFileName*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_TryParseFileName_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.TryParseFileName(System.String)">TryParseFileName(String)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the file name (For full paths, use <a class="xref" href="KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_TryParsePath_System_String_">TryParsePath(String)</a> instead.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryParseFileName(string Name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Name</span></td>
+        <td><p>The file name to be parsed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if successful; false if unsuccessful</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver_TryParsePath_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver.TryParsePath(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L1247">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_TryParsePath_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.TryParsePath*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_TryParsePath_System_String_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.TryParsePath(System.String)">TryParsePath(String)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the path (For file names and only names, use <a class="xref" href="KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_TryParseFileName_System_String_">TryParseFileName(String)</a> instead.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryParsePath(string Path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Path</span></td>
+        <td><p>The path to be parsed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if successful; false if unsuccessful</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Drivers.Filesystem.IFilesystemDriver.html">IFilesystemDriver</a>
+  </div>
+  <div>
+      <a class="xref" href="KS.Drivers.IDriver.html">IDriver</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Filesystem_BaseFilesystemDriver.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.BaseFilesystemDriver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Filesystem/BaseFilesystemDriver.cs/#L51" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
