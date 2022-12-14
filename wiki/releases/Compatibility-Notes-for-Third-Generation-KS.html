@@ -291,6 +291,8 @@
 </ul>
 <h5 id="removed-getcompilervars">Removed GetCompilerVars</h5>
 <p>This was only useful in conditions where getting the compiler variables for determining the kernel milestone is needed, which is seldom needed by mods. We've removed it.</p>
+<h5 id="migrated-encryptors-to-kernel-drivers">Migrated encryptors to Kernel Drivers</h5>
+<p>The kernel drivers are benefical, so we decided to give the encryptors a chance to appear in kernel drivers. This caused us to remove <code>EncryptionAlgorithms</code> and <code>IEncryptor</code> and replace them with <code>IEncryptionDriver</code>, handled by the kernel driver handler.</p>
 </article>
           </div>
           
@@ -298,9 +300,6 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/DocGen/wiki/releases/Compatibility-Notes-for-Third-Generation-KS.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

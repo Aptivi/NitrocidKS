@@ -89,27 +89,80 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">SHA1</span></div>
+    <div class="level1"><a class="xref" href="KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.html">BaseEncryptionDriver</a></div>
+    <div class="level2"><span class="xref">SHA1</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="KS.Drivers.Encryption.IEncryptor.html">IEncryptor</a></div>
+    <div><a class="xref" href="KS.Drivers.Encryption.IEncryptionDriver.html">IEncryptionDriver</a></div>
+    <div><a class="xref" href="KS.Drivers.IDriver.html">IDriver</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Drivers.Encryption.Encryptors.html">KS.Drivers.Encryption.Encryptors</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Drivers_Encryption_Encryptors_SHA1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SHA1 : IEncryptor</code></pre>
+    <pre><code class="lang-csharp hljs">public class SHA1 : BaseEncryptionDriver, IEncryptionDriver, IDriver</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Encryption_Encryptors_SHA1_EmptyHash.md&amp;value=---%0Auid%3A%20KS.Drivers.Encryption.Encryptors.SHA1.EmptyHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Encryption/Encryptors/SHA1.cs/#L33">View Source</a>
-  </span>
+  
+  
+  <a id="KS_Drivers_Encryption_Encryptors_SHA1_DriverName_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.DriverName*"></a>
+  <h4 id="KS_Drivers_Encryption_Encryptors_SHA1_DriverName" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.DriverName">DriverName</h4>
+  <div class="markdown level1 summary"><p>Driver name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string DriverName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.html#KS_Drivers_Encryption_Encryptors_BaseEncryptionDriver_DriverName">BaseEncryptionDriver.DriverName</a></div>
+  
+  
+  <a id="KS_Drivers_Encryption_Encryptors_SHA1_DriverType_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.DriverType*"></a>
+  <h4 id="KS_Drivers_Encryption_Encryptors_SHA1_DriverType" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.DriverType">DriverType</h4>
+  <div class="markdown level1 summary"><p>Driver type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DriverTypes DriverType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Drivers.DriverTypes.html">DriverTypes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.html#KS_Drivers_Encryption_Encryptors_BaseEncryptionDriver_DriverType">BaseEncryptionDriver.DriverType</a></div>
+  
+  
   <a id="KS_Drivers_Encryption_Encryptors_SHA1_EmptyHash_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.EmptyHash*"></a>
   <h4 id="KS_Drivers_Encryption_Encryptors_SHA1_EmptyHash" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.EmptyHash">EmptyHash</h4>
   <div class="markdown level1 summary"><p>Gets empty hash</p>
@@ -117,7 +170,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string EmptyHash { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string EmptyHash { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -135,13 +188,10 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Encryption_Encryptors_SHA1_HashLength.md&amp;value=---%0Auid%3A%20KS.Drivers.Encryption.Encryptors.SHA1.HashLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Encryption/Encryptors/SHA1.cs/#L36">View Source</a>
-  </span>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.html#KS_Drivers_Encryption_Encryptors_BaseEncryptionDriver_EmptyHash">BaseEncryptionDriver.EmptyHash</a></div>
+  
+  
   <a id="KS_Drivers_Encryption_Encryptors_SHA1_HashLength_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.HashLength*"></a>
   <h4 id="KS_Drivers_Encryption_Encryptors_SHA1_HashLength" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.HashLength">HashLength</h4>
   <div class="markdown level1 summary"><p>The expected hash length</p>
@@ -149,7 +199,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int HashLength { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override int HashLength { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,15 +216,12 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.html#KS_Drivers_Encryption_Encryptors_BaseEncryptionDriver_HashLength">BaseEncryptionDriver.HashLength</a></div>
   <h3 id="methods">Methods
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Encryption_Encryptors_SHA1_GetEncryptedFile_System_IO_Stream_.md&amp;value=---%0Auid%3A%20KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile(System.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Encryption/Encryptors/SHA1.cs/#L39">View Source</a>
-  </span>
+  
+  
   <a id="KS_Drivers_Encryption_Encryptors_SHA1_GetEncryptedFile_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile*"></a>
   <h4 id="KS_Drivers_Encryption_Encryptors_SHA1_GetEncryptedFile_System_IO_Stream_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile(System.IO.Stream)">GetEncryptedFile(Stream)</h4>
   <div class="markdown level1 summary"><p>Encrypts a file</p>
@@ -182,7 +229,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetEncryptedFile(Stream stream)</code></pre>
+    <pre><code class="lang-csharp hljs">public override string GetEncryptedFile(Stream stream)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -218,13 +265,10 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Encryption_Encryptors_SHA1_GetEncryptedFile_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Encryption/Encryptors/SHA1.cs/#L47">View Source</a>
-  </span>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.html#KS_Drivers_Encryption_Encryptors_BaseEncryptionDriver_GetEncryptedFile_System_IO_Stream_">BaseEncryptionDriver.GetEncryptedFile(Stream)</a></div>
+  
+  
   <a id="KS_Drivers_Encryption_Encryptors_SHA1_GetEncryptedFile_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile*"></a>
   <h4 id="KS_Drivers_Encryption_Encryptors_SHA1_GetEncryptedFile_System_String_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile(System.String)">GetEncryptedFile(String)</h4>
   <div class="markdown level1 summary"><p>Encrypts a file</p>
@@ -232,7 +276,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetEncryptedFile(string Path)</code></pre>
+    <pre><code class="lang-csharp hljs">public override string GetEncryptedFile(string Path)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -268,13 +312,10 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Encryption_Encryptors_SHA1_GetEncryptedString_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Encryption/Encryptors/SHA1.cs/#L57">View Source</a>
-  </span>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.html#KS_Drivers_Encryption_Encryptors_BaseEncryptionDriver_GetEncryptedFile_System_String_">BaseEncryptionDriver.GetEncryptedFile(String)</a></div>
+  
+  
   <a id="KS_Drivers_Encryption_Encryptors_SHA1_GetEncryptedString_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedString*"></a>
   <h4 id="KS_Drivers_Encryption_Encryptors_SHA1_GetEncryptedString_System_String_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedString(System.String)">GetEncryptedString(String)</h4>
   <div class="markdown level1 summary"><p>Encrypts a string</p>
@@ -282,7 +323,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetEncryptedString(string str)</code></pre>
+    <pre><code class="lang-csharp hljs">public override string GetEncryptedString(string str)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -318,13 +359,10 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Encryption_Encryptors_SHA1_VerifyHashFromHash_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHash(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Encryption/Encryptors/SHA1.cs/#L65">View Source</a>
-  </span>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.html#KS_Drivers_Encryption_Encryptors_BaseEncryptionDriver_GetEncryptedString_System_String_">BaseEncryptionDriver.GetEncryptedString(String)</a></div>
+  
+  
   <a id="KS_Drivers_Encryption_Encryptors_SHA1_VerifyHashFromHash_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHash*"></a>
   <h4 id="KS_Drivers_Encryption_Encryptors_SHA1_VerifyHashFromHash_System_String_System_String_System_String_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHash(System.String,System.String,System.String)">VerifyHashFromHash(String, String, String)</h4>
   <div class="markdown level1 summary"><p>Verifies the hash sum of a file from expected hash</p>
@@ -332,7 +370,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool VerifyHashFromHash(string FileName, string ExpectedHash, string ActualHash)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool VerifyHashFromHash(string FileName, string ExpectedHash, string ActualHash)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -380,13 +418,10 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Encryption_Encryptors_SHA1_VerifyHashFromHashesFile_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHashesFile(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Encryption/Encryptors/SHA1.cs/#L68">View Source</a>
-  </span>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.html#KS_Drivers_Encryption_Encryptors_BaseEncryptionDriver_VerifyHashFromHash_System_String_System_String_System_String_">BaseEncryptionDriver.VerifyHashFromHash(String, String, String)</a></div>
+  
+  
   <a id="KS_Drivers_Encryption_Encryptors_SHA1_VerifyHashFromHashesFile_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHashesFile*"></a>
   <h4 id="KS_Drivers_Encryption_Encryptors_SHA1_VerifyHashFromHashesFile_System_String_System_String_System_String_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHashesFile(System.String,System.String,System.String)">VerifyHashFromHashesFile(String, String, String)</h4>
   <div class="markdown level1 summary"><p>Verifies the hash sum of a file from hashes file</p>
@@ -394,7 +429,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool VerifyHashFromHashesFile(string FileName, string HashesFile, string ActualHash)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool VerifyHashFromHashesFile(string FileName, string HashesFile, string ActualHash)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -442,13 +477,10 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Encryption_Encryptors_SHA1_VerifyUncalculatedHashFromHash_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHash(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Encryption/Encryptors/SHA1.cs/#L71">View Source</a>
-  </span>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.html#KS_Drivers_Encryption_Encryptors_BaseEncryptionDriver_VerifyHashFromHashesFile_System_String_System_String_System_String_">BaseEncryptionDriver.VerifyHashFromHashesFile(String, String, String)</a></div>
+  
+  
   <a id="KS_Drivers_Encryption_Encryptors_SHA1_VerifyUncalculatedHashFromHash_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHash*"></a>
   <h4 id="KS_Drivers_Encryption_Encryptors_SHA1_VerifyUncalculatedHashFromHash_System_String_System_String_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHash(System.String,System.String)">VerifyUncalculatedHashFromHash(String, String)</h4>
   <div class="markdown level1 summary"><p>Verifies the hash sum of a file from expected hash once the file's hash is calculated.</p>
@@ -456,7 +488,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool VerifyUncalculatedHashFromHash(string FileName, string ExpectedHash)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool VerifyUncalculatedHashFromHash(string FileName, string ExpectedHash)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -498,13 +530,10 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Encryption_Encryptors_SHA1_VerifyUncalculatedHashFromHashesFile_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHashesFile(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Encryption/Encryptors/SHA1.cs/#L74">View Source</a>
-  </span>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.html#KS_Drivers_Encryption_Encryptors_BaseEncryptionDriver_VerifyUncalculatedHashFromHash_System_String_System_String_">BaseEncryptionDriver.VerifyUncalculatedHashFromHash(String, String)</a></div>
+  
+  
   <a id="KS_Drivers_Encryption_Encryptors_SHA1_VerifyUncalculatedHashFromHashesFile_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHashesFile*"></a>
   <h4 id="KS_Drivers_Encryption_Encryptors_SHA1_VerifyUncalculatedHashFromHashesFile_System_String_System_String_" data-uid="KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHashesFile(System.String,System.String)">VerifyUncalculatedHashFromHashesFile(String, String)</h4>
   <div class="markdown level1 summary"><p>Verifies the hash sum of a file from hashes file once the file's hash is calculated.</p>
@@ -512,7 +541,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool VerifyUncalculatedHashFromHashesFile(string FileName, string HashesFile)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool VerifyUncalculatedHashFromHashesFile(string FileName, string HashesFile)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -554,9 +583,14 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.html#KS_Drivers_Encryption_Encryptors_BaseEncryptionDriver_VerifyUncalculatedHashFromHashesFile_System_String_System_String_">BaseEncryptionDriver.VerifyUncalculatedHashFromHashesFile(String, String)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="KS.Drivers.Encryption.IEncryptor.html">IEncryptor</a>
+      <a class="xref" href="KS.Drivers.Encryption.IEncryptionDriver.html">IEncryptionDriver</a>
+  </div>
+  <div>
+      <a class="xref" href="KS.Drivers.IDriver.html">IDriver</a>
   </div>
 </article>
           </div>
@@ -565,12 +599,6 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/new/master/apiSpec/new?filename=KS_Drivers_Encryption_Encryptors_SHA1.md&amp;value=---%0Auid%3A%20KS.Drivers.Encryption.Encryptors.SHA1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/Aptivi/Kernel-Simulator/blob/master/public/Kernel Simulator/Drivers/Encryption/Encryptors/SHA1.cs/#L30" class="contribution-link">View Source</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
