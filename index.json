@@ -1064,6 +1064,16 @@
     "title": "Enum TestStatus | Kernel Simulator API - Aptivi",
     "keywords": "Enum TestStatus Namespace : KS.Kernel.Debugging.Testing Assembly : Kernel Simulator.dll Syntax enum TestStatus Fields Name Description Failed Test failed. Neutral Test is not done yet. Success Successfully tested."
   },
+  "api/KS.Kernel.Debugging.Trace.DebugStackFrame.html": {
+    "href": "api/KS.Kernel.Debugging.Trace.DebugStackFrame.html",
+    "title": "Class DebugStackFrame | Kernel Simulator API - Aptivi",
+    "keywords": "Class DebugStackFrame Inheritance System.Object DebugStackFrame Namespace : KS.Kernel.Debugging.Trace Assembly : Kernel Simulator.dll Syntax class DebugStackFrame Constructors DebugStackFrame() Declaration DebugStackFrame() DebugStackFrame(Int32) Declaration DebugStackFrame(int frameNumber) Parameters Type Name Description System.Int32 frameNumber Properties RoutineColumnNumber Declaration public int RoutineColumnNumber { get; } Property Value Type Description System.Int32 RoutineFileName Declaration public string RoutineFileName { get; } Property Value Type Description System.String RoutineLineNumber Declaration public int RoutineLineNumber { get; } Property Value Type Description System.Int32 RoutineName Declaration public string RoutineName { get; } Property Value Type Description System.String"
+  },
+  "api/KS.Kernel.Debugging.Trace.html": {
+    "href": "api/KS.Kernel.Debugging.Trace.html",
+    "title": "Namespace KS.Kernel.Debugging.Trace | Kernel Simulator API - Aptivi",
+    "keywords": "Namespace KS.Kernel.Debugging.Trace Classes DebugStackFrame"
+  },
   "api/KS.Kernel.Events.EventsManager.html": {
     "href": "api/KS.Kernel.Events.EventsManager.html",
     "title": "Class EventsManager | Kernel Simulator API - Aptivi",
