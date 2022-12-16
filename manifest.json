@@ -8513,18 +8513,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Admin.AdminShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Admin.AdminShellCommon.html",
-          "hash": "AljSoQl8A2tmcPKYpuerwa1yscdCohB7iN/sijKGCc8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.Admin.AdminShellInfo.yml",
       "output": {
         ".html": {
@@ -8589,7 +8577,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Admin.html",
-          "hash": "xwBcMrMlawzBAAQh66mF4NWrYI2M1iC6HPQaYs80TDM="
+          "hash": "M+nUG/yadWY77rNqEAQJlzmmTWaCb22V0tBdolN+S9M="
         }
       },
       "is_incremental": false,
@@ -12060,7 +12048,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "PG5Z9W8kcIf0XNm+6rJHFQ6O8DYaVJmOXE7K6O/dNLc="
+          "hash": "4S+Is6i/hgamKwsfz8CbA6godDETxDSio6yNXgA2yXg="
         }
       },
       "is_incremental": false,
@@ -15121,7 +15109,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1003,
+          "total_file_count": 1002,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

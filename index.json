@@ -3544,11 +3544,6 @@
     "title": "Class AdminShell | Kernel Simulator API - Aptivi",
     "keywords": "Class AdminShell The admin shell Inheritance System.Object BaseShell AdminShell Implements IShell Namespace : KS.Shell.Shells.Admin Assembly : Kernel Simulator.dll Syntax public class AdminShell : BaseShell, IShell Properties Bail If true, will exit the shell Declaration public override bool Bail { get; set; } Property Value Type Description System.Boolean Overrides BaseShell.Bail ShellType The shell type Declaration public override string ShellType { get; } Property Value Type Description System.String Overrides BaseShell.ShellType Methods InitializeShell(Object[]) The shell initializer Declaration public override void InitializeShell(params object[] ShellArgs) Parameters Type Name Description System.Object [] ShellArgs Overrides BaseShell.InitializeShell(Object[]) Implements IShell"
   },
-  "api/KS.Shell.Shells.Admin.AdminShellCommon.html": {
-    "href": "api/KS.Shell.Shells.Admin.AdminShellCommon.html",
-    "title": "Class AdminShellCommon | Kernel Simulator API - Aptivi",
-    "keywords": "Class AdminShellCommon Inheritance System.Object AdminShellCommon Namespace : KS.Shell.Shells.Admin Assembly : Kernel Simulator.dll Syntax static class AdminShellCommon Fields Test_ShutdownFlag Declaration public static bool Test_ShutdownFlag Field Value Type Description System.Boolean"
-  },
   "api/KS.Shell.Shells.Admin.AdminShellInfo.html": {
     "href": "api/KS.Shell.Shells.Admin.AdminShellInfo.html",
     "title": "Class AdminShellInfo | Kernel Simulator API - Aptivi",
@@ -3577,7 +3572,7 @@
   "api/KS.Shell.Shells.Admin.html": {
     "href": "api/KS.Shell.Shells.Admin.html",
     "title": "Namespace KS.Shell.Shells.Admin | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Shell.Shells.Admin Classes AdminShell The admin shell AdminShellCommon AdminShellInfo Common admin shell class"
+    "keywords": "Namespace KS.Shell.Shells.Admin Classes AdminShell The admin shell AdminShellInfo Common admin shell class"
   },
   "api/KS.Shell.Shells.Archive.ArchiveShell.html": {
     "href": "api/KS.Shell.Shells.Archive.ArchiveShell.html",
