@@ -293,6 +293,8 @@
 <p>This was only useful in conditions where getting the compiler variables for determining the kernel milestone is needed, which is seldom needed by mods. We've removed it.</p>
 <h5 id="migrated-encryptors-to-kernel-drivers">Migrated encryptors to Kernel Drivers</h5>
 <p>The kernel drivers are benefical, so we decided to give the encryptors a chance to appear in kernel drivers. This caused us to remove <code>EncryptionAlgorithms</code> and <code>IEncryptor</code> and replace them with <code>IEncryptionDriver</code>, handled by the kernel driver handler.</p>
+<h5 id="removed-twonewlines-argument-from-writelicense">Removed TwoNewlines argument from WriteLicense</h5>
+<p>This argument was unused, so we decided to remove it from <code>WriteLicense()</code>.</p>
 </article>
           </div>
           
