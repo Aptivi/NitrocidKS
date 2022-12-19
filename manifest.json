@@ -3513,7 +3513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Calendar.Reminders.ReminderInfo.html",
-          "hash": "ecrn1PFOdnO7/VR5OaWcdh017FQcx4RVrI+qf5pN5Qs="
+          "hash": "DrEBCwZ0LRHVoKuq3HJxNRjLPhJb/3NoFbYox0UBF1o="
         }
       },
       "is_incremental": false,
@@ -3525,7 +3525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Calendar.Reminders.ReminderManager.html",
-          "hash": "mWGUcCXD8VuHRHI8vRO+lKwEdozcGOecznM2kj/i9DU="
+          "hash": "JFetmT1ztAOuVX1D11dclm3kHJfp673UEdkYWUlyhy4="
         }
       },
       "is_incremental": false,
@@ -3801,7 +3801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Notifications.Notification.html",
-          "hash": "bXhQauZkLT3RR0Zizbiog8cAB4ycL4qzX8mQ3P+l2gI="
+          "hash": "FJZN9CJESQfenCbInjYvAbsSXFGqiFXzouQJUBTnN7Q="
         }
       },
       "is_incremental": false,
@@ -3809,11 +3809,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Notifications.Notifications.NotifPriority.yml",
+      "source_relative_path": "api/KS.Misc.Notifications.NotificationManager.NotifPriority.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Misc.Notifications.Notifications.NotifPriority.html",
-          "hash": "Ng1C9uJu5euRMnjHa37r9zyIfxBe4QDNIA/0nsWQo4c="
+          "relative_path": "api/KS.Misc.Notifications.NotificationManager.NotifPriority.html",
+          "hash": "wg7yVATEdrVAnb4yIGKR4h9VBlJY7o4JeJ9IAvIUCmk="
         }
       },
       "is_incremental": false,
@@ -3821,11 +3821,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Notifications.Notifications.NotifType.yml",
+      "source_relative_path": "api/KS.Misc.Notifications.NotificationManager.NotifType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Misc.Notifications.Notifications.NotifType.html",
-          "hash": "cUSVjwco7uvzsaLdh2VjyJZTtAMep5oRmpYRf/eds/s="
+          "relative_path": "api/KS.Misc.Notifications.NotificationManager.NotifType.html",
+          "hash": "CvhCRSVrepraVrZr1v6xl7jgeyw/7f6XmUlye4+9ZF8="
         }
       },
       "is_incremental": false,
@@ -3833,11 +3833,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Notifications.Notifications.yml",
+      "source_relative_path": "api/KS.Misc.Notifications.NotificationManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Misc.Notifications.Notifications.html",
-          "hash": "RJNTGUmoFOIRqYWgkGXTQe8Yoomq7nn1Iiwr4/PgX1g="
+          "relative_path": "api/KS.Misc.Notifications.NotificationManager.html",
+          "hash": "rp3J+N98fAtDhXQgv72H5PVAa23EDXuiVY6oLbpr620="
         }
       },
       "is_incremental": false,
@@ -3849,7 +3849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Notifications.html",
-          "hash": "fEoepHR0KWXPAnagZRhPmTCOmmVputw42+sMSIU1IQs="
+          "hash": "PWETR+g1DeWyE5/nBXwLz0y2UDscSgZXXowKU5kG2SI="
         }
       },
       "is_incremental": false,
@@ -12060,7 +12060,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "XSp/J0AapY5dgEC6O5OgV/fCnt9FObWgvYbaiXoL5o4="
+          "hash": "znIDHF2PCjosD0eM7zKkaWAboNW1kyRlUOPnYK0vyTY="
         }
       },
       "is_incremental": false,
@@ -14989,7 +14989,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/releases/Compatibility-Notes-for-Third-Generation-KS.html",
-          "hash": "atkWYeirjh9m8YQs3cXrZdfgu7UAODGoT6cC7fakJ98="
+          "hash": "8HdRf+9cGImhFfRXslx4EEeCr9MDIK18XhwrZ+qfUT0="
         }
       },
       "is_incremental": false,
