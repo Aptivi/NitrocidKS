@@ -2597,11 +2597,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Events.EventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Events.EventType.html",
+          "hash": "mVs9olrkdp+kAMDT5Wt7z8h2IRjSQn5WtVmF84iMzM8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Events.EventsManager.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Events.EventsManager.html",
-          "hash": "89gMmnuya/u/zy0MraX8GkDyr2h/NKHsuf79qLmK/Z0="
+          "hash": "Ncw7MZKW4iXuNKDpYXlJmEuLz8IIAiwT6e5VDG5t4Z4="
         }
       },
       "is_incremental": false,
@@ -2613,7 +2625,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Events.html",
-          "hash": "uDkXbDL0n+QpYysDbQZgWDcHzwIYZgy9x9vFgM1OcGk="
+          "hash": "GaGSAgiBXtxyM79JpYA52ybfrRgHToPWQyfbfo0mVTE="
         }
       },
       "is_incremental": false,
@@ -5877,7 +5889,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.IScript.html",
-          "hash": "H4saDQS6OfG/NejzX+eYX3OjHv7+pQRV0xaMdv+25pY="
+          "hash": "II15RXDgic0I4Bb1xD/XiRqTsoKqi/2yoPE+am1Mkts="
         }
       },
       "is_incremental": false,
@@ -12048,7 +12060,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "o1aGzJ5iQiuTgIwQfZQirFiRC1qe1LMse2KfGjNFspQ="
+          "hash": "XSp/J0AapY5dgEC6O5OgV/fCnt9FObWgvYbaiXoL5o4="
         }
       },
       "is_incremental": false,
@@ -12269,12 +12281,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "wiki/commands/Test-commands-for-KS.md",
       "output": {
         ".html": {
           "relative_path": "wiki/commands/Test-commands-for-KS.html",
-          "hash": "6ZQEFLSssF1VAdZZMVZbvhe2mn8YASAvrdDpHdROcZ8="
+          "hash": "Abera2ATlxPhil/fe3e/uVm41b8n7qsyeJtcyU5X+w8="
         }
       },
       "is_incremental": false,
@@ -14826,18 +14841,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "wiki/development/Events-for-Mod-Developers.md",
-      "output": {
-        ".html": {
-          "relative_path": "wiki/development/Events-for-Mod-Developers.html",
-          "hash": "jWkWrbrlorFLSVC95HJgJj0LumQewKVGSLt5qW40xx0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "wiki/development/Mod-Dependencies.md",
       "output": {
         ".html": {
@@ -15029,12 +15032,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "wiki/toc.md",
       "output": {
         ".html": {
           "relative_path": "wiki/toc.html",
-          "hash": "6I5tesEqDMkqe2z3ShfL4FABsRS04+VPj3vZrWCbt4A="
+          "hash": "jodytOCrB4fYptY5J2lzbKgeJFrofx/Uh1cMQlHdFIY="
         }
       },
       "is_incremental": false,
@@ -15103,13 +15109,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 249,
+          "total_file_count": 248,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1002,
+          "total_file_count": 1003,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

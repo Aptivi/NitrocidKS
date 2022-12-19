@@ -97,32 +97,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class EventsManager</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="KS_Kernel_Events_EventsManager_events" data-uid="KS.Kernel.Events.EventsManager.events">events</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static readonly string[] events</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -167,13 +141,13 @@
   
   
   <a id="KS_Kernel_Events_EventsManager_FireEvent_" data-uid="KS.Kernel.Events.EventsManager.FireEvent*"></a>
-  <h4 id="KS_Kernel_Events_EventsManager_FireEvent_System_String_System_Object___" data-uid="KS.Kernel.Events.EventsManager.FireEvent(System.String,System.Object[])">FireEvent(String, Object[])</h4>
+  <h4 id="KS_Kernel_Events_EventsManager_FireEvent_KS_Kernel_Events_EventType_System_Object___" data-uid="KS.Kernel.Events.EventsManager.FireEvent(KS.Kernel.Events.EventType,System.Object[])">FireEvent(EventType, Object[])</h4>
   <div class="markdown level1 summary"><p>Fires a kernel event</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void FireEvent(string EventName, params object[] Params)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void FireEvent(EventType Event, params object[] Params)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -186,9 +160,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">EventName</span></td>
-        <td><p>Event name. Refer to <a class="xref" href="KS.Kernel.Events.EventsManager.html#KS_Kernel_Events_EventsManager_events">events</a>.</p>
+        <td><a class="xref" href="KS.Kernel.Events.EventType.html">EventType</a></td>
+        <td><span class="parametername">Event</span></td>
+        <td><p>Event</p>
 </td>
       </tr>
       <tr>
