@@ -5753,6 +5753,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Writers.FancyWriters.Tools.BorderTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Writers.FancyWriters.Tools.BorderTools.html",
+          "hash": "OYVXgcqd2faJ0Kbdiol9g2oHaWI8tf2EW8vtK/HfttM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Writers.FancyWriters.Tools.CellOptions.yml",
       "output": {
         ".html": {
@@ -5793,7 +5805,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.FancyWriters.Tools.html",
-          "hash": "3PALWNy+y/XKOD7dlhIX0iNvqOquLwiZCc/M2MJVYMs="
+          "hash": "OYEwmFkfiE85jXdqsNYbvykD48E8zBzAQEsw4dizo8M="
         }
       },
       "is_incremental": false,
@@ -12036,7 +12048,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "9BCLAl9JLB7VHIbpfYjdr+dMVpzE4t7HywP2tFol/CA="
+          "hash": "R/WzLcWdBII6N6Hm88c4aQx+/llelh/jqaf4qPdZP8c="
         }
       },
       "is_incremental": false,
@@ -15091,7 +15103,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1001,
+          "total_file_count": 1002,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
