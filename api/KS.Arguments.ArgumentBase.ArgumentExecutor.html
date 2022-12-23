@@ -108,7 +108,7 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Arguments_ArgumentBase_ArgumentExecutor_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ArgumentExecutor : IArgument</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ArgumentExecutor : object, IArgument</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -150,21 +150,6 @@
         <td><span class="parametername">ListSwitchesOnly</span></td>
         <td><p>List of argument switches</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.InvalidOperationException</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>

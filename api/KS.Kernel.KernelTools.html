@@ -95,7 +95,7 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Kernel_KernelTools_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class KernelTools</code></pre>
+    <pre><code class="lang-csharp hljs">public static class KernelTools : object</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -144,7 +144,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Version</span></td>
+        <td><span class="xref">Version</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -169,7 +169,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Version</span></td>
+        <td><span class="xref">Version</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -193,7 +193,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><span class="xref">Exception</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -238,7 +238,7 @@
   
   
   <a id="KS_Kernel_KernelTools_GeneratePanicDump_" data-uid="KS.Kernel.KernelTools.GeneratePanicDump*"></a>
-  <h4 id="KS_Kernel_KernelTools_GeneratePanicDump_System_String_KS_Kernel_KernelErrorLevel_System_Exception_" data-uid="KS.Kernel.KernelTools.GeneratePanicDump(System.String,KS.Kernel.KernelErrorLevel,System.Exception)">GeneratePanicDump(String, KernelErrorLevel, Exception)</h4>
+  <h4 id="KS_Kernel_KernelTools_GeneratePanicDump_System_String_KS_Kernel_KernelErrorLevel_Exception_" data-uid="KS.Kernel.KernelTools.GeneratePanicDump(System.String,KS.Kernel.KernelErrorLevel,Exception)">GeneratePanicDump(String, KernelErrorLevel, Exception)</h4>
   <div class="markdown level1 summary"><p>Generates the stack trace dump file for kernel panics</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -269,7 +269,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><span class="xref">Exception</span></td>
         <td><span class="parametername">Exc</span></td>
         <td><p>Exception</p>
 </td>
@@ -290,7 +290,7 @@
   
   
   <a id="KS_Kernel_KernelTools_KernelError_" data-uid="KS.Kernel.KernelTools.KernelError*"></a>
-  <h4 id="KS_Kernel_KernelTools_KernelError_KS_Kernel_KernelErrorLevel_System_Boolean_System_Int64_System_String_System_Exception_System_Object___" data-uid="KS.Kernel.KernelTools.KernelError(KS.Kernel.KernelErrorLevel,System.Boolean,System.Int64,System.String,System.Exception,System.Object[])">KernelError(KernelErrorLevel, Boolean, Int64, String, Exception, Object[])</h4>
+  <h4 id="KS_Kernel_KernelTools_KernelError_KS_Kernel_KernelErrorLevel_System_Boolean_System_Int64_System_String_Exception_System_Object___" data-uid="KS.Kernel.KernelTools.KernelError(KS.Kernel.KernelErrorLevel,System.Boolean,System.Int64,System.String,Exception,System.Object[])">KernelError(KernelErrorLevel, Boolean, Int64, String, Exception, Object[])</h4>
   <div class="markdown level1 summary"><p>Indicates that there's something wrong with the kernel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -333,7 +333,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><span class="xref">Exception</span></td>
         <td><span class="parametername">Exc</span></td>
         <td><p>An exception to get stack traces, etc. Used for dump files currently.</p>
 </td>
@@ -349,7 +349,7 @@
   
   
   <a id="KS_Kernel_KernelTools_KernelErrorDouble_" data-uid="KS.Kernel.KernelTools.KernelErrorDouble*"></a>
-  <h4 id="KS_Kernel_KernelTools_KernelErrorDouble_System_String_System_Exception_System_Object___" data-uid="KS.Kernel.KernelTools.KernelErrorDouble(System.String,System.Exception,System.Object[])">KernelErrorDouble(String, Exception, Object[])</h4>
+  <h4 id="KS_Kernel_KernelTools_KernelErrorDouble_System_String_Exception_System_Object___" data-uid="KS.Kernel.KernelTools.KernelErrorDouble(System.String,Exception,System.Object[])">KernelErrorDouble(String, Exception, Object[])</h4>
   <div class="markdown level1 summary"><p>Indicates that there's a double fault with the kernel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -374,7 +374,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><span class="xref">Exception</span></td>
         <td><span class="parametername">Exc</span></td>
         <td><p>An exception to get stack traces, etc. Used for dump files currently.</p>
 </td>

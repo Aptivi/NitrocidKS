@@ -95,7 +95,7 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Files_Querying_Searching_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class Searching</code></pre>
+    <pre><code class="lang-csharp hljs">public static class Searching : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -144,31 +144,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>The list if successful; null if unsuccessful</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.IOException</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
   
   
   <a id="KS_Files_Querying_Searching_SearchFileForStringRegexp_" data-uid="KS.Files.Querying.Searching.SearchFileForStringRegexp*"></a>
-  <h4 id="KS_Files_Querying_Searching_SearchFileForStringRegexp_System_String_System_Text_RegularExpressions_Regex_" data-uid="KS.Files.Querying.Searching.SearchFileForStringRegexp(System.String,System.Text.RegularExpressions.Regex)">SearchFileForStringRegexp(String, Regex)</h4>
+  <h4 id="KS_Files_Querying_Searching_SearchFileForStringRegexp_System_String_Regex_" data-uid="KS.Files.Querying.Searching.SearchFileForStringRegexp(System.String,Regex)">SearchFileForStringRegexp(String, Regex)</h4>
   <div class="markdown level1 summary"><p>Searches a file for string using regexp</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -193,7 +178,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Text.RegularExpressions.Regex</span></td>
+        <td><span class="xref">Regex</span></td>
         <td><span class="parametername">StringLookup</span></td>
         <td><p>String to find</p>
 </td>
@@ -210,24 +195,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>The list if successful; null if unsuccessful</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.IOException</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>

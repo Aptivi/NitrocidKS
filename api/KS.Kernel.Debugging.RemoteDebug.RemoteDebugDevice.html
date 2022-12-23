@@ -95,14 +95,14 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RemoteDebugDevice</code></pre>
+    <pre><code class="lang-csharp hljs">public class RemoteDebugDevice : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice__ctor_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice.#ctor*"></a>
-  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice__ctor_System_Net_Sockets_Socket_System_Net_Sockets_NetworkStream_System_String_System_String_KS_Misc_Threading_KernelThread_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice.#ctor(System.Net.Sockets.Socket,System.Net.Sockets.NetworkStream,System.String,System.String,KS.Misc.Threading.KernelThread)">RemoteDebugDevice(Socket, NetworkStream, String, String, KernelThread)</h4>
+  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice__ctor_Socket_NetworkStream_System_String_System_String_KS_Misc_Threading_KernelThread_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice.#ctor(Socket,NetworkStream,System.String,System.String,KS.Misc.Threading.KernelThread)">RemoteDebugDevice(Socket, NetworkStream, String, String, KernelThread)</h4>
   <div class="markdown level1 summary"><p>Makes a new instance of a remote debug device</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -121,12 +121,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Net.Sockets.Socket</span></td>
+        <td><span class="xref">Socket</span></td>
         <td><span class="parametername">ClientSocket</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Net.Sockets.NetworkStream</span></td>
+        <td><span class="xref">NetworkStream</span></td>
         <td><span class="parametername">ClientStream</span></td>
         <td></td>
       </tr>
@@ -222,7 +222,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Net.Sockets.Socket</span></td>
+        <td><span class="xref">Socket</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -248,7 +248,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Net.Sockets.NetworkStream</span></td>
+        <td><span class="xref">NetworkStream</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -274,7 +274,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.StreamWriter</span></td>
+        <td><span class="xref">StreamWriter</span></td>
         <td></td>
       </tr>
     </tbody>

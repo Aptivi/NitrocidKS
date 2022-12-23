@@ -95,7 +95,7 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Kernel_Debugging_DebugWriter_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class DebugWriter</code></pre>
+    <pre><code class="lang-csharp hljs">public static class DebugWriter : object</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -143,7 +143,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -167,7 +167,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.StreamWriter</span></td>
+        <td><span class="xref">StreamWriter</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -306,7 +306,7 @@
   
   
   <a id="KS_Kernel_Debugging_DebugWriter_WriteDebugStackTrace_" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugStackTrace*"></a>
-  <h4 id="KS_Kernel_Debugging_DebugWriter_WriteDebugStackTrace_System_Exception_" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugStackTrace(System.Exception)">WriteDebugStackTrace(Exception)</h4>
+  <h4 id="KS_Kernel_Debugging_DebugWriter_WriteDebugStackTrace_Exception_" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugStackTrace(Exception)">WriteDebugStackTrace(Exception)</h4>
   <div class="markdown level1 summary"><p>Writes the exception's stack trace to the debugger</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -325,7 +325,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><span class="xref">Exception</span></td>
         <td><span class="parametername">Ex</span></td>
         <td><p>An exception</p>
 </td>
@@ -335,7 +335,7 @@
   
   
   <a id="KS_Kernel_Debugging_DebugWriter_WriteDebugStackTraceConditional_" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugStackTraceConditional*"></a>
-  <h4 id="KS_Kernel_Debugging_DebugWriter_WriteDebugStackTraceConditional_System_Boolean__System_Exception_" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugStackTraceConditional(System.Boolean@,System.Exception)">WriteDebugStackTraceConditional(ref Boolean, Exception)</h4>
+  <h4 id="KS_Kernel_Debugging_DebugWriter_WriteDebugStackTraceConditional_System_Boolean__Exception_" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugStackTraceConditional(System.Boolean@,Exception)">WriteDebugStackTraceConditional(ref Boolean, Exception)</h4>
   <div class="markdown level1 summary"><p>Conditionally writes the exception's stack trace to the debugger</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -360,7 +360,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><span class="xref">Exception</span></td>
         <td><span class="parametername">Ex</span></td>
         <td><p>An exception</p>
 </td>

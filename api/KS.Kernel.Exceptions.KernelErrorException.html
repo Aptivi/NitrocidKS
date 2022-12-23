@@ -83,20 +83,19 @@
   
   <h1 id="KS_Kernel_Exceptions_KernelErrorException" data-uid="KS.Kernel.Exceptions.KernelErrorException" class="text-break">Class KernelErrorException
   </h1>
-  <div class="markdown level0 summary"><p>Thrown when there was a kernel error. Used for <a class="xref" href="KS.Kernel.KernelTools.html#KS_Kernel_KernelTools_KernelError_KS_Kernel_KernelErrorLevel_System_Boolean_System_Int64_System_String_System_Exception_System_Object___">KernelError(KernelErrorLevel, Boolean, Int64, String, Exception, Object[])</a></p>
+  <div class="markdown level0 summary"><p>Thrown when there was a kernel error. Used for <a class="xref" href="KS.Kernel.KernelTools.html#KS_Kernel_KernelTools_KernelError_KS_Kernel_KernelErrorLevel_System_Boolean_System_Int64_System_String_Exception_System_Object___">KernelError(KernelErrorLevel, Boolean, Int64, String, Exception, Object[])</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">System.Exception</span></div>
-    <div class="level2"><span class="xref">KernelErrorException</span></div>
+    <div class="level1"><span class="xref">KernelErrorException</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Kernel.Exceptions.html">KS.Kernel.Exceptions</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Kernel_Exceptions_KernelErrorException_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class KernelErrorException : Exception, _Exception, ISerializable</code></pre>
+    <pre><code class="lang-csharp hljs">public class KernelErrorException : Exception</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -140,7 +139,7 @@
   
   
   <a id="KS_Kernel_Exceptions_KernelErrorException__ctor_" data-uid="KS.Kernel.Exceptions.KernelErrorException.#ctor*"></a>
-  <h4 id="KS_Kernel_Exceptions_KernelErrorException__ctor_System_String_System_Exception_" data-uid="KS.Kernel.Exceptions.KernelErrorException.#ctor(System.String,System.Exception)">KernelErrorException(String, Exception)</h4>
+  <h4 id="KS_Kernel_Exceptions_KernelErrorException__ctor_System_String_Exception_" data-uid="KS.Kernel.Exceptions.KernelErrorException.#ctor(System.String,Exception)">KernelErrorException(String, Exception)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -163,7 +162,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><span class="xref">Exception</span></td>
         <td><span class="parametername">e</span></td>
         <td></td>
       </tr>
@@ -172,7 +171,7 @@
   
   
   <a id="KS_Kernel_Exceptions_KernelErrorException__ctor_" data-uid="KS.Kernel.Exceptions.KernelErrorException.#ctor*"></a>
-  <h4 id="KS_Kernel_Exceptions_KernelErrorException__ctor_System_String_System_Exception_System_Object___" data-uid="KS.Kernel.Exceptions.KernelErrorException.#ctor(System.String,System.Exception,System.Object[])">KernelErrorException(String, Exception, Object[])</h4>
+  <h4 id="KS_Kernel_Exceptions_KernelErrorException__ctor_System_String_Exception_System_Object___" data-uid="KS.Kernel.Exceptions.KernelErrorException.#ctor(System.String,Exception,System.Object[])">KernelErrorException(String, Exception, Object[])</h4>
   <div class="markdown level1 summary"><p>Initializes the instance of this exception that has a message, an inner exception, and a list of arguments</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -197,7 +196,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><span class="xref">Exception</span></td>
         <td><span class="parametername">e</span></td>
         <td><p>Inner exception</p>
 </td>

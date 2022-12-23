@@ -95,14 +95,14 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Files_Attributes_AttributeManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class AttributeManager</code></pre>
+    <pre><code class="lang-csharp hljs">public static class AttributeManager : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="KS_Files_Attributes_AttributeManager_AddAttributeToFile_" data-uid="KS.Files.Attributes.AttributeManager.AddAttributeToFile*"></a>
-  <h4 id="KS_Files_Attributes_AttributeManager_AddAttributeToFile_System_String_System_IO_FileAttributes_" data-uid="KS.Files.Attributes.AttributeManager.AddAttributeToFile(System.String,System.IO.FileAttributes)">AddAttributeToFile(String, FileAttributes)</h4>
+  <h4 id="KS_Files_Attributes_AttributeManager_AddAttributeToFile_System_String_FileAttributes_" data-uid="KS.Files.Attributes.AttributeManager.AddAttributeToFile(System.String,FileAttributes)">AddAttributeToFile(String, FileAttributes)</h4>
   <div class="markdown level1 summary"><p>Adds attribute to file</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -127,7 +127,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IO.FileAttributes</span></td>
+        <td><span class="xref">FileAttributes</span></td>
         <td><span class="parametername">Attributes</span></td>
         <td><p>Attributes</p>
 </td>
@@ -137,7 +137,7 @@
   
   
   <a id="KS_Files_Attributes_AttributeManager_RemoveAttribute_" data-uid="KS.Files.Attributes.AttributeManager.RemoveAttribute*"></a>
-  <h4 id="KS_Files_Attributes_AttributeManager_RemoveAttribute_System_IO_FileAttributes_System_IO_FileAttributes_" data-uid="KS.Files.Attributes.AttributeManager.RemoveAttribute(System.IO.FileAttributes,System.IO.FileAttributes)">RemoveAttribute(FileAttributes, FileAttributes)</h4>
+  <h4 id="KS_Files_Attributes_AttributeManager_RemoveAttribute_FileAttributes_FileAttributes_" data-uid="KS.Files.Attributes.AttributeManager.RemoveAttribute(FileAttributes,FileAttributes)">RemoveAttribute(FileAttributes, FileAttributes)</h4>
   <div class="markdown level1 summary"><p>Removes attribute</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -156,13 +156,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.FileAttributes</span></td>
+        <td><span class="xref">FileAttributes</span></td>
         <td><span class="parametername">attributes</span></td>
         <td><p>All attributes</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IO.FileAttributes</span></td>
+        <td><span class="xref">FileAttributes</span></td>
         <td><span class="parametername">attributesToRemove</span></td>
         <td><p>Attributes to remove</p>
 </td>
@@ -179,7 +179,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.FileAttributes</span></td>
+        <td><span class="xref">FileAttributes</span></td>
         <td><p>Attributes without target attribute</p>
 </td>
       </tr>
@@ -188,7 +188,7 @@
   
   
   <a id="KS_Files_Attributes_AttributeManager_RemoveAttributeFromFile_" data-uid="KS.Files.Attributes.AttributeManager.RemoveAttributeFromFile*"></a>
-  <h4 id="KS_Files_Attributes_AttributeManager_RemoveAttributeFromFile_System_String_System_IO_FileAttributes_" data-uid="KS.Files.Attributes.AttributeManager.RemoveAttributeFromFile(System.String,System.IO.FileAttributes)">RemoveAttributeFromFile(String, FileAttributes)</h4>
+  <h4 id="KS_Files_Attributes_AttributeManager_RemoveAttributeFromFile_System_String_FileAttributes_" data-uid="KS.Files.Attributes.AttributeManager.RemoveAttributeFromFile(System.String,FileAttributes)">RemoveAttributeFromFile(String, FileAttributes)</h4>
   <div class="markdown level1 summary"><p>Removes attribute from file</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -213,7 +213,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IO.FileAttributes</span></td>
+        <td><span class="xref">FileAttributes</span></td>
         <td><span class="parametername">Attributes</span></td>
         <td><p>Attributes</p>
 </td>
@@ -223,7 +223,7 @@
   
   
   <a id="KS_Files_Attributes_AttributeManager_TryAddAttributeToFile_" data-uid="KS.Files.Attributes.AttributeManager.TryAddAttributeToFile*"></a>
-  <h4 id="KS_Files_Attributes_AttributeManager_TryAddAttributeToFile_System_String_System_IO_FileAttributes_" data-uid="KS.Files.Attributes.AttributeManager.TryAddAttributeToFile(System.String,System.IO.FileAttributes)">TryAddAttributeToFile(String, FileAttributes)</h4>
+  <h4 id="KS_Files_Attributes_AttributeManager_TryAddAttributeToFile_System_String_FileAttributes_" data-uid="KS.Files.Attributes.AttributeManager.TryAddAttributeToFile(System.String,FileAttributes)">TryAddAttributeToFile(String, FileAttributes)</h4>
   <div class="markdown level1 summary"><p>Adds attribute to file</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -248,7 +248,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IO.FileAttributes</span></td>
+        <td><span class="xref">FileAttributes</span></td>
         <td><span class="parametername">Attributes</span></td>
         <td><p>Attributes</p>
 </td>
@@ -274,7 +274,7 @@
   
   
   <a id="KS_Files_Attributes_AttributeManager_TryRemoveAttributeFromFile_" data-uid="KS.Files.Attributes.AttributeManager.TryRemoveAttributeFromFile*"></a>
-  <h4 id="KS_Files_Attributes_AttributeManager_TryRemoveAttributeFromFile_System_String_System_IO_FileAttributes_" data-uid="KS.Files.Attributes.AttributeManager.TryRemoveAttributeFromFile(System.String,System.IO.FileAttributes)">TryRemoveAttributeFromFile(String, FileAttributes)</h4>
+  <h4 id="KS_Files_Attributes_AttributeManager_TryRemoveAttributeFromFile_System_String_FileAttributes_" data-uid="KS.Files.Attributes.AttributeManager.TryRemoveAttributeFromFile(System.String,FileAttributes)">TryRemoveAttributeFromFile(String, FileAttributes)</h4>
   <div class="markdown level1 summary"><p>Removes attribute from file</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -299,7 +299,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IO.FileAttributes</span></td>
+        <td><span class="xref">FileAttributes</span></td>
         <td><span class="parametername">Attributes</span></td>
         <td><p>Attributes</p>
 </td>

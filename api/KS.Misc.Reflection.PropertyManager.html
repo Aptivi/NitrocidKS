@@ -95,7 +95,7 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Misc_Reflection_PropertyManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class PropertyManager</code></pre>
+    <pre><code class="lang-csharp hljs">public static class PropertyManager : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -146,7 +146,7 @@
   
   
   <a id="KS_Misc_Reflection_PropertyManager_ExpressionGetPropertyValue_" data-uid="KS.Misc.Reflection.PropertyManager.ExpressionGetPropertyValue*"></a>
-  <h4 id="KS_Misc_Reflection_PropertyManager_ExpressionGetPropertyValue_System_Reflection_PropertyInfo_" data-uid="KS.Misc.Reflection.PropertyManager.ExpressionGetPropertyValue(System.Reflection.PropertyInfo)">ExpressionGetPropertyValue(PropertyInfo)</h4>
+  <h4 id="KS_Misc_Reflection_PropertyManager_ExpressionGetPropertyValue_PropertyInfo_" data-uid="KS.Misc.Reflection.PropertyManager.ExpressionGetPropertyValue(PropertyInfo)">ExpressionGetPropertyValue(PropertyInfo)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -164,7 +164,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Reflection.PropertyInfo</span></td>
+        <td><span class="xref">PropertyInfo</span></td>
         <td><span class="parametername">propertyInfo</span></td>
         <td></td>
       </tr>
@@ -188,7 +188,7 @@
   
   
   <a id="KS_Misc_Reflection_PropertyManager_ExpressionSetPropertyValue_" data-uid="KS.Misc.Reflection.PropertyManager.ExpressionSetPropertyValue*"></a>
-  <h4 id="KS_Misc_Reflection_PropertyManager_ExpressionSetPropertyValue_System_Reflection_PropertyInfo_System_Object_" data-uid="KS.Misc.Reflection.PropertyManager.ExpressionSetPropertyValue(System.Reflection.PropertyInfo,System.Object)">ExpressionSetPropertyValue(PropertyInfo, Object)</h4>
+  <h4 id="KS_Misc_Reflection_PropertyManager_ExpressionSetPropertyValue_PropertyInfo_System_Object_" data-uid="KS.Misc.Reflection.PropertyManager.ExpressionSetPropertyValue(PropertyInfo,System.Object)">ExpressionSetPropertyValue(PropertyInfo, Object)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -206,7 +206,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Reflection.PropertyInfo</span></td>
+        <td><span class="xref">PropertyInfo</span></td>
         <td><span class="parametername">propertyInfo</span></td>
         <td></td>
       </tr>
@@ -220,7 +220,7 @@
   
   
   <a id="KS_Misc_Reflection_PropertyManager_GetProperties_" data-uid="KS.Misc.Reflection.PropertyManager.GetProperties*"></a>
-  <h4 id="KS_Misc_Reflection_PropertyManager_GetProperties_System_Type_" data-uid="KS.Misc.Reflection.PropertyManager.GetProperties(System.Type)">GetProperties(Type)</h4>
+  <h4 id="KS_Misc_Reflection_PropertyManager_GetProperties_Type_" data-uid="KS.Misc.Reflection.PropertyManager.GetProperties(Type)">GetProperties(Type)</h4>
   <div class="markdown level1 summary"><p>Gets the properties from the type dynamically</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -239,7 +239,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Type</span></td>
+        <td><span class="xref">Type</span></td>
         <td><span class="parametername">VariableType</span></td>
         <td><p>Variable type</p>
 </td>
@@ -256,7 +256,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td><p>Dictionary containing all properties</p>
 </td>
       </tr>
@@ -265,7 +265,7 @@
   
   
   <a id="KS_Misc_Reflection_PropertyManager_GetPropertiesNoEvaluation_" data-uid="KS.Misc.Reflection.PropertyManager.GetPropertiesNoEvaluation*"></a>
-  <h4 id="KS_Misc_Reflection_PropertyManager_GetPropertiesNoEvaluation_System_Type_" data-uid="KS.Misc.Reflection.PropertyManager.GetPropertiesNoEvaluation(System.Type)">GetPropertiesNoEvaluation(Type)</h4>
+  <h4 id="KS_Misc_Reflection_PropertyManager_GetPropertiesNoEvaluation_Type_" data-uid="KS.Misc.Reflection.PropertyManager.GetPropertiesNoEvaluation(Type)">GetPropertiesNoEvaluation(Type)</h4>
   <div class="markdown level1 summary"><p>Gets the properties from the type without evaluation</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -284,7 +284,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Type</span></td>
+        <td><span class="xref">Type</span></td>
         <td><span class="parametername">VariableType</span></td>
         <td><p>Variable type</p>
 </td>
@@ -301,7 +301,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Type</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Type</span>&gt;</td>
         <td><p>Dictionary containing all properties</p>
 </td>
       </tr>
@@ -346,7 +346,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Reflection.PropertyInfo</span></td>
+        <td><span class="xref">PropertyInfo</span></td>
         <td><p>Property information</p>
 </td>
       </tr>
@@ -355,7 +355,7 @@
   
   
   <a id="KS_Misc_Reflection_PropertyManager_GetProperty_" data-uid="KS.Misc.Reflection.PropertyManager.GetProperty*"></a>
-  <h4 id="KS_Misc_Reflection_PropertyManager_GetProperty_System_String_System_Type_" data-uid="KS.Misc.Reflection.PropertyManager.GetProperty(System.String,System.Type)">GetProperty(String, Type)</h4>
+  <h4 id="KS_Misc_Reflection_PropertyManager_GetProperty_System_String_Type_" data-uid="KS.Misc.Reflection.PropertyManager.GetProperty(System.String,Type)">GetProperty(String, Type)</h4>
   <div class="markdown level1 summary"><p>Gets a property from variable name</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -380,7 +380,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Type</span></td>
+        <td><span class="xref">Type</span></td>
         <td><span class="parametername">Type</span></td>
         <td><p>Property type</p>
 </td>
@@ -397,7 +397,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Reflection.PropertyInfo</span></td>
+        <td><span class="xref">PropertyInfo</span></td>
         <td><p>Property information</p>
 </td>
       </tr>
@@ -451,7 +451,7 @@
   
   
   <a id="KS_Misc_Reflection_PropertyManager_GetPropertyValue_" data-uid="KS.Misc.Reflection.PropertyManager.GetPropertyValue*"></a>
-  <h4 id="KS_Misc_Reflection_PropertyManager_GetPropertyValue_System_String_System_Type_" data-uid="KS.Misc.Reflection.PropertyManager.GetPropertyValue(System.String,System.Type)">GetPropertyValue(String, Type)</h4>
+  <h4 id="KS_Misc_Reflection_PropertyManager_GetPropertyValue_System_String_Type_" data-uid="KS.Misc.Reflection.PropertyManager.GetPropertyValue(System.String,Type)">GetPropertyValue(String, Type)</h4>
   <div class="markdown level1 summary"><p>Gets the value of a property dynamically</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -476,7 +476,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Type</span></td>
+        <td><span class="xref">Type</span></td>
         <td><span class="parametername">VariableType</span></td>
         <td><p>Property type</p>
 </td>
@@ -537,7 +537,7 @@
   
   
   <a id="KS_Misc_Reflection_PropertyManager_SetPropertyValue_" data-uid="KS.Misc.Reflection.PropertyManager.SetPropertyValue*"></a>
-  <h4 id="KS_Misc_Reflection_PropertyManager_SetPropertyValue_System_String_System_Object_System_Type_" data-uid="KS.Misc.Reflection.PropertyManager.SetPropertyValue(System.String,System.Object,System.Type)">SetPropertyValue(String, Object, Type)</h4>
+  <h4 id="KS_Misc_Reflection_PropertyManager_SetPropertyValue_System_String_System_Object_Type_" data-uid="KS.Misc.Reflection.PropertyManager.SetPropertyValue(System.String,System.Object,Type)">SetPropertyValue(String, Object, Type)</h4>
   <div class="markdown level1 summary"><p>Sets the value of a property to the new value dynamically</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -568,7 +568,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Type</span></td>
+        <td><span class="xref">Type</span></td>
         <td><span class="parametername">VariableType</span></td>
         <td><p>Property type</p>
 </td>

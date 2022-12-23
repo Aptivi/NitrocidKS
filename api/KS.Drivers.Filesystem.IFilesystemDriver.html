@@ -106,7 +106,7 @@
   
   
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_AddAttributeToFile_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.AddAttributeToFile*"></a>
-  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_AddAttributeToFile_System_String_System_IO_FileAttributes_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.AddAttributeToFile(System.String,System.IO.FileAttributes)">AddAttributeToFile(String, FileAttributes)</h4>
+  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_AddAttributeToFile_System_String_FileAttributes_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.AddAttributeToFile(System.String,FileAttributes)">AddAttributeToFile(String, FileAttributes)</h4>
   <div class="markdown level1 summary"><p>Adds attribute to file</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -131,7 +131,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IO.FileAttributes</span></td>
+        <td><span class="xref">FileAttributes</span></td>
         <td><span class="parametername">Attributes</span></td>
         <td><p>Attributes</p>
 </td>
@@ -474,21 +474,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.IOException</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_CreateList_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.CreateList*"></a>
@@ -540,7 +525,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.IO.FileSystemInfo</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">FileSystemInfo</span>&gt;</td>
         <td><p>List of filesystem entries if any. Empty list if folder is not found or is empty.</p>
 </td>
       </tr>
@@ -743,7 +728,7 @@
   
   
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_GetAllSizesInFolder_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.GetAllSizesInFolder*"></a>
-  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_GetAllSizesInFolder_System_IO_DirectoryInfo_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.GetAllSizesInFolder(System.IO.DirectoryInfo)">GetAllSizesInFolder(DirectoryInfo)</h4>
+  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_GetAllSizesInFolder_DirectoryInfo_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.GetAllSizesInFolder(DirectoryInfo)">GetAllSizesInFolder(DirectoryInfo)</h4>
   <div class="markdown level1 summary"><p>Gets all file sizes in a folder, depending on the kernel setting <a class="xref" href="KS.Kernel.Flags.html#KS_Kernel_Flags_FullParseMode">FullParseMode</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -762,7 +747,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.DirectoryInfo</span></td>
+        <td><span class="xref">DirectoryInfo</span></td>
         <td><span class="parametername">DirectoryInfo</span></td>
         <td><p>Directory information</p>
 </td>
@@ -788,7 +773,7 @@
   
   
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_GetAllSizesInFolder_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.GetAllSizesInFolder*"></a>
-  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_GetAllSizesInFolder_System_IO_DirectoryInfo_System_Boolean_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.GetAllSizesInFolder(System.IO.DirectoryInfo,System.Boolean)">GetAllSizesInFolder(DirectoryInfo, Boolean)</h4>
+  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_GetAllSizesInFolder_DirectoryInfo_System_Boolean_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.GetAllSizesInFolder(DirectoryInfo,System.Boolean)">GetAllSizesInFolder(DirectoryInfo, Boolean)</h4>
   <div class="markdown level1 summary"><p>Gets all file sizes in a folder, and optionally parses the entire folder</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -807,7 +792,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.DirectoryInfo</span></td>
+        <td><span class="xref">DirectoryInfo</span></td>
         <td><span class="parametername">DirectoryInfo</span></td>
         <td><p>Directory information</p>
 </td>
@@ -1092,7 +1077,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1220,21 +1205,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.IOException</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_MakeFile_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.MakeFile*"></a>
@@ -1267,21 +1237,6 @@
         <td><span class="parametername">ThrowIfFileExists</span></td>
         <td><p>If file exists, throw an exception.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.IOException</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1323,21 +1278,6 @@
         <td><span class="parametername">useArray</span></td>
         <td><p>Use array instead of object</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.IOException</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1452,21 +1392,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.IOException</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_PrintContents_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.PrintContents*"></a>
@@ -1540,7 +1465,7 @@
   
   
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_PrintDirectoryInfo_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.PrintDirectoryInfo*"></a>
-  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_PrintDirectoryInfo_System_IO_FileSystemInfo_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.PrintDirectoryInfo(System.IO.FileSystemInfo)">PrintDirectoryInfo(FileSystemInfo)</h4>
+  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_PrintDirectoryInfo_FileSystemInfo_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.PrintDirectoryInfo(FileSystemInfo)">PrintDirectoryInfo(FileSystemInfo)</h4>
   <div class="markdown level1 summary"><p>Prints the directory information to the console</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1559,7 +1484,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.FileSystemInfo</span></td>
+        <td><span class="xref">FileSystemInfo</span></td>
         <td><span class="parametername">DirectoryInfo</span></td>
         <td></td>
       </tr>
@@ -1568,7 +1493,7 @@
   
   
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_PrintDirectoryInfo_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.PrintDirectoryInfo*"></a>
-  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_PrintDirectoryInfo_System_IO_FileSystemInfo_System_Boolean_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.PrintDirectoryInfo(System.IO.FileSystemInfo,System.Boolean)">PrintDirectoryInfo(FileSystemInfo, Boolean)</h4>
+  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_PrintDirectoryInfo_FileSystemInfo_System_Boolean_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.PrintDirectoryInfo(FileSystemInfo,System.Boolean)">PrintDirectoryInfo(FileSystemInfo, Boolean)</h4>
   <div class="markdown level1 summary"><p>Prints the directory information to the console</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1587,7 +1512,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.FileSystemInfo</span></td>
+        <td><span class="xref">FileSystemInfo</span></td>
         <td><span class="parametername">DirectoryInfo</span></td>
         <td></td>
       </tr>
@@ -1601,7 +1526,7 @@
   
   
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_PrintFileInfo_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.PrintFileInfo*"></a>
-  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_PrintFileInfo_System_IO_FileSystemInfo_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.PrintFileInfo(System.IO.FileSystemInfo)">PrintFileInfo(FileSystemInfo)</h4>
+  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_PrintFileInfo_FileSystemInfo_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.PrintFileInfo(FileSystemInfo)">PrintFileInfo(FileSystemInfo)</h4>
   <div class="markdown level1 summary"><p>Prints the file information to the console</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1620,7 +1545,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.FileSystemInfo</span></td>
+        <td><span class="xref">FileSystemInfo</span></td>
         <td><span class="parametername">FileInfo</span></td>
         <td></td>
       </tr>
@@ -1629,7 +1554,7 @@
   
   
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_PrintFileInfo_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.PrintFileInfo*"></a>
-  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_PrintFileInfo_System_IO_FileSystemInfo_System_Boolean_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.PrintFileInfo(System.IO.FileSystemInfo,System.Boolean)">PrintFileInfo(FileSystemInfo, Boolean)</h4>
+  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_PrintFileInfo_FileSystemInfo_System_Boolean_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.PrintFileInfo(FileSystemInfo,System.Boolean)">PrintFileInfo(FileSystemInfo, Boolean)</h4>
   <div class="markdown level1 summary"><p>Prints the file information to the console</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1648,7 +1573,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.FileSystemInfo</span></td>
+        <td><span class="xref">FileSystemInfo</span></td>
         <td><span class="parametername">FileInfo</span></td>
         <td></td>
       </tr>
@@ -1796,7 +1721,7 @@
   
   
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_RemoveAttributeFromFile_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.RemoveAttributeFromFile*"></a>
-  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_RemoveAttributeFromFile_System_String_System_IO_FileAttributes_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.RemoveAttributeFromFile(System.String,System.IO.FileAttributes)">RemoveAttributeFromFile(String, FileAttributes)</h4>
+  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_RemoveAttributeFromFile_System_String_FileAttributes_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.RemoveAttributeFromFile(System.String,FileAttributes)">RemoveAttributeFromFile(String, FileAttributes)</h4>
   <div class="markdown level1 summary"><p>Removes attribute from file</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1821,7 +1746,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IO.FileAttributes</span></td>
+        <td><span class="xref">FileAttributes</span></td>
         <td><span class="parametername">Attributes</span></td>
         <td><p>Attributes</p>
 </td>
@@ -2074,31 +1999,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>The list if successful; null if unsuccessful</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.IOException</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
   
   
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_SearchFileForStringRegexp_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.SearchFileForStringRegexp*"></a>
-  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_SearchFileForStringRegexp_System_String_System_Text_RegularExpressions_Regex_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.SearchFileForStringRegexp(System.String,System.Text.RegularExpressions.Regex)">SearchFileForStringRegexp(String, Regex)</h4>
+  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_SearchFileForStringRegexp_System_String_Regex_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.SearchFileForStringRegexp(System.String,Regex)">SearchFileForStringRegexp(String, Regex)</h4>
   <div class="markdown level1 summary"><p>Searches a file for string using regexp</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2123,7 +2033,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Text.RegularExpressions.Regex</span></td>
+        <td><span class="xref">Regex</span></td>
         <td><span class="parametername">StringLookup</span></td>
         <td><p>String to find</p>
 </td>
@@ -2140,31 +2050,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>The list if successful; null if unsuccessful</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.IOException</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
   
   
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_SortSelector_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.SortSelector*"></a>
-  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_SortSelector_System_IO_FileSystemInfo_System_Int32_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.SortSelector(System.IO.FileSystemInfo,System.Int32)">SortSelector(FileSystemInfo, Int32)</h4>
+  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_SortSelector_FileSystemInfo_System_Int32_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.SortSelector(FileSystemInfo,System.Int32)">SortSelector(FileSystemInfo, Int32)</h4>
   <div class="markdown level1 summary"><p>Helper for sorting filesystem entries</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2183,7 +2078,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.FileSystemInfo</span></td>
+        <td><span class="xref">FileSystemInfo</span></td>
         <td><span class="parametername">FileSystemEntry</span></td>
         <td><p>File system entry</p>
 </td>

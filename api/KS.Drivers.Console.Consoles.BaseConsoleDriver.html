@@ -104,7 +104,7 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Drivers_Console_Consoles_BaseConsoleDriver_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class BaseConsoleDriver : IConsoleDriver, IDriver</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class BaseConsoleDriver : object, IConsoleDriver, IDriver</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -179,7 +179,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ConsoleColor</span></td>
+        <td><span class="xref">ConsoleColor</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -387,7 +387,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ConsoleColor</span></td>
+        <td><span class="xref">ConsoleColor</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -413,7 +413,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="xref">Encoding</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -491,7 +491,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="xref">TextWriter</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -517,7 +517,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="xref">Encoding</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -662,7 +662,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="xref">Stream</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -688,7 +688,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="xref">Stream</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -714,7 +714,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="xref">Stream</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -758,7 +758,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ConsoleKeyInfo</span></td>
+        <td><span class="xref">ConsoleKeyInfo</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -812,7 +812,7 @@
   
   
   <a id="KS_Drivers_Console_Consoles_BaseConsoleDriver_SetOut_" data-uid="KS.Drivers.Console.Consoles.BaseConsoleDriver.SetOut*"></a>
-  <h4 id="KS_Drivers_Console_Consoles_BaseConsoleDriver_SetOut_System_IO_TextWriter_" data-uid="KS.Drivers.Console.Consoles.BaseConsoleDriver.SetOut(System.IO.TextWriter)">SetOut(TextWriter)</h4>
+  <h4 id="KS_Drivers_Console_Consoles_BaseConsoleDriver_SetOut_TextWriter_" data-uid="KS.Drivers.Console.Consoles.BaseConsoleDriver.SetOut(TextWriter)">SetOut(TextWriter)</h4>
   <div class="markdown level1 summary"><p>Sets console output</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -831,7 +831,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="xref">TextWriter</span></td>
         <td><span class="parametername">newOut</span></td>
         <td><p>New output</p>
 </td>

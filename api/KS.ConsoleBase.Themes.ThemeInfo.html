@@ -95,7 +95,7 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_ConsoleBase_Themes_ThemeInfo_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ThemeInfo</code></pre>
+    <pre><code class="lang-csharp hljs">public class ThemeInfo : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -142,7 +142,7 @@
   
   
   <a id="KS_ConsoleBase_Themes_ThemeInfo__ctor_" data-uid="KS.ConsoleBase.Themes.ThemeInfo.#ctor*"></a>
-  <h4 id="KS_ConsoleBase_Themes_ThemeInfo__ctor_System_IO_StreamReader_" data-uid="KS.ConsoleBase.Themes.ThemeInfo.#ctor(System.IO.StreamReader)">ThemeInfo(StreamReader)</h4>
+  <h4 id="KS_ConsoleBase_Themes_ThemeInfo__ctor_StreamReader_" data-uid="KS.ConsoleBase.Themes.ThemeInfo.#ctor(StreamReader)">ThemeInfo(StreamReader)</h4>
   <div class="markdown level1 summary"><p>Generates a new theme info from file stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -161,7 +161,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.StreamReader</span></td>
+        <td><span class="xref">StreamReader</span></td>
         <td><span class="parametername">ThemeFileStream</span></td>
         <td><p>Theme file stream reader</p>
 </td>
@@ -218,7 +218,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="KS.ConsoleBase.Colors.ColorTools.ColTypes.html">ColorTools.ColTypes</a>, <span class="xref">Color</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<a class="xref" href="KS.ConsoleBase.Colors.ColorTools.ColTypes.html">ColorTools.ColTypes</a>, <span class="xref">Color</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

@@ -83,7 +83,7 @@
   
   <h1 id="KS_ConsoleBase_ConsoleWrapper" data-uid="KS.ConsoleBase.ConsoleWrapper" class="text-break">Class ConsoleWrapper
   </h1>
-  <div class="markdown level0 summary"><p>Wrapper for the <span class="xref">System.Console</span> class to ensure safety against dumb consoles. This connects to the current console driver of the <a class="xref" href="KS.Drivers.DriverTypes.html#KS_Drivers_DriverTypes_Console">Console</a> type handled by <a class="xref" href="KS.Drivers.DriverHandler.html">DriverHandler</a>.</p>
+  <div class="markdown level0 summary"><p>Wrapper for the <see cref="!:Console"></see> class to ensure safety against dumb consoles. This connects to the current console driver of the <a class="xref" href="KS.Drivers.DriverTypes.html#KS_Drivers_DriverTypes_Console">Console</a> type handled by <a class="xref" href="KS.Drivers.DriverHandler.html">DriverHandler</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -95,7 +95,7 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_ConsoleBase_ConsoleWrapper_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ConsoleWrapper</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ConsoleWrapper : object</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -120,7 +120,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ConsoleColor</span></td>
+        <td><span class="xref">ConsoleColor</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -276,7 +276,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ConsoleColor</span></td>
+        <td><span class="xref">ConsoleColor</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -302,7 +302,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="xref">Encoding</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -354,7 +354,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="xref">TextWriter</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -380,7 +380,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="xref">Encoding</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -525,7 +525,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="xref">Stream</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -551,7 +551,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="xref">Stream</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -577,7 +577,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="xref">Stream</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -621,7 +621,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ConsoleKeyInfo</span></td>
+        <td><span class="xref">ConsoleKeyInfo</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -675,7 +675,7 @@
   
   
   <a id="KS_ConsoleBase_ConsoleWrapper_SetOut_" data-uid="KS.ConsoleBase.ConsoleWrapper.SetOut*"></a>
-  <h4 id="KS_ConsoleBase_ConsoleWrapper_SetOut_System_IO_TextWriter_" data-uid="KS.ConsoleBase.ConsoleWrapper.SetOut(System.IO.TextWriter)">SetOut(TextWriter)</h4>
+  <h4 id="KS_ConsoleBase_ConsoleWrapper_SetOut_TextWriter_" data-uid="KS.ConsoleBase.ConsoleWrapper.SetOut(TextWriter)">SetOut(TextWriter)</h4>
   <div class="markdown level1 summary"><p>Sets console output</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -694,7 +694,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="xref">TextWriter</span></td>
         <td><span class="parametername">newOut</span></td>
         <td><p>New output</p>
 </td>

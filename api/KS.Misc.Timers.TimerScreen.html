@@ -95,7 +95,7 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Misc_Timers_TimerScreen_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class TimerScreen</code></pre>
+    <pre><code class="lang-csharp hljs">public static class TimerScreen : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -118,7 +118,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static Timer _Timer</code></pre>
+    <pre><code class="lang-csharp hljs">static System.Timers.Timer _Timer</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -227,7 +227,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -266,7 +266,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static Timer Timer { }</code></pre>
+    <pre><code class="lang-csharp hljs">static System.Timers.Timer Timer { }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -336,7 +336,7 @@
   
   
   <a id="KS_Misc_Timers_TimerScreen_TimerElapsed_" data-uid="KS.Misc.Timers.TimerScreen.TimerElapsed*"></a>
-  <h4 id="KS_Misc_Timers_TimerScreen_TimerElapsed_System_Object_System_Timers_ElapsedEventArgs_" data-uid="KS.Misc.Timers.TimerScreen.TimerElapsed(System.Object,System.Timers.ElapsedEventArgs)">TimerElapsed(Object, ElapsedEventArgs)</h4>
+  <h4 id="KS_Misc_Timers_TimerScreen_TimerElapsed_System_Object_ElapsedEventArgs_" data-uid="KS.Misc.Timers.TimerScreen.TimerElapsed(System.Object,ElapsedEventArgs)">TimerElapsed(Object, ElapsedEventArgs)</h4>
   <div class="markdown level1 summary"><p>Indicates that the timer has elapsed</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -360,7 +360,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Timers.ElapsedEventArgs</span></td>
+        <td><span class="xref">ElapsedEventArgs</span></td>
         <td><span class="parametername">e</span></td>
         <td></td>
       </tr>

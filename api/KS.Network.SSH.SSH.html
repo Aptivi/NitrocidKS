@@ -95,7 +95,7 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Network_SSH_SSH_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class SSH</code></pre>
+    <pre><code class="lang-csharp hljs">public static class SSH : object</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -154,7 +154,7 @@
   
   
   <a id="KS_Network_SSH_SSH_GetConnectionInfo_" data-uid="KS.Network.SSH.SSH.GetConnectionInfo*"></a>
-  <h4 id="KS_Network_SSH_SSH_GetConnectionInfo_System_String_System_Int32_System_String_System_Collections_Generic_List_AuthenticationMethod__" data-uid="KS.Network.SSH.SSH.GetConnectionInfo(System.String,System.Int32,System.String,System.Collections.Generic.List{AuthenticationMethod})">GetConnectionInfo(String, Int32, String, List&lt;AuthenticationMethod&gt;)</h4>
+  <h4 id="KS_Network_SSH_SSH_GetConnectionInfo_System_String_System_Int32_System_String_List_AuthenticationMethod__" data-uid="KS.Network.SSH.SSH.GetConnectionInfo(System.String,System.Int32,System.String,List{AuthenticationMethod})">GetConnectionInfo(String, Int32, String, List&lt;AuthenticationMethod&gt;)</h4>
   <div class="markdown level1 summary"><p>Gets connection info from the information that the user provided</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -191,7 +191,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">AuthenticationMethod</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">AuthenticationMethod</span>&gt;</td>
         <td><span class="parametername">AuthMethods</span></td>
         <td><p>Authentication methods list.</p>
 </td>
@@ -422,7 +422,7 @@
   
   
   <a id="KS_Network_SSH_SSH_SSHDisconnect_" data-uid="KS.Network.SSH.SSH.SSHDisconnect*"></a>
-  <h4 id="KS_Network_SSH_SSH_SSHDisconnect_System_Object_System_ConsoleCancelEventArgs_" data-uid="KS.Network.SSH.SSH.SSHDisconnect(System.Object,System.ConsoleCancelEventArgs)">SSHDisconnect(Object, ConsoleCancelEventArgs)</h4>
+  <h4 id="KS_Network_SSH_SSH_SSHDisconnect_System_Object_ConsoleCancelEventArgs_" data-uid="KS.Network.SSH.SSH.SSHDisconnect(System.Object,ConsoleCancelEventArgs)">SSHDisconnect(Object, ConsoleCancelEventArgs)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -445,7 +445,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.ConsoleCancelEventArgs</span></td>
+        <td><span class="xref">ConsoleCancelEventArgs</span></td>
         <td><span class="parametername">e</span></td>
         <td></td>
       </tr>

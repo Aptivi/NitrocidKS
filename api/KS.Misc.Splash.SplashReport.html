@@ -95,7 +95,7 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Misc_Splash_SplashReport_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class SplashReport</code></pre>
+    <pre><code class="lang-csharp hljs">public static class SplashReport : object</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -370,7 +370,52 @@ it will report the progress to the splash system. You can force it to report the
   
   
   <a id="KS_Misc_Splash_SplashReport_ReportProgressError_" data-uid="KS.Misc.Splash.SplashReport.ReportProgressError*"></a>
-  <h4 id="KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Boolean_KS_Misc_Splash_ISplash_System_Exception_System_String___" data-uid="KS.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Boolean,KS.Misc.Splash.ISplash,System.Exception,System.String[])">ReportProgressError(String, Boolean, ISplash, Exception, String[])</h4>
+  <h4 id="KS_Misc_Splash_SplashReport_ReportProgressError_System_String_Exception_System_String___" data-uid="KS.Misc.Splash.SplashReport.ReportProgressError(System.String,Exception,System.String[])">ReportProgressError(String, Exception, String[])</h4>
+  <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static void ReportProgressError(string Text, Exception exception, params string[] Vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Text</span></td>
+        <td><p>The progress text to indicate how did the kernel progress</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>Exception information</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">Vars</span></td>
+        <td><p>Varibales to be expanded to text</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="KS_Misc_Splash_SplashReport_ReportProgressError_System_String_Exception_System_String____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br>
+it will report the progress to the splash system. You can force it to report the progress by passing force.</p>
+</div>
+  
+  
+  <a id="KS_Misc_Splash_SplashReport_ReportProgressError_" data-uid="KS.Misc.Splash.SplashReport.ReportProgressError*"></a>
+  <h4 id="KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Boolean_KS_Misc_Splash_ISplash_Exception_System_String___" data-uid="KS.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Boolean,KS.Misc.Splash.ISplash,Exception,System.String[])">ReportProgressError(String, Boolean, ISplash, Exception, String[])</h4>
   <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -407,7 +452,7 @@ it will report the progress to the splash system. You can force it to report the
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><span class="xref">Exception</span></td>
         <td><span class="parametername">exception</span></td>
         <td><p>Exception information</p>
 </td>
@@ -420,52 +465,7 @@ it will report the progress to the splash system. You can force it to report the
       </tr>
     </tbody>
   </table>
-  <h5 id="KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Boolean_KS_Misc_Splash_ISplash_System_Exception_System_String____remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br>
-it will report the progress to the splash system. You can force it to report the progress by passing force.</p>
-</div>
-  
-  
-  <a id="KS_Misc_Splash_SplashReport_ReportProgressError_" data-uid="KS.Misc.Splash.SplashReport.ReportProgressError*"></a>
-  <h4 id="KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Exception_System_String___" data-uid="KS.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Exception,System.String[])">ReportProgressError(String, Exception, String[])</h4>
-  <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static void ReportProgressError(string Text, Exception exception, params string[] Vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">Text</span></td>
-        <td><p>The progress text to indicate how did the kernel progress</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Exception</span></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>Exception information</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span>[]</td>
-        <td><span class="parametername">Vars</span></td>
-        <td><p>Varibales to be expanded to text</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Exception_System_String____remarks">Remarks</h5>
+  <h5 id="KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Boolean_KS_Misc_Splash_ISplash_Exception_System_String____remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br>
 it will report the progress to the splash system. You can force it to report the progress by passing force.</p>
 </div>

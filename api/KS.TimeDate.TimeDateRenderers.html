@@ -95,7 +95,7 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_TimeDate_TimeDateRenderers_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class TimeDateRenderers</code></pre>
+    <pre><code class="lang-csharp hljs">public static class TimeDateRenderers : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -110,6 +110,306 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string Render()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A long or short time and date</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_Render_" data-uid="KS.TimeDate.TimeDateRenderers.Render*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_Render_CultureInfo_" data-uid="KS.TimeDate.TimeDateRenderers.Render(CultureInfo)">Render(CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Renders the current time and date based on specified culture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Render(CultureInfo Cult)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">Cult</span></td>
+        <td><p>A culture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A time and date</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_Render_" data-uid="KS.TimeDate.TimeDateRenderers.Render*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_Render_CultureInfo_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.Render(CultureInfo,KS.TimeDate.TimeDate.FormatType)">Render(CultureInfo, TimeDate.FormatType)</h4>
+  <div class="markdown level1 summary"><p>Renders the current time and date based on specified culture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Render(CultureInfo Cult, TimeDate.FormatType FormatType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">Cult</span></td>
+        <td><p>A culture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
+        <td><span class="parametername">FormatType</span></td>
+        <td><p>Date/time format type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A time and date</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_Render_" data-uid="KS.TimeDate.TimeDateRenderers.Render*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_Render_DateTime_" data-uid="KS.TimeDate.TimeDateRenderers.Render(DateTime)">Render(DateTime)</h4>
+  <div class="markdown level1 summary"><p>Renders the time and date based on specified time using the kernel config (long or short) and current culture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Render(DateTime DT)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">DT</span></td>
+        <td><p>Specified time and date</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A long or short time and date</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_Render_" data-uid="KS.TimeDate.TimeDateRenderers.Render*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_Render_DateTime_CultureInfo_" data-uid="KS.TimeDate.TimeDateRenderers.Render(DateTime,CultureInfo)">Render(DateTime, CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Renders the time and date based on specified date and culture using the kernel config (long or short)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Render(DateTime DT, CultureInfo Cult)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">DT</span></td>
+        <td><p>Specified time and date</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">Cult</span></td>
+        <td><p>A culture</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A time and date</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_Render_" data-uid="KS.TimeDate.TimeDateRenderers.Render*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_Render_DateTime_CultureInfo_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.Render(DateTime,CultureInfo,KS.TimeDate.TimeDate.FormatType)">Render(DateTime, CultureInfo, TimeDate.FormatType)</h4>
+  <div class="markdown level1 summary"><p>Renders the time and date based on specified date and culture using the kernel config (long or short)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Render(DateTime DT, CultureInfo Cult, TimeDate.FormatType FormatType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">DT</span></td>
+        <td><p>Specified time and date</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">Cult</span></td>
+        <td><p>A culture</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
+        <td><span class="parametername">FormatType</span></td>
+        <td><p>Date/time format type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A time and date</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_Render_" data-uid="KS.TimeDate.TimeDateRenderers.Render*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_Render_DateTime_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.Render(DateTime,KS.TimeDate.TimeDate.FormatType)">Render(DateTime, TimeDate.FormatType)</h4>
+  <div class="markdown level1 summary"><p>Renders the time and date based on specified time using the kernel config (long or short) and current culture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Render(DateTime DT, TimeDate.FormatType FormatType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">DT</span></td>
+        <td><p>Specified time and date</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
+        <td><span class="parametername">FormatType</span></td>
+        <td><p>Date/time format type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -173,306 +473,6 @@
   </table>
   
   
-  <a id="KS_TimeDate_TimeDateRenderers_Render_" data-uid="KS.TimeDate.TimeDateRenderers.Render*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_Render_System_DateTime_" data-uid="KS.TimeDate.TimeDateRenderers.Render(System.DateTime)">Render(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Renders the time and date based on specified time using the kernel config (long or short) and current culture</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Render(DateTime DT)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">DT</span></td>
-        <td><p>Specified time and date</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A long or short time and date</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_Render_" data-uid="KS.TimeDate.TimeDateRenderers.Render*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_Render_System_DateTime_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.Render(System.DateTime,KS.TimeDate.TimeDate.FormatType)">Render(DateTime, TimeDate.FormatType)</h4>
-  <div class="markdown level1 summary"><p>Renders the time and date based on specified time using the kernel config (long or short) and current culture</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Render(DateTime DT, TimeDate.FormatType FormatType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">DT</span></td>
-        <td><p>Specified time and date</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
-        <td><span class="parametername">FormatType</span></td>
-        <td><p>Date/time format type</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A long or short time and date</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_Render_" data-uid="KS.TimeDate.TimeDateRenderers.Render*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_Render_System_DateTime_System_Globalization_CultureInfo_" data-uid="KS.TimeDate.TimeDateRenderers.Render(System.DateTime,System.Globalization.CultureInfo)">Render(DateTime, CultureInfo)</h4>
-  <div class="markdown level1 summary"><p>Renders the time and date based on specified date and culture using the kernel config (long or short)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Render(DateTime DT, CultureInfo Cult)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">DT</span></td>
-        <td><p>Specified time and date</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">Cult</span></td>
-        <td><p>A culture</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A time and date</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_Render_" data-uid="KS.TimeDate.TimeDateRenderers.Render*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_Render_System_DateTime_System_Globalization_CultureInfo_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.Render(System.DateTime,System.Globalization.CultureInfo,KS.TimeDate.TimeDate.FormatType)">Render(DateTime, CultureInfo, TimeDate.FormatType)</h4>
-  <div class="markdown level1 summary"><p>Renders the time and date based on specified date and culture using the kernel config (long or short)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Render(DateTime DT, CultureInfo Cult, TimeDate.FormatType FormatType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">DT</span></td>
-        <td><p>Specified time and date</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">Cult</span></td>
-        <td><p>A culture</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
-        <td><span class="parametername">FormatType</span></td>
-        <td><p>Date/time format type</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A time and date</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_Render_" data-uid="KS.TimeDate.TimeDateRenderers.Render*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_Render_System_Globalization_CultureInfo_" data-uid="KS.TimeDate.TimeDateRenderers.Render(System.Globalization.CultureInfo)">Render(CultureInfo)</h4>
-  <div class="markdown level1 summary"><p>Renders the current time and date based on specified culture</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Render(CultureInfo Cult)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">Cult</span></td>
-        <td><p>A culture.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A time and date</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_Render_" data-uid="KS.TimeDate.TimeDateRenderers.Render*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_Render_System_Globalization_CultureInfo_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.Render(System.Globalization.CultureInfo,KS.TimeDate.TimeDate.FormatType)">Render(CultureInfo, TimeDate.FormatType)</h4>
-  <div class="markdown level1 summary"><p>Renders the current time and date based on specified culture</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Render(CultureInfo Cult, TimeDate.FormatType FormatType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">Cult</span></td>
-        <td><p>A culture.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
-        <td><span class="parametername">FormatType</span></td>
-        <td><p>Date/time format type</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A time and date</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="KS_TimeDate_TimeDateRenderers_RenderDate_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate*"></a>
   <h4 id="KS_TimeDate_TimeDateRenderers_RenderDate" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate">RenderDate()</h4>
   <div class="markdown level1 summary"><p>Renders the current date based on kernel config (long or short) and current culture</p>
@@ -482,6 +482,306 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string RenderDate()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A long or short date</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_RenderDate_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_RenderDate_CultureInfo_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate(CultureInfo)">RenderDate(CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Renders the current date based on specified culture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderDate(CultureInfo Cult)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">Cult</span></td>
+        <td><p>A culture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A date</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_RenderDate_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_RenderDate_CultureInfo_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate(CultureInfo,KS.TimeDate.TimeDate.FormatType)">RenderDate(CultureInfo, TimeDate.FormatType)</h4>
+  <div class="markdown level1 summary"><p>Renders the current date based on specified culture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderDate(CultureInfo Cult, TimeDate.FormatType FormatType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">Cult</span></td>
+        <td><p>A culture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
+        <td><span class="parametername">FormatType</span></td>
+        <td><p>Date/time format type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A date</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_RenderDate_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_RenderDate_DateTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate(DateTime)">RenderDate(DateTime)</h4>
+  <div class="markdown level1 summary"><p>Renders the date based on specified date using the kernel config (long or short) and current culture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderDate(DateTime DT)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">DT</span></td>
+        <td><p>Specified date</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A long or short date</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_RenderDate_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_RenderDate_DateTime_CultureInfo_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate(DateTime,CultureInfo)">RenderDate(DateTime, CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Renders the date based on specified date and culture using the kernel config (long or short)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderDate(DateTime DT, CultureInfo Cult)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">DT</span></td>
+        <td><p>Specified date</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">Cult</span></td>
+        <td><p>A culture</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A date</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_RenderDate_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_RenderDate_DateTime_CultureInfo_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate(DateTime,CultureInfo,KS.TimeDate.TimeDate.FormatType)">RenderDate(DateTime, CultureInfo, TimeDate.FormatType)</h4>
+  <div class="markdown level1 summary"><p>Renders the date based on specified date and culture using the kernel config (long or short)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderDate(DateTime DT, CultureInfo Cult, TimeDate.FormatType FormatType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">DT</span></td>
+        <td><p>Specified date</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">Cult</span></td>
+        <td><p>A culture</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
+        <td><span class="parametername">FormatType</span></td>
+        <td><p>Date/time format type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A date</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_RenderDate_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_RenderDate_DateTime_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate(DateTime,KS.TimeDate.TimeDate.FormatType)">RenderDate(DateTime, TimeDate.FormatType)</h4>
+  <div class="markdown level1 summary"><p>Renders the date based on specified date using the kernel config (long or short) and current culture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderDate(DateTime DT, TimeDate.FormatType FormatType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">DT</span></td>
+        <td><p>Specified date</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
+        <td><span class="parametername">FormatType</span></td>
+        <td><p>Date/time format type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -545,306 +845,6 @@
   </table>
   
   
-  <a id="KS_TimeDate_TimeDateRenderers_RenderDate_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_RenderDate_System_DateTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate(System.DateTime)">RenderDate(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Renders the date based on specified date using the kernel config (long or short) and current culture</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RenderDate(DateTime DT)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">DT</span></td>
-        <td><p>Specified date</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A long or short date</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_RenderDate_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_RenderDate_System_DateTime_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate(System.DateTime,KS.TimeDate.TimeDate.FormatType)">RenderDate(DateTime, TimeDate.FormatType)</h4>
-  <div class="markdown level1 summary"><p>Renders the date based on specified date using the kernel config (long or short) and current culture</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RenderDate(DateTime DT, TimeDate.FormatType FormatType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">DT</span></td>
-        <td><p>Specified date</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
-        <td><span class="parametername">FormatType</span></td>
-        <td><p>Date/time format type</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A long or short date</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_RenderDate_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_RenderDate_System_DateTime_System_Globalization_CultureInfo_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate(System.DateTime,System.Globalization.CultureInfo)">RenderDate(DateTime, CultureInfo)</h4>
-  <div class="markdown level1 summary"><p>Renders the date based on specified date and culture using the kernel config (long or short)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RenderDate(DateTime DT, CultureInfo Cult)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">DT</span></td>
-        <td><p>Specified date</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">Cult</span></td>
-        <td><p>A culture</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A date</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_RenderDate_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_RenderDate_System_DateTime_System_Globalization_CultureInfo_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate(System.DateTime,System.Globalization.CultureInfo,KS.TimeDate.TimeDate.FormatType)">RenderDate(DateTime, CultureInfo, TimeDate.FormatType)</h4>
-  <div class="markdown level1 summary"><p>Renders the date based on specified date and culture using the kernel config (long or short)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RenderDate(DateTime DT, CultureInfo Cult, TimeDate.FormatType FormatType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">DT</span></td>
-        <td><p>Specified date</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">Cult</span></td>
-        <td><p>A culture</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
-        <td><span class="parametername">FormatType</span></td>
-        <td><p>Date/time format type</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A date</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_RenderDate_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_RenderDate_System_Globalization_CultureInfo_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate(System.Globalization.CultureInfo)">RenderDate(CultureInfo)</h4>
-  <div class="markdown level1 summary"><p>Renders the current date based on specified culture</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RenderDate(CultureInfo Cult)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">Cult</span></td>
-        <td><p>A culture.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A date</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_RenderDate_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_RenderDate_System_Globalization_CultureInfo_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.RenderDate(System.Globalization.CultureInfo,KS.TimeDate.TimeDate.FormatType)">RenderDate(CultureInfo, TimeDate.FormatType)</h4>
-  <div class="markdown level1 summary"><p>Renders the current date based on specified culture</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RenderDate(CultureInfo Cult, TimeDate.FormatType FormatType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">Cult</span></td>
-        <td><p>A culture.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
-        <td><span class="parametername">FormatType</span></td>
-        <td><p>Date/time format type</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A date</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="KS_TimeDate_TimeDateRenderers_RenderTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime*"></a>
   <h4 id="KS_TimeDate_TimeDateRenderers_RenderTime" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime">RenderTime()</h4>
   <div class="markdown level1 summary"><p>Renders the current time based on kernel config (long or short) and current culture</p>
@@ -854,6 +854,306 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string RenderTime()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A long or short time</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_RenderTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_RenderTime_CultureInfo_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime(CultureInfo)">RenderTime(CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Renders the current time based on specified culture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderTime(CultureInfo Cult)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">Cult</span></td>
+        <td><p>A culture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A time</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_RenderTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_RenderTime_CultureInfo_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime(CultureInfo,KS.TimeDate.TimeDate.FormatType)">RenderTime(CultureInfo, TimeDate.FormatType)</h4>
+  <div class="markdown level1 summary"><p>Renders the current time based on specified culture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderTime(CultureInfo Cult, TimeDate.FormatType FormatType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">Cult</span></td>
+        <td><p>A culture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
+        <td><span class="parametername">FormatType</span></td>
+        <td><p>Date/time format type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A time</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_RenderTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_RenderTime_DateTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime(DateTime)">RenderTime(DateTime)</h4>
+  <div class="markdown level1 summary"><p>Renders the time based on specified time using the kernel config (long or short) and current culture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderTime(DateTime DT)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">DT</span></td>
+        <td><p>Specified time</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A long or short time</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_RenderTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_RenderTime_DateTime_CultureInfo_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime(DateTime,CultureInfo)">RenderTime(DateTime, CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Renders the time based on specified date and culture using the kernel config (long or short)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderTime(DateTime DT, CultureInfo Cult)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">DT</span></td>
+        <td><p>Specified time</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">Cult</span></td>
+        <td><p>A culture</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A time</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_RenderTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_RenderTime_DateTime_CultureInfo_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime(DateTime,CultureInfo,KS.TimeDate.TimeDate.FormatType)">RenderTime(DateTime, CultureInfo, TimeDate.FormatType)</h4>
+  <div class="markdown level1 summary"><p>Renders the time based on specified date and culture using the kernel config (long or short)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderTime(DateTime DT, CultureInfo Cult, TimeDate.FormatType FormatType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">DT</span></td>
+        <td><p>Specified time</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">Cult</span></td>
+        <td><p>A culture</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
+        <td><span class="parametername">FormatType</span></td>
+        <td><p>Date/time format type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A time</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_TimeDate_TimeDateRenderers_RenderTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime*"></a>
+  <h4 id="KS_TimeDate_TimeDateRenderers_RenderTime_DateTime_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime(DateTime,KS.TimeDate.TimeDate.FormatType)">RenderTime(DateTime, TimeDate.FormatType)</h4>
+  <div class="markdown level1 summary"><p>Renders the time based on specified time using the kernel config (long or short) and current culture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderTime(DateTime DT, TimeDate.FormatType FormatType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">DT</span></td>
+        <td><p>Specified time</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
+        <td><span class="parametername">FormatType</span></td>
+        <td><p>Date/time format type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -911,306 +1211,6 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><p>A long or short time</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_RenderTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_RenderTime_System_DateTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime(System.DateTime)">RenderTime(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Renders the time based on specified time using the kernel config (long or short) and current culture</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RenderTime(DateTime DT)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">DT</span></td>
-        <td><p>Specified time</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A long or short time</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_RenderTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_RenderTime_System_DateTime_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime(System.DateTime,KS.TimeDate.TimeDate.FormatType)">RenderTime(DateTime, TimeDate.FormatType)</h4>
-  <div class="markdown level1 summary"><p>Renders the time based on specified time using the kernel config (long or short) and current culture</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RenderTime(DateTime DT, TimeDate.FormatType FormatType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">DT</span></td>
-        <td><p>Specified time</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
-        <td><span class="parametername">FormatType</span></td>
-        <td><p>Date/time format type</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A long or short time</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_RenderTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_RenderTime_System_DateTime_System_Globalization_CultureInfo_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime(System.DateTime,System.Globalization.CultureInfo)">RenderTime(DateTime, CultureInfo)</h4>
-  <div class="markdown level1 summary"><p>Renders the time based on specified date and culture using the kernel config (long or short)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RenderTime(DateTime DT, CultureInfo Cult)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">DT</span></td>
-        <td><p>Specified time</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">Cult</span></td>
-        <td><p>A culture</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A time</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_RenderTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_RenderTime_System_DateTime_System_Globalization_CultureInfo_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime(System.DateTime,System.Globalization.CultureInfo,KS.TimeDate.TimeDate.FormatType)">RenderTime(DateTime, CultureInfo, TimeDate.FormatType)</h4>
-  <div class="markdown level1 summary"><p>Renders the time based on specified date and culture using the kernel config (long or short)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RenderTime(DateTime DT, CultureInfo Cult, TimeDate.FormatType FormatType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">DT</span></td>
-        <td><p>Specified time</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">Cult</span></td>
-        <td><p>A culture</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
-        <td><span class="parametername">FormatType</span></td>
-        <td><p>Date/time format type</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A time</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_RenderTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_RenderTime_System_Globalization_CultureInfo_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime(System.Globalization.CultureInfo)">RenderTime(CultureInfo)</h4>
-  <div class="markdown level1 summary"><p>Renders the current time based on specified culture</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RenderTime(CultureInfo Cult)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">Cult</span></td>
-        <td><p>A culture.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A time</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_TimeDate_TimeDateRenderers_RenderTime_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime*"></a>
-  <h4 id="KS_TimeDate_TimeDateRenderers_RenderTime_System_Globalization_CultureInfo_KS_TimeDate_TimeDate_FormatType_" data-uid="KS.TimeDate.TimeDateRenderers.RenderTime(System.Globalization.CultureInfo,KS.TimeDate.TimeDate.FormatType)">RenderTime(CultureInfo, TimeDate.FormatType)</h4>
-  <div class="markdown level1 summary"><p>Renders the current time based on specified culture</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RenderTime(CultureInfo Cult, TimeDate.FormatType FormatType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">Cult</span></td>
-        <td><p>A culture.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.TimeDate.TimeDate.FormatType.html">TimeDate.FormatType</a></td>
-        <td><span class="parametername">FormatType</span></td>
-        <td><p>Date/time format type</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A time</p>
 </td>
       </tr>
     </tbody>

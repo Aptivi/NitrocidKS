@@ -95,14 +95,14 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Misc_Threading_KernelThread_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class KernelThread</code></pre>
+    <pre><code class="lang-csharp hljs">public class KernelThread : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="KS_Misc_Threading_KernelThread__ctor_" data-uid="KS.Misc.Threading.KernelThread.#ctor*"></a>
-  <h4 id="KS_Misc_Threading_KernelThread__ctor_System_String_System_Boolean_System_Threading_ParameterizedThreadStart_" data-uid="KS.Misc.Threading.KernelThread.#ctor(System.String,System.Boolean,System.Threading.ParameterizedThreadStart)">KernelThread(String, Boolean, ParameterizedThreadStart)</h4>
+  <h4 id="KS_Misc_Threading_KernelThread__ctor_System_String_System_Boolean_ParameterizedThreadStart_" data-uid="KS.Misc.Threading.KernelThread.#ctor(System.String,System.Boolean,ParameterizedThreadStart)">KernelThread(String, Boolean, ParameterizedThreadStart)</h4>
   <div class="markdown level1 summary"><p>Makes a new kernel thread</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -133,7 +133,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.ParameterizedThreadStart</span></td>
+        <td><span class="xref">ParameterizedThreadStart</span></td>
         <td><span class="parametername">Executor</span></td>
         <td><p>The thread delegate</p>
 </td>
@@ -143,7 +143,7 @@
   
   
   <a id="KS_Misc_Threading_KernelThread__ctor_" data-uid="KS.Misc.Threading.KernelThread.#ctor*"></a>
-  <h4 id="KS_Misc_Threading_KernelThread__ctor_System_String_System_Boolean_System_Threading_ThreadStart_" data-uid="KS.Misc.Threading.KernelThread.#ctor(System.String,System.Boolean,System.Threading.ThreadStart)">KernelThread(String, Boolean, ThreadStart)</h4>
+  <h4 id="KS_Misc_Threading_KernelThread__ctor_System_String_System_Boolean_ThreadStart_" data-uid="KS.Misc.Threading.KernelThread.#ctor(System.String,System.Boolean,ThreadStart)">KernelThread(String, Boolean, ThreadStart)</h4>
   <div class="markdown level1 summary"><p>Makes a new kernel thread</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -174,7 +174,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.ThreadStart</span></td>
+        <td><span class="xref">ThreadStart</span></td>
         <td><span class="parametername">Executor</span></td>
         <td><p>The thread delegate</p>
 </td>
@@ -202,7 +202,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Thread</span></td>
+        <td><span class="xref">Thread</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -250,7 +250,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.ThreadStart</span></td>
+        <td><span class="xref">ThreadStart</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -274,7 +274,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.ParameterizedThreadStart</span></td>
+        <td><span class="xref">ParameterizedThreadStart</span></td>
         <td></td>
       </tr>
     </tbody>

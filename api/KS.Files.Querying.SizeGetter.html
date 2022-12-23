@@ -95,14 +95,14 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Files_Querying_SizeGetter_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class SizeGetter</code></pre>
+    <pre><code class="lang-csharp hljs">public static class SizeGetter : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="KS_Files_Querying_SizeGetter_GetAllSizesInFolder_" data-uid="KS.Files.Querying.SizeGetter.GetAllSizesInFolder*"></a>
-  <h4 id="KS_Files_Querying_SizeGetter_GetAllSizesInFolder_System_IO_DirectoryInfo_" data-uid="KS.Files.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo)">GetAllSizesInFolder(DirectoryInfo)</h4>
+  <h4 id="KS_Files_Querying_SizeGetter_GetAllSizesInFolder_DirectoryInfo_" data-uid="KS.Files.Querying.SizeGetter.GetAllSizesInFolder(DirectoryInfo)">GetAllSizesInFolder(DirectoryInfo)</h4>
   <div class="markdown level1 summary"><p>Gets all file sizes in a folder, depending on the kernel setting <a class="xref" href="KS.Kernel.Flags.html#KS_Kernel_Flags_FullParseMode">FullParseMode</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -121,7 +121,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.DirectoryInfo</span></td>
+        <td><span class="xref">DirectoryInfo</span></td>
         <td><span class="parametername">DirectoryInfo</span></td>
         <td><p>Directory information</p>
 </td>
@@ -147,7 +147,7 @@
   
   
   <a id="KS_Files_Querying_SizeGetter_GetAllSizesInFolder_" data-uid="KS.Files.Querying.SizeGetter.GetAllSizesInFolder*"></a>
-  <h4 id="KS_Files_Querying_SizeGetter_GetAllSizesInFolder_System_IO_DirectoryInfo_System_Boolean_" data-uid="KS.Files.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo,System.Boolean)">GetAllSizesInFolder(DirectoryInfo, Boolean)</h4>
+  <h4 id="KS_Files_Querying_SizeGetter_GetAllSizesInFolder_DirectoryInfo_System_Boolean_" data-uid="KS.Files.Querying.SizeGetter.GetAllSizesInFolder(DirectoryInfo,System.Boolean)">GetAllSizesInFolder(DirectoryInfo, Boolean)</h4>
   <div class="markdown level1 summary"><p>Gets all file sizes in a folder, and optionally parses the entire folder</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -166,7 +166,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.DirectoryInfo</span></td>
+        <td><span class="xref">DirectoryInfo</span></td>
         <td><span class="parametername">DirectoryInfo</span></td>
         <td><p>Directory information</p>
 </td>
