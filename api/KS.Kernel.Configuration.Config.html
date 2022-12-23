@@ -219,41 +219,14 @@
   </table>
   
   
-  <a id="KS_Kernel_Configuration_Config_GetNewConfigObjectNew_" data-uid="KS.Kernel.Configuration.Config.GetNewConfigObjectNew*"></a>
-  <h4 id="KS_Kernel_Configuration_Config_GetNewConfigObjectNew" data-uid="KS.Kernel.Configuration.Config.GetNewConfigObjectNew">GetNewConfigObjectNew()</h4>
+  <a id="KS_Kernel_Configuration_Config_GetNewConfigObject_" data-uid="KS.Kernel.Configuration.Config.GetNewConfigObject*"></a>
+  <h4 id="KS_Kernel_Configuration_Config_GetNewConfigObject_JToken_" data-uid="KS.Kernel.Configuration.Config.GetNewConfigObject(JToken)">GetNewConfigObject(JToken)</h4>
   <div class="markdown level1 summary"><p>Creates a new JSON object containing the kernel settings of all kinds</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static JObject GetNewConfigObjectNew()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">JObject</span></td>
-        <td><p>A pristine config object</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Kernel_Configuration_Config_GetNewConfigObjectNew_" data-uid="KS.Kernel.Configuration.Config.GetNewConfigObjectNew*"></a>
-  <h4 id="KS_Kernel_Configuration_Config_GetNewConfigObjectNew_JToken_" data-uid="KS.Kernel.Configuration.Config.GetNewConfigObjectNew(JToken)">GetNewConfigObjectNew(JToken)</h4>
-  <div class="markdown level1 summary"><p>Creates a new JSON object containing the kernel settings of all kinds</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static JObject GetNewConfigObjectNew(JToken metadata)</code></pre>
+    <pre><code class="lang-csharp hljs">static JObject GetNewConfigObject(JToken metadata)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -314,7 +287,7 @@
   
   <a id="KS_Kernel_Configuration_Config_ReadConfig_" data-uid="KS.Kernel.Configuration.Config.ReadConfig*"></a>
   <h4 id="KS_Kernel_Configuration_Config_ReadConfig_JToken_System_Boolean_" data-uid="KS.Kernel.Configuration.Config.ReadConfig(JToken,System.Boolean)">ReadConfig(JToken, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Configures the kernel according to the custom kernel configuration file</p>
+  <div class="markdown level1 summary"><p>Configures the kernel according to the custom kernel configuration file (new)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -367,39 +340,6 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">ConfigPath</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Kernel_Configuration_Config_ReadConfigNew_" data-uid="KS.Kernel.Configuration.Config.ReadConfigNew*"></a>
-  <h4 id="KS_Kernel_Configuration_Config_ReadConfigNew_JToken_System_Boolean_" data-uid="KS.Kernel.Configuration.Config.ReadConfigNew(JToken,System.Boolean)">ReadConfigNew(JToken, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Configures the kernel according to the custom kernel configuration file (new)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ReadConfigNew(JToken ConfigToken, bool Force = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">JToken</span></td>
-        <td><span class="parametername">ConfigToken</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">Force</span></td>
         <td></td>
       </tr>
     </tbody>

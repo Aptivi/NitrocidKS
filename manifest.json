@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Arguments.ArgumentBase.ArgumentExecutor.html",
-          "hash": "JEMnpMOYKrtv7ugNnIvRiX5ZFofwgiizOJnZfxoiQA4="
+          "hash": "gVfrgKjIYU6/nSPCKQsrzyYblkU07yiuyggLaCAejtA="
         }
       },
       "is_incremental": false,
@@ -137,42 +137,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_NewPathsArgument.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_NewPathsArgument.html",
-          "hash": "QIF4trHVjqsLQL37synp0FJv6/iYVC7d2VZzVy8RyL8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_NewReaderArgument.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_NewReaderArgument.html",
-          "hash": "Un+pslyct9RpZRr82Rei7/84K7YszCNfKoDRfrTjpyQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_NewWriterArgument.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_NewWriterArgument.html",
-          "hash": "qr5SYWvnYazChSCsznJgYPet07C2Q16bq8XcHSlidbs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_ResetArgument.yml",
       "output": {
         ".html": {
@@ -249,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Arguments.CommandLineArguments.html",
-          "hash": "oxEQQXEZJq2S0sJV8AimoDmHske0MvyQTpHmKL9diK0="
+          "hash": "2qBBc0nipKMPFxMk/Yr6QNwRqpz8Zhp+UvCAfjbmakQ="
         }
       },
       "is_incremental": false,
@@ -1557,7 +1521,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Config.html",
-          "hash": "so0FkeK2CJFOSiQfxnmpFRQGMn7BwHVZ9gaTWVD4dEA="
+          "hash": "dcl1gKQNvEzx1dPIw2IPsx0J36a73JgvsNcuXQb9ecg="
         }
       },
       "is_incremental": false,
@@ -2697,7 +2661,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Flags.html",
-          "hash": "RWfNKKe5vWcMFL8gp1QaWj6GOyUzAhNJg8mmEuApqHo="
+          "hash": "XlGBeX/DXdo5Dbuqhi24qpEgQ0KaTnOGjlmzV0KAXu8="
         }
       },
       "is_incremental": false,
@@ -12072,7 +12036,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Ij6+yjJrpsGZf2bGEIFwLTJTs33iJZmMxfEP1ioHemc="
+          "hash": "9BCLAl9JLB7VHIbpfYjdr+dMVpzE4t7HywP2tFol/CA="
         }
       },
       "is_incremental": false,
@@ -15127,7 +15091,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1004,
+          "total_file_count": 1001,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
