@@ -897,7 +897,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.RNG.BaseRandomDriver.html",
-          "hash": "3hzKWN8eWDs+gW+lfJ+SHEPAYkwoileDKpN3xJEef0Y="
+          "hash": "k0yvyblX01rosEEGECllyV9/xQKPQk49MMLvdvUbRx0="
         }
       },
       "is_incremental": false,
@@ -922,6 +922,18 @@
         ".html": {
           "relative_path": "api/KS.Drivers.RNG.RandomDriver.html",
           "hash": "5vtBa6u3V0DGf69cOWwimIj2HfjdRMRt6Efx3zy0E0o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.RNG.Randoms.CryptographicRandom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.RNG.Randoms.CryptographicRandom.html",
+          "hash": "lAQ80l28JqpMlyXFhOYM0EwjTZufB1uEiXDN9Rv5nlo="
         }
       },
       "is_incremental": false,
@@ -957,7 +969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.RNG.Randoms.html",
-          "hash": "fl3iCsNwK29eBqQv8OYcR+oeSXFfUs4Z1aL0sWTD9Q8="
+          "hash": "SBRhSCVIwvEAUsLajwy/z8B8eF2t5ppmdzRs5hWOxBI="
         }
       },
       "is_incremental": false,
@@ -2261,6 +2273,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestCryptoRNG.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestCryptoRNG.html",
+          "hash": "W6wxMr/eziezdweHS5vqtI/Nw0JFCYEv1p79YAjDz+o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestDictWriterChar.yml",
       "output": {
         ".html": {
@@ -2369,6 +2393,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestRNG.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestRNG.html",
+          "hash": "iXubFQ7ZUt8NSNF4pxUJ4LWnnDIfAEKz+6GayJM1F9w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestRegExp.yml",
       "output": {
         ".html": {
@@ -2469,7 +2505,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.html",
-          "hash": "KLbeJAtlwtsvGLppL81srweZbyJcKnWcTsLTCKMYmbE="
+          "hash": "LFDidRQslKYIJENOr6PCNwkk0BpbwpJDacSXyHxM9vQ="
         }
       },
       "is_incremental": false,
@@ -2481,7 +2517,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.TestFacade.html",
-          "hash": "O8Dn9Cq0BX2fDTeQHZqxAGwDHF0NvLI7L7slfTACF0s="
+          "hash": "ekptjiSzvAxFhpXkS6O+KPqu4CzXSfee914ZdtM3DCQ="
         }
       },
       "is_incremental": false,
@@ -12036,7 +12072,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Ix0zhyNc5+NPzTFkJHb8UGUJmdGUGSSM4rD+0n/sJ/Q="
+          "hash": "MTkEzIei8emt84dx1+gJeeizKAG9mu3KwoChbnYUzO0="
         }
       },
       "is_incremental": false,
@@ -15091,7 +15127,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1001,
+          "total_file_count": 1004,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
