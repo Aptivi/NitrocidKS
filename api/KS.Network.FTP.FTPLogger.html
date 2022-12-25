@@ -95,151 +95,19 @@
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
   <h5 id="KS_Network_FTP_FTPLogger_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FTPLogger : ILogger</code></pre>
+    <pre><code class="lang-csharp hljs">public class FTPLogger : IFtpLogger</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="KS_Network_FTP_FTPLogger_enabledLevels" data-uid="KS.Network.FTP.FTPLogger.enabledLevels">enabledLevels</h4>
-  <div class="markdown level1 summary"><p>Enabled log levels</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly List&lt;LogLevel&gt; enabledLevels</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">LogLevel</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="KS_Network_FTP_FTPLogger_BeginScope_" data-uid="KS.Network.FTP.FTPLogger.BeginScope*"></a>
-  <h4 id="KS_Network_FTP_FTPLogger_BeginScope__1___0_" data-uid="KS.Network.FTP.FTPLogger.BeginScope``1(``0)">BeginScope&lt;TState&gt;(TState)</h4>
-  <div class="markdown level1 summary"><p>Begins the logical logging scope</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IDisposable BeginScope&lt;TState&gt;(TState state)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TState</span></td>
-        <td><span class="parametername">state</span></td>
-        <td><p>State</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IDisposable</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TState</span></td>
-        <td><p>State type</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Network_FTP_FTPLogger_IsEnabled_" data-uid="KS.Network.FTP.FTPLogger.IsEnabled*"></a>
-  <h4 id="KS_Network_FTP_FTPLogger_IsEnabled_LogLevel_" data-uid="KS.Network.FTP.FTPLogger.IsEnabled(LogLevel)">IsEnabled(LogLevel)</h4>
-  <div class="markdown level1 summary"><p>Whether a specific log level is enabled</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsEnabled(LogLevel logLevel)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">LogLevel</span></td>
-        <td><span class="parametername">logLevel</span></td>
-        <td><p>Log level to query</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="KS_Network_FTP_FTPLogger_Log_" data-uid="KS.Network.FTP.FTPLogger.Log*"></a>
-  <h4 id="KS_Network_FTP_FTPLogger_Log__1_LogLevel_EventId___0_Exception_Func___0_Exception_System_String__" data-uid="KS.Network.FTP.FTPLogger.Log``1(LogLevel,EventId,``0,Exception,Func{``0,Exception,System.String})">Log&lt;TState&gt;(LogLevel, EventId, TState, Exception, Func&lt;TState, Exception, String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Instructs the logger to write logging information to the debugger</p>
-</div>
+  <h4 id="KS_Network_FTP_FTPLogger_Log_FtpLogEntry_" data-uid="KS.Network.FTP.FTPLogger.Log(FtpLogEntry)">Log(FtpLogEntry)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Log&lt;TState&gt;(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func&lt;TState, Exception, string&gt; formatter)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Log(FtpLogEntry entry)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -252,60 +120,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">LogLevel</span></td>
-        <td><span class="parametername">logLevel</span></td>
-        <td><p>Log level</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">EventId</span></td>
-        <td><span class="parametername">eventId</span></td>
+        <td><span class="xref">FtpLogEntry</span></td>
+        <td><span class="parametername">entry</span></td>
         <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">TState</span></td>
-        <td><span class="parametername">state</span></td>
-        <td><p>State</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Exception</span></td>
-        <td><span class="parametername">exception</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Func</span>&lt;TState, <span class="xref">Exception</span>, <span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">formatter</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TState</span></td>
-        <td><p>State type</p>
-</td>
       </tr>
     </tbody>
   </table>
   
   
   <a id="KS_Network_FTP_FTPLogger_TranslateLogLevel_" data-uid="KS.Network.FTP.FTPLogger.TranslateLogLevel*"></a>
-  <h4 id="KS_Network_FTP_FTPLogger_TranslateLogLevel_LogLevel_" data-uid="KS.Network.FTP.FTPLogger.TranslateLogLevel(LogLevel)">TranslateLogLevel(LogLevel)</h4>
-  <div class="markdown level1 summary"><p>Translates a value of <see cref="!:Microsoft.Extensions.Logging.LogLevel"></see> to <a class="xref" href="KS.Kernel.Debugging.DebugLevel.html">DebugLevel</a></p>
+  <h4 id="KS_Network_FTP_FTPLogger_TranslateLogLevel_FtpTraceLevel_" data-uid="KS.Network.FTP.FTPLogger.TranslateLogLevel(FtpTraceLevel)">TranslateLogLevel(FtpTraceLevel)</h4>
+  <div class="markdown level1 summary"><p>Translates a value of <see cref="!:FtpTraceLevel"></see> to <a class="xref" href="KS.Kernel.Debugging.DebugLevel.html">DebugLevel</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DebugLevel TranslateLogLevel(LogLevel logLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DebugLevel TranslateLogLevel(FtpTraceLevel logLevel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -318,7 +148,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">LogLevel</span></td>
+        <td><span class="xref">FtpTraceLevel</span></td>
         <td><span class="parametername">logLevel</span></td>
         <td><p>Log level from logger</p>
 </td>
