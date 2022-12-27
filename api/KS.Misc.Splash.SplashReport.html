@@ -256,64 +256,13 @@
   
   
   <a id="KS_Misc_Splash_SplashReport_ReportProgress_" data-uid="KS.Misc.Splash.SplashReport.ReportProgress*"></a>
-  <h4 id="KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_String___" data-uid="KS.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.String[])">ReportProgress(String, Int32, ColorTools.ColTypes, String[])</h4>
+  <h4 id="KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Boolean_KS_Misc_Splash_ISplash_System_String___" data-uid="KS.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.Boolean,KS.Misc.Splash.ISplash,System.String[])">ReportProgress(String, Int32, Boolean, ISplash, String[])</h4>
   <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static void ReportProgress(string Text, int Progress, ColorTools.ColTypes ColTypes = ColorTools.ColTypes.NeutralText, params string[] Vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">Text</span></td>
-        <td><p>The progress text to indicate how did the kernel progress</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">Progress</span></td>
-        <td><p>The progress indicator of the kernel</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.ConsoleBase.Colors.ColorTools.ColTypes.html">ColorTools.ColTypes</a></td>
-        <td><span class="parametername">ColTypes</span></td>
-        <td><p>A type of colors that will be changed.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span>[]</td>
-        <td><span class="parametername">Vars</span></td>
-        <td><p>Varibales to be expanded to text</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_String____remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br>
-it will report the progress to the splash system. You can force it to report the progress by passing force.</p>
-</div>
-  
-  
-  <a id="KS_Misc_Splash_SplashReport_ReportProgress_" data-uid="KS.Misc.Splash.SplashReport.ReportProgress*"></a>
-  <h4 id="KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Boolean_KS_Misc_Splash_ISplash_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_String___" data-uid="KS.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.Boolean,KS.Misc.Splash.ISplash,KS.ConsoleBase.Colors.ColorTools.ColTypes,System.String[])">ReportProgress(String, Int32, Boolean, ISplash, ColorTools.ColTypes, String[])</h4>
-  <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static void ReportProgress(string Text, int Progress, bool force = false, ISplash splash = null, ColorTools.ColTypes ColTypes = ColorTools.ColTypes.NeutralText, params string[] Vars)</code></pre>
+    <pre><code class="lang-csharp hljs">static void ReportProgress(string Text, int Progress, bool force = false, ISplash splash = null, params string[] Vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -350,9 +299,48 @@ it will report the progress to the splash system. You can force it to report the
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="KS.ConsoleBase.Colors.ColorTools.ColTypes.html">ColorTools.ColTypes</a></td>
-        <td><span class="parametername">ColTypes</span></td>
-        <td><p>A type of colors that will be changed.</p>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">Vars</span></td>
+        <td><p>Varibales to be expanded to text</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Boolean_KS_Misc_Splash_ISplash_System_String____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br>
+it will report the progress to the splash system. You can force it to report the progress by passing force.</p>
+</div>
+  
+  
+  <a id="KS_Misc_Splash_SplashReport_ReportProgress_" data-uid="KS.Misc.Splash.SplashReport.ReportProgress*"></a>
+  <h4 id="KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_String___" data-uid="KS.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.String[])">ReportProgress(String, Int32, String[])</h4>
+  <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static void ReportProgress(string Text, int Progress, params string[] Vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Text</span></td>
+        <td><p>The progress text to indicate how did the kernel progress</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Progress</span></td>
+        <td><p>The progress indicator of the kernel</p>
 </td>
       </tr>
       <tr>
@@ -363,7 +351,7 @@ it will report the progress to the splash system. You can force it to report the
       </tr>
     </tbody>
   </table>
-  <h5 id="KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Boolean_KS_Misc_Splash_ISplash_KS_ConsoleBase_Colors_ColorTools_ColTypes_System_String____remarks">Remarks</h5>
+  <h5 id="KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_String____remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br>
 it will report the progress to the splash system. You can force it to report the progress by passing force.</p>
 </div>

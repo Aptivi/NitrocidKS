@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class HardwareList
+    <title>Class LicenseCommand
    | Kernel Simulator API - Aptivi </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class HardwareList
+    <meta name="title" content="Class LicenseCommand
    | Kernel Simulator API - Aptivi ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -78,48 +78,47 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="KS.Hardware.HardwareList">
+            <article class="content wrap" id="_content" data-uid="KS.Shell.Shells.UESH.Commands.LicenseCommand">
   
   
-  <h1 id="KS_Hardware_HardwareList" data-uid="KS.Hardware.HardwareList" class="text-break">Class HardwareList
+  <h1 id="KS_Shell_Shells_UESH_Commands_LicenseCommand" data-uid="KS.Shell.Shells.UESH.Commands.LicenseCommand" class="text-break">Class LicenseCommand
   </h1>
-  <div class="markdown level0 summary"><p>Hardware list module</p>
+  <div class="markdown level0 summary"><p>Shows the license for the program</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">HardwareList</span></div>
+    <div class="level1"><a class="xref" href="KS.Shell.ShellBase.Commands.BaseCommand.html">BaseCommand</a></div>
+    <div class="level2"><span class="xref">LicenseCommand</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Hardware.html">KS.Hardware</a></h6>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Shell.ShellBase.Commands.ICommand.html">ICommand</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_HelpHelper">BaseCommand.HelpHelper()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Shell.Shells.UESH.Commands.html">KS.Shell.Shells.UESH.Commands</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
-  <h5 id="KS_Hardware_HardwareList_syntax">Syntax</h5>
+  <h5 id="KS_Shell_Shells_UESH_Commands_LicenseCommand_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class HardwareList : object</code></pre>
+    <pre><code class="lang-csharp hljs">class LicenseCommand : BaseCommand, ICommand</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="KS_Hardware_HardwareList_ListHardware_" data-uid="KS.Hardware.HardwareList.ListHardware*"></a>
-  <h4 id="KS_Hardware_HardwareList_ListHardware" data-uid="KS.Hardware.HardwareList.ListHardware">ListHardware()</h4>
-  <div class="markdown level1 summary"><p>Lists simple information about hardware</p>
-</div>
+  <a id="KS_Shell_Shells_UESH_Commands_LicenseCommand_Execute_" data-uid="KS.Shell.Shells.UESH.Commands.LicenseCommand.Execute*"></a>
+  <h4 id="KS_Shell_Shells_UESH_Commands_LicenseCommand_Execute_System_String_System_String___System_String___" data-uid="KS.Shell.Shells.UESH.Commands.LicenseCommand.Execute(System.String,System.String[],System.String[])">Execute(String, String[], String[])</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static void ListHardware()</code></pre>
-  </div>
-  
-  
-  <a id="KS_Hardware_HardwareList_ListHardware_" data-uid="KS.Hardware.HardwareList.ListHardware*"></a>
-  <h4 id="KS_Hardware_HardwareList_ListHardware_System_String_" data-uid="KS.Hardware.HardwareList.ListHardware(System.String)">ListHardware(String)</h4>
-  <div class="markdown level1 summary"><p>Lists information about hardware</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ListHardware(string HardwareType)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -133,39 +132,27 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">HardwareType</span></td>
-        <td><p>Hadrware type defined by Inxi.NET. If &quot;all&quot;, prints all information.</p>
-</td>
+        <td><span class="parametername">StringArgs</span></td>
+        <td></td>
       </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Hardware_HardwareList_ListHardwareProperties_" data-uid="KS.Hardware.HardwareList.ListHardwareProperties*"></a>
-  <h4 id="KS_Hardware_HardwareList_ListHardwareProperties_FieldInfo_" data-uid="KS.Hardware.HardwareList.ListHardwareProperties(FieldInfo)">ListHardwareProperties(FieldInfo)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static void ListHardwareProperties(FieldInfo Field)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">ListArgsOnly</span></td>
+        <td></td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td><span class="xref">FieldInfo</span></td>
-        <td><span class="parametername">Field</span></td>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">ListSwitchesOnly</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_Execute_System_String_System_String___System_String___">BaseCommand.Execute(String, String[], String[])</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Shell.ShellBase.Commands.ICommand.html">ICommand</a>
+  </div>
 </article>
           </div>
           
