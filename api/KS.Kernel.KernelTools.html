@@ -176,30 +176,6 @@
   </table>
   
   
-  <h4 id="KS_Kernel_KernelTools_LastKernelErrorException" data-uid="KS.Kernel.KernelTools.LastKernelErrorException">LastKernelErrorException</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static Exception LastKernelErrorException</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Exception</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <h4 id="KS_Kernel_KernelTools_RPCPowerListener" data-uid="KS.Kernel.KernelTools.RPCPowerListener">RPCPowerListener</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -237,47 +213,6 @@
   </div>
   
   
-  <a id="KS_Kernel_KernelTools_GeneratePanicDump_" data-uid="KS.Kernel.KernelTools.GeneratePanicDump*"></a>
-  <h4 id="KS_Kernel_KernelTools_GeneratePanicDump_System_String_KS_Kernel_KernelErrorLevel_Exception_" data-uid="KS.Kernel.KernelTools.GeneratePanicDump(System.String,KS.Kernel.KernelErrorLevel,Exception)">GeneratePanicDump(String, KernelErrorLevel, Exception)</h4>
-  <div class="markdown level1 summary"><p>Generates the stack trace dump file for kernel panics</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static void GeneratePanicDump(string Description, KernelErrorLevel ErrorType, Exception Exc)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">Description</span></td>
-        <td><p>Error description</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.Kernel.KernelErrorLevel.html">KernelErrorLevel</a></td>
-        <td><span class="parametername">ErrorType</span></td>
-        <td><p>Error type</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Exception</span></td>
-        <td><span class="parametername">Exc</span></td>
-        <td><p>Exception</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="KS_Kernel_KernelTools_InitEverything_" data-uid="KS.Kernel.KernelTools.InitEverything*"></a>
   <h4 id="KS_Kernel_KernelTools_InitEverything" data-uid="KS.Kernel.KernelTools.InitEverything">InitEverything()</h4>
   <div class="markdown level1 summary"><p>Initializes everything</p>
@@ -287,106 +222,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">static void InitEverything()</code></pre>
   </div>
-  
-  
-  <a id="KS_Kernel_KernelTools_KernelError_" data-uid="KS.Kernel.KernelTools.KernelError*"></a>
-  <h4 id="KS_Kernel_KernelTools_KernelError_KS_Kernel_KernelErrorLevel_System_Boolean_System_Int64_System_String_Exception_System_Object___" data-uid="KS.Kernel.KernelTools.KernelError(KS.Kernel.KernelErrorLevel,System.Boolean,System.Int64,System.String,Exception,System.Object[])">KernelError(KernelErrorLevel, Boolean, Int64, String, Exception, Object[])</h4>
-  <div class="markdown level1 summary"><p>Indicates that there's something wrong with the kernel.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static void KernelError(KernelErrorLevel ErrorType, bool Reboot, long RebootTime, string Description, Exception Exc, params object[] Variables)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="KS.Kernel.KernelErrorLevel.html">KernelErrorLevel</a></td>
-        <td><span class="parametername">ErrorType</span></td>
-        <td><p>Specifies the error type.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">Reboot</span></td>
-        <td><p>Specifies whether to reboot on panic or to show the message to press any key to shut down</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">RebootTime</span></td>
-        <td><p>Specifies seconds before reboot. 0 is instant. Negative numbers are not allowed.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">Description</span></td>
-        <td><p>Explanation of what happened when it errored.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Exception</span></td>
-        <td><span class="parametername">Exc</span></td>
-        <td><p>An exception to get stack traces, etc. Used for dump files currently.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Object</span>[]</td>
-        <td><span class="parametername">Variables</span></td>
-        <td><p>Optional. Specifies variables to get on text that will be printed.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Kernel_KernelTools_KernelErrorDouble_" data-uid="KS.Kernel.KernelTools.KernelErrorDouble*"></a>
-  <h4 id="KS_Kernel_KernelTools_KernelErrorDouble_System_String_Exception_System_Object___" data-uid="KS.Kernel.KernelTools.KernelErrorDouble(System.String,Exception,System.Object[])">KernelErrorDouble(String, Exception, Object[])</h4>
-  <div class="markdown level1 summary"><p>Indicates that there's a double fault with the kernel.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static void KernelErrorDouble(string Description, Exception Exc, params object[] Variables)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">Description</span></td>
-        <td><p>Explanation of what happened when it errored.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Exception</span></td>
-        <td><span class="parametername">Exc</span></td>
-        <td><p>An exception to get stack traces, etc. Used for dump files currently.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Object</span>[]</td>
-        <td><span class="parametername">Variables</span></td>
-        <td><p>Optional. Specifies variables to get on text that will be printed.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="KS_Kernel_KernelTools_ReportNewStage_" data-uid="KS.Kernel.KernelTools.ReportNewStage*"></a>

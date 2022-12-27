@@ -2661,7 +2661,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.KernelErrorException.html",
-          "hash": "vLnXOLCj72+NRlx4dAHcGPnYp1iHIi5EHhVlMaChU8Y="
+          "hash": "EhvYBBAEHbEk2fMXolLerI0Uf8xiOmcoqg8ZzUYtwlI="
         }
       },
       "is_incremental": false,
@@ -2705,11 +2705,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Exceptions.KernelPanic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Exceptions.KernelPanic.html",
+          "hash": "sVKnBzQDcpIN0SNbNqKXHgGiNoehTIyhAl3SGco8eSE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Exceptions.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.html",
-          "hash": "4ax1iItzo5eFSJM2iPdiym9L5NxeeEVYUVFB731nKIM="
+          "hash": "05j6UUEWRKmgwNg8zC+NSwGqOKDy7r0a9gK7z254ae8="
         }
       },
       "is_incremental": false,
@@ -2769,7 +2781,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.KernelTools.html",
-          "hash": "7zH/jf2mRvHQ0T28IwZ+tevWijNWoOqOK1cOEkpMunM="
+          "hash": "3oCS7f9X0B3Wp0mmQ3T41JScxXB7MK1eK+9FFdjN9As="
         }
       },
       "is_incremental": false,
@@ -12096,7 +12108,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "OABOkDnk57u59tKHDSHc5XhPaM8XHs3d1aj1JfVS/UE="
+          "hash": "Hrk2o1YL4X54KigzU3Ipk6FReJ24GV8IA3ELOxmUgiw="
         }
       },
       "is_incremental": false,
@@ -15151,7 +15163,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1006,
+          "total_file_count": 1007,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
