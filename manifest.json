@@ -5801,6 +5801,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Writers.FancyWriters.PowerLineColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Writers.FancyWriters.PowerLineColor.html",
+          "hash": "AMyBm0iGgyy8pq+sf8NUDG54VrxSXgCcCt3cV09NNXk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Writers.FancyWriters.ProgressBarColor.yml",
       "output": {
         ".html": {
@@ -5885,6 +5897,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Writers.FancyWriters.Tools.PowerLineSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Writers.FancyWriters.Tools.PowerLineSegment.html",
+          "hash": "3TwBckpJ8c9u909cf/8v6JM8Uq9bcVOGm4wMT388OZU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Writers.FancyWriters.Tools.PowerLineTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Writers.FancyWriters.Tools.PowerLineTools.html",
+          "hash": "6Dwmn+6DrmIvOzbGdNBJasv6kExq7yU/YBcC3fwc/1E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Writers.FancyWriters.Tools.ProgressTools.yml",
       "output": {
         ".html": {
@@ -5901,7 +5937,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.FancyWriters.Tools.html",
-          "hash": "OYEwmFkfiE85jXdqsNYbvykD48E8zBzAQEsw4dizo8M="
+          "hash": "EEfb4amMMQSIPSxvzimHVfkVRdlb2RHCa0mKEVYwH3Y="
         }
       },
       "is_incremental": false,
@@ -5913,7 +5949,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.FancyWriters.html",
-          "hash": "ehVboaez7mF1+x+BHzfTr3xWuV9HhZxcOtvxhf/IvvM="
+          "hash": "kn8afVx+IkOHDEFDqkO6TPdMzXNtjcSjJznbs0M/mmM="
         }
       },
       "is_incremental": false,
@@ -12132,7 +12168,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ZOU0sZE1+/jzQme6OnCGkY5MusLX0eszxC9V8G5oODw="
+          "hash": "y43m6pGmbMFx7YXuNL3xICwsNiCNX9Nv99d5geRnt6s="
         }
       },
       "is_incremental": false,
@@ -15187,7 +15223,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1009,
+          "total_file_count": 1012,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
