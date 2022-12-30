@@ -102,13 +102,13 @@
   
   
   <a id="KS_Misc_Writers_FancyWriters_Tools_PowerLineSegment__ctor_" data-uid="KS.Misc.Writers.FancyWriters.Tools.PowerLineSegment.#ctor*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_Tools_PowerLineSegment__ctor_Color_Color_System_String_System_Char_" data-uid="KS.Misc.Writers.FancyWriters.Tools.PowerLineSegment.#ctor(Color,Color,System.String,System.Char)">PowerLineSegment(Color, Color, String, Char)</h4>
+  <h4 id="KS_Misc_Writers_FancyWriters_Tools_PowerLineSegment__ctor_Color_Color_System_String_System_Char_System_Char_" data-uid="KS.Misc.Writers.FancyWriters.Tools.PowerLineSegment.#ctor(Color,Color,System.String,System.Char,System.Char)">PowerLineSegment(Color, Color, String, Char, Char)</h4>
   <div class="markdown level1 summary"><p>Installs the segment values to the instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PowerLineSegment(Color segmentForeground, Color segmentBackground, string segmentText, char segmentIcon = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public PowerLineSegment(Color segmentForeground, Color segmentBackground, string segmentText, char segmentIcon = null, char segmentTransitionIcon = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -138,6 +138,11 @@
       <tr>
         <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">segmentIcon</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">segmentTransitionIcon</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -244,6 +249,32 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Writers_FancyWriters_Tools_PowerLineSegment_SegmentTransitionIcon_" data-uid="KS.Misc.Writers.FancyWriters.Tools.PowerLineSegment.SegmentTransitionIcon*"></a>
+  <h4 id="KS_Misc_Writers_FancyWriters_Tools_PowerLineSegment_SegmentTransitionIcon" data-uid="KS.Misc.Writers.FancyWriters.Tools.PowerLineSegment.SegmentTransitionIcon">SegmentTransitionIcon</h4>
+  <div class="markdown level1 summary"><p>Segment transition icon. This should be an iconic character.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char SegmentTransitionIcon { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
         <td></td>
       </tr>
     </tbody>
