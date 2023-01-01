@@ -837,7 +837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Network.BaseNetworkDriver.html",
-          "hash": "yCuRVxE2neDZ8AguNDYa24p8riEgyj+LXCIScwx5eeM="
+          "hash": "7lPzfPaWnK+uVlUgaH6CFNsO0ZYqm6FxtyV88rbq2sE="
         }
       },
       "is_incremental": false,
@@ -849,7 +849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Network.Bases.DefaultNetwork.html",
-          "hash": "uViyV6xeig5G5iclIainXzTYKCfn3H9cUpvA7Q752Ro="
+          "hash": "JkXDPhKKdkLoKPkYJVoh4wchIGoVh2QemQQQuCXU+0k="
         }
       },
       "is_incremental": false,
@@ -873,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Network.INetworkDriver.html",
-          "hash": "Z1HUG/JUL8rwVS40bZp6SamKR3C1i273RvmoSb9SHSQ="
+          "hash": "Qo8ZkE3yvZcwjcOtBgmmVLZ8gAxO1qsLWtz4Z4XVhfQ="
         }
       },
       "is_incremental": false,
@@ -2697,7 +2697,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.KernelExceptionType.html",
-          "hash": "qfBTkihMQomXHGI/ub6GNxBJ8x6ve9yJLsSOaFh26OU="
+          "hash": "MmTRiYw2s9iPq6N+kwJ0rtbu12Dof8gQmS/GaX1/0kA="
         }
       },
       "is_incremental": false,
@@ -6213,7 +6213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.Base.NetworkTools.html",
-          "hash": "iyteapXhGdL2zvwTXeXbxM/Bp5btBnmRvcJbm5uAnf0="
+          "hash": "oH2r7HAzQaF1D+DADf6XR7kuqxcofGK4eH2fRs0PqM4="
         }
       },
       "is_incremental": false,
@@ -8385,7 +8385,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.BaseCommand.html",
-          "hash": "Rr2UBBRwO1Mppg4bSrGV616KeQOK6qR9HqK5uo/0xsc="
+          "hash": "SNpSy2uJX+4QHoAq/6OCaM0Z8cHKnzr6v2UyFuH2GHM="
         }
       },
       "is_incremental": false,
@@ -11216,6 +11216,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.LsNetCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.LsNetCommand.html",
+          "hash": "s2sGNYrA0mzzeQxnPzq5rK35szVPcuw9QmWz/5sP9Ko="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.LsVarsCommand.yml",
       "output": {
         ".html": {
@@ -11928,7 +11940,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.html",
-          "hash": "yprcyyjvklLVbDrXWAk+6BvocfmOKZbMNtYV2ZQnDyQ="
+          "hash": "9uNhr6FDXK0m1r1mMV0trsbUz+ndQhTVIoKMdZjHJFs="
         }
       },
       "is_incremental": false,
@@ -12240,7 +12252,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "8+knR5pgreR3qCEwdegMp1vwJNV/MhWntn+0djn+0As="
+          "hash": "H9zxNnSy3Jqg0RVAzdpyV40NstadoDmw5D/bo71M4x4="
         }
       },
       "is_incremental": false,
@@ -15295,7 +15307,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1018,
+          "total_file_count": 1019,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
