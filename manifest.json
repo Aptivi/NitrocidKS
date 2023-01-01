@@ -3365,6 +3365,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.Lyrics.Lyrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.Lyrics.Lyrics.html",
+          "hash": "uxc4SKo3kv8rUUI33iIwwTgChGoEwmNenOcRR8epqY4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.Lyrics.LyricsSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.Lyrics.LyricsSettings.html",
+          "hash": "ws9DgJa6nqFBy3AhDDHMq9/Ydv//72WDqlZngQmnmek="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.Lyrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.Lyrics.html",
+          "hash": "IED9Gb1m9l4V6qc3O8X540sAGY1cJZioWZl/DiD8QmU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Animations.Pulse.Pulse.yml",
       "output": {
         ".html": {
@@ -4053,7 +4089,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.BaseScreensaver.html",
-          "hash": "iVh2+lZx3jWbH4vfsF5V1jXiygnzl4Ubte8yJuzmdhc="
+          "hash": "OV6umYzyUj944u4Lcah0exjZHNWCNIAzv67ZOUZPzK8="
         }
       },
       "is_incremental": false,
@@ -4877,6 +4913,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.LyricsDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.LyricsDisplay.html",
+          "hash": "1w2qc48PvT+70y3I3r5h39/RQ7e3QREjPQC/6+P/xNg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.LyricsSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.LyricsSettings.html",
+          "hash": "Jb+W2lKTF+Og1ne/bUHhuakwfAtG35nr6mrI7+SBkSg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.Displays.MarqueeDisplay.yml",
       "output": {
         ".html": {
@@ -5385,7 +5445,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.html",
-          "hash": "Kcm2AbAvZW4EgXzE+235kSDStbfhJ+29K97rFrDKfc4="
+          "hash": "91iQ/Rt3barTw7FPuE9T5cw/d3mmgpjjRpIH2UD+hyY="
         }
       },
       "is_incremental": false,
@@ -8325,7 +8385,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.BaseCommand.html",
-          "hash": "D4cJEviuqM88iNfTCAcp5H/3AzjtYUxWtsudYgTOv3k="
+          "hash": "Rr2UBBRwO1Mppg4bSrGV616KeQOK6qR9HqK5uo/0xsc="
         }
       },
       "is_incremental": false,
@@ -11300,6 +11360,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.PlayLyricCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.PlayLyricCommand.html",
+          "hash": "nMdaWJJH2usNkQZq0Fpp+dNHhf03dqGDiQ+jnxWazd4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.PreviewSplashCommand.yml",
       "output": {
         ".html": {
@@ -11856,7 +11928,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.html",
-          "hash": "TGpxVwgrNDePwAHHuomnIX7zCEAK8gHZlzs4tda8h8w="
+          "hash": "yprcyyjvklLVbDrXWAk+6BvocfmOKZbMNtYV2ZQnDyQ="
         }
       },
       "is_incremental": false,
@@ -12168,7 +12240,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "y43m6pGmbMFx7YXuNL3xICwsNiCNX9Nv99d5geRnt6s="
+          "hash": "8+knR5pgreR3qCEwdegMp1vwJNV/MhWntn+0djn+0As="
         }
       },
       "is_incremental": false,
@@ -15223,7 +15295,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1012,
+          "total_file_count": 1018,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
