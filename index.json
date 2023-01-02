@@ -2052,7 +2052,7 @@
   "api/KS.Misc.Screensaver.Displays.LyricsSettings.html": {
     "href": "api/KS.Misc.Screensaver.Displays.LyricsSettings.html",
     "title": "Class LyricsSettings | Kernel Simulator API - Aptivi",
-    "keywords": "Class LyricsSettings Settings for Lyrics Inheritance System.Object LyricsSettings Namespace : KS.Misc.Screensaver.Displays Assembly : Kernel Simulator.dll Syntax public static class LyricsSettings : object Fields _faderDelay Declaration static int _faderDelay Field Value Type Description System.Int32 Properties LyricsDelay [Lyrics] How many milliseconds to wait before the next lyric? Declaration public static int LyricsDelay { get; set; } Property Value Type Description System.Int32"
+    "keywords": "Class LyricsSettings Settings for Lyrics Inheritance System.Object LyricsSettings Namespace : KS.Misc.Screensaver.Displays Assembly : Kernel Simulator.dll Syntax public static class LyricsSettings : object Fields _lyricsDelay Declaration static int _lyricsDelay Field Value Type Description System.Int32 Properties LyricsDelay [Lyrics] How many milliseconds to wait before the next lyric? Declaration public static int LyricsDelay { get; set; } Property Value Type Description System.Int32"
   },
   "api/KS.Misc.Screensaver.Displays.MarqueeDisplay.html": {
     "href": "api/KS.Misc.Screensaver.Displays.MarqueeDisplay.html",
