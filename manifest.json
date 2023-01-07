@@ -2745,7 +2745,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Flags.html",
-          "hash": "1eKW4qhyFlojoD9IE1xKUCGdlBf132mG6wht1fh72k8="
+          "hash": "yphBlhqK48Hc8RIDOccHBqklsNMaq2nHh3XsJbidST8="
         }
       },
       "is_incremental": false,
@@ -12284,11 +12284,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Login.ModernLogonScreen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Login.ModernLogonScreen.html",
+          "hash": "PnzuEG9+ltto0HDasq9qBekUoxBT+91yyeNqnpWQSdI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Users.Login.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Users.Login.html",
-          "hash": "W1Q0cGVaQV4B1ayIQ3xpqo9/XIR5xAis7FX6h1RaZV8="
+          "hash": "7hX9EvzWE1JjoFFjZyRPyqZw4o3pBJJrUchhfv0to7g="
         }
       },
       "is_incremental": false,
@@ -12324,7 +12336,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Users.UserManagement.html",
-          "hash": "IozpZo8ubrwdEl4v+bDu6nlbVz0iv6xheguruFCQCuE="
+          "hash": "zLVeKeJomzpflN0JLOc1E3eSgIs1YhOMDg6WqlMNuO0="
         }
       },
       "is_incremental": false,
@@ -12372,7 +12384,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "YrHxAFsPXxHL+rBBdxaDAkdJVVEoxonGqWe3btV1Xgo="
+          "hash": "Qz+mvalZ5mgAsULxQzKD0CvGEGKViI/jloisNa+sTvE="
         }
       },
       "is_incremental": false,
@@ -15427,7 +15439,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1029,
+          "total_file_count": 1030,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
