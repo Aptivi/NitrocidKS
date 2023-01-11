@@ -2777,6 +2777,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.KernelFirstRun.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.KernelFirstRun.html",
+          "hash": "X3qkYL+fGTLIDFEPtFtx5+J/Ic7J3RlcMDu4PUmcijw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.KernelPlatform.yml",
       "output": {
         ".html": {
@@ -2889,7 +2901,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.html",
-          "hash": "9eLDSa7ZZFsBhzEMGzMN1tgySbJ0ZIsHPKG8L0MO2Cc="
+          "hash": "FNhtnSLZ+FWSfND2NYu3xhvtJ1Fs6UQbL9iB67LK7u0="
         }
       },
       "is_incremental": false,
@@ -4017,7 +4029,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Presentation.PresentationTools.html",
-          "hash": "ASxIKlWvoWt+aSXkvGQF/lOplAQoIwTUvWhqPJYOqHA="
+          "hash": "Kcxo4NW8OKQozAL/dA4rtUI+vcwhg3JybKQT2HVGuUE="
         }
       },
       "is_incremental": false,
@@ -12336,7 +12348,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "8Z8ZUcCKNN83xgzA2M4tfSnaaObUfptGn3J+pDStSFQ="
+          "hash": "gihEx5inPNEgVyMz5WIPwglg4oqNWlZyAHBf1Z8CNK8="
         }
       },
       "is_incremental": false,
@@ -15391,7 +15403,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1026,
+          "total_file_count": 1027,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
