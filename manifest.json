@@ -2709,7 +2709,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.KernelExceptionType.html",
-          "hash": "Q4Mt+uLP714hBXEfQTaYBtK0MndXJnPpvKimYslMX30="
+          "hash": "a0pFgTRkMIKkS4Iffgg+2uH2AFdJBipjxg8k2MjTeFk="
         }
       },
       "is_incremental": false,
@@ -12240,7 +12240,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Users.Login.Login.html",
-          "hash": "4Z3+SXpVzDcC26bQlTSi4I6GAjigpPIluE3CfsY5qXY="
+          "hash": "Bj04F17cq77pHm+VDcQgWTcSVD/zD7mWwhRl9qp6xso="
         }
       },
       "is_incremental": false,
@@ -12284,11 +12284,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Permissions.PermissionTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Permissions.PermissionTypes.html",
+          "hash": "xgyQNCgEPjNYzFu4UK70PHu/uScB1F/H4okmk5DvKRg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Permissions.PermissionsTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Permissions.PermissionsTools.html",
+          "hash": "TkNCYaOVYNdB77hNeij1BedygPNyhYbhlT/PN3TIx8M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Permissions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Permissions.html",
+          "hash": "a3aK3KN/uFo/lQnq2wXcICzQdKe/v8U4oc8p5Dqr9R8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Users.UserInfo.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Users.UserInfo.html",
-          "hash": "V7yybEZmJpYNLFMjtd9jBy+lz8HbLMN84O/F7/BCbUA="
+          "hash": "WpnoFs0H6o6xCUhbIky1nJqKYMt+FdoYwrK1E6ZCTVI="
         }
       },
       "is_incremental": false,
@@ -12300,7 +12336,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Users.UserManagement.UserProperty.html",
-          "hash": "GzbcmphmWE6eAGHAvfrwS3flm4UzxzJObsNEKakIJ00="
+          "hash": "1g/R8JsfLnDRHQmonUB4+cvOBmhwRzKT73Wc6v5/7oc="
         }
       },
       "is_incremental": false,
@@ -12360,7 +12396,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "dw/OoEAClgBUa+if3tWuRWT45LqyWlUr7K16B3Rnn9I="
+          "hash": "E6PXbk9beKhF/7sEugoyHZVzqG1CPer5+qfvqAZoEGc="
         }
       },
       "is_incremental": false,
@@ -15415,7 +15451,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1028,
+          "total_file_count": 1031,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
