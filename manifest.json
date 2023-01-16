@@ -3785,6 +3785,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Games.Hangman.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Games.Hangman.html",
+          "hash": "6xpN3uDvyKQTrjeygYU/lVaeOTN2z/eTt+N09VcUyFA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Games.MeteorShooter.yml",
       "output": {
         ".html": {
@@ -3869,23 +3881,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Games.Speller.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Games.Speller.html",
-          "hash": "BodJyszy8V/FJB1IPTMsULHFmCZotwrW7bCKirna+Zw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Games.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Games.html",
-          "hash": "aEpLVGpV+RgEiqg6E+JX2QRsZhSBtl4GGuV21lBIo+Q="
+          "hash": "1d8ZmFEj52olma2QFFlAzfg5uTXHj/PIAEVDYxdxGMg="
         }
       },
       "is_incremental": false,
@@ -8505,7 +8505,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.BaseCommand.html",
-          "hash": "Mg2AduDKQcUGcRAco7kSRcXT7DnD+6ObkZOwguvlAII="
+          "hash": "mW6JRISuX8ERKW0X/XbYeHMNxoGte8GoILlRnq3OjeA="
         }
       },
       "is_incremental": false,
@@ -11177,6 +11177,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.HangmanCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.HangmanCommand.html",
+          "hash": "vj+teaL7/sekUmSpruTrp6x43RyfYRfHhpJvOXa5q4E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.HttpCommand.yml",
       "output": {
         ".html": {
@@ -12096,7 +12108,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.html",
-          "hash": "SdncUy89P4alO0qhS2rgjkeN0cRRw+LwD/TFLeoIHFg="
+          "hash": "BciLcqcDJ48i7TtkLn3oKIqNEYCwFRN1yDeok+1OKHg="
         }
       },
       "is_incremental": false,
@@ -12408,7 +12420,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "4cpmlMCI4hf5KilAw3oqAu/yQWavAkbAliZJInhiUow="
+          "hash": "KlM4hZlwJHVgZrF1zUH+nBUGv/ox34uP8RTN/nW0X44="
         }
       },
       "is_incremental": false,
@@ -15463,7 +15475,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1032,
+          "total_file_count": 1033,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
