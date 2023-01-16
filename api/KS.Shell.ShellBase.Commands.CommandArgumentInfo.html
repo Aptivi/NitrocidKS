@@ -113,13 +113,13 @@
   
   
   <a id="KS_Shell_ShellBase_Commands_CommandArgumentInfo__ctor_" data-uid="KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor*"></a>
-  <h4 id="KS_Shell_ShellBase_Commands_CommandArgumentInfo__ctor_System_String___System_Boolean_System_Int32_Func_System_String_System_String____" data-uid="KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor(System.String[],System.Boolean,System.Int32,Func{System.String,System.String[]})">CommandArgumentInfo(String[], Boolean, Int32, Func&lt;String, String[]&gt;)</h4>
+  <h4 id="KS_Shell_ShellBase_Commands_CommandArgumentInfo__ctor_System_String___System_Boolean_System_Int32_Func_System_String_System_Int32_System_Char___System_String____" data-uid="KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor(System.String[],System.Boolean,System.Int32,Func{System.String,System.Int32,System.Char[],System.String[]})">CommandArgumentInfo(String[], Boolean, Int32, Func&lt;String, Int32, Char[], String[]&gt;)</h4>
   <div class="markdown level1 summary"><p>Installs a new instance of the command argument info class</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CommandArgumentInfo(string[] HelpUsages, bool ArgumentsRequired, int MinimumArguments, Func&lt;string, string[]&gt; AutoCompleter = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public CommandArgumentInfo(string[] HelpUsages, bool ArgumentsRequired, int MinimumArguments, Func&lt;string, int, char[], string[]&gt; AutoCompleter = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -150,7 +150,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>[]&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Int32</span>, <span class="xref">System.Char</span>[], <span class="xref">System.String</span>[]&gt;</td>
         <td><span class="parametername">AutoCompleter</span></td>
         <td><p>Auto completion function</p>
 </td>
@@ -194,7 +194,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Func&lt;string, string[]&gt; AutoCompleter { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Func&lt;string, int, char[], string[]&gt; AutoCompleter { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -206,7 +206,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>[]&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Int32</span>, <span class="xref">System.Char</span>[], <span class="xref">System.String</span>[]&gt;</td>
         <td></td>
       </tr>
     </tbody>
