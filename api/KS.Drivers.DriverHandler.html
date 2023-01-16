@@ -245,6 +245,30 @@
   </table>
   
   
+  <h4 id="KS_Drivers_DriverHandler_currentRegexpDriver" data-uid="KS.Drivers.DriverHandler.currentRegexpDriver">currentRegexpDriver</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static string currentRegexpDriver</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="KS_Drivers_DriverHandler_customConsoleDrivers" data-uid="KS.Drivers.DriverHandler.customConsoleDrivers">customConsoleDrivers</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -365,6 +389,30 @@
   </table>
   
   
+  <h4 id="KS_Drivers_DriverHandler_customRegexpDrivers" data-uid="KS.Drivers.DriverHandler.customRegexpDrivers">customRegexpDrivers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, IRegexpDriver&gt; customRegexpDrivers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.Regexp.IRegexpDriver.html">IRegexpDriver</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="KS_Drivers_DriverHandler_encryptionDrivers" data-uid="KS.Drivers.DriverHandler.encryptionDrivers">encryptionDrivers</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -455,6 +503,30 @@
     <tbody>
       <tr>
         <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.RNG.IRandomDriver.html">IRandomDriver</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="KS_Drivers_DriverHandler_regexpDrivers" data-uid="KS.Drivers.DriverHandler.regexpDrivers">regexpDrivers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, IRegexpDriver&gt; regexpDrivers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.Regexp.IRegexpDriver.html">IRegexpDriver</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -587,6 +659,32 @@
     <tbody>
       <tr>
         <td><a class="xref" href="KS.Drivers.RNG.IRandomDriver.html">IRandomDriver</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Drivers_DriverHandler_CurrentRegexpDriver_" data-uid="KS.Drivers.DriverHandler.CurrentRegexpDriver*"></a>
+  <h4 id="KS_Drivers_DriverHandler_CurrentRegexpDriver" data-uid="KS.Drivers.DriverHandler.CurrentRegexpDriver">CurrentRegexpDriver</h4>
+  <div class="markdown level1 summary"><p>Gets the current regexp driver</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IRegexpDriver CurrentRegexpDriver { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Drivers.Regexp.IRegexpDriver.html">IRegexpDriver</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -975,6 +1073,73 @@
     <tbody>
       <tr>
         <td><a class="xref" href="KS.Drivers.RNG.IRandomDriver.html">IRandomDriver</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Drivers_DriverHandler_GetRegexpDriver_" data-uid="KS.Drivers.DriverHandler.GetRegexpDriver*"></a>
+  <h4 id="KS_Drivers_DriverHandler_GetRegexpDriver" data-uid="KS.Drivers.DriverHandler.GetRegexpDriver">GetRegexpDriver()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static IRegexpDriver GetRegexpDriver()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Drivers.Regexp.IRegexpDriver.html">IRegexpDriver</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Drivers_DriverHandler_GetRegexpDriver_" data-uid="KS.Drivers.DriverHandler.GetRegexpDriver*"></a>
+  <h4 id="KS_Drivers_DriverHandler_GetRegexpDriver_System_String_" data-uid="KS.Drivers.DriverHandler.GetRegexpDriver(System.String)">GetRegexpDriver(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static IRegexpDriver GetRegexpDriver(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Drivers.Regexp.IRegexpDriver.html">IRegexpDriver</a></td>
         <td></td>
       </tr>
     </tbody>

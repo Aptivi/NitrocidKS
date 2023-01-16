@@ -597,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.DriverHandler.html",
-          "hash": "8iIcKnnutewQlEWAPLwbiFc5MTzEifBGOUdROJn0nLw="
+          "hash": "jBJaWLdsm8f+TaPbToj+Y8rz8jk2pKkTw9YYStXN7ds="
         }
       },
       "is_incremental": false,
@@ -609,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.DriverTypes.html",
-          "hash": "VcuGerFXXdwXaeVXflQW52ZHr+Mog2roM5p6oIVIkiw="
+          "hash": "xNRxLrS1h3Aij1xLg+H8wa4HFk4hPJuimrljKpQ5TnM="
         }
       },
       "is_incremental": false,
@@ -982,6 +982,66 @@
         ".html": {
           "relative_path": "api/KS.Drivers.RNG.html",
           "hash": "vN83M9ONk7AdmdwJffNYh2A3slwtjewSZrvhFnh3vIw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Regexp.BaseRegexpDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Regexp.BaseRegexpDriver.html",
+          "hash": "J2f0/tgzsgJZL6FlWbZOMhQSsqa6Q6n8oK6e3iYHGWM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Regexp.Bases.DefaultRegexp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Regexp.Bases.DefaultRegexp.html",
+          "hash": "z1l29vIpaRzIXPToGsFMZc1D9UvA2473TPz+g6m0k2M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Regexp.Bases.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Regexp.Bases.html",
+          "hash": "LE1P7awgYBZHUlUmW8kZjcqL36pRQN5A6M+4B4yNmL0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Regexp.IRegexpDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Regexp.IRegexpDriver.html",
+          "hash": "IBdVLFLz1G1knSMlOlyPQt3mc03CBgpLw7/fpqDwcps="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Regexp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Regexp.html",
+          "hash": "7o6E9FCql1NV+bYt4euIUH1LN7ZxZ11AW5K1JuqQsAE="
         }
       },
       "is_incremental": false,
@@ -4090,6 +4150,30 @@
         ".html": {
           "relative_path": "api/KS.Misc.Probers.PlaceParse.html",
           "hash": "boEDDhTgSgiGIGR7tReZWbEbgcxnZkhvdkvKrErFicw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Probers.Regexp.RegexpTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Probers.Regexp.RegexpTools.html",
+          "hash": "ZmfGk/H6691edgmlPByP3eF6KTVMtcbVvln3gcnW4iA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Probers.Regexp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Probers.Regexp.html",
+          "hash": "nu/uZmmPmcfT28beARhto0BYOzDaSo2gXBsm8etnFZg="
         }
       },
       "is_incremental": false,
@@ -12420,7 +12504,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "KlM4hZlwJHVgZrF1zUH+nBUGv/ox34uP8RTN/nW0X44="
+          "hash": "CPbvxQ0OPwpWDlXwwmvqGJMookhkJ4j9X128CBw+/aU="
         }
       },
       "is_incremental": false,
@@ -15475,7 +15559,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1033,
+          "total_file_count": 1040,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
