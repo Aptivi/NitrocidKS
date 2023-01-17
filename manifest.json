@@ -1913,6 +1913,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.InternetCheck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.InternetCheck.html",
+          "hash": "eDDn58cKyl5beXHZLsZT9ePEU2OEnTt7rlAs7w4JeKI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.ListCodepages.yml",
       "output": {
         ".html": {
@@ -1942,6 +1954,18 @@
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.LoadMods.html",
           "hash": "u0GkpNWha1l5gvzUrlSPWCheX8mY0uhnEqvmBefeX2U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.NetworkCheck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.NetworkCheck.html",
+          "hash": "ieC3f690KJY3noh65gLu5wKqLqX9cQvtOPgp5ObkDP0="
         }
       },
       "is_incremental": false,
@@ -2601,7 +2625,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.html",
-          "hash": "fP2552ANh55EZRBX8uriOvy8/QzhKdc8ve/isfyDV4E="
+          "hash": "CPEXykXty5gZlUqWgp3XnefvM6aANU2cuxo3wAehNck="
         }
       },
       "is_incremental": false,
@@ -2613,7 +2637,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.TestFacade.html",
-          "hash": "SRMPgSXc1TE1ktPzyaHASAHyTb3ZaXblTPtvkzilutQ="
+          "hash": "Z00JneC3JkAxWXVoYRwx8sSfsySHVPCIHM6PANGFfNg="
         }
       },
       "is_incremental": false,
@@ -6417,7 +6441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.Base.NetworkTools.html",
-          "hash": "oH2r7HAzQaF1D+DADf6XR7kuqxcofGK4eH2fRs0PqM4="
+          "hash": "rq85t+LfmyNBFm8hN9cDFJRtEgzVlIKkRVMplBJysLQ="
         }
       },
       "is_incremental": false,
@@ -12516,7 +12540,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "aEWjAX2VFy5EBCOeNTwh/yBpngvqnE63nFIo8Fyk/ts="
+          "hash": "D2guLgk2fMW176mXaPchrmAnFygEqgHHJqsxM0rCVr8="
         }
       },
       "is_incremental": false,
@@ -15571,7 +15595,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1041,
+          "total_file_count": 1043,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
