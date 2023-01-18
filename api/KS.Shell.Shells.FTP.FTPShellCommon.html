@@ -125,13 +125,12 @@
   </table>
   
   
-  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpAlwaysAcceptInvalidCerts" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpAlwaysAcceptInvalidCerts">FtpAlwaysAcceptInvalidCerts</h4>
-  <div class="markdown level1 summary"><p>FTP always accept invalid certificates. Turning it on is not recommended.</p>
-</div>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_connectTimeout" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.connectTimeout">connectTimeout</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool FtpAlwaysAcceptInvalidCerts</code></pre>
+    <pre><code class="lang-csharp hljs">static int connectTimeout</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,7 +142,31 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_dataConnectTimeout" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.dataConnectTimeout">dataConnectTimeout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static int dataConnectTimeout</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -174,106 +197,6 @@
   </table>
   
   
-  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpConnectTimeout" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpConnectTimeout">FtpConnectTimeout</h4>
-  <div class="markdown level1 summary"><p>FTP connection timeout in milliseconds</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FtpConnectTimeout</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpCurrentDirectory" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpCurrentDirectory">FtpCurrentDirectory</h4>
-  <div class="markdown level1 summary"><p>FTP current local directory</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string FtpCurrentDirectory</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpCurrentRemoteDir" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpCurrentRemoteDir">FtpCurrentRemoteDir</h4>
-  <div class="markdown level1 summary"><p>FTP current remote directory</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string FtpCurrentRemoteDir</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpDataConnectTimeout" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpDataConnectTimeout">FtpDataConnectTimeout</h4>
-  <div class="markdown level1 summary"><p>FTP data connection timeout in milliseconds</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FtpDataConnectTimeout</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FTPModCommands" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FTPModCommands">FTPModCommands</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -292,31 +215,6 @@
     <tbody>
       <tr>
         <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Shell.ShellBase.Commands.CommandInfo.html">CommandInfo</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpNewConnectionsToSpeedDial" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpNewConnectionsToSpeedDial">FtpNewConnectionsToSpeedDial</h4>
-  <div class="markdown level1 summary"><p>FTP add new connections to speed dial</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool FtpNewConnectionsToSpeedDial</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -347,131 +245,6 @@
   </table>
   
   
-  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpPassPromptStyle" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpPassPromptStyle">FtpPassPromptStyle</h4>
-  <div class="markdown level1 summary"><p>FTP password prompt style</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string FtpPassPromptStyle</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpProtocolVersions" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpProtocolVersions">FtpProtocolVersions</h4>
-  <div class="markdown level1 summary"><p>FTP protocol versions</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static FtpIpVersion FtpProtocolVersions</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">FtpIpVersion</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpRecursiveHashing" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpRecursiveHashing">FtpRecursiveHashing</h4>
-  <div class="markdown level1 summary"><p>FTP recursive hashing</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool FtpRecursiveHashing</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpShowDetailsInList" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpShowDetailsInList">FtpShowDetailsInList</h4>
-  <div class="markdown level1 summary"><p>FTP show details in list</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool FtpShowDetailsInList</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpShowMotd" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpShowMotd">FtpShowMotd</h4>
-  <div class="markdown level1 summary"><p>FTP show MOTD</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool FtpShowMotd</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpSite" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpSite">FtpSite</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -490,56 +263,6 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpTryToValidateCertificate" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpTryToValidateCertificate">FtpTryToValidateCertificate</h4>
-  <div class="markdown level1 summary"><p>FTP try to validate the certificate</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool FtpTryToValidateCertificate</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpUseFirstProfile" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpUseFirstProfile">FtpUseFirstProfile</h4>
-  <div class="markdown level1 summary"><p>FTP always use first profile</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool FtpUseFirstProfile</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -570,38 +293,12 @@
   </table>
   
   
-  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpUserPromptStyle" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpUserPromptStyle">FtpUserPromptStyle</h4>
-  <div class="markdown level1 summary"><p>FTP user prompt style</p>
-</div>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_verifyRetryAttempts" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.verifyRetryAttempts">verifyRetryAttempts</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string FtpUserPromptStyle</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpVerifyRetryAttempts" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpVerifyRetryAttempts">FtpVerifyRetryAttempts</h4>
-  <div class="markdown level1 summary"><p>FTP verify retry attempts</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FtpVerifyRetryAttempts</code></pre>
+    <pre><code class="lang-csharp hljs">static int verifyRetryAttempts</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -642,6 +339,396 @@
     <tbody>
       <tr>
         <td><span class="xref">FtpClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_Shells_FTP_FTPShellCommon_FtpAlwaysAcceptInvalidCerts_" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpAlwaysAcceptInvalidCerts*"></a>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpAlwaysAcceptInvalidCerts" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpAlwaysAcceptInvalidCerts">FtpAlwaysAcceptInvalidCerts</h4>
+  <div class="markdown level1 summary"><p>FTP always accept invalid certificates. Turning it on is not recommended.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FtpAlwaysAcceptInvalidCerts { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_Shells_FTP_FTPShellCommon_FtpConnectTimeout_" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpConnectTimeout*"></a>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpConnectTimeout" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpConnectTimeout">FtpConnectTimeout</h4>
+  <div class="markdown level1 summary"><p>FTP connection timeout in milliseconds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FtpConnectTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_Shells_FTP_FTPShellCommon_FtpCurrentDirectory_" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpCurrentDirectory*"></a>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpCurrentDirectory" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpCurrentDirectory">FtpCurrentDirectory</h4>
+  <div class="markdown level1 summary"><p>FTP current local directory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FtpCurrentDirectory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_Shells_FTP_FTPShellCommon_FtpCurrentRemoteDir_" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpCurrentRemoteDir*"></a>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpCurrentRemoteDir" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpCurrentRemoteDir">FtpCurrentRemoteDir</h4>
+  <div class="markdown level1 summary"><p>FTP current remote directory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FtpCurrentRemoteDir { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_Shells_FTP_FTPShellCommon_FtpDataConnectTimeout_" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpDataConnectTimeout*"></a>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpDataConnectTimeout" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpDataConnectTimeout">FtpDataConnectTimeout</h4>
+  <div class="markdown level1 summary"><p>FTP data connection timeout in milliseconds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FtpDataConnectTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_Shells_FTP_FTPShellCommon_FtpNewConnectionsToSpeedDial_" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpNewConnectionsToSpeedDial*"></a>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpNewConnectionsToSpeedDial" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpNewConnectionsToSpeedDial">FtpNewConnectionsToSpeedDial</h4>
+  <div class="markdown level1 summary"><p>FTP add new connections to speed dial</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FtpNewConnectionsToSpeedDial { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_Shells_FTP_FTPShellCommon_FtpPassPromptStyle_" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpPassPromptStyle*"></a>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpPassPromptStyle" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpPassPromptStyle">FtpPassPromptStyle</h4>
+  <div class="markdown level1 summary"><p>FTP password prompt style</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FtpPassPromptStyle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_Shells_FTP_FTPShellCommon_FtpProtocolVersions_" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpProtocolVersions*"></a>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpProtocolVersions" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpProtocolVersions">FtpProtocolVersions</h4>
+  <div class="markdown level1 summary"><p>FTP protocol versions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FtpIpVersion FtpProtocolVersions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FtpIpVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_Shells_FTP_FTPShellCommon_FtpRecursiveHashing_" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpRecursiveHashing*"></a>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpRecursiveHashing" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpRecursiveHashing">FtpRecursiveHashing</h4>
+  <div class="markdown level1 summary"><p>FTP recursive hashing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FtpRecursiveHashing { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_Shells_FTP_FTPShellCommon_FtpShowDetailsInList_" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpShowDetailsInList*"></a>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpShowDetailsInList" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpShowDetailsInList">FtpShowDetailsInList</h4>
+  <div class="markdown level1 summary"><p>FTP show details in list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FtpShowDetailsInList { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_Shells_FTP_FTPShellCommon_FtpShowMotd_" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpShowMotd*"></a>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpShowMotd" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpShowMotd">FtpShowMotd</h4>
+  <div class="markdown level1 summary"><p>FTP show MOTD</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FtpShowMotd { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_Shells_FTP_FTPShellCommon_FtpTryToValidateCertificate_" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpTryToValidateCertificate*"></a>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpTryToValidateCertificate" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpTryToValidateCertificate">FtpTryToValidateCertificate</h4>
+  <div class="markdown level1 summary"><p>FTP try to validate the certificate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FtpTryToValidateCertificate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_Shells_FTP_FTPShellCommon_FtpUseFirstProfile_" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpUseFirstProfile*"></a>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpUseFirstProfile" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpUseFirstProfile">FtpUseFirstProfile</h4>
+  <div class="markdown level1 summary"><p>FTP always use first profile</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FtpUseFirstProfile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_Shells_FTP_FTPShellCommon_FtpUserPromptStyle_" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpUserPromptStyle*"></a>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpUserPromptStyle" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpUserPromptStyle">FtpUserPromptStyle</h4>
+  <div class="markdown level1 summary"><p>FTP user prompt style</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FtpUserPromptStyle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_Shells_FTP_FTPShellCommon_FtpVerifyRetryAttempts_" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpVerifyRetryAttempts*"></a>
+  <h4 id="KS_Shell_Shells_FTP_FTPShellCommon_FtpVerifyRetryAttempts" data-uid="KS.Shell.Shells.FTP.FTPShellCommon.FtpVerifyRetryAttempts">FtpVerifyRetryAttempts</h4>
+  <div class="markdown level1 summary"><p>FTP verify retry attempts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FtpVerifyRetryAttempts { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>

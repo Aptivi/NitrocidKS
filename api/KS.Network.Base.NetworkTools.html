@@ -101,13 +101,12 @@
   </h3>
   
   
-  <h4 id="KS_Network_Base_NetworkTools_DownloadRetries" data-uid="KS.Network.Base.NetworkTools.DownloadRetries">DownloadRetries</h4>
-  <div class="markdown level1 summary"><p>Download retries before giving up</p>
-</div>
+  <h4 id="KS_Network_Base_NetworkTools_downloadRetries" data-uid="KS.Network.Base.NetworkTools.downloadRetries">downloadRetries</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int DownloadRetries</code></pre>
+    <pre><code class="lang-csharp hljs">static int downloadRetries</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -126,38 +125,12 @@
   </table>
   
   
-  <h4 id="KS_Network_Base_NetworkTools_HostName" data-uid="KS.Network.Base.NetworkTools.HostName">HostName</h4>
-  <div class="markdown level1 summary"><p>Current kernel host name</p>
-</div>
+  <h4 id="KS_Network_Base_NetworkTools_pingTimeout" data-uid="KS.Network.Base.NetworkTools.pingTimeout">pingTimeout</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string HostName</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Network_Base_NetworkTools_PingTimeout" data-uid="KS.Network.Base.NetworkTools.PingTimeout">PingTimeout</h4>
-  <div class="markdown level1 summary"><p>Ping timeout in milliseconds</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int PingTimeout</code></pre>
+    <pre><code class="lang-csharp hljs">static int pingTimeout</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -200,13 +173,12 @@
   </table>
   
   
-  <h4 id="KS_Network_Base_NetworkTools_UploadRetries" data-uid="KS.Network.Base.NetworkTools.UploadRetries">UploadRetries</h4>
-  <div class="markdown level1 summary"><p>Upload retries before giving up</p>
-</div>
+  <h4 id="KS_Network_Base_NetworkTools_uploadRetries" data-uid="KS.Network.Base.NetworkTools.uploadRetries">uploadRetries</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int UploadRetries</code></pre>
+    <pre><code class="lang-csharp hljs">static int uploadRetries</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -225,6 +197,58 @@
   </table>
   <h3 id="properties">Properties
   </h3>
+  
+  
+  <a id="KS_Network_Base_NetworkTools_DownloadRetries_" data-uid="KS.Network.Base.NetworkTools.DownloadRetries*"></a>
+  <h4 id="KS_Network_Base_NetworkTools_DownloadRetries" data-uid="KS.Network.Base.NetworkTools.DownloadRetries">DownloadRetries</h4>
+  <div class="markdown level1 summary"><p>Download retries before giving up</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DownloadRetries { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_Base_NetworkTools_HostName_" data-uid="KS.Network.Base.NetworkTools.HostName*"></a>
+  <h4 id="KS_Network_Base_NetworkTools_HostName" data-uid="KS.Network.Base.NetworkTools.HostName">HostName</h4>
+  <div class="markdown level1 summary"><p>Current kernel host name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string HostName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="KS_Network_Base_NetworkTools_InternetAvailable_" data-uid="KS.Network.Base.NetworkTools.InternetAvailable*"></a>
@@ -273,6 +297,58 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_Base_NetworkTools_PingTimeout_" data-uid="KS.Network.Base.NetworkTools.PingTimeout*"></a>
+  <h4 id="KS_Network_Base_NetworkTools_PingTimeout" data-uid="KS.Network.Base.NetworkTools.PingTimeout">PingTimeout</h4>
+  <div class="markdown level1 summary"><p>Ping timeout in milliseconds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PingTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_Base_NetworkTools_UploadRetries_" data-uid="KS.Network.Base.NetworkTools.UploadRetries*"></a>
+  <h4 id="KS_Network_Base_NetworkTools_UploadRetries" data-uid="KS.Network.Base.NetworkTools.UploadRetries">UploadRetries</h4>
+  <div class="markdown level1 summary"><p>Upload retries before giving up</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UploadRetries { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
