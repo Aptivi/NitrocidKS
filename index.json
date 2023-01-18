@@ -5192,7 +5192,7 @@
   "api/KS.Users.UserInfo.html": {
     "href": "api/KS.Users.UserInfo.html",
     "title": "Class UserInfo | Kernel Simulator API - Aptivi",
-    "keywords": "Class UserInfo User information class Inheritance System.Object UserInfo Namespace : KS.Users Assembly : Kernel Simulator.dll Syntax public class UserInfo : object Constructors UserInfo(String, String, String[]) Makes a new class instance of current user info Declaration protected UserInfo(string username, string password, string[] permissions) Parameters Type Name Description System.String username System.String password System.String [] permissions Properties Password Declaration string Password { } Property Value Type Description System.String Permissions Declaration string[] Permissions { } Property Value Type Description System.String [] Username The username Declaration public string Username { get; } Property Value Type Description System.String"
+    "keywords": "Class UserInfo User information class Inheritance System.Object UserInfo Namespace : KS.Users Assembly : Kernel Simulator.dll Syntax public class UserInfo : object Constructors UserInfo(String, String, String[], String) Makes a new class instance of current user info Declaration protected UserInfo(string username, string password, string[] permissions, string fullName) Parameters Type Name Description System.String username System.String password System.String [] permissions System.String fullName Properties FullName The full name Declaration public string FullName { get; set; } Property Value Type Description System.String Password Declaration string Password { } Property Value Type Description System.String Permissions Declaration string[] Permissions { } Property Value Type Description System.String [] Username The username Declaration public string Username { get; } Property Value Type Description System.String"
   },
   "api/KS.Users.UserManagement.html": {
     "href": "api/KS.Users.UserManagement.html",
@@ -5202,7 +5202,7 @@
   "api/KS.Users.UserManagement.UserProperty.html": {
     "href": "api/KS.Users.UserManagement.UserProperty.html",
     "title": "Enum UserManagement.UserProperty | Kernel Simulator API - Aptivi",
-    "keywords": "Enum UserManagement.UserProperty A user property Namespace : KS.Users Assembly : Kernel Simulator.dll Syntax public enum UserProperty : int Fields Name Description Admin The user is an administrative account Anonymous The user is anonymous Disabled The user is disabled Password Password Permissions List of permissions Username Username"
+    "keywords": "Enum UserManagement.UserProperty A user property Namespace : KS.Users Assembly : Kernel Simulator.dll Syntax public enum UserProperty : int Fields Name Description Admin The user is an administrative account Anonymous The user is anonymous Disabled The user is disabled FullName Full name Password Password Permissions List of permissions Username Username"
   },
   "api/Properties.Resources.html": {
     "href": "api/Properties.Resources.html",
