@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Arguments.ArgumentBase.ArgumentExecutor.html",
-          "hash": "SlHylvjnbTHZsRIzv8d7Q0jlkQ9XzAUAuHpw2f8Dlb8="
+          "hash": "3kzdFEOTz74gqyQIgVlvgKxBDmxkhrzYoQnRrVQMH4g="
         }
       },
       "is_incremental": false,
@@ -101,11 +101,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_BypassSizeDetectionArgument.yml",
+      "source_relative_path": "api/KS.Arguments.CommandLineArguments.BypassSizeDetectionArgument.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_BypassSizeDetectionArgument.html",
-          "hash": "sW93aKEAnvP3FLMEqLsnAtfazu8RN/6jE2W8A/3wjuk="
+          "relative_path": "api/KS.Arguments.CommandLineArguments.BypassSizeDetectionArgument.html",
+          "hash": "SJZh+L2XpQWOcKAszotp+6EEcY+eiLBPiY9IzhwAY6c="
         }
       },
       "is_incremental": false,
@@ -113,11 +113,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_DebugArgument.yml",
+      "source_relative_path": "api/KS.Arguments.CommandLineArguments.DebugArgument.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_DebugArgument.html",
-          "hash": "RISjVfvdrUI5iGqlhEcGhoC8BVuFilQgVsLKc5wmjUE="
+          "relative_path": "api/KS.Arguments.CommandLineArguments.DebugArgument.html",
+          "hash": "C2Ojs4uniO5a6pIWR/TR+dNKvyCCoJe44kjRE+hiFak="
         }
       },
       "is_incremental": false,
@@ -125,47 +125,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_HelpArgument.yml",
+      "source_relative_path": "api/KS.Arguments.CommandLineArguments.HelpArgument.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_HelpArgument.html",
-          "hash": "1+vrvJuRTiJVoLL3BvmVLo67hI7cu6vxxL4eWO3mk+4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_ResetArgument.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_ResetArgument.html",
-          "hash": "FVdGt8pgs4f0MMqoxTmlSHprhSfGZOIvT5K18jZcifs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_TerminalDebugArgument.html",
-          "hash": "c4xv+d3u+qqzsX3WfW2QJ+CT5lRXEhP0r58v2ZxD2HE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_TestInteractiveArgument.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Arguments.CommandLineArguments.CommandLine_TestInteractiveArgument.html",
-          "hash": "+ZBTRvRVF3b/5GHAExINn+u9U3MSaTlfqD/nRJvps8o="
+          "relative_path": "api/KS.Arguments.CommandLineArguments.HelpArgument.html",
+          "hash": "RyiQwCqlVv4mARparnUUWU6z9EGXC2L7TZc6mvatrnA="
         }
       },
       "is_incremental": false,
@@ -209,6 +173,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Arguments.CommandLineArguments.ResetArgument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Arguments.CommandLineArguments.ResetArgument.html",
+          "hash": "MOSlV5zqcFvIXJNUGBIrkV1aUEZNlc89dYP2v3Pw6kc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Arguments.CommandLineArguments.SafeArgument.yml",
       "output": {
         ".html": {
@@ -221,11 +197,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Arguments.CommandLineArguments.TerminalDebugArgument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Arguments.CommandLineArguments.TerminalDebugArgument.html",
+          "hash": "p1EUWElstsoGX+r3xyyQrR1Pq/nwaugLaEF9iNUh/CI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Arguments.CommandLineArguments.TestInteractiveArgument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Arguments.CommandLineArguments.TestInteractiveArgument.html",
+          "hash": "2yG4I+Yaz8fzSv5KZzY29rZdbP3qipIgqBScgj1DLyY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Arguments.CommandLineArguments.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Arguments.CommandLineArguments.html",
-          "hash": "FVL4V8a8oMCMfnExeodtuGqSQVGYOzXd7Jx4fWdu1WY="
+          "hash": "PZMxkbUsUv2K9U9IIbSjJ7GKcwcrT3o5pVswlXMSBRY="
         }
       },
       "is_incremental": false,
@@ -12552,7 +12552,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "cpiv5YOFdnSKnS8vjeEOAeMb0TfoC8mccexChsz8gO8="
+          "hash": "HFpiqHiZ+PzjzDxp0URk7D9M6kP5uVzQNZtiKmsxBXE="
         }
       },
       "is_incremental": false,
