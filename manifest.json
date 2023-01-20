@@ -3665,6 +3665,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Calendar.CalendarTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Calendar.CalendarTools.html",
+          "hash": "61M0wHiubEsJOnklj5zSDo3FrEWf+xMGLZR/Giziuec="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Calendar.CalendarTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Calendar.CalendarTypes.html",
+          "hash": "xjdcMSD7Jq9MLO78SY/zRu6AJp31qomQn1wOvbm3e2g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Calendar.Events.EventInfo.yml",
       "output": {
         ".html": {
@@ -3741,7 +3765,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Calendar.html",
-          "hash": "MakrGg8AYNRjDFJcJANhJQrXly8kDXTx/F7BZdKvXTs="
+          "hash": "7l2EFR8fjqkUond7MKn8Rxhy/x9XEtEKPgTEp4wEviE="
         }
       },
       "is_incremental": false,
@@ -12552,7 +12576,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "HFpiqHiZ+PzjzDxp0URk7D9M6kP5uVzQNZtiKmsxBXE="
+          "hash": "j/CQCSOV7xWOwv6dYu3Qia4ZiCwV4JQ986vAOhqbhrc="
         }
       },
       "is_incremental": false,
@@ -15607,7 +15631,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1044,
+          "total_file_count": 1046,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

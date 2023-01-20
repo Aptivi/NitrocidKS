@@ -1519,6 +1519,16 @@
     "title": "Class CalendarPrint | Kernel Simulator API - Aptivi",
     "keywords": "Class CalendarPrint Calendar printing module Inheritance System.Object CalendarPrint Namespace : KS.Misc.Calendar Assembly : Kernel Simulator.dll Syntax public static class CalendarPrint : object Methods PrintCalendar() Prints the table of the calendar Declaration public static void PrintCalendar() PrintCalendar(Int32, Int32) Prints the table of the calendar Declaration public static void PrintCalendar(int Year, int Month) Parameters Type Name Description System.Int32 Year System.Int32 Month"
   },
+  "api/KS.Misc.Calendar.CalendarTools.html": {
+    "href": "api/KS.Misc.Calendar.CalendarTools.html",
+    "title": "Class CalendarTools | Kernel Simulator API - Aptivi",
+    "keywords": "Class CalendarTools Calendar tools Inheritance System.Object CalendarTools Namespace : KS.Misc.Calendar Assembly : Kernel Simulator.dll Syntax public static class CalendarTools : object Properties AltCalendar Alternative calendar Declaration public static CalendarTypes AltCalendar { get; set; } Property Value Type Description CalendarTypes Methods GetCultureFromCalendar(CalendarTypes) Gets the culture from the culture type Declaration public static CultureInfo GetCultureFromCalendar(CalendarTypes calendar) Parameters Type Name Description CalendarTypes calendar Calendar type Returns Type Description CultureInfo"
+  },
+  "api/KS.Misc.Calendar.CalendarTypes.html": {
+    "href": "api/KS.Misc.Calendar.CalendarTypes.html",
+    "title": "Enum CalendarTypes | Kernel Simulator API - Aptivi",
+    "keywords": "Enum CalendarTypes Calendar types Namespace : KS.Misc.Calendar Assembly : Kernel Simulator.dll Syntax public enum CalendarTypes : int Fields Name Description Gregorian The Gregorian calendar (en-US culture) Hijri The Hijri calendar (ar culture) Persian The Persian calendar (fa culture) SaudiHijri The Saudi-Hijri calendar (ar-SA culture) ThaiBuddhist The Thai-Buddhist calendar (th-TH culture)"
+  },
   "api/KS.Misc.Calendar.Events.EventInfo.html": {
     "href": "api/KS.Misc.Calendar.Events.EventInfo.html",
     "title": "Class EventInfo | Kernel Simulator API - Aptivi",
@@ -1537,7 +1547,7 @@
   "api/KS.Misc.Calendar.html": {
     "href": "api/KS.Misc.Calendar.html",
     "title": "Namespace KS.Misc.Calendar | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Misc.Calendar Classes CalendarPrint Calendar printing module"
+    "keywords": "Namespace KS.Misc.Calendar Classes CalendarPrint Calendar printing module CalendarTools Calendar tools Enums CalendarTypes Calendar types"
   },
   "api/KS.Misc.Calendar.Reminders.html": {
     "href": "api/KS.Misc.Calendar.Reminders.html",
