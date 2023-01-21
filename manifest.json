@@ -1697,6 +1697,150 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.ExitCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.ExitCommand.html",
+          "hash": "EC5FBg29EMroAymlzhJOlmbk3hIzlMO2/QOktEH3Uzg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.HelpCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.HelpCommand.html",
+          "hash": "nUG9FDTmF/ZPVuwZStaAowvlVECVjXnz6uhBcPpDDDY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.RegisterCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.RegisterCommand.html",
+          "hash": "NbWTCvu36mIjgLYp2R2rrqd7MRNzRMndkZhlfIBLWIg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.html",
+          "hash": "8nLQMQ+Pq9jJcJEGl62jB9evbCXLNj0OtC/Sh1oN7Zk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.html",
+          "hash": "kl9MpHaSN/0gQ7CRDFngjiEo9RAxaYNrWR/0MrSyHqI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.html",
+          "hash": "qE9R20qPggi43b1wgJQ8xNiN3DI6OCPwYpa5wqgTp78="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandArgumentInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandArgumentInfo.html",
+          "hash": "Jv3/9NnDswqI9PFUKcNNgEQIcnGWjoOx8rqRtUj3viE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandExecutor.html",
+          "hash": "nVY1n7XOe123Jckj22kopVXF9aI45XrQqHZdwq9tBqE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandInfo.html",
+          "hash": "GRj1BkANXPQUb2P/ro/W+JflHGDWQn06UtOTBoleajg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.html",
+          "hash": "Em9RK0JUO+ptgHFqeaL1XkeiQSsDfAYilVSOBFwWvhs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.html",
+          "hash": "9OVfqztgDfD0jBCZNjLJBpnzhN4E9pCwshGRcFh7VdI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.html",
+          "hash": "KvFovUGsSqQ9GR3/hB2nMNUKsVBzF3jYPRsDy0mdE0M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice.yml",
       "output": {
         ".html": {
@@ -12576,7 +12720,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "j/CQCSOV7xWOwv6dYu3Qia4ZiCwV4JQ986vAOhqbhrc="
+          "hash": "jfymMJnUXP1voee4p/qFhc7n3XP4mq6nH29Dcgjo74s="
         }
       },
       "is_incremental": false,
@@ -15631,7 +15775,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1046,
+          "total_file_count": 1058,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
