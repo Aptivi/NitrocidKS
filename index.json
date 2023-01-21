@@ -1522,7 +1522,7 @@
   "api/KS.Misc.Calendar.CalendarTools.html": {
     "href": "api/KS.Misc.Calendar.CalendarTools.html",
     "title": "Class CalendarTools | Kernel Simulator API - Aptivi",
-    "keywords": "Class CalendarTools Calendar tools Inheritance System.Object CalendarTools Namespace : KS.Misc.Calendar Assembly : Kernel Simulator.dll Syntax public static class CalendarTools : object Properties AltCalendar Alternative calendar Declaration public static CalendarTypes AltCalendar { get; set; } Property Value Type Description CalendarTypes Methods GetCultureFromCalendar(CalendarTypes) Gets the culture from the culture type Declaration public static CultureInfo GetCultureFromCalendar(CalendarTypes calendar) Parameters Type Name Description CalendarTypes calendar Calendar type Returns Type Description CultureInfo"
+    "keywords": "Class CalendarTools Calendar tools Inheritance System.Object CalendarTools Namespace : KS.Misc.Calendar Assembly : Kernel Simulator.dll Syntax public static class CalendarTools : object Properties AltCalendar Alternative calendar Declaration public static CalendarTypes AltCalendar { get; set; } Property Value Type Description CalendarTypes EnableAltCalendar Enables the alternative calendar Declaration public static bool EnableAltCalendar { get; set; } Property Value Type Description System.Boolean Methods GetCultureFromCalendar(CalendarTypes) Gets the culture from the culture type Declaration public static CultureInfo GetCultureFromCalendar(CalendarTypes calendar) Parameters Type Name Description CalendarTypes calendar Calendar type Returns Type Description CultureInfo"
   },
   "api/KS.Misc.Calendar.CalendarTypes.html": {
     "href": "api/KS.Misc.Calendar.CalendarTypes.html",
