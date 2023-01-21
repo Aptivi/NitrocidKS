@@ -1733,11 +1733,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.TraceCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.TraceCommand.html",
+          "hash": "6kpQMf5+53aZfYom72T1c0Qnpo/lDBLDhlvSV93RW64="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.UsernameCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.UsernameCommand.html",
+          "hash": "Zb53b2LY7nTG87b4QqvYi/tYlGAsP7sJBUKyGci/YZo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.html",
-          "hash": "8nLQMQ+Pq9jJcJEGl62jB9evbCXLNj0OtC/Sh1oN7Zk="
+          "hash": "sCTkyxrVY4JwM0Imnwp3Mta+fAGPMbxXi15uAOaTxgU="
         }
       },
       "is_incremental": false,
@@ -1761,7 +1785,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.html",
-          "hash": "qE9R20qPggi43b1wgJQ8xNiN3DI6OCPwYpa5wqgTp78="
+          "hash": "qkBdlIUL42R6XGnfbKJAuKGOeHpsJeYow/WhLHP+o6g="
         }
       },
       "is_incremental": false,
@@ -12720,7 +12744,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "jfymMJnUXP1voee4p/qFhc7n3XP4mq6nH29Dcgjo74s="
+          "hash": "AJK6Ro1aXLaXCFXx61CdHlLteK/IRod0tc/RA/U7pbw="
         }
       },
       "is_incremental": false,
@@ -15775,7 +15799,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1058,
+          "total_file_count": 1060,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

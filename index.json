@@ -717,12 +717,22 @@
   "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.html": {
     "href": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.html",
     "title": "Namespace KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands Classes ExitCommand HelpCommand RegisterCommand"
+    "keywords": "Namespace KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands Classes ExitCommand HelpCommand RegisterCommand TraceCommand UsernameCommand"
   },
   "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.RegisterCommand.html": {
     "href": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.RegisterCommand.html",
     "title": "Class RegisterCommand | Kernel Simulator API - Aptivi",
     "keywords": "Class RegisterCommand Inheritance System.Object RemoteDebugBaseCommand RegisterCommand Implements IRemoteDebugCommand Inherited Members RemoteDebugBaseCommand.HelpHelper() Namespace : KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands Assembly : Kernel Simulator.dll Syntax class RegisterCommand : RemoteDebugBaseCommand, IRemoteDebugCommand Methods Execute(String, String[], String[], String) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly, string Address) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly System.String Address Overrides RemoteDebugBaseCommand.Execute(String, String[], String[], String) Implements IRemoteDebugCommand"
+  },
+  "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.TraceCommand.html": {
+    "href": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.TraceCommand.html",
+    "title": "Class TraceCommand | Kernel Simulator API - Aptivi",
+    "keywords": "Class TraceCommand Inheritance System.Object RemoteDebugBaseCommand TraceCommand Implements IRemoteDebugCommand Inherited Members RemoteDebugBaseCommand.HelpHelper() Namespace : KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands Assembly : Kernel Simulator.dll Syntax class TraceCommand : RemoteDebugBaseCommand, IRemoteDebugCommand Methods Execute(String, String[], String[], String) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly, string Address) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly System.String Address Overrides RemoteDebugBaseCommand.Execute(String, String[], String[], String) Implements IRemoteDebugCommand"
+  },
+  "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.UsernameCommand.html": {
+    "href": "api/KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands.UsernameCommand.html",
+    "title": "Class UsernameCommand | Kernel Simulator API - Aptivi",
+    "keywords": "Class UsernameCommand Inheritance System.Object RemoteDebugBaseCommand UsernameCommand Implements IRemoteDebugCommand Inherited Members RemoteDebugBaseCommand.HelpHelper() Namespace : KS.Kernel.Debugging.RemoteDebug.Command.BaseCommands Assembly : Kernel Simulator.dll Syntax class UsernameCommand : RemoteDebugBaseCommand, IRemoteDebugCommand Methods Execute(String, String[], String[], String) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly, string Address) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly System.String Address Overrides RemoteDebugBaseCommand.Execute(String, String[], String[], String) Implements IRemoteDebugCommand"
   },
   "api/KS.Kernel.Debugging.RemoteDebug.Command.html": {
     "href": "api/KS.Kernel.Debugging.RemoteDebug.Command.html",
@@ -737,7 +747,7 @@
   "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.html": {
     "href": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.html",
     "title": "Class RemoteDebugBaseCommand | Kernel Simulator API - Aptivi",
-    "keywords": "Class RemoteDebugBaseCommand The command executor class Inheritance System.Object RemoteDebugBaseCommand ExitCommand HelpCommand RegisterCommand Implements IRemoteDebugCommand Namespace : KS.Kernel.Debugging.RemoteDebug.Command Assembly : Kernel Simulator.dll Syntax public abstract class RemoteDebugBaseCommand : object, IRemoteDebugCommand Methods Execute(String, String[], String[], String) Executes a command Declaration public virtual void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly, string Address) Parameters Type Name Description System.String StringArgs String of arguments System.String [] ListArgsOnly List of all arguments System.String [] ListSwitchesOnly List of all switches System.String Address Device address that executed the command HelpHelper() The help helper Declaration public virtual void HelpHelper() Implements IRemoteDebugCommand"
+    "keywords": "Class RemoteDebugBaseCommand The command executor class Inheritance System.Object RemoteDebugBaseCommand ExitCommand HelpCommand RegisterCommand TraceCommand UsernameCommand Implements IRemoteDebugCommand Namespace : KS.Kernel.Debugging.RemoteDebug.Command Assembly : Kernel Simulator.dll Syntax public abstract class RemoteDebugBaseCommand : object, IRemoteDebugCommand Methods Execute(String, String[], String[], String) Executes a command Declaration public virtual void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly, string Address) Parameters Type Name Description System.String StringArgs String of arguments System.String [] ListArgsOnly List of all arguments System.String [] ListSwitchesOnly List of all switches System.String Address Device address that executed the command HelpHelper() The help helper Declaration public virtual void HelpHelper() Implements IRemoteDebugCommand"
   },
   "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandArgumentInfo.html": {
     "href": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandArgumentInfo.html",
