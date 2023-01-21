@@ -1527,7 +1527,7 @@
   "api/KS.Misc.Calendar.CalendarTypes.html": {
     "href": "api/KS.Misc.Calendar.CalendarTypes.html",
     "title": "Enum CalendarTypes | Kernel Simulator API - Aptivi",
-    "keywords": "Enum CalendarTypes Calendar types Namespace : KS.Misc.Calendar Assembly : Kernel Simulator.dll Syntax public enum CalendarTypes : int Fields Name Description Gregorian The Gregorian calendar (en-US culture) Hijri The Hijri calendar (ar culture) Persian The Persian calendar (fa culture) SaudiHijri The Saudi-Hijri calendar (ar-SA culture) ThaiBuddhist The Thai-Buddhist calendar (th-TH culture)"
+    "keywords": "Enum CalendarTypes Calendar types Namespace : KS.Misc.Calendar Assembly : Kernel Simulator.dll Syntax public enum CalendarTypes : int Fields Name Description Chinese The Chinese calendar (zh-CN culture) Gregorian The Gregorian calendar (en-US culture) Hijri The Hijri calendar (ar culture) Japanese The Japanese calendar (ja-JP culture) Persian The Persian calendar (fa culture) SaudiHijri The Saudi-Hijri calendar (ar-SA culture) ThaiBuddhist The Thai-Buddhist calendar (th-TH culture)"
   },
   "api/KS.Misc.Calendar.Events.EventInfo.html": {
     "href": "api/KS.Misc.Calendar.Events.EventInfo.html",
