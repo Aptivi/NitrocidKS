@@ -5262,7 +5262,7 @@
   "api/KS.Users.Login.ModernLogonScreen.html": {
     "href": "api/KS.Users.Login.ModernLogonScreen.html",
     "title": "Class ModernLogonScreen | Kernel Simulator API - Aptivi",
-    "keywords": "Class ModernLogonScreen Inheritance System.Object ModernLogonScreen Namespace : KS.Users.Login Assembly : Kernel Simulator.dll Syntax static class ModernLogonScreen : object Methods ShowLogon() Declaration static void ShowLogon()"
+    "keywords": "Class ModernLogonScreen Inheritance System.Object ModernLogonScreen Namespace : KS.Users.Login Assembly : Kernel Simulator.dll Syntax static class ModernLogonScreen : object Fields DateTimeUpdateThread Declaration static readonly KernelThread DateTimeUpdateThread Field Value Type Description KernelThread Methods DateTimeWidgetUpdater() Declaration static void DateTimeWidgetUpdater() ShowLogon() Declaration static void ShowLogon()"
   },
   "api/KS.Users.Permissions.html": {
     "href": "api/KS.Users.Permissions.html",
