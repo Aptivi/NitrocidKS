@@ -1209,7 +1209,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.KernelPathType.html",
-          "hash": "q/RTxXoJnzNGTBLwOR6e3N5Wy7fmnwBqLGRTH9RFLaw="
+          "hash": "UjdAR14XPQLk2e/qV84kTvWzHL+Lk/MccKJCbMzBkFI="
         }
       },
       "is_incremental": false,
@@ -1365,7 +1365,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Paths.html",
-          "hash": "ofMrgmGBI545wX+2PwgpaC9WzW1sRTBn8dn6sdJLxUE="
+          "hash": "BSv2lIM2C7IneoVm2WPmnVLDpJnqo/zma2ifNNHzYaA="
         }
       },
       "is_incremental": false,
@@ -2141,6 +2141,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.LoadSavers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.LoadSavers.html",
+          "hash": "b+S8ubgHmXUaZKamK93NEBB2SJRTUW7Mr+WWO01CeaE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.NetworkCheck.yml",
       "output": {
         ".html": {
@@ -2805,7 +2817,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.html",
-          "hash": "CPEXykXty5gZlUqWgp3XnefvM6aANU2cuxo3wAehNck="
+          "hash": "u04th8H6PqPRCArgS7058yOo8pf5ALkqV3a2/I8ich8="
         }
       },
       "is_incremental": false,
@@ -2817,7 +2829,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.TestFacade.html",
-          "hash": "K3TGieaw3+Dz3c8XVe+maeydVzwfUj+CgYQD0isJYyg="
+          "hash": "ngz4qbrxhrcPKt7K3PmWyvf+Q7A73QZVnqUAfxEdStY="
         }
       },
       "is_incremental": false,
@@ -3009,7 +3021,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Flags.html",
-          "hash": "OKalkjE1aJnowow4OdgoBPgVxkuTYbYFsnSR6b5jLXY="
+          "hash": "k/YBk2cTcon4eGhy+hRkAn9xGvoltWT3kcdOqHA1ejM="
         }
       },
       "is_incremental": false,
@@ -4545,7 +4557,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Customized.CustomSaverParser.html",
-          "hash": "kFA9U1qtPlWJM6IgSWvbDBk8CPt41Dd68isMLVpWGFM="
+          "hash": "jf6rG4oOmECbGNy9I8TjoPaYzpSIuMtkRxxNtOmGkUg="
         }
       },
       "is_incremental": false,
@@ -12744,7 +12756,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "AJK6Ro1aXLaXCFXx61CdHlLteK/IRod0tc/RA/U7pbw="
+          "hash": "itwKJshADs+Vkz28L4/++yw1aPkTLpztCzqFlgGnG8E="
         }
       },
       "is_incremental": false,
@@ -15799,7 +15811,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1060,
+          "total_file_count": 1061,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
