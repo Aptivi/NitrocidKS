@@ -281,6 +281,30 @@
   </table>
   
   
+  <h4 id="KS_Misc_Threading_KernelThread_isReady" data-uid="KS.Misc.Threading.KernelThread.isReady">isReady</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool isReady</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="KS_Misc_Threading_KernelThread_ThreadDelegate" data-uid="KS.Misc.Threading.KernelThread.ThreadDelegate">ThreadDelegate</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -383,6 +407,32 @@
   </table>
   
   
+  <a id="KS_Misc_Threading_KernelThread_IsReady_" data-uid="KS.Misc.Threading.KernelThread.IsReady*"></a>
+  <h4 id="KS_Misc_Threading_KernelThread_IsReady" data-uid="KS.Misc.Threading.KernelThread.IsReady">IsReady</h4>
+  <div class="markdown level1 summary"><p>Is the kernel thread ready to start?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReady { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="KS_Misc_Threading_KernelThread_Name_" data-uid="KS.Misc.Threading.KernelThread.Name*"></a>
   <h4 id="KS_Misc_Threading_KernelThread_Name" data-uid="KS.Misc.Threading.KernelThread.Name">Name</h4>
   <div class="markdown level1 summary"><p>The name of the thread</p>
@@ -409,6 +459,17 @@
   </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="KS_Misc_Threading_KernelThread_Regen_" data-uid="KS.Misc.Threading.KernelThread.Regen*"></a>
+  <h4 id="KS_Misc_Threading_KernelThread_Regen" data-uid="KS.Misc.Threading.KernelThread.Regen">Regen()</h4>
+  <div class="markdown level1 summary"><p>Regenerates the kernel thread</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Regen()</code></pre>
+  </div>
   
   
   <a id="KS_Misc_Threading_KernelThread_Start_" data-uid="KS.Misc.Threading.KernelThread.Start*"></a>
@@ -519,6 +580,35 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
   </div>
+  
+  
+  <a id="KS_Misc_Threading_KernelThread_Stop_" data-uid="KS.Misc.Threading.KernelThread.Stop*"></a>
+  <h4 id="KS_Misc_Threading_KernelThread_Stop_System_Boolean_" data-uid="KS.Misc.Threading.KernelThread.Stop(System.Boolean)">Stop(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Stops the kernel thread</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop(bool regen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">regen</span></td>
+        <td><p>Whether to regenerate the kernel thread</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="KS_Misc_Threading_KernelThread_Wait_" data-uid="KS.Misc.Threading.KernelThread.Wait*"></a>
