@@ -1767,7 +1767,7 @@
   "api/KS.Misc.Presentation.Elements.html": {
     "href": "api/KS.Misc.Presentation.Elements.html",
     "title": "Namespace KS.Misc.Presentation.Elements | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Misc.Presentation.Elements Classes InputElement Input element TextElement Text element Interfaces IElement A presentation element"
+    "keywords": "Namespace KS.Misc.Presentation.Elements Classes InputElement Input element MaskedInputElement Masked input element TextElement Text element Interfaces IElement A presentation element"
   },
   "api/KS.Misc.Presentation.Elements.IElement.html": {
     "href": "api/KS.Misc.Presentation.Elements.IElement.html",
@@ -1778,6 +1778,11 @@
     "href": "api/KS.Misc.Presentation.Elements.InputElement.html",
     "title": "Class InputElement | Kernel Simulator API - Aptivi",
     "keywords": "Class InputElement Input element Inheritance System.Object InputElement Implements IElement Namespace : KS.Misc.Presentation.Elements Assembly : Kernel Simulator.dll Syntax public class InputElement : object, IElement Properties Arguments The first argument denotes the prompt to be written, and the rest for the parameters to be formatted Declaration public object[] Arguments { get; set; } Property Value Type Description System.Object [] InvokeAction Invokes the action after rendering the element (normal) Declaration public Action InvokeAction { get; set; } Property Value Type Description Action InvokeActionInput Invokes the action after rendering the element (input) Declaration public Action<object[]> InvokeActionInput { get; set; } Property Value Type Description Action < System.Object []> IsInput Is the element an input? Declaration public bool IsInput { get; } Property Value Type Description System.Boolean WrittenInput Written input Declaration public string WrittenInput { get; set; } Property Value Type Description System.String Methods Render() Renders the text Declaration public void Render() Implements IElement"
+  },
+  "api/KS.Misc.Presentation.Elements.MaskedInputElement.html": {
+    "href": "api/KS.Misc.Presentation.Elements.MaskedInputElement.html",
+    "title": "Class MaskedInputElement | Kernel Simulator API - Aptivi",
+    "keywords": "Class MaskedInputElement Masked input element Inheritance System.Object MaskedInputElement Implements IElement Namespace : KS.Misc.Presentation.Elements Assembly : Kernel Simulator.dll Syntax public class MaskedInputElement : object, IElement Properties Arguments The first argument denotes the prompt to be written, and the rest for the parameters to be formatted Declaration public object[] Arguments { get; set; } Property Value Type Description System.Object [] InvokeAction Invokes the action after rendering the element (normal) Declaration public Action InvokeAction { get; set; } Property Value Type Description Action InvokeActionInput Invokes the action after rendering the element (input) Declaration public Action<object[]> InvokeActionInput { get; set; } Property Value Type Description Action < System.Object []> IsInput Is the element an input? Declaration public bool IsInput { get; } Property Value Type Description System.Boolean WrittenInput Written input Declaration public string WrittenInput { get; set; } Property Value Type Description System.String Methods Render() Renders the text Declaration public void Render() Implements IElement"
   },
   "api/KS.Misc.Presentation.Elements.TextElement.html": {
     "href": "api/KS.Misc.Presentation.Elements.TextElement.html",
