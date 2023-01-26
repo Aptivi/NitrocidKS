@@ -1193,11 +1193,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Interactive.TaskManagerCli.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Interactive.TaskManagerCli.html",
+          "hash": "61eMroBztQEJ12aT+m5YLjp+yxwM/wp4ZAd8wWpbqWw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Files.Interactive.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Interactive.html",
-          "hash": "9XX0vLpls8Y3jxNhfYUDfogKcghf/m/PFqrODR/TlxQ="
+          "hash": "z8oDPNWYXAwEe0iLIZDXK8TFVLD2a5nZUdh1lmGiHrA="
         }
       },
       "is_incremental": false,
@@ -6113,6 +6125,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Threading.Interactive.TaskManagerBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Threading.Interactive.TaskManagerBinding.html",
+          "hash": "kc2+kY4QSjoC2Y0T8dAXejRWNLZ0iuDClZu7YHpTzfo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Threading.Interactive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Threading.Interactive.html",
+          "hash": "E0aMMTUGQwgMGjvO7pb6DYK8HJLLj6UauOYO5XojtXg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Threading.KernelThread.yml",
       "output": {
         ".html": {
@@ -8841,7 +8877,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.BaseCommand.html",
-          "hash": "mW6JRISuX8ERKW0X/XbYeHMNxoGte8GoILlRnq3OjeA="
+          "hash": "AlKiZHeTK4ZZFDplIWNEsZACVzb38+WhNif4St4ez6M="
         }
       },
       "is_incremental": false,
@@ -12320,6 +12356,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.TaskManCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.TaskManCommand.html",
+          "hash": "tVqDs+bXyKovEsgx2RRAJtzpxXtu9xBs7Xs95bxdB5M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ThemeSelCommand.yml",
       "output": {
         ".html": {
@@ -12456,7 +12504,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.html",
-          "hash": "BciLcqcDJ48i7TtkLn3oKIqNEYCwFRN1yDeok+1OKHg="
+          "hash": "28r0gR9a9Z+POB2PlmAnxA/vqQiFMtEl7e2AII8WFTE="
         }
       },
       "is_incremental": false,
@@ -12768,7 +12816,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "bUDhNCTO6QKmyjm7pfpau4s7k64MylwpCRYRGlYNFAg="
+          "hash": "72s2GHvMEtYeQoljXMKGQ2/gjOi2AWP4RUw8Mj6u9Qk="
         }
       },
       "is_incremental": false,
@@ -15823,7 +15871,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1062,
+          "total_file_count": 1066,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
