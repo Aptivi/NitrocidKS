@@ -4101,7 +4101,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Games.Hangman.html",
-          "hash": "6xpN3uDvyKQTrjeygYU/lVaeOTN2z/eTt+N09VcUyFA="
+          "hash": "FMjmMizhSXbtqgpkQ1jRatbtn1DYVq0XtUVliHycwrs="
         }
       },
       "is_incremental": false,
@@ -4193,11 +4193,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Games.Wordle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Games.Wordle.html",
+          "hash": "Cq/vcpbci8LFJaZOakQT35cmA5o4UZFDl81jyq4XeUo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Games.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Games.html",
-          "hash": "1d8ZmFEj52olma2QFFlAzfg5uTXHj/PIAEVDYxdxGMg="
+          "hash": "l6Ia/i9eFrChZ7RDXgWGudqVF18s34yCHSkeKj8TdzE="
         }
       },
       "is_incremental": false,
@@ -6113,11 +6125,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Text.WordManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Text.WordManager.html",
+          "hash": "zvMubZBjoY0WknDmZitC1RoL4vmnrf7bVAyHNyNSYQE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Text.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Text.html",
-          "hash": "1/SGdKKuCcJPFaSqi2vX/0ECt1nkpHRKAgTr2diIKNc="
+          "hash": "8nqaqvuu9NB85qC17jjW7/JTPgUzAAw6F02n0BVrDuA="
         }
       },
       "is_incremental": false,
@@ -8877,7 +8901,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.BaseCommand.html",
-          "hash": "AlKiZHeTK4ZZFDplIWNEsZACVzb38+WhNif4St4ez6M="
+          "hash": "xfE8RGI+zITFZ4bKg6RqsJcUlwsdDSgWeZwoNhhdr8o="
         }
       },
       "is_incremental": false,
@@ -12476,6 +12500,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.WordleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.WordleCommand.html",
+          "hash": "BGU53n/damv2M50pxWdaw+j3F9xp1oGRkRbV3tF3JXY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.WrapCommand.yml",
       "output": {
         ".html": {
@@ -12504,7 +12540,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.html",
-          "hash": "28r0gR9a9Z+POB2PlmAnxA/vqQiFMtEl7e2AII8WFTE="
+          "hash": "kku8bEyfqOWhkiQSynUzaM0YGdlWQJYry1CGucm2V8Q="
         }
       },
       "is_incremental": false,
@@ -12816,7 +12852,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "72s2GHvMEtYeQoljXMKGQ2/gjOi2AWP4RUw8Mj6u9Qk="
+          "hash": "Z0WB0incEpmuBkZ+cvqU24mXNSHtn/f7W61Y2QkfPQQ="
         }
       },
       "is_incremental": false,
@@ -15871,7 +15907,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1066,
+          "total_file_count": 1069,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
