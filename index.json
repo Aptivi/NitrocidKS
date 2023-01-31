@@ -2542,17 +2542,12 @@
   "api/KS.Misc.Text.html": {
     "href": "api/KS.Misc.Text.html",
     "title": "Namespace KS.Misc.Text | Kernel Simulator API - Aptivi",
-    "keywords": "Namespace KS.Misc.Text Classes CharManager Character querying and management module WordManager Word management class Enums TextLocation The console text location (used for screensavers and splashes)"
+    "keywords": "Namespace KS.Misc.Text Classes CharManager Character querying and management module Enums TextLocation The console text location (used for screensavers and splashes)"
   },
   "api/KS.Misc.Text.TextLocation.html": {
     "href": "api/KS.Misc.Text.TextLocation.html",
     "title": "Enum TextLocation | Kernel Simulator API - Aptivi",
     "keywords": "Enum TextLocation The console text location (used for screensavers and splashes) Namespace : KS.Misc.Text Assembly : Kernel Simulator.dll Syntax public enum TextLocation : int Fields Name Description Bottom Bottom of the console Top Top of the console"
-  },
-  "api/KS.Misc.Text.WordManager.html": {
-    "href": "api/KS.Misc.Text.WordManager.html",
-    "title": "Class WordManager | Kernel Simulator API - Aptivi",
-    "keywords": "Class WordManager Word management class Inheritance System.Object WordManager Namespace : KS.Misc.Text Assembly : Kernel Simulator.dll Syntax public class WordManager : object Fields Words Declaration static readonly List<string> Words Field Value Type Description List < System.String > Methods GetRandomWord() Gets a random word Declaration public static string GetRandomWord() Returns Type Description System.String A random word GetRandomWordConditional(Int32, String, String) Gets a random word conditionally Declaration public static string GetRandomWordConditional(int wordMaxLength, string wordStartsWith, string wordEndsWith) Parameters Type Name Description System.Int32 wordMaxLength The maximum length of the word System.String wordStartsWith The word starts with... System.String wordEndsWith The word ends with... Returns Type Description System.String A random word InitializeWords() Initializes the words. Does nothing if already downloaded. Declaration public static void InitializeWords()"
   },
   "api/KS.Misc.Threading.html": {
     "href": "api/KS.Misc.Threading.html",
