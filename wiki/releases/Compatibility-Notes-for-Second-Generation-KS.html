@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Compatibility notes for second-gen KS | Kernel Simulator API - Aptivi </title>
+    <title>Compatibility notes for second-gen KS | Nitrocid KS API - Aptivi </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Compatibility notes for second-gen KS | Kernel Simulator API - Aptivi ">
+    <meta name="title" content="Compatibility notes for second-gen KS | Nitrocid KS API - Aptivi ">
     <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h2 id="compatibility-notes-for-second-gen-ks">Compatibility notes for second-gen KS</h2>
 
-<p>The second-generation versions of Kernel Simulator are not backwards-compatible with the first-generation versions, due to too many structural changes as outlined below. Here are the breaking changes per generation.</p>
+<p>The second-generation versions of Nitrocid KS are not backwards-compatible with the first-generation versions, due to too many structural changes as outlined below. Here are the breaking changes per generation.</p>
 <h3 id="breaking-api-changes-second-generation-revision-0">Breaking API changes (Second-generation, Revision 0)</h3>
 <p>Each breaking change have their own workarounds and description, including the reason why we've removed the API function. You need to provide alternatives for the below deprecated functions or APIs in your mods.</p>
 <h4 id="00200-notes">0.0.20.0 notes</h4>
@@ -585,7 +585,7 @@
 <p>When upgrading your mods to support 0.0.21.0, you must follow the compatibility notes to ensure that your mod works with 0.0.21.0. If you want to support the first-generation KS, you must separate your mod codebase to two parts: one for the first-gen and the other for the second-gen. They can't coexist with each other in your KSMods directory.</p>
 </div>
 <h5 id="consolidated-the-obsolete-functions">Consolidated the obsolete functions</h5>
-<p>The three deprecated functions are just wrappers to the reflection routines in Kernel Simulator. The one sub is about finding settings, but since we already have <code>FindSetting(String, JToken)</code>, why don't we just go ahead and remove the <code>FindSetting(String, Boolean)</code> one, since it doesn't support splashes?</p>
+<p>The three deprecated functions are just wrappers to the reflection routines in Nitrocid KS. The one sub is about finding settings, but since we already have <code>FindSetting(String, JToken)</code>, why don't we just go ahead and remove the <code>FindSetting(String, Boolean)</code> one, since it doesn't support splashes?</p>
 <ul>
 <li>Affected functions:
 <ul>
@@ -731,7 +731,7 @@
 <h5 id="separated-consolecolors-enumeration">Separated ConsoleColors enumeration</h5>
 <p>It was previously inside the Colors255 module. Now, it resides in its own code file. It's in the same namespace.</p>
 <h5 id="removed-ksmiscdictionary-to-substitute-with-dictify">Removed KS.Misc.Dictionary to substitute with Dictify</h5>
-<p>We have removed this namespace that existed in 0.0.23.0 to use the Dictify library so if we try to update it for bug fixes or feature additions, we don't depend on Kernel Simulator for this feature.</p>
+<p>We have removed this namespace that existed in 0.0.23.0 to use the Dictify library so if we try to update it for bug fixes or feature additions, we don't depend on Nitrocid KS for this feature.</p>
 <ul>
 <li><p>Affected functions:</p>
 <ul>

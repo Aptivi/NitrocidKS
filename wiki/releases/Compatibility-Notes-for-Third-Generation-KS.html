@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Breaking API changes (Third generation) | Kernel Simulator API - Aptivi </title>
+    <title>Breaking API changes (Third generation) | Nitrocid KS API - Aptivi </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Breaking API changes (Third generation) | Kernel Simulator API - Aptivi ">
+    <meta name="title" content="Breaking API changes (Third generation) | Nitrocid KS API - Aptivi ">
     <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -86,7 +86,7 @@
 </div>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>.NET Framework 4.8 is no longer supported as of 0.1.0 Beta 1. Please consider using .NET 6.0 instead to continue using Kernel Simulator. This is to improve multi-platform support without having to go to one environment (dotnetfx on Windows and mono on Linux and macOS) for each platform.</p>
+<p>.NET Framework 4.8 is no longer supported as of 0.1.0 Beta 1. Please consider using .NET 6.0 instead to continue using Nitrocid KS. This is to improve multi-platform support without having to go to one environment (dotnetfx on Windows and mono on Linux and macOS) for each platform.</p>
 </div>
 <h5 id="moved-events-to-kskernelevents">Moved events to KS.Kernel.Events</h5>
 <p>All of the event-related code files are moved to <code>KS.Kernel.Events</code> to separate these from the actual kernel code. However, because events are part of the kernel, we prefer to put it on <code>KS.Kernel</code> namespace rather than <code>KS.Misc</code>.</p>
@@ -100,7 +100,7 @@
 </li>
 </ul>
 <h5 id="separated-the-motd-and-mal-parsers">Separated the MOTD and MAL parsers</h5>
-<p>MOTD and MAL parsers were unified since early versions of Kernel Simulator. However, it didn't occur to us that we need to separate them for a very long time. Now is the time to separate them, effectively removing <code>MessageType</code> enumeration.</p>
+<p>MOTD and MAL parsers were unified since early versions of Nitrocid KS. However, it didn't occur to us that we need to separate them for a very long time. Now is the time to separate them, effectively removing <code>MessageType</code> enumeration.</p>
 <h5 id="moved-getterminal-to-kernelplatform">Moved GetTerminal* to KernelPlatform</h5>
 <p>These two functions are actually part of the terminal, and they make use of the $TERM_PROGRAM and $TERM environment variables, which are dependent on the terminal.</p>
 <p>Since these usually are undefined in Windows, we put these functions to KernelPlatform to accomodate the change as platform-dependent, but we don't actually check for Linux to execute these functions, because some terminal emulators in Windows actually define these variables.</p>
@@ -123,7 +123,7 @@
 <h5 id="moved-power-management-functions-to-kskernelpower">Moved power management functions to <code>KS.Kernel.Power</code></h5>
 <p>These power management functions were there in <code>KernelTools</code> since the earliest version of KS. Now, they're relocated to <code>KS.Kernel.Power</code>.</p>
 <h5 id="removed-initpaths-in-favor-of-properties">Removed <code>InitPaths</code> in favor of properties</h5>
-<p>Now, we don't have to initialize paths everytime we make an internal app that depends on Kernel Simulator's paths. The call to the function that gets the path, <code>GetKernelPath</code>, however won't be removed because it's widely used and is unaffected. This reduces the <code>NullReferenceException</code> bugs regarding paths.</p>
+<p>Now, we don't have to initialize paths everytime we make an internal app that depends on Nitrocid KS's paths. The call to the function that gets the path, <code>GetKernelPath</code>, however won't be removed because it's widely used and is unaffected. This reduces the <code>NullReferenceException</code> bugs regarding paths.</p>
 <h5 id="moved-kernel-update-code-to-kernelupdates">Moved kernel update code to <code>Kernel.Updates</code></h5>
 <p>Same story as in power management.</p>
 <h5 id="removed-listargs-from-icommand-and-iargument">Removed <code>ListArgs()</code> from <code>ICommand</code> and <code>IArgument</code></h5>
