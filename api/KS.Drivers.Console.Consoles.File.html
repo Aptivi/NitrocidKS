@@ -104,12 +104,6 @@
     <div>
       <a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver__dumb">BaseConsoleDriver._dumb</a>
     </div>
-    <div>
-      <a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_IsDumb">BaseConsoleDriver.IsDumb</a>
-    </div>
-    <div>
-      <a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Int32_System_Object___">BaseConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Int32, Object[])</a>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Drivers.Console.Consoles.html">KS.Drivers.Console.Consoles</a></h6>
   <h6><strong>Assembly</strong>: Kernel Simulator.dll</h6>
@@ -414,6 +408,33 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_InputEncoding">BaseConsoleDriver.InputEncoding</a></div>
+  
+  
+  <a id="KS_Drivers_Console_Consoles_File_IsDumb_" data-uid="KS.Drivers.Console.Consoles.File.IsDumb*"></a>
+  <h4 id="KS_Drivers_Console_Consoles_File_IsDumb" data-uid="KS.Drivers.Console.Consoles.File.IsDumb">IsDumb</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsDumb { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_IsDumb">BaseConsoleDriver.IsDumb</a></div>
   
   
   <a id="KS_Drivers_Console_Consoles_File_KeyAvailable_" data-uid="KS.Drivers.Console.Consoles.File.KeyAvailable*"></a>
@@ -1294,6 +1315,79 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___">BaseConsoleDriver.WriteWherePlain(String, Int32, Int32, Object[])</a></div>
+  
+  
+  <a id="KS_Drivers_Console_Consoles_File_WriteWhereSlowlyPlain_" data-uid="KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain*"></a>
+  <h4 id="KS_Drivers_Console_Consoles_File_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Int32_System_Object___" data-uid="KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,System.Object[])">WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Int32, Object[])</h4>
+  <div class="markdown level1 summary"><p>Just writes text slowly to file, since we can't do positioning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteWhereSlowlyPlain(string msg, bool Line, int Left, int Top, double MsEachLetter, bool Return, int RightMargin, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">Line</span></td>
+        <td><p>Whether to print a new line or not</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Left</span></td>
+        <td><p>Column number in console</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Top</span></td>
+        <td><p>Row number in console</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">MsEachLetter</span></td>
+        <td><p>Time in milliseconds to delay writing</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">Return</span></td>
+        <td><p>Whether or not to return to old position</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">RightMargin</span></td>
+        <td><p>The right margin</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message before it's written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Drivers.Console.Consoles.BaseConsoleDriver.html#KS_Drivers_Console_Consoles_BaseConsoleDriver_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Int32_System_Object___">BaseConsoleDriver.WriteWhereSlowlyPlain(String, Boolean, Int32, Int32, Double, Boolean, Int32, Object[])</a></div>
   
   
   <a id="KS_Drivers_Console_Consoles_File_WriteWhereSlowlyPlain_" data-uid="KS.Drivers.Console.Consoles.File.WriteWhereSlowlyPlain*"></a>
