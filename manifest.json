@@ -4277,6 +4277,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Presentation.Elements.DynamicTextElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Presentation.Elements.DynamicTextElement.html",
+          "hash": "7cMyrCWo/liuZ7HzJBydvCQtUPzqxCDJ+DDzeg0geuk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Presentation.Elements.IElement.yml",
       "output": {
         ".html": {
@@ -4329,7 +4341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Presentation.Elements.html",
-          "hash": "RJWBGYzBmE5qMA7lhNv2gRMi5n+zsXsKW3wgb0T4Wlc="
+          "hash": "4re2P/xugmwQVEqXX57b4UqMZaZZ0NFS+EdoPimtScc="
         }
       },
       "is_incremental": false,
@@ -12840,7 +12852,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "SQIwNjZ4LyhtFXjGNjobAIJtvNZ1+/zISknoag4025k="
+          "hash": "eTlz+HCLjmc3W9EPJE0/6m1c0cgBpsmblGkk3hi4F5M="
         }
       },
       "is_incremental": false,
@@ -15895,7 +15907,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1068,
+          "total_file_count": 1069,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
