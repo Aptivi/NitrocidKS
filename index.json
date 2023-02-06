@@ -2542,12 +2542,17 @@
   "api/KS.Misc.Text.html": {
     "href": "api/KS.Misc.Text.html",
     "title": "Namespace KS.Misc.Text | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Misc.Text Classes CharManager Character querying and management module Enums TextLocation The console text location (used for screensavers and splashes)"
+    "keywords": "Namespace KS.Misc.Text Classes CharManager Character querying and management module TextTools Tools for text manipulation Enums TextLocation The console text location (used for screensavers and splashes)"
   },
   "api/KS.Misc.Text.TextLocation.html": {
     "href": "api/KS.Misc.Text.TextLocation.html",
     "title": "Enum TextLocation | Nitrocid KS API - Aptivi",
     "keywords": "Enum TextLocation The console text location (used for screensavers and splashes) Namespace : KS.Misc.Text Assembly : Nitrocid.dll Syntax public enum TextLocation : int Fields Name Description Bottom Bottom of the console Top Top of the console"
+  },
+  "api/KS.Misc.Text.TextTools.html": {
+    "href": "api/KS.Misc.Text.TextTools.html",
+    "title": "Class TextTools | Nitrocid KS API - Aptivi",
+    "keywords": "Class TextTools Tools for text manipulation Inheritance System.Object TextTools Namespace : KS.Misc.Text Assembly : Nitrocid.dll Syntax public static class TextTools : object Methods GetWrappedSentences(String, Int32) Gets the wrapped sentences for text wrapping for console Declaration public static string[] GetWrappedSentences(string text, int maximumLength) Parameters Type Name Description System.String text Text to be wrapped System.Int32 maximumLength Maximum length of text before wrapping Returns Type Description System.String [] GetWrappedSentences(String, Int32, Int32) Gets the wrapped sentences for text wrapping for console Declaration public static string[] GetWrappedSentences(string text, int maximumLength, int indentLength) Parameters Type Name Description System.String text Text to be wrapped System.Int32 maximumLength Maximum length of text before wrapping System.Int32 indentLength Indentation length Returns Type Description System.String []"
   },
   "api/KS.Misc.Threading.html": {
     "href": "api/KS.Misc.Threading.html",

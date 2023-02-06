@@ -6125,11 +6125,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Text.TextTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Text.TextTools.html",
+          "hash": "Hcu31QZKnCty1fIH84856wRdm0//axcswAX06QfyTXs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Text.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Text.html",
-          "hash": "7j2nIWzmnguV4CEU24ImEiKeleAELB50LflfzxyafMI="
+          "hash": "ky/Cb7Vus8djMm2PaE0Wa5zgaZ13GVa5c4eg45Ze86U="
         }
       },
       "is_incremental": false,
@@ -12828,7 +12840,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "E6zx9tNLe6nbNXve5d3OXif/FGSKh97LmJ4UHAY5g2E="
+          "hash": "SQIwNjZ4LyhtFXjGNjobAIJtvNZ1+/zISknoag4025k="
         }
       },
       "is_incremental": false,
@@ -15883,7 +15895,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1067,
+          "total_file_count": 1068,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
