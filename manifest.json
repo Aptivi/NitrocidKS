@@ -3545,6 +3545,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.ExcaliBeats.ExcaliBeats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.ExcaliBeats.ExcaliBeats.html",
+          "hash": "XKbKwF4GGy+bxHwv66Y6imgIt0cOby50n0UMsoXYg5Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.ExcaliBeats.ExcaliBeatsSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.ExcaliBeats.ExcaliBeatsSettings.html",
+          "hash": "Xnryb9PZ8ecjxtKNuihr/HqI2yu5BULcIZxc/KQZsGo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.ExcaliBeats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.ExcaliBeats.html",
+          "hash": "LRZ01nHHaE3symG+7fy5dxU5cdJDFXcK+E5HixlQb3A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Animations.Fader.Fader.yml",
       "output": {
         ".html": {
@@ -4581,7 +4617,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.BaseScreensaver.html",
-          "hash": "k131QprM8ZWF4F24yFw73IKYV4wzcRGgBtSXZ9Co4rc="
+          "hash": "ccVXyStb+QCH0YYTmdgWiPB10o5tfHPbWLa4ykuTFcg="
         }
       },
       "is_incremental": false,
@@ -4954,6 +4990,30 @@
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.EqualizerSettings.html",
           "hash": "Jg+uRYsMgeE8Y4LFMgdZ/z5hSDJ81GqKlaVuwVIGtPk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.ExcaliBeatsDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.ExcaliBeatsDisplay.html",
+          "hash": "0e5YUonOmKQUEVzYRHSUjH1SF38jY/izAgYWXzeMjgA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.ExcaliBeatsSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.ExcaliBeatsSettings.html",
+          "hash": "FZ3V8MhsmLiMv83RqB98fbApuexGXESfrFKQNvz4NV0="
         }
       },
       "is_incremental": false,
@@ -5937,7 +5997,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.html",
-          "hash": "csh6aGfwpC0em2lB50J3iyeB/zvd+2JPoJOlhi5VdKA="
+          "hash": "R59XT6zm/Ht8K7o2h16ZozTYbiF7ps2N9keb7rt0q5o="
         }
       },
       "is_incremental": false,
@@ -6285,7 +6345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.ConsoleWriters.TextWriterColor.html",
-          "hash": "7m1dPw69moOFYEq55bBigcgF27pylaSp/rJKwDNwct4="
+          "hash": "pEybcRIhYbAEZW62t7exyeLg+fBhi4saDdl6Ih6229Q="
         }
       },
       "is_incremental": false,
@@ -8901,7 +8961,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.BaseCommand.html",
-          "hash": "IhdEDIepPQ0cASLIBJDbXYSikk0IUlFxOEzI8LP2Wqs="
+          "hash": "o288/PFNFf0hTSMmjeezZk9sj5aFznNYzH9m9TDJDYk="
         }
       },
       "is_incremental": false,
@@ -9281,11 +9341,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Admin.Commands.UserFlagCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Admin.Commands.UserFlagCommand.html",
+          "hash": "gElvmJlsRDDbpltKllDpyjrZT0J3VXlXW7usluGEj8E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.Admin.Commands.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Admin.Commands.html",
-          "hash": "w+M+uSxUyLbOXwSBLPeyAskdgGsubRsC113W9ymn9Zw="
+          "hash": "D+q9RjBCqIdFxgbkG7tniRRk1HDp58r47GWw0GarENw="
         }
       },
       "is_incremental": false,
@@ -12852,7 +12924,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "eTlz+HCLjmc3W9EPJE0/6m1c0cgBpsmblGkk3hi4F5M="
+          "hash": "yCnX4peJVehQ6xlXsYJfZ4BpUMDQgDCHPMQYaO7t3FI="
         }
       },
       "is_incremental": false,
@@ -15907,7 +15979,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1069,
+          "total_file_count": 1075,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
