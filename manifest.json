@@ -777,7 +777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Filesystem.BaseFilesystemDriver.html",
-          "hash": "XytInBSRTqgvaVRDBPZ7xebllHL1uKvLzd3AKMUHCA0="
+          "hash": "wAtuCgE0YWb7ncTG1AvwhylzuqE6LYT+cxoVE1jp560="
         }
       },
       "is_incremental": false,
@@ -789,7 +789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Filesystem.Bases.DefaultFilesystem.html",
-          "hash": "OT4A063RwqaZqUpWw4L9ybc6E3yOx/yIsiaB7o5EJEI="
+          "hash": "C18xjyrNgtocnDdFEhzcy8rBHxEf05uDP4fnX39astg="
         }
       },
       "is_incremental": false,
@@ -813,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Filesystem.IFilesystemDriver.html",
-          "hash": "5p8eUjPtz6OrkhvkZP/OOKLnofLAvV+kUJa7+AFgHBA="
+          "hash": "tC6P6pOB7nwMKpNZp46KyBAUFgPQvqBKYi+45RG1K5I="
         }
       },
       "is_incremental": false,
@@ -1313,6 +1313,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Operations.Manipulation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Operations.Manipulation.html",
+          "hash": "AcQRoNwYVMXGQK2NRtwetKT+jtA4xRVWceZiDOX1208="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Files.Operations.Moving.yml",
       "output": {
         ".html": {
@@ -1341,7 +1353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Operations.html",
-          "hash": "og4MEUicjq5fb4taNz4YmFLiONBoMoBEPxhPSwSBJhE="
+          "hash": "kVw8hsr93fW9LraUzKevLil7ZpKGzaTVz11FiUFsZ+M="
         }
       },
       "is_incremental": false,
@@ -12924,7 +12936,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "yCnX4peJVehQ6xlXsYJfZ4BpUMDQgDCHPMQYaO7t3FI="
+          "hash": "oN/fM0nP5bqiNiwaaIgoDdEjZtzPaR8NlDM9CpMjKqM="
         }
       },
       "is_incremental": false,
@@ -15979,7 +15991,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1075,
+          "total_file_count": 1076,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
