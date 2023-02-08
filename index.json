@@ -2,7 +2,7 @@
   "api/KS.Arguments.ArgumentBase.ArgumentExecutor.html": {
     "href": "api/KS.Arguments.ArgumentBase.ArgumentExecutor.html",
     "title": "Class ArgumentExecutor | Nitrocid KS API - Aptivi",
-    "keywords": "Class ArgumentExecutor Argument executor base class Inheritance System.Object ArgumentExecutor BypassSizeDetectionArgument DebugArgument HelpArgument MaintenanceArgument NoAltBufferArgument QuietArgument ResetArgument SafeArgument TerminalDebugArgument TestInteractiveArgument Implements IArgument Namespace : KS.Arguments.ArgumentBase Assembly : Nitrocid.dll Syntax public abstract class ArgumentExecutor : object, IArgument Methods Execute(String, String[], String[]) Executes the argument Declaration public virtual void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs String of arguments System.String [] ListArgsOnly List of argument arguments System.String [] ListSwitchesOnly List of argument switches Implements IArgument"
+    "keywords": "Class ArgumentExecutor Argument executor base class Inheritance System.Object ArgumentExecutor BypassSizeDetectionArgument DebugArgument HelpArgument LangArgument MaintenanceArgument NoAltBufferArgument QuietArgument ResetArgument SafeArgument TerminalDebugArgument TestInteractiveArgument Implements IArgument Namespace : KS.Arguments.ArgumentBase Assembly : Nitrocid.dll Syntax public abstract class ArgumentExecutor : object, IArgument Methods Execute(String, String[], String[]) Executes the argument Declaration public virtual void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs String of arguments System.String [] ListArgsOnly List of argument arguments System.String [] ListSwitchesOnly List of argument switches Implements IArgument"
   },
   "api/KS.Arguments.ArgumentBase.ArgumentHelpSystem.html": {
     "href": "api/KS.Arguments.ArgumentBase.ArgumentHelpSystem.html",
@@ -52,7 +52,12 @@
   "api/KS.Arguments.CommandLineArguments.html": {
     "href": "api/KS.Arguments.CommandLineArguments.html",
     "title": "Namespace KS.Arguments.CommandLineArguments | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Arguments.CommandLineArguments Classes BypassSizeDetectionArgument DebugArgument HelpArgument MaintenanceArgument NoAltBufferArgument QuietArgument ResetArgument SafeArgument TerminalDebugArgument TestInteractiveArgument"
+    "keywords": "Namespace KS.Arguments.CommandLineArguments Classes BypassSizeDetectionArgument DebugArgument HelpArgument LangArgument MaintenanceArgument NoAltBufferArgument QuietArgument ResetArgument SafeArgument TerminalDebugArgument TestInteractiveArgument"
+  },
+  "api/KS.Arguments.CommandLineArguments.LangArgument.html": {
+    "href": "api/KS.Arguments.CommandLineArguments.LangArgument.html",
+    "title": "Class LangArgument | Nitrocid KS API - Aptivi",
+    "keywords": "Class LangArgument Inheritance System.Object ArgumentExecutor LangArgument Implements IArgument Namespace : KS.Arguments.CommandLineArguments Assembly : Nitrocid.dll Syntax class LangArgument : ArgumentExecutor, IArgument Methods Execute(String, String[], String[]) Declaration public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description System.String StringArgs System.String [] ListArgsOnly System.String [] ListSwitchesOnly Overrides ArgumentExecutor.Execute(String, String[], String[]) Implements IArgument"
   },
   "api/KS.Arguments.CommandLineArguments.MaintenanceArgument.html": {
     "href": "api/KS.Arguments.CommandLineArguments.MaintenanceArgument.html",

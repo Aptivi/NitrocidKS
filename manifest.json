@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Arguments.ArgumentBase.ArgumentExecutor.html",
-          "hash": "FAv1GFURWC7ObHN6AM2TF8j1tppTGpOKrzlVFu2GSS0="
+          "hash": "IPfAYJw1kXD47oTU9vLqDpgtx1AFD7H6nM2u3gBaKBo="
         }
       },
       "is_incremental": false,
@@ -137,6 +137,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Arguments.CommandLineArguments.LangArgument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Arguments.CommandLineArguments.LangArgument.html",
+          "hash": "QIny+kDcPVCq6bD4GABrvsdtdZuivDCLxTL+VfwW9Ts="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Arguments.CommandLineArguments.MaintenanceArgument.yml",
       "output": {
         ".html": {
@@ -225,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Arguments.CommandLineArguments.html",
-          "hash": "tMfv0Fsvs64/FzhsZGQNaWxQQK7O1boYIjlchAtoViU="
+          "hash": "k0G2N3IEUd4a3bjTuU2W3rGav2VgD4rIHzeQ49YXqWE="
         }
       },
       "is_incremental": false,
@@ -12948,7 +12960,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "l4HZJkJjRepU7sOssAxy0lIpxL7xkGcKqEQXwYmQ6PM="
+          "hash": "Ttdyf7ZhTLzqRvfgoyP3Tw2sU+FOTux+/qpdeK2XyxI="
         }
       },
       "is_incremental": false,
@@ -16003,7 +16015,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1077,
+          "total_file_count": 1078,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
