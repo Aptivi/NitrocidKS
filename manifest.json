@@ -2753,6 +2753,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestPresentationKiosk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestPresentationKiosk.html",
+          "hash": "OulnVpRTO8TF8hxSnyj3gi611zQK2w3LnakPOCPlGQM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestPresentationKioskRequired.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestPresentationKioskRequired.html",
+          "hash": "BhwpQtl/jGKZdO2kyBIrYZbzOrHJmQV27KO2bSsfG94="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestPresentationRequired.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestPresentationRequired.html",
+          "hash": "fOPqbiW/9eurzeHbI3ob04kf9UPWXV7FvY0jNQmdaNE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.Testing.Facades.TestRNG.yml",
       "output": {
         ".html": {
@@ -2865,7 +2901,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.Facades.html",
-          "hash": "LfPkD0YWiRAfyDqy+089jVff2xpOH6knmY3TcqOlsro="
+          "hash": "XQQAQTm3/CEuvzKJhwDBPVlqHntR5um6uoY3bAz9bjA="
         }
       },
       "is_incremental": false,
@@ -2877,7 +2913,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.Testing.TestFacade.html",
-          "hash": "qKCkJRyAbn+83j6EjVV51ZchvUFnUXwzaMguFl/1s5s="
+          "hash": "taKRHNuZFJ0gDuqcVGlO1Pw2lbRauXCZ526KkyPL0hI="
         }
       },
       "is_incremental": false,
@@ -4433,6 +4469,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Presentation.PresentationDebugInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Presentation.PresentationDebugInt.html",
+          "hash": "gPZju9YgvXn5Rj3wxxMODcu0eG2MoqZwgVBix/HED3c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Presentation.PresentationPage.yml",
       "output": {
         ".html": {
@@ -4461,7 +4509,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Presentation.html",
-          "hash": "Bn6TrzwFJ97BCK7fEDL1kEZjDCoHq5ZhMpfNdtxrm28="
+          "hash": "gbFmBD5bscMrPinAyOH8xFjUN02bOfSDUYv5tyRJ0tY="
         }
       },
       "is_incremental": false,
@@ -12960,7 +13008,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Ttdyf7ZhTLzqRvfgoyP3Tw2sU+FOTux+/qpdeK2XyxI="
+          "hash": "wrCRWvVXxF3M/opB7mqlrTxxX0zB7pgNkrSyCKJVd3s="
         }
       },
       "is_incremental": false,
@@ -16015,7 +16063,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1078,
+          "total_file_count": 1082,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
