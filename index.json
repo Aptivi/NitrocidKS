@@ -2827,7 +2827,7 @@
   "api/KS.Modifications.ManPages.PageViewer.html": {
     "href": "api/KS.Modifications.ManPages.PageViewer.html",
     "title": "Class PageViewer | Nitrocid KS API - Aptivi",
-    "keywords": "Class PageViewer Mod manual page viewer module Inheritance System.Object PageViewer Namespace : KS.Modifications.ManPages Assembly : Nitrocid.dll Syntax public static class PageViewer : object Properties ManpageInfoStyle Manual page information style Declaration public static string ManpageInfoStyle { get; set; } Property Value Type Description System.String Methods ViewPage(String) Previews the manual page Declaration public static void ViewPage(string ManualTitle) Parameters Type Name Description System.String ManualTitle A manual title"
+    "keywords": "Class PageViewer Mod manual page viewer module Inheritance System.Object PageViewer Namespace : KS.Modifications.ManPages Assembly : Nitrocid.dll Syntax public static class PageViewer : object Methods ViewPage(String) Previews the manual page Declaration public static void ViewPage(string ManualTitle) Parameters Type Name Description System.String ManualTitle A manual title"
   },
   "api/KS.Modifications.ModExecutor.html": {
     "href": "api/KS.Modifications.ModExecutor.html",
