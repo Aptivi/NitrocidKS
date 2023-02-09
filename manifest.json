@@ -525,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html",
-          "hash": "GekV/WkFv7XPkHgqDnfB3nPWMhO/ZA2N0Eg5ePFGoFI="
+          "hash": "pBgh2sHMsV0+L+2SodTPl0WlN5k3taeUzK89vk6HJ2o="
         }
       },
       "is_incremental": false,
@@ -538,6 +538,18 @@
         ".html": {
           "relative_path": "api/KS.Drivers.Console.Consoles.File.html",
           "hash": "HKXG3JqzZbsKvkpwNewFptuEVnn6HN9gpxCzp2D9gAE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Console.Consoles.FileSequence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Console.Consoles.FileSequence.html",
+          "hash": "3a59FkFPOcI8SOoxVlCoqHuaaBcdb61v6nXtZMiAoaA="
         }
       },
       "is_incremental": false,
@@ -585,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Console.Consoles.html",
-          "hash": "YOTpKUjWSwqiiNVZZY4Rkaz6h4VY17x8wgowmx/hvyc="
+          "hash": "DyYAfkuV9Em5QXq2dbz4/H5GrkkPN4yRmnqmPIZRPFc="
         }
       },
       "is_incremental": false,
@@ -13041,7 +13053,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "H56Jmzdh1ec/cOuo5EWw0nze+RupTH7UbliQrSh9m6g="
+          "hash": "/b1K1gd4gEaSOx+8DAJn4bCTEo1n2u87QJ6+hzUKL/Q="
         }
       },
       "is_incremental": false,
@@ -16090,7 +16102,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1085,
+          "total_file_count": 1086,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
