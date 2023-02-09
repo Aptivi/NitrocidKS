@@ -6509,6 +6509,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Writers.FancyWriters.BoxColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Writers.FancyWriters.BoxColor.html",
+          "hash": "/lgke5aShLphiUbsCADI3Il7+JJ4mgk2JC4LBTVqLxg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Writers.FancyWriters.BoxFrameColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Writers.FancyWriters.BoxFrameColor.html",
+          "hash": "n+QkVCS1GO8nUvocBc/wDQW/rFecIOT9dNaICt23f14="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Writers.FancyWriters.FigletColor.yml",
       "output": {
         ".html": {
@@ -6526,6 +6550,18 @@
         ".html": {
           "relative_path": "api/KS.Misc.Writers.FancyWriters.FigletWhereColor.html",
           "hash": "1hmldbQ+tWT/o8TJpqJTFDUFCSlbYKh+XooqIzgsdnw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Writers.FancyWriters.InfoBoxColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html",
+          "hash": "z0R0HQquy7qnLblrGNyucwd+2GvuTyITQWQn9VUDHqw="
         }
       },
       "is_incremental": false,
@@ -6681,7 +6717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Writers.FancyWriters.html",
-          "hash": "ItWyinHJd+zXS2KjNffFGStwN4DXDif+goLhWfYihw4="
+          "hash": "yHb8C+L93jcfdOJ34SrqNC7IYPu8w1o4F5/EVauxeq8="
         }
       },
       "is_incremental": false,
@@ -11788,9 +11824,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "invalid-note-section"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.IfmCommand.yml",
       "output": {
@@ -13008,7 +13041,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wrCRWvVXxF3M/opB7mqlrTxxX0zB7pgNkrSyCKJVd3s="
+          "hash": "H56Jmzdh1ec/cOuo5EWw0nze+RupTH7UbliQrSh9m6g="
         }
       },
       "is_incremental": false,
@@ -13229,9 +13262,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "wiki/commands/Test-commands-for-KS.md",
       "output": {
@@ -15980,9 +16010,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "wiki/toc.md",
       "output": {
@@ -16063,7 +16090,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1082,
+          "total_file_count": 1085,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
