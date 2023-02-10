@@ -1879,11 +1879,6 @@
     "title": "Class PresentationTools | Nitrocid KS API - Aptivi",
     "keywords": "Class PresentationTools Presentation tools Inheritance System.Object PresentationTools Namespace : KS.Misc.Presentation Assembly : Nitrocid.dll Syntax public static class PresentationTools : object Properties PresentationInformationalTop The informational top position Declaration public static int PresentationInformationalTop { get; } Property Value Type Description System.Int32 PresentationLowerInnerBorderLeft The lower right corner of the inner border (the left position) Declaration public static int PresentationLowerInnerBorderLeft { get; } Property Value Type Description System.Int32 PresentationLowerInnerBorderTop The lower right corner of the inner border (the top position) Declaration public static int PresentationLowerInnerBorderTop { get; } Property Value Type Description System.Int32 PresentationUpperBorderLeft The upper left corner of the exterior border (the left position) Declaration public static int PresentationUpperBorderLeft { get; } Property Value Type Description System.Int32 PresentationUpperBorderTop The upper left corner of the exterior border (the top position) Declaration public static int PresentationUpperBorderTop { get; } Property Value Type Description System.Int32 PresentationUpperInnerBorderLeft The upper left corner of the inner border (the left position) Declaration public static int PresentationUpperInnerBorderLeft { get; } Property Value Type Description System.Int32 PresentationUpperInnerBorderTop The upper left corner of the inner border (the top position) Declaration public static int PresentationUpperInnerBorderTop { get; } Property Value Type Description System.Int32 Methods ClearPresentation() Clears the presentation Declaration public static void ClearPresentation() Present(Presentation) Present the presentation Declaration public static void Present(Presentation presentation) Parameters Type Name Description Presentation presentation Presentation instance Present(Presentation, Boolean, Boolean) Present the presentation Declaration public static void Present(Presentation presentation, bool kiosk, bool required) Parameters Type Name Description Presentation presentation Presentation instance System.Boolean kiosk Prevent any key other than ENTER from being pressed System.Boolean required Prevents exiting the presentation PresentationContainsInput(Presentation) Checks to see if the presentation contains input Declaration public static bool PresentationContainsInput(Presentation presentation) Parameters Type Name Description Presentation presentation Target presentation Returns Type Description System.Boolean True if one of the elements in a page contains input"
   },
-  "api/KS.Misc.Probers.html": {
-    "href": "api/KS.Misc.Probers.html",
-    "title": "Namespace KS.Misc.Probers | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Misc.Probers Classes PlaceParse Placeholder parsing module"
-  },
   "api/KS.Misc.Probers.Motd.html": {
     "href": "api/KS.Misc.Probers.Motd.html",
     "title": "Namespace KS.Misc.Probers.Motd | Nitrocid KS API - Aptivi",
@@ -1899,10 +1894,15 @@
     "title": "Class MotdParse | Nitrocid KS API - Aptivi",
     "keywords": "Class MotdParse Message of the Day (MOTD) parsing module Inheritance System.Object MotdParse Namespace : KS.Misc.Probers.Motd Assembly : Nitrocid.dll Syntax public static class MotdParse : object Properties MotdFilePath MOTD file path Declaration public static string MotdFilePath { get; set; } Property Value Type Description System.String MOTDMessage Current MOTD message Declaration public static string MOTDMessage { get; set; } Property Value Type Description System.String Methods ReadMotd() Reads the message of the day Declaration public static void ReadMotd() SetMotd(String) Sets the Message of the Day Declaration public static void SetMotd(string Message) Parameters Type Name Description System.String Message A message of the day"
   },
-  "api/KS.Misc.Probers.PlaceParse.html": {
-    "href": "api/KS.Misc.Probers.PlaceParse.html",
+  "api/KS.Misc.Probers.Placeholder.html": {
+    "href": "api/KS.Misc.Probers.Placeholder.html",
+    "title": "Namespace KS.Misc.Probers.Placeholder | Nitrocid KS API - Aptivi",
+    "keywords": "Namespace KS.Misc.Probers.Placeholder Classes PlaceParse Placeholder parsing module"
+  },
+  "api/KS.Misc.Probers.Placeholder.PlaceParse.html": {
+    "href": "api/KS.Misc.Probers.Placeholder.PlaceParse.html",
     "title": "Class PlaceParse | Nitrocid KS API - Aptivi",
-    "keywords": "Class PlaceParse Placeholder parsing module Inheritance System.Object PlaceParse Namespace : KS.Misc.Probers Assembly : Nitrocid.dll Syntax public static class PlaceParse : object Methods ProbePlaces(String, Boolean) Probes the placeholders found in string Declaration public static string ProbePlaces(string text, bool ThrowIfFailure = false) Parameters Type Name Description System.String text Specified string System.Boolean ThrowIfFailure Throw if the placeholder parsing fails Returns Type Description System.String A string that has the parsed placeholders"
+    "keywords": "Class PlaceParse Placeholder parsing module Inheritance System.Object PlaceParse Namespace : KS.Misc.Probers.Placeholder Assembly : Nitrocid.dll Syntax public static class PlaceParse : object Fields placeholders Declaration static readonly Dictionary<string, Func<string>> placeholders Field Value Type Description Dictionary < System.String , Func < System.String >> Methods ProbePlaces(String, Boolean) Probes the placeholders found in string Declaration public static string ProbePlaces(string text, bool ThrowIfFailure = false) Parameters Type Name Description System.String text Specified string System.Boolean ThrowIfFailure Throw if the placeholder parsing fails Returns Type Description System.String A string that has the parsed placeholders"
   },
   "api/KS.Misc.Probers.Regexp.html": {
     "href": "api/KS.Misc.Probers.Regexp.html",
