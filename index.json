@@ -1797,7 +1797,7 @@
   "api/KS.Misc.Games.Wordle.html": {
     "href": "api/KS.Misc.Games.Wordle.html",
     "title": "Class Wordle | Nitrocid KS API - Aptivi",
-    "keywords": "Class Wordle Inheritance System.Object Wordle Namespace : KS.Misc.Games Assembly : Nitrocid.dll Syntax class Wordle : object Methods InitializeWordle() Declaration public static void InitializeWordle()"
+    "keywords": "Class Wordle Inheritance System.Object Wordle Namespace : KS.Misc.Games Assembly : Nitrocid.dll Syntax class Wordle : object Methods GetRandomWordFiveLetters() Declaration static string GetRandomWordFiveLetters() Returns Type Description System.String InitializeWordle(Boolean) Declaration public static void InitializeWordle(bool orig = false) Parameters Type Name Description System.Boolean orig RenderBoxes(String, Int32, Char[,]) Declaration static void RenderBoxes(string RandomWord, int maxGuesses, char[, ] currentTries) Parameters Type Name Description System.String RandomWord System.Int32 maxGuesses System.Char [,] currentTries"
   },
   "api/KS.Misc.Notifications.html": {
     "href": "api/KS.Misc.Notifications.html",
