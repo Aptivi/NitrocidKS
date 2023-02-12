@@ -7137,7 +7137,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.HTTP.HTTPTools.html",
-          "hash": "/rLuYYvYqTgw+yYDmQaiYmtTrVcnH0NkAYvNw3qUe9k="
+          "hash": "HVvjuaXREG4wkFWXXEV6BxLchY9FqhMO6vaRb8WPTQk="
         }
       },
       "is_incremental": false,
@@ -9129,7 +9129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.BaseCommand.html",
-          "hash": "+muGOwaFd1pSmidj4hJppkKkf+ZZh51vsWxngT3N+uA="
+          "hash": "/6mwsbHYPVOr6WaNRo5OhAxfAv+M+aI7CY4bPrQPyRY="
         }
       },
       "is_incremental": false,
@@ -10049,6 +10049,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.HTTP.Commands.HTTP_PutStringCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.HTTP.Commands.HTTP_PutStringCommand.html",
+          "hash": "StzovHQB2YaVobxNo89gXNVIEXWVzaj/NbGYog4YuEw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.HTTP.Commands.HTTP_SetSiteCommand.yml",
       "output": {
         ".html": {
@@ -10065,7 +10077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.HTTP.Commands.html",
-          "hash": "TV3xPbwcYd0QTrQdnRdnolm2/7Vxc/TIhmWAJd/408U="
+          "hash": "lpSXorn+x8L0jhvBXQx8+evWfT2nhpiwN5wtvgWm03I="
         }
       },
       "is_incremental": false,
@@ -13113,7 +13125,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Tzocu8LFK80Nbn83G5xR3rpDIeYMU5fE0jR3zXqJ3Kw="
+          "hash": "tkWZ85JMxY4/rUnLJ2L6v9KfKaTnYuGrKxagdbyNzL8="
         }
       },
       "is_incremental": false,
@@ -16162,7 +16174,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1091,
+          "total_file_count": 1092,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
