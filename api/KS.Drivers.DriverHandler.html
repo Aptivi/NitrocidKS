@@ -101,30 +101,6 @@
   </h3>
   
   
-  <h4 id="KS_Drivers_DriverHandler_consoleDrivers" data-uid="KS.Drivers.DriverHandler.consoleDrivers">consoleDrivers</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, IConsoleDriver&gt; consoleDrivers</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.Console.IConsoleDriver.html">IConsoleDriver</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <h4 id="KS_Drivers_DriverHandler_currentDrivers" data-uid="KS.Drivers.DriverHandler.currentDrivers">currentDrivers</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -149,12 +125,12 @@
   </table>
   
   
-  <h4 id="KS_Drivers_DriverHandler_customConsoleDrivers" data-uid="KS.Drivers.DriverHandler.customConsoleDrivers">customConsoleDrivers</h4>
+  <h4 id="KS_Drivers_DriverHandler_customDrivers" data-uid="KS.Drivers.DriverHandler.customDrivers">customDrivers</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, IConsoleDriver&gt; customConsoleDrivers</code></pre>
+    <pre><code class="lang-csharp hljs">static Dictionary&lt;DriverTypes, Dictionary&lt;string, IDriver&gt;&gt; customDrivers</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,19 +142,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.Console.IConsoleDriver.html">IConsoleDriver</a>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<a class="xref" href="KS.Drivers.DriverTypes.html">DriverTypes</a>, <span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.IDriver.html">IDriver</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="KS_Drivers_DriverHandler_customEncryptionDrivers" data-uid="KS.Drivers.DriverHandler.customEncryptionDrivers">customEncryptionDrivers</h4>
+  <h4 id="KS_Drivers_DriverHandler_drivers" data-uid="KS.Drivers.DriverHandler.drivers">drivers</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, IEncryptionDriver&gt; customEncryptionDrivers</code></pre>
+    <pre><code class="lang-csharp hljs">static Dictionary&lt;DriverTypes, Dictionary&lt;string, IDriver&gt;&gt; drivers</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -190,223 +166,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.Encryption.IEncryptionDriver.html">IEncryptionDriver</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Drivers_DriverHandler_customFilesystemDrivers" data-uid="KS.Drivers.DriverHandler.customFilesystemDrivers">customFilesystemDrivers</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, IFilesystemDriver&gt; customFilesystemDrivers</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.Filesystem.IFilesystemDriver.html">IFilesystemDriver</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Drivers_DriverHandler_customNetworkDrivers" data-uid="KS.Drivers.DriverHandler.customNetworkDrivers">customNetworkDrivers</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, INetworkDriver&gt; customNetworkDrivers</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.Network.INetworkDriver.html">INetworkDriver</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Drivers_DriverHandler_customRandomDrivers" data-uid="KS.Drivers.DriverHandler.customRandomDrivers">customRandomDrivers</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, IRandomDriver&gt; customRandomDrivers</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.RNG.IRandomDriver.html">IRandomDriver</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Drivers_DriverHandler_customRegexpDrivers" data-uid="KS.Drivers.DriverHandler.customRegexpDrivers">customRegexpDrivers</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, IRegexpDriver&gt; customRegexpDrivers</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.Regexp.IRegexpDriver.html">IRegexpDriver</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Drivers_DriverHandler_encryptionDrivers" data-uid="KS.Drivers.DriverHandler.encryptionDrivers">encryptionDrivers</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, IEncryptionDriver&gt; encryptionDrivers</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.Encryption.IEncryptionDriver.html">IEncryptionDriver</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Drivers_DriverHandler_filesystemDrivers" data-uid="KS.Drivers.DriverHandler.filesystemDrivers">filesystemDrivers</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, IFilesystemDriver&gt; filesystemDrivers</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.Filesystem.IFilesystemDriver.html">IFilesystemDriver</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Drivers_DriverHandler_networkDrivers" data-uid="KS.Drivers.DriverHandler.networkDrivers">networkDrivers</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, INetworkDriver&gt; networkDrivers</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.Network.INetworkDriver.html">INetworkDriver</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Drivers_DriverHandler_randomDrivers" data-uid="KS.Drivers.DriverHandler.randomDrivers">randomDrivers</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, IRandomDriver&gt; randomDrivers</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.RNG.IRandomDriver.html">IRandomDriver</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Drivers_DriverHandler_regexpDrivers" data-uid="KS.Drivers.DriverHandler.regexpDrivers">regexpDrivers</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, IRegexpDriver&gt; regexpDrivers</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.Regexp.IRegexpDriver.html">IRegexpDriver</a>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<a class="xref" href="KS.Drivers.DriverTypes.html">DriverTypes</a>, <span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.IDriver.html">IDriver</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -725,13 +485,13 @@
   
   
   <a id="KS_Drivers_DriverHandler_RegisterDriver_" data-uid="KS.Drivers.DriverHandler.RegisterDriver*"></a>
-  <h4 id="KS_Drivers_DriverHandler_RegisterDriver_KS_Drivers_DriverTypes_KS_Drivers_IDriver_" data-uid="KS.Drivers.DriverHandler.RegisterDriver(KS.Drivers.DriverTypes,KS.Drivers.IDriver)">RegisterDriver(DriverTypes, IDriver)</h4>
+  <h4 id="KS_Drivers_DriverHandler_RegisterDriver__1_KS_Drivers_DriverTypes_KS_Drivers_IDriver_" data-uid="KS.Drivers.DriverHandler.RegisterDriver``1(KS.Drivers.DriverTypes,KS.Drivers.IDriver)">RegisterDriver&lt;TDriver&gt;(DriverTypes, IDriver)</h4>
   <div class="markdown level1 summary"><p>Registers the driver</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RegisterDriver(DriverTypes type, IDriver driver)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RegisterDriver&lt;TDriver&gt;(DriverTypes type, IDriver driver)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -754,6 +514,21 @@
         <td><span class="parametername">driver</span></td>
         <td><p>Driver to be registered</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDriver</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
