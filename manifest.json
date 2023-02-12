@@ -933,7 +933,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.RNG.BaseRandomDriver.html",
-          "hash": "+hLOKgRPhvXkPgqzmq+lYzL/las0pNdO5b69J3emKE0="
+          "hash": "1V/hBExJ0YphQsBmA5UskikOENsw7x/YdM1xXMG47RU="
         }
       },
       "is_incremental": false,
@@ -965,23 +965,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Drivers.RNG.Randoms.CryptographicRandom.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Drivers.RNG.Randoms.CryptographicRandom.html",
-          "hash": "0MhvQbiQqQo2itmUkXi2eCeEIyGJZL9l4E65oRzwXiE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.RNG.Randoms.DefaultRandom.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.RNG.Randoms.DefaultRandom.html",
-          "hash": "xpDFuc0x1IlCHQ9oN+LOT5T8P3GPnd88MEEOOYczO5E="
+          "hash": "ZiC3JDBTTpkZuUtDVy8/2O/AGopxu/atU+dFY6U3Y5E="
         }
       },
       "is_incremental": false,
@@ -1001,11 +989,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.RNG.Randoms.StandardRandom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.RNG.Randoms.StandardRandom.html",
+          "hash": "WKwGMw5LHHpwSodxGVS2QdyLoolXXGrpngDd65oxTbk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.RNG.Randoms.StandardRandomDebug.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.RNG.Randoms.StandardRandomDebug.html",
+          "hash": "+nQEE7rkx5mMZ45e50i2wesLoIcimkyvJwRWENtgHj8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.RNG.Randoms.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.RNG.Randoms.html",
-          "hash": "uyB6wpZnyYlcC7/bkOrFxgz/gvIrfs6v6XMSriFOXpk="
+          "hash": "7GhxAfOD6Sf+wwvxolZPwiyEDYQNaUSVsyB2chbDDNc="
         }
       },
       "is_incremental": false,
@@ -13101,7 +13113,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "G+Q+zl4ZnCNvOnNYfSUwB0FNYfq4V65gnTlnWkUkYD0="
+          "hash": "Tzocu8LFK80Nbn83G5xR3rpDIeYMU5fE0jR3zXqJ3Kw="
         }
       },
       "is_incremental": false,
@@ -16150,7 +16162,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1090,
+          "total_file_count": 1091,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
