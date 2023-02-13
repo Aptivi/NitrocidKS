@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class UESHParse
+    <title>Class LintScriptCommand
    | Nitrocid KS API - Aptivi </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class UESHParse
+    <meta name="title" content="Class LintScriptCommand
    | Nitrocid KS API - Aptivi ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -78,37 +78,46 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="KS.Scripting.UESHParse">
+            <article class="content wrap" id="_content" data-uid="KS.Shell.Shells.UESH.Commands.LintScriptCommand">
   
   
-  <h1 id="KS_Scripting_UESHParse" data-uid="KS.Scripting.UESHParse" class="text-break">Class UESHParse
+  <h1 id="KS_Shell_Shells_UESH_Commands_LintScriptCommand" data-uid="KS.Shell.Shells.UESH.Commands.LintScriptCommand" class="text-break">Class LintScriptCommand
   </h1>
-  <div class="markdown level0 summary"><p>UESH script parser</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">UESHParse</span></div>
+    <div class="level1"><a class="xref" href="KS.Shell.ShellBase.Commands.BaseCommand.html">BaseCommand</a></div>
+    <div class="level2"><span class="xref">LintScriptCommand</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Scripting.html">KS.Scripting</a></h6>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Shell.ShellBase.Commands.ICommand.html">ICommand</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_HelpHelper">BaseCommand.HelpHelper()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Shell.Shells.UESH.Commands.html">KS.Shell.Shells.UESH.Commands</a></h6>
   <h6><strong>Assembly</strong>: Nitrocid.dll</h6>
-  <h5 id="KS_Scripting_UESHParse_syntax">Syntax</h5>
+  <h5 id="KS_Shell_Shells_UESH_Commands_LintScriptCommand_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class UESHParse : object</code></pre>
+    <pre><code class="lang-csharp hljs">class LintScriptCommand : BaseCommand, ICommand</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="KS_Scripting_UESHParse_Execute_" data-uid="KS.Scripting.UESHParse.Execute*"></a>
-  <h4 id="KS_Scripting_UESHParse_Execute_System_String_System_String_System_Boolean_" data-uid="KS.Scripting.UESHParse.Execute(System.String,System.String,System.Boolean)">Execute(String, String, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Executes the UESH script</p>
-</div>
+  <a id="KS_Shell_Shells_UESH_Commands_LintScriptCommand_Execute_" data-uid="KS.Shell.Shells.UESH.Commands.LintScriptCommand.Execute*"></a>
+  <h4 id="KS_Shell_Shells_UESH_Commands_LintScriptCommand_Execute_System_String_System_String___System_String___" data-uid="KS.Shell.Shells.UESH.Commands.LintScriptCommand.Execute(System.String,System.String[],System.String[])">Execute(String, String[], String[])</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Execute(string ScriptPath, string ScriptArguments, bool justLint = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -122,24 +131,27 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">ScriptPath</span></td>
-        <td><p>Full path to script</p>
-</td>
+        <td><span class="parametername">StringArgs</span></td>
+        <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">ScriptArguments</span></td>
-        <td><p>Script arguments</p>
-</td>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">ListArgsOnly</span></td>
+        <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">justLint</span></td>
-        <td><p>If true, just lints the script and throws exception if there are parsing errors</p>
-</td>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">ListSwitchesOnly</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_Execute_System_String_System_String___System_String___">BaseCommand.Execute(String, String[], String[])</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Shell.ShellBase.Commands.ICommand.html">ICommand</a>
+  </div>
 </article>
           </div>
           
