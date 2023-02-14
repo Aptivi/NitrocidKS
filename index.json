@@ -482,7 +482,7 @@
   "api/KS.Files.Folders.FilesystemSortOptions.html": {
     "href": "api/KS.Files.Folders.FilesystemSortOptions.html",
     "title": "Enum FilesystemSortOptions | Nitrocid KS API - Aptivi",
-    "keywords": "Enum FilesystemSortOptions How are the file system entries sorted in list? Namespace : KS.Files.Folders Assembly : Nitrocid.dll Syntax public enum FilesystemSortOptions : int Fields Name Description CreationTime Sort by creation time FullName Sort by full name LastAccessTime Sort by last access time LastWriteTime Sort by last write time Length Sort by length"
+    "keywords": "Enum FilesystemSortOptions How are the file system entries sorted in list? Namespace : KS.Files.Folders Assembly : Nitrocid.dll Syntax public enum FilesystemSortOptions : int Fields Name Description CreationTime Sort by creation time CreationTimeUtc Sort by the UTC creation time Extension Sort by file extension FullName Sort by full name LastAccessTime Sort by last access time LastAccessTimeUtc Sort by the UTC last access time LastWriteTime Sort by last write time LastWriteTimeUtc Sort by the UTC last write time Length Sort by length"
   },
   "api/KS.Files.Folders.html": {
     "href": "api/KS.Files.Folders.html",
