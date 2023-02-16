@@ -171,13 +171,13 @@
   
   
   <a id="KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_" data-uid="KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp*"></a>
-  <h4 id="KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_System_String_KS_Shell_ShellBase_Shells_ShellType_StreamWriter_" data-uid="KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,KS.Shell.ShellBase.Shells.ShellType,StreamWriter)">ShowHelp(String, ShellType, StreamWriter)</h4>
+  <h4 id="KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_System_String_KS_Shell_ShellBase_Shells_ShellType_" data-uid="KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,KS.Shell.ShellBase.Shells.ShellType)">ShowHelp(String, ShellType)</h4>
   <div class="markdown level1 summary"><p>Shows the help of a command, or command list under the specified shell type if nothing is specified</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ShowHelp(string command, ShellType CommandType, StreamWriter DebugDeviceSocket = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ShowHelp(string command, ShellType CommandType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -201,24 +201,18 @@
         <td><p>A specified shell type</p>
 </td>
       </tr>
-      <tr>
-        <td><span class="xref">StreamWriter</span></td>
-        <td><span class="parametername">DebugDeviceSocket</span></td>
-        <td><p>Only for remote debug shell. Specifies the debug device socket.</p>
-</td>
-      </tr>
     </tbody>
   </table>
   
   
   <a id="KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_" data-uid="KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp*"></a>
-  <h4 id="KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_System_String_System_String_StreamWriter_" data-uid="KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,System.String,StreamWriter)">ShowHelp(String, String, StreamWriter)</h4>
+  <h4 id="KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_System_String_System_String_" data-uid="KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,System.String)">ShowHelp(String, String)</h4>
   <div class="markdown level1 summary"><p>Shows the help of a command, or command list under the specified shell type if nothing is specified</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ShowHelp(string command, string CommandType, StreamWriter DebugDeviceSocket = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ShowHelp(string command, string CommandType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -240,12 +234,6 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">CommandType</span></td>
         <td><p>A specified shell type</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">StreamWriter</span></td>
-        <td><span class="parametername">DebugDeviceSocket</span></td>
-        <td><p>Only for remote debug shell. Specifies the debug device socket.</p>
 </td>
       </tr>
     </tbody>
