@@ -97,32 +97,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class PromptPresetManager : object</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="KS_Shell_Prompts_PromptPresetManager_CurrentPresets" data-uid="KS.Shell.Prompts.PromptPresetManager.CurrentPresets">CurrentPresets</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static Dictionary&lt;string, PromptPresetBase&gt; CurrentPresets</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Shell.Prompts.PromptPresetBase.html">PromptPresetBase</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -536,88 +510,6 @@
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">ThrowOnNotFound</span></td>
         <td><p>If the preset is not found, throw an exception. Otherwise, use the default preset.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Shell_Prompts_PromptPresetManager_SetPresetInternal_" data-uid="KS.Shell.Prompts.PromptPresetManager.SetPresetInternal*"></a>
-  <h4 id="KS_Shell_Prompts_PromptPresetManager_SetPresetInternal_System_String_KS_Shell_ShellBase_Shells_ShellType_Dictionary_System_String_KS_Shell_Prompts_PromptPresetBase__" data-uid="KS.Shell.Prompts.PromptPresetManager.SetPresetInternal(System.String,KS.Shell.ShellBase.Shells.ShellType,Dictionary{System.String,KS.Shell.Prompts.PromptPresetBase})">SetPresetInternal(String, ShellType, Dictionary&lt;String, PromptPresetBase&gt;)</h4>
-  <div class="markdown level1 summary"><p>Sets the preset</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static void SetPresetInternal(string PresetName, ShellType ShellType, Dictionary&lt;string, PromptPresetBase&gt; Presets)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">PresetName</span></td>
-        <td><p>The preset name</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.Shell.ShellBase.Shells.ShellType.html">ShellType</a></td>
-        <td><span class="parametername">ShellType</span></td>
-        <td><p>The shell type</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Shell.Prompts.PromptPresetBase.html">PromptPresetBase</a>&gt;</td>
-        <td><span class="parametername">Presets</span></td>
-        <td><p>Dictionary of presets</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Shell_Prompts_PromptPresetManager_SetPresetInternal_" data-uid="KS.Shell.Prompts.PromptPresetManager.SetPresetInternal*"></a>
-  <h4 id="KS_Shell_Prompts_PromptPresetManager_SetPresetInternal_System_String_System_String_Dictionary_System_String_KS_Shell_Prompts_PromptPresetBase__" data-uid="KS.Shell.Prompts.PromptPresetManager.SetPresetInternal(System.String,System.String,Dictionary{System.String,KS.Shell.Prompts.PromptPresetBase})">SetPresetInternal(String, String, Dictionary&lt;String, PromptPresetBase&gt;)</h4>
-  <div class="markdown level1 summary"><p>Sets the preset</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static void SetPresetInternal(string PresetName, string ShellType, Dictionary&lt;string, PromptPresetBase&gt; Presets)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">PresetName</span></td>
-        <td><p>The preset name</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">ShellType</span></td>
-        <td><p>The shell type</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Shell.Prompts.PromptPresetBase.html">PromptPresetBase</a>&gt;</td>
-        <td><span class="parametername">Presets</span></td>
-        <td><p>Dictionary of presets</p>
 </td>
       </tr>
     </tbody>

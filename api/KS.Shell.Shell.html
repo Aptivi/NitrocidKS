@@ -101,79 +101,6 @@
   </h3>
   
   
-  <h4 id="KS_Shell_Shell_AvailableShells" data-uid="KS.Shell.Shell.AvailableShells">AvailableShells</h4>
-  <div class="markdown level1 summary"><p>List of available shells</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static readonly Dictionary&lt;string, BaseShellInfo&gt; AvailableShells</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Shell.ShellBase.Shells.BaseShellInfo.html">BaseShellInfo</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Shell_Shell_OutputStream" data-uid="KS.Shell.Shell.OutputStream">OutputStream</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static FileStream OutputStream</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">FileStream</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Shell_Shell_OutputTextWriter" data-uid="KS.Shell.Shell.OutputTextWriter">OutputTextWriter</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static StreamWriter OutputTextWriter</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">StreamWriter</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <h4 id="KS_Shell_Shell_PathLookupDelimiter" data-uid="KS.Shell.Shell.PathLookupDelimiter">PathLookupDelimiter</h4>
   <div class="markdown level1 summary"><p>Path lookup delimiter, depending on the operating system</p>
 </div>
@@ -193,30 +120,6 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="KS_Shell_Shell_ProcessStartCommandThread" data-uid="KS.Shell.Shell.ProcessStartCommandThread">ProcessStartCommandThread</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static KernelThread ProcessStartCommandThread</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="KS.Misc.Threading.KernelThread.html">KernelThread</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -614,77 +517,6 @@
         <td><span class="parametername">shellType</span></td>
         <td><p>Shell type enumeration</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Shell_Shell_InitializeOutputPathWriter_" data-uid="KS.Shell.Shell.InitializeOutputPathWriter*"></a>
-  <h4 id="KS_Shell_Shell_InitializeOutputPathWriter_System_String_" data-uid="KS.Shell.Shell.InitializeOutputPathWriter(System.String)">InitializeOutputPathWriter(String)</h4>
-  <div class="markdown level1 summary"><p>Initializes the optional file path writer</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static void InitializeOutputPathWriter(string OutputPath)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">OutputPath</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Shell_Shell_InitializeRedirection_" data-uid="KS.Shell.Shell.InitializeRedirection*"></a>
-  <h4 id="KS_Shell_Shell_InitializeRedirection_System_String_" data-uid="KS.Shell.Shell.InitializeRedirection(System.String)">InitializeRedirection(String)</h4>
-  <div class="markdown level1 summary"><p>Initializes the redirection</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static string InitializeRedirection(string Command)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">Command</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>

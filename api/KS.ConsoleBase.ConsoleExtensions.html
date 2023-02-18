@@ -168,53 +168,6 @@
   </table>
   
   
-  <a id="KS_ConsoleBase_ConsoleExtensions_GetConsoleMode_" data-uid="KS.ConsoleBase.ConsoleExtensions.GetConsoleMode*"></a>
-  <h4 id="KS_ConsoleBase_ConsoleExtensions_GetConsoleMode_IntPtr_System_Int32__" data-uid="KS.ConsoleBase.ConsoleExtensions.GetConsoleMode(IntPtr,System.Int32@)">GetConsoleMode(IntPtr, out Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static extern bool GetConsoleMode(IntPtr handle, out int mode)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IntPtr</span></td>
-        <td><span class="parametername">handle</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">mode</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="KS_ConsoleBase_ConsoleExtensions_GetFilteredPositions_" data-uid="KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions*"></a>
   <h4 id="KS_ConsoleBase_ConsoleExtensions_GetFilteredPositions_System_String_System_Object___" data-uid="KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions(System.String,System.Object[])">GetFilteredPositions(String, Object[])</h4>
   <div class="markdown level1 summary"><p>Get the filtered cursor positions (by filtered means filtered from the VT escape sequences that matches the regex in the routine)</p>
@@ -263,58 +216,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="KS_ConsoleBase_ConsoleExtensions_GetStdHandle_" data-uid="KS.ConsoleBase.ConsoleExtensions.GetStdHandle*"></a>
-  <h4 id="KS_ConsoleBase_ConsoleExtensions_GetStdHandle_System_Int32_" data-uid="KS.ConsoleBase.ConsoleExtensions.GetStdHandle(System.Int32)">GetStdHandle(Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static extern IntPtr GetStdHandle(int handle)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">handle</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IntPtr</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_ConsoleBase_ConsoleExtensions_InitializeSequences_" data-uid="KS.ConsoleBase.ConsoleExtensions.InitializeSequences*"></a>
-  <h4 id="KS_ConsoleBase_ConsoleExtensions_InitializeSequences" data-uid="KS.ConsoleBase.ConsoleExtensions.InitializeSequences">InitializeSequences()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static void InitializeSequences()</code></pre>
-  </div>
   
   
   <a id="KS_ConsoleBase_ConsoleExtensions_PercentRepeat_" data-uid="KS.ConsoleBase.ConsoleExtensions.PercentRepeat*"></a>
@@ -426,53 +327,6 @@
         <td><span class="xref">System.Int32</span></td>
         <td><p>How many times to repeat the character</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_ConsoleBase_ConsoleExtensions_SetConsoleMode_" data-uid="KS.ConsoleBase.ConsoleExtensions.SetConsoleMode*"></a>
-  <h4 id="KS_ConsoleBase_ConsoleExtensions_SetConsoleMode_IntPtr_System_Int32_" data-uid="KS.ConsoleBase.ConsoleExtensions.SetConsoleMode(IntPtr,System.Int32)">SetConsoleMode(IntPtr, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static extern bool SetConsoleMode(IntPtr hConsoleHandle, int mode)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IntPtr</span></td>
-        <td><span class="parametername">hConsoleHandle</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">mode</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
