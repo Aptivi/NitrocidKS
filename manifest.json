@@ -6809,11 +6809,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Modifications.IScript.yml",
+      "source_relative_path": "api/KS.Modifications.IMod.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Modifications.IScript.html",
-          "hash": "+ktaLXbhk2E5nuhyR1LFnUwxYzKUzcDsC+NBQDdRXE0="
+          "relative_path": "api/KS.Modifications.IMod.html",
+          "hash": "FHZW3Y4N8hRQ/ovMyLu+MwueHIFMFiU8PNXr9d9c+ks="
         }
       },
       "is_incremental": false,
@@ -6921,7 +6921,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.ModParser.html",
-          "hash": "6i0vAkA4jVkBCdIertMPZJEQw95UNX/NGnhSrnsdm+w="
+          "hash": "/bv71EBMqzVyKf/853Azpw4pBpAsHrY9Y1kB/NZduCw="
         }
       },
       "is_incremental": false,
@@ -6933,7 +6933,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.ModPartInfo.html",
-          "hash": "DARCA1GOqo/4i3PSGAzOM0L6hTC9blXYFmxiGSoQveE="
+          "hash": "nEzdEeJinUVdHq3DZGS1aUT72sne4+/Da86/D73sCHk="
         }
       },
       "is_incremental": false,
@@ -6945,7 +6945,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.html",
-          "hash": "SYOZrpzspcnf4Ihi9RlJS2R0qKfO1d5ixY2mI4b6X3I="
+          "hash": "ldJyVPy9m1nrJoEmwQhVVIcWwU5LMl3Y17FqpJvSBG8="
         }
       },
       "is_incremental": false,
@@ -9129,7 +9129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.BaseCommand.html",
-          "hash": "s4iWVkph8dOFaRAVeub2nH0MyBon3RL3TQEADVG55w4="
+          "hash": "0JLrnh/LjhB4HITtMXERzkapncijJ2NZM5wIB8mqQgo="
         }
       },
       "is_incremental": false,
@@ -11669,6 +11669,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ContactsCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.UESH.Commands.ContactsCommand.html",
+          "hash": "mx+SL37vtd9eq+g1Lqg5Dr1eqqWlsCJtbkCBKr1zCtw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.UESH.Commands.ConvertLineEndingsCommand.yml",
       "output": {
         ".html": {
@@ -12825,7 +12837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.Commands.html",
-          "hash": "oyroqaJdc0vwf1pdTnWpuFp6wxyBqyKLxvMSIWgu2E8="
+          "hash": "bt8K3WqUixdv2syzpxBDXXfHbmY8QWF2lvcpZjaEEPY="
         }
       },
       "is_incremental": false,
@@ -12881,30 +12893,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.TimeDate.TimeDate.FormatType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TimeDate.TimeDate.FormatType.html",
-          "hash": "+09TgWoUqQ9AM1Sjcl+bVMnaXEVkwsn8umxVTdfQ3W4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TimeDate.TimeDate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TimeDate.TimeDate.html",
-          "hash": "vogw188YGNByS0upj5/Oq9LEB264NqaEHweYo2yy4ds="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.TimeDate.TimeDateConverters.yml",
       "output": {
         ".html": {
@@ -12921,7 +12909,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.TimeDate.TimeDateRenderers.html",
-          "hash": "8hRIxua+6OaJiLMiYNFBlAe743yRYWyTps996V7smZ0="
+          "hash": "pz9TXgy+sW/8xB4+nRMaxPLev/Tut/4LwunfGwFikRA="
         }
       },
       "is_incremental": false,
@@ -12933,7 +12921,31 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.TimeDate.TimeDateRenderersUtc.html",
-          "hash": "AeNta40FunoLpuU5AxfNrjXqBWt7EXNAkcw8w3euaWQ="
+          "hash": "LtHGmMYO26VufqEncEw0PsoUr+UwLdRu48lopVNlwJo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.TimeDate.TimeDateTools.FormatType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.TimeDate.TimeDateTools.FormatType.html",
+          "hash": "88SORVxXHx0vJBR/gTpBPWpRiqcvLgoqTdNnUll3yms="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.TimeDate.TimeDateTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.TimeDate.TimeDateTools.html",
+          "hash": "TlUcND0+nYH0n4KmRnF4EJ2kkuIxLw99+nSWHpBlMJo="
         }
       },
       "is_incremental": false,
@@ -12969,7 +12981,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.TimeDate.html",
-          "hash": "CWhR1433Zglhtp3jQQNMZOIIU1Yc6X0CfidBRO+C2j4="
+          "hash": "DC8JMEFZbcAfBp0tQcfP1J8DC0OrJsr6YrIyPDgRskw="
         }
       },
       "is_incremental": false,
@@ -13137,7 +13149,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "0dSihqgfzXnVbuMzlfkogL+OM7OTcuJRXdt779ZoeSk="
+          "hash": "K7lcn66UNQ73R2prWSdy4qkNg68i+dFM12937yALPDQ="
         }
       },
       "is_incremental": false,
@@ -16186,7 +16198,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1093,
+          "total_file_count": 1094,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
