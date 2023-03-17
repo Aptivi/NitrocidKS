@@ -125,18 +125,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Colors.ColorWheelOpen.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.ConsoleBase.Colors.ColorWheelOpen.html",
-          "hash": "WIFfbYYSf4LOk0hr21we2g67O6Seqa8DIoWofkagUbw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.Colors.KernelColorType.yml",
       "output": {
         ".html": {
@@ -153,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.Colors.html",
-          "hash": "rhtQECcgzAdTHPXkGm5hVF5OTadVbccgTtIVbKf8Zyk="
+          "hash": "R2ixN4bdhcDWWywpswl+2/7AdmJQommgNc5p0B1+AkQ="
         }
       },
       "is_incremental": false,
@@ -1653,7 +1641,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Flags.html",
-          "hash": "pNZzVGvsaLgem+jNhtsqVwDBQMweEzajXi6W7d51Qa8="
+          "hash": "fFPBk1I/5KSNeRkMqrPbZuI6/IrzQAdhTj4q86SovQ8="
         }
       },
       "is_incremental": false,
@@ -8073,7 +8061,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "h+qBM3M2ZahXDFhmR0uu0xKPof3qlgJYKUBIS9eKS4E="
+          "hash": "CMd7X+ul6N3IyClW0Br6sgzyH+0d/Ey/ZAeGc9DB9xQ="
         }
       },
       "is_incremental": false,
@@ -8146,7 +8134,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 671,
+          "total_file_count": 670,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
