@@ -15652,6 +15652,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Contacts.ContactsManager.GetContacts
   nameWithType: ContactsManager.GetContacts
+- uid: KS.Misc.Contacts.ContactsManager.ImportContacts
+  name: ImportContacts()
+  href: api/KS.Misc.Contacts.ContactsManager.html#KS_Misc_Contacts_ContactsManager_ImportContacts
+  commentId: M:KS.Misc.Contacts.ContactsManager.ImportContacts
+  fullName: KS.Misc.Contacts.ContactsManager.ImportContacts()
+  nameWithType: ContactsManager.ImportContacts()
+- uid: KS.Misc.Contacts.ContactsManager.ImportContacts*
+  name: ImportContacts
+  href: api/KS.Misc.Contacts.ContactsManager.html#KS_Misc_Contacts_ContactsManager_ImportContacts_
+  commentId: Overload:KS.Misc.Contacts.ContactsManager.ImportContacts
+  isSpec: "True"
+  fullName: KS.Misc.Contacts.ContactsManager.ImportContacts
+  nameWithType: ContactsManager.ImportContacts
 - uid: KS.Misc.Contacts.ContactsManager.InstallContacts
   name: InstallContacts()
   href: api/KS.Misc.Contacts.ContactsManager.html#KS_Misc_Contacts_ContactsManager_InstallContacts
@@ -15684,6 +15697,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Contacts.ContactsManager.RemoveContact
   nameWithType: ContactsManager.RemoveContact
+- uid: KS.Misc.Contacts.ContactsManager.RemoveContacts(System.Boolean)
+  name: RemoveContacts(Boolean)
+  href: api/KS.Misc.Contacts.ContactsManager.html#KS_Misc_Contacts_ContactsManager_RemoveContacts_System_Boolean_
+  commentId: M:KS.Misc.Contacts.ContactsManager.RemoveContacts(System.Boolean)
+  fullName: KS.Misc.Contacts.ContactsManager.RemoveContacts(System.Boolean)
+  nameWithType: ContactsManager.RemoveContacts(Boolean)
+- uid: KS.Misc.Contacts.ContactsManager.RemoveContacts*
+  name: RemoveContacts
+  href: api/KS.Misc.Contacts.ContactsManager.html#KS_Misc_Contacts_ContactsManager_RemoveContacts_
+  commentId: Overload:KS.Misc.Contacts.ContactsManager.RemoveContacts
+  isSpec: "True"
+  fullName: KS.Misc.Contacts.ContactsManager.RemoveContacts
+  nameWithType: ContactsManager.RemoveContacts
 - uid: KS.Misc.Editors.HexEdit
   name: KS.Misc.Editors.HexEdit
   href: api/KS.Misc.Editors.HexEdit.html
