@@ -857,6 +857,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Interactive.ContactsManagerCli.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Interactive.ContactsManagerCli.html",
+          "hash": "4GeTE9QFJ99jx1xF2WrdqoT1uM4rKYSMzJBczXsLRVI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Files.Interactive.FileManagerCli.yml",
       "output": {
         ".html": {
@@ -885,7 +897,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Interactive.html",
-          "hash": "jh6DCEAGvXTWG7VDtNNWxTU2WsqzXlLrIFxnLkBV4gg="
+          "hash": "wXE67FikHUe37Isp/92Ecn9MQx848fOx6725vwwLQS4="
         }
       },
       "is_incremental": false,
@@ -897,7 +909,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.KernelPathType.html",
-          "hash": "pTWyx42ka/zX0DcfdAQQVcwH3rxtE2anj809F7s40Wc="
+          "hash": "JfBlS7jSGU2O0HeNtKyvq6wWhmZLZz6EQUn2AmT+Sbo="
         }
       },
       "is_incremental": false,
@@ -1065,7 +1077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Paths.html",
-          "hash": "9B7CyJsC9sHt8F8mnY9pkUX6DqMQMmwJ60ksDIc3Ab8="
+          "hash": "GGZteSMqZH+LWPI0aVATW8XjDLqRPrhBW2cMgmv1CEw="
         }
       },
       "is_incremental": false,
@@ -1617,7 +1629,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.KernelExceptionType.html",
-          "hash": "iFCywxjBUU2JaePzH6+lRUeYaDdN5iQ+EaYdeKQc3ug="
+          "hash": "t+keOwXdXoLdnXrcxUZJBoqMWVD8zuoEoc5X6Pp9eNk="
         }
       },
       "is_incremental": false,
@@ -2446,6 +2458,30 @@
         ".html": {
           "relative_path": "api/KS.Misc.Calendar.html",
           "hash": "5/4GNPn5hZfZjpNuEIuaPXkKkzA2czJ3nZu227fj9XA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Contacts.ContactsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Contacts.ContactsManager.html",
+          "hash": "dQTEWbfuK8Rhw86S0Ka5va9ReOLYEpmErJPmQILDe6U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Contacts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Contacts.html",
+          "hash": "Fjzot9k/CXtaC63Avq7Q7TjLOEQo8Ol5oBRmvUZ7GVI="
         }
       },
       "is_incremental": false,
@@ -8061,7 +8097,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "CMd7X+ul6N3IyClW0Br6sgzyH+0d/Ey/ZAeGc9DB9xQ="
+          "hash": "4D5LFRkXZH3nWJ1imf3JfnPzYLyMUXG+VWBcgFD7xKk="
         }
       },
       "is_incremental": false,
@@ -8134,7 +8170,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 670,
+          "total_file_count": 673,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
