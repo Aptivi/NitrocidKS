@@ -4795,6 +4795,19 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.GetFilesystemEntries
   nameWithType: BaseFilesystemDriver.GetFilesystemEntries
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.GetInvalidFileChars
+  name: GetInvalidFileChars()
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_GetInvalidFileChars
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.GetInvalidFileChars
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.GetInvalidFileChars()
+  nameWithType: BaseFilesystemDriver.GetInvalidFileChars()
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.GetInvalidFileChars*
+  name: GetInvalidFileChars
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_GetInvalidFileChars_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.GetInvalidFileChars
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.GetInvalidFileChars
+  nameWithType: BaseFilesystemDriver.GetInvalidFileChars
 - uid: KS.Drivers.Filesystem.BaseFilesystemDriver.GetInvalidPathChars
   name: GetInvalidPathChars()
   href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_GetInvalidPathChars
