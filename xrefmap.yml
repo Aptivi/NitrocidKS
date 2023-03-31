@@ -31520,6 +31520,139 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox
   nameWithType: InfoBoxColor.WriteInfoBox
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,Color,Color,System.Object[])
+  name: WriteInfoBoxInput(String, Color, Color, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_Color_Color_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,Color,Color,System.Object[])
+  name.vb: WriteInfoBoxInput(String, Color, Color, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, Color, Color, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, Color, Color, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxInput(String, Color, Color, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxInput(String, Color, Color, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,Color,System.Object[])
+  name: WriteInfoBoxInput(String, Color, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_Color_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,Color,System.Object[])
+  name.vb: WriteInfoBoxInput(String, Color, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, Color, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, Color, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxInput(String, Color, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxInput(String, Color, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,ConsoleColors,ConsoleColors,System.Object[])
+  name: WriteInfoBoxInput(String, ConsoleColors, ConsoleColors, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_ConsoleColors_ConsoleColors_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,ConsoleColors,ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxInput(String, ConsoleColors, ConsoleColors, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, ConsoleColors, ConsoleColors, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, ConsoleColors, ConsoleColors, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxInput(String, ConsoleColors, ConsoleColors, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxInput(String, ConsoleColors, ConsoleColors, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,ConsoleColors,System.Object[])
+  name: WriteInfoBoxInput(String, ConsoleColors, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_ConsoleColors_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxInput(String, ConsoleColors, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, ConsoleColors, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, ConsoleColors, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxInput(String, ConsoleColors, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxInput(String, ConsoleColors, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxInput(String, KernelColorType, KernelColorType, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxInput(String, KernelColorType, KernelColorType, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxInput(String, KernelColorType, KernelColorType, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxInput(String, KernelColorType, KernelColorType, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxInput(String, KernelColorType, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxInput(String, KernelColorType, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, KS.ConsoleBase.Colors.KernelColorType, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, KS.ConsoleBase.Colors.KernelColorType, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxInput(String, KernelColorType, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxInput(String, KernelColorType, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.Object[])
+  name: WriteInfoBoxInput(String, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.Object[])
+  name.vb: WriteInfoBoxInput(String, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxInput(String, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxInput(String, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Color,Color,System.Object[])
+  name: WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, Color, Color, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_Color_Color_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Color,Color,System.Object[])
+  name.vb: WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, Color, Color, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, Color, Color, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, Color, Color, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, Color, Color, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, Color, Color, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Color,System.Object[])
+  name: WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, Color, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_Color_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Color,System.Object[])
+  name.vb: WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, Color, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, Color, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, Color, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, Color, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, Color, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,ConsoleColors,ConsoleColors,System.Object[])
+  name: WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, ConsoleColors, ConsoleColors, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_ConsoleColors_ConsoleColors_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,ConsoleColors,ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, ConsoleColors, ConsoleColors, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, ConsoleColors, ConsoleColors, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, ConsoleColors, ConsoleColors, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, ConsoleColors, ConsoleColors, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, ConsoleColors, ConsoleColors, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,ConsoleColors,System.Object[])
+  name: WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, ConsoleColors, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_ConsoleColors_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, ConsoleColors, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, ConsoleColors, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, ConsoleColors, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, ConsoleColors, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, ConsoleColors, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, KernelColorType, KernelColorType, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, KernelColorType, KernelColorType, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, KernelColorType, KernelColorType, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, KernelColorType, KernelColorType, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, KernelColorType, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, KernelColorType, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, KS.ConsoleBase.Colors.KernelColorType, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, KS.ConsoleBase.Colors.KernelColorType, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, KernelColorType, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, KernelColorType, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object[])
+  name: WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object[])
+  name.vb: WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*
+  name: WriteInfoBoxInput
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_
+  commentId: Overload:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput
+  isSpec: "True"
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput
+  nameWithType: InfoBoxColor.WriteInfoBoxInput
 - uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlain(System.String,System.Object[])
   name: WriteInfoBoxPlain(String, Object[])
   href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxPlain_System_String_System_Object___
@@ -31545,6 +31678,31 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlain
   nameWithType: InfoBoxColor.WriteInfoBoxPlain
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput(System.String,System.Object[])
+  name: WriteInfoBoxPlainInput(String, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxPlainInput_System_String_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput(System.String,System.Object[])
+  name.vb: WriteInfoBoxPlainInput(String, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput(System.String, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput(System.String, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxPlainInput(String, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxPlainInput(String, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object[])
+  name: WriteInfoBoxPlainInput(String, String, String, String, String, String, String, String, String, Object[])
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxPlainInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_Object___
+  commentId: M:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object[])
+  name.vb: WriteInfoBoxPlainInput(String, String, String, String, String, String, String, String, String, Object())
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Object[])
+  fullName.vb: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Object())
+  nameWithType: InfoBoxColor.WriteInfoBoxPlainInput(String, String, String, String, String, String, String, String, String, Object[])
+  nameWithType.vb: InfoBoxColor.WriteInfoBoxPlainInput(String, String, String, String, String, String, String, String, String, Object())
+- uid: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput*
+  name: WriteInfoBoxPlainInput
+  href: api/KS.Misc.Writers.FancyWriters.InfoBoxColor.html#KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxPlainInput_
+  commentId: Overload:KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput
+  isSpec: "True"
+  fullName: KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput
+  nameWithType: InfoBoxColor.WriteInfoBoxPlainInput
 - uid: KS.Misc.Writers.FancyWriters.PowerLineColor
   name: PowerLineColor
   href: api/KS.Misc.Writers.FancyWriters.PowerLineColor.html
