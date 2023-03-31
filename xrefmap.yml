@@ -15710,6 +15710,44 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Contacts.ContactsManager.RemoveContacts
   nameWithType: ContactsManager.RemoveContacts
+- uid: KS.Misc.Contacts.ContactsManager.SearchNext
+  name: SearchNext()
+  href: api/KS.Misc.Contacts.ContactsManager.html#KS_Misc_Contacts_ContactsManager_SearchNext
+  commentId: M:KS.Misc.Contacts.ContactsManager.SearchNext
+  fullName: KS.Misc.Contacts.ContactsManager.SearchNext()
+  nameWithType: ContactsManager.SearchNext()
+- uid: KS.Misc.Contacts.ContactsManager.SearchNext(System.String)
+  name: SearchNext(String)
+  href: api/KS.Misc.Contacts.ContactsManager.html#KS_Misc_Contacts_ContactsManager_SearchNext_System_String_
+  commentId: M:KS.Misc.Contacts.ContactsManager.SearchNext(System.String)
+  fullName: KS.Misc.Contacts.ContactsManager.SearchNext(System.String)
+  nameWithType: ContactsManager.SearchNext(String)
+- uid: KS.Misc.Contacts.ContactsManager.SearchNext*
+  name: SearchNext
+  href: api/KS.Misc.Contacts.ContactsManager.html#KS_Misc_Contacts_ContactsManager_SearchNext_
+  commentId: Overload:KS.Misc.Contacts.ContactsManager.SearchNext
+  isSpec: "True"
+  fullName: KS.Misc.Contacts.ContactsManager.SearchNext
+  nameWithType: ContactsManager.SearchNext
+- uid: KS.Misc.Contacts.ContactsManager.SearchPrevious
+  name: SearchPrevious()
+  href: api/KS.Misc.Contacts.ContactsManager.html#KS_Misc_Contacts_ContactsManager_SearchPrevious
+  commentId: M:KS.Misc.Contacts.ContactsManager.SearchPrevious
+  fullName: KS.Misc.Contacts.ContactsManager.SearchPrevious()
+  nameWithType: ContactsManager.SearchPrevious()
+- uid: KS.Misc.Contacts.ContactsManager.SearchPrevious(System.String)
+  name: SearchPrevious(String)
+  href: api/KS.Misc.Contacts.ContactsManager.html#KS_Misc_Contacts_ContactsManager_SearchPrevious_System_String_
+  commentId: M:KS.Misc.Contacts.ContactsManager.SearchPrevious(System.String)
+  fullName: KS.Misc.Contacts.ContactsManager.SearchPrevious(System.String)
+  nameWithType: ContactsManager.SearchPrevious(String)
+- uid: KS.Misc.Contacts.ContactsManager.SearchPrevious*
+  name: SearchPrevious
+  href: api/KS.Misc.Contacts.ContactsManager.html#KS_Misc_Contacts_ContactsManager_SearchPrevious_
+  commentId: Overload:KS.Misc.Contacts.ContactsManager.SearchPrevious
+  isSpec: "True"
+  fullName: KS.Misc.Contacts.ContactsManager.SearchPrevious
+  nameWithType: ContactsManager.SearchPrevious
 - uid: KS.Misc.Editors.HexEdit
   name: KS.Misc.Editors.HexEdit
   href: api/KS.Misc.Editors.HexEdit.html
