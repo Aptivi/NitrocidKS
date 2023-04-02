@@ -1436,6 +1436,12 @@ references:
   commentId: M:KS.ConsoleBase.Inputs.Input.ReadLine(System.Boolean)
   fullName: KS.ConsoleBase.Inputs.Input.ReadLine(System.Boolean)
   nameWithType: Input.ReadLine(Boolean)
+- uid: KS.ConsoleBase.Inputs.Input.ReadLine(System.String)
+  name: ReadLine(String)
+  href: api/KS.ConsoleBase.Inputs.Input.html#KS_ConsoleBase_Inputs_Input_ReadLine_System_String_
+  commentId: M:KS.ConsoleBase.Inputs.Input.ReadLine(System.String)
+  fullName: KS.ConsoleBase.Inputs.Input.ReadLine(System.String)
+  nameWithType: Input.ReadLine(String)
 - uid: KS.ConsoleBase.Inputs.Input.ReadLine(System.String,System.String)
   name: ReadLine(String, String)
   href: api/KS.ConsoleBase.Inputs.Input.html#KS_ConsoleBase_Inputs_Input_ReadLine_System_String_System_String_
