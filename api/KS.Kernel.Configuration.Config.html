@@ -97,6 +97,86 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class Config : object</code></pre>
   </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="KS_Kernel_Configuration_Config_MainConfig_" data-uid="KS.Kernel.Configuration.Config.MainConfig*"></a>
+  <h4 id="KS_Kernel_Configuration_Config_MainConfig" data-uid="KS.Kernel.Configuration.Config.MainConfig">MainConfig</h4>
+  <div class="markdown level1 summary"><p>Main configuration entry for the kernel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static KernelMainConfig MainConfig { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Configuration.Instances.KernelMainConfig.html">KernelMainConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Kernel_Configuration_Config_SaverConfig_" data-uid="KS.Kernel.Configuration.Config.SaverConfig*"></a>
+  <h4 id="KS_Kernel_Configuration_Config_SaverConfig" data-uid="KS.Kernel.Configuration.Config.SaverConfig">SaverConfig</h4>
+  <div class="markdown level1 summary"><p>Screensaver configuration entry for the kernel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static KernelSaverConfig SaverConfig { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Configuration.Instances.KernelSaverConfig.html">KernelSaverConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Kernel_Configuration_Config_SplashConfig_" data-uid="KS.Kernel.Configuration.Config.SplashConfig*"></a>
+  <h4 id="KS_Kernel_Configuration_Config_SplashConfig" data-uid="KS.Kernel.Configuration.Config.SplashConfig">SplashConfig</h4>
+  <div class="markdown level1 summary"><p>Splash configuration entry for the kernel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static KernelSplashConfig SplashConfig { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Configuration.Instances.KernelSplashConfig.html">KernelSplashConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -113,13 +193,46 @@
   
   
   <a id="KS_Kernel_Configuration_Config_CreateConfig_" data-uid="KS.Kernel.Configuration.Config.CreateConfig*"></a>
+  <h4 id="KS_Kernel_Configuration_Config_CreateConfig_KS_Kernel_Configuration_ConfigType_System_String_" data-uid="KS.Kernel.Configuration.Config.CreateConfig(KS.Kernel.Configuration.ConfigType,System.String)">CreateConfig(ConfigType, String)</h4>
+  <div class="markdown level1 summary"><p>Creates the kernel configuration file with custom path and custom type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateConfig(ConfigType type, string ConfigPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Configuration.ConfigType.html">ConfigType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ConfigPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Kernel_Configuration_Config_CreateConfig_" data-uid="KS.Kernel.Configuration.Config.CreateConfig*"></a>
   <h4 id="KS_Kernel_Configuration_Config_CreateConfig_System_String_" data-uid="KS.Kernel.Configuration.Config.CreateConfig(System.String)">CreateConfig(String)</h4>
   <div class="markdown level1 summary"><p>Creates the kernel configuration file with custom path</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CreateConfig(string ConfigPath)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CreateConfig(string ConfigFolder)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -133,35 +246,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">ConfigPath</span></td>
+        <td><span class="parametername">ConfigFolder</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Kernel_Configuration_Config_GetNewConfigObject_" data-uid="KS.Kernel.Configuration.Config.GetNewConfigObject*"></a>
-  <h4 id="KS_Kernel_Configuration_Config_GetNewConfigObject" data-uid="KS.Kernel.Configuration.Config.GetNewConfigObject">GetNewConfigObject()</h4>
-  <div class="markdown level1 summary"><p>Creates a new JSON object containing the kernel settings of all kinds</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static JObject GetNewConfigObject()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">JObject</span></td>
-        <td><p>A pristine config object</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -190,13 +276,13 @@
   
   
   <a id="KS_Kernel_Configuration_Config_ReadConfig_" data-uid="KS.Kernel.Configuration.Config.ReadConfig*"></a>
-  <h4 id="KS_Kernel_Configuration_Config_ReadConfig_JToken_System_Boolean_" data-uid="KS.Kernel.Configuration.Config.ReadConfig(JToken,System.Boolean)">ReadConfig(JToken, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Configures the kernel according to the custom kernel configuration file (new)</p>
+  <h4 id="KS_Kernel_Configuration_Config_ReadConfig_KS_Kernel_Configuration_ConfigType_" data-uid="KS.Kernel.Configuration.Config.ReadConfig(KS.Kernel.Configuration.ConfigType)">ReadConfig(ConfigType)</h4>
+  <div class="markdown level1 summary"><p>Configures the kernel according to the custom kernel configuration type</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ReadConfig(JToken ConfigToken, bool Force = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ReadConfig(ConfigType type)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -209,13 +295,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">JToken</span></td>
-        <td><span class="parametername">ConfigToken</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">Force</span></td>
+        <td><a class="xref" href="KS.Kernel.Configuration.ConfigType.html">ConfigType</a></td>
+        <td><span class="parametername">type</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -223,13 +304,13 @@
   
   
   <a id="KS_Kernel_Configuration_Config_ReadConfig_" data-uid="KS.Kernel.Configuration.Config.ReadConfig*"></a>
-  <h4 id="KS_Kernel_Configuration_Config_ReadConfig_System_String_" data-uid="KS.Kernel.Configuration.Config.ReadConfig(System.String)">ReadConfig(String)</h4>
-  <div class="markdown level1 summary"><p>Configures the kernel according to the custom kernel configuration file</p>
+  <h4 id="KS_Kernel_Configuration_Config_ReadConfig_KS_Kernel_Configuration_ConfigType_System_String_" data-uid="KS.Kernel.Configuration.Config.ReadConfig(KS.Kernel.Configuration.ConfigType,System.String)">ReadConfig(ConfigType, String)</h4>
+  <div class="markdown level1 summary"><p>Configures the kernel according to the custom kernel configuration type and file</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ReadConfig(string ConfigPath)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ReadConfig(ConfigType type, string ConfigPath)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -242,23 +323,17 @@
     </thead>
     <tbody>
       <tr>
+        <td><a class="xref" href="KS.Kernel.Configuration.ConfigType.html">ConfigType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">ConfigPath</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="KS_Kernel_Configuration_Config_ReadFailsafeConfig_" data-uid="KS.Kernel.Configuration.Config.ReadFailsafeConfig*"></a>
-  <h4 id="KS_Kernel_Configuration_Config_ReadFailsafeConfig" data-uid="KS.Kernel.Configuration.Config.ReadFailsafeConfig">ReadFailsafeConfig()</h4>
-  <div class="markdown level1 summary"><p>Configures the kernel according to the kernel failsafe configuration</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ReadFailsafeConfig()</code></pre>
-  </div>
   
   
   <a id="KS_Kernel_Configuration_Config_TryCreateConfig_" data-uid="KS.Kernel.Configuration.Config.TryCreateConfig*"></a>
@@ -289,13 +364,13 @@
   
   
   <a id="KS_Kernel_Configuration_Config_TryCreateConfig_" data-uid="KS.Kernel.Configuration.Config.TryCreateConfig*"></a>
-  <h4 id="KS_Kernel_Configuration_Config_TryCreateConfig_JToken_" data-uid="KS.Kernel.Configuration.Config.TryCreateConfig(JToken)">TryCreateConfig(JToken)</h4>
-  <div class="markdown level1 summary"><p>Creates the kernel configuration file with custom path</p>
+  <h4 id="KS_Kernel_Configuration_Config_TryCreateConfig_KS_Kernel_Configuration_ConfigType_System_String_" data-uid="KS.Kernel.Configuration.Config.TryCreateConfig(KS.Kernel.Configuration.ConfigType,System.String)">TryCreateConfig(ConfigType, String)</h4>
+  <div class="markdown level1 summary"><p>Creates the kernel configuration file with custom folder</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryCreateConfig(JToken ConfigToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryCreateConfig(ConfigType type, string ConfigPath)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -308,8 +383,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">JToken</span></td>
-        <td><span class="parametername">ConfigToken</span></td>
+        <td><a class="xref" href="KS.Kernel.Configuration.ConfigType.html">ConfigType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ConfigPath</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -334,12 +414,12 @@
   
   <a id="KS_Kernel_Configuration_Config_TryCreateConfig_" data-uid="KS.Kernel.Configuration.Config.TryCreateConfig*"></a>
   <h4 id="KS_Kernel_Configuration_Config_TryCreateConfig_System_String_" data-uid="KS.Kernel.Configuration.Config.TryCreateConfig(System.String)">TryCreateConfig(String)</h4>
-  <div class="markdown level1 summary"><p>Creates the kernel configuration file with custom path</p>
+  <div class="markdown level1 summary"><p>Creates the kernel configuration file with custom folder</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryCreateConfig(string ConfigPath)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryCreateConfig(string ConfigFolder)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -353,7 +433,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">ConfigPath</span></td>
+        <td><span class="parametername">ConfigFolder</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -404,13 +484,13 @@
   
   
   <a id="KS_Kernel_Configuration_Config_TryReadConfig_" data-uid="KS.Kernel.Configuration.Config.TryReadConfig*"></a>
-  <h4 id="KS_Kernel_Configuration_Config_TryReadConfig_JToken_" data-uid="KS.Kernel.Configuration.Config.TryReadConfig(JToken)">TryReadConfig(JToken)</h4>
+  <h4 id="KS_Kernel_Configuration_Config_TryReadConfig_KS_Kernel_Configuration_ConfigType_" data-uid="KS.Kernel.Configuration.Config.TryReadConfig(KS.Kernel.Configuration.ConfigType)">TryReadConfig(ConfigType)</h4>
   <div class="markdown level1 summary"><p>Configures the kernel according to the custom kernel configuration file</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryReadConfig(JToken ConfigToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryReadConfig(ConfigType type)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -423,8 +503,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">JToken</span></td>
-        <td><span class="parametername">ConfigToken</span></td>
+        <td><a class="xref" href="KS.Kernel.Configuration.ConfigType.html">ConfigType</a></td>
+        <td><span class="parametername">type</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -448,13 +528,13 @@
   
   
   <a id="KS_Kernel_Configuration_Config_TryReadConfig_" data-uid="KS.Kernel.Configuration.Config.TryReadConfig*"></a>
-  <h4 id="KS_Kernel_Configuration_Config_TryReadConfig_System_String_" data-uid="KS.Kernel.Configuration.Config.TryReadConfig(System.String)">TryReadConfig(String)</h4>
+  <h4 id="KS_Kernel_Configuration_Config_TryReadConfig_KS_Kernel_Configuration_ConfigType_System_String_" data-uid="KS.Kernel.Configuration.Config.TryReadConfig(KS.Kernel.Configuration.ConfigType,System.String)">TryReadConfig(ConfigType, String)</h4>
   <div class="markdown level1 summary"><p>Configures the kernel according to the custom kernel configuration file</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryReadConfig(string ConfigPath)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryReadConfig(ConfigType type, string ConfigPath)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -466,6 +546,11 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Configuration.ConfigType.html">ConfigType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">ConfigPath</span></td>
