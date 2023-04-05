@@ -39393,12 +39393,12 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Settings.SettingsApp.OpenKey
   nameWithType: SettingsApp.OpenKey
-- uid: KS.Misc.Settings.SettingsApp.OpenMainPage(KS.Misc.Settings.SettingsType)
-  name: OpenMainPage(SettingsType)
-  href: api/KS.Misc.Settings.SettingsApp.html#KS_Misc_Settings_SettingsApp_OpenMainPage_KS_Misc_Settings_SettingsType_
-  commentId: M:KS.Misc.Settings.SettingsApp.OpenMainPage(KS.Misc.Settings.SettingsType)
-  fullName: KS.Misc.Settings.SettingsApp.OpenMainPage(KS.Misc.Settings.SettingsType)
-  nameWithType: SettingsApp.OpenMainPage(SettingsType)
+- uid: KS.Misc.Settings.SettingsApp.OpenMainPage(KS.Kernel.Configuration.ConfigType)
+  name: OpenMainPage(ConfigType)
+  href: api/KS.Misc.Settings.SettingsApp.html#KS_Misc_Settings_SettingsApp_OpenMainPage_KS_Kernel_Configuration_ConfigType_
+  commentId: M:KS.Misc.Settings.SettingsApp.OpenMainPage(KS.Kernel.Configuration.ConfigType)
+  fullName: KS.Misc.Settings.SettingsApp.OpenMainPage(KS.Kernel.Configuration.ConfigType)
+  nameWithType: SettingsApp.OpenMainPage(ConfigType)
 - uid: KS.Misc.Settings.SettingsApp.OpenMainPage*
   name: OpenMainPage
   href: api/KS.Misc.Settings.SettingsApp.html#KS_Misc_Settings_SettingsApp_OpenMainPage_
@@ -39406,12 +39406,12 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Settings.SettingsApp.OpenMainPage
   nameWithType: SettingsApp.OpenMainPage
-- uid: KS.Misc.Settings.SettingsApp.OpenSection(System.String,JToken,KS.Misc.Settings.SettingsType)
-  name: OpenSection(String, JToken, SettingsType)
-  href: api/KS.Misc.Settings.SettingsApp.html#KS_Misc_Settings_SettingsApp_OpenSection_System_String_JToken_KS_Misc_Settings_SettingsType_
-  commentId: M:KS.Misc.Settings.SettingsApp.OpenSection(System.String,JToken,KS.Misc.Settings.SettingsType)
-  fullName: KS.Misc.Settings.SettingsApp.OpenSection(System.String, JToken, KS.Misc.Settings.SettingsType)
-  nameWithType: SettingsApp.OpenSection(String, JToken, SettingsType)
+- uid: KS.Misc.Settings.SettingsApp.OpenSection(System.String,JToken,KS.Kernel.Configuration.ConfigType)
+  name: OpenSection(String, JToken, ConfigType)
+  href: api/KS.Misc.Settings.SettingsApp.html#KS_Misc_Settings_SettingsApp_OpenSection_System_String_JToken_KS_Kernel_Configuration_ConfigType_
+  commentId: M:KS.Misc.Settings.SettingsApp.OpenSection(System.String,JToken,KS.Kernel.Configuration.ConfigType)
+  fullName: KS.Misc.Settings.SettingsApp.OpenSection(System.String, JToken, KS.Kernel.Configuration.ConfigType)
+  nameWithType: SettingsApp.OpenSection(String, JToken, ConfigType)
 - uid: KS.Misc.Settings.SettingsApp.OpenSection*
   name: OpenSection
   href: api/KS.Misc.Settings.SettingsApp.html#KS_Misc_Settings_SettingsApp_OpenSection_
@@ -39432,30 +39432,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Settings.SettingsApp.VariableFinder
   nameWithType: SettingsApp.VariableFinder
-- uid: KS.Misc.Settings.SettingsType
-  name: SettingsType
-  href: api/KS.Misc.Settings.SettingsType.html
-  commentId: T:KS.Misc.Settings.SettingsType
-  fullName: KS.Misc.Settings.SettingsType
-  nameWithType: SettingsType
-- uid: KS.Misc.Settings.SettingsType.Normal
-  name: Normal
-  href: api/KS.Misc.Settings.SettingsType.html#KS_Misc_Settings_SettingsType_Normal
-  commentId: F:KS.Misc.Settings.SettingsType.Normal
-  fullName: KS.Misc.Settings.SettingsType.Normal
-  nameWithType: SettingsType.Normal
-- uid: KS.Misc.Settings.SettingsType.Screensaver
-  name: Screensaver
-  href: api/KS.Misc.Settings.SettingsType.html#KS_Misc_Settings_SettingsType_Screensaver
-  commentId: F:KS.Misc.Settings.SettingsType.Screensaver
-  fullName: KS.Misc.Settings.SettingsType.Screensaver
-  nameWithType: SettingsType.Screensaver
-- uid: KS.Misc.Settings.SettingsType.Splash
-  name: Splash
-  href: api/KS.Misc.Settings.SettingsType.html#KS_Misc_Settings_SettingsType_Splash
-  commentId: F:KS.Misc.Settings.SettingsType.Splash
-  fullName: KS.Misc.Settings.SettingsType.Splash
-  nameWithType: SettingsType.Splash
 - uid: KS.Misc.Splash
   name: KS.Misc.Splash
   href: api/KS.Misc.Splash.html

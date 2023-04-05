@@ -4473,19 +4473,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Settings.SettingsApp.html",
-          "hash": "tmJie5acRI7m4+QC/hEF6YDu+RYNcqIrBBKtl+Svto8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Settings.SettingsType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Settings.SettingsType.html",
-          "hash": "rOOySFszuJvAhjLYpqtk/MglNE7cctbCtmPlf7jXoXk="
+          "hash": "zL2uOfiRNbZ8t7qMdUeiiYATAA5WRXxdwz2n0YcIqCw="
         }
       },
       "is_incremental": false,
@@ -4497,7 +4485,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Settings.html",
-          "hash": "u+llPNE7lb2EwNyOACMAMzTQkLRpy+ynqsQL0hhtm4U="
+          "hash": "XMvrTwHNHqDWkrSG3KN7kskjITacoDkVrLrSQaW6jLk="
         }
       },
       "is_incremental": false,
@@ -8133,7 +8121,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "mgnmZvHgGCnboj3q/ullJCi6F2PphN/R3b8VGb0SXh0="
+          "hash": "1ElSqUytBlV4fxqyetGzOTnJXyyI+PtEeZEDhE1saaA="
         }
       },
       "is_incremental": false,
@@ -8206,7 +8194,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 676,
+          "total_file_count": 675,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

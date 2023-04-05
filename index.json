@@ -1857,17 +1857,12 @@
   "api/KS.Misc.Settings.html": {
     "href": "api/KS.Misc.Settings.html",
     "title": "Namespace KS.Misc.Settings | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Misc.Settings Classes SettingsApp Settings application module Enums SettingsType The settings type"
+    "keywords": "Namespace KS.Misc.Settings Classes SettingsApp Settings application module"
   },
   "api/KS.Misc.Settings.SettingsApp.html": {
     "href": "api/KS.Misc.Settings.SettingsApp.html",
     "title": "Class SettingsApp | Nitrocid KS API - Aptivi",
-    "keywords": "Class SettingsApp Settings application module Inheritance System.Object SettingsApp Namespace : KS.Misc.Settings Assembly : Nitrocid.dll Syntax public static class SettingsApp : object Methods OpenKey(String, Int32, JToken) Open a key. Declaration public static void OpenKey(string Section, int KeyNumber, JToken SettingsToken) Parameters Type Name Description System.String Section Section System.Int32 KeyNumber Key number JToken SettingsToken Settings token OpenMainPage(SettingsType) Main page Declaration public static void OpenMainPage(SettingsType SettingsType) Parameters Type Name Description SettingsType SettingsType OpenSection(String, JToken, SettingsType) Open section Declaration public static void OpenSection(string Section, JToken SettingsToken, SettingsType SettingsType) Parameters Type Name Description System.String Section Section name JToken SettingsToken Settings token SettingsType SettingsType Settings type VariableFinder(JToken) A sub for variable finding prompt Declaration public static void VariableFinder(JToken SettingsToken) Parameters Type Name Description JToken SettingsToken"
-  },
-  "api/KS.Misc.Settings.SettingsType.html": {
-    "href": "api/KS.Misc.Settings.SettingsType.html",
-    "title": "Enum SettingsType | Nitrocid KS API - Aptivi",
-    "keywords": "Enum SettingsType The settings type Namespace : KS.Misc.Settings Assembly : Nitrocid.dll Syntax public enum SettingsType : int Fields Name Description Normal The normal kernel settings Screensaver The screensaver settings Splash The splash settings"
+    "keywords": "Class SettingsApp Settings application module Inheritance System.Object SettingsApp Namespace : KS.Misc.Settings Assembly : Nitrocid.dll Syntax public static class SettingsApp : object Methods OpenKey(String, Int32, JToken) Open a key. Declaration public static void OpenKey(string Section, int KeyNumber, JToken SettingsToken) Parameters Type Name Description System.String Section Section System.Int32 KeyNumber Key number JToken SettingsToken Settings token OpenMainPage(ConfigType) Main page Declaration public static void OpenMainPage(ConfigType SettingsType) Parameters Type Name Description ConfigType SettingsType OpenSection(String, JToken, ConfigType) Open section Declaration public static void OpenSection(string Section, JToken SettingsToken, ConfigType SettingsType) Parameters Type Name Description System.String Section Section name JToken SettingsToken Settings token ConfigType SettingsType Settings type VariableFinder(JToken) A sub for variable finding prompt Declaration public static void VariableFinder(JToken SettingsToken) Parameters Type Name Description JToken SettingsToken"
   },
   "api/KS.Misc.Splash.html": {
     "href": "api/KS.Misc.Splash.html",
