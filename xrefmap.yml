@@ -9667,12 +9667,12 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.ConfigTools.CheckConfigVariables
   nameWithType: ConfigTools.CheckConfigVariables
-- uid: KS.Kernel.Configuration.ConfigTools.FindSetting(System.String,JToken)
-  name: FindSetting(String, JToken)
-  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_FindSetting_System_String_JToken_
-  commentId: M:KS.Kernel.Configuration.ConfigTools.FindSetting(System.String,JToken)
-  fullName: KS.Kernel.Configuration.ConfigTools.FindSetting(System.String, JToken)
-  nameWithType: ConfigTools.FindSetting(String, JToken)
+- uid: KS.Kernel.Configuration.ConfigTools.FindSetting(System.String,JToken,KS.Kernel.Configuration.ConfigType)
+  name: FindSetting(String, JToken, ConfigType)
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_FindSetting_System_String_JToken_KS_Kernel_Configuration_ConfigType_
+  commentId: M:KS.Kernel.Configuration.ConfigTools.FindSetting(System.String,JToken,KS.Kernel.Configuration.ConfigType)
+  fullName: KS.Kernel.Configuration.ConfigTools.FindSetting(System.String, JToken, KS.Kernel.Configuration.ConfigType)
+  nameWithType: ConfigTools.FindSetting(String, JToken, ConfigType)
 - uid: KS.Kernel.Configuration.ConfigTools.FindSetting*
   name: FindSetting
   href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_FindSetting_
@@ -9680,12 +9680,12 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.ConfigTools.FindSetting
   nameWithType: ConfigTools.FindSetting
-- uid: KS.Kernel.Configuration.ConfigTools.GetValueFromEntry(JToken)
-  name: GetValueFromEntry(JToken)
-  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_GetValueFromEntry_JToken_
-  commentId: M:KS.Kernel.Configuration.ConfigTools.GetValueFromEntry(JToken)
-  fullName: KS.Kernel.Configuration.ConfigTools.GetValueFromEntry(JToken)
-  nameWithType: ConfigTools.GetValueFromEntry(JToken)
+- uid: KS.Kernel.Configuration.ConfigTools.GetValueFromEntry(JToken,KS.Kernel.Configuration.ConfigType)
+  name: GetValueFromEntry(JToken, ConfigType)
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_GetValueFromEntry_JToken_KS_Kernel_Configuration_ConfigType_
+  commentId: M:KS.Kernel.Configuration.ConfigTools.GetValueFromEntry(JToken,KS.Kernel.Configuration.ConfigType)
+  fullName: KS.Kernel.Configuration.ConfigTools.GetValueFromEntry(JToken, KS.Kernel.Configuration.ConfigType)
+  nameWithType: ConfigTools.GetValueFromEntry(JToken, ConfigType)
 - uid: KS.Kernel.Configuration.ConfigTools.GetValueFromEntry*
   name: GetValueFromEntry
   href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_GetValueFromEntry_
@@ -28700,12 +28700,12 @@ references:
   commentId: T:KS.Misc.Reflection.FieldManager
   fullName: KS.Misc.Reflection.FieldManager
   nameWithType: FieldManager
-- uid: KS.Misc.Reflection.FieldManager.CheckField(System.String,System.Boolean)
-  name: CheckField(String, Boolean)
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_CheckField_System_String_System_Boolean_
-  commentId: M:KS.Misc.Reflection.FieldManager.CheckField(System.String,System.Boolean)
-  fullName: KS.Misc.Reflection.FieldManager.CheckField(System.String, System.Boolean)
-  nameWithType: FieldManager.CheckField(String, Boolean)
+- uid: KS.Misc.Reflection.FieldManager.CheckField(System.String)
+  name: CheckField(String)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_CheckField_System_String_
+  commentId: M:KS.Misc.Reflection.FieldManager.CheckField(System.String)
+  fullName: KS.Misc.Reflection.FieldManager.CheckField(System.String)
+  nameWithType: FieldManager.CheckField(String)
 - uid: KS.Misc.Reflection.FieldManager.CheckField*
   name: CheckField
   href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_CheckField_
@@ -28713,18 +28713,18 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.FieldManager.CheckField
   nameWithType: FieldManager.CheckField
-- uid: KS.Misc.Reflection.FieldManager.GetField(System.String,System.Boolean)
-  name: GetField(String, Boolean)
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetField_System_String_System_Boolean_
-  commentId: M:KS.Misc.Reflection.FieldManager.GetField(System.String,System.Boolean)
-  fullName: KS.Misc.Reflection.FieldManager.GetField(System.String, System.Boolean)
-  nameWithType: FieldManager.GetField(String, Boolean)
-- uid: KS.Misc.Reflection.FieldManager.GetField(System.String,Type,System.Boolean)
-  name: GetField(String, Type, Boolean)
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetField_System_String_Type_System_Boolean_
-  commentId: M:KS.Misc.Reflection.FieldManager.GetField(System.String,Type,System.Boolean)
-  fullName: KS.Misc.Reflection.FieldManager.GetField(System.String, Type, System.Boolean)
-  nameWithType: FieldManager.GetField(String, Type, Boolean)
+- uid: KS.Misc.Reflection.FieldManager.GetField(System.String)
+  name: GetField(String)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetField_System_String_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetField(System.String)
+  fullName: KS.Misc.Reflection.FieldManager.GetField(System.String)
+  nameWithType: FieldManager.GetField(String)
+- uid: KS.Misc.Reflection.FieldManager.GetField(System.String,Type)
+  name: GetField(String, Type)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetField_System_String_Type_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetField(System.String,Type)
+  fullName: KS.Misc.Reflection.FieldManager.GetField(System.String, Type)
+  nameWithType: FieldManager.GetField(String, Type)
 - uid: KS.Misc.Reflection.FieldManager.GetField*
   name: GetField
   href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetField_
@@ -28732,18 +28732,18 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.FieldManager.GetField
   nameWithType: FieldManager.GetField
-- uid: KS.Misc.Reflection.FieldManager.GetValue(System.String,System.Boolean)
-  name: GetValue(String, Boolean)
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetValue_System_String_System_Boolean_
-  commentId: M:KS.Misc.Reflection.FieldManager.GetValue(System.String,System.Boolean)
-  fullName: KS.Misc.Reflection.FieldManager.GetValue(System.String, System.Boolean)
-  nameWithType: FieldManager.GetValue(String, Boolean)
-- uid: KS.Misc.Reflection.FieldManager.GetValue(System.String,Type,System.Boolean)
-  name: GetValue(String, Type, Boolean)
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetValue_System_String_Type_System_Boolean_
-  commentId: M:KS.Misc.Reflection.FieldManager.GetValue(System.String,Type,System.Boolean)
-  fullName: KS.Misc.Reflection.FieldManager.GetValue(System.String, Type, System.Boolean)
-  nameWithType: FieldManager.GetValue(String, Type, Boolean)
+- uid: KS.Misc.Reflection.FieldManager.GetValue(System.String)
+  name: GetValue(String)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetValue_System_String_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetValue(System.String)
+  fullName: KS.Misc.Reflection.FieldManager.GetValue(System.String)
+  nameWithType: FieldManager.GetValue(String)
+- uid: KS.Misc.Reflection.FieldManager.GetValue(System.String,Type)
+  name: GetValue(String, Type)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetValue_System_String_Type_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetValue(System.String,Type)
+  fullName: KS.Misc.Reflection.FieldManager.GetValue(System.String, Type)
+  nameWithType: FieldManager.GetValue(String, Type)
 - uid: KS.Misc.Reflection.FieldManager.GetValue*
   name: GetValue
   href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetValue_
@@ -28751,18 +28751,18 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.FieldManager.GetValue
   nameWithType: FieldManager.GetValue
-- uid: KS.Misc.Reflection.FieldManager.GetValueFromEnumerable(System.String,System.Int32,System.Boolean)
-  name: GetValueFromEnumerable(String, Int32, Boolean)
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetValueFromEnumerable_System_String_System_Int32_System_Boolean_
-  commentId: M:KS.Misc.Reflection.FieldManager.GetValueFromEnumerable(System.String,System.Int32,System.Boolean)
-  fullName: KS.Misc.Reflection.FieldManager.GetValueFromEnumerable(System.String, System.Int32, System.Boolean)
-  nameWithType: FieldManager.GetValueFromEnumerable(String, Int32, Boolean)
-- uid: KS.Misc.Reflection.FieldManager.GetValueFromEnumerable(System.String,Type,System.Int32,System.Boolean)
-  name: GetValueFromEnumerable(String, Type, Int32, Boolean)
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetValueFromEnumerable_System_String_Type_System_Int32_System_Boolean_
-  commentId: M:KS.Misc.Reflection.FieldManager.GetValueFromEnumerable(System.String,Type,System.Int32,System.Boolean)
-  fullName: KS.Misc.Reflection.FieldManager.GetValueFromEnumerable(System.String, Type, System.Int32, System.Boolean)
-  nameWithType: FieldManager.GetValueFromEnumerable(String, Type, Int32, Boolean)
+- uid: KS.Misc.Reflection.FieldManager.GetValueFromEnumerable(System.String,System.Int32)
+  name: GetValueFromEnumerable(String, Int32)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetValueFromEnumerable_System_String_System_Int32_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetValueFromEnumerable(System.String,System.Int32)
+  fullName: KS.Misc.Reflection.FieldManager.GetValueFromEnumerable(System.String, System.Int32)
+  nameWithType: FieldManager.GetValueFromEnumerable(String, Int32)
+- uid: KS.Misc.Reflection.FieldManager.GetValueFromEnumerable(System.String,Type,System.Int32)
+  name: GetValueFromEnumerable(String, Type, Int32)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetValueFromEnumerable_System_String_Type_System_Int32_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetValueFromEnumerable(System.String,Type,System.Int32)
+  fullName: KS.Misc.Reflection.FieldManager.GetValueFromEnumerable(System.String, Type, System.Int32)
+  nameWithType: FieldManager.GetValueFromEnumerable(String, Type, Int32)
 - uid: KS.Misc.Reflection.FieldManager.GetValueFromEnumerable*
   name: GetValueFromEnumerable
   href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetValueFromEnumerable_
@@ -28770,18 +28770,18 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.FieldManager.GetValueFromEnumerable
   nameWithType: FieldManager.GetValueFromEnumerable
-- uid: KS.Misc.Reflection.FieldManager.SetValue(System.String,System.Object,System.Boolean)
-  name: SetValue(String, Object, Boolean)
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_SetValue_System_String_System_Object_System_Boolean_
-  commentId: M:KS.Misc.Reflection.FieldManager.SetValue(System.String,System.Object,System.Boolean)
-  fullName: KS.Misc.Reflection.FieldManager.SetValue(System.String, System.Object, System.Boolean)
-  nameWithType: FieldManager.SetValue(String, Object, Boolean)
-- uid: KS.Misc.Reflection.FieldManager.SetValue(System.String,System.Object,Type,System.Boolean)
-  name: SetValue(String, Object, Type, Boolean)
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_SetValue_System_String_System_Object_Type_System_Boolean_
-  commentId: M:KS.Misc.Reflection.FieldManager.SetValue(System.String,System.Object,Type,System.Boolean)
-  fullName: KS.Misc.Reflection.FieldManager.SetValue(System.String, System.Object, Type, System.Boolean)
-  nameWithType: FieldManager.SetValue(String, Object, Type, Boolean)
+- uid: KS.Misc.Reflection.FieldManager.SetValue(System.String,System.Object)
+  name: SetValue(String, Object)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_SetValue_System_String_System_Object_
+  commentId: M:KS.Misc.Reflection.FieldManager.SetValue(System.String,System.Object)
+  fullName: KS.Misc.Reflection.FieldManager.SetValue(System.String, System.Object)
+  nameWithType: FieldManager.SetValue(String, Object)
+- uid: KS.Misc.Reflection.FieldManager.SetValue(System.String,System.Object,Type)
+  name: SetValue(String, Object, Type)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_SetValue_System_String_System_Object_Type_
+  commentId: M:KS.Misc.Reflection.FieldManager.SetValue(System.String,System.Object,Type)
+  fullName: KS.Misc.Reflection.FieldManager.SetValue(System.String, System.Object, Type)
+  nameWithType: FieldManager.SetValue(String, Object, Type)
 - uid: KS.Misc.Reflection.FieldManager.SetValue*
   name: SetValue
   href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_SetValue_
@@ -28891,6 +28891,31 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.PropertyManager.GetPropertyValue
   nameWithType: PropertyManager.GetPropertyValue
+- uid: KS.Misc.Reflection.PropertyManager.GetPropertyValueInstance*
+  name: GetPropertyValueInstance
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetPropertyValueInstance_
+  commentId: Overload:KS.Misc.Reflection.PropertyManager.GetPropertyValueInstance
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.PropertyManager.GetPropertyValueInstance
+  nameWithType: PropertyManager.GetPropertyValueInstance
+- uid: KS.Misc.Reflection.PropertyManager.GetPropertyValueInstance``1(``0,System.String)
+  name: GetPropertyValueInstance<T>(T, String)
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetPropertyValueInstance__1___0_System_String_
+  commentId: M:KS.Misc.Reflection.PropertyManager.GetPropertyValueInstance``1(``0,System.String)
+  name.vb: GetPropertyValueInstance(Of T)(T, String)
+  fullName: KS.Misc.Reflection.PropertyManager.GetPropertyValueInstance<T>(T, System.String)
+  fullName.vb: KS.Misc.Reflection.PropertyManager.GetPropertyValueInstance(Of T)(T, System.String)
+  nameWithType: PropertyManager.GetPropertyValueInstance<T>(T, String)
+  nameWithType.vb: PropertyManager.GetPropertyValueInstance(Of T)(T, String)
+- uid: KS.Misc.Reflection.PropertyManager.GetPropertyValueInstance``1(``0,System.String,Type)
+  name: GetPropertyValueInstance<T>(T, String, Type)
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetPropertyValueInstance__1___0_System_String_Type_
+  commentId: M:KS.Misc.Reflection.PropertyManager.GetPropertyValueInstance``1(``0,System.String,Type)
+  name.vb: GetPropertyValueInstance(Of T)(T, String, Type)
+  fullName: KS.Misc.Reflection.PropertyManager.GetPropertyValueInstance<T>(T, System.String, Type)
+  fullName.vb: KS.Misc.Reflection.PropertyManager.GetPropertyValueInstance(Of T)(T, System.String, Type)
+  nameWithType: PropertyManager.GetPropertyValueInstance<T>(T, String, Type)
+  nameWithType.vb: PropertyManager.GetPropertyValueInstance(Of T)(T, String, Type)
 - uid: KS.Misc.Reflection.PropertyManager.SetPropertyValue(System.String,System.Object)
   name: SetPropertyValue(String, Object)
   href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_SetPropertyValue_System_String_System_Object_
@@ -28910,6 +28935,31 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.PropertyManager.SetPropertyValue
   nameWithType: PropertyManager.SetPropertyValue
+- uid: KS.Misc.Reflection.PropertyManager.SetPropertyValueInstance*
+  name: SetPropertyValueInstance
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_SetPropertyValueInstance_
+  commentId: Overload:KS.Misc.Reflection.PropertyManager.SetPropertyValueInstance
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.PropertyManager.SetPropertyValueInstance
+  nameWithType: PropertyManager.SetPropertyValueInstance
+- uid: KS.Misc.Reflection.PropertyManager.SetPropertyValueInstance``1(``0,System.String,System.Object)
+  name: SetPropertyValueInstance<T>(T, String, Object)
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_SetPropertyValueInstance__1___0_System_String_System_Object_
+  commentId: M:KS.Misc.Reflection.PropertyManager.SetPropertyValueInstance``1(``0,System.String,System.Object)
+  name.vb: SetPropertyValueInstance(Of T)(T, String, Object)
+  fullName: KS.Misc.Reflection.PropertyManager.SetPropertyValueInstance<T>(T, System.String, System.Object)
+  fullName.vb: KS.Misc.Reflection.PropertyManager.SetPropertyValueInstance(Of T)(T, System.String, System.Object)
+  nameWithType: PropertyManager.SetPropertyValueInstance<T>(T, String, Object)
+  nameWithType.vb: PropertyManager.SetPropertyValueInstance(Of T)(T, String, Object)
+- uid: KS.Misc.Reflection.PropertyManager.SetPropertyValueInstance``1(``0,System.String,System.Object,Type)
+  name: SetPropertyValueInstance<T>(T, String, Object, Type)
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_SetPropertyValueInstance__1___0_System_String_System_Object_Type_
+  commentId: M:KS.Misc.Reflection.PropertyManager.SetPropertyValueInstance``1(``0,System.String,System.Object,Type)
+  name.vb: SetPropertyValueInstance(Of T)(T, String, Object, Type)
+  fullName: KS.Misc.Reflection.PropertyManager.SetPropertyValueInstance<T>(T, System.String, System.Object, Type)
+  fullName.vb: KS.Misc.Reflection.PropertyManager.SetPropertyValueInstance(Of T)(T, System.String, System.Object, Type)
+  nameWithType: PropertyManager.SetPropertyValueInstance<T>(T, String, Object, Type)
+  nameWithType.vb: PropertyManager.SetPropertyValueInstance(Of T)(T, String, Object, Type)
 - uid: KS.Misc.Reflection.StringManipulate
   name: StringManipulate
   href: api/KS.Misc.Reflection.StringManipulate.html
@@ -39380,12 +39430,12 @@ references:
   commentId: T:KS.Misc.Settings.SettingsApp
   fullName: KS.Misc.Settings.SettingsApp
   nameWithType: SettingsApp
-- uid: KS.Misc.Settings.SettingsApp.OpenKey(System.String,System.Int32,JToken)
-  name: OpenKey(String, Int32, JToken)
-  href: api/KS.Misc.Settings.SettingsApp.html#KS_Misc_Settings_SettingsApp_OpenKey_System_String_System_Int32_JToken_
-  commentId: M:KS.Misc.Settings.SettingsApp.OpenKey(System.String,System.Int32,JToken)
-  fullName: KS.Misc.Settings.SettingsApp.OpenKey(System.String, System.Int32, JToken)
-  nameWithType: SettingsApp.OpenKey(String, Int32, JToken)
+- uid: KS.Misc.Settings.SettingsApp.OpenKey(System.String,System.Int32,JToken,KS.Kernel.Configuration.ConfigType)
+  name: OpenKey(String, Int32, JToken, ConfigType)
+  href: api/KS.Misc.Settings.SettingsApp.html#KS_Misc_Settings_SettingsApp_OpenKey_System_String_System_Int32_JToken_KS_Kernel_Configuration_ConfigType_
+  commentId: M:KS.Misc.Settings.SettingsApp.OpenKey(System.String,System.Int32,JToken,KS.Kernel.Configuration.ConfigType)
+  fullName: KS.Misc.Settings.SettingsApp.OpenKey(System.String, System.Int32, JToken, KS.Kernel.Configuration.ConfigType)
+  nameWithType: SettingsApp.OpenKey(String, Int32, JToken, ConfigType)
 - uid: KS.Misc.Settings.SettingsApp.OpenKey*
   name: OpenKey
   href: api/KS.Misc.Settings.SettingsApp.html#KS_Misc_Settings_SettingsApp_OpenKey_
@@ -39419,12 +39469,12 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Settings.SettingsApp.OpenSection
   nameWithType: SettingsApp.OpenSection
-- uid: KS.Misc.Settings.SettingsApp.VariableFinder(JToken)
-  name: VariableFinder(JToken)
-  href: api/KS.Misc.Settings.SettingsApp.html#KS_Misc_Settings_SettingsApp_VariableFinder_JToken_
-  commentId: M:KS.Misc.Settings.SettingsApp.VariableFinder(JToken)
-  fullName: KS.Misc.Settings.SettingsApp.VariableFinder(JToken)
-  nameWithType: SettingsApp.VariableFinder(JToken)
+- uid: KS.Misc.Settings.SettingsApp.VariableFinder(JToken,KS.Kernel.Configuration.ConfigType)
+  name: VariableFinder(JToken, ConfigType)
+  href: api/KS.Misc.Settings.SettingsApp.html#KS_Misc_Settings_SettingsApp_VariableFinder_JToken_KS_Kernel_Configuration_ConfigType_
+  commentId: M:KS.Misc.Settings.SettingsApp.VariableFinder(JToken,KS.Kernel.Configuration.ConfigType)
+  fullName: KS.Misc.Settings.SettingsApp.VariableFinder(JToken, KS.Kernel.Configuration.ConfigType)
+  nameWithType: SettingsApp.VariableFinder(JToken, ConfigType)
 - uid: KS.Misc.Settings.SettingsApp.VariableFinder*
   name: VariableFinder
   href: api/KS.Misc.Settings.SettingsApp.html#KS_Misc_Settings_SettingsApp_VariableFinder_

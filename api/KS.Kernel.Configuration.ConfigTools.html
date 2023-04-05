@@ -128,13 +128,13 @@
   
   
   <a id="KS_Kernel_Configuration_ConfigTools_FindSetting_" data-uid="KS.Kernel.Configuration.ConfigTools.FindSetting*"></a>
-  <h4 id="KS_Kernel_Configuration_ConfigTools_FindSetting_System_String_JToken_" data-uid="KS.Kernel.Configuration.ConfigTools.FindSetting(System.String,JToken)">FindSetting(String, JToken)</h4>
+  <h4 id="KS_Kernel_Configuration_ConfigTools_FindSetting_System_String_JToken_KS_Kernel_Configuration_ConfigType_" data-uid="KS.Kernel.Configuration.ConfigTools.FindSetting(System.String,JToken,KS.Kernel.Configuration.ConfigType)">FindSetting(String, JToken, ConfigType)</h4>
   <div class="markdown level1 summary"><p>Finds a setting with the matching pattern</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;InputChoiceInfo&gt; FindSetting(string Pattern, JToken SettingsToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public static List&lt;InputChoiceInfo&gt; FindSetting(string Pattern, JToken SettingsToken, ConfigType SettingsType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -154,6 +154,11 @@
       <tr>
         <td><span class="xref">JToken</span></td>
         <td><span class="parametername">SettingsToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Configuration.ConfigType.html">ConfigType</a></td>
+        <td><span class="parametername">SettingsType</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -176,13 +181,13 @@
   
   
   <a id="KS_Kernel_Configuration_ConfigTools_GetValueFromEntry_" data-uid="KS.Kernel.Configuration.ConfigTools.GetValueFromEntry*"></a>
-  <h4 id="KS_Kernel_Configuration_ConfigTools_GetValueFromEntry_JToken_" data-uid="KS.Kernel.Configuration.ConfigTools.GetValueFromEntry(JToken)">GetValueFromEntry(JToken)</h4>
+  <h4 id="KS_Kernel_Configuration_ConfigTools_GetValueFromEntry_JToken_KS_Kernel_Configuration_ConfigType_" data-uid="KS.Kernel.Configuration.ConfigTools.GetValueFromEntry(JToken,KS.Kernel.Configuration.ConfigType)">GetValueFromEntry(JToken, ConfigType)</h4>
   <div class="markdown level1 summary"><p>Gets the value from a settings entry</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static object GetValueFromEntry(JToken Setting)</code></pre>
+    <pre><code class="lang-csharp hljs">public static object GetValueFromEntry(JToken Setting, ConfigType SettingsType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -198,6 +203,12 @@
         <td><span class="xref">JToken</span></td>
         <td><span class="parametername">Setting</span></td>
         <td><p>An entry to get the value from</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Configuration.ConfigType.html">ConfigType</a></td>
+        <td><span class="parametername">SettingsType</span></td>
+        <td><p>Settings type</p>
 </td>
       </tr>
     </tbody>

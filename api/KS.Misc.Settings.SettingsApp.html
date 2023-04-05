@@ -102,13 +102,13 @@
   
   
   <a id="KS_Misc_Settings_SettingsApp_OpenKey_" data-uid="KS.Misc.Settings.SettingsApp.OpenKey*"></a>
-  <h4 id="KS_Misc_Settings_SettingsApp_OpenKey_System_String_System_Int32_JToken_" data-uid="KS.Misc.Settings.SettingsApp.OpenKey(System.String,System.Int32,JToken)">OpenKey(String, Int32, JToken)</h4>
+  <h4 id="KS_Misc_Settings_SettingsApp_OpenKey_System_String_System_Int32_JToken_KS_Kernel_Configuration_ConfigType_" data-uid="KS.Misc.Settings.SettingsApp.OpenKey(System.String,System.Int32,JToken,KS.Kernel.Configuration.ConfigType)">OpenKey(String, Int32, JToken, ConfigType)</h4>
   <div class="markdown level1 summary"><p>Open a key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OpenKey(string Section, int KeyNumber, JToken SettingsToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void OpenKey(string Section, int KeyNumber, JToken SettingsToken, ConfigType SettingsType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -136,6 +136,12 @@
         <td><span class="xref">JToken</span></td>
         <td><span class="parametername">SettingsToken</span></td>
         <td><p>Settings token</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Configuration.ConfigType.html">ConfigType</a></td>
+        <td><span class="parametername">SettingsType</span></td>
+        <td><p>Settings type</p>
 </td>
       </tr>
     </tbody>
@@ -212,13 +218,13 @@
   
   
   <a id="KS_Misc_Settings_SettingsApp_VariableFinder_" data-uid="KS.Misc.Settings.SettingsApp.VariableFinder*"></a>
-  <h4 id="KS_Misc_Settings_SettingsApp_VariableFinder_JToken_" data-uid="KS.Misc.Settings.SettingsApp.VariableFinder(JToken)">VariableFinder(JToken)</h4>
+  <h4 id="KS_Misc_Settings_SettingsApp_VariableFinder_JToken_KS_Kernel_Configuration_ConfigType_" data-uid="KS.Misc.Settings.SettingsApp.VariableFinder(JToken,KS.Kernel.Configuration.ConfigType)">VariableFinder(JToken, ConfigType)</h4>
   <div class="markdown level1 summary"><p>A sub for variable finding prompt</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void VariableFinder(JToken SettingsToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void VariableFinder(JToken SettingsToken, ConfigType SettingsType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -233,6 +239,11 @@
       <tr>
         <td><span class="xref">JToken</span></td>
         <td><span class="parametername">SettingsToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Configuration.ConfigType.html">ConfigType</a></td>
+        <td><span class="parametername">SettingsType</span></td>
         <td></td>
       </tr>
     </tbody>
