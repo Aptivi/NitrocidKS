@@ -19966,6 +19966,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.TypewriterNewScreenDelay
   nameWithType: KernelSaverConfig.TypewriterNewScreenDelay
+- uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.TypewriterShowArrowPos
+  name: TypewriterShowArrowPos
+  href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_TypewriterShowArrowPos
+  commentId: P:KS.Kernel.Configuration.Instances.KernelSaverConfig.TypewriterShowArrowPos
+  fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.TypewriterShowArrowPos
+  nameWithType: KernelSaverConfig.TypewriterShowArrowPos
+- uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.TypewriterShowArrowPos*
+  name: TypewriterShowArrowPos
+  href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_TypewriterShowArrowPos_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelSaverConfig.TypewriterShowArrowPos
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.TypewriterShowArrowPos
+  nameWithType: KernelSaverConfig.TypewriterShowArrowPos
 - uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.TypewriterTextColor
   name: TypewriterTextColor
   href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_TypewriterTextColor
@@ -38763,7 +38776,14 @@ references:
 - uid: KS.Misc.Screensaver.Displays.TypewriterSettings.TypewriterShowArrowPos
   name: TypewriterShowArrowPos
   href: api/KS.Misc.Screensaver.Displays.TypewriterSettings.html#KS_Misc_Screensaver_Displays_TypewriterSettings_TypewriterShowArrowPos
-  commentId: F:KS.Misc.Screensaver.Displays.TypewriterSettings.TypewriterShowArrowPos
+  commentId: P:KS.Misc.Screensaver.Displays.TypewriterSettings.TypewriterShowArrowPos
+  fullName: KS.Misc.Screensaver.Displays.TypewriterSettings.TypewriterShowArrowPos
+  nameWithType: TypewriterSettings.TypewriterShowArrowPos
+- uid: KS.Misc.Screensaver.Displays.TypewriterSettings.TypewriterShowArrowPos*
+  name: TypewriterShowArrowPos
+  href: api/KS.Misc.Screensaver.Displays.TypewriterSettings.html#KS_Misc_Screensaver_Displays_TypewriterSettings_TypewriterShowArrowPos_
+  commentId: Overload:KS.Misc.Screensaver.Displays.TypewriterSettings.TypewriterShowArrowPos
+  isSpec: "True"
   fullName: KS.Misc.Screensaver.Displays.TypewriterSettings.TypewriterShowArrowPos
   nameWithType: TypewriterSettings.TypewriterShowArrowPos
 - uid: KS.Misc.Screensaver.Displays.TypewriterSettings.TypewriterTextColor
