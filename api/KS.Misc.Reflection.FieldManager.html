@@ -241,6 +241,51 @@
   </table>
   
   
+  <a id="KS_Misc_Reflection_FieldManager_GetFieldGeneral_" data-uid="KS.Misc.Reflection.FieldManager.GetFieldGeneral*"></a>
+  <h4 id="KS_Misc_Reflection_FieldManager_GetFieldGeneral_System_String_" data-uid="KS.Misc.Reflection.FieldManager.GetFieldGeneral(System.String)">GetFieldGeneral(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a field from variable name generally</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FieldInfo GetFieldGeneral(string Variable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Variable</span></td>
+        <td><p>Variable name. Use operator NameOf to get name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FieldInfo</span></td>
+        <td><p>Field information</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="KS_Misc_Reflection_FieldManager_GetValue_" data-uid="KS.Misc.Reflection.FieldManager.GetValue*"></a>
   <h4 id="KS_Misc_Reflection_FieldManager_GetValue_System_String_" data-uid="KS.Misc.Reflection.FieldManager.GetValue(System.String)">GetValue(String)</h4>
   <div class="markdown level1 summary"><p>Gets the value of a variable dynamically</p>
@@ -287,13 +332,13 @@
   
   
   <a id="KS_Misc_Reflection_FieldManager_GetValue_" data-uid="KS.Misc.Reflection.FieldManager.GetValue*"></a>
-  <h4 id="KS_Misc_Reflection_FieldManager_GetValue_System_String_Type_" data-uid="KS.Misc.Reflection.FieldManager.GetValue(System.String,Type)">GetValue(String, Type)</h4>
+  <h4 id="KS_Misc_Reflection_FieldManager_GetValue_System_String_Type_System_Boolean_" data-uid="KS.Misc.Reflection.FieldManager.GetValue(System.String,Type,System.Boolean)">GetValue(String, Type, Boolean)</h4>
   <div class="markdown level1 summary"><p>Gets the value of a variable dynamically</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static object GetValue(string Variable, Type VariableType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static object GetValue(string Variable, Type VariableType, bool UseGeneral = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -315,6 +360,12 @@
         <td><span class="xref">Type</span></td>
         <td><span class="parametername">VariableType</span></td>
         <td><p>Variable type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">UseGeneral</span></td>
+        <td><p>Whether to use the general kernel types</p>
 </td>
       </tr>
     </tbody>

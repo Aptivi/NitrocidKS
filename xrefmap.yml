@@ -23797,6 +23797,19 @@ references:
   isSpec: "True"
   fullName: KS.Languages.LanguageManager.Languages
   nameWithType: LanguageManager.Languages
+- uid: KS.Languages.LanguageManager.ListAllLanguages
+  name: ListAllLanguages()
+  href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_ListAllLanguages
+  commentId: M:KS.Languages.LanguageManager.ListAllLanguages
+  fullName: KS.Languages.LanguageManager.ListAllLanguages()
+  nameWithType: LanguageManager.ListAllLanguages()
+- uid: KS.Languages.LanguageManager.ListAllLanguages*
+  name: ListAllLanguages
+  href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_ListAllLanguages_
+  commentId: Overload:KS.Languages.LanguageManager.ListAllLanguages
+  isSpec: "True"
+  fullName: KS.Languages.LanguageManager.ListAllLanguages
+  nameWithType: LanguageManager.ListAllLanguages
 - uid: KS.Languages.LanguageManager.ListLanguages(System.String)
   name: ListLanguages(String)
   href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_ListLanguages_System_String_
@@ -28732,18 +28745,31 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.FieldManager.GetField
   nameWithType: FieldManager.GetField
+- uid: KS.Misc.Reflection.FieldManager.GetFieldGeneral(System.String)
+  name: GetFieldGeneral(String)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFieldGeneral_System_String_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetFieldGeneral(System.String)
+  fullName: KS.Misc.Reflection.FieldManager.GetFieldGeneral(System.String)
+  nameWithType: FieldManager.GetFieldGeneral(String)
+- uid: KS.Misc.Reflection.FieldManager.GetFieldGeneral*
+  name: GetFieldGeneral
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFieldGeneral_
+  commentId: Overload:KS.Misc.Reflection.FieldManager.GetFieldGeneral
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.FieldManager.GetFieldGeneral
+  nameWithType: FieldManager.GetFieldGeneral
 - uid: KS.Misc.Reflection.FieldManager.GetValue(System.String)
   name: GetValue(String)
   href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetValue_System_String_
   commentId: M:KS.Misc.Reflection.FieldManager.GetValue(System.String)
   fullName: KS.Misc.Reflection.FieldManager.GetValue(System.String)
   nameWithType: FieldManager.GetValue(String)
-- uid: KS.Misc.Reflection.FieldManager.GetValue(System.String,Type)
-  name: GetValue(String, Type)
-  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetValue_System_String_Type_
-  commentId: M:KS.Misc.Reflection.FieldManager.GetValue(System.String,Type)
-  fullName: KS.Misc.Reflection.FieldManager.GetValue(System.String, Type)
-  nameWithType: FieldManager.GetValue(String, Type)
+- uid: KS.Misc.Reflection.FieldManager.GetValue(System.String,Type,System.Boolean)
+  name: GetValue(String, Type, Boolean)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetValue_System_String_Type_System_Boolean_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetValue(System.String,Type,System.Boolean)
+  fullName: KS.Misc.Reflection.FieldManager.GetValue(System.String, Type, System.Boolean)
+  nameWithType: FieldManager.GetValue(String, Type, Boolean)
 - uid: KS.Misc.Reflection.FieldManager.GetValue*
   name: GetValue
   href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetValue_
@@ -28872,18 +28898,31 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.PropertyManager.GetProperty
   nameWithType: PropertyManager.GetProperty
+- uid: KS.Misc.Reflection.PropertyManager.GetPropertyGeneral(System.String)
+  name: GetPropertyGeneral(String)
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetPropertyGeneral_System_String_
+  commentId: M:KS.Misc.Reflection.PropertyManager.GetPropertyGeneral(System.String)
+  fullName: KS.Misc.Reflection.PropertyManager.GetPropertyGeneral(System.String)
+  nameWithType: PropertyManager.GetPropertyGeneral(String)
+- uid: KS.Misc.Reflection.PropertyManager.GetPropertyGeneral*
+  name: GetPropertyGeneral
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetPropertyGeneral_
+  commentId: Overload:KS.Misc.Reflection.PropertyManager.GetPropertyGeneral
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.PropertyManager.GetPropertyGeneral
+  nameWithType: PropertyManager.GetPropertyGeneral
 - uid: KS.Misc.Reflection.PropertyManager.GetPropertyValue(System.String)
   name: GetPropertyValue(String)
   href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetPropertyValue_System_String_
   commentId: M:KS.Misc.Reflection.PropertyManager.GetPropertyValue(System.String)
   fullName: KS.Misc.Reflection.PropertyManager.GetPropertyValue(System.String)
   nameWithType: PropertyManager.GetPropertyValue(String)
-- uid: KS.Misc.Reflection.PropertyManager.GetPropertyValue(System.String,Type)
-  name: GetPropertyValue(String, Type)
-  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetPropertyValue_System_String_Type_
-  commentId: M:KS.Misc.Reflection.PropertyManager.GetPropertyValue(System.String,Type)
-  fullName: KS.Misc.Reflection.PropertyManager.GetPropertyValue(System.String, Type)
-  nameWithType: PropertyManager.GetPropertyValue(String, Type)
+- uid: KS.Misc.Reflection.PropertyManager.GetPropertyValue(System.String,Type,System.Boolean)
+  name: GetPropertyValue(String, Type, Boolean)
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetPropertyValue_System_String_Type_System_Boolean_
+  commentId: M:KS.Misc.Reflection.PropertyManager.GetPropertyValue(System.String,Type,System.Boolean)
+  fullName: KS.Misc.Reflection.PropertyManager.GetPropertyValue(System.String, Type, System.Boolean)
+  nameWithType: PropertyManager.GetPropertyValue(String, Type, Boolean)
 - uid: KS.Misc.Reflection.PropertyManager.GetPropertyValue*
   name: GetPropertyValue
   href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetPropertyValue_
@@ -53019,6 +53058,25 @@ references:
   isSpec: "True"
   fullName: KS.Shell.Prompts.PromptPresetManager.SetPreset
   nameWithType: PromptPresetManager.SetPreset
+- uid: KS.Shell.Prompts.PromptPresetManager.SetPresetDry(System.String,KS.Shell.ShellBase.Shells.ShellType,System.Boolean)
+  name: SetPresetDry(String, ShellType, Boolean)
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_SetPresetDry_System_String_KS_Shell_ShellBase_Shells_ShellType_System_Boolean_
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.SetPresetDry(System.String,KS.Shell.ShellBase.Shells.ShellType,System.Boolean)
+  fullName: KS.Shell.Prompts.PromptPresetManager.SetPresetDry(System.String, KS.Shell.ShellBase.Shells.ShellType, System.Boolean)
+  nameWithType: PromptPresetManager.SetPresetDry(String, ShellType, Boolean)
+- uid: KS.Shell.Prompts.PromptPresetManager.SetPresetDry(System.String,System.String,System.Boolean)
+  name: SetPresetDry(String, String, Boolean)
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_SetPresetDry_System_String_System_String_System_Boolean_
+  commentId: M:KS.Shell.Prompts.PromptPresetManager.SetPresetDry(System.String,System.String,System.Boolean)
+  fullName: KS.Shell.Prompts.PromptPresetManager.SetPresetDry(System.String, System.String, System.Boolean)
+  nameWithType: PromptPresetManager.SetPresetDry(String, String, Boolean)
+- uid: KS.Shell.Prompts.PromptPresetManager.SetPresetDry*
+  name: SetPresetDry
+  href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_SetPresetDry_
+  commentId: Overload:KS.Shell.Prompts.PromptPresetManager.SetPresetDry
+  isSpec: "True"
+  fullName: KS.Shell.Prompts.PromptPresetManager.SetPresetDry
+  nameWithType: PromptPresetManager.SetPresetDry
 - uid: KS.Shell.Prompts.PromptPresetManager.WriteShellCompletionPrompt(KS.Shell.ShellBase.Shells.ShellType)
   name: WriteShellCompletionPrompt(ShellType)
   href: api/KS.Shell.Prompts.PromptPresetManager.html#KS_Shell_Prompts_PromptPresetManager_WriteShellCompletionPrompt_KS_Shell_ShellBase_Shells_ShellType_
