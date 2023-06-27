@@ -10184,6 +10184,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.CustomBanner
   nameWithType: KernelMainConfig.CustomBanner
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.DebugCensorPrivateInfo
+  name: DebugCensorPrivateInfo
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_DebugCensorPrivateInfo
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.DebugCensorPrivateInfo
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.DebugCensorPrivateInfo
+  nameWithType: KernelMainConfig.DebugCensorPrivateInfo
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.DebugCensorPrivateInfo*
+  name: DebugCensorPrivateInfo
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_DebugCensorPrivateInfo_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.DebugCensorPrivateInfo
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.DebugCensorPrivateInfo
+  nameWithType: KernelMainConfig.DebugCensorPrivateInfo
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.DebugPort
   name: DebugPort
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_DebugPort
@@ -20466,6 +20479,19 @@ references:
   commentId: T:KS.Kernel.Debugging.DebugWriter
   fullName: KS.Kernel.Debugging.DebugWriter
   nameWithType: DebugWriter
+- uid: KS.Kernel.Debugging.DebugWriter.DebugCensorPrivateInfo
+  name: DebugCensorPrivateInfo
+  href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_DebugCensorPrivateInfo
+  commentId: P:KS.Kernel.Debugging.DebugWriter.DebugCensorPrivateInfo
+  fullName: KS.Kernel.Debugging.DebugWriter.DebugCensorPrivateInfo
+  nameWithType: DebugWriter.DebugCensorPrivateInfo
+- uid: KS.Kernel.Debugging.DebugWriter.DebugCensorPrivateInfo*
+  name: DebugCensorPrivateInfo
+  href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_DebugCensorPrivateInfo_
+  commentId: Overload:KS.Kernel.Debugging.DebugWriter.DebugCensorPrivateInfo
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.DebugWriter.DebugCensorPrivateInfo
+  nameWithType: DebugWriter.DebugCensorPrivateInfo
 - uid: KS.Kernel.Debugging.DebugWriter.DebugStackTraces
   name: DebugStackTraces
   href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_DebugStackTraces
@@ -20520,6 +20546,22 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly
   nameWithType: DebugWriter.WriteDebugDevicesOnly
+- uid: KS.Kernel.Debugging.DebugWriter.WriteDebugPrivacy(KS.Kernel.Debugging.DebugLevel,System.String,System.Int32[],System.Object[])
+  name: WriteDebugPrivacy(DebugLevel, String, Int32[], Object[])
+  href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_WriteDebugPrivacy_KS_Kernel_Debugging_DebugLevel_System_String_System_Int32___System_Object___
+  commentId: M:KS.Kernel.Debugging.DebugWriter.WriteDebugPrivacy(KS.Kernel.Debugging.DebugLevel,System.String,System.Int32[],System.Object[])
+  name.vb: WriteDebugPrivacy(DebugLevel, String, Int32(), Object())
+  fullName: KS.Kernel.Debugging.DebugWriter.WriteDebugPrivacy(KS.Kernel.Debugging.DebugLevel, System.String, System.Int32[], System.Object[])
+  fullName.vb: KS.Kernel.Debugging.DebugWriter.WriteDebugPrivacy(KS.Kernel.Debugging.DebugLevel, System.String, System.Int32(), System.Object())
+  nameWithType: DebugWriter.WriteDebugPrivacy(DebugLevel, String, Int32[], Object[])
+  nameWithType.vb: DebugWriter.WriteDebugPrivacy(DebugLevel, String, Int32(), Object())
+- uid: KS.Kernel.Debugging.DebugWriter.WriteDebugPrivacy*
+  name: WriteDebugPrivacy
+  href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_WriteDebugPrivacy_
+  commentId: Overload:KS.Kernel.Debugging.DebugWriter.WriteDebugPrivacy
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.DebugWriter.WriteDebugPrivacy
+  nameWithType: DebugWriter.WriteDebugPrivacy
 - uid: KS.Kernel.Debugging.DebugWriter.WriteDebugStackTrace(Exception)
   name: WriteDebugStackTrace(Exception)
   href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_WriteDebugStackTrace_Exception_
@@ -26245,12 +26287,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Contacts.ContactsManager.ImportContacts
   nameWithType: ContactsManager.ImportContacts
-- uid: KS.Misc.Contacts.ContactsManager.InstallContacts
-  name: InstallContacts()
-  href: api/KS.Misc.Contacts.ContactsManager.html#KS_Misc_Contacts_ContactsManager_InstallContacts
-  commentId: M:KS.Misc.Contacts.ContactsManager.InstallContacts
-  fullName: KS.Misc.Contacts.ContactsManager.InstallContacts()
-  nameWithType: ContactsManager.InstallContacts()
 - uid: KS.Misc.Contacts.ContactsManager.InstallContacts(System.String,System.Boolean)
   name: InstallContacts(String, Boolean)
   href: api/KS.Misc.Contacts.ContactsManager.html#KS_Misc_Contacts_ContactsManager_InstallContacts_System_String_System_Boolean_
@@ -45855,19 +45891,6 @@ references:
   isSpec: "True"
   fullName: KS.Network.RSS.RSSTools.MakeRssArticlesFromFeed
   nameWithType: RSSTools.MakeRssArticlesFromFeed
-- uid: KS.Network.RSS.RSSTools.OpenFeedSelector
-  name: OpenFeedSelector()
-  href: api/KS.Network.RSS.RSSTools.html#KS_Network_RSS_RSSTools_OpenFeedSelector
-  commentId: M:KS.Network.RSS.RSSTools.OpenFeedSelector
-  fullName: KS.Network.RSS.RSSTools.OpenFeedSelector()
-  nameWithType: RSSTools.OpenFeedSelector()
-- uid: KS.Network.RSS.RSSTools.OpenFeedSelector*
-  name: OpenFeedSelector
-  href: api/KS.Network.RSS.RSSTools.html#KS_Network_RSS_RSSTools_OpenFeedSelector_
-  commentId: Overload:KS.Network.RSS.RSSTools.OpenFeedSelector
-  isSpec: "True"
-  fullName: KS.Network.RSS.RSSTools.OpenFeedSelector
-  nameWithType: RSSTools.OpenFeedSelector
 - uid: KS.Network.RSS.RSSTools.RssHeadlineUrl
   name: RssHeadlineUrl
   href: api/KS.Network.RSS.RSSTools.html#KS_Network_RSS_RSSTools_RssHeadlineUrl

@@ -124,6 +124,34 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="KS_Kernel_Debugging_DebugWriter_DebugCensorPrivateInfo_" data-uid="KS.Kernel.Debugging.DebugWriter.DebugCensorPrivateInfo*"></a>
+  <h4 id="KS_Kernel_Debugging_DebugWriter_DebugCensorPrivateInfo" data-uid="KS.Kernel.Debugging.DebugWriter.DebugCensorPrivateInfo">DebugCensorPrivateInfo</h4>
+  <div class="markdown level1 summary"><p>Censor private information that may be printed to the debug logs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DebugCensorPrivateInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -245,6 +273,53 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">text</span></td>
         <td><p>A sentence that will be written to the the debugger devices. Supports {0}, {1}, ...</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message before it's written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Kernel_Debugging_DebugWriter_WriteDebugPrivacy_" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugPrivacy*"></a>
+  <h4 id="KS_Kernel_Debugging_DebugWriter_WriteDebugPrivacy_KS_Kernel_Debugging_DebugLevel_System_String_System_Int32___System_Object___" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugPrivacy(KS.Kernel.Debugging.DebugLevel,System.String,System.Int32[],System.Object[])">WriteDebugPrivacy(DebugLevel, String, Int32[], Object[])</h4>
+  <div class="markdown level1 summary"><p>Outputs the text into the debugger file, and sets the time stamp. Censors all secure arguments if <a class="xref" href="KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_DebugCensorPrivateInfo">DebugCensorPrivateInfo</a> is on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteDebugPrivacy(DebugLevel Level, string text, int[] SecureVarIndexes, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Debugging.DebugLevel.html">DebugLevel</a></td>
+        <td><span class="parametername">Level</span></td>
+        <td><p>Debug level</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>A sentence that will be written to the the debugger file. Supports {0}, {1}, ...</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">SecureVarIndexes</span></td>
+        <td><p>Secure variable indexes to modify <code data-dev-comment-type="paramref" class="paramref">vars</code> to censor them when <a class="xref" href="KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_DebugCensorPrivateInfo">DebugCensorPrivateInfo</a> is on</p>
 </td>
       </tr>
       <tr>
