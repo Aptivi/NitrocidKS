@@ -516,13 +516,139 @@
   
   
   <a id="KS_ConsoleBase_Inputs_Input_ReadLineUnsafe_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineUnsafe*"></a>
-  <h4 id="KS_ConsoleBase_Inputs_Input_ReadLineUnsafe_System_String_System_String_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineUnsafe(System.String,System.String)">ReadLineUnsafe(String, String)</h4>
+  <h4 id="KS_ConsoleBase_Inputs_Input_ReadLineUnsafe_System_String_System_String_System_Boolean_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineUnsafe(System.String,System.String,System.Boolean)">ReadLineUnsafe(String, String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Reads the line from the console unsafely. This doesn't wait until the screensaver lock mode is released.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ReadLineUnsafe(string InputText, string DefaultValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string ReadLineUnsafe(string InputText, string DefaultValue, bool OneLineWrap = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InputText</span></td>
+        <td><p>Input text to write</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">DefaultValue</span></td>
+        <td><p>Default value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">OneLineWrap</span></td>
+        <td><p>Whether to wrap the input to one line</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_ConsoleBase_Inputs_Input_ReadLineWrapped_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineWrapped*"></a>
+  <h4 id="KS_ConsoleBase_Inputs_Input_ReadLineWrapped" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineWrapped">ReadLineWrapped()</h4>
+  <div class="markdown level1 summary"><p>Reads the line from the console (wrapped to one line)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadLineWrapped()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_ConsoleBase_Inputs_Input_ReadLineWrapped_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineWrapped*"></a>
+  <h4 id="KS_ConsoleBase_Inputs_Input_ReadLineWrapped_System_String_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineWrapped(System.String)">ReadLineWrapped(String)</h4>
+  <div class="markdown level1 summary"><p>Reads the line from the console (wrapped to one line)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadLineWrapped(string InputText)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InputText</span></td>
+        <td><p>Input text to write</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_ConsoleBase_Inputs_Input_ReadLineWrapped_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineWrapped*"></a>
+  <h4 id="KS_ConsoleBase_Inputs_Input_ReadLineWrapped_System_String_System_String_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineWrapped(System.String,System.String)">ReadLineWrapped(String, String)</h4>
+  <div class="markdown level1 summary"><p>Reads the line from the console (wrapped to one line)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadLineWrapped(string InputText, string DefaultValue)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
