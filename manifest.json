@@ -5769,7 +5769,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Scripting.Conditions.BaseCondition.html",
-          "hash": "ZBM91Mk8tlzFi2ED76o8nud35y/aE7xG1TVnOE9fQcA="
+          "hash": "HqDQjfxpBdXambvsK+db/qFByxxZkKggx3GJp3+1O5I="
         }
       },
       "is_incremental": false,
@@ -5957,6 +5957,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Scripting.Conditions.Types.IsCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Scripting.Conditions.Types.IsCondition.html",
+          "hash": "tOLNCiox1jZS0H4lP4seRf9Pg752RIPfi1jCGggEFlg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Scripting.Conditions.Types.IsNotCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Scripting.Conditions.Types.IsNotCondition.html",
+          "hash": "KNhyXM3N7C6iiv2b/4qnNaN1+XQXa56SA5ZDoxOCoTE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Scripting.Conditions.Types.LessThanCondition.yml",
       "output": {
         ".html": {
@@ -6045,7 +6069,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Scripting.Conditions.Types.html",
-          "hash": "U4nSgqhOwwK8ZPJpaFy042zsCD05ZaafAComWhoMD+Q="
+          "hash": "8YwvYyLJz4PxuOiSR1gXuaGZnJeSYOtAIpK4n3nP+Ws="
         }
       },
       "is_incremental": false,
@@ -8145,7 +8169,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "cQh8WuddK0rgItlzQt8+qd/UFwCPI1Go2Onr4n98cGw="
+          "hash": "BlB/k8vNPvJ60MVzXx5yBC1HLxrIU2Qb2jrcCFk4Gvc="
         }
       },
       "is_incremental": false,
@@ -8218,7 +8242,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 677,
+          "total_file_count": 679,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
