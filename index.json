@@ -3367,7 +3367,7 @@
   "api/KS.Users.Permissions.PermissionTypes.html": {
     "href": "api/KS.Users.Permissions.PermissionTypes.html",
     "title": "Enum PermissionTypes | Nitrocid KS API - Aptivi",
-    "keywords": "Enum PermissionTypes All permission types Namespace : KS.Users.Permissions Assembly : Nitrocid.dll Syntax public enum PermissionTypes : int Fields Name Description ManagePermissions Allows the user to manage permissions ManagePower Allows the user to manage power RunStrictCommands Allows the user to run strict commands"
+    "keywords": "Enum PermissionTypes All permission types Namespace : KS.Users.Permissions Assembly : Nitrocid.dll Syntax public enum PermissionTypes : int Fields Name Description ExecuteProcesses Allows the user to execute processes ExecuteScripts Allows the user to execute UESH scripts ManageFilesystem Allows the user to perform the filesystem operations ManageMods Allows the user to manage the kernel mods ManagePermissions Allows the user to manage permissions ManagePower Allows the user to manage power ManageUsers Allows the user to manage the users ManipulateSettings Allows the user to manipulate with the kernel settings RunStrictCommands Allows the user to run strict commands"
   },
   "api/KS.Users.UserInfo.html": {
     "href": "api/KS.Users.UserInfo.html",
