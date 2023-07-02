@@ -313,8 +313,146 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="KS_Misc_Threading_KernelThread_ParentThread_" data-uid="KS.Misc.Threading.KernelThread.ParentThread*"></a>
+  <h4 id="KS_Misc_Threading_KernelThread_ParentThread" data-uid="KS.Misc.Threading.KernelThread.ParentThread">ParentThread</h4>
+  <div class="markdown level1 summary"><p>Parent thread. If this thread is a parent thread, returns null. On child threads, returns a parent thread that spawned this thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KernelThread ParentThread { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Misc.Threading.KernelThread.html">KernelThread</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="KS_Misc_Threading_KernelThread_AddChild_" data-uid="KS.Misc.Threading.KernelThread.AddChild*"></a>
+  <h4 id="KS_Misc_Threading_KernelThread_AddChild_System_String_System_Boolean_ParameterizedThreadStart_" data-uid="KS.Misc.Threading.KernelThread.AddChild(System.String,System.Boolean,ParameterizedThreadStart)">AddChild(String, Boolean, ParameterizedThreadStart)</h4>
+  <div class="markdown level1 summary"><p>Adds the child thread to this parent thread</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddChild(string ThreadName, bool Background, ParameterizedThreadStart Executor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ThreadName</span></td>
+        <td><p>The thread name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">Background</span></td>
+        <td><p>Indicates if the kernel thread is background</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ParameterizedThreadStart</span></td>
+        <td><span class="parametername">Executor</span></td>
+        <td><p>The thread delegate</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Threading_KernelThread_AddChild_" data-uid="KS.Misc.Threading.KernelThread.AddChild*"></a>
+  <h4 id="KS_Misc_Threading_KernelThread_AddChild_System_String_System_Boolean_ThreadStart_" data-uid="KS.Misc.Threading.KernelThread.AddChild(System.String,System.Boolean,ThreadStart)">AddChild(String, Boolean, ThreadStart)</h4>
+  <div class="markdown level1 summary"><p>Adds the child thread to this parent thread</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddChild(string ThreadName, bool Background, ThreadStart Executor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ThreadName</span></td>
+        <td><p>The thread name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">Background</span></td>
+        <td><p>Indicates if the kernel thread is background</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ThreadStart</span></td>
+        <td><span class="parametername">Executor</span></td>
+        <td><p>The thread delegate</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="KS_Misc_Threading_KernelThread_Regen_" data-uid="KS.Misc.Threading.KernelThread.Regen*"></a>
