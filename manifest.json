@@ -1365,7 +1365,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Instances.KernelMainConfig.html",
-          "hash": "98UT6FQiG4f+Yl7Ow5X3zHlGolQP1qtCWMJHJbTZynU="
+          "hash": "lf1hPnhvup2QRdHnrIBtAW/Bb/EmfUcVZFvWfL09vFA="
         }
       },
       "is_incremental": false,
@@ -1677,7 +1677,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.KernelExceptionType.html",
-          "hash": "9QNjQXgQN3uP3cBYCOZliLGMpuj0XDIoWbvWnWbZXfQ="
+          "hash": "C0Fw2B5xzWUHtHg3AJOK2XrgLJ9+44MgDKqmEmsjU6o="
         }
       },
       "is_incremental": false,
@@ -2578,6 +2578,30 @@
         ".html": {
           "relative_path": "api/KS.Misc.Editors.JsonShell.html",
           "hash": "2oCkkx19Dxelrao25NLpvr9/f6vfMN/u+InRUHYVTH8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Editors.SqlEdit.SqlEditTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Editors.SqlEdit.SqlEditTools.html",
+          "hash": "Ksljz4rKCB1tWqUWIoMwWKqKuXrU+s1cPhu+sWhOV8Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Editors.SqlEdit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Editors.SqlEdit.html",
+          "hash": "vkB0fFOUECjrmVAA56KxwXjj9lbDPOpjSMZOAb7mL6U="
         }
       },
       "is_incremental": false,
@@ -7049,6 +7073,102 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Sql.SqlDefaultPreset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Sql.SqlDefaultPreset.html",
+          "hash": "QL2thyYjAl9apheUAQH8SZglq/KSaKOLZxQb9t0mlX8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Sql.SqlPowerLine1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Sql.SqlPowerLine1Preset.html",
+          "hash": "i17SJkqHThmBTGH5ApLzCTO3TJJGqColdSLCzXtxZ+4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Sql.SqlPowerLine2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Sql.SqlPowerLine2Preset.html",
+          "hash": "EipePtSIIgGAZr41U/uJPb0KPXzcar5r1F4TnRrEj5w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Sql.SqlPowerLine3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Sql.SqlPowerLine3Preset.html",
+          "hash": "NJvalhKhTDc378KjNZ81tk4kTAJKveOvF+8l3hOQE4M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Sql.SqlPowerLineBG1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Sql.SqlPowerLineBG1Preset.html",
+          "hash": "a8lpXMfr9EFYAAY87mEHLO8UWbBTfNLOlOqkOK6YnOI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Sql.SqlPowerLineBG2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Sql.SqlPowerLineBG2Preset.html",
+          "hash": "MsOmf1yyiQYDzmvckvyUJPbfAzrhXyudumvLjwdbcCU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Sql.SqlPowerLineBG3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Sql.SqlPowerLineBG3Preset.html",
+          "hash": "qHuAppasCaAbiu0iYzeY0iztbZC+hIId5Kp2DjEXqCU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Sql.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Sql.html",
+          "hash": "1qSiEpxNYt0JpWtjzy7O1PVsbdDIEuoZ8QfuK/uqfnQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Prompts.Presets.Text.TextDefaultPreset.yml",
       "output": {
         ".html": {
@@ -7245,7 +7365,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.PromptPresetBase.html",
-          "hash": "M4nGtCXGhmLevKEd6I92s8ajaDY9PYVd4YbsbME26n8="
+          "hash": "pckRVfW37k8FuCEQOm959PFGQs04v/LRY3oxqU+Mdbg="
         }
       },
       "is_incremental": false,
@@ -7449,7 +7569,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.BaseShell.html",
-          "hash": "hLdpOL/OqNwMII23BfD8CmWiHbjkaOZZVT0Qks2Zjxk="
+          "hash": "Hb2ZY6k3UPru13pxdV3+hPubXcPq/kYSCUrXZ2hRsMs="
         }
       },
       "is_incremental": false,
@@ -7521,7 +7641,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.ShellType.html",
-          "hash": "YRHCGPZIzbfDhgtBoUHfPytgyP0kwMWmZhyv7/PPpz8="
+          "hash": "j+wE+5Je5OiLwd6+C4nsEFY1A7D91oyDOe/Ah7/JgQg="
         }
       },
       "is_incremental": false,
@@ -7853,6 +7973,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Sql.SqlShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Sql.SqlShell.html",
+          "hash": "FjmU4UwWq9a4QbCtzwtgVnUfSIuRkr+vY2bsrkfMeNA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Sql.SqlShellCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Sql.SqlShellCommon.html",
+          "hash": "jorhRqxfO/Qit+omUP1u57YFIjSkRtEaj1EbMfILCm8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Sql.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Sql.html",
+          "hash": "mVorVfTqcq1xwojjcsljI+F4fQZOUeUB8E3zoBKr/FA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Shells.Text.TextEditShellCommon.yml",
       "output": {
         ".html": {
@@ -8169,7 +8325,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "BlB/k8vNPvJ60MVzXx5yBC1HLxrIU2Qb2jrcCFk4Gvc="
+          "hash": "h1NJ82wPLgkB6iUtR6hdpzQf6ewkIk3jpnxGfqNHmf8="
         }
       },
       "is_incremental": false,
@@ -8242,7 +8398,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 679,
+          "total_file_count": 692,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
