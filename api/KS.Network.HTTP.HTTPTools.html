@@ -233,6 +233,156 @@
   </table>
   
   
+  <a id="KS_Network_HTTP_HTTPTools_HttpPostFile_" data-uid="KS.Network.HTTP.HTTPTools.HttpPostFile*"></a>
+  <h4 id="KS_Network_HTTP_HTTPTools_HttpPostFile_System_String_System_String_" data-uid="KS.Network.HTTP.HTTPTools.HttpPostFile(System.String,System.String)">HttpPostFile(String, String)</h4>
+  <div class="markdown level1 summary"><p>Posts the specified file to the HTTP server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task&lt;HttpResponseMessage&gt; HttpPostFile(string ContentUri, string ContentPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ContentUri</span></td>
+        <td><p>Content URI (starts after the HTTP hostname)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ContentPath</span></td>
+        <td><p>Path to the file to open a stream and post it to the HTTP server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_HTTP_HTTPTools_HttpPostString_" data-uid="KS.Network.HTTP.HTTPTools.HttpPostString*"></a>
+  <h4 id="KS_Network_HTTP_HTTPTools_HttpPostString_System_String_System_String_" data-uid="KS.Network.HTTP.HTTPTools.HttpPostString(System.String,System.String)">HttpPostString(String, String)</h4>
+  <div class="markdown level1 summary"><p>Posts the specified content string to the HTTP server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task&lt;HttpResponseMessage&gt; HttpPostString(string ContentUri, string ContentString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ContentUri</span></td>
+        <td><p>Content URI (starts after the HTTP hostname)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ContentString</span></td>
+        <td><p>String to post to the HTTP server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_HTTP_HTTPTools_HttpPutFile_" data-uid="KS.Network.HTTP.HTTPTools.HttpPutFile*"></a>
+  <h4 id="KS_Network_HTTP_HTTPTools_HttpPutFile_System_String_System_String_" data-uid="KS.Network.HTTP.HTTPTools.HttpPutFile(System.String,System.String)">HttpPutFile(String, String)</h4>
+  <div class="markdown level1 summary"><p>Puts the specified file to the HTTP server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task&lt;HttpResponseMessage&gt; HttpPutFile(string ContentUri, string ContentPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ContentUri</span></td>
+        <td><p>Content URI (starts after the HTTP hostname)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ContentPath</span></td>
+        <td><p>Path to the file to open a stream and put it to the HTTP server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="KS_Network_HTTP_HTTPTools_HttpPutString_" data-uid="KS.Network.HTTP.HTTPTools.HttpPutString*"></a>
   <h4 id="KS_Network_HTTP_HTTPTools_HttpPutString_System_String_System_String_" data-uid="KS.Network.HTTP.HTTPTools.HttpPutString(System.String,System.String)">HttpPutString(String, String)</h4>
   <div class="markdown level1 summary"><p>Puts the specified content string to the HTTP server</p>
