@@ -173,15 +173,45 @@
   </table>
   
   
-  <a id="KS_Misc_Editors_SqlEdit_SqlEditTools_SqlEdit_SaveSqlFile_" data-uid="KS.Misc.Editors.SqlEdit.SqlEditTools.SqlEdit_SaveSqlFile*"></a>
-  <h4 id="KS_Misc_Editors_SqlEdit_SqlEditTools_SqlEdit_SaveSqlFile" data-uid="KS.Misc.Editors.SqlEdit.SqlEditTools.SqlEdit_SaveSqlFile">SqlEdit_SaveSqlFile()</h4>
-  <div class="markdown level1 summary"><p>Saves SQL file</p>
+  <a id="KS_Misc_Editors_SqlEdit_SqlEditTools_SqlEdit_SqlCommand_" data-uid="KS.Misc.Editors.SqlEdit.SqlEditTools.SqlEdit_SqlCommand*"></a>
+  <h4 id="KS_Misc_Editors_SqlEdit_SqlEditTools_SqlEdit_SqlCommand_System_String_System_String____SqliteParameter___" data-uid="KS.Misc.Editors.SqlEdit.SqlEditTools.SqlEdit_SqlCommand(System.String,System.String[]@,SqliteParameter[])">SqlEdit_SqlCommand(String, ref String[], SqliteParameter[])</h4>
+  <div class="markdown level1 summary"><p>Executes an SQL command</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool SqlEdit_SaveSqlFile()</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool SqlEdit_SqlCommand(string query, ref string[] replies, params SqliteParameter[] parameters)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>An SQL query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">replies</span></td>
+        <td><p>Replies array to be filled</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqliteParameter</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>SQL query parameters</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
