@@ -1401,7 +1401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html",
-          "hash": "bcKKT1+Dh1tnFo0zHBrEOwvLgr0JPOrctluYSQMj5fs="
+          "hash": "HkqZyEIg/T04e7VsHXxiwwYVKzzb22Oy9mRpqRho8cc="
         }
       },
       "is_incremental": false,
@@ -3117,7 +3117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.BaseScreensaver.html",
-          "hash": "uMp9o1//w5EUOnD7PWEfnLCxIeEQiozsDaUnhuhjUVM="
+          "hash": "eeuMVIpOelT1EhyeNoVkXABtweE5abRS2iOxeAeM9hk="
         }
       },
       "is_incremental": false,
@@ -4445,6 +4445,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.WaveDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.WaveDisplay.html",
+          "hash": "NLaYBCLc1b2BN0vdwAJB0C7Kd6Ayh4QBzotAUvpwtuA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.WaveSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.WaveSettings.html",
+          "hash": "819Y1z+Q3GZxr2B1K43lhqn7GVx/3yquNvQatuZ7fUg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.Displays.WindowsLogoDisplay.yml",
       "output": {
         ".html": {
@@ -4485,7 +4509,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.html",
-          "hash": "dZviOc1klLB28/KzL345G3an/x/8mZE/j1aOW2OMHKo="
+          "hash": "qO2YCylq7pAb/Zzd6VkuL5OtSRUeVQzcOLj794vIkMM="
         }
       },
       "is_incremental": false,
@@ -8373,7 +8397,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "VO7Ef7f24KEJ+PpVcwKUO+PcjEUOVivNTwaK1a7kt5o="
+          "hash": "4m5KnC5MiFKTIghxQcAAdO/G99k897EDQ6RtPBI4c0s="
         }
       },
       "is_incremental": false,
@@ -8446,7 +8470,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 696,
+          "total_file_count": 698,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
