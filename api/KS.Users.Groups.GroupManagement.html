@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class PermissionsTools
+    <title>Class GroupManagement
    | Nitrocid KS API - Aptivi </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class PermissionsTools
+    <meta name="title" content="Class GroupManagement
    | Nitrocid KS API - Aptivi ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -78,81 +78,37 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="KS.Users.Permissions.PermissionsTools">
+            <article class="content wrap" id="_content" data-uid="KS.Users.Groups.GroupManagement">
   
   
-  <h1 id="KS_Users_Permissions_PermissionsTools" data-uid="KS.Users.Permissions.PermissionsTools" class="text-break">Class PermissionsTools
+  <h1 id="KS_Users_Groups_GroupManagement" data-uid="KS.Users.Groups.GroupManagement" class="text-break">Class GroupManagement
   </h1>
-  <div class="markdown level0 summary"><p>Permission tools</p>
+  <div class="markdown level0 summary"><p>Group management routines</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">PermissionsTools</span></div>
+    <div class="level1"><span class="xref">GroupManagement</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Users.Permissions.html">KS.Users.Permissions</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Users.Groups.html">KS.Users.Groups</a></h6>
   <h6><strong>Assembly</strong>: Nitrocid.dll</h6>
-  <h5 id="KS_Users_Permissions_PermissionsTools_syntax">Syntax</h5>
+  <h5 id="KS_Users_Groups_GroupManagement_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class PermissionsTools : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class GroupManagement : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="KS_Users_Permissions_PermissionsTools_Demand_" data-uid="KS.Users.Permissions.PermissionsTools.Demand*"></a>
-  <h4 id="KS_Users_Permissions_PermissionsTools_Demand_KS_Users_Permissions_PermissionTypes_" data-uid="KS.Users.Permissions.PermissionsTools.Demand(KS.Users.Permissions.PermissionTypes)">Demand(PermissionTypes)</h4>
-  <div class="markdown level1 summary"><p>Checks to see whether the current user is granted the permission. Fails if permission is not granted.</p>
+  <a id="KS_Users_Groups_GroupManagement_AddGroup_" data-uid="KS.Users.Groups.GroupManagement.AddGroup*"></a>
+  <h4 id="KS_Users_Groups_GroupManagement_AddGroup_System_String_" data-uid="KS.Users.Groups.GroupManagement.AddGroup(System.String)">AddGroup(String)</h4>
+  <div class="markdown level1 summary"><p>Adds a group</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Demand(PermissionTypes permissionType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="KS.Users.Permissions.PermissionTypes.html">PermissionTypes</a></td>
-        <td><span class="parametername">permissionType</span></td>
-        <td><p>A permission type to query</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="KS.Kernel.Exceptions.KernelException.html">KernelException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Users_Permissions_PermissionsTools_GrantPermission_" data-uid="KS.Users.Permissions.PermissionsTools.GrantPermission*"></a>
-  <h4 id="KS_Users_Permissions_PermissionsTools_GrantPermission_System_String_KS_Users_Permissions_PermissionTypes_" data-uid="KS.Users.Permissions.PermissionsTools.GrantPermission(System.String,KS.Users.Permissions.PermissionTypes)">GrantPermission(String, PermissionTypes)</h4>
-  <div class="markdown level1 summary"><p>Grants the user a permission</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void GrantPermission(string User, PermissionTypes permissionType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AddGroup(string groupName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,28 +122,22 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">User</span></td>
-        <td><p>Username to give the permission to</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.Users.Permissions.PermissionTypes.html">PermissionTypes</a></td>
-        <td><span class="parametername">permissionType</span></td>
-        <td><p>Permission types to grant</p>
+        <td><span class="parametername">groupName</span></td>
+        <td><p>The group which will be added</p>
 </td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="KS_Users_Permissions_PermissionsTools_GrantPermissionGroup_" data-uid="KS.Users.Permissions.PermissionsTools.GrantPermissionGroup*"></a>
-  <h4 id="KS_Users_Permissions_PermissionsTools_GrantPermissionGroup_System_String_KS_Users_Permissions_PermissionTypes_" data-uid="KS.Users.Permissions.PermissionsTools.GrantPermissionGroup(System.String,KS.Users.Permissions.PermissionTypes)">GrantPermissionGroup(String, PermissionTypes)</h4>
-  <div class="markdown level1 summary"><p>Grants the group a permission</p>
+  <a id="KS_Users_Groups_GroupManagement_AddUserToGroup_" data-uid="KS.Users.Groups.GroupManagement.AddUserToGroup*"></a>
+  <h4 id="KS_Users_Groups_GroupManagement_AddUserToGroup_System_String_System_String_" data-uid="KS.Users.Groups.GroupManagement.AddUserToGroup(System.String,System.String)">AddUserToGroup(String, String)</h4>
+  <div class="markdown level1 summary"><p>Adds a user to a group</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void GrantPermissionGroup(string Group, PermissionTypes permissionType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AddUserToGroup(string user, string groupName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -201,28 +151,28 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">Group</span></td>
-        <td><p>Group name to give the permission to</p>
+        <td><span class="parametername">user</span></td>
+        <td><p>User which will be added to the group</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="KS.Users.Permissions.PermissionTypes.html">PermissionTypes</a></td>
-        <td><span class="parametername">permissionType</span></td>
-        <td><p>Permission types to grant</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">groupName</span></td>
+        <td><p>The group that the user will join</p>
 </td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="KS_Users_Permissions_PermissionsTools_IsPermissionGranted_" data-uid="KS.Users.Permissions.PermissionsTools.IsPermissionGranted*"></a>
-  <h4 id="KS_Users_Permissions_PermissionsTools_IsPermissionGranted_KS_Users_Permissions_PermissionTypes_" data-uid="KS.Users.Permissions.PermissionsTools.IsPermissionGranted(KS.Users.Permissions.PermissionTypes)">IsPermissionGranted(PermissionTypes)</h4>
-  <div class="markdown level1 summary"><p>Checks to see whether the current user is granted permissions</p>
+  <a id="KS_Users_Groups_GroupManagement_DoesGroupExist_" data-uid="KS.Users.Groups.GroupManagement.DoesGroupExist*"></a>
+  <h4 id="KS_Users_Groups_GroupManagement_DoesGroupExist_System_String_" data-uid="KS.Users.Groups.GroupManagement.DoesGroupExist(System.String)">DoesGroupExist(String)</h4>
+  <div class="markdown level1 summary"><p>Does a group exist?</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsPermissionGranted(PermissionTypes permissionType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool DoesGroupExist(string groupName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -235,9 +185,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="KS.Users.Permissions.PermissionTypes.html">PermissionTypes</a></td>
-        <td><span class="parametername">permissionType</span></td>
-        <td><p>A permission type to query</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">groupName</span></td>
+        <td><p>The group</p>
 </td>
       </tr>
     </tbody>
@@ -253,21 +203,21 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if granted or if user is an admin. Otherwise, false.</p>
+        <td><p>True we have a group with such name. False otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="KS_Users_Permissions_PermissionsTools_IsPermissionGranted_" data-uid="KS.Users.Permissions.PermissionsTools.IsPermissionGranted*"></a>
-  <h4 id="KS_Users_Permissions_PermissionsTools_IsPermissionGranted_System_String_KS_Users_Permissions_PermissionTypes_" data-uid="KS.Users.Permissions.PermissionsTools.IsPermissionGranted(System.String,KS.Users.Permissions.PermissionTypes)">IsPermissionGranted(String, PermissionTypes)</h4>
-  <div class="markdown level1 summary"><p>Checks to see whether the user is granted permissions</p>
+  <a id="KS_Users_Groups_GroupManagement_GetGroup_" data-uid="KS.Users.Groups.GroupManagement.GetGroup*"></a>
+  <h4 id="KS_Users_Groups_GroupManagement_GetGroup_System_String_" data-uid="KS.Users.Groups.GroupManagement.GetGroup(System.String)">GetGroup(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a group</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsPermissionGranted(string User, PermissionTypes permissionType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GroupInfo GetGroup(string groupName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -281,14 +231,149 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">User</span></td>
-        <td><p>Target user</p>
+        <td><span class="parametername">groupName</span></td>
+        <td><p>The group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Groups.GroupInfo.html">GroupInfo</a></td>
+        <td><p>Group information</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Users_Groups_GroupManagement_GetGroupIndex_" data-uid="KS.Users.Groups.GroupManagement.GetGroupIndex*"></a>
+  <h4 id="KS_Users_Groups_GroupManagement_GetGroupIndex_System_String_" data-uid="KS.Users.Groups.GroupManagement.GetGroupIndex(System.String)">GetGroupIndex(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a group index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetGroupIndex(string groupName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">groupName</span></td>
+        <td><p>The group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Group index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Users_Groups_GroupManagement_GetUserGroups_" data-uid="KS.Users.Groups.GroupManagement.GetUserGroups*"></a>
+  <h4 id="KS_Users_Groups_GroupManagement_GetUserGroups_System_String_" data-uid="KS.Users.Groups.GroupManagement.GetUserGroups(System.String)">GetUserGroups(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the user groups</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GroupInfo[] GetUserGroups(string user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>User which will be queried from the groups</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Groups.GroupInfo.html">GroupInfo</a>[]</td>
+        <td><p>Group information array containing info about joined groups</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Users_Groups_GroupManagement_IsUserInGroup_" data-uid="KS.Users.Groups.GroupManagement.IsUserInGroup*"></a>
+  <h4 id="KS_Users_Groups_GroupManagement_IsUserInGroup_System_String_System_String_" data-uid="KS.Users.Groups.GroupManagement.IsUserInGroup(System.String,System.String)">IsUserInGroup(String, String)</h4>
+  <div class="markdown level1 summary"><p>Is a user found in a group?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsUserInGroup(string user, string groupName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>User which will be queried from the group</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="KS.Users.Permissions.PermissionTypes.html">PermissionTypes</a></td>
-        <td><span class="parametername">permissionType</span></td>
-        <td><p>A permission type to query</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">groupName</span></td>
+        <td><p>The group</p>
 </td>
       </tr>
     </tbody>
@@ -304,21 +389,21 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if granted or if user is an admin. Otherwise, false.</p>
+        <td><p>True if the user is in group. False otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="KS_Users_Permissions_PermissionsTools_RevokePermission_" data-uid="KS.Users.Permissions.PermissionsTools.RevokePermission*"></a>
-  <h4 id="KS_Users_Permissions_PermissionsTools_RevokePermission_System_String_KS_Users_Permissions_PermissionTypes_" data-uid="KS.Users.Permissions.PermissionsTools.RevokePermission(System.String,KS.Users.Permissions.PermissionTypes)">RevokePermission(String, PermissionTypes)</h4>
-  <div class="markdown level1 summary"><p>Revokes the user a permission</p>
+  <a id="KS_Users_Groups_GroupManagement_RemoveGroup_" data-uid="KS.Users.Groups.GroupManagement.RemoveGroup*"></a>
+  <h4 id="KS_Users_Groups_GroupManagement_RemoveGroup_System_String_" data-uid="KS.Users.Groups.GroupManagement.RemoveGroup(System.String)">RemoveGroup(String)</h4>
+  <div class="markdown level1 summary"><p>Removes a group</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RevokePermission(string User, PermissionTypes permissionType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RemoveGroup(string groupName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -332,28 +417,22 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">User</span></td>
-        <td><p>Username to revoke the permission from</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.Users.Permissions.PermissionTypes.html">PermissionTypes</a></td>
-        <td><span class="parametername">permissionType</span></td>
-        <td><p>Permission types to revoke</p>
+        <td><span class="parametername">groupName</span></td>
+        <td><p>The group which will be removed</p>
 </td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="KS_Users_Permissions_PermissionsTools_RevokePermissionGroup_" data-uid="KS.Users.Permissions.PermissionsTools.RevokePermissionGroup*"></a>
-  <h4 id="KS_Users_Permissions_PermissionsTools_RevokePermissionGroup_System_String_KS_Users_Permissions_PermissionTypes_" data-uid="KS.Users.Permissions.PermissionsTools.RevokePermissionGroup(System.String,KS.Users.Permissions.PermissionTypes)">RevokePermissionGroup(String, PermissionTypes)</h4>
-  <div class="markdown level1 summary"><p>Revokes the group a permission</p>
+  <a id="KS_Users_Groups_GroupManagement_RemoveUserFromGroup_" data-uid="KS.Users.Groups.GroupManagement.RemoveUserFromGroup*"></a>
+  <h4 id="KS_Users_Groups_GroupManagement_RemoveUserFromGroup_System_String_System_String_" data-uid="KS.Users.Groups.GroupManagement.RemoveUserFromGroup(System.String,System.String)">RemoveUserFromGroup(String, String)</h4>
+  <div class="markdown level1 summary"><p>Removes a user from the group</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RevokePermissionGroup(string Group, PermissionTypes permissionType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RemoveUserFromGroup(string user, string groupName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -367,14 +446,14 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">Group</span></td>
-        <td><p>Group name to revoke the permission from</p>
+        <td><span class="parametername">user</span></td>
+        <td><p>User which will be removed from the group</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="KS.Users.Permissions.PermissionTypes.html">PermissionTypes</a></td>
-        <td><span class="parametername">permissionType</span></td>
-        <td><p>Permission types to revoke</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">groupName</span></td>
+        <td><p>The group that the user will leave</p>
 </td>
       </tr>
     </tbody>

@@ -101,6 +101,32 @@
   </h3>
   
   
+  <a id="KS_Users_UserManagement_CurrentUser_" data-uid="KS.Users.UserManagement.CurrentUser*"></a>
+  <h4 id="KS_Users_UserManagement_CurrentUser" data-uid="KS.Users.UserManagement.CurrentUser">CurrentUser</h4>
+  <div class="markdown level1 summary"><p>Current username</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UserInfo CurrentUser { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Users.UserInfo.html">UserInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="KS_Users_UserManagement_IncludeAnonymous_" data-uid="KS.Users.UserManagement.IncludeAnonymous*"></a>
   <h4 id="KS_Users_UserManagement_IncludeAnonymous" data-uid="KS.Users.UserManagement.IncludeAnonymous">IncludeAnonymous</h4>
   <div class="markdown level1 summary"><p>Include anonymous users in list</p>
@@ -266,6 +292,51 @@
   </table>
   
   
+  <a id="KS_Users_UserManagement_GetUser_" data-uid="KS.Users.UserManagement.GetUser*"></a>
+  <h4 id="KS_Users_UserManagement_GetUser_System_String_" data-uid="KS.Users.UserManagement.GetUser(System.String)">GetUser(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a user</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UserInfo GetUser(string userName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td><p>The user</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Users.UserInfo.html">UserInfo</a></td>
+        <td><p>User information</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="KS_Users_UserManagement_GetUserDollarSign_" data-uid="KS.Users.UserManagement.GetUserDollarSign*"></a>
   <h4 id="KS_Users_UserManagement_GetUserDollarSign" data-uid="KS.Users.UserManagement.GetUserDollarSign">GetUserDollarSign()</h4>
   <div class="markdown level1 summary"><p>Gets the unique user identifier for the current user</p>
@@ -336,14 +407,14 @@
   </table>
   
   
-  <a id="KS_Users_UserManagement_GetUserProperty_" data-uid="KS.Users.UserManagement.GetUserProperty*"></a>
-  <h4 id="KS_Users_UserManagement_GetUserProperty_System_String_KS_Users_UserManagement_UserProperty_" data-uid="KS.Users.UserManagement.GetUserProperty(System.String,KS.Users.UserManagement.UserProperty)">GetUserProperty(String, UserManagement.UserProperty)</h4>
-  <div class="markdown level1 summary"><p>Gets user property</p>
+  <a id="KS_Users_UserManagement_GetUserIndex_" data-uid="KS.Users.UserManagement.GetUserIndex*"></a>
+  <h4 id="KS_Users_UserManagement_GetUserIndex_System_String_" data-uid="KS.Users.UserManagement.GetUserIndex(System.String)">GetUserIndex(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a user index</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static JToken GetUserProperty(string User, UserManagement.UserProperty PropertyType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetUserIndex(string userName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -357,14 +428,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">User</span></td>
-        <td><p>Target user</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.Users.UserManagement.UserProperty.html">UserManagement.UserProperty</a></td>
-        <td><span class="parametername">PropertyType</span></td>
-        <td><p>Property type</p>
+        <td><span class="parametername">userName</span></td>
+        <td><p>The user</p>
 </td>
       </tr>
     </tbody>
@@ -379,23 +444,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">JToken</span></td>
-        <td><p>JSON token of user property</p>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>User index</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="KS_Users_UserManagement_InitializeSystemAccount_" data-uid="KS.Users.UserManagement.InitializeSystemAccount*"></a>
-  <h4 id="KS_Users_UserManagement_InitializeSystemAccount" data-uid="KS.Users.UserManagement.InitializeSystemAccount">InitializeSystemAccount()</h4>
-  <div class="markdown level1 summary"><p>Initializes root account</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void InitializeSystemAccount()</code></pre>
-  </div>
   
   
   <a id="KS_Users_UserManagement_InitializeUser_" data-uid="KS.Users.UserManagement.InitializeUser*"></a>
@@ -548,17 +602,6 @@
   </table>
   
   
-  <a id="KS_Users_UserManagement_LoadUserToken_" data-uid="KS.Users.UserManagement.LoadUserToken*"></a>
-  <h4 id="KS_Users_UserManagement_LoadUserToken" data-uid="KS.Users.UserManagement.LoadUserToken">LoadUserToken()</h4>
-  <div class="markdown level1 summary"><p>Loads user token</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void LoadUserToken()</code></pre>
-  </div>
-  
-  
   <a id="KS_Users_UserManagement_RemoveUser_" data-uid="KS.Users.UserManagement.RemoveUser*"></a>
   <h4 id="KS_Users_UserManagement_RemoveUser_System_String_" data-uid="KS.Users.UserManagement.RemoveUser(System.String)">RemoveUser(String)</h4>
   <div class="markdown level1 summary"><p>Removes a user from users database</p>
@@ -687,47 +730,6 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><p>The username which is selected</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Users_UserManagement_SetUserProperty_" data-uid="KS.Users.UserManagement.SetUserProperty*"></a>
-  <h4 id="KS_Users_UserManagement_SetUserProperty_System_String_KS_Users_UserManagement_UserProperty_JToken_" data-uid="KS.Users.UserManagement.SetUserProperty(System.String,KS.Users.UserManagement.UserProperty,JToken)">SetUserProperty(String, UserManagement.UserProperty, JToken)</h4>
-  <div class="markdown level1 summary"><p>Sets user property</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetUserProperty(string User, UserManagement.UserProperty PropertyType, JToken Value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">User</span></td>
-        <td><p>Target user</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.Users.UserManagement.UserProperty.html">UserManagement.UserProperty</a></td>
-        <td><span class="parametername">PropertyType</span></td>
-        <td><p>Property type</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">JToken</span></td>
-        <td><span class="parametername">Value</span></td>
-        <td><p>Value</p>
 </td>
       </tr>
     </tbody>
