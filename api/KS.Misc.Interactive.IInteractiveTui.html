@@ -1,0 +1,836 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IInteractiveTui
+   | Nitrocid KS API - Aptivi </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IInteractiveTui
+   | Nitrocid KS API - Aptivi ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="KS.Misc.Interactive.IInteractiveTui">
+  
+  
+  <h1 id="KS_Misc_Interactive_IInteractiveTui" data-uid="KS.Misc.Interactive.IInteractiveTui" class="text-break">Interface IInteractiveTui
+  </h1>
+  <div class="markdown level0 summary"><p>An interface for your interactive user interface for terminal apps</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Interactive.html">KS.Misc.Interactive</a></h6>
+  <h6><strong>Assembly</strong>: Nitrocid.dll</h6>
+  <h5 id="KS_Misc_Interactive_IInteractiveTui_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IInteractiveTui</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_BackgroundColor_" data-uid="KS.Misc.Interactive.IInteractiveTui.BackgroundColor*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_BackgroundColor" data-uid="KS.Misc.Interactive.IInteractiveTui.BackgroundColor">BackgroundColor</h4>
+  <div class="markdown level1 summary"><p>Interactive TUI background color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static Color BackgroundColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_Bindings_" data-uid="KS.Misc.Interactive.IInteractiveTui.Bindings*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_Bindings" data-uid="KS.Misc.Interactive.IInteractiveTui.Bindings">Bindings</h4>
+  <div class="markdown level1 summary"><p>All key bindings for your interactive user interface</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;InteractiveTuiBinding&gt; Bindings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="KS.Misc.Interactive.InteractiveTuiBinding.html">InteractiveTuiBinding</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_BoxBackgroundColor_" data-uid="KS.Misc.Interactive.IInteractiveTui.BoxBackgroundColor*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_BoxBackgroundColor" data-uid="KS.Misc.Interactive.IInteractiveTui.BoxBackgroundColor">BoxBackgroundColor</h4>
+  <div class="markdown level1 summary"><p>Interactive TUI box background color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static Color BoxBackgroundColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_BoxForegroundColor_" data-uid="KS.Misc.Interactive.IInteractiveTui.BoxForegroundColor*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_BoxForegroundColor" data-uid="KS.Misc.Interactive.IInteractiveTui.BoxForegroundColor">BoxForegroundColor</h4>
+  <div class="markdown level1 summary"><p>Interactive TUI box foreground color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static Color BoxForegroundColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_CurrentPane_" data-uid="KS.Misc.Interactive.IInteractiveTui.CurrentPane*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_CurrentPane" data-uid="KS.Misc.Interactive.IInteractiveTui.CurrentPane">CurrentPane</h4>
+  <div class="markdown level1 summary"><p>Current pane</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static int CurrentPane { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_FirstPaneCurrentSelection_" data-uid="KS.Misc.Interactive.IInteractiveTui.FirstPaneCurrentSelection*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_FirstPaneCurrentSelection" data-uid="KS.Misc.Interactive.IInteractiveTui.FirstPaneCurrentSelection">FirstPaneCurrentSelection</h4>
+  <div class="markdown level1 summary"><p>Current selection for the first pane</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static int FirstPaneCurrentSelection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_ForegroundColor_" data-uid="KS.Misc.Interactive.IInteractiveTui.ForegroundColor*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_ForegroundColor" data-uid="KS.Misc.Interactive.IInteractiveTui.ForegroundColor">ForegroundColor</h4>
+  <div class="markdown level1 summary"><p>Interactive TUI foreground color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static Color ForegroundColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_KeyBindingOptionColor_" data-uid="KS.Misc.Interactive.IInteractiveTui.KeyBindingOptionColor*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_KeyBindingOptionColor" data-uid="KS.Misc.Interactive.IInteractiveTui.KeyBindingOptionColor">KeyBindingOptionColor</h4>
+  <div class="markdown level1 summary"><p>Interactive TUI key binding in option color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static Color KeyBindingOptionColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_OptionBackgroundColor_" data-uid="KS.Misc.Interactive.IInteractiveTui.OptionBackgroundColor*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_OptionBackgroundColor" data-uid="KS.Misc.Interactive.IInteractiveTui.OptionBackgroundColor">OptionBackgroundColor</h4>
+  <div class="markdown level1 summary"><p>Interactive TUI option background color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static Color OptionBackgroundColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_OptionForegroundColor_" data-uid="KS.Misc.Interactive.IInteractiveTui.OptionForegroundColor*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_OptionForegroundColor" data-uid="KS.Misc.Interactive.IInteractiveTui.OptionForegroundColor">OptionForegroundColor</h4>
+  <div class="markdown level1 summary"><p>Interactive TUI option foreground color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static Color OptionForegroundColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_PaneBackgroundColor_" data-uid="KS.Misc.Interactive.IInteractiveTui.PaneBackgroundColor*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_PaneBackgroundColor" data-uid="KS.Misc.Interactive.IInteractiveTui.PaneBackgroundColor">PaneBackgroundColor</h4>
+  <div class="markdown level1 summary"><p>Interactive TUI pane background color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static Color PaneBackgroundColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_PaneItemBackColor_" data-uid="KS.Misc.Interactive.IInteractiveTui.PaneItemBackColor*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_PaneItemBackColor" data-uid="KS.Misc.Interactive.IInteractiveTui.PaneItemBackColor">PaneItemBackColor</h4>
+  <div class="markdown level1 summary"><p>Interactive TUI pane item color (background)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static Color PaneItemBackColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_PaneItemForeColor_" data-uid="KS.Misc.Interactive.IInteractiveTui.PaneItemForeColor*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_PaneItemForeColor" data-uid="KS.Misc.Interactive.IInteractiveTui.PaneItemForeColor">PaneItemForeColor</h4>
+  <div class="markdown level1 summary"><p>Interactive TUI pane item color (foreground)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static Color PaneItemForeColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_PaneSelectedItemBackColor_" data-uid="KS.Misc.Interactive.IInteractiveTui.PaneSelectedItemBackColor*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_PaneSelectedItemBackColor" data-uid="KS.Misc.Interactive.IInteractiveTui.PaneSelectedItemBackColor">PaneSelectedItemBackColor</h4>
+  <div class="markdown level1 summary"><p>Interactive TUI pane selected item color (background)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static Color PaneSelectedItemBackColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_PaneSelectedItemForeColor_" data-uid="KS.Misc.Interactive.IInteractiveTui.PaneSelectedItemForeColor*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_PaneSelectedItemForeColor" data-uid="KS.Misc.Interactive.IInteractiveTui.PaneSelectedItemForeColor">PaneSelectedItemForeColor</h4>
+  <div class="markdown level1 summary"><p>Interactive TUI pane selected item color (foreground)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static Color PaneSelectedItemForeColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_PaneSeparatorColor_" data-uid="KS.Misc.Interactive.IInteractiveTui.PaneSeparatorColor*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_PaneSeparatorColor" data-uid="KS.Misc.Interactive.IInteractiveTui.PaneSeparatorColor">PaneSeparatorColor</h4>
+  <div class="markdown level1 summary"><p>Interactive TUI pane separator color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static Color PaneSeparatorColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_PrimaryDataSource_" data-uid="KS.Misc.Interactive.IInteractiveTui.PrimaryDataSource*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_PrimaryDataSource" data-uid="KS.Misc.Interactive.IInteractiveTui.PrimaryDataSource">PrimaryDataSource</h4>
+  <div class="markdown level1 summary"><p>An array, a dictionary, a list, or an enumerable that holds data (pane one)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable PrimaryDataSource { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_RedrawRequired_" data-uid="KS.Misc.Interactive.IInteractiveTui.RedrawRequired*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_RedrawRequired" data-uid="KS.Misc.Interactive.IInteractiveTui.RedrawRequired">RedrawRequired</h4>
+  <div class="markdown level1 summary"><p>Whether redrawing is required</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static bool RedrawRequired { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_SecondaryDataSource_" data-uid="KS.Misc.Interactive.IInteractiveTui.SecondaryDataSource*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_SecondaryDataSource" data-uid="KS.Misc.Interactive.IInteractiveTui.SecondaryDataSource">SecondaryDataSource</h4>
+  <div class="markdown level1 summary"><p>An array, a dictionary, a list, or an enumerable that holds data (pane two)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable SecondaryDataSource { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_SecondPaneCurrentSelection_" data-uid="KS.Misc.Interactive.IInteractiveTui.SecondPaneCurrentSelection*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_SecondPaneCurrentSelection" data-uid="KS.Misc.Interactive.IInteractiveTui.SecondPaneCurrentSelection">SecondPaneCurrentSelection</h4>
+  <div class="markdown level1 summary"><p>Current selection for the second pane</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static int SecondPaneCurrentSelection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_SecondPaneInteractable_" data-uid="KS.Misc.Interactive.IInteractiveTui.SecondPaneInteractable*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_SecondPaneInteractable" data-uid="KS.Misc.Interactive.IInteractiveTui.SecondPaneInteractable">SecondPaneInteractable</h4>
+  <div class="markdown level1 summary"><p>Whether the user can switch to the second path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SecondPaneInteractable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_Status_" data-uid="KS.Misc.Interactive.IInteractiveTui.Status*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_Status" data-uid="KS.Misc.Interactive.IInteractiveTui.Status">Status</h4>
+  <div class="markdown level1 summary"><p>Current status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static string Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_GetEntryFromItem_" data-uid="KS.Misc.Interactive.IInteractiveTui.GetEntryFromItem*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_GetEntryFromItem_System_Object_" data-uid="KS.Misc.Interactive.IInteractiveTui.GetEntryFromItem(System.Object)">GetEntryFromItem(Object)</h4>
+  <div class="markdown level1 summary"><p>Gets an entry string from a specified item for listing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetEntryFromItem(object item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Target item</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_HandleExit_" data-uid="KS.Misc.Interactive.IInteractiveTui.HandleExit*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_HandleExit" data-uid="KS.Misc.Interactive.IInteractiveTui.HandleExit">HandleExit()</h4>
+  <div class="markdown level1 summary"><p>Handles exiting the interactive TUI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void HandleExit()</code></pre>
+  </div>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_RenderInfoOnSecondPane_" data-uid="KS.Misc.Interactive.IInteractiveTui.RenderInfoOnSecondPane*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_RenderInfoOnSecondPane_System_Object_" data-uid="KS.Misc.Interactive.IInteractiveTui.RenderInfoOnSecondPane(System.Object)">RenderInfoOnSecondPane(Object)</h4>
+  <div class="markdown level1 summary"><p>Renders information on the second pane, returning the status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string RenderInfoOnSecondPane(object item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Target item</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A status of rendering (whether it's a success or a failure), or summary of info</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Interactive_IInteractiveTui_RenderStatus_" data-uid="KS.Misc.Interactive.IInteractiveTui.RenderStatus*"></a>
+  <h4 id="KS_Misc_Interactive_IInteractiveTui_RenderStatus_System_Object_" data-uid="KS.Misc.Interactive.IInteractiveTui.RenderStatus(System.Object)">RenderStatus(Object)</h4>
+  <div class="markdown level1 summary"><p>Renders the status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RenderStatus(object item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Target item</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

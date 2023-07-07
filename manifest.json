@@ -857,11 +857,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Interactive.ContactsManagerCli.yml",
+      "source_relative_path": "api/KS.Files.Interactive.FileManagerCli.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Files.Interactive.ContactsManagerCli.html",
-          "hash": "4GeTE9QFJ99jx1xF2WrdqoT1uM4rKYSMzJBczXsLRVI="
+          "relative_path": "api/KS.Files.Interactive.FileManagerCli.html",
+          "hash": "f5FmahpHMXWZ5Omz2DcAFbJVVDHfKa2+HymO2vmhtpA="
         }
       },
       "is_incremental": false,
@@ -869,11 +869,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Interactive.FileManagerCli.yml",
+      "source_relative_path": "api/KS.Files.Interactive.FileManagerCliColors.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Files.Interactive.FileManagerCli.html",
-          "hash": "3FgF8TVX+FobIoi7w5RlAJrrfJemdTsnpiyIiSgE8GM="
+          "relative_path": "api/KS.Files.Interactive.FileManagerCliColors.html",
+          "hash": "5KfgHETG28p0Wwk7qKAY8OX1pfGRtzgseEY9BOaJQ0s="
         }
       },
       "is_incremental": false,
@@ -885,7 +885,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Interactive.TaskManagerCli.html",
-          "hash": "oraUGI9oMn9kc8dpOhFnxSYNfXKJh5MnZbnXz+8PgH4="
+          "hash": "UQktG/IvbPSm5EYaNQOrVk0NLgfnW1mprgTrU2thZn8="
         }
       },
       "is_incremental": false,
@@ -897,7 +897,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Interactive.html",
-          "hash": "wXE67FikHUe37Isp/92Ecn9MQx848fOx6725vwwLQS4="
+          "hash": "2yDoQoxqDlNeq+hkJdCbISuZEJJfdAl6yfArsQJtus0="
         }
       },
       "is_incremental": false,
@@ -1701,7 +1701,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.KernelExceptionType.html",
-          "hash": "G9zZRazoDvrpTMHROuxyI4rWaPjltUyQ1zM0chDj30o="
+          "hash": "FevFMGqWix2BFVsmLGbvZciUavxZkKLUL/670Eq/n7w="
         }
       },
       "is_incremental": false,
@@ -2549,6 +2549,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Contacts.Interactive.ContactManagerCliColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Contacts.Interactive.ContactManagerCliColors.html",
+          "hash": "kRKNzgEoCk54y2i/9XbPOYn334p0roDEGhc9aI4HE+M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Contacts.Interactive.ContactsManagerCli.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Contacts.Interactive.ContactsManagerCli.html",
+          "hash": "nSTQbmZ55MIZqNW4he5U+10CKenuiw8uekfb6pJCl18="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Contacts.Interactive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Contacts.Interactive.html",
+          "hash": "XgSOs9VFfJiJEdb1u+1rvEc6Ij0WHda0TdHa00qfphs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Contacts.yml",
       "output": {
         ".html": {
@@ -2758,6 +2794,66 @@
         ".html": {
           "relative_path": "api/KS.Misc.Games.html",
           "hash": "nGIDXRawKU8lxv+LlbMGTNeXWhJKyWCZwaZ/TG2T3Uc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Interactive.BaseInteractiveTui.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Interactive.BaseInteractiveTui.html",
+          "hash": "jU9VzSzpbQkjWgnMPwbPlCDj3FTdm8zFgGQ7rQQUgd4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Interactive.IInteractiveTui.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Interactive.IInteractiveTui.html",
+          "hash": "h2jTOpzT8TJs1gLvQuG4eyXLRSLXEi5uEnooQ+wei2s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Interactive.InteractiveTuiBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Interactive.InteractiveTuiBinding.html",
+          "hash": "G0Gc5BlFvuU1scSXd96SsFhKT7WzX+2fSG3+I6tND70="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Interactive.InteractiveTuiTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Interactive.InteractiveTuiTools.html",
+          "hash": "LeP/0lgKco+L/Q2hTahB4bEXCMPcrLBdfawGn9mfCKM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Interactive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Interactive.html",
+          "hash": "qm+eRGq9bBzYqzMcXL9WwIFsA6Pq2ZtM03cSmma3PLo="
         }
       },
       "is_incremental": false,
@@ -4714,6 +4810,30 @@
         ".html": {
           "relative_path": "api/KS.Misc.Text.html",
           "hash": "ky/Cb7Vus8djMm2PaE0Wa5zgaZ13GVa5c4eg45Ze86U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Threading.Interactive.TaskManagerCliColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Threading.Interactive.TaskManagerCliColors.html",
+          "hash": "rCW4NQvY4d23Kr4Wcf+JMoH9OfHCqGFBAF2AMyzTDOw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Threading.Interactive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Threading.Interactive.html",
+          "hash": "P+G30Emi2lZWA8Bkb6pIJD7/B7b76M6RLmlu2DFPWX8="
         }
       },
       "is_incremental": false,
@@ -8421,7 +8541,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "lxtWHJN51FGw/VaIsxyUe01mUAfaLJixq9QWGkafsQs="
+          "hash": "CMFRz2y0ULXkCOLt/gzytfICeFmp0Q2YoxhuOkJrBfM="
         }
       },
       "is_incremental": false,
@@ -8494,7 +8614,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 700,
+          "total_file_count": 710,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

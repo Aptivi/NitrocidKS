@@ -89,26 +89,61 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">TaskManagerCli</span></div>
+    <div class="level1"><a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html">BaseInteractiveTui</a></div>
+    <div class="level2"><span class="xref">TaskManagerCli</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Misc.Interactive.IInteractiveTui.html">IInteractiveTui</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_RedrawRequired">BaseInteractiveTui.RedrawRequired</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_FirstPaneCurrentSelection">BaseInteractiveTui.FirstPaneCurrentSelection</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_SecondPaneCurrentSelection">BaseInteractiveTui.SecondPaneCurrentSelection</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_Status">BaseInteractiveTui.Status</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_CurrentPane">BaseInteractiveTui.CurrentPane</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_SecondPaneInteractable">BaseInteractiveTui.SecondPaneInteractable</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_SecondaryDataSource">BaseInteractiveTui.SecondaryDataSource</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_HandleExit">BaseInteractiveTui.HandleExit()</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_RenderStatus_System_Object_">BaseInteractiveTui.RenderStatus(Object)</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Files.Interactive.html">KS.Files.Interactive</a></h6>
   <h6><strong>Assembly</strong>: Nitrocid.dll</h6>
   <h5 id="KS_Files_Interactive_TaskManagerCli_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class TaskManagerCli : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class TaskManagerCli : BaseInteractiveTui, IInteractiveTui</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   
   
-  <a id="KS_Files_Interactive_TaskManagerCli_TaskManagerBackgroundColor_" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerBackgroundColor*"></a>
-  <h4 id="KS_Files_Interactive_TaskManagerCli_TaskManagerBackgroundColor" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerBackgroundColor">TaskManagerBackgroundColor</h4>
+  <a id="KS_Files_Interactive_TaskManagerCli_BackgroundColor_" data-uid="KS.Files.Interactive.TaskManagerCli.BackgroundColor*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_BackgroundColor" data-uid="KS.Files.Interactive.TaskManagerCli.BackgroundColor">BackgroundColor</h4>
   <div class="markdown level1 summary"><p>Task manager background color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color TaskManagerBackgroundColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color BackgroundColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -127,14 +162,94 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_TaskManagerCli_TaskManagerForegroundColor_" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerForegroundColor*"></a>
-  <h4 id="KS_Files_Interactive_TaskManagerCli_TaskManagerForegroundColor" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerForegroundColor">TaskManagerForegroundColor</h4>
+  <a id="KS_Files_Interactive_TaskManagerCli_Bindings_" data-uid="KS.Files.Interactive.TaskManagerCli.Bindings*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_Bindings" data-uid="KS.Files.Interactive.TaskManagerCli.Bindings">Bindings</h4>
+  <div class="markdown level1 summary"><p>Task manager bindings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override List&lt;InteractiveTuiBinding&gt; Bindings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="KS.Misc.Interactive.InteractiveTuiBinding.html">InteractiveTuiBinding</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_Bindings">BaseInteractiveTui.Bindings</a></div>
+  
+  
+  <a id="KS_Files_Interactive_TaskManagerCli_BoxBackgroundColor_" data-uid="KS.Files.Interactive.TaskManagerCli.BoxBackgroundColor*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_BoxBackgroundColor" data-uid="KS.Files.Interactive.TaskManagerCli.BoxBackgroundColor">BoxBackgroundColor</h4>
+  <div class="markdown level1 summary"><p>Task manager box background color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color BoxBackgroundColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Files_Interactive_TaskManagerCli_BoxForegroundColor_" data-uid="KS.Files.Interactive.TaskManagerCli.BoxForegroundColor*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_BoxForegroundColor" data-uid="KS.Files.Interactive.TaskManagerCli.BoxForegroundColor">BoxForegroundColor</h4>
+  <div class="markdown level1 summary"><p>Task manager box foreground color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color BoxForegroundColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Files_Interactive_TaskManagerCli_ForegroundColor_" data-uid="KS.Files.Interactive.TaskManagerCli.ForegroundColor*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_ForegroundColor" data-uid="KS.Files.Interactive.TaskManagerCli.ForegroundColor">ForegroundColor</h4>
   <div class="markdown level1 summary"><p>Task manager foreground color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color TaskManagerForegroundColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color ForegroundColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -153,14 +268,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_TaskManagerCli_TaskManagerKeyBindingOptionColor_" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerKeyBindingOptionColor*"></a>
-  <h4 id="KS_Files_Interactive_TaskManagerCli_TaskManagerKeyBindingOptionColor" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerKeyBindingOptionColor">TaskManagerKeyBindingOptionColor</h4>
+  <a id="KS_Files_Interactive_TaskManagerCli_KeyBindingOptionColor_" data-uid="KS.Files.Interactive.TaskManagerCli.KeyBindingOptionColor*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_KeyBindingOptionColor" data-uid="KS.Files.Interactive.TaskManagerCli.KeyBindingOptionColor">KeyBindingOptionColor</h4>
   <div class="markdown level1 summary"><p>Task manager key binding in option color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color TaskManagerKeyBindingOptionColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color KeyBindingOptionColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -179,14 +294,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_TaskManagerCli_TaskManagerOptionBackgroundColor_" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerOptionBackgroundColor*"></a>
-  <h4 id="KS_Files_Interactive_TaskManagerCli_TaskManagerOptionBackgroundColor" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerOptionBackgroundColor">TaskManagerOptionBackgroundColor</h4>
+  <a id="KS_Files_Interactive_TaskManagerCli_OptionBackgroundColor_" data-uid="KS.Files.Interactive.TaskManagerCli.OptionBackgroundColor*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_OptionBackgroundColor" data-uid="KS.Files.Interactive.TaskManagerCli.OptionBackgroundColor">OptionBackgroundColor</h4>
   <div class="markdown level1 summary"><p>Task manager option background color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color TaskManagerOptionBackgroundColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color OptionBackgroundColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -205,14 +320,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_TaskManagerCli_TaskManagerOptionForegroundColor_" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerOptionForegroundColor*"></a>
-  <h4 id="KS_Files_Interactive_TaskManagerCli_TaskManagerOptionForegroundColor" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerOptionForegroundColor">TaskManagerOptionForegroundColor</h4>
+  <a id="KS_Files_Interactive_TaskManagerCli_OptionForegroundColor_" data-uid="KS.Files.Interactive.TaskManagerCli.OptionForegroundColor*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_OptionForegroundColor" data-uid="KS.Files.Interactive.TaskManagerCli.OptionForegroundColor">OptionForegroundColor</h4>
   <div class="markdown level1 summary"><p>Task manager option foreground color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color TaskManagerOptionForegroundColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color OptionForegroundColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -231,14 +346,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_TaskManagerCli_TaskManagerPaneBackgroundColor_" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerPaneBackgroundColor*"></a>
-  <h4 id="KS_Files_Interactive_TaskManagerCli_TaskManagerPaneBackgroundColor" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerPaneBackgroundColor">TaskManagerPaneBackgroundColor</h4>
+  <a id="KS_Files_Interactive_TaskManagerCli_PaneBackgroundColor_" data-uid="KS.Files.Interactive.TaskManagerCli.PaneBackgroundColor*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_PaneBackgroundColor" data-uid="KS.Files.Interactive.TaskManagerCli.PaneBackgroundColor">PaneBackgroundColor</h4>
   <div class="markdown level1 summary"><p>Task manager pane background color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color TaskManagerPaneBackgroundColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color PaneBackgroundColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -257,14 +372,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_TaskManagerCli_TaskManagerPaneSelectedTaskBackColor_" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerPaneSelectedTaskBackColor*"></a>
-  <h4 id="KS_Files_Interactive_TaskManagerCli_TaskManagerPaneSelectedTaskBackColor" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerPaneSelectedTaskBackColor">TaskManagerPaneSelectedTaskBackColor</h4>
-  <div class="markdown level1 summary"><p>Task manager pane selected task color (background)</p>
+  <a id="KS_Files_Interactive_TaskManagerCli_PaneItemBackColor_" data-uid="KS.Files.Interactive.TaskManagerCli.PaneItemBackColor*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_PaneItemBackColor" data-uid="KS.Files.Interactive.TaskManagerCli.PaneItemBackColor">PaneItemBackColor</h4>
+  <div class="markdown level1 summary"><p>Task manager pane Task color (background)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color TaskManagerPaneSelectedTaskBackColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color PaneItemBackColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -283,14 +398,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_TaskManagerCli_TaskManagerPaneSelectedTaskForeColor_" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerPaneSelectedTaskForeColor*"></a>
-  <h4 id="KS_Files_Interactive_TaskManagerCli_TaskManagerPaneSelectedTaskForeColor" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerPaneSelectedTaskForeColor">TaskManagerPaneSelectedTaskForeColor</h4>
-  <div class="markdown level1 summary"><p>Task manager pane selected task color (foreground)</p>
+  <a id="KS_Files_Interactive_TaskManagerCli_PaneItemForeColor_" data-uid="KS.Files.Interactive.TaskManagerCli.PaneItemForeColor*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_PaneItemForeColor" data-uid="KS.Files.Interactive.TaskManagerCli.PaneItemForeColor">PaneItemForeColor</h4>
+  <div class="markdown level1 summary"><p>Task manager pane Task color (foreground)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color TaskManagerPaneSelectedTaskForeColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color PaneItemForeColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -309,14 +424,66 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_TaskManagerCli_TaskManagerPaneSeparatorColor_" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerPaneSeparatorColor*"></a>
-  <h4 id="KS_Files_Interactive_TaskManagerCli_TaskManagerPaneSeparatorColor" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerPaneSeparatorColor">TaskManagerPaneSeparatorColor</h4>
+  <a id="KS_Files_Interactive_TaskManagerCli_PaneSelectedItemBackColor_" data-uid="KS.Files.Interactive.TaskManagerCli.PaneSelectedItemBackColor*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_PaneSelectedItemBackColor" data-uid="KS.Files.Interactive.TaskManagerCli.PaneSelectedItemBackColor">PaneSelectedItemBackColor</h4>
+  <div class="markdown level1 summary"><p>Task manager pane selected Task color (background)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color PaneSelectedItemBackColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Files_Interactive_TaskManagerCli_PaneSelectedItemForeColor_" data-uid="KS.Files.Interactive.TaskManagerCli.PaneSelectedItemForeColor*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_PaneSelectedItemForeColor" data-uid="KS.Files.Interactive.TaskManagerCli.PaneSelectedItemForeColor">PaneSelectedItemForeColor</h4>
+  <div class="markdown level1 summary"><p>Task manager pane selected Task color (foreground)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color PaneSelectedItemForeColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Files_Interactive_TaskManagerCli_PaneSeparatorColor_" data-uid="KS.Files.Interactive.TaskManagerCli.PaneSeparatorColor*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_PaneSeparatorColor" data-uid="KS.Files.Interactive.TaskManagerCli.PaneSeparatorColor">PaneSeparatorColor</h4>
   <div class="markdown level1 summary"><p>Task manager pane separator color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color TaskManagerPaneSeparatorColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color PaneSeparatorColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -335,14 +502,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_TaskManagerCli_TaskManagerPaneTaskBackColor_" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerPaneTaskBackColor*"></a>
-  <h4 id="KS_Files_Interactive_TaskManagerCli_TaskManagerPaneTaskBackColor" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerPaneTaskBackColor">TaskManagerPaneTaskBackColor</h4>
-  <div class="markdown level1 summary"><p>Task manager pane task color (background)</p>
+  <a id="KS_Files_Interactive_TaskManagerCli_PrimaryDataSource_" data-uid="KS.Files.Interactive.TaskManagerCli.PrimaryDataSource*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_PrimaryDataSource" data-uid="KS.Files.Interactive.TaskManagerCli.PrimaryDataSource">PrimaryDataSource</h4>
+  <div class="markdown level1 summary"><p>An array, a dictionary, a list, or an enumerable that holds data (pane one)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color TaskManagerPaneTaskBackColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override IEnumerable PrimaryDataSource { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -354,49 +521,111 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Color</span></td>
+        <td><span class="xref">IEnumerable</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="KS_Files_Interactive_TaskManagerCli_TaskManagerPaneTaskForeColor_" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerPaneTaskForeColor*"></a>
-  <h4 id="KS_Files_Interactive_TaskManagerCli_TaskManagerPaneTaskForeColor" data-uid="KS.Files.Interactive.TaskManagerCli.TaskManagerPaneTaskForeColor">TaskManagerPaneTaskForeColor</h4>
-  <div class="markdown level1 summary"><p>Task manager pane task color (foreground)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color TaskManagerPaneTaskForeColor { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Color</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_PrimaryDataSource">BaseInteractiveTui.PrimaryDataSource</a></div>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="KS_Files_Interactive_TaskManagerCli_OpenMain_" data-uid="KS.Files.Interactive.TaskManagerCli.OpenMain*"></a>
-  <h4 id="KS_Files_Interactive_TaskManagerCli_OpenMain" data-uid="KS.Files.Interactive.TaskManagerCli.OpenMain">OpenMain()</h4>
-  <div class="markdown level1 summary"><p>Opens the task manager</p>
+  <a id="KS_Files_Interactive_TaskManagerCli_GetEntryFromItem_" data-uid="KS.Files.Interactive.TaskManagerCli.GetEntryFromItem*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_GetEntryFromItem_System_Object_" data-uid="KS.Files.Interactive.TaskManagerCli.GetEntryFromItem(System.Object)">GetEntryFromItem(Object)</h4>
+  <div class="markdown level1 summary"><p>Gets an entry string from a specified item for listing</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OpenMain()</code></pre>
+    <pre><code class="lang-csharp hljs">public override string GetEntryFromItem(object item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Target item</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_GetEntryFromItem_System_Object_">BaseInteractiveTui.GetEntryFromItem(Object)</a></div>
+  
+  
+  <a id="KS_Files_Interactive_TaskManagerCli_RenderInfoOnSecondPane_" data-uid="KS.Files.Interactive.TaskManagerCli.RenderInfoOnSecondPane*"></a>
+  <h4 id="KS_Files_Interactive_TaskManagerCli_RenderInfoOnSecondPane_System_Object_" data-uid="KS.Files.Interactive.TaskManagerCli.RenderInfoOnSecondPane(System.Object)">RenderInfoOnSecondPane(Object)</h4>
+  <div class="markdown level1 summary"><p>Renders information on the second pane, returning the status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string RenderInfoOnSecondPane(object item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Target item</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A status of rendering (whether it's a success or a failure), or summary of info</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_RenderInfoOnSecondPane_System_Object_">BaseInteractiveTui.RenderInfoOnSecondPane(Object)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Misc.Interactive.IInteractiveTui.html">IInteractiveTui</a>
   </div>
 </article>
           </div>

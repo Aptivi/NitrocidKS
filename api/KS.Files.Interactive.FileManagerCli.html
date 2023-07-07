@@ -89,26 +89,55 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">FileManagerCli</span></div>
+    <div class="level1"><a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html">BaseInteractiveTui</a></div>
+    <div class="level2"><span class="xref">FileManagerCli</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Misc.Interactive.IInteractiveTui.html">IInteractiveTui</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_RedrawRequired">BaseInteractiveTui.RedrawRequired</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_FirstPaneCurrentSelection">BaseInteractiveTui.FirstPaneCurrentSelection</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_SecondPaneCurrentSelection">BaseInteractiveTui.SecondPaneCurrentSelection</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_Status">BaseInteractiveTui.Status</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_CurrentPane">BaseInteractiveTui.CurrentPane</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_RenderInfoOnSecondPane_System_Object_">BaseInteractiveTui.RenderInfoOnSecondPane(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_HandleExit">BaseInteractiveTui.HandleExit()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Files.Interactive.html">KS.Files.Interactive</a></h6>
   <h6><strong>Assembly</strong>: Nitrocid.dll</h6>
   <h5 id="KS_Files_Interactive_FileManagerCli_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class FileManagerCli : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class FileManagerCli : BaseInteractiveTui, IInteractiveTui</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   
   
-  <a id="KS_Files_Interactive_FileManagerCli_FileManagerBackgroundColor_" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerBackgroundColor*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_FileManagerBackgroundColor" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerBackgroundColor">FileManagerBackgroundColor</h4>
+  <a id="KS_Files_Interactive_FileManagerCli_BackgroundColor_" data-uid="KS.Files.Interactive.FileManagerCli.BackgroundColor*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_BackgroundColor" data-uid="KS.Files.Interactive.FileManagerCli.BackgroundColor">BackgroundColor</h4>
   <div class="markdown level1 summary"><p>File manager background color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color FileManagerBackgroundColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color BackgroundColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -127,14 +156,42 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_FileManagerCli_FileManagerBoxBackgroundColor_" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerBoxBackgroundColor*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_FileManagerBoxBackgroundColor" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerBoxBackgroundColor">FileManagerBoxBackgroundColor</h4>
+  <a id="KS_Files_Interactive_FileManagerCli_Bindings_" data-uid="KS.Files.Interactive.FileManagerCli.Bindings*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_Bindings" data-uid="KS.Files.Interactive.FileManagerCli.Bindings">Bindings</h4>
+  <div class="markdown level1 summary"><p>File manager bindings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override List&lt;InteractiveTuiBinding&gt; Bindings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="KS.Misc.Interactive.InteractiveTuiBinding.html">InteractiveTuiBinding</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_Bindings">BaseInteractiveTui.Bindings</a></div>
+  
+  
+  <a id="KS_Files_Interactive_FileManagerCli_BoxBackgroundColor_" data-uid="KS.Files.Interactive.FileManagerCli.BoxBackgroundColor*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_BoxBackgroundColor" data-uid="KS.Files.Interactive.FileManagerCli.BoxBackgroundColor">BoxBackgroundColor</h4>
   <div class="markdown level1 summary"><p>File manager box background color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color FileManagerBoxBackgroundColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color BoxBackgroundColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -153,14 +210,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_FileManagerCli_FileManagerBoxForegroundColor_" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerBoxForegroundColor*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_FileManagerBoxForegroundColor" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerBoxForegroundColor">FileManagerBoxForegroundColor</h4>
+  <a id="KS_Files_Interactive_FileManagerCli_BoxForegroundColor_" data-uid="KS.Files.Interactive.FileManagerCli.BoxForegroundColor*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_BoxForegroundColor" data-uid="KS.Files.Interactive.FileManagerCli.BoxForegroundColor">BoxForegroundColor</h4>
   <div class="markdown level1 summary"><p>File manager box foreground color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color FileManagerBoxForegroundColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color BoxForegroundColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -179,14 +236,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_FileManagerCli_FileManagerForegroundColor_" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerForegroundColor*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_FileManagerForegroundColor" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerForegroundColor">FileManagerForegroundColor</h4>
+  <a id="KS_Files_Interactive_FileManagerCli_ForegroundColor_" data-uid="KS.Files.Interactive.FileManagerCli.ForegroundColor*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_ForegroundColor" data-uid="KS.Files.Interactive.FileManagerCli.ForegroundColor">ForegroundColor</h4>
   <div class="markdown level1 summary"><p>File manager foreground color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color FileManagerForegroundColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color ForegroundColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -205,14 +262,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_FileManagerCli_FileManagerKeyBindingOptionColor_" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerKeyBindingOptionColor*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_FileManagerKeyBindingOptionColor" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerKeyBindingOptionColor">FileManagerKeyBindingOptionColor</h4>
+  <a id="KS_Files_Interactive_FileManagerCli_KeyBindingOptionColor_" data-uid="KS.Files.Interactive.FileManagerCli.KeyBindingOptionColor*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_KeyBindingOptionColor" data-uid="KS.Files.Interactive.FileManagerCli.KeyBindingOptionColor">KeyBindingOptionColor</h4>
   <div class="markdown level1 summary"><p>File manager key binding in option color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color FileManagerKeyBindingOptionColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color KeyBindingOptionColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -231,14 +288,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_FileManagerCli_FileManagerOptionBackgroundColor_" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerOptionBackgroundColor*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_FileManagerOptionBackgroundColor" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerOptionBackgroundColor">FileManagerOptionBackgroundColor</h4>
+  <a id="KS_Files_Interactive_FileManagerCli_OptionBackgroundColor_" data-uid="KS.Files.Interactive.FileManagerCli.OptionBackgroundColor*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_OptionBackgroundColor" data-uid="KS.Files.Interactive.FileManagerCli.OptionBackgroundColor">OptionBackgroundColor</h4>
   <div class="markdown level1 summary"><p>File manager option background color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color FileManagerOptionBackgroundColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color OptionBackgroundColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -257,14 +314,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_FileManagerCli_FileManagerOptionForegroundColor_" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerOptionForegroundColor*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_FileManagerOptionForegroundColor" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerOptionForegroundColor">FileManagerOptionForegroundColor</h4>
+  <a id="KS_Files_Interactive_FileManagerCli_OptionForegroundColor_" data-uid="KS.Files.Interactive.FileManagerCli.OptionForegroundColor*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_OptionForegroundColor" data-uid="KS.Files.Interactive.FileManagerCli.OptionForegroundColor">OptionForegroundColor</h4>
   <div class="markdown level1 summary"><p>File manager option foreground color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color FileManagerOptionForegroundColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color OptionForegroundColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -283,14 +340,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_FileManagerCli_FileManagerPaneBackgroundColor_" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerPaneBackgroundColor*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_FileManagerPaneBackgroundColor" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerPaneBackgroundColor">FileManagerPaneBackgroundColor</h4>
+  <a id="KS_Files_Interactive_FileManagerCli_PaneBackgroundColor_" data-uid="KS.Files.Interactive.FileManagerCli.PaneBackgroundColor*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_PaneBackgroundColor" data-uid="KS.Files.Interactive.FileManagerCli.PaneBackgroundColor">PaneBackgroundColor</h4>
   <div class="markdown level1 summary"><p>File manager pane background color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color FileManagerPaneBackgroundColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color PaneBackgroundColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -309,14 +366,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_FileManagerCli_FileManagerPaneFileBackColor_" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerPaneFileBackColor*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_FileManagerPaneFileBackColor" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerPaneFileBackColor">FileManagerPaneFileBackColor</h4>
-  <div class="markdown level1 summary"><p>File manager pane file color (background)</p>
+  <a id="KS_Files_Interactive_FileManagerCli_PaneItemBackColor_" data-uid="KS.Files.Interactive.FileManagerCli.PaneItemBackColor*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_PaneItemBackColor" data-uid="KS.Files.Interactive.FileManagerCli.PaneItemBackColor">PaneItemBackColor</h4>
+  <div class="markdown level1 summary"><p>File manager pane File color (background)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color FileManagerPaneFileBackColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color PaneItemBackColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -335,14 +392,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_FileManagerCli_FileManagerPaneFileForeColor_" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerPaneFileForeColor*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_FileManagerPaneFileForeColor" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerPaneFileForeColor">FileManagerPaneFileForeColor</h4>
-  <div class="markdown level1 summary"><p>File manager pane file color (foreground)</p>
+  <a id="KS_Files_Interactive_FileManagerCli_PaneItemForeColor_" data-uid="KS.Files.Interactive.FileManagerCli.PaneItemForeColor*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_PaneItemForeColor" data-uid="KS.Files.Interactive.FileManagerCli.PaneItemForeColor">PaneItemForeColor</h4>
+  <div class="markdown level1 summary"><p>File manager pane File color (foreground)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color FileManagerPaneFileForeColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color PaneItemForeColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -361,14 +418,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_FileManagerCli_FileManagerPaneSelectedFileBackColor_" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerPaneSelectedFileBackColor*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_FileManagerPaneSelectedFileBackColor" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerPaneSelectedFileBackColor">FileManagerPaneSelectedFileBackColor</h4>
-  <div class="markdown level1 summary"><p>File manager pane selected file color (background)</p>
+  <a id="KS_Files_Interactive_FileManagerCli_PaneSelectedItemBackColor_" data-uid="KS.Files.Interactive.FileManagerCli.PaneSelectedItemBackColor*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_PaneSelectedItemBackColor" data-uid="KS.Files.Interactive.FileManagerCli.PaneSelectedItemBackColor">PaneSelectedItemBackColor</h4>
+  <div class="markdown level1 summary"><p>File manager pane selected File color (background)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color FileManagerPaneSelectedFileBackColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color PaneSelectedItemBackColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -387,14 +444,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_FileManagerCli_FileManagerPaneSelectedFileForeColor_" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerPaneSelectedFileForeColor*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_FileManagerPaneSelectedFileForeColor" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerPaneSelectedFileForeColor">FileManagerPaneSelectedFileForeColor</h4>
-  <div class="markdown level1 summary"><p>File manager pane selected file color (foreground)</p>
+  <a id="KS_Files_Interactive_FileManagerCli_PaneSelectedItemForeColor_" data-uid="KS.Files.Interactive.FileManagerCli.PaneSelectedItemForeColor*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_PaneSelectedItemForeColor" data-uid="KS.Files.Interactive.FileManagerCli.PaneSelectedItemForeColor">PaneSelectedItemForeColor</h4>
+  <div class="markdown level1 summary"><p>File manager pane selected File color (foreground)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color FileManagerPaneSelectedFileForeColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color PaneSelectedItemForeColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -413,40 +470,14 @@
   </table>
   
   
-  <a id="KS_Files_Interactive_FileManagerCli_FileManagerPaneSelectedSeparatorColor_" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerPaneSelectedSeparatorColor*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_FileManagerPaneSelectedSeparatorColor" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerPaneSelectedSeparatorColor">FileManagerPaneSelectedSeparatorColor</h4>
-  <div class="markdown level1 summary"><p>File manager selected pane separator color</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color FileManagerPaneSelectedSeparatorColor { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Color</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Files_Interactive_FileManagerCli_FileManagerPaneSeparatorColor_" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerPaneSeparatorColor*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_FileManagerPaneSeparatorColor" data-uid="KS.Files.Interactive.FileManagerCli.FileManagerPaneSeparatorColor">FileManagerPaneSeparatorColor</h4>
+  <a id="KS_Files_Interactive_FileManagerCli_PaneSeparatorColor_" data-uid="KS.Files.Interactive.FileManagerCli.PaneSeparatorColor*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_PaneSeparatorColor" data-uid="KS.Files.Interactive.FileManagerCli.PaneSeparatorColor">PaneSeparatorColor</h4>
   <div class="markdown level1 summary"><p>File manager pane separator color</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color FileManagerPaneSeparatorColor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Color PaneSeparatorColor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -463,29 +494,102 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="KS_Files_Interactive_FileManagerCli_PrimaryDataSource_" data-uid="KS.Files.Interactive.FileManagerCli.PrimaryDataSource*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_PrimaryDataSource" data-uid="KS.Files.Interactive.FileManagerCli.PrimaryDataSource">PrimaryDataSource</h4>
+  <div class="markdown level1 summary"><p>An array, a dictionary, a list, or an enumerable that holds data (pane one)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable PrimaryDataSource { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_PrimaryDataSource">BaseInteractiveTui.PrimaryDataSource</a></div>
+  
+  
+  <a id="KS_Files_Interactive_FileManagerCli_SecondaryDataSource_" data-uid="KS.Files.Interactive.FileManagerCli.SecondaryDataSource*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_SecondaryDataSource" data-uid="KS.Files.Interactive.FileManagerCli.SecondaryDataSource">SecondaryDataSource</h4>
+  <div class="markdown level1 summary"><p>An array, a dictionary, a list, or an enumerable that holds data (pane two)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable SecondaryDataSource { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_SecondaryDataSource">BaseInteractiveTui.SecondaryDataSource</a></div>
+  
+  
+  <a id="KS_Files_Interactive_FileManagerCli_SecondPaneInteractable_" data-uid="KS.Files.Interactive.FileManagerCli.SecondPaneInteractable*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_SecondPaneInteractable" data-uid="KS.Files.Interactive.FileManagerCli.SecondPaneInteractable">SecondPaneInteractable</h4>
+  <div class="markdown level1 summary"><p>Always true in the file manager as we want it to behave like Total Commander</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SecondPaneInteractable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_SecondPaneInteractable">BaseInteractiveTui.SecondPaneInteractable</a></div>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="KS_Files_Interactive_FileManagerCli_OpenMain_" data-uid="KS.Files.Interactive.FileManagerCli.OpenMain*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_OpenMain" data-uid="KS.Files.Interactive.FileManagerCli.OpenMain">OpenMain()</h4>
-  <div class="markdown level1 summary"><p>Opens the file manager to the current path</p>
+  <a id="KS_Files_Interactive_FileManagerCli_GetEntryFromItem_" data-uid="KS.Files.Interactive.FileManagerCli.GetEntryFromItem*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_GetEntryFromItem_System_Object_" data-uid="KS.Files.Interactive.FileManagerCli.GetEntryFromItem(System.Object)">GetEntryFromItem(Object)</h4>
+  <div class="markdown level1 summary"><p>Gets an entry string from a specified item for listing</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OpenMain()</code></pre>
-  </div>
-  
-  
-  <a id="KS_Files_Interactive_FileManagerCli_OpenMain_" data-uid="KS.Files.Interactive.FileManagerCli.OpenMain*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_OpenMain_System_String_" data-uid="KS.Files.Interactive.FileManagerCli.OpenMain(System.String)">OpenMain(String)</h4>
-  <div class="markdown level1 summary"><p>Opens the file manager to the current path</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OpenMain(string firstPath)</code></pre>
+    <pre><code class="lang-csharp hljs">public override string GetEntryFromItem(object item)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -498,23 +602,40 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">firstPath</span></td>
-        <td><p>(Non)neutralized path to the folder for the first pane</p>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Target item</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_GetEntryFromItem_System_Object_">BaseInteractiveTui.GetEntryFromItem(Object)</a></div>
   
   
-  <a id="KS_Files_Interactive_FileManagerCli_OpenMain_" data-uid="KS.Files.Interactive.FileManagerCli.OpenMain*"></a>
-  <h4 id="KS_Files_Interactive_FileManagerCli_OpenMain_System_String_System_String_" data-uid="KS.Files.Interactive.FileManagerCli.OpenMain(System.String,System.String)">OpenMain(String, String)</h4>
-  <div class="markdown level1 summary"><p>Opens the file manager to the specified path</p>
+  <a id="KS_Files_Interactive_FileManagerCli_RenderStatus_" data-uid="KS.Files.Interactive.FileManagerCli.RenderStatus*"></a>
+  <h4 id="KS_Files_Interactive_FileManagerCli_RenderStatus_System_Object_" data-uid="KS.Files.Interactive.FileManagerCli.RenderStatus(System.Object)">RenderStatus(Object)</h4>
+  <div class="markdown level1 summary"><p>Renders the status</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OpenMain(string firstPath, string secondPath)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void RenderStatus(object item)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -527,19 +648,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">firstPath</span></td>
-        <td><p>(Non)neutralized path to the folder for the first pane</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">secondPath</span></td>
-        <td><p>(Non)neutralized path to the folder for the second pane</p>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Target item</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Interactive.BaseInteractiveTui.html#KS_Misc_Interactive_BaseInteractiveTui_RenderStatus_System_Object_">BaseInteractiveTui.RenderStatus(Object)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Misc.Interactive.IInteractiveTui.html">IInteractiveTui</a>
+  </div>
 </article>
           </div>
           
