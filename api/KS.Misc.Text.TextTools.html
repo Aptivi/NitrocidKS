@@ -101,6 +101,108 @@
   </h3>
   
   
+  <a id="KS_Misc_Text_TextTools_AllIndexesOf_" data-uid="KS.Misc.Text.TextTools.AllIndexesOf*"></a>
+  <h4 id="KS_Misc_Text_TextTools_AllIndexesOf_System_String_System_String_" data-uid="KS.Misc.Text.TextTools.AllIndexesOf(System.String,System.String)">AllIndexesOf(String, String)</h4>
+  <div class="markdown level1 summary"><p>Get all indexes of a value in string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;int&gt; AllIndexesOf(this string target, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Source string</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>Indexes of strings</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Text_TextTools_ContainsAnyOf_" data-uid="KS.Misc.Text.TextTools.ContainsAnyOf*"></a>
+  <h4 id="KS_Misc_Text_TextTools_ContainsAnyOf_System_String_System_String___" data-uid="KS.Misc.Text.TextTools.ContainsAnyOf(System.String,System.String[])">ContainsAnyOf(String, String[])</h4>
+  <div class="markdown level1 summary"><p>Checks to see if the string contains any of the target strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ContainsAnyOf(this string source, string[] targets)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source string</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">targets</span></td>
+        <td><p>Target strings</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if one of them is found; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="KS_Misc_Text_TextTools_GetWrappedSentences_" data-uid="KS.Misc.Text.TextTools.GetWrappedSentences*"></a>
   <h4 id="KS_Misc_Text_TextTools_GetWrappedSentences_System_String_System_Int32_" data-uid="KS.Misc.Text.TextTools.GetWrappedSentences(System.String,System.Int32)">GetWrappedSentences(String, Int32)</h4>
   <div class="markdown level1 summary"><p>Gets the wrapped sentences for text wrapping for console</p>
@@ -202,6 +304,413 @@
       <tr>
         <td><span class="xref">System.String</span>[]</td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Text_TextTools_ReleaseDoubleQuotes_" data-uid="KS.Misc.Text.TextTools.ReleaseDoubleQuotes*"></a>
+  <h4 id="KS_Misc_Text_TextTools_ReleaseDoubleQuotes_System_String_" data-uid="KS.Misc.Text.TextTools.ReleaseDoubleQuotes(System.String)">ReleaseDoubleQuotes(String)</h4>
+  <div class="markdown level1 summary"><p>Releases a string from double quotations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReleaseDoubleQuotes(this string target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Target string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string that doesn't contain double quotation marks at the start and at the end of the string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Text_TextTools_ReplaceAll_" data-uid="KS.Misc.Text.TextTools.ReplaceAll*"></a>
+  <h4 id="KS_Misc_Text_TextTools_ReplaceAll_System_String_System_String___System_String_" data-uid="KS.Misc.Text.TextTools.ReplaceAll(System.String,System.String[],System.String)">ReplaceAll(String, String[], String)</h4>
+  <div class="markdown level1 summary"><p>Replaces all the instances of strings with a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReplaceAll(this string target, string[] toBeReplaced, string toReplace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Target string</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">toBeReplaced</span></td>
+        <td><p>Strings to be replaced</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">toReplace</span></td>
+        <td><p>String to replace with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Modified string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Text_TextTools_ReplaceAllRange_" data-uid="KS.Misc.Text.TextTools.ReplaceAllRange*"></a>
+  <h4 id="KS_Misc_Text_TextTools_ReplaceAllRange_System_String_System_String___System_String___" data-uid="KS.Misc.Text.TextTools.ReplaceAllRange(System.String,System.String[],System.String[])">ReplaceAllRange(String, String[], String[])</h4>
+  <div class="markdown level1 summary"><p>Replaces all the instances of strings with a string assigned to each entry</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReplaceAllRange(this string target, string[] toBeReplaced, string[] toReplace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Target string</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">toBeReplaced</span></td>
+        <td><p>Strings to be replaced</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">toReplace</span></td>
+        <td><p>Strings to replace with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Modified string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Text_TextTools_ReplaceLastOccurrence_" data-uid="KS.Misc.Text.TextTools.ReplaceLastOccurrence*"></a>
+  <h4 id="KS_Misc_Text_TextTools_ReplaceLastOccurrence_System_String_System_String_System_String_" data-uid="KS.Misc.Text.TextTools.ReplaceLastOccurrence(System.String,System.String,System.String)">ReplaceLastOccurrence(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Replaces last occurrence of a text in source string with the replacement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReplaceLastOccurrence(this string source, string searchText, string replace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A string which has the specified text to replace</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">searchText</span></td>
+        <td><p>A string to be replaced</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">replace</span></td>
+        <td><p>A string to replace</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>String that has its last occurrence of text replaced</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Text_TextTools_SplitEncloseDoubleQuotes_" data-uid="KS.Misc.Text.TextTools.SplitEncloseDoubleQuotes*"></a>
+  <h4 id="KS_Misc_Text_TextTools_SplitEncloseDoubleQuotes_System_String_" data-uid="KS.Misc.Text.TextTools.SplitEncloseDoubleQuotes(System.String)">SplitEncloseDoubleQuotes(String)</h4>
+  <div class="markdown level1 summary"><p>Splits the string enclosed in double quotes delimited by spaces using regular expression formula</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] SplitEncloseDoubleQuotes(this string target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Target string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Text_TextTools_SplitNewLines_" data-uid="KS.Misc.Text.TextTools.SplitNewLines*"></a>
+  <h4 id="KS_Misc_Text_TextTools_SplitNewLines_System_String_" data-uid="KS.Misc.Text.TextTools.SplitNewLines(System.String)">SplitNewLines(String)</h4>
+  <div class="markdown level1 summary"><p>Makes a string array with new line as delimiter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] SplitNewLines(this string target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Target string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>List of words that are separated by the new lines</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Text_TextTools_StartsWithAnyOf_" data-uid="KS.Misc.Text.TextTools.StartsWithAnyOf*"></a>
+  <h4 id="KS_Misc_Text_TextTools_StartsWithAnyOf_System_String_System_String___" data-uid="KS.Misc.Text.TextTools.StartsWithAnyOf(System.String,System.String[])">StartsWithAnyOf(String, String[])</h4>
+  <div class="markdown level1 summary"><p>Checks to see if the string starts with any of the values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool StartsWithAnyOf(this string target, string[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Target string</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the string starts with any of the values specified in the array. Otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Text_TextTools_Truncate_" data-uid="KS.Misc.Text.TextTools.Truncate*"></a>
+  <h4 id="KS_Misc_Text_TextTools_Truncate_System_String_System_Int32_" data-uid="KS.Misc.Text.TextTools.Truncate(System.String,System.Int32)">Truncate(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Truncates the string if the string is larger than the threshold, otherwise, returns an unchanged string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Truncate(this string target, int threshold)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Source string to truncate</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">threshold</span></td>
+        <td><p>Max number of string characters</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Truncated string</p>
+</td>
       </tr>
     </tbody>
   </table>

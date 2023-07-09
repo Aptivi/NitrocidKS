@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace KS.Misc.Reflection
+    <title>Class StreamRead
    | Nitrocid KS API - Aptivi </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace KS.Misc.Reflection
+    <meta name="title" content="Class StreamRead
    | Nitrocid KS API - Aptivi ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -78,36 +78,72 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="KS.Misc.Reflection">
+            <article class="content wrap" id="_content" data-uid="KS.Files.Read.StreamRead">
   
-  <h1 id="KS_Misc_Reflection" data-uid="KS.Misc.Reflection" class="text-break">Namespace KS.Misc.Reflection
+  
+  <h1 id="KS_Files_Read_StreamRead" data-uid="KS.Files.Read.StreamRead" class="text-break">Class StreamRead
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Stream reading tools</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">StreamRead</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Files.Read.html">KS.Files.Read</a></h6>
+  <h6><strong>Assembly</strong>: Nitrocid.dll</h6>
+  <h5 id="KS_Files_Read_StreamRead_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class StreamRead : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
   </h3>
-      <h4><a class="xref" href="KS.Misc.Reflection.AssemblyLookup.html">AssemblyLookup</a></h4>
-      <section><p>Assembly lookup module</p>
-</section>
-      <h4><a class="xref" href="KS.Misc.Reflection.FieldManager.html">FieldManager</a></h4>
-      <section><p>Field management module</p>
-</section>
-      <h4><a class="xref" href="KS.Misc.Reflection.IntegerTools.html">IntegerTools</a></h4>
-      <section><p>Tools to manipulate with integers</p>
-</section>
-      <h4><a class="xref" href="KS.Misc.Reflection.MethodManager.html">MethodManager</a></h4>
-      <section><p>Method management module</p>
-</section>
-      <h4><a class="xref" href="KS.Misc.Reflection.PropertyManager.html">PropertyManager</a></h4>
-      <section><p>Property management module</p>
-</section>
-      <h4><a class="xref" href="KS.Misc.Reflection.StringManipulate.html">StringManipulate</a></h4>
-      <section><p>String manipulation module</p>
-</section>
-      <h4><a class="xref" href="KS.Misc.Reflection.StringQuery.html">StringQuery</a></h4>
-      <section><p>String querying module</p>
-</section>
+  
+  
+  <a id="KS_Files_Read_StreamRead_ReadToEndAndSeek_" data-uid="KS.Files.Read.StreamRead.ReadToEndAndSeek*"></a>
+  <h4 id="KS_Files_Read_StreamRead_ReadToEndAndSeek_StreamReader__" data-uid="KS.Files.Read.StreamRead.ReadToEndAndSeek(StreamReader@)">ReadToEndAndSeek(ref StreamReader)</h4>
+  <div class="markdown level1 summary"><p>Reads all the characters in the stream until the end and seeks the stream to the beginning, if possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadToEndAndSeek(ref StreamReader stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StreamReader</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream reader</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Contents of the stream</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
