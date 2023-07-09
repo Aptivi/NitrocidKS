@@ -366,13 +366,13 @@
   
   
   <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.Object[])">WriteInfoBox(String, Object[])</h4>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Color_Color_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Color,Color,System.Object[])">WriteInfoBox(String, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color, Object[])</h4>
   <div class="markdown level1 summary"><p>Writes the info box plainly</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, Color InfoBoxColor, Color BackgroundColor, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -391,84 +391,49 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Object</span>[]</td>
-        <td><span class="parametername">vars</span></td>
-        <td><p>Variables to format the message before it's written.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_Color_Color_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Color,Color,System.Object[])">WriteInfoBox(String, String, String, String, String, String, String, String, String, Color, Color, Object[])</h4>
-  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, Color InfoBoxColor, Color BackgroundColor, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">text</span></td>
-        <td><p>Text to be written.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperLeftCornerChar</span></td>
         <td><p>Upper left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerLeftCornerChar</span></td>
         <td><p>Lower left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperRightCornerChar</span></td>
         <td><p>Upper right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerRightCornerChar</span></td>
         <td><p>Lower right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperFrameChar</span></td>
         <td><p>Upper frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerFrameChar</span></td>
         <td><p>Lower frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LeftFrameChar</span></td>
         <td><p>Left frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">RightFrameChar</span></td>
         <td><p>Right frame character for info box</p>
 </td>
@@ -496,13 +461,13 @@
   
   
   <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_Color_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Color,System.Object[])">WriteInfoBox(String, String, String, String, String, String, String, String, String, Color, Object[])</h4>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Color_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Color,System.Object[])">WriteInfoBox(String, Char, Char, Char, Char, Char, Char, Char, Char, Color, Object[])</h4>
   <div class="markdown level1 summary"><p>Writes the info box plainly</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, Color InfoBoxColor, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, Color InfoBoxColor, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -521,49 +486,49 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperLeftCornerChar</span></td>
         <td><p>Upper left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerLeftCornerChar</span></td>
         <td><p>Lower left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperRightCornerChar</span></td>
         <td><p>Upper right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerRightCornerChar</span></td>
         <td><p>Lower right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperFrameChar</span></td>
         <td><p>Upper frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerFrameChar</span></td>
         <td><p>Lower frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LeftFrameChar</span></td>
         <td><p>Left frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">RightFrameChar</span></td>
         <td><p>Right frame character for info box</p>
 </td>
@@ -585,13 +550,13 @@
   
   
   <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_ConsoleColors_ConsoleColors_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,ConsoleColors,ConsoleColors,System.Object[])">WriteInfoBox(String, String, String, String, String, String, String, String, String, ConsoleColors, ConsoleColors, Object[])</h4>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_ConsoleColors_ConsoleColors_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,ConsoleColors,ConsoleColors,System.Object[])">WriteInfoBox(String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ConsoleColors, Object[])</h4>
   <div class="markdown level1 summary"><p>Writes the info box plainly</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, ConsoleColors InfoBoxColor, ConsoleColors BackgroundColor, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, ConsoleColors InfoBoxColor, ConsoleColors BackgroundColor, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -610,49 +575,49 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperLeftCornerChar</span></td>
         <td><p>Upper left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerLeftCornerChar</span></td>
         <td><p>Lower left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperRightCornerChar</span></td>
         <td><p>Upper right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerRightCornerChar</span></td>
         <td><p>Lower right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperFrameChar</span></td>
         <td><p>Upper frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerFrameChar</span></td>
         <td><p>Lower frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LeftFrameChar</span></td>
         <td><p>Left frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">RightFrameChar</span></td>
         <td><p>Right frame character for info box</p>
 </td>
@@ -680,13 +645,13 @@
   
   
   <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_ConsoleColors_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,ConsoleColors,System.Object[])">WriteInfoBox(String, String, String, String, String, String, String, String, String, ConsoleColors, Object[])</h4>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_ConsoleColors_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,ConsoleColors,System.Object[])">WriteInfoBox(String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, Object[])</h4>
   <div class="markdown level1 summary"><p>Writes the info box plainly</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, ConsoleColors InfoBoxColor, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, ConsoleColors InfoBoxColor, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -705,49 +670,49 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperLeftCornerChar</span></td>
         <td><p>Upper left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerLeftCornerChar</span></td>
         <td><p>Lower left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperRightCornerChar</span></td>
         <td><p>Upper right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerRightCornerChar</span></td>
         <td><p>Lower right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperFrameChar</span></td>
         <td><p>Upper frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerFrameChar</span></td>
         <td><p>Lower frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LeftFrameChar</span></td>
         <td><p>Left frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">RightFrameChar</span></td>
         <td><p>Right frame character for info box</p>
 </td>
@@ -769,13 +734,13 @@
   
   
   <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteInfoBox(String, String, String, String, String, String, String, String, String, KernelColorType, KernelColorType, Object[])</h4>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteInfoBox(String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, Object[])</h4>
   <div class="markdown level1 summary"><p>Writes the info box plainly</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, KernelColorType InfoBoxColor, KernelColorType BackgroundColor, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, KernelColorType InfoBoxColor, KernelColorType BackgroundColor, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -794,49 +759,49 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperLeftCornerChar</span></td>
         <td><p>Upper left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerLeftCornerChar</span></td>
         <td><p>Lower left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperRightCornerChar</span></td>
         <td><p>Upper right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerRightCornerChar</span></td>
         <td><p>Lower right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperFrameChar</span></td>
         <td><p>Upper frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerFrameChar</span></td>
         <td><p>Lower frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LeftFrameChar</span></td>
         <td><p>Left frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">RightFrameChar</span></td>
         <td><p>Right frame character for info box</p>
 </td>
@@ -864,13 +829,13 @@
   
   
   <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_KS_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteInfoBox(String, String, String, String, String, String, String, String, String, KernelColorType, Object[])</h4>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_KS_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteInfoBox(String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, Object[])</h4>
   <div class="markdown level1 summary"><p>Writes the info box plainly</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, KernelColorType InfoBoxColor, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, KernelColorType InfoBoxColor, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -889,49 +854,49 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperLeftCornerChar</span></td>
         <td><p>Upper left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerLeftCornerChar</span></td>
         <td><p>Lower left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperRightCornerChar</span></td>
         <td><p>Upper right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerRightCornerChar</span></td>
         <td><p>Lower right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperFrameChar</span></td>
         <td><p>Upper frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerFrameChar</span></td>
         <td><p>Lower frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LeftFrameChar</span></td>
         <td><p>Left frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">RightFrameChar</span></td>
         <td><p>Right frame character for info box</p>
 </td>
@@ -953,13 +918,13 @@
   
   
   <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object[])">WriteInfoBox(String, String, String, String, String, String, String, String, String, Object[])</h4>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])">WriteInfoBox(String, Char, Char, Char, Char, Char, Char, Char, Char, Object[])</h4>
   <div class="markdown level1 summary"><p>Writes the info box plainly</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -978,51 +943,86 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperLeftCornerChar</span></td>
         <td><p>Upper left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerLeftCornerChar</span></td>
         <td><p>Lower left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperRightCornerChar</span></td>
         <td><p>Upper right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerRightCornerChar</span></td>
         <td><p>Lower right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperFrameChar</span></td>
         <td><p>Upper frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerFrameChar</span></td>
         <td><p>Lower frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LeftFrameChar</span></td>
         <td><p>Left frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">RightFrameChar</span></td>
         <td><p>Right frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message before it's written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox*"></a>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBox_System_String_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBox(System.String,System.Object[])">WriteInfoBox(String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteInfoBox(string text, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text to be written.</p>
 </td>
       </tr>
       <tr>
@@ -1390,6 +1390,746 @@
   
   
   <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*"></a>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Color_Color_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Color,Color,System.Object[])">WriteInfoBoxInput(String, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color, Object[])</h4>
+  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxInput(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, Color InfoBoxColor, Color BackgroundColor, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text to be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperLeftCornerChar</span></td>
+        <td><p>Upper left corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerLeftCornerChar</span></td>
+        <td><p>Lower left corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperRightCornerChar</span></td>
+        <td><p>Upper right corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerRightCornerChar</span></td>
+        <td><p>Lower right corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperFrameChar</span></td>
+        <td><p>Upper frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerFrameChar</span></td>
+        <td><p>Lower frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LeftFrameChar</span></td>
+        <td><p>Left frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">RightFrameChar</span></td>
+        <td><p>Right frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><span class="parametername">InfoBoxColor</span></td>
+        <td><p>InfoBox color</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><span class="parametername">BackgroundColor</span></td>
+        <td><p>InfoBox background color</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message before it's written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*"></a>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Color_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Color,System.Object[])">WriteInfoBoxInput(String, Char, Char, Char, Char, Char, Char, Char, Char, Color, Object[])</h4>
+  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxInput(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, Color InfoBoxColor, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text to be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperLeftCornerChar</span></td>
+        <td><p>Upper left corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerLeftCornerChar</span></td>
+        <td><p>Lower left corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperRightCornerChar</span></td>
+        <td><p>Upper right corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerRightCornerChar</span></td>
+        <td><p>Lower right corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperFrameChar</span></td>
+        <td><p>Upper frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerFrameChar</span></td>
+        <td><p>Lower frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LeftFrameChar</span></td>
+        <td><p>Left frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">RightFrameChar</span></td>
+        <td><p>Right frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><span class="parametername">InfoBoxColor</span></td>
+        <td><p>InfoBox color</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message before it's written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*"></a>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_ConsoleColors_ConsoleColors_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,ConsoleColors,ConsoleColors,System.Object[])">WriteInfoBoxInput(String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ConsoleColors, Object[])</h4>
+  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxInput(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, ConsoleColors InfoBoxColor, ConsoleColors BackgroundColor, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text to be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperLeftCornerChar</span></td>
+        <td><p>Upper left corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerLeftCornerChar</span></td>
+        <td><p>Lower left corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperRightCornerChar</span></td>
+        <td><p>Upper right corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerRightCornerChar</span></td>
+        <td><p>Lower right corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperFrameChar</span></td>
+        <td><p>Upper frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerFrameChar</span></td>
+        <td><p>Lower frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LeftFrameChar</span></td>
+        <td><p>Left frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">RightFrameChar</span></td>
+        <td><p>Right frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ConsoleColors</span></td>
+        <td><span class="parametername">InfoBoxColor</span></td>
+        <td><p>InfoBox color</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ConsoleColors</span></td>
+        <td><span class="parametername">BackgroundColor</span></td>
+        <td><p>InfoBox background color</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message before it's written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*"></a>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_ConsoleColors_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,ConsoleColors,System.Object[])">WriteInfoBoxInput(String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, Object[])</h4>
+  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxInput(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, ConsoleColors InfoBoxColor, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text to be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperLeftCornerChar</span></td>
+        <td><p>Upper left corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerLeftCornerChar</span></td>
+        <td><p>Lower left corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperRightCornerChar</span></td>
+        <td><p>Upper right corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerRightCornerChar</span></td>
+        <td><p>Lower right corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperFrameChar</span></td>
+        <td><p>Upper frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerFrameChar</span></td>
+        <td><p>Lower frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LeftFrameChar</span></td>
+        <td><p>Left frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">RightFrameChar</span></td>
+        <td><p>Right frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ConsoleColors</span></td>
+        <td><span class="parametername">InfoBoxColor</span></td>
+        <td><p>InfoBox color</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message before it's written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*"></a>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteInfoBoxInput(String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, Object[])</h4>
+  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxInput(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, KernelColorType InfoBoxColor, KernelColorType BackgroundColor, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text to be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperLeftCornerChar</span></td>
+        <td><p>Upper left corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerLeftCornerChar</span></td>
+        <td><p>Lower left corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperRightCornerChar</span></td>
+        <td><p>Upper right corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerRightCornerChar</span></td>
+        <td><p>Lower right corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperFrameChar</span></td>
+        <td><p>Upper frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerFrameChar</span></td>
+        <td><p>Lower frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LeftFrameChar</span></td>
+        <td><p>Left frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">RightFrameChar</span></td>
+        <td><p>Right frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.ConsoleBase.Colors.KernelColorType.html">KernelColorType</a></td>
+        <td><span class="parametername">InfoBoxColor</span></td>
+        <td><p>InfoBox color from Nitrocid KS's <a class="xref" href="KS.ConsoleBase.Colors.KernelColorType.html">KernelColorType</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.ConsoleBase.Colors.KernelColorType.html">KernelColorType</a></td>
+        <td><span class="parametername">BackgroundColor</span></td>
+        <td><p>InfoBox background color from Nitrocid KS's <a class="xref" href="KS.ConsoleBase.Colors.KernelColorType.html">KernelColorType</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message before it's written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*"></a>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_KS_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteInfoBoxInput(String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, Object[])</h4>
+  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxInput(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, KernelColorType InfoBoxColor, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text to be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperLeftCornerChar</span></td>
+        <td><p>Upper left corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerLeftCornerChar</span></td>
+        <td><p>Lower left corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperRightCornerChar</span></td>
+        <td><p>Upper right corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerRightCornerChar</span></td>
+        <td><p>Lower right corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperFrameChar</span></td>
+        <td><p>Upper frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerFrameChar</span></td>
+        <td><p>Lower frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LeftFrameChar</span></td>
+        <td><p>Left frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">RightFrameChar</span></td>
+        <td><p>Right frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.ConsoleBase.Colors.KernelColorType.html">KernelColorType</a></td>
+        <td><span class="parametername">InfoBoxColor</span></td>
+        <td><p>InfoBox color from Nitrocid KS's <a class="xref" href="KS.ConsoleBase.Colors.KernelColorType.html">KernelColorType</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message before it's written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*"></a>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])">WriteInfoBoxInput(String, Char, Char, Char, Char, Char, Char, Char, Char, Object[])</h4>
+  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxInput(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text to be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperLeftCornerChar</span></td>
+        <td><p>Upper left corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerLeftCornerChar</span></td>
+        <td><p>Lower left corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperRightCornerChar</span></td>
+        <td><p>Upper right corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerRightCornerChar</span></td>
+        <td><p>Lower right corner character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">UpperFrameChar</span></td>
+        <td><p>Upper frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LowerFrameChar</span></td>
+        <td><p>Lower frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">LeftFrameChar</span></td>
+        <td><p>Left frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">RightFrameChar</span></td>
+        <td><p>Right frame character for info box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message before it's written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*"></a>
   <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.Object[])">WriteInfoBoxInput(String, Object[])</h4>
   <div class="markdown level1 summary"><p>Writes the info box plainly</p>
 </div>
@@ -1439,14 +2179,14 @@
   </table>
   
   
-  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_Color_Color_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Color,Color,System.Object[])">WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, Color, Color, Object[])</h4>
+  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxPlain_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlain*"></a>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxPlain_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlain(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])">WriteInfoBoxPlain(String, Char, Char, Char, Char, Char, Char, Char, Char, Object[])</h4>
   <div class="markdown level1 summary"><p>Writes the info box plainly</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxInput(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, Color InfoBoxColor, Color BackgroundColor, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteInfoBoxPlain(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1465,691 +2205,49 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperLeftCornerChar</span></td>
         <td><p>Upper left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerLeftCornerChar</span></td>
         <td><p>Lower left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperRightCornerChar</span></td>
         <td><p>Upper right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerRightCornerChar</span></td>
         <td><p>Lower right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperFrameChar</span></td>
         <td><p>Upper frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerFrameChar</span></td>
         <td><p>Lower frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LeftFrameChar</span></td>
         <td><p>Left frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">RightFrameChar</span></td>
-        <td><p>Right frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Color</span></td>
-        <td><span class="parametername">InfoBoxColor</span></td>
-        <td><p>InfoBox color</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Color</span></td>
-        <td><span class="parametername">BackgroundColor</span></td>
-        <td><p>InfoBox background color</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Object</span>[]</td>
-        <td><span class="parametername">vars</span></td>
-        <td><p>Variables to format the message before it's written.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_Color_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Color,System.Object[])">WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, Color, Object[])</h4>
-  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxInput(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, Color InfoBoxColor, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">text</span></td>
-        <td><p>Text to be written.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperLeftCornerChar</span></td>
-        <td><p>Upper left corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerLeftCornerChar</span></td>
-        <td><p>Lower left corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperRightCornerChar</span></td>
-        <td><p>Upper right corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerRightCornerChar</span></td>
-        <td><p>Lower right corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperFrameChar</span></td>
-        <td><p>Upper frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerFrameChar</span></td>
-        <td><p>Lower frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LeftFrameChar</span></td>
-        <td><p>Left frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">RightFrameChar</span></td>
-        <td><p>Right frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Color</span></td>
-        <td><span class="parametername">InfoBoxColor</span></td>
-        <td><p>InfoBox color</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Object</span>[]</td>
-        <td><span class="parametername">vars</span></td>
-        <td><p>Variables to format the message before it's written.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_ConsoleColors_ConsoleColors_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,ConsoleColors,ConsoleColors,System.Object[])">WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, ConsoleColors, ConsoleColors, Object[])</h4>
-  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxInput(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, ConsoleColors InfoBoxColor, ConsoleColors BackgroundColor, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">text</span></td>
-        <td><p>Text to be written.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperLeftCornerChar</span></td>
-        <td><p>Upper left corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerLeftCornerChar</span></td>
-        <td><p>Lower left corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperRightCornerChar</span></td>
-        <td><p>Upper right corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerRightCornerChar</span></td>
-        <td><p>Lower right corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperFrameChar</span></td>
-        <td><p>Upper frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerFrameChar</span></td>
-        <td><p>Lower frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LeftFrameChar</span></td>
-        <td><p>Left frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">RightFrameChar</span></td>
-        <td><p>Right frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">ConsoleColors</span></td>
-        <td><span class="parametername">InfoBoxColor</span></td>
-        <td><p>InfoBox color</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">ConsoleColors</span></td>
-        <td><span class="parametername">BackgroundColor</span></td>
-        <td><p>InfoBox background color</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Object</span>[]</td>
-        <td><span class="parametername">vars</span></td>
-        <td><p>Variables to format the message before it's written.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_ConsoleColors_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,ConsoleColors,System.Object[])">WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, ConsoleColors, Object[])</h4>
-  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxInput(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, ConsoleColors InfoBoxColor, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">text</span></td>
-        <td><p>Text to be written.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperLeftCornerChar</span></td>
-        <td><p>Upper left corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerLeftCornerChar</span></td>
-        <td><p>Lower left corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperRightCornerChar</span></td>
-        <td><p>Upper right corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerRightCornerChar</span></td>
-        <td><p>Lower right corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperFrameChar</span></td>
-        <td><p>Upper frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerFrameChar</span></td>
-        <td><p>Lower frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LeftFrameChar</span></td>
-        <td><p>Left frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">RightFrameChar</span></td>
-        <td><p>Right frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">ConsoleColors</span></td>
-        <td><span class="parametername">InfoBoxColor</span></td>
-        <td><p>InfoBox color</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Object</span>[]</td>
-        <td><span class="parametername">vars</span></td>
-        <td><p>Variables to format the message before it's written.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, KernelColorType, KernelColorType, Object[])</h4>
-  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxInput(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, KernelColorType InfoBoxColor, KernelColorType BackgroundColor, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">text</span></td>
-        <td><p>Text to be written.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperLeftCornerChar</span></td>
-        <td><p>Upper left corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerLeftCornerChar</span></td>
-        <td><p>Lower left corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperRightCornerChar</span></td>
-        <td><p>Upper right corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerRightCornerChar</span></td>
-        <td><p>Lower right corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperFrameChar</span></td>
-        <td><p>Upper frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerFrameChar</span></td>
-        <td><p>Lower frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LeftFrameChar</span></td>
-        <td><p>Left frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">RightFrameChar</span></td>
-        <td><p>Right frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.ConsoleBase.Colors.KernelColorType.html">KernelColorType</a></td>
-        <td><span class="parametername">InfoBoxColor</span></td>
-        <td><p>InfoBox color from Nitrocid KS's <a class="xref" href="KS.ConsoleBase.Colors.KernelColorType.html">KernelColorType</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.ConsoleBase.Colors.KernelColorType.html">KernelColorType</a></td>
-        <td><span class="parametername">BackgroundColor</span></td>
-        <td><p>InfoBox background color from Nitrocid KS's <a class="xref" href="KS.ConsoleBase.Colors.KernelColorType.html">KernelColorType</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Object</span>[]</td>
-        <td><span class="parametername">vars</span></td>
-        <td><p>Variables to format the message before it's written.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_KS_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, KernelColorType, Object[])</h4>
-  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxInput(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, KernelColorType InfoBoxColor, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">text</span></td>
-        <td><p>Text to be written.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperLeftCornerChar</span></td>
-        <td><p>Upper left corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerLeftCornerChar</span></td>
-        <td><p>Lower left corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperRightCornerChar</span></td>
-        <td><p>Upper right corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerRightCornerChar</span></td>
-        <td><p>Lower right corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperFrameChar</span></td>
-        <td><p>Upper frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerFrameChar</span></td>
-        <td><p>Lower frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LeftFrameChar</span></td>
-        <td><p>Left frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">RightFrameChar</span></td>
-        <td><p>Right frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.ConsoleBase.Colors.KernelColorType.html">KernelColorType</a></td>
-        <td><span class="parametername">InfoBoxColor</span></td>
-        <td><p>InfoBox color from Nitrocid KS's <a class="xref" href="KS.ConsoleBase.Colors.KernelColorType.html">KernelColorType</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Object</span>[]</td>
-        <td><span class="parametername">vars</span></td>
-        <td><p>Variables to format the message before it's written.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object[])">WriteInfoBoxInput(String, String, String, String, String, String, String, String, String, Object[])</h4>
-  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxInput(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">text</span></td>
-        <td><p>Text to be written.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperLeftCornerChar</span></td>
-        <td><p>Upper left corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerLeftCornerChar</span></td>
-        <td><p>Lower left corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperRightCornerChar</span></td>
-        <td><p>Upper right corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerRightCornerChar</span></td>
-        <td><p>Lower right corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperFrameChar</span></td>
-        <td><p>Upper frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerFrameChar</span></td>
-        <td><p>Lower frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LeftFrameChar</span></td>
-        <td><p>Left frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">RightFrameChar</span></td>
         <td><p>Right frame character for info box</p>
 </td>
@@ -2159,21 +2257,6 @@
         <td><span class="parametername">vars</span></td>
         <td><p>Variables to format the message before it's written.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -2214,14 +2297,14 @@
   </table>
   
   
-  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxPlain_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlain*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxPlain_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlain(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object[])">WriteInfoBoxPlain(String, String, String, String, String, String, String, String, String, Object[])</h4>
+  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxPlainInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput*"></a>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxPlainInput_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput(System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])">WriteInfoBoxPlainInput(String, Char, Char, Char, Char, Char, Char, Char, Char, Object[])</h4>
   <div class="markdown level1 summary"><p>Writes the info box plainly</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteInfoBoxPlain(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxPlainInput(string text, char UpperLeftCornerChar, char LowerLeftCornerChar, char UpperRightCornerChar, char LowerRightCornerChar, char UpperFrameChar, char LowerFrameChar, char LeftFrameChar, char RightFrameChar, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2240,86 +2323,51 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperLeftCornerChar</span></td>
         <td><p>Upper left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerLeftCornerChar</span></td>
         <td><p>Lower left corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperRightCornerChar</span></td>
         <td><p>Upper right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerRightCornerChar</span></td>
         <td><p>Lower right corner character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">UpperFrameChar</span></td>
         <td><p>Upper frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LowerFrameChar</span></td>
         <td><p>Lower frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">LeftFrameChar</span></td>
         <td><p>Left frame character for info box</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">RightFrameChar</span></td>
         <td><p>Right frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Object</span>[]</td>
-        <td><span class="parametername">vars</span></td>
-        <td><p>Variables to format the message before it's written.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxPlainInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxPlainInput_System_String_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput(System.String,System.Object[])">WriteInfoBoxPlainInput(String, Object[])</h4>
-  <div class="markdown level1 summary"><p>Writes the info box plainly</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxPlainInput(string text, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">text</span></td>
-        <td><p>Text to be written.</p>
 </td>
       </tr>
       <tr>
@@ -2348,13 +2396,13 @@
   
   
   <a id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxPlainInput_" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput*"></a>
-  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxPlainInput_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object[])">WriteInfoBoxPlainInput(String, String, String, String, String, String, String, String, String, Object[])</h4>
+  <h4 id="KS_Misc_Writers_FancyWriters_InfoBoxColor_WriteInfoBoxPlainInput_System_String_System_Object___" data-uid="KS.Misc.Writers.FancyWriters.InfoBoxColor.WriteInfoBoxPlainInput(System.String,System.Object[])">WriteInfoBoxPlainInput(String, Object[])</h4>
   <div class="markdown level1 summary"><p>Writes the info box plainly</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxPlainInput(string text, string UpperLeftCornerChar, string LowerLeftCornerChar, string UpperRightCornerChar, string LowerRightCornerChar, string UpperFrameChar, string LowerFrameChar, string LeftFrameChar, string RightFrameChar, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string WriteInfoBoxPlainInput(string text, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2370,54 +2418,6 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">text</span></td>
         <td><p>Text to be written.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperLeftCornerChar</span></td>
-        <td><p>Upper left corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerLeftCornerChar</span></td>
-        <td><p>Lower left corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperRightCornerChar</span></td>
-        <td><p>Upper right corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerRightCornerChar</span></td>
-        <td><p>Lower right corner character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">UpperFrameChar</span></td>
-        <td><p>Upper frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LowerFrameChar</span></td>
-        <td><p>Lower frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">LeftFrameChar</span></td>
-        <td><p>Left frame character for info box</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">RightFrameChar</span></td>
-        <td><p>Right frame character for info box</p>
 </td>
       </tr>
       <tr>
