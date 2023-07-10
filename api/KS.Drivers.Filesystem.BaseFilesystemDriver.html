@@ -2322,6 +2322,57 @@
   </table>
   
   
+  <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_SearchFileForStringRegexpMatches_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.SearchFileForStringRegexpMatches*"></a>
+  <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_SearchFileForStringRegexpMatches_System_String_Regex_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.SearchFileForStringRegexpMatches(System.String,Regex)">SearchFileForStringRegexpMatches(String, Regex)</h4>
+  <div class="markdown level1 summary"><p>Searches a file for string using regexp</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;(string, MatchCollection)&gt; SearchFileForStringRegexpMatches(string FilePath, Regex StringLookup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">FilePath</span></td>
+        <td><p>File path</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Regex</span></td>
+        <td><span class="parametername">StringLookup</span></td>
+        <td><p>String to find</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">MatchCollection</span>&gt;&gt;</td>
+        <td><p>The list of match collections with their associated line of text</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="KS_Drivers_Filesystem_BaseFilesystemDriver_SortSelector_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.SortSelector*"></a>
   <h4 id="KS_Drivers_Filesystem_BaseFilesystemDriver_SortSelector_FileSystemInfo_System_Int32_" data-uid="KS.Drivers.Filesystem.BaseFilesystemDriver.SortSelector(FileSystemInfo,System.Int32)">SortSelector(FileSystemInfo, Int32)</h4>
   <div class="markdown level1 summary"><p>Helper for sorting filesystem entries</p>
