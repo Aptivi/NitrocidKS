@@ -1713,7 +1713,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.KernelExceptionType.html",
-          "hash": "FevFMGqWix2BFVsmLGbvZciUavxZkKLUL/670Eq/n7w="
+          "hash": "DJx3kMGoNQpYZIeWS2lOo1pgCeHypkSgsogn8Y0T1Xw="
         }
       },
       "is_incremental": false,
@@ -8513,6 +8513,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Settings.UserCustomSettingsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Settings.UserCustomSettingsManager.html",
+          "hash": "nV/7u5afde5UphG2zwozyDCI8MAPdcidHHqYH2NGhK8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Settings.html",
+          "hash": "+YXegvlKqwNQkcZ6hSuYLJrEUYSKx3kc/fxQIlkXAPE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Users.UserInfo.yml",
       "output": {
         ".html": {
@@ -8589,7 +8613,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Tc9tQ6xeeGkbOjGBR2cAlUKjV+/kd/4lWfBY0uBiSYA="
+          "hash": "5jgjSdNfQ76TSbyFODeXPYfGO21S2xQmfAT5Yvcm1wo="
         }
       },
       "is_incremental": false,
@@ -8662,7 +8686,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 714,
+          "total_file_count": 716,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
