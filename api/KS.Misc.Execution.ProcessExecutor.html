@@ -207,6 +207,138 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="KS_Misc_Execution_ProcessExecutor_ExecuteProcessToString_" data-uid="KS.Misc.Execution.ProcessExecutor.ExecuteProcessToString*"></a>
+  <h4 id="KS_Misc_Execution_ProcessExecutor_ExecuteProcessToString_System_String_System_String_System_Int32__System_Boolean_" data-uid="KS.Misc.Execution.ProcessExecutor.ExecuteProcessToString(System.String,System.String,System.Int32@,System.Boolean)">ExecuteProcessToString(String, String, ref Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Executes a file with specified arguments and puts the output to the string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ExecuteProcessToString(string File, string Args, ref int exitCode, bool includeStdErr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">File</span></td>
+        <td><p>Full path to file</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Args</span></td>
+        <td><p>Arguments, if any</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">exitCode</span></td>
+        <td><p>Application exit code. -1 if internal error occurred</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeStdErr</span></td>
+        <td><p>Include output printed to StdErr</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Output of a command from stdout</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Execution_ProcessExecutor_ExecuteProcessToString_" data-uid="KS.Misc.Execution.ProcessExecutor.ExecuteProcessToString*"></a>
+  <h4 id="KS_Misc_Execution_ProcessExecutor_ExecuteProcessToString_System_String_System_String_System_String_System_Int32__System_Boolean_" data-uid="KS.Misc.Execution.ProcessExecutor.ExecuteProcessToString(System.String,System.String,System.String,System.Int32@,System.Boolean)">ExecuteProcessToString(String, String, String, ref Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Executes a file with specified arguments and puts the output to the string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ExecuteProcessToString(string File, string Args, string WorkingDirectory, ref int exitCode, bool includeStdErr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">File</span></td>
+        <td><p>Full path to file</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Args</span></td>
+        <td><p>Arguments, if any</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">WorkingDirectory</span></td>
+        <td><p>Specifies the working directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">exitCode</span></td>
+        <td><p>Application exit code. -1 if internal error occurred</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeStdErr</span></td>
+        <td><p>Include output printed to StdErr</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Output of a command from stdout</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
