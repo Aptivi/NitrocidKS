@@ -1713,7 +1713,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.KernelExceptionType.html",
-          "hash": "DJx3kMGoNQpYZIeWS2lOo1pgCeHypkSgsogn8Y0T1Xw="
+          "hash": "eyPVwkwhX2As9bRwb38E/AAKvt8nuG9hJ0pM6Ll+3wE="
         }
       },
       "is_incremental": false,
@@ -5477,6 +5477,54 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Network.Base.Connections.NetworkConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Network.Base.Connections.NetworkConnection.html",
+          "hash": "kLXOGkKP0/xaa0v/+xCavtonpr9iout7Je987VllE+c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Network.Base.Connections.NetworkConnectionTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Network.Base.Connections.NetworkConnectionTools.html",
+          "hash": "YNGbhL4AP6o46t2jV3thws7B2IGVKCHagPw+aVwwIGs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Network.Base.Connections.NetworkConnectionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Network.Base.Connections.NetworkConnectionType.html",
+          "hash": "mk1NkZTN7CBsidnQajb3YbR1FiqfDfYzba9uJ8g+SPw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Network.Base.Connections.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Network.Base.Connections.html",
+          "hash": "lHkD6KZ9bG1/uuiDoli3Yhki/Z155vaqOQwBhMyZ6Fk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Network.Base.NetworkTools.yml",
       "output": {
         ".html": {
@@ -8637,7 +8685,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "00tmpOOsse5uJGNIo3mL+Vmsa8LPyYK7llb/PDYYx2g="
+          "hash": "zoHvujuge5mNmPGkAZSDtyTWnos5MxikA1XD0po/EMg="
         }
       },
       "is_incremental": false,
@@ -8710,7 +8758,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 718,
+          "total_file_count": 722,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
