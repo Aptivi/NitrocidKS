@@ -1214,6 +1214,11 @@
     "title": "Enum NotificationManager.NotifType | Nitrocid KS API - Aptivi",
     "keywords": "Enum NotificationManager.NotifType Notification type Namespace : KS.Misc.Notifications Assembly : Nitrocid.dll Syntax public enum NotifType : int Fields Name Description Normal Normal notification. Progress A notification with the progress bar. Use if you're going to notify the user while your mod is doing something."
   },
+  "api/KS.Misc.Presentation.Elements.ChoiceInputElement.html": {
+    "href": "api/KS.Misc.Presentation.Elements.ChoiceInputElement.html",
+    "title": "Class ChoiceInputElement | Nitrocid KS API - Aptivi",
+    "keywords": "Class ChoiceInputElement Choice input element Inheritance System.Object ChoiceInputElement Implements IElement Namespace : KS.Misc.Presentation.Elements Assembly : Nitrocid.dll Syntax public class ChoiceInputElement : object, IElement Properties Arguments The first argument denotes the prompt to be written, and the rest for the parameters to be formatted Declaration public object[] Arguments { get; set; } Property Value Type Description System.Object [] InvokeAction Invokes the action after rendering the element (normal) Declaration public Action InvokeAction { get; } Property Value Type Description Action InvokeActionInput Invokes the action after rendering the element (input) Declaration public Action<object[]> InvokeActionInput { get; set; } Property Value Type Description Action < System.Object []> IsInput Is the element an input? Declaration public bool IsInput { get; } Property Value Type Description System.Boolean WrittenInput Written input Declaration public string WrittenInput { get; set; } Property Value Type Description System.String Methods IsPossibleOutOfBounds() Checks to see if the text is possibly overflowing the slideshow display Declaration public bool IsPossibleOutOfBounds() Returns Type Description System.Boolean Render() Renders the element Declaration public void Render() Implements IElement"
+  },
   "api/KS.Misc.Presentation.Elements.DynamicTextElement.html": {
     "href": "api/KS.Misc.Presentation.Elements.DynamicTextElement.html",
     "title": "Class DynamicTextElement | Nitrocid KS API - Aptivi",
@@ -1222,7 +1227,7 @@
   "api/KS.Misc.Presentation.Elements.html": {
     "href": "api/KS.Misc.Presentation.Elements.html",
     "title": "Namespace KS.Misc.Presentation.Elements | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Misc.Presentation.Elements Classes DynamicTextElement Dynamic text element InputElement Input element MaskedInputElement Masked input element TextElement Text element Interfaces IElement A presentation element"
+    "keywords": "Namespace KS.Misc.Presentation.Elements Classes ChoiceInputElement Choice input element DynamicTextElement Dynamic text element InputElement Input element MaskedInputElement Masked input element MultipleChoiceInputElement Multiple choice input element TextElement Text element Interfaces IElement A presentation element"
   },
   "api/KS.Misc.Presentation.Elements.IElement.html": {
     "href": "api/KS.Misc.Presentation.Elements.IElement.html",
@@ -1238,6 +1243,11 @@
     "href": "api/KS.Misc.Presentation.Elements.MaskedInputElement.html",
     "title": "Class MaskedInputElement | Nitrocid KS API - Aptivi",
     "keywords": "Class MaskedInputElement Masked input element Inheritance System.Object MaskedInputElement Implements IElement Namespace : KS.Misc.Presentation.Elements Assembly : Nitrocid.dll Syntax public class MaskedInputElement : object, IElement Properties Arguments The first argument denotes the prompt to be written, and the rest for the parameters to be formatted Declaration public object[] Arguments { get; set; } Property Value Type Description System.Object [] InvokeAction Invokes the action after rendering the element (normal) Declaration public Action InvokeAction { get; } Property Value Type Description Action InvokeActionInput Invokes the action after rendering the element (input) Declaration public Action<object[]> InvokeActionInput { get; set; } Property Value Type Description Action < System.Object []> IsInput Is the element an input? Declaration public bool IsInput { get; } Property Value Type Description System.Boolean WrittenInput Written input Declaration public string WrittenInput { get; set; } Property Value Type Description System.String Methods IsPossibleOutOfBounds() Checks to see if the text is possibly overflowing the slideshow display Declaration public bool IsPossibleOutOfBounds() Returns Type Description System.Boolean Render() Renders the text Declaration public void Render() Implements IElement"
+  },
+  "api/KS.Misc.Presentation.Elements.MultipleChoiceInputElement.html": {
+    "href": "api/KS.Misc.Presentation.Elements.MultipleChoiceInputElement.html",
+    "title": "Class MultipleChoiceInputElement | Nitrocid KS API - Aptivi",
+    "keywords": "Class MultipleChoiceInputElement Multiple choice input element Inheritance System.Object MultipleChoiceInputElement Implements IElement Namespace : KS.Misc.Presentation.Elements Assembly : Nitrocid.dll Syntax public class MultipleChoiceInputElement : object, IElement Properties Arguments The first argument denotes the prompt to be written, and the rest for the parameters to be formatted Declaration public object[] Arguments { get; set; } Property Value Type Description System.Object [] InvokeAction Invokes the action after rendering the element (normal) Declaration public Action InvokeAction { get; } Property Value Type Description Action InvokeActionInput Invokes the action after rendering the element (input) Declaration public Action<object[]> InvokeActionInput { get; set; } Property Value Type Description Action < System.Object []> IsInput Is the element an input? Declaration public bool IsInput { get; } Property Value Type Description System.Boolean WrittenInput Written input Declaration public string WrittenInput { get; set; } Property Value Type Description System.String Methods IsPossibleOutOfBounds() Checks to see if the text is possibly overflowing the slideshow display Declaration public bool IsPossibleOutOfBounds() Returns Type Description System.Boolean Render() Renders the element Declaration public void Render() Implements IElement"
   },
   "api/KS.Misc.Presentation.Elements.TextElement.html": {
     "href": "api/KS.Misc.Presentation.Elements.TextElement.html",

@@ -2933,6 +2933,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Presentation.Elements.ChoiceInputElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Presentation.Elements.ChoiceInputElement.html",
+          "hash": "NEyIdHie7gj5LYzCxogsGl7avfdGxfFttsf1OLX1xbM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Presentation.Elements.DynamicTextElement.yml",
       "output": {
         ".html": {
@@ -2981,6 +2993,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Presentation.Elements.MultipleChoiceInputElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Presentation.Elements.MultipleChoiceInputElement.html",
+          "hash": "c/JvW7IoC3rYQ/SAawVbtksYZXXyJlWX/9/ngfvEG6Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Presentation.Elements.TextElement.yml",
       "output": {
         ".html": {
@@ -2997,7 +3021,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Presentation.Elements.html",
-          "hash": "4re2P/xugmwQVEqXX57b4UqMZaZZ0NFS+EdoPimtScc="
+          "hash": "FZVYI3bSHJQ6b0qJaGn8haFVBQqyPEvhrWaPPYodp1A="
         }
       },
       "is_incremental": false,
@@ -8613,7 +8637,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "5jgjSdNfQ76TSbyFODeXPYfGO21S2xQmfAT5Yvcm1wo="
+          "hash": "00tmpOOsse5uJGNIo3mL+Vmsa8LPyYK7llb/PDYYx2g="
         }
       },
       "is_incremental": false,
@@ -8686,7 +8710,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 716,
+          "total_file_count": 718,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
