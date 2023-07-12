@@ -7761,7 +7761,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html",
-          "hash": "nEXwfuS9HPnxN5ZUsEEv6965OUmHkI1X6jzaHZUm+ow="
+          "hash": "BqE0m0+RF//ybJl7XN2r2eA7+x/gu7HyzwopFLiKDWw="
         }
       },
       "is_incremental": false,
@@ -7817,18 +7817,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Commands.HelpUsage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Commands.HelpUsage.html",
-          "hash": "q1LYzCnLn63M6Bzrw5/irjsVlmNP/+rqck8KIYRosNM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.Commands.ICommand.yml",
       "output": {
         ".html": {
@@ -7853,6 +7841,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Commands.SwitchInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Commands.SwitchInfo.html",
+          "hash": "SCXTSBRi6p7/ZYDvvvd5TS23JGVPo5UA8ck438f2orM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.Commands.SwitchManager.yml",
       "output": {
         ".html": {
@@ -7869,7 +7869,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.html",
-          "hash": "E/DKPhgb46ZbNqksseiq1pKmTyyslUdfLkOgd1uj0yU="
+          "hash": "kAHmVsEunHze6rrIKZ5hITMwHKqSIV0S4noIsk1Oo+4="
         }
       },
       "is_incremental": false,
@@ -8685,7 +8685,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "zoHvujuge5mNmPGkAZSDtyTWnos5MxikA1XD0po/EMg="
+          "hash": "/yKaFbyZjkglGlbUu7oRktRGholBsFS3ArrM05yIJcs="
         }
       },
       "is_incremental": false,

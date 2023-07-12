@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class HelpUsage
+    <title>Class SwitchInfo
    | Nitrocid KS API - Aptivi </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class HelpUsage
+    <meta name="title" content="Class SwitchInfo
    | Nitrocid KS API - Aptivi ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -78,37 +78,37 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="KS.Shell.ShellBase.Commands.HelpUsage">
+            <article class="content wrap" id="_content" data-uid="KS.Shell.ShellBase.Commands.SwitchInfo">
   
   
-  <h1 id="KS_Shell_ShellBase_Commands_HelpUsage" data-uid="KS.Shell.ShellBase.Commands.HelpUsage" class="text-break">Class HelpUsage
+  <h1 id="KS_Shell_ShellBase_Commands_SwitchInfo" data-uid="KS.Shell.ShellBase.Commands.SwitchInfo" class="text-break">Class SwitchInfo
   </h1>
-  <div class="markdown level0 summary"><p>Command help usage class</p>
+  <div class="markdown level0 summary"><p>Information for command switches</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">HelpUsage</span></div>
+    <div class="level1"><span class="xref">SwitchInfo</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Shell.ShellBase.Commands.html">KS.Shell.ShellBase.Commands</a></h6>
   <h6><strong>Assembly</strong>: Nitrocid.dll</h6>
-  <h5 id="KS_Shell_ShellBase_Commands_HelpUsage_syntax">Syntax</h5>
+  <h5 id="KS_Shell_ShellBase_Commands_SwitchInfo_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class HelpUsage : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class SwitchInfo : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="KS_Shell_ShellBase_Commands_HelpUsage__ctor_" data-uid="KS.Shell.ShellBase.Commands.HelpUsage.#ctor*"></a>
-  <h4 id="KS_Shell_ShellBase_Commands_HelpUsage__ctor_System_String_" data-uid="KS.Shell.ShellBase.Commands.HelpUsage.#ctor(System.String)">HelpUsage(String)</h4>
-  <div class="markdown level1 summary"><p>Installs a new instance of the help usage class</p>
+  <a id="KS_Shell_ShellBase_Commands_SwitchInfo__ctor_" data-uid="KS.Shell.ShellBase.Commands.SwitchInfo.#ctor*"></a>
+  <h4 id="KS_Shell_ShellBase_Commands_SwitchInfo__ctor_System_String_System_String_System_Boolean_System_Boolean_" data-uid="KS.Shell.ShellBase.Commands.SwitchInfo.#ctor(System.String,System.String,System.Boolean,System.Boolean)">SwitchInfo(String, String, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Installs a new instance of switch info class</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HelpUsage(string Usage)</code></pre>
+    <pre><code class="lang-csharp hljs">public SwitchInfo(string Switch, string HelpDefinition, bool IsRequired = false, bool ArgumentsRequired = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -122,8 +122,26 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">Usage</span></td>
-        <td><p>Command usage</p>
+        <td><span class="parametername">Switch</span></td>
+        <td><p>Switch</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">HelpDefinition</span></td>
+        <td><p>Switch help definition</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">IsRequired</span></td>
+        <td><p>Is the switch required?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ArgumentsRequired</span></td>
+        <td><p>Whether the switch requires a value to be set</p>
 </td>
       </tr>
     </tbody>
@@ -132,14 +150,14 @@
   </h3>
   
   
-  <a id="KS_Shell_ShellBase_Commands_HelpUsage_Arguments_" data-uid="KS.Shell.ShellBase.Commands.HelpUsage.Arguments*"></a>
-  <h4 id="KS_Shell_ShellBase_Commands_HelpUsage_Arguments" data-uid="KS.Shell.ShellBase.Commands.HelpUsage.Arguments">Arguments</h4>
-  <div class="markdown level1 summary"><p>Command arguments</p>
+  <a id="KS_Shell_ShellBase_Commands_SwitchInfo_ArgumentsRequired_" data-uid="KS.Shell.ShellBase.Commands.SwitchInfo.ArgumentsRequired*"></a>
+  <h4 id="KS_Shell_ShellBase_Commands_SwitchInfo_ArgumentsRequired" data-uid="KS.Shell.ShellBase.Commands.SwitchInfo.ArgumentsRequired">ArgumentsRequired</h4>
+  <div class="markdown level1 summary"><p>Does the switch require arguments?</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string[] Arguments { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool ArgumentsRequired { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -151,21 +169,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="KS_Shell_ShellBase_Commands_HelpUsage_Switches_" data-uid="KS.Shell.ShellBase.Commands.HelpUsage.Switches*"></a>
-  <h4 id="KS_Shell_ShellBase_Commands_HelpUsage_Switches" data-uid="KS.Shell.ShellBase.Commands.HelpUsage.Switches">Switches</h4>
-  <div class="markdown level1 summary"><p>Command switches</p>
+  <a id="KS_Shell_ShellBase_Commands_SwitchInfo_HelpDefinition_" data-uid="KS.Shell.ShellBase.Commands.SwitchInfo.HelpDefinition*"></a>
+  <h4 id="KS_Shell_ShellBase_Commands_SwitchInfo_HelpDefinition" data-uid="KS.Shell.ShellBase.Commands.SwitchInfo.HelpDefinition">HelpDefinition</h4>
+  <div class="markdown level1 summary"><p>The untranslated help definition of this switch. Translated by <a class="xref" href="KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_GetTranslatedHelpEntry">GetTranslatedHelpEntry()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string[] Switches { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string HelpDefinition { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -177,23 +195,77 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="KS_Shell_ShellBase_Commands_HelpUsage_Usage_" data-uid="KS.Shell.ShellBase.Commands.HelpUsage.Usage*"></a>
-  <h4 id="KS_Shell_ShellBase_Commands_HelpUsage_Usage" data-uid="KS.Shell.ShellBase.Commands.HelpUsage.Usage">Usage</h4>
-  <div class="markdown level1 summary"><p>Command usage</p>
+  <a id="KS_Shell_ShellBase_Commands_SwitchInfo_IsRequired_" data-uid="KS.Shell.ShellBase.Commands.SwitchInfo.IsRequired*"></a>
+  <h4 id="KS_Shell_ShellBase_Commands_SwitchInfo_IsRequired" data-uid="KS.Shell.ShellBase.Commands.SwitchInfo.IsRequired">IsRequired</h4>
+  <div class="markdown level1 summary"><p>Is the switch required?</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Usage { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsRequired { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Shell_ShellBase_Commands_SwitchInfo_SwitchName_" data-uid="KS.Shell.ShellBase.Commands.SwitchInfo.SwitchName*"></a>
+  <h4 id="KS_Shell_ShellBase_Commands_SwitchInfo_SwitchName" data-uid="KS.Shell.ShellBase.Commands.SwitchInfo.SwitchName">SwitchName</h4>
+  <div class="markdown level1 summary"><p>The switch name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SwitchName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="KS_Shell_ShellBase_Commands_SwitchInfo_GetTranslatedHelpEntry_" data-uid="KS.Shell.ShellBase.Commands.SwitchInfo.GetTranslatedHelpEntry*"></a>
+  <h4 id="KS_Shell_ShellBase_Commands_SwitchInfo_GetTranslatedHelpEntry" data-uid="KS.Shell.ShellBase.Commands.SwitchInfo.GetTranslatedHelpEntry">GetTranslatedHelpEntry()</h4>
+  <div class="markdown level1 summary"><p>Gets the translated version of help entry (KS built-in switches only)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetTranslatedHelpEntry()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
