@@ -365,11 +365,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Console.ConsoleDriverTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Console.ConsoleDriverTools.html",
+          "hash": "D6Kk6COQRBsD3OmFSKp5ogZuG9CBsWqR6SjCSOoI4Xc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.Console.Consoles.BaseConsoleDriver.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html",
-          "hash": "A7iNfSJNJmN55qWkcNIl2yG+stjyJNOAvDGyxkpt6W0="
+          "hash": "fhGRsU4OtBkvh4QNYu4rePhs6FJ64iXcAS9/zVU41Y0="
         }
       },
       "is_incremental": false,
@@ -393,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Console.IConsoleDriver.html",
-          "hash": "O/2GI159QBSCw+qbWm/Y6LqTX9Q8n14tX2nmHkgO3XM="
+          "hash": "0ffSLTCfhlZE8+BcPWeKn92hTPn9kkGSbydlVQXCdIA="
         }
       },
       "is_incremental": false,
@@ -405,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Console.html",
-          "hash": "fM969kMICVVH1F9rj7h7pvoClTLPnK0k6XxLxVY/YCI="
+          "hash": "wBHYwho2V295hCOWuqBdGx/WR+vPn693R9wBwB7oQCE="
         }
       },
       "is_incremental": false,
@@ -417,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.DriverHandler.html",
-          "hash": "QK5Y9t6BEd20OsTlnKhpVJJzpFeyhID6rSfMe2lSJ3E="
+          "hash": "RP5I5SVrB5mdaiQBPvDM/Qb8VSrQqGXex/NOxoyTM4Y="
         }
       },
       "is_incremental": false,
@@ -449,11 +461,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encryption.EncryptionDriverTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encryption.EncryptionDriverTools.html",
+          "hash": "ciCblO8wtB/Fxm/HAGiWF/xkTSMoflLn3MinY3bAwXg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.html",
-          "hash": "xjc5M/OZ+7m8eeRR/6GvfGYW0jlB1pz68cqmpOK4CAs="
+          "hash": "arf9OrnVRI5qdRBpgYekwurtD29J2xJ5qIMa3LhjTmQ="
         }
       },
       "is_incremental": false,
@@ -465,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Encryption.Encryptors.CRC32.html",
-          "hash": "OK+4KYKn6/9ai0KJbCHJBLbiQ5OAghYlT9xOiLs09E4="
+          "hash": "OpSLDZ/fw97+QO34BX81KiEnu2wavzJOTskXiCMOoKQ="
         }
       },
       "is_incremental": false,
@@ -477,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Encryption.Encryptors.MD5.html",
-          "hash": "RlYfvlm+JiIPcyBedifWqJEpsH352OI7AJ6wUyXicGQ="
+          "hash": "S5ELdFVwO3nOuwFoeUgSQR+IQ0wWIR/6embIhm8Qob4="
         }
       },
       "is_incremental": false,
@@ -489,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Encryption.Encryptors.SHA1.html",
-          "hash": "ens0wxZY9SxxqSNLMuD4uHVgZakh/eGKG2F1FMYzn/A="
+          "hash": "m5t3Pe4AHU2QgZsnK+ZY5+hwP6H1ZQc/GJiPAjwJiCY="
         }
       },
       "is_incremental": false,
@@ -501,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Encryption.Encryptors.SHA256.html",
-          "hash": "K8FUWRdOqZH/3mD9do2lN8s5DszCj5EGJmub4rI7Iw8="
+          "hash": "iN2zXD3Rt6lI92Gl2gwkJ7MO+z1LLLeRVkrgosh6zDo="
         }
       },
       "is_incremental": false,
@@ -513,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Encryption.Encryptors.SHA384.html",
-          "hash": "3Kz9D1LiLf9x0qtiaFHKEMqAAtiOtqJ8rE2JMXCRqvY="
+          "hash": "sJmaeNWwgcLpGVZ06hpdbC674GveouxZeXscI4CrjhM="
         }
       },
       "is_incremental": false,
@@ -525,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Encryption.Encryptors.SHA512.html",
-          "hash": "MC/hTJxI/ZBrQj5yq4prr/sIgS1D2wRojvMOSqQnREA="
+          "hash": "Rnre0yyrmhOMpeRB6JgmLhuxhL58ZSwqc25kCOgWGZQ="
         }
       },
       "is_incremental": false,
@@ -561,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Encryption.IEncryptionDriver.html",
-          "hash": "xMWzl6EDkIpohLYs6q4Dw+35iKdHsd4qsZnOJ1Ii+XQ="
+          "hash": "vlOBQfYNyWGeHSC+tNGQjlOH4utxXtJ6G8KbgO3Lrwk="
         }
       },
       "is_incremental": false,
@@ -573,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Encryption.html",
-          "hash": "TIXvmooS4ADKkBxamejHH0Y176/b7LIDYVSjoNjwtHk="
+          "hash": "JF+5XvYbGm0RaVH5+hdR3PVaq2GmcWhiHlkWLnXR1M0="
         }
       },
       "is_incremental": false,
@@ -585,7 +609,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Filesystem.BaseFilesystemDriver.html",
-          "hash": "5BvSdQqA5LQLNWh3z/4bVvoRZQQszW12xs9MnvOMuWo="
+          "hash": "+FPMzMaiOGDxK2wrohNUqtoHuQ2hnSd/agkb/jLiYvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Filesystem.FilesystemDriverTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Filesystem.FilesystemDriverTools.html",
+          "hash": "0GHjOvNFHL2msRLrlHlMRd+sd1e+zISR4u6fjnzDzek="
         }
       },
       "is_incremental": false,
@@ -597,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Filesystem.IFilesystemDriver.html",
-          "hash": "zrWxx8vawTbhCPbeKlVFahQgzF3PisVzx2oiJm+6AvA="
+          "hash": "umz7XqedMyo1whhCarQ8UWhV+WNC+zfApviidYsqiP8="
         }
       },
       "is_incremental": false,
@@ -609,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Filesystem.html",
-          "hash": "XOSO+hgmpa/xBP2GkqxQ0vRCrTDoPZQUmaAmHNDN4PI="
+          "hash": "l4NSwpaF1CHrQxp/dlfeAH5rNPzMC+EvjIVSQY4TrCM="
         }
       },
       "is_incremental": false,
@@ -621,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.IDriver.html",
-          "hash": "VnHVfMBo7LNaZ/umeziC590nHWgK80zHEqieWk1TkCk="
+          "hash": "Rq5KySkWSfg5dYhDXJLjoKN8Hvfygl2C5qiMrKd/L7g="
         }
       },
       "is_incremental": false,
@@ -633,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Network.BaseNetworkDriver.html",
-          "hash": "DHbUVQi36SZVhVDIq9kTuu0RE0/HlbsX403clIeo53Y="
+          "hash": "klik+oXgJz9vhitA/nQoTAQZRz3+5a15MBLLsHAw0g4="
         }
       },
       "is_incremental": false,
@@ -645,7 +681,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Network.INetworkDriver.html",
-          "hash": "p6EoWgtgKji5x0wubclMLIfcvOCMzzIYZhFbQrFEwiA="
+          "hash": "pD7CYB4PQoqgP+NaOFHzN1GGbQ/ompFq0VpjHidDxXQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Network.NetworkDriverTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Network.NetworkDriverTools.html",
+          "hash": "rqQQSflXZdmzG/7dpLMKckfMKKkZeUGGGoycoGqj3d8="
         }
       },
       "is_incremental": false,
@@ -657,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Network.html",
-          "hash": "8Zux4mCWefmx+tKnp67CvEXsDKcCqB3ZIOEiypSbw8k="
+          "hash": "FZOx/vwLq+7fwpGwTQpDr0Hryfve8/OAKAwo79S8g+Y="
         }
       },
       "is_incremental": false,
@@ -669,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.RNG.BaseRandomDriver.html",
-          "hash": "rRA+KitIiQ7BaR+XbWobU2LOPp2D0yt2MOCueDCUfZk="
+          "hash": "CKNYYroihnUqEHItaZ8MKd+oeAdqs+PFaSe+eIgQknQ="
         }
       },
       "is_incremental": false,
@@ -681,7 +729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.RNG.IRandomDriver.html",
-          "hash": "EqCi5KMYIbpYxKEoNA9HolOQxI0+72MEp4oof0/ootg="
+          "hash": "Qxd5D8Bo8y9On4XyipdiSKkK13nfmtUohNyABoZ6//Y="
         }
       },
       "is_incremental": false,
@@ -701,11 +749,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.RNG.RandomDriverTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.RNG.RandomDriverTools.html",
+          "hash": "6l/G3aJN7DILxFSKELOaNcZcBgcDMs4YWIay72Ad8WY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.RNG.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.RNG.html",
-          "hash": "MKIPG2d7PkFT5M1ZH3+M4y87EwoMthCtGw4itE+IcXw="
+          "hash": "bzCpd5RRXJg05nLu5meLQuDTqKi1O2hYQEdwxZSKOaw="
         }
       },
       "is_incremental": false,
@@ -717,7 +777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Regexp.BaseRegexpDriver.html",
-          "hash": "w1hn8O58mW+AH8TgxtJJPk0C6o1z6bjJSfmHVICVyMk="
+          "hash": "QtjEj7Mvns1VrGQX6UonLwx3J0joIX9UiYoWAR5qo9Q="
         }
       },
       "is_incremental": false,
@@ -729,7 +789,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Regexp.IRegexpDriver.html",
-          "hash": "ObrJ1OC48OaK1V8QeC0rYlWSlLSCzL8m6TXKKvv9nlE="
+          "hash": "I9U9T3ZQvp+hwwtBRBIqq/wkbHcHROPJqa6BD3+pqss="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Regexp.RegexpDriverTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Regexp.RegexpDriverTools.html",
+          "hash": "SqTUK3vWAneR9m+TcYoKRDFeNP3yqLioS7w2OPLJlqE="
         }
       },
       "is_incremental": false,
@@ -741,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Regexp.html",
-          "hash": "aPornqK/zuMWZ4SQUsG2yNteYP72NSvcQVRXHBIfjAM="
+          "hash": "WoMmYq3iEeOZ4A9FNCOxtAUafyTogWuJnqQ3oZkAp8Y="
         }
       },
       "is_incremental": false,
@@ -1401,7 +1473,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Instances.KernelMainConfig.html",
-          "hash": "rrltyc4Mx/O8JMitrHZhQbAlPyAQvSGzmVQGPX8rztA="
+          "hash": "+jUdTpDRnVk8nBVwp5JKVKNWC+e1X9SmIhflETtOSsw="
         }
       },
       "is_incremental": false,
@@ -8685,7 +8757,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "/yKaFbyZjkglGlbUu7oRktRGholBsFS3ArrM05yIJcs="
+          "hash": "yrOb4XAeoMMA2ppl/NZyNHEopLV03VezsbxsWJ5p7fs="
         }
       },
       "is_incremental": false,
@@ -8758,7 +8830,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 722,
+          "total_file_count": 728,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

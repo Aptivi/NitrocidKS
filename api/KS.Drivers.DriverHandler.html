@@ -313,7 +313,206 @@
     <tbody>
       <tr>
         <td><span class="parametername">TResult</span></td>
-        <td></td>
+        <td><p>The required driver type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Drivers_DriverHandler_GetDriverName_" data-uid="KS.Drivers.DriverHandler.GetDriverName*"></a>
+  <h4 id="KS_Drivers_DriverHandler_GetDriverName__1_KS_Drivers_IDriver_" data-uid="KS.Drivers.DriverHandler.GetDriverName``1(KS.Drivers.IDriver)">GetDriverName&lt;TResult&gt;(IDriver)</h4>
+  <div class="markdown level1 summary"><p>Gets the driver name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDriverName&lt;TResult&gt;(IDriver driver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Drivers.IDriver.html">IDriver</a></td>
+        <td><span class="parametername">driver</span></td>
+        <td><p>Driver to query its name from the key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Driver name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The required driver type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Drivers_DriverHandler_GetDriverNames_" data-uid="KS.Drivers.DriverHandler.GetDriverNames*"></a>
+  <h4 id="KS_Drivers_DriverHandler_GetDriverNames__1" data-uid="KS.Drivers.DriverHandler.GetDriverNames``1">GetDriverNames&lt;TResult&gt;()</h4>
+  <div class="markdown level1 summary"><p>Gets the driver names</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetDriverNames&lt;TResult&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>List of driver names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The required driver type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Drivers_DriverHandler_GetDrivers_" data-uid="KS.Drivers.DriverHandler.GetDrivers*"></a>
+  <h4 id="KS_Drivers_DriverHandler_GetDrivers__1" data-uid="KS.Drivers.DriverHandler.GetDrivers``1">GetDrivers&lt;TResult&gt;()</h4>
+  <div class="markdown level1 summary"><p>Gets the drivers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, IDriver&gt; GetDrivers&lt;TResult&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Drivers.IDriver.html">IDriver</a>&gt;</td>
+        <td><p>List of drivers with their instances</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The required driver type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Drivers_DriverHandler_IsRegistered_" data-uid="KS.Drivers.DriverHandler.IsRegistered*"></a>
+  <h4 id="KS_Drivers_DriverHandler_IsRegistered_KS_Drivers_DriverTypes_KS_Drivers_IDriver_" data-uid="KS.Drivers.DriverHandler.IsRegistered(KS.Drivers.DriverTypes,KS.Drivers.IDriver)">IsRegistered(DriverTypes, IDriver)</h4>
+  <div class="markdown level1 summary"><p>Is the driver registered?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsRegistered(DriverTypes type, IDriver driver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Drivers.DriverTypes.html">DriverTypes</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Driver type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.Drivers.IDriver.html">IDriver</a></td>
+        <td><span class="parametername">driver</span></td>
+        <td><p>Driver to query its name from the key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if registered. Otherwise, false.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -428,6 +627,65 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void SetDriver&lt;T&gt;(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the available kernel driver to set to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Drivers_DriverHandler_SetDriverSafe_" data-uid="KS.Drivers.DriverHandler.SetDriverSafe*"></a>
+  <h4 id="KS_Drivers_DriverHandler_SetDriverSafe__1_System_String_" data-uid="KS.Drivers.DriverHandler.SetDriverSafe``1(System.String)">SetDriverSafe&lt;T&gt;(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the kernel driver</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDriverSafe&lt;T&gt;(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
