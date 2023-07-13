@@ -245,6 +245,41 @@
   
   
   <a id="KS_Network_SSH_SSH_OpenCommand_" data-uid="KS.Network.SSH.SSH.OpenCommand*"></a>
+  <h4 id="KS_Network_SSH_SSH_OpenCommand_KS_Network_Base_Connections_NetworkConnection_System_String_" data-uid="KS.Network.SSH.SSH.OpenCommand(KS.Network.Base.Connections.NetworkConnection,System.String)">OpenCommand(NetworkConnection, String)</h4>
+  <div class="markdown level1 summary"><p>Opens an SSH shell for a command</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenCommand(NetworkConnection sshConnection, string Command)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Network.Base.Connections.NetworkConnection.html">NetworkConnection</a></td>
+        <td><span class="parametername">sshConnection</span></td>
+        <td><p>SSH connection</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Command</span></td>
+        <td><p>Command to sent to remote system (usually a UNIX command)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_SSH_SSH_OpenCommand_" data-uid="KS.Network.SSH.SSH.OpenCommand*"></a>
   <h4 id="KS_Network_SSH_SSH_OpenCommand_SshClient_System_String_" data-uid="KS.Network.SSH.SSH.OpenCommand(SshClient,System.String)">OpenCommand(SshClient, String)</h4>
   <div class="markdown level1 summary"><p>Opens an SSH shell for a command</p>
 </div>
@@ -273,6 +308,35 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Command</span></td>
         <td><p>Command to sent to remote system (usually a UNIX command)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_SSH_SSH_OpenShell_" data-uid="KS.Network.SSH.SSH.OpenShell*"></a>
+  <h4 id="KS_Network_SSH_SSH_OpenShell_KS_Network_Base_Connections_NetworkConnection_" data-uid="KS.Network.SSH.SSH.OpenShell(KS.Network.Base.Connections.NetworkConnection)">OpenShell(NetworkConnection)</h4>
+  <div class="markdown level1 summary"><p>Opens an SSH shell</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenShell(NetworkConnection sshConnection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Network.Base.Connections.NetworkConnection.html">NetworkConnection</a></td>
+        <td><span class="parametername">sshConnection</span></td>
+        <td><p>SSH connection</p>
 </td>
       </tr>
     </tbody>
