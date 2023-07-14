@@ -2522,7 +2522,7 @@
   "api/KS.Network.SFTP.SFTPTools.html": {
     "href": "api/KS.Network.SFTP.SFTPTools.html",
     "title": "Class SFTPTools | Nitrocid KS API - Aptivi",
-    "keywords": "Class SFTPTools SFTP tools module Inheritance System.Object SFTPTools Namespace : KS.Network.SFTP Assembly : Nitrocid.dll Syntax public static class SFTPTools : object Methods SFTPQuickConnect() Opens speed dial prompt Declaration public static void SFTPQuickConnect() SFTPTryToConnect(String) Tries to connect to the FTP server Declaration public static void SFTPTryToConnect(string address) Parameters Type Name Description System.String address An FTP server. You may specify it like \"[address]\" or \"[address]:[port]\""
+    "keywords": "Class SFTPTools SFTP tools module Inheritance System.Object SFTPTools Namespace : KS.Network.SFTP Assembly : Nitrocid.dll Syntax public static class SFTPTools : object Methods SFTPQuickConnect() Opens speed dial prompt Declaration public static void SFTPQuickConnect() SFTPTryToConnect(String) Tries to connect to the FTP server Declaration public static NetworkConnection SFTPTryToConnect(string address) Parameters Type Name Description System.String address An FTP server. You may specify it like \"[address]\" or \"[address]:[port]\" Returns Type Description NetworkConnection"
   },
   "api/KS.Network.SFTP.Transfer.html": {
     "href": "api/KS.Network.SFTP.Transfer.html",
