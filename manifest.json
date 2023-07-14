@@ -5981,59 +5981,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.RSS.Instance.RSSArticle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.RSS.Instance.RSSArticle.html",
-          "hash": "P08VjS8qXc7wemf/16q7Pdy0Va8QoPgYk9X+zI9uAGk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.RSS.Instance.RSSFeed.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.RSS.Instance.RSSFeed.html",
-          "hash": "d/RxwuWDs+uoD/5dgcSEBjNxr0q7dbeyhvDtNwYJGl4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.RSS.Instance.RSSFeedType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.RSS.Instance.RSSFeedType.html",
-          "hash": "Jp0s1GtpFZrlj5GXerdp8PvHMxXa61cdyuDj2+OL6AI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.RSS.Instance.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.RSS.Instance.html",
-          "hash": "tOGm0DFciBzNCMpnXcj8fOHusVGxZCHX0U3ue5Kv/2k="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Network.RSS.RSSTools.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.RSS.RSSTools.html",
-          "hash": "wwrwH+EQDFgMVL0pGHYgpw8HJjUauM8ckFPcqTQ+2e8="
+          "hash": "iFcOx+q7fqMBRaGEZkhYgkUqj4bIM9eZp2b5/sl99Sk="
         }
       },
       "is_incremental": false,
@@ -8301,7 +8253,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.RSS.RSSShellCommon.html",
-          "hash": "2M3D7MGuv7lvaD2HIJk4FoFHF9Zy3L3xungQwt9t0wk="
+          "hash": "IIjtPdzxtCBZR6xQVQGkUqaxz/Oix7xBooJ1lnxhbyQ="
         }
       },
       "is_incremental": false,
@@ -8757,7 +8709,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "yrOb4XAeoMMA2ppl/NZyNHEopLV03VezsbxsWJ5p7fs="
+          "hash": "wSDwgCMuJNSaNtemiDa4+In8W2CL/XSaaAuTyOOSGBA="
         }
       },
       "is_incremental": false,
@@ -8830,7 +8782,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 728,
+          "total_file_count": 724,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
