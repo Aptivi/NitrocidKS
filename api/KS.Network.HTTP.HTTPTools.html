@@ -101,6 +101,41 @@
   </h3>
   
   
+  <a id="KS_Network_HTTP_HTTPTools_HttpAddHeader_" data-uid="KS.Network.HTTP.HTTPTools.HttpAddHeader*"></a>
+  <h4 id="KS_Network_HTTP_HTTPTools_HttpAddHeader_System_String_System_String_" data-uid="KS.Network.HTTP.HTTPTools.HttpAddHeader(System.String,System.String)">HttpAddHeader(String, String)</h4>
+  <div class="markdown level1 summary"><p>Adds a request header to the future requests</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void HttpAddHeader(string key, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to assign a value to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value to assign to this key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="KS_Network_HTTP_HTTPTools_HttpDelete_" data-uid="KS.Network.HTTP.HTTPTools.HttpDelete*"></a>
   <h4 id="KS_Network_HTTP_HTTPTools_HttpDelete_System_String_" data-uid="KS.Network.HTTP.HTTPTools.HttpDelete(System.String)">HttpDelete(String)</h4>
   <div class="markdown level1 summary"><p>Deletes the specified content from HTTP server</p>
@@ -140,6 +175,41 @@
       <tr>
         <td><span class="xref">Task</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_HTTP_HTTPTools_HttpEditHeader_" data-uid="KS.Network.HTTP.HTTPTools.HttpEditHeader*"></a>
+  <h4 id="KS_Network_HTTP_HTTPTools_HttpEditHeader_System_String_System_String_" data-uid="KS.Network.HTTP.HTTPTools.HttpEditHeader(System.String,System.String)">HttpEditHeader(String, String)</h4>
+  <div class="markdown level1 summary"><p>Modifies a request header key for the future requests</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void HttpEditHeader(string key, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to assign a value to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value to assign to this key</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -189,6 +259,34 @@
   </table>
   
   
+  <a id="KS_Network_HTTP_HTTPTools_HttpGetCurrentUserAgent_" data-uid="KS.Network.HTTP.HTTPTools.HttpGetCurrentUserAgent*"></a>
+  <h4 id="KS_Network_HTTP_HTTPTools_HttpGetCurrentUserAgent" data-uid="KS.Network.HTTP.HTTPTools.HttpGetCurrentUserAgent">HttpGetCurrentUserAgent()</h4>
+  <div class="markdown level1 summary"><p>Gets the current user agent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string HttpGetCurrentUserAgent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The current user agent. If there are two or more user agents set in the same header (by somehow adding the same
+key with different UA), returns the last user agent value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="KS_Network_HTTP_HTTPTools_HttpGetString_" data-uid="KS.Network.HTTP.HTTPTools.HttpGetString*"></a>
   <h4 id="KS_Network_HTTP_HTTPTools_HttpGetString_System_String_" data-uid="KS.Network.HTTP.HTTPTools.HttpGetString(System.String)">HttpGetString(String)</h4>
   <div class="markdown level1 summary"><p>Gets the specified content string from HTTP server</p>
@@ -228,6 +326,78 @@
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_HTTP_HTTPTools_HttpHeaderExists_" data-uid="KS.Network.HTTP.HTTPTools.HttpHeaderExists*"></a>
+  <h4 id="KS_Network_HTTP_HTTPTools_HttpHeaderExists_System_String_" data-uid="KS.Network.HTTP.HTTPTools.HttpHeaderExists(System.String)">HttpHeaderExists(String)</h4>
+  <div class="markdown level1 summary"><p>Checks to see if the specified key from the header exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HttpHeaderExists(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if found; false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_HTTP_HTTPTools_HttpListHeaders_" data-uid="KS.Network.HTTP.HTTPTools.HttpListHeaders*"></a>
+  <h4 id="KS_Network_HTTP_HTTPTools_HttpListHeaders" data-uid="KS.Network.HTTP.HTTPTools.HttpListHeaders">HttpListHeaders()</h4>
+  <div class="markdown level1 summary"><p>Makes a list of headers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (string, string)[] HttpListHeaders()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;[]</td>
+        <td><p>An array of tuples containing keys and values from the HTTP request headers</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -428,6 +598,64 @@
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">HttpResponseMessage</span>&gt;</td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_HTTP_HTTPTools_HttpRemoveHeader_" data-uid="KS.Network.HTTP.HTTPTools.HttpRemoveHeader*"></a>
+  <h4 id="KS_Network_HTTP_HTTPTools_HttpRemoveHeader_System_String_" data-uid="KS.Network.HTTP.HTTPTools.HttpRemoveHeader(System.String)">HttpRemoveHeader(String)</h4>
+  <div class="markdown level1 summary"><p>Adds a request header to the future requests</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void HttpRemoveHeader(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_HTTP_HTTPTools_HttpSetUserAgent_" data-uid="KS.Network.HTTP.HTTPTools.HttpSetUserAgent*"></a>
+  <h4 id="KS_Network_HTTP_HTTPTools_HttpSetUserAgent_System_String_" data-uid="KS.Network.HTTP.HTTPTools.HttpSetUserAgent(System.String)">HttpSetUserAgent(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the current user agent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void HttpSetUserAgent(string userAgent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userAgent</span></td>
+        <td><p>Target user agent</p>
+</td>
       </tr>
     </tbody>
   </table>
