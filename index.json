@@ -767,7 +767,7 @@
   "api/KS.Kernel.KernelTools.html": {
     "href": "api/KS.Kernel.KernelTools.html",
     "title": "Class KernelTools | Nitrocid KS API - Aptivi",
-    "keywords": "Class KernelTools Kernel tools module Inheritance System.Object KernelTools Namespace : KS.Kernel Assembly : Nitrocid.dll Syntax public static class KernelTools : object Fields KernelApiVersion Kernel API version Declaration public static readonly Version KernelApiVersion Field Value Type Description Version KernelVersion Kernel version Declaration public static readonly Version KernelVersion Field Value Type Description Version Properties BannerFigletFont Current banner figlet font Declaration public static string BannerFigletFont { get; } Property Value Type Description System.String"
+    "keywords": "Class KernelTools Kernel tools module Inheritance System.Object KernelTools Namespace : KS.Kernel Assembly : Nitrocid.dll Syntax public static class KernelTools : object Fields KernelApiVersion Kernel API version Declaration public static readonly Version KernelApiVersion Field Value Type Description Version KernelVersion Kernel version Declaration public static readonly Version KernelVersion Field Value Type Description Version"
   },
   "api/KS.Kernel.Power.html": {
     "href": "api/KS.Kernel.Power.html",
@@ -2242,7 +2242,7 @@
   "api/KS.Misc.Writers.MiscWriters.WelcomeMessage.html": {
     "href": "api/KS.Misc.Writers.MiscWriters.WelcomeMessage.html",
     "title": "Class WelcomeMessage | Nitrocid KS API - Aptivi",
-    "keywords": "Class WelcomeMessage Welcome message writer Inheritance System.Object WelcomeMessage Namespace : KS.Misc.Writers.MiscWriters Assembly : Nitrocid.dll Syntax public static class WelcomeMessage : object Properties CustomBanner The customized message banner to write. If none is specified, or if it only consists of whitespace, it uses the default message. Declaration public static string CustomBanner { get; } Property Value Type Description System.String Methods GetCustomBanner() Gets the custom banner actual text with placeholders parsed Declaration public static string GetCustomBanner() Returns Type Description System.String WriteLicense() Writes the license Declaration public static void WriteLicense() WriteMessage() Writes the welcoming message to the console (welcome to kernel) Declaration public static void WriteMessage()"
+    "keywords": "Class WelcomeMessage Welcome message writer Inheritance System.Object WelcomeMessage Namespace : KS.Misc.Writers.MiscWriters Assembly : Nitrocid.dll Syntax public static class WelcomeMessage : object Properties BannerFigletFont Current banner figlet font Declaration public static string BannerFigletFont { get; } Property Value Type Description System.String CustomBanner The customized message banner to write. If none is specified, or if it only consists of whitespace, it uses the default message. Declaration public static string CustomBanner { get; } Property Value Type Description System.String Methods GetCustomBanner() Gets the custom banner actual text with placeholders parsed Declaration public static string GetCustomBanner() Returns Type Description System.String WriteLicense() Writes the license Declaration public static void WriteLicense() WriteMessage() Writes the welcoming message to the console (welcome to kernel) Declaration public static void WriteMessage()"
   },
   "api/KS.Modifications.html": {
     "href": "api/KS.Modifications.html",
