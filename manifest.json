@@ -3293,35 +3293,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Reflection.StringManipulate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Reflection.StringManipulate.html",
-          "hash": "zHbzN9bPlgnNc9fQeaZONrIwsbxhi+AaQ21mUsrtzn4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Reflection.StringQuery.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Reflection.StringQuery.html",
-          "hash": "RE2uyASvGR3jknsHn8GFef8VGrx+nMuI3t5KcRvuzPA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Reflection.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Reflection.html",
-          "hash": "iMdfGB8FHA+UJtC+UbU+Y4UVN0pCGGEATOmTpocclkw="
+          "hash": "f5ULgfcHL8OhRFIEyZ5efzEimueRFleQ7tay6Ls5rQc="
         }
       },
       "is_incremental": false,
@@ -4941,7 +4917,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Text.TextTools.html",
-          "hash": "Q375uRxMtK8YP3RACWeW6epeQkyt9dnJ2xySakwqlQE="
+          "hash": "FIOphuKFN16vLAZZjl1cpdmJSI5b+Tl7J3BLjWvp3Zo="
         }
       },
       "is_incremental": false,
@@ -8829,7 +8805,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "vBIjEjPAaP5iTAFS8+b9DO2OCOhJrq4y/eEJFFkb8Z0="
+          "hash": "TgyT7gEwR3YwPbDX/e1XcFp9jTBYc27J9GiKRSq+Z7s="
         }
       },
       "is_incremental": false,
@@ -8902,7 +8878,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 734,
+          "total_file_count": 732,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
