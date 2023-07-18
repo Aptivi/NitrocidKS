@@ -1473,7 +1473,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Instances.KernelMainConfig.html",
-          "hash": "ntkorpNF8BySzSwQZbZdghmsxRAA1q92vscbGESxDMk="
+          "hash": "n/B+0Vpz8YFlkkCDxDvysLjfj9bXSoeAsV4kpcE0tzo="
         }
       },
       "is_incremental": false,
@@ -6737,6 +6737,102 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Debug.DebugDefaultPreset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Debug.DebugDefaultPreset.html",
+          "hash": "ZBtmJYBKp4rzzQFIBCWmmlwGGfsbam8jrGna1jJqkEs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Debug.DebugPowerLine1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Debug.DebugPowerLine1Preset.html",
+          "hash": "AWQrd1+UsIHD5U+4QMaJjp/OykFpUt5Is5nX7stKHbk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Debug.DebugPowerLine2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Debug.DebugPowerLine2Preset.html",
+          "hash": "kN/9jERbhhKYggkbInSn9I+taIiPS4vNNuMcApvlvno="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Debug.DebugPowerLine3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Debug.DebugPowerLine3Preset.html",
+          "hash": "0ofU71i7+fOl7jNrd1umvb8wVFtKZQda/Gb/u8ZNQ6g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Debug.DebugPowerLineBG1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Debug.DebugPowerLineBG1Preset.html",
+          "hash": "y+9A7Myu0eL3O+OzPR3XNuYjIH6qTKAKfZeQL9y5Zi0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Debug.DebugPowerLineBG2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Debug.DebugPowerLineBG2Preset.html",
+          "hash": "PumS/YUJWgikcWYBhrXlwH87EjrhTqrzqL+tmp1awGI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Debug.DebugPowerLineBG3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Debug.DebugPowerLineBG3Preset.html",
+          "hash": "AKcdgz37/H/cRDmGoK8T4YkC3TJ6c3cMrVsLIdh5cug="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Prompts.Presets.Debug.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Prompts.Presets.Debug.html",
+          "hash": "DVeVrgVhyL6kVa/6kSJ9SDwjdD59upQXiqPVW8K5peY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Prompts.Presets.FTP.FTPDefaultPreset.yml",
       "output": {
         ".html": {
@@ -7701,7 +7797,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Prompts.PromptPresetBase.html",
-          "hash": "pckRVfW37k8FuCEQOm959PFGQs04v/LRY3oxqU+Mdbg="
+          "hash": "b9jGkNRWHUGJh2MgBvD3pbgNMC4SgDX7+BpfRIqYcJ8="
         }
       },
       "is_incremental": false,
@@ -7905,7 +8001,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.BaseShell.html",
-          "hash": "Hb2ZY6k3UPru13pxdV3+hPubXcPq/kYSCUrXZ2hRsMs="
+          "hash": "3+98Wi6yPwCxZeupxltM8MQeUVhP8UCFkNYwsbZg5Dg="
         }
       },
       "is_incremental": false,
@@ -7977,7 +8073,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.ShellType.html",
-          "hash": "j+wE+5Je5OiLwd6+C4nsEFY1A7D91oyDOe/Ah7/JgQg="
+          "hash": "+21rZqa2Amg1JSnXCX1ZY+d0PCAdezX2D6RVX4YkidQ="
         }
       },
       "is_incremental": false,
@@ -8050,6 +8146,30 @@
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Archive.html",
           "hash": "FOkbVTY9Oj+p+bWFOD++3xga9CfUArrAQ+2EdVKajiI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Debug.DebugShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Debug.DebugShell.html",
+          "hash": "G+mBKU3lLovCIMNYlOm78DDH4Yp70YsZQEc22FGZViU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Debug.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Debug.html",
+          "hash": "1P2mO7YwFF1vRSjmRhrTuizSPhoCYUFlgJKg1Bgw+dQ="
         }
       },
       "is_incremental": false,
@@ -8709,7 +8829,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wSDwgCMuJNSaNtemiDa4+In8W2CL/XSaaAuTyOOSGBA="
+          "hash": "vBIjEjPAaP5iTAFS8+b9DO2OCOhJrq4y/eEJFFkb8Z0="
         }
       },
       "is_incremental": false,
@@ -8782,7 +8902,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 724,
+          "total_file_count": 734,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
