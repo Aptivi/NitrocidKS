@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class MatrixSettings
+    <title>Class SimpleMatrixDisplay
    | Nitrocid KS API - Aptivi </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class MatrixSettings
+    <meta name="title" content="Class SimpleMatrixDisplay
    | Nitrocid KS API - Aptivi ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -78,37 +78,51 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="KS.Misc.Screensaver.Displays.MatrixSettings">
+            <article class="content wrap" id="_content" data-uid="KS.Misc.Screensaver.Displays.SimpleMatrixDisplay">
   
   
-  <h1 id="KS_Misc_Screensaver_Displays_MatrixSettings" data-uid="KS.Misc.Screensaver.Displays.MatrixSettings" class="text-break">Class MatrixSettings
+  <h1 id="KS_Misc_Screensaver_Displays_SimpleMatrixDisplay" data-uid="KS.Misc.Screensaver.Displays.SimpleMatrixDisplay" class="text-break">Class SimpleMatrixDisplay
   </h1>
-  <div class="markdown level0 summary"><p>Settings for Matrix</p>
+  <div class="markdown level0 summary"><p>Display code for SimpleMatrix</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">MatrixSettings</span></div>
+    <div class="level1"><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html">BaseScreensaver</a></div>
+    <div class="level2"><span class="xref">SimpleMatrixDisplay</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverSettings">BaseScreensaver.ScreensaverSettings</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverOutro">BaseScreensaver.ScreensaverOutro()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="KS.Misc.Screensaver.Displays.html">KS.Misc.Screensaver.Displays</a></h6>
   <h6><strong>Assembly</strong>: Nitrocid.dll</h6>
-  <h5 id="KS_Misc_Screensaver_Displays_MatrixSettings_syntax">Syntax</h5>
+  <h5 id="KS_Misc_Screensaver_Displays_SimpleMatrixDisplay_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class MatrixSettings : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class SimpleMatrixDisplay : BaseScreensaver, IScreensaver</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   
   
-  <a id="KS_Misc_Screensaver_Displays_MatrixSettings_MatrixDelay_" data-uid="KS.Misc.Screensaver.Displays.MatrixSettings.MatrixDelay*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MatrixSettings_MatrixDelay" data-uid="KS.Misc.Screensaver.Displays.MatrixSettings.MatrixDelay">MatrixDelay</h4>
-  <div class="markdown level1 summary"><p>[Matrix] How many milliseconds to wait before making the next write?</p>
+  <a id="KS_Misc_Screensaver_Displays_SimpleMatrixDisplay_ScreensaverName_" data-uid="KS.Misc.Screensaver.Displays.SimpleMatrixDisplay.ScreensaverName*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_SimpleMatrixDisplay_ScreensaverName" data-uid="KS.Misc.Screensaver.Displays.SimpleMatrixDisplay.ScreensaverName">ScreensaverName</h4>
+  <div class="markdown level1 summary"><p>Screensaver name</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MatrixDelay { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string ScreensaverName { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -120,37 +134,45 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverName">BaseScreensaver.ScreensaverName</a></div>
+  <h3 id="methods">Methods
+  </h3>
   
   
-  <a id="KS_Misc_Screensaver_Displays_MatrixSettings_MatrixMaxSteps_" data-uid="KS.Misc.Screensaver.Displays.MatrixSettings.MatrixMaxSteps*"></a>
-  <h4 id="KS_Misc_Screensaver_Displays_MatrixSettings_MatrixMaxSteps" data-uid="KS.Misc.Screensaver.Displays.MatrixSettings.MatrixMaxSteps">MatrixMaxSteps</h4>
-  <div class="markdown level1 summary"><p>[Matrix] How many fade steps to do?</p>
+  <a id="KS_Misc_Screensaver_Displays_SimpleMatrixDisplay_ScreensaverLogic_" data-uid="KS.Misc.Screensaver.Displays.SimpleMatrixDisplay.ScreensaverLogic*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_SimpleMatrixDisplay_ScreensaverLogic" data-uid="KS.Misc.Screensaver.Displays.SimpleMatrixDisplay.ScreensaverLogic">ScreensaverLogic()</h4>
+  <div class="markdown level1 summary"><p>Screensaver logic</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MatrixMaxSteps { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override void ScreensaverLogic()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverLogic">BaseScreensaver.ScreensaverLogic()</a></div>
+  
+  
+  <a id="KS_Misc_Screensaver_Displays_SimpleMatrixDisplay_ScreensaverPreparation_" data-uid="KS.Misc.Screensaver.Displays.SimpleMatrixDisplay.ScreensaverPreparation*"></a>
+  <h4 id="KS_Misc_Screensaver_Displays_SimpleMatrixDisplay_ScreensaverPreparation" data-uid="KS.Misc.Screensaver.Displays.SimpleMatrixDisplay.ScreensaverPreparation">ScreensaverPreparation()</h4>
+  <div class="markdown level1 summary"><p>Screensaver preparation logic</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ScreensaverPreparation()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html#KS_Misc_Screensaver_BaseScreensaver_ScreensaverPreparation">BaseScreensaver.ScreensaverPreparation()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.Misc.Screensaver.IScreensaver.html">IScreensaver</a>
+  </div>
 </article>
           </div>
           
