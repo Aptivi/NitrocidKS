@@ -7889,6 +7889,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Commands.CommandExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Commands.CommandExecutor.html",
+          "hash": "Q6iqzNahDRIT5ooUM83HT4l0JljtlUO0Qj7QPzwQELA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.Commands.CommandFlags.yml",
       "output": {
         ".html": {
@@ -7989,7 +8001,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.html",
-          "hash": "kAHmVsEunHze6rrIKZ5hITMwHKqSIV0S4noIsk1Oo+4="
+          "hash": "7l0CzszsvfEqVFI7qIfuGe6mobcTkVKOy1TlK59q51Q="
         }
       },
       "is_incremental": false,
@@ -8829,7 +8841,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "+v0L12rrwVo8Tqu4jnf4/o0Cee3vHAUCKWEp6CudQbY="
+          "hash": "v4qB0ldU7KC9CWGK+dhvsajJqRU89lh0rJ3Od1Shl3Y="
         }
       },
       "is_incremental": false,
@@ -8902,7 +8914,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 734,
+          "total_file_count": 735,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
