@@ -1473,7 +1473,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Instances.KernelMainConfig.html",
-          "hash": "WwyVryFFRFUcrYn9qLVXEFeEo3H3nW/OjDTKs4oqIwU="
+          "hash": "SW+tzJJFF0bSyoeKvGG2Cu+WOSc1F+OgsXSmD+xqQFY="
         }
       },
       "is_incremental": false,
@@ -2921,6 +2921,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Interactive.InteractiveTuiColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Interactive.InteractiveTuiColors.html",
+          "hash": "QR0UwtO1xaWRzAiMgTFDaFdG7It/dFnaTcv8cuj4BQs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Interactive.InteractiveTuiTools.yml",
       "output": {
         ".html": {
@@ -2937,7 +2949,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Interactive.html",
-          "hash": "qm+eRGq9bBzYqzMcXL9WwIFsA6Pq2ZtM03cSmma3PLo="
+          "hash": "xrrlMYSQl4mBoPUgoojlG9IWUVkIFUWphLMiGj4pvts="
         }
       },
       "is_incremental": false,
@@ -8841,7 +8853,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "v4qB0ldU7KC9CWGK+dhvsajJqRU89lh0rJ3Od1Shl3Y="
+          "hash": "ztTc0dc/SSy25oqNvBWQwyZfWAlarjMyfAYGn/3rH/8="
         }
       },
       "is_incremental": false,
@@ -8914,7 +8926,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 735,
+          "total_file_count": 736,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
