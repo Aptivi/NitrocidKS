@@ -1385,42 +1385,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Administration.Journalling.JournalManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Administration.Journalling.JournalManager.html",
-          "hash": "1uaqJfgBbjz0ukxPf1wBqtEZ88t8clYS/wtPmHs650w="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Administration.Journalling.JournalStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Administration.Journalling.JournalStatus.html",
-          "hash": "2JMxSyYOLF1FvvbuA5y5vwTMqk2va0qta4UJuyHiWko="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Administration.Journalling.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Administration.Journalling.html",
-          "hash": "5knOqTpqRDprGI6GsWiZsOZHo242jH6U7zt/yK/uhgc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Configuration.Config.yml",
       "output": {
         ".html": {
@@ -1810,6 +1774,42 @@
         ".html": {
           "relative_path": "api/KS.Kernel.Flags.html",
           "hash": "aRpSBdsMib/vUMD3gUQevnCzjfub0UApAGTbc8VTyI4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Journaling.JournalManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Journaling.JournalManager.html",
+          "hash": "oK2QNjvp+ng6+2XUdgpsygY9nC+FPt1HFdytnPpH0T8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Journaling.JournalStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Journaling.JournalStatus.html",
+          "hash": "NF175rgBkFJlcjHKbZU7JBbvacnzTQCKnS+FSUIfY8c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Journaling.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Journaling.html",
+          "hash": "NXSM9k+LaiDda+z+f5eQchnOCtNcRHXW5q3W9AezSM0="
         }
       },
       "is_incremental": false,
@@ -8853,7 +8853,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ztTc0dc/SSy25oqNvBWQwyZfWAlarjMyfAYGn/3rH/8="
+          "hash": "vWhJnOMi20g2TD+ma1aUoYnhPJiBA3rihbpwTkzwKaY="
         }
       },
       "is_incremental": false,

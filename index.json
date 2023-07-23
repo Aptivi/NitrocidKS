@@ -569,21 +569,6 @@
     "title": "Namespace KS.Hardware | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Hardware Classes HardwareList Hardware list module HardwareProbe Hardware probe module"
   },
-  "api/KS.Kernel.Administration.Journalling.html": {
-    "href": "api/KS.Kernel.Administration.Journalling.html",
-    "title": "Namespace KS.Kernel.Administration.Journalling | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Kernel.Administration.Journalling Classes JournalManager Kernel journalling manager Enums JournalStatus Journalling status to write to the kernel journal"
-  },
-  "api/KS.Kernel.Administration.Journalling.JournalManager.html": {
-    "href": "api/KS.Kernel.Administration.Journalling.JournalManager.html",
-    "title": "Class JournalManager | Nitrocid KS API - Aptivi",
-    "keywords": "Class JournalManager Kernel journalling manager Inheritance System.Object JournalManager Namespace : KS.Kernel.Administration.Journalling Assembly : Nitrocid.dll Syntax public static class JournalManager : object Methods PrintJournalLog() Prints the current journal log Declaration public static void PrintJournalLog() WriteJournal(String, JournalStatus, Object[]) Writes a message to the journal Declaration public static void WriteJournal(string Message, JournalStatus Status, params object[] Vars) Parameters Type Name Description System.String Message Message to be written JournalStatus Status Journal status (Error, warning, ...) System.Object [] Vars Variables to format in message WriteJournal(String, Object[]) Writes a message to the journal Declaration public static void WriteJournal(string Message, params object[] Vars) Parameters Type Name Description System.String Message Message to be written System.Object [] Vars Variables to format in message"
-  },
-  "api/KS.Kernel.Administration.Journalling.JournalStatus.html": {
-    "href": "api/KS.Kernel.Administration.Journalling.JournalStatus.html",
-    "title": "Enum JournalStatus | Nitrocid KS API - Aptivi",
-    "keywords": "Enum JournalStatus Journalling status to write to the kernel journal Namespace : KS.Kernel.Administration.Journalling Assembly : Nitrocid.dll Syntax public enum JournalStatus : int Fields Name Description Error An error occurred Fatal A fatal error occurred Info Informational message Warning Warning message"
-  },
   "api/KS.Kernel.Configuration.Config.html": {
     "href": "api/KS.Kernel.Configuration.Config.html",
     "title": "Class Config | Nitrocid KS API - Aptivi",
@@ -753,6 +738,21 @@
     "href": "api/KS.Kernel.html",
     "title": "Namespace KS.Kernel | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Kernel Classes Flags Kernel flags module KernelPlatform Kernel platform query KernelTools Kernel tools module Enums KernelErrorLevel One-lettered kernel error level enumeration"
+  },
+  "api/KS.Kernel.Journaling.html": {
+    "href": "api/KS.Kernel.Journaling.html",
+    "title": "Namespace KS.Kernel.Journaling | Nitrocid KS API - Aptivi",
+    "keywords": "Namespace KS.Kernel.Journaling Classes JournalManager Kernel journalling manager Enums JournalStatus Journalling status to write to the kernel journal"
+  },
+  "api/KS.Kernel.Journaling.JournalManager.html": {
+    "href": "api/KS.Kernel.Journaling.JournalManager.html",
+    "title": "Class JournalManager | Nitrocid KS API - Aptivi",
+    "keywords": "Class JournalManager Kernel journalling manager Inheritance System.Object JournalManager Namespace : KS.Kernel.Journaling Assembly : Nitrocid.dll Syntax public static class JournalManager : object Methods PrintJournalLog() Prints the current journal log Declaration public static void PrintJournalLog() WriteJournal(String, JournalStatus, Object[]) Writes a message to the journal Declaration public static void WriteJournal(string Message, JournalStatus Status, params object[] Vars) Parameters Type Name Description System.String Message Message to be written JournalStatus Status Journal status (Error, warning, ...) System.Object [] Vars Variables to format in message WriteJournal(String, Object[]) Writes a message to the journal Declaration public static void WriteJournal(string Message, params object[] Vars) Parameters Type Name Description System.String Message Message to be written System.Object [] Vars Variables to format in message"
+  },
+  "api/KS.Kernel.Journaling.JournalStatus.html": {
+    "href": "api/KS.Kernel.Journaling.JournalStatus.html",
+    "title": "Enum JournalStatus | Nitrocid KS API - Aptivi",
+    "keywords": "Enum JournalStatus Journalling status to write to the kernel journal Namespace : KS.Kernel.Journaling Assembly : Nitrocid.dll Syntax public enum JournalStatus : int Fields Name Description Error An error occurred Fatal A fatal error occurred Info Informational message Warning Warning message"
   },
   "api/KS.Kernel.KernelErrorLevel.html": {
     "href": "api/KS.Kernel.KernelErrorLevel.html",
