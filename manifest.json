@@ -1437,7 +1437,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Instances.KernelMainConfig.html",
-          "hash": "SW+tzJJFF0bSyoeKvGG2Cu+WOSc1F+OgsXSmD+xqQFY="
+          "hash": "H12CBFqn04L/UZ7GoIjaU4NexgvB0FA1RFvJ9AAn5Kw="
         }
       },
       "is_incremental": false,
@@ -2837,6 +2837,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Games.ShipDuetShooter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Games.ShipDuetShooter.html",
+          "hash": "A+xbgDBXUpZxjqbUlnCER7/qhrteJbpZlAk9YSj8uf4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Games.Solver.yml",
       "output": {
         ".html": {
@@ -2877,7 +2889,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Games.html",
-          "hash": "nGIDXRawKU8lxv+LlbMGTNeXWhJKyWCZwaZ/TG2T3Uc="
+          "hash": "ey2hi72qPOBceboQp3Thh0MGdUn7eA4YCRvQ/3XQS2s="
         }
       },
       "is_incremental": false,
@@ -3321,7 +3333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.BaseScreensaver.html",
-          "hash": "MqaOrYU/VDE8IWPEfS3b1d39vEDuCFrzSE/8RXgSi64="
+          "hash": "VAZHSBhRIJ6R+ipuCDcNR8Pcwtz4zgwljUwIodY0Ox0="
         }
       },
       "is_incremental": false,
@@ -4505,6 +4517,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.ShipDuetDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.ShipDuetDisplay.html",
+          "hash": "IsZTWbFFfsIKe4SAXxPpfE+WYsX1k/Fl7s7wdkg+vsE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.Displays.SimpleMatrixDisplay.yml",
       "output": {
         ".html": {
@@ -4809,7 +4833,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.html",
-          "hash": "cfMREJtqPAqkRjDPWxxCMGLh/GwXAd4uZw2TiK7xVRE="
+          "hash": "/nQn+RljuFemXenFacwV1EebGHc9YaD3UdXsL5WoLX8="
         }
       },
       "is_incremental": false,
@@ -8877,7 +8901,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Q2BQhFACZnJwbs7iCVDp2b4j4IukehWKdURO/xMr7vo="
+          "hash": "pnrThLHUonJMfvz5J6LbidZkFm+tSH/PXnxXXPdKQQ4="
         }
       },
       "is_incremental": false,
@@ -8950,7 +8974,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 738,
+          "total_file_count": 740,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
