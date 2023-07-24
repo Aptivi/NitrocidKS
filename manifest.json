@@ -1749,7 +1749,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.KernelExceptionType.html",
-          "hash": "c32gijnaiSEYhD+wZ0l8JwRRtKhRZYHh7HuGq9B8q2g="
+          "hash": "Uqfotd2qbqQipqyO+y3zMTIXSXIkNxBUFN7PHWStDqY="
         }
       },
       "is_incremental": false,
@@ -1882,6 +1882,174 @@
         ".html": {
           "relative_path": "api/KS.Kernel.Power.html",
           "hash": "SArZUkkf8eA1MNaTxyCRZEuuL/9DAqaK5lId11Mn2nE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Converters.TimeDateConverters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Converters.TimeDateConverters.html",
+          "hash": "nwihSQ8YVfinH4wTXkhq/DHWklmwyWAT9CBe4xHs0Bc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Converters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Converters.html",
+          "hash": "Zm8LVcraBuEa4/YBx+d3FV6K6qX6Z/g7RHsIkkqyvrc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.FormatType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.FormatType.html",
+          "hash": "Fel9whgtAUDJVhbIGjxpZF6ffqPzM4e0IZlyT2A0Qn4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Renderers.TimeDateMiscRenderers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Renderers.TimeDateMiscRenderers.html",
+          "hash": "OKR7GGgvLPVfKtu7o+EVYzKI+aY/zJu7UxJFYQQhsGo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Renderers.TimeDateRenderConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Renderers.TimeDateRenderConstants.html",
+          "hash": "+g69z/Fo/6WcIl2TcGVJeprSw9r52jZqoZfIVSmZEuw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Renderers.TimeDateRenderers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Renderers.TimeDateRenderers.html",
+          "hash": "nXe8OKxb9z/I/l46Hdp3PFt9dAUk1AzN7Adr5eQDW+g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html",
+          "hash": "J2LnzKBbo+J31HDy0vVHY82e848sKiVSFCXB0Z28lEI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Renderers.TimeDateTopRight.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Renderers.TimeDateTopRight.html",
+          "hash": "FWLrkXsRFvcMxqOODzjHAHkJm6ElvU9Cx0T3uREEMwI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Renderers.TimeZoneRenderers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Renderers.TimeZoneRenderers.html",
+          "hash": "uXKFa+jz7a+98bW9t5Mjjncp5c8yBt7Ifx8lQLLve3s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Renderers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Renderers.html",
+          "hash": "KM8OpbwUNwP/BNAqe3pgAUZYxbQnSvIukOqE9cqZHO0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.TimeDateTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.TimeDateTools.html",
+          "hash": "ku2kESp52bSdkyjvDsmzK54HrSBY/eqn/HMBgST432E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Timezones.TimeZones.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Timezones.TimeZones.html",
+          "hash": "17pkbRLLSsHTM/Vsragt/qEC298eJmQsYZCbq0K7sB8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Timezones.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Timezones.html",
+          "hash": "A/GJs8PxpbgwITgiA/SrOUDYPA8KVrOFjYKXum7q53A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.html",
+          "hash": "mhUJYaKMQw1yttziq5SEjer64lDurQCpaSB+mxvQB3s="
         }
       },
       "is_incremental": false,
@@ -8609,102 +8777,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.TimeDate.TimeDateConverters.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TimeDate.TimeDateConverters.html",
-          "hash": "7h9bCLqR9QvhO8uQ5NT/8QGqAngFQPkbATv/LE0i5Qc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TimeDate.TimeDateRenderers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TimeDate.TimeDateRenderers.html",
-          "hash": "pz9TXgy+sW/8xB4+nRMaxPLev/Tut/4LwunfGwFikRA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TimeDate.TimeDateRenderersUtc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TimeDate.TimeDateRenderersUtc.html",
-          "hash": "LtHGmMYO26VufqEncEw0PsoUr+UwLdRu48lopVNlwJo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TimeDate.TimeDateTools.FormatType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TimeDate.TimeDateTools.FormatType.html",
-          "hash": "88SORVxXHx0vJBR/gTpBPWpRiqcvLgoqTdNnUll3yms="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TimeDate.TimeDateTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TimeDate.TimeDateTools.html",
-          "hash": "TlUcND0+nYH0n4KmRnF4EJ2kkuIxLw99+nSWHpBlMJo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TimeDate.TimeDateTopRight.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TimeDate.TimeDateTopRight.html",
-          "hash": "zSGa4mdgobRaf+mY8xANmAPWNs/MkPkuiEPZ8WU7yQU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TimeDate.TimeZones.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TimeDate.TimeZones.html",
-          "hash": "l/M1TVEAAZvYeLtAPjBpFl2qgwld3DYlbza7KiU/6gI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.TimeDate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.TimeDate.html",
-          "hash": "DC8JMEFZbcAfBp0tQcfP1J8DC0OrJsr6YrIyPDgRskw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Users.Groups.GroupManagement.yml",
       "output": {
         ".html": {
@@ -8901,7 +8973,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "pnrThLHUonJMfvz5J6LbidZkFm+tSH/PXnxXXPdKQQ4="
+          "hash": "s8OjojKKHX400/Q1my99XZ511yFb+YID0PrdIGVn3gw="
         }
       },
       "is_incremental": false,
@@ -8974,7 +9046,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 740,
+          "total_file_count": 746,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
