@@ -3501,7 +3501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.BaseScreensaver.html",
-          "hash": "VAZHSBhRIJ6R+ipuCDcNR8Pcwtz4zgwljUwIodY0Ox0="
+          "hash": "vA6n81aomCw959B0npTw3MHiEuEfoTVeJ2F984giHUU="
         }
       },
       "is_incremental": false,
@@ -4265,6 +4265,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.KSX2Display.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.KSX2Display.html",
+          "hash": "h/Zz8O5R7ys0Mxb1wgDCFZTq/str3vGdzDFNNPD3Nx0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.Displays.KSXDisplay.yml",
       "output": {
         ".html": {
@@ -5001,7 +5013,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.html",
-          "hash": "/nQn+RljuFemXenFacwV1EebGHc9YaD3UdXsL5WoLX8="
+          "hash": "U3Sp20n96GNUwTKwIitMngBZNuS0ae/Eo2x17mkQQA4="
         }
       },
       "is_incremental": false,
@@ -8973,7 +8985,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "s8OjojKKHX400/Q1my99XZ511yFb+YID0PrdIGVn3gw="
+          "hash": "hOT2fhB2UxC3ZBvjvNe3LnVXrg5ZtOeiMF77c9TOLDM="
         }
       },
       "is_incremental": false,
@@ -9046,7 +9058,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 746,
+          "total_file_count": 747,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
