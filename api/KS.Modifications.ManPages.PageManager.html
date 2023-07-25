@@ -102,13 +102,13 @@
   
   
   <a id="KS_Modifications_ManPages_PageManager_AddManualPage_" data-uid="KS.Modifications.ManPages.PageManager.AddManualPage*"></a>
-  <h4 id="KS_Modifications_ManPages_PageManager_AddManualPage_System_String_KS_Modifications_ManPages_Manual_" data-uid="KS.Modifications.ManPages.PageManager.AddManualPage(System.String,KS.Modifications.ManPages.Manual)">AddManualPage(String, Manual)</h4>
+  <h4 id="KS_Modifications_ManPages_PageManager_AddManualPage_System_String_System_String_KS_Modifications_ManPages_Manual_" data-uid="KS.Modifications.ManPages.PageManager.AddManualPage(System.String,System.String,KS.Modifications.ManPages.Manual)">AddManualPage(String, String, Manual)</h4>
   <div class="markdown level1 summary"><p>Adds a manual page to the pages list</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AddManualPage(string Name, Manual Page)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AddManualPage(string modName, string Name, Manual Page)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -120,6 +120,12 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">modName</span></td>
+        <td><p>Kernel modification name</p>
+</td>
+      </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Name</span></td>
@@ -143,7 +149,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, Manual&gt; ListAllPages()</code></pre>
+    <pre><code class="lang-csharp hljs">public static List&lt;Manual&gt; ListAllPages()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -155,7 +161,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Modifications.ManPages.Manual.html">Manual</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="KS.Modifications.ManPages.Manual.html">Manual</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -169,7 +175,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, Manual&gt; ListAllPages(string SearchTerm)</code></pre>
+    <pre><code class="lang-csharp hljs">public static List&lt;Manual&gt; ListAllPages(string SearchTerm)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -199,21 +205,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Modifications.ManPages.Manual.html">Manual</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="KS.Modifications.ManPages.Manual.html">Manual</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="KS_Modifications_ManPages_PageManager_RemoveManualPage_" data-uid="KS.Modifications.ManPages.PageManager.RemoveManualPage*"></a>
-  <h4 id="KS_Modifications_ManPages_PageManager_RemoveManualPage_System_String_" data-uid="KS.Modifications.ManPages.PageManager.RemoveManualPage(System.String)">RemoveManualPage(String)</h4>
-  <div class="markdown level1 summary"><p>Removes a manual page from the list</p>
+  <a id="KS_Modifications_ManPages_PageManager_ListAllPagesByMod_" data-uid="KS.Modifications.ManPages.PageManager.ListAllPagesByMod*"></a>
+  <h4 id="KS_Modifications_ManPages_PageManager_ListAllPagesByMod_System_String_" data-uid="KS.Modifications.ManPages.PageManager.ListAllPagesByMod(System.String)">ListAllPagesByMod(String)</h4>
+  <div class="markdown level1 summary"><p>Lists all manual pages by mod</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RemoveManualPage(string Name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static List&lt;Manual&gt; ListAllPagesByMod(string modName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -227,6 +233,50 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">modName</span></td>
+        <td><p>Kernel modification name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="KS.Modifications.ManPages.Manual.html">Manual</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Modifications_ManPages_PageManager_RemoveManualPage_" data-uid="KS.Modifications.ManPages.PageManager.RemoveManualPage*"></a>
+  <h4 id="KS_Modifications_ManPages_PageManager_RemoveManualPage_KS_Modifications_ManPages_Manual_" data-uid="KS.Modifications.ManPages.PageManager.RemoveManualPage(KS.Modifications.ManPages.Manual)">RemoveManualPage(Manual)</h4>
+  <div class="markdown level1 summary"><p>Removes a manual page from the list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RemoveManualPage(Manual Name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Modifications.ManPages.Manual.html">Manual</a></td>
         <td><span class="parametername">Name</span></td>
         <td><p>Manual page name</p>
 </td>
