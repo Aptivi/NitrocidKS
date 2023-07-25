@@ -390,6 +390,80 @@
   
   
   <a id="KS_ConsoleBase_Inputs_Styles_ChoiceStyle_PromptChoice_" data-uid="KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice*"></a>
+  <h4 id="KS_ConsoleBase_Inputs_Styles_ChoiceStyle_PromptChoice_System_String_System_String_System_String___System_String_KS_ConsoleBase_Inputs_Styles_ChoiceOutputType_System_Boolean_" data-uid="KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(System.String,System.String,System.String[],System.String,KS.ConsoleBase.Inputs.Styles.ChoiceOutputType,System.Boolean)">PromptChoice(String, String, String[], String, ChoiceOutputType, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Prompts user for choice</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PromptChoice(string Question, string AnswersStr, string[] AnswersTitles, string AlternateAnswersStr, ChoiceOutputType OutputType = ChoiceOutputType.OneLine, bool PressEnter = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Question</span></td>
+        <td><p>A question</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AnswersStr</span></td>
+        <td><p>Set of answers. They can be written like this: Y/N/C.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">AnswersTitles</span></td>
+        <td><p>Working titles for each answer. It must be the same amount as the answers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AlternateAnswersStr</span></td>
+        <td><p>Set of alternate answers. They can be written like this: Y/N/C.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.ConsoleBase.Inputs.Styles.ChoiceOutputType.html">ChoiceOutputType</a></td>
+        <td><span class="parametername">OutputType</span></td>
+        <td><p>Output type of choices</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">PressEnter</span></td>
+        <td><p>When enabled, allows the input to consist of multiple characters</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_ConsoleBase_Inputs_Styles_ChoiceStyle_PromptChoice_" data-uid="KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice*"></a>
   <h4 id="KS_ConsoleBase_Inputs_Styles_ChoiceStyle_PromptChoice_System_String_System_String_System_String___System_String_System_String___KS_ConsoleBase_Inputs_Styles_ChoiceOutputType_System_Boolean_" data-uid="KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(System.String,System.String,System.String[],System.String,System.String[],KS.ConsoleBase.Inputs.Styles.ChoiceOutputType,System.Boolean)">PromptChoice(String, String, String[], String, String[], ChoiceOutputType, Boolean)</h4>
   <div class="markdown level1 summary"><p>Prompts user for choice</p>
 </div>
@@ -430,6 +504,290 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">AlternateAnswersStr</span></td>
         <td><p>Set of alternate answers. They can be written like this: Y/N/C.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">AlternateAnswersTitles</span></td>
+        <td><p>Working titles for each alternate answer. It must be the same amount as the alternate answers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.ConsoleBase.Inputs.Styles.ChoiceOutputType.html">ChoiceOutputType</a></td>
+        <td><span class="parametername">OutputType</span></td>
+        <td><p>Output type of choices</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">PressEnter</span></td>
+        <td><p>When enabled, allows the input to consist of multiple characters</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_ConsoleBase_Inputs_Styles_ChoiceStyle_PromptChoice_" data-uid="KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice*"></a>
+  <h4 id="KS_ConsoleBase_Inputs_Styles_ChoiceStyle_PromptChoice_System_String_System_String___KS_ConsoleBase_Inputs_Styles_ChoiceOutputType_System_Boolean_" data-uid="KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(System.String,System.String[],KS.ConsoleBase.Inputs.Styles.ChoiceOutputType,System.Boolean)">PromptChoice(String, String[], ChoiceOutputType, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Prompts user for choice</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PromptChoice(string Question, string[] Answers, ChoiceOutputType OutputType = ChoiceOutputType.OneLine, bool PressEnter = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Question</span></td>
+        <td><p>A question</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">Answers</span></td>
+        <td><p>Set of answers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.ConsoleBase.Inputs.Styles.ChoiceOutputType.html">ChoiceOutputType</a></td>
+        <td><span class="parametername">OutputType</span></td>
+        <td><p>Output type of choices</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">PressEnter</span></td>
+        <td><p>When enabled, allows the input to consist of multiple characters</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_ConsoleBase_Inputs_Styles_ChoiceStyle_PromptChoice_" data-uid="KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice*"></a>
+  <h4 id="KS_ConsoleBase_Inputs_Styles_ChoiceStyle_PromptChoice_System_String_System_String___System_String___KS_ConsoleBase_Inputs_Styles_ChoiceOutputType_System_Boolean_" data-uid="KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(System.String,System.String[],System.String[],KS.ConsoleBase.Inputs.Styles.ChoiceOutputType,System.Boolean)">PromptChoice(String, String[], String[], ChoiceOutputType, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Prompts user for choice</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PromptChoice(string Question, string[] Answers, string[] AnswersTitles, ChoiceOutputType OutputType = ChoiceOutputType.OneLine, bool PressEnter = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Question</span></td>
+        <td><p>A question</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">Answers</span></td>
+        <td><p>Set of answers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">AnswersTitles</span></td>
+        <td><p>Working titles for each answer. It must be the same amount as the answers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.ConsoleBase.Inputs.Styles.ChoiceOutputType.html">ChoiceOutputType</a></td>
+        <td><span class="parametername">OutputType</span></td>
+        <td><p>Output type of choices</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">PressEnter</span></td>
+        <td><p>When enabled, allows the input to consist of multiple characters</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_ConsoleBase_Inputs_Styles_ChoiceStyle_PromptChoice_" data-uid="KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice*"></a>
+  <h4 id="KS_ConsoleBase_Inputs_Styles_ChoiceStyle_PromptChoice_System_String_System_String___System_String___System_String___KS_ConsoleBase_Inputs_Styles_ChoiceOutputType_System_Boolean_" data-uid="KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(System.String,System.String[],System.String[],System.String[],KS.ConsoleBase.Inputs.Styles.ChoiceOutputType,System.Boolean)">PromptChoice(String, String[], String[], String[], ChoiceOutputType, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Prompts user for choice</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PromptChoice(string Question, string[] Answers, string[] AnswersTitles, string[] AlternateAnswers, ChoiceOutputType OutputType = ChoiceOutputType.OneLine, bool PressEnter = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Question</span></td>
+        <td><p>A question</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">Answers</span></td>
+        <td><p>Set of answers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">AnswersTitles</span></td>
+        <td><p>Working titles for each answer. It must be the same amount as the answers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">AlternateAnswers</span></td>
+        <td><p>Set of alternate answers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.ConsoleBase.Inputs.Styles.ChoiceOutputType.html">ChoiceOutputType</a></td>
+        <td><span class="parametername">OutputType</span></td>
+        <td><p>Output type of choices</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">PressEnter</span></td>
+        <td><p>When enabled, allows the input to consist of multiple characters</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_ConsoleBase_Inputs_Styles_ChoiceStyle_PromptChoice_" data-uid="KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice*"></a>
+  <h4 id="KS_ConsoleBase_Inputs_Styles_ChoiceStyle_PromptChoice_System_String_System_String___System_String___System_String___System_String___KS_ConsoleBase_Inputs_Styles_ChoiceOutputType_System_Boolean_" data-uid="KS.ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(System.String,System.String[],System.String[],System.String[],System.String[],KS.ConsoleBase.Inputs.Styles.ChoiceOutputType,System.Boolean)">PromptChoice(String, String[], String[], String[], String[], ChoiceOutputType, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Prompts user for choice</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PromptChoice(string Question, string[] Answers, string[] AnswersTitles, string[] AlternateAnswers, string[] AlternateAnswersTitles, ChoiceOutputType OutputType = ChoiceOutputType.OneLine, bool PressEnter = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Question</span></td>
+        <td><p>A question</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">Answers</span></td>
+        <td><p>Set of answers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">AnswersTitles</span></td>
+        <td><p>Working titles for each answer. It must be the same amount as the answers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">AlternateAnswers</span></td>
+        <td><p>Set of alternate answers.</p>
 </td>
       </tr>
       <tr>
