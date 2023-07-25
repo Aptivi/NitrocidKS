@@ -101,11 +101,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Colors.ColorSetErrorReasons.yml",
+      "source_relative_path": "api/KS.ConsoleBase.Colors.KernelColorSetErrorReasons.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.ConsoleBase.Colors.ColorSetErrorReasons.html",
-          "hash": "IdythnkmB59ScQdxM49ddRYQ8KkGkKxow1kjZbhPMT8="
+          "relative_path": "api/KS.ConsoleBase.Colors.KernelColorSetErrorReasons.html",
+          "hash": "zrHyabs+gVdWyrYj0bkvKy4CTD5kUPKWGzKiKpsAv/Y="
         }
       },
       "is_incremental": false,
@@ -113,11 +113,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Colors.ColorTools.yml",
+      "source_relative_path": "api/KS.ConsoleBase.Colors.KernelColorTools.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.ConsoleBase.Colors.ColorTools.html",
-          "hash": "RNvzQ6fT6KWaiGTdKj3N5h5BB6zP4YyKxWFCG3qyWqg="
+          "relative_path": "api/KS.ConsoleBase.Colors.KernelColorTools.html",
+          "hash": "RNE5tNtqO8h3kVltz9eo0SyLg86IQvhKwH0ZlaK8VAE="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.Colors.html",
-          "hash": "R2ixN4bdhcDWWywpswl+2/7AdmJQommgNc5p0B1+AkQ="
+          "hash": "WMm0XCA3ojdCfCJe8pKO18aUp12Pu59eEd7MEPj5iTc="
         }
       },
       "is_incremental": false,
@@ -9021,7 +9021,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "sH4oJyMzI/2CerYR71DPYurSYWc0Y16fSUYenf0tv6M="
+          "hash": "Hv6uFpDT6O/QEOoQ7KaUlDjnzYV0+Wt+Cwds1l7imWs="
         }
       },
       "is_incremental": false,
