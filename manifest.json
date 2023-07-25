@@ -8105,18 +8105,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shell.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shell.html",
-          "hash": "llogMNREoOdCiN9NOGWSi/4Yqxlypc8gnrilvNHDKiw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.Aliases.AliasManager.yml",
       "output": {
         ".html": {
@@ -8386,6 +8374,18 @@
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.html",
           "hash": "boJ9c9liVenpfwBQiYSVqcdmsY0JzBRItQX9QH0iIxY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellManager.html",
+          "hash": "C9IaJXazsS3dpzrg4PGjvEo0BQMrS1iOERT1KovLZSQ="
         }
       },
       "is_incremental": false,
@@ -8817,7 +8817,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.html",
-          "hash": "gJBl75x6YHMYlI4X3zAJiJwofeZ05kgEKm5jfda55Fw="
+          "hash": "+pFTzR3VkxsuVCPqNUFGHF/36Q/qRzggp9OVmkqtyDg="
         }
       },
       "is_incremental": false,
@@ -9021,7 +9021,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "GM3Otq2kN+hEcPJAZJKHnDdt2GmE5KNKriNdikRne0Q="
+          "hash": "sH4oJyMzI/2CerYR71DPYurSYWc0Y16fSUYenf0tv6M="
         }
       },
       "is_incremental": false,
