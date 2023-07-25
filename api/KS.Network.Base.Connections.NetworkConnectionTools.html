@@ -571,6 +571,88 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell*"></a>
+  <h4 id="KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_KS_Shell_ShellBase_Shells_ShellType_Func_System_String_KS_Network_Base_Connections_NetworkConnection__System_String_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(KS.Shell.ShellBase.Shells.ShellType,Func{System.String,KS.Network.Base.Connections.NetworkConnection},System.String)">OpenConnectionForShell(ShellType, Func&lt;String, NetworkConnection&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Opens a connection for the selected shell</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenConnectionForShell(ShellType shellType, Func&lt;string, NetworkConnection&gt; establisher, string address = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Shell.ShellBase.Shells.ShellType.html">ShellType</a></td>
+        <td><span class="parametername">shellType</span></td>
+        <td><p>Any shell type that has its <a class="xref" href="KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_AcceptsNetworkConnection">AcceptsNetworkConnection</a> flag set to true.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Network.Base.Connections.NetworkConnection.html">NetworkConnection</a>&gt;</td>
+        <td><span class="parametername">establisher</span></td>
+        <td><p>The function responsible for establishing the network connection</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>Target address to connect to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell*"></a>
+  <h4 id="KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_System_String_Func_System_String_KS_Network_Base_Connections_NetworkConnection__System_String_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(System.String,Func{System.String,KS.Network.Base.Connections.NetworkConnection},System.String)">OpenConnectionForShell(String, Func&lt;String, NetworkConnection&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Opens a connection for the selected shell</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenConnectionForShell(string shellType, Func&lt;string, NetworkConnection&gt; establisher, string address = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">shellType</span></td>
+        <td><p>Any shell type that has its <a class="xref" href="KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_AcceptsNetworkConnection">AcceptsNetworkConnection</a> flag set to true.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="KS.Network.Base.Connections.NetworkConnection.html">NetworkConnection</a>&gt;</td>
+        <td><span class="parametername">establisher</span></td>
+        <td><p>The function responsible for establishing the network connection</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>Target address to connect to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
