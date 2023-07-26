@@ -1809,7 +1809,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html",
-          "hash": "EWDYI7i6TMv/bQrWT2DZYJmMqx7ykFJQLaxhlZHk6m0="
+          "hash": "srB6FaluniWwmFsmAKzYM+TH2DGPHLliAy/FvrpCf5s="
         }
       },
       "is_incremental": false,
@@ -3909,7 +3909,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.BaseScreensaver.html",
-          "hash": "ZdvOrDZ5ZpdKt/Xgqtb0syBvVzrLx+NbvtjNeXDXkro="
+          "hash": "Q4sA4Ff3TMVfXYIcpGE33DVCZrWjlxYDgUO2IBnyJlo="
         }
       },
       "is_incremental": false,
@@ -5441,11 +5441,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.WordHasherDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.WordHasherDisplay.html",
+          "hash": "tQP4r1gvRoAaknM35wec3itdhtfu05iUaeAERxQcgIQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.WordHasherSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.WordHasherSettings.html",
+          "hash": "NcCSXuP6Z93hEYrVabPL2IDnoMs2aFox2BQ/XsQmLm0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.Displays.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.html",
-          "hash": "AgB6g7mO/i/scmG1jF20F28St18cg702L3tbmfc/KJU="
+          "hash": "E7CTDLZSHE3I9pEH1erihT/DPH0bq4+cAqoC8wpCRsk="
         }
       },
       "is_incremental": false,
@@ -9021,7 +9045,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "fh8PexxXRSlwYcsaQFjSoPMvbIjLuQXunqTYetICIek="
+          "hash": "8d3o+w5GaOoD3gWShjvQOrmdQ+LWd1/c19sVmspE5s8="
         }
       },
       "is_incremental": false,
@@ -9094,7 +9118,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 750,
+          "total_file_count": 752,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
