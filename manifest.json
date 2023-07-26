@@ -1709,42 +1709,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Hardware.HardwareList.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Hardware.HardwareList.html",
-          "hash": "vj3ZM1pDV6tyT4DAhsferYr/YIAEzS9QgW1jef6l7kw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Hardware.HardwareProbe.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Hardware.HardwareProbe.html",
-          "hash": "plm0x7C89eWfQW9qKB3hWRNm8JVaPW5GSPcX1ZK0isE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Hardware.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Hardware.html",
-          "hash": "zD9u5LrdugqIrNZVVMF29tSfrdlEocIUmfcj6wEUoEs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Configuration.Config.yml",
       "output": {
         ".html": {
@@ -2134,6 +2098,42 @@
         ".html": {
           "relative_path": "api/KS.Kernel.Flags.html",
           "hash": "aRpSBdsMib/vUMD3gUQevnCzjfub0UApAGTbc8VTyI4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Hardware.HardwareList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Hardware.HardwareList.html",
+          "hash": "/hA9jUNvMga5ETNjNjmcuLJdGoQb2+66qjiWXpUf2xc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Hardware.HardwareProbe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Hardware.HardwareProbe.html",
+          "hash": "Q0Aou1nIWJR7qWqFrc+KsSx4njDrKeEpKJ9sHL0ZrmE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Hardware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Hardware.html",
+          "hash": "wAc8LiNVI9VYrArQBnU+oTq3co3tlEXVWqTDW0rdHV0="
         }
       },
       "is_incremental": false,
@@ -9009,7 +9009,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "irBmBQU5LSu+FzMp2H8fcJ4s5Agudh+As7HzgVIyq/0="
+          "hash": "cWTxmlnk2vgK4bvddPSAgc7BRXc6Ur0kf07O61WWMMo="
         }
       },
       "is_incremental": false,
