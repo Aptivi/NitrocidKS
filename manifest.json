@@ -3065,42 +3065,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Beautifiers.JsonBeautifier.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Beautifiers.JsonBeautifier.html",
-          "hash": "D2TywitJ7rtav8nZf8YFyvEDPQyqyv4LxxkX/DOLPpw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Beautifiers.JsonMinifier.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Beautifiers.JsonMinifier.html",
-          "hash": "8qzrwZUARiLGQz81Cm4Y6BtkESPyD1E4zYmc3MxMBm8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Beautifiers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Beautifiers.html",
-          "hash": "Q2u3ETNlLNiu/Pb6/MoZog71HSE8EfY8UF/XjaG4fjY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Calendar.CalendarPrint.yml",
       "output": {
         ".html": {
@@ -3309,7 +3273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Editors.JsonShell.JsonTools.html",
-          "hash": "oIr4W/d1XugqMbA3yZ0SOgaI9IyBfhGHrj/V/TrJNxQ="
+          "hash": "2TwJzT7n4uXJ/+RdOeCR1DIT3tGnH+O1rmLD9EOB/vM="
         }
       },
       "is_incremental": false,
@@ -9045,7 +9009,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "8d3o+w5GaOoD3gWShjvQOrmdQ+LWd1/c19sVmspE5s8="
+          "hash": "irBmBQU5LSu+FzMp2H8fcJ4s5Agudh+As7HzgVIyq/0="
         }
       },
       "is_incremental": false,
@@ -9118,7 +9082,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 752,
+          "total_file_count": 749,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
