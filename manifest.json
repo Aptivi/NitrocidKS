@@ -3809,18 +3809,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Reflection.FieldManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Reflection.FieldManager.html",
-          "hash": "Vibgt8UDriatVNpm9poaCK1x33TKJdfCi9zTFogGOBs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Reflection.IntegerTools.yml",
       "output": {
         ".html": {
@@ -3861,7 +3849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Reflection.html",
-          "hash": "f5ULgfcHL8OhRFIEyZ5efzEimueRFleQ7tay6Ls5rQc="
+          "hash": "C/sfgC75bGt5JYLpKLqUIdVWeV3tI9uK5TFoC2/8GvE="
         }
       },
       "is_incremental": false,
@@ -9009,7 +8997,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "cWTxmlnk2vgK4bvddPSAgc7BRXc6Ur0kf07O61WWMMo="
+          "hash": "Fqv/KKX8pkPKiLB45QYgnfyo3QlO486pL2fEnUZ/dmU="
         }
       },
       "is_incremental": false,
@@ -9082,7 +9070,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 749,
+          "total_file_count": 748,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
