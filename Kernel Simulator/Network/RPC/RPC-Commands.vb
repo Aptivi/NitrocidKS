@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports System.Net.Sockets
+Imports System.Threading
 
 Public Module RPC_Commands
 
@@ -79,6 +80,7 @@ Public Module RPC_Commands
     Sub RecCommand()
         Dim endp As New IPEndPoint(IPAddress.Any, RPCPort)
         While RPCThread.IsAlive
+            Thread.Sleep(1)
             Dim buff() As Byte
             Dim ip As String = ""
             Dim msg As String = ""
