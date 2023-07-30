@@ -65,8 +65,8 @@ Public Module RemoteDebugger
         W(DoTranslation("Debug listening on all addresses using port {0}."), True, ColTypes.Neutral, DebugPort)
 
         While Not RDebugStopping
-            Thread.Sleep(1)
             Try
+                Thread.Sleep(1)
                 Dim RDebugStream As NetworkStream
                 Dim RDebugSWriter As StreamWriter
                 Dim RDebugClient As Socket
