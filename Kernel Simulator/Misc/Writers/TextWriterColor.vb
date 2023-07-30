@@ -54,8 +54,10 @@ Public Module TextWriterColor
         Try
             'Check if default console output equals the new console output text writer. If it does, write in color, else, suppress the colors.
             If IsNothing(DefConsoleOut) Or Equals(DefConsoleOut, Out) Then
-                If colorType = ColTypes.Neutral Or colorType = ColTypes.Input Then
+                If colorType = ColTypes.Neutral Then
                     Write(esc + "[38;5;" + CStr(neutralTextColor) + "m")
+                ElseIf colorType = ColTypes.Input Then
+                    Write(esc + "[38;5;" + CStr(inputColor) + "m")
                 ElseIf colorType = ColTypes.Continuable Then
                     Write(esc + "[38;5;" + CStr(contKernelErrorColor) + "m")
                 ElseIf colorType = ColTypes.Uncontinuable Then
@@ -91,10 +93,6 @@ Public Module TextWriterColor
 
             If Line Then WriteLine(text) Else Write(text)
             If backgroundColor = ConsoleColors.Black Then ResetColor()
-            If colorType = ColTypes.Input And ColoredShell = True And (IsNothing(DefConsoleOut) Or Equals(DefConsoleOut, Out)) Then
-                Write(esc + "[38;5;" + CStr(inputColor) + "m")
-                Write(esc + "[48;5;" + CStr(backgroundColor) + "m")
-            End If
         Catch ex As Exception
             WStkTrc(ex)
             KernelError("C", False, 0, DoTranslation("There is a serious error when printing text.", currentLang), ex)
@@ -135,8 +133,10 @@ Public Module TextWriterColor
     Public Sub WriteSlowlyC(ByVal msg As String, ByVal Line As Boolean, ByVal MsEachLetter As Double, ByVal colorType As ColTypes, ParamArray ByVal vars() As Object)
         Dim esc As Char = GetEsc()
         If IsNothing(DefConsoleOut) Or Equals(DefConsoleOut, Out) Then
-            If colorType = ColTypes.Neutral Or colorType = ColTypes.Input Then
+            If colorType = ColTypes.Neutral Then
                 Write(esc + "[38;5;" + CStr(neutralTextColor) + "m")
+            ElseIf colorType = ColTypes.Input Then
+                Write(esc + "[38;5;" + CStr(inputColor) + "m")
             ElseIf colorType = ColTypes.Continuable Then
                 Write(esc + "[38;5;" + CStr(contKernelErrorColor) + "m")
             ElseIf colorType = ColTypes.Uncontinuable Then
@@ -180,10 +180,6 @@ Public Module TextWriterColor
             WriteLine()
         End If
         If backgroundColor = ConsoleColors.Black Then ResetColor()
-        If colorType = ColTypes.Input And ColoredShell = True And (IsNothing(DefConsoleOut) Or Equals(DefConsoleOut, Out)) Then
-            Write(esc + "[38;5;" + CStr(inputColor) + "m")
-            Write(esc + "[48;5;" + CStr(backgroundColor) + "m")
-        End If
     End Sub
 
     ''' <summary>
@@ -197,8 +193,10 @@ Public Module TextWriterColor
     Public Sub WriteWhere(ByVal msg As String, ByVal Left As Integer, ByVal Top As Integer, ByVal colorType As ColTypes, ByVal ParamArray vars() As Object)
         Dim esc As Char = GetEsc()
         If IsNothing(DefConsoleOut) Or Equals(DefConsoleOut, Out) Then
-            If colorType = ColTypes.Neutral Or colorType = ColTypes.Input Then
+            If colorType = ColTypes.Neutral Then
                 Write(esc + "[38;5;" + CStr(neutralTextColor) + "m")
+            ElseIf colorType = ColTypes.Input Then
+                Write(esc + "[38;5;" + CStr(inputColor) + "m")
             ElseIf colorType = ColTypes.Continuable Then
                 Write(esc + "[38;5;" + CStr(contKernelErrorColor) + "m")
             ElseIf colorType = ColTypes.Uncontinuable Then
@@ -256,10 +254,6 @@ Public Module TextWriterColor
         Next
         SetCursorPosition(OldLeft, OldTop)
         If backgroundColor = ConsoleColors.Black Then ResetColor()
-        If colorType = ColTypes.Input And ColoredShell = True And (IsNothing(DefConsoleOut) Or Equals(DefConsoleOut, Out)) Then
-            Write(esc + "[38;5;" + CStr(inputColor) + "m")
-            Write(esc + "[48;5;" + CStr(backgroundColor) + "m")
-        End If
     End Sub
 
     ''' <summary>
@@ -284,10 +278,6 @@ Public Module TextWriterColor
 
             If Line Then WriteLine(text) Else Write(text)
             If backgroundColor = ConsoleColors.Black Then ResetColor()
-            If ColoredShell And (IsNothing(DefConsoleOut) Or Equals(DefConsoleOut, Out)) Then
-                Write(esc + "[38;5;" + CStr(inputColor) + "m")
-                Write(esc + "[48;5;" + CStr(backgroundColor) + "m")
-            End If
         Catch ex As Exception
             WStkTrc(ex)
             KernelError("C", False, 0, DoTranslation("There is a serious error when printing text.", currentLang), ex)
@@ -318,10 +308,6 @@ Public Module TextWriterColor
 
             If Line Then WriteLine(text) Else Write(text)
             If backgroundColor = ConsoleColors.Black Then ResetColor()
-            If ColoredShell And (IsNothing(DefConsoleOut) Or Equals(DefConsoleOut, Out)) Then
-                Write(esc + "[38;5;" + CStr(inputColor) + "m")
-                Write(esc + "[48;5;" + CStr(backgroundColor) + "m")
-            End If
         Catch ex As Exception
             WStkTrc(ex)
             KernelError("C", False, 0, DoTranslation("There is a serious error when printing text.", currentLang), ex)
@@ -351,10 +337,6 @@ Public Module TextWriterColor
 
             If Line Then WriteLine(text) Else Write(text)
             If backgroundColor = ConsoleColors.Black Then ResetColor()
-            If ColoredShell And (IsNothing(DefConsoleOut) Or Equals(DefConsoleOut, Out)) Then
-                Write(esc + "[38;5;" + CStr(inputColor) + "m")
-                Write(esc + "[48;5;" + CStr(backgroundColor) + "m")
-            End If
         Catch ex As Exception
             WStkTrc(ex)
             KernelError("C", False, 0, DoTranslation("There is a serious error when printing text.", currentLang), ex)
@@ -405,10 +387,6 @@ Public Module TextWriterColor
         Next
         SetCursorPosition(OldLeft, OldTop)
         If backgroundColor = ConsoleColors.Black Then ResetColor()
-        If ColoredShell = True And (IsNothing(DefConsoleOut) Or Equals(DefConsoleOut, Out)) Then
-            Write(esc + "[38;5;" + CStr(inputColor) + "m")
-            Write(esc + "[48;5;" + CStr(backgroundColor) + "m")
-        End If
     End Sub
 
     ''' <summary>
@@ -453,10 +431,6 @@ Public Module TextWriterColor
         Next
         SetCursorPosition(OldLeft, OldTop)
         If backgroundColor = ConsoleColors.Black Then ResetColor()
-        If ColoredShell = True And (IsNothing(DefConsoleOut) Or Equals(DefConsoleOut, Out)) Then
-            Write(esc + "[38;5;" + CStr(inputColor) + "m")
-            Write(esc + "[48;5;" + CStr(backgroundColor) + "m")
-        End If
     End Sub
 
 End Module

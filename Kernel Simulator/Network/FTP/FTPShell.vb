@@ -94,7 +94,7 @@ Public Module FTPShell
             DisposeAll()
 
             'Set input color
-            SetInputColor()
+            W("", False, ColTypes.Input)
 
             'Try to connect if IP address is specified.
             If Connects Then

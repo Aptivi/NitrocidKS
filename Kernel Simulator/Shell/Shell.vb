@@ -75,7 +75,7 @@ Public Module Shell
 
                     'Set an input color
                     Wdbg("I", "ColoredShell is {0}", ColoredShell)
-                    SetInputColor()
+                    W("", False, ColTypes.Input)
 
                     'Wait for command
                     Wdbg("I", "Waiting for command")

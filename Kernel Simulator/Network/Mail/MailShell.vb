@@ -57,8 +57,7 @@ Module MailShell
             If Not IsNothing(DefConsoleOut) Then
                 Console.SetOut(DefConsoleOut)
             End If
-            W("[", False, ColTypes.Gray) : W("{0}", False, ColTypes.UserName, Mail_Authentication.UserName) : W("@", False, ColTypes.Gray) : W("{0}", False, ColTypes.HostName, Address) : W("] ", False, ColTypes.Gray) : W("{0} > ", False, ColTypes.Gray, IMAP_CurrentDirectory)
-            SetInputColor()
+            W("[", False, ColTypes.Gray) : W("{0}", False, ColTypes.UserName, Mail_Authentication.UserName) : W("@", False, ColTypes.Gray) : W("{0}", False, ColTypes.HostName, Address) : W("] ", False, ColTypes.Gray) : W("{0} > ", False, ColTypes.Gray, IMAP_CurrentDirectory) : W("", False, ColTypes.Input)
 
             'Listen for a command
             Dim cmd As String = Console.ReadLine
