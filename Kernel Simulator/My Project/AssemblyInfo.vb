@@ -14,7 +14,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Simulates our future kernel.")>
 <Assembly: AssemblyCompany("EoflaOE")> 
 <Assembly: AssemblyProduct("Kernel Simulator")>
-<Assembly: AssemblyCopyright("Copyright © EoflaOE 2018 - 2020")>
+<Assembly: AssemblyCopyright("Copyright © EoflaOE 2018 - 2021")>
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)> 
@@ -33,7 +33,7 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("0.0.12.11")>
-<Assembly: AssemblyFileVersion("1.0.12.10")>
+<Assembly: AssemblyVersion("0.0.12.12")>
+<Assembly: AssemblyFileVersion("1.0.12.12")>
 
 <Assembly: NeutralResourcesLanguageAttribute("en-US")> 
