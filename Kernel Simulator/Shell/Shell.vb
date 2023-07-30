@@ -166,10 +166,6 @@ Public Module Shell
                     CommandPromptWrite()
                     DisposeAll()
 
-                    'Set an input color
-                    Wdbg("I", "ColoredShell is {0}", ColoredShell)
-                    SetInputColor()
-
                     'Wait for command
                     Wdbg("I", "Waiting for command")
                     EventManager.RaiseShellInitialized()
@@ -233,20 +229,20 @@ Public Module Shell
             ParsedPromptStyle.ConvertVTSequences
             W(ParsedPromptStyle, False, ColTypes.Gray)
             If adminList(signedinusrnm) = True Then
-                W(" # ", False, ColTypes.Gray)
+                W(" # ", False, ColTypes.Gray) : W("", False, ColTypes.Input)
             Else
-                W(" $ ", False, ColTypes.Gray)
+                W(" $ ", False, ColTypes.Gray) : W("", False, ColTypes.Input)
             End If
         ElseIf ShellPromptStyle = "" And Not maintenance Then
             If adminList(signedinusrnm) = True Then
-                W("[", False, ColTypes.Gray) : W("{0}", False, ColTypes.UserName, signedinusrnm) : W("@", False, ColTypes.Gray) : W("{0}", False, ColTypes.HostName, HName) : W("]{0} # ", False, ColTypes.Gray, CurrDir)
+                W("[", False, ColTypes.Gray) : W("{0}", False, ColTypes.UserName, signedinusrnm) : W("@", False, ColTypes.Gray) : W("{0}", False, ColTypes.HostName, HName) : W("]{0} # ", False, ColTypes.Gray, CurrDir) : W("", False, ColTypes.Input)
             ElseIf maintenance Then
-                W(DoTranslation("Maintenance Mode") + "> ", False, ColTypes.Gray)
+                W(DoTranslation("Maintenance Mode") + "> ", False, ColTypes.Gray) : W("", False, ColTypes.Input)
             Else
-                W("[", False, ColTypes.Gray) : W("{0}", False, ColTypes.UserName, signedinusrnm) : W("@", False, ColTypes.Gray) : W("{0}", False, ColTypes.HostName, HName) : W("]{0} $ ", False, ColTypes.Gray, CurrDir)
+                W("[", False, ColTypes.Gray) : W("{0}", False, ColTypes.UserName, signedinusrnm) : W("@", False, ColTypes.Gray) : W("{0}", False, ColTypes.HostName, HName) : W("]{0} $ ", False, ColTypes.Gray, CurrDir) : W("", False, ColTypes.Input)
             End If
         Else
-            W(DoTranslation("Maintenance Mode") + "> ", False, ColTypes.Gray)
+            W(DoTranslation("Maintenance Mode") + "> ", False, ColTypes.Gray) : W("", False, ColTypes.Input)
         End If
 
     End Sub

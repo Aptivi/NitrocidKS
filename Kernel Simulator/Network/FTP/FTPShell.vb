@@ -102,22 +102,19 @@ Public Module FTPShell
                     If connected Then
                         Wdbg("I", "FTPShellPromptStyle = {0}", FTPShellPromptStyle)
                         If FTPShellPromptStyle = "" Then
-                            W("[", False, ColTypes.Gray) : W("{0}", False, ColTypes.UserName, user) : W("@", False, ColTypes.Gray) : W("{0}", False, ColTypes.HostName, ftpsite) : W("]{0}> ", False, ColTypes.Gray, currentremoteDir)
+                            W("[", False, ColTypes.Gray) : W("{0}", False, ColTypes.UserName, user) : W("@", False, ColTypes.Gray) : W("{0}", False, ColTypes.HostName, ftpsite) : W("]{0}> ", False, ColTypes.Gray, currentremoteDir) : W("", False, ColTypes.Input)
                         Else
                             Dim ParsedPromptStyle As String = ProbePlaces(FTPShellPromptStyle)
                             ParsedPromptStyle.ConvertVTSequences
-                            W(ParsedPromptStyle, False, ColTypes.Gray)
+                            W(ParsedPromptStyle, False, ColTypes.Gray) : W("", False, ColTypes.Input)
                         End If
                     Else
-                        W("{0}> ", False, ColTypes.Gray, currDirect)
+                        W("{0}> ", False, ColTypes.Gray, currDirect) : W("", False, ColTypes.Input)
                     End If
                 End If
 
                 'Run garbage collector
                 DisposeAll()
-
-                'Set input color
-                SetInputColor()
 
                 'Try to connect if IP address is specified.
                 If Connects Then

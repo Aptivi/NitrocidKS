@@ -81,8 +81,7 @@ Begin:
                 If DefConsoleOut IsNot Nothing Then
                     Console.SetOut(DefConsoleOut)
                 End If
-                W("[", False, ColTypes.Gray) : W("{0}", False, ColTypes.UserName, New Uri(RSSFeedLink).Host) : W("] > ", False, ColTypes.Gray)
-                SetInputColor()
+                W("[", False, ColTypes.Gray) : W("{0}", False, ColTypes.UserName, New Uri(RSSFeedLink).Host) : W("] > ", False, ColTypes.Gray) : W("", False, ColTypes.Input)
 
                 'Prompt for command
                 EventManager.RaiseRSSShellInitialized(RSSFeedLink)

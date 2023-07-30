@@ -39,7 +39,6 @@ Module FaderDisplay
                 If Fader.CancellationPending = True Then
                     Wdbg("W", "Cancellation is pending. Cleaning everything up...")
                     e.Cancel = True
-                    SetInputColor()
                     LoadBack()
                     Console.CursorVisible = True
                     Wdbg("I", "All clean. Fader screensaver stopped.")
@@ -94,7 +93,6 @@ Module FaderDisplay
             Wdbg("W", "Screensaver experienced an error: {0}. Cleaning everything up...", ex.Message)
             WStkTrc(ex)
             e.Cancel = True
-            SetInputColor()
             LoadBack()
             Console.CursorVisible = True
             Wdbg("I", "All clean. Fader screensaver stopped.")

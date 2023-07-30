@@ -94,22 +94,19 @@ Public Module SFTPShell
                     If SFTPConnected Then
                         Wdbg("I", "SFTPShellPromptStyle = {0}", SFTPShellPromptStyle)
                         If SFTPShellPromptStyle = "" Then
-                            W("[", False, ColTypes.Gray) : W("{0}", False, ColTypes.UserName, SFTPUser) : W("@", False, ColTypes.Gray) : W("{0}", False, ColTypes.HostName, sftpsite) : W("]{0}> ", False, ColTypes.Gray, SFTPCurrentRemoteDir)
+                            W("[", False, ColTypes.Gray) : W("{0}", False, ColTypes.UserName, SFTPUser) : W("@", False, ColTypes.Gray) : W("{0}", False, ColTypes.HostName, sftpsite) : W("]{0}> ", False, ColTypes.Gray, SFTPCurrentRemoteDir) : W("", False, ColTypes.Input)
                         Else
                             Dim ParsedPromptStyle As String = ProbePlaces(SFTPShellPromptStyle)
                             ParsedPromptStyle.ConvertVTSequences
-                            W(ParsedPromptStyle, False, ColTypes.Gray)
+                            W(ParsedPromptStyle, False, ColTypes.Gray) : W("", False, ColTypes.Input)
                         End If
                     Else
-                        W("{0}> ", False, ColTypes.Gray, SFTPCurrDirect)
+                        W("{0}> ", False, ColTypes.Gray, SFTPCurrDirect) : W("", False, ColTypes.Input)
                     End If
                 End If
 
                 'Run garbage collector
                 DisposeAll()
-
-                'Set input color
-                SetInputColor()
 
                 'Try to connect if IP address is specified.
                 If Connects Then

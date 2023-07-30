@@ -35,7 +35,6 @@ Module WipeDisplay
                 If Wipe.CancellationPending = True Then
                     Wdbg("W", "Cancellation is pending. Cleaning everything up...")
                     e.Cancel = True
-                    SetInputColor()
                     LoadBack()
                     Console.CursorVisible = True
                     Wdbg("I", "All clean. Wipe screensaver stopped.")
@@ -111,7 +110,6 @@ Module WipeDisplay
             Wdbg("W", "Screensaver experienced an error: {0}. Cleaning everything up...", ex.Message)
             WStkTrc(ex)
             e.Cancel = True
-            SetInputColor()
             LoadBack()
             Console.CursorVisible = True
             Wdbg("I", "All clean. Wipe screensaver stopped.")

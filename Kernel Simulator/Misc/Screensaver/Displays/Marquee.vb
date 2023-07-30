@@ -37,7 +37,6 @@ Module MarqueeDisplay
                 If Marquee.CancellationPending = True Then
                     Wdbg("W", "Cancellation is pending. Cleaning everything up...")
                     e.Cancel = True
-                    SetInputColor()
                     LoadBack()
                     Console.CursorVisible = True
                     Wdbg("I", "All clean. Marquee screensaver stopped.")
@@ -112,7 +111,6 @@ Module MarqueeDisplay
             Wdbg("W", "Screensaver experienced an error: {0}. Cleaning everything up...", ex.Message)
             WStkTrc(ex)
             e.Cancel = True
-            SetInputColor()
             LoadBack()
             Console.CursorVisible = True
             Wdbg("I", "All clean. Marquee screensaver stopped.")

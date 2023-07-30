@@ -464,19 +464,6 @@ Public Module ColorTools
     End Function
 
     ''' <summary>
-    ''' Sets input color
-    ''' </summary>
-    ''' <returns>True if successful; False if unsuccessful</returns>
-    Public Function SetInputColor() As Boolean
-        If ColoredShell = True Then
-            SetConsoleColor(New Color(InputColor))
-            SetConsoleColor(New Color(BackgroundColor), True)
-            Return True
-        End If
-        Return False
-    End Function
-
-    ''' <summary>
     ''' Sets the console color
     ''' </summary>
     ''' <param name="ColorSequence">The color instance</param>
