@@ -374,9 +374,6 @@ Public Module KernelTools
             TimeDateIsSet = True
         End If
 
-        'Check for multiple instances of KS
-        If instanceChecked = False Then MultiInstance()
-
         'Create config file and then read it
         InitializeConfig()
 
@@ -472,19 +469,6 @@ Public Module KernelTools
             paths.AddIfNotFound("Home", Environ("USERPROFILE").Replace("\", "/"))
             paths.AddIfNotFound("Temp", Environ("TEMP").Replace("\", "/"))
         End If
-    End Sub
-
-    ' ----------------------------------------------- Misc -----------------------------------------------
-
-    Sub MultiInstance()
-        'Check to see if multiple Kernel Simulator processes are running.
-        Static ksInst As Mutex
-        Dim ksOwner As Boolean
-        ksInst = New Mutex(True, "Kernel Simulator", ksOwner)
-        If Not ksOwner Then
-            KernelError("F", False, 0, DoTranslation("Another instance of Kernel Simulator is running. Shutting down in case of interference."), Nothing)
-        End If
-        instanceChecked = True
     End Sub
 
     ''' <summary>
