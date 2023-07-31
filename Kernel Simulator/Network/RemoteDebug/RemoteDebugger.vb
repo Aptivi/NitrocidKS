@@ -166,8 +166,9 @@ Namespace Network.RemoteDebug
         Sub ReadAndBroadcastAsync()
             While True
                 For DeviceIndex As Integer = 0 To DebugDevices.Count - 1
-                    Thread.Sleep(1)
                     Try
+                        Thread.Sleep(1)
+
                         'Variables
                         Dim MessageBuffer(65536) As Byte
                         Dim SocketStream As New NetworkStream(DebugDevices(DeviceIndex).ClientSocket)
