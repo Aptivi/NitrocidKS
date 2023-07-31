@@ -598,30 +598,6 @@ Namespace ConsoleBase.Colors
         End Sub
 
         ''' <summary>
-        ''' Sets input color
-        ''' </summary>
-        ''' <returns>True if successful; False if unsuccessful</returns>
-        Public Function TrySetInputColor() As Boolean
-            Try
-                SetInputColor()
-                Return True
-            Catch ex As Exception
-                Return False
-            End Try
-        End Function
-
-        ''' <summary>
-        ''' Sets input color
-        ''' </summary>
-        Public Sub SetInputColor()
-            Wdbg(DebugLevel.I, "ColoredShell is {0}", ColoredShell)
-            If ColoredShell = True Then
-                SetConsoleColor(InputColor)
-                SetConsoleColor(BackgroundColor, True)
-            End If
-        End Sub
-
-        ''' <summary>
         ''' Gets the gray color according to the brightness of the background color
         ''' </summary>
         Public Function GetGray() As Color
@@ -649,6 +625,8 @@ Namespace ConsoleBase.Colors
                 Select Case colorType
                     Case ColTypes.Neutral
                         SetConsoleColor(NeutralTextColor, Background)
+                    Case ColTypes.Input
+                        SetConsoleColor(InputColor, Background)
                     Case ColTypes.Continuable
                         SetConsoleColor(ContKernelErrorColor, Background)
                     Case ColTypes.Uncontinuable
@@ -683,7 +661,7 @@ Namespace ConsoleBase.Colors
                         SetConsoleColor(NotificationProgressColor, Background)
                     Case ColTypes.NotificationFailure
                         SetConsoleColor(NotificationFailureColor, Background)
-                    Case ColTypes.Question, ColTypes.Input
+                    Case ColTypes.Question
                         SetConsoleColor(QuestionColor, Background)
                     Case ColTypes.Success
                         SetConsoleColor(SuccessColor, Background)

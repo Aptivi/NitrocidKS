@@ -76,9 +76,6 @@ Namespace Shell.Shells
                             Wdbg(DebugLevel.I, "Preparing prompt...")
                             WriteShellPrompt(ShellType)
                         End If
-
-                        'Set input color
-                        SetInputColor()
                     End SyncLock
 
                     'Try to connect if IP address is specified.

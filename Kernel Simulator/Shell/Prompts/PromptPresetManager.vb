@@ -282,9 +282,6 @@ Namespace Shell.Prompts
         Public Sub WriteShellPrompt(ShellType As ShellType)
             Dim CurrentPresetBase As PromptPresetBase = GetCurrentPresetBaseFromShell(ShellType)
             Write(CurrentPresetBase.PresetPrompt, False, ColTypes.Input)
-
-            'Set input color in case custom preset didn't set the input color as instructed
-            SetInputColor()
         End Sub
 
         ''' <summary>

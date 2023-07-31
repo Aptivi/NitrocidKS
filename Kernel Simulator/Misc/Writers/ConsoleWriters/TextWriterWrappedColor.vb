@@ -68,9 +68,6 @@ Namespace Misc.Writers.ConsoleWriters
 
                     'Write wrapped output
                     WriteWrappedPlain(Text, Line, vars)
-
-                    'Reset the colors
-                    If colorType = ColTypes.Input And ColoredShell And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out)) Then SetInputColor()
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadInterruptedException"
                     WStkTrc(ex)
                     KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -95,9 +92,6 @@ Namespace Misc.Writers.ConsoleWriters
 
                     'Write wrapped output
                     WriteWrappedPlain(Text, Line, vars)
-
-                    'Reset the colors
-                    If colorTypeForeground = ColTypes.Input And ColoredShell And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out)) Then SetInputColor()
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadInterruptedException"
                     WStkTrc(ex)
                     KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -121,9 +115,6 @@ Namespace Misc.Writers.ConsoleWriters
 
                     'Write wrapped output
                     WriteWrappedPlain(Text, Line, vars)
-
-                    'Reset the colors
-                    If ColoredShell And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out)) Then SetInputColor()
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadInterruptedException"
                     WStkTrc(ex)
                     KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -148,9 +139,6 @@ Namespace Misc.Writers.ConsoleWriters
 
                     'Write wrapped output
                     WriteWrappedPlain(Text, Line, vars)
-
-                    'Reset the colors
-                    If ColoredShell And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out)) Then SetInputColor()
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadInterruptedException"
                     WStkTrc(ex)
                     KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -176,9 +164,6 @@ Namespace Misc.Writers.ConsoleWriters
 
                     'Write wrapped output
                     WriteWrappedPlain(Text, Line, vars)
-
-                    'Reset the colors
-                    If ColoredShell And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out)) Then SetInputColor()
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadInterruptedException"
                     WStkTrc(ex)
                     KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -205,9 +190,6 @@ Namespace Misc.Writers.ConsoleWriters
 
                     'Write wrapped output
                     WriteWrappedPlain(Text, Line, vars)
-
-                    'Reset the colors
-                    If ColoredShell And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out)) Then SetInputColor()
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadInterruptedException"
                     WStkTrc(ex)
                     KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)

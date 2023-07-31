@@ -93,8 +93,7 @@ Namespace Misc.Timers
                     Case ConsoleKey.T
                         'User requested to specify the timeout in milliseconds
                         If Not Timer.Enabled Then
-                            WriteWhere(DoTranslation("Specify the timeout in milliseconds") + " [{0}] ", 2, KeysTextTopPosition - 4, False, ColTypes.Question, TimerInterval)
-                            SetInputColor()
+                            WriteWhere(DoTranslation("Specify the timeout in milliseconds") + " [{0}] {1}", 2, KeysTextTopPosition - 4, False, ColTypes.Question, TimerInterval, InputColor.VTSequenceForeground)
 
                             'Try to parse the interval
                             Dim UnparsedInterval As String = ReadLine()
