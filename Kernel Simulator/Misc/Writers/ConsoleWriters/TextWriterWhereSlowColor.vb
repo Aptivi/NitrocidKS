@@ -98,7 +98,6 @@ Namespace Misc.Writers.ConsoleWriters
 
                     'Reset the colors
                     If BackgroundColor.PlainSequence = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor.PlainSequence = "0;0;0" Then Console.ResetColor()
-                    If colorType = ColTypes.Input And ColoredShell And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out)) Then SetInputColor()
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadAbortException"
                     WStkTrc(ex)
                     KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -134,7 +133,6 @@ Namespace Misc.Writers.ConsoleWriters
 
                     'Reset the colors
                     If BackgroundColor.PlainSequence = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor.PlainSequence = "0;0;0" Then Console.ResetColor()
-                    If colorTypeForeground = ColTypes.Input And ColoredShell And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out)) Then SetInputColor()
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadAbortException"
                     WStkTrc(ex)
                     KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -168,7 +166,6 @@ Namespace Misc.Writers.ConsoleWriters
 
                     'Reset the colors
                     If BackgroundColor.PlainSequence = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor.PlainSequence = "0;0;0" Then Console.ResetColor()
-                    If ColoredShell = True And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out)) Then SetInputColor()
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadAbortException"
                     WStkTrc(ex)
                     KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -203,7 +200,6 @@ Namespace Misc.Writers.ConsoleWriters
 
                     'Reset the colors
                     If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then Console.ResetColor()
-                    If ColoredShell And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out)) Then SetInputColor()
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadAbortException"
                     WStkTrc(ex)
                     KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -239,7 +235,6 @@ Namespace Misc.Writers.ConsoleWriters
 
                     'Reset the colors
                     If BackgroundColor.PlainSequence = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor.PlainSequence = "0;0;0" Then Console.ResetColor()
-                    If ColoredShell And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out)) Then SetInputColor()
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadAbortException"
                     WStkTrc(ex)
                     KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -276,7 +271,6 @@ Namespace Misc.Writers.ConsoleWriters
 
                     'Reset the colors
                     If BackgroundColor.PlainSequence = "0" Or BackgroundColor.PlainSequence = "0;0;0" Then Console.ResetColor()
-                    If ColoredShell And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out)) Then SetInputColor()
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadAbortException"
                     WStkTrc(ex)
                     KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)

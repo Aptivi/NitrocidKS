@@ -538,19 +538,6 @@ Namespace ConsoleBase
         End Function
 
         ''' <summary>
-        ''' Sets input color
-        ''' </summary>
-        ''' <returns>True if successful; False if unsuccessful</returns>
-        Public Function SetInputColor() As Boolean
-            If ColoredShell = True Then
-                SetConsoleColor(InputColor)
-                SetConsoleColor(BackgroundColor, True)
-                Return True
-            End If
-            Return False
-        End Function
-
-        ''' <summary>
         ''' Sets the console color
         ''' </summary>
         ''' <param name="colorType">A type of colors that will be changed.</param>
@@ -569,6 +556,8 @@ Namespace ConsoleBase
                 Select Case colorType
                     Case ColTypes.Neutral
                         SetConsoleColor(NeutralTextColor, Background)
+                    Case ColTypes.Input
+                        SetConsoleColor(InputColor, Background)
                     Case ColTypes.Continuable
                         SetConsoleColor(ContKernelErrorColor, Background)
                     Case ColTypes.Uncontinuable
@@ -607,7 +596,7 @@ Namespace ConsoleBase
                         SetConsoleColor(NotificationProgressColor, Background)
                     Case ColTypes.NotificationFailure
                         SetConsoleColor(NotificationFailureColor, Background)
-                    Case ColTypes.Question, ColTypes.Input
+                    Case ColTypes.Question
                         SetConsoleColor(QuestionColor, Background)
                     Case ColTypes.Success
                         SetConsoleColor(SuccessColor, Background)

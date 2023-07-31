@@ -43,18 +43,15 @@ Namespace Shell.Shells
                         If HTTPConnected Then
                             Wdbg(DebugLevel.I, "HTTPShellPromptStyle = {0}", HTTPShellPromptStyle)
                             If HTTPShellPromptStyle = "" Then
-                                Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, HTTPSite) : Write("]> ", False, ColTypes.Gray)
+                                Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, HTTPSite) : Write("]> ", False, ColTypes.Gray) : Write("", False, InputColor)
                             Else
                                 Dim ParsedPromptStyle As String = ProbePlaces(HTTPShellPromptStyle)
                                 ParsedPromptStyle.ConvertVTSequences
-                                Write(ParsedPromptStyle, False, ColTypes.Gray)
+                                Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, InputColor)
                             End If
                         Else
-                            Write("> ", False, ColTypes.Gray)
+                            Write("> ", False, ColTypes.Gray) : Write("", False, InputColor)
                         End If
-
-                        'Set input color
-                        SetInputColor()
 
                         'Prompt for command
                         Wdbg(DebugLevel.I, "Normal shell")

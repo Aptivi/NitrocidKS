@@ -64,13 +64,12 @@ Namespace Shell.Shells
                     End If
                     Wdbg(DebugLevel.I, "JsonShell_PromptStyle = {0}", JsonShell_PromptStyle)
                     If JsonShell_PromptStyle = "" Then
-                        Write("[", False, ColTypes.Gray) : Write("{0}{1}", False, ColTypes.UserName, Path.GetFileName(FilePath), If(JsonShell_WasJsonEdited(), "*", "")) : Write("] > ", False, ColTypes.Gray)
+                        Write("[", False, ColTypes.Gray) : Write("{0}{1}", False, ColTypes.UserName, Path.GetFileName(FilePath), If(JsonShell_WasJsonEdited(), "*", "")) : Write("] > ", False, ColTypes.Gray) : Write("", False, InputColor)
                     Else
                         Dim ParsedPromptStyle As String = ProbePlaces(JsonShell_PromptStyle)
                         ParsedPromptStyle.ConvertVTSequences
-                        Write(ParsedPromptStyle, False, ColTypes.Gray)
+                        Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, InputColor)
                     End If
-                    SetInputColor()
 
                     'Prompt for command
                     KernelEventManager.RaiseTextShellInitialized()

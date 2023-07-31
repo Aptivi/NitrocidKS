@@ -81,19 +81,16 @@ Namespace Shell.Shells
                             If FtpConnected Then
                                 Wdbg(DebugLevel.I, "FTPShellPromptStyle = {0}", FTPShellPromptStyle)
                                 If FTPShellPromptStyle = "" Then
-                                    Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, FtpUser) : Write("@", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, FtpSite) : Write("]{0}> ", False, ColTypes.Gray, FtpCurrentRemoteDir)
+                                    Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, FtpUser) : Write("@", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, FtpSite) : Write("]{0}> ", False, ColTypes.Gray, FtpCurrentRemoteDir) : Write("", False, InputColor)
                                 Else
                                     Dim ParsedPromptStyle As String = ProbePlaces(FTPShellPromptStyle)
                                     ParsedPromptStyle.ConvertVTSequences
-                                    Write(ParsedPromptStyle, False, ColTypes.Gray)
+                                    Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, InputColor)
                                 End If
                             Else
-                                Write("{0}> ", False, ColTypes.Gray, FtpCurrentDirectory)
+                                Write("{0}> ", False, ColTypes.Gray, FtpCurrentDirectory) : Write("", False, InputColor)
                             End If
                         End If
-
-                        'Set input color
-                        SetInputColor()
 
                         'Try to connect if IP address is specified.
                         If Connects Then

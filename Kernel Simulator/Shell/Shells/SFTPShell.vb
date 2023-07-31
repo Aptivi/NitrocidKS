@@ -76,19 +76,16 @@ Namespace Shell.Shells
                             If SFTPConnected Then
                                 Wdbg(DebugLevel.I, "SFTPShellPromptStyle = {0}", SFTPShellPromptStyle)
                                 If SFTPShellPromptStyle = "" Then
-                                    Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, SFTPUser) : Write("@", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, SFTPSite) : Write("]{0}> ", False, ColTypes.Gray, SFTPCurrentRemoteDir)
+                                    Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, SFTPUser) : Write("@", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, SFTPSite) : Write("]{0}> ", False, ColTypes.Gray, SFTPCurrentRemoteDir) : Write("", False, InputColor)
                                 Else
                                     Dim ParsedPromptStyle As String = ProbePlaces(SFTPShellPromptStyle)
                                     ParsedPromptStyle.ConvertVTSequences
-                                    Write(ParsedPromptStyle, False, ColTypes.Gray)
+                                    Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, InputColor)
                                 End If
                             Else
-                                Write("{0}> ", False, ColTypes.Gray, SFTPCurrDirect)
+                                Write("{0}> ", False, ColTypes.Gray, SFTPCurrDirect) : Write("", False, InputColor)
                             End If
                         End If
-
-                        'Set input color
-                        SetInputColor()
 
                         'Try to connect if IP address is specified.
                         If Connects Then

@@ -65,13 +65,12 @@ Namespace Shell.Shells
                     End If
                     Wdbg(DebugLevel.I, "TextEdit_PromptStyle = {0}", TextEdit_PromptStyle)
                     If TextEdit_PromptStyle = "" Then
-                        Write("[", False, ColTypes.Gray) : Write("{0}{1}", False, ColTypes.UserName, Path.GetFileName(FilePath), If(TextEdit_WasTextEdited(), "*", "")) : Write("] > ", False, ColTypes.Gray)
+                        Write("[", False, ColTypes.Gray) : Write("{0}{1}", False, ColTypes.UserName, Path.GetFileName(FilePath), If(TextEdit_WasTextEdited(), "*", "")) : Write("] > ", False, ColTypes.Gray) : Write("", False, InputColor)
                     Else
                         Dim ParsedPromptStyle As String = ProbePlaces(TextEdit_PromptStyle)
                         ParsedPromptStyle.ConvertVTSequences
-                        Write(ParsedPromptStyle, False, ColTypes.Gray)
+                        Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, InputColor)
                     End If
-                    SetInputColor()
 
                     'Prompt for command
                     KernelEventManager.RaiseTextShellInitialized()

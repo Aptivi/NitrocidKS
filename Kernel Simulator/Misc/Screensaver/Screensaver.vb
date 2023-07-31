@@ -200,7 +200,6 @@ Namespace Misc.Screensaver
         ''' </summary>
         Friend Sub HandleSaverCancel()
             Wdbg(DebugLevel.W, "Cancellation is pending. Cleaning everything up...")
-            SetInputColor()
             LoadBack()
             Console.CursorVisible = True
             Wdbg(DebugLevel.I, "All clean. Screensaver stopped.")

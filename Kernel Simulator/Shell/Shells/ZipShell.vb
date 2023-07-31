@@ -59,13 +59,12 @@ Namespace Shell.Shells
                     End If
                     Wdbg(DebugLevel.I, "ZipShell_PromptStyle = {0}", ZipShell_PromptStyle)
                     If ZipShell_PromptStyle = "" Then
-                        Write("[", False, ColTypes.Gray) : Write("{0}@{1}", False, ColTypes.UserName, ZipShell_CurrentArchiveDirectory, Path.GetFileName(ZipFile)) : Write("] > ", False, ColTypes.Gray)
+                        Write("[", False, ColTypes.Gray) : Write("{0}@{1}", False, ColTypes.UserName, ZipShell_CurrentArchiveDirectory, Path.GetFileName(ZipFile)) : Write("] > ", False, ColTypes.Gray) : Write("", False, InputColor)
                     Else
                         Dim ParsedPromptStyle As String = ProbePlaces(ZipShell_PromptStyle)
                         ParsedPromptStyle.ConvertVTSequences
-                        Write(ParsedPromptStyle, False, ColTypes.Gray)
+                        Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, InputColor)
                     End If
-                    SetInputColor()
 
                     'Prompt for command
                     KernelEventManager.RaiseZipShellInitialized()

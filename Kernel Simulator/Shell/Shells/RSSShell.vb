@@ -90,13 +90,12 @@ Begin:
                         End If
                         Wdbg(DebugLevel.I, "RSSShellPromptStyle = {0}", RSSShellPromptStyle)
                         If RSSShellPromptStyle = "" Then
-                            Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, New Uri(RSSFeedLink).Host) : Write("] > ", False, ColTypes.Gray)
+                            Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, New Uri(RSSFeedLink).Host) : Write("] > ", False, ColTypes.Gray) : Write("", False, InputColor)
                         Else
                             Dim ParsedPromptStyle As String = ProbePlaces(RSSShellPromptStyle)
                             ParsedPromptStyle.ConvertVTSequences
-                            Write(ParsedPromptStyle, False, ColTypes.Gray)
+                            Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, InputColor)
                         End If
-                        SetInputColor()
 
                         'Prompt for command
                         KernelEventManager.RaiseRSSShellInitialized(RSSFeedLink)

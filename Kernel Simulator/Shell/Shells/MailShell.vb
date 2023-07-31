@@ -65,13 +65,12 @@ Namespace Shell.Shells
                     End If
                     Wdbg(DebugLevel.I, "MailShellPromptStyle = {0}", MailShellPromptStyle)
                     If MailShellPromptStyle = "" Then
-                        Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, Mail_Authentication.UserName) : Write("|", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, Mail_Authentication.UserName) : Write("] ", False, ColTypes.Gray) : Write("{0} > ", False, ColTypes.Gray, IMAP_CurrentDirectory)
+                        Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, Mail_Authentication.UserName) : Write("|", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, Mail_Authentication.UserName) : Write("] ", False, ColTypes.Gray) : Write("{0} > ", False, ColTypes.Gray, IMAP_CurrentDirectory) : Write("", False, InputColor)
                     Else
                         Dim ParsedPromptStyle As String = ProbePlaces(MailShellPromptStyle)
                         ParsedPromptStyle.ConvertVTSequences
-                        Write(ParsedPromptStyle, False, ColTypes.Gray)
+                        Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, InputColor)
                     End If
-                    SetInputColor()
 
                     'Listen for a command
                     Dim cmd As String = Console.ReadLine
