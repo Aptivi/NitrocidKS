@@ -1829,12 +1829,12 @@ Namespace Misc.Configuration
             NoiseDensity = If(ConfigToken("Screensaver")?("Noise")?("Noise density"), 40)
 
             '> PersonLookup
-            PersonLookupDelay = If(ConfigToken("Screensaver")?("PersonLookup")?("Delay in Milliseconds"), 75)
-            PersonLookupLookedUpDelay = If(ConfigToken("Screensaver")?("PersonLookup")?("New Screen Delay in Milliseconds"), 10000)
-            PersonLookupMinimumNames = If(ConfigToken("Screensaver")?("PersonLookup")?("Minimum names count"), 10)
-            PersonLookupMaximumNames = If(ConfigToken("Screensaver")?("PersonLookup")?("Maximum names count"), 1000)
-            PersonLookupMinimumAgeYears = If(ConfigToken("Screensaver")?("PersonLookup")?("Minimum age years count"), 18)
-            PersonLookupMaximumAgeYears = If(ConfigToken("Screensaver")?("PersonLookup")?("Maximum age years count"), 100)
+            PersonLookupDelay = If(Integer.TryParse(ConfigToken("Screensaver")?("PersonLookup")?("Delay in Milliseconds"), 0), ConfigToken("Screensaver")?("PersonLookup")?("Delay in Milliseconds"), 75)
+            PersonLookupLookedUpDelay = If(Integer.TryParse(ConfigToken("Screensaver")?("PersonLookup")?("New Screen Delay in Milliseconds"), 0), ConfigToken("Screensaver")?("PersonLookup")?("New Screen Delay in Milliseconds"), 10000)
+            PersonLookupMinimumNames = If(Integer.TryParse(ConfigToken("Screensaver")?("PersonLookup")?("Minimum names count"), 0), ConfigToken("Screensaver")?("PersonLookup")?("Minimum names count"), 10)
+            PersonLookupMaximumNames = If(Integer.TryParse(ConfigToken("Screensaver")?("PersonLookup")?("Maximum names count"), 0), ConfigToken("Screensaver")?("PersonLookup")?("Maximum names count"), 1000)
+            PersonLookupMinimumAgeYears = If(Integer.TryParse(ConfigToken("Screensaver")?("PersonLookup")?("Minimum age years count"), 0), ConfigToken("Screensaver")?("PersonLookup")?("Minimum age years count"), 18)
+            PersonLookupMaximumAgeYears = If(Integer.TryParse(ConfigToken("Screensaver")?("PersonLookup")?("Maximum age years count"), 0), ConfigToken("Screensaver")?("PersonLookup")?("Maximum age years count"), 100)
 
             '> DateAndTime
             DateAndTime255Colors = If(ConfigToken("Screensaver")?("DateAndTime")?("Activate 255 Color Mode"), False)
@@ -1850,8 +1850,8 @@ Namespace Misc.Configuration
             DateAndTimeMaximumColorLevel = If(Integer.TryParse(ConfigToken("Screensaver")?("DateAndTime")?("Maximum color level"), 0), ConfigToken("Screensaver")?("DateAndTime")?("Maximum color level"), 255)
 
             '> Glitch
-            GlitchDelay = If(ConfigToken("Screensaver")?("Glitch")?("Delay in Milliseconds"), 10)
-            GlitchDensity = If(ConfigToken("Screensaver")?("Glitch")?("Glitch density"), 40)
+            GlitchDelay = If(Integer.TryParse(ConfigToken("Screensaver")?("Glitch")?("Delay in Milliseconds"), 0), ConfigToken("Screensaver")?("Glitch")?("Delay in Milliseconds"), 10)
+            GlitchDensity = If(Integer.TryParse(ConfigToken("Screensaver")?("Glitch")?("Glitch density"), 0), ConfigToken("Screensaver")?("Glitch")?("Glitch density"), 40)
 
             '> Indeterminate
             Indeterminate255Colors = If(ConfigToken("Screensaver")?("Indeterminate")?("Activate 255 Color Mode"), False)
