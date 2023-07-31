@@ -1073,8 +1073,6 @@ Namespace Misc.Configuration
                     {"Right frame character for progress bars", ProgressRightFrameChar},
                     {"Users count for love or hate comments", LoveOrHateUsersCount},
                     {"Input history enabled", InputHistoryEnabled},
-                    {"Input clipboard enabled", InputClipboardEnabled},
-                    {"Input undo enabled", InputUndoEnabled},
                     {"Use PowerLine for rendering spaceship", MeteorUsePowerLine},
                     {"Meteor game speed", MeteorSpeed}
                 }
@@ -1997,8 +1995,6 @@ Namespace Misc.Configuration
             ProgressRightFrameChar = If(ConfigToken("Misc")?("Right frame character for progress bars"), "║")
             LoveOrHateUsersCount = If(Integer.TryParse(ConfigToken("Misc")?("Users count for love or hate comments"), 0), ConfigToken("Misc")?("Users count for love or hate comments"), 20)
             InputHistoryEnabled = If(ConfigToken("Misc")?("Input history enabled"), True)
-            InputClipboardEnabled = If(ConfigToken("Misc")?("Input clipboard enabled"), True)
-            InputUndoEnabled = If(ConfigToken("Misc")?("Input undo enabled"), True)
             MeteorUsePowerLine = If(ConfigToken("Misc")?("Use PowerLine for rendering spaceship"), True)
             MeteorSpeed = If(Integer.TryParse(ConfigToken("Misc")?("Meteor game speed"), 0), ConfigToken("Misc")?("Meteor game speed"), 10)
 

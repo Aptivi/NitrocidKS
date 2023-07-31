@@ -64,7 +64,7 @@ Namespace Misc.Games
                 ElseIf UserEvaluated = "q" Then
                     Wdbg(DebugLevel.W, "User requested exit.")
                     Exit While
-                ElseIf ReadLineReboot.ReadLine.ReadRanToCompletion Then
+                Else
                     Wdbg(DebugLevel.E, "User evaluated ""{0}"". However, it's not numeric.", UserEvaluated)
                     Write(DoTranslation("You can only write the numbers."), True, ColTypes.Error)
                 End If

@@ -16,6 +16,8 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Imports TermRead.Reader
+
 Namespace Kernel
     Public Module Flags
 
@@ -266,32 +268,10 @@ Namespace Kernel
         ''' </summary>
         Public Property InputHistoryEnabled As Boolean
             Get
-                Return ReadLineReboot.ReadLine.HistoryEnabled
+                Return TermReaderSettings.HistoryEnabled
             End Get
             Set
-                ReadLineReboot.ReadLine.HistoryEnabled = Value
-            End Set
-        End Property
-        ''' <summary>
-        ''' Whether the clipboard and yanking (CTRL + Y) is enabled
-        ''' </summary>
-        Public Property InputClipboardEnabled As Boolean
-            Get
-                Return ReadLineReboot.ReadLine.ClipboardEnabled
-            End Get
-            Set
-                ReadLineReboot.ReadLine.ClipboardEnabled = Value
-            End Set
-        End Property
-        ''' <summary>
-        ''' Whether the undo function is enabled
-        ''' </summary>
-        Public Property InputUndoEnabled As Boolean
-            Get
-                Return ReadLineReboot.ReadLine.UndoEnabled
-            End Get
-            Set
-                ReadLineReboot.ReadLine.UndoEnabled = Value
+                TermReaderSettings.HistoryEnabled = Value
             End Set
         End Property
 

@@ -17,18 +17,12 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports KS.Files.Folders
-Imports ReadLineReboot
 
 Namespace Shell.ShellBase
-    Public Class CommandAutoComplete
-        Implements IAutoCompleteHandler
+    Public Module CommandAutoComplete
 
-        Private ReadOnly ShellTypeToAutocomplete As ShellType = ShellType.Shell
-
-        Public Property Separators As Char() = {" "c} Implements IAutoCompleteHandler.Separators
-
-        Public Function GetSuggestions(text As String, index As Integer) As String() Implements IAutoCompleteHandler.GetSuggestions
-            Dim ShellCommands = GetCommands(ShellTypeToAutocomplete)
+        Public Function GetSuggestions(text As String, index As Integer, delims As Char(), type As ShellType) As String()
+            Dim ShellCommands = GetCommands(type)
             If ShellStack.Count > 0 Then
                 If String.IsNullOrEmpty(text) Then
                     Return ShellCommands.Keys.ToArray()
@@ -66,9 +60,5 @@ Namespace Shell.ShellBase
             End If
         End Function
 
-        Protected Friend Sub New(Optional ShellType As ShellType = ShellType.Shell)
-            ShellTypeToAutocomplete = ShellType
-        End Sub
-
-    End Class
+    End Module
 End Namespace

@@ -107,7 +107,7 @@ Namespace Network.FTP
                     End If
 
                     'If we didn't abort, prompt for password
-                    If ReadLineReboot.ReadLine.ReadRanToCompletion Then PromptForPassword(FtpUser)
+                    PromptForPassword(FtpUser)
                 Catch ex As Exception
                     Wdbg(DebugLevel.W, "Error connecting to {0}: {1}", address, ex.Message)
                     WStkTrc(ex)
@@ -159,9 +159,6 @@ Namespace Network.FTP
                                 Write(DoTranslation("Invalid profile selection.") + NewLine, True, ColTypes.Error)
                                 WStkTrc(ex)
                             End Try
-                        ElseIf Not ReadLineReboot.ReadLine.ReadRanToCompletion Then
-                            'We're aborting.
-                            Exit Sub
                         End If
                     End While
                 End If
@@ -294,11 +291,9 @@ Namespace Network.FTP
                                 Wdbg(DebugLevel.I, "Response is out-of-bounds. Retrying...")
                                 Write(DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), True, ColTypes.Error, SpeedDialLines.Count)
                             End If
-                        ElseIf ReadLineReboot.ReadLine.ReadRanToCompletion Then
+                        Else
                             Wdbg(DebugLevel.W, "Response isn't numeric. IsStringNumeric(Answer) returned false.")
                             Write(DoTranslation("The selection is not a number. Try again."), True, ColTypes.Error)
-                        Else
-                            Answering = False
                         End If
                     End While
                 Else

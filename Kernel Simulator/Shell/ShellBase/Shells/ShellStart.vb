@@ -17,7 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports KS.Shell.Shells
-Imports ReadLineReboot
+Imports TermRead.Reader
 
 Namespace Shell.ShellBase.Shells
     Public Module ShellStart
@@ -49,7 +49,7 @@ Namespace Shell.ShellBase.Shells
             Dim ShellInfo As New ShellInfo(ShellType, ShellExecute, ShellCommandThread)
 
             'Now, initialize the command autocomplete handler. This will not be invoked if we have auto completion disabled.
-            ReadLine.AutoCompletionHandler = New CommandAutoComplete(ShellType)
+            TermReaderSettings.Suggestions = New Func(Of String, Integer, Char(), String())(Function(text, index, delims) GetSuggestions(text, index, delims, ShellType))
 
             'Add a new shell to the shell stack to indicate that we have a new shell (a visitor)!
             ShellStack.Add(ShellInfo)

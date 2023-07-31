@@ -21,6 +21,8 @@
 Imports System.Threading
 #End If
 
+Imports TermRead.Reader
+
 Namespace ConsoleBase.Inputs
     Public Module Input
 
@@ -61,10 +63,10 @@ Namespace ConsoleBase.Inputs
         ''' <param name="UseCtrlCAsInput">Whether to treat CTRL + C as input</param>
         Public Function ReadLine(InputText As String, DefaultValue As String, UseCtrlCAsInput As Boolean) As String
             'Store the initial CtrlCEnabled value. This is so we can restore the state of CTRL + C being enabled.
-            Dim CtrlCEnabled As Boolean = ReadLineReboot.ReadLine.CtrlCEnabled
-            ReadLineReboot.ReadLine.CtrlCEnabled = UseCtrlCAsInput
-            Dim Output As String = ReadLineReboot.ReadLine.Read(InputText, DefaultValue)
-            ReadLineReboot.ReadLine.CtrlCEnabled = CtrlCEnabled
+            Dim CtrlCEnabled As Boolean = TermReaderSettings.TreatCtrlCAsInput
+            TermReaderSettings.TreatCtrlCAsInput = UseCtrlCAsInput
+            Dim Output As String = TermReader.Read(InputText, DefaultValue)
+            TermReaderSettings.TreatCtrlCAsInput = CtrlCEnabled
             Return Output
         End Function
 
@@ -84,7 +86,12 @@ Namespace ConsoleBase.Inputs
         ''' </summary>
         ''' <param name="MaskChar">Specifies the password mask character</param>
         Public Function ReadLineNoInput(MaskChar As Char) As String
-            Return ReadLineReboot.ReadLine.ReadPassword("", MaskChar)
+            'Store the initial v value. This is so we can restore the state of MaskChar.
+            Dim PasswordMaskChar As Char = TermReaderSettings.PasswordMaskChar
+            TermReaderSettings.PasswordMaskChar = MaskChar
+            Dim Output As String = TermReader.ReadPassword("")
+            TermReaderSettings.PasswordMaskChar = PasswordMaskChar
+            Return Output
         End Function
 
         ''' <summary>

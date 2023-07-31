@@ -324,12 +324,9 @@ Namespace Network.RSS
                         Wdbg(DebugLevel.W, "Answer is out of range.")
                         Write(DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), True, ColTypes.Error, FeedListJsonNewsSources.Length)
                     End If
-                ElseIf ReadLineReboot.ReadLine.ReadRanToCompletion Then
+                Else
                     Wdbg(DebugLevel.W, "Answer is not numeric.")
                     Write(DoTranslation("The answer must be numeric."), True, ColTypes.Error)
-                Else
-                    'We're aborting
-                    Exit Sub
                 End If
             End While
 
@@ -366,12 +363,9 @@ Namespace Network.RSS
                         Wdbg(DebugLevel.W, "Answer is out of range.")
                         Write(DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), True, ColTypes.Error, FeedListJsonNewsSourceFeeds.Length)
                     End If
-                ElseIf ReadLineReboot.ReadLine.ReadRanToCompletion Then
+                Else
                     Wdbg(DebugLevel.W, "Answer is not numeric.")
                     Write(DoTranslation("The answer must be numeric."), True, ColTypes.Error)
-                Else
-                    'We're aborting
-                    Exit Sub
                 End If
             End While
 

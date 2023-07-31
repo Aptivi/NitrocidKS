@@ -97,12 +97,12 @@ Namespace Misc.Timers
 
                             'Try to parse the interval
                             Dim UnparsedInterval As String = ReadLine()
-                            If Not Double.TryParse(UnparsedInterval, TimerInterval) And ReadLineReboot.ReadLine.ReadRanToCompletion Then
+                            If Not Double.TryParse(UnparsedInterval, TimerInterval) Then
                                 'Not numeric.
                                 WriteWhere(DoTranslation("Indicated timeout is not numeric."), 2, KeysTextTopPosition - 4, False, ColTypes.Error)
                                 ClearLineToRight()
                                 Console.ReadKey()
-                            ElseIf ReadLineReboot.ReadLine.ReadRanToCompletion Then
+                            Else
                                 'Update the remaining time
                                 Dim RemainingString As String = GetRemainingTimeFromNow(TimerInterval)
                                 UpdateRemainingPositions(RemainingString, TimeLeftPosition, TimeTopPosition)

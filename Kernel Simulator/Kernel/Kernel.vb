@@ -27,11 +27,11 @@ Imports KS.Modifications
 Imports KS.Network.RemoteDebug
 Imports KS.Network.RPC
 Imports KS.TimeDate
-Imports ReadLineReboot
 Imports System.IO
 Imports System.Reflection.Assembly
 Imports System.Threading
 Imports KS.Misc.Notifications
+Imports TermRead.Reader
 
 #If SPECIFIER = "REL" Then
 Imports KS.Network
@@ -84,10 +84,8 @@ Namespace Kernel
                     SetTitle(ConsoleTitle)
 
                     'Initial ReadLine settings
-                    ReadLine.CtrlCEnabled = True
+                    TermReaderSettings.TreatCtrlCAsInput = True
                     InputHistoryEnabled = True
-                    ReadLine.PrewriteDefaultValue = True
-                    ReadLine.AutoCompletionEnabled = True
 
                     'Check for terminal
                     CheckConsole()

@@ -55,12 +55,10 @@ Namespace Network.SFTP
                     End If
 
                     'Check to see if we're aborting or not
-                    If ReadLineReboot.ReadLine.ReadRanToCompletion Then
-                        _clientSFTP = New SftpClient(PromptConnectionInfo(SftpHost, SftpPort, SFTPUser))
+                    _clientSFTP = New SftpClient(PromptConnectionInfo(SftpHost, SftpPort, SFTPUser))
 
-                        'Connect to SFTP
-                        ConnectSFTP()
-                    End If
+                    'Connect to SFTP
+                    ConnectSFTP()
                 Catch ex As Exception
                     Wdbg(DebugLevel.W, "Error connecting to {0}: {1}", address, ex.Message)
                     WStkTrc(ex)
@@ -147,11 +145,9 @@ Namespace Network.SFTP
                                 Wdbg(DebugLevel.I, "Response is out-of-bounds. Retrying...")
                                 Write(DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), True, ColTypes.Error, SpeedDialLines.Count)
                             End If
-                        ElseIf ReadLineReboot.ReadLine.ReadRanToCompletion Then
+                        Else
                             Wdbg(DebugLevel.W, "Response isn't numeric. IsStringNumeric(Answer) returned false.")
                             Write(DoTranslation("The selection is not a number. Try again."), True, ColTypes.Error)
-                        Else
-                            Answering = False
                         End If
                     End While
                 Else

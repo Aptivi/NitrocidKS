@@ -65,9 +65,7 @@ Namespace Network.Mail
 
             'Try to get the username or e-mail address from the input
             Dim InputMailAddress As String = ReadLine()
-            If Not String.IsNullOrWhiteSpace(Mail_UserPromptStyle) And ReadLineReboot.ReadLine.ReadRanToCompletion Then
-                PromptPassword(InputMailAddress)
-            End If
+            PromptPassword(InputMailAddress)
         End Sub
 
         ''' <summary>
