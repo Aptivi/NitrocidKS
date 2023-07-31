@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports System.Net.Sockets
+Imports System.Threading
 Imports KS.Misc.Notifications
 Imports KS.Misc.Screensaver
 
@@ -108,6 +109,7 @@ Namespace Network.RPC
         Sub ReceiveCommand()
             Dim RemoteEndpoint As New IPEndPoint(IPAddress.Any, RPCPort)
             While RPCStarted
+                Thread.Sleep(1)
                 Dim MessageBuffer() As Byte
                 Dim Message As String = ""
                 Try
