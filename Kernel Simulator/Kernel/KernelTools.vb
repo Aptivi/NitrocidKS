@@ -46,7 +46,6 @@ Namespace Kernel
         Public BannerFigletFont As String = "Banner"
         Friend RPCPowerListener As New KernelThread("RPC Power Listener Thread", True, AddressOf PowerManage)
         Friend LastKernelErrorException As Exception
-        Friend InstanceChecked As Boolean
 
         '----------------------------------------------- Kernel errors -----------------------------------------------
 
@@ -375,9 +374,6 @@ Namespace Kernel
             'Initialize custom languages
             InstallCustomLanguages()
 
-            'Check for multiple instances of KS
-            If InstanceChecked = False Then MultiInstance()
-
             'Create config file and then read it
             InitializeConfig()
 
@@ -439,21 +435,6 @@ Namespace Kernel
 
             'Load system env vars and convert them
             ConvertSystemEnvironmentVariables()
-        End Sub
-
-        '----------------------------------------------- Misc -----------------------------------------------
-
-        ''' <summary>
-        ''' Check to see if multiple Kernel Simulator processes are running.
-        ''' </summary>
-        Sub MultiInstance()
-            Static ksInst As Mutex
-            Dim ksOwner As Boolean
-            ksInst = New Mutex(True, "Kernel Simulator", ksOwner)
-            If Not ksOwner Then
-                KernelError(KernelErrorLevel.F, False, 0, DoTranslation("Another instance of Kernel Simulator is running. Shutting down in case of interference."), Nothing)
-            End If
-            InstanceChecked = True
         End Sub
 
         ''' <summary>
