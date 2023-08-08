@@ -74,6 +74,7 @@ Namespace Misc.Splash
                 CurrentSplash.Closing()
                 SplashThread = New Thread(Sub() CurrentSplash.Display())
                 Console.CursorVisible = True
+                CurrentSplash.SplashClosing = False
             End If
             _KernelBooted = True
         End Sub
