@@ -2,7 +2,7 @@
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pkgName    = "KS"
 $url        = "https://github.com/EoflaOE/Kernel-Simulator/releases/download/v0.0.12.13-alpha/0.0.12.13-bin.rar"
-$md5check   = "8badb9354005dc926610a6444c6e3f0b"
+$md5check   = "72d3b8979cdcdcd0a0926ee1bb2b9555"
 
 Write-Output "<*>: for assumptions, <+> for progress, <-> for error"
 Write-Output "<*> Installation directory: $toolsDir"
