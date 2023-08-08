@@ -565,7 +565,6 @@
     <Compile Include="Shell\Commands\Beep.vb" />
     <Compile Include="Shell\Commands\BlockDbgDev.vb" />
     <Compile Include="Shell\Commands\Calendar.vb" />
-    <Compile Include="Shell\Commands\Calc.vb" />
     <Compile Include="Shell\Commands\Cat.vb" />
     <Compile Include="Shell\Commands\CdbgLog.vb" />
     <Compile Include="Shell\Commands\ChAttr.vb" />
@@ -712,7 +711,6 @@
     <Compile Include="TestShell\Commands\CheckStrings.vb" />
     <Compile Include="TestShell\Commands\GetLineStyle.vb" />
     <Compile Include="TestShell\Commands\PrintFiglet.vb" />
-    <Compile Include="TestShell\Commands\PrintFigletF.vb" />
     <Compile Include="TestShell\Commands\SleepTook.vb" />
     <Compile Include="TestShell\Commands\TestCRC32.vb" />
     <Compile Include="TestShell\Commands\TestTable.vb" />
@@ -742,12 +740,8 @@
     <Compile Include="TestShell\Commands\ShowTime.vb" />
     <Compile Include="TestShell\Commands\Print.vb" />
     <Compile Include="TestShell\Commands\PrintD.vb" />
-    <Compile Include="TestShell\Commands\PrintDF.vb" />
-    <Compile Include="TestShell\Commands\PrintF.vb" />
     <Compile Include="TestShell\Commands\PrintSep.vb" />
     <Compile Include="TestShell\Commands\PrintSepColor.vb" />
-    <Compile Include="TestShell\Commands\PrintSepColorF.vb" />
-    <Compile Include="TestShell\Commands\PrintSepF.vb" />
     <Compile Include="TestShell\Commands\ProbeHw.vb" />
     <Compile Include="TestShell\Commands\RDebug.vb" />
     <Compile Include="TestShell\Commands\SendNotProg.vb" />
