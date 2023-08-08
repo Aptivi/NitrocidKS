@@ -175,7 +175,6 @@ Public Module FTPTools
         Wdbg("I", "Speed dial length: {0}", SpeedDialLines.Length)
         If SpeedDialLines.Contains(ftpsite + "," + CStr(ClientFTP.Port) + "," + user) Then
             Wdbg("I", "Site already there.")
-            Exit Sub
         Else
             'Speed dial format is below:
             'Site,Port,Username,Encryption
