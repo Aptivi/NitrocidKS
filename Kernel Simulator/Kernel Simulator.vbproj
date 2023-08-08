@@ -115,7 +115,7 @@
     <PackageReference Include="Crc32.NET" Version="1.2.0" />
     <PackageReference Include="Dictify" Version="1.0.0.1" />
     <PackageReference Include="Extensification" Version="2022.2.1" />
-    <PackageReference Include="Figgle" Version="0.4.0" />
+    <PackageReference Include="Figgle" Version="0.5.1" />
     <PackageReference Include="FluentFTP" Version="39.0.1" />
     <PackageReference Include="GRILO.Boot" Version="0.1.0" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.43" />
@@ -124,7 +124,7 @@
     <PackageReference Include="ManagedWeatherMap" Version="1.0.1" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
     <PackageReference Include="Namer" Version="1.0.0.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="NuGet.Build.Tasks.Pack" Version="6.2.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
@@ -132,7 +132,7 @@
     <PackageReference Include="SharpCompress" Version="0.32.2" />
     <PackageReference Include="SSH.NET" Version="2020.0.2" />
     <PackageReference Include="StringMath" Version="3.0.2" />
-    <PackageReference Include="TermRead" Version="0.6.2" />
+    <PackageReference Include="Terminaux" Version="1.0.1" />
     <PackageReference Include="UnitsNet" Version="4.141.0" />
   </ItemGroup>
   <!-- KS Dependencies Information End -->

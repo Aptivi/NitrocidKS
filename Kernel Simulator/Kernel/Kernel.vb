@@ -31,7 +31,6 @@ Imports System.IO
 Imports System.Reflection.Assembly
 Imports System.Threading
 Imports KS.Misc.Notifications
-Imports TermRead.Reader
 
 #If SPECIFIER = "REL" Then
 Imports KS.Network
@@ -84,7 +83,7 @@ Namespace Kernel
                     SetTitle(ConsoleTitle)
 
                     'Initial ReadLine settings
-                    TermReaderSettings.TreatCtrlCAsInput = True
+                    GlobalSettings.TreatCtrlCAsInput = True
                     InputHistoryEnabled = True
 
                     'Check for terminal

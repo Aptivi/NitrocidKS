@@ -16,8 +16,6 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports TermRead.Reader
-
 Namespace Kernel
     Public Module Flags
 
@@ -268,10 +266,10 @@ Namespace Kernel
         ''' </summary>
         Public Property InputHistoryEnabled As Boolean
             Get
-                Return TermReaderSettings.HistoryEnabled
+                Return GlobalSettings.HistoryEnabled
             End Get
             Set
-                TermReaderSettings.HistoryEnabled = Value
+                GlobalSettings.HistoryEnabled = Value
             End Set
         End Property
 
