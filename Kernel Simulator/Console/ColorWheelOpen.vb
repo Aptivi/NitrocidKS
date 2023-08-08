@@ -99,7 +99,7 @@ Namespace ConsoleBase
                     Write(NewLine + "  ", False, ColTypes.Neutral)
                     Write(" < ", False, RedForeground, RedBackground)
                     WriteWhere("R: {0}", (Console.CursorLeft + 35 - $"R: {CurrentColorR}".Length) / 2, Console.CursorTop, True, New Color($"{CurrentColorR};0;0"), CurrentColorR)
-                    WriteWhere(" > " + NewLine, Console.CursorLeft + 32, Console.CursorTop, False, RedForeground, RedBackground)
+                    WriteWhere(" > " + NewLine, Console.CursorLeft + 32, Console.CursorTop, True, RedForeground, RedBackground)
 
                     'The green color level
                     Dim GreenForeground As Color = If(CurrentRange = "G", New Color(ConsoleColors.Black), New Color("0;255;0"))
@@ -108,7 +108,7 @@ Namespace ConsoleBase
                     Write(NewLine + "  ", False, ColTypes.Neutral)
                     Write(" < ", False, GreenForeground, GreenBackground)
                     WriteWhere("G: {0}", (Console.CursorLeft + 35 - $"G: {CurrentColorG}".Length) / 2, Console.CursorTop, True, New Color($"0;{CurrentColorG};0"), CurrentColorG)
-                    WriteWhere(" > " + NewLine, Console.CursorLeft + 32, Console.CursorTop, False, GreenForeground, GreenBackground)
+                    WriteWhere(" > " + NewLine, Console.CursorLeft + 32, Console.CursorTop, True, GreenForeground, GreenBackground)
 
                     'The blue color level
                     Dim BlueForeground As Color = If(CurrentRange = "B", New Color(ConsoleColors.Black), New Color("0;0;255"))
@@ -117,7 +117,7 @@ Namespace ConsoleBase
                     Write(NewLine + "  ", False, ColTypes.Neutral)
                     Write(" < ", False, BlueForeground, BlueBackground)
                     WriteWhere("B: {0}", (Console.CursorLeft + 35 - $"B: {CurrentColorB}".Length) / 2, Console.CursorTop, True, New Color($"0;0;{CurrentColorB}"), CurrentColorB)
-                    WriteWhere(" > " + NewLine, Console.CursorLeft + 32, Console.CursorTop, False, BlueForeground, BlueBackground)
+                    WriteWhere(" > " + NewLine + NewLine, Console.CursorLeft + 32, Console.CursorTop, True, BlueForeground, BlueBackground)
 
                     'Draw the RGB ramp
                     WriteWhere(WheelUpperLeftCornerChar + WheelUpperFrameChar.Repeat(Console.WindowWidth - 6) + WheelUpperRightCornerChar, 2, Console.WindowHeight - 6, True, ColTypes.Gray)
@@ -273,7 +273,7 @@ Namespace ConsoleBase
                     'The color selection
                     Write(NewLine + "   < ", False, ColTypes.Gray)
                     WriteWhere($"{CurrentColor} [{Convert.ToInt32(CurrentColor)}]", (Console.CursorLeft + 38 - $"{CurrentColor} [{Convert.ToInt32(CurrentColor)}]".Length) / 2, Console.CursorTop, True, New Color(CurrentColor))
-                    WriteWhere(" >", Console.CursorLeft + 32, Console.CursorTop, False, ColTypes.Gray)
+                    WriteWhere(" >", Console.CursorLeft + 32, Console.CursorTop, True, ColTypes.Gray)
 
                     'Show prompt
                     Write(NewLine + NewLine + "- Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, New Color(CurrentColor))
