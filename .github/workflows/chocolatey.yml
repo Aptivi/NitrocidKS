@@ -22,4 +22,4 @@ jobs:
     - name: Package Publication
       run: |
         $FileName = Get-ChildItem -Path $pwd.Path -Name -Filter "KS*.nupkg"
-        choco push "$pwd\$FileName"
+        choco push "$pwd\$FileName" --source https://push.chocolatey.org/
