@@ -1,13 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>
-    </ProductVersion>
-    <SchemaVersion>
-    </SchemaVersion>
     <ProjectGuid>{C7B37899-C361-423D-9512-FE0A87A46866}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <StartupObject>KS.Kernel</StartupObject>
@@ -15,9 +10,7 @@
     <AssemblyName>Kernel Simulator</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Console</MyType>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
+    <TargetFramework>net48</TargetFramework>
     <!-- KS Nuget Information -->
     <PackageId>KS</PackageId>
     <Version>0.0.12.14</Version>
@@ -47,28 +40,6 @@
       <dependency id="Extensification" version="2022.1.0" />
     </Dependencies>
     <!-- KS Nuget Information End -->
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\EoflaOE\Desktop\visual basic projects\VB2010\Kernel Simulator\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <TargetCulture>en-US</TargetCulture>
-    <ProductName>Kernel Simulator</ProductName>
-    <PublisherName>EoflaOE</PublisherName>
-    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>0.0.2.%2a</ApplicationVersion>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <CreateDesktopShortcut>true</CreateDesktopShortcut>
-    <PublishWizardCompleted>true</PublishWizardCompleted>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -129,15 +100,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>iconfinder_applications-utilities_8840.ico</ApplicationIcon>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ManifestCertificateThumbprint>F1A42ADA35A42942B5F12BA2CA2FC6F3464C0BDD</ManifestCertificateThumbprint>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ManifestKeyFile>Kernel Simulator_TemporaryKey.pfx</ManifestKeyFile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -241,111 +203,6 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arguments\ArgumentParse.vb" />
-    <Compile Include="Arguments\ArgumentPrompt.vb" />
-    <Compile Include="Arguments\CommandLineArgsParse.vb" />
-    <Compile Include="Console\Color.vb" />
-    <Compile Include="Console\Color255.vb" />
-    <Compile Include="Console\Input.vb" />
-    <Compile Include="Console\RGB.vb" />
-    <Compile Include="Files\Filesystem.vb" />
-    <Compile Include="Hardware\HardwareVars.vb" />
-    <Compile Include="Hardware\HDD\PrintHDDInfo.vb" />
-    <Compile Include="Kernel\EventsAndExceptions.vb" />
-    <Compile Include="Kernel\Flags.vb" />
-    <Compile Include="Kernel\KernelTools.vb" />
-    <Compile Include="Languages\Translate.vb" />
-    <Compile Include="Login\PermissionManagement.vb" />
-    <Compile Include="Misc\Calculation\Calc.vb" />
-    <Compile Include="Misc\Configuration\ConfigTool\ToolPrompts.vb" />
-    <Compile Include="Misc\Encryption\Encryption.vb" />
-    <Compile Include="Misc\Configuration\OldConfigUp.vb" />
-    <Compile Include="Misc\Forecast\Forecast.vb" />
-    <Compile Include="Misc\Forecast\ForecastInfo.vb" />
-    <Compile Include="Misc\Games\LoveHateRespond.vb" />
-    <Compile Include="Misc\Games\Solver.vb" />
-    <Compile Include="Misc\Games\Speller.vb" />
-    <Compile Include="Misc\Notifiers\Notifications.vb" />
-    <Compile Include="Misc\Probers\MOTDParse.vb" />
-    <Compile Include="Misc\Probers\PlaceParse.vb" />
-    <Compile Include="Misc\Configuration\Config.vb" />
-    <Compile Include="Misc\CPUFeatures.vb" />
-    <Compile Include="Misc\Screensaver\Screensaver.vb" />
-    <Compile Include="Misc\Screensaver\ScreensaverDisplays.vb" />
-    <Compile Include="Misc\Screensaver\ScreensaverSettings.vb" />
-    <Compile Include="Misc\Scripts\BeepSynth.vb" />
-    <Compile Include="Misc\StringEvaluators.vb" />
-    <Compile Include="Misc\TextEdit\TextEditGetCommand.vb" />
-    <Compile Include="Misc\TextEdit\TextEditHelpSystem.vb" />
-    <Compile Include="Misc\TextEdit\TextEditShell.vb" />
-    <Compile Include="Misc\TextEdit\TextEditTools.vb" />
-    <Compile Include="Misc\Writers\DebugLogPrint.vb" />
-    <Compile Include="Misc\Writers\DebugWriters.vb" />
-    <Compile Include="Misc\Writers\TextWriterColor.vb" />
-    <Compile Include="Modifications\ModExecutor.vb" />
-    <Compile Include="Modifications\ModParser.vb" />
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Network\FTP\Filesystem\FTPFilesystem.vb" />
-    <Compile Include="Network\FTP\FTPGetCommand.vb" />
-    <Compile Include="Network\FTP\FTPHelpSystem.vb" />
-    <Compile Include="Network\FTP\FTPShell.vb" />
-    <Compile Include="Network\FTP\FTPTools.vb" />
-    <Compile Include="Network\FTP\Transfer\FTPTransfer.vb" />
-    <Compile Include="Network\Mail\MailDirectory\MailDirectory.vb" />
-    <Compile Include="Network\Mail\MailDirectory\MailManager.vb" />
-    <Compile Include="Network\Mail\MailPGP\PGPContext.vb" />
-    <Compile Include="Network\Mail\MailTransfer\MailTransfer.vb" />
-    <Compile Include="Network\NetworkTools.vb" />
-    <Compile Include="Network\NetworkTransfer.vb" />
-    <Compile Include="Network\RemoteDebug\RemoteDebugCmd.vb" />
-    <Compile Include="Network\RemoteDebug\RemoteDebugger.vb" />
-    <Compile Include="Network\RemoteDebug\RemoteDebugTools.vb" />
-    <Compile Include="Network\RPC\RemoteProcedure.vb" />
-    <Compile Include="Network\RPC\RPC-Commands.vb" />
-    <Compile Include="Network\Mail\MailGetCommand.vb" />
-    <Compile Include="Network\Mail\MailHelpSystem.vb" />
-    <Compile Include="Network\Mail\MailLogin.vb" />
-    <Compile Include="Network\Mail\MailShell.vb" />
-    <Compile Include="Network\SSH\SSH.vb" />
-    <Compile Include="Scripting\Interaction\Commands.vb" />
-    <Compile Include="Scripting\UESHParse.vb" />
-    <Compile Include="Scripting\UESHVariables.vb" />
-    <Compile Include="Shell\AliasManager.vb" />
-    <Compile Include="Shell\GetCommand.vb" />
-    <Compile Include="Hardware\HardwareProbe.vb" />
-    <Compile Include="Kernel\Kernel.vb" />
-    <Compile Include="Login\Login.vb" />
-    <Compile Include="Login\UserManagement.vb" />
-    <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="My Project\Application.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
-    <Compile Include="My Project\Settings.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="Shell\HelpSystem.vb" />
-    <Compile Include="Shell\Shell.vb" />
-    <Compile Include="TestShell\TestGetCommand.vb" />
-    <Compile Include="TestShell\TestShell.vb" />
-    <Compile Include="TimeDate\TimeDate.vb" />
-    <Compile Include="TimeDate\TimeZones.vb" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="My Project\Resources.resx">
-      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
-      <CustomToolNamespace>My.Resources</CustomToolNamespace>
-      <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
     <None Include="app.manifest" />
     <None Include="My Project\app.manifest" />
@@ -360,36 +217,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
-      <Visible>False</Visible>
-      <ProductName>Windows Installer 4.5</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\vtn.txt" />
     <None Include="Resources\arb-T.txt" />
-    <Content Include="Resources\arb.txt" />
+    <None Include="Resources\arb.txt" />
     <None Include="Resources\chi-T.txt" />
     <None Include="Resources\ben.txt" />
     <None Include="Resources\ben-T.txt" />
     <None Include="Resources\azr.txt" />
-    <Content Include="Resources\cro.txt" />
+    <None Include="Resources\cro.txt" />
     <None Include="Resources\jpn.txt" />
     <None Include="Resources\ind-T.txt" />
     <None Include="Resources\jpn-T.txt" />
@@ -399,12 +234,12 @@
     <None Include="Resources\flp.txt" />
     <None Include="Resources\ctl.txt" />
     <None Include="Resources\mts.txt" />
-    <Content Include="Resources\ndo.txt" />
+    <None Include="Resources\ndo.txt" />
     <None Include="Resources\nwg.txt" />
-    <Content Include="Resources\pol.txt" />
+    <None Include="Resources\pol.txt" />
     <None Include="Resources\pun.txt" />
     <None Include="Resources\pun-T.txt" />
-    <Content Include="Resources\rmn.txt" />
+    <None Include="Resources\rmn.txt" />
     <None Include="Resources\rus.txt" />
     <None Include="Resources\rus-T.txt" />
     <None Include="Resources\slo.txt" />
@@ -412,7 +247,7 @@
     <None Include="Resources\srb-T.txt" />
     <None Include="Resources\som.txt" />
     <None Include="Resources\swa.txt" />
-    <Content Include="Resources\uzb.txt" />
+    <None Include="Resources\uzb.txt" />
     <None Include="Resources\cze.txt" />
     <None Include="Resources\swe.txt" />
     <None Include="Resources\mal.txt" />
@@ -430,7 +265,6 @@
     <None Include="iconfinder_applications-utilities_8840.png" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <PropertyGroup>
     <PreBuildEvent>echo "Building $(ProjectName) with config $(ConfigurationName) for $(PlatformName) in $(TargetDir)..."</PreBuildEvent>
   </PropertyGroup>
