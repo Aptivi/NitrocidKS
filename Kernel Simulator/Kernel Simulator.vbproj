@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,10 +10,11 @@
     <AssemblyName>Kernel Simulator</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Console</MyType>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFramework>net48</TargetFramework>
     <!-- KS Nuget Information -->
     <PackageId>KS</PackageId>
     <Version>0.0.16.19</Version>
+    <FileVersion>1.0.16.19</FileVersion>
     <Authors>EoflaOE</Authors>
     <Title>Kernel Simulator</Title>
     <PackageDescription>Simulates our future-planned kernel</PackageDescription>
@@ -147,160 +147,6 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arguments\ArgumentParse.vb" />
-    <Compile Include="Arguments\ArgumentPrompt.vb" />
-    <Compile Include="Arguments\CommandLineArgsParse.vb" />
-    <Compile Include="Console\Color.vb" />
-    <Compile Include="Console\Color255.vb" />
-    <Compile Include="Console\ConsoleExtensions.vb" />
-    <Compile Include="Console\Input.vb" />
-    <Compile Include="Console\RGB.vb" />
-    <Compile Include="Console\Themes\ThemeInfo.vb" />
-    <Compile Include="Console\Themes\ThemeStudio.vb" />
-    <Compile Include="Console\Themes\ThemeStudioTools.vb" />
-    <Compile Include="Files\Filesystem.vb" />
-    <Compile Include="Files\FilesystemEnums.vb" />
-    <Compile Include="Hardware\HardwareList.vb" />
-    <Compile Include="Kernel\Events.vb" />
-    <Compile Include="Kernel\Exceptions.vb" />
-    <Compile Include="Kernel\Flags.vb" />
-    <Compile Include="Kernel\KernelTools.vb" />
-    <Compile Include="Languages\LanguageInfo.vb" />
-    <Compile Include="Languages\Translate.vb" />
-    <Compile Include="Login\PermissionManagement.vb" />
-    <Compile Include="Misc\Configuration\ConfigTool\ToolPrompts.vb" />
-    <Compile Include="Misc\Encryption\Encryption.vb" />
-    <Compile Include="Misc\Encryption\HashVerifier.vb" />
-    <Compile Include="Misc\FieldManager.vb" />
-    <Compile Include="Misc\Forecast\Forecast.vb" />
-    <Compile Include="Misc\Forecast\ForecastInfo.vb" />
-    <Compile Include="Misc\Games\LoveHateRespond.vb" />
-    <Compile Include="Misc\Games\Solver.vb" />
-    <Compile Include="Misc\Games\SpeedPress.vb" />
-    <Compile Include="Misc\Games\Speller.vb" />
-    <Compile Include="Misc\Notifiers\Notifications.vb" />
-    <Compile Include="Misc\Probers\MOTDParse.vb" />
-    <Compile Include="Misc\Probers\PlaceParse.vb" />
-    <Compile Include="Misc\Configuration\Config.vb" />
-    <Compile Include="Misc\ReportBugPrompt.vb" />
-    <Compile Include="Misc\Screensaver\Displays\Fader.vb" />
-    <Compile Include="Misc\Screensaver\Displays\Lighter.vb" />
-    <Compile Include="Misc\Screensaver\Displays\Marquee.vb" />
-    <Compile Include="Misc\Screensaver\Displays\Plain.vb" />
-    <Compile Include="Misc\Screensaver\Displays\ProgressClock.vb" />
-    <Compile Include="Misc\Screensaver\Displays\Dissolve.vb" />
-    <Compile Include="Misc\Screensaver\Displays\Custom.vb" />
-    <Compile Include="Misc\Screensaver\Displays\BouncingBlock.vb" />
-    <Compile Include="Misc\Screensaver\Displays\BouncingText.vb" />
-    <Compile Include="Misc\Screensaver\Displays\HackUserFromAD.vb" />
-    <Compile Include="Misc\Screensaver\Displays\AptErrorSim.vb" />
-    <Compile Include="Misc\Screensaver\Displays\GlitterColor.vb" />
-    <Compile Include="Misc\Screensaver\Displays\GlitterMatrix.vb" />
-    <Compile Include="Misc\Screensaver\Displays\Lines.vb" />
-    <Compile Include="Misc\Screensaver\Displays\Disco.vb" />
-    <Compile Include="Misc\Screensaver\Displays\Matrix.vb" />
-    <Compile Include="Misc\Screensaver\Displays\ColorMix.vb" />
-    <Compile Include="Misc\Screensaver\Displays\Typo.vb" />
-    <Compile Include="Misc\Screensaver\Displays\Wipe.vb" />
-    <Compile Include="Misc\Screensaver\Screensaver.vb" />
-    <Compile Include="Misc\Screensaver\ScreensaverSettings.vb" />
-    <Compile Include="Misc\StringEvaluators.vb" />
-    <Compile Include="Misc\TextEdit\TextEditGetCommand.vb" />
-    <Compile Include="Misc\TextEdit\TextEditHelpSystem.vb" />
-    <Compile Include="Misc\TextEdit\TextEditShell.vb" />
-    <Compile Include="Misc\TextEdit\TextEditTools.vb" />
-    <Compile Include="Misc\Threading\ThreadManager.vb" />
-    <Compile Include="Misc\Writers\FancyWriters\SeparatorColor.vb" />
-    <Compile Include="Misc\Writers\ConsoleWriters\ListWriterColor.vb" />
-    <Compile Include="Misc\Writers\ConsoleWriters\TextWriterSlowColor.vb" />
-    <Compile Include="Misc\Writers\ConsoleWriters\TextWriterWhereSlowColor.vb" />
-    <Compile Include="Misc\Writers\ConsoleWriters\TextWriterWhereColor.vb" />
-    <Compile Include="Misc\Writers\ConsoleWriters\TextWriterWrappedColor.vb" />
-    <Compile Include="Misc\Writers\DebugWriters.vb" />
-    <Compile Include="Misc\Writers\ConsoleWriters\TextWriterColor.vb" />
-    <Compile Include="Misc\ZipFile\ZipGetCommand.vb" />
-    <Compile Include="Misc\ZipFile\ZipHelpSystem.vb" />
-    <Compile Include="Misc\ZipFile\ZipTools.vb" />
-    <Compile Include="Misc\ZipFile\ZipShell.vb" />
-    <Compile Include="Modifications\ModExecutor.vb" />
-    <Compile Include="Modifications\ModParser.vb" />
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Network\RemoteDebug\RemoteDebugHelpSystem.vb" />
-    <Compile Include="Network\RSS\Instance\RSSArticle.vb" />
-    <Compile Include="Network\RSS\Instance\RSSFeed.vb" />
-    <Compile Include="Network\RSS\RSSGetCommand.vb" />
-    <Compile Include="Network\RSS\RSSHelpSystem.vb" />
-    <Compile Include="Network\RSS\RSSShell.vb" />
-    <Compile Include="Network\RSS\RSSTools.vb" />
-    <Compile Include="Network\SFTP\Filesystem\SFTPFilesystem.vb" />
-    <Compile Include="Network\SFTP\SFTPGetCommand.vb" />
-    <Compile Include="Network\SFTP\SFTPHelpSystem.vb" />
-    <Compile Include="Network\SFTP\SFTPShell.vb" />
-    <Compile Include="Network\SFTP\SFTPTools.vb" />
-    <Compile Include="Network\SFTP\Transfer\SFTPTransfer.vb" />
-    <Compile Include="Network\FTP\Filesystem\FTPFilesystem.vb" />
-    <Compile Include="Network\FTP\FTPGetCommand.vb" />
-    <Compile Include="Network\FTP\FTPHelpSystem.vb" />
-    <Compile Include="Network\FTP\FTPShell.vb" />
-    <Compile Include="Network\FTP\FTPTools.vb" />
-    <Compile Include="Network\FTP\Transfer\FTPTransfer.vb" />
-    <Compile Include="Network\Mail\MailDirectory\MailDirectory.vb" />
-    <Compile Include="Network\Mail\MailDirectory\MailManager.vb" />
-    <Compile Include="Network\Mail\MailPGP\PGPContext.vb" />
-    <Compile Include="Network\Mail\MailTransfer\MailTransfer.vb" />
-    <Compile Include="Network\NetworkTools.vb" />
-    <Compile Include="Network\NetworkTransfer.vb" />
-    <Compile Include="Network\RemoteDebug\RemoteDebugCmd.vb" />
-    <Compile Include="Network\RemoteDebug\RemoteDebugger.vb" />
-    <Compile Include="Network\RemoteDebug\RemoteDebugTools.vb" />
-    <Compile Include="Network\RPC\RemoteProcedure.vb" />
-    <Compile Include="Network\RPC\RPC-Commands.vb" />
-    <Compile Include="Network\Mail\MailGetCommand.vb" />
-    <Compile Include="Network\Mail\MailHelpSystem.vb" />
-    <Compile Include="Network\Mail\MailLogin.vb" />
-    <Compile Include="Network\Mail\MailShell.vb" />
-    <Compile Include="Network\SSH\SSH.vb" />
-    <Compile Include="Scripting\Interaction\UESHCommands.vb" />
-    <Compile Include="Scripting\UESHParse.vb" />
-    <Compile Include="Scripting\UESHVariables.vb" />
-    <Compile Include="Shell\AliasManager.vb" />
-    <Compile Include="Shell\CommandInfo.vb" />
-    <Compile Include="Shell\GetCommand.vb" />
-    <Compile Include="Hardware\HardwareProbe.vb" />
-    <Compile Include="Kernel\Kernel.vb" />
-    <Compile Include="Login\Login.vb" />
-    <Compile Include="Login\UserManagement.vb" />
-    <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="My Project\Application.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
-    <Compile Include="My Project\Settings.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="Shell\HelpSystem.vb" />
-    <Compile Include="Shell\Shell.vb" />
-    <Compile Include="TestShell\TestGetCommand.vb" />
-    <Compile Include="TestShell\TestHelpSystem.vb" />
-    <Compile Include="TestShell\TestShell.vb" />
-    <Compile Include="TimeDate\TimeDate.vb" />
-    <Compile Include="TimeDate\TimeZones.vb" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="My Project\Resources.resx">
-      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
-      <CustomToolNamespace>My.Resources</CustomToolNamespace>
-      <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
     <None Include="app.manifest" />
     <None Include="My Project\app.manifest" />
@@ -408,7 +254,6 @@
   <ItemGroup>
     <None Include="Resources\zul.json" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <PropertyGroup>
     <PreBuildEvent>echo "Building $(ProjectName) with config $(ConfigurationName) for $(PlatformName) in $(TargetDir)..."</PreBuildEvent>
   </PropertyGroup>
