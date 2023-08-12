@@ -30,9 +30,9 @@ Namespace Network.Mail.PGP
         ''' <returns>Entered Password</returns>
         Protected Overrides Function GetPasswordForKey(key As PgpSecretKey) As String
             If Not String.IsNullOrWhiteSpace(Mail_GPGPromptStyle) Then
-                Write(ProbePlaces(Mail_GPGPromptStyle), False, ColTypes.Input, key.KeyId)
+                TextWriterColor.Write(ProbePlaces(Mail_GPGPromptStyle), False, ColTypes.Input, key.KeyId)
             Else
-                Write(DoTranslation("Write password for key ID {0}") + ": ", False, ColTypes.Input, key.KeyId)
+                TextWriterColor.Write(DoTranslation("Write password for key ID {0}") + ": ", False, ColTypes.Input, key.KeyId)
             End If
             Dim Password As String = ReadLineNoInput()
             Console.WriteLine()

@@ -34,24 +34,24 @@ Namespace Shell.Commands
                             Dim Credentials As New NetworkCredential
                             If ListArgs.Length > 1 Then 'Username specified
                                 Credentials.UserName = ListArgs(1)
-                                Write(DoTranslation("Enter password: "), False, ColTypes.Input)
+                                TextWriterColor.Write(DoTranslation("Enter password: "), False, ColTypes.Input)
                                 Credentials.Password = ReadLineNoInput()
                                 Console.WriteLine()
                             End If
-                            Write(DoTranslation("Downloading from {0}..."), True, ColTypes.Neutral, URL)
+                            TextWriterColor.Write(DoTranslation("Downloading from {0}..."), True, ColTypes.Neutral, URL)
                             If DownloadFile(ListArgs(0), Credentials) Then
-                                Write(DoTranslation("Download has completed."), True, ColTypes.Neutral)
+                                TextWriterColor.Write(DoTranslation("Download has completed."), True, ColTypes.Neutral)
                             End If
                         Else
-                            Write(DoTranslation("Specify the address"), True, ColTypes.Error)
+                            TextWriterColor.Write(DoTranslation("Specify the address"), True, ColTypes.Error)
                         End If
                     Else
-                        Write(DoTranslation("Please use ""ftp"" if you are going to download files from the FTP server."), True, ColTypes.Error)
+                        TextWriterColor.Write(DoTranslation("Please use ""ftp"" if you are going to download files from the FTP server."), True, ColTypes.Error)
                     End If
                     Exit Sub
                 Catch ex As Exception
                     DFinish = False
-                    Write(DoTranslation("Download failed in try {0}: {1}"), True, ColTypes.Error, RetryCount, ex.Message)
+                    TextWriterColor.Write(DoTranslation("Download failed in try {0}: {1}"), True, ColTypes.Error, RetryCount, ex.Message)
                     RetryCount += 1
                     Wdbg(DebugLevel.I, "Try count: {0}", RetryCount)
                     WStkTrc(ex)

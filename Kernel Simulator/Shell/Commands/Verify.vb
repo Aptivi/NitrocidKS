@@ -29,26 +29,26 @@ Namespace Shell.Commands
                 Dim HashFile As String = NeutralizePath(ListArgs(2))
                 If FileExists(HashFile) Then
                     If VerifyHashFromHashesFile(ListArgs(3), [Enum].Parse(GetType(Algorithms), ListArgs(0)), ListArgs(2), ListArgs(1)) Then
-                        Write(DoTranslation("Hashes match."), True, ColTypes.Neutral)
+                        TextWriterColor.Write(DoTranslation("Hashes match."), True, ColTypes.Neutral)
                     Else
-                        Write(DoTranslation("Hashes don't match."), True, ColTypes.Warning)
+                        TextWriterColor.Write(DoTranslation("Hashes don't match."), True, ColTypes.Warning)
                     End If
                 Else
                     If VerifyHashFromHash(ListArgs(3), [Enum].Parse(GetType(Algorithms), ListArgs(0)), ListArgs(2), ListArgs(1)) Then
-                        Write(DoTranslation("Hashes match."), True, ColTypes.Neutral)
+                        TextWriterColor.Write(DoTranslation("Hashes match."), True, ColTypes.Neutral)
                     Else
-                        Write(DoTranslation("Hashes don't match."), True, ColTypes.Warning)
+                        TextWriterColor.Write(DoTranslation("Hashes don't match."), True, ColTypes.Warning)
                     End If
                 End If
             Catch ihae As Exceptions.InvalidHashAlgorithmException
                 WStkTrc(ihae)
-                Write(DoTranslation("Invalid encryption algorithm."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("Invalid encryption algorithm."), True, ColTypes.Error)
             Catch ihe As Exceptions.InvalidHashException
                 WStkTrc(ihe)
-                Write(DoTranslation("Hashes are malformed."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("Hashes are malformed."), True, ColTypes.Error)
             Catch fnfe As FileNotFoundException
                 WStkTrc(fnfe)
-                Write(DoTranslation("{0} is not found."), True, ColTypes.Error, ListArgs(3))
+                TextWriterColor.Write(DoTranslation("{0} is not found."), True, ColTypes.Error, ListArgs(3))
             End Try
         End Sub
 

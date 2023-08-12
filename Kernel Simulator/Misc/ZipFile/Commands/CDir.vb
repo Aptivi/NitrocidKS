@@ -22,7 +22,7 @@ Namespace Misc.ZipFile.Commands
         Implements ICommand
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
-            Write(ZipShell_CurrentDirectory, True, ColTypes.Neutral)
+            TextWriterColor.Write(ZipShell_CurrentDirectory, True, ColTypes.Neutral)
         End Sub
 
     End Class

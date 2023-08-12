@@ -33,7 +33,7 @@ Namespace Misc.Games
             Dim Operations() As String = {"+", "-", "*", "/"}
 
             'Show tip to exit
-            Write(DoTranslation("Press ""q"" to exit."), True, ColTypes.Neutral)
+            TextWriterColor.Write(DoTranslation("Press ""q"" to exit."), True, ColTypes.Neutral)
             Wdbg(DebugLevel.I, "Initialized expressions.")
             While True
                 'Populate the numbers
@@ -44,7 +44,7 @@ Namespace Misc.Games
                 'Generate the expression
                 RandomExpression = CStr(FirstNumber) + Operations.ElementAt(OperationIndex) + CStr(SecondNumber)
                 Wdbg(DebugLevel.I, "Expression to be solved: {0}", RandomExpression)
-                Write(RandomExpression, True, ColTypes.Input)
+                TextWriterColor.Write(RandomExpression, True, ColTypes.Input)
 
                 'Wait for response
                 UserEvaluated = If(SolverShowInput, Console.ReadLine(), ReadLineNoInput(""))
@@ -56,17 +56,17 @@ Namespace Misc.Games
                 If Double.TryParse(UserEvaluated, UserEvaluatedNumber) Then
                     If UserEvaluatedNumber = EvaluatedNumber Then
                         Wdbg(DebugLevel.I, "Expression is {0} and equals {1}", UserEvaluated, EvaluatedNumber)
-                        Write(DoTranslation("Solved perfectly!"), True, ColTypes.Neutral)
+                        TextWriterColor.Write(DoTranslation("Solved perfectly!"), True, ColTypes.Neutral)
                     Else
                         Wdbg(DebugLevel.I, "Expression is {0} and equals {1}", UserEvaluated, EvaluatedNumber)
-                        Write(DoTranslation("Solved incorrectly."), True, ColTypes.Neutral)
+                        TextWriterColor.Write(DoTranslation("Solved incorrectly."), True, ColTypes.Neutral)
                     End If
                 ElseIf UserEvaluated = "q" Then
                     Wdbg(DebugLevel.W, "User requested exit.")
                     Exit While
                 Else
                     Wdbg(DebugLevel.E, "User evaluated ""{0}"". However, it's not numeric.", UserEvaluated)
-                    Write(DoTranslation("You can only write the numbers."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("You can only write the numbers."), True, ColTypes.Error)
                 End If
             End While
         End Sub

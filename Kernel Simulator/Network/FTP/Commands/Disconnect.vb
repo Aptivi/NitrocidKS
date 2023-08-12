@@ -27,7 +27,7 @@ Namespace Network.FTP.Commands
                 FtpConnected = False
                 ClientFTP.UngracefullDisconnection = ListSwitchesOnly.Contains("-f")
                 ClientFTP.Disconnect()
-                Write(DoTranslation("Disconnected from {0}"), True, ColTypes.Success, FtpSite)
+                TextWriterColor.Write(DoTranslation("Disconnected from {0}"), True, ColTypes.Success, FtpSite)
 
                 'Clean up everything
                 FtpSite = ""
@@ -35,13 +35,13 @@ Namespace Network.FTP.Commands
                 FtpUser = ""
                 FtpPass = ""
             Else
-                Write(DoTranslation("You haven't connected to any server yet"), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("You haven't connected to any server yet"), True, ColTypes.Error)
             End If
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -f: ", False, ColTypes.ListEntry) : Write(DoTranslation("Disconnects from server disgracefully"), True, ColTypes.ListValue)
+            TextWriterColor.Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
+            TextWriterColor.Write("  -f: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Disconnects from server disgracefully"), True, ColTypes.ListValue)
         End Sub
 
     End Class

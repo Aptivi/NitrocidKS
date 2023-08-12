@@ -30,13 +30,13 @@ Namespace Arguments.KernelArguments
                     CommandFlag = True
                 Next
             Else
-                Write(DoTranslation("Available commands: {0}"), True, ColTypes.Neutral, String.Join(", ", Shell.Shell.Commands.Keys))
-                Write(">> ", False, ColTypes.Input)
+                TextWriterColor.Write(DoTranslation("Available commands: {0}"), True, ColTypes.Neutral, String.Join(", ", Shell.Shell.Commands.Keys))
+                TextWriterColor.Write(">> ", False, ColTypes.Input)
                 InjectedCommands.AddRange(Console.ReadLine().Split({" : "}, StringSplitOptions.RemoveEmptyEntries))
                 If String.Join(", ", InjectedCommands) <> "q" Then
                     CommandFlag = True
                 Else
-                    Write(DoTranslation("Command injection has been cancelled."), True, ColTypes.Neutral)
+                    TextWriterColor.Write(DoTranslation("Command injection has been cancelled."), True, ColTypes.Neutral)
                 End If
             End If
         End Sub

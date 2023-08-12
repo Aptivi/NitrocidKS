@@ -32,7 +32,7 @@ Namespace Misc.Writers.MiscWriters
         ''' <param name="vars">Variables to format the message before it's written.</param>
         Public Sub DecisiveWrite(CommandType As ShellType, DebugDeviceSocket As StreamWriter, Text As String, Line As Boolean, colorType As ColTypes, ParamArray vars() As Object)
             If Not CommandType = ShellType.RemoteDebugShell Then
-                Write(Text, Line, colorType, vars)
+                TextWriterColor.Write(Text, Line, colorType, vars)
             ElseIf DebugDeviceSocket IsNot Nothing Then
                 If Line Then
                     DebugDeviceSocket.WriteLine(Text, vars)

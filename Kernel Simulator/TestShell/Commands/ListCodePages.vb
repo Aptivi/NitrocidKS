@@ -26,7 +26,7 @@ Namespace TestShell.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             Dim Encodings() As EncodingInfo = Encoding.GetEncodings
             For Each Encoding As EncodingInfo In Encodings
-                Write("{0}: {1} ({2})", True, ColTypes.Neutral, Encoding.CodePage, Encoding.Name, Encoding.DisplayName)
+                TextWriterColor.Write("{0}: {1} ({2})", True, ColTypes.Neutral, Encoding.CodePage, Encoding.Name, Encoding.DisplayName)
             Next
         End Sub
 

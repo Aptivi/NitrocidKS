@@ -48,15 +48,15 @@ Namespace Shell.Commands
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("where <$variable> is any variable that will be used to store response") + NewLine +
+            TextWriterColor.Write(DoTranslation("where <$variable> is any variable that will be used to store response") + NewLine +
                   DoTranslation("where <answers> are one-lettered answers of the question separated in slashes"), True, ColTypes.Neutral)
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -multiple: ", False, ColTypes.ListEntry) : Write(DoTranslation("Indicate that the answer can take more than one character"), True, ColTypes.ListValue)
-            Write("  -single: ", False, ColTypes.ListEntry) : Write(DoTranslation("Indicate that the answer can take just one character"), True, ColTypes.ListValue)
-            Write("  -o: ", False, ColTypes.ListEntry) : Write(DoTranslation("Print the question and the answers in one line"), True, ColTypes.ListValue)
-            Write("  -t: ", False, ColTypes.ListEntry) : Write(DoTranslation("Print the question and the answers in two lines"), True, ColTypes.ListValue)
-            Write("  -m: ", False, ColTypes.ListEntry) : Write(DoTranslation("Print the question and the answers in the modern way"), True, ColTypes.ListValue)
-            Write("  -a: ", False, ColTypes.ListEntry) : Write(DoTranslation("Print the question and the answers in a table"), True, ColTypes.ListValue)
+            TextWriterColor.Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
+            TextWriterColor.Write("  -multiple: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Indicate that the answer can take more than one character"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -single: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Indicate that the answer can take just one character"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -o: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Print the question and the answers in one line"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -t: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Print the question and the answers in two lines"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -m: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Print the question and the answers in the modern way"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -a: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Print the question and the answers in a table"), True, ColTypes.ListValue)
         End Sub
 
     End Class

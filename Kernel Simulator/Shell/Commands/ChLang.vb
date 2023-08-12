@@ -23,10 +23,10 @@ Namespace Shell.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If ListSwitchesOnly.Contains("-list") Then
-                Write(DoTranslation("Available languages:"), True, ColTypes.ListTitle)
+                TextWriterColor.Write(DoTranslation("Available languages:"), True, ColTypes.ListTitle)
                 For Each Language As String In Languages.Languages.Keys
-                    Write("- {0}: ", False, ColTypes.ListEntry, Language)
-                    Write(Languages.Languages(Language).FullLanguageName, True, ColTypes.ListValue)
+                    TextWriterColor.Write("- {0}: ", False, ColTypes.ListEntry, Language)
+                    TextWriterColor.Write(Languages.Languages(Language).FullLanguageName, True, ColTypes.ListValue)
                 Next
             Else
                 Dim AlwaysTransliterated, AlwaysTranslated, Force As Boolean
@@ -38,11 +38,11 @@ Namespace Shell.Commands
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -alwaystransliterated: ", False, ColTypes.ListEntry) : Write(DoTranslation("Always use the transliterated version"), True, ColTypes.ListValue)
-            Write("  -alwaystranslated: ", False, ColTypes.ListEntry) : Write(DoTranslation("Always use the translated version"), True, ColTypes.ListValue)
-            Write("  -force: ", False, ColTypes.ListEntry) : Write(DoTranslation("Force switching language"), True, ColTypes.ListValue)
-            Write("  -list: ", False, ColTypes.ListEntry) : Write(DoTranslation("Lists available languages"), True, ColTypes.ListValue)
+            TextWriterColor.Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
+            TextWriterColor.Write("  -alwaystransliterated: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Always use the transliterated version"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -alwaystranslated: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Always use the translated version"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -force: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Force switching language"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -list: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Lists available languages"), True, ColTypes.ListValue)
         End Sub
 
     End Class

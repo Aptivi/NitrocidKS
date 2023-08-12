@@ -33,9 +33,9 @@ Namespace Misc.ZipFile.Commands
                 Entries = ListZipEntries(ZipShell_CurrentArchiveDirectory)
             End If
             For Each Entry As ZipArchiveEntry In Entries
-                Write("- {0}: ", False, ColTypes.ListEntry, Entry.FullName)
+                TextWriterColor.Write("- {0}: ", False, ColTypes.ListEntry, Entry.FullName)
                 If Not Entry.Name = "" Then 'Entry is a file
-                    Write("{0} ({1})", True, ColTypes.ListValue, Entry.CompressedLength.FileSizeToString, Entry.Length.FileSizeToString)
+                    TextWriterColor.Write("{0} ({1})", True, ColTypes.ListValue, Entry.CompressedLength.FileSizeToString, Entry.Length.FileSizeToString)
                 Else
                     Console.WriteLine()
                 End If

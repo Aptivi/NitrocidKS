@@ -35,13 +35,13 @@ Namespace Network.SFTP.Commands
             End If
             Entries.Sort()
             For Each Entry As String In Entries
-                Write(Entry, True, ColTypes.ListEntry)
+                TextWriterColor.Write(Entry, True, ColTypes.ListEntry)
             Next
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -showdetails: ", False, ColTypes.ListEntry) : Write(DoTranslation("Shows the file details in the list"), True, ColTypes.ListValue)
+            TextWriterColor.Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
+            TextWriterColor.Write("  -showdetails: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Shows the file details in the list"), True, ColTypes.ListValue)
         End Sub
 
     End Class

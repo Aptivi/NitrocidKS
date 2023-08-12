@@ -51,9 +51,9 @@ Namespace Misc.Writers.ConsoleWriters
                             For Each Value In CType(List(ListEntry), IEnumerable)
                                 Values.Add(Value)
                             Next
-                            Write("- {0}: ", False, ColTypes.ListEntry, ListEntry) : Write("{0}", True, ColTypes.ListValue, String.Join(", ", Values))
+                            TextWriterColor.Write("- {0}: ", False, ColTypes.ListEntry, ListEntry) : TextWriterColor.Write("{0}", True, ColTypes.ListValue, String.Join(", ", Values))
                         Else
-                            Write("- {0}: ", False, ColTypes.ListEntry, ListEntry) : Write("{0}", True, ColTypes.ListValue, List(ListEntry))
+                            TextWriterColor.Write("- {0}: ", False, ColTypes.ListEntry, ListEntry) : TextWriterColor.Write("{0}", True, ColTypes.ListValue, List(ListEntry))
                         End If
                         If Wrap Then
                             LinesMade += CursorTop - OldTop
@@ -108,9 +108,9 @@ Namespace Misc.Writers.ConsoleWriters
                             For Each Value In CType(List(ListEntry), IEnumerable)
                                 Values.Add(Value)
                             Next
-                            Write("- {0}: ", False, ListKeyColor, ListEntry) : Write("{0}", True, ListValueColor, String.Join(", ", Values))
+                            TextWriterColor.Write("- {0}: ", False, ListKeyColor, ListEntry) : TextWriterColor.Write("{0}", True, ListValueColor, String.Join(", ", Values))
                         Else
-                            Write("- {0}: ", False, ListKeyColor, ListEntry) : Write("{0}", True, ListValueColor, List(ListEntry))
+                            TextWriterColor.Write("- {0}: ", False, ListKeyColor, ListEntry) : TextWriterColor.Write("{0}", True, ListValueColor, List(ListEntry))
                         End If
                         If Wrap Then
                             LinesMade += CursorTop - OldTop
@@ -165,9 +165,9 @@ Namespace Misc.Writers.ConsoleWriters
                             For Each Value In CType(List(ListEntry), IEnumerable)
                                 Values.Add(Value)
                             Next
-                            Write("- {0}: ", False, ListKeyColor, ListEntry) : Write("{0}", True, ListValueColor, String.Join(", ", Values))
+                            TextWriterColor.Write("- {0}: ", False, ListKeyColor, ListEntry) : TextWriterColor.Write("{0}", True, ListValueColor, String.Join(", ", Values))
                         Else
-                            Write("- {0}: ", False, ListKeyColor, ListEntry) : Write("{0}", True, ListValueColor, List(ListEntry))
+                            TextWriterColor.Write("- {0}: ", False, ListKeyColor, ListEntry) : TextWriterColor.Write("{0}", True, ListValueColor, List(ListEntry))
                         End If
                         If Wrap Then
                             LinesMade += CursorTop - OldTop
@@ -220,9 +220,9 @@ Namespace Misc.Writers.ConsoleWriters
                             For Each Value In CType(ListEntry, IEnumerable)
                                 Values.Add(Value)
                             Next
-                            Write("- [{0}] ", False, ColTypes.ListEntry, EntryNumber) : Write("{0}", True, ColTypes.ListValue, String.Join(", ", Values))
+                            TextWriterColor.Write("- [{0}] ", False, ColTypes.ListEntry, EntryNumber) : TextWriterColor.Write("{0}", True, ColTypes.ListValue, String.Join(", ", Values))
                         Else
-                            Write("- [{0}] ", False, ColTypes.ListEntry, EntryNumber) : Write("{0}", True, ColTypes.ListValue, ListEntry)
+                            TextWriterColor.Write("- [{0}] ", False, ColTypes.ListEntry, EntryNumber) : TextWriterColor.Write("{0}", True, ColTypes.ListValue, ListEntry)
                         End If
                         EntryNumber += 1
                         If Wrap Then
@@ -279,9 +279,9 @@ Namespace Misc.Writers.ConsoleWriters
                             For Each Value In CType(ListEntry, IEnumerable)
                                 Values.Add(Value)
                             Next
-                            Write("- [{0}] ", False, ListKeyColor, EntryNumber) : Write("{0}", True, ListValueColor, String.Join(", ", Values))
+                            TextWriterColor.Write("- [{0}] ", False, ListKeyColor, EntryNumber) : TextWriterColor.Write("{0}", True, ListValueColor, String.Join(", ", Values))
                         Else
-                            Write("- [{0}] ", False, ListKeyColor, EntryNumber) : Write("{0}", True, ListValueColor, ListEntry)
+                            TextWriterColor.Write("- [{0}] ", False, ListKeyColor, EntryNumber) : TextWriterColor.Write("{0}", True, ListValueColor, ListEntry)
                         End If
                         EntryNumber += 1
                         If Wrap Then
@@ -338,9 +338,9 @@ Namespace Misc.Writers.ConsoleWriters
                             For Each Value In CType(ListEntry, IEnumerable)
                                 Values.Add(Value)
                             Next
-                            Write("- {0}: ", False, ListKeyColor, EntryNumber) : Write("{0}", True, ListValueColor, String.Join(", ", Values))
+                            TextWriterColor.Write("- {0}: ", False, ListKeyColor, EntryNumber) : TextWriterColor.Write("{0}", True, ListValueColor, String.Join(", ", Values))
                         Else
-                            Write("- {0}: ", False, ListKeyColor, EntryNumber) : Write("{0}", True, ListValueColor, ListEntry)
+                            TextWriterColor.Write("- {0}: ", False, ListKeyColor, EntryNumber) : TextWriterColor.Write("{0}", True, ListValueColor, ListEntry)
                         End If
                         EntryNumber += 1
                         If Wrap Then

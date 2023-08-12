@@ -25,9 +25,9 @@ Namespace Network.Mail.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If MailRemoveAllBySender(ListArgs(0)) Then
-                Write(DoTranslation("All mail made by {0} are removed successfully."), True, ColTypes.Success, ListArgs(0))
+                TextWriterColor.Write(DoTranslation("All mail made by {0} are removed successfully."), True, ColTypes.Success, ListArgs(0))
             Else
-                Write(DoTranslation("Failed to remove all mail made by {0}."), True, ColTypes.Error, ListArgs(0))
+                TextWriterColor.Write(DoTranslation("Failed to remove all mail made by {0}."), True, ColTypes.Error, ListArgs(0))
             End If
         End Sub
 

@@ -22,7 +22,7 @@ Namespace Network.SFTP.Commands
         Implements ICommand
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
-            Write(DoTranslation("Local directory: {0}"), True, ColTypes.Neutral, SFTPCurrDirect)
+            TextWriterColor.Write(DoTranslation("Local directory: {0}"), True, ColTypes.Neutral, SFTPCurrDirect)
         End Sub
 
     End Class

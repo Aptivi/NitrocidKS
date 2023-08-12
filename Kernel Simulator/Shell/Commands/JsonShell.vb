@@ -27,7 +27,7 @@ Namespace Shell.Commands
             If FileExists(ListArgs(0)) Then
                 StartShell(ShellType.JsonShell, ListArgs(0))
             Else
-                Write(DoTranslation("File doesn't exist."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("File doesn't exist."), True, ColTypes.Error)
             End If
         End Sub
 

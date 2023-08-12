@@ -37,7 +37,7 @@ Namespace TestShell.Commands
 
             'Warn if not found
             If NotFound.Count > 0 Then
-                Write(DoTranslation("These configuration entries have invalid variables or enumerations and need to be fixed:"), True, ColTypes.Warning)
+                TextWriterColor.Write(DoTranslation("These configuration entries have invalid variables or enumerations and need to be fixed:"), True, ColTypes.Warning)
                 WriteList(NotFound)
             End If
         End Sub

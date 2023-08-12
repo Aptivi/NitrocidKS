@@ -76,14 +76,14 @@ Namespace Shell.Shells
                             If SFTPConnected Then
                                 Wdbg(DebugLevel.I, "SFTPShellPromptStyle = {0}", SFTPShellPromptStyle)
                                 If SFTPShellPromptStyle = "" Then
-                                    Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, SFTPUser) : Write("@", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, SFTPSite) : Write("]{0}> ", False, ColTypes.Gray, SFTPCurrentRemoteDir) : Write("", False, InputColor)
+                                    TextWriterColor.Write("[", False, ColTypes.Gray) : TextWriterColor.Write("{0}", False, ColTypes.UserName, SFTPUser) : TextWriterColor.Write("@", False, ColTypes.Gray) : TextWriterColor.Write("{0}", False, ColTypes.HostName, SFTPSite) : TextWriterColor.Write("]{0}> ", False, ColTypes.Gray, SFTPCurrentRemoteDir) : TextWriterColor.Write("", False, InputColor)
                                 Else
                                     Dim ParsedPromptStyle As String = ProbePlaces(SFTPShellPromptStyle)
                                     ParsedPromptStyle.ConvertVTSequences
-                                    Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, InputColor)
+                                    TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                                 End If
                             Else
-                                Write("{0}> ", False, ColTypes.Gray, SFTPCurrDirect) : Write("", False, InputColor)
+                                TextWriterColor.Write("{0}> ", False, ColTypes.Gray, SFTPCurrDirect) : TextWriterColor.Write("", False, InputColor)
                             End If
                         End If
 

@@ -40,10 +40,10 @@ Namespace Shell.Commands
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -fast: ", False, ColTypes.ListEntry) : Write(DoTranslation("Fast compression"), True, ColTypes.ListValue)
-            Write("  -nocomp: ", False, ColTypes.ListEntry) : Write(DoTranslation("No compression"), True, ColTypes.ListValue)
-            Write("  -nobasedir: ", False, ColTypes.ListEntry) : Write(DoTranslation("Don't create base directory in archive"), True, ColTypes.ListValue)
+            TextWriterColor.Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
+            TextWriterColor.Write("  -fast: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Fast compression"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -nocomp: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("No compression"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -nobasedir: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Don't create base directory in archive"), True, ColTypes.ListValue)
         End Sub
 
     End Class

@@ -25,10 +25,10 @@ Namespace TestShell.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If CustomSavers.ContainsKey(ListArgs(0)) Then
-                Write("- {0} -> {1}: ", False, ColTypes.ListEntry, ListArgs(0), ListArgs(1))
-                Write(GetCustomSaverSettings(ListArgs(0), ListArgs(1)), True, ColTypes.ListValue)
+                TextWriterColor.Write("- {0} -> {1}: ", False, ColTypes.ListEntry, ListArgs(0), ListArgs(1))
+                TextWriterColor.Write(GetCustomSaverSettings(ListArgs(0), ListArgs(1)), True, ColTypes.ListValue)
             Else
-                Write(DoTranslation("Screensaver {0} not found."), True, ColTypes.Error, ListArgs(0))
+                TextWriterColor.Write(DoTranslation("Screensaver {0} not found."), True, ColTypes.Error, ListArgs(0))
             End If
         End Sub
 

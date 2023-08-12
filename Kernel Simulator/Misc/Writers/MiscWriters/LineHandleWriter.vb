@@ -109,12 +109,12 @@ Namespace Misc.Writers.MiscWriters
 
             'Get the line
             Dim LineContent As String = FileContents(LineIndex)
-            Write(" | " + LineContent, True, ColorType)
+            TextWriterColor.Write(" | " + LineContent, True, ColorType)
 
             'Place the column handle
             Dim RepeatBlanks As Integer = ColumnNumber - 1
             If RepeatBlanks < 0 Then RepeatBlanks = 0
-            Write(" | " + " ".Repeat(RepeatBlanks) + "^", True, ColorType)
+            TextWriterColor.Write(" | " + " ".Repeat(RepeatBlanks) + "^", True, ColorType)
         End Sub
 
         ''' <summary>
@@ -132,12 +132,12 @@ Namespace Misc.Writers.MiscWriters
 
             'Get the line
             Dim LineContent As String = Array(LineIndex)
-            Write(" | " + LineContent, True, ColorType)
+            TextWriterColor.Write(" | " + LineContent, True, ColorType)
 
             'Place the column handle
             Dim RepeatBlanks As Integer = ColumnNumber - 1
             If RepeatBlanks < 0 Then RepeatBlanks = 0
-            Write(" | " + " ".Repeat(RepeatBlanks) + "^", True, ColorType)
+            TextWriterColor.Write(" | " + " ".Repeat(RepeatBlanks) + "^", True, ColorType)
         End Sub
 
     End Module

@@ -43,7 +43,7 @@ Namespace Shell.Shells
             If ShellArgs.Length > 0 Then
                 ZipFile = ShellArgs(0)
             Else
-                Write(DoTranslation("File not specified. Exiting shell..."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("File not specified. Exiting shell..."), True, ColTypes.Error)
                 Bail = True
             End If
 
@@ -59,11 +59,11 @@ Namespace Shell.Shells
                     End If
                     Wdbg(DebugLevel.I, "ZipShell_PromptStyle = {0}", ZipShell_PromptStyle)
                     If ZipShell_PromptStyle = "" Then
-                        Write("[", False, ColTypes.Gray) : Write("{0}@{1}", False, ColTypes.UserName, ZipShell_CurrentArchiveDirectory, Path.GetFileName(ZipFile)) : Write("] > ", False, ColTypes.Gray) : Write("", False, InputColor)
+                        TextWriterColor.Write("[", False, ColTypes.Gray) : TextWriterColor.Write("{0}@{1}", False, ColTypes.UserName, ZipShell_CurrentArchiveDirectory, Path.GetFileName(ZipFile)) : TextWriterColor.Write("] > ", False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                     Else
                         Dim ParsedPromptStyle As String = ProbePlaces(ZipShell_PromptStyle)
                         ParsedPromptStyle.ConvertVTSequences
-                        Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, InputColor)
+                        TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                     End If
 
                     'Prompt for command

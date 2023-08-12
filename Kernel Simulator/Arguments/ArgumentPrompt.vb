@@ -33,16 +33,16 @@ Namespace Arguments
             Dim AnswerArgs As String = ""
 
             'Shows available arguments
-            Write(DoTranslation("Available kernel arguments:"), True, ColTypes.ListTitle)
+            TextWriterColor.Write(DoTranslation("Available kernel arguments:"), True, ColTypes.ListTitle)
             ShowArgsHelp(ArgumentType.KernelArgs)
             Console.WriteLine()
-            Write("* " + DoTranslation("Press ""q"" if you're done."), True, ColTypes.Tip)
-            Write("* " + DoTranslation("Multiple kernel arguments can be separated with commas without spaces, for example:") + " ""debug,safe""", True, ColTypes.Tip)
-            Write("* " + DoTranslation("Multiple injected commands can be separated with colons with spaces, for example:") + " cmdinject ""beep 100 500 : echo Hello!""", True, ColTypes.Tip)
+            TextWriterColor.Write("* " + DoTranslation("Press ""q"" if you're done."), True, ColTypes.Tip)
+            TextWriterColor.Write("* " + DoTranslation("Multiple kernel arguments can be separated with commas without spaces, for example:") + " ""debug,safe""", True, ColTypes.Tip)
+            TextWriterColor.Write("* " + DoTranslation("Multiple injected commands can be separated with colons with spaces, for example:") + " cmdinject ""beep 100 500 : echo Hello!""", True, ColTypes.Tip)
 
             'Prompts for the arguments
             While Not AnswerArgs = "q"
-                Write(">> ", False, ColTypes.Input)
+                TextWriterColor.Write(">> ", False, ColTypes.Input)
                 AnswerArgs = Console.ReadLine()
 
                 'Add an argument to the entered arguments list
@@ -51,16 +51,16 @@ Namespace Arguments
                         If AvailableArgs.Keys.Contains(AnswerArg.Split(" "c)(0)) Then
                             EnteredArguments.Add(AnswerArg)
                         ElseIf Not String.IsNullOrWhiteSpace(AnswerArg.Split(" "c)(0)) Then
-                            Write(DoTranslation("The requested argument {0} is not found."), True, ColTypes.Error, AnswerArg.Split(" "c)(0))
+                            TextWriterColor.Write(DoTranslation("The requested argument {0} is not found."), True, ColTypes.Error, AnswerArg.Split(" "c)(0))
                         End If
                     Next
                 Else
                     If InjMode Then
                         ArgsInjected = True
                         KernelEventManager.RaiseArgumentsInjected(EnteredArguments)
-                        Write(DoTranslation("Injected arguments will be scheduled to run at next reboot."), True, ColTypes.Neutral)
+                        TextWriterColor.Write(DoTranslation("Injected arguments will be scheduled to run at next reboot."), True, ColTypes.Neutral)
                     ElseIf EnteredArguments.Count <> 0 Then
-                        Write(DoTranslation("Starting the kernel with:") + " {0}", True, ColTypes.Neutral, String.Join(", ", EnteredArguments))
+                        TextWriterColor.Write(DoTranslation("Starting the kernel with:") + " {0}", True, ColTypes.Neutral, String.Join(", ", EnteredArguments))
                         ParseArguments(EnteredArguments, ArgumentType.KernelArgs)
                     End If
                 End If

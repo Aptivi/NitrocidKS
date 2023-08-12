@@ -31,12 +31,12 @@ Namespace Shell.Commands
                 End If
                 MakePermanent()
             Else
-                Write(DoTranslation("Colors are not available. Turn on colored shell in the kernel config."), True, ColTypes.Neutral)
+                TextWriterColor.Write(DoTranslation("Colors are not available. Turn on colored shell in the kernel config."), True, ColTypes.Neutral)
             End If
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write("<Theme>: ThemeName.json, " + String.Join(", ", Themes.Themes.Keys), True, ColTypes.Neutral)
+            TextWriterColor.Write("<Theme>: ThemeName.json, " + String.Join(", ", Themes.Themes.Keys), True, ColTypes.Neutral)
         End Sub
 
     End Class

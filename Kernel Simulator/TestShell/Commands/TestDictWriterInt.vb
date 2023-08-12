@@ -24,9 +24,9 @@ Namespace TestShell.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             Dim NormalIntegerDict As New Dictionary(Of String, Integer) From {{"One", 1}, {"Two", 2}, {"Three", 3}}
             Dim ArrayIntegerDict As New Dictionary(Of String, Integer()) From {{"One", {1, 2, 3}}, {"Two", {1, 2, 3}}, {"Three", {1, 2, 3}}}
-            Write(DoTranslation("Normal integer dictionary:"), True, ColTypes.Neutral)
+            TextWriterColor.Write(DoTranslation("Normal integer dictionary:"), True, ColTypes.Neutral)
             WriteList(NormalIntegerDict)
-            Write(DoTranslation("Array integer dictionary:"), True, ColTypes.Neutral)
+            TextWriterColor.Write(DoTranslation("Array integer dictionary:"), True, ColTypes.Neutral)
             WriteList(ArrayIntegerDict)
         End Sub
 

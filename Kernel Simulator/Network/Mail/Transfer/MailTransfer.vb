@@ -40,11 +40,11 @@ Namespace Network.Mail.Transfer
             Wdbg(DebugLevel.I, "Message number {0}", Message)
             If Message < 0 Then
                 Wdbg(DebugLevel.E, "Trying to access message 0 or less than 0.")
-                Write(DoTranslation("Message number may not be negative or zero."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("Message number may not be negative or zero."), True, ColTypes.Error)
                 Exit Sub
             ElseIf Message > MaxMessagesIndex Then
                 Wdbg(DebugLevel.E, "Message {0} not in list. It was larger than MaxMessagesIndex ({1})", Message, MaxMessagesIndex)
-                Write(DoTranslation("Message specified is not found."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("Message specified is not found."), True, ColTypes.Error)
                 Exit Sub
             End If
 
@@ -66,29 +66,29 @@ Namespace Network.Mail.Transfer
                 Wdbg(DebugLevel.I, "{0} senders.", Msg.From.Count)
                 For Each Address As InternetAddress In Msg.From
                     Wdbg(DebugLevel.I, "Address: {0} ({1})", Address.Name, Address.Encoding.EncodingName)
-                    Write(DoTranslation("- From {0}"), True, ColTypes.ListEntry, Address.ToString)
+                    TextWriterColor.Write(DoTranslation("- From {0}"), True, ColTypes.ListEntry, Address.ToString)
                 Next
 
                 'Print all the addresses that received the mail
                 Wdbg(DebugLevel.I, "{0} receivers.", Msg.To.Count)
                 For Each Address As InternetAddress In Msg.To
                     Wdbg(DebugLevel.I, "Address: {0} ({1})", Address.Name, Address.Encoding.EncodingName)
-                    Write(DoTranslation("- To {0}"), True, ColTypes.ListEntry, Address.ToString)
+                    TextWriterColor.Write(DoTranslation("- To {0}"), True, ColTypes.ListEntry, Address.ToString)
                 Next
 
                 'Print the date and time when the user received the mail
                 Wdbg(DebugLevel.I, "Rendering time and date of {0}.", Msg.Date.DateTime.ToString)
-                Write(DoTranslation("- Sent at {0} in {1}"), True, ColTypes.ListEntry, RenderTime(Msg.Date.DateTime), RenderDate(Msg.Date.DateTime))
+                TextWriterColor.Write(DoTranslation("- Sent at {0} in {1}"), True, ColTypes.ListEntry, RenderTime(Msg.Date.DateTime), RenderDate(Msg.Date.DateTime))
 
                 'Prepare subject
                 Console.WriteLine()
                 Wdbg(DebugLevel.I, "Subject length: {0}, {1}", Msg.Subject.Length, Msg.Subject)
-                Write($"- {Msg.Subject}", False, ColTypes.ListEntry)
+                TextWriterColor.Write($"- {Msg.Subject}", False, ColTypes.ListEntry)
 
                 'Write a sign after the subject if attachments are found
                 Wdbg(DebugLevel.I, "Attachments count: {0}", Msg.Attachments.Count)
                 If Msg.Attachments.Count > 0 Then
-                    Write(" - [*]", True, ColTypes.ListEntry)
+                    TextWriterColor.Write(" - [*]", True, ColTypes.ListEntry)
                 Else
                     Console.WriteLine()
                 End If
@@ -117,7 +117,7 @@ Namespace Network.Mail.Transfer
                                     Dim DecryptedByte(DecryptedStream.Length) As Byte
                                     DecryptedStream.Read(DecryptedByte, 0, DecryptedStream.Length)
                                     Wdbg(DebugLevel.I, "Written {0} bytes to buffer.", DecryptedByte.Length)
-                                    Write(Encoding.Default.GetString(DecryptedByte), True, ColTypes.ListValue)
+                                    TextWriterColor.Write(Encoding.Default.GetString(DecryptedByte), True, ColTypes.ListValue)
                                 End If
                             Next
                         End If
@@ -128,17 +128,17 @@ Namespace Network.Mail.Transfer
                         Dim DecryptedByte(DecryptedStream.Length) As Byte
                         DecryptedStream.Read(DecryptedByte, 0, DecryptedStream.Length)
                         Wdbg(DebugLevel.I, "Written {0} bytes to buffer.", DecryptedByte.Length)
-                        Write(Encoding.Default.GetString(DecryptedByte), True, ColTypes.ListValue)
+                        TextWriterColor.Write(Encoding.Default.GetString(DecryptedByte), True, ColTypes.ListValue)
                     End If
                 Else
-                    Write(Msg.GetTextBody(Mail_TextFormat), True, ColTypes.ListValue)
+                    TextWriterColor.Write(Msg.GetTextBody(Mail_TextFormat), True, ColTypes.ListValue)
                 End If
                 Console.WriteLine()
 
                 'Populate attachments
 #Disable Warning BC42104
                 If Msg.Attachments.Count > 0 Then
-                    Write(DoTranslation("Attachments:"), True, ColTypes.Neutral)
+                    TextWriterColor.Write(DoTranslation("Attachments:"), True, ColTypes.Neutral)
                     Dim AttachmentEntities As New List(Of MimeEntity)
                     If Decrypt Then
                         Wdbg(DebugLevel.I, "Parsing attachments...")
@@ -170,11 +170,11 @@ Namespace Network.Mail.Transfer
                         Wdbg(DebugLevel.I, "Attachment ID: {0}", Attachment.ContentId)
                         If TypeOf Attachment Is MessagePart Then
                             Wdbg(DebugLevel.I, "Attachment is a message.")
-                            Write($"- {Attachment.ContentDisposition?.FileName}", True, ColTypes.Neutral)
+                            TextWriterColor.Write($"- {Attachment.ContentDisposition?.FileName}", True, ColTypes.Neutral)
                         Else
                             Wdbg(DebugLevel.I, "Attachment is a file.")
                             Dim AttachmentPart As MimePart = Attachment
-                            Write($"- {AttachmentPart.FileName}", True, ColTypes.Neutral)
+                            TextWriterColor.Write($"- {AttachmentPart.FileName}", True, ColTypes.Neutral)
                         End If
                     Next
                 End If

@@ -28,10 +28,10 @@ Namespace Shell.Commands
                 If IsStringNumeric(ListArgs(1)) Then 'Time must be numeric
                     Console.Beep(ListArgs(0), ListArgs(1))
                 Else
-                    Write(DoTranslation("Time must be numeric."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("Time must be numeric."), True, ColTypes.Error)
                 End If
             Else
-                Write(DoTranslation("Frequency must be numeric. If it's numeric, ensure that it is >= 37 and <= 32767."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("Frequency must be numeric. If it's numeric, ensure that it is >= 37 and <= 32767."), True, ColTypes.Error)
             End If
         End Sub
 

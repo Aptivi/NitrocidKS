@@ -32,7 +32,7 @@ Namespace Shell.Commands
             If FileExists(JsonFile) Then
                 'Minify the JSON and display it on screen
                 MinifiedJson = MinifyJson(JsonFile)
-                Write(MinifiedJson, True, ColTypes.Neutral)
+                TextWriterColor.Write(MinifiedJson, True, ColTypes.Neutral)
 
                 'Minify it to an output file specified (optional)
                 If ListArgs.Count > 1 Then
@@ -40,7 +40,7 @@ Namespace Shell.Commands
                     File.WriteAllText(JsonOutputFile, MinifiedJson)
                 End If
             Else
-                Write(DoTranslation("File {0} not found."), True, ColTypes.Error, JsonFile)
+                TextWriterColor.Write(DoTranslation("File {0} not found."), True, ColTypes.Error, JsonFile)
             End If
         End Sub
 

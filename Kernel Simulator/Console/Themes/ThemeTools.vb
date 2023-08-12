@@ -117,7 +117,7 @@ Namespace ConsoleBase.Themes
                 'Raise event
                 KernelEventManager.RaiseThemeSet(theme)
             Else
-                Write(DoTranslation("Invalid color template {0}"), True, ColTypes.Error, theme)
+                TextWriterColor.Write(DoTranslation("Invalid color template {0}"), True, ColTypes.Error, theme)
                 Wdbg(DebugLevel.E, "Theme not found.")
 
                 'Raise event
@@ -146,7 +146,7 @@ Namespace ConsoleBase.Themes
                 'Raise event
                 KernelEventManager.RaiseThemeSet(ThemeFile)
             Catch ex As Exception
-                Write(DoTranslation("Invalid color template {0}"), True, ColTypes.Error, ThemeFile)
+                TextWriterColor.Write(DoTranslation("Invalid color template {0}"), True, ColTypes.Error, ThemeFile)
                 Wdbg(DebugLevel.E, "Theme not found.")
 
                 'Raise event

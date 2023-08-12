@@ -23,7 +23,7 @@ Namespace Misc.ZipFile.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If Not ChangeWorkingArchiveDirectory(ListArgs(0)) Then
-                Write(DoTranslation("Archive directory {0} doesn't exist"), True, ColTypes.Error, ListArgs(0))
+                TextWriterColor.Write(DoTranslation("Archive directory {0} doesn't exist"), True, ColTypes.Error, ListArgs(0))
             End If
         End Sub
 

@@ -24,13 +24,13 @@ Namespace Network.SFTP.Commands
         Implements ICommand
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
-            Write(DoTranslation("Downloading file {0}..."), False, ColTypes.Progress, ListArgs(0))
+            TextWriterColor.Write(DoTranslation("Downloading file {0}..."), False, ColTypes.Progress, ListArgs(0))
             If SFTPGetFile(ListArgs(0)) Then
                 Console.WriteLine()
-                Write(DoTranslation("Downloaded file {0}."), True, ColTypes.Success, ListArgs(0))
+                TextWriterColor.Write(DoTranslation("Downloaded file {0}."), True, ColTypes.Success, ListArgs(0))
             Else
                 Console.WriteLine()
-                Write(DoTranslation("Download failed for file {0}."), True, ColTypes.Error, ListArgs(0))
+                TextWriterColor.Write(DoTranslation("Download failed for file {0}."), True, ColTypes.Error, ListArgs(0))
             End If
         End Sub
 

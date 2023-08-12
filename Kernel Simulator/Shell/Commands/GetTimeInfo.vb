@@ -26,24 +26,24 @@ Namespace Shell.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             Dim DateTimeInfo As Date
             If Date.TryParse(ListArgs(0), DateTimeInfo) Then
-                Write("-- " + DoTranslation("Information for") + " {0} --" + NewLine, True, ColTypes.Neutral, Render(DateTimeInfo))
-                Write(DoTranslation("Milliseconds:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.Millisecond)
-                Write(DoTranslation("Seconds:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.Second)
-                Write(DoTranslation("Minutes:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.Minute)
-                Write(DoTranslation("Hours:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.Hour)
-                Write(DoTranslation("Days:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.Day)
-                Write(DoTranslation("Months:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.Month)
-                Write(DoTranslation("Year:") + " {0}" + NewLine, True, ColTypes.Neutral, DateTimeInfo.Year)
-                Write(DoTranslation("Date:") + " {0}", True, ColTypes.Neutral, RenderDate(DateTimeInfo))
-                Write(DoTranslation("Time:") + " {0}" + NewLine, True, ColTypes.Neutral, RenderTime(DateTimeInfo))
-                Write(DoTranslation("Day of Year:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.DayOfYear)
-                Write(DoTranslation("Day of Week:") + " {0}" + NewLine, True, ColTypes.Neutral, DateTimeInfo.DayOfWeek.ToString)
-                Write(DoTranslation("Binary:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.ToBinary)
-                Write(DoTranslation("Local Time:") + " {0}", True, ColTypes.Neutral, Render(DateTimeInfo.ToLocalTime))
-                Write(DoTranslation("Universal Time:") + " {0}", True, ColTypes.Neutral, Render(DateTimeInfo.ToUniversalTime))
-                Write(DoTranslation("Unix Time:") + " {0}", True, ColTypes.Neutral, DateToUnix(DateTimeInfo))
+                TextWriterColor.Write("-- " + DoTranslation("Information for") + " {0} --" + NewLine, True, ColTypes.Neutral, Render(DateTimeInfo))
+                TextWriterColor.Write(DoTranslation("Milliseconds:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.Millisecond)
+                TextWriterColor.Write(DoTranslation("Seconds:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.Second)
+                TextWriterColor.Write(DoTranslation("Minutes:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.Minute)
+                TextWriterColor.Write(DoTranslation("Hours:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.Hour)
+                TextWriterColor.Write(DoTranslation("Days:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.Day)
+                TextWriterColor.Write(DoTranslation("Months:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.Month)
+                TextWriterColor.Write(DoTranslation("Year:") + " {0}" + NewLine, True, ColTypes.Neutral, DateTimeInfo.Year)
+                TextWriterColor.Write(DoTranslation("Date:") + " {0}", True, ColTypes.Neutral, RenderDate(DateTimeInfo))
+                TextWriterColor.Write(DoTranslation("Time:") + " {0}" + NewLine, True, ColTypes.Neutral, RenderTime(DateTimeInfo))
+                TextWriterColor.Write(DoTranslation("Day of Year:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.DayOfYear)
+                TextWriterColor.Write(DoTranslation("Day of Week:") + " {0}" + NewLine, True, ColTypes.Neutral, DateTimeInfo.DayOfWeek.ToString)
+                TextWriterColor.Write(DoTranslation("Binary:") + " {0}", True, ColTypes.Neutral, DateTimeInfo.ToBinary)
+                TextWriterColor.Write(DoTranslation("Local Time:") + " {0}", True, ColTypes.Neutral, Render(DateTimeInfo.ToLocalTime))
+                TextWriterColor.Write(DoTranslation("Universal Time:") + " {0}", True, ColTypes.Neutral, Render(DateTimeInfo.ToUniversalTime))
+                TextWriterColor.Write(DoTranslation("Unix Time:") + " {0}", True, ColTypes.Neutral, DateToUnix(DateTimeInfo))
             Else
-                Write(DoTranslation("Failed to parse date information for") + " {0}. " + DoTranslation("Ensure that the format is correct."), True, ColTypes.Error, ListArgs(0))
+                TextWriterColor.Write(DoTranslation("Failed to parse date information for") + " {0}. " + DoTranslation("Ensure that the format is correct."), True, ColTypes.Error, ListArgs(0))
             End If
         End Sub
 

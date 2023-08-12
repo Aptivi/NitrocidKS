@@ -42,7 +42,7 @@ Namespace Shell.Shells
             If ShellArgs.Length > 0 Then
                 FilePath = ShellArgs(0)
             Else
-                Write(DoTranslation("File not specified. Exiting shell..."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("File not specified. Exiting shell..."), True, ColTypes.Error)
                 Bail = True
             End If
 
@@ -52,7 +52,7 @@ Namespace Shell.Shells
                     If JsonShell_FileStream Is Nothing Then
                         Wdbg(DebugLevel.W, "File not open yet. Trying to open {0}...", FilePath)
                         If Not JsonShell_OpenJsonFile(FilePath) Then
-                            Write(DoTranslation("Failed to open file. Exiting shell..."), True, ColTypes.Error)
+                            TextWriterColor.Write(DoTranslation("Failed to open file. Exiting shell..."), True, ColTypes.Error)
                             Exit While
                         End If
                         JsonShell_AutoSave.Start()
@@ -64,11 +64,11 @@ Namespace Shell.Shells
                     End If
                     Wdbg(DebugLevel.I, "JsonShell_PromptStyle = {0}", JsonShell_PromptStyle)
                     If JsonShell_PromptStyle = "" Then
-                        Write("[", False, ColTypes.Gray) : Write("{0}{1}", False, ColTypes.UserName, Path.GetFileName(FilePath), If(JsonShell_WasJsonEdited(), "*", "")) : Write("] > ", False, ColTypes.Gray) : Write("", False, InputColor)
+                        TextWriterColor.Write("[", False, ColTypes.Gray) : TextWriterColor.Write("{0}{1}", False, ColTypes.UserName, Path.GetFileName(FilePath), If(JsonShell_WasJsonEdited(), "*", "")) : TextWriterColor.Write("] > ", False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                     Else
                         Dim ParsedPromptStyle As String = ProbePlaces(JsonShell_PromptStyle)
                         ParsedPromptStyle.ConvertVTSequences
-                        Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, InputColor)
+                        TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                     End If
 
                     'Prompt for command

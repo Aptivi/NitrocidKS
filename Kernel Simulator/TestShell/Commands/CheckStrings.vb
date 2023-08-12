@@ -27,9 +27,9 @@ Namespace TestShell.Commands
             Dim Texts() As String = ReadContents(TextPath)
             For Each Text As String In Texts
                 If LocalizedStrings.Keys.Contains(Text) Then
-                    Write("[+] {0}", True, ColTypes.Success, Text)
+                    TextWriterColor.Write("[+] {0}", True, ColTypes.Success, Text)
                 Else
-                    Write("[-] {0}", True, ColTypes.Neutral, Text)
+                    TextWriterColor.Write("[-] {0}", True, ColTypes.Neutral, Text)
                 End If
             Next
         End Sub

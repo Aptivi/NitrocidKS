@@ -27,29 +27,29 @@ Namespace Network.HTTP.Commands
         Public Overrides Async Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If HTTPConnected = True Then
                 'Print a message
-                Write(DoTranslation("Getting {0}..."), True, ColTypes.Progress, ListArgs(0))
+                TextWriterColor.Write(DoTranslation("Getting {0}..."), True, ColTypes.Progress, ListArgs(0))
 
                 Try
                     Dim ResponseTask As Task(Of HttpResponseMessage) = HttpGet(ListArgs(0))
                     ResponseTask.Wait()
                     Dim Response As HttpResponseMessage = ResponseTask.Result
                     Dim ResponseContent As String = Await Response.Content.ReadAsStringAsync
-                    Write("[{0}] {1}", True, ColTypes.Neutral, CInt(Response.StatusCode), Response.StatusCode.ToString)
-                    Write(ResponseContent, True, ColTypes.Neutral)
-                    Write(Response.ReasonPhrase, True, ColTypes.Neutral)
+                    TextWriterColor.Write("[{0}] {1}", True, ColTypes.Neutral, CInt(Response.StatusCode), Response.StatusCode.ToString)
+                    TextWriterColor.Write(ResponseContent, True, ColTypes.Neutral)
+                    TextWriterColor.Write(Response.ReasonPhrase, True, ColTypes.Neutral)
                 Catch aex As AggregateException
-                    Write(aex.Message + ":", True, ColTypes.Error)
+                    TextWriterColor.Write(aex.Message + ":", True, ColTypes.Error)
                     For Each InnerException As Exception In aex.InnerExceptions
-                        Write("- " + InnerException.Message, True, ColTypes.Error)
+                        TextWriterColor.Write("- " + InnerException.Message, True, ColTypes.Error)
                         If InnerException.InnerException IsNot Nothing Then
-                            Write("- " + InnerException.InnerException.Message, True, ColTypes.Error)
+                            TextWriterColor.Write("- " + InnerException.InnerException.Message, True, ColTypes.Error)
                         End If
                     Next
                 Catch ex As Exception
-                    Write(ex.Message, True, ColTypes.Error)
+                    TextWriterColor.Write(ex.Message, True, ColTypes.Error)
                 End Try
             Else
-                Write(DoTranslation("You must connect to server before performing transmission."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("You must connect to server before performing transmission."), True, ColTypes.Error)
             End If
         End Sub
 

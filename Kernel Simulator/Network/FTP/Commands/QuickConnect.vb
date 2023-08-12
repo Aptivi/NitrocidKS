@@ -25,7 +25,7 @@ Namespace Network.FTP.Commands
             If Not FtpConnected Then
                 QuickConnect()
             Else
-                Write(DoTranslation("You should disconnect from server before connecting to another server"), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("You should disconnect from server before connecting to another server"), True, ColTypes.Error)
             End If
         End Sub
 

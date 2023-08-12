@@ -32,17 +32,17 @@ Namespace Shell.Commands
                 If FileExists(FilePath) Then
                     Dim FileInfo As New FileInfo(FilePath)
                     Dim Style As FilesystemNewlineStyle = GetLineEndingFromFile(FilePath)
-                    Write(DoTranslation("Name: {0}"), True, ColTypes.Neutral, FileInfo.Name)
-                    Write(DoTranslation("Full name: {0}"), True, ColTypes.Neutral, NeutralizePath(FileInfo.FullName))
-                    Write(DoTranslation("File size: {0}"), True, ColTypes.Neutral, FileInfo.Length.FileSizeToString)
-                    Write(DoTranslation("Creation time: {0}"), True, ColTypes.Neutral, Render(FileInfo.CreationTime))
-                    Write(DoTranslation("Last access time: {0}"), True, ColTypes.Neutral, Render(FileInfo.LastAccessTime))
-                    Write(DoTranslation("Last write time: {0}"), True, ColTypes.Neutral, Render(FileInfo.LastWriteTime))
-                    Write(DoTranslation("Attributes: {0}"), True, ColTypes.Neutral, FileInfo.Attributes)
-                    Write(DoTranslation("Where to find: {0}"), True, ColTypes.Neutral, NeutralizePath(FileInfo.DirectoryName))
-                    Write(DoTranslation("Newline style:") + " {0}", True, ColTypes.Neutral, Style.ToString)
+                    TextWriterColor.Write(DoTranslation("Name: {0}"), True, ColTypes.Neutral, FileInfo.Name)
+                    TextWriterColor.Write(DoTranslation("Full name: {0}"), True, ColTypes.Neutral, NeutralizePath(FileInfo.FullName))
+                    TextWriterColor.Write(DoTranslation("File size: {0}"), True, ColTypes.Neutral, FileInfo.Length.FileSizeToString)
+                    TextWriterColor.Write(DoTranslation("Creation time: {0}"), True, ColTypes.Neutral, Render(FileInfo.CreationTime))
+                    TextWriterColor.Write(DoTranslation("Last access time: {0}"), True, ColTypes.Neutral, Render(FileInfo.LastAccessTime))
+                    TextWriterColor.Write(DoTranslation("Last write time: {0}"), True, ColTypes.Neutral, Render(FileInfo.LastWriteTime))
+                    TextWriterColor.Write(DoTranslation("Attributes: {0}"), True, ColTypes.Neutral, FileInfo.Attributes)
+                    TextWriterColor.Write(DoTranslation("Where to find: {0}"), True, ColTypes.Neutral, NeutralizePath(FileInfo.DirectoryName))
+                    TextWriterColor.Write(DoTranslation("Newline style:") + " {0}", True, ColTypes.Neutral, Style.ToString)
                 Else
-                    Write(DoTranslation("Can't get information about nonexistent file."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("Can't get information about nonexistent file."), True, ColTypes.Error)
                 End If
             Next
         End Sub

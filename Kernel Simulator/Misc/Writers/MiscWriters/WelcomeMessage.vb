@@ -57,11 +57,11 @@ Namespace Misc.Writers.MiscWriters
                 If StartScroll Then
                     WriteSlowly(MessageWrite, True, 10, ColTypes.Banner, KernelVersion)
                 Else
-                    Write(MessageWrite, True, ColTypes.Banner, KernelVersion)
+                    TextWriterColor.Write(MessageWrite, True, ColTypes.Banner, KernelVersion)
                 End If
 
                 If NewWelcomeStyle Then
-                    Write(NewLine + NewLine + GetFigletFont(BannerFigletFont).Render($"KS v{KernelVersion}"), True, ColTypes.Neutral)
+                    TextWriterColor.Write(NewLine + NewLine + GetFigletFont(BannerFigletFont).Render($"KS v{KernelVersion}"), True, ColTypes.Neutral)
                 Else
                     'Show license
                     WriteLicense(True)
@@ -74,12 +74,12 @@ Namespace Misc.Writers.MiscWriters
         ''' Writes the license
         ''' </summary>
         Sub WriteLicense(TwoNewlines As Boolean)
-            Write(NewLine + "    Kernel Simulator  Copyright (C) 2018-2022  EoflaOE" + NewLine +
+            TextWriterColor.Write(NewLine + "    Kernel Simulator  Copyright (C) 2018-2022  EoflaOE" + NewLine +
                             "    This program comes with ABSOLUTELY NO WARRANTY, not even " + NewLine +
                             "    MERCHANTABILITY or FITNESS for particular purposes." + NewLine +
                             "    This is free software, and you are welcome to redistribute it" + NewLine +
                             "    under certain conditions; See COPYING file in source code." + NewLine, True, ColTypes.License)
-            Write("* " + DoTranslation("For more information about the terms and conditions of using this software, visit") + " http://www.gnu.org/licenses/", True, ColTypes.License)
+            TextWriterColor.Write("* " + DoTranslation("For more information about the terms and conditions of using this software, visit") + " http://www.gnu.org/licenses/", True, ColTypes.License)
             If TwoNewlines Then Console.WriteLine()
         End Sub
 

@@ -26,14 +26,14 @@ Namespace Network.FTP.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             Dim LocalFolder As String = ListArgs(0)
             Dim RemoteFolder As String = If(ListArgs.Count > 1, ListArgs(1), "")
-            Write(DoTranslation("Uploading folder {0}..."), True, ColTypes.Progress, ListArgs(0))
+            TextWriterColor.Write(DoTranslation("Uploading folder {0}..."), True, ColTypes.Progress, ListArgs(0))
             Dim Result As Boolean = If(Not String.IsNullOrWhiteSpace(LocalFolder), FTPUploadFolder(RemoteFolder, LocalFolder), FTPUploadFolder(RemoteFolder))
             If Result Then
                 Console.WriteLine()
-                Write(NewLine + DoTranslation("Uploaded folder {0}"), True, ColTypes.Success, ListArgs(0))
+                TextWriterColor.Write(NewLine + DoTranslation("Uploaded folder {0}"), True, ColTypes.Success, ListArgs(0))
             Else
                 Console.WriteLine()
-                Write(NewLine + DoTranslation("Failed to upload {0}"), True, ColTypes.Error, ListArgs(0))
+                TextWriterColor.Write(NewLine + DoTranslation("Failed to upload {0}"), True, ColTypes.Error, ListArgs(0))
             End If
         End Sub
 

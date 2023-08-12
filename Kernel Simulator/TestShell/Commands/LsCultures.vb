@@ -28,10 +28,10 @@ Namespace TestShell.Commands
             For Each Cult As CultureInfo In Cults
                 If ListArgs?.Length > 0 Or ListArgs IsNot Nothing Then
                     If Cult.Name.ToLower.Contains(ListArgs(0).ToLower) Or Cult.EnglishName.ToLower.Contains(ListArgs(0).ToLower) Then
-                        Write("{0}: {1}", True, ColTypes.Neutral, Cult.Name, Cult.EnglishName)
+                        TextWriterColor.Write("{0}: {1}", True, ColTypes.Neutral, Cult.Name, Cult.EnglishName)
                     End If
                 Else
-                    Write("{0}: {1}", True, ColTypes.Neutral, Cult.Name, Cult.EnglishName)
+                    TextWriterColor.Write("{0}: {1}", True, ColTypes.Neutral, Cult.Name, Cult.EnglishName)
                 End If
             Next
         End Sub

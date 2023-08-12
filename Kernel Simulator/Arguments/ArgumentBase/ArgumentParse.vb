@@ -63,7 +63,7 @@ Namespace Arguments.ArgumentBase
                             ArgumentBase.Execute(strArgs, FullArgs, Args, Switches)
                         Else
                             Wdbg(DebugLevel.W, "User hasn't provided enough arguments for {0}", Argument)
-                            Write(DoTranslation("There was not enough arguments."), True, ColTypes.Neutral)
+                            TextWriterColor.Write(DoTranslation("There was not enough arguments."), True, ColTypes.Neutral)
                         End If
                     End If
                 Next

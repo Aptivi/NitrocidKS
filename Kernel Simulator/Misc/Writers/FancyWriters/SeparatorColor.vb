@@ -28,14 +28,14 @@ Namespace Misc.Writers.FancyWriters
         Public Sub WriteSeparator(Text As String, PrintSuffix As Boolean, ParamArray Vars() As Object)
             'Print the suffix and the text
             If Not String.IsNullOrWhiteSpace(Text) Then
-                If PrintSuffix Then Write("- ", False, ColTypes.Separator, Vars)
+                If PrintSuffix Then TextWriterColor.Write("- ", False, ColTypes.Separator, Vars)
                 If Not Text.EndsWith("-") Then Text += " "
 
                 'We need to set an appropriate color for the suffix in the text.
                 If Text.StartsWith("-") Then
                     For CharIndex As Integer = 0 To Text.Length - 1
                         If Text(CharIndex) = "-" Then
-                            Write(Text(CharIndex), False, ColTypes.Separator)
+                            TextWriterColor.Write(Text(CharIndex), False, ColTypes.Separator)
                         Else
                             'We're (mostly) done
                             Text = Text.Substring(CharIndex)
@@ -43,7 +43,7 @@ Namespace Misc.Writers.FancyWriters
                         End If
                     Next
                 End If
-                Write(Text.Truncate(Console.WindowWidth - 6), False, ColTypes.SeparatorText, Vars)
+                TextWriterColor.Write(Text.Truncate(Console.WindowWidth - 6), False, ColTypes.SeparatorText, Vars)
             End If
 
             'See how many times to repeat the closing minus sign. We could be running this in the wrap command.
@@ -56,7 +56,7 @@ Namespace Misc.Writers.FancyWriters
 
             'Write the closing minus sign.
             Dim OldTop As Integer = Console.CursorTop
-            Write("-".Repeat(RepeatTimes), True, ColTypes.Separator)
+            TextWriterColor.Write("-".Repeat(RepeatTimes), True, ColTypes.Separator)
 
             'Fix CursorTop value on Unix systems. Mono...
             If IsOnUnix() Then
@@ -76,7 +76,7 @@ Namespace Misc.Writers.FancyWriters
             If Not String.IsNullOrWhiteSpace(Text) Then
                 If PrintSuffix Then Text = "- " + Text
                 If Not Text.EndsWith("-") Then Text += " "
-                Write(Text.Truncate(Console.WindowWidth - 6), False, ColTypes, Vars)
+                TextWriterColor.Write(Text.Truncate(Console.WindowWidth - 6), False, ColTypes, Vars)
             End If
 
             'See how many times to repeat the closing minus sign. We could be running this in the wrap command.
@@ -89,7 +89,7 @@ Namespace Misc.Writers.FancyWriters
 
             'Write the closing minus sign.
             Dim OldTop As Integer = Console.CursorTop
-            Write("-".Repeat(RepeatTimes), True, ColTypes)
+            TextWriterColor.Write("-".Repeat(RepeatTimes), True, ColTypes)
 
             'Fix CursorTop value on Unix systems. Mono...
             If IsOnUnix() Then
@@ -110,7 +110,7 @@ Namespace Misc.Writers.FancyWriters
             If Not String.IsNullOrWhiteSpace(Text) Then
                 If PrintSuffix Then Text = "- " + Text
                 If Not Text.EndsWith("-") Then Text += " "
-                Write(Text.Truncate(Console.WindowWidth - 6), False, colorTypeForeground, colorTypeBackground, Vars)
+                TextWriterColor.Write(Text.Truncate(Console.WindowWidth - 6), False, colorTypeForeground, colorTypeBackground, Vars)
             End If
 
             'See how many times to repeat the closing minus sign. We could be running this in the wrap command.
@@ -123,7 +123,7 @@ Namespace Misc.Writers.FancyWriters
 
             'Write the closing minus sign.
             Dim OldTop As Integer = Console.CursorTop
-            Write("-".Repeat(RepeatTimes), True, colorTypeForeground, colorTypeBackground)
+            TextWriterColor.Write("-".Repeat(RepeatTimes), True, colorTypeForeground, colorTypeBackground)
 
             'Fix CursorTop value on Unix systems. Mono...
             If IsOnUnix() Then
@@ -143,7 +143,7 @@ Namespace Misc.Writers.FancyWriters
             If Not String.IsNullOrWhiteSpace(Text) Then
                 If PrintSuffix Then Text = "- " + Text
                 If Not Text.EndsWith("-") Then Text += " "
-                Write(Text.Truncate(Console.WindowWidth - 6), False, Color, Vars)
+                TextWriterColor.Write(Text.Truncate(Console.WindowWidth - 6), False, Color, Vars)
             End If
 
             'See how many times to repeat the closing minus sign. We could be running this in the wrap command.
@@ -156,7 +156,7 @@ Namespace Misc.Writers.FancyWriters
 
             'Write the closing minus sign.
             Dim OldTop As Integer = Console.CursorTop
-            Write("-".Repeat(RepeatTimes), True, Color)
+            TextWriterColor.Write("-".Repeat(RepeatTimes), True, Color)
 
             'Fix CursorTop value on Unix systems. Mono...
             If IsOnUnix() Then
@@ -177,7 +177,7 @@ Namespace Misc.Writers.FancyWriters
             If Not String.IsNullOrWhiteSpace(Text) Then
                 If PrintSuffix Then Text = "- " + Text
                 If Not Text.EndsWith("-") Then Text += " "
-                Write(Text.Truncate(Console.WindowWidth - 6), False, ForegroundColor, BackgroundColor, Vars)
+                TextWriterColor.Write(Text.Truncate(Console.WindowWidth - 6), False, ForegroundColor, BackgroundColor, Vars)
             End If
 
             'See how many times to repeat the closing minus sign. We could be running this in the wrap command.
@@ -190,7 +190,7 @@ Namespace Misc.Writers.FancyWriters
 
             'Write the closing minus sign.
             Dim OldTop As Integer = Console.CursorTop
-            Write("-".Repeat(RepeatTimes), True, ForegroundColor, BackgroundColor)
+            TextWriterColor.Write("-".Repeat(RepeatTimes), True, ForegroundColor, BackgroundColor)
 
             'Fix CursorTop value on Unix systems. Mono...
             If IsOnUnix() Then
@@ -210,7 +210,7 @@ Namespace Misc.Writers.FancyWriters
             If Not String.IsNullOrWhiteSpace(Text) Then
                 If PrintSuffix Then Text = "- " + Text
                 If Not Text.EndsWith("-") Then Text += " "
-                Write(Text.Truncate(Console.WindowWidth - 6), False, Color, Vars)
+                TextWriterColor.Write(Text.Truncate(Console.WindowWidth - 6), False, Color, Vars)
             End If
 
             'See how many times to repeat the closing minus sign. We could be running this in the wrap command.
@@ -223,7 +223,7 @@ Namespace Misc.Writers.FancyWriters
 
             'Write the closing minus sign.
             Dim OldTop As Integer = Console.CursorTop
-            Write("-".Repeat(RepeatTimes), True, Color)
+            TextWriterColor.Write("-".Repeat(RepeatTimes), True, Color)
 
             'Fix CursorTop value on Unix systems. Mono...
             If IsOnUnix() Then
@@ -244,7 +244,7 @@ Namespace Misc.Writers.FancyWriters
             If Not String.IsNullOrWhiteSpace(Text) Then
                 If PrintSuffix Then Text = "- " + Text
                 If Not Text.EndsWith("-") Then Text += " "
-                Write(Text.Truncate(Console.WindowWidth - 6), False, ForegroundColor, BackgroundColor, Vars)
+                TextWriterColor.Write(Text.Truncate(Console.WindowWidth - 6), False, ForegroundColor, BackgroundColor, Vars)
             End If
 
             'See how many times to repeat the closing minus sign. We could be running this in the wrap command.
@@ -257,7 +257,7 @@ Namespace Misc.Writers.FancyWriters
 
             'Write the closing minus sign.
             Dim OldTop As Integer = Console.CursorTop
-            Write("-".Repeat(RepeatTimes), True, ForegroundColor, BackgroundColor)
+            TextWriterColor.Write("-".Repeat(RepeatTimes), True, ForegroundColor, BackgroundColor)
 
             'Fix CursorTop value on Unix systems. Mono...
             If IsOnUnix() Then

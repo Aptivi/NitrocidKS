@@ -29,10 +29,10 @@ Namespace Shell.Commands
                     StartShell(ShellType.SFTPShell, ListArgs(0))
                 End If
             Catch sftpex As Exceptions.SFTPShellException
-                Write(sftpex.Message, True, ColTypes.Error)
+                TextWriterColor.Write(sftpex.Message, True, ColTypes.Error)
             Catch ex As Exception
                 WStkTrc(ex)
-                Write(DoTranslation("Unknown SFTP shell error:") + " {0}", True, ColTypes.Error, ex.Message)
+                TextWriterColor.Write(DoTranslation("Unknown SFTP shell error:") + " {0}", True, ColTypes.Error, ex.Message)
             End Try
         End Sub
 

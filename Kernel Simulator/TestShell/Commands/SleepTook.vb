@@ -25,15 +25,15 @@ Namespace TestShell.Commands
             Dim SleepMs As Integer = ListArgsOnly(0)
             Dim Ticks As Boolean = ListSwitchesOnly.Contains("-t")
             If Ticks Then
-                Write("{0} ms => {1} ticks", True, ColTypes.Neutral, SleepMs, GetActualTicks(SleepMs))
+                TextWriterColor.Write("{0} ms => {1} ticks", True, ColTypes.Neutral, SleepMs, GetActualTicks(SleepMs))
             Else
-                Write("{0} ms => {1} ms", True, ColTypes.Neutral, SleepMs, GetActualMilliseconds(SleepMs))
+                TextWriterColor.Write("{0} ms => {1} ms", True, ColTypes.Neutral, SleepMs, GetActualMilliseconds(SleepMs))
             End If
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -t: ", False, ColTypes.ListEntry) : Write(DoTranslation("Unit in ticks"), True, ColTypes.ListValue)
+            TextWriterColor.Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
+            TextWriterColor.Write("  -t: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Unit in ticks"), True, ColTypes.ListValue)
         End Sub
 
     End Class

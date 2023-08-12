@@ -23,18 +23,18 @@ Namespace Network.FTP.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If FtpConnected Then
-                Write("<<< C: {0}", True, ColTypes.Neutral, StringArgs)
+                TextWriterColor.Write("<<< C: {0}", True, ColTypes.Neutral, StringArgs)
                 Dim ExecutedReply As FtpReply = ClientFTP.Execute(StringArgs)
                 If ExecutedReply.Success Then
-                    Write(">>> [{0}] M: {1}", True, ColTypes.Success, ExecutedReply.Code, ExecutedReply.Message)
-                    Write(">>> [{0}] I: {1}", True, ColTypes.Success, ExecutedReply.Code, ExecutedReply.InfoMessages)
+                    TextWriterColor.Write(">>> [{0}] M: {1}", True, ColTypes.Success, ExecutedReply.Code, ExecutedReply.Message)
+                    TextWriterColor.Write(">>> [{0}] I: {1}", True, ColTypes.Success, ExecutedReply.Code, ExecutedReply.InfoMessages)
                 Else
-                    Write(">>> [{0}] M: {1}", True, ColTypes.Error, ExecutedReply.Code, ExecutedReply.Message)
-                    Write(">>> [{0}] I: {1}", True, ColTypes.Error, ExecutedReply.Code, ExecutedReply.InfoMessages)
-                    Write(">>> [{0}] E: {1}", True, ColTypes.Error, ExecutedReply.Code, ExecutedReply.ErrorMessage)
+                    TextWriterColor.Write(">>> [{0}] M: {1}", True, ColTypes.Error, ExecutedReply.Code, ExecutedReply.Message)
+                    TextWriterColor.Write(">>> [{0}] I: {1}", True, ColTypes.Error, ExecutedReply.Code, ExecutedReply.InfoMessages)
+                    TextWriterColor.Write(">>> [{0}] E: {1}", True, ColTypes.Error, ExecutedReply.Code, ExecutedReply.ErrorMessage)
                 End If
             Else
-                Write(DoTranslation("You haven't connected to any server yet"), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("You haven't connected to any server yet"), True, ColTypes.Error)
             End If
         End Sub
 

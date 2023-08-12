@@ -40,10 +40,10 @@ Namespace Shell.Commands
                     For Each CommandInfo As CommandInfo In Shell.Commands.Values
                         If CommandInfo.Wrappable Then WrappableCmds.Add(CommandInfo.Command)
                     Next
-                    Write(DoTranslation("The command is not wrappable. These commands are wrappable:") + " {0}", True, ColTypes.Error, String.Join(", ", WrappableCmds.ToArray))
+                    TextWriterColor.Write(DoTranslation("The command is not wrappable. These commands are wrappable:") + " {0}", True, ColTypes.Error, String.Join(", ", WrappableCmds.ToArray))
                 End If
             Else
-                Write(DoTranslation("The wrappable command is not found."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("The wrappable command is not found."), True, ColTypes.Error)
             End If
         End Sub
 
@@ -55,7 +55,7 @@ Namespace Shell.Commands
             Next
 
             'Print them along with help description
-            Write(DoTranslation("Wrappable commands:") + " {0}", True, ColTypes.Neutral, String.Join(", ", WrappableCmds.ToArray))
+            TextWriterColor.Write(DoTranslation("Wrappable commands:") + " {0}", True, ColTypes.Neutral, String.Join(", ", WrappableCmds.ToArray))
         End Sub
 
     End Class

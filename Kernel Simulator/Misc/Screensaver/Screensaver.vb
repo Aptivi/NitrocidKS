@@ -123,7 +123,7 @@ Namespace Misc.Screensaver
                     Custom.Stop()
                     SaverAutoReset.WaitOne()
                 Else
-                    Write(DoTranslation("The requested screensaver {0} is not found."), True, ColTypes.Error, saver)
+                    TextWriterColor.Write(DoTranslation("The requested screensaver {0} is not found."), True, ColTypes.Error, saver)
                     Wdbg(DebugLevel.I, "Screensaver {0} not found in the dictionary.", saver)
                 End If
 
@@ -131,10 +131,10 @@ Namespace Misc.Screensaver
                 Wdbg(DebugLevel.I, "Screensaver really stopped.")
                 KernelEventManager.RaisePostShowScreensaver(saver)
             Catch ex As InvalidOperationException
-                Write(DoTranslation("Error when trying to start screensaver, because of an invalid operation."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("Error when trying to start screensaver, because of an invalid operation."), True, ColTypes.Error)
                 WStkTrc(ex)
             Catch ex As Exception
-                Write(DoTranslation("Error when trying to start screensaver:") + " {0}", True, ColTypes.Error, ex.Message)
+                TextWriterColor.Write(DoTranslation("Error when trying to start screensaver:") + " {0}", True, ColTypes.Error, ex.Message)
                 WStkTrc(ex)
             Finally
                 InSaver = False
@@ -191,7 +191,7 @@ Namespace Misc.Screensaver
                 Wdbg(DebugLevel.W, "Screensaver experienced an error: {0}.", Exception.Message)
                 WStkTrc(Exception)
                 HandleSaverCancel()
-                Write(DoTranslation("Screensaver experienced an error while displaying: {0}. Press any key to exit."), True, ColTypes.Error, Exception.Message)
+                TextWriterColor.Write(DoTranslation("Screensaver experienced an error while displaying: {0}. Press any key to exit."), True, ColTypes.Error, Exception.Message)
             End If
         End Sub
 

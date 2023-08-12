@@ -8,10 +8,7 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Kernel Simulator")>
 <Assembly: AssemblyDescription("Simulates our future kernel")>
-<Assembly: AssemblyCompany("EoflaOE")>
-<Assembly: AssemblyProduct("Kernel Simulator")>
 <Assembly: AssemblyCopyright("Copyright © EoflaOE 2018 - 2022")>
 <Assembly: AssemblyTrademark("")>
 
@@ -30,8 +27,5 @@ Imports System.Runtime.InteropServices
 ' You can specify all the values or you can default the Build and Revision Numbers 
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
-
-<Assembly: AssemblyVersion("0.0.20.12")>
-<Assembly: AssemblyFileVersion("2.0.20.12")>
 
 <Assembly: NeutralResourcesLanguageAttribute("en-US")>

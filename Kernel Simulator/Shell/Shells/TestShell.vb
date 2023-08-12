@@ -47,11 +47,11 @@ Namespace Shell.Shells
                     'Write the custom prompt style for the test shell
                     Wdbg(DebugLevel.I, "Test_PromptStyle = {0}", Test_PromptStyle)
                     If Test_PromptStyle = "" Then
-                        Write("(t)> ", False, ColTypes.Input)
+                        TextWriterColor.Write("(t)> ", False, ColTypes.Input)
                     Else
                         Dim ParsedPromptStyle As String = ProbePlaces(Test_PromptStyle)
                         ParsedPromptStyle.ConvertVTSequences
-                        Write(ParsedPromptStyle, False, ColTypes.Gray)
+                        TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray)
                     End If
 
                     'Parse the command
@@ -59,7 +59,7 @@ Namespace Shell.Shells
                     Try
                         GetLine(FullCmd, False, "", ShellType.TestShell)
                     Catch ex As Exception
-                        Write(DoTranslation("Error in test shell: {0}"), True, ColTypes.Error, ex.Message)
+                        TextWriterColor.Write(DoTranslation("Error in test shell: {0}"), True, ColTypes.Error, ex.Message)
                         Wdbg(DebugLevel.E, "Error: {0}", ex.Message)
                         WStkTrc(ex)
                     End Try

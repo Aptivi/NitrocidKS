@@ -69,7 +69,7 @@ Namespace Modifications
                             Else
                                 'User wasn't authorized.
                                 Wdbg(DebugLevel.E, "User {0} doesn't have permission to use {1} from {2}!", CurrentUser.Username, parts(0), ModPart)
-                                Write(DoTranslation("You don't have permission to use {0}"), True, ColTypes.Error, parts(0))
+                                TextWriterColor.Write(DoTranslation("You don't have permission to use {0}"), True, ColTypes.Error, parts(0))
                             End If
                         Else
                             'Command type is not of shell. Execute anyway.

@@ -25,8 +25,8 @@ Namespace Shell.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             For Each DebugDevice As RemoteDebugDevice In DebugDevices
-                Write($"- {DebugDevice.ClientIP}: ", False, ColTypes.ListEntry)
-                Write(DebugDevice.ClientName, True, ColTypes.ListValue)
+                TextWriterColor.Write($"- {DebugDevice.ClientIP}: ", False, ColTypes.ListEntry)
+                TextWriterColor.Write(DebugDevice.ClientName, True, ColTypes.ListValue)
             Next
         End Sub
 

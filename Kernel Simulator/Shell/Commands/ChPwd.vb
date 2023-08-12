@@ -24,14 +24,14 @@ Namespace Shell.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             Try
                 If ListArgs(3).Contains(" ") Then
-                    Write(DoTranslation("Spaces are not allowed."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("Spaces are not allowed."), True, ColTypes.Error)
                 ElseIf ListArgs(3) = ListArgs(2) Then
                     ChangePassword(ListArgs(0), ListArgs(1), ListArgs(2))
                 ElseIf ListArgs(3) <> ListArgs(2) Then
-                    Write(DoTranslation("Passwords doesn't match."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("Passwords doesn't match."), True, ColTypes.Error)
                 End If
             Catch ex As Exception
-                Write(DoTranslation("Failed to change password of username: {0}"), True, ColTypes.Error, ex.Message)
+                TextWriterColor.Write(DoTranslation("Failed to change password of username: {0}"), True, ColTypes.Error, ex.Message)
                 WStkTrc(ex)
             End Try
         End Sub

@@ -56,7 +56,7 @@ Namespace Arguments.ArgumentBase
                 Dim HelpUsage As String = ArgumentList(Argument).HelpUsage
 
                 'Print usage information
-                Write(DoTranslation("Usage:") + $" {Argument} {HelpUsage}: {HelpDefinition}", True, ColTypes.Neutral)
+                TextWriterColor.Write(DoTranslation("Usage:") + $" {Argument} {HelpUsage}: {HelpDefinition}", True, ColTypes.Neutral)
 
                 'Extra help action for some arguments
                 If ArgumentList(Argument).AdditionalHelpAction IsNot Nothing Then
@@ -66,16 +66,16 @@ Namespace Arguments.ArgumentBase
                 'List the available arguments
                 If Not SimHelp Then
                     For Each cmd As String In ArgumentList.Keys
-                        Write("- {0}: ", False, ColTypes.ListEntry, cmd)
-                        Write("{0}", True, ColTypes.ListValue, ArgumentList(cmd).GetTranslatedHelpEntry)
+                        TextWriterColor.Write("- {0}: ", False, ColTypes.ListEntry, cmd)
+                        TextWriterColor.Write("{0}", True, ColTypes.ListValue, ArgumentList(cmd).GetTranslatedHelpEntry)
                     Next
                 Else
                     For Each cmd As String In ArgumentList.Keys
-                        Write("{0}, ", False, ColTypes.ListEntry, cmd)
+                        TextWriterColor.Write("{0}, ", False, ColTypes.ListEntry, cmd)
                     Next
                 End If
             Else
-                Write(DoTranslation("No help for argument ""{0}""."), True, ColTypes.Error, Argument)
+                TextWriterColor.Write(DoTranslation("No help for argument ""{0}""."), True, ColTypes.Error, Argument)
             End If
         End Sub
 

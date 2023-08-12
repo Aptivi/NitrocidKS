@@ -42,7 +42,7 @@ Namespace Shell.Shells
             If ShellArgs.Length > 0 Then
                 FilePath = ShellArgs(0)
             Else
-                Write(DoTranslation("File not specified. Exiting shell..."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("File not specified. Exiting shell..."), True, ColTypes.Error)
                 Bail = True
             End If
 
@@ -53,7 +53,7 @@ Namespace Shell.Shells
                     If TextEdit_FileStream Is Nothing Then
                         Wdbg(DebugLevel.W, "File not open yet. Trying to open {0}...", FilePath)
                         If Not TextEdit_OpenTextFile(FilePath) Then
-                            Write(DoTranslation("Failed to open file. Exiting shell..."), True, ColTypes.Error)
+                            TextWriterColor.Write(DoTranslation("Failed to open file. Exiting shell..."), True, ColTypes.Error)
                             Exit While
                         End If
                         TextEdit_AutoSave.Start()
@@ -65,11 +65,11 @@ Namespace Shell.Shells
                     End If
                     Wdbg(DebugLevel.I, "TextEdit_PromptStyle = {0}", TextEdit_PromptStyle)
                     If TextEdit_PromptStyle = "" Then
-                        Write("[", False, ColTypes.Gray) : Write("{0}{1}", False, ColTypes.UserName, Path.GetFileName(FilePath), If(TextEdit_WasTextEdited(), "*", "")) : Write("] > ", False, ColTypes.Gray) : Write("", False, InputColor)
+                        TextWriterColor.Write("[", False, ColTypes.Gray) : TextWriterColor.Write("{0}{1}", False, ColTypes.UserName, Path.GetFileName(FilePath), If(TextEdit_WasTextEdited(), "*", "")) : TextWriterColor.Write("] > ", False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                     Else
                         Dim ParsedPromptStyle As String = ProbePlaces(TextEdit_PromptStyle)
                         ParsedPromptStyle.ConvertVTSequences
-                        Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, InputColor)
+                        TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                     End If
 
                     'Prompt for command

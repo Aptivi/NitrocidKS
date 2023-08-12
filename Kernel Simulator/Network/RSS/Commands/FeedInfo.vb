@@ -22,16 +22,16 @@ Namespace Network.RSS.Commands
         Implements ICommand
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
-            Write("- " + DoTranslation("Title:") + " ", False, ColTypes.ListEntry)
-            Write(RSSFeedInstance.FeedTitle, True, ColTypes.ListValue)
-            Write("- " + DoTranslation("Link:") + " ", False, ColTypes.ListEntry)
-            Write(RSSFeedInstance.FeedUrl, True, ColTypes.ListValue)
-            Write("- " + DoTranslation("Description:") + " ", False, ColTypes.ListEntry)
-            Write(RSSFeedInstance.FeedDescription, True, ColTypes.ListValue)
-            Write("- " + DoTranslation("Feed type:") + " ", False, ColTypes.ListEntry)
-            Write(RSSFeedInstance.FeedType.ToString, True, ColTypes.ListValue)
-            Write("- " + DoTranslation("Number of articles:") + " ", False, ColTypes.ListEntry)
-            Write(RSSFeedInstance.FeedArticles.Count.ToString, True, ColTypes.ListValue)
+            TextWriterColor.Write("- " + DoTranslation("Title:") + " ", False, ColTypes.ListEntry)
+            TextWriterColor.Write(RSSFeedInstance.FeedTitle, True, ColTypes.ListValue)
+            TextWriterColor.Write("- " + DoTranslation("Link:") + " ", False, ColTypes.ListEntry)
+            TextWriterColor.Write(RSSFeedInstance.FeedUrl, True, ColTypes.ListValue)
+            TextWriterColor.Write("- " + DoTranslation("Description:") + " ", False, ColTypes.ListEntry)
+            TextWriterColor.Write(RSSFeedInstance.FeedDescription, True, ColTypes.ListValue)
+            TextWriterColor.Write("- " + DoTranslation("Feed type:") + " ", False, ColTypes.ListEntry)
+            TextWriterColor.Write(RSSFeedInstance.FeedType.ToString, True, ColTypes.ListValue)
+            TextWriterColor.Write("- " + DoTranslation("Number of articles:") + " ", False, ColTypes.ListEntry)
+            TextWriterColor.Write(RSSFeedInstance.FeedArticles.Count.ToString, True, ColTypes.ListValue)
         End Sub
 
     End Class

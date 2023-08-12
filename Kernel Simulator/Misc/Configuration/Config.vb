@@ -1719,7 +1719,7 @@ Namespace Misc.Configuration
             Try
                 ReadConfig()
             Catch cex As Exceptions.ConfigException
-                Write(cex.Message, True, ColTypes.Error)
+                TextWriterColor.Write(cex.Message, True, ColTypes.Error)
                 WStkTrc(cex)
             End Try
         End Sub

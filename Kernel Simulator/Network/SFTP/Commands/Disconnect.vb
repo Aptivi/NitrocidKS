@@ -28,7 +28,7 @@ Namespace Network.SFTP.Commands
                 'Set a connected flag to False
                 SFTPConnected = False
                 ClientSFTP.Disconnect()
-                Write(DoTranslation("Disconnected from {0}"), True, ColTypes.Neutral, FtpSite)
+                TextWriterColor.Write(DoTranslation("Disconnected from {0}"), True, ColTypes.Neutral, FtpSite)
 
                 'Clean up everything
                 SFTPSite = ""
@@ -36,7 +36,7 @@ Namespace Network.SFTP.Commands
                 SFTPUser = ""
                 SFTPPass = ""
             Else
-                Write(DoTranslation("You haven't connected to any server yet"), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("You haven't connected to any server yet"), True, ColTypes.Error)
             End If
         End Sub
 

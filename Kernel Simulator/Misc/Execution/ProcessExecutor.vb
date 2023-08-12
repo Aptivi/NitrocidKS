@@ -119,7 +119,7 @@ Namespace Misc.Execution
             Catch ex As Exception
                 KernelEventManager.RaiseProcessError(File + Args, ex)
                 WStkTrc(ex)
-                Write(DoTranslation("Error trying to execute command") + " {2}." + NewLine + DoTranslation("Error {0}: {1}"), True, ColTypes.Error, ex.GetType.FullName, ex.Message, File)
+                TextWriterColor.Write(DoTranslation("Error trying to execute command") + " {2}." + NewLine + DoTranslation("Error {0}: {1}"), True, ColTypes.Error, ex.GetType.FullName, ex.Message, File)
             End Try
             Return -1
         End Function
@@ -132,7 +132,7 @@ Namespace Misc.Execution
         Private Sub ExecutableOutput(sendingProcess As Object, outLine As DataReceivedEventArgs)
             NewDataSpotted = True
             Wdbg(DebugLevel.I, outLine.Data)
-            Write(outLine.Data, True, ColTypes.Neutral)
+            TextWriterColor.Write(outLine.Data, True, ColTypes.Neutral)
             ProcessData += outLine.Data
         End Sub
 

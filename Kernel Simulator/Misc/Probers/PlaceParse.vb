@@ -191,7 +191,7 @@ Namespace Misc.Probers
                 KernelEventManager.RaisePlaceholderParsed(text)
             Catch ex As Exception
                 WStkTrc(ex)
-                Write(DoTranslation("Error trying to parse placeholders. {0}"), True, ColTypes.Error, ex.Message)
+                TextWriterColor.Write(DoTranslation("Error trying to parse placeholders. {0}"), True, ColTypes.Error, ex.Message)
             End Try
             Return text
 

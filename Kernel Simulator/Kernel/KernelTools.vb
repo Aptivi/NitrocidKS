@@ -81,14 +81,14 @@ Namespace Kernel
                             'If the error type is unrecoverable, or double, and the rebooting is false where it should
                             'not be false, then it can deal with this issue by enabling reboot.
                             Wdbg(DebugLevel.W, "Errors that have type {0} enforced Reboot = True.", ErrorType)
-                            Write(DoTranslation("[{0}] panic: Reboot enabled due to error level being {0}."), True, ColTypes.Uncontinuable, ErrorType)
+                            TextWriterColor.Write(DoTranslation("[{0}] panic: Reboot enabled due to error level being {0}."), True, ColTypes.Uncontinuable, ErrorType)
                             Reboot = True
                         End If
                     End If
                     If RebootTime > 3600 Then
                         'If the reboot time exceeds 1 hour, then it will set the time to 1 minute.
                         Wdbg(DebugLevel.W, "RebootTime shouldn't exceed 1 hour. Was {0} seconds", RebootTime)
-                        Write(DoTranslation("[{0}] panic: Time to reboot: {1} seconds, exceeds 1 hour. It is set to 1 minute."), True, ColTypes.Uncontinuable, ErrorType, CStr(RebootTime))
+                        TextWriterColor.Write(DoTranslation("[{0}] panic: Time to reboot: {1} seconds, exceeds 1 hour. It is set to 1 minute."), True, ColTypes.Uncontinuable, ErrorType, CStr(RebootTime))
                         RebootTime = 60
                     End If
                 Else
@@ -112,7 +112,7 @@ Namespace Kernel
                     Case KernelErrorLevel.D
                         'Double panic printed and reboot initiated
                         Wdbg(DebugLevel.F, "Double panic caused by bug in kernel crash.")
-                        Write(DoTranslation("[{0}] dpanic: {1} -- Rebooting in {2} seconds..."), True, ColTypes.Uncontinuable, ErrorType, Description, CStr(RebootTime))
+                        TextWriterColor.Write(DoTranslation("[{0}] dpanic: {1} -- Rebooting in {2} seconds..."), True, ColTypes.Uncontinuable, ErrorType, Description, CStr(RebootTime))
                         Thread.Sleep(RebootTime * 1000)
                         Wdbg(DebugLevel.F, "Rebooting")
                         PowerManage(PowerMode.Reboot)
@@ -120,26 +120,26 @@ Namespace Kernel
                         If Reboot Then
                             'Continuable kernel errors shouldn't cause the kernel to reboot.
                             Wdbg(DebugLevel.W, "Continuable kernel errors shouldn't have Reboot = True.")
-                            Write(DoTranslation("[{0}] panic: Reboot disabled due to error level being {0}."), True, ColTypes.Warning, ErrorType)
+                            TextWriterColor.Write(DoTranslation("[{0}] panic: Reboot disabled due to error level being {0}."), True, ColTypes.Warning, ErrorType)
                         End If
                         'Print normally
                         KernelEventManager.RaiseContKernelError(ErrorType, Reboot, RebootTime, Description, Exc, Variables)
-                        Write(DoTranslation("[{0}] panic: {1} -- Press any key to continue using the kernel."), True, ColTypes.Continuable, ErrorType, Description)
-                        If ShowStackTraceOnKernelError And Exc IsNot Nothing Then Write(Exc.StackTrace, True, ColTypes.Continuable)
+                        TextWriterColor.Write(DoTranslation("[{0}] panic: {1} -- Press any key to continue using the kernel."), True, ColTypes.Continuable, ErrorType, Description)
+                        If ShowStackTraceOnKernelError And Exc IsNot Nothing Then TextWriterColor.Write(Exc.StackTrace, True, ColTypes.Continuable)
                         Console.ReadKey()
                     Case Else
                         If Reboot Then
                             'Offer the user to wait for the set time interval before the kernel reboots.
                             Wdbg(DebugLevel.F, "Kernel panic initiated with reboot time: {0} seconds, Error Type: {1}", RebootTime, ErrorType)
-                            Write(DoTranslation("[{0}] panic: {1} -- Rebooting in {2} seconds..."), True, ColTypes.Uncontinuable, ErrorType, Description, CStr(RebootTime))
-                            If ShowStackTraceOnKernelError And Exc IsNot Nothing Then Write(Exc.StackTrace, True, ColTypes.Uncontinuable)
+                            TextWriterColor.Write(DoTranslation("[{0}] panic: {1} -- Rebooting in {2} seconds..."), True, ColTypes.Uncontinuable, ErrorType, Description, CStr(RebootTime))
+                            If ShowStackTraceOnKernelError And Exc IsNot Nothing Then TextWriterColor.Write(Exc.StackTrace, True, ColTypes.Uncontinuable)
                             Thread.Sleep(RebootTime * 1000)
                             PowerManage(PowerMode.Reboot)
                         Else
                             'If rebooting is disabled, offer the user to shutdown the kernel
                             Wdbg(DebugLevel.W, "Reboot is False, ErrorType is not double or continuable.")
-                            Write(DoTranslation("[{0}] panic: {1} -- Press any key to shutdown."), True, ColTypes.Uncontinuable, ErrorType, Description)
-                            If ShowStackTraceOnKernelError And Exc IsNot Nothing Then Write(Exc.StackTrace, True, ColTypes.Uncontinuable)
+                            TextWriterColor.Write(DoTranslation("[{0}] panic: {1} -- Press any key to shutdown."), True, ColTypes.Uncontinuable, ErrorType, Description)
+                            If ShowStackTraceOnKernelError And Exc IsNot Nothing Then TextWriterColor.Write(Exc.StackTrace, True, ColTypes.Uncontinuable)
                             Console.ReadKey()
                             PowerManage(PowerMode.Shutdown)
                         End If
@@ -240,7 +240,7 @@ Namespace Kernel
                 Wdbg(DebugLevel.I, "Closing file stream for dump...")
                 Dump.Flush() : Dump.Close()
             Catch ex As Exception
-                Write(DoTranslation("Dump information gatherer crashed when trying to get information about {0}: {1}"), True, ColTypes.Error, Exc.GetType.FullName, ex.Message)
+                TextWriterColor.Write(DoTranslation("Dump information gatherer crashed when trying to get information about {0}: {1}"), True, ColTypes.Error, Exc.GetType.FullName, ex.Message)
                 WStkTrc(ex)
             End Try
         End Sub
@@ -272,13 +272,13 @@ Namespace Kernel
             Select Case PowerMode
                 Case PowerMode.Shutdown
                     KernelEventManager.RaisePreShutdown()
-                    Write(DoTranslation("Shutting down..."), True, ColTypes.Neutral)
+                    TextWriterColor.Write(DoTranslation("Shutting down..."), True, ColTypes.Neutral)
                     ResetEverything()
                     KernelEventManager.RaisePostShutdown()
                     Environment.Exit(0)
                 Case PowerMode.Reboot, PowerMode.RebootSafe
                     KernelEventManager.RaisePreReboot()
-                    Write(DoTranslation("Rebooting..."), True, ColTypes.Neutral)
+                    TextWriterColor.Write(DoTranslation("Rebooting..."), True, ColTypes.Neutral)
                     ResetEverything()
                     KernelEventManager.RaisePostReboot()
                     Console.Clear()
@@ -386,18 +386,18 @@ Namespace Kernel
             'Some information
             If ShowAppInfoOnBoot And Not EnableSplash Then
                 WriteSeparator(DoTranslation("App information"), True, ColTypes.Stage)
-                Write("OS: " + DoTranslation("Running on {0}"), True, ColTypes.Neutral, Environment.OSVersion.ToString)
-                Write("KS: " + DoTranslation("Built in {0}"), True, ColTypes.Neutral, Render(GetCompileDate()))
+                TextWriterColor.Write("OS: " + DoTranslation("Running on {0}"), True, ColTypes.Neutral, Environment.OSVersion.ToString)
+                TextWriterColor.Write("KS: " + DoTranslation("Built in {0}"), True, ColTypes.Neutral, Render(GetCompileDate()))
             End If
 
             'Show dev version notice
             If Not EnableSplash Then
 #If SPECIFIER = "DEV" Then 'WARNING: When the development nearly ends, change the compiler constant value to "REL" to suppress this message out of stable versions
-                Write(DoTranslation("Looks like you were running the development version of the kernel. While you can see the aspects, it is frequently updated and might introduce bugs. It is recommended that you stay on the stable version."), True, ColTypes.DevelopmentWarning)
+                TextWriterColor.Write(DoTranslation("Looks like you were running the development version of the kernel. While you can see the aspects, it is frequently updated and might introduce bugs. It is recommended that you stay on the stable version."), True, ColTypes.DevelopmentWarning)
 #ElseIf SPECIFIER = "RC" Then
-                Write(DoTranslation("Looks like you were running the release candidate version. It is recommended that you stay on the stable version."), True, ColTypes.DevelopmentWarning)
+                TextWriterColor.Write(DoTranslation("Looks like you were running the release candidate version. It is recommended that you stay on the stable version."), True, ColTypes.DevelopmentWarning)
 #ElseIf SPECIFIER <> "REL" Then
-                Write(DoTranslation("Looks like you were running an unsupported version. It's highly advisable not to use this version."), True, ColTypes.DevelopmentWarning)
+                TextWriterColor.Write(DoTranslation("Looks like you were running an unsupported version. It's highly advisable not to use this version."), True, ColTypes.DevelopmentWarning)
 #End If
             End If
 

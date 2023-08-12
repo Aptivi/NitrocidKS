@@ -24,14 +24,14 @@ Namespace Shell.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If ListArgs?.Length > 0 Then
                 If StringArgs = "" Then
-                    Write(DoTranslation("Blank MAL After Login."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("Blank MAL After Login."), True, ColTypes.Error)
                 Else
-                    Write(DoTranslation("Changing MAL..."), True, ColTypes.Neutral)
+                    TextWriterColor.Write(DoTranslation("Changing MAL..."), True, ColTypes.Neutral)
                     SetMOTD(StringArgs, MessageType.MAL)
                 End If
             Else
                 StartShell(ShellType.TextShell, GetKernelPath(KernelPathType.MAL))
-                Write(DoTranslation("Changing MAL..."), True, ColTypes.Neutral)
+                TextWriterColor.Write(DoTranslation("Changing MAL..."), True, ColTypes.Neutral)
                 ReadMOTD(MessageType.MAL)
             End If
         End Sub

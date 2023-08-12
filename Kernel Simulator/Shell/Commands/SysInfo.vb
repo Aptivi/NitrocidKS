@@ -41,13 +41,13 @@ Namespace Shell.Commands
             If ShowSystemInfo Then
                 'Kernel section
                 WriteSeparator(DoTranslation("Kernel settings"), True)
-                Write(DoTranslation("Kernel Version:") + " ", False, ColTypes.ListEntry) : Write(KernelVersion, True, ColTypes.ListValue)
-                Write(DoTranslation("Debug Mode:") + " ", False, ColTypes.ListEntry) : Write(DebugMode.ToString, True, ColTypes.ListValue)
-                Write(DoTranslation("Colored Shell:") + " ", False, ColTypes.ListEntry) : Write(ColoredShell.ToString, True, ColTypes.ListValue)
-                Write(DoTranslation("Arguments on Boot:") + " ", False, ColTypes.ListEntry) : Write(ArgsOnBoot.ToString, True, ColTypes.ListValue)
-                Write(DoTranslation("Help command simplified:") + " ", False, ColTypes.ListEntry) : Write(SimHelp.ToString, True, ColTypes.ListValue)
-                Write(DoTranslation("MOTD on Login:") + " ", False, ColTypes.ListEntry) : Write(ShowMOTD.ToString, True, ColTypes.ListValue)
-                Write(DoTranslation("Time/Date on corner:") + " ", False, ColTypes.ListEntry) : Write(CornerTimeDate.ToString, True, ColTypes.ListValue)
+                TextWriterColor.Write(DoTranslation("Kernel Version:") + " ", False, ColTypes.ListEntry) : TextWriterColor.Write(KernelVersion, True, ColTypes.ListValue)
+                TextWriterColor.Write(DoTranslation("Debug Mode:") + " ", False, ColTypes.ListEntry) : TextWriterColor.Write(DebugMode.ToString, True, ColTypes.ListValue)
+                TextWriterColor.Write(DoTranslation("Colored Shell:") + " ", False, ColTypes.ListEntry) : TextWriterColor.Write(ColoredShell.ToString, True, ColTypes.ListValue)
+                TextWriterColor.Write(DoTranslation("Arguments on Boot:") + " ", False, ColTypes.ListEntry) : TextWriterColor.Write(ArgsOnBoot.ToString, True, ColTypes.ListValue)
+                TextWriterColor.Write(DoTranslation("Help command simplified:") + " ", False, ColTypes.ListEntry) : TextWriterColor.Write(SimHelp.ToString, True, ColTypes.ListValue)
+                TextWriterColor.Write(DoTranslation("MOTD on Login:") + " ", False, ColTypes.ListEntry) : TextWriterColor.Write(ShowMOTD.ToString, True, ColTypes.ListValue)
+                TextWriterColor.Write(DoTranslation("Time/Date on corner:") + " ", False, ColTypes.ListEntry) : TextWriterColor.Write(CornerTimeDate.ToString, True, ColTypes.ListValue)
                 Console.WriteLine()
             End If
 
@@ -55,40 +55,40 @@ Namespace Shell.Commands
                 'Hardware section
                 WriteSeparator(DoTranslation("Hardware settings"), True)
                 ListHardware()
-                Write(DoTranslation("Use ""hwinfo"" for extended information about hardware."), True, ColTypes.Tip)
+                TextWriterColor.Write(DoTranslation("Use ""hwinfo"" for extended information about hardware."), True, ColTypes.Tip)
                 Console.WriteLine()
             End If
 
             If ShowUserInfo Then
                 'User section
                 WriteSeparator(DoTranslation("User settings"), True)
-                Write(DoTranslation("Current user name:") + " ", False, ColTypes.ListEntry) : Write(CurrentUser.Username, True, ColTypes.ListValue)
-                Write(DoTranslation("Current host name:") + " ", False, ColTypes.ListEntry) : Write(HostName, True, ColTypes.ListValue)
-                Write(DoTranslation("Available usernames:") + " ", False, ColTypes.ListEntry) : Write(String.Join(", ", ListAllUsers), True, ColTypes.ListValue)
+                TextWriterColor.Write(DoTranslation("Current user name:") + " ", False, ColTypes.ListEntry) : TextWriterColor.Write(CurrentUser.Username, True, ColTypes.ListValue)
+                TextWriterColor.Write(DoTranslation("Current host name:") + " ", False, ColTypes.ListEntry) : TextWriterColor.Write(HostName, True, ColTypes.ListValue)
+                TextWriterColor.Write(DoTranslation("Available usernames:") + " ", False, ColTypes.ListEntry) : TextWriterColor.Write(String.Join(", ", ListAllUsers), True, ColTypes.ListValue)
                 Console.WriteLine()
             End If
 
             If ShowMessageOfTheDay Then
                 'Show MOTD
                 WriteSeparator("MOTD", True)
-                Write(ProbePlaces(MOTDMessage), True, ColTypes.Neutral)
+                TextWriterColor.Write(ProbePlaces(MOTDMessage), True, ColTypes.Neutral)
             End If
 
             If ShowMal Then
                 'Show MAL
                 WriteSeparator("MAL", True)
-                Write(ProbePlaces(MAL), True, ColTypes.Neutral)
+                TextWriterColor.Write(ProbePlaces(MAL), True, ColTypes.Neutral)
             End If
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -s: ", False, ColTypes.ListEntry) : Write(DoTranslation("Shows the system information"), True, ColTypes.ListValue)
-            Write("  -h: ", False, ColTypes.ListEntry) : Write(DoTranslation("Shows the hardware information"), True, ColTypes.ListValue)
-            Write("  -u: ", False, ColTypes.ListEntry) : Write(DoTranslation("Shows the user information"), True, ColTypes.ListValue)
-            Write("  -m: ", False, ColTypes.ListEntry) : Write(DoTranslation("Shows the message of the day"), True, ColTypes.ListValue)
-            Write("  -l: ", False, ColTypes.ListEntry) : Write(DoTranslation("Shows the message of the day after login"), True, ColTypes.ListValue)
-            Write("  -a: ", False, ColTypes.ListEntry) : Write(DoTranslation("Shows all information"), True, ColTypes.ListValue)
+            TextWriterColor.Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
+            TextWriterColor.Write("  -s: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Shows the system information"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -h: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Shows the hardware information"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -u: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Shows the user information"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -m: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Shows the message of the day"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -l: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Shows the message of the day after login"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -a: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Shows all information"), True, ColTypes.ListValue)
         End Sub
 
     End Class

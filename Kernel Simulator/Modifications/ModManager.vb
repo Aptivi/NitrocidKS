@@ -123,7 +123,7 @@ Namespace Modifications
 
                 'Check to see if we have mods
                 If count <> 0 Then
-                    Write(DoTranslation("mod: Stopping mods..."), True, ColTypes.Neutral)
+                    TextWriterColor.Write(DoTranslation("mod: Stopping mods..."), True, ColTypes.Neutral)
                     Wdbg(DebugLevel.I, "Mods are being stopped. Total mods with screensavers = {0}", count)
 
                     'Enumerate and delete the script as soon as the stopping is complete
@@ -140,7 +140,7 @@ Namespace Modifications
                             'Stop the associated part
                             ScriptPartInfo.PartScript.StopMod()
                             If Not String.IsNullOrWhiteSpace(ScriptPartInfo.PartName) And Not String.IsNullOrWhiteSpace(ScriptPartInfo.PartScript.Version) Then
-                                Write(DoTranslation("{0} v{1} stopped"), True, ColTypes.Neutral, ScriptPartInfo.PartName, ScriptPartInfo.PartScript.Version)
+                                TextWriterColor.Write(DoTranslation("{0} v{1} stopped"), True, ColTypes.Neutral, ScriptPartInfo.PartName, ScriptPartInfo.PartScript.Version)
                             End If
 
                             'Remove the part from the list
@@ -148,7 +148,7 @@ Namespace Modifications
                         Next
 
                         'Remove the mod from the list
-                        Write(DoTranslation("Mod {0} stopped"), True, ColTypes.Neutral, TargetMod.ModName)
+                        TextWriterColor.Write(DoTranslation("Mod {0} stopped"), True, ColTypes.Neutral, TargetMod.ModName)
                         Mods.Remove(Mods.Keys(ScriptIndex))
                     Next
 
@@ -190,10 +190,10 @@ Namespace Modifications
                     'Clear the custom screensavers
                     CustomSavers.Clear()
                 Else
-                    Write(DoTranslation("mod: No mods detected."), True, ColTypes.Neutral)
+                    TextWriterColor.Write(DoTranslation("mod: No mods detected."), True, ColTypes.Neutral)
                 End If
             Else
-                Write(DoTranslation("Stopping mods not allowed on safe mode."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("Stopping mods not allowed on safe mode."), True, ColTypes.Error)
             End If
         End Sub
 
@@ -210,7 +210,7 @@ Namespace Modifications
             If Not SafeMode Then
                 If FileExists(ModFilename) Then
                     If HasModStarted(ModFilename) Then
-                        Write(DoTranslation("mod: Stopping mod {0}..."), True, ColTypes.Neutral, Path.GetFileName(ModFilename))
+                        TextWriterColor.Write(DoTranslation("mod: Stopping mod {0}..."), True, ColTypes.Neutral, Path.GetFileName(ModFilename))
                         Wdbg(DebugLevel.I, "Mod {0} is being stopped.", Path.GetFileName(ModFilename))
 
                         'Iterate through all the mods
@@ -283,7 +283,7 @@ Namespace Modifications
                                     'Stop the associated part
                                     ScriptPartInfo.PartScript.StopMod()
                                     If Not String.IsNullOrWhiteSpace(ScriptPartInfo.PartName) And Not String.IsNullOrWhiteSpace(ScriptPartInfo.PartScript.Version) Then
-                                        Write(DoTranslation("{0} v{1} stopped"), True, ColTypes.Neutral, ScriptPartInfo.PartName, ScriptPartInfo.PartScript.Version)
+                                        TextWriterColor.Write(DoTranslation("{0} v{1} stopped"), True, ColTypes.Neutral, ScriptPartInfo.PartName, ScriptPartInfo.PartScript.Version)
                                     End If
 
                                     'Remove the part from the list
@@ -291,18 +291,18 @@ Namespace Modifications
                                 Next
 
                                 'Remove the mod from the list
-                                Write(DoTranslation("Mod {0} stopped"), True, ColTypes.Neutral, TargetMod.ModName)
+                                TextWriterColor.Write(DoTranslation("Mod {0} stopped"), True, ColTypes.Neutral, TargetMod.ModName)
                                 Mods.Remove(Mods.Keys(ScriptIndex))
                             End If
                         Next
                     Else
-                        Write(DoTranslation("Mod hasn't started yet!"), True, ColTypes.Error)
+                        TextWriterColor.Write(DoTranslation("Mod hasn't started yet!"), True, ColTypes.Error)
                     End If
                 Else
-                    Write(DoTranslation("Mod {0} not found."), True, ColTypes.Neutral, Path.GetFileName(ModFilename))
+                    TextWriterColor.Write(DoTranslation("Mod {0} not found."), True, ColTypes.Neutral, Path.GetFileName(ModFilename))
                 End If
             Else
-                Write(DoTranslation("Stopping mods not allowed on safe mode."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("Stopping mods not allowed on safe mode."), True, ColTypes.Error)
             End If
         End Sub
 
@@ -403,7 +403,7 @@ Namespace Modifications
 
             'Check for upgrade
             If FileExists(TargetModPath) Then
-                Write(DoTranslation("Trying to install an already-installed mod. Updating mod..."), True, ColTypes.Warning)
+                TextWriterColor.Write(DoTranslation("Trying to install an already-installed mod. Updating mod..."), True, ColTypes.Warning)
                 StopMod(Path.GetFileName(TargetModPath))
             End If
 
@@ -416,13 +416,13 @@ Namespace Modifications
                     Catch ex As ReflectionTypeLoadException
                         Wdbg(DebugLevel.E, "Error trying to load dynamic mod {0}: {1}", ModPath, ex.Message)
                         WStkTrc(ex)
-                        Write(DoTranslation("Mod can't be loaded because of the following: "), True, ColTypes.Error)
+                        TextWriterColor.Write(DoTranslation("Mod can't be loaded because of the following: "), True, ColTypes.Error)
                         For Each LoaderException As Exception In ex.LoaderExceptions
                             Wdbg(DebugLevel.E, "Loader exception: {0}", LoaderException.Message)
                             WStkTrc(LoaderException)
-                            Write(LoaderException.Message, True, ColTypes.Error)
+                            TextWriterColor.Write(LoaderException.Message, True, ColTypes.Error)
                         Next
-                        Write(DoTranslation("Contact the vendor of the mod to upgrade the mod to the compatible version."), True, ColTypes.Error)
+                        TextWriterColor.Write(DoTranslation("Contact the vendor of the mod to upgrade the mod to the compatible version."), True, ColTypes.Error)
                         Throw ex
                     End Try
                 End If
@@ -446,12 +446,12 @@ Namespace Modifications
                 End If
 
                 'Finally, start the mod
-                Write(DoTranslation("Starting mod") + " {0}...", True, ColTypes.Neutral, Path.GetFileNameWithoutExtension(TargetModPath))
+                TextWriterColor.Write(DoTranslation("Starting mod") + " {0}...", True, ColTypes.Neutral, Path.GetFileNameWithoutExtension(TargetModPath))
                 StartMod(TargetModPath)
             Catch ex As Exception
                 Wdbg(DebugLevel.E, "Installation failed for {0}: {1}", ModPath, ex.Message)
                 WStkTrc(ex)
-                Write(DoTranslation("Installation failed for") + " {0}: {1}", True, ColTypes.Error, ModPath, ex.Message)
+                TextWriterColor.Write(DoTranslation("Installation failed for") + " {0}: {1}", True, ColTypes.Error, ModPath, ex.Message)
             End Try
 #Enable Warning BC42104
         End Sub
@@ -487,7 +487,7 @@ Namespace Modifications
             Catch ex As Exception
                 Wdbg(DebugLevel.E, "Uninstallation failed for {0}: {1}", ModPath, ex.Message)
                 WStkTrc(ex)
-                Write(DoTranslation("Uninstallation failed for") + " {0}: {1}", True, ColTypes.Error, ModPath, ex.Message)
+                TextWriterColor.Write(DoTranslation("Uninstallation failed for") + " {0}: {1}", True, ColTypes.Error, ModPath, ex.Message)
             End Try
         End Sub
 

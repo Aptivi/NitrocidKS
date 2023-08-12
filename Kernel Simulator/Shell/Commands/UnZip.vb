@@ -40,8 +40,8 @@ Namespace Shell.Commands
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -createdir: ", False, ColTypes.ListEntry) : Write(DoTranslation("Creates a directory that contains the contents of the ZIP file"), True, ColTypes.ListValue)
+            TextWriterColor.Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
+            TextWriterColor.Write("  -createdir: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Creates a directory that contains the contents of the ZIP file"), True, ColTypes.ListValue)
         End Sub
 
     End Class

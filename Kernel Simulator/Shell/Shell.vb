@@ -230,17 +230,17 @@ Namespace Shell
                         If ShellType = ShellType.Shell Then
                             If HasPermission(CurrentUser.Username, PermissionType.Administrator) = False And Commands(FullCommand).Strict Then
                                 Wdbg(DebugLevel.W, "Cmd exec {0} failed: adminList(signedinusrnm) is False, strictCmds.Contains({0}) is True", FullCommand)
-                                Write(DoTranslation("You don't have permission to use {0}"), True, ColTypes.Error, FullCommand)
+                                TextWriterColor.Write(DoTranslation("You don't have permission to use {0}"), True, ColTypes.Error, FullCommand)
                                 Exit Try
                             End If
                         End If
 
                         If Maintenance = True And Commands(FullCommand).NoMaintenance Then
                             Wdbg(DebugLevel.W, "Cmd exec {0} failed: In maintenance mode. {0} is in NoMaintenanceCmds", FullCommand)
-                            Write(DoTranslation("Shell message: The requested command {0} is not allowed to run in maintenance mode."), True, ColTypes.Error, FullCommand)
+                            TextWriterColor.Write(DoTranslation("Shell message: The requested command {0} is not allowed to run in maintenance mode."), True, ColTypes.Error, FullCommand)
                         ElseIf IsInvokedByKernelArgument And (FullCommand.StartsWith("logout") Or FullCommand.StartsWith("shutdown") Or FullCommand.StartsWith("reboot")) Then
                             Wdbg(DebugLevel.W, "Cmd exec {0} failed: cmd is one of ""logout"" or ""shutdown"" or ""reboot""", FullCommand)
-                            Write(DoTranslation("Shell message: Command {0} is not allowed to run on log in."), True, ColTypes.Error, FullCommand)
+                            TextWriterColor.Write(DoTranslation("Shell message: Command {0} is not allowed to run on log in."), True, ColTypes.Error, FullCommand)
                         Else
                             Wdbg(DebugLevel.I, "Cmd exec {0} succeeded. Running with {1}", FullCommand, cmdArgs)
                             Dim Params As New ExecuteCommandThreadParameters(EntireCommand, ShellType, Nothing)
@@ -265,7 +265,7 @@ Namespace Shell
                                 End If
                             Catch ex As Exception
                                 Wdbg(DebugLevel.E, "Failed to start process: {0}", ex.Message)
-                                Write(DoTranslation("Failed to start ""{0}"": {1}"), True, ColTypes.Error, FullCommand, ex.Message)
+                                TextWriterColor.Write(DoTranslation("Failed to start ""{0}"": {1}"), True, ColTypes.Error, FullCommand, ex.Message)
                                 WStkTrc(ex)
                             End Try
                         ElseIf FileExists(TargetFile) And TargetFile.EndsWith(".uesh") Then
@@ -273,16 +273,16 @@ Namespace Shell
                             Execute(TargetFile, scriptArgs.Join(" "))
                         Else
                             Wdbg(DebugLevel.W, "Cmd exec {0} failed: availableCmds.Cont({0}.Substring(0, {1})) = False", FullCommand, indexCmd)
-                            Write(DoTranslation("Shell message: The requested command {0} is not found. See 'help' for available commands."), True, ColTypes.Error, FullCommand)
+                            TextWriterColor.Write(DoTranslation("Shell message: The requested command {0} is not found. See 'help' for available commands."), True, ColTypes.Error, FullCommand)
                         End If
                     Else
                         Wdbg(DebugLevel.W, "Cmd exec {0} failed: availableCmds.Cont({0}.Substring(0, {1})) = False", FullCommand, indexCmd)
-                        Write(DoTranslation("Shell message: The requested command {0} is not found. See 'help' for available commands."), True, ColTypes.Error, FullCommand)
+                        TextWriterColor.Write(DoTranslation("Shell message: The requested command {0} is not found. See 'help' for available commands."), True, ColTypes.Error, FullCommand)
                     End If
                 End If
             Catch ex As Exception
                 WStkTrc(ex)
-                Write(DoTranslation("Error trying to execute command.") + NewLine +
+                TextWriterColor.Write(DoTranslation("Error trying to execute command.") + NewLine +
                   DoTranslation("Error {0}: {1}"), True, ColTypes.Error, ex.GetType.FullName, ex.Message)
             End Try
             Console.Title = ConsoleTitle

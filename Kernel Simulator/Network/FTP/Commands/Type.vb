@@ -26,15 +26,15 @@ Namespace Network.FTP.Commands
                 ClientFTP.DownloadDataType = FtpDataType.ASCII
                 ClientFTP.ListingDataType = FtpDataType.ASCII
                 ClientFTP.UploadDataType = FtpDataType.ASCII
-                Write(DoTranslation("Data type set to ASCII!"), True, ColTypes.Success)
-                Write(DoTranslation("Beware that most files won't download or upload properly using this mode, so we highly recommend using the Binary mode on most situations."), True, ColTypes.Warning)
+                TextWriterColor.Write(DoTranslation("Data type set to ASCII!"), True, ColTypes.Success)
+                TextWriterColor.Write(DoTranslation("Beware that most files won't download or upload properly using this mode, so we highly recommend using the Binary mode on most situations."), True, ColTypes.Warning)
             ElseIf ListArgs(0).ToLower = "b" Then
                 ClientFTP.DownloadDataType = FtpDataType.Binary
                 ClientFTP.ListingDataType = FtpDataType.Binary
                 ClientFTP.UploadDataType = FtpDataType.Binary
-                Write(DoTranslation("Data type set to Binary!"), True, ColTypes.Success)
+                TextWriterColor.Write(DoTranslation("Data type set to Binary!"), True, ColTypes.Success)
             Else
-                Write(DoTranslation("Invalid data type."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("Invalid data type."), True, ColTypes.Error)
             End If
         End Sub
 

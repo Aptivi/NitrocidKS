@@ -25,11 +25,11 @@ Namespace Shell.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             ReloadConfig()
-            Write(DoTranslation("Configuration reloaded. You might need to reboot the kernel for some changes to take effect."), True, ColTypes.Neutral)
+            TextWriterColor.Write(DoTranslation("Configuration reloaded. You might need to reboot the kernel for some changes to take effect."), True, ColTypes.Neutral)
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("Colors don't require a restart, but most of the settings require a restart."), True, ColTypes.Neutral)
+            TextWriterColor.Write(DoTranslation("Colors don't require a restart, but most of the settings require a restart."), True, ColTypes.Neutral)
         End Sub
 
     End Class

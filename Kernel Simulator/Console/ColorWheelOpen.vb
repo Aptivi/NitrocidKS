@@ -87,17 +87,17 @@ Namespace ConsoleBase
             While Not ColorWheelExiting
                 Console.Clear()
                 If TrueColor Then
-                    Write(NewLine + DoTranslation("Select color using ""<-"" and ""->"" keys. Press ENTER to quit. Press ""i"" to insert color number manually."), True, ColTypes.Tip)
-                    Write(DoTranslation("Press ""t"" to switch to 255 color mode."), True, ColTypes.Tip)
-                    Write(DoTranslation("Press ""c"" to write full color code."), True, ColTypes.Tip)
+                    TextWriterColor.Write(NewLine + DoTranslation("Select color using ""<-"" and ""->"" keys. Press ENTER to quit. Press ""i"" to insert color number manually."), True, ColTypes.Tip)
+                    TextWriterColor.Write(DoTranslation("Press ""t"" to switch to 255 color mode."), True, ColTypes.Tip)
+                    TextWriterColor.Write(DoTranslation("Press ""c"" to write full color code."), True, ColTypes.Tip)
                     Wdbg(DebugLevel.I, "Current Range: {0}", CurrentRange)
 
                     'The red color level
                     Dim RedForeground As Color = If(CurrentRange = "R", New Color(ConsoleColors.Black), New Color("255;0;0"))
                     Dim RedBackground As Color = If(CurrentRange = "R", New Color("255;0;0"), New Color(ConsoleColors.Black))
                     Wdbg(DebugLevel.I, "Red foreground: {0} | Red background: {1}", RedForeground.PlainSequence, RedBackground.PlainSequence)
-                    Write(NewLine + "  ", False, ColTypes.Neutral)
-                    Write(" < ", False, RedForeground, RedBackground)
+                    TextWriterColor.Write(NewLine + "  ", False, ColTypes.Neutral)
+                    TextWriterColor.Write(" < ", False, RedForeground, RedBackground)
                     WriteWhere("R: {0}", (Console.CursorLeft + 35 - $"R: {CurrentColorR}".Length) / 2, Console.CursorTop, True, New Color($"{CurrentColorR};0;0"), CurrentColorR)
                     WriteWhere(" > " + NewLine, Console.CursorLeft + 32, Console.CursorTop, True, RedForeground, RedBackground)
 
@@ -105,8 +105,8 @@ Namespace ConsoleBase
                     Dim GreenForeground As Color = If(CurrentRange = "G", New Color(ConsoleColors.Black), New Color("0;255;0"))
                     Dim GreenBackground As Color = If(CurrentRange = "G", New Color("0;255;0"), New Color(ConsoleColors.Black))
                     Wdbg(DebugLevel.I, "Green foreground: {0} | Green background: {1}", GreenForeground.PlainSequence, GreenBackground.PlainSequence)
-                    Write(NewLine + "  ", False, ColTypes.Neutral)
-                    Write(" < ", False, GreenForeground, GreenBackground)
+                    TextWriterColor.Write(NewLine + "  ", False, ColTypes.Neutral)
+                    TextWriterColor.Write(" < ", False, GreenForeground, GreenBackground)
                     WriteWhere("G: {0}", (Console.CursorLeft + 35 - $"G: {CurrentColorG}".Length) / 2, Console.CursorTop, True, New Color($"0;{CurrentColorG};0"), CurrentColorG)
                     WriteWhere(" > " + NewLine, Console.CursorLeft + 32, Console.CursorTop, True, GreenForeground, GreenBackground)
 
@@ -114,8 +114,8 @@ Namespace ConsoleBase
                     Dim BlueForeground As Color = If(CurrentRange = "B", New Color(ConsoleColors.Black), New Color("0;0;255"))
                     Dim BlueBackground As Color = If(CurrentRange = "B", New Color("0;0;255"), New Color(ConsoleColors.Black))
                     Wdbg(DebugLevel.I, "Blue foreground: {0} | Blue background: {1}", BlueForeground.PlainSequence, BlueBackground.PlainSequence)
-                    Write(NewLine + "  ", False, ColTypes.Neutral)
-                    Write(" < ", False, BlueForeground, BlueBackground)
+                    TextWriterColor.Write(NewLine + "  ", False, ColTypes.Neutral)
+                    TextWriterColor.Write(" < ", False, BlueForeground, BlueBackground)
                     WriteWhere("B: {0}", (Console.CursorLeft + 35 - $"B: {CurrentColorB}".Length) / 2, Console.CursorTop, True, New Color($"0;0;{CurrentColorB}"), CurrentColorB)
                     WriteWhere(" > " + NewLine + NewLine, Console.CursorLeft + 32, Console.CursorTop, True, BlueForeground, BlueBackground)
 
@@ -130,7 +130,7 @@ Namespace ConsoleBase
                     WriteWhere(" ".Repeat(PercentRepeat(CurrentColorB, 255, 6)), 3, Console.WindowHeight - 3, True, New Color(ConsoleColors.Black), New Color(0, 0, 255))
 
                     'Show example
-                    Write(NewLine + "- Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, New Color($"{CurrentColorR};{CurrentColorG};{CurrentColorB}"))
+                    TextWriterColor.Write(NewLine + "- Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, New Color($"{CurrentColorR};{CurrentColorG};{CurrentColorB}"))
 
                     'Read and get response
                     Dim ConsoleResponse As ConsoleKeyInfo = Console.ReadKey(True)
@@ -267,16 +267,16 @@ Namespace ConsoleBase
                         ColorWheelExiting = True
                     End If
                 Else
-                    Write(NewLine + DoTranslation("Select color using ""<-"" and ""->"" keys. Use arrow up and arrow down keys to select between color ranges. Press ENTER to quit. Press ""i"" to insert color number manually."), True, ColTypes.Tip)
-                    Write(DoTranslation("Press ""t"" to switch to true color mode."), True, ColTypes.Tip)
+                    TextWriterColor.Write(NewLine + DoTranslation("Select color using ""<-"" and ""->"" keys. Use arrow up and arrow down keys to select between color ranges. Press ENTER to quit. Press ""i"" to insert color number manually."), True, ColTypes.Tip)
+                    TextWriterColor.Write(DoTranslation("Press ""t"" to switch to true color mode."), True, ColTypes.Tip)
 
                     'The color selection
-                    Write(NewLine + "   < ", False, ColTypes.Gray)
+                    TextWriterColor.Write(NewLine + "   < ", False, ColTypes.Gray)
                     WriteWhere($"{CurrentColor} [{Convert.ToInt32(CurrentColor)}]", (Console.CursorLeft + 38 - $"{CurrentColor} [{Convert.ToInt32(CurrentColor)}]".Length) / 2, Console.CursorTop, True, New Color(CurrentColor))
                     WriteWhere(" >", Console.CursorLeft + 32, Console.CursorTop, True, ColTypes.Gray)
 
                     'Show prompt
-                    Write(NewLine + NewLine + "- Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, New Color(CurrentColor))
+                    TextWriterColor.Write(NewLine + NewLine + "- Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, New Color(CurrentColor))
 
                     'Read and get response
                     Dim ConsoleResponse As ConsoleKeyInfo = Console.ReadKey(True)

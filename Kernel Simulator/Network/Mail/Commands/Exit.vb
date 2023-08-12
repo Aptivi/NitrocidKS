@@ -23,7 +23,7 @@ Namespace Network.Mail.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             KillShell()
-            Write(DoTranslation("Do you want to keep connected?") + " <y/n> ", False, ColTypes.Question)
+            TextWriterColor.Write(DoTranslation("Do you want to keep connected?") + " <y/n> ", False, ColTypes.Question)
             SetConsoleColor(InputColor)
             Dim Answer As Char = Console.ReadKey.KeyChar
             Console.WriteLine()
@@ -32,7 +32,7 @@ Namespace Network.Mail.Commands
             ElseIf Answer = "n" Then
                 KeepAlive = False
             Else
-                Write(DoTranslation("Invalid choice. Assuming no..."), True, ColTypes.Input)
+                TextWriterColor.Write(DoTranslation("Invalid choice. Assuming no..."), True, ColTypes.Input)
             End If
         End Sub
 

@@ -30,7 +30,7 @@ Namespace Network.Mail.Commands
                 If IsStringNumeric(ListArgs(0)) Then
                     MailListMessages(ListArgs(0))
                 Else
-                    Write(DoTranslation("Page is not a numeric value."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("Page is not a numeric value."), True, ColTypes.Error)
                 End If
             Else
                 MailListMessages(1)

@@ -33,9 +33,9 @@ Namespace Shell.Commands
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -saver: ", False, ColTypes.ListEntry) : Write(DoTranslation("Opens the screensaver settings"), True, ColTypes.ListValue)
-            Write("  -splash: ", False, ColTypes.ListEntry) : Write(DoTranslation("Opens the splash settings"), True, ColTypes.ListValue)
+            TextWriterColor.Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
+            TextWriterColor.Write("  -saver: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Opens the screensaver settings"), True, ColTypes.ListValue)
+            TextWriterColor.Write("  -splash: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Opens the splash settings"), True, ColTypes.ListValue)
         End Sub
 
     End Class

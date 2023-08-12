@@ -55,8 +55,8 @@ Namespace Misc.Writers.FancyWriters
             'Write the closing minus sign.
             Dim OldTop As Integer = Console.CursorTop
             RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-            If Margin > 0 Then Write(" ".Repeat(Margin), False, ColTypes.Neutral)
-            Write("-".Repeat(RepeatTimes), True, ColTypes.TableSeparator)
+            If Margin > 0 Then TextWriterColor.Write(" ".Repeat(Margin), False, ColTypes.Neutral)
+            TextWriterColor.Write("-".Repeat(RepeatTimes), True, ColTypes.TableSeparator)
 
             'Fix CursorTop value on Unix systems.
             If IsOnUnix() Then
@@ -98,8 +98,8 @@ Namespace Misc.Writers.FancyWriters
                     'Write the closing minus sign.
                     OldTop = Console.CursorTop
                     RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-                    If Margin > 0 Then Write(" ".Repeat(Margin), False, ColTypes.Neutral)
-                    Write("-".Repeat(RepeatTimes), True, ColTypes.TableSeparator)
+                    If Margin > 0 Then TextWriterColor.Write(" ".Repeat(Margin), False, ColTypes.Neutral)
+                    TextWriterColor.Write("-".Repeat(RepeatTimes), True, ColTypes.TableSeparator)
 
                     'Fix CursorTop value on Unix systems.
                     If IsOnUnix() Then
@@ -141,8 +141,8 @@ Namespace Misc.Writers.FancyWriters
             'Write the closing minus sign.
             Dim OldTop As Integer = Console.CursorTop
             RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-            If Margin > 0 Then Write(" ".Repeat(Margin), False, Color)
-            Write("-".Repeat(RepeatTimes), True, Color)
+            If Margin > 0 Then TextWriterColor.Write(" ".Repeat(Margin), False, Color)
+            TextWriterColor.Write("-".Repeat(RepeatTimes), True, Color)
 
             'Fix CursorTop value on Unix systems.
             If IsOnUnix() Then
@@ -184,8 +184,8 @@ Namespace Misc.Writers.FancyWriters
                     'Write the closing minus sign.
                     OldTop = Console.CursorTop
                     RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-                    If Margin > 0 Then Write(" ".Repeat(Margin), False, Color)
-                    Write("-".Repeat(RepeatTimes), True, Color)
+                    If Margin > 0 Then TextWriterColor.Write(" ".Repeat(Margin), False, Color)
+                    TextWriterColor.Write("-".Repeat(RepeatTimes), True, Color)
 
                     'Fix CursorTop value on Unix systems.
                     If IsOnUnix() Then
@@ -228,8 +228,8 @@ Namespace Misc.Writers.FancyWriters
             'Write the closing minus sign.
             Dim OldTop As Integer = Console.CursorTop
             RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-            If Margin > 0 Then Write(" ".Repeat(Margin), False, ForegroundColor, BackgroundColor)
-            Write("-".Repeat(RepeatTimes), True, ForegroundColor, BackgroundColor)
+            If Margin > 0 Then TextWriterColor.Write(" ".Repeat(Margin), False, ForegroundColor, BackgroundColor)
+            TextWriterColor.Write("-".Repeat(RepeatTimes), True, ForegroundColor, BackgroundColor)
 
             'Fix CursorTop value on Unix systems.
             If IsOnUnix() Then
@@ -271,8 +271,8 @@ Namespace Misc.Writers.FancyWriters
                     'Write the closing minus sign.
                     OldTop = Console.CursorTop
                     RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-                    If Margin > 0 Then Write(" ".Repeat(Margin), False, ForegroundColor, BackgroundColor)
-                    Write("-".Repeat(RepeatTimes), True, ForegroundColor, BackgroundColor)
+                    If Margin > 0 Then TextWriterColor.Write(" ".Repeat(Margin), False, ForegroundColor, BackgroundColor)
+                    TextWriterColor.Write("-".Repeat(RepeatTimes), True, ForegroundColor, BackgroundColor)
 
                     'Fix CursorTop value on Unix systems.
                     If IsOnUnix() Then
@@ -317,8 +317,8 @@ Namespace Misc.Writers.FancyWriters
             'Write the closing minus sign.
             Dim OldTop As Integer = Console.CursorTop
             RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-            If Margin > 0 Then Write(" ".Repeat(Margin), False, ColTypes)
-            Write("-".Repeat(RepeatTimes), True, ColTypes)
+            If Margin > 0 Then TextWriterColor.Write(" ".Repeat(Margin), False, ColTypes)
+            TextWriterColor.Write("-".Repeat(RepeatTimes), True, ColTypes)
 
             'Fix CursorTop value on Unix systems.
             If IsOnUnix() Then
@@ -360,8 +360,8 @@ Namespace Misc.Writers.FancyWriters
                     'Write the closing minus sign.
                     OldTop = Console.CursorTop
                     RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-                    If Margin > 0 Then Write(" ".Repeat(Margin), False, ColTypes)
-                    Write("-".Repeat(RepeatTimes), True, ColTypes)
+                    If Margin > 0 Then TextWriterColor.Write(" ".Repeat(Margin), False, ColTypes)
+                    TextWriterColor.Write("-".Repeat(RepeatTimes), True, ColTypes)
 
                     'Fix CursorTop value on Unix systems.
                     If IsOnUnix() Then
@@ -407,8 +407,8 @@ Namespace Misc.Writers.FancyWriters
             'Write the closing minus sign.
             Dim OldTop As Integer = Console.CursorTop
             RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-            If Margin > 0 Then Write(" ".Repeat(Margin), False, colorTypeForeground, colorTypeBackground)
-            Write("-".Repeat(RepeatTimes), True, colorTypeForeground, colorTypeBackground)
+            If Margin > 0 Then TextWriterColor.Write(" ".Repeat(Margin), False, colorTypeForeground, colorTypeBackground)
+            TextWriterColor.Write("-".Repeat(RepeatTimes), True, colorTypeForeground, colorTypeBackground)
 
             'Fix CursorTop value on Unix systems.
             If IsOnUnix() Then
@@ -450,8 +450,8 @@ Namespace Misc.Writers.FancyWriters
                     'Write the closing minus sign.
                     OldTop = Console.CursorTop
                     RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-                    If Margin > 0 Then Write(" ".Repeat(Margin), False, colorTypeForeground, colorTypeBackground)
-                    Write("-".Repeat(RepeatTimes), True, colorTypeForeground, colorTypeBackground)
+                    If Margin > 0 Then TextWriterColor.Write(" ".Repeat(Margin), False, colorTypeForeground, colorTypeBackground)
+                    TextWriterColor.Write("-".Repeat(RepeatTimes), True, colorTypeForeground, colorTypeBackground)
 
                     'Fix CursorTop value on Unix systems.
                     If IsOnUnix() Then
@@ -493,8 +493,8 @@ Namespace Misc.Writers.FancyWriters
             'Write the closing minus sign.
             Dim OldTop As Integer = Console.CursorTop
             RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-            If Margin > 0 Then Write(" ".Repeat(Margin), False, Color)
-            Write("-".Repeat(RepeatTimes), True, Color)
+            If Margin > 0 Then TextWriterColor.Write(" ".Repeat(Margin), False, Color)
+            TextWriterColor.Write("-".Repeat(RepeatTimes), True, Color)
 
             'Fix CursorTop value on Unix systems.
             If IsOnUnix() Then
@@ -536,8 +536,8 @@ Namespace Misc.Writers.FancyWriters
                     'Write the closing minus sign.
                     OldTop = Console.CursorTop
                     RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-                    If Margin > 0 Then Write(" ".Repeat(Margin), False, Color)
-                    Write("-".Repeat(RepeatTimes), True, Color)
+                    If Margin > 0 Then TextWriterColor.Write(" ".Repeat(Margin), False, Color)
+                    TextWriterColor.Write("-".Repeat(RepeatTimes), True, Color)
 
                     'Fix CursorTop value on Unix systems.
                     If IsOnUnix() Then
@@ -580,8 +580,8 @@ Namespace Misc.Writers.FancyWriters
             'Write the closing minus sign.
             Dim OldTop As Integer = Console.CursorTop
             RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-            If Margin > 0 Then Write(" ".Repeat(Margin), False, ForegroundColor, BackgroundColor)
-            Write("-".Repeat(RepeatTimes), True, ForegroundColor, BackgroundColor)
+            If Margin > 0 Then TextWriterColor.Write(" ".Repeat(Margin), False, ForegroundColor, BackgroundColor)
+            TextWriterColor.Write("-".Repeat(RepeatTimes), True, ForegroundColor, BackgroundColor)
 
             'Fix CursorTop value on Unix systems.
             If IsOnUnix() Then
@@ -623,8 +623,8 @@ Namespace Misc.Writers.FancyWriters
                     'Write the closing minus sign.
                     OldTop = Console.CursorTop
                     RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-                    If Margin > 0 Then Write(" ".Repeat(Margin), False, ForegroundColor, BackgroundColor)
-                    Write("-".Repeat(RepeatTimes), True, ForegroundColor, BackgroundColor)
+                    If Margin > 0 Then TextWriterColor.Write(" ".Repeat(Margin), False, ForegroundColor, BackgroundColor)
+                    TextWriterColor.Write("-".Repeat(RepeatTimes), True, ForegroundColor, BackgroundColor)
 
                     'Fix CursorTop value on Unix systems.
                     If IsOnUnix() Then

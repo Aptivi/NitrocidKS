@@ -35,24 +35,24 @@ Namespace Shell.Commands
                             Dim Credentials As New NetworkCredential
                             If ListArgs.Length > 2 Then 'Username specified
                                 Credentials.UserName = ListArgs(2)
-                                Write(DoTranslation("Enter password: "), False, ColTypes.Input)
+                                TextWriterColor.Write(DoTranslation("Enter password: "), False, ColTypes.Input)
                                 Credentials.Password = ReadLineNoInput()
                                 Console.WriteLine()
                             End If
-                            Write(DoTranslation("Uploading {0} to {1}..."), True, ColTypes.Neutral, FileName, URL)
+                            TextWriterColor.Write(DoTranslation("Uploading {0} to {1}..."), True, ColTypes.Neutral, FileName, URL)
                             If UploadFile(FileName, URL, Credentials) Then
-                                Write(DoTranslation("Upload has completed."), True, ColTypes.Neutral)
+                                TextWriterColor.Write(DoTranslation("Upload has completed."), True, ColTypes.Neutral)
                             End If
                         Else
-                            Write(DoTranslation("Specify the address"), True, ColTypes.Error)
+                            TextWriterColor.Write(DoTranslation("Specify the address"), True, ColTypes.Error)
                         End If
                     Else
-                        Write(DoTranslation("Please use ""ftp"" if you are going to upload files to the FTP server."), True, ColTypes.Error)
+                        TextWriterColor.Write(DoTranslation("Please use ""ftp"" if you are going to upload files to the FTP server."), True, ColTypes.Error)
                     End If
                     Exit Sub
                 Catch ex As Exception
                     UFinish = False
-                    Write(DoTranslation("Upload failed in try {0}: {1}"), True, ColTypes.Error, RetryCount, ex.Message)
+                    TextWriterColor.Write(DoTranslation("Upload failed in try {0}: {1}"), True, ColTypes.Error, RetryCount, ex.Message)
                     RetryCount += 1
                     Wdbg(DebugLevel.I, "Try count: {0}", RetryCount)
                     WStkTrc(ex)

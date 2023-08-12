@@ -25,7 +25,7 @@ Namespace TestShell.Commands
             Dim Color As ColTypes = ListArgs(0)
             Dim Line As Boolean = ListArgs(1)
             Dim Text As String = ListArgs(2)
-            Write(Text, Line, Color)
+            TextWriterColor.Write(Text, Line, Color)
         End Sub
 
     End Class

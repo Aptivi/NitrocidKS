@@ -24,14 +24,14 @@ Namespace Shell.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If ListArgs?.Length > 0 Then
                 If StringArgs = "" Then
-                    Write(DoTranslation("Blank message of the day."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("Blank message of the day."), True, ColTypes.Error)
                 Else
-                    Write(DoTranslation("Changing MOTD..."), True, ColTypes.Neutral)
+                    TextWriterColor.Write(DoTranslation("Changing MOTD..."), True, ColTypes.Neutral)
                     SetMOTD(StringArgs, MessageType.MOTD)
                 End If
             Else
                 StartShell(ShellType.TextShell, GetKernelPath(KernelPathType.MOTD))
-                Write(DoTranslation("Changing MOTD..."), True, ColTypes.Neutral)
+                TextWriterColor.Write(DoTranslation("Changing MOTD..."), True, ColTypes.Neutral)
                 ReadMOTD(MessageType.MOTD)
             End If
         End Sub

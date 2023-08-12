@@ -96,7 +96,7 @@ Namespace Scripting
                 KernelEventManager.RaiseUESHPostExecute(ScriptPath, ScriptArguments)
             Catch ex As Exception
                 KernelEventManager.RaiseUESHError(ScriptPath, ScriptArguments, ex)
-                Write(DoTranslation("Error trying to execute script: {0}"), True, ColTypes.Error, ex.Message)
+                TextWriterColor.Write(DoTranslation("Error trying to execute script: {0}"), True, ColTypes.Error, ex.Message)
                 WStkTrc(ex)
             End Try
         End Sub

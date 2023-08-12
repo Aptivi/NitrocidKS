@@ -78,29 +78,29 @@ Namespace Scripting.Interaction
                 'Ask a question
                 Select Case OutputType
                     Case ChoiceOutputType.OneLine
-                        Write(Question, False, ColTypes.Question)
-                        Write(" <{0}> ", False, ColTypes.Input, AnswersStr)
+                        TextWriterColor.Write(Question, False, ColTypes.Question)
+                        TextWriterColor.Write(" <{0}> ", False, ColTypes.Input, AnswersStr)
                     Case ChoiceOutputType.TwoLines
-                        Write(Question, True, ColTypes.Question)
-                        Write("<{0}> ", False, ColTypes.Input, AnswersStr)
+                        TextWriterColor.Write(Question, True, ColTypes.Question)
+                        TextWriterColor.Write("<{0}> ", False, ColTypes.Input, AnswersStr)
                     Case ChoiceOutputType.Modern
-                        Write(Question + NewLine, True, ColTypes.Question)
+                        TextWriterColor.Write(Question + NewLine, True, ColTypes.Question)
                         For AnswerIndex As Integer = 0 To answers.Length - 1
                             Dim AnswerInstance As String = answers(AnswerIndex)
                             Dim AnswerTitle As String = AnswersTitles(AnswerIndex)
-                            Write($" {AnswerInstance}) {AnswerTitle}", True, ColTypes.Option)
+                            TextWriterColor.Write($" {AnswerInstance}) {AnswerTitle}", True, ColTypes.Option)
                         Next
-                        Write(NewLine + ">> ", False, ColTypes.Input)
+                        TextWriterColor.Write(NewLine + ">> ", False, ColTypes.Input)
                     Case ChoiceOutputType.Table
                         Dim ChoiceHeader As String() = {DoTranslation("Possible answers"), DoTranslation("Answer description")}
                         Dim ChoiceData(answers.Length - 1, 1) As String
-                        Write(Question, True, ColTypes.Question)
+                        TextWriterColor.Write(Question, True, ColTypes.Question)
                         For AnswerIndex As Integer = 0 To answers.Length - 1
                             ChoiceData(AnswerIndex, 0) = answers(AnswerIndex)
                             ChoiceData(AnswerIndex, 1) = AnswersTitles(AnswerIndex)
                         Next
                         WriteTable(ChoiceHeader, ChoiceData, 2)
-                        Write(NewLine + ">> ", False, ColTypes.Input)
+                        TextWriterColor.Write(NewLine + ">> ", False, ColTypes.Input)
                 End Select
 
                 'Wait for an answer
@@ -151,11 +151,11 @@ Namespace Scripting.Interaction
                 End If
 
                 'Ask a question
-                Write(Question + NewLine, True, ColTypes.Question)
+                TextWriterColor.Write(Question + NewLine, True, ColTypes.Question)
                 For AnswerIndex As Integer = 0 To answers.Length - 1
                     Dim AnswerInstance As String = answers(AnswerIndex)
                     Dim AnswerTitle As String = AnswersTitles(AnswerIndex)
-                    Write($" {AnswerInstance}) {AnswerTitle}", True, If(AnswerIndex + 1 = HighlightedAnswer, ColTypes.SelectedOption, ColTypes.Option))
+                    TextWriterColor.Write($" {AnswerInstance}) {AnswerTitle}", True, If(AnswerIndex + 1 = HighlightedAnswer, ColTypes.SelectedOption, ColTypes.Option))
                 Next
 
                 'Wait for an answer
@@ -197,7 +197,7 @@ Namespace Scripting.Interaction
                 Wdbg(DebugLevel.I, "Script var: {0} ({1}), Question: {2}", ScriptVariable, ShellVariables.ContainsKey(ScriptVariable), Question)
 
                 'Ask a question
-                Write(Question, False, ColTypes.Question)
+                TextWriterColor.Write(Question, False, ColTypes.Question)
                 SetConsoleColor(InputColor)
 
                 'Wait for an answer

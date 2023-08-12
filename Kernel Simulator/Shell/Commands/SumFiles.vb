@@ -43,8 +43,8 @@ Namespace Shell.Commands
                             Dim spent As New Stopwatch
                             spent.Start() 'Time when you're on a breakpoint is counted
                             Dim encrypted As String = GetEncryptedFile(file, AlgorithmEnum)
-                            Write("{0} ({1})", True, ColTypes.Neutral, encrypted, AlgorithmEnum)
-                            Write(DoTranslation("Time spent: {0} milliseconds"), True, ColTypes.Neutral, spent.ElapsedMilliseconds)
+                            TextWriterColor.Write("{0} ({1})", True, ColTypes.Neutral, encrypted, AlgorithmEnum)
+                            TextWriterColor.Write(DoTranslation("Time spent: {0} milliseconds"), True, ColTypes.Neutral, spent.ElapsedMilliseconds)
                             FileBuilder.AppendLine($"- {file}: {encrypted} ({AlgorithmEnum})")
                             spent.Stop()
                         Next
@@ -52,12 +52,12 @@ Namespace Shell.Commands
                         Dim spent As New Stopwatch
                         spent.Start() 'Time when you're on a breakpoint is counted
                         Dim encrypted As String = GetEncryptedFile(file, AlgorithmEnum)
-                        Write(encrypted, True, ColTypes.Neutral)
-                        Write(DoTranslation("Time spent: {0} milliseconds"), True, ColTypes.Neutral, spent.ElapsedMilliseconds)
+                        TextWriterColor.Write(encrypted, True, ColTypes.Neutral)
+                        TextWriterColor.Write(DoTranslation("Time spent: {0} milliseconds"), True, ColTypes.Neutral, spent.ElapsedMilliseconds)
                         FileBuilder.AppendLine($"- {file}: {encrypted} ({AlgorithmEnum})")
                         spent.Stop()
                     Else
-                        Write(DoTranslation("Invalid encryption algorithm."), True, ColTypes.Error)
+                        TextWriterColor.Write(DoTranslation("Invalid encryption algorithm."), True, ColTypes.Error)
                         Exit For
                     End If
                     Console.WriteLine()
@@ -68,7 +68,7 @@ Namespace Shell.Commands
                     FStream.Flush()
                 End If
             Else
-                Write(DoTranslation("{0} is not found."), True, ColTypes.Error, folder)
+                TextWriterColor.Write(DoTranslation("{0} is not found."), True, ColTypes.Error, folder)
             End If
         End Sub
 

@@ -25,11 +25,11 @@ Namespace Shell.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If ListArgs(0) = "" Then
-                Write(DoTranslation("Blank host name."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("Blank host name."), True, ColTypes.Error)
             ElseIf ListArgs(0).IndexOfAny("[~`!@#$%^&*()-+=|{}':;.,<>/?]".ToCharArray) <> -1 Then
-                Write(DoTranslation("Special characters are not allowed."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("Special characters are not allowed."), True, ColTypes.Error)
             Else
-                Write(DoTranslation("Changing from: {0} to {1}..."), True, ColTypes.Neutral, HostName, ListArgs(0))
+                TextWriterColor.Write(DoTranslation("Changing from: {0} to {1}..."), True, ColTypes.Neutral, HostName, ListArgs(0))
                 ChangeHostname(ListArgs(0))
             End If
         End Sub

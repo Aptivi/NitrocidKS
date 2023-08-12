@@ -30,7 +30,7 @@ Namespace Misc.Games
             Dim RandomDriver As New Random
             Dim RandomWord As String
             Dim SpeltWord As String
-            Write(DoTranslation("Press CTRL+C to exit."), True, ColTypes.Tip)
+            TextWriterColor.Write(DoTranslation("Press CTRL+C to exit."), True, ColTypes.Tip)
             If Words.Count = 0 Then
                 Wdbg(DebugLevel.I, "Downloading words...")
                 Words.AddRange(DownloadString("https://raw.githubusercontent.com/sindresorhus/word-list/master/words.txt").SplitNewLines.ToList)
@@ -38,15 +38,15 @@ Namespace Misc.Games
             While True
                 RandomWord = Words.ElementAt(RandomDriver.Next(Words.Count))
                 Wdbg(DebugLevel.I, "Word: {0}", RandomWord)
-                Write(RandomWord, True, ColTypes.Input)
+                TextWriterColor.Write(RandomWord, True, ColTypes.Input)
                 SpeltWord = ReadLineNoInput("")
 
                 If SpeltWord = RandomWord Then
                     Wdbg(DebugLevel.I, "Spelt: {0} = {1}", SpeltWord, RandomWord)
-                    Write(DoTranslation("Spelt perfectly!"), True, ColTypes.Success)
+                    TextWriterColor.Write(DoTranslation("Spelt perfectly!"), True, ColTypes.Success)
                 Else
                     Wdbg(DebugLevel.I, "Spelt: {0} != {1}", SpeltWord, RandomWord)
-                    Write(DoTranslation("Spelt incorrectly."), True, ColTypes.Warning)
+                    TextWriterColor.Write(DoTranslation("Spelt incorrectly."), True, ColTypes.Warning)
                 End If
             End While
         End Sub

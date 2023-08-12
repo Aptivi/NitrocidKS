@@ -75,10 +75,10 @@ Namespace TimeDate
         ''' Shows current time, date, and timezone.
         ''' </summary>
         Public Sub ShowCurrentTimes()
-            Write("datetime: ", False, ColTypes.ListEntry) : Write(DoTranslation("Current time is {0}"), True, ColTypes.ListValue, RenderTime)
-            Write("datetime: ", False, ColTypes.ListEntry) : Write(DoTranslation("Today is {0}"), True, ColTypes.ListValue, RenderDate)
-            Write("datetime: ", False, ColTypes.ListEntry) : Write(DoTranslation("Time and date in UTC: {0}"), True, ColTypes.ListValue, RenderUtc)
-            Write("datetime: ", False, ColTypes.ListEntry) : Write(DoTranslation("Time Zone:") + " {0} ({1})", True, ColTypes.ListValue, TimeZone.CurrentTimeZone.StandardName, TimeZone.CurrentTimeZone.GetUtcOffset(KernelDateTime).ToString(If(TimeZone.CurrentTimeZone.GetUtcOffset(KernelDateTime) < TimeSpan.Zero, "\-", "\+") + "hh\:mm\:ss"))
+            TextWriterColor.Write("datetime: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Current time is {0}"), True, ColTypes.ListValue, RenderTime)
+            TextWriterColor.Write("datetime: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Today is {0}"), True, ColTypes.ListValue, RenderDate)
+            TextWriterColor.Write("datetime: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Time and date in UTC: {0}"), True, ColTypes.ListValue, RenderUtc)
+            TextWriterColor.Write("datetime: ", False, ColTypes.ListEntry) : TextWriterColor.Write(DoTranslation("Time Zone:") + " {0} ({1})", True, ColTypes.ListValue, TimeZone.CurrentTimeZone.StandardName, TimeZone.CurrentTimeZone.GetUtcOffset(KernelDateTime).ToString(If(TimeZone.CurrentTimeZone.GetUtcOffset(KernelDateTime) < TimeSpan.Zero, "\-", "\+") + "hh\:mm\:ss"))
         End Sub
 
         ''' <summary>

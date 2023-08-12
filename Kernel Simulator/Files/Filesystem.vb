@@ -96,9 +96,9 @@ Namespace Files
                 Dim Contents As String() = ReadContents(FilePath)
                 For ContentIndex As Integer = 0 To Contents.Length - 1
                     If PrintLineNumbers Then
-                        Write("{0,4}: ", False, ColTypes.ListEntry, ContentIndex + 1)
+                        TextWriterColor.Write("{0,4}: ", False, ColTypes.ListEntry, ContentIndex + 1)
                     End If
-                    Write(Contents(ContentIndex), True, ColTypes.Neutral)
+                    TextWriterColor.Write(Contents(ContentIndex), True, ColTypes.Neutral)
                 Next
             Next
         End Sub
@@ -163,7 +163,7 @@ Namespace Files
                 'Try to create a list
                 Try
                     enumeration = CreateList(folder, Sort)
-                    If enumeration.Count = 0 Then Write(DoTranslation("Folder is empty."), True, ColTypes.Warning)
+                    If enumeration.Count = 0 Then TextWriterColor.Write(DoTranslation("Folder is empty."), True, ColTypes.Warning)
 
                     'Enumerate each entry
                     Dim TotalSize As Long = 0
@@ -177,26 +177,26 @@ Namespace Files
                                 PrintDirectoryInfo(Entry)
                             End If
                         Catch ex As UnauthorizedAccessException
-                            If Not SuppressUnauthorizedMessage Then Write("- " + DoTranslation("You are not authorized to get info for {0}."), True, ColTypes.Error, Entry.Name)
+                            If Not SuppressUnauthorizedMessage Then TextWriterColor.Write("- " + DoTranslation("You are not authorized to get info for {0}."), True, ColTypes.Error, Entry.Name)
                             WStkTrc(ex)
                         End Try
                     Next
 
                     'Show total size in list optionally
-                    If ShowTotalSizeInList Then Write(NewLine + DoTranslation("Total size in folder:") + " {0}", True, ColTypes.Neutral, TotalSize.FileSizeToString)
+                    If ShowTotalSizeInList Then TextWriterColor.Write(NewLine + DoTranslation("Total size in folder:") + " {0}", True, ColTypes.Neutral, TotalSize.FileSizeToString)
                 Catch ex As Exception
-                    Write(DoTranslation("Unknown error while listing in directory: {0}"), True, ColTypes.Error, ex.Message)
+                    TextWriterColor.Write(DoTranslation("Unknown error while listing in directory: {0}"), True, ColTypes.Error, ex.Message)
                     WStkTrc(ex)
                 End Try
             ElseIf FileExists(folder) Then
                 Try
                     PrintFileInfo(New FileInfo(folder), ShowFileDetails)
                 Catch ex As UnauthorizedAccessException
-                    If Not SuppressUnauthorizedMessage Then Write("- " + DoTranslation("You are not authorized to get info for {0}."), True, ColTypes.Error, folder)
+                    If Not SuppressUnauthorizedMessage Then TextWriterColor.Write("- " + DoTranslation("You are not authorized to get info for {0}."), True, ColTypes.Error, folder)
                     WStkTrc(ex)
                 End Try
             Else
-                Write(DoTranslation("Directory {0} not found"), True, ColTypes.Error, folder)
+                TextWriterColor.Write(DoTranslation("Directory {0} not found"), True, ColTypes.Error, folder)
                 Wdbg(DebugLevel.I, "IO.FolderExists = {0}", FolderExists(folder))
             End If
         End Sub
@@ -216,14 +216,14 @@ Namespace Files
                 If (FileInfo.Attributes = IO.FileAttributes.Hidden And HiddenFiles) Or Not FileInfo.Attributes.HasFlag(FileAttributes.Hidden) Then
                     If (IsOnWindows() And (Not FileInfo.Name.StartsWith(".") Or (FileInfo.Name.StartsWith(".") And HiddenFiles))) Or IsOnUnix() Then
                         If FileInfo.Name.EndsWith(".uesh") Then
-                            Write("- " + FileInfo.Name, False, ColTypes.Stage)
-                            If ShowFileDetails Then Write(": ", False, ColTypes.Stage)
+                            TextWriterColor.Write("- " + FileInfo.Name, False, ColTypes.Stage)
+                            If ShowFileDetails Then TextWriterColor.Write(": ", False, ColTypes.Stage)
                         Else
-                            Write("- " + FileInfo.Name, False, ColTypes.ListEntry)
-                            If ShowFileDetails Then Write(": ", False, ColTypes.ListEntry)
+                            TextWriterColor.Write("- " + FileInfo.Name, False, ColTypes.ListEntry)
+                            If ShowFileDetails Then TextWriterColor.Write(": ", False, ColTypes.ListEntry)
                         End If
                         If ShowFileDetails Then
-                            Write(DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), False, ColTypes.ListValue,
+                            TextWriterColor.Write(DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), False, ColTypes.ListValue,
                                         DirectCast(FileInfo, FileInfo).Length.FileSizeToString, FileInfo.CreationTime.ToShortDateString, FileInfo.CreationTime.ToShortTimeString,
                                                                                                 FileInfo.LastWriteTime.ToShortDateString, FileInfo.LastWriteTime.ToShortTimeString)
                         End If
@@ -231,7 +231,7 @@ Namespace Files
                     End If
                 End If
             Else
-                Write(DoTranslation("File {0} not found"), True, ColTypes.Error, FileInfo.FullName)
+                TextWriterColor.Write(DoTranslation("File {0} not found"), True, ColTypes.Error, FileInfo.FullName)
                 Wdbg(DebugLevel.I, "IO.FileExists = {0}", FileExists(FileInfo.FullName))
             End If
         End Sub
@@ -254,10 +254,10 @@ Namespace Files
                 'Print information
                 If (DirectoryInfo.Attributes = FileAttributes.Hidden And HiddenFiles) Or Not DirectoryInfo.Attributes.HasFlag(FileAttributes.Hidden) Then
                     If (IsOnWindows() And (Not DirectoryInfo.Name.StartsWith(".") Or (DirectoryInfo.Name.StartsWith(".") And HiddenFiles))) Or IsOnUnix() Then
-                        Write("- " + DirectoryInfo.Name + "/", False, ColTypes.ListEntry)
+                        TextWriterColor.Write("- " + DirectoryInfo.Name + "/", False, ColTypes.ListEntry)
                         If ShowDirectoryDetails Then
-                            Write(": ", False, ColTypes.ListEntry)
-                            Write(DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), False, ColTypes.ListValue,
+                            TextWriterColor.Write(": ", False, ColTypes.ListEntry)
+                            TextWriterColor.Write(DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), False, ColTypes.ListValue,
                           TotalSize.FileSizeToString, DirectoryInfo.CreationTime.ToShortDateString, DirectoryInfo.CreationTime.ToShortTimeString,
                                                       DirectoryInfo.LastWriteTime.ToShortDateString, DirectoryInfo.LastWriteTime.ToShortTimeString)
                         End If
@@ -265,7 +265,7 @@ Namespace Files
                     End If
                 End If
             Else
-                Write(DoTranslation("Directory {0} not found"), True, ColTypes.Error, DirectoryInfo.FullName)
+                TextWriterColor.Write(DoTranslation("Directory {0} not found"), True, ColTypes.Error, DirectoryInfo.FullName)
                 Wdbg(DebugLevel.I, "IO.FolderExists = {0}", FolderExists(DirectoryInfo.FullName))
             End If
         End Sub
@@ -511,7 +511,7 @@ Namespace Files
             For Each SourceFile As FileInfo In SourceFiles
                 Dim DestinationFilePath As String = Path.Combine(Destination, SourceFile.Name)
                 Wdbg(DebugLevel.I, "Copying file {0} to destination...", DestinationFilePath)
-                If ShowProgress Then Write("-> {0}", True, ColTypes.Neutral, DestinationFilePath)
+                If ShowProgress Then TextWriterColor.Write("-> {0}", True, ColTypes.Neutral, DestinationFilePath)
                 SourceFile.CopyTo(DestinationFilePath, True)
             Next
 

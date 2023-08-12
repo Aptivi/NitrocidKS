@@ -31,16 +31,16 @@ Namespace Shell.Commands
                 WriteSeparator(Dir, True)
                 If FolderExists(DirectoryPath) Then
                     Dim DirInfo As New DirectoryInfo(DirectoryPath)
-                    Write(DoTranslation("Name: {0}"), True, ColTypes.Neutral, DirInfo.Name)
-                    Write(DoTranslation("Full name: {0}"), True, ColTypes.Neutral, NeutralizePath(DirInfo.FullName))
-                    Write(DoTranslation("Size: {0}"), True, ColTypes.Neutral, GetAllSizesInFolder(DirInfo).FileSizeToString)
-                    Write(DoTranslation("Creation time: {0}"), True, ColTypes.Neutral, Render(DirInfo.CreationTime))
-                    Write(DoTranslation("Last access time: {0}"), True, ColTypes.Neutral, Render(DirInfo.LastAccessTime))
-                    Write(DoTranslation("Last write time: {0}"), True, ColTypes.Neutral, Render(DirInfo.LastWriteTime))
-                    Write(DoTranslation("Attributes: {0}"), True, ColTypes.Neutral, DirInfo.Attributes)
-                    Write(DoTranslation("Parent directory: {0}"), True, ColTypes.Neutral, NeutralizePath(DirInfo.Parent.FullName))
+                    TextWriterColor.Write(DoTranslation("Name: {0}"), True, ColTypes.Neutral, DirInfo.Name)
+                    TextWriterColor.Write(DoTranslation("Full name: {0}"), True, ColTypes.Neutral, NeutralizePath(DirInfo.FullName))
+                    TextWriterColor.Write(DoTranslation("Size: {0}"), True, ColTypes.Neutral, GetAllSizesInFolder(DirInfo).FileSizeToString)
+                    TextWriterColor.Write(DoTranslation("Creation time: {0}"), True, ColTypes.Neutral, Render(DirInfo.CreationTime))
+                    TextWriterColor.Write(DoTranslation("Last access time: {0}"), True, ColTypes.Neutral, Render(DirInfo.LastAccessTime))
+                    TextWriterColor.Write(DoTranslation("Last write time: {0}"), True, ColTypes.Neutral, Render(DirInfo.LastWriteTime))
+                    TextWriterColor.Write(DoTranslation("Attributes: {0}"), True, ColTypes.Neutral, DirInfo.Attributes)
+                    TextWriterColor.Write(DoTranslation("Parent directory: {0}"), True, ColTypes.Neutral, NeutralizePath(DirInfo.Parent.FullName))
                 Else
-                    Write(DoTranslation("Can't get information about nonexistent directory."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("Can't get information about nonexistent directory."), True, ColTypes.Error)
                 End If
             Next
         End Sub

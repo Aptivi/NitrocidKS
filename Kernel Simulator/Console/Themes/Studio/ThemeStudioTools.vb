@@ -366,163 +366,163 @@ Namespace ConsoleBase.Themes.Studio
         ''' </summary>
         Sub PreparePreview()
             Console.Clear()
-            Write(DoTranslation("Here's how your theme will look like:") + NewLine, True, ColTypes.Neutral)
+            TextWriterColor.Write(DoTranslation("Here's how your theme will look like:") + NewLine, True, ColTypes.Neutral)
 
             'Print every possibility of color types
             'Input color
-            Write("*) " + DoTranslation("Input color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedInputColor)
+            TextWriterColor.Write("*) " + DoTranslation("Input color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedInputColor)
 
             'License color
-            Write("*) " + DoTranslation("License color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedLicenseColor)
+            TextWriterColor.Write("*) " + DoTranslation("License color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedLicenseColor)
 
             'Continuable kernel error color
-            Write("*) " + DoTranslation("Continuable kernel error color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedContKernelErrorColor)
+            TextWriterColor.Write("*) " + DoTranslation("Continuable kernel error color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedContKernelErrorColor)
 
             'Uncontinuable kernel error color
-            Write("*) " + DoTranslation("Uncontinuable kernel error color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedUncontKernelErrorColor)
+            TextWriterColor.Write("*) " + DoTranslation("Uncontinuable kernel error color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedUncontKernelErrorColor)
 
             'Host name color
-            Write("*) " + DoTranslation("Host name color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedHostNameShellColor)
+            TextWriterColor.Write("*) " + DoTranslation("Host name color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedHostNameShellColor)
 
             'User name color
-            Write("*) " + DoTranslation("User name color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedUserNameShellColor)
+            TextWriterColor.Write("*) " + DoTranslation("User name color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedUserNameShellColor)
 
             'Background color
-            Write("*) " + DoTranslation("Background color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedBackgroundColor)
+            TextWriterColor.Write("*) " + DoTranslation("Background color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedBackgroundColor)
 
             'Neutral text color
-            Write("*) " + DoTranslation("Neutral text color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedNeutralTextColor)
+            TextWriterColor.Write("*) " + DoTranslation("Neutral text color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedNeutralTextColor)
 
             'List entry color
-            Write("*) " + DoTranslation("List entry color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedListEntryColor)
+            TextWriterColor.Write("*) " + DoTranslation("List entry color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedListEntryColor)
 
             'List value color
-            Write("*) " + DoTranslation("List value color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedListValueColor)
+            TextWriterColor.Write("*) " + DoTranslation("List value color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedListValueColor)
 
             'Stage color
-            Write("*) " + DoTranslation("Stage color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedStageColor)
+            TextWriterColor.Write("*) " + DoTranslation("Stage color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedStageColor)
 
             'Error color
-            Write("*) " + DoTranslation("Error color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedErrorColor)
+            TextWriterColor.Write("*) " + DoTranslation("Error color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedErrorColor)
 
             'Warning color
-            Write("*) " + DoTranslation("Warning color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedWarningColor)
+            TextWriterColor.Write("*) " + DoTranslation("Warning color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedWarningColor)
 
             'Option color
-            Write("*) " + DoTranslation("Option color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, _SelectedOptionColor)
+            TextWriterColor.Write("*) " + DoTranslation("Option color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, _SelectedOptionColor)
 
             'Banner color
-            Write("*) " + DoTranslation("Banner color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedBannerColor)
+            TextWriterColor.Write("*) " + DoTranslation("Banner color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedBannerColor)
 
             'Notification title color
-            Write("*) " + DoTranslation("Notification title color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedNotificationTitleColor)
+            TextWriterColor.Write("*) " + DoTranslation("Notification title color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedNotificationTitleColor)
 
             'Notification description color
-            Write("*) " + DoTranslation("Notification description color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedNotificationDescriptionColor)
+            TextWriterColor.Write("*) " + DoTranslation("Notification description color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedNotificationDescriptionColor)
 
             'Notification progress color
-            Write("*) " + DoTranslation("Notification progress color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedNotificationProgressColor)
+            TextWriterColor.Write("*) " + DoTranslation("Notification progress color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedNotificationProgressColor)
 
             'Notification failure color
-            Write("*) " + DoTranslation("Notification failure color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedNotificationFailureColor)
+            TextWriterColor.Write("*) " + DoTranslation("Notification failure color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedNotificationFailureColor)
 
             'Question color
-            Write("*) " + DoTranslation("Question color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedQuestionColor)
+            TextWriterColor.Write("*) " + DoTranslation("Question color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedQuestionColor)
 
             'Success color
-            Write("*) " + DoTranslation("Success color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedSuccessColor)
+            TextWriterColor.Write("*) " + DoTranslation("Success color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedSuccessColor)
 
             'User dollar color
-            Write("*) " + DoTranslation("User dollar color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedUserDollarColor)
+            TextWriterColor.Write("*) " + DoTranslation("User dollar color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedUserDollarColor)
 
             'Tip color
-            Write("*) " + DoTranslation("Tip color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedTipColor)
+            TextWriterColor.Write("*) " + DoTranslation("Tip color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedTipColor)
 
             'Separator text color
-            Write("*) " + DoTranslation("Separator text color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedSeparatorTextColor)
+            TextWriterColor.Write("*) " + DoTranslation("Separator text color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedSeparatorTextColor)
 
             'Separator color
-            Write("*) " + DoTranslation("Separator color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedSeparatorColor)
+            TextWriterColor.Write("*) " + DoTranslation("Separator color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedSeparatorColor)
 
             'List title color
-            Write("*) " + DoTranslation("List title color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedListTitleColor)
+            TextWriterColor.Write("*) " + DoTranslation("List title color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedListTitleColor)
 
             'Development warning color
-            Write("*) " + DoTranslation("Development warning color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedDevelopmentWarningColor)
+            TextWriterColor.Write("*) " + DoTranslation("Development warning color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedDevelopmentWarningColor)
 
             'Stage time color
-            Write("*) " + DoTranslation("Stage time color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedStageTimeColor)
+            TextWriterColor.Write("*) " + DoTranslation("Stage time color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedStageTimeColor)
 
             'Progress color
-            Write("*) " + DoTranslation("Progress color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedProgressColor)
+            TextWriterColor.Write("*) " + DoTranslation("Progress color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedProgressColor)
 
             'Back option color
-            Write("*) " + DoTranslation("Back option color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedBackOptionColor)
+            TextWriterColor.Write("*) " + DoTranslation("Back option color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedBackOptionColor)
 
             'Low priority border color
-            Write("*) " + DoTranslation("Low priority border color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedLowPriorityBorderColor)
+            TextWriterColor.Write("*) " + DoTranslation("Low priority border color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedLowPriorityBorderColor)
 
             'Medium priority border color
-            Write("*) " + DoTranslation("Medium priority border color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedMediumPriorityBorderColor)
+            TextWriterColor.Write("*) " + DoTranslation("Medium priority border color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedMediumPriorityBorderColor)
 
             'High priority border color
-            Write("*) " + DoTranslation("High priority border color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedHighPriorityBorderColor)
+            TextWriterColor.Write("*) " + DoTranslation("High priority border color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedHighPriorityBorderColor)
 
             'Table separator color
-            Write("*) " + DoTranslation("Table separator color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedTableSeparatorColor)
+            TextWriterColor.Write("*) " + DoTranslation("Table separator color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedTableSeparatorColor)
 
             'Table header color
-            Write("*) " + DoTranslation("Table header color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedTableHeaderColor)
+            TextWriterColor.Write("*) " + DoTranslation("Table header color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedTableHeaderColor)
 
             'Table value color
-            Write("*) " + DoTranslation("Table value color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedTableValueColor)
+            TextWriterColor.Write("*) " + DoTranslation("Table value color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedTableValueColor)
 
             'Selected option color
-            Write("*) " + DoTranslation("Selected option color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedSelectedOptionColor)
+            TextWriterColor.Write("*) " + DoTranslation("Selected option color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedSelectedOptionColor)
 
             'Selected option color
-            Write("*) " + DoTranslation("Alternative option color") + ": ", False, ColTypes.Option)
-            Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedAlternativeOptionColor)
+            TextWriterColor.Write("*) " + DoTranslation("Alternative option color") + ": ", False, ColTypes.Option)
+            TextWriterColor.Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedAlternativeOptionColor)
 
             'Pause until a key is pressed
-            Write(NewLine + DoTranslation("Press any key to go back."), True, ColTypes.Neutral)
+            TextWriterColor.Write(NewLine + DoTranslation("Press any key to go back."), True, ColTypes.Neutral)
             Console.ReadKey()
         End Sub
 

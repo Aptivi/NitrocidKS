@@ -48,9 +48,9 @@ Begin:
                     Do While String.IsNullOrWhiteSpace(RSSFeedLink)
                         Try
                             If Not String.IsNullOrWhiteSpace(RSSFeedUrlPromptStyle) Then
-                                Write(ProbePlaces(RSSFeedUrlPromptStyle), False, ColTypes.Input)
+                                TextWriterColor.Write(ProbePlaces(RSSFeedUrlPromptStyle), False, ColTypes.Input)
                             Else
-                                Write(DoTranslation("Enter an RSS feed URL:") + " ", False, ColTypes.Input)
+                                TextWriterColor.Write(DoTranslation("Enter an RSS feed URL:") + " ", False, ColTypes.Input)
                             End If
                             RSSFeedLink = Console.ReadLine
                             RSSFeedInstance = New RSSFeed(RSSFeedLink, RSSFeedType.Infer)
@@ -59,7 +59,7 @@ Begin:
                         Catch ex As Exception
                             Wdbg(DebugLevel.E, "Failed to parse RSS feed URL {0}: {1}", FeedUrl, ex.Message)
                             WStkTrc(ex)
-                            Write(DoTranslation("Failed to parse feed URL:") + " {0}", True, ColTypes.Error, ex.Message)
+                            TextWriterColor.Write(DoTranslation("Failed to parse feed URL:") + " {0}", True, ColTypes.Error, ex.Message)
                             RSSFeedLink = ""
                         End Try
                     Loop
@@ -75,7 +75,7 @@ Begin:
                         Catch ex As Exception
                             Wdbg(DebugLevel.E, "Failed to parse RSS feed URL {0}: {1}", RSSFeedLink, ex.Message)
                             WStkTrc(ex)
-                            Write(DoTranslation("Failed to parse feed URL:") + " {0}", True, ColTypes.Error, ex.Message)
+                            TextWriterColor.Write(DoTranslation("Failed to parse feed URL:") + " {0}", True, ColTypes.Error, ex.Message)
                             RSSFeedLink = ""
                             GoTo Begin
                         End Try
@@ -90,11 +90,11 @@ Begin:
                         End If
                         Wdbg(DebugLevel.I, "RSSShellPromptStyle = {0}", RSSShellPromptStyle)
                         If RSSShellPromptStyle = "" Then
-                            Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, New Uri(RSSFeedLink).Host) : Write("] > ", False, ColTypes.Gray) : Write("", False, InputColor)
+                            TextWriterColor.Write("[", False, ColTypes.Gray) : TextWriterColor.Write("{0}", False, ColTypes.UserName, New Uri(RSSFeedLink).Host) : TextWriterColor.Write("] > ", False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                         Else
                             Dim ParsedPromptStyle As String = ProbePlaces(RSSShellPromptStyle)
                             ParsedPromptStyle.ConvertVTSequences
-                            Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, InputColor)
+                            TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                         End If
 
                         'Prompt for command

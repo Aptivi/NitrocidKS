@@ -25,9 +25,9 @@ Namespace TestShell.Commands
             Dim Text As String = ListArgsOnly(0)
             Dim LocalizedStrings As Dictionary(Of String, String) = PrepareDict("eng")
             If LocalizedStrings.Keys.Contains(Text) Then
-                Write(DoTranslation("String found in the localization resources."), True, ColTypes.Success)
+                TextWriterColor.Write(DoTranslation("String found in the localization resources."), True, ColTypes.Success)
             Else
-                Write(DoTranslation("String not found in the localization resources."), True, ColTypes.Neutral)
+                TextWriterColor.Write(DoTranslation("String not found in the localization resources."), True, ColTypes.Neutral)
             End If
         End Sub
 

@@ -23,14 +23,14 @@ Namespace Shell.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If ListArgs?.Length = 1 Then
-                Write(DoTranslation("usrmgr: Creating username {0}..."), True, ColTypes.Neutral, ListArgs(0))
+                TextWriterColor.Write(DoTranslation("usrmgr: Creating username {0}..."), True, ColTypes.Neutral, ListArgs(0))
                 AddUser(ListArgs(0))
             ElseIf ListArgs?.Length > 2 Then
                 If ListArgs(1) = ListArgs(2) Then
-                    Write(DoTranslation("usrmgr: Creating username {0}..."), True, ColTypes.Neutral, ListArgs(0))
+                    TextWriterColor.Write(DoTranslation("usrmgr: Creating username {0}..."), True, ColTypes.Neutral, ListArgs(0))
                     AddUser(ListArgs(0), ListArgs(1))
                 Else
-                    Write(DoTranslation("Passwords don't match."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("Passwords don't match."), True, ColTypes.Error)
                 End If
             End If
         End Sub

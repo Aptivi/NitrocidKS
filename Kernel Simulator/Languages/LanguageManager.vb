@@ -223,12 +223,12 @@ Namespace Languages
                             ElseIf AlwaysTranslated Then
                                 If Not lang.EndsWith("-T") Then lang += "-T"
                             Else
-                                Write(DoTranslation("The language you've selected contains two variants. Select one:") + NewLine, True, ColTypes.Neutral)
-                                Write(" 1) " + DoTranslation("Transliterated version", lang), True, ColTypes.Option)
-                                Write(" 2) " + DoTranslation("Translated version", lang + "-T") + NewLine, True, ColTypes.Option)
+                                TextWriterColor.Write(DoTranslation("The language you've selected contains two variants. Select one:") + NewLine, True, ColTypes.Neutral)
+                                TextWriterColor.Write(" 1) " + DoTranslation("Transliterated version", lang), True, ColTypes.Option)
+                                TextWriterColor.Write(" 2) " + DoTranslation("Translated version", lang + "-T") + NewLine, True, ColTypes.Option)
                                 Dim LanguageSet As Boolean
                                 While Not LanguageSet
-                                    Write(">> ", False, ColTypes.Input)
+                                    TextWriterColor.Write(">> ", False, ColTypes.Input)
                                     Dim Answer As Integer
                                     If Integer.TryParse(Console.ReadLine, Answer) Then
                                         Wdbg(DebugLevel.I, "Choice: {0}", Answer)
@@ -237,10 +237,10 @@ Namespace Languages
                                                 If Answer = 2 Then lang += "-T"
                                                 LanguageSet = True
                                             Case Else
-                                                Write(DoTranslation("Invalid choice. Try again."), True, ColTypes.Error)
+                                                TextWriterColor.Write(DoTranslation("Invalid choice. Try again."), True, ColTypes.Error)
                                         End Select
                                     Else
-                                        Write(DoTranslation("The answer must be numeric."), True, ColTypes.Error)
+                                        TextWriterColor.Write(DoTranslation("The answer must be numeric."), True, ColTypes.Error)
                                     End If
                                 End While
                             End If
@@ -248,15 +248,15 @@ Namespace Languages
                     End If
                 End If
 
-                Write(DoTranslation("Changing from: {0} to {1}..."), True, ColTypes.Neutral, CurrentLanguage, lang)
+                TextWriterColor.Write(DoTranslation("Changing from: {0} to {1}..."), True, ColTypes.Neutral, CurrentLanguage, lang)
                 If Not SetLang(lang) Then
-                    Write(DoTranslation("Failed to set language."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("Failed to set language."), True, ColTypes.Error)
                 End If
                 If NotifyCodepageError Then
-                    Write(DoTranslation("Unable to set codepage. The language may not display properly."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("Unable to set codepage. The language may not display properly."), True, ColTypes.Error)
                 End If
             Else
-                Write(DoTranslation("Invalid language") + " {0}", True, ColTypes.Error, lang)
+                TextWriterColor.Write(DoTranslation("Invalid language") + " {0}", True, ColTypes.Error, lang)
             End If
         End Sub
 

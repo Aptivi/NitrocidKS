@@ -29,12 +29,12 @@ Namespace Misc.TextEdit.Commands
                 If IsStringNumeric(ListArgs(0)) Then
                     If CInt(ListArgs(0)) <= TextEdit_FileLines.Count Then
                         TextEdit_RemoveLine(ListArgs(0))
-                        Write(DoTranslation("Removed line."), True, ColTypes.Success)
+                        TextWriterColor.Write(DoTranslation("Removed line."), True, ColTypes.Success)
                     Else
-                        Write(DoTranslation("The specified line number may not be larger than the last file line number."), True, ColTypes.Error)
+                        TextWriterColor.Write(DoTranslation("The specified line number may not be larger than the last file line number."), True, ColTypes.Error)
                     End If
                 Else
-                    Write(DoTranslation("Specified line number {0} is not a valid number."), True, ColTypes.Error, ListArgs(0))
+                    TextWriterColor.Write(DoTranslation("Specified line number {0} is not a valid number."), True, ColTypes.Error, ListArgs(0))
                     Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs(0))
                 End If
             ElseIf ListArgs?.Count > 1 Then
@@ -45,13 +45,13 @@ Namespace Misc.TextEdit.Commands
                         LineNumberStart.SwapIfSourceLarger(LineNumberEnd)
                         For LineNumber = LineNumberStart To LineNumberEnd
                             TextEdit_RemoveLine(LineNumber)
-                            Write(DoTranslation("Removed line number {0}."), True, ColTypes.Success, LineNumber)
+                            TextWriterColor.Write(DoTranslation("Removed line number {0}."), True, ColTypes.Success, LineNumber)
                         Next
                     Else
-                        Write(DoTranslation("The specified line number may not be larger than the last file line number."), True, ColTypes.Error)
+                        TextWriterColor.Write(DoTranslation("The specified line number may not be larger than the last file line number."), True, ColTypes.Error)
                     End If
                 Else
-                    Write(DoTranslation("Specified line number {0} is not a valid number."), True, ColTypes.Error, ListArgs(1))
+                    TextWriterColor.Write(DoTranslation("Specified line number {0} is not a valid number."), True, ColTypes.Error, ListArgs(1))
                     Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs(1))
                 End If
             End If

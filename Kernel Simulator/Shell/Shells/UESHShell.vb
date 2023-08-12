@@ -104,7 +104,7 @@ Namespace Shell.Shells
                             End If
                         Catch ex As Exception
                             WStkTrc(ex)
-                            Write(DoTranslation("There was an error in the shell.") + NewLine + "Error {0}: {1}", True, ColTypes.Error, ex.GetType.FullName, ex.Message)
+                            TextWriterColor.Write(DoTranslation("There was an error in the shell.") + NewLine + "Error {0}: {1}", True, ColTypes.Error, ex.GetType.FullName, ex.Message)
                             Continue While
                         End Try
                     End If
@@ -122,16 +122,16 @@ Namespace Shell.Shells
                 'Parse the shell prompt style
                 Dim ParsedPromptStyle As String = ProbePlaces(ShellPromptStyle)
                 ParsedPromptStyle.ConvertVTSequences
-                Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, InputColor)
+                TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
             ElseIf String.IsNullOrWhiteSpace(ShellPromptStyle) And Not Maintenance Then
                 'Write the user dollar sign using the two styles, depending on the permission of the user
                 If HasPermission(CurrentUser.Username, PermissionType.Administrator) Then
-                    Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, CurrentUser.Username) : Write("@", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, HostName) : Write("]{0}", False, ColTypes.Gray, CurrDir) : Write(" # ", False, ColTypes.UserDollarSign) : Write("", False, InputColor)
+                    TextWriterColor.Write("[", False, ColTypes.Gray) : TextWriterColor.Write("{0}", False, ColTypes.UserName, CurrentUser.Username) : TextWriterColor.Write("@", False, ColTypes.Gray) : TextWriterColor.Write("{0}", False, ColTypes.HostName, HostName) : TextWriterColor.Write("]{0}", False, ColTypes.Gray, CurrDir) : TextWriterColor.Write(" # ", False, ColTypes.UserDollarSign) : TextWriterColor.Write("", False, InputColor)
                 Else
-                    Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, CurrentUser.Username) : Write("@", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, HostName) : Write("]{0}", False, ColTypes.Gray, CurrDir) : Write(" $ ", False, ColTypes.UserDollarSign) : Write("", False, InputColor)
+                    TextWriterColor.Write("[", False, ColTypes.Gray) : TextWriterColor.Write("{0}", False, ColTypes.UserName, CurrentUser.Username) : TextWriterColor.Write("@", False, ColTypes.Gray) : TextWriterColor.Write("{0}", False, ColTypes.HostName, HostName) : TextWriterColor.Write("]{0}", False, ColTypes.Gray, CurrDir) : TextWriterColor.Write(" $ ", False, ColTypes.UserDollarSign) : TextWriterColor.Write("", False, InputColor)
                 End If
             Else
-                Write(DoTranslation("Maintenance Mode") + "> ", False, ColTypes.Gray) : Write("", False, InputColor)
+                TextWriterColor.Write(DoTranslation("Maintenance Mode") + "> ", False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
             End If
         End Sub
 

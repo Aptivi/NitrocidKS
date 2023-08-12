@@ -35,19 +35,19 @@ Namespace Network
             'Probe for adapter capabilities
             For Each adapter As NetworkInterface In adapters
                 adapterNumber += 1
-                Write("==========================================", True, ColTypes.Neutral)
+                TextWriterColor.Write("==========================================", True, ColTypes.Neutral)
 
                 'See if it supports IPv6
                 If Not adapter.Supports(NetworkInterfaceComponent.IPv6) Then
                     Wdbg(DebugLevel.W, "{0} doesn't support IPv6. Trying to get information about IPv4.", adapter.Description)
-                    Write(DoTranslation("Adapter {0} doesn't support IPv6. Continuing..."), True, ColTypes.Error, adapter.Description)
+                    TextWriterColor.Write(DoTranslation("Adapter {0} doesn't support IPv6. Continuing..."), True, ColTypes.Error, adapter.Description)
                     NoV6 = True
                 End If
 
                 'See if it supports IPv4
                 If Not adapter.Supports(NetworkInterfaceComponent.IPv4) Then
                     Wdbg(DebugLevel.E, "{0} doesn't support IPv4.", adapter.Description)
-                    Write(DoTranslation("Adapter {0} doesn't support IPv4. Probe failed."), True, ColTypes.Error, adapter.Description)
+                    TextWriterColor.Write(DoTranslation("Adapter {0} doesn't support IPv4. Probe failed."), True, ColTypes.Error, adapter.Description)
                     NoV4 = True
                 End If
 
@@ -66,11 +66,11 @@ Namespace Network
 #Disable Warning BC42104
                         If p6 Is Nothing Then
                             Wdbg(DebugLevel.W, "Failed to get IPv6 properties.")
-                            Write(DoTranslation("Failed to get IPv6 properties for adapter {0}. Continuing..."), True, ColTypes.Error, adapter.Description)
+                            TextWriterColor.Write(DoTranslation("Failed to get IPv6 properties for adapter {0}. Continuing..."), True, ColTypes.Error, adapter.Description)
                         End If
                         If p Is Nothing Then
                             Wdbg(DebugLevel.E, "Failed to get IPv4 properties.")
-                            Write(DoTranslation("Failed to get properties for adapter {0}"), True, ColTypes.Error, adapter.Description)
+                            TextWriterColor.Write(DoTranslation("Failed to get properties for adapter {0}"), True, ColTypes.Error, adapter.Description)
                             Failed = True
                         End If
                         WStkTrc(ex)
@@ -80,7 +80,7 @@ Namespace Network
                     'Check if statistics is nothing
                     If s Is Nothing Then
                         Wdbg(DebugLevel.E, "Failed to get statistics.")
-                        Write(DoTranslation("Failed to get statistics for adapter {0}"), True, ColTypes.Error, adapter.Description)
+                        TextWriterColor.Write(DoTranslation("Failed to get statistics for adapter {0}"), True, ColTypes.Error, adapter.Description)
                         Failed = True
                     End If
 
@@ -99,7 +99,7 @@ Namespace Network
 
             'Print general IPv4 and IPv6 information
             If GeneralNetworkInformation Then
-                Write("==========================================", True, ColTypes.Neutral)
+                TextWriterColor.Write("==========================================", True, ColTypes.Neutral)
                 PrintGeneralNetInfo(gs4, gs6)
             End If
         End Sub
@@ -113,7 +113,7 @@ Namespace Network
         ''' <param name="AdapterNumber">Reference adapter number</param>
         Sub PrintAdapterIPv4Info(NInterface As NetworkInterface, Properties As IPv4InterfaceProperties, Statistics As IPv4InterfaceStatistics, AdapterNumber As Long)
             If ExtensiveAdapterInformation Then
-                Write(DoTranslation("IPv4 information:") + NewLine +
+                TextWriterColor.Write(DoTranslation("IPv4 information:") + NewLine +
                   DoTranslation("Adapter Number:") + " {0}" + NewLine +
                   DoTranslation("Adapter Name:") + " {1}" + NewLine +
                   DoTranslation("Maximum Transmission Unit: {2} Units") + NewLine +
@@ -124,7 +124,7 @@ Namespace Network
                   AdapterNumber, NInterface.Description, Properties.Mtu, Properties.IsDhcpEnabled, Statistics.NonUnicastPacketsSent, Statistics.NonUnicastPacketsReceived,
                   Statistics.UnicastPacketsSent, Statistics.UnicastPacketsReceived, Statistics.IncomingPacketsWithErrors, Statistics.OutgoingPacketsWithErrors)
             Else
-                Write(DoTranslation("IPv4 information:") + NewLine +
+                TextWriterColor.Write(DoTranslation("IPv4 information:") + NewLine +
                   DoTranslation("Adapter Number:") + " {0}" + NewLine +
                   DoTranslation("Adapter Name:") + " {1}", True, ColTypes.Neutral,
                   AdapterNumber, NInterface.Description)
@@ -139,13 +139,13 @@ Namespace Network
         ''' <param name="AdapterNumber">Reference adapter number</param>
         Sub PrintAdapterIPv6Info(NInterface As NetworkInterface, Properties As IPv6InterfaceProperties, AdapterNumber As Long)
             If ExtensiveAdapterInformation Then
-                Write(DoTranslation("IPv6 information:") + NewLine +
+                TextWriterColor.Write(DoTranslation("IPv6 information:") + NewLine +
                   DoTranslation("Adapter Number:") + " {0}" + NewLine +
                   DoTranslation("Adapter Name:") + " {1}" + NewLine +
                   DoTranslation("Maximum Transmission Unit: {2} Units"), True, ColTypes.Neutral,
                   AdapterNumber, NInterface.Description, Properties.Mtu)
             Else
-                Write(DoTranslation("IPv6 information:") + NewLine +
+                TextWriterColor.Write(DoTranslation("IPv6 information:") + NewLine +
                   DoTranslation("Adapter Number:") + " {0}" + NewLine +
                   DoTranslation("Adapter Name:") + " {1}", True, ColTypes.Neutral,
                   AdapterNumber, NInterface.Description)
@@ -158,7 +158,7 @@ Namespace Network
         ''' <param name="IPv4Stat">IPv4 general statistics</param>
         ''' <param name="IPv6Stat">IPv6 general statistics</param>
         Sub PrintGeneralNetInfo(IPv4Stat As IPGlobalStatistics, IPv6Stat As IPGlobalStatistics)
-            Write(DoTranslation("General IPv6 properties") + NewLine +
+            TextWriterColor.Write(DoTranslation("General IPv6 properties") + NewLine +
               DoTranslation("Packets (inbound):") + " {0}/{1}" + NewLine +
               DoTranslation("Packets (outbound):") + " {2}/{3}" + NewLine +
               DoTranslation("Errors in received packets:") + " {4}/{5}/{6}" + NewLine +

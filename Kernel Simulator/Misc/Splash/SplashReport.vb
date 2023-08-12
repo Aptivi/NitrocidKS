@@ -68,11 +68,11 @@ Namespace Misc.Splash
                     If EnableSplash Then
                         CurrentSplash.Report(_Progress, Text, CurrentSplash.ProgressWritePositionX, CurrentSplash.ProgressWritePositionY, CurrentSplash.ProgressReportWritePositionX, CurrentSplash.ProgressReportWritePositionY, Vars)
                     ElseIf Not QuietKernel Then
-                        Write(Text, True, ColTypes, Vars)
+                        TextWriterColor.Write(Text, True, ColTypes, Vars)
                     End If
                 End If
             Else
-                Write(Text, True, ColTypes, Vars)
+                TextWriterColor.Write(Text, True, ColTypes, Vars)
             End If
         End Sub
 

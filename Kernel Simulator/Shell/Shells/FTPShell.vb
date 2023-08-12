@@ -81,14 +81,14 @@ Namespace Shell.Shells
                             If FtpConnected Then
                                 Wdbg(DebugLevel.I, "FTPShellPromptStyle = {0}", FTPShellPromptStyle)
                                 If FTPShellPromptStyle = "" Then
-                                    Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, FtpUser) : Write("@", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, FtpSite) : Write("]{0}> ", False, ColTypes.Gray, FtpCurrentRemoteDir) : Write("", False, InputColor)
+                                    TextWriterColor.Write("[", False, ColTypes.Gray) : TextWriterColor.Write("{0}", False, ColTypes.UserName, FtpUser) : TextWriterColor.Write("@", False, ColTypes.Gray) : TextWriterColor.Write("{0}", False, ColTypes.HostName, FtpSite) : TextWriterColor.Write("]{0}> ", False, ColTypes.Gray, FtpCurrentRemoteDir) : TextWriterColor.Write("", False, InputColor)
                                 Else
                                     Dim ParsedPromptStyle As String = ProbePlaces(FTPShellPromptStyle)
                                     ParsedPromptStyle.ConvertVTSequences
-                                    Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, InputColor)
+                                    TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                                 End If
                             Else
-                                Write("{0}> ", False, ColTypes.Gray, FtpCurrentDirectory) : Write("", False, InputColor)
+                                TextWriterColor.Write("{0}> ", False, ColTypes.Gray, FtpCurrentDirectory) : TextWriterColor.Write("", False, InputColor)
                             End If
                         End If
 

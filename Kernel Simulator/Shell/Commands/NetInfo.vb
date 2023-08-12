@@ -27,7 +27,7 @@ Namespace Shell.Commands
             If IsOnWindows() Then
                 PrintAdapterProperties()
             Else
-                Write(DoTranslation("Due to technical difficulties, we're unable to list adapter properties on Unix systems."), True, ColTypes.Error)
+                TextWriterColor.Write(DoTranslation("Due to technical difficulties, we're unable to list adapter properties on Unix systems."), True, ColTypes.Error)
             End If
         End Sub
 

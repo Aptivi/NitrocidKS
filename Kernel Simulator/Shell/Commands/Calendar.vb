@@ -44,7 +44,7 @@ Namespace Shell.Commands
                             PrintCalendar(StringYear, StringMonth)
                         Catch ex As Exception
                             WStkTrc(ex)
-                            Write(DoTranslation("Failed to add or remove an event.") + " {0}", True, ColTypes.Error, ex.Message)
+                            TextWriterColor.Write(DoTranslation("Failed to add or remove an event.") + " {0}", True, ColTypes.Error, ex.Message)
                         End Try
                     Else
                         PrintCalendar()
@@ -67,10 +67,10 @@ Namespace Shell.Commands
                                         AddEvent(ParsedDate, EventTitle)
                                     Catch ex As Exception
                                         WStkTrc(ex)
-                                        Write(DoTranslation("Failed to add an event.") + " {0}", True, ColTypes.Error, ex.Message)
+                                        TextWriterColor.Write(DoTranslation("Failed to add an event.") + " {0}", True, ColTypes.Error, ex.Message)
                                     End Try
                                 Else
-                                    Write(DoTranslation("Not enough arguments provided to add an event."), True, ColTypes.Error)
+                                    TextWriterColor.Write(DoTranslation("Not enough arguments provided to add an event."), True, ColTypes.Error)
                                 End If
                             Case "remove"
                                 'Parse the arguments to check to see if enough arguments are passed to those parameters
@@ -83,10 +83,10 @@ Namespace Shell.Commands
                                         RemoveEvent(EventInstance.EventDate, EventId)
                                     Catch ex As Exception
                                         WStkTrc(ex)
-                                        Write(DoTranslation("Failed to remove an event.") + " {0}", True, ColTypes.Error, ex.Message)
+                                        TextWriterColor.Write(DoTranslation("Failed to remove an event.") + " {0}", True, ColTypes.Error, ex.Message)
                                     End Try
                                 Else
-                                    Write(DoTranslation("Not enough arguments provided to remove an event."), True, ColTypes.Error)
+                                    TextWriterColor.Write(DoTranslation("Not enough arguments provided to remove an event."), True, ColTypes.Error)
                                 End If
                             Case "list"
                                 'User chose to list. No parse needed as we're only listing.
@@ -96,10 +96,10 @@ Namespace Shell.Commands
                                 SaveEvents()
                             Case Else
                                 'Invalid action.
-                                Write(DoTranslation("Invalid action."), True, ColTypes.Error)
+                                TextWriterColor.Write(DoTranslation("Invalid action."), True, ColTypes.Error)
                         End Select
                     Else
-                        Write(DoTranslation("Not enough arguments provided for event manipulation."), True, ColTypes.Error)
+                        TextWriterColor.Write(DoTranslation("Not enough arguments provided for event manipulation."), True, ColTypes.Error)
                     End If
                 Case "reminder"
                     'User chose to manipulate with the day reminders
@@ -119,10 +119,10 @@ Namespace Shell.Commands
                                         AddReminder(ParsedDate, ReminderTitle)
                                     Catch ex As Exception
                                         WStkTrc(ex)
-                                        Write(DoTranslation("Failed to add a reminder.") + " {0}", True, ColTypes.Error, ex.Message)
+                                        TextWriterColor.Write(DoTranslation("Failed to add a reminder.") + " {0}", True, ColTypes.Error, ex.Message)
                                     End Try
                                 Else
-                                    Write(DoTranslation("Not enough arguments provided to add a reminder."), True, ColTypes.Error)
+                                    TextWriterColor.Write(DoTranslation("Not enough arguments provided to add a reminder."), True, ColTypes.Error)
                                 End If
                             Case "remove"
                                 'Parse the arguments to check to see if enough arguments are passed to those parameters
@@ -135,10 +135,10 @@ Namespace Shell.Commands
                                         RemoveReminder(ReminderInstance.ReminderDate, ReminderId)
                                     Catch ex As Exception
                                         WStkTrc(ex)
-                                        Write(DoTranslation("Failed to remove a reminder.") + " {0}", True, ColTypes.Error, ex.Message)
+                                        TextWriterColor.Write(DoTranslation("Failed to remove a reminder.") + " {0}", True, ColTypes.Error, ex.Message)
                                     End Try
                                 Else
-                                    Write(DoTranslation("Not enough arguments provided to remove a reminder."), True, ColTypes.Error)
+                                    TextWriterColor.Write(DoTranslation("Not enough arguments provided to remove a reminder."), True, ColTypes.Error)
                                 End If
                             Case "list"
                                 'User chose to list. No parse needed as we're only listing.
@@ -148,14 +148,14 @@ Namespace Shell.Commands
                                 SaveReminders()
                             Case Else
                                 'Invalid action.
-                                Write(DoTranslation("Invalid action."), True, ColTypes.Error)
+                                TextWriterColor.Write(DoTranslation("Invalid action."), True, ColTypes.Error)
                         End Select
                     Else
-                        Write(DoTranslation("Not enough arguments provided for reminder manipulation."), True, ColTypes.Error)
+                        TextWriterColor.Write(DoTranslation("Not enough arguments provided for reminder manipulation."), True, ColTypes.Error)
                     End If
                 Case Else
                     'Invalid action.
-                    Write(DoTranslation("Invalid action."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("Invalid action."), True, ColTypes.Error)
             End Select
         End Sub
 

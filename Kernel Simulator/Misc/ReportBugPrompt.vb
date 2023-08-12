@@ -30,11 +30,11 @@ Namespace Misc
 
             'First, select what kind of bug you're reporting
             While [Step] = 1
-                Write(DoTranslation("Thank you for raising a ticket to us! Select what kind of request do you have.") + NewLine, True, ColTypes.Neutral)
-                Write(" 1) " + DoTranslation("A problem"), True, ColTypes.Option)
-                Write(" 2) " + DoTranslation("A feature request"), True, ColTypes.Option)
-                Write(" 3) " + DoTranslation("A question") + NewLine, True, ColTypes.Option)
-                Write(">> ", False, ColTypes.Input)
+                TextWriterColor.Write(DoTranslation("Thank you for raising a ticket to us! Select what kind of request do you have.") + NewLine, True, ColTypes.Neutral)
+                TextWriterColor.Write(" 1) " + DoTranslation("A problem"), True, ColTypes.Option)
+                TextWriterColor.Write(" 2) " + DoTranslation("A feature request"), True, ColTypes.Option)
+                TextWriterColor.Write(" 3) " + DoTranslation("A question") + NewLine, True, ColTypes.Option)
+                TextWriterColor.Write(">> ", False, ColTypes.Input)
                 If Integer.TryParse(Console.ReadLine, AnswerKind) Then
                     Wdbg(DebugLevel.I, "Answer: {0}", AnswerKind)
                     Select Case AnswerKind
@@ -42,28 +42,28 @@ Namespace Misc
                             [Step] += 1
                         Case Else '???
                             Wdbg(DebugLevel.W, "Option is not valid. Returning...")
-                            Write(DoTranslation("Specified option {0} is invalid."), True, ColTypes.Error, AnswerKind)
-                            Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                            TextWriterColor.Write(DoTranslation("Specified option {0} is invalid."), True, ColTypes.Error, AnswerKind)
+                            TextWriterColor.Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
                             Console.ReadKey()
                     End Select
                 Else
                     Wdbg(DebugLevel.W, "Answer is not numeric.")
-                    Write(DoTranslation("The answer must be numeric."), True, ColTypes.Error)
-                    Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("The answer must be numeric."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
                     Console.ReadKey()
                 End If
             End While
 
             'Second, type what feature you need to raise a ticket on
             While [Step] = 2
-                Write(DoTranslation("Type a feature that you want to raise a ticket on.") + NewLine, True, ColTypes.Neutral)
-                Write(">> ", False, ColTypes.Input)
+                TextWriterColor.Write(DoTranslation("Type a feature that you want to raise a ticket on.") + NewLine, True, ColTypes.Neutral)
+                TextWriterColor.Write(">> ", False, ColTypes.Input)
                 AnswerFeature = Console.ReadLine
                 Wdbg(DebugLevel.I, "Answer: {0}", AnswerFeature)
                 If String.IsNullOrWhiteSpace(AnswerFeature) Then
                     Wdbg(DebugLevel.W, "Text written is not valid. Returning...")
-                    Write(DoTranslation("You must specify a feature."), True, ColTypes.Error)
-                    Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("You must specify a feature."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
                     Console.ReadKey()
                 Else
                     [Step] += 1
@@ -72,14 +72,14 @@ Namespace Misc
 
             'Third, type your idea, question or problem
             While [Step] = 3
-                Write(DoTranslation("Ask a question, jot your idea, or report a problem.") + NewLine, True, ColTypes.Neutral)
-                Write(">> ", False, ColTypes.Input)
+                TextWriterColor.Write(DoTranslation("Ask a question, jot your idea, or report a problem.") + NewLine, True, ColTypes.Neutral)
+                TextWriterColor.Write(">> ", False, ColTypes.Input)
                 AnswerRequest = Console.ReadLine
                 Wdbg(DebugLevel.I, "Answer: {0}", AnswerRequest)
                 If String.IsNullOrWhiteSpace(AnswerRequest) Then
                     Wdbg(DebugLevel.W, "Text written is not valid. Returning...")
-                    Write(DoTranslation("You must write your request."), True, ColTypes.Error)
-                    Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("You must write your request."), True, ColTypes.Error)
+                    TextWriterColor.Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
                     Console.ReadKey()
                 Else
                     Exit While

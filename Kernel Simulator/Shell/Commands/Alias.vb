@@ -26,13 +26,13 @@ Namespace Shell.Commands
                 If ListArgs(0) = "add" And [Enum].IsDefined(GetType(ShellType), ListArgs(1)) Then
                     ManageAlias(ListArgs(0), [Enum].Parse(GetType(ShellType), ListArgs(1)), ListArgs(2), ListArgs(3))
                 Else
-                    Write(DoTranslation("Invalid type {0}."), True, ColTypes.Error, ListArgs(1))
+                    TextWriterColor.Write(DoTranslation("Invalid type {0}."), True, ColTypes.Error, ListArgs(1))
                 End If
             ElseIf ListArgs?.Length = 3 Then
                 If ListArgs(0) = "rem" And [Enum].IsDefined(GetType(ShellType), ListArgs(1)) Then
                     ManageAlias(ListArgs(0), [Enum].Parse(GetType(ShellType), ListArgs(1)), ListArgs(2))
                 Else
-                    Write(DoTranslation("Invalid type {0}."), True, ColTypes.Error, ListArgs(1))
+                    TextWriterColor.Write(DoTranslation("Invalid type {0}."), True, ColTypes.Error, ListArgs(1))
                 End If
             End If
         End Sub

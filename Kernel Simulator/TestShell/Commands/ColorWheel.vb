@@ -23,7 +23,7 @@ Namespace TestShell.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             Dim WheelReturn As String = ColorWheel(False)
-            Write(WheelReturn, True, New Color(WheelReturn))
+            TextWriterColor.Write(WheelReturn, True, New Color(WheelReturn))
         End Sub
 
     End Class

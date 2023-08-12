@@ -79,27 +79,27 @@ Namespace Misc.Games
             End Select
 
             'Enter the loop until the user presses ESC
-            Write(DoTranslation("Press ESC to exit.") + NewLine, True, ColTypes.Tip)
+            TextWriterColor.Write(DoTranslation("Press ESC to exit.") + NewLine, True, ColTypes.Tip)
             While Not WrittenChar.Key = ConsoleKey.Escape Or Not WrittenChar.Modifiers = ConsoleModifiers.Control And WrittenChar.Key = ConsoleKey.C
                 'Select a random character
                 SelectedChar = Convert.ToChar(RandomEngine.Next(97, 122))
 
                 'Prompt user for character
                 Try
-                    Write(DoTranslation("Current character:") + " {0}", True, ColTypes.Neutral, SelectedChar)
-                    Write("> ", False, ColTypes.Input)
+                    TextWriterColor.Write(DoTranslation("Current character:") + " {0}", True, ColTypes.Neutral, SelectedChar)
+                    TextWriterColor.Write("> ", False, ColTypes.Input)
                     WrittenChar = ReadKeyTimeout(False, TimeSpan.FromMilliseconds(SpeedTimeout))
                     Console.WriteLine()
 
                     'Check to see if the user has pressed the correct character
                     If WrittenChar.KeyChar = SelectedChar Then
-                        Write(DoTranslation("You've pressed the right character!"), True, ColTypes.Success)
+                        TextWriterColor.Write(DoTranslation("You've pressed the right character!"), True, ColTypes.Success)
                     ElseIf Not WrittenChar.Key = ConsoleKey.Escape Or Not WrittenChar.Modifiers = ConsoleModifiers.Control And WrittenChar.Key = ConsoleKey.C Then
-                        Write(DoTranslation("You've pressed the wrong character."), True, ColTypes.Warning)
+                        TextWriterColor.Write(DoTranslation("You've pressed the wrong character."), True, ColTypes.Warning)
                     End If
                 Catch ex As Exceptions.ConsoleReadTimeoutException
                     Console.WriteLine()
-                    Write(DoTranslation("Character not pressed on time."), True, ColTypes.Warning)
+                    TextWriterColor.Write(DoTranslation("Character not pressed on time."), True, ColTypes.Warning)
                 End Try
             End While
         End Sub
