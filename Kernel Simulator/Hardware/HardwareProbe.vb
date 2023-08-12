@@ -31,13 +31,13 @@ Public Module HardwareProbe
         'We will probe hardware
         EventManager.RaiseHardwareProbing()
         Try
-            AddHandler DebugDataReceived, AddressOf WriteInxiDebugData
+            AddHandler InxiTrace.DebugDataReceived, AddressOf WriteInxiDebugData
             If FullProbe Then
                 HardwareInfo = New Inxi()
             Else
                 HardwareInfo = New Inxi(InxiHardwareType.Processor Or InxiHardwareType.PCMemory Or InxiHardwareType.Graphics Or InxiHardwareType.HardDrive)
             End If
-            RemoveHandler DebugDataReceived, AddressOf WriteInxiDebugData
+            RemoveHandler InxiTrace.DebugDataReceived, AddressOf WriteInxiDebugData
         Catch ex As Exception
             Wdbg("E", "Failed to probe hardware: {0}", ex.Message)
             WStkTrc(ex)
