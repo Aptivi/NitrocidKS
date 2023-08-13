@@ -3857,30 +3857,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.RetroKS.RetroKSContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.RetroKS.RetroKSContext.html",
-          "hash": "kCo8M4SvlUuDWNF+s08gk3I/aIn57HBegTojHsGRdwo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.RetroKS.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.RetroKS.html",
-          "hash": "Frd1BXefAkiha5RMAv+/cryP8IO0eHVFT/MUsyC6isc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.BaseScreensaver.yml",
       "output": {
         ".html": {
@@ -9021,7 +8997,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "3TCw1PG6e/92jOvU62xYbYSxJLWA7PNbPj9MV74yBHs="
+          "hash": "Fqv/KKX8pkPKiLB45QYgnfyo3QlO486pL2fEnUZ/dmU="
         }
       },
       "is_incremental": false,
@@ -9094,7 +9070,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 750,
+          "total_file_count": 748,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
