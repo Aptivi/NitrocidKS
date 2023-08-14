@@ -203,7 +203,7 @@ Public Module ToolPrompts
         Dim KeyFinished As Boolean
         Dim KeyType As SettingsKeyType
         Dim KeyVar As String = ""
-        Dim AnswerString As String
+        Dim AnswerString As String = ""
         Dim AnswerInt As Integer
 
         While Not KeyFinished
@@ -538,6 +538,12 @@ Public Module ToolPrompts
             If KeyNumber = 2 And Section = 1.3 Then
                 AnswerString = ReadLineNoInput("*")
                 Console.WriteLine()
+            ElseIf KeyType = SettingsKeyType.SBoolean Then
+                If GetValue(KeyVar) Then
+                    AnswerString = "2"
+                Else
+                    AnswerString = "1"
+                End If
             Else
                 AnswerString = Console.ReadLine
             End If
