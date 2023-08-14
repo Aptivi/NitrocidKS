@@ -76,30 +76,37 @@ Namespace ConsoleBase
         ''' <param name="Left">The filtered left position</param>
         ''' <param name="Top">The filtered top position</param>
         Public Sub GetFilteredPositions(Text As String, ByRef Left As Integer, ByRef Top As Integer, ParamArray Vars() As Object)
-            'First, get the old cursor positions
-            Dim OldLeft As Integer = Console.CursorLeft
-            Dim OldTop As Integer = Console.CursorTop
-
-            'Second, filter all text from the VT escape sequences
+            'Filter all text from the VT escape sequences
             Text = FilterVTSequences(Text)
 
-            'Third, print the text, return to the old position, and return the filtered positions
+            'Seek through filtered text (make it seem like it came from Linux by removing CR (\r)), return to the old position, and return the filtered positions
             Text = String.Format(Text, Vars)
-            Console.Write(Text)
-            Left = Console.CursorLeft
-            Top = Console.CursorTop
+            Text = Text.Replace(Convert.ToString(Convert.ToChar(13)), "")
+            Dim LeftSeekPosition As Integer = Console.CursorLeft
+            Dim TopSeekPosition As Integer = Console.CursorTop
 
-            'Finally, set the correct old position
-            If Text.Length > Console.WindowWidth - OldLeft And Top = OldTop Then
-                Dim Times As Integer = Math.Truncate((Text.Length + OldLeft) / Console.WindowWidth - 0.0001)
-                OldTop -= Times
-            End If
-            If Top = Console.BufferHeight - 1 Then
-                Dim NewLines() As String = Text.SplitNewLines
-                Dim NewLinesLength As Integer = NewLines.Length - 1
-                If NewLinesLength > 0 Then OldTop -= NewLinesLength
-            End If
-            Console.SetCursorPosition(OldLeft, OldTop)
+            'Set the correct old position
+            For i As Integer = 1 To Text.Length
+                If Text(i - 1) = Convert.ToChar(10) And TopSeekPosition < Console.BufferHeight - 1 Then
+                    TopSeekPosition += 1
+                ElseIf Text(i - 1) <> Convert.ToChar(10) Then
+                    'Simulate seeking through text
+                    LeftSeekPosition += 1
+                    If LeftSeekPosition >= Console.WindowWidth Then
+                        'We've reached end of line
+                        LeftSeekPosition = 0
+
+                        'Get down by one line
+                        TopSeekPosition += 1
+                        If TopSeekPosition > Console.BufferHeight - 1 Then
+                            'We're at the end of buffer! Decrement by one.
+                            TopSeekPosition -= 1
+                        End If
+                    End If
+                End If
+            Next
+            Left = LeftSeekPosition
+            Top = TopSeekPosition
         End Sub
 
         ''' <summary>
