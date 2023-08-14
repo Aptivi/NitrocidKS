@@ -79,22 +79,20 @@ Namespace ConsoleBase
         ''' <param name="Left">The filtered left position</param>
         ''' <param name="Top">The filtered top position</param>
         Public Sub GetFilteredPositions(Text As String, ByRef Left As Integer, ByRef Top As Integer, ParamArray Vars() As Object)
-            'First, get the old cursor positions
-            Dim OldLeft As Integer = Console.CursorLeft
-            Dim OldTop As Integer = Console.CursorTop
-
-            'Second, filter all text from the VT escape sequences
+            'Filter all text from the VT escape sequences
             Text = FilterVTSequences(Text)
 
-            'Third, seek through filtered text (make it seem like it came from Linux by removing CR (\r)), return to the old position, and return the filtered positions
+            'Seek through filtered text (make it seem like it came from Linux by removing CR (\r)), return to the old position, and return the filtered positions
             Text = FormatString(Text, Vars)
-            Text = Text.Replace(Convert.ToChar(13), "")
-            Dim LeftSeekPosition As Integer = OldLeft
-            Dim TopSeekPosition As Integer = OldTop
+            Text = Text.Replace(Convert.ToString(Convert.ToChar(13)), "")
+            Dim LeftSeekPosition As Integer = Console.CursorLeft
+            Dim TopSeekPosition As Integer = Console.CursorTop
+
+            'Set the correct old position
             For i As Integer = 1 To Text.Length
-                'If we spotted a new line character, get down by one line.
                 If Text(i - 1) = Convert.ToChar(10) And TopSeekPosition < Console.BufferHeight - 1 Then
                     TopSeekPosition += 1
+                    LeftSeekPosition = 0
                 ElseIf Text(i - 1) <> Convert.ToChar(10) Then
                     'Simulate seeking through text
                     LeftSeekPosition += 1
@@ -113,9 +111,6 @@ Namespace ConsoleBase
             Next
             Left = LeftSeekPosition
             Top = TopSeekPosition
-
-            'Finally, set the correct old position
-            Console.SetCursorPosition(OldLeft, OldTop)
         End Sub
 
         ''' <summary>
