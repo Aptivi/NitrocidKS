@@ -313,7 +313,7 @@ Namespace Files
             'Return the resulting list immediately if not sorted. Otherwise, sort it.
             If Sorted And Not FilesystemEntries.Count = 0 Then
                 'We define the max string length for the largest size. This is to overcome the limitation of sorting when it comes to numbers.
-                Dim MaxLength As Integer = FilesystemEntries.Max(Function(x) If(TryCast(x, FileInfo) IsNot Nothing, TryCast(x, FileInfo).Length, 0).ToString.Length)
+                Dim MaxLength As Integer = FilesystemEntries.Max(Function(x) If(TryCast(x, FileInfo) IsNot Nothing, TryCast(x, FileInfo).Length.GetDigits(), 1))
 
                 'Select whether or not to sort descending.
                 Select Case SortDirection
@@ -324,6 +324,11 @@ Namespace Files
                 End Select
             End If
             Return FilesystemEntries
+        End Function
+
+        <Extension>
+        Private Function GetDigits(Number As Long) As Integer
+            Return If(Number = 0, 1, Convert.ToInt32(Math.Log10(Math.Abs(Number)) + 1))
         End Function
 
         ''' <summary>
