@@ -1357,6 +1357,12 @@ Public Module ToolPrompts
                 VariantValue = Console.ReadLine
                 If NeutralizePaths Then AnswerString = NeutralizePath(AnswerString)
                 Wdbg("I", "User answered {0}", VariantValue)
+            ElseIf KeyType = SettingsKeyType.SBoolean Then
+                If KeyValue Then
+                    AnswerString = "2"
+                Else
+                    AnswerString = "1"
+                End If
             ElseIf Not KeyType = SettingsKeyType.SVariant Then
                 If KeyType = SettingsKeyType.SList Then
 #Disable Warning BC42104
