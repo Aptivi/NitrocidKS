@@ -294,10 +294,6 @@ Public Module KernelTools
         CPUList.Clear()
         Wdbg("I", "All hardware reset")
 
-        'Release RAM used
-        DisposeAll()
-        Wdbg("I", "Garbage collector finished")
-
         'Disconnect all hosts from remote debugger
         StartRDebugThread(False)
         Wdbg("I", "Remote debugger stopped")
@@ -478,34 +474,6 @@ Public Module KernelTools
         ElseIf IsNothing(AvailableUpdates) Then
             W(DoTranslation("Failed to check for updates.", currentLang), True, ColTypes.Err)
         End If
-    End Sub
-
-    Private Declare Function SetProcessWorkingSetSize Lib "kernel32.dll" (ByVal hProcess As IntPtr, ByVal dwMinimumWorkingSetSize As Int32, ByVal dwMaximumWorkingSetSize As Int32) As Int32
-
-    ''' <summary>
-    ''' Disposes all unused memory.
-    ''' </summary>
-    Public Sub DisposeAll()
-
-        Try
-            Dim proc As Process = GetCurrentProcess()
-            Wdbg("I", "Before garbage collection: {0} bytes", proc.PrivateMemorySize64)
-            Wdbg("I", "Garbage collector starting... Max generators: {0}", GC.MaxGeneration.ToString)
-            GC.Collect()
-            GC.WaitForPendingFinalizers()
-            If EnvironmentOSType.Contains("NT") Then
-                SetProcessWorkingSetSize(GetCurrentProcess().Handle, -1, -1)
-            End If
-            Wdbg("I", "After garbage collection: {0} bytes", proc.PrivateMemorySize64)
-            proc.Dispose()
-            EventManager.RaiseGarbageCollected()
-        Catch ex As Exception
-            W(DoTranslation("Error trying to free RAM: {0} - Continuing...", currentLang), True, ColTypes.Err, ex.Message)
-            If DebugMode = True Then
-                W(ex.StackTrace, True, ColTypes.Neutral) : Wdbg("Error freeing RAM: {0}", ex.Message) : WStkTrc(ex)
-            End If
-        End Try
-
     End Sub
 
     Sub FactoryReset()

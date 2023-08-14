@@ -71,7 +71,6 @@ Public Module Shell
                         Console.SetOut(DefConsoleOut)
                     End If
                     CommandPromptWrite()
-                    DisposeAll()
 
                     'Set an input color
                     Wdbg("I", "ColoredShell is {0}", ColoredShell)

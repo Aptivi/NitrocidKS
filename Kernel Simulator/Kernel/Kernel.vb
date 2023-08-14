@@ -140,7 +140,6 @@ Public Module Kernel
                 End If
 
                 'Initialize login prompt
-                DisposeAll()
                 If LoginFlag = True And maintenance = False Then
                     LoginPrompt()
                 ElseIf LoginFlag = True And maintenance = True Then

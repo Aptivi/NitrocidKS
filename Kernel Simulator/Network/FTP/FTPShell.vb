@@ -90,9 +90,6 @@ Public Module FTPShell
                 End If
             End If
 
-            'Run garbage collector
-            DisposeAll()
-
             'Set input color
             W("", False, ColTypes.Input)
 

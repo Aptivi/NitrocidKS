@@ -27,11 +27,4 @@ Imports KS
         Assert.IsNotNull(FetchKernelUpdates, "Can't fetch kernel updates. Make sure that your Internet connection is available. Returned null.")
     End Sub
 
-    ''' <summary>
-    ''' Tests garbage collection
-    ''' </summary>
-    <TestMethod()> Public Sub TestGarbageCollect()
-        DisposeAll()
-    End Sub
-
 End Class

@@ -93,8 +93,6 @@ Module TestGetCommand
             CPUList.Clear()
             RAMList.Clear()
             StartProbing()
-        ElseIf Cmd = "garbage" Then
-            DisposeAll()
         ElseIf Cmd = "panic" Then 'Usage: panic <ErrorType> <Reboot> <RebootTime> <Description>
             Dim EType As Char = FullArgsQ(0)
             Dim Reboot As Boolean = FullArgsQ(1)
