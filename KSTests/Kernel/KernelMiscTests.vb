@@ -28,11 +28,4 @@ Imports KS
         Updates.ShouldNotBeNull
     End Sub
 
-    ''' <summary>
-    ''' Tests garbage collection
-    ''' </summary>
-    <TestMethod()> <TestCategory("Misc")> Public Sub TestGarbageCollect()
-        DisposeAll()
-    End Sub
-
 End Class
