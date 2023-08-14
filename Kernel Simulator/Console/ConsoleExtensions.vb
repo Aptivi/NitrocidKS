@@ -89,6 +89,7 @@ Namespace ConsoleBase
             For i As Integer = 1 To Text.Length
                 If Text(i - 1) = Convert.ToChar(10) And TopSeekPosition < Console.BufferHeight - 1 Then
                     TopSeekPosition += 1
+                    LeftSeekPosition = 0
                 ElseIf Text(i - 1) <> Convert.ToChar(10) Then
                     'Simulate seeking through text
                     LeftSeekPosition += 1
