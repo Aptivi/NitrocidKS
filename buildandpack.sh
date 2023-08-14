@@ -68,7 +68,7 @@ fi
 # Pack binary
 echo Packing binary...
 find . -type f -iname \*.nupkg -delete >> ~/tmp/buildandpack.log
-"$rarpath" a -ep1 -r -m5 ~/tmp/$ksversion-bin.rar "Kernel Simulator/KSBuild/" >> ~/tmp/buildandpack.log
+"$rarpath" a -ep1 -r -m5 ~/tmp/$ksversion-bin.rar "Kernel Simulator/KSBuild/net48/" >> ~/tmp/buildandpack.log
 if [ ! $? == 0 ]; then
 	echo Packing using rar failed.
 	exit 1
