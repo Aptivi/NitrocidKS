@@ -480,55 +480,6 @@ Public Module KernelTools
         End If
     End Sub
 
-    Function GetCompileDate() As DateTime 'Always successful, no need to put Try Catch
-        'Variables and Constants
-        Const Offset As Integer = 60 : Const LTOff As Integer = 8
-        Dim asmByte(2047) As Byte : Dim asmStream As Stream
-        Dim codePath As Assembly = Assembly.GetExecutingAssembly
-
-        'Get compile date
-        asmStream = New FileStream(Path.GetFullPath(codePath.Location), FileMode.Open, FileAccess.Read)
-        asmStream.Read(asmByte, 0, 2048)
-        If Not asmStream Is Nothing Then asmStream.Close()
-
-        'We are almost there
-        Dim i64 As Integer = BitConverter.ToInt32(asmByte, Offset)
-        Dim compileseconds As Integer = BitConverter.ToInt32(asmByte, i64 + LTOff)
-        Dim dt As New DateTime(1970, 1, 1, 0, 0, 0)
-        dt = dt.AddSeconds(compileseconds)
-        dt = dt.AddHours(TimeZone.CurrentTimeZone.GetUtcOffset(dt).Hours)
-
-        'Now return compile date
-        Return dt
-    End Function
-#If SPECIFIER = "DEV" Then
-    Function GetCompileDate(ByVal Asm As Assembly) As DateTime 'Only exists in development version.
-        Dim dt As New DateTime(1970, 1, 1, 0, 0, 0)
-        Try
-            'Variables and Constants
-            Const Offset As Integer = 60 : Const LTOff As Integer = 8
-            Dim asmByte(2047) As Byte : Dim asmStream As Stream
-            Dim codePath As Assembly = Asm
-
-            'Get compile date
-            asmStream = New FileStream(Path.GetFullPath(codePath.Location), FileMode.Open, FileAccess.Read)
-            asmStream.Read(asmByte, 0, 2048)
-            If Not asmStream Is Nothing Then asmStream.Close()
-
-            'We are almost there
-            Dim i64 As Integer = BitConverter.ToInt32(asmByte, Offset)
-            Dim compileseconds As Integer = BitConverter.ToInt32(asmByte, i64 + LTOff)
-            dt = dt.AddSeconds(compileseconds)
-            dt = dt.AddHours(TimeZone.CurrentTimeZone.GetUtcOffset(dt).Hours)
-        Catch ex As Exception
-            W(DoTranslation("Error while trying to get compile date of assembly {0}: {1}", currentLang), True, ColTypes.Err, Asm.CodeBase, ex.Message)
-        End Try
-
-        'Now return compile date
-        Return dt
-    End Function
-#End If
-
     Private Declare Function SetProcessWorkingSetSize Lib "kernel32.dll" (ByVal hProcess As IntPtr, ByVal dwMinimumWorkingSetSize As Int32, ByVal dwMaximumWorkingSetSize As Int32) As Int32
 
     ''' <summary>
