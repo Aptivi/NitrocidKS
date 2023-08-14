@@ -119,8 +119,6 @@ Module TestGetCommand
                     End If
                 Case "probehw"
                     StartProbing()
-                Case "garbage"
-                    DisposeAll()
                 Case "panic"
                     If RequiredArgumentsProvided Then
                         Dim EType As Char = FullArgsQ(0)

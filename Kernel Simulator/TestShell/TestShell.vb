@@ -31,7 +31,6 @@ Module TestShell
                                                                                   {"printsepcolorf", New CommandInfo("printsepcolorf", ShellCommandType.TestShell, DoTranslation("Prints a separator with color and format support"), True, 3)},
                                                                                   {"testevent", New CommandInfo("testevent", ShellCommandType.TestShell, DoTranslation("Tests raising the specific event"), True, 1)},
                                                                                   {"probehw", New CommandInfo("probehw", ShellCommandType.TestShell, DoTranslation("Tests probing the hardware"), False, 0)},
-                                                                                  {"garbage", New CommandInfo("garbage", ShellCommandType.TestShell, DoTranslation("Tests the garbage collector"), False, 0)},
                                                                                   {"panic", New CommandInfo("panic", ShellCommandType.TestShell, DoTranslation("Tests the kernel error facility"), True, 4)},
                                                                                   {"panicf", New CommandInfo("panicf", ShellCommandType.TestShell, DoTranslation("Tests the kernel error facility with format support"), True, 5)},
                                                                                   {"translate", New CommandInfo("translate", ShellCommandType.TestShell, DoTranslation("Tests translating a string that exists in resources to specific language"), True, 2)},

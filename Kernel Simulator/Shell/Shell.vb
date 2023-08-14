@@ -164,7 +164,6 @@ Public Module Shell
                         Console.SetOut(DefConsoleOut)
                     End If
                     CommandPromptWrite()
-                    DisposeAll()
 
                     'Wait for command
                     Wdbg("I", "Waiting for command")

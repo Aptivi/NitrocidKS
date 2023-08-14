@@ -113,9 +113,6 @@ Public Module FTPShell
                     End If
                 End If
 
-                'Run garbage collector
-                DisposeAll()
-
                 'Try to connect if IP address is specified.
                 If Connects Then
                     Wdbg("I", $"Currently connecting to {Address} by ""ftp (address)""...")
