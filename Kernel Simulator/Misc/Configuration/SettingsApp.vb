@@ -409,6 +409,13 @@ Namespace Misc.Configuration
                             If NeutralizePaths Then VariantValue = NeutralizePath(VariantValue, NeutralizeRootPath)
                             Wdbg(DebugLevel.I, "User answered {0}", VariantValue)
                         End If
+                    ElseIf KeyType = SettingsKeyType.SBoolean Then
+                        If GetValue(KeyVar) Then
+                            AnswerString = "2"
+                        Else
+                            AnswerString = "1"
+                        End If
+                        Wdbg(DebugLevel.I, "User answered {0}", AnswerString)
                     ElseIf Not KeyType = SettingsKeyType.SVariant And Not KeyType = SettingsKeyType.SColor Then
                         If KeyType = SettingsKeyType.SList Then
                             Write("> ", False, ColTypes.Input)
