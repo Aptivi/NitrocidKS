@@ -16,6 +16,7 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Imports KS.Files.Operations
 Imports KS.Files.Read
 Imports System.IO
 
@@ -29,6 +30,7 @@ Namespace Misc.Writers.DebugWriters
         ''' </summary>
         Public Sub CheckForDebugQuotaExceed()
             Try
+                MakeFile(GetKernelPath(KernelPathType.Debugging), False)
                 Dim FInfo As New FileInfo(GetKernelPath(KernelPathType.Debugging))
                 Dim OldSize As Double = FInfo.Length
                 If OldSize > DebugQuota Then
