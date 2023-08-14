@@ -387,7 +387,6 @@ Namespace Kernel
             If ShowAppInfoOnBoot And Not EnableSplash Then
                 WriteSeparator(DoTranslation("App information"), True, ColTypes.Stage)
                 TextWriterColor.Write("OS: " + DoTranslation("Running on {0}"), True, ColTypes.Neutral, Environment.OSVersion.ToString)
-                TextWriterColor.Write("KS: " + DoTranslation("Built in {0}"), True, ColTypes.Neutral, Render(GetCompileDate()))
             End If
 
             'Show dev version notice
@@ -487,33 +486,6 @@ Namespace Kernel
                 ReportProgress(DoTranslation("Failed to check for updates."), 10, ColTypes.Error)
             End If
         End Sub
-
-        ''' <summary>
-        ''' Gets the Kernel Simulator compilation date.
-        ''' </summary>
-        Function GetCompileDate() As Date
-            'Variables and constants
-            Const Offset As Integer = 60
-            Const LTOff As Integer = 8
-            Dim asmByte(2047) As Byte
-            Dim asmStream As Stream
-            Dim codePath As Assembly = Assembly.GetExecutingAssembly
-
-            'Get compile date
-            asmStream = New FileStream(Path.GetFullPath(codePath.Location), FileMode.Open, FileAccess.Read)
-            asmStream.Read(asmByte, 0, 2048)
-            If asmStream IsNot Nothing Then asmStream.Close()
-
-            'We are almost there
-            Dim i64 As Integer = BitConverter.ToInt32(asmByte, Offset)
-            Dim compileseconds As Integer = BitConverter.ToInt32(asmByte, i64 + LTOff)
-            Dim dt As New DateTime(1970, 1, 1, 0, 0, 0)
-            dt = dt.AddSeconds(compileseconds)
-            dt = dt.AddHours(TimeZone.CurrentTimeZone.GetUtcOffset(dt).Hours)
-
-            'Now return compile date
-            Return dt
-        End Function
 
         ''' <summary>
         ''' Removes all configuration files
