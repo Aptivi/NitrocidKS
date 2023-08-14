@@ -28,6 +28,7 @@ Namespace Misc.Writers.DebugWriters
         ''' </summary>
         Public Sub CheckForDebugQuotaExceed()
             Try
+                MakeFile(GetKernelPath(KernelPathType.Debugging), False)
                 Dim FInfo As New FileInfo(GetKernelPath(KernelPathType.Debugging))
                 Dim OldSize As Double = FInfo.Length
                 If OldSize > DebugQuota Then
