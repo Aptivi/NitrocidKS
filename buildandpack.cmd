@@ -53,7 +53,7 @@ goto :finished
 :packbin
 echo Packing binary...
 del "Kernel Simulator\KSBuild\*.nupkg" >> %temp%/buildandpack.log 2>&1
-"%ProgramFiles%\WinRAR\rar.exe" a -ep1 -r -m5 %temp%/%ksversion%-bin.rar "Kernel Simulator\KSBuild\" >> %temp%/buildandpack.log 2>&1
+"%ProgramFiles%\WinRAR\rar.exe" a -ep1 -r -m5 %temp%/%ksversion%-bin.rar "Kernel Simulator\KSBuild\net48\" >> %temp%/buildandpack.log 2>&1
 if %errorlevel% == 0 goto :packsrc
 echo There was an error trying to pack binary (%errorlevel%).
 goto :finished
