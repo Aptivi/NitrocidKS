@@ -468,6 +468,132 @@
   </table>
   
   
+  <a id="KS_Network_Base_Connections_NetworkConnectionTools_GetConnectionFromIndex_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndex*"></a>
+  <h4 id="KS_Network_Base_Connections_NetworkConnectionTools_GetConnectionFromIndex_System_Int32_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndex(System.Int32)">GetConnectionFromIndex(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the connection from the index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NetworkConnection GetConnectionFromIndex(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Network connection index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Network.Base.Connections.NetworkConnection.html">NetworkConnection</a></td>
+        <td><p>Network connection from the index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_Base_Connections_NetworkConnectionTools_GetConnectionFromIndexSpecific_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific*"></a>
+  <h4 id="KS_Network_Base_Connections_NetworkConnectionTools_GetConnectionFromIndexSpecific_System_Int32_KS_Network_Base_Connections_NetworkConnectionType_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(System.Int32,KS.Network.Base.Connections.NetworkConnectionType)">GetConnectionFromIndexSpecific(Int32, NetworkConnectionType)</h4>
+  <div class="markdown level1 summary"><p>Gets the connection from the index from the specific type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NetworkConnection GetConnectionFromIndexSpecific(int index, NetworkConnectionType connectionType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Network connection index</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.Network.Base.Connections.NetworkConnectionType.html">NetworkConnectionType</a></td>
+        <td><span class="parametername">connectionType</span></td>
+        <td><p>Connection type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Network.Base.Connections.NetworkConnection.html">NetworkConnection</a></td>
+        <td><p>Network connection from the index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="KS_Network_Base_Connections_NetworkConnectionTools_GetConnectionIndex_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndex*"></a>
   <h4 id="KS_Network_Base_Connections_NetworkConnectionTools_GetConnectionIndex_KS_Network_Base_Connections_NetworkConnection_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndex(KS.Network.Base.Connections.NetworkConnection)">GetConnectionIndex(NetworkConnection)</h4>
   <div class="markdown level1 summary"><p>Gets the connection index</p>
@@ -491,6 +617,72 @@
         <td><a class="xref" href="KS.Network.Base.Connections.NetworkConnection.html">NetworkConnection</a></td>
         <td><span class="parametername">connection</span></td>
         <td><p>Network connection to get its index from</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Network connection index starting from zero (0)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_Base_Connections_NetworkConnectionTools_GetConnectionIndexSpecific_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndexSpecific*"></a>
+  <h4 id="KS_Network_Base_Connections_NetworkConnectionTools_GetConnectionIndexSpecific_KS_Network_Base_Connections_NetworkConnection_KS_Network_Base_Connections_NetworkConnectionType_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndexSpecific(KS.Network.Base.Connections.NetworkConnection,KS.Network.Base.Connections.NetworkConnectionType)">GetConnectionIndexSpecific(NetworkConnection, NetworkConnectionType)</h4>
+  <div class="markdown level1 summary"><p>Gets the connection index from the specific type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetConnectionIndexSpecific(NetworkConnection connection, NetworkConnectionType connectionType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Network.Base.Connections.NetworkConnection.html">NetworkConnection</a></td>
+        <td><span class="parametername">connection</span></td>
+        <td><p>Network connection to get its index from</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.Network.Base.Connections.NetworkConnectionType.html">NetworkConnectionType</a></td>
+        <td><span class="parametername">connectionType</span></td>
+        <td><p>Connection type</p>
 </td>
       </tr>
     </tbody>
