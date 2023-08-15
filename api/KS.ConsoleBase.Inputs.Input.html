@@ -375,6 +375,62 @@
   </table>
   
   
+  <a id="KS_ConsoleBase_Inputs_Input_ReadLine_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLine*"></a>
+  <h4 id="KS_ConsoleBase_Inputs_Input_ReadLine_System_String_System_String_TermReaderSettings_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLine(System.String,System.String,TermReaderSettings)">ReadLine(String, String, TermReaderSettings)</h4>
+  <div class="markdown level1 summary"><p>Reads the line from the console</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadLine(string InputText, string DefaultValue, TermReaderSettings settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InputText</span></td>
+        <td><p>Input text to write</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">DefaultValue</span></td>
+        <td><p>Default value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TermReaderSettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>Reader settings</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="KS_ConsoleBase_Inputs_Input_ReadLineNoInput_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineNoInput*"></a>
   <h4 id="KS_ConsoleBase_Inputs_Input_ReadLineNoInput" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineNoInput">ReadLineNoInput()</h4>
   <div class="markdown level1 summary"><p>Reads the next line of characters from the standard input stream without showing input being written by user.</p>
@@ -424,6 +480,56 @@
         <td><span class="xref">System.Char</span></td>
         <td><span class="parametername">MaskChar</span></td>
         <td><p>Specifies the password mask character</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_ConsoleBase_Inputs_Input_ReadLineNoInput_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineNoInput*"></a>
+  <h4 id="KS_ConsoleBase_Inputs_Input_ReadLineNoInput_System_Char_TermReaderSettings_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineNoInput(System.Char,TermReaderSettings)">ReadLineNoInput(Char, TermReaderSettings)</h4>
+  <div class="markdown level1 summary"><p>Reads the next line of characters from the standard input stream without showing input being written by user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadLineNoInput(char MaskChar, TermReaderSettings settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">MaskChar</span></td>
+        <td><p>Specifies the password mask character</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TermReaderSettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>Reader settings</p>
 </td>
       </tr>
     </tbody>
@@ -515,6 +621,100 @@
   </table>
   
   
+  <a id="KS_ConsoleBase_Inputs_Input_ReadLineNoInputUnsafe_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineNoInputUnsafe*"></a>
+  <h4 id="KS_ConsoleBase_Inputs_Input_ReadLineNoInputUnsafe_System_Char_TermReaderSettings_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineNoInputUnsafe(System.Char,TermReaderSettings)">ReadLineNoInputUnsafe(Char, TermReaderSettings)</h4>
+  <div class="markdown level1 summary"><p>Reads the next line of characters from the standard input stream without showing input being written by user unsafely. This doesn't wait until the screensaver lock mode is released.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadLineNoInputUnsafe(char MaskChar, TermReaderSettings settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">MaskChar</span></td>
+        <td><p>Specifies the password mask character</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TermReaderSettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>Reader settings</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_ConsoleBase_Inputs_Input_ReadLineNoInputUnsafe_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineNoInputUnsafe*"></a>
+  <h4 id="KS_ConsoleBase_Inputs_Input_ReadLineNoInputUnsafe_TermReaderSettings_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineNoInputUnsafe(TermReaderSettings)">ReadLineNoInputUnsafe(TermReaderSettings)</h4>
+  <div class="markdown level1 summary"><p>Reads the next line of characters from the standard input stream without showing input being written by user unsafely. This doesn't wait until the screensaver lock mode is released.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadLineNoInputUnsafe(TermReaderSettings settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TermReaderSettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>Reader settings</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="KS_ConsoleBase_Inputs_Input_ReadLineUnsafe_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineUnsafe*"></a>
   <h4 id="KS_ConsoleBase_Inputs_Input_ReadLineUnsafe_System_String_System_String_System_Boolean_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineUnsafe(System.String,System.String,System.Boolean)">ReadLineUnsafe(String, String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Reads the line from the console unsafely. This doesn't wait until the screensaver lock mode is released.</p>
@@ -550,6 +750,68 @@
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">OneLineWrap</span></td>
         <td><p>Whether to wrap the input to one line</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_ConsoleBase_Inputs_Input_ReadLineUnsafe_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineUnsafe*"></a>
+  <h4 id="KS_ConsoleBase_Inputs_Input_ReadLineUnsafe_System_String_System_String_System_Boolean_TermReaderSettings_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineUnsafe(System.String,System.String,System.Boolean,TermReaderSettings)">ReadLineUnsafe(String, String, Boolean, TermReaderSettings)</h4>
+  <div class="markdown level1 summary"><p>Reads the line from the console unsafely. This doesn't wait until the screensaver lock mode is released.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadLineUnsafe(string InputText, string DefaultValue, bool OneLineWrap = false, TermReaderSettings settings = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InputText</span></td>
+        <td><p>Input text to write</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">DefaultValue</span></td>
+        <td><p>Default value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">OneLineWrap</span></td>
+        <td><p>Whether to wrap the input to one line</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TermReaderSettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>Reader settings</p>
 </td>
       </tr>
     </tbody>
@@ -670,6 +932,62 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">DefaultValue</span></td>
         <td><p>Default value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_ConsoleBase_Inputs_Input_ReadLineWrapped_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineWrapped*"></a>
+  <h4 id="KS_ConsoleBase_Inputs_Input_ReadLineWrapped_System_String_System_String_TermReaderSettings_" data-uid="KS.ConsoleBase.Inputs.Input.ReadLineWrapped(System.String,System.String,TermReaderSettings)">ReadLineWrapped(String, String, TermReaderSettings)</h4>
+  <div class="markdown level1 summary"><p>Reads the line from the console (wrapped to one line)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadLineWrapped(string InputText, string DefaultValue, TermReaderSettings settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InputText</span></td>
+        <td><p>Input text to write</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">DefaultValue</span></td>
+        <td><p>Default value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TermReaderSettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>Reader settings</p>
 </td>
       </tr>
     </tbody>
