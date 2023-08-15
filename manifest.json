@@ -1305,19 +1305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Interactive.FileManagerCli.html",
-          "hash": "aluoC65975y0brAWMey9SkHfc+jOgkF6nmUd2UwCJnE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Interactive.FileManagerCliColors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Interactive.FileManagerCliColors.html",
-          "hash": "WKdSN2HS1yjiIMpXpnl27tZ/Sz8hv0xby4nfLenuOe4="
+          "hash": "aTC1swjW5GMminJcQscLmAZP+shSOh7d1t/1+95IdVw="
         }
       },
       "is_incremental": false,
@@ -1329,7 +1317,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Interactive.html",
-          "hash": "5ZF85fjZUknd24fd1tqghb43cD9rStnI8uPV9tMxSd8="
+          "hash": "L+tXtaSVgrK8drHXN7O+4atc8dMQzT8XsStGVpUSYpo="
         }
       },
       "is_incremental": false,
@@ -1761,7 +1749,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Instances.KernelMainConfig.html",
-          "hash": "/JX4mv1xguMGvONKJwEhJMZNkhjUbVMOIeJiCA3U5OU="
+          "hash": "Q1JcRDaVEgXWipcaIHzY+WA7s6irHZ6H5Y044ufxNvI="
         }
       },
       "is_incremental": false,
@@ -2253,19 +2241,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Threading.Interactive.TaskManagerCli.html",
-          "hash": "E4qzEbr1f2cUB7yCkXEH/y9o2iVlc7B6wZIlZjMnElM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Threading.Interactive.TaskManagerCliColors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Threading.Interactive.TaskManagerCliColors.html",
-          "hash": "qrIQIotWtHgLgqm8WrqDcs2SOqBap2WwmYzT6X5o8VI="
+          "hash": "kSPcPtvpfn0HWVAEwIlv1t8TV7zq3N+L8i1AQC0TDfA="
         }
       },
       "is_incremental": false,
@@ -2277,7 +2253,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Threading.Interactive.html",
-          "hash": "k/N0hWVky1aQ0QAa7TIvfXwBxpgn85Eg4UHd4p8t91A="
+          "hash": "m5PyMcY/9nw5+odz7UgOzAqKXQ7G9Jqm2shoSFRu98o="
         }
       },
       "is_incremental": false,
@@ -3197,23 +3173,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Contacts.Interactive.ContactManagerCliColors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Contacts.Interactive.ContactManagerCliColors.html",
-          "hash": "kRKNzgEoCk54y2i/9XbPOYn334p0roDEGhc9aI4HE+M="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Contacts.Interactive.ContactsManagerCli.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Contacts.Interactive.ContactsManagerCli.html",
-          "hash": "FvbihE2N1L1igvyvmQe1zD21sGiwhNvDbBbsEN2Gmx0="
+          "hash": "e1ZKuuFWnUlKWSDWUVPNPLW46ibBEp6dARiyg0BkH1M="
         }
       },
       "is_incremental": false,
@@ -3225,7 +3189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Contacts.Interactive.html",
-          "hash": "XgSOs9VFfJiJEdb1u+1rvEc6Ij0WHda0TdHa00qfphs="
+          "hash": "0a396O6DRIIz1+of6cfFavEz8CivIKGFqcMOoEwxpmQ="
         }
       },
       "is_incremental": false,
@@ -8985,7 +8949,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "kv3Mzg83ObHOWhQhN+2jYjay915Xly5+OZqoe6fm130="
+          "hash": "KmbeTMW8aBPVR10VMZkD3x4wOn4uvqYevPy21GiaVgQ="
         }
       },
       "is_incremental": false,
@@ -9058,7 +9022,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 747,
+          "total_file_count": 744,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
