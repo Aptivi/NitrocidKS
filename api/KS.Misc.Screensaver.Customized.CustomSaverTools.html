@@ -101,14 +101,14 @@
   </h3>
   
   
-  <a id="KS_Misc_Screensaver_Customized_CustomSaverTools_AddCustomSaverToSettings_" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.AddCustomSaverToSettings*"></a>
-  <h4 id="KS_Misc_Screensaver_Customized_CustomSaverTools_AddCustomSaverToSettings_System_String_" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.AddCustomSaverToSettings(System.String)">AddCustomSaverToSettings(String)</h4>
-  <div class="markdown level1 summary"><p>Adds a custom screensaver to settings</p>
+  <a id="KS_Misc_Screensaver_Customized_CustomSaverTools_RegisterCustomScreensaver_" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.RegisterCustomScreensaver*"></a>
+  <h4 id="KS_Misc_Screensaver_Customized_CustomSaverTools_RegisterCustomScreensaver_System_String_KS_Misc_Screensaver_BaseScreensaver_" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.RegisterCustomScreensaver(System.String,KS.Misc.Screensaver.BaseScreensaver)">RegisterCustomScreensaver(String, BaseScreensaver)</h4>
+  <div class="markdown level1 summary"><p>Registers a custom screensaver</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AddCustomSaverToSettings(string CustomSaver)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RegisterCustomScreensaver(string name, BaseScreensaver screensaver)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -122,22 +122,28 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">CustomSaver</span></td>
-        <td><p>A custom saver</p>
+        <td><span class="parametername">name</span></td>
+        <td><p>Screensaver name to register</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.Misc.Screensaver.BaseScreensaver.html">BaseScreensaver</a></td>
+        <td><span class="parametername">screensaver</span></td>
+        <td><p>Base screensaver containing custom screensaver</p>
 </td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="KS_Misc_Screensaver_Customized_CustomSaverTools_GetCustomSaverSettings_" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.GetCustomSaverSettings*"></a>
-  <h4 id="KS_Misc_Screensaver_Customized_CustomSaverTools_GetCustomSaverSettings_System_String_System_String_" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.GetCustomSaverSettings(System.String,System.String)">GetCustomSaverSettings(String, String)</h4>
-  <div class="markdown level1 summary"><p>Gets custom saver settings</p>
+  <a id="KS_Misc_Screensaver_Customized_CustomSaverTools_UnregisterCustomScreensaver_" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.UnregisterCustomScreensaver*"></a>
+  <h4 id="KS_Misc_Screensaver_Customized_CustomSaverTools_UnregisterCustomScreensaver_System_String_" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.UnregisterCustomScreensaver(System.String)">UnregisterCustomScreensaver(String)</h4>
+  <div class="markdown level1 summary"><p>Unregisters a custom screensaver</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static object GetCustomSaverSettings(string CustomSaver, string SaverSetting)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void UnregisterCustomScreensaver(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -151,138 +157,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">CustomSaver</span></td>
-        <td><p>A custom saver</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">SaverSetting</span></td>
-        <td><p>A saver setting</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><p>Saver setting value if successful; nothing if unsuccessful.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Misc_Screensaver_Customized_CustomSaverTools_InitializeCustomSaverSettings_" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.InitializeCustomSaverSettings*"></a>
-  <h4 id="KS_Misc_Screensaver_Customized_CustomSaverTools_InitializeCustomSaverSettings" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.InitializeCustomSaverSettings">InitializeCustomSaverSettings()</h4>
-  <div class="markdown level1 summary"><p>Initializes and reads the custom saver settings</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void InitializeCustomSaverSettings()</code></pre>
-  </div>
-  
-  
-  <a id="KS_Misc_Screensaver_Customized_CustomSaverTools_RemoveCustomSaverFromSettings_" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.RemoveCustomSaverFromSettings*"></a>
-  <h4 id="KS_Misc_Screensaver_Customized_CustomSaverTools_RemoveCustomSaverFromSettings_System_String_" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.RemoveCustomSaverFromSettings(System.String)">RemoveCustomSaverFromSettings(String)</h4>
-  <div class="markdown level1 summary"><p>Removes a custom screensaver from settings</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RemoveCustomSaverFromSettings(string CustomSaver)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">CustomSaver</span></td>
-        <td><p>A custom saver</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="KS_Misc_Screensaver_Customized_CustomSaverTools_SaveCustomSaverSettings_" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.SaveCustomSaverSettings*"></a>
-  <h4 id="KS_Misc_Screensaver_Customized_CustomSaverTools_SaveCustomSaverSettings" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.SaveCustomSaverSettings">SaveCustomSaverSettings()</h4>
-  <div class="markdown level1 summary"><p>Saves the custom saver settings</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SaveCustomSaverSettings()</code></pre>
-  </div>
-  
-  
-  <a id="KS_Misc_Screensaver_Customized_CustomSaverTools_SetCustomSaverSettings_" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.SetCustomSaverSettings*"></a>
-  <h4 id="KS_Misc_Screensaver_Customized_CustomSaverTools_SetCustomSaverSettings_System_String_System_String_System_Object_" data-uid="KS.Misc.Screensaver.Customized.CustomSaverTools.SetCustomSaverSettings(System.String,System.String,System.Object)">SetCustomSaverSettings(String, String, Object)</h4>
-  <div class="markdown level1 summary"><p>Sets custom saver settings</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool SetCustomSaverSettings(string CustomSaver, string SaverSetting, object Value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">CustomSaver</span></td>
-        <td><p>A custom saver</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">SaverSetting</span></td>
-        <td><p>A saver setting</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">Value</span></td>
-        <td><p>Value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if successful; False if unsuccessful.</p>
+        <td><span class="parametername">name</span></td>
+        <td><p>Screensaver name to unregister</p>
 </td>
       </tr>
     </tbody>
