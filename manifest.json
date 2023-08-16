@@ -77,23 +77,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Arguments.ArgumentBase.ProvidedArgumentArgumentsInfo.html",
-          "hash": "OdErn+sQio/iv61BkNkRfSNqqJc5Hfi4wURtRvtf+v8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Arguments.ArgumentBase.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Arguments.ArgumentBase.html",
-          "hash": "4KbBiDkiP+hdmRe7vVRplO+rgEVjDx2SMudQBiVSkFI="
+          "hash": "osAIA+Pi8VG7Ne5WD/dDdZP+nTvAwNUj02L+sSNnO48="
         }
       },
       "is_incremental": false,
@@ -2037,7 +2025,19 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.KernelErrorException.html",
-          "hash": "/UaQFStYHnYqaEvowdO7qAnxZeumK8w3mhI8p+D11Zk="
+          "hash": "jKXyfxA+4r+cLa4Ybxa9Buovw6oPU3zCl4kWllzCsgs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Exceptions.KernelErrorLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Exceptions.KernelErrorLevel.html",
+          "hash": "AX8NhbecAhbBMbFMLFgdn8387AtB64mp0A19S/rMPuI="
         }
       },
       "is_incremental": false,
@@ -2073,7 +2073,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Exceptions.html",
-          "hash": "0dBvMh/eh+inVZQKkgPX074DbVvXEX/CAlBhXl8gOs4="
+          "hash": "4oIsJzqIoqhT9FGML1OusCTvrnYmuYw+Fotrr+SAm5E="
         }
       },
       "is_incremental": false,
@@ -2158,18 +2158,6 @@
         ".html": {
           "relative_path": "api/KS.Kernel.Journaling.html",
           "hash": "NXSM9k+LaiDda+z+f5eQchnOCtNcRHXW5q3W9AezSM0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.KernelErrorLevel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.KernelErrorLevel.html",
-          "hash": "3+cxfa3qmYV0jMirgGGACaKqwJEi5Oh2POhEDWTsepw="
         }
       },
       "is_incremental": false,
@@ -2277,7 +2265,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Threading.ThreadManager.html",
-          "hash": "vtehlo1V/6FOD4J2bByglUlRezfGHQsEnR7DrK5d1ho="
+          "hash": "8TGQWZaXoZgU6jwdehnYscxoC1ALs37iyOR3gjyhmMA="
         }
       },
       "is_incremental": false,
@@ -2517,7 +2505,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.html",
-          "hash": "Ck0NKZzV+lJNvPwluipzybAwERkMwYPfEzo0C+9d9kE="
+          "hash": "zjT+SyMpLtekQWB4cZf819nduF01zg7KLC3LGiaVuhA="
         }
       },
       "is_incremental": false,
@@ -3777,7 +3765,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Reflection.IntegerTools.html",
-          "hash": "e9jFDEMuXhjsmJA4Kpn5U1Yn3TDKcTjJ1+L+fqH2AF8="
+          "hash": "kpJrqsKY4XtDaFSzzvAVay3E/M9qfPz0v/FLZ0C/6y0="
         }
       },
       "is_incremental": false,
@@ -7625,6 +7613,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.html",
+          "hash": "mmaUSSlYjDoxpr5tB7UHR/Kbk0HU8tz/TiuHshj9cnA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html",
+          "hash": "QCFxUjH8iAsXsdX1RuU2V+kUz0v1AmC2GeRaSzPUbRs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Commands.ArgumentsParsers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Commands.ArgumentsParsers.html",
+          "hash": "xpjFI+E9GUv+uVQ0o7aadobXiWQIIFga+TFdjsyCTec="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.Commands.BaseCommand.yml",
       "output": {
         ".html": {
@@ -7745,18 +7769,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Commands.ProvidedCommandArgumentsInfo.html",
-          "hash": "9Qop3pWcEHZuoWE/aFuNzW0vWtMUBtJ7Vuf4f8hk9qo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.Commands.SwitchInfo.yml",
       "output": {
         ".html": {
@@ -7785,7 +7797,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.html",
-          "hash": "7l0CzszsvfEqVFI7qIfuGe6mobcTkVKOy1TlK59q51Q="
+          "hash": "sM3J3nj9a9WZfJJFno1+wERWWZsAPwlE0wR57bix5Gk="
         }
       },
       "is_incremental": false,
@@ -8949,7 +8961,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "KmbeTMW8aBPVR10VMZkD3x4wOn4uvqYevPy21GiaVgQ="
+          "hash": "wxcdxBiIhprfNJxwMN3KSdTZyO22cPH72ZL24W/cg8k="
         }
       },
       "is_incremental": false,
@@ -9022,7 +9034,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 744,
+          "total_file_count": 745,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
