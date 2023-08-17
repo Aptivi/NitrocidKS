@@ -602,7 +602,7 @@
   "api/KS.Files.Operations.html": {
     "href": "api/KS.Files.Operations.html",
     "title": "Namespace KS.Files.Operations | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Files.Operations Classes Combination Combination file operations module Copying Copying file operations module Making Making file operations module Manipulation Miscellaneous file manipulation routines Moving Moving file operations module Removing Removing file operations module"
+    "keywords": "Namespace KS.Files.Operations Classes Combination Combination file operations module Copying Copying file operations module Making Making file operations module Manipulation Miscellaneous file manipulation routines Moving Moving file operations module Opening Routines related to opening the files Removing Removing file operations module"
   },
   "api/KS.Files.Operations.Making.html": {
     "href": "api/KS.Files.Operations.Making.html",
@@ -618,6 +618,11 @@
     "href": "api/KS.Files.Operations.Moving.html",
     "title": "Class Moving | Nitrocid KS API - Aptivi",
     "keywords": "Class Moving Moving file operations module Inheritance System.Object Moving Namespace : KS.Files.Operations Assembly : Nitrocid.dll Syntax public static class Moving : object Methods MoveDirectory(String, String) Moves the directory from source to destination Declaration public static void MoveDirectory(string Source, string Destination) Parameters Type Name Description System.String Source Source directory System.String Destination Target directory MoveDirectory(String, String, Boolean) Moves the directory from source to destination Declaration public static void MoveDirectory(string Source, string Destination, bool ShowProgress) Parameters Type Name Description System.String Source Source directory System.String Destination Target directory System.Boolean ShowProgress Whether or not to show what files are being moved MoveFileOrDir(String, String) Moves a file or directory Declaration public static void MoveFileOrDir(string Source, string Destination) Parameters Type Name Description System.String Source Source file or directory System.String Destination Target file or directory TryMoveFileOrDir(String, String) Moves a file or directory Declaration public static bool TryMoveFileOrDir(string Source, string Destination) Parameters Type Name Description System.String Source Source file or directory System.String Destination Target file or directory Returns Type Description System.Boolean True if successful; False if unsuccessful"
+  },
+  "api/KS.Files.Operations.Opening.html": {
+    "href": "api/KS.Files.Operations.Opening.html",
+    "title": "Class Opening | Nitrocid KS API - Aptivi",
+    "keywords": "Class Opening Routines related to opening the files Inheritance System.Object Opening Namespace : KS.Files.Operations Assembly : Nitrocid.dll Syntax public static class Opening : object Methods OpenEditor(String, Boolean, Boolean, Boolean) Opens the editor deterministically Declaration public static void OpenEditor(string path, bool forceText = false, bool forceJson = false, bool forceHex = false) Parameters Type Name Description System.String path A path to any file that exists System.Boolean forceText System.Boolean forceJson System.Boolean forceHex"
   },
   "api/KS.Files.Operations.Removing.html": {
     "href": "api/KS.Files.Operations.Removing.html",
