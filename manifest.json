@@ -785,11 +785,59 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.DebugLogger.BaseDebugLoggerDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.DebugLogger.BaseDebugLoggerDriver.html",
+          "hash": "VRWonAKuhFH3whwPv3SBLKvl4r8mCBji56K8E4zyNBU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.DebugLogger.DebugLoggerDriverTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.DebugLogger.DebugLoggerDriverTools.html",
+          "hash": "m/CTAYkxGMFXPT1yFqwR0lPNcMKf5VxVDmWt94HwR70="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.DebugLogger.IDebugLoggerDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.DebugLogger.IDebugLoggerDriver.html",
+          "hash": "eIGfTxU5YGErGhDD+jibokiOIpYKxP/Gjhd4IQB+7EI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.DebugLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.DebugLogger.html",
+          "hash": "CQm5soFrz7AaTpYbrJaX/Bf8mxFy0+S1xHZg8LhHHT8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.DriverHandler.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.DriverHandler.html",
-          "hash": "M42fb8ND/xT/5Ny1cd+nl7hSIdrqGp9tz1hL4RkWggw="
+          "hash": "FlIL+72Jn16V9Cfhhgbk1Vlun++V9mZA1WWxRzinTZc="
         }
       },
       "is_incremental": false,
@@ -801,7 +849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.DriverTypes.html",
-          "hash": "NyT5h4D7nnnb/dJfPJaJrzM9CoRdYpdqTicFib7tiM0="
+          "hash": "0nL90WASm1bT1leAH/u16tTeFfIudMXHY9LYuCFA+EA="
         }
       },
       "is_incremental": false,
@@ -8937,7 +8985,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "lDZ0LzHj8oufqly2W6zRfLCTpiW/lAD3VW9ni3ZYUrw="
+          "hash": "pRcKdFxVHpMXhsWJh+SBS+dD5HQPl0l2Y4oKpkCkE8E="
         }
       },
       "is_incremental": false,
@@ -9010,7 +9058,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 743,
+          "total_file_count": 747,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
