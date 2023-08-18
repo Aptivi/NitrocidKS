@@ -102,13 +102,13 @@
   
   
   <a id="KS_Network_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_" data-uid="KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial*"></a>
-  <h4 id="KS_Network_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_System_String_System_Int32_KS_Network_SpeedDial_SpeedDialType_System_Boolean_System_Object___" data-uid="KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,KS.Network.SpeedDial.SpeedDialType,System.Boolean,System.Object[])">AddEntryToSpeedDial(String, Int32, SpeedDialType, Boolean, Object[])</h4>
+  <h4 id="KS_Network_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_System_String_System_Int32_KS_Network_Base_Connections_NetworkConnectionType_System_Boolean_System_Object___" data-uid="KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType,System.Boolean,System.Object[])">AddEntryToSpeedDial(String, Int32, NetworkConnectionType, Boolean, Object[])</h4>
   <div class="markdown level1 summary"><p>Adds an entry to speed dial</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AddEntryToSpeedDial(string Address, int Port, SpeedDialType SpeedDialType, bool ThrowException = true, params object[] arguments)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AddEntryToSpeedDial(string Address, int Port, NetworkConnectionType SpeedDialType, bool ThrowException = true, params object[] arguments)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -133,7 +133,60 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="KS.Network.SpeedDial.SpeedDialType.html">SpeedDialType</a></td>
+        <td><a class="xref" href="KS.Network.Base.Connections.NetworkConnectionType.html">NetworkConnectionType</a></td>
+        <td><span class="parametername">SpeedDialType</span></td>
+        <td><p>Speed dial type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ThrowException</span></td>
+        <td><p>Optionally throw exception</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>List of arguments to pass to the entry</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_" data-uid="KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial*"></a>
+  <h4 id="KS_Network_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_System_String_System_Int32_System_String_System_Boolean_System_Object___" data-uid="KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])">AddEntryToSpeedDial(String, Int32, String, Boolean, Object[])</h4>
+  <div class="markdown level1 summary"><p>Adds an entry to speed dial</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddEntryToSpeedDial(string Address, int Port, string SpeedDialType, bool ThrowException = true, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Address</span></td>
+        <td><p>A speed dial address</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Port</span></td>
+        <td><p>A speed dial port</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">SpeedDialType</span></td>
         <td><p>Speed dial type</p>
 </td>
@@ -233,14 +286,102 @@
   </table>
   
   
+  <a id="KS_Network_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_" data-uid="KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType*"></a>
+  <h4 id="KS_Network_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_KS_Network_Base_Connections_NetworkConnectionType_" data-uid="KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(KS.Network.Base.Connections.NetworkConnectionType)">ListSpeedDialEntriesByType(NetworkConnectionType)</h4>
+  <div class="markdown level1 summary"><p>Lists all speed dial entries by type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, JToken&gt; ListSpeedDialEntriesByType(NetworkConnectionType SpeedDialType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Network.Base.Connections.NetworkConnectionType.html">NetworkConnectionType</a></td>
+        <td><span class="parametername">SpeedDialType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">JToken</span>&gt;</td>
+        <td><p>A list</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_" data-uid="KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType*"></a>
+  <h4 id="KS_Network_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_System_String_" data-uid="KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(System.String)">ListSpeedDialEntriesByType(String)</h4>
+  <div class="markdown level1 summary"><p>Lists all speed dial entries by type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, JToken&gt; ListSpeedDialEntriesByType(string SpeedDialType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SpeedDialType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">JToken</span>&gt;</td>
+        <td><p>A list</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="KS_Network_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_" data-uid="KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial*"></a>
-  <h4 id="KS_Network_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_System_String_System_Int32_KS_Network_SpeedDial_SpeedDialType_System_Boolean_System_Object___" data-uid="KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,KS.Network.SpeedDial.SpeedDialType,System.Boolean,System.Object[])">TryAddEntryToSpeedDial(String, Int32, SpeedDialType, Boolean, Object[])</h4>
+  <h4 id="KS_Network_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_System_String_System_Int32_KS_Network_Base_Connections_NetworkConnectionType_System_Boolean_System_Object___" data-uid="KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType,System.Boolean,System.Object[])">TryAddEntryToSpeedDial(String, Int32, NetworkConnectionType, Boolean, Object[])</h4>
   <div class="markdown level1 summary"><p>Adds an entry to speed dial</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryAddEntryToSpeedDial(string Address, int Port, SpeedDialType SpeedDialType, bool ThrowException = true, params object[] arguments)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryAddEntryToSpeedDial(string Address, int Port, NetworkConnectionType SpeedDialType, bool ThrowException = true, params object[] arguments)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -265,7 +406,76 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="KS.Network.SpeedDial.SpeedDialType.html">SpeedDialType</a></td>
+        <td><a class="xref" href="KS.Network.Base.Connections.NetworkConnectionType.html">NetworkConnectionType</a></td>
+        <td><span class="parametername">SpeedDialType</span></td>
+        <td><p>Speed dial type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ThrowException</span></td>
+        <td><p>Optionally throw exception</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>List of arguments to pass to the entry</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if successful; False if unsuccessful</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Network_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_" data-uid="KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial*"></a>
+  <h4 id="KS_Network_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_System_String_System_Int32_System_String_System_Boolean_System_Object___" data-uid="KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])">TryAddEntryToSpeedDial(String, Int32, String, Boolean, Object[])</h4>
+  <div class="markdown level1 summary"><p>Adds an entry to speed dial</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryAddEntryToSpeedDial(string Address, int Port, string SpeedDialType, bool ThrowException = true, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Address</span></td>
+        <td><p>A speed dial address</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Port</span></td>
+        <td><p>A speed dial port</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">SpeedDialType</span></td>
         <td><p>Speed dial type</p>
 </td>
