@@ -1809,7 +1809,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html",
-          "hash": "srB6FaluniWwmFsmAKzYM+TH2DGPHLliAy/FvrpCf5s="
+          "hash": "/PZiqq60dh+JdC3TgiqN/Aqb7VrAwW4HVz2npIncwqA="
         }
       },
       "is_incremental": false,
@@ -3065,6 +3065,54 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.SquareCorner.SquareCorner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.SquareCorner.SquareCorner.html",
+          "hash": "4n1XWf7jp5rWQ/i1bIV5LE5hX1bVJFdW1G8s333vN9k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.SquareCorner.SquareCornerDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.SquareCorner.SquareCornerDirection.html",
+          "hash": "vleSvDSxbzi8GRou3hCNfSoA4vaw6H1u8u2ajEaGWE8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.SquareCorner.SquareCornerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.SquareCorner.SquareCornerSettings.html",
+          "hash": "LYRiHGj/5jN6RQ6bfrNvqHB4fyOhungRjAYQQovMc0c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Animations.SquareCorner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Animations.SquareCorner.html",
+          "hash": "POMG3DVTeXl5iwUHKCMp6fijgE7JzpV/aW5ZUtHdXzY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Archive.ArchiveTools.yml",
       "output": {
         ".html": {
@@ -3873,7 +3921,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.BaseScreensaver.html",
-          "hash": "dT3w59doegHskrkCj0/bmKS8AtIlmA4jUi5nzKrAYXc="
+          "hash": "cwjSwtQ3TeVYgqeYCH0Nw5NjwHaq8z1aJV5RYYiMtLE="
         }
       },
       "is_incremental": false,
@@ -5213,6 +5261,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.SquareCornerDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.SquareCornerDisplay.html",
+          "hash": "9CETiLdGqsn35uEPemID557whMFHCfJpVIQRthie0uY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.SquareCornerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.SquareCornerSettings.html",
+          "hash": "xtTbchehjog/tA87hLw2+QYOSsVUk3fmAn2TBIcFfHA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.Displays.StackBoxDisplay.yml",
       "output": {
         ".html": {
@@ -5397,7 +5469,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.html",
-          "hash": "RT0Juptd5oOuutzR+JD1x3MFZdz44IerFEBY2hyKgsU="
+          "hash": "qkJO7XrFI2ILI5PY/66hZv96D0f3JJRRVIqYTObNT9U="
         }
       },
       "is_incremental": false,
@@ -8997,7 +9069,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "37b8Ysgq3IVwDmp3TuVYQ7v34IG0xSJnyQo5Hx07GHs="
+          "hash": "uV5Remq+POYMOCiV/a+NTCjeI8lsKpbCkc8RbCjCA2w="
         }
       },
       "is_incremental": false,
@@ -9070,7 +9142,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 748,
+          "total_file_count": 754,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
