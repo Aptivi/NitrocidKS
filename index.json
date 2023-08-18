@@ -622,7 +622,7 @@
   "api/KS.Files.Operations.Opening.html": {
     "href": "api/KS.Files.Operations.Opening.html",
     "title": "Class Opening | Nitrocid KS API - Aptivi",
-    "keywords": "Class Opening Routines related to opening the files Inheritance System.Object Opening Namespace : KS.Files.Operations Assembly : Nitrocid.dll Syntax public static class Opening : object Methods OpenEditor(String, Boolean, Boolean, Boolean) Opens the editor deterministically Declaration public static void OpenEditor(string path, bool forceText = false, bool forceJson = false, bool forceHex = false) Parameters Type Name Description System.String path A path to any file that exists System.Boolean forceText System.Boolean forceJson System.Boolean forceHex"
+    "keywords": "Class Opening Routines related to opening the files Inheritance System.Object Opening Namespace : KS.Files.Operations Assembly : Nitrocid.dll Syntax public static class Opening : object Methods OpenEditor(String, Boolean, Boolean, Boolean) Opens the editor deterministically Declaration public static void OpenEditor(string path, bool forceText = false, bool forceJson = false, bool forceHex = false) Parameters Type Name Description System.String path A path to any file that exists System.Boolean forceText Forces text shell System.Boolean forceJson Forces JSON shell System.Boolean forceHex Forces hex shell"
   },
   "api/KS.Files.Operations.Removing.html": {
     "href": "api/KS.Files.Operations.Removing.html",
