@@ -6353,11 +6353,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SSH.SSH.ConnectionType.yml",
+      "source_relative_path": "api/KS.Network.SSH.SSHTools.ConnectionType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Network.SSH.SSH.ConnectionType.html",
-          "hash": "2T9XfSQ7EDuUcyStohQCMhF/Lv1ii33Dd4Pu2HC0iT0="
+          "relative_path": "api/KS.Network.SSH.SSHTools.ConnectionType.html",
+          "hash": "pWyzuQiiiUg1XPVi8ljAnu5DXIiR0aGyVsahjp8pojQ="
         }
       },
       "is_incremental": false,
@@ -6365,11 +6365,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SSH.SSH.yml",
+      "source_relative_path": "api/KS.Network.SSH.SSHTools.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Network.SSH.SSH.html",
-          "hash": "TudT+uPeDyagMPUGHI91tdYoE7gbuN8ZAhwVD9rXSyI="
+          "relative_path": "api/KS.Network.SSH.SSHTools.html",
+          "hash": "2uvh1o615LFGPSlMgaSQf3/eAh0J1f3DwEiXLwGnTZo="
         }
       },
       "is_incremental": false,
@@ -6381,7 +6381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.SSH.html",
-          "hash": "8uH1XCiUMoTPHVRyFp0U7UQcSZx1h9xpMxcBVQmT9HU="
+          "hash": "qzFiOYkD8KzJnUWR2miZjcJaOe1pIj3VaTI4kfj5MO8="
         }
       },
       "is_incremental": false,
@@ -9081,7 +9081,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ag7owPo75EhkPJA1qtrv9NIUYEy05unLWZq/DrJ1XUY="
+          "hash": "12VQzmurhk37Oirho+R6uwzjBsrb955FdX5vj+xlSMY="
         }
       },
       "is_incremental": false,
