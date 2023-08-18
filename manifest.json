@@ -5597,6 +5597,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Splash.Splashes.BaseSplash.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Splash.Splashes.BaseSplash.html",
+          "hash": "MgEKIj+ZOmeVZ8SSdBhj/1ccM63P+I55/8FMBtflMzM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Splash.Splashes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Splash.Splashes.html",
+          "hash": "XIMtyR1LQwb/2k6iz8PCWFpIcyM/iJbLqLjPV5q42H8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Splash.yml",
       "output": {
         ".html": {
@@ -9069,7 +9093,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "uV5Remq+POYMOCiV/a+NTCjeI8lsKpbCkc8RbCjCA2w="
+          "hash": "NzFQ2XVIarSc1COHDkH2xjrolUtkvou49URaoJT5SCA="
         }
       },
       "is_incremental": false,
@@ -9142,7 +9166,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 754,
+          "total_file_count": 756,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
