@@ -1809,7 +1809,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html",
-          "hash": "/PZiqq60dh+JdC3TgiqN/Aqb7VrAwW4HVz2npIncwqA="
+          "hash": "aRDT/QnEGYVc2bluxTNklNyz7O4YtVegdTIOh8L5wII="
         }
       },
       "is_incremental": false,
@@ -3921,7 +3921,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.BaseScreensaver.html",
-          "hash": "cwjSwtQ3TeVYgqeYCH0Nw5NjwHaq8z1aJV5RYYiMtLE="
+          "hash": "K2V68e3O0hXvXuN227AHJU1OPq8qb0WAWjOnSiGgtXc="
         }
       },
       "is_incremental": false,
@@ -4997,6 +4997,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.NumberScatterDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.NumberScatterDisplay.html",
+          "hash": "UOsM3klGOusT7RpmvkfZDN3OHKgzUX4UGU0dec1GUFI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.NumberScatterSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.NumberScatterSettings.html",
+          "hash": "+CW1avP1KxNajDH/fXuV7hq/Bs8McLO6QPKcrNZ/FNk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.Displays.PersonLookupDisplay.yml",
       "output": {
         ".html": {
@@ -5469,7 +5493,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.html",
-          "hash": "qkJO7XrFI2ILI5PY/66hZv96D0f3JJRRVIqYTObNT9U="
+          "hash": "iNiqiswPl2T72btxkAXDvUsbxE8hDdBc75COnDkxieI="
         }
       },
       "is_incremental": false,
@@ -9081,7 +9105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "12VQzmurhk37Oirho+R6uwzjBsrb955FdX5vj+xlSMY="
+          "hash": "dk7AzGMAnwfUklsp5y51x5q096utKeHnkmooAmRg7JM="
         }
       },
       "is_incremental": false,
@@ -9154,7 +9178,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 755,
+          "total_file_count": 757,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
