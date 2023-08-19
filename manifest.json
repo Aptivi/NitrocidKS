@@ -5513,18 +5513,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.ScreensaverDisplayer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.ScreensaverDisplayer.html",
-          "hash": "JGrytaQCfmlgSZb0WJWBZeXXm7j3aaQfIHtJB5mMhjs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.ScreensaverManager.yml",
       "output": {
         ".html": {
@@ -5541,7 +5529,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.html",
-          "hash": "JHS9WrIdamFLKSb7QoC3YdZCIQcUEbYI+gvBn+zZcVk="
+          "hash": "rzoI4Q7YQ4YT9HrDME8UqiEGI73qMFiSmCUEBdsoxkM="
         }
       },
       "is_incremental": false,
@@ -9105,7 +9093,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "dk7AzGMAnwfUklsp5y51x5q096utKeHnkmooAmRg7JM="
+          "hash": "LdBYRD8fXnk7t7cnIxb/OCPpyxs6xWiVpJzd7Jegb04="
         }
       },
       "is_incremental": false,
@@ -9178,7 +9166,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 757,
+          "total_file_count": 756,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
