@@ -207,6 +207,17 @@
   </h3>
   
   
+  <a id="KS_Misc_Splash_SplashManager_BeginSplashOut_" data-uid="KS.Misc.Splash.SplashManager.BeginSplashOut*"></a>
+  <h4 id="KS_Misc_Splash_SplashManager_BeginSplashOut" data-uid="KS.Misc.Splash.SplashManager.BeginSplashOut">BeginSplashOut()</h4>
+  <div class="markdown level1 summary"><p>Clears the screen for important messages to show up during kernel booting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BeginSplashOut()</code></pre>
+  </div>
+  
+  
   <a id="KS_Misc_Splash_SplashManager_CloseSplash_" data-uid="KS.Misc.Splash.SplashManager.CloseSplash*"></a>
   <h4 id="KS_Misc_Splash_SplashManager_CloseSplash" data-uid="KS.Misc.Splash.SplashManager.CloseSplash">CloseSplash()</h4>
   <div class="markdown level1 summary"><p>Closes the splash screen</p>
@@ -274,6 +285,17 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="KS_Misc_Splash_SplashManager_EndSplashOut_" data-uid="KS.Misc.Splash.SplashManager.EndSplashOut*"></a>
+  <h4 id="KS_Misc_Splash_SplashManager_EndSplashOut" data-uid="KS.Misc.Splash.SplashManager.EndSplashOut">EndSplashOut()</h4>
+  <div class="markdown level1 summary"><p>Declares that it's done showing important messages during kernel booting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EndSplashOut()</code></pre>
+  </div>
   
   
   <a id="KS_Misc_Splash_SplashManager_GetNamesOfSplashes_" data-uid="KS.Misc.Splash.SplashManager.GetNamesOfSplashes*"></a>
@@ -512,6 +534,70 @@
   
   
   <a id="KS_Misc_Splash_SplashManager_PreviewSplash_" data-uid="KS.Misc.Splash.SplashManager.PreviewSplash*"></a>
+  <h4 id="KS_Misc_Splash_SplashManager_PreviewSplash_KS_Misc_Splash_ISplash_System_Boolean_" data-uid="KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.ISplash,System.Boolean)">PreviewSplash(ISplash, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Previews the splash by name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PreviewSplash(ISplash splash, bool splashOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Misc.Splash.ISplash.html">ISplash</a></td>
+        <td><span class="parametername">splash</span></td>
+        <td><p>Splash name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">splashOut</span></td>
+        <td><p>Whether to test out the important messages on splash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Splash_SplashManager_PreviewSplash_" data-uid="KS.Misc.Splash.SplashManager.PreviewSplash*"></a>
+  <h4 id="KS_Misc_Splash_SplashManager_PreviewSplash_System_Boolean_" data-uid="KS.Misc.Splash.SplashManager.PreviewSplash(System.Boolean)">PreviewSplash(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Previews the splash by name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PreviewSplash(bool splashOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">splashOut</span></td>
+        <td><p>Whether to test out the important messages on splash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Splash_SplashManager_PreviewSplash_" data-uid="KS.Misc.Splash.SplashManager.PreviewSplash*"></a>
   <h4 id="KS_Misc_Splash_SplashManager_PreviewSplash_System_String_" data-uid="KS.Misc.Splash.SplashManager.PreviewSplash(System.String)">PreviewSplash(String)</h4>
   <div class="markdown level1 summary"><p>Previews the splash by name</p>
 </div>
@@ -534,6 +620,41 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">splashName</span></td>
         <td><p>Splash name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KS_Misc_Splash_SplashManager_PreviewSplash_" data-uid="KS.Misc.Splash.SplashManager.PreviewSplash*"></a>
+  <h4 id="KS_Misc_Splash_SplashManager_PreviewSplash_System_String_System_Boolean_" data-uid="KS.Misc.Splash.SplashManager.PreviewSplash(System.String,System.Boolean)">PreviewSplash(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Previews the splash by name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PreviewSplash(string splashName, bool splashOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">splashName</span></td>
+        <td><p>Splash name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">splashOut</span></td>
+        <td><p>Whether to test out the important messages on splash.</p>
 </td>
       </tr>
     </tbody>
