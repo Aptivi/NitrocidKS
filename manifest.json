@@ -1365,7 +1365,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.KernelPathType.html",
-          "hash": "eb6Ufyk0Cuq7j+X76mdbGcOPb20NLVB8wFIafKCtOoM="
+          "hash": "coQTCYVmj4/qQRN1i1ipPqlgs5DImKmkp/a1sRqiLYs="
         }
       },
       "is_incremental": false,
@@ -1545,7 +1545,7 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Paths.html",
-          "hash": "hmaxXSPdpOBNlZh3ue6BND+v715C0JLyTAdMBaDeolE="
+          "hash": "WSnO8HLmI+Ilrmg5C7CD6oIWwOhLoAxgNPHZAraK+no="
         }
       },
       "is_incremental": false,
@@ -5729,6 +5729,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.ToDoList.ToDoManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.ToDoList.ToDoManager.html",
+          "hash": "ZVyMBSoHtnr0wY1nWCcMSgpVMiYm551ywp4eHpPUkQs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.ToDoList.ToDoTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.ToDoList.ToDoTask.html",
+          "hash": "ji77uBdyvbfSlKpv/zlQ2EljGAOV4rgAywlDKX9l0zM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.ToDoList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.ToDoList.html",
+          "hash": "gZx/q8ldbPUKYlC0V+fzktCWJm3A/bZ85TYcTXxormk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Modifications.IMod.yml",
       "output": {
         ".html": {
@@ -9093,7 +9129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "LdBYRD8fXnk7t7cnIxb/OCPpyxs6xWiVpJzd7Jegb04="
+          "hash": "DL0sXKFJlloXz7s4dz7VFqTonjsljBIQleDnQ0LXVBQ="
         }
       },
       "is_incremental": false,
@@ -9166,7 +9202,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 756,
+          "total_file_count": 759,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
