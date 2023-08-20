@@ -1116,26 +1116,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Interactive.FileManagerCli.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Interactive.FileManagerCli.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Interactive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Interactive.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Files.KernelPathType.yml",
       "output": {
         ".html": {
@@ -2726,26 +2706,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Contacts.Interactive.ContactsManagerCli.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Contacts.Interactive.ContactsManagerCli.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Contacts.Interactive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Contacts.Interactive.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Contacts.yml",
       "output": {
         ".html": {
@@ -2960,6 +2920,26 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Interactive.InteractiveTuiTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Interactive.Interactives.ContactsManagerCli.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Interactive.Interactives.ContactsManagerCli.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Interactive.Interactives.FileManagerCli.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Interactive.Interactives.FileManagerCli.html"
         }
       },
       "version": ""
@@ -4836,10 +4816,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Modifications.ManPages.Interactive.ManualViewer.yml",
+      "source_relative_path": "api/KS.Modifications.ManPages.Interactive.ManualViewerCli.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Modifications.ManPages.Interactive.ManualViewer.html"
+          "relative_path": "api/KS.Modifications.ManPages.Interactive.ManualViewerCli.html"
         }
       },
       "version": ""
