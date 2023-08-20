@@ -1,23 +1,22 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
+
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class PGPContext
-   | Nitrocid KS API - Aptivi </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class PGPContext
-   | Nitrocid KS API - Aptivi ">
-    <meta name="generator" content="docfx 2.58.9.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PGPContext
+ | Nitrocid KS API - Aptivi </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PGPContext
+ | Nitrocid KS API - Aptivi ">
     
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     
@@ -25,7 +24,7 @@
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -35,7 +34,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
+
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
@@ -49,7 +48,7 @@
             </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -59,7 +58,7 @@
         </div>
       </header>
       <div class="container body-content">
-        
+
         <div id="search-results">
           <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
@@ -69,7 +68,7 @@
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        
+
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
@@ -79,39 +78,384 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="KS.Network.Mail.PGP.PGPContext">
-  
-  
+
+
+
   <h1 id="KS_Network_Mail_PGP_PGPContext" data-uid="KS.Network.Mail.PGP.PGPContext" class="text-break">Class PGPContext
-  </h1>
+</h1>
   <div class="markdown level0 summary"><p>KS PGP context</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">PGPContext</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">CryptographyContext</span></div>
+    <div class="level2"><span class="xref">OpenPgpContext</span></div>
+    <div class="level3"><span class="xref">GnuPGContext</span></div>
+    <div class="level4"><span class="xref">PGPContext</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="KS.Network.Mail.PGP.html">KS.Network.Mail.PGP</a></h6>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">GnuPGContext.GetPublicKeyRing(long, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">GnuPGContext.GetPublicKeyRingAsync(long, CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.EnumeratePublicKeyRings()</span>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.EnumeratePublicKeys()</span>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.EnumeratePublicKeyRings(MailboxAddress)</span>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.EnumeratePublicKeys(MailboxAddress)</span>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.EnumerateSecretKeyRings()</span>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.EnumerateSecretKeys()</span>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.EnumerateSecretKeyRings(MailboxAddress)</span>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.EnumerateSecretKeys(MailboxAddress)</span>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.GetPublicKey(MailboxAddress)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">GnuPGContext.GetPublicKeys(IEnumerable&lt;MailboxAddress&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">GnuPGContext.GetSecretKey(long, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">GnuPGContext.GetSigningKey(MailboxAddress, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">GnuPGContext.CanSign(MailboxAddress, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">GnuPGContext.CanEncrypt(MailboxAddress, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">GnuPGContext.GenerateKeyPair(MailboxAddress, string, DateTime?, EncryptionAlgorithm, SecureRandom)</a>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.SignKey(PgpSecretKey, PgpPublicKey, DigestAlgorithm, OpenPgpKeyCertification)</span>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.SavePublicKeyRingBundle()</span>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.SaveSecretKeyRingBundle()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">GnuPGContext.Import(PgpPublicKeyRing, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">GnuPGContext.Import(PgpPublicKeyRingBundle, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">GnuPGContext.Import(PgpSecretKeyRing, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">GnuPGContext.Import(PgpSecretKeyRingBundle, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">GnuPGContext.Export(IEnumerable&lt;MailboxAddress&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">GnuPGContext.ExportAsync(IEnumerable&lt;MailboxAddress&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">GnuPGContext.Export(IEnumerable&lt;MailboxAddress&gt;, Stream, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">GnuPGContext.ExportAsync(IEnumerable&lt;MailboxAddress&gt;, Stream, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.Delete(PgpPublicKeyRing)</span>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.Delete(PgpSecretKeyRing)</span>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.PublicKeyRingPath</span>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.SecretKeyRingPath</span>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.PublicKeyRingBundle</span>
+    </div>
+    <div>
+      <span class="xref">GnuPGContext.SecretKeyRingBundle</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">OpenPgpContext.GetSecretKeyAsync(long, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.GetPublicKeysAsync(IEnumerable&lt;MailboxAddress&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">OpenPgpContext.GetSigningKeyAsync(MailboxAddress, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">OpenPgpContext.Supports(string)</a>
+    </div>
+    <div>
+      <span class="xref">OpenPgpContext.GetDigestAlgorithmName(DigestAlgorithm)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">OpenPgpContext.GetDigestAlgorithm(string)</a>
+    </div>
+    <div>
+      <span class="xref">OpenPgpContext.IsMatch(PgpPublicKey, MailboxAddress)</span>
+    </div>
+    <div>
+      <span class="xref">OpenPgpContext.IsMatch(PgpSecretKey, MailboxAddress)</span>
+    </div>
+    <div>
+      <span class="xref">OpenPgpContext.IsExpired(PgpPublicKey)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">OpenPgpContext.RetrievePublicKeyRing(long, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">OpenPgpContext.RetrievePublicKeyRingAsync(long, CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">OpenPgpContext.GetPrivateKey(PgpSecretKey)</span>
+    </div>
+    <div>
+      <span class="xref">OpenPgpContext.GetHashAlgorithm(DigestAlgorithm)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">OpenPgpContext.Sign(MailboxAddress, DigestAlgorithm, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">OpenPgpContext.SignAsync(MailboxAddress, DigestAlgorithm, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">OpenPgpContext.Sign(PgpSecretKey, DigestAlgorithm, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">OpenPgpContext.SignAsync(PgpSecretKey, DigestAlgorithm, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">OpenPgpContext.GetDigestAlgorithm(HashAlgorithmTag)</span>
+    </div>
+    <div>
+      <span class="xref">OpenPgpContext.GetPublicKeyAlgorithm(PublicKeyAlgorithmTag)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">OpenPgpContext.Verify(Stream, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">OpenPgpContext.VerifyAsync(Stream, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.Encrypt(IEnumerable&lt;MailboxAddress&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.EncryptAsync(IEnumerable&lt;MailboxAddress&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.Encrypt(EncryptionAlgorithm, IEnumerable&lt;MailboxAddress&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.EncryptAsync(EncryptionAlgorithm, IEnumerable&lt;MailboxAddress&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.Encrypt(EncryptionAlgorithm, IEnumerable&lt;PgpPublicKey&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.EncryptAsync(EncryptionAlgorithm, IEnumerable&lt;PgpPublicKey&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.Encrypt(IEnumerable&lt;PgpPublicKey&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.EncryptAsync(IEnumerable&lt;PgpPublicKey&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.SignAndEncrypt(MailboxAddress, DigestAlgorithm, IEnumerable&lt;MailboxAddress&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.SignAndEncryptAsync(MailboxAddress, DigestAlgorithm, IEnumerable&lt;MailboxAddress&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.SignAndEncrypt(MailboxAddress, DigestAlgorithm, EncryptionAlgorithm, IEnumerable&lt;MailboxAddress&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.SignAndEncryptAsync(MailboxAddress, DigestAlgorithm, EncryptionAlgorithm, IEnumerable&lt;MailboxAddress&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.SignAndEncrypt(PgpSecretKey, DigestAlgorithm, EncryptionAlgorithm, IEnumerable&lt;PgpPublicKey&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.SignAndEncryptAsync(PgpSecretKey, DigestAlgorithm, EncryptionAlgorithm, IEnumerable&lt;PgpPublicKey&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.SignAndEncrypt(PgpSecretKey, DigestAlgorithm, IEnumerable&lt;PgpPublicKey&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.SignAndEncryptAsync(PgpSecretKey, DigestAlgorithm, IEnumerable&lt;PgpPublicKey&gt;, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">OpenPgpContext.DecryptTo(Stream, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">OpenPgpContext.DecryptToAsync(Stream, Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">OpenPgpContext.Decrypt(Stream, out DigitalSignatureCollection, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">OpenPgpContext.Decrypt(Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">OpenPgpContext.DecryptAsync(Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">OpenPgpContext.Import(Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">OpenPgpContext.ImportAsync(Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.Export(IEnumerable&lt;PgpPublicKey&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.ExportAsync(IEnumerable&lt;PgpPublicKey&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">OpenPgpContext.Export(PgpPublicKeyRingBundle, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">OpenPgpContext.ExportAsync(PgpPublicKeyRingBundle, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.Export(IEnumerable&lt;PgpPublicKey&gt;, Stream, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">OpenPgpContext.ExportAsync(IEnumerable&lt;PgpPublicKey&gt;, Stream, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">OpenPgpContext.Export(PgpPublicKeyRingBundle, Stream, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">OpenPgpContext.ExportAsync(PgpPublicKeyRingBundle, Stream, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">OpenPgpContext.Dispose(bool)</a>
+    </div>
+    <div>
+      <span class="xref">OpenPgpContext.DefaultEncryptionAlgorithm</span>
+    </div>
+    <div>
+      <span class="xref">OpenPgpContext.KeyServer</span>
+    </div>
+    <div>
+      <span class="xref">OpenPgpContext.AutoKeyRetrieve</span>
+    </div>
+    <div>
+      <span class="xref">OpenPgpContext.SignatureProtocol</span>
+    </div>
+    <div>
+      <span class="xref">OpenPgpContext.EncryptionProtocol</span>
+    </div>
+    <div>
+      <span class="xref">OpenPgpContext.KeyExchangeProtocol</span>
+    </div>
+    <div>
+      <span class="xref">CryptographyContext.Enable(EncryptionAlgorithm)</span>
+    </div>
+    <div>
+      <span class="xref">CryptographyContext.Disable(EncryptionAlgorithm)</span>
+    </div>
+    <div>
+      <span class="xref">CryptographyContext.IsEnabled(EncryptionAlgorithm)</span>
+    </div>
+    <div>
+      <span class="xref">CryptographyContext.Enable(DigestAlgorithm)</span>
+    </div>
+    <div>
+      <span class="xref">CryptographyContext.Disable(DigestAlgorithm)</span>
+    </div>
+    <div>
+      <span class="xref">CryptographyContext.IsEnabled(DigestAlgorithm)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CryptographyContext.CanSignAsync(MailboxAddress, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CryptographyContext.CanEncryptAsync(MailboxAddress, CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">CryptographyContext.Dispose()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">CryptographyContext.Create(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">CryptographyContext.Register(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">CryptographyContext.Register(Func&lt;SecureMimeContext&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">CryptographyContext.Register(Func&lt;OpenPgpContext&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">CryptographyContext.PrepareBeforeSigning</span>
+    </div>
+    <div>
+      <span class="xref">CryptographyContext.EncryptionAlgorithmRank</span>
+    </div>
+    <div>
+      <span class="xref">CryptographyContext.EnabledEncryptionAlgorithms</span>
+    </div>
+    <div>
+      <span class="xref">CryptographyContext.DigestAlgorithmRank</span>
+    </div>
+    <div>
+      <span class="xref">CryptographyContext.EnabledDigestAlgorithms</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.html">KS</a>.<a class="xref" href="KS.Network.html">Network</a>.<a class="xref" href="KS.Network.Mail.html">Mail</a>.<a class="xref" href="KS.Network.Mail.PGP.html">PGP</a></h6>
   <h6><strong>Assembly</strong>: Nitrocid.dll</h6>
   <h5 id="KS_Network_Mail_PGP_PGPContext_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class PGPContext : GnuPGContext</code></pre>
   </div>
   <h3 id="methods">Methods
-  </h3>
-  
-  
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Network_Mail_PGP_PGPContext_GetPasswordForKey_Org_BouncyCastle_Bcpg_OpenPgp_PgpSecretKey_.md&amp;value=---%0Auid%3A%20KS.Network.Mail.PGP.PGPContext.GetPasswordForKey(Org.BouncyCastle.Bcpg.OpenPgp.PgpSecretKey)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Network/Mail/PGP/PGPContext.cs/#L40">View Source</a>
+  </span>
   <a id="KS_Network_Mail_PGP_PGPContext_GetPasswordForKey_" data-uid="KS.Network.Mail.PGP.PGPContext.GetPasswordForKey*"></a>
-  <h4 id="KS_Network_Mail_PGP_PGPContext_GetPasswordForKey_PgpSecretKey_" data-uid="KS.Network.Mail.PGP.PGPContext.GetPasswordForKey(PgpSecretKey)">GetPasswordForKey(PgpSecretKey)</h4>
+  <h4 id="KS_Network_Mail_PGP_PGPContext_GetPasswordForKey_Org_BouncyCastle_Bcpg_OpenPgp_PgpSecretKey_" data-uid="KS.Network.Mail.PGP.PGPContext.GetPasswordForKey(Org.BouncyCastle.Bcpg.OpenPgp.PgpSecretKey)">GetPasswordForKey(PgpSecretKey)</h4>
   <div class="markdown level1 summary"><p>Gets password for secret key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override string GetPasswordForKey(PgpSecretKey key)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -129,7 +473,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -138,19 +482,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><p>Entered Password</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MimeKit.Cryptography.OpenPgpContext.GetPasswordForKey(Org.BouncyCastle.Bcpg.OpenPgp.PgpSecretKey)</span></div>
+
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Network_Mail_PGP_PGPContext.md&amp;value=---%0Auid%3A%20KS.Network.Mail.PGP.PGPContext%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Network/Mail/PGP/PGPContext.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -161,7 +514,7 @@
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -169,14 +522,14 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>
     </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>
