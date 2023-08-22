@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop';
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  zipFileName   = "0.0.24.7-bin.rar"
+  zipFileName   = "0.0.24.8-bin.rar"
 }
 $userProfile = $Env:USERPROFILE
 
