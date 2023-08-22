@@ -35,13 +35,13 @@ Namespace Network.FTP.Commands
                 Write(DoTranslation("Server system:") + " ", False, ColTypes.ListEntry)
                 Write(ClientFTP.ServerOS.ToString, False, ColTypes.ListEntry)
                 Write(DoTranslation("Server encryption mode:") + " ", False, ColTypes.ListEntry)
-                Write(ClientFTP.EncryptionMode.ToString, False, ColTypes.ListEntry)
+                Write(ClientFTP.Config.EncryptionMode.ToString, False, ColTypes.ListEntry)
                 Write(DoTranslation("Server data connection type:") + " ", False, ColTypes.ListEntry)
-                Write(ClientFTP.DataConnectionType.ToString, False, ColTypes.ListEntry)
+                Write(ClientFTP.Config.DataConnectionType.ToString, False, ColTypes.ListEntry)
                 Write(DoTranslation("Server download data type:") + " ", False, ColTypes.ListEntry)
-                Write(ClientFTP.DownloadDataType.ToString, False, ColTypes.ListEntry)
+                Write(ClientFTP.Config.DownloadDataType.ToString, False, ColTypes.ListEntry)
                 Write(DoTranslation("Server upload data type:") + " ", False, ColTypes.ListEntry)
-                Write(ClientFTP.UploadDataType.ToString, False, ColTypes.ListEntry)
+                Write(ClientFTP.Config.UploadDataType.ToString, False, ColTypes.ListEntry)
             Else
                 Write(DoTranslation("You haven't connected to any server yet"), True, ColTypes.Error)
             End If

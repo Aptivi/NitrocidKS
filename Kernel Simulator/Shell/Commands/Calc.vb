@@ -25,7 +25,7 @@ Namespace Shell.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             Try
-                Dim Res As String = SMath.Evaluate(StringArgs)
+                Dim Res As String = MathExpr.op_Implicit(StringArgs).Result
                 Wdbg(DebugLevel.I, "Res = {0}", Res)
                 Write(StringArgs + " = " + Res, True, ColTypes.Neutral)
             Catch ex As Exception

@@ -36,13 +36,13 @@ Namespace Network.FTP
             If ClientFTP Is Nothing Then
                 _clientFTP = New FtpClient With {
                     .Host = Address,
-                    .Port = Port,
-                    .RetryAttempts = FtpVerifyRetryAttempts,
-                    .ConnectTimeout = FtpConnectTimeout,
-                    .DataConnectionConnectTimeout = FtpDataConnectTimeout,
-                    .EncryptionMode = EncryptionMode,
-                    .InternetProtocolVersions = FtpProtocolVersions
+                    .Port = Port
                 }
+                _clientFTP.Config.RetryAttempts = FtpVerifyRetryAttempts
+                _clientFTP.Config.ConnectTimeout = FtpConnectTimeout
+                _clientFTP.Config.DataConnectionConnectTimeout = FtpDataConnectTimeout
+                _clientFTP.Config.EncryptionMode = EncryptionMode
+                _clientFTP.Config.InternetProtocolVersions = FtpProtocolVersions
             End If
 
             'Prompt for password
@@ -83,13 +83,13 @@ Namespace Network.FTP
                     'Make a new FTP client object instance
                     _clientFTP = New FtpClient With {
                         .Host = FtpHost,
-                        .Port = FtpPort,
-                        .RetryAttempts = FtpVerifyRetryAttempts,
-                        .ConnectTimeout = FtpConnectTimeout,
-                        .DataConnectionConnectTimeout = FtpDataConnectTimeout,
-                        .EncryptionMode = FtpEncryptionMode.Auto,
-                        .InternetProtocolVersions = FtpProtocolVersions
+                        .Port = FtpPort
                     }
+                    _clientFTP.Config.RetryAttempts = FtpVerifyRetryAttempts
+                    _clientFTP.Config.ConnectTimeout = FtpConnectTimeout
+                    _clientFTP.Config.DataConnectionConnectTimeout = FtpDataConnectTimeout
+                    _clientFTP.Config.EncryptionMode = FtpEncryptionMode.Auto
+                    _clientFTP.Config.InternetProtocolVersions = FtpProtocolVersions
 
                     'Add handler for SSL validation
                     If FtpTryToValidateCertificate Then AddHandler ClientFTP.ValidateCertificate, New FtpSslValidation(AddressOf TryToValidate)
@@ -203,7 +203,7 @@ Namespace Network.FTP
             Else
                 'Speed dial format is below:
                 'Site,Port,Username,Encryption
-                If FtpNewConnectionsToSpeedDial Then AddEntryToSpeedDial(FtpSite, ClientFTP.Port, FtpUser, SpeedDialType.FTP, ClientFTP.EncryptionMode)
+                If FtpNewConnectionsToSpeedDial Then AddEntryToSpeedDial(FtpSite, ClientFTP.Port, FtpUser, SpeedDialType.FTP, ClientFTP.Config.EncryptionMode)
             End If
         End Sub
 

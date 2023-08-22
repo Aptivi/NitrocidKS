@@ -52,9 +52,9 @@ Namespace Network.FTP.Filesystem
 
                 Try
                     If Path <> "" Then
-                        Listing = ClientFTP.GetListing(Path, FtpListOption.DerefLinks)
+                        Listing = ClientFTP.GetListing(Path)
                     Else
-                        Listing = ClientFTP.GetListing(FtpCurrentRemoteDir, FtpListOption.DerefLinks)
+                        Listing = ClientFTP.GetListing(FtpCurrentRemoteDir)
                     End If
                     For Each DirListFTP As FtpListItem In Listing
                         EntryBuilder.Append($"- {DirListFTP.Name}")

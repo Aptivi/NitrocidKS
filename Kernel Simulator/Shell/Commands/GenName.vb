@@ -29,7 +29,7 @@ Namespace Shell.Commands
             Dim NameSuffix As String = ""
             Dim SurnamePrefix As String = ""
             Dim SurnameSuffix As String = ""
-            Dim NamesList As List(Of String)
+            Dim NamesList As String()
             If ListArgsOnly.Length >= 1 Then NamesCount = Integer.Parse(ListArgsOnly(0))
             If ListArgsOnly.Length >= 2 Then NamePrefix = ListArgsOnly(1)
             If ListArgsOnly.Length >= 3 Then NameSuffix = ListArgsOnly(2)

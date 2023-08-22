@@ -131,7 +131,7 @@ Namespace Misc.Screensaver.Displays
 
             'Generate names
             Dim NumberOfPeople As Integer = RandomDriver.Next(PersonLookupMinimumNames, PersonLookupMaximumNames)
-            Dim NamesToLookup As List(Of String) = GenerateNames(NumberOfPeople)
+            Dim NamesToLookup As String() = GenerateNames(NumberOfPeople)
 
             'Loop through names
             For Each GeneratedName As String In NamesToLookup

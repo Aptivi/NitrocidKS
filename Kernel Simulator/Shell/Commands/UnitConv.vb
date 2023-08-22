@@ -29,7 +29,7 @@ Namespace Shell.Commands
             Dim SourceUnit As String = ListArgsOnly(2)
             Dim TargetUnit As String = ListArgsOnly(3)
             Dim QuantityInfos As QuantityInfo() = Quantity.Infos.Where(Function(x) x.Name = UnitType).ToArray()
-            Dim TargetUnitInstance As [Enum] = UnitParser.Default.Parse(TargetUnit, QuantityInfos(0).UnitType)
+            Dim TargetUnitInstance As [Enum] = UnitsNetSetup.Default.UnitParser.Parse(TargetUnit, QuantityInfos(0).UnitType)
             Dim ConvertedUnit As IQuantity = Quantity.Parse(QuantityInfos(0).ValueType, $"{QuantityNum} {SourceUnit}").ToUnit(TargetUnitInstance)
             Write("- {0} => {1}: ", False, ColTypes.ListEntry, SourceUnit, TargetUnit)
             Write(ConvertedUnit.ToString(CurrentCult.NumberFormat), True, ColTypes.ListValue)
@@ -40,7 +40,7 @@ Namespace Shell.Commands
             For Each QuantityInfo As QuantityInfo In Quantity.Infos
                 Write("- {0}:", True, ColTypes.ListEntry, QuantityInfo.Name)
                 For Each UnitValues As [Enum] In QuantityInfo.UnitInfos().Select(Function(x) x.Value)
-                    Write("  - {0}: ", False, ColTypes.ListEntry, String.Join(", ", UnitAbbreviationsCache.Default.GetDefaultAbbreviation(UnitValues.GetType, Convert.ToInt32(UnitValues))))
+                    Write("  - {0}: ", False, ColTypes.ListEntry, String.Join(", ", UnitsNetSetup.Default.UnitAbbreviations.GetDefaultAbbreviation(UnitValues.GetType, Convert.ToInt32(UnitValues))))
                     Write(UnitValues.ToString(), True, ColTypes.ListValue)
                 Next
             Next
