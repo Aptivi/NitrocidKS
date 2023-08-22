@@ -255,7 +255,7 @@ Public Module HelpSystem
 
         ElseIf command = "ftp" Then
 
-            W(DoTranslation("Usage:", currentLang) + " ftp <server>: " + DoTranslation("Initializes the FTP shell.", currentLang), True, ColTypes.Neutral)
+            W(DoTranslation("Usage:", currentLang) + " ftp [server]: " + DoTranslation("Initializes the FTP shell.", currentLang), True, ColTypes.Neutral)
 
         ElseIf command = "get" Then
 
