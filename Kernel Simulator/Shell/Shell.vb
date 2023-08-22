@@ -140,7 +140,7 @@ Namespace Shell
             {"settings", New CommandInfo("settings", ShellType.Shell, "Changes kernel configuration", New CommandArgumentInfo({"[-saver|-splash]"}, False, 0), New SettingsCommand, True)},
             {"set", New CommandInfo("set", ShellType.Shell, "Sets a variable to a value in a script", New CommandArgumentInfo({"<$variable> <value>"}, True, 2), New SetCommand, False, False, False, False, True)},
             {"setrange", New CommandInfo("setrange", ShellType.Shell, "Creates a variable array with the provided values", New CommandArgumentInfo({"<$variablename> <value1> [value2] [value3] ..."}, True, 2), New SetRangeCommand, False, False, False, False, True)},
-            {"sftp", New CommandInfo("sftp", ShellType.Shell, "Lets you use an SSH FTP server", New CommandArgumentInfo({"<server>"}, False, 0), New SftpCommand)},
+            {"sftp", New CommandInfo("sftp", ShellType.Shell, "Lets you use an SSH FTP server", New CommandArgumentInfo({"[server]"}, False, 0), New SftpCommand)},
             {"shownotifs", New CommandInfo("shownotifs", ShellType.Shell, "Shows all received notifications", New CommandArgumentInfo(Array.Empty(Of String), False, 0), New ShowNotifsCommand)},
             {"showtd", New CommandInfo("showtd", ShellType.Shell, "Shows date and time", New CommandArgumentInfo(Array.Empty(Of String), False, 0), New ShowTdCommand)},
             {"showtdzone", New CommandInfo("showtdzone", ShellType.Shell, "Shows date and time in zones", New CommandArgumentInfo({"[-all] <timezone>"}, True, 1), New ShowTdZoneCommand, False, True)},
