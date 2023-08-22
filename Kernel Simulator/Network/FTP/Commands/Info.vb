@@ -35,13 +35,13 @@ Namespace Network.FTP.Commands
                 TextWriterColor.Write(DoTranslation("Server system:") + " ", False, ColTypes.ListEntry)
                 TextWriterColor.Write(ClientFTP.ServerOS.ToString, False, ColTypes.ListEntry)
                 TextWriterColor.Write(DoTranslation("Server encryption mode:") + " ", False, ColTypes.ListEntry)
-                TextWriterColor.Write(ClientFTP.EncryptionMode.ToString, False, ColTypes.ListEntry)
+                TextWriterColor.Write(ClientFTP.Config.EncryptionMode.ToString, False, ColTypes.ListEntry)
                 TextWriterColor.Write(DoTranslation("Server data connection type:") + " ", False, ColTypes.ListEntry)
-                TextWriterColor.Write(ClientFTP.DataConnectionType.ToString, False, ColTypes.ListEntry)
+                TextWriterColor.Write(ClientFTP.Config.DataConnectionType.ToString, False, ColTypes.ListEntry)
                 TextWriterColor.Write(DoTranslation("Server download data type:") + " ", False, ColTypes.ListEntry)
-                TextWriterColor.Write(ClientFTP.DownloadDataType.ToString, False, ColTypes.ListEntry)
+                TextWriterColor.Write(ClientFTP.Config.DownloadDataType.ToString, False, ColTypes.ListEntry)
                 TextWriterColor.Write(DoTranslation("Server upload data type:") + " ", False, ColTypes.ListEntry)
-                TextWriterColor.Write(ClientFTP.UploadDataType.ToString, False, ColTypes.ListEntry)
+                TextWriterColor.Write(ClientFTP.Config.UploadDataType.ToString, False, ColTypes.ListEntry)
             Else
                 TextWriterColor.Write(DoTranslation("You haven't connected to any server yet"), True, ColTypes.Error)
             End If

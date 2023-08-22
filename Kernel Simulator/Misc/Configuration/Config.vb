@@ -18,7 +18,6 @@
 
 Imports System.Globalization
 Imports System.IO
-Imports Core
 Imports KS.ManPages
 Imports KS.Misc.Forecast
 Imports KS.Misc.Games
@@ -44,6 +43,7 @@ Imports KS.Network.SFTP
 Imports KS.Network.SSH
 Imports KS.Scripting.Interaction
 Imports KS.TestShell
+Imports ManagedWeatherMap.Core
 Imports MimeKit.Text
 Imports Newtonsoft.Json.Linq
 

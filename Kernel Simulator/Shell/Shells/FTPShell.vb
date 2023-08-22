@@ -47,10 +47,6 @@ Namespace Shell.Shells
                         'Complete initialization
                         If FtpInitialized = False Then
                             Wdbg(DebugLevel.I, $"Completing initialization of FTP: {FtpInitialized}")
-                            FtpTrace.AddListener(New FTPTracer)
-                            FtpTrace.LogUserName = FTPLoggerUsername
-                            FtpTrace.LogPassword = False 'Don't remove this, make a config entry for it, or set it to True! It will introduce security problems.
-                            FtpTrace.LogIP = FTPLoggerIP
                             FtpCurrentDirectory = HomePath
                             KernelEventManager.RaiseFTPShellInitialized()
                             SwitchCancellationHandler(ShellType.FTPShell)
