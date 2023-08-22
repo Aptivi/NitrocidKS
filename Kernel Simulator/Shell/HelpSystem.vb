@@ -273,7 +273,7 @@ Public Module HelpSystem
 
         ElseIf command = "ftp" Then
 
-            W(DoTranslation("Usage:") + " ftp <server>: " + DoTranslation("Initializes the FTP shell."), True, ColTypes.Neutral)
+            W(DoTranslation("Usage:") + " ftp [server]: " + DoTranslation("Initializes the FTP shell."), True, ColTypes.Neutral)
 
         ElseIf command = "gettimeinfo" Then
 
