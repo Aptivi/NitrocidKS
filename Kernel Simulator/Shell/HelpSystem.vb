@@ -442,7 +442,7 @@ Public Module HelpSystem
 
         ElseIf command = "sftp" Then
 
-            W(DoTranslation("Usage:") + " sftp <server>: " + DoTranslation("Initializes the SFTP shell."), True, ColTypes.Neutral)
+            W(DoTranslation("Usage:") + " sftp [server]: " + DoTranslation("Initializes the SFTP shell."), True, ColTypes.Neutral)
 
         ElseIf command = "shownotifs" Then
 
