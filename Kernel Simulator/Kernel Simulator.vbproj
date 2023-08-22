@@ -13,7 +13,8 @@
     <TargetFramework>net48</TargetFramework>
     <!-- KS Nuget Information -->
     <PackageId>KS</PackageId>
-    <Version>0.0.12.14</Version>
+    <Version>0.0.12.15</Version>
+    <FileVersion>1.2.12.15</FileVersion>
     <Authors>EoflaOE</Authors>
     <Title>Kernel Simulator</Title>
     <PackageDescription>Simulates our future-planned kernel</PackageDescription>
