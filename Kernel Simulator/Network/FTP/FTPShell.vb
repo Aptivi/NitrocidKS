@@ -61,10 +61,6 @@ Public Module FTPShell
                 'Complete initialization
                 If initialized = False Then
                     Wdbg("I", $"Completing initialization of FTP: {initialized}")
-                    FtpTrace.AddListener(New FTPTracer)
-                    FtpTrace.LogUserName = FTPLoggerUsername
-                    FtpTrace.LogPassword = False 'Don't remove this, make a config entry for it, or set it to True! It will introduce security problems.
-                    FtpTrace.LogIP = FTPLoggerIP
                     currDirect = paths("Home")
                     EventManager.RaiseFTPShellInitialized()
 

@@ -186,15 +186,15 @@ Public Module FTPGetCommand
                 Case "type"
                     If RequiredArgumentsProvided Then
                         If ArgsQ(0).ToLower = "a" Then
-                            ClientFTP.DownloadDataType = FtpDataType.ASCII
-                            ClientFTP.ListingDataType = FtpDataType.ASCII
-                            ClientFTP.UploadDataType = FtpDataType.ASCII
+                            ClientFTP.Config.DownloadDataType = FtpDataType.ASCII
+                            ClientFTP.Config.ListingDataType = FtpDataType.ASCII
+                            ClientFTP.Config.UploadDataType = FtpDataType.ASCII
                             W(DoTranslation("Data type set to ASCII!"), True, ColTypes.Neutral)
                             W(DoTranslation("Beware that most files won't download or upload properly using this mode, so we highly recommend using the Binary mode on most situations."), True, ColTypes.Warning)
                         ElseIf ArgsQ(0).ToLower = "b" Then
-                            ClientFTP.DownloadDataType = FtpDataType.Binary
-                            ClientFTP.ListingDataType = FtpDataType.Binary
-                            ClientFTP.UploadDataType = FtpDataType.Binary
+                            ClientFTP.Config.DownloadDataType = FtpDataType.Binary
+                            ClientFTP.Config.ListingDataType = FtpDataType.Binary
+                            ClientFTP.Config.UploadDataType = FtpDataType.Binary
                             W(DoTranslation("Data type set to Binary!"), True, ColTypes.Neutral)
                         Else
                             W(DoTranslation("Invalid data type."), True, ColTypes.Neutral)

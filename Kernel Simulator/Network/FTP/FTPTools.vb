@@ -33,9 +33,7 @@ Public Module FTPTools
         If ClientFTP Is Nothing Then
             ClientFTP = New FtpClient With {
                             .Host = Address,
-                            .Port = Port,
-                            .RetryAttempts = 3,
-                            .EncryptionMode = EncryptionMode
+                            .Port = Port
                         }
         End If
 
@@ -74,9 +72,7 @@ Public Module FTPTools
                 'Make a new FTP client object instance
                 ClientFTP = New FtpClient With {
                     .Host = FtpHost,
-                    .Port = FtpPort,
-                    .RetryAttempts = 3,
-                    .EncryptionMode = FtpEncryptionMode.Auto
+                    .Port = FtpPort
                 }
 
                 'Add handler for SSL validation
@@ -176,7 +172,7 @@ Public Module FTPTools
         Else
             'Speed dial format is below:
             'Site,Port,Username,Encryption
-            AddEntryToSpeedDial(ftpsite, ClientFTP.Port, user, SpeedDialType.FTP, ClientFTP.EncryptionMode)
+            AddEntryToSpeedDial(ftpsite, ClientFTP.Port, user, SpeedDialType.FTP, "None")
         End If
     End Sub
 
