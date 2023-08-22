@@ -85,7 +85,7 @@ Namespace Shell
             {"fileinfo", New CommandInfo("fileinfo", ShellType.Shell, "Provides information about a file", New CommandArgumentInfo({"<file>"}, True, 1), New FileInfoCommand)},
             {"find", New CommandInfo("find", ShellType.Shell, "Finds a file in the specified directory or in the current directory", New CommandArgumentInfo({"<file> [directory]"}, True, 1), New FindCommand)},
             {"firedevents", New CommandInfo("firedevents", ShellType.Shell, "Lists all fired events", New CommandArgumentInfo(Array.Empty(Of String), False, 0), New FiredEventsCommand)},
-            {"ftp", New CommandInfo("ftp", ShellType.Shell, "Use an FTP shell to interact with servers", New CommandArgumentInfo({"<server>"}, False, 0), New FtpCommand)},
+            {"ftp", New CommandInfo("ftp", ShellType.Shell, "Use an FTP shell to interact with servers", New CommandArgumentInfo({"[server]"}, False, 0), New FtpCommand)},
             {"genname", New CommandInfo("genname", ShellType.Shell, "Name and surname generator", New CommandArgumentInfo({"[namescount] [nameprefix] [namesuffix] [surnameprefix] [surnamesuffix]"}, False, 0), New GenNameCommand)},
             {"gettimeinfo", New CommandInfo("gettimeinfo", ShellType.Shell, "Gets the date and time information", New CommandArgumentInfo({"<date>"}, True, 1), New GetTimeInfoCommand)},
             {"get", New CommandInfo("get", ShellType.Shell, "Downloads a file to current working directory", New CommandArgumentInfo({"<URL>"}, True, 1), New Get_Command)},
