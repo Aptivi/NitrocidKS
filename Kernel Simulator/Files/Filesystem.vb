@@ -417,6 +417,7 @@ Namespace Files
                     Path = Manipulation.ReplaceLastOccurrence(Path, Source, "")
                 End If
             End If
+            Path = IO.Path.GetFullPath(Path).Replace("\", "/")
 
             'If strict, checks for existence of file
             If Strict Then
