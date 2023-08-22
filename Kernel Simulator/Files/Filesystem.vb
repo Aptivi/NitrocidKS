@@ -130,7 +130,7 @@ Public Module Filesystem
     ''' </summary>
     ''' <param name="Path">Target path, be it a file or a folder</param>
     ''' <returns>Absolute path</returns>
-    Public Function NeutralizePath(ByVal Path As String)
+    Public Function NeutralizePath(ByVal Path As String) As String
         Path = Path.Replace("\", "/")
         If (EnvironmentOSType.Contains("Windows") And Not Path.Contains(":/")) Or (EnvironmentOSType.Contains("Unix") And Not Path.StartsWith("/")) Then
             If Not CurrDir.EndsWith("/") Then
@@ -145,6 +145,7 @@ Public Module Filesystem
                 Path = Manipulation.ReplaceLastOccurrence(Path, CurrDir, "")
             End If
         End If
+        Path = IO.Path.GetFullPath(Path).Replace("\", "/")
         Wdbg("I", "Final directory: {0}", Path)
         Return Path
     End Function
@@ -155,7 +156,7 @@ Public Module Filesystem
     ''' <param name="Path">Target path, be it a file or a folder</param>
     ''' <param name="Source">Source path in which the target is found. Must be a directory</param>
     ''' <returns>Absolute path</returns>
-    Public Function NeutralizePath(ByVal Path As String, ByVal Source As String)
+    Public Function NeutralizePath(ByVal Path As String, ByVal Source As String) As String
         Path = Path.Replace("\", "/")
         Source = Source.Replace("\", "/")
         If (EnvironmentOSType.Contains("Windows") And Not Path.Contains(":/")) Or (EnvironmentOSType.Contains("Unix") And Not Path.StartsWith("/")) Then
@@ -171,6 +172,7 @@ Public Module Filesystem
                 Path = Manipulation.ReplaceLastOccurrence(Path, Source, "")
             End If
         End If
+        Path = IO.Path.GetFullPath(Path).Replace("\", "/")
         Wdbg("I", "Final directory: {0}", Path)
         Return Path
     End Function
