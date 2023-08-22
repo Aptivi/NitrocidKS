@@ -292,6 +292,7 @@ Namespace Misc.Screensaver.Displays
             Next
 
             'Reset resize sync
+            CoveredPositions.Clear()
             ResizeSyncing = False
             CurrentWindowWidth = Console.WindowWidth
             CurrentWindowHeight = Console.WindowHeight
