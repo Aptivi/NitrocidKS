@@ -120,7 +120,7 @@ Public Module PermissionManagement
             If UsersLines(i).StartsWith($"{Username},") Then
                 UserLine(2) = adminList(Username)
                 UserLine(3) = disabledList(Username)
-                UsersLines(i) = UserLine.Join(",")
+                UsersLines(i) = String.Join(",", UserLine)
                 Exit For
             End If
         Next
@@ -174,7 +174,7 @@ Public Module PermissionManagement
             If UsersLines(i).StartsWith($"{Username},") Then
                 UserLine(2) = adminList(Username)
                 UserLine(3) = disabledList(Username)
-                UsersLines(i) = UserLine.Join(",")
+                UsersLines(i) = String.Join(",", UserLine)
                 Exit For
             End If
         Next

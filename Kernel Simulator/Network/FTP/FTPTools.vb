@@ -32,9 +32,7 @@ Public Module FTPTools
         If IsNothing(ClientFTP) Then
             ClientFTP = New FtpClient With {
                             .Host = Address,
-                            .Port = Port,
-                            .RetryAttempts = 3,
-                            .EncryptionMode = EncryptionMode
+                            .Port = Port
                         }
         End If
 
@@ -73,19 +71,8 @@ Public Module FTPTools
                 'Make a new FTP client object instance
                 ClientFTP = New FtpClient With {
                     .Host = FtpHost,
-                    .Port = FtpPort,
-                    .RetryAttempts = 3,
-                    .EncryptionMode = FtpEncryptionMode.Explicit
+                    .Port = FtpPort
                 }
-
-                'Get encryption type from address
-                If address.StartsWith("ftp://") Then
-                    ClientFTP.EncryptionMode = FtpEncryptionMode.None
-                ElseIf address.StartsWith("ftps://") Then
-                    ClientFTP.EncryptionMode = FtpEncryptionMode.Implicit
-                ElseIf address.StartsWith("ftpes://") Then
-                    ClientFTP.EncryptionMode = FtpEncryptionMode.Explicit
-                End If
 
                 'Add handler for SSL validation
                 AddHandler ClientFTP.ValidateCertificate, New FtpSslValidation(AddressOf TryToValidate)
@@ -180,7 +167,7 @@ Public Module FTPTools
             'Site,Port,Username,Encryption
             Dim SpeedDialWriter As New StreamWriter(paths("FTPSpeedDial")) With {.AutoFlush = True}
             Wdbg("I", "Opened stream for speed dial.")
-            SpeedDialWriter.WriteLine(ftpsite + "," + CStr(ClientFTP.Port) + "," + user + "," + ClientFTP.EncryptionMode.ToString)
+            SpeedDialWriter.WriteLine(ftpsite + "," + CStr(ClientFTP.Port) + "," + user + ",None")
             Wdbg("I", "Written information to file.")
             SpeedDialWriter.Close()
             Wdbg("I", "Closed stream for speed dial.")

@@ -18,6 +18,7 @@
 
 Imports System.IO
 Imports System.Management
+Imports FluentFTP.Helpers
 Imports Newtonsoft.Json.Linq
 
 Public Module HardwareProbe

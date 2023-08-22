@@ -27,7 +27,7 @@ Module CommandLineArgsParse
     Sub ParseCMDArguments(ByVal arg As String)
         Try
             If Environment.GetCommandLineArgs.Length <> 0 And AvailableCMDLineArgs.Contains(arg) = True Then
-                Dim argArgs As String = Environment.GetCommandLineArgs.Skip(2).ToArray.Join(" ")
+                Dim argArgs As String = String.Join(" ", Environment.GetCommandLineArgs.Skip(2).ToArray)
 
                 'Parse arguments
                 If arg = "testMod" Then

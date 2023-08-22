@@ -19,6 +19,7 @@
 Imports System.IO
 Imports System.Text
 Imports System.Threading
+Imports FluentFTP.Helpers
 Imports Microsoft.VisualBasic.FileIO
 Imports MimeKit
 

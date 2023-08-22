@@ -21,6 +21,7 @@ Imports System.IO
 Imports System.Net.NetworkInformation
 Imports System.Text
 Imports System.Threading
+Imports FluentFTP.Helpers
 Imports Microsoft.VisualBasic.FileIO
 
 Public Module GetCommand

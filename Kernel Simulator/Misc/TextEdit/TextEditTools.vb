@@ -72,7 +72,7 @@ Public Module TextEditTools
             Wdbg("I", "Trying to save file...")
             TextEdit_FileStream.SetLength(0)
             Wdbg("I", "Length set to 0.")
-            Dim FileLinesByte() As Byte = Encoding.Default.GetBytes(TextEdit_FileLines.ToArray.Join(vbNewLine))
+            Dim FileLinesByte() As Byte = Encoding.Default.GetBytes(String.Join(vbNewLine, TextEdit_FileLines.ToArray))
             Wdbg("I", "Converted lines to bytes. Length: {0}", FileLinesByte.Length)
             TextEdit_FileStream.Write(FileLinesByte, 0, FileLinesByte.Length)
             TextEdit_FileStream.Flush()

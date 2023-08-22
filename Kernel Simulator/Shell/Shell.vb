@@ -215,7 +215,7 @@ Public Module Shell
                         StartCommandThread.Join()
                     ElseIf File.Exists(Path.GetFullPath(CurrDir + "/" + scriptCmd)) And scriptCmd.EndsWith(".uesh") Then
                         Wdbg("W", "Cmd exec {0} succeeded because it's a UESH script.", scriptCmd)
-                        Execute(Path.GetFullPath(CurrDir + "/" + scriptCmd), scriptArgs.Join(" "))
+                        Execute(Path.GetFullPath(CurrDir + "/" + scriptCmd), String.Join(" ", scriptArgs))
                     Else
                         Wdbg("W", "Cmd exec {0} failed: availableCmds.Cont({0}.Substring(0, {1})) = False", strcommand, indexCmd)
                         W(DoTranslation("Shell message: The requested command {0} is not found. See 'help' for available commands.", currentLang), True, ColTypes.Err, strcommand)
@@ -259,7 +259,7 @@ Public Module Shell
                                 W(DoTranslation("Shell message: Command {0} is not allowed to run on log in.", currentLang), True, ColTypes.Err, cmd)
                             ElseIf File.Exists(Path.GetFullPath(CurrDir + "/" + strcommand)) And strcommand.EndsWith(".uesh") Then
                                 Wdbg("W", "Cmd exec {0} succeeded because it's a UESH script.", strcommand)
-                                Execute(Path.GetFullPath(CurrDir + "/" + strcommand), scriptArgs.Join(" "))
+                                Execute(Path.GetFullPath(CurrDir + "/" + strcommand), String.Join(" ", scriptArgs))
                             Else
                                 Wdbg("W", "Cmd exec {0} succeeded", cmd)
                                 StartCommandThread = New Thread(AddressOf GetCommand.ExecuteCommand)

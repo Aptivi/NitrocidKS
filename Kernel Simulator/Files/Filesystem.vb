@@ -15,8 +15,10 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Imports Extensification.StringExts
 Imports System.IO
 Imports System.Runtime.CompilerServices
+Imports FluentFTP.Helpers
 
 Public Module Filesystem
 
@@ -140,7 +142,7 @@ Public Module Filesystem
         Wdbg("I", "Prototype directory: {0}", Path)
         If Not CurrDir = "" Then
             If Path.Contains(CurrDir.Replace("\", "/")) And Path.AllIndexesOf(CurrDir.Replace("\", "/")).Count > 1 Then
-                Path = ReplaceLastOccurrence(Path, CurrDir, "")
+                Path = Manipulation.ReplaceLastOccurrence(Path, CurrDir, "")
             End If
         End If
         Wdbg("I", "Final directory: {0}", Path)
@@ -166,7 +168,7 @@ Public Module Filesystem
         Wdbg("I", "Prototype directory: {0}", Path)
         If Not Source = "" Then
             If Path.Contains(Source.Replace("\", "/")) And Path.AllIndexesOf(Source.Replace("\", "/")).Count > 1 Then
-                Path = ReplaceLastOccurrence(Path, Source, "")
+                Path = Manipulation.ReplaceLastOccurrence(Path, Source, "")
             End If
         End If
         Wdbg("I", "Final directory: {0}", Path)

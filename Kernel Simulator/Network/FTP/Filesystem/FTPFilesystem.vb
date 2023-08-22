@@ -17,6 +17,7 @@
 
 Imports System.IO
 Imports System.Text
+Imports FluentFTP.Helpers
 
 Module FTPFilesystem
 
@@ -43,14 +44,14 @@ Module FTPFilesystem
                 End If
                 For Each DirListFTP As FtpListItem In Listing
                     EntryBuilder.Append($"- {DirListFTP.Name}")
-                    If DirListFTP.Type = FtpFileSystemObjectType.File Then
+                    If DirListFTP.Type = FtpObjectType.File Then
                         EntryBuilder.Append(": ")
                         FileSize = ClientFTP.GetFileSize(DirListFTP.FullName)
                         ModDate = ClientFTP.GetModifiedTime(DirListFTP.FullName)
                         EntryBuilder.Append(DoTranslation("{0} KB | Modified in: {1}", currentLang).FormatString(FormatNumber(FileSize / 1024, 2), ModDate.ToString))
-                    ElseIf DirListFTP.Type = FtpFileSystemObjectType.Directory Then
+                    ElseIf DirListFTP.Type = FtpObjectType.Directory Then
                         EntryBuilder.Append("/")
-                    ElseIf DirListFTP.Type = FtpFileSystemObjectType.Link Then
+                    ElseIf DirListFTP.Type = FtpObjectType.Link Then
                         EntryBuilder.Append(" >> ")
                         EntryBuilder.Append(DirListFTP.LinkTarget)
                     End If
