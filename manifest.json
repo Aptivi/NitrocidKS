@@ -3496,6 +3496,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.BoxGridDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.BoxGridDisplay.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Screensaver.Displays.BoxGridSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Screensaver.Displays.BoxGridSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.Displays.ColorMixDisplay.yml",
       "output": {
         ".html": {
