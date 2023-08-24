@@ -2986,30 +2986,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Notifications.NotificationManager.NotifPriority.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Notifications.NotificationManager.NotifPriority.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Notifications.NotificationManager.NotifType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Notifications.NotificationManager.NotifType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Notifications.NotificationManager.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Notifications.NotificationManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Notifications.NotificationPriority.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Notifications.NotificationPriority.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Notifications.NotificationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Notifications.NotificationType.html"
         }
       },
       "version": ""
