@@ -157,19 +157,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Shell_ShellBase_Commands_CommandArgumentInfo__ctor_System_String___KS_Shell_ShellBase_Commands_SwitchInfo___System_Boolean_System_Int32_System_Func_System_String_System_Int32_System_Char___System_String____.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Commands.CommandArgumentInfo.%23ctor(System.String%5B%5D%2CKS.Shell.ShellBase.Commands.SwitchInfo%5B%5D%2CSystem.Boolean%2CSystem.Int32%2CSystem.Func%7BSystem.String%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.String%5B%5D%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Shell_ShellBase_Commands_CommandArgumentInfo__ctor_System_String___KS_Shell_ShellBase_Commands_SwitchInfo___System_Boolean_System_Int32_System_Boolean_System_Func_System_String_System_Int32_System_Char___System_String____.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Commands.CommandArgumentInfo.%23ctor(System.String%5B%5D%2CKS.Shell.ShellBase.Commands.SwitchInfo%5B%5D%2CSystem.Boolean%2CSystem.Int32%2CSystem.Boolean%2CSystem.Func%7BSystem.String%2CSystem.Int32%2CSystem.Char%5B%5D%2CSystem.String%5B%5D%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Shell/ShellBase/Commands/CommandArgumentInfo.cs/#L76">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Shell/ShellBase/Commands/CommandArgumentInfo.cs/#L77">View Source</a>
   </span>
   <a id="KS_Shell_ShellBase_Commands_CommandArgumentInfo__ctor_" data-uid="KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor*"></a>
-  <h4 id="KS_Shell_ShellBase_Commands_CommandArgumentInfo__ctor_System_String___KS_Shell_ShellBase_Commands_SwitchInfo___System_Boolean_System_Int32_System_Func_System_String_System_Int32_System_Char___System_String____" data-uid="KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor(System.String[],KS.Shell.ShellBase.Commands.SwitchInfo[],System.Boolean,System.Int32,System.Func{System.String,System.Int32,System.Char[],System.String[]})">CommandArgumentInfo(string[], SwitchInfo[], bool, int, Func&lt;string, int, char[], string[]&gt;)</h4>
+  <h4 id="KS_Shell_ShellBase_Commands_CommandArgumentInfo__ctor_System_String___KS_Shell_ShellBase_Commands_SwitchInfo___System_Boolean_System_Int32_System_Boolean_System_Func_System_String_System_Int32_System_Char___System_String____" data-uid="KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor(System.String[],KS.Shell.ShellBase.Commands.SwitchInfo[],System.Boolean,System.Int32,System.Boolean,System.Func{System.String,System.Int32,System.Char[],System.String[]})">CommandArgumentInfo(string[], SwitchInfo[], bool, int, bool, Func&lt;string, int, char[], string[]&gt;)</h4>
   <div class="markdown level1 summary"><p>Installs a new instance of the command argument info class</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CommandArgumentInfo(string[] Arguments, SwitchInfo[] Switches, bool ArgumentsRequired, int MinimumArguments, Func&lt;string, int, char[], string[]&gt; AutoCompleter = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public CommandArgumentInfo(string[] Arguments, SwitchInfo[] Switches, bool ArgumentsRequired, int MinimumArguments, bool AcceptsSet = false, Func&lt;string, int, char[], string[]&gt; AutoCompleter = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -203,6 +203,12 @@
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">MinimumArguments</span></td>
         <td><p>Minimum arguments</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">AcceptsSet</span></td>
+        <td><p>Whether to accept the -set switch or not</p>
 </td>
       </tr>
       <tr>
