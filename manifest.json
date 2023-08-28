@@ -7616,10 +7616,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Properties.Resources.Resources.yml",
+      "source_relative_path": "api/Properties.Resources.KernelResources.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Properties.Resources.Resources.html"
+          "relative_path": "api/Properties.Resources.KernelResources.html"
         }
       },
       "version": ""
