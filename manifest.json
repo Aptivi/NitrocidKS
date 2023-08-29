@@ -5446,6 +5446,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Resources.LanguageResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Resources.LanguageResources.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Resources.SettingsResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Resources.SettingsResources.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Resources.ThemesResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Resources.ThemesResources.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Resources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Resources.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Prompts.IPromptPreset.yml",
       "output": {
         ".html": {
@@ -7640,26 +7680,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Users.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Properties.Resources.KernelResources.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Properties.Resources.KernelResources.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Properties.Resources.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Properties.Resources.html"
         }
       },
       "version": ""
