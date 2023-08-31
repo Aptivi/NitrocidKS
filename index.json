@@ -1662,7 +1662,7 @@
   "api/KS.Misc.Screensaver.Displays.BSODSettings.html": {
     "href": "api/KS.Misc.Screensaver.Displays.BSODSettings.html",
     "title": "Class BSODSettings | Nitrocid KS API - Aptivi",
-    "keywords": "Class BSODSettings Settings for BSOD Inheritance object BSODSettings Namespace: KS.Misc.Screensaver.Displays Assembly: Nitrocid.dll Syntax public static class BSODSettings Properties | Improve this Doc View Source BSODDelay [BSOD] How many beats per minute to wait before making the next write? Declaration public static int BSODDelay { get; set; } Property Value Type Description int"
+    "keywords": "Class BSODSettings Settings for BSOD Inheritance object BSODSettings Namespace: KS.Misc.Screensaver.Displays Assembly: Nitrocid.dll Syntax public static class BSODSettings Properties | Improve this Doc View Source BSODDelay [BSOD] How many milliseconds to wait before making the next write? Declaration public static int BSODDelay { get; set; } Property Value Type Description int"
   },
   "api/KS.Misc.Screensaver.Displays.BarRotDisplay.html": {
     "href": "api/KS.Misc.Screensaver.Displays.BarRotDisplay.html",
