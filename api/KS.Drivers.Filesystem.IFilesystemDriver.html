@@ -222,7 +222,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_ClearFile_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.ClearFile(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L448">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L468">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_ClearFile_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.ClearFile*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_ClearFile_System_String_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.ClearFile(System.String)">ClearFile(string)</h4>
@@ -640,6 +640,64 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_DisplayInHex_System_Byte_System_Boolean_System_Int64_System_Int64_System_Byte___.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.DisplayInHex(System.Byte%2CSystem.Boolean%2CSystem.Int64%2CSystem.Int64%2CSystem.Byte%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L319">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_IFilesystemDriver_DisplayInHex_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.DisplayInHex*"></a>
+  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_DisplayInHex_System_Byte_System_Boolean_System_Int64_System_Int64_System_Byte___" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.DisplayInHex(System.Byte,System.Boolean,System.Int64,System.Int64,System.Byte[])">DisplayInHex(byte, bool, long, long, byte[])</h4>
+  <div class="markdown level1 summary"><p>Renders the file in hex</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DisplayInHex(byte ByteContent, bool HighlightResults, long StartByte, long EndByte, byte[] FileByte)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">ByteContent</span></td>
+        <td><p>Content to highlight</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">HighlightResults</span></td>
+        <td><p>Whether to highlight the results. For querying.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">StartByte</span></td>
+        <td><p>Start byte position</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">EndByte</span></td>
+        <td><p>End byte position</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">FileByte</span></td>
+        <td><p>File content in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_DisplayInHex_System_Int64_System_Int64_System_Byte___.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.DisplayInHex(System.Int64%2CSystem.Int64%2CSystem.Byte%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -686,10 +744,68 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_DisplayInHexDumbMode_System_Byte_System_Boolean_System_Int64_System_Int64_System_Byte___.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.DisplayInHexDumbMode(System.Byte%2CSystem.Boolean%2CSystem.Int64%2CSystem.Int64%2CSystem.Byte%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L337">View Source</a>
+  </span>
+  <a id="KS_Drivers_Filesystem_IFilesystemDriver_DisplayInHexDumbMode_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.DisplayInHexDumbMode*"></a>
+  <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_DisplayInHexDumbMode_System_Byte_System_Boolean_System_Int64_System_Int64_System_Byte___" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.DisplayInHexDumbMode(System.Byte,System.Boolean,System.Int64,System.Int64,System.Byte[])">DisplayInHexDumbMode(byte, bool, long, long, byte[])</h4>
+  <div class="markdown level1 summary"><p>Renders the file in hex in dumb mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DisplayInHexDumbMode(byte ByteContent, bool HighlightResults, long StartByte, long EndByte, byte[] FileByte)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">ByteContent</span></td>
+        <td><p>Content to highlight</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">HighlightResults</span></td>
+        <td><p>Whether to highlight the results. For querying.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">StartByte</span></td>
+        <td><p>Start byte position</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">EndByte</span></td>
+        <td><p>End byte position</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">FileByte</span></td>
+        <td><p>File content in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_DisplayInHexDumbMode_System_Int64_System_Int64_System_Byte___.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.DisplayInHexDumbMode(System.Int64%2CSystem.Int64%2CSystem.Byte%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L317">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L327">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_DisplayInHexDumbMode_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.DisplayInHexDumbMode*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_DisplayInHexDumbMode_System_Int64_System_Int64_System_Byte___" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.DisplayInHexDumbMode(System.Int64,System.Int64,System.Byte[])">DisplayInHexDumbMode(long, long, byte[])</h4>
@@ -735,7 +851,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_Exists_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.Exists(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L341">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L361">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_Exists_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.Exists*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_Exists_System_String_System_Boolean_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.Exists(System.String,System.Boolean)">Exists(string, bool)</h4>
@@ -791,7 +907,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_FileExists_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.FileExists(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L325">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L345">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_FileExists_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.FileExists*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_FileExists_System_String_System_Boolean_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.FileExists(System.String,System.Boolean)">FileExists(string, bool)</h4>
@@ -903,7 +1019,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_FolderExists_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.FolderExists(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L333">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L353">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_FolderExists_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.FolderExists*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_FolderExists_System_String_System_Boolean_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.FolderExists(System.String,System.Boolean)">FolderExists(string, bool)</h4>
@@ -959,7 +1075,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_GetAllSizesInFolder_System_IO_DirectoryInfo_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.GetAllSizesInFolder(System.IO.DirectoryInfo)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L414">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L434">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_GetAllSizesInFolder_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.GetAllSizesInFolder*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_GetAllSizesInFolder_System_IO_DirectoryInfo_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.GetAllSizesInFolder(System.IO.DirectoryInfo)">GetAllSizesInFolder(DirectoryInfo)</h4>
@@ -1009,7 +1125,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_GetAllSizesInFolder_System_IO_DirectoryInfo_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.GetAllSizesInFolder(System.IO.DirectoryInfo%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L422">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L442">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_GetAllSizesInFolder_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.GetAllSizesInFolder*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_GetAllSizesInFolder_System_IO_DirectoryInfo_System_Boolean_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.GetAllSizesInFolder(System.IO.DirectoryInfo,System.Boolean)">GetAllSizesInFolder(DirectoryInfo, bool)</h4>
@@ -1251,7 +1367,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_GetInvalidPathChars.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.GetInvalidPathChars%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L354">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L374">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_GetInvalidPathChars_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.GetInvalidPathChars*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_GetInvalidPathChars" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.GetInvalidPathChars">GetInvalidPathChars()</h4>
@@ -1331,7 +1447,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_GetNumberedFileName_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.GetNumberedFileName(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L349">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L369">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_GetNumberedFileName_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.GetNumberedFileName*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_GetNumberedFileName_System_String_System_String_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.GetNumberedFileName(System.String,System.String)">GetNumberedFileName(string, string)</h4>
@@ -1482,7 +1598,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_IsBinaryFile_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.IsBinaryFile(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L374">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L394">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_IsBinaryFile_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.IsBinaryFile*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_IsBinaryFile_System_String_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.IsBinaryFile(System.String)">IsBinaryFile(string)</h4>
@@ -1531,7 +1647,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_IsJson_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.IsJson(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L380">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L400">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_IsJson_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.IsJson*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_IsJson_System_String_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.IsJson(System.String)">IsJson(string)</h4>
@@ -2114,7 +2230,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_ReadAllBytes_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.ReadAllBytes(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L442">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L462">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_ReadAllBytes_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.ReadAllBytes*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_ReadAllBytes_System_String_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.ReadAllBytes(System.String)">ReadAllBytes(string)</h4>
@@ -2163,7 +2279,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_ReadAllLinesNoBlock_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.ReadAllLinesNoBlock(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L436">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L456">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_ReadAllLinesNoBlock_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.ReadAllLinesNoBlock*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_ReadAllLinesNoBlock_System_String_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.ReadAllLinesNoBlock(System.String)">ReadAllLinesNoBlock(string)</h4>
@@ -2213,7 +2329,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_ReadContents_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.ReadContents(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L429">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L449">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_ReadContents_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.ReadContents*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_ReadContents_System_String_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.ReadContents(System.String)">ReadContents(string)</h4>
@@ -2263,7 +2379,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_ReadToEndAndSeek_System_IO_StreamReader__.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.ReadToEndAndSeek(System.IO.StreamReader%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L455">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L475">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_ReadToEndAndSeek_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.ReadToEndAndSeek*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_ReadToEndAndSeek_System_IO_StreamReader__" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.ReadToEndAndSeek(System.IO.StreamReader@)">ReadToEndAndSeek(ref StreamReader)</h4>
@@ -2584,7 +2700,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_SearchFileForString_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.SearchFileForString(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L389">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L409">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_SearchFileForString_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.SearchFileForString*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_SearchFileForString_System_String_System_String_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.SearchFileForString(System.String,System.String)">SearchFileForString(string, string)</h4>
@@ -2655,7 +2771,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_SearchFileForStringRegexp_System_String_System_Text_RegularExpressions_Regex_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.SearchFileForStringRegexp(System.String%2CSystem.Text.RegularExpressions.Regex)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L398">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L418">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_SearchFileForStringRegexp_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.SearchFileForStringRegexp*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_SearchFileForStringRegexp_System_String_System_Text_RegularExpressions_Regex_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.SearchFileForStringRegexp(System.String,System.Text.RegularExpressions.Regex)">SearchFileForStringRegexp(string, Regex)</h4>
@@ -2726,7 +2842,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_SearchFileForStringRegexpMatches_System_String_System_Text_RegularExpressions_Regex_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.SearchFileForStringRegexpMatches(System.String%2CSystem.Text.RegularExpressions.Regex)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L407">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L427">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_SearchFileForStringRegexpMatches_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.SearchFileForStringRegexpMatches*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_SearchFileForStringRegexpMatches_System_String_System_Text_RegularExpressions_Regex_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.SearchFileForStringRegexpMatches(System.String,System.Text.RegularExpressions.Regex)">SearchFileForStringRegexpMatches(string, Regex)</h4>
@@ -2852,7 +2968,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_TryParseFileName_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.TryParseFileName(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L368">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L388">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_TryParseFileName_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.TryParseFileName*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_TryParseFileName_System_String_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.TryParseFileName(System.String)">TryParseFileName(string)</h4>
@@ -2902,7 +3018,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Drivers_Filesystem_IFilesystemDriver_TryParsePath_System_String_.md&amp;value=---%0Auid%3A%20KS.Drivers.Filesystem.IFilesystemDriver.TryParsePath(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L361">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/Filesystem/IFilesystemDriver.cs/#L381">View Source</a>
   </span>
   <a id="KS_Drivers_Filesystem_IFilesystemDriver_TryParsePath_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.TryParsePath*"></a>
   <h4 id="KS_Drivers_Filesystem_IFilesystemDriver_TryParsePath_System_String_" data-uid="KS.Drivers.Filesystem.IFilesystemDriver.TryParsePath(System.String)">TryParsePath(string)</h4>
