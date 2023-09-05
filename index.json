@@ -1089,6 +1089,36 @@
     "title": "Namespace KS.Languages | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Languages Classes CultureManager Culture management module LanguageInfo Language information LanguageManager Lanaguage management module Translate Translation module"
   },
+  "api/KS.Misc.Amusements.Games.MeteorShooter.html": {
+    "href": "api/KS.Misc.Amusements.Games.MeteorShooter.html",
+    "title": "Class MeteorShooter | Nitrocid KS API - Aptivi",
+    "keywords": "Class MeteorShooter Meteor shooter game module Inheritance object MeteorShooter Namespace: KS.Misc.Amusements.Games Assembly: Nitrocid.dll Syntax public static class MeteorShooter Properties | Improve this Doc View Source MeteorSpeed Meteor speed in milliseconds Declaration public static int MeteorSpeed { get; } Property Value Type Description int | Improve this Doc View Source MeteorUsePowerLine Use PowerLine characters for the spaceship? Declaration public static bool MeteorUsePowerLine { get; } Property Value Type Description bool Methods | Improve this Doc View Source InitializeMeteor(bool) Initializes the Meteor game Declaration public static void InitializeMeteor(bool simulation = false) Parameters Type Name Description bool simulation"
+  },
+  "api/KS.Misc.Amusements.Games.ShipDuetShooter.html": {
+    "href": "api/KS.Misc.Amusements.Games.ShipDuetShooter.html",
+    "title": "Class ShipDuetShooter | Nitrocid KS API - Aptivi",
+    "keywords": "Class ShipDuetShooter ShipDuet shooter game module Inheritance object ShipDuetShooter Namespace: KS.Misc.Amusements.Games Assembly: Nitrocid.dll Syntax public static class ShipDuetShooter Properties | Improve this Doc View Source ShipDuetSpeed ShipDuet speed in milliseconds Declaration public static int ShipDuetSpeed { get; } Property Value Type Description int | Improve this Doc View Source ShipDuetUsePowerLine Use PowerLine characters for the spaceship? Declaration public static bool ShipDuetUsePowerLine { get; } Property Value Type Description bool Methods | Improve this Doc View Source InitializeShipDuet(bool) Initializes the ShipDuet game Declaration public static void InitializeShipDuet(bool simulation = false) Parameters Type Name Description bool simulation"
+  },
+  "api/KS.Misc.Amusements.Games.Solver.html": {
+    "href": "api/KS.Misc.Amusements.Games.Solver.html",
+    "title": "Class Solver | Nitrocid KS API - Aptivi",
+    "keywords": "Class Solver Solver game module Inheritance object Solver Namespace: KS.Misc.Amusements.Games Assembly: Nitrocid.dll Syntax public static class Solver Properties | Improve this Doc View Source SolverMaximumNumber Maximum number for solver Declaration public static int SolverMaximumNumber { get; } Property Value Type Description int | Improve this Doc View Source SolverMinimumNumber Minimum number for solver Declaration public static int SolverMinimumNumber { get; } Property Value Type Description int | Improve this Doc View Source SolverShowInput Whether to show the input or not Declaration public static bool SolverShowInput { get; } Property Value Type Description bool Methods | Improve this Doc View Source InitializeSolver() Initializes the game Declaration public static void InitializeSolver()"
+  },
+  "api/KS.Misc.Amusements.Games.SpeedPress.SpeedPressDifficulty.html": {
+    "href": "api/KS.Misc.Amusements.Games.SpeedPress.SpeedPressDifficulty.html",
+    "title": "Enum SpeedPress.SpeedPressDifficulty | Nitrocid KS API - Aptivi",
+    "keywords": "Enum SpeedPress.SpeedPressDifficulty SpeedPress difficulty Namespace: KS.Misc.Amusements.Games Assembly: Nitrocid.dll Syntax public enum SpeedPress.SpeedPressDifficulty Fields Name Description Custom Custom difficulty (custom timeout according to either a switch or the kernel settings) Easy Easy difficulty (timeout for three seconds) Hard Hard difficulty (timeout for a half second) Medium Medium difficulty (timeout for a second and a half) VeryHard Very hard difficulty (timeout for a quarter of a second)"
+  },
+  "api/KS.Misc.Amusements.Games.SpeedPress.html": {
+    "href": "api/KS.Misc.Amusements.Games.SpeedPress.html",
+    "title": "Class SpeedPress | Nitrocid KS API - Aptivi",
+    "keywords": "Class SpeedPress Speed press game module Inheritance object SpeedPress Namespace: KS.Misc.Amusements.Games Assembly: Nitrocid.dll Syntax public static class SpeedPress Properties | Improve this Doc View Source SpeedPressCurrentDifficulty Current difficulty for the game Declaration public static SpeedPress.SpeedPressDifficulty SpeedPressCurrentDifficulty { get; } Property Value Type Description SpeedPress.SpeedPressDifficulty | Improve this Doc View Source SpeedPressTimeout Timeout in milliseconds before declaring that the time is up Declaration public static int SpeedPressTimeout { get; } Property Value Type Description int Methods | Improve this Doc View Source InitializeSpeedPress(SpeedPressDifficulty, int) Initializes the SpeedPress game Declaration public static void InitializeSpeedPress(SpeedPress.SpeedPressDifficulty Difficulty, int CustomTimeout = 0) Parameters Type Name Description SpeedPress.SpeedPressDifficulty Difficulty The difficulty of the game int CustomTimeout Custom game timeout"
+  },
+  "api/KS.Misc.Amusements.Games.html": {
+    "href": "api/KS.Misc.Amusements.Games.html",
+    "title": "Namespace KS.Misc.Amusements.Games | Nitrocid KS API - Aptivi",
+    "keywords": "Namespace KS.Misc.Amusements.Games Classes MeteorShooter Meteor shooter game module ShipDuetShooter ShipDuet shooter game module Solver Solver game module SpeedPress Speed press game module Enums SpeedPress.SpeedPressDifficulty SpeedPress difficulty"
+  },
   "api/KS.Misc.Animations.BSOD.BSOD.html": {
     "href": "api/KS.Misc.Animations.BSOD.BSOD.html",
     "title": "Class BSOD | Nitrocid KS API - Aptivi",
@@ -1408,36 +1438,6 @@
     "href": "api/KS.Misc.Forecast.html",
     "title": "Namespace KS.Misc.Forecast | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Misc.Forecast Classes Forecast Forecast module"
-  },
-  "api/KS.Misc.Games.MeteorShooter.html": {
-    "href": "api/KS.Misc.Games.MeteorShooter.html",
-    "title": "Class MeteorShooter | Nitrocid KS API - Aptivi",
-    "keywords": "Class MeteorShooter Meteor shooter game module Inheritance object MeteorShooter Namespace: KS.Misc.Games Assembly: Nitrocid.dll Syntax public static class MeteorShooter Properties | Improve this Doc View Source MeteorSpeed Meteor speed in milliseconds Declaration public static int MeteorSpeed { get; } Property Value Type Description int | Improve this Doc View Source MeteorUsePowerLine Use PowerLine characters for the spaceship? Declaration public static bool MeteorUsePowerLine { get; } Property Value Type Description bool Methods | Improve this Doc View Source InitializeMeteor(bool) Initializes the Meteor game Declaration public static void InitializeMeteor(bool simulation = false) Parameters Type Name Description bool simulation"
-  },
-  "api/KS.Misc.Games.ShipDuetShooter.html": {
-    "href": "api/KS.Misc.Games.ShipDuetShooter.html",
-    "title": "Class ShipDuetShooter | Nitrocid KS API - Aptivi",
-    "keywords": "Class ShipDuetShooter ShipDuet shooter game module Inheritance object ShipDuetShooter Namespace: KS.Misc.Games Assembly: Nitrocid.dll Syntax public static class ShipDuetShooter Properties | Improve this Doc View Source ShipDuetSpeed ShipDuet speed in milliseconds Declaration public static int ShipDuetSpeed { get; } Property Value Type Description int | Improve this Doc View Source ShipDuetUsePowerLine Use PowerLine characters for the spaceship? Declaration public static bool ShipDuetUsePowerLine { get; } Property Value Type Description bool Methods | Improve this Doc View Source InitializeShipDuet(bool) Initializes the ShipDuet game Declaration public static void InitializeShipDuet(bool simulation = false) Parameters Type Name Description bool simulation"
-  },
-  "api/KS.Misc.Games.Solver.html": {
-    "href": "api/KS.Misc.Games.Solver.html",
-    "title": "Class Solver | Nitrocid KS API - Aptivi",
-    "keywords": "Class Solver Solver game module Inheritance object Solver Namespace: KS.Misc.Games Assembly: Nitrocid.dll Syntax public static class Solver Properties | Improve this Doc View Source SolverMaximumNumber Maximum number for solver Declaration public static int SolverMaximumNumber { get; } Property Value Type Description int | Improve this Doc View Source SolverMinimumNumber Minimum number for solver Declaration public static int SolverMinimumNumber { get; } Property Value Type Description int | Improve this Doc View Source SolverShowInput Whether to show the input or not Declaration public static bool SolverShowInput { get; } Property Value Type Description bool Methods | Improve this Doc View Source InitializeSolver() Initializes the game Declaration public static void InitializeSolver()"
-  },
-  "api/KS.Misc.Games.SpeedPress.SpeedPressDifficulty.html": {
-    "href": "api/KS.Misc.Games.SpeedPress.SpeedPressDifficulty.html",
-    "title": "Enum SpeedPress.SpeedPressDifficulty | Nitrocid KS API - Aptivi",
-    "keywords": "Enum SpeedPress.SpeedPressDifficulty SpeedPress difficulty Namespace: KS.Misc.Games Assembly: Nitrocid.dll Syntax public enum SpeedPress.SpeedPressDifficulty Fields Name Description Custom Custom difficulty (custom timeout according to either a switch or the kernel settings) Easy Easy difficulty (timeout for three seconds) Hard Hard difficulty (timeout for a half second) Medium Medium difficulty (timeout for a second and a half) VeryHard Very hard difficulty (timeout for a quarter of a second)"
-  },
-  "api/KS.Misc.Games.SpeedPress.html": {
-    "href": "api/KS.Misc.Games.SpeedPress.html",
-    "title": "Class SpeedPress | Nitrocid KS API - Aptivi",
-    "keywords": "Class SpeedPress Speed press game module Inheritance object SpeedPress Namespace: KS.Misc.Games Assembly: Nitrocid.dll Syntax public static class SpeedPress Properties | Improve this Doc View Source SpeedPressCurrentDifficulty Current difficulty for the game Declaration public static SpeedPress.SpeedPressDifficulty SpeedPressCurrentDifficulty { get; } Property Value Type Description SpeedPress.SpeedPressDifficulty | Improve this Doc View Source SpeedPressTimeout Timeout in milliseconds before declaring that the time is up Declaration public static int SpeedPressTimeout { get; } Property Value Type Description int Methods | Improve this Doc View Source InitializeSpeedPress(SpeedPressDifficulty, int) Initializes the SpeedPress game Declaration public static void InitializeSpeedPress(SpeedPress.SpeedPressDifficulty Difficulty, int CustomTimeout = 0) Parameters Type Name Description SpeedPress.SpeedPressDifficulty Difficulty The difficulty of the game int CustomTimeout Custom game timeout"
-  },
-  "api/KS.Misc.Games.html": {
-    "href": "api/KS.Misc.Games.html",
-    "title": "Namespace KS.Misc.Games | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Misc.Games Classes MeteorShooter Meteor shooter game module ShipDuetShooter ShipDuet shooter game module Solver Solver game module SpeedPress Speed press game module Enums SpeedPress.SpeedPressDifficulty SpeedPress difficulty"
   },
   "api/KS.Misc.Interactive.BaseInteractiveTui.html": {
     "href": "api/KS.Misc.Interactive.BaseInteractiveTui.html",

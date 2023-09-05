@@ -2196,6 +2196,66 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Amusements.Games.MeteorShooter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Amusements.Games.MeteorShooter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Amusements.Games.ShipDuetShooter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Amusements.Games.ShipDuetShooter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Amusements.Games.Solver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Amusements.Games.Solver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Amusements.Games.SpeedPress.SpeedPressDifficulty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Amusements.Games.SpeedPress.SpeedPressDifficulty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Amusements.Games.SpeedPress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Amusements.Games.SpeedPress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Amusements.Games.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Amusements.Games.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Animations.BSOD.BSOD.yml",
       "output": {
         ".html": {
@@ -2830,66 +2890,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Forecast.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Games.MeteorShooter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Games.MeteorShooter.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Games.ShipDuetShooter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Games.ShipDuetShooter.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Games.Solver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Games.Solver.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Games.SpeedPress.SpeedPressDifficulty.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Games.SpeedPress.SpeedPressDifficulty.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Games.SpeedPress.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Games.SpeedPress.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Games.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Games.html"
         }
       },
       "version": ""
