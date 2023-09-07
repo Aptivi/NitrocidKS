@@ -909,10 +909,15 @@
     "title": "Namespace KS.Kernel.Hardware | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Kernel.Hardware Classes HardwareList Hardware list module HardwareProbe Hardware probe module"
   },
+  "api/KS.Kernel.Journaling.JournalEntry.html": {
+    "href": "api/KS.Kernel.Journaling.JournalEntry.html",
+    "title": "Class JournalEntry | Nitrocid KS API - Aptivi",
+    "keywords": "Class JournalEntry A kernel journal entry class Inheritance object JournalEntry Namespace: KS.Kernel.Journaling Assembly: Nitrocid.dll Syntax public class JournalEntry Properties | Improve this Doc View Source Date Specifies the date of the journal Declaration [JsonIgnore] public string Date { get; } Property Value Type Description string | Improve this Doc View Source Message Specifies the message of the journal Declaration [JsonIgnore] public string Message { get; } Property Value Type Description string | Improve this Doc View Source Status Specifies the status of the journal Declaration [JsonIgnore] public string Status { get; } Property Value Type Description string | Improve this Doc View Source Time Specifies the time of the journal Declaration [JsonIgnore] public string Time { get; } Property Value Type Description string"
+  },
   "api/KS.Kernel.Journaling.JournalManager.html": {
     "href": "api/KS.Kernel.Journaling.JournalManager.html",
     "title": "Class JournalManager | Nitrocid KS API - Aptivi",
-    "keywords": "Class JournalManager Kernel journalling manager Inheritance object JournalManager Namespace: KS.Kernel.Journaling Assembly: Nitrocid.dll Syntax public static class JournalManager Methods | Improve this Doc View Source PrintJournalLog() Prints the current journal log Declaration public static void PrintJournalLog() | Improve this Doc View Source WriteJournal(string, JournalStatus, params object[]) Writes a message to the journal Declaration public static void WriteJournal(string Message, JournalStatus Status, params object[] Vars) Parameters Type Name Description string Message Message to be written JournalStatus Status Journal status (Error, warning, ...) object[] Vars Variables to format in message | Improve this Doc View Source WriteJournal(string, params object[]) Writes a message to the journal Declaration public static void WriteJournal(string Message, params object[] Vars) Parameters Type Name Description string Message Message to be written object[] Vars Variables to format in message"
+    "keywords": "Class JournalManager Kernel journalling manager Inheritance object JournalManager Namespace: KS.Kernel.Journaling Assembly: Nitrocid.dll Syntax public static class JournalManager Methods | Improve this Doc View Source GetJournalEntries() Gets the journal entries Declaration public static JournalEntry[] GetJournalEntries() Returns Type Description JournalEntry[] An array of journal entries | Improve this Doc View Source PrintJournalLog() Prints the current journal log Declaration public static void PrintJournalLog() | Improve this Doc View Source WriteJournal(string, JournalStatus, params object[]) Writes a message to the journal Declaration public static void WriteJournal(string Message, JournalStatus Status, params object[] Vars) Parameters Type Name Description string Message Message to be written JournalStatus Status Journal status (Error, warning, ...) object[] Vars Variables to format in message | Improve this Doc View Source WriteJournal(string, params object[]) Writes a message to the journal Declaration public static void WriteJournal(string Message, params object[] Vars) Parameters Type Name Description string Message Message to be written object[] Vars Variables to format in message"
   },
   "api/KS.Kernel.Journaling.JournalStatus.html": {
     "href": "api/KS.Kernel.Journaling.JournalStatus.html",
@@ -922,7 +927,7 @@
   "api/KS.Kernel.Journaling.html": {
     "href": "api/KS.Kernel.Journaling.html",
     "title": "Namespace KS.Kernel.Journaling | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Kernel.Journaling Classes JournalManager Kernel journalling manager Enums JournalStatus Journalling status to write to the kernel journal"
+    "keywords": "Namespace KS.Kernel.Journaling Classes JournalEntry A kernel journal entry class JournalManager Kernel journalling manager Enums JournalStatus Journalling status to write to the kernel journal"
   },
   "api/KS.Kernel.KernelPlatform.html": {
     "href": "api/KS.Kernel.KernelPlatform.html",

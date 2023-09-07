@@ -1836,6 +1836,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Journaling.JournalEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Journaling.JournalEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Journaling.JournalManager.yml",
       "output": {
         ".html": {
