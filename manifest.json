@@ -256,6 +256,56 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Interactive.BaseInteractiveTui.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Interactive.BaseInteractiveTui.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Interactive.IInteractiveTui.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Interactive.IInteractiveTui.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Interactive.InteractiveTuiBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Interactive.InteractiveTuiBinding.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Interactive.InteractiveTuiTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Interactive.InteractiveTuiTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Interactive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Interactive.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.Themes.ThemeInfo.yml",
       "output": {
         ".html": {
@@ -1936,26 +1986,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Threading.Interactive.TaskManagerCli.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Threading.Interactive.TaskManagerCli.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Threading.Interactive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Threading.Interactive.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Threading.KernelThread.yml",
       "output": {
         ".html": {
@@ -2916,90 +2946,60 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Interactive.BaseInteractiveTui.yml",
+      "source_relative_path": "api/KS.Misc.Interactives.ContactsManagerCli.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Misc.Interactive.BaseInteractiveTui.html"
+          "relative_path": "api/KS.Misc.Interactives.ContactsManagerCli.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Interactive.IInteractiveTui.yml",
+      "source_relative_path": "api/KS.Misc.Interactives.FileManagerCli.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Misc.Interactive.IInteractiveTui.html"
+          "relative_path": "api/KS.Misc.Interactives.FileManagerCli.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Interactive.InteractiveTuiBinding.yml",
+      "source_relative_path": "api/KS.Misc.Interactives.ManualViewerCli.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Misc.Interactive.InteractiveTuiBinding.html"
+          "relative_path": "api/KS.Misc.Interactives.ManualViewerCli.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Interactive.InteractiveTuiTools.yml",
+      "source_relative_path": "api/KS.Misc.Interactives.TaskManagerCli.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Misc.Interactive.InteractiveTuiTools.html"
+          "relative_path": "api/KS.Misc.Interactives.TaskManagerCli.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Interactive.Interactives.ContactsManagerCli.yml",
+      "source_relative_path": "api/KS.Misc.Interactives.UnitConverterCli.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Misc.Interactive.Interactives.ContactsManagerCli.html"
+          "relative_path": "api/KS.Misc.Interactives.UnitConverterCli.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Interactive.Interactives.FileManagerCli.yml",
+      "source_relative_path": "api/KS.Misc.Interactives.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Misc.Interactive.Interactives.FileManagerCli.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Interactive.Interactives.UnitConverterCli.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Interactive.Interactives.UnitConverterCli.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Interactive.Interactives.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Interactive.Interactives.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Interactive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Interactive.html"
+          "relative_path": "api/KS.Misc.Interactives.html"
         }
       },
       "version": ""
@@ -4960,26 +4960,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Modifications.IMod.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Modifications.ManPages.Interactive.ManualViewerCli.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Modifications.ManPages.Interactive.ManualViewerCli.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Modifications.ManPages.Interactive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Modifications.ManPages.Interactive.html"
         }
       },
       "version": ""

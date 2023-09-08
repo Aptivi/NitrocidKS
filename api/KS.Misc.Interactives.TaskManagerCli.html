@@ -1,0 +1,472 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TaskManagerCli
+ | Nitrocid KS API - Aptivi </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TaskManagerCli
+ | Nitrocid KS API - Aptivi ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="KS.Misc.Interactives.TaskManagerCli">
+
+
+
+  <h1 id="KS_Misc_Interactives_TaskManagerCli" data-uid="KS.Misc.Interactives.TaskManagerCli" class="text-break">Class TaskManagerCli
+</h1>
+  <div class="markdown level0 summary"><p>Task manager class</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html">BaseInteractiveTui</a></div>
+    <div class="level2"><span class="xref">TaskManagerCli</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="KS.ConsoleBase.Interactive.IInteractiveTui.html">IInteractiveTui</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_RedrawRequired">BaseInteractiveTui.RedrawRequired</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_FirstPaneCurrentSelection">BaseInteractiveTui.FirstPaneCurrentSelection</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_SecondPaneCurrentSelection">BaseInteractiveTui.SecondPaneCurrentSelection</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_Status">BaseInteractiveTui.Status</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_CurrentPane">BaseInteractiveTui.CurrentPane</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_SecondPaneInteractable">BaseInteractiveTui.SecondPaneInteractable</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_RefreshInterval">BaseInteractiveTui.RefreshInterval</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_AcceptsEmptyData">BaseInteractiveTui.AcceptsEmptyData</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_SecondaryDataSource">BaseInteractiveTui.SecondaryDataSource</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_BackgroundColor">BaseInteractiveTui.BackgroundColor</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_ForegroundColor">BaseInteractiveTui.ForegroundColor</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_PaneBackgroundColor">BaseInteractiveTui.PaneBackgroundColor</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_PaneSeparatorColor">BaseInteractiveTui.PaneSeparatorColor</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_PaneSelectedSeparatorColor">BaseInteractiveTui.PaneSelectedSeparatorColor</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_PaneSelectedItemForeColor">BaseInteractiveTui.PaneSelectedItemForeColor</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_PaneSelectedItemBackColor">BaseInteractiveTui.PaneSelectedItemBackColor</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_PaneItemForeColor">BaseInteractiveTui.PaneItemForeColor</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_PaneItemBackColor">BaseInteractiveTui.PaneItemBackColor</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_OptionBackgroundColor">BaseInteractiveTui.OptionBackgroundColor</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_KeyBindingOptionColor">BaseInteractiveTui.KeyBindingOptionColor</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_OptionForegroundColor">BaseInteractiveTui.OptionForegroundColor</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_BoxBackgroundColor">BaseInteractiveTui.BoxBackgroundColor</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_BoxForegroundColor">BaseInteractiveTui.BoxForegroundColor</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_HandleExit">BaseInteractiveTui.HandleExit()</a>
+    </div>
+    <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_LastOnOverflow">BaseInteractiveTui.LastOnOverflow()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.html">KS</a>.<a class="xref" href="KS.Misc.html">Misc</a>.<a class="xref" href="KS.Misc.Interactives.html">Interactives</a></h6>
+  <h6><strong>Assembly</strong>: Nitrocid.dll</h6>
+  <h5 id="KS_Misc_Interactives_TaskManagerCli_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TaskManagerCli : BaseInteractiveTui, IInteractiveTui</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Interactives_TaskManagerCli_Bindings.md&amp;value=---%0Auid%3A%20KS.Misc.Interactives.TaskManagerCli.Bindings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TaskManagerCli.cs/#L42">View Source</a>
+  </span>
+  <a id="KS_Misc_Interactives_TaskManagerCli_Bindings_" data-uid="KS.Misc.Interactives.TaskManagerCli.Bindings*"></a>
+  <h4 id="KS_Misc_Interactives_TaskManagerCli_Bindings" data-uid="KS.Misc.Interactives.TaskManagerCli.Bindings">Bindings</h4>
+  <div class="markdown level1 summary"><p>Task manager bindings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override List&lt;InteractiveTuiBinding&gt; Bindings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="KS.ConsoleBase.Interactive.InteractiveTuiBinding.html">InteractiveTuiBinding</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_Bindings">BaseInteractiveTui.Bindings</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Interactives_TaskManagerCli_FastRefresh.md&amp;value=---%0Auid%3A%20KS.Misc.Interactives.TaskManagerCli.FastRefresh%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TaskManagerCli.cs/#L50">View Source</a>
+  </span>
+  <a id="KS_Misc_Interactives_TaskManagerCli_FastRefresh_" data-uid="KS.Misc.Interactives.TaskManagerCli.FastRefresh*"></a>
+  <h4 id="KS_Misc_Interactives_TaskManagerCli_FastRefresh" data-uid="KS.Misc.Interactives.TaskManagerCli.FastRefresh">FastRefresh</h4>
+  <div class="markdown level1 summary"><p>Whether delta-based refresh method is used or not</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool FastRefresh { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_FastRefresh">BaseInteractiveTui.FastRefresh</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Interactives_TaskManagerCli_PrimaryDataSource.md&amp;value=---%0Auid%3A%20KS.Misc.Interactives.TaskManagerCli.PrimaryDataSource%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TaskManagerCli.cs/#L54">View Source</a>
+  </span>
+  <a id="KS_Misc_Interactives_TaskManagerCli_PrimaryDataSource_" data-uid="KS.Misc.Interactives.TaskManagerCli.PrimaryDataSource*"></a>
+  <h4 id="KS_Misc_Interactives_TaskManagerCli_PrimaryDataSource" data-uid="KS.Misc.Interactives.TaskManagerCli.PrimaryDataSource">PrimaryDataSource</h4>
+  <div class="markdown level1 summary"><p>An array, a dictionary, a list, or an enumerable that holds data (pane one)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable PrimaryDataSource { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_PrimaryDataSource">BaseInteractiveTui.PrimaryDataSource</a></div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Interactives_TaskManagerCli_GetEntryFromItem_System_Object_.md&amp;value=---%0Auid%3A%20KS.Misc.Interactives.TaskManagerCli.GetEntryFromItem(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TaskManagerCli.cs/#L121">View Source</a>
+  </span>
+  <a id="KS_Misc_Interactives_TaskManagerCli_GetEntryFromItem_" data-uid="KS.Misc.Interactives.TaskManagerCli.GetEntryFromItem*"></a>
+  <h4 id="KS_Misc_Interactives_TaskManagerCli_GetEntryFromItem_System_Object_" data-uid="KS.Misc.Interactives.TaskManagerCli.GetEntryFromItem(System.Object)">GetEntryFromItem(object)</h4>
+  <div class="markdown level1 summary"><p>Gets an entry string from a specified item for listing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetEntryFromItem(object item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Target item</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_GetEntryFromItem_System_Object_">BaseInteractiveTui.GetEntryFromItem(object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Interactives_TaskManagerCli_GetInfoFromItem_System_Object_.md&amp;value=---%0Auid%3A%20KS.Misc.Interactives.TaskManagerCli.GetInfoFromItem(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TaskManagerCli.cs/#L58">View Source</a>
+  </span>
+  <a id="KS_Misc_Interactives_TaskManagerCli_GetInfoFromItem_" data-uid="KS.Misc.Interactives.TaskManagerCli.GetInfoFromItem*"></a>
+  <h4 id="KS_Misc_Interactives_TaskManagerCli_GetInfoFromItem_System_Object_" data-uid="KS.Misc.Interactives.TaskManagerCli.GetInfoFromItem(System.Object)">GetInfoFromItem(object)</h4>
+  <div class="markdown level1 summary"><p>Gets the info from the item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetInfoFromItem(object item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Target item</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The rendered info so that <a class="xref" href="KS.ConsoleBase.Interactive.InteractiveTuiTools.html">InteractiveTuiTools</a> can handle its rendering</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_GetInfoFromItem_System_Object_">BaseInteractiveTui.GetInfoFromItem(object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Interactives_TaskManagerCli_RenderStatus_System_Object_.md&amp;value=---%0Auid%3A%20KS.Misc.Interactives.TaskManagerCli.RenderStatus(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TaskManagerCli.cs/#L99">View Source</a>
+  </span>
+  <a id="KS_Misc_Interactives_TaskManagerCli_RenderStatus_" data-uid="KS.Misc.Interactives.TaskManagerCli.RenderStatus*"></a>
+  <h4 id="KS_Misc_Interactives_TaskManagerCli_RenderStatus_System_Object_" data-uid="KS.Misc.Interactives.TaskManagerCli.RenderStatus(System.Object)">RenderStatus(object)</h4>
+  <div class="markdown level1 summary"><p>Renders the status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RenderStatus(object item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Target item</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_RenderStatus_System_Object_">BaseInteractiveTui.RenderStatus(object)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="KS.ConsoleBase.Interactive.IInteractiveTui.html">IInteractiveTui</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Interactives_TaskManagerCli.md&amp;value=---%0Auid%3A%20KS.Misc.Interactives.TaskManagerCli%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TaskManagerCli.cs/#L33" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
