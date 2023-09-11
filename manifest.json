@@ -456,6 +456,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColorLegacy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColorLegacy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.yml",
       "output": {
         ".html": {
@@ -476,10 +486,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.FigletColorLegacy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.FigletColorLegacy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.FigletWhereColorLegacy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.FigletWhereColorLegacy.html"
         }
       },
       "version": ""
@@ -560,16 +590,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.Tools.CellOptions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.Tools.FigletTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.Tools.FigletTools.html"
         }
       },
       "version": ""
