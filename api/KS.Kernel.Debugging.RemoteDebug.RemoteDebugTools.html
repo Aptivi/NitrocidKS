@@ -101,59 +101,19 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_AddDeviceToJson_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.AddDeviceToJson(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_AddToBlockList_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.AddToBlockList(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L298">View Source</a>
-  </span>
-  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_AddDeviceToJson_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.AddDeviceToJson*"></a>
-  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_AddDeviceToJson_System_String_System_Boolean_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.AddDeviceToJson(System.String,System.Boolean)">AddDeviceToJson(string, bool)</h4>
-  <div class="markdown level1 summary"><p>Adds new device IP address to JSON</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AddDeviceToJson(string DeviceIP, bool ThrowException = true)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">DeviceIP</span></td>
-        <td><p>Device IP address from remote endpoint address</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">ThrowException</span></td>
-        <td><p>Optionally throw exception</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_AddToBlockList_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.AddToBlockList(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L83">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L74">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_AddToBlockList_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.AddToBlockList*"></a>
-  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_AddToBlockList_System_String_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.AddToBlockList(System.String)">AddToBlockList(string)</h4>
+  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_AddToBlockList_System_String_System_Boolean_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.AddToBlockList(System.String,System.Boolean)">AddToBlockList(string, bool)</h4>
   <div class="markdown level1 summary"><p>Adds device to block list</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AddToBlockList(string IP)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AddToBlockList(string address, bool throwIfNotFound = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -167,27 +127,33 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">IP</span></td>
+        <td><span class="parametername">address</span></td>
         <td><p>An IP address for device</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">throwIfNotFound</span></td>
+        <td><p>Throws if the device is not found to be blocked</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_DisconnectDbgDev_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.DisconnectDbgDev(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_DisconnectDevice_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.DisconnectDevice(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L63">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L45">View Source</a>
   </span>
-  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_DisconnectDbgDev_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.DisconnectDbgDev*"></a>
-  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_DisconnectDbgDev_System_String_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.DisconnectDbgDev(System.String)">DisconnectDbgDev(string)</h4>
+  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_DisconnectDevice_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.DisconnectDevice*"></a>
+  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_DisconnectDevice_System_String_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.DisconnectDevice(System.String)">DisconnectDevice(string)</h4>
   <div class="markdown level1 summary"><p>Disconnects a specified debug device</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DisconnectDbgDev(string IPAddr)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DisconnectDevice(string address)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -201,7 +167,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">IPAddr</span></td>
+        <td><span class="parametername">address</span></td>
         <td><p>An IP address of the connected debug device</p>
 </td>
       </tr>
@@ -209,19 +175,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_GetDeviceProperty_System_String_KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_DeviceProperty_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.GetDeviceProperty(System.String%2CKS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.DeviceProperty)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_GetDeviceFromIp_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.GetDeviceFromIp(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L203">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L278">View Source</a>
   </span>
-  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_GetDeviceProperty_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.GetDeviceProperty*"></a>
-  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_GetDeviceProperty_System_String_KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_DeviceProperty_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.GetDeviceProperty(System.String,KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.DeviceProperty)">GetDeviceProperty(string, DeviceProperty)</h4>
-  <div class="markdown level1 summary"><p>Gets device property from device IP address</p>
+  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_GetDeviceFromIp_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.GetDeviceFromIp*"></a>
+  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_GetDeviceFromIp_System_String_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.GetDeviceFromIp(System.String)">GetDeviceFromIp(string)</h4>
+  <div class="markdown level1 summary"><p>Gets a device by IP address</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static object GetDeviceProperty(string DeviceIP, RemoteDebugTools.DeviceProperty DeviceProperty)</code></pre>
+    <pre><code class="lang-csharp hljs">public static RemoteDebugDeviceInfo GetDeviceFromIp(string address)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -235,14 +201,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">DeviceIP</span></td>
-        <td><p>Device IP address from remote endpoint address</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.html">RemoteDebugTools</a>.<a class="xref" href="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.DeviceProperty.html">DeviceProperty</a></td>
-        <td><span class="parametername">DeviceProperty</span></td>
-        <td><p>Device property</p>
+        <td><span class="parametername">address</span></td>
+        <td><p>Device that holds the IP address</p>
 </td>
       </tr>
     </tbody>
@@ -257,27 +217,77 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
-        <td><p>Device property if successful; nothing if unsuccessful.</p>
+        <td><a class="xref" href="KS.Kernel.Debugging.RemoteDebug.RemoteDebugDeviceInfo.html">RemoteDebugDeviceInfo</a></td>
+        <td><p>An instance of <a class="xref" href="KS.Kernel.Debugging.RemoteDebug.RemoteDebugDeviceInfo.html">RemoteDebugDeviceInfo</a> if found; throws otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_ListDevices.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.ListDevices%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_GetDeviceFromName_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.GetDeviceFromName(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L372">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L286">View Source</a>
   </span>
-  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_ListDevices_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.ListDevices*"></a>
-  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_ListDevices" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.ListDevices">ListDevices()</h4>
-  <div class="markdown level1 summary"><p>Lists all devices and puts them into an array</p>
+  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_GetDeviceFromName_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.GetDeviceFromName*"></a>
+  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_GetDeviceFromName_System_String_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.GetDeviceFromName(System.String)">GetDeviceFromName(string)</h4>
+  <div class="markdown level1 summary"><p>Gets a device by name</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string[] ListDevices()</code></pre>
+    <pre><code class="lang-csharp hljs">public static RemoteDebugDeviceInfo GetDeviceFromName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Device that holds the name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Debugging.RemoteDebug.RemoteDebugDeviceInfo.html">RemoteDebugDeviceInfo</a></td>
+        <td><p>An instance of <a class="xref" href="KS.Kernel.Debugging.RemoteDebug.RemoteDebugDeviceInfo.html">RemoteDebugDeviceInfo</a> if found; throws otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_ListDeviceAddresses.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.ListDeviceAddresses%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L258">View Source</a>
+  </span>
+  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_ListDeviceAddresses_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.ListDeviceAddresses*"></a>
+  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_ListDeviceAddresses" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.ListDeviceAddresses">ListDeviceAddresses()</h4>
+  <div class="markdown level1 summary"><p>Lists all device addresses and puts them into an array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] ListDeviceAddresses()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -296,10 +306,72 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_ListDeviceNames.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.ListDeviceNames%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L264">View Source</a>
+  </span>
+  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_ListDeviceNames_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.ListDeviceNames*"></a>
+  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_ListDeviceNames" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.ListDeviceNames">ListDeviceNames()</h4>
+  <div class="markdown level1 summary"><p>Lists all device names and puts them into an array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] ListDeviceNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_ListDevices.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.ListDevices%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L270">View Source</a>
+  </span>
+  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_ListDevices_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.ListDevices*"></a>
+  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_ListDevices" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.ListDevices">ListDevices()</h4>
+  <div class="markdown level1 summary"><p>Lists all devices and puts them into an array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RemoteDebugDeviceInfo[] ListDevices()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Debugging.RemoteDebug.RemoteDebugDeviceInfo.html">RemoteDebugDeviceInfo</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_PopulateBlockedDevices.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.PopulateBlockedDevices%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L176">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L169">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_PopulateBlockedDevices_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.PopulateBlockedDevices*"></a>
   <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_PopulateBlockedDevices" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.PopulateBlockedDevices">PopulateBlockedDevices()</h4>
@@ -328,19 +400,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_RemoveDeviceFromJson_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RemoveDeviceFromJson(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_RemoveDevice_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RemoveDevice(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L336">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L222">View Source</a>
   </span>
-  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_RemoveDeviceFromJson_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RemoveDeviceFromJson*"></a>
-  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_RemoveDeviceFromJson_System_String_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RemoveDeviceFromJson(System.String)">RemoveDeviceFromJson(string)</h4>
-  <div class="markdown level1 summary"><p>Removes a device IP address from JSON</p>
+  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_RemoveDevice_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RemoveDevice*"></a>
+  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_RemoveDevice_System_String_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RemoveDevice(System.String)">RemoveDevice(string)</h4>
+  <div class="markdown level1 summary"><p>Removes a device IP address from the list</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RemoveDeviceFromJson(string DeviceIP)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RemoveDevice(string address)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -354,7 +426,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">DeviceIP</span></td>
+        <td><span class="parametername">address</span></td>
         <td><p>Device IP address from remote endpoint address</p>
 </td>
       </tr>
@@ -365,7 +437,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_RemoveFromBlockList_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RemoveFromBlockList(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L134">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L126">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_RemoveFromBlockList_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RemoveFromBlockList*"></a>
   <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_RemoveFromBlockList_System_String_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RemoveFromBlockList(System.String)">RemoveFromBlockList(string)</h4>
@@ -374,7 +446,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RemoveFromBlockList(string IP)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RemoveFromBlockList(string address)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -388,110 +460,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">IP</span></td>
+        <td><span class="parametername">address</span></td>
         <td><p>A blocked IP address for device</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_SetDeviceProperty_System_String_KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_DeviceProperty_System_Object_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.SetDeviceProperty(System.String%2CKS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.DeviceProperty%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L239">View Source</a>
-  </span>
-  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_SetDeviceProperty_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.SetDeviceProperty*"></a>
-  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_SetDeviceProperty_System_String_KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_DeviceProperty_System_Object_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.SetDeviceProperty(System.String,KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.DeviceProperty,System.Object)">SetDeviceProperty(string, DeviceProperty, object)</h4>
-  <div class="markdown level1 summary"><p>Sets device property from device IP address</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetDeviceProperty(string DeviceIP, RemoteDebugTools.DeviceProperty DeviceProperty, object Value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">DeviceIP</span></td>
-        <td><p>Device IP address from remote endpoint address</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.html">RemoteDebugTools</a>.<a class="xref" href="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.DeviceProperty.html">DeviceProperty</a></td>
-        <td><span class="parametername">DeviceProperty</span></td>
-        <td><p>Device property</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
-        <td><span class="parametername">Value</span></td>
-        <td><p>Value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TryAddDeviceToJson_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TryAddDeviceToJson(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L319">View Source</a>
-  </span>
-  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TryAddDeviceToJson_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TryAddDeviceToJson*"></a>
-  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TryAddDeviceToJson_System_String_System_Boolean_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TryAddDeviceToJson(System.String,System.Boolean)">TryAddDeviceToJson(string, bool)</h4>
-  <div class="markdown level1 summary"><p>Adds new device IP address to JSON</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryAddDeviceToJson(string DeviceIP, bool ThrowException = true)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">DeviceIP</span></td>
-        <td><p>Device IP address from remote endpoint address</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">ThrowException</span></td>
-        <td><p>Optionally throw exception</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>True if successful; False if unsuccessful.</p>
 </td>
       </tr>
     </tbody>
@@ -501,7 +471,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TryAddToBlockList_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TryAddToBlockList(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L115">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L106">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TryAddToBlockList_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TryAddToBlockList*"></a>
   <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TryAddToBlockList_System_String_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TryAddToBlockList(System.String)">TryAddToBlockList(string)</h4>
@@ -510,7 +480,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryAddToBlockList(string IP)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryAddToBlockList(string address)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -524,7 +494,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">IP</span></td>
+        <td><span class="parametername">address</span></td>
         <td><p>An IP address for device</p>
 </td>
       </tr>
@@ -548,19 +518,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TryRemoveDeviceFromJson_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TryRemoveDeviceFromJson(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TryRemoveDevice_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TryRemoveDevice(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L356">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L242">View Source</a>
   </span>
-  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TryRemoveDeviceFromJson_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TryRemoveDeviceFromJson*"></a>
-  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TryRemoveDeviceFromJson_System_String_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TryRemoveDeviceFromJson(System.String)">TryRemoveDeviceFromJson(string)</h4>
-  <div class="markdown level1 summary"><p>Removes a device IP address from JSON</p>
+  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TryRemoveDevice_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TryRemoveDevice*"></a>
+  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TryRemoveDevice_System_String_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TryRemoveDevice(System.String)">TryRemoveDevice(string)</h4>
+  <div class="markdown level1 summary"><p>Removes a device IP address from the list</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryRemoveDeviceFromJson(string DeviceIP)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryRemoveDevice(string address)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -574,7 +544,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">DeviceIP</span></td>
+        <td><span class="parametername">address</span></td>
         <td><p>Device IP address from remote endpoint address</p>
 </td>
       </tr>
@@ -601,7 +571,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TryRemoveFromBlockList_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TryRemoveFromBlockList(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L157">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L149">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TryRemoveFromBlockList_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TryRemoveFromBlockList*"></a>
   <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TryRemoveFromBlockList_System_String_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TryRemoveFromBlockList(System.String)">TryRemoveFromBlockList(string)</h4>
@@ -610,7 +580,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryRemoveFromBlockList(string IP)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryRemoveFromBlockList(string address)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -624,70 +594,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">IP</span></td>
+        <td><span class="parametername">address</span></td>
         <td><p>A blocked IP address for device</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>True if successful; False if unsuccessful.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TrySetDeviceProperty_System_String_KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_DeviceProperty_System_Object_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TrySetDeviceProperty(System.String%2CKS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.DeviceProperty%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L280">View Source</a>
-  </span>
-  <a id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TrySetDeviceProperty_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TrySetDeviceProperty*"></a>
-  <h4 id="KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_TrySetDeviceProperty_System_String_KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_DeviceProperty_System_Object_" data-uid="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.TrySetDeviceProperty(System.String,KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.DeviceProperty,System.Object)">TrySetDeviceProperty(string, DeviceProperty, object)</h4>
-  <div class="markdown level1 summary"><p>Sets device property from device IP address</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TrySetDeviceProperty(string DeviceIP, RemoteDebugTools.DeviceProperty DeviceProperty, object Value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">DeviceIP</span></td>
-        <td><p>Device IP address from remote endpoint address</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.html">RemoteDebugTools</a>.<a class="xref" href="KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.DeviceProperty.html">DeviceProperty</a></td>
-        <td><span class="parametername">DeviceProperty</span></td>
-        <td><p>Device property</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
-        <td><span class="parametername">Value</span></td>
-        <td><p>Value</p>
 </td>
       </tr>
     </tbody>
@@ -720,7 +628,7 @@
                     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L37" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/RemoteDebugTools.cs/#L36" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
