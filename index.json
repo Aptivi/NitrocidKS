@@ -929,6 +929,16 @@
     "title": "Namespace KS.Kernel.Exceptions | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Kernel.Exceptions Classes KernelErrorException Thrown when there was a kernel error. Used for KernelError(KernelErrorLevel, bool, long, string, Exception, params object[]) KernelException A kernel exception occurred Enums KernelErrorLevel One-lettered kernel error level enumeration KernelExceptionType Kernel exception types"
   },
+  "api/KS.Kernel.Extensions.AddonType.html": {
+    "href": "api/KS.Kernel.Extensions.AddonType.html",
+    "title": "Enum AddonType | Nitrocid KS API - Aptivi",
+    "keywords": "Enum AddonType Addon type Namespace: KS.Kernel.Extensions Assembly: Nitrocid.dll Syntax public enum AddonType Fields Name Description Important Important addons that must be loaded before all the optional ones. Optional Optional addons that may be loaded."
+  },
+  "api/KS.Kernel.Extensions.html": {
+    "href": "api/KS.Kernel.Extensions.html",
+    "title": "Namespace KS.Kernel.Extensions | Nitrocid KS API - Aptivi",
+    "keywords": "Namespace KS.Kernel.Extensions Enums AddonType Addon type"
+  },
   "api/KS.Kernel.Flags.html": {
     "href": "api/KS.Kernel.Flags.html",
     "title": "Class Flags | Nitrocid KS API - Aptivi",
