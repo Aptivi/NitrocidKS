@@ -5536,6 +5536,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Network.SpeedDial.SpeedDialEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Network.SpeedDial.SpeedDialEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Network.SpeedDial.SpeedDialTools.yml",
       "output": {
         ".html": {
