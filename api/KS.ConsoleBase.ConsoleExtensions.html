@@ -214,19 +214,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_ConsoleExtensions_GetFilteredPositions_System_String_System_Object___.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions(System.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_ConsoleExtensions_GetFilteredPositions_System_String_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions(System.String%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/ConsoleExtensions.cs/#L96">View Source</a>
   </span>
   <a id="KS_ConsoleBase_ConsoleExtensions_GetFilteredPositions_" data-uid="KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions*"></a>
-  <h4 id="KS_ConsoleBase_ConsoleExtensions_GetFilteredPositions_System_String_System_Object___" data-uid="KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions(System.String,System.Object[])">GetFilteredPositions(string, params object[])</h4>
+  <h4 id="KS_ConsoleBase_ConsoleExtensions_GetFilteredPositions_System_String_System_Boolean_System_Object___" data-uid="KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions(System.String,System.Boolean,System.Object[])">GetFilteredPositions(string, bool, params object[])</h4>
   <div class="markdown level1 summary"><p>Get the filtered cursor positions (by filtered means filtered from the VT escape sequences that matches the regex in the routine)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static (int, int) GetFilteredPositions(string Text, params object[] Vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static (int, int) GetFilteredPositions(string Text, bool line, params object[] Vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -243,6 +243,11 @@
         <td><span class="parametername">Text</span></td>
         <td><p>The text that contains the VT sequences</p>
 </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
@@ -396,7 +401,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_ConsoleExtensions_ResetAll.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.ConsoleExtensions.ResetAll%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/ConsoleExtensions.cs/#L155">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/ConsoleExtensions.cs/#L176">View Source</a>
   </span>
   <a id="KS_ConsoleBase_ConsoleExtensions_ResetAll_" data-uid="KS.ConsoleBase.ConsoleExtensions.ResetAll*"></a>
   <h4 id="KS_ConsoleBase_ConsoleExtensions_ResetAll" data-uid="KS.ConsoleBase.ConsoleExtensions.ResetAll">ResetAll()</h4>
@@ -412,7 +417,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_ConsoleExtensions_SetTitle_System_String_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.ConsoleExtensions.SetTitle(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/ConsoleExtensions.cs/#L144">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/ConsoleExtensions.cs/#L165">View Source</a>
   </span>
   <a id="KS_ConsoleBase_ConsoleExtensions_SetTitle_" data-uid="KS.ConsoleBase.ConsoleExtensions.SetTitle*"></a>
   <h4 id="KS_ConsoleBase_ConsoleExtensions_SetTitle_System_String_" data-uid="KS.ConsoleBase.ConsoleExtensions.SetTitle(System.String)">SetTitle(string)</h4>
