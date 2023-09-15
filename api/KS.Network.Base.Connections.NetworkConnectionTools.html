@@ -1394,19 +1394,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_KS_Shell_ShellBase_Shells_ShellType_System_Func_System_String_KS_Network_Base_Connections_NetworkConnection__System_Func_System_String_Newtonsoft_Json_Linq_JToken_KS_Network_Base_Connections_NetworkConnection__System_String_.md&amp;value=---%0Auid%3A%20KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(KS.Shell.ShellBase.Shells.ShellType%2CSystem.Func%7BSystem.String%2CKS.Network.Base.Connections.NetworkConnection%7D%2CSystem.Func%7BSystem.String%2CNewtonsoft.Json.Linq.JToken%2CKS.Network.Base.Connections.NetworkConnection%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_KS_Shell_ShellBase_Shells_ShellType_System_Func_System_String_KS_Network_Base_Connections_NetworkConnection__System_Func_System_String_KS_Network_SpeedDial_SpeedDialEntry_KS_Network_Base_Connections_NetworkConnection__System_String_.md&amp;value=---%0Auid%3A%20KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(KS.Shell.ShellBase.Shells.ShellType%2CSystem.Func%7BSystem.String%2CKS.Network.Base.Connections.NetworkConnection%7D%2CSystem.Func%7BSystem.String%2CKS.Network.SpeedDial.SpeedDialEntry%2CKS.Network.Base.Connections.NetworkConnection%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Network/Base/Connections/NetworkConnectionTools.cs/#L392">View Source</a>
   </span>
   <a id="KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell*"></a>
-  <h4 id="KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_KS_Shell_ShellBase_Shells_ShellType_System_Func_System_String_KS_Network_Base_Connections_NetworkConnection__System_Func_System_String_Newtonsoft_Json_Linq_JToken_KS_Network_Base_Connections_NetworkConnection__System_String_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(KS.Shell.ShellBase.Shells.ShellType,System.Func{System.String,KS.Network.Base.Connections.NetworkConnection},System.Func{System.String,Newtonsoft.Json.Linq.JToken,KS.Network.Base.Connections.NetworkConnection},System.String)">OpenConnectionForShell(ShellType, Func&lt;string, NetworkConnection&gt;, Func&lt;string, JToken, NetworkConnection&gt;, string)</h4>
+  <h4 id="KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_KS_Shell_ShellBase_Shells_ShellType_System_Func_System_String_KS_Network_Base_Connections_NetworkConnection__System_Func_System_String_KS_Network_SpeedDial_SpeedDialEntry_KS_Network_Base_Connections_NetworkConnection__System_String_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(KS.Shell.ShellBase.Shells.ShellType,System.Func{System.String,KS.Network.Base.Connections.NetworkConnection},System.Func{System.String,KS.Network.SpeedDial.SpeedDialEntry,KS.Network.Base.Connections.NetworkConnection},System.String)">OpenConnectionForShell(ShellType, Func&lt;string, NetworkConnection&gt;, Func&lt;string, SpeedDialEntry, NetworkConnection&gt;, string)</h4>
   <div class="markdown level1 summary"><p>Opens a connection for the selected shell</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OpenConnectionForShell(ShellType shellType, Func&lt;string, NetworkConnection&gt; establisher, Func&lt;string, JToken, NetworkConnection&gt; speedEstablisher, string address = &quot;&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void OpenConnectionForShell(ShellType shellType, Func&lt;string, NetworkConnection&gt; establisher, Func&lt;string, SpeedDialEntry, NetworkConnection&gt; speedEstablisher, string address = &quot;&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1431,7 +1431,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">JToken</span>, <a class="xref" href="KS.Network.Base.Connections.NetworkConnection.html">NetworkConnection</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="KS.Network.SpeedDial.SpeedDialEntry.html">SpeedDialEntry</a>, <a class="xref" href="KS.Network.Base.Connections.NetworkConnection.html">NetworkConnection</a>&gt;</td>
         <td><span class="parametername">speedEstablisher</span></td>
         <td><p>The function responsible for establishing the network connection with speed dial options</p>
 </td>
@@ -1446,19 +1446,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_System_String_System_Func_System_String_KS_Network_Base_Connections_NetworkConnection__System_Func_System_String_Newtonsoft_Json_Linq_JToken_KS_Network_Base_Connections_NetworkConnection__System_String_.md&amp;value=---%0Auid%3A%20KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(System.String%2CSystem.Func%7BSystem.String%2CKS.Network.Base.Connections.NetworkConnection%7D%2CSystem.Func%7BSystem.String%2CNewtonsoft.Json.Linq.JToken%2CKS.Network.Base.Connections.NetworkConnection%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_System_String_System_Func_System_String_KS_Network_Base_Connections_NetworkConnection__System_Func_System_String_KS_Network_SpeedDial_SpeedDialEntry_KS_Network_Base_Connections_NetworkConnection__System_String_.md&amp;value=---%0Auid%3A%20KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(System.String%2CSystem.Func%7BSystem.String%2CKS.Network.Base.Connections.NetworkConnection%7D%2CSystem.Func%7BSystem.String%2CKS.Network.SpeedDial.SpeedDialEntry%2CKS.Network.Base.Connections.NetworkConnection%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Network/Base/Connections/NetworkConnectionTools.cs/#L402">View Source</a>
   </span>
   <a id="KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell*"></a>
-  <h4 id="KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_System_String_System_Func_System_String_KS_Network_Base_Connections_NetworkConnection__System_Func_System_String_Newtonsoft_Json_Linq_JToken_KS_Network_Base_Connections_NetworkConnection__System_String_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(System.String,System.Func{System.String,KS.Network.Base.Connections.NetworkConnection},System.Func{System.String,Newtonsoft.Json.Linq.JToken,KS.Network.Base.Connections.NetworkConnection},System.String)">OpenConnectionForShell(string, Func&lt;string, NetworkConnection&gt;, Func&lt;string, JToken, NetworkConnection&gt;, string)</h4>
+  <h4 id="KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_System_String_System_Func_System_String_KS_Network_Base_Connections_NetworkConnection__System_Func_System_String_KS_Network_SpeedDial_SpeedDialEntry_KS_Network_Base_Connections_NetworkConnection__System_String_" data-uid="KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(System.String,System.Func{System.String,KS.Network.Base.Connections.NetworkConnection},System.Func{System.String,KS.Network.SpeedDial.SpeedDialEntry,KS.Network.Base.Connections.NetworkConnection},System.String)">OpenConnectionForShell(string, Func&lt;string, NetworkConnection&gt;, Func&lt;string, SpeedDialEntry, NetworkConnection&gt;, string)</h4>
   <div class="markdown level1 summary"><p>Opens a connection for the selected shell</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OpenConnectionForShell(string shellType, Func&lt;string, NetworkConnection&gt; establisher, Func&lt;string, JToken, NetworkConnection&gt; speedEstablisher, string address = &quot;&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void OpenConnectionForShell(string shellType, Func&lt;string, NetworkConnection&gt; establisher, Func&lt;string, SpeedDialEntry, NetworkConnection&gt; speedEstablisher, string address = &quot;&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1483,7 +1483,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">JToken</span>, <a class="xref" href="KS.Network.Base.Connections.NetworkConnection.html">NetworkConnection</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="KS.Network.SpeedDial.SpeedDialEntry.html">SpeedDialEntry</a>, <a class="xref" href="KS.Network.Base.Connections.NetworkConnection.html">NetworkConnection</a>&gt;</td>
         <td><span class="parametername">speedEstablisher</span></td>
         <td><p>The function responsible for establishing the network connection with speed dial options</p>
 </td>
