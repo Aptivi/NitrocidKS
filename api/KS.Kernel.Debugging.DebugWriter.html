@@ -215,7 +215,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugWriter_WriteDebugConditional_System_Boolean_KS_Kernel_Debugging_DebugLevel_System_String_System_Object___.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugWriter.WriteDebugConditional(System.Boolean%2CKS.Kernel.Debugging.DebugLevel%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugWriter.cs/#L192">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugWriter.cs/#L195">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_DebugWriter_WriteDebugConditional_" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugConditional*"></a>
   <h4 id="KS_Kernel_Debugging_DebugWriter_WriteDebugConditional_System_Boolean_KS_Kernel_Debugging_DebugLevel_System_String_System_Object___" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugConditional(System.Boolean,KS.Kernel.Debugging.DebugLevel,System.String,System.Object[])">WriteDebugConditional(bool, DebugLevel, string, params object[])</h4>
@@ -264,19 +264,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugWriter_WriteDebugDevicesOnly_KS_Kernel_Debugging_DebugLevel_System_String_System_Object___.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly(KS.Kernel.Debugging.DebugLevel%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugWriter_WriteDebugDevicesOnly_KS_Kernel_Debugging_DebugLevel_System_String_System_Boolean_System_Object___.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly(KS.Kernel.Debugging.DebugLevel%2CSystem.String%2CSystem.Boolean%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugWriter.cs/#L207">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugWriter.cs/#L211">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_DebugWriter_WriteDebugDevicesOnly_" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly*"></a>
-  <h4 id="KS_Kernel_Debugging_DebugWriter_WriteDebugDevicesOnly_KS_Kernel_Debugging_DebugLevel_System_String_System_Object___" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly(KS.Kernel.Debugging.DebugLevel,System.String,System.Object[])">WriteDebugDevicesOnly(DebugLevel, string, params object[])</h4>
+  <h4 id="KS_Kernel_Debugging_DebugWriter_WriteDebugDevicesOnly_KS_Kernel_Debugging_DebugLevel_System_String_System_Boolean_System_Object___" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly(KS.Kernel.Debugging.DebugLevel,System.String,System.Boolean,System.Object[])">WriteDebugDevicesOnly(DebugLevel, string, bool, params object[])</h4>
   <div class="markdown level1 summary"><p>Outputs the text into the debugger devices, and sets the time stamp. Note that it doesn't print where did the debugger debug in source files.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteDebugDevicesOnly(DebugLevel Level, string text, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteDebugDevicesOnly(DebugLevel Level, string text, bool force, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -298,6 +298,58 @@
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">text</span></td>
         <td><p>A sentence that will be written to the the debugger devices. Supports {0}, {1}, ...</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">force</span></td>
+        <td><p>Force message to appear, regardless of mute settings</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message before it's written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugWriter_WriteDebugLogOnly_KS_Kernel_Debugging_DebugLevel_System_String_System_Object___.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugWriter.WriteDebugLogOnly(KS.Kernel.Debugging.DebugLevel%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugWriter.cs/#L104">View Source</a>
+  </span>
+  <a id="KS_Kernel_Debugging_DebugWriter_WriteDebugLogOnly_" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugLogOnly*"></a>
+  <h4 id="KS_Kernel_Debugging_DebugWriter_WriteDebugLogOnly_KS_Kernel_Debugging_DebugLevel_System_String_System_Object___" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugLogOnly(KS.Kernel.Debugging.DebugLevel,System.String,System.Object[])">WriteDebugLogOnly(DebugLevel, string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Outputs the text into the debugger file, and sets the time stamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteDebugLogOnly(DebugLevel Level, string text, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Debugging.DebugLevel.html">DebugLevel</a></td>
+        <td><span class="parametername">Level</span></td>
+        <td><p>Debug level</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>A sentence that will be written to the the debugger file. Supports {0}, {1}, ...</p>
 </td>
       </tr>
       <tr>
@@ -365,7 +417,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugWriter_WriteDebugStackTrace_System_Exception_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugWriter.WriteDebugStackTrace(System.Exception)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugWriter.cs/#L248">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugWriter.cs/#L254">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_DebugWriter_WriteDebugStackTrace_" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugStackTrace*"></a>
   <h4 id="KS_Kernel_Debugging_DebugWriter_WriteDebugStackTrace_System_Exception_" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugStackTrace(System.Exception)">WriteDebugStackTrace(Exception)</h4>
@@ -399,7 +451,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugWriter_WriteDebugStackTraceConditional_System_Boolean_System_Exception_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugWriter.WriteDebugStackTraceConditional(System.Boolean%2CSystem.Exception)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugWriter.cs/#L235">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugWriter.cs/#L241">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_DebugWriter_WriteDebugStackTraceConditional_" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugStackTraceConditional*"></a>
   <h4 id="KS_Kernel_Debugging_DebugWriter_WriteDebugStackTraceConditional_System_Boolean_System_Exception_" data-uid="KS.Kernel.Debugging.DebugWriter.WriteDebugStackTraceConditional(System.Boolean,System.Exception)">WriteDebugStackTraceConditional(bool, Exception)</h4>
