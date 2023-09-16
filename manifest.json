@@ -2836,26 +2836,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Contacts.ContactsManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Contacts.ContactsManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Contacts.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Contacts.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Editors.HexEdit.HexEditTools.yml",
       "output": {
         ".html": {
@@ -2930,16 +2910,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Editors.TextEdit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Interactives.ContactsManagerCli.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Interactives.ContactsManagerCli.html"
         }
       },
       "version": ""
