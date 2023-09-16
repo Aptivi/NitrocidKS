@@ -1459,16 +1459,6 @@
     "title": "Namespace KS.Misc.Editors.TextEdit | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Misc.Editors.TextEdit Classes TextEditTools Text editor tools module"
   },
-  "api/KS.Misc.Forecast.Forecast.html": {
-    "href": "api/KS.Misc.Forecast.Forecast.html",
-    "title": "Class Forecast | Nitrocid KS API - Aptivi",
-    "keywords": "Class Forecast Forecast module Inheritance object Forecast Namespace: KS.Misc.Forecast Assembly: Nitrocid.dll Syntax public static class Forecast Properties | Edit this page View Source PreferredUnit Preferred unit for forecast measurements Declaration public static UnitMeasurement PreferredUnit { get; } Property Value Type Description UnitMeasurement Methods | Edit this page View Source GetWeatherInfo(long) Gets current weather info from OpenWeatherMap Declaration public static ForecastInfo GetWeatherInfo(long CityID) Parameters Type Name Description long CityID City ID Returns Type Description ForecastInfo A class containing properties of weather information | Edit this page View Source GetWeatherInfo(long, string) Gets current weather info from OpenWeatherMap Declaration public static ForecastInfo GetWeatherInfo(long CityID, string APIKey) Parameters Type Name Description long CityID City ID string APIKey API key Returns Type Description ForecastInfo A class containing properties of weather information | Edit this page View Source GetWeatherInfo(string) Gets current weather info from OpenWeatherMap Declaration public static ForecastInfo GetWeatherInfo(string CityName) Parameters Type Name Description string CityName City name Returns Type Description ForecastInfo A class containing properties of weather information | Edit this page View Source GetWeatherInfo(string, string) Gets current weather info from OpenWeatherMap Declaration public static ForecastInfo GetWeatherInfo(string CityName, string APIKey) Parameters Type Name Description string CityName City name string APIKey API key Returns Type Description ForecastInfo A class containing properties of weather information | Edit this page View Source PrintWeatherInfo(string) Prints the weather information to the console Declaration public static void PrintWeatherInfo(string CityID) Parameters Type Name Description string CityID City ID or name | Edit this page View Source PrintWeatherInfo(string, string) Prints the weather information to the console Declaration public static void PrintWeatherInfo(string CityID, string APIKey) Parameters Type Name Description string CityID City ID or name string APIKey API Key"
-  },
-  "api/KS.Misc.Forecast.html": {
-    "href": "api/KS.Misc.Forecast.html",
-    "title": "Namespace KS.Misc.Forecast | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Misc.Forecast Classes Forecast Forecast module"
-  },
   "api/KS.Misc.Interactives.ContactsManagerCli.html": {
     "href": "api/KS.Misc.Interactives.ContactsManagerCli.html",
     "title": "Class ContactsManagerCli | Nitrocid KS API - Aptivi",
