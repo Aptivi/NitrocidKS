@@ -7216,6 +7216,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Shells.ShellManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Shells.ShellManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.Shells.ShellStart.yml",
       "output": {
         ".html": {
@@ -7250,16 +7260,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.ShellManager.html"
         }
       },
       "version": ""
@@ -7610,16 +7610,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.html"
         }
       },
       "version": ""
