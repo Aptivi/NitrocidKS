@@ -2474,21 +2474,6 @@
     "title": "Namespace KS.Misc.Timers | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Misc.Timers Classes StopwatchScreen Stopwatch CLI module TimerScreen Timer CLI module"
   },
-  "api/KS.Misc.ToDoList.ToDoManager.html": {
-    "href": "api/KS.Misc.ToDoList.ToDoManager.html",
-    "title": "Class ToDoManager | Nitrocid KS API - Aptivi",
-    "keywords": "Class ToDoManager Manages your to-do list Inheritance object ToDoManager Namespace: KS.Misc.ToDoList Assembly: Nitrocid.dll Syntax public static class ToDoManager Methods | Edit this page View Source AddTask(string) Adds a task Declaration public static void AddTask(string taskName) Parameters Type Name Description string taskName Task name to add | Edit this page View Source GetTask(string) Gets a to-do task Declaration public static ToDoTask GetTask(string taskName) Parameters Type Name Description string taskName Task name to get Returns Type Description ToDoTask An instance of ToDoTask | Edit this page View Source GetTaskIndex(string) Gets a to-do task index Declaration public static int GetTaskIndex(string taskName) Parameters Type Name Description string taskName Task name to get Returns Type Description int An index of ToDoTask | Edit this page View Source GetTaskNames() Gets the task names Declaration public static string[] GetTaskNames() Returns Type Description string[] An array of string containing task names | Edit this page View Source LoadTasks() Loads all tasks Declaration public static void LoadTasks() | Edit this page View Source RemoveTask(string) Removes a task Declaration public static void RemoveTask(string taskName) Parameters Type Name Description string taskName Task name to remove | Edit this page View Source SaveTasks() Saves all tasks Declaration public static void SaveTasks() | Edit this page View Source SetDone(string) Sets the task as done Declaration public static void SetDone(string taskName) Parameters Type Name Description string taskName Task name to set | Edit this page View Source SetUndone(string) Sets the task as undone Declaration public static void SetUndone(string taskName) Parameters Type Name Description string taskName Task name to set | Edit this page View Source TaskExists(string) Checks to see whether the to-do task exists Declaration public static bool TaskExists(string taskName) Parameters Type Name Description string taskName Task name to check Returns Type Description bool True if found; false otherwise"
-  },
-  "api/KS.Misc.ToDoList.ToDoTask.html": {
-    "href": "api/KS.Misc.ToDoList.ToDoTask.html",
-    "title": "Class ToDoTask | Nitrocid KS API - Aptivi",
-    "keywords": "Class ToDoTask Holds the to-do task Inheritance object ToDoTask Namespace: KS.Misc.ToDoList Assembly: Nitrocid.dll Syntax public class ToDoTask Properties | Edit this page View Source TaskDone Whether the task is done or not Declaration public bool TaskDone { get; set; } Property Value Type Description bool | Edit this page View Source TaskName Task name Declaration public string TaskName { get; set; } Property Value Type Description string"
-  },
-  "api/KS.Misc.ToDoList.html": {
-    "href": "api/KS.Misc.ToDoList.html",
-    "title": "Namespace KS.Misc.ToDoList | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Misc.ToDoList Classes ToDoManager Manages your to-do list ToDoTask Holds the to-do task"
-  },
   "api/KS.Modifications.IMod.html": {
     "href": "api/KS.Modifications.IMod.html",
     "title": "Interface IMod | Nitrocid KS API - Aptivi",

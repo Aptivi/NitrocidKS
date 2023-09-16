@@ -4966,36 +4966,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.ToDoList.ToDoManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.ToDoList.ToDoManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.ToDoList.ToDoTask.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.ToDoList.ToDoTask.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.ToDoList.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.ToDoList.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Modifications.IMod.yml",
       "output": {
         ".html": {
