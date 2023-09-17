@@ -656,30 +656,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Console.BaseConsoleDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Console.BaseConsoleDriver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.Console.ConsoleDriverTools.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Console.ConsoleDriverTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Drivers.Console.Consoles.BaseConsoleDriver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Drivers.Console.Consoles.BaseConsoleDriver.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Drivers.Console.Consoles.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Drivers.Console.Consoles.html"
         }
       },
       "version": ""
@@ -766,6 +756,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encryption.BaseEncryptionDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encryption.BaseEncryptionDriver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.Encryption.Encryption.yml",
       "output": {
         ".html": {
@@ -780,16 +780,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Drivers.Encryption.EncryptionDriverTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Drivers.Encryption.Encryptors.BaseEncryptionDriver.html"
         }
       },
       "version": ""
@@ -1100,6 +1090,86 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Attributes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Editors.HexEdit.HexEditTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Editors.HexEdit.HexEditTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Editors.HexEdit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Editors.HexEdit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Editors.JsonShell.JsonTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Editors.JsonShell.JsonTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Editors.JsonShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Editors.JsonShell.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Editors.SqlEdit.SqlEditTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Editors.SqlEdit.SqlEditTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Editors.SqlEdit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Editors.SqlEdit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Editors.TextEdit.TextEditTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Editors.TextEdit.TextEditTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Editors.TextEdit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Editors.TextEdit.html"
         }
       },
       "version": ""
@@ -1490,26 +1560,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Groups.GroupInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Groups.GroupInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Groups.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Groups.html"
         }
       },
       "version": ""
@@ -2106,16 +2156,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Time.Renderers.TimeZoneRenderers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Time.Renderers.TimeZoneRenderers.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Time.Renderers.yml",
       "output": {
         ".html": {
@@ -2130,6 +2170,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Time.TimeDateTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Timezones.TimeZoneRenderers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Timezones.TimeZoneRenderers.html"
         }
       },
       "version": ""
@@ -2650,86 +2700,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Animations.SquareCorner.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.HexEdit.HexEditTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.HexEdit.HexEditTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.HexEdit.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.HexEdit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.JsonShell.JsonTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.JsonShell.JsonTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.JsonShell.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.JsonShell.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.SqlEdit.SqlEditTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.SqlEdit.SqlEditTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.SqlEdit.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.SqlEdit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.TextEditTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.TextEditTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Editors.TextEdit.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Editors.TextEdit.html"
         }
       },
       "version": ""
@@ -4506,6 +4476,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Splash.BaseSplash.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Splash.BaseSplash.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Splash.ISplash.yml",
       "output": {
         ".html": {
@@ -4540,26 +4520,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Splash.SplashReport.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Splash.Splashes.BaseSplash.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Splash.Splashes.BaseSplash.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Splash.Splashes.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Splash.Splashes.html"
         }
       },
       "version": ""
@@ -7220,6 +7180,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.UESH.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Groups.GroupInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Groups.GroupInfo.html"
         }
       },
       "version": ""
