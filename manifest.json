@@ -2716,26 +2716,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Archive.ArchiveTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Archive.ArchiveTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Archive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Archive.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Editors.HexEdit.HexEditTools.yml",
       "output": {
         ".html": {
@@ -5486,86 +5466,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchiveDefaultPreset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchiveDefaultPreset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLine1Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLine1Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLine2Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLine2Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLine3Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLine3Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLineBG1Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLineBG1Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLineBG2Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLineBG2Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLineBG3Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Archive.ArchivePowerLineBG3Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Archive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Archive.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Prompts.Presets.Debug.DebugDefaultPreset.yml",
       "output": {
         ".html": {
@@ -7130,26 +7030,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Admin.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Archive.ArchiveShell.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Archive.ArchiveShell.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Archive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Archive.html"
         }
       },
       "version": ""
