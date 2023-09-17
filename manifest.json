@@ -2256,66 +2256,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Amusements.Games.MeteorShooter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Amusements.Games.MeteorShooter.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Amusements.Games.ShipDuetShooter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Amusements.Games.ShipDuetShooter.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Amusements.Games.Solver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Amusements.Games.Solver.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Amusements.Games.SpeedPress.SpeedPressDifficulty.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Amusements.Games.SpeedPress.SpeedPressDifficulty.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Amusements.Games.SpeedPress.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Amusements.Games.SpeedPress.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Amusements.Games.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Amusements.Games.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Animations.BSOD.BSOD.yml",
       "output": {
         ".html": {
@@ -4056,16 +3996,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.MeteorDisplay.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.MeteorDisplay.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.Displays.NewYearDisplay.yml",
       "output": {
         ".html": {
@@ -4186,26 +4116,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.QuoteDisplay.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.QuoteDisplay.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.QuoteSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.QuoteSettings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.Displays.RampDisplay.yml",
       "output": {
         ".html": {
@@ -4220,16 +4130,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.RampSettings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.ShipDuetDisplay.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.ShipDuetDisplay.html"
         }
       },
       "version": ""
@@ -4290,26 +4190,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.SnakeFillSettings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.SnakerDisplay.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.SnakerDisplay.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.SnakerSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.SnakerSettings.html"
         }
       },
       "version": ""
