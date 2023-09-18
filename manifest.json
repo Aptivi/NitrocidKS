@@ -2576,36 +2576,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Animations.Lyrics.Lyrics.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Animations.Lyrics.Lyrics.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Animations.Lyrics.LyricsSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Animations.Lyrics.LyricsSettings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Animations.Lyrics.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Animations.Lyrics.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Animations.Pulse.Pulse.yml",
       "output": {
         ".html": {
@@ -2730,16 +2700,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Interactives.TaskManagerCli.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Interactives.UnitConverterCli.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Interactives.UnitConverterCli.html"
         }
       },
       "version": ""
@@ -3846,26 +3806,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.LyricsDisplay.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.LyricsDisplay.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.LyricsSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.LyricsSettings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Screensaver.Displays.MarqueeDisplay.yml",
       "output": {
         ".html": {
@@ -4010,26 +3950,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Screensaver.Displays.NumberScatterSettings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.PersonLookupDisplay.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.PersonLookupDisplay.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Screensaver.Displays.PersonLookupSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Screensaver.Displays.PersonLookupSettings.html"
         }
       },
       "version": ""
