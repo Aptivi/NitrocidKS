@@ -814,6 +814,16 @@
     "title": "Namespace KS.Kernel.Configuration.Instances | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Kernel.Configuration.Instances Classes KernelMainConfig Main kernel configuration instance KernelSaverConfig Screensaver kernel configuration instance KernelSplashConfig Configuration instance for splashes (to be serialized)"
   },
+  "api/KS.Kernel.Configuration.Settings.SettingsApp.html": {
+    "href": "api/KS.Kernel.Configuration.Settings.SettingsApp.html",
+    "title": "Class SettingsApp | Nitrocid KS API - Aptivi",
+    "keywords": "Class SettingsApp Settings application module Inheritance object SettingsApp Namespace: KS.Kernel.Configuration.Settings Assembly: Nitrocid.dll Syntax public static class SettingsApp Methods | Edit this page View Source OpenKey(string, int, JToken, ConfigType) Open a key. Declaration public static void OpenKey(string Section, int KeyNumber, JToken SettingsToken, ConfigType SettingsType) Parameters Type Name Description string Section Section int KeyNumber Key number JToken SettingsToken Settings token ConfigType SettingsType Settings type | Edit this page View Source OpenMainPage(ConfigType) Main page Declaration public static void OpenMainPage(ConfigType SettingsType) Parameters Type Name Description ConfigType SettingsType | Edit this page View Source OpenSection(string, JToken, ConfigType) Open section Declaration public static void OpenSection(string Section, JToken SettingsToken, ConfigType SettingsType) Parameters Type Name Description string Section Section name JToken SettingsToken Settings token ConfigType SettingsType Settings type | Edit this page View Source VariableFinder(JToken, ConfigType) A sub for variable finding prompt Declaration public static void VariableFinder(JToken SettingsToken, ConfigType SettingsType) Parameters Type Name Description JToken SettingsToken ConfigType SettingsType"
+  },
+  "api/KS.Kernel.Configuration.Settings.html": {
+    "href": "api/KS.Kernel.Configuration.Settings.html",
+    "title": "Namespace KS.Kernel.Configuration.Settings | Nitrocid KS API - Aptivi",
+    "keywords": "Namespace KS.Kernel.Configuration.Settings Classes SettingsApp Settings application module"
+  },
   "api/KS.Kernel.Configuration.html": {
     "href": "api/KS.Kernel.Configuration.html",
     "title": "Namespace KS.Kernel.Configuration | Nitrocid KS API - Aptivi",
@@ -2178,16 +2188,6 @@
     "href": "api/KS.Misc.Screensaver.html",
     "title": "Namespace KS.Misc.Screensaver | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Misc.Screensaver Classes BaseScreensaver Base screensaver class ScreensaverManager Screensaver management module Interfaces IScreensaver Screensaver (KS built-in or custom) interface"
-  },
-  "api/KS.Misc.Settings.SettingsApp.html": {
-    "href": "api/KS.Misc.Settings.SettingsApp.html",
-    "title": "Class SettingsApp | Nitrocid KS API - Aptivi",
-    "keywords": "Class SettingsApp Settings application module Inheritance object SettingsApp Namespace: KS.Misc.Settings Assembly: Nitrocid.dll Syntax public static class SettingsApp Methods | Edit this page View Source OpenKey(string, int, JToken, ConfigType) Open a key. Declaration public static void OpenKey(string Section, int KeyNumber, JToken SettingsToken, ConfigType SettingsType) Parameters Type Name Description string Section Section int KeyNumber Key number JToken SettingsToken Settings token ConfigType SettingsType Settings type | Edit this page View Source OpenMainPage(ConfigType) Main page Declaration public static void OpenMainPage(ConfigType SettingsType) Parameters Type Name Description ConfigType SettingsType | Edit this page View Source OpenSection(string, JToken, ConfigType) Open section Declaration public static void OpenSection(string Section, JToken SettingsToken, ConfigType SettingsType) Parameters Type Name Description string Section Section name JToken SettingsToken Settings token ConfigType SettingsType Settings type | Edit this page View Source VariableFinder(JToken, ConfigType) A sub for variable finding prompt Declaration public static void VariableFinder(JToken SettingsToken, ConfigType SettingsType) Parameters Type Name Description JToken SettingsToken ConfigType SettingsType"
-  },
-  "api/KS.Misc.Settings.html": {
-    "href": "api/KS.Misc.Settings.html",
-    "title": "Namespace KS.Misc.Settings | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Misc.Settings Classes SettingsApp Settings application module"
   },
   "api/KS.Misc.Splash.BaseSplash.html": {
     "href": "api/KS.Misc.Splash.BaseSplash.html",
