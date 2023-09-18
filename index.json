@@ -2279,21 +2279,6 @@
     "title": "Namespace KS.Misc.Text | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Misc.Text Classes CharManager Character querying and management module TextTools Tools for text manipulation Enums TextLocation The console text location (used for screensavers and splashes)"
   },
-  "api/KS.Misc.Timers.StopwatchScreen.html": {
-    "href": "api/KS.Misc.Timers.StopwatchScreen.html",
-    "title": "Class StopwatchScreen | Nitrocid KS API - Aptivi",
-    "keywords": "Class StopwatchScreen Stopwatch CLI module Inheritance object StopwatchScreen Namespace: KS.Misc.Timers Assembly: Nitrocid.dll Syntax public static class StopwatchScreen Methods | Edit this page View Source MakeBorder() Makes the display border Declaration public static void MakeBorder() | Edit this page View Source OpenStopwatch() Opens the stopwatch screen Declaration public static void OpenStopwatch()"
-  },
-  "api/KS.Misc.Timers.TimerScreen.html": {
-    "href": "api/KS.Misc.Timers.TimerScreen.html",
-    "title": "Class TimerScreen | Nitrocid KS API - Aptivi",
-    "keywords": "Class TimerScreen Timer CLI module Inheritance object TimerScreen Namespace: KS.Misc.Timers Assembly: Nitrocid.dll Syntax public static class TimerScreen Properties | Edit this page View Source TimerFigletFont Timer figlet font Declaration public static string TimerFigletFont { get; } Property Value Type Description string Methods | Edit this page View Source OpenTimer() Opens the timer screen Declaration public static void OpenTimer()"
-  },
-  "api/KS.Misc.Timers.html": {
-    "href": "api/KS.Misc.Timers.html",
-    "title": "Namespace KS.Misc.Timers | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Misc.Timers Classes StopwatchScreen Stopwatch CLI module TimerScreen Timer CLI module"
-  },
   "api/KS.Modifications.IMod.html": {
     "href": "api/KS.Modifications.IMod.html",
     "title": "Interface IMod | Nitrocid KS API - Aptivi",
