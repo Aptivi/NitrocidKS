@@ -15463,12 +15463,12 @@ references:
   commentId: F:KS.Files.KernelPathType.Events
   fullName: KS.Files.KernelPathType.Events
   nameWithType: KernelPathType.Events
-- uid: KS.Files.KernelPathType.Journalling
-  name: Journalling
-  href: api/KS.Files.KernelPathType.html#KS_Files_KernelPathType_Journalling
-  commentId: F:KS.Files.KernelPathType.Journalling
-  fullName: KS.Files.KernelPathType.Journalling
-  nameWithType: KernelPathType.Journalling
+- uid: KS.Files.KernelPathType.Journaling
+  name: Journaling
+  href: api/KS.Files.KernelPathType.html#KS_Files_KernelPathType_Journaling
+  commentId: F:KS.Files.KernelPathType.Journaling
+  fullName: KS.Files.KernelPathType.Journaling
+  nameWithType: KernelPathType.Journaling
 - uid: KS.Files.KernelPathType.MAL
   name: MAL
   href: api/KS.Files.KernelPathType.html#KS_Files_KernelPathType_MAL
@@ -16492,19 +16492,19 @@ references:
   isSpec: "True"
   fullName: KS.Files.Paths.HomePath
   nameWithType: Paths.HomePath
-- uid: KS.Files.Paths.JournallingPath
-  name: JournallingPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_JournallingPath
-  commentId: P:KS.Files.Paths.JournallingPath
-  fullName: KS.Files.Paths.JournallingPath
-  nameWithType: Paths.JournallingPath
-- uid: KS.Files.Paths.JournallingPath*
-  name: JournallingPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_JournallingPath_
-  commentId: Overload:KS.Files.Paths.JournallingPath
+- uid: KS.Files.Paths.JournalingPath
+  name: JournalingPath
+  href: api/KS.Files.Paths.html#KS_Files_Paths_JournalingPath
+  commentId: P:KS.Files.Paths.JournalingPath
+  fullName: KS.Files.Paths.JournalingPath
+  nameWithType: Paths.JournalingPath
+- uid: KS.Files.Paths.JournalingPath*
+  name: JournalingPath
+  href: api/KS.Files.Paths.html#KS_Files_Paths_JournalingPath_
+  commentId: Overload:KS.Files.Paths.JournalingPath
   isSpec: "True"
-  fullName: KS.Files.Paths.JournallingPath
-  nameWithType: Paths.JournallingPath
+  fullName: KS.Files.Paths.JournalingPath
+  nameWithType: Paths.JournalingPath
 - uid: KS.Files.Paths.MALPath
   name: MALPath
   href: api/KS.Files.Paths.html#KS_Files_Paths_MALPath
