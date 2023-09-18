@@ -48633,6 +48633,28 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.CommandArgumentPart.AutoCompleter
   nameWithType: CommandArgumentPart.AutoCompleter
+- uid: KS.Shell.ShellBase.Commands.CommandAutoCompletionList
+  name: CommandAutoCompletionList
+  href: api/KS.Shell.ShellBase.Commands.CommandAutoCompletionList.html
+  commentId: T:KS.Shell.ShellBase.Commands.CommandAutoCompletionList
+  fullName: KS.Shell.ShellBase.Commands.CommandAutoCompletionList
+  nameWithType: CommandAutoCompletionList
+- uid: KS.Shell.ShellBase.Commands.CommandAutoCompletionList.GetCompletionFunction(System.String)
+  name: GetCompletionFunction(string)
+  href: api/KS.Shell.ShellBase.Commands.CommandAutoCompletionList.html#KS_Shell_ShellBase_Commands_CommandAutoCompletionList_GetCompletionFunction_System_String_
+  commentId: M:KS.Shell.ShellBase.Commands.CommandAutoCompletionList.GetCompletionFunction(System.String)
+  name.vb: GetCompletionFunction(String)
+  fullName: KS.Shell.ShellBase.Commands.CommandAutoCompletionList.GetCompletionFunction(string)
+  fullName.vb: KS.Shell.ShellBase.Commands.CommandAutoCompletionList.GetCompletionFunction(String)
+  nameWithType: CommandAutoCompletionList.GetCompletionFunction(string)
+  nameWithType.vb: CommandAutoCompletionList.GetCompletionFunction(String)
+- uid: KS.Shell.ShellBase.Commands.CommandAutoCompletionList.GetCompletionFunction*
+  name: GetCompletionFunction
+  href: api/KS.Shell.ShellBase.Commands.CommandAutoCompletionList.html#KS_Shell_ShellBase_Commands_CommandAutoCompletionList_GetCompletionFunction_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandAutoCompletionList.GetCompletionFunction
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Commands.CommandAutoCompletionList.GetCompletionFunction
+  nameWithType: CommandAutoCompletionList.GetCompletionFunction
 - uid: KS.Shell.ShellBase.Commands.CommandExecutor
   name: CommandExecutor
   href: api/KS.Shell.ShellBase.Commands.CommandExecutor.html
