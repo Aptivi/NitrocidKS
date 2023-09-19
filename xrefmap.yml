@@ -3426,6 +3426,56 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Themes.ThemeInfo.TrueColorRequired
   nameWithType: ThemeInfo.TrueColorRequired
+- uid: KS.ConsoleBase.Themes.ThemePreviewTools
+  name: ThemePreviewTools
+  href: api/KS.ConsoleBase.Themes.ThemePreviewTools.html
+  commentId: T:KS.ConsoleBase.Themes.ThemePreviewTools
+  fullName: KS.ConsoleBase.Themes.ThemePreviewTools
+  nameWithType: ThemePreviewTools
+- uid: KS.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme(KS.ConsoleBase.Themes.ThemeInfo)
+  name: PreviewTheme(ThemeInfo)
+  href: api/KS.ConsoleBase.Themes.ThemePreviewTools.html#KS_ConsoleBase_Themes_ThemePreviewTools_PreviewTheme_KS_ConsoleBase_Themes_ThemeInfo_
+  commentId: M:KS.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme(KS.ConsoleBase.Themes.ThemeInfo)
+  fullName: KS.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme(KS.ConsoleBase.Themes.ThemeInfo)
+  nameWithType: ThemePreviewTools.PreviewTheme(ThemeInfo)
+- uid: KS.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme(System.String)
+  name: PreviewTheme(string)
+  href: api/KS.ConsoleBase.Themes.ThemePreviewTools.html#KS_ConsoleBase_Themes_ThemePreviewTools_PreviewTheme_System_String_
+  commentId: M:KS.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme(System.String)
+  name.vb: PreviewTheme(String)
+  fullName: KS.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme(string)
+  fullName.vb: KS.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme(String)
+  nameWithType: ThemePreviewTools.PreviewTheme(string)
+  nameWithType.vb: ThemePreviewTools.PreviewTheme(String)
+- uid: KS.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme*
+  name: PreviewTheme
+  href: api/KS.ConsoleBase.Themes.ThemePreviewTools.html#KS_ConsoleBase_Themes_ThemePreviewTools_PreviewTheme_
+  commentId: Overload:KS.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme
+  nameWithType: ThemePreviewTools.PreviewTheme
+- uid: KS.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple(KS.ConsoleBase.Themes.ThemeInfo)
+  name: PreviewThemeSimple(ThemeInfo)
+  href: api/KS.ConsoleBase.Themes.ThemePreviewTools.html#KS_ConsoleBase_Themes_ThemePreviewTools_PreviewThemeSimple_KS_ConsoleBase_Themes_ThemeInfo_
+  commentId: M:KS.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple(KS.ConsoleBase.Themes.ThemeInfo)
+  fullName: KS.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple(KS.ConsoleBase.Themes.ThemeInfo)
+  nameWithType: ThemePreviewTools.PreviewThemeSimple(ThemeInfo)
+- uid: KS.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple(System.String)
+  name: PreviewThemeSimple(string)
+  href: api/KS.ConsoleBase.Themes.ThemePreviewTools.html#KS_ConsoleBase_Themes_ThemePreviewTools_PreviewThemeSimple_System_String_
+  commentId: M:KS.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple(System.String)
+  name.vb: PreviewThemeSimple(String)
+  fullName: KS.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple(string)
+  fullName.vb: KS.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple(String)
+  nameWithType: ThemePreviewTools.PreviewThemeSimple(string)
+  nameWithType.vb: ThemePreviewTools.PreviewThemeSimple(String)
+- uid: KS.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple*
+  name: PreviewThemeSimple
+  href: api/KS.ConsoleBase.Themes.ThemePreviewTools.html#KS_ConsoleBase_Themes_ThemePreviewTools_PreviewThemeSimple_
+  commentId: Overload:KS.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple
+  nameWithType: ThemePreviewTools.PreviewThemeSimple
 - uid: KS.ConsoleBase.Themes.ThemeSetErrorReasons
   name: ThemeSetErrorReasons
   href: api/KS.ConsoleBase.Themes.ThemeSetErrorReasons.html
@@ -3607,37 +3657,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired
   nameWithType: ThemeTools.IsTrueColorRequired
-- uid: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(KS.ConsoleBase.Themes.ThemeInfo)
-  name: PreviewTheme(ThemeInfo)
-  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_PreviewTheme_KS_ConsoleBase_Themes_ThemeInfo_
-  commentId: M:KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(KS.ConsoleBase.Themes.ThemeInfo)
-  fullName: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(KS.ConsoleBase.Themes.ThemeInfo)
-  nameWithType: ThemeTools.PreviewTheme(ThemeInfo)
-- uid: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(System.Collections.Generic.Dictionary{KS.ConsoleBase.Colors.KernelColorType,Terminaux.Colors.Color})
-  name: PreviewTheme(Dictionary<KernelColorType, Color>)
-  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_PreviewTheme_System_Collections_Generic_Dictionary_KS_ConsoleBase_Colors_KernelColorType_Terminaux_Colors_Color__
-  commentId: M:KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(System.Collections.Generic.Dictionary{KS.ConsoleBase.Colors.KernelColorType,Terminaux.Colors.Color})
-  name.vb: PreviewTheme(Dictionary(Of KernelColorType, Color))
-  fullName: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(System.Collections.Generic.Dictionary<KS.ConsoleBase.Colors.KernelColorType, Terminaux.Colors.Color>)
-  fullName.vb: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(System.Collections.Generic.Dictionary(Of KS.ConsoleBase.Colors.KernelColorType, Terminaux.Colors.Color))
-  nameWithType: ThemeTools.PreviewTheme(Dictionary<KernelColorType, Color>)
-  nameWithType.vb: ThemeTools.PreviewTheme(Dictionary(Of KernelColorType, Color))
-- uid: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(System.String)
-  name: PreviewTheme(string)
-  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_PreviewTheme_System_String_
-  commentId: M:KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(System.String)
-  name.vb: PreviewTheme(String)
-  fullName: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(string)
-  fullName.vb: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme(String)
-  nameWithType: ThemeTools.PreviewTheme(string)
-  nameWithType.vb: ThemeTools.PreviewTheme(String)
-- uid: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme*
-  name: PreviewTheme
-  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_PreviewTheme_
-  commentId: Overload:KS.ConsoleBase.Themes.ThemeTools.PreviewTheme
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Themes.ThemeTools.PreviewTheme
-  nameWithType: ThemeTools.PreviewTheme
 - uid: KS.ConsoleBase.Themes.ThemeTools.SetColorsTheme(KS.ConsoleBase.Themes.ThemeInfo)
   name: SetColorsTheme(ThemeInfo)
   href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_SetColorsTheme_KS_ConsoleBase_Themes_ThemeInfo_
