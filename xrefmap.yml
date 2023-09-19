@@ -16511,6 +16511,19 @@ references:
   isSpec: "True"
   fullName: KS.Files.Paths.HomePath
   nameWithType: Paths.HomePath
+- uid: KS.Files.Paths.IsResettable(KS.Files.KernelPathType)
+  name: IsResettable(KernelPathType)
+  href: api/KS.Files.Paths.html#KS_Files_Paths_IsResettable_KS_Files_KernelPathType_
+  commentId: M:KS.Files.Paths.IsResettable(KS.Files.KernelPathType)
+  fullName: KS.Files.Paths.IsResettable(KS.Files.KernelPathType)
+  nameWithType: Paths.IsResettable(KernelPathType)
+- uid: KS.Files.Paths.IsResettable*
+  name: IsResettable
+  href: api/KS.Files.Paths.html#KS_Files_Paths_IsResettable_
+  commentId: Overload:KS.Files.Paths.IsResettable
+  isSpec: "True"
+  fullName: KS.Files.Paths.IsResettable
+  nameWithType: Paths.IsResettable
 - uid: KS.Files.Paths.JournalingPath
   name: JournalingPath
   href: api/KS.Files.Paths.html#KS_Files_Paths_JournalingPath
