@@ -21899,6 +21899,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.BeatPulseTrueColor
   nameWithType: KernelSaverConfig.BeatPulseTrueColor
+- uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.BloomDarkColors
+  name: BloomDarkColors
+  href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_BloomDarkColors
+  commentId: P:KS.Kernel.Configuration.Instances.KernelSaverConfig.BloomDarkColors
+  fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.BloomDarkColors
+  nameWithType: KernelSaverConfig.BloomDarkColors
+- uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.BloomDarkColors*
+  name: BloomDarkColors
+  href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_BloomDarkColors_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelSaverConfig.BloomDarkColors
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.BloomDarkColors
+  nameWithType: KernelSaverConfig.BloomDarkColors
 - uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.BloomDelay
   name: BloomDelay
   href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_BloomDelay
