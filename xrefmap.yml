@@ -42849,45 +42849,6 @@ references:
   isSpec: "True"
   fullName: KS.Resources.SettingsResources.Culture
   nameWithType: SettingsResources.Culture
-- uid: KS.Resources.SettingsResources.KernelMainConfigSchema
-  name: KernelMainConfigSchema
-  href: api/KS.Resources.SettingsResources.html#KS_Resources_SettingsResources_KernelMainConfigSchema
-  commentId: P:KS.Resources.SettingsResources.KernelMainConfigSchema
-  fullName: KS.Resources.SettingsResources.KernelMainConfigSchema
-  nameWithType: SettingsResources.KernelMainConfigSchema
-- uid: KS.Resources.SettingsResources.KernelMainConfigSchema*
-  name: KernelMainConfigSchema
-  href: api/KS.Resources.SettingsResources.html#KS_Resources_SettingsResources_KernelMainConfigSchema_
-  commentId: Overload:KS.Resources.SettingsResources.KernelMainConfigSchema
-  isSpec: "True"
-  fullName: KS.Resources.SettingsResources.KernelMainConfigSchema
-  nameWithType: SettingsResources.KernelMainConfigSchema
-- uid: KS.Resources.SettingsResources.KernelSaverConfigSchema
-  name: KernelSaverConfigSchema
-  href: api/KS.Resources.SettingsResources.html#KS_Resources_SettingsResources_KernelSaverConfigSchema
-  commentId: P:KS.Resources.SettingsResources.KernelSaverConfigSchema
-  fullName: KS.Resources.SettingsResources.KernelSaverConfigSchema
-  nameWithType: SettingsResources.KernelSaverConfigSchema
-- uid: KS.Resources.SettingsResources.KernelSaverConfigSchema*
-  name: KernelSaverConfigSchema
-  href: api/KS.Resources.SettingsResources.html#KS_Resources_SettingsResources_KernelSaverConfigSchema_
-  commentId: Overload:KS.Resources.SettingsResources.KernelSaverConfigSchema
-  isSpec: "True"
-  fullName: KS.Resources.SettingsResources.KernelSaverConfigSchema
-  nameWithType: SettingsResources.KernelSaverConfigSchema
-- uid: KS.Resources.SettingsResources.KernelSplashConfigSchema
-  name: KernelSplashConfigSchema
-  href: api/KS.Resources.SettingsResources.html#KS_Resources_SettingsResources_KernelSplashConfigSchema
-  commentId: P:KS.Resources.SettingsResources.KernelSplashConfigSchema
-  fullName: KS.Resources.SettingsResources.KernelSplashConfigSchema
-  nameWithType: SettingsResources.KernelSplashConfigSchema
-- uid: KS.Resources.SettingsResources.KernelSplashConfigSchema*
-  name: KernelSplashConfigSchema
-  href: api/KS.Resources.SettingsResources.html#KS_Resources_SettingsResources_KernelSplashConfigSchema_
-  commentId: Overload:KS.Resources.SettingsResources.KernelSplashConfigSchema
-  isSpec: "True"
-  fullName: KS.Resources.SettingsResources.KernelSplashConfigSchema
-  nameWithType: SettingsResources.KernelSplashConfigSchema
 - uid: KS.Resources.SettingsResources.ResourceManager
   name: ResourceManager
   href: api/KS.Resources.SettingsResources.html#KS_Resources_SettingsResources_ResourceManager
