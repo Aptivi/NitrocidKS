@@ -34234,6 +34234,19 @@ references:
   commentId: T:KS.Kernel.KernelPlatform
   fullName: KS.Kernel.KernelPlatform
   nameWithType: KernelPlatform
+- uid: KS.Kernel.KernelPlatform.GetCurrentGenericRid
+  name: GetCurrentGenericRid()
+  href: api/KS.Kernel.KernelPlatform.html#KS_Kernel_KernelPlatform_GetCurrentGenericRid
+  commentId: M:KS.Kernel.KernelPlatform.GetCurrentGenericRid
+  fullName: KS.Kernel.KernelPlatform.GetCurrentGenericRid()
+  nameWithType: KernelPlatform.GetCurrentGenericRid()
+- uid: KS.Kernel.KernelPlatform.GetCurrentGenericRid*
+  name: GetCurrentGenericRid
+  href: api/KS.Kernel.KernelPlatform.html#KS_Kernel_KernelPlatform_GetCurrentGenericRid_
+  commentId: Overload:KS.Kernel.KernelPlatform.GetCurrentGenericRid
+  isSpec: "True"
+  fullName: KS.Kernel.KernelPlatform.GetCurrentGenericRid
+  nameWithType: KernelPlatform.GetCurrentGenericRid
 - uid: KS.Kernel.KernelPlatform.GetCurrentRid
   name: GetCurrentRid()
   href: api/KS.Kernel.KernelPlatform.html#KS_Kernel_KernelPlatform_GetCurrentRid
