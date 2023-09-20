@@ -36342,6 +36342,19 @@ references:
   isSpec: "True"
   fullName: KS.Languages.LanguageManager.CurrentLanguageInfo
   nameWithType: LanguageManager.CurrentLanguageInfo
+- uid: KS.Languages.LanguageManager.InferLanguageFromSystem
+  name: InferLanguageFromSystem()
+  href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_InferLanguageFromSystem
+  commentId: M:KS.Languages.LanguageManager.InferLanguageFromSystem
+  fullName: KS.Languages.LanguageManager.InferLanguageFromSystem()
+  nameWithType: LanguageManager.InferLanguageFromSystem()
+- uid: KS.Languages.LanguageManager.InferLanguageFromSystem*
+  name: InferLanguageFromSystem
+  href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_InferLanguageFromSystem_
+  commentId: Overload:KS.Languages.LanguageManager.InferLanguageFromSystem
+  isSpec: "True"
+  fullName: KS.Languages.LanguageManager.InferLanguageFromSystem
+  nameWithType: LanguageManager.InferLanguageFromSystem
 - uid: KS.Languages.LanguageManager.InstallCustomLanguage(System.String,System.Boolean)
   name: InstallCustomLanguage(string, bool)
   href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_InstallCustomLanguage_System_String_System_Boolean_
