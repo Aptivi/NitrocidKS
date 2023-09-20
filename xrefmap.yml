@@ -29135,6 +29135,32 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.SirenStyle
   nameWithType: KernelSaverConfig.SirenStyle
+- uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.SirenThemeDelay
+  name: SirenThemeDelay
+  href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_SirenThemeDelay
+  commentId: P:KS.Kernel.Configuration.Instances.KernelSaverConfig.SirenThemeDelay
+  fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.SirenThemeDelay
+  nameWithType: KernelSaverConfig.SirenThemeDelay
+- uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.SirenThemeDelay*
+  name: SirenThemeDelay
+  href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_SirenThemeDelay_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelSaverConfig.SirenThemeDelay
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.SirenThemeDelay
+  nameWithType: KernelSaverConfig.SirenThemeDelay
+- uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.SirenThemeStyle
+  name: SirenThemeStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_SirenThemeStyle
+  commentId: P:KS.Kernel.Configuration.Instances.KernelSaverConfig.SirenThemeStyle
+  fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.SirenThemeStyle
+  nameWithType: KernelSaverConfig.SirenThemeStyle
+- uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.SirenThemeStyle*
+  name: SirenThemeStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_SirenThemeStyle_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelSaverConfig.SirenThemeStyle
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.SirenThemeStyle
+  nameWithType: KernelSaverConfig.SirenThemeStyle
 - uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.SnakeFillDelay
   name: SnakeFillDelay
   href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_SnakeFillDelay
