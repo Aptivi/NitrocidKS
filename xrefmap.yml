@@ -39537,6 +39537,44 @@ references:
   commentId: N:KS.Modifications
   fullName: KS.Modifications
   nameWithType: KS.Modifications
+- uid: KS.Modifications.Dependencies
+  name: KS.Modifications.Dependencies
+  href: api/KS.Modifications.Dependencies.html
+  commentId: N:KS.Modifications.Dependencies
+  fullName: KS.Modifications.Dependencies
+  nameWithType: KS.Modifications.Dependencies
+- uid: KS.Modifications.Dependencies.ModDependency
+  name: ModDependency
+  href: api/KS.Modifications.Dependencies.ModDependency.html
+  commentId: T:KS.Modifications.Dependencies.ModDependency
+  fullName: KS.Modifications.Dependencies.ModDependency
+  nameWithType: ModDependency
+- uid: KS.Modifications.Dependencies.ModDependency.ModName
+  name: ModName
+  href: api/KS.Modifications.Dependencies.ModDependency.html#KS_Modifications_Dependencies_ModDependency_ModName
+  commentId: P:KS.Modifications.Dependencies.ModDependency.ModName
+  fullName: KS.Modifications.Dependencies.ModDependency.ModName
+  nameWithType: ModDependency.ModName
+- uid: KS.Modifications.Dependencies.ModDependency.ModName*
+  name: ModName
+  href: api/KS.Modifications.Dependencies.ModDependency.html#KS_Modifications_Dependencies_ModDependency_ModName_
+  commentId: Overload:KS.Modifications.Dependencies.ModDependency.ModName
+  isSpec: "True"
+  fullName: KS.Modifications.Dependencies.ModDependency.ModName
+  nameWithType: ModDependency.ModName
+- uid: KS.Modifications.Dependencies.ModDependency.ModVersion
+  name: ModVersion
+  href: api/KS.Modifications.Dependencies.ModDependency.html#KS_Modifications_Dependencies_ModDependency_ModVersion
+  commentId: P:KS.Modifications.Dependencies.ModDependency.ModVersion
+  fullName: KS.Modifications.Dependencies.ModDependency.ModVersion
+  nameWithType: ModDependency.ModVersion
+- uid: KS.Modifications.Dependencies.ModDependency.ModVersion*
+  name: ModVersion
+  href: api/KS.Modifications.Dependencies.ModDependency.html#KS_Modifications_Dependencies_ModDependency_ModVersion_
+  commentId: Overload:KS.Modifications.Dependencies.ModDependency.ModVersion
+  isSpec: "True"
+  fullName: KS.Modifications.Dependencies.ModDependency.ModVersion
+  nameWithType: ModDependency.ModVersion
 - uid: KS.Modifications.IMod
   name: IMod
   href: api/KS.Modifications.IMod.html

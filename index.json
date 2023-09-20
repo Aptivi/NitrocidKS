@@ -1429,6 +1429,16 @@
     "title": "Namespace KS.Misc.Text | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Misc.Text Classes CharManager Character querying and management module TextTools Tools for text manipulation Enums TextLocation The console text location (used for screensavers and splashes)"
   },
+  "api/KS.Modifications.Dependencies.ModDependency.html": {
+    "href": "api/KS.Modifications.Dependencies.ModDependency.html",
+    "title": "Class ModDependency | Nitrocid KS API - Aptivi",
+    "keywords": "Class ModDependency Mod dependency information Inheritance object ModDependency Namespace: KS.Modifications.Dependencies Assembly: Nitrocid.dll Syntax public class ModDependency Properties | Edit this page View Source ModName Dependent mod name Declaration [JsonIgnore] public string ModName { get; } Property Value Type Description string | Edit this page View Source ModVersion Dependent mod version Declaration [JsonIgnore] public string ModVersion { get; } Property Value Type Description string"
+  },
+  "api/KS.Modifications.Dependencies.html": {
+    "href": "api/KS.Modifications.Dependencies.html",
+    "title": "Namespace KS.Modifications.Dependencies | Nitrocid KS API - Aptivi",
+    "keywords": "Namespace KS.Modifications.Dependencies Classes ModDependency Mod dependency information"
+  },
   "api/KS.Modifications.IMod.html": {
     "href": "api/KS.Modifications.IMod.html",
     "title": "Interface IMod | Nitrocid KS API - Aptivi",

@@ -2876,6 +2876,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Modifications.Dependencies.ModDependency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Modifications.Dependencies.ModDependency.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Modifications.Dependencies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Modifications.Dependencies.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Modifications.IMod.yml",
       "output": {
         ".html": {
