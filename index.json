@@ -1302,7 +1302,7 @@
   "api/KS.Misc.Reflection.AssemblyLookup.html": {
     "href": "api/KS.Misc.Reflection.AssemblyLookup.html",
     "title": "Class AssemblyLookup | Nitrocid KS API - Aptivi",
-    "keywords": "Class AssemblyLookup Assembly lookup module Inheritance object AssemblyLookup Namespace: KS.Misc.Reflection Assembly: Nitrocid.dll Syntax public static class AssemblyLookup Methods | Edit this page View Source AddPathToAssemblySearchPath(string) Adds the path pointing to the dependencies to the assembly search path Declaration public static void AddPathToAssemblySearchPath(string Path) Parameters Type Name Description string Path Path to the dependencies"
+    "keywords": "Class AssemblyLookup Assembly lookup module Inheritance object AssemblyLookup Namespace: KS.Misc.Reflection Assembly: Nitrocid.dll Syntax public static class AssemblyLookup Methods | Edit this page View Source AddPathToAssemblySearchPath(string) Adds the path pointing to the dependencies to the assembly search path Declaration public static void AddPathToAssemblySearchPath(string Path) Parameters Type Name Description string Path Path to the dependencies | Edit this page View Source RemovePathFromAssemblySearchPath(string) Removes the path pointing to the dependencies from the assembly search path Declaration public static void RemovePathFromAssemblySearchPath(string Path) Parameters Type Name Description string Path Path to the dependencies"
   },
   "api/KS.Misc.Reflection.IntegerTools.html": {
     "href": "api/KS.Misc.Reflection.IntegerTools.html",

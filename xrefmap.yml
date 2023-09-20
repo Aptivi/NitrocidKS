@@ -37659,6 +37659,22 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.AssemblyLookup.AddPathToAssemblySearchPath
   nameWithType: AssemblyLookup.AddPathToAssemblySearchPath
+- uid: KS.Misc.Reflection.AssemblyLookup.RemovePathFromAssemblySearchPath(System.String)
+  name: RemovePathFromAssemblySearchPath(string)
+  href: api/KS.Misc.Reflection.AssemblyLookup.html#KS_Misc_Reflection_AssemblyLookup_RemovePathFromAssemblySearchPath_System_String_
+  commentId: M:KS.Misc.Reflection.AssemblyLookup.RemovePathFromAssemblySearchPath(System.String)
+  name.vb: RemovePathFromAssemblySearchPath(String)
+  fullName: KS.Misc.Reflection.AssemblyLookup.RemovePathFromAssemblySearchPath(string)
+  fullName.vb: KS.Misc.Reflection.AssemblyLookup.RemovePathFromAssemblySearchPath(String)
+  nameWithType: AssemblyLookup.RemovePathFromAssemblySearchPath(string)
+  nameWithType.vb: AssemblyLookup.RemovePathFromAssemblySearchPath(String)
+- uid: KS.Misc.Reflection.AssemblyLookup.RemovePathFromAssemblySearchPath*
+  name: RemovePathFromAssemblySearchPath
+  href: api/KS.Misc.Reflection.AssemblyLookup.html#KS_Misc_Reflection_AssemblyLookup_RemovePathFromAssemblySearchPath_
+  commentId: Overload:KS.Misc.Reflection.AssemblyLookup.RemovePathFromAssemblySearchPath
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.AssemblyLookup.RemovePathFromAssemblySearchPath
+  nameWithType: AssemblyLookup.RemovePathFromAssemblySearchPath
 - uid: KS.Misc.Reflection.IntegerTools
   name: IntegerTools
   href: api/KS.Misc.Reflection.IntegerTools.html
