@@ -4536,30 +4536,60 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.yml",
+      "source_relative_path": "api/KS.Shell.ShellBase.Arguments.ArgumentsParser.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.html"
+          "relative_path": "api/KS.Shell.ShellBase.Arguments.ArgumentsParser.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.yml",
+      "source_relative_path": "api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html"
+          "relative_path": "api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Commands.ArgumentsParsers.yml",
+      "source_relative_path": "api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Commands.ArgumentsParsers.html"
+          "relative_path": "api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Arguments.CommandAutoCompletionList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Arguments.CommandAutoCompletionList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Arguments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Arguments.html"
         }
       },
       "version": ""
@@ -4570,36 +4600,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.BaseCommand.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Commands.CommandArgumentPart.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Commands.CommandArgumentPart.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Commands.CommandAutoCompletionList.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Commands.CommandAutoCompletionList.html"
         }
       },
       "version": ""
@@ -4646,26 +4646,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Commands.Execution.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Commands.Execution.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.Commands.HelpSystem.yml",
       "output": {
         ".html": {
@@ -4686,20 +4666,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Commands.SwitchInfo.yml",
+      "source_relative_path": "api/KS.Shell.ShellBase.Commands.ProcessExecutor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Commands.SwitchInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Commands.SwitchManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Commands.SwitchManager.html"
+          "relative_path": "api/KS.Shell.ShellBase.Commands.ProcessExecutor.html"
         }
       },
       "version": ""
@@ -5150,6 +5120,36 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Switches.SwitchInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Switches.SwitchInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Switches.SwitchManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Switches.SwitchManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Switches.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Switches.html"
         }
       },
       "version": ""

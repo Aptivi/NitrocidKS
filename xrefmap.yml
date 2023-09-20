@@ -63,13 +63,13 @@ references:
   commentId: T:KS.Arguments.ArgumentBase.ArgumentInfo
   fullName: KS.Arguments.ArgumentBase.ArgumentInfo
   nameWithType: ArgumentInfo
-- uid: KS.Arguments.ArgumentBase.ArgumentInfo.#ctor(System.String,System.String,KS.Shell.ShellBase.Commands.CommandArgumentInfo[],KS.Arguments.ArgumentBase.ArgumentExecutor,System.Boolean,System.Action)
+- uid: KS.Arguments.ArgumentBase.ArgumentInfo.#ctor(System.String,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Arguments.ArgumentBase.ArgumentExecutor,System.Boolean,System.Action)
   name: ArgumentInfo(string, string, CommandArgumentInfo[], ArgumentExecutor, bool, Action)
-  href: api/KS.Arguments.ArgumentBase.ArgumentInfo.html#KS_Arguments_ArgumentBase_ArgumentInfo__ctor_System_String_System_String_KS_Shell_ShellBase_Commands_CommandArgumentInfo___KS_Arguments_ArgumentBase_ArgumentExecutor_System_Boolean_System_Action_
-  commentId: M:KS.Arguments.ArgumentBase.ArgumentInfo.#ctor(System.String,System.String,KS.Shell.ShellBase.Commands.CommandArgumentInfo[],KS.Arguments.ArgumentBase.ArgumentExecutor,System.Boolean,System.Action)
+  href: api/KS.Arguments.ArgumentBase.ArgumentInfo.html#KS_Arguments_ArgumentBase_ArgumentInfo__ctor_System_String_System_String_KS_Shell_ShellBase_Arguments_CommandArgumentInfo___KS_Arguments_ArgumentBase_ArgumentExecutor_System_Boolean_System_Action_
+  commentId: M:KS.Arguments.ArgumentBase.ArgumentInfo.#ctor(System.String,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Arguments.ArgumentBase.ArgumentExecutor,System.Boolean,System.Action)
   name.vb: New(String, String, CommandArgumentInfo(), ArgumentExecutor, Boolean, Action)
-  fullName: KS.Arguments.ArgumentBase.ArgumentInfo.ArgumentInfo(string, string, KS.Shell.ShellBase.Commands.CommandArgumentInfo[], KS.Arguments.ArgumentBase.ArgumentExecutor, bool, System.Action)
-  fullName.vb: KS.Arguments.ArgumentBase.ArgumentInfo.New(String, String, KS.Shell.ShellBase.Commands.CommandArgumentInfo(), KS.Arguments.ArgumentBase.ArgumentExecutor, Boolean, System.Action)
+  fullName: KS.Arguments.ArgumentBase.ArgumentInfo.ArgumentInfo(string, string, KS.Shell.ShellBase.Arguments.CommandArgumentInfo[], KS.Arguments.ArgumentBase.ArgumentExecutor, bool, System.Action)
+  fullName.vb: KS.Arguments.ArgumentBase.ArgumentInfo.New(String, String, KS.Shell.ShellBase.Arguments.CommandArgumentInfo(), KS.Arguments.ArgumentBase.ArgumentExecutor, Boolean, System.Action)
   nameWithType: ArgumentInfo.ArgumentInfo(string, string, CommandArgumentInfo[], ArgumentExecutor, bool, Action)
   nameWithType.vb: ArgumentInfo.New(String, String, CommandArgumentInfo(), ArgumentExecutor, Boolean, Action)
 - uid: KS.Arguments.ArgumentBase.ArgumentInfo.#ctor*
@@ -48509,162 +48509,356 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Aliases.AliasManager.SaveAliases
   nameWithType: AliasManager.SaveAliases
+- uid: KS.Shell.ShellBase.Arguments
+  name: KS.Shell.ShellBase.Arguments
+  href: api/KS.Shell.ShellBase.Arguments.html
+  commentId: N:KS.Shell.ShellBase.Arguments
+  fullName: KS.Shell.ShellBase.Arguments
+  nameWithType: KS.Shell.ShellBase.Arguments
+- uid: KS.Shell.ShellBase.Arguments.ArgumentsParser
+  name: ArgumentsParser
+  href: api/KS.Shell.ShellBase.Arguments.ArgumentsParser.html
+  commentId: T:KS.Shell.ShellBase.Arguments.ArgumentsParser
+  fullName: KS.Shell.ShellBase.Arguments.ArgumentsParser
+  nameWithType: ArgumentsParser
+- uid: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseArgumentArguments(System.String)
+  name: ParseArgumentArguments(string)
+  href: api/KS.Shell.ShellBase.Arguments.ArgumentsParser.html#KS_Shell_ShellBase_Arguments_ArgumentsParser_ParseArgumentArguments_System_String_
+  commentId: M:KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseArgumentArguments(System.String)
+  name.vb: ParseArgumentArguments(String)
+  fullName: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseArgumentArguments(string)
+  fullName.vb: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseArgumentArguments(String)
+  nameWithType: ArgumentsParser.ParseArgumentArguments(string)
+  nameWithType.vb: ArgumentsParser.ParseArgumentArguments(String)
+- uid: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseArgumentArguments*
+  name: ParseArgumentArguments
+  href: api/KS.Shell.ShellBase.Arguments.ArgumentsParser.html#KS_Shell_ShellBase_Arguments_ArgumentsParser_ParseArgumentArguments_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseArgumentArguments
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseArgumentArguments
+  nameWithType: ArgumentsParser.ParseArgumentArguments
+- uid: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(System.String,KS.Shell.ShellBase.Shells.ShellType)
+  name: ParseShellCommandArguments(string, ShellType)
+  href: api/KS.Shell.ShellBase.Arguments.ArgumentsParser.html#KS_Shell_ShellBase_Arguments_ArgumentsParser_ParseShellCommandArguments_System_String_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(System.String,KS.Shell.ShellBase.Shells.ShellType)
+  name.vb: ParseShellCommandArguments(String, ShellType)
+  fullName: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(string, KS.Shell.ShellBase.Shells.ShellType)
+  fullName.vb: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(String, KS.Shell.ShellBase.Shells.ShellType)
+  nameWithType: ArgumentsParser.ParseShellCommandArguments(string, ShellType)
+  nameWithType.vb: ArgumentsParser.ParseShellCommandArguments(String, ShellType)
+- uid: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(System.String,System.String)
+  name: ParseShellCommandArguments(string, string)
+  href: api/KS.Shell.ShellBase.Arguments.ArgumentsParser.html#KS_Shell_ShellBase_Arguments_ArgumentsParser_ParseShellCommandArguments_System_String_System_String_
+  commentId: M:KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(System.String,System.String)
+  name.vb: ParseShellCommandArguments(String, String)
+  fullName: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(string, string)
+  fullName.vb: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(String, String)
+  nameWithType: ArgumentsParser.ParseShellCommandArguments(string, string)
+  nameWithType.vb: ArgumentsParser.ParseShellCommandArguments(String, String)
+- uid: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments*
+  name: ParseShellCommandArguments
+  href: api/KS.Shell.ShellBase.Arguments.ArgumentsParser.html#KS_Shell_ShellBase_Arguments_ArgumentsParser_ParseShellCommandArguments_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments
+  nameWithType: ArgumentsParser.ParseShellCommandArguments
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo
+  name: CommandArgumentInfo
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html
+  commentId: T:KS.Shell.ShellBase.Arguments.CommandArgumentInfo
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo
+  nameWithType: CommandArgumentInfo
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor
+  name: CommandArgumentInfo()
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor
+  commentId: M:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor
+  name.vb: New()
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.CommandArgumentInfo()
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.New()
+  nameWithType: CommandArgumentInfo.CommandArgumentInfo()
+  nameWithType.vb: CommandArgumentInfo.New()
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Arguments.CommandArgumentPart[],KS.Shell.ShellBase.Switches.SwitchInfo[])
+  name: CommandArgumentInfo(CommandArgumentPart[], SwitchInfo[])
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_KS_Shell_ShellBase_Arguments_CommandArgumentPart___KS_Shell_ShellBase_Switches_SwitchInfo___
+  commentId: M:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Arguments.CommandArgumentPart[],KS.Shell.ShellBase.Switches.SwitchInfo[])
+  name.vb: New(CommandArgumentPart(), SwitchInfo())
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.CommandArgumentInfo(KS.Shell.ShellBase.Arguments.CommandArgumentPart[], KS.Shell.ShellBase.Switches.SwitchInfo[])
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.New(KS.Shell.ShellBase.Arguments.CommandArgumentPart(), KS.Shell.ShellBase.Switches.SwitchInfo())
+  nameWithType: CommandArgumentInfo.CommandArgumentInfo(CommandArgumentPart[], SwitchInfo[])
+  nameWithType.vb: CommandArgumentInfo.New(CommandArgumentPart(), SwitchInfo())
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Arguments.CommandArgumentPart[],KS.Shell.ShellBase.Switches.SwitchInfo[],System.Boolean)
+  name: CommandArgumentInfo(CommandArgumentPart[], SwitchInfo[], bool)
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_KS_Shell_ShellBase_Arguments_CommandArgumentPart___KS_Shell_ShellBase_Switches_SwitchInfo___System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Arguments.CommandArgumentPart[],KS.Shell.ShellBase.Switches.SwitchInfo[],System.Boolean)
+  name.vb: New(CommandArgumentPart(), SwitchInfo(), Boolean)
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.CommandArgumentInfo(KS.Shell.ShellBase.Arguments.CommandArgumentPart[], KS.Shell.ShellBase.Switches.SwitchInfo[], bool)
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.New(KS.Shell.ShellBase.Arguments.CommandArgumentPart(), KS.Shell.ShellBase.Switches.SwitchInfo(), Boolean)
+  nameWithType: CommandArgumentInfo.CommandArgumentInfo(CommandArgumentPart[], SwitchInfo[], bool)
+  nameWithType.vb: CommandArgumentInfo.New(CommandArgumentPart(), SwitchInfo(), Boolean)
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor*
+  name: CommandArgumentInfo
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.CommandArgumentInfo
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.New
+  nameWithType: CommandArgumentInfo.CommandArgumentInfo
+  nameWithType.vb: CommandArgumentInfo.New
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.AcceptsSet
+  name: AcceptsSet
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo_AcceptsSet
+  commentId: P:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.AcceptsSet
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.AcceptsSet
+  nameWithType: CommandArgumentInfo.AcceptsSet
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.AcceptsSet*
+  name: AcceptsSet
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo_AcceptsSet_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.AcceptsSet
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.AcceptsSet
+  nameWithType: CommandArgumentInfo.AcceptsSet
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.Arguments
+  name: Arguments
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo_Arguments
+  commentId: P:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.Arguments
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.Arguments
+  nameWithType: CommandArgumentInfo.Arguments
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.Arguments*
+  name: Arguments
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo_Arguments_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.Arguments
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.Arguments
+  nameWithType: CommandArgumentInfo.Arguments
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.ArgumentsRequired
+  name: ArgumentsRequired
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo_ArgumentsRequired
+  commentId: P:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.ArgumentsRequired
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.ArgumentsRequired
+  nameWithType: CommandArgumentInfo.ArgumentsRequired
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.ArgumentsRequired*
+  name: ArgumentsRequired
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo_ArgumentsRequired_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.ArgumentsRequired
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.ArgumentsRequired
+  nameWithType: CommandArgumentInfo.ArgumentsRequired
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.MinimumArguments
+  name: MinimumArguments
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo_MinimumArguments
+  commentId: P:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.MinimumArguments
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.MinimumArguments
+  nameWithType: CommandArgumentInfo.MinimumArguments
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.MinimumArguments*
+  name: MinimumArguments
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo_MinimumArguments_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.MinimumArguments
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.MinimumArguments
+  nameWithType: CommandArgumentInfo.MinimumArguments
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.Switches
+  name: Switches
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo_Switches
+  commentId: P:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.Switches
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.Switches
+  nameWithType: CommandArgumentInfo.Switches
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.Switches*
+  name: Switches
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo_Switches_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.Switches
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.Switches
+  nameWithType: CommandArgumentInfo.Switches
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart
+  name: CommandArgumentPart
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html
+  commentId: T:KS.Shell.ShellBase.Arguments.CommandArgumentPart
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart
+  nameWithType: CommandArgumentPart
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String,System.Int32,System.Char[],System.String[]})
+  name: CommandArgumentPart(bool, string, Func<string, int, char[], string[]>)
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_System_Boolean_System_String_System_Func_System_String_System_Int32_System_Char___System_String____
+  commentId: M:KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String,System.Int32,System.Char[],System.String[]})
+  name.vb: New(Boolean, String, Func(Of String, Integer, Char(), String()))
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.CommandArgumentPart(bool, string, System.Func<string, int, char[], string[]>)
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentPart.New(Boolean, String, System.Func(Of String, Integer, Char(), String()))
+  nameWithType: CommandArgumentPart.CommandArgumentPart(bool, string, Func<string, int, char[], string[]>)
+  nameWithType.vb: CommandArgumentPart.New(Boolean, String, Func(Of String, Integer, Char(), String()))
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor*
+  name: CommandArgumentPart
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.CommandArgumentPart
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentPart.New
+  nameWithType: CommandArgumentPart.CommandArgumentPart
+  nameWithType.vb: CommandArgumentPart.New
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.ArgumentExpression
+  name: ArgumentExpression
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart_ArgumentExpression
+  commentId: P:KS.Shell.ShellBase.Arguments.CommandArgumentPart.ArgumentExpression
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.ArgumentExpression
+  nameWithType: CommandArgumentPart.ArgumentExpression
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.ArgumentExpression*
+  name: ArgumentExpression
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart_ArgumentExpression_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentPart.ArgumentExpression
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.ArgumentExpression
+  nameWithType: CommandArgumentPart.ArgumentExpression
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.ArgumentRequired
+  name: ArgumentRequired
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart_ArgumentRequired
+  commentId: P:KS.Shell.ShellBase.Arguments.CommandArgumentPart.ArgumentRequired
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.ArgumentRequired
+  nameWithType: CommandArgumentPart.ArgumentRequired
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.ArgumentRequired*
+  name: ArgumentRequired
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart_ArgumentRequired_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentPart.ArgumentRequired
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.ArgumentRequired
+  nameWithType: CommandArgumentPart.ArgumentRequired
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.AutoCompleter
+  name: AutoCompleter
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart_AutoCompleter
+  commentId: P:KS.Shell.ShellBase.Arguments.CommandArgumentPart.AutoCompleter
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.AutoCompleter
+  nameWithType: CommandArgumentPart.AutoCompleter
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.AutoCompleter*
+  name: AutoCompleter
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart_AutoCompleter_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentPart.AutoCompleter
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.AutoCompleter
+  nameWithType: CommandArgumentPart.AutoCompleter
+- uid: KS.Shell.ShellBase.Arguments.CommandAutoCompletionList
+  name: CommandAutoCompletionList
+  href: api/KS.Shell.ShellBase.Arguments.CommandAutoCompletionList.html
+  commentId: T:KS.Shell.ShellBase.Arguments.CommandAutoCompletionList
+  fullName: KS.Shell.ShellBase.Arguments.CommandAutoCompletionList
+  nameWithType: CommandAutoCompletionList
+- uid: KS.Shell.ShellBase.Arguments.CommandAutoCompletionList.GetCompletionFunction(System.String)
+  name: GetCompletionFunction(string)
+  href: api/KS.Shell.ShellBase.Arguments.CommandAutoCompletionList.html#KS_Shell_ShellBase_Arguments_CommandAutoCompletionList_GetCompletionFunction_System_String_
+  commentId: M:KS.Shell.ShellBase.Arguments.CommandAutoCompletionList.GetCompletionFunction(System.String)
+  name.vb: GetCompletionFunction(String)
+  fullName: KS.Shell.ShellBase.Arguments.CommandAutoCompletionList.GetCompletionFunction(string)
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandAutoCompletionList.GetCompletionFunction(String)
+  nameWithType: CommandAutoCompletionList.GetCompletionFunction(string)
+  nameWithType.vb: CommandAutoCompletionList.GetCompletionFunction(String)
+- uid: KS.Shell.ShellBase.Arguments.CommandAutoCompletionList.GetCompletionFunction*
+  name: GetCompletionFunction
+  href: api/KS.Shell.ShellBase.Arguments.CommandAutoCompletionList.html#KS_Shell_ShellBase_Arguments_CommandAutoCompletionList_GetCompletionFunction_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandAutoCompletionList.GetCompletionFunction
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.CommandAutoCompletionList.GetCompletionFunction
+  nameWithType: CommandAutoCompletionList.GetCompletionFunction
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo
+  name: ProvidedArgumentsInfo
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html
+  commentId: T:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo
+  nameWithType: ProvidedArgumentsInfo
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsList
+  name: ArgumentsList
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_ArgumentsList
+  commentId: P:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsList
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsList
+  nameWithType: ProvidedArgumentsInfo.ArgumentsList
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsList*
+  name: ArgumentsList
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_ArgumentsList_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsList
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsList
+  nameWithType: ProvidedArgumentsInfo.ArgumentsList
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsText
+  name: ArgumentsText
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_ArgumentsText
+  commentId: P:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsText
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsText
+  nameWithType: ProvidedArgumentsInfo.ArgumentsText
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsText*
+  name: ArgumentsText
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_ArgumentsText_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsText
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsText
+  nameWithType: ProvidedArgumentsInfo.ArgumentsText
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.Command
+  name: Command
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_Command
+  commentId: P:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.Command
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.Command
+  nameWithType: ProvidedArgumentsInfo.Command
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.Command*
+  name: Command
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_Command_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.Command
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.Command
+  nameWithType: ProvidedArgumentsInfo.Command
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredArgumentsProvided
+  name: RequiredArgumentsProvided
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_RequiredArgumentsProvided
+  commentId: P:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredArgumentsProvided
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredArgumentsProvided
+  nameWithType: ProvidedArgumentsInfo.RequiredArgumentsProvided
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredArgumentsProvided*
+  name: RequiredArgumentsProvided
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_RequiredArgumentsProvided_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredArgumentsProvided
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredArgumentsProvided
+  nameWithType: ProvidedArgumentsInfo.RequiredArgumentsProvided
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided
+  name: RequiredSwitchArgumentsProvided
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_RequiredSwitchArgumentsProvided
+  commentId: P:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided
+  nameWithType: ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided*
+  name: RequiredSwitchArgumentsProvided
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_RequiredSwitchArgumentsProvided_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided
+  nameWithType: ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredSwitchesProvided
+  name: RequiredSwitchesProvided
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_RequiredSwitchesProvided
+  commentId: P:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredSwitchesProvided
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredSwitchesProvided
+  nameWithType: ProvidedArgumentsInfo.RequiredSwitchesProvided
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredSwitchesProvided*
+  name: RequiredSwitchesProvided
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_RequiredSwitchesProvided_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredSwitchesProvided
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredSwitchesProvided
+  nameWithType: ProvidedArgumentsInfo.RequiredSwitchesProvided
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.SwitchesList
+  name: SwitchesList
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_SwitchesList
+  commentId: P:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.SwitchesList
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.SwitchesList
+  nameWithType: ProvidedArgumentsInfo.SwitchesList
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.SwitchesList*
+  name: SwitchesList
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_SwitchesList_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.SwitchesList
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.SwitchesList
+  nameWithType: ProvidedArgumentsInfo.SwitchesList
 - uid: KS.Shell.ShellBase.Commands
   name: KS.Shell.ShellBase.Commands
   href: api/KS.Shell.ShellBase.Commands.html
   commentId: N:KS.Shell.ShellBase.Commands
   fullName: KS.Shell.ShellBase.Commands
   nameWithType: KS.Shell.ShellBase.Commands
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers
-  name: KS.Shell.ShellBase.Commands.ArgumentsParsers
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.html
-  commentId: N:KS.Shell.ShellBase.Commands.ArgumentsParsers
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers
-  nameWithType: KS.Shell.ShellBase.Commands.ArgumentsParsers
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser
-  name: ArgumentsParser
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.html
-  commentId: T:KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser
-  nameWithType: ArgumentsParser
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseArgumentArguments(System.String)
-  name: ParseArgumentArguments(string)
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ArgumentsParser_ParseArgumentArguments_System_String_
-  commentId: M:KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseArgumentArguments(System.String)
-  name.vb: ParseArgumentArguments(String)
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseArgumentArguments(string)
-  fullName.vb: KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseArgumentArguments(String)
-  nameWithType: ArgumentsParser.ParseArgumentArguments(string)
-  nameWithType.vb: ArgumentsParser.ParseArgumentArguments(String)
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseArgumentArguments*
-  name: ParseArgumentArguments
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ArgumentsParser_ParseArgumentArguments_
-  commentId: Overload:KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseArgumentArguments
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseArgumentArguments
-  nameWithType: ArgumentsParser.ParseArgumentArguments
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseShellCommandArguments(System.String,KS.Shell.ShellBase.Shells.ShellType)
-  name: ParseShellCommandArguments(string, ShellType)
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ArgumentsParser_ParseShellCommandArguments_System_String_KS_Shell_ShellBase_Shells_ShellType_
-  commentId: M:KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseShellCommandArguments(System.String,KS.Shell.ShellBase.Shells.ShellType)
-  name.vb: ParseShellCommandArguments(String, ShellType)
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseShellCommandArguments(string, KS.Shell.ShellBase.Shells.ShellType)
-  fullName.vb: KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseShellCommandArguments(String, KS.Shell.ShellBase.Shells.ShellType)
-  nameWithType: ArgumentsParser.ParseShellCommandArguments(string, ShellType)
-  nameWithType.vb: ArgumentsParser.ParseShellCommandArguments(String, ShellType)
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseShellCommandArguments(System.String,System.String)
-  name: ParseShellCommandArguments(string, string)
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ArgumentsParser_ParseShellCommandArguments_System_String_System_String_
-  commentId: M:KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseShellCommandArguments(System.String,System.String)
-  name.vb: ParseShellCommandArguments(String, String)
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseShellCommandArguments(string, string)
-  fullName.vb: KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseShellCommandArguments(String, String)
-  nameWithType: ArgumentsParser.ParseShellCommandArguments(string, string)
-  nameWithType.vb: ArgumentsParser.ParseShellCommandArguments(String, String)
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseShellCommandArguments*
-  name: ParseShellCommandArguments
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ArgumentsParser_ParseShellCommandArguments_
-  commentId: Overload:KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseShellCommandArguments
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ArgumentsParser.ParseShellCommandArguments
-  nameWithType: ArgumentsParser.ParseShellCommandArguments
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo
-  name: ProvidedArgumentsInfo
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html
-  commentId: T:KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo
-  nameWithType: ProvidedArgumentsInfo
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.ArgumentsList
-  name: ArgumentsList
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ProvidedArgumentsInfo_ArgumentsList
-  commentId: P:KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.ArgumentsList
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.ArgumentsList
-  nameWithType: ProvidedArgumentsInfo.ArgumentsList
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.ArgumentsList*
-  name: ArgumentsList
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ProvidedArgumentsInfo_ArgumentsList_
-  commentId: Overload:KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.ArgumentsList
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.ArgumentsList
-  nameWithType: ProvidedArgumentsInfo.ArgumentsList
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.ArgumentsText
-  name: ArgumentsText
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ProvidedArgumentsInfo_ArgumentsText
-  commentId: P:KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.ArgumentsText
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.ArgumentsText
-  nameWithType: ProvidedArgumentsInfo.ArgumentsText
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.ArgumentsText*
-  name: ArgumentsText
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ProvidedArgumentsInfo_ArgumentsText_
-  commentId: Overload:KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.ArgumentsText
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.ArgumentsText
-  nameWithType: ProvidedArgumentsInfo.ArgumentsText
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.Command
-  name: Command
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ProvidedArgumentsInfo_Command
-  commentId: P:KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.Command
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.Command
-  nameWithType: ProvidedArgumentsInfo.Command
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.Command*
-  name: Command
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ProvidedArgumentsInfo_Command_
-  commentId: Overload:KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.Command
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.Command
-  nameWithType: ProvidedArgumentsInfo.Command
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredArgumentsProvided
-  name: RequiredArgumentsProvided
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ProvidedArgumentsInfo_RequiredArgumentsProvided
-  commentId: P:KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredArgumentsProvided
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredArgumentsProvided
-  nameWithType: ProvidedArgumentsInfo.RequiredArgumentsProvided
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredArgumentsProvided*
-  name: RequiredArgumentsProvided
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ProvidedArgumentsInfo_RequiredArgumentsProvided_
-  commentId: Overload:KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredArgumentsProvided
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredArgumentsProvided
-  nameWithType: ProvidedArgumentsInfo.RequiredArgumentsProvided
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided
-  name: RequiredSwitchArgumentsProvided
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ProvidedArgumentsInfo_RequiredSwitchArgumentsProvided
-  commentId: P:KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided
-  nameWithType: ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided*
-  name: RequiredSwitchArgumentsProvided
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ProvidedArgumentsInfo_RequiredSwitchArgumentsProvided_
-  commentId: Overload:KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided
-  nameWithType: ProvidedArgumentsInfo.RequiredSwitchArgumentsProvided
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredSwitchesProvided
-  name: RequiredSwitchesProvided
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ProvidedArgumentsInfo_RequiredSwitchesProvided
-  commentId: P:KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredSwitchesProvided
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredSwitchesProvided
-  nameWithType: ProvidedArgumentsInfo.RequiredSwitchesProvided
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredSwitchesProvided*
-  name: RequiredSwitchesProvided
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ProvidedArgumentsInfo_RequiredSwitchesProvided_
-  commentId: Overload:KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredSwitchesProvided
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.RequiredSwitchesProvided
-  nameWithType: ProvidedArgumentsInfo.RequiredSwitchesProvided
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.SwitchesList
-  name: SwitchesList
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ProvidedArgumentsInfo_SwitchesList
-  commentId: P:KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.SwitchesList
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.SwitchesList
-  nameWithType: ProvidedArgumentsInfo.SwitchesList
-- uid: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.SwitchesList*
-  name: SwitchesList
-  href: api/KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Commands_ArgumentsParsers_ProvidedArgumentsInfo_SwitchesList_
-  commentId: Overload:KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.SwitchesList
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.ArgumentsParsers.ProvidedArgumentsInfo.SwitchesList
-  nameWithType: ProvidedArgumentsInfo.SwitchesList
 - uid: KS.Shell.ShellBase.Commands.BaseCommand
   name: BaseCommand
   href: api/KS.Shell.ShellBase.Commands.BaseCommand.html
@@ -48716,200 +48910,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.BaseCommand.HelpHelper
   nameWithType: BaseCommand.HelpHelper
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo
-  name: CommandArgumentInfo
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html
-  commentId: T:KS.Shell.ShellBase.Commands.CommandArgumentInfo
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo
-  nameWithType: CommandArgumentInfo
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor
-  name: CommandArgumentInfo()
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo__ctor
-  commentId: M:KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor
-  name.vb: New()
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo.CommandArgumentInfo()
-  fullName.vb: KS.Shell.ShellBase.Commands.CommandArgumentInfo.New()
-  nameWithType: CommandArgumentInfo.CommandArgumentInfo()
-  nameWithType.vb: CommandArgumentInfo.New()
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Commands.CommandArgumentPart[],KS.Shell.ShellBase.Commands.SwitchInfo[])
-  name: CommandArgumentInfo(CommandArgumentPart[], SwitchInfo[])
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo__ctor_KS_Shell_ShellBase_Commands_CommandArgumentPart___KS_Shell_ShellBase_Commands_SwitchInfo___
-  commentId: M:KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Commands.CommandArgumentPart[],KS.Shell.ShellBase.Commands.SwitchInfo[])
-  name.vb: New(CommandArgumentPart(), SwitchInfo())
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo.CommandArgumentInfo(KS.Shell.ShellBase.Commands.CommandArgumentPart[], KS.Shell.ShellBase.Commands.SwitchInfo[])
-  fullName.vb: KS.Shell.ShellBase.Commands.CommandArgumentInfo.New(KS.Shell.ShellBase.Commands.CommandArgumentPart(), KS.Shell.ShellBase.Commands.SwitchInfo())
-  nameWithType: CommandArgumentInfo.CommandArgumentInfo(CommandArgumentPart[], SwitchInfo[])
-  nameWithType.vb: CommandArgumentInfo.New(CommandArgumentPart(), SwitchInfo())
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Commands.CommandArgumentPart[],KS.Shell.ShellBase.Commands.SwitchInfo[],System.Boolean)
-  name: CommandArgumentInfo(CommandArgumentPart[], SwitchInfo[], bool)
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo__ctor_KS_Shell_ShellBase_Commands_CommandArgumentPart___KS_Shell_ShellBase_Commands_SwitchInfo___System_Boolean_
-  commentId: M:KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Commands.CommandArgumentPart[],KS.Shell.ShellBase.Commands.SwitchInfo[],System.Boolean)
-  name.vb: New(CommandArgumentPart(), SwitchInfo(), Boolean)
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo.CommandArgumentInfo(KS.Shell.ShellBase.Commands.CommandArgumentPart[], KS.Shell.ShellBase.Commands.SwitchInfo[], bool)
-  fullName.vb: KS.Shell.ShellBase.Commands.CommandArgumentInfo.New(KS.Shell.ShellBase.Commands.CommandArgumentPart(), KS.Shell.ShellBase.Commands.SwitchInfo(), Boolean)
-  nameWithType: CommandArgumentInfo.CommandArgumentInfo(CommandArgumentPart[], SwitchInfo[], bool)
-  nameWithType.vb: CommandArgumentInfo.New(CommandArgumentPart(), SwitchInfo(), Boolean)
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor*
-  name: CommandArgumentInfo
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo__ctor_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandArgumentInfo.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo.CommandArgumentInfo
-  fullName.vb: KS.Shell.ShellBase.Commands.CommandArgumentInfo.New
-  nameWithType: CommandArgumentInfo.CommandArgumentInfo
-  nameWithType.vb: CommandArgumentInfo.New
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.AcceptsSet
-  name: AcceptsSet
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo_AcceptsSet
-  commentId: P:KS.Shell.ShellBase.Commands.CommandArgumentInfo.AcceptsSet
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo.AcceptsSet
-  nameWithType: CommandArgumentInfo.AcceptsSet
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.AcceptsSet*
-  name: AcceptsSet
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo_AcceptsSet_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandArgumentInfo.AcceptsSet
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo.AcceptsSet
-  nameWithType: CommandArgumentInfo.AcceptsSet
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.Arguments
-  name: Arguments
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo_Arguments
-  commentId: P:KS.Shell.ShellBase.Commands.CommandArgumentInfo.Arguments
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo.Arguments
-  nameWithType: CommandArgumentInfo.Arguments
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.Arguments*
-  name: Arguments
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo_Arguments_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandArgumentInfo.Arguments
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo.Arguments
-  nameWithType: CommandArgumentInfo.Arguments
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.ArgumentsRequired
-  name: ArgumentsRequired
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo_ArgumentsRequired
-  commentId: P:KS.Shell.ShellBase.Commands.CommandArgumentInfo.ArgumentsRequired
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo.ArgumentsRequired
-  nameWithType: CommandArgumentInfo.ArgumentsRequired
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.ArgumentsRequired*
-  name: ArgumentsRequired
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo_ArgumentsRequired_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandArgumentInfo.ArgumentsRequired
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo.ArgumentsRequired
-  nameWithType: CommandArgumentInfo.ArgumentsRequired
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.MinimumArguments
-  name: MinimumArguments
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo_MinimumArguments
-  commentId: P:KS.Shell.ShellBase.Commands.CommandArgumentInfo.MinimumArguments
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo.MinimumArguments
-  nameWithType: CommandArgumentInfo.MinimumArguments
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.MinimumArguments*
-  name: MinimumArguments
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo_MinimumArguments_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandArgumentInfo.MinimumArguments
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo.MinimumArguments
-  nameWithType: CommandArgumentInfo.MinimumArguments
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.Switches
-  name: Switches
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo_Switches
-  commentId: P:KS.Shell.ShellBase.Commands.CommandArgumentInfo.Switches
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo.Switches
-  nameWithType: CommandArgumentInfo.Switches
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentInfo.Switches*
-  name: Switches
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentInfo.html#KS_Shell_ShellBase_Commands_CommandArgumentInfo_Switches_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandArgumentInfo.Switches
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentInfo.Switches
-  nameWithType: CommandArgumentInfo.Switches
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentPart
-  name: CommandArgumentPart
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentPart.html
-  commentId: T:KS.Shell.ShellBase.Commands.CommandArgumentPart
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentPart
-  nameWithType: CommandArgumentPart
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String,System.Int32,System.Char[],System.String[]})
-  name: CommandArgumentPart(bool, string, Func<string, int, char[], string[]>)
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentPart.html#KS_Shell_ShellBase_Commands_CommandArgumentPart__ctor_System_Boolean_System_String_System_Func_System_String_System_Int32_System_Char___System_String____
-  commentId: M:KS.Shell.ShellBase.Commands.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String,System.Int32,System.Char[],System.String[]})
-  name.vb: New(Boolean, String, Func(Of String, Integer, Char(), String()))
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentPart.CommandArgumentPart(bool, string, System.Func<string, int, char[], string[]>)
-  fullName.vb: KS.Shell.ShellBase.Commands.CommandArgumentPart.New(Boolean, String, System.Func(Of String, Integer, Char(), String()))
-  nameWithType: CommandArgumentPart.CommandArgumentPart(bool, string, Func<string, int, char[], string[]>)
-  nameWithType.vb: CommandArgumentPart.New(Boolean, String, Func(Of String, Integer, Char(), String()))
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentPart.#ctor*
-  name: CommandArgumentPart
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentPart.html#KS_Shell_ShellBase_Commands_CommandArgumentPart__ctor_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandArgumentPart.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentPart.CommandArgumentPart
-  fullName.vb: KS.Shell.ShellBase.Commands.CommandArgumentPart.New
-  nameWithType: CommandArgumentPart.CommandArgumentPart
-  nameWithType.vb: CommandArgumentPart.New
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentPart.ArgumentExpression
-  name: ArgumentExpression
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentPart.html#KS_Shell_ShellBase_Commands_CommandArgumentPart_ArgumentExpression
-  commentId: P:KS.Shell.ShellBase.Commands.CommandArgumentPart.ArgumentExpression
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentPart.ArgumentExpression
-  nameWithType: CommandArgumentPart.ArgumentExpression
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentPart.ArgumentExpression*
-  name: ArgumentExpression
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentPart.html#KS_Shell_ShellBase_Commands_CommandArgumentPart_ArgumentExpression_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandArgumentPart.ArgumentExpression
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentPart.ArgumentExpression
-  nameWithType: CommandArgumentPart.ArgumentExpression
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentPart.ArgumentRequired
-  name: ArgumentRequired
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentPart.html#KS_Shell_ShellBase_Commands_CommandArgumentPart_ArgumentRequired
-  commentId: P:KS.Shell.ShellBase.Commands.CommandArgumentPart.ArgumentRequired
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentPart.ArgumentRequired
-  nameWithType: CommandArgumentPart.ArgumentRequired
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentPart.ArgumentRequired*
-  name: ArgumentRequired
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentPart.html#KS_Shell_ShellBase_Commands_CommandArgumentPart_ArgumentRequired_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandArgumentPart.ArgumentRequired
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentPart.ArgumentRequired
-  nameWithType: CommandArgumentPart.ArgumentRequired
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentPart.AutoCompleter
-  name: AutoCompleter
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentPart.html#KS_Shell_ShellBase_Commands_CommandArgumentPart_AutoCompleter
-  commentId: P:KS.Shell.ShellBase.Commands.CommandArgumentPart.AutoCompleter
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentPart.AutoCompleter
-  nameWithType: CommandArgumentPart.AutoCompleter
-- uid: KS.Shell.ShellBase.Commands.CommandArgumentPart.AutoCompleter*
-  name: AutoCompleter
-  href: api/KS.Shell.ShellBase.Commands.CommandArgumentPart.html#KS_Shell_ShellBase_Commands_CommandArgumentPart_AutoCompleter_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandArgumentPart.AutoCompleter
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.CommandArgumentPart.AutoCompleter
-  nameWithType: CommandArgumentPart.AutoCompleter
-- uid: KS.Shell.ShellBase.Commands.CommandAutoCompletionList
-  name: CommandAutoCompletionList
-  href: api/KS.Shell.ShellBase.Commands.CommandAutoCompletionList.html
-  commentId: T:KS.Shell.ShellBase.Commands.CommandAutoCompletionList
-  fullName: KS.Shell.ShellBase.Commands.CommandAutoCompletionList
-  nameWithType: CommandAutoCompletionList
-- uid: KS.Shell.ShellBase.Commands.CommandAutoCompletionList.GetCompletionFunction(System.String)
-  name: GetCompletionFunction(string)
-  href: api/KS.Shell.ShellBase.Commands.CommandAutoCompletionList.html#KS_Shell_ShellBase_Commands_CommandAutoCompletionList_GetCompletionFunction_System_String_
-  commentId: M:KS.Shell.ShellBase.Commands.CommandAutoCompletionList.GetCompletionFunction(System.String)
-  name.vb: GetCompletionFunction(String)
-  fullName: KS.Shell.ShellBase.Commands.CommandAutoCompletionList.GetCompletionFunction(string)
-  fullName.vb: KS.Shell.ShellBase.Commands.CommandAutoCompletionList.GetCompletionFunction(String)
-  nameWithType: CommandAutoCompletionList.GetCompletionFunction(string)
-  nameWithType.vb: CommandAutoCompletionList.GetCompletionFunction(String)
-- uid: KS.Shell.ShellBase.Commands.CommandAutoCompletionList.GetCompletionFunction*
-  name: GetCompletionFunction
-  href: api/KS.Shell.ShellBase.Commands.CommandAutoCompletionList.html#KS_Shell_ShellBase_Commands_CommandAutoCompletionList_GetCompletionFunction_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandAutoCompletionList.GetCompletionFunction
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.CommandAutoCompletionList.GetCompletionFunction
-  nameWithType: CommandAutoCompletionList.GetCompletionFunction
 - uid: KS.Shell.ShellBase.Commands.CommandExecutor
   name: CommandExecutor
   href: api/KS.Shell.ShellBase.Commands.CommandExecutor.html
@@ -49014,22 +49014,22 @@ references:
   commentId: T:KS.Shell.ShellBase.Commands.CommandInfo
   fullName: KS.Shell.ShellBase.Commands.CommandInfo
   nameWithType: CommandInfo
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType,System.String,KS.Shell.ShellBase.Commands.CommandArgumentInfo[],KS.Shell.ShellBase.Commands.BaseCommand,KS.Shell.ShellBase.Commands.CommandFlags)
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Shell.ShellBase.Commands.BaseCommand,KS.Shell.ShellBase.Commands.CommandFlags)
   name: CommandInfo(string, ShellType, string, CommandArgumentInfo[], BaseCommand, CommandFlags)
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo__ctor_System_String_KS_Shell_ShellBase_Shells_ShellType_System_String_KS_Shell_ShellBase_Commands_CommandArgumentInfo___KS_Shell_ShellBase_Commands_BaseCommand_KS_Shell_ShellBase_Commands_CommandFlags_
-  commentId: M:KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType,System.String,KS.Shell.ShellBase.Commands.CommandArgumentInfo[],KS.Shell.ShellBase.Commands.BaseCommand,KS.Shell.ShellBase.Commands.CommandFlags)
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo__ctor_System_String_KS_Shell_ShellBase_Shells_ShellType_System_String_KS_Shell_ShellBase_Arguments_CommandArgumentInfo___KS_Shell_ShellBase_Commands_BaseCommand_KS_Shell_ShellBase_Commands_CommandFlags_
+  commentId: M:KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Shell.ShellBase.Commands.BaseCommand,KS.Shell.ShellBase.Commands.CommandFlags)
   name.vb: New(String, ShellType, String, CommandArgumentInfo(), BaseCommand, CommandFlags)
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.CommandInfo(string, KS.Shell.ShellBase.Shells.ShellType, string, KS.Shell.ShellBase.Commands.CommandArgumentInfo[], KS.Shell.ShellBase.Commands.BaseCommand, KS.Shell.ShellBase.Commands.CommandFlags)
-  fullName.vb: KS.Shell.ShellBase.Commands.CommandInfo.New(String, KS.Shell.ShellBase.Shells.ShellType, String, KS.Shell.ShellBase.Commands.CommandArgumentInfo(), KS.Shell.ShellBase.Commands.BaseCommand, KS.Shell.ShellBase.Commands.CommandFlags)
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.CommandInfo(string, KS.Shell.ShellBase.Shells.ShellType, string, KS.Shell.ShellBase.Arguments.CommandArgumentInfo[], KS.Shell.ShellBase.Commands.BaseCommand, KS.Shell.ShellBase.Commands.CommandFlags)
+  fullName.vb: KS.Shell.ShellBase.Commands.CommandInfo.New(String, KS.Shell.ShellBase.Shells.ShellType, String, KS.Shell.ShellBase.Arguments.CommandArgumentInfo(), KS.Shell.ShellBase.Commands.BaseCommand, KS.Shell.ShellBase.Commands.CommandFlags)
   nameWithType: CommandInfo.CommandInfo(string, ShellType, string, CommandArgumentInfo[], BaseCommand, CommandFlags)
   nameWithType.vb: CommandInfo.New(String, ShellType, String, CommandArgumentInfo(), BaseCommand, CommandFlags)
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,System.String,System.String,KS.Shell.ShellBase.Commands.CommandArgumentInfo[],KS.Shell.ShellBase.Commands.BaseCommand,KS.Shell.ShellBase.Commands.CommandFlags)
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,System.String,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Shell.ShellBase.Commands.BaseCommand,KS.Shell.ShellBase.Commands.CommandFlags)
   name: CommandInfo(string, string, string, CommandArgumentInfo[], BaseCommand, CommandFlags)
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo__ctor_System_String_System_String_System_String_KS_Shell_ShellBase_Commands_CommandArgumentInfo___KS_Shell_ShellBase_Commands_BaseCommand_KS_Shell_ShellBase_Commands_CommandFlags_
-  commentId: M:KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,System.String,System.String,KS.Shell.ShellBase.Commands.CommandArgumentInfo[],KS.Shell.ShellBase.Commands.BaseCommand,KS.Shell.ShellBase.Commands.CommandFlags)
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo__ctor_System_String_System_String_System_String_KS_Shell_ShellBase_Arguments_CommandArgumentInfo___KS_Shell_ShellBase_Commands_BaseCommand_KS_Shell_ShellBase_Commands_CommandFlags_
+  commentId: M:KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,System.String,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Shell.ShellBase.Commands.BaseCommand,KS.Shell.ShellBase.Commands.CommandFlags)
   name.vb: New(String, String, String, CommandArgumentInfo(), BaseCommand, CommandFlags)
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.CommandInfo(string, string, string, KS.Shell.ShellBase.Commands.CommandArgumentInfo[], KS.Shell.ShellBase.Commands.BaseCommand, KS.Shell.ShellBase.Commands.CommandFlags)
-  fullName.vb: KS.Shell.ShellBase.Commands.CommandInfo.New(String, String, String, KS.Shell.ShellBase.Commands.CommandArgumentInfo(), KS.Shell.ShellBase.Commands.BaseCommand, KS.Shell.ShellBase.Commands.CommandFlags)
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.CommandInfo(string, string, string, KS.Shell.ShellBase.Arguments.CommandArgumentInfo[], KS.Shell.ShellBase.Commands.BaseCommand, KS.Shell.ShellBase.Commands.CommandFlags)
+  fullName.vb: KS.Shell.ShellBase.Commands.CommandInfo.New(String, String, String, KS.Shell.ShellBase.Arguments.CommandArgumentInfo(), KS.Shell.ShellBase.Commands.BaseCommand, KS.Shell.ShellBase.Commands.CommandFlags)
   nameWithType: CommandInfo.CommandInfo(string, string, string, CommandArgumentInfo[], BaseCommand, CommandFlags)
   nameWithType.vb: CommandInfo.New(String, String, String, CommandArgumentInfo(), BaseCommand, CommandFlags)
 - uid: KS.Shell.ShellBase.Commands.CommandInfo.#ctor*
@@ -49320,68 +49320,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.CommandManager.UnregisterCustomCommands
   nameWithType: CommandManager.UnregisterCustomCommands
-- uid: KS.Shell.ShellBase.Commands.Execution
-  name: KS.Shell.ShellBase.Commands.Execution
-  href: api/KS.Shell.ShellBase.Commands.Execution.html
-  commentId: N:KS.Shell.ShellBase.Commands.Execution
-  fullName: KS.Shell.ShellBase.Commands.Execution
-  nameWithType: KS.Shell.ShellBase.Commands.Execution
-- uid: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor
-  name: ProcessExecutor
-  href: api/KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.html
-  commentId: T:KS.Shell.ShellBase.Commands.Execution.ProcessExecutor
-  fullName: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor
-  nameWithType: ProcessExecutor
-- uid: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcess(System.String,System.String)
-  name: ExecuteProcess(string, string)
-  href: api/KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.html#KS_Shell_ShellBase_Commands_Execution_ProcessExecutor_ExecuteProcess_System_String_System_String_
-  commentId: M:KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcess(System.String,System.String)
-  name.vb: ExecuteProcess(String, String)
-  fullName: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcess(string, string)
-  fullName.vb: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcess(String, String)
-  nameWithType: ProcessExecutor.ExecuteProcess(string, string)
-  nameWithType.vb: ProcessExecutor.ExecuteProcess(String, String)
-- uid: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcess(System.String,System.String,System.String)
-  name: ExecuteProcess(string, string, string)
-  href: api/KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.html#KS_Shell_ShellBase_Commands_Execution_ProcessExecutor_ExecuteProcess_System_String_System_String_System_String_
-  commentId: M:KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcess(System.String,System.String,System.String)
-  name.vb: ExecuteProcess(String, String, String)
-  fullName: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcess(string, string, string)
-  fullName.vb: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcess(String, String, String)
-  nameWithType: ProcessExecutor.ExecuteProcess(string, string, string)
-  nameWithType.vb: ProcessExecutor.ExecuteProcess(String, String, String)
-- uid: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcess*
-  name: ExecuteProcess
-  href: api/KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.html#KS_Shell_ShellBase_Commands_Execution_ProcessExecutor_ExecuteProcess_
-  commentId: Overload:KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcess
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcess
-  nameWithType: ProcessExecutor.ExecuteProcess
-- uid: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcessToString(System.String,System.String,System.Int32@,System.Boolean)
-  name: ExecuteProcessToString(string, string, ref int, bool)
-  href: api/KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.html#KS_Shell_ShellBase_Commands_Execution_ProcessExecutor_ExecuteProcessToString_System_String_System_String_System_Int32__System_Boolean_
-  commentId: M:KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcessToString(System.String,System.String,System.Int32@,System.Boolean)
-  name.vb: ExecuteProcessToString(String, String, Integer, Boolean)
-  fullName: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcessToString(string, string, ref int, bool)
-  fullName.vb: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcessToString(String, String, Integer, Boolean)
-  nameWithType: ProcessExecutor.ExecuteProcessToString(string, string, ref int, bool)
-  nameWithType.vb: ProcessExecutor.ExecuteProcessToString(String, String, Integer, Boolean)
-- uid: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcessToString(System.String,System.String,System.String,System.Int32@,System.Boolean)
-  name: ExecuteProcessToString(string, string, string, ref int, bool)
-  href: api/KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.html#KS_Shell_ShellBase_Commands_Execution_ProcessExecutor_ExecuteProcessToString_System_String_System_String_System_String_System_Int32__System_Boolean_
-  commentId: M:KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcessToString(System.String,System.String,System.String,System.Int32@,System.Boolean)
-  name.vb: ExecuteProcessToString(String, String, String, Integer, Boolean)
-  fullName: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcessToString(string, string, string, ref int, bool)
-  fullName.vb: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcessToString(String, String, String, Integer, Boolean)
-  nameWithType: ProcessExecutor.ExecuteProcessToString(string, string, string, ref int, bool)
-  nameWithType.vb: ProcessExecutor.ExecuteProcessToString(String, String, String, Integer, Boolean)
-- uid: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcessToString*
-  name: ExecuteProcessToString
-  href: api/KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.html#KS_Shell_ShellBase_Commands_Execution_ProcessExecutor_ExecuteProcessToString_
-  commentId: Overload:KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcessToString
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.Execution.ProcessExecutor.ExecuteProcessToString
-  nameWithType: ProcessExecutor.ExecuteProcessToString
 - uid: KS.Shell.ShellBase.Commands.HelpSystem
   name: HelpSystem
   href: api/KS.Shell.ShellBase.Commands.HelpSystem.html
@@ -49485,189 +49423,62 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.ICommand.HelpHelper
   nameWithType: ICommand.HelpHelper
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo
-  name: SwitchInfo
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html
-  commentId: T:KS.Shell.ShellBase.Commands.SwitchInfo
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo
-  nameWithType: SwitchInfo
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.#ctor(System.String,System.String,System.Boolean,System.Boolean,System.String[],System.Int32,System.Boolean)
-  name: SwitchInfo(string, string, bool, bool, string[], int, bool)
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo__ctor_System_String_System_String_System_Boolean_System_Boolean_System_String___System_Int32_System_Boolean_
-  commentId: M:KS.Shell.ShellBase.Commands.SwitchInfo.#ctor(System.String,System.String,System.Boolean,System.Boolean,System.String[],System.Int32,System.Boolean)
-  name.vb: New(String, String, Boolean, Boolean, String(), Integer, Boolean)
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.SwitchInfo(string, string, bool, bool, string[], int, bool)
-  fullName.vb: KS.Shell.ShellBase.Commands.SwitchInfo.New(String, String, Boolean, Boolean, String(), Integer, Boolean)
-  nameWithType: SwitchInfo.SwitchInfo(string, string, bool, bool, string[], int, bool)
-  nameWithType.vb: SwitchInfo.New(String, String, Boolean, Boolean, String(), Integer, Boolean)
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.#ctor*
-  name: SwitchInfo
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo__ctor_
-  commentId: Overload:KS.Shell.ShellBase.Commands.SwitchInfo.#ctor
+- uid: KS.Shell.ShellBase.Commands.ProcessExecutor
+  name: ProcessExecutor
+  href: api/KS.Shell.ShellBase.Commands.ProcessExecutor.html
+  commentId: T:KS.Shell.ShellBase.Commands.ProcessExecutor
+  fullName: KS.Shell.ShellBase.Commands.ProcessExecutor
+  nameWithType: ProcessExecutor
+- uid: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcess(System.String,System.String)
+  name: ExecuteProcess(string, string)
+  href: api/KS.Shell.ShellBase.Commands.ProcessExecutor.html#KS_Shell_ShellBase_Commands_ProcessExecutor_ExecuteProcess_System_String_System_String_
+  commentId: M:KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcess(System.String,System.String)
+  name.vb: ExecuteProcess(String, String)
+  fullName: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcess(string, string)
+  fullName.vb: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcess(String, String)
+  nameWithType: ProcessExecutor.ExecuteProcess(string, string)
+  nameWithType.vb: ProcessExecutor.ExecuteProcess(String, String)
+- uid: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcess(System.String,System.String,System.String)
+  name: ExecuteProcess(string, string, string)
+  href: api/KS.Shell.ShellBase.Commands.ProcessExecutor.html#KS_Shell_ShellBase_Commands_ProcessExecutor_ExecuteProcess_System_String_System_String_System_String_
+  commentId: M:KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcess(System.String,System.String,System.String)
+  name.vb: ExecuteProcess(String, String, String)
+  fullName: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcess(string, string, string)
+  fullName.vb: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcess(String, String, String)
+  nameWithType: ProcessExecutor.ExecuteProcess(string, string, string)
+  nameWithType.vb: ProcessExecutor.ExecuteProcess(String, String, String)
+- uid: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcess*
+  name: ExecuteProcess
+  href: api/KS.Shell.ShellBase.Commands.ProcessExecutor.html#KS_Shell_ShellBase_Commands_ProcessExecutor_ExecuteProcess_
+  commentId: Overload:KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcess
   isSpec: "True"
-  name.vb: New
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.SwitchInfo
-  fullName.vb: KS.Shell.ShellBase.Commands.SwitchInfo.New
-  nameWithType: SwitchInfo.SwitchInfo
-  nameWithType.vb: SwitchInfo.New
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.AcceptsValues
-  name: AcceptsValues
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_AcceptsValues
-  commentId: P:KS.Shell.ShellBase.Commands.SwitchInfo.AcceptsValues
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.AcceptsValues
-  nameWithType: SwitchInfo.AcceptsValues
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.AcceptsValues*
-  name: AcceptsValues
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_AcceptsValues_
-  commentId: Overload:KS.Shell.ShellBase.Commands.SwitchInfo.AcceptsValues
+  fullName: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcess
+  nameWithType: ProcessExecutor.ExecuteProcess
+- uid: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessToString(System.String,System.String,System.Int32@,System.Boolean)
+  name: ExecuteProcessToString(string, string, ref int, bool)
+  href: api/KS.Shell.ShellBase.Commands.ProcessExecutor.html#KS_Shell_ShellBase_Commands_ProcessExecutor_ExecuteProcessToString_System_String_System_String_System_Int32__System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessToString(System.String,System.String,System.Int32@,System.Boolean)
+  name.vb: ExecuteProcessToString(String, String, Integer, Boolean)
+  fullName: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessToString(string, string, ref int, bool)
+  fullName.vb: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessToString(String, String, Integer, Boolean)
+  nameWithType: ProcessExecutor.ExecuteProcessToString(string, string, ref int, bool)
+  nameWithType.vb: ProcessExecutor.ExecuteProcessToString(String, String, Integer, Boolean)
+- uid: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessToString(System.String,System.String,System.String,System.Int32@,System.Boolean)
+  name: ExecuteProcessToString(string, string, string, ref int, bool)
+  href: api/KS.Shell.ShellBase.Commands.ProcessExecutor.html#KS_Shell_ShellBase_Commands_ProcessExecutor_ExecuteProcessToString_System_String_System_String_System_String_System_Int32__System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessToString(System.String,System.String,System.String,System.Int32@,System.Boolean)
+  name.vb: ExecuteProcessToString(String, String, String, Integer, Boolean)
+  fullName: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessToString(string, string, string, ref int, bool)
+  fullName.vb: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessToString(String, String, String, Integer, Boolean)
+  nameWithType: ProcessExecutor.ExecuteProcessToString(string, string, string, ref int, bool)
+  nameWithType.vb: ProcessExecutor.ExecuteProcessToString(String, String, String, Integer, Boolean)
+- uid: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessToString*
+  name: ExecuteProcessToString
+  href: api/KS.Shell.ShellBase.Commands.ProcessExecutor.html#KS_Shell_ShellBase_Commands_ProcessExecutor_ExecuteProcessToString_
+  commentId: Overload:KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessToString
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.AcceptsValues
-  nameWithType: SwitchInfo.AcceptsValues
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.ArgumentsRequired
-  name: ArgumentsRequired
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_ArgumentsRequired
-  commentId: P:KS.Shell.ShellBase.Commands.SwitchInfo.ArgumentsRequired
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.ArgumentsRequired
-  nameWithType: SwitchInfo.ArgumentsRequired
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.ArgumentsRequired*
-  name: ArgumentsRequired
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_ArgumentsRequired_
-  commentId: Overload:KS.Shell.ShellBase.Commands.SwitchInfo.ArgumentsRequired
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.ArgumentsRequired
-  nameWithType: SwitchInfo.ArgumentsRequired
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.ConflictsWith
-  name: ConflictsWith
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_ConflictsWith
-  commentId: P:KS.Shell.ShellBase.Commands.SwitchInfo.ConflictsWith
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.ConflictsWith
-  nameWithType: SwitchInfo.ConflictsWith
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.ConflictsWith*
-  name: ConflictsWith
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_ConflictsWith_
-  commentId: Overload:KS.Shell.ShellBase.Commands.SwitchInfo.ConflictsWith
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.ConflictsWith
-  nameWithType: SwitchInfo.ConflictsWith
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.GetTranslatedHelpEntry
-  name: GetTranslatedHelpEntry()
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_GetTranslatedHelpEntry
-  commentId: M:KS.Shell.ShellBase.Commands.SwitchInfo.GetTranslatedHelpEntry
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.GetTranslatedHelpEntry()
-  nameWithType: SwitchInfo.GetTranslatedHelpEntry()
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.GetTranslatedHelpEntry*
-  name: GetTranslatedHelpEntry
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_GetTranslatedHelpEntry_
-  commentId: Overload:KS.Shell.ShellBase.Commands.SwitchInfo.GetTranslatedHelpEntry
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.GetTranslatedHelpEntry
-  nameWithType: SwitchInfo.GetTranslatedHelpEntry
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.HelpDefinition
-  name: HelpDefinition
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_HelpDefinition
-  commentId: P:KS.Shell.ShellBase.Commands.SwitchInfo.HelpDefinition
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.HelpDefinition
-  nameWithType: SwitchInfo.HelpDefinition
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.HelpDefinition*
-  name: HelpDefinition
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_HelpDefinition_
-  commentId: Overload:KS.Shell.ShellBase.Commands.SwitchInfo.HelpDefinition
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.HelpDefinition
-  nameWithType: SwitchInfo.HelpDefinition
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.IsRequired
-  name: IsRequired
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_IsRequired
-  commentId: P:KS.Shell.ShellBase.Commands.SwitchInfo.IsRequired
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.IsRequired
-  nameWithType: SwitchInfo.IsRequired
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.IsRequired*
-  name: IsRequired
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_IsRequired_
-  commentId: Overload:KS.Shell.ShellBase.Commands.SwitchInfo.IsRequired
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.IsRequired
-  nameWithType: SwitchInfo.IsRequired
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.OptionalizeLastRequiredArguments
-  name: OptionalizeLastRequiredArguments
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_OptionalizeLastRequiredArguments
-  commentId: P:KS.Shell.ShellBase.Commands.SwitchInfo.OptionalizeLastRequiredArguments
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.OptionalizeLastRequiredArguments
-  nameWithType: SwitchInfo.OptionalizeLastRequiredArguments
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.OptionalizeLastRequiredArguments*
-  name: OptionalizeLastRequiredArguments
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_OptionalizeLastRequiredArguments_
-  commentId: Overload:KS.Shell.ShellBase.Commands.SwitchInfo.OptionalizeLastRequiredArguments
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.OptionalizeLastRequiredArguments
-  nameWithType: SwitchInfo.OptionalizeLastRequiredArguments
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.SwitchName
-  name: SwitchName
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_SwitchName
-  commentId: P:KS.Shell.ShellBase.Commands.SwitchInfo.SwitchName
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.SwitchName
-  nameWithType: SwitchInfo.SwitchName
-- uid: KS.Shell.ShellBase.Commands.SwitchInfo.SwitchName*
-  name: SwitchName
-  href: api/KS.Shell.ShellBase.Commands.SwitchInfo.html#KS_Shell_ShellBase_Commands_SwitchInfo_SwitchName_
-  commentId: Overload:KS.Shell.ShellBase.Commands.SwitchInfo.SwitchName
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.SwitchInfo.SwitchName
-  nameWithType: SwitchInfo.SwitchName
-- uid: KS.Shell.ShellBase.Commands.SwitchManager
-  name: SwitchManager
-  href: api/KS.Shell.ShellBase.Commands.SwitchManager.html
-  commentId: T:KS.Shell.ShellBase.Commands.SwitchManager
-  fullName: KS.Shell.ShellBase.Commands.SwitchManager
-  nameWithType: SwitchManager
-- uid: KS.Shell.ShellBase.Commands.SwitchManager.ContainsSwitch(System.String[],System.String)
-  name: ContainsSwitch(string[], string)
-  href: api/KS.Shell.ShellBase.Commands.SwitchManager.html#KS_Shell_ShellBase_Commands_SwitchManager_ContainsSwitch_System_String___System_String_
-  commentId: M:KS.Shell.ShellBase.Commands.SwitchManager.ContainsSwitch(System.String[],System.String)
-  name.vb: ContainsSwitch(String(), String)
-  fullName: KS.Shell.ShellBase.Commands.SwitchManager.ContainsSwitch(string[], string)
-  fullName.vb: KS.Shell.ShellBase.Commands.SwitchManager.ContainsSwitch(String(), String)
-  nameWithType: SwitchManager.ContainsSwitch(string[], string)
-  nameWithType.vb: SwitchManager.ContainsSwitch(String(), String)
-- uid: KS.Shell.ShellBase.Commands.SwitchManager.ContainsSwitch*
-  name: ContainsSwitch
-  href: api/KS.Shell.ShellBase.Commands.SwitchManager.html#KS_Shell_ShellBase_Commands_SwitchManager_ContainsSwitch_
-  commentId: Overload:KS.Shell.ShellBase.Commands.SwitchManager.ContainsSwitch
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.SwitchManager.ContainsSwitch
-  nameWithType: SwitchManager.ContainsSwitch
-- uid: KS.Shell.ShellBase.Commands.SwitchManager.GetSwitchValue(System.String[],System.String)
-  name: GetSwitchValue(string[], string)
-  href: api/KS.Shell.ShellBase.Commands.SwitchManager.html#KS_Shell_ShellBase_Commands_SwitchManager_GetSwitchValue_System_String___System_String_
-  commentId: M:KS.Shell.ShellBase.Commands.SwitchManager.GetSwitchValue(System.String[],System.String)
-  name.vb: GetSwitchValue(String(), String)
-  fullName: KS.Shell.ShellBase.Commands.SwitchManager.GetSwitchValue(string[], string)
-  fullName.vb: KS.Shell.ShellBase.Commands.SwitchManager.GetSwitchValue(String(), String)
-  nameWithType: SwitchManager.GetSwitchValue(string[], string)
-  nameWithType.vb: SwitchManager.GetSwitchValue(String(), String)
-- uid: KS.Shell.ShellBase.Commands.SwitchManager.GetSwitchValue*
-  name: GetSwitchValue
-  href: api/KS.Shell.ShellBase.Commands.SwitchManager.html#KS_Shell_ShellBase_Commands_SwitchManager_GetSwitchValue_
-  commentId: Overload:KS.Shell.ShellBase.Commands.SwitchManager.GetSwitchValue
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.SwitchManager.GetSwitchValue
-  nameWithType: SwitchManager.GetSwitchValue
-- uid: KS.Shell.ShellBase.Commands.SwitchManager.GetSwitchValues(System.String[],System.Boolean)
-  name: GetSwitchValues(string[], bool)
-  href: api/KS.Shell.ShellBase.Commands.SwitchManager.html#KS_Shell_ShellBase_Commands_SwitchManager_GetSwitchValues_System_String___System_Boolean_
-  commentId: M:KS.Shell.ShellBase.Commands.SwitchManager.GetSwitchValues(System.String[],System.Boolean)
-  name.vb: GetSwitchValues(String(), Boolean)
-  fullName: KS.Shell.ShellBase.Commands.SwitchManager.GetSwitchValues(string[], bool)
-  fullName.vb: KS.Shell.ShellBase.Commands.SwitchManager.GetSwitchValues(String(), Boolean)
-  nameWithType: SwitchManager.GetSwitchValues(string[], bool)
-  nameWithType.vb: SwitchManager.GetSwitchValues(String(), Boolean)
-- uid: KS.Shell.ShellBase.Commands.SwitchManager.GetSwitchValues*
-  name: GetSwitchValues
-  href: api/KS.Shell.ShellBase.Commands.SwitchManager.html#KS_Shell_ShellBase_Commands_SwitchManager_GetSwitchValues_
-  commentId: Overload:KS.Shell.ShellBase.Commands.SwitchManager.GetSwitchValues
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.SwitchManager.GetSwitchValues
-  nameWithType: SwitchManager.GetSwitchValues
+  fullName: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessToString
+  nameWithType: ProcessExecutor.ExecuteProcessToString
 - uid: KS.Shell.ShellBase.Scripting
   name: KS.Shell.ShellBase.Scripting
   href: api/KS.Shell.ShellBase.Scripting.html
@@ -52684,6 +52495,195 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Shells.ShellTypeManager.UnregisterShell
   nameWithType: ShellTypeManager.UnregisterShell
+- uid: KS.Shell.ShellBase.Switches
+  name: KS.Shell.ShellBase.Switches
+  href: api/KS.Shell.ShellBase.Switches.html
+  commentId: N:KS.Shell.ShellBase.Switches
+  fullName: KS.Shell.ShellBase.Switches
+  nameWithType: KS.Shell.ShellBase.Switches
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo
+  name: SwitchInfo
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html
+  commentId: T:KS.Shell.ShellBase.Switches.SwitchInfo
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo
+  nameWithType: SwitchInfo
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.#ctor(System.String,System.String,System.Boolean,System.Boolean,System.String[],System.Int32,System.Boolean)
+  name: SwitchInfo(string, string, bool, bool, string[], int, bool)
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo__ctor_System_String_System_String_System_Boolean_System_Boolean_System_String___System_Int32_System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Switches.SwitchInfo.#ctor(System.String,System.String,System.Boolean,System.Boolean,System.String[],System.Int32,System.Boolean)
+  name.vb: New(String, String, Boolean, Boolean, String(), Integer, Boolean)
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.SwitchInfo(string, string, bool, bool, string[], int, bool)
+  fullName.vb: KS.Shell.ShellBase.Switches.SwitchInfo.New(String, String, Boolean, Boolean, String(), Integer, Boolean)
+  nameWithType: SwitchInfo.SwitchInfo(string, string, bool, bool, string[], int, bool)
+  nameWithType.vb: SwitchInfo.New(String, String, Boolean, Boolean, String(), Integer, Boolean)
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.#ctor*
+  name: SwitchInfo
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo__ctor_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.SwitchInfo
+  fullName.vb: KS.Shell.ShellBase.Switches.SwitchInfo.New
+  nameWithType: SwitchInfo.SwitchInfo
+  nameWithType.vb: SwitchInfo.New
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.AcceptsValues
+  name: AcceptsValues
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_AcceptsValues
+  commentId: P:KS.Shell.ShellBase.Switches.SwitchInfo.AcceptsValues
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.AcceptsValues
+  nameWithType: SwitchInfo.AcceptsValues
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.AcceptsValues*
+  name: AcceptsValues
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_AcceptsValues_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchInfo.AcceptsValues
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.AcceptsValues
+  nameWithType: SwitchInfo.AcceptsValues
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.ArgumentsRequired
+  name: ArgumentsRequired
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_ArgumentsRequired
+  commentId: P:KS.Shell.ShellBase.Switches.SwitchInfo.ArgumentsRequired
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.ArgumentsRequired
+  nameWithType: SwitchInfo.ArgumentsRequired
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.ArgumentsRequired*
+  name: ArgumentsRequired
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_ArgumentsRequired_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchInfo.ArgumentsRequired
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.ArgumentsRequired
+  nameWithType: SwitchInfo.ArgumentsRequired
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.ConflictsWith
+  name: ConflictsWith
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_ConflictsWith
+  commentId: P:KS.Shell.ShellBase.Switches.SwitchInfo.ConflictsWith
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.ConflictsWith
+  nameWithType: SwitchInfo.ConflictsWith
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.ConflictsWith*
+  name: ConflictsWith
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_ConflictsWith_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchInfo.ConflictsWith
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.ConflictsWith
+  nameWithType: SwitchInfo.ConflictsWith
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.GetTranslatedHelpEntry
+  name: GetTranslatedHelpEntry()
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_GetTranslatedHelpEntry
+  commentId: M:KS.Shell.ShellBase.Switches.SwitchInfo.GetTranslatedHelpEntry
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.GetTranslatedHelpEntry()
+  nameWithType: SwitchInfo.GetTranslatedHelpEntry()
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.GetTranslatedHelpEntry*
+  name: GetTranslatedHelpEntry
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_GetTranslatedHelpEntry_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchInfo.GetTranslatedHelpEntry
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.GetTranslatedHelpEntry
+  nameWithType: SwitchInfo.GetTranslatedHelpEntry
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.HelpDefinition
+  name: HelpDefinition
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_HelpDefinition
+  commentId: P:KS.Shell.ShellBase.Switches.SwitchInfo.HelpDefinition
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.HelpDefinition
+  nameWithType: SwitchInfo.HelpDefinition
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.HelpDefinition*
+  name: HelpDefinition
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_HelpDefinition_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchInfo.HelpDefinition
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.HelpDefinition
+  nameWithType: SwitchInfo.HelpDefinition
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.IsRequired
+  name: IsRequired
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_IsRequired
+  commentId: P:KS.Shell.ShellBase.Switches.SwitchInfo.IsRequired
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.IsRequired
+  nameWithType: SwitchInfo.IsRequired
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.IsRequired*
+  name: IsRequired
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_IsRequired_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchInfo.IsRequired
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.IsRequired
+  nameWithType: SwitchInfo.IsRequired
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.OptionalizeLastRequiredArguments
+  name: OptionalizeLastRequiredArguments
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_OptionalizeLastRequiredArguments
+  commentId: P:KS.Shell.ShellBase.Switches.SwitchInfo.OptionalizeLastRequiredArguments
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.OptionalizeLastRequiredArguments
+  nameWithType: SwitchInfo.OptionalizeLastRequiredArguments
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.OptionalizeLastRequiredArguments*
+  name: OptionalizeLastRequiredArguments
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_OptionalizeLastRequiredArguments_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchInfo.OptionalizeLastRequiredArguments
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.OptionalizeLastRequiredArguments
+  nameWithType: SwitchInfo.OptionalizeLastRequiredArguments
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.SwitchName
+  name: SwitchName
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_SwitchName
+  commentId: P:KS.Shell.ShellBase.Switches.SwitchInfo.SwitchName
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.SwitchName
+  nameWithType: SwitchInfo.SwitchName
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.SwitchName*
+  name: SwitchName
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_SwitchName_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchInfo.SwitchName
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.SwitchName
+  nameWithType: SwitchInfo.SwitchName
+- uid: KS.Shell.ShellBase.Switches.SwitchManager
+  name: SwitchManager
+  href: api/KS.Shell.ShellBase.Switches.SwitchManager.html
+  commentId: T:KS.Shell.ShellBase.Switches.SwitchManager
+  fullName: KS.Shell.ShellBase.Switches.SwitchManager
+  nameWithType: SwitchManager
+- uid: KS.Shell.ShellBase.Switches.SwitchManager.ContainsSwitch(System.String[],System.String)
+  name: ContainsSwitch(string[], string)
+  href: api/KS.Shell.ShellBase.Switches.SwitchManager.html#KS_Shell_ShellBase_Switches_SwitchManager_ContainsSwitch_System_String___System_String_
+  commentId: M:KS.Shell.ShellBase.Switches.SwitchManager.ContainsSwitch(System.String[],System.String)
+  name.vb: ContainsSwitch(String(), String)
+  fullName: KS.Shell.ShellBase.Switches.SwitchManager.ContainsSwitch(string[], string)
+  fullName.vb: KS.Shell.ShellBase.Switches.SwitchManager.ContainsSwitch(String(), String)
+  nameWithType: SwitchManager.ContainsSwitch(string[], string)
+  nameWithType.vb: SwitchManager.ContainsSwitch(String(), String)
+- uid: KS.Shell.ShellBase.Switches.SwitchManager.ContainsSwitch*
+  name: ContainsSwitch
+  href: api/KS.Shell.ShellBase.Switches.SwitchManager.html#KS_Shell_ShellBase_Switches_SwitchManager_ContainsSwitch_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchManager.ContainsSwitch
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchManager.ContainsSwitch
+  nameWithType: SwitchManager.ContainsSwitch
+- uid: KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValue(System.String[],System.String)
+  name: GetSwitchValue(string[], string)
+  href: api/KS.Shell.ShellBase.Switches.SwitchManager.html#KS_Shell_ShellBase_Switches_SwitchManager_GetSwitchValue_System_String___System_String_
+  commentId: M:KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValue(System.String[],System.String)
+  name.vb: GetSwitchValue(String(), String)
+  fullName: KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValue(string[], string)
+  fullName.vb: KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValue(String(), String)
+  nameWithType: SwitchManager.GetSwitchValue(string[], string)
+  nameWithType.vb: SwitchManager.GetSwitchValue(String(), String)
+- uid: KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValue*
+  name: GetSwitchValue
+  href: api/KS.Shell.ShellBase.Switches.SwitchManager.html#KS_Shell_ShellBase_Switches_SwitchManager_GetSwitchValue_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValue
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValue
+  nameWithType: SwitchManager.GetSwitchValue
+- uid: KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValues(System.String[],System.Boolean)
+  name: GetSwitchValues(string[], bool)
+  href: api/KS.Shell.ShellBase.Switches.SwitchManager.html#KS_Shell_ShellBase_Switches_SwitchManager_GetSwitchValues_System_String___System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValues(System.String[],System.Boolean)
+  name.vb: GetSwitchValues(String(), Boolean)
+  fullName: KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValues(string[], bool)
+  fullName.vb: KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValues(String(), Boolean)
+  nameWithType: SwitchManager.GetSwitchValues(string[], bool)
+  nameWithType.vb: SwitchManager.GetSwitchValues(String(), Boolean)
+- uid: KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValues*
+  name: GetSwitchValues
+  href: api/KS.Shell.ShellBase.Switches.SwitchManager.html#KS_Shell_ShellBase_Switches_SwitchManager_GetSwitchValues_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValues
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValues
+  nameWithType: SwitchManager.GetSwitchValues
 - uid: KS.Shell.Shells.Admin
   name: KS.Shell.Shells.Admin
   href: api/KS.Shell.Shells.Admin.html
