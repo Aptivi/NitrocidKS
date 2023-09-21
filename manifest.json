@@ -5546,6 +5546,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Login.Handlers.BaseLoginHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Login.Handlers.BaseLoginHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Login.Handlers.ILoginHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Login.Handlers.ILoginHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Login.Handlers.LoginHandlerTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Login.Handlers.LoginHandlerTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.Login.Handlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.Login.Handlers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Users.Login.Login.yml",
       "output": {
         ".html": {
