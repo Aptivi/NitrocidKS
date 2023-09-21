@@ -12267,6 +12267,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveFromPathLookup
   nameWithType: BaseFilesystemDriver.RemoveFromPathLookup
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.Rooted(System.String)
+  name: Rooted(string)
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_Rooted_System_String_
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.Rooted(System.String)
+  name.vb: Rooted(String)
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.Rooted(string)
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.Rooted(String)
+  nameWithType: BaseFilesystemDriver.Rooted(string)
+  nameWithType.vb: BaseFilesystemDriver.Rooted(String)
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.Rooted*
+  name: Rooted
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_Rooted_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.Rooted
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.Rooted
+  nameWithType: BaseFilesystemDriver.Rooted
 - uid: KS.Drivers.Filesystem.BaseFilesystemDriver.SearchFileForString(System.String,System.String)
   name: SearchFileForString(string, string)
   href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_SearchFileForString_System_String_System_String_
@@ -13217,6 +13233,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.IFilesystemDriver.RemoveFromPathLookup
   nameWithType: IFilesystemDriver.RemoveFromPathLookup
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.Rooted(System.String)
+  name: Rooted(string)
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_Rooted_System_String_
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.Rooted(System.String)
+  name.vb: Rooted(String)
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.Rooted(string)
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.Rooted(String)
+  nameWithType: IFilesystemDriver.Rooted(string)
+  nameWithType.vb: IFilesystemDriver.Rooted(String)
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.Rooted*
+  name: Rooted
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_Rooted_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.Rooted
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.Rooted
+  nameWithType: IFilesystemDriver.Rooted
 - uid: KS.Drivers.Filesystem.IFilesystemDriver.SearchFileForString(System.String,System.String)
   name: SearchFileForString(string, string)
   href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_SearchFileForString_System_String_System_String_
@@ -17826,6 +17858,22 @@ references:
   isSpec: "True"
   fullName: KS.Files.Querying.Checking.FolderExists
   nameWithType: Checking.FolderExists
+- uid: KS.Files.Querying.Checking.Rooted(System.String)
+  name: Rooted(string)
+  href: api/KS.Files.Querying.Checking.html#KS_Files_Querying_Checking_Rooted_System_String_
+  commentId: M:KS.Files.Querying.Checking.Rooted(System.String)
+  name.vb: Rooted(String)
+  fullName: KS.Files.Querying.Checking.Rooted(string)
+  fullName.vb: KS.Files.Querying.Checking.Rooted(String)
+  nameWithType: Checking.Rooted(string)
+  nameWithType.vb: Checking.Rooted(String)
+- uid: KS.Files.Querying.Checking.Rooted*
+  name: Rooted
+  href: api/KS.Files.Querying.Checking.html#KS_Files_Querying_Checking_Rooted_
+  commentId: Overload:KS.Files.Querying.Checking.Rooted
+  isSpec: "True"
+  fullName: KS.Files.Querying.Checking.Rooted
+  nameWithType: Checking.Rooted
 - uid: KS.Files.Querying.Getting
   name: Getting
   href: api/KS.Files.Querying.Getting.html
