@@ -29772,6 +29772,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.StarfieldDelay
   nameWithType: KernelSaverConfig.StarfieldDelay
+- uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.StarfieldWarpDelay
+  name: StarfieldWarpDelay
+  href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_StarfieldWarpDelay
+  commentId: P:KS.Kernel.Configuration.Instances.KernelSaverConfig.StarfieldWarpDelay
+  fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.StarfieldWarpDelay
+  nameWithType: KernelSaverConfig.StarfieldWarpDelay
+- uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.StarfieldWarpDelay*
+  name: StarfieldWarpDelay
+  href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_StarfieldWarpDelay_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelSaverConfig.StarfieldWarpDelay
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.StarfieldWarpDelay
+  nameWithType: KernelSaverConfig.StarfieldWarpDelay
 - uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.TextBoxDelay
   name: TextBoxDelay
   href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_TextBoxDelay
