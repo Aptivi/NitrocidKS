@@ -34455,6 +34455,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.KernelPlatform.GetTerminalType
   nameWithType: KernelPlatform.GetTerminalType
+- uid: KS.Kernel.KernelPlatform.IsOnAndroid
+  name: IsOnAndroid()
+  href: api/KS.Kernel.KernelPlatform.html#KS_Kernel_KernelPlatform_IsOnAndroid
+  commentId: M:KS.Kernel.KernelPlatform.IsOnAndroid
+  fullName: KS.Kernel.KernelPlatform.IsOnAndroid()
+  nameWithType: KernelPlatform.IsOnAndroid()
+- uid: KS.Kernel.KernelPlatform.IsOnAndroid*
+  name: IsOnAndroid
+  href: api/KS.Kernel.KernelPlatform.html#KS_Kernel_KernelPlatform_IsOnAndroid_
+  commentId: Overload:KS.Kernel.KernelPlatform.IsOnAndroid
+  isSpec: "True"
+  fullName: KS.Kernel.KernelPlatform.IsOnAndroid
+  nameWithType: KernelPlatform.IsOnAndroid
 - uid: KS.Kernel.KernelPlatform.IsOnMacOS
   name: IsOnMacOS()
   href: api/KS.Kernel.KernelPlatform.html#KS_Kernel_KernelPlatform_IsOnMacOS
