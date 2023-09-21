@@ -29482,6 +29482,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.SnakerTrueColor
   nameWithType: KernelSaverConfig.SnakerTrueColor
+- uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.SpecklesDelay
+  name: SpecklesDelay
+  href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_SpecklesDelay
+  commentId: P:KS.Kernel.Configuration.Instances.KernelSaverConfig.SpecklesDelay
+  fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.SpecklesDelay
+  nameWithType: KernelSaverConfig.SpecklesDelay
+- uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.SpecklesDelay*
+  name: SpecklesDelay
+  href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_SpecklesDelay_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelSaverConfig.SpecklesDelay
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.SpecklesDelay
+  nameWithType: KernelSaverConfig.SpecklesDelay
 - uid: KS.Kernel.Configuration.Instances.KernelSaverConfig.SpinDelay
   name: SpinDelay
   href: api/KS.Kernel.Configuration.Instances.KernelSaverConfig.html#KS_Kernel_Configuration_Instances_KernelSaverConfig_SpinDelay
