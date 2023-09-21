@@ -52594,6 +52594,24 @@ references:
   commentId: T:KS.Shell.ShellBase.Switches.SwitchInfo
   fullName: KS.Shell.ShellBase.Switches.SwitchInfo
   nameWithType: SwitchInfo
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.#ctor(System.String,System.String)
+  name: SwitchInfo(string, string)
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo__ctor_System_String_System_String_
+  commentId: M:KS.Shell.ShellBase.Switches.SwitchInfo.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.SwitchInfo(string, string)
+  fullName.vb: KS.Shell.ShellBase.Switches.SwitchInfo.New(String, String)
+  nameWithType: SwitchInfo.SwitchInfo(string, string)
+  nameWithType.vb: SwitchInfo.New(String, String)
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.#ctor(System.String,System.String,KS.Shell.ShellBase.Switches.SwitchOptions)
+  name: SwitchInfo(string, string, SwitchOptions)
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo__ctor_System_String_System_String_KS_Shell_ShellBase_Switches_SwitchOptions_
+  commentId: M:KS.Shell.ShellBase.Switches.SwitchInfo.#ctor(System.String,System.String,KS.Shell.ShellBase.Switches.SwitchOptions)
+  name.vb: New(String, String, SwitchOptions)
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.SwitchInfo(string, string, KS.Shell.ShellBase.Switches.SwitchOptions)
+  fullName.vb: KS.Shell.ShellBase.Switches.SwitchInfo.New(String, String, KS.Shell.ShellBase.Switches.SwitchOptions)
+  nameWithType: SwitchInfo.SwitchInfo(string, string, SwitchOptions)
+  nameWithType.vb: SwitchInfo.New(String, String, SwitchOptions)
 - uid: KS.Shell.ShellBase.Switches.SwitchInfo.#ctor(System.String,System.String,System.Boolean,System.Boolean,System.String[],System.Int32,System.Boolean)
   name: SwitchInfo(string, string, bool, bool, string[], int, bool)
   href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo__ctor_System_String_System_String_System_Boolean_System_Boolean_System_String___System_Int32_System_Boolean_
@@ -52704,6 +52722,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Switches.SwitchInfo.OptionalizeLastRequiredArguments
   nameWithType: SwitchInfo.OptionalizeLastRequiredArguments
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.Options
+  name: Options
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_Options
+  commentId: P:KS.Shell.ShellBase.Switches.SwitchInfo.Options
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.Options
+  nameWithType: SwitchInfo.Options
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.Options*
+  name: Options
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_Options_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchInfo.Options
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.Options
+  nameWithType: SwitchInfo.Options
 - uid: KS.Shell.ShellBase.Switches.SwitchInfo.SwitchName
   name: SwitchName
   href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_SwitchName
@@ -52771,6 +52802,96 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValues
   nameWithType: SwitchManager.GetSwitchValues
+- uid: KS.Shell.ShellBase.Switches.SwitchOptions
+  name: SwitchOptions
+  href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html
+  commentId: T:KS.Shell.ShellBase.Switches.SwitchOptions
+  fullName: KS.Shell.ShellBase.Switches.SwitchOptions
+  nameWithType: SwitchOptions
+- uid: KS.Shell.ShellBase.Switches.SwitchOptions.#ctor
+  name: SwitchOptions()
+  href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html#KS_Shell_ShellBase_Switches_SwitchOptions__ctor
+  commentId: M:KS.Shell.ShellBase.Switches.SwitchOptions.#ctor
+  name.vb: New()
+  fullName: KS.Shell.ShellBase.Switches.SwitchOptions.SwitchOptions()
+  fullName.vb: KS.Shell.ShellBase.Switches.SwitchOptions.New()
+  nameWithType: SwitchOptions.SwitchOptions()
+  nameWithType.vb: SwitchOptions.New()
+- uid: KS.Shell.ShellBase.Switches.SwitchOptions.#ctor*
+  name: SwitchOptions
+  href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html#KS_Shell_ShellBase_Switches_SwitchOptions__ctor_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchOptions.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: KS.Shell.ShellBase.Switches.SwitchOptions.SwitchOptions
+  fullName.vb: KS.Shell.ShellBase.Switches.SwitchOptions.New
+  nameWithType: SwitchOptions.SwitchOptions
+  nameWithType.vb: SwitchOptions.New
+- uid: KS.Shell.ShellBase.Switches.SwitchOptions.AcceptsValues
+  name: AcceptsValues
+  href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html#KS_Shell_ShellBase_Switches_SwitchOptions_AcceptsValues
+  commentId: P:KS.Shell.ShellBase.Switches.SwitchOptions.AcceptsValues
+  fullName: KS.Shell.ShellBase.Switches.SwitchOptions.AcceptsValues
+  nameWithType: SwitchOptions.AcceptsValues
+- uid: KS.Shell.ShellBase.Switches.SwitchOptions.AcceptsValues*
+  name: AcceptsValues
+  href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html#KS_Shell_ShellBase_Switches_SwitchOptions_AcceptsValues_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchOptions.AcceptsValues
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchOptions.AcceptsValues
+  nameWithType: SwitchOptions.AcceptsValues
+- uid: KS.Shell.ShellBase.Switches.SwitchOptions.ArgumentsRequired
+  name: ArgumentsRequired
+  href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html#KS_Shell_ShellBase_Switches_SwitchOptions_ArgumentsRequired
+  commentId: P:KS.Shell.ShellBase.Switches.SwitchOptions.ArgumentsRequired
+  fullName: KS.Shell.ShellBase.Switches.SwitchOptions.ArgumentsRequired
+  nameWithType: SwitchOptions.ArgumentsRequired
+- uid: KS.Shell.ShellBase.Switches.SwitchOptions.ArgumentsRequired*
+  name: ArgumentsRequired
+  href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html#KS_Shell_ShellBase_Switches_SwitchOptions_ArgumentsRequired_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchOptions.ArgumentsRequired
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchOptions.ArgumentsRequired
+  nameWithType: SwitchOptions.ArgumentsRequired
+- uid: KS.Shell.ShellBase.Switches.SwitchOptions.ConflictsWith
+  name: ConflictsWith
+  href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html#KS_Shell_ShellBase_Switches_SwitchOptions_ConflictsWith
+  commentId: P:KS.Shell.ShellBase.Switches.SwitchOptions.ConflictsWith
+  fullName: KS.Shell.ShellBase.Switches.SwitchOptions.ConflictsWith
+  nameWithType: SwitchOptions.ConflictsWith
+- uid: KS.Shell.ShellBase.Switches.SwitchOptions.ConflictsWith*
+  name: ConflictsWith
+  href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html#KS_Shell_ShellBase_Switches_SwitchOptions_ConflictsWith_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchOptions.ConflictsWith
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchOptions.ConflictsWith
+  nameWithType: SwitchOptions.ConflictsWith
+- uid: KS.Shell.ShellBase.Switches.SwitchOptions.IsRequired
+  name: IsRequired
+  href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html#KS_Shell_ShellBase_Switches_SwitchOptions_IsRequired
+  commentId: P:KS.Shell.ShellBase.Switches.SwitchOptions.IsRequired
+  fullName: KS.Shell.ShellBase.Switches.SwitchOptions.IsRequired
+  nameWithType: SwitchOptions.IsRequired
+- uid: KS.Shell.ShellBase.Switches.SwitchOptions.IsRequired*
+  name: IsRequired
+  href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html#KS_Shell_ShellBase_Switches_SwitchOptions_IsRequired_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchOptions.IsRequired
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchOptions.IsRequired
+  nameWithType: SwitchOptions.IsRequired
+- uid: KS.Shell.ShellBase.Switches.SwitchOptions.OptionalizeLastRequiredArguments
+  name: OptionalizeLastRequiredArguments
+  href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html#KS_Shell_ShellBase_Switches_SwitchOptions_OptionalizeLastRequiredArguments
+  commentId: P:KS.Shell.ShellBase.Switches.SwitchOptions.OptionalizeLastRequiredArguments
+  fullName: KS.Shell.ShellBase.Switches.SwitchOptions.OptionalizeLastRequiredArguments
+  nameWithType: SwitchOptions.OptionalizeLastRequiredArguments
+- uid: KS.Shell.ShellBase.Switches.SwitchOptions.OptionalizeLastRequiredArguments*
+  name: OptionalizeLastRequiredArguments
+  href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html#KS_Shell_ShellBase_Switches_SwitchOptions_OptionalizeLastRequiredArguments_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchOptions.OptionalizeLastRequiredArguments
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchOptions.OptionalizeLastRequiredArguments
+  nameWithType: SwitchOptions.OptionalizeLastRequiredArguments
 - uid: KS.Shell.Shells.Admin
   name: KS.Shell.Shells.Admin
   href: api/KS.Shell.Shells.Admin.html
