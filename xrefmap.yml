@@ -50700,6 +50700,128 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotCondition.IsConditionSatisfied
   nameWithType: IsNotCondition.IsConditionSatisfied
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition
+  name: IsNotPlatCondition
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.html
+  commentId: T:KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition
+  nameWithType: IsNotPlatCondition
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionName
+  name: ConditionName
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsNotPlatCondition_ConditionName
+  commentId: P:KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionName
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionName
+  nameWithType: IsNotPlatCondition.ConditionName
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionName*
+  name: ConditionName
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsNotPlatCondition_ConditionName_
+  commentId: Overload:KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionName
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionName
+  nameWithType: IsNotPlatCondition.ConditionName
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionPosition
+  name: ConditionPosition
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsNotPlatCondition_ConditionPosition
+  commentId: P:KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionPosition
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionPosition
+  nameWithType: IsNotPlatCondition.ConditionPosition
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionPosition*
+  name: ConditionPosition
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsNotPlatCondition_ConditionPosition_
+  commentId: Overload:KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionPosition
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionPosition
+  nameWithType: IsNotPlatCondition.ConditionPosition
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionRequiredArguments
+  name: ConditionRequiredArguments
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsNotPlatCondition_ConditionRequiredArguments
+  commentId: P:KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionRequiredArguments
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionRequiredArguments
+  nameWithType: IsNotPlatCondition.ConditionRequiredArguments
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionRequiredArguments*
+  name: ConditionRequiredArguments
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsNotPlatCondition_ConditionRequiredArguments_
+  commentId: Overload:KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionRequiredArguments
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.ConditionRequiredArguments
+  nameWithType: IsNotPlatCondition.ConditionRequiredArguments
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.IsConditionSatisfied(System.String,System.String)
+  name: IsConditionSatisfied(string, string)
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsNotPlatCondition_IsConditionSatisfied_System_String_System_String_
+  commentId: M:KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.IsConditionSatisfied(System.String,System.String)
+  name.vb: IsConditionSatisfied(String, String)
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.IsConditionSatisfied(string, string)
+  fullName.vb: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.IsConditionSatisfied(String, String)
+  nameWithType: IsNotPlatCondition.IsConditionSatisfied(string, string)
+  nameWithType.vb: IsNotPlatCondition.IsConditionSatisfied(String, String)
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.IsConditionSatisfied*
+  name: IsConditionSatisfied
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsNotPlatCondition_IsConditionSatisfied_
+  commentId: Overload:KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.IsConditionSatisfied
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.IsConditionSatisfied
+  nameWithType: IsNotPlatCondition.IsConditionSatisfied
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition
+  name: IsPlatCondition
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.html
+  commentId: T:KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition
+  nameWithType: IsPlatCondition
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionName
+  name: ConditionName
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsPlatCondition_ConditionName
+  commentId: P:KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionName
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionName
+  nameWithType: IsPlatCondition.ConditionName
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionName*
+  name: ConditionName
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsPlatCondition_ConditionName_
+  commentId: Overload:KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionName
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionName
+  nameWithType: IsPlatCondition.ConditionName
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionPosition
+  name: ConditionPosition
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsPlatCondition_ConditionPosition
+  commentId: P:KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionPosition
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionPosition
+  nameWithType: IsPlatCondition.ConditionPosition
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionPosition*
+  name: ConditionPosition
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsPlatCondition_ConditionPosition_
+  commentId: Overload:KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionPosition
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionPosition
+  nameWithType: IsPlatCondition.ConditionPosition
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionRequiredArguments
+  name: ConditionRequiredArguments
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsPlatCondition_ConditionRequiredArguments
+  commentId: P:KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionRequiredArguments
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionRequiredArguments
+  nameWithType: IsPlatCondition.ConditionRequiredArguments
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionRequiredArguments*
+  name: ConditionRequiredArguments
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsPlatCondition_ConditionRequiredArguments_
+  commentId: Overload:KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionRequiredArguments
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.ConditionRequiredArguments
+  nameWithType: IsPlatCondition.ConditionRequiredArguments
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.IsConditionSatisfied(System.String,System.String)
+  name: IsConditionSatisfied(string, string)
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsPlatCondition_IsConditionSatisfied_System_String_System_String_
+  commentId: M:KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.IsConditionSatisfied(System.String,System.String)
+  name.vb: IsConditionSatisfied(String, String)
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.IsConditionSatisfied(string, string)
+  fullName.vb: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.IsConditionSatisfied(String, String)
+  nameWithType: IsPlatCondition.IsConditionSatisfied(string, string)
+  nameWithType.vb: IsPlatCondition.IsConditionSatisfied(String, String)
+- uid: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.IsConditionSatisfied*
+  name: IsConditionSatisfied
+  href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.html#KS_Shell_ShellBase_Scripting_Conditions_Types_IsPlatCondition_IsConditionSatisfied_
+  commentId: Overload:KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.IsConditionSatisfied
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.IsConditionSatisfied
+  nameWithType: IsPlatCondition.IsConditionSatisfied
 - uid: KS.Shell.ShellBase.Scripting.Conditions.Types.LessThanCondition
   name: LessThanCondition
   href: api/KS.Shell.ShellBase.Scripting.Conditions.Types.LessThanCondition.html

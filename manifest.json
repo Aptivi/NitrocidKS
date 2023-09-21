@@ -4866,6 +4866,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsNotPlatCondition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Scripting.Conditions.Types.IsPlatCondition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.Scripting.Conditions.Types.LessThanCondition.yml",
       "output": {
         ".html": {
