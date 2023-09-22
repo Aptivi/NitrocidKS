@@ -39615,6 +39615,22 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Text.TextTools.SplitEncloseDoubleQuotes
   nameWithType: TextTools.SplitEncloseDoubleQuotes
+- uid: KS.Misc.Text.TextTools.SplitEncloseDoubleQuotesNoRelease(System.String)
+  name: SplitEncloseDoubleQuotesNoRelease(string)
+  href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_SplitEncloseDoubleQuotesNoRelease_System_String_
+  commentId: M:KS.Misc.Text.TextTools.SplitEncloseDoubleQuotesNoRelease(System.String)
+  name.vb: SplitEncloseDoubleQuotesNoRelease(String)
+  fullName: KS.Misc.Text.TextTools.SplitEncloseDoubleQuotesNoRelease(string)
+  fullName.vb: KS.Misc.Text.TextTools.SplitEncloseDoubleQuotesNoRelease(String)
+  nameWithType: TextTools.SplitEncloseDoubleQuotesNoRelease(string)
+  nameWithType.vb: TextTools.SplitEncloseDoubleQuotesNoRelease(String)
+- uid: KS.Misc.Text.TextTools.SplitEncloseDoubleQuotesNoRelease*
+  name: SplitEncloseDoubleQuotesNoRelease
+  href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_SplitEncloseDoubleQuotesNoRelease_
+  commentId: Overload:KS.Misc.Text.TextTools.SplitEncloseDoubleQuotesNoRelease
+  isSpec: "True"
+  fullName: KS.Misc.Text.TextTools.SplitEncloseDoubleQuotesNoRelease
+  nameWithType: TextTools.SplitEncloseDoubleQuotesNoRelease
 - uid: KS.Misc.Text.TextTools.SplitNewLines(System.String)
   name: SplitNewLines(string)
   href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_SplitNewLines_System_String_
@@ -48868,6 +48884,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsList
   nameWithType: ProvidedArgumentsInfo.ArgumentsList
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsListOrig
+  name: ArgumentsListOrig
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_ArgumentsListOrig
+  commentId: P:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsListOrig
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsListOrig
+  nameWithType: ProvidedArgumentsInfo.ArgumentsListOrig
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsListOrig*
+  name: ArgumentsListOrig
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_ArgumentsListOrig_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsListOrig
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsListOrig
+  nameWithType: ProvidedArgumentsInfo.ArgumentsListOrig
 - uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsText
   name: ArgumentsText
   href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_ArgumentsText
@@ -48881,6 +48910,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsText
   nameWithType: ProvidedArgumentsInfo.ArgumentsText
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsTextOrig
+  name: ArgumentsTextOrig
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_ArgumentsTextOrig
+  commentId: P:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsTextOrig
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsTextOrig
+  nameWithType: ProvidedArgumentsInfo.ArgumentsTextOrig
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsTextOrig*
+  name: ArgumentsTextOrig
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_ArgumentsTextOrig_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsTextOrig
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.ArgumentsTextOrig
+  nameWithType: ProvidedArgumentsInfo.ArgumentsTextOrig
 - uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.Command
   name: Command
   href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_Command
@@ -48958,15 +49000,15 @@ references:
   commentId: T:KS.Shell.ShellBase.Commands.BaseCommand
   fullName: KS.Shell.ShellBase.Commands.BaseCommand
   nameWithType: BaseCommand
-- uid: KS.Shell.ShellBase.Commands.BaseCommand.Execute(System.String,System.String[],System.String[],System.String@)
-  name: Execute(string, string[], string[], ref string)
-  href: api/KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_Execute_System_String_System_String___System_String___System_String__
-  commentId: M:KS.Shell.ShellBase.Commands.BaseCommand.Execute(System.String,System.String[],System.String[],System.String@)
-  name.vb: Execute(String, String(), String(), String)
-  fullName: KS.Shell.ShellBase.Commands.BaseCommand.Execute(string, string[], string[], ref string)
-  fullName.vb: KS.Shell.ShellBase.Commands.BaseCommand.Execute(String, String(), String(), String)
-  nameWithType: BaseCommand.Execute(string, string[], string[], ref string)
-  nameWithType.vb: BaseCommand.Execute(String, String(), String(), String)
+- uid: KS.Shell.ShellBase.Commands.BaseCommand.Execute(System.String,System.String[],System.String,System.String[],System.String[],System.String@)
+  name: Execute(string, string[], string, string[], string[], ref string)
+  href: api/KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_Execute_System_String_System_String___System_String_System_String___System_String___System_String__
+  commentId: M:KS.Shell.ShellBase.Commands.BaseCommand.Execute(System.String,System.String[],System.String,System.String[],System.String[],System.String@)
+  name.vb: Execute(String, String(), String, String(), String(), String)
+  fullName: KS.Shell.ShellBase.Commands.BaseCommand.Execute(string, string[], string, string[], string[], ref string)
+  fullName.vb: KS.Shell.ShellBase.Commands.BaseCommand.Execute(String, String(), String, String(), String(), String)
+  nameWithType: BaseCommand.Execute(string, string[], string, string[], string[], ref string)
+  nameWithType.vb: BaseCommand.Execute(String, String(), String, String(), String(), String)
 - uid: KS.Shell.ShellBase.Commands.BaseCommand.Execute*
   name: Execute
   href: api/KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_Execute_
@@ -48974,15 +49016,15 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.BaseCommand.Execute
   nameWithType: BaseCommand.Execute
-- uid: KS.Shell.ShellBase.Commands.BaseCommand.ExecuteDumb(System.String,System.String[],System.String[],System.String@)
-  name: ExecuteDumb(string, string[], string[], ref string)
-  href: api/KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_ExecuteDumb_System_String_System_String___System_String___System_String__
-  commentId: M:KS.Shell.ShellBase.Commands.BaseCommand.ExecuteDumb(System.String,System.String[],System.String[],System.String@)
-  name.vb: ExecuteDumb(String, String(), String(), String)
-  fullName: KS.Shell.ShellBase.Commands.BaseCommand.ExecuteDumb(string, string[], string[], ref string)
-  fullName.vb: KS.Shell.ShellBase.Commands.BaseCommand.ExecuteDumb(String, String(), String(), String)
-  nameWithType: BaseCommand.ExecuteDumb(string, string[], string[], ref string)
-  nameWithType.vb: BaseCommand.ExecuteDumb(String, String(), String(), String)
+- uid: KS.Shell.ShellBase.Commands.BaseCommand.ExecuteDumb(System.String,System.String[],System.String,System.String[],System.String[],System.String@)
+  name: ExecuteDumb(string, string[], string, string[], string[], ref string)
+  href: api/KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_ExecuteDumb_System_String_System_String___System_String_System_String___System_String___System_String__
+  commentId: M:KS.Shell.ShellBase.Commands.BaseCommand.ExecuteDumb(System.String,System.String[],System.String,System.String[],System.String[],System.String@)
+  name.vb: ExecuteDumb(String, String(), String, String(), String(), String)
+  fullName: KS.Shell.ShellBase.Commands.BaseCommand.ExecuteDumb(string, string[], string, string[], string[], ref string)
+  fullName.vb: KS.Shell.ShellBase.Commands.BaseCommand.ExecuteDumb(String, String(), String, String(), String(), String)
+  nameWithType: BaseCommand.ExecuteDumb(string, string[], string, string[], string[], ref string)
+  nameWithType.vb: BaseCommand.ExecuteDumb(String, String(), String, String(), String(), String)
 - uid: KS.Shell.ShellBase.Commands.BaseCommand.ExecuteDumb*
   name: ExecuteDumb
   href: api/KS.Shell.ShellBase.Commands.BaseCommand.html#KS_Shell_ShellBase_Commands_BaseCommand_ExecuteDumb_
@@ -49471,15 +49513,15 @@ references:
   commentId: T:KS.Shell.ShellBase.Commands.ICommand
   fullName: KS.Shell.ShellBase.Commands.ICommand
   nameWithType: ICommand
-- uid: KS.Shell.ShellBase.Commands.ICommand.Execute(System.String,System.String[],System.String[],System.String@)
-  name: Execute(string, string[], string[], ref string)
-  href: api/KS.Shell.ShellBase.Commands.ICommand.html#KS_Shell_ShellBase_Commands_ICommand_Execute_System_String_System_String___System_String___System_String__
-  commentId: M:KS.Shell.ShellBase.Commands.ICommand.Execute(System.String,System.String[],System.String[],System.String@)
-  name.vb: Execute(String, String(), String(), String)
-  fullName: KS.Shell.ShellBase.Commands.ICommand.Execute(string, string[], string[], ref string)
-  fullName.vb: KS.Shell.ShellBase.Commands.ICommand.Execute(String, String(), String(), String)
-  nameWithType: ICommand.Execute(string, string[], string[], ref string)
-  nameWithType.vb: ICommand.Execute(String, String(), String(), String)
+- uid: KS.Shell.ShellBase.Commands.ICommand.Execute(System.String,System.String[],System.String,System.String[],System.String[],System.String@)
+  name: Execute(string, string[], string, string[], string[], ref string)
+  href: api/KS.Shell.ShellBase.Commands.ICommand.html#KS_Shell_ShellBase_Commands_ICommand_Execute_System_String_System_String___System_String_System_String___System_String___System_String__
+  commentId: M:KS.Shell.ShellBase.Commands.ICommand.Execute(System.String,System.String[],System.String,System.String[],System.String[],System.String@)
+  name.vb: Execute(String, String(), String, String(), String(), String)
+  fullName: KS.Shell.ShellBase.Commands.ICommand.Execute(string, string[], string, string[], string[], ref string)
+  fullName.vb: KS.Shell.ShellBase.Commands.ICommand.Execute(String, String(), String, String(), String(), String)
+  nameWithType: ICommand.Execute(string, string[], string, string[], string[], ref string)
+  nameWithType.vb: ICommand.Execute(String, String(), String, String(), String(), String)
 - uid: KS.Shell.ShellBase.Commands.ICommand.Execute*
   name: Execute
   href: api/KS.Shell.ShellBase.Commands.ICommand.html#KS_Shell_ShellBase_Commands_ICommand_Execute_
@@ -49487,15 +49529,15 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.ICommand.Execute
   nameWithType: ICommand.Execute
-- uid: KS.Shell.ShellBase.Commands.ICommand.ExecuteDumb(System.String,System.String[],System.String[],System.String@)
-  name: ExecuteDumb(string, string[], string[], ref string)
-  href: api/KS.Shell.ShellBase.Commands.ICommand.html#KS_Shell_ShellBase_Commands_ICommand_ExecuteDumb_System_String_System_String___System_String___System_String__
-  commentId: M:KS.Shell.ShellBase.Commands.ICommand.ExecuteDumb(System.String,System.String[],System.String[],System.String@)
-  name.vb: ExecuteDumb(String, String(), String(), String)
-  fullName: KS.Shell.ShellBase.Commands.ICommand.ExecuteDumb(string, string[], string[], ref string)
-  fullName.vb: KS.Shell.ShellBase.Commands.ICommand.ExecuteDumb(String, String(), String(), String)
-  nameWithType: ICommand.ExecuteDumb(string, string[], string[], ref string)
-  nameWithType.vb: ICommand.ExecuteDumb(String, String(), String(), String)
+- uid: KS.Shell.ShellBase.Commands.ICommand.ExecuteDumb(System.String,System.String[],System.String,System.String[],System.String[],System.String@)
+  name: ExecuteDumb(string, string[], string, string[], string[], ref string)
+  href: api/KS.Shell.ShellBase.Commands.ICommand.html#KS_Shell_ShellBase_Commands_ICommand_ExecuteDumb_System_String_System_String___System_String_System_String___System_String___System_String__
+  commentId: M:KS.Shell.ShellBase.Commands.ICommand.ExecuteDumb(System.String,System.String[],System.String,System.String[],System.String[],System.String@)
+  name.vb: ExecuteDumb(String, String(), String, String(), String(), String)
+  fullName: KS.Shell.ShellBase.Commands.ICommand.ExecuteDumb(string, string[], string, string[], string[], ref string)
+  fullName.vb: KS.Shell.ShellBase.Commands.ICommand.ExecuteDumb(String, String(), String, String(), String(), String)
+  nameWithType: ICommand.ExecuteDumb(string, string[], string, string[], string[], ref string)
+  nameWithType.vb: ICommand.ExecuteDumb(String, String(), String, String(), String(), String)
 - uid: KS.Shell.ShellBase.Commands.ICommand.ExecuteDumb*
   name: ExecuteDumb
   href: api/KS.Shell.ShellBase.Commands.ICommand.html#KS_Shell_ShellBase_Commands_ICommand_ExecuteDumb_
