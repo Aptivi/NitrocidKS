@@ -54723,15 +54723,15 @@ references:
   isSpec: "True"
   fullName: KS.Users.Login.Handlers.BaseLoginHandler.LoginScreen
   nameWithType: BaseLoginHandler.LoginScreen
-- uid: KS.Users.Login.Handlers.BaseLoginHandler.PasswordHandler(System.String)
-  name: PasswordHandler(string)
-  href: api/KS.Users.Login.Handlers.BaseLoginHandler.html#KS_Users_Login_Handlers_BaseLoginHandler_PasswordHandler_System_String_
-  commentId: M:KS.Users.Login.Handlers.BaseLoginHandler.PasswordHandler(System.String)
-  name.vb: PasswordHandler(String)
-  fullName: KS.Users.Login.Handlers.BaseLoginHandler.PasswordHandler(string)
-  fullName.vb: KS.Users.Login.Handlers.BaseLoginHandler.PasswordHandler(String)
-  nameWithType: BaseLoginHandler.PasswordHandler(string)
-  nameWithType.vb: BaseLoginHandler.PasswordHandler(String)
+- uid: KS.Users.Login.Handlers.BaseLoginHandler.PasswordHandler(System.String,System.String@)
+  name: PasswordHandler(string, ref string)
+  href: api/KS.Users.Login.Handlers.BaseLoginHandler.html#KS_Users_Login_Handlers_BaseLoginHandler_PasswordHandler_System_String_System_String__
+  commentId: M:KS.Users.Login.Handlers.BaseLoginHandler.PasswordHandler(System.String,System.String@)
+  name.vb: PasswordHandler(String, String)
+  fullName: KS.Users.Login.Handlers.BaseLoginHandler.PasswordHandler(string, ref string)
+  fullName.vb: KS.Users.Login.Handlers.BaseLoginHandler.PasswordHandler(String, String)
+  nameWithType: BaseLoginHandler.PasswordHandler(string, ref string)
+  nameWithType.vb: BaseLoginHandler.PasswordHandler(String, String)
 - uid: KS.Users.Login.Handlers.BaseLoginHandler.PasswordHandler*
   name: PasswordHandler
   href: api/KS.Users.Login.Handlers.BaseLoginHandler.html#KS_Users_Login_Handlers_BaseLoginHandler_PasswordHandler_
@@ -54771,15 +54771,15 @@ references:
   isSpec: "True"
   fullName: KS.Users.Login.Handlers.ILoginHandler.LoginScreen
   nameWithType: ILoginHandler.LoginScreen
-- uid: KS.Users.Login.Handlers.ILoginHandler.PasswordHandler(System.String)
-  name: PasswordHandler(string)
-  href: api/KS.Users.Login.Handlers.ILoginHandler.html#KS_Users_Login_Handlers_ILoginHandler_PasswordHandler_System_String_
-  commentId: M:KS.Users.Login.Handlers.ILoginHandler.PasswordHandler(System.String)
-  name.vb: PasswordHandler(String)
-  fullName: KS.Users.Login.Handlers.ILoginHandler.PasswordHandler(string)
-  fullName.vb: KS.Users.Login.Handlers.ILoginHandler.PasswordHandler(String)
-  nameWithType: ILoginHandler.PasswordHandler(string)
-  nameWithType.vb: ILoginHandler.PasswordHandler(String)
+- uid: KS.Users.Login.Handlers.ILoginHandler.PasswordHandler(System.String,System.String@)
+  name: PasswordHandler(string, ref string)
+  href: api/KS.Users.Login.Handlers.ILoginHandler.html#KS_Users_Login_Handlers_ILoginHandler_PasswordHandler_System_String_System_String__
+  commentId: M:KS.Users.Login.Handlers.ILoginHandler.PasswordHandler(System.String,System.String@)
+  name.vb: PasswordHandler(String, String)
+  fullName: KS.Users.Login.Handlers.ILoginHandler.PasswordHandler(string, ref string)
+  fullName.vb: KS.Users.Login.Handlers.ILoginHandler.PasswordHandler(String, String)
+  nameWithType: ILoginHandler.PasswordHandler(string, ref string)
+  nameWithType.vb: ILoginHandler.PasswordHandler(String, String)
 - uid: KS.Users.Login.Handlers.ILoginHandler.PasswordHandler*
   name: PasswordHandler
   href: api/KS.Users.Login.Handlers.ILoginHandler.html#KS_Users_Login_Handlers_ILoginHandler_PasswordHandler_
