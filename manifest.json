@@ -2546,76 +2546,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Probers.Motd.MalParse.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Probers.Motd.MalParse.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Probers.Motd.MotdParse.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Probers.Motd.MotdParse.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Probers.Motd.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Probers.Motd.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Probers.Placeholder.PlaceParse.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Probers.Placeholder.PlaceParse.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Probers.Placeholder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Probers.Placeholder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Probers.Regexp.RegexpTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Probers.Regexp.RegexpTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Misc.Probers.Regexp.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Misc.Probers.Regexp.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Reflection.AssemblyLookup.yml",
       "output": {
         ".html": {
@@ -2840,6 +2770,76 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Text.CharManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Text.Probers.Motd.MalParse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Text.Probers.Motd.MalParse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Text.Probers.Motd.MotdParse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Text.Probers.Motd.MotdParse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Text.Probers.Motd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Text.Probers.Motd.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Text.Probers.Placeholder.PlaceParse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Text.Probers.Placeholder.PlaceParse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Text.Probers.Placeholder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Text.Probers.Placeholder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Text.Probers.Regexp.RegexpTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Text.Probers.Regexp.RegexpTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Text.Probers.Regexp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Text.Probers.Regexp.html"
         }
       },
       "version": ""

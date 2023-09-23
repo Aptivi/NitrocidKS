@@ -1264,41 +1264,6 @@
     "title": "Namespace KS.Misc.Notifications | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Misc.Notifications Classes Notification Notification holder with title, description, and priority NotificationManager Notifications module Enums NotificationPriority Notification priority NotificationType Notification type"
   },
-  "api/KS.Misc.Probers.Motd.MalParse.html": {
-    "href": "api/KS.Misc.Probers.Motd.MalParse.html",
-    "title": "Class MalParse | Nitrocid KS API - Aptivi",
-    "keywords": "Class MalParse Message of the Day After Login (MAL) parsing module Inheritance object MalParse Namespace: KS.Misc.Probers.Motd Assembly: Nitrocid.dll Syntax public static class MalParse Properties | Edit this page View Source MAL Current MAL message Declaration public static string MAL { get; set; } Property Value Type Description string | Edit this page View Source MalFilePath MAL file path Declaration public static string MalFilePath { get; } Property Value Type Description string Methods | Edit this page View Source ReadMal() Reads the message of the day before/after login Declaration public static void ReadMal() | Edit this page View Source SetMal(string) Sets the MAL Declaration public static void SetMal(string Message) Parameters Type Name Description string Message A message of the day after login"
-  },
-  "api/KS.Misc.Probers.Motd.MotdParse.html": {
-    "href": "api/KS.Misc.Probers.Motd.MotdParse.html",
-    "title": "Class MotdParse | Nitrocid KS API - Aptivi",
-    "keywords": "Class MotdParse Message of the Day (MOTD) parsing module Inheritance object MotdParse Namespace: KS.Misc.Probers.Motd Assembly: Nitrocid.dll Syntax public static class MotdParse Properties | Edit this page View Source MOTDMessage Current MOTD message Declaration public static string MOTDMessage { get; set; } Property Value Type Description string | Edit this page View Source MotdFilePath MOTD file path Declaration public static string MotdFilePath { get; } Property Value Type Description string Methods | Edit this page View Source ReadMotd() Reads the message of the day Declaration public static void ReadMotd() | Edit this page View Source SetMotd(string) Sets the Message of the Day Declaration public static void SetMotd(string Message) Parameters Type Name Description string Message A message of the day"
-  },
-  "api/KS.Misc.Probers.Motd.html": {
-    "href": "api/KS.Misc.Probers.Motd.html",
-    "title": "Namespace KS.Misc.Probers.Motd | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Misc.Probers.Motd Classes MalParse Message of the Day After Login (MAL) parsing module MotdParse Message of the Day (MOTD) parsing module"
-  },
-  "api/KS.Misc.Probers.Placeholder.PlaceParse.html": {
-    "href": "api/KS.Misc.Probers.Placeholder.PlaceParse.html",
-    "title": "Class PlaceParse | Nitrocid KS API - Aptivi",
-    "keywords": "Class PlaceParse Placeholder parsing module Inheritance object PlaceParse Namespace: KS.Misc.Probers.Placeholder Assembly: Nitrocid.dll Syntax public static class PlaceParse Methods | Edit this page View Source ProbePlaces(string, bool) Probes the placeholders found in string Declaration public static string ProbePlaces(string text, bool ThrowIfFailure = false) Parameters Type Name Description string text Specified string bool ThrowIfFailure Throw if the placeholder parsing fails Returns Type Description string A string that has the parsed placeholders"
-  },
-  "api/KS.Misc.Probers.Placeholder.html": {
-    "href": "api/KS.Misc.Probers.Placeholder.html",
-    "title": "Namespace KS.Misc.Probers.Placeholder | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Misc.Probers.Placeholder Classes PlaceParse Placeholder parsing module"
-  },
-  "api/KS.Misc.Probers.Regexp.RegexpTools.html": {
-    "href": "api/KS.Misc.Probers.Regexp.RegexpTools.html",
-    "title": "Class RegexpTools | Nitrocid KS API - Aptivi",
-    "keywords": "Class RegexpTools All tools for the regular expressions Inheritance object RegexpTools Namespace: KS.Misc.Probers.Regexp Assembly: Nitrocid.dll Syntax public static class RegexpTools Methods | Edit this page View Source IsMatch(string, string) Checks to see whether the pattern matches Declaration public static bool IsMatch(string text, string pattern) Parameters Type Name Description string text The text to be matched string pattern Regular expression pattern for matching Returns Type Description bool True if there are matches. Otherwise, false | Edit this page View Source IsValidRegex(string) Check to see if the provided pattern is a valid Regex pattern Declaration public static bool IsValidRegex(string pattern) Parameters Type Name Description string pattern Regular expression pattern Returns Type Description bool True if valid. Otherwise, false"
-  },
-  "api/KS.Misc.Probers.Regexp.html": {
-    "href": "api/KS.Misc.Probers.Regexp.html",
-    "title": "Namespace KS.Misc.Probers.Regexp | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Misc.Probers.Regexp Classes RegexpTools All tools for the regular expressions"
-  },
   "api/KS.Misc.Reflection.AssemblyLookup.html": {
     "href": "api/KS.Misc.Reflection.AssemblyLookup.html",
     "title": "Class AssemblyLookup | Nitrocid KS API - Aptivi",
@@ -1413,6 +1378,41 @@
     "href": "api/KS.Misc.Text.CharManager.html",
     "title": "Class CharManager | Nitrocid KS API - Aptivi",
     "keywords": "Class CharManager Character querying and management module Inheritance object CharManager Namespace: KS.Misc.Text Assembly: Nitrocid.dll Syntax public static class CharManager Properties | Edit this page View Source NewLine New line constant Declaration public static string NewLine { get; } Property Value Type Description string Methods | Edit this page View Source GetAllLetters() Gets all the letters. Declaration public static char[] GetAllLetters() Returns Type Description char[] | Edit this page View Source GetAllLettersAndNumbers() Gets all the letters and the numbers. Declaration public static char[] GetAllLettersAndNumbers() Returns Type Description char[] | Edit this page View Source GetAllNumbers() Gets all the numbers. Declaration public static char[] GetAllNumbers() Returns Type Description char[] | Edit this page View Source GetEsc() A simplification for ToChar(int) function to return the ESC character Declaration public static char GetEsc() Returns Type Description char ESC | Edit this page View Source IsControlChar(char) Is the character a real control character Declaration public static bool IsControlChar(char ch) Parameters Type Name Description char ch Character to query Returns Type Description bool"
+  },
+  "api/KS.Misc.Text.Probers.Motd.MalParse.html": {
+    "href": "api/KS.Misc.Text.Probers.Motd.MalParse.html",
+    "title": "Class MalParse | Nitrocid KS API - Aptivi",
+    "keywords": "Class MalParse Message of the Day After Login (MAL) parsing module Inheritance object MalParse Namespace: KS.Misc.Text.Probers.Motd Assembly: Nitrocid.dll Syntax public static class MalParse Properties | Edit this page View Source MAL Current MAL message Declaration public static string MAL { get; set; } Property Value Type Description string | Edit this page View Source MalFilePath MAL file path Declaration public static string MalFilePath { get; } Property Value Type Description string Methods | Edit this page View Source ReadMal() Reads the message of the day before/after login Declaration public static void ReadMal() | Edit this page View Source SetMal(string) Sets the MAL Declaration public static void SetMal(string Message) Parameters Type Name Description string Message A message of the day after login"
+  },
+  "api/KS.Misc.Text.Probers.Motd.MotdParse.html": {
+    "href": "api/KS.Misc.Text.Probers.Motd.MotdParse.html",
+    "title": "Class MotdParse | Nitrocid KS API - Aptivi",
+    "keywords": "Class MotdParse Message of the Day (MOTD) parsing module Inheritance object MotdParse Namespace: KS.Misc.Text.Probers.Motd Assembly: Nitrocid.dll Syntax public static class MotdParse Properties | Edit this page View Source MOTDMessage Current MOTD message Declaration public static string MOTDMessage { get; set; } Property Value Type Description string | Edit this page View Source MotdFilePath MOTD file path Declaration public static string MotdFilePath { get; } Property Value Type Description string Methods | Edit this page View Source ReadMotd() Reads the message of the day Declaration public static void ReadMotd() | Edit this page View Source SetMotd(string) Sets the Message of the Day Declaration public static void SetMotd(string Message) Parameters Type Name Description string Message A message of the day"
+  },
+  "api/KS.Misc.Text.Probers.Motd.html": {
+    "href": "api/KS.Misc.Text.Probers.Motd.html",
+    "title": "Namespace KS.Misc.Text.Probers.Motd | Nitrocid KS API - Aptivi",
+    "keywords": "Namespace KS.Misc.Text.Probers.Motd Classes MalParse Message of the Day After Login (MAL) parsing module MotdParse Message of the Day (MOTD) parsing module"
+  },
+  "api/KS.Misc.Text.Probers.Placeholder.PlaceParse.html": {
+    "href": "api/KS.Misc.Text.Probers.Placeholder.PlaceParse.html",
+    "title": "Class PlaceParse | Nitrocid KS API - Aptivi",
+    "keywords": "Class PlaceParse Placeholder parsing module Inheritance object PlaceParse Namespace: KS.Misc.Text.Probers.Placeholder Assembly: Nitrocid.dll Syntax public static class PlaceParse Methods | Edit this page View Source ProbePlaces(string, bool) Probes the placeholders found in string Declaration public static string ProbePlaces(string text, bool ThrowIfFailure = false) Parameters Type Name Description string text Specified string bool ThrowIfFailure Throw if the placeholder parsing fails Returns Type Description string A string that has the parsed placeholders"
+  },
+  "api/KS.Misc.Text.Probers.Placeholder.html": {
+    "href": "api/KS.Misc.Text.Probers.Placeholder.html",
+    "title": "Namespace KS.Misc.Text.Probers.Placeholder | Nitrocid KS API - Aptivi",
+    "keywords": "Namespace KS.Misc.Text.Probers.Placeholder Classes PlaceParse Placeholder parsing module"
+  },
+  "api/KS.Misc.Text.Probers.Regexp.RegexpTools.html": {
+    "href": "api/KS.Misc.Text.Probers.Regexp.RegexpTools.html",
+    "title": "Class RegexpTools | Nitrocid KS API - Aptivi",
+    "keywords": "Class RegexpTools All tools for the regular expressions Inheritance object RegexpTools Namespace: KS.Misc.Text.Probers.Regexp Assembly: Nitrocid.dll Syntax public static class RegexpTools Methods | Edit this page View Source IsMatch(string, string) Checks to see whether the pattern matches Declaration public static bool IsMatch(string text, string pattern) Parameters Type Name Description string text The text to be matched string pattern Regular expression pattern for matching Returns Type Description bool True if there are matches. Otherwise, false | Edit this page View Source IsValidRegex(string) Check to see if the provided pattern is a valid Regex pattern Declaration public static bool IsValidRegex(string pattern) Parameters Type Name Description string pattern Regular expression pattern Returns Type Description bool True if valid. Otherwise, false"
+  },
+  "api/KS.Misc.Text.Probers.Regexp.html": {
+    "href": "api/KS.Misc.Text.Probers.Regexp.html",
+    "title": "Namespace KS.Misc.Text.Probers.Regexp | Nitrocid KS API - Aptivi",
+    "keywords": "Namespace KS.Misc.Text.Probers.Regexp Classes RegexpTools All tools for the regular expressions"
   },
   "api/KS.Misc.Text.TextLocation.html": {
     "href": "api/KS.Misc.Text.TextLocation.html",
