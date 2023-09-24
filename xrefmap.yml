@@ -10166,6 +10166,883 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Encryption.BaseEncryptionDriver.VerifyUncalculatedHashFromHashesFile
   nameWithType: BaseEncryptionDriver.VerifyUncalculatedHashFromHashesFile
+- uid: KS.Drivers.Encryption.Bases
+  name: KS.Drivers.Encryption.Bases
+  href: api/KS.Drivers.Encryption.Bases.html
+  commentId: N:KS.Drivers.Encryption.Bases
+  fullName: KS.Drivers.Encryption.Bases
+  nameWithType: KS.Drivers.Encryption.Bases
+- uid: KS.Drivers.Encryption.Bases.CRC32
+  name: CRC32
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html
+  commentId: T:KS.Drivers.Encryption.Bases.CRC32
+  fullName: KS.Drivers.Encryption.Bases.CRC32
+  nameWithType: CRC32
+- uid: KS.Drivers.Encryption.Bases.CRC32.DriverName
+  name: DriverName
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_DriverName
+  commentId: P:KS.Drivers.Encryption.Bases.CRC32.DriverName
+  fullName: KS.Drivers.Encryption.Bases.CRC32.DriverName
+  nameWithType: CRC32.DriverName
+- uid: KS.Drivers.Encryption.Bases.CRC32.DriverName*
+  name: DriverName
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_DriverName_
+  commentId: Overload:KS.Drivers.Encryption.Bases.CRC32.DriverName
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.CRC32.DriverName
+  nameWithType: CRC32.DriverName
+- uid: KS.Drivers.Encryption.Bases.CRC32.DriverType
+  name: DriverType
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_DriverType
+  commentId: P:KS.Drivers.Encryption.Bases.CRC32.DriverType
+  fullName: KS.Drivers.Encryption.Bases.CRC32.DriverType
+  nameWithType: CRC32.DriverType
+- uid: KS.Drivers.Encryption.Bases.CRC32.DriverType*
+  name: DriverType
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_DriverType_
+  commentId: Overload:KS.Drivers.Encryption.Bases.CRC32.DriverType
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.CRC32.DriverType
+  nameWithType: CRC32.DriverType
+- uid: KS.Drivers.Encryption.Bases.CRC32.EmptyHash
+  name: EmptyHash
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_EmptyHash
+  commentId: P:KS.Drivers.Encryption.Bases.CRC32.EmptyHash
+  fullName: KS.Drivers.Encryption.Bases.CRC32.EmptyHash
+  nameWithType: CRC32.EmptyHash
+- uid: KS.Drivers.Encryption.Bases.CRC32.EmptyHash*
+  name: EmptyHash
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_EmptyHash_
+  commentId: Overload:KS.Drivers.Encryption.Bases.CRC32.EmptyHash
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.CRC32.EmptyHash
+  nameWithType: CRC32.EmptyHash
+- uid: KS.Drivers.Encryption.Bases.CRC32.GetEncryptedFile(System.IO.Stream)
+  name: GetEncryptedFile(Stream)
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_GetEncryptedFile_System_IO_Stream_
+  commentId: M:KS.Drivers.Encryption.Bases.CRC32.GetEncryptedFile(System.IO.Stream)
+  fullName: KS.Drivers.Encryption.Bases.CRC32.GetEncryptedFile(System.IO.Stream)
+  nameWithType: CRC32.GetEncryptedFile(Stream)
+- uid: KS.Drivers.Encryption.Bases.CRC32.GetEncryptedFile(System.String)
+  name: GetEncryptedFile(string)
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_GetEncryptedFile_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.CRC32.GetEncryptedFile(System.String)
+  name.vb: GetEncryptedFile(String)
+  fullName: KS.Drivers.Encryption.Bases.CRC32.GetEncryptedFile(string)
+  fullName.vb: KS.Drivers.Encryption.Bases.CRC32.GetEncryptedFile(String)
+  nameWithType: CRC32.GetEncryptedFile(string)
+  nameWithType.vb: CRC32.GetEncryptedFile(String)
+- uid: KS.Drivers.Encryption.Bases.CRC32.GetEncryptedFile*
+  name: GetEncryptedFile
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_GetEncryptedFile_
+  commentId: Overload:KS.Drivers.Encryption.Bases.CRC32.GetEncryptedFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.CRC32.GetEncryptedFile
+  nameWithType: CRC32.GetEncryptedFile
+- uid: KS.Drivers.Encryption.Bases.CRC32.GetEncryptedString(System.String)
+  name: GetEncryptedString(string)
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_GetEncryptedString_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.CRC32.GetEncryptedString(System.String)
+  name.vb: GetEncryptedString(String)
+  fullName: KS.Drivers.Encryption.Bases.CRC32.GetEncryptedString(string)
+  fullName.vb: KS.Drivers.Encryption.Bases.CRC32.GetEncryptedString(String)
+  nameWithType: CRC32.GetEncryptedString(string)
+  nameWithType.vb: CRC32.GetEncryptedString(String)
+- uid: KS.Drivers.Encryption.Bases.CRC32.GetEncryptedString*
+  name: GetEncryptedString
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_GetEncryptedString_
+  commentId: Overload:KS.Drivers.Encryption.Bases.CRC32.GetEncryptedString
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.CRC32.GetEncryptedString
+  nameWithType: CRC32.GetEncryptedString
+- uid: KS.Drivers.Encryption.Bases.CRC32.HashLength
+  name: HashLength
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_HashLength
+  commentId: P:KS.Drivers.Encryption.Bases.CRC32.HashLength
+  fullName: KS.Drivers.Encryption.Bases.CRC32.HashLength
+  nameWithType: CRC32.HashLength
+- uid: KS.Drivers.Encryption.Bases.CRC32.HashLength*
+  name: HashLength
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_HashLength_
+  commentId: Overload:KS.Drivers.Encryption.Bases.CRC32.HashLength
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.CRC32.HashLength
+  nameWithType: CRC32.HashLength
+- uid: KS.Drivers.Encryption.Bases.CRC32.HashRegex
+  name: HashRegex
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_HashRegex
+  commentId: P:KS.Drivers.Encryption.Bases.CRC32.HashRegex
+  fullName: KS.Drivers.Encryption.Bases.CRC32.HashRegex
+  nameWithType: CRC32.HashRegex
+- uid: KS.Drivers.Encryption.Bases.CRC32.HashRegex*
+  name: HashRegex
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_HashRegex_
+  commentId: Overload:KS.Drivers.Encryption.Bases.CRC32.HashRegex
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.CRC32.HashRegex
+  nameWithType: CRC32.HashRegex
+- uid: KS.Drivers.Encryption.Bases.CRC32.VerifyHashFromHash(System.String,System.String,System.String)
+  name: VerifyHashFromHash(string, string, string)
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_VerifyHashFromHash_System_String_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.CRC32.VerifyHashFromHash(System.String,System.String,System.String)
+  name.vb: VerifyHashFromHash(String, String, String)
+  fullName: KS.Drivers.Encryption.Bases.CRC32.VerifyHashFromHash(string, string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.CRC32.VerifyHashFromHash(String, String, String)
+  nameWithType: CRC32.VerifyHashFromHash(string, string, string)
+  nameWithType.vb: CRC32.VerifyHashFromHash(String, String, String)
+- uid: KS.Drivers.Encryption.Bases.CRC32.VerifyHashFromHash*
+  name: VerifyHashFromHash
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_VerifyHashFromHash_
+  commentId: Overload:KS.Drivers.Encryption.Bases.CRC32.VerifyHashFromHash
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.CRC32.VerifyHashFromHash
+  nameWithType: CRC32.VerifyHashFromHash
+- uid: KS.Drivers.Encryption.Bases.CRC32.VerifyHashFromHashesFile(System.String,System.String,System.String)
+  name: VerifyHashFromHashesFile(string, string, string)
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_VerifyHashFromHashesFile_System_String_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.CRC32.VerifyHashFromHashesFile(System.String,System.String,System.String)
+  name.vb: VerifyHashFromHashesFile(String, String, String)
+  fullName: KS.Drivers.Encryption.Bases.CRC32.VerifyHashFromHashesFile(string, string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.CRC32.VerifyHashFromHashesFile(String, String, String)
+  nameWithType: CRC32.VerifyHashFromHashesFile(string, string, string)
+  nameWithType.vb: CRC32.VerifyHashFromHashesFile(String, String, String)
+- uid: KS.Drivers.Encryption.Bases.CRC32.VerifyHashFromHashesFile*
+  name: VerifyHashFromHashesFile
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_VerifyHashFromHashesFile_
+  commentId: Overload:KS.Drivers.Encryption.Bases.CRC32.VerifyHashFromHashesFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.CRC32.VerifyHashFromHashesFile
+  nameWithType: CRC32.VerifyHashFromHashesFile
+- uid: KS.Drivers.Encryption.Bases.CRC32.VerifyUncalculatedHashFromHash(System.String,System.String)
+  name: VerifyUncalculatedHashFromHash(string, string)
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_VerifyUncalculatedHashFromHash_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.CRC32.VerifyUncalculatedHashFromHash(System.String,System.String)
+  name.vb: VerifyUncalculatedHashFromHash(String, String)
+  fullName: KS.Drivers.Encryption.Bases.CRC32.VerifyUncalculatedHashFromHash(string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.CRC32.VerifyUncalculatedHashFromHash(String, String)
+  nameWithType: CRC32.VerifyUncalculatedHashFromHash(string, string)
+  nameWithType.vb: CRC32.VerifyUncalculatedHashFromHash(String, String)
+- uid: KS.Drivers.Encryption.Bases.CRC32.VerifyUncalculatedHashFromHash*
+  name: VerifyUncalculatedHashFromHash
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_VerifyUncalculatedHashFromHash_
+  commentId: Overload:KS.Drivers.Encryption.Bases.CRC32.VerifyUncalculatedHashFromHash
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.CRC32.VerifyUncalculatedHashFromHash
+  nameWithType: CRC32.VerifyUncalculatedHashFromHash
+- uid: KS.Drivers.Encryption.Bases.CRC32.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
+  name: VerifyUncalculatedHashFromHashesFile(string, string)
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_VerifyUncalculatedHashFromHashesFile_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.CRC32.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
+  name.vb: VerifyUncalculatedHashFromHashesFile(String, String)
+  fullName: KS.Drivers.Encryption.Bases.CRC32.VerifyUncalculatedHashFromHashesFile(string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.CRC32.VerifyUncalculatedHashFromHashesFile(String, String)
+  nameWithType: CRC32.VerifyUncalculatedHashFromHashesFile(string, string)
+  nameWithType.vb: CRC32.VerifyUncalculatedHashFromHashesFile(String, String)
+- uid: KS.Drivers.Encryption.Bases.CRC32.VerifyUncalculatedHashFromHashesFile*
+  name: VerifyUncalculatedHashFromHashesFile
+  href: api/KS.Drivers.Encryption.Bases.CRC32.html#KS_Drivers_Encryption_Bases_CRC32_VerifyUncalculatedHashFromHashesFile_
+  commentId: Overload:KS.Drivers.Encryption.Bases.CRC32.VerifyUncalculatedHashFromHashesFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.CRC32.VerifyUncalculatedHashFromHashesFile
+  nameWithType: CRC32.VerifyUncalculatedHashFromHashesFile
+- uid: KS.Drivers.Encryption.Bases.MD5
+  name: MD5
+  href: api/KS.Drivers.Encryption.Bases.MD5.html
+  commentId: T:KS.Drivers.Encryption.Bases.MD5
+  fullName: KS.Drivers.Encryption.Bases.MD5
+  nameWithType: MD5
+- uid: KS.Drivers.Encryption.Bases.MD5.DriverName
+  name: DriverName
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_DriverName
+  commentId: P:KS.Drivers.Encryption.Bases.MD5.DriverName
+  fullName: KS.Drivers.Encryption.Bases.MD5.DriverName
+  nameWithType: MD5.DriverName
+- uid: KS.Drivers.Encryption.Bases.MD5.DriverName*
+  name: DriverName
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_DriverName_
+  commentId: Overload:KS.Drivers.Encryption.Bases.MD5.DriverName
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.MD5.DriverName
+  nameWithType: MD5.DriverName
+- uid: KS.Drivers.Encryption.Bases.MD5.DriverType
+  name: DriverType
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_DriverType
+  commentId: P:KS.Drivers.Encryption.Bases.MD5.DriverType
+  fullName: KS.Drivers.Encryption.Bases.MD5.DriverType
+  nameWithType: MD5.DriverType
+- uid: KS.Drivers.Encryption.Bases.MD5.DriverType*
+  name: DriverType
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_DriverType_
+  commentId: Overload:KS.Drivers.Encryption.Bases.MD5.DriverType
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.MD5.DriverType
+  nameWithType: MD5.DriverType
+- uid: KS.Drivers.Encryption.Bases.MD5.EmptyHash
+  name: EmptyHash
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_EmptyHash
+  commentId: P:KS.Drivers.Encryption.Bases.MD5.EmptyHash
+  fullName: KS.Drivers.Encryption.Bases.MD5.EmptyHash
+  nameWithType: MD5.EmptyHash
+- uid: KS.Drivers.Encryption.Bases.MD5.EmptyHash*
+  name: EmptyHash
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_EmptyHash_
+  commentId: Overload:KS.Drivers.Encryption.Bases.MD5.EmptyHash
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.MD5.EmptyHash
+  nameWithType: MD5.EmptyHash
+- uid: KS.Drivers.Encryption.Bases.MD5.GetEncryptedFile(System.IO.Stream)
+  name: GetEncryptedFile(Stream)
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_GetEncryptedFile_System_IO_Stream_
+  commentId: M:KS.Drivers.Encryption.Bases.MD5.GetEncryptedFile(System.IO.Stream)
+  fullName: KS.Drivers.Encryption.Bases.MD5.GetEncryptedFile(System.IO.Stream)
+  nameWithType: MD5.GetEncryptedFile(Stream)
+- uid: KS.Drivers.Encryption.Bases.MD5.GetEncryptedFile(System.String)
+  name: GetEncryptedFile(string)
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_GetEncryptedFile_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.MD5.GetEncryptedFile(System.String)
+  name.vb: GetEncryptedFile(String)
+  fullName: KS.Drivers.Encryption.Bases.MD5.GetEncryptedFile(string)
+  fullName.vb: KS.Drivers.Encryption.Bases.MD5.GetEncryptedFile(String)
+  nameWithType: MD5.GetEncryptedFile(string)
+  nameWithType.vb: MD5.GetEncryptedFile(String)
+- uid: KS.Drivers.Encryption.Bases.MD5.GetEncryptedFile*
+  name: GetEncryptedFile
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_GetEncryptedFile_
+  commentId: Overload:KS.Drivers.Encryption.Bases.MD5.GetEncryptedFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.MD5.GetEncryptedFile
+  nameWithType: MD5.GetEncryptedFile
+- uid: KS.Drivers.Encryption.Bases.MD5.GetEncryptedString(System.String)
+  name: GetEncryptedString(string)
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_GetEncryptedString_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.MD5.GetEncryptedString(System.String)
+  name.vb: GetEncryptedString(String)
+  fullName: KS.Drivers.Encryption.Bases.MD5.GetEncryptedString(string)
+  fullName.vb: KS.Drivers.Encryption.Bases.MD5.GetEncryptedString(String)
+  nameWithType: MD5.GetEncryptedString(string)
+  nameWithType.vb: MD5.GetEncryptedString(String)
+- uid: KS.Drivers.Encryption.Bases.MD5.GetEncryptedString*
+  name: GetEncryptedString
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_GetEncryptedString_
+  commentId: Overload:KS.Drivers.Encryption.Bases.MD5.GetEncryptedString
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.MD5.GetEncryptedString
+  nameWithType: MD5.GetEncryptedString
+- uid: KS.Drivers.Encryption.Bases.MD5.HashLength
+  name: HashLength
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_HashLength
+  commentId: P:KS.Drivers.Encryption.Bases.MD5.HashLength
+  fullName: KS.Drivers.Encryption.Bases.MD5.HashLength
+  nameWithType: MD5.HashLength
+- uid: KS.Drivers.Encryption.Bases.MD5.HashLength*
+  name: HashLength
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_HashLength_
+  commentId: Overload:KS.Drivers.Encryption.Bases.MD5.HashLength
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.MD5.HashLength
+  nameWithType: MD5.HashLength
+- uid: KS.Drivers.Encryption.Bases.MD5.HashRegex
+  name: HashRegex
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_HashRegex
+  commentId: P:KS.Drivers.Encryption.Bases.MD5.HashRegex
+  fullName: KS.Drivers.Encryption.Bases.MD5.HashRegex
+  nameWithType: MD5.HashRegex
+- uid: KS.Drivers.Encryption.Bases.MD5.HashRegex*
+  name: HashRegex
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_HashRegex_
+  commentId: Overload:KS.Drivers.Encryption.Bases.MD5.HashRegex
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.MD5.HashRegex
+  nameWithType: MD5.HashRegex
+- uid: KS.Drivers.Encryption.Bases.MD5.VerifyHashFromHash(System.String,System.String,System.String)
+  name: VerifyHashFromHash(string, string, string)
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_VerifyHashFromHash_System_String_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.MD5.VerifyHashFromHash(System.String,System.String,System.String)
+  name.vb: VerifyHashFromHash(String, String, String)
+  fullName: KS.Drivers.Encryption.Bases.MD5.VerifyHashFromHash(string, string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.MD5.VerifyHashFromHash(String, String, String)
+  nameWithType: MD5.VerifyHashFromHash(string, string, string)
+  nameWithType.vb: MD5.VerifyHashFromHash(String, String, String)
+- uid: KS.Drivers.Encryption.Bases.MD5.VerifyHashFromHash*
+  name: VerifyHashFromHash
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_VerifyHashFromHash_
+  commentId: Overload:KS.Drivers.Encryption.Bases.MD5.VerifyHashFromHash
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.MD5.VerifyHashFromHash
+  nameWithType: MD5.VerifyHashFromHash
+- uid: KS.Drivers.Encryption.Bases.MD5.VerifyHashFromHashesFile(System.String,System.String,System.String)
+  name: VerifyHashFromHashesFile(string, string, string)
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_VerifyHashFromHashesFile_System_String_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.MD5.VerifyHashFromHashesFile(System.String,System.String,System.String)
+  name.vb: VerifyHashFromHashesFile(String, String, String)
+  fullName: KS.Drivers.Encryption.Bases.MD5.VerifyHashFromHashesFile(string, string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.MD5.VerifyHashFromHashesFile(String, String, String)
+  nameWithType: MD5.VerifyHashFromHashesFile(string, string, string)
+  nameWithType.vb: MD5.VerifyHashFromHashesFile(String, String, String)
+- uid: KS.Drivers.Encryption.Bases.MD5.VerifyHashFromHashesFile*
+  name: VerifyHashFromHashesFile
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_VerifyHashFromHashesFile_
+  commentId: Overload:KS.Drivers.Encryption.Bases.MD5.VerifyHashFromHashesFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.MD5.VerifyHashFromHashesFile
+  nameWithType: MD5.VerifyHashFromHashesFile
+- uid: KS.Drivers.Encryption.Bases.MD5.VerifyUncalculatedHashFromHash(System.String,System.String)
+  name: VerifyUncalculatedHashFromHash(string, string)
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_VerifyUncalculatedHashFromHash_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.MD5.VerifyUncalculatedHashFromHash(System.String,System.String)
+  name.vb: VerifyUncalculatedHashFromHash(String, String)
+  fullName: KS.Drivers.Encryption.Bases.MD5.VerifyUncalculatedHashFromHash(string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.MD5.VerifyUncalculatedHashFromHash(String, String)
+  nameWithType: MD5.VerifyUncalculatedHashFromHash(string, string)
+  nameWithType.vb: MD5.VerifyUncalculatedHashFromHash(String, String)
+- uid: KS.Drivers.Encryption.Bases.MD5.VerifyUncalculatedHashFromHash*
+  name: VerifyUncalculatedHashFromHash
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_VerifyUncalculatedHashFromHash_
+  commentId: Overload:KS.Drivers.Encryption.Bases.MD5.VerifyUncalculatedHashFromHash
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.MD5.VerifyUncalculatedHashFromHash
+  nameWithType: MD5.VerifyUncalculatedHashFromHash
+- uid: KS.Drivers.Encryption.Bases.MD5.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
+  name: VerifyUncalculatedHashFromHashesFile(string, string)
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_VerifyUncalculatedHashFromHashesFile_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.MD5.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
+  name.vb: VerifyUncalculatedHashFromHashesFile(String, String)
+  fullName: KS.Drivers.Encryption.Bases.MD5.VerifyUncalculatedHashFromHashesFile(string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.MD5.VerifyUncalculatedHashFromHashesFile(String, String)
+  nameWithType: MD5.VerifyUncalculatedHashFromHashesFile(string, string)
+  nameWithType.vb: MD5.VerifyUncalculatedHashFromHashesFile(String, String)
+- uid: KS.Drivers.Encryption.Bases.MD5.VerifyUncalculatedHashFromHashesFile*
+  name: VerifyUncalculatedHashFromHashesFile
+  href: api/KS.Drivers.Encryption.Bases.MD5.html#KS_Drivers_Encryption_Bases_MD5_VerifyUncalculatedHashFromHashesFile_
+  commentId: Overload:KS.Drivers.Encryption.Bases.MD5.VerifyUncalculatedHashFromHashesFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.MD5.VerifyUncalculatedHashFromHashesFile
+  nameWithType: MD5.VerifyUncalculatedHashFromHashesFile
+- uid: KS.Drivers.Encryption.Bases.SHA1
+  name: SHA1
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html
+  commentId: T:KS.Drivers.Encryption.Bases.SHA1
+  fullName: KS.Drivers.Encryption.Bases.SHA1
+  nameWithType: SHA1
+- uid: KS.Drivers.Encryption.Bases.SHA1.DriverName
+  name: DriverName
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_DriverName
+  commentId: P:KS.Drivers.Encryption.Bases.SHA1.DriverName
+  fullName: KS.Drivers.Encryption.Bases.SHA1.DriverName
+  nameWithType: SHA1.DriverName
+- uid: KS.Drivers.Encryption.Bases.SHA1.DriverName*
+  name: DriverName
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_DriverName_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA1.DriverName
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA1.DriverName
+  nameWithType: SHA1.DriverName
+- uid: KS.Drivers.Encryption.Bases.SHA1.DriverType
+  name: DriverType
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_DriverType
+  commentId: P:KS.Drivers.Encryption.Bases.SHA1.DriverType
+  fullName: KS.Drivers.Encryption.Bases.SHA1.DriverType
+  nameWithType: SHA1.DriverType
+- uid: KS.Drivers.Encryption.Bases.SHA1.DriverType*
+  name: DriverType
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_DriverType_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA1.DriverType
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA1.DriverType
+  nameWithType: SHA1.DriverType
+- uid: KS.Drivers.Encryption.Bases.SHA1.EmptyHash
+  name: EmptyHash
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_EmptyHash
+  commentId: P:KS.Drivers.Encryption.Bases.SHA1.EmptyHash
+  fullName: KS.Drivers.Encryption.Bases.SHA1.EmptyHash
+  nameWithType: SHA1.EmptyHash
+- uid: KS.Drivers.Encryption.Bases.SHA1.EmptyHash*
+  name: EmptyHash
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_EmptyHash_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA1.EmptyHash
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA1.EmptyHash
+  nameWithType: SHA1.EmptyHash
+- uid: KS.Drivers.Encryption.Bases.SHA1.GetEncryptedFile(System.IO.Stream)
+  name: GetEncryptedFile(Stream)
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_GetEncryptedFile_System_IO_Stream_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA1.GetEncryptedFile(System.IO.Stream)
+  fullName: KS.Drivers.Encryption.Bases.SHA1.GetEncryptedFile(System.IO.Stream)
+  nameWithType: SHA1.GetEncryptedFile(Stream)
+- uid: KS.Drivers.Encryption.Bases.SHA1.GetEncryptedFile(System.String)
+  name: GetEncryptedFile(string)
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_GetEncryptedFile_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA1.GetEncryptedFile(System.String)
+  name.vb: GetEncryptedFile(String)
+  fullName: KS.Drivers.Encryption.Bases.SHA1.GetEncryptedFile(string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA1.GetEncryptedFile(String)
+  nameWithType: SHA1.GetEncryptedFile(string)
+  nameWithType.vb: SHA1.GetEncryptedFile(String)
+- uid: KS.Drivers.Encryption.Bases.SHA1.GetEncryptedFile*
+  name: GetEncryptedFile
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_GetEncryptedFile_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA1.GetEncryptedFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA1.GetEncryptedFile
+  nameWithType: SHA1.GetEncryptedFile
+- uid: KS.Drivers.Encryption.Bases.SHA1.GetEncryptedString(System.String)
+  name: GetEncryptedString(string)
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_GetEncryptedString_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA1.GetEncryptedString(System.String)
+  name.vb: GetEncryptedString(String)
+  fullName: KS.Drivers.Encryption.Bases.SHA1.GetEncryptedString(string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA1.GetEncryptedString(String)
+  nameWithType: SHA1.GetEncryptedString(string)
+  nameWithType.vb: SHA1.GetEncryptedString(String)
+- uid: KS.Drivers.Encryption.Bases.SHA1.GetEncryptedString*
+  name: GetEncryptedString
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_GetEncryptedString_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA1.GetEncryptedString
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA1.GetEncryptedString
+  nameWithType: SHA1.GetEncryptedString
+- uid: KS.Drivers.Encryption.Bases.SHA1.HashLength
+  name: HashLength
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_HashLength
+  commentId: P:KS.Drivers.Encryption.Bases.SHA1.HashLength
+  fullName: KS.Drivers.Encryption.Bases.SHA1.HashLength
+  nameWithType: SHA1.HashLength
+- uid: KS.Drivers.Encryption.Bases.SHA1.HashLength*
+  name: HashLength
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_HashLength_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA1.HashLength
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA1.HashLength
+  nameWithType: SHA1.HashLength
+- uid: KS.Drivers.Encryption.Bases.SHA1.HashRegex
+  name: HashRegex
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_HashRegex
+  commentId: P:KS.Drivers.Encryption.Bases.SHA1.HashRegex
+  fullName: KS.Drivers.Encryption.Bases.SHA1.HashRegex
+  nameWithType: SHA1.HashRegex
+- uid: KS.Drivers.Encryption.Bases.SHA1.HashRegex*
+  name: HashRegex
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_HashRegex_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA1.HashRegex
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA1.HashRegex
+  nameWithType: SHA1.HashRegex
+- uid: KS.Drivers.Encryption.Bases.SHA1.VerifyHashFromHash(System.String,System.String,System.String)
+  name: VerifyHashFromHash(string, string, string)
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_VerifyHashFromHash_System_String_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA1.VerifyHashFromHash(System.String,System.String,System.String)
+  name.vb: VerifyHashFromHash(String, String, String)
+  fullName: KS.Drivers.Encryption.Bases.SHA1.VerifyHashFromHash(string, string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA1.VerifyHashFromHash(String, String, String)
+  nameWithType: SHA1.VerifyHashFromHash(string, string, string)
+  nameWithType.vb: SHA1.VerifyHashFromHash(String, String, String)
+- uid: KS.Drivers.Encryption.Bases.SHA1.VerifyHashFromHash*
+  name: VerifyHashFromHash
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_VerifyHashFromHash_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA1.VerifyHashFromHash
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA1.VerifyHashFromHash
+  nameWithType: SHA1.VerifyHashFromHash
+- uid: KS.Drivers.Encryption.Bases.SHA1.VerifyHashFromHashesFile(System.String,System.String,System.String)
+  name: VerifyHashFromHashesFile(string, string, string)
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_VerifyHashFromHashesFile_System_String_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA1.VerifyHashFromHashesFile(System.String,System.String,System.String)
+  name.vb: VerifyHashFromHashesFile(String, String, String)
+  fullName: KS.Drivers.Encryption.Bases.SHA1.VerifyHashFromHashesFile(string, string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA1.VerifyHashFromHashesFile(String, String, String)
+  nameWithType: SHA1.VerifyHashFromHashesFile(string, string, string)
+  nameWithType.vb: SHA1.VerifyHashFromHashesFile(String, String, String)
+- uid: KS.Drivers.Encryption.Bases.SHA1.VerifyHashFromHashesFile*
+  name: VerifyHashFromHashesFile
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_VerifyHashFromHashesFile_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA1.VerifyHashFromHashesFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA1.VerifyHashFromHashesFile
+  nameWithType: SHA1.VerifyHashFromHashesFile
+- uid: KS.Drivers.Encryption.Bases.SHA1.VerifyUncalculatedHashFromHash(System.String,System.String)
+  name: VerifyUncalculatedHashFromHash(string, string)
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_VerifyUncalculatedHashFromHash_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA1.VerifyUncalculatedHashFromHash(System.String,System.String)
+  name.vb: VerifyUncalculatedHashFromHash(String, String)
+  fullName: KS.Drivers.Encryption.Bases.SHA1.VerifyUncalculatedHashFromHash(string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA1.VerifyUncalculatedHashFromHash(String, String)
+  nameWithType: SHA1.VerifyUncalculatedHashFromHash(string, string)
+  nameWithType.vb: SHA1.VerifyUncalculatedHashFromHash(String, String)
+- uid: KS.Drivers.Encryption.Bases.SHA1.VerifyUncalculatedHashFromHash*
+  name: VerifyUncalculatedHashFromHash
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_VerifyUncalculatedHashFromHash_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA1.VerifyUncalculatedHashFromHash
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA1.VerifyUncalculatedHashFromHash
+  nameWithType: SHA1.VerifyUncalculatedHashFromHash
+- uid: KS.Drivers.Encryption.Bases.SHA1.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
+  name: VerifyUncalculatedHashFromHashesFile(string, string)
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_VerifyUncalculatedHashFromHashesFile_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA1.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
+  name.vb: VerifyUncalculatedHashFromHashesFile(String, String)
+  fullName: KS.Drivers.Encryption.Bases.SHA1.VerifyUncalculatedHashFromHashesFile(string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA1.VerifyUncalculatedHashFromHashesFile(String, String)
+  nameWithType: SHA1.VerifyUncalculatedHashFromHashesFile(string, string)
+  nameWithType.vb: SHA1.VerifyUncalculatedHashFromHashesFile(String, String)
+- uid: KS.Drivers.Encryption.Bases.SHA1.VerifyUncalculatedHashFromHashesFile*
+  name: VerifyUncalculatedHashFromHashesFile
+  href: api/KS.Drivers.Encryption.Bases.SHA1.html#KS_Drivers_Encryption_Bases_SHA1_VerifyUncalculatedHashFromHashesFile_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA1.VerifyUncalculatedHashFromHashesFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA1.VerifyUncalculatedHashFromHashesFile
+  nameWithType: SHA1.VerifyUncalculatedHashFromHashesFile
+- uid: KS.Drivers.Encryption.Bases.SHA256
+  name: SHA256
+  href: api/KS.Drivers.Encryption.Bases.SHA256.html
+  commentId: T:KS.Drivers.Encryption.Bases.SHA256
+  fullName: KS.Drivers.Encryption.Bases.SHA256
+  nameWithType: SHA256
+- uid: KS.Drivers.Encryption.Bases.SHA384
+  name: SHA384
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html
+  commentId: T:KS.Drivers.Encryption.Bases.SHA384
+  fullName: KS.Drivers.Encryption.Bases.SHA384
+  nameWithType: SHA384
+- uid: KS.Drivers.Encryption.Bases.SHA384.DriverName
+  name: DriverName
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_DriverName
+  commentId: P:KS.Drivers.Encryption.Bases.SHA384.DriverName
+  fullName: KS.Drivers.Encryption.Bases.SHA384.DriverName
+  nameWithType: SHA384.DriverName
+- uid: KS.Drivers.Encryption.Bases.SHA384.DriverName*
+  name: DriverName
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_DriverName_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA384.DriverName
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA384.DriverName
+  nameWithType: SHA384.DriverName
+- uid: KS.Drivers.Encryption.Bases.SHA384.DriverType
+  name: DriverType
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_DriverType
+  commentId: P:KS.Drivers.Encryption.Bases.SHA384.DriverType
+  fullName: KS.Drivers.Encryption.Bases.SHA384.DriverType
+  nameWithType: SHA384.DriverType
+- uid: KS.Drivers.Encryption.Bases.SHA384.DriverType*
+  name: DriverType
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_DriverType_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA384.DriverType
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA384.DriverType
+  nameWithType: SHA384.DriverType
+- uid: KS.Drivers.Encryption.Bases.SHA384.EmptyHash
+  name: EmptyHash
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_EmptyHash
+  commentId: P:KS.Drivers.Encryption.Bases.SHA384.EmptyHash
+  fullName: KS.Drivers.Encryption.Bases.SHA384.EmptyHash
+  nameWithType: SHA384.EmptyHash
+- uid: KS.Drivers.Encryption.Bases.SHA384.EmptyHash*
+  name: EmptyHash
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_EmptyHash_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA384.EmptyHash
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA384.EmptyHash
+  nameWithType: SHA384.EmptyHash
+- uid: KS.Drivers.Encryption.Bases.SHA384.GetEncryptedFile(System.IO.Stream)
+  name: GetEncryptedFile(Stream)
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_GetEncryptedFile_System_IO_Stream_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA384.GetEncryptedFile(System.IO.Stream)
+  fullName: KS.Drivers.Encryption.Bases.SHA384.GetEncryptedFile(System.IO.Stream)
+  nameWithType: SHA384.GetEncryptedFile(Stream)
+- uid: KS.Drivers.Encryption.Bases.SHA384.GetEncryptedFile(System.String)
+  name: GetEncryptedFile(string)
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_GetEncryptedFile_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA384.GetEncryptedFile(System.String)
+  name.vb: GetEncryptedFile(String)
+  fullName: KS.Drivers.Encryption.Bases.SHA384.GetEncryptedFile(string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA384.GetEncryptedFile(String)
+  nameWithType: SHA384.GetEncryptedFile(string)
+  nameWithType.vb: SHA384.GetEncryptedFile(String)
+- uid: KS.Drivers.Encryption.Bases.SHA384.GetEncryptedFile*
+  name: GetEncryptedFile
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_GetEncryptedFile_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA384.GetEncryptedFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA384.GetEncryptedFile
+  nameWithType: SHA384.GetEncryptedFile
+- uid: KS.Drivers.Encryption.Bases.SHA384.GetEncryptedString(System.String)
+  name: GetEncryptedString(string)
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_GetEncryptedString_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA384.GetEncryptedString(System.String)
+  name.vb: GetEncryptedString(String)
+  fullName: KS.Drivers.Encryption.Bases.SHA384.GetEncryptedString(string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA384.GetEncryptedString(String)
+  nameWithType: SHA384.GetEncryptedString(string)
+  nameWithType.vb: SHA384.GetEncryptedString(String)
+- uid: KS.Drivers.Encryption.Bases.SHA384.GetEncryptedString*
+  name: GetEncryptedString
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_GetEncryptedString_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA384.GetEncryptedString
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA384.GetEncryptedString
+  nameWithType: SHA384.GetEncryptedString
+- uid: KS.Drivers.Encryption.Bases.SHA384.HashLength
+  name: HashLength
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_HashLength
+  commentId: P:KS.Drivers.Encryption.Bases.SHA384.HashLength
+  fullName: KS.Drivers.Encryption.Bases.SHA384.HashLength
+  nameWithType: SHA384.HashLength
+- uid: KS.Drivers.Encryption.Bases.SHA384.HashLength*
+  name: HashLength
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_HashLength_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA384.HashLength
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA384.HashLength
+  nameWithType: SHA384.HashLength
+- uid: KS.Drivers.Encryption.Bases.SHA384.HashRegex
+  name: HashRegex
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_HashRegex
+  commentId: P:KS.Drivers.Encryption.Bases.SHA384.HashRegex
+  fullName: KS.Drivers.Encryption.Bases.SHA384.HashRegex
+  nameWithType: SHA384.HashRegex
+- uid: KS.Drivers.Encryption.Bases.SHA384.HashRegex*
+  name: HashRegex
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_HashRegex_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA384.HashRegex
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA384.HashRegex
+  nameWithType: SHA384.HashRegex
+- uid: KS.Drivers.Encryption.Bases.SHA384.VerifyHashFromHash(System.String,System.String,System.String)
+  name: VerifyHashFromHash(string, string, string)
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_VerifyHashFromHash_System_String_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA384.VerifyHashFromHash(System.String,System.String,System.String)
+  name.vb: VerifyHashFromHash(String, String, String)
+  fullName: KS.Drivers.Encryption.Bases.SHA384.VerifyHashFromHash(string, string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA384.VerifyHashFromHash(String, String, String)
+  nameWithType: SHA384.VerifyHashFromHash(string, string, string)
+  nameWithType.vb: SHA384.VerifyHashFromHash(String, String, String)
+- uid: KS.Drivers.Encryption.Bases.SHA384.VerifyHashFromHash*
+  name: VerifyHashFromHash
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_VerifyHashFromHash_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA384.VerifyHashFromHash
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA384.VerifyHashFromHash
+  nameWithType: SHA384.VerifyHashFromHash
+- uid: KS.Drivers.Encryption.Bases.SHA384.VerifyHashFromHashesFile(System.String,System.String,System.String)
+  name: VerifyHashFromHashesFile(string, string, string)
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_VerifyHashFromHashesFile_System_String_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA384.VerifyHashFromHashesFile(System.String,System.String,System.String)
+  name.vb: VerifyHashFromHashesFile(String, String, String)
+  fullName: KS.Drivers.Encryption.Bases.SHA384.VerifyHashFromHashesFile(string, string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA384.VerifyHashFromHashesFile(String, String, String)
+  nameWithType: SHA384.VerifyHashFromHashesFile(string, string, string)
+  nameWithType.vb: SHA384.VerifyHashFromHashesFile(String, String, String)
+- uid: KS.Drivers.Encryption.Bases.SHA384.VerifyHashFromHashesFile*
+  name: VerifyHashFromHashesFile
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_VerifyHashFromHashesFile_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA384.VerifyHashFromHashesFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA384.VerifyHashFromHashesFile
+  nameWithType: SHA384.VerifyHashFromHashesFile
+- uid: KS.Drivers.Encryption.Bases.SHA384.VerifyUncalculatedHashFromHash(System.String,System.String)
+  name: VerifyUncalculatedHashFromHash(string, string)
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_VerifyUncalculatedHashFromHash_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA384.VerifyUncalculatedHashFromHash(System.String,System.String)
+  name.vb: VerifyUncalculatedHashFromHash(String, String)
+  fullName: KS.Drivers.Encryption.Bases.SHA384.VerifyUncalculatedHashFromHash(string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA384.VerifyUncalculatedHashFromHash(String, String)
+  nameWithType: SHA384.VerifyUncalculatedHashFromHash(string, string)
+  nameWithType.vb: SHA384.VerifyUncalculatedHashFromHash(String, String)
+- uid: KS.Drivers.Encryption.Bases.SHA384.VerifyUncalculatedHashFromHash*
+  name: VerifyUncalculatedHashFromHash
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_VerifyUncalculatedHashFromHash_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA384.VerifyUncalculatedHashFromHash
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA384.VerifyUncalculatedHashFromHash
+  nameWithType: SHA384.VerifyUncalculatedHashFromHash
+- uid: KS.Drivers.Encryption.Bases.SHA384.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
+  name: VerifyUncalculatedHashFromHashesFile(string, string)
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_VerifyUncalculatedHashFromHashesFile_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA384.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
+  name.vb: VerifyUncalculatedHashFromHashesFile(String, String)
+  fullName: KS.Drivers.Encryption.Bases.SHA384.VerifyUncalculatedHashFromHashesFile(string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA384.VerifyUncalculatedHashFromHashesFile(String, String)
+  nameWithType: SHA384.VerifyUncalculatedHashFromHashesFile(string, string)
+  nameWithType.vb: SHA384.VerifyUncalculatedHashFromHashesFile(String, String)
+- uid: KS.Drivers.Encryption.Bases.SHA384.VerifyUncalculatedHashFromHashesFile*
+  name: VerifyUncalculatedHashFromHashesFile
+  href: api/KS.Drivers.Encryption.Bases.SHA384.html#KS_Drivers_Encryption_Bases_SHA384_VerifyUncalculatedHashFromHashesFile_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA384.VerifyUncalculatedHashFromHashesFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA384.VerifyUncalculatedHashFromHashesFile
+  nameWithType: SHA384.VerifyUncalculatedHashFromHashesFile
+- uid: KS.Drivers.Encryption.Bases.SHA512
+  name: SHA512
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html
+  commentId: T:KS.Drivers.Encryption.Bases.SHA512
+  fullName: KS.Drivers.Encryption.Bases.SHA512
+  nameWithType: SHA512
+- uid: KS.Drivers.Encryption.Bases.SHA512.DriverName
+  name: DriverName
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_DriverName
+  commentId: P:KS.Drivers.Encryption.Bases.SHA512.DriverName
+  fullName: KS.Drivers.Encryption.Bases.SHA512.DriverName
+  nameWithType: SHA512.DriverName
+- uid: KS.Drivers.Encryption.Bases.SHA512.DriverName*
+  name: DriverName
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_DriverName_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA512.DriverName
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA512.DriverName
+  nameWithType: SHA512.DriverName
+- uid: KS.Drivers.Encryption.Bases.SHA512.DriverType
+  name: DriverType
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_DriverType
+  commentId: P:KS.Drivers.Encryption.Bases.SHA512.DriverType
+  fullName: KS.Drivers.Encryption.Bases.SHA512.DriverType
+  nameWithType: SHA512.DriverType
+- uid: KS.Drivers.Encryption.Bases.SHA512.DriverType*
+  name: DriverType
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_DriverType_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA512.DriverType
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA512.DriverType
+  nameWithType: SHA512.DriverType
+- uid: KS.Drivers.Encryption.Bases.SHA512.EmptyHash
+  name: EmptyHash
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_EmptyHash
+  commentId: P:KS.Drivers.Encryption.Bases.SHA512.EmptyHash
+  fullName: KS.Drivers.Encryption.Bases.SHA512.EmptyHash
+  nameWithType: SHA512.EmptyHash
+- uid: KS.Drivers.Encryption.Bases.SHA512.EmptyHash*
+  name: EmptyHash
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_EmptyHash_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA512.EmptyHash
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA512.EmptyHash
+  nameWithType: SHA512.EmptyHash
+- uid: KS.Drivers.Encryption.Bases.SHA512.GetEncryptedFile(System.IO.Stream)
+  name: GetEncryptedFile(Stream)
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_GetEncryptedFile_System_IO_Stream_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA512.GetEncryptedFile(System.IO.Stream)
+  fullName: KS.Drivers.Encryption.Bases.SHA512.GetEncryptedFile(System.IO.Stream)
+  nameWithType: SHA512.GetEncryptedFile(Stream)
+- uid: KS.Drivers.Encryption.Bases.SHA512.GetEncryptedFile(System.String)
+  name: GetEncryptedFile(string)
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_GetEncryptedFile_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA512.GetEncryptedFile(System.String)
+  name.vb: GetEncryptedFile(String)
+  fullName: KS.Drivers.Encryption.Bases.SHA512.GetEncryptedFile(string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA512.GetEncryptedFile(String)
+  nameWithType: SHA512.GetEncryptedFile(string)
+  nameWithType.vb: SHA512.GetEncryptedFile(String)
+- uid: KS.Drivers.Encryption.Bases.SHA512.GetEncryptedFile*
+  name: GetEncryptedFile
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_GetEncryptedFile_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA512.GetEncryptedFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA512.GetEncryptedFile
+  nameWithType: SHA512.GetEncryptedFile
+- uid: KS.Drivers.Encryption.Bases.SHA512.GetEncryptedString(System.String)
+  name: GetEncryptedString(string)
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_GetEncryptedString_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA512.GetEncryptedString(System.String)
+  name.vb: GetEncryptedString(String)
+  fullName: KS.Drivers.Encryption.Bases.SHA512.GetEncryptedString(string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA512.GetEncryptedString(String)
+  nameWithType: SHA512.GetEncryptedString(string)
+  nameWithType.vb: SHA512.GetEncryptedString(String)
+- uid: KS.Drivers.Encryption.Bases.SHA512.GetEncryptedString*
+  name: GetEncryptedString
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_GetEncryptedString_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA512.GetEncryptedString
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA512.GetEncryptedString
+  nameWithType: SHA512.GetEncryptedString
+- uid: KS.Drivers.Encryption.Bases.SHA512.HashLength
+  name: HashLength
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_HashLength
+  commentId: P:KS.Drivers.Encryption.Bases.SHA512.HashLength
+  fullName: KS.Drivers.Encryption.Bases.SHA512.HashLength
+  nameWithType: SHA512.HashLength
+- uid: KS.Drivers.Encryption.Bases.SHA512.HashLength*
+  name: HashLength
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_HashLength_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA512.HashLength
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA512.HashLength
+  nameWithType: SHA512.HashLength
+- uid: KS.Drivers.Encryption.Bases.SHA512.HashRegex
+  name: HashRegex
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_HashRegex
+  commentId: P:KS.Drivers.Encryption.Bases.SHA512.HashRegex
+  fullName: KS.Drivers.Encryption.Bases.SHA512.HashRegex
+  nameWithType: SHA512.HashRegex
+- uid: KS.Drivers.Encryption.Bases.SHA512.HashRegex*
+  name: HashRegex
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_HashRegex_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA512.HashRegex
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA512.HashRegex
+  nameWithType: SHA512.HashRegex
+- uid: KS.Drivers.Encryption.Bases.SHA512.VerifyHashFromHash(System.String,System.String,System.String)
+  name: VerifyHashFromHash(string, string, string)
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_VerifyHashFromHash_System_String_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA512.VerifyHashFromHash(System.String,System.String,System.String)
+  name.vb: VerifyHashFromHash(String, String, String)
+  fullName: KS.Drivers.Encryption.Bases.SHA512.VerifyHashFromHash(string, string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA512.VerifyHashFromHash(String, String, String)
+  nameWithType: SHA512.VerifyHashFromHash(string, string, string)
+  nameWithType.vb: SHA512.VerifyHashFromHash(String, String, String)
+- uid: KS.Drivers.Encryption.Bases.SHA512.VerifyHashFromHash*
+  name: VerifyHashFromHash
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_VerifyHashFromHash_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA512.VerifyHashFromHash
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA512.VerifyHashFromHash
+  nameWithType: SHA512.VerifyHashFromHash
+- uid: KS.Drivers.Encryption.Bases.SHA512.VerifyHashFromHashesFile(System.String,System.String,System.String)
+  name: VerifyHashFromHashesFile(string, string, string)
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_VerifyHashFromHashesFile_System_String_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA512.VerifyHashFromHashesFile(System.String,System.String,System.String)
+  name.vb: VerifyHashFromHashesFile(String, String, String)
+  fullName: KS.Drivers.Encryption.Bases.SHA512.VerifyHashFromHashesFile(string, string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA512.VerifyHashFromHashesFile(String, String, String)
+  nameWithType: SHA512.VerifyHashFromHashesFile(string, string, string)
+  nameWithType.vb: SHA512.VerifyHashFromHashesFile(String, String, String)
+- uid: KS.Drivers.Encryption.Bases.SHA512.VerifyHashFromHashesFile*
+  name: VerifyHashFromHashesFile
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_VerifyHashFromHashesFile_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA512.VerifyHashFromHashesFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA512.VerifyHashFromHashesFile
+  nameWithType: SHA512.VerifyHashFromHashesFile
+- uid: KS.Drivers.Encryption.Bases.SHA512.VerifyUncalculatedHashFromHash(System.String,System.String)
+  name: VerifyUncalculatedHashFromHash(string, string)
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_VerifyUncalculatedHashFromHash_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA512.VerifyUncalculatedHashFromHash(System.String,System.String)
+  name.vb: VerifyUncalculatedHashFromHash(String, String)
+  fullName: KS.Drivers.Encryption.Bases.SHA512.VerifyUncalculatedHashFromHash(string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA512.VerifyUncalculatedHashFromHash(String, String)
+  nameWithType: SHA512.VerifyUncalculatedHashFromHash(string, string)
+  nameWithType.vb: SHA512.VerifyUncalculatedHashFromHash(String, String)
+- uid: KS.Drivers.Encryption.Bases.SHA512.VerifyUncalculatedHashFromHash*
+  name: VerifyUncalculatedHashFromHash
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_VerifyUncalculatedHashFromHash_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA512.VerifyUncalculatedHashFromHash
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA512.VerifyUncalculatedHashFromHash
+  nameWithType: SHA512.VerifyUncalculatedHashFromHash
+- uid: KS.Drivers.Encryption.Bases.SHA512.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
+  name: VerifyUncalculatedHashFromHashesFile(string, string)
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_VerifyUncalculatedHashFromHashesFile_System_String_System_String_
+  commentId: M:KS.Drivers.Encryption.Bases.SHA512.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
+  name.vb: VerifyUncalculatedHashFromHashesFile(String, String)
+  fullName: KS.Drivers.Encryption.Bases.SHA512.VerifyUncalculatedHashFromHashesFile(string, string)
+  fullName.vb: KS.Drivers.Encryption.Bases.SHA512.VerifyUncalculatedHashFromHashesFile(String, String)
+  nameWithType: SHA512.VerifyUncalculatedHashFromHashesFile(string, string)
+  nameWithType.vb: SHA512.VerifyUncalculatedHashFromHashesFile(String, String)
+- uid: KS.Drivers.Encryption.Bases.SHA512.VerifyUncalculatedHashFromHashesFile*
+  name: VerifyUncalculatedHashFromHashesFile
+  href: api/KS.Drivers.Encryption.Bases.SHA512.html#KS_Drivers_Encryption_Bases_SHA512_VerifyUncalculatedHashFromHashesFile_
+  commentId: Overload:KS.Drivers.Encryption.Bases.SHA512.VerifyUncalculatedHashFromHashesFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encryption.Bases.SHA512.VerifyUncalculatedHashFromHashesFile
+  nameWithType: SHA512.VerifyUncalculatedHashFromHashesFile
 - uid: KS.Drivers.Encryption.Encryption
   name: Encryption
   href: api/KS.Drivers.Encryption.Encryption.html
@@ -10293,883 +11170,6 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Encryption.EncryptionDriverTools.SetEncryptionDriver
   nameWithType: EncryptionDriverTools.SetEncryptionDriver
-- uid: KS.Drivers.Encryption.Encryptors
-  name: KS.Drivers.Encryption.Encryptors
-  href: api/KS.Drivers.Encryption.Encryptors.html
-  commentId: N:KS.Drivers.Encryption.Encryptors
-  fullName: KS.Drivers.Encryption.Encryptors
-  nameWithType: KS.Drivers.Encryption.Encryptors
-- uid: KS.Drivers.Encryption.Encryptors.CRC32
-  name: CRC32
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html
-  commentId: T:KS.Drivers.Encryption.Encryptors.CRC32
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32
-  nameWithType: CRC32
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.DriverName
-  name: DriverName
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_DriverName
-  commentId: P:KS.Drivers.Encryption.Encryptors.CRC32.DriverName
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.DriverName
-  nameWithType: CRC32.DriverName
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.DriverName*
-  name: DriverName
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_DriverName_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.CRC32.DriverName
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.DriverName
-  nameWithType: CRC32.DriverName
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.DriverType
-  name: DriverType
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_DriverType
-  commentId: P:KS.Drivers.Encryption.Encryptors.CRC32.DriverType
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.DriverType
-  nameWithType: CRC32.DriverType
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.DriverType*
-  name: DriverType
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_DriverType_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.CRC32.DriverType
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.DriverType
-  nameWithType: CRC32.DriverType
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.EmptyHash
-  name: EmptyHash
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_EmptyHash
-  commentId: P:KS.Drivers.Encryption.Encryptors.CRC32.EmptyHash
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.EmptyHash
-  nameWithType: CRC32.EmptyHash
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.EmptyHash*
-  name: EmptyHash
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_EmptyHash_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.CRC32.EmptyHash
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.EmptyHash
-  nameWithType: CRC32.EmptyHash
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedFile(System.IO.Stream)
-  name: GetEncryptedFile(Stream)
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_GetEncryptedFile_System_IO_Stream_
-  commentId: M:KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedFile(System.IO.Stream)
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedFile(System.IO.Stream)
-  nameWithType: CRC32.GetEncryptedFile(Stream)
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedFile(System.String)
-  name: GetEncryptedFile(string)
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_GetEncryptedFile_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedFile(System.String)
-  name.vb: GetEncryptedFile(String)
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedFile(string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedFile(String)
-  nameWithType: CRC32.GetEncryptedFile(string)
-  nameWithType.vb: CRC32.GetEncryptedFile(String)
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedFile*
-  name: GetEncryptedFile
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_GetEncryptedFile_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedFile
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedFile
-  nameWithType: CRC32.GetEncryptedFile
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedString(System.String)
-  name: GetEncryptedString(string)
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_GetEncryptedString_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedString(System.String)
-  name.vb: GetEncryptedString(String)
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedString(string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedString(String)
-  nameWithType: CRC32.GetEncryptedString(string)
-  nameWithType.vb: CRC32.GetEncryptedString(String)
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedString*
-  name: GetEncryptedString
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_GetEncryptedString_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedString
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.GetEncryptedString
-  nameWithType: CRC32.GetEncryptedString
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.HashLength
-  name: HashLength
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_HashLength
-  commentId: P:KS.Drivers.Encryption.Encryptors.CRC32.HashLength
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.HashLength
-  nameWithType: CRC32.HashLength
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.HashLength*
-  name: HashLength
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_HashLength_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.CRC32.HashLength
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.HashLength
-  nameWithType: CRC32.HashLength
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.HashRegex
-  name: HashRegex
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_HashRegex
-  commentId: P:KS.Drivers.Encryption.Encryptors.CRC32.HashRegex
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.HashRegex
-  nameWithType: CRC32.HashRegex
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.HashRegex*
-  name: HashRegex
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_HashRegex_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.CRC32.HashRegex
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.HashRegex
-  nameWithType: CRC32.HashRegex
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.VerifyHashFromHash(System.String,System.String,System.String)
-  name: VerifyHashFromHash(string, string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_VerifyHashFromHash_System_String_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.CRC32.VerifyHashFromHash(System.String,System.String,System.String)
-  name.vb: VerifyHashFromHash(String, String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.VerifyHashFromHash(string, string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.CRC32.VerifyHashFromHash(String, String, String)
-  nameWithType: CRC32.VerifyHashFromHash(string, string, string)
-  nameWithType.vb: CRC32.VerifyHashFromHash(String, String, String)
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.VerifyHashFromHash*
-  name: VerifyHashFromHash
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_VerifyHashFromHash_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.CRC32.VerifyHashFromHash
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.VerifyHashFromHash
-  nameWithType: CRC32.VerifyHashFromHash
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.VerifyHashFromHashesFile(System.String,System.String,System.String)
-  name: VerifyHashFromHashesFile(string, string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_VerifyHashFromHashesFile_System_String_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.CRC32.VerifyHashFromHashesFile(System.String,System.String,System.String)
-  name.vb: VerifyHashFromHashesFile(String, String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.VerifyHashFromHashesFile(string, string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.CRC32.VerifyHashFromHashesFile(String, String, String)
-  nameWithType: CRC32.VerifyHashFromHashesFile(string, string, string)
-  nameWithType.vb: CRC32.VerifyHashFromHashesFile(String, String, String)
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.VerifyHashFromHashesFile*
-  name: VerifyHashFromHashesFile
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_VerifyHashFromHashesFile_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.CRC32.VerifyHashFromHashesFile
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.VerifyHashFromHashesFile
-  nameWithType: CRC32.VerifyHashFromHashesFile
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.VerifyUncalculatedHashFromHash(System.String,System.String)
-  name: VerifyUncalculatedHashFromHash(string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_VerifyUncalculatedHashFromHash_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.CRC32.VerifyUncalculatedHashFromHash(System.String,System.String)
-  name.vb: VerifyUncalculatedHashFromHash(String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.VerifyUncalculatedHashFromHash(string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.CRC32.VerifyUncalculatedHashFromHash(String, String)
-  nameWithType: CRC32.VerifyUncalculatedHashFromHash(string, string)
-  nameWithType.vb: CRC32.VerifyUncalculatedHashFromHash(String, String)
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.VerifyUncalculatedHashFromHash*
-  name: VerifyUncalculatedHashFromHash
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_VerifyUncalculatedHashFromHash_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.CRC32.VerifyUncalculatedHashFromHash
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.VerifyUncalculatedHashFromHash
-  nameWithType: CRC32.VerifyUncalculatedHashFromHash
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
-  name: VerifyUncalculatedHashFromHashesFile(string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_VerifyUncalculatedHashFromHashesFile_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.CRC32.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
-  name.vb: VerifyUncalculatedHashFromHashesFile(String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.VerifyUncalculatedHashFromHashesFile(string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.CRC32.VerifyUncalculatedHashFromHashesFile(String, String)
-  nameWithType: CRC32.VerifyUncalculatedHashFromHashesFile(string, string)
-  nameWithType.vb: CRC32.VerifyUncalculatedHashFromHashesFile(String, String)
-- uid: KS.Drivers.Encryption.Encryptors.CRC32.VerifyUncalculatedHashFromHashesFile*
-  name: VerifyUncalculatedHashFromHashesFile
-  href: api/KS.Drivers.Encryption.Encryptors.CRC32.html#KS_Drivers_Encryption_Encryptors_CRC32_VerifyUncalculatedHashFromHashesFile_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.CRC32.VerifyUncalculatedHashFromHashesFile
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.CRC32.VerifyUncalculatedHashFromHashesFile
-  nameWithType: CRC32.VerifyUncalculatedHashFromHashesFile
-- uid: KS.Drivers.Encryption.Encryptors.MD5
-  name: MD5
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html
-  commentId: T:KS.Drivers.Encryption.Encryptors.MD5
-  fullName: KS.Drivers.Encryption.Encryptors.MD5
-  nameWithType: MD5
-- uid: KS.Drivers.Encryption.Encryptors.MD5.DriverName
-  name: DriverName
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_DriverName
-  commentId: P:KS.Drivers.Encryption.Encryptors.MD5.DriverName
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.DriverName
-  nameWithType: MD5.DriverName
-- uid: KS.Drivers.Encryption.Encryptors.MD5.DriverName*
-  name: DriverName
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_DriverName_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.MD5.DriverName
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.DriverName
-  nameWithType: MD5.DriverName
-- uid: KS.Drivers.Encryption.Encryptors.MD5.DriverType
-  name: DriverType
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_DriverType
-  commentId: P:KS.Drivers.Encryption.Encryptors.MD5.DriverType
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.DriverType
-  nameWithType: MD5.DriverType
-- uid: KS.Drivers.Encryption.Encryptors.MD5.DriverType*
-  name: DriverType
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_DriverType_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.MD5.DriverType
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.DriverType
-  nameWithType: MD5.DriverType
-- uid: KS.Drivers.Encryption.Encryptors.MD5.EmptyHash
-  name: EmptyHash
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_EmptyHash
-  commentId: P:KS.Drivers.Encryption.Encryptors.MD5.EmptyHash
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.EmptyHash
-  nameWithType: MD5.EmptyHash
-- uid: KS.Drivers.Encryption.Encryptors.MD5.EmptyHash*
-  name: EmptyHash
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_EmptyHash_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.MD5.EmptyHash
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.EmptyHash
-  nameWithType: MD5.EmptyHash
-- uid: KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedFile(System.IO.Stream)
-  name: GetEncryptedFile(Stream)
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_GetEncryptedFile_System_IO_Stream_
-  commentId: M:KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedFile(System.IO.Stream)
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedFile(System.IO.Stream)
-  nameWithType: MD5.GetEncryptedFile(Stream)
-- uid: KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedFile(System.String)
-  name: GetEncryptedFile(string)
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_GetEncryptedFile_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedFile(System.String)
-  name.vb: GetEncryptedFile(String)
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedFile(string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedFile(String)
-  nameWithType: MD5.GetEncryptedFile(string)
-  nameWithType.vb: MD5.GetEncryptedFile(String)
-- uid: KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedFile*
-  name: GetEncryptedFile
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_GetEncryptedFile_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedFile
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedFile
-  nameWithType: MD5.GetEncryptedFile
-- uid: KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedString(System.String)
-  name: GetEncryptedString(string)
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_GetEncryptedString_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedString(System.String)
-  name.vb: GetEncryptedString(String)
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedString(string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedString(String)
-  nameWithType: MD5.GetEncryptedString(string)
-  nameWithType.vb: MD5.GetEncryptedString(String)
-- uid: KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedString*
-  name: GetEncryptedString
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_GetEncryptedString_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedString
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.GetEncryptedString
-  nameWithType: MD5.GetEncryptedString
-- uid: KS.Drivers.Encryption.Encryptors.MD5.HashLength
-  name: HashLength
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_HashLength
-  commentId: P:KS.Drivers.Encryption.Encryptors.MD5.HashLength
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.HashLength
-  nameWithType: MD5.HashLength
-- uid: KS.Drivers.Encryption.Encryptors.MD5.HashLength*
-  name: HashLength
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_HashLength_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.MD5.HashLength
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.HashLength
-  nameWithType: MD5.HashLength
-- uid: KS.Drivers.Encryption.Encryptors.MD5.HashRegex
-  name: HashRegex
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_HashRegex
-  commentId: P:KS.Drivers.Encryption.Encryptors.MD5.HashRegex
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.HashRegex
-  nameWithType: MD5.HashRegex
-- uid: KS.Drivers.Encryption.Encryptors.MD5.HashRegex*
-  name: HashRegex
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_HashRegex_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.MD5.HashRegex
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.HashRegex
-  nameWithType: MD5.HashRegex
-- uid: KS.Drivers.Encryption.Encryptors.MD5.VerifyHashFromHash(System.String,System.String,System.String)
-  name: VerifyHashFromHash(string, string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_VerifyHashFromHash_System_String_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.MD5.VerifyHashFromHash(System.String,System.String,System.String)
-  name.vb: VerifyHashFromHash(String, String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.VerifyHashFromHash(string, string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.MD5.VerifyHashFromHash(String, String, String)
-  nameWithType: MD5.VerifyHashFromHash(string, string, string)
-  nameWithType.vb: MD5.VerifyHashFromHash(String, String, String)
-- uid: KS.Drivers.Encryption.Encryptors.MD5.VerifyHashFromHash*
-  name: VerifyHashFromHash
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_VerifyHashFromHash_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.MD5.VerifyHashFromHash
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.VerifyHashFromHash
-  nameWithType: MD5.VerifyHashFromHash
-- uid: KS.Drivers.Encryption.Encryptors.MD5.VerifyHashFromHashesFile(System.String,System.String,System.String)
-  name: VerifyHashFromHashesFile(string, string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_VerifyHashFromHashesFile_System_String_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.MD5.VerifyHashFromHashesFile(System.String,System.String,System.String)
-  name.vb: VerifyHashFromHashesFile(String, String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.VerifyHashFromHashesFile(string, string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.MD5.VerifyHashFromHashesFile(String, String, String)
-  nameWithType: MD5.VerifyHashFromHashesFile(string, string, string)
-  nameWithType.vb: MD5.VerifyHashFromHashesFile(String, String, String)
-- uid: KS.Drivers.Encryption.Encryptors.MD5.VerifyHashFromHashesFile*
-  name: VerifyHashFromHashesFile
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_VerifyHashFromHashesFile_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.MD5.VerifyHashFromHashesFile
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.VerifyHashFromHashesFile
-  nameWithType: MD5.VerifyHashFromHashesFile
-- uid: KS.Drivers.Encryption.Encryptors.MD5.VerifyUncalculatedHashFromHash(System.String,System.String)
-  name: VerifyUncalculatedHashFromHash(string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_VerifyUncalculatedHashFromHash_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.MD5.VerifyUncalculatedHashFromHash(System.String,System.String)
-  name.vb: VerifyUncalculatedHashFromHash(String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.VerifyUncalculatedHashFromHash(string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.MD5.VerifyUncalculatedHashFromHash(String, String)
-  nameWithType: MD5.VerifyUncalculatedHashFromHash(string, string)
-  nameWithType.vb: MD5.VerifyUncalculatedHashFromHash(String, String)
-- uid: KS.Drivers.Encryption.Encryptors.MD5.VerifyUncalculatedHashFromHash*
-  name: VerifyUncalculatedHashFromHash
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_VerifyUncalculatedHashFromHash_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.MD5.VerifyUncalculatedHashFromHash
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.VerifyUncalculatedHashFromHash
-  nameWithType: MD5.VerifyUncalculatedHashFromHash
-- uid: KS.Drivers.Encryption.Encryptors.MD5.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
-  name: VerifyUncalculatedHashFromHashesFile(string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_VerifyUncalculatedHashFromHashesFile_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.MD5.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
-  name.vb: VerifyUncalculatedHashFromHashesFile(String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.VerifyUncalculatedHashFromHashesFile(string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.MD5.VerifyUncalculatedHashFromHashesFile(String, String)
-  nameWithType: MD5.VerifyUncalculatedHashFromHashesFile(string, string)
-  nameWithType.vb: MD5.VerifyUncalculatedHashFromHashesFile(String, String)
-- uid: KS.Drivers.Encryption.Encryptors.MD5.VerifyUncalculatedHashFromHashesFile*
-  name: VerifyUncalculatedHashFromHashesFile
-  href: api/KS.Drivers.Encryption.Encryptors.MD5.html#KS_Drivers_Encryption_Encryptors_MD5_VerifyUncalculatedHashFromHashesFile_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.MD5.VerifyUncalculatedHashFromHashesFile
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.MD5.VerifyUncalculatedHashFromHashesFile
-  nameWithType: MD5.VerifyUncalculatedHashFromHashesFile
-- uid: KS.Drivers.Encryption.Encryptors.SHA1
-  name: SHA1
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html
-  commentId: T:KS.Drivers.Encryption.Encryptors.SHA1
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1
-  nameWithType: SHA1
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.DriverName
-  name: DriverName
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_DriverName
-  commentId: P:KS.Drivers.Encryption.Encryptors.SHA1.DriverName
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.DriverName
-  nameWithType: SHA1.DriverName
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.DriverName*
-  name: DriverName
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_DriverName_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA1.DriverName
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.DriverName
-  nameWithType: SHA1.DriverName
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.DriverType
-  name: DriverType
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_DriverType
-  commentId: P:KS.Drivers.Encryption.Encryptors.SHA1.DriverType
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.DriverType
-  nameWithType: SHA1.DriverType
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.DriverType*
-  name: DriverType
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_DriverType_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA1.DriverType
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.DriverType
-  nameWithType: SHA1.DriverType
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.EmptyHash
-  name: EmptyHash
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_EmptyHash
-  commentId: P:KS.Drivers.Encryption.Encryptors.SHA1.EmptyHash
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.EmptyHash
-  nameWithType: SHA1.EmptyHash
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.EmptyHash*
-  name: EmptyHash
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_EmptyHash_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA1.EmptyHash
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.EmptyHash
-  nameWithType: SHA1.EmptyHash
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile(System.IO.Stream)
-  name: GetEncryptedFile(Stream)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_GetEncryptedFile_System_IO_Stream_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile(System.IO.Stream)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile(System.IO.Stream)
-  nameWithType: SHA1.GetEncryptedFile(Stream)
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile(System.String)
-  name: GetEncryptedFile(string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_GetEncryptedFile_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile(System.String)
-  name.vb: GetEncryptedFile(String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile(string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile(String)
-  nameWithType: SHA1.GetEncryptedFile(string)
-  nameWithType.vb: SHA1.GetEncryptedFile(String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile*
-  name: GetEncryptedFile
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_GetEncryptedFile_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedFile
-  nameWithType: SHA1.GetEncryptedFile
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedString(System.String)
-  name: GetEncryptedString(string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_GetEncryptedString_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedString(System.String)
-  name.vb: GetEncryptedString(String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedString(string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedString(String)
-  nameWithType: SHA1.GetEncryptedString(string)
-  nameWithType.vb: SHA1.GetEncryptedString(String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedString*
-  name: GetEncryptedString
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_GetEncryptedString_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedString
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.GetEncryptedString
-  nameWithType: SHA1.GetEncryptedString
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.HashLength
-  name: HashLength
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_HashLength
-  commentId: P:KS.Drivers.Encryption.Encryptors.SHA1.HashLength
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.HashLength
-  nameWithType: SHA1.HashLength
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.HashLength*
-  name: HashLength
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_HashLength_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA1.HashLength
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.HashLength
-  nameWithType: SHA1.HashLength
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.HashRegex
-  name: HashRegex
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_HashRegex
-  commentId: P:KS.Drivers.Encryption.Encryptors.SHA1.HashRegex
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.HashRegex
-  nameWithType: SHA1.HashRegex
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.HashRegex*
-  name: HashRegex
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_HashRegex_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA1.HashRegex
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.HashRegex
-  nameWithType: SHA1.HashRegex
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHash(System.String,System.String,System.String)
-  name: VerifyHashFromHash(string, string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_VerifyHashFromHash_System_String_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHash(System.String,System.String,System.String)
-  name.vb: VerifyHashFromHash(String, String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHash(string, string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHash(String, String, String)
-  nameWithType: SHA1.VerifyHashFromHash(string, string, string)
-  nameWithType.vb: SHA1.VerifyHashFromHash(String, String, String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHash*
-  name: VerifyHashFromHash
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_VerifyHashFromHash_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHash
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHash
-  nameWithType: SHA1.VerifyHashFromHash
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHashesFile(System.String,System.String,System.String)
-  name: VerifyHashFromHashesFile(string, string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_VerifyHashFromHashesFile_System_String_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHashesFile(System.String,System.String,System.String)
-  name.vb: VerifyHashFromHashesFile(String, String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHashesFile(string, string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHashesFile(String, String, String)
-  nameWithType: SHA1.VerifyHashFromHashesFile(string, string, string)
-  nameWithType.vb: SHA1.VerifyHashFromHashesFile(String, String, String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHashesFile*
-  name: VerifyHashFromHashesFile
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_VerifyHashFromHashesFile_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHashesFile
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.VerifyHashFromHashesFile
-  nameWithType: SHA1.VerifyHashFromHashesFile
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHash(System.String,System.String)
-  name: VerifyUncalculatedHashFromHash(string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_VerifyUncalculatedHashFromHash_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHash(System.String,System.String)
-  name.vb: VerifyUncalculatedHashFromHash(String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHash(string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHash(String, String)
-  nameWithType: SHA1.VerifyUncalculatedHashFromHash(string, string)
-  nameWithType.vb: SHA1.VerifyUncalculatedHashFromHash(String, String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHash*
-  name: VerifyUncalculatedHashFromHash
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_VerifyUncalculatedHashFromHash_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHash
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHash
-  nameWithType: SHA1.VerifyUncalculatedHashFromHash
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
-  name: VerifyUncalculatedHashFromHashesFile(string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_VerifyUncalculatedHashFromHashesFile_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
-  name.vb: VerifyUncalculatedHashFromHashesFile(String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHashesFile(string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHashesFile(String, String)
-  nameWithType: SHA1.VerifyUncalculatedHashFromHashesFile(string, string)
-  nameWithType.vb: SHA1.VerifyUncalculatedHashFromHashesFile(String, String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHashesFile*
-  name: VerifyUncalculatedHashFromHashesFile
-  href: api/KS.Drivers.Encryption.Encryptors.SHA1.html#KS_Drivers_Encryption_Encryptors_SHA1_VerifyUncalculatedHashFromHashesFile_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHashesFile
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA1.VerifyUncalculatedHashFromHashesFile
-  nameWithType: SHA1.VerifyUncalculatedHashFromHashesFile
-- uid: KS.Drivers.Encryption.Encryptors.SHA256
-  name: SHA256
-  href: api/KS.Drivers.Encryption.Encryptors.SHA256.html
-  commentId: T:KS.Drivers.Encryption.Encryptors.SHA256
-  fullName: KS.Drivers.Encryption.Encryptors.SHA256
-  nameWithType: SHA256
-- uid: KS.Drivers.Encryption.Encryptors.SHA384
-  name: SHA384
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html
-  commentId: T:KS.Drivers.Encryption.Encryptors.SHA384
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384
-  nameWithType: SHA384
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.DriverName
-  name: DriverName
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_DriverName
-  commentId: P:KS.Drivers.Encryption.Encryptors.SHA384.DriverName
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.DriverName
-  nameWithType: SHA384.DriverName
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.DriverName*
-  name: DriverName
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_DriverName_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA384.DriverName
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.DriverName
-  nameWithType: SHA384.DriverName
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.DriverType
-  name: DriverType
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_DriverType
-  commentId: P:KS.Drivers.Encryption.Encryptors.SHA384.DriverType
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.DriverType
-  nameWithType: SHA384.DriverType
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.DriverType*
-  name: DriverType
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_DriverType_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA384.DriverType
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.DriverType
-  nameWithType: SHA384.DriverType
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.EmptyHash
-  name: EmptyHash
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_EmptyHash
-  commentId: P:KS.Drivers.Encryption.Encryptors.SHA384.EmptyHash
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.EmptyHash
-  nameWithType: SHA384.EmptyHash
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.EmptyHash*
-  name: EmptyHash
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_EmptyHash_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA384.EmptyHash
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.EmptyHash
-  nameWithType: SHA384.EmptyHash
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedFile(System.IO.Stream)
-  name: GetEncryptedFile(Stream)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_GetEncryptedFile_System_IO_Stream_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedFile(System.IO.Stream)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedFile(System.IO.Stream)
-  nameWithType: SHA384.GetEncryptedFile(Stream)
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedFile(System.String)
-  name: GetEncryptedFile(string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_GetEncryptedFile_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedFile(System.String)
-  name.vb: GetEncryptedFile(String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedFile(string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedFile(String)
-  nameWithType: SHA384.GetEncryptedFile(string)
-  nameWithType.vb: SHA384.GetEncryptedFile(String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedFile*
-  name: GetEncryptedFile
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_GetEncryptedFile_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedFile
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedFile
-  nameWithType: SHA384.GetEncryptedFile
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedString(System.String)
-  name: GetEncryptedString(string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_GetEncryptedString_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedString(System.String)
-  name.vb: GetEncryptedString(String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedString(string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedString(String)
-  nameWithType: SHA384.GetEncryptedString(string)
-  nameWithType.vb: SHA384.GetEncryptedString(String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedString*
-  name: GetEncryptedString
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_GetEncryptedString_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedString
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.GetEncryptedString
-  nameWithType: SHA384.GetEncryptedString
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.HashLength
-  name: HashLength
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_HashLength
-  commentId: P:KS.Drivers.Encryption.Encryptors.SHA384.HashLength
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.HashLength
-  nameWithType: SHA384.HashLength
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.HashLength*
-  name: HashLength
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_HashLength_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA384.HashLength
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.HashLength
-  nameWithType: SHA384.HashLength
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.HashRegex
-  name: HashRegex
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_HashRegex
-  commentId: P:KS.Drivers.Encryption.Encryptors.SHA384.HashRegex
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.HashRegex
-  nameWithType: SHA384.HashRegex
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.HashRegex*
-  name: HashRegex
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_HashRegex_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA384.HashRegex
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.HashRegex
-  nameWithType: SHA384.HashRegex
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.VerifyHashFromHash(System.String,System.String,System.String)
-  name: VerifyHashFromHash(string, string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_VerifyHashFromHash_System_String_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA384.VerifyHashFromHash(System.String,System.String,System.String)
-  name.vb: VerifyHashFromHash(String, String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.VerifyHashFromHash(string, string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA384.VerifyHashFromHash(String, String, String)
-  nameWithType: SHA384.VerifyHashFromHash(string, string, string)
-  nameWithType.vb: SHA384.VerifyHashFromHash(String, String, String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.VerifyHashFromHash*
-  name: VerifyHashFromHash
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_VerifyHashFromHash_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA384.VerifyHashFromHash
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.VerifyHashFromHash
-  nameWithType: SHA384.VerifyHashFromHash
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.VerifyHashFromHashesFile(System.String,System.String,System.String)
-  name: VerifyHashFromHashesFile(string, string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_VerifyHashFromHashesFile_System_String_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA384.VerifyHashFromHashesFile(System.String,System.String,System.String)
-  name.vb: VerifyHashFromHashesFile(String, String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.VerifyHashFromHashesFile(string, string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA384.VerifyHashFromHashesFile(String, String, String)
-  nameWithType: SHA384.VerifyHashFromHashesFile(string, string, string)
-  nameWithType.vb: SHA384.VerifyHashFromHashesFile(String, String, String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.VerifyHashFromHashesFile*
-  name: VerifyHashFromHashesFile
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_VerifyHashFromHashesFile_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA384.VerifyHashFromHashesFile
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.VerifyHashFromHashesFile
-  nameWithType: SHA384.VerifyHashFromHashesFile
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.VerifyUncalculatedHashFromHash(System.String,System.String)
-  name: VerifyUncalculatedHashFromHash(string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_VerifyUncalculatedHashFromHash_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA384.VerifyUncalculatedHashFromHash(System.String,System.String)
-  name.vb: VerifyUncalculatedHashFromHash(String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.VerifyUncalculatedHashFromHash(string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA384.VerifyUncalculatedHashFromHash(String, String)
-  nameWithType: SHA384.VerifyUncalculatedHashFromHash(string, string)
-  nameWithType.vb: SHA384.VerifyUncalculatedHashFromHash(String, String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.VerifyUncalculatedHashFromHash*
-  name: VerifyUncalculatedHashFromHash
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_VerifyUncalculatedHashFromHash_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA384.VerifyUncalculatedHashFromHash
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.VerifyUncalculatedHashFromHash
-  nameWithType: SHA384.VerifyUncalculatedHashFromHash
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
-  name: VerifyUncalculatedHashFromHashesFile(string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_VerifyUncalculatedHashFromHashesFile_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA384.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
-  name.vb: VerifyUncalculatedHashFromHashesFile(String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.VerifyUncalculatedHashFromHashesFile(string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA384.VerifyUncalculatedHashFromHashesFile(String, String)
-  nameWithType: SHA384.VerifyUncalculatedHashFromHashesFile(string, string)
-  nameWithType.vb: SHA384.VerifyUncalculatedHashFromHashesFile(String, String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA384.VerifyUncalculatedHashFromHashesFile*
-  name: VerifyUncalculatedHashFromHashesFile
-  href: api/KS.Drivers.Encryption.Encryptors.SHA384.html#KS_Drivers_Encryption_Encryptors_SHA384_VerifyUncalculatedHashFromHashesFile_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA384.VerifyUncalculatedHashFromHashesFile
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA384.VerifyUncalculatedHashFromHashesFile
-  nameWithType: SHA384.VerifyUncalculatedHashFromHashesFile
-- uid: KS.Drivers.Encryption.Encryptors.SHA512
-  name: SHA512
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html
-  commentId: T:KS.Drivers.Encryption.Encryptors.SHA512
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512
-  nameWithType: SHA512
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.DriverName
-  name: DriverName
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_DriverName
-  commentId: P:KS.Drivers.Encryption.Encryptors.SHA512.DriverName
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.DriverName
-  nameWithType: SHA512.DriverName
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.DriverName*
-  name: DriverName
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_DriverName_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA512.DriverName
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.DriverName
-  nameWithType: SHA512.DriverName
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.DriverType
-  name: DriverType
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_DriverType
-  commentId: P:KS.Drivers.Encryption.Encryptors.SHA512.DriverType
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.DriverType
-  nameWithType: SHA512.DriverType
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.DriverType*
-  name: DriverType
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_DriverType_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA512.DriverType
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.DriverType
-  nameWithType: SHA512.DriverType
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.EmptyHash
-  name: EmptyHash
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_EmptyHash
-  commentId: P:KS.Drivers.Encryption.Encryptors.SHA512.EmptyHash
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.EmptyHash
-  nameWithType: SHA512.EmptyHash
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.EmptyHash*
-  name: EmptyHash
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_EmptyHash_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA512.EmptyHash
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.EmptyHash
-  nameWithType: SHA512.EmptyHash
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedFile(System.IO.Stream)
-  name: GetEncryptedFile(Stream)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_GetEncryptedFile_System_IO_Stream_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedFile(System.IO.Stream)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedFile(System.IO.Stream)
-  nameWithType: SHA512.GetEncryptedFile(Stream)
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedFile(System.String)
-  name: GetEncryptedFile(string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_GetEncryptedFile_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedFile(System.String)
-  name.vb: GetEncryptedFile(String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedFile(string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedFile(String)
-  nameWithType: SHA512.GetEncryptedFile(string)
-  nameWithType.vb: SHA512.GetEncryptedFile(String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedFile*
-  name: GetEncryptedFile
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_GetEncryptedFile_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedFile
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedFile
-  nameWithType: SHA512.GetEncryptedFile
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedString(System.String)
-  name: GetEncryptedString(string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_GetEncryptedString_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedString(System.String)
-  name.vb: GetEncryptedString(String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedString(string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedString(String)
-  nameWithType: SHA512.GetEncryptedString(string)
-  nameWithType.vb: SHA512.GetEncryptedString(String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedString*
-  name: GetEncryptedString
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_GetEncryptedString_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedString
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.GetEncryptedString
-  nameWithType: SHA512.GetEncryptedString
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.HashLength
-  name: HashLength
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_HashLength
-  commentId: P:KS.Drivers.Encryption.Encryptors.SHA512.HashLength
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.HashLength
-  nameWithType: SHA512.HashLength
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.HashLength*
-  name: HashLength
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_HashLength_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA512.HashLength
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.HashLength
-  nameWithType: SHA512.HashLength
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.HashRegex
-  name: HashRegex
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_HashRegex
-  commentId: P:KS.Drivers.Encryption.Encryptors.SHA512.HashRegex
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.HashRegex
-  nameWithType: SHA512.HashRegex
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.HashRegex*
-  name: HashRegex
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_HashRegex_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA512.HashRegex
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.HashRegex
-  nameWithType: SHA512.HashRegex
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.VerifyHashFromHash(System.String,System.String,System.String)
-  name: VerifyHashFromHash(string, string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_VerifyHashFromHash_System_String_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA512.VerifyHashFromHash(System.String,System.String,System.String)
-  name.vb: VerifyHashFromHash(String, String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.VerifyHashFromHash(string, string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA512.VerifyHashFromHash(String, String, String)
-  nameWithType: SHA512.VerifyHashFromHash(string, string, string)
-  nameWithType.vb: SHA512.VerifyHashFromHash(String, String, String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.VerifyHashFromHash*
-  name: VerifyHashFromHash
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_VerifyHashFromHash_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA512.VerifyHashFromHash
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.VerifyHashFromHash
-  nameWithType: SHA512.VerifyHashFromHash
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.VerifyHashFromHashesFile(System.String,System.String,System.String)
-  name: VerifyHashFromHashesFile(string, string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_VerifyHashFromHashesFile_System_String_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA512.VerifyHashFromHashesFile(System.String,System.String,System.String)
-  name.vb: VerifyHashFromHashesFile(String, String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.VerifyHashFromHashesFile(string, string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA512.VerifyHashFromHashesFile(String, String, String)
-  nameWithType: SHA512.VerifyHashFromHashesFile(string, string, string)
-  nameWithType.vb: SHA512.VerifyHashFromHashesFile(String, String, String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.VerifyHashFromHashesFile*
-  name: VerifyHashFromHashesFile
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_VerifyHashFromHashesFile_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA512.VerifyHashFromHashesFile
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.VerifyHashFromHashesFile
-  nameWithType: SHA512.VerifyHashFromHashesFile
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.VerifyUncalculatedHashFromHash(System.String,System.String)
-  name: VerifyUncalculatedHashFromHash(string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_VerifyUncalculatedHashFromHash_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA512.VerifyUncalculatedHashFromHash(System.String,System.String)
-  name.vb: VerifyUncalculatedHashFromHash(String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.VerifyUncalculatedHashFromHash(string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA512.VerifyUncalculatedHashFromHash(String, String)
-  nameWithType: SHA512.VerifyUncalculatedHashFromHash(string, string)
-  nameWithType.vb: SHA512.VerifyUncalculatedHashFromHash(String, String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.VerifyUncalculatedHashFromHash*
-  name: VerifyUncalculatedHashFromHash
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_VerifyUncalculatedHashFromHash_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA512.VerifyUncalculatedHashFromHash
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.VerifyUncalculatedHashFromHash
-  nameWithType: SHA512.VerifyUncalculatedHashFromHash
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
-  name: VerifyUncalculatedHashFromHashesFile(string, string)
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_VerifyUncalculatedHashFromHashesFile_System_String_System_String_
-  commentId: M:KS.Drivers.Encryption.Encryptors.SHA512.VerifyUncalculatedHashFromHashesFile(System.String,System.String)
-  name.vb: VerifyUncalculatedHashFromHashesFile(String, String)
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.VerifyUncalculatedHashFromHashesFile(string, string)
-  fullName.vb: KS.Drivers.Encryption.Encryptors.SHA512.VerifyUncalculatedHashFromHashesFile(String, String)
-  nameWithType: SHA512.VerifyUncalculatedHashFromHashesFile(string, string)
-  nameWithType.vb: SHA512.VerifyUncalculatedHashFromHashesFile(String, String)
-- uid: KS.Drivers.Encryption.Encryptors.SHA512.VerifyUncalculatedHashFromHashesFile*
-  name: VerifyUncalculatedHashFromHashesFile
-  href: api/KS.Drivers.Encryption.Encryptors.SHA512.html#KS_Drivers_Encryption_Encryptors_SHA512_VerifyUncalculatedHashFromHashesFile_
-  commentId: Overload:KS.Drivers.Encryption.Encryptors.SHA512.VerifyUncalculatedHashFromHashesFile
-  isSpec: "True"
-  fullName: KS.Drivers.Encryption.Encryptors.SHA512.VerifyUncalculatedHashFromHashesFile
-  nameWithType: SHA512.VerifyUncalculatedHashFromHashesFile
 - uid: KS.Drivers.Encryption.HashVerifier
   name: HashVerifier
   href: api/KS.Drivers.Encryption.HashVerifier.html
