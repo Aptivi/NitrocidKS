@@ -49500,45 +49500,51 @@ references:
   commentId: T:KS.Shell.ShellBase.Commands.HelpSystem
   fullName: KS.Shell.ShellBase.Commands.HelpSystem
   nameWithType: HelpSystem
-- uid: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp
-  name: ShowHelp()
-  href: api/KS.Shell.ShellBase.Commands.HelpSystem.html#KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp
-  commentId: M:KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp
-  fullName: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp()
-  nameWithType: HelpSystem.ShowHelp()
-- uid: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(KS.Shell.ShellBase.Shells.ShellType)
-  name: ShowHelp(ShellType)
-  href: api/KS.Shell.ShellBase.Commands.HelpSystem.html#KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_KS_Shell_ShellBase_Shells_ShellType_
-  commentId: M:KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(KS.Shell.ShellBase.Shells.ShellType)
-  fullName: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(KS.Shell.ShellBase.Shells.ShellType)
-  nameWithType: HelpSystem.ShowHelp(ShellType)
-- uid: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String)
-  name: ShowHelp(string)
-  href: api/KS.Shell.ShellBase.Commands.HelpSystem.html#KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_System_String_
-  commentId: M:KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String)
-  name.vb: ShowHelp(String)
-  fullName: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(string)
-  fullName.vb: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(String)
-  nameWithType: HelpSystem.ShowHelp(string)
-  nameWithType.vb: HelpSystem.ShowHelp(String)
-- uid: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,KS.Shell.ShellBase.Shells.ShellType)
-  name: ShowHelp(string, ShellType)
-  href: api/KS.Shell.ShellBase.Commands.HelpSystem.html#KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_System_String_KS_Shell_ShellBase_Shells_ShellType_
-  commentId: M:KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,KS.Shell.ShellBase.Shells.ShellType)
-  name.vb: ShowHelp(String, ShellType)
-  fullName: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(string, KS.Shell.ShellBase.Shells.ShellType)
-  fullName.vb: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(String, KS.Shell.ShellBase.Shells.ShellType)
-  nameWithType: HelpSystem.ShowHelp(string, ShellType)
-  nameWithType.vb: HelpSystem.ShowHelp(String, ShellType)
-- uid: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,System.String)
-  name: ShowHelp(string, string)
-  href: api/KS.Shell.ShellBase.Commands.HelpSystem.html#KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_System_String_System_String_
-  commentId: M:KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,System.String)
-  name.vb: ShowHelp(String, String)
-  fullName: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(string, string)
-  fullName.vb: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(String, String)
-  nameWithType: HelpSystem.ShowHelp(string, string)
-  nameWithType.vb: HelpSystem.ShowHelp(String, String)
+- uid: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(KS.Shell.ShellBase.Shells.ShellType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name: ShowHelp(ShellType, bool, bool, bool, bool, bool)
+  href: api/KS.Shell.ShellBase.Commands.HelpSystem.html#KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_KS_Shell_ShellBase_Shells_ShellType_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(KS.Shell.ShellBase.Shells.ShellType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name.vb: ShowHelp(ShellType, Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(KS.Shell.ShellBase.Shells.ShellType, bool, bool, bool, bool, bool)
+  fullName.vb: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(KS.Shell.ShellBase.Shells.ShellType, Boolean, Boolean, Boolean, Boolean, Boolean)
+  nameWithType: HelpSystem.ShowHelp(ShellType, bool, bool, bool, bool, bool)
+  nameWithType.vb: HelpSystem.ShowHelp(ShellType, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name: ShowHelp(bool, bool, bool, bool, bool)
+  href: api/KS.Shell.ShellBase.Commands.HelpSystem.html#KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name.vb: ShowHelp(Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(bool, bool, bool, bool, bool)
+  fullName.vb: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(Boolean, Boolean, Boolean, Boolean, Boolean)
+  nameWithType: HelpSystem.ShowHelp(bool, bool, bool, bool, bool)
+  nameWithType.vb: HelpSystem.ShowHelp(Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,KS.Shell.ShellBase.Shells.ShellType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name: ShowHelp(string, ShellType, bool, bool, bool, bool, bool)
+  href: api/KS.Shell.ShellBase.Commands.HelpSystem.html#KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_System_String_KS_Shell_ShellBase_Shells_ShellType_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,KS.Shell.ShellBase.Shells.ShellType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name.vb: ShowHelp(String, ShellType, Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(string, KS.Shell.ShellBase.Shells.ShellType, bool, bool, bool, bool, bool)
+  fullName.vb: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(String, KS.Shell.ShellBase.Shells.ShellType, Boolean, Boolean, Boolean, Boolean, Boolean)
+  nameWithType: HelpSystem.ShowHelp(string, ShellType, bool, bool, bool, bool, bool)
+  nameWithType.vb: HelpSystem.ShowHelp(String, ShellType, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name: ShowHelp(string, bool, bool, bool, bool, bool)
+  href: api/KS.Shell.ShellBase.Commands.HelpSystem.html#KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name.vb: ShowHelp(String, Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(string, bool, bool, bool, bool, bool)
+  fullName.vb: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(String, Boolean, Boolean, Boolean, Boolean, Boolean)
+  nameWithType: HelpSystem.ShowHelp(string, bool, bool, bool, bool, bool)
+  nameWithType.vb: HelpSystem.ShowHelp(String, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name: ShowHelp(string, string, bool, bool, bool, bool, bool)
+  href: api/KS.Shell.ShellBase.Commands.HelpSystem.html#KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_System_String_System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name.vb: ShowHelp(String, String, Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(string, string, bool, bool, bool, bool, bool)
+  fullName.vb: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp(String, String, Boolean, Boolean, Boolean, Boolean, Boolean)
+  nameWithType: HelpSystem.ShowHelp(string, string, bool, bool, bool, bool, bool)
+  nameWithType.vb: HelpSystem.ShowHelp(String, String, Boolean, Boolean, Boolean, Boolean, Boolean)
 - uid: KS.Shell.ShellBase.Commands.HelpSystem.ShowHelp*
   name: ShowHelp
   href: api/KS.Shell.ShellBase.Commands.HelpSystem.html#KS_Shell_ShellBase_Commands_HelpSystem_ShowHelp_
