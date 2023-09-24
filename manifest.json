@@ -5666,6 +5666,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Users.UserFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Users.UserFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Users.UserInfo.yml",
       "output": {
         ".html": {

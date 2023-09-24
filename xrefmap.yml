@@ -55210,6 +55210,36 @@ references:
   isSpec: "True"
   fullName: KS.Users.Settings.UserCustomSettingsManager.RemoveSettingsEntryFromUser
   nameWithType: UserCustomSettingsManager.RemoveSettingsEntryFromUser
+- uid: KS.Users.UserFlags
+  name: UserFlags
+  href: api/KS.Users.UserFlags.html
+  commentId: T:KS.Users.UserFlags
+  fullName: KS.Users.UserFlags
+  nameWithType: UserFlags
+- uid: KS.Users.UserFlags.Administrator
+  name: Administrator
+  href: api/KS.Users.UserFlags.html#KS_Users_UserFlags_Administrator
+  commentId: F:KS.Users.UserFlags.Administrator
+  fullName: KS.Users.UserFlags.Administrator
+  nameWithType: UserFlags.Administrator
+- uid: KS.Users.UserFlags.Anonymous
+  name: Anonymous
+  href: api/KS.Users.UserFlags.html#KS_Users_UserFlags_Anonymous
+  commentId: F:KS.Users.UserFlags.Anonymous
+  fullName: KS.Users.UserFlags.Anonymous
+  nameWithType: UserFlags.Anonymous
+- uid: KS.Users.UserFlags.Disabled
+  name: Disabled
+  href: api/KS.Users.UserFlags.html#KS_Users_UserFlags_Disabled
+  commentId: F:KS.Users.UserFlags.Disabled
+  fullName: KS.Users.UserFlags.Disabled
+  nameWithType: UserFlags.Disabled
+- uid: KS.Users.UserFlags.None
+  name: None
+  href: api/KS.Users.UserFlags.html#KS_Users_UserFlags_None
+  commentId: F:KS.Users.UserFlags.None
+  fullName: KS.Users.UserFlags.None
+  nameWithType: UserFlags.None
 - uid: KS.Users.UserInfo
   name: UserInfo
   href: api/KS.Users.UserInfo.html

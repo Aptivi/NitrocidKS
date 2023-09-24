@@ -2824,6 +2824,11 @@
     "title": "Namespace KS.Users.Settings | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Users.Settings Classes UserCustomSettingsManager Custom settings manager for users"
   },
+  "api/KS.Users.UserFlags.html": {
+    "href": "api/KS.Users.UserFlags.html",
+    "title": "Enum UserFlags | Nitrocid KS API - Aptivi",
+    "keywords": "Enum UserFlags User flags Namespace: KS.Users Assembly: Nitrocid.dll Syntax public enum UserFlags Fields Name Description Administrator This user is an administrator Anonymous This user is anonymous, meaning that it won't show up in the user list Disabled This user is disabled, meaning that the user can't log in None A normal user"
+  },
   "api/KS.Users.UserInfo.html": {
     "href": "api/KS.Users.UserInfo.html",
     "title": "Class UserInfo | Nitrocid KS API - Aptivi",
@@ -2837,7 +2842,7 @@
   "api/KS.Users.html": {
     "href": "api/KS.Users.html",
     "title": "Namespace KS.Users | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Users Classes UserInfo User information class UserManagement User management module"
+    "keywords": "Namespace KS.Users Classes UserInfo User information class UserManagement User management module Enums UserFlags User flags"
   },
   "index.html": {
     "href": "index.html",
