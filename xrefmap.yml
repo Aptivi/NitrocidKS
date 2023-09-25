@@ -33988,6 +33988,32 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Exceptions.KernelException.ExceptionType
   nameWithType: KernelException.ExceptionType
+- uid: KS.Kernel.Exceptions.KernelException.KernelExceptionMessage
+  name: KernelExceptionMessage
+  href: api/KS.Kernel.Exceptions.KernelException.html#KS_Kernel_Exceptions_KernelException_KernelExceptionMessage
+  commentId: P:KS.Kernel.Exceptions.KernelException.KernelExceptionMessage
+  fullName: KS.Kernel.Exceptions.KernelException.KernelExceptionMessage
+  nameWithType: KernelException.KernelExceptionMessage
+- uid: KS.Kernel.Exceptions.KernelException.KernelExceptionMessage*
+  name: KernelExceptionMessage
+  href: api/KS.Kernel.Exceptions.KernelException.html#KS_Kernel_Exceptions_KernelException_KernelExceptionMessage_
+  commentId: Overload:KS.Kernel.Exceptions.KernelException.KernelExceptionMessage
+  isSpec: "True"
+  fullName: KS.Kernel.Exceptions.KernelException.KernelExceptionMessage
+  nameWithType: KernelException.KernelExceptionMessage
+- uid: KS.Kernel.Exceptions.KernelException.OriginalExceptionMessage
+  name: OriginalExceptionMessage
+  href: api/KS.Kernel.Exceptions.KernelException.html#KS_Kernel_Exceptions_KernelException_OriginalExceptionMessage
+  commentId: P:KS.Kernel.Exceptions.KernelException.OriginalExceptionMessage
+  fullName: KS.Kernel.Exceptions.KernelException.OriginalExceptionMessage
+  nameWithType: KernelException.OriginalExceptionMessage
+- uid: KS.Kernel.Exceptions.KernelException.OriginalExceptionMessage*
+  name: OriginalExceptionMessage
+  href: api/KS.Kernel.Exceptions.KernelException.html#KS_Kernel_Exceptions_KernelException_OriginalExceptionMessage_
+  commentId: Overload:KS.Kernel.Exceptions.KernelException.OriginalExceptionMessage
+  isSpec: "True"
+  fullName: KS.Kernel.Exceptions.KernelException.OriginalExceptionMessage
+  nameWithType: KernelException.OriginalExceptionMessage
 - uid: KS.Kernel.Exceptions.KernelExceptionType
   name: KernelExceptionType
   href: api/KS.Kernel.Exceptions.KernelExceptionType.html
