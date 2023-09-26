@@ -38380,50 +38380,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.BaseScreensaver.ScreensaverSeizureWarning
   nameWithType: BaseScreensaver.ScreensaverSeizureWarning
-- uid: KS.Misc.Screensaver.Customized
-  name: KS.Misc.Screensaver.Customized
-  href: api/KS.Misc.Screensaver.Customized.html
-  commentId: N:KS.Misc.Screensaver.Customized
-  fullName: KS.Misc.Screensaver.Customized
-  nameWithType: KS.Misc.Screensaver.Customized
-- uid: KS.Misc.Screensaver.Customized.CustomSaverTools
-  name: CustomSaverTools
-  href: api/KS.Misc.Screensaver.Customized.CustomSaverTools.html
-  commentId: T:KS.Misc.Screensaver.Customized.CustomSaverTools
-  fullName: KS.Misc.Screensaver.Customized.CustomSaverTools
-  nameWithType: CustomSaverTools
-- uid: KS.Misc.Screensaver.Customized.CustomSaverTools.RegisterCustomScreensaver(System.String,KS.Misc.Screensaver.BaseScreensaver)
-  name: RegisterCustomScreensaver(string, BaseScreensaver)
-  href: api/KS.Misc.Screensaver.Customized.CustomSaverTools.html#KS_Misc_Screensaver_Customized_CustomSaverTools_RegisterCustomScreensaver_System_String_KS_Misc_Screensaver_BaseScreensaver_
-  commentId: M:KS.Misc.Screensaver.Customized.CustomSaverTools.RegisterCustomScreensaver(System.String,KS.Misc.Screensaver.BaseScreensaver)
-  name.vb: RegisterCustomScreensaver(String, BaseScreensaver)
-  fullName: KS.Misc.Screensaver.Customized.CustomSaverTools.RegisterCustomScreensaver(string, KS.Misc.Screensaver.BaseScreensaver)
-  fullName.vb: KS.Misc.Screensaver.Customized.CustomSaverTools.RegisterCustomScreensaver(String, KS.Misc.Screensaver.BaseScreensaver)
-  nameWithType: CustomSaverTools.RegisterCustomScreensaver(string, BaseScreensaver)
-  nameWithType.vb: CustomSaverTools.RegisterCustomScreensaver(String, BaseScreensaver)
-- uid: KS.Misc.Screensaver.Customized.CustomSaverTools.RegisterCustomScreensaver*
-  name: RegisterCustomScreensaver
-  href: api/KS.Misc.Screensaver.Customized.CustomSaverTools.html#KS_Misc_Screensaver_Customized_CustomSaverTools_RegisterCustomScreensaver_
-  commentId: Overload:KS.Misc.Screensaver.Customized.CustomSaverTools.RegisterCustomScreensaver
-  isSpec: "True"
-  fullName: KS.Misc.Screensaver.Customized.CustomSaverTools.RegisterCustomScreensaver
-  nameWithType: CustomSaverTools.RegisterCustomScreensaver
-- uid: KS.Misc.Screensaver.Customized.CustomSaverTools.UnregisterCustomScreensaver(System.String)
-  name: UnregisterCustomScreensaver(string)
-  href: api/KS.Misc.Screensaver.Customized.CustomSaverTools.html#KS_Misc_Screensaver_Customized_CustomSaverTools_UnregisterCustomScreensaver_System_String_
-  commentId: M:KS.Misc.Screensaver.Customized.CustomSaverTools.UnregisterCustomScreensaver(System.String)
-  name.vb: UnregisterCustomScreensaver(String)
-  fullName: KS.Misc.Screensaver.Customized.CustomSaverTools.UnregisterCustomScreensaver(string)
-  fullName.vb: KS.Misc.Screensaver.Customized.CustomSaverTools.UnregisterCustomScreensaver(String)
-  nameWithType: CustomSaverTools.UnregisterCustomScreensaver(string)
-  nameWithType.vb: CustomSaverTools.UnregisterCustomScreensaver(String)
-- uid: KS.Misc.Screensaver.Customized.CustomSaverTools.UnregisterCustomScreensaver*
-  name: UnregisterCustomScreensaver
-  href: api/KS.Misc.Screensaver.Customized.CustomSaverTools.html#KS_Misc_Screensaver_Customized_CustomSaverTools_UnregisterCustomScreensaver_
-  commentId: Overload:KS.Misc.Screensaver.Customized.CustomSaverTools.UnregisterCustomScreensaver
-  isSpec: "True"
-  fullName: KS.Misc.Screensaver.Customized.CustomSaverTools.UnregisterCustomScreensaver
-  nameWithType: CustomSaverTools.UnregisterCustomScreensaver
 - uid: KS.Misc.Screensaver.Displays
   name: KS.Misc.Screensaver.Displays
   href: api/KS.Misc.Screensaver.Displays.html
@@ -38813,6 +38769,22 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.ScreensaverManager.PasswordLock
   nameWithType: ScreensaverManager.PasswordLock
+- uid: KS.Misc.Screensaver.ScreensaverManager.RegisterCustomScreensaver(System.String,KS.Misc.Screensaver.BaseScreensaver)
+  name: RegisterCustomScreensaver(string, BaseScreensaver)
+  href: api/KS.Misc.Screensaver.ScreensaverManager.html#KS_Misc_Screensaver_ScreensaverManager_RegisterCustomScreensaver_System_String_KS_Misc_Screensaver_BaseScreensaver_
+  commentId: M:KS.Misc.Screensaver.ScreensaverManager.RegisterCustomScreensaver(System.String,KS.Misc.Screensaver.BaseScreensaver)
+  name.vb: RegisterCustomScreensaver(String, BaseScreensaver)
+  fullName: KS.Misc.Screensaver.ScreensaverManager.RegisterCustomScreensaver(string, KS.Misc.Screensaver.BaseScreensaver)
+  fullName.vb: KS.Misc.Screensaver.ScreensaverManager.RegisterCustomScreensaver(String, KS.Misc.Screensaver.BaseScreensaver)
+  nameWithType: ScreensaverManager.RegisterCustomScreensaver(string, BaseScreensaver)
+  nameWithType.vb: ScreensaverManager.RegisterCustomScreensaver(String, BaseScreensaver)
+- uid: KS.Misc.Screensaver.ScreensaverManager.RegisterCustomScreensaver*
+  name: RegisterCustomScreensaver
+  href: api/KS.Misc.Screensaver.ScreensaverManager.html#KS_Misc_Screensaver_ScreensaverManager_RegisterCustomScreensaver_
+  commentId: Overload:KS.Misc.Screensaver.ScreensaverManager.RegisterCustomScreensaver
+  isSpec: "True"
+  fullName: KS.Misc.Screensaver.ScreensaverManager.RegisterCustomScreensaver
+  nameWithType: ScreensaverManager.RegisterCustomScreensaver
 - uid: KS.Misc.Screensaver.ScreensaverManager.ScreenTimeout
   name: ScreenTimeout
   href: api/KS.Misc.Screensaver.ScreensaverManager.html#KS_Misc_Screensaver_ScreensaverManager_ScreenTimeout
@@ -38877,6 +38849,22 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Screensaver.ScreensaverManager.ShowSavers
   nameWithType: ScreensaverManager.ShowSavers
+- uid: KS.Misc.Screensaver.ScreensaverManager.UnregisterCustomScreensaver(System.String)
+  name: UnregisterCustomScreensaver(string)
+  href: api/KS.Misc.Screensaver.ScreensaverManager.html#KS_Misc_Screensaver_ScreensaverManager_UnregisterCustomScreensaver_System_String_
+  commentId: M:KS.Misc.Screensaver.ScreensaverManager.UnregisterCustomScreensaver(System.String)
+  name.vb: UnregisterCustomScreensaver(String)
+  fullName: KS.Misc.Screensaver.ScreensaverManager.UnregisterCustomScreensaver(string)
+  fullName.vb: KS.Misc.Screensaver.ScreensaverManager.UnregisterCustomScreensaver(String)
+  nameWithType: ScreensaverManager.UnregisterCustomScreensaver(string)
+  nameWithType.vb: ScreensaverManager.UnregisterCustomScreensaver(String)
+- uid: KS.Misc.Screensaver.ScreensaverManager.UnregisterCustomScreensaver*
+  name: UnregisterCustomScreensaver
+  href: api/KS.Misc.Screensaver.ScreensaverManager.html#KS_Misc_Screensaver_ScreensaverManager_UnregisterCustomScreensaver_
+  commentId: Overload:KS.Misc.Screensaver.ScreensaverManager.UnregisterCustomScreensaver
+  isSpec: "True"
+  fullName: KS.Misc.Screensaver.ScreensaverManager.UnregisterCustomScreensaver
+  nameWithType: ScreensaverManager.UnregisterCustomScreensaver
 - uid: KS.Misc.Splash
   name: KS.Misc.Splash
   href: api/KS.Misc.Splash.html
