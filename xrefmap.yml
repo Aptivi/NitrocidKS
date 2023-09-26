@@ -33776,6 +33776,32 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Events.EventsManager.FireEvent
   nameWithType: EventsManager.FireEvent
+- uid: KS.Kernel.Events.EventsManager.IsEventFound(KS.Kernel.Events.EventType)
+  name: IsEventFound(EventType)
+  href: api/KS.Kernel.Events.EventsManager.html#KS_Kernel_Events_EventsManager_IsEventFound_KS_Kernel_Events_EventType_
+  commentId: M:KS.Kernel.Events.EventsManager.IsEventFound(KS.Kernel.Events.EventType)
+  fullName: KS.Kernel.Events.EventsManager.IsEventFound(KS.Kernel.Events.EventType)
+  nameWithType: EventsManager.IsEventFound(EventType)
+- uid: KS.Kernel.Events.EventsManager.IsEventFound*
+  name: IsEventFound
+  href: api/KS.Kernel.Events.EventsManager.html#KS_Kernel_Events_EventsManager_IsEventFound_
+  commentId: Overload:KS.Kernel.Events.EventsManager.IsEventFound
+  isSpec: "True"
+  fullName: KS.Kernel.Events.EventsManager.IsEventFound
+  nameWithType: EventsManager.IsEventFound
+- uid: KS.Kernel.Events.EventsManager.IsEventHandled(KS.Kernel.Events.EventType)
+  name: IsEventHandled(EventType)
+  href: api/KS.Kernel.Events.EventsManager.html#KS_Kernel_Events_EventsManager_IsEventHandled_KS_Kernel_Events_EventType_
+  commentId: M:KS.Kernel.Events.EventsManager.IsEventHandled(KS.Kernel.Events.EventType)
+  fullName: KS.Kernel.Events.EventsManager.IsEventHandled(KS.Kernel.Events.EventType)
+  nameWithType: EventsManager.IsEventHandled(EventType)
+- uid: KS.Kernel.Events.EventsManager.IsEventHandled*
+  name: IsEventHandled
+  href: api/KS.Kernel.Events.EventsManager.html#KS_Kernel_Events_EventsManager_IsEventHandled_
+  commentId: Overload:KS.Kernel.Events.EventsManager.IsEventHandled
+  isSpec: "True"
+  fullName: KS.Kernel.Events.EventsManager.IsEventHandled
+  nameWithType: EventsManager.IsEventHandled
 - uid: KS.Kernel.Events.EventsManager.ListAllFiredEvents
   name: ListAllFiredEvents()
   href: api/KS.Kernel.Events.EventsManager.html#KS_Kernel_Events_EventsManager_ListAllFiredEvents
