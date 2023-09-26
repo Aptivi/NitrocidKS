@@ -32223,6 +32223,22 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Debugging.DebugWriter.WriteDebugConditional
   nameWithType: DebugWriter.WriteDebugConditional
+- uid: KS.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly(KS.Kernel.Debugging.DebugLevel,System.String,System.Boolean,KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice,System.Object[])
+  name: WriteDebugDeviceOnly(DebugLevel, string, bool, RemoteDebugDevice, params object[])
+  href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_WriteDebugDeviceOnly_KS_Kernel_Debugging_DebugLevel_System_String_System_Boolean_KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_System_Object___
+  commentId: M:KS.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly(KS.Kernel.Debugging.DebugLevel,System.String,System.Boolean,KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice,System.Object[])
+  name.vb: WriteDebugDeviceOnly(DebugLevel, String, Boolean, RemoteDebugDevice, ParamArray Object())
+  fullName: KS.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly(KS.Kernel.Debugging.DebugLevel, string, bool, KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice, params object[])
+  fullName.vb: KS.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly(KS.Kernel.Debugging.DebugLevel, String, Boolean, KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice, ParamArray Object())
+  nameWithType: DebugWriter.WriteDebugDeviceOnly(DebugLevel, string, bool, RemoteDebugDevice, params object[])
+  nameWithType.vb: DebugWriter.WriteDebugDeviceOnly(DebugLevel, String, Boolean, RemoteDebugDevice, ParamArray Object())
+- uid: KS.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly*
+  name: WriteDebugDeviceOnly
+  href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_WriteDebugDeviceOnly_
+  commentId: Overload:KS.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly
+  nameWithType: DebugWriter.WriteDebugDeviceOnly
 - uid: KS.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly(KS.Kernel.Debugging.DebugLevel,System.String,System.Boolean,System.Object[])
   name: WriteDebugDevicesOnly(DebugLevel, string, bool, params object[])
   href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_WriteDebugDevicesOnly_KS_Kernel_Debugging_DebugLevel_System_String_System_Boolean_System_Object___
@@ -32318,15 +32334,15 @@ references:
   commentId: T:KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand
   fullName: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand
   nameWithType: IRemoteDebugCommand
-- uid: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(System.String,System.String[],System.String[],KS.Kernel.Debugging.RemoteDebug.RemoteDebugDeviceInfo)
-  name: Execute(string, string[], string[], RemoteDebugDeviceInfo)
-  href: api/KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.html#KS_Kernel_Debugging_RemoteDebug_Command_IRemoteDebugCommand_Execute_System_String_System_String___System_String___KS_Kernel_Debugging_RemoteDebug_RemoteDebugDeviceInfo_
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(System.String,System.String[],System.String[],KS.Kernel.Debugging.RemoteDebug.RemoteDebugDeviceInfo)
-  name.vb: Execute(String, String(), String(), RemoteDebugDeviceInfo)
-  fullName: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(string, string[], string[], KS.Kernel.Debugging.RemoteDebug.RemoteDebugDeviceInfo)
-  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(String, String(), String(), KS.Kernel.Debugging.RemoteDebug.RemoteDebugDeviceInfo)
-  nameWithType: IRemoteDebugCommand.Execute(string, string[], string[], RemoteDebugDeviceInfo)
-  nameWithType.vb: IRemoteDebugCommand.Execute(String, String(), String(), RemoteDebugDeviceInfo)
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(System.String,System.String[],System.String[],KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  name: Execute(string, string[], string[], RemoteDebugDevice)
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.html#KS_Kernel_Debugging_RemoteDebug_Command_IRemoteDebugCommand_Execute_System_String_System_String___System_String___KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_
+  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(System.String,System.String[],System.String[],KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  name.vb: Execute(String, String(), String(), RemoteDebugDevice)
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(string, string[], string[], KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(String, String(), String(), KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  nameWithType: IRemoteDebugCommand.Execute(string, string[], string[], RemoteDebugDevice)
+  nameWithType.vb: IRemoteDebugCommand.Execute(String, String(), String(), RemoteDebugDevice)
 - uid: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute*
   name: Execute
   href: api/KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.html#KS_Kernel_Debugging_RemoteDebug_Command_IRemoteDebugCommand_Execute_
@@ -32353,15 +32369,15 @@ references:
   commentId: T:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand
   fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand
   nameWithType: RemoteDebugBaseCommand
-- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute(System.String,System.String[],System.String[],KS.Kernel.Debugging.RemoteDebug.RemoteDebugDeviceInfo)
-  name: Execute(string, string[], string[], RemoteDebugDeviceInfo)
-  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugBaseCommand_Execute_System_String_System_String___System_String___KS_Kernel_Debugging_RemoteDebug_RemoteDebugDeviceInfo_
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute(System.String,System.String[],System.String[],KS.Kernel.Debugging.RemoteDebug.RemoteDebugDeviceInfo)
-  name.vb: Execute(String, String(), String(), RemoteDebugDeviceInfo)
-  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute(string, string[], string[], KS.Kernel.Debugging.RemoteDebug.RemoteDebugDeviceInfo)
-  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute(String, String(), String(), KS.Kernel.Debugging.RemoteDebug.RemoteDebugDeviceInfo)
-  nameWithType: RemoteDebugBaseCommand.Execute(string, string[], string[], RemoteDebugDeviceInfo)
-  nameWithType.vb: RemoteDebugBaseCommand.Execute(String, String(), String(), RemoteDebugDeviceInfo)
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute(System.String,System.String[],System.String[],KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  name: Execute(string, string[], string[], RemoteDebugDevice)
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugBaseCommand_Execute_System_String_System_String___System_String___KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_
+  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute(System.String,System.String[],System.String[],KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  name.vb: Execute(String, String(), String(), RemoteDebugDevice)
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute(string, string[], string[], KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute(String, String(), String(), KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  nameWithType: RemoteDebugBaseCommand.Execute(string, string[], string[], RemoteDebugDevice)
+  nameWithType.vb: RemoteDebugBaseCommand.Execute(String, String(), String(), RemoteDebugDevice)
 - uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute*
   name: Execute
   href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugBaseCommand_Execute_
@@ -32560,21 +32576,21 @@ references:
   commentId: T:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem
   fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem
   nameWithType: RemoteDebugHelpSystem
-- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp
-  name: ShowHelp()
-  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugHelpSystem_ShowHelp
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp
-  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp()
-  nameWithType: RemoteDebugHelpSystem.ShowHelp()
-- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(System.String)
-  name: ShowHelp(string)
-  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugHelpSystem_ShowHelp_System_String_
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(System.String)
-  name.vb: ShowHelp(String)
-  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(string)
-  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(String)
-  nameWithType: RemoteDebugHelpSystem.ShowHelp(string)
-  nameWithType.vb: RemoteDebugHelpSystem.ShowHelp(String)
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  name: ShowHelp(RemoteDebugDevice)
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugHelpSystem_ShowHelp_KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_
+  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  nameWithType: RemoteDebugHelpSystem.ShowHelp(RemoteDebugDevice)
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(System.String,KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  name: ShowHelp(string, RemoteDebugDevice)
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugHelpSystem_ShowHelp_System_String_KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_
+  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(System.String,KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  name.vb: ShowHelp(String, RemoteDebugDevice)
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(string, KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(String, KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  nameWithType: RemoteDebugHelpSystem.ShowHelp(string, RemoteDebugDevice)
+  nameWithType.vb: RemoteDebugHelpSystem.ShowHelp(String, RemoteDebugDevice)
 - uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp*
   name: ShowHelp
   href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugHelpSystem_ShowHelp_
