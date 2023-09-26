@@ -36938,22 +36938,6 @@ references:
   isSpec: "True"
   fullName: KS.Languages.LanguageManager.ListLanguages
   nameWithType: LanguageManager.ListLanguages
-- uid: KS.Languages.LanguageManager.PromptForSetLang(System.String,System.Boolean,System.Boolean,System.Boolean)
-  name: PromptForSetLang(string, bool, bool, bool)
-  href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_PromptForSetLang_System_String_System_Boolean_System_Boolean_System_Boolean_
-  commentId: M:KS.Languages.LanguageManager.PromptForSetLang(System.String,System.Boolean,System.Boolean,System.Boolean)
-  name.vb: PromptForSetLang(String, Boolean, Boolean, Boolean)
-  fullName: KS.Languages.LanguageManager.PromptForSetLang(string, bool, bool, bool)
-  fullName.vb: KS.Languages.LanguageManager.PromptForSetLang(String, Boolean, Boolean, Boolean)
-  nameWithType: LanguageManager.PromptForSetLang(string, bool, bool, bool)
-  nameWithType.vb: LanguageManager.PromptForSetLang(String, Boolean, Boolean, Boolean)
-- uid: KS.Languages.LanguageManager.PromptForSetLang*
-  name: PromptForSetLang
-  href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_PromptForSetLang_
-  commentId: Overload:KS.Languages.LanguageManager.PromptForSetLang
-  isSpec: "True"
-  fullName: KS.Languages.LanguageManager.PromptForSetLang
-  nameWithType: LanguageManager.PromptForSetLang
 - uid: KS.Languages.LanguageManager.SetCodepage
   name: SetCodepage
   href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_SetCodepage
