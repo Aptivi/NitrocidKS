@@ -18481,6 +18481,32 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.ConfigTools.GetValueFromEntry
   nameWithType: ConfigTools.GetValueFromEntry
+- uid: KS.Kernel.Configuration.ConfigTools.IsCustomSettingRegistered
+  name: IsCustomSettingRegistered()
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_IsCustomSettingRegistered
+  commentId: M:KS.Kernel.Configuration.ConfigTools.IsCustomSettingRegistered
+  fullName: KS.Kernel.Configuration.ConfigTools.IsCustomSettingRegistered()
+  nameWithType: ConfigTools.IsCustomSettingRegistered()
+- uid: KS.Kernel.Configuration.ConfigTools.IsCustomSettingRegistered*
+  name: IsCustomSettingRegistered
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_IsCustomSettingRegistered_
+  commentId: Overload:KS.Kernel.Configuration.ConfigTools.IsCustomSettingRegistered
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.ConfigTools.IsCustomSettingRegistered
+  nameWithType: ConfigTools.IsCustomSettingRegistered
+- uid: KS.Kernel.Configuration.ConfigTools.RegisterCustomSetting
+  name: RegisterCustomSetting()
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_RegisterCustomSetting
+  commentId: M:KS.Kernel.Configuration.ConfigTools.RegisterCustomSetting
+  fullName: KS.Kernel.Configuration.ConfigTools.RegisterCustomSetting()
+  nameWithType: ConfigTools.RegisterCustomSetting()
+- uid: KS.Kernel.Configuration.ConfigTools.RegisterCustomSetting*
+  name: RegisterCustomSetting
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_RegisterCustomSetting_
+  commentId: Overload:KS.Kernel.Configuration.ConfigTools.RegisterCustomSetting
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.ConfigTools.RegisterCustomSetting
+  nameWithType: ConfigTools.RegisterCustomSetting
 - uid: KS.Kernel.Configuration.ConfigTools.ReloadConfig
   name: ReloadConfig()
   href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_ReloadConfig
@@ -18507,6 +18533,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.ConfigTools.TryReloadConfig
   nameWithType: ConfigTools.TryReloadConfig
+- uid: KS.Kernel.Configuration.ConfigTools.UnregisterCustomSetting
+  name: UnregisterCustomSetting()
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_UnregisterCustomSetting
+  commentId: M:KS.Kernel.Configuration.ConfigTools.UnregisterCustomSetting
+  fullName: KS.Kernel.Configuration.ConfigTools.UnregisterCustomSetting()
+  nameWithType: ConfigTools.UnregisterCustomSetting()
+- uid: KS.Kernel.Configuration.ConfigTools.UnregisterCustomSetting*
+  name: UnregisterCustomSetting
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_UnregisterCustomSetting_
+  commentId: Overload:KS.Kernel.Configuration.ConfigTools.UnregisterCustomSetting
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.ConfigTools.UnregisterCustomSetting
+  nameWithType: ConfigTools.UnregisterCustomSetting
 - uid: KS.Kernel.Configuration.ConfigType
   name: ConfigType
   href: api/KS.Kernel.Configuration.ConfigType.html
