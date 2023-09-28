@@ -105,19 +105,19 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Shell_ShellBase_Commands_BaseCommand_Execute_System_String_System_String___System_String_System_String___System_String___System_String__.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Commands.BaseCommand.Execute(System.String%2CSystem.String%5B%5D%2CSystem.String%2CSystem.String%5B%5D%2CSystem.String%5B%5D%2CSystem.String%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Shell_ShellBase_Commands_BaseCommand_Execute_KS_Shell_ShellBase_Commands_CommandParameters_System_String__.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Commands.BaseCommand.Execute(KS.Shell.ShellBase.Commands.CommandParameters%2CSystem.String%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Shell/ShellBase/Commands/BaseCommand.cs/#L40">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Shell/ShellBase/Commands/BaseCommand.cs/#L36">View Source</a>
   </span>
   <a id="KS_Shell_ShellBase_Commands_BaseCommand_Execute_" data-uid="KS.Shell.ShellBase.Commands.BaseCommand.Execute*"></a>
-  <h4 id="KS_Shell_ShellBase_Commands_BaseCommand_Execute_System_String_System_String___System_String_System_String___System_String___System_String__" data-uid="KS.Shell.ShellBase.Commands.BaseCommand.Execute(System.String,System.String[],System.String,System.String[],System.String[],System.String@)">Execute(string, string[], string, string[], string[], ref string)</h4>
+  <h4 id="KS_Shell_ShellBase_Commands_BaseCommand_Execute_KS_Shell_ShellBase_Commands_CommandParameters_System_String__" data-uid="KS.Shell.ShellBase.Commands.BaseCommand.Execute(KS.Shell.ShellBase.Commands.CommandParameters,System.String@)">Execute(CommandParameters, ref string)</h4>
   <div class="markdown level1 summary"><p>Executes a command</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual int Execute(string StringArgs, string[] ListArgsOnly, string StringArgsOrig, string[] ListArgsOnlyOrig, string[] ListSwitchesOnly, ref string variableValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual int Execute(CommandParameters parameters, ref string variableValue)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -130,33 +130,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">StringArgs</span></td>
-        <td><p>String of arguments</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
-        <td><span class="parametername">ListArgsOnly</span></td>
-        <td><p>List of all arguments</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">StringArgsOrig</span></td>
-        <td><p>Arguments in a string (original)</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
-        <td><span class="parametername">ListArgsOnlyOrig</span></td>
-        <td><p>List of provided arguments (original)</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
-        <td><span class="parametername">ListSwitchesOnly</span></td>
-        <td><p>List of all switches</p>
+        <td><a class="xref" href="KS.Shell.ShellBase.Commands.CommandParameters.html">CommandParameters</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Command parameters including passed arguments and switches information</p>
 </td>
       </tr>
       <tr>
@@ -185,19 +161,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Shell_ShellBase_Commands_BaseCommand_ExecuteDumb_System_String_System_String___System_String_System_String___System_String___System_String__.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Commands.BaseCommand.ExecuteDumb(System.String%2CSystem.String%5B%5D%2CSystem.String%2CSystem.String%5B%5D%2CSystem.String%5B%5D%2CSystem.String%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Shell_ShellBase_Commands_BaseCommand_ExecuteDumb_KS_Shell_ShellBase_Commands_CommandParameters_System_String__.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Commands.BaseCommand.ExecuteDumb(KS.Shell.ShellBase.Commands.CommandParameters%2CSystem.String%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Shell/ShellBase/Commands/BaseCommand.cs/#L56">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Shell/ShellBase/Commands/BaseCommand.cs/#L48">View Source</a>
   </span>
   <a id="KS_Shell_ShellBase_Commands_BaseCommand_ExecuteDumb_" data-uid="KS.Shell.ShellBase.Commands.BaseCommand.ExecuteDumb*"></a>
-  <h4 id="KS_Shell_ShellBase_Commands_BaseCommand_ExecuteDumb_System_String_System_String___System_String_System_String___System_String___System_String__" data-uid="KS.Shell.ShellBase.Commands.BaseCommand.ExecuteDumb(System.String,System.String[],System.String,System.String[],System.String[],System.String@)">ExecuteDumb(string, string[], string, string[], string[], ref string)</h4>
+  <h4 id="KS_Shell_ShellBase_Commands_BaseCommand_ExecuteDumb_KS_Shell_ShellBase_Commands_CommandParameters_System_String__" data-uid="KS.Shell.ShellBase.Commands.BaseCommand.ExecuteDumb(KS.Shell.ShellBase.Commands.CommandParameters,System.String@)">ExecuteDumb(CommandParameters, ref string)</h4>
   <div class="markdown level1 summary"><p>Executes a command on dumb consoles</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual int ExecuteDumb(string StringArgs, string[] ListArgsOnly, string StringArgsOrig, string[] ListArgsOnlyOrig, string[] ListSwitchesOnly, ref string variableValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual int ExecuteDumb(CommandParameters parameters, ref string variableValue)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -210,33 +186,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">StringArgs</span></td>
-        <td><p>String of arguments</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
-        <td><span class="parametername">ListArgsOnly</span></td>
-        <td><p>List of all arguments</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">StringArgsOrig</span></td>
-        <td><p>Arguments in a string (original)</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
-        <td><span class="parametername">ListArgsOnlyOrig</span></td>
-        <td><p>List of provided arguments (original)</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
-        <td><span class="parametername">ListSwitchesOnly</span></td>
-        <td><p>List of all switches</p>
+        <td><a class="xref" href="KS.Shell.ShellBase.Commands.CommandParameters.html">CommandParameters</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Command parameters including passed arguments and switches information</p>
 </td>
       </tr>
       <tr>
@@ -268,7 +220,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Shell_ShellBase_Commands_BaseCommand_HelpHelper.md&amp;value=---%0Auid%3A%20KS.Shell.ShellBase.Commands.BaseCommand.HelpHelper%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Shell/ShellBase/Commands/BaseCommand.cs/#L62">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Shell/ShellBase/Commands/BaseCommand.cs/#L54">View Source</a>
   </span>
   <a id="KS_Shell_ShellBase_Commands_BaseCommand_HelpHelper_" data-uid="KS.Shell.ShellBase.Commands.BaseCommand.HelpHelper*"></a>
   <h4 id="KS_Shell_ShellBase_Commands_BaseCommand_HelpHelper" data-uid="KS.Shell.ShellBase.Commands.BaseCommand.HelpHelper">HelpHelper()</h4>
