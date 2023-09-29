@@ -101,19 +101,19 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp_OpenKey_System_String_System_Int32_Newtonsoft_Json_Linq_JToken_KS_Kernel_Configuration_ConfigType_.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(System.String%2CSystem.Int32%2CNewtonsoft.Json.Linq.JToken%2CKS.Kernel.Configuration.ConfigType)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp_OpenKey_System_Int32_KS_Kernel_Configuration_Settings_SettingsEntry_KS_Kernel_Configuration_ConfigType_.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(System.Int32%2CKS.Kernel.Configuration.Settings.SettingsEntry%2CKS.Kernel.Configuration.ConfigType)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L360">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L358">View Source</a>
   </span>
   <a id="KS_Kernel_Configuration_Settings_SettingsApp_OpenKey_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenKey*"></a>
-  <h4 id="KS_Kernel_Configuration_Settings_SettingsApp_OpenKey_System_String_System_Int32_Newtonsoft_Json_Linq_JToken_KS_Kernel_Configuration_ConfigType_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(System.String,System.Int32,Newtonsoft.Json.Linq.JToken,KS.Kernel.Configuration.ConfigType)">OpenKey(string, int, JToken, ConfigType)</h4>
+  <h4 id="KS_Kernel_Configuration_Settings_SettingsApp_OpenKey_System_Int32_KS_Kernel_Configuration_Settings_SettingsEntry_KS_Kernel_Configuration_ConfigType_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(System.Int32,KS.Kernel.Configuration.Settings.SettingsEntry,KS.Kernel.Configuration.ConfigType)">OpenKey(int, SettingsEntry, ConfigType)</h4>
   <div class="markdown level1 summary"><p>Open a key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OpenKey(string Section, int KeyNumber, JToken SettingsToken, ConfigType SettingsType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void OpenKey(int KeyNumber, SettingsEntry SettingsSection, ConfigType SettingsType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -126,20 +126,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">Section</span></td>
-        <td><p>Section</p>
-</td>
-      </tr>
-      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">KeyNumber</span></td>
         <td><p>Key number</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">JToken</span></td>
-        <td><span class="parametername">SettingsToken</span></td>
+        <td><a class="xref" href="KS.Kernel.Configuration.Settings.SettingsEntry.html">SettingsEntry</a></td>
+        <td><span class="parametername">SettingsSection</span></td>
         <td><p>Settings token</p>
 </td>
       </tr>
@@ -186,19 +180,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp_OpenSection_System_String_Newtonsoft_Json_Linq_JToken_KS_Kernel_Configuration_ConfigType_.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(System.String%2CNewtonsoft.Json.Linq.JToken%2CKS.Kernel.Configuration.ConfigType)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp_OpenSection_System_String_KS_Kernel_Configuration_Settings_SettingsEntry_KS_Kernel_Configuration_ConfigType_.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(System.String%2CKS.Kernel.Configuration.Settings.SettingsEntry%2CKS.Kernel.Configuration.ConfigType)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L216">View Source</a>
   </span>
   <a id="KS_Kernel_Configuration_Settings_SettingsApp_OpenSection_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenSection*"></a>
-  <h4 id="KS_Kernel_Configuration_Settings_SettingsApp_OpenSection_System_String_Newtonsoft_Json_Linq_JToken_KS_Kernel_Configuration_ConfigType_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(System.String,Newtonsoft.Json.Linq.JToken,KS.Kernel.Configuration.ConfigType)">OpenSection(string, JToken, ConfigType)</h4>
+  <h4 id="KS_Kernel_Configuration_Settings_SettingsApp_OpenSection_System_String_KS_Kernel_Configuration_Settings_SettingsEntry_KS_Kernel_Configuration_ConfigType_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(System.String,KS.Kernel.Configuration.Settings.SettingsEntry,KS.Kernel.Configuration.ConfigType)">OpenSection(string, SettingsEntry, ConfigType)</h4>
   <div class="markdown level1 summary"><p>Open section</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OpenSection(string Section, JToken SettingsToken, ConfigType SettingsType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void OpenSection(string Section, SettingsEntry SettingsSection, ConfigType SettingsType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -217,9 +211,9 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">JToken</span></td>
-        <td><span class="parametername">SettingsToken</span></td>
-        <td><p>Settings token</p>
+        <td><a class="xref" href="KS.Kernel.Configuration.Settings.SettingsEntry.html">SettingsEntry</a></td>
+        <td><span class="parametername">SettingsSection</span></td>
+        <td><p>Settings section entry</p>
 </td>
       </tr>
       <tr>
@@ -232,19 +226,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp_VariableFinder_Newtonsoft_Json_Linq_JToken_KS_Kernel_Configuration_ConfigType_.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder(Newtonsoft.Json.Linq.JToken%2CKS.Kernel.Configuration.ConfigType)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp_VariableFinder_KS_Kernel_Configuration_Settings_SettingsEntry___KS_Kernel_Configuration_ConfigType_.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder(KS.Kernel.Configuration.Settings.SettingsEntry%5B%5D%2CKS.Kernel.Configuration.ConfigType)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L882">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L880">View Source</a>
   </span>
   <a id="KS_Kernel_Configuration_Settings_SettingsApp_VariableFinder_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder*"></a>
-  <h4 id="KS_Kernel_Configuration_Settings_SettingsApp_VariableFinder_Newtonsoft_Json_Linq_JToken_KS_Kernel_Configuration_ConfigType_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder(Newtonsoft.Json.Linq.JToken,KS.Kernel.Configuration.ConfigType)">VariableFinder(JToken, ConfigType)</h4>
+  <h4 id="KS_Kernel_Configuration_Settings_SettingsApp_VariableFinder_KS_Kernel_Configuration_Settings_SettingsEntry___KS_Kernel_Configuration_ConfigType_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder(KS.Kernel.Configuration.Settings.SettingsEntry[],KS.Kernel.Configuration.ConfigType)">VariableFinder(SettingsEntry[], ConfigType)</h4>
   <div class="markdown level1 summary"><p>A sub for variable finding prompt</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void VariableFinder(JToken SettingsToken, ConfigType SettingsType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void VariableFinder(SettingsEntry[] SettingsEntries, ConfigType SettingsType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -257,8 +251,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">JToken</span></td>
-        <td><span class="parametername">SettingsToken</span></td>
+        <td><a class="xref" href="KS.Kernel.Configuration.Settings.SettingsEntry.html">SettingsEntry</a>[]</td>
+        <td><span class="parametername">SettingsEntries</span></td>
         <td></td>
       </tr>
       <tr>

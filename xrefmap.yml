@@ -18774,15 +18774,15 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.ConfigTools.CheckConfigVariables
   nameWithType: ConfigTools.CheckConfigVariables
-- uid: KS.Kernel.Configuration.ConfigTools.FindSetting(System.String,Newtonsoft.Json.Linq.JToken,KS.Kernel.Configuration.ConfigType)
-  name: FindSetting(string, JToken, ConfigType)
-  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_FindSetting_System_String_Newtonsoft_Json_Linq_JToken_KS_Kernel_Configuration_ConfigType_
-  commentId: M:KS.Kernel.Configuration.ConfigTools.FindSetting(System.String,Newtonsoft.Json.Linq.JToken,KS.Kernel.Configuration.ConfigType)
-  name.vb: FindSetting(String, JToken, ConfigType)
-  fullName: KS.Kernel.Configuration.ConfigTools.FindSetting(string, Newtonsoft.Json.Linq.JToken, KS.Kernel.Configuration.ConfigType)
-  fullName.vb: KS.Kernel.Configuration.ConfigTools.FindSetting(String, Newtonsoft.Json.Linq.JToken, KS.Kernel.Configuration.ConfigType)
-  nameWithType: ConfigTools.FindSetting(string, JToken, ConfigType)
-  nameWithType.vb: ConfigTools.FindSetting(String, JToken, ConfigType)
+- uid: KS.Kernel.Configuration.ConfigTools.FindSetting(System.String,KS.Kernel.Configuration.Settings.SettingsEntry[],KS.Kernel.Configuration.ConfigType)
+  name: FindSetting(string, SettingsEntry[], ConfigType)
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_FindSetting_System_String_KS_Kernel_Configuration_Settings_SettingsEntry___KS_Kernel_Configuration_ConfigType_
+  commentId: M:KS.Kernel.Configuration.ConfigTools.FindSetting(System.String,KS.Kernel.Configuration.Settings.SettingsEntry[],KS.Kernel.Configuration.ConfigType)
+  name.vb: FindSetting(String, SettingsEntry(), ConfigType)
+  fullName: KS.Kernel.Configuration.ConfigTools.FindSetting(string, KS.Kernel.Configuration.Settings.SettingsEntry[], KS.Kernel.Configuration.ConfigType)
+  fullName.vb: KS.Kernel.Configuration.ConfigTools.FindSetting(String, KS.Kernel.Configuration.Settings.SettingsEntry(), KS.Kernel.Configuration.ConfigType)
+  nameWithType: ConfigTools.FindSetting(string, SettingsEntry[], ConfigType)
+  nameWithType.vb: ConfigTools.FindSetting(String, SettingsEntry(), ConfigType)
 - uid: KS.Kernel.Configuration.ConfigTools.FindSetting*
   name: FindSetting
   href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_FindSetting_
@@ -18790,12 +18790,12 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.ConfigTools.FindSetting
   nameWithType: ConfigTools.FindSetting
-- uid: KS.Kernel.Configuration.ConfigTools.GetValueFromEntry(Newtonsoft.Json.Linq.JToken,KS.Kernel.Configuration.ConfigType)
-  name: GetValueFromEntry(JToken, ConfigType)
-  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_GetValueFromEntry_Newtonsoft_Json_Linq_JToken_KS_Kernel_Configuration_ConfigType_
-  commentId: M:KS.Kernel.Configuration.ConfigTools.GetValueFromEntry(Newtonsoft.Json.Linq.JToken,KS.Kernel.Configuration.ConfigType)
-  fullName: KS.Kernel.Configuration.ConfigTools.GetValueFromEntry(Newtonsoft.Json.Linq.JToken, KS.Kernel.Configuration.ConfigType)
-  nameWithType: ConfigTools.GetValueFromEntry(JToken, ConfigType)
+- uid: KS.Kernel.Configuration.ConfigTools.GetValueFromEntry(KS.Kernel.Configuration.Settings.SettingsKey,KS.Kernel.Configuration.ConfigType)
+  name: GetValueFromEntry(SettingsKey, ConfigType)
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_GetValueFromEntry_KS_Kernel_Configuration_Settings_SettingsKey_KS_Kernel_Configuration_ConfigType_
+  commentId: M:KS.Kernel.Configuration.ConfigTools.GetValueFromEntry(KS.Kernel.Configuration.Settings.SettingsKey,KS.Kernel.Configuration.ConfigType)
+  fullName: KS.Kernel.Configuration.ConfigTools.GetValueFromEntry(KS.Kernel.Configuration.Settings.SettingsKey, KS.Kernel.Configuration.ConfigType)
+  nameWithType: ConfigTools.GetValueFromEntry(SettingsKey, ConfigType)
 - uid: KS.Kernel.Configuration.ConfigTools.GetValueFromEntry*
   name: GetValueFromEntry
   href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_GetValueFromEntry_
@@ -32467,15 +32467,15 @@ references:
   commentId: T:KS.Kernel.Configuration.Settings.SettingsApp
   fullName: KS.Kernel.Configuration.Settings.SettingsApp
   nameWithType: SettingsApp
-- uid: KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(System.String,System.Int32,Newtonsoft.Json.Linq.JToken,KS.Kernel.Configuration.ConfigType)
-  name: OpenKey(string, int, JToken, ConfigType)
-  href: api/KS.Kernel.Configuration.Settings.SettingsApp.html#KS_Kernel_Configuration_Settings_SettingsApp_OpenKey_System_String_System_Int32_Newtonsoft_Json_Linq_JToken_KS_Kernel_Configuration_ConfigType_
-  commentId: M:KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(System.String,System.Int32,Newtonsoft.Json.Linq.JToken,KS.Kernel.Configuration.ConfigType)
-  name.vb: OpenKey(String, Integer, JToken, ConfigType)
-  fullName: KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(string, int, Newtonsoft.Json.Linq.JToken, KS.Kernel.Configuration.ConfigType)
-  fullName.vb: KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(String, Integer, Newtonsoft.Json.Linq.JToken, KS.Kernel.Configuration.ConfigType)
-  nameWithType: SettingsApp.OpenKey(string, int, JToken, ConfigType)
-  nameWithType.vb: SettingsApp.OpenKey(String, Integer, JToken, ConfigType)
+- uid: KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(System.Int32,KS.Kernel.Configuration.Settings.SettingsEntry,KS.Kernel.Configuration.ConfigType)
+  name: OpenKey(int, SettingsEntry, ConfigType)
+  href: api/KS.Kernel.Configuration.Settings.SettingsApp.html#KS_Kernel_Configuration_Settings_SettingsApp_OpenKey_System_Int32_KS_Kernel_Configuration_Settings_SettingsEntry_KS_Kernel_Configuration_ConfigType_
+  commentId: M:KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(System.Int32,KS.Kernel.Configuration.Settings.SettingsEntry,KS.Kernel.Configuration.ConfigType)
+  name.vb: OpenKey(Integer, SettingsEntry, ConfigType)
+  fullName: KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(int, KS.Kernel.Configuration.Settings.SettingsEntry, KS.Kernel.Configuration.ConfigType)
+  fullName.vb: KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(Integer, KS.Kernel.Configuration.Settings.SettingsEntry, KS.Kernel.Configuration.ConfigType)
+  nameWithType: SettingsApp.OpenKey(int, SettingsEntry, ConfigType)
+  nameWithType.vb: SettingsApp.OpenKey(Integer, SettingsEntry, ConfigType)
 - uid: KS.Kernel.Configuration.Settings.SettingsApp.OpenKey*
   name: OpenKey
   href: api/KS.Kernel.Configuration.Settings.SettingsApp.html#KS_Kernel_Configuration_Settings_SettingsApp_OpenKey_
@@ -32496,15 +32496,15 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Settings.SettingsApp.OpenMainPage
   nameWithType: SettingsApp.OpenMainPage
-- uid: KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(System.String,Newtonsoft.Json.Linq.JToken,KS.Kernel.Configuration.ConfigType)
-  name: OpenSection(string, JToken, ConfigType)
-  href: api/KS.Kernel.Configuration.Settings.SettingsApp.html#KS_Kernel_Configuration_Settings_SettingsApp_OpenSection_System_String_Newtonsoft_Json_Linq_JToken_KS_Kernel_Configuration_ConfigType_
-  commentId: M:KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(System.String,Newtonsoft.Json.Linq.JToken,KS.Kernel.Configuration.ConfigType)
-  name.vb: OpenSection(String, JToken, ConfigType)
-  fullName: KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(string, Newtonsoft.Json.Linq.JToken, KS.Kernel.Configuration.ConfigType)
-  fullName.vb: KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(String, Newtonsoft.Json.Linq.JToken, KS.Kernel.Configuration.ConfigType)
-  nameWithType: SettingsApp.OpenSection(string, JToken, ConfigType)
-  nameWithType.vb: SettingsApp.OpenSection(String, JToken, ConfigType)
+- uid: KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(System.String,KS.Kernel.Configuration.Settings.SettingsEntry,KS.Kernel.Configuration.ConfigType)
+  name: OpenSection(string, SettingsEntry, ConfigType)
+  href: api/KS.Kernel.Configuration.Settings.SettingsApp.html#KS_Kernel_Configuration_Settings_SettingsApp_OpenSection_System_String_KS_Kernel_Configuration_Settings_SettingsEntry_KS_Kernel_Configuration_ConfigType_
+  commentId: M:KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(System.String,KS.Kernel.Configuration.Settings.SettingsEntry,KS.Kernel.Configuration.ConfigType)
+  name.vb: OpenSection(String, SettingsEntry, ConfigType)
+  fullName: KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(string, KS.Kernel.Configuration.Settings.SettingsEntry, KS.Kernel.Configuration.ConfigType)
+  fullName.vb: KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(String, KS.Kernel.Configuration.Settings.SettingsEntry, KS.Kernel.Configuration.ConfigType)
+  nameWithType: SettingsApp.OpenSection(string, SettingsEntry, ConfigType)
+  nameWithType.vb: SettingsApp.OpenSection(String, SettingsEntry, ConfigType)
 - uid: KS.Kernel.Configuration.Settings.SettingsApp.OpenSection*
   name: OpenSection
   href: api/KS.Kernel.Configuration.Settings.SettingsApp.html#KS_Kernel_Configuration_Settings_SettingsApp_OpenSection_
@@ -32512,12 +32512,15 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Settings.SettingsApp.OpenSection
   nameWithType: SettingsApp.OpenSection
-- uid: KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder(Newtonsoft.Json.Linq.JToken,KS.Kernel.Configuration.ConfigType)
-  name: VariableFinder(JToken, ConfigType)
-  href: api/KS.Kernel.Configuration.Settings.SettingsApp.html#KS_Kernel_Configuration_Settings_SettingsApp_VariableFinder_Newtonsoft_Json_Linq_JToken_KS_Kernel_Configuration_ConfigType_
-  commentId: M:KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder(Newtonsoft.Json.Linq.JToken,KS.Kernel.Configuration.ConfigType)
-  fullName: KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder(Newtonsoft.Json.Linq.JToken, KS.Kernel.Configuration.ConfigType)
-  nameWithType: SettingsApp.VariableFinder(JToken, ConfigType)
+- uid: KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder(KS.Kernel.Configuration.Settings.SettingsEntry[],KS.Kernel.Configuration.ConfigType)
+  name: VariableFinder(SettingsEntry[], ConfigType)
+  href: api/KS.Kernel.Configuration.Settings.SettingsApp.html#KS_Kernel_Configuration_Settings_SettingsApp_VariableFinder_KS_Kernel_Configuration_Settings_SettingsEntry___KS_Kernel_Configuration_ConfigType_
+  commentId: M:KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder(KS.Kernel.Configuration.Settings.SettingsEntry[],KS.Kernel.Configuration.ConfigType)
+  name.vb: VariableFinder(SettingsEntry(), ConfigType)
+  fullName: KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder(KS.Kernel.Configuration.Settings.SettingsEntry[], KS.Kernel.Configuration.ConfigType)
+  fullName.vb: KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder(KS.Kernel.Configuration.Settings.SettingsEntry(), KS.Kernel.Configuration.ConfigType)
+  nameWithType: SettingsApp.VariableFinder(SettingsEntry[], ConfigType)
+  nameWithType.vb: SettingsApp.VariableFinder(SettingsEntry(), ConfigType)
 - uid: KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder*
   name: VariableFinder
   href: api/KS.Kernel.Configuration.Settings.SettingsApp.html#KS_Kernel_Configuration_Settings_SettingsApp_VariableFinder_
@@ -32525,6 +32528,473 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder
   nameWithType: SettingsApp.VariableFinder
+- uid: KS.Kernel.Configuration.Settings.SettingsEntry
+  name: SettingsEntry
+  href: api/KS.Kernel.Configuration.Settings.SettingsEntry.html
+  commentId: T:KS.Kernel.Configuration.Settings.SettingsEntry
+  fullName: KS.Kernel.Configuration.Settings.SettingsEntry
+  nameWithType: SettingsEntry
+- uid: KS.Kernel.Configuration.Settings.SettingsEntry.Desc
+  name: Desc
+  href: api/KS.Kernel.Configuration.Settings.SettingsEntry.html#KS_Kernel_Configuration_Settings_SettingsEntry_Desc
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsEntry.Desc
+  fullName: KS.Kernel.Configuration.Settings.SettingsEntry.Desc
+  nameWithType: SettingsEntry.Desc
+- uid: KS.Kernel.Configuration.Settings.SettingsEntry.Desc*
+  name: Desc
+  href: api/KS.Kernel.Configuration.Settings.SettingsEntry.html#KS_Kernel_Configuration_Settings_SettingsEntry_Desc_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsEntry.Desc
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsEntry.Desc
+  nameWithType: SettingsEntry.Desc
+- uid: KS.Kernel.Configuration.Settings.SettingsEntry.DisplayAs
+  name: DisplayAs
+  href: api/KS.Kernel.Configuration.Settings.SettingsEntry.html#KS_Kernel_Configuration_Settings_SettingsEntry_DisplayAs
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsEntry.DisplayAs
+  fullName: KS.Kernel.Configuration.Settings.SettingsEntry.DisplayAs
+  nameWithType: SettingsEntry.DisplayAs
+- uid: KS.Kernel.Configuration.Settings.SettingsEntry.DisplayAs*
+  name: DisplayAs
+  href: api/KS.Kernel.Configuration.Settings.SettingsEntry.html#KS_Kernel_Configuration_Settings_SettingsEntry_DisplayAs_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsEntry.DisplayAs
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsEntry.DisplayAs
+  nameWithType: SettingsEntry.DisplayAs
+- uid: KS.Kernel.Configuration.Settings.SettingsEntry.Keys
+  name: Keys
+  href: api/KS.Kernel.Configuration.Settings.SettingsEntry.html#KS_Kernel_Configuration_Settings_SettingsEntry_Keys
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsEntry.Keys
+  fullName: KS.Kernel.Configuration.Settings.SettingsEntry.Keys
+  nameWithType: SettingsEntry.Keys
+- uid: KS.Kernel.Configuration.Settings.SettingsEntry.Keys*
+  name: Keys
+  href: api/KS.Kernel.Configuration.Settings.SettingsEntry.html#KS_Kernel_Configuration_Settings_SettingsEntry_Keys_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsEntry.Keys
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsEntry.Keys
+  nameWithType: SettingsEntry.Keys
+- uid: KS.Kernel.Configuration.Settings.SettingsEntry.Name
+  name: Name
+  href: api/KS.Kernel.Configuration.Settings.SettingsEntry.html#KS_Kernel_Configuration_Settings_SettingsEntry_Name
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsEntry.Name
+  fullName: KS.Kernel.Configuration.Settings.SettingsEntry.Name
+  nameWithType: SettingsEntry.Name
+- uid: KS.Kernel.Configuration.Settings.SettingsEntry.Name*
+  name: Name
+  href: api/KS.Kernel.Configuration.Settings.SettingsEntry.html#KS_Kernel_Configuration_Settings_SettingsEntry_Name_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsEntry.Name
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsEntry.Name
+  nameWithType: SettingsEntry.Name
+- uid: KS.Kernel.Configuration.Settings.SettingsEntry.Path
+  name: Path
+  href: api/KS.Kernel.Configuration.Settings.SettingsEntry.html#KS_Kernel_Configuration_Settings_SettingsEntry_Path
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsEntry.Path
+  fullName: KS.Kernel.Configuration.Settings.SettingsEntry.Path
+  nameWithType: SettingsEntry.Path
+- uid: KS.Kernel.Configuration.Settings.SettingsEntry.Path*
+  name: Path
+  href: api/KS.Kernel.Configuration.Settings.SettingsEntry.html#KS_Kernel_Configuration_Settings_SettingsEntry_Path_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsEntry.Path
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsEntry.Path
+  nameWithType: SettingsEntry.Path
+- uid: KS.Kernel.Configuration.Settings.SettingsKey
+  name: SettingsKey
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html
+  commentId: T:KS.Kernel.Configuration.Settings.SettingsKey
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey
+  nameWithType: SettingsKey
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.Delimiter
+  name: Delimiter
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_Delimiter
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.Delimiter
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.Delimiter
+  nameWithType: SettingsKey.Delimiter
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.Delimiter*
+  name: Delimiter
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_Delimiter_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.Delimiter
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.Delimiter
+  nameWithType: SettingsKey.Delimiter
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.DelimiterVariable
+  name: DelimiterVariable
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_DelimiterVariable
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.DelimiterVariable
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.DelimiterVariable
+  nameWithType: SettingsKey.DelimiterVariable
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.DelimiterVariable*
+  name: DelimiterVariable
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_DelimiterVariable_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.DelimiterVariable
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.DelimiterVariable
+  nameWithType: SettingsKey.DelimiterVariable
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.Description
+  name: Description
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_Description
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.Description
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.Description
+  nameWithType: SettingsKey.Description
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.Description*
+  name: Description
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_Description_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.Description
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.Description
+  nameWithType: SettingsKey.Description
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.EnumerableIndex
+  name: EnumerableIndex
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_EnumerableIndex
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.EnumerableIndex
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.EnumerableIndex
+  nameWithType: SettingsKey.EnumerableIndex
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.EnumerableIndex*
+  name: EnumerableIndex
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_EnumerableIndex_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.EnumerableIndex
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.EnumerableIndex
+  nameWithType: SettingsKey.EnumerableIndex
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.Enumeration
+  name: Enumeration
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_Enumeration
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.Enumeration
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.Enumeration
+  nameWithType: SettingsKey.Enumeration
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.Enumeration*
+  name: Enumeration
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_Enumeration_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.Enumeration
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.Enumeration
+  nameWithType: SettingsKey.Enumeration
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.EnumerationAssembly
+  name: EnumerationAssembly
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_EnumerationAssembly
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.EnumerationAssembly
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.EnumerationAssembly
+  nameWithType: SettingsKey.EnumerationAssembly
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.EnumerationAssembly*
+  name: EnumerationAssembly
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_EnumerationAssembly_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.EnumerationAssembly
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.EnumerationAssembly
+  nameWithType: SettingsKey.EnumerationAssembly
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.EnumerationInternal
+  name: EnumerationInternal
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_EnumerationInternal
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.EnumerationInternal
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.EnumerationInternal
+  nameWithType: SettingsKey.EnumerationInternal
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.EnumerationInternal*
+  name: EnumerationInternal
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_EnumerationInternal_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.EnumerationInternal
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.EnumerationInternal
+  nameWithType: SettingsKey.EnumerationInternal
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.EnumerationZeroBased
+  name: EnumerationZeroBased
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_EnumerationZeroBased
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.EnumerationZeroBased
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.EnumerationZeroBased
+  nameWithType: SettingsKey.EnumerationZeroBased
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.EnumerationZeroBased*
+  name: EnumerationZeroBased
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_EnumerationZeroBased_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.EnumerationZeroBased
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.EnumerationZeroBased
+  nameWithType: SettingsKey.EnumerationZeroBased
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.IsEnumeration
+  name: IsEnumeration
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_IsEnumeration
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.IsEnumeration
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.IsEnumeration
+  nameWithType: SettingsKey.IsEnumeration
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.IsEnumeration*
+  name: IsEnumeration
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_IsEnumeration_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.IsEnumeration
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.IsEnumeration
+  nameWithType: SettingsKey.IsEnumeration
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.IsPathCurrentPath
+  name: IsPathCurrentPath
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_IsPathCurrentPath
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.IsPathCurrentPath
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.IsPathCurrentPath
+  nameWithType: SettingsKey.IsPathCurrentPath
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.IsPathCurrentPath*
+  name: IsPathCurrentPath
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_IsPathCurrentPath_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.IsPathCurrentPath
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.IsPathCurrentPath
+  nameWithType: SettingsKey.IsPathCurrentPath
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.IsSelectionFunctionDict
+  name: IsSelectionFunctionDict
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_IsSelectionFunctionDict
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.IsSelectionFunctionDict
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.IsSelectionFunctionDict
+  nameWithType: SettingsKey.IsSelectionFunctionDict
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.IsSelectionFunctionDict*
+  name: IsSelectionFunctionDict
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_IsSelectionFunctionDict_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.IsSelectionFunctionDict
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.IsSelectionFunctionDict
+  nameWithType: SettingsKey.IsSelectionFunctionDict
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.IsValuePath
+  name: IsValuePath
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_IsValuePath
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.IsValuePath
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.IsValuePath
+  nameWithType: SettingsKey.IsValuePath
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.IsValuePath*
+  name: IsValuePath
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_IsValuePath_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.IsValuePath
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.IsValuePath
+  nameWithType: SettingsKey.IsValuePath
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.MaximumValue
+  name: MaximumValue
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_MaximumValue
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.MaximumValue
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.MaximumValue
+  nameWithType: SettingsKey.MaximumValue
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.MaximumValue*
+  name: MaximumValue
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_MaximumValue_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.MaximumValue
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.MaximumValue
+  nameWithType: SettingsKey.MaximumValue
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.MinimumValue
+  name: MinimumValue
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_MinimumValue
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.MinimumValue
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.MinimumValue
+  nameWithType: SettingsKey.MinimumValue
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.MinimumValue*
+  name: MinimumValue
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_MinimumValue_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.MinimumValue
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.MinimumValue
+  nameWithType: SettingsKey.MinimumValue
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.Name
+  name: Name
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_Name
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.Name
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.Name
+  nameWithType: SettingsKey.Name
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.Name*
+  name: Name
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_Name_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.Name
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.Name
+  nameWithType: SettingsKey.Name
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.SelectionFallback
+  name: SelectionFallback
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_SelectionFallback
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.SelectionFallback
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.SelectionFallback
+  nameWithType: SettingsKey.SelectionFallback
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.SelectionFallback*
+  name: SelectionFallback
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_SelectionFallback_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.SelectionFallback
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.SelectionFallback
+  nameWithType: SettingsKey.SelectionFallback
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionName
+  name: SelectionFunctionName
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_SelectionFunctionName
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionName
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionName
+  nameWithType: SettingsKey.SelectionFunctionName
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionName*
+  name: SelectionFunctionName
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_SelectionFunctionName_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionName
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionName
+  nameWithType: SettingsKey.SelectionFunctionName
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionType
+  name: SelectionFunctionType
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_SelectionFunctionType
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionType
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionType
+  nameWithType: SettingsKey.SelectionFunctionType
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionType*
+  name: SelectionFunctionType
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_SelectionFunctionType_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionType
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionType
+  nameWithType: SettingsKey.SelectionFunctionType
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.ShellType
+  name: ShellType
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_ShellType
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.ShellType
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.ShellType
+  nameWithType: SettingsKey.ShellType
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.ShellType*
+  name: ShellType
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_ShellType_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.ShellType
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.ShellType
+  nameWithType: SettingsKey.ShellType
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.Tip
+  name: Tip
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_Tip
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.Tip
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.Tip
+  nameWithType: SettingsKey.Tip
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.Tip*
+  name: Tip
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_Tip_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.Tip
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.Tip
+  nameWithType: SettingsKey.Tip
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.Type
+  name: Type
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_Type
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.Type
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.Type
+  nameWithType: SettingsKey.Type
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.Type*
+  name: Type
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_Type_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.Type
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.Type
+  nameWithType: SettingsKey.Type
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.UnsupportedPlatforms
+  name: UnsupportedPlatforms
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_UnsupportedPlatforms
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.UnsupportedPlatforms
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.UnsupportedPlatforms
+  nameWithType: SettingsKey.UnsupportedPlatforms
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.UnsupportedPlatforms*
+  name: UnsupportedPlatforms
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_UnsupportedPlatforms_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.UnsupportedPlatforms
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.UnsupportedPlatforms
+  nameWithType: SettingsKey.UnsupportedPlatforms
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.ValuePathType
+  name: ValuePathType
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_ValuePathType
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.ValuePathType
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.ValuePathType
+  nameWithType: SettingsKey.ValuePathType
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.ValuePathType*
+  name: ValuePathType
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_ValuePathType_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.ValuePathType
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.ValuePathType
+  nameWithType: SettingsKey.ValuePathType
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.Variable
+  name: Variable
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_Variable
+  commentId: P:KS.Kernel.Configuration.Settings.SettingsKey.Variable
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.Variable
+  nameWithType: SettingsKey.Variable
+- uid: KS.Kernel.Configuration.Settings.SettingsKey.Variable*
+  name: Variable
+  href: api/KS.Kernel.Configuration.Settings.SettingsKey.html#KS_Kernel_Configuration_Settings_SettingsKey_Variable_
+  commentId: Overload:KS.Kernel.Configuration.Settings.SettingsKey.Variable
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Settings.SettingsKey.Variable
+  nameWithType: SettingsKey.Variable
+- uid: KS.Kernel.Configuration.Settings.SettingsKeyType
+  name: SettingsKeyType
+  href: api/KS.Kernel.Configuration.Settings.SettingsKeyType.html
+  commentId: T:KS.Kernel.Configuration.Settings.SettingsKeyType
+  fullName: KS.Kernel.Configuration.Settings.SettingsKeyType
+  nameWithType: SettingsKeyType
+- uid: KS.Kernel.Configuration.Settings.SettingsKeyType.SBoolean
+  name: SBoolean
+  href: api/KS.Kernel.Configuration.Settings.SettingsKeyType.html#KS_Kernel_Configuration_Settings_SettingsKeyType_SBoolean
+  commentId: F:KS.Kernel.Configuration.Settings.SettingsKeyType.SBoolean
+  fullName: KS.Kernel.Configuration.Settings.SettingsKeyType.SBoolean
+  nameWithType: SettingsKeyType.SBoolean
+- uid: KS.Kernel.Configuration.Settings.SettingsKeyType.SChar
+  name: SChar
+  href: api/KS.Kernel.Configuration.Settings.SettingsKeyType.html#KS_Kernel_Configuration_Settings_SettingsKeyType_SChar
+  commentId: F:KS.Kernel.Configuration.Settings.SettingsKeyType.SChar
+  fullName: KS.Kernel.Configuration.Settings.SettingsKeyType.SChar
+  nameWithType: SettingsKeyType.SChar
+- uid: KS.Kernel.Configuration.Settings.SettingsKeyType.SColor
+  name: SColor
+  href: api/KS.Kernel.Configuration.Settings.SettingsKeyType.html#KS_Kernel_Configuration_Settings_SettingsKeyType_SColor
+  commentId: F:KS.Kernel.Configuration.Settings.SettingsKeyType.SColor
+  fullName: KS.Kernel.Configuration.Settings.SettingsKeyType.SColor
+  nameWithType: SettingsKeyType.SColor
+- uid: KS.Kernel.Configuration.Settings.SettingsKeyType.SDouble
+  name: SDouble
+  href: api/KS.Kernel.Configuration.Settings.SettingsKeyType.html#KS_Kernel_Configuration_Settings_SettingsKeyType_SDouble
+  commentId: F:KS.Kernel.Configuration.Settings.SettingsKeyType.SDouble
+  fullName: KS.Kernel.Configuration.Settings.SettingsKeyType.SDouble
+  nameWithType: SettingsKeyType.SDouble
+- uid: KS.Kernel.Configuration.Settings.SettingsKeyType.SFiglet
+  name: SFiglet
+  href: api/KS.Kernel.Configuration.Settings.SettingsKeyType.html#KS_Kernel_Configuration_Settings_SettingsKeyType_SFiglet
+  commentId: F:KS.Kernel.Configuration.Settings.SettingsKeyType.SFiglet
+  fullName: KS.Kernel.Configuration.Settings.SettingsKeyType.SFiglet
+  nameWithType: SettingsKeyType.SFiglet
+- uid: KS.Kernel.Configuration.Settings.SettingsKeyType.SInt
+  name: SInt
+  href: api/KS.Kernel.Configuration.Settings.SettingsKeyType.html#KS_Kernel_Configuration_Settings_SettingsKeyType_SInt
+  commentId: F:KS.Kernel.Configuration.Settings.SettingsKeyType.SInt
+  fullName: KS.Kernel.Configuration.Settings.SettingsKeyType.SInt
+  nameWithType: SettingsKeyType.SInt
+- uid: KS.Kernel.Configuration.Settings.SettingsKeyType.SIntSlider
+  name: SIntSlider
+  href: api/KS.Kernel.Configuration.Settings.SettingsKeyType.html#KS_Kernel_Configuration_Settings_SettingsKeyType_SIntSlider
+  commentId: F:KS.Kernel.Configuration.Settings.SettingsKeyType.SIntSlider
+  fullName: KS.Kernel.Configuration.Settings.SettingsKeyType.SIntSlider
+  nameWithType: SettingsKeyType.SIntSlider
+- uid: KS.Kernel.Configuration.Settings.SettingsKeyType.SList
+  name: SList
+  href: api/KS.Kernel.Configuration.Settings.SettingsKeyType.html#KS_Kernel_Configuration_Settings_SettingsKeyType_SList
+  commentId: F:KS.Kernel.Configuration.Settings.SettingsKeyType.SList
+  fullName: KS.Kernel.Configuration.Settings.SettingsKeyType.SList
+  nameWithType: SettingsKeyType.SList
+- uid: KS.Kernel.Configuration.Settings.SettingsKeyType.SPreset
+  name: SPreset
+  href: api/KS.Kernel.Configuration.Settings.SettingsKeyType.html#KS_Kernel_Configuration_Settings_SettingsKeyType_SPreset
+  commentId: F:KS.Kernel.Configuration.Settings.SettingsKeyType.SPreset
+  fullName: KS.Kernel.Configuration.Settings.SettingsKeyType.SPreset
+  nameWithType: SettingsKeyType.SPreset
+- uid: KS.Kernel.Configuration.Settings.SettingsKeyType.SSelection
+  name: SSelection
+  href: api/KS.Kernel.Configuration.Settings.SettingsKeyType.html#KS_Kernel_Configuration_Settings_SettingsKeyType_SSelection
+  commentId: F:KS.Kernel.Configuration.Settings.SettingsKeyType.SSelection
+  fullName: KS.Kernel.Configuration.Settings.SettingsKeyType.SSelection
+  nameWithType: SettingsKeyType.SSelection
+- uid: KS.Kernel.Configuration.Settings.SettingsKeyType.SString
+  name: SString
+  href: api/KS.Kernel.Configuration.Settings.SettingsKeyType.html#KS_Kernel_Configuration_Settings_SettingsKeyType_SString
+  commentId: F:KS.Kernel.Configuration.Settings.SettingsKeyType.SString
+  fullName: KS.Kernel.Configuration.Settings.SettingsKeyType.SString
+  nameWithType: SettingsKeyType.SString
+- uid: KS.Kernel.Configuration.Settings.SettingsKeyType.SUnknown
+  name: SUnknown
+  href: api/KS.Kernel.Configuration.Settings.SettingsKeyType.html#KS_Kernel_Configuration_Settings_SettingsKeyType_SUnknown
+  commentId: F:KS.Kernel.Configuration.Settings.SettingsKeyType.SUnknown
+  fullName: KS.Kernel.Configuration.Settings.SettingsKeyType.SUnknown
+  nameWithType: SettingsKeyType.SUnknown
 - uid: KS.Kernel.Debugging
   name: KS.Kernel.Debugging
   href: api/KS.Kernel.Debugging.html

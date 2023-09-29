@@ -1806,6 +1806,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Configuration.Settings.SettingsEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Configuration.Settings.SettingsEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Configuration.Settings.SettingsKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Configuration.Settings.SettingsKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Configuration.Settings.SettingsKeyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Configuration.Settings.SettingsKeyType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Configuration.Settings.yml",
       "output": {
         ".html": {
