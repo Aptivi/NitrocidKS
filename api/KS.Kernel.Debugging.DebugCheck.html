@@ -104,7 +104,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugCheck_Assert_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugCheck.Assert(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L33">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L34">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_DebugCheck_Assert_" data-uid="KS.Kernel.Debugging.DebugCheck.Assert*"></a>
   <h4 id="KS_Kernel_Debugging_DebugCheck_Assert_System_Boolean_" data-uid="KS.Kernel.Debugging.DebugCheck.Assert(System.Boolean)">Assert(bool)</h4>
@@ -138,7 +138,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugCheck_Assert_System_Boolean_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugCheck.Assert(System.Boolean%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L41">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L42">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_DebugCheck_Assert_" data-uid="KS.Kernel.Debugging.DebugCheck.Assert*"></a>
   <h4 id="KS_Kernel_Debugging_DebugCheck_Assert_System_Boolean_System_String_" data-uid="KS.Kernel.Debugging.DebugCheck.Assert(System.Boolean,System.String)">Assert(bool, string)</h4>
@@ -175,10 +175,56 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugCheck_Assert_System_Boolean_System_String_System_Object___.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugCheck.Assert(System.Boolean%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L62">View Source</a>
+  </span>
+  <a id="KS_Kernel_Debugging_DebugCheck_Assert_" data-uid="KS.Kernel.Debugging.DebugCheck.Assert*"></a>
+  <h4 id="KS_Kernel_Debugging_DebugCheck_Assert_System_Boolean_System_String_System_Object___" data-uid="KS.Kernel.Debugging.DebugCheck.Assert(System.Boolean,System.String,System.Object[])">Assert(bool, string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Asserts and checks to see if the condition is satisfied</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Assert(bool condition, string message, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td><p>Condition</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>A message to clarify why the assert failed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugCheck_AssertFail_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugCheck.AssertFail(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L111">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L157">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_DebugCheck_AssertFail_" data-uid="KS.Kernel.Debugging.DebugCheck.AssertFail*"></a>
   <h4 id="KS_Kernel_Debugging_DebugCheck_AssertFail_System_String_" data-uid="KS.Kernel.Debugging.DebugCheck.AssertFail(System.String)">AssertFail(string)</h4>
@@ -209,10 +255,50 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugCheck_AssertFail_System_String_System_Object___.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugCheck.AssertFail(System.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L173">View Source</a>
+  </span>
+  <a id="KS_Kernel_Debugging_DebugCheck_AssertFail_" data-uid="KS.Kernel.Debugging.DebugCheck.AssertFail*"></a>
+  <h4 id="KS_Kernel_Debugging_DebugCheck_AssertFail_System_String_System_Object___" data-uid="KS.Kernel.Debugging.DebugCheck.AssertFail(System.String,System.Object[])">AssertFail(string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Triggers assertion failure</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AssertFail(string message, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>A message to clarify why the assert failed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugCheck.AssertNotNull%60%601(%60%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L85">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L116">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_DebugCheck_AssertNotNull_" data-uid="KS.Kernel.Debugging.DebugCheck.AssertNotNull*"></a>
   <h4 id="KS_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_" data-uid="KS.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0)">AssertNotNull&lt;T&gt;(T)</h4>
@@ -261,7 +347,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugCheck.AssertNotNull%60%601(%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L93">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L124">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_DebugCheck_AssertNotNull_" data-uid="KS.Kernel.Debugging.DebugCheck.AssertNotNull*"></a>
   <h4 id="KS_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_System_String_" data-uid="KS.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0,System.String)">AssertNotNull&lt;T&gt;(T, string)</h4>
@@ -313,10 +399,71 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_System_String_System_Object___.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugCheck.AssertNotNull%60%601(%60%600%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L144">View Source</a>
+  </span>
+  <a id="KS_Kernel_Debugging_DebugCheck_AssertNotNull_" data-uid="KS.Kernel.Debugging.DebugCheck.AssertNotNull*"></a>
+  <h4 id="KS_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_System_String_System_Object___" data-uid="KS.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0,System.String,System.Object[])">AssertNotNull&lt;T&gt;(T, string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Asserts and checks to see if the value is not null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AssertNotNull&lt;T&gt;(T value, string message, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Condition</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>A message to clarify why the assert failed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugCheck_AssertNull__1___0_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugCheck.AssertNull%60%601(%60%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L59">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L75">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_DebugCheck_AssertNull_" data-uid="KS.Kernel.Debugging.DebugCheck.AssertNull*"></a>
   <h4 id="KS_Kernel_Debugging_DebugCheck_AssertNull__1___0_" data-uid="KS.Kernel.Debugging.DebugCheck.AssertNull``1(``0)">AssertNull&lt;T&gt;(T)</h4>
@@ -365,7 +512,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugCheck_AssertNull__1___0_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugCheck.AssertNull%60%601(%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L67">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L83">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_DebugCheck_AssertNull_" data-uid="KS.Kernel.Debugging.DebugCheck.AssertNull*"></a>
   <h4 id="KS_Kernel_Debugging_DebugCheck_AssertNull__1___0_System_String_" data-uid="KS.Kernel.Debugging.DebugCheck.AssertNull``1(``0,System.String)">AssertNull&lt;T&gt;(T, string)</h4>
@@ -415,6 +562,67 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugCheck_AssertNull__1___0_System_String_System_Object___.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugCheck.AssertNull%60%601(%60%600%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L103">View Source</a>
+  </span>
+  <a id="KS_Kernel_Debugging_DebugCheck_AssertNull_" data-uid="KS.Kernel.Debugging.DebugCheck.AssertNull*"></a>
+  <h4 id="KS_Kernel_Debugging_DebugCheck_AssertNull__1___0_System_String_System_Object___" data-uid="KS.Kernel.Debugging.DebugCheck.AssertNull``1(``0,System.String,System.Object[])">AssertNull&lt;T&gt;(T, string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Asserts and checks to see if the value is null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AssertNull&lt;T&gt;(T value, string message, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Condition</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>A message to clarify why the assert failed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
           </div>
@@ -427,7 +635,7 @@
                     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_DebugCheck.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.DebugCheck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L27" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L28" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

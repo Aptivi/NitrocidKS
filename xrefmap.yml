@@ -33025,6 +33025,15 @@ references:
   fullName.vb: KS.Kernel.Debugging.DebugCheck.Assert(Boolean, String)
   nameWithType: DebugCheck.Assert(bool, string)
   nameWithType.vb: DebugCheck.Assert(Boolean, String)
+- uid: KS.Kernel.Debugging.DebugCheck.Assert(System.Boolean,System.String,System.Object[])
+  name: Assert(bool, string, params object[])
+  href: api/KS.Kernel.Debugging.DebugCheck.html#KS_Kernel_Debugging_DebugCheck_Assert_System_Boolean_System_String_System_Object___
+  commentId: M:KS.Kernel.Debugging.DebugCheck.Assert(System.Boolean,System.String,System.Object[])
+  name.vb: Assert(Boolean, String, ParamArray Object())
+  fullName: KS.Kernel.Debugging.DebugCheck.Assert(bool, string, params object[])
+  fullName.vb: KS.Kernel.Debugging.DebugCheck.Assert(Boolean, String, ParamArray Object())
+  nameWithType: DebugCheck.Assert(bool, string, params object[])
+  nameWithType.vb: DebugCheck.Assert(Boolean, String, ParamArray Object())
 - uid: KS.Kernel.Debugging.DebugCheck.Assert*
   name: Assert
   href: api/KS.Kernel.Debugging.DebugCheck.html#KS_Kernel_Debugging_DebugCheck_Assert_
@@ -33041,6 +33050,15 @@ references:
   fullName.vb: KS.Kernel.Debugging.DebugCheck.AssertFail(String)
   nameWithType: DebugCheck.AssertFail(string)
   nameWithType.vb: DebugCheck.AssertFail(String)
+- uid: KS.Kernel.Debugging.DebugCheck.AssertFail(System.String,System.Object[])
+  name: AssertFail(string, params object[])
+  href: api/KS.Kernel.Debugging.DebugCheck.html#KS_Kernel_Debugging_DebugCheck_AssertFail_System_String_System_Object___
+  commentId: M:KS.Kernel.Debugging.DebugCheck.AssertFail(System.String,System.Object[])
+  name.vb: AssertFail(String, ParamArray Object())
+  fullName: KS.Kernel.Debugging.DebugCheck.AssertFail(string, params object[])
+  fullName.vb: KS.Kernel.Debugging.DebugCheck.AssertFail(String, ParamArray Object())
+  nameWithType: DebugCheck.AssertFail(string, params object[])
+  nameWithType.vb: DebugCheck.AssertFail(String, ParamArray Object())
 - uid: KS.Kernel.Debugging.DebugCheck.AssertFail*
   name: AssertFail
   href: api/KS.Kernel.Debugging.DebugCheck.html#KS_Kernel_Debugging_DebugCheck_AssertFail_
@@ -33073,6 +33091,15 @@ references:
   fullName.vb: KS.Kernel.Debugging.DebugCheck.AssertNotNull(Of T)(T, String)
   nameWithType: DebugCheck.AssertNotNull<T>(T, string)
   nameWithType.vb: DebugCheck.AssertNotNull(Of T)(T, String)
+- uid: KS.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0,System.String,System.Object[])
+  name: AssertNotNull<T>(T, string, params object[])
+  href: api/KS.Kernel.Debugging.DebugCheck.html#KS_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_System_String_System_Object___
+  commentId: M:KS.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0,System.String,System.Object[])
+  name.vb: AssertNotNull(Of T)(T, String, ParamArray Object())
+  fullName: KS.Kernel.Debugging.DebugCheck.AssertNotNull<T>(T, string, params object[])
+  fullName.vb: KS.Kernel.Debugging.DebugCheck.AssertNotNull(Of T)(T, String, ParamArray Object())
+  nameWithType: DebugCheck.AssertNotNull<T>(T, string, params object[])
+  nameWithType.vb: DebugCheck.AssertNotNull(Of T)(T, String, ParamArray Object())
 - uid: KS.Kernel.Debugging.DebugCheck.AssertNull*
   name: AssertNull
   href: api/KS.Kernel.Debugging.DebugCheck.html#KS_Kernel_Debugging_DebugCheck_AssertNull_
@@ -33098,6 +33125,15 @@ references:
   fullName.vb: KS.Kernel.Debugging.DebugCheck.AssertNull(Of T)(T, String)
   nameWithType: DebugCheck.AssertNull<T>(T, string)
   nameWithType.vb: DebugCheck.AssertNull(Of T)(T, String)
+- uid: KS.Kernel.Debugging.DebugCheck.AssertNull``1(``0,System.String,System.Object[])
+  name: AssertNull<T>(T, string, params object[])
+  href: api/KS.Kernel.Debugging.DebugCheck.html#KS_Kernel_Debugging_DebugCheck_AssertNull__1___0_System_String_System_Object___
+  commentId: M:KS.Kernel.Debugging.DebugCheck.AssertNull``1(``0,System.String,System.Object[])
+  name.vb: AssertNull(Of T)(T, String, ParamArray Object())
+  fullName: KS.Kernel.Debugging.DebugCheck.AssertNull<T>(T, string, params object[])
+  fullName.vb: KS.Kernel.Debugging.DebugCheck.AssertNull(Of T)(T, String, ParamArray Object())
+  nameWithType: DebugCheck.AssertNull<T>(T, string, params object[])
+  nameWithType.vb: DebugCheck.AssertNull(Of T)(T, String, ParamArray Object())
 - uid: KS.Kernel.Debugging.DebugLevel
   name: DebugLevel
   href: api/KS.Kernel.Debugging.DebugLevel.html
