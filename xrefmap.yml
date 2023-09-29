@@ -7977,6 +7977,256 @@ references:
   commentId: N:KS.ConsoleBase.Writers.MiscWriters
   fullName: KS.ConsoleBase.Writers.MiscWriters
   nameWithType: KS.ConsoleBase.Writers.MiscWriters
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter
+  name: LineHandleRangedWriter
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html
+  commentId: T:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter
+  nameWithType: LineHandleRangedWriter
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(System.String,System.Int32,System.Int32,System.Int32)
+  name: PrintLineWithHandle(string, int, int, int)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_PrintLineWithHandle_System_String_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(System.String,System.Int32,System.Int32,System.Int32)
+  name.vb: PrintLineWithHandle(String, Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(string, int, int, int)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(String, Integer, Integer, Integer)
+  nameWithType: LineHandleRangedWriter.PrintLineWithHandle(string, int, int, int)
+  nameWithType.vb: LineHandleRangedWriter.PrintLineWithHandle(String, Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(System.String,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name: PrintLineWithHandle(string, int, int, int, KernelColorType)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_PrintLineWithHandle_System_String_System_Int32_System_Int32_System_Int32_KS_ConsoleBase_Colors_KernelColorType_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(System.String,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name.vb: PrintLineWithHandle(String, Integer, Integer, Integer, KernelColorType)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(string, int, int, int, KS.ConsoleBase.Colors.KernelColorType)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(String, Integer, Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
+  nameWithType: LineHandleRangedWriter.PrintLineWithHandle(string, int, int, int, KernelColorType)
+  nameWithType.vb: LineHandleRangedWriter.PrintLineWithHandle(String, Integer, Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(System.String,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: PrintLineWithHandle(string, int, int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_PrintLineWithHandle_System_String_System_Int32_System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(System.String,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: PrintLineWithHandle(String, Integer, Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(string, int, int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(String, Integer, Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleRangedWriter.PrintLineWithHandle(string, int, int, int, Color)
+  nameWithType.vb: LineHandleRangedWriter.PrintLineWithHandle(String, Integer, Integer, Integer, Color)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(System.String[],System.Int32,System.Int32,System.Int32)
+  name: PrintLineWithHandle(string[], int, int, int)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_PrintLineWithHandle_System_String___System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(System.String[],System.Int32,System.Int32,System.Int32)
+  name.vb: PrintLineWithHandle(String(), Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(string[], int, int, int)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(String(), Integer, Integer, Integer)
+  nameWithType: LineHandleRangedWriter.PrintLineWithHandle(string[], int, int, int)
+  nameWithType.vb: LineHandleRangedWriter.PrintLineWithHandle(String(), Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(System.String[],System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name: PrintLineWithHandle(string[], int, int, int, KernelColorType)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_PrintLineWithHandle_System_String___System_Int32_System_Int32_System_Int32_KS_ConsoleBase_Colors_KernelColorType_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(System.String[],System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name.vb: PrintLineWithHandle(String(), Integer, Integer, Integer, KernelColorType)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(string[], int, int, int, KS.ConsoleBase.Colors.KernelColorType)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(String(), Integer, Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
+  nameWithType: LineHandleRangedWriter.PrintLineWithHandle(string[], int, int, int, KernelColorType)
+  nameWithType.vb: LineHandleRangedWriter.PrintLineWithHandle(String(), Integer, Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(System.String[],System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: PrintLineWithHandle(string[], int, int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_PrintLineWithHandle_System_String___System_Int32_System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(System.String[],System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: PrintLineWithHandle(String(), Integer, Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(string[], int, int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle(String(), Integer, Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleRangedWriter.PrintLineWithHandle(string[], int, int, int, Color)
+  nameWithType.vb: LineHandleRangedWriter.PrintLineWithHandle(String(), Integer, Integer, Integer, Color)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle*
+  name: PrintLineWithHandle
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_PrintLineWithHandle_
+  commentId: Overload:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandle
+  nameWithType: LineHandleRangedWriter.PrintLineWithHandle
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,System.Int32)
+  name: PrintLineWithHandleConditional(bool, string, int, int, int)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_PrintLineWithHandleConditional_System_Boolean_System_String_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,System.Int32)
+  name.vb: PrintLineWithHandleConditional(Boolean, String, Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(bool, string, int, int, int)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(Boolean, String, Integer, Integer, Integer)
+  nameWithType: LineHandleRangedWriter.PrintLineWithHandleConditional(bool, string, int, int, int)
+  nameWithType.vb: LineHandleRangedWriter.PrintLineWithHandleConditional(Boolean, String, Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name: PrintLineWithHandleConditional(bool, string, int, int, int, KernelColorType)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_PrintLineWithHandleConditional_System_Boolean_System_String_System_Int32_System_Int32_System_Int32_KS_ConsoleBase_Colors_KernelColorType_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name.vb: PrintLineWithHandleConditional(Boolean, String, Integer, Integer, Integer, KernelColorType)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(bool, string, int, int, int, KS.ConsoleBase.Colors.KernelColorType)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(Boolean, String, Integer, Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
+  nameWithType: LineHandleRangedWriter.PrintLineWithHandleConditional(bool, string, int, int, int, KernelColorType)
+  nameWithType.vb: LineHandleRangedWriter.PrintLineWithHandleConditional(Boolean, String, Integer, Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: PrintLineWithHandleConditional(bool, string, int, int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_PrintLineWithHandleConditional_System_Boolean_System_String_System_Int32_System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: PrintLineWithHandleConditional(Boolean, String, Integer, Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(bool, string, int, int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(Boolean, String, Integer, Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleRangedWriter.PrintLineWithHandleConditional(bool, string, int, int, int, Color)
+  nameWithType.vb: LineHandleRangedWriter.PrintLineWithHandleConditional(Boolean, String, Integer, Integer, Integer, Color)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,System.Int32)
+  name: PrintLineWithHandleConditional(bool, string[], int, int, int)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_PrintLineWithHandleConditional_System_Boolean_System_String___System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,System.Int32)
+  name.vb: PrintLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(bool, string[], int, int, int)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer)
+  nameWithType: LineHandleRangedWriter.PrintLineWithHandleConditional(bool, string[], int, int, int)
+  nameWithType.vb: LineHandleRangedWriter.PrintLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name: PrintLineWithHandleConditional(bool, string[], int, int, int, KernelColorType)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_PrintLineWithHandleConditional_System_Boolean_System_String___System_Int32_System_Int32_System_Int32_KS_ConsoleBase_Colors_KernelColorType_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name.vb: PrintLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer, KernelColorType)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(bool, string[], int, int, int, KS.ConsoleBase.Colors.KernelColorType)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
+  nameWithType: LineHandleRangedWriter.PrintLineWithHandleConditional(bool, string[], int, int, int, KernelColorType)
+  nameWithType.vb: LineHandleRangedWriter.PrintLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: PrintLineWithHandleConditional(bool, string[], int, int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_PrintLineWithHandleConditional_System_Boolean_System_String___System_Int32_System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: PrintLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(bool, string[], int, int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleRangedWriter.PrintLineWithHandleConditional(bool, string[], int, int, int, Color)
+  nameWithType.vb: LineHandleRangedWriter.PrintLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer, Color)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional*
+  name: PrintLineWithHandleConditional
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_PrintLineWithHandleConditional_
+  commentId: Overload:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.PrintLineWithHandleConditional
+  nameWithType: LineHandleRangedWriter.PrintLineWithHandleConditional
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(System.String,System.Int32,System.Int32,System.Int32)
+  name: RenderLineWithHandle(string, int, int, int)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_RenderLineWithHandle_System_String_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(System.String,System.Int32,System.Int32,System.Int32)
+  name.vb: RenderLineWithHandle(String, Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(string, int, int, int)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(String, Integer, Integer, Integer)
+  nameWithType: LineHandleRangedWriter.RenderLineWithHandle(string, int, int, int)
+  nameWithType.vb: LineHandleRangedWriter.RenderLineWithHandle(String, Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(System.String,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name: RenderLineWithHandle(string, int, int, int, KernelColorType)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_RenderLineWithHandle_System_String_System_Int32_System_Int32_System_Int32_KS_ConsoleBase_Colors_KernelColorType_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(System.String,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name.vb: RenderLineWithHandle(String, Integer, Integer, Integer, KernelColorType)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(string, int, int, int, KS.ConsoleBase.Colors.KernelColorType)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(String, Integer, Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
+  nameWithType: LineHandleRangedWriter.RenderLineWithHandle(string, int, int, int, KernelColorType)
+  nameWithType.vb: LineHandleRangedWriter.RenderLineWithHandle(String, Integer, Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(System.String,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: RenderLineWithHandle(string, int, int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_RenderLineWithHandle_System_String_System_Int32_System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(System.String,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: RenderLineWithHandle(String, Integer, Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(string, int, int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(String, Integer, Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleRangedWriter.RenderLineWithHandle(string, int, int, int, Color)
+  nameWithType.vb: LineHandleRangedWriter.RenderLineWithHandle(String, Integer, Integer, Integer, Color)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(System.String[],System.Int32,System.Int32,System.Int32)
+  name: RenderLineWithHandle(string[], int, int, int)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_RenderLineWithHandle_System_String___System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(System.String[],System.Int32,System.Int32,System.Int32)
+  name.vb: RenderLineWithHandle(String(), Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(string[], int, int, int)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(String(), Integer, Integer, Integer)
+  nameWithType: LineHandleRangedWriter.RenderLineWithHandle(string[], int, int, int)
+  nameWithType.vb: LineHandleRangedWriter.RenderLineWithHandle(String(), Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(System.String[],System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name: RenderLineWithHandle(string[], int, int, int, KernelColorType)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_RenderLineWithHandle_System_String___System_Int32_System_Int32_System_Int32_KS_ConsoleBase_Colors_KernelColorType_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(System.String[],System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name.vb: RenderLineWithHandle(String(), Integer, Integer, Integer, KernelColorType)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(string[], int, int, int, KS.ConsoleBase.Colors.KernelColorType)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(String(), Integer, Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
+  nameWithType: LineHandleRangedWriter.RenderLineWithHandle(string[], int, int, int, KernelColorType)
+  nameWithType.vb: LineHandleRangedWriter.RenderLineWithHandle(String(), Integer, Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(System.String[],System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: RenderLineWithHandle(string[], int, int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_RenderLineWithHandle_System_String___System_Int32_System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(System.String[],System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: RenderLineWithHandle(String(), Integer, Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(string[], int, int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle(String(), Integer, Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleRangedWriter.RenderLineWithHandle(string[], int, int, int, Color)
+  nameWithType.vb: LineHandleRangedWriter.RenderLineWithHandle(String(), Integer, Integer, Integer, Color)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle*
+  name: RenderLineWithHandle
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_RenderLineWithHandle_
+  commentId: Overload:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandle
+  nameWithType: LineHandleRangedWriter.RenderLineWithHandle
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,System.Int32)
+  name: RenderLineWithHandleConditional(bool, string, int, int, int)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_RenderLineWithHandleConditional_System_Boolean_System_String_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,System.Int32)
+  name.vb: RenderLineWithHandleConditional(Boolean, String, Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(bool, string, int, int, int)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(Boolean, String, Integer, Integer, Integer)
+  nameWithType: LineHandleRangedWriter.RenderLineWithHandleConditional(bool, string, int, int, int)
+  nameWithType.vb: LineHandleRangedWriter.RenderLineWithHandleConditional(Boolean, String, Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name: RenderLineWithHandleConditional(bool, string, int, int, int, KernelColorType)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_RenderLineWithHandleConditional_System_Boolean_System_String_System_Int32_System_Int32_System_Int32_KS_ConsoleBase_Colors_KernelColorType_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name.vb: RenderLineWithHandleConditional(Boolean, String, Integer, Integer, Integer, KernelColorType)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(bool, string, int, int, int, KS.ConsoleBase.Colors.KernelColorType)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(Boolean, String, Integer, Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
+  nameWithType: LineHandleRangedWriter.RenderLineWithHandleConditional(bool, string, int, int, int, KernelColorType)
+  nameWithType.vb: LineHandleRangedWriter.RenderLineWithHandleConditional(Boolean, String, Integer, Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: RenderLineWithHandleConditional(bool, string, int, int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_RenderLineWithHandleConditional_System_Boolean_System_String_System_Int32_System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: RenderLineWithHandleConditional(Boolean, String, Integer, Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(bool, string, int, int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(Boolean, String, Integer, Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleRangedWriter.RenderLineWithHandleConditional(bool, string, int, int, int, Color)
+  nameWithType.vb: LineHandleRangedWriter.RenderLineWithHandleConditional(Boolean, String, Integer, Integer, Integer, Color)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,System.Int32)
+  name: RenderLineWithHandleConditional(bool, string[], int, int, int)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_RenderLineWithHandleConditional_System_Boolean_System_String___System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,System.Int32)
+  name.vb: RenderLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(bool, string[], int, int, int)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer)
+  nameWithType: LineHandleRangedWriter.RenderLineWithHandleConditional(bool, string[], int, int, int)
+  nameWithType.vb: LineHandleRangedWriter.RenderLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name: RenderLineWithHandleConditional(bool, string[], int, int, int, KernelColorType)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_RenderLineWithHandleConditional_System_Boolean_System_String___System_Int32_System_Int32_System_Int32_KS_ConsoleBase_Colors_KernelColorType_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType)
+  name.vb: RenderLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer, KernelColorType)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(bool, string[], int, int, int, KS.ConsoleBase.Colors.KernelColorType)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
+  nameWithType: LineHandleRangedWriter.RenderLineWithHandleConditional(bool, string[], int, int, int, KernelColorType)
+  nameWithType.vb: LineHandleRangedWriter.RenderLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: RenderLineWithHandleConditional(bool, string[], int, int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_RenderLineWithHandleConditional_System_Boolean_System_String___System_Int32_System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: RenderLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(bool, string[], int, int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleRangedWriter.RenderLineWithHandleConditional(bool, string[], int, int, int, Color)
+  nameWithType.vb: LineHandleRangedWriter.RenderLineWithHandleConditional(Boolean, String(), Integer, Integer, Integer, Color)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional*
+  name: RenderLineWithHandleConditional
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleRangedWriter_RenderLineWithHandleConditional_
+  commentId: Overload:KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.RenderLineWithHandleConditional
+  nameWithType: LineHandleRangedWriter.RenderLineWithHandleConditional
 - uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter
   name: LineHandleWriter
   href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html
@@ -8001,6 +8251,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandle(String, Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
   nameWithType: LineHandleWriter.PrintLineWithHandle(string, int, int, KernelColorType)
   nameWithType.vb: LineHandleWriter.PrintLineWithHandle(String, Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandle(System.String,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: PrintLineWithHandle(string, int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_PrintLineWithHandle_System_String_System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandle(System.String,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: PrintLineWithHandle(String, Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandle(string, int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandle(String, Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleWriter.PrintLineWithHandle(string, int, int, Color)
+  nameWithType.vb: LineHandleWriter.PrintLineWithHandle(String, Integer, Integer, Color)
 - uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandle(System.String[],System.Int32,System.Int32)
   name: PrintLineWithHandle(string[], int, int)
   href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_PrintLineWithHandle_System_String___System_Int32_System_Int32_
@@ -8019,6 +8278,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandle(String(), Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
   nameWithType: LineHandleWriter.PrintLineWithHandle(string[], int, int, KernelColorType)
   nameWithType.vb: LineHandleWriter.PrintLineWithHandle(String(), Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandle(System.String[],System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: PrintLineWithHandle(string[], int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_PrintLineWithHandle_System_String___System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandle(System.String[],System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: PrintLineWithHandle(String(), Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandle(string[], int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandle(String(), Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleWriter.PrintLineWithHandle(string[], int, int, Color)
+  nameWithType.vb: LineHandleWriter.PrintLineWithHandle(String(), Integer, Integer, Color)
 - uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandle*
   name: PrintLineWithHandle
   href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_PrintLineWithHandle_
@@ -8044,6 +8312,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandleConditional(Boolean, String, Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
   nameWithType: LineHandleWriter.PrintLineWithHandleConditional(bool, string, int, int, KernelColorType)
   nameWithType.vb: LineHandleWriter.PrintLineWithHandleConditional(Boolean, String, Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: PrintLineWithHandleConditional(bool, string, int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_PrintLineWithHandleConditional_System_Boolean_System_String_System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: PrintLineWithHandleConditional(Boolean, String, Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandleConditional(bool, string, int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandleConditional(Boolean, String, Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleWriter.PrintLineWithHandleConditional(bool, string, int, int, Color)
+  nameWithType.vb: LineHandleWriter.PrintLineWithHandleConditional(Boolean, String, Integer, Integer, Color)
 - uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32)
   name: PrintLineWithHandleConditional(bool, string[], int, int)
   href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_PrintLineWithHandleConditional_System_Boolean_System_String___System_Int32_System_Int32_
@@ -8062,6 +8339,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandleConditional(Boolean, String(), Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
   nameWithType: LineHandleWriter.PrintLineWithHandleConditional(bool, string[], int, int, KernelColorType)
   nameWithType.vb: LineHandleWriter.PrintLineWithHandleConditional(Boolean, String(), Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: PrintLineWithHandleConditional(bool, string[], int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_PrintLineWithHandleConditional_System_Boolean_System_String___System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: PrintLineWithHandleConditional(Boolean, String(), Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandleConditional(bool, string[], int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandleConditional(Boolean, String(), Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleWriter.PrintLineWithHandleConditional(bool, string[], int, int, Color)
+  nameWithType.vb: LineHandleWriter.PrintLineWithHandleConditional(Boolean, String(), Integer, Integer, Color)
 - uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.PrintLineWithHandleConditional*
   name: PrintLineWithHandleConditional
   href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_PrintLineWithHandleConditional_
@@ -8087,6 +8373,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandle(String, Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
   nameWithType: LineHandleWriter.RenderLineWithHandle(string, int, int, KernelColorType)
   nameWithType.vb: LineHandleWriter.RenderLineWithHandle(String, Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandle(System.String,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: RenderLineWithHandle(string, int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_RenderLineWithHandle_System_String_System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandle(System.String,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: RenderLineWithHandle(String, Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandle(string, int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandle(String, Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleWriter.RenderLineWithHandle(string, int, int, Color)
+  nameWithType.vb: LineHandleWriter.RenderLineWithHandle(String, Integer, Integer, Color)
 - uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandle(System.String[],System.Int32,System.Int32)
   name: RenderLineWithHandle(string[], int, int)
   href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_RenderLineWithHandle_System_String___System_Int32_System_Int32_
@@ -8105,6 +8400,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandle(String(), Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
   nameWithType: LineHandleWriter.RenderLineWithHandle(string[], int, int, KernelColorType)
   nameWithType.vb: LineHandleWriter.RenderLineWithHandle(String(), Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandle(System.String[],System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: RenderLineWithHandle(string[], int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_RenderLineWithHandle_System_String___System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandle(System.String[],System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: RenderLineWithHandle(String(), Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandle(string[], int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandle(String(), Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleWriter.RenderLineWithHandle(string[], int, int, Color)
+  nameWithType.vb: LineHandleWriter.RenderLineWithHandle(String(), Integer, Integer, Color)
 - uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandle*
   name: RenderLineWithHandle
   href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_RenderLineWithHandle_
@@ -8130,6 +8434,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandleConditional(Boolean, String, Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
   nameWithType: LineHandleWriter.RenderLineWithHandleConditional(bool, string, int, int, KernelColorType)
   nameWithType.vb: LineHandleWriter.RenderLineWithHandleConditional(Boolean, String, Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: RenderLineWithHandleConditional(bool, string, int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_RenderLineWithHandleConditional_System_Boolean_System_String_System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandleConditional(System.Boolean,System.String,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: RenderLineWithHandleConditional(Boolean, String, Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandleConditional(bool, string, int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandleConditional(Boolean, String, Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleWriter.RenderLineWithHandleConditional(bool, string, int, int, Color)
+  nameWithType.vb: LineHandleWriter.RenderLineWithHandleConditional(Boolean, String, Integer, Integer, Color)
 - uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32)
   name: RenderLineWithHandleConditional(bool, string[], int, int)
   href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_RenderLineWithHandleConditional_System_Boolean_System_String___System_Int32_System_Int32_
@@ -8148,6 +8461,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandleConditional(Boolean, String(), Integer, Integer, KS.ConsoleBase.Colors.KernelColorType)
   nameWithType: LineHandleWriter.RenderLineWithHandleConditional(bool, string[], int, int, KernelColorType)
   nameWithType.vb: LineHandleWriter.RenderLineWithHandleConditional(Boolean, String(), Integer, Integer, KernelColorType)
+- uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: RenderLineWithHandleConditional(bool, string[], int, int, Color)
+  href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_RenderLineWithHandleConditional_System_Boolean_System_String___System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandleConditional(System.Boolean,System.String[],System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: RenderLineWithHandleConditional(Boolean, String(), Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandleConditional(bool, string[], int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandleConditional(Boolean, String(), Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: LineHandleWriter.RenderLineWithHandleConditional(bool, string[], int, int, Color)
+  nameWithType.vb: LineHandleWriter.RenderLineWithHandleConditional(Boolean, String(), Integer, Integer, Color)
 - uid: KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.RenderLineWithHandleConditional*
   name: RenderLineWithHandleConditional
   href: api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.html#KS_ConsoleBase_Writers_MiscWriters_LineHandleWriter_RenderLineWithHandleConditional_

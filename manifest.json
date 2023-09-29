@@ -746,6 +746,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Writers.MiscWriters.LineHandleRangedWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.Writers.MiscWriters.LineHandleWriter.yml",
       "output": {
         ".html": {
