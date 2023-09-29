@@ -42389,6 +42389,15 @@ references:
   fullName.vb: KS.Network.Base.NetworkTools.PingAddress(String, Integer, Byte())
   nameWithType: NetworkTools.PingAddress(string, int, byte[])
   nameWithType.vb: NetworkTools.PingAddress(String, Integer, Byte())
+- uid: KS.Network.Base.NetworkTools.PingAddress(System.String,System.Int32,System.String)
+  name: PingAddress(string, int, string)
+  href: api/KS.Network.Base.NetworkTools.html#KS_Network_Base_NetworkTools_PingAddress_System_String_System_Int32_System_String_
+  commentId: M:KS.Network.Base.NetworkTools.PingAddress(System.String,System.Int32,System.String)
+  name.vb: PingAddress(String, Integer, String)
+  fullName: KS.Network.Base.NetworkTools.PingAddress(string, int, string)
+  fullName.vb: KS.Network.Base.NetworkTools.PingAddress(String, Integer, String)
+  nameWithType: NetworkTools.PingAddress(string, int, string)
+  nameWithType.vb: NetworkTools.PingAddress(String, Integer, String)
 - uid: KS.Network.Base.NetworkTools.PingAddress*
   name: PingAddress
   href: api/KS.Network.Base.NetworkTools.html#KS_Network_Base_NetworkTools_PingAddress_
