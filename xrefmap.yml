@@ -37762,24 +37762,24 @@ references:
   commentId: T:KS.Languages.LanguageInfo
   fullName: KS.Languages.LanguageInfo
   nameWithType: LanguageInfo
-- uid: KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,Newtonsoft.Json.Linq.JArray)
-  name: LanguageInfo(string, string, bool, JArray)
-  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_Newtonsoft_Json_Linq_JArray_
-  commentId: M:KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,Newtonsoft.Json.Linq.JArray)
-  name.vb: New(String, String, Boolean, JArray)
-  fullName: KS.Languages.LanguageInfo.LanguageInfo(string, string, bool, Newtonsoft.Json.Linq.JArray)
-  fullName.vb: KS.Languages.LanguageInfo.New(String, String, Boolean, Newtonsoft.Json.Linq.JArray)
-  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, JArray)
-  nameWithType.vb: LanguageInfo.New(String, String, Boolean, JArray)
-- uid: KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32)
-  name: LanguageInfo(string, string, bool, int)
-  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_Int32_
-  commentId: M:KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32)
-  name.vb: New(String, String, Boolean, Integer)
-  fullName: KS.Languages.LanguageInfo.LanguageInfo(string, string, bool, int)
-  fullName.vb: KS.Languages.LanguageInfo.New(String, String, Boolean, Integer)
-  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, int)
-  nameWithType.vb: LanguageInfo.New(String, String, Boolean, Integer)
+- uid: KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,Newtonsoft.Json.Linq.JArray,System.String)
+  name: LanguageInfo(string, string, bool, JArray, string)
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_Newtonsoft_Json_Linq_JArray_System_String_
+  commentId: M:KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,Newtonsoft.Json.Linq.JArray,System.String)
+  name.vb: New(String, String, Boolean, JArray, String)
+  fullName: KS.Languages.LanguageInfo.LanguageInfo(string, string, bool, Newtonsoft.Json.Linq.JArray, string)
+  fullName.vb: KS.Languages.LanguageInfo.New(String, String, Boolean, Newtonsoft.Json.Linq.JArray, String)
+  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, JArray, string)
+  nameWithType.vb: LanguageInfo.New(String, String, Boolean, JArray, String)
+- uid: KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32,System.String)
+  name: LanguageInfo(string, string, bool, int, string)
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_Int32_System_String_
+  commentId: M:KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32,System.String)
+  name.vb: New(String, String, Boolean, Integer, String)
+  fullName: KS.Languages.LanguageInfo.LanguageInfo(string, string, bool, int, string)
+  fullName.vb: KS.Languages.LanguageInfo.New(String, String, Boolean, Integer, String)
+  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, int, string)
+  nameWithType.vb: LanguageInfo.New(String, String, Boolean, Integer, String)
 - uid: KS.Languages.LanguageInfo.#ctor*
   name: LanguageInfo
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_
@@ -37796,6 +37796,12 @@ references:
   commentId: F:KS.Languages.LanguageInfo.Codepage
   fullName: KS.Languages.LanguageInfo.Codepage
   nameWithType: LanguageInfo.Codepage
+- uid: KS.Languages.LanguageInfo.CultureCode
+  name: CultureCode
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_CultureCode
+  commentId: F:KS.Languages.LanguageInfo.CultureCode
+  fullName: KS.Languages.LanguageInfo.CultureCode
+  nameWithType: LanguageInfo.CultureCode
 - uid: KS.Languages.LanguageInfo.Cultures
   name: Cultures
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Cultures

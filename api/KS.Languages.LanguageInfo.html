@@ -101,19 +101,19 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_Newtonsoft_Json_Linq_JArray_.md&amp;value=---%0Auid%3A%20KS.Languages.LanguageInfo.%23ctor(System.String%2CSystem.String%2CSystem.Boolean%2CNewtonsoft.Json.Linq.JArray)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_Newtonsoft_Json_Linq_JArray_System_String_.md&amp;value=---%0Auid%3A%20KS.Languages.LanguageInfo.%23ctor(System.String%2CSystem.String%2CSystem.Boolean%2CNewtonsoft.Json.Linq.JArray%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageInfo.cs/#L137">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageInfo.cs/#L144">View Source</a>
   </span>
   <a id="KS_Languages_LanguageInfo__ctor_" data-uid="KS.Languages.LanguageInfo.#ctor*"></a>
-  <h4 id="KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_Newtonsoft_Json_Linq_JArray_" data-uid="KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,Newtonsoft.Json.Linq.JArray)">LanguageInfo(string, string, bool, JArray)</h4>
+  <h4 id="KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_Newtonsoft_Json_Linq_JArray_System_String_" data-uid="KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,Newtonsoft.Json.Linq.JArray,System.String)">LanguageInfo(string, string, bool, JArray, string)</h4>
   <div class="markdown level1 summary"><p>Initializes the new instance of language information</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LanguageInfo(string LangName, string FullLanguageName, bool Transliterable, JArray LanguageToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public LanguageInfo(string LangName, string FullLanguageName, bool Transliterable, JArray LanguageToken, string cultureCode = &quot;&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -149,23 +149,29 @@
         <td><p>The language token containing localization information</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">cultureCode</span></td>
+        <td><p>Culture code to use. If blank, the language manager will find the appropriate culture.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20KS.Languages.LanguageInfo.%23ctor(System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20KS.Languages.LanguageInfo.%23ctor(System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageInfo.cs/#L76">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageInfo.cs/#L81">View Source</a>
   </span>
   <a id="KS_Languages_LanguageInfo__ctor_" data-uid="KS.Languages.LanguageInfo.#ctor*"></a>
-  <h4 id="KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_Int32_" data-uid="KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32)">LanguageInfo(string, string, bool, int)</h4>
+  <h4 id="KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_Int32_System_String_" data-uid="KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32,System.String)">LanguageInfo(string, string, bool, int, string)</h4>
   <div class="markdown level1 summary"><p>Initializes the new instance of language information</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LanguageInfo(string LangName, string FullLanguageName, bool Transliterable, int Codepage = 65001)</code></pre>
+    <pre><code class="lang-csharp hljs">public LanguageInfo(string LangName, string FullLanguageName, bool Transliterable, int Codepage = 65001, string cultureCode = &quot;&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -199,6 +205,12 @@
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">Codepage</span></td>
         <td><p>Appropriate codepage number for language</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">cultureCode</span></td>
+        <td><p>Culture code to use. If blank, the language manager will find the appropriate culture.</p>
 </td>
       </tr>
     </tbody>
@@ -237,10 +249,40 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Languages_LanguageInfo_CultureCode.md&amp;value=---%0Auid%3A%20KS.Languages.LanguageInfo.CultureCode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageInfo.cs/#L51">View Source</a>
+  </span>
+  <h4 id="KS_Languages_LanguageInfo_CultureCode" data-uid="KS.Languages.LanguageInfo.CultureCode">CultureCode</h4>
+  <div class="markdown level1 summary"><p>Culture code to use. If blank, the language manager will find the appropriate culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string CultureCode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Languages_LanguageInfo_Cultures.md&amp;value=---%0Auid%3A%20KS.Languages.LanguageInfo.Cultures%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageInfo.cs/#L67">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageInfo.cs/#L71">View Source</a>
   </span>
   <h4 id="KS_Languages_LanguageInfo_Cultures" data-uid="KS.Languages.LanguageInfo.Cultures">Cultures</h4>
   <div class="markdown level1 summary"><p>List of cultures of language</p>
@@ -271,7 +313,7 @@ public readonly List&lt;CultureInfo&gt; Cultures</code></pre>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Languages_LanguageInfo_Custom.md&amp;value=---%0Auid%3A%20KS.Languages.LanguageInfo.Custom%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageInfo.cs/#L57">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageInfo.cs/#L61">View Source</a>
   </span>
   <h4 id="KS_Languages_LanguageInfo_Custom" data-uid="KS.Languages.LanguageInfo.Custom">Custom</h4>
   <div class="markdown level1 summary"><p>Whether the language is custom</p>
@@ -332,7 +374,7 @@ public readonly bool Custom</code></pre>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Languages_LanguageInfo_Strings.md&amp;value=---%0Auid%3A%20KS.Languages.LanguageInfo.Strings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageInfo.cs/#L62">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageInfo.cs/#L66">View Source</a>
   </span>
   <h4 id="KS_Languages_LanguageInfo_Strings" data-uid="KS.Languages.LanguageInfo.Strings">Strings</h4>
   <div class="markdown level1 summary"><p>The localization information containing KS strings</p>
@@ -393,7 +435,7 @@ public readonly Dictionary&lt;string, string&gt; Strings</code></pre>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Languages_LanguageInfo_Transliterable.md&amp;value=---%0Auid%3A%20KS.Languages.LanguageInfo.Transliterable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageInfo.cs/#L52">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageInfo.cs/#L56">View Source</a>
   </span>
   <h4 id="KS_Languages_LanguageInfo_Transliterable" data-uid="KS.Languages.LanguageInfo.Transliterable">Transliterable</h4>
   <div class="markdown level1 summary"><p>Whether or not the language is transliterable (Arabic, Korea, ...)</p>
