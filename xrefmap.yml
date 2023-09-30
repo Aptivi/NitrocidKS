@@ -40623,6 +40623,36 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Text.CharManager.NewLine
   nameWithType: CharManager.NewLine
+- uid: KS.Misc.Text.EnclosedDoubleQuotesType
+  name: EnclosedDoubleQuotesType
+  href: api/KS.Misc.Text.EnclosedDoubleQuotesType.html
+  commentId: T:KS.Misc.Text.EnclosedDoubleQuotesType
+  fullName: KS.Misc.Text.EnclosedDoubleQuotesType
+  nameWithType: EnclosedDoubleQuotesType
+- uid: KS.Misc.Text.EnclosedDoubleQuotesType.Backticks
+  name: Backticks
+  href: api/KS.Misc.Text.EnclosedDoubleQuotesType.html#KS_Misc_Text_EnclosedDoubleQuotesType_Backticks
+  commentId: F:KS.Misc.Text.EnclosedDoubleQuotesType.Backticks
+  fullName: KS.Misc.Text.EnclosedDoubleQuotesType.Backticks
+  nameWithType: EnclosedDoubleQuotesType.Backticks
+- uid: KS.Misc.Text.EnclosedDoubleQuotesType.DoubleQuotes
+  name: DoubleQuotes
+  href: api/KS.Misc.Text.EnclosedDoubleQuotesType.html#KS_Misc_Text_EnclosedDoubleQuotesType_DoubleQuotes
+  commentId: F:KS.Misc.Text.EnclosedDoubleQuotesType.DoubleQuotes
+  fullName: KS.Misc.Text.EnclosedDoubleQuotesType.DoubleQuotes
+  nameWithType: EnclosedDoubleQuotesType.DoubleQuotes
+- uid: KS.Misc.Text.EnclosedDoubleQuotesType.None
+  name: None
+  href: api/KS.Misc.Text.EnclosedDoubleQuotesType.html#KS_Misc_Text_EnclosedDoubleQuotesType_None
+  commentId: F:KS.Misc.Text.EnclosedDoubleQuotesType.None
+  fullName: KS.Misc.Text.EnclosedDoubleQuotesType.None
+  nameWithType: EnclosedDoubleQuotesType.None
+- uid: KS.Misc.Text.EnclosedDoubleQuotesType.SingleQuotes
+  name: SingleQuotes
+  href: api/KS.Misc.Text.EnclosedDoubleQuotesType.html#KS_Misc_Text_EnclosedDoubleQuotesType_SingleQuotes
+  commentId: F:KS.Misc.Text.EnclosedDoubleQuotesType.SingleQuotes
+  fullName: KS.Misc.Text.EnclosedDoubleQuotesType.SingleQuotes
+  nameWithType: EnclosedDoubleQuotesType.SingleQuotes
 - uid: KS.Misc.Text.Probers.Motd
   name: KS.Misc.Text.Probers.Motd
   href: api/KS.Misc.Text.Probers.Motd.html
@@ -40895,6 +40925,22 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Text.TextTools.FormatString
   nameWithType: TextTools.FormatString
+- uid: KS.Misc.Text.TextTools.GetEnclosedDoubleQuotesType(System.String)
+  name: GetEnclosedDoubleQuotesType(string)
+  href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_GetEnclosedDoubleQuotesType_System_String_
+  commentId: M:KS.Misc.Text.TextTools.GetEnclosedDoubleQuotesType(System.String)
+  name.vb: GetEnclosedDoubleQuotesType(String)
+  fullName: KS.Misc.Text.TextTools.GetEnclosedDoubleQuotesType(string)
+  fullName.vb: KS.Misc.Text.TextTools.GetEnclosedDoubleQuotesType(String)
+  nameWithType: TextTools.GetEnclosedDoubleQuotesType(string)
+  nameWithType.vb: TextTools.GetEnclosedDoubleQuotesType(String)
+- uid: KS.Misc.Text.TextTools.GetEnclosedDoubleQuotesType*
+  name: GetEnclosedDoubleQuotesType
+  href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_GetEnclosedDoubleQuotesType_
+  commentId: Overload:KS.Misc.Text.TextTools.GetEnclosedDoubleQuotesType
+  isSpec: "True"
+  fullName: KS.Misc.Text.TextTools.GetEnclosedDoubleQuotesType
+  nameWithType: TextTools.GetEnclosedDoubleQuotesType
 - uid: KS.Misc.Text.TextTools.GetWrappedSentences(System.String,System.Int32)
   name: GetWrappedSentences(string, int)
   href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_GetWrappedSentences_System_String_System_Int32_

@@ -2796,6 +2796,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Text.EnclosedDoubleQuotesType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Text.EnclosedDoubleQuotesType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Text.Probers.Motd.MalParse.yml",
       "output": {
         ".html": {
