@@ -37762,15 +37762,15 @@ references:
   commentId: T:KS.Languages.LanguageInfo
   fullName: KS.Languages.LanguageInfo
   nameWithType: LanguageInfo
-- uid: KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,Newtonsoft.Json.Linq.JObject)
-  name: LanguageInfo(string, string, bool, JObject)
-  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_Newtonsoft_Json_Linq_JObject_
-  commentId: M:KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,Newtonsoft.Json.Linq.JObject)
-  name.vb: New(String, String, Boolean, JObject)
-  fullName: KS.Languages.LanguageInfo.LanguageInfo(string, string, bool, Newtonsoft.Json.Linq.JObject)
-  fullName.vb: KS.Languages.LanguageInfo.New(String, String, Boolean, Newtonsoft.Json.Linq.JObject)
-  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, JObject)
-  nameWithType.vb: LanguageInfo.New(String, String, Boolean, JObject)
+- uid: KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,Newtonsoft.Json.Linq.JArray)
+  name: LanguageInfo(string, string, bool, JArray)
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_Newtonsoft_Json_Linq_JArray_
+  commentId: M:KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,Newtonsoft.Json.Linq.JArray)
+  name.vb: New(String, String, Boolean, JArray)
+  fullName: KS.Languages.LanguageInfo.LanguageInfo(string, string, bool, Newtonsoft.Json.Linq.JArray)
+  fullName.vb: KS.Languages.LanguageInfo.New(String, String, Boolean, Newtonsoft.Json.Linq.JArray)
+  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, JArray)
+  nameWithType.vb: LanguageInfo.New(String, String, Boolean, JArray)
 - uid: KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32)
   name: LanguageInfo(string, string, bool, int)
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_Int32_
