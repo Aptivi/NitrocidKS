@@ -896,6 +896,76 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encoding.BaseEncodingDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encoding.BaseEncodingDriver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encoding.Bases.AesEncoding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encoding.Bases.AesEncoding.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encoding.Bases.RsaEncoding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encoding.Bases.RsaEncoding.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encoding.Bases.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encoding.Bases.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encoding.EncodingDriverTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encoding.EncodingDriverTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encoding.IEncodingDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encoding.IEncodingDriver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Encoding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Encoding.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.Encryption.BaseEncryptionDriver.yml",
       "output": {
         ".html": {
