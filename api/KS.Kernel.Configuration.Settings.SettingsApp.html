@@ -101,19 +101,19 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp_OpenKey_System_Int32_KS_Kernel_Configuration_Settings_SettingsEntry_KS_Kernel_Configuration_ConfigType_.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(System.Int32%2CKS.Kernel.Configuration.Settings.SettingsEntry%2CKS.Kernel.Configuration.ConfigType)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp_OpenKey_System_Int32_KS_Kernel_Configuration_Settings_SettingsEntry_KS_Kernel_Configuration_Instances_BaseKernelConfig_.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(System.Int32%2CKS.Kernel.Configuration.Settings.SettingsEntry%2CKS.Kernel.Configuration.Instances.BaseKernelConfig)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L356">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L230">View Source</a>
   </span>
   <a id="KS_Kernel_Configuration_Settings_SettingsApp_OpenKey_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenKey*"></a>
-  <h4 id="KS_Kernel_Configuration_Settings_SettingsApp_OpenKey_System_Int32_KS_Kernel_Configuration_Settings_SettingsEntry_KS_Kernel_Configuration_ConfigType_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(System.Int32,KS.Kernel.Configuration.Settings.SettingsEntry,KS.Kernel.Configuration.ConfigType)">OpenKey(int, SettingsEntry, ConfigType)</h4>
+  <h4 id="KS_Kernel_Configuration_Settings_SettingsApp_OpenKey_System_Int32_KS_Kernel_Configuration_Settings_SettingsEntry_KS_Kernel_Configuration_Instances_BaseKernelConfig_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenKey(System.Int32,KS.Kernel.Configuration.Settings.SettingsEntry,KS.Kernel.Configuration.Instances.BaseKernelConfig)">OpenKey(int, SettingsEntry, BaseKernelConfig)</h4>
   <div class="markdown level1 summary"><p>Open a key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OpenKey(int KeyNumber, SettingsEntry SettingsSection, ConfigType SettingsType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void OpenKey(int KeyNumber, SettingsEntry SettingsSection, BaseKernelConfig settingsType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -138,8 +138,8 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="KS.Kernel.Configuration.ConfigType.html">ConfigType</a></td>
-        <td><span class="parametername">SettingsType</span></td>
+        <td><a class="xref" href="KS.Kernel.Configuration.Instances.BaseKernelConfig.html">BaseKernelConfig</a></td>
+        <td><span class="parametername">settingsType</span></td>
         <td><p>Settings type</p>
 </td>
       </tr>
@@ -150,11 +150,11 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_KS_Kernel_Configuration_ConfigType_.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(KS.Kernel.Configuration.ConfigType)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L58">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L47">View Source</a>
   </span>
   <a id="KS_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenMainPage*"></a>
   <h4 id="KS_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_KS_Kernel_Configuration_ConfigType_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(KS.Kernel.Configuration.ConfigType)">OpenMainPage(ConfigType)</h4>
-  <div class="markdown level1 summary"><p>Main page</p>
+  <div class="markdown level1 summary"><p>Opens the main page for settings, listing all the sections that are configurable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -174,25 +174,94 @@
       <tr>
         <td><a class="xref" href="KS.Kernel.Configuration.ConfigType.html">ConfigType</a></td>
         <td><span class="parametername">SettingsType</span></td>
-        <td></td>
+        <td><p>Settings type to use for listing settings sections</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp_OpenSection_System_String_KS_Kernel_Configuration_Settings_SettingsEntry_KS_Kernel_Configuration_ConfigType_.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(System.String%2CKS.Kernel.Configuration.Settings.SettingsEntry%2CKS.Kernel.Configuration.ConfigType)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_KS_Kernel_Configuration_Instances_BaseKernelConfig_.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(KS.Kernel.Configuration.Instances.BaseKernelConfig)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L214">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L61">View Source</a>
+  </span>
+  <a id="KS_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenMainPage*"></a>
+  <h4 id="KS_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_KS_Kernel_Configuration_Instances_BaseKernelConfig_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(KS.Kernel.Configuration.Instances.BaseKernelConfig)">OpenMainPage(BaseKernelConfig)</h4>
+  <div class="markdown level1 summary"><p>Opens the main page for settings, listing all the sections that are configurable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenMainPage(BaseKernelConfig settingsType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Configuration.Instances.BaseKernelConfig.html">BaseKernelConfig</a></td>
+        <td><span class="parametername">settingsType</span></td>
+        <td><p>Type of settings</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_System_String_.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L54">View Source</a>
+  </span>
+  <a id="KS_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenMainPage*"></a>
+  <h4 id="KS_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_System_String_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(System.String)">OpenMainPage(string)</h4>
+  <div class="markdown level1 summary"><p>Opens the main page for settings, listing all the sections that are configurable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenMainPage(string settingsType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">settingsType</span></td>
+        <td><p>Type of settings</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp_OpenSection_System_String_KS_Kernel_Configuration_Settings_SettingsEntry_KS_Kernel_Configuration_Instances_BaseKernelConfig_.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(System.String%2CKS.Kernel.Configuration.Settings.SettingsEntry%2CKS.Kernel.Configuration.Instances.BaseKernelConfig)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L141">View Source</a>
   </span>
   <a id="KS_Kernel_Configuration_Settings_SettingsApp_OpenSection_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenSection*"></a>
-  <h4 id="KS_Kernel_Configuration_Settings_SettingsApp_OpenSection_System_String_KS_Kernel_Configuration_Settings_SettingsEntry_KS_Kernel_Configuration_ConfigType_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(System.String,KS.Kernel.Configuration.Settings.SettingsEntry,KS.Kernel.Configuration.ConfigType)">OpenSection(string, SettingsEntry, ConfigType)</h4>
+  <h4 id="KS_Kernel_Configuration_Settings_SettingsApp_OpenSection_System_String_KS_Kernel_Configuration_Settings_SettingsEntry_KS_Kernel_Configuration_Instances_BaseKernelConfig_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.OpenSection(System.String,KS.Kernel.Configuration.Settings.SettingsEntry,KS.Kernel.Configuration.Instances.BaseKernelConfig)">OpenSection(string, SettingsEntry, BaseKernelConfig)</h4>
   <div class="markdown level1 summary"><p>Open section</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OpenSection(string Section, SettingsEntry SettingsSection, ConfigType SettingsType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void OpenSection(string Section, SettingsEntry SettingsSection, BaseKernelConfig settingsType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -217,28 +286,28 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="KS.Kernel.Configuration.ConfigType.html">ConfigType</a></td>
-        <td><span class="parametername">SettingsType</span></td>
-        <td><p>Settings type</p>
+        <td><a class="xref" href="KS.Kernel.Configuration.Instances.BaseKernelConfig.html">BaseKernelConfig</a></td>
+        <td><span class="parametername">settingsType</span></td>
+        <td><p>Type of settings</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp_VariableFinder_KS_Kernel_Configuration_Settings_SettingsEntry___KS_Kernel_Configuration_ConfigType_.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder(KS.Kernel.Configuration.Settings.SettingsEntry%5B%5D%2CKS.Kernel.Configuration.ConfigType)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp_VariableFinder_KS_Kernel_Configuration_Instances_BaseKernelConfig_.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder(KS.Kernel.Configuration.Instances.BaseKernelConfig)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L878">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L274">View Source</a>
   </span>
   <a id="KS_Kernel_Configuration_Settings_SettingsApp_VariableFinder_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder*"></a>
-  <h4 id="KS_Kernel_Configuration_Settings_SettingsApp_VariableFinder_KS_Kernel_Configuration_Settings_SettingsEntry___KS_Kernel_Configuration_ConfigType_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder(KS.Kernel.Configuration.Settings.SettingsEntry[],KS.Kernel.Configuration.ConfigType)">VariableFinder(SettingsEntry[], ConfigType)</h4>
+  <h4 id="KS_Kernel_Configuration_Settings_SettingsApp_VariableFinder_KS_Kernel_Configuration_Instances_BaseKernelConfig_" data-uid="KS.Kernel.Configuration.Settings.SettingsApp.VariableFinder(KS.Kernel.Configuration.Instances.BaseKernelConfig)">VariableFinder(BaseKernelConfig)</h4>
   <div class="markdown level1 summary"><p>A sub for variable finding prompt</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void VariableFinder(SettingsEntry[] SettingsEntries, ConfigType SettingsType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void VariableFinder(BaseKernelConfig configType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -251,13 +320,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="KS.Kernel.Configuration.Settings.SettingsEntry.html">SettingsEntry</a>[]</td>
-        <td><span class="parametername">SettingsEntries</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="KS.Kernel.Configuration.ConfigType.html">ConfigType</a></td>
-        <td><span class="parametername">SettingsType</span></td>
+        <td><a class="xref" href="KS.Kernel.Configuration.Instances.BaseKernelConfig.html">BaseKernelConfig</a></td>
+        <td><span class="parametername">configType</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -274,7 +338,7 @@
                     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Configuration_Settings_SettingsApp.md&amp;value=---%0Auid%3A%20KS.Kernel.Configuration.Settings.SettingsApp%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L51" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L40" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -1816,6 +1816,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Configuration.Instances.BaseKernelConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Configuration.Instances.BaseKernelConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Configuration.Instances.IKernelConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Configuration.Instances.IKernelConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Configuration.Instances.KernelMainConfig.yml",
       "output": {
         ".html": {
