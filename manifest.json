@@ -1856,16 +1856,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Configuration.Instances.KernelSplashConfig.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Configuration.Instances.KernelSplashConfig.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Configuration.Instances.yml",
       "output": {
         ".html": {
