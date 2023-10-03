@@ -19506,6 +19506,30 @@ references:
   commentId: M:KS.Kernel.Configuration.ConfigTools.CheckConfigVariables
   fullName: KS.Kernel.Configuration.ConfigTools.CheckConfigVariables()
   nameWithType: ConfigTools.CheckConfigVariables()
+- uid: KS.Kernel.Configuration.ConfigTools.CheckConfigVariables(KS.Kernel.Configuration.Instances.BaseKernelConfig)
+  name: CheckConfigVariables(BaseKernelConfig)
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_CheckConfigVariables_KS_Kernel_Configuration_Instances_BaseKernelConfig_
+  commentId: M:KS.Kernel.Configuration.ConfigTools.CheckConfigVariables(KS.Kernel.Configuration.Instances.BaseKernelConfig)
+  fullName: KS.Kernel.Configuration.ConfigTools.CheckConfigVariables(KS.Kernel.Configuration.Instances.BaseKernelConfig)
+  nameWithType: ConfigTools.CheckConfigVariables(BaseKernelConfig)
+- uid: KS.Kernel.Configuration.ConfigTools.CheckConfigVariables(KS.Kernel.Configuration.Settings.SettingsEntry[],KS.Kernel.Configuration.Instances.BaseKernelConfig)
+  name: CheckConfigVariables(SettingsEntry[], BaseKernelConfig)
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_CheckConfigVariables_KS_Kernel_Configuration_Settings_SettingsEntry___KS_Kernel_Configuration_Instances_BaseKernelConfig_
+  commentId: M:KS.Kernel.Configuration.ConfigTools.CheckConfigVariables(KS.Kernel.Configuration.Settings.SettingsEntry[],KS.Kernel.Configuration.Instances.BaseKernelConfig)
+  name.vb: CheckConfigVariables(SettingsEntry(), BaseKernelConfig)
+  fullName: KS.Kernel.Configuration.ConfigTools.CheckConfigVariables(KS.Kernel.Configuration.Settings.SettingsEntry[], KS.Kernel.Configuration.Instances.BaseKernelConfig)
+  fullName.vb: KS.Kernel.Configuration.ConfigTools.CheckConfigVariables(KS.Kernel.Configuration.Settings.SettingsEntry(), KS.Kernel.Configuration.Instances.BaseKernelConfig)
+  nameWithType: ConfigTools.CheckConfigVariables(SettingsEntry[], BaseKernelConfig)
+  nameWithType.vb: ConfigTools.CheckConfigVariables(SettingsEntry(), BaseKernelConfig)
+- uid: KS.Kernel.Configuration.ConfigTools.CheckConfigVariables(System.String)
+  name: CheckConfigVariables(string)
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_CheckConfigVariables_System_String_
+  commentId: M:KS.Kernel.Configuration.ConfigTools.CheckConfigVariables(System.String)
+  name.vb: CheckConfigVariables(String)
+  fullName: KS.Kernel.Configuration.ConfigTools.CheckConfigVariables(string)
+  fullName.vb: KS.Kernel.Configuration.ConfigTools.CheckConfigVariables(String)
+  nameWithType: ConfigTools.CheckConfigVariables(string)
+  nameWithType.vb: ConfigTools.CheckConfigVariables(String)
 - uid: KS.Kernel.Configuration.ConfigTools.CheckConfigVariables*
   name: CheckConfigVariables
   href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_CheckConfigVariables_
