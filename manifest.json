@@ -3616,86 +3616,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailDefaultPreset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailDefaultPreset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLine1Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLine1Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLine2Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLine2Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLine3Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLine3Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLineBG1Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLineBG1Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLineBG2Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLineBG2Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLineBG3Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Mail.MailPowerLineBG3Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Prompts.Presets.Mail.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Prompts.Presets.Mail.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Prompts.PromptPresetBase.yml",
       "output": {
         ".html": {
@@ -3876,16 +3796,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Commands.HelpSystem.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Commands.HelpSystem.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.Commands.ICommand.yml",
       "output": {
         ".html": {
@@ -3910,6 +3820,26 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Commands.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Help.HelpPrint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Help.HelpPrint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Help.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Help.html"
         }
       },
       "version": ""
@@ -5070,6 +5000,86 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Mail.MailShellCommon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Presets.MailDefaultPreset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Presets.MailDefaultPreset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Presets.MailPowerLine1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Presets.MailPowerLine1Preset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Presets.MailPowerLine2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Presets.MailPowerLine2Preset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Presets.MailPowerLine3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Presets.MailPowerLine3Preset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Presets.MailPowerLineBG1Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Presets.MailPowerLineBG1Preset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Presets.MailPowerLineBG2Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Presets.MailPowerLineBG2Preset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Presets.MailPowerLineBG3Preset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Presets.MailPowerLineBG3Preset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.Shells.Mail.Presets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.Shells.Mail.Presets.html"
         }
       },
       "version": ""
