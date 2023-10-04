@@ -19203,15 +19203,6 @@ references:
   commentId: M:KS.Kernel.Configuration.Config.CreateConfig
   fullName: KS.Kernel.Configuration.Config.CreateConfig()
   nameWithType: Config.CreateConfig()
-- uid: KS.Kernel.Configuration.Config.CreateConfig(KS.Kernel.Configuration.ConfigType,System.String)
-  name: CreateConfig(ConfigType, string)
-  href: api/KS.Kernel.Configuration.Config.html#KS_Kernel_Configuration_Config_CreateConfig_KS_Kernel_Configuration_ConfigType_System_String_
-  commentId: M:KS.Kernel.Configuration.Config.CreateConfig(KS.Kernel.Configuration.ConfigType,System.String)
-  name.vb: CreateConfig(ConfigType, String)
-  fullName: KS.Kernel.Configuration.Config.CreateConfig(KS.Kernel.Configuration.ConfigType, string)
-  fullName.vb: KS.Kernel.Configuration.Config.CreateConfig(KS.Kernel.Configuration.ConfigType, String)
-  nameWithType: Config.CreateConfig(ConfigType, string)
-  nameWithType.vb: Config.CreateConfig(ConfigType, String)
 - uid: KS.Kernel.Configuration.Config.CreateConfig(KS.Kernel.Configuration.Instances.BaseKernelConfig)
   name: CreateConfig(BaseKernelConfig)
   href: api/KS.Kernel.Configuration.Config.html#KS_Kernel_Configuration_Config_CreateConfig_KS_Kernel_Configuration_Instances_BaseKernelConfig_
@@ -19243,12 +19234,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Config.CreateConfig
   nameWithType: Config.CreateConfig
-- uid: KS.Kernel.Configuration.Config.GetKernelConfig(KS.Kernel.Configuration.ConfigType)
-  name: GetKernelConfig(ConfigType)
-  href: api/KS.Kernel.Configuration.Config.html#KS_Kernel_Configuration_Config_GetKernelConfig_KS_Kernel_Configuration_ConfigType_
-  commentId: M:KS.Kernel.Configuration.Config.GetKernelConfig(KS.Kernel.Configuration.ConfigType)
-  fullName: KS.Kernel.Configuration.Config.GetKernelConfig(KS.Kernel.Configuration.ConfigType)
-  nameWithType: Config.GetKernelConfig(ConfigType)
 - uid: KS.Kernel.Configuration.Config.GetKernelConfig(System.String)
   name: GetKernelConfig(string)
   href: api/KS.Kernel.Configuration.Config.html#KS_Kernel_Configuration_Config_GetKernelConfig_System_String_
@@ -19310,21 +19295,6 @@ references:
   commentId: M:KS.Kernel.Configuration.Config.ReadConfig
   fullName: KS.Kernel.Configuration.Config.ReadConfig()
   nameWithType: Config.ReadConfig()
-- uid: KS.Kernel.Configuration.Config.ReadConfig(KS.Kernel.Configuration.ConfigType)
-  name: ReadConfig(ConfigType)
-  href: api/KS.Kernel.Configuration.Config.html#KS_Kernel_Configuration_Config_ReadConfig_KS_Kernel_Configuration_ConfigType_
-  commentId: M:KS.Kernel.Configuration.Config.ReadConfig(KS.Kernel.Configuration.ConfigType)
-  fullName: KS.Kernel.Configuration.Config.ReadConfig(KS.Kernel.Configuration.ConfigType)
-  nameWithType: Config.ReadConfig(ConfigType)
-- uid: KS.Kernel.Configuration.Config.ReadConfig(KS.Kernel.Configuration.ConfigType,System.String)
-  name: ReadConfig(ConfigType, string)
-  href: api/KS.Kernel.Configuration.Config.html#KS_Kernel_Configuration_Config_ReadConfig_KS_Kernel_Configuration_ConfigType_System_String_
-  commentId: M:KS.Kernel.Configuration.Config.ReadConfig(KS.Kernel.Configuration.ConfigType,System.String)
-  name.vb: ReadConfig(ConfigType, String)
-  fullName: KS.Kernel.Configuration.Config.ReadConfig(KS.Kernel.Configuration.ConfigType, string)
-  fullName.vb: KS.Kernel.Configuration.Config.ReadConfig(KS.Kernel.Configuration.ConfigType, String)
-  nameWithType: Config.ReadConfig(ConfigType, string)
-  nameWithType.vb: Config.ReadConfig(ConfigType, String)
 - uid: KS.Kernel.Configuration.Config.ReadConfig(KS.Kernel.Configuration.Instances.BaseKernelConfig)
   name: ReadConfig(BaseKernelConfig)
   href: api/KS.Kernel.Configuration.Config.html#KS_Kernel_Configuration_Config_ReadConfig_KS_Kernel_Configuration_Instances_BaseKernelConfig_
@@ -19366,15 +19336,6 @@ references:
   commentId: M:KS.Kernel.Configuration.Config.TryCreateConfig
   fullName: KS.Kernel.Configuration.Config.TryCreateConfig()
   nameWithType: Config.TryCreateConfig()
-- uid: KS.Kernel.Configuration.Config.TryCreateConfig(KS.Kernel.Configuration.ConfigType,System.String)
-  name: TryCreateConfig(ConfigType, string)
-  href: api/KS.Kernel.Configuration.Config.html#KS_Kernel_Configuration_Config_TryCreateConfig_KS_Kernel_Configuration_ConfigType_System_String_
-  commentId: M:KS.Kernel.Configuration.Config.TryCreateConfig(KS.Kernel.Configuration.ConfigType,System.String)
-  name.vb: TryCreateConfig(ConfigType, String)
-  fullName: KS.Kernel.Configuration.Config.TryCreateConfig(KS.Kernel.Configuration.ConfigType, string)
-  fullName.vb: KS.Kernel.Configuration.Config.TryCreateConfig(KS.Kernel.Configuration.ConfigType, String)
-  nameWithType: Config.TryCreateConfig(ConfigType, string)
-  nameWithType.vb: Config.TryCreateConfig(ConfigType, String)
 - uid: KS.Kernel.Configuration.Config.TryCreateConfig(KS.Kernel.Configuration.Instances.BaseKernelConfig)
   name: TryCreateConfig(BaseKernelConfig)
   href: api/KS.Kernel.Configuration.Config.html#KS_Kernel_Configuration_Config_TryCreateConfig_KS_Kernel_Configuration_Instances_BaseKernelConfig_
@@ -19412,21 +19373,6 @@ references:
   commentId: M:KS.Kernel.Configuration.Config.TryReadConfig
   fullName: KS.Kernel.Configuration.Config.TryReadConfig()
   nameWithType: Config.TryReadConfig()
-- uid: KS.Kernel.Configuration.Config.TryReadConfig(KS.Kernel.Configuration.ConfigType)
-  name: TryReadConfig(ConfigType)
-  href: api/KS.Kernel.Configuration.Config.html#KS_Kernel_Configuration_Config_TryReadConfig_KS_Kernel_Configuration_ConfigType_
-  commentId: M:KS.Kernel.Configuration.Config.TryReadConfig(KS.Kernel.Configuration.ConfigType)
-  fullName: KS.Kernel.Configuration.Config.TryReadConfig(KS.Kernel.Configuration.ConfigType)
-  nameWithType: Config.TryReadConfig(ConfigType)
-- uid: KS.Kernel.Configuration.Config.TryReadConfig(KS.Kernel.Configuration.ConfigType,System.String)
-  name: TryReadConfig(ConfigType, string)
-  href: api/KS.Kernel.Configuration.Config.html#KS_Kernel_Configuration_Config_TryReadConfig_KS_Kernel_Configuration_ConfigType_System_String_
-  commentId: M:KS.Kernel.Configuration.Config.TryReadConfig(KS.Kernel.Configuration.ConfigType,System.String)
-  name.vb: TryReadConfig(ConfigType, String)
-  fullName: KS.Kernel.Configuration.Config.TryReadConfig(KS.Kernel.Configuration.ConfigType, string)
-  fullName.vb: KS.Kernel.Configuration.Config.TryReadConfig(KS.Kernel.Configuration.ConfigType, String)
-  nameWithType: Config.TryReadConfig(ConfigType, string)
-  nameWithType.vb: Config.TryReadConfig(ConfigType, String)
 - uid: KS.Kernel.Configuration.Config.TryReadConfig*
   name: TryReadConfig
   href: api/KS.Kernel.Configuration.Config.html#KS_Kernel_Configuration_Config_TryReadConfig_
@@ -19636,19 +19582,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.ConfigTools.IsCustomSettingRegistered
   nameWithType: ConfigTools.IsCustomSettingRegistered
-- uid: KS.Kernel.Configuration.ConfigTools.OpenSettingsResource(KS.Kernel.Configuration.ConfigType)
-  name: OpenSettingsResource(ConfigType)
-  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_OpenSettingsResource_KS_Kernel_Configuration_ConfigType_
-  commentId: M:KS.Kernel.Configuration.ConfigTools.OpenSettingsResource(KS.Kernel.Configuration.ConfigType)
-  fullName: KS.Kernel.Configuration.ConfigTools.OpenSettingsResource(KS.Kernel.Configuration.ConfigType)
-  nameWithType: ConfigTools.OpenSettingsResource(ConfigType)
-- uid: KS.Kernel.Configuration.ConfigTools.OpenSettingsResource*
-  name: OpenSettingsResource
-  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_OpenSettingsResource_
-  commentId: Overload:KS.Kernel.Configuration.ConfigTools.OpenSettingsResource
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.ConfigTools.OpenSettingsResource
-  nameWithType: ConfigTools.OpenSettingsResource
 - uid: KS.Kernel.Configuration.ConfigTools.RegisterCustomSetting(KS.Kernel.Configuration.Instances.BaseKernelConfig)
   name: RegisterCustomSetting(BaseKernelConfig)
   href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_RegisterCustomSetting_KS_Kernel_Configuration_Instances_BaseKernelConfig_
@@ -19675,19 +19608,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.ConfigTools.ReloadConfig
   nameWithType: ConfigTools.ReloadConfig
-- uid: KS.Kernel.Configuration.ConfigTools.TranslateBuiltinConfigType(KS.Kernel.Configuration.ConfigType)
-  name: TranslateBuiltinConfigType(ConfigType)
-  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_TranslateBuiltinConfigType_KS_Kernel_Configuration_ConfigType_
-  commentId: M:KS.Kernel.Configuration.ConfigTools.TranslateBuiltinConfigType(KS.Kernel.Configuration.ConfigType)
-  fullName: KS.Kernel.Configuration.ConfigTools.TranslateBuiltinConfigType(KS.Kernel.Configuration.ConfigType)
-  nameWithType: ConfigTools.TranslateBuiltinConfigType(ConfigType)
-- uid: KS.Kernel.Configuration.ConfigTools.TranslateBuiltinConfigType*
-  name: TranslateBuiltinConfigType
-  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_TranslateBuiltinConfigType_
-  commentId: Overload:KS.Kernel.Configuration.ConfigTools.TranslateBuiltinConfigType
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.ConfigTools.TranslateBuiltinConfigType
-  nameWithType: ConfigTools.TranslateBuiltinConfigType
 - uid: KS.Kernel.Configuration.ConfigTools.TryReloadConfig
   name: TryReloadConfig()
   href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_TryReloadConfig
@@ -19717,24 +19637,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.ConfigTools.UnregisterCustomSetting
   nameWithType: ConfigTools.UnregisterCustomSetting
-- uid: KS.Kernel.Configuration.ConfigType
-  name: ConfigType
-  href: api/KS.Kernel.Configuration.ConfigType.html
-  commentId: T:KS.Kernel.Configuration.ConfigType
-  fullName: KS.Kernel.Configuration.ConfigType
-  nameWithType: ConfigType
-- uid: KS.Kernel.Configuration.ConfigType.Kernel
-  name: Kernel
-  href: api/KS.Kernel.Configuration.ConfigType.html#KS_Kernel_Configuration_ConfigType_Kernel
-  commentId: F:KS.Kernel.Configuration.ConfigType.Kernel
-  fullName: KS.Kernel.Configuration.ConfigType.Kernel
-  nameWithType: ConfigType.Kernel
-- uid: KS.Kernel.Configuration.ConfigType.Screensaver
-  name: Screensaver
-  href: api/KS.Kernel.Configuration.ConfigType.html#KS_Kernel_Configuration_ConfigType_Screensaver
-  commentId: F:KS.Kernel.Configuration.ConfigType.Screensaver
-  fullName: KS.Kernel.Configuration.ConfigType.Screensaver
-  nameWithType: ConfigType.Screensaver
 - uid: KS.Kernel.Configuration.Instances
   name: KS.Kernel.Configuration.Instances
   href: api/KS.Kernel.Configuration.Instances.html
@@ -23881,12 +23783,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Settings.SettingsApp.OpenKey
   nameWithType: SettingsApp.OpenKey
-- uid: KS.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(KS.Kernel.Configuration.ConfigType)
-  name: OpenMainPage(ConfigType)
-  href: api/KS.Kernel.Configuration.Settings.SettingsApp.html#KS_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_KS_Kernel_Configuration_ConfigType_
-  commentId: M:KS.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(KS.Kernel.Configuration.ConfigType)
-  fullName: KS.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(KS.Kernel.Configuration.ConfigType)
-  nameWithType: SettingsApp.OpenMainPage(ConfigType)
 - uid: KS.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(KS.Kernel.Configuration.Instances.BaseKernelConfig)
   name: OpenMainPage(BaseKernelConfig)
   href: api/KS.Kernel.Configuration.Settings.SettingsApp.html#KS_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_KS_Kernel_Configuration_Instances_BaseKernelConfig_
