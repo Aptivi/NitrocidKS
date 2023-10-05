@@ -20129,6 +20129,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.CheckUpdateStart
   nameWithType: KernelMainConfig.CheckUpdateStart
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ClassicSettingsHeaderStyle
+  name: ClassicSettingsHeaderStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ClassicSettingsHeaderStyle
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.ClassicSettingsHeaderStyle
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.ClassicSettingsHeaderStyle
+  nameWithType: KernelMainConfig.ClassicSettingsHeaderStyle
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ClassicSettingsHeaderStyle*
+  name: ClassicSettingsHeaderStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ClassicSettingsHeaderStyle_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.ClassicSettingsHeaderStyle
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.ClassicSettingsHeaderStyle
+  nameWithType: KernelMainConfig.ClassicSettingsHeaderStyle
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ClearOnLogin
   name: ClearOnLogin
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ClearOnLogin
