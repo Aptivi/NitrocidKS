@@ -1114,6 +1114,19 @@ references:
   commentId: T:KS.ConsoleBase.ConsoleResizeListener
   fullName: KS.ConsoleBase.ConsoleResizeListener
   nameWithType: ConsoleResizeListener
+- uid: KS.ConsoleBase.ConsoleResizeListener.GetCurrentConsoleSize
+  name: GetCurrentConsoleSize()
+  href: api/KS.ConsoleBase.ConsoleResizeListener.html#KS_ConsoleBase_ConsoleResizeListener_GetCurrentConsoleSize
+  commentId: M:KS.ConsoleBase.ConsoleResizeListener.GetCurrentConsoleSize
+  fullName: KS.ConsoleBase.ConsoleResizeListener.GetCurrentConsoleSize()
+  nameWithType: ConsoleResizeListener.GetCurrentConsoleSize()
+- uid: KS.ConsoleBase.ConsoleResizeListener.GetCurrentConsoleSize*
+  name: GetCurrentConsoleSize
+  href: api/KS.ConsoleBase.ConsoleResizeListener.html#KS_ConsoleBase_ConsoleResizeListener_GetCurrentConsoleSize_
+  commentId: Overload:KS.ConsoleBase.ConsoleResizeListener.GetCurrentConsoleSize
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ConsoleResizeListener.GetCurrentConsoleSize
+  nameWithType: ConsoleResizeListener.GetCurrentConsoleSize
 - uid: KS.ConsoleBase.ConsoleResizeListener.WasResized(System.Boolean)
   name: WasResized(bool)
   href: api/KS.ConsoleBase.ConsoleResizeListener.html#KS_ConsoleBase_ConsoleResizeListener_WasResized_System_Boolean_

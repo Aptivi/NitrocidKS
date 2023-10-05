@@ -62,7 +62,7 @@
   "api/KS.ConsoleBase.ConsoleResizeListener.html": {
     "href": "api/KS.ConsoleBase.ConsoleResizeListener.html",
     "title": "Class ConsoleResizeListener | Nitrocid KS API - Aptivi",
-    "keywords": "Class ConsoleResizeListener The console resize listener module Inheritance object ConsoleResizeListener Namespace: KS.ConsoleBase Assembly: Nitrocid.dll Syntax public static class ConsoleResizeListener Methods | Edit this page View Source WasResized(bool) This property checks to see if the console has been resized since the last time it has been called or the listener has started. Declaration public static bool WasResized(bool reset = true) Parameters Type Name Description bool reset Reset the resized value once this is called Returns Type Description bool"
+    "keywords": "Class ConsoleResizeListener The console resize listener module Inheritance object ConsoleResizeListener Namespace: KS.ConsoleBase Assembly: Nitrocid.dll Syntax public static class ConsoleResizeListener Methods | Edit this page View Source GetCurrentConsoleSize() Gets the console size from the cached window height and width position Declaration public static (int Width, int Height) GetCurrentConsoleSize() Returns Type Description (int, int) | Edit this page View Source WasResized(bool) This property checks to see if the console has been resized since the last time it has been called or the listener has started. Declaration public static bool WasResized(bool reset = true) Parameters Type Name Description bool reset Reset the resized value once this is called Returns Type Description bool"
   },
   "api/KS.ConsoleBase.ConsoleWrapper.html": {
     "href": "api/KS.ConsoleBase.ConsoleWrapper.html",
