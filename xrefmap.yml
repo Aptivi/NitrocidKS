@@ -17640,6 +17640,12 @@ references:
   commentId: F:KS.Files.KernelPathType.Configuration
   fullName: KS.Files.KernelPathType.Configuration
   nameWithType: KernelPathType.Configuration
+- uid: KS.Files.KernelPathType.Consents
+  name: Consents
+  href: api/KS.Files.KernelPathType.html#KS_Files_KernelPathType_Consents
+  commentId: F:KS.Files.KernelPathType.Consents
+  fullName: KS.Files.KernelPathType.Consents
+  nameWithType: KernelPathType.Consents
 - uid: KS.Files.KernelPathType.Contacts
   name: Contacts
   href: api/KS.Files.KernelPathType.html#KS_Files_KernelPathType_Contacts
@@ -18553,6 +18559,19 @@ references:
   isSpec: "True"
   fullName: KS.Files.Paths.ConfigurationPath
   nameWithType: Paths.ConfigurationPath
+- uid: KS.Files.Paths.ConsentsPath
+  name: ConsentsPath
+  href: api/KS.Files.Paths.html#KS_Files_Paths_ConsentsPath
+  commentId: P:KS.Files.Paths.ConsentsPath
+  fullName: KS.Files.Paths.ConsentsPath
+  nameWithType: Paths.ConsentsPath
+- uid: KS.Files.Paths.ConsentsPath*
+  name: ConsentsPath
+  href: api/KS.Files.Paths.html#KS_Files_Paths_ConsentsPath_
+  commentId: Overload:KS.Files.Paths.ConsentsPath
+  isSpec: "True"
+  fullName: KS.Files.Paths.ConsentsPath
+  nameWithType: Paths.ConsentsPath
 - uid: KS.Files.Paths.ContactsImportPath
   name: ContactsImportPath
   href: api/KS.Files.Paths.html#KS_Files_Paths_ContactsImportPath
@@ -27035,6 +27054,12 @@ references:
   commentId: F:KS.Kernel.Exceptions.KernelExceptionType.PermissionManagement
   fullName: KS.Kernel.Exceptions.KernelExceptionType.PermissionManagement
   nameWithType: KernelExceptionType.PermissionManagement
+- uid: KS.Kernel.Exceptions.KernelExceptionType.PrivacyConsent
+  name: PrivacyConsent
+  href: api/KS.Kernel.Exceptions.KernelExceptionType.html#KS_Kernel_Exceptions_KernelExceptionType_PrivacyConsent
+  commentId: F:KS.Kernel.Exceptions.KernelExceptionType.PrivacyConsent
+  fullName: KS.Kernel.Exceptions.KernelExceptionType.PrivacyConsent
+  nameWithType: KernelExceptionType.PrivacyConsent
 - uid: KS.Kernel.Exceptions.KernelExceptionType.RSSNetwork
   name: RSSNetwork
   href: api/KS.Kernel.Exceptions.KernelExceptionType.html#KS_Kernel_Exceptions_KernelExceptionType_RSSNetwork
@@ -36333,6 +36358,160 @@ references:
   isSpec: "True"
   fullName: KS.Resources.ThemesResources.ResourceManager
   nameWithType: ThemesResources.ResourceManager
+- uid: KS.Security.Privacy
+  name: KS.Security.Privacy
+  href: api/KS.Security.Privacy.html
+  commentId: N:KS.Security.Privacy
+  fullName: KS.Security.Privacy
+  nameWithType: KS.Security.Privacy
+- uid: KS.Security.Privacy.Consents
+  name: KS.Security.Privacy.Consents
+  href: api/KS.Security.Privacy.Consents.html
+  commentId: N:KS.Security.Privacy.Consents
+  fullName: KS.Security.Privacy.Consents
+  nameWithType: KS.Security.Privacy.Consents
+- uid: KS.Security.Privacy.Consents.ConsentedPermission
+  name: ConsentedPermission
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html
+  commentId: T:KS.Security.Privacy.Consents.ConsentedPermission
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission
+  nameWithType: ConsentedPermission
+- uid: KS.Security.Privacy.Consents.ConsentedPermission.Context
+  name: Context
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_Context
+  commentId: P:KS.Security.Privacy.Consents.ConsentedPermission.Context
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission.Context
+  nameWithType: ConsentedPermission.Context
+- uid: KS.Security.Privacy.Consents.ConsentedPermission.Context*
+  name: Context
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_Context_
+  commentId: Overload:KS.Security.Privacy.Consents.ConsentedPermission.Context
+  isSpec: "True"
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission.Context
+  nameWithType: ConsentedPermission.Context
+- uid: KS.Security.Privacy.Consents.ConsentedPermission.Equals(KS.Security.Privacy.Consents.ConsentedPermission)
+  name: Equals(ConsentedPermission)
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_Equals_KS_Security_Privacy_Consents_ConsentedPermission_
+  commentId: M:KS.Security.Privacy.Consents.ConsentedPermission.Equals(KS.Security.Privacy.Consents.ConsentedPermission)
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission.Equals(KS.Security.Privacy.Consents.ConsentedPermission)
+  nameWithType: ConsentedPermission.Equals(ConsentedPermission)
+- uid: KS.Security.Privacy.Consents.ConsentedPermission.Equals(System.Object)
+  name: Equals(object)
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_Equals_System_Object_
+  commentId: M:KS.Security.Privacy.Consents.ConsentedPermission.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission.Equals(object)
+  fullName.vb: KS.Security.Privacy.Consents.ConsentedPermission.Equals(Object)
+  nameWithType: ConsentedPermission.Equals(object)
+  nameWithType.vb: ConsentedPermission.Equals(Object)
+- uid: KS.Security.Privacy.Consents.ConsentedPermission.Equals*
+  name: Equals
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_Equals_
+  commentId: Overload:KS.Security.Privacy.Consents.ConsentedPermission.Equals
+  isSpec: "True"
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission.Equals
+  nameWithType: ConsentedPermission.Equals
+- uid: KS.Security.Privacy.Consents.ConsentedPermission.GetHashCode
+  name: GetHashCode()
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_GetHashCode
+  commentId: M:KS.Security.Privacy.Consents.ConsentedPermission.GetHashCode
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission.GetHashCode()
+  nameWithType: ConsentedPermission.GetHashCode()
+- uid: KS.Security.Privacy.Consents.ConsentedPermission.GetHashCode*
+  name: GetHashCode
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_GetHashCode_
+  commentId: Overload:KS.Security.Privacy.Consents.ConsentedPermission.GetHashCode
+  isSpec: "True"
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission.GetHashCode
+  nameWithType: ConsentedPermission.GetHashCode
+- uid: KS.Security.Privacy.Consents.ConsentedPermission.Type
+  name: Type
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_Type
+  commentId: P:KS.Security.Privacy.Consents.ConsentedPermission.Type
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission.Type
+  nameWithType: ConsentedPermission.Type
+- uid: KS.Security.Privacy.Consents.ConsentedPermission.Type*
+  name: Type
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_Type_
+  commentId: Overload:KS.Security.Privacy.Consents.ConsentedPermission.Type
+  isSpec: "True"
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission.Type
+  nameWithType: ConsentedPermission.Type
+- uid: KS.Security.Privacy.Consents.ConsentedPermission.op_Equality(KS.Security.Privacy.Consents.ConsentedPermission,KS.Security.Privacy.Consents.ConsentedPermission)
+  name: operator ==(ConsentedPermission, ConsentedPermission)
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_op_Equality_KS_Security_Privacy_Consents_ConsentedPermission_KS_Security_Privacy_Consents_ConsentedPermission_
+  commentId: M:KS.Security.Privacy.Consents.ConsentedPermission.op_Equality(KS.Security.Privacy.Consents.ConsentedPermission,KS.Security.Privacy.Consents.ConsentedPermission)
+  name.vb: =(ConsentedPermission, ConsentedPermission)
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission.operator ==(KS.Security.Privacy.Consents.ConsentedPermission, KS.Security.Privacy.Consents.ConsentedPermission)
+  fullName.vb: KS.Security.Privacy.Consents.ConsentedPermission.=(KS.Security.Privacy.Consents.ConsentedPermission, KS.Security.Privacy.Consents.ConsentedPermission)
+  nameWithType: ConsentedPermission.operator ==(ConsentedPermission, ConsentedPermission)
+  nameWithType.vb: ConsentedPermission.=(ConsentedPermission, ConsentedPermission)
+- uid: KS.Security.Privacy.Consents.ConsentedPermission.op_Equality*
+  name: operator ==
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_op_Equality_
+  commentId: Overload:KS.Security.Privacy.Consents.ConsentedPermission.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission.operator ==
+  fullName.vb: KS.Security.Privacy.Consents.ConsentedPermission.=
+  nameWithType: ConsentedPermission.operator ==
+  nameWithType.vb: ConsentedPermission.=
+- uid: KS.Security.Privacy.Consents.ConsentedPermission.op_Inequality(KS.Security.Privacy.Consents.ConsentedPermission,KS.Security.Privacy.Consents.ConsentedPermission)
+  name: operator !=(ConsentedPermission, ConsentedPermission)
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_op_Inequality_KS_Security_Privacy_Consents_ConsentedPermission_KS_Security_Privacy_Consents_ConsentedPermission_
+  commentId: M:KS.Security.Privacy.Consents.ConsentedPermission.op_Inequality(KS.Security.Privacy.Consents.ConsentedPermission,KS.Security.Privacy.Consents.ConsentedPermission)
+  name.vb: <>(ConsentedPermission, ConsentedPermission)
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission.operator !=(KS.Security.Privacy.Consents.ConsentedPermission, KS.Security.Privacy.Consents.ConsentedPermission)
+  fullName.vb: KS.Security.Privacy.Consents.ConsentedPermission.<>(KS.Security.Privacy.Consents.ConsentedPermission, KS.Security.Privacy.Consents.ConsentedPermission)
+  nameWithType: ConsentedPermission.operator !=(ConsentedPermission, ConsentedPermission)
+  nameWithType.vb: ConsentedPermission.<>(ConsentedPermission, ConsentedPermission)
+- uid: KS.Security.Privacy.Consents.ConsentedPermission.op_Inequality*
+  name: operator !=
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_op_Inequality_
+  commentId: Overload:KS.Security.Privacy.Consents.ConsentedPermission.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission.operator !=
+  fullName.vb: KS.Security.Privacy.Consents.ConsentedPermission.<>
+  nameWithType: ConsentedPermission.operator !=
+  nameWithType.vb: ConsentedPermission.<>
+- uid: KS.Security.Privacy.Consents.ConsentedPermissionType
+  name: ConsentedPermissionType
+  href: api/KS.Security.Privacy.Consents.ConsentedPermissionType.html
+  commentId: T:KS.Security.Privacy.Consents.ConsentedPermissionType
+  fullName: KS.Security.Privacy.Consents.ConsentedPermissionType
+  nameWithType: ConsentedPermissionType
+- uid: KS.Security.Privacy.Consents.ConsentedPermissionType.FilesystemRead
+  name: FilesystemRead
+  href: api/KS.Security.Privacy.Consents.ConsentedPermissionType.html#KS_Security_Privacy_Consents_ConsentedPermissionType_FilesystemRead
+  commentId: F:KS.Security.Privacy.Consents.ConsentedPermissionType.FilesystemRead
+  fullName: KS.Security.Privacy.Consents.ConsentedPermissionType.FilesystemRead
+  nameWithType: ConsentedPermissionType.FilesystemRead
+- uid: KS.Security.Privacy.Consents.ConsentedPermissionType.FilesystemWrite
+  name: FilesystemWrite
+  href: api/KS.Security.Privacy.Consents.ConsentedPermissionType.html#KS_Security_Privacy_Consents_ConsentedPermissionType_FilesystemWrite
+  commentId: F:KS.Security.Privacy.Consents.ConsentedPermissionType.FilesystemWrite
+  fullName: KS.Security.Privacy.Consents.ConsentedPermissionType.FilesystemWrite
+  nameWithType: ConsentedPermissionType.FilesystemWrite
+- uid: KS.Security.Privacy.PrivacyConsentTools
+  name: PrivacyConsentTools
+  href: api/KS.Security.Privacy.PrivacyConsentTools.html
+  commentId: T:KS.Security.Privacy.PrivacyConsentTools
+  fullName: KS.Security.Privacy.PrivacyConsentTools
+  nameWithType: PrivacyConsentTools
+- uid: KS.Security.Privacy.PrivacyConsentTools.ConsentPermission(KS.Security.Privacy.Consents.ConsentedPermissionType)
+  name: ConsentPermission(ConsentedPermissionType)
+  href: api/KS.Security.Privacy.PrivacyConsentTools.html#KS_Security_Privacy_PrivacyConsentTools_ConsentPermission_KS_Security_Privacy_Consents_ConsentedPermissionType_
+  commentId: M:KS.Security.Privacy.PrivacyConsentTools.ConsentPermission(KS.Security.Privacy.Consents.ConsentedPermissionType)
+  fullName: KS.Security.Privacy.PrivacyConsentTools.ConsentPermission(KS.Security.Privacy.Consents.ConsentedPermissionType)
+  nameWithType: PrivacyConsentTools.ConsentPermission(ConsentedPermissionType)
+- uid: KS.Security.Privacy.PrivacyConsentTools.ConsentPermission*
+  name: ConsentPermission
+  href: api/KS.Security.Privacy.PrivacyConsentTools.html#KS_Security_Privacy_PrivacyConsentTools_ConsentPermission_
+  commentId: Overload:KS.Security.Privacy.PrivacyConsentTools.ConsentPermission
+  isSpec: "True"
+  fullName: KS.Security.Privacy.PrivacyConsentTools.ConsentPermission
+  nameWithType: PrivacyConsentTools.ConsentPermission
 - uid: KS.Shell.Prompts
   name: KS.Shell.Prompts
   href: api/KS.Shell.Prompts.html

@@ -3636,6 +3636,56 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Security.Privacy.Consents.ConsentedPermission.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Security.Privacy.Consents.ConsentedPermission.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Security.Privacy.Consents.ConsentedPermissionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Security.Privacy.Consents.ConsentedPermissionType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Security.Privacy.Consents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Security.Privacy.Consents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Security.Privacy.PrivacyConsentTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Security.Privacy.PrivacyConsentTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Security.Privacy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Security.Privacy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Prompts.IPromptPreset.yml",
       "output": {
         ".html": {
