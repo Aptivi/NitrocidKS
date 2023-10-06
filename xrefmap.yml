@@ -13150,6 +13150,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllLinesNoBlock
   nameWithType: BaseFilesystemDriver.ReadAllLinesNoBlock
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllTextNoBlock(System.String)
+  name: ReadAllTextNoBlock(string)
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_ReadAllTextNoBlock_System_String_
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllTextNoBlock(System.String)
+  name.vb: ReadAllTextNoBlock(String)
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllTextNoBlock(string)
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllTextNoBlock(String)
+  nameWithType: BaseFilesystemDriver.ReadAllTextNoBlock(string)
+  nameWithType.vb: BaseFilesystemDriver.ReadAllTextNoBlock(String)
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllTextNoBlock*
+  name: ReadAllTextNoBlock
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_ReadAllTextNoBlock_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllTextNoBlock
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllTextNoBlock
+  nameWithType: BaseFilesystemDriver.ReadAllTextNoBlock
 - uid: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadContents(System.String)
   name: ReadContents(string)
   href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_ReadContents_System_String_
@@ -13166,6 +13182,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadContents
   nameWithType: BaseFilesystemDriver.ReadContents
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadContentsText(System.String)
+  name: ReadContentsText(string)
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_ReadContentsText_System_String_
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.ReadContentsText(System.String)
+  name.vb: ReadContentsText(String)
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadContentsText(string)
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadContentsText(String)
+  nameWithType: BaseFilesystemDriver.ReadContentsText(string)
+  nameWithType.vb: BaseFilesystemDriver.ReadContentsText(String)
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadContentsText*
+  name: ReadContentsText
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_ReadContentsText_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.ReadContentsText
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadContentsText
+  nameWithType: BaseFilesystemDriver.ReadContentsText
 - uid: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadToEndAndSeek(System.IO.StreamReader@)
   name: ReadToEndAndSeek(ref StreamReader)
   href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_ReadToEndAndSeek_System_IO_StreamReader__
@@ -13392,6 +13424,86 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.TryParsePath
   nameWithType: BaseFilesystemDriver.TryParsePath
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytes(System.String,System.Byte[])
+  name: WriteAllBytes(string, byte[])
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WriteAllBytes_System_String_System_Byte___
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytes(System.String,System.Byte[])
+  name.vb: WriteAllBytes(String, Byte())
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytes(string, byte[])
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytes(String, Byte())
+  nameWithType: BaseFilesystemDriver.WriteAllBytes(string, byte[])
+  nameWithType.vb: BaseFilesystemDriver.WriteAllBytes(String, Byte())
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytes*
+  name: WriteAllBytes
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WriteAllBytes_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytes
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytes
+  nameWithType: BaseFilesystemDriver.WriteAllBytes
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllLinesNoBlock(System.String,System.String[])
+  name: WriteAllLinesNoBlock(string, string[])
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WriteAllLinesNoBlock_System_String_System_String___
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllLinesNoBlock(System.String,System.String[])
+  name.vb: WriteAllLinesNoBlock(String, String())
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllLinesNoBlock(string, string[])
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllLinesNoBlock(String, String())
+  nameWithType: BaseFilesystemDriver.WriteAllLinesNoBlock(string, string[])
+  nameWithType.vb: BaseFilesystemDriver.WriteAllLinesNoBlock(String, String())
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllLinesNoBlock*
+  name: WriteAllLinesNoBlock
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WriteAllLinesNoBlock_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllLinesNoBlock
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllLinesNoBlock
+  nameWithType: BaseFilesystemDriver.WriteAllLinesNoBlock
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllTextNoBlock(System.String,System.String)
+  name: WriteAllTextNoBlock(string, string)
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WriteAllTextNoBlock_System_String_System_String_
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllTextNoBlock(System.String,System.String)
+  name.vb: WriteAllTextNoBlock(String, String)
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllTextNoBlock(string, string)
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllTextNoBlock(String, String)
+  nameWithType: BaseFilesystemDriver.WriteAllTextNoBlock(string, string)
+  nameWithType.vb: BaseFilesystemDriver.WriteAllTextNoBlock(String, String)
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllTextNoBlock*
+  name: WriteAllTextNoBlock
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WriteAllTextNoBlock_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllTextNoBlock
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllTextNoBlock
+  nameWithType: BaseFilesystemDriver.WriteAllTextNoBlock
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteContents(System.String,System.String[])
+  name: WriteContents(string, string[])
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WriteContents_System_String_System_String___
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.WriteContents(System.String,System.String[])
+  name.vb: WriteContents(String, String())
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteContents(string, string[])
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteContents(String, String())
+  nameWithType: BaseFilesystemDriver.WriteContents(string, string[])
+  nameWithType.vb: BaseFilesystemDriver.WriteContents(String, String())
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteContents*
+  name: WriteContents
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WriteContents_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.WriteContents
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteContents
+  nameWithType: BaseFilesystemDriver.WriteContents
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteContentsText(System.String,System.String)
+  name: WriteContentsText(string, string)
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WriteContentsText_System_String_System_String_
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.WriteContentsText(System.String,System.String)
+  name.vb: WriteContentsText(String, String)
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteContentsText(string, string)
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteContentsText(String, String)
+  nameWithType: BaseFilesystemDriver.WriteContentsText(string, string)
+  nameWithType.vb: BaseFilesystemDriver.WriteContentsText(String, String)
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteContentsText*
+  name: WriteContentsText
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WriteContentsText_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.WriteContentsText
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteContentsText
+  nameWithType: BaseFilesystemDriver.WriteContentsText
 - uid: KS.Drivers.Filesystem.FilesystemDriverTools
   name: FilesystemDriverTools
   href: api/KS.Drivers.Filesystem.FilesystemDriverTools.html
@@ -14116,6 +14228,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.IFilesystemDriver.ReadAllLinesNoBlock
   nameWithType: IFilesystemDriver.ReadAllLinesNoBlock
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.ReadAllTextNoBlock(System.String)
+  name: ReadAllTextNoBlock(string)
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_ReadAllTextNoBlock_System_String_
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.ReadAllTextNoBlock(System.String)
+  name.vb: ReadAllTextNoBlock(String)
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.ReadAllTextNoBlock(string)
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.ReadAllTextNoBlock(String)
+  nameWithType: IFilesystemDriver.ReadAllTextNoBlock(string)
+  nameWithType.vb: IFilesystemDriver.ReadAllTextNoBlock(String)
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.ReadAllTextNoBlock*
+  name: ReadAllTextNoBlock
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_ReadAllTextNoBlock_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.ReadAllTextNoBlock
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.ReadAllTextNoBlock
+  nameWithType: IFilesystemDriver.ReadAllTextNoBlock
 - uid: KS.Drivers.Filesystem.IFilesystemDriver.ReadContents(System.String)
   name: ReadContents(string)
   href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_ReadContents_System_String_
@@ -14132,6 +14260,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.IFilesystemDriver.ReadContents
   nameWithType: IFilesystemDriver.ReadContents
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.ReadContentsText(System.String)
+  name: ReadContentsText(string)
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_ReadContentsText_System_String_
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.ReadContentsText(System.String)
+  name.vb: ReadContentsText(String)
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.ReadContentsText(string)
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.ReadContentsText(String)
+  nameWithType: IFilesystemDriver.ReadContentsText(string)
+  nameWithType.vb: IFilesystemDriver.ReadContentsText(String)
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.ReadContentsText*
+  name: ReadContentsText
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_ReadContentsText_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.ReadContentsText
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.ReadContentsText
+  nameWithType: IFilesystemDriver.ReadContentsText
 - uid: KS.Drivers.Filesystem.IFilesystemDriver.ReadToEndAndSeek(System.IO.StreamReader@)
   name: ReadToEndAndSeek(ref StreamReader)
   href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_ReadToEndAndSeek_System_IO_StreamReader__
@@ -14358,6 +14502,86 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.IFilesystemDriver.TryParsePath
   nameWithType: IFilesystemDriver.TryParsePath
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytes(System.String,System.Byte[])
+  name: WriteAllBytes(string, byte[])
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WriteAllBytes_System_String_System_Byte___
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytes(System.String,System.Byte[])
+  name.vb: WriteAllBytes(String, Byte())
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytes(string, byte[])
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytes(String, Byte())
+  nameWithType: IFilesystemDriver.WriteAllBytes(string, byte[])
+  nameWithType.vb: IFilesystemDriver.WriteAllBytes(String, Byte())
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytes*
+  name: WriteAllBytes
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WriteAllBytes_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytes
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytes
+  nameWithType: IFilesystemDriver.WriteAllBytes
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllLinesNoBlock(System.String,System.String[])
+  name: WriteAllLinesNoBlock(string, string[])
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WriteAllLinesNoBlock_System_String_System_String___
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.WriteAllLinesNoBlock(System.String,System.String[])
+  name.vb: WriteAllLinesNoBlock(String, String())
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllLinesNoBlock(string, string[])
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllLinesNoBlock(String, String())
+  nameWithType: IFilesystemDriver.WriteAllLinesNoBlock(string, string[])
+  nameWithType.vb: IFilesystemDriver.WriteAllLinesNoBlock(String, String())
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllLinesNoBlock*
+  name: WriteAllLinesNoBlock
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WriteAllLinesNoBlock_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.WriteAllLinesNoBlock
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllLinesNoBlock
+  nameWithType: IFilesystemDriver.WriteAllLinesNoBlock
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllTextNoBlock(System.String,System.String)
+  name: WriteAllTextNoBlock(string, string)
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WriteAllTextNoBlock_System_String_System_String_
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.WriteAllTextNoBlock(System.String,System.String)
+  name.vb: WriteAllTextNoBlock(String, String)
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllTextNoBlock(string, string)
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllTextNoBlock(String, String)
+  nameWithType: IFilesystemDriver.WriteAllTextNoBlock(string, string)
+  nameWithType.vb: IFilesystemDriver.WriteAllTextNoBlock(String, String)
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllTextNoBlock*
+  name: WriteAllTextNoBlock
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WriteAllTextNoBlock_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.WriteAllTextNoBlock
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllTextNoBlock
+  nameWithType: IFilesystemDriver.WriteAllTextNoBlock
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.WriteContents(System.String,System.String[])
+  name: WriteContents(string, string[])
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WriteContents_System_String_System_String___
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.WriteContents(System.String,System.String[])
+  name.vb: WriteContents(String, String())
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.WriteContents(string, string[])
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.WriteContents(String, String())
+  nameWithType: IFilesystemDriver.WriteContents(string, string[])
+  nameWithType.vb: IFilesystemDriver.WriteContents(String, String())
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.WriteContents*
+  name: WriteContents
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WriteContents_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.WriteContents
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.WriteContents
+  nameWithType: IFilesystemDriver.WriteContents
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.WriteContentsText(System.String,System.String)
+  name: WriteContentsText(string, string)
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WriteContentsText_System_String_System_String_
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.WriteContentsText(System.String,System.String)
+  name.vb: WriteContentsText(String, String)
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.WriteContentsText(string, string)
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.WriteContentsText(String, String)
+  nameWithType: IFilesystemDriver.WriteContentsText(string, string)
+  nameWithType.vb: IFilesystemDriver.WriteContentsText(String, String)
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.WriteContentsText*
+  name: WriteContentsText
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WriteContentsText_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.WriteContentsText
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.WriteContentsText
+  nameWithType: IFilesystemDriver.WriteContentsText
 - uid: KS.Drivers.IDriver
   name: IDriver
   href: api/KS.Drivers.IDriver.html
@@ -18334,6 +18558,92 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Removing.TryRemoveFileOrDir
   nameWithType: Removing.TryRemoveFileOrDir
+- uid: KS.Files.Operations.Writing
+  name: Writing
+  href: api/KS.Files.Operations.Writing.html
+  commentId: T:KS.Files.Operations.Writing
+  fullName: KS.Files.Operations.Writing
+  nameWithType: Writing
+- uid: KS.Files.Operations.Writing.WriteAllBytes(System.String,System.Byte[])
+  name: WriteAllBytes(string, byte[])
+  href: api/KS.Files.Operations.Writing.html#KS_Files_Operations_Writing_WriteAllBytes_System_String_System_Byte___
+  commentId: M:KS.Files.Operations.Writing.WriteAllBytes(System.String,System.Byte[])
+  name.vb: WriteAllBytes(String, Byte())
+  fullName: KS.Files.Operations.Writing.WriteAllBytes(string, byte[])
+  fullName.vb: KS.Files.Operations.Writing.WriteAllBytes(String, Byte())
+  nameWithType: Writing.WriteAllBytes(string, byte[])
+  nameWithType.vb: Writing.WriteAllBytes(String, Byte())
+- uid: KS.Files.Operations.Writing.WriteAllBytes*
+  name: WriteAllBytes
+  href: api/KS.Files.Operations.Writing.html#KS_Files_Operations_Writing_WriteAllBytes_
+  commentId: Overload:KS.Files.Operations.Writing.WriteAllBytes
+  isSpec: "True"
+  fullName: KS.Files.Operations.Writing.WriteAllBytes
+  nameWithType: Writing.WriteAllBytes
+- uid: KS.Files.Operations.Writing.WriteAllLinesNoBlock(System.String,System.String[])
+  name: WriteAllLinesNoBlock(string, string[])
+  href: api/KS.Files.Operations.Writing.html#KS_Files_Operations_Writing_WriteAllLinesNoBlock_System_String_System_String___
+  commentId: M:KS.Files.Operations.Writing.WriteAllLinesNoBlock(System.String,System.String[])
+  name.vb: WriteAllLinesNoBlock(String, String())
+  fullName: KS.Files.Operations.Writing.WriteAllLinesNoBlock(string, string[])
+  fullName.vb: KS.Files.Operations.Writing.WriteAllLinesNoBlock(String, String())
+  nameWithType: Writing.WriteAllLinesNoBlock(string, string[])
+  nameWithType.vb: Writing.WriteAllLinesNoBlock(String, String())
+- uid: KS.Files.Operations.Writing.WriteAllLinesNoBlock*
+  name: WriteAllLinesNoBlock
+  href: api/KS.Files.Operations.Writing.html#KS_Files_Operations_Writing_WriteAllLinesNoBlock_
+  commentId: Overload:KS.Files.Operations.Writing.WriteAllLinesNoBlock
+  isSpec: "True"
+  fullName: KS.Files.Operations.Writing.WriteAllLinesNoBlock
+  nameWithType: Writing.WriteAllLinesNoBlock
+- uid: KS.Files.Operations.Writing.WriteAllTextNoBlock(System.String,System.String)
+  name: WriteAllTextNoBlock(string, string)
+  href: api/KS.Files.Operations.Writing.html#KS_Files_Operations_Writing_WriteAllTextNoBlock_System_String_System_String_
+  commentId: M:KS.Files.Operations.Writing.WriteAllTextNoBlock(System.String,System.String)
+  name.vb: WriteAllTextNoBlock(String, String)
+  fullName: KS.Files.Operations.Writing.WriteAllTextNoBlock(string, string)
+  fullName.vb: KS.Files.Operations.Writing.WriteAllTextNoBlock(String, String)
+  nameWithType: Writing.WriteAllTextNoBlock(string, string)
+  nameWithType.vb: Writing.WriteAllTextNoBlock(String, String)
+- uid: KS.Files.Operations.Writing.WriteAllTextNoBlock*
+  name: WriteAllTextNoBlock
+  href: api/KS.Files.Operations.Writing.html#KS_Files_Operations_Writing_WriteAllTextNoBlock_
+  commentId: Overload:KS.Files.Operations.Writing.WriteAllTextNoBlock
+  isSpec: "True"
+  fullName: KS.Files.Operations.Writing.WriteAllTextNoBlock
+  nameWithType: Writing.WriteAllTextNoBlock
+- uid: KS.Files.Operations.Writing.WriteContents(System.String,System.String[])
+  name: WriteContents(string, string[])
+  href: api/KS.Files.Operations.Writing.html#KS_Files_Operations_Writing_WriteContents_System_String_System_String___
+  commentId: M:KS.Files.Operations.Writing.WriteContents(System.String,System.String[])
+  name.vb: WriteContents(String, String())
+  fullName: KS.Files.Operations.Writing.WriteContents(string, string[])
+  fullName.vb: KS.Files.Operations.Writing.WriteContents(String, String())
+  nameWithType: Writing.WriteContents(string, string[])
+  nameWithType.vb: Writing.WriteContents(String, String())
+- uid: KS.Files.Operations.Writing.WriteContents*
+  name: WriteContents
+  href: api/KS.Files.Operations.Writing.html#KS_Files_Operations_Writing_WriteContents_
+  commentId: Overload:KS.Files.Operations.Writing.WriteContents
+  isSpec: "True"
+  fullName: KS.Files.Operations.Writing.WriteContents
+  nameWithType: Writing.WriteContents
+- uid: KS.Files.Operations.Writing.WriteContentsText(System.String,System.String)
+  name: WriteContentsText(string, string)
+  href: api/KS.Files.Operations.Writing.html#KS_Files_Operations_Writing_WriteContentsText_System_String_System_String_
+  commentId: M:KS.Files.Operations.Writing.WriteContentsText(System.String,System.String)
+  name.vb: WriteContentsText(String, String)
+  fullName: KS.Files.Operations.Writing.WriteContentsText(string, string)
+  fullName.vb: KS.Files.Operations.Writing.WriteContentsText(String, String)
+  nameWithType: Writing.WriteContentsText(string, string)
+  nameWithType.vb: Writing.WriteContentsText(String, String)
+- uid: KS.Files.Operations.Writing.WriteContentsText*
+  name: WriteContentsText
+  href: api/KS.Files.Operations.Writing.html#KS_Files_Operations_Writing_WriteContentsText_
+  commentId: Overload:KS.Files.Operations.Writing.WriteContentsText
+  isSpec: "True"
+  fullName: KS.Files.Operations.Writing.WriteContentsText
+  nameWithType: Writing.WriteContentsText
 - uid: KS.Files.PathLookup
   name: KS.Files.PathLookup
   href: api/KS.Files.PathLookup.html
@@ -19355,6 +19665,22 @@ references:
   isSpec: "True"
   fullName: KS.Files.Read.FileRead.ReadAllLinesNoBlock
   nameWithType: FileRead.ReadAllLinesNoBlock
+- uid: KS.Files.Read.FileRead.ReadAllTextNoBlock(System.String)
+  name: ReadAllTextNoBlock(string)
+  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadAllTextNoBlock_System_String_
+  commentId: M:KS.Files.Read.FileRead.ReadAllTextNoBlock(System.String)
+  name.vb: ReadAllTextNoBlock(String)
+  fullName: KS.Files.Read.FileRead.ReadAllTextNoBlock(string)
+  fullName.vb: KS.Files.Read.FileRead.ReadAllTextNoBlock(String)
+  nameWithType: FileRead.ReadAllTextNoBlock(string)
+  nameWithType.vb: FileRead.ReadAllTextNoBlock(String)
+- uid: KS.Files.Read.FileRead.ReadAllTextNoBlock*
+  name: ReadAllTextNoBlock
+  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadAllTextNoBlock_
+  commentId: Overload:KS.Files.Read.FileRead.ReadAllTextNoBlock
+  isSpec: "True"
+  fullName: KS.Files.Read.FileRead.ReadAllTextNoBlock
+  nameWithType: FileRead.ReadAllTextNoBlock
 - uid: KS.Files.Read.FileRead.ReadContents(System.String)
   name: ReadContents(string)
   href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadContents_System_String_
@@ -19371,6 +19697,22 @@ references:
   isSpec: "True"
   fullName: KS.Files.Read.FileRead.ReadContents
   nameWithType: FileRead.ReadContents
+- uid: KS.Files.Read.FileRead.ReadContentsText(System.String)
+  name: ReadContentsText(string)
+  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadContentsText_System_String_
+  commentId: M:KS.Files.Read.FileRead.ReadContentsText(System.String)
+  name.vb: ReadContentsText(String)
+  fullName: KS.Files.Read.FileRead.ReadContentsText(string)
+  fullName.vb: KS.Files.Read.FileRead.ReadContentsText(String)
+  nameWithType: FileRead.ReadContentsText(string)
+  nameWithType.vb: FileRead.ReadContentsText(String)
+- uid: KS.Files.Read.FileRead.ReadContentsText*
+  name: ReadContentsText
+  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadContentsText_
+  commentId: Overload:KS.Files.Read.FileRead.ReadContentsText
+  isSpec: "True"
+  fullName: KS.Files.Read.FileRead.ReadContentsText
+  nameWithType: FileRead.ReadContentsText
 - uid: KS.Files.Read.StreamRead
   name: StreamRead
   href: api/KS.Files.Read.StreamRead.html

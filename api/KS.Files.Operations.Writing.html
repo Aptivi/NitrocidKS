@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class FileRead
+      <title>Class Writing
  | Nitrocid KS API - Aptivi </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class FileRead
+      <meta name="title" content="Class Writing
  | Nitrocid KS API - Aptivi ">
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -77,43 +77,43 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="KS.Files.Read.FileRead">
+            <article class="content wrap" id="_content" data-uid="KS.Files.Operations.Writing">
 
 
 
-  <h1 id="KS_Files_Read_FileRead" data-uid="KS.Files.Read.FileRead" class="text-break">Class FileRead
+  <h1 id="KS_Files_Operations_Writing" data-uid="KS.Files.Operations.Writing" class="text-break">Class Writing
 </h1>
-  <div class="markdown level0 summary"><p>File reading module</p>
+  <div class="markdown level0 summary"><p>Writing tools for files</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">FileRead</span></div>
+    <div class="level1"><span class="xref">Writing</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="KS.html">KS</a>.<a class="xref" href="KS.Files.html">Files</a>.<a class="xref" href="KS.Files.Read.html">Read</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KS.html">KS</a>.<a class="xref" href="KS.Files.html">Files</a>.<a class="xref" href="KS.Files.Operations.html">Operations</a></h6>
   <h6><strong>Assembly</strong>: Nitrocid.dll</h6>
-  <h5 id="KS_Files_Read_FileRead_syntax">Syntax</h5>
+  <h5 id="KS_Files_Operations_Writing_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class FileRead</code></pre>
+    <pre><code class="lang-csharp hljs">public static class Writing</code></pre>
   </div>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Read_FileRead_ReadAllBytes_System_String_.md&amp;value=---%0Auid%3A%20KS.Files.Read.FileRead.ReadAllBytes(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Operations_Writing_WriteAllBytes_System_String_System_Byte___.md&amp;value=---%0Auid%3A%20KS.Files.Operations.Writing.WriteAllBytes(System.String%2CSystem.Byte%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Read/FileRead.cs/#L84">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Operations/Writing.cs/#L91">View Source</a>
   </span>
-  <a id="KS_Files_Read_FileRead_ReadAllBytes_" data-uid="KS.Files.Read.FileRead.ReadAllBytes*"></a>
-  <h4 id="KS_Files_Read_FileRead_ReadAllBytes_System_String_" data-uid="KS.Files.Read.FileRead.ReadAllBytes(System.String)">ReadAllBytes(string)</h4>
-  <div class="markdown level1 summary"><p>Reads all the bytes</p>
+  <a id="KS_Files_Operations_Writing_WriteAllBytes_" data-uid="KS.Files.Operations.Writing.WriteAllBytes*"></a>
+  <h4 id="KS_Files_Operations_Writing_WriteAllBytes_System_String_System_Byte___" data-uid="KS.Files.Operations.Writing.WriteAllBytes(System.String,System.Byte[])">WriteAllBytes(string, byte[])</h4>
+  <div class="markdown level1 summary"><p>Writes all the bytes</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte[] ReadAllBytes(string path)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteAllBytes(string path, byte[] contents)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -131,38 +131,29 @@
         <td><p>Path to the file</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
-        <td></td>
+        <td><span class="parametername">contents</span></td>
+        <td><p>File contents to write to</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Read_FileRead_ReadAllLinesNoBlock_System_String_.md&amp;value=---%0Auid%3A%20KS.Files.Read.FileRead.ReadAllLinesNoBlock(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Operations_Writing_WriteAllLinesNoBlock_System_String_System_String___.md&amp;value=---%0Auid%3A%20KS.Files.Operations.Writing.WriteAllLinesNoBlock(System.String%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Read/FileRead.cs/#L61">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Operations/Writing.cs/#L67">View Source</a>
   </span>
-  <a id="KS_Files_Read_FileRead_ReadAllLinesNoBlock_" data-uid="KS.Files.Read.FileRead.ReadAllLinesNoBlock*"></a>
-  <h4 id="KS_Files_Read_FileRead_ReadAllLinesNoBlock_System_String_" data-uid="KS.Files.Read.FileRead.ReadAllLinesNoBlock(System.String)">ReadAllLinesNoBlock(string)</h4>
-  <div class="markdown level1 summary"><p>Opens a file, reads all lines, and returns the array of lines</p>
+  <a id="KS_Files_Operations_Writing_WriteAllLinesNoBlock_" data-uid="KS.Files.Operations.Writing.WriteAllLinesNoBlock*"></a>
+  <h4 id="KS_Files_Operations_Writing_WriteAllLinesNoBlock_System_String_System_String___" data-uid="KS.Files.Operations.Writing.WriteAllLinesNoBlock(System.String,System.String[])">WriteAllLinesNoBlock(string, string[])</h4>
+  <div class="markdown level1 summary"><p>Opens a file, writes all lines, and closes it</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string[] ReadAllLinesNoBlock(string path)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteAllLinesNoBlock(string path, string[] contents)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -180,39 +171,29 @@
         <td><p>Path to file</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
-        <td><p>Array of lines</p>
+        <td><span class="parametername">contents</span></td>
+        <td><p>File contents to write to</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Read_FileRead_ReadAllTextNoBlock_System_String_.md&amp;value=---%0Auid%3A%20KS.Files.Read.FileRead.ReadAllTextNoBlock(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Operations_Writing_WriteAllTextNoBlock_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Files.Operations.Writing.WriteAllTextNoBlock(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Read/FileRead.cs/#L73">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Operations/Writing.cs/#L79">View Source</a>
   </span>
-  <a id="KS_Files_Read_FileRead_ReadAllTextNoBlock_" data-uid="KS.Files.Read.FileRead.ReadAllTextNoBlock*"></a>
-  <h4 id="KS_Files_Read_FileRead_ReadAllTextNoBlock_System_String_" data-uid="KS.Files.Read.FileRead.ReadAllTextNoBlock(System.String)">ReadAllTextNoBlock(string)</h4>
-  <div class="markdown level1 summary"><p>Opens a file, reads all lines, and returns the string of lines</p>
+  <a id="KS_Files_Operations_Writing_WriteAllTextNoBlock_" data-uid="KS.Files.Operations.Writing.WriteAllTextNoBlock*"></a>
+  <h4 id="KS_Files_Operations_Writing_WriteAllTextNoBlock_System_String_System_String_" data-uid="KS.Files.Operations.Writing.WriteAllTextNoBlock(System.String,System.String)">WriteAllTextNoBlock(string, string)</h4>
+  <div class="markdown level1 summary"><p>Opens a file, writes all lines, and closes it</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ReadAllTextNoBlock(string path)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteAllTextNoBlock(string path, string contents)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -230,39 +211,29 @@
         <td><p>Path to file</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><p>String of lines</p>
+        <td><span class="parametername">contents</span></td>
+        <td><p>File contents to write to</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Read_FileRead_ReadContents_System_String_.md&amp;value=---%0Auid%3A%20KS.Files.Read.FileRead.ReadContents(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Operations_Writing_WriteContents_System_String_System_String___.md&amp;value=---%0Auid%3A%20KS.Files.Operations.Writing.WriteContents(System.String%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Read/FileRead.cs/#L37">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Operations/Writing.cs/#L43">View Source</a>
   </span>
-  <a id="KS_Files_Read_FileRead_ReadContents_" data-uid="KS.Files.Read.FileRead.ReadContents*"></a>
-  <h4 id="KS_Files_Read_FileRead_ReadContents_System_String_" data-uid="KS.Files.Read.FileRead.ReadContents(System.String)">ReadContents(string)</h4>
-  <div class="markdown level1 summary"><p>Reads the contents of a file and writes it to the array. This is blocking and will put a lock on the file until read.</p>
+  <a id="KS_Files_Operations_Writing_WriteContents_" data-uid="KS.Files.Operations.Writing.WriteContents*"></a>
+  <h4 id="KS_Files_Operations_Writing_WriteContents_System_String_System_String___" data-uid="KS.Files.Operations.Writing.WriteContents(System.String,System.String[])">WriteContents(string, string[])</h4>
+  <div class="markdown level1 summary"><p>Writes the contents to the file. This is blocking and will put a lock on the file until written.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string[] ReadContents(string filename)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteContents(string filename, string[] contents)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -280,39 +251,29 @@
         <td><p>Full path to file</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
-        <td><p>An array full of file contents</p>
+        <td><span class="parametername">contents</span></td>
+        <td><p>File contents to write to</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Read_FileRead_ReadContentsText_System_String_.md&amp;value=---%0Auid%3A%20KS.Files.Read.FileRead.ReadContentsText(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Operations_Writing_WriteContentsText_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Files.Operations.Writing.WriteContentsText(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Read/FileRead.cs/#L49">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Operations/Writing.cs/#L55">View Source</a>
   </span>
-  <a id="KS_Files_Read_FileRead_ReadContentsText_" data-uid="KS.Files.Read.FileRead.ReadContentsText*"></a>
-  <h4 id="KS_Files_Read_FileRead_ReadContentsText_System_String_" data-uid="KS.Files.Read.FileRead.ReadContentsText(System.String)">ReadContentsText(string)</h4>
-  <div class="markdown level1 summary"><p>Reads the contents of a file and writes it to the string. This is blocking and will put a lock on the file until read.</p>
+  <a id="KS_Files_Operations_Writing_WriteContentsText_" data-uid="KS.Files.Operations.Writing.WriteContentsText*"></a>
+  <h4 id="KS_Files_Operations_Writing_WriteContentsText_System_String_System_String_" data-uid="KS.Files.Operations.Writing.WriteContentsText(System.String,System.String)">WriteContentsText(string, string)</h4>
+  <div class="markdown level1 summary"><p>Writes the contents to the file. This is blocking and will put a lock on the file until written.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ReadContentsText(string filename)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteContentsText(string filename, string contents)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -330,20 +291,10 @@
         <td><p>Full path to file</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><p>A text full of file contents</p>
+        <td><span class="parametername">contents</span></td>
+        <td><p>File contents to write to</p>
 </td>
       </tr>
     </tbody>
@@ -357,10 +308,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Read_FileRead.md&amp;value=---%0Auid%3A%20KS.Files.Read.FileRead%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Operations_Writing.md&amp;value=---%0Auid%3A%20KS.Files.Operations.Writing%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Read/FileRead.cs/#L30" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Operations/Writing.cs/#L35" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
