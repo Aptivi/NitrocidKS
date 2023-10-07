@@ -10457,6 +10457,31 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Encoding.BaseEncodingDriver.ComposeBytesFromString
   nameWithType: BaseEncodingDriver.ComposeBytesFromString
+- uid: KS.Drivers.Encoding.BaseEncodingDriver.DecodeFile(System.String)
+  name: DecodeFile(string)
+  href: api/KS.Drivers.Encoding.BaseEncodingDriver.html#KS_Drivers_Encoding_BaseEncodingDriver_DecodeFile_System_String_
+  commentId: M:KS.Drivers.Encoding.BaseEncodingDriver.DecodeFile(System.String)
+  name.vb: DecodeFile(String)
+  fullName: KS.Drivers.Encoding.BaseEncodingDriver.DecodeFile(string)
+  fullName.vb: KS.Drivers.Encoding.BaseEncodingDriver.DecodeFile(String)
+  nameWithType: BaseEncodingDriver.DecodeFile(string)
+  nameWithType.vb: BaseEncodingDriver.DecodeFile(String)
+- uid: KS.Drivers.Encoding.BaseEncodingDriver.DecodeFile(System.String,System.Byte[],System.Byte[])
+  name: DecodeFile(string, byte[], byte[])
+  href: api/KS.Drivers.Encoding.BaseEncodingDriver.html#KS_Drivers_Encoding_BaseEncodingDriver_DecodeFile_System_String_System_Byte___System_Byte___
+  commentId: M:KS.Drivers.Encoding.BaseEncodingDriver.DecodeFile(System.String,System.Byte[],System.Byte[])
+  name.vb: DecodeFile(String, Byte(), Byte())
+  fullName: KS.Drivers.Encoding.BaseEncodingDriver.DecodeFile(string, byte[], byte[])
+  fullName.vb: KS.Drivers.Encoding.BaseEncodingDriver.DecodeFile(String, Byte(), Byte())
+  nameWithType: BaseEncodingDriver.DecodeFile(string, byte[], byte[])
+  nameWithType.vb: BaseEncodingDriver.DecodeFile(String, Byte(), Byte())
+- uid: KS.Drivers.Encoding.BaseEncodingDriver.DecodeFile*
+  name: DecodeFile
+  href: api/KS.Drivers.Encoding.BaseEncodingDriver.html#KS_Drivers_Encoding_BaseEncodingDriver_DecodeFile_
+  commentId: Overload:KS.Drivers.Encoding.BaseEncodingDriver.DecodeFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encoding.BaseEncodingDriver.DecodeFile
+  nameWithType: BaseEncodingDriver.DecodeFile
 - uid: KS.Drivers.Encoding.BaseEncodingDriver.DecomposeBytesFromString(System.Byte[])
   name: DecomposeBytesFromString(byte[])
   href: api/KS.Drivers.Encoding.BaseEncodingDriver.html#KS_Drivers_Encoding_BaseEncodingDriver_DecomposeBytesFromString_System_Byte___
@@ -10512,6 +10537,31 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Encoding.BaseEncodingDriver.DriverType
   nameWithType: BaseEncodingDriver.DriverType
+- uid: KS.Drivers.Encoding.BaseEncodingDriver.EncodeFile(System.String)
+  name: EncodeFile(string)
+  href: api/KS.Drivers.Encoding.BaseEncodingDriver.html#KS_Drivers_Encoding_BaseEncodingDriver_EncodeFile_System_String_
+  commentId: M:KS.Drivers.Encoding.BaseEncodingDriver.EncodeFile(System.String)
+  name.vb: EncodeFile(String)
+  fullName: KS.Drivers.Encoding.BaseEncodingDriver.EncodeFile(string)
+  fullName.vb: KS.Drivers.Encoding.BaseEncodingDriver.EncodeFile(String)
+  nameWithType: BaseEncodingDriver.EncodeFile(string)
+  nameWithType.vb: BaseEncodingDriver.EncodeFile(String)
+- uid: KS.Drivers.Encoding.BaseEncodingDriver.EncodeFile(System.String,System.Byte[],System.Byte[])
+  name: EncodeFile(string, byte[], byte[])
+  href: api/KS.Drivers.Encoding.BaseEncodingDriver.html#KS_Drivers_Encoding_BaseEncodingDriver_EncodeFile_System_String_System_Byte___System_Byte___
+  commentId: M:KS.Drivers.Encoding.BaseEncodingDriver.EncodeFile(System.String,System.Byte[],System.Byte[])
+  name.vb: EncodeFile(String, Byte(), Byte())
+  fullName: KS.Drivers.Encoding.BaseEncodingDriver.EncodeFile(string, byte[], byte[])
+  fullName.vb: KS.Drivers.Encoding.BaseEncodingDriver.EncodeFile(String, Byte(), Byte())
+  nameWithType: BaseEncodingDriver.EncodeFile(string, byte[], byte[])
+  nameWithType.vb: BaseEncodingDriver.EncodeFile(String, Byte(), Byte())
+- uid: KS.Drivers.Encoding.BaseEncodingDriver.EncodeFile*
+  name: EncodeFile
+  href: api/KS.Drivers.Encoding.BaseEncodingDriver.html#KS_Drivers_Encoding_BaseEncodingDriver_EncodeFile_
+  commentId: Overload:KS.Drivers.Encoding.BaseEncodingDriver.EncodeFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encoding.BaseEncodingDriver.EncodeFile
+  nameWithType: BaseEncodingDriver.EncodeFile
 - uid: KS.Drivers.Encoding.BaseEncodingDriver.GetDecodedString(System.Byte[])
   name: GetDecodedString(byte[])
   href: api/KS.Drivers.Encoding.BaseEncodingDriver.html#KS_Drivers_Encoding_BaseEncodingDriver_GetDecodedString_System_Byte___
@@ -10645,6 +10695,31 @@ references:
   commentId: T:KS.Drivers.Encoding.Bases.RsaEncoding
   fullName: KS.Drivers.Encoding.Bases.RsaEncoding
   nameWithType: RsaEncoding
+- uid: KS.Drivers.Encoding.Bases.RsaEncoding.DecodeFile(System.String)
+  name: DecodeFile(string)
+  href: api/KS.Drivers.Encoding.Bases.RsaEncoding.html#KS_Drivers_Encoding_Bases_RsaEncoding_DecodeFile_System_String_
+  commentId: M:KS.Drivers.Encoding.Bases.RsaEncoding.DecodeFile(System.String)
+  name.vb: DecodeFile(String)
+  fullName: KS.Drivers.Encoding.Bases.RsaEncoding.DecodeFile(string)
+  fullName.vb: KS.Drivers.Encoding.Bases.RsaEncoding.DecodeFile(String)
+  nameWithType: RsaEncoding.DecodeFile(string)
+  nameWithType.vb: RsaEncoding.DecodeFile(String)
+- uid: KS.Drivers.Encoding.Bases.RsaEncoding.DecodeFile(System.String,System.Byte[],System.Byte[])
+  name: DecodeFile(string, byte[], byte[])
+  href: api/KS.Drivers.Encoding.Bases.RsaEncoding.html#KS_Drivers_Encoding_Bases_RsaEncoding_DecodeFile_System_String_System_Byte___System_Byte___
+  commentId: M:KS.Drivers.Encoding.Bases.RsaEncoding.DecodeFile(System.String,System.Byte[],System.Byte[])
+  name.vb: DecodeFile(String, Byte(), Byte())
+  fullName: KS.Drivers.Encoding.Bases.RsaEncoding.DecodeFile(string, byte[], byte[])
+  fullName.vb: KS.Drivers.Encoding.Bases.RsaEncoding.DecodeFile(String, Byte(), Byte())
+  nameWithType: RsaEncoding.DecodeFile(string, byte[], byte[])
+  nameWithType.vb: RsaEncoding.DecodeFile(String, Byte(), Byte())
+- uid: KS.Drivers.Encoding.Bases.RsaEncoding.DecodeFile*
+  name: DecodeFile
+  href: api/KS.Drivers.Encoding.Bases.RsaEncoding.html#KS_Drivers_Encoding_Bases_RsaEncoding_DecodeFile_
+  commentId: Overload:KS.Drivers.Encoding.Bases.RsaEncoding.DecodeFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encoding.Bases.RsaEncoding.DecodeFile
+  nameWithType: RsaEncoding.DecodeFile
 - uid: KS.Drivers.Encoding.Bases.RsaEncoding.DriverName
   name: DriverName
   href: api/KS.Drivers.Encoding.Bases.RsaEncoding.html#KS_Drivers_Encoding_Bases_RsaEncoding_DriverName
@@ -10671,6 +10746,31 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Encoding.Bases.RsaEncoding.DriverType
   nameWithType: RsaEncoding.DriverType
+- uid: KS.Drivers.Encoding.Bases.RsaEncoding.EncodeFile(System.String)
+  name: EncodeFile(string)
+  href: api/KS.Drivers.Encoding.Bases.RsaEncoding.html#KS_Drivers_Encoding_Bases_RsaEncoding_EncodeFile_System_String_
+  commentId: M:KS.Drivers.Encoding.Bases.RsaEncoding.EncodeFile(System.String)
+  name.vb: EncodeFile(String)
+  fullName: KS.Drivers.Encoding.Bases.RsaEncoding.EncodeFile(string)
+  fullName.vb: KS.Drivers.Encoding.Bases.RsaEncoding.EncodeFile(String)
+  nameWithType: RsaEncoding.EncodeFile(string)
+  nameWithType.vb: RsaEncoding.EncodeFile(String)
+- uid: KS.Drivers.Encoding.Bases.RsaEncoding.EncodeFile(System.String,System.Byte[],System.Byte[])
+  name: EncodeFile(string, byte[], byte[])
+  href: api/KS.Drivers.Encoding.Bases.RsaEncoding.html#KS_Drivers_Encoding_Bases_RsaEncoding_EncodeFile_System_String_System_Byte___System_Byte___
+  commentId: M:KS.Drivers.Encoding.Bases.RsaEncoding.EncodeFile(System.String,System.Byte[],System.Byte[])
+  name.vb: EncodeFile(String, Byte(), Byte())
+  fullName: KS.Drivers.Encoding.Bases.RsaEncoding.EncodeFile(string, byte[], byte[])
+  fullName.vb: KS.Drivers.Encoding.Bases.RsaEncoding.EncodeFile(String, Byte(), Byte())
+  nameWithType: RsaEncoding.EncodeFile(string, byte[], byte[])
+  nameWithType.vb: RsaEncoding.EncodeFile(String, Byte(), Byte())
+- uid: KS.Drivers.Encoding.Bases.RsaEncoding.EncodeFile*
+  name: EncodeFile
+  href: api/KS.Drivers.Encoding.Bases.RsaEncoding.html#KS_Drivers_Encoding_Bases_RsaEncoding_EncodeFile_
+  commentId: Overload:KS.Drivers.Encoding.Bases.RsaEncoding.EncodeFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encoding.Bases.RsaEncoding.EncodeFile
+  nameWithType: RsaEncoding.EncodeFile
 - uid: KS.Drivers.Encoding.Bases.RsaEncoding.GetDecodedString(System.Byte[])
   name: GetDecodedString(byte[])
   href: api/KS.Drivers.Encoding.Bases.RsaEncoding.html#KS_Drivers_Encoding_Bases_RsaEncoding_GetDecodedString_System_Byte___
@@ -10856,6 +10956,31 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Encoding.IEncodingDriver.ComposeBytesFromString
   nameWithType: IEncodingDriver.ComposeBytesFromString
+- uid: KS.Drivers.Encoding.IEncodingDriver.DecodeFile(System.String)
+  name: DecodeFile(string)
+  href: api/KS.Drivers.Encoding.IEncodingDriver.html#KS_Drivers_Encoding_IEncodingDriver_DecodeFile_System_String_
+  commentId: M:KS.Drivers.Encoding.IEncodingDriver.DecodeFile(System.String)
+  name.vb: DecodeFile(String)
+  fullName: KS.Drivers.Encoding.IEncodingDriver.DecodeFile(string)
+  fullName.vb: KS.Drivers.Encoding.IEncodingDriver.DecodeFile(String)
+  nameWithType: IEncodingDriver.DecodeFile(string)
+  nameWithType.vb: IEncodingDriver.DecodeFile(String)
+- uid: KS.Drivers.Encoding.IEncodingDriver.DecodeFile(System.String,System.Byte[],System.Byte[])
+  name: DecodeFile(string, byte[], byte[])
+  href: api/KS.Drivers.Encoding.IEncodingDriver.html#KS_Drivers_Encoding_IEncodingDriver_DecodeFile_System_String_System_Byte___System_Byte___
+  commentId: M:KS.Drivers.Encoding.IEncodingDriver.DecodeFile(System.String,System.Byte[],System.Byte[])
+  name.vb: DecodeFile(String, Byte(), Byte())
+  fullName: KS.Drivers.Encoding.IEncodingDriver.DecodeFile(string, byte[], byte[])
+  fullName.vb: KS.Drivers.Encoding.IEncodingDriver.DecodeFile(String, Byte(), Byte())
+  nameWithType: IEncodingDriver.DecodeFile(string, byte[], byte[])
+  nameWithType.vb: IEncodingDriver.DecodeFile(String, Byte(), Byte())
+- uid: KS.Drivers.Encoding.IEncodingDriver.DecodeFile*
+  name: DecodeFile
+  href: api/KS.Drivers.Encoding.IEncodingDriver.html#KS_Drivers_Encoding_IEncodingDriver_DecodeFile_
+  commentId: Overload:KS.Drivers.Encoding.IEncodingDriver.DecodeFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encoding.IEncodingDriver.DecodeFile
+  nameWithType: IEncodingDriver.DecodeFile
 - uid: KS.Drivers.Encoding.IEncodingDriver.DecomposeBytesFromString(System.Byte[])
   name: DecomposeBytesFromString(byte[])
   href: api/KS.Drivers.Encoding.IEncodingDriver.html#KS_Drivers_Encoding_IEncodingDriver_DecomposeBytesFromString_System_Byte___
@@ -10872,6 +10997,31 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Encoding.IEncodingDriver.DecomposeBytesFromString
   nameWithType: IEncodingDriver.DecomposeBytesFromString
+- uid: KS.Drivers.Encoding.IEncodingDriver.EncodeFile(System.String)
+  name: EncodeFile(string)
+  href: api/KS.Drivers.Encoding.IEncodingDriver.html#KS_Drivers_Encoding_IEncodingDriver_EncodeFile_System_String_
+  commentId: M:KS.Drivers.Encoding.IEncodingDriver.EncodeFile(System.String)
+  name.vb: EncodeFile(String)
+  fullName: KS.Drivers.Encoding.IEncodingDriver.EncodeFile(string)
+  fullName.vb: KS.Drivers.Encoding.IEncodingDriver.EncodeFile(String)
+  nameWithType: IEncodingDriver.EncodeFile(string)
+  nameWithType.vb: IEncodingDriver.EncodeFile(String)
+- uid: KS.Drivers.Encoding.IEncodingDriver.EncodeFile(System.String,System.Byte[],System.Byte[])
+  name: EncodeFile(string, byte[], byte[])
+  href: api/KS.Drivers.Encoding.IEncodingDriver.html#KS_Drivers_Encoding_IEncodingDriver_EncodeFile_System_String_System_Byte___System_Byte___
+  commentId: M:KS.Drivers.Encoding.IEncodingDriver.EncodeFile(System.String,System.Byte[],System.Byte[])
+  name.vb: EncodeFile(String, Byte(), Byte())
+  fullName: KS.Drivers.Encoding.IEncodingDriver.EncodeFile(string, byte[], byte[])
+  fullName.vb: KS.Drivers.Encoding.IEncodingDriver.EncodeFile(String, Byte(), Byte())
+  nameWithType: IEncodingDriver.EncodeFile(string, byte[], byte[])
+  nameWithType.vb: IEncodingDriver.EncodeFile(String, Byte(), Byte())
+- uid: KS.Drivers.Encoding.IEncodingDriver.EncodeFile*
+  name: EncodeFile
+  href: api/KS.Drivers.Encoding.IEncodingDriver.html#KS_Drivers_Encoding_IEncodingDriver_EncodeFile_
+  commentId: Overload:KS.Drivers.Encoding.IEncodingDriver.EncodeFile
+  isSpec: "True"
+  fullName: KS.Drivers.Encoding.IEncodingDriver.EncodeFile
+  nameWithType: IEncodingDriver.EncodeFile
 - uid: KS.Drivers.Encoding.IEncodingDriver.GetDecodedString(System.Byte[])
   name: GetDecodedString(byte[])
   href: api/KS.Drivers.Encoding.IEncodingDriver.html#KS_Drivers_Encoding_IEncodingDriver_GetDecodedString_System_Byte___
@@ -18447,6 +18597,522 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Moving.TryMoveFileOrDir
   nameWithType: Moving.TryMoveFileOrDir
+- uid: KS.Files.Operations.Printing
+  name: KS.Files.Operations.Printing
+  href: api/KS.Files.Operations.Printing.html
+  commentId: N:KS.Files.Operations.Printing
+  fullName: KS.Files.Operations.Printing
+  nameWithType: KS.Files.Operations.Printing
+- uid: KS.Files.Operations.Printing.DirectoryInfoPrinter
+  name: DirectoryInfoPrinter
+  href: api/KS.Files.Operations.Printing.DirectoryInfoPrinter.html
+  commentId: T:KS.Files.Operations.Printing.DirectoryInfoPrinter
+  fullName: KS.Files.Operations.Printing.DirectoryInfoPrinter
+  nameWithType: DirectoryInfoPrinter
+- uid: KS.Files.Operations.Printing.DirectoryInfoPrinter.PrintDirectoryInfo(KS.Files.Instances.FileSystemEntry)
+  name: PrintDirectoryInfo(FileSystemEntry)
+  href: api/KS.Files.Operations.Printing.DirectoryInfoPrinter.html#KS_Files_Operations_Printing_DirectoryInfoPrinter_PrintDirectoryInfo_KS_Files_Instances_FileSystemEntry_
+  commentId: M:KS.Files.Operations.Printing.DirectoryInfoPrinter.PrintDirectoryInfo(KS.Files.Instances.FileSystemEntry)
+  fullName: KS.Files.Operations.Printing.DirectoryInfoPrinter.PrintDirectoryInfo(KS.Files.Instances.FileSystemEntry)
+  nameWithType: DirectoryInfoPrinter.PrintDirectoryInfo(FileSystemEntry)
+- uid: KS.Files.Operations.Printing.DirectoryInfoPrinter.PrintDirectoryInfo(KS.Files.Instances.FileSystemEntry,System.Boolean)
+  name: PrintDirectoryInfo(FileSystemEntry, bool)
+  href: api/KS.Files.Operations.Printing.DirectoryInfoPrinter.html#KS_Files_Operations_Printing_DirectoryInfoPrinter_PrintDirectoryInfo_KS_Files_Instances_FileSystemEntry_System_Boolean_
+  commentId: M:KS.Files.Operations.Printing.DirectoryInfoPrinter.PrintDirectoryInfo(KS.Files.Instances.FileSystemEntry,System.Boolean)
+  name.vb: PrintDirectoryInfo(FileSystemEntry, Boolean)
+  fullName: KS.Files.Operations.Printing.DirectoryInfoPrinter.PrintDirectoryInfo(KS.Files.Instances.FileSystemEntry, bool)
+  fullName.vb: KS.Files.Operations.Printing.DirectoryInfoPrinter.PrintDirectoryInfo(KS.Files.Instances.FileSystemEntry, Boolean)
+  nameWithType: DirectoryInfoPrinter.PrintDirectoryInfo(FileSystemEntry, bool)
+  nameWithType.vb: DirectoryInfoPrinter.PrintDirectoryInfo(FileSystemEntry, Boolean)
+- uid: KS.Files.Operations.Printing.DirectoryInfoPrinter.PrintDirectoryInfo*
+  name: PrintDirectoryInfo
+  href: api/KS.Files.Operations.Printing.DirectoryInfoPrinter.html#KS_Files_Operations_Printing_DirectoryInfoPrinter_PrintDirectoryInfo_
+  commentId: Overload:KS.Files.Operations.Printing.DirectoryInfoPrinter.PrintDirectoryInfo
+  isSpec: "True"
+  fullName: KS.Files.Operations.Printing.DirectoryInfoPrinter.PrintDirectoryInfo
+  nameWithType: DirectoryInfoPrinter.PrintDirectoryInfo
+- uid: KS.Files.Operations.Printing.FileContentPrinter
+  name: FileContentPrinter
+  href: api/KS.Files.Operations.Printing.FileContentPrinter.html
+  commentId: T:KS.Files.Operations.Printing.FileContentPrinter
+  fullName: KS.Files.Operations.Printing.FileContentPrinter
+  nameWithType: FileContentPrinter
+- uid: KS.Files.Operations.Printing.FileContentPrinter.DisplayInHex(System.Int64,System.Int64,System.Byte[])
+  name: DisplayInHex(long, long, byte[])
+  href: api/KS.Files.Operations.Printing.FileContentPrinter.html#KS_Files_Operations_Printing_FileContentPrinter_DisplayInHex_System_Int64_System_Int64_System_Byte___
+  commentId: M:KS.Files.Operations.Printing.FileContentPrinter.DisplayInHex(System.Int64,System.Int64,System.Byte[])
+  name.vb: DisplayInHex(Long, Long, Byte())
+  fullName: KS.Files.Operations.Printing.FileContentPrinter.DisplayInHex(long, long, byte[])
+  fullName.vb: KS.Files.Operations.Printing.FileContentPrinter.DisplayInHex(Long, Long, Byte())
+  nameWithType: FileContentPrinter.DisplayInHex(long, long, byte[])
+  nameWithType.vb: FileContentPrinter.DisplayInHex(Long, Long, Byte())
+- uid: KS.Files.Operations.Printing.FileContentPrinter.DisplayInHex*
+  name: DisplayInHex
+  href: api/KS.Files.Operations.Printing.FileContentPrinter.html#KS_Files_Operations_Printing_FileContentPrinter_DisplayInHex_
+  commentId: Overload:KS.Files.Operations.Printing.FileContentPrinter.DisplayInHex
+  isSpec: "True"
+  fullName: KS.Files.Operations.Printing.FileContentPrinter.DisplayInHex
+  nameWithType: FileContentPrinter.DisplayInHex
+- uid: KS.Files.Operations.Printing.FileContentPrinter.PrintContents(System.String)
+  name: PrintContents(string)
+  href: api/KS.Files.Operations.Printing.FileContentPrinter.html#KS_Files_Operations_Printing_FileContentPrinter_PrintContents_System_String_
+  commentId: M:KS.Files.Operations.Printing.FileContentPrinter.PrintContents(System.String)
+  name.vb: PrintContents(String)
+  fullName: KS.Files.Operations.Printing.FileContentPrinter.PrintContents(string)
+  fullName.vb: KS.Files.Operations.Printing.FileContentPrinter.PrintContents(String)
+  nameWithType: FileContentPrinter.PrintContents(string)
+  nameWithType.vb: FileContentPrinter.PrintContents(String)
+- uid: KS.Files.Operations.Printing.FileContentPrinter.PrintContents(System.String,System.Boolean,System.Boolean)
+  name: PrintContents(string, bool, bool)
+  href: api/KS.Files.Operations.Printing.FileContentPrinter.html#KS_Files_Operations_Printing_FileContentPrinter_PrintContents_System_String_System_Boolean_System_Boolean_
+  commentId: M:KS.Files.Operations.Printing.FileContentPrinter.PrintContents(System.String,System.Boolean,System.Boolean)
+  name.vb: PrintContents(String, Boolean, Boolean)
+  fullName: KS.Files.Operations.Printing.FileContentPrinter.PrintContents(string, bool, bool)
+  fullName.vb: KS.Files.Operations.Printing.FileContentPrinter.PrintContents(String, Boolean, Boolean)
+  nameWithType: FileContentPrinter.PrintContents(string, bool, bool)
+  nameWithType.vb: FileContentPrinter.PrintContents(String, Boolean, Boolean)
+- uid: KS.Files.Operations.Printing.FileContentPrinter.PrintContents*
+  name: PrintContents
+  href: api/KS.Files.Operations.Printing.FileContentPrinter.html#KS_Files_Operations_Printing_FileContentPrinter_PrintContents_
+  commentId: Overload:KS.Files.Operations.Printing.FileContentPrinter.PrintContents
+  isSpec: "True"
+  fullName: KS.Files.Operations.Printing.FileContentPrinter.PrintContents
+  nameWithType: FileContentPrinter.PrintContents
+- uid: KS.Files.Operations.Printing.FileInfoPrinter
+  name: FileInfoPrinter
+  href: api/KS.Files.Operations.Printing.FileInfoPrinter.html
+  commentId: T:KS.Files.Operations.Printing.FileInfoPrinter
+  fullName: KS.Files.Operations.Printing.FileInfoPrinter
+  nameWithType: FileInfoPrinter
+- uid: KS.Files.Operations.Printing.FileInfoPrinter.PrintFileInfo(KS.Files.Instances.FileSystemEntry)
+  name: PrintFileInfo(FileSystemEntry)
+  href: api/KS.Files.Operations.Printing.FileInfoPrinter.html#KS_Files_Operations_Printing_FileInfoPrinter_PrintFileInfo_KS_Files_Instances_FileSystemEntry_
+  commentId: M:KS.Files.Operations.Printing.FileInfoPrinter.PrintFileInfo(KS.Files.Instances.FileSystemEntry)
+  fullName: KS.Files.Operations.Printing.FileInfoPrinter.PrintFileInfo(KS.Files.Instances.FileSystemEntry)
+  nameWithType: FileInfoPrinter.PrintFileInfo(FileSystemEntry)
+- uid: KS.Files.Operations.Printing.FileInfoPrinter.PrintFileInfo(KS.Files.Instances.FileSystemEntry,System.Boolean)
+  name: PrintFileInfo(FileSystemEntry, bool)
+  href: api/KS.Files.Operations.Printing.FileInfoPrinter.html#KS_Files_Operations_Printing_FileInfoPrinter_PrintFileInfo_KS_Files_Instances_FileSystemEntry_System_Boolean_
+  commentId: M:KS.Files.Operations.Printing.FileInfoPrinter.PrintFileInfo(KS.Files.Instances.FileSystemEntry,System.Boolean)
+  name.vb: PrintFileInfo(FileSystemEntry, Boolean)
+  fullName: KS.Files.Operations.Printing.FileInfoPrinter.PrintFileInfo(KS.Files.Instances.FileSystemEntry, bool)
+  fullName.vb: KS.Files.Operations.Printing.FileInfoPrinter.PrintFileInfo(KS.Files.Instances.FileSystemEntry, Boolean)
+  nameWithType: FileInfoPrinter.PrintFileInfo(FileSystemEntry, bool)
+  nameWithType.vb: FileInfoPrinter.PrintFileInfo(FileSystemEntry, Boolean)
+- uid: KS.Files.Operations.Printing.FileInfoPrinter.PrintFileInfo*
+  name: PrintFileInfo
+  href: api/KS.Files.Operations.Printing.FileInfoPrinter.html#KS_Files_Operations_Printing_FileInfoPrinter_PrintFileInfo_
+  commentId: Overload:KS.Files.Operations.Printing.FileInfoPrinter.PrintFileInfo
+  isSpec: "True"
+  fullName: KS.Files.Operations.Printing.FileInfoPrinter.PrintFileInfo
+  nameWithType: FileInfoPrinter.PrintFileInfo
+- uid: KS.Files.Operations.Querying
+  name: KS.Files.Operations.Querying
+  href: api/KS.Files.Operations.Querying.html
+  commentId: N:KS.Files.Operations.Querying
+  fullName: KS.Files.Operations.Querying
+  nameWithType: KS.Files.Operations.Querying
+- uid: KS.Files.Operations.Querying.Checking
+  name: Checking
+  href: api/KS.Files.Operations.Querying.Checking.html
+  commentId: T:KS.Files.Operations.Querying.Checking
+  fullName: KS.Files.Operations.Querying.Checking
+  nameWithType: Checking
+- uid: KS.Files.Operations.Querying.Checking.Exists(System.String,System.Boolean)
+  name: Exists(string, bool)
+  href: api/KS.Files.Operations.Querying.Checking.html#KS_Files_Operations_Querying_Checking_Exists_System_String_System_Boolean_
+  commentId: M:KS.Files.Operations.Querying.Checking.Exists(System.String,System.Boolean)
+  name.vb: Exists(String, Boolean)
+  fullName: KS.Files.Operations.Querying.Checking.Exists(string, bool)
+  fullName.vb: KS.Files.Operations.Querying.Checking.Exists(String, Boolean)
+  nameWithType: Checking.Exists(string, bool)
+  nameWithType.vb: Checking.Exists(String, Boolean)
+- uid: KS.Files.Operations.Querying.Checking.Exists*
+  name: Exists
+  href: api/KS.Files.Operations.Querying.Checking.html#KS_Files_Operations_Querying_Checking_Exists_
+  commentId: Overload:KS.Files.Operations.Querying.Checking.Exists
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Checking.Exists
+  nameWithType: Checking.Exists
+- uid: KS.Files.Operations.Querying.Checking.FileExists(System.String,System.Boolean)
+  name: FileExists(string, bool)
+  href: api/KS.Files.Operations.Querying.Checking.html#KS_Files_Operations_Querying_Checking_FileExists_System_String_System_Boolean_
+  commentId: M:KS.Files.Operations.Querying.Checking.FileExists(System.String,System.Boolean)
+  name.vb: FileExists(String, Boolean)
+  fullName: KS.Files.Operations.Querying.Checking.FileExists(string, bool)
+  fullName.vb: KS.Files.Operations.Querying.Checking.FileExists(String, Boolean)
+  nameWithType: Checking.FileExists(string, bool)
+  nameWithType.vb: Checking.FileExists(String, Boolean)
+- uid: KS.Files.Operations.Querying.Checking.FileExists*
+  name: FileExists
+  href: api/KS.Files.Operations.Querying.Checking.html#KS_Files_Operations_Querying_Checking_FileExists_
+  commentId: Overload:KS.Files.Operations.Querying.Checking.FileExists
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Checking.FileExists
+  nameWithType: Checking.FileExists
+- uid: KS.Files.Operations.Querying.Checking.FolderExists(System.String,System.Boolean)
+  name: FolderExists(string, bool)
+  href: api/KS.Files.Operations.Querying.Checking.html#KS_Files_Operations_Querying_Checking_FolderExists_System_String_System_Boolean_
+  commentId: M:KS.Files.Operations.Querying.Checking.FolderExists(System.String,System.Boolean)
+  name.vb: FolderExists(String, Boolean)
+  fullName: KS.Files.Operations.Querying.Checking.FolderExists(string, bool)
+  fullName.vb: KS.Files.Operations.Querying.Checking.FolderExists(String, Boolean)
+  nameWithType: Checking.FolderExists(string, bool)
+  nameWithType.vb: Checking.FolderExists(String, Boolean)
+- uid: KS.Files.Operations.Querying.Checking.FolderExists*
+  name: FolderExists
+  href: api/KS.Files.Operations.Querying.Checking.html#KS_Files_Operations_Querying_Checking_FolderExists_
+  commentId: Overload:KS.Files.Operations.Querying.Checking.FolderExists
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Checking.FolderExists
+  nameWithType: Checking.FolderExists
+- uid: KS.Files.Operations.Querying.Checking.Rooted(System.String)
+  name: Rooted(string)
+  href: api/KS.Files.Operations.Querying.Checking.html#KS_Files_Operations_Querying_Checking_Rooted_System_String_
+  commentId: M:KS.Files.Operations.Querying.Checking.Rooted(System.String)
+  name.vb: Rooted(String)
+  fullName: KS.Files.Operations.Querying.Checking.Rooted(string)
+  fullName.vb: KS.Files.Operations.Querying.Checking.Rooted(String)
+  nameWithType: Checking.Rooted(string)
+  nameWithType.vb: Checking.Rooted(String)
+- uid: KS.Files.Operations.Querying.Checking.Rooted*
+  name: Rooted
+  href: api/KS.Files.Operations.Querying.Checking.html#KS_Files_Operations_Querying_Checking_Rooted_
+  commentId: Overload:KS.Files.Operations.Querying.Checking.Rooted
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Checking.Rooted
+  nameWithType: Checking.Rooted
+- uid: KS.Files.Operations.Querying.Getting
+  name: Getting
+  href: api/KS.Files.Operations.Querying.Getting.html
+  commentId: T:KS.Files.Operations.Querying.Getting
+  fullName: KS.Files.Operations.Querying.Getting
+  nameWithType: Getting
+- uid: KS.Files.Operations.Querying.Getting.GetNumberedFileName(System.String,System.String)
+  name: GetNumberedFileName(string, string)
+  href: api/KS.Files.Operations.Querying.Getting.html#KS_Files_Operations_Querying_Getting_GetNumberedFileName_System_String_System_String_
+  commentId: M:KS.Files.Operations.Querying.Getting.GetNumberedFileName(System.String,System.String)
+  name.vb: GetNumberedFileName(String, String)
+  fullName: KS.Files.Operations.Querying.Getting.GetNumberedFileName(string, string)
+  fullName.vb: KS.Files.Operations.Querying.Getting.GetNumberedFileName(String, String)
+  nameWithType: Getting.GetNumberedFileName(string, string)
+  nameWithType.vb: Getting.GetNumberedFileName(String, String)
+- uid: KS.Files.Operations.Querying.Getting.GetNumberedFileName*
+  name: GetNumberedFileName
+  href: api/KS.Files.Operations.Querying.Getting.html#KS_Files_Operations_Querying_Getting_GetNumberedFileName_
+  commentId: Overload:KS.Files.Operations.Querying.Getting.GetNumberedFileName
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Getting.GetNumberedFileName
+  nameWithType: Getting.GetNumberedFileName
+- uid: KS.Files.Operations.Querying.Getting.GetRandomFileName
+  name: GetRandomFileName()
+  href: api/KS.Files.Operations.Querying.Getting.html#KS_Files_Operations_Querying_Getting_GetRandomFileName
+  commentId: M:KS.Files.Operations.Querying.Getting.GetRandomFileName
+  fullName: KS.Files.Operations.Querying.Getting.GetRandomFileName()
+  nameWithType: Getting.GetRandomFileName()
+- uid: KS.Files.Operations.Querying.Getting.GetRandomFileName*
+  name: GetRandomFileName
+  href: api/KS.Files.Operations.Querying.Getting.html#KS_Files_Operations_Querying_Getting_GetRandomFileName_
+  commentId: Overload:KS.Files.Operations.Querying.Getting.GetRandomFileName
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Getting.GetRandomFileName
+  nameWithType: Getting.GetRandomFileName
+- uid: KS.Files.Operations.Querying.Getting.GetRandomFolderName
+  name: GetRandomFolderName()
+  href: api/KS.Files.Operations.Querying.Getting.html#KS_Files_Operations_Querying_Getting_GetRandomFolderName
+  commentId: M:KS.Files.Operations.Querying.Getting.GetRandomFolderName
+  fullName: KS.Files.Operations.Querying.Getting.GetRandomFolderName()
+  nameWithType: Getting.GetRandomFolderName()
+- uid: KS.Files.Operations.Querying.Getting.GetRandomFolderName*
+  name: GetRandomFolderName
+  href: api/KS.Files.Operations.Querying.Getting.html#KS_Files_Operations_Querying_Getting_GetRandomFolderName_
+  commentId: Overload:KS.Files.Operations.Querying.Getting.GetRandomFolderName
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Getting.GetRandomFolderName
+  nameWithType: Getting.GetRandomFolderName
+- uid: KS.Files.Operations.Querying.Parsing
+  name: Parsing
+  href: api/KS.Files.Operations.Querying.Parsing.html
+  commentId: T:KS.Files.Operations.Querying.Parsing
+  fullName: KS.Files.Operations.Querying.Parsing
+  nameWithType: Parsing
+- uid: KS.Files.Operations.Querying.Parsing.GetInvalidPathChars
+  name: GetInvalidPathChars()
+  href: api/KS.Files.Operations.Querying.Parsing.html#KS_Files_Operations_Querying_Parsing_GetInvalidPathChars
+  commentId: M:KS.Files.Operations.Querying.Parsing.GetInvalidPathChars
+  fullName: KS.Files.Operations.Querying.Parsing.GetInvalidPathChars()
+  nameWithType: Parsing.GetInvalidPathChars()
+- uid: KS.Files.Operations.Querying.Parsing.GetInvalidPathChars*
+  name: GetInvalidPathChars
+  href: api/KS.Files.Operations.Querying.Parsing.html#KS_Files_Operations_Querying_Parsing_GetInvalidPathChars_
+  commentId: Overload:KS.Files.Operations.Querying.Parsing.GetInvalidPathChars
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Parsing.GetInvalidPathChars
+  nameWithType: Parsing.GetInvalidPathChars
+- uid: KS.Files.Operations.Querying.Parsing.IsBinaryFile(System.String)
+  name: IsBinaryFile(string)
+  href: api/KS.Files.Operations.Querying.Parsing.html#KS_Files_Operations_Querying_Parsing_IsBinaryFile_System_String_
+  commentId: M:KS.Files.Operations.Querying.Parsing.IsBinaryFile(System.String)
+  name.vb: IsBinaryFile(String)
+  fullName: KS.Files.Operations.Querying.Parsing.IsBinaryFile(string)
+  fullName.vb: KS.Files.Operations.Querying.Parsing.IsBinaryFile(String)
+  nameWithType: Parsing.IsBinaryFile(string)
+  nameWithType.vb: Parsing.IsBinaryFile(String)
+- uid: KS.Files.Operations.Querying.Parsing.IsBinaryFile*
+  name: IsBinaryFile
+  href: api/KS.Files.Operations.Querying.Parsing.html#KS_Files_Operations_Querying_Parsing_IsBinaryFile_
+  commentId: Overload:KS.Files.Operations.Querying.Parsing.IsBinaryFile
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Parsing.IsBinaryFile
+  nameWithType: Parsing.IsBinaryFile
+- uid: KS.Files.Operations.Querying.Parsing.IsJson(System.String)
+  name: IsJson(string)
+  href: api/KS.Files.Operations.Querying.Parsing.html#KS_Files_Operations_Querying_Parsing_IsJson_System_String_
+  commentId: M:KS.Files.Operations.Querying.Parsing.IsJson(System.String)
+  name.vb: IsJson(String)
+  fullName: KS.Files.Operations.Querying.Parsing.IsJson(string)
+  fullName.vb: KS.Files.Operations.Querying.Parsing.IsJson(String)
+  nameWithType: Parsing.IsJson(string)
+  nameWithType.vb: Parsing.IsJson(String)
+- uid: KS.Files.Operations.Querying.Parsing.IsJson*
+  name: IsJson
+  href: api/KS.Files.Operations.Querying.Parsing.html#KS_Files_Operations_Querying_Parsing_IsJson_
+  commentId: Overload:KS.Files.Operations.Querying.Parsing.IsJson
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Parsing.IsJson
+  nameWithType: Parsing.IsJson
+- uid: KS.Files.Operations.Querying.Parsing.IsSql(System.String)
+  name: IsSql(string)
+  href: api/KS.Files.Operations.Querying.Parsing.html#KS_Files_Operations_Querying_Parsing_IsSql_System_String_
+  commentId: M:KS.Files.Operations.Querying.Parsing.IsSql(System.String)
+  name.vb: IsSql(String)
+  fullName: KS.Files.Operations.Querying.Parsing.IsSql(string)
+  fullName.vb: KS.Files.Operations.Querying.Parsing.IsSql(String)
+  nameWithType: Parsing.IsSql(string)
+  nameWithType.vb: Parsing.IsSql(String)
+- uid: KS.Files.Operations.Querying.Parsing.IsSql*
+  name: IsSql
+  href: api/KS.Files.Operations.Querying.Parsing.html#KS_Files_Operations_Querying_Parsing_IsSql_
+  commentId: Overload:KS.Files.Operations.Querying.Parsing.IsSql
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Parsing.IsSql
+  nameWithType: Parsing.IsSql
+- uid: KS.Files.Operations.Querying.Parsing.TryParseFileName(System.String)
+  name: TryParseFileName(string)
+  href: api/KS.Files.Operations.Querying.Parsing.html#KS_Files_Operations_Querying_Parsing_TryParseFileName_System_String_
+  commentId: M:KS.Files.Operations.Querying.Parsing.TryParseFileName(System.String)
+  name.vb: TryParseFileName(String)
+  fullName: KS.Files.Operations.Querying.Parsing.TryParseFileName(string)
+  fullName.vb: KS.Files.Operations.Querying.Parsing.TryParseFileName(String)
+  nameWithType: Parsing.TryParseFileName(string)
+  nameWithType.vb: Parsing.TryParseFileName(String)
+- uid: KS.Files.Operations.Querying.Parsing.TryParseFileName*
+  name: TryParseFileName
+  href: api/KS.Files.Operations.Querying.Parsing.html#KS_Files_Operations_Querying_Parsing_TryParseFileName_
+  commentId: Overload:KS.Files.Operations.Querying.Parsing.TryParseFileName
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Parsing.TryParseFileName
+  nameWithType: Parsing.TryParseFileName
+- uid: KS.Files.Operations.Querying.Parsing.TryParsePath(System.String)
+  name: TryParsePath(string)
+  href: api/KS.Files.Operations.Querying.Parsing.html#KS_Files_Operations_Querying_Parsing_TryParsePath_System_String_
+  commentId: M:KS.Files.Operations.Querying.Parsing.TryParsePath(System.String)
+  name.vb: TryParsePath(String)
+  fullName: KS.Files.Operations.Querying.Parsing.TryParsePath(string)
+  fullName.vb: KS.Files.Operations.Querying.Parsing.TryParsePath(String)
+  nameWithType: Parsing.TryParsePath(string)
+  nameWithType.vb: Parsing.TryParsePath(String)
+- uid: KS.Files.Operations.Querying.Parsing.TryParsePath*
+  name: TryParsePath
+  href: api/KS.Files.Operations.Querying.Parsing.html#KS_Files_Operations_Querying_Parsing_TryParsePath_
+  commentId: Overload:KS.Files.Operations.Querying.Parsing.TryParsePath
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Parsing.TryParsePath
+  nameWithType: Parsing.TryParsePath
+- uid: KS.Files.Operations.Querying.Searching
+  name: Searching
+  href: api/KS.Files.Operations.Querying.Searching.html
+  commentId: T:KS.Files.Operations.Querying.Searching
+  fullName: KS.Files.Operations.Querying.Searching
+  nameWithType: Searching
+- uid: KS.Files.Operations.Querying.Searching.SearchFileForString(System.String,System.String)
+  name: SearchFileForString(string, string)
+  href: api/KS.Files.Operations.Querying.Searching.html#KS_Files_Operations_Querying_Searching_SearchFileForString_System_String_System_String_
+  commentId: M:KS.Files.Operations.Querying.Searching.SearchFileForString(System.String,System.String)
+  name.vb: SearchFileForString(String, String)
+  fullName: KS.Files.Operations.Querying.Searching.SearchFileForString(string, string)
+  fullName.vb: KS.Files.Operations.Querying.Searching.SearchFileForString(String, String)
+  nameWithType: Searching.SearchFileForString(string, string)
+  nameWithType.vb: Searching.SearchFileForString(String, String)
+- uid: KS.Files.Operations.Querying.Searching.SearchFileForString*
+  name: SearchFileForString
+  href: api/KS.Files.Operations.Querying.Searching.html#KS_Files_Operations_Querying_Searching_SearchFileForString_
+  commentId: Overload:KS.Files.Operations.Querying.Searching.SearchFileForString
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Searching.SearchFileForString
+  nameWithType: Searching.SearchFileForString
+- uid: KS.Files.Operations.Querying.Searching.SearchFileForStringRegexp(System.String,System.Text.RegularExpressions.Regex)
+  name: SearchFileForStringRegexp(string, Regex)
+  href: api/KS.Files.Operations.Querying.Searching.html#KS_Files_Operations_Querying_Searching_SearchFileForStringRegexp_System_String_System_Text_RegularExpressions_Regex_
+  commentId: M:KS.Files.Operations.Querying.Searching.SearchFileForStringRegexp(System.String,System.Text.RegularExpressions.Regex)
+  name.vb: SearchFileForStringRegexp(String, Regex)
+  fullName: KS.Files.Operations.Querying.Searching.SearchFileForStringRegexp(string, System.Text.RegularExpressions.Regex)
+  fullName.vb: KS.Files.Operations.Querying.Searching.SearchFileForStringRegexp(String, System.Text.RegularExpressions.Regex)
+  nameWithType: Searching.SearchFileForStringRegexp(string, Regex)
+  nameWithType.vb: Searching.SearchFileForStringRegexp(String, Regex)
+- uid: KS.Files.Operations.Querying.Searching.SearchFileForStringRegexp*
+  name: SearchFileForStringRegexp
+  href: api/KS.Files.Operations.Querying.Searching.html#KS_Files_Operations_Querying_Searching_SearchFileForStringRegexp_
+  commentId: Overload:KS.Files.Operations.Querying.Searching.SearchFileForStringRegexp
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Searching.SearchFileForStringRegexp
+  nameWithType: Searching.SearchFileForStringRegexp
+- uid: KS.Files.Operations.Querying.Searching.SearchFileForStringRegexpMatches(System.String,System.Text.RegularExpressions.Regex)
+  name: SearchFileForStringRegexpMatches(string, Regex)
+  href: api/KS.Files.Operations.Querying.Searching.html#KS_Files_Operations_Querying_Searching_SearchFileForStringRegexpMatches_System_String_System_Text_RegularExpressions_Regex_
+  commentId: M:KS.Files.Operations.Querying.Searching.SearchFileForStringRegexpMatches(System.String,System.Text.RegularExpressions.Regex)
+  name.vb: SearchFileForStringRegexpMatches(String, Regex)
+  fullName: KS.Files.Operations.Querying.Searching.SearchFileForStringRegexpMatches(string, System.Text.RegularExpressions.Regex)
+  fullName.vb: KS.Files.Operations.Querying.Searching.SearchFileForStringRegexpMatches(String, System.Text.RegularExpressions.Regex)
+  nameWithType: Searching.SearchFileForStringRegexpMatches(string, Regex)
+  nameWithType.vb: Searching.SearchFileForStringRegexpMatches(String, Regex)
+- uid: KS.Files.Operations.Querying.Searching.SearchFileForStringRegexpMatches*
+  name: SearchFileForStringRegexpMatches
+  href: api/KS.Files.Operations.Querying.Searching.html#KS_Files_Operations_Querying_Searching_SearchFileForStringRegexpMatches_
+  commentId: Overload:KS.Files.Operations.Querying.Searching.SearchFileForStringRegexpMatches
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.Searching.SearchFileForStringRegexpMatches
+  nameWithType: Searching.SearchFileForStringRegexpMatches
+- uid: KS.Files.Operations.Querying.SizeGetter
+  name: SizeGetter
+  href: api/KS.Files.Operations.Querying.SizeGetter.html
+  commentId: T:KS.Files.Operations.Querying.SizeGetter
+  fullName: KS.Files.Operations.Querying.SizeGetter
+  nameWithType: SizeGetter
+- uid: KS.Files.Operations.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo)
+  name: GetAllSizesInFolder(DirectoryInfo)
+  href: api/KS.Files.Operations.Querying.SizeGetter.html#KS_Files_Operations_Querying_SizeGetter_GetAllSizesInFolder_System_IO_DirectoryInfo_
+  commentId: M:KS.Files.Operations.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo)
+  fullName: KS.Files.Operations.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo)
+  nameWithType: SizeGetter.GetAllSizesInFolder(DirectoryInfo)
+- uid: KS.Files.Operations.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo,System.Boolean)
+  name: GetAllSizesInFolder(DirectoryInfo, bool)
+  href: api/KS.Files.Operations.Querying.SizeGetter.html#KS_Files_Operations_Querying_SizeGetter_GetAllSizesInFolder_System_IO_DirectoryInfo_System_Boolean_
+  commentId: M:KS.Files.Operations.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo,System.Boolean)
+  name.vb: GetAllSizesInFolder(DirectoryInfo, Boolean)
+  fullName: KS.Files.Operations.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo, bool)
+  fullName.vb: KS.Files.Operations.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo, Boolean)
+  nameWithType: SizeGetter.GetAllSizesInFolder(DirectoryInfo, bool)
+  nameWithType.vb: SizeGetter.GetAllSizesInFolder(DirectoryInfo, Boolean)
+- uid: KS.Files.Operations.Querying.SizeGetter.GetAllSizesInFolder*
+  name: GetAllSizesInFolder
+  href: api/KS.Files.Operations.Querying.SizeGetter.html#KS_Files_Operations_Querying_SizeGetter_GetAllSizesInFolder_
+  commentId: Overload:KS.Files.Operations.Querying.SizeGetter.GetAllSizesInFolder
+  isSpec: "True"
+  fullName: KS.Files.Operations.Querying.SizeGetter.GetAllSizesInFolder
+  nameWithType: SizeGetter.GetAllSizesInFolder
+- uid: KS.Files.Operations.Reading
+  name: Reading
+  href: api/KS.Files.Operations.Reading.html
+  commentId: T:KS.Files.Operations.Reading
+  fullName: KS.Files.Operations.Reading
+  nameWithType: Reading
+- uid: KS.Files.Operations.Reading.ReadAllBytes(System.String)
+  name: ReadAllBytes(string)
+  href: api/KS.Files.Operations.Reading.html#KS_Files_Operations_Reading_ReadAllBytes_System_String_
+  commentId: M:KS.Files.Operations.Reading.ReadAllBytes(System.String)
+  name.vb: ReadAllBytes(String)
+  fullName: KS.Files.Operations.Reading.ReadAllBytes(string)
+  fullName.vb: KS.Files.Operations.Reading.ReadAllBytes(String)
+  nameWithType: Reading.ReadAllBytes(string)
+  nameWithType.vb: Reading.ReadAllBytes(String)
+- uid: KS.Files.Operations.Reading.ReadAllBytes*
+  name: ReadAllBytes
+  href: api/KS.Files.Operations.Reading.html#KS_Files_Operations_Reading_ReadAllBytes_
+  commentId: Overload:KS.Files.Operations.Reading.ReadAllBytes
+  isSpec: "True"
+  fullName: KS.Files.Operations.Reading.ReadAllBytes
+  nameWithType: Reading.ReadAllBytes
+- uid: KS.Files.Operations.Reading.ReadAllLinesNoBlock(System.String)
+  name: ReadAllLinesNoBlock(string)
+  href: api/KS.Files.Operations.Reading.html#KS_Files_Operations_Reading_ReadAllLinesNoBlock_System_String_
+  commentId: M:KS.Files.Operations.Reading.ReadAllLinesNoBlock(System.String)
+  name.vb: ReadAllLinesNoBlock(String)
+  fullName: KS.Files.Operations.Reading.ReadAllLinesNoBlock(string)
+  fullName.vb: KS.Files.Operations.Reading.ReadAllLinesNoBlock(String)
+  nameWithType: Reading.ReadAllLinesNoBlock(string)
+  nameWithType.vb: Reading.ReadAllLinesNoBlock(String)
+- uid: KS.Files.Operations.Reading.ReadAllLinesNoBlock*
+  name: ReadAllLinesNoBlock
+  href: api/KS.Files.Operations.Reading.html#KS_Files_Operations_Reading_ReadAllLinesNoBlock_
+  commentId: Overload:KS.Files.Operations.Reading.ReadAllLinesNoBlock
+  isSpec: "True"
+  fullName: KS.Files.Operations.Reading.ReadAllLinesNoBlock
+  nameWithType: Reading.ReadAllLinesNoBlock
+- uid: KS.Files.Operations.Reading.ReadAllTextNoBlock(System.String)
+  name: ReadAllTextNoBlock(string)
+  href: api/KS.Files.Operations.Reading.html#KS_Files_Operations_Reading_ReadAllTextNoBlock_System_String_
+  commentId: M:KS.Files.Operations.Reading.ReadAllTextNoBlock(System.String)
+  name.vb: ReadAllTextNoBlock(String)
+  fullName: KS.Files.Operations.Reading.ReadAllTextNoBlock(string)
+  fullName.vb: KS.Files.Operations.Reading.ReadAllTextNoBlock(String)
+  nameWithType: Reading.ReadAllTextNoBlock(string)
+  nameWithType.vb: Reading.ReadAllTextNoBlock(String)
+- uid: KS.Files.Operations.Reading.ReadAllTextNoBlock*
+  name: ReadAllTextNoBlock
+  href: api/KS.Files.Operations.Reading.html#KS_Files_Operations_Reading_ReadAllTextNoBlock_
+  commentId: Overload:KS.Files.Operations.Reading.ReadAllTextNoBlock
+  isSpec: "True"
+  fullName: KS.Files.Operations.Reading.ReadAllTextNoBlock
+  nameWithType: Reading.ReadAllTextNoBlock
+- uid: KS.Files.Operations.Reading.ReadContents(System.String)
+  name: ReadContents(string)
+  href: api/KS.Files.Operations.Reading.html#KS_Files_Operations_Reading_ReadContents_System_String_
+  commentId: M:KS.Files.Operations.Reading.ReadContents(System.String)
+  name.vb: ReadContents(String)
+  fullName: KS.Files.Operations.Reading.ReadContents(string)
+  fullName.vb: KS.Files.Operations.Reading.ReadContents(String)
+  nameWithType: Reading.ReadContents(string)
+  nameWithType.vb: Reading.ReadContents(String)
+- uid: KS.Files.Operations.Reading.ReadContents*
+  name: ReadContents
+  href: api/KS.Files.Operations.Reading.html#KS_Files_Operations_Reading_ReadContents_
+  commentId: Overload:KS.Files.Operations.Reading.ReadContents
+  isSpec: "True"
+  fullName: KS.Files.Operations.Reading.ReadContents
+  nameWithType: Reading.ReadContents
+- uid: KS.Files.Operations.Reading.ReadContentsText(System.String)
+  name: ReadContentsText(string)
+  href: api/KS.Files.Operations.Reading.html#KS_Files_Operations_Reading_ReadContentsText_System_String_
+  commentId: M:KS.Files.Operations.Reading.ReadContentsText(System.String)
+  name.vb: ReadContentsText(String)
+  fullName: KS.Files.Operations.Reading.ReadContentsText(string)
+  fullName.vb: KS.Files.Operations.Reading.ReadContentsText(String)
+  nameWithType: Reading.ReadContentsText(string)
+  nameWithType.vb: Reading.ReadContentsText(String)
+- uid: KS.Files.Operations.Reading.ReadContentsText*
+  name: ReadContentsText
+  href: api/KS.Files.Operations.Reading.html#KS_Files_Operations_Reading_ReadContentsText_
+  commentId: Overload:KS.Files.Operations.Reading.ReadContentsText
+  isSpec: "True"
+  fullName: KS.Files.Operations.Reading.ReadContentsText
+  nameWithType: Reading.ReadContentsText
+- uid: KS.Files.Operations.Reading.ReadToEndAndSeek(System.IO.StreamReader@)
+  name: ReadToEndAndSeek(ref StreamReader)
+  href: api/KS.Files.Operations.Reading.html#KS_Files_Operations_Reading_ReadToEndAndSeek_System_IO_StreamReader__
+  commentId: M:KS.Files.Operations.Reading.ReadToEndAndSeek(System.IO.StreamReader@)
+  name.vb: ReadToEndAndSeek(StreamReader)
+  fullName: KS.Files.Operations.Reading.ReadToEndAndSeek(ref System.IO.StreamReader)
+  fullName.vb: KS.Files.Operations.Reading.ReadToEndAndSeek(System.IO.StreamReader)
+  nameWithType: Reading.ReadToEndAndSeek(ref StreamReader)
+  nameWithType.vb: Reading.ReadToEndAndSeek(StreamReader)
+- uid: KS.Files.Operations.Reading.ReadToEndAndSeek*
+  name: ReadToEndAndSeek
+  href: api/KS.Files.Operations.Reading.html#KS_Files_Operations_Reading_ReadToEndAndSeek_
+  commentId: Overload:KS.Files.Operations.Reading.ReadToEndAndSeek
+  isSpec: "True"
+  fullName: KS.Files.Operations.Reading.ReadToEndAndSeek
+  nameWithType: Reading.ReadToEndAndSeek
 - uid: KS.Files.Operations.Removing
   name: Removing
   href: api/KS.Files.Operations.Removing.html
@@ -19207,534 +19873,6 @@ references:
   isSpec: "True"
   fullName: KS.Files.Paths.UsersPath
   nameWithType: Paths.UsersPath
-- uid: KS.Files.Print
-  name: KS.Files.Print
-  href: api/KS.Files.Print.html
-  commentId: N:KS.Files.Print
-  fullName: KS.Files.Print
-  nameWithType: KS.Files.Print
-- uid: KS.Files.Print.DirectoryInfoPrinter
-  name: DirectoryInfoPrinter
-  href: api/KS.Files.Print.DirectoryInfoPrinter.html
-  commentId: T:KS.Files.Print.DirectoryInfoPrinter
-  fullName: KS.Files.Print.DirectoryInfoPrinter
-  nameWithType: DirectoryInfoPrinter
-- uid: KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo(KS.Files.Instances.FileSystemEntry)
-  name: PrintDirectoryInfo(FileSystemEntry)
-  href: api/KS.Files.Print.DirectoryInfoPrinter.html#KS_Files_Print_DirectoryInfoPrinter_PrintDirectoryInfo_KS_Files_Instances_FileSystemEntry_
-  commentId: M:KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo(KS.Files.Instances.FileSystemEntry)
-  fullName: KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo(KS.Files.Instances.FileSystemEntry)
-  nameWithType: DirectoryInfoPrinter.PrintDirectoryInfo(FileSystemEntry)
-- uid: KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo(KS.Files.Instances.FileSystemEntry,System.Boolean)
-  name: PrintDirectoryInfo(FileSystemEntry, bool)
-  href: api/KS.Files.Print.DirectoryInfoPrinter.html#KS_Files_Print_DirectoryInfoPrinter_PrintDirectoryInfo_KS_Files_Instances_FileSystemEntry_System_Boolean_
-  commentId: M:KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo(KS.Files.Instances.FileSystemEntry,System.Boolean)
-  name.vb: PrintDirectoryInfo(FileSystemEntry, Boolean)
-  fullName: KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo(KS.Files.Instances.FileSystemEntry, bool)
-  fullName.vb: KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo(KS.Files.Instances.FileSystemEntry, Boolean)
-  nameWithType: DirectoryInfoPrinter.PrintDirectoryInfo(FileSystemEntry, bool)
-  nameWithType.vb: DirectoryInfoPrinter.PrintDirectoryInfo(FileSystemEntry, Boolean)
-- uid: KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo*
-  name: PrintDirectoryInfo
-  href: api/KS.Files.Print.DirectoryInfoPrinter.html#KS_Files_Print_DirectoryInfoPrinter_PrintDirectoryInfo_
-  commentId: Overload:KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo
-  isSpec: "True"
-  fullName: KS.Files.Print.DirectoryInfoPrinter.PrintDirectoryInfo
-  nameWithType: DirectoryInfoPrinter.PrintDirectoryInfo
-- uid: KS.Files.Print.FileContentPrinter
-  name: FileContentPrinter
-  href: api/KS.Files.Print.FileContentPrinter.html
-  commentId: T:KS.Files.Print.FileContentPrinter
-  fullName: KS.Files.Print.FileContentPrinter
-  nameWithType: FileContentPrinter
-- uid: KS.Files.Print.FileContentPrinter.DisplayInHex(System.Int64,System.Int64,System.Byte[])
-  name: DisplayInHex(long, long, byte[])
-  href: api/KS.Files.Print.FileContentPrinter.html#KS_Files_Print_FileContentPrinter_DisplayInHex_System_Int64_System_Int64_System_Byte___
-  commentId: M:KS.Files.Print.FileContentPrinter.DisplayInHex(System.Int64,System.Int64,System.Byte[])
-  name.vb: DisplayInHex(Long, Long, Byte())
-  fullName: KS.Files.Print.FileContentPrinter.DisplayInHex(long, long, byte[])
-  fullName.vb: KS.Files.Print.FileContentPrinter.DisplayInHex(Long, Long, Byte())
-  nameWithType: FileContentPrinter.DisplayInHex(long, long, byte[])
-  nameWithType.vb: FileContentPrinter.DisplayInHex(Long, Long, Byte())
-- uid: KS.Files.Print.FileContentPrinter.DisplayInHex*
-  name: DisplayInHex
-  href: api/KS.Files.Print.FileContentPrinter.html#KS_Files_Print_FileContentPrinter_DisplayInHex_
-  commentId: Overload:KS.Files.Print.FileContentPrinter.DisplayInHex
-  isSpec: "True"
-  fullName: KS.Files.Print.FileContentPrinter.DisplayInHex
-  nameWithType: FileContentPrinter.DisplayInHex
-- uid: KS.Files.Print.FileContentPrinter.PrintContents(System.String)
-  name: PrintContents(string)
-  href: api/KS.Files.Print.FileContentPrinter.html#KS_Files_Print_FileContentPrinter_PrintContents_System_String_
-  commentId: M:KS.Files.Print.FileContentPrinter.PrintContents(System.String)
-  name.vb: PrintContents(String)
-  fullName: KS.Files.Print.FileContentPrinter.PrintContents(string)
-  fullName.vb: KS.Files.Print.FileContentPrinter.PrintContents(String)
-  nameWithType: FileContentPrinter.PrintContents(string)
-  nameWithType.vb: FileContentPrinter.PrintContents(String)
-- uid: KS.Files.Print.FileContentPrinter.PrintContents(System.String,System.Boolean,System.Boolean)
-  name: PrintContents(string, bool, bool)
-  href: api/KS.Files.Print.FileContentPrinter.html#KS_Files_Print_FileContentPrinter_PrintContents_System_String_System_Boolean_System_Boolean_
-  commentId: M:KS.Files.Print.FileContentPrinter.PrintContents(System.String,System.Boolean,System.Boolean)
-  name.vb: PrintContents(String, Boolean, Boolean)
-  fullName: KS.Files.Print.FileContentPrinter.PrintContents(string, bool, bool)
-  fullName.vb: KS.Files.Print.FileContentPrinter.PrintContents(String, Boolean, Boolean)
-  nameWithType: FileContentPrinter.PrintContents(string, bool, bool)
-  nameWithType.vb: FileContentPrinter.PrintContents(String, Boolean, Boolean)
-- uid: KS.Files.Print.FileContentPrinter.PrintContents*
-  name: PrintContents
-  href: api/KS.Files.Print.FileContentPrinter.html#KS_Files_Print_FileContentPrinter_PrintContents_
-  commentId: Overload:KS.Files.Print.FileContentPrinter.PrintContents
-  isSpec: "True"
-  fullName: KS.Files.Print.FileContentPrinter.PrintContents
-  nameWithType: FileContentPrinter.PrintContents
-- uid: KS.Files.Print.FileInfoPrinter
-  name: FileInfoPrinter
-  href: api/KS.Files.Print.FileInfoPrinter.html
-  commentId: T:KS.Files.Print.FileInfoPrinter
-  fullName: KS.Files.Print.FileInfoPrinter
-  nameWithType: FileInfoPrinter
-- uid: KS.Files.Print.FileInfoPrinter.PrintFileInfo(KS.Files.Instances.FileSystemEntry)
-  name: PrintFileInfo(FileSystemEntry)
-  href: api/KS.Files.Print.FileInfoPrinter.html#KS_Files_Print_FileInfoPrinter_PrintFileInfo_KS_Files_Instances_FileSystemEntry_
-  commentId: M:KS.Files.Print.FileInfoPrinter.PrintFileInfo(KS.Files.Instances.FileSystemEntry)
-  fullName: KS.Files.Print.FileInfoPrinter.PrintFileInfo(KS.Files.Instances.FileSystemEntry)
-  nameWithType: FileInfoPrinter.PrintFileInfo(FileSystemEntry)
-- uid: KS.Files.Print.FileInfoPrinter.PrintFileInfo(KS.Files.Instances.FileSystemEntry,System.Boolean)
-  name: PrintFileInfo(FileSystemEntry, bool)
-  href: api/KS.Files.Print.FileInfoPrinter.html#KS_Files_Print_FileInfoPrinter_PrintFileInfo_KS_Files_Instances_FileSystemEntry_System_Boolean_
-  commentId: M:KS.Files.Print.FileInfoPrinter.PrintFileInfo(KS.Files.Instances.FileSystemEntry,System.Boolean)
-  name.vb: PrintFileInfo(FileSystemEntry, Boolean)
-  fullName: KS.Files.Print.FileInfoPrinter.PrintFileInfo(KS.Files.Instances.FileSystemEntry, bool)
-  fullName.vb: KS.Files.Print.FileInfoPrinter.PrintFileInfo(KS.Files.Instances.FileSystemEntry, Boolean)
-  nameWithType: FileInfoPrinter.PrintFileInfo(FileSystemEntry, bool)
-  nameWithType.vb: FileInfoPrinter.PrintFileInfo(FileSystemEntry, Boolean)
-- uid: KS.Files.Print.FileInfoPrinter.PrintFileInfo*
-  name: PrintFileInfo
-  href: api/KS.Files.Print.FileInfoPrinter.html#KS_Files_Print_FileInfoPrinter_PrintFileInfo_
-  commentId: Overload:KS.Files.Print.FileInfoPrinter.PrintFileInfo
-  isSpec: "True"
-  fullName: KS.Files.Print.FileInfoPrinter.PrintFileInfo
-  nameWithType: FileInfoPrinter.PrintFileInfo
-- uid: KS.Files.Querying
-  name: KS.Files.Querying
-  href: api/KS.Files.Querying.html
-  commentId: N:KS.Files.Querying
-  fullName: KS.Files.Querying
-  nameWithType: KS.Files.Querying
-- uid: KS.Files.Querying.Checking
-  name: Checking
-  href: api/KS.Files.Querying.Checking.html
-  commentId: T:KS.Files.Querying.Checking
-  fullName: KS.Files.Querying.Checking
-  nameWithType: Checking
-- uid: KS.Files.Querying.Checking.Exists(System.String,System.Boolean)
-  name: Exists(string, bool)
-  href: api/KS.Files.Querying.Checking.html#KS_Files_Querying_Checking_Exists_System_String_System_Boolean_
-  commentId: M:KS.Files.Querying.Checking.Exists(System.String,System.Boolean)
-  name.vb: Exists(String, Boolean)
-  fullName: KS.Files.Querying.Checking.Exists(string, bool)
-  fullName.vb: KS.Files.Querying.Checking.Exists(String, Boolean)
-  nameWithType: Checking.Exists(string, bool)
-  nameWithType.vb: Checking.Exists(String, Boolean)
-- uid: KS.Files.Querying.Checking.Exists*
-  name: Exists
-  href: api/KS.Files.Querying.Checking.html#KS_Files_Querying_Checking_Exists_
-  commentId: Overload:KS.Files.Querying.Checking.Exists
-  isSpec: "True"
-  fullName: KS.Files.Querying.Checking.Exists
-  nameWithType: Checking.Exists
-- uid: KS.Files.Querying.Checking.FileExists(System.String,System.Boolean)
-  name: FileExists(string, bool)
-  href: api/KS.Files.Querying.Checking.html#KS_Files_Querying_Checking_FileExists_System_String_System_Boolean_
-  commentId: M:KS.Files.Querying.Checking.FileExists(System.String,System.Boolean)
-  name.vb: FileExists(String, Boolean)
-  fullName: KS.Files.Querying.Checking.FileExists(string, bool)
-  fullName.vb: KS.Files.Querying.Checking.FileExists(String, Boolean)
-  nameWithType: Checking.FileExists(string, bool)
-  nameWithType.vb: Checking.FileExists(String, Boolean)
-- uid: KS.Files.Querying.Checking.FileExists*
-  name: FileExists
-  href: api/KS.Files.Querying.Checking.html#KS_Files_Querying_Checking_FileExists_
-  commentId: Overload:KS.Files.Querying.Checking.FileExists
-  isSpec: "True"
-  fullName: KS.Files.Querying.Checking.FileExists
-  nameWithType: Checking.FileExists
-- uid: KS.Files.Querying.Checking.FolderExists(System.String,System.Boolean)
-  name: FolderExists(string, bool)
-  href: api/KS.Files.Querying.Checking.html#KS_Files_Querying_Checking_FolderExists_System_String_System_Boolean_
-  commentId: M:KS.Files.Querying.Checking.FolderExists(System.String,System.Boolean)
-  name.vb: FolderExists(String, Boolean)
-  fullName: KS.Files.Querying.Checking.FolderExists(string, bool)
-  fullName.vb: KS.Files.Querying.Checking.FolderExists(String, Boolean)
-  nameWithType: Checking.FolderExists(string, bool)
-  nameWithType.vb: Checking.FolderExists(String, Boolean)
-- uid: KS.Files.Querying.Checking.FolderExists*
-  name: FolderExists
-  href: api/KS.Files.Querying.Checking.html#KS_Files_Querying_Checking_FolderExists_
-  commentId: Overload:KS.Files.Querying.Checking.FolderExists
-  isSpec: "True"
-  fullName: KS.Files.Querying.Checking.FolderExists
-  nameWithType: Checking.FolderExists
-- uid: KS.Files.Querying.Checking.Rooted(System.String)
-  name: Rooted(string)
-  href: api/KS.Files.Querying.Checking.html#KS_Files_Querying_Checking_Rooted_System_String_
-  commentId: M:KS.Files.Querying.Checking.Rooted(System.String)
-  name.vb: Rooted(String)
-  fullName: KS.Files.Querying.Checking.Rooted(string)
-  fullName.vb: KS.Files.Querying.Checking.Rooted(String)
-  nameWithType: Checking.Rooted(string)
-  nameWithType.vb: Checking.Rooted(String)
-- uid: KS.Files.Querying.Checking.Rooted*
-  name: Rooted
-  href: api/KS.Files.Querying.Checking.html#KS_Files_Querying_Checking_Rooted_
-  commentId: Overload:KS.Files.Querying.Checking.Rooted
-  isSpec: "True"
-  fullName: KS.Files.Querying.Checking.Rooted
-  nameWithType: Checking.Rooted
-- uid: KS.Files.Querying.Getting
-  name: Getting
-  href: api/KS.Files.Querying.Getting.html
-  commentId: T:KS.Files.Querying.Getting
-  fullName: KS.Files.Querying.Getting
-  nameWithType: Getting
-- uid: KS.Files.Querying.Getting.GetNumberedFileName(System.String,System.String)
-  name: GetNumberedFileName(string, string)
-  href: api/KS.Files.Querying.Getting.html#KS_Files_Querying_Getting_GetNumberedFileName_System_String_System_String_
-  commentId: M:KS.Files.Querying.Getting.GetNumberedFileName(System.String,System.String)
-  name.vb: GetNumberedFileName(String, String)
-  fullName: KS.Files.Querying.Getting.GetNumberedFileName(string, string)
-  fullName.vb: KS.Files.Querying.Getting.GetNumberedFileName(String, String)
-  nameWithType: Getting.GetNumberedFileName(string, string)
-  nameWithType.vb: Getting.GetNumberedFileName(String, String)
-- uid: KS.Files.Querying.Getting.GetNumberedFileName*
-  name: GetNumberedFileName
-  href: api/KS.Files.Querying.Getting.html#KS_Files_Querying_Getting_GetNumberedFileName_
-  commentId: Overload:KS.Files.Querying.Getting.GetNumberedFileName
-  isSpec: "True"
-  fullName: KS.Files.Querying.Getting.GetNumberedFileName
-  nameWithType: Getting.GetNumberedFileName
-- uid: KS.Files.Querying.Getting.GetRandomFileName
-  name: GetRandomFileName()
-  href: api/KS.Files.Querying.Getting.html#KS_Files_Querying_Getting_GetRandomFileName
-  commentId: M:KS.Files.Querying.Getting.GetRandomFileName
-  fullName: KS.Files.Querying.Getting.GetRandomFileName()
-  nameWithType: Getting.GetRandomFileName()
-- uid: KS.Files.Querying.Getting.GetRandomFileName*
-  name: GetRandomFileName
-  href: api/KS.Files.Querying.Getting.html#KS_Files_Querying_Getting_GetRandomFileName_
-  commentId: Overload:KS.Files.Querying.Getting.GetRandomFileName
-  isSpec: "True"
-  fullName: KS.Files.Querying.Getting.GetRandomFileName
-  nameWithType: Getting.GetRandomFileName
-- uid: KS.Files.Querying.Getting.GetRandomFolderName
-  name: GetRandomFolderName()
-  href: api/KS.Files.Querying.Getting.html#KS_Files_Querying_Getting_GetRandomFolderName
-  commentId: M:KS.Files.Querying.Getting.GetRandomFolderName
-  fullName: KS.Files.Querying.Getting.GetRandomFolderName()
-  nameWithType: Getting.GetRandomFolderName()
-- uid: KS.Files.Querying.Getting.GetRandomFolderName*
-  name: GetRandomFolderName
-  href: api/KS.Files.Querying.Getting.html#KS_Files_Querying_Getting_GetRandomFolderName_
-  commentId: Overload:KS.Files.Querying.Getting.GetRandomFolderName
-  isSpec: "True"
-  fullName: KS.Files.Querying.Getting.GetRandomFolderName
-  nameWithType: Getting.GetRandomFolderName
-- uid: KS.Files.Querying.Parsing
-  name: Parsing
-  href: api/KS.Files.Querying.Parsing.html
-  commentId: T:KS.Files.Querying.Parsing
-  fullName: KS.Files.Querying.Parsing
-  nameWithType: Parsing
-- uid: KS.Files.Querying.Parsing.GetInvalidPathChars
-  name: GetInvalidPathChars()
-  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_GetInvalidPathChars
-  commentId: M:KS.Files.Querying.Parsing.GetInvalidPathChars
-  fullName: KS.Files.Querying.Parsing.GetInvalidPathChars()
-  nameWithType: Parsing.GetInvalidPathChars()
-- uid: KS.Files.Querying.Parsing.GetInvalidPathChars*
-  name: GetInvalidPathChars
-  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_GetInvalidPathChars_
-  commentId: Overload:KS.Files.Querying.Parsing.GetInvalidPathChars
-  isSpec: "True"
-  fullName: KS.Files.Querying.Parsing.GetInvalidPathChars
-  nameWithType: Parsing.GetInvalidPathChars
-- uid: KS.Files.Querying.Parsing.IsBinaryFile(System.String)
-  name: IsBinaryFile(string)
-  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_IsBinaryFile_System_String_
-  commentId: M:KS.Files.Querying.Parsing.IsBinaryFile(System.String)
-  name.vb: IsBinaryFile(String)
-  fullName: KS.Files.Querying.Parsing.IsBinaryFile(string)
-  fullName.vb: KS.Files.Querying.Parsing.IsBinaryFile(String)
-  nameWithType: Parsing.IsBinaryFile(string)
-  nameWithType.vb: Parsing.IsBinaryFile(String)
-- uid: KS.Files.Querying.Parsing.IsBinaryFile*
-  name: IsBinaryFile
-  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_IsBinaryFile_
-  commentId: Overload:KS.Files.Querying.Parsing.IsBinaryFile
-  isSpec: "True"
-  fullName: KS.Files.Querying.Parsing.IsBinaryFile
-  nameWithType: Parsing.IsBinaryFile
-- uid: KS.Files.Querying.Parsing.IsJson(System.String)
-  name: IsJson(string)
-  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_IsJson_System_String_
-  commentId: M:KS.Files.Querying.Parsing.IsJson(System.String)
-  name.vb: IsJson(String)
-  fullName: KS.Files.Querying.Parsing.IsJson(string)
-  fullName.vb: KS.Files.Querying.Parsing.IsJson(String)
-  nameWithType: Parsing.IsJson(string)
-  nameWithType.vb: Parsing.IsJson(String)
-- uid: KS.Files.Querying.Parsing.IsJson*
-  name: IsJson
-  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_IsJson_
-  commentId: Overload:KS.Files.Querying.Parsing.IsJson
-  isSpec: "True"
-  fullName: KS.Files.Querying.Parsing.IsJson
-  nameWithType: Parsing.IsJson
-- uid: KS.Files.Querying.Parsing.IsSql(System.String)
-  name: IsSql(string)
-  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_IsSql_System_String_
-  commentId: M:KS.Files.Querying.Parsing.IsSql(System.String)
-  name.vb: IsSql(String)
-  fullName: KS.Files.Querying.Parsing.IsSql(string)
-  fullName.vb: KS.Files.Querying.Parsing.IsSql(String)
-  nameWithType: Parsing.IsSql(string)
-  nameWithType.vb: Parsing.IsSql(String)
-- uid: KS.Files.Querying.Parsing.IsSql*
-  name: IsSql
-  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_IsSql_
-  commentId: Overload:KS.Files.Querying.Parsing.IsSql
-  isSpec: "True"
-  fullName: KS.Files.Querying.Parsing.IsSql
-  nameWithType: Parsing.IsSql
-- uid: KS.Files.Querying.Parsing.TryParseFileName(System.String)
-  name: TryParseFileName(string)
-  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_TryParseFileName_System_String_
-  commentId: M:KS.Files.Querying.Parsing.TryParseFileName(System.String)
-  name.vb: TryParseFileName(String)
-  fullName: KS.Files.Querying.Parsing.TryParseFileName(string)
-  fullName.vb: KS.Files.Querying.Parsing.TryParseFileName(String)
-  nameWithType: Parsing.TryParseFileName(string)
-  nameWithType.vb: Parsing.TryParseFileName(String)
-- uid: KS.Files.Querying.Parsing.TryParseFileName*
-  name: TryParseFileName
-  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_TryParseFileName_
-  commentId: Overload:KS.Files.Querying.Parsing.TryParseFileName
-  isSpec: "True"
-  fullName: KS.Files.Querying.Parsing.TryParseFileName
-  nameWithType: Parsing.TryParseFileName
-- uid: KS.Files.Querying.Parsing.TryParsePath(System.String)
-  name: TryParsePath(string)
-  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_TryParsePath_System_String_
-  commentId: M:KS.Files.Querying.Parsing.TryParsePath(System.String)
-  name.vb: TryParsePath(String)
-  fullName: KS.Files.Querying.Parsing.TryParsePath(string)
-  fullName.vb: KS.Files.Querying.Parsing.TryParsePath(String)
-  nameWithType: Parsing.TryParsePath(string)
-  nameWithType.vb: Parsing.TryParsePath(String)
-- uid: KS.Files.Querying.Parsing.TryParsePath*
-  name: TryParsePath
-  href: api/KS.Files.Querying.Parsing.html#KS_Files_Querying_Parsing_TryParsePath_
-  commentId: Overload:KS.Files.Querying.Parsing.TryParsePath
-  isSpec: "True"
-  fullName: KS.Files.Querying.Parsing.TryParsePath
-  nameWithType: Parsing.TryParsePath
-- uid: KS.Files.Querying.Searching
-  name: Searching
-  href: api/KS.Files.Querying.Searching.html
-  commentId: T:KS.Files.Querying.Searching
-  fullName: KS.Files.Querying.Searching
-  nameWithType: Searching
-- uid: KS.Files.Querying.Searching.SearchFileForString(System.String,System.String)
-  name: SearchFileForString(string, string)
-  href: api/KS.Files.Querying.Searching.html#KS_Files_Querying_Searching_SearchFileForString_System_String_System_String_
-  commentId: M:KS.Files.Querying.Searching.SearchFileForString(System.String,System.String)
-  name.vb: SearchFileForString(String, String)
-  fullName: KS.Files.Querying.Searching.SearchFileForString(string, string)
-  fullName.vb: KS.Files.Querying.Searching.SearchFileForString(String, String)
-  nameWithType: Searching.SearchFileForString(string, string)
-  nameWithType.vb: Searching.SearchFileForString(String, String)
-- uid: KS.Files.Querying.Searching.SearchFileForString*
-  name: SearchFileForString
-  href: api/KS.Files.Querying.Searching.html#KS_Files_Querying_Searching_SearchFileForString_
-  commentId: Overload:KS.Files.Querying.Searching.SearchFileForString
-  isSpec: "True"
-  fullName: KS.Files.Querying.Searching.SearchFileForString
-  nameWithType: Searching.SearchFileForString
-- uid: KS.Files.Querying.Searching.SearchFileForStringRegexp(System.String,System.Text.RegularExpressions.Regex)
-  name: SearchFileForStringRegexp(string, Regex)
-  href: api/KS.Files.Querying.Searching.html#KS_Files_Querying_Searching_SearchFileForStringRegexp_System_String_System_Text_RegularExpressions_Regex_
-  commentId: M:KS.Files.Querying.Searching.SearchFileForStringRegexp(System.String,System.Text.RegularExpressions.Regex)
-  name.vb: SearchFileForStringRegexp(String, Regex)
-  fullName: KS.Files.Querying.Searching.SearchFileForStringRegexp(string, System.Text.RegularExpressions.Regex)
-  fullName.vb: KS.Files.Querying.Searching.SearchFileForStringRegexp(String, System.Text.RegularExpressions.Regex)
-  nameWithType: Searching.SearchFileForStringRegexp(string, Regex)
-  nameWithType.vb: Searching.SearchFileForStringRegexp(String, Regex)
-- uid: KS.Files.Querying.Searching.SearchFileForStringRegexp*
-  name: SearchFileForStringRegexp
-  href: api/KS.Files.Querying.Searching.html#KS_Files_Querying_Searching_SearchFileForStringRegexp_
-  commentId: Overload:KS.Files.Querying.Searching.SearchFileForStringRegexp
-  isSpec: "True"
-  fullName: KS.Files.Querying.Searching.SearchFileForStringRegexp
-  nameWithType: Searching.SearchFileForStringRegexp
-- uid: KS.Files.Querying.Searching.SearchFileForStringRegexpMatches(System.String,System.Text.RegularExpressions.Regex)
-  name: SearchFileForStringRegexpMatches(string, Regex)
-  href: api/KS.Files.Querying.Searching.html#KS_Files_Querying_Searching_SearchFileForStringRegexpMatches_System_String_System_Text_RegularExpressions_Regex_
-  commentId: M:KS.Files.Querying.Searching.SearchFileForStringRegexpMatches(System.String,System.Text.RegularExpressions.Regex)
-  name.vb: SearchFileForStringRegexpMatches(String, Regex)
-  fullName: KS.Files.Querying.Searching.SearchFileForStringRegexpMatches(string, System.Text.RegularExpressions.Regex)
-  fullName.vb: KS.Files.Querying.Searching.SearchFileForStringRegexpMatches(String, System.Text.RegularExpressions.Regex)
-  nameWithType: Searching.SearchFileForStringRegexpMatches(string, Regex)
-  nameWithType.vb: Searching.SearchFileForStringRegexpMatches(String, Regex)
-- uid: KS.Files.Querying.Searching.SearchFileForStringRegexpMatches*
-  name: SearchFileForStringRegexpMatches
-  href: api/KS.Files.Querying.Searching.html#KS_Files_Querying_Searching_SearchFileForStringRegexpMatches_
-  commentId: Overload:KS.Files.Querying.Searching.SearchFileForStringRegexpMatches
-  isSpec: "True"
-  fullName: KS.Files.Querying.Searching.SearchFileForStringRegexpMatches
-  nameWithType: Searching.SearchFileForStringRegexpMatches
-- uid: KS.Files.Querying.SizeGetter
-  name: SizeGetter
-  href: api/KS.Files.Querying.SizeGetter.html
-  commentId: T:KS.Files.Querying.SizeGetter
-  fullName: KS.Files.Querying.SizeGetter
-  nameWithType: SizeGetter
-- uid: KS.Files.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo)
-  name: GetAllSizesInFolder(DirectoryInfo)
-  href: api/KS.Files.Querying.SizeGetter.html#KS_Files_Querying_SizeGetter_GetAllSizesInFolder_System_IO_DirectoryInfo_
-  commentId: M:KS.Files.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo)
-  fullName: KS.Files.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo)
-  nameWithType: SizeGetter.GetAllSizesInFolder(DirectoryInfo)
-- uid: KS.Files.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo,System.Boolean)
-  name: GetAllSizesInFolder(DirectoryInfo, bool)
-  href: api/KS.Files.Querying.SizeGetter.html#KS_Files_Querying_SizeGetter_GetAllSizesInFolder_System_IO_DirectoryInfo_System_Boolean_
-  commentId: M:KS.Files.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo,System.Boolean)
-  name.vb: GetAllSizesInFolder(DirectoryInfo, Boolean)
-  fullName: KS.Files.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo, bool)
-  fullName.vb: KS.Files.Querying.SizeGetter.GetAllSizesInFolder(System.IO.DirectoryInfo, Boolean)
-  nameWithType: SizeGetter.GetAllSizesInFolder(DirectoryInfo, bool)
-  nameWithType.vb: SizeGetter.GetAllSizesInFolder(DirectoryInfo, Boolean)
-- uid: KS.Files.Querying.SizeGetter.GetAllSizesInFolder*
-  name: GetAllSizesInFolder
-  href: api/KS.Files.Querying.SizeGetter.html#KS_Files_Querying_SizeGetter_GetAllSizesInFolder_
-  commentId: Overload:KS.Files.Querying.SizeGetter.GetAllSizesInFolder
-  isSpec: "True"
-  fullName: KS.Files.Querying.SizeGetter.GetAllSizesInFolder
-  nameWithType: SizeGetter.GetAllSizesInFolder
-- uid: KS.Files.Read
-  name: KS.Files.Read
-  href: api/KS.Files.Read.html
-  commentId: N:KS.Files.Read
-  fullName: KS.Files.Read
-  nameWithType: KS.Files.Read
-- uid: KS.Files.Read.FileRead
-  name: FileRead
-  href: api/KS.Files.Read.FileRead.html
-  commentId: T:KS.Files.Read.FileRead
-  fullName: KS.Files.Read.FileRead
-  nameWithType: FileRead
-- uid: KS.Files.Read.FileRead.ReadAllBytes(System.String)
-  name: ReadAllBytes(string)
-  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadAllBytes_System_String_
-  commentId: M:KS.Files.Read.FileRead.ReadAllBytes(System.String)
-  name.vb: ReadAllBytes(String)
-  fullName: KS.Files.Read.FileRead.ReadAllBytes(string)
-  fullName.vb: KS.Files.Read.FileRead.ReadAllBytes(String)
-  nameWithType: FileRead.ReadAllBytes(string)
-  nameWithType.vb: FileRead.ReadAllBytes(String)
-- uid: KS.Files.Read.FileRead.ReadAllBytes*
-  name: ReadAllBytes
-  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadAllBytes_
-  commentId: Overload:KS.Files.Read.FileRead.ReadAllBytes
-  isSpec: "True"
-  fullName: KS.Files.Read.FileRead.ReadAllBytes
-  nameWithType: FileRead.ReadAllBytes
-- uid: KS.Files.Read.FileRead.ReadAllLinesNoBlock(System.String)
-  name: ReadAllLinesNoBlock(string)
-  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadAllLinesNoBlock_System_String_
-  commentId: M:KS.Files.Read.FileRead.ReadAllLinesNoBlock(System.String)
-  name.vb: ReadAllLinesNoBlock(String)
-  fullName: KS.Files.Read.FileRead.ReadAllLinesNoBlock(string)
-  fullName.vb: KS.Files.Read.FileRead.ReadAllLinesNoBlock(String)
-  nameWithType: FileRead.ReadAllLinesNoBlock(string)
-  nameWithType.vb: FileRead.ReadAllLinesNoBlock(String)
-- uid: KS.Files.Read.FileRead.ReadAllLinesNoBlock*
-  name: ReadAllLinesNoBlock
-  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadAllLinesNoBlock_
-  commentId: Overload:KS.Files.Read.FileRead.ReadAllLinesNoBlock
-  isSpec: "True"
-  fullName: KS.Files.Read.FileRead.ReadAllLinesNoBlock
-  nameWithType: FileRead.ReadAllLinesNoBlock
-- uid: KS.Files.Read.FileRead.ReadAllTextNoBlock(System.String)
-  name: ReadAllTextNoBlock(string)
-  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadAllTextNoBlock_System_String_
-  commentId: M:KS.Files.Read.FileRead.ReadAllTextNoBlock(System.String)
-  name.vb: ReadAllTextNoBlock(String)
-  fullName: KS.Files.Read.FileRead.ReadAllTextNoBlock(string)
-  fullName.vb: KS.Files.Read.FileRead.ReadAllTextNoBlock(String)
-  nameWithType: FileRead.ReadAllTextNoBlock(string)
-  nameWithType.vb: FileRead.ReadAllTextNoBlock(String)
-- uid: KS.Files.Read.FileRead.ReadAllTextNoBlock*
-  name: ReadAllTextNoBlock
-  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadAllTextNoBlock_
-  commentId: Overload:KS.Files.Read.FileRead.ReadAllTextNoBlock
-  isSpec: "True"
-  fullName: KS.Files.Read.FileRead.ReadAllTextNoBlock
-  nameWithType: FileRead.ReadAllTextNoBlock
-- uid: KS.Files.Read.FileRead.ReadContents(System.String)
-  name: ReadContents(string)
-  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadContents_System_String_
-  commentId: M:KS.Files.Read.FileRead.ReadContents(System.String)
-  name.vb: ReadContents(String)
-  fullName: KS.Files.Read.FileRead.ReadContents(string)
-  fullName.vb: KS.Files.Read.FileRead.ReadContents(String)
-  nameWithType: FileRead.ReadContents(string)
-  nameWithType.vb: FileRead.ReadContents(String)
-- uid: KS.Files.Read.FileRead.ReadContents*
-  name: ReadContents
-  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadContents_
-  commentId: Overload:KS.Files.Read.FileRead.ReadContents
-  isSpec: "True"
-  fullName: KS.Files.Read.FileRead.ReadContents
-  nameWithType: FileRead.ReadContents
-- uid: KS.Files.Read.FileRead.ReadContentsText(System.String)
-  name: ReadContentsText(string)
-  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadContentsText_System_String_
-  commentId: M:KS.Files.Read.FileRead.ReadContentsText(System.String)
-  name.vb: ReadContentsText(String)
-  fullName: KS.Files.Read.FileRead.ReadContentsText(string)
-  fullName.vb: KS.Files.Read.FileRead.ReadContentsText(String)
-  nameWithType: FileRead.ReadContentsText(string)
-  nameWithType.vb: FileRead.ReadContentsText(String)
-- uid: KS.Files.Read.FileRead.ReadContentsText*
-  name: ReadContentsText
-  href: api/KS.Files.Read.FileRead.html#KS_Files_Read_FileRead_ReadContentsText_
-  commentId: Overload:KS.Files.Read.FileRead.ReadContentsText
-  isSpec: "True"
-  fullName: KS.Files.Read.FileRead.ReadContentsText
-  nameWithType: FileRead.ReadContentsText
-- uid: KS.Files.Read.StreamRead
-  name: StreamRead
-  href: api/KS.Files.Read.StreamRead.html
-  commentId: T:KS.Files.Read.StreamRead
-  fullName: KS.Files.Read.StreamRead
-  nameWithType: StreamRead
-- uid: KS.Files.Read.StreamRead.ReadToEndAndSeek(System.IO.StreamReader@)
-  name: ReadToEndAndSeek(ref StreamReader)
-  href: api/KS.Files.Read.StreamRead.html#KS_Files_Read_StreamRead_ReadToEndAndSeek_System_IO_StreamReader__
-  commentId: M:KS.Files.Read.StreamRead.ReadToEndAndSeek(System.IO.StreamReader@)
-  name.vb: ReadToEndAndSeek(StreamReader)
-  fullName: KS.Files.Read.StreamRead.ReadToEndAndSeek(ref System.IO.StreamReader)
-  fullName.vb: KS.Files.Read.StreamRead.ReadToEndAndSeek(System.IO.StreamReader)
-  nameWithType: StreamRead.ReadToEndAndSeek(ref StreamReader)
-  nameWithType.vb: StreamRead.ReadToEndAndSeek(StreamReader)
-- uid: KS.Files.Read.StreamRead.ReadToEndAndSeek*
-  name: ReadToEndAndSeek
-  href: api/KS.Files.Read.StreamRead.html#KS_Files_Read_StreamRead_ReadToEndAndSeek_
-  commentId: Overload:KS.Files.Read.StreamRead.ReadToEndAndSeek
-  isSpec: "True"
-  fullName: KS.Files.Read.StreamRead.ReadToEndAndSeek
-  nameWithType: StreamRead.ReadToEndAndSeek
 - uid: KS.Kernel
   name: KS.Kernel
   href: api/KS.Kernel.html

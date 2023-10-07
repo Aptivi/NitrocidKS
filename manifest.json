@@ -1616,6 +1616,116 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Operations.Printing.DirectoryInfoPrinter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Operations.Printing.DirectoryInfoPrinter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Operations.Printing.FileContentPrinter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Operations.Printing.FileContentPrinter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Operations.Printing.FileInfoPrinter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Operations.Printing.FileInfoPrinter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Operations.Printing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Operations.Printing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Operations.Querying.Checking.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Operations.Querying.Checking.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Operations.Querying.Getting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Operations.Querying.Getting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Operations.Querying.Parsing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Operations.Querying.Parsing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Operations.Querying.Searching.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Operations.Querying.Searching.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Operations.Querying.SizeGetter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Operations.Querying.SizeGetter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Operations.Querying.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Operations.Querying.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Operations.Reading.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Operations.Reading.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Files.Operations.Removing.yml",
       "output": {
         ".html": {
@@ -1670,136 +1780,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Paths.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Print.DirectoryInfoPrinter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Print.DirectoryInfoPrinter.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Print.FileContentPrinter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Print.FileContentPrinter.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Print.FileInfoPrinter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Print.FileInfoPrinter.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Print.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Print.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Querying.Checking.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Querying.Checking.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Querying.Getting.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Querying.Getting.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Querying.Parsing.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Querying.Parsing.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Querying.Searching.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Querying.Searching.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Querying.SizeGetter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Querying.SizeGetter.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Querying.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Querying.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Read.FileRead.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Read.FileRead.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Read.StreamRead.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Read.StreamRead.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Read.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Read.html"
         }
       },
       "version": ""
