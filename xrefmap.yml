@@ -33550,6 +33550,19 @@ references:
   isSpec: "True"
   fullName: KS.Modifications.IMod.Name
   nameWithType: IMod.Name
+- uid: KS.Modifications.IMod.PubliclyAvailableFunctions
+  name: PubliclyAvailableFunctions
+  href: api/KS.Modifications.IMod.html#KS_Modifications_IMod_PubliclyAvailableFunctions
+  commentId: P:KS.Modifications.IMod.PubliclyAvailableFunctions
+  fullName: KS.Modifications.IMod.PubliclyAvailableFunctions
+  nameWithType: IMod.PubliclyAvailableFunctions
+- uid: KS.Modifications.IMod.PubliclyAvailableFunctions*
+  name: PubliclyAvailableFunctions
+  href: api/KS.Modifications.IMod.html#KS_Modifications_IMod_PubliclyAvailableFunctions_
+  commentId: Overload:KS.Modifications.IMod.PubliclyAvailableFunctions
+  isSpec: "True"
+  fullName: KS.Modifications.IMod.PubliclyAvailableFunctions
+  nameWithType: IMod.PubliclyAvailableFunctions
 - uid: KS.Modifications.IMod.StartMod
   name: StartMod()
   href: api/KS.Modifications.IMod.html#KS_Modifications_IMod_StartMod
@@ -33871,6 +33884,31 @@ references:
   isSpec: "True"
   fullName: KS.Modifications.ModManager.BlacklistedModsString
   nameWithType: ModManager.BlacklistedModsString
+- uid: KS.Modifications.ModManager.ExecuteCustomModFunction(System.String,System.String)
+  name: ExecuteCustomModFunction(string, string)
+  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_ExecuteCustomModFunction_System_String_System_String_
+  commentId: M:KS.Modifications.ModManager.ExecuteCustomModFunction(System.String,System.String)
+  name.vb: ExecuteCustomModFunction(String, String)
+  fullName: KS.Modifications.ModManager.ExecuteCustomModFunction(string, string)
+  fullName.vb: KS.Modifications.ModManager.ExecuteCustomModFunction(String, String)
+  nameWithType: ModManager.ExecuteCustomModFunction(string, string)
+  nameWithType.vb: ModManager.ExecuteCustomModFunction(String, String)
+- uid: KS.Modifications.ModManager.ExecuteCustomModFunction(System.String,System.String,System.Object[])
+  name: ExecuteCustomModFunction(string, string, params object[])
+  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_ExecuteCustomModFunction_System_String_System_String_System_Object___
+  commentId: M:KS.Modifications.ModManager.ExecuteCustomModFunction(System.String,System.String,System.Object[])
+  name.vb: ExecuteCustomModFunction(String, String, ParamArray Object())
+  fullName: KS.Modifications.ModManager.ExecuteCustomModFunction(string, string, params object[])
+  fullName.vb: KS.Modifications.ModManager.ExecuteCustomModFunction(String, String, ParamArray Object())
+  nameWithType: ModManager.ExecuteCustomModFunction(string, string, params object[])
+  nameWithType.vb: ModManager.ExecuteCustomModFunction(String, String, ParamArray Object())
+- uid: KS.Modifications.ModManager.ExecuteCustomModFunction*
+  name: ExecuteCustomModFunction
+  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_ExecuteCustomModFunction_
+  commentId: Overload:KS.Modifications.ModManager.ExecuteCustomModFunction
+  isSpec: "True"
+  fullName: KS.Modifications.ModManager.ExecuteCustomModFunction
+  nameWithType: ModManager.ExecuteCustomModFunction
 - uid: KS.Modifications.ModManager.GetBlacklistedMods
   name: GetBlacklistedMods()
   href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_GetBlacklistedMods
@@ -33884,6 +33922,22 @@ references:
   isSpec: "True"
   fullName: KS.Modifications.ModManager.GetBlacklistedMods
   nameWithType: ModManager.GetBlacklistedMods
+- uid: KS.Modifications.ModManager.GetMod(System.String)
+  name: GetMod(string)
+  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_GetMod_System_String_
+  commentId: M:KS.Modifications.ModManager.GetMod(System.String)
+  name.vb: GetMod(String)
+  fullName: KS.Modifications.ModManager.GetMod(string)
+  fullName.vb: KS.Modifications.ModManager.GetMod(String)
+  nameWithType: ModManager.GetMod(string)
+  nameWithType.vb: ModManager.GetMod(String)
+- uid: KS.Modifications.ModManager.GetMod*
+  name: GetMod
+  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_GetMod_
+  commentId: Overload:KS.Modifications.ModManager.GetMod
+  isSpec: "True"
+  fullName: KS.Modifications.ModManager.GetMod
+  nameWithType: ModManager.GetMod
 - uid: KS.Modifications.ModManager.HasModStarted(System.String)
   name: HasModStarted(string)
   href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_HasModStarted_System_String_
