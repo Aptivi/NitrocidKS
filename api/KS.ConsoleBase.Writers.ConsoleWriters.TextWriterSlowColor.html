@@ -101,19 +101,263 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_System_String_System_Boolean_System_Double_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly(System.String%2CSystem.Boolean%2CSystem.Double%2CKS.ConsoleBase.Colors.KernelColorType%2CKS.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyColor_System_String_System_Boolean_System_Double_Terminaux_Colors_Color_System_Object___.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyColor(System.String%2CSystem.Boolean%2CSystem.Double%2CTerminaux.Colors.Color%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/ConsoleWriters/TextWriterSlowColor.cs/#L96">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/ConsoleWriters/TextWriterSlowColor.cs/#L182">View Source</a>
   </span>
-  <a id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly*"></a>
-  <h4 id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_System_String_System_Boolean_System_Double_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly(System.String,System.Boolean,System.Double,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteSlowly(string, bool, double, KernelColorType, KernelColorType, params object[])</h4>
+  <a id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyColor_" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyColor*"></a>
+  <h4 id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyColor_System_String_System_Boolean_System_Double_Terminaux_Colors_Color_System_Object___" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyColor(System.String,System.Boolean,System.Double,Terminaux.Colors.Color,System.Object[])">WriteSlowlyColor(string, bool, double, Color, params object[])</h4>
   <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt slowly with color support.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteSlowly(string msg, bool Line, double MsEachLetter, KernelColorType colorTypeForeground, KernelColorType colorTypeBackground, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteSlowlyColor(string msg, bool Line, double MsEachLetter, Color color, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">Line</span></td>
+        <td><p>Whether to print a new line or not</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">MsEachLetter</span></td>
+        <td><p>Time in milliseconds to delay writing</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>A color that will be changed to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message before it's written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyColor_System_String_System_Boolean_System_Double_Terminaux_Colors_ConsoleColors_System_Object___.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyColor(System.String%2CSystem.Boolean%2CSystem.Double%2CTerminaux.Colors.ConsoleColors%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/ConsoleWriters/TextWriterSlowColor.cs/#L125">View Source</a>
+  </span>
+  <a id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyColor_" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyColor*"></a>
+  <h4 id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyColor_System_String_System_Boolean_System_Double_Terminaux_Colors_ConsoleColors_System_Object___" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyColor(System.String,System.Boolean,System.Double,Terminaux.Colors.ConsoleColors,System.Object[])">WriteSlowlyColor(string, bool, double, ConsoleColors, params object[])</h4>
+  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt slowly with color support.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteSlowlyColor(string msg, bool Line, double MsEachLetter, ConsoleColors color, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">Line</span></td>
+        <td><p>Whether to print a new line or not</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">MsEachLetter</span></td>
+        <td><p>Time in milliseconds to delay writing</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ConsoleColors</span></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>A color that will be changed to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message before it's written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyColorBack_System_String_System_Boolean_System_Double_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyColorBack(System.String%2CSystem.Boolean%2CSystem.Double%2CTerminaux.Colors.Color%2CTerminaux.Colors.Color%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/ConsoleWriters/TextWriterSlowColor.cs/#L211">View Source</a>
+  </span>
+  <a id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyColorBack_" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyColorBack*"></a>
+  <h4 id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyColorBack_System_String_System_Boolean_System_Double_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyColorBack(System.String,System.Boolean,System.Double,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])">WriteSlowlyColorBack(string, bool, double, Color, Color, params object[])</h4>
+  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt slowly with color support.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteSlowlyColorBack(string msg, bool Line, double MsEachLetter, Color ForegroundColor, Color BackgroundColor, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">Line</span></td>
+        <td><p>Whether to print a new line or not</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">MsEachLetter</span></td>
+        <td><p>Time in milliseconds to delay writing</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><span class="parametername">ForegroundColor</span></td>
+        <td><p>A foreground color that will be changed to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><span class="parametername">BackgroundColor</span></td>
+        <td><p>A background color that will be changed to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message before it's written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyColorBack_System_String_System_Boolean_System_Double_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyColorBack(System.String%2CSystem.Boolean%2CSystem.Double%2CTerminaux.Colors.ConsoleColors%2CTerminaux.Colors.ConsoleColors%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/ConsoleWriters/TextWriterSlowColor.cs/#L154">View Source</a>
+  </span>
+  <a id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyColorBack_" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyColorBack*"></a>
+  <h4 id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyColorBack_System_String_System_Boolean_System_Double_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyColorBack(System.String,System.Boolean,System.Double,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])">WriteSlowlyColorBack(string, bool, double, ConsoleColors, ConsoleColors, params object[])</h4>
+  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt slowly with color support.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteSlowlyColorBack(string msg, bool Line, double MsEachLetter, ConsoleColors ForegroundColor, ConsoleColors BackgroundColor, params object[] vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">Line</span></td>
+        <td><p>Whether to print a new line or not</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">MsEachLetter</span></td>
+        <td><p>Time in milliseconds to delay writing</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ConsoleColors</span></td>
+        <td><span class="parametername">ForegroundColor</span></td>
+        <td><p>A foreground color that will be changed to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ConsoleColors</span></td>
+        <td><span class="parametername">BackgroundColor</span></td>
+        <td><p>A background color that will be changed to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">vars</span></td>
+        <td><p>Variables to format the message before it's written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyKernelColor_System_String_System_Boolean_System_Double_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyKernelColor(System.String%2CSystem.Boolean%2CSystem.Double%2CKS.ConsoleBase.Colors.KernelColorType%2CKS.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/ConsoleWriters/TextWriterSlowColor.cs/#L96">View Source</a>
+  </span>
+  <a id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyKernelColor_" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyKernelColor*"></a>
+  <h4 id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyKernelColor_System_String_System_Boolean_System_Double_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyKernelColor(System.String,System.Boolean,System.Double,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteSlowlyKernelColor(string, bool, double, KernelColorType, KernelColorType, params object[])</h4>
+  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt slowly with color support.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteSlowlyKernelColor(string msg, bool Line, double MsEachLetter, KernelColorType colorTypeForeground, KernelColorType colorTypeBackground, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -165,19 +409,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_System_String_System_Boolean_System_Double_KS_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly(System.String%2CSystem.Boolean%2CSystem.Double%2CKS.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyKernelColor_System_String_System_Boolean_System_Double_KS_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyKernelColor(System.String%2CSystem.Boolean%2CSystem.Double%2CKS.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/ConsoleWriters/TextWriterSlowColor.cs/#L67">View Source</a>
   </span>
-  <a id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly*"></a>
-  <h4 id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_System_String_System_Boolean_System_Double_KS_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly(System.String,System.Boolean,System.Double,KS.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteSlowly(string, bool, double, KernelColorType, params object[])</h4>
+  <a id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyKernelColor_" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyKernelColor*"></a>
+  <h4 id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowlyKernelColor_System_String_System_Boolean_System_Double_KS_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowlyKernelColor(System.String,System.Boolean,System.Double,KS.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteSlowlyKernelColor(string, bool, double, KernelColorType, params object[])</h4>
   <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt slowly with color support.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteSlowly(string msg, bool Line, double MsEachLetter, KernelColorType colorType, params object[] vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteSlowlyKernelColor(string msg, bool Line, double MsEachLetter, KernelColorType colorType, params object[] vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -211,250 +455,6 @@
         <td><a class="xref" href="KS.ConsoleBase.Colors.KernelColorType.html">KernelColorType</a></td>
         <td><span class="parametername">colorType</span></td>
         <td><p>A type of colors that will be changed.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
-        <td><span class="parametername">vars</span></td>
-        <td><p>Variables to format the message before it's written.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_System_String_System_Boolean_System_Double_Terminaux_Colors_Color_System_Object___.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly(System.String%2CSystem.Boolean%2CSystem.Double%2CTerminaux.Colors.Color%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/ConsoleWriters/TextWriterSlowColor.cs/#L182">View Source</a>
-  </span>
-  <a id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly*"></a>
-  <h4 id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_System_String_System_Boolean_System_Double_Terminaux_Colors_Color_System_Object___" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly(System.String,System.Boolean,System.Double,Terminaux.Colors.Color,System.Object[])">WriteSlowly(string, bool, double, Color, params object[])</h4>
-  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt slowly with color support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteSlowly(string msg, bool Line, double MsEachLetter, Color color, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">msg</span></td>
-        <td><p>A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">Line</span></td>
-        <td><p>Whether to print a new line or not</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">MsEachLetter</span></td>
-        <td><p>Time in milliseconds to delay writing</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Color</span></td>
-        <td><span class="parametername">color</span></td>
-        <td><p>A color that will be changed to.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
-        <td><span class="parametername">vars</span></td>
-        <td><p>Variables to format the message before it's written.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_System_String_System_Boolean_System_Double_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly(System.String%2CSystem.Boolean%2CSystem.Double%2CTerminaux.Colors.Color%2CTerminaux.Colors.Color%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/ConsoleWriters/TextWriterSlowColor.cs/#L211">View Source</a>
-  </span>
-  <a id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly*"></a>
-  <h4 id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_System_String_System_Boolean_System_Double_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly(System.String,System.Boolean,System.Double,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])">WriteSlowly(string, bool, double, Color, Color, params object[])</h4>
-  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt slowly with color support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteSlowly(string msg, bool Line, double MsEachLetter, Color ForegroundColor, Color BackgroundColor, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">msg</span></td>
-        <td><p>A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">Line</span></td>
-        <td><p>Whether to print a new line or not</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">MsEachLetter</span></td>
-        <td><p>Time in milliseconds to delay writing</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Color</span></td>
-        <td><span class="parametername">ForegroundColor</span></td>
-        <td><p>A foreground color that will be changed to.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Color</span></td>
-        <td><span class="parametername">BackgroundColor</span></td>
-        <td><p>A background color that will be changed to.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
-        <td><span class="parametername">vars</span></td>
-        <td><p>Variables to format the message before it's written.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_System_String_System_Boolean_System_Double_Terminaux_Colors_ConsoleColors_System_Object___.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly(System.String%2CSystem.Boolean%2CSystem.Double%2CTerminaux.Colors.ConsoleColors%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/ConsoleWriters/TextWriterSlowColor.cs/#L125">View Source</a>
-  </span>
-  <a id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly*"></a>
-  <h4 id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_System_String_System_Boolean_System_Double_Terminaux_Colors_ConsoleColors_System_Object___" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly(System.String,System.Boolean,System.Double,Terminaux.Colors.ConsoleColors,System.Object[])">WriteSlowly(string, bool, double, ConsoleColors, params object[])</h4>
-  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt slowly with color support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteSlowly(string msg, bool Line, double MsEachLetter, ConsoleColors color, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">msg</span></td>
-        <td><p>A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">Line</span></td>
-        <td><p>Whether to print a new line or not</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">MsEachLetter</span></td>
-        <td><p>Time in milliseconds to delay writing</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">ConsoleColors</span></td>
-        <td><span class="parametername">color</span></td>
-        <td><p>A color that will be changed to.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
-        <td><span class="parametername">vars</span></td>
-        <td><p>Variables to format the message before it's written.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_System_String_System_Boolean_System_Double_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly(System.String%2CSystem.Boolean%2CSystem.Double%2CTerminaux.Colors.ConsoleColors%2CTerminaux.Colors.ConsoleColors%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/ConsoleWriters/TextWriterSlowColor.cs/#L154">View Source</a>
-  </span>
-  <a id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly*"></a>
-  <h4 id="KS_ConsoleBase_Writers_ConsoleWriters_TextWriterSlowColor_WriteSlowly_System_String_System_Boolean_System_Double_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___" data-uid="KS.ConsoleBase.Writers.ConsoleWriters.TextWriterSlowColor.WriteSlowly(System.String,System.Boolean,System.Double,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])">WriteSlowly(string, bool, double, ConsoleColors, ConsoleColors, params object[])</h4>
-  <div class="markdown level1 summary"><p>Outputs the text into the terminal prompt slowly with color support.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteSlowly(string msg, bool Line, double MsEachLetter, ConsoleColors ForegroundColor, ConsoleColors BackgroundColor, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">msg</span></td>
-        <td><p>A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">Line</span></td>
-        <td><p>Whether to print a new line or not</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">MsEachLetter</span></td>
-        <td><p>Time in milliseconds to delay writing</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">ConsoleColors</span></td>
-        <td><span class="parametername">ForegroundColor</span></td>
-        <td><p>A foreground color that will be changed to.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">ConsoleColors</span></td>
-        <td><span class="parametername">BackgroundColor</span></td>
-        <td><p>A background color that will be changed to.</p>
 </td>
       </tr>
       <tr>
