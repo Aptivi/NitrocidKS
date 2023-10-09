@@ -49121,6 +49121,12 @@ references:
   commentId: F:KS.Users.Permissions.PermissionTypes.ExecuteScripts
   fullName: KS.Users.Permissions.PermissionTypes.ExecuteScripts
   nameWithType: PermissionTypes.ExecuteScripts
+- uid: KS.Users.Permissions.PermissionTypes.IntermodCommunication
+  name: IntermodCommunication
+  href: api/KS.Users.Permissions.PermissionTypes.html#KS_Users_Permissions_PermissionTypes_IntermodCommunication
+  commentId: F:KS.Users.Permissions.PermissionTypes.IntermodCommunication
+  fullName: KS.Users.Permissions.PermissionTypes.IntermodCommunication
+  nameWithType: PermissionTypes.IntermodCommunication
 - uid: KS.Users.Permissions.PermissionTypes.ManageFilesystem
   name: ManageFilesystem
   href: api/KS.Users.Permissions.PermissionTypes.html#KS_Users_Permissions_PermissionTypes_ManageFilesystem
@@ -49163,6 +49169,18 @@ references:
   commentId: F:KS.Users.Permissions.PermissionTypes.ManipulateSettings
   fullName: KS.Users.Permissions.PermissionTypes.ManipulateSettings
   nameWithType: PermissionTypes.ManipulateSettings
+- uid: KS.Users.Permissions.PermissionTypes.OpenAdminShell
+  name: OpenAdminShell
+  href: api/KS.Users.Permissions.PermissionTypes.html#KS_Users_Permissions_PermissionTypes_OpenAdminShell
+  commentId: F:KS.Users.Permissions.PermissionTypes.OpenAdminShell
+  fullName: KS.Users.Permissions.PermissionTypes.OpenAdminShell
+  nameWithType: PermissionTypes.OpenAdminShell
+- uid: KS.Users.Permissions.PermissionTypes.OpenDebugShell
+  name: OpenDebugShell
+  href: api/KS.Users.Permissions.PermissionTypes.html#KS_Users_Permissions_PermissionTypes_OpenDebugShell
+  commentId: F:KS.Users.Permissions.PermissionTypes.OpenDebugShell
+  fullName: KS.Users.Permissions.PermissionTypes.OpenDebugShell
+  nameWithType: PermissionTypes.OpenDebugShell
 - uid: KS.Users.Permissions.PermissionTypes.RunStrictCommands
   name: RunStrictCommands
   href: api/KS.Users.Permissions.PermissionTypes.html#KS_Users_Permissions_PermissionTypes_RunStrictCommands
