@@ -1578,6 +1578,19 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Inputs.Input.DetectKeypress
   nameWithType: Input.DetectKeypress
+- uid: KS.ConsoleBase.Inputs.Input.DetectKeypressUnsafe
+  name: DetectKeypressUnsafe()
+  href: api/KS.ConsoleBase.Inputs.Input.html#KS_ConsoleBase_Inputs_Input_DetectKeypressUnsafe
+  commentId: M:KS.ConsoleBase.Inputs.Input.DetectKeypressUnsafe
+  fullName: KS.ConsoleBase.Inputs.Input.DetectKeypressUnsafe()
+  nameWithType: Input.DetectKeypressUnsafe()
+- uid: KS.ConsoleBase.Inputs.Input.DetectKeypressUnsafe*
+  name: DetectKeypressUnsafe
+  href: api/KS.ConsoleBase.Inputs.Input.html#KS_ConsoleBase_Inputs_Input_DetectKeypressUnsafe_
+  commentId: Overload:KS.ConsoleBase.Inputs.Input.DetectKeypressUnsafe
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Inputs.Input.DetectKeypressUnsafe
+  nameWithType: Input.DetectKeypressUnsafe
 - uid: KS.ConsoleBase.Inputs.Input.ReadKeyTimeout(System.Boolean,System.TimeSpan)
   name: ReadKeyTimeout(bool, TimeSpan)
   href: api/KS.ConsoleBase.Inputs.Input.html#KS_ConsoleBase_Inputs_Input_ReadKeyTimeout_System_Boolean_System_TimeSpan_
