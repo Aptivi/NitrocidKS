@@ -32865,6 +32865,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.SplashReport.KernelBooted
   nameWithType: SplashReport.KernelBooted
+- uid: KS.Misc.Splash.SplashReport.LogBuffer
+  name: LogBuffer
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_LogBuffer
+  commentId: P:KS.Misc.Splash.SplashReport.LogBuffer
+  fullName: KS.Misc.Splash.SplashReport.LogBuffer
+  nameWithType: SplashReport.LogBuffer
+- uid: KS.Misc.Splash.SplashReport.LogBuffer*
+  name: LogBuffer
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_LogBuffer_
+  commentId: Overload:KS.Misc.Splash.SplashReport.LogBuffer
+  isSpec: "True"
+  fullName: KS.Misc.Splash.SplashReport.LogBuffer
+  nameWithType: SplashReport.LogBuffer
 - uid: KS.Misc.Splash.SplashReport.Progress
   name: Progress
   href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_Progress
