@@ -32248,12 +32248,12 @@ references:
   commentId: T:KS.Misc.Splash.BaseSplash
   fullName: KS.Misc.Splash.BaseSplash
   nameWithType: BaseSplash
-- uid: KS.Misc.Splash.BaseSplash.Closing
-  name: Closing()
-  href: api/KS.Misc.Splash.BaseSplash.html#KS_Misc_Splash_BaseSplash_Closing
-  commentId: M:KS.Misc.Splash.BaseSplash.Closing
-  fullName: KS.Misc.Splash.BaseSplash.Closing()
-  nameWithType: BaseSplash.Closing()
+- uid: KS.Misc.Splash.BaseSplash.Closing(KS.Misc.Splash.SplashContext)
+  name: Closing(SplashContext)
+  href: api/KS.Misc.Splash.BaseSplash.html#KS_Misc_Splash_BaseSplash_Closing_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.BaseSplash.Closing(KS.Misc.Splash.SplashContext)
+  fullName: KS.Misc.Splash.BaseSplash.Closing(KS.Misc.Splash.SplashContext)
+  nameWithType: BaseSplash.Closing(SplashContext)
 - uid: KS.Misc.Splash.BaseSplash.Closing*
   name: Closing
   href: api/KS.Misc.Splash.BaseSplash.html#KS_Misc_Splash_BaseSplash_Closing_
@@ -32261,12 +32261,12 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.BaseSplash.Closing
   nameWithType: BaseSplash.Closing
-- uid: KS.Misc.Splash.BaseSplash.Display
-  name: Display()
-  href: api/KS.Misc.Splash.BaseSplash.html#KS_Misc_Splash_BaseSplash_Display
-  commentId: M:KS.Misc.Splash.BaseSplash.Display
-  fullName: KS.Misc.Splash.BaseSplash.Display()
-  nameWithType: BaseSplash.Display()
+- uid: KS.Misc.Splash.BaseSplash.Display(KS.Misc.Splash.SplashContext)
+  name: Display(SplashContext)
+  href: api/KS.Misc.Splash.BaseSplash.html#KS_Misc_Splash_BaseSplash_Display_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.BaseSplash.Display(KS.Misc.Splash.SplashContext)
+  fullName: KS.Misc.Splash.BaseSplash.Display(KS.Misc.Splash.SplashContext)
+  nameWithType: BaseSplash.Display(SplashContext)
 - uid: KS.Misc.Splash.BaseSplash.Display*
   name: Display
   href: api/KS.Misc.Splash.BaseSplash.html#KS_Misc_Splash_BaseSplash_Display_
@@ -32274,12 +32274,12 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.BaseSplash.Display
   nameWithType: BaseSplash.Display
-- uid: KS.Misc.Splash.BaseSplash.Opening
-  name: Opening()
-  href: api/KS.Misc.Splash.BaseSplash.html#KS_Misc_Splash_BaseSplash_Opening
-  commentId: M:KS.Misc.Splash.BaseSplash.Opening
-  fullName: KS.Misc.Splash.BaseSplash.Opening()
-  nameWithType: BaseSplash.Opening()
+- uid: KS.Misc.Splash.BaseSplash.Opening(KS.Misc.Splash.SplashContext)
+  name: Opening(SplashContext)
+  href: api/KS.Misc.Splash.BaseSplash.html#KS_Misc_Splash_BaseSplash_Opening_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.BaseSplash.Opening(KS.Misc.Splash.SplashContext)
+  fullName: KS.Misc.Splash.BaseSplash.Opening(KS.Misc.Splash.SplashContext)
+  nameWithType: BaseSplash.Opening(SplashContext)
 - uid: KS.Misc.Splash.BaseSplash.Opening*
   name: Opening
   href: api/KS.Misc.Splash.BaseSplash.html#KS_Misc_Splash_BaseSplash_Opening_
@@ -32380,12 +32380,12 @@ references:
   commentId: T:KS.Misc.Splash.ISplash
   fullName: KS.Misc.Splash.ISplash
   nameWithType: ISplash
-- uid: KS.Misc.Splash.ISplash.Closing
-  name: Closing()
-  href: api/KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_Closing
-  commentId: M:KS.Misc.Splash.ISplash.Closing
-  fullName: KS.Misc.Splash.ISplash.Closing()
-  nameWithType: ISplash.Closing()
+- uid: KS.Misc.Splash.ISplash.Closing(KS.Misc.Splash.SplashContext)
+  name: Closing(SplashContext)
+  href: api/KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_Closing_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.ISplash.Closing(KS.Misc.Splash.SplashContext)
+  fullName: KS.Misc.Splash.ISplash.Closing(KS.Misc.Splash.SplashContext)
+  nameWithType: ISplash.Closing(SplashContext)
 - uid: KS.Misc.Splash.ISplash.Closing*
   name: Closing
   href: api/KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_Closing_
@@ -32393,12 +32393,12 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.ISplash.Closing
   nameWithType: ISplash.Closing
-- uid: KS.Misc.Splash.ISplash.Display
-  name: Display()
-  href: api/KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_Display
-  commentId: M:KS.Misc.Splash.ISplash.Display
-  fullName: KS.Misc.Splash.ISplash.Display()
-  nameWithType: ISplash.Display()
+- uid: KS.Misc.Splash.ISplash.Display(KS.Misc.Splash.SplashContext)
+  name: Display(SplashContext)
+  href: api/KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_Display_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.ISplash.Display(KS.Misc.Splash.SplashContext)
+  fullName: KS.Misc.Splash.ISplash.Display(KS.Misc.Splash.SplashContext)
+  nameWithType: ISplash.Display(SplashContext)
 - uid: KS.Misc.Splash.ISplash.Display*
   name: Display
   href: api/KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_Display_
@@ -32406,12 +32406,12 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.ISplash.Display
   nameWithType: ISplash.Display
-- uid: KS.Misc.Splash.ISplash.Opening
-  name: Opening()
-  href: api/KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_Opening
-  commentId: M:KS.Misc.Splash.ISplash.Opening
-  fullName: KS.Misc.Splash.ISplash.Opening()
-  nameWithType: ISplash.Opening()
+- uid: KS.Misc.Splash.ISplash.Opening(KS.Misc.Splash.SplashContext)
+  name: Opening(SplashContext)
+  href: api/KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_Opening_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.ISplash.Opening(KS.Misc.Splash.SplashContext)
+  fullName: KS.Misc.Splash.ISplash.Opening(KS.Misc.Splash.SplashContext)
+  nameWithType: ISplash.Opening(SplashContext)
 - uid: KS.Misc.Splash.ISplash.Opening*
   name: Opening
   href: api/KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_Opening_
@@ -32506,6 +32506,30 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.ISplash.SplashName
   nameWithType: ISplash.SplashName
+- uid: KS.Misc.Splash.SplashContext
+  name: SplashContext
+  href: api/KS.Misc.Splash.SplashContext.html
+  commentId: T:KS.Misc.Splash.SplashContext
+  fullName: KS.Misc.Splash.SplashContext
+  nameWithType: SplashContext
+- uid: KS.Misc.Splash.SplashContext.Showcase
+  name: Showcase
+  href: api/KS.Misc.Splash.SplashContext.html#KS_Misc_Splash_SplashContext_Showcase
+  commentId: F:KS.Misc.Splash.SplashContext.Showcase
+  fullName: KS.Misc.Splash.SplashContext.Showcase
+  nameWithType: SplashContext.Showcase
+- uid: KS.Misc.Splash.SplashContext.ShuttingDown
+  name: ShuttingDown
+  href: api/KS.Misc.Splash.SplashContext.html#KS_Misc_Splash_SplashContext_ShuttingDown
+  commentId: F:KS.Misc.Splash.SplashContext.ShuttingDown
+  fullName: KS.Misc.Splash.SplashContext.ShuttingDown
+  nameWithType: SplashContext.ShuttingDown
+- uid: KS.Misc.Splash.SplashContext.StartingUp
+  name: StartingUp
+  href: api/KS.Misc.Splash.SplashContext.html#KS_Misc_Splash_SplashContext_StartingUp
+  commentId: F:KS.Misc.Splash.SplashContext.StartingUp
+  fullName: KS.Misc.Splash.SplashContext.StartingUp
+  nameWithType: SplashContext.StartingUp
 - uid: KS.Misc.Splash.SplashInfo
   name: SplashInfo
   href: api/KS.Misc.Splash.SplashInfo.html
@@ -32576,12 +32600,12 @@ references:
   commentId: T:KS.Misc.Splash.SplashManager
   fullName: KS.Misc.Splash.SplashManager
   nameWithType: SplashManager
-- uid: KS.Misc.Splash.SplashManager.BeginSplashOut
-  name: BeginSplashOut()
-  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_BeginSplashOut
-  commentId: M:KS.Misc.Splash.SplashManager.BeginSplashOut
-  fullName: KS.Misc.Splash.SplashManager.BeginSplashOut()
-  nameWithType: SplashManager.BeginSplashOut()
+- uid: KS.Misc.Splash.SplashManager.BeginSplashOut(KS.Misc.Splash.SplashContext)
+  name: BeginSplashOut(SplashContext)
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_BeginSplashOut_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.SplashManager.BeginSplashOut(KS.Misc.Splash.SplashContext)
+  fullName: KS.Misc.Splash.SplashManager.BeginSplashOut(KS.Misc.Splash.SplashContext)
+  nameWithType: SplashManager.BeginSplashOut(SplashContext)
 - uid: KS.Misc.Splash.SplashManager.BeginSplashOut*
   name: BeginSplashOut
   href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_BeginSplashOut_
@@ -32589,27 +32613,27 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.SplashManager.BeginSplashOut
   nameWithType: SplashManager.BeginSplashOut
-- uid: KS.Misc.Splash.SplashManager.CloseSplash
-  name: CloseSplash()
-  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_CloseSplash
-  commentId: M:KS.Misc.Splash.SplashManager.CloseSplash
-  fullName: KS.Misc.Splash.SplashManager.CloseSplash()
-  nameWithType: SplashManager.CloseSplash()
-- uid: KS.Misc.Splash.SplashManager.CloseSplash(KS.Misc.Splash.ISplash)
-  name: CloseSplash(ISplash)
-  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_CloseSplash_KS_Misc_Splash_ISplash_
-  commentId: M:KS.Misc.Splash.SplashManager.CloseSplash(KS.Misc.Splash.ISplash)
-  fullName: KS.Misc.Splash.SplashManager.CloseSplash(KS.Misc.Splash.ISplash)
-  nameWithType: SplashManager.CloseSplash(ISplash)
-- uid: KS.Misc.Splash.SplashManager.CloseSplash(System.String)
-  name: CloseSplash(string)
-  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_CloseSplash_System_String_
-  commentId: M:KS.Misc.Splash.SplashManager.CloseSplash(System.String)
-  name.vb: CloseSplash(String)
-  fullName: KS.Misc.Splash.SplashManager.CloseSplash(string)
-  fullName.vb: KS.Misc.Splash.SplashManager.CloseSplash(String)
-  nameWithType: SplashManager.CloseSplash(string)
-  nameWithType.vb: SplashManager.CloseSplash(String)
+- uid: KS.Misc.Splash.SplashManager.CloseSplash(KS.Misc.Splash.ISplash,KS.Misc.Splash.SplashContext)
+  name: CloseSplash(ISplash, SplashContext)
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_CloseSplash_KS_Misc_Splash_ISplash_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.SplashManager.CloseSplash(KS.Misc.Splash.ISplash,KS.Misc.Splash.SplashContext)
+  fullName: KS.Misc.Splash.SplashManager.CloseSplash(KS.Misc.Splash.ISplash, KS.Misc.Splash.SplashContext)
+  nameWithType: SplashManager.CloseSplash(ISplash, SplashContext)
+- uid: KS.Misc.Splash.SplashManager.CloseSplash(KS.Misc.Splash.SplashContext)
+  name: CloseSplash(SplashContext)
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_CloseSplash_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.SplashManager.CloseSplash(KS.Misc.Splash.SplashContext)
+  fullName: KS.Misc.Splash.SplashManager.CloseSplash(KS.Misc.Splash.SplashContext)
+  nameWithType: SplashManager.CloseSplash(SplashContext)
+- uid: KS.Misc.Splash.SplashManager.CloseSplash(System.String,KS.Misc.Splash.SplashContext)
+  name: CloseSplash(string, SplashContext)
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_CloseSplash_System_String_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.SplashManager.CloseSplash(System.String,KS.Misc.Splash.SplashContext)
+  name.vb: CloseSplash(String, SplashContext)
+  fullName: KS.Misc.Splash.SplashManager.CloseSplash(string, KS.Misc.Splash.SplashContext)
+  fullName.vb: KS.Misc.Splash.SplashManager.CloseSplash(String, KS.Misc.Splash.SplashContext)
+  nameWithType: SplashManager.CloseSplash(string, SplashContext)
+  nameWithType.vb: SplashManager.CloseSplash(String, SplashContext)
 - uid: KS.Misc.Splash.SplashManager.CloseSplash*
   name: CloseSplash
   href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_CloseSplash_
@@ -32630,6 +32654,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.SplashManager.CurrentSplash
   nameWithType: SplashManager.CurrentSplash
+- uid: KS.Misc.Splash.SplashManager.CurrentSplashContext
+  name: CurrentSplashContext
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_CurrentSplashContext
+  commentId: P:KS.Misc.Splash.SplashManager.CurrentSplashContext
+  fullName: KS.Misc.Splash.SplashManager.CurrentSplashContext
+  nameWithType: SplashManager.CurrentSplashContext
+- uid: KS.Misc.Splash.SplashManager.CurrentSplashContext*
+  name: CurrentSplashContext
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_CurrentSplashContext_
+  commentId: Overload:KS.Misc.Splash.SplashManager.CurrentSplashContext
+  isSpec: "True"
+  fullName: KS.Misc.Splash.SplashManager.CurrentSplashContext
+  nameWithType: SplashManager.CurrentSplashContext
 - uid: KS.Misc.Splash.SplashManager.CurrentSplashInfo
   name: CurrentSplashInfo
   href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_CurrentSplashInfo
@@ -32643,12 +32680,12 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.SplashManager.CurrentSplashInfo
   nameWithType: SplashManager.CurrentSplashInfo
-- uid: KS.Misc.Splash.SplashManager.EndSplashOut
-  name: EndSplashOut()
-  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_EndSplashOut
-  commentId: M:KS.Misc.Splash.SplashManager.EndSplashOut
-  fullName: KS.Misc.Splash.SplashManager.EndSplashOut()
-  nameWithType: SplashManager.EndSplashOut()
+- uid: KS.Misc.Splash.SplashManager.EndSplashOut(KS.Misc.Splash.SplashContext)
+  name: EndSplashOut(SplashContext)
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_EndSplashOut_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.SplashManager.EndSplashOut(KS.Misc.Splash.SplashContext)
+  fullName: KS.Misc.Splash.SplashManager.EndSplashOut(KS.Misc.Splash.SplashContext)
+  nameWithType: SplashManager.EndSplashOut(SplashContext)
 - uid: KS.Misc.Splash.SplashManager.EndSplashOut*
   name: EndSplashOut
   href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_EndSplashOut_
@@ -32711,27 +32748,27 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.SplashManager.LoadSplashes
   nameWithType: SplashManager.LoadSplashes
-- uid: KS.Misc.Splash.SplashManager.OpenSplash
-  name: OpenSplash()
-  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_OpenSplash
-  commentId: M:KS.Misc.Splash.SplashManager.OpenSplash
-  fullName: KS.Misc.Splash.SplashManager.OpenSplash()
-  nameWithType: SplashManager.OpenSplash()
-- uid: KS.Misc.Splash.SplashManager.OpenSplash(KS.Misc.Splash.ISplash)
-  name: OpenSplash(ISplash)
-  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_OpenSplash_KS_Misc_Splash_ISplash_
-  commentId: M:KS.Misc.Splash.SplashManager.OpenSplash(KS.Misc.Splash.ISplash)
-  fullName: KS.Misc.Splash.SplashManager.OpenSplash(KS.Misc.Splash.ISplash)
-  nameWithType: SplashManager.OpenSplash(ISplash)
-- uid: KS.Misc.Splash.SplashManager.OpenSplash(System.String)
-  name: OpenSplash(string)
-  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_OpenSplash_System_String_
-  commentId: M:KS.Misc.Splash.SplashManager.OpenSplash(System.String)
-  name.vb: OpenSplash(String)
-  fullName: KS.Misc.Splash.SplashManager.OpenSplash(string)
-  fullName.vb: KS.Misc.Splash.SplashManager.OpenSplash(String)
-  nameWithType: SplashManager.OpenSplash(string)
-  nameWithType.vb: SplashManager.OpenSplash(String)
+- uid: KS.Misc.Splash.SplashManager.OpenSplash(KS.Misc.Splash.ISplash,KS.Misc.Splash.SplashContext)
+  name: OpenSplash(ISplash, SplashContext)
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_OpenSplash_KS_Misc_Splash_ISplash_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.SplashManager.OpenSplash(KS.Misc.Splash.ISplash,KS.Misc.Splash.SplashContext)
+  fullName: KS.Misc.Splash.SplashManager.OpenSplash(KS.Misc.Splash.ISplash, KS.Misc.Splash.SplashContext)
+  nameWithType: SplashManager.OpenSplash(ISplash, SplashContext)
+- uid: KS.Misc.Splash.SplashManager.OpenSplash(KS.Misc.Splash.SplashContext)
+  name: OpenSplash(SplashContext)
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_OpenSplash_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.SplashManager.OpenSplash(KS.Misc.Splash.SplashContext)
+  fullName: KS.Misc.Splash.SplashManager.OpenSplash(KS.Misc.Splash.SplashContext)
+  nameWithType: SplashManager.OpenSplash(SplashContext)
+- uid: KS.Misc.Splash.SplashManager.OpenSplash(System.String,KS.Misc.Splash.SplashContext)
+  name: OpenSplash(string, SplashContext)
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_OpenSplash_System_String_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.SplashManager.OpenSplash(System.String,KS.Misc.Splash.SplashContext)
+  name.vb: OpenSplash(String, SplashContext)
+  fullName: KS.Misc.Splash.SplashManager.OpenSplash(string, KS.Misc.Splash.SplashContext)
+  fullName.vb: KS.Misc.Splash.SplashManager.OpenSplash(String, KS.Misc.Splash.SplashContext)
+  nameWithType: SplashManager.OpenSplash(string, SplashContext)
+  nameWithType.vb: SplashManager.OpenSplash(String, SplashContext)
 - uid: KS.Misc.Splash.SplashManager.OpenSplash*
   name: OpenSplash
   href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_OpenSplash_
@@ -32739,54 +32776,54 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.SplashManager.OpenSplash
   nameWithType: SplashManager.OpenSplash
-- uid: KS.Misc.Splash.SplashManager.PreviewSplash
-  name: PreviewSplash()
-  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_PreviewSplash
-  commentId: M:KS.Misc.Splash.SplashManager.PreviewSplash
-  fullName: KS.Misc.Splash.SplashManager.PreviewSplash()
-  nameWithType: SplashManager.PreviewSplash()
-- uid: KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.ISplash)
-  name: PreviewSplash(ISplash)
-  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_PreviewSplash_KS_Misc_Splash_ISplash_
-  commentId: M:KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.ISplash)
-  fullName: KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.ISplash)
-  nameWithType: SplashManager.PreviewSplash(ISplash)
-- uid: KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.ISplash,System.Boolean)
-  name: PreviewSplash(ISplash, bool)
-  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_PreviewSplash_KS_Misc_Splash_ISplash_System_Boolean_
-  commentId: M:KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.ISplash,System.Boolean)
-  name.vb: PreviewSplash(ISplash, Boolean)
-  fullName: KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.ISplash, bool)
-  fullName.vb: KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.ISplash, Boolean)
-  nameWithType: SplashManager.PreviewSplash(ISplash, bool)
-  nameWithType.vb: SplashManager.PreviewSplash(ISplash, Boolean)
-- uid: KS.Misc.Splash.SplashManager.PreviewSplash(System.Boolean)
-  name: PreviewSplash(bool)
-  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_PreviewSplash_System_Boolean_
-  commentId: M:KS.Misc.Splash.SplashManager.PreviewSplash(System.Boolean)
-  name.vb: PreviewSplash(Boolean)
-  fullName: KS.Misc.Splash.SplashManager.PreviewSplash(bool)
-  fullName.vb: KS.Misc.Splash.SplashManager.PreviewSplash(Boolean)
-  nameWithType: SplashManager.PreviewSplash(bool)
-  nameWithType.vb: SplashManager.PreviewSplash(Boolean)
-- uid: KS.Misc.Splash.SplashManager.PreviewSplash(System.String)
-  name: PreviewSplash(string)
-  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_PreviewSplash_System_String_
-  commentId: M:KS.Misc.Splash.SplashManager.PreviewSplash(System.String)
-  name.vb: PreviewSplash(String)
-  fullName: KS.Misc.Splash.SplashManager.PreviewSplash(string)
-  fullName.vb: KS.Misc.Splash.SplashManager.PreviewSplash(String)
-  nameWithType: SplashManager.PreviewSplash(string)
-  nameWithType.vb: SplashManager.PreviewSplash(String)
-- uid: KS.Misc.Splash.SplashManager.PreviewSplash(System.String,System.Boolean)
-  name: PreviewSplash(string, bool)
-  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_PreviewSplash_System_String_System_Boolean_
-  commentId: M:KS.Misc.Splash.SplashManager.PreviewSplash(System.String,System.Boolean)
-  name.vb: PreviewSplash(String, Boolean)
-  fullName: KS.Misc.Splash.SplashManager.PreviewSplash(string, bool)
-  fullName.vb: KS.Misc.Splash.SplashManager.PreviewSplash(String, Boolean)
-  nameWithType: SplashManager.PreviewSplash(string, bool)
-  nameWithType.vb: SplashManager.PreviewSplash(String, Boolean)
+- uid: KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.ISplash,KS.Misc.Splash.SplashContext)
+  name: PreviewSplash(ISplash, SplashContext)
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_PreviewSplash_KS_Misc_Splash_ISplash_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.ISplash,KS.Misc.Splash.SplashContext)
+  fullName: KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.ISplash, KS.Misc.Splash.SplashContext)
+  nameWithType: SplashManager.PreviewSplash(ISplash, SplashContext)
+- uid: KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.ISplash,System.Boolean,KS.Misc.Splash.SplashContext)
+  name: PreviewSplash(ISplash, bool, SplashContext)
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_PreviewSplash_KS_Misc_Splash_ISplash_System_Boolean_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.ISplash,System.Boolean,KS.Misc.Splash.SplashContext)
+  name.vb: PreviewSplash(ISplash, Boolean, SplashContext)
+  fullName: KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.ISplash, bool, KS.Misc.Splash.SplashContext)
+  fullName.vb: KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.ISplash, Boolean, KS.Misc.Splash.SplashContext)
+  nameWithType: SplashManager.PreviewSplash(ISplash, bool, SplashContext)
+  nameWithType.vb: SplashManager.PreviewSplash(ISplash, Boolean, SplashContext)
+- uid: KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.SplashContext)
+  name: PreviewSplash(SplashContext)
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_PreviewSplash_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.SplashContext)
+  fullName: KS.Misc.Splash.SplashManager.PreviewSplash(KS.Misc.Splash.SplashContext)
+  nameWithType: SplashManager.PreviewSplash(SplashContext)
+- uid: KS.Misc.Splash.SplashManager.PreviewSplash(System.Boolean,KS.Misc.Splash.SplashContext)
+  name: PreviewSplash(bool, SplashContext)
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_PreviewSplash_System_Boolean_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.SplashManager.PreviewSplash(System.Boolean,KS.Misc.Splash.SplashContext)
+  name.vb: PreviewSplash(Boolean, SplashContext)
+  fullName: KS.Misc.Splash.SplashManager.PreviewSplash(bool, KS.Misc.Splash.SplashContext)
+  fullName.vb: KS.Misc.Splash.SplashManager.PreviewSplash(Boolean, KS.Misc.Splash.SplashContext)
+  nameWithType: SplashManager.PreviewSplash(bool, SplashContext)
+  nameWithType.vb: SplashManager.PreviewSplash(Boolean, SplashContext)
+- uid: KS.Misc.Splash.SplashManager.PreviewSplash(System.String,KS.Misc.Splash.SplashContext)
+  name: PreviewSplash(string, SplashContext)
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_PreviewSplash_System_String_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.SplashManager.PreviewSplash(System.String,KS.Misc.Splash.SplashContext)
+  name.vb: PreviewSplash(String, SplashContext)
+  fullName: KS.Misc.Splash.SplashManager.PreviewSplash(string, KS.Misc.Splash.SplashContext)
+  fullName.vb: KS.Misc.Splash.SplashManager.PreviewSplash(String, KS.Misc.Splash.SplashContext)
+  nameWithType: SplashManager.PreviewSplash(string, SplashContext)
+  nameWithType.vb: SplashManager.PreviewSplash(String, SplashContext)
+- uid: KS.Misc.Splash.SplashManager.PreviewSplash(System.String,System.Boolean,KS.Misc.Splash.SplashContext)
+  name: PreviewSplash(string, bool, SplashContext)
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_PreviewSplash_System_String_System_Boolean_KS_Misc_Splash_SplashContext_
+  commentId: M:KS.Misc.Splash.SplashManager.PreviewSplash(System.String,System.Boolean,KS.Misc.Splash.SplashContext)
+  name.vb: PreviewSplash(String, Boolean, SplashContext)
+  fullName: KS.Misc.Splash.SplashManager.PreviewSplash(string, bool, KS.Misc.Splash.SplashContext)
+  fullName.vb: KS.Misc.Splash.SplashManager.PreviewSplash(String, Boolean, KS.Misc.Splash.SplashContext)
+  nameWithType: SplashManager.PreviewSplash(string, bool, SplashContext)
+  nameWithType.vb: SplashManager.PreviewSplash(String, Boolean, SplashContext)
 - uid: KS.Misc.Splash.SplashManager.PreviewSplash*
   name: PreviewSplash
   href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_PreviewSplash_

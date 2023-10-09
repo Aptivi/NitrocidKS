@@ -103,7 +103,7 @@
   </span>
   <a id="KS_Misc_Splash_ISplash_SplashClosing_" data-uid="KS.Misc.Splash.ISplash.SplashClosing*"></a>
   <h4 id="KS_Misc_Splash_ISplash_SplashClosing" data-uid="KS.Misc.Splash.ISplash.SplashClosing">SplashClosing</h4>
-  <div class="markdown level1 summary"><p>Whether the splash is closing. If true, the thread of which handles the display should close itself. <a class="xref" href="KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_Closing">Closing()</a> should set this property to True.</p>
+  <div class="markdown level1 summary"><p>Whether the splash is closing. If true, the thread of which handles the display should close itself. <a class="xref" href="KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_Closing_KS_Misc_Splash_SplashContext_">Closing(SplashContext)</a> should set this property to True.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -191,58 +191,112 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_ISplash_Closing.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.ISplash.Closing%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_ISplash_Closing_KS_Misc_Splash_SplashContext_.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.ISplash.Closing(KS.Misc.Splash.SplashContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/ISplash.cs/#L52">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/ISplash.cs/#L55">View Source</a>
   </span>
   <a id="KS_Misc_Splash_ISplash_Closing_" data-uid="KS.Misc.Splash.ISplash.Closing*"></a>
-  <h4 id="KS_Misc_Splash_ISplash_Closing" data-uid="KS.Misc.Splash.ISplash.Closing">Closing()</h4>
+  <h4 id="KS_Misc_Splash_ISplash_Closing_KS_Misc_Splash_SplashContext_" data-uid="KS.Misc.Splash.ISplash.Closing(KS.Misc.Splash.SplashContext)">Closing(SplashContext)</h4>
   <div class="markdown level1 summary"><p>The closing screen. Should be synchronous.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Closing()</code></pre>
+    <pre><code class="lang-csharp hljs">void Closing(SplashContext context)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Misc.Splash.SplashContext.html">SplashContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>Context of the splash screen (can be used as a reason as to why do you want to display the splash)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_ISplash_Display.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.ISplash.Display%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_ISplash_Display_KS_Misc_Splash_SplashContext_.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.ISplash.Display(KS.Misc.Splash.SplashContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/ISplash.cs/#L48">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/ISplash.cs/#L50">View Source</a>
   </span>
   <a id="KS_Misc_Splash_ISplash_Display_" data-uid="KS.Misc.Splash.ISplash.Display*"></a>
-  <h4 id="KS_Misc_Splash_ISplash_Display" data-uid="KS.Misc.Splash.ISplash.Display">Display()</h4>
+  <h4 id="KS_Misc_Splash_ISplash_Display_KS_Misc_Splash_SplashContext_" data-uid="KS.Misc.Splash.ISplash.Display(KS.Misc.Splash.SplashContext)">Display(SplashContext)</h4>
   <div class="markdown level1 summary"><p>The screen which is meant to be looped. You can set it to do nothing. Should be async. It should also handle <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.threadinterruptedexception">ThreadInterruptedException</a> to avoid kernel exiting on startup.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Display()</code></pre>
+    <pre><code class="lang-csharp hljs">void Display(SplashContext context)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Misc.Splash.SplashContext.html">SplashContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>Context of the splash screen (can be used as a reason as to why do you want to display the splash)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_ISplash_Opening.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.ISplash.Opening%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_ISplash_Opening_KS_Misc_Splash_SplashContext_.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.ISplash.Opening(KS.Misc.Splash.SplashContext)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/ISplash.cs/#L44">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/ISplash.cs/#L45">View Source</a>
   </span>
   <a id="KS_Misc_Splash_ISplash_Opening_" data-uid="KS.Misc.Splash.ISplash.Opening*"></a>
-  <h4 id="KS_Misc_Splash_ISplash_Opening" data-uid="KS.Misc.Splash.ISplash.Opening">Opening()</h4>
+  <h4 id="KS_Misc_Splash_ISplash_Opening_KS_Misc_Splash_SplashContext_" data-uid="KS.Misc.Splash.ISplash.Opening(KS.Misc.Splash.SplashContext)">Opening(SplashContext)</h4>
   <div class="markdown level1 summary"><p>The opening screen. Should be synchronous.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Opening()</code></pre>
+    <pre><code class="lang-csharp hljs">void Opening(SplashContext context)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Misc.Splash.SplashContext.html">SplashContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>Context of the splash screen (can be used as a reason as to why do you want to display the splash)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_ISplash_Report_System_Int32_System_String_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.ISplash.Report(System.Int32%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/ISplash.cs/#L59">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/ISplash.cs/#L62">View Source</a>
   </span>
   <a id="KS_Misc_Splash_ISplash_Report_" data-uid="KS.Misc.Splash.ISplash.Report*"></a>
   <h4 id="KS_Misc_Splash_ISplash_Report_System_Int32_System_String_System_Object___" data-uid="KS.Misc.Splash.ISplash.Report(System.Int32,System.String,System.Object[])">Report(int, string, params object[])</h4>
@@ -288,7 +342,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_ISplash_ReportError_System_Int32_System_String_System_Exception_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.ISplash.ReportError(System.Int32%2CSystem.String%2CSystem.Exception%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/ISplash.cs/#L75">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/ISplash.cs/#L78">View Source</a>
   </span>
   <a id="KS_Misc_Splash_ISplash_ReportError_" data-uid="KS.Misc.Splash.ISplash.ReportError*"></a>
   <h4 id="KS_Misc_Splash_ISplash_ReportError_System_Int32_System_String_System_Exception_System_Object___" data-uid="KS.Misc.Splash.ISplash.ReportError(System.Int32,System.String,System.Exception,System.Object[])">ReportError(int, string, Exception, params object[])</h4>
@@ -340,7 +394,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_ISplash_ReportWarning_System_Int32_System_String_System_Exception_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.ISplash.ReportWarning(System.Int32%2CSystem.String%2CSystem.Exception%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/ISplash.cs/#L67">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/ISplash.cs/#L70">View Source</a>
   </span>
   <a id="KS_Misc_Splash_ISplash_ReportWarning_" data-uid="KS.Misc.Splash.ISplash.ReportWarning*"></a>
   <h4 id="KS_Misc_Splash_ISplash_ReportWarning_System_Int32_System_String_System_Exception_System_Object___" data-uid="KS.Misc.Splash.ISplash.ReportWarning(System.Int32,System.String,System.Exception,System.Object[])">ReportWarning(int, string, Exception, params object[])</h4>
