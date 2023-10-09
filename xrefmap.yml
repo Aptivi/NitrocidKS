@@ -37273,6 +37273,19 @@ references:
   isSpec: "True"
   fullName: KS.Security.Privacy.Consents.ConsentedPermission.Type
   nameWithType: ConsentedPermission.Type
+- uid: KS.Security.Privacy.Consents.ConsentedPermission.Username
+  name: Username
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_Username
+  commentId: P:KS.Security.Privacy.Consents.ConsentedPermission.Username
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission.Username
+  nameWithType: ConsentedPermission.Username
+- uid: KS.Security.Privacy.Consents.ConsentedPermission.Username*
+  name: Username
+  href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_Username_
+  commentId: Overload:KS.Security.Privacy.Consents.ConsentedPermission.Username
+  isSpec: "True"
+  fullName: KS.Security.Privacy.Consents.ConsentedPermission.Username
+  nameWithType: ConsentedPermission.Username
 - uid: KS.Security.Privacy.Consents.ConsentedPermission.op_Equality(KS.Security.Privacy.Consents.ConsentedPermission,KS.Security.Privacy.Consents.ConsentedPermission)
   name: operator ==(ConsentedPermission, ConsentedPermission)
   href: api/KS.Security.Privacy.Consents.ConsentedPermission.html#KS_Security_Privacy_Consents_ConsentedPermission_op_Equality_KS_Security_Privacy_Consents_ConsentedPermission_KS_Security_Privacy_Consents_ConsentedPermission_
