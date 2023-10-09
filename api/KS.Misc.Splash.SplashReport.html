@@ -254,6 +254,432 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Boolean_KS_Misc_Splash_ISplash_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.SplashReport.ReportProgress(System.String%2CSystem.Int32%2CSystem.Boolean%2CKS.Misc.Splash.ISplash%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/SplashReport.cs/#L100">View Source</a>
+  </span>
+  <a id="KS_Misc_Splash_SplashReport_ReportProgress_" data-uid="KS.Misc.Splash.SplashReport.ReportProgress*"></a>
+  <h4 id="KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Boolean_KS_Misc_Splash_ISplash_System_Object___" data-uid="KS.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.Boolean,KS.Misc.Splash.ISplash,System.Object[])">ReportProgress(string, int, bool, ISplash, params object[])</h4>
+  <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReportProgress(string Text, int Progress, bool force = false, ISplash splash = null, params object[] Vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Text</span></td>
+        <td><p>The progress text to indicate how did the kernel progress</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">Progress</span></td>
+        <td><p>The progress indicator of the kernel</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">force</span></td>
+        <td><p>Force report progress to splash</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.Misc.Splash.ISplash.html">ISplash</a></td>
+        <td><span class="parametername">splash</span></td>
+        <td><p>Splash interface</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">Vars</span></td>
+        <td><p>Varibales to be expanded to text</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Boolean_KS_Misc_Splash_ISplash_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br>
+it will report the progress to the splash system. You can force it to report the progress by passing force.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.SplashReport.ReportProgress(System.String%2CSystem.Int32%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/SplashReport.cs/#L85">View Source</a>
+  </span>
+  <a id="KS_Misc_Splash_SplashReport_ReportProgress_" data-uid="KS.Misc.Splash.SplashReport.ReportProgress*"></a>
+  <h4 id="KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Object___" data-uid="KS.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.Object[])">ReportProgress(string, int, params object[])</h4>
+  <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReportProgress(string Text, int Progress, params object[] Vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Text</span></td>
+        <td><p>The progress text to indicate how did the kernel progress</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">Progress</span></td>
+        <td><p>The progress indicator of the kernel</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">Vars</span></td>
+        <td><p>Varibales to be expanded to text</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br>
+it will report the progress to the splash system. You can force it to report the progress by passing force.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Boolean_KS_Misc_Splash_ISplash_System_Exception_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.SplashReport.ReportProgressError(System.String%2CSystem.Boolean%2CKS.Misc.Splash.ISplash%2CSystem.Exception%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/SplashReport.cs/#L233">View Source</a>
+  </span>
+  <a id="KS_Misc_Splash_SplashReport_ReportProgressError_" data-uid="KS.Misc.Splash.SplashReport.ReportProgressError*"></a>
+  <h4 id="KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Boolean_KS_Misc_Splash_ISplash_System_Exception_System_Object___" data-uid="KS.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Boolean,KS.Misc.Splash.ISplash,System.Exception,System.Object[])">ReportProgressError(string, bool, ISplash, Exception, params object[])</h4>
+  <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReportProgressError(string Text, bool force = false, ISplash splash = null, Exception exception = null, params object[] Vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Text</span></td>
+        <td><p>The progress text to indicate how did the kernel progress</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">force</span></td>
+        <td><p>Force report progress to splash</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.Misc.Splash.ISplash.html">ISplash</a></td>
+        <td><span class="parametername">splash</span></td>
+        <td><p>Splash interface</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>Exception information</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">Vars</span></td>
+        <td><p>Varibales to be expanded to text</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Boolean_KS_Misc_Splash_ISplash_System_Exception_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br>
+it will report the progress to the splash system. You can force it to report the progress by passing force.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Exception_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.SplashReport.ReportProgressError(System.String%2CSystem.Exception%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/SplashReport.cs/#L218">View Source</a>
+  </span>
+  <a id="KS_Misc_Splash_SplashReport_ReportProgressError_" data-uid="KS.Misc.Splash.SplashReport.ReportProgressError*"></a>
+  <h4 id="KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Exception_System_Object___" data-uid="KS.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Exception,System.Object[])">ReportProgressError(string, Exception, params object[])</h4>
+  <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReportProgressError(string Text, Exception exception, params object[] Vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Text</span></td>
+        <td><p>The progress text to indicate how did the kernel progress</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>Exception information</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">Vars</span></td>
+        <td><p>Varibales to be expanded to text</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Exception_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br>
+it will report the progress to the splash system. You can force it to report the progress by passing force.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.SplashReport.ReportProgressError(System.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/SplashReport.cs/#L205">View Source</a>
+  </span>
+  <a id="KS_Misc_Splash_SplashReport_ReportProgressError_" data-uid="KS.Misc.Splash.SplashReport.ReportProgressError*"></a>
+  <h4 id="KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Object___" data-uid="KS.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Object[])">ReportProgressError(string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReportProgressError(string Text, params object[] Vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Text</span></td>
+        <td><p>The progress text to indicate how did the kernel progress</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">Vars</span></td>
+        <td><p>Varibales to be expanded to text</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br>
+it will report the progress to the splash system. You can force it to report the progress by passing force.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Boolean_KS_Misc_Splash_ISplash_System_Exception_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.SplashReport.ReportProgressWarning(System.String%2CSystem.Boolean%2CKS.Misc.Splash.ISplash%2CSystem.Exception%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/SplashReport.cs/#L168">View Source</a>
+  </span>
+  <a id="KS_Misc_Splash_SplashReport_ReportProgressWarning_" data-uid="KS.Misc.Splash.SplashReport.ReportProgressWarning*"></a>
+  <h4 id="KS_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Boolean_KS_Misc_Splash_ISplash_System_Exception_System_Object___" data-uid="KS.Misc.Splash.SplashReport.ReportProgressWarning(System.String,System.Boolean,KS.Misc.Splash.ISplash,System.Exception,System.Object[])">ReportProgressWarning(string, bool, ISplash, Exception, params object[])</h4>
+  <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReportProgressWarning(string Text, bool force = false, ISplash splash = null, Exception exception = null, params object[] Vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Text</span></td>
+        <td><p>The progress text to indicate how did the kernel progress</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">force</span></td>
+        <td><p>Force report progress to splash</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.Misc.Splash.ISplash.html">ISplash</a></td>
+        <td><span class="parametername">splash</span></td>
+        <td><p>Splash interface</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>Exception information</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">Vars</span></td>
+        <td><p>Varibales to be expanded to text</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="KS_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Boolean_KS_Misc_Splash_ISplash_System_Exception_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br>
+it will report the progress to the splash system. You can force it to report the progress by passing force.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Exception_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.SplashReport.ReportProgressWarning(System.String%2CSystem.Exception%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/SplashReport.cs/#L153">View Source</a>
+  </span>
+  <a id="KS_Misc_Splash_SplashReport_ReportProgressWarning_" data-uid="KS.Misc.Splash.SplashReport.ReportProgressWarning*"></a>
+  <h4 id="KS_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Exception_System_Object___" data-uid="KS.Misc.Splash.SplashReport.ReportProgressWarning(System.String,System.Exception,System.Object[])">ReportProgressWarning(string, Exception, params object[])</h4>
+  <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReportProgressWarning(string Text, Exception exception, params object[] Vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Text</span></td>
+        <td><p>The progress text to indicate how did the kernel progress</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>Exception information</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">Vars</span></td>
+        <td><p>Varibales to be expanded to text</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="KS_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Exception_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br>
+it will report the progress to the splash system. You can force it to report the progress by passing force.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Object___.md&amp;value=---%0Auid%3A%20KS.Misc.Splash.SplashReport.ReportProgressWarning(System.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/SplashReport.cs/#L140">View Source</a>
+  </span>
+  <a id="KS_Misc_Splash_SplashReport_ReportProgressWarning_" data-uid="KS.Misc.Splash.SplashReport.ReportProgressWarning*"></a>
+  <h4 id="KS_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Object___" data-uid="KS.Misc.Splash.SplashReport.ReportProgressWarning(System.String,System.Object[])">ReportProgressWarning(string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReportProgressWarning(string Text, params object[] Vars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Text</span></td>
+        <td><p>The progress text to indicate how did the kernel progress</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">Vars</span></td>
+        <td><p>Varibales to be expanded to text</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="KS_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br>
+it will report the progress to the splash system. You can force it to report the progress by passing force.</p>
+</div>
 
 </article>
           </div>

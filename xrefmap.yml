@@ -32904,6 +32904,99 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.SplashReport.ProgressText
   nameWithType: SplashReport.ProgressText
+- uid: KS.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.Boolean,KS.Misc.Splash.ISplash,System.Object[])
+  name: ReportProgress(string, int, bool, ISplash, params object[])
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Boolean_KS_Misc_Splash_ISplash_System_Object___
+  commentId: M:KS.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.Boolean,KS.Misc.Splash.ISplash,System.Object[])
+  name.vb: ReportProgress(String, Integer, Boolean, ISplash, ParamArray Object())
+  fullName: KS.Misc.Splash.SplashReport.ReportProgress(string, int, bool, KS.Misc.Splash.ISplash, params object[])
+  fullName.vb: KS.Misc.Splash.SplashReport.ReportProgress(String, Integer, Boolean, KS.Misc.Splash.ISplash, ParamArray Object())
+  nameWithType: SplashReport.ReportProgress(string, int, bool, ISplash, params object[])
+  nameWithType.vb: SplashReport.ReportProgress(String, Integer, Boolean, ISplash, ParamArray Object())
+- uid: KS.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.Object[])
+  name: ReportProgress(string, int, params object[])
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Object___
+  commentId: M:KS.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.Object[])
+  name.vb: ReportProgress(String, Integer, ParamArray Object())
+  fullName: KS.Misc.Splash.SplashReport.ReportProgress(string, int, params object[])
+  fullName.vb: KS.Misc.Splash.SplashReport.ReportProgress(String, Integer, ParamArray Object())
+  nameWithType: SplashReport.ReportProgress(string, int, params object[])
+  nameWithType.vb: SplashReport.ReportProgress(String, Integer, ParamArray Object())
+- uid: KS.Misc.Splash.SplashReport.ReportProgress*
+  name: ReportProgress
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ReportProgress_
+  commentId: Overload:KS.Misc.Splash.SplashReport.ReportProgress
+  isSpec: "True"
+  fullName: KS.Misc.Splash.SplashReport.ReportProgress
+  nameWithType: SplashReport.ReportProgress
+- uid: KS.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Boolean,KS.Misc.Splash.ISplash,System.Exception,System.Object[])
+  name: ReportProgressError(string, bool, ISplash, Exception, params object[])
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Boolean_KS_Misc_Splash_ISplash_System_Exception_System_Object___
+  commentId: M:KS.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Boolean,KS.Misc.Splash.ISplash,System.Exception,System.Object[])
+  name.vb: ReportProgressError(String, Boolean, ISplash, Exception, ParamArray Object())
+  fullName: KS.Misc.Splash.SplashReport.ReportProgressError(string, bool, KS.Misc.Splash.ISplash, System.Exception, params object[])
+  fullName.vb: KS.Misc.Splash.SplashReport.ReportProgressError(String, Boolean, KS.Misc.Splash.ISplash, System.Exception, ParamArray Object())
+  nameWithType: SplashReport.ReportProgressError(string, bool, ISplash, Exception, params object[])
+  nameWithType.vb: SplashReport.ReportProgressError(String, Boolean, ISplash, Exception, ParamArray Object())
+- uid: KS.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Exception,System.Object[])
+  name: ReportProgressError(string, Exception, params object[])
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Exception_System_Object___
+  commentId: M:KS.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Exception,System.Object[])
+  name.vb: ReportProgressError(String, Exception, ParamArray Object())
+  fullName: KS.Misc.Splash.SplashReport.ReportProgressError(string, System.Exception, params object[])
+  fullName.vb: KS.Misc.Splash.SplashReport.ReportProgressError(String, System.Exception, ParamArray Object())
+  nameWithType: SplashReport.ReportProgressError(string, Exception, params object[])
+  nameWithType.vb: SplashReport.ReportProgressError(String, Exception, ParamArray Object())
+- uid: KS.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Object[])
+  name: ReportProgressError(string, params object[])
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Object___
+  commentId: M:KS.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Object[])
+  name.vb: ReportProgressError(String, ParamArray Object())
+  fullName: KS.Misc.Splash.SplashReport.ReportProgressError(string, params object[])
+  fullName.vb: KS.Misc.Splash.SplashReport.ReportProgressError(String, ParamArray Object())
+  nameWithType: SplashReport.ReportProgressError(string, params object[])
+  nameWithType.vb: SplashReport.ReportProgressError(String, ParamArray Object())
+- uid: KS.Misc.Splash.SplashReport.ReportProgressError*
+  name: ReportProgressError
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ReportProgressError_
+  commentId: Overload:KS.Misc.Splash.SplashReport.ReportProgressError
+  isSpec: "True"
+  fullName: KS.Misc.Splash.SplashReport.ReportProgressError
+  nameWithType: SplashReport.ReportProgressError
+- uid: KS.Misc.Splash.SplashReport.ReportProgressWarning(System.String,System.Boolean,KS.Misc.Splash.ISplash,System.Exception,System.Object[])
+  name: ReportProgressWarning(string, bool, ISplash, Exception, params object[])
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Boolean_KS_Misc_Splash_ISplash_System_Exception_System_Object___
+  commentId: M:KS.Misc.Splash.SplashReport.ReportProgressWarning(System.String,System.Boolean,KS.Misc.Splash.ISplash,System.Exception,System.Object[])
+  name.vb: ReportProgressWarning(String, Boolean, ISplash, Exception, ParamArray Object())
+  fullName: KS.Misc.Splash.SplashReport.ReportProgressWarning(string, bool, KS.Misc.Splash.ISplash, System.Exception, params object[])
+  fullName.vb: KS.Misc.Splash.SplashReport.ReportProgressWarning(String, Boolean, KS.Misc.Splash.ISplash, System.Exception, ParamArray Object())
+  nameWithType: SplashReport.ReportProgressWarning(string, bool, ISplash, Exception, params object[])
+  nameWithType.vb: SplashReport.ReportProgressWarning(String, Boolean, ISplash, Exception, ParamArray Object())
+- uid: KS.Misc.Splash.SplashReport.ReportProgressWarning(System.String,System.Exception,System.Object[])
+  name: ReportProgressWarning(string, Exception, params object[])
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Exception_System_Object___
+  commentId: M:KS.Misc.Splash.SplashReport.ReportProgressWarning(System.String,System.Exception,System.Object[])
+  name.vb: ReportProgressWarning(String, Exception, ParamArray Object())
+  fullName: KS.Misc.Splash.SplashReport.ReportProgressWarning(string, System.Exception, params object[])
+  fullName.vb: KS.Misc.Splash.SplashReport.ReportProgressWarning(String, System.Exception, ParamArray Object())
+  nameWithType: SplashReport.ReportProgressWarning(string, Exception, params object[])
+  nameWithType.vb: SplashReport.ReportProgressWarning(String, Exception, ParamArray Object())
+- uid: KS.Misc.Splash.SplashReport.ReportProgressWarning(System.String,System.Object[])
+  name: ReportProgressWarning(string, params object[])
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Object___
+  commentId: M:KS.Misc.Splash.SplashReport.ReportProgressWarning(System.String,System.Object[])
+  name.vb: ReportProgressWarning(String, ParamArray Object())
+  fullName: KS.Misc.Splash.SplashReport.ReportProgressWarning(string, params object[])
+  fullName.vb: KS.Misc.Splash.SplashReport.ReportProgressWarning(String, ParamArray Object())
+  nameWithType: SplashReport.ReportProgressWarning(string, params object[])
+  nameWithType.vb: SplashReport.ReportProgressWarning(String, ParamArray Object())
+- uid: KS.Misc.Splash.SplashReport.ReportProgressWarning*
+  name: ReportProgressWarning
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ReportProgressWarning_
+  commentId: Overload:KS.Misc.Splash.SplashReport.ReportProgressWarning
+  isSpec: "True"
+  fullName: KS.Misc.Splash.SplashReport.ReportProgressWarning
+  nameWithType: SplashReport.ReportProgressWarning
 - uid: KS.Misc.Text
   name: KS.Misc.Text
   href: api/KS.Misc.Text.html
