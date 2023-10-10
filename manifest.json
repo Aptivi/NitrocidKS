@@ -1136,6 +1136,56 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.HardwareProber.HardwareProberDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.HardwareProber.HardwareProberDriver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.HardwareProber.HardwareProberDriverTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.HardwareProber.HardwareProberDriverTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.HardwareProber.IHardwareProberDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.HardwareProber.IHardwareProberDriver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.HardwareProber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.HardwareProber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.IDriver.yml",
       "output": {
         ".html": {

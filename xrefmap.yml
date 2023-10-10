@@ -10389,6 +10389,32 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.CurrentFilesystemDriverLocal
   nameWithType: DriverHandler.CurrentFilesystemDriverLocal
+- uid: KS.Drivers.DriverHandler.CurrentHardwareProberDriver
+  name: CurrentHardwareProberDriver
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_CurrentHardwareProberDriver
+  commentId: P:KS.Drivers.DriverHandler.CurrentHardwareProberDriver
+  fullName: KS.Drivers.DriverHandler.CurrentHardwareProberDriver
+  nameWithType: DriverHandler.CurrentHardwareProberDriver
+- uid: KS.Drivers.DriverHandler.CurrentHardwareProberDriver*
+  name: CurrentHardwareProberDriver
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_CurrentHardwareProberDriver_
+  commentId: Overload:KS.Drivers.DriverHandler.CurrentHardwareProberDriver
+  isSpec: "True"
+  fullName: KS.Drivers.DriverHandler.CurrentHardwareProberDriver
+  nameWithType: DriverHandler.CurrentHardwareProberDriver
+- uid: KS.Drivers.DriverHandler.CurrentHardwareProberDriverLocal
+  name: CurrentHardwareProberDriverLocal
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_CurrentHardwareProberDriverLocal
+  commentId: P:KS.Drivers.DriverHandler.CurrentHardwareProberDriverLocal
+  fullName: KS.Drivers.DriverHandler.CurrentHardwareProberDriverLocal
+  nameWithType: DriverHandler.CurrentHardwareProberDriverLocal
+- uid: KS.Drivers.DriverHandler.CurrentHardwareProberDriverLocal*
+  name: CurrentHardwareProberDriverLocal
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_CurrentHardwareProberDriverLocal_
+  commentId: Overload:KS.Drivers.DriverHandler.CurrentHardwareProberDriverLocal
+  isSpec: "True"
+  fullName: KS.Drivers.DriverHandler.CurrentHardwareProberDriverLocal
+  nameWithType: DriverHandler.CurrentHardwareProberDriverLocal
 - uid: KS.Drivers.DriverHandler.CurrentNetworkDriver
   name: CurrentNetworkDriver
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_CurrentNetworkDriver
@@ -10669,6 +10695,12 @@ references:
   commentId: F:KS.Drivers.DriverTypes.Filesystem
   fullName: KS.Drivers.DriverTypes.Filesystem
   nameWithType: DriverTypes.Filesystem
+- uid: KS.Drivers.DriverTypes.HardwareProber
+  name: HardwareProber
+  href: api/KS.Drivers.DriverTypes.html#KS_Drivers_DriverTypes_HardwareProber
+  commentId: F:KS.Drivers.DriverTypes.HardwareProber
+  fullName: KS.Drivers.DriverTypes.HardwareProber
+  nameWithType: DriverTypes.HardwareProber
 - uid: KS.Drivers.DriverTypes.Network
   name: Network
   href: api/KS.Drivers.DriverTypes.html#KS_Drivers_DriverTypes_Network
@@ -14990,6 +15022,156 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.IFilesystemDriver.WriteContentsText
   nameWithType: IFilesystemDriver.WriteContentsText
+- uid: KS.Drivers.HardwareProber
+  name: KS.Drivers.HardwareProber
+  href: api/KS.Drivers.HardwareProber.html
+  commentId: N:KS.Drivers.HardwareProber
+  fullName: KS.Drivers.HardwareProber
+  nameWithType: KS.Drivers.HardwareProber
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver
+  name: BaseHardwareProberDriver
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html
+  commentId: T:KS.Drivers.HardwareProber.BaseHardwareProberDriver
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver
+  nameWithType: BaseHardwareProberDriver
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverInternal
+  name: DriverInternal
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_DriverInternal
+  commentId: P:KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverInternal
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverInternal
+  nameWithType: BaseHardwareProberDriver.DriverInternal
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverInternal*
+  name: DriverInternal
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_DriverInternal_
+  commentId: Overload:KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverInternal
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverInternal
+  nameWithType: BaseHardwareProberDriver.DriverInternal
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverName
+  name: DriverName
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_DriverName
+  commentId: P:KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverName
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverName
+  nameWithType: BaseHardwareProberDriver.DriverName
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverName*
+  name: DriverName
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_DriverName_
+  commentId: Overload:KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverName
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverName
+  nameWithType: BaseHardwareProberDriver.DriverName
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverType
+  name: DriverType
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_DriverType
+  commentId: P:KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverType
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverType
+  nameWithType: BaseHardwareProberDriver.DriverType
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverType*
+  name: DriverType
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_DriverType_
+  commentId: Overload:KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverType
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverType
+  nameWithType: BaseHardwareProberDriver.DriverType
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardware
+  name: ProbeHardware()
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ProbeHardware
+  commentId: M:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardware
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardware()
+  nameWithType: BaseHardwareProberDriver.ProbeHardware()
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardware*
+  name: ProbeHardware
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ProbeHardware_
+  commentId: Overload:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardware
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardware
+  nameWithType: BaseHardwareProberDriver.ProbeHardware
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver
+  name: HardwareProberDriver
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html
+  commentId: T:KS.Drivers.HardwareProber.HardwareProberDriver
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver
+  nameWithType: HardwareProberDriver
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardware
+  name: ProbeHardware()
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ProbeHardware
+  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardware
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardware()
+  nameWithType: HardwareProberDriver.ProbeHardware()
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardware*
+  name: ProbeHardware
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ProbeHardware_
+  commentId: Overload:KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardware
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardware
+  nameWithType: HardwareProberDriver.ProbeHardware
+- uid: KS.Drivers.HardwareProber.HardwareProberDriverTools
+  name: HardwareProberDriverTools
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriverTools.html
+  commentId: T:KS.Drivers.HardwareProber.HardwareProberDriverTools
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriverTools
+  nameWithType: HardwareProberDriverTools
+- uid: KS.Drivers.HardwareProber.HardwareProberDriverTools.GetHardwareProberDriverNames
+  name: GetHardwareProberDriverNames()
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriverTools.html#KS_Drivers_HardwareProber_HardwareProberDriverTools_GetHardwareProberDriverNames
+  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriverTools.GetHardwareProberDriverNames
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriverTools.GetHardwareProberDriverNames()
+  nameWithType: HardwareProberDriverTools.GetHardwareProberDriverNames()
+- uid: KS.Drivers.HardwareProber.HardwareProberDriverTools.GetHardwareProberDriverNames*
+  name: GetHardwareProberDriverNames
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriverTools.html#KS_Drivers_HardwareProber_HardwareProberDriverTools_GetHardwareProberDriverNames_
+  commentId: Overload:KS.Drivers.HardwareProber.HardwareProberDriverTools.GetHardwareProberDriverNames
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriverTools.GetHardwareProberDriverNames
+  nameWithType: HardwareProberDriverTools.GetHardwareProberDriverNames
+- uid: KS.Drivers.HardwareProber.HardwareProberDriverTools.GetHardwareProberDrivers
+  name: GetHardwareProberDrivers()
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriverTools.html#KS_Drivers_HardwareProber_HardwareProberDriverTools_GetHardwareProberDrivers
+  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriverTools.GetHardwareProberDrivers
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriverTools.GetHardwareProberDrivers()
+  nameWithType: HardwareProberDriverTools.GetHardwareProberDrivers()
+- uid: KS.Drivers.HardwareProber.HardwareProberDriverTools.GetHardwareProberDrivers*
+  name: GetHardwareProberDrivers
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriverTools.html#KS_Drivers_HardwareProber_HardwareProberDriverTools_GetHardwareProberDrivers_
+  commentId: Overload:KS.Drivers.HardwareProber.HardwareProberDriverTools.GetHardwareProberDrivers
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriverTools.GetHardwareProberDrivers
+  nameWithType: HardwareProberDriverTools.GetHardwareProberDrivers
+- uid: KS.Drivers.HardwareProber.HardwareProberDriverTools.SetHardwareProberDriver(System.String)
+  name: SetHardwareProberDriver(string)
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriverTools.html#KS_Drivers_HardwareProber_HardwareProberDriverTools_SetHardwareProberDriver_System_String_
+  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriverTools.SetHardwareProberDriver(System.String)
+  name.vb: SetHardwareProberDriver(String)
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriverTools.SetHardwareProberDriver(string)
+  fullName.vb: KS.Drivers.HardwareProber.HardwareProberDriverTools.SetHardwareProberDriver(String)
+  nameWithType: HardwareProberDriverTools.SetHardwareProberDriver(string)
+  nameWithType.vb: HardwareProberDriverTools.SetHardwareProberDriver(String)
+- uid: KS.Drivers.HardwareProber.HardwareProberDriverTools.SetHardwareProberDriver*
+  name: SetHardwareProberDriver
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriverTools.html#KS_Drivers_HardwareProber_HardwareProberDriverTools_SetHardwareProberDriver_
+  commentId: Overload:KS.Drivers.HardwareProber.HardwareProberDriverTools.SetHardwareProberDriver
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriverTools.SetHardwareProberDriver
+  nameWithType: HardwareProberDriverTools.SetHardwareProberDriver
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver
+  name: IHardwareProberDriver
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html
+  commentId: T:KS.Drivers.HardwareProber.IHardwareProberDriver
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver
+  nameWithType: IHardwareProberDriver
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardware
+  name: ProbeHardware()
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ProbeHardware
+  commentId: M:KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardware
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardware()
+  nameWithType: IHardwareProberDriver.ProbeHardware()
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardware*
+  name: ProbeHardware
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ProbeHardware_
+  commentId: Overload:KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardware
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardware
+  nameWithType: IHardwareProberDriver.ProbeHardware
 - uid: KS.Drivers.IDriver
   name: IDriver
   href: api/KS.Drivers.IDriver.html
@@ -21112,6 +21294,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentFilesystemDriver
   nameWithType: KernelMainConfig.CurrentFilesystemDriver
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentHardwareProberDriver
+  name: CurrentHardwareProberDriver
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_CurrentHardwareProberDriver
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentHardwareProberDriver
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentHardwareProberDriver
+  nameWithType: KernelMainConfig.CurrentHardwareProberDriver
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentHardwareProberDriver*
+  name: CurrentHardwareProberDriver
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_CurrentHardwareProberDriver_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentHardwareProberDriver
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentHardwareProberDriver
+  nameWithType: KernelMainConfig.CurrentHardwareProberDriver
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentLanguage
   name: CurrentLanguage
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_CurrentLanguage
