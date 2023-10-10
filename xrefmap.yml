@@ -29176,6 +29176,15 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Threading.ThreadManager.OperatingSystemThreads
   nameWithType: ThreadManager.OperatingSystemThreads
+- uid: KS.Kernel.Threading.ThreadManager.SleepNoBlock(System.Int64)
+  name: SleepNoBlock(long)
+  href: api/KS.Kernel.Threading.ThreadManager.html#KS_Kernel_Threading_ThreadManager_SleepNoBlock_System_Int64_
+  commentId: M:KS.Kernel.Threading.ThreadManager.SleepNoBlock(System.Int64)
+  name.vb: SleepNoBlock(Long)
+  fullName: KS.Kernel.Threading.ThreadManager.SleepNoBlock(long)
+  fullName.vb: KS.Kernel.Threading.ThreadManager.SleepNoBlock(Long)
+  nameWithType: ThreadManager.SleepNoBlock(long)
+  nameWithType.vb: ThreadManager.SleepNoBlock(Long)
 - uid: KS.Kernel.Threading.ThreadManager.SleepNoBlock(System.Int64,KS.Kernel.Threading.KernelThread)
   name: SleepNoBlock(long, KernelThread)
   href: api/KS.Kernel.Threading.ThreadManager.html#KS_Kernel_Threading_ThreadManager_SleepNoBlock_System_Int64_KS_Kernel_Threading_KernelThread_
@@ -29201,6 +29210,28 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Threading.ThreadManager.SleepNoBlock
   nameWithType: ThreadManager.SleepNoBlock
+- uid: KS.Kernel.Threading.ThreadManager.SleepUntilInput
+  name: SleepUntilInput()
+  href: api/KS.Kernel.Threading.ThreadManager.html#KS_Kernel_Threading_ThreadManager_SleepUntilInput
+  commentId: M:KS.Kernel.Threading.ThreadManager.SleepUntilInput
+  fullName: KS.Kernel.Threading.ThreadManager.SleepUntilInput()
+  nameWithType: ThreadManager.SleepUntilInput()
+- uid: KS.Kernel.Threading.ThreadManager.SleepUntilInput(System.Int64)
+  name: SleepUntilInput(long)
+  href: api/KS.Kernel.Threading.ThreadManager.html#KS_Kernel_Threading_ThreadManager_SleepUntilInput_System_Int64_
+  commentId: M:KS.Kernel.Threading.ThreadManager.SleepUntilInput(System.Int64)
+  name.vb: SleepUntilInput(Long)
+  fullName: KS.Kernel.Threading.ThreadManager.SleepUntilInput(long)
+  fullName.vb: KS.Kernel.Threading.ThreadManager.SleepUntilInput(Long)
+  nameWithType: ThreadManager.SleepUntilInput(long)
+  nameWithType.vb: ThreadManager.SleepUntilInput(Long)
+- uid: KS.Kernel.Threading.ThreadManager.SleepUntilInput*
+  name: SleepUntilInput
+  href: api/KS.Kernel.Threading.ThreadManager.html#KS_Kernel_Threading_ThreadManager_SleepUntilInput_
+  commentId: Overload:KS.Kernel.Threading.ThreadManager.SleepUntilInput
+  isSpec: "True"
+  fullName: KS.Kernel.Threading.ThreadManager.SleepUntilInput
+  nameWithType: ThreadManager.SleepUntilInput
 - uid: KS.Kernel.Time
   name: KS.Kernel.Time
   href: api/KS.Kernel.Time.html
