@@ -31754,6 +31754,49 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.IntegerTools.GetDigits
   nameWithType: IntegerTools.GetDigits
+- uid: KS.Misc.Reflection.IntegerTools.SizeString(System.Int32)
+  name: SizeString(int)
+  href: api/KS.Misc.Reflection.IntegerTools.html#KS_Misc_Reflection_IntegerTools_SizeString_System_Int32_
+  commentId: M:KS.Misc.Reflection.IntegerTools.SizeString(System.Int32)
+  name.vb: SizeString(Integer)
+  fullName: KS.Misc.Reflection.IntegerTools.SizeString(int)
+  fullName.vb: KS.Misc.Reflection.IntegerTools.SizeString(Integer)
+  nameWithType: IntegerTools.SizeString(int)
+  nameWithType.vb: IntegerTools.SizeString(Integer)
+- uid: KS.Misc.Reflection.IntegerTools.SizeString(System.Int64)
+  name: SizeString(long)
+  href: api/KS.Misc.Reflection.IntegerTools.html#KS_Misc_Reflection_IntegerTools_SizeString_System_Int64_
+  commentId: M:KS.Misc.Reflection.IntegerTools.SizeString(System.Int64)
+  name.vb: SizeString(Long)
+  fullName: KS.Misc.Reflection.IntegerTools.SizeString(long)
+  fullName.vb: KS.Misc.Reflection.IntegerTools.SizeString(Long)
+  nameWithType: IntegerTools.SizeString(long)
+  nameWithType.vb: IntegerTools.SizeString(Long)
+- uid: KS.Misc.Reflection.IntegerTools.SizeString(System.UInt32)
+  name: SizeString(uint)
+  href: api/KS.Misc.Reflection.IntegerTools.html#KS_Misc_Reflection_IntegerTools_SizeString_System_UInt32_
+  commentId: M:KS.Misc.Reflection.IntegerTools.SizeString(System.UInt32)
+  name.vb: SizeString(UInteger)
+  fullName: KS.Misc.Reflection.IntegerTools.SizeString(uint)
+  fullName.vb: KS.Misc.Reflection.IntegerTools.SizeString(UInteger)
+  nameWithType: IntegerTools.SizeString(uint)
+  nameWithType.vb: IntegerTools.SizeString(UInteger)
+- uid: KS.Misc.Reflection.IntegerTools.SizeString(System.UInt64)
+  name: SizeString(ulong)
+  href: api/KS.Misc.Reflection.IntegerTools.html#KS_Misc_Reflection_IntegerTools_SizeString_System_UInt64_
+  commentId: M:KS.Misc.Reflection.IntegerTools.SizeString(System.UInt64)
+  name.vb: SizeString(ULong)
+  fullName: KS.Misc.Reflection.IntegerTools.SizeString(ulong)
+  fullName.vb: KS.Misc.Reflection.IntegerTools.SizeString(ULong)
+  nameWithType: IntegerTools.SizeString(ulong)
+  nameWithType.vb: IntegerTools.SizeString(ULong)
+- uid: KS.Misc.Reflection.IntegerTools.SizeString*
+  name: SizeString
+  href: api/KS.Misc.Reflection.IntegerTools.html#KS_Misc_Reflection_IntegerTools_SizeString_
+  commentId: Overload:KS.Misc.Reflection.IntegerTools.SizeString
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.IntegerTools.SizeString
+  nameWithType: IntegerTools.SizeString
 - uid: KS.Misc.Reflection.IntegerTools.SwapIfSourceLarger(System.Int32@,System.Int32@)
   name: SwapIfSourceLarger(ref int, ref int)
   href: api/KS.Misc.Reflection.IntegerTools.html#KS_Misc_Reflection_IntegerTools_SwapIfSourceLarger_System_Int32__System_Int32__
