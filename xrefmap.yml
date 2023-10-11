@@ -34061,6 +34061,15 @@ references:
   fullName.vb: KS.Misc.Splash.SplashReport.ReportProgress(String, Integer, ParamArray Object())
   nameWithType: SplashReport.ReportProgress(string, int, params object[])
   nameWithType.vb: SplashReport.ReportProgress(String, Integer, ParamArray Object())
+- uid: KS.Misc.Splash.SplashReport.ReportProgress(System.String,System.Object[])
+  name: ReportProgress(string, params object[])
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ReportProgress_System_String_System_Object___
+  commentId: M:KS.Misc.Splash.SplashReport.ReportProgress(System.String,System.Object[])
+  name.vb: ReportProgress(String, ParamArray Object())
+  fullName: KS.Misc.Splash.SplashReport.ReportProgress(string, params object[])
+  fullName.vb: KS.Misc.Splash.SplashReport.ReportProgress(String, ParamArray Object())
+  nameWithType: SplashReport.ReportProgress(string, params object[])
+  nameWithType.vb: SplashReport.ReportProgress(String, ParamArray Object())
 - uid: KS.Misc.Splash.SplashReport.ReportProgress*
   name: ReportProgress
   href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ReportProgress_
