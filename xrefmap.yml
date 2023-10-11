@@ -15198,6 +15198,38 @@ references:
   commentId: T:KS.Drivers.HardwareProber.BaseHardwareProberDriver
   fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver
   nameWithType: BaseHardwareProberDriver
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DiskInfo(System.Int32)
+  name: DiskInfo(int)
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_DiskInfo_System_Int32_
+  commentId: M:KS.Drivers.HardwareProber.BaseHardwareProberDriver.DiskInfo(System.Int32)
+  name.vb: DiskInfo(Integer)
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DiskInfo(int)
+  fullName.vb: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DiskInfo(Integer)
+  nameWithType: BaseHardwareProberDriver.DiskInfo(int)
+  nameWithType.vb: BaseHardwareProberDriver.DiskInfo(Integer)
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DiskInfo*
+  name: DiskInfo
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_DiskInfo_
+  commentId: Overload:KS.Drivers.HardwareProber.BaseHardwareProberDriver.DiskInfo
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DiskInfo
+  nameWithType: BaseHardwareProberDriver.DiskInfo
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DiskPartitionInfo(System.Int32,System.Int32)
+  name: DiskPartitionInfo(int, int)
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_DiskPartitionInfo_System_Int32_System_Int32_
+  commentId: M:KS.Drivers.HardwareProber.BaseHardwareProberDriver.DiskPartitionInfo(System.Int32,System.Int32)
+  name.vb: DiskPartitionInfo(Integer, Integer)
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DiskPartitionInfo(int, int)
+  fullName.vb: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DiskPartitionInfo(Integer, Integer)
+  nameWithType: BaseHardwareProberDriver.DiskPartitionInfo(int, int)
+  nameWithType.vb: BaseHardwareProberDriver.DiskPartitionInfo(Integer, Integer)
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DiskPartitionInfo*
+  name: DiskPartitionInfo
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_DiskPartitionInfo_
+  commentId: Overload:KS.Drivers.HardwareProber.BaseHardwareProberDriver.DiskPartitionInfo
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DiskPartitionInfo
+  nameWithType: BaseHardwareProberDriver.DiskPartitionInfo
 - uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverInternal
   name: DriverInternal
   href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_DriverInternal
@@ -15237,38 +15269,262 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.DriverType
   nameWithType: BaseHardwareProberDriver.DriverType
-- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardware
-  name: ProbeHardware()
-  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ProbeHardware
-  commentId: M:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardware
-  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardware()
-  nameWithType: BaseHardwareProberDriver.ProbeHardware()
-- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardware*
-  name: ProbeHardware
-  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ProbeHardware_
-  commentId: Overload:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardware
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListDiskPartitions(System.Int32)
+  name: ListDiskPartitions(int)
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ListDiskPartitions_System_Int32_
+  commentId: M:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListDiskPartitions(System.Int32)
+  name.vb: ListDiskPartitions(Integer)
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListDiskPartitions(int)
+  fullName.vb: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListDiskPartitions(Integer)
+  nameWithType: BaseHardwareProberDriver.ListDiskPartitions(int)
+  nameWithType.vb: BaseHardwareProberDriver.ListDiskPartitions(Integer)
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListDiskPartitions*
+  name: ListDiskPartitions
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ListDiskPartitions_
+  commentId: Overload:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListDiskPartitions
   isSpec: "True"
-  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardware
-  nameWithType: BaseHardwareProberDriver.ProbeHardware
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListDiskPartitions
+  nameWithType: BaseHardwareProberDriver.ListDiskPartitions
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListDisks
+  name: ListDisks()
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ListDisks
+  commentId: M:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListDisks
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListDisks()
+  nameWithType: BaseHardwareProberDriver.ListDisks()
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListDisks*
+  name: ListDisks
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ListDisks_
+  commentId: Overload:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListDisks
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListDisks
+  nameWithType: BaseHardwareProberDriver.ListDisks
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListHardware
+  name: ListHardware()
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ListHardware
+  commentId: M:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListHardware
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListHardware()
+  nameWithType: BaseHardwareProberDriver.ListHardware()
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListHardware(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable)
+  name: ListHardware(IEnumerable, IEnumerable, IEnumerable, IEnumerable)
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ListHardware_System_Collections_IEnumerable_System_Collections_IEnumerable_System_Collections_IEnumerable_System_Collections_IEnumerable_
+  commentId: M:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListHardware(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable)
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListHardware(System.Collections.IEnumerable, System.Collections.IEnumerable, System.Collections.IEnumerable, System.Collections.IEnumerable)
+  nameWithType: BaseHardwareProberDriver.ListHardware(IEnumerable, IEnumerable, IEnumerable, IEnumerable)
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListHardware(System.String)
+  name: ListHardware(string)
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ListHardware_System_String_
+  commentId: M:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListHardware(System.String)
+  name.vb: ListHardware(String)
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListHardware(string)
+  fullName.vb: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListHardware(String)
+  nameWithType: BaseHardwareProberDriver.ListHardware(string)
+  nameWithType.vb: BaseHardwareProberDriver.ListHardware(String)
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListHardware*
+  name: ListHardware
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ListHardware_
+  commentId: Overload:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListHardware
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ListHardware
+  nameWithType: BaseHardwareProberDriver.ListHardware
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeGraphics
+  name: ProbeGraphics()
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ProbeGraphics
+  commentId: M:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeGraphics
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeGraphics()
+  nameWithType: BaseHardwareProberDriver.ProbeGraphics()
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeGraphics*
+  name: ProbeGraphics
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ProbeGraphics_
+  commentId: Overload:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeGraphics
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeGraphics
+  nameWithType: BaseHardwareProberDriver.ProbeGraphics
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardDrive
+  name: ProbeHardDrive()
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ProbeHardDrive
+  commentId: M:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardDrive
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardDrive()
+  nameWithType: BaseHardwareProberDriver.ProbeHardDrive()
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardDrive*
+  name: ProbeHardDrive
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ProbeHardDrive_
+  commentId: Overload:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardDrive
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeHardDrive
+  nameWithType: BaseHardwareProberDriver.ProbeHardDrive
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbePcMemory
+  name: ProbePcMemory()
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ProbePcMemory
+  commentId: M:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbePcMemory
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbePcMemory()
+  nameWithType: BaseHardwareProberDriver.ProbePcMemory()
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbePcMemory*
+  name: ProbePcMemory
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ProbePcMemory_
+  commentId: Overload:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbePcMemory
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbePcMemory
+  nameWithType: BaseHardwareProberDriver.ProbePcMemory
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeProcessor
+  name: ProbeProcessor()
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ProbeProcessor
+  commentId: M:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeProcessor
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeProcessor()
+  nameWithType: BaseHardwareProberDriver.ProbeProcessor()
+- uid: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeProcessor*
+  name: ProbeProcessor
+  href: api/KS.Drivers.HardwareProber.BaseHardwareProberDriver.html#KS_Drivers_HardwareProber_BaseHardwareProberDriver_ProbeProcessor_
+  commentId: Overload:KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeProcessor
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeProcessor
+  nameWithType: BaseHardwareProberDriver.ProbeProcessor
 - uid: KS.Drivers.HardwareProber.HardwareProberDriver
   name: HardwareProberDriver
   href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html
   commentId: T:KS.Drivers.HardwareProber.HardwareProberDriver
   fullName: KS.Drivers.HardwareProber.HardwareProberDriver
   nameWithType: HardwareProberDriver
-- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardware
-  name: ProbeHardware()
-  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ProbeHardware
-  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardware
-  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardware()
-  nameWithType: HardwareProberDriver.ProbeHardware()
-- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardware*
-  name: ProbeHardware
-  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ProbeHardware_
-  commentId: Overload:KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardware
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.DiskInfo(System.Int32)
+  name: DiskInfo(int)
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_DiskInfo_System_Int32_
+  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriver.DiskInfo(System.Int32)
+  name.vb: DiskInfo(Integer)
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.DiskInfo(int)
+  fullName.vb: KS.Drivers.HardwareProber.HardwareProberDriver.DiskInfo(Integer)
+  nameWithType: HardwareProberDriver.DiskInfo(int)
+  nameWithType.vb: HardwareProberDriver.DiskInfo(Integer)
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.DiskInfo*
+  name: DiskInfo
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_DiskInfo_
+  commentId: Overload:KS.Drivers.HardwareProber.HardwareProberDriver.DiskInfo
   isSpec: "True"
-  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardware
-  nameWithType: HardwareProberDriver.ProbeHardware
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.DiskInfo
+  nameWithType: HardwareProberDriver.DiskInfo
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.DiskPartitionInfo(System.Int32,System.Int32)
+  name: DiskPartitionInfo(int, int)
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_DiskPartitionInfo_System_Int32_System_Int32_
+  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriver.DiskPartitionInfo(System.Int32,System.Int32)
+  name.vb: DiskPartitionInfo(Integer, Integer)
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.DiskPartitionInfo(int, int)
+  fullName.vb: KS.Drivers.HardwareProber.HardwareProberDriver.DiskPartitionInfo(Integer, Integer)
+  nameWithType: HardwareProberDriver.DiskPartitionInfo(int, int)
+  nameWithType.vb: HardwareProberDriver.DiskPartitionInfo(Integer, Integer)
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.DiskPartitionInfo*
+  name: DiskPartitionInfo
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_DiskPartitionInfo_
+  commentId: Overload:KS.Drivers.HardwareProber.HardwareProberDriver.DiskPartitionInfo
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.DiskPartitionInfo
+  nameWithType: HardwareProberDriver.DiskPartitionInfo
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ListDiskPartitions(System.Int32)
+  name: ListDiskPartitions(int)
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ListDiskPartitions_System_Int32_
+  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriver.ListDiskPartitions(System.Int32)
+  name.vb: ListDiskPartitions(Integer)
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ListDiskPartitions(int)
+  fullName.vb: KS.Drivers.HardwareProber.HardwareProberDriver.ListDiskPartitions(Integer)
+  nameWithType: HardwareProberDriver.ListDiskPartitions(int)
+  nameWithType.vb: HardwareProberDriver.ListDiskPartitions(Integer)
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ListDiskPartitions*
+  name: ListDiskPartitions
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ListDiskPartitions_
+  commentId: Overload:KS.Drivers.HardwareProber.HardwareProberDriver.ListDiskPartitions
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ListDiskPartitions
+  nameWithType: HardwareProberDriver.ListDiskPartitions
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ListDisks
+  name: ListDisks()
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ListDisks
+  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriver.ListDisks
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ListDisks()
+  nameWithType: HardwareProberDriver.ListDisks()
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ListDisks*
+  name: ListDisks
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ListDisks_
+  commentId: Overload:KS.Drivers.HardwareProber.HardwareProberDriver.ListDisks
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ListDisks
+  nameWithType: HardwareProberDriver.ListDisks
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ListHardware
+  name: ListHardware()
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ListHardware
+  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriver.ListHardware
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ListHardware()
+  nameWithType: HardwareProberDriver.ListHardware()
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ListHardware(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable)
+  name: ListHardware(IEnumerable, IEnumerable, IEnumerable, IEnumerable)
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ListHardware_System_Collections_IEnumerable_System_Collections_IEnumerable_System_Collections_IEnumerable_System_Collections_IEnumerable_
+  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriver.ListHardware(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable)
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ListHardware(System.Collections.IEnumerable, System.Collections.IEnumerable, System.Collections.IEnumerable, System.Collections.IEnumerable)
+  nameWithType: HardwareProberDriver.ListHardware(IEnumerable, IEnumerable, IEnumerable, IEnumerable)
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ListHardware(System.String)
+  name: ListHardware(string)
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ListHardware_System_String_
+  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriver.ListHardware(System.String)
+  name.vb: ListHardware(String)
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ListHardware(string)
+  fullName.vb: KS.Drivers.HardwareProber.HardwareProberDriver.ListHardware(String)
+  nameWithType: HardwareProberDriver.ListHardware(string)
+  nameWithType.vb: HardwareProberDriver.ListHardware(String)
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ListHardware*
+  name: ListHardware
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ListHardware_
+  commentId: Overload:KS.Drivers.HardwareProber.HardwareProberDriver.ListHardware
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ListHardware
+  nameWithType: HardwareProberDriver.ListHardware
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeGraphics
+  name: ProbeGraphics()
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ProbeGraphics
+  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriver.ProbeGraphics
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeGraphics()
+  nameWithType: HardwareProberDriver.ProbeGraphics()
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeGraphics*
+  name: ProbeGraphics
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ProbeGraphics_
+  commentId: Overload:KS.Drivers.HardwareProber.HardwareProberDriver.ProbeGraphics
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeGraphics
+  nameWithType: HardwareProberDriver.ProbeGraphics
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardDrive
+  name: ProbeHardDrive()
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ProbeHardDrive
+  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardDrive
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardDrive()
+  nameWithType: HardwareProberDriver.ProbeHardDrive()
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardDrive*
+  name: ProbeHardDrive
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ProbeHardDrive_
+  commentId: Overload:KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardDrive
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeHardDrive
+  nameWithType: HardwareProberDriver.ProbeHardDrive
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ProbePcMemory
+  name: ProbePcMemory()
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ProbePcMemory
+  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriver.ProbePcMemory
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ProbePcMemory()
+  nameWithType: HardwareProberDriver.ProbePcMemory()
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ProbePcMemory*
+  name: ProbePcMemory
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ProbePcMemory_
+  commentId: Overload:KS.Drivers.HardwareProber.HardwareProberDriver.ProbePcMemory
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ProbePcMemory
+  nameWithType: HardwareProberDriver.ProbePcMemory
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeProcessor
+  name: ProbeProcessor()
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ProbeProcessor
+  commentId: M:KS.Drivers.HardwareProber.HardwareProberDriver.ProbeProcessor
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeProcessor()
+  nameWithType: HardwareProberDriver.ProbeProcessor()
+- uid: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeProcessor*
+  name: ProbeProcessor
+  href: api/KS.Drivers.HardwareProber.HardwareProberDriver.html#KS_Drivers_HardwareProber_HardwareProberDriver_ProbeProcessor_
+  commentId: Overload:KS.Drivers.HardwareProber.HardwareProberDriver.ProbeProcessor
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.HardwareProberDriver.ProbeProcessor
+  nameWithType: HardwareProberDriver.ProbeProcessor
 - uid: KS.Drivers.HardwareProber.HardwareProberDriverTools
   name: HardwareProberDriverTools
   href: api/KS.Drivers.HardwareProber.HardwareProberDriverTools.html
@@ -15323,19 +15579,147 @@ references:
   commentId: T:KS.Drivers.HardwareProber.IHardwareProberDriver
   fullName: KS.Drivers.HardwareProber.IHardwareProberDriver
   nameWithType: IHardwareProberDriver
-- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardware
-  name: ProbeHardware()
-  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ProbeHardware
-  commentId: M:KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardware
-  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardware()
-  nameWithType: IHardwareProberDriver.ProbeHardware()
-- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardware*
-  name: ProbeHardware
-  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ProbeHardware_
-  commentId: Overload:KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardware
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.DiskInfo(System.Int32)
+  name: DiskInfo(int)
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_DiskInfo_System_Int32_
+  commentId: M:KS.Drivers.HardwareProber.IHardwareProberDriver.DiskInfo(System.Int32)
+  name.vb: DiskInfo(Integer)
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.DiskInfo(int)
+  fullName.vb: KS.Drivers.HardwareProber.IHardwareProberDriver.DiskInfo(Integer)
+  nameWithType: IHardwareProberDriver.DiskInfo(int)
+  nameWithType.vb: IHardwareProberDriver.DiskInfo(Integer)
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.DiskInfo*
+  name: DiskInfo
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_DiskInfo_
+  commentId: Overload:KS.Drivers.HardwareProber.IHardwareProberDriver.DiskInfo
   isSpec: "True"
-  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardware
-  nameWithType: IHardwareProberDriver.ProbeHardware
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.DiskInfo
+  nameWithType: IHardwareProberDriver.DiskInfo
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.DiskPartitionInfo(System.Int32,System.Int32)
+  name: DiskPartitionInfo(int, int)
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_DiskPartitionInfo_System_Int32_System_Int32_
+  commentId: M:KS.Drivers.HardwareProber.IHardwareProberDriver.DiskPartitionInfo(System.Int32,System.Int32)
+  name.vb: DiskPartitionInfo(Integer, Integer)
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.DiskPartitionInfo(int, int)
+  fullName.vb: KS.Drivers.HardwareProber.IHardwareProberDriver.DiskPartitionInfo(Integer, Integer)
+  nameWithType: IHardwareProberDriver.DiskPartitionInfo(int, int)
+  nameWithType.vb: IHardwareProberDriver.DiskPartitionInfo(Integer, Integer)
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.DiskPartitionInfo*
+  name: DiskPartitionInfo
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_DiskPartitionInfo_
+  commentId: Overload:KS.Drivers.HardwareProber.IHardwareProberDriver.DiskPartitionInfo
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.DiskPartitionInfo
+  nameWithType: IHardwareProberDriver.DiskPartitionInfo
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ListDiskPartitions(System.Int32)
+  name: ListDiskPartitions(int)
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ListDiskPartitions_System_Int32_
+  commentId: M:KS.Drivers.HardwareProber.IHardwareProberDriver.ListDiskPartitions(System.Int32)
+  name.vb: ListDiskPartitions(Integer)
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ListDiskPartitions(int)
+  fullName.vb: KS.Drivers.HardwareProber.IHardwareProberDriver.ListDiskPartitions(Integer)
+  nameWithType: IHardwareProberDriver.ListDiskPartitions(int)
+  nameWithType.vb: IHardwareProberDriver.ListDiskPartitions(Integer)
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ListDiskPartitions*
+  name: ListDiskPartitions
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ListDiskPartitions_
+  commentId: Overload:KS.Drivers.HardwareProber.IHardwareProberDriver.ListDiskPartitions
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ListDiskPartitions
+  nameWithType: IHardwareProberDriver.ListDiskPartitions
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ListDisks
+  name: ListDisks()
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ListDisks
+  commentId: M:KS.Drivers.HardwareProber.IHardwareProberDriver.ListDisks
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ListDisks()
+  nameWithType: IHardwareProberDriver.ListDisks()
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ListDisks*
+  name: ListDisks
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ListDisks_
+  commentId: Overload:KS.Drivers.HardwareProber.IHardwareProberDriver.ListDisks
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ListDisks
+  nameWithType: IHardwareProberDriver.ListDisks
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ListHardware
+  name: ListHardware()
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ListHardware
+  commentId: M:KS.Drivers.HardwareProber.IHardwareProberDriver.ListHardware
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ListHardware()
+  nameWithType: IHardwareProberDriver.ListHardware()
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ListHardware(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable)
+  name: ListHardware(IEnumerable, IEnumerable, IEnumerable, IEnumerable)
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ListHardware_System_Collections_IEnumerable_System_Collections_IEnumerable_System_Collections_IEnumerable_System_Collections_IEnumerable_
+  commentId: M:KS.Drivers.HardwareProber.IHardwareProberDriver.ListHardware(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable)
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ListHardware(System.Collections.IEnumerable, System.Collections.IEnumerable, System.Collections.IEnumerable, System.Collections.IEnumerable)
+  nameWithType: IHardwareProberDriver.ListHardware(IEnumerable, IEnumerable, IEnumerable, IEnumerable)
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ListHardware(System.String)
+  name: ListHardware(string)
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ListHardware_System_String_
+  commentId: M:KS.Drivers.HardwareProber.IHardwareProberDriver.ListHardware(System.String)
+  name.vb: ListHardware(String)
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ListHardware(string)
+  fullName.vb: KS.Drivers.HardwareProber.IHardwareProberDriver.ListHardware(String)
+  nameWithType: IHardwareProberDriver.ListHardware(string)
+  nameWithType.vb: IHardwareProberDriver.ListHardware(String)
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ListHardware*
+  name: ListHardware
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ListHardware_
+  commentId: Overload:KS.Drivers.HardwareProber.IHardwareProberDriver.ListHardware
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ListHardware
+  nameWithType: IHardwareProberDriver.ListHardware
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeGraphics
+  name: ProbeGraphics()
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ProbeGraphics
+  commentId: M:KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeGraphics
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeGraphics()
+  nameWithType: IHardwareProberDriver.ProbeGraphics()
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeGraphics*
+  name: ProbeGraphics
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ProbeGraphics_
+  commentId: Overload:KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeGraphics
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeGraphics
+  nameWithType: IHardwareProberDriver.ProbeGraphics
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardDrive
+  name: ProbeHardDrive()
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ProbeHardDrive
+  commentId: M:KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardDrive
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardDrive()
+  nameWithType: IHardwareProberDriver.ProbeHardDrive()
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardDrive*
+  name: ProbeHardDrive
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ProbeHardDrive_
+  commentId: Overload:KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardDrive
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeHardDrive
+  nameWithType: IHardwareProberDriver.ProbeHardDrive
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbePcMemory
+  name: ProbePcMemory()
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ProbePcMemory
+  commentId: M:KS.Drivers.HardwareProber.IHardwareProberDriver.ProbePcMemory
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbePcMemory()
+  nameWithType: IHardwareProberDriver.ProbePcMemory()
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbePcMemory*
+  name: ProbePcMemory
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ProbePcMemory_
+  commentId: Overload:KS.Drivers.HardwareProber.IHardwareProberDriver.ProbePcMemory
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbePcMemory
+  nameWithType: IHardwareProberDriver.ProbePcMemory
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeProcessor
+  name: ProbeProcessor()
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ProbeProcessor
+  commentId: M:KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeProcessor
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeProcessor()
+  nameWithType: IHardwareProberDriver.ProbeProcessor()
+- uid: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeProcessor*
+  name: ProbeProcessor
+  href: api/KS.Drivers.HardwareProber.IHardwareProberDriver.html#KS_Drivers_HardwareProber_IHardwareProberDriver_ProbeProcessor_
+  commentId: Overload:KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeProcessor
+  isSpec: "True"
+  fullName: KS.Drivers.HardwareProber.IHardwareProberDriver.ProbeProcessor
+  nameWithType: IHardwareProberDriver.ProbeProcessor
 - uid: KS.Drivers.IDriver
   name: IDriver
   href: api/KS.Drivers.IDriver.html
@@ -22030,19 +22414,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.FtpVerifyRetryAttempts
   nameWithType: KernelMainConfig.FtpVerifyRetryAttempts
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.FullHardwareProbe
-  name: FullHardwareProbe
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_FullHardwareProbe
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.FullHardwareProbe
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.FullHardwareProbe
-  nameWithType: KernelMainConfig.FullHardwareProbe
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.FullHardwareProbe*
-  name: FullHardwareProbe
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_FullHardwareProbe_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.FullHardwareProbe
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.FullHardwareProbe
-  nameWithType: KernelMainConfig.FullHardwareProbe
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.FullParseMode
   name: FullParseMode
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_FullParseMode
@@ -24668,19 +25039,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.KernelFlags.FTPLoggerUsername
   nameWithType: KernelFlags.FTPLoggerUsername
-- uid: KS.Kernel.Configuration.KernelFlags.FullHardwareProbe
-  name: FullHardwareProbe
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_FullHardwareProbe
-  commentId: P:KS.Kernel.Configuration.KernelFlags.FullHardwareProbe
-  fullName: KS.Kernel.Configuration.KernelFlags.FullHardwareProbe
-  nameWithType: KernelFlags.FullHardwareProbe
-- uid: KS.Kernel.Configuration.KernelFlags.FullHardwareProbe*
-  name: FullHardwareProbe
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_FullHardwareProbe_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.FullHardwareProbe
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.FullHardwareProbe
-  nameWithType: KernelFlags.FullHardwareProbe
 - uid: KS.Kernel.Configuration.KernelFlags.FullParseMode
   name: FullParseMode
   href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_FullParseMode
@@ -31723,6 +32081,41 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.AssemblyLookup.RemovePathFromAssemblySearchPath
   nameWithType: AssemblyLookup.RemovePathFromAssemblySearchPath
+- uid: KS.Misc.Reflection.EnumerableTools
+  name: EnumerableTools
+  href: api/KS.Misc.Reflection.EnumerableTools.html
+  commentId: T:KS.Misc.Reflection.EnumerableTools
+  fullName: KS.Misc.Reflection.EnumerableTools
+  nameWithType: EnumerableTools
+- uid: KS.Misc.Reflection.EnumerableTools.CountElements(System.Collections.IEnumerable)
+  name: CountElements(IEnumerable)
+  href: api/KS.Misc.Reflection.EnumerableTools.html#KS_Misc_Reflection_EnumerableTools_CountElements_System_Collections_IEnumerable_
+  commentId: M:KS.Misc.Reflection.EnumerableTools.CountElements(System.Collections.IEnumerable)
+  fullName: KS.Misc.Reflection.EnumerableTools.CountElements(System.Collections.IEnumerable)
+  nameWithType: EnumerableTools.CountElements(IEnumerable)
+- uid: KS.Misc.Reflection.EnumerableTools.CountElements*
+  name: CountElements
+  href: api/KS.Misc.Reflection.EnumerableTools.html#KS_Misc_Reflection_EnumerableTools_CountElements_
+  commentId: Overload:KS.Misc.Reflection.EnumerableTools.CountElements
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.EnumerableTools.CountElements
+  nameWithType: EnumerableTools.CountElements
+- uid: KS.Misc.Reflection.EnumerableTools.GetElementFromIndex(System.Collections.IEnumerable,System.Int32)
+  name: GetElementFromIndex(IEnumerable, int)
+  href: api/KS.Misc.Reflection.EnumerableTools.html#KS_Misc_Reflection_EnumerableTools_GetElementFromIndex_System_Collections_IEnumerable_System_Int32_
+  commentId: M:KS.Misc.Reflection.EnumerableTools.GetElementFromIndex(System.Collections.IEnumerable,System.Int32)
+  name.vb: GetElementFromIndex(IEnumerable, Integer)
+  fullName: KS.Misc.Reflection.EnumerableTools.GetElementFromIndex(System.Collections.IEnumerable, int)
+  fullName.vb: KS.Misc.Reflection.EnumerableTools.GetElementFromIndex(System.Collections.IEnumerable, Integer)
+  nameWithType: EnumerableTools.GetElementFromIndex(IEnumerable, int)
+  nameWithType.vb: EnumerableTools.GetElementFromIndex(IEnumerable, Integer)
+- uid: KS.Misc.Reflection.EnumerableTools.GetElementFromIndex*
+  name: GetElementFromIndex
+  href: api/KS.Misc.Reflection.EnumerableTools.html#KS_Misc_Reflection_EnumerableTools_GetElementFromIndex_
+  commentId: Overload:KS.Misc.Reflection.EnumerableTools.GetElementFromIndex
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.EnumerableTools.GetElementFromIndex
+  nameWithType: EnumerableTools.GetElementFromIndex
 - uid: KS.Misc.Reflection.IntegerTools
   name: IntegerTools
   href: api/KS.Misc.Reflection.IntegerTools.html
