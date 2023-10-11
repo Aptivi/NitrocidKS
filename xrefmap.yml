@@ -10737,6 +10737,38 @@ references:
   fullName.vb: KS.Drivers.DriverHandler.GetDrivers(Of TResult)()
   nameWithType: DriverHandler.GetDrivers<TResult>()
   nameWithType.vb: DriverHandler.GetDrivers(Of TResult)()
+- uid: KS.Drivers.DriverHandler.GetFallbackDriver*
+  name: GetFallbackDriver
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetFallbackDriver_
+  commentId: Overload:KS.Drivers.DriverHandler.GetFallbackDriver
+  isSpec: "True"
+  fullName: KS.Drivers.DriverHandler.GetFallbackDriver
+  nameWithType: DriverHandler.GetFallbackDriver
+- uid: KS.Drivers.DriverHandler.GetFallbackDriverName*
+  name: GetFallbackDriverName
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetFallbackDriverName_
+  commentId: Overload:KS.Drivers.DriverHandler.GetFallbackDriverName
+  isSpec: "True"
+  fullName: KS.Drivers.DriverHandler.GetFallbackDriverName
+  nameWithType: DriverHandler.GetFallbackDriverName
+- uid: KS.Drivers.DriverHandler.GetFallbackDriverName``1
+  name: GetFallbackDriverName<TResult>()
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetFallbackDriverName__1
+  commentId: M:KS.Drivers.DriverHandler.GetFallbackDriverName``1
+  name.vb: GetFallbackDriverName(Of TResult)()
+  fullName: KS.Drivers.DriverHandler.GetFallbackDriverName<TResult>()
+  fullName.vb: KS.Drivers.DriverHandler.GetFallbackDriverName(Of TResult)()
+  nameWithType: DriverHandler.GetFallbackDriverName<TResult>()
+  nameWithType.vb: DriverHandler.GetFallbackDriverName(Of TResult)()
+- uid: KS.Drivers.DriverHandler.GetFallbackDriver``1
+  name: GetFallbackDriver<TResult>()
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetFallbackDriver__1
+  commentId: M:KS.Drivers.DriverHandler.GetFallbackDriver``1
+  name.vb: GetFallbackDriver(Of TResult)()
+  fullName: KS.Drivers.DriverHandler.GetFallbackDriver<TResult>()
+  fullName.vb: KS.Drivers.DriverHandler.GetFallbackDriver(Of TResult)()
+  nameWithType: DriverHandler.GetFallbackDriver<TResult>()
+  nameWithType.vb: DriverHandler.GetFallbackDriver(Of TResult)()
 - uid: KS.Drivers.DriverHandler.IsRegistered(KS.Drivers.DriverTypes,KS.Drivers.IDriver)
   name: IsRegistered(DriverTypes, IDriver)
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_IsRegistered_KS_Drivers_DriverTypes_KS_Drivers_IDriver_
