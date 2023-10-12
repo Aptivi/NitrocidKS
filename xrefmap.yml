@@ -14186,6 +14186,56 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.RemoveFromPathLookup
   nameWithType: BaseFilesystemDriver.RemoveFromPathLookup
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContents(System.String)
+  name: RenderContents(string)
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_RenderContents_System_String_
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContents(System.String)
+  name.vb: RenderContents(String)
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContents(string)
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContents(String)
+  nameWithType: BaseFilesystemDriver.RenderContents(string)
+  nameWithType.vb: BaseFilesystemDriver.RenderContents(String)
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContents(System.String,System.Boolean,System.Boolean)
+  name: RenderContents(string, bool, bool)
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_RenderContents_System_String_System_Boolean_System_Boolean_
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContents(System.String,System.Boolean,System.Boolean)
+  name.vb: RenderContents(String, Boolean, Boolean)
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContents(string, bool, bool)
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContents(String, Boolean, Boolean)
+  nameWithType: BaseFilesystemDriver.RenderContents(string, bool, bool)
+  nameWithType.vb: BaseFilesystemDriver.RenderContents(String, Boolean, Boolean)
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContents*
+  name: RenderContents
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_RenderContents_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContents
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContents
+  nameWithType: BaseFilesystemDriver.RenderContents
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex(System.Byte,System.Boolean,System.Int64,System.Int64,System.Byte[])
+  name: RenderContentsInHex(byte, bool, long, long, byte[])
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_RenderContentsInHex_System_Byte_System_Boolean_System_Int64_System_Int64_System_Byte___
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex(System.Byte,System.Boolean,System.Int64,System.Int64,System.Byte[])
+  name.vb: RenderContentsInHex(Byte, Boolean, Long, Long, Byte())
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex(byte, bool, long, long, byte[])
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex(Byte, Boolean, Long, Long, Byte())
+  nameWithType: BaseFilesystemDriver.RenderContentsInHex(byte, bool, long, long, byte[])
+  nameWithType.vb: BaseFilesystemDriver.RenderContentsInHex(Byte, Boolean, Long, Long, Byte())
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex(System.Int64,System.Int64,System.Byte[])
+  name: RenderContentsInHex(long, long, byte[])
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_RenderContentsInHex_System_Int64_System_Int64_System_Byte___
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex(System.Int64,System.Int64,System.Byte[])
+  name.vb: RenderContentsInHex(Long, Long, Byte())
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex(long, long, byte[])
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex(Long, Long, Byte())
+  nameWithType: BaseFilesystemDriver.RenderContentsInHex(long, long, byte[])
+  nameWithType.vb: BaseFilesystemDriver.RenderContentsInHex(Long, Long, Byte())
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex*
+  name: RenderContentsInHex
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_RenderContentsInHex_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex
+  nameWithType: BaseFilesystemDriver.RenderContentsInHex
 - uid: KS.Drivers.Filesystem.BaseFilesystemDriver.Rooted(System.String)
   name: Rooted(string)
   href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_Rooted_System_String_
@@ -15264,6 +15314,56 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.IFilesystemDriver.RemoveFromPathLookup
   nameWithType: IFilesystemDriver.RemoveFromPathLookup
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.RenderContents(System.String)
+  name: RenderContents(string)
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_RenderContents_System_String_
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.RenderContents(System.String)
+  name.vb: RenderContents(String)
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.RenderContents(string)
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.RenderContents(String)
+  nameWithType: IFilesystemDriver.RenderContents(string)
+  nameWithType.vb: IFilesystemDriver.RenderContents(String)
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.RenderContents(System.String,System.Boolean,System.Boolean)
+  name: RenderContents(string, bool, bool)
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_RenderContents_System_String_System_Boolean_System_Boolean_
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.RenderContents(System.String,System.Boolean,System.Boolean)
+  name.vb: RenderContents(String, Boolean, Boolean)
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.RenderContents(string, bool, bool)
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.RenderContents(String, Boolean, Boolean)
+  nameWithType: IFilesystemDriver.RenderContents(string, bool, bool)
+  nameWithType.vb: IFilesystemDriver.RenderContents(String, Boolean, Boolean)
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.RenderContents*
+  name: RenderContents
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_RenderContents_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.RenderContents
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.RenderContents
+  nameWithType: IFilesystemDriver.RenderContents
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex(System.Byte,System.Boolean,System.Int64,System.Int64,System.Byte[])
+  name: RenderContentsInHex(byte, bool, long, long, byte[])
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_RenderContentsInHex_System_Byte_System_Boolean_System_Int64_System_Int64_System_Byte___
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex(System.Byte,System.Boolean,System.Int64,System.Int64,System.Byte[])
+  name.vb: RenderContentsInHex(Byte, Boolean, Long, Long, Byte())
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex(byte, bool, long, long, byte[])
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex(Byte, Boolean, Long, Long, Byte())
+  nameWithType: IFilesystemDriver.RenderContentsInHex(byte, bool, long, long, byte[])
+  nameWithType.vb: IFilesystemDriver.RenderContentsInHex(Byte, Boolean, Long, Long, Byte())
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex(System.Int64,System.Int64,System.Byte[])
+  name: RenderContentsInHex(long, long, byte[])
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_RenderContentsInHex_System_Int64_System_Int64_System_Byte___
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex(System.Int64,System.Int64,System.Byte[])
+  name.vb: RenderContentsInHex(Long, Long, Byte())
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex(long, long, byte[])
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex(Long, Long, Byte())
+  nameWithType: IFilesystemDriver.RenderContentsInHex(long, long, byte[])
+  nameWithType.vb: IFilesystemDriver.RenderContentsInHex(Long, Long, Byte())
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex*
+  name: RenderContentsInHex
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_RenderContentsInHex_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex
+  nameWithType: IFilesystemDriver.RenderContentsInHex
 - uid: KS.Drivers.Filesystem.IFilesystemDriver.Rooted(System.String)
   name: Rooted(string)
   href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_Rooted_System_String_
@@ -19926,6 +20026,15 @@ references:
   commentId: T:KS.Files.Operations.Printing.FileContentPrinter
   fullName: KS.Files.Operations.Printing.FileContentPrinter
   nameWithType: FileContentPrinter
+- uid: KS.Files.Operations.Printing.FileContentPrinter.DisplayInHex(System.Byte,System.Boolean,System.Int64,System.Int64,System.Byte[])
+  name: DisplayInHex(byte, bool, long, long, byte[])
+  href: api/KS.Files.Operations.Printing.FileContentPrinter.html#KS_Files_Operations_Printing_FileContentPrinter_DisplayInHex_System_Byte_System_Boolean_System_Int64_System_Int64_System_Byte___
+  commentId: M:KS.Files.Operations.Printing.FileContentPrinter.DisplayInHex(System.Byte,System.Boolean,System.Int64,System.Int64,System.Byte[])
+  name.vb: DisplayInHex(Byte, Boolean, Long, Long, Byte())
+  fullName: KS.Files.Operations.Printing.FileContentPrinter.DisplayInHex(byte, bool, long, long, byte[])
+  fullName.vb: KS.Files.Operations.Printing.FileContentPrinter.DisplayInHex(Byte, Boolean, Long, Long, Byte())
+  nameWithType: FileContentPrinter.DisplayInHex(byte, bool, long, long, byte[])
+  nameWithType.vb: FileContentPrinter.DisplayInHex(Byte, Boolean, Long, Long, Byte())
 - uid: KS.Files.Operations.Printing.FileContentPrinter.DisplayInHex(System.Int64,System.Int64,System.Byte[])
   name: DisplayInHex(long, long, byte[])
   href: api/KS.Files.Operations.Printing.FileContentPrinter.html#KS_Files_Operations_Printing_FileContentPrinter_DisplayInHex_System_Int64_System_Int64_System_Byte___
@@ -19967,6 +20076,56 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Printing.FileContentPrinter.PrintContents
   nameWithType: FileContentPrinter.PrintContents
+- uid: KS.Files.Operations.Printing.FileContentPrinter.RenderContents(System.String)
+  name: RenderContents(string)
+  href: api/KS.Files.Operations.Printing.FileContentPrinter.html#KS_Files_Operations_Printing_FileContentPrinter_RenderContents_System_String_
+  commentId: M:KS.Files.Operations.Printing.FileContentPrinter.RenderContents(System.String)
+  name.vb: RenderContents(String)
+  fullName: KS.Files.Operations.Printing.FileContentPrinter.RenderContents(string)
+  fullName.vb: KS.Files.Operations.Printing.FileContentPrinter.RenderContents(String)
+  nameWithType: FileContentPrinter.RenderContents(string)
+  nameWithType.vb: FileContentPrinter.RenderContents(String)
+- uid: KS.Files.Operations.Printing.FileContentPrinter.RenderContents(System.String,System.Boolean,System.Boolean)
+  name: RenderContents(string, bool, bool)
+  href: api/KS.Files.Operations.Printing.FileContentPrinter.html#KS_Files_Operations_Printing_FileContentPrinter_RenderContents_System_String_System_Boolean_System_Boolean_
+  commentId: M:KS.Files.Operations.Printing.FileContentPrinter.RenderContents(System.String,System.Boolean,System.Boolean)
+  name.vb: RenderContents(String, Boolean, Boolean)
+  fullName: KS.Files.Operations.Printing.FileContentPrinter.RenderContents(string, bool, bool)
+  fullName.vb: KS.Files.Operations.Printing.FileContentPrinter.RenderContents(String, Boolean, Boolean)
+  nameWithType: FileContentPrinter.RenderContents(string, bool, bool)
+  nameWithType.vb: FileContentPrinter.RenderContents(String, Boolean, Boolean)
+- uid: KS.Files.Operations.Printing.FileContentPrinter.RenderContents*
+  name: RenderContents
+  href: api/KS.Files.Operations.Printing.FileContentPrinter.html#KS_Files_Operations_Printing_FileContentPrinter_RenderContents_
+  commentId: Overload:KS.Files.Operations.Printing.FileContentPrinter.RenderContents
+  isSpec: "True"
+  fullName: KS.Files.Operations.Printing.FileContentPrinter.RenderContents
+  nameWithType: FileContentPrinter.RenderContents
+- uid: KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex(System.Byte,System.Boolean,System.Int64,System.Int64,System.Byte[])
+  name: RenderContentsInHex(byte, bool, long, long, byte[])
+  href: api/KS.Files.Operations.Printing.FileContentPrinter.html#KS_Files_Operations_Printing_FileContentPrinter_RenderContentsInHex_System_Byte_System_Boolean_System_Int64_System_Int64_System_Byte___
+  commentId: M:KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex(System.Byte,System.Boolean,System.Int64,System.Int64,System.Byte[])
+  name.vb: RenderContentsInHex(Byte, Boolean, Long, Long, Byte())
+  fullName: KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex(byte, bool, long, long, byte[])
+  fullName.vb: KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex(Byte, Boolean, Long, Long, Byte())
+  nameWithType: FileContentPrinter.RenderContentsInHex(byte, bool, long, long, byte[])
+  nameWithType.vb: FileContentPrinter.RenderContentsInHex(Byte, Boolean, Long, Long, Byte())
+- uid: KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex(System.Int64,System.Int64,System.Byte[])
+  name: RenderContentsInHex(long, long, byte[])
+  href: api/KS.Files.Operations.Printing.FileContentPrinter.html#KS_Files_Operations_Printing_FileContentPrinter_RenderContentsInHex_System_Int64_System_Int64_System_Byte___
+  commentId: M:KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex(System.Int64,System.Int64,System.Byte[])
+  name.vb: RenderContentsInHex(Long, Long, Byte())
+  fullName: KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex(long, long, byte[])
+  fullName.vb: KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex(Long, Long, Byte())
+  nameWithType: FileContentPrinter.RenderContentsInHex(long, long, byte[])
+  nameWithType.vb: FileContentPrinter.RenderContentsInHex(Long, Long, Byte())
+- uid: KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex*
+  name: RenderContentsInHex
+  href: api/KS.Files.Operations.Printing.FileContentPrinter.html#KS_Files_Operations_Printing_FileContentPrinter_RenderContentsInHex_
+  commentId: Overload:KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex
+  isSpec: "True"
+  fullName: KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex
+  nameWithType: FileContentPrinter.RenderContentsInHex
 - uid: KS.Files.Operations.Printing.FileInfoPrinter
   name: FileInfoPrinter
   href: api/KS.Files.Operations.Printing.FileInfoPrinter.html
