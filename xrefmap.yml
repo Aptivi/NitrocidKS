@@ -4471,15 +4471,6 @@ references:
   fullName.vb: KS.ConsoleBase.Themes.ThemeInfo.New(System.IO.StreamReader)
   nameWithType: ThemeInfo.ThemeInfo(StreamReader)
   nameWithType.vb: ThemeInfo.New(StreamReader)
-- uid: KS.ConsoleBase.Themes.ThemeInfo.#ctor(System.String)
-  name: ThemeInfo(string)
-  href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo__ctor_System_String_
-  commentId: M:KS.ConsoleBase.Themes.ThemeInfo.#ctor(System.String)
-  name.vb: New(String)
-  fullName: KS.ConsoleBase.Themes.ThemeInfo.ThemeInfo(string)
-  fullName.vb: KS.ConsoleBase.Themes.ThemeInfo.New(String)
-  nameWithType: ThemeInfo.ThemeInfo(string)
-  nameWithType.vb: ThemeInfo.New(String)
 - uid: KS.ConsoleBase.Themes.ThemeInfo.#ctor*
   name: ThemeInfo
   href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo__ctor_
