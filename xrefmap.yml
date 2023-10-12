@@ -5263,6 +5263,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WritePlain(String, Boolean, ParamArray Object())
   nameWithType: TextWriterColor.WritePlain(string, bool, params object[])
   nameWithType.vb: TextWriterColor.WritePlain(String, Boolean, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WritePlain(System.String,System.Object[])
+  name: WritePlain(string, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterColor_WritePlain_System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WritePlain(System.String,System.Object[])
+  name.vb: WritePlain(String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WritePlain(string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WritePlain(String, ParamArray Object())
+  nameWithType: TextWriterColor.WritePlain(string, params object[])
+  nameWithType.vb: TextWriterColor.WritePlain(String, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WritePlain*
   name: WritePlain
   href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterColor_WritePlain_
