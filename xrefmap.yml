@@ -251,6 +251,43 @@ references:
   commentId: N:KS.ConsoleBase.Colors
   fullName: KS.ConsoleBase.Colors
   nameWithType: KS.ConsoleBase.Colors
+- uid: KS.ConsoleBase.Colors.ColorSelector
+  name: ColorSelector
+  href: api/KS.ConsoleBase.Colors.ColorSelector.html
+  commentId: T:KS.ConsoleBase.Colors.ColorSelector
+  fullName: KS.ConsoleBase.Colors.ColorSelector
+  nameWithType: ColorSelector
+- uid: KS.ConsoleBase.Colors.ColorSelector.OpenColorSelector
+  name: OpenColorSelector()
+  href: api/KS.ConsoleBase.Colors.ColorSelector.html#KS_ConsoleBase_Colors_ColorSelector_OpenColorSelector
+  commentId: M:KS.ConsoleBase.Colors.ColorSelector.OpenColorSelector
+  fullName: KS.ConsoleBase.Colors.ColorSelector.OpenColorSelector()
+  nameWithType: ColorSelector.OpenColorSelector()
+- uid: KS.ConsoleBase.Colors.ColorSelector.OpenColorSelector(KS.ConsoleBase.Colors.KernelColorType)
+  name: OpenColorSelector(KernelColorType)
+  href: api/KS.ConsoleBase.Colors.ColorSelector.html#KS_ConsoleBase_Colors_ColorSelector_OpenColorSelector_KS_ConsoleBase_Colors_KernelColorType_
+  commentId: M:KS.ConsoleBase.Colors.ColorSelector.OpenColorSelector(KS.ConsoleBase.Colors.KernelColorType)
+  fullName: KS.ConsoleBase.Colors.ColorSelector.OpenColorSelector(KS.ConsoleBase.Colors.KernelColorType)
+  nameWithType: ColorSelector.OpenColorSelector(KernelColorType)
+- uid: KS.ConsoleBase.Colors.ColorSelector.OpenColorSelector(Terminaux.Colors.Color)
+  name: OpenColorSelector(Color)
+  href: api/KS.ConsoleBase.Colors.ColorSelector.html#KS_ConsoleBase_Colors_ColorSelector_OpenColorSelector_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Colors.ColorSelector.OpenColorSelector(Terminaux.Colors.Color)
+  fullName: KS.ConsoleBase.Colors.ColorSelector.OpenColorSelector(Terminaux.Colors.Color)
+  nameWithType: ColorSelector.OpenColorSelector(Color)
+- uid: KS.ConsoleBase.Colors.ColorSelector.OpenColorSelector(Terminaux.Colors.ConsoleColors)
+  name: OpenColorSelector(ConsoleColors)
+  href: api/KS.ConsoleBase.Colors.ColorSelector.html#KS_ConsoleBase_Colors_ColorSelector_OpenColorSelector_Terminaux_Colors_ConsoleColors_
+  commentId: M:KS.ConsoleBase.Colors.ColorSelector.OpenColorSelector(Terminaux.Colors.ConsoleColors)
+  fullName: KS.ConsoleBase.Colors.ColorSelector.OpenColorSelector(Terminaux.Colors.ConsoleColors)
+  nameWithType: ColorSelector.OpenColorSelector(ConsoleColors)
+- uid: KS.ConsoleBase.Colors.ColorSelector.OpenColorSelector*
+  name: OpenColorSelector
+  href: api/KS.ConsoleBase.Colors.ColorSelector.html#KS_ConsoleBase_Colors_ColorSelector_OpenColorSelector_
+  commentId: Overload:KS.ConsoleBase.Colors.ColorSelector.OpenColorSelector
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Colors.ColorSelector.OpenColorSelector
+  nameWithType: ColorSelector.OpenColorSelector
 - uid: KS.ConsoleBase.Colors.KernelColorConversionTools
   name: KernelColorConversionTools
   href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html
@@ -25121,6 +25158,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.UploadRetries
   nameWithType: KernelMainConfig.UploadRetries
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.UseNewColorSelector
+  name: UseNewColorSelector
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_UseNewColorSelector
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.UseNewColorSelector
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.UseNewColorSelector
+  nameWithType: KernelMainConfig.UseNewColorSelector
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.UseNewColorSelector*
+  name: UseNewColorSelector
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_UseNewColorSelector_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.UseNewColorSelector
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.UseNewColorSelector
+  nameWithType: KernelMainConfig.UseNewColorSelector
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.UserDollarColor
   name: UserDollarColor
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_UserDollarColor
@@ -25887,6 +25937,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.KernelFlags.SuppressUnauthorizedMessages
   nameWithType: KernelFlags.SuppressUnauthorizedMessages
+- uid: KS.Kernel.Configuration.KernelFlags.UseNewColorSelector
+  name: UseNewColorSelector
+  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_UseNewColorSelector
+  commentId: P:KS.Kernel.Configuration.KernelFlags.UseNewColorSelector
+  fullName: KS.Kernel.Configuration.KernelFlags.UseNewColorSelector
+  nameWithType: KernelFlags.UseNewColorSelector
+- uid: KS.Kernel.Configuration.KernelFlags.UseNewColorSelector*
+  name: UseNewColorSelector
+  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_UseNewColorSelector_
+  commentId: Overload:KS.Kernel.Configuration.KernelFlags.UseNewColorSelector
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.KernelFlags.UseNewColorSelector
+  nameWithType: KernelFlags.UseNewColorSelector
 - uid: KS.Kernel.Configuration.KernelFlags.VerboseHardwareProbe
   name: VerboseHardwareProbe
   href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_VerboseHardwareProbe
