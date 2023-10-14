@@ -39526,15 +39526,15 @@ references:
   commentId: T:KS.Shell.ShellBase.Arguments.CommandArgumentPart
   fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart
   nameWithType: CommandArgumentPart
-- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[]})
-  name: CommandArgumentPart(bool, string, Func<string[]>)
-  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_System_Boolean_System_String_System_Func_System_String____
-  commentId: M:KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[]})
-  name.vb: New(Boolean, String, Func(Of String()))
-  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.CommandArgumentPart(bool, string, System.Func<string[]>)
-  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentPart.New(Boolean, String, System.Func(Of String()))
-  nameWithType: CommandArgumentPart.CommandArgumentPart(bool, string, Func<string[]>)
-  nameWithType.vb: CommandArgumentPart.New(Boolean, String, Func(Of String()))
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[]},System.Boolean)
+  name: CommandArgumentPart(bool, string, Func<string[]>, bool)
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_System_Boolean_System_String_System_Func_System_String____System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[]},System.Boolean)
+  name.vb: New(Boolean, String, Func(Of String()), Boolean)
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.CommandArgumentPart(bool, string, System.Func<string[]>, bool)
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentPart.New(Boolean, String, System.Func(Of String()), Boolean)
+  nameWithType: CommandArgumentPart.CommandArgumentPart(bool, string, Func<string[]>, bool)
+  nameWithType.vb: CommandArgumentPart.New(Boolean, String, Func(Of String()), Boolean)
 - uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor*
   name: CommandArgumentPart
   href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_
@@ -39584,6 +39584,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.AutoCompleter
   nameWithType: CommandArgumentPart.AutoCompleter
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.IsNumeric
+  name: IsNumeric
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart_IsNumeric
+  commentId: P:KS.Shell.ShellBase.Arguments.CommandArgumentPart.IsNumeric
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.IsNumeric
+  nameWithType: CommandArgumentPart.IsNumeric
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.IsNumeric*
+  name: IsNumeric
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart_IsNumeric_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentPart.IsNumeric
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.IsNumeric
+  nameWithType: CommandArgumentPart.IsNumeric
 - uid: KS.Shell.ShellBase.Arguments.CommandAutoCompletionList
   name: CommandAutoCompletionList
   href: api/KS.Shell.ShellBase.Arguments.CommandAutoCompletionList.html
@@ -39677,6 +39690,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.Command
   nameWithType: ProvidedArgumentsInfo.Command
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.NumberProvided
+  name: NumberProvided
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_NumberProvided
+  commentId: P:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.NumberProvided
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.NumberProvided
+  nameWithType: ProvidedArgumentsInfo.NumberProvided
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.NumberProvided*
+  name: NumberProvided
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_NumberProvided_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.NumberProvided
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.NumberProvided
+  nameWithType: ProvidedArgumentsInfo.NumberProvided
 - uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredArgumentsProvided
   name: RequiredArgumentsProvided
   href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_RequiredArgumentsProvided
