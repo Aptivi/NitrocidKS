@@ -133,19 +133,19 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Arguments_ArgumentParse_ParseArguments_System_Collections_Generic_List_System_String__.md&amp;value=---%0Auid%3A%20KS.Arguments.ArgumentParse.ParseArguments(System.Collections.Generic.List%7BSystem.String%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Arguments_ArgumentParse_IsArgumentPassed_System_String___System_String_.md&amp;value=---%0Auid%3A%20KS.Arguments.ArgumentParse.IsArgumentPassed(System.String%5B%5D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Arguments/ArgumentParse.cs/#L79">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Arguments/ArgumentParse.cs/#L138">View Source</a>
   </span>
-  <a id="KS_Arguments_ArgumentParse_ParseArguments_" data-uid="KS.Arguments.ArgumentParse.ParseArguments*"></a>
-  <h4 id="KS_Arguments_ArgumentParse_ParseArguments_System_Collections_Generic_List_System_String__" data-uid="KS.Arguments.ArgumentParse.ParseArguments(System.Collections.Generic.List{System.String})">ParseArguments(List&lt;string&gt;)</h4>
-  <div class="markdown level1 summary"><p>Parses specified arguments</p>
+  <a id="KS_Arguments_ArgumentParse_IsArgumentPassed_" data-uid="KS.Arguments.ArgumentParse.IsArgumentPassed*"></a>
+  <h4 id="KS_Arguments_ArgumentParse_IsArgumentPassed_System_String___System_String_" data-uid="KS.Arguments.ArgumentParse.IsArgumentPassed(System.String[],System.String)">IsArgumentPassed(string[], string)</h4>
+  <div class="markdown level1 summary"><p>Checks to see if the specific argument name is passed</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ParseArguments(List&lt;string&gt; ArgumentsInput)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsArgumentPassed(string[] ArgumentsInput, string argumentName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -158,7 +158,63 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">ArgumentsInput</span></td>
+        <td><p>List of passed arguments</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">argumentName</span></td>
+        <td><p>Argument name to check</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if found in the arguments list and passed. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Arguments_ArgumentParse_ParseArguments_System_String___.md&amp;value=---%0Auid%3A%20KS.Arguments.ArgumentParse.ParseArguments(System.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Arguments/ArgumentParse.cs/#L77">View Source</a>
+  </span>
+  <a id="KS_Arguments_ArgumentParse_ParseArguments_" data-uid="KS.Arguments.ArgumentParse.ParseArguments*"></a>
+  <h4 id="KS_Arguments_ArgumentParse_ParseArguments_System_String___" data-uid="KS.Arguments.ArgumentParse.ParseArguments(System.String[])">ParseArguments(string[])</h4>
+  <div class="markdown level1 summary"><p>Parses specified arguments</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ParseArguments(string[] ArgumentsInput)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">ArgumentsInput</span></td>
         <td><p>Input Arguments</p>
 </td>

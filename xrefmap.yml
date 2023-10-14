@@ -185,15 +185,31 @@ references:
   commentId: F:KS.Arguments.ArgumentParse.AvailableCMDLineArgs
   fullName: KS.Arguments.ArgumentParse.AvailableCMDLineArgs
   nameWithType: ArgumentParse.AvailableCMDLineArgs
-- uid: KS.Arguments.ArgumentParse.ParseArguments(System.Collections.Generic.List{System.String})
-  name: ParseArguments(List<string>)
-  href: api/KS.Arguments.ArgumentParse.html#KS_Arguments_ArgumentParse_ParseArguments_System_Collections_Generic_List_System_String__
-  commentId: M:KS.Arguments.ArgumentParse.ParseArguments(System.Collections.Generic.List{System.String})
-  name.vb: ParseArguments(List(Of String))
-  fullName: KS.Arguments.ArgumentParse.ParseArguments(System.Collections.Generic.List<string>)
-  fullName.vb: KS.Arguments.ArgumentParse.ParseArguments(System.Collections.Generic.List(Of String))
-  nameWithType: ArgumentParse.ParseArguments(List<string>)
-  nameWithType.vb: ArgumentParse.ParseArguments(List(Of String))
+- uid: KS.Arguments.ArgumentParse.IsArgumentPassed(System.String[],System.String)
+  name: IsArgumentPassed(string[], string)
+  href: api/KS.Arguments.ArgumentParse.html#KS_Arguments_ArgumentParse_IsArgumentPassed_System_String___System_String_
+  commentId: M:KS.Arguments.ArgumentParse.IsArgumentPassed(System.String[],System.String)
+  name.vb: IsArgumentPassed(String(), String)
+  fullName: KS.Arguments.ArgumentParse.IsArgumentPassed(string[], string)
+  fullName.vb: KS.Arguments.ArgumentParse.IsArgumentPassed(String(), String)
+  nameWithType: ArgumentParse.IsArgumentPassed(string[], string)
+  nameWithType.vb: ArgumentParse.IsArgumentPassed(String(), String)
+- uid: KS.Arguments.ArgumentParse.IsArgumentPassed*
+  name: IsArgumentPassed
+  href: api/KS.Arguments.ArgumentParse.html#KS_Arguments_ArgumentParse_IsArgumentPassed_
+  commentId: Overload:KS.Arguments.ArgumentParse.IsArgumentPassed
+  isSpec: "True"
+  fullName: KS.Arguments.ArgumentParse.IsArgumentPassed
+  nameWithType: ArgumentParse.IsArgumentPassed
+- uid: KS.Arguments.ArgumentParse.ParseArguments(System.String[])
+  name: ParseArguments(string[])
+  href: api/KS.Arguments.ArgumentParse.html#KS_Arguments_ArgumentParse_ParseArguments_System_String___
+  commentId: M:KS.Arguments.ArgumentParse.ParseArguments(System.String[])
+  name.vb: ParseArguments(String())
+  fullName: KS.Arguments.ArgumentParse.ParseArguments(string[])
+  fullName.vb: KS.Arguments.ArgumentParse.ParseArguments(String())
+  nameWithType: ArgumentParse.ParseArguments(string[])
+  nameWithType.vb: ArgumentParse.ParseArguments(String())
 - uid: KS.Arguments.ArgumentParse.ParseArguments*
   name: ParseArguments
   href: api/KS.Arguments.ArgumentParse.html#KS_Arguments_ArgumentParse_ParseArguments_
