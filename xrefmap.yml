@@ -4534,6 +4534,19 @@ references:
   fullName.vb: KS.ConsoleBase.Themes.ThemeInfo.New
   nameWithType: ThemeInfo.ThemeInfo
   nameWithType.vb: ThemeInfo.New
+- uid: KS.ConsoleBase.Themes.ThemeInfo.Calendar
+  name: Calendar
+  href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo_Calendar
+  commentId: P:KS.ConsoleBase.Themes.ThemeInfo.Calendar
+  fullName: KS.ConsoleBase.Themes.ThemeInfo.Calendar
+  nameWithType: ThemeInfo.Calendar
+- uid: KS.ConsoleBase.Themes.ThemeInfo.Calendar*
+  name: Calendar
+  href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo_Calendar_
+  commentId: Overload:KS.ConsoleBase.Themes.ThemeInfo.Calendar
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Themes.ThemeInfo.Calendar
+  nameWithType: ThemeInfo.Calendar
 - uid: KS.ConsoleBase.Themes.ThemeInfo.Description
   name: Description
   href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo_Description
