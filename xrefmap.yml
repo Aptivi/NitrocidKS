@@ -30104,6 +30104,347 @@ references:
   commentId: N:KS.Kernel.Time
   fullName: KS.Kernel.Time
   nameWithType: KS.Kernel.Time
+- uid: KS.Kernel.Time.Calendars
+  name: KS.Kernel.Time.Calendars
+  href: api/KS.Kernel.Time.Calendars.html
+  commentId: N:KS.Kernel.Time.Calendars
+  fullName: KS.Kernel.Time.Calendars
+  nameWithType: KS.Kernel.Time.Calendars
+- uid: KS.Kernel.Time.Calendars.BaseCalendar
+  name: BaseCalendar
+  href: api/KS.Kernel.Time.Calendars.BaseCalendar.html
+  commentId: T:KS.Kernel.Time.Calendars.BaseCalendar
+  fullName: KS.Kernel.Time.Calendars.BaseCalendar
+  nameWithType: BaseCalendar
+- uid: KS.Kernel.Time.Calendars.BaseCalendar.Culture
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.BaseCalendar.html#KS_Kernel_Time_Calendars_BaseCalendar_Culture
+  commentId: P:KS.Kernel.Time.Calendars.BaseCalendar.Culture
+  fullName: KS.Kernel.Time.Calendars.BaseCalendar.Culture
+  nameWithType: BaseCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.BaseCalendar.Culture*
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.BaseCalendar.html#KS_Kernel_Time_Calendars_BaseCalendar_Culture_
+  commentId: Overload:KS.Kernel.Time.Calendars.BaseCalendar.Culture
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.BaseCalendar.Culture
+  nameWithType: BaseCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.BaseCalendar.Name
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.BaseCalendar.html#KS_Kernel_Time_Calendars_BaseCalendar_Name
+  commentId: P:KS.Kernel.Time.Calendars.BaseCalendar.Name
+  fullName: KS.Kernel.Time.Calendars.BaseCalendar.Name
+  nameWithType: BaseCalendar.Name
+- uid: KS.Kernel.Time.Calendars.BaseCalendar.Name*
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.BaseCalendar.html#KS_Kernel_Time_Calendars_BaseCalendar_Name_
+  commentId: Overload:KS.Kernel.Time.Calendars.BaseCalendar.Name
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.BaseCalendar.Name
+  nameWithType: BaseCalendar.Name
+- uid: KS.Kernel.Time.Calendars.CalendarTools
+  name: CalendarTools
+  href: api/KS.Kernel.Time.Calendars.CalendarTools.html
+  commentId: T:KS.Kernel.Time.Calendars.CalendarTools
+  fullName: KS.Kernel.Time.Calendars.CalendarTools
+  nameWithType: CalendarTools
+- uid: KS.Kernel.Time.Calendars.CalendarTools.GetCalendar(KS.Kernel.Time.Calendars.CalendarTypes)
+  name: GetCalendar(CalendarTypes)
+  href: api/KS.Kernel.Time.Calendars.CalendarTools.html#KS_Kernel_Time_Calendars_CalendarTools_GetCalendar_KS_Kernel_Time_Calendars_CalendarTypes_
+  commentId: M:KS.Kernel.Time.Calendars.CalendarTools.GetCalendar(KS.Kernel.Time.Calendars.CalendarTypes)
+  fullName: KS.Kernel.Time.Calendars.CalendarTools.GetCalendar(KS.Kernel.Time.Calendars.CalendarTypes)
+  nameWithType: CalendarTools.GetCalendar(CalendarTypes)
+- uid: KS.Kernel.Time.Calendars.CalendarTools.GetCalendar*
+  name: GetCalendar
+  href: api/KS.Kernel.Time.Calendars.CalendarTools.html#KS_Kernel_Time_Calendars_CalendarTools_GetCalendar_
+  commentId: Overload:KS.Kernel.Time.Calendars.CalendarTools.GetCalendar
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.CalendarTools.GetCalendar
+  nameWithType: CalendarTools.GetCalendar
+- uid: KS.Kernel.Time.Calendars.CalendarTypes
+  name: CalendarTypes
+  href: api/KS.Kernel.Time.Calendars.CalendarTypes.html
+  commentId: T:KS.Kernel.Time.Calendars.CalendarTypes
+  fullName: KS.Kernel.Time.Calendars.CalendarTypes
+  nameWithType: CalendarTypes
+- uid: KS.Kernel.Time.Calendars.CalendarTypes.Chinese
+  name: Chinese
+  href: api/KS.Kernel.Time.Calendars.CalendarTypes.html#KS_Kernel_Time_Calendars_CalendarTypes_Chinese
+  commentId: F:KS.Kernel.Time.Calendars.CalendarTypes.Chinese
+  fullName: KS.Kernel.Time.Calendars.CalendarTypes.Chinese
+  nameWithType: CalendarTypes.Chinese
+- uid: KS.Kernel.Time.Calendars.CalendarTypes.Gregorian
+  name: Gregorian
+  href: api/KS.Kernel.Time.Calendars.CalendarTypes.html#KS_Kernel_Time_Calendars_CalendarTypes_Gregorian
+  commentId: F:KS.Kernel.Time.Calendars.CalendarTypes.Gregorian
+  fullName: KS.Kernel.Time.Calendars.CalendarTypes.Gregorian
+  nameWithType: CalendarTypes.Gregorian
+- uid: KS.Kernel.Time.Calendars.CalendarTypes.Hijri
+  name: Hijri
+  href: api/KS.Kernel.Time.Calendars.CalendarTypes.html#KS_Kernel_Time_Calendars_CalendarTypes_Hijri
+  commentId: F:KS.Kernel.Time.Calendars.CalendarTypes.Hijri
+  fullName: KS.Kernel.Time.Calendars.CalendarTypes.Hijri
+  nameWithType: CalendarTypes.Hijri
+- uid: KS.Kernel.Time.Calendars.CalendarTypes.Japanese
+  name: Japanese
+  href: api/KS.Kernel.Time.Calendars.CalendarTypes.html#KS_Kernel_Time_Calendars_CalendarTypes_Japanese
+  commentId: F:KS.Kernel.Time.Calendars.CalendarTypes.Japanese
+  fullName: KS.Kernel.Time.Calendars.CalendarTypes.Japanese
+  nameWithType: CalendarTypes.Japanese
+- uid: KS.Kernel.Time.Calendars.CalendarTypes.Persian
+  name: Persian
+  href: api/KS.Kernel.Time.Calendars.CalendarTypes.html#KS_Kernel_Time_Calendars_CalendarTypes_Persian
+  commentId: F:KS.Kernel.Time.Calendars.CalendarTypes.Persian
+  fullName: KS.Kernel.Time.Calendars.CalendarTypes.Persian
+  nameWithType: CalendarTypes.Persian
+- uid: KS.Kernel.Time.Calendars.CalendarTypes.SaudiHijri
+  name: SaudiHijri
+  href: api/KS.Kernel.Time.Calendars.CalendarTypes.html#KS_Kernel_Time_Calendars_CalendarTypes_SaudiHijri
+  commentId: F:KS.Kernel.Time.Calendars.CalendarTypes.SaudiHijri
+  fullName: KS.Kernel.Time.Calendars.CalendarTypes.SaudiHijri
+  nameWithType: CalendarTypes.SaudiHijri
+- uid: KS.Kernel.Time.Calendars.CalendarTypes.ThaiBuddhist
+  name: ThaiBuddhist
+  href: api/KS.Kernel.Time.Calendars.CalendarTypes.html#KS_Kernel_Time_Calendars_CalendarTypes_ThaiBuddhist
+  commentId: F:KS.Kernel.Time.Calendars.CalendarTypes.ThaiBuddhist
+  fullName: KS.Kernel.Time.Calendars.CalendarTypes.ThaiBuddhist
+  nameWithType: CalendarTypes.ThaiBuddhist
+- uid: KS.Kernel.Time.Calendars.ICalendar
+  name: ICalendar
+  href: api/KS.Kernel.Time.Calendars.ICalendar.html
+  commentId: T:KS.Kernel.Time.Calendars.ICalendar
+  fullName: KS.Kernel.Time.Calendars.ICalendar
+  nameWithType: ICalendar
+- uid: KS.Kernel.Time.Calendars.ICalendar.Culture
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.ICalendar.html#KS_Kernel_Time_Calendars_ICalendar_Culture
+  commentId: P:KS.Kernel.Time.Calendars.ICalendar.Culture
+  fullName: KS.Kernel.Time.Calendars.ICalendar.Culture
+  nameWithType: ICalendar.Culture
+- uid: KS.Kernel.Time.Calendars.ICalendar.Culture*
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.ICalendar.html#KS_Kernel_Time_Calendars_ICalendar_Culture_
+  commentId: Overload:KS.Kernel.Time.Calendars.ICalendar.Culture
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.ICalendar.Culture
+  nameWithType: ICalendar.Culture
+- uid: KS.Kernel.Time.Calendars.ICalendar.Name
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.ICalendar.html#KS_Kernel_Time_Calendars_ICalendar_Name
+  commentId: P:KS.Kernel.Time.Calendars.ICalendar.Name
+  fullName: KS.Kernel.Time.Calendars.ICalendar.Name
+  nameWithType: ICalendar.Name
+- uid: KS.Kernel.Time.Calendars.ICalendar.Name*
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.ICalendar.html#KS_Kernel_Time_Calendars_ICalendar_Name_
+  commentId: Overload:KS.Kernel.Time.Calendars.ICalendar.Name
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.ICalendar.Name
+  nameWithType: ICalendar.Name
+- uid: KS.Kernel.Time.Calendars.Types
+  name: KS.Kernel.Time.Calendars.Types
+  href: api/KS.Kernel.Time.Calendars.Types.html
+  commentId: N:KS.Kernel.Time.Calendars.Types
+  fullName: KS.Kernel.Time.Calendars.Types
+  nameWithType: KS.Kernel.Time.Calendars.Types
+- uid: KS.Kernel.Time.Calendars.Types.ChineseCalendar
+  name: ChineseCalendar
+  href: api/KS.Kernel.Time.Calendars.Types.ChineseCalendar.html
+  commentId: T:KS.Kernel.Time.Calendars.Types.ChineseCalendar
+  fullName: KS.Kernel.Time.Calendars.Types.ChineseCalendar
+  nameWithType: ChineseCalendar
+- uid: KS.Kernel.Time.Calendars.Types.ChineseCalendar.Culture
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.Types.ChineseCalendar.html#KS_Kernel_Time_Calendars_Types_ChineseCalendar_Culture
+  commentId: P:KS.Kernel.Time.Calendars.Types.ChineseCalendar.Culture
+  fullName: KS.Kernel.Time.Calendars.Types.ChineseCalendar.Culture
+  nameWithType: ChineseCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.Types.ChineseCalendar.Culture*
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.Types.ChineseCalendar.html#KS_Kernel_Time_Calendars_Types_ChineseCalendar_Culture_
+  commentId: Overload:KS.Kernel.Time.Calendars.Types.ChineseCalendar.Culture
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.Types.ChineseCalendar.Culture
+  nameWithType: ChineseCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.Types.ChineseCalendar.Name
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.Types.ChineseCalendar.html#KS_Kernel_Time_Calendars_Types_ChineseCalendar_Name
+  commentId: P:KS.Kernel.Time.Calendars.Types.ChineseCalendar.Name
+  fullName: KS.Kernel.Time.Calendars.Types.ChineseCalendar.Name
+  nameWithType: ChineseCalendar.Name
+- uid: KS.Kernel.Time.Calendars.Types.ChineseCalendar.Name*
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.Types.ChineseCalendar.html#KS_Kernel_Time_Calendars_Types_ChineseCalendar_Name_
+  commentId: Overload:KS.Kernel.Time.Calendars.Types.ChineseCalendar.Name
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.Types.ChineseCalendar.Name
+  nameWithType: ChineseCalendar.Name
+- uid: KS.Kernel.Time.Calendars.Types.GregorianCalendar
+  name: GregorianCalendar
+  href: api/KS.Kernel.Time.Calendars.Types.GregorianCalendar.html
+  commentId: T:KS.Kernel.Time.Calendars.Types.GregorianCalendar
+  fullName: KS.Kernel.Time.Calendars.Types.GregorianCalendar
+  nameWithType: GregorianCalendar
+- uid: KS.Kernel.Time.Calendars.Types.HijriCalendar
+  name: HijriCalendar
+  href: api/KS.Kernel.Time.Calendars.Types.HijriCalendar.html
+  commentId: T:KS.Kernel.Time.Calendars.Types.HijriCalendar
+  fullName: KS.Kernel.Time.Calendars.Types.HijriCalendar
+  nameWithType: HijriCalendar
+- uid: KS.Kernel.Time.Calendars.Types.HijriCalendar.Culture
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.Types.HijriCalendar.html#KS_Kernel_Time_Calendars_Types_HijriCalendar_Culture
+  commentId: P:KS.Kernel.Time.Calendars.Types.HijriCalendar.Culture
+  fullName: KS.Kernel.Time.Calendars.Types.HijriCalendar.Culture
+  nameWithType: HijriCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.Types.HijriCalendar.Culture*
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.Types.HijriCalendar.html#KS_Kernel_Time_Calendars_Types_HijriCalendar_Culture_
+  commentId: Overload:KS.Kernel.Time.Calendars.Types.HijriCalendar.Culture
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.Types.HijriCalendar.Culture
+  nameWithType: HijriCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.Types.HijriCalendar.Name
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.Types.HijriCalendar.html#KS_Kernel_Time_Calendars_Types_HijriCalendar_Name
+  commentId: P:KS.Kernel.Time.Calendars.Types.HijriCalendar.Name
+  fullName: KS.Kernel.Time.Calendars.Types.HijriCalendar.Name
+  nameWithType: HijriCalendar.Name
+- uid: KS.Kernel.Time.Calendars.Types.HijriCalendar.Name*
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.Types.HijriCalendar.html#KS_Kernel_Time_Calendars_Types_HijriCalendar_Name_
+  commentId: Overload:KS.Kernel.Time.Calendars.Types.HijriCalendar.Name
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.Types.HijriCalendar.Name
+  nameWithType: HijriCalendar.Name
+- uid: KS.Kernel.Time.Calendars.Types.JapaneseCalendar
+  name: JapaneseCalendar
+  href: api/KS.Kernel.Time.Calendars.Types.JapaneseCalendar.html
+  commentId: T:KS.Kernel.Time.Calendars.Types.JapaneseCalendar
+  fullName: KS.Kernel.Time.Calendars.Types.JapaneseCalendar
+  nameWithType: JapaneseCalendar
+- uid: KS.Kernel.Time.Calendars.Types.JapaneseCalendar.Culture
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.Types.JapaneseCalendar.html#KS_Kernel_Time_Calendars_Types_JapaneseCalendar_Culture
+  commentId: P:KS.Kernel.Time.Calendars.Types.JapaneseCalendar.Culture
+  fullName: KS.Kernel.Time.Calendars.Types.JapaneseCalendar.Culture
+  nameWithType: JapaneseCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.Types.JapaneseCalendar.Culture*
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.Types.JapaneseCalendar.html#KS_Kernel_Time_Calendars_Types_JapaneseCalendar_Culture_
+  commentId: Overload:KS.Kernel.Time.Calendars.Types.JapaneseCalendar.Culture
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.Types.JapaneseCalendar.Culture
+  nameWithType: JapaneseCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.Types.JapaneseCalendar.Name
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.Types.JapaneseCalendar.html#KS_Kernel_Time_Calendars_Types_JapaneseCalendar_Name
+  commentId: P:KS.Kernel.Time.Calendars.Types.JapaneseCalendar.Name
+  fullName: KS.Kernel.Time.Calendars.Types.JapaneseCalendar.Name
+  nameWithType: JapaneseCalendar.Name
+- uid: KS.Kernel.Time.Calendars.Types.JapaneseCalendar.Name*
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.Types.JapaneseCalendar.html#KS_Kernel_Time_Calendars_Types_JapaneseCalendar_Name_
+  commentId: Overload:KS.Kernel.Time.Calendars.Types.JapaneseCalendar.Name
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.Types.JapaneseCalendar.Name
+  nameWithType: JapaneseCalendar.Name
+- uid: KS.Kernel.Time.Calendars.Types.PersianCalendar
+  name: PersianCalendar
+  href: api/KS.Kernel.Time.Calendars.Types.PersianCalendar.html
+  commentId: T:KS.Kernel.Time.Calendars.Types.PersianCalendar
+  fullName: KS.Kernel.Time.Calendars.Types.PersianCalendar
+  nameWithType: PersianCalendar
+- uid: KS.Kernel.Time.Calendars.Types.PersianCalendar.Culture
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.Types.PersianCalendar.html#KS_Kernel_Time_Calendars_Types_PersianCalendar_Culture
+  commentId: P:KS.Kernel.Time.Calendars.Types.PersianCalendar.Culture
+  fullName: KS.Kernel.Time.Calendars.Types.PersianCalendar.Culture
+  nameWithType: PersianCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.Types.PersianCalendar.Culture*
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.Types.PersianCalendar.html#KS_Kernel_Time_Calendars_Types_PersianCalendar_Culture_
+  commentId: Overload:KS.Kernel.Time.Calendars.Types.PersianCalendar.Culture
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.Types.PersianCalendar.Culture
+  nameWithType: PersianCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.Types.PersianCalendar.Name
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.Types.PersianCalendar.html#KS_Kernel_Time_Calendars_Types_PersianCalendar_Name
+  commentId: P:KS.Kernel.Time.Calendars.Types.PersianCalendar.Name
+  fullName: KS.Kernel.Time.Calendars.Types.PersianCalendar.Name
+  nameWithType: PersianCalendar.Name
+- uid: KS.Kernel.Time.Calendars.Types.PersianCalendar.Name*
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.Types.PersianCalendar.html#KS_Kernel_Time_Calendars_Types_PersianCalendar_Name_
+  commentId: Overload:KS.Kernel.Time.Calendars.Types.PersianCalendar.Name
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.Types.PersianCalendar.Name
+  nameWithType: PersianCalendar.Name
+- uid: KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar
+  name: SaudiHijriCalendar
+  href: api/KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.html
+  commentId: T:KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar
+  fullName: KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar
+  nameWithType: SaudiHijriCalendar
+- uid: KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.Culture
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.html#KS_Kernel_Time_Calendars_Types_SaudiHijriCalendar_Culture
+  commentId: P:KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.Culture
+  fullName: KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.Culture
+  nameWithType: SaudiHijriCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.Culture*
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.html#KS_Kernel_Time_Calendars_Types_SaudiHijriCalendar_Culture_
+  commentId: Overload:KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.Culture
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.Culture
+  nameWithType: SaudiHijriCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.Name
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.html#KS_Kernel_Time_Calendars_Types_SaudiHijriCalendar_Name
+  commentId: P:KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.Name
+  fullName: KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.Name
+  nameWithType: SaudiHijriCalendar.Name
+- uid: KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.Name*
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.html#KS_Kernel_Time_Calendars_Types_SaudiHijriCalendar_Name_
+  commentId: Overload:KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.Name
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.Name
+  nameWithType: SaudiHijriCalendar.Name
+- uid: KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar
+  name: ThaiBuddhistCalendar
+  href: api/KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.html
+  commentId: T:KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar
+  fullName: KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar
+  nameWithType: ThaiBuddhistCalendar
+- uid: KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.Culture
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.html#KS_Kernel_Time_Calendars_Types_ThaiBuddhistCalendar_Culture
+  commentId: P:KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.Culture
+  fullName: KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.Culture
+  nameWithType: ThaiBuddhistCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.Culture*
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.html#KS_Kernel_Time_Calendars_Types_ThaiBuddhistCalendar_Culture_
+  commentId: Overload:KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.Culture
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.Culture
+  nameWithType: ThaiBuddhistCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.Name
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.html#KS_Kernel_Time_Calendars_Types_ThaiBuddhistCalendar_Name
+  commentId: P:KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.Name
+  fullName: KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.Name
+  nameWithType: ThaiBuddhistCalendar.Name
+- uid: KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.Name*
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.html#KS_Kernel_Time_Calendars_Types_ThaiBuddhistCalendar_Name_
+  commentId: Overload:KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.Name
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.Name
+  nameWithType: ThaiBuddhistCalendar.Name
 - uid: KS.Kernel.Time.Converters
   name: KS.Kernel.Time.Converters
   href: api/KS.Kernel.Time.Converters.html
@@ -30289,6 +30630,27 @@ references:
   commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.Render
   fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.Render()
   nameWithType: TimeDateRenderers.Render()
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(KS.Kernel.Time.Calendars.BaseCalendar)
+  name: Render(BaseCalendar)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_Render_KS_Kernel_Time_Calendars_BaseCalendar_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.Render(KS.Kernel.Time.Calendars.BaseCalendar)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(KS.Kernel.Time.Calendars.BaseCalendar)
+  nameWithType: TimeDateRenderers.Render(BaseCalendar)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name: Render(BaseCalendar, FormatType)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_Render_KS_Kernel_Time_Calendars_BaseCalendar_KS_Kernel_Time_FormatType_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.Render(KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  nameWithType: TimeDateRenderers.Render(BaseCalendar, FormatType)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(KS.Kernel.Time.Calendars.BaseCalendar,System.String)
+  name: Render(BaseCalendar, string)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_Render_KS_Kernel_Time_Calendars_BaseCalendar_System_String_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.Render(KS.Kernel.Time.Calendars.BaseCalendar,System.String)
+  name.vb: Render(BaseCalendar, String)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(KS.Kernel.Time.Calendars.BaseCalendar, string)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(KS.Kernel.Time.Calendars.BaseCalendar, String)
+  nameWithType: TimeDateRenderers.Render(BaseCalendar, string)
+  nameWithType.vb: TimeDateRenderers.Render(BaseCalendar, String)
 - uid: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(KS.Kernel.Time.FormatType)
   name: Render(FormatType)
   href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_Render_KS_Kernel_Time_FormatType_
@@ -30304,6 +30666,33 @@ references:
   fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(Date)
   nameWithType: TimeDateRenderers.Render(DateTime)
   nameWithType.vb: TimeDateRenderers.Render(Date)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar)
+  name: Render(DateTime, BaseCalendar)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_Render_System_DateTime_KS_Kernel_Time_Calendars_BaseCalendar_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.Render(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar)
+  name.vb: Render(Date, BaseCalendar)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(System.DateTime, KS.Kernel.Time.Calendars.BaseCalendar)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(Date, KS.Kernel.Time.Calendars.BaseCalendar)
+  nameWithType: TimeDateRenderers.Render(DateTime, BaseCalendar)
+  nameWithType.vb: TimeDateRenderers.Render(Date, BaseCalendar)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name: Render(DateTime, BaseCalendar, FormatType)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_Render_System_DateTime_KS_Kernel_Time_Calendars_BaseCalendar_KS_Kernel_Time_FormatType_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.Render(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name.vb: Render(Date, BaseCalendar, FormatType)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(System.DateTime, KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(Date, KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  nameWithType: TimeDateRenderers.Render(DateTime, BaseCalendar, FormatType)
+  nameWithType.vb: TimeDateRenderers.Render(Date, BaseCalendar, FormatType)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,System.String)
+  name: Render(DateTime, BaseCalendar, string)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_Render_System_DateTime_KS_Kernel_Time_Calendars_BaseCalendar_System_String_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.Render(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,System.String)
+  name.vb: Render(Date, BaseCalendar, String)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(System.DateTime, KS.Kernel.Time.Calendars.BaseCalendar, string)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(Date, KS.Kernel.Time.Calendars.BaseCalendar, String)
+  nameWithType: TimeDateRenderers.Render(DateTime, BaseCalendar, string)
+  nameWithType.vb: TimeDateRenderers.Render(Date, BaseCalendar, String)
 - uid: KS.Kernel.Time.Renderers.TimeDateRenderers.Render(System.DateTime,KS.Kernel.Time.FormatType)
   name: Render(DateTime, FormatType)
   href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_Render_System_DateTime_KS_Kernel_Time_FormatType_
@@ -30392,6 +30781,18 @@ references:
   commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate
   fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate()
   nameWithType: TimeDateRenderers.RenderDate()
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(KS.Kernel.Time.Calendars.BaseCalendar)
+  name: RenderDate(BaseCalendar)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_RenderDate_KS_Kernel_Time_Calendars_BaseCalendar_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(KS.Kernel.Time.Calendars.BaseCalendar)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(KS.Kernel.Time.Calendars.BaseCalendar)
+  nameWithType: TimeDateRenderers.RenderDate(BaseCalendar)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name: RenderDate(BaseCalendar, FormatType)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_RenderDate_KS_Kernel_Time_Calendars_BaseCalendar_KS_Kernel_Time_FormatType_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  nameWithType: TimeDateRenderers.RenderDate(BaseCalendar, FormatType)
 - uid: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(KS.Kernel.Time.FormatType)
   name: RenderDate(FormatType)
   href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_RenderDate_KS_Kernel_Time_FormatType_
@@ -30407,6 +30808,24 @@ references:
   fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(Date)
   nameWithType: TimeDateRenderers.RenderDate(DateTime)
   nameWithType.vb: TimeDateRenderers.RenderDate(Date)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar)
+  name: RenderDate(DateTime, BaseCalendar)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_RenderDate_System_DateTime_KS_Kernel_Time_Calendars_BaseCalendar_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar)
+  name.vb: RenderDate(Date, BaseCalendar)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(System.DateTime, KS.Kernel.Time.Calendars.BaseCalendar)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(Date, KS.Kernel.Time.Calendars.BaseCalendar)
+  nameWithType: TimeDateRenderers.RenderDate(DateTime, BaseCalendar)
+  nameWithType.vb: TimeDateRenderers.RenderDate(Date, BaseCalendar)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name: RenderDate(DateTime, BaseCalendar, FormatType)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_RenderDate_System_DateTime_KS_Kernel_Time_Calendars_BaseCalendar_KS_Kernel_Time_FormatType_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name.vb: RenderDate(Date, BaseCalendar, FormatType)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(System.DateTime, KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(Date, KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  nameWithType: TimeDateRenderers.RenderDate(DateTime, BaseCalendar, FormatType)
+  nameWithType.vb: TimeDateRenderers.RenderDate(Date, BaseCalendar, FormatType)
 - uid: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderDate(System.DateTime,KS.Kernel.Time.FormatType)
   name: RenderDate(DateTime, FormatType)
   href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_RenderDate_System_DateTime_KS_Kernel_Time_FormatType_
@@ -30459,6 +30878,18 @@ references:
   commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime
   fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime()
   nameWithType: TimeDateRenderers.RenderTime()
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(KS.Kernel.Time.Calendars.BaseCalendar)
+  name: RenderTime(BaseCalendar)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_RenderTime_KS_Kernel_Time_Calendars_BaseCalendar_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(KS.Kernel.Time.Calendars.BaseCalendar)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(KS.Kernel.Time.Calendars.BaseCalendar)
+  nameWithType: TimeDateRenderers.RenderTime(BaseCalendar)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name: RenderTime(BaseCalendar, FormatType)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_RenderTime_KS_Kernel_Time_Calendars_BaseCalendar_KS_Kernel_Time_FormatType_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  nameWithType: TimeDateRenderers.RenderTime(BaseCalendar, FormatType)
 - uid: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(KS.Kernel.Time.FormatType)
   name: RenderTime(FormatType)
   href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_RenderTime_KS_Kernel_Time_FormatType_
@@ -30474,6 +30905,24 @@ references:
   fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(Date)
   nameWithType: TimeDateRenderers.RenderTime(DateTime)
   nameWithType.vb: TimeDateRenderers.RenderTime(Date)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar)
+  name: RenderTime(DateTime, BaseCalendar)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_RenderTime_System_DateTime_KS_Kernel_Time_Calendars_BaseCalendar_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar)
+  name.vb: RenderTime(Date, BaseCalendar)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(System.DateTime, KS.Kernel.Time.Calendars.BaseCalendar)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(Date, KS.Kernel.Time.Calendars.BaseCalendar)
+  nameWithType: TimeDateRenderers.RenderTime(DateTime, BaseCalendar)
+  nameWithType.vb: TimeDateRenderers.RenderTime(Date, BaseCalendar)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name: RenderTime(DateTime, BaseCalendar, FormatType)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_RenderTime_System_DateTime_KS_Kernel_Time_Calendars_BaseCalendar_KS_Kernel_Time_FormatType_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name.vb: RenderTime(Date, BaseCalendar, FormatType)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(System.DateTime, KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(Date, KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  nameWithType: TimeDateRenderers.RenderTime(DateTime, BaseCalendar, FormatType)
+  nameWithType.vb: TimeDateRenderers.RenderTime(Date, BaseCalendar, FormatType)
 - uid: KS.Kernel.Time.Renderers.TimeDateRenderers.RenderTime(System.DateTime,KS.Kernel.Time.FormatType)
   name: RenderTime(DateTime, FormatType)
   href: api/KS.Kernel.Time.Renderers.TimeDateRenderers.html#KS_Kernel_Time_Renderers_TimeDateRenderers_RenderTime_System_DateTime_KS_Kernel_Time_FormatType_
@@ -30532,6 +30981,18 @@ references:
   commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc
   fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc()
   nameWithType: TimeDateRenderersUtc.RenderDateUtc()
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(KS.Kernel.Time.Calendars.BaseCalendar)
+  name: RenderDateUtc(BaseCalendar)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderDateUtc_KS_Kernel_Time_Calendars_BaseCalendar_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(KS.Kernel.Time.Calendars.BaseCalendar)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(KS.Kernel.Time.Calendars.BaseCalendar)
+  nameWithType: TimeDateRenderersUtc.RenderDateUtc(BaseCalendar)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name: RenderDateUtc(BaseCalendar, FormatType)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderDateUtc_KS_Kernel_Time_Calendars_BaseCalendar_KS_Kernel_Time_FormatType_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  nameWithType: TimeDateRenderersUtc.RenderDateUtc(BaseCalendar, FormatType)
 - uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(KS.Kernel.Time.FormatType)
   name: RenderDateUtc(FormatType)
   href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderDateUtc_KS_Kernel_Time_FormatType_
@@ -30547,6 +31008,24 @@ references:
   fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(Date)
   nameWithType: TimeDateRenderersUtc.RenderDateUtc(DateTime)
   nameWithType.vb: TimeDateRenderersUtc.RenderDateUtc(Date)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar)
+  name: RenderDateUtc(DateTime, BaseCalendar)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderDateUtc_System_DateTime_KS_Kernel_Time_Calendars_BaseCalendar_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar)
+  name.vb: RenderDateUtc(Date, BaseCalendar)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(System.DateTime, KS.Kernel.Time.Calendars.BaseCalendar)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(Date, KS.Kernel.Time.Calendars.BaseCalendar)
+  nameWithType: TimeDateRenderersUtc.RenderDateUtc(DateTime, BaseCalendar)
+  nameWithType.vb: TimeDateRenderersUtc.RenderDateUtc(Date, BaseCalendar)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name: RenderDateUtc(DateTime, BaseCalendar, FormatType)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderDateUtc_System_DateTime_KS_Kernel_Time_Calendars_BaseCalendar_KS_Kernel_Time_FormatType_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name.vb: RenderDateUtc(Date, BaseCalendar, FormatType)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(System.DateTime, KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(Date, KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  nameWithType: TimeDateRenderersUtc.RenderDateUtc(DateTime, BaseCalendar, FormatType)
+  nameWithType.vb: TimeDateRenderersUtc.RenderDateUtc(Date, BaseCalendar, FormatType)
 - uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderDateUtc(System.DateTime,KS.Kernel.Time.FormatType)
   name: RenderDateUtc(DateTime, FormatType)
   href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderDateUtc_System_DateTime_KS_Kernel_Time_FormatType_
@@ -30599,6 +31078,18 @@ references:
   commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc
   fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc()
   nameWithType: TimeDateRenderersUtc.RenderTimeUtc()
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(KS.Kernel.Time.Calendars.BaseCalendar)
+  name: RenderTimeUtc(BaseCalendar)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderTimeUtc_KS_Kernel_Time_Calendars_BaseCalendar_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(KS.Kernel.Time.Calendars.BaseCalendar)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(KS.Kernel.Time.Calendars.BaseCalendar)
+  nameWithType: TimeDateRenderersUtc.RenderTimeUtc(BaseCalendar)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name: RenderTimeUtc(BaseCalendar, FormatType)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderTimeUtc_KS_Kernel_Time_Calendars_BaseCalendar_KS_Kernel_Time_FormatType_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  nameWithType: TimeDateRenderersUtc.RenderTimeUtc(BaseCalendar, FormatType)
 - uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(KS.Kernel.Time.FormatType)
   name: RenderTimeUtc(FormatType)
   href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderTimeUtc_KS_Kernel_Time_FormatType_
@@ -30614,6 +31105,24 @@ references:
   fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(Date)
   nameWithType: TimeDateRenderersUtc.RenderTimeUtc(DateTime)
   nameWithType.vb: TimeDateRenderersUtc.RenderTimeUtc(Date)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar)
+  name: RenderTimeUtc(DateTime, BaseCalendar)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderTimeUtc_System_DateTime_KS_Kernel_Time_Calendars_BaseCalendar_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar)
+  name.vb: RenderTimeUtc(Date, BaseCalendar)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(System.DateTime, KS.Kernel.Time.Calendars.BaseCalendar)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(Date, KS.Kernel.Time.Calendars.BaseCalendar)
+  nameWithType: TimeDateRenderersUtc.RenderTimeUtc(DateTime, BaseCalendar)
+  nameWithType.vb: TimeDateRenderersUtc.RenderTimeUtc(Date, BaseCalendar)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name: RenderTimeUtc(DateTime, BaseCalendar, FormatType)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderTimeUtc_System_DateTime_KS_Kernel_Time_Calendars_BaseCalendar_KS_Kernel_Time_FormatType_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name.vb: RenderTimeUtc(Date, BaseCalendar, FormatType)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(System.DateTime, KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(Date, KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  nameWithType: TimeDateRenderersUtc.RenderTimeUtc(DateTime, BaseCalendar, FormatType)
+  nameWithType.vb: TimeDateRenderersUtc.RenderTimeUtc(Date, BaseCalendar, FormatType)
 - uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderTimeUtc(System.DateTime,KS.Kernel.Time.FormatType)
   name: RenderTimeUtc(DateTime, FormatType)
   href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderTimeUtc_System_DateTime_KS_Kernel_Time_FormatType_
@@ -30666,6 +31175,27 @@ references:
   commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc
   fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc()
   nameWithType: TimeDateRenderersUtc.RenderUtc()
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(KS.Kernel.Time.Calendars.BaseCalendar)
+  name: RenderUtc(BaseCalendar)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderUtc_KS_Kernel_Time_Calendars_BaseCalendar_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(KS.Kernel.Time.Calendars.BaseCalendar)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(KS.Kernel.Time.Calendars.BaseCalendar)
+  nameWithType: TimeDateRenderersUtc.RenderUtc(BaseCalendar)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name: RenderUtc(BaseCalendar, FormatType)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderUtc_KS_Kernel_Time_Calendars_BaseCalendar_KS_Kernel_Time_FormatType_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  nameWithType: TimeDateRenderersUtc.RenderUtc(BaseCalendar, FormatType)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(KS.Kernel.Time.Calendars.BaseCalendar,System.String)
+  name: RenderUtc(BaseCalendar, string)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderUtc_KS_Kernel_Time_Calendars_BaseCalendar_System_String_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(KS.Kernel.Time.Calendars.BaseCalendar,System.String)
+  name.vb: RenderUtc(BaseCalendar, String)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(KS.Kernel.Time.Calendars.BaseCalendar, string)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(KS.Kernel.Time.Calendars.BaseCalendar, String)
+  nameWithType: TimeDateRenderersUtc.RenderUtc(BaseCalendar, string)
+  nameWithType.vb: TimeDateRenderersUtc.RenderUtc(BaseCalendar, String)
 - uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(KS.Kernel.Time.FormatType)
   name: RenderUtc(FormatType)
   href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderUtc_KS_Kernel_Time_FormatType_
@@ -30681,6 +31211,33 @@ references:
   fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(Date)
   nameWithType: TimeDateRenderersUtc.RenderUtc(DateTime)
   nameWithType.vb: TimeDateRenderersUtc.RenderUtc(Date)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar)
+  name: RenderUtc(DateTime, BaseCalendar)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderUtc_System_DateTime_KS_Kernel_Time_Calendars_BaseCalendar_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar)
+  name.vb: RenderUtc(Date, BaseCalendar)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(System.DateTime, KS.Kernel.Time.Calendars.BaseCalendar)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(Date, KS.Kernel.Time.Calendars.BaseCalendar)
+  nameWithType: TimeDateRenderersUtc.RenderUtc(DateTime, BaseCalendar)
+  nameWithType.vb: TimeDateRenderersUtc.RenderUtc(Date, BaseCalendar)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name: RenderUtc(DateTime, BaseCalendar, FormatType)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderUtc_System_DateTime_KS_Kernel_Time_Calendars_BaseCalendar_KS_Kernel_Time_FormatType_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,KS.Kernel.Time.FormatType)
+  name.vb: RenderUtc(Date, BaseCalendar, FormatType)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(System.DateTime, KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(Date, KS.Kernel.Time.Calendars.BaseCalendar, KS.Kernel.Time.FormatType)
+  nameWithType: TimeDateRenderersUtc.RenderUtc(DateTime, BaseCalendar, FormatType)
+  nameWithType.vb: TimeDateRenderersUtc.RenderUtc(Date, BaseCalendar, FormatType)
+- uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,System.String)
+  name: RenderUtc(DateTime, BaseCalendar, string)
+  href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderUtc_System_DateTime_KS_Kernel_Time_Calendars_BaseCalendar_System_String_
+  commentId: M:KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(System.DateTime,KS.Kernel.Time.Calendars.BaseCalendar,System.String)
+  name.vb: RenderUtc(Date, BaseCalendar, String)
+  fullName: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(System.DateTime, KS.Kernel.Time.Calendars.BaseCalendar, string)
+  fullName.vb: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(Date, KS.Kernel.Time.Calendars.BaseCalendar, String)
+  nameWithType: TimeDateRenderersUtc.RenderUtc(DateTime, BaseCalendar, string)
+  nameWithType.vb: TimeDateRenderersUtc.RenderUtc(Date, BaseCalendar, String)
 - uid: KS.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc(System.DateTime,KS.Kernel.Time.FormatType)
   name: RenderUtc(DateTime, FormatType)
   href: api/KS.Kernel.Time.Renderers.TimeDateRenderersUtc.html#KS_Kernel_Time_Renderers_TimeDateRenderersUtc_RenderUtc_System_DateTime_KS_Kernel_Time_FormatType_

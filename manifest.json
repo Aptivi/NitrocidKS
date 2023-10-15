@@ -2435,6 +2435,136 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Calendars.BaseCalendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Calendars.BaseCalendar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Calendars.CalendarTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Calendars.CalendarTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Calendars.CalendarTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Calendars.CalendarTypes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Calendars.ICalendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Calendars.ICalendar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Calendars.Types.ChineseCalendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Calendars.Types.ChineseCalendar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Calendars.Types.GregorianCalendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Calendars.Types.GregorianCalendar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Calendars.Types.HijriCalendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Calendars.Types.HijriCalendar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Calendars.Types.JapaneseCalendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Calendars.Types.JapaneseCalendar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Calendars.Types.PersianCalendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Calendars.Types.PersianCalendar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Calendars.Types.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Calendars.Types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Calendars.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Calendars.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Time.Converters.TimeDateConverters.yml",
       "output": {
         ".html": {
