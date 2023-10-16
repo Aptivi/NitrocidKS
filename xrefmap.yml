@@ -30492,6 +30492,28 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Time.Converters.TimeDateConverters.DateToUnix
   nameWithType: TimeDateConverters.DateToUnix
+- uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(KS.Kernel.Time.Calendars.CalendarTypes)
+  name: GetDateFromCalendar(CalendarTypes)
+  href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateFromCalendar_KS_Kernel_Time_Calendars_CalendarTypes_
+  commentId: M:KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(KS.Kernel.Time.Calendars.CalendarTypes)
+  fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(KS.Kernel.Time.Calendars.CalendarTypes)
+  nameWithType: TimeDateConverters.GetDateFromCalendar(CalendarTypes)
+- uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(System.DateTime,KS.Kernel.Time.Calendars.CalendarTypes)
+  name: GetDateFromCalendar(DateTime, CalendarTypes)
+  href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateFromCalendar_System_DateTime_KS_Kernel_Time_Calendars_CalendarTypes_
+  commentId: M:KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(System.DateTime,KS.Kernel.Time.Calendars.CalendarTypes)
+  name.vb: GetDateFromCalendar(Date, CalendarTypes)
+  fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(System.DateTime, KS.Kernel.Time.Calendars.CalendarTypes)
+  fullName.vb: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(Date, KS.Kernel.Time.Calendars.CalendarTypes)
+  nameWithType: TimeDateConverters.GetDateFromCalendar(DateTime, CalendarTypes)
+  nameWithType.vb: TimeDateConverters.GetDateFromCalendar(Date, CalendarTypes)
+- uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar*
+  name: GetDateFromCalendar
+  href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateFromCalendar_
+  commentId: Overload:KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar
+  nameWithType: TimeDateConverters.GetDateFromCalendar
 - uid: KS.Kernel.Time.Converters.TimeDateConverters.UnixEpoch
   name: UnixEpoch
   href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_UnixEpoch
