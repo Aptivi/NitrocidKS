@@ -2535,6 +2535,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.yml",
       "output": {
         ".html": {

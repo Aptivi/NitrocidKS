@@ -1212,7 +1212,7 @@
   "api/KS.Kernel.Time.Calendars.BaseCalendar.html": {
     "href": "api/KS.Kernel.Time.Calendars.BaseCalendar.html",
     "title": "Class BaseCalendar | Nitrocid KS API - Aptivi",
-    "keywords": "Class BaseCalendar System calendar class Inheritance object BaseCalendar ChineseCalendar GregorianCalendar HijriCalendar JapaneseCalendar PersianCalendar SaudiHijriCalendar ThaiBuddhistCalendar Implements ICalendar Namespace: KS.Kernel.Time.Calendars Assembly: Nitrocid.dll Syntax public abstract class BaseCalendar : ICalendar Properties | Edit this page View Source Culture Culture information class associated with the calendar Declaration public virtual CultureInfo Culture { get; } Property Value Type Description CultureInfo | Edit this page View Source Name Calendar name Declaration public virtual string Name { get; } Property Value Type Description string Implements ICalendar"
+    "keywords": "Class BaseCalendar System calendar class Inheritance object BaseCalendar ChineseCalendar GregorianCalendar HijriCalendar JapaneseCalendar PersianCalendar SaudiHijriCalendar TaiwaneseCalendar ThaiBuddhistCalendar Implements ICalendar Namespace: KS.Kernel.Time.Calendars Assembly: Nitrocid.dll Syntax public abstract class BaseCalendar : ICalendar Properties | Edit this page View Source Culture Culture information class associated with the calendar Declaration public virtual CultureInfo Culture { get; } Property Value Type Description CultureInfo | Edit this page View Source Name Calendar name Declaration public virtual string Name { get; } Property Value Type Description string Implements ICalendar"
   },
   "api/KS.Kernel.Time.Calendars.CalendarTools.html": {
     "href": "api/KS.Kernel.Time.Calendars.CalendarTools.html",
@@ -1222,7 +1222,7 @@
   "api/KS.Kernel.Time.Calendars.CalendarTypes.html": {
     "href": "api/KS.Kernel.Time.Calendars.CalendarTypes.html",
     "title": "Enum CalendarTypes | Nitrocid KS API - Aptivi",
-    "keywords": "Enum CalendarTypes Calendar types Namespace: KS.Kernel.Time.Calendars Assembly: Nitrocid.dll Syntax public enum CalendarTypes Fields Name Description Chinese The Chinese calendar (zh-CN culture) Gregorian The Gregorian calendar (en-US culture) Hijri The Hijri calendar (ar culture) Japanese The Japanese calendar (ja-JP culture) Persian The Persian calendar (fa culture) SaudiHijri The Saudi-Hijri calendar (ar-SA culture) ThaiBuddhist The Thai-Buddhist calendar (th-TH culture)"
+    "keywords": "Enum CalendarTypes Calendar types Namespace: KS.Kernel.Time.Calendars Assembly: Nitrocid.dll Syntax public enum CalendarTypes Fields Name Description Chinese The Chinese calendar (zh-CN culture) Gregorian The Gregorian calendar (en-US culture) Hijri The Hijri calendar (ar culture) Japanese The Japanese calendar (ja-JP culture) Persian The Persian calendar (fa culture) SaudiHijri The Saudi-Hijri calendar (ar-SA culture) Taiwanese The Taiwanese calendar (zh-TW culture) ThaiBuddhist The Thai-Buddhist calendar (th-TH culture)"
   },
   "api/KS.Kernel.Time.Calendars.ICalendar.html": {
     "href": "api/KS.Kernel.Time.Calendars.ICalendar.html",
@@ -1259,6 +1259,11 @@
     "title": "Class SaudiHijriCalendar | Nitrocid KS API - Aptivi",
     "keywords": "Class SaudiHijriCalendar Hijri calendar (Saudi Arabia) Inheritance object BaseCalendar SaudiHijriCalendar Implements ICalendar Namespace: KS.Kernel.Time.Calendars.Types Assembly: Nitrocid.dll Syntax public class SaudiHijriCalendar : BaseCalendar, ICalendar Properties | Edit this page View Source Culture Culture information class associated with the calendar Declaration public override CultureInfo Culture { get; } Property Value Type Description CultureInfo Overrides BaseCalendar.Culture | Edit this page View Source Name Calendar name Declaration public override string Name { get; } Property Value Type Description string Overrides BaseCalendar.Name Implements ICalendar"
   },
+  "api/KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.html": {
+    "href": "api/KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.html",
+    "title": "Class TaiwaneseCalendar | Nitrocid KS API - Aptivi",
+    "keywords": "Class TaiwaneseCalendar Taiwanese calendar Inheritance object BaseCalendar TaiwaneseCalendar Implements ICalendar Namespace: KS.Kernel.Time.Calendars.Types Assembly: Nitrocid.dll Syntax public class TaiwaneseCalendar : BaseCalendar, ICalendar Properties | Edit this page View Source Culture Culture information class associated with the calendar Declaration public override CultureInfo Culture { get; } Property Value Type Description CultureInfo Overrides BaseCalendar.Culture | Edit this page View Source Name Calendar name Declaration public override string Name { get; } Property Value Type Description string Overrides BaseCalendar.Name Implements ICalendar"
+  },
   "api/KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.html": {
     "href": "api/KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.html",
     "title": "Class ThaiBuddhistCalendar | Nitrocid KS API - Aptivi",
@@ -1267,7 +1272,7 @@
   "api/KS.Kernel.Time.Calendars.Types.html": {
     "href": "api/KS.Kernel.Time.Calendars.Types.html",
     "title": "Namespace KS.Kernel.Time.Calendars.Types | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Kernel.Time.Calendars.Types Classes ChineseCalendar Chinese calendar GregorianCalendar Standard calendar HijriCalendar Hijri calendar JapaneseCalendar Japanese calendar PersianCalendar Persian calendar (Iran) SaudiHijriCalendar Hijri calendar (Saudi Arabia) ThaiBuddhistCalendar Thai Buddhist calendar"
+    "keywords": "Namespace KS.Kernel.Time.Calendars.Types Classes ChineseCalendar Chinese calendar GregorianCalendar Standard calendar HijriCalendar Hijri calendar JapaneseCalendar Japanese calendar PersianCalendar Persian calendar (Iran) SaudiHijriCalendar Hijri calendar (Saudi Arabia) TaiwaneseCalendar Taiwanese calendar ThaiBuddhistCalendar Thai Buddhist calendar"
   },
   "api/KS.Kernel.Time.Calendars.html": {
     "href": "api/KS.Kernel.Time.Calendars.html",

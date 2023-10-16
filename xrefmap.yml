@@ -30222,6 +30222,12 @@ references:
   commentId: F:KS.Kernel.Time.Calendars.CalendarTypes.SaudiHijri
   fullName: KS.Kernel.Time.Calendars.CalendarTypes.SaudiHijri
   nameWithType: CalendarTypes.SaudiHijri
+- uid: KS.Kernel.Time.Calendars.CalendarTypes.Taiwanese
+  name: Taiwanese
+  href: api/KS.Kernel.Time.Calendars.CalendarTypes.html#KS_Kernel_Time_Calendars_CalendarTypes_Taiwanese
+  commentId: F:KS.Kernel.Time.Calendars.CalendarTypes.Taiwanese
+  fullName: KS.Kernel.Time.Calendars.CalendarTypes.Taiwanese
+  nameWithType: CalendarTypes.Taiwanese
 - uid: KS.Kernel.Time.Calendars.CalendarTypes.ThaiBuddhist
   name: ThaiBuddhist
   href: api/KS.Kernel.Time.Calendars.CalendarTypes.html#KS_Kernel_Time_Calendars_CalendarTypes_ThaiBuddhist
@@ -30432,6 +30438,38 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Time.Calendars.Types.SaudiHijriCalendar.Name
   nameWithType: SaudiHijriCalendar.Name
+- uid: KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar
+  name: TaiwaneseCalendar
+  href: api/KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.html
+  commentId: T:KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar
+  fullName: KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar
+  nameWithType: TaiwaneseCalendar
+- uid: KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.Culture
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.html#KS_Kernel_Time_Calendars_Types_TaiwaneseCalendar_Culture
+  commentId: P:KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.Culture
+  fullName: KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.Culture
+  nameWithType: TaiwaneseCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.Culture*
+  name: Culture
+  href: api/KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.html#KS_Kernel_Time_Calendars_Types_TaiwaneseCalendar_Culture_
+  commentId: Overload:KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.Culture
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.Culture
+  nameWithType: TaiwaneseCalendar.Culture
+- uid: KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.Name
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.html#KS_Kernel_Time_Calendars_Types_TaiwaneseCalendar_Name
+  commentId: P:KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.Name
+  fullName: KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.Name
+  nameWithType: TaiwaneseCalendar.Name
+- uid: KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.Name*
+  name: Name
+  href: api/KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.html#KS_Kernel_Time_Calendars_Types_TaiwaneseCalendar_Name_
+  commentId: Overload:KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.Name
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.Types.TaiwaneseCalendar.Name
+  nameWithType: TaiwaneseCalendar.Name
 - uid: KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar
   name: ThaiBuddhistCalendar
   href: api/KS.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.html
