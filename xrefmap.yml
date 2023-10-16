@@ -34953,6 +34953,25 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.SplashReport.ReportProgressWarning
   nameWithType: SplashReport.ReportProgressWarning
+- uid: KS.Misc.Splash.SplashReport.ResetProgressReportArea
+  name: ResetProgressReportArea()
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ResetProgressReportArea
+  commentId: M:KS.Misc.Splash.SplashReport.ResetProgressReportArea
+  fullName: KS.Misc.Splash.SplashReport.ResetProgressReportArea()
+  nameWithType: SplashReport.ResetProgressReportArea()
+- uid: KS.Misc.Splash.SplashReport.ResetProgressReportArea(KS.Misc.Splash.ISplash)
+  name: ResetProgressReportArea(ISplash)
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ResetProgressReportArea_KS_Misc_Splash_ISplash_
+  commentId: M:KS.Misc.Splash.SplashReport.ResetProgressReportArea(KS.Misc.Splash.ISplash)
+  fullName: KS.Misc.Splash.SplashReport.ResetProgressReportArea(KS.Misc.Splash.ISplash)
+  nameWithType: SplashReport.ResetProgressReportArea(ISplash)
+- uid: KS.Misc.Splash.SplashReport.ResetProgressReportArea*
+  name: ResetProgressReportArea
+  href: api/KS.Misc.Splash.SplashReport.html#KS_Misc_Splash_SplashReport_ResetProgressReportArea_
+  commentId: Overload:KS.Misc.Splash.SplashReport.ResetProgressReportArea
+  isSpec: "True"
+  fullName: KS.Misc.Splash.SplashReport.ResetProgressReportArea
+  nameWithType: SplashReport.ResetProgressReportArea
 - uid: KS.Misc.Text
   name: KS.Misc.Text
   href: api/KS.Misc.Text.html
