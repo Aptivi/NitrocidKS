@@ -1383,6 +1383,19 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.ConsoleExtensions.ResetAll
   nameWithType: ConsoleExtensions.ResetAll
+- uid: KS.ConsoleBase.ConsoleExtensions.ResetColors
+  name: ResetColors()
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_ResetColors
+  commentId: M:KS.ConsoleBase.ConsoleExtensions.ResetColors
+  fullName: KS.ConsoleBase.ConsoleExtensions.ResetColors()
+  nameWithType: ConsoleExtensions.ResetColors()
+- uid: KS.ConsoleBase.ConsoleExtensions.ResetColors*
+  name: ResetColors
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_ResetColors_
+  commentId: Overload:KS.ConsoleBase.ConsoleExtensions.ResetColors
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ConsoleExtensions.ResetColors
+  nameWithType: ConsoleExtensions.ResetColors
 - uid: KS.ConsoleBase.ConsoleExtensions.SetTitle(System.String)
   name: SetTitle(string)
   href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_SetTitle_System_String_
