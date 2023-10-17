@@ -22623,19 +22623,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.DrawBorderNotification
   nameWithType: KernelMainConfig.DrawBorderNotification
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.EnableFigletTimer
-  name: EnableFigletTimer
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_EnableFigletTimer
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.EnableFigletTimer
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.EnableFigletTimer
-  nameWithType: KernelMainConfig.EnableFigletTimer
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.EnableFigletTimer*
-  name: EnableFigletTimer
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_EnableFigletTimer_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.EnableFigletTimer
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.EnableFigletTimer
-  nameWithType: KernelMainConfig.EnableFigletTimer
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.EnableScrollBarInSelection
   name: EnableScrollBarInSelection
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_EnableScrollBarInSelection
@@ -23234,19 +23221,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.LowPriorityBorderColor
   nameWithType: KernelMainConfig.LowPriorityBorderColor
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.LyricsPath
-  name: LyricsPath
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_LyricsPath
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.LyricsPath
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.LyricsPath
-  nameWithType: KernelMainConfig.LyricsPath
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.LyricsPath*
-  name: LyricsPath
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_LyricsPath_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.LyricsPath
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.LyricsPath
-  nameWithType: KernelMainConfig.LyricsPath
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailPromptPreset
   name: MailPromptPreset
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailPromptPreset
@@ -23481,32 +23455,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MediumPriorityBorderColor
   nameWithType: KernelMainConfig.MediumPriorityBorderColor
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MeteorSpeed
-  name: MeteorSpeed
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MeteorSpeed
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MeteorSpeed
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MeteorSpeed
-  nameWithType: KernelMainConfig.MeteorSpeed
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MeteorSpeed*
-  name: MeteorSpeed
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MeteorSpeed_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MeteorSpeed
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MeteorSpeed
-  nameWithType: KernelMainConfig.MeteorSpeed
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MeteorUsePowerLine
-  name: MeteorUsePowerLine
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MeteorUsePowerLine
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MeteorUsePowerLine
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MeteorUsePowerLine
-  nameWithType: KernelMainConfig.MeteorUsePowerLine
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MeteorUsePowerLine*
-  name: MeteorUsePowerLine
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MeteorUsePowerLine_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MeteorUsePowerLine
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MeteorUsePowerLine
-  nameWithType: KernelMainConfig.MeteorUsePowerLine
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MotdFilePath
   name: MotdFilePath
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MotdFilePath
@@ -23793,19 +23741,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.PingTimeout
   nameWithType: KernelMainConfig.PingTimeout
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.PreferredUnit
-  name: PreferredUnit
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_PreferredUnit
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.PreferredUnit
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.PreferredUnit
-  nameWithType: KernelMainConfig.PreferredUnit
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.PreferredUnit*
-  name: PreferredUnit
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_PreferredUnit_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.PreferredUnit
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.PreferredUnit
-  nameWithType: KernelMainConfig.PreferredUnit
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.PrintLineNumbers
   name: PrintLineNumbers
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_PrintLineNumbers
@@ -24183,19 +24118,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SSHBanner
   nameWithType: KernelMainConfig.SSHBanner
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.SaveEventsRemindersDestructively
-  name: SaveEventsRemindersDestructively
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_SaveEventsRemindersDestructively
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.SaveEventsRemindersDestructively
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SaveEventsRemindersDestructively
-  nameWithType: KernelMainConfig.SaveEventsRemindersDestructively
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.SaveEventsRemindersDestructively*
-  name: SaveEventsRemindersDestructively
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_SaveEventsRemindersDestructively_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.SaveEventsRemindersDestructively
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SaveEventsRemindersDestructively
-  nameWithType: KernelMainConfig.SaveEventsRemindersDestructively
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ScreenTimeout
   name: ScreenTimeout
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ScreenTimeout
@@ -24300,32 +24222,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SettingsEntries
   nameWithType: KernelMainConfig.SettingsEntries
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ShipDuetSpeed
-  name: ShipDuetSpeed
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ShipDuetSpeed
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.ShipDuetSpeed
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.ShipDuetSpeed
-  nameWithType: KernelMainConfig.ShipDuetSpeed
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ShipDuetSpeed*
-  name: ShipDuetSpeed
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ShipDuetSpeed_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.ShipDuetSpeed
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.ShipDuetSpeed
-  nameWithType: KernelMainConfig.ShipDuetSpeed
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ShipDuetUsePowerLine
-  name: ShipDuetUsePowerLine
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ShipDuetUsePowerLine
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.ShipDuetUsePowerLine
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.ShipDuetUsePowerLine
-  nameWithType: KernelMainConfig.ShipDuetUsePowerLine
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ShipDuetUsePowerLine*
-  name: ShipDuetUsePowerLine
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ShipDuetUsePowerLine_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.ShipDuetUsePowerLine
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.ShipDuetUsePowerLine
-  nameWithType: KernelMainConfig.ShipDuetUsePowerLine
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ShowAddonCommandsCount
   name: ShowAddonCommandsCount
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ShowAddonCommandsCount
@@ -24547,19 +24443,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.ShowStageFinishTimes
   nameWithType: KernelMainConfig.ShowStageFinishTimes
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ShowTip
-  name: ShowTip
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ShowTip
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.ShowTip
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.ShowTip
-  nameWithType: KernelMainConfig.ShowTip
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ShowTip*
-  name: ShowTip
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ShowTip_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.ShowTip
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.ShowTip
-  nameWithType: KernelMainConfig.ShowTip
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ShowTotalSizeInList
   name: ShowTotalSizeInList
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ShowTotalSizeInList
@@ -24612,45 +24495,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SimulateNoAPM
   nameWithType: KernelMainConfig.SimulateNoAPM
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.SolverMaximumNumber
-  name: SolverMaximumNumber
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_SolverMaximumNumber
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.SolverMaximumNumber
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SolverMaximumNumber
-  nameWithType: KernelMainConfig.SolverMaximumNumber
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.SolverMaximumNumber*
-  name: SolverMaximumNumber
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_SolverMaximumNumber_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.SolverMaximumNumber
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SolverMaximumNumber
-  nameWithType: KernelMainConfig.SolverMaximumNumber
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.SolverMinimumNumber
-  name: SolverMinimumNumber
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_SolverMinimumNumber
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.SolverMinimumNumber
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SolverMinimumNumber
-  nameWithType: KernelMainConfig.SolverMinimumNumber
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.SolverMinimumNumber*
-  name: SolverMinimumNumber
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_SolverMinimumNumber_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.SolverMinimumNumber
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SolverMinimumNumber
-  nameWithType: KernelMainConfig.SolverMinimumNumber
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.SolverShowInput
-  name: SolverShowInput
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_SolverShowInput
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.SolverShowInput
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SolverShowInput
-  nameWithType: KernelMainConfig.SolverShowInput
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.SolverShowInput*
-  name: SolverShowInput
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_SolverShowInput_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.SolverShowInput
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SolverShowInput
-  nameWithType: KernelMainConfig.SolverShowInput
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.SortDirection
   name: SortDirection
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_SortDirection
@@ -24690,32 +24534,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SortMode
   nameWithType: KernelMainConfig.SortMode
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.SpeedPressCurrentDifficulty
-  name: SpeedPressCurrentDifficulty
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_SpeedPressCurrentDifficulty
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.SpeedPressCurrentDifficulty
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SpeedPressCurrentDifficulty
-  nameWithType: KernelMainConfig.SpeedPressCurrentDifficulty
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.SpeedPressCurrentDifficulty*
-  name: SpeedPressCurrentDifficulty
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_SpeedPressCurrentDifficulty_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.SpeedPressCurrentDifficulty
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SpeedPressCurrentDifficulty
-  nameWithType: KernelMainConfig.SpeedPressCurrentDifficulty
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.SpeedPressTimeout
-  name: SpeedPressTimeout
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_SpeedPressTimeout
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.SpeedPressTimeout
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SpeedPressTimeout
-  nameWithType: KernelMainConfig.SpeedPressTimeout
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.SpeedPressTimeout*
-  name: SpeedPressTimeout
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_SpeedPressTimeout_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.SpeedPressTimeout
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.SpeedPressTimeout
-  nameWithType: KernelMainConfig.SpeedPressTimeout
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.SplashName
   name: SplashName
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_SplashName
@@ -24911,19 +24729,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEdit_AutoSaveInterval
   nameWithType: KernelMainConfig.TextEdit_AutoSaveInterval
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.TimerFigletFont
-  name: TimerFigletFont
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_TimerFigletFont
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.TimerFigletFont
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.TimerFigletFont
-  nameWithType: KernelMainConfig.TimerFigletFont
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.TimerFigletFont*
-  name: TimerFigletFont
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_TimerFigletFont_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.TimerFigletFont
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.TimerFigletFont
-  nameWithType: KernelMainConfig.TimerFigletFont
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.TipColor
   name: TipColor
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_TipColor
@@ -25508,19 +25313,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.KernelFlags.DrawBorderNotification
   nameWithType: KernelFlags.DrawBorderNotification
-- uid: KS.Kernel.Configuration.KernelFlags.EnableFigletTimer
-  name: EnableFigletTimer
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_EnableFigletTimer
-  commentId: P:KS.Kernel.Configuration.KernelFlags.EnableFigletTimer
-  fullName: KS.Kernel.Configuration.KernelFlags.EnableFigletTimer
-  nameWithType: KernelFlags.EnableFigletTimer
-- uid: KS.Kernel.Configuration.KernelFlags.EnableFigletTimer*
-  name: EnableFigletTimer
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_EnableFigletTimer_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.EnableFigletTimer
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.EnableFigletTimer
-  nameWithType: KernelFlags.EnableFigletTimer
 - uid: KS.Kernel.Configuration.KernelFlags.EnableScrollBarInSelection
   name: EnableScrollBarInSelection
   href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_EnableScrollBarInSelection
@@ -25729,19 +25521,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.KernelFlags.RecordChatToDebugLog
   nameWithType: KernelFlags.RecordChatToDebugLog
-- uid: KS.Kernel.Configuration.KernelFlags.SaveEventsRemindersDestructively
-  name: SaveEventsRemindersDestructively
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_SaveEventsRemindersDestructively
-  commentId: P:KS.Kernel.Configuration.KernelFlags.SaveEventsRemindersDestructively
-  fullName: KS.Kernel.Configuration.KernelFlags.SaveEventsRemindersDestructively
-  nameWithType: KernelFlags.SaveEventsRemindersDestructively
-- uid: KS.Kernel.Configuration.KernelFlags.SaveEventsRemindersDestructively*
-  name: SaveEventsRemindersDestructively
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_SaveEventsRemindersDestructively_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.SaveEventsRemindersDestructively
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.SaveEventsRemindersDestructively
-  nameWithType: KernelFlags.SaveEventsRemindersDestructively
 - uid: KS.Kernel.Configuration.KernelFlags.ShowAddonCommandsCount
   name: ShowAddonCommandsCount
   href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowAddonCommandsCount
