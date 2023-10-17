@@ -30154,6 +30154,19 @@ references:
   commentId: T:KS.Kernel.Time.Calendars.BaseCalendar
   fullName: KS.Kernel.Time.Calendars.BaseCalendar
   nameWithType: BaseCalendar
+- uid: KS.Kernel.Time.Calendars.BaseCalendar.Calendar
+  name: Calendar
+  href: api/KS.Kernel.Time.Calendars.BaseCalendar.html#KS_Kernel_Time_Calendars_BaseCalendar_Calendar
+  commentId: P:KS.Kernel.Time.Calendars.BaseCalendar.Calendar
+  fullName: KS.Kernel.Time.Calendars.BaseCalendar.Calendar
+  nameWithType: BaseCalendar.Calendar
+- uid: KS.Kernel.Time.Calendars.BaseCalendar.Calendar*
+  name: Calendar
+  href: api/KS.Kernel.Time.Calendars.BaseCalendar.html#KS_Kernel_Time_Calendars_BaseCalendar_Calendar_
+  commentId: Overload:KS.Kernel.Time.Calendars.BaseCalendar.Calendar
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.BaseCalendar.Calendar
+  nameWithType: BaseCalendar.Calendar
 - uid: KS.Kernel.Time.Calendars.BaseCalendar.Culture
   name: Culture
   href: api/KS.Kernel.Time.Calendars.BaseCalendar.html#KS_Kernel_Time_Calendars_BaseCalendar_Culture
@@ -30259,6 +30272,19 @@ references:
   commentId: T:KS.Kernel.Time.Calendars.ICalendar
   fullName: KS.Kernel.Time.Calendars.ICalendar
   nameWithType: ICalendar
+- uid: KS.Kernel.Time.Calendars.ICalendar.Calendar
+  name: Calendar
+  href: api/KS.Kernel.Time.Calendars.ICalendar.html#KS_Kernel_Time_Calendars_ICalendar_Calendar
+  commentId: P:KS.Kernel.Time.Calendars.ICalendar.Calendar
+  fullName: KS.Kernel.Time.Calendars.ICalendar.Calendar
+  nameWithType: ICalendar.Calendar
+- uid: KS.Kernel.Time.Calendars.ICalendar.Calendar*
+  name: Calendar
+  href: api/KS.Kernel.Time.Calendars.ICalendar.html#KS_Kernel_Time_Calendars_ICalendar_Calendar_
+  commentId: Overload:KS.Kernel.Time.Calendars.ICalendar.Calendar
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.ICalendar.Calendar
+  nameWithType: ICalendar.Calendar
 - uid: KS.Kernel.Time.Calendars.ICalendar.Culture
   name: Culture
   href: api/KS.Kernel.Time.Calendars.ICalendar.html#KS_Kernel_Time_Calendars_ICalendar_Culture
@@ -30571,6 +30597,28 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar
   nameWithType: TimeDateConverters.GetDateFromCalendar
+- uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(KS.Kernel.Time.Calendars.CalendarTypes)
+  name: GetDateFromCalendarNoCulture(CalendarTypes)
+  href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateFromCalendarNoCulture_KS_Kernel_Time_Calendars_CalendarTypes_
+  commentId: M:KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(KS.Kernel.Time.Calendars.CalendarTypes)
+  fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(KS.Kernel.Time.Calendars.CalendarTypes)
+  nameWithType: TimeDateConverters.GetDateFromCalendarNoCulture(CalendarTypes)
+- uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(System.DateTime,KS.Kernel.Time.Calendars.CalendarTypes)
+  name: GetDateFromCalendarNoCulture(DateTime, CalendarTypes)
+  href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateFromCalendarNoCulture_System_DateTime_KS_Kernel_Time_Calendars_CalendarTypes_
+  commentId: M:KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(System.DateTime,KS.Kernel.Time.Calendars.CalendarTypes)
+  name.vb: GetDateFromCalendarNoCulture(Date, CalendarTypes)
+  fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(System.DateTime, KS.Kernel.Time.Calendars.CalendarTypes)
+  fullName.vb: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(Date, KS.Kernel.Time.Calendars.CalendarTypes)
+  nameWithType: TimeDateConverters.GetDateFromCalendarNoCulture(DateTime, CalendarTypes)
+  nameWithType.vb: TimeDateConverters.GetDateFromCalendarNoCulture(Date, CalendarTypes)
+- uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture*
+  name: GetDateFromCalendarNoCulture
+  href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateFromCalendarNoCulture_
+  commentId: Overload:KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture
+  nameWithType: TimeDateConverters.GetDateFromCalendarNoCulture
 - uid: KS.Kernel.Time.Converters.TimeDateConverters.UnixEpoch
   name: UnixEpoch
   href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_UnixEpoch
