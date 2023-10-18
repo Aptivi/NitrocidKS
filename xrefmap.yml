@@ -31846,15 +31846,6 @@ references:
   commentId: T:KS.Languages.LanguageInfo
   fullName: KS.Languages.LanguageInfo
   nameWithType: LanguageInfo
-- uid: KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,Newtonsoft.Json.Linq.JArray,System.String)
-  name: LanguageInfo(string, string, bool, JArray, string)
-  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_Newtonsoft_Json_Linq_JArray_System_String_
-  commentId: M:KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,Newtonsoft.Json.Linq.JArray,System.String)
-  name.vb: New(String, String, Boolean, JArray, String)
-  fullName: KS.Languages.LanguageInfo.LanguageInfo(string, string, bool, Newtonsoft.Json.Linq.JArray, string)
-  fullName.vb: KS.Languages.LanguageInfo.New(String, String, Boolean, Newtonsoft.Json.Linq.JArray, String)
-  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, JArray, string)
-  nameWithType.vb: LanguageInfo.New(String, String, Boolean, JArray, String)
 - uid: KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32,System.String)
   name: LanguageInfo(string, string, bool, int, string)
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_Int32_System_String_
@@ -31864,6 +31855,15 @@ references:
   fullName.vb: KS.Languages.LanguageInfo.New(String, String, Boolean, Integer, String)
   nameWithType: LanguageInfo.LanguageInfo(string, string, bool, int, string)
   nameWithType.vb: LanguageInfo.New(String, String, Boolean, Integer, String)
+- uid: KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.String[],System.String)
+  name: LanguageInfo(string, string, bool, string[], string)
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_String___System_String_
+  commentId: M:KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.String[],System.String)
+  name.vb: New(String, String, Boolean, String(), String)
+  fullName: KS.Languages.LanguageInfo.LanguageInfo(string, string, bool, string[], string)
+  fullName.vb: KS.Languages.LanguageInfo.New(String, String, Boolean, String(), String)
+  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, string[], string)
+  nameWithType.vb: LanguageInfo.New(String, String, Boolean, String(), String)
 - uid: KS.Languages.LanguageInfo.#ctor*
   name: LanguageInfo
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_
