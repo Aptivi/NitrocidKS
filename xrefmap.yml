@@ -11086,6 +11086,28 @@ references:
   fullName.vb: KS.Drivers.DriverHandler.GetFallbackDriver(Of TResult)()
   nameWithType: DriverHandler.GetFallbackDriver<TResult>()
   nameWithType.vb: DriverHandler.GetFallbackDriver(Of TResult)()
+- uid: KS.Drivers.DriverHandler.IsBuiltin(KS.Drivers.DriverTypes,KS.Drivers.IDriver)
+  name: IsBuiltin(DriverTypes, IDriver)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_IsBuiltin_KS_Drivers_DriverTypes_KS_Drivers_IDriver_
+  commentId: M:KS.Drivers.DriverHandler.IsBuiltin(KS.Drivers.DriverTypes,KS.Drivers.IDriver)
+  fullName: KS.Drivers.DriverHandler.IsBuiltin(KS.Drivers.DriverTypes, KS.Drivers.IDriver)
+  nameWithType: DriverHandler.IsBuiltin(DriverTypes, IDriver)
+- uid: KS.Drivers.DriverHandler.IsBuiltin(KS.Drivers.DriverTypes,System.String)
+  name: IsBuiltin(DriverTypes, string)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_IsBuiltin_KS_Drivers_DriverTypes_System_String_
+  commentId: M:KS.Drivers.DriverHandler.IsBuiltin(KS.Drivers.DriverTypes,System.String)
+  name.vb: IsBuiltin(DriverTypes, String)
+  fullName: KS.Drivers.DriverHandler.IsBuiltin(KS.Drivers.DriverTypes, string)
+  fullName.vb: KS.Drivers.DriverHandler.IsBuiltin(KS.Drivers.DriverTypes, String)
+  nameWithType: DriverHandler.IsBuiltin(DriverTypes, string)
+  nameWithType.vb: DriverHandler.IsBuiltin(DriverTypes, String)
+- uid: KS.Drivers.DriverHandler.IsBuiltin*
+  name: IsBuiltin
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_IsBuiltin_
+  commentId: Overload:KS.Drivers.DriverHandler.IsBuiltin
+  isSpec: "True"
+  fullName: KS.Drivers.DriverHandler.IsBuiltin
+  nameWithType: DriverHandler.IsBuiltin
 - uid: KS.Drivers.DriverHandler.IsRegistered(KS.Drivers.DriverTypes,KS.Drivers.IDriver)
   name: IsRegistered(DriverTypes, IDriver)
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_IsRegistered_KS_Drivers_DriverTypes_KS_Drivers_IDriver_
