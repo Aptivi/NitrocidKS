@@ -30096,6 +30096,46 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture
   nameWithType: TimeDateConverters.GetDateFromCalendarNoCulture
+- uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone(System.DateTime,System.String)
+  name: GetDateTimeFromZone(DateTime, string)
+  href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateTimeFromZone_System_DateTime_System_String_
+  commentId: M:KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone(System.DateTime,System.String)
+  name.vb: GetDateTimeFromZone(Date, String)
+  fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone(System.DateTime, string)
+  fullName.vb: KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone(Date, String)
+  nameWithType: TimeDateConverters.GetDateTimeFromZone(DateTime, string)
+  nameWithType.vb: TimeDateConverters.GetDateTimeFromZone(Date, String)
+- uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone(System.DateTime,System.TimeZoneInfo)
+  name: GetDateTimeFromZone(DateTime, TimeZoneInfo)
+  href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateTimeFromZone_System_DateTime_System_TimeZoneInfo_
+  commentId: M:KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone(System.DateTime,System.TimeZoneInfo)
+  name.vb: GetDateTimeFromZone(Date, TimeZoneInfo)
+  fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone(System.DateTime, System.TimeZoneInfo)
+  fullName.vb: KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone(Date, System.TimeZoneInfo)
+  nameWithType: TimeDateConverters.GetDateTimeFromZone(DateTime, TimeZoneInfo)
+  nameWithType.vb: TimeDateConverters.GetDateTimeFromZone(Date, TimeZoneInfo)
+- uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone(System.String)
+  name: GetDateTimeFromZone(string)
+  href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateTimeFromZone_System_String_
+  commentId: M:KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone(System.String)
+  name.vb: GetDateTimeFromZone(String)
+  fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone(string)
+  fullName.vb: KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone(String)
+  nameWithType: TimeDateConverters.GetDateTimeFromZone(string)
+  nameWithType.vb: TimeDateConverters.GetDateTimeFromZone(String)
+- uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone(System.TimeZoneInfo)
+  name: GetDateTimeFromZone(TimeZoneInfo)
+  href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateTimeFromZone_System_TimeZoneInfo_
+  commentId: M:KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone(System.TimeZoneInfo)
+  fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone(System.TimeZoneInfo)
+  nameWithType: TimeDateConverters.GetDateTimeFromZone(TimeZoneInfo)
+- uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone*
+  name: GetDateTimeFromZone
+  href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateTimeFromZone_
+  commentId: Overload:KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateTimeFromZone
+  nameWithType: TimeDateConverters.GetDateTimeFromZone
 - uid: KS.Kernel.Time.Converters.TimeDateConverters.UnixEpoch
   name: UnixEpoch
   href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_UnixEpoch
@@ -31267,19 +31307,48 @@ references:
   commentId: T:KS.Kernel.Time.Timezones.TimeZones
   fullName: KS.Kernel.Time.Timezones.TimeZones
   nameWithType: TimeZones
-- uid: KS.Kernel.Time.Timezones.TimeZones.GetTimeZones
-  name: GetTimeZones()
-  href: api/KS.Kernel.Time.Timezones.TimeZones.html#KS_Kernel_Time_Timezones_TimeZones_GetTimeZones
-  commentId: M:KS.Kernel.Time.Timezones.TimeZones.GetTimeZones
-  fullName: KS.Kernel.Time.Timezones.TimeZones.GetTimeZones()
-  nameWithType: TimeZones.GetTimeZones()
-- uid: KS.Kernel.Time.Timezones.TimeZones.GetTimeZones*
-  name: GetTimeZones
-  href: api/KS.Kernel.Time.Timezones.TimeZones.html#KS_Kernel_Time_Timezones_TimeZones_GetTimeZones_
-  commentId: Overload:KS.Kernel.Time.Timezones.TimeZones.GetTimeZones
+- uid: KS.Kernel.Time.Timezones.TimeZones.GetTimeZoneNames
+  name: GetTimeZoneNames()
+  href: api/KS.Kernel.Time.Timezones.TimeZones.html#KS_Kernel_Time_Timezones_TimeZones_GetTimeZoneNames
+  commentId: M:KS.Kernel.Time.Timezones.TimeZones.GetTimeZoneNames
+  fullName: KS.Kernel.Time.Timezones.TimeZones.GetTimeZoneNames()
+  nameWithType: TimeZones.GetTimeZoneNames()
+- uid: KS.Kernel.Time.Timezones.TimeZones.GetTimeZoneNames*
+  name: GetTimeZoneNames
+  href: api/KS.Kernel.Time.Timezones.TimeZones.html#KS_Kernel_Time_Timezones_TimeZones_GetTimeZoneNames_
+  commentId: Overload:KS.Kernel.Time.Timezones.TimeZones.GetTimeZoneNames
   isSpec: "True"
-  fullName: KS.Kernel.Time.Timezones.TimeZones.GetTimeZones
-  nameWithType: TimeZones.GetTimeZones
+  fullName: KS.Kernel.Time.Timezones.TimeZones.GetTimeZoneNames
+  nameWithType: TimeZones.GetTimeZoneNames
+- uid: KS.Kernel.Time.Timezones.TimeZones.GetTimeZoneTimes
+  name: GetTimeZoneTimes()
+  href: api/KS.Kernel.Time.Timezones.TimeZones.html#KS_Kernel_Time_Timezones_TimeZones_GetTimeZoneTimes
+  commentId: M:KS.Kernel.Time.Timezones.TimeZones.GetTimeZoneTimes
+  fullName: KS.Kernel.Time.Timezones.TimeZones.GetTimeZoneTimes()
+  nameWithType: TimeZones.GetTimeZoneTimes()
+- uid: KS.Kernel.Time.Timezones.TimeZones.GetTimeZoneTimes*
+  name: GetTimeZoneTimes
+  href: api/KS.Kernel.Time.Timezones.TimeZones.html#KS_Kernel_Time_Timezones_TimeZones_GetTimeZoneTimes_
+  commentId: Overload:KS.Kernel.Time.Timezones.TimeZones.GetTimeZoneTimes
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Timezones.TimeZones.GetTimeZoneTimes
+  nameWithType: TimeZones.GetTimeZoneTimes
+- uid: KS.Kernel.Time.Timezones.TimeZones.GetZoneInfo(System.String)
+  name: GetZoneInfo(string)
+  href: api/KS.Kernel.Time.Timezones.TimeZones.html#KS_Kernel_Time_Timezones_TimeZones_GetZoneInfo_System_String_
+  commentId: M:KS.Kernel.Time.Timezones.TimeZones.GetZoneInfo(System.String)
+  name.vb: GetZoneInfo(String)
+  fullName: KS.Kernel.Time.Timezones.TimeZones.GetZoneInfo(string)
+  fullName.vb: KS.Kernel.Time.Timezones.TimeZones.GetZoneInfo(String)
+  nameWithType: TimeZones.GetZoneInfo(string)
+  nameWithType.vb: TimeZones.GetZoneInfo(String)
+- uid: KS.Kernel.Time.Timezones.TimeZones.GetZoneInfo*
+  name: GetZoneInfo
+  href: api/KS.Kernel.Time.Timezones.TimeZones.html#KS_Kernel_Time_Timezones_TimeZones_GetZoneInfo_
+  commentId: Overload:KS.Kernel.Time.Timezones.TimeZones.GetZoneInfo
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Timezones.TimeZones.GetZoneInfo
+  nameWithType: TimeZones.GetZoneInfo
 - uid: KS.Kernel.Time.Timezones.TimeZones.TimeZoneExists(System.String)
   name: TimeZoneExists(string)
   href: api/KS.Kernel.Time.Timezones.TimeZones.html#KS_Kernel_Time_Timezones_TimeZones_TimeZoneExists_System_String_
