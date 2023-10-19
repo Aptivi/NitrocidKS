@@ -34993,19 +34993,6 @@ references:
   commentId: T:KS.Misc.Text.Probers.Motd.MalParse
   fullName: KS.Misc.Text.Probers.Motd.MalParse
   nameWithType: MalParse
-- uid: KS.Misc.Text.Probers.Motd.MalParse.MAL
-  name: MAL
-  href: api/KS.Misc.Text.Probers.Motd.MalParse.html#KS_Misc_Text_Probers_Motd_MalParse_MAL
-  commentId: P:KS.Misc.Text.Probers.Motd.MalParse.MAL
-  fullName: KS.Misc.Text.Probers.Motd.MalParse.MAL
-  nameWithType: MalParse.MAL
-- uid: KS.Misc.Text.Probers.Motd.MalParse.MAL*
-  name: MAL
-  href: api/KS.Misc.Text.Probers.Motd.MalParse.html#KS_Misc_Text_Probers_Motd_MalParse_MAL_
-  commentId: Overload:KS.Misc.Text.Probers.Motd.MalParse.MAL
-  isSpec: "True"
-  fullName: KS.Misc.Text.Probers.Motd.MalParse.MAL
-  nameWithType: MalParse.MAL
 - uid: KS.Misc.Text.Probers.Motd.MalParse.MalFilePath
   name: MalFilePath
   href: api/KS.Misc.Text.Probers.Motd.MalParse.html#KS_Misc_Text_Probers_Motd_MalParse_MalFilePath
@@ -35019,6 +35006,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Text.Probers.Motd.MalParse.MalFilePath
   nameWithType: MalParse.MalFilePath
+- uid: KS.Misc.Text.Probers.Motd.MalParse.MalMessage
+  name: MalMessage
+  href: api/KS.Misc.Text.Probers.Motd.MalParse.html#KS_Misc_Text_Probers_Motd_MalParse_MalMessage
+  commentId: P:KS.Misc.Text.Probers.Motd.MalParse.MalMessage
+  fullName: KS.Misc.Text.Probers.Motd.MalParse.MalMessage
+  nameWithType: MalParse.MalMessage
+- uid: KS.Misc.Text.Probers.Motd.MalParse.MalMessage*
+  name: MalMessage
+  href: api/KS.Misc.Text.Probers.Motd.MalParse.html#KS_Misc_Text_Probers_Motd_MalParse_MalMessage_
+  commentId: Overload:KS.Misc.Text.Probers.Motd.MalParse.MalMessage
+  isSpec: "True"
+  fullName: KS.Misc.Text.Probers.Motd.MalParse.MalMessage
+  nameWithType: MalParse.MalMessage
 - uid: KS.Misc.Text.Probers.Motd.MalParse.ReadMal
   name: ReadMal()
   href: api/KS.Misc.Text.Probers.Motd.MalParse.html#KS_Misc_Text_Probers_Motd_MalParse_ReadMal
@@ -35054,19 +35054,6 @@ references:
   commentId: T:KS.Misc.Text.Probers.Motd.MotdParse
   fullName: KS.Misc.Text.Probers.Motd.MotdParse
   nameWithType: MotdParse
-- uid: KS.Misc.Text.Probers.Motd.MotdParse.MOTDMessage
-  name: MOTDMessage
-  href: api/KS.Misc.Text.Probers.Motd.MotdParse.html#KS_Misc_Text_Probers_Motd_MotdParse_MOTDMessage
-  commentId: P:KS.Misc.Text.Probers.Motd.MotdParse.MOTDMessage
-  fullName: KS.Misc.Text.Probers.Motd.MotdParse.MOTDMessage
-  nameWithType: MotdParse.MOTDMessage
-- uid: KS.Misc.Text.Probers.Motd.MotdParse.MOTDMessage*
-  name: MOTDMessage
-  href: api/KS.Misc.Text.Probers.Motd.MotdParse.html#KS_Misc_Text_Probers_Motd_MotdParse_MOTDMessage_
-  commentId: Overload:KS.Misc.Text.Probers.Motd.MotdParse.MOTDMessage
-  isSpec: "True"
-  fullName: KS.Misc.Text.Probers.Motd.MotdParse.MOTDMessage
-  nameWithType: MotdParse.MOTDMessage
 - uid: KS.Misc.Text.Probers.Motd.MotdParse.MotdFilePath
   name: MotdFilePath
   href: api/KS.Misc.Text.Probers.Motd.MotdParse.html#KS_Misc_Text_Probers_Motd_MotdParse_MotdFilePath
@@ -35080,6 +35067,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Text.Probers.Motd.MotdParse.MotdFilePath
   nameWithType: MotdParse.MotdFilePath
+- uid: KS.Misc.Text.Probers.Motd.MotdParse.MotdMessage
+  name: MotdMessage
+  href: api/KS.Misc.Text.Probers.Motd.MotdParse.html#KS_Misc_Text_Probers_Motd_MotdParse_MotdMessage
+  commentId: P:KS.Misc.Text.Probers.Motd.MotdParse.MotdMessage
+  fullName: KS.Misc.Text.Probers.Motd.MotdParse.MotdMessage
+  nameWithType: MotdParse.MotdMessage
+- uid: KS.Misc.Text.Probers.Motd.MotdParse.MotdMessage*
+  name: MotdMessage
+  href: api/KS.Misc.Text.Probers.Motd.MotdParse.html#KS_Misc_Text_Probers_Motd_MotdParse_MotdMessage_
+  commentId: Overload:KS.Misc.Text.Probers.Motd.MotdParse.MotdMessage
+  isSpec: "True"
+  fullName: KS.Misc.Text.Probers.Motd.MotdParse.MotdMessage
+  nameWithType: MotdParse.MotdMessage
 - uid: KS.Misc.Text.Probers.Motd.MotdParse.ReadMotd
   name: ReadMotd()
   href: api/KS.Misc.Text.Probers.Motd.MotdParse.html#KS_Misc_Text_Probers_Motd_MotdParse_ReadMotd
