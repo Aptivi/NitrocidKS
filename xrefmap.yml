@@ -40406,6 +40406,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.MinimumArguments
   nameWithType: CommandArgumentInfo.MinimumArguments
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.RenderedUsage
+  name: RenderedUsage
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo_RenderedUsage
+  commentId: P:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.RenderedUsage
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.RenderedUsage
+  nameWithType: CommandArgumentInfo.RenderedUsage
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.RenderedUsage*
+  name: RenderedUsage
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo_RenderedUsage_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.RenderedUsage
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.RenderedUsage
+  nameWithType: CommandArgumentInfo.RenderedUsage
 - uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.Switches
   name: Switches
   href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo_Switches
