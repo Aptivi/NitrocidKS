@@ -1955,16 +1955,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Configuration.KernelFlags.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Configuration.KernelFlags.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Configuration.Settings.SettingsApp.yml",
       "output": {
         ".html": {

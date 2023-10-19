@@ -1293,6 +1293,32 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.ConsoleExtensions.ClearLineToRight
   nameWithType: ConsoleExtensions.ClearLineToRight
+- uid: KS.ConsoleBase.ConsoleExtensions.ConsoleSupportsTrueColor
+  name: ConsoleSupportsTrueColor
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_ConsoleSupportsTrueColor
+  commentId: P:KS.ConsoleBase.ConsoleExtensions.ConsoleSupportsTrueColor
+  fullName: KS.ConsoleBase.ConsoleExtensions.ConsoleSupportsTrueColor
+  nameWithType: ConsoleExtensions.ConsoleSupportsTrueColor
+- uid: KS.ConsoleBase.ConsoleExtensions.ConsoleSupportsTrueColor*
+  name: ConsoleSupportsTrueColor
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_ConsoleSupportsTrueColor_
+  commentId: Overload:KS.ConsoleBase.ConsoleExtensions.ConsoleSupportsTrueColor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ConsoleExtensions.ConsoleSupportsTrueColor
+  nameWithType: ConsoleExtensions.ConsoleSupportsTrueColor
+- uid: KS.ConsoleBase.ConsoleExtensions.EnableScrollBarInSelection
+  name: EnableScrollBarInSelection
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_EnableScrollBarInSelection
+  commentId: P:KS.ConsoleBase.ConsoleExtensions.EnableScrollBarInSelection
+  fullName: KS.ConsoleBase.ConsoleExtensions.EnableScrollBarInSelection
+  nameWithType: ConsoleExtensions.EnableScrollBarInSelection
+- uid: KS.ConsoleBase.ConsoleExtensions.EnableScrollBarInSelection*
+  name: EnableScrollBarInSelection
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_EnableScrollBarInSelection_
+  commentId: Overload:KS.ConsoleBase.ConsoleExtensions.EnableScrollBarInSelection
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ConsoleExtensions.EnableScrollBarInSelection
+  nameWithType: ConsoleExtensions.EnableScrollBarInSelection
 - uid: KS.ConsoleBase.ConsoleExtensions.FilterVTSequences(System.String)
   name: FilterVTSequences(string)
   href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_FilterVTSequences_System_String_
@@ -1338,6 +1364,19 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.ConsoleExtensions.GetFilteredPositions
   nameWithType: ConsoleExtensions.GetFilteredPositions
+- uid: KS.ConsoleBase.ConsoleExtensions.InputHistoryEnabled
+  name: InputHistoryEnabled
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_InputHistoryEnabled
+  commentId: P:KS.ConsoleBase.ConsoleExtensions.InputHistoryEnabled
+  fullName: KS.ConsoleBase.ConsoleExtensions.InputHistoryEnabled
+  nameWithType: ConsoleExtensions.InputHistoryEnabled
+- uid: KS.ConsoleBase.ConsoleExtensions.InputHistoryEnabled*
+  name: InputHistoryEnabled
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_InputHistoryEnabled_
+  commentId: Overload:KS.ConsoleBase.ConsoleExtensions.InputHistoryEnabled
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ConsoleExtensions.InputHistoryEnabled
+  nameWithType: ConsoleExtensions.InputHistoryEnabled
 - uid: KS.ConsoleBase.ConsoleExtensions.PercentRepeat(System.Int32,System.Int32,System.Int32)
   name: PercentRepeat(int, int, int)
   href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_PercentRepeat_System_Int32_System_Int32_System_Int32_
@@ -1412,6 +1451,32 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.ConsoleExtensions.SetTitle
   nameWithType: ConsoleExtensions.SetTitle
+- uid: KS.ConsoleBase.ConsoleExtensions.UseNewColorSelector
+  name: UseNewColorSelector
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_UseNewColorSelector
+  commentId: P:KS.ConsoleBase.ConsoleExtensions.UseNewColorSelector
+  fullName: KS.ConsoleBase.ConsoleExtensions.UseNewColorSelector
+  nameWithType: ConsoleExtensions.UseNewColorSelector
+- uid: KS.ConsoleBase.ConsoleExtensions.UseNewColorSelector*
+  name: UseNewColorSelector
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_UseNewColorSelector_
+  commentId: Overload:KS.ConsoleBase.ConsoleExtensions.UseNewColorSelector
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ConsoleExtensions.UseNewColorSelector
+  nameWithType: ConsoleExtensions.UseNewColorSelector
+- uid: KS.ConsoleBase.ConsoleExtensions.WrapListOutputs
+  name: WrapListOutputs
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_WrapListOutputs
+  commentId: P:KS.ConsoleBase.ConsoleExtensions.WrapListOutputs
+  fullName: KS.ConsoleBase.ConsoleExtensions.WrapListOutputs
+  nameWithType: ConsoleExtensions.WrapListOutputs
+- uid: KS.ConsoleBase.ConsoleExtensions.WrapListOutputs*
+  name: WrapListOutputs
+  href: api/KS.ConsoleBase.ConsoleExtensions.html#KS_ConsoleBase_ConsoleExtensions_WrapListOutputs_
+  commentId: Overload:KS.ConsoleBase.ConsoleExtensions.WrapListOutputs
+  isSpec: "True"
+  fullName: KS.ConsoleBase.ConsoleExtensions.WrapListOutputs
+  nameWithType: ConsoleExtensions.WrapListOutputs
 - uid: KS.ConsoleBase.ConsoleResizeListener
   name: ConsoleResizeListener
   href: api/KS.ConsoleBase.ConsoleResizeListener.html
@@ -9349,6 +9414,19 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.CustomBanner
   nameWithType: WelcomeMessage.CustomBanner
+- uid: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.DevNoticeConsented
+  name: DevNoticeConsented
+  href: api/KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#KS_ConsoleBase_Writers_MiscWriters_WelcomeMessage_DevNoticeConsented
+  commentId: P:KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.DevNoticeConsented
+  fullName: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.DevNoticeConsented
+  nameWithType: WelcomeMessage.DevNoticeConsented
+- uid: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.DevNoticeConsented*
+  name: DevNoticeConsented
+  href: api/KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#KS_ConsoleBase_Writers_MiscWriters_WelcomeMessage_DevNoticeConsented_
+  commentId: Overload:KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.DevNoticeConsented
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.DevNoticeConsented
+  nameWithType: WelcomeMessage.DevNoticeConsented
 - uid: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.GetCustomBanner
   name: GetCustomBanner()
   href: api/KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#KS_ConsoleBase_Writers_MiscWriters_WelcomeMessage_GetCustomBanner
@@ -9362,6 +9440,45 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.GetCustomBanner
   nameWithType: WelcomeMessage.GetCustomBanner
+- uid: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowAppInfoOnBoot
+  name: ShowAppInfoOnBoot
+  href: api/KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#KS_ConsoleBase_Writers_MiscWriters_WelcomeMessage_ShowAppInfoOnBoot
+  commentId: P:KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowAppInfoOnBoot
+  fullName: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowAppInfoOnBoot
+  nameWithType: WelcomeMessage.ShowAppInfoOnBoot
+- uid: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowAppInfoOnBoot*
+  name: ShowAppInfoOnBoot
+  href: api/KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#KS_ConsoleBase_Writers_MiscWriters_WelcomeMessage_ShowAppInfoOnBoot_
+  commentId: Overload:KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowAppInfoOnBoot
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowAppInfoOnBoot
+  nameWithType: WelcomeMessage.ShowAppInfoOnBoot
+- uid: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowTip
+  name: ShowTip
+  href: api/KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#KS_ConsoleBase_Writers_MiscWriters_WelcomeMessage_ShowTip
+  commentId: P:KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowTip
+  fullName: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowTip
+  nameWithType: WelcomeMessage.ShowTip
+- uid: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowTip*
+  name: ShowTip
+  href: api/KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#KS_ConsoleBase_Writers_MiscWriters_WelcomeMessage_ShowTip_
+  commentId: Overload:KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowTip
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowTip
+  nameWithType: WelcomeMessage.ShowTip
+- uid: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.StartScroll
+  name: StartScroll
+  href: api/KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#KS_ConsoleBase_Writers_MiscWriters_WelcomeMessage_StartScroll
+  commentId: P:KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.StartScroll
+  fullName: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.StartScroll
+  nameWithType: WelcomeMessage.StartScroll
+- uid: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.StartScroll*
+  name: StartScroll
+  href: api/KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#KS_ConsoleBase_Writers_MiscWriters_WelcomeMessage_StartScroll_
+  commentId: Overload:KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.StartScroll
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.StartScroll
+  nameWithType: WelcomeMessage.StartScroll
 - uid: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.WriteLicense
   name: WriteLicense()
   href: api/KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#KS_ConsoleBase_Writers_MiscWriters_WelcomeMessage_WriteLicense
@@ -18907,6 +19024,32 @@ references:
   commentId: T:KS.Files.Filesystem
   fullName: KS.Files.Filesystem
   nameWithType: Filesystem
+- uid: KS.Files.Filesystem.FullParseMode
+  name: FullParseMode
+  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_FullParseMode
+  commentId: P:KS.Files.Filesystem.FullParseMode
+  fullName: KS.Files.Filesystem.FullParseMode
+  nameWithType: Filesystem.FullParseMode
+- uid: KS.Files.Filesystem.FullParseMode*
+  name: FullParseMode
+  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_FullParseMode_
+  commentId: Overload:KS.Files.Filesystem.FullParseMode
+  isSpec: "True"
+  fullName: KS.Files.Filesystem.FullParseMode
+  nameWithType: Filesystem.FullParseMode
+- uid: KS.Files.Filesystem.HiddenFiles
+  name: HiddenFiles
+  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_HiddenFiles
+  commentId: P:KS.Files.Filesystem.HiddenFiles
+  fullName: KS.Files.Filesystem.HiddenFiles
+  nameWithType: Filesystem.HiddenFiles
+- uid: KS.Files.Filesystem.HiddenFiles*
+  name: HiddenFiles
+  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_HiddenFiles_
+  commentId: Overload:KS.Files.Filesystem.HiddenFiles
+  isSpec: "True"
+  fullName: KS.Files.Filesystem.HiddenFiles
+  nameWithType: Filesystem.HiddenFiles
 - uid: KS.Files.Filesystem.IsFileLocked(System.String)
   name: IsFileLocked(string)
   href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_IsFileLocked_System_String_
@@ -18980,6 +19123,19 @@ references:
   isSpec: "True"
   fullName: KS.Files.Filesystem.NeutralizePath
   nameWithType: Filesystem.NeutralizePath
+- uid: KS.Files.Filesystem.PrintLineNumbers
+  name: PrintLineNumbers
+  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_PrintLineNumbers
+  commentId: P:KS.Files.Filesystem.PrintLineNumbers
+  fullName: KS.Files.Filesystem.PrintLineNumbers
+  nameWithType: Filesystem.PrintLineNumbers
+- uid: KS.Files.Filesystem.PrintLineNumbers*
+  name: PrintLineNumbers
+  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_PrintLineNumbers_
+  commentId: Overload:KS.Files.Filesystem.PrintLineNumbers
+  isSpec: "True"
+  fullName: KS.Files.Filesystem.PrintLineNumbers
+  nameWithType: Filesystem.PrintLineNumbers
 - uid: KS.Files.Filesystem.ShowFilesystemProgress
   name: ShowFilesystemProgress
   href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ShowFilesystemProgress
@@ -18993,6 +19149,19 @@ references:
   isSpec: "True"
   fullName: KS.Files.Filesystem.ShowFilesystemProgress
   nameWithType: Filesystem.ShowFilesystemProgress
+- uid: KS.Files.Filesystem.SuppressUnauthorizedMessages
+  name: SuppressUnauthorizedMessages
+  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SuppressUnauthorizedMessages
+  commentId: P:KS.Files.Filesystem.SuppressUnauthorizedMessages
+  fullName: KS.Files.Filesystem.SuppressUnauthorizedMessages
+  nameWithType: Filesystem.SuppressUnauthorizedMessages
+- uid: KS.Files.Filesystem.SuppressUnauthorizedMessages*
+  name: SuppressUnauthorizedMessages
+  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SuppressUnauthorizedMessages_
+  commentId: Overload:KS.Files.Filesystem.SuppressUnauthorizedMessages
+  isSpec: "True"
+  fullName: KS.Files.Filesystem.SuppressUnauthorizedMessages
+  nameWithType: Filesystem.SuppressUnauthorizedMessages
 - uid: KS.Files.Filesystem.ThrowOnInvalidPath(System.String)
   name: ThrowOnInvalidPath(string)
   href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ThrowOnInvalidPath_System_String_
@@ -25199,649 +25368,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelSaverConfig.SettingsEntries
   nameWithType: KernelSaverConfig.SettingsEntries
-- uid: KS.Kernel.Configuration.KernelFlags
-  name: KernelFlags
-  href: api/KS.Kernel.Configuration.KernelFlags.html
-  commentId: T:KS.Kernel.Configuration.KernelFlags
-  fullName: KS.Kernel.Configuration.KernelFlags
-  nameWithType: KernelFlags
-- uid: KS.Kernel.Configuration.KernelFlags.AllowUntrustedMods
-  name: AllowUntrustedMods
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_AllowUntrustedMods
-  commentId: P:KS.Kernel.Configuration.KernelFlags.AllowUntrustedMods
-  fullName: KS.Kernel.Configuration.KernelFlags.AllowUntrustedMods
-  nameWithType: KernelFlags.AllowUntrustedMods
-- uid: KS.Kernel.Configuration.KernelFlags.AllowUntrustedMods*
-  name: AllowUntrustedMods
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_AllowUntrustedMods_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.AllowUntrustedMods
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.AllowUntrustedMods
-  nameWithType: KernelFlags.AllowUntrustedMods
-- uid: KS.Kernel.Configuration.KernelFlags.AutoDownloadUpdate
-  name: AutoDownloadUpdate
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_AutoDownloadUpdate
-  commentId: P:KS.Kernel.Configuration.KernelFlags.AutoDownloadUpdate
-  fullName: KS.Kernel.Configuration.KernelFlags.AutoDownloadUpdate
-  nameWithType: KernelFlags.AutoDownloadUpdate
-- uid: KS.Kernel.Configuration.KernelFlags.AutoDownloadUpdate*
-  name: AutoDownloadUpdate
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_AutoDownloadUpdate_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.AutoDownloadUpdate
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.AutoDownloadUpdate
-  nameWithType: KernelFlags.AutoDownloadUpdate
-- uid: KS.Kernel.Configuration.KernelFlags.BeepOnShutdown
-  name: BeepOnShutdown
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_BeepOnShutdown
-  commentId: P:KS.Kernel.Configuration.KernelFlags.BeepOnShutdown
-  fullName: KS.Kernel.Configuration.KernelFlags.BeepOnShutdown
-  nameWithType: KernelFlags.BeepOnShutdown
-- uid: KS.Kernel.Configuration.KernelFlags.BeepOnShutdown*
-  name: BeepOnShutdown
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_BeepOnShutdown_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.BeepOnShutdown
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.BeepOnShutdown
-  nameWithType: KernelFlags.BeepOnShutdown
-- uid: KS.Kernel.Configuration.KernelFlags.CheckUpdateStart
-  name: CheckUpdateStart
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_CheckUpdateStart
-  commentId: P:KS.Kernel.Configuration.KernelFlags.CheckUpdateStart
-  fullName: KS.Kernel.Configuration.KernelFlags.CheckUpdateStart
-  nameWithType: KernelFlags.CheckUpdateStart
-- uid: KS.Kernel.Configuration.KernelFlags.CheckUpdateStart*
-  name: CheckUpdateStart
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_CheckUpdateStart_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.CheckUpdateStart
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.CheckUpdateStart
-  nameWithType: KernelFlags.CheckUpdateStart
-- uid: KS.Kernel.Configuration.KernelFlags.ClearOnLogin
-  name: ClearOnLogin
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ClearOnLogin
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ClearOnLogin
-  fullName: KS.Kernel.Configuration.KernelFlags.ClearOnLogin
-  nameWithType: KernelFlags.ClearOnLogin
-- uid: KS.Kernel.Configuration.KernelFlags.ClearOnLogin*
-  name: ClearOnLogin
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ClearOnLogin_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ClearOnLogin
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ClearOnLogin
-  nameWithType: KernelFlags.ClearOnLogin
-- uid: KS.Kernel.Configuration.KernelFlags.ConsoleSupportsTrueColor
-  name: ConsoleSupportsTrueColor
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ConsoleSupportsTrueColor
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ConsoleSupportsTrueColor
-  fullName: KS.Kernel.Configuration.KernelFlags.ConsoleSupportsTrueColor
-  nameWithType: KernelFlags.ConsoleSupportsTrueColor
-- uid: KS.Kernel.Configuration.KernelFlags.ConsoleSupportsTrueColor*
-  name: ConsoleSupportsTrueColor
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ConsoleSupportsTrueColor_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ConsoleSupportsTrueColor
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ConsoleSupportsTrueColor
-  nameWithType: KernelFlags.ConsoleSupportsTrueColor
-- uid: KS.Kernel.Configuration.KernelFlags.CornerTimeDate
-  name: CornerTimeDate
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_CornerTimeDate
-  commentId: P:KS.Kernel.Configuration.KernelFlags.CornerTimeDate
-  fullName: KS.Kernel.Configuration.KernelFlags.CornerTimeDate
-  nameWithType: KernelFlags.CornerTimeDate
-- uid: KS.Kernel.Configuration.KernelFlags.CornerTimeDate*
-  name: CornerTimeDate
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_CornerTimeDate_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.CornerTimeDate
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.CornerTimeDate
-  nameWithType: KernelFlags.CornerTimeDate
-- uid: KS.Kernel.Configuration.KernelFlags.DelayOnShutdown
-  name: DelayOnShutdown
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_DelayOnShutdown
-  commentId: P:KS.Kernel.Configuration.KernelFlags.DelayOnShutdown
-  fullName: KS.Kernel.Configuration.KernelFlags.DelayOnShutdown
-  nameWithType: KernelFlags.DelayOnShutdown
-- uid: KS.Kernel.Configuration.KernelFlags.DelayOnShutdown*
-  name: DelayOnShutdown
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_DelayOnShutdown_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.DelayOnShutdown
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.DelayOnShutdown
-  nameWithType: KernelFlags.DelayOnShutdown
-- uid: KS.Kernel.Configuration.KernelFlags.DevNoticeConsented
-  name: DevNoticeConsented
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_DevNoticeConsented
-  commentId: P:KS.Kernel.Configuration.KernelFlags.DevNoticeConsented
-  fullName: KS.Kernel.Configuration.KernelFlags.DevNoticeConsented
-  nameWithType: KernelFlags.DevNoticeConsented
-- uid: KS.Kernel.Configuration.KernelFlags.DevNoticeConsented*
-  name: DevNoticeConsented
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_DevNoticeConsented_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.DevNoticeConsented
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.DevNoticeConsented
-  nameWithType: KernelFlags.DevNoticeConsented
-- uid: KS.Kernel.Configuration.KernelFlags.DrawBorderNotification
-  name: DrawBorderNotification
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_DrawBorderNotification
-  commentId: P:KS.Kernel.Configuration.KernelFlags.DrawBorderNotification
-  fullName: KS.Kernel.Configuration.KernelFlags.DrawBorderNotification
-  nameWithType: KernelFlags.DrawBorderNotification
-- uid: KS.Kernel.Configuration.KernelFlags.DrawBorderNotification*
-  name: DrawBorderNotification
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_DrawBorderNotification_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.DrawBorderNotification
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.DrawBorderNotification
-  nameWithType: KernelFlags.DrawBorderNotification
-- uid: KS.Kernel.Configuration.KernelFlags.EnableScrollBarInSelection
-  name: EnableScrollBarInSelection
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_EnableScrollBarInSelection
-  commentId: P:KS.Kernel.Configuration.KernelFlags.EnableScrollBarInSelection
-  fullName: KS.Kernel.Configuration.KernelFlags.EnableScrollBarInSelection
-  nameWithType: KernelFlags.EnableScrollBarInSelection
-- uid: KS.Kernel.Configuration.KernelFlags.EnableScrollBarInSelection*
-  name: EnableScrollBarInSelection
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_EnableScrollBarInSelection_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.EnableScrollBarInSelection
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.EnableScrollBarInSelection
-  nameWithType: KernelFlags.EnableScrollBarInSelection
-- uid: KS.Kernel.Configuration.KernelFlags.EnableSplash
-  name: EnableSplash
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_EnableSplash
-  commentId: P:KS.Kernel.Configuration.KernelFlags.EnableSplash
-  fullName: KS.Kernel.Configuration.KernelFlags.EnableSplash
-  nameWithType: KernelFlags.EnableSplash
-- uid: KS.Kernel.Configuration.KernelFlags.EnableSplash*
-  name: EnableSplash
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_EnableSplash_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.EnableSplash
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.EnableSplash
-  nameWithType: KernelFlags.EnableSplash
-- uid: KS.Kernel.Configuration.KernelFlags.EventDebug
-  name: EventDebug
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_EventDebug
-  commentId: P:KS.Kernel.Configuration.KernelFlags.EventDebug
-  fullName: KS.Kernel.Configuration.KernelFlags.EventDebug
-  nameWithType: KernelFlags.EventDebug
-- uid: KS.Kernel.Configuration.KernelFlags.EventDebug*
-  name: EventDebug
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_EventDebug_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.EventDebug
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.EventDebug
-  nameWithType: KernelFlags.EventDebug
-- uid: KS.Kernel.Configuration.KernelFlags.FTPFirstProfileOnly
-  name: FTPFirstProfileOnly
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_FTPFirstProfileOnly
-  commentId: P:KS.Kernel.Configuration.KernelFlags.FTPFirstProfileOnly
-  fullName: KS.Kernel.Configuration.KernelFlags.FTPFirstProfileOnly
-  nameWithType: KernelFlags.FTPFirstProfileOnly
-- uid: KS.Kernel.Configuration.KernelFlags.FTPFirstProfileOnly*
-  name: FTPFirstProfileOnly
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_FTPFirstProfileOnly_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.FTPFirstProfileOnly
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.FTPFirstProfileOnly
-  nameWithType: KernelFlags.FTPFirstProfileOnly
-- uid: KS.Kernel.Configuration.KernelFlags.FTPLoggerIP
-  name: FTPLoggerIP
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_FTPLoggerIP
-  commentId: P:KS.Kernel.Configuration.KernelFlags.FTPLoggerIP
-  fullName: KS.Kernel.Configuration.KernelFlags.FTPLoggerIP
-  nameWithType: KernelFlags.FTPLoggerIP
-- uid: KS.Kernel.Configuration.KernelFlags.FTPLoggerIP*
-  name: FTPLoggerIP
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_FTPLoggerIP_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.FTPLoggerIP
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.FTPLoggerIP
-  nameWithType: KernelFlags.FTPLoggerIP
-- uid: KS.Kernel.Configuration.KernelFlags.FTPLoggerUsername
-  name: FTPLoggerUsername
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_FTPLoggerUsername
-  commentId: P:KS.Kernel.Configuration.KernelFlags.FTPLoggerUsername
-  fullName: KS.Kernel.Configuration.KernelFlags.FTPLoggerUsername
-  nameWithType: KernelFlags.FTPLoggerUsername
-- uid: KS.Kernel.Configuration.KernelFlags.FTPLoggerUsername*
-  name: FTPLoggerUsername
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_FTPLoggerUsername_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.FTPLoggerUsername
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.FTPLoggerUsername
-  nameWithType: KernelFlags.FTPLoggerUsername
-- uid: KS.Kernel.Configuration.KernelFlags.FullParseMode
-  name: FullParseMode
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_FullParseMode
-  commentId: P:KS.Kernel.Configuration.KernelFlags.FullParseMode
-  fullName: KS.Kernel.Configuration.KernelFlags.FullParseMode
-  nameWithType: KernelFlags.FullParseMode
-- uid: KS.Kernel.Configuration.KernelFlags.FullParseMode*
-  name: FullParseMode
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_FullParseMode_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.FullParseMode
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.FullParseMode
-  nameWithType: KernelFlags.FullParseMode
-- uid: KS.Kernel.Configuration.KernelFlags.HiddenFiles
-  name: HiddenFiles
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_HiddenFiles
-  commentId: P:KS.Kernel.Configuration.KernelFlags.HiddenFiles
-  fullName: KS.Kernel.Configuration.KernelFlags.HiddenFiles
-  nameWithType: KernelFlags.HiddenFiles
-- uid: KS.Kernel.Configuration.KernelFlags.HiddenFiles*
-  name: HiddenFiles
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_HiddenFiles_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.HiddenFiles
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.HiddenFiles
-  nameWithType: KernelFlags.HiddenFiles
-- uid: KS.Kernel.Configuration.KernelFlags.InputHistoryEnabled
-  name: InputHistoryEnabled
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_InputHistoryEnabled
-  commentId: P:KS.Kernel.Configuration.KernelFlags.InputHistoryEnabled
-  fullName: KS.Kernel.Configuration.KernelFlags.InputHistoryEnabled
-  nameWithType: KernelFlags.InputHistoryEnabled
-- uid: KS.Kernel.Configuration.KernelFlags.InputHistoryEnabled*
-  name: InputHistoryEnabled
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_InputHistoryEnabled_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.InputHistoryEnabled
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.InputHistoryEnabled
-  nameWithType: KernelFlags.InputHistoryEnabled
-- uid: KS.Kernel.Configuration.KernelFlags.LangChangeCulture
-  name: LangChangeCulture
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_LangChangeCulture
-  commentId: P:KS.Kernel.Configuration.KernelFlags.LangChangeCulture
-  fullName: KS.Kernel.Configuration.KernelFlags.LangChangeCulture
-  nameWithType: KernelFlags.LangChangeCulture
-- uid: KS.Kernel.Configuration.KernelFlags.LangChangeCulture*
-  name: LangChangeCulture
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_LangChangeCulture_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.LangChangeCulture
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.LangChangeCulture
-  nameWithType: KernelFlags.LangChangeCulture
-- uid: KS.Kernel.Configuration.KernelFlags.LongTimeDate
-  name: LongTimeDate
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_LongTimeDate
-  commentId: P:KS.Kernel.Configuration.KernelFlags.LongTimeDate
-  fullName: KS.Kernel.Configuration.KernelFlags.LongTimeDate
-  nameWithType: KernelFlags.LongTimeDate
-- uid: KS.Kernel.Configuration.KernelFlags.LongTimeDate*
-  name: LongTimeDate
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_LongTimeDate_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.LongTimeDate
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.LongTimeDate
-  nameWithType: KernelFlags.LongTimeDate
-- uid: KS.Kernel.Configuration.KernelFlags.NotifyFaultsBoot
-  name: NotifyFaultsBoot
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_NotifyFaultsBoot
-  commentId: P:KS.Kernel.Configuration.KernelFlags.NotifyFaultsBoot
-  fullName: KS.Kernel.Configuration.KernelFlags.NotifyFaultsBoot
-  nameWithType: KernelFlags.NotifyFaultsBoot
-- uid: KS.Kernel.Configuration.KernelFlags.NotifyFaultsBoot*
-  name: NotifyFaultsBoot
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_NotifyFaultsBoot_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.NotifyFaultsBoot
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.NotifyFaultsBoot
-  nameWithType: KernelFlags.NotifyFaultsBoot
-- uid: KS.Kernel.Configuration.KernelFlags.NotifyOnRemoteDebugConnectionError
-  name: NotifyOnRemoteDebugConnectionError
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_NotifyOnRemoteDebugConnectionError
-  commentId: P:KS.Kernel.Configuration.KernelFlags.NotifyOnRemoteDebugConnectionError
-  fullName: KS.Kernel.Configuration.KernelFlags.NotifyOnRemoteDebugConnectionError
-  nameWithType: KernelFlags.NotifyOnRemoteDebugConnectionError
-- uid: KS.Kernel.Configuration.KernelFlags.NotifyOnRemoteDebugConnectionError*
-  name: NotifyOnRemoteDebugConnectionError
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_NotifyOnRemoteDebugConnectionError_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.NotifyOnRemoteDebugConnectionError
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.NotifyOnRemoteDebugConnectionError
-  nameWithType: KernelFlags.NotifyOnRemoteDebugConnectionError
-- uid: KS.Kernel.Configuration.KernelFlags.PrintLineNumbers
-  name: PrintLineNumbers
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_PrintLineNumbers
-  commentId: P:KS.Kernel.Configuration.KernelFlags.PrintLineNumbers
-  fullName: KS.Kernel.Configuration.KernelFlags.PrintLineNumbers
-  nameWithType: KernelFlags.PrintLineNumbers
-- uid: KS.Kernel.Configuration.KernelFlags.PrintLineNumbers*
-  name: PrintLineNumbers
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_PrintLineNumbers_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.PrintLineNumbers
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.PrintLineNumbers
-  nameWithType: KernelFlags.PrintLineNumbers
-- uid: KS.Kernel.Configuration.KernelFlags.QuietHardwareProbe
-  name: QuietHardwareProbe
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_QuietHardwareProbe
-  commentId: P:KS.Kernel.Configuration.KernelFlags.QuietHardwareProbe
-  fullName: KS.Kernel.Configuration.KernelFlags.QuietHardwareProbe
-  nameWithType: KernelFlags.QuietHardwareProbe
-- uid: KS.Kernel.Configuration.KernelFlags.QuietHardwareProbe*
-  name: QuietHardwareProbe
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_QuietHardwareProbe_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.QuietHardwareProbe
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.QuietHardwareProbe
-  nameWithType: KernelFlags.QuietHardwareProbe
-- uid: KS.Kernel.Configuration.KernelFlags.RecordChatToDebugLog
-  name: RecordChatToDebugLog
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_RecordChatToDebugLog
-  commentId: P:KS.Kernel.Configuration.KernelFlags.RecordChatToDebugLog
-  fullName: KS.Kernel.Configuration.KernelFlags.RecordChatToDebugLog
-  nameWithType: KernelFlags.RecordChatToDebugLog
-- uid: KS.Kernel.Configuration.KernelFlags.RecordChatToDebugLog*
-  name: RecordChatToDebugLog
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_RecordChatToDebugLog_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.RecordChatToDebugLog
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.RecordChatToDebugLog
-  nameWithType: KernelFlags.RecordChatToDebugLog
-- uid: KS.Kernel.Configuration.KernelFlags.ShowAddonCommandsCount
-  name: ShowAddonCommandsCount
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowAddonCommandsCount
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ShowAddonCommandsCount
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowAddonCommandsCount
-  nameWithType: KernelFlags.ShowAddonCommandsCount
-- uid: KS.Kernel.Configuration.KernelFlags.ShowAddonCommandsCount*
-  name: ShowAddonCommandsCount
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowAddonCommandsCount_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ShowAddonCommandsCount
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowAddonCommandsCount
-  nameWithType: KernelFlags.ShowAddonCommandsCount
-- uid: KS.Kernel.Configuration.KernelFlags.ShowAppInfoOnBoot
-  name: ShowAppInfoOnBoot
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowAppInfoOnBoot
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ShowAppInfoOnBoot
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowAppInfoOnBoot
-  nameWithType: KernelFlags.ShowAppInfoOnBoot
-- uid: KS.Kernel.Configuration.KernelFlags.ShowAppInfoOnBoot*
-  name: ShowAppInfoOnBoot
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowAppInfoOnBoot_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ShowAppInfoOnBoot
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowAppInfoOnBoot
-  nameWithType: KernelFlags.ShowAppInfoOnBoot
-- uid: KS.Kernel.Configuration.KernelFlags.ShowAvailableUsers
-  name: ShowAvailableUsers
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowAvailableUsers
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ShowAvailableUsers
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowAvailableUsers
-  nameWithType: KernelFlags.ShowAvailableUsers
-- uid: KS.Kernel.Configuration.KernelFlags.ShowAvailableUsers*
-  name: ShowAvailableUsers
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowAvailableUsers_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ShowAvailableUsers
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowAvailableUsers
-  nameWithType: KernelFlags.ShowAvailableUsers
-- uid: KS.Kernel.Configuration.KernelFlags.ShowCommandsCount
-  name: ShowCommandsCount
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowCommandsCount
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ShowCommandsCount
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowCommandsCount
-  nameWithType: KernelFlags.ShowCommandsCount
-- uid: KS.Kernel.Configuration.KernelFlags.ShowCommandsCount*
-  name: ShowCommandsCount
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowCommandsCount_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ShowCommandsCount
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowCommandsCount
-  nameWithType: KernelFlags.ShowCommandsCount
-- uid: KS.Kernel.Configuration.KernelFlags.ShowCurrentTimeBeforeLogin
-  name: ShowCurrentTimeBeforeLogin
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowCurrentTimeBeforeLogin
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ShowCurrentTimeBeforeLogin
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowCurrentTimeBeforeLogin
-  nameWithType: KernelFlags.ShowCurrentTimeBeforeLogin
-- uid: KS.Kernel.Configuration.KernelFlags.ShowCurrentTimeBeforeLogin*
-  name: ShowCurrentTimeBeforeLogin
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowCurrentTimeBeforeLogin_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ShowCurrentTimeBeforeLogin
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowCurrentTimeBeforeLogin
-  nameWithType: KernelFlags.ShowCurrentTimeBeforeLogin
-- uid: KS.Kernel.Configuration.KernelFlags.ShowMAL
-  name: ShowMAL
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowMAL
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ShowMAL
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowMAL
-  nameWithType: KernelFlags.ShowMAL
-- uid: KS.Kernel.Configuration.KernelFlags.ShowMAL*
-  name: ShowMAL
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowMAL_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ShowMAL
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowMAL
-  nameWithType: KernelFlags.ShowMAL
-- uid: KS.Kernel.Configuration.KernelFlags.ShowMOTD
-  name: ShowMOTD
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowMOTD
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ShowMOTD
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowMOTD
-  nameWithType: KernelFlags.ShowMOTD
-- uid: KS.Kernel.Configuration.KernelFlags.ShowMOTD*
-  name: ShowMOTD
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowMOTD_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ShowMOTD
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowMOTD
-  nameWithType: KernelFlags.ShowMOTD
-- uid: KS.Kernel.Configuration.KernelFlags.ShowModCommandsCount
-  name: ShowModCommandsCount
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowModCommandsCount
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ShowModCommandsCount
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowModCommandsCount
-  nameWithType: KernelFlags.ShowModCommandsCount
-- uid: KS.Kernel.Configuration.KernelFlags.ShowModCommandsCount*
-  name: ShowModCommandsCount
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowModCommandsCount_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ShowModCommandsCount
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowModCommandsCount
-  nameWithType: KernelFlags.ShowModCommandsCount
-- uid: KS.Kernel.Configuration.KernelFlags.ShowProgress
-  name: ShowProgress
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowProgress
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ShowProgress
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowProgress
-  nameWithType: KernelFlags.ShowProgress
-- uid: KS.Kernel.Configuration.KernelFlags.ShowProgress*
-  name: ShowProgress
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowProgress_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ShowProgress
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowProgress
-  nameWithType: KernelFlags.ShowProgress
-- uid: KS.Kernel.Configuration.KernelFlags.ShowShellAliasesCount
-  name: ShowShellAliasesCount
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowShellAliasesCount
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ShowShellAliasesCount
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowShellAliasesCount
-  nameWithType: KernelFlags.ShowShellAliasesCount
-- uid: KS.Kernel.Configuration.KernelFlags.ShowShellAliasesCount*
-  name: ShowShellAliasesCount
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowShellAliasesCount_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ShowShellAliasesCount
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowShellAliasesCount
-  nameWithType: KernelFlags.ShowShellAliasesCount
-- uid: KS.Kernel.Configuration.KernelFlags.ShowShellCommandsCount
-  name: ShowShellCommandsCount
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowShellCommandsCount
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ShowShellCommandsCount
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowShellCommandsCount
-  nameWithType: KernelFlags.ShowShellCommandsCount
-- uid: KS.Kernel.Configuration.KernelFlags.ShowShellCommandsCount*
-  name: ShowShellCommandsCount
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowShellCommandsCount_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ShowShellCommandsCount
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowShellCommandsCount
-  nameWithType: KernelFlags.ShowShellCommandsCount
-- uid: KS.Kernel.Configuration.KernelFlags.ShowStackTraceOnKernelError
-  name: ShowStackTraceOnKernelError
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowStackTraceOnKernelError
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ShowStackTraceOnKernelError
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowStackTraceOnKernelError
-  nameWithType: KernelFlags.ShowStackTraceOnKernelError
-- uid: KS.Kernel.Configuration.KernelFlags.ShowStackTraceOnKernelError*
-  name: ShowStackTraceOnKernelError
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowStackTraceOnKernelError_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ShowStackTraceOnKernelError
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowStackTraceOnKernelError
-  nameWithType: KernelFlags.ShowStackTraceOnKernelError
-- uid: KS.Kernel.Configuration.KernelFlags.ShowStageFinishTimes
-  name: ShowStageFinishTimes
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowStageFinishTimes
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ShowStageFinishTimes
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowStageFinishTimes
-  nameWithType: KernelFlags.ShowStageFinishTimes
-- uid: KS.Kernel.Configuration.KernelFlags.ShowStageFinishTimes*
-  name: ShowStageFinishTimes
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowStageFinishTimes_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ShowStageFinishTimes
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowStageFinishTimes
-  nameWithType: KernelFlags.ShowStageFinishTimes
-- uid: KS.Kernel.Configuration.KernelFlags.ShowTip
-  name: ShowTip
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowTip
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ShowTip
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowTip
-  nameWithType: KernelFlags.ShowTip
-- uid: KS.Kernel.Configuration.KernelFlags.ShowTip*
-  name: ShowTip
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowTip_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ShowTip
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowTip
-  nameWithType: KernelFlags.ShowTip
-- uid: KS.Kernel.Configuration.KernelFlags.ShowUnifiedCommandsCount
-  name: ShowUnifiedCommandsCount
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowUnifiedCommandsCount
-  commentId: P:KS.Kernel.Configuration.KernelFlags.ShowUnifiedCommandsCount
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowUnifiedCommandsCount
-  nameWithType: KernelFlags.ShowUnifiedCommandsCount
-- uid: KS.Kernel.Configuration.KernelFlags.ShowUnifiedCommandsCount*
-  name: ShowUnifiedCommandsCount
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_ShowUnifiedCommandsCount_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.ShowUnifiedCommandsCount
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.ShowUnifiedCommandsCount
-  nameWithType: KernelFlags.ShowUnifiedCommandsCount
-- uid: KS.Kernel.Configuration.KernelFlags.SimHelp
-  name: SimHelp
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_SimHelp
-  commentId: P:KS.Kernel.Configuration.KernelFlags.SimHelp
-  fullName: KS.Kernel.Configuration.KernelFlags.SimHelp
-  nameWithType: KernelFlags.SimHelp
-- uid: KS.Kernel.Configuration.KernelFlags.SimHelp*
-  name: SimHelp
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_SimHelp_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.SimHelp
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.SimHelp
-  nameWithType: KernelFlags.SimHelp
-- uid: KS.Kernel.Configuration.KernelFlags.SimulateNoAPM
-  name: SimulateNoAPM
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_SimulateNoAPM
-  commentId: P:KS.Kernel.Configuration.KernelFlags.SimulateNoAPM
-  fullName: KS.Kernel.Configuration.KernelFlags.SimulateNoAPM
-  nameWithType: KernelFlags.SimulateNoAPM
-- uid: KS.Kernel.Configuration.KernelFlags.SimulateNoAPM*
-  name: SimulateNoAPM
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_SimulateNoAPM_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.SimulateNoAPM
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.SimulateNoAPM
-  nameWithType: KernelFlags.SimulateNoAPM
-- uid: KS.Kernel.Configuration.KernelFlags.StartKernelMods
-  name: StartKernelMods
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_StartKernelMods
-  commentId: P:KS.Kernel.Configuration.KernelFlags.StartKernelMods
-  fullName: KS.Kernel.Configuration.KernelFlags.StartKernelMods
-  nameWithType: KernelFlags.StartKernelMods
-- uid: KS.Kernel.Configuration.KernelFlags.StartKernelMods*
-  name: StartKernelMods
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_StartKernelMods_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.StartKernelMods
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.StartKernelMods
-  nameWithType: KernelFlags.StartKernelMods
-- uid: KS.Kernel.Configuration.KernelFlags.StartScroll
-  name: StartScroll
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_StartScroll
-  commentId: P:KS.Kernel.Configuration.KernelFlags.StartScroll
-  fullName: KS.Kernel.Configuration.KernelFlags.StartScroll
-  nameWithType: KernelFlags.StartScroll
-- uid: KS.Kernel.Configuration.KernelFlags.StartScroll*
-  name: StartScroll
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_StartScroll_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.StartScroll
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.StartScroll
-  nameWithType: KernelFlags.StartScroll
-- uid: KS.Kernel.Configuration.KernelFlags.SuppressUnauthorizedMessages
-  name: SuppressUnauthorizedMessages
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_SuppressUnauthorizedMessages
-  commentId: P:KS.Kernel.Configuration.KernelFlags.SuppressUnauthorizedMessages
-  fullName: KS.Kernel.Configuration.KernelFlags.SuppressUnauthorizedMessages
-  nameWithType: KernelFlags.SuppressUnauthorizedMessages
-- uid: KS.Kernel.Configuration.KernelFlags.SuppressUnauthorizedMessages*
-  name: SuppressUnauthorizedMessages
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_SuppressUnauthorizedMessages_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.SuppressUnauthorizedMessages
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.SuppressUnauthorizedMessages
-  nameWithType: KernelFlags.SuppressUnauthorizedMessages
-- uid: KS.Kernel.Configuration.KernelFlags.UseNewColorSelector
-  name: UseNewColorSelector
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_UseNewColorSelector
-  commentId: P:KS.Kernel.Configuration.KernelFlags.UseNewColorSelector
-  fullName: KS.Kernel.Configuration.KernelFlags.UseNewColorSelector
-  nameWithType: KernelFlags.UseNewColorSelector
-- uid: KS.Kernel.Configuration.KernelFlags.UseNewColorSelector*
-  name: UseNewColorSelector
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_UseNewColorSelector_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.UseNewColorSelector
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.UseNewColorSelector
-  nameWithType: KernelFlags.UseNewColorSelector
-- uid: KS.Kernel.Configuration.KernelFlags.VerboseHardwareProbe
-  name: VerboseHardwareProbe
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_VerboseHardwareProbe
-  commentId: P:KS.Kernel.Configuration.KernelFlags.VerboseHardwareProbe
-  fullName: KS.Kernel.Configuration.KernelFlags.VerboseHardwareProbe
-  nameWithType: KernelFlags.VerboseHardwareProbe
-- uid: KS.Kernel.Configuration.KernelFlags.VerboseHardwareProbe*
-  name: VerboseHardwareProbe
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_VerboseHardwareProbe_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.VerboseHardwareProbe
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.VerboseHardwareProbe
-  nameWithType: KernelFlags.VerboseHardwareProbe
-- uid: KS.Kernel.Configuration.KernelFlags.WrapListOutputs
-  name: WrapListOutputs
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_WrapListOutputs
-  commentId: P:KS.Kernel.Configuration.KernelFlags.WrapListOutputs
-  fullName: KS.Kernel.Configuration.KernelFlags.WrapListOutputs
-  nameWithType: KernelFlags.WrapListOutputs
-- uid: KS.Kernel.Configuration.KernelFlags.WrapListOutputs*
-  name: WrapListOutputs
-  href: api/KS.Kernel.Configuration.KernelFlags.html#KS_Kernel_Configuration_KernelFlags_WrapListOutputs_
-  commentId: Overload:KS.Kernel.Configuration.KernelFlags.WrapListOutputs
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.KernelFlags.WrapListOutputs
-  nameWithType: KernelFlags.WrapListOutputs
 - uid: KS.Kernel.Configuration.Settings
   name: KS.Kernel.Configuration.Settings
   href: api/KS.Kernel.Configuration.Settings.html
@@ -26578,9 +26104,29 @@ references:
 - uid: KS.Kernel.Debugging.DebugWriter.DebugStackTraces
   name: DebugStackTraces
   href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_DebugStackTraces
-  commentId: F:KS.Kernel.Debugging.DebugWriter.DebugStackTraces
+  commentId: P:KS.Kernel.Debugging.DebugWriter.DebugStackTraces
   fullName: KS.Kernel.Debugging.DebugWriter.DebugStackTraces
   nameWithType: DebugWriter.DebugStackTraces
+- uid: KS.Kernel.Debugging.DebugWriter.DebugStackTraces*
+  name: DebugStackTraces
+  href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_DebugStackTraces_
+  commentId: Overload:KS.Kernel.Debugging.DebugWriter.DebugStackTraces
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.DebugWriter.DebugStackTraces
+  nameWithType: DebugWriter.DebugStackTraces
+- uid: KS.Kernel.Debugging.DebugWriter.EventDebug
+  name: EventDebug
+  href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_EventDebug
+  commentId: P:KS.Kernel.Debugging.DebugWriter.EventDebug
+  fullName: KS.Kernel.Debugging.DebugWriter.EventDebug
+  nameWithType: DebugWriter.EventDebug
+- uid: KS.Kernel.Debugging.DebugWriter.EventDebug*
+  name: EventDebug
+  href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_EventDebug_
+  commentId: Overload:KS.Kernel.Debugging.DebugWriter.EventDebug
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.DebugWriter.EventDebug
+  nameWithType: DebugWriter.EventDebug
 - uid: KS.Kernel.Debugging.DebugWriter.WriteDebug(KS.Kernel.Debugging.DebugLevel,System.String,System.Object[])
   name: WriteDebug(DebugLevel, string, params object[])
   href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_WriteDebug_KS_Kernel_Debugging_DebugLevel_System_String_System_Object___
@@ -27323,6 +26869,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.ListDevices
   nameWithType: RemoteDebugTools.ListDevices
+- uid: KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.NotifyOnRemoteDebugConnectionError
+  name: NotifyOnRemoteDebugConnectionError
+  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.html#KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_NotifyOnRemoteDebugConnectionError
+  commentId: P:KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.NotifyOnRemoteDebugConnectionError
+  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.NotifyOnRemoteDebugConnectionError
+  nameWithType: RemoteDebugTools.NotifyOnRemoteDebugConnectionError
+- uid: KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.NotifyOnRemoteDebugConnectionError*
+  name: NotifyOnRemoteDebugConnectionError
+  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.html#KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_NotifyOnRemoteDebugConnectionError_
+  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.NotifyOnRemoteDebugConnectionError
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.NotifyOnRemoteDebugConnectionError
+  nameWithType: RemoteDebugTools.NotifyOnRemoteDebugConnectionError
 - uid: KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.PopulateBlockedDevices
   name: PopulateBlockedDevices()
   href: api/KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.html#KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_PopulateBlockedDevices
@@ -27336,6 +26895,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.PopulateBlockedDevices
   nameWithType: RemoteDebugTools.PopulateBlockedDevices
+- uid: KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RecordChatToDebugLog
+  name: RecordChatToDebugLog
+  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.html#KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_RecordChatToDebugLog
+  commentId: P:KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RecordChatToDebugLog
+  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RecordChatToDebugLog
+  nameWithType: RemoteDebugTools.RecordChatToDebugLog
+- uid: KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RecordChatToDebugLog*
+  name: RecordChatToDebugLog
+  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.html#KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_RecordChatToDebugLog_
+  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RecordChatToDebugLog
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RecordChatToDebugLog
+  nameWithType: RemoteDebugTools.RecordChatToDebugLog
 - uid: KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RemoveDevice(System.String)
   name: RemoveDevice(string)
   href: api/KS.Kernel.Debugging.RemoteDebug.RemoteDebugTools.html#KS_Kernel_Debugging_RemoteDebug_RemoteDebugTools_RemoveDevice_System_String_
@@ -29152,6 +28724,19 @@ references:
   commentId: T:KS.Kernel.Hardware.HardwareProbe
   fullName: KS.Kernel.Hardware.HardwareProbe
   nameWithType: HardwareProbe
+- uid: KS.Kernel.Hardware.HardwareProbe.QuietHardwareProbe
+  name: QuietHardwareProbe
+  href: api/KS.Kernel.Hardware.HardwareProbe.html#KS_Kernel_Hardware_HardwareProbe_QuietHardwareProbe
+  commentId: P:KS.Kernel.Hardware.HardwareProbe.QuietHardwareProbe
+  fullName: KS.Kernel.Hardware.HardwareProbe.QuietHardwareProbe
+  nameWithType: HardwareProbe.QuietHardwareProbe
+- uid: KS.Kernel.Hardware.HardwareProbe.QuietHardwareProbe*
+  name: QuietHardwareProbe
+  href: api/KS.Kernel.Hardware.HardwareProbe.html#KS_Kernel_Hardware_HardwareProbe_QuietHardwareProbe_
+  commentId: Overload:KS.Kernel.Hardware.HardwareProbe.QuietHardwareProbe
+  isSpec: "True"
+  fullName: KS.Kernel.Hardware.HardwareProbe.QuietHardwareProbe
+  nameWithType: HardwareProbe.QuietHardwareProbe
 - uid: KS.Kernel.Hardware.HardwareProbe.StartProbing
   name: StartProbing()
   href: api/KS.Kernel.Hardware.HardwareProbe.html#KS_Kernel_Hardware_HardwareProbe_StartProbing
@@ -29165,6 +28750,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Hardware.HardwareProbe.StartProbing
   nameWithType: HardwareProbe.StartProbing
+- uid: KS.Kernel.Hardware.HardwareProbe.VerboseHardwareProbe
+  name: VerboseHardwareProbe
+  href: api/KS.Kernel.Hardware.HardwareProbe.html#KS_Kernel_Hardware_HardwareProbe_VerboseHardwareProbe
+  commentId: P:KS.Kernel.Hardware.HardwareProbe.VerboseHardwareProbe
+  fullName: KS.Kernel.Hardware.HardwareProbe.VerboseHardwareProbe
+  nameWithType: HardwareProbe.VerboseHardwareProbe
+- uid: KS.Kernel.Hardware.HardwareProbe.VerboseHardwareProbe*
+  name: VerboseHardwareProbe
+  href: api/KS.Kernel.Hardware.HardwareProbe.html#KS_Kernel_Hardware_HardwareProbe_VerboseHardwareProbe_
+  commentId: Overload:KS.Kernel.Hardware.HardwareProbe.VerboseHardwareProbe
+  isSpec: "True"
+  fullName: KS.Kernel.Hardware.HardwareProbe.VerboseHardwareProbe
+  nameWithType: HardwareProbe.VerboseHardwareProbe
 - uid: KS.Kernel.Journaling
   name: KS.Kernel.Journaling
   href: api/KS.Kernel.Journaling.html
@@ -29496,6 +29094,32 @@ references:
   commentId: T:KS.Kernel.Power.PowerManager
   fullName: KS.Kernel.Power.PowerManager
   nameWithType: PowerManager
+- uid: KS.Kernel.Power.PowerManager.BeepOnShutdown
+  name: BeepOnShutdown
+  href: api/KS.Kernel.Power.PowerManager.html#KS_Kernel_Power_PowerManager_BeepOnShutdown
+  commentId: P:KS.Kernel.Power.PowerManager.BeepOnShutdown
+  fullName: KS.Kernel.Power.PowerManager.BeepOnShutdown
+  nameWithType: PowerManager.BeepOnShutdown
+- uid: KS.Kernel.Power.PowerManager.BeepOnShutdown*
+  name: BeepOnShutdown
+  href: api/KS.Kernel.Power.PowerManager.html#KS_Kernel_Power_PowerManager_BeepOnShutdown_
+  commentId: Overload:KS.Kernel.Power.PowerManager.BeepOnShutdown
+  isSpec: "True"
+  fullName: KS.Kernel.Power.PowerManager.BeepOnShutdown
+  nameWithType: PowerManager.BeepOnShutdown
+- uid: KS.Kernel.Power.PowerManager.DelayOnShutdown
+  name: DelayOnShutdown
+  href: api/KS.Kernel.Power.PowerManager.html#KS_Kernel_Power_PowerManager_DelayOnShutdown
+  commentId: P:KS.Kernel.Power.PowerManager.DelayOnShutdown
+  fullName: KS.Kernel.Power.PowerManager.DelayOnShutdown
+  nameWithType: PowerManager.DelayOnShutdown
+- uid: KS.Kernel.Power.PowerManager.DelayOnShutdown*
+  name: DelayOnShutdown
+  href: api/KS.Kernel.Power.PowerManager.html#KS_Kernel_Power_PowerManager_DelayOnShutdown_
+  commentId: Overload:KS.Kernel.Power.PowerManager.DelayOnShutdown
+  isSpec: "True"
+  fullName: KS.Kernel.Power.PowerManager.DelayOnShutdown
+  nameWithType: PowerManager.DelayOnShutdown
 - uid: KS.Kernel.Power.PowerManager.KernelUptime
   name: KernelUptime
   href: api/KS.Kernel.Power.PowerManager.html#KS_Kernel_Power_PowerManager_KernelUptime
@@ -29540,6 +29164,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Power.PowerManager.PowerManage
   nameWithType: PowerManager.PowerManage
+- uid: KS.Kernel.Power.PowerManager.SimulateNoAPM
+  name: SimulateNoAPM
+  href: api/KS.Kernel.Power.PowerManager.html#KS_Kernel_Power_PowerManager_SimulateNoAPM
+  commentId: P:KS.Kernel.Power.PowerManager.SimulateNoAPM
+  fullName: KS.Kernel.Power.PowerManager.SimulateNoAPM
+  nameWithType: PowerManager.SimulateNoAPM
+- uid: KS.Kernel.Power.PowerManager.SimulateNoAPM*
+  name: SimulateNoAPM
+  href: api/KS.Kernel.Power.PowerManager.html#KS_Kernel_Power_PowerManager_SimulateNoAPM_
+  commentId: Overload:KS.Kernel.Power.PowerManager.SimulateNoAPM
+  isSpec: "True"
+  fullName: KS.Kernel.Power.PowerManager.SimulateNoAPM
+  nameWithType: PowerManager.SimulateNoAPM
 - uid: KS.Kernel.Power.PowerMode
   name: PowerMode
   href: api/KS.Kernel.Power.PowerMode.html
@@ -31344,6 +30981,19 @@ references:
   commentId: T:KS.Kernel.Time.TimeDateTools
   fullName: KS.Kernel.Time.TimeDateTools
   nameWithType: TimeDateTools
+- uid: KS.Kernel.Time.TimeDateTools.CornerTimeDate
+  name: CornerTimeDate
+  href: api/KS.Kernel.Time.TimeDateTools.html#KS_Kernel_Time_TimeDateTools_CornerTimeDate
+  commentId: P:KS.Kernel.Time.TimeDateTools.CornerTimeDate
+  fullName: KS.Kernel.Time.TimeDateTools.CornerTimeDate
+  nameWithType: TimeDateTools.CornerTimeDate
+- uid: KS.Kernel.Time.TimeDateTools.CornerTimeDate*
+  name: CornerTimeDate
+  href: api/KS.Kernel.Time.TimeDateTools.html#KS_Kernel_Time_TimeDateTools_CornerTimeDate_
+  commentId: Overload:KS.Kernel.Time.TimeDateTools.CornerTimeDate
+  isSpec: "True"
+  fullName: KS.Kernel.Time.TimeDateTools.CornerTimeDate
+  nameWithType: TimeDateTools.CornerTimeDate
 - uid: KS.Kernel.Time.TimeDateTools.GetRemainingTimeFrom(System.DateTime,System.Int32)
   name: GetRemainingTimeFrom(DateTime, int)
   href: api/KS.Kernel.Time.TimeDateTools.html#KS_Kernel_Time_TimeDateTools_GetRemainingTimeFrom_System_DateTime_System_Int32_
@@ -31402,6 +31052,32 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Time.TimeDateTools.KernelDateTimeUtc
   nameWithType: TimeDateTools.KernelDateTimeUtc
+- uid: KS.Kernel.Time.TimeDateTools.LongTimeDate
+  name: LongTimeDate
+  href: api/KS.Kernel.Time.TimeDateTools.html#KS_Kernel_Time_TimeDateTools_LongTimeDate
+  commentId: P:KS.Kernel.Time.TimeDateTools.LongTimeDate
+  fullName: KS.Kernel.Time.TimeDateTools.LongTimeDate
+  nameWithType: TimeDateTools.LongTimeDate
+- uid: KS.Kernel.Time.TimeDateTools.LongTimeDate*
+  name: LongTimeDate
+  href: api/KS.Kernel.Time.TimeDateTools.html#KS_Kernel_Time_TimeDateTools_LongTimeDate_
+  commentId: Overload:KS.Kernel.Time.TimeDateTools.LongTimeDate
+  isSpec: "True"
+  fullName: KS.Kernel.Time.TimeDateTools.LongTimeDate
+  nameWithType: TimeDateTools.LongTimeDate
+- uid: KS.Kernel.Time.TimeDateTools.ShowCurrentTimeBeforeLogin
+  name: ShowCurrentTimeBeforeLogin
+  href: api/KS.Kernel.Time.TimeDateTools.html#KS_Kernel_Time_TimeDateTools_ShowCurrentTimeBeforeLogin
+  commentId: P:KS.Kernel.Time.TimeDateTools.ShowCurrentTimeBeforeLogin
+  fullName: KS.Kernel.Time.TimeDateTools.ShowCurrentTimeBeforeLogin
+  nameWithType: TimeDateTools.ShowCurrentTimeBeforeLogin
+- uid: KS.Kernel.Time.TimeDateTools.ShowCurrentTimeBeforeLogin*
+  name: ShowCurrentTimeBeforeLogin
+  href: api/KS.Kernel.Time.TimeDateTools.html#KS_Kernel_Time_TimeDateTools_ShowCurrentTimeBeforeLogin_
+  commentId: Overload:KS.Kernel.Time.TimeDateTools.ShowCurrentTimeBeforeLogin
+  isSpec: "True"
+  fullName: KS.Kernel.Time.TimeDateTools.ShowCurrentTimeBeforeLogin
+  nameWithType: TimeDateTools.ShowCurrentTimeBeforeLogin
 - uid: KS.Kernel.Time.Timezones
   name: KS.Kernel.Time.Timezones
   href: api/KS.Kernel.Time.Timezones.html
@@ -31696,6 +31372,19 @@ references:
   commentId: T:KS.Kernel.Updates.UpdateManager
   fullName: KS.Kernel.Updates.UpdateManager
   nameWithType: UpdateManager
+- uid: KS.Kernel.Updates.UpdateManager.AutoDownloadUpdate
+  name: AutoDownloadUpdate
+  href: api/KS.Kernel.Updates.UpdateManager.html#KS_Kernel_Updates_UpdateManager_AutoDownloadUpdate
+  commentId: P:KS.Kernel.Updates.UpdateManager.AutoDownloadUpdate
+  fullName: KS.Kernel.Updates.UpdateManager.AutoDownloadUpdate
+  nameWithType: UpdateManager.AutoDownloadUpdate
+- uid: KS.Kernel.Updates.UpdateManager.AutoDownloadUpdate*
+  name: AutoDownloadUpdate
+  href: api/KS.Kernel.Updates.UpdateManager.html#KS_Kernel_Updates_UpdateManager_AutoDownloadUpdate_
+  commentId: Overload:KS.Kernel.Updates.UpdateManager.AutoDownloadUpdate
+  isSpec: "True"
+  fullName: KS.Kernel.Updates.UpdateManager.AutoDownloadUpdate
+  nameWithType: UpdateManager.AutoDownloadUpdate
 - uid: KS.Kernel.Updates.UpdateManager.CheckKernelUpdates
   name: CheckKernelUpdates()
   href: api/KS.Kernel.Updates.UpdateManager.html#KS_Kernel_Updates_UpdateManager_CheckKernelUpdates
@@ -31709,6 +31398,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Updates.UpdateManager.CheckKernelUpdates
   nameWithType: UpdateManager.CheckKernelUpdates
+- uid: KS.Kernel.Updates.UpdateManager.CheckUpdateStart
+  name: CheckUpdateStart
+  href: api/KS.Kernel.Updates.UpdateManager.html#KS_Kernel_Updates_UpdateManager_CheckUpdateStart
+  commentId: P:KS.Kernel.Updates.UpdateManager.CheckUpdateStart
+  fullName: KS.Kernel.Updates.UpdateManager.CheckUpdateStart
+  nameWithType: UpdateManager.CheckUpdateStart
+- uid: KS.Kernel.Updates.UpdateManager.CheckUpdateStart*
+  name: CheckUpdateStart
+  href: api/KS.Kernel.Updates.UpdateManager.html#KS_Kernel_Updates_UpdateManager_CheckUpdateStart_
+  commentId: Overload:KS.Kernel.Updates.UpdateManager.CheckUpdateStart
+  isSpec: "True"
+  fullName: KS.Kernel.Updates.UpdateManager.CheckUpdateStart
+  nameWithType: UpdateManager.CheckUpdateStart
 - uid: KS.Kernel.Updates.UpdateManager.FetchKernelUpdates
   name: FetchKernelUpdates()
   href: api/KS.Kernel.Updates.UpdateManager.html#KS_Kernel_Updates_UpdateManager_FetchKernelUpdates
@@ -32018,6 +31720,19 @@ references:
   isSpec: "True"
   fullName: KS.Languages.LanguageManager.InstallCustomLanguages
   nameWithType: LanguageManager.InstallCustomLanguages
+- uid: KS.Languages.LanguageManager.LangChangeCulture
+  name: LangChangeCulture
+  href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_LangChangeCulture
+  commentId: P:KS.Languages.LanguageManager.LangChangeCulture
+  fullName: KS.Languages.LanguageManager.LangChangeCulture
+  nameWithType: LanguageManager.LangChangeCulture
+- uid: KS.Languages.LanguageManager.LangChangeCulture*
+  name: LangChangeCulture
+  href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_LangChangeCulture_
+  commentId: Overload:KS.Languages.LanguageManager.LangChangeCulture
+  isSpec: "True"
+  fullName: KS.Languages.LanguageManager.LangChangeCulture
+  nameWithType: LanguageManager.LangChangeCulture
 - uid: KS.Languages.LanguageManager.Languages
   name: Languages
   href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_Languages
@@ -32852,6 +32567,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Notifications.NotificationManager.DoNotDisturb
   nameWithType: NotificationManager.DoNotDisturb
+- uid: KS.Misc.Notifications.NotificationManager.DrawBorderNotification
+  name: DrawBorderNotification
+  href: api/KS.Misc.Notifications.NotificationManager.html#KS_Misc_Notifications_NotificationManager_DrawBorderNotification
+  commentId: P:KS.Misc.Notifications.NotificationManager.DrawBorderNotification
+  fullName: KS.Misc.Notifications.NotificationManager.DrawBorderNotification
+  nameWithType: NotificationManager.DrawBorderNotification
+- uid: KS.Misc.Notifications.NotificationManager.DrawBorderNotification*
+  name: DrawBorderNotification
+  href: api/KS.Misc.Notifications.NotificationManager.html#KS_Misc_Notifications_NotificationManager_DrawBorderNotification_
+  commentId: Overload:KS.Misc.Notifications.NotificationManager.DrawBorderNotification
+  isSpec: "True"
+  fullName: KS.Misc.Notifications.NotificationManager.DrawBorderNotification
+  nameWithType: NotificationManager.DrawBorderNotification
 - uid: KS.Misc.Notifications.NotificationManager.NotifDismiss(System.Int32)
   name: NotifDismiss(int)
   href: api/KS.Misc.Notifications.NotificationManager.html#KS_Misc_Notifications_NotificationManager_NotifDismiss_System_Int32_
@@ -34666,6 +34394,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Splash.SplashManager.CurrentSplashInfo
   nameWithType: SplashManager.CurrentSplashInfo
+- uid: KS.Misc.Splash.SplashManager.EnableSplash
+  name: EnableSplash
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_EnableSplash
+  commentId: P:KS.Misc.Splash.SplashManager.EnableSplash
+  fullName: KS.Misc.Splash.SplashManager.EnableSplash
+  nameWithType: SplashManager.EnableSplash
+- uid: KS.Misc.Splash.SplashManager.EnableSplash*
+  name: EnableSplash
+  href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_EnableSplash_
+  commentId: Overload:KS.Misc.Splash.SplashManager.EnableSplash
+  isSpec: "True"
+  fullName: KS.Misc.Splash.SplashManager.EnableSplash
+  nameWithType: SplashManager.EnableSplash
 - uid: KS.Misc.Splash.SplashManager.EndSplashOut(KS.Misc.Splash.SplashContext)
   name: EndSplashOut(SplashContext)
   href: api/KS.Misc.Splash.SplashManager.html#KS_Misc_Splash_SplashManager_EndSplashOut_KS_Misc_Splash_SplashContext_
@@ -36134,6 +35875,19 @@ references:
   isSpec: "True"
   fullName: KS.Modifications.ModManager.AddModToBlacklist
   nameWithType: ModManager.AddModToBlacklist
+- uid: KS.Modifications.ModManager.AllowUntrustedMods
+  name: AllowUntrustedMods
+  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_AllowUntrustedMods
+  commentId: P:KS.Modifications.ModManager.AllowUntrustedMods
+  fullName: KS.Modifications.ModManager.AllowUntrustedMods
+  nameWithType: ModManager.AllowUntrustedMods
+- uid: KS.Modifications.ModManager.AllowUntrustedMods*
+  name: AllowUntrustedMods
+  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_AllowUntrustedMods_
+  commentId: Overload:KS.Modifications.ModManager.AllowUntrustedMods
+  isSpec: "True"
+  fullName: KS.Modifications.ModManager.AllowUntrustedMods
+  nameWithType: ModManager.AllowUntrustedMods
 - uid: KS.Modifications.ModManager.BlacklistedModsString
   name: BlacklistedModsString
   href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_BlacklistedModsString
@@ -36338,6 +36092,19 @@ references:
   isSpec: "True"
   fullName: KS.Modifications.ModManager.RemoveModFromBlacklist
   nameWithType: ModManager.RemoveModFromBlacklist
+- uid: KS.Modifications.ModManager.StartKernelMods
+  name: StartKernelMods
+  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_StartKernelMods
+  commentId: P:KS.Modifications.ModManager.StartKernelMods
+  fullName: KS.Modifications.ModManager.StartKernelMods
+  nameWithType: ModManager.StartKernelMods
+- uid: KS.Modifications.ModManager.StartKernelMods*
+  name: StartKernelMods
+  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_StartKernelMods_
+  commentId: Overload:KS.Modifications.ModManager.StartKernelMods
+  isSpec: "True"
+  fullName: KS.Modifications.ModManager.StartKernelMods
+  nameWithType: ModManager.StartKernelMods
 - uid: KS.Modifications.ModManager.StartMod(System.String)
   name: StartMod(string)
   href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_StartMod_System_String_
@@ -37116,6 +36883,19 @@ references:
   isSpec: "True"
   fullName: KS.Network.Base.NetworkTools.PingTimeout
   nameWithType: NetworkTools.PingTimeout
+- uid: KS.Network.Base.NetworkTools.ShowProgress
+  name: ShowProgress
+  href: api/KS.Network.Base.NetworkTools.html#KS_Network_Base_NetworkTools_ShowProgress
+  commentId: P:KS.Network.Base.NetworkTools.ShowProgress
+  fullName: KS.Network.Base.NetworkTools.ShowProgress
+  nameWithType: NetworkTools.ShowProgress
+- uid: KS.Network.Base.NetworkTools.ShowProgress*
+  name: ShowProgress
+  href: api/KS.Network.Base.NetworkTools.html#KS_Network_Base_NetworkTools_ShowProgress_
+  commentId: Overload:KS.Network.Base.NetworkTools.ShowProgress
+  isSpec: "True"
+  fullName: KS.Network.Base.NetworkTools.ShowProgress
+  nameWithType: NetworkTools.ShowProgress
 - uid: KS.Network.Base.NetworkTools.TryChangeHostname(System.String)
   name: TryChangeHostname(string)
   href: api/KS.Network.Base.NetworkTools.html#KS_Network_Base_NetworkTools_TryChangeHostname_System_String_
@@ -37466,6 +37246,45 @@ references:
   commentId: T:KS.Network.FTP.FTPTools
   fullName: KS.Network.FTP.FTPTools
   nameWithType: FTPTools
+- uid: KS.Network.FTP.FTPTools.FTPFirstProfileOnly
+  name: FTPFirstProfileOnly
+  href: api/KS.Network.FTP.FTPTools.html#KS_Network_FTP_FTPTools_FTPFirstProfileOnly
+  commentId: P:KS.Network.FTP.FTPTools.FTPFirstProfileOnly
+  fullName: KS.Network.FTP.FTPTools.FTPFirstProfileOnly
+  nameWithType: FTPTools.FTPFirstProfileOnly
+- uid: KS.Network.FTP.FTPTools.FTPFirstProfileOnly*
+  name: FTPFirstProfileOnly
+  href: api/KS.Network.FTP.FTPTools.html#KS_Network_FTP_FTPTools_FTPFirstProfileOnly_
+  commentId: Overload:KS.Network.FTP.FTPTools.FTPFirstProfileOnly
+  isSpec: "True"
+  fullName: KS.Network.FTP.FTPTools.FTPFirstProfileOnly
+  nameWithType: FTPTools.FTPFirstProfileOnly
+- uid: KS.Network.FTP.FTPTools.FTPLoggerIP
+  name: FTPLoggerIP
+  href: api/KS.Network.FTP.FTPTools.html#KS_Network_FTP_FTPTools_FTPLoggerIP
+  commentId: P:KS.Network.FTP.FTPTools.FTPLoggerIP
+  fullName: KS.Network.FTP.FTPTools.FTPLoggerIP
+  nameWithType: FTPTools.FTPLoggerIP
+- uid: KS.Network.FTP.FTPTools.FTPLoggerIP*
+  name: FTPLoggerIP
+  href: api/KS.Network.FTP.FTPTools.html#KS_Network_FTP_FTPTools_FTPLoggerIP_
+  commentId: Overload:KS.Network.FTP.FTPTools.FTPLoggerIP
+  isSpec: "True"
+  fullName: KS.Network.FTP.FTPTools.FTPLoggerIP
+  nameWithType: FTPTools.FTPLoggerIP
+- uid: KS.Network.FTP.FTPTools.FTPLoggerUsername
+  name: FTPLoggerUsername
+  href: api/KS.Network.FTP.FTPTools.html#KS_Network_FTP_FTPTools_FTPLoggerUsername
+  commentId: P:KS.Network.FTP.FTPTools.FTPLoggerUsername
+  fullName: KS.Network.FTP.FTPTools.FTPLoggerUsername
+  nameWithType: FTPTools.FTPLoggerUsername
+- uid: KS.Network.FTP.FTPTools.FTPLoggerUsername*
+  name: FTPLoggerUsername
+  href: api/KS.Network.FTP.FTPTools.html#KS_Network_FTP_FTPTools_FTPLoggerUsername_
+  commentId: Overload:KS.Network.FTP.FTPTools.FTPLoggerUsername
+  isSpec: "True"
+  fullName: KS.Network.FTP.FTPTools.FTPLoggerUsername
+  nameWithType: FTPTools.FTPLoggerUsername
 - uid: KS.Network.FTP.FTPTools.PromptForPassword(FluentFTP.FtpClient,System.String,System.String,System.Int32,FluentFTP.FtpEncryptionMode)
   name: PromptForPassword(FtpClient, string, string, int, FtpEncryptionMode)
   href: api/KS.Network.FTP.FTPTools.html#KS_Network_FTP_FTPTools_PromptForPassword_FluentFTP_FtpClient_System_String_System_String_System_Int32_FluentFTP_FtpEncryptionMode_
@@ -53184,6 +53003,19 @@ references:
   commentId: T:KS.Users.Login.Handlers.BaseLoginHandler
   fullName: KS.Users.Login.Handlers.BaseLoginHandler
   nameWithType: BaseLoginHandler
+- uid: KS.Users.Login.Handlers.BaseLoginHandler.ClearOnLogin
+  name: ClearOnLogin
+  href: api/KS.Users.Login.Handlers.BaseLoginHandler.html#KS_Users_Login_Handlers_BaseLoginHandler_ClearOnLogin
+  commentId: P:KS.Users.Login.Handlers.BaseLoginHandler.ClearOnLogin
+  fullName: KS.Users.Login.Handlers.BaseLoginHandler.ClearOnLogin
+  nameWithType: BaseLoginHandler.ClearOnLogin
+- uid: KS.Users.Login.Handlers.BaseLoginHandler.ClearOnLogin*
+  name: ClearOnLogin
+  href: api/KS.Users.Login.Handlers.BaseLoginHandler.html#KS_Users_Login_Handlers_BaseLoginHandler_ClearOnLogin_
+  commentId: Overload:KS.Users.Login.Handlers.BaseLoginHandler.ClearOnLogin
+  isSpec: "True"
+  fullName: KS.Users.Login.Handlers.BaseLoginHandler.ClearOnLogin
+  nameWithType: BaseLoginHandler.ClearOnLogin
 - uid: KS.Users.Login.Handlers.BaseLoginHandler.LoginScreen
   name: LoginScreen()
   href: api/KS.Users.Login.Handlers.BaseLoginHandler.html#KS_Users_Login_Handlers_BaseLoginHandler_LoginScreen
@@ -53213,6 +53045,45 @@ references:
   isSpec: "True"
   fullName: KS.Users.Login.Handlers.BaseLoginHandler.PasswordHandler
   nameWithType: BaseLoginHandler.PasswordHandler
+- uid: KS.Users.Login.Handlers.BaseLoginHandler.ShowAvailableUsers
+  name: ShowAvailableUsers
+  href: api/KS.Users.Login.Handlers.BaseLoginHandler.html#KS_Users_Login_Handlers_BaseLoginHandler_ShowAvailableUsers
+  commentId: P:KS.Users.Login.Handlers.BaseLoginHandler.ShowAvailableUsers
+  fullName: KS.Users.Login.Handlers.BaseLoginHandler.ShowAvailableUsers
+  nameWithType: BaseLoginHandler.ShowAvailableUsers
+- uid: KS.Users.Login.Handlers.BaseLoginHandler.ShowAvailableUsers*
+  name: ShowAvailableUsers
+  href: api/KS.Users.Login.Handlers.BaseLoginHandler.html#KS_Users_Login_Handlers_BaseLoginHandler_ShowAvailableUsers_
+  commentId: Overload:KS.Users.Login.Handlers.BaseLoginHandler.ShowAvailableUsers
+  isSpec: "True"
+  fullName: KS.Users.Login.Handlers.BaseLoginHandler.ShowAvailableUsers
+  nameWithType: BaseLoginHandler.ShowAvailableUsers
+- uid: KS.Users.Login.Handlers.BaseLoginHandler.ShowMAL
+  name: ShowMAL
+  href: api/KS.Users.Login.Handlers.BaseLoginHandler.html#KS_Users_Login_Handlers_BaseLoginHandler_ShowMAL
+  commentId: P:KS.Users.Login.Handlers.BaseLoginHandler.ShowMAL
+  fullName: KS.Users.Login.Handlers.BaseLoginHandler.ShowMAL
+  nameWithType: BaseLoginHandler.ShowMAL
+- uid: KS.Users.Login.Handlers.BaseLoginHandler.ShowMAL*
+  name: ShowMAL
+  href: api/KS.Users.Login.Handlers.BaseLoginHandler.html#KS_Users_Login_Handlers_BaseLoginHandler_ShowMAL_
+  commentId: Overload:KS.Users.Login.Handlers.BaseLoginHandler.ShowMAL
+  isSpec: "True"
+  fullName: KS.Users.Login.Handlers.BaseLoginHandler.ShowMAL
+  nameWithType: BaseLoginHandler.ShowMAL
+- uid: KS.Users.Login.Handlers.BaseLoginHandler.ShowMOTD
+  name: ShowMOTD
+  href: api/KS.Users.Login.Handlers.BaseLoginHandler.html#KS_Users_Login_Handlers_BaseLoginHandler_ShowMOTD
+  commentId: P:KS.Users.Login.Handlers.BaseLoginHandler.ShowMOTD
+  fullName: KS.Users.Login.Handlers.BaseLoginHandler.ShowMOTD
+  nameWithType: BaseLoginHandler.ShowMOTD
+- uid: KS.Users.Login.Handlers.BaseLoginHandler.ShowMOTD*
+  name: ShowMOTD
+  href: api/KS.Users.Login.Handlers.BaseLoginHandler.html#KS_Users_Login_Handlers_BaseLoginHandler_ShowMOTD_
+  commentId: Overload:KS.Users.Login.Handlers.BaseLoginHandler.ShowMOTD
+  isSpec: "True"
+  fullName: KS.Users.Login.Handlers.BaseLoginHandler.ShowMOTD
+  nameWithType: BaseLoginHandler.ShowMOTD
 - uid: KS.Users.Login.Handlers.BaseLoginHandler.UserSelector
   name: UserSelector()
   href: api/KS.Users.Login.Handlers.BaseLoginHandler.html#KS_Users_Login_Handlers_BaseLoginHandler_UserSelector
