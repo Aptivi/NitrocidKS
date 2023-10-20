@@ -4312,57 +4312,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Presentation.Elements.TextElement.WrittenInput
   nameWithType: TextElement.WrittenInput
-- uid: KS.ConsoleBase.Presentation.Presentation
-  name: Presentation
-  href: api/KS.ConsoleBase.Presentation.Presentation.html
-  commentId: T:KS.ConsoleBase.Presentation.Presentation
-  fullName: KS.ConsoleBase.Presentation.Presentation
-  nameWithType: Presentation
-- uid: KS.ConsoleBase.Presentation.Presentation.#ctor(System.String,System.Collections.Generic.List{KS.ConsoleBase.Presentation.PresentationPage})
-  name: Presentation(string, List<PresentationPage>)
-  href: api/KS.ConsoleBase.Presentation.Presentation.html#KS_ConsoleBase_Presentation_Presentation__ctor_System_String_System_Collections_Generic_List_KS_ConsoleBase_Presentation_PresentationPage__
-  commentId: M:KS.ConsoleBase.Presentation.Presentation.#ctor(System.String,System.Collections.Generic.List{KS.ConsoleBase.Presentation.PresentationPage})
-  name.vb: New(String, List(Of PresentationPage))
-  fullName: KS.ConsoleBase.Presentation.Presentation.Presentation(string, System.Collections.Generic.List<KS.ConsoleBase.Presentation.PresentationPage>)
-  fullName.vb: KS.ConsoleBase.Presentation.Presentation.New(String, System.Collections.Generic.List(Of KS.ConsoleBase.Presentation.PresentationPage))
-  nameWithType: Presentation.Presentation(string, List<PresentationPage>)
-  nameWithType.vb: Presentation.New(String, List(Of PresentationPage))
-- uid: KS.ConsoleBase.Presentation.Presentation.#ctor*
-  name: Presentation
-  href: api/KS.ConsoleBase.Presentation.Presentation.html#KS_ConsoleBase_Presentation_Presentation__ctor_
-  commentId: Overload:KS.ConsoleBase.Presentation.Presentation.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: KS.ConsoleBase.Presentation.Presentation.Presentation
-  fullName.vb: KS.ConsoleBase.Presentation.Presentation.New
-  nameWithType: Presentation.Presentation
-  nameWithType.vb: Presentation.New
-- uid: KS.ConsoleBase.Presentation.Presentation.Name
-  name: Name
-  href: api/KS.ConsoleBase.Presentation.Presentation.html#KS_ConsoleBase_Presentation_Presentation_Name
-  commentId: P:KS.ConsoleBase.Presentation.Presentation.Name
-  fullName: KS.ConsoleBase.Presentation.Presentation.Name
-  nameWithType: Presentation.Name
-- uid: KS.ConsoleBase.Presentation.Presentation.Name*
-  name: Name
-  href: api/KS.ConsoleBase.Presentation.Presentation.html#KS_ConsoleBase_Presentation_Presentation_Name_
-  commentId: Overload:KS.ConsoleBase.Presentation.Presentation.Name
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Presentation.Presentation.Name
-  nameWithType: Presentation.Name
-- uid: KS.ConsoleBase.Presentation.Presentation.Pages
-  name: Pages
-  href: api/KS.ConsoleBase.Presentation.Presentation.html#KS_ConsoleBase_Presentation_Presentation_Pages
-  commentId: P:KS.ConsoleBase.Presentation.Presentation.Pages
-  fullName: KS.ConsoleBase.Presentation.Presentation.Pages
-  nameWithType: Presentation.Pages
-- uid: KS.ConsoleBase.Presentation.Presentation.Pages*
-  name: Pages
-  href: api/KS.ConsoleBase.Presentation.Presentation.html#KS_ConsoleBase_Presentation_Presentation_Pages_
-  commentId: Overload:KS.ConsoleBase.Presentation.Presentation.Pages
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Presentation.Presentation.Pages
-  nameWithType: Presentation.Pages
 - uid: KS.ConsoleBase.Presentation.PresentationPage
   name: PresentationPage
   href: api/KS.ConsoleBase.Presentation.PresentationPage.html
@@ -4433,21 +4382,21 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Presentation.PresentationTools.ClearPresentation
   nameWithType: PresentationTools.ClearPresentation
-- uid: KS.ConsoleBase.Presentation.PresentationTools.Present(KS.ConsoleBase.Presentation.Presentation)
-  name: Present(Presentation)
-  href: api/KS.ConsoleBase.Presentation.PresentationTools.html#KS_ConsoleBase_Presentation_PresentationTools_Present_KS_ConsoleBase_Presentation_Presentation_
-  commentId: M:KS.ConsoleBase.Presentation.PresentationTools.Present(KS.ConsoleBase.Presentation.Presentation)
-  fullName: KS.ConsoleBase.Presentation.PresentationTools.Present(KS.ConsoleBase.Presentation.Presentation)
-  nameWithType: PresentationTools.Present(Presentation)
-- uid: KS.ConsoleBase.Presentation.PresentationTools.Present(KS.ConsoleBase.Presentation.Presentation,System.Boolean,System.Boolean)
-  name: Present(Presentation, bool, bool)
-  href: api/KS.ConsoleBase.Presentation.PresentationTools.html#KS_ConsoleBase_Presentation_PresentationTools_Present_KS_ConsoleBase_Presentation_Presentation_System_Boolean_System_Boolean_
-  commentId: M:KS.ConsoleBase.Presentation.PresentationTools.Present(KS.ConsoleBase.Presentation.Presentation,System.Boolean,System.Boolean)
-  name.vb: Present(Presentation, Boolean, Boolean)
-  fullName: KS.ConsoleBase.Presentation.PresentationTools.Present(KS.ConsoleBase.Presentation.Presentation, bool, bool)
-  fullName.vb: KS.ConsoleBase.Presentation.PresentationTools.Present(KS.ConsoleBase.Presentation.Presentation, Boolean, Boolean)
-  nameWithType: PresentationTools.Present(Presentation, bool, bool)
-  nameWithType.vb: PresentationTools.Present(Presentation, Boolean, Boolean)
+- uid: KS.ConsoleBase.Presentation.PresentationTools.Present(KS.ConsoleBase.Presentation.Slideshow)
+  name: Present(Slideshow)
+  href: api/KS.ConsoleBase.Presentation.PresentationTools.html#KS_ConsoleBase_Presentation_PresentationTools_Present_KS_ConsoleBase_Presentation_Slideshow_
+  commentId: M:KS.ConsoleBase.Presentation.PresentationTools.Present(KS.ConsoleBase.Presentation.Slideshow)
+  fullName: KS.ConsoleBase.Presentation.PresentationTools.Present(KS.ConsoleBase.Presentation.Slideshow)
+  nameWithType: PresentationTools.Present(Slideshow)
+- uid: KS.ConsoleBase.Presentation.PresentationTools.Present(KS.ConsoleBase.Presentation.Slideshow,System.Boolean,System.Boolean)
+  name: Present(Slideshow, bool, bool)
+  href: api/KS.ConsoleBase.Presentation.PresentationTools.html#KS_ConsoleBase_Presentation_PresentationTools_Present_KS_ConsoleBase_Presentation_Slideshow_System_Boolean_System_Boolean_
+  commentId: M:KS.ConsoleBase.Presentation.PresentationTools.Present(KS.ConsoleBase.Presentation.Slideshow,System.Boolean,System.Boolean)
+  name.vb: Present(Slideshow, Boolean, Boolean)
+  fullName: KS.ConsoleBase.Presentation.PresentationTools.Present(KS.ConsoleBase.Presentation.Slideshow, bool, bool)
+  fullName.vb: KS.ConsoleBase.Presentation.PresentationTools.Present(KS.ConsoleBase.Presentation.Slideshow, Boolean, Boolean)
+  nameWithType: PresentationTools.Present(Slideshow, bool, bool)
+  nameWithType.vb: PresentationTools.Present(Slideshow, Boolean, Boolean)
 - uid: KS.ConsoleBase.Presentation.PresentationTools.Present*
   name: Present
   href: api/KS.ConsoleBase.Presentation.PresentationTools.html#KS_ConsoleBase_Presentation_PresentationTools_Present_
@@ -4455,12 +4404,12 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Presentation.PresentationTools.Present
   nameWithType: PresentationTools.Present
-- uid: KS.ConsoleBase.Presentation.PresentationTools.PresentationContainsInput(KS.ConsoleBase.Presentation.Presentation)
-  name: PresentationContainsInput(Presentation)
-  href: api/KS.ConsoleBase.Presentation.PresentationTools.html#KS_ConsoleBase_Presentation_PresentationTools_PresentationContainsInput_KS_ConsoleBase_Presentation_Presentation_
-  commentId: M:KS.ConsoleBase.Presentation.PresentationTools.PresentationContainsInput(KS.ConsoleBase.Presentation.Presentation)
-  fullName: KS.ConsoleBase.Presentation.PresentationTools.PresentationContainsInput(KS.ConsoleBase.Presentation.Presentation)
-  nameWithType: PresentationTools.PresentationContainsInput(Presentation)
+- uid: KS.ConsoleBase.Presentation.PresentationTools.PresentationContainsInput(KS.ConsoleBase.Presentation.Slideshow)
+  name: PresentationContainsInput(Slideshow)
+  href: api/KS.ConsoleBase.Presentation.PresentationTools.html#KS_ConsoleBase_Presentation_PresentationTools_PresentationContainsInput_KS_ConsoleBase_Presentation_Slideshow_
+  commentId: M:KS.ConsoleBase.Presentation.PresentationTools.PresentationContainsInput(KS.ConsoleBase.Presentation.Slideshow)
+  fullName: KS.ConsoleBase.Presentation.PresentationTools.PresentationContainsInput(KS.ConsoleBase.Presentation.Slideshow)
+  nameWithType: PresentationTools.PresentationContainsInput(Slideshow)
 - uid: KS.ConsoleBase.Presentation.PresentationTools.PresentationContainsInput*
   name: PresentationContainsInput
   href: api/KS.ConsoleBase.Presentation.PresentationTools.html#KS_ConsoleBase_Presentation_PresentationTools_PresentationContainsInput_
@@ -4572,6 +4521,57 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Presentation.PresentationTools.PresentationUpperInnerBorderTop
   nameWithType: PresentationTools.PresentationUpperInnerBorderTop
+- uid: KS.ConsoleBase.Presentation.Slideshow
+  name: Slideshow
+  href: api/KS.ConsoleBase.Presentation.Slideshow.html
+  commentId: T:KS.ConsoleBase.Presentation.Slideshow
+  fullName: KS.ConsoleBase.Presentation.Slideshow
+  nameWithType: Slideshow
+- uid: KS.ConsoleBase.Presentation.Slideshow.#ctor(System.String,System.Collections.Generic.List{KS.ConsoleBase.Presentation.PresentationPage})
+  name: Slideshow(string, List<PresentationPage>)
+  href: api/KS.ConsoleBase.Presentation.Slideshow.html#KS_ConsoleBase_Presentation_Slideshow__ctor_System_String_System_Collections_Generic_List_KS_ConsoleBase_Presentation_PresentationPage__
+  commentId: M:KS.ConsoleBase.Presentation.Slideshow.#ctor(System.String,System.Collections.Generic.List{KS.ConsoleBase.Presentation.PresentationPage})
+  name.vb: New(String, List(Of PresentationPage))
+  fullName: KS.ConsoleBase.Presentation.Slideshow.Slideshow(string, System.Collections.Generic.List<KS.ConsoleBase.Presentation.PresentationPage>)
+  fullName.vb: KS.ConsoleBase.Presentation.Slideshow.New(String, System.Collections.Generic.List(Of KS.ConsoleBase.Presentation.PresentationPage))
+  nameWithType: Slideshow.Slideshow(string, List<PresentationPage>)
+  nameWithType.vb: Slideshow.New(String, List(Of PresentationPage))
+- uid: KS.ConsoleBase.Presentation.Slideshow.#ctor*
+  name: Slideshow
+  href: api/KS.ConsoleBase.Presentation.Slideshow.html#KS_ConsoleBase_Presentation_Slideshow__ctor_
+  commentId: Overload:KS.ConsoleBase.Presentation.Slideshow.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: KS.ConsoleBase.Presentation.Slideshow.Slideshow
+  fullName.vb: KS.ConsoleBase.Presentation.Slideshow.New
+  nameWithType: Slideshow.Slideshow
+  nameWithType.vb: Slideshow.New
+- uid: KS.ConsoleBase.Presentation.Slideshow.Name
+  name: Name
+  href: api/KS.ConsoleBase.Presentation.Slideshow.html#KS_ConsoleBase_Presentation_Slideshow_Name
+  commentId: P:KS.ConsoleBase.Presentation.Slideshow.Name
+  fullName: KS.ConsoleBase.Presentation.Slideshow.Name
+  nameWithType: Slideshow.Name
+- uid: KS.ConsoleBase.Presentation.Slideshow.Name*
+  name: Name
+  href: api/KS.ConsoleBase.Presentation.Slideshow.html#KS_ConsoleBase_Presentation_Slideshow_Name_
+  commentId: Overload:KS.ConsoleBase.Presentation.Slideshow.Name
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Presentation.Slideshow.Name
+  nameWithType: Slideshow.Name
+- uid: KS.ConsoleBase.Presentation.Slideshow.Pages
+  name: Pages
+  href: api/KS.ConsoleBase.Presentation.Slideshow.html#KS_ConsoleBase_Presentation_Slideshow_Pages
+  commentId: P:KS.ConsoleBase.Presentation.Slideshow.Pages
+  fullName: KS.ConsoleBase.Presentation.Slideshow.Pages
+  nameWithType: Slideshow.Pages
+- uid: KS.ConsoleBase.Presentation.Slideshow.Pages*
+  name: Pages
+  href: api/KS.ConsoleBase.Presentation.Slideshow.html#KS_ConsoleBase_Presentation_Slideshow_Pages_
+  commentId: Overload:KS.ConsoleBase.Presentation.Slideshow.Pages
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Presentation.Slideshow.Pages
+  nameWithType: Slideshow.Pages
 - uid: KS.ConsoleBase.Themes
   name: KS.ConsoleBase.Themes
   href: api/KS.ConsoleBase.Themes.html
@@ -19018,198 +19018,198 @@ references:
   isSpec: "True"
   fullName: KS.Files.Extensions.Opening.OpenEditor
   nameWithType: Opening.OpenEditor
-- uid: KS.Files.Filesystem
-  name: Filesystem
-  href: api/KS.Files.Filesystem.html
-  commentId: T:KS.Files.Filesystem
-  fullName: KS.Files.Filesystem
-  nameWithType: Filesystem
-- uid: KS.Files.Filesystem.FullParseMode
+- uid: KS.Files.FilesystemTools
+  name: FilesystemTools
+  href: api/KS.Files.FilesystemTools.html
+  commentId: T:KS.Files.FilesystemTools
+  fullName: KS.Files.FilesystemTools
+  nameWithType: FilesystemTools
+- uid: KS.Files.FilesystemTools.FullParseMode
   name: FullParseMode
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_FullParseMode
-  commentId: P:KS.Files.Filesystem.FullParseMode
-  fullName: KS.Files.Filesystem.FullParseMode
-  nameWithType: Filesystem.FullParseMode
-- uid: KS.Files.Filesystem.FullParseMode*
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_FullParseMode
+  commentId: P:KS.Files.FilesystemTools.FullParseMode
+  fullName: KS.Files.FilesystemTools.FullParseMode
+  nameWithType: FilesystemTools.FullParseMode
+- uid: KS.Files.FilesystemTools.FullParseMode*
   name: FullParseMode
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_FullParseMode_
-  commentId: Overload:KS.Files.Filesystem.FullParseMode
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_FullParseMode_
+  commentId: Overload:KS.Files.FilesystemTools.FullParseMode
   isSpec: "True"
-  fullName: KS.Files.Filesystem.FullParseMode
-  nameWithType: Filesystem.FullParseMode
-- uid: KS.Files.Filesystem.HiddenFiles
+  fullName: KS.Files.FilesystemTools.FullParseMode
+  nameWithType: FilesystemTools.FullParseMode
+- uid: KS.Files.FilesystemTools.HiddenFiles
   name: HiddenFiles
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_HiddenFiles
-  commentId: P:KS.Files.Filesystem.HiddenFiles
-  fullName: KS.Files.Filesystem.HiddenFiles
-  nameWithType: Filesystem.HiddenFiles
-- uid: KS.Files.Filesystem.HiddenFiles*
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_HiddenFiles
+  commentId: P:KS.Files.FilesystemTools.HiddenFiles
+  fullName: KS.Files.FilesystemTools.HiddenFiles
+  nameWithType: FilesystemTools.HiddenFiles
+- uid: KS.Files.FilesystemTools.HiddenFiles*
   name: HiddenFiles
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_HiddenFiles_
-  commentId: Overload:KS.Files.Filesystem.HiddenFiles
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_HiddenFiles_
+  commentId: Overload:KS.Files.FilesystemTools.HiddenFiles
   isSpec: "True"
-  fullName: KS.Files.Filesystem.HiddenFiles
-  nameWithType: Filesystem.HiddenFiles
-- uid: KS.Files.Filesystem.IsFileLocked(System.String)
+  fullName: KS.Files.FilesystemTools.HiddenFiles
+  nameWithType: FilesystemTools.HiddenFiles
+- uid: KS.Files.FilesystemTools.IsFileLocked(System.String)
   name: IsFileLocked(string)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_IsFileLocked_System_String_
-  commentId: M:KS.Files.Filesystem.IsFileLocked(System.String)
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_IsFileLocked_System_String_
+  commentId: M:KS.Files.FilesystemTools.IsFileLocked(System.String)
   name.vb: IsFileLocked(String)
-  fullName: KS.Files.Filesystem.IsFileLocked(string)
-  fullName.vb: KS.Files.Filesystem.IsFileLocked(String)
-  nameWithType: Filesystem.IsFileLocked(string)
-  nameWithType.vb: Filesystem.IsFileLocked(String)
-- uid: KS.Files.Filesystem.IsFileLocked*
+  fullName: KS.Files.FilesystemTools.IsFileLocked(string)
+  fullName.vb: KS.Files.FilesystemTools.IsFileLocked(String)
+  nameWithType: FilesystemTools.IsFileLocked(string)
+  nameWithType.vb: FilesystemTools.IsFileLocked(String)
+- uid: KS.Files.FilesystemTools.IsFileLocked*
   name: IsFileLocked
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_IsFileLocked_
-  commentId: Overload:KS.Files.Filesystem.IsFileLocked
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_IsFileLocked_
+  commentId: Overload:KS.Files.FilesystemTools.IsFileLocked
   isSpec: "True"
-  fullName: KS.Files.Filesystem.IsFileLocked
-  nameWithType: Filesystem.IsFileLocked
-- uid: KS.Files.Filesystem.IsFolderLocked(System.String)
+  fullName: KS.Files.FilesystemTools.IsFileLocked
+  nameWithType: FilesystemTools.IsFileLocked
+- uid: KS.Files.FilesystemTools.IsFolderLocked(System.String)
   name: IsFolderLocked(string)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_IsFolderLocked_System_String_
-  commentId: M:KS.Files.Filesystem.IsFolderLocked(System.String)
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_IsFolderLocked_System_String_
+  commentId: M:KS.Files.FilesystemTools.IsFolderLocked(System.String)
   name.vb: IsFolderLocked(String)
-  fullName: KS.Files.Filesystem.IsFolderLocked(string)
-  fullName.vb: KS.Files.Filesystem.IsFolderLocked(String)
-  nameWithType: Filesystem.IsFolderLocked(string)
-  nameWithType.vb: Filesystem.IsFolderLocked(String)
-- uid: KS.Files.Filesystem.IsFolderLocked*
+  fullName: KS.Files.FilesystemTools.IsFolderLocked(string)
+  fullName.vb: KS.Files.FilesystemTools.IsFolderLocked(String)
+  nameWithType: FilesystemTools.IsFolderLocked(string)
+  nameWithType.vb: FilesystemTools.IsFolderLocked(String)
+- uid: KS.Files.FilesystemTools.IsFolderLocked*
   name: IsFolderLocked
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_IsFolderLocked_
-  commentId: Overload:KS.Files.Filesystem.IsFolderLocked
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_IsFolderLocked_
+  commentId: Overload:KS.Files.FilesystemTools.IsFolderLocked
   isSpec: "True"
-  fullName: KS.Files.Filesystem.IsFolderLocked
-  nameWithType: Filesystem.IsFolderLocked
-- uid: KS.Files.Filesystem.IsLocked(System.String)
+  fullName: KS.Files.FilesystemTools.IsFolderLocked
+  nameWithType: FilesystemTools.IsFolderLocked
+- uid: KS.Files.FilesystemTools.IsLocked(System.String)
   name: IsLocked(string)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_IsLocked_System_String_
-  commentId: M:KS.Files.Filesystem.IsLocked(System.String)
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_IsLocked_System_String_
+  commentId: M:KS.Files.FilesystemTools.IsLocked(System.String)
   name.vb: IsLocked(String)
-  fullName: KS.Files.Filesystem.IsLocked(string)
-  fullName.vb: KS.Files.Filesystem.IsLocked(String)
-  nameWithType: Filesystem.IsLocked(string)
-  nameWithType.vb: Filesystem.IsLocked(String)
-- uid: KS.Files.Filesystem.IsLocked*
+  fullName: KS.Files.FilesystemTools.IsLocked(string)
+  fullName.vb: KS.Files.FilesystemTools.IsLocked(String)
+  nameWithType: FilesystemTools.IsLocked(string)
+  nameWithType.vb: FilesystemTools.IsLocked(String)
+- uid: KS.Files.FilesystemTools.IsLocked*
   name: IsLocked
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_IsLocked_
-  commentId: Overload:KS.Files.Filesystem.IsLocked
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_IsLocked_
+  commentId: Overload:KS.Files.FilesystemTools.IsLocked
   isSpec: "True"
-  fullName: KS.Files.Filesystem.IsLocked
-  nameWithType: Filesystem.IsLocked
-- uid: KS.Files.Filesystem.NeutralizePath(System.String,System.Boolean)
+  fullName: KS.Files.FilesystemTools.IsLocked
+  nameWithType: FilesystemTools.IsLocked
+- uid: KS.Files.FilesystemTools.NeutralizePath(System.String,System.Boolean)
   name: NeutralizePath(string, bool)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_NeutralizePath_System_String_System_Boolean_
-  commentId: M:KS.Files.Filesystem.NeutralizePath(System.String,System.Boolean)
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_NeutralizePath_System_String_System_Boolean_
+  commentId: M:KS.Files.FilesystemTools.NeutralizePath(System.String,System.Boolean)
   name.vb: NeutralizePath(String, Boolean)
-  fullName: KS.Files.Filesystem.NeutralizePath(string, bool)
-  fullName.vb: KS.Files.Filesystem.NeutralizePath(String, Boolean)
-  nameWithType: Filesystem.NeutralizePath(string, bool)
-  nameWithType.vb: Filesystem.NeutralizePath(String, Boolean)
-- uid: KS.Files.Filesystem.NeutralizePath(System.String,System.String,System.Boolean)
+  fullName: KS.Files.FilesystemTools.NeutralizePath(string, bool)
+  fullName.vb: KS.Files.FilesystemTools.NeutralizePath(String, Boolean)
+  nameWithType: FilesystemTools.NeutralizePath(string, bool)
+  nameWithType.vb: FilesystemTools.NeutralizePath(String, Boolean)
+- uid: KS.Files.FilesystemTools.NeutralizePath(System.String,System.String,System.Boolean)
   name: NeutralizePath(string, string, bool)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_NeutralizePath_System_String_System_String_System_Boolean_
-  commentId: M:KS.Files.Filesystem.NeutralizePath(System.String,System.String,System.Boolean)
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_NeutralizePath_System_String_System_String_System_Boolean_
+  commentId: M:KS.Files.FilesystemTools.NeutralizePath(System.String,System.String,System.Boolean)
   name.vb: NeutralizePath(String, String, Boolean)
-  fullName: KS.Files.Filesystem.NeutralizePath(string, string, bool)
-  fullName.vb: KS.Files.Filesystem.NeutralizePath(String, String, Boolean)
-  nameWithType: Filesystem.NeutralizePath(string, string, bool)
-  nameWithType.vb: Filesystem.NeutralizePath(String, String, Boolean)
-- uid: KS.Files.Filesystem.NeutralizePath*
+  fullName: KS.Files.FilesystemTools.NeutralizePath(string, string, bool)
+  fullName.vb: KS.Files.FilesystemTools.NeutralizePath(String, String, Boolean)
+  nameWithType: FilesystemTools.NeutralizePath(string, string, bool)
+  nameWithType.vb: FilesystemTools.NeutralizePath(String, String, Boolean)
+- uid: KS.Files.FilesystemTools.NeutralizePath*
   name: NeutralizePath
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_NeutralizePath_
-  commentId: Overload:KS.Files.Filesystem.NeutralizePath
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_NeutralizePath_
+  commentId: Overload:KS.Files.FilesystemTools.NeutralizePath
   isSpec: "True"
-  fullName: KS.Files.Filesystem.NeutralizePath
-  nameWithType: Filesystem.NeutralizePath
-- uid: KS.Files.Filesystem.PrintLineNumbers
+  fullName: KS.Files.FilesystemTools.NeutralizePath
+  nameWithType: FilesystemTools.NeutralizePath
+- uid: KS.Files.FilesystemTools.PrintLineNumbers
   name: PrintLineNumbers
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_PrintLineNumbers
-  commentId: P:KS.Files.Filesystem.PrintLineNumbers
-  fullName: KS.Files.Filesystem.PrintLineNumbers
-  nameWithType: Filesystem.PrintLineNumbers
-- uid: KS.Files.Filesystem.PrintLineNumbers*
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_PrintLineNumbers
+  commentId: P:KS.Files.FilesystemTools.PrintLineNumbers
+  fullName: KS.Files.FilesystemTools.PrintLineNumbers
+  nameWithType: FilesystemTools.PrintLineNumbers
+- uid: KS.Files.FilesystemTools.PrintLineNumbers*
   name: PrintLineNumbers
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_PrintLineNumbers_
-  commentId: Overload:KS.Files.Filesystem.PrintLineNumbers
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_PrintLineNumbers_
+  commentId: Overload:KS.Files.FilesystemTools.PrintLineNumbers
   isSpec: "True"
-  fullName: KS.Files.Filesystem.PrintLineNumbers
-  nameWithType: Filesystem.PrintLineNumbers
-- uid: KS.Files.Filesystem.ShowFilesystemProgress
+  fullName: KS.Files.FilesystemTools.PrintLineNumbers
+  nameWithType: FilesystemTools.PrintLineNumbers
+- uid: KS.Files.FilesystemTools.ShowFilesystemProgress
   name: ShowFilesystemProgress
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ShowFilesystemProgress
-  commentId: P:KS.Files.Filesystem.ShowFilesystemProgress
-  fullName: KS.Files.Filesystem.ShowFilesystemProgress
-  nameWithType: Filesystem.ShowFilesystemProgress
-- uid: KS.Files.Filesystem.ShowFilesystemProgress*
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_ShowFilesystemProgress
+  commentId: P:KS.Files.FilesystemTools.ShowFilesystemProgress
+  fullName: KS.Files.FilesystemTools.ShowFilesystemProgress
+  nameWithType: FilesystemTools.ShowFilesystemProgress
+- uid: KS.Files.FilesystemTools.ShowFilesystemProgress*
   name: ShowFilesystemProgress
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ShowFilesystemProgress_
-  commentId: Overload:KS.Files.Filesystem.ShowFilesystemProgress
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_ShowFilesystemProgress_
+  commentId: Overload:KS.Files.FilesystemTools.ShowFilesystemProgress
   isSpec: "True"
-  fullName: KS.Files.Filesystem.ShowFilesystemProgress
-  nameWithType: Filesystem.ShowFilesystemProgress
-- uid: KS.Files.Filesystem.SuppressUnauthorizedMessages
+  fullName: KS.Files.FilesystemTools.ShowFilesystemProgress
+  nameWithType: FilesystemTools.ShowFilesystemProgress
+- uid: KS.Files.FilesystemTools.SuppressUnauthorizedMessages
   name: SuppressUnauthorizedMessages
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SuppressUnauthorizedMessages
-  commentId: P:KS.Files.Filesystem.SuppressUnauthorizedMessages
-  fullName: KS.Files.Filesystem.SuppressUnauthorizedMessages
-  nameWithType: Filesystem.SuppressUnauthorizedMessages
-- uid: KS.Files.Filesystem.SuppressUnauthorizedMessages*
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_SuppressUnauthorizedMessages
+  commentId: P:KS.Files.FilesystemTools.SuppressUnauthorizedMessages
+  fullName: KS.Files.FilesystemTools.SuppressUnauthorizedMessages
+  nameWithType: FilesystemTools.SuppressUnauthorizedMessages
+- uid: KS.Files.FilesystemTools.SuppressUnauthorizedMessages*
   name: SuppressUnauthorizedMessages
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_SuppressUnauthorizedMessages_
-  commentId: Overload:KS.Files.Filesystem.SuppressUnauthorizedMessages
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_SuppressUnauthorizedMessages_
+  commentId: Overload:KS.Files.FilesystemTools.SuppressUnauthorizedMessages
   isSpec: "True"
-  fullName: KS.Files.Filesystem.SuppressUnauthorizedMessages
-  nameWithType: Filesystem.SuppressUnauthorizedMessages
-- uid: KS.Files.Filesystem.ThrowOnInvalidPath(System.String)
+  fullName: KS.Files.FilesystemTools.SuppressUnauthorizedMessages
+  nameWithType: FilesystemTools.SuppressUnauthorizedMessages
+- uid: KS.Files.FilesystemTools.ThrowOnInvalidPath(System.String)
   name: ThrowOnInvalidPath(string)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ThrowOnInvalidPath_System_String_
-  commentId: M:KS.Files.Filesystem.ThrowOnInvalidPath(System.String)
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_ThrowOnInvalidPath_System_String_
+  commentId: M:KS.Files.FilesystemTools.ThrowOnInvalidPath(System.String)
   name.vb: ThrowOnInvalidPath(String)
-  fullName: KS.Files.Filesystem.ThrowOnInvalidPath(string)
-  fullName.vb: KS.Files.Filesystem.ThrowOnInvalidPath(String)
-  nameWithType: Filesystem.ThrowOnInvalidPath(string)
-  nameWithType.vb: Filesystem.ThrowOnInvalidPath(String)
-- uid: KS.Files.Filesystem.ThrowOnInvalidPath*
+  fullName: KS.Files.FilesystemTools.ThrowOnInvalidPath(string)
+  fullName.vb: KS.Files.FilesystemTools.ThrowOnInvalidPath(String)
+  nameWithType: FilesystemTools.ThrowOnInvalidPath(string)
+  nameWithType.vb: FilesystemTools.ThrowOnInvalidPath(String)
+- uid: KS.Files.FilesystemTools.ThrowOnInvalidPath*
   name: ThrowOnInvalidPath
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_ThrowOnInvalidPath_
-  commentId: Overload:KS.Files.Filesystem.ThrowOnInvalidPath
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_ThrowOnInvalidPath_
+  commentId: Overload:KS.Files.FilesystemTools.ThrowOnInvalidPath
   isSpec: "True"
-  fullName: KS.Files.Filesystem.ThrowOnInvalidPath
-  nameWithType: Filesystem.ThrowOnInvalidPath
-- uid: KS.Files.Filesystem.WaitForLockRelease(System.String,System.Int32)
+  fullName: KS.Files.FilesystemTools.ThrowOnInvalidPath
+  nameWithType: FilesystemTools.ThrowOnInvalidPath
+- uid: KS.Files.FilesystemTools.WaitForLockRelease(System.String,System.Int32)
   name: WaitForLockRelease(string, int)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_WaitForLockRelease_System_String_System_Int32_
-  commentId: M:KS.Files.Filesystem.WaitForLockRelease(System.String,System.Int32)
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_WaitForLockRelease_System_String_System_Int32_
+  commentId: M:KS.Files.FilesystemTools.WaitForLockRelease(System.String,System.Int32)
   name.vb: WaitForLockRelease(String, Integer)
-  fullName: KS.Files.Filesystem.WaitForLockRelease(string, int)
-  fullName.vb: KS.Files.Filesystem.WaitForLockRelease(String, Integer)
-  nameWithType: Filesystem.WaitForLockRelease(string, int)
-  nameWithType.vb: Filesystem.WaitForLockRelease(String, Integer)
-- uid: KS.Files.Filesystem.WaitForLockRelease*
+  fullName: KS.Files.FilesystemTools.WaitForLockRelease(string, int)
+  fullName.vb: KS.Files.FilesystemTools.WaitForLockRelease(String, Integer)
+  nameWithType: FilesystemTools.WaitForLockRelease(string, int)
+  nameWithType.vb: FilesystemTools.WaitForLockRelease(String, Integer)
+- uid: KS.Files.FilesystemTools.WaitForLockRelease*
   name: WaitForLockRelease
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_WaitForLockRelease_
-  commentId: Overload:KS.Files.Filesystem.WaitForLockRelease
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_WaitForLockRelease_
+  commentId: Overload:KS.Files.FilesystemTools.WaitForLockRelease
   isSpec: "True"
-  fullName: KS.Files.Filesystem.WaitForLockRelease
-  nameWithType: Filesystem.WaitForLockRelease
-- uid: KS.Files.Filesystem.WaitForLockReleaseIndefinite(System.String)
+  fullName: KS.Files.FilesystemTools.WaitForLockRelease
+  nameWithType: FilesystemTools.WaitForLockRelease
+- uid: KS.Files.FilesystemTools.WaitForLockReleaseIndefinite(System.String)
   name: WaitForLockReleaseIndefinite(string)
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_WaitForLockReleaseIndefinite_System_String_
-  commentId: M:KS.Files.Filesystem.WaitForLockReleaseIndefinite(System.String)
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_WaitForLockReleaseIndefinite_System_String_
+  commentId: M:KS.Files.FilesystemTools.WaitForLockReleaseIndefinite(System.String)
   name.vb: WaitForLockReleaseIndefinite(String)
-  fullName: KS.Files.Filesystem.WaitForLockReleaseIndefinite(string)
-  fullName.vb: KS.Files.Filesystem.WaitForLockReleaseIndefinite(String)
-  nameWithType: Filesystem.WaitForLockReleaseIndefinite(string)
-  nameWithType.vb: Filesystem.WaitForLockReleaseIndefinite(String)
-- uid: KS.Files.Filesystem.WaitForLockReleaseIndefinite*
+  fullName: KS.Files.FilesystemTools.WaitForLockReleaseIndefinite(string)
+  fullName.vb: KS.Files.FilesystemTools.WaitForLockReleaseIndefinite(String)
+  nameWithType: FilesystemTools.WaitForLockReleaseIndefinite(string)
+  nameWithType.vb: FilesystemTools.WaitForLockReleaseIndefinite(String)
+- uid: KS.Files.FilesystemTools.WaitForLockReleaseIndefinite*
   name: WaitForLockReleaseIndefinite
-  href: api/KS.Files.Filesystem.html#KS_Files_Filesystem_WaitForLockReleaseIndefinite_
-  commentId: Overload:KS.Files.Filesystem.WaitForLockReleaseIndefinite
+  href: api/KS.Files.FilesystemTools.html#KS_Files_FilesystemTools_WaitForLockReleaseIndefinite_
+  commentId: Overload:KS.Files.FilesystemTools.WaitForLockReleaseIndefinite
   isSpec: "True"
-  fullName: KS.Files.Filesystem.WaitForLockReleaseIndefinite
-  nameWithType: Filesystem.WaitForLockReleaseIndefinite
+  fullName: KS.Files.FilesystemTools.WaitForLockReleaseIndefinite
+  nameWithType: FilesystemTools.WaitForLockReleaseIndefinite
 - uid: KS.Files.Folders
   name: KS.Files.Folders
   href: api/KS.Files.Folders.html

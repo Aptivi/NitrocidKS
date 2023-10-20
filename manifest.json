@@ -405,16 +405,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Presentation.Presentation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.ConsoleBase.Presentation.Presentation.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.Presentation.PresentationPage.yml",
       "output": {
         ".html": {
@@ -429,6 +419,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.Presentation.PresentationTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Presentation.Slideshow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Presentation.Slideshow.html"
         }
       },
       "version": ""
@@ -1505,10 +1505,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Filesystem.yml",
+      "source_relative_path": "api/KS.Files.FilesystemTools.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Files.Filesystem.html"
+          "relative_path": "api/KS.Files.FilesystemTools.html"
         }
       },
       "version": ""
