@@ -28859,6 +28859,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Journaling.JournalManager.PrintJournalLog
   nameWithType: JournalManager.PrintJournalLog
+- uid: KS.Kernel.Journaling.JournalManager.SaveJournals
+  name: SaveJournals()
+  href: api/KS.Kernel.Journaling.JournalManager.html#KS_Kernel_Journaling_JournalManager_SaveJournals
+  commentId: M:KS.Kernel.Journaling.JournalManager.SaveJournals
+  fullName: KS.Kernel.Journaling.JournalManager.SaveJournals()
+  nameWithType: JournalManager.SaveJournals()
+- uid: KS.Kernel.Journaling.JournalManager.SaveJournals*
+  name: SaveJournals
+  href: api/KS.Kernel.Journaling.JournalManager.html#KS_Kernel_Journaling_JournalManager_SaveJournals_
+  commentId: Overload:KS.Kernel.Journaling.JournalManager.SaveJournals
+  isSpec: "True"
+  fullName: KS.Kernel.Journaling.JournalManager.SaveJournals
+  nameWithType: JournalManager.SaveJournals
 - uid: KS.Kernel.Journaling.JournalManager.WriteJournal(System.String,KS.Kernel.Journaling.JournalStatus,System.Object[])
   name: WriteJournal(string, JournalStatus, params object[])
   href: api/KS.Kernel.Journaling.JournalManager.html#KS_Kernel_Journaling_JournalManager_WriteJournal_System_String_KS_Kernel_Journaling_JournalStatus_System_Object___
