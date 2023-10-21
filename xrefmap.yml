@@ -26270,6 +26270,40 @@ references:
   commentId: N:KS.Kernel.Debugging.RemoteDebug.Command
   fullName: KS.Kernel.Debugging.RemoteDebug.Command
   nameWithType: KS.Kernel.Debugging.RemoteDebug.Command
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.Help
+  name: KS.Kernel.Debugging.RemoteDebug.Command.Help
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.Help.html
+  commentId: N:KS.Kernel.Debugging.RemoteDebug.Command.Help
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.Help
+  nameWithType: KS.Kernel.Debugging.RemoteDebug.Command.Help
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint
+  name: RemoteDebugHelpPrint
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.html
+  commentId: T:KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint
+  nameWithType: RemoteDebugHelpPrint
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.ShowHelp(KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  name: ShowHelp(RemoteDebugDevice)
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.html#KS_Kernel_Debugging_RemoteDebug_Command_Help_RemoteDebugHelpPrint_ShowHelp_KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_
+  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.ShowHelp(KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.ShowHelp(KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  nameWithType: RemoteDebugHelpPrint.ShowHelp(RemoteDebugDevice)
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.ShowHelp(System.String,KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  name: ShowHelp(string, RemoteDebugDevice)
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.html#KS_Kernel_Debugging_RemoteDebug_Command_Help_RemoteDebugHelpPrint_ShowHelp_System_String_KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_
+  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.ShowHelp(System.String,KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  name.vb: ShowHelp(String, RemoteDebugDevice)
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.ShowHelp(string, KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.ShowHelp(String, KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  nameWithType: RemoteDebugHelpPrint.ShowHelp(string, RemoteDebugDevice)
+  nameWithType.vb: RemoteDebugHelpPrint.ShowHelp(String, RemoteDebugDevice)
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.ShowHelp*
+  name: ShowHelp
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.html#KS_Kernel_Debugging_RemoteDebug_Command_Help_RemoteDebugHelpPrint_ShowHelp_
+  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.ShowHelp
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.ShowHelp
+  nameWithType: RemoteDebugHelpPrint.ShowHelp
 - uid: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand
   name: IRemoteDebugCommand
   href: api/KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.html
@@ -26512,34 +26546,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandInfo.HelpDefinition
   nameWithType: RemoteDebugCommandInfo.HelpDefinition
-- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem
-  name: RemoteDebugHelpSystem
-  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.html
-  commentId: T:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem
-  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem
-  nameWithType: RemoteDebugHelpSystem
-- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
-  name: ShowHelp(RemoteDebugDevice)
-  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugHelpSystem_ShowHelp_KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
-  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
-  nameWithType: RemoteDebugHelpSystem.ShowHelp(RemoteDebugDevice)
-- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(System.String,KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
-  name: ShowHelp(string, RemoteDebugDevice)
-  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugHelpSystem_ShowHelp_System_String_KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(System.String,KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
-  name.vb: ShowHelp(String, RemoteDebugDevice)
-  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(string, KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
-  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp(String, KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
-  nameWithType: RemoteDebugHelpSystem.ShowHelp(string, RemoteDebugDevice)
-  nameWithType.vb: RemoteDebugHelpSystem.ShowHelp(String, RemoteDebugDevice)
-- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp*
-  name: ShowHelp
-  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugHelpSystem_ShowHelp_
-  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp
-  isSpec: "True"
-  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.ShowHelp
-  nameWithType: RemoteDebugHelpSystem.ShowHelp
 - uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo
   name: RemoteDebugProvidedCommandArgumentInfo
   href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.html

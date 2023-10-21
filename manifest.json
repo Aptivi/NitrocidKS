@@ -2055,6 +2055,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.Help.RemoteDebugHelpPrint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.Help.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.Help.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.yml",
       "output": {
         ".html": {
@@ -2089,16 +2109,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugHelpSystem.html"
         }
       },
       "version": ""
