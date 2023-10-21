@@ -40252,6 +40252,15 @@ references:
   fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.New()
   nameWithType: CommandArgumentInfo.CommandArgumentInfo()
   nameWithType.vb: CommandArgumentInfo.New()
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Arguments.CommandArgumentPart[])
+  name: CommandArgumentInfo(CommandArgumentPart[])
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_KS_Shell_ShellBase_Arguments_CommandArgumentPart___
+  commentId: M:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Arguments.CommandArgumentPart[])
+  name.vb: New(CommandArgumentPart())
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.CommandArgumentInfo(KS.Shell.ShellBase.Arguments.CommandArgumentPart[])
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.New(KS.Shell.ShellBase.Arguments.CommandArgumentPart())
+  nameWithType: CommandArgumentInfo.CommandArgumentInfo(CommandArgumentPart[])
+  nameWithType.vb: CommandArgumentInfo.New(CommandArgumentPart())
 - uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Arguments.CommandArgumentPart[],KS.Shell.ShellBase.Switches.SwitchInfo[])
   name: CommandArgumentInfo(CommandArgumentPart[], SwitchInfo[])
   href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_KS_Shell_ShellBase_Arguments_CommandArgumentPart___KS_Shell_ShellBase_Switches_SwitchInfo___
@@ -40270,6 +40279,42 @@ references:
   fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.New(KS.Shell.ShellBase.Arguments.CommandArgumentPart(), KS.Shell.ShellBase.Switches.SwitchInfo(), Boolean)
   nameWithType: CommandArgumentInfo.CommandArgumentInfo(CommandArgumentPart[], SwitchInfo[], bool)
   nameWithType.vb: CommandArgumentInfo.New(CommandArgumentPart(), SwitchInfo(), Boolean)
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Arguments.CommandArgumentPart[],System.Boolean)
+  name: CommandArgumentInfo(CommandArgumentPart[], bool)
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_KS_Shell_ShellBase_Arguments_CommandArgumentPart___System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Arguments.CommandArgumentPart[],System.Boolean)
+  name.vb: New(CommandArgumentPart(), Boolean)
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.CommandArgumentInfo(KS.Shell.ShellBase.Arguments.CommandArgumentPart[], bool)
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.New(KS.Shell.ShellBase.Arguments.CommandArgumentPart(), Boolean)
+  nameWithType: CommandArgumentInfo.CommandArgumentInfo(CommandArgumentPart[], bool)
+  nameWithType.vb: CommandArgumentInfo.New(CommandArgumentPart(), Boolean)
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Switches.SwitchInfo[])
+  name: CommandArgumentInfo(SwitchInfo[])
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_KS_Shell_ShellBase_Switches_SwitchInfo___
+  commentId: M:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Switches.SwitchInfo[])
+  name.vb: New(SwitchInfo())
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.CommandArgumentInfo(KS.Shell.ShellBase.Switches.SwitchInfo[])
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.New(KS.Shell.ShellBase.Switches.SwitchInfo())
+  nameWithType: CommandArgumentInfo.CommandArgumentInfo(SwitchInfo[])
+  nameWithType.vb: CommandArgumentInfo.New(SwitchInfo())
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Switches.SwitchInfo[],System.Boolean)
+  name: CommandArgumentInfo(SwitchInfo[], bool)
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_KS_Shell_ShellBase_Switches_SwitchInfo___System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(KS.Shell.ShellBase.Switches.SwitchInfo[],System.Boolean)
+  name.vb: New(SwitchInfo(), Boolean)
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.CommandArgumentInfo(KS.Shell.ShellBase.Switches.SwitchInfo[], bool)
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.New(KS.Shell.ShellBase.Switches.SwitchInfo(), Boolean)
+  nameWithType: CommandArgumentInfo.CommandArgumentInfo(SwitchInfo[], bool)
+  nameWithType.vb: CommandArgumentInfo.New(SwitchInfo(), Boolean)
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(System.Boolean)
+  name: CommandArgumentInfo(bool)
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(System.Boolean)
+  name.vb: New(Boolean)
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.CommandArgumentInfo(bool)
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.New(Boolean)
+  nameWithType: CommandArgumentInfo.CommandArgumentInfo(bool)
+  nameWithType.vb: CommandArgumentInfo.New(Boolean)
 - uid: KS.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor*
   name: CommandArgumentInfo
   href: api/KS.Shell.ShellBase.Arguments.CommandArgumentInfo.html#KS_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_
