@@ -4,11 +4,6 @@
     "title": "Class ArgumentExecutor | Nitrocid KS API - Aptivi",
     "keywords": "Class ArgumentExecutor Argument executor base class Inheritance object ArgumentExecutor Implements IArgument Namespace: KS.Arguments Assembly: Nitrocid.dll Syntax public abstract class ArgumentExecutor : IArgument Methods | Edit this page View Source Execute(string, string[], string[]) Executes the argument Declaration public virtual void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly) Parameters Type Name Description string StringArgs String of arguments string[] ListArgsOnly List of argument arguments string[] ListSwitchesOnly List of argument switches Exceptions Type Condition InvalidOperationException Implements IArgument"
   },
-  "api/KS.Arguments.ArgumentHelpSystem.html": {
-    "href": "api/KS.Arguments.ArgumentHelpSystem.html",
-    "title": "Class ArgumentHelpSystem | Nitrocid KS API - Aptivi",
-    "keywords": "Class ArgumentHelpSystem Argument help system module Inheritance object ArgumentHelpSystem Namespace: KS.Arguments Assembly: Nitrocid.dll Syntax public static class ArgumentHelpSystem Methods | Edit this page View Source ShowArgsHelp() Shows the help of an argument, or argument list if nothing is specified Declaration public static void ShowArgsHelp() | Edit this page View Source ShowArgsHelp(string) Shows the help of an argument, or argument list if nothing is specified Declaration public static void ShowArgsHelp(string Argument) Parameters Type Name Description string Argument A specified argument"
-  },
   "api/KS.Arguments.ArgumentInfo.html": {
     "href": "api/KS.Arguments.ArgumentInfo.html",
     "title": "Class ArgumentInfo | Nitrocid KS API - Aptivi",
@@ -19,6 +14,16 @@
     "title": "Class ArgumentParse | Nitrocid KS API - Aptivi",
     "keywords": "Class ArgumentParse Argument parser class Inheritance object ArgumentParse Namespace: KS.Arguments Assembly: Nitrocid.dll Syntax public static class ArgumentParse Fields | Edit this page View Source AvailableCMDLineArgs Available command line arguments Declaration public static readonly Dictionary<string, ArgumentInfo> AvailableCMDLineArgs Field Value Type Description Dictionary<string, ArgumentInfo> Methods | Edit this page View Source IsArgumentPassed(string[], string) Checks to see if the specific argument name is passed Declaration public static bool IsArgumentPassed(string[] ArgumentsInput, string argumentName) Parameters Type Name Description string[] ArgumentsInput List of passed arguments string argumentName Argument name to check Returns Type Description bool True if found in the arguments list and passed. False otherwise. | Edit this page View Source ParseArguments(string[]) Parses specified arguments Declaration public static void ParseArguments(string[] ArgumentsInput) Parameters Type Name Description string[] ArgumentsInput Input Arguments"
   },
+  "api/KS.Arguments.Help.ArgumentHelpPrint.html": {
+    "href": "api/KS.Arguments.Help.ArgumentHelpPrint.html",
+    "title": "Class ArgumentHelpPrint | Nitrocid KS API - Aptivi",
+    "keywords": "Class ArgumentHelpPrint Argument help system module Inheritance object ArgumentHelpPrint Namespace: KS.Arguments.Help Assembly: Nitrocid.dll Syntax public static class ArgumentHelpPrint Methods | Edit this page View Source ShowArgsHelp() Shows the help of an argument, or argument list if nothing is specified Declaration public static void ShowArgsHelp() | Edit this page View Source ShowArgsHelp(string) Shows the help of an argument, or argument list if nothing is specified Declaration public static void ShowArgsHelp(string Argument) Parameters Type Name Description string Argument A specified argument"
+  },
+  "api/KS.Arguments.Help.html": {
+    "href": "api/KS.Arguments.Help.html",
+    "title": "Namespace KS.Arguments.Help | Nitrocid KS API - Aptivi",
+    "keywords": "Namespace KS.Arguments.Help Classes ArgumentHelpPrint Argument help system module"
+  },
   "api/KS.Arguments.IArgument.html": {
     "href": "api/KS.Arguments.IArgument.html",
     "title": "Interface IArgument | Nitrocid KS API - Aptivi",
@@ -27,7 +32,7 @@
   "api/KS.Arguments.html": {
     "href": "api/KS.Arguments.html",
     "title": "Namespace KS.Arguments | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Arguments Classes ArgumentExecutor Argument executor base class ArgumentHelpSystem Argument help system module ArgumentInfo Argument information class ArgumentParse Argument parser class Interfaces IArgument Base kernel argument executor"
+    "keywords": "Namespace KS.Arguments Classes ArgumentExecutor Argument executor base class ArgumentInfo Argument information class ArgumentParse Argument parser class Interfaces IArgument Base kernel argument executor"
   },
   "api/KS.ConsoleBase.Colors.ColorSelector.html": {
     "href": "api/KS.ConsoleBase.Colors.ColorSelector.html",

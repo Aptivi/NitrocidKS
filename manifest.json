@@ -25,16 +25,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Arguments.ArgumentHelpSystem.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Arguments.ArgumentHelpSystem.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Arguments.ArgumentInfo.yml",
       "output": {
         ".html": {
@@ -49,6 +39,26 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Arguments.ArgumentParse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Arguments.Help.ArgumentHelpPrint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Arguments.Help.ArgumentHelpPrint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Arguments.Help.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Arguments.Help.html"
         }
       },
       "version": ""

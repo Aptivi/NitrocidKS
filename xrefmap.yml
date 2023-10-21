@@ -29,34 +29,6 @@ references:
   isSpec: "True"
   fullName: KS.Arguments.ArgumentExecutor.Execute
   nameWithType: ArgumentExecutor.Execute
-- uid: KS.Arguments.ArgumentHelpSystem
-  name: ArgumentHelpSystem
-  href: api/KS.Arguments.ArgumentHelpSystem.html
-  commentId: T:KS.Arguments.ArgumentHelpSystem
-  fullName: KS.Arguments.ArgumentHelpSystem
-  nameWithType: ArgumentHelpSystem
-- uid: KS.Arguments.ArgumentHelpSystem.ShowArgsHelp
-  name: ShowArgsHelp()
-  href: api/KS.Arguments.ArgumentHelpSystem.html#KS_Arguments_ArgumentHelpSystem_ShowArgsHelp
-  commentId: M:KS.Arguments.ArgumentHelpSystem.ShowArgsHelp
-  fullName: KS.Arguments.ArgumentHelpSystem.ShowArgsHelp()
-  nameWithType: ArgumentHelpSystem.ShowArgsHelp()
-- uid: KS.Arguments.ArgumentHelpSystem.ShowArgsHelp(System.String)
-  name: ShowArgsHelp(string)
-  href: api/KS.Arguments.ArgumentHelpSystem.html#KS_Arguments_ArgumentHelpSystem_ShowArgsHelp_System_String_
-  commentId: M:KS.Arguments.ArgumentHelpSystem.ShowArgsHelp(System.String)
-  name.vb: ShowArgsHelp(String)
-  fullName: KS.Arguments.ArgumentHelpSystem.ShowArgsHelp(string)
-  fullName.vb: KS.Arguments.ArgumentHelpSystem.ShowArgsHelp(String)
-  nameWithType: ArgumentHelpSystem.ShowArgsHelp(string)
-  nameWithType.vb: ArgumentHelpSystem.ShowArgsHelp(String)
-- uid: KS.Arguments.ArgumentHelpSystem.ShowArgsHelp*
-  name: ShowArgsHelp
-  href: api/KS.Arguments.ArgumentHelpSystem.html#KS_Arguments_ArgumentHelpSystem_ShowArgsHelp_
-  commentId: Overload:KS.Arguments.ArgumentHelpSystem.ShowArgsHelp
-  isSpec: "True"
-  fullName: KS.Arguments.ArgumentHelpSystem.ShowArgsHelp
-  nameWithType: ArgumentHelpSystem.ShowArgsHelp
 - uid: KS.Arguments.ArgumentInfo
   name: ArgumentInfo
   href: api/KS.Arguments.ArgumentInfo.html
@@ -217,6 +189,40 @@ references:
   isSpec: "True"
   fullName: KS.Arguments.ArgumentParse.ParseArguments
   nameWithType: ArgumentParse.ParseArguments
+- uid: KS.Arguments.Help
+  name: KS.Arguments.Help
+  href: api/KS.Arguments.Help.html
+  commentId: N:KS.Arguments.Help
+  fullName: KS.Arguments.Help
+  nameWithType: KS.Arguments.Help
+- uid: KS.Arguments.Help.ArgumentHelpPrint
+  name: ArgumentHelpPrint
+  href: api/KS.Arguments.Help.ArgumentHelpPrint.html
+  commentId: T:KS.Arguments.Help.ArgumentHelpPrint
+  fullName: KS.Arguments.Help.ArgumentHelpPrint
+  nameWithType: ArgumentHelpPrint
+- uid: KS.Arguments.Help.ArgumentHelpPrint.ShowArgsHelp
+  name: ShowArgsHelp()
+  href: api/KS.Arguments.Help.ArgumentHelpPrint.html#KS_Arguments_Help_ArgumentHelpPrint_ShowArgsHelp
+  commentId: M:KS.Arguments.Help.ArgumentHelpPrint.ShowArgsHelp
+  fullName: KS.Arguments.Help.ArgumentHelpPrint.ShowArgsHelp()
+  nameWithType: ArgumentHelpPrint.ShowArgsHelp()
+- uid: KS.Arguments.Help.ArgumentHelpPrint.ShowArgsHelp(System.String)
+  name: ShowArgsHelp(string)
+  href: api/KS.Arguments.Help.ArgumentHelpPrint.html#KS_Arguments_Help_ArgumentHelpPrint_ShowArgsHelp_System_String_
+  commentId: M:KS.Arguments.Help.ArgumentHelpPrint.ShowArgsHelp(System.String)
+  name.vb: ShowArgsHelp(String)
+  fullName: KS.Arguments.Help.ArgumentHelpPrint.ShowArgsHelp(string)
+  fullName.vb: KS.Arguments.Help.ArgumentHelpPrint.ShowArgsHelp(String)
+  nameWithType: ArgumentHelpPrint.ShowArgsHelp(string)
+  nameWithType.vb: ArgumentHelpPrint.ShowArgsHelp(String)
+- uid: KS.Arguments.Help.ArgumentHelpPrint.ShowArgsHelp*
+  name: ShowArgsHelp
+  href: api/KS.Arguments.Help.ArgumentHelpPrint.html#KS_Arguments_Help_ArgumentHelpPrint_ShowArgsHelp_
+  commentId: Overload:KS.Arguments.Help.ArgumentHelpPrint.ShowArgsHelp
+  isSpec: "True"
+  fullName: KS.Arguments.Help.ArgumentHelpPrint.ShowArgsHelp
+  nameWithType: ArgumentHelpPrint.ShowArgsHelp
 - uid: KS.Arguments.IArgument
   name: IArgument
   href: api/KS.Arguments.IArgument.html
