@@ -9388,19 +9388,6 @@ references:
   commentId: T:KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage
   fullName: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage
   nameWithType: WelcomeMessage
-- uid: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.BannerFigletFont
-  name: BannerFigletFont
-  href: api/KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#KS_ConsoleBase_Writers_MiscWriters_WelcomeMessage_BannerFigletFont
-  commentId: P:KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.BannerFigletFont
-  fullName: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.BannerFigletFont
-  nameWithType: WelcomeMessage.BannerFigletFont
-- uid: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.BannerFigletFont*
-  name: BannerFigletFont
-  href: api/KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#KS_ConsoleBase_Writers_MiscWriters_WelcomeMessage_BannerFigletFont_
-  commentId: Overload:KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.BannerFigletFont
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.BannerFigletFont
-  nameWithType: WelcomeMessage.BannerFigletFont
 - uid: KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.CustomBanner
   name: CustomBanner
   href: api/KS.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#KS_ConsoleBase_Writers_MiscWriters_WelcomeMessage_CustomBanner
@@ -22177,19 +22164,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.BannerColor
   nameWithType: KernelMainConfig.BannerColor
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.BannerFigletFont
-  name: BannerFigletFont
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_BannerFigletFont
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.BannerFigletFont
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.BannerFigletFont
-  nameWithType: KernelMainConfig.BannerFigletFont
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.BannerFigletFont*
-  name: BannerFigletFont
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_BannerFigletFont_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.BannerFigletFont
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.BannerFigletFont
-  nameWithType: KernelMainConfig.BannerFigletFont
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.BeepOnShutdown
   name: BeepOnShutdown
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_BeepOnShutdown
