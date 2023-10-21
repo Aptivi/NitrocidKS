@@ -22697,6 +22697,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.DefaultChoiceOutputType
   nameWithType: KernelMainConfig.DefaultChoiceOutputType
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.DefaultFigletFontName
+  name: DefaultFigletFontName
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_DefaultFigletFontName
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.DefaultFigletFontName
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.DefaultFigletFontName
+  nameWithType: KernelMainConfig.DefaultFigletFontName
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.DefaultFigletFontName*
+  name: DefaultFigletFontName
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_DefaultFigletFontName_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.DefaultFigletFontName
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.DefaultFigletFontName
+  nameWithType: KernelMainConfig.DefaultFigletFontName
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.DefaultSaverName
   name: DefaultSaverName
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_DefaultSaverName
@@ -35330,6 +35343,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Text.TextTools.ContainsAnyOf
   nameWithType: TextTools.ContainsAnyOf
+- uid: KS.Misc.Text.TextTools.DefaultFigletFontName
+  name: DefaultFigletFontName
+  href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_DefaultFigletFontName
+  commentId: P:KS.Misc.Text.TextTools.DefaultFigletFontName
+  fullName: KS.Misc.Text.TextTools.DefaultFigletFontName
+  nameWithType: TextTools.DefaultFigletFontName
+- uid: KS.Misc.Text.TextTools.DefaultFigletFontName*
+  name: DefaultFigletFontName
+  href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_DefaultFigletFontName_
+  commentId: Overload:KS.Misc.Text.TextTools.DefaultFigletFontName
+  isSpec: "True"
+  fullName: KS.Misc.Text.TextTools.DefaultFigletFontName
+  nameWithType: TextTools.DefaultFigletFontName
 - uid: KS.Misc.Text.TextTools.FormatString(System.String,System.Object[])
   name: FormatString(string, params object[])
   href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_FormatString_System_String_System_Object___
