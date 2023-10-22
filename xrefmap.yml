@@ -11100,6 +11100,50 @@ references:
   fullName.vb: KS.Drivers.DriverHandler.EndLocalDriver(Of T)()
   nameWithType: DriverHandler.EndLocalDriver<T>()
   nameWithType.vb: DriverHandler.EndLocalDriver(Of T)()
+- uid: KS.Drivers.DriverHandler.GetCurrentDriver(KS.Drivers.DriverTypes)
+  name: GetCurrentDriver(DriverTypes)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetCurrentDriver_KS_Drivers_DriverTypes_
+  commentId: M:KS.Drivers.DriverHandler.GetCurrentDriver(KS.Drivers.DriverTypes)
+  fullName: KS.Drivers.DriverHandler.GetCurrentDriver(KS.Drivers.DriverTypes)
+  nameWithType: DriverHandler.GetCurrentDriver(DriverTypes)
+- uid: KS.Drivers.DriverHandler.GetCurrentDriver*
+  name: GetCurrentDriver
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetCurrentDriver_
+  commentId: Overload:KS.Drivers.DriverHandler.GetCurrentDriver
+  isSpec: "True"
+  fullName: KS.Drivers.DriverHandler.GetCurrentDriver
+  nameWithType: DriverHandler.GetCurrentDriver
+- uid: KS.Drivers.DriverHandler.GetCurrentDriverLocal(KS.Drivers.DriverTypes)
+  name: GetCurrentDriverLocal(DriverTypes)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetCurrentDriverLocal_KS_Drivers_DriverTypes_
+  commentId: M:KS.Drivers.DriverHandler.GetCurrentDriverLocal(KS.Drivers.DriverTypes)
+  fullName: KS.Drivers.DriverHandler.GetCurrentDriverLocal(KS.Drivers.DriverTypes)
+  nameWithType: DriverHandler.GetCurrentDriverLocal(DriverTypes)
+- uid: KS.Drivers.DriverHandler.GetCurrentDriverLocal*
+  name: GetCurrentDriverLocal
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetCurrentDriverLocal_
+  commentId: Overload:KS.Drivers.DriverHandler.GetCurrentDriverLocal
+  isSpec: "True"
+  fullName: KS.Drivers.DriverHandler.GetCurrentDriverLocal
+  nameWithType: DriverHandler.GetCurrentDriverLocal
+- uid: KS.Drivers.DriverHandler.GetCurrentDriverLocal``1
+  name: GetCurrentDriverLocal<TResult>()
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetCurrentDriverLocal__1
+  commentId: M:KS.Drivers.DriverHandler.GetCurrentDriverLocal``1
+  name.vb: GetCurrentDriverLocal(Of TResult)()
+  fullName: KS.Drivers.DriverHandler.GetCurrentDriverLocal<TResult>()
+  fullName.vb: KS.Drivers.DriverHandler.GetCurrentDriverLocal(Of TResult)()
+  nameWithType: DriverHandler.GetCurrentDriverLocal<TResult>()
+  nameWithType.vb: DriverHandler.GetCurrentDriverLocal(Of TResult)()
+- uid: KS.Drivers.DriverHandler.GetCurrentDriver``1
+  name: GetCurrentDriver<TResult>()
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetCurrentDriver__1
+  commentId: M:KS.Drivers.DriverHandler.GetCurrentDriver``1
+  name.vb: GetCurrentDriver(Of TResult)()
+  fullName: KS.Drivers.DriverHandler.GetCurrentDriver<TResult>()
+  fullName.vb: KS.Drivers.DriverHandler.GetCurrentDriver(Of TResult)()
+  nameWithType: DriverHandler.GetCurrentDriver<TResult>()
+  nameWithType.vb: DriverHandler.GetCurrentDriver(Of TResult)()
 - uid: KS.Drivers.DriverHandler.GetDriver*
   name: GetDriver
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetDriver_
@@ -28158,6 +28202,12 @@ references:
   commentId: F:KS.Kernel.Exceptions.KernelExceptionType.Debug
   fullName: KS.Kernel.Exceptions.KernelExceptionType.Debug
   nameWithType: KernelExceptionType.Debug
+- uid: KS.Kernel.Exceptions.KernelExceptionType.DriverHandler
+  name: DriverHandler
+  href: api/KS.Kernel.Exceptions.KernelExceptionType.html#KS_Kernel_Exceptions_KernelExceptionType_DriverHandler
+  commentId: F:KS.Kernel.Exceptions.KernelExceptionType.DriverHandler
+  fullName: KS.Kernel.Exceptions.KernelExceptionType.DriverHandler
+  nameWithType: KernelExceptionType.DriverHandler
 - uid: KS.Kernel.Exceptions.KernelExceptionType.Encoding
   name: Encoding
   href: api/KS.Kernel.Exceptions.KernelExceptionType.html#KS_Kernel_Exceptions_KernelExceptionType_Encoding
