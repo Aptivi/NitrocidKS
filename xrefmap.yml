@@ -23301,6 +23301,32 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.JSONShellPromptPreset
   nameWithType: KernelMainConfig.JSONShellPromptPreset
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonEditAutoSaveFlag
+  name: JsonEditAutoSaveFlag
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_JsonEditAutoSaveFlag
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.JsonEditAutoSaveFlag
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonEditAutoSaveFlag
+  nameWithType: KernelMainConfig.JsonEditAutoSaveFlag
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonEditAutoSaveFlag*
+  name: JsonEditAutoSaveFlag
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_JsonEditAutoSaveFlag_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.JsonEditAutoSaveFlag
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonEditAutoSaveFlag
+  nameWithType: KernelMainConfig.JsonEditAutoSaveFlag
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonEditAutoSaveInterval
+  name: JsonEditAutoSaveInterval
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_JsonEditAutoSaveInterval
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.JsonEditAutoSaveInterval
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonEditAutoSaveInterval
+  nameWithType: KernelMainConfig.JsonEditAutoSaveInterval
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonEditAutoSaveInterval*
+  name: JsonEditAutoSaveInterval
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_JsonEditAutoSaveInterval_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.JsonEditAutoSaveInterval
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonEditAutoSaveInterval
+  nameWithType: KernelMainConfig.JsonEditAutoSaveInterval
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonShellFormatting
   name: JsonShellFormatting
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_JsonShellFormatting
