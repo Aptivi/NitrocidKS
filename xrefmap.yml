@@ -17859,246 +17859,246 @@ references:
   commentId: T:KS.Files.Editors.HexEdit.HexEditTools
   fullName: KS.Files.Editors.HexEdit.HexEditTools
   nameWithType: HexEditTools
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_AddNewByte(System.Byte)
-  name: HexEdit_AddNewByte(byte)
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_AddNewByte_System_Byte_
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_AddNewByte(System.Byte)
-  name.vb: HexEdit_AddNewByte(Byte)
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_AddNewByte(byte)
-  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_AddNewByte(Byte)
-  nameWithType: HexEditTools.HexEdit_AddNewByte(byte)
-  nameWithType.vb: HexEditTools.HexEdit_AddNewByte(Byte)
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_AddNewByte*
-  name: HexEdit_AddNewByte
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_AddNewByte_
-  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_AddNewByte
+- uid: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(System.Byte)
+  name: AddNewByte(byte)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_AddNewByte_System_Byte_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(System.Byte)
+  name.vb: AddNewByte(Byte)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(byte)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(Byte)
+  nameWithType: HexEditTools.AddNewByte(byte)
+  nameWithType.vb: HexEditTools.AddNewByte(Byte)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte*
+  name: AddNewByte
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_AddNewByte_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.AddNewByte
   isSpec: "True"
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_AddNewByte
-  nameWithType: HexEditTools.HexEdit_AddNewByte
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_AddNewBytes(System.Byte[])
-  name: HexEdit_AddNewBytes(byte[])
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_AddNewBytes_System_Byte___
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_AddNewBytes(System.Byte[])
-  name.vb: HexEdit_AddNewBytes(Byte())
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_AddNewBytes(byte[])
-  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_AddNewBytes(Byte())
-  nameWithType: HexEditTools.HexEdit_AddNewBytes(byte[])
-  nameWithType.vb: HexEditTools.HexEdit_AddNewBytes(Byte())
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_AddNewBytes*
-  name: HexEdit_AddNewBytes
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_AddNewBytes_
-  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_AddNewBytes
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte
+  nameWithType: HexEditTools.AddNewByte
+- uid: KS.Files.Editors.HexEdit.HexEditTools.AddNewBytes(System.Byte[])
+  name: AddNewBytes(byte[])
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_AddNewBytes_System_Byte___
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.AddNewBytes(System.Byte[])
+  name.vb: AddNewBytes(Byte())
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.AddNewBytes(byte[])
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.AddNewBytes(Byte())
+  nameWithType: HexEditTools.AddNewBytes(byte[])
+  nameWithType.vb: HexEditTools.AddNewBytes(Byte())
+- uid: KS.Files.Editors.HexEdit.HexEditTools.AddNewBytes*
+  name: AddNewBytes
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_AddNewBytes_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.AddNewBytes
   isSpec: "True"
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_AddNewBytes
-  nameWithType: HexEditTools.HexEdit_AddNewBytes
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_CloseBinaryFile
-  name: HexEdit_CloseBinaryFile()
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_CloseBinaryFile
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_CloseBinaryFile
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_CloseBinaryFile()
-  nameWithType: HexEditTools.HexEdit_CloseBinaryFile()
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_CloseBinaryFile*
-  name: HexEdit_CloseBinaryFile
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_CloseBinaryFile_
-  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_CloseBinaryFile
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.AddNewBytes
+  nameWithType: HexEditTools.AddNewBytes
+- uid: KS.Files.Editors.HexEdit.HexEditTools.CloseBinaryFile
+  name: CloseBinaryFile()
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_CloseBinaryFile
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.CloseBinaryFile
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.CloseBinaryFile()
+  nameWithType: HexEditTools.CloseBinaryFile()
+- uid: KS.Files.Editors.HexEdit.HexEditTools.CloseBinaryFile*
+  name: CloseBinaryFile
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_CloseBinaryFile_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.CloseBinaryFile
   isSpec: "True"
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_CloseBinaryFile
-  nameWithType: HexEditTools.HexEdit_CloseBinaryFile
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteByte(System.Int64)
-  name: HexEdit_DeleteByte(long)
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_DeleteByte_System_Int64_
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteByte(System.Int64)
-  name.vb: HexEdit_DeleteByte(Long)
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteByte(long)
-  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteByte(Long)
-  nameWithType: HexEditTools.HexEdit_DeleteByte(long)
-  nameWithType.vb: HexEditTools.HexEdit_DeleteByte(Long)
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteByte*
-  name: HexEdit_DeleteByte
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_DeleteByte_
-  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteByte
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.CloseBinaryFile
+  nameWithType: HexEditTools.CloseBinaryFile
+- uid: KS.Files.Editors.HexEdit.HexEditTools.DeleteByte(System.Int64)
+  name: DeleteByte(long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DeleteByte_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.DeleteByte(System.Int64)
+  name.vb: DeleteByte(Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.DeleteByte(long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.DeleteByte(Long)
+  nameWithType: HexEditTools.DeleteByte(long)
+  nameWithType.vb: HexEditTools.DeleteByte(Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.DeleteByte*
+  name: DeleteByte
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DeleteByte_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.DeleteByte
   isSpec: "True"
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteByte
-  nameWithType: HexEditTools.HexEdit_DeleteByte
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteBytes(System.Int64)
-  name: HexEdit_DeleteBytes(long)
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_DeleteBytes_System_Int64_
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteBytes(System.Int64)
-  name.vb: HexEdit_DeleteBytes(Long)
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteBytes(long)
-  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteBytes(Long)
-  nameWithType: HexEditTools.HexEdit_DeleteBytes(long)
-  nameWithType.vb: HexEditTools.HexEdit_DeleteBytes(Long)
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteBytes(System.Int64,System.Int64)
-  name: HexEdit_DeleteBytes(long, long)
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_DeleteBytes_System_Int64_System_Int64_
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteBytes(System.Int64,System.Int64)
-  name.vb: HexEdit_DeleteBytes(Long, Long)
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteBytes(long, long)
-  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteBytes(Long, Long)
-  nameWithType: HexEditTools.HexEdit_DeleteBytes(long, long)
-  nameWithType.vb: HexEditTools.HexEdit_DeleteBytes(Long, Long)
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteBytes*
-  name: HexEdit_DeleteBytes
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_DeleteBytes_
-  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteBytes
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.DeleteByte
+  nameWithType: HexEditTools.DeleteByte
+- uid: KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(System.Int64)
+  name: DeleteBytes(long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DeleteBytes_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(System.Int64)
+  name.vb: DeleteBytes(Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(Long)
+  nameWithType: HexEditTools.DeleteBytes(long)
+  nameWithType.vb: HexEditTools.DeleteBytes(Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(System.Int64,System.Int64)
+  name: DeleteBytes(long, long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DeleteBytes_System_Int64_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(System.Int64,System.Int64)
+  name.vb: DeleteBytes(Long, Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(long, long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(Long, Long)
+  nameWithType: HexEditTools.DeleteBytes(long, long)
+  nameWithType.vb: HexEditTools.DeleteBytes(Long, Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes*
+  name: DeleteBytes
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DeleteBytes_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes
   isSpec: "True"
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DeleteBytes
-  nameWithType: HexEditTools.HexEdit_DeleteBytes
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DisplayHex
-  name: HexEdit_DisplayHex()
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_DisplayHex
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DisplayHex
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DisplayHex()
-  nameWithType: HexEditTools.HexEdit_DisplayHex()
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DisplayHex(System.Int64)
-  name: HexEdit_DisplayHex(long)
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_DisplayHex_System_Int64_
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DisplayHex(System.Int64)
-  name.vb: HexEdit_DisplayHex(Long)
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DisplayHex(long)
-  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DisplayHex(Long)
-  nameWithType: HexEditTools.HexEdit_DisplayHex(long)
-  nameWithType.vb: HexEditTools.HexEdit_DisplayHex(Long)
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DisplayHex(System.Int64,System.Int64)
-  name: HexEdit_DisplayHex(long, long)
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_DisplayHex_System_Int64_System_Int64_
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DisplayHex(System.Int64,System.Int64)
-  name.vb: HexEdit_DisplayHex(Long, Long)
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DisplayHex(long, long)
-  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DisplayHex(Long, Long)
-  nameWithType: HexEditTools.HexEdit_DisplayHex(long, long)
-  nameWithType.vb: HexEditTools.HexEdit_DisplayHex(Long, Long)
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DisplayHex*
-  name: HexEdit_DisplayHex
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_DisplayHex_
-  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DisplayHex
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes
+  nameWithType: HexEditTools.DeleteBytes
+- uid: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex
+  name: DisplayHex()
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DisplayHex
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.DisplayHex
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex()
+  nameWithType: HexEditTools.DisplayHex()
+- uid: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(System.Int64)
+  name: DisplayHex(long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DisplayHex_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(System.Int64)
+  name.vb: DisplayHex(Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(Long)
+  nameWithType: HexEditTools.DisplayHex(long)
+  nameWithType.vb: HexEditTools.DisplayHex(Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(System.Int64,System.Int64)
+  name: DisplayHex(long, long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DisplayHex_System_Int64_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(System.Int64,System.Int64)
+  name.vb: DisplayHex(Long, Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(long, long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(Long, Long)
+  nameWithType: HexEditTools.DisplayHex(long, long)
+  nameWithType.vb: HexEditTools.DisplayHex(Long, Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex*
+  name: DisplayHex
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DisplayHex_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.DisplayHex
   isSpec: "True"
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_DisplayHex
-  nameWithType: HexEditTools.HexEdit_DisplayHex
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_HandleAutoSaveBinaryFile
-  name: HexEdit_HandleAutoSaveBinaryFile()
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_HandleAutoSaveBinaryFile
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_HandleAutoSaveBinaryFile
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_HandleAutoSaveBinaryFile()
-  nameWithType: HexEditTools.HexEdit_HandleAutoSaveBinaryFile()
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_HandleAutoSaveBinaryFile*
-  name: HexEdit_HandleAutoSaveBinaryFile
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_HandleAutoSaveBinaryFile_
-  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_HandleAutoSaveBinaryFile
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex
+  nameWithType: HexEditTools.DisplayHex
+- uid: KS.Files.Editors.HexEdit.HexEditTools.HandleAutoSaveBinaryFile
+  name: HandleAutoSaveBinaryFile()
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HandleAutoSaveBinaryFile
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HandleAutoSaveBinaryFile
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.HandleAutoSaveBinaryFile()
+  nameWithType: HexEditTools.HandleAutoSaveBinaryFile()
+- uid: KS.Files.Editors.HexEdit.HexEditTools.HandleAutoSaveBinaryFile*
+  name: HandleAutoSaveBinaryFile
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HandleAutoSaveBinaryFile_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.HandleAutoSaveBinaryFile
   isSpec: "True"
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_HandleAutoSaveBinaryFile
-  nameWithType: HexEditTools.HexEdit_HandleAutoSaveBinaryFile
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_OpenBinaryFile(System.String)
-  name: HexEdit_OpenBinaryFile(string)
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_OpenBinaryFile_System_String_
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_OpenBinaryFile(System.String)
-  name.vb: HexEdit_OpenBinaryFile(String)
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_OpenBinaryFile(string)
-  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_OpenBinaryFile(String)
-  nameWithType: HexEditTools.HexEdit_OpenBinaryFile(string)
-  nameWithType.vb: HexEditTools.HexEdit_OpenBinaryFile(String)
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_OpenBinaryFile*
-  name: HexEdit_OpenBinaryFile
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_OpenBinaryFile_
-  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_OpenBinaryFile
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.HandleAutoSaveBinaryFile
+  nameWithType: HexEditTools.HandleAutoSaveBinaryFile
+- uid: KS.Files.Editors.HexEdit.HexEditTools.OpenBinaryFile(System.String)
+  name: OpenBinaryFile(string)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_OpenBinaryFile_System_String_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.OpenBinaryFile(System.String)
+  name.vb: OpenBinaryFile(String)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.OpenBinaryFile(string)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.OpenBinaryFile(String)
+  nameWithType: HexEditTools.OpenBinaryFile(string)
+  nameWithType.vb: HexEditTools.OpenBinaryFile(String)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.OpenBinaryFile*
+  name: OpenBinaryFile
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_OpenBinaryFile_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.OpenBinaryFile
   isSpec: "True"
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_OpenBinaryFile
-  nameWithType: HexEditTools.HexEdit_OpenBinaryFile
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(System.Byte)
-  name: HexEdit_QueryByteAndDisplay(byte)
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_QueryByteAndDisplay_System_Byte_
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(System.Byte)
-  name.vb: HexEdit_QueryByteAndDisplay(Byte)
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(byte)
-  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(Byte)
-  nameWithType: HexEditTools.HexEdit_QueryByteAndDisplay(byte)
-  nameWithType.vb: HexEditTools.HexEdit_QueryByteAndDisplay(Byte)
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(System.Byte,System.Int64)
-  name: HexEdit_QueryByteAndDisplay(byte, long)
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_QueryByteAndDisplay_System_Byte_System_Int64_
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(System.Byte,System.Int64)
-  name.vb: HexEdit_QueryByteAndDisplay(Byte, Long)
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(byte, long)
-  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(Byte, Long)
-  nameWithType: HexEditTools.HexEdit_QueryByteAndDisplay(byte, long)
-  nameWithType.vb: HexEditTools.HexEdit_QueryByteAndDisplay(Byte, Long)
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(System.Byte,System.Int64,System.Int64)
-  name: HexEdit_QueryByteAndDisplay(byte, long, long)
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_QueryByteAndDisplay_System_Byte_System_Int64_System_Int64_
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(System.Byte,System.Int64,System.Int64)
-  name.vb: HexEdit_QueryByteAndDisplay(Byte, Long, Long)
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(byte, long, long)
-  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay(Byte, Long, Long)
-  nameWithType: HexEditTools.HexEdit_QueryByteAndDisplay(byte, long, long)
-  nameWithType.vb: HexEditTools.HexEdit_QueryByteAndDisplay(Byte, Long, Long)
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay*
-  name: HexEdit_QueryByteAndDisplay
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_QueryByteAndDisplay_
-  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.OpenBinaryFile
+  nameWithType: HexEditTools.OpenBinaryFile
+- uid: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(System.Byte)
+  name: QueryByteAndDisplay(byte)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_QueryByteAndDisplay_System_Byte_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(System.Byte)
+  name.vb: QueryByteAndDisplay(Byte)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(byte)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(Byte)
+  nameWithType: HexEditTools.QueryByteAndDisplay(byte)
+  nameWithType.vb: HexEditTools.QueryByteAndDisplay(Byte)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(System.Byte,System.Int64)
+  name: QueryByteAndDisplay(byte, long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_QueryByteAndDisplay_System_Byte_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(System.Byte,System.Int64)
+  name.vb: QueryByteAndDisplay(Byte, Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(byte, long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(Byte, Long)
+  nameWithType: HexEditTools.QueryByteAndDisplay(byte, long)
+  nameWithType.vb: HexEditTools.QueryByteAndDisplay(Byte, Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(System.Byte,System.Int64,System.Int64)
+  name: QueryByteAndDisplay(byte, long, long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_QueryByteAndDisplay_System_Byte_System_Int64_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(System.Byte,System.Int64,System.Int64)
+  name.vb: QueryByteAndDisplay(Byte, Long, Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(byte, long, long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(Byte, Long, Long)
+  nameWithType: HexEditTools.QueryByteAndDisplay(byte, long, long)
+  nameWithType.vb: HexEditTools.QueryByteAndDisplay(Byte, Long, Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay*
+  name: QueryByteAndDisplay
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_QueryByteAndDisplay_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay
   isSpec: "True"
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_QueryByteAndDisplay
-  nameWithType: HexEditTools.HexEdit_QueryByteAndDisplay
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_Replace(System.Byte,System.Byte)
-  name: HexEdit_Replace(byte, byte)
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_Replace_System_Byte_System_Byte_
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_Replace(System.Byte,System.Byte)
-  name.vb: HexEdit_Replace(Byte, Byte)
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_Replace(byte, byte)
-  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_Replace(Byte, Byte)
-  nameWithType: HexEditTools.HexEdit_Replace(byte, byte)
-  nameWithType.vb: HexEditTools.HexEdit_Replace(Byte, Byte)
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_Replace(System.Byte,System.Byte,System.Int64)
-  name: HexEdit_Replace(byte, byte, long)
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_Replace_System_Byte_System_Byte_System_Int64_
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_Replace(System.Byte,System.Byte,System.Int64)
-  name.vb: HexEdit_Replace(Byte, Byte, Long)
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_Replace(byte, byte, long)
-  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_Replace(Byte, Byte, Long)
-  nameWithType: HexEditTools.HexEdit_Replace(byte, byte, long)
-  nameWithType.vb: HexEditTools.HexEdit_Replace(Byte, Byte, Long)
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_Replace(System.Byte,System.Byte,System.Int64,System.Int64)
-  name: HexEdit_Replace(byte, byte, long, long)
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_Replace_System_Byte_System_Byte_System_Int64_System_Int64_
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_Replace(System.Byte,System.Byte,System.Int64,System.Int64)
-  name.vb: HexEdit_Replace(Byte, Byte, Long, Long)
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_Replace(byte, byte, long, long)
-  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_Replace(Byte, Byte, Long, Long)
-  nameWithType: HexEditTools.HexEdit_Replace(byte, byte, long, long)
-  nameWithType.vb: HexEditTools.HexEdit_Replace(Byte, Byte, Long, Long)
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_Replace*
-  name: HexEdit_Replace
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_Replace_
-  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_Replace
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay
+  nameWithType: HexEditTools.QueryByteAndDisplay
+- uid: KS.Files.Editors.HexEdit.HexEditTools.Replace(System.Byte,System.Byte)
+  name: Replace(byte, byte)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_Replace_System_Byte_System_Byte_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.Replace(System.Byte,System.Byte)
+  name.vb: Replace(Byte, Byte)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.Replace(byte, byte)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.Replace(Byte, Byte)
+  nameWithType: HexEditTools.Replace(byte, byte)
+  nameWithType.vb: HexEditTools.Replace(Byte, Byte)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.Replace(System.Byte,System.Byte,System.Int64)
+  name: Replace(byte, byte, long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_Replace_System_Byte_System_Byte_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.Replace(System.Byte,System.Byte,System.Int64)
+  name.vb: Replace(Byte, Byte, Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.Replace(byte, byte, long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.Replace(Byte, Byte, Long)
+  nameWithType: HexEditTools.Replace(byte, byte, long)
+  nameWithType.vb: HexEditTools.Replace(Byte, Byte, Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.Replace(System.Byte,System.Byte,System.Int64,System.Int64)
+  name: Replace(byte, byte, long, long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_Replace_System_Byte_System_Byte_System_Int64_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.Replace(System.Byte,System.Byte,System.Int64,System.Int64)
+  name.vb: Replace(Byte, Byte, Long, Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.Replace(byte, byte, long, long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.Replace(Byte, Byte, Long, Long)
+  nameWithType: HexEditTools.Replace(byte, byte, long, long)
+  nameWithType.vb: HexEditTools.Replace(Byte, Byte, Long, Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.Replace*
+  name: Replace
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_Replace_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.Replace
   isSpec: "True"
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_Replace
-  nameWithType: HexEditTools.HexEdit_Replace
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_SaveBinaryFile
-  name: HexEdit_SaveBinaryFile()
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_SaveBinaryFile
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_SaveBinaryFile
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_SaveBinaryFile()
-  nameWithType: HexEditTools.HexEdit_SaveBinaryFile()
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_SaveBinaryFile*
-  name: HexEdit_SaveBinaryFile
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_SaveBinaryFile_
-  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_SaveBinaryFile
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.Replace
+  nameWithType: HexEditTools.Replace
+- uid: KS.Files.Editors.HexEdit.HexEditTools.SaveBinaryFile
+  name: SaveBinaryFile()
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_SaveBinaryFile
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.SaveBinaryFile
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.SaveBinaryFile()
+  nameWithType: HexEditTools.SaveBinaryFile()
+- uid: KS.Files.Editors.HexEdit.HexEditTools.SaveBinaryFile*
+  name: SaveBinaryFile
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_SaveBinaryFile_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.SaveBinaryFile
   isSpec: "True"
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_SaveBinaryFile
-  nameWithType: HexEditTools.HexEdit_SaveBinaryFile
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_WasHexEdited
-  name: HexEdit_WasHexEdited()
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_WasHexEdited
-  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_WasHexEdited
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_WasHexEdited()
-  nameWithType: HexEditTools.HexEdit_WasHexEdited()
-- uid: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_WasHexEdited*
-  name: HexEdit_WasHexEdited
-  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_HexEdit_WasHexEdited_
-  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.HexEdit_WasHexEdited
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.SaveBinaryFile
+  nameWithType: HexEditTools.SaveBinaryFile
+- uid: KS.Files.Editors.HexEdit.HexEditTools.WasHexEdited
+  name: WasHexEdited()
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_WasHexEdited
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.WasHexEdited
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.WasHexEdited()
+  nameWithType: HexEditTools.WasHexEdited()
+- uid: KS.Files.Editors.HexEdit.HexEditTools.WasHexEdited*
+  name: WasHexEdited
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_WasHexEdited_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditTools.WasHexEdited
   isSpec: "True"
-  fullName: KS.Files.Editors.HexEdit.HexEditTools.HexEdit_WasHexEdited
-  nameWithType: HexEditTools.HexEdit_WasHexEdited
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.WasHexEdited
+  nameWithType: HexEditTools.WasHexEdited
 - uid: KS.Files.Editors.JsonShell
   name: KS.Files.Editors.JsonShell
   href: api/KS.Files.Editors.JsonShell.html
@@ -18111,6 +18111,70 @@ references:
   commentId: T:KS.Files.Editors.JsonShell.JsonTools
   fullName: KS.Files.Editors.JsonShell.JsonTools
   nameWithType: JsonTools
+- uid: KS.Files.Editors.JsonShell.JsonTools.AddNewArray(System.String,System.String,Newtonsoft.Json.Linq.JArray)
+  name: AddNewArray(string, string, JArray)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_AddNewArray_System_String_System_String_Newtonsoft_Json_Linq_JArray_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.AddNewArray(System.String,System.String,Newtonsoft.Json.Linq.JArray)
+  name.vb: AddNewArray(String, String, JArray)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.AddNewArray(string, string, Newtonsoft.Json.Linq.JArray)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.AddNewArray(String, String, Newtonsoft.Json.Linq.JArray)
+  nameWithType: JsonTools.AddNewArray(string, string, JArray)
+  nameWithType.vb: JsonTools.AddNewArray(String, String, JArray)
+- uid: KS.Files.Editors.JsonShell.JsonTools.AddNewArray*
+  name: AddNewArray
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_AddNewArray_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.AddNewArray
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.AddNewArray
+  nameWithType: JsonTools.AddNewArray
+- uid: KS.Files.Editors.JsonShell.JsonTools.AddNewObject(System.String,System.String,Newtonsoft.Json.Linq.JToken)
+  name: AddNewObject(string, string, JToken)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_AddNewObject_System_String_System_String_Newtonsoft_Json_Linq_JToken_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.AddNewObject(System.String,System.String,Newtonsoft.Json.Linq.JToken)
+  name.vb: AddNewObject(String, String, JToken)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.AddNewObject(string, string, Newtonsoft.Json.Linq.JToken)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.AddNewObject(String, String, Newtonsoft.Json.Linq.JToken)
+  nameWithType: JsonTools.AddNewObject(string, string, JToken)
+  nameWithType.vb: JsonTools.AddNewObject(String, String, JToken)
+- uid: KS.Files.Editors.JsonShell.JsonTools.AddNewObject*
+  name: AddNewObject
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_AddNewObject_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.AddNewObject
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.AddNewObject
+  nameWithType: JsonTools.AddNewObject
+- uid: KS.Files.Editors.JsonShell.JsonTools.AddNewObjectIndexed(System.String,System.Int32,Newtonsoft.Json.Linq.JToken)
+  name: AddNewObjectIndexed(string, int, JToken)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_AddNewObjectIndexed_System_String_System_Int32_Newtonsoft_Json_Linq_JToken_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.AddNewObjectIndexed(System.String,System.Int32,Newtonsoft.Json.Linq.JToken)
+  name.vb: AddNewObjectIndexed(String, Integer, JToken)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.AddNewObjectIndexed(string, int, Newtonsoft.Json.Linq.JToken)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.AddNewObjectIndexed(String, Integer, Newtonsoft.Json.Linq.JToken)
+  nameWithType: JsonTools.AddNewObjectIndexed(string, int, JToken)
+  nameWithType.vb: JsonTools.AddNewObjectIndexed(String, Integer, JToken)
+- uid: KS.Files.Editors.JsonShell.JsonTools.AddNewObjectIndexed*
+  name: AddNewObjectIndexed
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_AddNewObjectIndexed_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.AddNewObjectIndexed
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.AddNewObjectIndexed
+  nameWithType: JsonTools.AddNewObjectIndexed
+- uid: KS.Files.Editors.JsonShell.JsonTools.AddNewProperty(System.String,System.String,Newtonsoft.Json.Linq.JToken)
+  name: AddNewProperty(string, string, JToken)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_AddNewProperty_System_String_System_String_Newtonsoft_Json_Linq_JToken_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.AddNewProperty(System.String,System.String,Newtonsoft.Json.Linq.JToken)
+  name.vb: AddNewProperty(String, String, JToken)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.AddNewProperty(string, string, Newtonsoft.Json.Linq.JToken)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.AddNewProperty(String, String, Newtonsoft.Json.Linq.JToken)
+  nameWithType: JsonTools.AddNewProperty(string, string, JToken)
+  nameWithType.vb: JsonTools.AddNewProperty(String, String, JToken)
+- uid: KS.Files.Editors.JsonShell.JsonTools.AddNewProperty*
+  name: AddNewProperty
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_AddNewProperty_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.AddNewProperty
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.AddNewProperty
+  nameWithType: JsonTools.AddNewProperty
 - uid: KS.Files.Editors.JsonShell.JsonTools.BeautifyJson(System.String)
   name: BeautifyJson(string)
   href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_BeautifyJson_System_String_
@@ -18143,246 +18207,64 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.JsonShell.JsonTools.BeautifyJsonText
   nameWithType: JsonTools.BeautifyJsonText
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewArray(System.String,System.String,Newtonsoft.Json.Linq.JArray)
-  name: JsonShell_AddNewArray(string, string, JArray)
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_AddNewArray_System_String_System_String_Newtonsoft_Json_Linq_JArray_
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewArray(System.String,System.String,Newtonsoft.Json.Linq.JArray)
-  name.vb: JsonShell_AddNewArray(String, String, JArray)
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewArray(string, string, Newtonsoft.Json.Linq.JArray)
-  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewArray(String, String, Newtonsoft.Json.Linq.JArray)
-  nameWithType: JsonTools.JsonShell_AddNewArray(string, string, JArray)
-  nameWithType.vb: JsonTools.JsonShell_AddNewArray(String, String, JArray)
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewArray*
-  name: JsonShell_AddNewArray
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_AddNewArray_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewArray
+- uid: KS.Files.Editors.JsonShell.JsonTools.CloseTextFile
+  name: CloseTextFile()
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_CloseTextFile
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.CloseTextFile
+  fullName: KS.Files.Editors.JsonShell.JsonTools.CloseTextFile()
+  nameWithType: JsonTools.CloseTextFile()
+- uid: KS.Files.Editors.JsonShell.JsonTools.CloseTextFile*
+  name: CloseTextFile
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_CloseTextFile_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.CloseTextFile
   isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewArray
-  nameWithType: JsonTools.JsonShell_AddNewArray
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewObject(System.String,System.String,Newtonsoft.Json.Linq.JToken)
-  name: JsonShell_AddNewObject(string, string, JToken)
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_AddNewObject_System_String_System_String_Newtonsoft_Json_Linq_JToken_
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewObject(System.String,System.String,Newtonsoft.Json.Linq.JToken)
-  name.vb: JsonShell_AddNewObject(String, String, JToken)
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewObject(string, string, Newtonsoft.Json.Linq.JToken)
-  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewObject(String, String, Newtonsoft.Json.Linq.JToken)
-  nameWithType: JsonTools.JsonShell_AddNewObject(string, string, JToken)
-  nameWithType.vb: JsonTools.JsonShell_AddNewObject(String, String, JToken)
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewObject*
-  name: JsonShell_AddNewObject
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_AddNewObject_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewObject
+  fullName: KS.Files.Editors.JsonShell.JsonTools.CloseTextFile
+  nameWithType: JsonTools.CloseTextFile
+- uid: KS.Files.Editors.JsonShell.JsonTools.GetProperty(System.String)
+  name: GetProperty(string)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_GetProperty_System_String_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.GetProperty(System.String)
+  name.vb: GetProperty(String)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.GetProperty(string)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.GetProperty(String)
+  nameWithType: JsonTools.GetProperty(string)
+  nameWithType.vb: JsonTools.GetProperty(String)
+- uid: KS.Files.Editors.JsonShell.JsonTools.GetProperty*
+  name: GetProperty
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_GetProperty_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.GetProperty
   isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewObject
-  nameWithType: JsonTools.JsonShell_AddNewObject
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewObjectIndexed(System.String,System.Int32,Newtonsoft.Json.Linq.JToken)
-  name: JsonShell_AddNewObjectIndexed(string, int, JToken)
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_AddNewObjectIndexed_System_String_System_Int32_Newtonsoft_Json_Linq_JToken_
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewObjectIndexed(System.String,System.Int32,Newtonsoft.Json.Linq.JToken)
-  name.vb: JsonShell_AddNewObjectIndexed(String, Integer, JToken)
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewObjectIndexed(string, int, Newtonsoft.Json.Linq.JToken)
-  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewObjectIndexed(String, Integer, Newtonsoft.Json.Linq.JToken)
-  nameWithType: JsonTools.JsonShell_AddNewObjectIndexed(string, int, JToken)
-  nameWithType.vb: JsonTools.JsonShell_AddNewObjectIndexed(String, Integer, JToken)
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewObjectIndexed*
-  name: JsonShell_AddNewObjectIndexed
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_AddNewObjectIndexed_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewObjectIndexed
+  fullName: KS.Files.Editors.JsonShell.JsonTools.GetProperty
+  nameWithType: JsonTools.GetProperty
+- uid: KS.Files.Editors.JsonShell.JsonTools.GetPropertySafe(System.String,System.String)
+  name: GetPropertySafe(string, string)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_GetPropertySafe_System_String_System_String_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.GetPropertySafe(System.String,System.String)
+  name.vb: GetPropertySafe(String, String)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.GetPropertySafe(string, string)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.GetPropertySafe(String, String)
+  nameWithType: JsonTools.GetPropertySafe(string, string)
+  nameWithType.vb: JsonTools.GetPropertySafe(String, String)
+- uid: KS.Files.Editors.JsonShell.JsonTools.GetPropertySafe*
+  name: GetPropertySafe
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_GetPropertySafe_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.GetPropertySafe
   isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewObjectIndexed
-  nameWithType: JsonTools.JsonShell_AddNewObjectIndexed
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewProperty(System.String,System.String,Newtonsoft.Json.Linq.JToken)
-  name: JsonShell_AddNewProperty(string, string, JToken)
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_AddNewProperty_System_String_System_String_Newtonsoft_Json_Linq_JToken_
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewProperty(System.String,System.String,Newtonsoft.Json.Linq.JToken)
-  name.vb: JsonShell_AddNewProperty(String, String, JToken)
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewProperty(string, string, Newtonsoft.Json.Linq.JToken)
-  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewProperty(String, String, Newtonsoft.Json.Linq.JToken)
-  nameWithType: JsonTools.JsonShell_AddNewProperty(string, string, JToken)
-  nameWithType.vb: JsonTools.JsonShell_AddNewProperty(String, String, JToken)
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewProperty*
-  name: JsonShell_AddNewProperty
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_AddNewProperty_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewProperty
+  fullName: KS.Files.Editors.JsonShell.JsonTools.GetPropertySafe
+  nameWithType: JsonTools.GetPropertySafe
+- uid: KS.Files.Editors.JsonShell.JsonTools.HandleAutoSaveJsonFile
+  name: HandleAutoSaveJsonFile()
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_HandleAutoSaveJsonFile
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.HandleAutoSaveJsonFile
+  fullName: KS.Files.Editors.JsonShell.JsonTools.HandleAutoSaveJsonFile()
+  nameWithType: JsonTools.HandleAutoSaveJsonFile()
+- uid: KS.Files.Editors.JsonShell.JsonTools.HandleAutoSaveJsonFile*
+  name: HandleAutoSaveJsonFile
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_HandleAutoSaveJsonFile_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.HandleAutoSaveJsonFile
   isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_AddNewProperty
-  nameWithType: JsonTools.JsonShell_AddNewProperty
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_CloseTextFile
-  name: JsonShell_CloseTextFile()
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_CloseTextFile
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_CloseTextFile
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_CloseTextFile()
-  nameWithType: JsonTools.JsonShell_CloseTextFile()
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_CloseTextFile*
-  name: JsonShell_CloseTextFile
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_CloseTextFile_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.JsonShell_CloseTextFile
-  isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_CloseTextFile
-  nameWithType: JsonTools.JsonShell_CloseTextFile
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_GetProperty(System.String)
-  name: JsonShell_GetProperty(string)
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_GetProperty_System_String_
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_GetProperty(System.String)
-  name.vb: JsonShell_GetProperty(String)
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_GetProperty(string)
-  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.JsonShell_GetProperty(String)
-  nameWithType: JsonTools.JsonShell_GetProperty(string)
-  nameWithType.vb: JsonTools.JsonShell_GetProperty(String)
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_GetProperty*
-  name: JsonShell_GetProperty
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_GetProperty_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.JsonShell_GetProperty
-  isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_GetProperty
-  nameWithType: JsonTools.JsonShell_GetProperty
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_GetPropertySafe(System.String,System.String)
-  name: JsonShell_GetPropertySafe(string, string)
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_GetPropertySafe_System_String_System_String_
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_GetPropertySafe(System.String,System.String)
-  name.vb: JsonShell_GetPropertySafe(String, String)
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_GetPropertySafe(string, string)
-  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.JsonShell_GetPropertySafe(String, String)
-  nameWithType: JsonTools.JsonShell_GetPropertySafe(string, string)
-  nameWithType.vb: JsonTools.JsonShell_GetPropertySafe(String, String)
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_GetPropertySafe*
-  name: JsonShell_GetPropertySafe
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_GetPropertySafe_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.JsonShell_GetPropertySafe
-  isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_GetPropertySafe
-  nameWithType: JsonTools.JsonShell_GetPropertySafe
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_HandleAutoSaveJsonFile
-  name: JsonShell_HandleAutoSaveJsonFile()
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_HandleAutoSaveJsonFile
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_HandleAutoSaveJsonFile
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_HandleAutoSaveJsonFile()
-  nameWithType: JsonTools.JsonShell_HandleAutoSaveJsonFile()
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_HandleAutoSaveJsonFile*
-  name: JsonShell_HandleAutoSaveJsonFile
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_HandleAutoSaveJsonFile_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.JsonShell_HandleAutoSaveJsonFile
-  isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_HandleAutoSaveJsonFile
-  nameWithType: JsonTools.JsonShell_HandleAutoSaveJsonFile
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_OpenJsonFile(System.String)
-  name: JsonShell_OpenJsonFile(string)
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_OpenJsonFile_System_String_
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_OpenJsonFile(System.String)
-  name.vb: JsonShell_OpenJsonFile(String)
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_OpenJsonFile(string)
-  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.JsonShell_OpenJsonFile(String)
-  nameWithType: JsonTools.JsonShell_OpenJsonFile(string)
-  nameWithType.vb: JsonTools.JsonShell_OpenJsonFile(String)
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_OpenJsonFile*
-  name: JsonShell_OpenJsonFile
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_OpenJsonFile_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.JsonShell_OpenJsonFile
-  isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_OpenJsonFile
-  nameWithType: JsonTools.JsonShell_OpenJsonFile
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveObject(System.String,System.String)
-  name: JsonShell_RemoveObject(string, string)
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_RemoveObject_System_String_System_String_
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveObject(System.String,System.String)
-  name.vb: JsonShell_RemoveObject(String, String)
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveObject(string, string)
-  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveObject(String, String)
-  nameWithType: JsonTools.JsonShell_RemoveObject(string, string)
-  nameWithType.vb: JsonTools.JsonShell_RemoveObject(String, String)
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveObject*
-  name: JsonShell_RemoveObject
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_RemoveObject_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveObject
-  isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveObject
-  nameWithType: JsonTools.JsonShell_RemoveObject
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveObjectIndexed(System.String,System.Int32)
-  name: JsonShell_RemoveObjectIndexed(string, int)
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_RemoveObjectIndexed_System_String_System_Int32_
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveObjectIndexed(System.String,System.Int32)
-  name.vb: JsonShell_RemoveObjectIndexed(String, Integer)
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveObjectIndexed(string, int)
-  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveObjectIndexed(String, Integer)
-  nameWithType: JsonTools.JsonShell_RemoveObjectIndexed(string, int)
-  nameWithType.vb: JsonTools.JsonShell_RemoveObjectIndexed(String, Integer)
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveObjectIndexed*
-  name: JsonShell_RemoveObjectIndexed
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_RemoveObjectIndexed_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveObjectIndexed
-  isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveObjectIndexed
-  nameWithType: JsonTools.JsonShell_RemoveObjectIndexed
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveProperty(System.String)
-  name: JsonShell_RemoveProperty(string)
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_RemoveProperty_System_String_
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveProperty(System.String)
-  name.vb: JsonShell_RemoveProperty(String)
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveProperty(string)
-  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveProperty(String)
-  nameWithType: JsonTools.JsonShell_RemoveProperty(string)
-  nameWithType.vb: JsonTools.JsonShell_RemoveProperty(String)
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveProperty*
-  name: JsonShell_RemoveProperty
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_RemoveProperty_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveProperty
-  isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_RemoveProperty
-  nameWithType: JsonTools.JsonShell_RemoveProperty
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_SaveFile(System.Boolean)
-  name: JsonShell_SaveFile(bool)
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_SaveFile_System_Boolean_
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_SaveFile(System.Boolean)
-  name.vb: JsonShell_SaveFile(Boolean)
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_SaveFile(bool)
-  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.JsonShell_SaveFile(Boolean)
-  nameWithType: JsonTools.JsonShell_SaveFile(bool)
-  nameWithType.vb: JsonTools.JsonShell_SaveFile(Boolean)
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_SaveFile(System.Boolean,Newtonsoft.Json.Formatting)
-  name: JsonShell_SaveFile(bool, Formatting)
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_SaveFile_System_Boolean_Newtonsoft_Json_Formatting_
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_SaveFile(System.Boolean,Newtonsoft.Json.Formatting)
-  name.vb: JsonShell_SaveFile(Boolean, Formatting)
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_SaveFile(bool, Newtonsoft.Json.Formatting)
-  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.JsonShell_SaveFile(Boolean, Newtonsoft.Json.Formatting)
-  nameWithType: JsonTools.JsonShell_SaveFile(bool, Formatting)
-  nameWithType.vb: JsonTools.JsonShell_SaveFile(Boolean, Formatting)
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_SaveFile*
-  name: JsonShell_SaveFile
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_SaveFile_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.JsonShell_SaveFile
-  isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_SaveFile
-  nameWithType: JsonTools.JsonShell_SaveFile
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_SerializeToString(System.String)
-  name: JsonShell_SerializeToString(string)
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_SerializeToString_System_String_
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_SerializeToString(System.String)
-  name.vb: JsonShell_SerializeToString(String)
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_SerializeToString(string)
-  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.JsonShell_SerializeToString(String)
-  nameWithType: JsonTools.JsonShell_SerializeToString(string)
-  nameWithType.vb: JsonTools.JsonShell_SerializeToString(String)
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_SerializeToString*
-  name: JsonShell_SerializeToString
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_SerializeToString_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.JsonShell_SerializeToString
-  isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_SerializeToString
-  nameWithType: JsonTools.JsonShell_SerializeToString
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_WasJsonEdited
-  name: JsonShell_WasJsonEdited()
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_WasJsonEdited
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.JsonShell_WasJsonEdited
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_WasJsonEdited()
-  nameWithType: JsonTools.JsonShell_WasJsonEdited()
-- uid: KS.Files.Editors.JsonShell.JsonTools.JsonShell_WasJsonEdited*
-  name: JsonShell_WasJsonEdited
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_JsonShell_WasJsonEdited_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.JsonShell_WasJsonEdited
-  isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.JsonShell_WasJsonEdited
-  nameWithType: JsonTools.JsonShell_WasJsonEdited
+  fullName: KS.Files.Editors.JsonShell.JsonTools.HandleAutoSaveJsonFile
+  nameWithType: JsonTools.HandleAutoSaveJsonFile
 - uid: KS.Files.Editors.JsonShell.JsonTools.MinifyJson(System.String)
   name: MinifyJson(string)
   href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_MinifyJson_System_String_
@@ -18415,6 +18297,124 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.JsonShell.JsonTools.MinifyJsonText
   nameWithType: JsonTools.MinifyJsonText
+- uid: KS.Files.Editors.JsonShell.JsonTools.OpenJsonFile(System.String)
+  name: OpenJsonFile(string)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_OpenJsonFile_System_String_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.OpenJsonFile(System.String)
+  name.vb: OpenJsonFile(String)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.OpenJsonFile(string)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.OpenJsonFile(String)
+  nameWithType: JsonTools.OpenJsonFile(string)
+  nameWithType.vb: JsonTools.OpenJsonFile(String)
+- uid: KS.Files.Editors.JsonShell.JsonTools.OpenJsonFile*
+  name: OpenJsonFile
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_OpenJsonFile_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.OpenJsonFile
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.OpenJsonFile
+  nameWithType: JsonTools.OpenJsonFile
+- uid: KS.Files.Editors.JsonShell.JsonTools.RemoveObject(System.String,System.String)
+  name: RemoveObject(string, string)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_RemoveObject_System_String_System_String_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.RemoveObject(System.String,System.String)
+  name.vb: RemoveObject(String, String)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.RemoveObject(string, string)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.RemoveObject(String, String)
+  nameWithType: JsonTools.RemoveObject(string, string)
+  nameWithType.vb: JsonTools.RemoveObject(String, String)
+- uid: KS.Files.Editors.JsonShell.JsonTools.RemoveObject*
+  name: RemoveObject
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_RemoveObject_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.RemoveObject
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.RemoveObject
+  nameWithType: JsonTools.RemoveObject
+- uid: KS.Files.Editors.JsonShell.JsonTools.RemoveObjectIndexed(System.String,System.Int32)
+  name: RemoveObjectIndexed(string, int)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_RemoveObjectIndexed_System_String_System_Int32_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.RemoveObjectIndexed(System.String,System.Int32)
+  name.vb: RemoveObjectIndexed(String, Integer)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.RemoveObjectIndexed(string, int)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.RemoveObjectIndexed(String, Integer)
+  nameWithType: JsonTools.RemoveObjectIndexed(string, int)
+  nameWithType.vb: JsonTools.RemoveObjectIndexed(String, Integer)
+- uid: KS.Files.Editors.JsonShell.JsonTools.RemoveObjectIndexed*
+  name: RemoveObjectIndexed
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_RemoveObjectIndexed_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.RemoveObjectIndexed
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.RemoveObjectIndexed
+  nameWithType: JsonTools.RemoveObjectIndexed
+- uid: KS.Files.Editors.JsonShell.JsonTools.RemoveProperty(System.String)
+  name: RemoveProperty(string)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_RemoveProperty_System_String_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.RemoveProperty(System.String)
+  name.vb: RemoveProperty(String)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.RemoveProperty(string)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.RemoveProperty(String)
+  nameWithType: JsonTools.RemoveProperty(string)
+  nameWithType.vb: JsonTools.RemoveProperty(String)
+- uid: KS.Files.Editors.JsonShell.JsonTools.RemoveProperty*
+  name: RemoveProperty
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_RemoveProperty_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.RemoveProperty
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.RemoveProperty
+  nameWithType: JsonTools.RemoveProperty
+- uid: KS.Files.Editors.JsonShell.JsonTools.SaveFile(System.Boolean)
+  name: SaveFile(bool)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_SaveFile_System_Boolean_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.SaveFile(System.Boolean)
+  name.vb: SaveFile(Boolean)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.SaveFile(bool)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.SaveFile(Boolean)
+  nameWithType: JsonTools.SaveFile(bool)
+  nameWithType.vb: JsonTools.SaveFile(Boolean)
+- uid: KS.Files.Editors.JsonShell.JsonTools.SaveFile(System.Boolean,Newtonsoft.Json.Formatting)
+  name: SaveFile(bool, Formatting)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_SaveFile_System_Boolean_Newtonsoft_Json_Formatting_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.SaveFile(System.Boolean,Newtonsoft.Json.Formatting)
+  name.vb: SaveFile(Boolean, Formatting)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.SaveFile(bool, Newtonsoft.Json.Formatting)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.SaveFile(Boolean, Newtonsoft.Json.Formatting)
+  nameWithType: JsonTools.SaveFile(bool, Formatting)
+  nameWithType.vb: JsonTools.SaveFile(Boolean, Formatting)
+- uid: KS.Files.Editors.JsonShell.JsonTools.SaveFile*
+  name: SaveFile
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_SaveFile_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.SaveFile
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.SaveFile
+  nameWithType: JsonTools.SaveFile
+- uid: KS.Files.Editors.JsonShell.JsonTools.SerializeToString(System.String)
+  name: SerializeToString(string)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_SerializeToString_System_String_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.SerializeToString(System.String)
+  name.vb: SerializeToString(String)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.SerializeToString(string)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.SerializeToString(String)
+  nameWithType: JsonTools.SerializeToString(string)
+  nameWithType.vb: JsonTools.SerializeToString(String)
+- uid: KS.Files.Editors.JsonShell.JsonTools.SerializeToString*
+  name: SerializeToString
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_SerializeToString_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.SerializeToString
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.SerializeToString
+  nameWithType: JsonTools.SerializeToString
+- uid: KS.Files.Editors.JsonShell.JsonTools.WasJsonEdited
+  name: WasJsonEdited()
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_WasJsonEdited
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.WasJsonEdited
+  fullName: KS.Files.Editors.JsonShell.JsonTools.WasJsonEdited()
+  nameWithType: JsonTools.WasJsonEdited()
+- uid: KS.Files.Editors.JsonShell.JsonTools.WasJsonEdited*
+  name: WasJsonEdited
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_WasJsonEdited_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.WasJsonEdited
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.WasJsonEdited
+  nameWithType: JsonTools.WasJsonEdited
 - uid: KS.Files.Editors.SqlEdit
   name: KS.Files.Editors.SqlEdit
   href: api/KS.Files.Editors.SqlEdit.html
@@ -18500,282 +18500,282 @@ references:
   commentId: T:KS.Files.Editors.TextEdit.TextEditTools
   fullName: KS.Files.Editors.TextEdit.TextEditTools
   nameWithType: TextEditTools
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_AddNewLine(System.String)
-  name: TextEdit_AddNewLine(string)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_AddNewLine_System_String_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_AddNewLine(System.String)
-  name.vb: TextEdit_AddNewLine(String)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_AddNewLine(string)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_AddNewLine(String)
-  nameWithType: TextEditTools.TextEdit_AddNewLine(string)
-  nameWithType.vb: TextEditTools.TextEdit_AddNewLine(String)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_AddNewLine*
-  name: TextEdit_AddNewLine
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_AddNewLine_
-  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_AddNewLine
+- uid: KS.Files.Editors.TextEdit.TextEditTools.AddNewLine(System.String)
+  name: AddNewLine(string)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_AddNewLine_System_String_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.AddNewLine(System.String)
+  name.vb: AddNewLine(String)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.AddNewLine(string)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.AddNewLine(String)
+  nameWithType: TextEditTools.AddNewLine(string)
+  nameWithType.vb: TextEditTools.AddNewLine(String)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.AddNewLine*
+  name: AddNewLine
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_AddNewLine_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.AddNewLine
   isSpec: "True"
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_AddNewLine
-  nameWithType: TextEditTools.TextEdit_AddNewLine
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_AddNewLines(System.String[])
-  name: TextEdit_AddNewLines(string[])
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_AddNewLines_System_String___
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_AddNewLines(System.String[])
-  name.vb: TextEdit_AddNewLines(String())
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_AddNewLines(string[])
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_AddNewLines(String())
-  nameWithType: TextEditTools.TextEdit_AddNewLines(string[])
-  nameWithType.vb: TextEditTools.TextEdit_AddNewLines(String())
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_AddNewLines*
-  name: TextEdit_AddNewLines
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_AddNewLines_
-  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_AddNewLines
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.AddNewLine
+  nameWithType: TextEditTools.AddNewLine
+- uid: KS.Files.Editors.TextEdit.TextEditTools.AddNewLines(System.String[])
+  name: AddNewLines(string[])
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_AddNewLines_System_String___
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.AddNewLines(System.String[])
+  name.vb: AddNewLines(String())
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.AddNewLines(string[])
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.AddNewLines(String())
+  nameWithType: TextEditTools.AddNewLines(string[])
+  nameWithType.vb: TextEditTools.AddNewLines(String())
+- uid: KS.Files.Editors.TextEdit.TextEditTools.AddNewLines*
+  name: AddNewLines
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_AddNewLines_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.AddNewLines
   isSpec: "True"
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_AddNewLines
-  nameWithType: TextEditTools.TextEdit_AddNewLines
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_CloseTextFile
-  name: TextEdit_CloseTextFile()
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_CloseTextFile
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_CloseTextFile
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_CloseTextFile()
-  nameWithType: TextEditTools.TextEdit_CloseTextFile()
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_CloseTextFile*
-  name: TextEdit_CloseTextFile
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_CloseTextFile_
-  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_CloseTextFile
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.AddNewLines
+  nameWithType: TextEditTools.AddNewLines
+- uid: KS.Files.Editors.TextEdit.TextEditTools.CloseTextFile
+  name: CloseTextFile()
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_CloseTextFile
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.CloseTextFile
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.CloseTextFile()
+  nameWithType: TextEditTools.CloseTextFile()
+- uid: KS.Files.Editors.TextEdit.TextEditTools.CloseTextFile*
+  name: CloseTextFile
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_CloseTextFile_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.CloseTextFile
   isSpec: "True"
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_CloseTextFile
-  nameWithType: TextEditTools.TextEdit_CloseTextFile
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_DeleteChar(System.Int32,System.Int32)
-  name: TextEdit_DeleteChar(int, int)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_DeleteChar_System_Int32_System_Int32_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_DeleteChar(System.Int32,System.Int32)
-  name.vb: TextEdit_DeleteChar(Integer, Integer)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_DeleteChar(int, int)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_DeleteChar(Integer, Integer)
-  nameWithType: TextEditTools.TextEdit_DeleteChar(int, int)
-  nameWithType.vb: TextEditTools.TextEdit_DeleteChar(Integer, Integer)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_DeleteChar*
-  name: TextEdit_DeleteChar
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_DeleteChar_
-  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_DeleteChar
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.CloseTextFile
+  nameWithType: TextEditTools.CloseTextFile
+- uid: KS.Files.Editors.TextEdit.TextEditTools.DeleteChar(System.Int32,System.Int32)
+  name: DeleteChar(int, int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_DeleteChar_System_Int32_System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.DeleteChar(System.Int32,System.Int32)
+  name.vb: DeleteChar(Integer, Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.DeleteChar(int, int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.DeleteChar(Integer, Integer)
+  nameWithType: TextEditTools.DeleteChar(int, int)
+  nameWithType.vb: TextEditTools.DeleteChar(Integer, Integer)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.DeleteChar*
+  name: DeleteChar
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_DeleteChar_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.DeleteChar
   isSpec: "True"
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_DeleteChar
-  nameWithType: TextEditTools.TextEdit_DeleteChar
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_DeleteWord(System.String,System.Int32)
-  name: TextEdit_DeleteWord(string, int)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_DeleteWord_System_String_System_Int32_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_DeleteWord(System.String,System.Int32)
-  name.vb: TextEdit_DeleteWord(String, Integer)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_DeleteWord(string, int)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_DeleteWord(String, Integer)
-  nameWithType: TextEditTools.TextEdit_DeleteWord(string, int)
-  nameWithType.vb: TextEditTools.TextEdit_DeleteWord(String, Integer)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_DeleteWord*
-  name: TextEdit_DeleteWord
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_DeleteWord_
-  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_DeleteWord
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.DeleteChar
+  nameWithType: TextEditTools.DeleteChar
+- uid: KS.Files.Editors.TextEdit.TextEditTools.DeleteWord(System.String,System.Int32)
+  name: DeleteWord(string, int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_DeleteWord_System_String_System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.DeleteWord(System.String,System.Int32)
+  name.vb: DeleteWord(String, Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.DeleteWord(string, int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.DeleteWord(String, Integer)
+  nameWithType: TextEditTools.DeleteWord(string, int)
+  nameWithType.vb: TextEditTools.DeleteWord(String, Integer)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.DeleteWord*
+  name: DeleteWord
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_DeleteWord_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.DeleteWord
   isSpec: "True"
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_DeleteWord
-  nameWithType: TextEditTools.TextEdit_DeleteWord
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_HandleAutoSaveTextFile
-  name: TextEdit_HandleAutoSaveTextFile()
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_HandleAutoSaveTextFile
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_HandleAutoSaveTextFile
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_HandleAutoSaveTextFile()
-  nameWithType: TextEditTools.TextEdit_HandleAutoSaveTextFile()
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_HandleAutoSaveTextFile*
-  name: TextEdit_HandleAutoSaveTextFile
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_HandleAutoSaveTextFile_
-  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_HandleAutoSaveTextFile
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.DeleteWord
+  nameWithType: TextEditTools.DeleteWord
+- uid: KS.Files.Editors.TextEdit.TextEditTools.HandleAutoSaveTextFile
+  name: HandleAutoSaveTextFile()
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_HandleAutoSaveTextFile
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.HandleAutoSaveTextFile
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.HandleAutoSaveTextFile()
+  nameWithType: TextEditTools.HandleAutoSaveTextFile()
+- uid: KS.Files.Editors.TextEdit.TextEditTools.HandleAutoSaveTextFile*
+  name: HandleAutoSaveTextFile
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_HandleAutoSaveTextFile_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.HandleAutoSaveTextFile
   isSpec: "True"
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_HandleAutoSaveTextFile
-  nameWithType: TextEditTools.TextEdit_HandleAutoSaveTextFile
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_OpenTextFile(System.String)
-  name: TextEdit_OpenTextFile(string)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_OpenTextFile_System_String_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_OpenTextFile(System.String)
-  name.vb: TextEdit_OpenTextFile(String)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_OpenTextFile(string)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_OpenTextFile(String)
-  nameWithType: TextEditTools.TextEdit_OpenTextFile(string)
-  nameWithType.vb: TextEditTools.TextEdit_OpenTextFile(String)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_OpenTextFile*
-  name: TextEdit_OpenTextFile
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_OpenTextFile_
-  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_OpenTextFile
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.HandleAutoSaveTextFile
+  nameWithType: TextEditTools.HandleAutoSaveTextFile
+- uid: KS.Files.Editors.TextEdit.TextEditTools.OpenTextFile(System.String)
+  name: OpenTextFile(string)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_OpenTextFile_System_String_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.OpenTextFile(System.String)
+  name.vb: OpenTextFile(String)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.OpenTextFile(string)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.OpenTextFile(String)
+  nameWithType: TextEditTools.OpenTextFile(string)
+  nameWithType.vb: TextEditTools.OpenTextFile(String)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.OpenTextFile*
+  name: OpenTextFile
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_OpenTextFile_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.OpenTextFile
   isSpec: "True"
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_OpenTextFile
-  nameWithType: TextEditTools.TextEdit_OpenTextFile
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryChar(System.Char)
-  name: TextEdit_QueryChar(char)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_QueryChar_System_Char_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryChar(System.Char)
-  name.vb: TextEdit_QueryChar(Char)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryChar(char)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryChar(Char)
-  nameWithType: TextEditTools.TextEdit_QueryChar(char)
-  nameWithType.vb: TextEditTools.TextEdit_QueryChar(Char)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryChar(System.Char,System.Int32)
-  name: TextEdit_QueryChar(char, int)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_QueryChar_System_Char_System_Int32_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryChar(System.Char,System.Int32)
-  name.vb: TextEdit_QueryChar(Char, Integer)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryChar(char, int)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryChar(Char, Integer)
-  nameWithType: TextEditTools.TextEdit_QueryChar(char, int)
-  nameWithType.vb: TextEditTools.TextEdit_QueryChar(Char, Integer)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryChar*
-  name: TextEdit_QueryChar
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_QueryChar_
-  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryChar
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.OpenTextFile
+  nameWithType: TextEditTools.OpenTextFile
+- uid: KS.Files.Editors.TextEdit.TextEditTools.QueryChar(System.Char)
+  name: QueryChar(char)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryChar_System_Char_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.QueryChar(System.Char)
+  name.vb: QueryChar(Char)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryChar(char)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.QueryChar(Char)
+  nameWithType: TextEditTools.QueryChar(char)
+  nameWithType.vb: TextEditTools.QueryChar(Char)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.QueryChar(System.Char,System.Int32)
+  name: QueryChar(char, int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryChar_System_Char_System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.QueryChar(System.Char,System.Int32)
+  name.vb: QueryChar(Char, Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryChar(char, int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.QueryChar(Char, Integer)
+  nameWithType: TextEditTools.QueryChar(char, int)
+  nameWithType.vb: TextEditTools.QueryChar(Char, Integer)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.QueryChar*
+  name: QueryChar
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryChar_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.QueryChar
   isSpec: "True"
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryChar
-  nameWithType: TextEditTools.TextEdit_QueryChar
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWord(System.String)
-  name: TextEdit_QueryWord(string)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_QueryWord_System_String_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWord(System.String)
-  name.vb: TextEdit_QueryWord(String)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWord(string)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWord(String)
-  nameWithType: TextEditTools.TextEdit_QueryWord(string)
-  nameWithType.vb: TextEditTools.TextEdit_QueryWord(String)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWord(System.String,System.Int32)
-  name: TextEdit_QueryWord(string, int)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_QueryWord_System_String_System_Int32_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWord(System.String,System.Int32)
-  name.vb: TextEdit_QueryWord(String, Integer)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWord(string, int)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWord(String, Integer)
-  nameWithType: TextEditTools.TextEdit_QueryWord(string, int)
-  nameWithType.vb: TextEditTools.TextEdit_QueryWord(String, Integer)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWord*
-  name: TextEdit_QueryWord
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_QueryWord_
-  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWord
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryChar
+  nameWithType: TextEditTools.QueryChar
+- uid: KS.Files.Editors.TextEdit.TextEditTools.QueryWord(System.String)
+  name: QueryWord(string)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryWord_System_String_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.QueryWord(System.String)
+  name.vb: QueryWord(String)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryWord(string)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.QueryWord(String)
+  nameWithType: TextEditTools.QueryWord(string)
+  nameWithType.vb: TextEditTools.QueryWord(String)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.QueryWord(System.String,System.Int32)
+  name: QueryWord(string, int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryWord_System_String_System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.QueryWord(System.String,System.Int32)
+  name.vb: QueryWord(String, Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryWord(string, int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.QueryWord(String, Integer)
+  nameWithType: TextEditTools.QueryWord(string, int)
+  nameWithType.vb: TextEditTools.QueryWord(String, Integer)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.QueryWord*
+  name: QueryWord
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryWord_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.QueryWord
   isSpec: "True"
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWord
-  nameWithType: TextEditTools.TextEdit_QueryWord
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWordRegex(System.String)
-  name: TextEdit_QueryWordRegex(string)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_QueryWordRegex_System_String_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWordRegex(System.String)
-  name.vb: TextEdit_QueryWordRegex(String)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWordRegex(string)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWordRegex(String)
-  nameWithType: TextEditTools.TextEdit_QueryWordRegex(string)
-  nameWithType.vb: TextEditTools.TextEdit_QueryWordRegex(String)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWordRegex(System.String,System.Int32)
-  name: TextEdit_QueryWordRegex(string, int)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_QueryWordRegex_System_String_System_Int32_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWordRegex(System.String,System.Int32)
-  name.vb: TextEdit_QueryWordRegex(String, Integer)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWordRegex(string, int)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWordRegex(String, Integer)
-  nameWithType: TextEditTools.TextEdit_QueryWordRegex(string, int)
-  nameWithType.vb: TextEditTools.TextEdit_QueryWordRegex(String, Integer)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWordRegex*
-  name: TextEdit_QueryWordRegex
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_QueryWordRegex_
-  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWordRegex
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryWord
+  nameWithType: TextEditTools.QueryWord
+- uid: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(System.String)
+  name: QueryWordRegex(string)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryWordRegex_System_String_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(System.String)
+  name.vb: QueryWordRegex(String)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(string)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(String)
+  nameWithType: TextEditTools.QueryWordRegex(string)
+  nameWithType.vb: TextEditTools.QueryWordRegex(String)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(System.String,System.Int32)
+  name: QueryWordRegex(string, int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryWordRegex_System_String_System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(System.String,System.Int32)
+  name.vb: QueryWordRegex(String, Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(string, int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(String, Integer)
+  nameWithType: TextEditTools.QueryWordRegex(string, int)
+  nameWithType.vb: TextEditTools.QueryWordRegex(String, Integer)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex*
+  name: QueryWordRegex
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryWordRegex_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex
   isSpec: "True"
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_QueryWordRegex
-  nameWithType: TextEditTools.TextEdit_QueryWordRegex
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_RemoveLine(System.Int32)
-  name: TextEdit_RemoveLine(int)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_RemoveLine_System_Int32_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_RemoveLine(System.Int32)
-  name.vb: TextEdit_RemoveLine(Integer)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_RemoveLine(int)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_RemoveLine(Integer)
-  nameWithType: TextEditTools.TextEdit_RemoveLine(int)
-  nameWithType.vb: TextEditTools.TextEdit_RemoveLine(Integer)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_RemoveLine*
-  name: TextEdit_RemoveLine
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_RemoveLine_
-  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_RemoveLine
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex
+  nameWithType: TextEditTools.QueryWordRegex
+- uid: KS.Files.Editors.TextEdit.TextEditTools.RemoveLine(System.Int32)
+  name: RemoveLine(int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_RemoveLine_System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.RemoveLine(System.Int32)
+  name.vb: RemoveLine(Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.RemoveLine(int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.RemoveLine(Integer)
+  nameWithType: TextEditTools.RemoveLine(int)
+  nameWithType.vb: TextEditTools.RemoveLine(Integer)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.RemoveLine*
+  name: RemoveLine
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_RemoveLine_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.RemoveLine
   isSpec: "True"
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_RemoveLine
-  nameWithType: TextEditTools.TextEdit_RemoveLine
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_Replace(System.String,System.String)
-  name: TextEdit_Replace(string, string)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_Replace_System_String_System_String_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_Replace(System.String,System.String)
-  name.vb: TextEdit_Replace(String, String)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_Replace(string, string)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_Replace(String, String)
-  nameWithType: TextEditTools.TextEdit_Replace(string, string)
-  nameWithType.vb: TextEditTools.TextEdit_Replace(String, String)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_Replace(System.String,System.String,System.Int32)
-  name: TextEdit_Replace(string, string, int)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_Replace_System_String_System_String_System_Int32_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_Replace(System.String,System.String,System.Int32)
-  name.vb: TextEdit_Replace(String, String, Integer)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_Replace(string, string, int)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_Replace(String, String, Integer)
-  nameWithType: TextEditTools.TextEdit_Replace(string, string, int)
-  nameWithType.vb: TextEditTools.TextEdit_Replace(String, String, Integer)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_Replace*
-  name: TextEdit_Replace
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_Replace_
-  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_Replace
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.RemoveLine
+  nameWithType: TextEditTools.RemoveLine
+- uid: KS.Files.Editors.TextEdit.TextEditTools.Replace(System.String,System.String)
+  name: Replace(string, string)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_Replace_System_String_System_String_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.Replace(System.String,System.String)
+  name.vb: Replace(String, String)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.Replace(string, string)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.Replace(String, String)
+  nameWithType: TextEditTools.Replace(string, string)
+  nameWithType.vb: TextEditTools.Replace(String, String)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.Replace(System.String,System.String,System.Int32)
+  name: Replace(string, string, int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_Replace_System_String_System_String_System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.Replace(System.String,System.String,System.Int32)
+  name.vb: Replace(String, String, Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.Replace(string, string, int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.Replace(String, String, Integer)
+  nameWithType: TextEditTools.Replace(string, string, int)
+  nameWithType.vb: TextEditTools.Replace(String, String, Integer)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.Replace*
+  name: Replace
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_Replace_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.Replace
   isSpec: "True"
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_Replace
-  nameWithType: TextEditTools.TextEdit_Replace
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_ReplaceRegex(System.String,System.String)
-  name: TextEdit_ReplaceRegex(string, string)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_ReplaceRegex_System_String_System_String_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_ReplaceRegex(System.String,System.String)
-  name.vb: TextEdit_ReplaceRegex(String, String)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_ReplaceRegex(string, string)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_ReplaceRegex(String, String)
-  nameWithType: TextEditTools.TextEdit_ReplaceRegex(string, string)
-  nameWithType.vb: TextEditTools.TextEdit_ReplaceRegex(String, String)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_ReplaceRegex(System.String,System.String,System.Int32)
-  name: TextEdit_ReplaceRegex(string, string, int)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_ReplaceRegex_System_String_System_String_System_Int32_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_ReplaceRegex(System.String,System.String,System.Int32)
-  name.vb: TextEdit_ReplaceRegex(String, String, Integer)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_ReplaceRegex(string, string, int)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_ReplaceRegex(String, String, Integer)
-  nameWithType: TextEditTools.TextEdit_ReplaceRegex(string, string, int)
-  nameWithType.vb: TextEditTools.TextEdit_ReplaceRegex(String, String, Integer)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_ReplaceRegex*
-  name: TextEdit_ReplaceRegex
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_ReplaceRegex_
-  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_ReplaceRegex
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.Replace
+  nameWithType: TextEditTools.Replace
+- uid: KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(System.String,System.String)
+  name: ReplaceRegex(string, string)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_ReplaceRegex_System_String_System_String_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(System.String,System.String)
+  name.vb: ReplaceRegex(String, String)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(string, string)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(String, String)
+  nameWithType: TextEditTools.ReplaceRegex(string, string)
+  nameWithType.vb: TextEditTools.ReplaceRegex(String, String)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(System.String,System.String,System.Int32)
+  name: ReplaceRegex(string, string, int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_ReplaceRegex_System_String_System_String_System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(System.String,System.String,System.Int32)
+  name.vb: ReplaceRegex(String, String, Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(string, string, int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(String, String, Integer)
+  nameWithType: TextEditTools.ReplaceRegex(string, string, int)
+  nameWithType.vb: TextEditTools.ReplaceRegex(String, String, Integer)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex*
+  name: ReplaceRegex
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_ReplaceRegex_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex
   isSpec: "True"
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_ReplaceRegex
-  nameWithType: TextEditTools.TextEdit_ReplaceRegex
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_SaveTextFile(System.Boolean)
-  name: TextEdit_SaveTextFile(bool)
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_SaveTextFile_System_Boolean_
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_SaveTextFile(System.Boolean)
-  name.vb: TextEdit_SaveTextFile(Boolean)
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_SaveTextFile(bool)
-  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_SaveTextFile(Boolean)
-  nameWithType: TextEditTools.TextEdit_SaveTextFile(bool)
-  nameWithType.vb: TextEditTools.TextEdit_SaveTextFile(Boolean)
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_SaveTextFile*
-  name: TextEdit_SaveTextFile
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_SaveTextFile_
-  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_SaveTextFile
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex
+  nameWithType: TextEditTools.ReplaceRegex
+- uid: KS.Files.Editors.TextEdit.TextEditTools.SaveTextFile(System.Boolean)
+  name: SaveTextFile(bool)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_SaveTextFile_System_Boolean_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.SaveTextFile(System.Boolean)
+  name.vb: SaveTextFile(Boolean)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.SaveTextFile(bool)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.SaveTextFile(Boolean)
+  nameWithType: TextEditTools.SaveTextFile(bool)
+  nameWithType.vb: TextEditTools.SaveTextFile(Boolean)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.SaveTextFile*
+  name: SaveTextFile
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_SaveTextFile_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.SaveTextFile
   isSpec: "True"
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_SaveTextFile
-  nameWithType: TextEditTools.TextEdit_SaveTextFile
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_WasTextEdited
-  name: TextEdit_WasTextEdited()
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_WasTextEdited
-  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_WasTextEdited
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_WasTextEdited()
-  nameWithType: TextEditTools.TextEdit_WasTextEdited()
-- uid: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_WasTextEdited*
-  name: TextEdit_WasTextEdited
-  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_TextEdit_WasTextEdited_
-  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.TextEdit_WasTextEdited
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.SaveTextFile
+  nameWithType: TextEditTools.SaveTextFile
+- uid: KS.Files.Editors.TextEdit.TextEditTools.WasTextEdited
+  name: WasTextEdited()
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_WasTextEdited
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.WasTextEdited
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.WasTextEdited()
+  nameWithType: TextEditTools.WasTextEdited()
+- uid: KS.Files.Editors.TextEdit.TextEditTools.WasTextEdited*
+  name: WasTextEdited
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_WasTextEdited_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditTools.WasTextEdited
   isSpec: "True"
-  fullName: KS.Files.Editors.TextEdit.TextEditTools.TextEdit_WasTextEdited
-  nameWithType: TextEditTools.TextEdit_WasTextEdited
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.WasTextEdited
+  nameWithType: TextEditTools.WasTextEdited
 - uid: KS.Files.Extensions
   name: KS.Files.Extensions
   href: api/KS.Files.Extensions.html
@@ -23132,6 +23132,32 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.HTTPShellPromptPreset
   nameWithType: KernelMainConfig.HTTPShellPromptPreset
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEditAutoSaveFlag
+  name: HexEditAutoSaveFlag
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_HexEditAutoSaveFlag
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.HexEditAutoSaveFlag
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEditAutoSaveFlag
+  nameWithType: KernelMainConfig.HexEditAutoSaveFlag
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEditAutoSaveFlag*
+  name: HexEditAutoSaveFlag
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_HexEditAutoSaveFlag_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.HexEditAutoSaveFlag
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEditAutoSaveFlag
+  nameWithType: KernelMainConfig.HexEditAutoSaveFlag
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEditAutoSaveInterval
+  name: HexEditAutoSaveInterval
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_HexEditAutoSaveInterval
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.HexEditAutoSaveInterval
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEditAutoSaveInterval
+  nameWithType: KernelMainConfig.HexEditAutoSaveInterval
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEditAutoSaveInterval*
+  name: HexEditAutoSaveInterval
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_HexEditAutoSaveInterval_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.HexEditAutoSaveInterval
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEditAutoSaveInterval
+  nameWithType: KernelMainConfig.HexEditAutoSaveInterval
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEditPromptPreset
   name: HexEditPromptPreset
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_HexEditPromptPreset
@@ -23145,32 +23171,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEditPromptPreset
   nameWithType: KernelMainConfig.HexEditPromptPreset
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEdit_AutoSaveFlag
-  name: HexEdit_AutoSaveFlag
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_HexEdit_AutoSaveFlag
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.HexEdit_AutoSaveFlag
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEdit_AutoSaveFlag
-  nameWithType: KernelMainConfig.HexEdit_AutoSaveFlag
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEdit_AutoSaveFlag*
-  name: HexEdit_AutoSaveFlag
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_HexEdit_AutoSaveFlag_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.HexEdit_AutoSaveFlag
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEdit_AutoSaveFlag
-  nameWithType: KernelMainConfig.HexEdit_AutoSaveFlag
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEdit_AutoSaveInterval
-  name: HexEdit_AutoSaveInterval
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_HexEdit_AutoSaveInterval
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.HexEdit_AutoSaveInterval
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEdit_AutoSaveInterval
-  nameWithType: KernelMainConfig.HexEdit_AutoSaveInterval
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEdit_AutoSaveInterval*
-  name: HexEdit_AutoSaveInterval
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_HexEdit_AutoSaveInterval_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.HexEdit_AutoSaveInterval
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.HexEdit_AutoSaveInterval
-  nameWithType: KernelMainConfig.HexEdit_AutoSaveInterval
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.HiddenFiles
   name: HiddenFiles
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_HiddenFiles
@@ -23301,19 +23301,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.JSONShellPromptPreset
   nameWithType: KernelMainConfig.JSONShellPromptPreset
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonShell_Formatting
-  name: JsonShell_Formatting
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_JsonShell_Formatting
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.JsonShell_Formatting
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonShell_Formatting
-  nameWithType: KernelMainConfig.JsonShell_Formatting
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonShell_Formatting*
-  name: JsonShell_Formatting
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_JsonShell_Formatting_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.JsonShell_Formatting
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonShellFormatting
+  name: JsonShellFormatting
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_JsonShellFormatting
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.JsonShellFormatting
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonShellFormatting
+  nameWithType: KernelMainConfig.JsonShellFormatting
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonShellFormatting*
+  name: JsonShellFormatting
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_JsonShellFormatting_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.JsonShellFormatting
   isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonShell_Formatting
-  nameWithType: KernelMainConfig.JsonShell_Formatting
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.JsonShellFormatting
+  nameWithType: KernelMainConfig.JsonShellFormatting
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.KernelStageColor
   name: KernelStageColor
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_KernelStageColor
@@ -23418,6 +23418,136 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.LowPriorityBorderColor
   nameWithType: KernelMainConfig.LowPriorityBorderColor
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailAutoDetectServer
+  name: MailAutoDetectServer
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailAutoDetectServer
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MailAutoDetectServer
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailAutoDetectServer
+  nameWithType: KernelMainConfig.MailAutoDetectServer
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailAutoDetectServer*
+  name: MailAutoDetectServer
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailAutoDetectServer_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MailAutoDetectServer
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailAutoDetectServer
+  nameWithType: KernelMainConfig.MailAutoDetectServer
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailDebug
+  name: MailDebug
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailDebug
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MailDebug
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailDebug
+  nameWithType: KernelMainConfig.MailDebug
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailDebug*
+  name: MailDebug
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailDebug_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MailDebug
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailDebug
+  nameWithType: KernelMainConfig.MailDebug
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailGPGPromptStyle
+  name: MailGPGPromptStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailGPGPromptStyle
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MailGPGPromptStyle
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailGPGPromptStyle
+  nameWithType: KernelMainConfig.MailGPGPromptStyle
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailGPGPromptStyle*
+  name: MailGPGPromptStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailGPGPromptStyle_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MailGPGPromptStyle
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailGPGPromptStyle
+  nameWithType: KernelMainConfig.MailGPGPromptStyle
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailIMAPPromptStyle
+  name: MailIMAPPromptStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailIMAPPromptStyle
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MailIMAPPromptStyle
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailIMAPPromptStyle
+  nameWithType: KernelMainConfig.MailIMAPPromptStyle
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailIMAPPromptStyle*
+  name: MailIMAPPromptStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailIMAPPromptStyle_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MailIMAPPromptStyle
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailIMAPPromptStyle
+  nameWithType: KernelMainConfig.MailIMAPPromptStyle
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailImapPingInterval
+  name: MailImapPingInterval
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailImapPingInterval
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MailImapPingInterval
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailImapPingInterval
+  nameWithType: KernelMainConfig.MailImapPingInterval
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailImapPingInterval*
+  name: MailImapPingInterval
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailImapPingInterval_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MailImapPingInterval
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailImapPingInterval
+  nameWithType: KernelMainConfig.MailImapPingInterval
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailMaxMessagesInPage
+  name: MailMaxMessagesInPage
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailMaxMessagesInPage
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MailMaxMessagesInPage
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailMaxMessagesInPage
+  nameWithType: KernelMainConfig.MailMaxMessagesInPage
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailMaxMessagesInPage*
+  name: MailMaxMessagesInPage
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailMaxMessagesInPage_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MailMaxMessagesInPage
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailMaxMessagesInPage
+  nameWithType: KernelMainConfig.MailMaxMessagesInPage
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailNotifyNewMail
+  name: MailNotifyNewMail
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailNotifyNewMail
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MailNotifyNewMail
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailNotifyNewMail
+  nameWithType: KernelMainConfig.MailNotifyNewMail
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailNotifyNewMail*
+  name: MailNotifyNewMail
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailNotifyNewMail_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MailNotifyNewMail
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailNotifyNewMail
+  nameWithType: KernelMainConfig.MailNotifyNewMail
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailPassPromptStyle
+  name: MailPassPromptStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailPassPromptStyle
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MailPassPromptStyle
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailPassPromptStyle
+  nameWithType: KernelMainConfig.MailPassPromptStyle
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailPassPromptStyle*
+  name: MailPassPromptStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailPassPromptStyle_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MailPassPromptStyle
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailPassPromptStyle
+  nameWithType: KernelMainConfig.MailPassPromptStyle
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailProgressStyle
+  name: MailProgressStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailProgressStyle
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MailProgressStyle
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailProgressStyle
+  nameWithType: KernelMainConfig.MailProgressStyle
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailProgressStyle*
+  name: MailProgressStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailProgressStyle_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MailProgressStyle
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailProgressStyle
+  nameWithType: KernelMainConfig.MailProgressStyle
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailProgressStyleSingle
+  name: MailProgressStyleSingle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailProgressStyleSingle
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MailProgressStyleSingle
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailProgressStyleSingle
+  nameWithType: KernelMainConfig.MailProgressStyleSingle
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailProgressStyleSingle*
+  name: MailProgressStyleSingle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailProgressStyleSingle_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MailProgressStyleSingle
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailProgressStyleSingle
+  nameWithType: KernelMainConfig.MailProgressStyleSingle
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailPromptPreset
   name: MailPromptPreset
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailPromptPreset
@@ -23431,201 +23561,71 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailPromptPreset
   nameWithType: KernelMainConfig.MailPromptPreset
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_AutoDetectServer
-  name: Mail_AutoDetectServer
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_AutoDetectServer
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_AutoDetectServer
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_AutoDetectServer
-  nameWithType: KernelMainConfig.Mail_AutoDetectServer
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_AutoDetectServer*
-  name: Mail_AutoDetectServer
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_AutoDetectServer_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_AutoDetectServer
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailSMTPPromptStyle
+  name: MailSMTPPromptStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailSMTPPromptStyle
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MailSMTPPromptStyle
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailSMTPPromptStyle
+  nameWithType: KernelMainConfig.MailSMTPPromptStyle
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailSMTPPromptStyle*
+  name: MailSMTPPromptStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailSMTPPromptStyle_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MailSMTPPromptStyle
   isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_AutoDetectServer
-  nameWithType: KernelMainConfig.Mail_AutoDetectServer
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_Debug
-  name: Mail_Debug
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_Debug
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_Debug
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_Debug
-  nameWithType: KernelMainConfig.Mail_Debug
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_Debug*
-  name: Mail_Debug
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_Debug_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_Debug
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailSMTPPromptStyle
+  nameWithType: KernelMainConfig.MailSMTPPromptStyle
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailShowProgress
+  name: MailShowProgress
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailShowProgress
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MailShowProgress
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailShowProgress
+  nameWithType: KernelMainConfig.MailShowProgress
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailShowProgress*
+  name: MailShowProgress
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailShowProgress_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MailShowProgress
   isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_Debug
-  nameWithType: KernelMainConfig.Mail_Debug
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_GPGPromptStyle
-  name: Mail_GPGPromptStyle
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_GPGPromptStyle
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_GPGPromptStyle
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_GPGPromptStyle
-  nameWithType: KernelMainConfig.Mail_GPGPromptStyle
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_GPGPromptStyle*
-  name: Mail_GPGPromptStyle
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_GPGPromptStyle_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_GPGPromptStyle
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailShowProgress
+  nameWithType: KernelMainConfig.MailShowProgress
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailSmtpPingInterval
+  name: MailSmtpPingInterval
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailSmtpPingInterval
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MailSmtpPingInterval
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailSmtpPingInterval
+  nameWithType: KernelMainConfig.MailSmtpPingInterval
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailSmtpPingInterval*
+  name: MailSmtpPingInterval
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailSmtpPingInterval_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MailSmtpPingInterval
   isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_GPGPromptStyle
-  nameWithType: KernelMainConfig.Mail_GPGPromptStyle
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_IMAPPromptStyle
-  name: Mail_IMAPPromptStyle
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_IMAPPromptStyle
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_IMAPPromptStyle
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_IMAPPromptStyle
-  nameWithType: KernelMainConfig.Mail_IMAPPromptStyle
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_IMAPPromptStyle*
-  name: Mail_IMAPPromptStyle
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_IMAPPromptStyle_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_IMAPPromptStyle
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailSmtpPingInterval
+  nameWithType: KernelMainConfig.MailSmtpPingInterval
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailTextFormat
+  name: MailTextFormat
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailTextFormat
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MailTextFormat
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailTextFormat
+  nameWithType: KernelMainConfig.MailTextFormat
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailTextFormat*
+  name: MailTextFormat
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailTextFormat_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MailTextFormat
   isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_IMAPPromptStyle
-  nameWithType: KernelMainConfig.Mail_IMAPPromptStyle
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ImapPingInterval
-  name: Mail_ImapPingInterval
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_ImapPingInterval
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ImapPingInterval
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ImapPingInterval
-  nameWithType: KernelMainConfig.Mail_ImapPingInterval
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ImapPingInterval*
-  name: Mail_ImapPingInterval
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_ImapPingInterval_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ImapPingInterval
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailTextFormat
+  nameWithType: KernelMainConfig.MailTextFormat
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailUserPromptStyle
+  name: MailUserPromptStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailUserPromptStyle
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.MailUserPromptStyle
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailUserPromptStyle
+  nameWithType: KernelMainConfig.MailUserPromptStyle
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MailUserPromptStyle*
+  name: MailUserPromptStyle
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MailUserPromptStyle_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.MailUserPromptStyle
   isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ImapPingInterval
-  nameWithType: KernelMainConfig.Mail_ImapPingInterval
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_MaxMessagesInPage
-  name: Mail_MaxMessagesInPage
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_MaxMessagesInPage
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_MaxMessagesInPage
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_MaxMessagesInPage
-  nameWithType: KernelMainConfig.Mail_MaxMessagesInPage
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_MaxMessagesInPage*
-  name: Mail_MaxMessagesInPage
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_MaxMessagesInPage_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_MaxMessagesInPage
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_MaxMessagesInPage
-  nameWithType: KernelMainConfig.Mail_MaxMessagesInPage
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_NotifyNewMail
-  name: Mail_NotifyNewMail
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_NotifyNewMail
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_NotifyNewMail
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_NotifyNewMail
-  nameWithType: KernelMainConfig.Mail_NotifyNewMail
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_NotifyNewMail*
-  name: Mail_NotifyNewMail
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_NotifyNewMail_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_NotifyNewMail
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_NotifyNewMail
-  nameWithType: KernelMainConfig.Mail_NotifyNewMail
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_PassPromptStyle
-  name: Mail_PassPromptStyle
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_PassPromptStyle
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_PassPromptStyle
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_PassPromptStyle
-  nameWithType: KernelMainConfig.Mail_PassPromptStyle
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_PassPromptStyle*
-  name: Mail_PassPromptStyle
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_PassPromptStyle_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_PassPromptStyle
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_PassPromptStyle
-  nameWithType: KernelMainConfig.Mail_PassPromptStyle
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ProgressStyle
-  name: Mail_ProgressStyle
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_ProgressStyle
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ProgressStyle
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ProgressStyle
-  nameWithType: KernelMainConfig.Mail_ProgressStyle
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ProgressStyle*
-  name: Mail_ProgressStyle
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_ProgressStyle_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ProgressStyle
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ProgressStyle
-  nameWithType: KernelMainConfig.Mail_ProgressStyle
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ProgressStyleSingle
-  name: Mail_ProgressStyleSingle
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_ProgressStyleSingle
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ProgressStyleSingle
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ProgressStyleSingle
-  nameWithType: KernelMainConfig.Mail_ProgressStyleSingle
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ProgressStyleSingle*
-  name: Mail_ProgressStyleSingle
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_ProgressStyleSingle_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ProgressStyleSingle
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ProgressStyleSingle
-  nameWithType: KernelMainConfig.Mail_ProgressStyleSingle
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_SMTPPromptStyle
-  name: Mail_SMTPPromptStyle
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_SMTPPromptStyle
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_SMTPPromptStyle
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_SMTPPromptStyle
-  nameWithType: KernelMainConfig.Mail_SMTPPromptStyle
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_SMTPPromptStyle*
-  name: Mail_SMTPPromptStyle
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_SMTPPromptStyle_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_SMTPPromptStyle
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_SMTPPromptStyle
-  nameWithType: KernelMainConfig.Mail_SMTPPromptStyle
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ShowProgress
-  name: Mail_ShowProgress
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_ShowProgress
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ShowProgress
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ShowProgress
-  nameWithType: KernelMainConfig.Mail_ShowProgress
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ShowProgress*
-  name: Mail_ShowProgress
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_ShowProgress_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ShowProgress
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_ShowProgress
-  nameWithType: KernelMainConfig.Mail_ShowProgress
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_SmtpPingInterval
-  name: Mail_SmtpPingInterval
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_SmtpPingInterval
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_SmtpPingInterval
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_SmtpPingInterval
-  nameWithType: KernelMainConfig.Mail_SmtpPingInterval
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_SmtpPingInterval*
-  name: Mail_SmtpPingInterval
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_SmtpPingInterval_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_SmtpPingInterval
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_SmtpPingInterval
-  nameWithType: KernelMainConfig.Mail_SmtpPingInterval
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_TextFormat
-  name: Mail_TextFormat
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_TextFormat
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_TextFormat
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_TextFormat
-  nameWithType: KernelMainConfig.Mail_TextFormat
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_TextFormat*
-  name: Mail_TextFormat
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_TextFormat_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_TextFormat
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_TextFormat
-  nameWithType: KernelMainConfig.Mail_TextFormat
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_UserPromptStyle
-  name: Mail_UserPromptStyle
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_UserPromptStyle
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_UserPromptStyle
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_UserPromptStyle
-  nameWithType: KernelMainConfig.Mail_UserPromptStyle
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_UserPromptStyle*
-  name: Mail_UserPromptStyle
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_Mail_UserPromptStyle_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_UserPromptStyle
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.Mail_UserPromptStyle
-  nameWithType: KernelMainConfig.Mail_UserPromptStyle
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.MailUserPromptStyle
+  nameWithType: KernelMainConfig.MailUserPromptStyle
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.MalFilePath
   name: MalFilePath
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_MalFilePath
@@ -24887,6 +24887,32 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.TextColor
   nameWithType: KernelMainConfig.TextColor
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEditAutoSaveFlag
+  name: TextEditAutoSaveFlag
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_TextEditAutoSaveFlag
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.TextEditAutoSaveFlag
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEditAutoSaveFlag
+  nameWithType: KernelMainConfig.TextEditAutoSaveFlag
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEditAutoSaveFlag*
+  name: TextEditAutoSaveFlag
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_TextEditAutoSaveFlag_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.TextEditAutoSaveFlag
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEditAutoSaveFlag
+  nameWithType: KernelMainConfig.TextEditAutoSaveFlag
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEditAutoSaveInterval
+  name: TextEditAutoSaveInterval
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_TextEditAutoSaveInterval
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.TextEditAutoSaveInterval
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEditAutoSaveInterval
+  nameWithType: KernelMainConfig.TextEditAutoSaveInterval
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEditAutoSaveInterval*
+  name: TextEditAutoSaveInterval
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_TextEditAutoSaveInterval_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.TextEditAutoSaveInterval
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEditAutoSaveInterval
+  nameWithType: KernelMainConfig.TextEditAutoSaveInterval
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEditPromptPreset
   name: TextEditPromptPreset
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_TextEditPromptPreset
@@ -24900,32 +24926,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEditPromptPreset
   nameWithType: KernelMainConfig.TextEditPromptPreset
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEdit_AutoSaveFlag
-  name: TextEdit_AutoSaveFlag
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_TextEdit_AutoSaveFlag
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.TextEdit_AutoSaveFlag
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEdit_AutoSaveFlag
-  nameWithType: KernelMainConfig.TextEdit_AutoSaveFlag
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEdit_AutoSaveFlag*
-  name: TextEdit_AutoSaveFlag
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_TextEdit_AutoSaveFlag_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.TextEdit_AutoSaveFlag
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEdit_AutoSaveFlag
-  nameWithType: KernelMainConfig.TextEdit_AutoSaveFlag
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEdit_AutoSaveInterval
-  name: TextEdit_AutoSaveInterval
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_TextEdit_AutoSaveInterval
-  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.TextEdit_AutoSaveInterval
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEdit_AutoSaveInterval
-  nameWithType: KernelMainConfig.TextEdit_AutoSaveInterval
-- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEdit_AutoSaveInterval*
-  name: TextEdit_AutoSaveInterval
-  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_TextEdit_AutoSaveInterval_
-  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.TextEdit_AutoSaveInterval
-  isSpec: "True"
-  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.TextEdit_AutoSaveInterval
-  nameWithType: KernelMainConfig.TextEdit_AutoSaveInterval
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.TipColor
   name: TipColor
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_TipColor
@@ -47580,32 +47580,32 @@ references:
   commentId: T:KS.Shell.Shells.Hex.HexEditShellCommon
   fullName: KS.Shell.Shells.Hex.HexEditShellCommon
   nameWithType: HexEditShellCommon
-- uid: KS.Shell.Shells.Hex.HexEditShellCommon.HexEdit_AutoSaveFlag
-  name: HexEdit_AutoSaveFlag
-  href: api/KS.Shell.Shells.Hex.HexEditShellCommon.html#KS_Shell_Shells_Hex_HexEditShellCommon_HexEdit_AutoSaveFlag
-  commentId: P:KS.Shell.Shells.Hex.HexEditShellCommon.HexEdit_AutoSaveFlag
-  fullName: KS.Shell.Shells.Hex.HexEditShellCommon.HexEdit_AutoSaveFlag
-  nameWithType: HexEditShellCommon.HexEdit_AutoSaveFlag
-- uid: KS.Shell.Shells.Hex.HexEditShellCommon.HexEdit_AutoSaveFlag*
-  name: HexEdit_AutoSaveFlag
-  href: api/KS.Shell.Shells.Hex.HexEditShellCommon.html#KS_Shell_Shells_Hex_HexEditShellCommon_HexEdit_AutoSaveFlag_
-  commentId: Overload:KS.Shell.Shells.Hex.HexEditShellCommon.HexEdit_AutoSaveFlag
+- uid: KS.Shell.Shells.Hex.HexEditShellCommon.AutoSaveFlag
+  name: AutoSaveFlag
+  href: api/KS.Shell.Shells.Hex.HexEditShellCommon.html#KS_Shell_Shells_Hex_HexEditShellCommon_AutoSaveFlag
+  commentId: P:KS.Shell.Shells.Hex.HexEditShellCommon.AutoSaveFlag
+  fullName: KS.Shell.Shells.Hex.HexEditShellCommon.AutoSaveFlag
+  nameWithType: HexEditShellCommon.AutoSaveFlag
+- uid: KS.Shell.Shells.Hex.HexEditShellCommon.AutoSaveFlag*
+  name: AutoSaveFlag
+  href: api/KS.Shell.Shells.Hex.HexEditShellCommon.html#KS_Shell_Shells_Hex_HexEditShellCommon_AutoSaveFlag_
+  commentId: Overload:KS.Shell.Shells.Hex.HexEditShellCommon.AutoSaveFlag
   isSpec: "True"
-  fullName: KS.Shell.Shells.Hex.HexEditShellCommon.HexEdit_AutoSaveFlag
-  nameWithType: HexEditShellCommon.HexEdit_AutoSaveFlag
-- uid: KS.Shell.Shells.Hex.HexEditShellCommon.HexEdit_AutoSaveInterval
-  name: HexEdit_AutoSaveInterval
-  href: api/KS.Shell.Shells.Hex.HexEditShellCommon.html#KS_Shell_Shells_Hex_HexEditShellCommon_HexEdit_AutoSaveInterval
-  commentId: P:KS.Shell.Shells.Hex.HexEditShellCommon.HexEdit_AutoSaveInterval
-  fullName: KS.Shell.Shells.Hex.HexEditShellCommon.HexEdit_AutoSaveInterval
-  nameWithType: HexEditShellCommon.HexEdit_AutoSaveInterval
-- uid: KS.Shell.Shells.Hex.HexEditShellCommon.HexEdit_AutoSaveInterval*
-  name: HexEdit_AutoSaveInterval
-  href: api/KS.Shell.Shells.Hex.HexEditShellCommon.html#KS_Shell_Shells_Hex_HexEditShellCommon_HexEdit_AutoSaveInterval_
-  commentId: Overload:KS.Shell.Shells.Hex.HexEditShellCommon.HexEdit_AutoSaveInterval
+  fullName: KS.Shell.Shells.Hex.HexEditShellCommon.AutoSaveFlag
+  nameWithType: HexEditShellCommon.AutoSaveFlag
+- uid: KS.Shell.Shells.Hex.HexEditShellCommon.AutoSaveInterval
+  name: AutoSaveInterval
+  href: api/KS.Shell.Shells.Hex.HexEditShellCommon.html#KS_Shell_Shells_Hex_HexEditShellCommon_AutoSaveInterval
+  commentId: P:KS.Shell.Shells.Hex.HexEditShellCommon.AutoSaveInterval
+  fullName: KS.Shell.Shells.Hex.HexEditShellCommon.AutoSaveInterval
+  nameWithType: HexEditShellCommon.AutoSaveInterval
+- uid: KS.Shell.Shells.Hex.HexEditShellCommon.AutoSaveInterval*
+  name: AutoSaveInterval
+  href: api/KS.Shell.Shells.Hex.HexEditShellCommon.html#KS_Shell_Shells_Hex_HexEditShellCommon_AutoSaveInterval_
+  commentId: Overload:KS.Shell.Shells.Hex.HexEditShellCommon.AutoSaveInterval
   isSpec: "True"
-  fullName: KS.Shell.Shells.Hex.HexEditShellCommon.HexEdit_AutoSaveInterval
-  nameWithType: HexEditShellCommon.HexEdit_AutoSaveInterval
+  fullName: KS.Shell.Shells.Hex.HexEditShellCommon.AutoSaveInterval
+  nameWithType: HexEditShellCommon.AutoSaveInterval
 - uid: KS.Shell.Shells.Hex.HexShell
   name: HexShell
   href: api/KS.Shell.Shells.Hex.HexShell.html
@@ -48282,58 +48282,58 @@ references:
   commentId: T:KS.Shell.Shells.Json.JsonShellCommon
   fullName: KS.Shell.Shells.Json.JsonShellCommon
   nameWithType: JsonShellCommon
-- uid: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_AutoSaveFlag
-  name: JsonShell_AutoSaveFlag
-  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_JsonShell_AutoSaveFlag
-  commentId: P:KS.Shell.Shells.Json.JsonShellCommon.JsonShell_AutoSaveFlag
-  fullName: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_AutoSaveFlag
-  nameWithType: JsonShellCommon.JsonShell_AutoSaveFlag
-- uid: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_AutoSaveFlag*
-  name: JsonShell_AutoSaveFlag
-  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_JsonShell_AutoSaveFlag_
-  commentId: Overload:KS.Shell.Shells.Json.JsonShellCommon.JsonShell_AutoSaveFlag
+- uid: KS.Shell.Shells.Json.JsonShellCommon.AutoSaveFlag
+  name: AutoSaveFlag
+  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_AutoSaveFlag
+  commentId: P:KS.Shell.Shells.Json.JsonShellCommon.AutoSaveFlag
+  fullName: KS.Shell.Shells.Json.JsonShellCommon.AutoSaveFlag
+  nameWithType: JsonShellCommon.AutoSaveFlag
+- uid: KS.Shell.Shells.Json.JsonShellCommon.AutoSaveFlag*
+  name: AutoSaveFlag
+  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_AutoSaveFlag_
+  commentId: Overload:KS.Shell.Shells.Json.JsonShellCommon.AutoSaveFlag
   isSpec: "True"
-  fullName: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_AutoSaveFlag
-  nameWithType: JsonShellCommon.JsonShell_AutoSaveFlag
-- uid: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_AutoSaveInterval
-  name: JsonShell_AutoSaveInterval
-  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_JsonShell_AutoSaveInterval
-  commentId: P:KS.Shell.Shells.Json.JsonShellCommon.JsonShell_AutoSaveInterval
-  fullName: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_AutoSaveInterval
-  nameWithType: JsonShellCommon.JsonShell_AutoSaveInterval
-- uid: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_AutoSaveInterval*
-  name: JsonShell_AutoSaveInterval
-  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_JsonShell_AutoSaveInterval_
-  commentId: Overload:KS.Shell.Shells.Json.JsonShellCommon.JsonShell_AutoSaveInterval
+  fullName: KS.Shell.Shells.Json.JsonShellCommon.AutoSaveFlag
+  nameWithType: JsonShellCommon.AutoSaveFlag
+- uid: KS.Shell.Shells.Json.JsonShellCommon.AutoSaveInterval
+  name: AutoSaveInterval
+  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_AutoSaveInterval
+  commentId: P:KS.Shell.Shells.Json.JsonShellCommon.AutoSaveInterval
+  fullName: KS.Shell.Shells.Json.JsonShellCommon.AutoSaveInterval
+  nameWithType: JsonShellCommon.AutoSaveInterval
+- uid: KS.Shell.Shells.Json.JsonShellCommon.AutoSaveInterval*
+  name: AutoSaveInterval
+  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_AutoSaveInterval_
+  commentId: Overload:KS.Shell.Shells.Json.JsonShellCommon.AutoSaveInterval
   isSpec: "True"
-  fullName: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_AutoSaveInterval
-  nameWithType: JsonShellCommon.JsonShell_AutoSaveInterval
-- uid: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_FileToken
-  name: JsonShell_FileToken
-  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_JsonShell_FileToken
-  commentId: P:KS.Shell.Shells.Json.JsonShellCommon.JsonShell_FileToken
-  fullName: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_FileToken
-  nameWithType: JsonShellCommon.JsonShell_FileToken
-- uid: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_FileToken*
-  name: JsonShell_FileToken
-  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_JsonShell_FileToken_
-  commentId: Overload:KS.Shell.Shells.Json.JsonShellCommon.JsonShell_FileToken
+  fullName: KS.Shell.Shells.Json.JsonShellCommon.AutoSaveInterval
+  nameWithType: JsonShellCommon.AutoSaveInterval
+- uid: KS.Shell.Shells.Json.JsonShellCommon.FileToken
+  name: FileToken
+  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_FileToken
+  commentId: P:KS.Shell.Shells.Json.JsonShellCommon.FileToken
+  fullName: KS.Shell.Shells.Json.JsonShellCommon.FileToken
+  nameWithType: JsonShellCommon.FileToken
+- uid: KS.Shell.Shells.Json.JsonShellCommon.FileToken*
+  name: FileToken
+  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_FileToken_
+  commentId: Overload:KS.Shell.Shells.Json.JsonShellCommon.FileToken
   isSpec: "True"
-  fullName: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_FileToken
-  nameWithType: JsonShellCommon.JsonShell_FileToken
-- uid: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_Formatting
-  name: JsonShell_Formatting
-  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_JsonShell_Formatting
-  commentId: P:KS.Shell.Shells.Json.JsonShellCommon.JsonShell_Formatting
-  fullName: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_Formatting
-  nameWithType: JsonShellCommon.JsonShell_Formatting
-- uid: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_Formatting*
-  name: JsonShell_Formatting
-  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_JsonShell_Formatting_
-  commentId: Overload:KS.Shell.Shells.Json.JsonShellCommon.JsonShell_Formatting
+  fullName: KS.Shell.Shells.Json.JsonShellCommon.FileToken
+  nameWithType: JsonShellCommon.FileToken
+- uid: KS.Shell.Shells.Json.JsonShellCommon.Formatting
+  name: Formatting
+  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_Formatting
+  commentId: P:KS.Shell.Shells.Json.JsonShellCommon.Formatting
+  fullName: KS.Shell.Shells.Json.JsonShellCommon.Formatting
+  nameWithType: JsonShellCommon.Formatting
+- uid: KS.Shell.Shells.Json.JsonShellCommon.Formatting*
+  name: Formatting
+  href: api/KS.Shell.Shells.Json.JsonShellCommon.html#KS_Shell_Shells_Json_JsonShellCommon_Formatting_
+  commentId: Overload:KS.Shell.Shells.Json.JsonShellCommon.Formatting
   isSpec: "True"
-  fullName: KS.Shell.Shells.Json.JsonShellCommon.JsonShell_Formatting
-  nameWithType: JsonShellCommon.JsonShell_Formatting
+  fullName: KS.Shell.Shells.Json.JsonShellCommon.Formatting
+  nameWithType: JsonShellCommon.Formatting
 - uid: KS.Shell.Shells.Json.Presets
   name: KS.Shell.Shells.Json.Presets
   href: api/KS.Shell.Shells.Json.Presets.html
@@ -48975,116 +48975,116 @@ references:
   isSpec: "True"
   fullName: KS.Shell.Shells.Mail.MailShellCommon.IMAP_CurrentDirectory
   nameWithType: MailShellCommon.IMAP_CurrentDirectory
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_ImapPingInterval
-  name: Mail_ImapPingInterval
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_ImapPingInterval
-  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.Mail_ImapPingInterval
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_ImapPingInterval
-  nameWithType: MailShellCommon.Mail_ImapPingInterval
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_ImapPingInterval*
-  name: Mail_ImapPingInterval
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_ImapPingInterval_
-  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.Mail_ImapPingInterval
+- uid: KS.Shell.Shells.Mail.MailShellCommon.ImapPingInterval
+  name: ImapPingInterval
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_ImapPingInterval
+  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.ImapPingInterval
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.ImapPingInterval
+  nameWithType: MailShellCommon.ImapPingInterval
+- uid: KS.Shell.Shells.Mail.MailShellCommon.ImapPingInterval*
+  name: ImapPingInterval
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_ImapPingInterval_
+  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.ImapPingInterval
   isSpec: "True"
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_ImapPingInterval
-  nameWithType: MailShellCommon.Mail_ImapPingInterval
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_MaxMessagesInPage
-  name: Mail_MaxMessagesInPage
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_MaxMessagesInPage
-  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.Mail_MaxMessagesInPage
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_MaxMessagesInPage
-  nameWithType: MailShellCommon.Mail_MaxMessagesInPage
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_MaxMessagesInPage*
-  name: Mail_MaxMessagesInPage
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_MaxMessagesInPage_
-  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.Mail_MaxMessagesInPage
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.ImapPingInterval
+  nameWithType: MailShellCommon.ImapPingInterval
+- uid: KS.Shell.Shells.Mail.MailShellCommon.MaxMessagesInPage
+  name: MaxMessagesInPage
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_MaxMessagesInPage
+  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.MaxMessagesInPage
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.MaxMessagesInPage
+  nameWithType: MailShellCommon.MaxMessagesInPage
+- uid: KS.Shell.Shells.Mail.MailShellCommon.MaxMessagesInPage*
+  name: MaxMessagesInPage
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_MaxMessagesInPage_
+  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.MaxMessagesInPage
   isSpec: "True"
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_MaxMessagesInPage
-  nameWithType: MailShellCommon.Mail_MaxMessagesInPage
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_NotifyNewMail
-  name: Mail_NotifyNewMail
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_NotifyNewMail
-  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.Mail_NotifyNewMail
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_NotifyNewMail
-  nameWithType: MailShellCommon.Mail_NotifyNewMail
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_NotifyNewMail*
-  name: Mail_NotifyNewMail
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_NotifyNewMail_
-  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.Mail_NotifyNewMail
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.MaxMessagesInPage
+  nameWithType: MailShellCommon.MaxMessagesInPage
+- uid: KS.Shell.Shells.Mail.MailShellCommon.NotifyNewMail
+  name: NotifyNewMail
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_NotifyNewMail
+  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.NotifyNewMail
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.NotifyNewMail
+  nameWithType: MailShellCommon.NotifyNewMail
+- uid: KS.Shell.Shells.Mail.MailShellCommon.NotifyNewMail*
+  name: NotifyNewMail
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_NotifyNewMail_
+  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.NotifyNewMail
   isSpec: "True"
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_NotifyNewMail
-  nameWithType: MailShellCommon.Mail_NotifyNewMail
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_Progress
-  name: Mail_Progress
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_Progress
-  commentId: F:KS.Shell.Shells.Mail.MailShellCommon.Mail_Progress
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_Progress
-  nameWithType: MailShellCommon.Mail_Progress
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_ProgressStyle
-  name: Mail_ProgressStyle
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_ProgressStyle
-  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.Mail_ProgressStyle
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_ProgressStyle
-  nameWithType: MailShellCommon.Mail_ProgressStyle
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_ProgressStyle*
-  name: Mail_ProgressStyle
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_ProgressStyle_
-  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.Mail_ProgressStyle
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.NotifyNewMail
+  nameWithType: MailShellCommon.NotifyNewMail
+- uid: KS.Shell.Shells.Mail.MailShellCommon.Progress
+  name: Progress
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Progress
+  commentId: F:KS.Shell.Shells.Mail.MailShellCommon.Progress
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.Progress
+  nameWithType: MailShellCommon.Progress
+- uid: KS.Shell.Shells.Mail.MailShellCommon.ProgressStyle
+  name: ProgressStyle
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_ProgressStyle
+  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.ProgressStyle
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.ProgressStyle
+  nameWithType: MailShellCommon.ProgressStyle
+- uid: KS.Shell.Shells.Mail.MailShellCommon.ProgressStyle*
+  name: ProgressStyle
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_ProgressStyle_
+  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.ProgressStyle
   isSpec: "True"
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_ProgressStyle
-  nameWithType: MailShellCommon.Mail_ProgressStyle
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_ProgressStyleSingle
-  name: Mail_ProgressStyleSingle
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_ProgressStyleSingle
-  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.Mail_ProgressStyleSingle
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_ProgressStyleSingle
-  nameWithType: MailShellCommon.Mail_ProgressStyleSingle
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_ProgressStyleSingle*
-  name: Mail_ProgressStyleSingle
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_ProgressStyleSingle_
-  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.Mail_ProgressStyleSingle
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.ProgressStyle
+  nameWithType: MailShellCommon.ProgressStyle
+- uid: KS.Shell.Shells.Mail.MailShellCommon.ProgressStyleSingle
+  name: ProgressStyleSingle
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_ProgressStyleSingle
+  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.ProgressStyleSingle
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.ProgressStyleSingle
+  nameWithType: MailShellCommon.ProgressStyleSingle
+- uid: KS.Shell.Shells.Mail.MailShellCommon.ProgressStyleSingle*
+  name: ProgressStyleSingle
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_ProgressStyleSingle_
+  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.ProgressStyleSingle
   isSpec: "True"
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_ProgressStyleSingle
-  nameWithType: MailShellCommon.Mail_ProgressStyleSingle
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_ShowProgress
-  name: Mail_ShowProgress
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_ShowProgress
-  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.Mail_ShowProgress
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_ShowProgress
-  nameWithType: MailShellCommon.Mail_ShowProgress
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_ShowProgress*
-  name: Mail_ShowProgress
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_ShowProgress_
-  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.Mail_ShowProgress
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.ProgressStyleSingle
+  nameWithType: MailShellCommon.ProgressStyleSingle
+- uid: KS.Shell.Shells.Mail.MailShellCommon.ShowProgress
+  name: ShowProgress
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_ShowProgress
+  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.ShowProgress
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.ShowProgress
+  nameWithType: MailShellCommon.ShowProgress
+- uid: KS.Shell.Shells.Mail.MailShellCommon.ShowProgress*
+  name: ShowProgress
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_ShowProgress_
+  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.ShowProgress
   isSpec: "True"
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_ShowProgress
-  nameWithType: MailShellCommon.Mail_ShowProgress
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_SmtpPingInterval
-  name: Mail_SmtpPingInterval
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_SmtpPingInterval
-  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.Mail_SmtpPingInterval
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_SmtpPingInterval
-  nameWithType: MailShellCommon.Mail_SmtpPingInterval
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_SmtpPingInterval*
-  name: Mail_SmtpPingInterval
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_SmtpPingInterval_
-  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.Mail_SmtpPingInterval
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.ShowProgress
+  nameWithType: MailShellCommon.ShowProgress
+- uid: KS.Shell.Shells.Mail.MailShellCommon.SmtpPingInterval
+  name: SmtpPingInterval
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_SmtpPingInterval
+  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.SmtpPingInterval
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.SmtpPingInterval
+  nameWithType: MailShellCommon.SmtpPingInterval
+- uid: KS.Shell.Shells.Mail.MailShellCommon.SmtpPingInterval*
+  name: SmtpPingInterval
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_SmtpPingInterval_
+  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.SmtpPingInterval
   isSpec: "True"
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_SmtpPingInterval
-  nameWithType: MailShellCommon.Mail_SmtpPingInterval
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_TextFormat
-  name: Mail_TextFormat
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_TextFormat
-  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.Mail_TextFormat
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_TextFormat
-  nameWithType: MailShellCommon.Mail_TextFormat
-- uid: KS.Shell.Shells.Mail.MailShellCommon.Mail_TextFormat*
-  name: Mail_TextFormat
-  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_Mail_TextFormat_
-  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.Mail_TextFormat
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.SmtpPingInterval
+  nameWithType: MailShellCommon.SmtpPingInterval
+- uid: KS.Shell.Shells.Mail.MailShellCommon.TextFormat
+  name: TextFormat
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_TextFormat
+  commentId: P:KS.Shell.Shells.Mail.MailShellCommon.TextFormat
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.TextFormat
+  nameWithType: MailShellCommon.TextFormat
+- uid: KS.Shell.Shells.Mail.MailShellCommon.TextFormat*
+  name: TextFormat
+  href: api/KS.Shell.Shells.Mail.MailShellCommon.html#KS_Shell_Shells_Mail_MailShellCommon_TextFormat_
+  commentId: Overload:KS.Shell.Shells.Mail.MailShellCommon.TextFormat
   isSpec: "True"
-  fullName: KS.Shell.Shells.Mail.MailShellCommon.Mail_TextFormat
-  nameWithType: MailShellCommon.Mail_TextFormat
+  fullName: KS.Shell.Shells.Mail.MailShellCommon.TextFormat
+  nameWithType: MailShellCommon.TextFormat
 - uid: KS.Shell.Shells.Mail.Presets
   name: KS.Shell.Shells.Mail.Presets
   href: api/KS.Shell.Shells.Mail.Presets.html
@@ -51706,45 +51706,45 @@ references:
   commentId: T:KS.Shell.Shells.Sql.SqlShellCommon
   fullName: KS.Shell.Shells.Sql.SqlShellCommon
   nameWithType: SqlShellCommon
-- uid: KS.Shell.Shells.Sql.SqlShellCommon.Sql_Connection
-  name: Sql_Connection
-  href: api/KS.Shell.Shells.Sql.SqlShellCommon.html#KS_Shell_Shells_Sql_SqlShellCommon_Sql_Connection
-  commentId: P:KS.Shell.Shells.Sql.SqlShellCommon.Sql_Connection
-  fullName: KS.Shell.Shells.Sql.SqlShellCommon.Sql_Connection
-  nameWithType: SqlShellCommon.Sql_Connection
-- uid: KS.Shell.Shells.Sql.SqlShellCommon.Sql_Connection*
-  name: Sql_Connection
-  href: api/KS.Shell.Shells.Sql.SqlShellCommon.html#KS_Shell_Shells_Sql_SqlShellCommon_Sql_Connection_
-  commentId: Overload:KS.Shell.Shells.Sql.SqlShellCommon.Sql_Connection
+- uid: KS.Shell.Shells.Sql.SqlShellCommon.Connection
+  name: Connection
+  href: api/KS.Shell.Shells.Sql.SqlShellCommon.html#KS_Shell_Shells_Sql_SqlShellCommon_Connection
+  commentId: P:KS.Shell.Shells.Sql.SqlShellCommon.Connection
+  fullName: KS.Shell.Shells.Sql.SqlShellCommon.Connection
+  nameWithType: SqlShellCommon.Connection
+- uid: KS.Shell.Shells.Sql.SqlShellCommon.Connection*
+  name: Connection
+  href: api/KS.Shell.Shells.Sql.SqlShellCommon.html#KS_Shell_Shells_Sql_SqlShellCommon_Connection_
+  commentId: Overload:KS.Shell.Shells.Sql.SqlShellCommon.Connection
   isSpec: "True"
-  fullName: KS.Shell.Shells.Sql.SqlShellCommon.Sql_Connection
-  nameWithType: SqlShellCommon.Sql_Connection
-- uid: KS.Shell.Shells.Sql.SqlShellCommon.Sql_DatabaseFileName
-  name: Sql_DatabaseFileName
-  href: api/KS.Shell.Shells.Sql.SqlShellCommon.html#KS_Shell_Shells_Sql_SqlShellCommon_Sql_DatabaseFileName
-  commentId: P:KS.Shell.Shells.Sql.SqlShellCommon.Sql_DatabaseFileName
-  fullName: KS.Shell.Shells.Sql.SqlShellCommon.Sql_DatabaseFileName
-  nameWithType: SqlShellCommon.Sql_DatabaseFileName
-- uid: KS.Shell.Shells.Sql.SqlShellCommon.Sql_DatabaseFileName*
-  name: Sql_DatabaseFileName
-  href: api/KS.Shell.Shells.Sql.SqlShellCommon.html#KS_Shell_Shells_Sql_SqlShellCommon_Sql_DatabaseFileName_
-  commentId: Overload:KS.Shell.Shells.Sql.SqlShellCommon.Sql_DatabaseFileName
+  fullName: KS.Shell.Shells.Sql.SqlShellCommon.Connection
+  nameWithType: SqlShellCommon.Connection
+- uid: KS.Shell.Shells.Sql.SqlShellCommon.DatabaseFileName
+  name: DatabaseFileName
+  href: api/KS.Shell.Shells.Sql.SqlShellCommon.html#KS_Shell_Shells_Sql_SqlShellCommon_DatabaseFileName
+  commentId: P:KS.Shell.Shells.Sql.SqlShellCommon.DatabaseFileName
+  fullName: KS.Shell.Shells.Sql.SqlShellCommon.DatabaseFileName
+  nameWithType: SqlShellCommon.DatabaseFileName
+- uid: KS.Shell.Shells.Sql.SqlShellCommon.DatabaseFileName*
+  name: DatabaseFileName
+  href: api/KS.Shell.Shells.Sql.SqlShellCommon.html#KS_Shell_Shells_Sql_SqlShellCommon_DatabaseFileName_
+  commentId: Overload:KS.Shell.Shells.Sql.SqlShellCommon.DatabaseFileName
   isSpec: "True"
-  fullName: KS.Shell.Shells.Sql.SqlShellCommon.Sql_DatabaseFileName
-  nameWithType: SqlShellCommon.Sql_DatabaseFileName
-- uid: KS.Shell.Shells.Sql.SqlShellCommon.Sql_DatabasePath
-  name: Sql_DatabasePath
-  href: api/KS.Shell.Shells.Sql.SqlShellCommon.html#KS_Shell_Shells_Sql_SqlShellCommon_Sql_DatabasePath
-  commentId: P:KS.Shell.Shells.Sql.SqlShellCommon.Sql_DatabasePath
-  fullName: KS.Shell.Shells.Sql.SqlShellCommon.Sql_DatabasePath
-  nameWithType: SqlShellCommon.Sql_DatabasePath
-- uid: KS.Shell.Shells.Sql.SqlShellCommon.Sql_DatabasePath*
-  name: Sql_DatabasePath
-  href: api/KS.Shell.Shells.Sql.SqlShellCommon.html#KS_Shell_Shells_Sql_SqlShellCommon_Sql_DatabasePath_
-  commentId: Overload:KS.Shell.Shells.Sql.SqlShellCommon.Sql_DatabasePath
+  fullName: KS.Shell.Shells.Sql.SqlShellCommon.DatabaseFileName
+  nameWithType: SqlShellCommon.DatabaseFileName
+- uid: KS.Shell.Shells.Sql.SqlShellCommon.DatabasePath
+  name: DatabasePath
+  href: api/KS.Shell.Shells.Sql.SqlShellCommon.html#KS_Shell_Shells_Sql_SqlShellCommon_DatabasePath
+  commentId: P:KS.Shell.Shells.Sql.SqlShellCommon.DatabasePath
+  fullName: KS.Shell.Shells.Sql.SqlShellCommon.DatabasePath
+  nameWithType: SqlShellCommon.DatabasePath
+- uid: KS.Shell.Shells.Sql.SqlShellCommon.DatabasePath*
+  name: DatabasePath
+  href: api/KS.Shell.Shells.Sql.SqlShellCommon.html#KS_Shell_Shells_Sql_SqlShellCommon_DatabasePath_
+  commentId: Overload:KS.Shell.Shells.Sql.SqlShellCommon.DatabasePath
   isSpec: "True"
-  fullName: KS.Shell.Shells.Sql.SqlShellCommon.Sql_DatabasePath
-  nameWithType: SqlShellCommon.Sql_DatabasePath
+  fullName: KS.Shell.Shells.Sql.SqlShellCommon.DatabasePath
+  nameWithType: SqlShellCommon.DatabasePath
 - uid: KS.Shell.Shells.Text
   name: KS.Shell.Shells.Text
   href: api/KS.Shell.Shells.Text.html
@@ -52325,58 +52325,58 @@ references:
   commentId: T:KS.Shell.Shells.Text.TextEditShellCommon
   fullName: KS.Shell.Shells.Text.TextEditShellCommon
   nameWithType: TextEditShellCommon
-- uid: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_AutoSaveFlag
-  name: TextEdit_AutoSaveFlag
-  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_TextEdit_AutoSaveFlag
-  commentId: P:KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_AutoSaveFlag
-  fullName: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_AutoSaveFlag
-  nameWithType: TextEditShellCommon.TextEdit_AutoSaveFlag
-- uid: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_AutoSaveFlag*
-  name: TextEdit_AutoSaveFlag
-  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_TextEdit_AutoSaveFlag_
-  commentId: Overload:KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_AutoSaveFlag
+- uid: KS.Shell.Shells.Text.TextEditShellCommon.AutoSaveFlag
+  name: AutoSaveFlag
+  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_AutoSaveFlag
+  commentId: P:KS.Shell.Shells.Text.TextEditShellCommon.AutoSaveFlag
+  fullName: KS.Shell.Shells.Text.TextEditShellCommon.AutoSaveFlag
+  nameWithType: TextEditShellCommon.AutoSaveFlag
+- uid: KS.Shell.Shells.Text.TextEditShellCommon.AutoSaveFlag*
+  name: AutoSaveFlag
+  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_AutoSaveFlag_
+  commentId: Overload:KS.Shell.Shells.Text.TextEditShellCommon.AutoSaveFlag
   isSpec: "True"
-  fullName: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_AutoSaveFlag
-  nameWithType: TextEditShellCommon.TextEdit_AutoSaveFlag
-- uid: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_AutoSaveInterval
-  name: TextEdit_AutoSaveInterval
-  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_TextEdit_AutoSaveInterval
-  commentId: P:KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_AutoSaveInterval
-  fullName: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_AutoSaveInterval
-  nameWithType: TextEditShellCommon.TextEdit_AutoSaveInterval
-- uid: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_AutoSaveInterval*
-  name: TextEdit_AutoSaveInterval
-  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_TextEdit_AutoSaveInterval_
-  commentId: Overload:KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_AutoSaveInterval
+  fullName: KS.Shell.Shells.Text.TextEditShellCommon.AutoSaveFlag
+  nameWithType: TextEditShellCommon.AutoSaveFlag
+- uid: KS.Shell.Shells.Text.TextEditShellCommon.AutoSaveInterval
+  name: AutoSaveInterval
+  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_AutoSaveInterval
+  commentId: P:KS.Shell.Shells.Text.TextEditShellCommon.AutoSaveInterval
+  fullName: KS.Shell.Shells.Text.TextEditShellCommon.AutoSaveInterval
+  nameWithType: TextEditShellCommon.AutoSaveInterval
+- uid: KS.Shell.Shells.Text.TextEditShellCommon.AutoSaveInterval*
+  name: AutoSaveInterval
+  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_AutoSaveInterval_
+  commentId: Overload:KS.Shell.Shells.Text.TextEditShellCommon.AutoSaveInterval
   isSpec: "True"
-  fullName: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_AutoSaveInterval
-  nameWithType: TextEditShellCommon.TextEdit_AutoSaveInterval
-- uid: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_FileLines
-  name: TextEdit_FileLines
-  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_TextEdit_FileLines
-  commentId: P:KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_FileLines
-  fullName: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_FileLines
-  nameWithType: TextEditShellCommon.TextEdit_FileLines
-- uid: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_FileLines*
-  name: TextEdit_FileLines
-  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_TextEdit_FileLines_
-  commentId: Overload:KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_FileLines
+  fullName: KS.Shell.Shells.Text.TextEditShellCommon.AutoSaveInterval
+  nameWithType: TextEditShellCommon.AutoSaveInterval
+- uid: KS.Shell.Shells.Text.TextEditShellCommon.FileLines
+  name: FileLines
+  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_FileLines
+  commentId: P:KS.Shell.Shells.Text.TextEditShellCommon.FileLines
+  fullName: KS.Shell.Shells.Text.TextEditShellCommon.FileLines
+  nameWithType: TextEditShellCommon.FileLines
+- uid: KS.Shell.Shells.Text.TextEditShellCommon.FileLines*
+  name: FileLines
+  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_FileLines_
+  commentId: Overload:KS.Shell.Shells.Text.TextEditShellCommon.FileLines
   isSpec: "True"
-  fullName: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_FileLines
-  nameWithType: TextEditShellCommon.TextEdit_FileLines
-- uid: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_FileStream
-  name: TextEdit_FileStream
-  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_TextEdit_FileStream
-  commentId: P:KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_FileStream
-  fullName: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_FileStream
-  nameWithType: TextEditShellCommon.TextEdit_FileStream
-- uid: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_FileStream*
-  name: TextEdit_FileStream
-  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_TextEdit_FileStream_
-  commentId: Overload:KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_FileStream
+  fullName: KS.Shell.Shells.Text.TextEditShellCommon.FileLines
+  nameWithType: TextEditShellCommon.FileLines
+- uid: KS.Shell.Shells.Text.TextEditShellCommon.FileStream
+  name: FileStream
+  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_FileStream
+  commentId: P:KS.Shell.Shells.Text.TextEditShellCommon.FileStream
+  fullName: KS.Shell.Shells.Text.TextEditShellCommon.FileStream
+  nameWithType: TextEditShellCommon.FileStream
+- uid: KS.Shell.Shells.Text.TextEditShellCommon.FileStream*
+  name: FileStream
+  href: api/KS.Shell.Shells.Text.TextEditShellCommon.html#KS_Shell_Shells_Text_TextEditShellCommon_FileStream_
+  commentId: Overload:KS.Shell.Shells.Text.TextEditShellCommon.FileStream
   isSpec: "True"
-  fullName: KS.Shell.Shells.Text.TextEditShellCommon.TextEdit_FileStream
-  nameWithType: TextEditShellCommon.TextEdit_FileStream
+  fullName: KS.Shell.Shells.Text.TextEditShellCommon.FileStream
+  nameWithType: TextEditShellCommon.FileStream
 - uid: KS.Shell.Shells.Text.TextShell
   name: TextShell
   href: api/KS.Shell.Shells.Text.TextShell.html
