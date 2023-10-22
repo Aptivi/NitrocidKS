@@ -29463,6 +29463,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Threading.KernelThread.Name
   nameWithType: KernelThread.Name
+- uid: KS.Kernel.Threading.KernelThread.NativeThreadId
+  name: NativeThreadId
+  href: api/KS.Kernel.Threading.KernelThread.html#KS_Kernel_Threading_KernelThread_NativeThreadId
+  commentId: P:KS.Kernel.Threading.KernelThread.NativeThreadId
+  fullName: KS.Kernel.Threading.KernelThread.NativeThreadId
+  nameWithType: KernelThread.NativeThreadId
+- uid: KS.Kernel.Threading.KernelThread.NativeThreadId*
+  name: NativeThreadId
+  href: api/KS.Kernel.Threading.KernelThread.html#KS_Kernel_Threading_KernelThread_NativeThreadId_
+  commentId: Overload:KS.Kernel.Threading.KernelThread.NativeThreadId
+  isSpec: "True"
+  fullName: KS.Kernel.Threading.KernelThread.NativeThreadId
+  nameWithType: KernelThread.NativeThreadId
 - uid: KS.Kernel.Threading.KernelThread.ParentThread
   name: ParentThread
   href: api/KS.Kernel.Threading.KernelThread.html#KS_Kernel_Threading_KernelThread_ParentThread
