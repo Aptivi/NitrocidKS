@@ -44274,6 +44274,28 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Shells.ShellManager.GetLine
   nameWithType: ShellManager.GetLine
+- uid: KS.Shell.ShellBase.Shells.ShellManager.GetShellExecutor(KS.Shell.ShellBase.Shells.ShellType)
+  name: GetShellExecutor(ShellType)
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_GetShellExecutor_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.ShellBase.Shells.ShellManager.GetShellExecutor(KS.Shell.ShellBase.Shells.ShellType)
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.GetShellExecutor(KS.Shell.ShellBase.Shells.ShellType)
+  nameWithType: ShellManager.GetShellExecutor(ShellType)
+- uid: KS.Shell.ShellBase.Shells.ShellManager.GetShellExecutor(System.String)
+  name: GetShellExecutor(string)
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_GetShellExecutor_System_String_
+  commentId: M:KS.Shell.ShellBase.Shells.ShellManager.GetShellExecutor(System.String)
+  name.vb: GetShellExecutor(String)
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.GetShellExecutor(string)
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellManager.GetShellExecutor(String)
+  nameWithType: ShellManager.GetShellExecutor(string)
+  nameWithType.vb: ShellManager.GetShellExecutor(String)
+- uid: KS.Shell.ShellBase.Shells.ShellManager.GetShellExecutor*
+  name: GetShellExecutor
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_GetShellExecutor_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellManager.GetShellExecutor
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.GetShellExecutor
+  nameWithType: ShellManager.GetShellExecutor
 - uid: KS.Shell.ShellBase.Shells.ShellManager.GetShellInfo(KS.Shell.ShellBase.Shells.ShellType)
   name: GetShellInfo(ShellType)
   href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_GetShellInfo_KS_Shell_ShellBase_Shells_ShellType_
@@ -44309,6 +44331,48 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Shells.ShellManager.GetShellTypeName
   nameWithType: ShellManager.GetShellTypeName
+- uid: KS.Shell.ShellBase.Shells.ShellManager.IsShellBuiltin(System.String)
+  name: IsShellBuiltin(string)
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_IsShellBuiltin_System_String_
+  commentId: M:KS.Shell.ShellBase.Shells.ShellManager.IsShellBuiltin(System.String)
+  name.vb: IsShellBuiltin(String)
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.IsShellBuiltin(string)
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellManager.IsShellBuiltin(String)
+  nameWithType: ShellManager.IsShellBuiltin(string)
+  nameWithType.vb: ShellManager.IsShellBuiltin(String)
+- uid: KS.Shell.ShellBase.Shells.ShellManager.IsShellBuiltin*
+  name: IsShellBuiltin
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_IsShellBuiltin_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellManager.IsShellBuiltin
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.IsShellBuiltin
+  nameWithType: ShellManager.IsShellBuiltin
+- uid: KS.Shell.ShellBase.Shells.ShellManager.KillShell
+  name: KillShell()
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_KillShell
+  commentId: M:KS.Shell.ShellBase.Shells.ShellManager.KillShell
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.KillShell()
+  nameWithType: ShellManager.KillShell()
+- uid: KS.Shell.ShellBase.Shells.ShellManager.KillShell*
+  name: KillShell
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_KillShell_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellManager.KillShell
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.KillShell
+  nameWithType: ShellManager.KillShell
+- uid: KS.Shell.ShellBase.Shells.ShellManager.KillShellForced
+  name: KillShellForced()
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_KillShellForced
+  commentId: M:KS.Shell.ShellBase.Shells.ShellManager.KillShellForced
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.KillShellForced()
+  nameWithType: ShellManager.KillShellForced()
+- uid: KS.Shell.ShellBase.Shells.ShellManager.KillShellForced*
+  name: KillShellForced
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_KillShellForced_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellManager.KillShellForced
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.KillShellForced
+  nameWithType: ShellManager.KillShellForced
 - uid: KS.Shell.ShellBase.Shells.ShellManager.LastShellType
   name: LastShellType
   href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_LastShellType
@@ -44322,6 +44386,101 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Shells.ShellManager.LastShellType
   nameWithType: ShellManager.LastShellType
+- uid: KS.Shell.ShellBase.Shells.ShellManager.PurgeShells
+  name: PurgeShells()
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_PurgeShells
+  commentId: M:KS.Shell.ShellBase.Shells.ShellManager.PurgeShells
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.PurgeShells()
+  nameWithType: ShellManager.PurgeShells()
+- uid: KS.Shell.ShellBase.Shells.ShellManager.PurgeShells*
+  name: PurgeShells
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_PurgeShells_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellManager.PurgeShells
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.PurgeShells
+  nameWithType: ShellManager.PurgeShells
+- uid: KS.Shell.ShellBase.Shells.ShellManager.RegisterShell(System.String,KS.Shell.ShellBase.Shells.BaseShellInfo)
+  name: RegisterShell(string, BaseShellInfo)
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_RegisterShell_System_String_KS_Shell_ShellBase_Shells_BaseShellInfo_
+  commentId: M:KS.Shell.ShellBase.Shells.ShellManager.RegisterShell(System.String,KS.Shell.ShellBase.Shells.BaseShellInfo)
+  name.vb: RegisterShell(String, BaseShellInfo)
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.RegisterShell(string, KS.Shell.ShellBase.Shells.BaseShellInfo)
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellManager.RegisterShell(String, KS.Shell.ShellBase.Shells.BaseShellInfo)
+  nameWithType: ShellManager.RegisterShell(string, BaseShellInfo)
+  nameWithType.vb: ShellManager.RegisterShell(String, BaseShellInfo)
+- uid: KS.Shell.ShellBase.Shells.ShellManager.RegisterShell*
+  name: RegisterShell
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_RegisterShell_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellManager.RegisterShell
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.RegisterShell
+  nameWithType: ShellManager.RegisterShell
+- uid: KS.Shell.ShellBase.Shells.ShellManager.ShellTypeExists(System.String)
+  name: ShellTypeExists(string)
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_ShellTypeExists_System_String_
+  commentId: M:KS.Shell.ShellBase.Shells.ShellManager.ShellTypeExists(System.String)
+  name.vb: ShellTypeExists(String)
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.ShellTypeExists(string)
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellManager.ShellTypeExists(String)
+  nameWithType: ShellManager.ShellTypeExists(string)
+  nameWithType.vb: ShellManager.ShellTypeExists(String)
+- uid: KS.Shell.ShellBase.Shells.ShellManager.ShellTypeExists*
+  name: ShellTypeExists
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_ShellTypeExists_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellManager.ShellTypeExists
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.ShellTypeExists
+  nameWithType: ShellManager.ShellTypeExists
+- uid: KS.Shell.ShellBase.Shells.ShellManager.StartShell(KS.Shell.ShellBase.Shells.ShellType,System.Object[])
+  name: StartShell(ShellType, params object[])
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_StartShell_KS_Shell_ShellBase_Shells_ShellType_System_Object___
+  commentId: M:KS.Shell.ShellBase.Shells.ShellManager.StartShell(KS.Shell.ShellBase.Shells.ShellType,System.Object[])
+  name.vb: StartShell(ShellType, ParamArray Object())
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.StartShell(KS.Shell.ShellBase.Shells.ShellType, params object[])
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellManager.StartShell(KS.Shell.ShellBase.Shells.ShellType, ParamArray Object())
+  nameWithType: ShellManager.StartShell(ShellType, params object[])
+  nameWithType.vb: ShellManager.StartShell(ShellType, ParamArray Object())
+- uid: KS.Shell.ShellBase.Shells.ShellManager.StartShell(System.String,System.Object[])
+  name: StartShell(string, params object[])
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_StartShell_System_String_System_Object___
+  commentId: M:KS.Shell.ShellBase.Shells.ShellManager.StartShell(System.String,System.Object[])
+  name.vb: StartShell(String, ParamArray Object())
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.StartShell(string, params object[])
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellManager.StartShell(String, ParamArray Object())
+  nameWithType: ShellManager.StartShell(string, params object[])
+  nameWithType.vb: ShellManager.StartShell(String, ParamArray Object())
+- uid: KS.Shell.ShellBase.Shells.ShellManager.StartShell*
+  name: StartShell
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_StartShell_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellManager.StartShell
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.StartShell
+  nameWithType: ShellManager.StartShell
+- uid: KS.Shell.ShellBase.Shells.ShellManager.StartShellForced(KS.Shell.ShellBase.Shells.ShellType,System.Object[])
+  name: StartShellForced(ShellType, params object[])
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_StartShellForced_KS_Shell_ShellBase_Shells_ShellType_System_Object___
+  commentId: M:KS.Shell.ShellBase.Shells.ShellManager.StartShellForced(KS.Shell.ShellBase.Shells.ShellType,System.Object[])
+  name.vb: StartShellForced(ShellType, ParamArray Object())
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.StartShellForced(KS.Shell.ShellBase.Shells.ShellType, params object[])
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellManager.StartShellForced(KS.Shell.ShellBase.Shells.ShellType, ParamArray Object())
+  nameWithType: ShellManager.StartShellForced(ShellType, params object[])
+  nameWithType.vb: ShellManager.StartShellForced(ShellType, ParamArray Object())
+- uid: KS.Shell.ShellBase.Shells.ShellManager.StartShellForced(System.String,System.Object[])
+  name: StartShellForced(string, params object[])
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_StartShellForced_System_String_System_Object___
+  commentId: M:KS.Shell.ShellBase.Shells.ShellManager.StartShellForced(System.String,System.Object[])
+  name.vb: StartShellForced(String, ParamArray Object())
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.StartShellForced(string, params object[])
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellManager.StartShellForced(String, ParamArray Object())
+  nameWithType: ShellManager.StartShellForced(string, params object[])
+  nameWithType.vb: ShellManager.StartShellForced(String, ParamArray Object())
+- uid: KS.Shell.ShellBase.Shells.ShellManager.StartShellForced*
+  name: StartShellForced
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_StartShellForced_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellManager.StartShellForced
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.StartShellForced
+  nameWithType: ShellManager.StartShellForced
 - uid: KS.Shell.ShellBase.Shells.ShellManager.UnifiedCommands
   name: UnifiedCommands
   href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_UnifiedCommands
@@ -44335,123 +44494,22 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Shells.ShellManager.UnifiedCommands
   nameWithType: ShellManager.UnifiedCommands
-- uid: KS.Shell.ShellBase.Shells.ShellStart
-  name: ShellStart
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html
-  commentId: T:KS.Shell.ShellBase.Shells.ShellStart
-  fullName: KS.Shell.ShellBase.Shells.ShellStart
-  nameWithType: ShellStart
-- uid: KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor(KS.Shell.ShellBase.Shells.ShellType)
-  name: GetShellExecutor(ShellType)
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_GetShellExecutor_KS_Shell_ShellBase_Shells_ShellType_
-  commentId: M:KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor(KS.Shell.ShellBase.Shells.ShellType)
-  fullName: KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor(KS.Shell.ShellBase.Shells.ShellType)
-  nameWithType: ShellStart.GetShellExecutor(ShellType)
-- uid: KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor(System.String)
-  name: GetShellExecutor(string)
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_GetShellExecutor_System_String_
-  commentId: M:KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor(System.String)
-  name.vb: GetShellExecutor(String)
-  fullName: KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor(string)
-  fullName.vb: KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor(String)
-  nameWithType: ShellStart.GetShellExecutor(string)
-  nameWithType.vb: ShellStart.GetShellExecutor(String)
-- uid: KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor*
-  name: GetShellExecutor
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_GetShellExecutor_
-  commentId: Overload:KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor
+- uid: KS.Shell.ShellBase.Shells.ShellManager.UnregisterShell(System.String)
+  name: UnregisterShell(string)
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_UnregisterShell_System_String_
+  commentId: M:KS.Shell.ShellBase.Shells.ShellManager.UnregisterShell(System.String)
+  name.vb: UnregisterShell(String)
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.UnregisterShell(string)
+  fullName.vb: KS.Shell.ShellBase.Shells.ShellManager.UnregisterShell(String)
+  nameWithType: ShellManager.UnregisterShell(string)
+  nameWithType.vb: ShellManager.UnregisterShell(String)
+- uid: KS.Shell.ShellBase.Shells.ShellManager.UnregisterShell*
+  name: UnregisterShell
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_UnregisterShell_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellManager.UnregisterShell
   isSpec: "True"
-  fullName: KS.Shell.ShellBase.Shells.ShellStart.GetShellExecutor
-  nameWithType: ShellStart.GetShellExecutor
-- uid: KS.Shell.ShellBase.Shells.ShellStart.KillShell
-  name: KillShell()
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_KillShell
-  commentId: M:KS.Shell.ShellBase.Shells.ShellStart.KillShell
-  fullName: KS.Shell.ShellBase.Shells.ShellStart.KillShell()
-  nameWithType: ShellStart.KillShell()
-- uid: KS.Shell.ShellBase.Shells.ShellStart.KillShell*
-  name: KillShell
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_KillShell_
-  commentId: Overload:KS.Shell.ShellBase.Shells.ShellStart.KillShell
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Shells.ShellStart.KillShell
-  nameWithType: ShellStart.KillShell
-- uid: KS.Shell.ShellBase.Shells.ShellStart.KillShellForced
-  name: KillShellForced()
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_KillShellForced
-  commentId: M:KS.Shell.ShellBase.Shells.ShellStart.KillShellForced
-  fullName: KS.Shell.ShellBase.Shells.ShellStart.KillShellForced()
-  nameWithType: ShellStart.KillShellForced()
-- uid: KS.Shell.ShellBase.Shells.ShellStart.KillShellForced*
-  name: KillShellForced
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_KillShellForced_
-  commentId: Overload:KS.Shell.ShellBase.Shells.ShellStart.KillShellForced
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Shells.ShellStart.KillShellForced
-  nameWithType: ShellStart.KillShellForced
-- uid: KS.Shell.ShellBase.Shells.ShellStart.PurgeShells
-  name: PurgeShells()
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_PurgeShells
-  commentId: M:KS.Shell.ShellBase.Shells.ShellStart.PurgeShells
-  fullName: KS.Shell.ShellBase.Shells.ShellStart.PurgeShells()
-  nameWithType: ShellStart.PurgeShells()
-- uid: KS.Shell.ShellBase.Shells.ShellStart.PurgeShells*
-  name: PurgeShells
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_PurgeShells_
-  commentId: Overload:KS.Shell.ShellBase.Shells.ShellStart.PurgeShells
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Shells.ShellStart.PurgeShells
-  nameWithType: ShellStart.PurgeShells
-- uid: KS.Shell.ShellBase.Shells.ShellStart.StartShell(KS.Shell.ShellBase.Shells.ShellType,System.Object[])
-  name: StartShell(ShellType, params object[])
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_StartShell_KS_Shell_ShellBase_Shells_ShellType_System_Object___
-  commentId: M:KS.Shell.ShellBase.Shells.ShellStart.StartShell(KS.Shell.ShellBase.Shells.ShellType,System.Object[])
-  name.vb: StartShell(ShellType, ParamArray Object())
-  fullName: KS.Shell.ShellBase.Shells.ShellStart.StartShell(KS.Shell.ShellBase.Shells.ShellType, params object[])
-  fullName.vb: KS.Shell.ShellBase.Shells.ShellStart.StartShell(KS.Shell.ShellBase.Shells.ShellType, ParamArray Object())
-  nameWithType: ShellStart.StartShell(ShellType, params object[])
-  nameWithType.vb: ShellStart.StartShell(ShellType, ParamArray Object())
-- uid: KS.Shell.ShellBase.Shells.ShellStart.StartShell(System.String,System.Object[])
-  name: StartShell(string, params object[])
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_StartShell_System_String_System_Object___
-  commentId: M:KS.Shell.ShellBase.Shells.ShellStart.StartShell(System.String,System.Object[])
-  name.vb: StartShell(String, ParamArray Object())
-  fullName: KS.Shell.ShellBase.Shells.ShellStart.StartShell(string, params object[])
-  fullName.vb: KS.Shell.ShellBase.Shells.ShellStart.StartShell(String, ParamArray Object())
-  nameWithType: ShellStart.StartShell(string, params object[])
-  nameWithType.vb: ShellStart.StartShell(String, ParamArray Object())
-- uid: KS.Shell.ShellBase.Shells.ShellStart.StartShell*
-  name: StartShell
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_StartShell_
-  commentId: Overload:KS.Shell.ShellBase.Shells.ShellStart.StartShell
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Shells.ShellStart.StartShell
-  nameWithType: ShellStart.StartShell
-- uid: KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(KS.Shell.ShellBase.Shells.ShellType,System.Object[])
-  name: StartShellForced(ShellType, params object[])
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_StartShellForced_KS_Shell_ShellBase_Shells_ShellType_System_Object___
-  commentId: M:KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(KS.Shell.ShellBase.Shells.ShellType,System.Object[])
-  name.vb: StartShellForced(ShellType, ParamArray Object())
-  fullName: KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(KS.Shell.ShellBase.Shells.ShellType, params object[])
-  fullName.vb: KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(KS.Shell.ShellBase.Shells.ShellType, ParamArray Object())
-  nameWithType: ShellStart.StartShellForced(ShellType, params object[])
-  nameWithType.vb: ShellStart.StartShellForced(ShellType, ParamArray Object())
-- uid: KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(System.String,System.Object[])
-  name: StartShellForced(string, params object[])
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_StartShellForced_System_String_System_Object___
-  commentId: M:KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(System.String,System.Object[])
-  name.vb: StartShellForced(String, ParamArray Object())
-  fullName: KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(string, params object[])
-  fullName.vb: KS.Shell.ShellBase.Shells.ShellStart.StartShellForced(String, ParamArray Object())
-  nameWithType: ShellStart.StartShellForced(string, params object[])
-  nameWithType.vb: ShellStart.StartShellForced(String, ParamArray Object())
-- uid: KS.Shell.ShellBase.Shells.ShellStart.StartShellForced*
-  name: StartShellForced
-  href: api/KS.Shell.ShellBase.Shells.ShellStart.html#KS_Shell_ShellBase_Shells_ShellStart_StartShellForced_
-  commentId: Overload:KS.Shell.ShellBase.Shells.ShellStart.StartShellForced
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Shells.ShellStart.StartShellForced
-  nameWithType: ShellStart.StartShellForced
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.UnregisterShell
+  nameWithType: ShellManager.UnregisterShell
 - uid: KS.Shell.ShellBase.Shells.ShellType
   name: ShellType
   href: api/KS.Shell.ShellBase.Shells.ShellType.html
@@ -44530,76 +44588,6 @@ references:
   commentId: F:KS.Shell.ShellBase.Shells.ShellType.TextShell
   fullName: KS.Shell.ShellBase.Shells.ShellType.TextShell
   nameWithType: ShellType.TextShell
-- uid: KS.Shell.ShellBase.Shells.ShellTypeManager
-  name: ShellTypeManager
-  href: api/KS.Shell.ShellBase.Shells.ShellTypeManager.html
-  commentId: T:KS.Shell.ShellBase.Shells.ShellTypeManager
-  fullName: KS.Shell.ShellBase.Shells.ShellTypeManager
-  nameWithType: ShellTypeManager
-- uid: KS.Shell.ShellBase.Shells.ShellTypeManager.IsShellBuiltin(System.String)
-  name: IsShellBuiltin(string)
-  href: api/KS.Shell.ShellBase.Shells.ShellTypeManager.html#KS_Shell_ShellBase_Shells_ShellTypeManager_IsShellBuiltin_System_String_
-  commentId: M:KS.Shell.ShellBase.Shells.ShellTypeManager.IsShellBuiltin(System.String)
-  name.vb: IsShellBuiltin(String)
-  fullName: KS.Shell.ShellBase.Shells.ShellTypeManager.IsShellBuiltin(string)
-  fullName.vb: KS.Shell.ShellBase.Shells.ShellTypeManager.IsShellBuiltin(String)
-  nameWithType: ShellTypeManager.IsShellBuiltin(string)
-  nameWithType.vb: ShellTypeManager.IsShellBuiltin(String)
-- uid: KS.Shell.ShellBase.Shells.ShellTypeManager.IsShellBuiltin*
-  name: IsShellBuiltin
-  href: api/KS.Shell.ShellBase.Shells.ShellTypeManager.html#KS_Shell_ShellBase_Shells_ShellTypeManager_IsShellBuiltin_
-  commentId: Overload:KS.Shell.ShellBase.Shells.ShellTypeManager.IsShellBuiltin
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Shells.ShellTypeManager.IsShellBuiltin
-  nameWithType: ShellTypeManager.IsShellBuiltin
-- uid: KS.Shell.ShellBase.Shells.ShellTypeManager.RegisterShell(System.String,KS.Shell.ShellBase.Shells.BaseShellInfo)
-  name: RegisterShell(string, BaseShellInfo)
-  href: api/KS.Shell.ShellBase.Shells.ShellTypeManager.html#KS_Shell_ShellBase_Shells_ShellTypeManager_RegisterShell_System_String_KS_Shell_ShellBase_Shells_BaseShellInfo_
-  commentId: M:KS.Shell.ShellBase.Shells.ShellTypeManager.RegisterShell(System.String,KS.Shell.ShellBase.Shells.BaseShellInfo)
-  name.vb: RegisterShell(String, BaseShellInfo)
-  fullName: KS.Shell.ShellBase.Shells.ShellTypeManager.RegisterShell(string, KS.Shell.ShellBase.Shells.BaseShellInfo)
-  fullName.vb: KS.Shell.ShellBase.Shells.ShellTypeManager.RegisterShell(String, KS.Shell.ShellBase.Shells.BaseShellInfo)
-  nameWithType: ShellTypeManager.RegisterShell(string, BaseShellInfo)
-  nameWithType.vb: ShellTypeManager.RegisterShell(String, BaseShellInfo)
-- uid: KS.Shell.ShellBase.Shells.ShellTypeManager.RegisterShell*
-  name: RegisterShell
-  href: api/KS.Shell.ShellBase.Shells.ShellTypeManager.html#KS_Shell_ShellBase_Shells_ShellTypeManager_RegisterShell_
-  commentId: Overload:KS.Shell.ShellBase.Shells.ShellTypeManager.RegisterShell
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Shells.ShellTypeManager.RegisterShell
-  nameWithType: ShellTypeManager.RegisterShell
-- uid: KS.Shell.ShellBase.Shells.ShellTypeManager.ShellTypeExists(System.String)
-  name: ShellTypeExists(string)
-  href: api/KS.Shell.ShellBase.Shells.ShellTypeManager.html#KS_Shell_ShellBase_Shells_ShellTypeManager_ShellTypeExists_System_String_
-  commentId: M:KS.Shell.ShellBase.Shells.ShellTypeManager.ShellTypeExists(System.String)
-  name.vb: ShellTypeExists(String)
-  fullName: KS.Shell.ShellBase.Shells.ShellTypeManager.ShellTypeExists(string)
-  fullName.vb: KS.Shell.ShellBase.Shells.ShellTypeManager.ShellTypeExists(String)
-  nameWithType: ShellTypeManager.ShellTypeExists(string)
-  nameWithType.vb: ShellTypeManager.ShellTypeExists(String)
-- uid: KS.Shell.ShellBase.Shells.ShellTypeManager.ShellTypeExists*
-  name: ShellTypeExists
-  href: api/KS.Shell.ShellBase.Shells.ShellTypeManager.html#KS_Shell_ShellBase_Shells_ShellTypeManager_ShellTypeExists_
-  commentId: Overload:KS.Shell.ShellBase.Shells.ShellTypeManager.ShellTypeExists
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Shells.ShellTypeManager.ShellTypeExists
-  nameWithType: ShellTypeManager.ShellTypeExists
-- uid: KS.Shell.ShellBase.Shells.ShellTypeManager.UnregisterShell(System.String)
-  name: UnregisterShell(string)
-  href: api/KS.Shell.ShellBase.Shells.ShellTypeManager.html#KS_Shell_ShellBase_Shells_ShellTypeManager_UnregisterShell_System_String_
-  commentId: M:KS.Shell.ShellBase.Shells.ShellTypeManager.UnregisterShell(System.String)
-  name.vb: UnregisterShell(String)
-  fullName: KS.Shell.ShellBase.Shells.ShellTypeManager.UnregisterShell(string)
-  fullName.vb: KS.Shell.ShellBase.Shells.ShellTypeManager.UnregisterShell(String)
-  nameWithType: ShellTypeManager.UnregisterShell(string)
-  nameWithType.vb: ShellTypeManager.UnregisterShell(String)
-- uid: KS.Shell.ShellBase.Shells.ShellTypeManager.UnregisterShell*
-  name: UnregisterShell
-  href: api/KS.Shell.ShellBase.Shells.ShellTypeManager.html#KS_Shell_ShellBase_Shells_ShellTypeManager_UnregisterShell_
-  commentId: Overload:KS.Shell.ShellBase.Shells.ShellTypeManager.UnregisterShell
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Shells.ShellTypeManager.UnregisterShell
-  nameWithType: ShellTypeManager.UnregisterShell
 - uid: KS.Shell.ShellBase.Switches
   name: KS.Shell.ShellBase.Switches
   href: api/KS.Shell.ShellBase.Switches.html

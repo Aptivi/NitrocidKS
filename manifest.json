@@ -4605,30 +4605,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Shells.ShellStart.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Shells.ShellStart.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.Shells.ShellType.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.ShellBase.Shells.ShellType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Shells.ShellTypeManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Shells.ShellTypeManager.html"
         }
       },
       "version": ""
