@@ -54359,3 +54359,28 @@ references:
   isSpec: "True"
   fullName: KS.Users.UserManagement.ValidateUsername
   nameWithType: UserManagement.ValidateUsername
+- uid: KS.Users.Windows
+  name: KS.Users.Windows
+  href: api/KS.Users.Windows.html
+  commentId: N:KS.Users.Windows
+  fullName: KS.Users.Windows
+  nameWithType: KS.Users.Windows
+- uid: KS.Users.Windows.WindowsUserTools
+  name: WindowsUserTools
+  href: api/KS.Users.Windows.WindowsUserTools.html
+  commentId: T:KS.Users.Windows.WindowsUserTools
+  fullName: KS.Users.Windows.WindowsUserTools
+  nameWithType: WindowsUserTools
+- uid: KS.Users.Windows.WindowsUserTools.IsAdministrator
+  name: IsAdministrator()
+  href: api/KS.Users.Windows.WindowsUserTools.html#KS_Users_Windows_WindowsUserTools_IsAdministrator
+  commentId: M:KS.Users.Windows.WindowsUserTools.IsAdministrator
+  fullName: KS.Users.Windows.WindowsUserTools.IsAdministrator()
+  nameWithType: WindowsUserTools.IsAdministrator()
+- uid: KS.Users.Windows.WindowsUserTools.IsAdministrator*
+  name: IsAdministrator
+  href: api/KS.Users.Windows.WindowsUserTools.html#KS_Users_Windows_WindowsUserTools_IsAdministrator_
+  commentId: Overload:KS.Users.Windows.WindowsUserTools.IsAdministrator
+  isSpec: "True"
+  fullName: KS.Users.Windows.WindowsUserTools.IsAdministrator
+  nameWithType: WindowsUserTools.IsAdministrator
