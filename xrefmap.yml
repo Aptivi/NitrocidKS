@@ -18858,6 +18858,19 @@ references:
   isSpec: "True"
   fullName: KS.Files.Extensions.ExtensionHandler.Handler
   nameWithType: ExtensionHandler.Handler
+- uid: KS.Files.Extensions.ExtensionHandler.Implementer
+  name: Implementer
+  href: api/KS.Files.Extensions.ExtensionHandler.html#KS_Files_Extensions_ExtensionHandler_Implementer
+  commentId: P:KS.Files.Extensions.ExtensionHandler.Implementer
+  fullName: KS.Files.Extensions.ExtensionHandler.Implementer
+  nameWithType: ExtensionHandler.Implementer
+- uid: KS.Files.Extensions.ExtensionHandler.Implementer*
+  name: Implementer
+  href: api/KS.Files.Extensions.ExtensionHandler.html#KS_Files_Extensions_ExtensionHandler_Implementer_
+  commentId: Overload:KS.Files.Extensions.ExtensionHandler.Implementer
+  isSpec: "True"
+  fullName: KS.Files.Extensions.ExtensionHandler.Implementer
+  nameWithType: ExtensionHandler.Implementer
 - uid: KS.Files.Extensions.ExtensionHandler.InfoHandler
   name: InfoHandler
   href: api/KS.Files.Extensions.ExtensionHandler.html#KS_Files_Extensions_ExtensionHandler_InfoHandler
@@ -18890,15 +18903,15 @@ references:
   commentId: T:KS.Files.Extensions.ExtensionHandlerTools
   fullName: KS.Files.Extensions.ExtensionHandlerTools
   nameWithType: ExtensionHandlerTools
-- uid: KS.Files.Extensions.ExtensionHandlerTools.GetExtensionHandler(System.String)
-  name: GetExtensionHandler(string)
-  href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_GetExtensionHandler_System_String_
-  commentId: M:KS.Files.Extensions.ExtensionHandlerTools.GetExtensionHandler(System.String)
-  name.vb: GetExtensionHandler(String)
-  fullName: KS.Files.Extensions.ExtensionHandlerTools.GetExtensionHandler(string)
-  fullName.vb: KS.Files.Extensions.ExtensionHandlerTools.GetExtensionHandler(String)
-  nameWithType: ExtensionHandlerTools.GetExtensionHandler(string)
-  nameWithType.vb: ExtensionHandlerTools.GetExtensionHandler(String)
+- uid: KS.Files.Extensions.ExtensionHandlerTools.GetExtensionHandler(System.String,System.String)
+  name: GetExtensionHandler(string, string)
+  href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_GetExtensionHandler_System_String_System_String_
+  commentId: M:KS.Files.Extensions.ExtensionHandlerTools.GetExtensionHandler(System.String,System.String)
+  name.vb: GetExtensionHandler(String, String)
+  fullName: KS.Files.Extensions.ExtensionHandlerTools.GetExtensionHandler(string, string)
+  fullName.vb: KS.Files.Extensions.ExtensionHandlerTools.GetExtensionHandler(String, String)
+  nameWithType: ExtensionHandlerTools.GetExtensionHandler(string, string)
+  nameWithType.vb: ExtensionHandlerTools.GetExtensionHandler(String, String)
 - uid: KS.Files.Extensions.ExtensionHandlerTools.GetExtensionHandler*
   name: GetExtensionHandler
   href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_GetExtensionHandler_
@@ -18928,6 +18941,22 @@ references:
   isSpec: "True"
   fullName: KS.Files.Extensions.ExtensionHandlerTools.GetExtensionHandlers
   nameWithType: ExtensionHandlerTools.GetExtensionHandlers
+- uid: KS.Files.Extensions.ExtensionHandlerTools.GetFirstExtensionHandler(System.String)
+  name: GetFirstExtensionHandler(string)
+  href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_GetFirstExtensionHandler_System_String_
+  commentId: M:KS.Files.Extensions.ExtensionHandlerTools.GetFirstExtensionHandler(System.String)
+  name.vb: GetFirstExtensionHandler(String)
+  fullName: KS.Files.Extensions.ExtensionHandlerTools.GetFirstExtensionHandler(string)
+  fullName.vb: KS.Files.Extensions.ExtensionHandlerTools.GetFirstExtensionHandler(String)
+  nameWithType: ExtensionHandlerTools.GetFirstExtensionHandler(string)
+  nameWithType.vb: ExtensionHandlerTools.GetFirstExtensionHandler(String)
+- uid: KS.Files.Extensions.ExtensionHandlerTools.GetFirstExtensionHandler*
+  name: GetFirstExtensionHandler
+  href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_GetFirstExtensionHandler_
+  commentId: Overload:KS.Files.Extensions.ExtensionHandlerTools.GetFirstExtensionHandler
+  isSpec: "True"
+  fullName: KS.Files.Extensions.ExtensionHandlerTools.GetFirstExtensionHandler
+  nameWithType: ExtensionHandlerTools.GetFirstExtensionHandler
 - uid: KS.Files.Extensions.ExtensionHandlerTools.IsHandlerBuiltin(System.String)
   name: IsHandlerBuiltin(string)
   href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_IsHandlerBuiltin_System_String_
@@ -18944,6 +18973,22 @@ references:
   isSpec: "True"
   fullName: KS.Files.Extensions.ExtensionHandlerTools.IsHandlerBuiltin
   nameWithType: ExtensionHandlerTools.IsHandlerBuiltin
+- uid: KS.Files.Extensions.ExtensionHandlerTools.IsHandlerBuiltinSpecific(System.String,System.String)
+  name: IsHandlerBuiltinSpecific(string, string)
+  href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_IsHandlerBuiltinSpecific_System_String_System_String_
+  commentId: M:KS.Files.Extensions.ExtensionHandlerTools.IsHandlerBuiltinSpecific(System.String,System.String)
+  name.vb: IsHandlerBuiltinSpecific(String, String)
+  fullName: KS.Files.Extensions.ExtensionHandlerTools.IsHandlerBuiltinSpecific(string, string)
+  fullName.vb: KS.Files.Extensions.ExtensionHandlerTools.IsHandlerBuiltinSpecific(String, String)
+  nameWithType: ExtensionHandlerTools.IsHandlerBuiltinSpecific(string, string)
+  nameWithType.vb: ExtensionHandlerTools.IsHandlerBuiltinSpecific(String, String)
+- uid: KS.Files.Extensions.ExtensionHandlerTools.IsHandlerBuiltinSpecific*
+  name: IsHandlerBuiltinSpecific
+  href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_IsHandlerBuiltinSpecific_
+  commentId: Overload:KS.Files.Extensions.ExtensionHandlerTools.IsHandlerBuiltinSpecific
+  isSpec: "True"
+  fullName: KS.Files.Extensions.ExtensionHandlerTools.IsHandlerBuiltinSpecific
+  nameWithType: ExtensionHandlerTools.IsHandlerBuiltinSpecific
 - uid: KS.Files.Extensions.ExtensionHandlerTools.IsHandlerRegistered(System.String)
   name: IsHandlerRegistered(string)
   href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_IsHandlerRegistered_System_String_
@@ -18960,15 +19005,31 @@ references:
   isSpec: "True"
   fullName: KS.Files.Extensions.ExtensionHandlerTools.IsHandlerRegistered
   nameWithType: ExtensionHandlerTools.IsHandlerRegistered
-- uid: KS.Files.Extensions.ExtensionHandlerTools.RegisterHandler(System.String,System.Action{System.String},System.Func{System.String,System.String})
-  name: RegisterHandler(string, Action<string>, Func<string, string>)
-  href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_RegisterHandler_System_String_System_Action_System_String__System_Func_System_String_System_String__
-  commentId: M:KS.Files.Extensions.ExtensionHandlerTools.RegisterHandler(System.String,System.Action{System.String},System.Func{System.String,System.String})
-  name.vb: RegisterHandler(String, Action(Of String), Func(Of String, String))
-  fullName: KS.Files.Extensions.ExtensionHandlerTools.RegisterHandler(string, System.Action<string>, System.Func<string, string>)
-  fullName.vb: KS.Files.Extensions.ExtensionHandlerTools.RegisterHandler(String, System.Action(Of String), System.Func(Of String, String))
-  nameWithType: ExtensionHandlerTools.RegisterHandler(string, Action<string>, Func<string, string>)
-  nameWithType.vb: ExtensionHandlerTools.RegisterHandler(String, Action(Of String), Func(Of String, String))
+- uid: KS.Files.Extensions.ExtensionHandlerTools.IsHandlerRegisteredSpecific(System.String,System.String)
+  name: IsHandlerRegisteredSpecific(string, string)
+  href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_IsHandlerRegisteredSpecific_System_String_System_String_
+  commentId: M:KS.Files.Extensions.ExtensionHandlerTools.IsHandlerRegisteredSpecific(System.String,System.String)
+  name.vb: IsHandlerRegisteredSpecific(String, String)
+  fullName: KS.Files.Extensions.ExtensionHandlerTools.IsHandlerRegisteredSpecific(string, string)
+  fullName.vb: KS.Files.Extensions.ExtensionHandlerTools.IsHandlerRegisteredSpecific(String, String)
+  nameWithType: ExtensionHandlerTools.IsHandlerRegisteredSpecific(string, string)
+  nameWithType.vb: ExtensionHandlerTools.IsHandlerRegisteredSpecific(String, String)
+- uid: KS.Files.Extensions.ExtensionHandlerTools.IsHandlerRegisteredSpecific*
+  name: IsHandlerRegisteredSpecific
+  href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_IsHandlerRegisteredSpecific_
+  commentId: Overload:KS.Files.Extensions.ExtensionHandlerTools.IsHandlerRegisteredSpecific
+  isSpec: "True"
+  fullName: KS.Files.Extensions.ExtensionHandlerTools.IsHandlerRegisteredSpecific
+  nameWithType: ExtensionHandlerTools.IsHandlerRegisteredSpecific
+- uid: KS.Files.Extensions.ExtensionHandlerTools.RegisterHandler(System.String,System.String,System.Action{System.String},System.Func{System.String,System.String})
+  name: RegisterHandler(string, string, Action<string>, Func<string, string>)
+  href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_RegisterHandler_System_String_System_String_System_Action_System_String__System_Func_System_String_System_String__
+  commentId: M:KS.Files.Extensions.ExtensionHandlerTools.RegisterHandler(System.String,System.String,System.Action{System.String},System.Func{System.String,System.String})
+  name.vb: RegisterHandler(String, String, Action(Of String), Func(Of String, String))
+  fullName: KS.Files.Extensions.ExtensionHandlerTools.RegisterHandler(string, string, System.Action<string>, System.Func<string, string>)
+  fullName.vb: KS.Files.Extensions.ExtensionHandlerTools.RegisterHandler(String, String, System.Action(Of String), System.Func(Of String, String))
+  nameWithType: ExtensionHandlerTools.RegisterHandler(string, string, Action<string>, Func<string, string>)
+  nameWithType.vb: ExtensionHandlerTools.RegisterHandler(String, String, Action(Of String), Func(Of String, String))
 - uid: KS.Files.Extensions.ExtensionHandlerTools.RegisterHandler*
   name: RegisterHandler
   href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_RegisterHandler_
@@ -18998,15 +19059,15 @@ references:
   fullName.vb: KS.Files.Extensions.ExtensionHandlerTools.UnregisterHandler(String, KS.Files.Extensions.ExtensionHandler)
   nameWithType: ExtensionHandlerTools.UnregisterHandler(string, ExtensionHandler)
   nameWithType.vb: ExtensionHandlerTools.UnregisterHandler(String, ExtensionHandler)
-- uid: KS.Files.Extensions.ExtensionHandlerTools.UnregisterHandler(System.String,System.Int32)
-  name: UnregisterHandler(string, int)
-  href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_UnregisterHandler_System_String_System_Int32_
-  commentId: M:KS.Files.Extensions.ExtensionHandlerTools.UnregisterHandler(System.String,System.Int32)
-  name.vb: UnregisterHandler(String, Integer)
-  fullName: KS.Files.Extensions.ExtensionHandlerTools.UnregisterHandler(string, int)
-  fullName.vb: KS.Files.Extensions.ExtensionHandlerTools.UnregisterHandler(String, Integer)
-  nameWithType: ExtensionHandlerTools.UnregisterHandler(string, int)
-  nameWithType.vb: ExtensionHandlerTools.UnregisterHandler(String, Integer)
+- uid: KS.Files.Extensions.ExtensionHandlerTools.UnregisterHandler(System.String,System.String)
+  name: UnregisterHandler(string, string)
+  href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_UnregisterHandler_System_String_System_String_
+  commentId: M:KS.Files.Extensions.ExtensionHandlerTools.UnregisterHandler(System.String,System.String)
+  name.vb: UnregisterHandler(String, String)
+  fullName: KS.Files.Extensions.ExtensionHandlerTools.UnregisterHandler(string, string)
+  fullName.vb: KS.Files.Extensions.ExtensionHandlerTools.UnregisterHandler(String, String)
+  nameWithType: ExtensionHandlerTools.UnregisterHandler(string, string)
+  nameWithType.vb: ExtensionHandlerTools.UnregisterHandler(String, String)
 - uid: KS.Files.Extensions.ExtensionHandlerTools.UnregisterHandler*
   name: UnregisterHandler
   href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_UnregisterHandler_
