@@ -22,7 +22,6 @@ set ksversion=0.0.16.21
 
 echo Make sure you have the following:
 echo   - %ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe
-echo   - %ProgramFiles%\WinRAR\rar.exe
 echo   - %ProgramFiles%\7-Zip\7z.exe
 echo   - %ProgramFiles(x86)%\GnuWin32\bin\gzip.exe
 echo.
@@ -53,7 +52,7 @@ goto :finished
 :packbin
 echo Packing binary...
 del "Kernel Simulator\KSBuild\*.nupkg" >> %temp%/buildandpack.log 2>&1
-"%ProgramFiles%\WinRAR\rar.exe" a -ep1 -r -m5 %temp%/%ksversion%-bin.rar "Kernel Simulator\KSBuild\net48\" >> %temp%/buildandpack.log 2>&1
+"%ProgramFiles%\7-Zip\7z.exe" a -tzip %temp%/%ksversion%-bin.zip ".\Kernel Simulator\KSBuild\net48\*" >> %temp%/buildandpack.log 2>&1
 if %errorlevel% == 0 goto :packsrc
 echo There was an error trying to pack binary (%errorlevel%).
 goto :finished
@@ -67,10 +66,10 @@ rmdir /S /Q "KSTests\KSTest" >> %temp%/buildandpack.log 2>&1
 rmdir /S /Q "KSTests\obj\" >> %temp%/buildandpack.log 2>&1
 rmdir /S /Q "KSJsonifyLocales\obj\" >> %temp%/buildandpack.log 2>&1
 rmdir /S /Q "KSConverter\obj\" >> %temp%/buildandpack.log 2>&1
-echo Packing source using rar...
-"%ProgramFiles%\WinRAR\rar.exe" a -ep1 -r -m5 -x.git -x.vs %temp%/%ksversion%-src.rar >> %temp%/buildandpack.log 2>&1
+echo Packing source using zip...
+"%ProgramFiles%\7-Zip\7z.exe" a -tzip %temp%/%ksversion%-src.zip -xr!.git -xr!.vs >> %temp%/buildandpack.log 2>&1
 if %errorlevel% == 0 goto :packsrctar
-echo There was an error trying to pack source using rar (%errorlevel%).
+echo There was an error trying to pack source using zip (%errorlevel%).
 goto :finished
 
 :packsrctar
@@ -88,8 +87,8 @@ echo There was an error trying to compress tar (%errorlevel%).
 goto :finished
 
 :complete
-move %temp%\%ksversion%-bin.rar >> %temp%/buildandpack.log 2>&1
-move %temp%\%ksversion%-src.rar >> %temp%/buildandpack.log 2>&1
+move %temp%\%ksversion%-bin.zip >> %temp%/buildandpack.log 2>&1
+move %temp%\%ksversion%-src.zip >> %temp%/buildandpack.log 2>&1
 move %temp%\%ksversion%-src.tar.gz >> %temp%/buildandpack.log 2>&1
 echo Build and pack successful.
 goto :finished
