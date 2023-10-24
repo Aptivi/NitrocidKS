@@ -1047,14 +1047,6 @@ Namespace Misc.Configuration
                     {"Show latest RSS headline on login", ShowHeadlineOnLogin},
                     {"RSS headline URL", RssHeadlineUrl},
                     {"Save all events and/or reminders destructively", SaveEventsRemindersDestructively},
-                    {"Upper left corner character for RGB color wheel", WheelUpperLeftCornerChar},
-                    {"Upper right corner character for RGB color wheel", WheelUpperRightCornerChar},
-                    {"Lower left corner character for RGB color wheel", WheelLowerLeftCornerChar},
-                    {"Lower right corner character for RGB color wheel", WheelLowerRightCornerChar},
-                    {"Upper frame character for RGB color wheel", WheelUpperFrameChar},
-                    {"Lower frame character for RGB color wheel", WheelLowerFrameChar},
-                    {"Left frame character for RGB color wheel", WheelLeftFrameChar},
-                    {"Right frame character for RGB color wheel", WheelRightFrameChar},
                     {"Default JSON formatting for JSON shell", JsonShell_Formatting},
                     {"Enable Figlet for timer", EnableFigletTimer},
                     {"Figlet font for timer", TimerFigletFont},
@@ -1969,14 +1961,6 @@ Namespace Misc.Configuration
             ShowHeadlineOnLogin = If(ConfigToken("Misc")?("Show latest RSS headline on login"), False)
             RssHeadlineUrl = If(ConfigToken("Misc")?("RSS headline URL"), "https://www.techrepublic.com/rssfeeds/articles/")
             SaveEventsRemindersDestructively = If(ConfigToken("Misc")?("Save all events and/or reminders destructively"), False)
-            WheelUpperLeftCornerChar = If(ConfigToken("Misc")?("Upper left corner character for RGB color wheel"), "╔")
-            WheelUpperRightCornerChar = If(ConfigToken("Misc")?("Upper right corner character for RGB color wheel"), "╗")
-            WheelLowerLeftCornerChar = If(ConfigToken("Misc")?("Lower left corner character for RGB color wheel"), "╚")
-            WheelLowerRightCornerChar = If(ConfigToken("Misc")?("Lower right corner character for RGB color wheel"), "╝")
-            WheelUpperFrameChar = If(ConfigToken("Misc")?("Upper frame character for RGB color wheel"), "═")
-            WheelLowerFrameChar = If(ConfigToken("Misc")?("Lower frame character for RGB color wheel"), "═")
-            WheelLeftFrameChar = If(ConfigToken("Misc")?("Left frame character for RGB color wheel"), "║")
-            WheelRightFrameChar = If(ConfigToken("Misc")?("Right frame character for RGB color wheel"), "║")
             JsonShell_Formatting = If(ConfigToken("Misc")?("Default JSON formatting for JSON shell") IsNot Nothing, If([Enum].TryParse(ConfigToken("Misc")?("Default JSON formatting for JSON shell"), JsonShell_Formatting), JsonShell_Formatting, Formatting.Indented), Formatting.Indented)
             EnableFigletTimer = If(ConfigToken("Misc")?("Enable Figlet for timer"), False)
             TimerFigletFont = If(ConfigToken("Misc")?("Figlet font for timer"), "Small")
