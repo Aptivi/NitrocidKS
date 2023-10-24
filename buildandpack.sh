@@ -43,9 +43,9 @@ if [ ! $? == 0 ]; then
 	echo tar is not found.
 	exit 1
 fi
-rarpath=`which rar`
+zippath=`which zip`
 if [ ! $? == 0 ]; then
-	echo rar is not found.
+	echo zip is not found.
 	exit 1
 fi
 
@@ -68,9 +68,9 @@ fi
 # Pack binary
 echo Packing binary...
 find . -type f -iname \*.nupkg -delete >> ~/tmp/buildandpack.log
-"$rarpath" a -ep1 -r -m5 ~/tmp/$ksversion-bin.rar "Kernel Simulator/KSBuild/net48/" >> ~/tmp/buildandpack.log
+(cd "Kernel Simulator/KSBuild/net48/" && "$zippath" -r /tmp/$ksversion-bin.zip . && cd -) >> ~/tmp/buildandpack.log
 if [ ! $? == 0 ]; then
-	echo Packing using rar failed.
+	echo Packing using zip failed.
 	exit 1
 fi
 
@@ -82,9 +82,9 @@ rm -r "KSTests/KSTest" >> ~/tmp/buildandpack.log
 rm -r "KSTests/obj" >> ~/tmp/buildandpack.log
 rm -r "KSJsonifyLocales/obj" >> ~/tmp/buildandpack.log
 rm -r "KSConverter/obj" >> ~/tmp/buildandpack.log
-"$rarpath" a -ep1 -r -m5 -x.git -x.vs ~/tmp/$ksversion-src.rar >> ~/tmp/buildandpack.log
+"$zippath" -r /tmp/$ksversion-src.zip . >> ~/tmp/buildandpack.log
 if [ ! $? == 0 ]; then
-	echo Packing source using rar failed.
+	echo Packing source using zip failed.
 	exit 1
 fi
 
@@ -105,8 +105,8 @@ if [ ! $? == 0 ]; then
 fi
 
 # Inform success
-mv ~/tmp/$ksversion-bin.rar .
-mv ~/tmp/$ksversion-src.rar .
+mv ~/tmp/$ksversion-bin.zip .
+mv ~/tmp/$ksversion-src.zip .
 mv ~/tmp/$ksversion-src.tar.gz .
 echo Build and pack successful.
 exit 0
