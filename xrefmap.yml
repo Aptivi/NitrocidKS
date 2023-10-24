@@ -29721,6 +29721,22 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Threading.ThreadManager.GetActualTicks
   nameWithType: ThreadManager.GetActualTicks
+- uid: KS.Kernel.Threading.ThreadManager.GetActualTimeSpan(System.Int32)
+  name: GetActualTimeSpan(int)
+  href: api/KS.Kernel.Threading.ThreadManager.html#KS_Kernel_Threading_ThreadManager_GetActualTimeSpan_System_Int32_
+  commentId: M:KS.Kernel.Threading.ThreadManager.GetActualTimeSpan(System.Int32)
+  name.vb: GetActualTimeSpan(Integer)
+  fullName: KS.Kernel.Threading.ThreadManager.GetActualTimeSpan(int)
+  fullName.vb: KS.Kernel.Threading.ThreadManager.GetActualTimeSpan(Integer)
+  nameWithType: ThreadManager.GetActualTimeSpan(int)
+  nameWithType.vb: ThreadManager.GetActualTimeSpan(Integer)
+- uid: KS.Kernel.Threading.ThreadManager.GetActualTimeSpan*
+  name: GetActualTimeSpan
+  href: api/KS.Kernel.Threading.ThreadManager.html#KS_Kernel_Threading_ThreadManager_GetActualTimeSpan_
+  commentId: Overload:KS.Kernel.Threading.ThreadManager.GetActualTimeSpan
+  isSpec: "True"
+  fullName: KS.Kernel.Threading.ThreadManager.GetActualTimeSpan
+  nameWithType: ThreadManager.GetActualTimeSpan
 - uid: KS.Kernel.Threading.ThreadManager.GetThreadBacktraces
   name: GetThreadBacktraces()
   href: api/KS.Kernel.Threading.ThreadManager.html#KS_Kernel_Threading_ThreadManager_GetThreadBacktraces
