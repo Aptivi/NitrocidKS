@@ -121,7 +121,7 @@ Public Module HelpSystem
     ''' Shows the help of a command, or command list if nothing is specified
     ''' </summary>
     ''' <param name="command">A specified command</param>
-    Public Sub ShowHelp(Optional ByVal command As String = "")
+    Public Sub ShowHelp(Optional command As String = "")
 
         Dim ScreensaverFiles As New List(Of String)
         ScreensaverFiles.AddRange(Directory.GetFiles(paths("Mods"), "*.ss.vb", SearchOption.TopDirectoryOnly).Select(Function(x) Path.GetFileName(x)))

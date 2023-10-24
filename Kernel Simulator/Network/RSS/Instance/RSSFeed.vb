@@ -48,7 +48,7 @@ Public Class RSSFeed
     ''' </summary>
     ''' <param name="FeedUrl">A URL to RSS feed</param>
     ''' <param name="FeedType">A feed type to parse. If set to Infer, it will automatically detect the type based on contents.</param>
-    Public Sub New(ByVal FeedUrl As String, ByVal FeedType As RSSFeedType)
+    Public Sub New(FeedUrl As String, FeedType As RSSFeedType)
         'Load an RSS feed from URL
         Dim FeedWebRequest As HttpWebRequest = DirectCast(WebRequest.Create(FeedUrl), HttpWebRequest)
         Dim FeedWebResponse As WebResponse = FeedWebRequest.GetResponse()

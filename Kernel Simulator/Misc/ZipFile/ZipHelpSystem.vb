@@ -31,7 +31,7 @@ Public Module ZipHelpSystem
                                                                        {"get", DoTranslation("Extracts a file to a specified directory or a current directory")}}
     End Sub
 
-    Public Sub ZipShell_GetHelp(Optional ByVal Command As String = "")
+    Public Sub ZipShell_GetHelp(Optional Command As String = "")
         If Command = "" Then
             If simHelp = False Then
                 Write(DoTranslation("General commands:"), True, ColTypes.Neutral)

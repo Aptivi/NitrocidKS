@@ -1,5 +1,4 @@
-﻿Imports System
-Imports System.Reflection
+﻿Imports System.Reflection
 Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyDescription("Unit tests for Kernel Simulator")>

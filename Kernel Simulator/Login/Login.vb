@@ -107,7 +107,7 @@ Public Module Login
     ''' Prompts user for password
     ''' </summary>
     ''' <param name="usernamerequested">A username that is about to be logged in</param>
-    Public Sub ShowPasswordPrompt(ByVal usernamerequested As String)
+    Public Sub ShowPasswordPrompt(usernamerequested As String)
         'Error handler
         On Error Resume Next
 
@@ -168,7 +168,7 @@ Public Module Login
     ''' Signs in to the username
     ''' </summary>
     ''' <param name="signedInUser">A specified username</param>
-    Public Sub SignIn(ByVal signedInUser As String)
+    Public Sub SignIn(signedInUser As String)
 
         'Release lock
         If LockMode Then

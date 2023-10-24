@@ -29,7 +29,7 @@ Public Module SFTPGetCommand
     ''' Parses and executes the SFTP command
     ''' </summary>
     ''' <param name="cmd">A command. It may come with arguments</param>
-    Public Sub ExecuteCommand(ByVal cmd As String)
+    Public Sub ExecuteCommand(cmd As String)
         'Variables
         Dim RequiredArgumentsProvided As Boolean = True
 

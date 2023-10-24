@@ -190,7 +190,7 @@ Public Module MailShell
     ''' </summary>
     ''' <param name="Sender">A folder</param>
     ''' <param name="e">Event arguments</param>
-    Private Sub OnCountChanged(ByVal Sender As Object, ByVal e As EventArgs)
+    Private Sub OnCountChanged(Sender As Object, e As EventArgs)
         Dim Folder As ImapFolder = Sender
         If Folder.Count > IMAP_Messages.Count Then
             Dim NewMessagesCount As Integer = Folder.Count - IMAP_Messages.Count
@@ -218,7 +218,7 @@ Public Module MailShell
     ''' Executes the mail shell alias
     ''' </summary>
     ''' <param name="aliascmd">Aliased command with arguments</param>
-    Sub ExecuteMailAlias(ByVal aliascmd As String)
+    Sub ExecuteMailAlias(aliascmd As String)
         Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
         Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, MailShellAliases(FirstWordCmd))
         Wdbg("I", "Actual command: {0}", actualCmd)

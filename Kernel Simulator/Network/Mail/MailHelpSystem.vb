@@ -48,7 +48,7 @@ Public Module MailHelpSystem
     ''' Shows the help and usage for a specified command, or displays a list of commands when nothing is specified.
     ''' </summary>
     ''' <param name="command">A command</param>
-    Public Sub IMAPShowHelp(Optional ByVal command As String = "")
+    Public Sub IMAPShowHelp(Optional command As String = "")
         If command = "" Then
             If simHelp = False Then
                 Write(DoTranslation("General commands:"), True, ColTypes.Neutral)

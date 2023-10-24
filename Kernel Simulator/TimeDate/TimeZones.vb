@@ -48,7 +48,7 @@ Public Module TimeZones
     ''' Shows current time in selected time zone, or all of them if zone was "all" 
     ''' </summary>
     ''' <param name="zone">Time zone</param>
-    Public Sub ShowTimesInZones(Optional ByVal zone As String = "all")
+    Public Sub ShowTimesInZones(Optional zone As String = "all")
 
         If zoneTimes.Keys.Contains(zone) Then
             Write(DoTranslation("- Time of {0}: {1}") + " ({2})", True, ColTypes.Neutral, zone, zoneTimes(zone).ToString(), FindSystemTimeZoneById(zone).GetUtcOffset(KernelDateTime).ToString)

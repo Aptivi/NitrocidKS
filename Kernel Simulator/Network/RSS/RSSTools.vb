@@ -25,7 +25,7 @@ Public Module RSSTools
     ''' </summary>
     ''' <param name="FeedNode">Feed XML node</param>
     ''' <param name="FeedType">Feed type</param>
-    Function MakeRssArticlesFromFeed(ByVal FeedNode As XmlNodeList, ByVal FeedType As RSSFeedType) As List(Of RSSArticle)
+    Function MakeRssArticlesFromFeed(FeedNode As XmlNodeList, FeedType As RSSFeedType) As List(Of RSSArticle)
 #Disable Warning BC42104
         Dim Articles As New List(Of RSSArticle)
         Select Case FeedType
@@ -104,7 +104,7 @@ Public Module RSSTools
     ''' <param name="FeedProperty">Feed property name</param>
     ''' <param name="FeedNode">Feed XML node</param>
     ''' <param name="FeedType">Feed type</param>
-    Function GetFeedProperty(ByVal FeedProperty As String, ByVal FeedNode As XmlNodeList, ByVal FeedType As RSSFeedType) As Object
+    Function GetFeedProperty(FeedProperty As String, FeedNode As XmlNodeList, FeedType As RSSFeedType) As Object
         Select Case FeedType
             Case RSSFeedType.RSS2
                 For Each Node As XmlNode In FeedNode(0) '<channel>

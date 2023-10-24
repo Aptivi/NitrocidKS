@@ -28,7 +28,7 @@ Module MailGetCommand
     ''' Parses and executes the specified mail command
     ''' </summary>
     ''' <param name="cmd">A command. It may come with arguments</param>
-    Sub Mail_ExecuteCommand(ByVal cmd As String)
+    Sub Mail_ExecuteCommand(cmd As String)
         'Variables
         Dim RequiredArgsProvided As Boolean = True
 

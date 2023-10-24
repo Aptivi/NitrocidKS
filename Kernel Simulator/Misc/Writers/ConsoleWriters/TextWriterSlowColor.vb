@@ -27,7 +27,7 @@ Module TextWriterSlowColor
     ''' <param name="Line">Whether to print a new line or not</param>
     ''' <param name="MsEachLetter">Time in milliseconds to delay writing</param>
     ''' <param name="vars">Endless amounts of any variables that is separated by commas.</param>
-    Public Sub WriteSlowly(ByVal msg As String, ByVal Line As Boolean, ByVal MsEachLetter As Double, ParamArray ByVal vars() As Object)
+    Public Sub WriteSlowly(msg As String, Line As Boolean, MsEachLetter As Double, ParamArray vars() As Object)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
@@ -56,7 +56,7 @@ Module TextWriterSlowColor
     ''' <param name="MsEachLetter">Time in milliseconds to delay writing</param>
     ''' <param name="colorType">A type of colors that will be changed.</param>
     ''' <param name="vars">Endless amounts of any variables that is separated by commas.</param>
-    Public Sub WriteSlowlyC(ByVal msg As String, ByVal Line As Boolean, ByVal MsEachLetter As Double, ByVal colorType As ColTypes, ParamArray ByVal vars() As Object)
+    Public Sub WriteSlowlyC(msg As String, Line As Boolean, MsEachLetter As Double, colorType As ColTypes, ParamArray vars() As Object)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
@@ -128,7 +128,7 @@ Module TextWriterSlowColor
     ''' <param name="MsEachLetter">Time in milliseconds to delay writing</param>
     ''' <param name="color">A color that will be changed to.</param>
     ''' <param name="vars">Endless amounts of any variables that is separated by commas.</param>
-    Public Sub WriteSlowlyC16(ByVal msg As String, ByVal Line As Boolean, ByVal MsEachLetter As Double, ByVal color As ConsoleColor, ByVal ParamArray vars() As Object)
+    Public Sub WriteSlowlyC16(msg As String, Line As Boolean, MsEachLetter As Double, color As ConsoleColor, ParamArray vars() As Object)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
@@ -162,7 +162,7 @@ Module TextWriterSlowColor
     ''' <param name="ForegroundColor">A foreground color that will be changed to.</param>
     ''' <param name="BackgroundColor">A background color that will be changed to.</param>
     ''' <param name="vars">Endless amounts of any variables that is separated by commas.</param>
-    Public Sub WriteSlowlyC16(ByVal msg As String, ByVal Line As Boolean, ByVal MsEachLetter As Double, ByVal ForegroundColor As ConsoleColor, ByVal BackgroundColor As ConsoleColor, ByVal ParamArray vars() As Object)
+    Public Sub WriteSlowlyC16(msg As String, Line As Boolean, MsEachLetter As Double, ForegroundColor As ConsoleColor, BackgroundColor As ConsoleColor, ParamArray vars() As Object)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
@@ -195,7 +195,7 @@ Module TextWriterSlowColor
     ''' <param name="MsEachLetter">Time in milliseconds to delay writing</param>
     ''' <param name="color">A color that will be changed to.</param>
     ''' <param name="vars">Endless amounts of any variables that is separated by commas.</param>
-    Public Sub WriteSlowlyC(ByVal msg As String, ByVal Line As Boolean, ByVal MsEachLetter As Double, ByVal color As Color, ParamArray ByVal vars() As Object)
+    Public Sub WriteSlowlyC(msg As String, Line As Boolean, MsEachLetter As Double, color As Color, ParamArray vars() As Object)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
@@ -231,7 +231,7 @@ Module TextWriterSlowColor
     ''' <param name="ForegroundColor">A foreground color that will be changed to.</param>
     ''' <param name="BackgroundColor">A background color that will be changed to.</param>
     ''' <param name="vars">Endless amounts of any variables that is separated by commas.</param>
-    Public Sub WriteSlowlyC(ByVal msg As String, ByVal Line As Boolean, ByVal MsEachLetter As Double, ByVal ForegroundColor As Color, ByVal BackgroundColor As Color, ParamArray ByVal vars() As Object)
+    Public Sub WriteSlowlyC(msg As String, Line As Boolean, MsEachLetter As Double, ForegroundColor As Color, BackgroundColor As Color, ParamArray vars() As Object)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If

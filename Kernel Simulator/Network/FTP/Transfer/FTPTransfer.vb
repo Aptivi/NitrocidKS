@@ -45,7 +45,7 @@ Public Module FTPTransfer
     ''' </summary>
     ''' <param name="File">A remote file</param>
     ''' <returns>True if successful; False if unsuccessful</returns>
-    Public Function FTPGetFile(ByVal File As String) As Boolean
+    Public Function FTPGetFile(File As String) As Boolean
         If connected Then
             Try
                 'Show a message to download
@@ -74,7 +74,7 @@ Public Module FTPTransfer
     ''' </summary>
     ''' <param name="File">A local file</param>
     ''' <returns>True if successful; False if unsuccessful</returns>
-    Public Function FTPUploadFile(ByVal File As String) As Boolean
+    Public Function FTPUploadFile(File As String) As Boolean
         If connected Then
             'Show a message to download
             EventManager.RaiseFTPPreUpload(File)
@@ -96,7 +96,7 @@ Public Module FTPTransfer
     ''' </summary>
     ''' <param name="File">A text file.</param>
     ''' <returns>Contents of the file</returns>
-    Public Function FTPDownloadToString(ByVal File As String) As String
+    Public Function FTPDownloadToString(File As String) As String
         If connected Then
             Try
                 'Show a message to download

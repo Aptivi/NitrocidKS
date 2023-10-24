@@ -39,7 +39,7 @@ Public Module RSSHelpSystem
     ''' Shows the list of commands.
     ''' </summary>
     ''' <param name="command">Specified command</param>
-    Public Sub RSSShowHelp(Optional ByVal command As String = "")
+    Public Sub RSSShowHelp(Optional command As String = "")
 
         If command = "" Then
             If simHelp = False Then

@@ -76,7 +76,7 @@ Public Module Translate
     ''' </summary>
     ''' <param name="text">Any string that exists in Kernel Simulator's translation files</param>
     ''' <returns>Translated string</returns>
-    Public Function DoTranslation(ByVal text As String) As String
+    Public Function DoTranslation(text As String) As String
         Return DoTranslation(text, currentLang)
     End Function
 
@@ -86,7 +86,7 @@ Public Module Translate
     ''' <param name="text">Any string that exists in Kernel Simulator's translation files</param>
     ''' <param name="lang">3 letter language</param>
     ''' <returns>Translated string</returns>
-    Public Function DoTranslation(ByVal text As String, ByVal lang As String) As String
+    Public Function DoTranslation(text As String, lang As String) As String
         If String.IsNullOrWhiteSpace(lang) Then lang = "eng"
         'Get language string and translate
         Dim translatedString As Dictionary(Of String, String)
@@ -119,7 +119,7 @@ Public Module Translate
     ''' </summary>
     ''' <param name="lang">A specified language</param>
     ''' <returns>A dictionary of English strings and translated strings</returns>
-    Public Function PrepareDict(ByVal lang As String) As Dictionary(Of String, String)
+    Public Function PrepareDict(lang As String) As Dictionary(Of String, String)
         Dim langStrings As New Dictionary(Of String, String)
 
         'Move final translations to dictionary
@@ -134,7 +134,7 @@ Public Module Translate
     ''' </summary>
     ''' <param name="lang">A specified language</param>
     ''' <param name="Force">Force changes</param>
-    Sub PromptForSetLang(ByVal lang As String, Optional ByVal Force As Boolean = False)
+    Sub PromptForSetLang(lang As String, Optional Force As Boolean = False)
         If Languages.ContainsKey(lang) Then
             Wdbg("I", "Forced {0}", Force)
             If Not Force Then
@@ -180,7 +180,7 @@ CHOICE:
     ''' </summary>
     ''' <param name="lang">A specified language</param>
     ''' <returns>True if successful, False if unsuccessful.</returns>
-    Public Function SetLang(ByVal lang As String) As Boolean
+    Public Function SetLang(lang As String) As Boolean
         If Languages.ContainsKey(lang) Then
             'Set appropriate codepage for incapable terminals
             Try
@@ -297,7 +297,7 @@ CHOICE:
     ''' Updates current culture based on current language and custom culture
     ''' </summary>
     ''' <param name="Culture">Full culture name</param>
-    Public Sub UpdateCulture(ByVal Culture As String)
+    Public Sub UpdateCulture(Culture As String)
         Dim Cultures As List(Of CultureInfo) = GetCulturesFromCurrentLang()
         For Each Cult As CultureInfo In Cultures
             If Cult.EnglishName = Culture Then

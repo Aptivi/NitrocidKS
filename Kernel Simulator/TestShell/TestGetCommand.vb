@@ -30,7 +30,7 @@ Module TestGetCommand
     ''' Parses the specified command and executes it
     ''' </summary>
     ''' <param name="FullCmd">A command to be executed. It may come with arguments</param>
-    Sub TParseCommand(ByVal FullCmd As String)
+    Sub TParseCommand(FullCmd As String)
         Try
             'Variables
             Dim RequiredArgumentsProvided As Boolean = True

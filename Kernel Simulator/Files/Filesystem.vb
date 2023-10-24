@@ -35,7 +35,7 @@ Public Module Filesystem
     ''' <param name="dir">A directory</param>
     ''' <returns>True if successful, False if unsuccessful.</returns>
     ''' <exception cref="DirectoryNotFoundException"></exception>
-    Public Function SetCurrDir(ByVal dir As String) As Boolean
+    Public Function SetCurrDir(dir As String) As Boolean
 #If NTFSCorruptionFix Then
         ThrowOnInvalidPath(dir)
 #End If
@@ -58,7 +58,7 @@ Public Module Filesystem
     ''' Reads the contents of a file and writes it to the console
     ''' </summary>
     ''' <param name="filename">Full path to file</param>
-    Public Sub ReadContents(ByVal filename As String)
+    Public Sub ReadContents(filename As String)
 #If NTFSCorruptionFix Then
         ThrowOnInvalidPath(filename)
 #End If
@@ -77,7 +77,7 @@ Public Module Filesystem
     ''' List all files and folders in a specified folder
     ''' </summary>
     ''' <param name="folder">Full path to folder</param>
-    Sub List(ByVal folder As String)
+    Sub List(folder As String)
         Wdbg("I", "Folder {0} will be listed...", folder)
 
 #If NTFSCorruptionFix Then
@@ -145,7 +145,7 @@ Public Module Filesystem
     ''' <param name="Sorted">Whether the list is sorted or not</param>
     ''' <returns>List of filesystem entries if any. Empty list if folder is not found or is empty.</returns>
     ''' <exception cref="Exceptions.FilesystemException"></exception>
-    Public Function CreateList(ByVal folder As String, Optional ByVal Sorted As Boolean = False) As List(Of FileSystemInfo)
+    Public Function CreateList(folder As String, Optional Sorted As Boolean = False) As List(Of FileSystemInfo)
         Wdbg("I", "Folder {0} will be listed...", folder)
         Dim FilesystemEntries As New List(Of FileSystemInfo)
 #If NTFSCorruptionFix Then
@@ -201,7 +201,7 @@ Public Module Filesystem
     ''' </summary>
     ''' <param name="FileSystemEntry">File system entry</param>
     ''' <param name="MaxLength">For size, how many zeroes to pad the size string to the left?</param>
-    Private Function SortSelector(ByVal FileSystemEntry As FileSystemInfo, ByVal MaxLength As Integer) As String
+    Private Function SortSelector(FileSystemEntry As FileSystemInfo, MaxLength As Integer) As String
         Select Case SortMode
             Case FilesystemSortOptions.FullName
                 Return FileSystemEntry.FullName
@@ -221,7 +221,7 @@ Public Module Filesystem
     ''' </summary>
     ''' <param name="Path">Target path, be it a file or a folder</param>
     ''' <returns>Absolute path</returns>
-    Public Function NeutralizePath(ByVal Path As String, Optional ByVal Strict As Boolean = False) As String
+    Public Function NeutralizePath(Path As String, Optional Strict As Boolean = False) As String
 #If NTFSCorruptionFix Then
         ThrowOnInvalidPath(Path)
 #End If
@@ -264,7 +264,7 @@ Public Module Filesystem
     ''' <param name="Path">Target path, be it a file or a folder</param>
     ''' <param name="Source">Source path in which the target is found. Must be a directory</param>
     ''' <returns>Absolute path</returns>
-    Public Function NeutralizePath(ByVal Path As String, ByVal Source As String, Optional ByVal Strict As Boolean = False) As String
+    Public Function NeutralizePath(Path As String, Source As String, Optional Strict As Boolean = False) As String
 #If NTFSCorruptionFix Then
         ThrowOnInvalidPath(Path)
         ThrowOnInvalidPath(Source)
@@ -310,7 +310,7 @@ Public Module Filesystem
     ''' <param name="Destination">Target file or directory</param>
     ''' <returns>True if successful; False if unsuccessful</returns>
     ''' <exception cref="IOException"></exception>
-    Public Function CopyFileOrDir(ByVal Source As String, ByVal Destination As String) As Boolean
+    Public Function CopyFileOrDir(Source As String, Destination As String) As Boolean
         Try
 #If NTFSCorruptionFix Then
             ThrowOnInvalidPath(Source)
@@ -360,7 +360,7 @@ Public Module Filesystem
     ''' </summary>
     ''' <param name="Source">Source directory</param>
     ''' <param name="Destination">Target directory</param>
-    Private Sub CopyDirectory(ByVal Source As String, ByVal Destination As String)
+    Private Sub CopyDirectory(Source As String, Destination As String)
         CopyDirectory(Source, Destination, ShowFilesystemProgress)
     End Sub
 
@@ -370,7 +370,7 @@ Public Module Filesystem
     ''' <param name="Source">Source directory</param>
     ''' <param name="Destination">Target directory</param>
     ''' <param name="ShowProgress">Whether or not to show what files are being copied</param>
-    Private Sub CopyDirectory(ByVal Source As String, ByVal Destination As String, ByVal ShowProgress As Boolean)
+    Private Sub CopyDirectory(Source As String, Destination As String, ShowProgress As Boolean)
         If Not Directory.Exists(Source) Then Throw New IOException(DoTranslation("Directory {0} not found.").FormatString(Source))
 
         'Get all source directories and files
@@ -408,7 +408,7 @@ Public Module Filesystem
     ''' <param name="Enable">To enable or to disable</param>
     ''' <returns>True if successful; False if unsuccessful</returns>
     ''' <exception cref="IOException"></exception>
-    Public Function SetSizeParseMode(ByVal Enable As Boolean) As Boolean
+    Public Function SetSizeParseMode(Enable As Boolean) As Boolean
         Try
             FullParseMode = Enable
             ConfigToken("Misc")("Size parse mode") = FullParseMode
@@ -427,7 +427,7 @@ Public Module Filesystem
     ''' <param name="NewDirectory">New directory</param>
     ''' <returns>True if successful; False if unsuccessful</returns>
     ''' <exception cref="IOException"></exception>
-    Public Function MakeDirectory(ByVal NewDirectory As String) As Boolean
+    Public Function MakeDirectory(NewDirectory As String) As Boolean
 #If NTFSCorruptionFix Then
         ThrowOnInvalidPath(NewDirectory)
 #End If
@@ -451,7 +451,7 @@ Public Module Filesystem
     ''' <param name="NewFile">New file</param>
     ''' <returns>True if successful; False if unsuccessful</returns>
     ''' <exception cref="IOException"></exception>
-    Public Function MakeFile(ByVal NewFile As String) As Boolean
+    Public Function MakeFile(NewFile As String) As Boolean
 #If NTFSCorruptionFix Then
         ThrowOnInvalidPath(NewFile)
 #End If
@@ -484,7 +484,7 @@ Public Module Filesystem
     ''' <param name="Destination">Target file or directory</param>
     ''' <returns>True if successful; False if unsuccessful</returns>
     ''' <exception cref="IOException"></exception>
-    Public Function MoveFileOrDir(ByVal Source As String, ByVal Destination As String) As Boolean
+    Public Function MoveFileOrDir(Source As String, Destination As String) As Boolean
         Try
 #If NTFSCorruptionFix Then
             ThrowOnInvalidPath(Source)
@@ -534,7 +534,7 @@ Public Module Filesystem
     ''' </summary>
     ''' <param name="Target">Target directory</param>
     ''' <returns>True if successful; False if unsuccessful</returns>
-    Public Function RemoveDirectory(ByVal Target As String) As Boolean
+    Public Function RemoveDirectory(Target As String) As Boolean
         Try
 #If NTFSCorruptionFix Then
             ThrowOnInvalidPath(Target)
@@ -557,7 +557,7 @@ Public Module Filesystem
     ''' </summary>
     ''' <param name="Target">Target directory</param>
     ''' <returns>True if successful; False if unsuccessful</returns>
-    Public Function RemoveFile(ByVal Target As String) As Boolean
+    Public Function RemoveFile(Target As String) As Boolean
         Try
 #If NTFSCorruptionFix Then
             ThrowOnInvalidPath(Target)
@@ -582,7 +582,7 @@ Public Module Filesystem
     ''' <param name="StringLookup">String to find</param>
     ''' <returns>The list if successful; null if unsuccessful</returns>
     ''' <exception cref="IOException"></exception>
-    Public Function SearchFileForString(ByVal FilePath As String, ByVal StringLookup As String) As List(Of String)
+    Public Function SearchFileForString(FilePath As String, StringLookup As String) As List(Of String)
         Try
 #If NTFSCorruptionFix Then
             ThrowOnInvalidPath(FilePath)
@@ -614,7 +614,7 @@ Public Module Filesystem
     ''' <param name="StringLookup">String to find</param>
     ''' <returns>The list if successful; null if unsuccessful</returns>
     ''' <exception cref="IOException"></exception>
-    Public Function SearchFileForStringRegexp(ByVal FilePath As String, ByVal StringLookup As Regex) As List(Of String)
+    Public Function SearchFileForStringRegexp(FilePath As String, StringLookup As Regex) As List(Of String)
         Try
 #If NTFSCorruptionFix Then
             ThrowOnInvalidPath(FilePath)
@@ -646,7 +646,7 @@ Public Module Filesystem
     ''' <param name="attributesToRemove">Attributes to remove</param>
     ''' <returns>Attributes without target attribute</returns>
     <Extension>
-    Public Function RemoveAttribute(ByVal attributes As FileAttributes, ByVal attributesToRemove As FileAttributes) As FileAttributes
+    Public Function RemoveAttribute(attributes As FileAttributes, attributesToRemove As FileAttributes) As FileAttributes
         Return attributes And (Not attributesToRemove)
     End Function
 
@@ -656,7 +656,7 @@ Public Module Filesystem
     ''' <param name="FilePath">File path</param>
     ''' <param name="Attributes">Attributes</param>
     ''' <returns>True if successful; False if unsuccessful</returns>
-    Public Function AddAttributeToFile(ByVal FilePath As String, ByVal Attributes As FileAttributes) As Boolean
+    Public Function AddAttributeToFile(FilePath As String, Attributes As FileAttributes) As Boolean
         Try
 #If NTFSCorruptionFix Then
             ThrowOnInvalidPath(FilePath)
@@ -681,7 +681,7 @@ Public Module Filesystem
     ''' <param name="FilePath">File path</param>
     ''' <param name="Attributes">Attributes</param>
     ''' <returns>True if successful; False if unsuccessful</returns>
-    Public Function RemoveAttributeFromFile(ByVal FilePath As String, ByVal Attributes As FileAttributes) As Boolean
+    Public Function RemoveAttributeFromFile(FilePath As String, Attributes As FileAttributes) As Boolean
         Try
 #If NTFSCorruptionFix Then
             ThrowOnInvalidPath(FilePath)
@@ -708,7 +708,7 @@ Public Module Filesystem
     ''' </summary>
     ''' <param name="DirectoryInfo">Directory information</param>
     ''' <returns>Directory Size</returns>
-    Public Function GetAllSizesInFolder(ByVal DirectoryInfo As DirectoryInfo) As Long
+    Public Function GetAllSizesInFolder(DirectoryInfo As DirectoryInfo) As Long
         Return GetAllSizesInFolder(DirectoryInfo, FullParseMode)
     End Function
 
@@ -717,7 +717,7 @@ Public Module Filesystem
     ''' </summary>
     ''' <param name="DirectoryInfo">Directory information</param>
     ''' <returns>Directory Size</returns>
-    Public Function GetAllSizesInFolder(ByVal DirectoryInfo As DirectoryInfo, ByVal FullParseMode As Boolean) As Long
+    Public Function GetAllSizesInFolder(DirectoryInfo As DirectoryInfo, FullParseMode As Boolean) As Long
         Dim Files As List(Of FileInfo)
         If FullParseMode Then
             Files = DirectoryInfo.EnumerateFiles("*", SearchOption.AllDirectories).ToList
@@ -742,7 +742,7 @@ Public Module Filesystem
     ''' </summary>
     ''' <param name="path">Path to file</param>
     ''' <returns>Array of lines</returns>
-    Public Function ReadAllLinesNoBlock(ByVal path As String) As String()
+    Public Function ReadAllLinesNoBlock(path As String) As String()
 #If NTFSCorruptionFix Then
         ThrowOnInvalidPath(path)
 #End If
@@ -769,7 +769,7 @@ Public Module Filesystem
     ''' Adds a (non-)neutralized path to lookup
     ''' </summary>
     ''' <returns>True if successful; False if unsuccessful</returns>
-    Public Function AddToPathLookup(ByVal Path As String) As Boolean
+    Public Function AddToPathLookup(Path As String) As Boolean
 #If NTFSCorruptionFix Then
         ThrowOnInvalidPath(Path)
 #End If
@@ -784,7 +784,7 @@ Public Module Filesystem
     ''' Adds a (non-)neutralized path to lookup
     ''' </summary>
     ''' <returns>True if successful; False if unsuccessful</returns>
-    Public Function AddToPathLookup(ByVal Path As String, ByVal RootPath As String) As Boolean
+    Public Function AddToPathLookup(Path As String, RootPath As String) As Boolean
 #If NTFSCorruptionFix Then
         ThrowOnInvalidPath(Path)
         ThrowOnInvalidPath(RootPath)
@@ -800,7 +800,7 @@ Public Module Filesystem
     ''' Removes an existing (non-)neutralized path from lookup
     ''' </summary>
     ''' <returns>True if successful; False if unsuccessful</returns>
-    Public Function RemoveFromPathLookup(ByVal Path As String) As Boolean
+    Public Function RemoveFromPathLookup(Path As String) As Boolean
 #If NTFSCorruptionFix Then
         ThrowOnInvalidPath(Path)
 #End If
@@ -816,7 +816,7 @@ Public Module Filesystem
     ''' Removes an existing (non-)neutralized path from lookup
     ''' </summary>
     ''' <returns>True if successful; False if unsuccessful</returns>
-    Public Function RemoveFromPathLookup(ByVal Path As String, ByVal RootPath As String) As Boolean
+    Public Function RemoveFromPathLookup(Path As String, RootPath As String) As Boolean
 #If NTFSCorruptionFix Then
         ThrowOnInvalidPath(Path)
         ThrowOnInvalidPath(RootPath)
@@ -835,7 +835,7 @@ Public Module Filesystem
     ''' <param name="FilePath">A full path to file or just a file name</param>
     ''' <param name="Result">The neutralized path</param>
     ''' <returns>True if successful; False if unsuccessful</returns>
-    Public Function FileExistsInPath(ByVal FilePath As String, ByRef Result As String) As Boolean
+    Public Function FileExistsInPath(FilePath As String, ByRef Result As String) As Boolean
 #If NTFSCorruptionFix Then
         ThrowOnInvalidPath(FilePath)
 #End If
@@ -873,7 +873,7 @@ Public Module Filesystem
     ''' Mitigates Windows 10 NTFS corruption or Windows 10 BSOD bug
     ''' </summary>
     ''' <param name="Path">Target path</param>
-    Public Sub ThrowOnInvalidPath(ByVal Path As String)
+    Public Sub ThrowOnInvalidPath(Path As String)
         If IsOnWindows() And (Path.Contains("$i30") Or Path.Contains("\\.\globalroot\device\condrv\kernelconnect")) Then
             Wdbg("F", "Trying to access invalid path. Path was {0}", Path)
             Throw New ArgumentException(DoTranslation("Trying to access invalid path."))

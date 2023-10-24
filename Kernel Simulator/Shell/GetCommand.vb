@@ -30,7 +30,7 @@ Public Module GetCommand
     ''' Executes a command
     ''' </summary>
     ''' <param name="requestedCommand">A command. It may contain arguments</param>
-    Public Sub ExecuteCommand(ByVal requestedCommand As String)
+    Public Sub ExecuteCommand(requestedCommand As String)
         'Variables
         Dim Command As String
         Dim RequiredArgumentsProvided As Boolean = True

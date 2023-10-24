@@ -22,7 +22,7 @@ Public Module ListWriterColor
     ''' Outputs the list entries into the terminal prompt. It wraps output depending on the kernel settings.
     ''' </summary>
     ''' <param name="List">A dictionary that will be listed to the terminal prompt.</param>
-    Public Sub WriteList(Of TKey, TValue)(ByVal List As Dictionary(Of TKey, TValue))
+    Public Sub WriteList(Of TKey, TValue)(List As Dictionary(Of TKey, TValue))
         WriteList(List, WrapListOutputs)
     End Sub
 
@@ -31,7 +31,7 @@ Public Module ListWriterColor
     ''' </summary>
     ''' <param name="List">A dictionary that will be listed to the terminal prompt.</param>
     ''' <param name="Wrap">Wraps the output as needed.</param>
-    Public Sub WriteList(Of TKey, TValue)(ByVal List As Dictionary(Of TKey, TValue), ByVal Wrap As Boolean)
+    Public Sub WriteList(Of TKey, TValue)(List As Dictionary(Of TKey, TValue), Wrap As Boolean)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
@@ -77,7 +77,7 @@ Public Module ListWriterColor
     ''' <param name="List">A dictionary that will be listed to the terminal prompt.</param>
     ''' <param name="ListKeyColor">A key color.</param>
     ''' <param name="ListValueColor">A value color.</param>
-    Public Sub WriteList(Of TKey, TValue)(ByVal List As Dictionary(Of TKey, TValue), ByVal ListKeyColor As ConsoleColor, ByVal ListValueColor As ConsoleColor)
+    Public Sub WriteList(Of TKey, TValue)(List As Dictionary(Of TKey, TValue), ListKeyColor As ConsoleColor, ListValueColor As ConsoleColor)
         WriteList(List, ListKeyColor, ListValueColor, WrapListOutputs)
     End Sub
 
@@ -88,7 +88,7 @@ Public Module ListWriterColor
     ''' <param name="ListKeyColor">A key color.</param>
     ''' <param name="ListValueColor">A value color.</param>
     ''' <param name="Wrap">Wraps the output as needed.</param>
-    Public Sub WriteList(Of TKey, TValue)(ByVal List As Dictionary(Of TKey, TValue), ByVal ListKeyColor As ConsoleColor, ByVal ListValueColor As ConsoleColor, ByVal Wrap As Boolean)
+    Public Sub WriteList(Of TKey, TValue)(List As Dictionary(Of TKey, TValue), ListKeyColor As ConsoleColor, ListValueColor As ConsoleColor, Wrap As Boolean)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
@@ -134,7 +134,7 @@ Public Module ListWriterColor
     ''' <param name="List">A dictionary that will be listed to the terminal prompt.</param>
     ''' <param name="ListKeyColor">A key color.</param>
     ''' <param name="ListValueColor">A value color.</param>
-    Public Sub WriteList(Of TKey, TValue)(ByVal List As Dictionary(Of TKey, TValue), ByVal ListKeyColor As Color, ByVal ListValueColor As Color)
+    Public Sub WriteList(Of TKey, TValue)(List As Dictionary(Of TKey, TValue), ListKeyColor As Color, ListValueColor As Color)
         WriteList(List, ListKeyColor, ListValueColor, WrapListOutputs)
     End Sub
 
@@ -145,7 +145,7 @@ Public Module ListWriterColor
     ''' <param name="ListKeyColor">A key color.</param>
     ''' <param name="ListValueColor">A value color.</param>
     ''' <param name="Wrap">Wraps the output as needed.</param>
-    Public Sub WriteList(Of TKey, TValue)(ByVal List As Dictionary(Of TKey, TValue), ByVal ListKeyColor As Color, ByVal ListValueColor As Color, ByVal Wrap As Boolean)
+    Public Sub WriteList(Of TKey, TValue)(List As Dictionary(Of TKey, TValue), ListKeyColor As Color, ListValueColor As Color, Wrap As Boolean)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
@@ -190,7 +190,7 @@ Public Module ListWriterColor
     ''' Outputs the list entries into the terminal prompt. It wraps output depending on the kernel settings.
     ''' </summary>
     ''' <param name="List">A dictionary that will be listed to the terminal prompt.</param>
-    Public Sub WriteList(Of T)(ByVal List As IEnumerable(Of T))
+    Public Sub WriteList(Of T)(List As IEnumerable(Of T))
         WriteList(List, WrapListOutputs)
     End Sub
 
@@ -199,7 +199,7 @@ Public Module ListWriterColor
     ''' </summary>
     ''' <param name="List">A dictionary that will be listed to the terminal prompt.</param>
     ''' <param name="Wrap">Wraps the output as needed.</param>
-    Public Sub WriteList(Of T)(ByVal List As IEnumerable(Of T), ByVal Wrap As Boolean)
+    Public Sub WriteList(Of T)(List As IEnumerable(Of T), Wrap As Boolean)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
@@ -247,7 +247,7 @@ Public Module ListWriterColor
     ''' <param name="List">A dictionary that will be listed to the terminal prompt.</param>
     ''' <param name="ListKeyColor">A key color.</param>
     ''' <param name="ListValueColor">A value color.</param>
-    Public Sub WriteList(Of T)(ByVal List As IEnumerable(Of T), ByVal ListKeyColor As ConsoleColor, ByVal ListValueColor As ConsoleColor)
+    Public Sub WriteList(Of T)(List As IEnumerable(Of T), ListKeyColor As ConsoleColor, ListValueColor As ConsoleColor)
         WriteList(List, ListKeyColor, ListValueColor, WrapListOutputs)
     End Sub
 
@@ -258,7 +258,7 @@ Public Module ListWriterColor
     ''' <param name="ListKeyColor">A key color.</param>
     ''' <param name="ListValueColor">A value color.</param>
     ''' <param name="Wrap">Wraps the output as needed.</param>
-    Public Sub WriteList(Of T)(ByVal List As IEnumerable(Of T), ByVal ListKeyColor As ConsoleColor, ByVal ListValueColor As ConsoleColor, ByVal Wrap As Boolean)
+    Public Sub WriteList(Of T)(List As IEnumerable(Of T), ListKeyColor As ConsoleColor, ListValueColor As ConsoleColor, Wrap As Boolean)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
@@ -306,7 +306,7 @@ Public Module ListWriterColor
     ''' <param name="List">A dictionary that will be listed to the terminal prompt.</param>
     ''' <param name="ListKeyColor">A key color.</param>
     ''' <param name="ListValueColor">A value color.</param>
-    Public Sub WriteList(Of T)(ByVal List As IEnumerable(Of T), ByVal ListKeyColor As Color, ByVal ListValueColor As Color)
+    Public Sub WriteList(Of T)(List As IEnumerable(Of T), ListKeyColor As Color, ListValueColor As Color)
         WriteList(List, ListKeyColor, ListValueColor, WrapListOutputs)
     End Sub
 
@@ -317,7 +317,7 @@ Public Module ListWriterColor
     ''' <param name="ListKeyColor">A key color.</param>
     ''' <param name="ListValueColor">A value color.</param>
     ''' <param name="Wrap">Wraps the output as needed.</param>
-    Public Sub WriteList(Of T)(ByVal List As IEnumerable(Of T), ByVal ListKeyColor As Color, ByVal ListValueColor As Color, ByVal Wrap As Boolean)
+    Public Sub WriteList(Of T)(List As IEnumerable(Of T), ListKeyColor As Color, ListValueColor As Color, Wrap As Boolean)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If

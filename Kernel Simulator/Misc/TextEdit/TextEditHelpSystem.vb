@@ -38,7 +38,7 @@ Public Module TextEditHelpSystem
                                                                        {"clear", DoTranslation("Clears the text file")}}
     End Sub
 
-    Public Sub TextEdit_GetHelp(Optional ByVal Command As String = "")
+    Public Sub TextEdit_GetHelp(Optional Command As String = "")
         If Command = "" Then
             If simHelp = False Then
                 Write(DoTranslation("General commands:"), True, ColTypes.Neutral)

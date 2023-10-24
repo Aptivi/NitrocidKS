@@ -24,7 +24,7 @@ Public Module TextEditGetCommand
     'Variables
     Public TextEdit_CommandThread As New Thread(AddressOf TextEdit_ParseCommand) With {.Name = "Text Edit Command Thread"}
 
-    Sub TextEdit_ParseCommand(ByVal CommandText As String)
+    Sub TextEdit_ParseCommand(CommandText As String)
         Try
             'Indicator if required arguments are provided
             Dim RequiredArgumentsProvided As Boolean = True

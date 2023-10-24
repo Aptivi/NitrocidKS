@@ -25,7 +25,7 @@ Public Module ZipGetCommand
     'Variables
     Public ZipShell_CommandThread As New Thread(AddressOf ZipShell_ParseCommand) With {.Name = "ZIP Shell Command Thread"}
 
-    Sub ZipShell_ParseCommand(ByVal CommandText As String)
+    Sub ZipShell_ParseCommand(CommandText As String)
         Try
             'Indicator if required arguments are provided
             Dim RequiredArgumentsProvided As Boolean = True

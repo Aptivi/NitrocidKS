@@ -50,7 +50,7 @@ Public Module FTPHelpSystem
     ''' Shows the list of commands.
     ''' </summary>
     ''' <param name="command">Specified command</param>
-    Public Sub FTPShowHelp(Optional ByVal command As String = "")
+    Public Sub FTPShowHelp(Optional command As String = "")
 
         If command = "" Then
             If simHelp = False Then

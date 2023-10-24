@@ -74,7 +74,7 @@ Public Module TestHelpSystem
     ''' Shows the list of commands.
     ''' </summary>
     ''' <param name="command">Specified command</param>
-    Public Sub TestShowHelp(Optional ByVal command As String = "")
+    Public Sub TestShowHelp(Optional command As String = "")
 
         If command = "" Then
             If simHelp = False Then

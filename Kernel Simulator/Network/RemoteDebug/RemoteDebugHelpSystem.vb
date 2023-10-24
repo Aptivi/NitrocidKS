@@ -39,7 +39,7 @@ Public Module RemoteDebugHelpSystem
     ''' Shows the help entry for command.
     ''' </summary>
     ''' <param name="command">Specified command</param>
-    Public Sub RDebugShowHelp(ByVal command As String, ByVal DeviceStream As StreamWriter)
+    Public Sub RDebugShowHelp(command As String, DeviceStream As StreamWriter)
 
         If command = "" Then
             DeviceStream.WriteLine(DoTranslation("General commands:"))

@@ -31,7 +31,7 @@ Public Module TimeDate
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
-    Sub TimeDateChange_DoWork(ByVal sender As Object, ByVal e As DoWorkEventArgs) Handles TimeDateChange.DoWork
+    Sub TimeDateChange_DoWork(sender As Object, e As DoWorkEventArgs) Handles TimeDateChange.DoWork
 
         Dim oldWid, oldTop As Integer
         Do While True
@@ -92,7 +92,7 @@ Public Module TimeDate
     ''' </summary>
     ''' <param name="FormatType">Date/time format type</param>
     ''' <returns>A long or short time</returns>
-    Public Function RenderTime(ByVal FormatType As FormatType) As String
+    Public Function RenderTime(FormatType As FormatType) As String
         If FormatType = FormatType.Long Then
             Return KernelDateTime.ToString(CurrentCult.DateTimeFormat.LongTimePattern, CurrentCult)
         Else
@@ -105,7 +105,7 @@ Public Module TimeDate
     ''' </summary>
     ''' <param name="Cult">A culture.</param>
     ''' <returns>A time</returns>
-    Public Function RenderTime(ByVal Cult As CultureInfo) As String
+    Public Function RenderTime(Cult As CultureInfo) As String
         If LongTimeDate Then
             Return KernelDateTime.ToString(Cult.DateTimeFormat.LongTimePattern, Cult)
         Else
@@ -119,7 +119,7 @@ Public Module TimeDate
     ''' <param name="Cult">A culture.</param>
     ''' <param name="FormatType">Date/time format type</param>
     ''' <returns>A time</returns>
-    Public Function RenderTime(ByVal Cult As CultureInfo, ByVal FormatType As FormatType) As String
+    Public Function RenderTime(Cult As CultureInfo, FormatType As FormatType) As String
         If FormatType = FormatType.Long Then
             Return KernelDateTime.ToString(Cult.DateTimeFormat.LongTimePattern, Cult)
         Else
@@ -132,7 +132,7 @@ Public Module TimeDate
     ''' </summary>
     ''' <param name="DT">Specified time</param>
     ''' <returns>A long or short time</returns>
-    Public Function RenderTime(ByVal DT As Date) As String
+    Public Function RenderTime(DT As Date) As String
         If LongTimeDate Then
             Return DT.ToString(CurrentCult.DateTimeFormat.LongTimePattern, CurrentCult)
         Else
@@ -146,7 +146,7 @@ Public Module TimeDate
     ''' <param name="DT">Specified time</param>
     ''' <param name="FormatType">Date/time format type</param>
     ''' <returns>A long or short time</returns>
-    Public Function RenderTime(ByVal DT As Date, ByVal FormatType As FormatType) As String
+    Public Function RenderTime(DT As Date, FormatType As FormatType) As String
         If FormatType = FormatType.Long Then
             Return DT.ToString(CurrentCult.DateTimeFormat.LongTimePattern, CurrentCult)
         Else
@@ -160,7 +160,7 @@ Public Module TimeDate
     ''' <param name="DT">Specified time</param>
     ''' <param name="Cult">A culture</param>
     ''' <returns>A time</returns>
-    Public Function RenderTime(ByVal DT As Date, ByVal Cult As CultureInfo) As String
+    Public Function RenderTime(DT As Date, Cult As CultureInfo) As String
         If LongTimeDate Then
             Return DT.ToString(Cult.DateTimeFormat.LongTimePattern, Cult)
         Else
@@ -175,7 +175,7 @@ Public Module TimeDate
     ''' <param name="Cult">A culture</param>
     ''' <param name="FormatType">Date/time format type</param>
     ''' <returns>A time</returns>
-    Public Function RenderTime(ByVal DT As Date, ByVal Cult As CultureInfo, ByVal FormatType As FormatType) As String
+    Public Function RenderTime(DT As Date, Cult As CultureInfo, FormatType As FormatType) As String
         If FormatType = FormatType.Long Then
             Return DT.ToString(Cult.DateTimeFormat.LongTimePattern, Cult)
         Else
@@ -200,7 +200,7 @@ Public Module TimeDate
     ''' </summary>
     ''' <param name="FormatType">Date/time format type</param>
     ''' <returns>A long or short date</returns>
-    Public Function RenderDate(ByVal FormatType As FormatType) As String
+    Public Function RenderDate(FormatType As FormatType) As String
         If FormatType = FormatType.Long Then
             Return KernelDateTime.ToString(CurrentCult.DateTimeFormat.LongDatePattern, CurrentCult)
         Else
@@ -213,7 +213,7 @@ Public Module TimeDate
     ''' </summary>
     ''' <param name="Cult">A culture.</param>
     ''' <returns>A date</returns>
-    Public Function RenderDate(ByVal Cult As CultureInfo) As String
+    Public Function RenderDate(Cult As CultureInfo) As String
         If LongTimeDate Then
             Return KernelDateTime.ToString(Cult.DateTimeFormat.LongDatePattern, Cult)
         Else
@@ -227,7 +227,7 @@ Public Module TimeDate
     ''' <param name="Cult">A culture.</param>
     ''' <param name="FormatType">Date/time format type</param>
     ''' <returns>A date</returns>
-    Public Function RenderDate(ByVal Cult As CultureInfo, ByVal FormatType As FormatType) As String
+    Public Function RenderDate(Cult As CultureInfo, FormatType As FormatType) As String
         If FormatType = FormatType.Long Then
             Return KernelDateTime.ToString(Cult.DateTimeFormat.LongDatePattern, Cult)
         Else
@@ -240,7 +240,7 @@ Public Module TimeDate
     ''' </summary>
     ''' <param name="DT">Specified date</param>
     ''' <returns>A long or short date</returns>
-    Public Function RenderDate(ByVal DT As Date) As String
+    Public Function RenderDate(DT As Date) As String
         If LongTimeDate Then
             Return DT.ToString(CurrentCult.DateTimeFormat.LongDatePattern, CurrentCult)
         Else
@@ -254,7 +254,7 @@ Public Module TimeDate
     ''' <param name="DT">Specified date</param>
     ''' <param name="FormatType">Date/time format type</param>
     ''' <returns>A long or short date</returns>
-    Public Function RenderDate(ByVal DT As Date, ByVal FormatType As FormatType) As String
+    Public Function RenderDate(DT As Date, FormatType As FormatType) As String
         If FormatType = FormatType.Long Then
             Return DT.ToString(CurrentCult.DateTimeFormat.LongDatePattern, CurrentCult)
         Else
@@ -268,7 +268,7 @@ Public Module TimeDate
     ''' <param name="DT">Specified date</param>
     ''' <param name="Cult">A culture</param>
     ''' <returns>A date</returns>
-    Public Function RenderDate(ByVal DT As Date, ByVal Cult As CultureInfo) As String
+    Public Function RenderDate(DT As Date, Cult As CultureInfo) As String
         If LongTimeDate Then
             Return DT.ToString(Cult.DateTimeFormat.LongDatePattern, Cult)
         Else
@@ -283,7 +283,7 @@ Public Module TimeDate
     ''' <param name="Cult">A culture</param>
     ''' <param name="FormatType">Date/time format type</param>
     ''' <returns>A date</returns>
-    Public Function RenderDate(ByVal DT As Date, ByVal Cult As CultureInfo, ByVal FormatType As FormatType) As String
+    Public Function RenderDate(DT As Date, Cult As CultureInfo, FormatType As FormatType) As String
         If FormatType = FormatType.Long Then
             Return DT.ToString(Cult.DateTimeFormat.LongDatePattern, Cult)
         Else
@@ -308,7 +308,7 @@ Public Module TimeDate
     ''' </summary>
     ''' <param name="FormatType">Date/time format type</param>
     ''' <returns>A long or short time and date</returns>
-    Public Function Render(ByVal FormatType As FormatType) As String
+    Public Function Render(FormatType As FormatType) As String
         If FormatType = FormatType.Long Then
             Return KernelDateTime.ToString(CurrentCult.DateTimeFormat.FullDateTimePattern, CurrentCult)
         Else
@@ -321,7 +321,7 @@ Public Module TimeDate
     ''' </summary>
     ''' <param name="Cult">A culture.</param>
     ''' <returns>A time and date</returns>
-    Public Function Render(ByVal Cult As CultureInfo) As String
+    Public Function Render(Cult As CultureInfo) As String
         If LongTimeDate Then
             Return KernelDateTime.ToString(Cult.DateTimeFormat.FullDateTimePattern, Cult)
         Else
@@ -335,7 +335,7 @@ Public Module TimeDate
     ''' <param name="Cult">A culture.</param>
     ''' <param name="FormatType">Date/time format type</param>
     ''' <returns>A time and date</returns>
-    Public Function Render(ByVal Cult As CultureInfo, ByVal FormatType As FormatType) As String
+    Public Function Render(Cult As CultureInfo, FormatType As FormatType) As String
         If FormatType = FormatType.Long Then
             Return KernelDateTime.ToString(Cult.DateTimeFormat.FullDateTimePattern, Cult)
         Else
@@ -348,7 +348,7 @@ Public Module TimeDate
     ''' </summary>
     ''' <param name="DT">Specified time and date</param>
     ''' <returns>A long or short time and date</returns>
-    Public Function Render(ByVal DT As Date) As String
+    Public Function Render(DT As Date) As String
         If LongTimeDate Then
             Return DT.ToString(CurrentCult.DateTimeFormat.FullDateTimePattern, CurrentCult)
         Else
@@ -362,7 +362,7 @@ Public Module TimeDate
     ''' <param name="DT">Specified time and date</param>
     ''' <param name="FormatType">Date/time format type</param>
     ''' <returns>A long or short time and date</returns>
-    Public Function Render(ByVal DT As Date, ByVal FormatType As FormatType) As String
+    Public Function Render(DT As Date, FormatType As FormatType) As String
         If FormatType = FormatType.Long Then
             Return DT.ToString(CurrentCult.DateTimeFormat.FullDateTimePattern, CurrentCult)
         Else
@@ -376,7 +376,7 @@ Public Module TimeDate
     ''' <param name="DT">Specified time and date</param>
     ''' <param name="Cult">A culture</param>
     ''' <returns>A time and date</returns>
-    Public Function Render(ByVal DT As Date, ByVal Cult As CultureInfo) As String
+    Public Function Render(DT As Date, Cult As CultureInfo) As String
         If LongTimeDate Then
             Return DT.ToString(Cult.DateTimeFormat.FullDateTimePattern, Cult)
         Else
@@ -391,7 +391,7 @@ Public Module TimeDate
     ''' <param name="Cult">A culture</param>
     ''' <param name="FormatType">Date/time format type</param>
     ''' <returns>A time and date</returns>
-    Public Function Render(ByVal DT As Date, ByVal Cult As CultureInfo, ByVal FormatType As FormatType) As String
+    Public Function Render(DT As Date, Cult As CultureInfo, FormatType As FormatType) As String
         If FormatType = FormatType.Long Then
             Return DT.ToString(Cult.DateTimeFormat.FullDateTimePattern, Cult)
         Else

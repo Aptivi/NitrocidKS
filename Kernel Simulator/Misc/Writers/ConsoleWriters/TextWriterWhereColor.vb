@@ -27,7 +27,7 @@ Module TextWriterWhereColor
     ''' <param name="Return">Whether or not to return to old position</param>
     ''' <param name="colorType">A type of colors that will be changed.</param>
     ''' <param name="vars">Endless amounts of any variables that is separated by commas.</param>
-    Public Sub WriteWhere(ByVal msg As String, ByVal Left As Integer, ByVal Top As Integer, ByVal [Return] As Boolean, ByVal colorType As ColTypes, ByVal ParamArray vars() As Object)
+    Public Sub WriteWhere(msg As String, Left As Integer, Top As Integer, [Return] As Boolean, colorType As ColTypes, ParamArray vars() As Object)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
@@ -124,7 +124,7 @@ Module TextWriterWhereColor
     ''' <param name="Return">Whether or not to return to old position</param>
     ''' <param name="color">A color that will be changed to.</param>
     ''' <param name="vars">Endless amounts of any variables that is separated by commas.</param>
-    Public Sub WriteWhereC16(ByVal msg As String, ByVal Left As Integer, ByVal Top As Integer, ByVal [Return] As Boolean, ByVal color As ConsoleColor, ByVal ParamArray vars() As Object)
+    Public Sub WriteWhereC16(msg As String, Left As Integer, Top As Integer, [Return] As Boolean, color As ConsoleColor, ParamArray vars() As Object)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
@@ -183,7 +183,7 @@ Module TextWriterWhereColor
     ''' <param name="ForegroundColor">A foreground color that will be changed to.</param>
     ''' <param name="BackgroundColor">A background color that will be changed to.</param>
     ''' <param name="vars">Endless amounts of any variables that is separated by commas.</param>
-    Public Sub WriteWhereC16(ByVal msg As String, ByVal Left As Integer, ByVal Top As Integer, ByVal [Return] As Boolean, ByVal ForegroundColor As ConsoleColor, ByVal BackgroundColor As ConsoleColor, ByVal ParamArray vars() As Object)
+    Public Sub WriteWhereC16(msg As String, Left As Integer, Top As Integer, [Return] As Boolean, ForegroundColor As ConsoleColor, BackgroundColor As ConsoleColor, ParamArray vars() As Object)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
@@ -241,7 +241,7 @@ Module TextWriterWhereColor
     ''' <param name="Return">Whether or not to return to old position</param>
     ''' <param name="color">A color that will be changed to.</param>
     ''' <param name="vars">Endless amounts of any variables that is separated by commas.</param>
-    Public Sub WriteWhereC(ByVal msg As String, ByVal Left As Integer, ByVal Top As Integer, ByVal [Return] As Boolean, ByVal color As Color, ByVal ParamArray vars() As Object)
+    Public Sub WriteWhereC(msg As String, Left As Integer, Top As Integer, [Return] As Boolean, color As Color, ParamArray vars() As Object)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
@@ -302,7 +302,7 @@ Module TextWriterWhereColor
     ''' <param name="ForegroundColor">A foreground color that will be changed to.</param>
     ''' <param name="BackgroundColor">A background color that will be changed to.</param>
     ''' <param name="vars">Endless amounts of any variables that is separated by commas.</param>
-    Public Sub WriteWhereC(ByVal msg As String, ByVal Left As Integer, ByVal Top As Integer, ByVal [Return] As Boolean, ByVal ForegroundColor As Color, ByVal BackgroundColor As Color, ByVal ParamArray vars() As Object)
+    Public Sub WriteWhereC(msg As String, Left As Integer, Top As Integer, [Return] As Boolean, ForegroundColor As Color, BackgroundColor As Color, ParamArray vars() As Object)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If

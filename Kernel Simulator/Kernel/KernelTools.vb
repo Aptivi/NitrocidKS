@@ -17,9 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports System.IO
-Imports System.Reflection
 Imports System.Threading
-Imports System.Diagnostics.Process
 Imports Newtonsoft.Json.Linq
 
 Public Module KernelTools
@@ -39,7 +37,7 @@ Public Module KernelTools
     ''' <param name="Description">Explanation of what happened when it errored.</param>
     ''' <param name="Exc">An exception to get stack traces, etc. Used for dump files currently.</param>
     ''' <param name="Variables">Optional. Specifies variables to get on text that will be printed.</param>
-    Public Sub KernelError(ByVal ErrorType As Char, ByVal Reboot As Boolean, ByVal RebootTime As Long, ByVal Description As String, ByVal Exc As Exception, ByVal ParamArray Variables() As Object)
+    Public Sub KernelError(ErrorType As Char, Reboot As Boolean, RebootTime As Long, Description As String, Exc As Exception, ParamArray Variables() As Object)
         Try
             'Unquiet
             If EnteredArguments IsNot Nothing Then
@@ -148,7 +146,7 @@ Public Module KernelTools
     ''' <param name="Description">Error description</param>
     ''' <param name="ErrorType">Error type</param>
     ''' <param name="Exc">Exception</param>
-    Sub GeneratePanicDump(ByVal Description As String, ByVal ErrorType As Char, ByVal Exc As Exception)
+    Sub GeneratePanicDump(Description As String, ErrorType As Char, Exc As Exception)
         Try
             'Open a file stream for dump
             Dim Dump As New StreamWriter($"{paths("Home")}/dmp_{RenderDate(FormatType.Short).Replace("/", "-")}_{RenderTime(FormatType.Short).Replace(":", "-")}.txt")
@@ -227,7 +225,7 @@ Public Module KernelTools
     ''' Manage computer's (actually, simulated computer) power
     ''' </summary>
     ''' <param name="PowerMode">Whether it would be "shutdown", "rebootsafe", or "reboot"</param>
-    Public Sub PowerManage(ByVal PowerMode As String)
+    Public Sub PowerManage(PowerMode As String)
         PowerManage(PowerMode, "0.0.0.0", RPCPort)
     End Sub
 
@@ -235,7 +233,7 @@ Public Module KernelTools
     ''' Manage computer's (actually, simulated computer) power
     ''' </summary>
     ''' <param name="PowerMode">Whether it would be "shutdown", "rebootsafe", or "reboot"</param>
-    Public Sub PowerManage(ByVal PowerMode As String, ByVal IP As String)
+    Public Sub PowerManage(PowerMode As String, IP As String)
         PowerManage(PowerMode, IP, RPCPort)
     End Sub
 
@@ -243,7 +241,7 @@ Public Module KernelTools
     ''' Manage computer's (actually, simulated computer) power
     ''' </summary>
     ''' <param name="PowerMode">Whether it would be "shutdown", "rebootsafe", or "reboot"</param>
-    Public Sub PowerManage(ByVal PowerMode As String, ByVal IP As String, ByVal Port As Integer)
+    Public Sub PowerManage(PowerMode As String, IP As String, Port As Integer)
         Wdbg("I", "Power management has the argument of {0}", PowerMode)
         If PowerMode = "shutdown" Then
             EventManager.RaisePreShutdown()

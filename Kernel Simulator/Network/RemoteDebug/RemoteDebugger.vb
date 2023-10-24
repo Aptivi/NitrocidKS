@@ -35,7 +35,7 @@ Public Module RemoteDebugger
     ''' Whether to start or stop the remote debugger
     ''' </summary>
     ''' <param name="DebugEnable">If true, starts the Remote Debugger. If false, stops it.</param>
-    Sub StartRDebugThread(ByVal DebugEnable As Boolean)
+    Sub StartRDebugThread(DebugEnable As Boolean)
         If DebugMode Then
             If DebugEnable Then
                 If Not RDebugThread.IsAlive Then RDebugThread.Start()
@@ -181,7 +181,7 @@ Public Module RemoteDebugger
     ''' <param name="aliascmd">Aliased command with arguments</param>
     ''' <param name="SocketStream">A socket stream writer</param>
     ''' <param name="Address">IP Address</param>
-    Sub ExecuteRDAlias(ByVal aliascmd As String, ByVal SocketStream As IO.StreamWriter, ByVal Address As String)
+    Sub ExecuteRDAlias(aliascmd As String, SocketStream As IO.StreamWriter, Address As String)
         Dim FirstWordCmd As String = aliascmd.Split(" "c)(0)
         Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, RemoteDebugAliases(FirstWordCmd))
         ParseCmd(actualCmd, SocketStream, Address)
@@ -192,7 +192,7 @@ Public Module RemoteDebugger
     ''' </summary>
     ''' <param name="SW">A stream writer</param>
     ''' <returns>An index of it, or -1 if not found.</returns>
-    Function GetSWIndex(ByVal SW As StreamWriter) As Integer
+    Function GetSWIndex(SW As StreamWriter) As Integer
         For i As Integer = 0 To dbgConns.Count - 1
             If SW.Equals(dbgConns.Keys(i)) Then
                 Return i
