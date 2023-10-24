@@ -99,13 +99,13 @@
       <Version>2022.4.1.2</Version>
     </PackageReference>
     <PackageReference Include="FluentFTP">
-      <Version>47.1.0</Version>
+      <Version>48.0.1</Version>
     </PackageReference>
     <PackageReference Include="MadMilkman.Ini" Condition="'$(TargetFramework)' == 'net48'">
       <Version>1.0.6</Version>
     </PackageReference>
     <PackageReference Include="ManagedWeatherMap">
-      <Version>1.2.0</Version>
+      <Version>1.2.1</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
