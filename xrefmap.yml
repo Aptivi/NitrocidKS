@@ -29,21 +29,34 @@ references:
   isSpec: "True"
   fullName: KS.Arguments.ArgumentExecutor.Execute
   nameWithType: ArgumentExecutor.Execute
+- uid: KS.Arguments.ArgumentExecutor.HelpHelper
+  name: HelpHelper()
+  href: api/KS.Arguments.ArgumentExecutor.html#KS_Arguments_ArgumentExecutor_HelpHelper
+  commentId: M:KS.Arguments.ArgumentExecutor.HelpHelper
+  fullName: KS.Arguments.ArgumentExecutor.HelpHelper()
+  nameWithType: ArgumentExecutor.HelpHelper()
+- uid: KS.Arguments.ArgumentExecutor.HelpHelper*
+  name: HelpHelper
+  href: api/KS.Arguments.ArgumentExecutor.html#KS_Arguments_ArgumentExecutor_HelpHelper_
+  commentId: Overload:KS.Arguments.ArgumentExecutor.HelpHelper
+  isSpec: "True"
+  fullName: KS.Arguments.ArgumentExecutor.HelpHelper
+  nameWithType: ArgumentExecutor.HelpHelper
 - uid: KS.Arguments.ArgumentInfo
   name: ArgumentInfo
   href: api/KS.Arguments.ArgumentInfo.html
   commentId: T:KS.Arguments.ArgumentInfo
   fullName: KS.Arguments.ArgumentInfo
   nameWithType: ArgumentInfo
-- uid: KS.Arguments.ArgumentInfo.#ctor(System.String,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Arguments.ArgumentExecutor,System.Boolean,System.Action)
-  name: ArgumentInfo(string, string, CommandArgumentInfo[], ArgumentExecutor, bool, Action)
-  href: api/KS.Arguments.ArgumentInfo.html#KS_Arguments_ArgumentInfo__ctor_System_String_System_String_KS_Shell_ShellBase_Arguments_CommandArgumentInfo___KS_Arguments_ArgumentExecutor_System_Boolean_System_Action_
-  commentId: M:KS.Arguments.ArgumentInfo.#ctor(System.String,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Arguments.ArgumentExecutor,System.Boolean,System.Action)
-  name.vb: New(String, String, CommandArgumentInfo(), ArgumentExecutor, Boolean, Action)
-  fullName: KS.Arguments.ArgumentInfo.ArgumentInfo(string, string, KS.Shell.ShellBase.Arguments.CommandArgumentInfo[], KS.Arguments.ArgumentExecutor, bool, System.Action)
-  fullName.vb: KS.Arguments.ArgumentInfo.New(String, String, KS.Shell.ShellBase.Arguments.CommandArgumentInfo(), KS.Arguments.ArgumentExecutor, Boolean, System.Action)
-  nameWithType: ArgumentInfo.ArgumentInfo(string, string, CommandArgumentInfo[], ArgumentExecutor, bool, Action)
-  nameWithType.vb: ArgumentInfo.New(String, String, CommandArgumentInfo(), ArgumentExecutor, Boolean, Action)
+- uid: KS.Arguments.ArgumentInfo.#ctor(System.String,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Arguments.ArgumentExecutor,System.Boolean)
+  name: ArgumentInfo(string, string, CommandArgumentInfo[], ArgumentExecutor, bool)
+  href: api/KS.Arguments.ArgumentInfo.html#KS_Arguments_ArgumentInfo__ctor_System_String_System_String_KS_Shell_ShellBase_Arguments_CommandArgumentInfo___KS_Arguments_ArgumentExecutor_System_Boolean_
+  commentId: M:KS.Arguments.ArgumentInfo.#ctor(System.String,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Arguments.ArgumentExecutor,System.Boolean)
+  name.vb: New(String, String, CommandArgumentInfo(), ArgumentExecutor, Boolean)
+  fullName: KS.Arguments.ArgumentInfo.ArgumentInfo(string, string, KS.Shell.ShellBase.Arguments.CommandArgumentInfo[], KS.Arguments.ArgumentExecutor, bool)
+  fullName.vb: KS.Arguments.ArgumentInfo.New(String, String, KS.Shell.ShellBase.Arguments.CommandArgumentInfo(), KS.Arguments.ArgumentExecutor, Boolean)
+  nameWithType: ArgumentInfo.ArgumentInfo(string, string, CommandArgumentInfo[], ArgumentExecutor, bool)
+  nameWithType.vb: ArgumentInfo.New(String, String, CommandArgumentInfo(), ArgumentExecutor, Boolean)
 - uid: KS.Arguments.ArgumentInfo.#ctor*
   name: ArgumentInfo
   href: api/KS.Arguments.ArgumentInfo.html#KS_Arguments_ArgumentInfo__ctor_
@@ -54,19 +67,6 @@ references:
   fullName.vb: KS.Arguments.ArgumentInfo.New
   nameWithType: ArgumentInfo.ArgumentInfo
   nameWithType.vb: ArgumentInfo.New
-- uid: KS.Arguments.ArgumentInfo.AdditionalHelpAction
-  name: AdditionalHelpAction
-  href: api/KS.Arguments.ArgumentInfo.html#KS_Arguments_ArgumentInfo_AdditionalHelpAction
-  commentId: P:KS.Arguments.ArgumentInfo.AdditionalHelpAction
-  fullName: KS.Arguments.ArgumentInfo.AdditionalHelpAction
-  nameWithType: ArgumentInfo.AdditionalHelpAction
-- uid: KS.Arguments.ArgumentInfo.AdditionalHelpAction*
-  name: AdditionalHelpAction
-  href: api/KS.Arguments.ArgumentInfo.html#KS_Arguments_ArgumentInfo_AdditionalHelpAction_
-  commentId: Overload:KS.Arguments.ArgumentInfo.AdditionalHelpAction
-  isSpec: "True"
-  fullName: KS.Arguments.ArgumentInfo.AdditionalHelpAction
-  nameWithType: ArgumentInfo.AdditionalHelpAction
 - uid: KS.Arguments.ArgumentInfo.ArgArgumentInfo
   name: ArgArgumentInfo
   href: api/KS.Arguments.ArgumentInfo.html#KS_Arguments_ArgumentInfo_ArgArgumentInfo
@@ -245,6 +245,19 @@ references:
   isSpec: "True"
   fullName: KS.Arguments.IArgument.Execute
   nameWithType: IArgument.Execute
+- uid: KS.Arguments.IArgument.HelpHelper
+  name: HelpHelper()
+  href: api/KS.Arguments.IArgument.html#KS_Arguments_IArgument_HelpHelper
+  commentId: M:KS.Arguments.IArgument.HelpHelper
+  fullName: KS.Arguments.IArgument.HelpHelper()
+  nameWithType: IArgument.HelpHelper()
+- uid: KS.Arguments.IArgument.HelpHelper*
+  name: HelpHelper
+  href: api/KS.Arguments.IArgument.html#KS_Arguments_IArgument_HelpHelper_
+  commentId: Overload:KS.Arguments.IArgument.HelpHelper
+  isSpec: "True"
+  fullName: KS.Arguments.IArgument.HelpHelper
+  nameWithType: IArgument.HelpHelper
 - uid: KS.ConsoleBase
   name: KS.ConsoleBase
   href: api/KS.ConsoleBase.html
