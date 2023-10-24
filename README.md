@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/15963131/154856234-bcbdfbb2-7c37-4e65-a6bf-43fbb8fbb949.png)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/EoflaOE/Kernel-Simulator?color=purple&label=size) [![GitHub All Releases](https://img.shields.io/github/downloads/EoflaOE/Kernel-Simulator/total?color=purple&label=d/l)](https://github.com/EoflaOE/Kernel-Simulator/releases) [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/EoflaOE/Kernel-Simulator?color=purple&include_prereleases&label=github)](https://github.com/EoflaOE/Kernel-Simulator/releases/latest) [![Chocolatey Version (including pre-releases)](https://img.shields.io/chocolatey/v/ks?color=purple&include_prereleases)](https://chocolatey.org/packages/KS/) [![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/KS?color=purple)](https://www.nuget.org/packages/KS/)
+![GitHub repo size](https://img.shields.io/github/repo-size/Aptivi/NitrocidKS?color=purple&label=size) [![GitHub All Releases](https://img.shields.io/github/downloads/Aptivi/NitrocidKS/total?color=purple&label=d/l)](https://github.com/Aptivi/NitrocidKS/releases) [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Aptivi/NitrocidKS?color=purple&include_prereleases&label=github)](https://github.com/Aptivi/NitrocidKS/releases/latest) [![Chocolatey Version (including pre-releases)](https://img.shields.io/chocolatey/v/ks?color=purple&include_prereleases)](https://chocolatey.org/packages/KS/) [![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/KS?color=purple)](https://www.nuget.org/packages/KS/)
 
 Kernel Simulator simulates the future of our planned kernel that's coming as soon as it's finished. It consists of the kernel, the built-in shell known as UESH, and the built-in applications.
 
@@ -56,7 +56,7 @@ This section covers how to install Kernel Simulator on your system. Please scrol
 
 #### Alternative method
 
-1. Download the Kernel Simulator binary files [here](https://github.com/EoflaOE/Kernel-Simulator/releases).
+1. Download the Kernel Simulator binary files [here](https://github.com/Aptivi/NitrocidKS/releases).
 2. Unzip the file to any directory
 3. Run it by double-clicking `Kernel Simulator.exe`
 
@@ -71,7 +71,7 @@ This section covers how to install Kernel Simulator on your system. Please scrol
 
 #### Alternative method
 
-1. Download the Kernel Simulator binary files [here](https://github.com/EoflaOE/Kernel-Simulator/releases).
+1. Download the Kernel Simulator binary files [here](https://github.com/Aptivi/NitrocidKS/releases).
 2. Unzip the file to any directory
 3. Install the following programs:
    - Microsoft.VisualBasic.dll 10.0 (Debian and its derivatives: `sudo apt install libmono-microsoft-visualbasic10.0-cil`)
@@ -84,7 +84,7 @@ This section covers how to install Kernel Simulator on your system. Please scrol
 
 #### Recommended method
 
-1. Download the Kernel Simulator binary files [here](https://github.com/EoflaOE/Kernel-Simulator/releases).
+1. Download the Kernel Simulator binary files [here](https://github.com/Aptivi/NitrocidKS/releases).
 2. Unzip the file to any directory
 3. Install the following programs:
    - [Mono Runtime](https://www.mono-project.com/download/stable/#download-mac)
@@ -99,7 +99,7 @@ This section covers how to build Kernel Simulator on your system. Please scroll 
 
 1. Open Visual Studio
 2. Press `Clone a repository`
-3. In Repository Location, enter `https://github.com/EoflaOE/Kernel-Simulator.git`
+3. In Repository Location, enter `https://github.com/Aptivi/NitrocidKS.git`
 4. Wait until it clones. It might take a few minutes depending on your Internet connection.
 5. Press `Solution Explorer`, then press `Switch Views`
 6. Click on `Kernel Simulator.sln`
@@ -112,7 +112,7 @@ This section covers how to build Kernel Simulator on your system. Please scroll 
 2. Install JetBrains Rider.
 3. After installation, open JetBrains Rider, and follow the configuration steps.
 4. When the main menu opens, choose `Check out from Version Control` and then `Git`.
-5. Write on the URL `https://github.com/EoflaOE/Kernel-Simulator.git` and press `Test` to verify your connectivity.
+5. Write on the URL `https://github.com/Aptivi/NitrocidKS.git` and press `Test` to verify your connectivity.
 6. Press Clone, and git will download the repo, then Rider will open up. It might take a few minutes depending on your Internet connection.
 7. You will get some errors about the inability to resolve `My.Computer`. Ignore these, as they won't interrupt the compilation.
 8. Click on the hammer button to build, the bug button (breakpoints enabled), or the Run button (breakpoints disabled - CTRL+F5 on VS). When the Edit configuration screen appears, tick the checkbox named `Use External Console`.

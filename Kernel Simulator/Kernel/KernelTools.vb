@@ -449,7 +449,7 @@ Namespace Kernel
                 UpdateDown.Headers.Add(HttpRequestHeader.UserAgent, "EoflaOE")
 
                 'Populate the following variables with information
-                Dim UpdateStr As String = UpdateDown.DownloadString("https://api.github.com/repos/EoflaOE/Kernel-Simulator/releases")
+                Dim UpdateStr As String = UpdateDown.DownloadString("https://api.github.com/repos/Aptivi/NitrocidKS/releases")
                 Dim UpdateToken As JToken = JToken.Parse(UpdateStr)
                 Dim UpdateInstance As New KernelUpdate(UpdateToken)
 

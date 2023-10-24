@@ -87,7 +87,7 @@ Namespace Misc
             End While
 
             'Finally, pass these answers to a URL
-            Dim TargetURL As String = "https://github.com/EoflaOE/Kernel-Simulator/issues/new?assignees=&labels="
+            Dim TargetURL As String = "https://github.com/Aptivi/NitrocidKS/issues/new?assignees=&labels="
             Select Case AnswerKind
                 Case 1 'A problem
                     TargetURL += $"&template=report-an-issue.md&title=%5BBUG%5D+{AnswerFeature}+-+{AnswerRequest}"

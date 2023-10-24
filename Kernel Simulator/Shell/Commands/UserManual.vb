@@ -26,7 +26,7 @@ Namespace Shell.Commands
             If ModDocumentation Then
                 Process.Start("https://eoflaoe.github.io/Kernel-Simulator")
             Else
-                Process.Start("https://github.com/EoflaOE/Kernel-Simulator/wiki")
+                Process.Start("https://github.com/Aptivi/NitrocidKS/wiki")
             End If
         End Sub
 
