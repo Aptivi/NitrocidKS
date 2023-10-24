@@ -41532,6 +41532,31 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcess
   nameWithType: ProcessExecutor.ExecuteProcess
+- uid: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessForked(System.String,System.String)
+  name: ExecuteProcessForked(string, string)
+  href: api/KS.Shell.ShellBase.Commands.ProcessExecutor.html#KS_Shell_ShellBase_Commands_ProcessExecutor_ExecuteProcessForked_System_String_System_String_
+  commentId: M:KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessForked(System.String,System.String)
+  name.vb: ExecuteProcessForked(String, String)
+  fullName: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessForked(string, string)
+  fullName.vb: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessForked(String, String)
+  nameWithType: ProcessExecutor.ExecuteProcessForked(string, string)
+  nameWithType.vb: ProcessExecutor.ExecuteProcessForked(String, String)
+- uid: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessForked(System.String,System.String,System.String)
+  name: ExecuteProcessForked(string, string, string)
+  href: api/KS.Shell.ShellBase.Commands.ProcessExecutor.html#KS_Shell_ShellBase_Commands_ProcessExecutor_ExecuteProcessForked_System_String_System_String_System_String_
+  commentId: M:KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessForked(System.String,System.String,System.String)
+  name.vb: ExecuteProcessForked(String, String, String)
+  fullName: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessForked(string, string, string)
+  fullName.vb: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessForked(String, String, String)
+  nameWithType: ProcessExecutor.ExecuteProcessForked(string, string, string)
+  nameWithType.vb: ProcessExecutor.ExecuteProcessForked(String, String, String)
+- uid: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessForked*
+  name: ExecuteProcessForked
+  href: api/KS.Shell.ShellBase.Commands.ProcessExecutor.html#KS_Shell_ShellBase_Commands_ProcessExecutor_ExecuteProcessForked_
+  commentId: Overload:KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessForked
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessForked
+  nameWithType: ProcessExecutor.ExecuteProcessForked
 - uid: KS.Shell.ShellBase.Commands.ProcessExecutor.ExecuteProcessToString(System.String,System.String,System.Int32@,System.Boolean)
   name: ExecuteProcessToString(string, string, ref int, bool)
   href: api/KS.Shell.ShellBase.Commands.ProcessExecutor.html#KS_Shell_ShellBase_Commands_ProcessExecutor_ExecuteProcessToString_System_String_System_String_System_Int32__System_Boolean_
