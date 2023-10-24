@@ -18903,6 +18903,15 @@ references:
   commentId: T:KS.Files.Extensions.ExtensionHandlerTools
   fullName: KS.Files.Extensions.ExtensionHandlerTools
   nameWithType: ExtensionHandlerTools
+- uid: KS.Files.Extensions.ExtensionHandlerTools.GetExtensionHandler(System.String)
+  name: GetExtensionHandler(string)
+  href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_GetExtensionHandler_System_String_
+  commentId: M:KS.Files.Extensions.ExtensionHandlerTools.GetExtensionHandler(System.String)
+  name.vb: GetExtensionHandler(String)
+  fullName: KS.Files.Extensions.ExtensionHandlerTools.GetExtensionHandler(string)
+  fullName.vb: KS.Files.Extensions.ExtensionHandlerTools.GetExtensionHandler(String)
+  nameWithType: ExtensionHandlerTools.GetExtensionHandler(string)
+  nameWithType.vb: ExtensionHandlerTools.GetExtensionHandler(String)
 - uid: KS.Files.Extensions.ExtensionHandlerTools.GetExtensionHandler(System.String,System.String)
   name: GetExtensionHandler(string, string)
   href: api/KS.Files.Extensions.ExtensionHandlerTools.html#KS_Files_Extensions_ExtensionHandlerTools_GetExtensionHandler_System_String_System_String_
@@ -19832,6 +19841,12 @@ references:
   commentId: F:KS.Files.KernelPathType.Events
   fullName: KS.Files.KernelPathType.Events
   nameWithType: KernelPathType.Events
+- uid: KS.Files.KernelPathType.ExtensionHandlers
+  name: ExtensionHandlers
+  href: api/KS.Files.KernelPathType.html#KS_Files_KernelPathType_ExtensionHandlers
+  commentId: F:KS.Files.KernelPathType.ExtensionHandlers
+  fullName: KS.Files.KernelPathType.ExtensionHandlers
+  nameWithType: KernelPathType.ExtensionHandlers
 - uid: KS.Files.KernelPathType.Journaling
   name: Journaling
   href: api/KS.Files.KernelPathType.html#KS_Files_KernelPathType_Journaling
@@ -21481,6 +21496,19 @@ references:
   isSpec: "True"
   fullName: KS.Files.Paths.ExecPath
   nameWithType: Paths.ExecPath
+- uid: KS.Files.Paths.ExtensionHandlersPath
+  name: ExtensionHandlersPath
+  href: api/KS.Files.Paths.html#KS_Files_Paths_ExtensionHandlersPath
+  commentId: P:KS.Files.Paths.ExtensionHandlersPath
+  fullName: KS.Files.Paths.ExtensionHandlersPath
+  nameWithType: Paths.ExtensionHandlersPath
+- uid: KS.Files.Paths.ExtensionHandlersPath*
+  name: ExtensionHandlersPath
+  href: api/KS.Files.Paths.html#KS_Files_Paths_ExtensionHandlersPath_
+  commentId: Overload:KS.Files.Paths.ExtensionHandlersPath
+  isSpec: "True"
+  fullName: KS.Files.Paths.ExtensionHandlersPath
+  nameWithType: Paths.ExtensionHandlersPath
 - uid: KS.Files.Paths.GetKernelPath(KS.Files.KernelPathType)
   name: GetKernelPath(KernelPathType)
   href: api/KS.Files.Paths.html#KS_Files_Paths_GetKernelPath_KS_Files_KernelPathType_
