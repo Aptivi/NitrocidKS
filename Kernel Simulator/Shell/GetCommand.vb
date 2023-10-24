@@ -493,7 +493,6 @@ Public Module GetCommand
                     End If
 
                 Case "get"
-#Disable Warning BC42104
                     If RequiredArgumentsProvided Then
                         Dim RetryCount As Integer = 1
                         Dim URL As String = eqargs(0)
@@ -502,7 +501,7 @@ Public Module GetCommand
                             Try
                                 If Not (URL.StartsWith("ftp://") Or URL.StartsWith("ftps://") Or URL.StartsWith("ftpes://")) Then
                                     If Not URL.StartsWith(" ") Then
-                                        Dim Credentials As NetworkCredential
+                                        Dim Credentials As NetworkCredential = Nothing
                                         If eqargs.Count > 1 Then 'Username specified
                                             Credentials = New NetworkCredential With {
                                                 .UserName = eqargs(1)
@@ -531,7 +530,6 @@ Public Module GetCommand
                             End Try
                         End While
                     End If
-#Enable Warning BC42104
                 Case "hwinfo"
 
                     If RequiredArgumentsProvided Then
@@ -684,7 +682,6 @@ Public Module GetCommand
                     End If
 
                 Case "put"
-#Disable Warning BC42104
                     If RequiredArgumentsProvided Then
                         Dim RetryCount As Integer = 1
                         Dim FileName As String = NeutralizePath(eqargs(0))
@@ -694,7 +691,7 @@ Public Module GetCommand
                             Try
                                 If Not (URL.StartsWith("ftp://") Or URL.StartsWith("ftps://") Or URL.StartsWith("ftpes://")) Then
                                     If Not URL.StartsWith(" ") Then
-                                        Dim Credentials As NetworkCredential
+                                        Dim Credentials As NetworkCredential = Nothing
                                         If eqargs.Count > 2 Then 'Username specified
                                             Credentials = New NetworkCredential With {
                                                 .UserName = eqargs(2)
@@ -723,7 +720,6 @@ Public Module GetCommand
                             End Try
                         End While
                     End If
-#Enable Warning BC42104
                 Case "reloadconfig"
 
                     'Reload configuration
