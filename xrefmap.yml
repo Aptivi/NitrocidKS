@@ -14369,6 +14369,31 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.TryParsePath
   nameWithType: BaseFilesystemDriver.TryParsePath
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WrapTextFile(System.String)
+  name: WrapTextFile(string)
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WrapTextFile_System_String_
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.WrapTextFile(System.String)
+  name.vb: WrapTextFile(String)
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WrapTextFile(string)
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.WrapTextFile(String)
+  nameWithType: BaseFilesystemDriver.WrapTextFile(string)
+  nameWithType.vb: BaseFilesystemDriver.WrapTextFile(String)
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WrapTextFile(System.String,System.Int32)
+  name: WrapTextFile(string, int)
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WrapTextFile_System_String_System_Int32_
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.WrapTextFile(System.String,System.Int32)
+  name.vb: WrapTextFile(String, Integer)
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WrapTextFile(string, int)
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.WrapTextFile(String, Integer)
+  nameWithType: BaseFilesystemDriver.WrapTextFile(string, int)
+  nameWithType.vb: BaseFilesystemDriver.WrapTextFile(String, Integer)
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WrapTextFile*
+  name: WrapTextFile
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WrapTextFile_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.WrapTextFile
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WrapTextFile
+  nameWithType: BaseFilesystemDriver.WrapTextFile
 - uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytes(System.String,System.Byte[])
   name: WriteAllBytes(string, byte[])
   href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WriteAllBytes_System_String_System_Byte___
@@ -15497,6 +15522,31 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.IFilesystemDriver.TryParsePath
   nameWithType: IFilesystemDriver.TryParsePath
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.WrapTextFile(System.String)
+  name: WrapTextFile(string)
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WrapTextFile_System_String_
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.WrapTextFile(System.String)
+  name.vb: WrapTextFile(String)
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.WrapTextFile(string)
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.WrapTextFile(String)
+  nameWithType: IFilesystemDriver.WrapTextFile(string)
+  nameWithType.vb: IFilesystemDriver.WrapTextFile(String)
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.WrapTextFile(System.String,System.Int32)
+  name: WrapTextFile(string, int)
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WrapTextFile_System_String_System_Int32_
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.WrapTextFile(System.String,System.Int32)
+  name.vb: WrapTextFile(String, Integer)
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.WrapTextFile(string, int)
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.WrapTextFile(String, Integer)
+  nameWithType: IFilesystemDriver.WrapTextFile(string, int)
+  nameWithType.vb: IFilesystemDriver.WrapTextFile(String, Integer)
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.WrapTextFile*
+  name: WrapTextFile
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WrapTextFile_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.WrapTextFile
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.WrapTextFile
+  nameWithType: IFilesystemDriver.WrapTextFile
 - uid: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytes(System.String,System.Byte[])
   name: WriteAllBytes(string, byte[])
   href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WriteAllBytes_System_String_System_Byte___
@@ -20085,6 +20135,31 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Manipulation.ClearFile
   nameWithType: Manipulation.ClearFile
+- uid: KS.Files.Operations.Manipulation.WrapTextFile(System.String)
+  name: WrapTextFile(string)
+  href: api/KS.Files.Operations.Manipulation.html#KS_Files_Operations_Manipulation_WrapTextFile_System_String_
+  commentId: M:KS.Files.Operations.Manipulation.WrapTextFile(System.String)
+  name.vb: WrapTextFile(String)
+  fullName: KS.Files.Operations.Manipulation.WrapTextFile(string)
+  fullName.vb: KS.Files.Operations.Manipulation.WrapTextFile(String)
+  nameWithType: Manipulation.WrapTextFile(string)
+  nameWithType.vb: Manipulation.WrapTextFile(String)
+- uid: KS.Files.Operations.Manipulation.WrapTextFile(System.String,System.Int32)
+  name: WrapTextFile(string, int)
+  href: api/KS.Files.Operations.Manipulation.html#KS_Files_Operations_Manipulation_WrapTextFile_System_String_System_Int32_
+  commentId: M:KS.Files.Operations.Manipulation.WrapTextFile(System.String,System.Int32)
+  name.vb: WrapTextFile(String, Integer)
+  fullName: KS.Files.Operations.Manipulation.WrapTextFile(string, int)
+  fullName.vb: KS.Files.Operations.Manipulation.WrapTextFile(String, Integer)
+  nameWithType: Manipulation.WrapTextFile(string, int)
+  nameWithType.vb: Manipulation.WrapTextFile(String, Integer)
+- uid: KS.Files.Operations.Manipulation.WrapTextFile*
+  name: WrapTextFile
+  href: api/KS.Files.Operations.Manipulation.html#KS_Files_Operations_Manipulation_WrapTextFile_
+  commentId: Overload:KS.Files.Operations.Manipulation.WrapTextFile
+  isSpec: "True"
+  fullName: KS.Files.Operations.Manipulation.WrapTextFile
+  nameWithType: Manipulation.WrapTextFile
 - uid: KS.Files.Operations.Moving
   name: Moving
   href: api/KS.Files.Operations.Moving.html
