@@ -473,7 +473,7 @@ Public Module KernelTools
             Dim UpdateSpecifier As New List(Of String)
             Dim UpdateDown As New WebClient
             UpdateDown.Headers.Add(HttpRequestHeader.UserAgent, "EoflaOE") 'Because api.github.com requires the UserAgent header to be put, else, 403 error occurs.
-            Dim UpdateStr As String = UpdateDown.DownloadString("https://api.github.com/repos/EoflaOE/Kernel-Simulator/releases")
+            Dim UpdateStr As String = UpdateDown.DownloadString("https://api.github.com/repos/Aptivi/NitrocidKS/releases")
             Dim UpdateToken As JToken = JToken.Parse(UpdateStr)
             Dim UpdateVer As New Version(UpdateToken.First.SelectToken("tag_name").ToString.ReplaceAll({"v", "-alpha", "-beta"}, ""))
             Dim UpdateURL As String = UpdateToken.First.SelectToken("html_url")

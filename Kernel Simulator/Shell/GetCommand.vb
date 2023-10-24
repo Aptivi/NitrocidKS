@@ -1200,7 +1200,7 @@ Public Module GetCommand
 
                 Case "usermanual"
 
-                    Process.Start("https://github.com/EoflaOE/Kernel-Simulator/wiki")
+                    Process.Start("https://github.com/Aptivi/NitrocidKS/wiki")
 
                 Case "verify"
 

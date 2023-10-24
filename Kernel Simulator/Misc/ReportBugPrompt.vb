@@ -81,7 +81,7 @@ Module ReportBugPrompt
         End While
 
         'Finally, pass these answers to a URL
-        Dim TargetURL As String = "https://github.com/EoflaOE/Kernel-Simulator/issues/new?assignees=&labels=&template=ask-a-question.md"
+        Dim TargetURL As String = "https://github.com/Aptivi/NitrocidKS/issues/new?assignees=&labels=&template=ask-a-question.md"
         Select Case AnswerKind
             Case 1 'A problem
                 TargetURL += $"&title=%5BBUG%5D+{AnswerFeature}+-+{AnswerRequest}"
