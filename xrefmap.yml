@@ -3116,19 +3116,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Interactive.IInteractiveTui.AcceptsEmptyData
   nameWithType: IInteractiveTui.AcceptsEmptyData
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.BackgroundColor
-  name: BackgroundColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_BackgroundColor
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.BackgroundColor
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.BackgroundColor
-  nameWithType: IInteractiveTui.BackgroundColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.BackgroundColor*
-  name: BackgroundColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_BackgroundColor_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.BackgroundColor
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.BackgroundColor
-  nameWithType: IInteractiveTui.BackgroundColor
 - uid: KS.ConsoleBase.Interactive.IInteractiveTui.Bindings
   name: Bindings
   href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_Bindings
@@ -3142,45 +3129,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Interactive.IInteractiveTui.Bindings
   nameWithType: IInteractiveTui.Bindings
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.BoxBackgroundColor
-  name: BoxBackgroundColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_BoxBackgroundColor
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.BoxBackgroundColor
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.BoxBackgroundColor
-  nameWithType: IInteractiveTui.BoxBackgroundColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.BoxBackgroundColor*
-  name: BoxBackgroundColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_BoxBackgroundColor_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.BoxBackgroundColor
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.BoxBackgroundColor
-  nameWithType: IInteractiveTui.BoxBackgroundColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.BoxForegroundColor
-  name: BoxForegroundColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_BoxForegroundColor
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.BoxForegroundColor
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.BoxForegroundColor
-  nameWithType: IInteractiveTui.BoxForegroundColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.BoxForegroundColor*
-  name: BoxForegroundColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_BoxForegroundColor_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.BoxForegroundColor
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.BoxForegroundColor
-  nameWithType: IInteractiveTui.BoxForegroundColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.CurrentPane
-  name: CurrentPane
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_CurrentPane
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.CurrentPane
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.CurrentPane
-  nameWithType: IInteractiveTui.CurrentPane
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.CurrentPane*
-  name: CurrentPane
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_CurrentPane_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.CurrentPane
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.CurrentPane
-  nameWithType: IInteractiveTui.CurrentPane
 - uid: KS.ConsoleBase.Interactive.IInteractiveTui.FastRefresh
   name: FastRefresh
   href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_FastRefresh
@@ -3194,32 +3142,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Interactive.IInteractiveTui.FastRefresh
   nameWithType: IInteractiveTui.FastRefresh
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.FirstPaneCurrentSelection
-  name: FirstPaneCurrentSelection
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_FirstPaneCurrentSelection
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.FirstPaneCurrentSelection
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.FirstPaneCurrentSelection
-  nameWithType: IInteractiveTui.FirstPaneCurrentSelection
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.FirstPaneCurrentSelection*
-  name: FirstPaneCurrentSelection
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_FirstPaneCurrentSelection_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.FirstPaneCurrentSelection
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.FirstPaneCurrentSelection
-  nameWithType: IInteractiveTui.FirstPaneCurrentSelection
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.ForegroundColor
-  name: ForegroundColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_ForegroundColor
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.ForegroundColor
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.ForegroundColor
-  nameWithType: IInteractiveTui.ForegroundColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.ForegroundColor*
-  name: ForegroundColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_ForegroundColor_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.ForegroundColor
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.ForegroundColor
-  nameWithType: IInteractiveTui.ForegroundColor
 - uid: KS.ConsoleBase.Interactive.IInteractiveTui.GetEntryFromItem(System.Object)
   name: GetEntryFromItem(object)
   href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_GetEntryFromItem_System_Object_
@@ -3265,19 +3187,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Interactive.IInteractiveTui.HandleExit
   nameWithType: IInteractiveTui.HandleExit
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.KeyBindingOptionColor
-  name: KeyBindingOptionColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_KeyBindingOptionColor
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.KeyBindingOptionColor
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.KeyBindingOptionColor
-  nameWithType: IInteractiveTui.KeyBindingOptionColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.KeyBindingOptionColor*
-  name: KeyBindingOptionColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_KeyBindingOptionColor_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.KeyBindingOptionColor
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.KeyBindingOptionColor
-  nameWithType: IInteractiveTui.KeyBindingOptionColor
 - uid: KS.ConsoleBase.Interactive.IInteractiveTui.LastOnOverflow
   name: LastOnOverflow()
   href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_LastOnOverflow
@@ -3291,123 +3200,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Interactive.IInteractiveTui.LastOnOverflow
   nameWithType: IInteractiveTui.LastOnOverflow
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.OptionBackgroundColor
-  name: OptionBackgroundColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_OptionBackgroundColor
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.OptionBackgroundColor
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.OptionBackgroundColor
-  nameWithType: IInteractiveTui.OptionBackgroundColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.OptionBackgroundColor*
-  name: OptionBackgroundColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_OptionBackgroundColor_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.OptionBackgroundColor
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.OptionBackgroundColor
-  nameWithType: IInteractiveTui.OptionBackgroundColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.OptionForegroundColor
-  name: OptionForegroundColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_OptionForegroundColor
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.OptionForegroundColor
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.OptionForegroundColor
-  nameWithType: IInteractiveTui.OptionForegroundColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.OptionForegroundColor*
-  name: OptionForegroundColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_OptionForegroundColor_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.OptionForegroundColor
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.OptionForegroundColor
-  nameWithType: IInteractiveTui.OptionForegroundColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.PaneBackgroundColor
-  name: PaneBackgroundColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_PaneBackgroundColor
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.PaneBackgroundColor
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.PaneBackgroundColor
-  nameWithType: IInteractiveTui.PaneBackgroundColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.PaneBackgroundColor*
-  name: PaneBackgroundColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_PaneBackgroundColor_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.PaneBackgroundColor
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.PaneBackgroundColor
-  nameWithType: IInteractiveTui.PaneBackgroundColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.PaneItemBackColor
-  name: PaneItemBackColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_PaneItemBackColor
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.PaneItemBackColor
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.PaneItemBackColor
-  nameWithType: IInteractiveTui.PaneItemBackColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.PaneItemBackColor*
-  name: PaneItemBackColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_PaneItemBackColor_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.PaneItemBackColor
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.PaneItemBackColor
-  nameWithType: IInteractiveTui.PaneItemBackColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.PaneItemForeColor
-  name: PaneItemForeColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_PaneItemForeColor
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.PaneItemForeColor
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.PaneItemForeColor
-  nameWithType: IInteractiveTui.PaneItemForeColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.PaneItemForeColor*
-  name: PaneItemForeColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_PaneItemForeColor_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.PaneItemForeColor
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.PaneItemForeColor
-  nameWithType: IInteractiveTui.PaneItemForeColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedItemBackColor
-  name: PaneSelectedItemBackColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_PaneSelectedItemBackColor
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedItemBackColor
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedItemBackColor
-  nameWithType: IInteractiveTui.PaneSelectedItemBackColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedItemBackColor*
-  name: PaneSelectedItemBackColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_PaneSelectedItemBackColor_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedItemBackColor
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedItemBackColor
-  nameWithType: IInteractiveTui.PaneSelectedItemBackColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedItemForeColor
-  name: PaneSelectedItemForeColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_PaneSelectedItemForeColor
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedItemForeColor
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedItemForeColor
-  nameWithType: IInteractiveTui.PaneSelectedItemForeColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedItemForeColor*
-  name: PaneSelectedItemForeColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_PaneSelectedItemForeColor_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedItemForeColor
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedItemForeColor
-  nameWithType: IInteractiveTui.PaneSelectedItemForeColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedSeparatorColor
-  name: PaneSelectedSeparatorColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_PaneSelectedSeparatorColor
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedSeparatorColor
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedSeparatorColor
-  nameWithType: IInteractiveTui.PaneSelectedSeparatorColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedSeparatorColor*
-  name: PaneSelectedSeparatorColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_PaneSelectedSeparatorColor_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedSeparatorColor
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSelectedSeparatorColor
-  nameWithType: IInteractiveTui.PaneSelectedSeparatorColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSeparatorColor
-  name: PaneSeparatorColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_PaneSeparatorColor
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.PaneSeparatorColor
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSeparatorColor
-  nameWithType: IInteractiveTui.PaneSeparatorColor
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSeparatorColor*
-  name: PaneSeparatorColor
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_PaneSeparatorColor_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.PaneSeparatorColor
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.PaneSeparatorColor
-  nameWithType: IInteractiveTui.PaneSeparatorColor
 - uid: KS.ConsoleBase.Interactive.IInteractiveTui.PrimaryDataSource
   name: PrimaryDataSource
   href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_PrimaryDataSource
@@ -3421,19 +3213,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Interactive.IInteractiveTui.PrimaryDataSource
   nameWithType: IInteractiveTui.PrimaryDataSource
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.RedrawRequired
-  name: RedrawRequired
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_RedrawRequired
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.RedrawRequired
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.RedrawRequired
-  nameWithType: IInteractiveTui.RedrawRequired
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.RedrawRequired*
-  name: RedrawRequired
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_RedrawRequired_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.RedrawRequired
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.RedrawRequired
-  nameWithType: IInteractiveTui.RedrawRequired
 - uid: KS.ConsoleBase.Interactive.IInteractiveTui.RefreshInterval
   name: RefreshInterval
   href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_RefreshInterval
@@ -3463,19 +3242,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Interactive.IInteractiveTui.RenderStatus
   nameWithType: IInteractiveTui.RenderStatus
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.SecondPaneCurrentSelection
-  name: SecondPaneCurrentSelection
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_SecondPaneCurrentSelection
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.SecondPaneCurrentSelection
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.SecondPaneCurrentSelection
-  nameWithType: IInteractiveTui.SecondPaneCurrentSelection
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.SecondPaneCurrentSelection*
-  name: SecondPaneCurrentSelection
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_SecondPaneCurrentSelection_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.SecondPaneCurrentSelection
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.SecondPaneCurrentSelection
-  nameWithType: IInteractiveTui.SecondPaneCurrentSelection
 - uid: KS.ConsoleBase.Interactive.IInteractiveTui.SecondPaneInteractable
   name: SecondPaneInteractable
   href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_SecondPaneInteractable
@@ -3502,19 +3268,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Interactive.IInteractiveTui.SecondaryDataSource
   nameWithType: IInteractiveTui.SecondaryDataSource
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.Status
-  name: Status
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_Status
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.Status
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.Status
-  nameWithType: IInteractiveTui.Status
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.Status*
-  name: Status
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_Status_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.Status
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.Status
-  nameWithType: IInteractiveTui.Status
 - uid: KS.ConsoleBase.Interactive.InteractiveTuiBinding
   name: InteractiveTuiBinding
   href: api/KS.ConsoleBase.Interactive.InteractiveTuiBinding.html
