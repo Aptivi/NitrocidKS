@@ -432,9 +432,6 @@ Namespace Kernel
             'Populate ban list for debug devices
             PopulateBlockedDevices()
 
-            'Start screensaver timeout
-            If Not Screensaver.Timeout.IsAlive Then Screensaver.Timeout.Start()
-
             'Load all events and reminders
             LoadEvents()
             LoadReminders()
