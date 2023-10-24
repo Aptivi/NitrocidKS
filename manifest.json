@@ -4045,6 +4045,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.ShellBase.Arguments.CommandAutoCompletionList.yml",
       "output": {
         ".html": {

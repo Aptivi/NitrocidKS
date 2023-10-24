@@ -40498,6 +40498,15 @@ references:
   commentId: T:KS.Shell.ShellBase.Arguments.CommandArgumentPart
   fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart
   nameWithType: CommandArgumentPart
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions)
+  name: CommandArgumentPart(bool, string, CommandArgumentPartOptions)
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_System_Boolean_System_String_KS_Shell_ShellBase_Arguments_CommandArgumentPartOptions_
+  commentId: M:KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions)
+  name.vb: New(Boolean, String, CommandArgumentPartOptions)
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.CommandArgumentPart(bool, string, KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions)
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentPart.New(Boolean, String, KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions)
+  nameWithType: CommandArgumentPart.CommandArgumentPart(bool, string, CommandArgumentPartOptions)
+  nameWithType.vb: CommandArgumentPart.New(Boolean, String, CommandArgumentPartOptions)
 - uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[]},System.Boolean,System.String)
   name: CommandArgumentPart(bool, string, Func<string[]>, bool, string)
   href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_System_Boolean_System_String_System_Func_System_String____System_Boolean_System_String_
@@ -40582,6 +40591,51 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.IsNumeric
   nameWithType: CommandArgumentPart.IsNumeric
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions
+  name: CommandArgumentPartOptions
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.html
+  commentId: T:KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions
+  nameWithType: CommandArgumentPartOptions
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.AutoCompleter
+  name: AutoCompleter
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.html#KS_Shell_ShellBase_Arguments_CommandArgumentPartOptions_AutoCompleter
+  commentId: P:KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.AutoCompleter
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.AutoCompleter
+  nameWithType: CommandArgumentPartOptions.AutoCompleter
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.AutoCompleter*
+  name: AutoCompleter
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.html#KS_Shell_ShellBase_Arguments_CommandArgumentPartOptions_AutoCompleter_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.AutoCompleter
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.AutoCompleter
+  nameWithType: CommandArgumentPartOptions.AutoCompleter
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.ExactWording
+  name: ExactWording
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.html#KS_Shell_ShellBase_Arguments_CommandArgumentPartOptions_ExactWording
+  commentId: P:KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.ExactWording
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.ExactWording
+  nameWithType: CommandArgumentPartOptions.ExactWording
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.ExactWording*
+  name: ExactWording
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.html#KS_Shell_ShellBase_Arguments_CommandArgumentPartOptions_ExactWording_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.ExactWording
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.ExactWording
+  nameWithType: CommandArgumentPartOptions.ExactWording
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.IsNumeric
+  name: IsNumeric
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.html#KS_Shell_ShellBase_Arguments_CommandArgumentPartOptions_IsNumeric
+  commentId: P:KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.IsNumeric
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.IsNumeric
+  nameWithType: CommandArgumentPartOptions.IsNumeric
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.IsNumeric*
+  name: IsNumeric
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.html#KS_Shell_ShellBase_Arguments_CommandArgumentPartOptions_IsNumeric_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.IsNumeric
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.IsNumeric
+  nameWithType: CommandArgumentPartOptions.IsNumeric
 - uid: KS.Shell.ShellBase.Arguments.CommandAutoCompletionList
   name: CommandAutoCompletionList
   href: api/KS.Shell.ShellBase.Arguments.CommandAutoCompletionList.html
