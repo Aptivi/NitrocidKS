@@ -23,7 +23,7 @@ Namespace Shell.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             Write(DoTranslation("Thank you for reporting a bug to us! Please follow the instructions on the screen."), True, ColTypes.Neutral)
-            Process.Start("https://github.com/Aptivi/Kernel-Simulator/issues/new/choose")
+            Process.Start("https://github.com/Aptivi/NitrocidKS/issues/new/choose")
         End Sub
 
     End Class

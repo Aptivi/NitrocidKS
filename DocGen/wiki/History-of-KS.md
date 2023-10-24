@@ -197,4 +197,4 @@ We have fears of hard drives thrashing, especially the SSDs that they have read 
 
 #### Removal history
 
-* Removed filesystem parsing according to commit [a9fc2de6](https://github.com/Aptivi/Kernel-Simulator/commit/a9fc2de6cfa79c4580331fa5bea5c7e5ad9326fe)
+* Removed filesystem parsing according to commit [a9fc2de6](https://github.com/Aptivi/NitrocidKS/commit/a9fc2de6cfa79c4580331fa5bea5c7e5ad9326fe)

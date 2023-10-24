@@ -453,7 +453,7 @@ Namespace Kernel
                 WClient.DefaultRequestHeaders.Add("User-Agent", "Aptivi")
 
                 'Populate the following variables with information
-                Dim UpdateStr As String = DownloadString("https://api.github.com/repos/Aptivi/Kernel-Simulator/releases")
+                Dim UpdateStr As String = DownloadString("https://api.github.com/repos/Aptivi/NitrocidKS/releases")
                 Dim UpdateToken As JToken = JToken.Parse(UpdateStr)
                 Dim UpdateInstance As New KernelUpdate(UpdateToken)
 

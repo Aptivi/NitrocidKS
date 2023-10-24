@@ -26,7 +26,7 @@ Namespace Shell.Commands
             If ModDocumentation Then
                 Process.Start("https://aptivi.github.io/Kernel-Simulator")
             Else
-                Process.Start("https://github.com/Aptivi/Kernel-Simulator/wiki")
+                Process.Start("https://github.com/Aptivi/NitrocidKS/wiki")
             End If
         End Sub
 

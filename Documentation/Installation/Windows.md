@@ -50,4 +50,4 @@
 <!----------------------------------------------------------------------------->
 
 [Chocolatey]: https://chocolatey.org/install
-[Download]: https://github.com/Aptivi/Kernel-Simulator/releases
+[Download]: https://github.com/Aptivi/NitrocidKS/releases

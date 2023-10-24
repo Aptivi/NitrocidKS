@@ -9,7 +9,7 @@
     <PackageDescription>Simulates our future-planned kernel</PackageDescription>
     <PackageTags>kernel;simulator;vb.net</PackageTags>
     <!-- URL settings -->
-    <PackageProjectUrl>https://github.com/Aptivi/Kernel-Simulator</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Aptivi/NitrocidKS</PackageProjectUrl>
     <PackageIcon>OfficialAppIcon-KernelSimulator-256.png</PackageIcon>
     <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
     <PackageReleaseNotes>https://aptivi.github.io/Kernel-Simulator/wiki/releases/Release-Notes-for-Second-Generation-KS.html</PackageReleaseNotes>
@@ -19,7 +19,7 @@
     <PackageOutputPath>KSBuild</PackageOutputPath>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <!-- Repository set up -->
-    <RepositoryUrl>https://github.com/Aptivi/Kernel-Simulator.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Aptivi/NitrocidKS.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Configurations>Debug;Release;Debug-dotnet;Release-dotnet</Configurations>
   </PropertyGroup>

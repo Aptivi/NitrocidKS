@@ -52,4 +52,4 @@
 <!----------------------------------------------------------------------------->
 
 
-[Download]: https://github.com/Aptivi/Kernel-Simulator/archive/refs/heads/master.zip
+[Download]: https://github.com/Aptivi/NitrocidKS/archive/refs/heads/master.zip
