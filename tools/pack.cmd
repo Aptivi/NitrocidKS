@@ -21,13 +21,14 @@ for /f "tokens=* USEBACKQ" %%f in (`type version`) do set ksversion=%%f
 
 :packbin
 echo Packing binary...
-"%ProgramFiles%\WinRAR\rar.exe" a -ep1 -r -m5 %temp%/%ksversion%-bin.rar "..\Kernel Simulator\KSBuild\net48\"
+del "Kernel Simulator\KSBuild\*.nupkg" >> %temp%/buildandpack.log 2>&1
+"%ProgramFiles%\7-Zip\7z.exe" a -tzip %temp%/%ksversion%-bin.zip "..\Kernel Simulator\KSBuild\net48\*" >> %temp%/buildandpack.log 2>&1
 if %errorlevel% == 0 goto :complete
 echo There was an error trying to pack binary (%errorlevel%).
 goto :finished
 
 :complete
-move %temp%\%ksversion%-bin.rar
+move %temp%\%ksversion%-bin.zip
 copy "..\Kernel Simulator\KSBuild\net48\Kernel Simulator.pdb" .\%ksversion%.pdb
 
 echo Pack successful.

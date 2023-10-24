@@ -21,22 +21,22 @@
 ksversion=$(cat version)
 
 # Check for dependencies
-rarpath=`which rar`
+zippath=`which zip`
 if [ ! $? == 0 ]; then
-	echo rar is not found.
+	echo zip is not found.
 	exit 1
 fi
 
 # Pack binary
 echo Packing binary...
-"$rarpath" a -ep1 -r -m5 /tmp/$ksversion-bin-dotnet.rar "../Kernel Simulator/KSBuild/net6.0/"
+(cd "../Kernel Simulator/KSBuild/net6.0/" && "$zippath" -r /tmp/$ksversion-bin-dotnet.zip . && cd -) >> ~/tmp/buildandpack.log
 if [ ! $? == 0 ]; then
-	echo Packing using rar failed.
+	echo Packing using zip failed.
 	exit 1
 fi
 
 # Inform success
-mv ~/tmp/$ksversion-bin-dotnet.rar .
+mv ~/tmp/$ksversion-bin-dotnet.zip .
 cp "../Kernel Simulator/KSBuild/net6.0/Kernel Simulator.pdb" ./$ksversion.pdb
 echo Build and pack successful.
 exit 0
