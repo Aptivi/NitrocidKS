@@ -401,7 +401,4 @@
     </None>
   </ItemGroup>
   <ItemGroup />
-  <PropertyGroup>
-    <PreBuildEvent>echo Building $(ProjectName) with config $(ConfigurationName) for $(PlatformName) in $(TargetDir)...</PreBuildEvent>
-  </PropertyGroup>
 </Project>
