@@ -1236,6 +1236,7 @@ Namespace Files
         ''' </remarks>
         Public Sub ThrowOnInvalidPath(Path As String)
 #If NTFSCorruptionFix Then
+            If String.IsNullOrEmpty(Path) Then Return
             If IsOnWindows() And (Path.Contains("$i30") Or Path.Contains("\\.\globalroot\device\condrv\kernelconnect")) Then
                 Wdbg(DebugLevel.F, "Trying to access invalid path. Path was {0}", Path)
                 Throw New ArgumentException(DoTranslation("Trying to access invalid path."), NameOf(Path))
