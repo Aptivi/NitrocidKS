@@ -133,7 +133,7 @@ Public Module ModParser
                     'Check to see if the reference file exists
                     If Not File.Exists(Reference) Then
                         Wdbg("E", "File {0} not found to reference.", Reference)
-                        W(DoTranslation("Referenced file {0} not found. This mod might not work properly without this file."), True, ColTypes.Warning, Reference)
+                        Write(DoTranslation("Referenced file {0} not found. This mod might not work properly without this file."), True, ColTypes.Warning, Reference)
                         GoTo NextEntry
                     End If
                 End If
@@ -159,9 +159,9 @@ NextEntry:
         Wdbg("I", "Has errors: {0}", res.Errors.HasErrors)
         Wdbg("I", "Has warnings: {0}", res.Errors.HasWarnings)
         If res.Errors.HasErrors Then
-            W(DoTranslation("Mod can't be loaded because of the following: "), True, ColTypes.Error)
+            Write(DoTranslation("Mod can't be loaded because of the following: "), True, ColTypes.Error)
             For Each errorName In res.Errors
-                W(errorName.ToString, True, ColTypes.Error)
+                Write(errorName.ToString, True, ColTypes.Error)
                 Wdbg("E", errorName.ToString)
             Next
             Exit Function
@@ -193,17 +193,17 @@ NextEntry:
             Dim count As Integer = Directory.EnumerateFiles(modPath).Count
             Wdbg("I", "Files count: {0}", count)
             If count <> 0 Then
-                W(DoTranslation("mod: Loading mods..."), True, ColTypes.Neutral)
+                Write(DoTranslation("mod: Loading mods..."), True, ColTypes.Neutral)
                 Wdbg("I", "Mods are being loaded. Total mods with screensavers = {0}", count)
                 For Each modFile As String In Directory.EnumerateFiles(modPath)
-                    W(DoTranslation("Starting mod") + " {0}...", True, ColTypes.Neutral, Path.GetFileName(modFile))
+                    Write(DoTranslation("Starting mod") + " {0}...", True, ColTypes.Neutral, Path.GetFileName(modFile))
                     ParseMod(modFile.Replace("\", "/"))
                 Next
             Else
-                W(DoTranslation("mod: No mods detected."), True, ColTypes.Neutral)
+                Write(DoTranslation("mod: No mods detected."), True, ColTypes.Neutral)
             End If
         Else
-            W(DoTranslation("Parsing mods not allowed on safe mode."), True, ColTypes.Error)
+            Write(DoTranslation("Parsing mods not allowed on safe mode."), True, ColTypes.Error)
         End If
     End Sub
 
@@ -218,7 +218,7 @@ NextEntry:
             Dim count As Integer = Directory.EnumerateFiles(modPath).Count
             Wdbg("I", "Files count: {0}", count)
             If count <> 0 Then
-                W(DoTranslation("mod: Stopping mods..."), True, ColTypes.Neutral)
+                Write(DoTranslation("mod: Stopping mods..."), True, ColTypes.Neutral)
                 Wdbg("I", "Mods are being stopped. Total mods with screensavers = {0}", count)
                 For Each script As Dictionary(Of String, IScript) In scripts.Values
                     Wdbg("I", "Stopping... Mod name: {0}", scripts.GetKeyFromValue(script))
@@ -226,17 +226,17 @@ NextEntry:
                         Wdbg("I", "Stopping part {0} v{1}", script(ScriptPart).ModPart, script(ScriptPart).Version)
                         script(ScriptPart).StopMod()
                         If script(ScriptPart).Name <> "" And script(ScriptPart).Version <> "" Then
-                            W(DoTranslation("{0} v{1} stopped"), True, ColTypes.Neutral, script(ScriptPart).ModPart, script(ScriptPart).Version)
+                            Write(DoTranslation("{0} v{1} stopped"), True, ColTypes.Neutral, script(ScriptPart).ModPart, script(ScriptPart).Version)
                         End If
                     Next
-                    W(DoTranslation("Mod {0} stopped"), True, ColTypes.Neutral, scripts.GetKeyFromValue(script))
+                    Write(DoTranslation("Mod {0} stopped"), True, ColTypes.Neutral, scripts.GetKeyFromValue(script))
                 Next
                 CSvrdb.Clear()
             Else
-                W(DoTranslation("mod: No mods detected."), True, ColTypes.Neutral)
+                Write(DoTranslation("mod: No mods detected."), True, ColTypes.Neutral)
             End If
         Else
-            W(DoTranslation("Parsing mods not allowed on safe mode."), True, ColTypes.Error)
+            Write(DoTranslation("Parsing mods not allowed on safe mode."), True, ColTypes.Error)
         End If
     End Sub
 
@@ -274,11 +274,11 @@ NextEntry:
             Catch ex As ReflectionTypeLoadException
                 Wdbg("E", "Error trying to load dynamic mod {0}: {1}", modFile, ex.Message)
                 WStkTrc(ex)
-                W(DoTranslation("Mod can't be loaded because of the following: "), True, ColTypes.Error)
+                Write(DoTranslation("Mod can't be loaded because of the following: "), True, ColTypes.Error)
                 For Each LoaderException As Exception In ex.LoaderExceptions
                     Wdbg("E", "Loader exception: {0}", LoaderException.Message)
                     WStkTrc(LoaderException)
-                    W(LoaderException.Message, True, ColTypes.Error)
+                    Write(LoaderException.Message, True, ColTypes.Error)
                 Next
             End Try
         Else
@@ -303,7 +303,7 @@ NextEntry:
                 'See if the mod has part name
                 If String.IsNullOrWhiteSpace(script.ModPart) Then
                     Wdbg("W", "No part name for {0}", modFile)
-                    W(DoTranslation("Mod {0} does not have the part name. Mod parsing failed. Review the source code."), True, ColTypes.Error, modFile)
+                    Write(DoTranslation("Mod {0} does not have the part name. Mod parsing failed. Review the source code."), True, ColTypes.Error, modFile)
                     Exit Sub
                 End If
 
@@ -312,7 +312,7 @@ NextEntry:
                     For Each Command As String In script.Commands.Keys
                         If String.IsNullOrWhiteSpace(Command) Then
                             Wdbg("W", "No command for {0}", modFile)
-                            W(DoTranslation("Mod {0} has invalid command. Mod parsing failed. Review the source code."), True, ColTypes.Error, modFile)
+                            Write(DoTranslation("Mod {0} has invalid command. Mod parsing failed. Review the source code."), True, ColTypes.Error, modFile)
                             Exit Sub
                         End If
                     Next
@@ -323,7 +323,7 @@ NextEntry:
                 If ModName = "" Then
                     ModName = modFile
                     Wdbg("W", "No name for {0}", modFile)
-                    W(DoTranslation("Mod {0} does not have the name. Review the source code."), True, ColTypes.Warning, modFile)
+                    Write(DoTranslation("Mod {0} does not have the name. Review the source code."), True, ColTypes.Warning, modFile)
                 Else
                     Wdbg("I", "There is a name for {0}", modFile)
                 End If
@@ -357,10 +357,10 @@ NextEntry:
                 'See if the mod has version
                 If script.Version = "" And script.Name <> "" Then
                     Wdbg("I", "{0}.Version = """" | {0}.Name = {1}", modFile, script.Name)
-                    W(DoTranslation("Mod {0} does not have the version."), True, ColTypes.Warning, script.Name)
+                    Write(DoTranslation("Mod {0} does not have the version."), True, ColTypes.Warning, script.Name)
                 ElseIf script.Name <> "" And script.Version <> "" Then
                     Wdbg("I", "{0}.Version = {2} | {0}.Name = {1}", modFile, script.Name, script.Version)
-                    W(DoTranslation("{0} v{1} started") + " ({2})", True, ColTypes.Neutral, script.Name, script.Version, script.ModPart)
+                    Write(DoTranslation("{0} v{1} started") + " ({2})", True, ColTypes.Neutral, script.Name, script.Version, script.ModPart)
                 End If
 
                 'Process the commands that are defined in a mod
@@ -419,7 +419,7 @@ NextEntry:
                         'See if mod can be added to command list
                         If Command <> "" Then
                             If script.Commands(ActualCommand).HelpDefinition = "" Then
-                                W(DoTranslation("No definition for command {0}."), True, ColTypes.Warning, Command)
+                                Write(DoTranslation("No definition for command {0}."), True, ColTypes.Warning, Command)
                                 Wdbg("W", "{0}.Def = Nothing, {0}.Def = ""Command defined by {1} ({2})""", Command, script.Name, script.ModPart)
                                 script.Commands(ActualCommand).HelpDefinition = DoTranslation("Command defined by ") + script.Name + " (" + script.ModPart + ")"
                             End If
@@ -481,7 +481,7 @@ NextEntry:
             Catch ex As Exception
                 EventManager.RaiseModFinalizationFailed(modFile, ex.Message)
                 WStkTrc(ex)
-                W(DoTranslation("Failed to finalize mod {0}: {1}"), True, ColTypes.Error, modFile, ex.Message)
+                Write(DoTranslation("Failed to finalize mod {0}: {1}"), True, ColTypes.Error, modFile, ex.Message)
             End Try
         Else
             EventManager.RaiseModParseError(modFile)

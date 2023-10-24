@@ -29,7 +29,7 @@ Public Module CustomDisplay
         'To Screensaver Developers: ONLY put the effect code in your scrnSaver() sub.
         '                           Set colors, write welcome message, etc. with the exception of infinite loop and the effect code in preDisplay() sub
         '                           Recommended: Turn off console cursor, and clear the screen in preDisplay() sub.
-        '                           Substitute: TextWriterColor.W() with System.Console.WriteLine() or System.Console.Write().
+        '                           Substitute: TextWriterColor.Write() with System.Console.WriteLine() or System.Console.Write().
         Try
             Console.CursorVisible = False
             finalSaver.PreDisplay()
@@ -58,7 +58,7 @@ Public Module CustomDisplay
             LoadBack()
             Console.CursorVisible = True
             Wdbg("I", "All clean. Custom screensaver stopped.")
-            W(DoTranslation("Screensaver experienced an error while displaying: {0}. Press any key to exit."), True, ColTypes.Error, ex.Message)
+            Write(DoTranslation("Screensaver experienced an error while displaying: {0}. Press any key to exit."), True, ColTypes.Error, ex.Message)
             SaverAutoReset.Set()
         End Try
     End Sub

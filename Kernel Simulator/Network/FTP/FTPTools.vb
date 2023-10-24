@@ -38,7 +38,7 @@ Public Module FTPTools
         End If
 
         'Prompt for password
-        W(DoTranslation("Password for {0}: "), False, ColTypes.Input, user)
+        Write(DoTranslation("Password for {0}: "), False, ColTypes.Input, user)
 
         'Get input
         pass = ReadLineNoInput("*")
@@ -57,7 +57,7 @@ Public Module FTPTools
     ''' <param name="address">An FTP server. You may specify it like "[address]" or "[address]:[port]"</param>
     Public Sub TryToConnect(ByVal address As String)
         If connected = True Then
-            W(DoTranslation("You should disconnect from server before connecting to another server"), True, ColTypes.Error)
+            Write(DoTranslation("You should disconnect from server before connecting to another server"), True, ColTypes.Error)
         Else
             Try
                 'Create an FTP stream to connect to
@@ -79,7 +79,7 @@ Public Module FTPTools
                 AddHandler ClientFTP.ValidateCertificate, New FtpSslValidation(AddressOf TryToValidate)
 
                 'Prompt for username
-                W(DoTranslation("Username for {0}: "), False, ColTypes.Input, address)
+                Write(DoTranslation("Username for {0}: "), False, ColTypes.Input, address)
                 user = Console.ReadLine()
                 If user = "" Then
                     Wdbg("W", "User is not provided. Fallback to ""anonymous""")
@@ -91,10 +91,10 @@ Public Module FTPTools
                 Wdbg("W", "Error connecting to {0}: {1}", address, ex.Message)
                 WStkTrc(ex)
                 If DebugMode = True Then
-                    W(DoTranslation("Error when trying to connect to {0}: {1}") + vbNewLine +
+                    Write(DoTranslation("Error when trying to connect to {0}: {1}") + vbNewLine +
                       DoTranslation("Stack Trace: {2}"), True, ColTypes.Error, address, ex.Message, ex.StackTrace)
                 Else
-                    W(DoTranslation("Error when trying to connect to {0}: {1}"), True, ColTypes.Error, address, ex.Message)
+                    Write(DoTranslation("Error when trying to connect to {0}: {1}"), True, ColTypes.Error, address, ex.Message)
                 End If
             End Try
         End If
@@ -105,20 +105,20 @@ Public Module FTPTools
     ''' </summary>
     Private Sub ConnectFTP()
         'Prepare profiles
-        W(DoTranslation("Preparing profiles... It could take several minutes..."), True, ColTypes.Neutral)
+        Write(DoTranslation("Preparing profiles... It could take several minutes..."), True, ColTypes.Neutral)
         Dim profiles As List(Of FtpProfile) = ClientFTP.AutoDetect(FTPFirstProfileOnly)
         Dim profsel As New FtpProfile
         Wdbg("I", "Profile count: {0}", profiles.Count)
         If profiles.Count > 1 Then 'More than one profile
-            W(DoTranslation("More than one profile found. Select one:") + vbNewLine + vbNewLine +
+            Write(DoTranslation("More than one profile found. Select one:") + vbNewLine + vbNewLine +
               "#, " + DoTranslation("Host Name, Username, Data Type, Encoding, Encryption, Protocols"), True, ColTypes.Neutral)
             For i As Integer = 0 To profiles.Count - 1
-                W($"{i + 1}) {profiles(i).Host}, {profiles(i).Credentials.UserName}, {profiles(i).DataConnection}, {profiles(i).Encoding.EncodingName}, {profiles(i).Encryption}, {profiles(i).Protocols}", True, ColTypes.Option)
+                Write($"{i + 1}) {profiles(i).Host}, {profiles(i).Credentials.UserName}, {profiles(i).DataConnection}, {profiles(i).Encoding.EncodingName}, {profiles(i).Encryption}, {profiles(i).Protocols}", True, ColTypes.Option)
             Next
             Dim profanswer As Char
             Dim profanswered As Boolean
             While Not profanswered
-                W(vbNewLine + ">> ", False, ColTypes.Input)
+                Write(vbNewLine + ">> ", False, ColTypes.Input)
                 profanswer = Console.ReadLine
                 Wdbg("I", "Selection: {0}", profanswer)
                 If IsNumeric(profanswer) Then
@@ -128,7 +128,7 @@ Public Module FTPTools
                         profanswered = True
                     Catch ex As Exception
                         Wdbg("I", "Profile invalid")
-                        W(DoTranslation("Invalid profile selection.") + vbNewLine, True, ColTypes.Error)
+                        Write(DoTranslation("Invalid profile selection.") + vbNewLine, True, ColTypes.Error)
                         WStkTrc(ex)
                     End Try
                 End If
@@ -136,25 +136,25 @@ Public Module FTPTools
         ElseIf profiles.Count = 1 Then
             profsel = profiles(0) 'Select first profile
         Else 'Failed trying to get profiles
-            W(DoTranslation("Error when trying to connect to {0}: Connection timeout or lost connection"), True, ColTypes.Error, ClientFTP.Host)
+            Write(DoTranslation("Error when trying to connect to {0}: Connection timeout or lost connection"), True, ColTypes.Error, ClientFTP.Host)
             Exit Sub
         End If
 
         'Connect
-        W(DoTranslation("Trying to connect to {0} with profile {1}..."), True, ColTypes.Neutral, ClientFTP.Host, profiles.IndexOf(profsel))
+        Write(DoTranslation("Trying to connect to {0} with profile {1}..."), True, ColTypes.Neutral, ClientFTP.Host, profiles.IndexOf(profsel))
         Wdbg("I", "Connecting to {0} with {1}...", ClientFTP.Host, profiles.IndexOf(profsel))
         ClientFTP.Connect(profsel)
 
         'Show that it's connected
-        W(DoTranslation("Connected to {0}"), True, ColTypes.Neutral, ClientFTP.Host)
+        Write(DoTranslation("Connected to {0}"), True, ColTypes.Neutral, ClientFTP.Host)
         Wdbg("I", "Connected.")
         connected = True
 
         'If MOTD exists, show it
         If ClientFTP.FileExists("welcome.msg") Then
-            W(FTPDownloadToString("welcome.msg"), True, ColTypes.Banner)
+            Write(FTPDownloadToString("welcome.msg"), True, ColTypes.Banner)
         ElseIf ClientFTP.FileExists(".message") Then
-            W(FTPDownloadToString(".message"), True, ColTypes.Banner)
+            Write(FTPDownloadToString(".message"), True, ColTypes.Banner)
         End If
 
         'Prepare to print current FTP directory
@@ -187,11 +187,11 @@ Public Module FTPTools
             e.Accept = True
         Else
             Wdbg("W", $"Certificate error is {e.PolicyErrors}")
-            W(DoTranslation("During certificate validation, there are certificate errors. It might be the first time you've connected to the server or the certificate might have been expired. Here's an error:"), True, ColTypes.Error)
-            W("- {0}", True, ColTypes.Error, e.PolicyErrors.ToString)
+            Write(DoTranslation("During certificate validation, there are certificate errors. It might be the first time you've connected to the server or the certificate might have been expired. Here's an error:"), True, ColTypes.Error)
+            Write("- {0}", True, ColTypes.Error, e.PolicyErrors.ToString)
             Dim Answer As String = ""
             Do Until Answer.ToLower = "y" Or Answer.ToLower = "n"
-                W(DoTranslation("Are you sure that you want to connect?") + " (y/n) ", False, ColTypes.Input)
+                Write(DoTranslation("Are you sure that you want to connect?") + " (y/n) ", False, ColTypes.Input)
                 Answer = Console.ReadKey.KeyChar
                 Console.WriteLine()
                 Wdbg("I", $"Answer is {Answer}")
@@ -201,7 +201,7 @@ Public Module FTPTools
                     e.Accept = True
                 ElseIf Answer.ToLower <> "n" Then
                     Wdbg("W", "Invalid answer.")
-                    W(DoTranslation("Invalid answer. Please try again."), True, ColTypes.Error)
+                    Write(DoTranslation("Invalid answer. Please try again."), True, ColTypes.Error)
                 End If
             Loop
         End If
@@ -218,15 +218,15 @@ Public Module FTPTools
             Dim Answer As String
             Dim Answering As Boolean = True
             If Not SpeedDialLines.Count = 0 Then
-                W(DoTranslation("Select an address to connect to:") + vbNewLine, True, ColTypes.Neutral)
+                Write(DoTranslation("Select an address to connect to:") + vbNewLine, True, ColTypes.Neutral)
                 For Each SpeedDialAddress As String In SpeedDialLines.Keys
                     Wdbg("I", "Speed dial address: {0}", SpeedDialAddress)
-                    W("{0}) {1}, {2}, {3}, {4}", True, ColTypes.Option, Counter, SpeedDialAddress, SpeedDialLines(SpeedDialAddress)("Port"), SpeedDialLines(SpeedDialAddress)("User"), SpeedDialLines(SpeedDialAddress)("FTP Encryption Mode"))
+                    Write("{0}) {1}, {2}, {3}, {4}", True, ColTypes.Option, Counter, SpeedDialAddress, SpeedDialLines(SpeedDialAddress)("Port"), SpeedDialLines(SpeedDialAddress)("User"), SpeedDialLines(SpeedDialAddress)("FTP Encryption Mode"))
                     Counter += 1
                 Next
                 Console.WriteLine()
                 While Answering
-                    W(">> ", False, ColTypes.Input)
+                    Write(">> ", False, ColTypes.Input)
                     Answer = Console.ReadLine
                     Wdbg("I", "Response: {0}", Answer)
                     If IsNumeric(Answer) Then
@@ -245,20 +245,20 @@ Public Module FTPTools
                             PromptForPassword(Username, Address, Port, Encryption)
                         Else
                             Wdbg("I", "Response is out-of-bounds. Retrying...")
-                            W(DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), True, ColTypes.Error, SpeedDialLines.Count)
+                            Write(DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), True, ColTypes.Error, SpeedDialLines.Count)
                         End If
                     Else
                         Wdbg("W", "Response isn't numeric. IsNumeric(Answer) returned false.")
-                        W(DoTranslation("The selection is not a number. Try again."), True, ColTypes.Error)
+                        Write(DoTranslation("The selection is not a number. Try again."), True, ColTypes.Error)
                     End If
                 End While
             Else
                 Wdbg("E", "Speed dial is empty. Lines count is 0.")
-                W(DoTranslation("Speed dial is empty. Connect to a server to add an address to it."), True, ColTypes.Error)
+                Write(DoTranslation("Speed dial is empty. Connect to a server to add an address to it."), True, ColTypes.Error)
             End If
         Else
             Wdbg("E", "File doesn't exist.")
-            W(DoTranslation("Speed dial doesn't exist. Connect to a server to add an address to it."), True, ColTypes.Error)
+            Write(DoTranslation("Speed dial doesn't exist. Connect to a server to add an address to it."), True, ColTypes.Error)
         End If
     End Sub
 

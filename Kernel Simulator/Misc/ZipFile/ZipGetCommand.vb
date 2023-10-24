@@ -62,9 +62,9 @@ Public Module ZipGetCommand
                         Entries = ListZipEntries(ZipShell_CurrentArchiveDirectory)
                     End If
                     For Each Entry As ZipArchiveEntry In Entries
-                        W("- {0}: ", False, ColTypes.ListEntry, Entry.FullName)
+                        Write("- {0}: ", False, ColTypes.ListEntry, Entry.FullName)
                         If Not Entry.Name = "" Then 'Entry is a file
-                            W("{0} ({1})", True, ColTypes.ListValue, Entry.CompressedLength.FileSizeToString, Entry.Length.FileSizeToString)
+                            Write("{0} ({1})", True, ColTypes.ListValue, Entry.CompressedLength.FileSizeToString, Entry.Length.FileSizeToString)
                         Else
                             Console.WriteLine()
                         End If
@@ -84,17 +84,17 @@ Public Module ZipGetCommand
                 Case "chdir"
                     If RequiredArgumentsProvided Then
                         If Not ChangeWorkingZipLocalDirectory(Arguments(0)) Then
-                            W(DoTranslation("Directory {0} doesn't exist"), True, ColTypes.Error, Arguments(0))
+                            Write(DoTranslation("Directory {0} doesn't exist"), True, ColTypes.Error, Arguments(0))
                         End If
                     End If
                 Case "chadir"
                     If RequiredArgumentsProvided Then
                         If Not ChangeWorkingArchiveDirectory(Arguments(0)) Then
-                            W(DoTranslation("Archive directory {0} doesn't exist"), True, ColTypes.Error, Arguments(0))
+                            Write(DoTranslation("Archive directory {0} doesn't exist"), True, ColTypes.Error, Arguments(0))
                         End If
                     End If
                 Case "cdir"
-                    W(ZipShell_CurrentDirectory, True, ColTypes.Neutral)
+                    Write(ZipShell_CurrentDirectory, True, ColTypes.Neutral)
                 Case "exit"
                     ZipShell_Exiting = True
                 Case "help"
@@ -109,14 +109,14 @@ Public Module ZipGetCommand
 
             'See if the command is done (passed all required arguments)
             If ZipShell_Commands(Command).ArgumentsRequired And Not RequiredArgumentsProvided Then
-                W(DoTranslation("Required arguments are not passed to command {0}"), True, ColTypes.Error, Command)
+                Write(DoTranslation("Required arguments are not passed to command {0}"), True, ColTypes.Error, Command)
                 Wdbg("E", "Passed arguments were not enough to run command {0}. Arguments passed: {1}", Command, Arguments?.Length)
                 ZipShell_GetHelp(Command)
             End If
         Catch taex As ThreadAbortException
             Exit Sub
         Catch ex As Exception
-            W(DoTranslation("Error trying to run command: {0}"), True, ColTypes.Error, ex.Message)
+            Write(DoTranslation("Error trying to run command: {0}"), True, ColTypes.Error, ex.Message)
             Wdbg("E", "Error running command {0}: {1}", CommandText.Split(" ")(0), ex.Message)
             WStkTrc(ex)
             EventManager.RaiseZipCommandError(CommandText, ex)

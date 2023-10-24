@@ -62,13 +62,13 @@ Public Module KernelTools
                     'If the error type is unrecoverable, or double, and the rebooting is false where it should
                     'not be false, then it can deal with this issue by enabling reboot.
                     Wdbg("W", "Errors that have type {0} enforced Reboot = True.", ErrorType)
-                    W(DoTranslation("[{0}] panic: Reboot enabled due to error level being {0}."), True, ColTypes.Uncontinuable, ErrorType)
+                    Write(DoTranslation("[{0}] panic: Reboot enabled due to error level being {0}."), True, ColTypes.Uncontinuable, ErrorType)
                     Reboot = True
                 End If
                 If RebootTime > 3600 Then
                     'If the reboot time exceeds 1 hour, then it will set the time to 1 minute.
                     Wdbg("W", "RebootTime shouldn't exceed 1 hour. Was {0} seconds", RebootTime)
-                    W(DoTranslation("[{0}] panic: Time to reboot: {1} seconds, exceeds 1 hour. It is set to 1 minute."), True, ColTypes.Uncontinuable, ErrorType, CStr(RebootTime))
+                    Write(DoTranslation("[{0}] panic: Time to reboot: {1} seconds, exceeds 1 hour. It is set to 1 minute."), True, ColTypes.Uncontinuable, ErrorType, CStr(RebootTime))
                     RebootTime = 60
                 End If
             Else
@@ -91,7 +91,7 @@ Public Module KernelTools
             If Description.Contains("DOUBLE PANIC: ") And ErrorType = "D" Then
                 'If the description has a double panic tag and the error type is Double
                 Wdbg("F", "Double panic caused by bug in kernel crash.")
-                W(DoTranslation("[{0}] dpanic: {1} -- Rebooting in {2} seconds..."), True, ColTypes.Uncontinuable, ErrorType, Description, CStr(RebootTime))
+                Write(DoTranslation("[{0}] dpanic: {1} -- Rebooting in {2} seconds..."), True, ColTypes.Uncontinuable, ErrorType, Description, CStr(RebootTime))
                 Thread.Sleep(RebootTime * 1000)
                 Wdbg("F", "Rebooting")
                 PowerManage("reboot")
@@ -103,24 +103,24 @@ Public Module KernelTools
             ElseIf ErrorType = "C" And Reboot = True Then
                 'Check if error is Continuable and reboot is enabled
                 Wdbg("W", "Continuable kernel errors shouldn't have Reboot = True.")
-                W(DoTranslation("[{0}] panic: Reboot disabled due to error level being {0}.") + vbNewLine +
+                Write(DoTranslation("[{0}] panic: Reboot disabled due to error level being {0}.") + vbNewLine +
                   DoTranslation("[{0}] panic: {1} -- Press any key to continue using the kernel."), True, ColTypes.Continuable, ErrorType, Description)
                 Console.ReadKey()
             ElseIf ErrorType = "C" And Reboot = False Then
                 'Check if error is Continuable and reboot is disabled
                 EventManager.RaiseContKernelError(ErrorType, Reboot, RebootTime, Description, Exc, Variables)
-                W(DoTranslation("[{0}] panic: {1} -- Press any key to continue using the kernel."), True, ColTypes.Continuable, ErrorType, Description)
+                Write(DoTranslation("[{0}] panic: {1} -- Press any key to continue using the kernel."), True, ColTypes.Continuable, ErrorType, Description)
                 Console.ReadKey()
             ElseIf (Reboot = False And ErrorType <> "D") Or (Reboot = False And ErrorType <> "C") Then
                 'If rebooting is disabled and the error type does not equal Double or Continuable
                 Wdbg("W", "Reboot is False, ErrorType is not double or continuable.")
-                W(DoTranslation("[{0}] panic: {1} -- Press any key to shutdown."), True, ColTypes.Uncontinuable, ErrorType, Description)
+                Write(DoTranslation("[{0}] panic: {1} -- Press any key to shutdown."), True, ColTypes.Uncontinuable, ErrorType, Description)
                 Console.ReadKey()
                 PowerManage("shutdown")
             Else
                 'Everything else.
                 Wdbg("F", "Kernel panic initiated with reboot time: {0} seconds, Error Type: {1}", RebootTime, ErrorType)
-                W(DoTranslation("[{0}] panic: {1} -- Rebooting in {2} seconds..."), True, ColTypes.Uncontinuable, ErrorType, Description, CStr(RebootTime))
+                Write(DoTranslation("[{0}] panic: {1} -- Rebooting in {2} seconds..."), True, ColTypes.Uncontinuable, ErrorType, Description, CStr(RebootTime))
                 Thread.Sleep(RebootTime * 1000)
                 PowerManage("reboot")
                 adminList.Clear()
@@ -216,7 +216,7 @@ Public Module KernelTools
             Wdbg("I", "Closing file stream for dump...")
             Dump.Flush() : Dump.Close()
         Catch ex As Exception
-            W(DoTranslation("Dump information gatherer crashed when trying to get information about {0}: {1}"), True, ColTypes.Error, Exc.ToString.Substring(0, Exc.ToString.IndexOf(":")), ex.Message)
+            Write(DoTranslation("Dump information gatherer crashed when trying to get information about {0}: {1}"), True, ColTypes.Error, Exc.ToString.Substring(0, Exc.ToString.IndexOf(":")), ex.Message)
             WStkTrc(ex)
         End Try
     End Sub
@@ -247,13 +247,13 @@ Public Module KernelTools
         Wdbg("I", "Power management has the argument of {0}", PowerMode)
         If PowerMode = "shutdown" Then
             EventManager.RaisePreShutdown()
-            W(DoTranslation("Shutting down..."), True, ColTypes.Neutral)
+            Write(DoTranslation("Shutting down..."), True, ColTypes.Neutral)
             ResetEverything()
             EventManager.RaisePostShutdown()
             Environment.Exit(0)
         ElseIf PowerMode = "reboot" Then
             EventManager.RaisePreReboot()
-            W(DoTranslation("Rebooting..."), True, ColTypes.Neutral)
+            Write(DoTranslation("Rebooting..."), True, ColTypes.Neutral)
             ResetEverything()
             EventManager.RaisePostReboot()
             Console.Clear()
@@ -262,7 +262,7 @@ Public Module KernelTools
             SafeMode = False
         ElseIf PowerMode = "rebootsafe" Then
             EventManager.RaisePreReboot()
-            W(DoTranslation("Rebooting..."), True, ColTypes.Neutral)
+            Write(DoTranslation("Rebooting..."), True, ColTypes.Neutral)
             ResetEverything()
             EventManager.RaisePostReboot()
             Console.Clear()
@@ -384,11 +384,11 @@ Public Module KernelTools
         If StartScroll Then
             WriteSlowlyC("      >> " + DoTranslation("Welcome to the kernel! - Version {0}") + " <<", True, 10, ColTypes.Banner, KernelVersion)
         Else
-            W("      >> " + DoTranslation("Welcome to the kernel! - Version {0}") + " <<", True, ColTypes.Banner, KernelVersion)
+            Write("      >> " + DoTranslation("Welcome to the kernel! - Version {0}") + " <<", True, ColTypes.Banner, KernelVersion)
         End If
 
         'Show license
-        W(vbNewLine + "    Kernel Simulator  Copyright (C) 2018-2021  EoflaOE" + vbNewLine +
+        Write(vbNewLine + "    Kernel Simulator  Copyright (C) 2018-2021  EoflaOE" + vbNewLine +
                       "    This program comes with ABSOLUTELY NO WARRANTY, not even " + vbNewLine +
                       "    MERCHANTABILITY or FITNESS for particular purposes." + vbNewLine +
                       "    This is free software, and you are welcome to redistribute it" + vbNewLine +
@@ -396,13 +396,13 @@ Public Module KernelTools
 
         'Some information
         WriteSeparator(DoTranslation("- App information"), False, ColTypes.Stage)
-        W("OS: " + DoTranslation("Running on {0}"), True, ColTypes.Neutral, Environment.OSVersion.ToString)
+        Write("OS: " + DoTranslation("Running on {0}"), True, ColTypes.Neutral, Environment.OSVersion.ToString)
 
         'Show dev version notice
 #If SPECIFIER = "DEV" Then 'WARNING: When the development nearly ends after "NEARING" stage, change the compiler constant value to "REL" to suppress this message out of stable versions
-        W(DoTranslation("Looks like you were running the development version of the kernel. While you can see the aspects, it is frequently updated and might introduce bugs. It is recommended that you stay on the stable version."), True, ColTypes.Neutral)
+        Write(DoTranslation("Looks like you were running the development version of the kernel. While you can see the aspects, it is frequently updated and might introduce bugs. It is recommended that you stay on the stable version."), True, ColTypes.Neutral)
 #ElseIf SPECIFIER = "RC" Then
-        W(DoTranslation("Looks like you were running the release candidate version. It is recommended that you stay on the stable version."), True, ColTypes.Neutral)
+        Write(DoTranslation("Looks like you were running the release candidate version. It is recommended that you stay on the stable version."), True, ColTypes.Neutral)
 #End If
 
         'Parse real command-line arguments
@@ -494,15 +494,15 @@ Public Module KernelTools
     End Function
 
     Sub CheckKernelUpdates()
-        W(DoTranslation("Checking for system updates..."), True, ColTypes.Neutral)
+        Write(DoTranslation("Checking for system updates..."), True, ColTypes.Neutral)
         Dim AvailableUpdates As List(Of String) = FetchKernelUpdates()
         If AvailableUpdates IsNot Nothing AndAlso AvailableUpdates.Count > 0 Then
-            W(DoTranslation("Found new version: "), False, ColTypes.ListEntry)
-            W(AvailableUpdates(0), True, ColTypes.ListValue)
-            W(DoTranslation("You can download it at: "), False, ColTypes.ListEntry)
-            W(AvailableUpdates(1), True, ColTypes.ListValue)
+            Write(DoTranslation("Found new version: "), False, ColTypes.ListEntry)
+            Write(AvailableUpdates(0), True, ColTypes.ListValue)
+            Write(DoTranslation("You can download it at: "), False, ColTypes.ListEntry)
+            Write(AvailableUpdates(1), True, ColTypes.ListValue)
         ElseIf AvailableUpdates Is Nothing Then
-            W(DoTranslation("Failed to check for updates."), True, ColTypes.Error)
+            Write(DoTranslation("Failed to check for updates."), True, ColTypes.Error)
         End If
     End Sub
 

@@ -34,43 +34,43 @@ Public Module ZipHelpSystem
     Public Sub ZipShell_GetHelp(Optional ByVal Command As String = "")
         If Command = "" Then
             If simHelp = False Then
-                W(DoTranslation("General commands:"), True, ColTypes.Neutral)
+                Write(DoTranslation("General commands:"), True, ColTypes.Neutral)
                 For Each cmd As String In ZipShell_HelpEntries.Keys
-                    W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, ZipShell_HelpEntries(cmd))
+                    Write("- {0}: ", False, ColTypes.ListEntry, cmd) : Write("{0}", True, ColTypes.ListValue, ZipShell_HelpEntries(cmd))
                 Next
-                W(vbNewLine + DoTranslation("Mod commands:"), True, ColTypes.Neutral)
-                If ZipShell_ModHelpEntries.Count = 0 Then W("- " + DoTranslation("No mod commands."), True, ColTypes.Neutral)
+                Write(vbNewLine + DoTranslation("Mod commands:"), True, ColTypes.Neutral)
+                If ZipShell_ModHelpEntries.Count = 0 Then Write("- " + DoTranslation("No mod commands."), True, ColTypes.Neutral)
                 For Each cmd As String In ZipShell_ModHelpEntries.Keys
-                    W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, ZipShell_ModHelpEntries(cmd))
+                    Write("- {0}: ", False, ColTypes.ListEntry, cmd) : Write("{0}", True, ColTypes.ListValue, ZipShell_ModHelpEntries(cmd))
                 Next
-                W(vbNewLine + DoTranslation("Alias commands:"), True, ColTypes.Neutral)
-                If ZIPShellAliases.Count = 0 Then W("- " + DoTranslation("No alias commands."), True, ColTypes.Neutral)
+                Write(vbNewLine + DoTranslation("Alias commands:"), True, ColTypes.Neutral)
+                If ZIPShellAliases.Count = 0 Then Write("- " + DoTranslation("No alias commands."), True, ColTypes.Neutral)
                 For Each cmd As String In ZIPShellAliases.Keys
-                    W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, ZIPShellAliases(MailShellAliases(cmd)))
+                    Write("- {0}: ", False, ColTypes.ListEntry, cmd) : Write("{0}", True, ColTypes.ListValue, ZIPShellAliases(MailShellAliases(cmd)))
                 Next
             Else
                 For Each cmd As String In ZipShell_Commands.Keys
-                    W("{0}, ", False, ColTypes.ListEntry, cmd)
+                    Write("{0}, ", False, ColTypes.ListEntry, cmd)
                 Next
                 For Each cmd As String In ZipShell_ModHelpEntries.Keys
-                    W("{0}, ", False, ColTypes.ListEntry, cmd)
+                    Write("{0}, ", False, ColTypes.ListEntry, cmd)
                 Next
-                W(String.Join(", ", ZIPShellAliases.Keys), True, ColTypes.ListEntry)
+                Write(String.Join(", ", ZIPShellAliases.Keys), True, ColTypes.ListEntry)
             End If
         ElseIf Command = "help" Then
-            W(DoTranslation("Usage:") + " help [command]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " help [command]", True, ColTypes.Neutral)
         ElseIf Command = "exit" Then
-            W(DoTranslation("Usage:") + " exit", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " exit", True, ColTypes.Neutral)
         ElseIf Command = "chdir" Then
-            W(DoTranslation("Usage:") + " chdir <directory>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " chdir <directory>", True, ColTypes.Neutral)
         ElseIf Command = "cdir" Then
-            W(DoTranslation("Usage:") + " cdir", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " cdir", True, ColTypes.Neutral)
         ElseIf Command = "chadir" Then
-            W(DoTranslation("Usage:") + " chadir <archivedirectory>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " chadir <archivedirectory>", True, ColTypes.Neutral)
         ElseIf Command = "list" Then
-            W(DoTranslation("Usage:") + " list [directory]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " list [directory]", True, ColTypes.Neutral)
         ElseIf Command = "get" Then
-            W(DoTranslation("Usage:") + " get <entry> [where] [-absolute]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " get <entry> [where] [-absolute]", True, ColTypes.Neutral)
         End If
     End Sub
 

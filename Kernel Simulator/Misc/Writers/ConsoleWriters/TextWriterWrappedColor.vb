@@ -16,8 +16,6 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports System.Console
-
 Public Module TextWriterWrappedColor
 
     ''' <summary>
@@ -35,8 +33,7 @@ Public Module TextWriterWrappedColor
             Dim OldTop As Integer
             Try
                 'Check if default console output equals the new console output text writer. If it does, write in color, else, suppress the colors.
-                'Check if default console output equals the new console output text writer. If it does, write in color, else, suppress the colors.
-                If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out) Then
+                If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out) Then
                     If colorType = ColTypes.Neutral Then
                         SetConsoleColor(New Color(NeutralTextColor))
                     ElseIf colorType = ColTypes.Input Then
@@ -80,18 +77,18 @@ Public Module TextWriterWrappedColor
                 'Format string as needed
                 Text = String.Format(Text, vars)
 
-                OldTop = CursorTop
+                OldTop = Console.CursorTop
                 For Each TextChar As Char In Text.ToString.ToCharArray
-                    Write(TextChar)
-                    LinesMade += CursorTop - OldTop
-                    OldTop = CursorTop
-                    If LinesMade = WindowHeight - 1 Then
-                        If ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                    Console.Write(TextChar)
+                    LinesMade += Console.CursorTop - OldTop
+                    OldTop = Console.CursorTop
+                    If LinesMade = Console.WindowHeight - 1 Then
+                        If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
                         LinesMade = 0
                     End If
                 Next
-                If Line Then WriteLine()
-                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then ResetColor()
+                If Line Then Console.WriteLine()
+                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -122,18 +119,18 @@ Public Module TextWriterWrappedColor
                 'Format string as needed
                 Text = String.Format(Text, vars)
 
-                OldTop = CursorTop
+                OldTop = Console.CursorTop
                 For Each TextChar As Char In Text.ToString.ToCharArray
-                    Write(TextChar)
-                    LinesMade += CursorTop - OldTop
-                    If LinesMade = WindowHeight - 1 Then
-                        If ReadKey(True).Key = ConsoleKey.Escape Then Exit For
-                        OldTop = CursorTop
+                    Console.Write(TextChar)
+                    LinesMade += Console.CursorTop - OldTop
+                    If LinesMade = Console.WindowHeight - 1 Then
+                        If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                        OldTop = Console.CursorTop
                         LinesMade = 0
                     End If
                 Next
-                If Line Then WriteLine()
-                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then ResetColor()
+                If Line Then Console.WriteLine()
+                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -165,18 +162,18 @@ Public Module TextWriterWrappedColor
                 'Format string as needed
                 Text = String.Format(Text, vars)
 
-                OldTop = CursorTop
+                OldTop = Console.CursorTop
                 For Each TextChar As Char In Text.ToString.ToCharArray
-                    Write(TextChar)
-                    LinesMade += CursorTop - OldTop
-                    If LinesMade = WindowHeight - 1 Then
-                        If ReadKey(True).Key = ConsoleKey.Escape Then Exit For
-                        OldTop = CursorTop
+                    Console.Write(TextChar)
+                    LinesMade += Console.CursorTop - OldTop
+                    If LinesMade = Console.WindowHeight - 1 Then
+                        If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                        OldTop = Console.CursorTop
                         LinesMade = 0
                     End If
                 Next
-                If Line Then WriteLine()
-                If BackgroundColor = ConsoleColor.Black Then ResetColor()
+                If Line Then Console.WriteLine()
+                If BackgroundColor = ConsoleColor.Black Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -201,7 +198,7 @@ Public Module TextWriterWrappedColor
             Dim OldTop As Integer
             Try
                 'Try to write to console
-                If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out) Then
+                If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out) Then
                     SetConsoleColor(color)
                     SetConsoleColor(New Color(BackgroundColor), True)
                 End If
@@ -209,18 +206,18 @@ Public Module TextWriterWrappedColor
                 'Format string as needed
                 Text = String.Format(Text, vars)
 
-                OldTop = CursorTop
+                OldTop = Console.CursorTop
                 For Each TextChar As Char In Text.ToString.ToCharArray
-                    Write(TextChar)
-                    LinesMade += CursorTop - OldTop
-                    If LinesMade = WindowHeight - 1 Then
-                        If ReadKey(True).Key = ConsoleKey.Escape Then Exit For
-                        OldTop = CursorTop
+                    Console.Write(TextChar)
+                    LinesMade += Console.CursorTop - OldTop
+                    If LinesMade = Console.WindowHeight - 1 Then
+                        If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                        OldTop = Console.CursorTop
                         LinesMade = 0
                     End If
                 Next
-                If Line Then WriteLine()
-                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then ResetColor()
+                If Line Then Console.WriteLine()
+                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -246,7 +243,7 @@ Public Module TextWriterWrappedColor
             Dim OldTop As Integer
             Try
                 'Try to write to console
-                If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out) Then
+                If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out) Then
                     SetConsoleColor(ForegroundColor)
                     SetConsoleColor(BackgroundColor, True)
                 End If
@@ -254,18 +251,18 @@ Public Module TextWriterWrappedColor
                 'Format string as needed
                 Text = String.Format(Text, vars)
 
-                OldTop = CursorTop
+                OldTop = Console.CursorTop
                 For Each TextChar As Char In Text.ToString.ToCharArray
-                    Write(TextChar)
-                    LinesMade += CursorTop - OldTop
-                    If LinesMade = WindowHeight - 1 Then
-                        If ReadKey(True).Key = ConsoleKey.Escape Then Exit For
-                        OldTop = CursorTop
+                    Console.Write(TextChar)
+                    LinesMade += Console.CursorTop - OldTop
+                    If LinesMade = Console.WindowHeight - 1 Then
+                        If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                        OldTop = Console.CursorTop
                         LinesMade = 0
                     End If
                 Next
-                If Line Then WriteLine()
-                If BackgroundColor.PlainSequence = "0" Or BackgroundColor.PlainSequence = "0;0;0" Then ResetColor()
+                If Line Then Console.WriteLine()
+                If BackgroundColor.PlainSequence = "0" Or BackgroundColor.PlainSequence = "0;0;0" Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)

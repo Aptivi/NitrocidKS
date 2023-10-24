@@ -27,7 +27,7 @@ Module Speller
         Dim RandomDriver As New Random
         Dim RandomWord As String
         Dim SpeltWord As String
-        W(DoTranslation("Press CTRL+C to exit."), True, ColTypes.Neutral)
+        Write(DoTranslation("Press CTRL+C to exit."), True, ColTypes.Neutral)
         If Words.Count = 0 Then
             Wdbg("I", "Downloading words...")
             Words.AddRange(DownloadString("https://raw.githubusercontent.com/sindresorhus/word-list/master/words.txt").SplitNewLines.ToList)
@@ -35,15 +35,15 @@ Module Speller
         While True
             RandomWord = Words.ElementAt(RandomDriver.Next(Words.Count))
             Wdbg("I", "Word: {0}", RandomWord)
-            W(RandomWord, True, ColTypes.Input)
+            Write(RandomWord, True, ColTypes.Input)
             SpeltWord = ReadLineNoInput("")
 
             If SpeltWord = RandomWord Then
                 Wdbg("I", "Spelt: {0} = {1}", SpeltWord, RandomWord)
-                W(DoTranslation("Spelt perfectly!"), True, ColTypes.Neutral)
+                Write(DoTranslation("Spelt perfectly!"), True, ColTypes.Neutral)
             Else
                 Wdbg("I", "Spelt: {0} != {1}", SpeltWord, RandomWord)
-                W(DoTranslation("Spelt incorrectly."), True, ColTypes.Neutral)
+                Write(DoTranslation("Spelt incorrectly."), True, ColTypes.Neutral)
             End If
         End While
     End Sub

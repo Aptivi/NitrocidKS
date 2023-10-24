@@ -16,8 +16,6 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports System.Console
-
 Public Module ListWriterColor
 #Region "Dictionary"
     ''' <summary>
@@ -43,27 +41,27 @@ Public Module ListWriterColor
                 Dim OldTop As Integer
 
                 'Try to write list to console
-                OldTop = CursorTop
+                OldTop = Console.CursorTop
                 For Each ListEntry As TKey In List.Keys
                     Dim Values As New List(Of Object)
                     If TryCast(List(ListEntry), IEnumerable) IsNot Nothing And TryCast(List(ListEntry), String) Is Nothing Then
                         For Each Value In CType(List(ListEntry), IEnumerable)
                             Values.Add(Value)
                         Next
-                        W("- {0}: ", False, ColTypes.ListEntry, ListEntry) : W("{0}", True, ColTypes.ListValue, String.Join(", ", Values))
+                        Write("- {0}: ", False, ColTypes.ListEntry, ListEntry) : Write("{0}", True, ColTypes.ListValue, String.Join(", ", Values))
                     Else
-                        W("- {0}: ", False, ColTypes.ListEntry, ListEntry) : W("{0}", True, ColTypes.ListValue, List(ListEntry))
+                        Write("- {0}: ", False, ColTypes.ListEntry, ListEntry) : Write("{0}", True, ColTypes.ListValue, List(ListEntry))
                     End If
                     If Wrap Then
-                        LinesMade += CursorTop - OldTop
-                        OldTop = CursorTop
-                        If LinesMade = WindowHeight - 1 Then
-                            If ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                        LinesMade += Console.CursorTop - OldTop
+                        OldTop = Console.CursorTop
+                        If LinesMade = Console.WindowHeight - 1 Then
+                            If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
                             LinesMade = 0
                         End If
                     End If
                 Next
-                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then ResetColor()
+                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -100,7 +98,7 @@ Public Module ListWriterColor
                 Dim OldTop As Integer
 
                 'Try to write list to console
-                OldTop = CursorTop
+                OldTop = Console.CursorTop
                 For Each ListEntry As TKey In List.Keys
                     Dim Values As New List(Of Object)
                     If TryCast(List(ListEntry), IEnumerable) IsNot Nothing And TryCast(List(ListEntry), String) Is Nothing Then
@@ -112,15 +110,15 @@ Public Module ListWriterColor
                         WriteC16("- {0}: ", False, ListKeyColor, ListEntry) : WriteC16("{0}", True, ListValueColor, List(ListEntry))
                     End If
                     If Wrap Then
-                        LinesMade += CursorTop - OldTop
-                        OldTop = CursorTop
-                        If LinesMade = WindowHeight - 1 Then
-                            If ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                        LinesMade += Console.CursorTop - OldTop
+                        OldTop = Console.CursorTop
+                        If LinesMade = Console.WindowHeight - 1 Then
+                            If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
                             LinesMade = 0
                         End If
                     End If
                 Next
-                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then ResetColor()
+                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -157,7 +155,7 @@ Public Module ListWriterColor
                 Dim OldTop As Integer
 
                 'Try to write list to console
-                OldTop = CursorTop
+                OldTop = Console.CursorTop
                 For Each ListEntry As TKey In List.Keys
                     Dim Values As New List(Of Object)
                     If TryCast(List(ListEntry), IEnumerable) IsNot Nothing And TryCast(List(ListEntry), String) Is Nothing Then
@@ -169,15 +167,15 @@ Public Module ListWriterColor
                         WriteC("- {0}: ", False, ListKeyColor, ListEntry) : WriteC("{0}", True, ListValueColor, List(ListEntry))
                     End If
                     If Wrap Then
-                        LinesMade += CursorTop - OldTop
-                        OldTop = CursorTop
-                        If LinesMade = WindowHeight - 1 Then
-                            If ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                        LinesMade += Console.CursorTop - OldTop
+                        OldTop = Console.CursorTop
+                        If LinesMade = Console.WindowHeight - 1 Then
+                            If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
                             LinesMade = 0
                         End If
                     End If
                 Next
-                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then ResetColor()
+                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -212,28 +210,28 @@ Public Module ListWriterColor
                 Dim EntryNumber As Integer = 1
 
                 'Try to write list to console
-                OldTop = CursorTop
+                OldTop = Console.CursorTop
                 For Each ListEntry As T In List
                     Dim Values As New List(Of Object)
                     If TryCast(ListEntry, IEnumerable) IsNot Nothing And TryCast(ListEntry, String) Is Nothing Then
                         For Each Value In CType(ListEntry, IEnumerable)
                             Values.Add(Value)
                         Next
-                        W("- [{0}] ", False, ColTypes.ListEntry, EntryNumber) : W("{0}", True, ColTypes.ListValue, String.Join(", ", Values))
+                        Write("- [{0}] ", False, ColTypes.ListEntry, EntryNumber) : Write("{0}", True, ColTypes.ListValue, String.Join(", ", Values))
                     Else
-                        W("- [{0}] ", False, ColTypes.ListEntry, EntryNumber) : W("{0}", True, ColTypes.ListValue, ListEntry)
+                        Write("- [{0}] ", False, ColTypes.ListEntry, EntryNumber) : Write("{0}", True, ColTypes.ListValue, ListEntry)
                     End If
                     EntryNumber += 1
                     If Wrap Then
-                        LinesMade += CursorTop - OldTop
-                        OldTop = CursorTop
-                        If LinesMade = WindowHeight - 1 Then
-                            If ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                        LinesMade += Console.CursorTop - OldTop
+                        OldTop = Console.CursorTop
+                        If LinesMade = Console.WindowHeight - 1 Then
+                            If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
                             LinesMade = 0
                         End If
                     End If
                 Next
-                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then ResetColor()
+                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -271,7 +269,7 @@ Public Module ListWriterColor
                 Dim EntryNumber As Integer = 1
 
                 'Try to write list to console
-                OldTop = CursorTop
+                OldTop = Console.CursorTop
                 For Each ListEntry As T In List
                     Dim Values As New List(Of Object)
                     If TryCast(ListEntry, IEnumerable) IsNot Nothing And TryCast(ListEntry, String) Is Nothing Then
@@ -284,15 +282,15 @@ Public Module ListWriterColor
                     End If
                     EntryNumber += 1
                     If Wrap Then
-                        LinesMade += CursorTop - OldTop
-                        OldTop = CursorTop
-                        If LinesMade = WindowHeight - 1 Then
-                            If ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                        LinesMade += Console.CursorTop - OldTop
+                        OldTop = Console.CursorTop
+                        If LinesMade = Console.WindowHeight - 1 Then
+                            If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
                             LinesMade = 0
                         End If
                     End If
                 Next
-                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then ResetColor()
+                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -330,7 +328,7 @@ Public Module ListWriterColor
                 Dim EntryNumber As Integer = 1
 
                 'Try to write list to console
-                OldTop = CursorTop
+                OldTop = Console.CursorTop
                 For Each ListEntry As T In List
                     Dim Values As New List(Of Object)
                     If TryCast(ListEntry, IEnumerable) IsNot Nothing And TryCast(ListEntry, String) Is Nothing Then
@@ -343,15 +341,15 @@ Public Module ListWriterColor
                     End If
                     EntryNumber += 1
                     If Wrap Then
-                        LinesMade += CursorTop - OldTop
-                        OldTop = CursorTop
-                        If LinesMade = WindowHeight - 1 Then
-                            If ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                        LinesMade += Console.CursorTop - OldTop
+                        OldTop = Console.CursorTop
+                        If LinesMade = Console.WindowHeight - 1 Then
+                            If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
                             LinesMade = 0
                         End If
                     End If
                 Next
-                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then ResetColor()
+                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)

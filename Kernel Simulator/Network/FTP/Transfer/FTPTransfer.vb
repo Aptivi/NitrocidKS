@@ -34,7 +34,7 @@ Public Module FTPTransfer
                                                           ConsoleOriginalPosition_LEFT = Console.CursorLeft
                                                           ConsoleOriginalPosition_TOP = Console.CursorTop
                                                           If progressFlag = True And percentage.Progress <> 100 Then
-                                                              W(" {0}% (ETA: {1}d {2}:{3}:{4} @ {5})", False, ColTypes.Neutral, FormatNumber(percentage.Progress, 1), percentage.ETA.Days, percentage.ETA.Hours, percentage.ETA.Minutes, percentage.ETA.Seconds, percentage.TransferSpeedToString)
+                                                              Write(" {0}% (ETA: {1}d {2}:{3}:{4} @ {5})", False, ColTypes.Neutral, FormatNumber(percentage.Progress, 1), percentage.ETA.Days, percentage.ETA.Hours, percentage.ETA.Minutes, percentage.ETA.Seconds, percentage.TransferSpeedToString)
                                                           End If
                                                           Console.SetCursorPosition(ConsoleOriginalPosition_LEFT, ConsoleOriginalPosition_TOP)
                                                       End If

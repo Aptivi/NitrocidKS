@@ -59,7 +59,7 @@ Public Module Login
             End If
 
             'Generate user list
-            If ShowAvailableUsers Then W(DoTranslation("Available usernames: {0}"), True, ColTypes.Neutral, String.Join(", ", ListAllUsers))
+            If ShowAvailableUsers Then Write(DoTranslation("Available usernames: {0}"), True, ColTypes.Neutral, String.Join(", ", ListAllUsers))
 
             'Read MOTD and MAL
             ReadMOTDFromFile(MessageType.MOTD)
@@ -68,22 +68,22 @@ Public Module Login
             'Show MOTD once
             Wdbg("I", "showMOTDOnceFlag = {0}, showMOTD = {1}", showMOTDOnceFlag, showMOTD)
             If showMOTDOnceFlag = True And showMOTD = True Then
-                W(vbNewLine + ProbePlaces(MOTDMessage), True, ColTypes.Banner)
+                Write(vbNewLine + ProbePlaces(MOTDMessage), True, ColTypes.Banner)
             End If
             showMOTDOnceFlag = False
 
             'Prompt user to login
-            W(DoTranslation("Username: "), False, ColTypes.Input)
+            Write(DoTranslation("Username: "), False, ColTypes.Input)
             answeruser = Console.ReadLine()
 
             'Parse input
             If InStr(answeruser, " ") > 0 Then
                 Wdbg("W", "Spaces found in username.")
-                W(DoTranslation("Spaces are not allowed."), True, ColTypes.Error)
+                Write(DoTranslation("Spaces are not allowed."), True, ColTypes.Error)
                 EventManager.RaiseLoginError(answeruser, "spaces")
             ElseIf answeruser.IndexOfAny("[~`!@#$%^&*()-+=|{}':;.,<>/?]".ToCharArray) <> -1 Then
                 Wdbg("W", "Unknown characters found in username.")
-                W(DoTranslation("Special characters are not allowed."), True, ColTypes.Error)
+                Write(DoTranslation("Special characters are not allowed."), True, ColTypes.Error)
                 EventManager.RaiseLoginError(answeruser, "specialchars")
             ElseIf userword.ContainsKey(answeruser) Then
                 Wdbg("I", "Username correct. Finding if the user is disabled...")
@@ -92,12 +92,12 @@ Public Module Login
                     ShowPasswordPrompt(answeruser)
                 Else
                     Wdbg("W", "User can't log in. (User is in disabled list)")
-                    W(DoTranslation("User is disabled."), True, ColTypes.Error)
+                    Write(DoTranslation("User is disabled."), True, ColTypes.Error)
                     EventManager.RaiseLoginError(answeruser, "disabled")
                 End If
             Else
                 Wdbg("E", "Username not found.")
-                W(DoTranslation("Wrong username."), True, ColTypes.Error)
+                Write(DoTranslation("Wrong username."), True, ColTypes.Error)
                 EventManager.RaiseLoginError(answeruser, "notfound")
             End If
         End While
@@ -128,7 +128,7 @@ Public Module Login
             If Not password = GetEmptyHash(Algorithms.SHA256) Then 'No password
                 'Wait for input
                 Wdbg("I", "Password not empty")
-                W(DoTranslation("{0}'s password: "), False, ColTypes.Input, usernamerequested)
+                Write(DoTranslation("{0}'s password: "), False, ColTypes.Input, usernamerequested)
 
                 'Get input
                 answerpass = ReadLineNoInput("*"c)
@@ -146,7 +146,7 @@ Public Module Login
                     Exit Sub
                 Else
                     Wdbg("I", "Passowrd written wrong...")
-                    W(DoTranslation("Wrong password."), True, ColTypes.Error)
+                    Write(DoTranslation("Wrong password."), True, ColTypes.Error)
                     EventManager.RaiseLoginError(usernamerequested, "wrongpass")
                     If Not maintenance Then
                         If Not LockMode Then
@@ -195,7 +195,7 @@ Public Module Login
         If LockMode = True Then LockMode = False
         Wdbg("I", "Lock released.")
         showMOTDOnceFlag = True
-        W(ProbePlaces(MAL), True, ColTypes.Banner)
+        Write(ProbePlaces(MAL), True, ColTypes.Banner)
 
         'Fire event PostLogin
         EventManager.RaisePostLogin(signedinusrnm)

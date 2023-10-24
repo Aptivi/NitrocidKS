@@ -16,8 +16,6 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports System.Console
-
 Public Module TextWriterColor
 
 #If Not NOWRITELOCK Then
@@ -31,13 +29,13 @@ Public Module TextWriterColor
     ''' <param name="Line">Whether to print a new line or not</param>
     ''' <param name="colorType">A type of colors that will be changed.</param>
     ''' <param name="vars">Endless amounts of any variables that is separated by commas.</param>
-    Public Sub W(ByVal Text As String, ByVal Line As Boolean, ByVal colorType As ColTypes, ByVal ParamArray vars() As Object)
+    Public Sub Write(ByVal Text As String, ByVal Line As Boolean, ByVal colorType As ColTypes, ByVal ParamArray vars() As Object)
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
             Try
                 'Check if default console output equals the new console output text writer. If it does, write in color, else, suppress the colors.
-                If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out) Then
+                If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out) Then
                     If colorType = ColTypes.Neutral Then
                         SetConsoleColor(New Color(NeutralTextColor))
                     ElseIf colorType = ColTypes.Input Then
@@ -78,8 +76,8 @@ Public Module TextWriterColor
                     SetConsoleColor(New Color(BackgroundColor), True)
                 End If
 
-                If Line Then WriteLine(Text, vars) Else Write(Text, vars)
-                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then ResetColor()
+                If Line Then Console.WriteLine(Text, vars) Else Console.Write(Text, vars)
+                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -105,8 +103,8 @@ Public Module TextWriterColor
                 Console.BackgroundColor = IIf(IsNumeric(New Color(BackgroundColor).PlainSequence), If(BackgroundColor <= 15, [Enum].Parse(GetType(ConsoleColor), BackgroundColor), ConsoleColor.Black), ConsoleColor.Black)
                 Console.ForegroundColor = color
 
-                If Line Then WriteLine(Text, vars) Else Write(Text, vars)
-                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then ResetColor()
+                If Line Then Console.WriteLine(Text, vars) Else Console.Write(Text, vars)
+                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -133,8 +131,8 @@ Public Module TextWriterColor
                 Console.BackgroundColor = BackgroundColor
                 Console.ForegroundColor = ForegroundColor
 
-                If Line Then WriteLine(Text, vars) Else Write(Text, vars)
-                If BackgroundColor = ConsoleColor.Black Then ResetColor()
+                If Line Then Console.WriteLine(Text, vars) Else Console.Write(Text, vars)
+                If BackgroundColor = ConsoleColor.Black Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -157,13 +155,13 @@ Public Module TextWriterColor
 #End If
             Try
                 'Try to write to console
-                If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out) Then
+                If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out) Then
                     SetConsoleColor(color)
                     SetConsoleColor(New Color(BackgroundColor), True)
                 End If
 
-                If Line Then WriteLine(Text, vars) Else Write(Text, vars)
-                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then ResetColor()
+                If Line Then Console.WriteLine(Text, vars) Else Console.Write(Text, vars)
+                If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)
@@ -187,13 +185,13 @@ Public Module TextWriterColor
 #End If
             Try
                 'Try to write to console
-                If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out) Then
+                If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out) Then
                     SetConsoleColor(ForegroundColor)
                     SetConsoleColor(BackgroundColor, True)
                 End If
 
-                If Line Then WriteLine(Text, vars) Else Write(Text, vars)
-                If BackgroundColor.PlainSequence = "0" Or BackgroundColor.PlainSequence = "0;0;0" Then ResetColor()
+                If Line Then Console.WriteLine(Text, vars) Else Console.Write(Text, vars)
+                If BackgroundColor.PlainSequence = "0" Or BackgroundColor.PlainSequence = "0;0;0" Then Console.ResetColor()
             Catch ex As Exception
                 WStkTrc(ex)
                 KernelError("C", False, 0, DoTranslation("There is a serious error when printing text."), ex)

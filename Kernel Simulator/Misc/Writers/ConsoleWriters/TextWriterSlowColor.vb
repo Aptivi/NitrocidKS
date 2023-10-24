@@ -16,7 +16,6 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports System.Console
 Imports System.Threading
 
 Module TextWriterSlowColor
@@ -39,10 +38,10 @@ Module TextWriterSlowColor
             Dim chars As List(Of Char) = msg.ToCharArray.ToList
             For Each ch As Char In chars
                 Thread.Sleep(MsEachLetter)
-                Write(ch)
+                Console.Write(ch)
             Next
             If Line Then
-                WriteLine()
+                Console.WriteLine()
             End If
 #If Not NOWRITELOCK Then
         End SyncLock
@@ -62,7 +61,7 @@ Module TextWriterSlowColor
         SyncLock WriteLock
 #End If
             'Check if default console output equals the new console output text writer. If it does, write in color, else, suppress the colors.
-            If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out) Then
+            If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out) Then
                 If colorType = ColTypes.Neutral Then
                     SetConsoleColor(New Color(NeutralTextColor))
                 ElseIf colorType = ColTypes.Input Then
@@ -110,12 +109,12 @@ Module TextWriterSlowColor
             Dim chars As List(Of Char) = msg.ToCharArray.ToList
             For Each ch As Char In chars
                 Thread.Sleep(MsEachLetter)
-                Write(ch)
+                Console.Write(ch)
             Next
             If Line Then
-                WriteLine()
+                Console.WriteLine()
             End If
-            If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then ResetColor()
+            If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then Console.ResetColor()
 #If Not NOWRITELOCK Then
         End SyncLock
 #End If
@@ -143,12 +142,12 @@ Module TextWriterSlowColor
             Dim chars As List(Of Char) = msg.ToCharArray.ToList
             For Each ch As Char In chars
                 Thread.Sleep(MsEachLetter)
-                Write(ch)
+                Console.Write(ch)
             Next
             If Line Then
-                WriteLine()
+                Console.WriteLine()
             End If
-            If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then ResetColor()
+            If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then Console.ResetColor()
 #If Not NOWRITELOCK Then
         End SyncLock
 #End If
@@ -177,12 +176,12 @@ Module TextWriterSlowColor
             Dim chars As List(Of Char) = msg.ToCharArray.ToList
             For Each ch As Char In chars
                 Thread.Sleep(MsEachLetter)
-                Write(ch)
+                Console.Write(ch)
             Next
             If Line Then
-                WriteLine()
+                Console.WriteLine()
             End If
-            If BackgroundColor = ConsoleColor.Black Then ResetColor()
+            If BackgroundColor = ConsoleColor.Black Then Console.ResetColor()
 #If Not NOWRITELOCK Then
         End SyncLock
 #End If
@@ -200,7 +199,7 @@ Module TextWriterSlowColor
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
-            If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out) Then
+            If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out) Then
                 SetConsoleColor(color)
                 SetConsoleColor(New Color(BackgroundColor), True)
             End If
@@ -212,12 +211,12 @@ Module TextWriterSlowColor
             Dim chars As List(Of Char) = msg.ToCharArray.ToList
             For Each ch As Char In chars
                 Thread.Sleep(MsEachLetter)
-                Write(ch)
+                Console.Write(ch)
             Next
             If Line Then
-                WriteLine()
+                Console.WriteLine()
             End If
-            If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then ResetColor()
+            If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then Console.ResetColor()
 #If Not NOWRITELOCK Then
         End SyncLock
 #End If
@@ -236,7 +235,7 @@ Module TextWriterSlowColor
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
-            If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out) Then
+            If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out) Then
                 SetConsoleColor(ForegroundColor)
                 SetConsoleColor(BackgroundColor, True)
             End If
@@ -248,12 +247,12 @@ Module TextWriterSlowColor
             Dim chars As List(Of Char) = msg.ToCharArray.ToList
             For Each ch As Char In chars
                 Thread.Sleep(MsEachLetter)
-                Write(ch)
+                Console.Write(ch)
             Next
             If Line Then
-                WriteLine()
+                Console.WriteLine()
             End If
-            If BackgroundColor.PlainSequence = "0" Or BackgroundColor.PlainSequence = "0;0;0" Then ResetColor()
+            If BackgroundColor.PlainSequence = "0" Or BackgroundColor.PlainSequence = "0;0;0" Then Console.ResetColor()
 #If Not NOWRITELOCK Then
         End SyncLock
 #End If

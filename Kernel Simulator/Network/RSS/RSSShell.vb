@@ -49,7 +49,7 @@ Begin:
             If String.IsNullOrWhiteSpace(RSSFeedLink) Then
                 Do While String.IsNullOrWhiteSpace(RSSFeedLink)
                     Try
-                        W(DoTranslation("Enter an RSS feed URL:") + " ", False, ColTypes.Input)
+                        Write(DoTranslation("Enter an RSS feed URL:") + " ", False, ColTypes.Input)
                         RSSFeedLink = Console.ReadLine
                         RSSFeedInstance = New RSSFeed(RSSFeedLink, RSSFeedType.Infer)
                         RSSFeedLink = RSSFeedInstance.FeedUrl
@@ -57,7 +57,7 @@ Begin:
                     Catch ex As Exception
                         Wdbg("E", "Failed to parse RSS feed URL {0}: {1}", FeedUrl, ex.Message)
                         WStkTrc(ex)
-                        W(DoTranslation("Failed to parse feed URL:") + " {0}", True, ColTypes.Error, ex.Message)
+                        Write(DoTranslation("Failed to parse feed URL:") + " {0}", True, ColTypes.Error, ex.Message)
                         RSSFeedLink = ""
                     End Try
                 Loop
@@ -72,7 +72,7 @@ Begin:
                 Catch ex As Exception
                     Wdbg("E", "Failed to parse RSS feed URL {0}: {1}", RSSFeedLink, ex.Message)
                     WStkTrc(ex)
-                    W(DoTranslation("Failed to parse feed URL:") + " {0}", True, ColTypes.Error, ex.Message)
+                    Write(DoTranslation("Failed to parse feed URL:") + " {0}", True, ColTypes.Error, ex.Message)
                     RSSFeedLink = ""
                     GoTo Begin
                 End Try
@@ -81,7 +81,7 @@ Begin:
                 If DefConsoleOut IsNot Nothing Then
                     Console.SetOut(DefConsoleOut)
                 End If
-                W("[", False, ColTypes.Gray) : W("{0}", False, ColTypes.UserName, New Uri(RSSFeedLink).Host) : W("] > ", False, ColTypes.Gray) : W("", False, ColTypes.Input)
+                Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, New Uri(RSSFeedLink).Host) : Write("] > ", False, ColTypes.Gray) : Write("", False, ColTypes.Input)
 
                 'Prompt for command
                 EventManager.RaiseRSSShellInitialized(RSSFeedLink)
@@ -109,14 +109,14 @@ Begin:
                             WrittenCommand = WrittenCommand.Replace($"""{Command}""", Command)
                             ExecuteRSSAlias(WrittenCommand)
                         Else
-                            W(DoTranslation("The specified RSS shell command is not found."), True, ColTypes.Error)
+                            Write(DoTranslation("The specified RSS shell command is not found."), True, ColTypes.Error)
                             Wdbg("E", "Command {0} not found in the list of {1} commands.", WrittenCommand.Split(" ")(0), RSSCommands.Count)
                         End If
                     End If
                 Catch ex As Exception
                     Wdbg("E", "Unknown RSS shell error: {0}", ex.Message)
                     WStkTrc(ex)
-                    W(DoTranslation("Unknown shell error:") + " {0}", True, ColTypes.Error, ex.Message)
+                    Write(DoTranslation("Unknown shell error:") + " {0}", True, ColTypes.Error, ex.Message)
                 End Try
 
                 'This is to fix race condition between shell initialization and starting the event handler thread

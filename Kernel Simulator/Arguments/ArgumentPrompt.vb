@@ -31,18 +31,18 @@ Module ArgumentPrompt
         Dim AnswerArgs As String = ""
 
         'Shows available arguments
-        W(DoTranslation("Available arguments: {0}") + vbNewLine +
+        Write(DoTranslation("Available arguments: {0}") + vbNewLine +
           DoTranslation("'q' to quit."), True, ColTypes.Neutral, String.Join(", ", AvailableArgs))
         While Not AnswerArgs = "q"
             'Prompts for the arguments
-            W(DoTranslation("Arguments ('help' for help): "), False, ColTypes.Input, String.Join(", ", AvailableArgs))
+            Write(DoTranslation("Arguments ('help' for help): "), False, ColTypes.Input, String.Join(", ", AvailableArgs))
             AnswerArgs = Console.ReadLine()
 
             'Add an argument to the entered arguments list
             If AnswerArgs <> "q" Then
                 For Each AnswerArg As String In AnswerArgs.Split(","c)
                     If AnswerArg.Contains("help") Then
-                        W(DoTranslation("Separate boot arguments with commas without spaces, for example, 'motd,gpuprobe'") + vbNewLine +
+                        Write(DoTranslation("Separate boot arguments with commas without spaces, for example, 'motd,gpuprobe'") + vbNewLine +
                           DoTranslation("Separate commands on 'cmdinject' with colons with spaces, for example, 'cmdinject setthemes Hacker : beep 1024 0.5'") + vbNewLine +
                           DoTranslation("Note that the 'debug' argument does not fully cover the kernel."), True, ColTypes.Neutral)
                         Exit For
@@ -54,9 +54,9 @@ Module ArgumentPrompt
                 If InjMode Then
                     argsInjected = True
                     EventManager.RaiseArgumentsInjected(EnteredArguments)
-                    W(DoTranslation("Injected arguments will be scheduled to run at next reboot."), True, ColTypes.Neutral)
+                    Write(DoTranslation("Injected arguments will be scheduled to run at next reboot."), True, ColTypes.Neutral)
                 Else
-                    W(DoTranslation("Starting the kernel with:") + " {0}", True, ColTypes.Neutral, String.Join(", ", EnteredArguments))
+                    Write(DoTranslation("Starting the kernel with:") + " {0}", True, ColTypes.Neutral, String.Join(", ", EnteredArguments))
                     ParseArguments()
                 End If
             End If

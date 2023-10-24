@@ -79,7 +79,7 @@ Module TestShell
             If DefConsoleOut IsNot Nothing Then
                 Console.SetOut(DefConsoleOut)
             End If
-            W("(t)> ", False, ColTypes.Input)
+            Write("(t)> ", False, ColTypes.Input)
             FullCmd = Console.ReadLine
             Try
                 If Not (FullCmd = Nothing Or FullCmd?.StartsWithAnyOf({" ", "#"}) = True) Then
@@ -97,13 +97,13 @@ Module TestShell
                         FullCmd = FullCmd.Replace($"""{Command}""", Command)
                         ExecuteTestAlias(FullCmd)
                     Else
-                        W(DoTranslation("Command {0} not found. See the ""help"" command for the list of commands."), True, ColTypes.Error, Command)
+                        Write(DoTranslation("Command {0} not found. See the ""help"" command for the list of commands."), True, ColTypes.Error, Command)
                     End If
                 Else
                     Thread.Sleep(30) 'This is to fix race condition between test shell initialization and starting the event handler thread
                 End If
             Catch ex As Exception
-                W(DoTranslation("Error in test shell: {0}"), True, ColTypes.Error, ex.Message)
+                Write(DoTranslation("Error in test shell: {0}"), True, ColTypes.Error, ex.Message)
                 Wdbg("E", "Error: {0}", ex.Message)
                 WStkTrc(ex)
             End Try

@@ -57,22 +57,22 @@ Module MailGetCommand
                     If FullArgsLQ?.Count > 0 Then
                         Wdbg("I", "Page is numeric? {0}", FullArgsLQ(0).IsNumeric)
                         If FullArgsLQ(0).IsNumeric Then
-                            W(MailListMessages(FullArgsLQ(0)), False, ColTypes.Neutral)
+                            Write(MailListMessages(FullArgsLQ(0)), False, ColTypes.Neutral)
                         Else
-                            W(DoTranslation("Page is not a numeric value."), True, ColTypes.Error)
+                            Write(DoTranslation("Page is not a numeric value."), True, ColTypes.Error)
                         End If
                     Else
-                        W(MailListMessages(1), False, ColTypes.Neutral)
+                        Write(MailListMessages(1), False, ColTypes.Neutral)
                     End If
                 Case "lsdirs"
-                    W(MailListDirectories, False, ColTypes.Neutral)
+                    Write(MailListDirectories, False, ColTypes.Neutral)
                 Case "read"
                     If RequiredArgsProvided Then
                         Wdbg("I", "Message number is numeric? {0}", FullArgsLQ(0).IsNumeric)
                         If FullArgsLQ(0).IsNumeric Then
                             MailPrintMessage(FullArgsLQ(0))
                         Else
-                            W(DoTranslation("Message number is not a numeric value."), True, ColTypes.Error)
+                            Write(DoTranslation("Message number is not a numeric value."), True, ColTypes.Error)
                         End If
                     End If
                 Case "readenc"
@@ -81,7 +81,7 @@ Module MailGetCommand
                         If FullArgsLQ(0).IsNumeric Then
                             MailPrintMessage(FullArgsLQ(0), True)
                         Else
-                            W(DoTranslation("Message number is not a numeric value."), True, ColTypes.Error)
+                            Write(DoTranslation("Message number is not a numeric value."), True, ColTypes.Error)
                         End If
                     End If
                 Case "send", "sendenc"
@@ -89,7 +89,7 @@ Module MailGetCommand
                     Dim Body As New BodyBuilder
 
                     'Prompt for receiver e-mail address
-                    W(DoTranslation("Enter recipient mail address:") + " ", False, ColTypes.Input)
+                    Write(DoTranslation("Enter recipient mail address:") + " ", False, ColTypes.Input)
                     Receiver = Console.ReadLine
                     Wdbg("I", "Recipient: {0}", Receiver)
 
@@ -98,12 +98,12 @@ Module MailGetCommand
                         Wdbg("I", "Mail format satisfied. Contains ""@"" and contains ""."" in the second part after the ""@"" symbol.")
 
                         'Prompt for subject
-                        W(DoTranslation("Enter the subject:") + " ", False, ColTypes.Input)
+                        Write(DoTranslation("Enter the subject:") + " ", False, ColTypes.Input)
                         Subject = Console.ReadLine
                         Wdbg("I", "Subject: {0} ({1} chars)", Subject, Subject.Length)
 
                         'Prompt for body
-                        W(DoTranslation("Enter your message below. Write ""EOF"" to confirm."), True, ColTypes.Input)
+                        Write(DoTranslation("Enter your message below. Write ""EOF"" to confirm."), True, ColTypes.Input)
                         Dim BodyLine As String = ""
                         While Not BodyLine.ToUpper = "EOF"
                             BodyLine = Console.ReadLine
@@ -114,10 +114,10 @@ Module MailGetCommand
                             End If
                         End While
 
-                        W(DoTranslation("Enter file paths to attachments. Press ENTER on a blank path to confirm."), True, ColTypes.Neutral)
+                        Write(DoTranslation("Enter file paths to attachments. Press ENTER on a blank path to confirm."), True, ColTypes.Neutral)
                         Dim PathLine As String = " "
                         While Not PathLine = ""
-                            W("> ", False, ColTypes.Input)
+                            Write("> ", False, ColTypes.Input)
                             PathLine = Console.ReadLine
                             If Not PathLine = "" Then
                                 PathLine = NeutralizePath(PathLine)
@@ -129,27 +129,27 @@ Module MailGetCommand
                         End While
 
                         'Send the message
-                        W(DoTranslation("Sending message..."), True, ColTypes.Neutral)
+                        Write(DoTranslation("Sending message..."), True, ColTypes.Neutral)
                         If cmd = "sendenc" Then
                             If MailSendEncryptedMessage(Receiver, Subject, Body.ToMessageBody) Then
                                 Wdbg("I", "Message sent.")
-                                W(DoTranslation("Message sent."), True, ColTypes.Neutral)
+                                Write(DoTranslation("Message sent."), True, ColTypes.Neutral)
                             Else
                                 Wdbg("E", "See debug output to find what's wrong.")
-                                W(DoTranslation("Error sending message."), True, ColTypes.Error)
+                                Write(DoTranslation("Error sending message."), True, ColTypes.Error)
                             End If
                         Else
                             If MailSendMessage(Receiver, Subject, Body.ToMessageBody) Then
                                 Wdbg("I", "Message sent.")
-                                W(DoTranslation("Message sent."), True, ColTypes.Neutral)
+                                Write(DoTranslation("Message sent."), True, ColTypes.Neutral)
                             Else
                                 Wdbg("E", "See debug output to find what's wrong.")
-                                W(DoTranslation("Error sending message."), True, ColTypes.Error)
+                                Write(DoTranslation("Error sending message."), True, ColTypes.Error)
                             End If
                         End If
                     Else
                         Wdbg("E", "Mail format unsatisfied. " + Receiver)
-                        W(DoTranslation("Invalid e-mail address. Make sure you've written the address correctly and that it matches the format of the example shown:") + " john.s@example.com", True, ColTypes.Error)
+                        Write(DoTranslation("Invalid e-mail address. Make sure you've written the address correctly and that it matches the format of the example shown:") + " john.s@example.com", True, ColTypes.Error)
                     End If
                 Case "rm"
                     If RequiredArgsProvided Then
@@ -157,15 +157,15 @@ Module MailGetCommand
                         If FullArgsLQ(0).IsNumeric Then
                             MailRemoveMessage(FullArgsLQ(0))
                         Else
-                            W(DoTranslation("Message number is not a numeric value."), True, ColTypes.Error)
+                            Write(DoTranslation("Message number is not a numeric value."), True, ColTypes.Error)
                         End If
                     End If
                 Case "rmall"
                     If RequiredArgsProvided Then
                         If MailRemoveAllBySender(FullArgsLQ(0)) Then
-                            W(DoTranslation("All mail made by {0} are removed successfully."), True, ColTypes.Neutral, FullArgsLQ(0))
+                            Write(DoTranslation("All mail made by {0} are removed successfully."), True, ColTypes.Neutral, FullArgsLQ(0))
                         Else
-                            W(DoTranslation("Failed to remove all mail made by {0}."), True, ColTypes.Neutral, FullArgsLQ(0))
+                            Write(DoTranslation("Failed to remove all mail made by {0}."), True, ColTypes.Neutral, FullArgsLQ(0))
                         End If
                     End If
                 Case "mv"
@@ -174,15 +174,15 @@ Module MailGetCommand
                         If FullArgsLQ(0).IsNumeric Then
                             MailMoveMessage(FullArgsLQ(0), FullArgsLQ(1))
                         Else
-                            W(DoTranslation("Message number is not a numeric value."), True, ColTypes.Error)
+                            Write(DoTranslation("Message number is not a numeric value."), True, ColTypes.Error)
                         End If
                     End If
                 Case "mvall"
                     If RequiredArgsProvided Then
                         If MailMoveAllBySender(FullArgsLQ(0), FullArgsLQ(1)) Then
-                            W(DoTranslation("All mail made by {0} are moved successfully."), True, ColTypes.Neutral, FullArgsLQ(0))
+                            Write(DoTranslation("All mail made by {0} are moved successfully."), True, ColTypes.Neutral, FullArgsLQ(0))
                         Else
-                            W(DoTranslation("Failed to move all mail made by {0}."), True, ColTypes.Neutral, FullArgsLQ(0))
+                            Write(DoTranslation("Failed to move all mail made by {0}."), True, ColTypes.Neutral, FullArgsLQ(0))
                         End If
                     End If
                 Case "mkdir"
@@ -205,7 +205,7 @@ Module MailGetCommand
                     End If
                 Case "exit"
                     ExitRequested = True
-                    W(DoTranslation("Do you want to keep connected?") + " <y/n> ", False, ColTypes.Input)
+                    Write(DoTranslation("Do you want to keep connected?") + " <y/n> ", False, ColTypes.Input)
                     Dim Answer As Char = Console.ReadKey.KeyChar
                     Console.WriteLine()
                     If Answer = "y" Then
@@ -213,12 +213,12 @@ Module MailGetCommand
                     ElseIf Answer = "n" Then
                         KeepAlive = False
                     Else
-                        W(DoTranslation("Invalid choice. Assuming no..."), True, ColTypes.Input)
+                        Write(DoTranslation("Invalid choice. Assuming no..."), True, ColTypes.Input)
                     End If
             End Select
 
             If MailCommands(words(0)).ArgumentsRequired And Not RequiredArgsProvided Then
-                W(DoTranslation("Required arguments are not passed to command {0}"), True, ColTypes.Error, words(0))
+                Write(DoTranslation("Required arguments are not passed to command {0}"), True, ColTypes.Error, words(0))
                 Wdbg("E", "Passed arguments were not enough to run command {0}. Arguments passed: {1}", words(0), FullArgsLQ?.Count)
                 IMAPShowHelp(words(0))
             End If
@@ -226,7 +226,7 @@ Module MailGetCommand
             Exit Sub
         Catch ex As Exception
             EventManager.RaiseIMAPCommandError(cmd, ex)
-            W(DoTranslation("Error executing mail command: {0}"), True, ColTypes.Error, ex.Message)
+            Write(DoTranslation("Error executing mail command: {0}"), True, ColTypes.Error, ex.Message)
             WStkTrc(ex)
         End Try
     End Sub

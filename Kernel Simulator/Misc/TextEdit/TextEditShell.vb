@@ -55,7 +55,7 @@ Public Module TextEditShell
             If TextEdit_FileStream Is Nothing Then
                 Wdbg("W", "File not open yet. Trying to open {0}...", FilePath)
                 If Not TextEdit_OpenTextFile(FilePath) Then
-                    W(DoTranslation("Failed to open file. Exiting shell..."), True, ColTypes.Error)
+                    Write(DoTranslation("Failed to open file. Exiting shell..."), True, ColTypes.Error)
                     Exit While
                 End If
                 TextEdit_AutoSave.Start()
@@ -65,7 +65,7 @@ Public Module TextEditShell
             If DefConsoleOut IsNot Nothing Then
                 Console.SetOut(DefConsoleOut)
             End If
-            W("[", False, ColTypes.Gray) : W("{0}{1}", False, ColTypes.UserName, Path.GetFileName(FilePath), If(TextEdit_WasTextEdited(), "*", "")) : W("] > ", False, ColTypes.Gray) : W("", False, ColTypes.Input)
+            Write("[", False, ColTypes.Gray) : Write("{0}{1}", False, ColTypes.UserName, Path.GetFileName(FilePath), If(TextEdit_WasTextEdited(), "*", "")) : Write("] > ", False, ColTypes.Gray) : Write("", False, ColTypes.Input)
 
             'Prompt for command
             EventManager.RaiseTextShellInitialized()
@@ -92,7 +92,7 @@ Public Module TextEditShell
                     WrittenCommand = WrittenCommand.Replace($"""{Command}""", Command)
                     ExecuteTextAlias(WrittenCommand)
                 Else
-                    W(DoTranslation("The specified text editor command is not found."), True, ColTypes.Error)
+                    Write(DoTranslation("The specified text editor command is not found."), True, ColTypes.Error)
                     Wdbg("E", "Command {0} not found in the list of {1} commands.", Command, TextEdit_Commands.Count)
                 End If
             End If

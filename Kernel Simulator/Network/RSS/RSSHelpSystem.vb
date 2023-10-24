@@ -43,41 +43,41 @@ Public Module RSSHelpSystem
 
         If command = "" Then
             If simHelp = False Then
-                W(DoTranslation("General commands:"), True, ColTypes.Neutral)
+                Write(DoTranslation("General commands:"), True, ColTypes.Neutral)
                 For Each cmd As String In RSSDefinitions.Keys
-                    W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, RSSDefinitions(cmd))
+                    Write("- {0}: ", False, ColTypes.ListEntry, cmd) : Write("{0}", True, ColTypes.ListValue, RSSDefinitions(cmd))
                 Next
-                W(vbNewLine + DoTranslation("Mod commands:"), True, ColTypes.Neutral)
-                If RSSModDefs.Count = 0 Then W("- " + DoTranslation("No mod commands."), True, ColTypes.Neutral)
+                Write(vbNewLine + DoTranslation("Mod commands:"), True, ColTypes.Neutral)
+                If RSSModDefs.Count = 0 Then Write("- " + DoTranslation("No mod commands."), True, ColTypes.Neutral)
                 For Each cmd As String In RSSModDefs.Keys
-                    W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, RSSModDefs(cmd))
+                    Write("- {0}: ", False, ColTypes.ListEntry, cmd) : Write("{0}", True, ColTypes.ListValue, RSSModDefs(cmd))
                 Next
-                W(vbNewLine + DoTranslation("Alias commands:"), True, ColTypes.Neutral)
-                If RSSShellAliases.Count = 0 Then W("- " + DoTranslation("No alias commands."), True, ColTypes.Neutral)
+                Write(vbNewLine + DoTranslation("Alias commands:"), True, ColTypes.Neutral)
+                If RSSShellAliases.Count = 0 Then Write("- " + DoTranslation("No alias commands."), True, ColTypes.Neutral)
                 For Each cmd As String In RSSShellAliases.Keys
-                    W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, RSSDefinitions(RSSShellAliases(cmd)))
+                    Write("- {0}: ", False, ColTypes.ListEntry, cmd) : Write("{0}", True, ColTypes.ListValue, RSSDefinitions(RSSShellAliases(cmd)))
                 Next
             Else
                 For Each cmd As String In RSSCommands.Keys
-                    W("{0}, ", False, ColTypes.ListEntry, cmd)
+                    Write("{0}, ", False, ColTypes.ListEntry, cmd)
                 Next
                 For Each cmd As String In RSSModDefs.Keys
-                    W("{0}, ", False, ColTypes.ListEntry, cmd)
+                    Write("{0}, ", False, ColTypes.ListEntry, cmd)
                 Next
-                W(String.Join(", ", RSSShellAliases.Keys), True, ColTypes.ListEntry)
+                Write(String.Join(", ", RSSShellAliases.Keys), True, ColTypes.ListEntry)
             End If
         ElseIf command = "articleinfo" Then
-            W(DoTranslation("Usage:") + " articleinfo <feednum>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " articleinfo <feednum>", True, ColTypes.Neutral)
         ElseIf command = "chfeed" Then
-            W(DoTranslation("Usage:") + " chfeed <feedurl>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " chfeed <feedurl>", True, ColTypes.Neutral)
         ElseIf command = "exit" Then
-            W(DoTranslation("Usage:") + " exit", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " exit", True, ColTypes.Neutral)
         ElseIf command = "feedinfo" Then
-            W(DoTranslation("Usage:") + " feedinfo", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " feedinfo", True, ColTypes.Neutral)
         ElseIf command = "list" Then
-            W(DoTranslation("Usage:") + " list", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " list", True, ColTypes.Neutral)
         ElseIf command = "read" Then
-            W(DoTranslation("Usage:") + " read <feednum>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " read <feednum>", True, ColTypes.Neutral)
         End If
 
     End Sub

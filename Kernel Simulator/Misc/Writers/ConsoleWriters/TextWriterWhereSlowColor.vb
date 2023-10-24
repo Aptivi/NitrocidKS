@@ -16,7 +16,6 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports System.Console
 Imports System.Threading
 
 Module TextWriterWhereSlowColor
@@ -37,7 +36,7 @@ Module TextWriterWhereSlowColor
         SyncLock WriteLock
 #End If
             'Check if default console output equals the new console output text writer. If it does, write in color, else, suppress the colors.
-            If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out) Then
+            If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out) Then
                 If colorType = ColTypes.Neutral Then
                     SetConsoleColor(New Color(NeutralTextColor))
                 ElseIf colorType = ColTypes.Input Then
@@ -82,41 +81,41 @@ Module TextWriterWhereSlowColor
             If Not vars.Length = 0 Then msg = String.Format(msg, vars)
 
             'Write text in another place slowly
-            Dim OldLeft As Integer = CursorLeft
-            Dim OldTop As Integer = CursorTop
+            Dim OldLeft As Integer = Console.CursorLeft
+            Dim OldTop As Integer = Console.CursorTop
             Dim Paragraphs() As String = msg.SplitNewLines
-            SetCursorPosition(Left, Top)
+            Console.SetCursorPosition(Left, Top)
             For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
                 'We can now check to see if we're writing a letter past the console window width
                 Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
                 For Each ParagraphChar As Char In MessageParagraph
                     Thread.Sleep(MsEachLetter)
-                    If CursorLeft = WindowWidth - 1 Then
-                        If CursorTop = BufferHeight - 1 Then
+                    If Console.CursorLeft = Console.WindowWidth - 1 Then
+                        If Console.CursorTop = Console.BufferHeight - 1 Then
                             'We've reached the end of buffer. Write the line to scroll.
-                            WriteLine()
+                            Console.WriteLine()
                         Else
-                            CursorTop += 1
+                            Console.CursorTop += 1
                         End If
-                        CursorLeft = Left
+                        Console.CursorLeft = Left
                     End If
-                    Write(ParagraphChar)
-                    If Line Then WriteLine()
+                    Console.Write(ParagraphChar)
+                    If Line Then Console.WriteLine()
                 Next
 
-                'We're starting with the new paragraph, so we increase the CursorTop value by 1.
+                'We're starting with the new paragraph, so we increase the Console.CursorTop value by 1.
                 If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
-                    If CursorTop = BufferHeight - 1 Then
+                    If Console.CursorTop = Console.BufferHeight - 1 Then
                         'We've reached the end of buffer. Write the line to scroll.
-                        WriteLine()
+                        Console.WriteLine()
                     Else
-                        CursorTop += 1
+                        Console.CursorTop += 1
                     End If
-                    CursorLeft = Left
+                    Console.CursorLeft = Left
                 End If
             Next
-            If [Return] Then SetCursorPosition(OldLeft, OldTop)
-            If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then ResetColor()
+            If [Return] Then Console.SetCursorPosition(OldLeft, OldTop)
+            If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then Console.ResetColor()
 #If Not NOWRITELOCK Then
         End SyncLock
 #End If
@@ -144,41 +143,41 @@ Module TextWriterWhereSlowColor
             If Not vars.Length = 0 Then msg = String.Format(msg, vars)
 
             'Write text in another place
-            Dim OldLeft As Integer = CursorLeft
-            Dim OldTop As Integer = CursorTop
+            Dim OldLeft As Integer = Console.CursorLeft
+            Dim OldTop As Integer = Console.CursorTop
             Dim Paragraphs() As String = msg.SplitNewLines
-            SetCursorPosition(Left, Top)
+            Console.SetCursorPosition(Left, Top)
             For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
                 'We can now check to see if we're writing a letter past the console window width
                 Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
                 For Each ParagraphChar As Char In MessageParagraph
                     Thread.Sleep(MsEachLetter)
-                    If CursorLeft = WindowWidth - 1 Then
-                        If CursorTop = BufferHeight - 1 Then
+                    If Console.CursorLeft = Console.WindowWidth - 1 Then
+                        If Console.CursorTop = Console.BufferHeight - 1 Then
                             'We've reached the end of buffer. Write the line to scroll.
-                            WriteLine()
+                            Console.WriteLine()
                         Else
-                            CursorTop += 1
+                            Console.CursorTop += 1
                         End If
-                        CursorLeft = Left
+                        Console.CursorLeft = Left
                     End If
-                    Write(ParagraphChar)
-                    If Line Then WriteLine()
+                    Console.Write(ParagraphChar)
+                    If Line Then Console.WriteLine()
                 Next
 
-                'We're starting with the new paragraph, so we increase the CursorTop value by 1.
+                'We're starting with the new paragraph, so we increase the Console.CursorTop value by 1.
                 If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
-                    If CursorTop = BufferHeight - 1 Then
+                    If Console.CursorTop = Console.BufferHeight - 1 Then
                         'We've reached the end of buffer. Write the line to scroll.
-                        WriteLine()
+                        Console.WriteLine()
                     Else
-                        CursorTop += 1
+                        Console.CursorTop += 1
                     End If
-                    CursorLeft = Left
+                    Console.CursorLeft = Left
                 End If
             Next
-            If [Return] Then SetCursorPosition(OldLeft, OldTop)
-            If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then ResetColor()
+            If [Return] Then Console.SetCursorPosition(OldLeft, OldTop)
+            If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then Console.ResetColor()
 #If Not NOWRITELOCK Then
         End SyncLock
 #End If
@@ -207,41 +206,41 @@ Module TextWriterWhereSlowColor
             If Not vars.Length = 0 Then msg = String.Format(msg, vars)
 
             'Write text in another place
-            Dim OldLeft As Integer = CursorLeft
-            Dim OldTop As Integer = CursorTop
+            Dim OldLeft As Integer = Console.CursorLeft
+            Dim OldTop As Integer = Console.CursorTop
             Dim Paragraphs() As String = msg.SplitNewLines
-            SetCursorPosition(Left, Top)
+            Console.SetCursorPosition(Left, Top)
             For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
                 'We can now check to see if we're writing a letter past the console window width
                 Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
                 For Each ParagraphChar As Char In MessageParagraph
                     Thread.Sleep(MsEachLetter)
-                    If CursorLeft = WindowWidth - 1 Then
-                        If CursorTop = BufferHeight - 1 Then
+                    If Console.CursorLeft = Console.WindowWidth - 1 Then
+                        If Console.CursorTop = Console.BufferHeight - 1 Then
                             'We've reached the end of buffer. Write the line to scroll.
-                            WriteLine()
+                            Console.WriteLine()
                         Else
-                            CursorTop += 1
+                            Console.CursorTop += 1
                         End If
-                        CursorLeft = Left
+                        Console.CursorLeft = Left
                     End If
-                    Write(ParagraphChar)
-                    If Line Then WriteLine()
+                    Console.Write(ParagraphChar)
+                    If Line Then Console.WriteLine()
                 Next
 
-                'We're starting with the new paragraph, so we increase the CursorTop value by 1.
+                'We're starting with the new paragraph, so we increase the Console.CursorTop value by 1.
                 If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
-                    If CursorTop = BufferHeight - 1 Then
+                    If Console.CursorTop = Console.BufferHeight - 1 Then
                         'We've reached the end of buffer. Write the line to scroll.
-                        WriteLine()
+                        Console.WriteLine()
                     Else
-                        CursorTop += 1
+                        Console.CursorTop += 1
                     End If
-                    CursorLeft = Left
+                    Console.CursorLeft = Left
                 End If
             Next
-            If [Return] Then SetCursorPosition(OldLeft, OldTop)
-            If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then ResetColor()
+            If [Return] Then Console.SetCursorPosition(OldLeft, OldTop)
+            If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Then Console.ResetColor()
 #If Not NOWRITELOCK Then
         End SyncLock
 #End If
@@ -262,7 +261,7 @@ Module TextWriterWhereSlowColor
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
-            If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out) Then
+            If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out) Then
                 SetConsoleColor(color)
                 SetConsoleColor(New Color(BackgroundColor), True)
             End If
@@ -271,41 +270,41 @@ Module TextWriterWhereSlowColor
             If Not vars.Length = 0 Then msg = String.Format(msg, vars)
 
             'Write text in another place
-            Dim OldLeft As Integer = CursorLeft
-            Dim OldTop As Integer = CursorTop
+            Dim OldLeft As Integer = Console.CursorLeft
+            Dim OldTop As Integer = Console.CursorTop
             Dim Paragraphs() As String = msg.SplitNewLines
-            SetCursorPosition(Left, Top)
+            Console.SetCursorPosition(Left, Top)
             For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
                 'We can now check to see if we're writing a letter past the console window width
                 Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
                 For Each ParagraphChar As Char In MessageParagraph
                     Thread.Sleep(MsEachLetter)
-                    If CursorLeft = WindowWidth - 1 Then
-                        If CursorTop = BufferHeight - 1 Then
+                    If Console.CursorLeft = Console.WindowWidth - 1 Then
+                        If Console.CursorTop = Console.BufferHeight - 1 Then
                             'We've reached the end of buffer. Write the line to scroll.
-                            WriteLine()
+                            Console.WriteLine()
                         Else
-                            CursorTop += 1
+                            Console.CursorTop += 1
                         End If
-                        CursorLeft = Left
+                        Console.CursorLeft = Left
                     End If
-                    Write(ParagraphChar)
-                    If Line Then WriteLine()
+                    Console.Write(ParagraphChar)
+                    If Line Then Console.WriteLine()
                 Next
 
-                'We're starting with the new paragraph, so we increase the CursorTop value by 1.
+                'We're starting with the new paragraph, so we increase the Console.CursorTop value by 1.
                 If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
-                    If CursorTop = BufferHeight - 1 Then
+                    If Console.CursorTop = Console.BufferHeight - 1 Then
                         'We've reached the end of buffer. Write the line to scroll.
-                        WriteLine()
+                        Console.WriteLine()
                     Else
-                        CursorTop += 1
+                        Console.CursorTop += 1
                     End If
-                    CursorLeft = Left
+                    Console.CursorLeft = Left
                 End If
             Next
-            If [Return] Then SetCursorPosition(OldLeft, OldTop)
-            If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then ResetColor()
+            If [Return] Then Console.SetCursorPosition(OldLeft, OldTop)
+            If BackgroundColor = New Color(ConsoleColors.Black).PlainSequence Or BackgroundColor = "0;0;0" Then Console.ResetColor()
 #If Not NOWRITELOCK Then
         End SyncLock
 #End If
@@ -327,7 +326,7 @@ Module TextWriterWhereSlowColor
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
-            If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Out) Then
+            If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out) Then
                 SetConsoleColor(ForegroundColor)
                 SetConsoleColor(BackgroundColor, True)
             End If
@@ -336,41 +335,41 @@ Module TextWriterWhereSlowColor
             If Not vars.Length = 0 Then msg = String.Format(msg, vars)
 
             'Write text in another place
-            Dim OldLeft As Integer = CursorLeft
-            Dim OldTop As Integer = CursorTop
+            Dim OldLeft As Integer = Console.CursorLeft
+            Dim OldTop As Integer = Console.CursorTop
             Dim Paragraphs() As String = msg.SplitNewLines
-            SetCursorPosition(Left, Top)
+            Console.SetCursorPosition(Left, Top)
             For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
                 'We can now check to see if we're writing a letter past the console window width
                 Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
                 For Each ParagraphChar As Char In MessageParagraph
                     Thread.Sleep(MsEachLetter)
-                    If CursorLeft = WindowWidth - 1 Then
-                        If CursorTop = BufferHeight - 1 Then
+                    If Console.CursorLeft = Console.WindowWidth - 1 Then
+                        If Console.CursorTop = Console.BufferHeight - 1 Then
                             'We've reached the end of buffer. Write the line to scroll.
-                            WriteLine()
+                            Console.WriteLine()
                         Else
-                            CursorTop += 1
+                            Console.CursorTop += 1
                         End If
-                        CursorLeft = Left
+                        Console.CursorLeft = Left
                     End If
-                    Write(ParagraphChar)
-                    If Line Then WriteLine()
+                    Console.Write(ParagraphChar)
+                    If Line Then Console.WriteLine()
                 Next
 
-                'We're starting with the new paragraph, so we increase the CursorTop value by 1.
+                'We're starting with the new paragraph, so we increase the Console.CursorTop value by 1.
                 If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
-                    If CursorTop = BufferHeight - 1 Then
+                    If Console.CursorTop = Console.BufferHeight - 1 Then
                         'We've reached the end of buffer. Write the line to scroll.
-                        WriteLine()
+                        Console.WriteLine()
                     Else
-                        CursorTop += 1
+                        Console.CursorTop += 1
                     End If
-                    CursorLeft = Left
+                    Console.CursorLeft = Left
                 End If
             Next
-            If [Return] Then SetCursorPosition(OldLeft, OldTop)
-            If BackgroundColor.PlainSequence = "0" Or BackgroundColor.PlainSequence = "0;0;0" Then ResetColor()
+            If [Return] Then Console.SetCursorPosition(OldLeft, OldTop)
+            If BackgroundColor.PlainSequence = "0" Or BackgroundColor.PlainSequence = "0;0;0" Then Console.ResetColor()
 #If Not NOWRITELOCK Then
         End SyncLock
 #End If

@@ -37,7 +37,7 @@ Module MailLogin
     ''' </summary>
     Sub PromptUser()
         'Username or mail address
-        W(DoTranslation("Enter username or mail address: "), False, ColTypes.Input)
+        Write(DoTranslation("Enter username or mail address: "), False, ColTypes.Input)
         PromptPassword(Console.ReadLine)
     End Sub
 
@@ -49,7 +49,7 @@ Module MailLogin
         'Password
         Wdbg("I", "Username: {0}", Username)
         Mail_Authentication.UserName = Username
-        W(DoTranslation("Enter password: "), False, ColTypes.Input)
+        Write(DoTranslation("Enter password: "), False, ColTypes.Input)
         Mail_Authentication.Password = ReadLineNoInput("*")
         Console.WriteLine()
         Dim DynamicAddressIMAP As String = ServerDetect(Username, ServerType.IMAP)
@@ -66,11 +66,11 @@ Module MailLogin
     ''' </summary>
     Sub PromptServer()
         'IMAP Server address and port
-        W(DoTranslation("Enter IMAP server address and port (<address> or <address>:[port]): "), False, ColTypes.Input)
+        Write(DoTranslation("Enter IMAP server address and port (<address> or <address>:[port]): "), False, ColTypes.Input)
         Dim IMAP_Address As String = Console.ReadLine
         Dim IMAP_Port As Integer = 0
         Wdbg("I", "IMAP Server: ""{0}""", IMAP_Address)
-        W(DoTranslation("Enter SMTP server address and port (<address> or <address>:[port]): "), False, ColTypes.Input)
+        Write(DoTranslation("Enter SMTP server address and port (<address> or <address>:[port]): "), False, ColTypes.Input)
         Dim SMTP_Address As String = Console.ReadLine
         Dim SMTP_Port As Integer = 587
         Wdbg("I", "SMTP Server: ""{0}""", SMTP_Address)
@@ -273,17 +273,17 @@ Module MailLogin
             CryptographyContext.Register(GetType(PGPContext))
 
             'IMAP Connection
-            W(DoTranslation("Connecting to {0}..."), True, ColTypes.Neutral, Address)
+            Write(DoTranslation("Connecting to {0}..."), True, ColTypes.Neutral, Address)
             Wdbg("I", "Connecting to IMAP Server {0}:{1} with SSL...", Address, Port)
             IMAP_Client.Connect(Address, Port, MailKit.Security.SecureSocketOptions.SslOnConnect)
 
             'SMTP Connection
-            W(DoTranslation("Connecting to {0}..."), True, ColTypes.Neutral, SmtpAddress)
+            Write(DoTranslation("Connecting to {0}..."), True, ColTypes.Neutral, SmtpAddress)
             Wdbg("I", "Connecting to SMTP Server {0}:{1} with SSL...", Address, Port)
             SMTP_Client.Connect(SmtpAddress, SmtpPort, MailKit.Security.SecureSocketOptions.StartTls)
 
             'IMAP Authentication
-            W(DoTranslation("Authenticating..."), True, ColTypes.Neutral)
+            Write(DoTranslation("Authenticating..."), True, ColTypes.Neutral)
             Wdbg("I", "Authenticating {0} to IMAP server {1}...", Mail_Authentication.UserName, Address)
             IMAP_Client.Authenticate(Mail_Authentication)
 
@@ -295,7 +295,7 @@ Module MailLogin
             Wdbg("I", "Authentication succeeded. Opening shell...")
             OpenMailShell(Address)
         Catch ex As Exception
-            W(DoTranslation("Error while connecting to {0}: {1}"), True, ColTypes.Error, Address, ex.Message)
+            Write(DoTranslation("Error while connecting to {0}: {1}"), True, ColTypes.Error, Address, ex.Message)
             WStkTrc(ex)
             IMAP_Client.Disconnect(True)
             SMTP_Client.Disconnect(True)

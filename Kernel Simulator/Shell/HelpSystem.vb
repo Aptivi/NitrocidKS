@@ -129,389 +129,389 @@ Public Module HelpSystem
         If command = "" Then
 
             If simHelp = False Then
-                W(DoTranslation("General commands:"), True, ColTypes.Neutral)
+                Write(DoTranslation("General commands:"), True, ColTypes.Neutral)
                 For Each cmd As String In definitions.Keys
                     If (Not Commands(cmd).Strict) Or (Commands(cmd).Strict And adminList(signedinusrnm)) Then
-                        W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, definitions(cmd))
+                        Write("- {0}: ", False, ColTypes.ListEntry, cmd) : Write("{0}", True, ColTypes.ListValue, definitions(cmd))
                     End If
                 Next
-                W(vbNewLine + DoTranslation("Mod commands:"), True, ColTypes.Neutral)
-                If moddefs.Count = 0 Then W("- " + DoTranslation("No mod commands."), True, ColTypes.Neutral)
+                Write(vbNewLine + DoTranslation("Mod commands:"), True, ColTypes.Neutral)
+                If moddefs.Count = 0 Then Write("- " + DoTranslation("No mod commands."), True, ColTypes.Neutral)
                 For Each cmd As String In moddefs.Keys
-                    W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, moddefs(cmd))
+                    Write("- {0}: ", False, ColTypes.ListEntry, cmd) : Write("{0}", True, ColTypes.ListValue, moddefs(cmd))
                 Next
-                W(vbNewLine + DoTranslation("Alias commands:"), True, ColTypes.Neutral)
-                If Aliases.Count = 0 Then W("- " + DoTranslation("No alias commands."), True, ColTypes.Neutral)
+                Write(vbNewLine + DoTranslation("Alias commands:"), True, ColTypes.Neutral)
+                If Aliases.Count = 0 Then Write("- " + DoTranslation("No alias commands."), True, ColTypes.Neutral)
                 For Each cmd As String In Aliases.Keys
-                    W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, definitions(Aliases(cmd)))
+                    Write("- {0}: ", False, ColTypes.ListEntry, cmd) : Write("{0}", True, ColTypes.ListValue, definitions(Aliases(cmd)))
                 Next
-                W(vbNewLine + DoTranslation("* You can use multiple commands using the colon between commands."), True, ColTypes.Neutral)
+                Write(vbNewLine + DoTranslation("* You can use multiple commands using the colon between commands."), True, ColTypes.Neutral)
             Else
                 For Each cmd As String In Commands.Keys
                     If (Not Commands(cmd).Strict) Or (Commands(cmd).Strict And adminList(signedinusrnm)) Then
-                        W("{0}, ", False, ColTypes.ListEntry, cmd)
+                        Write("{0}, ", False, ColTypes.ListEntry, cmd)
                     End If
                 Next
                 For Each cmd As String In moddefs.Keys
-                    W("{0}, ", False, ColTypes.ListEntry, cmd)
+                    Write("{0}, ", False, ColTypes.ListEntry, cmd)
                 Next
-                W(String.Join(", ", Aliases.Keys), True, ColTypes.ListEntry)
+                Write(String.Join(", ", Aliases.Keys), True, ColTypes.ListEntry)
             End If
 
         ElseIf command = "adduser" Then
 
-            W(DoTranslation("Usage:") + " adduser <userName> [password] [confirm]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " adduser <userName> [password] [confirm]", True, ColTypes.Neutral)
 
         ElseIf command = "alias" Then
 
-            W(DoTranslation("Usage:") + " alias <rem/add> <{0}> <alias> <cmd>", True, ColTypes.Neutral, String.Join("/", [Enum].GetNames(GetType(AliasType))))
+            Write(DoTranslation("Usage:") + " alias <rem/add> <{0}> <alias> <cmd>", True, ColTypes.Neutral, String.Join("/", [Enum].GetNames(GetType(AliasType))))
 
         ElseIf command = "arginj" Then
 
-            W(DoTranslation("Usage:") + " arginj [Arguments separated by spaces]" + vbNewLine +
+            Write(DoTranslation("Usage:") + " arginj [Arguments separated by spaces]" + vbNewLine +
               "       " + DoTranslation("where arguments will be {0}"), True, ColTypes.Neutral, String.Join(", ", AvailableArgs))
 
         ElseIf command = "beep" Then
 
-            W(DoTranslation("Usage:") + " beep <37-32767 Hz> <milliseconds>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " beep <37-32767 Hz> <milliseconds>", True, ColTypes.Neutral)
 
         ElseIf command = "blockdbgdev" Then
 
-            W(DoTranslation("Usage:") + " blockdbgdev <ipaddress>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " blockdbgdev <ipaddress>", True, ColTypes.Neutral)
 
         ElseIf command = "cat" Then
 
-            W(DoTranslation("Usage:") + " cat <file>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " cat <file>", True, ColTypes.Neutral)
 
         ElseIf command = "calc" Then
 
-            W(DoTranslation("Usage:") + " calc <expression>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " calc <expression>", True, ColTypes.Neutral)
 
         ElseIf command = "cdbglog" Then
 
-            W(DoTranslation("Usage:") + " cdbglog: " + DoTranslation("Deletes everything in debug log"), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " cdbglog: " + DoTranslation("Deletes everything in debug log"), True, ColTypes.Neutral)
 
         ElseIf command = "chattr" Then
 
-            W(DoTranslation("Usage:") + " chattr <file> +/-<attributes>", True, ColTypes.Neutral)
-            W(DoTranslation("where <attributes> is one of the following:") + vbNewLine, True, ColTypes.Neutral)
-            W("- Normal: ", False, ColTypes.ListEntry) : W(DoTranslation("The file is a normal file"), True, ColTypes.ListValue)                   'Normal   = 128
-            W("- ReadOnly: ", False, ColTypes.ListEntry) : W(DoTranslation("The file is a read-only file"), True, ColTypes.ListValue)              'ReadOnly = 1
-            W("- Hidden: ", False, ColTypes.ListEntry) : W(DoTranslation("The file is a hidden file"), True, ColTypes.ListValue)                   'Hidden   = 2
-            W("- Archive: ", False, ColTypes.ListEntry) : W(DoTranslation("The file is an archive. Used for backups."), True, ColTypes.ListValue)  'Archive  = 32
+            Write(DoTranslation("Usage:") + " chattr <file> +/-<attributes>", True, ColTypes.Neutral)
+            Write(DoTranslation("where <attributes> is one of the following:") + vbNewLine, True, ColTypes.Neutral)
+            Write("- Normal: ", False, ColTypes.ListEntry) : Write(DoTranslation("The file is a normal file"), True, ColTypes.ListValue)                   'Normal   = 128
+            Write("- ReadOnly: ", False, ColTypes.ListEntry) : Write(DoTranslation("The file is a read-only file"), True, ColTypes.ListValue)              'ReadOnly = 1
+            Write("- Hidden: ", False, ColTypes.ListEntry) : Write(DoTranslation("The file is a hidden file"), True, ColTypes.ListValue)                   'Hidden   = 2
+            Write("- Archive: ", False, ColTypes.ListEntry) : Write(DoTranslation("The file is an archive. Used for backups."), True, ColTypes.ListValue)  'Archive  = 32
 
         ElseIf command = "chdir" Then
 
-            W(DoTranslation("Usage:") + " chdir <directory/..>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " chdir <directory/..>", True, ColTypes.Neutral)
 
         ElseIf command = "chhostname" Then
 
-            W(DoTranslation("Usage:") + " chhostname <HostName>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " chhostname <HostName>", True, ColTypes.Neutral)
 
         ElseIf command = "chlang" Then
 
-            W(DoTranslation("Usage:") + " chlang <language>" + vbNewLine +
+            Write(DoTranslation("Usage:") + " chlang <language>" + vbNewLine +
               "<language>: " + String.Join("/", Languages.Keys), True, ColTypes.Neutral)
 
         ElseIf command = "chmotd" Then
 
-            W(DoTranslation("Usage:") + " chmotd [Message]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " chmotd [Message]", True, ColTypes.Neutral)
 
         ElseIf command = "chmal" Then
 
-            W(DoTranslation("Usage:") + " chmal [Message]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " chmal [Message]", True, ColTypes.Neutral)
 
         ElseIf command = "choice" Then
 
-            W(DoTranslation("Usage:") + " choice [-o|-t|-m] <$variable> <answers> <input>" + vbNewLine +
+            Write(DoTranslation("Usage:") + " choice [-o|-t|-m] <$variable> <answers> <input>" + vbNewLine +
               "       " + DoTranslation("where <$variable> is any variable that will be used to store response") + vbNewLine +
               "       " + DoTranslation("where <answers> are one-lettered answers of the question separated in slashes"), True, ColTypes.Neutral)
 
         ElseIf command = "chpwd" Then
 
-            W(DoTranslation("Usage:") + " chpwd <Username> <UserPass> <newPass> <confirm>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " chpwd <Username> <UserPass> <newPass> <confirm>", True, ColTypes.Neutral)
 
         ElseIf command = "chusrname" Then
 
-            W(DoTranslation("Usage:") + " chusrname <oldUserName> <newUserName>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " chusrname <oldUserName> <newUserName>", True, ColTypes.Neutral)
 
         ElseIf command = "cls" Then
 
-            W(DoTranslation("Usage:") + " cls: " + DoTranslation("to clear screen."), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " cls: " + DoTranslation("to clear screen."), True, ColTypes.Neutral)
 
         ElseIf command = "copy" Then
 
-            W(DoTranslation("Usage:") + " copy <source> <target>: " + DoTranslation("To copy files to another directory or different name"), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " copy <source> <target>: " + DoTranslation("To copy files to another directory or different name"), True, ColTypes.Neutral)
 
         ElseIf command = "dirinfo" Then
 
-            W(DoTranslation("Usage:") + " dirinfo <directory>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " dirinfo <directory>", True, ColTypes.Neutral)
 
         ElseIf command = "dismissnotif" Then
 
-            W(DoTranslation("Usage:") + " dismissnotif <notificationNumber>: " + DoTranslation("Dismisses a notification"), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " dismissnotif <notificationNumber>: " + DoTranslation("Dismisses a notification"), True, ColTypes.Neutral)
 
         ElseIf command = "disconndbgdev" Then
 
-            W(DoTranslation("Usage:") + " disconndbgdev <ip>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " disconndbgdev <ip>", True, ColTypes.Neutral)
 
         ElseIf command = "echo" Then
 
-            W(DoTranslation("Usage:") + " echo <text>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " echo <text>", True, ColTypes.Neutral)
 
         ElseIf command = "edit" Then
 
-            W(DoTranslation("Usage:") + " edit <file>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " edit <file>", True, ColTypes.Neutral)
 
         ElseIf command = "fileinfo" Then
 
-            W(DoTranslation("Usage:") + " fileinfo <file>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " fileinfo <file>", True, ColTypes.Neutral)
 
         ElseIf command = "firedevents" Then
 
-            W(DoTranslation("Usage:") + " firedevents: " + DoTranslation("Lists all fired events"), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " firedevents: " + DoTranslation("Lists all fired events"), True, ColTypes.Neutral)
 
         ElseIf command = "ftp" Then
 
-            W(DoTranslation("Usage:") + " ftp [server]: " + DoTranslation("Initializes the FTP shell."), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " ftp [server]: " + DoTranslation("Initializes the FTP shell."), True, ColTypes.Neutral)
 
         ElseIf command = "gettimeinfo" Then
 
-            W(DoTranslation("Usage:") + " gettimeinfo <date>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " gettimeinfo <date>", True, ColTypes.Neutral)
 
         ElseIf command = "get" Then
 
-            W(DoTranslation("Usage:") + " get <URL> [username]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " get <URL> [username]", True, ColTypes.Neutral)
 
         ElseIf command = "hwinfo" Then
 
-            W(DoTranslation("Usage:") + " hwinfo <HardwareType>: " + DoTranslation("Prints hardware information") + vbNewLine +
+            Write(DoTranslation("Usage:") + " hwinfo <HardwareType>: " + DoTranslation("Prints hardware information") + vbNewLine +
               "       " + DoTranslation("where HardwareType will be") + " HDD, LogicalParts, CPU, GPU, Sound, Network, System, Machine, BIOS, RAM, all.", True, ColTypes.Neutral)
 
         ElseIf command = "input" Then
 
-            W(DoTranslation("Usage:") + " input <$variable> <question>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " input <$variable> <question>", True, ColTypes.Neutral)
 
         ElseIf command = "list" Then
 
-            W(DoTranslation("Usage:") + " list [oneDirectory]" + vbNewLine +
+            Write(DoTranslation("Usage:") + " list [oneDirectory]" + vbNewLine +
               "       list: " + DoTranslation("to get current directory."), True, ColTypes.Neutral)
 
         ElseIf command = "loteresp" Then
 
-            W(DoTranslation("Usage:") + " loteresp: " + DoTranslation("Respond to love or hate comments."), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " loteresp: " + DoTranslation("Respond to love or hate comments."), True, ColTypes.Neutral)
 
         ElseIf command = "lsdbgdev" Then
 
-            W(DoTranslation("Usage:") + " lsdbgdev" + vbNewLine +
+            Write(DoTranslation("Usage:") + " lsdbgdev" + vbNewLine +
               "       lsdbgdev: " + DoTranslation("Lists all connected debugging devices."), True, ColTypes.Neutral)
 
         ElseIf command = "lsmail" Then
 
-            W(DoTranslation("Usage:") + " lsmail [emailAddress]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " lsmail [emailAddress]", True, ColTypes.Neutral)
 
         ElseIf command = "lockscreen" Then
 
-            W(DoTranslation("Usage:") + " lockscreen: " + DoTranslation("Locks your screen with the password.") + vbNewLine +
+            Write(DoTranslation("Usage:") + " lockscreen: " + DoTranslation("Locks your screen with the password.") + vbNewLine +
               "       " + DoTranslation("Friends of") + " lockscreen: savescreen", True, ColTypes.Neutral)
 
         ElseIf command = "logout" Then
 
-            W(DoTranslation("Usage:") + " logout: " + DoTranslation("Logs you out of the user.") + vbNewLine +
+            Write(DoTranslation("Usage:") + " logout: " + DoTranslation("Logs you out of the user.") + vbNewLine +
               "       " + DoTranslation("Friends of") + " logout: reboot, shutdown", True, ColTypes.Neutral)
 
         ElseIf command = "mathbee" Then
 
-            W(DoTranslation("Usage:") + " mathbee: " + DoTranslation("See if you can solve mathematical equations on time"), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " mathbee: " + DoTranslation("See if you can solve mathematical equations on time"), True, ColTypes.Neutral)
 
         ElseIf command = "md" Then
 
-            W(DoTranslation("Usage:") + " md <anything>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " md <anything>", True, ColTypes.Neutral)
 
         ElseIf command = "mkfile" Then
 
-            W(DoTranslation("Usage:") + " mkfile <anything>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " mkfile <anything>", True, ColTypes.Neutral)
 
         ElseIf command = "mktheme" Then
 
-            W(DoTranslation("Usage:") + " mktheme <themeName>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " mktheme <themeName>", True, ColTypes.Neutral)
 
         ElseIf command = "modinfo" Then
 
-            W(DoTranslation("Usage:") + " modinfo <mod>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " modinfo <mod>", True, ColTypes.Neutral)
 
         ElseIf command = "move" Then
 
-            W(DoTranslation("Usage:") + " move <source> <target>: " + DoTranslation("To move files to another directory"), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " move <source> <target>: " + DoTranslation("To move files to another directory"), True, ColTypes.Neutral)
 
         ElseIf command = "netinfo" Then
 
-            W(DoTranslation("Usage:") + " netinfo: " + DoTranslation("Get every network information"), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " netinfo: " + DoTranslation("Get every network information"), True, ColTypes.Neutral)
 
         ElseIf command = "perm" Then
 
-            W(DoTranslation("Usage:") + " perm <userName> <Administrator/Disabled/Anonymous> <Allow/Disallow>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " perm <userName> <Administrator/Disabled/Anonymous> <Allow/Disallow>", True, ColTypes.Neutral)
 
         ElseIf command = "ping" Then
 
-            W(DoTranslation("Usage:") + " ping [times] <Address1> <Address2> ...", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " ping [times] <Address1> <Address2> ...", True, ColTypes.Neutral)
 
         ElseIf command = "put" Then
 
-            W(DoTranslation("Usage:") + " put <FileName> <URL> [username]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " put <FileName> <URL> [username]", True, ColTypes.Neutral)
 
         ElseIf command = "rm" Then
 
-            W(DoTranslation("Usage:") + " rm <directory/file>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " rm <directory/file>", True, ColTypes.Neutral)
 
         ElseIf command = "rdebug" Then
 
-            W(DoTranslation("Usage:") + " rdebug: " + DoTranslation("Enables or disables remote debugging."), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " rdebug: " + DoTranslation("Enables or disables remote debugging."), True, ColTypes.Neutral)
 
         ElseIf command = "reboot" Then
 
-            W(DoTranslation("Usage:") + " reboot [ip] [port]: " + DoTranslation("Restarts your simulated computer.") + vbNewLine +
+            Write(DoTranslation("Usage:") + " reboot [ip] [port]: " + DoTranslation("Restarts your simulated computer.") + vbNewLine +
               "       " + DoTranslation("Friends of") + " reboot: shutdown, logout", True, ColTypes.Neutral)
 
         ElseIf command = "reloadmods" Then
 
-            W(DoTranslation("Usage:") + " reloadmods: " + DoTranslation("Reloads modifications."), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " reloadmods: " + DoTranslation("Reloads modifications."), True, ColTypes.Neutral)
 
         ElseIf command = "reloadconfig" Then
 
-            W(DoTranslation("Usage:") + " reloadconfig: " + DoTranslation("Reloads the configuration that is changed by the end-user or by tool.") + vbNewLine +
+            Write(DoTranslation("Usage:") + " reloadconfig: " + DoTranslation("Reloads the configuration that is changed by the end-user or by tool.") + vbNewLine +
               "       " + DoTranslation("Colors doesn't require a restart, but most of the settings require you to restart."), True, ColTypes.Neutral)
 
         ElseIf command = "reloadsaver" Then
 
-            W(DoTranslation("Usage:") + " reloadsaver <customsaver>" + vbNewLine +
+            Write(DoTranslation("Usage:") + " reloadsaver <customsaver>" + vbNewLine +
               "       " + DoTranslation("where customsaver will be") + " {0}", True, ColTypes.Neutral, String.Join(", ", ScreensaverFiles))
 
         ElseIf command = "reportbug" Then
 
-            W(DoTranslation("Usage:") + " reportbug", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " reportbug", True, ColTypes.Neutral)
 
         ElseIf command = "rexec" Then
 
-            W(DoTranslation("Usage:") + " rexec <address> [port] <command>: " + DoTranslation("Remotely executes a command to remote PC"), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " rexec <address> [port] <command>: " + DoTranslation("Remotely executes a command to remote PC"), True, ColTypes.Neutral)
 
         ElseIf command = "rmuser" Then
 
-            W(DoTranslation("Usage:") + " rmuser <Username>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " rmuser <Username>", True, ColTypes.Neutral)
 
         ElseIf command = "rss" Then
 
-            W(DoTranslation("Usage:") + " rss [feedlink]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " rss [feedlink]", True, ColTypes.Neutral)
 
         ElseIf command = "savecurrdir" Then
 
-            W(DoTranslation("Usage:") + " savecurrdir", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " savecurrdir", True, ColTypes.Neutral)
 
         ElseIf command = "savescreen" Then
 
-            W(DoTranslation("Usage:") + " savescreen [saver]: " + DoTranslation("shows you a selected screensaver, while protecting your screen from burn outs.") + vbNewLine +
+            Write(DoTranslation("Usage:") + " savescreen [saver]: " + DoTranslation("shows you a selected screensaver, while protecting your screen from burn outs.") + vbNewLine +
               "       " + DoTranslation("Friends of") + " savescreen: lockscreen", True, ColTypes.Neutral)
 
         ElseIf command = "search" Then
 
-            W(DoTranslation("Usage:") + " search <Regexp> <File>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " search <Regexp> <File>", True, ColTypes.Neutral)
 
         ElseIf command = "searchword" Then
 
-            W(DoTranslation("Usage:") + " search <StringEnclosedInDoubleQuotes> <File>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " search <StringEnclosedInDoubleQuotes> <File>", True, ColTypes.Neutral)
 
         ElseIf command = "setsaver" Then
 
-            W(DoTranslation("Usage:") + " setsaver <customsaver/{0}>", True, ColTypes.Neutral, String.Join("/", ScrnSvrdb.Keys))
+            Write(DoTranslation("Usage:") + " setsaver <customsaver/{0}>", True, ColTypes.Neutral, String.Join("/", ScrnSvrdb.Keys))
             If CSvrdb.Count > 0 Then
-                W("       " + DoTranslation("where customsaver will be") + " {0}", True, ColTypes.Neutral, String.Join(", ", CSvrdb.Keys))
+                Write("       " + DoTranslation("where customsaver will be") + " {0}", True, ColTypes.Neutral, String.Join(", ", CSvrdb.Keys))
             End If
 
         ElseIf command = "setthemes" Then
 
-            W(DoTranslation("Usage:") + " setthemes <Theme>" + vbNewLine +
+            Write(DoTranslation("Usage:") + " setthemes <Theme>" + vbNewLine +
               "       " + "<Theme>: ThemeName.json, " + String.Join(", ", colorTemplates.Keys), True, ColTypes.Neutral)
 
         ElseIf command = "settings" Then
 
-            W(DoTranslation("Usage:") + " settings", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " settings", True, ColTypes.Neutral)
 
         ElseIf command = "set" Then
 
-            W(DoTranslation("Usage:") + " set <$variable> <value>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " set <$variable> <value>", True, ColTypes.Neutral)
 
         ElseIf command = "sftp" Then
 
-            W(DoTranslation("Usage:") + " sftp [server]: " + DoTranslation("Initializes the SFTP shell."), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " sftp [server]: " + DoTranslation("Initializes the SFTP shell."), True, ColTypes.Neutral)
 
         ElseIf command = "shownotifs" Then
 
-            W(DoTranslation("Usage:") + " shownotifs: " + DoTranslation("Shows all received notifications"), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " shownotifs: " + DoTranslation("Shows all received notifications"), True, ColTypes.Neutral)
 
         ElseIf command = "showtd" Then
 
-            W(DoTranslation("Usage:") + " showtd: " + DoTranslation("Shows the date and time."), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " showtd: " + DoTranslation("Shows the date and time."), True, ColTypes.Neutral)
 
         ElseIf command = "showtdzone" Then
 
-            W(DoTranslation("Usage:") + " showtdzone <timezone/all>: " + DoTranslation("Shows the date and time in zones."), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " showtdzone <timezone/all>: " + DoTranslation("Shows the date and time in zones."), True, ColTypes.Neutral)
 
         ElseIf command = "shutdown" Then
 
-            W(DoTranslation("Usage:") + " shutdown [ip] [port]: " + DoTranslation("Shuts down your simulated computer.") + vbNewLine +
+            Write(DoTranslation("Usage:") + " shutdown [ip] [port]: " + DoTranslation("Shuts down your simulated computer.") + vbNewLine +
               "       " + DoTranslation("Friends of") + " shutdown: reboot, logout", True, ColTypes.Neutral)
 
         ElseIf command = "speedpress" Then
 
-            W(DoTranslation("Usage:") + " speedpress <e/m/h>: " + DoTranslation("See if you can press a key on time"), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " speedpress <e/m/h>: " + DoTranslation("See if you can press a key on time"), True, ColTypes.Neutral)
 
         ElseIf command = "spellbee" Then
 
-            W(DoTranslation("Usage:") + " spellbee: " + DoTranslation("See if you can spell words correctly on time"), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " spellbee: " + DoTranslation("See if you can spell words correctly on time"), True, ColTypes.Neutral)
 
         ElseIf command = "sshell" Then
 
-            W(DoTranslation("Usage:") + " sshell <address:port> <username>: " + DoTranslation("Connects to an SSH server."), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " sshell <address:port> <username>: " + DoTranslation("Connects to an SSH server."), True, ColTypes.Neutral)
 
         ElseIf command = "sshcmd" Then
 
-            W(DoTranslation("Usage:") + " sshcmd <address:port> <username> ""<command>"": " + DoTranslation("Connects to an SSH server to execute a command."), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " sshcmd <address:port> <username> ""<command>"": " + DoTranslation("Connects to an SSH server to execute a command."), True, ColTypes.Neutral)
 
         ElseIf command = "sumfile" Then
 
-            W(DoTranslation("Usage:") + " sumfile <MD5/SHA1/SHA256/SHA512/all> <file>: " + DoTranslation("Calculates file sums."), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " sumfile <MD5/SHA1/SHA256/SHA512/all> <file>: " + DoTranslation("Calculates file sums."), True, ColTypes.Neutral)
 
         ElseIf command = "sumfiles" Then
 
-            W(DoTranslation("Usage:") + " sumfiles <MD5/SHA1/SHA256/SHA512/all> <dir> [outputFile]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " sumfiles <MD5/SHA1/SHA256/SHA512/all> <dir> [outputFile]", True, ColTypes.Neutral)
 
         ElseIf command = "sysinfo" Then
 
-            W(DoTranslation("Usage:") + " sysinfo: " + DoTranslation("Shows system information and versions."), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " sysinfo: " + DoTranslation("Shows system information and versions."), True, ColTypes.Neutral)
 
         ElseIf command = "unblockdbgdev" Then
 
-            W(DoTranslation("Usage:") + " unblockdbgdev <ipaddress>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " unblockdbgdev <ipaddress>", True, ColTypes.Neutral)
 
         ElseIf command = "unzip" Then
 
-            W(DoTranslation("Usage:") + " unzip <zipfile> [path] [-createdir]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " unzip <zipfile> [path] [-createdir]", True, ColTypes.Neutral)
 
         ElseIf command = "update" Then
 
-            W(DoTranslation("Usage:") + " update: " + DoTranslation("System update"), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " update: " + DoTranslation("System update"), True, ColTypes.Neutral)
 
         ElseIf command = "usermanual" Then
 
-            W(DoTranslation("Usage:") + " usermanual: " + DoTranslation("Takes you to our GitHub Wiki."), True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " usermanual: " + DoTranslation("Takes you to our GitHub Wiki."), True, ColTypes.Neutral)
 
         ElseIf command = "verify" Then
 
-            W(DoTranslation("Usage:") + " verify <MD5/SHA1/SHA256/SHA512> <calculatedhash> <hashfile/expectedhash> <file>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " verify <MD5/SHA1/SHA256/SHA512> <calculatedhash> <hashfile/expectedhash> <file>", True, ColTypes.Neutral)
 
         ElseIf command = "weather" Then
 
-            W(DoTranslation("Usage:") + " weather <CityID/CityName/listcities>: " + DoTranslation("Shows weather info for specified city. Uses OpenWeatherMap.") + vbNewLine +
+            Write(DoTranslation("Usage:") + " weather <CityID/CityName/listcities>: " + DoTranslation("Shows weather info for specified city. Uses OpenWeatherMap.") + vbNewLine +
                                                                                     DoTranslation("You can always consult http://bulk.openweathermap.org/sample/city.list.json.gz for the list of cities with their IDs.") + " " + DoTranslation("Or, pass ""listcities"" to this command."), True, ColTypes.Neutral)
 
         ElseIf command = "wrap" Then
@@ -520,20 +520,20 @@ Public Module HelpSystem
             For Each CommandInfo As CommandInfo In Commands.Values
                 If CommandInfo.Wrappable Then WrappableCmds.Add(CommandInfo.Command)
             Next
-            W(DoTranslation("Usage:") + " wrap <command>", True, ColTypes.Neutral)
-            W("       " + DoTranslation("Wrappable commands:") + " {0}", True, ColTypes.Neutral, String.Join(", ", WrappableCmds.ToArray))
+            Write(DoTranslation("Usage:") + " wrap <command>", True, ColTypes.Neutral)
+            Write("       " + DoTranslation("Wrappable commands:") + " {0}", True, ColTypes.Neutral, String.Join(", ", WrappableCmds.ToArray))
 
         ElseIf command = "zip" Then
 
-            W(DoTranslation("Usage:") + " zip <zipfile> <path> [-fast/-nocomp] [-nobasedir]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " zip <zipfile> <path> [-fast/-nocomp] [-nobasedir]", True, ColTypes.Neutral)
 
         ElseIf command = "zipshell" Then
 
-            W(DoTranslation("Usage:") + " zipshell <zipfile>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " zipshell <zipfile>", True, ColTypes.Neutral)
 
         Else
 
-            W(DoTranslation("No help for command ""{0}""."), True, ColTypes.Error, command)
+            Write(DoTranslation("No help for command ""{0}""."), True, ColTypes.Error, command)
 
         End If
 

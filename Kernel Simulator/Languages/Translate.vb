@@ -145,33 +145,33 @@ Public Module Translate
                     'Check to see if the language is transliterable
                     Wdbg("I", "Transliterable? {0}", Languages(lang).Transliterable)
                     If Languages(lang).Transliterable Then
-                        W(DoTranslation("The language you've selected contains two variants. Select one:") + vbNewLine, True, ColTypes.Neutral)
-                        W(DoTranslation("1. Transliterated", lang), True, ColTypes.Neutral)
-                        W(DoTranslation("2. Translated", lang + "-T") + vbNewLine, True, ColTypes.Neutral)
+                        Write(DoTranslation("The language you've selected contains two variants. Select one:") + vbNewLine, True, ColTypes.Neutral)
+                        Write(DoTranslation("1. Transliterated", lang), True, ColTypes.Neutral)
+                        Write(DoTranslation("2. Translated", lang + "-T") + vbNewLine, True, ColTypes.Neutral)
 CHOICE:
-                        W(DoTranslation("Select your choice:"), False, ColTypes.Input)
+                        Write(DoTranslation("Select your choice:"), False, ColTypes.Input)
                         Dim cho As String = Console.ReadKey(True).KeyChar
                         Console.WriteLine()
                         Wdbg("I", "Choice: {0}", cho)
                         If cho = "2" Then
                             lang += "-T"
                         ElseIf Not cho = "1" Then
-                            W(DoTranslation("Invalid choice. Try again."), True, ColTypes.Error)
+                            Write(DoTranslation("Invalid choice. Try again."), True, ColTypes.Error)
                             GoTo CHOICE
                         End If
                     End If
                 End If
             End If
 
-            W(DoTranslation("Changing from: {0} to {1}..."), True, ColTypes.Neutral, currentLang, lang)
+            Write(DoTranslation("Changing from: {0} to {1}..."), True, ColTypes.Neutral, currentLang, lang)
             If Not SetLang(lang) Then
-                W(DoTranslation("Failed to set language."), True, ColTypes.Error)
+                Write(DoTranslation("Failed to set language."), True, ColTypes.Error)
             End If
             If NotifyCodepageError Then
-                W(DoTranslation("Unable to set codepage. The language may not display properly."), True, ColTypes.Error)
+                Write(DoTranslation("Unable to set codepage. The language may not display properly."), True, ColTypes.Error)
             End If
         Else
-            W(DoTranslation("Invalid language") + " {0}", True, ColTypes.Error, lang)
+            Write(DoTranslation("Invalid language") + " {0}", True, ColTypes.Error, lang)
         End If
     End Sub
 

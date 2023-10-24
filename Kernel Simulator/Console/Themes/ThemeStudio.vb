@@ -33,38 +33,38 @@ Module ThemeStudio
         While Not StudioExiting
             Wdbg("I", "Studio not exiting yet. Populating {0} options...", MaximumOptions)
             Console.Clear()
-            W(DoTranslation("Making a new theme ""{0}"".") + vbNewLine, True, ColTypes.Neutral, ThemeName)
+            Write(DoTranslation("Making a new theme ""{0}"".") + vbNewLine, True, ColTypes.Neutral, ThemeName)
 
             'List options
-            W("1) " + DoTranslation("Input color") + ": [{0}] ", True, ColTypes.Option, SelectedInputColor.PlainSequence)
-            W("2) " + DoTranslation("License color") + ": [{0}] ", True, ColTypes.Option, SelectedLicenseColor.PlainSequence)
-            W("3) " + DoTranslation("Continuable kernel error color") + ": [{0}] ", True, ColTypes.Option, SelectedContKernelErrorColor.PlainSequence)
-            W("4) " + DoTranslation("Uncontinuable kernel error color") + ": [{0}] ", True, ColTypes.Option, SelectedUncontKernelErrorColor.PlainSequence)
-            W("5) " + DoTranslation("Host name color") + ": [{0}] ", True, ColTypes.Option, SelectedHostNameShellColor.PlainSequence)
-            W("6) " + DoTranslation("User name color") + ": [{0}] ", True, ColTypes.Option, SelectedUserNameShellColor.PlainSequence)
-            W("7) " + DoTranslation("Background color") + ": [{0}] ", True, ColTypes.Option, SelectedBackgroundColor.PlainSequence)
-            W("8) " + DoTranslation("Neutral text color") + ": [{0}] ", True, ColTypes.Option, SelectedNeutralTextColor.PlainSequence)
-            W("9) " + DoTranslation("List entry color") + ": [{0}] ", True, ColTypes.Option, SelectedListEntryColor.PlainSequence)
-            W("10) " + DoTranslation("List value color") + ": [{0}] ", True, ColTypes.Option, SelectedListValueColor.PlainSequence)
-            W("11) " + DoTranslation("Stage color") + ": [{0}] ", True, ColTypes.Option, SelectedStageColor.PlainSequence)
-            W("12) " + DoTranslation("Error color") + ": [{0}] ", True, ColTypes.Option, SelectedErrorColor.PlainSequence)
-            W("13) " + DoTranslation("Warning color") + ": [{0}] ", True, ColTypes.Option, SelectedWarningColor.PlainSequence)
-            W("14) " + DoTranslation("Option color") + ": [{0}] ", True, ColTypes.Option, SelectedOptionColor.PlainSequence)
-            W("15) " + DoTranslation("Banner color") + ": [{0}] " + vbNewLine, True, ColTypes.Option, SelectedBannerColor.PlainSequence)
+            Write("1) " + DoTranslation("Input color") + ": [{0}] ", True, ColTypes.Option, SelectedInputColor.PlainSequence)
+            Write("2) " + DoTranslation("License color") + ": [{0}] ", True, ColTypes.Option, SelectedLicenseColor.PlainSequence)
+            Write("3) " + DoTranslation("Continuable kernel error color") + ": [{0}] ", True, ColTypes.Option, SelectedContKernelErrorColor.PlainSequence)
+            Write("4) " + DoTranslation("Uncontinuable kernel error color") + ": [{0}] ", True, ColTypes.Option, SelectedUncontKernelErrorColor.PlainSequence)
+            Write("5) " + DoTranslation("Host name color") + ": [{0}] ", True, ColTypes.Option, SelectedHostNameShellColor.PlainSequence)
+            Write("6) " + DoTranslation("User name color") + ": [{0}] ", True, ColTypes.Option, SelectedUserNameShellColor.PlainSequence)
+            Write("7) " + DoTranslation("Background color") + ": [{0}] ", True, ColTypes.Option, SelectedBackgroundColor.PlainSequence)
+            Write("8) " + DoTranslation("Neutral text color") + ": [{0}] ", True, ColTypes.Option, SelectedNeutralTextColor.PlainSequence)
+            Write("9) " + DoTranslation("List entry color") + ": [{0}] ", True, ColTypes.Option, SelectedListEntryColor.PlainSequence)
+            Write("10) " + DoTranslation("List value color") + ": [{0}] ", True, ColTypes.Option, SelectedListValueColor.PlainSequence)
+            Write("11) " + DoTranslation("Stage color") + ": [{0}] ", True, ColTypes.Option, SelectedStageColor.PlainSequence)
+            Write("12) " + DoTranslation("Error color") + ": [{0}] ", True, ColTypes.Option, SelectedErrorColor.PlainSequence)
+            Write("13) " + DoTranslation("Warning color") + ": [{0}] ", True, ColTypes.Option, SelectedWarningColor.PlainSequence)
+            Write("14) " + DoTranslation("Option color") + ": [{0}] ", True, ColTypes.Option, SelectedOptionColor.PlainSequence)
+            Write("15) " + DoTranslation("Banner color") + ": [{0}] " + vbNewLine, True, ColTypes.Option, SelectedBannerColor.PlainSequence)
 
             'List saving and loading options
-            W("16) " + DoTranslation("Save Theme to Current Directory"), True, ColTypes.Option)
-            W("17) " + DoTranslation("Save Theme to Another Directory..."), True, ColTypes.Option)
-            W("18) " + DoTranslation("Save Theme to Current Directory as..."), True, ColTypes.Option)
-            W("19) " + DoTranslation("Save Theme to Another Directory as..."), True, ColTypes.Option)
-            W("20) " + DoTranslation("Load Theme From File..."), True, ColTypes.Option)
-            W("21) " + DoTranslation("Load Theme From Prebuilt Themes..."), True, ColTypes.Option)
-            W("22) " + DoTranslation("Preview..."), True, ColTypes.Option)
-            W("23) " + DoTranslation("Exit") + vbNewLine, True, ColTypes.Option)
+            Write("16) " + DoTranslation("Save Theme to Current Directory"), True, ColTypes.Option)
+            Write("17) " + DoTranslation("Save Theme to Another Directory..."), True, ColTypes.Option)
+            Write("18) " + DoTranslation("Save Theme to Current Directory as..."), True, ColTypes.Option)
+            Write("19) " + DoTranslation("Save Theme to Another Directory as..."), True, ColTypes.Option)
+            Write("20) " + DoTranslation("Load Theme From File..."), True, ColTypes.Option)
+            Write("21) " + DoTranslation("Load Theme From Prebuilt Themes..."), True, ColTypes.Option)
+            Write("22) " + DoTranslation("Preview..."), True, ColTypes.Option)
+            Write("23) " + DoTranslation("Exit") + vbNewLine, True, ColTypes.Option)
 
             'Prompt user
             Wdbg("I", "Waiting for user input...")
-            W("> ", False, ColTypes.Input)
+            Write("> ", False, ColTypes.Input)
             Response = Console.ReadLine
             Wdbg("I", "Got response: {0}", Response)
 
@@ -125,39 +125,39 @@ Module ThemeStudio
                             SaveThemeToCurrentDirectory(ThemeName)
                         Case 17 'Save theme to another directory...
                             Wdbg("I", "Prompting user for directory name...")
-                            W(DoTranslation("Specify directory to save theme to:") + " [{0}] ", False, ColTypes.Input, CurrDir)
+                            Write(DoTranslation("Specify directory to save theme to:") + " [{0}] ", False, ColTypes.Input, CurrDir)
                             Dim DirectoryName As String = Console.ReadLine
                             DirectoryName = If(String.IsNullOrWhiteSpace(DirectoryName), CurrDir, DirectoryName)
                             Wdbg("I", "Got directory name {0}.", DirectoryName)
                             SaveThemeToAnotherDirectory(ThemeName, DirectoryName)
                         Case 18 'Save theme to current directory as...
                             Wdbg("I", "Prompting user for theme name...")
-                            W(DoTranslation("Specify theme name:") + " [{0}] ", False, ColTypes.Input, ThemeName)
+                            Write(DoTranslation("Specify theme name:") + " [{0}] ", False, ColTypes.Input, ThemeName)
                             Dim AltThemeName As String = Console.ReadLine
                             AltThemeName = If(String.IsNullOrWhiteSpace(AltThemeName), ThemeName, AltThemeName)
                             Wdbg("I", "Got theme name {0}.", AltThemeName)
                             SaveThemeToCurrentDirectory(AltThemeName)
                         Case 19 'Save theme to another directory as...
                             Wdbg("I", "Prompting user for theme and directory name...")
-                            W(DoTranslation("Specify directory to save theme to:") + " [{0}] ", False, ColTypes.Input, CurrDir)
+                            Write(DoTranslation("Specify directory to save theme to:") + " [{0}] ", False, ColTypes.Input, CurrDir)
                             Dim DirectoryName As String = Console.ReadLine
                             DirectoryName = If(String.IsNullOrWhiteSpace(DirectoryName), CurrDir, DirectoryName)
                             Wdbg("I", "Got directory name {0}.", DirectoryName)
                             Wdbg("I", "Prompting user for theme name...")
-                            W(DoTranslation("Specify theme name:") + " [{0}] ", False, ColTypes.Input, ThemeName)
+                            Write(DoTranslation("Specify theme name:") + " [{0}] ", False, ColTypes.Input, ThemeName)
                             Dim AltThemeName As String = Console.ReadLine
                             AltThemeName = If(String.IsNullOrWhiteSpace(AltThemeName), ThemeName, AltThemeName)
                             Wdbg("I", "Got theme name {0}.", AltThemeName)
                             SaveThemeToAnotherDirectory(AltThemeName, DirectoryName)
                         Case 20 'Load Theme From File...
                             Wdbg("I", "Prompting user for theme name...")
-                            W(DoTranslation("Specify theme file name wihout the .json extension:") + " ", False, ColTypes.Input)
+                            Write(DoTranslation("Specify theme file name wihout the .json extension:") + " ", False, ColTypes.Input)
                             Dim AltThemeName As String = Console.ReadLine + ".json"
                             Wdbg("I", "Got theme name {0}.", AltThemeName)
                             LoadThemeFromFile(AltThemeName)
                         Case 21 'Load Theme From Prebuilt Themes...
                             Wdbg("I", "Prompting user for theme name...")
-                            W(DoTranslation("Specify theme name:") + " ", False, ColTypes.Input)
+                            Write(DoTranslation("Specify theme name:") + " ", False, ColTypes.Input)
                             Dim AltThemeName As String = Console.ReadLine
                             Wdbg("I", "Got theme name {0}.", AltThemeName)
                             LoadThemeFromResource(AltThemeName)
@@ -170,14 +170,14 @@ Module ThemeStudio
                     End Select
                 Else
                     Wdbg("W", "Option is not valid. Returning...")
-                    W(DoTranslation("Specified option {0} is invalid."), True, ColTypes.Error, NumericResponse)
-                    W(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                    Write(DoTranslation("Specified option {0} is invalid."), True, ColTypes.Error, NumericResponse)
+                    Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
                     Console.ReadKey()
                 End If
             Else
                 Wdbg("W", "Answer is not numeric.")
-                W(DoTranslation("The answer must be numeric."), True, ColTypes.Error)
-                W(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                Write(DoTranslation("The answer must be numeric."), True, ColTypes.Error)
+                Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
                 Console.ReadKey()
             End If
         End While

@@ -156,7 +156,7 @@ Public Module MailManager
                                 Wdbg("I", "Removed.")
                                 Dir.Expunge()
                                 Wdbg("I", "Message {0} from {1} deleted from {2}. {3} messages remaining to parse.", DeletedMsgNumber, Sender, IMAP_CurrentDirectory, IMAP_Messages.Count - SteppedMsgNumber)
-                                W(DoTranslation("Message {0} from {1} deleted from {2}. {3} messages remaining to parse."), True, ColTypes.Neutral, DeletedMsgNumber, Sender, IMAP_CurrentDirectory, IMAP_Messages.Count - SteppedMsgNumber)
+                                Write(DoTranslation("Message {0} from {1} deleted from {2}. {3} messages remaining to parse."), True, ColTypes.Neutral, DeletedMsgNumber, Sender, IMAP_CurrentDirectory, IMAP_Messages.Count - SteppedMsgNumber)
                             Else
                                 'Remove message
                                 IMAP_Client.Inbox.Open(FolderAccess.ReadWrite)
@@ -165,7 +165,7 @@ Public Module MailManager
                                 Wdbg("I", "Removed.")
                                 IMAP_Client.Inbox.Expunge()
                                 Wdbg("I", "Message {0} from {1} deleted from inbox. {2} messages remaining to parse.", DeletedMsgNumber, Sender, IMAP_Messages.Count - SteppedMsgNumber)
-                                W(DoTranslation("Message {0} from {1} deleted from inbox. {2} messages remaining to parse."), True, ColTypes.Neutral, DeletedMsgNumber, Sender, IMAP_Messages.Count - SteppedMsgNumber)
+                                Write(DoTranslation("Message {0} from {1} deleted from inbox. {2} messages remaining to parse."), True, ColTypes.Neutral, DeletedMsgNumber, Sender, IMAP_Messages.Count - SteppedMsgNumber)
                             End If
                             DeletedMsgNumber += 1
                         End If
@@ -254,7 +254,7 @@ Public Module MailManager
                                 Dir.MoveTo(MessageId, TargetF)
                                 Wdbg("I", "Moved.")
                                 Wdbg("I", "Message {0} from {1} moved from {2}. {3} messages remaining to parse.", DeletedMsgNumber, Sender, IMAP_CurrentDirectory, IMAP_Messages.Count - SteppedMsgNumber)
-                                W(DoTranslation("Message {0} from {1} moved from {2}. {3} messages remaining to parse."), True, ColTypes.Neutral, DeletedMsgNumber, Sender, IMAP_CurrentDirectory, IMAP_Messages.Count - SteppedMsgNumber)
+                                Write(DoTranslation("Message {0} from {1} moved from {2}. {3} messages remaining to parse."), True, ColTypes.Neutral, DeletedMsgNumber, Sender, IMAP_CurrentDirectory, IMAP_Messages.Count - SteppedMsgNumber)
                             Else
                                 'Remove message
                                 Dim TargetF As MailFolder = OpenFolder(TargetFolder)
@@ -263,7 +263,7 @@ Public Module MailManager
                                 IMAP_Client.Inbox.MoveTo(MessageId, TargetF)
                                 Wdbg("I", "Moved.")
                                 Wdbg("I", "Message {0} from {1} moved. {2} messages remaining to parse.", DeletedMsgNumber, Sender, IMAP_Messages.Count - SteppedMsgNumber)
-                                W(DoTranslation("Message {0} from {1} moved. {2} messages remaining to parse."), True, ColTypes.Neutral, DeletedMsgNumber, Sender, IMAP_Messages.Count - SteppedMsgNumber)
+                                Write(DoTranslation("Message {0} from {1} moved. {2} messages remaining to parse."), True, ColTypes.Neutral, DeletedMsgNumber, Sender, IMAP_Messages.Count - SteppedMsgNumber)
                             End If
                             DeletedMsgNumber += 1
                         End If

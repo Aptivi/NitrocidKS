@@ -94,14 +94,14 @@ Public Module SFTPShell
                     If SFTPConnected Then
                         Wdbg("I", "SFTPShellPromptStyle = {0}", SFTPShellPromptStyle)
                         If SFTPShellPromptStyle = "" Then
-                            W("[", False, ColTypes.Gray) : W("{0}", False, ColTypes.UserName, SFTPUser) : W("@", False, ColTypes.Gray) : W("{0}", False, ColTypes.HostName, sftpsite) : W("]{0}> ", False, ColTypes.Gray, SFTPCurrentRemoteDir) : W("", False, ColTypes.Input)
+                            Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, SFTPUser) : Write("@", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, sftpsite) : Write("]{0}> ", False, ColTypes.Gray, SFTPCurrentRemoteDir) : Write("", False, ColTypes.Input)
                         Else
                             Dim ParsedPromptStyle As String = ProbePlaces(SFTPShellPromptStyle)
                             ParsedPromptStyle.ConvertVTSequences
-                            W(ParsedPromptStyle, False, ColTypes.Gray) : W("", False, ColTypes.Input)
+                            Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, ColTypes.Input)
                         End If
                     Else
-                        W("{0}> ", False, ColTypes.Gray, SFTPCurrDirect) : W("", False, ColTypes.Input)
+                        Write("{0}> ", False, ColTypes.Gray, SFTPCurrDirect) : Write("", False, ColTypes.Input)
                     End If
                 End If
 
@@ -154,7 +154,7 @@ Public Module SFTPShell
             ExecuteSFTPAlias(SFTPStrCmd)
         ElseIf Not SFTPStrCmd.StartsWith(" ") Then
             Wdbg("E", "Command {0} not found.", SFTPStrCmd)
-            W(DoTranslation("SFTP message: The requested command {0} is not found. See 'help' for a list of available commands specified on SFTP shell."), True, ColTypes.Error, words(0))
+            Write(DoTranslation("SFTP message: The requested command {0} is not found. See 'help' for a list of available commands specified on SFTP shell."), True, ColTypes.Error, words(0))
         End If
     End Sub
 

@@ -54,63 +54,63 @@ Public Module FTPHelpSystem
 
         If command = "" Then
             If simHelp = False Then
-                W(DoTranslation("General commands:"), True, ColTypes.Neutral)
+                Write(DoTranslation("General commands:"), True, ColTypes.Neutral)
                 For Each cmd As String In FTPDefinitions.Keys
-                    W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, FTPDefinitions(cmd))
+                    Write("- {0}: ", False, ColTypes.ListEntry, cmd) : Write("{0}", True, ColTypes.ListValue, FTPDefinitions(cmd))
                 Next
-                W(vbNewLine + DoTranslation("Mod commands:"), True, ColTypes.Neutral)
-                If FTPModDefs.Count = 0 Then W("- " + DoTranslation("No mod commands."), True, ColTypes.Neutral)
+                Write(vbNewLine + DoTranslation("Mod commands:"), True, ColTypes.Neutral)
+                If FTPModDefs.Count = 0 Then Write("- " + DoTranslation("No mod commands."), True, ColTypes.Neutral)
                 For Each cmd As String In FTPModDefs.Keys
-                    W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, FTPModDefs(cmd))
+                    Write("- {0}: ", False, ColTypes.ListEntry, cmd) : Write("{0}", True, ColTypes.ListValue, FTPModDefs(cmd))
                 Next
-                W(vbNewLine + DoTranslation("Alias commands:"), True, ColTypes.Neutral)
-                If FTPShellAliases.Count = 0 Then W("- " + DoTranslation("No alias commands."), True, ColTypes.Neutral)
+                Write(vbNewLine + DoTranslation("Alias commands:"), True, ColTypes.Neutral)
+                If FTPShellAliases.Count = 0 Then Write("- " + DoTranslation("No alias commands."), True, ColTypes.Neutral)
                 For Each cmd As String In FTPShellAliases.Keys
-                    W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, FTPDefinitions(FTPShellAliases(cmd)))
+                    Write("- {0}: ", False, ColTypes.ListEntry, cmd) : Write("{0}", True, ColTypes.ListValue, FTPDefinitions(FTPShellAliases(cmd)))
                 Next
             Else
                 For Each cmd As String In FTPCommands.Keys
-                    W("{0}, ", False, ColTypes.ListEntry, cmd)
+                    Write("{0}, ", False, ColTypes.ListEntry, cmd)
                 Next
                 For Each cmd As String In FTPModDefs.Keys
-                    W("{0}, ", False, ColTypes.ListEntry, cmd)
+                    Write("{0}, ", False, ColTypes.ListEntry, cmd)
                 Next
-                W(String.Join(", ", FTPShellAliases.Keys), True, ColTypes.ListEntry)
+                Write(String.Join(", ", FTPShellAliases.Keys), True, ColTypes.ListEntry)
             End If
         ElseIf command = "pwdl" Then
-            W(DoTranslation("Usage:") + " currlocaldir or pwdl", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " currlocaldir or pwdl", True, ColTypes.Neutral)
         ElseIf command = "pwdr" Then
-            W(DoTranslation("Usage:") + " currremotedir or pwdr", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " currremotedir or pwdr", True, ColTypes.Neutral)
         ElseIf command = "connect" Then
-            W(DoTranslation("Usage:") + " connect <server>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " connect <server>", True, ColTypes.Neutral)
         ElseIf command = "cdl" Then
-            W(DoTranslation("Usage:") + " cdl <directory>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " cdl <directory>", True, ColTypes.Neutral)
         ElseIf command = "cdr" Then
-            W(DoTranslation("Usage:") + " cdr <directory>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " cdr <directory>", True, ColTypes.Neutral)
         ElseIf command = "cp" Then
-            W(DoTranslation("Usage:") + " cp <sourcefileordir> <targetfileordir>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " cp <sourcefileordir> <targetfileordir>", True, ColTypes.Neutral)
         ElseIf command = "del" Then
-            W(DoTranslation("Usage:") + " del <file>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " del <file>", True, ColTypes.Neutral)
         ElseIf command = "disconnect" Then
-            W(DoTranslation("Usage:") + " disconnect", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " disconnect", True, ColTypes.Neutral)
         ElseIf command = "get" Then
-            W(DoTranslation("Usage:") + " get <file>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " get <file>", True, ColTypes.Neutral)
         ElseIf command = "exit" Then
-            W(DoTranslation("Usage:") + " exit", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " exit", True, ColTypes.Neutral)
         ElseIf command = "lsl" Then
-            W(DoTranslation("Usage:") + " lsl [dir]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " lsl [dir]", True, ColTypes.Neutral)
         ElseIf command = "ldr" Then
-            W(DoTranslation("Usage:") + " lsr [dir]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " lsr [dir]", True, ColTypes.Neutral)
         ElseIf command = "mv" Then
-            W(DoTranslation("Usage:") + " mv <sourcefileordir> <targetfileordir>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " mv <sourcefileordir> <targetfileordir>", True, ColTypes.Neutral)
         ElseIf command = "perm" Then
-            W(DoTranslation("Usage:") + " perm <file> <permnumber>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " perm <file> <permnumber>", True, ColTypes.Neutral)
         ElseIf command = "type" Then
-            W(DoTranslation("Usage:") + " type <a/b>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " type <a/b>", True, ColTypes.Neutral)
         ElseIf command = "put" Then
-            W(DoTranslation("Usage:") + " put <file>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " put <file>", True, ColTypes.Neutral)
         ElseIf command = "quickconnect" Then
-            W(DoTranslation("Usage:") + " quickconnect", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " quickconnect", True, ColTypes.Neutral)
         End If
 
     End Sub

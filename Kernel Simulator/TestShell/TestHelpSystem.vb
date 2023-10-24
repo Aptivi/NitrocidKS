@@ -78,113 +78,113 @@ Public Module TestHelpSystem
 
         If command = "" Then
             If simHelp = False Then
-                W(DoTranslation("General commands:"), True, ColTypes.Neutral)
+                Write(DoTranslation("General commands:"), True, ColTypes.Neutral)
                 For Each cmd As String In TestDefinitions.Keys
-                    W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, TestDefinitions(cmd))
+                    Write("- {0}: ", False, ColTypes.ListEntry, cmd) : Write("{0}", True, ColTypes.ListValue, TestDefinitions(cmd))
                 Next
-                W(vbNewLine + DoTranslation("Mod commands:"), True, ColTypes.Neutral)
-                If TestModDefs.Count = 0 Then W("- " + DoTranslation("No mod commands."), True, ColTypes.Neutral)
+                Write(vbNewLine + DoTranslation("Mod commands:"), True, ColTypes.Neutral)
+                If TestModDefs.Count = 0 Then Write("- " + DoTranslation("No mod commands."), True, ColTypes.Neutral)
                 For Each cmd As String In TestModDefs.Keys
-                    W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, TestModDefs(cmd))
+                    Write("- {0}: ", False, ColTypes.ListEntry, cmd) : Write("{0}", True, ColTypes.ListValue, TestModDefs(cmd))
                 Next
-                W(vbNewLine + DoTranslation("Alias commands:"), True, ColTypes.Neutral)
-                If TestShellAliases.Count = 0 Then W("- " + DoTranslation("No alias commands."), True, ColTypes.Neutral)
+                Write(vbNewLine + DoTranslation("Alias commands:"), True, ColTypes.Neutral)
+                If TestShellAliases.Count = 0 Then Write("- " + DoTranslation("No alias commands."), True, ColTypes.Neutral)
                 For Each cmd As String In TestShellAliases.Keys
-                    W("- {0}: ", False, ColTypes.ListEntry, cmd) : W("{0}", True, ColTypes.ListValue, TestDefinitions(TestShellAliases(cmd)))
+                    Write("- {0}: ", False, ColTypes.ListEntry, cmd) : Write("{0}", True, ColTypes.ListValue, TestDefinitions(TestShellAliases(cmd)))
                 Next
             Else
                 For Each cmd As String In TestDefinitions.Keys
-                    W("{0}, ", False, ColTypes.ListEntry, cmd)
+                    Write("{0}, ", False, ColTypes.ListEntry, cmd)
                 Next
                 For Each cmd As String In TestModDefs.Keys
-                    W("{0}, ", False, ColTypes.ListEntry, cmd)
+                    Write("{0}, ", False, ColTypes.ListEntry, cmd)
                 Next
-                W(String.Join(", ", TestShellAliases.Keys), True, ColTypes.ListEntry)
+                Write(String.Join(", ", TestShellAliases.Keys), True, ColTypes.ListEntry)
             End If
         ElseIf command = "print" Then
-            W(DoTranslation("Usage:") + " print <Color> <Line> <Message>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " print <Color> <Line> <Message>", True, ColTypes.Neutral)
         ElseIf command = "printf" Then
-            W(DoTranslation("Usage:") + " printf <Color> <Line> <Variable1;Variable2;Variable3;...> <Message>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " printf <Color> <Line> <Variable1;Variable2;Variable3;...> <Message>", True, ColTypes.Neutral)
         ElseIf command = "printd" Then
-            W(DoTranslation("Usage:") + " printd <Message>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " printd <Message>", True, ColTypes.Neutral)
         ElseIf command = "printdf" Then
-            W(DoTranslation("Usage:") + " printdf <Variable1;Variable2;Variable3;...> <Message>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " printdf <Variable1;Variable2;Variable3;...> <Message>", True, ColTypes.Neutral)
         ElseIf command = "printsep" Then
-            W(DoTranslation("Usage:") + " printsep <Message>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " printsep <Message>", True, ColTypes.Neutral)
         ElseIf command = "printsepf" Then
-            W(DoTranslation("Usage:") + " printsepf <Variable1;Variable2;Variable3;...> <Message>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " printsepf <Variable1;Variable2;Variable3;...> <Message>", True, ColTypes.Neutral)
         ElseIf command = "printsepcolor" Then
-            W(DoTranslation("Usage:") + " printsepcolor <Color> <Message>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " printsepcolor <Color> <Message>", True, ColTypes.Neutral)
         ElseIf command = "printsepcolorf" Then
-            W(DoTranslation("Usage:") + " printsepcolorf <Color> <Variable1;Variable2;Variable3;...> <Message>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " printsepcolorf <Color> <Variable1;Variable2;Variable3;...> <Message>", True, ColTypes.Neutral)
         ElseIf command = "testevent" Then
-            W(DoTranslation("Usage:") + " testevent <event>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " testevent <event>", True, ColTypes.Neutral)
         ElseIf command = "probehw" Then
-            W(DoTranslation("Usage:") + " probehw", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " probehw", True, ColTypes.Neutral)
         ElseIf command = "garbage" Then
-            W(DoTranslation("Usage:") + " garbage", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " garbage", True, ColTypes.Neutral)
         ElseIf command = "panic" Then
-            W(DoTranslation("Usage:") + " panic <ErrorType> <Reboot> <RebootTime> <Description>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " panic <ErrorType> <Reboot> <RebootTime> <Description>", True, ColTypes.Neutral)
         ElseIf command = "panicf" Then
-            W(DoTranslation("Usage:") + " panicf <ErrorType> <Reboot> <RebootTime> <Variable1;Variable2;Variable3;...> <Description>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " panicf <ErrorType> <Reboot> <RebootTime> <Variable1;Variable2;Variable3;...> <Description>", True, ColTypes.Neutral)
         ElseIf command = "translate" Then
-            W(DoTranslation("Usage:") + " translate <Lang> <Message>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " translate <Lang> <Message>", True, ColTypes.Neutral)
         ElseIf command = "places" Then
-            W(DoTranslation("Usage:") + " places <Message>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " places <Message>", True, ColTypes.Neutral)
         ElseIf command = "testsha512" Then
-            W(DoTranslation("Usage:") + " testsha512 <string>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " testsha512 <string>", True, ColTypes.Neutral)
         ElseIf command = "testsha256" Then
-            W(DoTranslation("Usage:") + " testsha256 <string>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " testsha256 <string>", True, ColTypes.Neutral)
         ElseIf command = "testsha1" Then
-            W(DoTranslation("Usage:") + " testsha1 <string>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " testsha1 <string>", True, ColTypes.Neutral)
         ElseIf command = "testmd5" Then
-            W(DoTranslation("Usage:") + " testmd5 <string>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " testmd5 <string>", True, ColTypes.Neutral)
         ElseIf command = "testregexp" Then
-            W(DoTranslation("Usage:") + " testregexp <pattern> <string>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " testregexp <pattern> <string>", True, ColTypes.Neutral)
         ElseIf command = "loadmods" Then
-            W(DoTranslation("Usage:") + " loadmods", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " loadmods", True, ColTypes.Neutral)
         ElseIf command = "stopmods" Then
-            W(DoTranslation("Usage:") + " stopmods", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " stopmods", True, ColTypes.Neutral)
         ElseIf command = "debug" Then
-            W(DoTranslation("Usage:") + " debug <Enable:True/False>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " debug <Enable:True/False>", True, ColTypes.Neutral)
         ElseIf command = "rdebug" Then
-            W(DoTranslation("Usage:") + " rdebug <Enable:True/False>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " rdebug <Enable:True/False>", True, ColTypes.Neutral)
         ElseIf command = "colortest" Then
-            W(DoTranslation("Usage:") + " colortest <R;G;B>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " colortest <R;G;B>", True, ColTypes.Neutral)
         ElseIf command = "colortruetest" Then
-            W(DoTranslation("Usage:") + " colortruetest <R;G;B>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " colortruetest <R;G;B>", True, ColTypes.Neutral)
         ElseIf command = "sendnot" Then
-            W(DoTranslation("Usage:") + " sendnot <Priority> <title> <desc>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " sendnot <Priority> <title> <desc>", True, ColTypes.Neutral)
         ElseIf command = "dcalend" Then
-            W(DoTranslation("Usage:") + " dcalend <calendar>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " dcalend <calendar>", True, ColTypes.Neutral)
         ElseIf command = "listcodepages" Then
-            W(DoTranslation("Usage:") + " listcodepages", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " listcodepages", True, ColTypes.Neutral)
         ElseIf command = "lscompilervars" Then
-            W(DoTranslation("Usage:") + " lscompilervars", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " lscompilervars", True, ColTypes.Neutral)
         ElseIf command = "testdictwriterstr" Then
-            W(DoTranslation("Usage:") + " testdictwriterstr", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " testdictwriterstr", True, ColTypes.Neutral)
         ElseIf command = "testdictwriterint" Then
-            W(DoTranslation("Usage:") + " testdictwriterint", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " testdictwriterint", True, ColTypes.Neutral)
         ElseIf command = "testdictwriterchar" Then
-            W(DoTranslation("Usage:") + " testdictwriterchar", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " testdictwriterchar", True, ColTypes.Neutral)
         ElseIf command = "testlistwriterstr" Then
-            W(DoTranslation("Usage:") + " testlistwriterstr", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " testlistwriterstr", True, ColTypes.Neutral)
         ElseIf command = "testlistwriterint" Then
-            W(DoTranslation("Usage:") + " testlistwriterint", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " testlistwriterint", True, ColTypes.Neutral)
         ElseIf command = "testlistwriterchar" Then
-            W(DoTranslation("Usage:") + " testlistwriterchar", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " testlistwriterchar", True, ColTypes.Neutral)
         ElseIf command = "lscultures" Then
-            W(DoTranslation("Usage:") + " lscultures [search]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " lscultures [search]", True, ColTypes.Neutral)
         ElseIf command = "getcustomsaversetting" Then
-            W(DoTranslation("Usage:") + " getcustomsaversetting <saver> <setting>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " getcustomsaversetting <saver> <setting>", True, ColTypes.Neutral)
         ElseIf command = "setcustomsaversetting" Then
-            W(DoTranslation("Usage:") + " setcustomsaversetting <saver> <setting> <value>", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " setcustomsaversetting <saver> <setting> <value>", True, ColTypes.Neutral)
         ElseIf command = "help" Then
-            W(DoTranslation("Usage:") + " help [command]", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " help [command]", True, ColTypes.Neutral)
         ElseIf command = "exit" Then
-            W(DoTranslation("Usage:") + " exit", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " exit", True, ColTypes.Neutral)
         ElseIf command = "shutdown" Then
-            W(DoTranslation("Usage:") + " shutdown", True, ColTypes.Neutral)
+            Write(DoTranslation("Usage:") + " shutdown", True, ColTypes.Neutral)
         End If
 
     End Sub

@@ -68,7 +68,7 @@ Public Module Filesystem
         Using FStream As New StreamReader(filename)
             Wdbg("I", "Stream to file {0} opened.", filename)
             While Not FStream.EndOfStream
-                W(FStream.ReadLine, True, ColTypes.Neutral)
+                Write(FStream.ReadLine, True, ColTypes.Neutral)
             End While
         End Using
     End Sub
@@ -91,7 +91,7 @@ Public Module Filesystem
             Try
                 enumeration = CreateList(folder, True)
             Catch ex As Exception
-                W(DoTranslation("Unknown error while listing in directory: {0}"), True, ColTypes.Error, ex.Message)
+                Write(DoTranslation("Unknown error while listing in directory: {0}"), True, ColTypes.Error, ex.Message)
                 WStkTrc(ex)
                 Exit Sub
             End Try
@@ -104,11 +104,11 @@ Public Module Filesystem
                         If (Entry.Attributes = IO.FileAttributes.Hidden And HiddenFiles) Or Not Entry.Attributes.HasFlag(FileAttributes.Hidden) Then
                             If (IsOnWindows() And (Not Entry.Name.StartsWith(".") Or (Entry.Name.StartsWith(".") And HiddenFiles))) Or IsOnUnix() Then
                                 If Entry.Name.EndsWith(".uesh") Then
-                                    W("- " + Entry.Name + ": ", False, ColTypes.Stage)
+                                    Write("- " + Entry.Name + ": ", False, ColTypes.Stage)
                                 Else
-                                    W("- " + Entry.Name + ": ", False, ColTypes.ListEntry)
+                                    Write("- " + Entry.Name + ": ", False, ColTypes.ListEntry)
                                 End If
-                                W(DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), True, ColTypes.ListValue,
+                                Write(DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), True, ColTypes.ListValue,
                                   DirectCast(Entry, FileInfo).Length.FileSizeToString, Entry.CreationTime.ToShortDateString, Entry.CreationTime.ToShortTimeString,
                                                                                        Entry.LastWriteTime.ToShortDateString, Entry.LastWriteTime.ToShortTimeString)
                             End If
@@ -120,20 +120,20 @@ Public Module Filesystem
                         'Print information
                         If (Entry.Attributes = IO.FileAttributes.Hidden And HiddenFiles) Or Not Entry.Attributes.HasFlag(FileAttributes.Hidden) Then
                             If (IsOnWindows() And (Not Entry.Name.StartsWith(".") Or (Entry.Name.StartsWith(".") And HiddenFiles))) Or IsOnUnix() Then
-                                W("- " + Entry.Name + "/: ", False, ColTypes.ListEntry)
-                                W(DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), True, ColTypes.ListValue,
+                                Write("- " + Entry.Name + "/: ", False, ColTypes.ListEntry)
+                                Write(DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), True, ColTypes.ListValue,
                                   TotalSize.FileSizeToString, Entry.CreationTime.ToShortDateString, Entry.CreationTime.ToShortTimeString,
                                                               Entry.LastWriteTime.ToShortDateString, Entry.LastWriteTime.ToShortTimeString)
                             End If
                         End If
                     End If
                 Catch ex As UnauthorizedAccessException 'Error while getting info
-                    W("- " + DoTranslation("You are not authorized to get info for {0}."), True, ColTypes.Error, Entry.Name)
+                    Write("- " + DoTranslation("You are not authorized to get info for {0}."), True, ColTypes.Error, Entry.Name)
                     WStkTrc(ex)
                 End Try
             Next
         Else
-            W(DoTranslation("Directory {0} not found"), True, ColTypes.Error, folder)
+            Write(DoTranslation("Directory {0} not found"), True, ColTypes.Error, folder)
             Wdbg("I", "IO.Directory.Exists = {0}", Directory.Exists(folder))
         End If
     End Sub
@@ -390,7 +390,7 @@ Public Module Filesystem
         For Each SourceFile As FileInfo In SourceFiles
             Dim DestinationFilePath As String = Path.Combine(Destination, SourceFile.Name)
             Wdbg("I", "Copying file {0} to destination...", DestinationFilePath)
-            If ShowProgress Then W("-> {0}", True, ColTypes.Neutral, DestinationFilePath)
+            If ShowProgress Then Write("-> {0}", True, ColTypes.Neutral, DestinationFilePath)
             SourceFile.CopyTo(DestinationFilePath, True)
         Next
 

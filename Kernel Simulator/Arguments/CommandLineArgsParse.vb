@@ -97,23 +97,23 @@ Module CommandLineArgsParse
                         ElseIf Argument = "args" Then
                             argsOnBoot = True
                         ElseIf Argument = "help" Then
-                            W("- testMod: ", False, ColTypes.ListEntry) : W(DoTranslation("Tests mods by providing mod files"), True, ColTypes.ListValue)
-                            W("- testInteractive: ", False, ColTypes.ListEntry) : W(DoTranslation("Opens a test shell"), True, ColTypes.ListValue)
-                            W("- debug: ", False, ColTypes.ListEntry) : W(DoTranslation("Enables debug mode"), True, ColTypes.ListValue)
-                            W("- args: ", False, ColTypes.ListEntry) : W(DoTranslation("Prompts for arguments"), True, ColTypes.ListValue)
-                            W("- reset: ", False, ColTypes.ListEntry) : W(DoTranslation("Clears all the settings"), True, ColTypes.ListValue)
-                            W(DoTranslation("* Press any key to start the kernel or ESC to exit."), True, ColTypes.Neutral)
+                            Write("- testMod: ", False, ColTypes.ListEntry) : Write(DoTranslation("Tests mods by providing mod files"), True, ColTypes.ListValue)
+                            Write("- testInteractive: ", False, ColTypes.ListEntry) : Write(DoTranslation("Opens a test shell"), True, ColTypes.ListValue)
+                            Write("- debug: ", False, ColTypes.ListEntry) : Write(DoTranslation("Enables debug mode"), True, ColTypes.ListValue)
+                            Write("- args: ", False, ColTypes.ListEntry) : Write(DoTranslation("Prompts for arguments"), True, ColTypes.ListValue)
+                            Write("- reset: ", False, ColTypes.ListEntry) : Write(DoTranslation("Clears all the settings"), True, ColTypes.ListValue)
+                            Write(DoTranslation("* Press any key to start the kernel or ESC to exit."), True, ColTypes.Neutral)
                             If Console.ReadKey(True).Key = ConsoleKey.Escape Then
                                 Environment.Exit(0)
                             End If
                         End If
                     Else
-                        W(DoTranslation("Command line argument {0} not found."), True, ColTypes.Error, Argument)
+                        Write(DoTranslation("Command line argument {0} not found."), True, ColTypes.Error, Argument)
                     End If
                 Next
             End If
         Catch ex As Exception
-            W(DoTranslation("Error while parsing real command-line arguments: {0}") + vbNewLine + "{1}", True, ColTypes.Error, ex.Message, ex.StackTrace)
+            Write(DoTranslation("Error while parsing real command-line arguments: {0}") + vbNewLine + "{1}", True, ColTypes.Error, ex.Message, ex.StackTrace)
             If Args.Contains("testMod") Or Args.Contains("createConf") Then
                 Environment.Exit(1)
             End If

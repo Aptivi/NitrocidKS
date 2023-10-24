@@ -301,7 +301,7 @@ Public Module ColorTools
             'Raise event
             EventManager.RaiseThemeSet(theme)
         Else
-            W(DoTranslation("Invalid color template {0}"), True, ColTypes.Error, theme)
+            Write(DoTranslation("Invalid color template {0}"), True, ColTypes.Error, theme)
             Wdbg("E", "Theme not found.")
 
             'Raise event
@@ -334,7 +334,7 @@ Public Module ColorTools
             'Raise event
             EventManager.RaiseThemeSet(ThemeFile)
         Catch ex As Exception
-            W(DoTranslation("Invalid color template {0}"), True, ColTypes.Error, ThemeFile)
+            Write(DoTranslation("Invalid color template {0}"), True, ColTypes.Error, ThemeFile)
             Wdbg("E", "Theme not found.")
 
             'Raise event
@@ -539,21 +539,21 @@ Public Module ColorTools
         While Not ColorWheelExiting
             Console.Clear()
             If TrueColor Then
-                W(vbNewLine + DoTranslation("Select color using ""<-"" and ""->"" keys. Press ENTER to quit. Press ""i"" to insert color number manually."), True, ColTypes.Neutral)
-                W(DoTranslation("Press ""t"" to switch to 255 color mode."), True, ColTypes.Neutral)
+                Write(vbNewLine + DoTranslation("Select color using ""<-"" and ""->"" keys. Press ENTER to quit. Press ""i"" to insert color number manually."), True, ColTypes.Neutral)
+                Write(DoTranslation("Press ""t"" to switch to 255 color mode."), True, ColTypes.Neutral)
 
                 'The red color level
-                W(vbNewLine + " <", False, If(CurrentRange = "R", ColTypes.Gray, ColTypes.Neutral))
+                Write(vbNewLine + " <", False, If(CurrentRange = "R", ColTypes.Gray, ColTypes.Neutral))
                 WriteWhereC("R: {0}", (Console.CursorLeft + 30 - $"R: {CurrentColorR}".Length) / 2, Console.CursorTop, True, New Color($"{CurrentColorR};0;0"), CurrentColorR)
                 WriteWhere(">" + vbNewLine, Console.CursorLeft + 27, Console.CursorTop, False, If(CurrentRange = "R", ColTypes.Gray, ColTypes.Neutral))
 
                 'The green color level
-                W(vbNewLine + " <", False, If(CurrentRange = "G", ColTypes.Gray, ColTypes.Neutral))
+                Write(vbNewLine + " <", False, If(CurrentRange = "G", ColTypes.Gray, ColTypes.Neutral))
                 WriteWhereC("G: {0}", (Console.CursorLeft + 30 - $"G: {CurrentColorG}".Length) / 2, Console.CursorTop, True, New Color($"0;{CurrentColorG};0"), CurrentColorG)
                 WriteWhere(">" + vbNewLine, Console.CursorLeft + 27, Console.CursorTop, False, If(CurrentRange = "G", ColTypes.Gray, ColTypes.Neutral))
 
                 'The blue color level
-                W(vbNewLine + " <", False, If(CurrentRange = "B", ColTypes.Gray, ColTypes.Neutral))
+                Write(vbNewLine + " <", False, If(CurrentRange = "B", ColTypes.Gray, ColTypes.Neutral))
                 WriteWhereC("B: {0}", (Console.CursorLeft + 30 - $"B: {CurrentColorB}".Length) / 2, Console.CursorTop, True, New Color($"0;0;{CurrentColorB}"), CurrentColorB)
                 WriteWhere(">" + vbNewLine, Console.CursorLeft + 27, Console.CursorTop, False, If(CurrentRange = "B", ColTypes.Gray, ColTypes.Neutral))
 
@@ -652,11 +652,11 @@ Public Module ColorTools
                     ColorWheelExiting = True
                 End If
             Else
-                W(vbNewLine + DoTranslation("Select color using ""<-"" and ""->"" keys. Use arrow up and arrow down keys to select between color ranges. Press ENTER to quit. Press ""i"" to insert color number manually."), True, ColTypes.Neutral)
-                W(DoTranslation("Press ""t"" to switch to true color mode."), True, ColTypes.Neutral)
+                Write(vbNewLine + DoTranslation("Select color using ""<-"" and ""->"" keys. Use arrow up and arrow down keys to select between color ranges. Press ENTER to quit. Press ""i"" to insert color number manually."), True, ColTypes.Neutral)
+                Write(DoTranslation("Press ""t"" to switch to true color mode."), True, ColTypes.Neutral)
 
                 'The color selection
-                W(vbNewLine + " <", False, ColTypes.Gray)
+                Write(vbNewLine + " <", False, ColTypes.Gray)
                 WriteWhereC(CurrentColor.ToString, (Console.CursorLeft + 30 - CurrentColor.ToString.Length) / 2, Console.CursorTop, True, New Color(CurrentColor))
                 WriteWhere(">", Console.CursorLeft + 27, Console.CursorTop, False, ColTypes.Gray)
 

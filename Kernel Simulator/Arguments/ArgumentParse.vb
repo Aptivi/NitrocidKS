@@ -45,14 +45,14 @@ Module ArgumentParse
 
                         'Command Injector argument
                         If EnteredArguments(i) = "cmdinject" Then
-                            W(DoTranslation("Available commands: {0}") + vbNewLine +
+                            Write(DoTranslation("Available commands: {0}") + vbNewLine +
                               DoTranslation("Write command: "), False, ColTypes.Input, String.Join(", ", Commands.Keys))
                             argcmds = Console.ReadLine().Split({" : "}, StringSplitOptions.RemoveEmptyEntries)
                             argcommands = String.Join(", ", argcmds)
                             If argcommands <> "q" Then
                                 CommandFlag = True
                             Else
-                                W(DoTranslation("Command injection has been cancelled."), True, ColTypes.Neutral)
+                                Write(DoTranslation("Command injection has been cancelled."), True, ColTypes.Neutral)
                             End If
                         Else
                             argcmds = EnteredArguments(i).Substring(10).Split({" : "}, StringSplitOptions.RemoveEmptyEntries)
@@ -79,7 +79,7 @@ Module ArgumentParse
 
                     End If
                 Else
-                    W(DoTranslation("bargs: The requested argument {0} is not found."), True, ColTypes.Error, EnteredArguments(i).Substring(0, indexArg))
+                    Write(DoTranslation("bargs: The requested argument {0} is not found."), True, ColTypes.Error, EnteredArguments(i).Substring(0, indexArg))
                 End If
             Next
         Catch ex As Exception

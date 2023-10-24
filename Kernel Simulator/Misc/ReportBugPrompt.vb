@@ -29,11 +29,11 @@ Module ReportBugPrompt
 
         'First, select what kind of bug you're reporting
         While [Step] = 1
-            W(DoTranslation("Thank you for raising a ticket to us! Select what kind of request do you have.") + vbNewLine, True, ColTypes.Neutral)
-            W("1) " + DoTranslation("A problem"), True, ColTypes.Option)
-            W("2) " + DoTranslation("A feature request"), True, ColTypes.Option)
-            W("3) " + DoTranslation("A question") + vbNewLine, True, ColTypes.Option)
-            W(">> ", False, ColTypes.Input)
+            Write(DoTranslation("Thank you for raising a ticket to us! Select what kind of request do you have.") + vbNewLine, True, ColTypes.Neutral)
+            Write("1) " + DoTranslation("A problem"), True, ColTypes.Option)
+            Write("2) " + DoTranslation("A feature request"), True, ColTypes.Option)
+            Write("3) " + DoTranslation("A question") + vbNewLine, True, ColTypes.Option)
+            Write(">> ", False, ColTypes.Input)
             AnswerKind = Val(Console.ReadKey(True).KeyChar)
             Console.WriteLine()
             Wdbg("I", "Answer: {0}", AnswerKind)
@@ -42,22 +42,22 @@ Module ReportBugPrompt
                     [Step] += 1
                 Case Else '???
                     Wdbg("W", "Option is not valid. Returning...")
-                    W(DoTranslation("Specified option {0} is invalid."), True, ColTypes.Error, AnswerKind)
-                    W(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                    Write(DoTranslation("Specified option {0} is invalid."), True, ColTypes.Error, AnswerKind)
+                    Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
                     Console.ReadKey()
             End Select
         End While
 
         'Second, type what feature you need to raise a ticket on
         While [Step] = 2
-            W(DoTranslation("Type a feature that you want to raise a ticket on.") + vbNewLine, True, ColTypes.Neutral)
-            W(">> ", False, ColTypes.Input)
+            Write(DoTranslation("Type a feature that you want to raise a ticket on.") + vbNewLine, True, ColTypes.Neutral)
+            Write(">> ", False, ColTypes.Input)
             AnswerFeature = Console.ReadLine
             Wdbg("I", "Answer: {0}", AnswerFeature)
             If String.IsNullOrWhiteSpace(AnswerFeature) Then
                 Wdbg("W", "Text written is not valid. Returning...")
-                W(DoTranslation("You must specify a feature."), True, ColTypes.Error)
-                W(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                Write(DoTranslation("You must specify a feature."), True, ColTypes.Error)
+                Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
                 Console.ReadKey()
             Else
                 [Step] += 1
@@ -66,14 +66,14 @@ Module ReportBugPrompt
 
         'Third, type your idea, question or problem
         While [Step] = 3
-            W(DoTranslation("Ask a question, jot your idea, or report a problem.") + vbNewLine, True, ColTypes.Neutral)
-            W(">> ", False, ColTypes.Input)
+            Write(DoTranslation("Ask a question, jot your idea, or report a problem.") + vbNewLine, True, ColTypes.Neutral)
+            Write(">> ", False, ColTypes.Input)
             AnswerRequest = Console.ReadLine
             Wdbg("I", "Answer: {0}", AnswerRequest)
             If String.IsNullOrWhiteSpace(AnswerRequest) Then
                 Wdbg("W", "Text written is not valid. Returning...")
-                W(DoTranslation("You must write your request."), True, ColTypes.Error)
-                W(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                Write(DoTranslation("You must write your request."), True, ColTypes.Error)
+                Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
                 Console.ReadKey()
             Else
                 Exit While

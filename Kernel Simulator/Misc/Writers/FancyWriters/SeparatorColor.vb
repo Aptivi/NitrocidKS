@@ -29,7 +29,7 @@ Public Module SeparatorColor
         'Print the suffix and the text
         If Not String.IsNullOrWhiteSpace(Text) Then
             If PrintSuffix Then Text = "- " + Text
-            W(Text.Truncate(Console.WindowWidth - 6) + " ", False, ColTypes, Vars)
+            Write(Text.Truncate(Console.WindowWidth - 6) + " ", False, ColTypes, Vars)
         End If
 
         'See how many times to repeat the closing minus sign. We could be running this in the wrap command.
@@ -41,7 +41,7 @@ Public Module SeparatorColor
         End If
 
         'Write the closing minus sign.
-        W("-".Repeat(RepeatTimes), True, ColTypes)
+        Write("-".Repeat(RepeatTimes), True, ColTypes)
 
         'Fix CursorTop value on Unix systems. Mono...
         If IsOnUnix() Then

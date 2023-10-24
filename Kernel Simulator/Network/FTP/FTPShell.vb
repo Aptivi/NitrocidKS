@@ -98,14 +98,14 @@ Public Module FTPShell
                     If connected Then
                         Wdbg("I", "FTPShellPromptStyle = {0}", FTPShellPromptStyle)
                         If FTPShellPromptStyle = "" Then
-                            W("[", False, ColTypes.Gray) : W("{0}", False, ColTypes.UserName, user) : W("@", False, ColTypes.Gray) : W("{0}", False, ColTypes.HostName, ftpsite) : W("]{0}> ", False, ColTypes.Gray, currentremoteDir) : W("", False, ColTypes.Input)
+                            Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, user) : Write("@", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, ftpsite) : Write("]{0}> ", False, ColTypes.Gray, currentremoteDir) : Write("", False, ColTypes.Input)
                         Else
                             Dim ParsedPromptStyle As String = ProbePlaces(FTPShellPromptStyle)
                             ParsedPromptStyle.ConvertVTSequences
-                            W(ParsedPromptStyle, False, ColTypes.Gray) : W("", False, ColTypes.Input)
+                            Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, ColTypes.Input)
                         End If
                     Else
-                        W("{0}> ", False, ColTypes.Gray, currDirect) : W("", False, ColTypes.Input)
+                        Write("{0}> ", False, ColTypes.Gray, currDirect) : Write("", False, ColTypes.Input)
                     End If
                 End If
 
@@ -157,7 +157,7 @@ Public Module FTPShell
             ExecuteFTPAlias(strcmd)
         ElseIf Not strcmd.StartsWith(" ") Then
             Wdbg("E", "Command {0} not found.", strcmd)
-            W(DoTranslation("FTP message: The requested command {0} is not found. See 'help' for a list of available commands specified on FTP shell."), True, ColTypes.Error, words(0))
+            Write(DoTranslation("FTP message: The requested command {0} is not found. See 'help' for a list of available commands specified on FTP shell."), True, ColTypes.Error, words(0))
         End If
     End Sub
 

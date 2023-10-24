@@ -114,7 +114,7 @@ Module MarqueeDisplay
             LoadBack()
             Console.CursorVisible = True
             Wdbg("I", "All clean. Marquee screensaver stopped.")
-            W(DoTranslation("Screensaver experienced an error while displaying: {0}. Press any key to exit."), True, ColTypes.Error, ex.Message)
+            Write(DoTranslation("Screensaver experienced an error while displaying: {0}. Press any key to exit."), True, ColTypes.Error, ex.Message)
             SaverAutoReset.Set()
         End Try
     End Sub

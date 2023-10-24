@@ -28,37 +28,37 @@ Public Module HardwareList
         'CPU Info
         For Each ProcessorInfo As String In HardwareInfo.Hardware.CPU.Keys
             If ProcessorInfo.Contains("@") And ProcessorInfo.EndsWith("GHz") Then
-                W("CPU: {0}", False, ColTypes.Neutral, ProcessorInfo)
+                Write("CPU: {0}", False, ColTypes.Neutral, ProcessorInfo)
             Else
-                W("CPU: {0} @ {1}", False, ColTypes.Neutral, ProcessorInfo, HardwareInfo.Hardware.CPU(ProcessorInfo).Speed)
+                Write("CPU: {0} @ {1}", False, ColTypes.Neutral, ProcessorInfo, HardwareInfo.Hardware.CPU(ProcessorInfo).Speed)
             End If
 
             'SSE2 availability
             If HardwareInfo.Hardware.CPU(ProcessorInfo).Flags.Contains("sse2") Or HardwareInfo.Hardware.CPU(ProcessorInfo).Flags.Contains("SSE2") Then 'After SSE2 requirement addition, remove the check.
-                W(" : SSE2 @ {0}-bit", True, ColTypes.Neutral, HardwareInfo.Hardware.CPU(ProcessorInfo).Bits)
+                Write(" : SSE2 @ {0}-bit", True, ColTypes.Neutral, HardwareInfo.Hardware.CPU(ProcessorInfo).Bits)
             ElseIf HardwareInfo.Hardware.CPU(ProcessorInfo).Bits = 32 Then
-                W(vbNewLine + DoTranslation("CPU: WARNING: SSE2 will be required in future development commits."), True, ColTypes.Error)
+                Write(vbNewLine + DoTranslation("CPU: WARNING: SSE2 will be required in future development commits."), True, ColTypes.Error)
             End If
         Next
-        W(DoTranslation("CPU: Total number of processors: {0}"), True, ColTypes.Neutral, Environment.ProcessorCount)
+        Write(DoTranslation("CPU: Total number of processors: {0}"), True, ColTypes.Neutral, Environment.ProcessorCount)
 
         'Print RAM info
-        W(If(IsNumeric(HardwareInfo.Hardware.RAM.TotalMemory), "RAM: {0} MB", "RAM: {0}"), True, ColTypes.Neutral, If(IsNumeric(HardwareInfo.Hardware.RAM.TotalMemory), FormatNumber(HardwareInfo.Hardware.RAM.TotalMemory / 1024, 2), HardwareInfo.Hardware.RAM.TotalMemory))
+        Write(If(IsNumeric(HardwareInfo.Hardware.RAM.TotalMemory), "RAM: {0} MB", "RAM: {0}"), True, ColTypes.Neutral, If(IsNumeric(HardwareInfo.Hardware.RAM.TotalMemory), FormatNumber(HardwareInfo.Hardware.RAM.TotalMemory / 1024, 2), HardwareInfo.Hardware.RAM.TotalMemory))
 
         'GPU info
         For Each GPUInfo In HardwareInfo.Hardware.GPU.Keys
-            W("GPU: {0}", True, ColTypes.Neutral, HardwareInfo.Hardware.GPU(GPUInfo).Name)
+            Write("GPU: {0}", True, ColTypes.Neutral, HardwareInfo.Hardware.GPU(GPUInfo).Name)
         Next
 
         'Drive Info
         For Each driveinfo In HardwareInfo.Hardware.HDD.Keys
             If HardwareInfo.Hardware.HDD(driveinfo).Vendor = "(Standard disk drives)" Then
-                W(If(IsNumeric(HardwareInfo.Hardware.HDD(driveinfo).Size), "HDD: {0} {1} GB", "HDD: {0} {1}"), True, ColTypes.Neutral, HardwareInfo.Hardware.HDD(driveinfo).Model, If(IsNumeric(HardwareInfo.Hardware.HDD(driveinfo).Size), FormatNumber(HardwareInfo.Hardware.HDD(driveinfo).Size / 1024 / 1024 / 1024, 2), HardwareInfo.Hardware.HDD(driveinfo).Size))
+                Write(If(IsNumeric(HardwareInfo.Hardware.HDD(driveinfo).Size), "HDD: {0} {1} GB", "HDD: {0} {1}"), True, ColTypes.Neutral, HardwareInfo.Hardware.HDD(driveinfo).Model, If(IsNumeric(HardwareInfo.Hardware.HDD(driveinfo).Size), FormatNumber(HardwareInfo.Hardware.HDD(driveinfo).Size / 1024 / 1024 / 1024, 2), HardwareInfo.Hardware.HDD(driveinfo).Size))
             Else
-                W(If(IsNumeric(HardwareInfo.Hardware.HDD(driveinfo).Size), "HDD: {0} {1} {2} GB", "HDD: {0} {1} {2}"), True, ColTypes.Neutral, HardwareInfo.Hardware.HDD(driveinfo).Vendor, HardwareInfo.Hardware.HDD(driveinfo).Model, If(IsNumeric(HardwareInfo.Hardware.HDD(driveinfo).Size), FormatNumber(HardwareInfo.Hardware.HDD(driveinfo).Size / 1024 / 1024 / 1024, 2), HardwareInfo.Hardware.HDD(driveinfo).Size))
+                Write(If(IsNumeric(HardwareInfo.Hardware.HDD(driveinfo).Size), "HDD: {0} {1} {2} GB", "HDD: {0} {1} {2}"), True, ColTypes.Neutral, HardwareInfo.Hardware.HDD(driveinfo).Vendor, HardwareInfo.Hardware.HDD(driveinfo).Model, If(IsNumeric(HardwareInfo.Hardware.HDD(driveinfo).Size), FormatNumber(HardwareInfo.Hardware.HDD(driveinfo).Size / 1024 / 1024 / 1024, 2), HardwareInfo.Hardware.HDD(driveinfo).Size))
             End If
             For Each PartInfo In HardwareInfo.Hardware.HDD(driveinfo).Partitions.Keys
-                W(If(IsNumeric(HardwareInfo.Hardware.HDD(driveinfo).Partitions(PartInfo).Size), "HDD ({2}): {0} {1} GB", "HDD ({2}): {0} {1}"), True, ColTypes.Neutral,
+                Write(If(IsNumeric(HardwareInfo.Hardware.HDD(driveinfo).Partitions(PartInfo).Size), "HDD ({2}): {0} {1} GB", "HDD ({2}): {0} {1}"), True, ColTypes.Neutral,
                   HardwareInfo.Hardware.HDD(driveinfo).Partitions(PartInfo).FileSystem, If(IsNumeric(HardwareInfo.Hardware.HDD(driveinfo).Partitions(PartInfo).Size), FormatNumber(HardwareInfo.Hardware.HDD(driveinfo).Partitions(PartInfo).Size / 1024 / 1024 / 1024, 2), HardwareInfo.Hardware.HDD(driveinfo).Partitions(PartInfo).Size), HardwareInfo.Hardware.HDD(driveinfo).Partitions(PartInfo).ID)
             Next
         Next
@@ -79,7 +79,7 @@ Public Module HardwareList
                 ListHardwareProperties(HardwareFieldType)
             Next
         Else
-            W(DoTranslation("Either the hardware type {0} is not probed, or is not valid."), True, ColTypes.Error, HardwareType)
+            Write(DoTranslation("Either the hardware type {0} is not probed, or is not valid."), True, ColTypes.Error, HardwareType)
         End If
     End Sub
 
@@ -91,38 +91,38 @@ Public Module HardwareList
             Dim FieldValueDict As IDictionary = TryCast(FieldValue, IDictionary)
             If FieldValueDict IsNot Nothing Then
                 For Each HardwareKey As String In FieldValueDict.Keys
-                    W("- {0}: ", True, ColTypes.ListEntry, HardwareKey)
+                    Write("- {0}: ", True, ColTypes.ListEntry, HardwareKey)
                     For Each HardwareValueFieldInfo As FieldInfo In FieldValueDict(HardwareKey).GetType.GetFields
-                        W("  - {0}: ", False, ColTypes.ListEntry, HardwareValueFieldInfo.Name)
+                        Write("  - {0}: ", False, ColTypes.ListEntry, HardwareValueFieldInfo.Name)
                         If Field.Name = "HDD" And HardwareValueFieldInfo.Name = "Partitions" Then
                             Console.WriteLine()
                             Dim Partitions As IDictionary = TryCast(HardwareValueFieldInfo.GetValue(FieldValueDict(HardwareKey)), IDictionary)
                             If Partitions IsNot Nothing Then
                                 For Each PartitionKey As String In Partitions.Keys
-                                    W("    - {0}: ", True, ColTypes.ListEntry, PartitionKey)
+                                    Write("    - {0}: ", True, ColTypes.ListEntry, PartitionKey)
                                     For Each PartitionValueFieldInfo As FieldInfo In Partitions(PartitionKey).GetType.GetFields
-                                        W("      - {0}: ", False, ColTypes.ListEntry, PartitionValueFieldInfo.Name)
-                                        W(PartitionValueFieldInfo.GetValue(Partitions(PartitionKey)), True, ColTypes.ListValue)
+                                        Write("      - {0}: ", False, ColTypes.ListEntry, PartitionValueFieldInfo.Name)
+                                        Write(PartitionValueFieldInfo.GetValue(Partitions(PartitionKey)), True, ColTypes.ListValue)
                                     Next
                                 Next
                             Else
-                                W(DoTranslation("Partitions not parsed to list."), True, ColTypes.Error)
+                                Write(DoTranslation("Partitions not parsed to list."), True, ColTypes.Error)
                             End If
                         ElseIf Field.Name = "CPU" And HardwareValueFieldInfo.Name = "Flags" Then
-                            W(String.Join(", ", TryCast(HardwareValueFieldInfo.GetValue(FieldValueDict(HardwareKey)), String())), True, ColTypes.ListValue)
+                            Write(String.Join(", ", TryCast(HardwareValueFieldInfo.GetValue(FieldValueDict(HardwareKey)), String())), True, ColTypes.ListValue)
                         Else
-                            W(HardwareValueFieldInfo.GetValue(FieldValueDict(HardwareKey)), True, ColTypes.ListValue)
+                            Write(HardwareValueFieldInfo.GetValue(FieldValueDict(HardwareKey)), True, ColTypes.ListValue)
                         End If
                     Next
                 Next
             Else
                 For Each HardwareFieldInfo As FieldInfo In Field.FieldType.GetFields()
-                    W("- {0}: ", False, ColTypes.ListEntry, HardwareFieldInfo.Name)
-                    W(HardwareFieldInfo.GetValue(FieldValue), True, ColTypes.ListValue)
+                    Write("- {0}: ", False, ColTypes.ListEntry, HardwareFieldInfo.Name)
+                    Write(HardwareFieldInfo.GetValue(FieldValue), True, ColTypes.ListValue)
                 Next
             End If
         Else
-            W(DoTranslation("The hardware type {0} is not probed yet. If you're sure that it's probed, restart the kernel with debugging enabled."), True, ColTypes.Error, Field.Name)
+            Write(DoTranslation("The hardware type {0} is not probed yet. If you're sure that it's probed, restart the kernel with debugging enabled."), True, ColTypes.Error, Field.Name)
         End If
     End Sub
 

@@ -52,20 +52,20 @@ Public Module UESHCommands
             'Ask a question
             Select Case OutputType
                 Case ChoiceOutputType.OneLine
-                    W(Question, False, ColTypes.Neutral)
-                    W(" <{0}> ", False, ColTypes.Input, AnswersStr)
+                    Write(Question, False, ColTypes.Neutral)
+                    Write(" <{0}> ", False, ColTypes.Input, AnswersStr)
                     answers = AnswersStr.Split("/")
                 Case ChoiceOutputType.TwoLines
-                    W(Question, True, ColTypes.Neutral)
-                    W("<{0}> ", False, ColTypes.Input, AnswersStr)
+                    Write(Question, True, ColTypes.Neutral)
+                    Write("<{0}> ", False, ColTypes.Input, AnswersStr)
                     answers = AnswersStr.Split("/")
                 Case ChoiceOutputType.Modern
-                    W(Question + vbNewLine, True, ColTypes.Neutral)
+                    Write(Question + vbNewLine, True, ColTypes.Neutral)
                     answers = AnswersStr.Split("/")
                     For Each AnswerInstance As String In answers
-                        W($"{AnswerInstance})", True, ColTypes.Option)
+                        Write($"{AnswerInstance})", True, ColTypes.Option)
                     Next
-                    W(vbNewLine + ">> ", False, ColTypes.Input)
+                    Write(vbNewLine + ">> ", False, ColTypes.Input)
             End Select
 
             'Wait for an answer
@@ -91,7 +91,7 @@ Public Module UESHCommands
             Wdbg("I", "Script var: {0} ({1}), Question: {2}", ScriptVariable, ShellVariables.ContainsKey(ScriptVariable), Question)
 
             'Ask a question
-            W(Question, False, ColTypes.Input)
+            Write(Question, False, ColTypes.Input)
 
             'Wait for an answer
             Answer = Console.ReadLine

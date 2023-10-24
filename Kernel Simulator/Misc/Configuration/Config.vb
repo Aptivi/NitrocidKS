@@ -536,7 +536,7 @@ Public Module Config
         Try
             ReadConfig()
         Catch cex As Exceptions.ConfigException
-            W(cex.Message, True, ColTypes.Error)
+            Write(cex.Message, True, ColTypes.Error)
             WStkTrc(cex)
         End Try
     End Sub
