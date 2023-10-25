@@ -6618,6 +6618,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCentered(Integer, String, ParamArray Object())
   nameWithType: CenteredTextColor.WriteCentered(int, string, params object[])
   nameWithType.vb: CenteredTextColor.WriteCentered(Integer, String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCentered(System.String,System.Object[])
+  name: WriteCentered(string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCentered_System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCentered(System.String,System.Object[])
+  name.vb: WriteCentered(String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCentered(string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCentered(String, ParamArray Object())
+  nameWithType: CenteredTextColor.WriteCentered(string, params object[])
+  nameWithType.vb: CenteredTextColor.WriteCentered(String, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCentered*
   name: WriteCentered
   href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCentered_
@@ -6643,6 +6652,24 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColor(Integer, String, Terminaux.Colors.ConsoleColors, ParamArray Object())
   nameWithType: CenteredTextColor.WriteCenteredColor(int, string, ConsoleColors, params object[])
   nameWithType.vb: CenteredTextColor.WriteCenteredColor(Integer, String, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColor(System.String,Terminaux.Colors.Color,System.Object[])
+  name: WriteCenteredColor(string, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredColor_System_String_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColor(System.String,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteCenteredColor(String, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColor(string, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColor(String, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: CenteredTextColor.WriteCenteredColor(string, Color, params object[])
+  nameWithType.vb: CenteredTextColor.WriteCenteredColor(String, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColor(System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteCenteredColor(string, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredColor_System_String_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColor(System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteCenteredColor(String, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColor(string, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColor(String, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: CenteredTextColor.WriteCenteredColor(string, ConsoleColors, params object[])
+  nameWithType.vb: CenteredTextColor.WriteCenteredColor(String, ConsoleColors, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColor*
   name: WriteCenteredColor
   href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredColor_
@@ -6668,6 +6695,24 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColorBack(Integer, String, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
   nameWithType: CenteredTextColor.WriteCenteredColorBack(int, string, ConsoleColors, ConsoleColors, params object[])
   nameWithType.vb: CenteredTextColor.WriteCenteredColorBack(Integer, String, ConsoleColors, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColorBack(System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: WriteCenteredColorBack(string, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredColorBack_System_String_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColorBack(System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteCenteredColorBack(String, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColorBack(string, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColorBack(String, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: CenteredTextColor.WriteCenteredColorBack(string, Color, Color, params object[])
+  nameWithType.vb: CenteredTextColor.WriteCenteredColorBack(String, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColorBack(System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteCenteredColorBack(string, ConsoleColors, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredColorBack_System_String_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColorBack(System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteCenteredColorBack(String, ConsoleColors, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColorBack(string, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColorBack(String, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: CenteredTextColor.WriteCenteredColorBack(string, ConsoleColors, ConsoleColors, params object[])
+  nameWithType.vb: CenteredTextColor.WriteCenteredColorBack(String, ConsoleColors, ConsoleColors, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredColorBack*
   name: WriteCenteredColorBack
   href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredColorBack_
@@ -6693,6 +6738,24 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredKernelColor(Integer, String, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
   nameWithType: CenteredTextColor.WriteCenteredKernelColor(int, string, KernelColorType, params object[])
   nameWithType.vb: CenteredTextColor.WriteCenteredKernelColor(Integer, String, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteCenteredKernelColor(string, KernelColorType, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredKernelColor_System_String_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteCenteredKernelColor(String, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredKernelColor(string, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredKernelColor(String, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: CenteredTextColor.WriteCenteredKernelColor(string, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: CenteredTextColor.WriteCenteredKernelColor(String, KernelColorType, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteCenteredKernelColor(string, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredKernelColor_System_String_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteCenteredKernelColor(String, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredKernelColor(string, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredKernelColor(String, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: CenteredTextColor.WriteCenteredKernelColor(string, KernelColorType, params object[])
+  nameWithType.vb: CenteredTextColor.WriteCenteredKernelColor(String, KernelColorType, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredKernelColor*
   name: WriteCenteredKernelColor
   href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredKernelColor_
@@ -6709,6 +6772,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLine(Integer, String, ParamArray Object())
   nameWithType: CenteredTextColor.WriteCenteredOneLine(int, string, params object[])
   nameWithType.vb: CenteredTextColor.WriteCenteredOneLine(Integer, String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLine(System.String,System.Object[])
+  name: WriteCenteredOneLine(string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredOneLine_System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLine(System.String,System.Object[])
+  name.vb: WriteCenteredOneLine(String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLine(string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLine(String, ParamArray Object())
+  nameWithType: CenteredTextColor.WriteCenteredOneLine(string, params object[])
+  nameWithType.vb: CenteredTextColor.WriteCenteredOneLine(String, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLine*
   name: WriteCenteredOneLine
   href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredOneLine_
@@ -6734,6 +6806,24 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColor(Integer, String, Terminaux.Colors.ConsoleColors, ParamArray Object())
   nameWithType: CenteredTextColor.WriteCenteredOneLineColor(int, string, ConsoleColors, params object[])
   nameWithType.vb: CenteredTextColor.WriteCenteredOneLineColor(Integer, String, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColor(System.String,Terminaux.Colors.Color,System.Object[])
+  name: WriteCenteredOneLineColor(string, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredOneLineColor_System_String_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColor(System.String,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteCenteredOneLineColor(String, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColor(string, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColor(String, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: CenteredTextColor.WriteCenteredOneLineColor(string, Color, params object[])
+  nameWithType.vb: CenteredTextColor.WriteCenteredOneLineColor(String, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColor(System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteCenteredOneLineColor(string, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredOneLineColor_System_String_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColor(System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteCenteredOneLineColor(String, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColor(string, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColor(String, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: CenteredTextColor.WriteCenteredOneLineColor(string, ConsoleColors, params object[])
+  nameWithType.vb: CenteredTextColor.WriteCenteredOneLineColor(String, ConsoleColors, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColor*
   name: WriteCenteredOneLineColor
   href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredOneLineColor_
@@ -6759,6 +6849,24 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColorBack(Integer, String, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
   nameWithType: CenteredTextColor.WriteCenteredOneLineColorBack(int, string, ConsoleColors, ConsoleColors, params object[])
   nameWithType.vb: CenteredTextColor.WriteCenteredOneLineColorBack(Integer, String, ConsoleColors, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColorBack(System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: WriteCenteredOneLineColorBack(string, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredOneLineColorBack_System_String_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColorBack(System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteCenteredOneLineColorBack(String, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColorBack(string, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColorBack(String, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: CenteredTextColor.WriteCenteredOneLineColorBack(string, Color, Color, params object[])
+  nameWithType.vb: CenteredTextColor.WriteCenteredOneLineColorBack(String, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColorBack(System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteCenteredOneLineColorBack(string, ConsoleColors, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredOneLineColorBack_System_String_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColorBack(System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteCenteredOneLineColorBack(String, ConsoleColors, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColorBack(string, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColorBack(String, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: CenteredTextColor.WriteCenteredOneLineColorBack(string, ConsoleColors, ConsoleColors, params object[])
+  nameWithType.vb: CenteredTextColor.WriteCenteredOneLineColorBack(String, ConsoleColors, ConsoleColors, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineColorBack*
   name: WriteCenteredOneLineColorBack
   href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredOneLineColorBack_
@@ -6784,6 +6892,24 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineKernelColor(Integer, String, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
   nameWithType: CenteredTextColor.WriteCenteredOneLineKernelColor(int, string, KernelColorType, params object[])
   nameWithType.vb: CenteredTextColor.WriteCenteredOneLineKernelColor(Integer, String, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteCenteredOneLineKernelColor(string, KernelColorType, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredOneLineKernelColor_System_String_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteCenteredOneLineKernelColor(String, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineKernelColor(string, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineKernelColor(String, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: CenteredTextColor.WriteCenteredOneLineKernelColor(string, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: CenteredTextColor.WriteCenteredOneLineKernelColor(String, KernelColorType, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteCenteredOneLineKernelColor(string, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredOneLineKernelColor_System_String_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteCenteredOneLineKernelColor(String, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineKernelColor(string, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineKernelColor(String, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: CenteredTextColor.WriteCenteredOneLineKernelColor(string, KernelColorType, params object[])
+  nameWithType.vb: CenteredTextColor.WriteCenteredOneLineKernelColor(String, KernelColorType, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCenteredOneLineKernelColor*
   name: WriteCenteredOneLineKernelColor
   href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCenteredOneLineKernelColor_
