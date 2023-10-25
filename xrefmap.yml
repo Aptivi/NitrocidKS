@@ -32687,6 +32687,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Notifications.Notification.CustomProgressFailureColor
   nameWithType: Notification.CustomProgressFailureColor
+- uid: KS.Misc.Notifications.Notification.CustomProgressSuccessColor
+  name: CustomProgressSuccessColor
+  href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_CustomProgressSuccessColor
+  commentId: P:KS.Misc.Notifications.Notification.CustomProgressSuccessColor
+  fullName: KS.Misc.Notifications.Notification.CustomProgressSuccessColor
+  nameWithType: Notification.CustomProgressSuccessColor
+- uid: KS.Misc.Notifications.Notification.CustomProgressSuccessColor*
+  name: CustomProgressSuccessColor
+  href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_CustomProgressSuccessColor_
+  commentId: Overload:KS.Misc.Notifications.Notification.CustomProgressSuccessColor
+  isSpec: "True"
+  fullName: KS.Misc.Notifications.Notification.CustomProgressSuccessColor
+  nameWithType: Notification.CustomProgressSuccessColor
 - uid: KS.Misc.Notifications.Notification.CustomRightFrameChar
   name: CustomRightFrameChar
   href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_CustomRightFrameChar
