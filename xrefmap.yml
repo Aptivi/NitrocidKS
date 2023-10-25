@@ -8234,6 +8234,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparator(String, Boolean, ParamArray Object())
   nameWithType: SeparatorWriterColor.WriteSeparator(string, bool, params object[])
   nameWithType.vb: SeparatorWriterColor.WriteSeparator(String, Boolean, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparator(System.String,System.Object[])
+  name: WriteSeparator(string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.html#KS_ConsoleBase_Writers_FancyWriters_SeparatorWriterColor_WriteSeparator_System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparator(System.String,System.Object[])
+  name.vb: WriteSeparator(String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparator(string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparator(String, ParamArray Object())
+  nameWithType: SeparatorWriterColor.WriteSeparator(string, params object[])
+  nameWithType.vb: SeparatorWriterColor.WriteSeparator(String, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparator*
   name: WriteSeparator
   href: api/KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.html#KS_ConsoleBase_Writers_FancyWriters_SeparatorWriterColor_WriteSeparator_
@@ -8259,6 +8268,24 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColor(String, Boolean, Terminaux.Colors.ConsoleColors, ParamArray Object())
   nameWithType: SeparatorWriterColor.WriteSeparatorColor(string, bool, ConsoleColors, params object[])
   nameWithType.vb: SeparatorWriterColor.WriteSeparatorColor(String, Boolean, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColor(System.String,Terminaux.Colors.Color,System.Object[])
+  name: WriteSeparatorColor(string, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.html#KS_ConsoleBase_Writers_FancyWriters_SeparatorWriterColor_WriteSeparatorColor_System_String_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColor(System.String,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteSeparatorColor(String, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColor(string, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColor(String, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: SeparatorWriterColor.WriteSeparatorColor(string, Color, params object[])
+  nameWithType.vb: SeparatorWriterColor.WriteSeparatorColor(String, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColor(System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteSeparatorColor(string, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.html#KS_ConsoleBase_Writers_FancyWriters_SeparatorWriterColor_WriteSeparatorColor_System_String_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColor(System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteSeparatorColor(String, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColor(string, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColor(String, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: SeparatorWriterColor.WriteSeparatorColor(string, ConsoleColors, params object[])
+  nameWithType.vb: SeparatorWriterColor.WriteSeparatorColor(String, ConsoleColors, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColor*
   name: WriteSeparatorColor
   href: api/KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.html#KS_ConsoleBase_Writers_FancyWriters_SeparatorWriterColor_WriteSeparatorColor_
@@ -8284,6 +8311,24 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColorBack(String, Boolean, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
   nameWithType: SeparatorWriterColor.WriteSeparatorColorBack(string, bool, ConsoleColors, ConsoleColors, params object[])
   nameWithType.vb: SeparatorWriterColor.WriteSeparatorColorBack(String, Boolean, ConsoleColors, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColorBack(System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: WriteSeparatorColorBack(string, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.html#KS_ConsoleBase_Writers_FancyWriters_SeparatorWriterColor_WriteSeparatorColorBack_System_String_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColorBack(System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteSeparatorColorBack(String, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColorBack(string, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColorBack(String, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: SeparatorWriterColor.WriteSeparatorColorBack(string, Color, Color, params object[])
+  nameWithType.vb: SeparatorWriterColor.WriteSeparatorColorBack(String, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColorBack(System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteSeparatorColorBack(string, ConsoleColors, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.html#KS_ConsoleBase_Writers_FancyWriters_SeparatorWriterColor_WriteSeparatorColorBack_System_String_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColorBack(System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteSeparatorColorBack(String, ConsoleColors, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColorBack(string, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColorBack(String, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: SeparatorWriterColor.WriteSeparatorColorBack(string, ConsoleColors, ConsoleColors, params object[])
+  nameWithType.vb: SeparatorWriterColor.WriteSeparatorColorBack(String, ConsoleColors, ConsoleColors, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColorBack*
   name: WriteSeparatorColorBack
   href: api/KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.html#KS_ConsoleBase_Writers_FancyWriters_SeparatorWriterColor_WriteSeparatorColorBack_
@@ -8291,6 +8336,24 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorColorBack
   nameWithType: SeparatorWriterColor.WriteSeparatorColorBack
+- uid: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteSeparatorKernelColor(string, KernelColorType, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.html#KS_ConsoleBase_Writers_FancyWriters_SeparatorWriterColor_WriteSeparatorKernelColor_System_String_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteSeparatorKernelColor(String, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorKernelColor(string, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorKernelColor(String, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: SeparatorWriterColor.WriteSeparatorKernelColor(string, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: SeparatorWriterColor.WriteSeparatorKernelColor(String, KernelColorType, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteSeparatorKernelColor(string, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.html#KS_ConsoleBase_Writers_FancyWriters_SeparatorWriterColor_WriteSeparatorKernelColor_System_String_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteSeparatorKernelColor(String, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorKernelColor(string, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorKernelColor(String, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: SeparatorWriterColor.WriteSeparatorKernelColor(string, KernelColorType, params object[])
+  nameWithType.vb: SeparatorWriterColor.WriteSeparatorKernelColor(String, KernelColorType, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.WriteSeparatorKernelColor(System.String,System.Boolean,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
   name: WriteSeparatorKernelColor(string, bool, KernelColorType, KernelColorType, params object[])
   href: api/KS.ConsoleBase.Writers.FancyWriters.SeparatorWriterColor.html#KS_ConsoleBase_Writers_FancyWriters_SeparatorWriterColor_WriteSeparatorKernelColor_System_String_System_Boolean_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
