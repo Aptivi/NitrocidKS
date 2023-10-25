@@ -5068,6 +5068,24 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColor(String, Boolean, Terminaux.Colors.ConsoleColors, ParamArray Object())
   nameWithType: TextWriterColor.WriteColor(string, bool, ConsoleColors, params object[])
   nameWithType.vb: TextWriterColor.WriteColor(String, Boolean, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColor(System.String,Terminaux.Colors.Color,System.Object[])
+  name: WriteColor(string, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterColor_WriteColor_System_String_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColor(System.String,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteColor(String, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColor(string, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColor(String, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: TextWriterColor.WriteColor(string, Color, params object[])
+  nameWithType.vb: TextWriterColor.WriteColor(String, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColor(System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteColor(string, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterColor_WriteColor_System_String_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColor(System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteColor(String, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColor(string, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColor(String, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: TextWriterColor.WriteColor(string, ConsoleColors, params object[])
+  nameWithType.vb: TextWriterColor.WriteColor(String, ConsoleColors, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColor*
   name: WriteColor
   href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterColor_WriteColor_
@@ -5111,6 +5129,24 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColorBack(String, Boolean, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
   nameWithType: TextWriterColor.WriteColorBack(string, bool, ConsoleColors, ConsoleColors, params object[])
   nameWithType.vb: TextWriterColor.WriteColorBack(String, Boolean, ConsoleColors, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColorBack(System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: WriteColorBack(string, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterColor_WriteColorBack_System_String_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColorBack(System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteColorBack(String, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColorBack(string, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColorBack(String, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: TextWriterColor.WriteColorBack(string, Color, Color, params object[])
+  nameWithType.vb: TextWriterColor.WriteColorBack(String, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColorBack(System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteColorBack(string, ConsoleColors, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterColor_WriteColorBack_System_String_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColorBack(System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteColorBack(String, ConsoleColors, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColorBack(string, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColorBack(String, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: TextWriterColor.WriteColorBack(string, ConsoleColors, ConsoleColors, params object[])
+  nameWithType.vb: TextWriterColor.WriteColorBack(String, ConsoleColors, ConsoleColors, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColorBack*
   name: WriteColorBack
   href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterColor_WriteColorBack_
@@ -5118,6 +5154,24 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteColorBack
   nameWithType: TextWriterColor.WriteColorBack
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteKernelColor(string, KernelColorType, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterColor_WriteKernelColor_System_String_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteKernelColor(String, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteKernelColor(string, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteKernelColor(String, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextWriterColor.WriteKernelColor(string, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: TextWriterColor.WriteKernelColor(String, KernelColorType, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteKernelColor(string, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterColor_WriteKernelColor_System_String_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteKernelColor(System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteKernelColor(String, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteKernelColor(string, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteKernelColor(String, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextWriterColor.WriteKernelColor(string, KernelColorType, params object[])
+  nameWithType.vb: TextWriterColor.WriteKernelColor(String, KernelColorType, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.WriteKernelColor(System.String,System.Boolean,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
   name: WriteKernelColor(string, bool, KernelColorType, KernelColorType, params object[])
   href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterColor_WriteKernelColor_System_String_System_Boolean_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
