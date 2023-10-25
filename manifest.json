@@ -2885,6 +2885,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Notifications.NotificationProgressState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Notifications.NotificationProgressState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Notifications.NotificationType.yml",
       "output": {
         ".html": {

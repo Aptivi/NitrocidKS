@@ -32852,19 +32852,32 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Notifications.Notification.ProgressCompleted
   nameWithType: Notification.ProgressCompleted
-- uid: KS.Misc.Notifications.Notification.ProgressFailed
-  name: ProgressFailed
-  href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_ProgressFailed
-  commentId: P:KS.Misc.Notifications.Notification.ProgressFailed
-  fullName: KS.Misc.Notifications.Notification.ProgressFailed
-  nameWithType: Notification.ProgressFailed
-- uid: KS.Misc.Notifications.Notification.ProgressFailed*
-  name: ProgressFailed
-  href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_ProgressFailed_
-  commentId: Overload:KS.Misc.Notifications.Notification.ProgressFailed
+- uid: KS.Misc.Notifications.Notification.ProgressIndeterminate
+  name: ProgressIndeterminate
+  href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_ProgressIndeterminate
+  commentId: P:KS.Misc.Notifications.Notification.ProgressIndeterminate
+  fullName: KS.Misc.Notifications.Notification.ProgressIndeterminate
+  nameWithType: Notification.ProgressIndeterminate
+- uid: KS.Misc.Notifications.Notification.ProgressIndeterminate*
+  name: ProgressIndeterminate
+  href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_ProgressIndeterminate_
+  commentId: Overload:KS.Misc.Notifications.Notification.ProgressIndeterminate
   isSpec: "True"
-  fullName: KS.Misc.Notifications.Notification.ProgressFailed
-  nameWithType: Notification.ProgressFailed
+  fullName: KS.Misc.Notifications.Notification.ProgressIndeterminate
+  nameWithType: Notification.ProgressIndeterminate
+- uid: KS.Misc.Notifications.Notification.ProgressState
+  name: ProgressState
+  href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_ProgressState
+  commentId: P:KS.Misc.Notifications.Notification.ProgressState
+  fullName: KS.Misc.Notifications.Notification.ProgressState
+  nameWithType: Notification.ProgressState
+- uid: KS.Misc.Notifications.Notification.ProgressState*
+  name: ProgressState
+  href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_ProgressState_
+  commentId: Overload:KS.Misc.Notifications.Notification.ProgressState
+  isSpec: "True"
+  fullName: KS.Misc.Notifications.Notification.ProgressState
+  nameWithType: Notification.ProgressState
 - uid: KS.Misc.Notifications.Notification.Title
   name: Title
   href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_Title
@@ -33179,6 +33192,30 @@ references:
   commentId: F:KS.Misc.Notifications.NotificationPriority.Medium
   fullName: KS.Misc.Notifications.NotificationPriority.Medium
   nameWithType: NotificationPriority.Medium
+- uid: KS.Misc.Notifications.NotificationProgressState
+  name: NotificationProgressState
+  href: api/KS.Misc.Notifications.NotificationProgressState.html
+  commentId: T:KS.Misc.Notifications.NotificationProgressState
+  fullName: KS.Misc.Notifications.NotificationProgressState
+  nameWithType: NotificationProgressState
+- uid: KS.Misc.Notifications.NotificationProgressState.Failure
+  name: Failure
+  href: api/KS.Misc.Notifications.NotificationProgressState.html#KS_Misc_Notifications_NotificationProgressState_Failure
+  commentId: F:KS.Misc.Notifications.NotificationProgressState.Failure
+  fullName: KS.Misc.Notifications.NotificationProgressState.Failure
+  nameWithType: NotificationProgressState.Failure
+- uid: KS.Misc.Notifications.NotificationProgressState.Progressing
+  name: Progressing
+  href: api/KS.Misc.Notifications.NotificationProgressState.html#KS_Misc_Notifications_NotificationProgressState_Progressing
+  commentId: F:KS.Misc.Notifications.NotificationProgressState.Progressing
+  fullName: KS.Misc.Notifications.NotificationProgressState.Progressing
+  nameWithType: NotificationProgressState.Progressing
+- uid: KS.Misc.Notifications.NotificationProgressState.Success
+  name: Success
+  href: api/KS.Misc.Notifications.NotificationProgressState.html#KS_Misc_Notifications_NotificationProgressState_Success
+  commentId: F:KS.Misc.Notifications.NotificationProgressState.Success
+  fullName: KS.Misc.Notifications.NotificationProgressState.Success
+  nameWithType: NotificationProgressState.Success
 - uid: KS.Misc.Notifications.NotificationType
   name: NotificationType
   href: api/KS.Misc.Notifications.NotificationType.html
