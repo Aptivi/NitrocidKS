@@ -122,7 +122,6 @@ Namespace Misc.Configuration
                     {"Show current time before login", ShowCurrentTimeBeforeLogin},
                     {"Notify for any fault during boot", NotifyFaultsBoot},
                     {"Show stack trace on kernel error", ShowStackTraceOnKernelError},
-                    {"Check debug quota", CheckDebugQuota},
                     {"Automatically download updates", AutoDownloadUpdate},
                     {"Enable event debugging", EventDebug},
                     {"New welcome banner", NewWelcomeStyle},
@@ -228,7 +227,6 @@ Namespace Misc.Configuration
             Dim FilesystemConfig As New JObject From {
                     {"Filesystem sort mode", SortMode.ToString},
                     {"Filesystem sort direction", SortDirection.ToString},
-                    {"Debug Size Quota in Bytes", DebugQuota},
                     {"Show Hidden Files", HiddenFiles},
                     {"Size parse mode", FullParseMode},
                     {"Show progress on filesystem operations", ShowFilesystemProgress},
@@ -1218,7 +1216,6 @@ Namespace Misc.Configuration
             ShowCurrentTimeBeforeLogin = If(ConfigToken("General")?("Show current time before login"), True)
             NotifyFaultsBoot = If(ConfigToken("General")?("Notify for any fault during boot"), True)
             ShowStackTraceOnKernelError = If(ConfigToken("General")?("Show stack trace on kernel error"), False)
-            CheckDebugQuota = If(ConfigToken("General")?("Check debug quota"), True)
             AutoDownloadUpdate = If(ConfigToken("General")?("Automatically download updates"), True)
             EventDebug = If(ConfigToken("General")?("Enable event debugging"), False)
             NewWelcomeStyle = If(ConfigToken("General")?("New welcome banner"), True)
@@ -1264,7 +1261,6 @@ Namespace Misc.Configuration
 
             'Filesystem Section
             Wdbg(DebugLevel.I, "Parsing filesystem section...")
-            DebugQuota = If(Integer.TryParse(ConfigToken("Filesystem")?("Debug Size Quota in Bytes"), 0), ConfigToken("Filesystem")?("Debug Size Quota in Bytes"), 1073741824)
             FullParseMode = If(ConfigToken("Filesystem")?("Size parse mode"), False)
             HiddenFiles = If(ConfigToken("Filesystem")?("Show Hidden Files"), False)
             SortMode = If(ConfigToken("Filesystem")?("Filesystem sort mode") IsNot Nothing, If([Enum].TryParse(ConfigToken("Filesystem")?("Filesystem sort mode"), SortMode), SortMode, FilesystemSortOptions.FullName), FilesystemSortOptions.FullName)

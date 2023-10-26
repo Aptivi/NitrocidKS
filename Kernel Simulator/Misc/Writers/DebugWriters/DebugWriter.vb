@@ -58,9 +58,6 @@ Namespace Misc.Writers.DebugWriters
                         End If
                     End If
 
-                    'Check for debug quota
-                    If CheckDebugQuota Then CheckForDebugQuotaExceed()
-
                     'For contributors who are testing new code: Define ENABLEIMMEDIATEWINDOWDEBUG for immediate debugging (Immediate Window)
                     If Source IsNot Nothing And Not LineNum = 0 Then
                         'Debug to file and all connected debug devices (raw mode)

@@ -209,10 +209,6 @@ Namespace Kernel
         ''' </summary>
         Public ShowStackTraceOnKernelError As Boolean
         ''' <summary>
-        ''' Whether to check the debug log to see if it exceeds the quota
-        ''' </summary>
-        Public CheckDebugQuota As Boolean = True
-        ''' <summary>
         ''' Deletes all events and/or reminders before saving them using saveall
         ''' </summary>
         Public SaveEventsRemindersDestructively As Boolean
