@@ -43,6 +43,8 @@ Namespace Misc.Writers.ConsoleWriters
         Public Sub WriteWherePlain(msg As String, Left As Integer, Top As Integer, [Return] As Boolean, ParamArray vars() As Object)
             SyncLock WriteLock
                 Try
+                    If msg Is Nothing Then Return
+
                     'Format the message as necessary
                     If Not vars.Length = 0 Then msg = FormatString(msg, vars)
 
