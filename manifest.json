@@ -4165,10 +4165,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.ShellBase.Commands.ProcessExecutor.yml",
+      "source_relative_path": "api/KS.Shell.ShellBase.Commands.ProcessExecution.ProcessExecutor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Shell.ShellBase.Commands.ProcessExecutor.html"
+          "relative_path": "api/KS.Shell.ShellBase.Commands.ProcessExecution.ProcessExecutor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Shell.ShellBase.Commands.ProcessExecution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Shell.ShellBase.Commands.ProcessExecution.html"
         }
       },
       "version": ""
