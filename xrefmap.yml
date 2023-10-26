@@ -33456,6 +33456,15 @@ references:
   fullName.vb: KS.Misc.Reflection.MethodManager.GetMethod(String)
   nameWithType: MethodManager.GetMethod(string)
   nameWithType.vb: MethodManager.GetMethod(String)
+- uid: KS.Misc.Reflection.MethodManager.GetMethod(System.String,System.Type)
+  name: GetMethod(string, Type)
+  href: api/KS.Misc.Reflection.MethodManager.html#KS_Misc_Reflection_MethodManager_GetMethod_System_String_System_Type_
+  commentId: M:KS.Misc.Reflection.MethodManager.GetMethod(System.String,System.Type)
+  name.vb: GetMethod(String, Type)
+  fullName: KS.Misc.Reflection.MethodManager.GetMethod(string, System.Type)
+  fullName.vb: KS.Misc.Reflection.MethodManager.GetMethod(String, System.Type)
+  nameWithType: MethodManager.GetMethod(string, Type)
+  nameWithType.vb: MethodManager.GetMethod(String, Type)
 - uid: KS.Misc.Reflection.MethodManager.GetMethod*
   name: GetMethod
   href: api/KS.Misc.Reflection.MethodManager.html#KS_Misc_Reflection_MethodManager_GetMethod_
@@ -33463,6 +33472,38 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.MethodManager.GetMethod
   nameWithType: MethodManager.GetMethod
+- uid: KS.Misc.Reflection.MethodManager.InvokeMethod(System.String,System.Object,System.Object[])
+  name: InvokeMethod(string, object, params object[])
+  href: api/KS.Misc.Reflection.MethodManager.html#KS_Misc_Reflection_MethodManager_InvokeMethod_System_String_System_Object_System_Object___
+  commentId: M:KS.Misc.Reflection.MethodManager.InvokeMethod(System.String,System.Object,System.Object[])
+  name.vb: InvokeMethod(String, Object, ParamArray Object())
+  fullName: KS.Misc.Reflection.MethodManager.InvokeMethod(string, object, params object[])
+  fullName.vb: KS.Misc.Reflection.MethodManager.InvokeMethod(String, Object, ParamArray Object())
+  nameWithType: MethodManager.InvokeMethod(string, object, params object[])
+  nameWithType.vb: MethodManager.InvokeMethod(String, Object, ParamArray Object())
+- uid: KS.Misc.Reflection.MethodManager.InvokeMethod*
+  name: InvokeMethod
+  href: api/KS.Misc.Reflection.MethodManager.html#KS_Misc_Reflection_MethodManager_InvokeMethod_
+  commentId: Overload:KS.Misc.Reflection.MethodManager.InvokeMethod
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.MethodManager.InvokeMethod
+  nameWithType: MethodManager.InvokeMethod
+- uid: KS.Misc.Reflection.MethodManager.InvokeMethodStatic(System.String,System.Object[])
+  name: InvokeMethodStatic(string, params object[])
+  href: api/KS.Misc.Reflection.MethodManager.html#KS_Misc_Reflection_MethodManager_InvokeMethodStatic_System_String_System_Object___
+  commentId: M:KS.Misc.Reflection.MethodManager.InvokeMethodStatic(System.String,System.Object[])
+  name.vb: InvokeMethodStatic(String, ParamArray Object())
+  fullName: KS.Misc.Reflection.MethodManager.InvokeMethodStatic(string, params object[])
+  fullName.vb: KS.Misc.Reflection.MethodManager.InvokeMethodStatic(String, ParamArray Object())
+  nameWithType: MethodManager.InvokeMethodStatic(string, params object[])
+  nameWithType.vb: MethodManager.InvokeMethodStatic(String, ParamArray Object())
+- uid: KS.Misc.Reflection.MethodManager.InvokeMethodStatic*
+  name: InvokeMethodStatic
+  href: api/KS.Misc.Reflection.MethodManager.html#KS_Misc_Reflection_MethodManager_InvokeMethodStatic_
+  commentId: Overload:KS.Misc.Reflection.MethodManager.InvokeMethodStatic
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.MethodManager.InvokeMethodStatic
+  nameWithType: MethodManager.InvokeMethodStatic
 - uid: KS.Misc.Reflection.PropertyManager
   name: PropertyManager
   href: api/KS.Misc.Reflection.PropertyManager.html
