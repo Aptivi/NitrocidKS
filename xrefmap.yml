@@ -40797,15 +40797,15 @@ references:
   fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentPart.New(Boolean, String, KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions)
   nameWithType: CommandArgumentPart.CommandArgumentPart(bool, string, CommandArgumentPartOptions)
   nameWithType.vb: CommandArgumentPart.New(Boolean, String, CommandArgumentPartOptions)
-- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[]},System.Boolean,System.String)
-  name: CommandArgumentPart(bool, string, Func<string[]>, bool, string)
-  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_System_Boolean_System_String_System_Func_System_String____System_Boolean_System_String_
-  commentId: M:KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[]},System.Boolean,System.String)
-  name.vb: New(Boolean, String, Func(Of String()), Boolean, String)
-  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.CommandArgumentPart(bool, string, System.Func<string[]>, bool, string)
-  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentPart.New(Boolean, String, System.Func(Of String()), Boolean, String)
-  nameWithType: CommandArgumentPart.CommandArgumentPart(bool, string, Func<string[]>, bool, string)
-  nameWithType.vb: CommandArgumentPart.New(Boolean, String, Func(Of String()), Boolean, String)
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[],System.String[]},System.Boolean,System.String)
+  name: CommandArgumentPart(bool, string, Func<string[], string[]>, bool, string)
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_System_Boolean_System_String_System_Func_System_String___System_String____System_Boolean_System_String_
+  commentId: M:KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[],System.String[]},System.Boolean,System.String)
+  name.vb: New(Boolean, String, Func(Of String(), String()), Boolean, String)
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPart.CommandArgumentPart(bool, string, System.Func<string[], string[]>, bool, string)
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentPart.New(Boolean, String, System.Func(Of String(), String()), Boolean, String)
+  nameWithType: CommandArgumentPart.CommandArgumentPart(bool, string, Func<string[], string[]>, bool, string)
+  nameWithType.vb: CommandArgumentPart.New(Boolean, String, Func(Of String(), String()), Boolean, String)
 - uid: KS.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor*
   name: CommandArgumentPart
   href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPart.html#KS_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_
