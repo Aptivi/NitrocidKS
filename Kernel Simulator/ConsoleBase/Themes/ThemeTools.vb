@@ -213,7 +213,7 @@ Namespace ConsoleBase.Themes
                     ListTitleColor = ThemeInfo.ThemeListTitleColor
                     DevelopmentWarningColor = ThemeInfo.ThemeDevelopmentWarningColor
                     StageTimeColor = ThemeInfo.ThemeStageTimeColor
-                    ColorTools.ProgressColor = ThemeInfo.ThemeProgressColor
+                    ProgressColor = ThemeInfo.ThemeProgressColor
                     BackOptionColor = ThemeInfo.ThemeBackOptionColor
                     LowPriorityBorderColor = ThemeInfo.ThemeLowPriorityBorderColor
                     MediumPriorityBorderColor = ThemeInfo.ThemeMediumPriorityBorderColor

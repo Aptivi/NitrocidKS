@@ -59,7 +59,7 @@ Namespace Misc.RarFile
 
             'Define absolute target
             Dim AbsoluteTarget As String = RarShell_CurrentArchiveDirectory + "/" + Target
-            If AbsoluteTarget.StartsWith("/") Then AbsoluteTarget = AbsoluteTarget.RemoveLetter(0)
+            If AbsoluteTarget.StartsWith("/") Then AbsoluteTarget = AbsoluteTarget.Substring(1)
             Wdbg(DebugLevel.I, "Target: {0}, AbsoluteTarget: {1}", Target, AbsoluteTarget)
 
             'Define local destination while getting an entry from target
@@ -131,7 +131,7 @@ Namespace Misc.RarFile
 
             'Prepare the target
             Target = RarShell_CurrentArchiveDirectory + "/" + Target
-            If Target.StartsWith("/") Then Target = Target.RemoveLetter(0)
+            If Target.StartsWith("/") Then Target = Target.Substring(1)
             Wdbg(DebugLevel.I, "Setting target to {0}...", Target)
 
             'Enumerate entries
@@ -139,7 +139,7 @@ Namespace Misc.RarFile
                 Wdbg(DebugLevel.I, "Entry: {0}", Entry.Key)
                 If Entry.Key.StartsWith(Target) Then
                     Wdbg(DebugLevel.I, "{0} found ({1}). Changing...", Target, Entry.Key)
-                    RarShell_CurrentArchiveDirectory = Entry.Key.RemoveLetter(Entry.Key.Length - 1)
+                    RarShell_CurrentArchiveDirectory = Entry.Key.Substring(Entry.Key.Length)
                     Wdbg(DebugLevel.I, "Setting CAD to {0}...", RarShell_CurrentArchiveDirectory)
                     Return True
                 End If

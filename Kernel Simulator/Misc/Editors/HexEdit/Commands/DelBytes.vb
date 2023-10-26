@@ -16,7 +16,6 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports Extensification.LongExts
 Imports KS.Misc.Reflection
 
 Namespace Misc.Editors.HexEdit.Commands
@@ -27,7 +26,7 @@ Namespace Misc.Editors.HexEdit.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If ListArgs?.Count = 1 Then
                 If IsStringNumeric(ListArgs(0)) Then
-                    If CLng(ListArgs(0)) <= HexEdit_FileBytes.LongLength Then
+                    If CLng(ListArgs(0)) <= HexEdit_FileBytes.LongCount Then
                         HexEdit_DeleteBytes(ListArgs(0))
                         Write(DoTranslation("Deleted bytes."), True, ColTypes.Success)
                     Else
@@ -39,7 +38,7 @@ Namespace Misc.Editors.HexEdit.Commands
                 End If
             ElseIf ListArgs?.Count > 1 Then
                 If IsStringNumeric(ListArgs(0)) And IsStringNumeric(ListArgs(1)) Then
-                    If CLng(ListArgs(0)) <= HexEdit_FileBytes.LongLength And CLng(ListArgs(1)) <= HexEdit_FileBytes.LongLength Then
+                    If CLng(ListArgs(0)) <= HexEdit_FileBytes.LongCount And CLng(ListArgs(1)) <= HexEdit_FileBytes.LongCount Then
                         Dim ByteNumberStart As Long = ListArgs(0)
                         Dim ByteNumberEnd As Long = ListArgs(1)
                         ByteNumberStart.SwapIfSourceLarger(ByteNumberEnd)

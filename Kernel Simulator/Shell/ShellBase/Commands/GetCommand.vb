@@ -150,7 +150,11 @@ Namespace Shell.ShellBase.Commands
 
             'Unified commands
             For Each UnifiedCommand As String In UnifiedCommandDict.Keys
-                FinalCommands.AddOrModify(UnifiedCommand, UnifiedCommandDict(UnifiedCommand))
+                If FinalCommands.ContainsKey(UnifiedCommand) Then
+                    FinalCommands(UnifiedCommand) = UnifiedCommandDict(UnifiedCommand)
+                Else
+                    FinalCommands.Add(UnifiedCommand, UnifiedCommandDict(UnifiedCommand))
+                End If
             Next
 
             Return FinalCommands

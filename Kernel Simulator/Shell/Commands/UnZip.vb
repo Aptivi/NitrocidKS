@@ -34,7 +34,7 @@ Namespace Shell.Commands
                 Dim Destination As String = If(Not ListArgs(1) = "-createdir", NeutralizePath(ListArgs(1)), "")
                 If ListArgs?.Contains("-createdir") Then
                     Destination = $"{If(Not ListArgs(1) = "-createdir", NeutralizePath(ListArgs(1)), "")}/{If(Not ListArgs(1) = "-createdir", Path.GetFileNameWithoutExtension(ZipArchiveName), NeutralizePath(Path.GetFileNameWithoutExtension(ZipArchiveName)))}"
-                    If Destination(0) = "/" Then Destination = Destination.RemoveLetter(0)
+                    If Destination(0) = "/" Then Destination = Destination.Substring(1)
                 End If
                 ZipFile.ExtractToDirectory(ZipArchiveName, Destination)
             End If

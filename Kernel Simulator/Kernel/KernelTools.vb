@@ -17,7 +17,6 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports System.IO
-Imports System.Reflection
 Imports System.Threading
 Imports Newtonsoft.Json.Linq
 Imports KS.Arguments
@@ -29,7 +28,6 @@ Imports KS.Misc.Calendar.Reminders
 Imports KS.Misc.Configuration
 Imports KS.Misc.Notifications
 Imports KS.Misc.Reflection
-Imports KS.Misc.Screensaver
 Imports KS.Misc.Splash
 Imports KS.Misc.Writers.MiscWriters
 Imports KS.Modifications

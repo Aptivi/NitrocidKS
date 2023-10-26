@@ -16,8 +16,6 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports Extensification.ArrayExts
-Imports Extensification.LongExts
 Imports System.IO
 Imports System.Threading
 
@@ -41,7 +39,7 @@ Namespace Misc.Editors.HexEdit
                 HexEdit_FileStream.Seek(0, SeekOrigin.Begin)
 
                 'Add the information to the arrays
-                HexEdit_FileBytes = FileBytes
+                HexEdit_FileBytes = FileBytes.ToList()
                 HexEdit_FileBytesOrig = FileBytes
                 Return True
             Catch ex As Exception
@@ -61,7 +59,7 @@ Namespace Misc.Editors.HexEdit
                 HexEdit_FileStream.Close()
                 HexEdit_FileStream = Nothing
                 Wdbg(DebugLevel.I, "File is no longer open.")
-                HexEdit_FileBytes = Array.Empty(Of Byte)()
+                HexEdit_FileBytes.Clear()
                 HexEdit_FileBytesOrig = Array.Empty(Of Byte)()
                 Return True
             Catch ex As Exception
@@ -77,7 +75,7 @@ Namespace Misc.Editors.HexEdit
         ''' <returns>True if successful; False if unsuccessful</returns>
         Public Function HexEdit_SaveBinaryFile() As Boolean
             Try
-                Dim FileBytes() As Byte = HexEdit_FileBytes
+                Dim FileBytes() As Byte = HexEdit_FileBytes.ToArray()
                 Wdbg(DebugLevel.I, "Trying to save file...")
                 HexEdit_FileStream.SetLength(0)
                 Wdbg(DebugLevel.I, "Length set to 0.")
@@ -154,13 +152,13 @@ Namespace Misc.Editors.HexEdit
                 Dim FileBytesList As List(Of Byte) = HexEdit_FileBytes.ToList
                 Dim ByteIndex As Long = ByteNumber - 1
                 Wdbg(DebugLevel.I, "Byte index: {0}, number: {1}", ByteIndex, ByteNumber)
-                Wdbg(DebugLevel.I, "File length: {0}", HexEdit_FileBytes.LongLength)
+                Wdbg(DebugLevel.I, "File length: {0}", HexEdit_FileBytes.LongCount)
 
                 'Actually remove a byte
-                If ByteNumber <= HexEdit_FileBytes.LongLength Then
+                If ByteNumber <= HexEdit_FileBytes.LongCount Then
                     FileBytesList.RemoveAt(ByteIndex)
-                    Wdbg(DebugLevel.I, "Removed {0}. Result: {1}", ByteIndex, HexEdit_FileBytes.LongLength)
-                    HexEdit_FileBytes = FileBytesList.ToArray
+                    Wdbg(DebugLevel.I, "Removed {0}. Result: {1}", ByteIndex, HexEdit_FileBytes.LongCount)
+                    HexEdit_FileBytes = FileBytesList
                 Else
                     Throw New ArgumentOutOfRangeException(NameOf(ByteNumber), ByteNumber, DoTranslation("The specified byte number may not be larger than the file size."))
                 End If
@@ -174,7 +172,7 @@ Namespace Misc.Editors.HexEdit
         ''' </summary>
         ''' <param name="StartByteNumber">Start from the byte number</param>
         Public Sub HexEdit_DeleteBytes(StartByteNumber As Long)
-            HexEdit_DeleteBytes(StartByteNumber, HexEdit_FileBytes.LongLength)
+            HexEdit_DeleteBytes(StartByteNumber, HexEdit_FileBytes.LongCount)
         End Sub
 
         ''' <summary>
@@ -191,18 +189,18 @@ Namespace Misc.Editors.HexEdit
                 Wdbg(DebugLevel.I, "Start byte number: {0}, end: {1}", StartByteNumber, EndByteNumber)
                 Wdbg(DebugLevel.I, "Got start byte index: {0}", StartByteNumberIndex)
                 Wdbg(DebugLevel.I, "Got end byte index: {0}", EndByteNumberIndex)
-                Wdbg(DebugLevel.I, "File length: {0}", HexEdit_FileBytes.LongLength)
+                Wdbg(DebugLevel.I, "File length: {0}", HexEdit_FileBytes.LongCount)
 
                 'Actually remove the bytes
-                If StartByteNumber <= HexEdit_FileBytes.LongLength And EndByteNumber <= HexEdit_FileBytes.LongLength Then
+                If StartByteNumber <= HexEdit_FileBytes.LongCount And EndByteNumber <= HexEdit_FileBytes.LongCount Then
                     For ByteNumber As Long = EndByteNumber To StartByteNumber Step -1
                         FileBytesList.RemoveAt(ByteNumber - 1)
                     Next
-                    Wdbg(DebugLevel.I, "Removed {0} to {1}. New length: {2}", StartByteNumber, EndByteNumber, HexEdit_FileBytes.LongLength)
-                    HexEdit_FileBytes = FileBytesList.ToArray
-                ElseIf StartByteNumber > HexEdit_FileBytes.LongLength Then
+                    Wdbg(DebugLevel.I, "Removed {0} to {1}. New length: {2}", StartByteNumber, EndByteNumber, HexEdit_FileBytes.LongCount)
+                    HexEdit_FileBytes = FileBytesList
+                ElseIf StartByteNumber > HexEdit_FileBytes.LongCount Then
                     Throw New ArgumentOutOfRangeException(NameOf(StartByteNumber), StartByteNumber, DoTranslation("The specified start byte number may not be larger than the file size."))
-                ElseIf EndByteNumber > HexEdit_FileBytes.LongLength Then
+                ElseIf EndByteNumber > HexEdit_FileBytes.LongCount Then
                     Throw New ArgumentOutOfRangeException(NameOf(EndByteNumber), EndByteNumber, DoTranslation("The specified end byte number may not be larger than the file size."))
                 End If
             Else
@@ -214,14 +212,14 @@ Namespace Misc.Editors.HexEdit
         ''' Renders the file in hex
         ''' </summary>
         Public Sub HexEdit_DisplayHex()
-            HexEdit_DisplayHex(1, HexEdit_FileBytes.LongLength)
+            HexEdit_DisplayHex(1, HexEdit_FileBytes.LongCount)
         End Sub
 
         ''' <summary>
         ''' Renders the file in hex
         ''' </summary>
         Public Sub HexEdit_DisplayHex(Start As Long)
-            HexEdit_DisplayHex(Start, HexEdit_FileBytes.LongLength)
+            HexEdit_DisplayHex(Start, HexEdit_FileBytes.LongCount)
         End Sub
 
         ''' <summary>
@@ -229,9 +227,9 @@ Namespace Misc.Editors.HexEdit
         ''' </summary>
         Public Sub HexEdit_DisplayHex(StartByte As Long, EndByte As Long)
             If HexEdit_FileStream IsNot Nothing Then
-                Wdbg(DebugLevel.I, "File Bytes: {0}", HexEdit_FileBytes.LongLength)
+                Wdbg(DebugLevel.I, "File Bytes: {0}", HexEdit_FileBytes.LongCount)
                 StartByte.SwapIfSourceLarger(EndByte)
-                If StartByte <= HexEdit_FileBytes.LongLength And EndByte <= HexEdit_FileBytes.LongLength Then
+                If StartByte <= HexEdit_FileBytes.LongCount And EndByte <= HexEdit_FileBytes.LongCount Then
                     'We need to know how to write the bytes and their contents in this shape:
                     '-> 0x00000010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
                     '   0x00000020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
@@ -274,9 +272,9 @@ Namespace Misc.Editors.HexEdit
                         End If
                     Next
                     Write("", True, ColTypes.Neutral)
-                ElseIf StartByte > HexEdit_FileBytes.LongLength Then
+                ElseIf StartByte > HexEdit_FileBytes.LongCount Then
                     Write(DoTranslation("The specified start byte number may not be larger than the file size."), True, ColTypes.Error)
-                ElseIf EndByte > HexEdit_FileBytes.LongLength Then
+                ElseIf EndByte > HexEdit_FileBytes.LongCount Then
                     Write(DoTranslation("The specified end byte number may not be larger than the file size."), True, ColTypes.Error)
                 End If
             Else
@@ -288,14 +286,14 @@ Namespace Misc.Editors.HexEdit
         ''' Queries the byte and displays the results
         ''' </summary>
         Public Sub HexEdit_QueryByteAndDisplay(ByteContent As Byte)
-            HexEdit_QueryByteAndDisplay(ByteContent, 1, HexEdit_FileBytes.LongLength)
+            HexEdit_QueryByteAndDisplay(ByteContent, 1, HexEdit_FileBytes.LongCount)
         End Sub
 
         ''' <summary>
         ''' Queries the byte and displays the results
         ''' </summary>
         Public Sub HexEdit_QueryByteAndDisplay(ByteContent As Byte, Start As Long)
-            HexEdit_QueryByteAndDisplay(ByteContent, Start, HexEdit_FileBytes.LongLength)
+            HexEdit_QueryByteAndDisplay(ByteContent, Start, HexEdit_FileBytes.LongCount)
         End Sub
 
         ''' <summary>
@@ -303,8 +301,8 @@ Namespace Misc.Editors.HexEdit
         ''' </summary>
         Public Sub HexEdit_QueryByteAndDisplay(ByteContent As Byte, StartByte As Long, EndByte As Long)
             If HexEdit_FileStream IsNot Nothing Then
-                Wdbg(DebugLevel.I, "File Bytes: {0}", HexEdit_FileBytes.LongLength)
-                If StartByte <= HexEdit_FileBytes.LongLength And EndByte <= HexEdit_FileBytes.LongLength Then
+                Wdbg(DebugLevel.I, "File Bytes: {0}", HexEdit_FileBytes.LongCount)
+                If StartByte <= HexEdit_FileBytes.LongCount And EndByte <= HexEdit_FileBytes.LongCount Then
                     For ByteNumber As Long = StartByte To EndByte
                         If HexEdit_FileBytes(ByteNumber - 1) = ByteContent Then
                             Dim ByteRenderStart As Long = ByteNumber - 2
@@ -312,7 +310,7 @@ Namespace Misc.Editors.HexEdit
                             Write($"- 0x{ByteNumber:X8}: ", False, ColTypes.ListEntry)
                             For ByteRenderNumber As Long = ByteRenderStart To ByteRenderEnd
                                 If ByteRenderStart < 0 Then ByteRenderStart = 1
-                                If ByteRenderEnd > HexEdit_FileBytes.LongLength Then ByteRenderEnd = HexEdit_FileBytes.LongLength
+                                If ByteRenderEnd > HexEdit_FileBytes.LongCount Then ByteRenderEnd = HexEdit_FileBytes.LongCount
                                 Dim UseHighlight As Boolean = HexEdit_FileBytes(ByteRenderNumber - 1) = ByteContent
                                 Dim CurrentByte As Byte = HexEdit_FileBytes(ByteRenderNumber - 1)
                                 Wdbg(DebugLevel.I, "Byte: {0}", CurrentByte)
@@ -329,9 +327,9 @@ Namespace Misc.Editors.HexEdit
                             Write("", True, ColTypes.Neutral)
                         End If
                     Next
-                ElseIf StartByte > HexEdit_FileBytes.LongLength Then
+                ElseIf StartByte > HexEdit_FileBytes.LongCount Then
                     Write(DoTranslation("The specified start byte number may not be larger than the file size."), True, ColTypes.Error)
-                ElseIf EndByte > HexEdit_FileBytes.LongLength Then
+                ElseIf EndByte > HexEdit_FileBytes.LongCount Then
                     Write(DoTranslation("The specified end byte number may not be larger than the file size."), True, ColTypes.Error)
                 End If
             Else
@@ -345,7 +343,7 @@ Namespace Misc.Editors.HexEdit
         ''' <param name="FromByte">Byte to be replaced</param>
         ''' <param name="WithByte">Byte to replace with</param>
         Public Sub HexEdit_Replace(FromByte As Byte, WithByte As Byte)
-            HexEdit_Replace(FromByte, WithByte, 1, HexEdit_FileBytes.LongLength)
+            HexEdit_Replace(FromByte, WithByte, 1, HexEdit_FileBytes.LongCount)
         End Sub
 
         ''' <summary>
@@ -354,7 +352,7 @@ Namespace Misc.Editors.HexEdit
         ''' <param name="FromByte">Byte to be replaced</param>
         ''' <param name="WithByte">Byte to replace with</param>
         Public Sub HexEdit_Replace(FromByte As Byte, WithByte As Byte, Start As Long)
-            HexEdit_Replace(FromByte, WithByte, Start, HexEdit_FileBytes.LongLength)
+            HexEdit_Replace(FromByte, WithByte, Start, HexEdit_FileBytes.LongCount)
         End Sub
 
         ''' <summary>
@@ -365,17 +363,17 @@ Namespace Misc.Editors.HexEdit
         Public Sub HexEdit_Replace(FromByte As Byte, WithByte As Byte, StartByte As Long, EndByte As Long)
             If HexEdit_FileStream IsNot Nothing Then
                 Wdbg(DebugLevel.I, "Source: {0}, Target: {1}", FromByte, WithByte)
-                Wdbg(DebugLevel.I, "File Bytes: {0}", HexEdit_FileBytes.LongLength)
-                If StartByte <= HexEdit_FileBytes.LongLength And EndByte <= HexEdit_FileBytes.LongLength Then
+                Wdbg(DebugLevel.I, "File Bytes: {0}", HexEdit_FileBytes.LongCount)
+                If StartByte <= HexEdit_FileBytes.LongCount And EndByte <= HexEdit_FileBytes.LongCount Then
                     For ByteNumber As Long = StartByte To EndByte
                         If HexEdit_FileBytes(ByteNumber - 1) = FromByte Then
                             Wdbg(DebugLevel.I, "Replacing ""{0}"" with ""{1}"" in byte {2}", FromByte, WithByte, ByteNumber)
                             HexEdit_FileBytes(ByteNumber - 1) = WithByte
                         End If
                     Next
-                ElseIf StartByte > HexEdit_FileBytes.LongLength Then
+                ElseIf StartByte > HexEdit_FileBytes.LongCount Then
                     Write(DoTranslation("The specified start byte number may not be larger than the file size."), True, ColTypes.Error)
-                ElseIf EndByte > HexEdit_FileBytes.LongLength Then
+                ElseIf EndByte > HexEdit_FileBytes.LongCount Then
                     Write(DoTranslation("The specified end byte number may not be larger than the file size."), True, ColTypes.Error)
                 End If
             Else

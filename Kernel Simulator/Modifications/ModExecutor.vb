@@ -27,7 +27,7 @@ Namespace Modifications
             KernelEventManager.RaisePreExecuteModCommand(cmd)
 
             'Variables
-            Dim parts As String() = cmd.SplitEncloseDoubleQuotes(" ")
+            Dim parts As String() = cmd.SplitEncloseDoubleQuotes()
             Dim args As String = ""
             Dim actualCmd As String = parts(0)
             Wdbg(DebugLevel.I, "Command = {0}", actualCmd)

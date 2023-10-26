@@ -114,7 +114,6 @@
     <PackageReference Include="Addresstigator" Version="0.1.0.5" />
     <PackageReference Include="Crc32.NET" Version="1.2.0" />
     <PackageReference Include="Dictify" Version="1.1.2" />
-    <PackageReference Include="Extensification" Version="2022.4.1.2" />
     <PackageReference Include="Figgle" Version="0.5.1" />
     <PackageReference Include="FluentFTP" Version="48.0.1" />
     <PackageReference Include="GRILO.Boot" Version="0.1.0.3" />
@@ -152,8 +151,6 @@
 
   <!-- KS Import Information -->
   <ItemGroup>
-    <Import Include="Extensification.DictionaryExts" />
-    <Import Include="Extensification.StringExts" />
     <Import Include="FluentFTP" />
     <Import Include="FluentFTP.Helpers" />
     <Import Include="KS.ConsoleBase" />
@@ -167,6 +164,7 @@
     <Import Include="KS.Login" />
     <Import Include="KS.Misc.Platform" />
     <Import Include="KS.Misc.Probers" />
+    <Import Include="KS.Misc.Text" />
     <Import Include="KS.Misc.Threading" />
     <Import Include="KS.Misc.Writers.ConsoleWriters" />
     <Import Include="KS.Misc.Writers.DebugWriters" />

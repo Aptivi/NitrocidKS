@@ -16,24 +16,26 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Namespace Misc.Splash
-    Public Module SplashSettings
-
-        '-> Simple
+Namespace Misc.Text
+    ''' <summary>
+    ''' Type of enclosed double quotes in a word or phrase
+    ''' </summary>
+    Public Enum EnclosedDoubleQuotesType
         ''' <summary>
-        ''' [Simple] The progress text location
+        ''' No double quotes to be enclosed
         ''' </summary>
-        Public SimpleProgressTextLocation As TextLocation = TextLocation.Top
-
-        '-> Progress
+        None
         ''' <summary>
-        ''' [Progress] The progress color
+        ''' Text enclosed by the double quotes
         ''' </summary>
-        Public ProgressProgressColor As String = ProgressColor.PlainSequence
+        DoubleQuotes
         ''' <summary>
-        ''' [Progress] The progress text location
+        ''' Text enclosed by the single quotes
         ''' </summary>
-        Public ProgressProgressTextLocation As TextLocation = TextLocation.Top
-
-    End Module
+        SingleQuotes
+        ''' <summary>
+        ''' Text enclosed by the backticks
+        ''' </summary>
+        Backticks
+    End Enum
 End Namespace

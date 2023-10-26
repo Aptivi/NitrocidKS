@@ -129,7 +129,7 @@ Namespace Network.RSS
                         Description = ArticleNode.InnerText.Trim(vbCr, vbLf, " ")
                     End If
                 End If
-                Parameters.AddIfNotFound(ArticleNode.Name, ArticleNode)
+                If Parameters.ContainsKey(ArticleNode.Name) Then Parameters.Add(ArticleNode.Name, ArticleNode)
             Next
 #Disable Warning BC42104
             Return New RSSArticle(Title, Link, Description, Parameters)

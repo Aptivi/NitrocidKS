@@ -23,17 +23,29 @@ Namespace Shell.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             Dim Hex As String = ListArgsOnly(0)
-            Dim R, G, B As Integer
 
             'Do the job
-            Hex.ConvertFromHexToRgb(R, G, B)
+            Dim rgb As String() = ConvertFromHexToRGB(Hex).Split(";")
             Write("- " + DoTranslation("Red color level:") + " ", False, ColTypes.ListEntry)
-            Write($"{R}", True, ColTypes.ListValue)
+            Write($"{rgb(0)}", True, ColTypes.ListValue)
             Write("- " + DoTranslation("Green color level:") + " ", False, ColTypes.ListEntry)
-            Write($"{G}", True, ColTypes.ListValue)
+            Write($"{rgb(1)}", True, ColTypes.ListValue)
             Write("- " + DoTranslation("Blue color level:") + " ", False, ColTypes.ListEntry)
-            Write($"{B}", True, ColTypes.ListValue)
+            Write($"{rgb(2)}", True, ColTypes.ListValue)
         End Sub
+
+        Private Shared Function ConvertFromHexToRGB(Hex As String) As String
+            If Hex.StartsWith("#") Then
+                Dim ColorDecimal As Integer = Convert.ToInt32(Hex.Substring(1), 16)
+                Dim R As Integer = CByte((ColorDecimal And &HFF0000) >> &H10)
+                Dim G As Integer = CByte((ColorDecimal And &HFF00) >> 8)
+                Dim B As Integer = CByte(ColorDecimal And &HFF)
+                Wdbg(DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", R, G, B)
+                Return $"{R};{G};{B}"
+            Else
+                Throw New Exception(DoTranslation("Invalid hex color specifier."))
+            End If
+        End Function
 
     End Class
 End Namespace

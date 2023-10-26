@@ -16,7 +16,6 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports Extensification.ListExts
 Imports System.Threading
 Imports KS.Misc.Screensaver
 Imports KS.Misc.Screensaver.Displays
@@ -247,7 +246,7 @@ Namespace Misc.Games
                     Wdbg(DebugLevel.I, "Mass position contains the current position ({0}, {1})? {2}", SnakeCurrentX, SnakeCurrentY, Dead)
 
                     'Add the mass position
-                    SnakeMassPositions.AddIfNotFound($"{SnakeCurrentX}/{SnakeCurrentY}")
+                    If Not Dead Then SnakeMassPositions.Add($"{SnakeCurrentX}/{SnakeCurrentY}")
                     If SnakeMassPositions.Count > SnakeLength Then
                         Wdbg(DebugLevel.I, "Mass position count {0} exceeds snake length of {1}. Removing index 0...", SnakeMassPositions.Count, SnakeLength)
                         Dim LastTailPositionStrings() As String = SnakeMassPositions(0).Split("/")

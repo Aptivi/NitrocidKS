@@ -86,7 +86,7 @@ Namespace ConsoleBase.Colors
                 If ColorSpecifierArray.Length = 3 Then
                     'We got the RGB values! Form the sequences
                     PlainSequence = $"{ColorSpecifierArray(0)};{ColorSpecifierArray(1)};{ColorSpecifierArray(2)}"
-                    PlainSequenceEnclosed = $"{ColorSpecifierArray(0)};{ColorSpecifierArray(1)};{ColorSpecifierArray(2)}".EncloseByDoubleQuotes
+                    PlainSequenceEnclosed = $"""{ColorSpecifierArray(0)};{ColorSpecifierArray(1)};{ColorSpecifierArray(2)}"""
                     VTSequenceForeground = GetEsc() + $"[38;2;{PlainSequence}m"
                     VTSequenceBackground = GetEsc() + $"[48;2;{PlainSequence}m"
 
@@ -116,7 +116,7 @@ Namespace ConsoleBase.Colors
                 G = ColorsInfo.G
                 B = ColorsInfo.B
             ElseIf ColorSpecifier.StartsWith("#") Then
-                Dim ColorDecimal As Integer = Convert.ToInt32(ColorSpecifier.RemoveLetter(0), 16)
+                Dim ColorDecimal As Integer = Convert.ToInt32(ColorSpecifier.Substring(1), 16)
 
                 'Convert the RGB values to numbers
                 R = CByte((ColorDecimal And &HFF0000) >> &H10)
@@ -125,7 +125,7 @@ Namespace ConsoleBase.Colors
 
                 'We got the RGB values! Form the sequences
                 PlainSequence = $"{R};{G};{B}"
-                PlainSequenceEnclosed = $"{R};{G};{B}".EncloseByDoubleQuotes
+                PlainSequenceEnclosed = $"""{R};{G};{B}"""
                 VTSequenceForeground = GetEsc() + $"[38;2;{PlainSequence}m"
                 VTSequenceBackground = GetEsc() + $"[48;2;{PlainSequence}m"
 
@@ -155,7 +155,7 @@ Namespace ConsoleBase.Colors
 
             'Populate sequences
             PlainSequence = $"{R};{G};{B}"
-            PlainSequenceEnclosed = $"{R};{G};{B}".EncloseByDoubleQuotes
+            PlainSequenceEnclosed = $"""{R};{G};{B}"""
             VTSequenceForeground = GetEsc() + $"[38;2;{PlainSequence}m"
             VTSequenceBackground = GetEsc() + $"[48;2;{PlainSequence}m"
 

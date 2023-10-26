@@ -162,7 +162,7 @@ Namespace Misc.Configuration
                     {"List Title Color", ListTitleColor.PlainSequenceEnclosed},
                     {"Development Warning Color", DevelopmentWarningColor.PlainSequenceEnclosed},
                     {"Stage Time Color", StageTimeColor.PlainSequenceEnclosed},
-                    {"Progress Color", ColorTools.ProgressColor.PlainSequenceEnclosed},
+                    {"Progress Color", ProgressColor.PlainSequenceEnclosed},
                     {"Back Option Color", BackOptionColor.PlainSequenceEnclosed},
                     {"Low Priority Border Color", LowPriorityBorderColor.PlainSequenceEnclosed},
                     {"Medium Priority Border Color", MediumPriorityBorderColor.PlainSequenceEnclosed},
@@ -204,7 +204,7 @@ Namespace Misc.Configuration
                     {"Colored Shell", ColoredShell},
                     {"Simplified Help Command", SimHelp},
                     {"Current Directory", CurrentDir},
-                    {"Lookup Directories", PathsToLookup.EncloseByDoubleQuotes},
+                    {"Lookup Directories", $"""{PathsToLookup}"""},
                     {"Prompt Preset", UESHShellCurrentPreset.PresetName},
                     {"FTP Prompt Preset", FTPShellCurrentPreset.PresetName},
                     {"Mail Prompt Preset", MailShellCurrentPreset.PresetName},
@@ -313,7 +313,7 @@ Namespace Misc.Configuration
                     {"Activate 255 Color Mode", ColorMix255Colors},
                     {"Activate True Color Mode", ColorMixTrueColor},
                     {"Delay in Milliseconds", ColorMixDelay},
-                    {"Background color", If(New Color(ColorMixBackgroundColor).Type = ColorType.TrueColor, ColorMixBackgroundColor.EncloseByDoubleQuotes, ColorMixBackgroundColor)},
+                    {"Background color", If(New Color(ColorMixBackgroundColor).Type = ColorType.TrueColor, $"""{ColorMixBackgroundColor}""", ColorMixBackgroundColor)},
                     {"Minimum red color level", ColorMixMinimumRedColorLevel},
                     {"Minimum green color level", ColorMixMinimumGreenColorLevel},
                     {"Minimum blue color level", ColorMixMinimumBlueColorLevel},
@@ -366,7 +366,7 @@ Namespace Misc.Configuration
                     {"Activate True Color Mode", LinesTrueColor},
                     {"Delay in Milliseconds", LinesDelay},
                     {"Line character", LinesLineChar},
-                    {"Background color", If(New Color(LinesBackgroundColor).Type = ColorType.TrueColor, LinesBackgroundColor.EncloseByDoubleQuotes, LinesBackgroundColor)},
+                    {"Background color", If(New Color(LinesBackgroundColor).Type = ColorType.TrueColor, $"""{LinesBackgroundColor}""", LinesBackgroundColor)},
                     {"Minimum red color level", LinesMinimumRedColorLevel},
                     {"Minimum green color level", LinesMinimumGreenColorLevel},
                     {"Minimum blue color level", LinesMinimumBlueColorLevel},
@@ -382,7 +382,7 @@ Namespace Misc.Configuration
             Dim DissolveConfig As New JObject From {
                     {"Activate 255 Color Mode", Dissolve255Colors},
                     {"Activate True Color Mode", DissolveTrueColor},
-                    {"Background color", If(New Color(DissolveBackgroundColor).Type = ColorType.TrueColor, DissolveBackgroundColor.EncloseByDoubleQuotes, DissolveBackgroundColor)},
+                    {"Background color", If(New Color(DissolveBackgroundColor).Type = ColorType.TrueColor, $"""{DissolveBackgroundColor}""", DissolveBackgroundColor)},
                     {"Minimum red color level", DissolveMinimumRedColorLevel},
                     {"Minimum green color level", DissolveMinimumGreenColorLevel},
                     {"Minimum blue color level", DissolveMinimumBlueColorLevel},
@@ -399,8 +399,8 @@ Namespace Misc.Configuration
                     {"Activate 255 Color Mode", BouncingBlock255Colors},
                     {"Activate True Color Mode", BouncingBlockTrueColor},
                     {"Delay in Milliseconds", BouncingBlockDelay},
-                    {"Background color", If(New Color(BouncingBlockBackgroundColor).Type = ColorType.TrueColor, BouncingBlockBackgroundColor.EncloseByDoubleQuotes, BouncingBlockBackgroundColor)},
-                    {"Foreground color", If(New Color(BouncingBlockForegroundColor).Type = ColorType.TrueColor, BouncingBlockForegroundColor.EncloseByDoubleQuotes, BouncingBlockForegroundColor)},
+                    {"Background color", If(New Color(BouncingBlockBackgroundColor).Type = ColorType.TrueColor, $"""{BouncingBlockBackgroundColor}""", BouncingBlockBackgroundColor)},
+                    {"Foreground color", If(New Color(BouncingBlockForegroundColor).Type = ColorType.TrueColor, $"""{BouncingBlockForegroundColor}""", BouncingBlockForegroundColor)},
                     {"Minimum red color level", BouncingBlockMinimumRedColorLevel},
                     {"Minimum green color level", BouncingBlockMinimumGreenColorLevel},
                     {"Minimum blue color level", BouncingBlockMinimumBlueColorLevel},
@@ -491,7 +491,7 @@ Namespace Misc.Configuration
                     {"Activate True Color Mode", LighterTrueColor},
                     {"Delay in Milliseconds", LighterDelay},
                     {"Max Positions Count", LighterMaxPositions},
-                    {"Background color", If(New Color(LighterBackgroundColor).Type = ColorType.TrueColor, LighterBackgroundColor.EncloseByDoubleQuotes, LighterBackgroundColor)},
+                    {"Background color", If(New Color(LighterBackgroundColor).Type = ColorType.TrueColor, $"""{LighterBackgroundColor}""", LighterBackgroundColor)},
                     {"Minimum red color level", LighterMinimumRedColorLevel},
                     {"Minimum green color level", LighterMinimumGreenColorLevel},
                     {"Minimum blue color level", LighterMinimumBlueColorLevel},
@@ -509,7 +509,7 @@ Namespace Misc.Configuration
                     {"Activate True Color Mode", WipeTrueColor},
                     {"Delay in Milliseconds", WipeDelay},
                     {"Wipes to change direction", WipeWipesNeededToChangeDirection},
-                    {"Background color", If(New Color(WipeBackgroundColor).Type = ColorType.TrueColor, WipeBackgroundColor.EncloseByDoubleQuotes, WipeBackgroundColor)},
+                    {"Background color", If(New Color(WipeBackgroundColor).Type = ColorType.TrueColor, $"""{WipeBackgroundColor}""", WipeBackgroundColor)},
                     {"Minimum red color level", WipeMinimumRedColorLevel},
                     {"Minimum green color level", WipeMinimumGreenColorLevel},
                     {"Minimum blue color level", WipeMinimumBlueColorLevel},
@@ -530,8 +530,8 @@ Namespace Misc.Configuration
             'GlitterMatrix config json object
             Dim GlitterMatrixConfig As New JObject From {
                     {"Delay in Milliseconds", GlitterMatrixDelay},
-                    {"Background color", If(New Color(GlitterMatrixBackgroundColor).Type = ColorType.TrueColor, GlitterMatrixBackgroundColor.EncloseByDoubleQuotes, GlitterMatrixBackgroundColor)},
-                    {"Foreground color", If(New Color(GlitterMatrixForegroundColor).Type = ColorType.TrueColor, GlitterMatrixForegroundColor.EncloseByDoubleQuotes, GlitterMatrixForegroundColor)}
+                    {"Background color", If(New Color(GlitterMatrixBackgroundColor).Type = ColorType.TrueColor, $"""{GlitterMatrixBackgroundColor}""", GlitterMatrixBackgroundColor)},
+                    {"Foreground color", If(New Color(GlitterMatrixForegroundColor).Type = ColorType.TrueColor, $"""{GlitterMatrixForegroundColor}""", GlitterMatrixForegroundColor)}
                 }
             ScreensaverConfig.Add("GlitterMatrix", GlitterMatrixConfig)
 
@@ -541,8 +541,8 @@ Namespace Misc.Configuration
                     {"Activate True Color Mode", BouncingTextTrueColor},
                     {"Delay in Milliseconds", BouncingTextDelay},
                     {"Text Shown", BouncingTextWrite},
-                    {"Background color", If(New Color(BouncingTextBackgroundColor).Type = ColorType.TrueColor, BouncingTextBackgroundColor.EncloseByDoubleQuotes, BouncingTextBackgroundColor)},
-                    {"Foreground color", If(New Color(BouncingTextForegroundColor).Type = ColorType.TrueColor, BouncingTextForegroundColor.EncloseByDoubleQuotes, BouncingTextForegroundColor)},
+                    {"Background color", If(New Color(BouncingTextBackgroundColor).Type = ColorType.TrueColor, $"""{BouncingTextBackgroundColor}""", BouncingTextBackgroundColor)},
+                    {"Foreground color", If(New Color(BouncingTextForegroundColor).Type = ColorType.TrueColor, $"""{BouncingTextForegroundColor}""", BouncingTextForegroundColor)},
                     {"Minimum red color level", BouncingTextMinimumRedColorLevel},
                     {"Minimum green color level", BouncingTextMinimumGreenColorLevel},
                     {"Minimum blue color level", BouncingTextMinimumBlueColorLevel},
@@ -560,7 +560,7 @@ Namespace Misc.Configuration
                     {"Fade Out Delay in Milliseconds", FaderFadeOutDelay},
                     {"Text Shown", FaderWrite},
                     {"Max Fade Steps", FaderMaxSteps},
-                    {"Background color", If(New Color(FaderBackgroundColor).Type = ColorType.TrueColor, FaderBackgroundColor.EncloseByDoubleQuotes, FaderBackgroundColor)},
+                    {"Background color", If(New Color(FaderBackgroundColor).Type = ColorType.TrueColor, $"""{FaderBackgroundColor}""", FaderBackgroundColor)},
                     {"Minimum red color level", FaderMinimumRedColorLevel},
                     {"Minimum green color level", FaderMinimumGreenColorLevel},
                     {"Minimum blue color level", FaderMinimumBlueColorLevel},
@@ -612,7 +612,7 @@ Namespace Misc.Configuration
                     {"Maximum writing speed in WPM", TypoWritingSpeedMax},
                     {"Probability of typo in percent", TypoMissStrikePossibility},
                     {"Probability of miss in percent", TypoMissPossibility},
-                    {"Text color", If(New Color(TypoTextColor).Type = ColorType.TrueColor, TypoTextColor.EncloseByDoubleQuotes, TypoTextColor)}
+                    {"Text color", If(New Color(TypoTextColor).Type = ColorType.TrueColor, $"""{TypoTextColor}""", TypoTextColor)}
                 }
             ScreensaverConfig.Add("Typo", TypoConfig)
 
@@ -624,7 +624,7 @@ Namespace Misc.Configuration
                     {"Text Shown", MarqueeWrite},
                     {"Always Centered", MarqueeAlwaysCentered},
                     {"Use Console API", MarqueeUseConsoleAPI},
-                    {"Background color", If(New Color(MarqueeBackgroundColor).Type = ColorType.TrueColor, MarqueeBackgroundColor.EncloseByDoubleQuotes, MarqueeBackgroundColor)},
+                    {"Background color", If(New Color(MarqueeBackgroundColor).Type = ColorType.TrueColor, $"""{MarqueeBackgroundColor}""", MarqueeBackgroundColor)},
                     {"Minimum red color level", MarqueeMinimumRedColorLevel},
                     {"Minimum green color level", MarqueeMinimumGreenColorLevel},
                     {"Minimum blue color level", MarqueeMinimumBlueColorLevel},
@@ -649,7 +649,7 @@ Namespace Misc.Configuration
                     {"Line Fill Capping Probability in percent", LinotypoEtaoinCappingPossibility},
                     {"Line Fill Type", LinotypoEtaoinType},
                     {"Probability of miss in percent", LinotypoMissPossibility},
-                    {"Text color", If(New Color(LinotypoTextColor).Type = ColorType.TrueColor, LinotypoTextColor.EncloseByDoubleQuotes, LinotypoTextColor)}
+                    {"Text color", If(New Color(LinotypoTextColor).Type = ColorType.TrueColor, $"""{LinotypoTextColor}""", LinotypoTextColor)}
                 }
             ScreensaverConfig.Add("Linotypo", LinotypoConfig)
 
@@ -660,7 +660,7 @@ Namespace Misc.Configuration
                     {"Text Shown", TypewriterWrite},
                     {"Minimum writing speed in WPM", TypewriterWritingSpeedMin},
                     {"Maximum writing speed in WPM", TypewriterWritingSpeedMax},
-                    {"Text color", If(New Color(TypewriterTextColor).Type = ColorType.TrueColor, TypewriterTextColor.EncloseByDoubleQuotes, TypewriterTextColor)}
+                    {"Text color", If(New Color(TypewriterTextColor).Type = ColorType.TrueColor, $"""{TypewriterTextColor}""", TypewriterTextColor)}
                 }
             ScreensaverConfig.Add("Typewriter", TypewriterConfig)
 
@@ -669,7 +669,7 @@ Namespace Misc.Configuration
                     {"Activate 255 Color Mode", FlashColor255Colors},
                     {"Activate True Color Mode", FlashColorTrueColor},
                     {"Delay in Milliseconds", FlashColorDelay},
-                    {"Background color", If(New Color(FlashColorBackgroundColor).Type = ColorType.TrueColor, FlashColorBackgroundColor.EncloseByDoubleQuotes, FlashColorBackgroundColor)},
+                    {"Background color", If(New Color(FlashColorBackgroundColor).Type = ColorType.TrueColor, $"""{FlashColorBackgroundColor}""", FlashColorBackgroundColor)},
                     {"Minimum red color level", FlashColorMinimumRedColorLevel},
                     {"Minimum green color level", FlashColorMinimumGreenColorLevel},
                     {"Minimum blue color level", FlashColorMinimumBlueColorLevel},
@@ -845,7 +845,7 @@ Namespace Misc.Configuration
                     {"Activate True Color Mode", FlashTextTrueColor},
                     {"Delay in Milliseconds", FlashTextDelay},
                     {"Text Shown", FlashTextWrite},
-                    {"Background color", If(New Color(FlashTextBackgroundColor).Type = ColorType.TrueColor, FlashTextBackgroundColor.EncloseByDoubleQuotes, FlashTextBackgroundColor)},
+                    {"Background color", If(New Color(FlashTextBackgroundColor).Type = ColorType.TrueColor, $"""{FlashTextBackgroundColor}""", FlashTextBackgroundColor)},
                     {"Minimum red color level", FlashTextMinimumRedColorLevel},
                     {"Minimum green color level", FlashTextMinimumGreenColorLevel},
                     {"Minimum blue color level", FlashTextMinimumBlueColorLevel},
@@ -1190,7 +1190,7 @@ Namespace Misc.Configuration
                 ListTitleColor = New Color(If(ConfigToken("Colors")?("List Title Color"), ConsoleColors.White).ToString)
                 DevelopmentWarningColor = New Color(If(ConfigToken("Colors")?("Development Warning Color"), ConsoleColors.Yellow).ToString)
                 StageTimeColor = New Color(If(ConfigToken("Colors")?("Stage Time Color"), ConsoleColors.Gray).ToString)
-                ColorTools.ProgressColor = New Color(If(ConfigToken("Colors")?("Progress Color"), ConsoleColors.DarkYellow).ToString)
+                ProgressColor = New Color(If(ConfigToken("Colors")?("Progress Color"), ConsoleColors.DarkYellow).ToString)
                 BackOptionColor = New Color(If(ConfigToken("Colors")?("Back Option Color"), ConsoleColors.DarkRed).ToString)
                 LowPriorityBorderColor = New Color(If(ConfigToken("Colors")?("Low Priority Border Color"), ConsoleColors.White).ToString)
                 MediumPriorityBorderColor = New Color(If(ConfigToken("Colors")?("Medium Priority Border Color"), ConsoleColors.Yellow).ToString)
@@ -1926,7 +1926,7 @@ Namespace Misc.Configuration
             SimpleProgressTextLocation = If(ConfigToken("Splash")?("Simple")?("Progress text location") IsNot Nothing, If([Enum].TryParse(ConfigToken("Splash")?("Simple")?("Progress text location"), SimpleProgressTextLocation), SimpleProgressTextLocation, TextLocation.Top), TextLocation.Top)
 
             '> Progress
-            ProgressProgressColor = New Color(If(ConfigToken("Splash")?("Progress")?("Progress bar color").ToString, ColorTools.ProgressColor.PlainSequence)).PlainSequence
+            ProgressProgressColor = New Color(If(ConfigToken("Splash")?("Progress")?("Progress bar color").ToString, ProgressColor.PlainSequence)).PlainSequence
             ProgressProgressTextLocation = If(ConfigToken("Splash")?("Progress")?("Progress text location") IsNot Nothing, If([Enum].TryParse(ConfigToken("Splash")?("Progress")?("Progress text location"), ProgressProgressTextLocation), ProgressProgressTextLocation, TextLocation.Top), TextLocation.Top)
 
             'Misc Section

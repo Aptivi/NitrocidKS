@@ -25,7 +25,7 @@ Namespace Misc.Editors.HexEdit.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If IsStringNumeric(ListArgs(0)) Then
-                If CInt(ListArgs(0)) <= HexEdit_FileBytes.LongLength Then
+                If CInt(ListArgs(0)) <= HexEdit_FileBytes.LongCount Then
                     HexEdit_DeleteByte(ListArgs(0))
                     Write(DoTranslation("Byte deleted."), True, ColTypes.Success)
                 Else

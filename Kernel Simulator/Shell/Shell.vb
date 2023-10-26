@@ -199,7 +199,7 @@ Namespace Shell
 
                 'Check to see if the command is a comment
                 If Not (Command = Nothing Or Command?.StartsWithAnyOf({" ", "#"})) Then
-                    Dim Parts As String() = Command.SplitSpacesEncloseDoubleQuotes
+                    Dim Parts As String() = Command.SplitEncloseDoubleQuotes
 
                     'Iterate through mod commands
                     Wdbg(DebugLevel.I, "Mod commands probing started with {0} from {1}", Command, FullCommand)
@@ -324,7 +324,7 @@ Namespace Shell
                                             'Create a new instance of process
                                             If TryParsePath(TargetFile) Then
                                                 cmdArgs = cmdArgs.Replace(TargetFileName, "")
-                                                cmdArgs.RemoveNullsOrWhitespacesAtTheBeginning()
+                                                cmdArgs.Trim()
                                                 Wdbg(DebugLevel.I, "Command: {0}, Arguments: {1}", TargetFile, cmdArgs)
                                                 Dim Params As New ExecuteProcessThreadParameters(TargetFile, cmdArgs)
                                                 ProcessStartCommandThread.Start(Params)

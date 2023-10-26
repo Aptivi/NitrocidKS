@@ -17,7 +17,6 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports System.IO
-Imports Extensification.StringExts
 Imports KS.ConsoleBase.Themes
 
 <TestFixture> Public Class ThemeInfoInitializationTests
@@ -76,7 +75,7 @@ Imports KS.ConsoleBase.Themes
         For Each ResourceName As String In Themes.Keys
 
             'Special naming cases
-            Dim ThemeName As String = ResourceName.ReplaceAll({"-", " "}, "_")
+            Dim ThemeName As String = ResourceName.Replace("-", "_").Replace(" ", "_")
             Select Case ResourceName
                 Case "Default"
                     ThemeName = "_Default"

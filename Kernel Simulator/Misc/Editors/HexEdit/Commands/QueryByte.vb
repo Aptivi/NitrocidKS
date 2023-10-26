@@ -16,7 +16,6 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports Extensification.LongExts
 Imports KS.Misc.Reflection
 
 Namespace Misc.Editors.HexEdit.Commands
@@ -30,7 +29,7 @@ Namespace Misc.Editors.HexEdit.Commands
                 HexEdit_QueryByteAndDisplay(ByteContent)
             ElseIf ListArgs?.Count = 2 Then
                 If IsStringNumeric(ListArgs(1)) Then
-                    If CLng(ListArgs(1)) <= HexEdit_FileBytes.LongLength Then
+                    If CLng(ListArgs(1)) <= HexEdit_FileBytes.LongCount Then
                         Dim ByteContent As Byte = Convert.ToByte(ListArgs(0), 16)
                         HexEdit_QueryByteAndDisplay(ByteContent, ListArgs(1))
                     Else
@@ -39,7 +38,7 @@ Namespace Misc.Editors.HexEdit.Commands
                 End If
             ElseIf ListArgs?.Count > 2 Then
                 If IsStringNumeric(ListArgs(1)) And IsStringNumeric(ListArgs(2)) Then
-                    If CLng(ListArgs(1)) <= HexEdit_FileBytes.LongLength And CLng(ListArgs(2)) <= HexEdit_FileBytes.LongLength Then
+                    If CLng(ListArgs(1)) <= HexEdit_FileBytes.LongCount And CLng(ListArgs(2)) <= HexEdit_FileBytes.LongCount Then
                         Dim ByteContent As Byte = Convert.ToByte(ListArgs(0), 16)
                         Dim ByteNumberStart As Long = ListArgs(1)
                         Dim ByteNumberEnd As Long = ListArgs(2)

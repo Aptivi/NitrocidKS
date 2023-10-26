@@ -827,7 +827,7 @@ Namespace ConsoleBase.Colors
         ''' <returns>&lt;R&gt;;&lt;G&gt;;&lt;B&gt;</returns>
         Public Function ConvertFromHexToRGB(Hex As String) As String
             If Hex.StartsWith("#") Then
-                Dim ColorDecimal As Integer = Convert.ToInt32(Hex.RemoveLetter(0), 16)
+                Dim ColorDecimal As Integer = Convert.ToInt32(Hex.Substring(1), 16)
                 Dim R As Integer = CByte((ColorDecimal And &HFF0000) >> &H10)
                 Dim G As Integer = CByte((ColorDecimal And &HFF00) >> 8)
                 Dim B As Integer = CByte(ColorDecimal And &HFF)

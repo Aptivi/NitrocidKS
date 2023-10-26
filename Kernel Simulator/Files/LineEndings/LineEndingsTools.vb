@@ -16,7 +16,6 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports Extensification.CharExts.Querying
 Imports KS.Files.Querying
 Imports System.IO
 
@@ -70,8 +69,8 @@ Namespace Files.LineEndings
             'Open the file stream
             Dim NewlineStyle As FilesystemNewlineStyle = NewlineStyle
             Dim TextFileStream As New FileStream(TextFile, FileMode.Open, FileAccess.Read)
-            Dim CarriageReturnCode As Integer = GetAsciiCode(GetLineEndingString(FilesystemNewlineStyle.CR))
-            Dim LineFeedCode As Integer = GetAsciiCode(GetLineEndingString(FilesystemNewlineStyle.LF))
+            Dim CarriageReturnCode As Integer = Convert.ToInt32(GetLineEndingString(FilesystemNewlineStyle.CR)(0))
+            Dim LineFeedCode As Integer = Convert.ToInt32(GetLineEndingString(FilesystemNewlineStyle.LF))
             Dim CarriageReturnSpotted As Boolean
             Dim LineFeedSpotted As Boolean
             Dim ExitOnSpotted As Boolean

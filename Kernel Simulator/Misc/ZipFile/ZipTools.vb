@@ -59,7 +59,7 @@ Namespace Misc.ZipFile
 
             'Define absolute target
             Dim AbsoluteTarget As String = ZipShell_CurrentArchiveDirectory + "/" + Target
-            If AbsoluteTarget.StartsWith("/") Then AbsoluteTarget = AbsoluteTarget.RemoveLetter(0)
+            If AbsoluteTarget.StartsWith("/") Then AbsoluteTarget = AbsoluteTarget.Substring(1)
             Wdbg(DebugLevel.I, "Target: {0}, AbsoluteTarget: {1}", Target, AbsoluteTarget)
 
             'Define local destination while getting an entry from target
@@ -94,7 +94,7 @@ Namespace Misc.ZipFile
 
             'Define absolute archive target
             Dim ArchiveTarget As String = ZipShell_CurrentArchiveDirectory + "/" + Target
-            If ArchiveTarget.StartsWith("/") Then ArchiveTarget = ArchiveTarget.RemoveLetter(0)
+            If ArchiveTarget.StartsWith("/") Then ArchiveTarget = ArchiveTarget.Substring(1)
             Wdbg(DebugLevel.I, "Where: {0}, ArchiveTarget: {1}", Where, ArchiveTarget)
 
             'Define local destination while getting an entry from target
@@ -154,7 +154,7 @@ Namespace Misc.ZipFile
 
             'Prepare the target
             Target = ZipShell_CurrentArchiveDirectory + "/" + Target
-            If Target.StartsWith("/") Then Target = Target.RemoveLetter(0)
+            If Target.StartsWith("/") Then Target = Target.Substring(1)
             Wdbg(DebugLevel.I, "Setting target to {0}...", Target)
 
             'Enumerate entries
@@ -162,7 +162,7 @@ Namespace Misc.ZipFile
                 Wdbg(DebugLevel.I, "Entry: {0}", Entry.Key)
                 If Entry.Key.StartsWith(Target) Then
                     Wdbg(DebugLevel.I, "{0} found ({1}). Changing...", Target, Entry.Key)
-                    ZipShell_CurrentArchiveDirectory = Entry.Key.RemoveLetter(Entry.Key.Length - 1)
+                    ZipShell_CurrentArchiveDirectory = Entry.Key.Substring(Entry.Key.Length)
                     Wdbg(DebugLevel.I, "Setting CAD to {0}...", ZipShell_CurrentArchiveDirectory)
                     Return True
                 End If

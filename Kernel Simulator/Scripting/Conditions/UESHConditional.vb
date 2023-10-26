@@ -64,7 +64,7 @@ Namespace Scripting.Conditions
 
                 'First, check for the existence of one of the conditional words
                 Wdbg(DebugLevel.I, "Checking expression {0} for condition", ConditionToSatisfy)
-                Dim EnclosedWords As List(Of String) = ConditionToSatisfy.SplitEncloseDoubleQuotes(" ")?.ToList
+                Dim EnclosedWords As List(Of String) = ConditionToSatisfy.SplitEncloseDoubleQuotes()?.ToList
                 Dim ConditionFound As Boolean
                 Dim ConditionType As String = "none"
                 Dim ConditionBase As BaseCondition = AvailableConditions(ConditionType)

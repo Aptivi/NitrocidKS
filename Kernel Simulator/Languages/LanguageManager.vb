@@ -48,7 +48,7 @@ Namespace Languages
                     'If the language is not found in the base languages cache dictionary, add it
                     If Not BaseLanguages.ContainsKey(LanguageName) Then
                         Dim LanguageInfo As New LanguageInfo(LanguageName, LanguageFullName, LanguageTransliterable)
-                        BaseLanguages.AddIfNotFound(LanguageName, LanguageInfo)
+                        BaseLanguages.Add(LanguageName, LanguageInfo)
                     End If
                 Next
 

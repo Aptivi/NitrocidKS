@@ -16,7 +16,6 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports Extensification.LongExts
 Imports KS.Misc.Reflection
 
 Namespace Misc.Editors.HexEdit.Commands
@@ -32,7 +31,7 @@ Namespace Misc.Editors.HexEdit.Commands
                 Write(DoTranslation("Byte replaced."), True, ColTypes.Success)
             ElseIf ListArgs?.Count = 3 Then
                 If IsStringNumeric(ListArgs(2)) Then
-                    If CLng(ListArgs(2)) <= HexEdit_FileBytes.LongLength Then
+                    If CLng(ListArgs(2)) <= HexEdit_FileBytes.LongCount Then
                         Dim ByteFrom As Byte = Convert.ToByte(ListArgs(0), 16)
                         Dim ByteWith As Byte = Convert.ToByte(ListArgs(1), 16)
                         HexEdit_Replace(ByteFrom, ByteWith, ListArgs(2))
@@ -43,7 +42,7 @@ Namespace Misc.Editors.HexEdit.Commands
                 End If
             ElseIf ListArgs?.Count > 3 Then
                 If IsStringNumeric(ListArgs(2)) And IsStringNumeric(ListArgs(3)) Then
-                    If CLng(ListArgs(2)) <= HexEdit_FileBytes.LongLength And CLng(ListArgs(3)) <= HexEdit_FileBytes.LongLength Then
+                    If CLng(ListArgs(2)) <= HexEdit_FileBytes.LongCount And CLng(ListArgs(3)) <= HexEdit_FileBytes.LongCount Then
                         Dim ByteFrom As Byte = Convert.ToByte(ListArgs(0), 16)
                         Dim ByteWith As Byte = Convert.ToByte(ListArgs(1), 16)
                         Dim ByteNumberStart As Long = ListArgs(2)

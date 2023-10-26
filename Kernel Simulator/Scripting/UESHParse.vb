@@ -61,7 +61,7 @@ Namespace Scripting
                     Wdbg(DebugLevel.I, "Line {0}: ""{1}""", LineNo, Line)
 
                     'See if the line contains variable, and replace every instance of it with its value
-                    Dim SplitWords() As String = Line.SplitEncloseDoubleQuotes(" ")
+                    Dim SplitWords() As String = Line.SplitEncloseDoubleQuotes()
                     If SplitWords IsNot Nothing Then
                         For i As Integer = 0 To SplitWords.Length - 1
                             If SplitWords(i).StartsWith("$") Then
@@ -71,7 +71,7 @@ Namespace Scripting
                     End If
 
                     'See if the line contains argument placeholder, and replace every instance of it with its value
-                    Dim SplitArguments() As String = ScriptArguments.SplitEncloseDoubleQuotes(" ")
+                    Dim SplitArguments() As String = ScriptArguments.SplitEncloseDoubleQuotes()
                     If SplitArguments IsNot Nothing Then
                         For i As Integer = 0 To SplitWords.Length - 1
                             For j As Integer = 0 To SplitArguments.Length - 1

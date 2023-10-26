@@ -146,7 +146,7 @@ Namespace Modifications
                     PartInstance = New PartInfo(ModName, script.ModPart, modFile, NeutralizePath(modFile, ModPath), script)
                     Parts.Add(script.ModPart, PartInstance)
                     ModInstance = New ModInfo(ModName, modFile, NeutralizePath(modFile, ModPath), Parts, script.Version)
-                    Mods.AddIfNotFound(ModName, ModInstance)
+                    If Not Mods.ContainsKey(ModName) Then Mods.Add(ModName, ModInstance)
 
                     'See if the mod has version
                     If String.IsNullOrWhiteSpace(script.Version) And Not String.IsNullOrWhiteSpace(script.Name) Then
@@ -181,7 +181,9 @@ Namespace Modifications
                                 'Now, add the command to the mod list
                                 Wdbg(DebugLevel.I, "Adding command {0} for {1}...", Command, CommandType.ToString)
                                 If Not ListModCommands(CommandType).ContainsKey(Command) Then ListModCommands(CommandType).Add(Command, script.Commands(ActualCommand))
-                                script.Commands.RenameKey(ActualCommand, Command)
+                                Dim cmd As CommandInfo = script.Commands(ActualCommand)
+                                script.Commands.Remove(ActualCommand)
+                                script.Commands.Add(Command, cmd)
                             End If
                         Next
                     End If

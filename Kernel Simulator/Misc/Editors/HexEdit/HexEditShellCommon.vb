@@ -37,7 +37,7 @@ Namespace Misc.Editors.HexEdit
             {"save", New CommandInfo("save", ShellType.HexShell, "Saves the file", New CommandArgumentInfo(Array.Empty(Of String), False, 0), New HexEdit_SaveCommand)}
         }
         Public HexEdit_FileStream As FileStream
-        Public HexEdit_FileBytes As Byte()
+        Public HexEdit_FileBytes As List(Of Byte)
         Public HexEdit_AutoSave As New KernelThread("Hex Edit Autosave Thread", False, AddressOf HexEdit_HandleAutoSaveBinaryFile)
         Public HexEdit_AutoSaveFlag As Boolean = True
         Public HexEdit_AutoSaveInterval As Integer = 60

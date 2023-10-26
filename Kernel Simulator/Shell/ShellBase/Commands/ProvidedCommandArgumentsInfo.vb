@@ -81,7 +81,7 @@ Namespace Shell.ShellBase.Commands
 
             'Split the arguments with enclosed quotes and set the required boolean variable
             Dim CommandInfo As CommandInfo = If(ModCommands.ContainsKey(Command), ModCommands(Command), ShellCommands(Command))
-            Dim EnclosedArgs As String() = strArgs.SplitSpacesEncloseDoubleQuotes
+            Dim EnclosedArgs As String() = strArgs.SplitEncloseDoubleQuotes
             If String.IsNullOrWhiteSpace(strArgs) Then EnclosedArgs = Nothing
             If CommandInfo.CommandArgumentInfo IsNot Nothing Then
                 If EnclosedArgs IsNot Nothing Then

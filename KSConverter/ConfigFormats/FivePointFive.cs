@@ -20,7 +20,6 @@
 using System;
 using System.Diagnostics;
 using System.Globalization;
-using Extensification.StringExts;
 using KS.ConsoleBase.Colors;
 using KS.Files.Folders;
 using KS.Kernel;
@@ -29,14 +28,10 @@ using KS.Misc.Editors.TextEdit;
 using KS.Misc.Screensaver;
 using KS.Misc.Screensaver.Displays;
 using KS.Misc.Writers.ConsoleWriters;
-using KS.Misc.Writers.DebugWriters;
 using KS.Network;
-using KS.Network.FTP;
-using KS.Network.Mail;
 using KS.Network.Mail.Directory;
 using KS.Network.RemoteDebug;
 using KS.Network.RPC;
-using KS.Network.SFTP;
 using KS.Network.SSH;
 using KS.Shell;
 using MadMilkman.Ini;
@@ -197,7 +192,7 @@ namespace KSConverter
                 }
                 if (ConfigReader.Sections["Shell"].Keys.Contains("Lookup Directories"))
                 {
-                    Shell.PathsToLookup = ConfigReader.Sections["Shell"].Keys["Lookup Directories"].Value.ReleaseDoubleQuotes();
+                    Shell.PathsToLookup = ConfigReader.Sections["Shell"].Keys["Lookup Directories"].Value;
                 }
 
                 // Hardware section

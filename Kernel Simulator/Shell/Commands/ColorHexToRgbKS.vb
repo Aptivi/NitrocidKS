@@ -26,7 +26,7 @@ Namespace Shell.Commands
             Dim RGB As String
 
             'Do the job
-            RGB = ColorTools.ConvertFromHexToRGB(Hex)
+            RGB = ConvertFromHexToRGB(Hex)
             Write("- " + DoTranslation("RGB color sequence:") + " ", False, ColTypes.ListEntry)
             Write(RGB, True, ColTypes.ListValue)
         End Sub

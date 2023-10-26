@@ -17,7 +17,6 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports KS.Misc.Reflection
-Imports Extensification.IntegerExts
 
 Namespace Misc.Editors.TextEdit.Commands
     Class TextEdit_QueryWordCommand
