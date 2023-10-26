@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $pkgName    = "KS"
-$url        = "https://github.com/Aptivi/NitrocidKS/releases/download/v0.0.24.9-beta/0.0.24.9-bin-dotnet.zip"
+$url        = "https://github.com/Aptivi/NitrocidKS/releases/download/v0.0.24.10-beta/0.0.24.10-bin-dotnet.zip"
 $md5check   = "79bd011bb7784c1d9ee7b22ce99977a6"
 
 Write-Output "<*>: for assumptions, <+> for progress, <-> for error"
