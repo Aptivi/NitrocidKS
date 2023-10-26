@@ -44700,6 +44700,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Shells.ShellManager.GetShellTypeName
   nameWithType: ShellManager.GetShellTypeName
+- uid: KS.Shell.ShellBase.Shells.ShellManager.IsOnMotherShell
+  name: IsOnMotherShell()
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_IsOnMotherShell
+  commentId: M:KS.Shell.ShellBase.Shells.ShellManager.IsOnMotherShell
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.IsOnMotherShell()
+  nameWithType: ShellManager.IsOnMotherShell()
+- uid: KS.Shell.ShellBase.Shells.ShellManager.IsOnMotherShell*
+  name: IsOnMotherShell
+  href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_IsOnMotherShell_
+  commentId: Overload:KS.Shell.ShellBase.Shells.ShellManager.IsOnMotherShell
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.ShellManager.IsOnMotherShell
+  nameWithType: ShellManager.IsOnMotherShell
 - uid: KS.Shell.ShellBase.Shells.ShellManager.IsShellBuiltin(System.String)
   name: IsShellBuiltin(string)
   href: api/KS.Shell.ShellBase.Shells.ShellManager.html#KS_Shell_ShellBase_Shells_ShellManager_IsShellBuiltin_System_String_
