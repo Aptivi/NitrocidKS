@@ -40887,6 +40887,25 @@ references:
   commentId: T:KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions
   fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions
   nameWithType: CommandArgumentPartOptions
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.#ctor
+  name: CommandArgumentPartOptions()
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.html#KS_Shell_ShellBase_Arguments_CommandArgumentPartOptions__ctor
+  commentId: M:KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.#ctor
+  name.vb: New()
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.CommandArgumentPartOptions()
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.New()
+  nameWithType: CommandArgumentPartOptions.CommandArgumentPartOptions()
+  nameWithType.vb: CommandArgumentPartOptions.New()
+- uid: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.#ctor*
+  name: CommandArgumentPartOptions
+  href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.html#KS_Shell_ShellBase_Arguments_CommandArgumentPartOptions__ctor_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.CommandArgumentPartOptions
+  fullName.vb: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.New
+  nameWithType: CommandArgumentPartOptions.CommandArgumentPartOptions
+  nameWithType.vb: CommandArgumentPartOptions.New
 - uid: KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.AutoCompleter
   name: AutoCompleter
   href: api/KS.Shell.ShellBase.Arguments.CommandArgumentPartOptions.html#KS_Shell_ShellBase_Arguments_CommandArgumentPartOptions_AutoCompleter
