@@ -22685,6 +22685,32 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.CornerTimeDate
   nameWithType: KernelMainConfig.CornerTimeDate
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.CpuUsageDebugEnabled
+  name: CpuUsageDebugEnabled
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_CpuUsageDebugEnabled
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.CpuUsageDebugEnabled
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.CpuUsageDebugEnabled
+  nameWithType: KernelMainConfig.CpuUsageDebugEnabled
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.CpuUsageDebugEnabled*
+  name: CpuUsageDebugEnabled
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_CpuUsageDebugEnabled_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.CpuUsageDebugEnabled
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.CpuUsageDebugEnabled
+  nameWithType: KernelMainConfig.CpuUsageDebugEnabled
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.CpuUsageUpdateInterval
+  name: CpuUsageUpdateInterval
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_CpuUsageUpdateInterval
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.CpuUsageUpdateInterval
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.CpuUsageUpdateInterval
+  nameWithType: KernelMainConfig.CpuUsageUpdateInterval
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.CpuUsageUpdateInterval*
+  name: CpuUsageUpdateInterval
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_CpuUsageUpdateInterval_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.CpuUsageUpdateInterval
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.CpuUsageUpdateInterval
+  nameWithType: KernelMainConfig.CpuUsageUpdateInterval
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentConsoleDriver
   name: CurrentConsoleDriver
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_CurrentConsoleDriver
