@@ -1174,15 +1174,15 @@
     "title": "Namespace KS.Kernel.Journaling | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Kernel.Journaling Classes JournalEntry A kernel journal entry class JournalManager Kernel journalling manager Enums JournalStatus Journaling status to write to the kernel journal"
   },
+  "api/KS.Kernel.KernelMain.html": {
+    "href": "api/KS.Kernel.KernelMain.html",
+    "title": "Class KernelMain | Nitrocid KS API - Aptivi",
+    "keywords": "Class KernelMain Kernel main class Inheritance object KernelMain Namespace: KS.Kernel Assembly: Nitrocid.dll Syntax public static class KernelMain Properties | Edit this page View Source ApiVersion Kernel API version Declaration public static Version ApiVersion { get; } Property Value Type Description Version | Edit this page View Source Version Kernel version Declaration public static Version Version { get; } Property Value Type Description Version"
+  },
   "api/KS.Kernel.KernelPlatform.html": {
     "href": "api/KS.Kernel.KernelPlatform.html",
     "title": "Class KernelPlatform | Nitrocid KS API - Aptivi",
     "keywords": "Class KernelPlatform Kernel platform query Inheritance object KernelPlatform Namespace: KS.Kernel Assembly: Nitrocid.dll Syntax public static class KernelPlatform Methods | Edit this page View Source GetCurrentGenericRid() Gets the current runtime identifier Declaration public static string GetCurrentGenericRid() Returns Type Description string Returns a runtime identifier (win-x64 for example). | Edit this page View Source GetCurrentRid() Gets the current runtime identifier Declaration public static string GetCurrentRid() Returns Type Description string Returns a runtime identifier (win-x64 for example). | Edit this page View Source GetTerminalEmulator() Polls $TERM_PROGRAM to get terminal emulator Declaration public static string GetTerminalEmulator() Returns Type Description string | Edit this page View Source GetTerminalType() Polls $TERM to get terminal type (vt100, dumb, ...) Declaration public static string GetTerminalType() Returns Type Description string | Edit this page View Source IsOnAndroid() Is this system an Android system? Declaration public static bool IsOnAndroid() Returns Type Description bool True if running on Android phones using Termux. Otherwise, false. | Edit this page View Source IsOnMacOS() Is this system a macOS system? Declaration public static bool IsOnMacOS() Returns Type Description bool True if running on macOS (MacBook, iMac, etc.). Otherwise, false. | Edit this page View Source IsOnUnix() Is this system a Unix system? True for macOS, too! Declaration public static bool IsOnUnix() Returns Type Description bool True if running on Unix (Linux, *nix, etc.). Otherwise, false. | Edit this page View Source IsOnWindows() Is this system a Windows system? Declaration public static bool IsOnWindows() Returns Type Description bool True if running on Windows (Windows 10, Windows 11, etc.). Otherwise, false. | Edit this page View Source IsRunningFromGrilo() Is Nitrocid KS running from GRILO? Declaration public static bool IsRunningFromGrilo() Returns Type Description bool | Edit this page View Source IsRunningFromTmux() Is Nitrocid KS running from TMUX? Declaration public static bool IsRunningFromTmux() Returns Type Description bool"
-  },
-  "api/KS.Kernel.KernelTools.html": {
-    "href": "api/KS.Kernel.KernelTools.html",
-    "title": "Class KernelTools | Nitrocid KS API - Aptivi",
-    "keywords": "Class KernelTools Kernel tools module Inheritance object KernelTools Namespace: KS.Kernel Assembly: Nitrocid.dll Syntax public static class KernelTools Properties | Edit this page View Source KernelApiVersion Kernel API version Declaration public static Version KernelApiVersion { get; } Property Value Type Description Version | Edit this page View Source KernelVersion Kernel version Declaration public static Version KernelVersion { get; } Property Value Type Description Version"
   },
   "api/KS.Kernel.Power.PowerManager.html": {
     "href": "api/KS.Kernel.Power.PowerManager.html",
@@ -1372,7 +1372,7 @@
   "api/KS.Kernel.html": {
     "href": "api/KS.Kernel.html",
     "title": "Namespace KS.Kernel | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Kernel Classes KernelPlatform Kernel platform query KernelTools Kernel tools module"
+    "keywords": "Namespace KS.Kernel Classes KernelMain Kernel main class KernelPlatform Kernel platform query"
   },
   "api/KS.Languages.CultureManager.html": {
     "href": "api/KS.Languages.CultureManager.html",

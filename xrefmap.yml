@@ -29239,6 +29239,38 @@ references:
   commentId: F:KS.Kernel.Journaling.JournalStatus.Warning
   fullName: KS.Kernel.Journaling.JournalStatus.Warning
   nameWithType: JournalStatus.Warning
+- uid: KS.Kernel.KernelMain
+  name: KernelMain
+  href: api/KS.Kernel.KernelMain.html
+  commentId: T:KS.Kernel.KernelMain
+  fullName: KS.Kernel.KernelMain
+  nameWithType: KernelMain
+- uid: KS.Kernel.KernelMain.ApiVersion
+  name: ApiVersion
+  href: api/KS.Kernel.KernelMain.html#KS_Kernel_KernelMain_ApiVersion
+  commentId: P:KS.Kernel.KernelMain.ApiVersion
+  fullName: KS.Kernel.KernelMain.ApiVersion
+  nameWithType: KernelMain.ApiVersion
+- uid: KS.Kernel.KernelMain.ApiVersion*
+  name: ApiVersion
+  href: api/KS.Kernel.KernelMain.html#KS_Kernel_KernelMain_ApiVersion_
+  commentId: Overload:KS.Kernel.KernelMain.ApiVersion
+  isSpec: "True"
+  fullName: KS.Kernel.KernelMain.ApiVersion
+  nameWithType: KernelMain.ApiVersion
+- uid: KS.Kernel.KernelMain.Version
+  name: Version
+  href: api/KS.Kernel.KernelMain.html#KS_Kernel_KernelMain_Version
+  commentId: P:KS.Kernel.KernelMain.Version
+  fullName: KS.Kernel.KernelMain.Version
+  nameWithType: KernelMain.Version
+- uid: KS.Kernel.KernelMain.Version*
+  name: Version
+  href: api/KS.Kernel.KernelMain.html#KS_Kernel_KernelMain_Version_
+  commentId: Overload:KS.Kernel.KernelMain.Version
+  isSpec: "True"
+  fullName: KS.Kernel.KernelMain.Version
+  nameWithType: KernelMain.Version
 - uid: KS.Kernel.KernelPlatform
   name: KernelPlatform
   href: api/KS.Kernel.KernelPlatform.html
@@ -29375,38 +29407,6 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.KernelPlatform.IsRunningFromTmux
   nameWithType: KernelPlatform.IsRunningFromTmux
-- uid: KS.Kernel.KernelTools
-  name: KernelTools
-  href: api/KS.Kernel.KernelTools.html
-  commentId: T:KS.Kernel.KernelTools
-  fullName: KS.Kernel.KernelTools
-  nameWithType: KernelTools
-- uid: KS.Kernel.KernelTools.KernelApiVersion
-  name: KernelApiVersion
-  href: api/KS.Kernel.KernelTools.html#KS_Kernel_KernelTools_KernelApiVersion
-  commentId: P:KS.Kernel.KernelTools.KernelApiVersion
-  fullName: KS.Kernel.KernelTools.KernelApiVersion
-  nameWithType: KernelTools.KernelApiVersion
-- uid: KS.Kernel.KernelTools.KernelApiVersion*
-  name: KernelApiVersion
-  href: api/KS.Kernel.KernelTools.html#KS_Kernel_KernelTools_KernelApiVersion_
-  commentId: Overload:KS.Kernel.KernelTools.KernelApiVersion
-  isSpec: "True"
-  fullName: KS.Kernel.KernelTools.KernelApiVersion
-  nameWithType: KernelTools.KernelApiVersion
-- uid: KS.Kernel.KernelTools.KernelVersion
-  name: KernelVersion
-  href: api/KS.Kernel.KernelTools.html#KS_Kernel_KernelTools_KernelVersion
-  commentId: P:KS.Kernel.KernelTools.KernelVersion
-  fullName: KS.Kernel.KernelTools.KernelVersion
-  nameWithType: KernelTools.KernelVersion
-- uid: KS.Kernel.KernelTools.KernelVersion*
-  name: KernelVersion
-  href: api/KS.Kernel.KernelTools.html#KS_Kernel_KernelTools_KernelVersion_
-  commentId: Overload:KS.Kernel.KernelTools.KernelVersion
-  isSpec: "True"
-  fullName: KS.Kernel.KernelTools.KernelVersion
-  nameWithType: KernelTools.KernelVersion
 - uid: KS.Kernel.Power
   name: KS.Kernel.Power
   href: api/KS.Kernel.Power.html

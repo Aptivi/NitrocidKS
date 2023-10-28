@@ -2365,20 +2365,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.KernelPlatform.yml",
+      "source_relative_path": "api/KS.Kernel.KernelMain.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Kernel.KernelPlatform.html"
+          "relative_path": "api/KS.Kernel.KernelMain.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Kernel.KernelTools.yml",
+      "source_relative_path": "api/KS.Kernel.KernelPlatform.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Kernel.KernelTools.html"
+          "relative_path": "api/KS.Kernel.KernelPlatform.html"
         }
       },
       "version": ""
