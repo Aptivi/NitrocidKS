@@ -45331,6 +45331,22 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Switches.SwitchManager.GetSwitchValues
   nameWithType: SwitchManager.GetSwitchValues
+- uid: KS.Shell.ShellBase.Switches.SwitchManager.IsSwitchValueNumeric(System.String[],System.String)
+  name: IsSwitchValueNumeric(string[], string)
+  href: api/KS.Shell.ShellBase.Switches.SwitchManager.html#KS_Shell_ShellBase_Switches_SwitchManager_IsSwitchValueNumeric_System_String___System_String_
+  commentId: M:KS.Shell.ShellBase.Switches.SwitchManager.IsSwitchValueNumeric(System.String[],System.String)
+  name.vb: IsSwitchValueNumeric(String(), String)
+  fullName: KS.Shell.ShellBase.Switches.SwitchManager.IsSwitchValueNumeric(string[], string)
+  fullName.vb: KS.Shell.ShellBase.Switches.SwitchManager.IsSwitchValueNumeric(String(), String)
+  nameWithType: SwitchManager.IsSwitchValueNumeric(string[], string)
+  nameWithType.vb: SwitchManager.IsSwitchValueNumeric(String(), String)
+- uid: KS.Shell.ShellBase.Switches.SwitchManager.IsSwitchValueNumeric*
+  name: IsSwitchValueNumeric
+  href: api/KS.Shell.ShellBase.Switches.SwitchManager.html#KS_Shell_ShellBase_Switches_SwitchManager_IsSwitchValueNumeric_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchManager.IsSwitchValueNumeric
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchManager.IsSwitchValueNumeric
+  nameWithType: SwitchManager.IsSwitchValueNumeric
 - uid: KS.Shell.ShellBase.Switches.SwitchOptions
   name: SwitchOptions
   href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html
