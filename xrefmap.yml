@@ -4838,6 +4838,55 @@ references:
   commentId: N:KS.ConsoleBase.Writers.ConsoleWriters
   fullName: KS.ConsoleBase.Writers.ConsoleWriters
   nameWithType: KS.ConsoleBase.Writers.ConsoleWriters
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor
+  name: ListEntryWriterColor
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.html
+  commentId: T:KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor
+  nameWithType: ListEntryWriterColor
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(System.String,System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Int32)
+  name: WriteListEntry(string, string, KernelColorType, KernelColorType, int)
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListEntryWriterColor_WriteListEntry_System_String_System_String_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Int32_
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(System.String,System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Int32)
+  name.vb: WriteListEntry(String, String, KernelColorType, KernelColorType, Integer)
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(string, string, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, int)
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(String, String, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, Integer)
+  nameWithType: ListEntryWriterColor.WriteListEntry(string, string, KernelColorType, KernelColorType, int)
+  nameWithType.vb: ListEntryWriterColor.WriteListEntry(String, String, KernelColorType, KernelColorType, Integer)
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(System.String,System.String,System.Int32)
+  name: WriteListEntry(string, string, int)
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListEntryWriterColor_WriteListEntry_System_String_System_String_System_Int32_
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(System.String,System.String,System.Int32)
+  name.vb: WriteListEntry(String, String, Integer)
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(string, string, int)
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(String, String, Integer)
+  nameWithType: ListEntryWriterColor.WriteListEntry(string, string, int)
+  nameWithType.vb: ListEntryWriterColor.WriteListEntry(String, String, Integer)
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(System.String,System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Int32)
+  name: WriteListEntry(string, string, Color, Color, int)
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListEntryWriterColor_WriteListEntry_System_String_System_String_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Int32_
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(System.String,System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Int32)
+  name.vb: WriteListEntry(String, String, Color, Color, Integer)
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(string, string, Terminaux.Colors.Color, Terminaux.Colors.Color, int)
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(String, String, Terminaux.Colors.Color, Terminaux.Colors.Color, Integer)
+  nameWithType: ListEntryWriterColor.WriteListEntry(string, string, Color, Color, int)
+  nameWithType.vb: ListEntryWriterColor.WriteListEntry(String, String, Color, Color, Integer)
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(System.String,System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Int32)
+  name: WriteListEntry(string, string, ConsoleColors, ConsoleColors, int)
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListEntryWriterColor_WriteListEntry_System_String_System_String_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Int32_
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(System.String,System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Int32)
+  name.vb: WriteListEntry(String, String, ConsoleColors, ConsoleColors, Integer)
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(string, string, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, int)
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry(String, String, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, Integer)
+  nameWithType: ListEntryWriterColor.WriteListEntry(string, string, ConsoleColors, ConsoleColors, int)
+  nameWithType.vb: ListEntryWriterColor.WriteListEntry(String, String, ConsoleColors, ConsoleColors, Integer)
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry*
+  name: WriteListEntry
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListEntryWriterColor_WriteListEntry_
+  commentId: Overload:KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.WriteListEntry
+  nameWithType: ListEntryWriterColor.WriteListEntry
 - uid: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor
   name: ListWriterColor
   href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.html

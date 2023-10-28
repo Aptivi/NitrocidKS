@@ -505,6 +505,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Writers.ConsoleWriters.ListEntryWriterColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.yml",
       "output": {
         ".html": {
