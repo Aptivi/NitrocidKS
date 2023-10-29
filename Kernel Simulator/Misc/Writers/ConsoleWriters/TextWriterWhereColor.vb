@@ -34,6 +34,8 @@ Namespace Misc.Writers.ConsoleWriters
             SyncLock WriteLock
 #End If
                 Try
+                    If msg Is Nothing Then Return
+
                     'Format the message as necessary
                     If Not vars.Length = 0 Then msg = String.Format(msg, vars)
 
