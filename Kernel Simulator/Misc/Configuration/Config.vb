@@ -85,7 +85,7 @@ Public Module Config
                     {"Colored Shell", ColoredShell},
                     {"Simplified Help Command", simHelp},
                     {"Current Directory", CurrDir},
-                    {"Lookup Directories", $"{PathsToLookup}"},
+                    {"Lookup Directories", $"""{PathsToLookup}"""},
                     {"Prompt Style", ShellPromptStyle},
                     {"FTP Prompt Style", FTPShellPromptStyle},
                     {"Mail Prompt Style", MailShellPromptStyle},
