@@ -5950,6 +5950,31 @@ references:
   commentId: T:KS.ConsoleBase.Writers.FancyWriters.BorderColor
   fullName: KS.ConsoleBase.Writers.FancyWriters.BorderColor
   nameWithType: BorderColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorderPlain(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: RenderBorderPlain(int, int, int, int)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BorderColor.html#KS_ConsoleBase_Writers_FancyWriters_BorderColor_RenderBorderPlain_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorderPlain(System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: RenderBorderPlain(Integer, Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorderPlain(int, int, int, int)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorderPlain(Integer, Integer, Integer, Integer)
+  nameWithType: BorderColor.RenderBorderPlain(int, int, int, int)
+  nameWithType.vb: BorderColor.RenderBorderPlain(Integer, Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorderPlain(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char)
+  name: RenderBorderPlain(int, int, int, int, char, char, char, char, char, char, char, char)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BorderColor.html#KS_ConsoleBase_Writers_FancyWriters_BorderColor_RenderBorderPlain_System_Int32_System_Int32_System_Int32_System_Int32_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorderPlain(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char)
+  name.vb: RenderBorderPlain(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char)
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorderPlain(int, int, int, int, char, char, char, char, char, char, char, char)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorderPlain(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char)
+  nameWithType: BorderColor.RenderBorderPlain(int, int, int, int, char, char, char, char, char, char, char, char)
+  nameWithType.vb: BorderColor.RenderBorderPlain(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char)
+- uid: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorderPlain*
+  name: RenderBorderPlain
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BorderColor.html#KS_ConsoleBase_Writers_FancyWriters_BorderColor_RenderBorderPlain_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorderPlain
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorderPlain
+  nameWithType: BorderColor.RenderBorderPlain
 - uid: KS.ConsoleBase.Writers.FancyWriters.BorderColor.WriteBorder(System.Int32,System.Int32,System.Int32,System.Int32)
   name: WriteBorder(int, int, int, int)
   href: api/KS.ConsoleBase.Writers.FancyWriters.BorderColor.html#KS_ConsoleBase_Writers_FancyWriters_BorderColor_WriteBorder_System_Int32_System_Int32_System_Int32_System_Int32_
