@@ -19,6 +19,7 @@
 Imports System.IO
 Imports System.Threading
 Imports Newtonsoft.Json.Linq
+Imports SemanVer.Instance
 
 Public Module KernelTools
 
@@ -475,9 +476,16 @@ Public Module KernelTools
             UpdateDown.Headers.Add(HttpRequestHeader.UserAgent, "EoflaOE") 'Because api.github.com requires the UserAgent header to be put, else, 403 error occurs.
             Dim UpdateStr As String = UpdateDown.DownloadString("https://api.github.com/repos/Aptivi/NitrocidKS/releases")
             Dim UpdateToken As JToken = JToken.Parse(UpdateStr)
-            Dim UpdateVer As New Version(UpdateToken.First.SelectToken("tag_name").ToString.ReplaceAll({"v", "-alpha", "-beta"}, ""))
+            Dim tagName As String = UpdateToken.First.SelectToken("tag_name").ToString()
+            tagName = If(tagName.StartsWith("v"), tagName.Substring(1), tagName)
+            Dim UpdateVer As SemVer = Nothing
+            If tagName.Split(".").Length > 3 Then
+                UpdateVer = SemVer.ParseWithRev(tagName)
+            Else
+                UpdateVer = SemVer.Parse(tagName)
+            End If
             Dim UpdateURL As String = UpdateToken.First.SelectToken("html_url")
-            Dim CurrentVer As New Version(KernelVersion)
+            Dim CurrentVer As SemVer = SemVer.ParseWithRev(KernelVersion)
             If UpdateVer > CurrentVer Then
                 'Found a new version
                 UpdateSpecifier.Add(UpdateVer.ToString)
