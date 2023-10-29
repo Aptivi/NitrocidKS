@@ -74,7 +74,7 @@ Public Module TextEditShell
             'Check to see if the command doesn't start with spaces or if the command is nothing
             Wdbg("I", "Starts with spaces: {0}, Is Nothing: {1}, Is Blank {2}", WrittenCommand?.StartsWith(" "), WrittenCommand Is Nothing, WrittenCommand = "")
             If Not (WrittenCommand = Nothing Or WrittenCommand?.StartsWithAnyOf({" ", "#"}) = True) Then
-                Dim Command As String = WrittenCommand.SplitEncloseDoubleQuotes(" ")(0)
+                Dim Command As String = WrittenCommand.SplitEncloseDoubleQuotes()(0)
                 Wdbg("I", "Checking command {0} for existence.", Command)
                 If TextEdit_Commands.ContainsKey(Command) Then
                     Wdbg("I", "Command {0} found in the list of {1} commands.", Command, TextEdit_Commands.Count)
@@ -119,7 +119,7 @@ Public Module TextEditShell
     ''' </summary>
     ''' <param name="aliascmd">Aliased command with arguments</param>
     Sub ExecuteTextAlias(aliascmd As String)
-        Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
+        Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes()(0)
         Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, TextShellAliases(FirstWordCmd))
         Wdbg("I", "Actual command: {0}", actualCmd)
         TextEdit_CommandThread = New Thread(AddressOf TextEdit_ParseCommand) With {.Name = "Text Edit Command Thread"}

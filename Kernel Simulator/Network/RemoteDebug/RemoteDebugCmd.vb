@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports System.IO
+Imports System.Runtime.CompilerServices
 
 Module RemoteDebugCmd
 
@@ -83,4 +84,48 @@ Module RemoteDebugCmd
             EventManager.RaiseRemoteDebugCommandError(Address, CmdString, ex)
         End Try
     End Sub
+
+    ''' <summary>
+    ''' Gets a key from a value in the dictionary
+    ''' </summary>
+    ''' <typeparam name="TKey">Key</typeparam>
+    ''' <typeparam name="TValue">Value</typeparam>
+    ''' <param name="Dict">Source dictionary</param>
+    ''' <param name="Value">Value</param>
+    ''' <returns>Key from value</returns>
+    <Extension()>
+    Friend Function GetKeyFromValue(Of TKey, TValue)(Dict As Dictionary(Of TKey, TValue), Value As TValue) As TKey
+        If Dict Is Nothing Then Throw New ArgumentNullException(NameOf(Dict))
+        For Each DictKey In Dict.Keys
+            If Dict(DictKey).Equals(Value) Then
+                Return DictKey
+            End If
+        Next
+        Return Nothing
+    End Function
+
+    ''' <summary>
+    ''' Gets an index from a key in the dictionary
+    ''' </summary>
+    ''' <typeparam name="TKey">Key</typeparam>
+    ''' <typeparam name="TValue">Value</typeparam>
+    ''' <param name="Dict">Source dictionary</param>
+    ''' <param name="Key">Key</param>
+    ''' <returns>Index of key</returns>
+    <Extension()>
+    Friend Function GetIndexOfKey(Of TKey, TValue)(Dict As Dictionary(Of TKey, TValue), Key As TKey) As Integer
+        If Dict Is Nothing Then Throw New ArgumentNullException(NameOf(Dict))
+        Dim DetectedIndex = 0
+        Dim Index = 0, loopTo = Dict.Count - 1
+
+        While Index <= loopTo
+            Dim ListEntry As Object = Dict.Keys.ElementAtOrDefault(Index)
+            If ListEntry.Equals(Key) Then
+                DetectedIndex = Index
+            End If
+
+            Index += 1
+        End While
+        Return DetectedIndex
+    End Function
 End Module

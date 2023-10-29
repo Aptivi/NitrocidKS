@@ -19,7 +19,6 @@
 Imports Newtonsoft.Json.Linq
 Imports System.IO
 Imports System.IO.Compression
-Imports Extensification.ArrayExts
 Imports System.Text
 
 Public Module Forecast
@@ -160,7 +159,7 @@ Public Module Forecast
 
         'Put needed data to the class
         For Each WeatherCityToken As JToken In WeatherCityListToken
-            WeatherCityList.AddIfNotFound(WeatherCityToken("id"), WeatherCityToken("name"))
+            If Not WeatherCityList.ContainsKey(WeatherCityToken("id")) Then WeatherCityList.Add(WeatherCityToken("id"), WeatherCityToken("name"))
         Next
 
         'Return list

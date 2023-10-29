@@ -19,7 +19,6 @@
 Imports System.Globalization
 Imports KS
 Imports MadMilkman.Ini
-Imports Extensification.StringExts
 
 Module FivePointFive
 

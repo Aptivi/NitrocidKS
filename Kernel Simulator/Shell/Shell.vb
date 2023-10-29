@@ -179,7 +179,7 @@ Public Module Shell
                             Dim Done As Boolean = False
                             Dim Commands As String() = strcommand.Split({" : "}, StringSplitOptions.RemoveEmptyEntries)
                             For Each Command As String In Commands
-                                Dim Parts As String() = Command.SplitEncloseDoubleQuotes(" ")
+                                Dim Parts As String() = Command.SplitEncloseDoubleQuotes()
                                 Wdbg("I", "Mod commands probing started with {0} from {1}", Command, strcommand)
                                 If modcmnds.Contains(Parts(0)) Then
                                     Done = True
@@ -225,7 +225,6 @@ Public Module Shell
         Wdbg("I", "ShellPromptStyle = {0}", ShellPromptStyle)
         If ShellPromptStyle <> "" And Not maintenance Then
             Dim ParsedPromptStyle As String = ProbePlaces(ShellPromptStyle)
-            ParsedPromptStyle.ConvertVTSequences
             Write(ParsedPromptStyle, False, ColTypes.Gray)
             If adminList(signedinusrnm) = True Then
                 Write(" # ", False, ColTypes.Gray) : Write("", False, ColTypes.Input)
@@ -333,7 +332,7 @@ Public Module Shell
                             Try
                                 'Create a new instance of process
                                 cmdArgs = cmdArgs.Replace(TargetFileName, "")
-                                cmdArgs.RemoveNullsOrWhitespacesAtTheBeginning
+                                cmdArgs.Trim()
                                 Wdbg("I", "Command: {0}, Arguments: {1}", TargetFile, cmdArgs)
                                 Dim CommandProcess As New Process
                                 Dim CommandProcessStart As New ProcessStartInfo With {.RedirectStandardInput = True,

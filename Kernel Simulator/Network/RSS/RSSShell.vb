@@ -91,7 +91,7 @@ Begin:
                 Try
                     Wdbg("I", "Starts with spaces: {0}, Is Nothing: {1}, Is Blank {2}", WrittenCommand.StartsWith(" "), WrittenCommand Is Nothing, WrittenCommand = "")
                     If Not (WrittenCommand = Nothing Or WrittenCommand?.StartsWithAnyOf({" ", "#"}) = True) Then
-                        Dim Command As String = WrittenCommand.SplitEncloseDoubleQuotes(" ")(0)
+                        Dim Command As String = WrittenCommand.SplitEncloseDoubleQuotes()(0)
                         Wdbg("I", "Checking command {0} for existence.", Command)
                         If RSSCommands.ContainsKey(Command) Then
                             Wdbg("I", "Command {0} found in the list of {1} commands.", Command, RSSCommands.Count)
@@ -137,7 +137,7 @@ Begin:
     ''' </summary>
     ''' <param name="aliascmd">Aliased command with arguments</param>
     Sub ExecuteRSSAlias(aliascmd As String)
-        Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
+        Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes()(0)
         Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, RSSShellAliases(FirstWordCmd))
         Wdbg("I", "Actual command: {0}", actualCmd)
         RSSCommandThread = New Thread(AddressOf RSSParseCommand) With {.Name = "RSS Shell Command Thread"}

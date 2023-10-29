@@ -24,7 +24,7 @@ Public Module ModExecutor
     ''' <param name="cmd">A mod command with arguments</param>
     Sub ExecuteModCommand(cmd As String)
         EventManager.RaisePreExecuteModCommand(cmd)
-        Dim parts As String() = cmd.SplitEncloseDoubleQuotes(" ")
+        Dim parts As String() = cmd.SplitEncloseDoubleQuotes()
         Dim args As String = ""
         Dim actualCmd As String = parts(0)
         Wdbg("I", "Command = {0}", actualCmd)

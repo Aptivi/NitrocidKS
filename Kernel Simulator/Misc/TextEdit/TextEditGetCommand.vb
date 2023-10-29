@@ -42,7 +42,7 @@ Public Module TextEditGetCommand
 
             'Separate between command and arguments specified
             Dim Command As String = CommandText.Split(" ")(0)
-            Dim Arguments() As String = strArgs.SplitEncloseDoubleQuotes(" ")
+            Dim Arguments() As String = strArgs.SplitEncloseDoubleQuotes()
             If Arguments IsNot Nothing Then
                 RequiredArgumentsProvided = Arguments?.Length >= TextEdit_Commands(Command).MinimumArguments
             ElseIf TextEdit_Commands(Command).ArgumentsRequired And Arguments Is Nothing Then

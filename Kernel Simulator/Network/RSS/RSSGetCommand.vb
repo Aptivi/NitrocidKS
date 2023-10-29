@@ -42,7 +42,7 @@ Public Module RSSGetCommand
 
             'Separate between command and arguments specified
             Dim Command As String = CommandText.Split(" ")(0)
-            Dim Arguments() As String = strArgs.SplitEncloseDoubleQuotes(" ")
+            Dim Arguments() As String = strArgs.SplitEncloseDoubleQuotes()
             If Arguments IsNot Nothing Then
                 RequiredArgumentsProvided = Arguments?.Length >= RSSCommands(Command).MinimumArguments
             ElseIf RSSCommands(Command).ArgumentsRequired And Arguments Is Nothing Then

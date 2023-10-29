@@ -43,7 +43,7 @@ Public Module ZipGetCommand
 
             'Separate between command and arguments specified
             Dim Command As String = CommandText.Split(" ")(0)
-            Dim Arguments() As String = strArgs.SplitEncloseDoubleQuotes(" ")
+            Dim Arguments() As String = strArgs.SplitEncloseDoubleQuotes()
             If Arguments IsNot Nothing Then
                 RequiredArgumentsProvided = Arguments?.Length >= ZipShell_Commands(Command).MinimumArguments
             ElseIf ZipShell_Commands(Command).ArgumentsRequired And Arguments Is Nothing Then

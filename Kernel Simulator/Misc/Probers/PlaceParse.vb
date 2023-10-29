@@ -131,7 +131,7 @@ Public Module PlaceParse
             If text.Contains("<f:") Then
                 Wdbg("I", "Foreground color placeholder found.")
                 Do While text.Contains("<f:")
-                    Dim SequenceSubstring As String = text.Substring(text.IndexOf("<f:"), Finish:=text.IndexOf(">"))
+                    Dim SequenceSubstring As String = text.Substring(text.IndexOf("<f:"), text.IndexOf(">") - text.IndexOf("<f:"))
                     Dim PlainSequence As String = SequenceSubstring.Substring(3, SequenceSubstring.Length - 1 - 3)
                     Dim VTSequence As String = New Color(PlainSequence).VTSequenceForeground
                     text = text.Replace(SequenceSubstring, VTSequence)
@@ -140,7 +140,7 @@ Public Module PlaceParse
             If text.Contains("<b:") Then
                 Wdbg("I", "Background color placeholder found.")
                 Do While text.Contains("<b:")
-                    Dim SequenceSubstring As String = text.Substring(text.IndexOf("<b:"), Finish:=text.IndexOf(">"))
+                    Dim SequenceSubstring As String = text.Substring(text.IndexOf("<b:"), text.IndexOf(">") - text.IndexOf("<b:"))
                     Dim PlainSequence As String = SequenceSubstring.Substring(3, SequenceSubstring.Length - 1 - 3)
                     Dim VTSequence As String = New Color(PlainSequence).VTSequenceBackground
                     text = text.Replace(SequenceSubstring, VTSequence)
@@ -149,7 +149,7 @@ Public Module PlaceParse
             If text.Contains("<$") Then
                 Wdbg("I", "UESH variable placeholder found.")
                 Do While text.Contains("<$")
-                    Dim ShellVariableSubstring As String = text.Substring(text.IndexOf("<$"), Finish:=text.IndexOf(">"))
+                    Dim ShellVariableSubstring As String = text.Substring(text.IndexOf("<$"), text.IndexOf(">") - text.IndexOf("<$"))
                     Dim PlainShellVariable As String = ShellVariableSubstring.Substring(1, ShellVariableSubstring.Length - 1 - 1)
                     text = text.Replace(ShellVariableSubstring, GetVariable(PlainShellVariable))
                 Loop

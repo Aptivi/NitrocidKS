@@ -26,6 +26,7 @@ Public Module KernelTools
     ' A dictionary for storing paths and files (used for mods, screensavers, etc.)
     Public paths As New Dictionary(Of String, String)
     Friend RPCPowerListener As New Thread(AddressOf PowerManage) With {.Name = "RPC Power Listener Thread"}
+    Friend pathsInitialized As Boolean = False
 
     ' ----------------------------------------------- Kernel errors -----------------------------------------------
 
@@ -434,35 +435,37 @@ Public Module KernelTools
     ''' Initializes the paths
     ''' </summary>
     Sub InitPaths()
+        If pathsInitialized Then Return
         If IsOnUnix() Then
-            paths.AddIfNotFound("Mods", Environ("HOME") + "/KSMods/")
-            paths.AddIfNotFound("Configuration", Environ("HOME") + "/KernelConfig.json")
-            paths.AddIfNotFound("Debugging", Environ("HOME") + "/kernelDbg.log")
-            paths.AddIfNotFound("Aliases", Environ("HOME") + "/Aliases.json")
-            paths.AddIfNotFound("Users", Environ("HOME") + "/Users.json")
-            paths.AddIfNotFound("FTPSpeedDial", Environ("HOME") + "/FTP_SpeedDial.json")
-            paths.AddIfNotFound("SFTPSpeedDial", Environ("HOME") + "/SFTP_SpeedDial.json")
-            paths.AddIfNotFound("DebugDevNames", Environ("HOME") + "/DebugDeviceNames.json")
-            paths.AddIfNotFound("MOTD", Environ("HOME") + "/MOTD.txt")
-            paths.AddIfNotFound("MAL", Environ("HOME") + "/MAL.txt")
-            paths.AddIfNotFound("CustomSaverSettings", Environ("HOME") + "/CustomSaverSettings.json")
-            paths.AddIfNotFound("Home", Environ("HOME"))
-            paths.AddIfNotFound("Temp", "/tmp")
+            paths.Add("Mods", Environ("HOME") + "/KSMods/")
+            paths.Add("Configuration", Environ("HOME") + "/KernelConfig.json")
+            paths.Add("Debugging", Environ("HOME") + "/kernelDbg.log")
+            paths.Add("Aliases", Environ("HOME") + "/Aliases.json")
+            paths.Add("Users", Environ("HOME") + "/Users.json")
+            paths.Add("FTPSpeedDial", Environ("HOME") + "/FTP_SpeedDial.json")
+            paths.Add("SFTPSpeedDial", Environ("HOME") + "/SFTP_SpeedDial.json")
+            paths.Add("DebugDevNames", Environ("HOME") + "/DebugDeviceNames.json")
+            paths.Add("MOTD", Environ("HOME") + "/MOTD.txt")
+            paths.Add("MAL", Environ("HOME") + "/MAL.txt")
+            paths.Add("CustomSaverSettings", Environ("HOME") + "/CustomSaverSettings.json")
+            paths.Add("Home", Environ("HOME"))
+            paths.Add("Temp", "/tmp")
         Else
-            paths.AddIfNotFound("Mods", Environ("USERPROFILE").Replace("\", "/") + "/KSMods/")
-            paths.AddIfNotFound("Configuration", Environ("USERPROFILE").Replace("\", "/") + "/KernelConfig.json")
-            paths.AddIfNotFound("Debugging", Environ("USERPROFILE").Replace("\", "/") + "/kernelDbg.log")
-            paths.AddIfNotFound("Aliases", Environ("USERPROFILE").Replace("\", "/") + "/Aliases.json")
-            paths.AddIfNotFound("Users", Environ("USERPROFILE").Replace("\", "/") + "/Users.json")
-            paths.AddIfNotFound("FTPSpeedDial", Environ("USERPROFILE").Replace("\", "/") + "/FTP_SpeedDial.json")
-            paths.AddIfNotFound("SFTPSpeedDial", Environ("USERPROFILE").Replace("\", "/") + "/SFTP_SpeedDial.json")
-            paths.AddIfNotFound("DebugDevNames", Environ("USERPROFILE").Replace("\", "/") + "/DebugDeviceNames.json")
-            paths.AddIfNotFound("MOTD", Environ("USERPROFILE").Replace("\", "/") + "/MOTD.txt")
-            paths.AddIfNotFound("MAL", Environ("USERPROFILE").Replace("\", "/") + "/MAL.txt")
-            paths.AddIfNotFound("CustomSaverSettings", Environ("USERPROFILE").Replace("\", "/") + "/CustomSaverSettings.json")
-            paths.AddIfNotFound("Home", Environ("USERPROFILE").Replace("\", "/"))
-            paths.AddIfNotFound("Temp", Environ("TEMP").Replace("\", "/"))
+            paths.Add("Mods", Environ("USERPROFILE").Replace("\", "/") + "/KSMods/")
+            paths.Add("Configuration", Environ("USERPROFILE").Replace("\", "/") + "/KernelConfig.json")
+            paths.Add("Debugging", Environ("USERPROFILE").Replace("\", "/") + "/kernelDbg.log")
+            paths.Add("Aliases", Environ("USERPROFILE").Replace("\", "/") + "/Aliases.json")
+            paths.Add("Users", Environ("USERPROFILE").Replace("\", "/") + "/Users.json")
+            paths.Add("FTPSpeedDial", Environ("USERPROFILE").Replace("\", "/") + "/FTP_SpeedDial.json")
+            paths.Add("SFTPSpeedDial", Environ("USERPROFILE").Replace("\", "/") + "/SFTP_SpeedDial.json")
+            paths.Add("DebugDevNames", Environ("USERPROFILE").Replace("\", "/") + "/DebugDeviceNames.json")
+            paths.Add("MOTD", Environ("USERPROFILE").Replace("\", "/") + "/MOTD.txt")
+            paths.Add("MAL", Environ("USERPROFILE").Replace("\", "/") + "/MAL.txt")
+            paths.Add("CustomSaverSettings", Environ("USERPROFILE").Replace("\", "/") + "/CustomSaverSettings.json")
+            paths.Add("Home", Environ("USERPROFILE").Replace("\", "/"))
+            paths.Add("Temp", Environ("TEMP").Replace("\", "/"))
         End If
+        pathsInitialized = True
     End Sub
 
     ''' <summary>

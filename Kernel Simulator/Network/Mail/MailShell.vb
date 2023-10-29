@@ -78,7 +78,6 @@ Public Module MailShell
                 Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, Mail_Authentication.UserName) : Write("@", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, Address) : Write("] ", False, ColTypes.Gray) : Write("{0} > ", False, ColTypes.Gray, IMAP_CurrentDirectory) : Write("", False, ColTypes.Input)
             Else
                 Dim ParsedPromptStyle As String = ProbePlaces(MailShellPromptStyle)
-                ParsedPromptStyle.ConvertVTSequences
                 Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, ColTypes.Input)
             End If
 
@@ -86,7 +85,7 @@ Public Module MailShell
             Dim cmd As String = Console.ReadLine
             If Not (cmd = Nothing Or cmd?.StartsWithAnyOf({" ", "#"}) = True) Then
                 EventManager.RaiseIMAPPreExecuteCommand(cmd)
-                Dim words As String() = cmd.SplitEncloseDoubleQuotes(" ")
+                Dim words As String() = cmd.SplitEncloseDoubleQuotes()
                 Wdbg("I", $"Is the command found? {MailCommands.ContainsKey(words(0))}")
                 If MailCommands.ContainsKey(words(0)) Then
                     Wdbg("I", "Command found.")
@@ -219,7 +218,7 @@ Public Module MailShell
     ''' </summary>
     ''' <param name="aliascmd">Aliased command with arguments</param>
     Sub ExecuteMailAlias(aliascmd As String)
-        Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
+        Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes()(0)
         Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, MailShellAliases(FirstWordCmd))
         Wdbg("I", "Actual command: {0}", actualCmd)
         MailStartCommandThread = New Thread(AddressOf Mail_ExecuteCommand) With {.Name = "Mail Command Thread"}

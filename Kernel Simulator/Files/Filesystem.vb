@@ -16,7 +16,6 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports Extensification.StringExts
 Imports System.IO
 Imports System.Runtime.CompilerServices
 Imports System.Text.RegularExpressions
@@ -241,7 +240,7 @@ Public Module Filesystem
         'Replace last occurrences of current directory of path with nothing.
         If Not CurrDir = "" Then
             If Path.Contains(CurrDir.Replace("\", "/")) And Path.AllIndexesOf(CurrDir.Replace("\", "/")).Count > 1 Then
-                Path = Manipulation.ReplaceLastOccurrence(Path, CurrDir, "")
+                Path = ReplaceLastOccurrence(Path, CurrDir, "")
             End If
         End If
         Path = IO.Path.GetFullPath(Path).Replace("\", "/")
@@ -286,7 +285,7 @@ Public Module Filesystem
         'Replace last occurrences of current directory of path with nothing.
         If Not Source = "" Then
             If Path.Contains(Source.Replace("\", "/")) And Path.AllIndexesOf(Source.Replace("\", "/")).Count > 1 Then
-                Path = Manipulation.ReplaceLastOccurrence(Path, Source, "")
+                Path = ReplaceLastOccurrence(Path, Source, "")
             End If
         End If
         Path = IO.Path.GetFullPath(Path).Replace("\", "/")

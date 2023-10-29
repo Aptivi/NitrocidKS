@@ -97,7 +97,6 @@ Public Module SFTPShell
                             Write("[", False, ColTypes.Gray) : Write("{0}", False, ColTypes.UserName, SFTPUser) : Write("@", False, ColTypes.Gray) : Write("{0}", False, ColTypes.HostName, sftpsite) : Write("]{0}> ", False, ColTypes.Gray, SFTPCurrentRemoteDir) : Write("", False, ColTypes.Input)
                         Else
                             Dim ParsedPromptStyle As String = ProbePlaces(SFTPShellPromptStyle)
-                            ParsedPromptStyle.ConvertVTSequences
                             Write(ParsedPromptStyle, False, ColTypes.Gray) : Write("", False, ColTypes.Input)
                         End If
                     Else
@@ -137,7 +136,7 @@ Public Module SFTPShell
     ''' Parses a command line from FTP shell
     ''' </summary>
     Public Sub SFTPGetLine()
-        Dim words As String() = SFTPStrCmd.SplitEncloseDoubleQuotes(" ")
+        Dim words As String() = SFTPStrCmd.SplitEncloseDoubleQuotes()
         Wdbg("I", "Command: {0}", SFTPStrCmd)
         Wdbg("I", $"Is the command found? {SFTPCommands.ContainsKey(words(0))}")
         If SFTPCommands.ContainsKey(words(0)) Then
@@ -163,7 +162,7 @@ Public Module SFTPShell
     ''' </summary>
     ''' <param name="aliascmd">Aliased command with arguments</param>
     Sub ExecuteSFTPAlias(aliascmd As String)
-        Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
+        Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes()(0)
         Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, SFTPShellAliases(FirstWordCmd))
         Wdbg("I", "Actual command: {0}", actualCmd)
         SFTPStartCommandThread = New Thread(AddressOf SFTPGetCommand.ExecuteCommand) With {.Name = "SFTP Command Thread"}

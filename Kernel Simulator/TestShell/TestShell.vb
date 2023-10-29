@@ -84,7 +84,7 @@ Module TestShell
             Try
                 If Not (FullCmd = Nothing Or FullCmd?.StartsWithAnyOf({" ", "#"}) = True) Then
                     Wdbg("I", "Command: {0}", FullCmd)
-                    Dim Command As String = FullCmd.SplitEncloseDoubleQuotes(" ")(0)
+                    Dim Command As String = FullCmd.SplitEncloseDoubleQuotes()(0)
                     If Test_Commands.ContainsKey(Command) Then
                         TStartCommandThread = New Thread(AddressOf TParseCommand) With {.Name = "Test Shell Command Thread"}
                         TStartCommandThread.Start(FullCmd)
@@ -117,7 +117,7 @@ Module TestShell
     ''' </summary>
     ''' <param name="aliascmd">Aliased command with arguments</param>
     Sub ExecuteTestAlias(aliascmd As String)
-        Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
+        Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes()(0)
         Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, TestShellAliases(FirstWordCmd))
         Wdbg("I", "Actual command: {0}", actualCmd)
         TStartCommandThread = New Thread(AddressOf TParseCommand) With {.Name = "Test Shell Command Thread"}

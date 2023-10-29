@@ -115,7 +115,7 @@ Public Module ModParser
         Dim References() As String = code.SplitNewLines.Select(Function(x) x).Where(Function(x) x.ContainsAnyOf({"Reference GAC: ", "Reference File: "})).ToArray
         Wdbg("I", "Found {0} references (matches taken from searching for ""Reference GAC: "" or ""Reference File: "").", References.Length)
         For Each Reference As String In References
-            Reference.RemoveNullsOrWhitespacesAtTheBeginning
+            Reference = Reference.Trim()
             Wdbg("I", "Reference line: {0}", Reference)
             Dim LocationCheckRequired As Boolean = Reference.Contains("Reference File: ")
             If (Reference.StartsWith("//") And PLang = "C#") Or (Reference.StartsWith("'") And PLang = "VB.NET") Then
@@ -125,7 +125,7 @@ Public Module ModParser
 
                 'Remove "Reference GAC: " or "Reference File: " and remove all whitespaces or nulls in the beginning
                 Reference = Reference.ReplaceAll({"Reference GAC: ", "Reference File: "}, "")
-                Reference.RemoveNullsOrWhitespacesAtTheBeginning
+                Reference = Reference.Trim()
                 Wdbg("I", "Final reference line: {0}", Reference)
 
                 'Add reference
@@ -220,16 +220,16 @@ NextEntry:
             If count <> 0 Then
                 Write(DoTranslation("mod: Stopping mods..."), True, ColTypes.Neutral)
                 Wdbg("I", "Mods are being stopped. Total mods with screensavers = {0}", count)
-                For Each script As Dictionary(Of String, IScript) In scripts.Values
-                    Wdbg("I", "Stopping... Mod name: {0}", scripts.GetKeyFromValue(script))
-                    For Each ScriptPart As String In script.Keys
-                        Wdbg("I", "Stopping part {0} v{1}", script(ScriptPart).ModPart, script(ScriptPart).Version)
-                        script(ScriptPart).StopMod()
-                        If script(ScriptPart).Name <> "" And script(ScriptPart).Version <> "" Then
-                            Write(DoTranslation("{0} v{1} stopped"), True, ColTypes.Neutral, script(ScriptPart).ModPart, script(ScriptPart).Version)
+                For Each script In scripts
+                    Wdbg("I", "Stopping... Mod name: {0}", script.Key)
+                    For Each ScriptPart As String In script.Value.Keys
+                        Wdbg("I", "Stopping part {0} v{1}", script.Value(ScriptPart).ModPart, script.Value(ScriptPart).Version)
+                        script.Value(ScriptPart).StopMod()
+                        If script.Value(ScriptPart).Name <> "" And script.Value(ScriptPart).Version <> "" Then
+                            Write(DoTranslation("{0} v{1} stopped"), True, ColTypes.Neutral, script.Value(ScriptPart).ModPart, script.Value(ScriptPart).Version)
                         End If
                     Next
-                    Write(DoTranslation("Mod {0} stopped"), True, ColTypes.Neutral, scripts.GetKeyFromValue(script))
+                    Write(DoTranslation("Mod {0} stopped"), True, ColTypes.Neutral, script.Key)
                 Next
                 CSvrdb.Clear()
             Else
@@ -418,59 +418,69 @@ NextEntry:
 
                         'See if mod can be added to command list
                         If Command <> "" Then
-                            If script.Commands(ActualCommand).HelpDefinition = "" Then
+                            Dim commandInfo As CommandInfo = script.Commands(ActualCommand)
+                            If commandInfo.HelpDefinition = "" Then
                                 Write(DoTranslation("No definition for command {0}."), True, ColTypes.Warning, Command)
                                 Wdbg("W", "{0}.Def = Nothing, {0}.Def = ""Command defined by {1} ({2})""", Command, script.Name, script.ModPart)
-                                script.Commands(ActualCommand).HelpDefinition = DoTranslation("Command defined by ") + script.Name + " (" + script.ModPart + ")"
+                                commandInfo.HelpDefinition = DoTranslation("Command defined by ") + script.Name + " (" + script.ModPart + ")"
                             End If
 
-                            Wdbg("I", "Command type: {0}", script.Commands(ActualCommand).Type)
-                            Select Case script.Commands(ActualCommand).Type
+                            Wdbg("I", "Command type: {0}", commandInfo.Type)
+                            Select Case commandInfo.Type
                                 Case ShellCommandType.Shell
                                     Wdbg("I", "Adding command {0} for main shell...", Command)
                                     If Not modcmnds.Contains(Command) Then modcmnds.Add(Command)
-                                    script.Commands.RenameKey(ActualCommand, Command)
-                                    moddefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                    script.Commands.Remove(ActualCommand)
+                                    script.Commands.Add(Command, commandInfo)
+                                    If Not moddefs.ContainsKey(Command) Then moddefs.Add(Command, commandInfo.HelpDefinition)
                                 Case ShellCommandType.FTPShell
                                     Wdbg("I", "Adding command {0} for FTP shell...", Command)
                                     If Not FTPModCommands.Contains(Command) Then FTPModCommands.Add(Command)
-                                    script.Commands.RenameKey(ActualCommand, Command)
-                                    FTPModDefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                    script.Commands.Remove(ActualCommand)
+                                    script.Commands.Add(Command, commandInfo)
+                                    If Not FTPModDefs.ContainsKey(Command) Then FTPModDefs.Add(Command, commandInfo.HelpDefinition)
                                 Case ShellCommandType.MailShell
                                     Wdbg("I", "Adding command {0} for mail shell...", Command)
                                     If Not MailModCommands.Contains(Command) Then MailModCommands.Add(Command)
-                                    script.Commands.RenameKey(ActualCommand, Command)
-                                    MailModDefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                    script.Commands.Remove(ActualCommand)
+                                    script.Commands.Add(Command, commandInfo)
+                                    If Not MailModDefs.ContainsKey(Command) Then MailModDefs.Add(Command, commandInfo.HelpDefinition)
                                 Case ShellCommandType.SFTPShell
                                     Wdbg("I", "Adding command {0} for SFTP shell...", Command)
                                     If Not SFTPModCommands.Contains(Command) Then SFTPModCommands.Add(Command)
-                                    script.Commands.RenameKey(ActualCommand, Command)
-                                    SFTPModDefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                    script.Commands.Remove(ActualCommand)
+                                    script.Commands.Add(Command, commandInfo)
+                                    If Not SFTPModDefs.ContainsKey(Command) Then SFTPModDefs.Add(Command, commandInfo.HelpDefinition)
                                 Case ShellCommandType.TextShell
                                     Wdbg("I", "Adding command {0} for text editor shell...", Command)
                                     If Not TextEdit_ModCommands.Contains(Command) Then TextEdit_ModCommands.Add(Command)
-                                    script.Commands.RenameKey(ActualCommand, Command)
-                                    TextEdit_ModHelpEntries.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                    script.Commands.Remove(ActualCommand)
+                                    script.Commands.Add(Command, commandInfo)
+                                    If Not TextEdit_ModHelpEntries.ContainsKey(Command) Then TextEdit_ModHelpEntries.Add(Command, commandInfo.HelpDefinition)
                                 Case ShellCommandType.TestShell
                                     Wdbg("I", "Adding command {0} for test shell...", Command)
                                     If Not Test_ModCommands.Contains(Command) Then Test_ModCommands.Add(Command)
-                                    script.Commands.RenameKey(ActualCommand, Command)
-                                    TestModDefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                    script.Commands.Remove(ActualCommand)
+                                    script.Commands.Add(Command, commandInfo)
+                                    If Not TestModDefs.ContainsKey(Command) Then TestModDefs.Add(Command, commandInfo.HelpDefinition)
                                 Case ShellCommandType.RemoteDebugShell
                                     Wdbg("I", "Adding command {0} for remote debug shell...", Command)
                                     If Not DebugModCmds.Contains(Command) Then DebugModCmds.Add(Command)
-                                    script.Commands.RenameKey(ActualCommand, Command)
-                                    RDebugModDefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                    script.Commands.Remove(ActualCommand)
+                                    script.Commands.Add(Command, commandInfo)
+                                    If Not RDebugModDefs.ContainsKey(Command) Then RDebugModDefs.Add(Command, commandInfo.HelpDefinition)
                                 Case ShellCommandType.ZIPShell
                                     Wdbg("I", "Adding command {0} for ZIP shell...", Command)
                                     If Not ZipShell_ModCommands.Contains(Command) Then ZipShell_ModCommands.Add(Command)
-                                    script.Commands.RenameKey(ActualCommand, Command)
-                                    ZipShell_ModHelpEntries.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                    script.Commands.Remove(ActualCommand)
+                                    script.Commands.Add(Command, commandInfo)
+                                    If Not ZipShell_ModHelpEntries.ContainsKey(Command) Then ZipShell_ModHelpEntries.Add(Command, commandInfo.HelpDefinition)
                                 Case ShellCommandType.RSSShell
                                     Wdbg("I", "Adding command {0} for RSS shell...", Command)
                                     If Not RSSModCommands.Contains(Command) Then RSSModCommands.Add(Command)
-                                    script.Commands.RenameKey(ActualCommand, Command)
-                                    RSSModDefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                    script.Commands.Remove(ActualCommand)
+                                    script.Commands.Add(Command, commandInfo)
+                                    If Not RSSModDefs.ContainsKey(Command) Then RSSModDefs.Add(Command, commandInfo.HelpDefinition)
                             End Select
                         End If
                     Next

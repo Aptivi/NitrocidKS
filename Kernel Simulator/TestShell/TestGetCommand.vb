@@ -44,7 +44,7 @@ Module TestGetCommand
             Dim Cmd As String = words(0)
 
             'Parse arguments
-            Dim FullArgsQ() As String = strArgs.SplitEncloseDoubleQuotes(" ")
+            Dim FullArgsQ() As String = strArgs.SplitEncloseDoubleQuotes()
             If FullArgsQ IsNot Nothing Then
                 RequiredArgumentsProvided = FullArgsQ?.Length >= Test_Commands(words(0)).MinimumArguments
             ElseIf Test_Commands(words(0)).ArgumentsRequired And FullArgsQ Is Nothing Then

@@ -40,7 +40,7 @@ Module MailGetCommand
         If Not index = cmd.Length Then strArgs = strArgs.Substring(1)
 
         'Parse arguments
-        Dim FullArgsLQ() As String = strArgs.SplitEncloseDoubleQuotes(" ")
+        Dim FullArgsLQ() As String = strArgs.SplitEncloseDoubleQuotes()
         If FullArgsLQ IsNot Nothing Then
             RequiredArgsProvided = FullArgsLQ?.Length >= FTPCommands(words(0)).MinimumArguments
         ElseIf FTPCommands(words(0)).ArgumentsRequired And FullArgsLQ Is Nothing Then

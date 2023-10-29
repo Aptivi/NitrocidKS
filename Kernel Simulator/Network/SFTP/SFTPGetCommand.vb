@@ -41,7 +41,7 @@ Public Module SFTPGetCommand
         If Not index = cmd.Length Then strArgs = strArgs.Substring(1)
 
         'Parse arguments
-        Dim ArgsQ() As String = strArgs.SplitEncloseDoubleQuotes(" ")
+        Dim ArgsQ() As String = strArgs.SplitEncloseDoubleQuotes()
         If ArgsQ IsNot Nothing Then
             RequiredArgumentsProvided = ArgsQ?.Length >= FTPCommands(words(0)).MinimumArguments
         ElseIf FTPCommands(words(0)).ArgumentsRequired And ArgsQ Is Nothing Then

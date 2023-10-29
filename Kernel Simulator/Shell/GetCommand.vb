@@ -54,7 +54,7 @@ Public Module GetCommand
         Wdbg("I", "Finished strArgs: {0}", strArgs)
 
         '4. Split the arguments with enclosed quotes and set the required boolean variable
-        Dim eqargs() As String = strArgs.SplitEncloseDoubleQuotes(" ")
+        Dim eqargs() As String = strArgs.SplitEncloseDoubleQuotes()
         If eqargs IsNot Nothing Then
             RequiredArgumentsProvided = eqargs?.Length >= Commands(Command).MinimumArguments
         ElseIf Commands(Command).ArgumentsRequired And eqargs Is Nothing Then
@@ -1185,7 +1185,7 @@ Public Module GetCommand
                         Dim Destination As String = If(Not eqargs(1) = "-createdir", NeutralizePath(eqargs(1)), "")
                         If eqargs?.Contains("-createdir") Then
                             Destination = $"{If(Not eqargs(1) = "-createdir", NeutralizePath(eqargs(1)), "")}/{If(Not eqargs(1) = "-createdir", Path.GetFileNameWithoutExtension(ZipArchiveName), NeutralizePath(Path.GetFileNameWithoutExtension(ZipArchiveName)))}"
-                            If Destination(0) = "/" Then Destination = Destination.RemoveLetter(0)
+                            If Destination(0) = "/" Then Destination = Destination.Substring(1)
                         End If
                         ZipFile.ExtractToDirectory(ZipArchiveName, Destination)
                     End If
