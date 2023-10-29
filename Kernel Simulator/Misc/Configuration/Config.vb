@@ -46,21 +46,21 @@ Public Module Config
 
             'The Colors Section
             Dim ColorConfig As New JObject From {
-                    {"User Name Shell Color", If(New Color(UserNameShellColor).Type = ColorType.TrueColor, $"{UserNameShellColor}", UserNameShellColor)},
-                    {"Host Name Shell Color", If(New Color(HostNameShellColor).Type = ColorType.TrueColor, $"{HostNameShellColor}", HostNameShellColor)},
-                    {"Continuable Kernel Error Color", If(New Color(ContKernelErrorColor).Type = ColorType.TrueColor, $"{ContKernelErrorColor}", ContKernelErrorColor)},
-                    {"Uncontinuable Kernel Error Color", If(New Color(UncontKernelErrorColor).Type = ColorType.TrueColor, $"{UncontKernelErrorColor}", UncontKernelErrorColor)},
-                    {"Text Color", If(New Color(NeutralTextColor).Type = ColorType.TrueColor, $"{NeutralTextColor}", NeutralTextColor)},
-                    {"License Color", If(New Color(LicenseColor).Type = ColorType.TrueColor, $"{LicenseColor}", LicenseColor)},
-                    {"Background Color", If(New Color(BackgroundColor).Type = ColorType.TrueColor, $"{BackgroundColor}", BackgroundColor)},
-                    {"Input Color", If(New Color(InputColor).Type = ColorType.TrueColor, $"{InputColor}", InputColor)},
-                    {"List Entry Color", If(New Color(ListEntryColor).Type = ColorType.TrueColor, $"{ListEntryColor}", ListEntryColor)},
-                    {"List Value Color", If(New Color(ListValueColor).Type = ColorType.TrueColor, $"{ListValueColor}", ListValueColor)},
-                    {"Kernel Stage Color", If(New Color(StageColor).Type = ColorType.TrueColor, $"{StageColor}", StageColor)},
-                    {"Error Text Color", If(New Color(ErrorColor).Type = ColorType.TrueColor, $"{ErrorColor}", ErrorColor)},
-                    {"Warning Text Color", If(New Color(WarningColor).Type = ColorType.TrueColor, $"{WarningColor}", WarningColor)},
-                    {"Option Color", If(New Color(OptionColor).Type = ColorType.TrueColor, $"{OptionColor}", OptionColor)},
-                    {"Banner Color", If(New Color(BannerColor).Type = ColorType.TrueColor, $"{BannerColor}", BannerColor)}
+                    {"User Name Shell Color", If(New Color(UserNameShellColor).Type = ColorType.TrueColor, $"""{UserNameShellColor}""", UserNameShellColor)},
+                    {"Host Name Shell Color", If(New Color(HostNameShellColor).Type = ColorType.TrueColor, $"""{HostNameShellColor}""", HostNameShellColor)},
+                    {"Continuable Kernel Error Color", If(New Color(ContKernelErrorColor).Type = ColorType.TrueColor, $"""{ContKernelErrorColor}""", ContKernelErrorColor)},
+                    {"Uncontinuable Kernel Error Color", If(New Color(UncontKernelErrorColor).Type = ColorType.TrueColor, $"""{UncontKernelErrorColor}""", UncontKernelErrorColor)},
+                    {"Text Color", If(New Color(NeutralTextColor).Type = ColorType.TrueColor, $"""{NeutralTextColor}""", NeutralTextColor)},
+                    {"License Color", If(New Color(LicenseColor).Type = ColorType.TrueColor, $"""{LicenseColor}""", LicenseColor)},
+                    {"Background Color", If(New Color(BackgroundColor).Type = ColorType.TrueColor, $"""{BackgroundColor}""", BackgroundColor)},
+                    {"Input Color", If(New Color(InputColor).Type = ColorType.TrueColor, $"""{InputColor}""", InputColor)},
+                    {"List Entry Color", If(New Color(ListEntryColor).Type = ColorType.TrueColor, $"""{ListEntryColor}""", ListEntryColor)},
+                    {"List Value Color", If(New Color(ListValueColor).Type = ColorType.TrueColor, $"""{ListValueColor}""", ListValueColor)},
+                    {"Kernel Stage Color", If(New Color(StageColor).Type = ColorType.TrueColor, $"""{StageColor}""", StageColor)},
+                    {"Error Text Color", If(New Color(ErrorColor).Type = ColorType.TrueColor, $"""{ErrorColor}""", ErrorColor)},
+                    {"Warning Text Color", If(New Color(WarningColor).Type = ColorType.TrueColor, $"""{WarningColor}""", WarningColor)},
+                    {"Option Color", If(New Color(OptionColor).Type = ColorType.TrueColor, $"""{OptionColor}""", OptionColor)},
+                    {"Banner Color", If(New Color(BannerColor).Type = ColorType.TrueColor, $"""{BannerColor}""", BannerColor)}
             }
             ConfigurationObject.Add("Colors", ColorConfig)
 
