@@ -18,6 +18,7 @@
 
 Imports System.IO
 Imports Newtonsoft.Json.Linq
+Imports Terminaux.Reader
 
 Public Module SFTPTools
 
@@ -41,7 +42,7 @@ Public Module SFTPTools
 
                 'Prompt for username
                 Write(DoTranslation("Username for {0}: "), False, ColTypes.Input, address)
-                SFTPUser = Console.ReadLine()
+                SFTPUser = TermReader.Read()
                 If SFTPUser = "" Then
                     Wdbg("W", "User is not provided. Fallback to ""anonymous""")
                     SFTPUser = "anonymous"

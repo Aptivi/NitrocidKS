@@ -18,6 +18,7 @@
 
 Imports System.IO
 Imports System.Threading
+Imports Terminaux.Reader
 
 Public Module Shell
 
@@ -168,7 +169,7 @@ Public Module Shell
                     'Wait for command
                     Wdbg("I", "Waiting for command")
                     EventManager.RaiseShellInitialized()
-                    strcommand = Console.ReadLine()
+                    strcommand = TermReader.Read()
 
                     If Not InSaver Then
                         'Fire event of PreRaiseExecuteCommand

@@ -19,6 +19,7 @@
 Imports System.IO
 Imports System.Net.Security
 Imports Newtonsoft.Json.Linq
+Imports Terminaux.Reader
 
 Public Module FTPTools
 
@@ -80,7 +81,7 @@ Public Module FTPTools
 
                 'Prompt for username
                 Write(DoTranslation("Username for {0}: "), False, ColTypes.Input, address)
-                user = Console.ReadLine()
+                user = TermReader.Read()
                 If user = "" Then
                     Wdbg("W", "User is not provided. Fallback to ""anonymous""")
                     user = "anonymous"

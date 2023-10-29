@@ -16,6 +16,8 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Imports Terminaux.Reader
+
 Module ArgumentPrompt
 
     'Variables
@@ -36,7 +38,7 @@ Module ArgumentPrompt
         While Not AnswerArgs = "q"
             'Prompts for the arguments
             Write(DoTranslation("Arguments ('help' for help): "), False, ColTypes.Input, String.Join(", ", AvailableArgs))
-            AnswerArgs = Console.ReadLine()
+            AnswerArgs = TermReader.Read()
 
             'Add an argument to the entered arguments list
             If AnswerArgs <> "q" Then

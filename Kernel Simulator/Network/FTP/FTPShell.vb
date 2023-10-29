@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports System.Threading
+Imports Terminaux.Reader
 
 Public Module FTPShell
 
@@ -115,7 +116,7 @@ Public Module FTPShell
                     Connects = False
                 Else
                     Wdbg("I", "Normal shell")
-                    strcmd = Console.ReadLine()
+                    strcmd = TermReader.Read()
                 End If
                 EventManager.RaiseFTPPreExecuteCommand(strcmd)
 

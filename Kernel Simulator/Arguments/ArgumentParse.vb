@@ -16,6 +16,8 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Imports Terminaux.Reader
+
 Module ArgumentParse
 
     'Variables
@@ -47,7 +49,7 @@ Module ArgumentParse
                         If EnteredArguments(i) = "cmdinject" Then
                             Write(DoTranslation("Available commands: {0}") + vbNewLine +
                               DoTranslation("Write command: "), False, ColTypes.Input, String.Join(", ", Commands.Keys))
-                            argcmds = Console.ReadLine().Split({" : "}, StringSplitOptions.RemoveEmptyEntries)
+                            argcmds = TermReader.Read().Split({" : "}, StringSplitOptions.RemoveEmptyEntries)
                             argcommands = String.Join(", ", argcmds)
                             If argcommands <> "q" Then
                                 CommandFlag = True

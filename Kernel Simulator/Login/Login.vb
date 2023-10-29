@@ -16,6 +16,8 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Imports Terminaux.Reader
+
 Public Module Login
 
     'Variables
@@ -74,7 +76,7 @@ Public Module Login
 
             'Prompt user to login
             Write(DoTranslation("Username: "), False, ColTypes.Input)
-            answeruser = Console.ReadLine()
+            answeruser = TermReader.Read()
 
             'Parse input
             If InStr(answeruser, " ") > 0 Then

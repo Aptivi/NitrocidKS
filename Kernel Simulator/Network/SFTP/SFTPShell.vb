@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports System.Threading
+Imports Terminaux.Reader
 
 Public Module SFTPShell
 
@@ -111,7 +112,7 @@ Public Module SFTPShell
                     Connects = False
                 Else
                     Wdbg("I", "Normal shell")
-                    SFTPStrCmd = Console.ReadLine()
+                    SFTPStrCmd = TermReader.Read()
                 End If
                 EventManager.RaiseSFTPPreExecuteCommand(SFTPStrCmd)
 
