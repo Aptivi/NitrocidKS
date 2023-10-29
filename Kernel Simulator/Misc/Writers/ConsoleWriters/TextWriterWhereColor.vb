@@ -31,6 +31,8 @@ Module TextWriterWhereColor
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
+            If msg Is Nothing Then Return
+
             'Check if default console output equals the new console output text writer. If it does, write in color, else, suppress the colors.
             If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out) Then
                 If colorType = ColTypes.Neutral Then
@@ -128,6 +130,8 @@ Module TextWriterWhereColor
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
+            If msg Is Nothing Then Return
+
             Console.BackgroundColor = IIf(IsNumeric(New Color(BackgroundColor).PlainSequence), If(BackgroundColor <= 15, [Enum].Parse(GetType(ConsoleColor), BackgroundColor), ConsoleColor.Black), ConsoleColor.Black)
             Console.ForegroundColor = color
 
@@ -187,6 +191,8 @@ Module TextWriterWhereColor
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
+            If msg Is Nothing Then Return
+
             Console.BackgroundColor = BackgroundColor
             Console.ForegroundColor = ForegroundColor
 
@@ -245,6 +251,8 @@ Module TextWriterWhereColor
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
+            If msg Is Nothing Then Return
+
             If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out) Then
                 SetConsoleColor(color)
                 SetConsoleColor(New Color(BackgroundColor), True)
@@ -306,6 +314,8 @@ Module TextWriterWhereColor
 #If Not NOWRITELOCK Then
         SyncLock WriteLock
 #End If
+            If msg Is Nothing Then Return
+
             If DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out) Then
                 SetConsoleColor(ForegroundColor)
                 SetConsoleColor(BackgroundColor, True)
