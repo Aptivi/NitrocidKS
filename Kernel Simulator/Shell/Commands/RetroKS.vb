@@ -24,6 +24,7 @@ Imports SharpCompress.Archives
 Imports SharpCompress.Archives.Rar
 Imports SharpCompress.Common
 Imports System.Reflection
+Imports SemanVer.Instance
 
 Namespace Shell.Commands
     Class RetroKSCommand
@@ -46,7 +47,14 @@ Namespace Shell.Commands
             Dim RetroKSToken As JToken = JToken.Parse(RetroKSStr)
             Dim SortedVersions As New List(Of KernelUpdateInfo)
             For Each RetroKS As JToken In RetroKSToken
-                Dim RetroKSVer As New Version(RetroKS.SelectToken("tag_name").ToString)
+                Dim tagName As String = RetroKS.SelectToken("tag_name").ToString()
+                tagName = If(tagName.StartsWith("v"), tagName.Substring(1), tagName)
+                Dim RetroKSVer As SemVer = Nothing
+                If tagName.Split(".").Length > 3 Then
+                    RetroKSVer = SemVer.ParseWithRev(tagName)
+                Else
+                    RetroKSVer = SemVer.Parse(tagName)
+                End If
                 Dim RetroKSURL As String
                 Dim RetroKSAssets As JToken = RetroKS.SelectToken("assets")
 #If NETCOREAPP Then
@@ -72,7 +80,7 @@ Namespace Shell.Commands
             MakeDirectory(RetroKSDownloadPath, False)
 
             'Check to see if we already have RetroKS installed and up-to-date
-            If (FileExists(RetroExecKSPath) AndAlso Assembly.Load(IO.File.ReadAllBytes(RetroExecKSPath)).GetName.Version < SortedVersions(0).UpdateVersion) Or
+            If (FileExists(RetroExecKSPath) AndAlso SemVer.ParseWithRev(AssemblyName.GetAssemblyName(RetroExecKSPath).Version.ToString()) < SortedVersions(0).UpdateVersion) Or
                 Not FileExists(RetroExecKSPath) Then
                 Write(DoTranslation("Downloading version") + " {0}...", True, ColTypes.Neutral, SortedVersions(0).UpdateVersion.ToString)
 

@@ -16,13 +16,15 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Imports SemanVer.Instance
+
 Namespace Kernel
     Public Class KernelUpdateInfo
 
         ''' <summary>
         ''' Updated kernel version
         ''' </summary>
-        Public ReadOnly Property UpdateVersion As Version
+        Public ReadOnly Property UpdateVersion As SemVer
         ''' <summary>
         ''' Update file URL
         ''' </summary>
@@ -33,7 +35,7 @@ Namespace Kernel
         ''' </summary>
         ''' <param name="UpdateVer">The kernel version fetched from the update token</param>
         ''' <param name="UpdateUrl">The kernel URL fetched from the update token</param>
-        Protected Friend Sub New(UpdateVer As Version, UpdateUrl As String)
+        Protected Friend Sub New(UpdateVer As SemVer, UpdateUrl As String)
             Try
                 UpdateVersion = UpdateVer
                 Me.UpdateURL = New Uri(UpdateUrl)

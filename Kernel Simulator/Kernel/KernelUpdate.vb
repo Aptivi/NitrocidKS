@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports Newtonsoft.Json.Linq
+Imports SemanVer.Instance
 
 Namespace Kernel
     Public Class KernelUpdate
@@ -24,7 +25,7 @@ Namespace Kernel
         ''' <summary>
         ''' Updated kernel version
         ''' </summary>
-        Public ReadOnly Property UpdateVersion As Version
+        Public ReadOnly Property UpdateVersion As SemVer
         ''' <summary>
         ''' Update file URL
         ''' </summary>
@@ -52,7 +53,14 @@ Namespace Kernel
             'arrived)
             Dim SortedVersions As New List(Of KernelUpdateInfo)
             For Each KernelUpdate As JToken In UpdateToken
-                Dim KernelUpdateVer As New Version(KernelUpdate.SelectToken("tag_name").ToString.ReplaceAll({"v", "-alpha", "-beta"}, ""))
+                Dim tagName As String = KernelUpdate.SelectToken("tag_name").ToString()
+                tagName = If(tagName.StartsWith("v"), tagName.Substring(1), tagName)
+                Dim KernelUpdateVer As SemVer = Nothing
+                If tagName.Split(".").Length > 3 Then
+                    KernelUpdateVer = SemVer.ParseWithRev(tagName)
+                Else
+                    KernelUpdateVer = SemVer.Parse(tagName)
+                End If
                 Dim KernelUpdateURL = ""
                 For Each asset In KernelUpdate.SelectToken("assets")
                     Dim url = CStr(asset("browser_download_url"))
@@ -71,8 +79,8 @@ Namespace Kernel
             SortedVersions = SortedVersions.OrderByDescending(Function(x) x.UpdateVersion).ToList
 
             'Get the latest version found
-            Dim CurrentVer As New Version(KernelVersion)
-            Dim UpdateVer As Version = SortedVersions(0).UpdateVersion
+            Dim CurrentVer As SemVer = SemVer.ParseWithRev(KernelVersion)
+            Dim UpdateVer As SemVer = SortedVersions(0).UpdateVersion
             Dim UpdateURI As Uri = SortedVersions(0).UpdateURL
             Wdbg(DebugLevel.I, "Update version: {0}", UpdateVer.ToString)
             Wdbg(DebugLevel.I, "Update URL: {0}", UpdateURI.ToString)
