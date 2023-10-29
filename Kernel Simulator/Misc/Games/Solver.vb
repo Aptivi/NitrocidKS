@@ -16,6 +16,8 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Imports Terminaux.Reader
+
 Namespace Misc.Games
     Public Module Solver
 
@@ -47,7 +49,7 @@ Namespace Misc.Games
                 TextWriterColor.Write(RandomExpression, True, ColTypes.Input)
 
                 'Wait for response
-                UserEvaluated = If(SolverShowInput, Console.ReadLine(), ReadLineNoInput(""))
+                UserEvaluated = If(SolverShowInput, TermReader.Read(), ReadLineNoInput(""))
                 Wdbg(DebugLevel.I, "Evaluated: {0}", UserEvaluated)
 
                 'Check to see if the user has entered the correct answer

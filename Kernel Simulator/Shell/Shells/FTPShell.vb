@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports KS.Network.FTP
+Imports Terminaux.Reader
 
 Namespace Shell.Shells
     Public Class FTPShell
@@ -94,7 +95,7 @@ Namespace Shell.Shells
                             Connects = False
                         Else
                             Wdbg(DebugLevel.I, "Normal shell")
-                            FtpCommand = Console.ReadLine()
+                            FtpCommand = TermReader.Read()
                         End If
                         KernelEventManager.RaiseFTPPreExecuteCommand(FtpCommand)
 

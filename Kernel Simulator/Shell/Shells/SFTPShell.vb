@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports KS.Network.SFTP
+Imports Terminaux.Reader
 
 Namespace Shell.Shells
     Public Class SFTPShell
@@ -93,7 +94,7 @@ Namespace Shell.Shells
                             Connects = False
                         Else
                             Wdbg(DebugLevel.I, "Normal shell")
-                            SFTPStrCmd = Console.ReadLine()
+                            SFTPStrCmd = TermReader.Read()
                         End If
                         KernelEventManager.RaiseSFTPPreExecuteCommand(SFTPStrCmd)
 

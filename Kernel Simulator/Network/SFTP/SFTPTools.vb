@@ -19,6 +19,7 @@
 Imports Newtonsoft.Json.Linq
 Imports KS.Network.SSH
 Imports KS.Misc.Reflection
+Imports Terminaux.Reader
 
 Namespace Network.SFTP
     Public Module SFTPTools
@@ -47,7 +48,7 @@ Namespace Network.SFTP
                     Else
                         TextWriterColor.Write(DoTranslation("Username for {0}: "), False, ColTypes.Input, address)
                     End If
-                    SFTPUser = Console.ReadLine()
+                    SFTPUser = TermReader.Read()
                     If SFTPUser = "" Then
                         Wdbg(DebugLevel.W, "User is not provided. Fallback to ""anonymous""")
                         SFTPUser = "anonymous"

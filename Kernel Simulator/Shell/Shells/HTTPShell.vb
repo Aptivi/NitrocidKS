@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports KS.Network.HTTP
+Imports Terminaux.Reader
 
 Namespace Shell.Shells
     Public Class HTTPShell
@@ -54,7 +55,7 @@ Namespace Shell.Shells
 
                         'Prompt for command
                         Wdbg(DebugLevel.I, "Normal shell")
-                        Dim HttpCommand As String = Console.ReadLine()
+                        Dim HttpCommand As String = TermReader.Read()
                         KernelEventManager.RaiseHTTPPreExecuteCommand(HttpCommand)
 
                         'Parse command

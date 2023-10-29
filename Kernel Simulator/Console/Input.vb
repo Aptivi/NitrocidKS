@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports System.IO
+Imports Terminaux.Reader
 
 Namespace ConsoleBase
     Public Module Input
@@ -42,28 +43,11 @@ Namespace ConsoleBase
         ''' </summary>
         ''' <param name="MaskChar">Specifies the password mask character</param>
         Public Function ReadLineNoInput(MaskChar As Char) As String
-            Dim Final As String = ""
-            While True
-                Dim KeyInfo As ConsoleKeyInfo = Console.ReadKey(True)
-                Dim KeyCharacter As Char = KeyInfo.KeyChar
-                If KeyCharacter = vbCr Or KeyCharacter = vbLf Then
-                    Exit While
-                ElseIf KeyInfo.Key = ConsoleKey.Backspace Then
-                    If Not Final.Length = 0 Then
-                        Final = Final.Remove(Final.Length - 1)
-                        If Not MaskChar = vbNullChar Then
-                            Dim OldCursorLeft As Integer = Console.CursorLeft
-                            Console.CursorLeft = OldCursorLeft - 1
-                            Console.Write(" ")
-                            Console.CursorLeft = OldCursorLeft - 1
-                        End If
-                    End If
-                Else
-                    Final += KeyCharacter
-                    If Not MaskChar = vbNullChar Then Console.Write(MaskChar)
-                End If
-            End While
-            Return Final
+            If MaskChar = "" Then
+                Return TermReader.ReadPassword()
+            Else
+                Return TermReader.ReadPassword(New TermReaderSettings() With {.PasswordMaskChar = MaskChar})
+            End If
         End Function
 
         ''' <summary>
@@ -121,7 +105,7 @@ Namespace ConsoleBase
         ''' </summary>
         Public Function ReadLineLong() As String
             Console.SetIn(New StreamReader(Console.OpenStandardInput(65536), Console.InputEncoding, False, 65536))
-            Return Console.ReadLine()
+            Return TermReader.Read()
         End Function
 
     End Module

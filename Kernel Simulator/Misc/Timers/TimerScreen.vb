@@ -22,6 +22,7 @@ Imports System.Threading
 Imports System.Timers
 Imports Figgle
 Imports Timer = System.Timers.Timer
+Imports Terminaux.Reader
 
 Namespace Misc.Timers
     Public Module TimerScreen
@@ -96,7 +97,7 @@ Namespace Misc.Timers
                             WriteWhere(DoTranslation("Specify the timeout in milliseconds") + " [{0}] {1}", 2, KeysTextTopPosition - 4, False, ColTypes.Question, TimerInterval, InputColor.VTSequenceForeground)
 
                             'Try to parse the interval
-                            Dim UnparsedInterval As String = Console.ReadLine()
+                            Dim UnparsedInterval As String = TermReader.Read()
                             If Not Double.TryParse(UnparsedInterval, TimerInterval) Then
                                 'Not numeric.
                                 WriteWhere(DoTranslation("Indicated timeout is not numeric."), 2, KeysTextTopPosition - 4, False, ColTypes.Error)

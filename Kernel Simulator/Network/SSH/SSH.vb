@@ -18,6 +18,7 @@
 
 Imports System.IO
 Imports Renci.SshNet.Common
+Imports Terminaux.Reader
 
 Namespace Network.SSH
     Public Module SSH
@@ -92,7 +93,7 @@ Namespace Network.SSH
 
                         'Ask for location
                         TextWriterColor.Write(DoTranslation("Enter the location of the private key for {0}. Write ""q"" to finish adding keys: "), False, ColTypes.Input, Username)
-                        PrivateKeyFile = Console.ReadLine()
+                        PrivateKeyFile = TermReader.Read()
                         PrivateKeyFile = NeutralizePath(PrivateKeyFile)
                         If FileExists(PrivateKeyFile) Then
                             'Ask for passphrase

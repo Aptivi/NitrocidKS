@@ -19,6 +19,7 @@
 Imports KS.Misc.Encryption
 Imports KS.Misc.Screensaver
 Imports KS.Network.RSS
+Imports Terminaux.Reader
 
 Namespace Login
     Public Module Login
@@ -135,7 +136,7 @@ Namespace Login
                     Else
                         TextWriterColor.Write(DoTranslation("Username: "), False, ColTypes.Input)
                     End If
-                    Dim answeruser As String = Console.ReadLine()
+                    Dim answeruser As String = TermReader.Read()
 
                     'Parse input
                     If answeruser.Contains(" ") Then

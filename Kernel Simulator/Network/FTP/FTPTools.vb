@@ -20,6 +20,7 @@ Imports System.Net.Security
 Imports Newtonsoft.Json.Linq
 Imports KS.Network.FTP.Transfer
 Imports KS.Misc.Reflection
+Imports Terminaux.Reader
 
 Namespace Network.FTP
     Public Module FTPTools
@@ -90,7 +91,7 @@ Namespace Network.FTP
                     Else
                         TextWriterColor.Write(DoTranslation("Username for {0}: "), False, ColTypes.Input, address)
                     End If
-                    FtpUser = Console.ReadLine()
+                    FtpUser = TermReader.Read()
                     If FtpUser = "" Then
                         Wdbg(DebugLevel.W, "User is not provided. Fallback to ""anonymous""")
                         FtpUser = "anonymous"
@@ -200,39 +201,39 @@ Namespace Network.FTP
         ''' Tries to validate certificate
         ''' </summary>
         Public Sub TryToValidate(control As FtpClient, e As FtpSslValidationEventArgs)
-        Wdbg(DebugLevel.I, "Certificate checks")
-        If e.PolicyErrors = SslPolicyErrors.None Then
-            Wdbg(DebugLevel.I, "Certificate accepted.")
-            Wdbg(DebugLevel.I, e.Certificate.GetRawCertDataString)
-            e.Accept = True
-        Else
-            Wdbg(DebugLevel.W, $"Certificate error is {e.PolicyErrors}")
-            TextWriterColor.Write(DoTranslation("During certificate validation, there are certificate errors. It might be the first time you've connected to the server or the certificate might have been expired. Here's an error:"), True, ColTypes.Error)
-            TextWriterColor.Write("- {0}", True, ColTypes.Error, e.PolicyErrors.ToString)
-            If FtpAlwaysAcceptInvalidCerts Then
-                Wdbg(DebugLevel.W, "Certificate accepted, although there are errors.")
+            Wdbg(DebugLevel.I, "Certificate checks")
+            If e.PolicyErrors = SslPolicyErrors.None Then
+                Wdbg(DebugLevel.I, "Certificate accepted.")
                 Wdbg(DebugLevel.I, e.Certificate.GetRawCertDataString)
                 e.Accept = True
             Else
-                Dim Answer As String = ""
-                Do Until Answer.ToLower = "y" Or Answer.ToLower = "n"
-                    TextWriterColor.Write(DoTranslation("Are you sure that you want to connect?") + " (y/n) ", False, ColTypes.Question)
-                    SetConsoleColor(InputColor)
-                    Answer = Console.ReadKey.KeyChar
-                    Console.WriteLine()
-                    Wdbg(DebugLevel.I, $"Answer is {Answer}")
-                    If Answer.ToLower = "y" Then
-                        Wdbg(DebugLevel.W, "Certificate accepted, although there are errors.")
-                        Wdbg(DebugLevel.I, e.Certificate.GetRawCertDataString)
-                        e.Accept = True
-                    ElseIf Answer.ToLower <> "n" Then
-                        Wdbg(DebugLevel.W, "Invalid answer.")
-                        TextWriterColor.Write(DoTranslation("Invalid answer. Please try again."), True, ColTypes.Error)
-                    End If
-                Loop
+                Wdbg(DebugLevel.W, $"Certificate error is {e.PolicyErrors}")
+                TextWriterColor.Write(DoTranslation("During certificate validation, there are certificate errors. It might be the first time you've connected to the server or the certificate might have been expired. Here's an error:"), True, ColTypes.Error)
+                TextWriterColor.Write("- {0}", True, ColTypes.Error, e.PolicyErrors.ToString)
+                If FtpAlwaysAcceptInvalidCerts Then
+                    Wdbg(DebugLevel.W, "Certificate accepted, although there are errors.")
+                    Wdbg(DebugLevel.I, e.Certificate.GetRawCertDataString)
+                    e.Accept = True
+                Else
+                    Dim Answer As String = ""
+                    Do Until Answer.ToLower = "y" Or Answer.ToLower = "n"
+                        TextWriterColor.Write(DoTranslation("Are you sure that you want to connect?") + " (y/n) ", False, ColTypes.Question)
+                        SetConsoleColor(InputColor)
+                        Answer = Console.ReadKey.KeyChar
+                        Console.WriteLine()
+                        Wdbg(DebugLevel.I, $"Answer is {Answer}")
+                        If Answer.ToLower = "y" Then
+                            Wdbg(DebugLevel.W, "Certificate accepted, although there are errors.")
+                            Wdbg(DebugLevel.I, e.Certificate.GetRawCertDataString)
+                            e.Accept = True
+                        ElseIf Answer.ToLower <> "n" Then
+                            Wdbg(DebugLevel.W, "Invalid answer.")
+                            TextWriterColor.Write(DoTranslation("Invalid answer. Please try again."), True, ColTypes.Error)
+                        End If
+                    Loop
+                End If
             End If
-        End If
-    End Sub
+        End Sub
 
         ''' <summary>
         ''' Opens speed dial prompt

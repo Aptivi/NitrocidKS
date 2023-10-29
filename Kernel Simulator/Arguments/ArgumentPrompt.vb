@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports KS.Arguments.ArgumentBase
+Imports Terminaux.Reader
 
 Namespace Arguments
     Public Module ArgumentPrompt
@@ -43,7 +44,7 @@ Namespace Arguments
             'Prompts for the arguments
             While Not AnswerArgs = "q"
                 TextWriterColor.Write(">> ", False, ColTypes.Input)
-                AnswerArgs = Console.ReadLine()
+                AnswerArgs = TermReader.Read()
 
                 'Add an argument to the entered arguments list
                 If AnswerArgs <> "q" Then

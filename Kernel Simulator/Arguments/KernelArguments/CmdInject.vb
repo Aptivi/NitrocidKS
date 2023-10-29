@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports KS.Arguments.ArgumentBase
+Imports Terminaux.Reader
 
 Namespace Arguments.KernelArguments
     Class CmdInjectArgument
@@ -32,7 +33,7 @@ Namespace Arguments.KernelArguments
             Else
                 TextWriterColor.Write(DoTranslation("Available commands: {0}"), True, ColTypes.Neutral, String.Join(", ", Shell.Shell.Commands.Keys))
                 TextWriterColor.Write(">> ", False, ColTypes.Input)
-                InjectedCommands.AddRange(Console.ReadLine().Split({" : "}, StringSplitOptions.RemoveEmptyEntries))
+                InjectedCommands.AddRange(TermReader.Read().Split({" : "}, StringSplitOptions.RemoveEmptyEntries))
                 If String.Join(", ", InjectedCommands) <> "q" Then
                     CommandFlag = True
                 Else
