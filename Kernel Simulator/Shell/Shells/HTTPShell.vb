@@ -46,7 +46,6 @@ Namespace Shell.Shells
                                 TextWriterColor.Write("[", False, ColTypes.Gray) : TextWriterColor.Write("{0}", False, ColTypes.HostName, HTTPSite) : TextWriterColor.Write("]> ", False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                             Else
                                 Dim ParsedPromptStyle As String = ProbePlaces(HTTPShellPromptStyle)
-                                ParsedPromptStyle.ConvertVTSequences
                                 TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                             End If
                         Else

@@ -83,7 +83,7 @@ Namespace Arguments.ArgumentBase
             Wdbg(DebugLevel.I, "Finished strArgs: {0}", strArgs)
 
             'Split the arguments with enclosed quotes and set the required boolean variable
-            Dim EnclosedArgs As List(Of String) = strArgs.SplitEncloseDoubleQuotes(" ")?.ToList
+            Dim EnclosedArgs As List(Of String) = strArgs.SplitEncloseDoubleQuotes()?.ToList
             If EnclosedArgs IsNot Nothing Then
                 RequiredArgumentsProvided = EnclosedArgs?.Count >= KernelArguments(Argument).MinimumArguments
             ElseIf KernelArguments(Argument).ArgumentsRequired And EnclosedArgs Is Nothing Then

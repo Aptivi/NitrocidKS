@@ -79,7 +79,6 @@ Namespace Shell.Shells
                                     TextWriterColor.Write("[", False, ColTypes.Gray) : TextWriterColor.Write("{0}", False, ColTypes.UserName, SFTPUser) : TextWriterColor.Write("@", False, ColTypes.Gray) : TextWriterColor.Write("{0}", False, ColTypes.HostName, SFTPSite) : TextWriterColor.Write("]{0}> ", False, ColTypes.Gray, SFTPCurrentRemoteDir) : TextWriterColor.Write("", False, InputColor)
                                 Else
                                     Dim ParsedPromptStyle As String = ProbePlaces(SFTPShellPromptStyle)
-                                    ParsedPromptStyle.ConvertVTSequences
                                     TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                                 End If
                             Else

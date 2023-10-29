@@ -1,4 +1,5 @@
-﻿'    Kernel Simulator  Copyright (C) 2018-2022  EoflaOE
+﻿
+'    Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 '
 '    This file is part of Kernel Simulator
 '
@@ -15,19 +16,26 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Namespace TestShell.Commands
-    Class Test_TestEventCommand
-        Inherits CommandExecutor
-        Implements ICommand
-
-        Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
-            Try
-                Dim SubName As String = "Raise" + ListArgs(0)
-                CallByName(New Events, SubName, CallType.Method)
-            Catch ex As Exception
-                TextWriterColor.Write(DoTranslation("Failure to raise event {0}: {1}"), True, ColTypes.Error, ListArgs(0))
-            End Try
-        End Sub
-
-    End Class
+Namespace Misc.Text
+    ''' <summary>
+    ''' Type of enclosed double quotes in a word or phrase
+    ''' </summary>
+    Public Enum EnclosedDoubleQuotesType
+        ''' <summary>
+        ''' No double quotes to be enclosed
+        ''' </summary>
+        None
+        ''' <summary>
+        ''' Text enclosed by the double quotes
+        ''' </summary>
+        DoubleQuotes
+        ''' <summary>
+        ''' Text enclosed by the single quotes
+        ''' </summary>
+        SingleQuotes
+        ''' <summary>
+        ''' Text enclosed by the backticks
+        ''' </summary>
+        Backticks
+    End Enum
 End Namespace

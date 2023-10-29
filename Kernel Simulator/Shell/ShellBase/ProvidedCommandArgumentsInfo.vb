@@ -76,7 +76,7 @@ Namespace Shell.ShellBase
             Wdbg(DebugLevel.I, "Finished strArgs: {0}", strArgs)
 
             'Split the arguments with enclosed quotes and set the required boolean variable
-            Dim EnclosedArgs As List(Of String) = strArgs.SplitEncloseDoubleQuotes(" ")?.ToList
+            Dim EnclosedArgs As List(Of String) = strArgs.SplitEncloseDoubleQuotes()?.ToList
             If EnclosedArgs IsNot Nothing Then
                 RequiredArgumentsProvided = EnclosedArgs?.Count >= ShellCommands(Command).MinimumArguments
             ElseIf ShellCommands(Command).ArgumentsRequired And EnclosedArgs Is Nothing Then

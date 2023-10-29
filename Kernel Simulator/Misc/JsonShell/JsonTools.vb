@@ -19,7 +19,6 @@
 Imports System.IO
 Imports System.Text
 Imports Newtonsoft.Json.Linq
-Imports Extensification.StreamReaderExts
 Imports System.Threading
 
 Namespace Misc.JsonShell
@@ -35,7 +34,8 @@ Namespace Misc.JsonShell
                 Wdbg(DebugLevel.I, "Trying to open file {0}...", File)
                 JsonShell_FileStream = New FileStream(File, FileMode.Open)
                 Dim JsonFileReader As New StreamReader(JsonShell_FileStream)
-                Dim JsonFileContents As String = JsonFileReader.ReadToEndAndSeek
+                Dim JsonFileContents As String = JsonFileReader.ReadToEnd
+                JsonShell_FileStream.Seek(0, SeekOrigin.Begin)
                 JsonShell_FileToken = JToken.Parse(If(Not String.IsNullOrWhiteSpace(JsonFileContents), JsonFileContents, "{}"))
                 JsonShell_FileTokenOrig = JToken.Parse(If(Not String.IsNullOrWhiteSpace(JsonFileContents), JsonFileContents, "{}"))
                 Wdbg(DebugLevel.I, "File {0} is open. Length: {1}, Pos: {2}", File, JsonShell_FileStream.Length, JsonShell_FileStream.Position)

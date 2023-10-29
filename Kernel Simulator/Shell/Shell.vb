@@ -255,8 +255,7 @@ Namespace Shell
                             Try
                                 'Create a new instance of process
                                 If TryParsePath(TargetFile) Then
-                                    cmdArgs = cmdArgs.Replace(TargetFileName, "")
-                                    cmdArgs.RemoveNullsOrWhitespacesAtTheBeginning
+                                    cmdArgs = cmdArgs.Replace(TargetFileName, "").Trim()
                                     Wdbg(DebugLevel.I, "Command: {0}, Arguments: {1}", TargetFile, cmdArgs)
                                     Dim Params As New ExecuteProcessThreadParameters(TargetFile, cmdArgs)
                                     ProcessStartCommandThread = New Thread(AddressOf ExecuteProcess) With {.Name = "Executable Command Thread"}

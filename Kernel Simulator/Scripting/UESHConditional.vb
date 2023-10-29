@@ -38,7 +38,7 @@ Namespace Scripting
 
                 'First, check for the existence of one of the conditional words
                 Wdbg(DebugLevel.I, "Checkig expression {0} for condition", ConditionToSatisfy)
-                Dim EnclosedWords As List(Of String) = ConditionToSatisfy.SplitEncloseDoubleQuotes(" ")?.ToList
+                Dim EnclosedWords As List(Of String) = ConditionToSatisfy.SplitEncloseDoubleQuotes()?.ToList
                 Dim ConditionFound As Boolean
                 Dim ConditionType As UESHConditions = UESHConditions.none
                 For Each Condition As String In AvailableConditions

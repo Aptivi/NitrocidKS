@@ -62,7 +62,6 @@ Namespace Shell.Shells
                         TextWriterColor.Write("[", False, ColTypes.Gray) : TextWriterColor.Write("{0}@{1}", False, ColTypes.UserName, ZipShell_CurrentArchiveDirectory, Path.GetFileName(ZipFile)) : TextWriterColor.Write("] > ", False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                     Else
                         Dim ParsedPromptStyle As String = ProbePlaces(ZipShell_PromptStyle)
-                        ParsedPromptStyle.ConvertVTSequences
                         TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                     End If
 

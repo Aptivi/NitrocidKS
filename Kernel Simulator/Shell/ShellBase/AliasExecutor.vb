@@ -27,7 +27,7 @@ Namespace Shell.ShellBase
         ''' </summary>
         ''' <param name="aliascmd">Specifies the alias with arguments</param>
         Sub ExecuteAlias(aliascmd As String)
-            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
+            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes()(0)
             Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, Aliases(FirstWordCmd))
             Wdbg(DebugLevel.I, "Actual command: {0}", actualCmd)
             Dim Params As New ExecuteCommandThreadParameters(actualCmd, ShellType.Shell, Nothing)
@@ -41,7 +41,7 @@ Namespace Shell.ShellBase
         ''' </summary>
         ''' <param name="aliascmd">Aliased command with arguments</param>
         Sub ExecuteTestAlias(aliascmd As String)
-            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
+            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes()(0)
             Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, TestShellAliases(FirstWordCmd))
             Wdbg(DebugLevel.I, "Actual command: {0}", actualCmd)
             Dim Params As New ExecuteCommandThreadParameters(actualCmd, ShellType.TestShell, Nothing)
@@ -55,7 +55,7 @@ Namespace Shell.ShellBase
         ''' </summary>
         ''' <param name="aliascmd">Aliased command with arguments</param>
         Sub ExecuteSFTPAlias(aliascmd As String)
-            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
+            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes()(0)
             Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, SFTPShellAliases(FirstWordCmd))
             Wdbg(DebugLevel.I, "Actual command: {0}", actualCmd)
             Dim Params As New ExecuteCommandThreadParameters(actualCmd, ShellType.SFTPShell, Nothing)
@@ -69,7 +69,7 @@ Namespace Shell.ShellBase
         ''' </summary>
         ''' <param name="aliascmd">Aliased command with arguments</param>
         Sub ExecuteRSSAlias(aliascmd As String)
-            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
+            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes()(0)
             Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, RSSShellAliases(FirstWordCmd))
             Wdbg(DebugLevel.I, "Actual command: {0}", actualCmd)
             Dim Params As New ExecuteCommandThreadParameters(actualCmd, ShellType.RSSShell, Nothing)
@@ -95,7 +95,7 @@ Namespace Shell.ShellBase
         ''' </summary>
         ''' <param name="aliascmd">Aliased command with arguments</param>
         Sub ExecuteMailAlias(aliascmd As String)
-            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
+            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes()(0)
             Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, MailShellAliases(FirstWordCmd))
             Wdbg(DebugLevel.I, "Actual command: {0}", actualCmd)
             Dim Params As New ExecuteCommandThreadParameters(actualCmd, ShellType.MailShell, Nothing)
@@ -109,7 +109,7 @@ Namespace Shell.ShellBase
         ''' </summary>
         ''' <param name="aliascmd">Aliased command with arguments</param>
         Sub ExecuteFTPAlias(aliascmd As String)
-            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
+            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes()(0)
             Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, FTPShellAliases(FirstWordCmd))
             Wdbg(DebugLevel.I, "Actual command: {0}", actualCmd)
             Dim Params As New ExecuteCommandThreadParameters(actualCmd, ShellType.FTPShell, Nothing)
@@ -123,7 +123,7 @@ Namespace Shell.ShellBase
         ''' </summary>
         ''' <param name="aliascmd">Aliased command with arguments</param>
         Sub ExecuteZIPAlias(aliascmd As String)
-            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
+            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes()(0)
             Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, ZIPShellAliases(FirstWordCmd))
             Wdbg(DebugLevel.I, "Actual command: {0}", actualCmd)
             Dim Params As New ExecuteCommandThreadParameters(actualCmd, ShellType.ZIPShell, Nothing)
@@ -137,7 +137,7 @@ Namespace Shell.ShellBase
         ''' </summary>
         ''' <param name="aliascmd">Aliased command with arguments</param>
         Sub ExecuteTextAlias(aliascmd As String)
-            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
+            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes()(0)
             Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, TextShellAliases(FirstWordCmd))
             Wdbg(DebugLevel.I, "Actual command: {0}", actualCmd)
             Dim Params As New ExecuteCommandThreadParameters(actualCmd, ShellType.TextShell, Nothing)
@@ -151,7 +151,7 @@ Namespace Shell.ShellBase
         ''' </summary>
         ''' <param name="aliascmd">Aliased command with arguments</param>
         Sub ExecuteJsonAlias(aliascmd As String)
-            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
+            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes()(0)
             Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, JsonShellAliases(FirstWordCmd))
             Wdbg(DebugLevel.I, "Actual command: {0}", actualCmd)
             Dim Params As New ExecuteCommandThreadParameters(actualCmd, ShellType.JsonShell, Nothing)
@@ -165,7 +165,7 @@ Namespace Shell.ShellBase
         ''' </summary>
         ''' <param name="aliascmd">Aliased command with arguments</param>
         Sub ExecuteHTTPAlias(aliascmd As String)
-            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes(" ")(0)
+            Dim FirstWordCmd As String = aliascmd.SplitEncloseDoubleQuotes()(0)
             Dim actualCmd As String = aliascmd.Replace(FirstWordCmd, HTTPShellAliases(FirstWordCmd))
             Wdbg(DebugLevel.I, "Actual command: {0}", actualCmd)
             Dim Params As New ExecuteCommandThreadParameters(actualCmd, ShellType.HTTPShell, Nothing)

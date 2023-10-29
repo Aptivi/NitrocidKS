@@ -17,7 +17,6 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports System.IO
-Imports System.Reflection
 Imports System.Threading
 Imports MailKit.Net.Pop3
 Imports Newtonsoft.Json.Linq
@@ -590,7 +589,7 @@ Namespace Kernel
 #End If
 
 #If SPECIFIER = "DEV" Then
-        CompilerVars.Add("SPECIFIER = ""DEV""")
+            CompilerVars.Add("SPECIFIER = ""DEV""")
 #ElseIf SPECIFIER = "RC" Then
             CompilerVars.Add("SPECIFIER = ""RC""")
 #ElseIf SPECIFIER = "REL" Then

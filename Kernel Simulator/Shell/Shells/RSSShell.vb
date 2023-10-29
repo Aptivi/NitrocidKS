@@ -93,7 +93,6 @@ Begin:
                             TextWriterColor.Write("[", False, ColTypes.Gray) : TextWriterColor.Write("{0}", False, ColTypes.UserName, New Uri(RSSFeedLink).Host) : TextWriterColor.Write("] > ", False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                         Else
                             Dim ParsedPromptStyle As String = ProbePlaces(RSSShellPromptStyle)
-                            ParsedPromptStyle.ConvertVTSequences
                             TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                         End If
 

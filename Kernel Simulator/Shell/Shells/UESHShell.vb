@@ -79,7 +79,7 @@ Namespace Shell.Shells
                                     Dim Done As Boolean = False
                                     Dim Commands As String() = strcommand.Split({" : "}, StringSplitOptions.RemoveEmptyEntries)
                                     For Each Command As String In Commands
-                                        Dim Parts As String() = Command.SplitEncloseDoubleQuotes(" ")
+                                        Dim Parts As String() = Command.SplitEncloseDoubleQuotes()
                                         Wdbg(DebugLevel.I, "Mod commands probing started with {0} from {1}", Command, strcommand)
                                         If ModCommands.Contains(Parts(0)) Then
                                             Done = True
@@ -121,7 +121,6 @@ Namespace Shell.Shells
             If Not String.IsNullOrWhiteSpace(ShellPromptStyle) And Not Maintenance Then
                 'Parse the shell prompt style
                 Dim ParsedPromptStyle As String = ProbePlaces(ShellPromptStyle)
-                ParsedPromptStyle.ConvertVTSequences
                 TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
             ElseIf String.IsNullOrWhiteSpace(ShellPromptStyle) And Not Maintenance Then
                 'Write the user dollar sign using the two styles, depending on the permission of the user

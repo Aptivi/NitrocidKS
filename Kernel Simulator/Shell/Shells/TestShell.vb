@@ -50,7 +50,6 @@ Namespace Shell.Shells
                         TextWriterColor.Write("(t)> ", False, ColTypes.Input)
                     Else
                         Dim ParsedPromptStyle As String = ProbePlaces(Test_PromptStyle)
-                        ParsedPromptStyle.ConvertVTSequences
                         TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray)
                     End If
 

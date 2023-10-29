@@ -230,70 +230,82 @@ Namespace Modifications
                             End Select
 
                             'See if mod can be added to command list
+                            Dim commandInfo As CommandInfo = script.Commands(ActualCommand)
                             If Command <> "" Then
-                                If script.Commands(ActualCommand).HelpDefinition = "" Then
+                                If commandInfo.HelpDefinition = "" Then
                                     ReportProgress(DoTranslation("No definition for command {0}."), 0, ColTypes.Warning, Command)
                                     Wdbg(DebugLevel.W, "{0}.Def = Nothing, {0}.Def = ""Command defined by {1} ({2})""", Command, script.Name, script.ModPart)
-                                    script.Commands(ActualCommand).HelpDefinition = DoTranslation("Command defined by ") + script.Name + " (" + script.ModPart + ")"
+                                    commandInfo.HelpDefinition = DoTranslation("Command defined by ") + script.Name + " (" + script.ModPart + ")"
                                 End If
 
-                                Wdbg(DebugLevel.I, "Command type: {0}", script.Commands(ActualCommand).Type)
-                                Select Case script.Commands(ActualCommand).Type
+                                Wdbg(DebugLevel.I, "Command type: {0}", commandInfo.Type)
+                                Select Case commandInfo.Type
                                     Case ShellType.Shell
                                         Wdbg(DebugLevel.I, "Adding command {0} for main shell...", Command)
                                         If Not ModCommands.Contains(Command) Then ModCommands.Add(Command)
-                                        script.Commands.RenameKey(ActualCommand, Command)
-                                        ModDefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                        script.Commands.Remove(ActualCommand)
+                                        script.Commands.Add(Command, commandInfo)
+                                        If Not ModDefs.ContainsKey(Command) Then ModDefs.Add(Command, commandInfo.HelpDefinition)
                                     Case ShellType.FTPShell
                                         Wdbg(DebugLevel.I, "Adding command {0} for FTP shell...", Command)
                                         If Not FTPModCommands.Contains(Command) Then FTPModCommands.Add(Command)
-                                        script.Commands.RenameKey(ActualCommand, Command)
-                                        FTPModDefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                        script.Commands.Remove(ActualCommand)
+                                        script.Commands.Add(Command, commandInfo)
+                                        If Not FTPModDefs.ContainsKey(Command) Then FTPModDefs.Add(Command, commandInfo.HelpDefinition)
                                     Case ShellType.MailShell
                                         Wdbg(DebugLevel.I, "Adding command {0} for mail shell...", Command)
                                         If Not MailModCommands.Contains(Command) Then MailModCommands.Add(Command)
-                                        script.Commands.RenameKey(ActualCommand, Command)
-                                        MailModDefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                        script.Commands.Remove(ActualCommand)
+                                        script.Commands.Add(Command, commandInfo)
+                                        If Not MailModDefs.ContainsKey(Command) Then MailModDefs.Add(Command, commandInfo.HelpDefinition)
                                     Case ShellType.SFTPShell
                                         Wdbg(DebugLevel.I, "Adding command {0} for SFTP shell...", Command)
                                         If Not SFTPModCommands.Contains(Command) Then SFTPModCommands.Add(Command)
-                                        script.Commands.RenameKey(ActualCommand, Command)
-                                        SFTPModDefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                        script.Commands.Remove(ActualCommand)
+                                        script.Commands.Add(Command, commandInfo)
+                                        If Not SFTPModDefs.ContainsKey(Command) Then SFTPModDefs.Add(Command, commandInfo.HelpDefinition)
                                     Case ShellType.TextShell
                                         Wdbg(DebugLevel.I, "Adding command {0} for text editor shell...", Command)
                                         If Not TextEdit_ModCommands.Contains(Command) Then TextEdit_ModCommands.Add(Command)
-                                        script.Commands.RenameKey(ActualCommand, Command)
-                                        TextEdit_ModHelpEntries.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                        script.Commands.Remove(ActualCommand)
+                                        script.Commands.Add(Command, commandInfo)
+                                        If Not TextEdit_ModHelpEntries.ContainsKey(Command) Then TextEdit_ModHelpEntries.Add(Command, commandInfo.HelpDefinition)
                                     Case ShellType.TestShell
                                         Wdbg(DebugLevel.I, "Adding command {0} for test shell...", Command)
                                         If Not Test_ModCommands.Contains(Command) Then Test_ModCommands.Add(Command)
-                                        script.Commands.RenameKey(ActualCommand, Command)
-                                        TestModDefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                        script.Commands.Remove(ActualCommand)
+                                        script.Commands.Add(Command, commandInfo)
+                                        If Not TestModDefs.ContainsKey(Command) Then TestModDefs.Add(Command, commandInfo.HelpDefinition)
                                     Case ShellType.RemoteDebugShell
                                         Wdbg(DebugLevel.I, "Adding command {0} for remote debug shell...", Command)
                                         If Not DebugModCmds.Contains(Command) Then DebugModCmds.Add(Command)
-                                        script.Commands.RenameKey(ActualCommand, Command)
-                                        RDebugModDefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                        script.Commands.Remove(ActualCommand)
+                                        script.Commands.Add(Command, commandInfo)
+                                        If Not RDebugModDefs.ContainsKey(Command) Then RDebugModDefs.Add(Command, commandInfo.HelpDefinition)
                                     Case ShellType.ZIPShell
                                         Wdbg(DebugLevel.I, "Adding command {0} for ZIP shell...", Command)
                                         If Not ZipShell_ModCommands.Contains(Command) Then ZipShell_ModCommands.Add(Command)
-                                        script.Commands.RenameKey(ActualCommand, Command)
-                                        ZipShell_ModHelpEntries.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                        script.Commands.Remove(ActualCommand)
+                                        script.Commands.Add(Command, commandInfo)
+                                        If Not ZipShell_ModHelpEntries.ContainsKey(Command) Then ZipShell_ModHelpEntries.Add(Command, commandInfo.HelpDefinition)
                                     Case ShellType.RSSShell
                                         Wdbg(DebugLevel.I, "Adding command {0} for RSS shell...", Command)
                                         If Not RSSModCommands.Contains(Command) Then RSSModCommands.Add(Command)
-                                        script.Commands.RenameKey(ActualCommand, Command)
-                                        RSSModDefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                        script.Commands.Remove(ActualCommand)
+                                        script.Commands.Add(Command, commandInfo)
+                                        If Not RSSModDefs.ContainsKey(Command) Then RSSModDefs.Add(Command, commandInfo.HelpDefinition)
                                     Case ShellType.JsonShell
                                         Wdbg(DebugLevel.I, "Adding command {0} for JSON shell...", Command)
                                         If Not JsonShell_ModCommands.Contains(Command) Then JsonShell_ModCommands.Add(Command)
-                                        script.Commands.RenameKey(ActualCommand, Command)
-                                        JsonShell_ModDefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                        script.Commands.Remove(ActualCommand)
+                                        script.Commands.Add(Command, commandInfo)
+                                        If Not JsonShell_ModDefs.ContainsKey(Command) Then JsonShell_ModDefs.Add(Command, commandInfo.HelpDefinition)
                                     Case ShellType.HTTPShell
                                         Wdbg(DebugLevel.I, "Adding command {0} for HTTP shell...", Command)
                                         If Not HTTPModCommands.Contains(Command) Then HTTPModCommands.Add(Command)
-                                        script.Commands.RenameKey(ActualCommand, Command)
-                                        HTTPModDefs.AddIfNotFound(Command, script.Commands(Command).HelpDefinition)
+                                        script.Commands.Remove(ActualCommand)
+                                        script.Commands.Add(Command, commandInfo)
+                                        If Not HTTPModDefs.ContainsKey(Command) Then HTTPModDefs.Add(Command, commandInfo.HelpDefinition)
                                 End Select
                             End If
                         Next

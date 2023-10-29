@@ -68,7 +68,6 @@ Namespace Shell.Shells
                         TextWriterColor.Write("[", False, ColTypes.Gray) : TextWriterColor.Write("{0}{1}", False, ColTypes.UserName, Path.GetFileName(FilePath), If(TextEdit_WasTextEdited(), "*", "")) : TextWriterColor.Write("] > ", False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                     Else
                         Dim ParsedPromptStyle As String = ProbePlaces(TextEdit_PromptStyle)
-                        ParsedPromptStyle.ConvertVTSequences
                         TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                     End If
 

@@ -35,8 +35,8 @@ Imports KS.Network.SSH
 Imports KS.Network
 Imports KS.Shell
 Imports MadMilkman.Ini
-Imports Extensification.StringExts
 Imports ManagedWeatherMap.Core
+Imports KS.Misc.Text
 
 Module FivePointFive
 

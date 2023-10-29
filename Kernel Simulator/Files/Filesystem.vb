@@ -16,7 +16,6 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports Extensification.StringExts
 Imports System.IO
 Imports System.Runtime.CompilerServices
 Imports System.Text
@@ -414,7 +413,7 @@ Namespace Files
             'Replace last occurrences of current directory of path with nothing.
             If Not Source = "" Then
                 If Path.Contains(Source) And Path.AllIndexesOf(Source).Count > 1 Then
-                    Path = Manipulation.ReplaceLastOccurrence(Path, Source, "")
+                    Path = ReplaceLastOccurrence(Path, Source, "")
                 End If
             End If
             Path = IO.Path.GetFullPath(Path).Replace("\", "/")
@@ -1193,8 +1192,8 @@ Namespace Files
             'Open the file stream
             Dim NewlineStyle As FilesystemNewlineStyle = Filesystem.NewlineStyle
             Dim TextFileStream As New FileStream(TextFile, FileMode.Open, FileAccess.Read)
-            Dim CarriageReturnCode As Integer = Querying.GetAsciiCode(GetLineEndingString(FilesystemNewlineStyle.CR), 0)
-            Dim LineFeedCode As Integer = Querying.GetAsciiCode(GetLineEndingString(FilesystemNewlineStyle.LF), 0)
+            Dim CarriageReturnCode As Integer = Convert.ToInt32(GetLineEndingString(FilesystemNewlineStyle.CR)(0))
+            Dim LineFeedCode As Integer = Convert.ToInt32(GetLineEndingString(FilesystemNewlineStyle.LF)(0))
             Dim CarriageReturnSpotted As Boolean
             Dim LineFeedSpotted As Boolean
             Dim ExitOnSpotted As Boolean

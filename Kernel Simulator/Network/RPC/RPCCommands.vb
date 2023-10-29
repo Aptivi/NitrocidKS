@@ -69,7 +69,7 @@ Namespace Network.RPC
                     Wdbg(DebugLevel.I, "Command found.")
 
                     'Check the request type
-                    Dim RequestType As String = Cmd.Substring(Cmd.IndexOf(":") + 1, Finish:=Cmd.IndexOf(">"))
+                    Dim RequestType As String = Cmd.Substring(Cmd.IndexOf(":") + 1, Cmd.IndexOf(">") - (Cmd.IndexOf(":") + 1))
                     Dim ByteMsg() As Byte = {}
                     Select Case RequestType
                         Case "Shutdown", "Reboot", "RebootSafe", "Lock", "SaveScr", "Exec", "Acknowledge", "Ping"

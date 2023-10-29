@@ -68,7 +68,6 @@ Namespace Shell.Shells
                         TextWriterColor.Write("[", False, ColTypes.Gray) : TextWriterColor.Write("{0}", False, ColTypes.UserName, Mail_Authentication.UserName) : TextWriterColor.Write("|", False, ColTypes.Gray) : TextWriterColor.Write("{0}", False, ColTypes.HostName, Mail_Authentication.UserName) : TextWriterColor.Write("] ", False, ColTypes.Gray) : TextWriterColor.Write("{0} > ", False, ColTypes.Gray, IMAP_CurrentDirectory) : TextWriterColor.Write("", False, InputColor)
                     Else
                         Dim ParsedPromptStyle As String = ProbePlaces(MailShellPromptStyle)
-                        ParsedPromptStyle.ConvertVTSequences
                         TextWriterColor.Write(ParsedPromptStyle, False, ColTypes.Gray) : TextWriterColor.Write("", False, InputColor)
                     End If
 

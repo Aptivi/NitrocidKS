@@ -16,6 +16,8 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Imports System.Text
+
 Namespace Misc.Probers
     Public Module MOTDParse
 
@@ -87,7 +89,7 @@ Namespace Misc.Probers
         Public Sub ReadMOTD(MType As MessageType)
             Try
                 Dim MOTDStreamR As IO.StreamReader
-                Dim MOTDBuilder As New Text.StringBuilder
+                Dim MOTDBuilder As New StringBuilder
 
                 'Get the MOTD and MAL file path
                 MOTDFilePath = NeutralizePath(MOTDFilePath)

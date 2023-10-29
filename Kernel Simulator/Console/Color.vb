@@ -77,7 +77,7 @@ Namespace ConsoleBase
                 Dim ColorSpecifierArray() As String = ColorSpecifier.Split(";")
                 If ColorSpecifierArray.Length = 3 Then
                     PlainSequence = $"{ColorSpecifierArray(0)};{ColorSpecifierArray(1)};{ColorSpecifierArray(2)}"
-                    PlainSequenceEnclosed = $"{ColorSpecifierArray(0)};{ColorSpecifierArray(1)};{ColorSpecifierArray(2)}".EncloseByDoubleQuotes
+                    PlainSequenceEnclosed = $"""{ColorSpecifierArray(0)};{ColorSpecifierArray(1)};{ColorSpecifierArray(2)}"""
                     VTSequenceForeground = GetEsc() + $"[38;2;{PlainSequence}m"
                     VTSequenceBackground = GetEsc() + $"[48;2;{PlainSequence}m"
                     Type = ColorType.TrueColor
@@ -116,7 +116,7 @@ Namespace ConsoleBase
         ''' <exception cref="Exceptions.ColorException"></exception>
         Public Sub New(R As Integer, G As Integer, B As Integer)
             PlainSequence = $"{R};{G};{B}"
-            PlainSequenceEnclosed = $"{R};{G};{B}".EncloseByDoubleQuotes
+            PlainSequenceEnclosed = $"""{R};{G};{B}"""
             VTSequenceForeground = GetEsc() + $"[38;2;{PlainSequence}m"
             VTSequenceBackground = GetEsc() + $"[48;2;{PlainSequence}m"
             Type = ColorType.TrueColor

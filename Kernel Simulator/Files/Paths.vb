@@ -47,25 +47,28 @@ Namespace Files
 
         'Variables
         Friend KernelPaths As New Dictionary(Of String, String)
+        Friend pathsInitialized As Boolean = False
 
         ''' <summary>
         ''' Initializes the paths
         ''' </summary>
         Sub InitPaths()
-            KernelPaths.AddIfNotFound("Mods", HomePath + "/KSMods/")
-            KernelPaths.AddIfNotFound("Configuration", HomePath + "/KernelConfig.json")
-            KernelPaths.AddIfNotFound("Debugging", HomePath + "/kernelDbg.log")
-            KernelPaths.AddIfNotFound("Aliases", HomePath + "/Aliases.json")
-            KernelPaths.AddIfNotFound("Users", HomePath + "/Users.json")
-            KernelPaths.AddIfNotFound("FTPSpeedDial", HomePath + "/FTP_SpeedDial.json")
-            KernelPaths.AddIfNotFound("SFTPSpeedDial", HomePath + "/SFTP_SpeedDial.json")
-            KernelPaths.AddIfNotFound("DebugDevNames", HomePath + "/DebugDeviceNames.json")
-            KernelPaths.AddIfNotFound("MOTD", HomePath + "/MOTD.txt")
-            KernelPaths.AddIfNotFound("MAL", HomePath + "/MAL.txt")
-            KernelPaths.AddIfNotFound("CustomSaverSettings", HomePath + "/CustomSaverSettings.json")
-            KernelPaths.AddIfNotFound("Events", HomePath + "/KSEvents/")
-            KernelPaths.AddIfNotFound("Reminders", HomePath + "/KSReminders/")
-            KernelPaths.AddIfNotFound("CustomLanguages", HomePath + "/KSLanguages/")
+            If pathsInitialized Then Return
+            KernelPaths.Add("Mods", HomePath + "/KSMods/")
+            KernelPaths.Add("Configuration", HomePath + "/KernelConfig.json")
+            KernelPaths.Add("Debugging", HomePath + "/kernelDbg.log")
+            KernelPaths.Add("Aliases", HomePath + "/Aliases.json")
+            KernelPaths.Add("Users", HomePath + "/Users.json")
+            KernelPaths.Add("FTPSpeedDial", HomePath + "/FTP_SpeedDial.json")
+            KernelPaths.Add("SFTPSpeedDial", HomePath + "/SFTP_SpeedDial.json")
+            KernelPaths.Add("DebugDevNames", HomePath + "/DebugDeviceNames.json")
+            KernelPaths.Add("MOTD", HomePath + "/MOTD.txt")
+            KernelPaths.Add("MAL", HomePath + "/MAL.txt")
+            KernelPaths.Add("CustomSaverSettings", HomePath + "/CustomSaverSettings.json")
+            KernelPaths.Add("Events", HomePath + "/KSEvents/")
+            KernelPaths.Add("Reminders", HomePath + "/KSReminders/")
+            KernelPaths.Add("CustomLanguages", HomePath + "/KSLanguages/")
+            pathsInitialized = True
         End Sub
 
         ''' <summary>
