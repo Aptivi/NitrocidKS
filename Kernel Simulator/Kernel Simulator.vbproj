@@ -31,21 +31,6 @@
     <!-- Repository set up -->
     <RepositoryUrl>https://github.com/Aptivi/NitrocidKS.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <!-- Dependencies set up -->
-    <Dependencies>
-      <dependency id="MadMilkman.Ini" version="1.0.6.0" />
-      <dependency id="FluentFTP" version="37.0.0" />
-      <dependency id="Newtonsoft.Json" version="13.0.1" />
-      <dependency id="SSH.NET" version="2020.0.1" />
-      <dependency id="MailKit" version="3.1.1" />
-      <dependency id="Extensification" version="2021.9.1" />
-      <dependency id="Inxi.NET" version="2022.1.0.2" />
-      <dependency id="HtmlAgilityPack" version="1.11.42" />
-      <dependency id="Crc32.NET" version="1.2.0" />
-      <dependency id="Figgle" version="0.4.0" />
-      <dependency id="ManagedWeatherMap" version="1.0.0" />
-      <dependency id="Addresstigator" version="0.1.0.1" />
-    </Dependencies>
     <!-- KS Nuget Information End -->
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
@@ -133,6 +118,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="SemanVer" Version="1.1.1" />
     <PackageReference Include="SSH.NET">
       <Version>2023.0.0</Version>
     </PackageReference>

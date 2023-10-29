@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports Newtonsoft.Json.Linq
+Imports SemanVer.Instance
 
 Namespace Kernel
     Public Class KernelUpdate
@@ -24,7 +25,7 @@ Namespace Kernel
         ''' <summary>
         ''' Updated kernel version
         ''' </summary>
-        Public ReadOnly Property UpdateVersion As Version
+        Public ReadOnly Property UpdateVersion As SemVer
         ''' <summary>
         ''' Update file URL
         ''' </summary>
@@ -39,8 +40,15 @@ Namespace Kernel
         ''' </summary>
         ''' <param name="UpdateToken">The kernel update token</param>
         Protected Friend Sub New(UpdateToken As JToken)
-            Dim UpdateVer As New Version(UpdateToken.First.SelectToken("tag_name").ToString.ReplaceAll({"v", "-alpha", "-beta"}, ""))
-            Dim CurrentVer As New Version(KernelVersion)
+            Dim tagName As String = UpdateToken.First.SelectToken("tag_name").ToString()
+            tagName = If(tagName.StartsWith("v"), tagName.Substring(1), tagName)
+            Dim UpdateVer As SemVer = Nothing
+            If tagName.Split(".").Length > 3 Then
+                UpdateVer = SemVer.ParseWithRev(tagName)
+            Else
+                UpdateVer = SemVer.Parse(tagName)
+            End If
+            Dim CurrentVer As SemVer = SemVer.Parse(KernelVersion)
             Dim UpdateURL = ""
             For Each asset In UpdateToken.SelectToken("assets")
                 Dim url = CStr(asset("browser_download_url"))
