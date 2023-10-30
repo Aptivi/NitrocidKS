@@ -37219,22 +37219,22 @@ references:
   isSpec: "True"
   fullName: KS.Network.Base.Connections.NetworkConnectionTools.GetNetworkConnections
   nameWithType: NetworkConnectionTools.GetNetworkConnections
-- uid: KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(KS.Shell.ShellBase.Shells.ShellType,System.Func{System.String,KS.Network.Base.Connections.NetworkConnection},System.Func{System.String,KS.Network.SpeedDial.SpeedDialEntry,KS.Network.Base.Connections.NetworkConnection},System.String)
+- uid: KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(KS.Shell.ShellBase.Shells.ShellType,System.Func{System.String,KS.Network.Base.Connections.NetworkConnection},System.Func{System.String,KS.Network.Base.SpeedDial.SpeedDialEntry,KS.Network.Base.Connections.NetworkConnection},System.String)
   name: OpenConnectionForShell(ShellType, Func<string, NetworkConnection>, Func<string, SpeedDialEntry, NetworkConnection>, string)
-  href: api/KS.Network.Base.Connections.NetworkConnectionTools.html#KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_KS_Shell_ShellBase_Shells_ShellType_System_Func_System_String_KS_Network_Base_Connections_NetworkConnection__System_Func_System_String_KS_Network_SpeedDial_SpeedDialEntry_KS_Network_Base_Connections_NetworkConnection__System_String_
-  commentId: M:KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(KS.Shell.ShellBase.Shells.ShellType,System.Func{System.String,KS.Network.Base.Connections.NetworkConnection},System.Func{System.String,KS.Network.SpeedDial.SpeedDialEntry,KS.Network.Base.Connections.NetworkConnection},System.String)
+  href: api/KS.Network.Base.Connections.NetworkConnectionTools.html#KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_KS_Shell_ShellBase_Shells_ShellType_System_Func_System_String_KS_Network_Base_Connections_NetworkConnection__System_Func_System_String_KS_Network_Base_SpeedDial_SpeedDialEntry_KS_Network_Base_Connections_NetworkConnection__System_String_
+  commentId: M:KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(KS.Shell.ShellBase.Shells.ShellType,System.Func{System.String,KS.Network.Base.Connections.NetworkConnection},System.Func{System.String,KS.Network.Base.SpeedDial.SpeedDialEntry,KS.Network.Base.Connections.NetworkConnection},System.String)
   name.vb: OpenConnectionForShell(ShellType, Func(Of String, NetworkConnection), Func(Of String, SpeedDialEntry, NetworkConnection), String)
-  fullName: KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(KS.Shell.ShellBase.Shells.ShellType, System.Func<string, KS.Network.Base.Connections.NetworkConnection>, System.Func<string, KS.Network.SpeedDial.SpeedDialEntry, KS.Network.Base.Connections.NetworkConnection>, string)
-  fullName.vb: KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(KS.Shell.ShellBase.Shells.ShellType, System.Func(Of String, KS.Network.Base.Connections.NetworkConnection), System.Func(Of String, KS.Network.SpeedDial.SpeedDialEntry, KS.Network.Base.Connections.NetworkConnection), String)
+  fullName: KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(KS.Shell.ShellBase.Shells.ShellType, System.Func<string, KS.Network.Base.Connections.NetworkConnection>, System.Func<string, KS.Network.Base.SpeedDial.SpeedDialEntry, KS.Network.Base.Connections.NetworkConnection>, string)
+  fullName.vb: KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(KS.Shell.ShellBase.Shells.ShellType, System.Func(Of String, KS.Network.Base.Connections.NetworkConnection), System.Func(Of String, KS.Network.Base.SpeedDial.SpeedDialEntry, KS.Network.Base.Connections.NetworkConnection), String)
   nameWithType: NetworkConnectionTools.OpenConnectionForShell(ShellType, Func<string, NetworkConnection>, Func<string, SpeedDialEntry, NetworkConnection>, string)
   nameWithType.vb: NetworkConnectionTools.OpenConnectionForShell(ShellType, Func(Of String, NetworkConnection), Func(Of String, SpeedDialEntry, NetworkConnection), String)
-- uid: KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(System.String,System.Func{System.String,KS.Network.Base.Connections.NetworkConnection},System.Func{System.String,KS.Network.SpeedDial.SpeedDialEntry,KS.Network.Base.Connections.NetworkConnection},System.String)
+- uid: KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(System.String,System.Func{System.String,KS.Network.Base.Connections.NetworkConnection},System.Func{System.String,KS.Network.Base.SpeedDial.SpeedDialEntry,KS.Network.Base.Connections.NetworkConnection},System.String)
   name: OpenConnectionForShell(string, Func<string, NetworkConnection>, Func<string, SpeedDialEntry, NetworkConnection>, string)
-  href: api/KS.Network.Base.Connections.NetworkConnectionTools.html#KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_System_String_System_Func_System_String_KS_Network_Base_Connections_NetworkConnection__System_Func_System_String_KS_Network_SpeedDial_SpeedDialEntry_KS_Network_Base_Connections_NetworkConnection__System_String_
-  commentId: M:KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(System.String,System.Func{System.String,KS.Network.Base.Connections.NetworkConnection},System.Func{System.String,KS.Network.SpeedDial.SpeedDialEntry,KS.Network.Base.Connections.NetworkConnection},System.String)
+  href: api/KS.Network.Base.Connections.NetworkConnectionTools.html#KS_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_System_String_System_Func_System_String_KS_Network_Base_Connections_NetworkConnection__System_Func_System_String_KS_Network_Base_SpeedDial_SpeedDialEntry_KS_Network_Base_Connections_NetworkConnection__System_String_
+  commentId: M:KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(System.String,System.Func{System.String,KS.Network.Base.Connections.NetworkConnection},System.Func{System.String,KS.Network.Base.SpeedDial.SpeedDialEntry,KS.Network.Base.Connections.NetworkConnection},System.String)
   name.vb: OpenConnectionForShell(String, Func(Of String, NetworkConnection), Func(Of String, SpeedDialEntry, NetworkConnection), String)
-  fullName: KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(string, System.Func<string, KS.Network.Base.Connections.NetworkConnection>, System.Func<string, KS.Network.SpeedDial.SpeedDialEntry, KS.Network.Base.Connections.NetworkConnection>, string)
-  fullName.vb: KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(String, System.Func(Of String, KS.Network.Base.Connections.NetworkConnection), System.Func(Of String, KS.Network.SpeedDial.SpeedDialEntry, KS.Network.Base.Connections.NetworkConnection), String)
+  fullName: KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(string, System.Func<string, KS.Network.Base.Connections.NetworkConnection>, System.Func<string, KS.Network.Base.SpeedDial.SpeedDialEntry, KS.Network.Base.Connections.NetworkConnection>, string)
+  fullName.vb: KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(String, System.Func(Of String, KS.Network.Base.Connections.NetworkConnection), System.Func(Of String, KS.Network.Base.SpeedDial.SpeedDialEntry, KS.Network.Base.Connections.NetworkConnection), String)
   nameWithType: NetworkConnectionTools.OpenConnectionForShell(string, Func<string, NetworkConnection>, Func<string, SpeedDialEntry, NetworkConnection>, string)
   nameWithType.vb: NetworkConnectionTools.OpenConnectionForShell(String, Func(Of String, NetworkConnection), Func(Of String, SpeedDialEntry, NetworkConnection), String)
 - uid: KS.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell*
@@ -37519,6 +37519,230 @@ references:
   isSpec: "True"
   fullName: KS.Network.Base.NetworkTools.UploadRetries
   nameWithType: NetworkTools.UploadRetries
+- uid: KS.Network.Base.SpeedDial
+  name: KS.Network.Base.SpeedDial
+  href: api/KS.Network.Base.SpeedDial.html
+  commentId: N:KS.Network.Base.SpeedDial
+  fullName: KS.Network.Base.SpeedDial
+  nameWithType: KS.Network.Base.SpeedDial
+- uid: KS.Network.Base.SpeedDial.SpeedDialEntry
+  name: SpeedDialEntry
+  href: api/KS.Network.Base.SpeedDial.SpeedDialEntry.html
+  commentId: T:KS.Network.Base.SpeedDial.SpeedDialEntry
+  fullName: KS.Network.Base.SpeedDial.SpeedDialEntry
+  nameWithType: SpeedDialEntry
+- uid: KS.Network.Base.SpeedDial.SpeedDialEntry.Address
+  name: Address
+  href: api/KS.Network.Base.SpeedDial.SpeedDialEntry.html#KS_Network_Base_SpeedDial_SpeedDialEntry_Address
+  commentId: P:KS.Network.Base.SpeedDial.SpeedDialEntry.Address
+  fullName: KS.Network.Base.SpeedDial.SpeedDialEntry.Address
+  nameWithType: SpeedDialEntry.Address
+- uid: KS.Network.Base.SpeedDial.SpeedDialEntry.Address*
+  name: Address
+  href: api/KS.Network.Base.SpeedDial.SpeedDialEntry.html#KS_Network_Base_SpeedDial_SpeedDialEntry_Address_
+  commentId: Overload:KS.Network.Base.SpeedDial.SpeedDialEntry.Address
+  isSpec: "True"
+  fullName: KS.Network.Base.SpeedDial.SpeedDialEntry.Address
+  nameWithType: SpeedDialEntry.Address
+- uid: KS.Network.Base.SpeedDial.SpeedDialEntry.Options
+  name: Options
+  href: api/KS.Network.Base.SpeedDial.SpeedDialEntry.html#KS_Network_Base_SpeedDial_SpeedDialEntry_Options
+  commentId: P:KS.Network.Base.SpeedDial.SpeedDialEntry.Options
+  fullName: KS.Network.Base.SpeedDial.SpeedDialEntry.Options
+  nameWithType: SpeedDialEntry.Options
+- uid: KS.Network.Base.SpeedDial.SpeedDialEntry.Options*
+  name: Options
+  href: api/KS.Network.Base.SpeedDial.SpeedDialEntry.html#KS_Network_Base_SpeedDial_SpeedDialEntry_Options_
+  commentId: Overload:KS.Network.Base.SpeedDial.SpeedDialEntry.Options
+  isSpec: "True"
+  fullName: KS.Network.Base.SpeedDial.SpeedDialEntry.Options
+  nameWithType: SpeedDialEntry.Options
+- uid: KS.Network.Base.SpeedDial.SpeedDialEntry.Port
+  name: Port
+  href: api/KS.Network.Base.SpeedDial.SpeedDialEntry.html#KS_Network_Base_SpeedDial_SpeedDialEntry_Port
+  commentId: P:KS.Network.Base.SpeedDial.SpeedDialEntry.Port
+  fullName: KS.Network.Base.SpeedDial.SpeedDialEntry.Port
+  nameWithType: SpeedDialEntry.Port
+- uid: KS.Network.Base.SpeedDial.SpeedDialEntry.Port*
+  name: Port
+  href: api/KS.Network.Base.SpeedDial.SpeedDialEntry.html#KS_Network_Base_SpeedDial_SpeedDialEntry_Port_
+  commentId: Overload:KS.Network.Base.SpeedDial.SpeedDialEntry.Port
+  isSpec: "True"
+  fullName: KS.Network.Base.SpeedDial.SpeedDialEntry.Port
+  nameWithType: SpeedDialEntry.Port
+- uid: KS.Network.Base.SpeedDial.SpeedDialEntry.Type
+  name: Type
+  href: api/KS.Network.Base.SpeedDial.SpeedDialEntry.html#KS_Network_Base_SpeedDial_SpeedDialEntry_Type
+  commentId: P:KS.Network.Base.SpeedDial.SpeedDialEntry.Type
+  fullName: KS.Network.Base.SpeedDial.SpeedDialEntry.Type
+  nameWithType: SpeedDialEntry.Type
+- uid: KS.Network.Base.SpeedDial.SpeedDialEntry.Type*
+  name: Type
+  href: api/KS.Network.Base.SpeedDial.SpeedDialEntry.html#KS_Network_Base_SpeedDial_SpeedDialEntry_Type_
+  commentId: Overload:KS.Network.Base.SpeedDial.SpeedDialEntry.Type
+  isSpec: "True"
+  fullName: KS.Network.Base.SpeedDial.SpeedDialEntry.Type
+  nameWithType: SpeedDialEntry.Type
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools
+  name: SpeedDialTools
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html
+  commentId: T:KS.Network.Base.SpeedDial.SpeedDialTools
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools
+  nameWithType: SpeedDialTools
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType,System.Boolean,System.Object[])
+  name: AddEntryToSpeedDial(string, int, NetworkConnectionType, bool, params object[])
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_System_String_System_Int32_KS_Network_Base_Connections_NetworkConnectionType_System_Boolean_System_Object___
+  commentId: M:KS.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType,System.Boolean,System.Object[])
+  name.vb: AddEntryToSpeedDial(String, Integer, NetworkConnectionType, Boolean, ParamArray Object())
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(string, int, KS.Network.Base.Connections.NetworkConnectionType, bool, params object[])
+  fullName.vb: KS.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(String, Integer, KS.Network.Base.Connections.NetworkConnectionType, Boolean, ParamArray Object())
+  nameWithType: SpeedDialTools.AddEntryToSpeedDial(string, int, NetworkConnectionType, bool, params object[])
+  nameWithType.vb: SpeedDialTools.AddEntryToSpeedDial(String, Integer, NetworkConnectionType, Boolean, ParamArray Object())
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
+  name: AddEntryToSpeedDial(string, int, string, bool, params object[])
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_System_String_System_Int32_System_String_System_Boolean_System_Object___
+  commentId: M:KS.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
+  name.vb: AddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(string, int, string, bool, params object[])
+  fullName.vb: KS.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
+  nameWithType: SpeedDialTools.AddEntryToSpeedDial(string, int, string, bool, params object[])
+  nameWithType.vb: SpeedDialTools.AddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial*
+  name: AddEntryToSpeedDial
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_
+  commentId: Overload:KS.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial
+  isSpec: "True"
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial
+  nameWithType: SpeedDialTools.AddEntryToSpeedDial
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType)
+  name: GetSpeedDialEntry(string, int, NetworkConnectionType)
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_KS_Network_Base_Connections_NetworkConnectionType_
+  commentId: M:KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType)
+  name.vb: GetSpeedDialEntry(String, Integer, NetworkConnectionType)
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, KS.Network.Base.Connections.NetworkConnectionType)
+  fullName.vb: KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, KS.Network.Base.Connections.NetworkConnectionType)
+  nameWithType: SpeedDialTools.GetSpeedDialEntry(string, int, NetworkConnectionType)
+  nameWithType.vb: SpeedDialTools.GetSpeedDialEntry(String, Integer, NetworkConnectionType)
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType,System.Object[])
+  name: GetSpeedDialEntry(string, int, NetworkConnectionType, object[])
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_KS_Network_Base_Connections_NetworkConnectionType_System_Object___
+  commentId: M:KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType,System.Object[])
+  name.vb: GetSpeedDialEntry(String, Integer, NetworkConnectionType, Object())
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, KS.Network.Base.Connections.NetworkConnectionType, object[])
+  fullName.vb: KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, KS.Network.Base.Connections.NetworkConnectionType, Object())
+  nameWithType: SpeedDialTools.GetSpeedDialEntry(string, int, NetworkConnectionType, object[])
+  nameWithType.vb: SpeedDialTools.GetSpeedDialEntry(String, Integer, NetworkConnectionType, Object())
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String)
+  name: GetSpeedDialEntry(string, int, string)
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_System_String_
+  commentId: M:KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String)
+  name.vb: GetSpeedDialEntry(String, Integer, String)
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, string)
+  fullName.vb: KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, String)
+  nameWithType: SpeedDialTools.GetSpeedDialEntry(string, int, string)
+  nameWithType.vb: SpeedDialTools.GetSpeedDialEntry(String, Integer, String)
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String,System.Object[])
+  name: GetSpeedDialEntry(string, int, string, object[])
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_System_String_System_Object___
+  commentId: M:KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String,System.Object[])
+  name.vb: GetSpeedDialEntry(String, Integer, String, Object())
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, string, object[])
+  fullName.vb: KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, String, Object())
+  nameWithType: SpeedDialTools.GetSpeedDialEntry(string, int, string, object[])
+  nameWithType.vb: SpeedDialTools.GetSpeedDialEntry(String, Integer, String, Object())
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry*
+  name: GetSpeedDialEntry
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_GetSpeedDialEntry_
+  commentId: Overload:KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry
+  isSpec: "True"
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry
+  nameWithType: SpeedDialTools.GetSpeedDialEntry
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntries
+  name: ListSpeedDialEntries()
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_ListSpeedDialEntries
+  commentId: M:KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntries
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntries()
+  nameWithType: SpeedDialTools.ListSpeedDialEntries()
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntries*
+  name: ListSpeedDialEntries
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_ListSpeedDialEntries_
+  commentId: Overload:KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntries
+  isSpec: "True"
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntries
+  nameWithType: SpeedDialTools.ListSpeedDialEntries
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(KS.Network.Base.Connections.NetworkConnectionType)
+  name: ListSpeedDialEntriesByType(NetworkConnectionType)
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_KS_Network_Base_Connections_NetworkConnectionType_
+  commentId: M:KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(KS.Network.Base.Connections.NetworkConnectionType)
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(KS.Network.Base.Connections.NetworkConnectionType)
+  nameWithType: SpeedDialTools.ListSpeedDialEntriesByType(NetworkConnectionType)
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(System.String)
+  name: ListSpeedDialEntriesByType(string)
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_System_String_
+  commentId: M:KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(System.String)
+  name.vb: ListSpeedDialEntriesByType(String)
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(string)
+  fullName.vb: KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(String)
+  nameWithType: SpeedDialTools.ListSpeedDialEntriesByType(string)
+  nameWithType.vb: SpeedDialTools.ListSpeedDialEntriesByType(String)
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType*
+  name: ListSpeedDialEntriesByType
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_
+  commentId: Overload:KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType
+  isSpec: "True"
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType
+  nameWithType: SpeedDialTools.ListSpeedDialEntriesByType
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.LoadAll
+  name: LoadAll()
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_LoadAll
+  commentId: M:KS.Network.Base.SpeedDial.SpeedDialTools.LoadAll
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.LoadAll()
+  nameWithType: SpeedDialTools.LoadAll()
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.LoadAll*
+  name: LoadAll
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_LoadAll_
+  commentId: Overload:KS.Network.Base.SpeedDial.SpeedDialTools.LoadAll
+  isSpec: "True"
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.LoadAll
+  nameWithType: SpeedDialTools.LoadAll
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.SaveAll
+  name: SaveAll()
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_SaveAll
+  commentId: M:KS.Network.Base.SpeedDial.SpeedDialTools.SaveAll
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.SaveAll()
+  nameWithType: SpeedDialTools.SaveAll()
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.SaveAll*
+  name: SaveAll
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_SaveAll_
+  commentId: Overload:KS.Network.Base.SpeedDial.SpeedDialTools.SaveAll
+  isSpec: "True"
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.SaveAll
+  nameWithType: SpeedDialTools.SaveAll
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType,System.Boolean,System.Object[])
+  name: TryAddEntryToSpeedDial(string, int, NetworkConnectionType, bool, params object[])
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_System_String_System_Int32_KS_Network_Base_Connections_NetworkConnectionType_System_Boolean_System_Object___
+  commentId: M:KS.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType,System.Boolean,System.Object[])
+  name.vb: TryAddEntryToSpeedDial(String, Integer, NetworkConnectionType, Boolean, ParamArray Object())
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(string, int, KS.Network.Base.Connections.NetworkConnectionType, bool, params object[])
+  fullName.vb: KS.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(String, Integer, KS.Network.Base.Connections.NetworkConnectionType, Boolean, ParamArray Object())
+  nameWithType: SpeedDialTools.TryAddEntryToSpeedDial(string, int, NetworkConnectionType, bool, params object[])
+  nameWithType.vb: SpeedDialTools.TryAddEntryToSpeedDial(String, Integer, NetworkConnectionType, Boolean, ParamArray Object())
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
+  name: TryAddEntryToSpeedDial(string, int, string, bool, params object[])
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_System_String_System_Int32_System_String_System_Boolean_System_Object___
+  commentId: M:KS.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
+  name.vb: TryAddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(string, int, string, bool, params object[])
+  fullName.vb: KS.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
+  nameWithType: SpeedDialTools.TryAddEntryToSpeedDial(string, int, string, bool, params object[])
+  nameWithType.vb: SpeedDialTools.TryAddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
+- uid: KS.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial*
+  name: TryAddEntryToSpeedDial
+  href: api/KS.Network.Base.SpeedDial.SpeedDialTools.html#KS_Network_Base_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_
+  commentId: Overload:KS.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial
+  isSpec: "True"
+  fullName: KS.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial
+  nameWithType: SpeedDialTools.TryAddEntryToSpeedDial
 - uid: KS.Network.Base.Transfer
   name: KS.Network.Base.Transfer
   href: api/KS.Network.Base.Transfer.html
@@ -39453,230 +39677,6 @@ references:
   isSpec: "True"
   fullName: KS.Network.SSH.SSHTools.SSHBanner
   nameWithType: SSHTools.SSHBanner
-- uid: KS.Network.SpeedDial
-  name: KS.Network.SpeedDial
-  href: api/KS.Network.SpeedDial.html
-  commentId: N:KS.Network.SpeedDial
-  fullName: KS.Network.SpeedDial
-  nameWithType: KS.Network.SpeedDial
-- uid: KS.Network.SpeedDial.SpeedDialEntry
-  name: SpeedDialEntry
-  href: api/KS.Network.SpeedDial.SpeedDialEntry.html
-  commentId: T:KS.Network.SpeedDial.SpeedDialEntry
-  fullName: KS.Network.SpeedDial.SpeedDialEntry
-  nameWithType: SpeedDialEntry
-- uid: KS.Network.SpeedDial.SpeedDialEntry.Address
-  name: Address
-  href: api/KS.Network.SpeedDial.SpeedDialEntry.html#KS_Network_SpeedDial_SpeedDialEntry_Address
-  commentId: P:KS.Network.SpeedDial.SpeedDialEntry.Address
-  fullName: KS.Network.SpeedDial.SpeedDialEntry.Address
-  nameWithType: SpeedDialEntry.Address
-- uid: KS.Network.SpeedDial.SpeedDialEntry.Address*
-  name: Address
-  href: api/KS.Network.SpeedDial.SpeedDialEntry.html#KS_Network_SpeedDial_SpeedDialEntry_Address_
-  commentId: Overload:KS.Network.SpeedDial.SpeedDialEntry.Address
-  isSpec: "True"
-  fullName: KS.Network.SpeedDial.SpeedDialEntry.Address
-  nameWithType: SpeedDialEntry.Address
-- uid: KS.Network.SpeedDial.SpeedDialEntry.Options
-  name: Options
-  href: api/KS.Network.SpeedDial.SpeedDialEntry.html#KS_Network_SpeedDial_SpeedDialEntry_Options
-  commentId: P:KS.Network.SpeedDial.SpeedDialEntry.Options
-  fullName: KS.Network.SpeedDial.SpeedDialEntry.Options
-  nameWithType: SpeedDialEntry.Options
-- uid: KS.Network.SpeedDial.SpeedDialEntry.Options*
-  name: Options
-  href: api/KS.Network.SpeedDial.SpeedDialEntry.html#KS_Network_SpeedDial_SpeedDialEntry_Options_
-  commentId: Overload:KS.Network.SpeedDial.SpeedDialEntry.Options
-  isSpec: "True"
-  fullName: KS.Network.SpeedDial.SpeedDialEntry.Options
-  nameWithType: SpeedDialEntry.Options
-- uid: KS.Network.SpeedDial.SpeedDialEntry.Port
-  name: Port
-  href: api/KS.Network.SpeedDial.SpeedDialEntry.html#KS_Network_SpeedDial_SpeedDialEntry_Port
-  commentId: P:KS.Network.SpeedDial.SpeedDialEntry.Port
-  fullName: KS.Network.SpeedDial.SpeedDialEntry.Port
-  nameWithType: SpeedDialEntry.Port
-- uid: KS.Network.SpeedDial.SpeedDialEntry.Port*
-  name: Port
-  href: api/KS.Network.SpeedDial.SpeedDialEntry.html#KS_Network_SpeedDial_SpeedDialEntry_Port_
-  commentId: Overload:KS.Network.SpeedDial.SpeedDialEntry.Port
-  isSpec: "True"
-  fullName: KS.Network.SpeedDial.SpeedDialEntry.Port
-  nameWithType: SpeedDialEntry.Port
-- uid: KS.Network.SpeedDial.SpeedDialEntry.Type
-  name: Type
-  href: api/KS.Network.SpeedDial.SpeedDialEntry.html#KS_Network_SpeedDial_SpeedDialEntry_Type
-  commentId: P:KS.Network.SpeedDial.SpeedDialEntry.Type
-  fullName: KS.Network.SpeedDial.SpeedDialEntry.Type
-  nameWithType: SpeedDialEntry.Type
-- uid: KS.Network.SpeedDial.SpeedDialEntry.Type*
-  name: Type
-  href: api/KS.Network.SpeedDial.SpeedDialEntry.html#KS_Network_SpeedDial_SpeedDialEntry_Type_
-  commentId: Overload:KS.Network.SpeedDial.SpeedDialEntry.Type
-  isSpec: "True"
-  fullName: KS.Network.SpeedDial.SpeedDialEntry.Type
-  nameWithType: SpeedDialEntry.Type
-- uid: KS.Network.SpeedDial.SpeedDialTools
-  name: SpeedDialTools
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html
-  commentId: T:KS.Network.SpeedDial.SpeedDialTools
-  fullName: KS.Network.SpeedDial.SpeedDialTools
-  nameWithType: SpeedDialTools
-- uid: KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType,System.Boolean,System.Object[])
-  name: AddEntryToSpeedDial(string, int, NetworkConnectionType, bool, params object[])
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_System_String_System_Int32_KS_Network_Base_Connections_NetworkConnectionType_System_Boolean_System_Object___
-  commentId: M:KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType,System.Boolean,System.Object[])
-  name.vb: AddEntryToSpeedDial(String, Integer, NetworkConnectionType, Boolean, ParamArray Object())
-  fullName: KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(string, int, KS.Network.Base.Connections.NetworkConnectionType, bool, params object[])
-  fullName.vb: KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(String, Integer, KS.Network.Base.Connections.NetworkConnectionType, Boolean, ParamArray Object())
-  nameWithType: SpeedDialTools.AddEntryToSpeedDial(string, int, NetworkConnectionType, bool, params object[])
-  nameWithType.vb: SpeedDialTools.AddEntryToSpeedDial(String, Integer, NetworkConnectionType, Boolean, ParamArray Object())
-- uid: KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
-  name: AddEntryToSpeedDial(string, int, string, bool, params object[])
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_System_String_System_Int32_System_String_System_Boolean_System_Object___
-  commentId: M:KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
-  name.vb: AddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
-  fullName: KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(string, int, string, bool, params object[])
-  fullName.vb: KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
-  nameWithType: SpeedDialTools.AddEntryToSpeedDial(string, int, string, bool, params object[])
-  nameWithType.vb: SpeedDialTools.AddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
-- uid: KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial*
-  name: AddEntryToSpeedDial
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_
-  commentId: Overload:KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial
-  isSpec: "True"
-  fullName: KS.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial
-  nameWithType: SpeedDialTools.AddEntryToSpeedDial
-- uid: KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType)
-  name: GetSpeedDialEntry(string, int, NetworkConnectionType)
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_KS_Network_Base_Connections_NetworkConnectionType_
-  commentId: M:KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType)
-  name.vb: GetSpeedDialEntry(String, Integer, NetworkConnectionType)
-  fullName: KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, KS.Network.Base.Connections.NetworkConnectionType)
-  fullName.vb: KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, KS.Network.Base.Connections.NetworkConnectionType)
-  nameWithType: SpeedDialTools.GetSpeedDialEntry(string, int, NetworkConnectionType)
-  nameWithType.vb: SpeedDialTools.GetSpeedDialEntry(String, Integer, NetworkConnectionType)
-- uid: KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType,System.Object[])
-  name: GetSpeedDialEntry(string, int, NetworkConnectionType, object[])
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_KS_Network_Base_Connections_NetworkConnectionType_System_Object___
-  commentId: M:KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType,System.Object[])
-  name.vb: GetSpeedDialEntry(String, Integer, NetworkConnectionType, Object())
-  fullName: KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, KS.Network.Base.Connections.NetworkConnectionType, object[])
-  fullName.vb: KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, KS.Network.Base.Connections.NetworkConnectionType, Object())
-  nameWithType: SpeedDialTools.GetSpeedDialEntry(string, int, NetworkConnectionType, object[])
-  nameWithType.vb: SpeedDialTools.GetSpeedDialEntry(String, Integer, NetworkConnectionType, Object())
-- uid: KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String)
-  name: GetSpeedDialEntry(string, int, string)
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_System_String_
-  commentId: M:KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String)
-  name.vb: GetSpeedDialEntry(String, Integer, String)
-  fullName: KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, string)
-  fullName.vb: KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, String)
-  nameWithType: SpeedDialTools.GetSpeedDialEntry(string, int, string)
-  nameWithType.vb: SpeedDialTools.GetSpeedDialEntry(String, Integer, String)
-- uid: KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String,System.Object[])
-  name: GetSpeedDialEntry(string, int, string, object[])
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_System_String_System_Object___
-  commentId: M:KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String,System.Object[])
-  name.vb: GetSpeedDialEntry(String, Integer, String, Object())
-  fullName: KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, string, object[])
-  fullName.vb: KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, String, Object())
-  nameWithType: SpeedDialTools.GetSpeedDialEntry(string, int, string, object[])
-  nameWithType.vb: SpeedDialTools.GetSpeedDialEntry(String, Integer, String, Object())
-- uid: KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry*
-  name: GetSpeedDialEntry
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_GetSpeedDialEntry_
-  commentId: Overload:KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry
-  isSpec: "True"
-  fullName: KS.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry
-  nameWithType: SpeedDialTools.GetSpeedDialEntry
-- uid: KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntries
-  name: ListSpeedDialEntries()
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_ListSpeedDialEntries
-  commentId: M:KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntries
-  fullName: KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntries()
-  nameWithType: SpeedDialTools.ListSpeedDialEntries()
-- uid: KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntries*
-  name: ListSpeedDialEntries
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_ListSpeedDialEntries_
-  commentId: Overload:KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntries
-  isSpec: "True"
-  fullName: KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntries
-  nameWithType: SpeedDialTools.ListSpeedDialEntries
-- uid: KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(KS.Network.Base.Connections.NetworkConnectionType)
-  name: ListSpeedDialEntriesByType(NetworkConnectionType)
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_KS_Network_Base_Connections_NetworkConnectionType_
-  commentId: M:KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(KS.Network.Base.Connections.NetworkConnectionType)
-  fullName: KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(KS.Network.Base.Connections.NetworkConnectionType)
-  nameWithType: SpeedDialTools.ListSpeedDialEntriesByType(NetworkConnectionType)
-- uid: KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(System.String)
-  name: ListSpeedDialEntriesByType(string)
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_System_String_
-  commentId: M:KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(System.String)
-  name.vb: ListSpeedDialEntriesByType(String)
-  fullName: KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(string)
-  fullName.vb: KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(String)
-  nameWithType: SpeedDialTools.ListSpeedDialEntriesByType(string)
-  nameWithType.vb: SpeedDialTools.ListSpeedDialEntriesByType(String)
-- uid: KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType*
-  name: ListSpeedDialEntriesByType
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_
-  commentId: Overload:KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType
-  isSpec: "True"
-  fullName: KS.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType
-  nameWithType: SpeedDialTools.ListSpeedDialEntriesByType
-- uid: KS.Network.SpeedDial.SpeedDialTools.LoadAll
-  name: LoadAll()
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_LoadAll
-  commentId: M:KS.Network.SpeedDial.SpeedDialTools.LoadAll
-  fullName: KS.Network.SpeedDial.SpeedDialTools.LoadAll()
-  nameWithType: SpeedDialTools.LoadAll()
-- uid: KS.Network.SpeedDial.SpeedDialTools.LoadAll*
-  name: LoadAll
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_LoadAll_
-  commentId: Overload:KS.Network.SpeedDial.SpeedDialTools.LoadAll
-  isSpec: "True"
-  fullName: KS.Network.SpeedDial.SpeedDialTools.LoadAll
-  nameWithType: SpeedDialTools.LoadAll
-- uid: KS.Network.SpeedDial.SpeedDialTools.SaveAll
-  name: SaveAll()
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_SaveAll
-  commentId: M:KS.Network.SpeedDial.SpeedDialTools.SaveAll
-  fullName: KS.Network.SpeedDial.SpeedDialTools.SaveAll()
-  nameWithType: SpeedDialTools.SaveAll()
-- uid: KS.Network.SpeedDial.SpeedDialTools.SaveAll*
-  name: SaveAll
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_SaveAll_
-  commentId: Overload:KS.Network.SpeedDial.SpeedDialTools.SaveAll
-  isSpec: "True"
-  fullName: KS.Network.SpeedDial.SpeedDialTools.SaveAll
-  nameWithType: SpeedDialTools.SaveAll
-- uid: KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType,System.Boolean,System.Object[])
-  name: TryAddEntryToSpeedDial(string, int, NetworkConnectionType, bool, params object[])
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_System_String_System_Int32_KS_Network_Base_Connections_NetworkConnectionType_System_Boolean_System_Object___
-  commentId: M:KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,KS.Network.Base.Connections.NetworkConnectionType,System.Boolean,System.Object[])
-  name.vb: TryAddEntryToSpeedDial(String, Integer, NetworkConnectionType, Boolean, ParamArray Object())
-  fullName: KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(string, int, KS.Network.Base.Connections.NetworkConnectionType, bool, params object[])
-  fullName.vb: KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(String, Integer, KS.Network.Base.Connections.NetworkConnectionType, Boolean, ParamArray Object())
-  nameWithType: SpeedDialTools.TryAddEntryToSpeedDial(string, int, NetworkConnectionType, bool, params object[])
-  nameWithType.vb: SpeedDialTools.TryAddEntryToSpeedDial(String, Integer, NetworkConnectionType, Boolean, ParamArray Object())
-- uid: KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
-  name: TryAddEntryToSpeedDial(string, int, string, bool, params object[])
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_System_String_System_Int32_System_String_System_Boolean_System_Object___
-  commentId: M:KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
-  name.vb: TryAddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
-  fullName: KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(string, int, string, bool, params object[])
-  fullName.vb: KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
-  nameWithType: SpeedDialTools.TryAddEntryToSpeedDial(string, int, string, bool, params object[])
-  nameWithType.vb: SpeedDialTools.TryAddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
-- uid: KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial*
-  name: TryAddEntryToSpeedDial
-  href: api/KS.Network.SpeedDial.SpeedDialTools.html#KS_Network_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_
-  commentId: Overload:KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial
-  isSpec: "True"
-  fullName: KS.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial
-  nameWithType: SpeedDialTools.TryAddEntryToSpeedDial
 - uid: KS.Resources
   name: KS.Resources
   href: api/KS.Resources.html

@@ -3445,6 +3445,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Network.Base.SpeedDial.SpeedDialEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Network.Base.SpeedDial.SpeedDialEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Network.Base.SpeedDial.SpeedDialTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Network.Base.SpeedDial.SpeedDialTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Network.Base.SpeedDial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Network.Base.SpeedDial.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Network.Base.Transfer.NetworkTransfer.yml",
       "output": {
         ".html": {
@@ -3839,36 +3869,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Network.SSH.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SpeedDial.SpeedDialEntry.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SpeedDial.SpeedDialEntry.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SpeedDial.SpeedDialTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SpeedDial.SpeedDialTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Network.SpeedDial.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Network.SpeedDial.html"
         }
       },
       "version": ""
