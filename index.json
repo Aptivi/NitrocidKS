@@ -1227,7 +1227,7 @@
   "api/KS.Kernel.Time.Calendars.CalendarTools.html": {
     "href": "api/KS.Kernel.Time.Calendars.CalendarTools.html",
     "title": "Class CalendarTools | Nitrocid KS API - Aptivi",
-    "keywords": "Class CalendarTools Calendar tools Inheritance object CalendarTools Namespace: KS.Kernel.Time.Calendars Assembly: Nitrocid.dll Syntax public static class CalendarTools Methods | Edit this page View Source GetCalendar(CalendarTypes) Gets a calendar Declaration public static BaseCalendar GetCalendar(CalendarTypes type) Parameters Type Name Description CalendarTypes type Calendar type to get a calendar from Returns Type Description BaseCalendar An instance of BaseCalendar if found. Otherwise, null."
+    "keywords": "Class CalendarTools Calendar tools Inheritance object CalendarTools Namespace: KS.Kernel.Time.Calendars Assembly: Nitrocid.dll Syntax public static class CalendarTools Methods | Edit this page View Source GetCalendar(CalendarTypes) Gets a calendar Declaration public static BaseCalendar GetCalendar(CalendarTypes type) Parameters Type Name Description CalendarTypes type Calendar type to get a calendar from Returns Type Description BaseCalendar An instance of BaseCalendar if found. Otherwise, null. | Edit this page View Source GetCalendarTypeFromName(string) Gets a calendar type from the calendar type name Declaration public static CalendarTypes GetCalendarTypeFromName(string typeName) Parameters Type Name Description string typeName Type name to look up Returns Type Description CalendarTypes The resulting value of CalendarTypes"
   },
   "api/KS.Kernel.Time.Calendars.CalendarTypes.html": {
     "href": "api/KS.Kernel.Time.Calendars.CalendarTypes.html",

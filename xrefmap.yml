@@ -30078,6 +30078,22 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Time.Calendars.CalendarTools.GetCalendar
   nameWithType: CalendarTools.GetCalendar
+- uid: KS.Kernel.Time.Calendars.CalendarTools.GetCalendarTypeFromName(System.String)
+  name: GetCalendarTypeFromName(string)
+  href: api/KS.Kernel.Time.Calendars.CalendarTools.html#KS_Kernel_Time_Calendars_CalendarTools_GetCalendarTypeFromName_System_String_
+  commentId: M:KS.Kernel.Time.Calendars.CalendarTools.GetCalendarTypeFromName(System.String)
+  name.vb: GetCalendarTypeFromName(String)
+  fullName: KS.Kernel.Time.Calendars.CalendarTools.GetCalendarTypeFromName(string)
+  fullName.vb: KS.Kernel.Time.Calendars.CalendarTools.GetCalendarTypeFromName(String)
+  nameWithType: CalendarTools.GetCalendarTypeFromName(string)
+  nameWithType.vb: CalendarTools.GetCalendarTypeFromName(String)
+- uid: KS.Kernel.Time.Calendars.CalendarTools.GetCalendarTypeFromName*
+  name: GetCalendarTypeFromName
+  href: api/KS.Kernel.Time.Calendars.CalendarTools.html#KS_Kernel_Time_Calendars_CalendarTools_GetCalendarTypeFromName_
+  commentId: Overload:KS.Kernel.Time.Calendars.CalendarTools.GetCalendarTypeFromName
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Calendars.CalendarTools.GetCalendarTypeFromName
+  nameWithType: CalendarTools.GetCalendarTypeFromName
 - uid: KS.Kernel.Time.Calendars.CalendarTypes
   name: CalendarTypes
   href: api/KS.Kernel.Time.Calendars.CalendarTypes.html
