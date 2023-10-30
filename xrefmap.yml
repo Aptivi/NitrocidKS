@@ -39741,6 +39741,51 @@ references:
   isSpec: "True"
   fullName: KS.Resources.LanguageResources.eng
   nameWithType: LanguageResources.eng
+- uid: KS.Resources.SchemasResources
+  name: SchemasResources
+  href: api/KS.Resources.SchemasResources.html
+  commentId: T:KS.Resources.SchemasResources
+  fullName: KS.Resources.SchemasResources
+  nameWithType: SchemasResources
+- uid: KS.Resources.SchemasResources.Culture
+  name: Culture
+  href: api/KS.Resources.SchemasResources.html#KS_Resources_SchemasResources_Culture
+  commentId: P:KS.Resources.SchemasResources.Culture
+  fullName: KS.Resources.SchemasResources.Culture
+  nameWithType: SchemasResources.Culture
+- uid: KS.Resources.SchemasResources.Culture*
+  name: Culture
+  href: api/KS.Resources.SchemasResources.html#KS_Resources_SchemasResources_Culture_
+  commentId: Overload:KS.Resources.SchemasResources.Culture
+  isSpec: "True"
+  fullName: KS.Resources.SchemasResources.Culture
+  nameWithType: SchemasResources.Culture
+- uid: KS.Resources.SchemasResources.ResourceManager
+  name: ResourceManager
+  href: api/KS.Resources.SchemasResources.html#KS_Resources_SchemasResources_ResourceManager
+  commentId: P:KS.Resources.SchemasResources.ResourceManager
+  fullName: KS.Resources.SchemasResources.ResourceManager
+  nameWithType: SchemasResources.ResourceManager
+- uid: KS.Resources.SchemasResources.ResourceManager*
+  name: ResourceManager
+  href: api/KS.Resources.SchemasResources.html#KS_Resources_SchemasResources_ResourceManager_
+  commentId: Overload:KS.Resources.SchemasResources.ResourceManager
+  isSpec: "True"
+  fullName: KS.Resources.SchemasResources.ResourceManager
+  nameWithType: SchemasResources.ResourceManager
+- uid: KS.Resources.SchemasResources.SettingsSchema
+  name: SettingsSchema
+  href: api/KS.Resources.SchemasResources.html#KS_Resources_SchemasResources_SettingsSchema
+  commentId: P:KS.Resources.SchemasResources.SettingsSchema
+  fullName: KS.Resources.SchemasResources.SettingsSchema
+  nameWithType: SchemasResources.SettingsSchema
+- uid: KS.Resources.SchemasResources.SettingsSchema*
+  name: SettingsSchema
+  href: api/KS.Resources.SchemasResources.html#KS_Resources_SchemasResources_SettingsSchema_
+  commentId: Overload:KS.Resources.SchemasResources.SettingsSchema
+  isSpec: "True"
+  fullName: KS.Resources.SchemasResources.SettingsSchema
+  nameWithType: SchemasResources.SettingsSchema
 - uid: KS.Resources.SettingsResources
   name: SettingsResources
   href: api/KS.Resources.SettingsResources.html

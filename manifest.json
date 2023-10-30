@@ -3885,6 +3885,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Resources.SchemasResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Resources.SchemasResources.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Resources.SettingsResources.yml",
       "output": {
         ".html": {
