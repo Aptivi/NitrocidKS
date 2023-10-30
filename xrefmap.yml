@@ -30071,6 +30071,15 @@ references:
   commentId: M:KS.Kernel.Time.Calendars.CalendarTools.GetCalendar(KS.Kernel.Time.Calendars.CalendarTypes)
   fullName: KS.Kernel.Time.Calendars.CalendarTools.GetCalendar(KS.Kernel.Time.Calendars.CalendarTypes)
   nameWithType: CalendarTools.GetCalendar(CalendarTypes)
+- uid: KS.Kernel.Time.Calendars.CalendarTools.GetCalendar(System.String)
+  name: GetCalendar(string)
+  href: api/KS.Kernel.Time.Calendars.CalendarTools.html#KS_Kernel_Time_Calendars_CalendarTools_GetCalendar_System_String_
+  commentId: M:KS.Kernel.Time.Calendars.CalendarTools.GetCalendar(System.String)
+  name.vb: GetCalendar(String)
+  fullName: KS.Kernel.Time.Calendars.CalendarTools.GetCalendar(string)
+  fullName.vb: KS.Kernel.Time.Calendars.CalendarTools.GetCalendar(String)
+  nameWithType: CalendarTools.GetCalendar(string)
+  nameWithType.vb: CalendarTools.GetCalendar(String)
 - uid: KS.Kernel.Time.Calendars.CalendarTools.GetCalendar*
   name: GetCalendar
   href: api/KS.Kernel.Time.Calendars.CalendarTools.html#KS_Kernel_Time_Calendars_CalendarTools_GetCalendar_
@@ -30472,6 +30481,24 @@ references:
   fullName.vb: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(Date, KS.Kernel.Time.Calendars.CalendarTypes)
   nameWithType: TimeDateConverters.GetDateFromCalendar(DateTime, CalendarTypes)
   nameWithType.vb: TimeDateConverters.GetDateFromCalendar(Date, CalendarTypes)
+- uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(System.DateTime,System.String)
+  name: GetDateFromCalendar(DateTime, string)
+  href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateFromCalendar_System_DateTime_System_String_
+  commentId: M:KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(System.DateTime,System.String)
+  name.vb: GetDateFromCalendar(Date, String)
+  fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(System.DateTime, string)
+  fullName.vb: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(Date, String)
+  nameWithType: TimeDateConverters.GetDateFromCalendar(DateTime, string)
+  nameWithType.vb: TimeDateConverters.GetDateFromCalendar(Date, String)
+- uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(System.String)
+  name: GetDateFromCalendar(string)
+  href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateFromCalendar_System_String_
+  commentId: M:KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(System.String)
+  name.vb: GetDateFromCalendar(String)
+  fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(string)
+  fullName.vb: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar(String)
+  nameWithType: TimeDateConverters.GetDateFromCalendar(string)
+  nameWithType.vb: TimeDateConverters.GetDateFromCalendar(String)
 - uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendar*
   name: GetDateFromCalendar
   href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateFromCalendar_
@@ -30494,6 +30521,24 @@ references:
   fullName.vb: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(Date, KS.Kernel.Time.Calendars.CalendarTypes)
   nameWithType: TimeDateConverters.GetDateFromCalendarNoCulture(DateTime, CalendarTypes)
   nameWithType.vb: TimeDateConverters.GetDateFromCalendarNoCulture(Date, CalendarTypes)
+- uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(System.DateTime,System.String)
+  name: GetDateFromCalendarNoCulture(DateTime, string)
+  href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateFromCalendarNoCulture_System_DateTime_System_String_
+  commentId: M:KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(System.DateTime,System.String)
+  name.vb: GetDateFromCalendarNoCulture(Date, String)
+  fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(System.DateTime, string)
+  fullName.vb: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(Date, String)
+  nameWithType: TimeDateConverters.GetDateFromCalendarNoCulture(DateTime, string)
+  nameWithType.vb: TimeDateConverters.GetDateFromCalendarNoCulture(Date, String)
+- uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(System.String)
+  name: GetDateFromCalendarNoCulture(string)
+  href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateFromCalendarNoCulture_System_String_
+  commentId: M:KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(System.String)
+  name.vb: GetDateFromCalendarNoCulture(String)
+  fullName: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(string)
+  fullName.vb: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture(String)
+  nameWithType: TimeDateConverters.GetDateFromCalendarNoCulture(string)
+  nameWithType.vb: TimeDateConverters.GetDateFromCalendarNoCulture(String)
 - uid: KS.Kernel.Time.Converters.TimeDateConverters.GetDateFromCalendarNoCulture*
   name: GetDateFromCalendarNoCulture
   href: api/KS.Kernel.Time.Converters.TimeDateConverters.html#KS_Kernel_Time_Converters_TimeDateConverters_GetDateFromCalendarNoCulture_
