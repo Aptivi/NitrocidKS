@@ -23311,6 +23311,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentRegexpDriver
   nameWithType: KernelMainConfig.CurrentRegexpDriver
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentSortingDriver
+  name: CurrentSortingDriver
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_CurrentSortingDriver
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentSortingDriver
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentSortingDriver
+  nameWithType: KernelMainConfig.CurrentSortingDriver
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentSortingDriver*
+  name: CurrentSortingDriver
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_CurrentSortingDriver_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentSortingDriver
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.CurrentSortingDriver
+  nameWithType: KernelMainConfig.CurrentSortingDriver
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.CustomBanner
   name: CustomBanner
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_CustomBanner
