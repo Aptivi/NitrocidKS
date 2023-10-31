@@ -25069,6 +25069,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.ScreenTimeout
   nameWithType: KernelMainConfig.ScreenTimeout
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ScreenTimeoutEnabled
+  name: ScreenTimeoutEnabled
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ScreenTimeoutEnabled
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.ScreenTimeoutEnabled
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.ScreenTimeoutEnabled
+  nameWithType: KernelMainConfig.ScreenTimeoutEnabled
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ScreenTimeoutEnabled*
+  name: ScreenTimeoutEnabled
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ScreenTimeoutEnabled_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.ScreenTimeoutEnabled
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.ScreenTimeoutEnabled
+  nameWithType: KernelMainConfig.ScreenTimeoutEnabled
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverDebug
   name: ScreensaverDebug
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ScreensaverDebug
