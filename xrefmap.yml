@@ -4762,6 +4762,22 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Themes.ThemeTools.Is255ColorsRequired
   nameWithType: ThemeTools.Is255ColorsRequired
+- uid: KS.ConsoleBase.Themes.ThemeTools.IsThemeFound(System.String)
+  name: IsThemeFound(string)
+  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_IsThemeFound_System_String_
+  commentId: M:KS.ConsoleBase.Themes.ThemeTools.IsThemeFound(System.String)
+  name.vb: IsThemeFound(String)
+  fullName: KS.ConsoleBase.Themes.ThemeTools.IsThemeFound(string)
+  fullName.vb: KS.ConsoleBase.Themes.ThemeTools.IsThemeFound(String)
+  nameWithType: ThemeTools.IsThemeFound(string)
+  nameWithType.vb: ThemeTools.IsThemeFound(String)
+- uid: KS.ConsoleBase.Themes.ThemeTools.IsThemeFound*
+  name: IsThemeFound
+  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_IsThemeFound_
+  commentId: Overload:KS.ConsoleBase.Themes.ThemeTools.IsThemeFound
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Themes.ThemeTools.IsThemeFound
+  nameWithType: ThemeTools.IsThemeFound
 - uid: KS.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired(KS.ConsoleBase.Themes.ThemeInfo)
   name: IsTrueColorRequired(ThemeInfo)
   href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_IsTrueColorRequired_KS_ConsoleBase_Themes_ThemeInfo_
