@@ -41916,24 +41916,15 @@ references:
   commentId: T:KS.Shell.ShellBase.Commands.CommandInfo
   fullName: KS.Shell.ShellBase.Commands.CommandInfo
   nameWithType: CommandInfo
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Shell.ShellBase.Commands.BaseCommand,KS.Shell.ShellBase.Commands.CommandFlags)
-  name: CommandInfo(string, ShellType, string, CommandArgumentInfo[], BaseCommand, CommandFlags)
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo__ctor_System_String_KS_Shell_ShellBase_Shells_ShellType_System_String_KS_Shell_ShellBase_Arguments_CommandArgumentInfo___KS_Shell_ShellBase_Commands_BaseCommand_KS_Shell_ShellBase_Commands_CommandFlags_
-  commentId: M:KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,KS.Shell.ShellBase.Shells.ShellType,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Shell.ShellBase.Commands.BaseCommand,KS.Shell.ShellBase.Commands.CommandFlags)
-  name.vb: New(String, ShellType, String, CommandArgumentInfo(), BaseCommand, CommandFlags)
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.CommandInfo(string, KS.Shell.ShellBase.Shells.ShellType, string, KS.Shell.ShellBase.Arguments.CommandArgumentInfo[], KS.Shell.ShellBase.Commands.BaseCommand, KS.Shell.ShellBase.Commands.CommandFlags)
-  fullName.vb: KS.Shell.ShellBase.Commands.CommandInfo.New(String, KS.Shell.ShellBase.Shells.ShellType, String, KS.Shell.ShellBase.Arguments.CommandArgumentInfo(), KS.Shell.ShellBase.Commands.BaseCommand, KS.Shell.ShellBase.Commands.CommandFlags)
-  nameWithType: CommandInfo.CommandInfo(string, ShellType, string, CommandArgumentInfo[], BaseCommand, CommandFlags)
-  nameWithType.vb: CommandInfo.New(String, ShellType, String, CommandArgumentInfo(), BaseCommand, CommandFlags)
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,System.String,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Shell.ShellBase.Commands.BaseCommand,KS.Shell.ShellBase.Commands.CommandFlags)
-  name: CommandInfo(string, string, string, CommandArgumentInfo[], BaseCommand, CommandFlags)
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo__ctor_System_String_System_String_System_String_KS_Shell_ShellBase_Arguments_CommandArgumentInfo___KS_Shell_ShellBase_Commands_BaseCommand_KS_Shell_ShellBase_Commands_CommandFlags_
-  commentId: M:KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,System.String,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Shell.ShellBase.Commands.BaseCommand,KS.Shell.ShellBase.Commands.CommandFlags)
-  name.vb: New(String, String, String, CommandArgumentInfo(), BaseCommand, CommandFlags)
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.CommandInfo(string, string, string, KS.Shell.ShellBase.Arguments.CommandArgumentInfo[], KS.Shell.ShellBase.Commands.BaseCommand, KS.Shell.ShellBase.Commands.CommandFlags)
-  fullName.vb: KS.Shell.ShellBase.Commands.CommandInfo.New(String, String, String, KS.Shell.ShellBase.Arguments.CommandArgumentInfo(), KS.Shell.ShellBase.Commands.BaseCommand, KS.Shell.ShellBase.Commands.CommandFlags)
-  nameWithType: CommandInfo.CommandInfo(string, string, string, CommandArgumentInfo[], BaseCommand, CommandFlags)
-  nameWithType.vb: CommandInfo.New(String, String, String, CommandArgumentInfo(), BaseCommand, CommandFlags)
+- uid: KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Shell.ShellBase.Commands.BaseCommand,KS.Shell.ShellBase.Commands.CommandFlags)
+  name: CommandInfo(string, string, CommandArgumentInfo[], BaseCommand, CommandFlags)
+  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo__ctor_System_String_System_String_KS_Shell_ShellBase_Arguments_CommandArgumentInfo___KS_Shell_ShellBase_Commands_BaseCommand_KS_Shell_ShellBase_Commands_CommandFlags_
+  commentId: M:KS.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,System.String,KS.Shell.ShellBase.Arguments.CommandArgumentInfo[],KS.Shell.ShellBase.Commands.BaseCommand,KS.Shell.ShellBase.Commands.CommandFlags)
+  name.vb: New(String, String, CommandArgumentInfo(), BaseCommand, CommandFlags)
+  fullName: KS.Shell.ShellBase.Commands.CommandInfo.CommandInfo(string, string, KS.Shell.ShellBase.Arguments.CommandArgumentInfo[], KS.Shell.ShellBase.Commands.BaseCommand, KS.Shell.ShellBase.Commands.CommandFlags)
+  fullName.vb: KS.Shell.ShellBase.Commands.CommandInfo.New(String, String, KS.Shell.ShellBase.Arguments.CommandArgumentInfo(), KS.Shell.ShellBase.Commands.BaseCommand, KS.Shell.ShellBase.Commands.CommandFlags)
+  nameWithType: CommandInfo.CommandInfo(string, string, CommandArgumentInfo[], BaseCommand, CommandFlags)
+  nameWithType.vb: CommandInfo.New(String, String, CommandArgumentInfo(), BaseCommand, CommandFlags)
 - uid: KS.Shell.ShellBase.Commands.CommandInfo.#ctor*
   name: CommandInfo
   href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo__ctor_
@@ -42022,19 +42013,6 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.CommandInfo.HelpDefinition
   nameWithType: CommandInfo.HelpDefinition
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.Type
-  name: Type
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Type
-  commentId: P:KS.Shell.ShellBase.Commands.CommandInfo.Type
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Type
-  nameWithType: CommandInfo.Type
-- uid: KS.Shell.ShellBase.Commands.CommandInfo.Type*
-  name: Type
-  href: api/KS.Shell.ShellBase.Commands.CommandInfo.html#KS_Shell_ShellBase_Commands_CommandInfo_Type_
-  commentId: Overload:KS.Shell.ShellBase.Commands.CommandInfo.Type
-  isSpec: "True"
-  fullName: KS.Shell.ShellBase.Commands.CommandInfo.Type
-  nameWithType: CommandInfo.Type
 - uid: KS.Shell.ShellBase.Commands.CommandManager
   name: CommandManager
   href: api/KS.Shell.ShellBase.Commands.CommandManager.html
