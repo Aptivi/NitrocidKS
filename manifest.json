@@ -1375,6 +1375,56 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Sorting.BaseSortingDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Sorting.BaseSortingDriver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Sorting.ISortingDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Sorting.ISortingDriver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Sorting.SortingDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Sorting.SortingDriver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Sorting.SortingDriverTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Sorting.SortingDriverTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Drivers.Sorting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Drivers.Sorting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.yml",
       "output": {
         ".html": {
