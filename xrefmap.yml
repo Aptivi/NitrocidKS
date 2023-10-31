@@ -41700,6 +41700,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.RequiredSwitchesProvided
   nameWithType: ProvidedArgumentsInfo.RequiredSwitchesProvided
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.SwitchNumberProvided
+  name: SwitchNumberProvided
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_SwitchNumberProvided
+  commentId: P:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.SwitchNumberProvided
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.SwitchNumberProvided
+  nameWithType: ProvidedArgumentsInfo.SwitchNumberProvided
+- uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.SwitchNumberProvided*
+  name: SwitchNumberProvided
+  href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_SwitchNumberProvided_
+  commentId: Overload:KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.SwitchNumberProvided
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.SwitchNumberProvided
+  nameWithType: ProvidedArgumentsInfo.SwitchNumberProvided
 - uid: KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.SwitchesList
   name: SwitchesList
   href: api/KS.Shell.ShellBase.Arguments.ProvidedArgumentsInfo.html#KS_Shell_ShellBase_Arguments_ProvidedArgumentsInfo_SwitchesList
@@ -45622,15 +45635,15 @@ references:
   fullName.vb: KS.Shell.ShellBase.Switches.SwitchInfo.New(String, String, KS.Shell.ShellBase.Switches.SwitchOptions)
   nameWithType: SwitchInfo.SwitchInfo(string, string, SwitchOptions)
   nameWithType.vb: SwitchInfo.New(String, String, SwitchOptions)
-- uid: KS.Shell.ShellBase.Switches.SwitchInfo.#ctor(System.String,System.String,System.Boolean,System.Boolean,System.String[],System.Int32,System.Boolean)
-  name: SwitchInfo(string, string, bool, bool, string[], int, bool)
-  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo__ctor_System_String_System_String_System_Boolean_System_Boolean_System_String___System_Int32_System_Boolean_
-  commentId: M:KS.Shell.ShellBase.Switches.SwitchInfo.#ctor(System.String,System.String,System.Boolean,System.Boolean,System.String[],System.Int32,System.Boolean)
-  name.vb: New(String, String, Boolean, Boolean, String(), Integer, Boolean)
-  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.SwitchInfo(string, string, bool, bool, string[], int, bool)
-  fullName.vb: KS.Shell.ShellBase.Switches.SwitchInfo.New(String, String, Boolean, Boolean, String(), Integer, Boolean)
-  nameWithType: SwitchInfo.SwitchInfo(string, string, bool, bool, string[], int, bool)
-  nameWithType.vb: SwitchInfo.New(String, String, Boolean, Boolean, String(), Integer, Boolean)
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.#ctor(System.String,System.String,System.Boolean,System.Boolean,System.String[],System.Int32,System.Boolean,System.Boolean)
+  name: SwitchInfo(string, string, bool, bool, string[], int, bool, bool)
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo__ctor_System_String_System_String_System_Boolean_System_Boolean_System_String___System_Int32_System_Boolean_System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Switches.SwitchInfo.#ctor(System.String,System.String,System.Boolean,System.Boolean,System.String[],System.Int32,System.Boolean,System.Boolean)
+  name.vb: New(String, String, Boolean, Boolean, String(), Integer, Boolean, Boolean)
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.SwitchInfo(string, string, bool, bool, string[], int, bool, bool)
+  fullName.vb: KS.Shell.ShellBase.Switches.SwitchInfo.New(String, String, Boolean, Boolean, String(), Integer, Boolean, Boolean)
+  nameWithType: SwitchInfo.SwitchInfo(string, string, bool, bool, string[], int, bool, bool)
+  nameWithType.vb: SwitchInfo.New(String, String, Boolean, Boolean, String(), Integer, Boolean, Boolean)
 - uid: KS.Shell.ShellBase.Switches.SwitchInfo.#ctor*
   name: SwitchInfo
   href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo__ctor_
@@ -45706,6 +45719,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Switches.SwitchInfo.HelpDefinition
   nameWithType: SwitchInfo.HelpDefinition
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.IsNumeric
+  name: IsNumeric
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_IsNumeric
+  commentId: P:KS.Shell.ShellBase.Switches.SwitchInfo.IsNumeric
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.IsNumeric
+  nameWithType: SwitchInfo.IsNumeric
+- uid: KS.Shell.ShellBase.Switches.SwitchInfo.IsNumeric*
+  name: IsNumeric
+  href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_IsNumeric_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchInfo.IsNumeric
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchInfo.IsNumeric
+  nameWithType: SwitchInfo.IsNumeric
 - uid: KS.Shell.ShellBase.Switches.SwitchInfo.IsRequired
   name: IsRequired
   href: api/KS.Shell.ShellBase.Switches.SwitchInfo.html#KS_Shell_ShellBase_Switches_SwitchInfo_IsRequired
@@ -45892,6 +45918,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Switches.SwitchOptions.ConflictsWith
   nameWithType: SwitchOptions.ConflictsWith
+- uid: KS.Shell.ShellBase.Switches.SwitchOptions.IsNumeric
+  name: IsNumeric
+  href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html#KS_Shell_ShellBase_Switches_SwitchOptions_IsNumeric
+  commentId: P:KS.Shell.ShellBase.Switches.SwitchOptions.IsNumeric
+  fullName: KS.Shell.ShellBase.Switches.SwitchOptions.IsNumeric
+  nameWithType: SwitchOptions.IsNumeric
+- uid: KS.Shell.ShellBase.Switches.SwitchOptions.IsNumeric*
+  name: IsNumeric
+  href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html#KS_Shell_ShellBase_Switches_SwitchOptions_IsNumeric_
+  commentId: Overload:KS.Shell.ShellBase.Switches.SwitchOptions.IsNumeric
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Switches.SwitchOptions.IsNumeric
+  nameWithType: SwitchOptions.IsNumeric
 - uid: KS.Shell.ShellBase.Switches.SwitchOptions.IsRequired
   name: IsRequired
   href: api/KS.Shell.ShellBase.Switches.SwitchOptions.html#KS_Shell_ShellBase_Switches_SwitchOptions_IsRequired
