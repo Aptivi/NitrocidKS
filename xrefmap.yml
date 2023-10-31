@@ -37098,22 +37098,6 @@ references:
   isSpec: "True"
   fullName: KS.Modifications.ModManager.ListMods
   nameWithType: ModManager.ListMods
-- uid: KS.Modifications.ModManager.ListModsStartingWith(System.String)
-  name: ListModsStartingWith(string)
-  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_ListModsStartingWith_System_String_
-  commentId: M:KS.Modifications.ModManager.ListModsStartingWith(System.String)
-  name.vb: ListModsStartingWith(String)
-  fullName: KS.Modifications.ModManager.ListModsStartingWith(string)
-  fullName.vb: KS.Modifications.ModManager.ListModsStartingWith(String)
-  nameWithType: ModManager.ListModsStartingWith(string)
-  nameWithType.vb: ModManager.ListModsStartingWith(String)
-- uid: KS.Modifications.ModManager.ListModsStartingWith*
-  name: ListModsStartingWith
-  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_ListModsStartingWith_
-  commentId: Overload:KS.Modifications.ModManager.ListModsStartingWith
-  isSpec: "True"
-  fullName: KS.Modifications.ModManager.ListModsStartingWith
-  nameWithType: ModManager.ListModsStartingWith
 - uid: KS.Modifications.ModManager.ReloadMod(System.String)
   name: ReloadMod(string)
   href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_ReloadMod_System_String_
