@@ -25368,6 +25368,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.ShowShellCommandsCount
   nameWithType: KernelMainConfig.ShowShellCommandsCount
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ShowShellCount
+  name: ShowShellCount
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ShowShellCount
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.ShowShellCount
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.ShowShellCount
+  nameWithType: KernelMainConfig.ShowShellCount
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ShowShellCount*
+  name: ShowShellCount
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ShowShellCount_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.ShowShellCount
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.ShowShellCount
+  nameWithType: KernelMainConfig.ShowShellCount
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.ShowStackTraceOnKernelError
   name: ShowStackTraceOnKernelError
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_ShowStackTraceOnKernelError
