@@ -33058,55 +33058,118 @@ references:
 - uid: KS.Languages.LanguageInfo.Codepage
   name: Codepage
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Codepage
-  commentId: F:KS.Languages.LanguageInfo.Codepage
+  commentId: P:KS.Languages.LanguageInfo.Codepage
+  fullName: KS.Languages.LanguageInfo.Codepage
+  nameWithType: LanguageInfo.Codepage
+- uid: KS.Languages.LanguageInfo.Codepage*
+  name: Codepage
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Codepage_
+  commentId: Overload:KS.Languages.LanguageInfo.Codepage
+  isSpec: "True"
   fullName: KS.Languages.LanguageInfo.Codepage
   nameWithType: LanguageInfo.Codepage
 - uid: KS.Languages.LanguageInfo.Country
   name: Country
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Country
-  commentId: F:KS.Languages.LanguageInfo.Country
+  commentId: P:KS.Languages.LanguageInfo.Country
+  fullName: KS.Languages.LanguageInfo.Country
+  nameWithType: LanguageInfo.Country
+- uid: KS.Languages.LanguageInfo.Country*
+  name: Country
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Country_
+  commentId: Overload:KS.Languages.LanguageInfo.Country
+  isSpec: "True"
   fullName: KS.Languages.LanguageInfo.Country
   nameWithType: LanguageInfo.Country
 - uid: KS.Languages.LanguageInfo.CultureCode
   name: CultureCode
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_CultureCode
-  commentId: F:KS.Languages.LanguageInfo.CultureCode
+  commentId: P:KS.Languages.LanguageInfo.CultureCode
+  fullName: KS.Languages.LanguageInfo.CultureCode
+  nameWithType: LanguageInfo.CultureCode
+- uid: KS.Languages.LanguageInfo.CultureCode*
+  name: CultureCode
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_CultureCode_
+  commentId: Overload:KS.Languages.LanguageInfo.CultureCode
+  isSpec: "True"
   fullName: KS.Languages.LanguageInfo.CultureCode
   nameWithType: LanguageInfo.CultureCode
 - uid: KS.Languages.LanguageInfo.Cultures
   name: Cultures
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Cultures
-  commentId: F:KS.Languages.LanguageInfo.Cultures
+  commentId: P:KS.Languages.LanguageInfo.Cultures
+  fullName: KS.Languages.LanguageInfo.Cultures
+  nameWithType: LanguageInfo.Cultures
+- uid: KS.Languages.LanguageInfo.Cultures*
+  name: Cultures
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Cultures_
+  commentId: Overload:KS.Languages.LanguageInfo.Cultures
+  isSpec: "True"
   fullName: KS.Languages.LanguageInfo.Cultures
   nameWithType: LanguageInfo.Cultures
 - uid: KS.Languages.LanguageInfo.Custom
   name: Custom
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Custom
-  commentId: F:KS.Languages.LanguageInfo.Custom
+  commentId: P:KS.Languages.LanguageInfo.Custom
+  fullName: KS.Languages.LanguageInfo.Custom
+  nameWithType: LanguageInfo.Custom
+- uid: KS.Languages.LanguageInfo.Custom*
+  name: Custom
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Custom_
+  commentId: Overload:KS.Languages.LanguageInfo.Custom
+  isSpec: "True"
   fullName: KS.Languages.LanguageInfo.Custom
   nameWithType: LanguageInfo.Custom
 - uid: KS.Languages.LanguageInfo.FullLanguageName
   name: FullLanguageName
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_FullLanguageName
-  commentId: F:KS.Languages.LanguageInfo.FullLanguageName
+  commentId: P:KS.Languages.LanguageInfo.FullLanguageName
+  fullName: KS.Languages.LanguageInfo.FullLanguageName
+  nameWithType: LanguageInfo.FullLanguageName
+- uid: KS.Languages.LanguageInfo.FullLanguageName*
+  name: FullLanguageName
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_FullLanguageName_
+  commentId: Overload:KS.Languages.LanguageInfo.FullLanguageName
+  isSpec: "True"
   fullName: KS.Languages.LanguageInfo.FullLanguageName
   nameWithType: LanguageInfo.FullLanguageName
 - uid: KS.Languages.LanguageInfo.Strings
   name: Strings
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Strings
-  commentId: F:KS.Languages.LanguageInfo.Strings
+  commentId: P:KS.Languages.LanguageInfo.Strings
+  fullName: KS.Languages.LanguageInfo.Strings
+  nameWithType: LanguageInfo.Strings
+- uid: KS.Languages.LanguageInfo.Strings*
+  name: Strings
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Strings_
+  commentId: Overload:KS.Languages.LanguageInfo.Strings
+  isSpec: "True"
   fullName: KS.Languages.LanguageInfo.Strings
   nameWithType: LanguageInfo.Strings
 - uid: KS.Languages.LanguageInfo.ThreeLetterLanguageName
   name: ThreeLetterLanguageName
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_ThreeLetterLanguageName
-  commentId: F:KS.Languages.LanguageInfo.ThreeLetterLanguageName
+  commentId: P:KS.Languages.LanguageInfo.ThreeLetterLanguageName
+  fullName: KS.Languages.LanguageInfo.ThreeLetterLanguageName
+  nameWithType: LanguageInfo.ThreeLetterLanguageName
+- uid: KS.Languages.LanguageInfo.ThreeLetterLanguageName*
+  name: ThreeLetterLanguageName
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_ThreeLetterLanguageName_
+  commentId: Overload:KS.Languages.LanguageInfo.ThreeLetterLanguageName
+  isSpec: "True"
   fullName: KS.Languages.LanguageInfo.ThreeLetterLanguageName
   nameWithType: LanguageInfo.ThreeLetterLanguageName
 - uid: KS.Languages.LanguageInfo.Transliterable
   name: Transliterable
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Transliterable
-  commentId: F:KS.Languages.LanguageInfo.Transliterable
+  commentId: P:KS.Languages.LanguageInfo.Transliterable
+  fullName: KS.Languages.LanguageInfo.Transliterable
+  nameWithType: LanguageInfo.Transliterable
+- uid: KS.Languages.LanguageInfo.Transliterable*
+  name: Transliterable
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Transliterable_
+  commentId: Overload:KS.Languages.LanguageInfo.Transliterable
+  isSpec: "True"
   fullName: KS.Languages.LanguageInfo.Transliterable
   nameWithType: LanguageInfo.Transliterable
 - uid: KS.Languages.LanguageManager
