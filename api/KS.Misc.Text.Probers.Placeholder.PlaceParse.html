@@ -101,19 +101,19 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Text_Probers_Placeholder_PlaceParse_GetPlaceholderAction_System_String_.md&amp;value=---%0Auid%3A%20KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholderAction(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Text_Probers_Placeholder_PlaceParse_GetPlaceholder_System_String_.md&amp;value=---%0Auid%3A%20KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholder(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Text/Probers/Placeholder/PlaceParse.cs/#L268">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Text/Probers/Placeholder/PlaceParse.cs/#L238">View Source</a>
   </span>
-  <a id="KS_Misc_Text_Probers_Placeholder_PlaceParse_GetPlaceholderAction_" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholderAction*"></a>
-  <h4 id="KS_Misc_Text_Probers_Placeholder_PlaceParse_GetPlaceholderAction_System_String_" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholderAction(System.String)">GetPlaceholderAction(string)</h4>
-  <div class="markdown level1 summary"><p>Gets a placeholder action from the placeholder name</p>
+  <a id="KS_Misc_Text_Probers_Placeholder_PlaceParse_GetPlaceholder_" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholder*"></a>
+  <h4 id="KS_Misc_Text_Probers_Placeholder_PlaceParse_GetPlaceholder_System_String_" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholder(System.String)">GetPlaceholder(string)</h4>
+  <div class="markdown level1 summary"><p>Gets a placeholder from the placeholder name</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Func&lt;string&gt; GetPlaceholderAction(string placeholder)</code></pre>
+    <pre><code class="lang-csharp hljs">public static PlaceInfo GetPlaceholder(string placeholder)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -143,7 +143,56 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><a class="xref" href="KS.Misc.Text.Probers.Placeholder.PlaceInfo.html">PlaceInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Text_Probers_Placeholder_PlaceParse_GetPlaceholderAction_System_String_.md&amp;value=---%0Auid%3A%20KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholderAction(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Text/Probers/Placeholder/PlaceParse.cs/#L259">View Source</a>
+  </span>
+  <a id="KS_Misc_Text_Probers_Placeholder_PlaceParse_GetPlaceholderAction_" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholderAction*"></a>
+  <h4 id="KS_Misc_Text_Probers_Placeholder_PlaceParse_GetPlaceholderAction_System_String_" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholderAction(System.String)">GetPlaceholderAction(string)</h4>
+  <div class="markdown level1 summary"><p>Gets a placeholder action from the placeholder name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;string, string&gt; GetPlaceholderAction(string placeholder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">placeholder</span></td>
+        <td><p>Placeholder to query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -153,7 +202,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Text_Probers_Placeholder_PlaceParse_IsPlaceholderBuiltin_System_String_.md&amp;value=---%0Auid%3A%20KS.Misc.Text.Probers.Placeholder.PlaceParse.IsPlaceholderBuiltin(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Text/Probers/Placeholder/PlaceParse.cs/#L234">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Text/Probers/Placeholder/PlaceParse.cs/#L202">View Source</a>
   </span>
   <a id="KS_Misc_Text_Probers_Placeholder_PlaceParse_IsPlaceholderBuiltin_" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.IsPlaceholderBuiltin*"></a>
   <h4 id="KS_Misc_Text_Probers_Placeholder_PlaceParse_IsPlaceholderBuiltin_System_String_" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.IsPlaceholderBuiltin(System.String)">IsPlaceholderBuiltin(string)</h4>
@@ -218,7 +267,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Text_Probers_Placeholder_PlaceParse_IsPlaceholderRegistered_System_String_.md&amp;value=---%0Auid%3A%20KS.Misc.Text.Probers.Placeholder.PlaceParse.IsPlaceholderRegistered(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Text/Probers/Placeholder/PlaceParse.cs/#L252">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Text/Probers/Placeholder/PlaceParse.cs/#L220">View Source</a>
   </span>
   <a id="KS_Misc_Text_Probers_Placeholder_PlaceParse_IsPlaceholderRegistered_" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.IsPlaceholderRegistered*"></a>
   <h4 id="KS_Misc_Text_Probers_Placeholder_PlaceParse_IsPlaceholderRegistered_System_String_" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.IsPlaceholderRegistered(System.String)">IsPlaceholderRegistered(string)</h4>
@@ -283,7 +332,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Text_Probers_Placeholder_PlaceParse_ProbePlaces_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Misc.Text.Probers.Placeholder.PlaceParse.ProbePlaces(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Text/Probers/Placeholder/PlaceParse.cs/#L98">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Text/Probers/Placeholder/PlaceParse.cs/#L103">View Source</a>
   </span>
   <a id="KS_Misc_Text_Probers_Placeholder_PlaceParse_ProbePlaces_" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.ProbePlaces*"></a>
   <h4 id="KS_Misc_Text_Probers_Placeholder_PlaceParse_ProbePlaces_System_String_System_Boolean_" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.ProbePlaces(System.String,System.Boolean)">ProbePlaces(string, bool)</h4>
@@ -336,19 +385,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Text_Probers_Placeholder_PlaceParse_RegisterCustomPlaceholder_System_String_System_Func_System_String__.md&amp;value=---%0Auid%3A%20KS.Misc.Text.Probers.Placeholder.PlaceParse.RegisterCustomPlaceholder(System.String%2CSystem.Func%7BSystem.String%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Text_Probers_Placeholder_PlaceParse_RegisterCustomPlaceholder_System_String_System_Func_System_String_System_String__.md&amp;value=---%0Auid%3A%20KS.Misc.Text.Probers.Placeholder.PlaceParse.RegisterCustomPlaceholder(System.String%2CSystem.Func%7BSystem.String%2CSystem.String%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Text/Probers/Placeholder/PlaceParse.cs/#L195">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Text/Probers/Placeholder/PlaceParse.cs/#L159">View Source</a>
   </span>
   <a id="KS_Misc_Text_Probers_Placeholder_PlaceParse_RegisterCustomPlaceholder_" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.RegisterCustomPlaceholder*"></a>
-  <h4 id="KS_Misc_Text_Probers_Placeholder_PlaceParse_RegisterCustomPlaceholder_System_String_System_Func_System_String__" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.RegisterCustomPlaceholder(System.String,System.Func{System.String})">RegisterCustomPlaceholder(string, Func&lt;string&gt;)</h4>
+  <h4 id="KS_Misc_Text_Probers_Placeholder_PlaceParse_RegisterCustomPlaceholder_System_String_System_Func_System_String_System_String__" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.RegisterCustomPlaceholder(System.String,System.Func{System.String,System.String})">RegisterCustomPlaceholder(string, Func&lt;string, string&gt;)</h4>
   <div class="markdown level1 summary"><p>Registers a custom placeholder</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RegisterCustomPlaceholder(string placeholder, Func&lt;string&gt; placeholderAction)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RegisterCustomPlaceholder(string placeholder, Func&lt;string, string&gt; placeholderAction)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -367,7 +416,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
         <td><span class="parametername">placeholderAction</span></td>
         <td><p>Action associated with the placeholder</p>
 </td>
@@ -379,7 +428,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Text_Probers_Placeholder_PlaceParse_UnregisterCustomPlaceholder_System_String_.md&amp;value=---%0Auid%3A%20KS.Misc.Text.Probers.Placeholder.PlaceParse.UnregisterCustomPlaceholder(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Text/Probers/Placeholder/PlaceParse.cs/#L214">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Text/Probers/Placeholder/PlaceParse.cs/#L181">View Source</a>
   </span>
   <a id="KS_Misc_Text_Probers_Placeholder_PlaceParse_UnregisterCustomPlaceholder_" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.UnregisterCustomPlaceholder*"></a>
   <h4 id="KS_Misc_Text_Probers_Placeholder_PlaceParse_UnregisterCustomPlaceholder_System_String_" data-uid="KS.Misc.Text.Probers.Placeholder.PlaceParse.UnregisterCustomPlaceholder(System.String)">UnregisterCustomPlaceholder(string)</h4>
@@ -420,7 +469,7 @@
                     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Text_Probers_Placeholder_PlaceParse.md&amp;value=---%0Auid%3A%20KS.Misc.Text.Probers.Placeholder.PlaceParse%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Text/Probers/Placeholder/PlaceParse.cs/#L48" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Text/Probers/Placeholder/PlaceParse.cs/#L50" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

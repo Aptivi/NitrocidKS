@@ -3285,6 +3285,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Text.Probers.Placeholder.PlaceInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Text.Probers.Placeholder.PlaceInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Text.Probers.Placeholder.PlaceParse.yml",
       "output": {
         ".html": {

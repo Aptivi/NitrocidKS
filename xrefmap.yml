@@ -36881,12 +36881,92 @@ references:
   commentId: N:KS.Misc.Text.Probers.Placeholder
   fullName: KS.Misc.Text.Probers.Placeholder
   nameWithType: KS.Misc.Text.Probers.Placeholder
+- uid: KS.Misc.Text.Probers.Placeholder.PlaceInfo
+  name: PlaceInfo
+  href: api/KS.Misc.Text.Probers.Placeholder.PlaceInfo.html
+  commentId: T:KS.Misc.Text.Probers.Placeholder.PlaceInfo
+  fullName: KS.Misc.Text.Probers.Placeholder.PlaceInfo
+  nameWithType: PlaceInfo
+- uid: KS.Misc.Text.Probers.Placeholder.PlaceInfo.#ctor(System.String,System.Func{System.String,System.String},System.String)
+  name: PlaceInfo(string, Func<string, string>, string)
+  href: api/KS.Misc.Text.Probers.Placeholder.PlaceInfo.html#KS_Misc_Text_Probers_Placeholder_PlaceInfo__ctor_System_String_System_Func_System_String_System_String__System_String_
+  commentId: M:KS.Misc.Text.Probers.Placeholder.PlaceInfo.#ctor(System.String,System.Func{System.String,System.String},System.String)
+  name.vb: New(String, Func(Of String, String), String)
+  fullName: KS.Misc.Text.Probers.Placeholder.PlaceInfo.PlaceInfo(string, System.Func<string, string>, string)
+  fullName.vb: KS.Misc.Text.Probers.Placeholder.PlaceInfo.New(String, System.Func(Of String, String), String)
+  nameWithType: PlaceInfo.PlaceInfo(string, Func<string, string>, string)
+  nameWithType.vb: PlaceInfo.New(String, Func(Of String, String), String)
+- uid: KS.Misc.Text.Probers.Placeholder.PlaceInfo.#ctor*
+  name: PlaceInfo
+  href: api/KS.Misc.Text.Probers.Placeholder.PlaceInfo.html#KS_Misc_Text_Probers_Placeholder_PlaceInfo__ctor_
+  commentId: Overload:KS.Misc.Text.Probers.Placeholder.PlaceInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: KS.Misc.Text.Probers.Placeholder.PlaceInfo.PlaceInfo
+  fullName.vb: KS.Misc.Text.Probers.Placeholder.PlaceInfo.New
+  nameWithType: PlaceInfo.PlaceInfo
+  nameWithType.vb: PlaceInfo.New
+- uid: KS.Misc.Text.Probers.Placeholder.PlaceInfo.Placeholder
+  name: Placeholder
+  href: api/KS.Misc.Text.Probers.Placeholder.PlaceInfo.html#KS_Misc_Text_Probers_Placeholder_PlaceInfo_Placeholder
+  commentId: P:KS.Misc.Text.Probers.Placeholder.PlaceInfo.Placeholder
+  fullName: KS.Misc.Text.Probers.Placeholder.PlaceInfo.Placeholder
+  nameWithType: PlaceInfo.Placeholder
+- uid: KS.Misc.Text.Probers.Placeholder.PlaceInfo.Placeholder*
+  name: Placeholder
+  href: api/KS.Misc.Text.Probers.Placeholder.PlaceInfo.html#KS_Misc_Text_Probers_Placeholder_PlaceInfo_Placeholder_
+  commentId: Overload:KS.Misc.Text.Probers.Placeholder.PlaceInfo.Placeholder
+  isSpec: "True"
+  fullName: KS.Misc.Text.Probers.Placeholder.PlaceInfo.Placeholder
+  nameWithType: PlaceInfo.Placeholder
+- uid: KS.Misc.Text.Probers.Placeholder.PlaceInfo.PlaceholderAction
+  name: PlaceholderAction
+  href: api/KS.Misc.Text.Probers.Placeholder.PlaceInfo.html#KS_Misc_Text_Probers_Placeholder_PlaceInfo_PlaceholderAction
+  commentId: P:KS.Misc.Text.Probers.Placeholder.PlaceInfo.PlaceholderAction
+  fullName: KS.Misc.Text.Probers.Placeholder.PlaceInfo.PlaceholderAction
+  nameWithType: PlaceInfo.PlaceholderAction
+- uid: KS.Misc.Text.Probers.Placeholder.PlaceInfo.PlaceholderAction*
+  name: PlaceholderAction
+  href: api/KS.Misc.Text.Probers.Placeholder.PlaceInfo.html#KS_Misc_Text_Probers_Placeholder_PlaceInfo_PlaceholderAction_
+  commentId: Overload:KS.Misc.Text.Probers.Placeholder.PlaceInfo.PlaceholderAction
+  isSpec: "True"
+  fullName: KS.Misc.Text.Probers.Placeholder.PlaceInfo.PlaceholderAction
+  nameWithType: PlaceInfo.PlaceholderAction
+- uid: KS.Misc.Text.Probers.Placeholder.PlaceInfo.PlaceholderDefaultValue
+  name: PlaceholderDefaultValue
+  href: api/KS.Misc.Text.Probers.Placeholder.PlaceInfo.html#KS_Misc_Text_Probers_Placeholder_PlaceInfo_PlaceholderDefaultValue
+  commentId: P:KS.Misc.Text.Probers.Placeholder.PlaceInfo.PlaceholderDefaultValue
+  fullName: KS.Misc.Text.Probers.Placeholder.PlaceInfo.PlaceholderDefaultValue
+  nameWithType: PlaceInfo.PlaceholderDefaultValue
+- uid: KS.Misc.Text.Probers.Placeholder.PlaceInfo.PlaceholderDefaultValue*
+  name: PlaceholderDefaultValue
+  href: api/KS.Misc.Text.Probers.Placeholder.PlaceInfo.html#KS_Misc_Text_Probers_Placeholder_PlaceInfo_PlaceholderDefaultValue_
+  commentId: Overload:KS.Misc.Text.Probers.Placeholder.PlaceInfo.PlaceholderDefaultValue
+  isSpec: "True"
+  fullName: KS.Misc.Text.Probers.Placeholder.PlaceInfo.PlaceholderDefaultValue
+  nameWithType: PlaceInfo.PlaceholderDefaultValue
 - uid: KS.Misc.Text.Probers.Placeholder.PlaceParse
   name: PlaceParse
   href: api/KS.Misc.Text.Probers.Placeholder.PlaceParse.html
   commentId: T:KS.Misc.Text.Probers.Placeholder.PlaceParse
   fullName: KS.Misc.Text.Probers.Placeholder.PlaceParse
   nameWithType: PlaceParse
+- uid: KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholder(System.String)
+  name: GetPlaceholder(string)
+  href: api/KS.Misc.Text.Probers.Placeholder.PlaceParse.html#KS_Misc_Text_Probers_Placeholder_PlaceParse_GetPlaceholder_System_String_
+  commentId: M:KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholder(System.String)
+  name.vb: GetPlaceholder(String)
+  fullName: KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholder(string)
+  fullName.vb: KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholder(String)
+  nameWithType: PlaceParse.GetPlaceholder(string)
+  nameWithType.vb: PlaceParse.GetPlaceholder(String)
+- uid: KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholder*
+  name: GetPlaceholder
+  href: api/KS.Misc.Text.Probers.Placeholder.PlaceParse.html#KS_Misc_Text_Probers_Placeholder_PlaceParse_GetPlaceholder_
+  commentId: Overload:KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholder
+  isSpec: "True"
+  fullName: KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholder
+  nameWithType: PlaceParse.GetPlaceholder
 - uid: KS.Misc.Text.Probers.Placeholder.PlaceParse.GetPlaceholderAction(System.String)
   name: GetPlaceholderAction(string)
   href: api/KS.Misc.Text.Probers.Placeholder.PlaceParse.html#KS_Misc_Text_Probers_Placeholder_PlaceParse_GetPlaceholderAction_System_String_
@@ -36951,15 +37031,15 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Text.Probers.Placeholder.PlaceParse.ProbePlaces
   nameWithType: PlaceParse.ProbePlaces
-- uid: KS.Misc.Text.Probers.Placeholder.PlaceParse.RegisterCustomPlaceholder(System.String,System.Func{System.String})
-  name: RegisterCustomPlaceholder(string, Func<string>)
-  href: api/KS.Misc.Text.Probers.Placeholder.PlaceParse.html#KS_Misc_Text_Probers_Placeholder_PlaceParse_RegisterCustomPlaceholder_System_String_System_Func_System_String__
-  commentId: M:KS.Misc.Text.Probers.Placeholder.PlaceParse.RegisterCustomPlaceholder(System.String,System.Func{System.String})
-  name.vb: RegisterCustomPlaceholder(String, Func(Of String))
-  fullName: KS.Misc.Text.Probers.Placeholder.PlaceParse.RegisterCustomPlaceholder(string, System.Func<string>)
-  fullName.vb: KS.Misc.Text.Probers.Placeholder.PlaceParse.RegisterCustomPlaceholder(String, System.Func(Of String))
-  nameWithType: PlaceParse.RegisterCustomPlaceholder(string, Func<string>)
-  nameWithType.vb: PlaceParse.RegisterCustomPlaceholder(String, Func(Of String))
+- uid: KS.Misc.Text.Probers.Placeholder.PlaceParse.RegisterCustomPlaceholder(System.String,System.Func{System.String,System.String})
+  name: RegisterCustomPlaceholder(string, Func<string, string>)
+  href: api/KS.Misc.Text.Probers.Placeholder.PlaceParse.html#KS_Misc_Text_Probers_Placeholder_PlaceParse_RegisterCustomPlaceholder_System_String_System_Func_System_String_System_String__
+  commentId: M:KS.Misc.Text.Probers.Placeholder.PlaceParse.RegisterCustomPlaceholder(System.String,System.Func{System.String,System.String})
+  name.vb: RegisterCustomPlaceholder(String, Func(Of String, String))
+  fullName: KS.Misc.Text.Probers.Placeholder.PlaceParse.RegisterCustomPlaceholder(string, System.Func<string, string>)
+  fullName.vb: KS.Misc.Text.Probers.Placeholder.PlaceParse.RegisterCustomPlaceholder(String, System.Func(Of String, String))
+  nameWithType: PlaceParse.RegisterCustomPlaceholder(string, Func<string, string>)
+  nameWithType.vb: PlaceParse.RegisterCustomPlaceholder(String, Func(Of String, String))
 - uid: KS.Misc.Text.Probers.Placeholder.PlaceParse.RegisterCustomPlaceholder*
   name: RegisterCustomPlaceholder
   href: api/KS.Misc.Text.Probers.Placeholder.PlaceParse.html#KS_Misc_Text_Probers_Placeholder_PlaceParse_RegisterCustomPlaceholder_
