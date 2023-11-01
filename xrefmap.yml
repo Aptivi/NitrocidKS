@@ -33531,6 +33531,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Interactives.TaskManagerCli.PrimaryDataSource
   nameWithType: TaskManagerCli.PrimaryDataSource
+- uid: KS.Misc.Interactives.TaskManagerCli.RefreshInterval
+  name: RefreshInterval
+  href: api/KS.Misc.Interactives.TaskManagerCli.html#KS_Misc_Interactives_TaskManagerCli_RefreshInterval
+  commentId: P:KS.Misc.Interactives.TaskManagerCli.RefreshInterval
+  fullName: KS.Misc.Interactives.TaskManagerCli.RefreshInterval
+  nameWithType: TaskManagerCli.RefreshInterval
+- uid: KS.Misc.Interactives.TaskManagerCli.RefreshInterval*
+  name: RefreshInterval
+  href: api/KS.Misc.Interactives.TaskManagerCli.html#KS_Misc_Interactives_TaskManagerCli_RefreshInterval_
+  commentId: Overload:KS.Misc.Interactives.TaskManagerCli.RefreshInterval
+  isSpec: "True"
+  fullName: KS.Misc.Interactives.TaskManagerCli.RefreshInterval
+  nameWithType: TaskManagerCli.RefreshInterval
 - uid: KS.Misc.Interactives.TaskManagerCli.RenderStatus(System.Object)
   name: RenderStatus(object)
   href: api/KS.Misc.Interactives.TaskManagerCli.html#KS_Misc_Interactives_TaskManagerCli_RenderStatus_System_Object_
