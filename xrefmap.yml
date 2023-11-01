@@ -4769,6 +4769,48 @@ references:
   commentId: N:KS.ConsoleBase.Themes
   fullName: KS.ConsoleBase.Themes
   nameWithType: KS.ConsoleBase.Themes
+- uid: KS.ConsoleBase.Themes.ThemeCategory
+  name: ThemeCategory
+  href: api/KS.ConsoleBase.Themes.ThemeCategory.html
+  commentId: T:KS.ConsoleBase.Themes.ThemeCategory
+  fullName: KS.ConsoleBase.Themes.ThemeCategory
+  nameWithType: ThemeCategory
+- uid: KS.ConsoleBase.Themes.ThemeCategory.Aesthetic
+  name: Aesthetic
+  href: api/KS.ConsoleBase.Themes.ThemeCategory.html#KS_ConsoleBase_Themes_ThemeCategory_Aesthetic
+  commentId: F:KS.ConsoleBase.Themes.ThemeCategory.Aesthetic
+  fullName: KS.ConsoleBase.Themes.ThemeCategory.Aesthetic
+  nameWithType: ThemeCategory.Aesthetic
+- uid: KS.ConsoleBase.Themes.ThemeCategory.Chinese
+  name: Chinese
+  href: api/KS.ConsoleBase.Themes.ThemeCategory.html#KS_ConsoleBase_Themes_ThemeCategory_Chinese
+  commentId: F:KS.ConsoleBase.Themes.ThemeCategory.Chinese
+  fullName: KS.ConsoleBase.Themes.ThemeCategory.Chinese
+  nameWithType: ThemeCategory.Chinese
+- uid: KS.ConsoleBase.Themes.ThemeCategory.Exciting
+  name: Exciting
+  href: api/KS.ConsoleBase.Themes.ThemeCategory.html#KS_ConsoleBase_Themes_ThemeCategory_Exciting
+  commentId: F:KS.ConsoleBase.Themes.ThemeCategory.Exciting
+  fullName: KS.ConsoleBase.Themes.ThemeCategory.Exciting
+  nameWithType: ThemeCategory.Exciting
+- uid: KS.ConsoleBase.Themes.ThemeCategory.Mesmerizing
+  name: Mesmerizing
+  href: api/KS.ConsoleBase.Themes.ThemeCategory.html#KS_ConsoleBase_Themes_ThemeCategory_Mesmerizing
+  commentId: F:KS.ConsoleBase.Themes.ThemeCategory.Mesmerizing
+  fullName: KS.ConsoleBase.Themes.ThemeCategory.Mesmerizing
+  nameWithType: ThemeCategory.Mesmerizing
+- uid: KS.ConsoleBase.Themes.ThemeCategory.Miscellaneous
+  name: Miscellaneous
+  href: api/KS.ConsoleBase.Themes.ThemeCategory.html#KS_ConsoleBase_Themes_ThemeCategory_Miscellaneous
+  commentId: F:KS.ConsoleBase.Themes.ThemeCategory.Miscellaneous
+  fullName: KS.ConsoleBase.Themes.ThemeCategory.Miscellaneous
+  nameWithType: ThemeCategory.Miscellaneous
+- uid: KS.ConsoleBase.Themes.ThemeCategory.Standard
+  name: Standard
+  href: api/KS.ConsoleBase.Themes.ThemeCategory.html#KS_ConsoleBase_Themes_ThemeCategory_Standard
+  commentId: F:KS.ConsoleBase.Themes.ThemeCategory.Standard
+  fullName: KS.ConsoleBase.Themes.ThemeCategory.Standard
+  nameWithType: ThemeCategory.Standard
 - uid: KS.ConsoleBase.Themes.ThemeInfo
   name: ThemeInfo
   href: api/KS.ConsoleBase.Themes.ThemeInfo.html
@@ -4825,6 +4867,19 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Themes.ThemeInfo.Calendar
   nameWithType: ThemeInfo.Calendar
+- uid: KS.ConsoleBase.Themes.ThemeInfo.Category
+  name: Category
+  href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo_Category
+  commentId: P:KS.ConsoleBase.Themes.ThemeInfo.Category
+  fullName: KS.ConsoleBase.Themes.ThemeInfo.Category
+  nameWithType: ThemeInfo.Category
+- uid: KS.ConsoleBase.Themes.ThemeInfo.Category*
+  name: Category
+  href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo_Category_
+  commentId: Overload:KS.ConsoleBase.Themes.ThemeInfo.Category
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Themes.ThemeInfo.Category
+  nameWithType: ThemeInfo.Category
 - uid: KS.ConsoleBase.Themes.ThemeInfo.Description
   name: Description
   href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo_Description
@@ -5147,6 +5202,19 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Themes.ThemeTools.GetInstalledThemes
   nameWithType: ThemeTools.GetInstalledThemes
+- uid: KS.ConsoleBase.Themes.ThemeTools.GetInstalledThemesByCategory(KS.ConsoleBase.Themes.ThemeCategory)
+  name: GetInstalledThemesByCategory(ThemeCategory)
+  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_GetInstalledThemesByCategory_KS_ConsoleBase_Themes_ThemeCategory_
+  commentId: M:KS.ConsoleBase.Themes.ThemeTools.GetInstalledThemesByCategory(KS.ConsoleBase.Themes.ThemeCategory)
+  fullName: KS.ConsoleBase.Themes.ThemeTools.GetInstalledThemesByCategory(KS.ConsoleBase.Themes.ThemeCategory)
+  nameWithType: ThemeTools.GetInstalledThemesByCategory(ThemeCategory)
+- uid: KS.ConsoleBase.Themes.ThemeTools.GetInstalledThemesByCategory*
+  name: GetInstalledThemesByCategory
+  href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_GetInstalledThemesByCategory_
+  commentId: Overload:KS.ConsoleBase.Themes.ThemeTools.GetInstalledThemesByCategory
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Themes.ThemeTools.GetInstalledThemesByCategory
+  nameWithType: ThemeTools.GetInstalledThemesByCategory
 - uid: KS.ConsoleBase.Themes.ThemeTools.GetThemeInfo(System.String)
   name: GetThemeInfo(string)
   href: api/KS.ConsoleBase.Themes.ThemeTools.html#KS_ConsoleBase_Themes_ThemeTools_GetThemeInfo_System_String_
