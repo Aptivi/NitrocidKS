@@ -37115,6 +37115,22 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Text.Probers.Placeholder.PlaceParse.RegisterCustomPlaceholder
   nameWithType: PlaceParse.RegisterCustomPlaceholder
+- uid: KS.Misc.Text.Probers.Placeholder.PlaceParse.StripPlaceholderArgs(System.String)
+  name: StripPlaceholderArgs(string)
+  href: api/KS.Misc.Text.Probers.Placeholder.PlaceParse.html#KS_Misc_Text_Probers_Placeholder_PlaceParse_StripPlaceholderArgs_System_String_
+  commentId: M:KS.Misc.Text.Probers.Placeholder.PlaceParse.StripPlaceholderArgs(System.String)
+  name.vb: StripPlaceholderArgs(String)
+  fullName: KS.Misc.Text.Probers.Placeholder.PlaceParse.StripPlaceholderArgs(string)
+  fullName.vb: KS.Misc.Text.Probers.Placeholder.PlaceParse.StripPlaceholderArgs(String)
+  nameWithType: PlaceParse.StripPlaceholderArgs(string)
+  nameWithType.vb: PlaceParse.StripPlaceholderArgs(String)
+- uid: KS.Misc.Text.Probers.Placeholder.PlaceParse.StripPlaceholderArgs*
+  name: StripPlaceholderArgs
+  href: api/KS.Misc.Text.Probers.Placeholder.PlaceParse.html#KS_Misc_Text_Probers_Placeholder_PlaceParse_StripPlaceholderArgs_
+  commentId: Overload:KS.Misc.Text.Probers.Placeholder.PlaceParse.StripPlaceholderArgs
+  isSpec: "True"
+  fullName: KS.Misc.Text.Probers.Placeholder.PlaceParse.StripPlaceholderArgs
+  nameWithType: PlaceParse.StripPlaceholderArgs
 - uid: KS.Misc.Text.Probers.Placeholder.PlaceParse.UnregisterCustomPlaceholder(System.String)
   name: UnregisterCustomPlaceholder(string)
   href: api/KS.Misc.Text.Probers.Placeholder.PlaceParse.html#KS_Misc_Text_Probers_Placeholder_PlaceParse_UnregisterCustomPlaceholder_System_String_
