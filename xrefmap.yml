@@ -34334,6 +34334,236 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.EnumerableTools.GetElementFromIndex
   nameWithType: EnumerableTools.GetElementFromIndex
+- uid: KS.Misc.Reflection.FieldManager
+  name: FieldManager
+  href: api/KS.Misc.Reflection.FieldManager.html
+  commentId: T:KS.Misc.Reflection.FieldManager
+  fullName: KS.Misc.Reflection.FieldManager
+  nameWithType: FieldManager
+- uid: KS.Misc.Reflection.FieldManager.CheckField(System.String)
+  name: CheckField(string)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_CheckField_System_String_
+  commentId: M:KS.Misc.Reflection.FieldManager.CheckField(System.String)
+  name.vb: CheckField(String)
+  fullName: KS.Misc.Reflection.FieldManager.CheckField(string)
+  fullName.vb: KS.Misc.Reflection.FieldManager.CheckField(String)
+  nameWithType: FieldManager.CheckField(string)
+  nameWithType.vb: FieldManager.CheckField(String)
+- uid: KS.Misc.Reflection.FieldManager.CheckField(System.String,System.Type)
+  name: CheckField(string, Type)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_CheckField_System_String_System_Type_
+  commentId: M:KS.Misc.Reflection.FieldManager.CheckField(System.String,System.Type)
+  name.vb: CheckField(String, Type)
+  fullName: KS.Misc.Reflection.FieldManager.CheckField(string, System.Type)
+  fullName.vb: KS.Misc.Reflection.FieldManager.CheckField(String, System.Type)
+  nameWithType: FieldManager.CheckField(string, Type)
+  nameWithType.vb: FieldManager.CheckField(String, Type)
+- uid: KS.Misc.Reflection.FieldManager.CheckField*
+  name: CheckField
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_CheckField_
+  commentId: Overload:KS.Misc.Reflection.FieldManager.CheckField
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.FieldManager.CheckField
+  nameWithType: FieldManager.CheckField
+- uid: KS.Misc.Reflection.FieldManager.GetField(System.String)
+  name: GetField(string)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetField_System_String_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetField(System.String)
+  name.vb: GetField(String)
+  fullName: KS.Misc.Reflection.FieldManager.GetField(string)
+  fullName.vb: KS.Misc.Reflection.FieldManager.GetField(String)
+  nameWithType: FieldManager.GetField(string)
+  nameWithType.vb: FieldManager.GetField(String)
+- uid: KS.Misc.Reflection.FieldManager.GetField(System.String,System.Type)
+  name: GetField(string, Type)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetField_System_String_System_Type_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetField(System.String,System.Type)
+  name.vb: GetField(String, Type)
+  fullName: KS.Misc.Reflection.FieldManager.GetField(string, System.Type)
+  fullName.vb: KS.Misc.Reflection.FieldManager.GetField(String, System.Type)
+  nameWithType: FieldManager.GetField(string, Type)
+  nameWithType.vb: FieldManager.GetField(String, Type)
+- uid: KS.Misc.Reflection.FieldManager.GetField*
+  name: GetField
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetField_
+  commentId: Overload:KS.Misc.Reflection.FieldManager.GetField
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.FieldManager.GetField
+  nameWithType: FieldManager.GetField
+- uid: KS.Misc.Reflection.FieldManager.GetFieldGeneral(System.String)
+  name: GetFieldGeneral(string)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFieldGeneral_System_String_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetFieldGeneral(System.String)
+  name.vb: GetFieldGeneral(String)
+  fullName: KS.Misc.Reflection.FieldManager.GetFieldGeneral(string)
+  fullName.vb: KS.Misc.Reflection.FieldManager.GetFieldGeneral(String)
+  nameWithType: FieldManager.GetFieldGeneral(string)
+  nameWithType.vb: FieldManager.GetFieldGeneral(String)
+- uid: KS.Misc.Reflection.FieldManager.GetFieldGeneral*
+  name: GetFieldGeneral
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFieldGeneral_
+  commentId: Overload:KS.Misc.Reflection.FieldManager.GetFieldGeneral
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.FieldManager.GetFieldGeneral
+  nameWithType: FieldManager.GetFieldGeneral
+- uid: KS.Misc.Reflection.FieldManager.GetFieldValue(System.String)
+  name: GetFieldValue(string)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFieldValue_System_String_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetFieldValue(System.String)
+  name.vb: GetFieldValue(String)
+  fullName: KS.Misc.Reflection.FieldManager.GetFieldValue(string)
+  fullName.vb: KS.Misc.Reflection.FieldManager.GetFieldValue(String)
+  nameWithType: FieldManager.GetFieldValue(string)
+  nameWithType.vb: FieldManager.GetFieldValue(String)
+- uid: KS.Misc.Reflection.FieldManager.GetFieldValue(System.String,System.Type,System.Boolean)
+  name: GetFieldValue(string, Type, bool)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFieldValue_System_String_System_Type_System_Boolean_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetFieldValue(System.String,System.Type,System.Boolean)
+  name.vb: GetFieldValue(String, Type, Boolean)
+  fullName: KS.Misc.Reflection.FieldManager.GetFieldValue(string, System.Type, bool)
+  fullName.vb: KS.Misc.Reflection.FieldManager.GetFieldValue(String, System.Type, Boolean)
+  nameWithType: FieldManager.GetFieldValue(string, Type, bool)
+  nameWithType.vb: FieldManager.GetFieldValue(String, Type, Boolean)
+- uid: KS.Misc.Reflection.FieldManager.GetFieldValue*
+  name: GetFieldValue
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFieldValue_
+  commentId: Overload:KS.Misc.Reflection.FieldManager.GetFieldValue
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.FieldManager.GetFieldValue
+  nameWithType: FieldManager.GetFieldValue
+- uid: KS.Misc.Reflection.FieldManager.GetFieldValueInstance*
+  name: GetFieldValueInstance
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFieldValueInstance_
+  commentId: Overload:KS.Misc.Reflection.FieldManager.GetFieldValueInstance
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.FieldManager.GetFieldValueInstance
+  nameWithType: FieldManager.GetFieldValueInstance
+- uid: KS.Misc.Reflection.FieldManager.GetFieldValueInstanceExplicit(System.Object,System.String,System.Type)
+  name: GetFieldValueInstanceExplicit(object, string, Type)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFieldValueInstanceExplicit_System_Object_System_String_System_Type_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetFieldValueInstanceExplicit(System.Object,System.String,System.Type)
+  name.vb: GetFieldValueInstanceExplicit(Object, String, Type)
+  fullName: KS.Misc.Reflection.FieldManager.GetFieldValueInstanceExplicit(object, string, System.Type)
+  fullName.vb: KS.Misc.Reflection.FieldManager.GetFieldValueInstanceExplicit(Object, String, System.Type)
+  nameWithType: FieldManager.GetFieldValueInstanceExplicit(object, string, Type)
+  nameWithType.vb: FieldManager.GetFieldValueInstanceExplicit(Object, String, Type)
+- uid: KS.Misc.Reflection.FieldManager.GetFieldValueInstanceExplicit*
+  name: GetFieldValueInstanceExplicit
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFieldValueInstanceExplicit_
+  commentId: Overload:KS.Misc.Reflection.FieldManager.GetFieldValueInstanceExplicit
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.FieldManager.GetFieldValueInstanceExplicit
+  nameWithType: FieldManager.GetFieldValueInstanceExplicit
+- uid: KS.Misc.Reflection.FieldManager.GetFieldValueInstance``1(``0,System.String)
+  name: GetFieldValueInstance<T>(T, string)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFieldValueInstance__1___0_System_String_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetFieldValueInstance``1(``0,System.String)
+  name.vb: GetFieldValueInstance(Of T)(T, String)
+  fullName: KS.Misc.Reflection.FieldManager.GetFieldValueInstance<T>(T, string)
+  fullName.vb: KS.Misc.Reflection.FieldManager.GetFieldValueInstance(Of T)(T, String)
+  nameWithType: FieldManager.GetFieldValueInstance<T>(T, string)
+  nameWithType.vb: FieldManager.GetFieldValueInstance(Of T)(T, String)
+- uid: KS.Misc.Reflection.FieldManager.GetFieldValueInstance``1(``0,System.String,System.Type)
+  name: GetFieldValueInstance<T>(T, string, Type)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFieldValueInstance__1___0_System_String_System_Type_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetFieldValueInstance``1(``0,System.String,System.Type)
+  name.vb: GetFieldValueInstance(Of T)(T, String, Type)
+  fullName: KS.Misc.Reflection.FieldManager.GetFieldValueInstance<T>(T, string, System.Type)
+  fullName.vb: KS.Misc.Reflection.FieldManager.GetFieldValueInstance(Of T)(T, String, System.Type)
+  nameWithType: FieldManager.GetFieldValueInstance<T>(T, string, Type)
+  nameWithType.vb: FieldManager.GetFieldValueInstance(Of T)(T, String, Type)
+- uid: KS.Misc.Reflection.FieldManager.GetFields(System.Type)
+  name: GetFields(Type)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFields_System_Type_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetFields(System.Type)
+  fullName: KS.Misc.Reflection.FieldManager.GetFields(System.Type)
+  nameWithType: FieldManager.GetFields(Type)
+- uid: KS.Misc.Reflection.FieldManager.GetFields*
+  name: GetFields
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFields_
+  commentId: Overload:KS.Misc.Reflection.FieldManager.GetFields
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.FieldManager.GetFields
+  nameWithType: FieldManager.GetFields
+- uid: KS.Misc.Reflection.FieldManager.GetFieldsNoEvaluation(System.Type)
+  name: GetFieldsNoEvaluation(Type)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFieldsNoEvaluation_System_Type_
+  commentId: M:KS.Misc.Reflection.FieldManager.GetFieldsNoEvaluation(System.Type)
+  fullName: KS.Misc.Reflection.FieldManager.GetFieldsNoEvaluation(System.Type)
+  nameWithType: FieldManager.GetFieldsNoEvaluation(Type)
+- uid: KS.Misc.Reflection.FieldManager.GetFieldsNoEvaluation*
+  name: GetFieldsNoEvaluation
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetFieldsNoEvaluation_
+  commentId: Overload:KS.Misc.Reflection.FieldManager.GetFieldsNoEvaluation
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.FieldManager.GetFieldsNoEvaluation
+  nameWithType: FieldManager.GetFieldsNoEvaluation
+- uid: KS.Misc.Reflection.FieldManager.SetFieldValue(System.String,System.Object)
+  name: SetFieldValue(string, object)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_SetFieldValue_System_String_System_Object_
+  commentId: M:KS.Misc.Reflection.FieldManager.SetFieldValue(System.String,System.Object)
+  name.vb: SetFieldValue(String, Object)
+  fullName: KS.Misc.Reflection.FieldManager.SetFieldValue(string, object)
+  fullName.vb: KS.Misc.Reflection.FieldManager.SetFieldValue(String, Object)
+  nameWithType: FieldManager.SetFieldValue(string, object)
+  nameWithType.vb: FieldManager.SetFieldValue(String, Object)
+- uid: KS.Misc.Reflection.FieldManager.SetFieldValue(System.String,System.Object,System.Type)
+  name: SetFieldValue(string, object, Type)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_SetFieldValue_System_String_System_Object_System_Type_
+  commentId: M:KS.Misc.Reflection.FieldManager.SetFieldValue(System.String,System.Object,System.Type)
+  name.vb: SetFieldValue(String, Object, Type)
+  fullName: KS.Misc.Reflection.FieldManager.SetFieldValue(string, object, System.Type)
+  fullName.vb: KS.Misc.Reflection.FieldManager.SetFieldValue(String, Object, System.Type)
+  nameWithType: FieldManager.SetFieldValue(string, object, Type)
+  nameWithType.vb: FieldManager.SetFieldValue(String, Object, Type)
+- uid: KS.Misc.Reflection.FieldManager.SetFieldValue*
+  name: SetFieldValue
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_SetFieldValue_
+  commentId: Overload:KS.Misc.Reflection.FieldManager.SetFieldValue
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.FieldManager.SetFieldValue
+  nameWithType: FieldManager.SetFieldValue
+- uid: KS.Misc.Reflection.FieldManager.SetFieldValueInstance*
+  name: SetFieldValueInstance
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_SetFieldValueInstance_
+  commentId: Overload:KS.Misc.Reflection.FieldManager.SetFieldValueInstance
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.FieldManager.SetFieldValueInstance
+  nameWithType: FieldManager.SetFieldValueInstance
+- uid: KS.Misc.Reflection.FieldManager.SetFieldValueInstanceExplicit(System.Object,System.String,System.Object,System.Type)
+  name: SetFieldValueInstanceExplicit(object, string, object, Type)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_SetFieldValueInstanceExplicit_System_Object_System_String_System_Object_System_Type_
+  commentId: M:KS.Misc.Reflection.FieldManager.SetFieldValueInstanceExplicit(System.Object,System.String,System.Object,System.Type)
+  name.vb: SetFieldValueInstanceExplicit(Object, String, Object, Type)
+  fullName: KS.Misc.Reflection.FieldManager.SetFieldValueInstanceExplicit(object, string, object, System.Type)
+  fullName.vb: KS.Misc.Reflection.FieldManager.SetFieldValueInstanceExplicit(Object, String, Object, System.Type)
+  nameWithType: FieldManager.SetFieldValueInstanceExplicit(object, string, object, Type)
+  nameWithType.vb: FieldManager.SetFieldValueInstanceExplicit(Object, String, Object, Type)
+- uid: KS.Misc.Reflection.FieldManager.SetFieldValueInstanceExplicit*
+  name: SetFieldValueInstanceExplicit
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_SetFieldValueInstanceExplicit_
+  commentId: Overload:KS.Misc.Reflection.FieldManager.SetFieldValueInstanceExplicit
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.FieldManager.SetFieldValueInstanceExplicit
+  nameWithType: FieldManager.SetFieldValueInstanceExplicit
+- uid: KS.Misc.Reflection.FieldManager.SetFieldValueInstance``1(``0,System.String,System.Object)
+  name: SetFieldValueInstance<T>(T, string, object)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_SetFieldValueInstance__1___0_System_String_System_Object_
+  commentId: M:KS.Misc.Reflection.FieldManager.SetFieldValueInstance``1(``0,System.String,System.Object)
+  name.vb: SetFieldValueInstance(Of T)(T, String, Object)
+  fullName: KS.Misc.Reflection.FieldManager.SetFieldValueInstance<T>(T, string, object)
+  fullName.vb: KS.Misc.Reflection.FieldManager.SetFieldValueInstance(Of T)(T, String, Object)
+  nameWithType: FieldManager.SetFieldValueInstance<T>(T, string, object)
+  nameWithType.vb: FieldManager.SetFieldValueInstance(Of T)(T, String, Object)
+- uid: KS.Misc.Reflection.FieldManager.SetFieldValueInstance``1(``0,System.String,System.Object,System.Type)
+  name: SetFieldValueInstance<T>(T, string, object, Type)
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_SetFieldValueInstance__1___0_System_String_System_Object_System_Type_
+  commentId: M:KS.Misc.Reflection.FieldManager.SetFieldValueInstance``1(``0,System.String,System.Object,System.Type)
+  name.vb: SetFieldValueInstance(Of T)(T, String, Object, Type)
+  fullName: KS.Misc.Reflection.FieldManager.SetFieldValueInstance<T>(T, string, object, System.Type)
+  fullName.vb: KS.Misc.Reflection.FieldManager.SetFieldValueInstance(Of T)(T, String, Object, System.Type)
+  nameWithType: FieldManager.SetFieldValueInstance<T>(T, string, object, Type)
+  nameWithType.vb: FieldManager.SetFieldValueInstance(Of T)(T, String, Object, Type)
 - uid: KS.Misc.Reflection.IntegerTools
   name: IntegerTools
   href: api/KS.Misc.Reflection.IntegerTools.html

@@ -2995,6 +2995,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Reflection.FieldManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Reflection.FieldManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Reflection.IntegerTools.yml",
       "output": {
         ".html": {
