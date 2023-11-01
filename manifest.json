@@ -2905,6 +2905,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Interactives.TimeZoneShowCli.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Interactives.TimeZoneShowCli.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Interactives.yml",
       "output": {
         ".html": {
