@@ -33027,24 +33027,24 @@ references:
   commentId: T:KS.Languages.LanguageInfo
   fullName: KS.Languages.LanguageInfo
   nameWithType: LanguageInfo
-- uid: KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32,System.String)
-  name: LanguageInfo(string, string, bool, int, string)
-  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_Int32_System_String_
-  commentId: M:KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32,System.String)
-  name.vb: New(String, String, Boolean, Integer, String)
-  fullName: KS.Languages.LanguageInfo.LanguageInfo(string, string, bool, int, string)
-  fullName.vb: KS.Languages.LanguageInfo.New(String, String, Boolean, Integer, String)
-  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, int, string)
-  nameWithType.vb: LanguageInfo.New(String, String, Boolean, Integer, String)
-- uid: KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.String[],System.String)
-  name: LanguageInfo(string, string, bool, string[], string)
-  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_String___System_String_
-  commentId: M:KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.String[],System.String)
-  name.vb: New(String, String, Boolean, String(), String)
-  fullName: KS.Languages.LanguageInfo.LanguageInfo(string, string, bool, string[], string)
-  fullName.vb: KS.Languages.LanguageInfo.New(String, String, Boolean, String(), String)
-  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, string[], string)
-  nameWithType.vb: LanguageInfo.New(String, String, Boolean, String(), String)
+- uid: KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32,System.String,System.String)
+  name: LanguageInfo(string, string, bool, int, string, string)
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_Int32_System_String_System_String_
+  commentId: M:KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32,System.String,System.String)
+  name.vb: New(String, String, Boolean, Integer, String, String)
+  fullName: KS.Languages.LanguageInfo.LanguageInfo(string, string, bool, int, string, string)
+  fullName.vb: KS.Languages.LanguageInfo.New(String, String, Boolean, Integer, String, String)
+  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, int, string, string)
+  nameWithType.vb: LanguageInfo.New(String, String, Boolean, Integer, String, String)
+- uid: KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.String[],System.String,System.String)
+  name: LanguageInfo(string, string, bool, string[], string, string)
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_String___System_String_System_String_
+  commentId: M:KS.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.String[],System.String,System.String)
+  name.vb: New(String, String, Boolean, String(), String, String)
+  fullName: KS.Languages.LanguageInfo.LanguageInfo(string, string, bool, string[], string, string)
+  fullName.vb: KS.Languages.LanguageInfo.New(String, String, Boolean, String(), String, String)
+  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, string[], string, string)
+  nameWithType.vb: LanguageInfo.New(String, String, Boolean, String(), String, String)
 - uid: KS.Languages.LanguageInfo.#ctor*
   name: LanguageInfo
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo__ctor_
@@ -33061,6 +33061,12 @@ references:
   commentId: F:KS.Languages.LanguageInfo.Codepage
   fullName: KS.Languages.LanguageInfo.Codepage
   nameWithType: LanguageInfo.Codepage
+- uid: KS.Languages.LanguageInfo.Country
+  name: Country
+  href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_Country
+  commentId: F:KS.Languages.LanguageInfo.Country
+  fullName: KS.Languages.LanguageInfo.Country
+  nameWithType: LanguageInfo.Country
 - uid: KS.Languages.LanguageInfo.CultureCode
   name: CultureCode
   href: api/KS.Languages.LanguageInfo.html#KS_Languages_LanguageInfo_CultureCode
@@ -33216,6 +33222,19 @@ references:
   isSpec: "True"
   fullName: KS.Languages.LanguageManager.ListAllLanguages
   nameWithType: LanguageManager.ListAllLanguages
+- uid: KS.Languages.LanguageManager.ListAllLanguagesWithCountry
+  name: ListAllLanguagesWithCountry()
+  href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_ListAllLanguagesWithCountry
+  commentId: M:KS.Languages.LanguageManager.ListAllLanguagesWithCountry
+  fullName: KS.Languages.LanguageManager.ListAllLanguagesWithCountry()
+  nameWithType: LanguageManager.ListAllLanguagesWithCountry()
+- uid: KS.Languages.LanguageManager.ListAllLanguagesWithCountry*
+  name: ListAllLanguagesWithCountry
+  href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_ListAllLanguagesWithCountry_
+  commentId: Overload:KS.Languages.LanguageManager.ListAllLanguagesWithCountry
+  isSpec: "True"
+  fullName: KS.Languages.LanguageManager.ListAllLanguagesWithCountry
+  nameWithType: LanguageManager.ListAllLanguagesWithCountry
 - uid: KS.Languages.LanguageManager.ListLanguages(System.String)
   name: ListLanguages(string)
   href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_ListLanguages_System_String_
@@ -33232,6 +33251,22 @@ references:
   isSpec: "True"
   fullName: KS.Languages.LanguageManager.ListLanguages
   nameWithType: LanguageManager.ListLanguages
+- uid: KS.Languages.LanguageManager.ListLanguagesWithCountry(System.String)
+  name: ListLanguagesWithCountry(string)
+  href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_ListLanguagesWithCountry_System_String_
+  commentId: M:KS.Languages.LanguageManager.ListLanguagesWithCountry(System.String)
+  name.vb: ListLanguagesWithCountry(String)
+  fullName: KS.Languages.LanguageManager.ListLanguagesWithCountry(string)
+  fullName.vb: KS.Languages.LanguageManager.ListLanguagesWithCountry(String)
+  nameWithType: LanguageManager.ListLanguagesWithCountry(string)
+  nameWithType.vb: LanguageManager.ListLanguagesWithCountry(String)
+- uid: KS.Languages.LanguageManager.ListLanguagesWithCountry*
+  name: ListLanguagesWithCountry
+  href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_ListLanguagesWithCountry_
+  commentId: Overload:KS.Languages.LanguageManager.ListLanguagesWithCountry
+  isSpec: "True"
+  fullName: KS.Languages.LanguageManager.ListLanguagesWithCountry
+  nameWithType: LanguageManager.ListLanguagesWithCountry
 - uid: KS.Languages.LanguageManager.SetCodepage
   name: SetCodepage
   href: api/KS.Languages.LanguageManager.html#KS_Languages_LanguageManager_SetCodepage

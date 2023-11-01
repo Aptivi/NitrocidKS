@@ -261,7 +261,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Languages_LanguageManager_InferLanguageFromSystem.md&amp;value=---%0Auid%3A%20KS.Languages.LanguageManager.InferLanguageFromSystem%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageManager.cs/#L388">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageManager.cs/#L416">View Source</a>
   </span>
   <a id="KS_Languages_LanguageManager_InferLanguageFromSystem_" data-uid="KS.Languages.LanguageManager.InferLanguageFromSystem*"></a>
   <h4 id="KS_Languages_LanguageManager_InferLanguageFromSystem" data-uid="KS.Languages.LanguageManager.InferLanguageFromSystem">InferLanguageFromSystem()</h4>
@@ -377,6 +377,37 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Languages_LanguageManager_ListAllLanguagesWithCountry.md&amp;value=---%0Auid%3A%20KS.Languages.LanguageManager.ListAllLanguagesWithCountry%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageManager.cs/#L387">View Source</a>
+  </span>
+  <a id="KS_Languages_LanguageManager_ListAllLanguagesWithCountry_" data-uid="KS.Languages.LanguageManager.ListAllLanguagesWithCountry*"></a>
+  <h4 id="KS_Languages_LanguageManager_ListAllLanguagesWithCountry" data-uid="KS.Languages.LanguageManager.ListAllLanguagesWithCountry">ListAllLanguagesWithCountry()</h4>
+  <div class="markdown level1 summary"><p>Lists all languages with their country specifiers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, LanguageInfo&gt; ListAllLanguagesWithCountry()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="KS.Languages.LanguageInfo.html">LanguageInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Languages_LanguageManager_ListLanguages_System_String_.md&amp;value=---%0Auid%3A%20KS.Languages.LanguageManager.ListLanguages(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -390,6 +421,55 @@
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, LanguageInfo&gt; ListLanguages(string SearchTerm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">SearchTerm</span></td>
+        <td><p>Search term</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="KS.Languages.LanguageInfo.html">LanguageInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Languages_LanguageManager_ListLanguagesWithCountry_System_String_.md&amp;value=---%0Auid%3A%20KS.Languages.LanguageManager.ListLanguagesWithCountry(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Languages/LanguageManager.cs/#L394">View Source</a>
+  </span>
+  <a id="KS_Languages_LanguageManager_ListLanguagesWithCountry_" data-uid="KS.Languages.LanguageManager.ListLanguagesWithCountry*"></a>
+  <h4 id="KS_Languages_LanguageManager_ListLanguagesWithCountry_System_String_" data-uid="KS.Languages.LanguageManager.ListLanguagesWithCountry(System.String)">ListLanguagesWithCountry(string)</h4>
+  <div class="markdown level1 summary"><p>Lists the languages with their country specifiers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, LanguageInfo&gt; ListLanguagesWithCountry(string SearchTerm)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
