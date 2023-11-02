@@ -37055,6 +37055,22 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Text.Probers.Motd.MalParse.ReadMal
   nameWithType: MalParse.ReadMal
+- uid: KS.Misc.Text.Probers.Motd.MalParse.RegisterDynamicMal(System.Func{System.String})
+  name: RegisterDynamicMal(Func<string>)
+  href: api/KS.Misc.Text.Probers.Motd.MalParse.html#KS_Misc_Text_Probers_Motd_MalParse_RegisterDynamicMal_System_Func_System_String__
+  commentId: M:KS.Misc.Text.Probers.Motd.MalParse.RegisterDynamicMal(System.Func{System.String})
+  name.vb: RegisterDynamicMal(Func(Of String))
+  fullName: KS.Misc.Text.Probers.Motd.MalParse.RegisterDynamicMal(System.Func<string>)
+  fullName.vb: KS.Misc.Text.Probers.Motd.MalParse.RegisterDynamicMal(System.Func(Of String))
+  nameWithType: MalParse.RegisterDynamicMal(Func<string>)
+  nameWithType.vb: MalParse.RegisterDynamicMal(Func(Of String))
+- uid: KS.Misc.Text.Probers.Motd.MalParse.RegisterDynamicMal*
+  name: RegisterDynamicMal
+  href: api/KS.Misc.Text.Probers.Motd.MalParse.html#KS_Misc_Text_Probers_Motd_MalParse_RegisterDynamicMal_
+  commentId: Overload:KS.Misc.Text.Probers.Motd.MalParse.RegisterDynamicMal
+  isSpec: "True"
+  fullName: KS.Misc.Text.Probers.Motd.MalParse.RegisterDynamicMal
+  nameWithType: MalParse.RegisterDynamicMal
 - uid: KS.Misc.Text.Probers.Motd.MalParse.SetMal(System.String)
   name: SetMal(string)
   href: api/KS.Misc.Text.Probers.Motd.MalParse.html#KS_Misc_Text_Probers_Motd_MalParse_SetMal_System_String_
@@ -37071,6 +37087,22 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Text.Probers.Motd.MalParse.SetMal
   nameWithType: MalParse.SetMal
+- uid: KS.Misc.Text.Probers.Motd.MalParse.UnregisterDynamicMal(System.Func{System.String})
+  name: UnregisterDynamicMal(Func<string>)
+  href: api/KS.Misc.Text.Probers.Motd.MalParse.html#KS_Misc_Text_Probers_Motd_MalParse_UnregisterDynamicMal_System_Func_System_String__
+  commentId: M:KS.Misc.Text.Probers.Motd.MalParse.UnregisterDynamicMal(System.Func{System.String})
+  name.vb: UnregisterDynamicMal(Func(Of String))
+  fullName: KS.Misc.Text.Probers.Motd.MalParse.UnregisterDynamicMal(System.Func<string>)
+  fullName.vb: KS.Misc.Text.Probers.Motd.MalParse.UnregisterDynamicMal(System.Func(Of String))
+  nameWithType: MalParse.UnregisterDynamicMal(Func<string>)
+  nameWithType.vb: MalParse.UnregisterDynamicMal(Func(Of String))
+- uid: KS.Misc.Text.Probers.Motd.MalParse.UnregisterDynamicMal*
+  name: UnregisterDynamicMal
+  href: api/KS.Misc.Text.Probers.Motd.MalParse.html#KS_Misc_Text_Probers_Motd_MalParse_UnregisterDynamicMal_
+  commentId: Overload:KS.Misc.Text.Probers.Motd.MalParse.UnregisterDynamicMal
+  isSpec: "True"
+  fullName: KS.Misc.Text.Probers.Motd.MalParse.UnregisterDynamicMal
+  nameWithType: MalParse.UnregisterDynamicMal
 - uid: KS.Misc.Text.Probers.Motd.MotdParse
   name: MotdParse
   href: api/KS.Misc.Text.Probers.Motd.MotdParse.html
@@ -37129,6 +37161,22 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Text.Probers.Motd.MotdParse.ReadMotd
   nameWithType: MotdParse.ReadMotd
+- uid: KS.Misc.Text.Probers.Motd.MotdParse.RegisterDynamicMotd(System.Func{System.String})
+  name: RegisterDynamicMotd(Func<string>)
+  href: api/KS.Misc.Text.Probers.Motd.MotdParse.html#KS_Misc_Text_Probers_Motd_MotdParse_RegisterDynamicMotd_System_Func_System_String__
+  commentId: M:KS.Misc.Text.Probers.Motd.MotdParse.RegisterDynamicMotd(System.Func{System.String})
+  name.vb: RegisterDynamicMotd(Func(Of String))
+  fullName: KS.Misc.Text.Probers.Motd.MotdParse.RegisterDynamicMotd(System.Func<string>)
+  fullName.vb: KS.Misc.Text.Probers.Motd.MotdParse.RegisterDynamicMotd(System.Func(Of String))
+  nameWithType: MotdParse.RegisterDynamicMotd(Func<string>)
+  nameWithType.vb: MotdParse.RegisterDynamicMotd(Func(Of String))
+- uid: KS.Misc.Text.Probers.Motd.MotdParse.RegisterDynamicMotd*
+  name: RegisterDynamicMotd
+  href: api/KS.Misc.Text.Probers.Motd.MotdParse.html#KS_Misc_Text_Probers_Motd_MotdParse_RegisterDynamicMotd_
+  commentId: Overload:KS.Misc.Text.Probers.Motd.MotdParse.RegisterDynamicMotd
+  isSpec: "True"
+  fullName: KS.Misc.Text.Probers.Motd.MotdParse.RegisterDynamicMotd
+  nameWithType: MotdParse.RegisterDynamicMotd
 - uid: KS.Misc.Text.Probers.Motd.MotdParse.SetMotd(System.String)
   name: SetMotd(string)
   href: api/KS.Misc.Text.Probers.Motd.MotdParse.html#KS_Misc_Text_Probers_Motd_MotdParse_SetMotd_System_String_
@@ -37145,6 +37193,22 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Text.Probers.Motd.MotdParse.SetMotd
   nameWithType: MotdParse.SetMotd
+- uid: KS.Misc.Text.Probers.Motd.MotdParse.UnregisterDynamicMotd(System.Func{System.String})
+  name: UnregisterDynamicMotd(Func<string>)
+  href: api/KS.Misc.Text.Probers.Motd.MotdParse.html#KS_Misc_Text_Probers_Motd_MotdParse_UnregisterDynamicMotd_System_Func_System_String__
+  commentId: M:KS.Misc.Text.Probers.Motd.MotdParse.UnregisterDynamicMotd(System.Func{System.String})
+  name.vb: UnregisterDynamicMotd(Func(Of String))
+  fullName: KS.Misc.Text.Probers.Motd.MotdParse.UnregisterDynamicMotd(System.Func<string>)
+  fullName.vb: KS.Misc.Text.Probers.Motd.MotdParse.UnregisterDynamicMotd(System.Func(Of String))
+  nameWithType: MotdParse.UnregisterDynamicMotd(Func<string>)
+  nameWithType.vb: MotdParse.UnregisterDynamicMotd(Func(Of String))
+- uid: KS.Misc.Text.Probers.Motd.MotdParse.UnregisterDynamicMotd*
+  name: UnregisterDynamicMotd
+  href: api/KS.Misc.Text.Probers.Motd.MotdParse.html#KS_Misc_Text_Probers_Motd_MotdParse_UnregisterDynamicMotd_
+  commentId: Overload:KS.Misc.Text.Probers.Motd.MotdParse.UnregisterDynamicMotd
+  isSpec: "True"
+  fullName: KS.Misc.Text.Probers.Motd.MotdParse.UnregisterDynamicMotd
+  nameWithType: MotdParse.UnregisterDynamicMotd
 - uid: KS.Misc.Text.Probers.Placeholder
   name: KS.Misc.Text.Probers.Placeholder
   href: api/KS.Misc.Text.Probers.Placeholder.html
