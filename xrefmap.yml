@@ -5049,6 +5049,19 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Themes.ThemeInfo.TrueColorRequired
   nameWithType: ThemeInfo.TrueColorRequired
+- uid: KS.ConsoleBase.Themes.ThemeInfo.UseAccentTypes
+  name: UseAccentTypes
+  href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo_UseAccentTypes
+  commentId: P:KS.ConsoleBase.Themes.ThemeInfo.UseAccentTypes
+  fullName: KS.ConsoleBase.Themes.ThemeInfo.UseAccentTypes
+  nameWithType: ThemeInfo.UseAccentTypes
+- uid: KS.ConsoleBase.Themes.ThemeInfo.UseAccentTypes*
+  name: UseAccentTypes
+  href: api/KS.ConsoleBase.Themes.ThemeInfo.html#KS_ConsoleBase_Themes_ThemeInfo_UseAccentTypes_
+  commentId: Overload:KS.ConsoleBase.Themes.ThemeInfo.UseAccentTypes
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Themes.ThemeInfo.UseAccentTypes
+  nameWithType: ThemeInfo.UseAccentTypes
 - uid: KS.ConsoleBase.Themes.ThemePreviewTools
   name: ThemePreviewTools
   href: api/KS.ConsoleBase.Themes.ThemePreviewTools.html
@@ -23268,6 +23281,32 @@ references:
   commentId: T:KS.Kernel.Configuration.Instances.KernelMainConfig
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig
   nameWithType: KernelMainConfig
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.AccentBackgroundColor
+  name: AccentBackgroundColor
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_AccentBackgroundColor
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.AccentBackgroundColor
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.AccentBackgroundColor
+  nameWithType: KernelMainConfig.AccentBackgroundColor
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.AccentBackgroundColor*
+  name: AccentBackgroundColor
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_AccentBackgroundColor_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.AccentBackgroundColor
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.AccentBackgroundColor
+  nameWithType: KernelMainConfig.AccentBackgroundColor
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.AccentForegroundColor
+  name: AccentForegroundColor
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_AccentForegroundColor
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.AccentForegroundColor
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.AccentForegroundColor
+  nameWithType: KernelMainConfig.AccentForegroundColor
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.AccentForegroundColor*
+  name: AccentForegroundColor
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_AccentForegroundColor_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.AccentForegroundColor
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.AccentForegroundColor
+  nameWithType: KernelMainConfig.AccentForegroundColor
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.AdminShellPromptPreset
   name: AdminShellPromptPreset
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_AdminShellPromptPreset
@@ -26453,6 +26492,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.UploadRetries
   nameWithType: KernelMainConfig.UploadRetries
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.UseAccentColors
+  name: UseAccentColors
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_UseAccentColors
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.UseAccentColors
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.UseAccentColors
+  nameWithType: KernelMainConfig.UseAccentColors
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.UseAccentColors*
+  name: UseAccentColors
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_UseAccentColors_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.UseAccentColors
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.UseAccentColors
+  nameWithType: KernelMainConfig.UseAccentColors
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.UseNewColorSelector
   name: UseNewColorSelector
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_UseNewColorSelector
@@ -41376,6 +41428,19 @@ references:
   isSpec: "True"
   fullName: KS.Resources.ThemesResources.Default
   nameWithType: ThemesResources.Default
+- uid: KS.Resources.ThemesResources.Dynamic
+  name: Dynamic
+  href: api/KS.Resources.ThemesResources.html#KS_Resources_ThemesResources_Dynamic
+  commentId: P:KS.Resources.ThemesResources.Dynamic
+  fullName: KS.Resources.ThemesResources.Dynamic
+  nameWithType: ThemesResources.Dynamic
+- uid: KS.Resources.ThemesResources.Dynamic*
+  name: Dynamic
+  href: api/KS.Resources.ThemesResources.html#KS_Resources_ThemesResources_Dynamic_
+  commentId: Overload:KS.Resources.ThemesResources.Dynamic
+  isSpec: "True"
+  fullName: KS.Resources.ThemesResources.Dynamic
+  nameWithType: ThemesResources.Dynamic
 - uid: KS.Resources.ThemesResources.ResourceManager
   name: ResourceManager
   href: api/KS.Resources.ThemesResources.html#KS_Resources_ThemesResources_ResourceManager
