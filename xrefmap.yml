@@ -26076,6 +26076,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.UseAccentColors
   nameWithType: KernelMainConfig.UseAccentColors
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.UseConsoleColorPalette
+  name: UseConsoleColorPalette
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_UseConsoleColorPalette
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.UseConsoleColorPalette
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.UseConsoleColorPalette
+  nameWithType: KernelMainConfig.UseConsoleColorPalette
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.UseConsoleColorPalette*
+  name: UseConsoleColorPalette
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_UseConsoleColorPalette_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.UseConsoleColorPalette
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.UseConsoleColorPalette
+  nameWithType: KernelMainConfig.UseConsoleColorPalette
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.UseNewColorSelector
   name: UseNewColorSelector
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_UseNewColorSelector
