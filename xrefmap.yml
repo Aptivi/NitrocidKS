@@ -23918,6 +23918,32 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.DebugPort
   nameWithType: KernelMainConfig.DebugPort
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaCheck
+  name: DebugQuotaCheck
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_DebugQuotaCheck
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaCheck
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaCheck
+  nameWithType: KernelMainConfig.DebugQuotaCheck
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaCheck*
+  name: DebugQuotaCheck
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_DebugQuotaCheck_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaCheck
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaCheck
+  nameWithType: KernelMainConfig.DebugQuotaCheck
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaLines
+  name: DebugQuotaLines
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_DebugQuotaLines
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaLines
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaLines
+  nameWithType: KernelMainConfig.DebugQuotaLines
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaLines*
+  name: DebugQuotaLines
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_DebugQuotaLines_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaLines
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaLines
+  nameWithType: KernelMainConfig.DebugQuotaLines
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.DebugShellPromptPreset
   name: DebugShellPromptPreset
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_DebugShellPromptPreset
@@ -27426,6 +27452,32 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Debugging.DebugWriter.DebugCensorPrivateInfo
   nameWithType: DebugWriter.DebugCensorPrivateInfo
+- uid: KS.Kernel.Debugging.DebugWriter.DebugQuotaCheck
+  name: DebugQuotaCheck
+  href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_DebugQuotaCheck
+  commentId: P:KS.Kernel.Debugging.DebugWriter.DebugQuotaCheck
+  fullName: KS.Kernel.Debugging.DebugWriter.DebugQuotaCheck
+  nameWithType: DebugWriter.DebugQuotaCheck
+- uid: KS.Kernel.Debugging.DebugWriter.DebugQuotaCheck*
+  name: DebugQuotaCheck
+  href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_DebugQuotaCheck_
+  commentId: Overload:KS.Kernel.Debugging.DebugWriter.DebugQuotaCheck
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.DebugWriter.DebugQuotaCheck
+  nameWithType: DebugWriter.DebugQuotaCheck
+- uid: KS.Kernel.Debugging.DebugWriter.DebugQuotaLines
+  name: DebugQuotaLines
+  href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_DebugQuotaLines
+  commentId: P:KS.Kernel.Debugging.DebugWriter.DebugQuotaLines
+  fullName: KS.Kernel.Debugging.DebugWriter.DebugQuotaLines
+  nameWithType: DebugWriter.DebugQuotaLines
+- uid: KS.Kernel.Debugging.DebugWriter.DebugQuotaLines*
+  name: DebugQuotaLines
+  href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_DebugQuotaLines_
+  commentId: Overload:KS.Kernel.Debugging.DebugWriter.DebugQuotaLines
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.DebugWriter.DebugQuotaLines
+  nameWithType: DebugWriter.DebugQuotaLines
 - uid: KS.Kernel.Debugging.DebugWriter.DebugStackTraces
   name: DebugStackTraces
   href: api/KS.Kernel.Debugging.DebugWriter.html#KS_Kernel_Debugging_DebugWriter_DebugStackTraces
