@@ -20131,6 +20131,28 @@ references:
   isSpec: "True"
   fullName: KS.Files.Extensions.ExtensionHandlerTools.UnregisterHandlers
   nameWithType: ExtensionHandlerTools.UnregisterHandlers
+- uid: KS.Files.Extensions.MimeTypes
+  name: MimeTypes
+  href: api/KS.Files.Extensions.MimeTypes.html
+  commentId: T:KS.Files.Extensions.MimeTypes
+  fullName: KS.Files.Extensions.MimeTypes
+  nameWithType: MimeTypes
+- uid: KS.Files.Extensions.MimeTypes.GetMimeType(System.String)
+  name: GetMimeType(string)
+  href: api/KS.Files.Extensions.MimeTypes.html#KS_Files_Extensions_MimeTypes_GetMimeType_System_String_
+  commentId: M:KS.Files.Extensions.MimeTypes.GetMimeType(System.String)
+  name.vb: GetMimeType(String)
+  fullName: KS.Files.Extensions.MimeTypes.GetMimeType(string)
+  fullName.vb: KS.Files.Extensions.MimeTypes.GetMimeType(String)
+  nameWithType: MimeTypes.GetMimeType(string)
+  nameWithType.vb: MimeTypes.GetMimeType(String)
+- uid: KS.Files.Extensions.MimeTypes.GetMimeType*
+  name: GetMimeType
+  href: api/KS.Files.Extensions.MimeTypes.html#KS_Files_Extensions_MimeTypes_GetMimeType_
+  commentId: Overload:KS.Files.Extensions.MimeTypes.GetMimeType
+  isSpec: "True"
+  fullName: KS.Files.Extensions.MimeTypes.GetMimeType
+  nameWithType: MimeTypes.GetMimeType
 - uid: KS.Files.Extensions.Opening
   name: Opening
   href: api/KS.Files.Extensions.Opening.html

@@ -1565,6 +1565,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Extensions.MimeTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Extensions.MimeTypes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Files.Extensions.Opening.yml",
       "output": {
         ".html": {
