@@ -23166,6 +23166,28 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.ConfigTools.GetSettingsEntries
   nameWithType: ConfigTools.GetSettingsEntries
+- uid: KS.Kernel.Configuration.ConfigTools.GetSettingsKeys(KS.Kernel.Configuration.Instances.BaseKernelConfig)
+  name: GetSettingsKeys(BaseKernelConfig)
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_GetSettingsKeys_KS_Kernel_Configuration_Instances_BaseKernelConfig_
+  commentId: M:KS.Kernel.Configuration.ConfigTools.GetSettingsKeys(KS.Kernel.Configuration.Instances.BaseKernelConfig)
+  fullName: KS.Kernel.Configuration.ConfigTools.GetSettingsKeys(KS.Kernel.Configuration.Instances.BaseKernelConfig)
+  nameWithType: ConfigTools.GetSettingsKeys(BaseKernelConfig)
+- uid: KS.Kernel.Configuration.ConfigTools.GetSettingsKeys(System.String)
+  name: GetSettingsKeys(string)
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_GetSettingsKeys_System_String_
+  commentId: M:KS.Kernel.Configuration.ConfigTools.GetSettingsKeys(System.String)
+  name.vb: GetSettingsKeys(String)
+  fullName: KS.Kernel.Configuration.ConfigTools.GetSettingsKeys(string)
+  fullName.vb: KS.Kernel.Configuration.ConfigTools.GetSettingsKeys(String)
+  nameWithType: ConfigTools.GetSettingsKeys(string)
+  nameWithType.vb: ConfigTools.GetSettingsKeys(String)
+- uid: KS.Kernel.Configuration.ConfigTools.GetSettingsKeys*
+  name: GetSettingsKeys
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_GetSettingsKeys_
+  commentId: Overload:KS.Kernel.Configuration.ConfigTools.GetSettingsKeys
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.ConfigTools.GetSettingsKeys
+  nameWithType: ConfigTools.GetSettingsKeys
 - uid: KS.Kernel.Configuration.ConfigTools.GetValueFromEntry(KS.Kernel.Configuration.Settings.SettingsKey,KS.Kernel.Configuration.Instances.BaseKernelConfig)
   name: GetValueFromEntry(SettingsKey, BaseKernelConfig)
   href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_GetValueFromEntry_KS_Kernel_Configuration_Settings_SettingsKey_KS_Kernel_Configuration_Instances_BaseKernelConfig_
