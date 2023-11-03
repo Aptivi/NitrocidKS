@@ -24421,6 +24421,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.KernelStageColor
   nameWithType: KernelMainConfig.KernelStageColor
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.KernelWideTimeZone
+  name: KernelWideTimeZone
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_KernelWideTimeZone
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.KernelWideTimeZone
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.KernelWideTimeZone
+  nameWithType: KernelMainConfig.KernelWideTimeZone
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.KernelWideTimeZone*
+  name: KernelWideTimeZone
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_KernelWideTimeZone_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.KernelWideTimeZone
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.KernelWideTimeZone
+  nameWithType: KernelMainConfig.KernelWideTimeZone
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.LangChangeCulture
   name: LangChangeCulture
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_LangChangeCulture
@@ -26124,6 +26137,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.UseNewColorSelector
   nameWithType: KernelMainConfig.UseNewColorSelector
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.UseSystemTimeZone
+  name: UseSystemTimeZone
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_UseSystemTimeZone
+  commentId: P:KS.Kernel.Configuration.Instances.KernelMainConfig.UseSystemTimeZone
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.UseSystemTimeZone
+  nameWithType: KernelMainConfig.UseSystemTimeZone
+- uid: KS.Kernel.Configuration.Instances.KernelMainConfig.UseSystemTimeZone*
+  name: UseSystemTimeZone
+  href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_UseSystemTimeZone_
+  commentId: Overload:KS.Kernel.Configuration.Instances.KernelMainConfig.UseSystemTimeZone
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.Instances.KernelMainConfig.UseSystemTimeZone
+  nameWithType: KernelMainConfig.UseSystemTimeZone
 - uid: KS.Kernel.Configuration.Instances.KernelMainConfig.UserDollarColor
   name: UserDollarColor
   href: api/KS.Kernel.Configuration.Instances.KernelMainConfig.html#KS_Kernel_Configuration_Instances_KernelMainConfig_UserDollarColor
@@ -32379,6 +32405,19 @@ references:
   commentId: T:KS.Kernel.Time.Timezones.TimeZones
   fullName: KS.Kernel.Time.Timezones.TimeZones
   nameWithType: TimeZones
+- uid: KS.Kernel.Time.Timezones.TimeZones.GetCurrentZoneInfo
+  name: GetCurrentZoneInfo()
+  href: api/KS.Kernel.Time.Timezones.TimeZones.html#KS_Kernel_Time_Timezones_TimeZones_GetCurrentZoneInfo
+  commentId: M:KS.Kernel.Time.Timezones.TimeZones.GetCurrentZoneInfo
+  fullName: KS.Kernel.Time.Timezones.TimeZones.GetCurrentZoneInfo()
+  nameWithType: TimeZones.GetCurrentZoneInfo()
+- uid: KS.Kernel.Time.Timezones.TimeZones.GetCurrentZoneInfo*
+  name: GetCurrentZoneInfo
+  href: api/KS.Kernel.Time.Timezones.TimeZones.html#KS_Kernel_Time_Timezones_TimeZones_GetCurrentZoneInfo_
+  commentId: Overload:KS.Kernel.Time.Timezones.TimeZones.GetCurrentZoneInfo
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Timezones.TimeZones.GetCurrentZoneInfo
+  nameWithType: TimeZones.GetCurrentZoneInfo
 - uid: KS.Kernel.Time.Timezones.TimeZones.GetTimeZoneNames
   name: GetTimeZoneNames()
   href: api/KS.Kernel.Time.Timezones.TimeZones.html#KS_Kernel_Time_Timezones_TimeZones_GetTimeZoneNames
