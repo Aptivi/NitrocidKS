@@ -23166,6 +23166,31 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Configuration.ConfigTools.GetSettingsEntries
   nameWithType: ConfigTools.GetSettingsEntries
+- uid: KS.Kernel.Configuration.ConfigTools.GetSettingsKey(KS.Kernel.Configuration.Instances.BaseKernelConfig,System.String)
+  name: GetSettingsKey(BaseKernelConfig, string)
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_GetSettingsKey_KS_Kernel_Configuration_Instances_BaseKernelConfig_System_String_
+  commentId: M:KS.Kernel.Configuration.ConfigTools.GetSettingsKey(KS.Kernel.Configuration.Instances.BaseKernelConfig,System.String)
+  name.vb: GetSettingsKey(BaseKernelConfig, String)
+  fullName: KS.Kernel.Configuration.ConfigTools.GetSettingsKey(KS.Kernel.Configuration.Instances.BaseKernelConfig, string)
+  fullName.vb: KS.Kernel.Configuration.ConfigTools.GetSettingsKey(KS.Kernel.Configuration.Instances.BaseKernelConfig, String)
+  nameWithType: ConfigTools.GetSettingsKey(BaseKernelConfig, string)
+  nameWithType.vb: ConfigTools.GetSettingsKey(BaseKernelConfig, String)
+- uid: KS.Kernel.Configuration.ConfigTools.GetSettingsKey(System.String,System.String)
+  name: GetSettingsKey(string, string)
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_GetSettingsKey_System_String_System_String_
+  commentId: M:KS.Kernel.Configuration.ConfigTools.GetSettingsKey(System.String,System.String)
+  name.vb: GetSettingsKey(String, String)
+  fullName: KS.Kernel.Configuration.ConfigTools.GetSettingsKey(string, string)
+  fullName.vb: KS.Kernel.Configuration.ConfigTools.GetSettingsKey(String, String)
+  nameWithType: ConfigTools.GetSettingsKey(string, string)
+  nameWithType.vb: ConfigTools.GetSettingsKey(String, String)
+- uid: KS.Kernel.Configuration.ConfigTools.GetSettingsKey*
+  name: GetSettingsKey
+  href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_GetSettingsKey_
+  commentId: Overload:KS.Kernel.Configuration.ConfigTools.GetSettingsKey
+  isSpec: "True"
+  fullName: KS.Kernel.Configuration.ConfigTools.GetSettingsKey
+  nameWithType: ConfigTools.GetSettingsKey
 - uid: KS.Kernel.Configuration.ConfigTools.GetSettingsKeys(KS.Kernel.Configuration.Instances.BaseKernelConfig)
   name: GetSettingsKeys(BaseKernelConfig)
   href: api/KS.Kernel.Configuration.ConfigTools.html#KS_Kernel_Configuration_ConfigTools_GetSettingsKeys_KS_Kernel_Configuration_Instances_BaseKernelConfig_
@@ -29982,6 +30007,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.KernelPlatform.IsRunningFromGrilo
   nameWithType: KernelPlatform.IsRunningFromGrilo
+- uid: KS.Kernel.KernelPlatform.IsRunningFromScreen
+  name: IsRunningFromScreen()
+  href: api/KS.Kernel.KernelPlatform.html#KS_Kernel_KernelPlatform_IsRunningFromScreen
+  commentId: M:KS.Kernel.KernelPlatform.IsRunningFromScreen
+  fullName: KS.Kernel.KernelPlatform.IsRunningFromScreen()
+  nameWithType: KernelPlatform.IsRunningFromScreen()
+- uid: KS.Kernel.KernelPlatform.IsRunningFromScreen*
+  name: IsRunningFromScreen
+  href: api/KS.Kernel.KernelPlatform.html#KS_Kernel_KernelPlatform_IsRunningFromScreen_
+  commentId: Overload:KS.Kernel.KernelPlatform.IsRunningFromScreen
+  isSpec: "True"
+  fullName: KS.Kernel.KernelPlatform.IsRunningFromScreen
+  nameWithType: KernelPlatform.IsRunningFromScreen
 - uid: KS.Kernel.KernelPlatform.IsRunningFromTmux
   name: IsRunningFromTmux()
   href: api/KS.Kernel.KernelPlatform.html#KS_Kernel_KernelPlatform_IsRunningFromTmux
@@ -32149,6 +32187,31 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTime
   nameWithType: TimeZoneRenderers.GetZoneTime
+- uid: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeDateString(System.String)
+  name: GetZoneTimeDateString(string)
+  href: api/KS.Kernel.Time.Timezones.TimeZoneRenderers.html#KS_Kernel_Time_Timezones_TimeZoneRenderers_GetZoneTimeDateString_System_String_
+  commentId: M:KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeDateString(System.String)
+  name.vb: GetZoneTimeDateString(String)
+  fullName: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeDateString(string)
+  fullName.vb: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeDateString(String)
+  nameWithType: TimeZoneRenderers.GetZoneTimeDateString(string)
+  nameWithType.vb: TimeZoneRenderers.GetZoneTimeDateString(String)
+- uid: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeDateString(System.String,KS.Kernel.Time.FormatType)
+  name: GetZoneTimeDateString(string, FormatType)
+  href: api/KS.Kernel.Time.Timezones.TimeZoneRenderers.html#KS_Kernel_Time_Timezones_TimeZoneRenderers_GetZoneTimeDateString_System_String_KS_Kernel_Time_FormatType_
+  commentId: M:KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeDateString(System.String,KS.Kernel.Time.FormatType)
+  name.vb: GetZoneTimeDateString(String, FormatType)
+  fullName: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeDateString(string, KS.Kernel.Time.FormatType)
+  fullName.vb: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeDateString(String, KS.Kernel.Time.FormatType)
+  nameWithType: TimeZoneRenderers.GetZoneTimeDateString(string, FormatType)
+  nameWithType.vb: TimeZoneRenderers.GetZoneTimeDateString(String, FormatType)
+- uid: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeDateString*
+  name: GetZoneTimeDateString
+  href: api/KS.Kernel.Time.Timezones.TimeZoneRenderers.html#KS_Kernel_Time_Timezones_TimeZoneRenderers_GetZoneTimeDateString_
+  commentId: Overload:KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeDateString
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeDateString
+  nameWithType: TimeZoneRenderers.GetZoneTimeDateString
 - uid: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeString(System.String)
   name: GetZoneTimeString(string)
   href: api/KS.Kernel.Time.Timezones.TimeZoneRenderers.html#KS_Kernel_Time_Timezones_TimeZoneRenderers_GetZoneTimeString_System_String_
@@ -32183,6 +32246,31 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeString
   nameWithType: TimeZoneRenderers.GetZoneTimeString
+- uid: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeTimeString(System.String)
+  name: GetZoneTimeTimeString(string)
+  href: api/KS.Kernel.Time.Timezones.TimeZoneRenderers.html#KS_Kernel_Time_Timezones_TimeZoneRenderers_GetZoneTimeTimeString_System_String_
+  commentId: M:KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeTimeString(System.String)
+  name.vb: GetZoneTimeTimeString(String)
+  fullName: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeTimeString(string)
+  fullName.vb: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeTimeString(String)
+  nameWithType: TimeZoneRenderers.GetZoneTimeTimeString(string)
+  nameWithType.vb: TimeZoneRenderers.GetZoneTimeTimeString(String)
+- uid: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeTimeString(System.String,KS.Kernel.Time.FormatType)
+  name: GetZoneTimeTimeString(string, FormatType)
+  href: api/KS.Kernel.Time.Timezones.TimeZoneRenderers.html#KS_Kernel_Time_Timezones_TimeZoneRenderers_GetZoneTimeTimeString_System_String_KS_Kernel_Time_FormatType_
+  commentId: M:KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeTimeString(System.String,KS.Kernel.Time.FormatType)
+  name.vb: GetZoneTimeTimeString(String, FormatType)
+  fullName: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeTimeString(string, KS.Kernel.Time.FormatType)
+  fullName.vb: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeTimeString(String, KS.Kernel.Time.FormatType)
+  nameWithType: TimeZoneRenderers.GetZoneTimeTimeString(string, FormatType)
+  nameWithType.vb: TimeZoneRenderers.GetZoneTimeTimeString(String, FormatType)
+- uid: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeTimeString*
+  name: GetZoneTimeTimeString
+  href: api/KS.Kernel.Time.Timezones.TimeZoneRenderers.html#KS_Kernel_Time_Timezones_TimeZoneRenderers_GetZoneTimeTimeString_
+  commentId: Overload:KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeTimeString
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Timezones.TimeZoneRenderers.GetZoneTimeTimeString
+  nameWithType: TimeZoneRenderers.GetZoneTimeTimeString
 - uid: KS.Kernel.Time.Timezones.TimeZoneRenderers.ShowAllTimeZones
   name: ShowAllTimeZones()
   href: api/KS.Kernel.Time.Timezones.TimeZoneRenderers.html#KS_Kernel_Time_Timezones_TimeZoneRenderers_ShowAllTimeZones
