@@ -2215,6 +2215,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice.yml",
       "output": {
         ".html": {
