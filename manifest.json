@@ -3395,6 +3395,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Modifications.Communication.InterModTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Modifications.Communication.InterModTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Modifications.Communication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Modifications.Communication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Modifications.Dependencies.ModDependency.yml",
       "output": {
         ".html": {

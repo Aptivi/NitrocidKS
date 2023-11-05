@@ -37467,6 +37467,107 @@ references:
   commentId: N:KS.Modifications
   fullName: KS.Modifications
   nameWithType: KS.Modifications
+- uid: KS.Modifications.Communication
+  name: KS.Modifications.Communication
+  href: api/KS.Modifications.Communication.html
+  commentId: N:KS.Modifications.Communication
+  fullName: KS.Modifications.Communication
+  nameWithType: KS.Modifications.Communication
+- uid: KS.Modifications.Communication.InterModTools
+  name: InterModTools
+  href: api/KS.Modifications.Communication.InterModTools.html
+  commentId: T:KS.Modifications.Communication.InterModTools
+  fullName: KS.Modifications.Communication.InterModTools
+  nameWithType: InterModTools
+- uid: KS.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String)
+  name: ExecuteCustomModFunction(string, string)
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_ExecuteCustomModFunction_System_String_System_String_
+  commentId: M:KS.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String)
+  name.vb: ExecuteCustomModFunction(String, String)
+  fullName: KS.Modifications.Communication.InterModTools.ExecuteCustomModFunction(string, string)
+  fullName.vb: KS.Modifications.Communication.InterModTools.ExecuteCustomModFunction(String, String)
+  nameWithType: InterModTools.ExecuteCustomModFunction(string, string)
+  nameWithType.vb: InterModTools.ExecuteCustomModFunction(String, String)
+- uid: KS.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.Object[])
+  name: ExecuteCustomModFunction(string, string, params object[])
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_ExecuteCustomModFunction_System_String_System_String_System_Object___
+  commentId: M:KS.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.Object[])
+  name.vb: ExecuteCustomModFunction(String, String, ParamArray Object())
+  fullName: KS.Modifications.Communication.InterModTools.ExecuteCustomModFunction(string, string, params object[])
+  fullName.vb: KS.Modifications.Communication.InterModTools.ExecuteCustomModFunction(String, String, ParamArray Object())
+  nameWithType: InterModTools.ExecuteCustomModFunction(string, string, params object[])
+  nameWithType.vb: InterModTools.ExecuteCustomModFunction(String, String, ParamArray Object())
+- uid: KS.Modifications.Communication.InterModTools.ExecuteCustomModFunction*
+  name: ExecuteCustomModFunction
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_ExecuteCustomModFunction_
+  commentId: Overload:KS.Modifications.Communication.InterModTools.ExecuteCustomModFunction
+  isSpec: "True"
+  fullName: KS.Modifications.Communication.InterModTools.ExecuteCustomModFunction
+  nameWithType: InterModTools.ExecuteCustomModFunction
+- uid: KS.Modifications.Communication.InterModTools.GetCustomModFieldValue(System.String,System.String)
+  name: GetCustomModFieldValue(string, string)
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_GetCustomModFieldValue_System_String_System_String_
+  commentId: M:KS.Modifications.Communication.InterModTools.GetCustomModFieldValue(System.String,System.String)
+  name.vb: GetCustomModFieldValue(String, String)
+  fullName: KS.Modifications.Communication.InterModTools.GetCustomModFieldValue(string, string)
+  fullName.vb: KS.Modifications.Communication.InterModTools.GetCustomModFieldValue(String, String)
+  nameWithType: InterModTools.GetCustomModFieldValue(string, string)
+  nameWithType.vb: InterModTools.GetCustomModFieldValue(String, String)
+- uid: KS.Modifications.Communication.InterModTools.GetCustomModFieldValue*
+  name: GetCustomModFieldValue
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_GetCustomModFieldValue_
+  commentId: Overload:KS.Modifications.Communication.InterModTools.GetCustomModFieldValue
+  isSpec: "True"
+  fullName: KS.Modifications.Communication.InterModTools.GetCustomModFieldValue
+  nameWithType: InterModTools.GetCustomModFieldValue
+- uid: KS.Modifications.Communication.InterModTools.GetCustomModPropertyValue(System.String,System.String)
+  name: GetCustomModPropertyValue(string, string)
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_GetCustomModPropertyValue_System_String_System_String_
+  commentId: M:KS.Modifications.Communication.InterModTools.GetCustomModPropertyValue(System.String,System.String)
+  name.vb: GetCustomModPropertyValue(String, String)
+  fullName: KS.Modifications.Communication.InterModTools.GetCustomModPropertyValue(string, string)
+  fullName.vb: KS.Modifications.Communication.InterModTools.GetCustomModPropertyValue(String, String)
+  nameWithType: InterModTools.GetCustomModPropertyValue(string, string)
+  nameWithType.vb: InterModTools.GetCustomModPropertyValue(String, String)
+- uid: KS.Modifications.Communication.InterModTools.GetCustomModPropertyValue*
+  name: GetCustomModPropertyValue
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_GetCustomModPropertyValue_
+  commentId: Overload:KS.Modifications.Communication.InterModTools.GetCustomModPropertyValue
+  isSpec: "True"
+  fullName: KS.Modifications.Communication.InterModTools.GetCustomModPropertyValue
+  nameWithType: InterModTools.GetCustomModPropertyValue
+- uid: KS.Modifications.Communication.InterModTools.SetCustomModFieldValue(System.String,System.String,System.Object)
+  name: SetCustomModFieldValue(string, string, object)
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_SetCustomModFieldValue_System_String_System_String_System_Object_
+  commentId: M:KS.Modifications.Communication.InterModTools.SetCustomModFieldValue(System.String,System.String,System.Object)
+  name.vb: SetCustomModFieldValue(String, String, Object)
+  fullName: KS.Modifications.Communication.InterModTools.SetCustomModFieldValue(string, string, object)
+  fullName.vb: KS.Modifications.Communication.InterModTools.SetCustomModFieldValue(String, String, Object)
+  nameWithType: InterModTools.SetCustomModFieldValue(string, string, object)
+  nameWithType.vb: InterModTools.SetCustomModFieldValue(String, String, Object)
+- uid: KS.Modifications.Communication.InterModTools.SetCustomModFieldValue*
+  name: SetCustomModFieldValue
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_SetCustomModFieldValue_
+  commentId: Overload:KS.Modifications.Communication.InterModTools.SetCustomModFieldValue
+  isSpec: "True"
+  fullName: KS.Modifications.Communication.InterModTools.SetCustomModFieldValue
+  nameWithType: InterModTools.SetCustomModFieldValue
+- uid: KS.Modifications.Communication.InterModTools.SetCustomModPropertyValue(System.String,System.String,System.Object)
+  name: SetCustomModPropertyValue(string, string, object)
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_SetCustomModPropertyValue_System_String_System_String_System_Object_
+  commentId: M:KS.Modifications.Communication.InterModTools.SetCustomModPropertyValue(System.String,System.String,System.Object)
+  name.vb: SetCustomModPropertyValue(String, String, Object)
+  fullName: KS.Modifications.Communication.InterModTools.SetCustomModPropertyValue(string, string, object)
+  fullName.vb: KS.Modifications.Communication.InterModTools.SetCustomModPropertyValue(String, String, Object)
+  nameWithType: InterModTools.SetCustomModPropertyValue(string, string, object)
+  nameWithType.vb: InterModTools.SetCustomModPropertyValue(String, String, Object)
+- uid: KS.Modifications.Communication.InterModTools.SetCustomModPropertyValue*
+  name: SetCustomModPropertyValue
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_SetCustomModPropertyValue_
+  commentId: Overload:KS.Modifications.Communication.InterModTools.SetCustomModPropertyValue
+  isSpec: "True"
+  fullName: KS.Modifications.Communication.InterModTools.SetCustomModPropertyValue
+  nameWithType: InterModTools.SetCustomModPropertyValue
 - uid: KS.Modifications.Dependencies
   name: KS.Modifications.Dependencies
   href: api/KS.Modifications.Dependencies.html
@@ -37550,6 +37651,19 @@ references:
   isSpec: "True"
   fullName: KS.Modifications.IMod.Name
   nameWithType: IMod.Name
+- uid: KS.Modifications.IMod.PubliclyAvailableFields
+  name: PubliclyAvailableFields
+  href: api/KS.Modifications.IMod.html#KS_Modifications_IMod_PubliclyAvailableFields
+  commentId: P:KS.Modifications.IMod.PubliclyAvailableFields
+  fullName: KS.Modifications.IMod.PubliclyAvailableFields
+  nameWithType: IMod.PubliclyAvailableFields
+- uid: KS.Modifications.IMod.PubliclyAvailableFields*
+  name: PubliclyAvailableFields
+  href: api/KS.Modifications.IMod.html#KS_Modifications_IMod_PubliclyAvailableFields_
+  commentId: Overload:KS.Modifications.IMod.PubliclyAvailableFields
+  isSpec: "True"
+  fullName: KS.Modifications.IMod.PubliclyAvailableFields
+  nameWithType: IMod.PubliclyAvailableFields
 - uid: KS.Modifications.IMod.PubliclyAvailableFunctions
   name: PubliclyAvailableFunctions
   href: api/KS.Modifications.IMod.html#KS_Modifications_IMod_PubliclyAvailableFunctions
@@ -37563,6 +37677,19 @@ references:
   isSpec: "True"
   fullName: KS.Modifications.IMod.PubliclyAvailableFunctions
   nameWithType: IMod.PubliclyAvailableFunctions
+- uid: KS.Modifications.IMod.PubliclyAvailableProperties
+  name: PubliclyAvailableProperties
+  href: api/KS.Modifications.IMod.html#KS_Modifications_IMod_PubliclyAvailableProperties
+  commentId: P:KS.Modifications.IMod.PubliclyAvailableProperties
+  fullName: KS.Modifications.IMod.PubliclyAvailableProperties
+  nameWithType: IMod.PubliclyAvailableProperties
+- uid: KS.Modifications.IMod.PubliclyAvailableProperties*
+  name: PubliclyAvailableProperties
+  href: api/KS.Modifications.IMod.html#KS_Modifications_IMod_PubliclyAvailableProperties_
+  commentId: Overload:KS.Modifications.IMod.PubliclyAvailableProperties
+  isSpec: "True"
+  fullName: KS.Modifications.IMod.PubliclyAvailableProperties
+  nameWithType: IMod.PubliclyAvailableProperties
 - uid: KS.Modifications.IMod.StartMod
   name: StartMod()
   href: api/KS.Modifications.IMod.html#KS_Modifications_IMod_StartMod
@@ -37897,31 +38024,6 @@ references:
   isSpec: "True"
   fullName: KS.Modifications.ModManager.BlacklistedModsString
   nameWithType: ModManager.BlacklistedModsString
-- uid: KS.Modifications.ModManager.ExecuteCustomModFunction(System.String,System.String)
-  name: ExecuteCustomModFunction(string, string)
-  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_ExecuteCustomModFunction_System_String_System_String_
-  commentId: M:KS.Modifications.ModManager.ExecuteCustomModFunction(System.String,System.String)
-  name.vb: ExecuteCustomModFunction(String, String)
-  fullName: KS.Modifications.ModManager.ExecuteCustomModFunction(string, string)
-  fullName.vb: KS.Modifications.ModManager.ExecuteCustomModFunction(String, String)
-  nameWithType: ModManager.ExecuteCustomModFunction(string, string)
-  nameWithType.vb: ModManager.ExecuteCustomModFunction(String, String)
-- uid: KS.Modifications.ModManager.ExecuteCustomModFunction(System.String,System.String,System.Object[])
-  name: ExecuteCustomModFunction(string, string, params object[])
-  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_ExecuteCustomModFunction_System_String_System_String_System_Object___
-  commentId: M:KS.Modifications.ModManager.ExecuteCustomModFunction(System.String,System.String,System.Object[])
-  name.vb: ExecuteCustomModFunction(String, String, ParamArray Object())
-  fullName: KS.Modifications.ModManager.ExecuteCustomModFunction(string, string, params object[])
-  fullName.vb: KS.Modifications.ModManager.ExecuteCustomModFunction(String, String, ParamArray Object())
-  nameWithType: ModManager.ExecuteCustomModFunction(string, string, params object[])
-  nameWithType.vb: ModManager.ExecuteCustomModFunction(String, String, ParamArray Object())
-- uid: KS.Modifications.ModManager.ExecuteCustomModFunction*
-  name: ExecuteCustomModFunction
-  href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_ExecuteCustomModFunction_
-  commentId: Overload:KS.Modifications.ModManager.ExecuteCustomModFunction
-  isSpec: "True"
-  fullName: KS.Modifications.ModManager.ExecuteCustomModFunction
-  nameWithType: ModManager.ExecuteCustomModFunction
 - uid: KS.Modifications.ModManager.GetBlacklistedMods
   name: GetBlacklistedMods()
   href: api/KS.Modifications.ModManager.html#KS_Modifications_ModManager_GetBlacklistedMods
