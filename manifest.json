@@ -3015,6 +3015,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Progress.ProgressHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Progress.ProgressHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Progress.ProgressManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Progress.ProgressManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Progress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Progress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Reflection.AssemblyLookup.yml",
       "output": {
         ".html": {

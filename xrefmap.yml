@@ -29510,6 +29510,12 @@ references:
   commentId: F:KS.Kernel.Exceptions.KernelExceptionType.PrivacyConsent
   fullName: KS.Kernel.Exceptions.KernelExceptionType.PrivacyConsent
   nameWithType: KernelExceptionType.PrivacyConsent
+- uid: KS.Kernel.Exceptions.KernelExceptionType.ProgressHandler
+  name: ProgressHandler
+  href: api/KS.Kernel.Exceptions.KernelExceptionType.html#KS_Kernel_Exceptions_KernelExceptionType_ProgressHandler
+  commentId: F:KS.Kernel.Exceptions.KernelExceptionType.ProgressHandler
+  fullName: KS.Kernel.Exceptions.KernelExceptionType.ProgressHandler
+  nameWithType: KernelExceptionType.ProgressHandler
 - uid: KS.Kernel.Exceptions.KernelExceptionType.RSSNetwork
   name: RSSNetwork
   href: api/KS.Kernel.Exceptions.KernelExceptionType.html#KS_Kernel_Exceptions_KernelExceptionType_RSSNetwork
@@ -34330,6 +34336,129 @@ references:
   commentId: F:KS.Misc.Notifications.NotificationType.Progress
   fullName: KS.Misc.Notifications.NotificationType.Progress
   nameWithType: NotificationType.Progress
+- uid: KS.Misc.Progress
+  name: KS.Misc.Progress
+  href: api/KS.Misc.Progress.html
+  commentId: N:KS.Misc.Progress
+  fullName: KS.Misc.Progress
+  nameWithType: KS.Misc.Progress
+- uid: KS.Misc.Progress.ProgressHandler
+  name: ProgressHandler
+  href: api/KS.Misc.Progress.ProgressHandler.html
+  commentId: T:KS.Misc.Progress.ProgressHandler
+  fullName: KS.Misc.Progress.ProgressHandler
+  nameWithType: ProgressHandler
+- uid: KS.Misc.Progress.ProgressHandler.#ctor(System.Action{System.Int32,System.String},System.String)
+  name: ProgressHandler(Action<int, string>, string)
+  href: api/KS.Misc.Progress.ProgressHandler.html#KS_Misc_Progress_ProgressHandler__ctor_System_Action_System_Int32_System_String__System_String_
+  commentId: M:KS.Misc.Progress.ProgressHandler.#ctor(System.Action{System.Int32,System.String},System.String)
+  name.vb: New(Action(Of Integer, String), String)
+  fullName: KS.Misc.Progress.ProgressHandler.ProgressHandler(System.Action<int, string>, string)
+  fullName.vb: KS.Misc.Progress.ProgressHandler.New(System.Action(Of Integer, String), String)
+  nameWithType: ProgressHandler.ProgressHandler(Action<int, string>, string)
+  nameWithType.vb: ProgressHandler.New(Action(Of Integer, String), String)
+- uid: KS.Misc.Progress.ProgressHandler.#ctor*
+  name: ProgressHandler
+  href: api/KS.Misc.Progress.ProgressHandler.html#KS_Misc_Progress_ProgressHandler__ctor_
+  commentId: Overload:KS.Misc.Progress.ProgressHandler.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: KS.Misc.Progress.ProgressHandler.ProgressHandler
+  fullName.vb: KS.Misc.Progress.ProgressHandler.New
+  nameWithType: ProgressHandler.ProgressHandler
+  nameWithType.vb: ProgressHandler.New
+- uid: KS.Misc.Progress.ProgressHandler.Context
+  name: Context
+  href: api/KS.Misc.Progress.ProgressHandler.html#KS_Misc_Progress_ProgressHandler_Context
+  commentId: P:KS.Misc.Progress.ProgressHandler.Context
+  fullName: KS.Misc.Progress.ProgressHandler.Context
+  nameWithType: ProgressHandler.Context
+- uid: KS.Misc.Progress.ProgressHandler.Context*
+  name: Context
+  href: api/KS.Misc.Progress.ProgressHandler.html#KS_Misc_Progress_ProgressHandler_Context_
+  commentId: Overload:KS.Misc.Progress.ProgressHandler.Context
+  isSpec: "True"
+  fullName: KS.Misc.Progress.ProgressHandler.Context
+  nameWithType: ProgressHandler.Context
+- uid: KS.Misc.Progress.ProgressHandler.ProgressAction
+  name: ProgressAction
+  href: api/KS.Misc.Progress.ProgressHandler.html#KS_Misc_Progress_ProgressHandler_ProgressAction
+  commentId: P:KS.Misc.Progress.ProgressHandler.ProgressAction
+  fullName: KS.Misc.Progress.ProgressHandler.ProgressAction
+  nameWithType: ProgressHandler.ProgressAction
+- uid: KS.Misc.Progress.ProgressHandler.ProgressAction*
+  name: ProgressAction
+  href: api/KS.Misc.Progress.ProgressHandler.html#KS_Misc_Progress_ProgressHandler_ProgressAction_
+  commentId: Overload:KS.Misc.Progress.ProgressHandler.ProgressAction
+  isSpec: "True"
+  fullName: KS.Misc.Progress.ProgressHandler.ProgressAction
+  nameWithType: ProgressHandler.ProgressAction
+- uid: KS.Misc.Progress.ProgressManager
+  name: ProgressManager
+  href: api/KS.Misc.Progress.ProgressManager.html
+  commentId: T:KS.Misc.Progress.ProgressManager
+  fullName: KS.Misc.Progress.ProgressManager
+  nameWithType: ProgressManager
+- uid: KS.Misc.Progress.ProgressManager.RegisterProgressHandler(KS.Misc.Progress.ProgressHandler)
+  name: RegisterProgressHandler(ProgressHandler)
+  href: api/KS.Misc.Progress.ProgressManager.html#KS_Misc_Progress_ProgressManager_RegisterProgressHandler_KS_Misc_Progress_ProgressHandler_
+  commentId: M:KS.Misc.Progress.ProgressManager.RegisterProgressHandler(KS.Misc.Progress.ProgressHandler)
+  fullName: KS.Misc.Progress.ProgressManager.RegisterProgressHandler(KS.Misc.Progress.ProgressHandler)
+  nameWithType: ProgressManager.RegisterProgressHandler(ProgressHandler)
+- uid: KS.Misc.Progress.ProgressManager.RegisterProgressHandler*
+  name: RegisterProgressHandler
+  href: api/KS.Misc.Progress.ProgressManager.html#KS_Misc_Progress_ProgressManager_RegisterProgressHandler_
+  commentId: Overload:KS.Misc.Progress.ProgressManager.RegisterProgressHandler
+  isSpec: "True"
+  fullName: KS.Misc.Progress.ProgressManager.RegisterProgressHandler
+  nameWithType: ProgressManager.RegisterProgressHandler
+- uid: KS.Misc.Progress.ProgressManager.ReportProgress(System.Int32,System.String)
+  name: ReportProgress(int, string)
+  href: api/KS.Misc.Progress.ProgressManager.html#KS_Misc_Progress_ProgressManager_ReportProgress_System_Int32_System_String_
+  commentId: M:KS.Misc.Progress.ProgressManager.ReportProgress(System.Int32,System.String)
+  name.vb: ReportProgress(Integer, String)
+  fullName: KS.Misc.Progress.ProgressManager.ReportProgress(int, string)
+  fullName.vb: KS.Misc.Progress.ProgressManager.ReportProgress(Integer, String)
+  nameWithType: ProgressManager.ReportProgress(int, string)
+  nameWithType.vb: ProgressManager.ReportProgress(Integer, String)
+- uid: KS.Misc.Progress.ProgressManager.ReportProgress(System.Int32,System.String,System.String)
+  name: ReportProgress(int, string, string)
+  href: api/KS.Misc.Progress.ProgressManager.html#KS_Misc_Progress_ProgressManager_ReportProgress_System_Int32_System_String_System_String_
+  commentId: M:KS.Misc.Progress.ProgressManager.ReportProgress(System.Int32,System.String,System.String)
+  name.vb: ReportProgress(Integer, String, String)
+  fullName: KS.Misc.Progress.ProgressManager.ReportProgress(int, string, string)
+  fullName.vb: KS.Misc.Progress.ProgressManager.ReportProgress(Integer, String, String)
+  nameWithType: ProgressManager.ReportProgress(int, string, string)
+  nameWithType.vb: ProgressManager.ReportProgress(Integer, String, String)
+- uid: KS.Misc.Progress.ProgressManager.ReportProgress(System.Int32,System.String,System.String,System.Object[])
+  name: ReportProgress(int, string, string, params object[])
+  href: api/KS.Misc.Progress.ProgressManager.html#KS_Misc_Progress_ProgressManager_ReportProgress_System_Int32_System_String_System_String_System_Object___
+  commentId: M:KS.Misc.Progress.ProgressManager.ReportProgress(System.Int32,System.String,System.String,System.Object[])
+  name.vb: ReportProgress(Integer, String, String, ParamArray Object())
+  fullName: KS.Misc.Progress.ProgressManager.ReportProgress(int, string, string, params object[])
+  fullName.vb: KS.Misc.Progress.ProgressManager.ReportProgress(Integer, String, String, ParamArray Object())
+  nameWithType: ProgressManager.ReportProgress(int, string, string, params object[])
+  nameWithType.vb: ProgressManager.ReportProgress(Integer, String, String, ParamArray Object())
+- uid: KS.Misc.Progress.ProgressManager.ReportProgress*
+  name: ReportProgress
+  href: api/KS.Misc.Progress.ProgressManager.html#KS_Misc_Progress_ProgressManager_ReportProgress_
+  commentId: Overload:KS.Misc.Progress.ProgressManager.ReportProgress
+  isSpec: "True"
+  fullName: KS.Misc.Progress.ProgressManager.ReportProgress
+  nameWithType: ProgressManager.ReportProgress
+- uid: KS.Misc.Progress.ProgressManager.UnregisterProgressHandler(KS.Misc.Progress.ProgressHandler)
+  name: UnregisterProgressHandler(ProgressHandler)
+  href: api/KS.Misc.Progress.ProgressManager.html#KS_Misc_Progress_ProgressManager_UnregisterProgressHandler_KS_Misc_Progress_ProgressHandler_
+  commentId: M:KS.Misc.Progress.ProgressManager.UnregisterProgressHandler(KS.Misc.Progress.ProgressHandler)
+  fullName: KS.Misc.Progress.ProgressManager.UnregisterProgressHandler(KS.Misc.Progress.ProgressHandler)
+  nameWithType: ProgressManager.UnregisterProgressHandler(ProgressHandler)
+- uid: KS.Misc.Progress.ProgressManager.UnregisterProgressHandler*
+  name: UnregisterProgressHandler
+  href: api/KS.Misc.Progress.ProgressManager.html#KS_Misc_Progress_ProgressManager_UnregisterProgressHandler_
+  commentId: Overload:KS.Misc.Progress.ProgressManager.UnregisterProgressHandler
+  isSpec: "True"
+  fullName: KS.Misc.Progress.ProgressManager.UnregisterProgressHandler
+  nameWithType: ProgressManager.UnregisterProgressHandler
 - uid: KS.Misc.Reflection
   name: KS.Misc.Reflection
   href: api/KS.Misc.Reflection.html
