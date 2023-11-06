@@ -34569,6 +34569,32 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.FieldManager.CheckField
   nameWithType: FieldManager.CheckField
+- uid: KS.Misc.Reflection.FieldManager.GetAllFields
+  name: GetAllFields()
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetAllFields
+  commentId: M:KS.Misc.Reflection.FieldManager.GetAllFields
+  fullName: KS.Misc.Reflection.FieldManager.GetAllFields()
+  nameWithType: FieldManager.GetAllFields()
+- uid: KS.Misc.Reflection.FieldManager.GetAllFields*
+  name: GetAllFields
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetAllFields_
+  commentId: Overload:KS.Misc.Reflection.FieldManager.GetAllFields
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.FieldManager.GetAllFields
+  nameWithType: FieldManager.GetAllFields
+- uid: KS.Misc.Reflection.FieldManager.GetAllFieldsNoEvaluation
+  name: GetAllFieldsNoEvaluation()
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetAllFieldsNoEvaluation
+  commentId: M:KS.Misc.Reflection.FieldManager.GetAllFieldsNoEvaluation
+  fullName: KS.Misc.Reflection.FieldManager.GetAllFieldsNoEvaluation()
+  nameWithType: FieldManager.GetAllFieldsNoEvaluation()
+- uid: KS.Misc.Reflection.FieldManager.GetAllFieldsNoEvaluation*
+  name: GetAllFieldsNoEvaluation
+  href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetAllFieldsNoEvaluation_
+  commentId: Overload:KS.Misc.Reflection.FieldManager.GetAllFieldsNoEvaluation
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.FieldManager.GetAllFieldsNoEvaluation
+  nameWithType: FieldManager.GetAllFieldsNoEvaluation
 - uid: KS.Misc.Reflection.FieldManager.GetField(System.String)
   name: GetField(string)
   href: api/KS.Misc.Reflection.FieldManager.html#KS_Misc_Reflection_FieldManager_GetField_System_String_
@@ -34961,6 +34987,32 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.PropertyManager.CheckProperty
   nameWithType: PropertyManager.CheckProperty
+- uid: KS.Misc.Reflection.PropertyManager.GetAllProperties
+  name: GetAllProperties()
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetAllProperties
+  commentId: M:KS.Misc.Reflection.PropertyManager.GetAllProperties
+  fullName: KS.Misc.Reflection.PropertyManager.GetAllProperties()
+  nameWithType: PropertyManager.GetAllProperties()
+- uid: KS.Misc.Reflection.PropertyManager.GetAllProperties*
+  name: GetAllProperties
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetAllProperties_
+  commentId: Overload:KS.Misc.Reflection.PropertyManager.GetAllProperties
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.PropertyManager.GetAllProperties
+  nameWithType: PropertyManager.GetAllProperties
+- uid: KS.Misc.Reflection.PropertyManager.GetAllPropertiesNoEvaluation
+  name: GetAllPropertiesNoEvaluation()
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetAllPropertiesNoEvaluation
+  commentId: M:KS.Misc.Reflection.PropertyManager.GetAllPropertiesNoEvaluation
+  fullName: KS.Misc.Reflection.PropertyManager.GetAllPropertiesNoEvaluation()
+  nameWithType: PropertyManager.GetAllPropertiesNoEvaluation()
+- uid: KS.Misc.Reflection.PropertyManager.GetAllPropertiesNoEvaluation*
+  name: GetAllPropertiesNoEvaluation
+  href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetAllPropertiesNoEvaluation_
+  commentId: Overload:KS.Misc.Reflection.PropertyManager.GetAllPropertiesNoEvaluation
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.PropertyManager.GetAllPropertiesNoEvaluation
+  nameWithType: PropertyManager.GetAllPropertiesNoEvaluation
 - uid: KS.Misc.Reflection.PropertyManager.GetProperties(System.Type)
   name: GetProperties(Type)
   href: api/KS.Misc.Reflection.PropertyManager.html#KS_Misc_Reflection_PropertyManager_GetProperties_System_Type_
