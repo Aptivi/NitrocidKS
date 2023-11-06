@@ -29977,6 +29977,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.KernelMain.Version
   nameWithType: KernelMain.Version
+- uid: KS.Kernel.KernelMain.VersionFull
+  name: VersionFull
+  href: api/KS.Kernel.KernelMain.html#KS_Kernel_KernelMain_VersionFull
+  commentId: P:KS.Kernel.KernelMain.VersionFull
+  fullName: KS.Kernel.KernelMain.VersionFull
+  nameWithType: KernelMain.VersionFull
+- uid: KS.Kernel.KernelMain.VersionFull*
+  name: VersionFull
+  href: api/KS.Kernel.KernelMain.html#KS_Kernel_KernelMain_VersionFull_
+  commentId: Overload:KS.Kernel.KernelMain.VersionFull
+  isSpec: "True"
+  fullName: KS.Kernel.KernelMain.VersionFull
+  nameWithType: KernelMain.VersionFull
 - uid: KS.Kernel.KernelPlatform
   name: KernelPlatform
   href: api/KS.Kernel.KernelPlatform.html
@@ -32574,15 +32587,15 @@ references:
   commentId: T:KS.Kernel.Updates.KernelUpdate
   fullName: KS.Kernel.Updates.KernelUpdate
   nameWithType: KernelUpdate
-- uid: KS.Kernel.Updates.KernelUpdate.#ctor(Newtonsoft.Json.Linq.JToken)
-  name: KernelUpdate(JToken)
-  href: api/KS.Kernel.Updates.KernelUpdate.html#KS_Kernel_Updates_KernelUpdate__ctor_Newtonsoft_Json_Linq_JToken_
-  commentId: M:KS.Kernel.Updates.KernelUpdate.#ctor(Newtonsoft.Json.Linq.JToken)
-  name.vb: New(JToken)
-  fullName: KS.Kernel.Updates.KernelUpdate.KernelUpdate(Newtonsoft.Json.Linq.JToken)
-  fullName.vb: KS.Kernel.Updates.KernelUpdate.New(Newtonsoft.Json.Linq.JToken)
-  nameWithType: KernelUpdate.KernelUpdate(JToken)
-  nameWithType.vb: KernelUpdate.New(JToken)
+- uid: KS.Kernel.Updates.KernelUpdate.#ctor(Newtonsoft.Json.Linq.JToken,KS.Kernel.Updates.UpdateKind)
+  name: KernelUpdate(JToken, UpdateKind)
+  href: api/KS.Kernel.Updates.KernelUpdate.html#KS_Kernel_Updates_KernelUpdate__ctor_Newtonsoft_Json_Linq_JToken_KS_Kernel_Updates_UpdateKind_
+  commentId: M:KS.Kernel.Updates.KernelUpdate.#ctor(Newtonsoft.Json.Linq.JToken,KS.Kernel.Updates.UpdateKind)
+  name.vb: New(JToken, UpdateKind)
+  fullName: KS.Kernel.Updates.KernelUpdate.KernelUpdate(Newtonsoft.Json.Linq.JToken, KS.Kernel.Updates.UpdateKind)
+  fullName.vb: KS.Kernel.Updates.KernelUpdate.New(Newtonsoft.Json.Linq.JToken, KS.Kernel.Updates.UpdateKind)
+  nameWithType: KernelUpdate.KernelUpdate(JToken, UpdateKind)
+  nameWithType.vb: KernelUpdate.New(JToken, UpdateKind)
 - uid: KS.Kernel.Updates.KernelUpdate.#ctor*
   name: KernelUpdate
   href: api/KS.Kernel.Updates.KernelUpdate.html#KS_Kernel_Updates_KernelUpdate__ctor_
@@ -32593,6 +32606,19 @@ references:
   fullName.vb: KS.Kernel.Updates.KernelUpdate.New
   nameWithType: KernelUpdate.KernelUpdate
   nameWithType.vb: KernelUpdate.New
+- uid: KS.Kernel.Updates.KernelUpdate.UpdateKind
+  name: UpdateKind
+  href: api/KS.Kernel.Updates.KernelUpdate.html#KS_Kernel_Updates_KernelUpdate_UpdateKind
+  commentId: P:KS.Kernel.Updates.KernelUpdate.UpdateKind
+  fullName: KS.Kernel.Updates.KernelUpdate.UpdateKind
+  nameWithType: KernelUpdate.UpdateKind
+- uid: KS.Kernel.Updates.KernelUpdate.UpdateKind*
+  name: UpdateKind
+  href: api/KS.Kernel.Updates.KernelUpdate.html#KS_Kernel_Updates_KernelUpdate_UpdateKind_
+  commentId: Overload:KS.Kernel.Updates.KernelUpdate.UpdateKind
+  isSpec: "True"
+  fullName: KS.Kernel.Updates.KernelUpdate.UpdateKind
+  nameWithType: KernelUpdate.UpdateKind
 - uid: KS.Kernel.Updates.KernelUpdate.UpdateURL
   name: UpdateURL
   href: api/KS.Kernel.Updates.KernelUpdate.html#KS_Kernel_Updates_KernelUpdate_UpdateURL
@@ -32632,6 +32658,30 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Updates.KernelUpdate.Updated
   nameWithType: KernelUpdate.Updated
+- uid: KS.Kernel.Updates.UpdateKind
+  name: UpdateKind
+  href: api/KS.Kernel.Updates.UpdateKind.html
+  commentId: T:KS.Kernel.Updates.UpdateKind
+  fullName: KS.Kernel.Updates.UpdateKind
+  nameWithType: UpdateKind
+- uid: KS.Kernel.Updates.UpdateKind.Addons
+  name: Addons
+  href: api/KS.Kernel.Updates.UpdateKind.html#KS_Kernel_Updates_UpdateKind_Addons
+  commentId: F:KS.Kernel.Updates.UpdateKind.Addons
+  fullName: KS.Kernel.Updates.UpdateKind.Addons
+  nameWithType: UpdateKind.Addons
+- uid: KS.Kernel.Updates.UpdateKind.Binary
+  name: Binary
+  href: api/KS.Kernel.Updates.UpdateKind.html#KS_Kernel_Updates_UpdateKind_Binary
+  commentId: F:KS.Kernel.Updates.UpdateKind.Binary
+  fullName: KS.Kernel.Updates.UpdateKind.Binary
+  nameWithType: UpdateKind.Binary
+- uid: KS.Kernel.Updates.UpdateKind.BinaryLite
+  name: BinaryLite
+  href: api/KS.Kernel.Updates.UpdateKind.html#KS_Kernel_Updates_UpdateKind_BinaryLite
+  commentId: F:KS.Kernel.Updates.UpdateKind.BinaryLite
+  fullName: KS.Kernel.Updates.UpdateKind.BinaryLite
+  nameWithType: UpdateKind.BinaryLite
 - uid: KS.Kernel.Updates.UpdateManager
   name: UpdateManager
   href: api/KS.Kernel.Updates.UpdateManager.html
@@ -32677,6 +32727,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Updates.UpdateManager.CheckUpdateStart
   nameWithType: UpdateManager.CheckUpdateStart
+- uid: KS.Kernel.Updates.UpdateManager.FetchAddonPack
+  name: FetchAddonPack()
+  href: api/KS.Kernel.Updates.UpdateManager.html#KS_Kernel_Updates_UpdateManager_FetchAddonPack
+  commentId: M:KS.Kernel.Updates.UpdateManager.FetchAddonPack
+  fullName: KS.Kernel.Updates.UpdateManager.FetchAddonPack()
+  nameWithType: UpdateManager.FetchAddonPack()
+- uid: KS.Kernel.Updates.UpdateManager.FetchAddonPack*
+  name: FetchAddonPack
+  href: api/KS.Kernel.Updates.UpdateManager.html#KS_Kernel_Updates_UpdateManager_FetchAddonPack_
+  commentId: Overload:KS.Kernel.Updates.UpdateManager.FetchAddonPack
+  isSpec: "True"
+  fullName: KS.Kernel.Updates.UpdateManager.FetchAddonPack
+  nameWithType: UpdateManager.FetchAddonPack
 - uid: KS.Kernel.Updates.UpdateManager.FetchKernelUpdates
   name: FetchKernelUpdates()
   href: api/KS.Kernel.Updates.UpdateManager.html#KS_Kernel_Updates_UpdateManager_FetchKernelUpdates
