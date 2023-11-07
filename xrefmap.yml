@@ -438,6 +438,31 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmyToRgb
   nameWithType: KernelColorConversionTools.ConvertFromCmyToRgb
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmyToRyb(System.Int32,System.Int32,System.Int32)
+  name: ConvertFromCmyToRyb(int, int, int)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromCmyToRyb_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmyToRyb(System.Int32,System.Int32,System.Int32)
+  name.vb: ConvertFromCmyToRyb(Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmyToRyb(int, int, int)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmyToRyb(Integer, Integer, Integer)
+  nameWithType: KernelColorConversionTools.ConvertFromCmyToRyb(int, int, int)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromCmyToRyb(Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmyToRyb(System.String)
+  name: ConvertFromCmyToRyb(string)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromCmyToRyb_System_String_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmyToRyb(System.String)
+  name.vb: ConvertFromCmyToRyb(String)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmyToRyb(string)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmyToRyb(String)
+  nameWithType: KernelColorConversionTools.ConvertFromCmyToRyb(string)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromCmyToRyb(String)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmyToRyb*
+  name: ConvertFromCmyToRyb
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromCmyToRyb_
+  commentId: Overload:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmyToRyb
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmyToRyb
+  nameWithType: KernelColorConversionTools.ConvertFromCmyToRyb
 - uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmykToCmy(System.Int32,System.Int32,System.Int32,System.Int32)
   name: ConvertFromCmykToCmy(int, int, int, int)
   href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromCmykToCmy_System_Int32_System_Int32_System_Int32_System_Int32_
@@ -563,6 +588,31 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmykToRgb
   nameWithType: KernelColorConversionTools.ConvertFromCmykToRgb
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmykToRyb(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: ConvertFromCmykToRyb(int, int, int, int)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromCmykToRyb_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmykToRyb(System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: ConvertFromCmykToRyb(Integer, Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmykToRyb(int, int, int, int)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmykToRyb(Integer, Integer, Integer, Integer)
+  nameWithType: KernelColorConversionTools.ConvertFromCmykToRyb(int, int, int, int)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromCmykToRyb(Integer, Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmykToRyb(System.String)
+  name: ConvertFromCmykToRyb(string)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromCmykToRyb_System_String_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmykToRyb(System.String)
+  name.vb: ConvertFromCmykToRyb(String)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmykToRyb(string)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmykToRyb(String)
+  nameWithType: KernelColorConversionTools.ConvertFromCmykToRyb(string)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromCmykToRyb(String)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmykToRyb*
+  name: ConvertFromCmykToRyb
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromCmykToRyb_
+  commentId: Overload:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmykToRyb
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromCmykToRyb
+  nameWithType: KernelColorConversionTools.ConvertFromCmykToRyb
 - uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToCmy(System.String)
   name: ConvertFromHexToCmy(string)
   href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromHexToCmy_System_String_
@@ -627,22 +677,38 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToHsv
   nameWithType: KernelColorConversionTools.ConvertFromHexToHsv
-- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRGB(System.String)
-  name: ConvertFromHexToRGB(string)
-  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromHexToRGB_System_String_
-  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRGB(System.String)
-  name.vb: ConvertFromHexToRGB(String)
-  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRGB(string)
-  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRGB(String)
-  nameWithType: KernelColorConversionTools.ConvertFromHexToRGB(string)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromHexToRGB(String)
-- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRGB*
-  name: ConvertFromHexToRGB
-  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromHexToRGB_
-  commentId: Overload:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRGB
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRgb(System.String)
+  name: ConvertFromHexToRgb(string)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromHexToRgb_System_String_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRgb(System.String)
+  name.vb: ConvertFromHexToRgb(String)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRgb(string)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRgb(String)
+  nameWithType: KernelColorConversionTools.ConvertFromHexToRgb(string)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromHexToRgb(String)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRgb*
+  name: ConvertFromHexToRgb
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromHexToRgb_
+  commentId: Overload:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRgb
   isSpec: "True"
-  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRGB
-  nameWithType: KernelColorConversionTools.ConvertFromHexToRGB
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRgb
+  nameWithType: KernelColorConversionTools.ConvertFromHexToRgb
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRyb(System.String)
+  name: ConvertFromHexToRyb(string)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromHexToRyb_System_String_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRyb(System.String)
+  name.vb: ConvertFromHexToRyb(String)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRyb(string)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRyb(String)
+  nameWithType: KernelColorConversionTools.ConvertFromHexToRyb(string)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromHexToRyb(String)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRyb*
+  name: ConvertFromHexToRyb
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromHexToRyb_
+  commentId: Overload:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRyb
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHexToRyb
+  nameWithType: KernelColorConversionTools.ConvertFromHexToRyb
 - uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHslToCmy(System.Int32,System.Int32,System.Int32)
   name: ConvertFromHslToCmy(int, int, int)
   href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromHslToCmy_System_Int32_System_Int32_System_Int32_
@@ -768,6 +834,31 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHslToRgb
   nameWithType: KernelColorConversionTools.ConvertFromHslToRgb
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHslToRyb(System.Int32,System.Int32,System.Int32)
+  name: ConvertFromHslToRyb(int, int, int)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromHslToRyb_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHslToRyb(System.Int32,System.Int32,System.Int32)
+  name.vb: ConvertFromHslToRyb(Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHslToRyb(int, int, int)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHslToRyb(Integer, Integer, Integer)
+  nameWithType: KernelColorConversionTools.ConvertFromHslToRyb(int, int, int)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromHslToRyb(Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHslToRyb(System.String)
+  name: ConvertFromHslToRyb(string)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromHslToRyb_System_String_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHslToRyb(System.String)
+  name.vb: ConvertFromHslToRyb(String)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHslToRyb(string)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHslToRyb(String)
+  nameWithType: KernelColorConversionTools.ConvertFromHslToRyb(string)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromHslToRyb(String)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHslToRyb*
+  name: ConvertFromHslToRyb
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromHslToRyb_
+  commentId: Overload:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHslToRyb
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHslToRyb
+  nameWithType: KernelColorConversionTools.ConvertFromHslToRyb
 - uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHsvToCmy(System.Int32,System.Int32,System.Int32)
   name: ConvertFromHsvToCmy(int, int, int)
   href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromHsvToCmy_System_Int32_System_Int32_System_Int32_
@@ -893,6 +984,31 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHsvToRgb
   nameWithType: KernelColorConversionTools.ConvertFromHsvToRgb
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHsvToRyb(System.Int32,System.Int32,System.Int32)
+  name: ConvertFromHsvToRyb(int, int, int)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromHsvToRyb_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHsvToRyb(System.Int32,System.Int32,System.Int32)
+  name.vb: ConvertFromHsvToRyb(Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHsvToRyb(int, int, int)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHsvToRyb(Integer, Integer, Integer)
+  nameWithType: KernelColorConversionTools.ConvertFromHsvToRyb(int, int, int)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromHsvToRyb(Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHsvToRyb(System.String)
+  name: ConvertFromHsvToRyb(string)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromHsvToRyb_System_String_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHsvToRyb(System.String)
+  name.vb: ConvertFromHsvToRyb(String)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHsvToRyb(string)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHsvToRyb(String)
+  nameWithType: KernelColorConversionTools.ConvertFromHsvToRyb(string)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromHsvToRyb(String)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHsvToRyb*
+  name: ConvertFromHsvToRyb
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromHsvToRyb_
+  commentId: Overload:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHsvToRyb
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromHsvToRyb
+  nameWithType: KernelColorConversionTools.ConvertFromHsvToRyb
 - uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRgbToCmy(System.Int32,System.Int32,System.Int32)
   name: ConvertFromRgbToCmy(int, int, int)
   href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRgbToCmy_System_Int32_System_Int32_System_Int32_
@@ -1018,6 +1134,181 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRgbToHsv
   nameWithType: KernelColorConversionTools.ConvertFromRgbToHsv
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRgbToRyb(System.Int32,System.Int32,System.Int32)
+  name: ConvertFromRgbToRyb(int, int, int)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRgbToRyb_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRgbToRyb(System.Int32,System.Int32,System.Int32)
+  name.vb: ConvertFromRgbToRyb(Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRgbToRyb(int, int, int)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRgbToRyb(Integer, Integer, Integer)
+  nameWithType: KernelColorConversionTools.ConvertFromRgbToRyb(int, int, int)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromRgbToRyb(Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRgbToRyb(System.String)
+  name: ConvertFromRgbToRyb(string)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRgbToRyb_System_String_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRgbToRyb(System.String)
+  name.vb: ConvertFromRgbToRyb(String)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRgbToRyb(string)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRgbToRyb(String)
+  nameWithType: KernelColorConversionTools.ConvertFromRgbToRyb(string)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromRgbToRyb(String)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRgbToRyb*
+  name: ConvertFromRgbToRyb
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRgbToRyb_
+  commentId: Overload:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRgbToRyb
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRgbToRyb
+  nameWithType: KernelColorConversionTools.ConvertFromRgbToRyb
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmy(System.Int32,System.Int32,System.Int32)
+  name: ConvertFromRybToCmy(int, int, int)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToCmy_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmy(System.Int32,System.Int32,System.Int32)
+  name.vb: ConvertFromRybToCmy(Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmy(int, int, int)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmy(Integer, Integer, Integer)
+  nameWithType: KernelColorConversionTools.ConvertFromRybToCmy(int, int, int)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromRybToCmy(Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmy(System.String)
+  name: ConvertFromRybToCmy(string)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToCmy_System_String_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmy(System.String)
+  name.vb: ConvertFromRybToCmy(String)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmy(string)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmy(String)
+  nameWithType: KernelColorConversionTools.ConvertFromRybToCmy(string)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromRybToCmy(String)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmy*
+  name: ConvertFromRybToCmy
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToCmy_
+  commentId: Overload:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmy
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmy
+  nameWithType: KernelColorConversionTools.ConvertFromRybToCmy
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmyk(System.Int32,System.Int32,System.Int32)
+  name: ConvertFromRybToCmyk(int, int, int)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToCmyk_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmyk(System.Int32,System.Int32,System.Int32)
+  name.vb: ConvertFromRybToCmyk(Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmyk(int, int, int)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmyk(Integer, Integer, Integer)
+  nameWithType: KernelColorConversionTools.ConvertFromRybToCmyk(int, int, int)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromRybToCmyk(Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmyk(System.String)
+  name: ConvertFromRybToCmyk(string)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToCmyk_System_String_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmyk(System.String)
+  name.vb: ConvertFromRybToCmyk(String)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmyk(string)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmyk(String)
+  nameWithType: KernelColorConversionTools.ConvertFromRybToCmyk(string)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromRybToCmyk(String)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmyk*
+  name: ConvertFromRybToCmyk
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToCmyk_
+  commentId: Overload:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmyk
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToCmyk
+  nameWithType: KernelColorConversionTools.ConvertFromRybToCmyk
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHex(System.Int32,System.Int32,System.Int32)
+  name: ConvertFromRybToHex(int, int, int)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToHex_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHex(System.Int32,System.Int32,System.Int32)
+  name.vb: ConvertFromRybToHex(Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHex(int, int, int)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHex(Integer, Integer, Integer)
+  nameWithType: KernelColorConversionTools.ConvertFromRybToHex(int, int, int)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromRybToHex(Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHex(System.String)
+  name: ConvertFromRybToHex(string)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToHex_System_String_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHex(System.String)
+  name.vb: ConvertFromRybToHex(String)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHex(string)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHex(String)
+  nameWithType: KernelColorConversionTools.ConvertFromRybToHex(string)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromRybToHex(String)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHex*
+  name: ConvertFromRybToHex
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToHex_
+  commentId: Overload:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHex
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHex
+  nameWithType: KernelColorConversionTools.ConvertFromRybToHex
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsl(System.Int32,System.Int32,System.Int32)
+  name: ConvertFromRybToHsl(int, int, int)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToHsl_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsl(System.Int32,System.Int32,System.Int32)
+  name.vb: ConvertFromRybToHsl(Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsl(int, int, int)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsl(Integer, Integer, Integer)
+  nameWithType: KernelColorConversionTools.ConvertFromRybToHsl(int, int, int)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromRybToHsl(Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsl(System.String)
+  name: ConvertFromRybToHsl(string)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToHsl_System_String_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsl(System.String)
+  name.vb: ConvertFromRybToHsl(String)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsl(string)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsl(String)
+  nameWithType: KernelColorConversionTools.ConvertFromRybToHsl(string)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromRybToHsl(String)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsl*
+  name: ConvertFromRybToHsl
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToHsl_
+  commentId: Overload:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsl
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsl
+  nameWithType: KernelColorConversionTools.ConvertFromRybToHsl
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsv(System.Int32,System.Int32,System.Int32)
+  name: ConvertFromRybToHsv(int, int, int)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToHsv_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsv(System.Int32,System.Int32,System.Int32)
+  name.vb: ConvertFromRybToHsv(Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsv(int, int, int)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsv(Integer, Integer, Integer)
+  nameWithType: KernelColorConversionTools.ConvertFromRybToHsv(int, int, int)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromRybToHsv(Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsv(System.String)
+  name: ConvertFromRybToHsv(string)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToHsv_System_String_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsv(System.String)
+  name.vb: ConvertFromRybToHsv(String)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsv(string)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsv(String)
+  nameWithType: KernelColorConversionTools.ConvertFromRybToHsv(string)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromRybToHsv(String)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsv*
+  name: ConvertFromRybToHsv
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToHsv_
+  commentId: Overload:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsv
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToHsv
+  nameWithType: KernelColorConversionTools.ConvertFromRybToHsv
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToRgb(System.Int32,System.Int32,System.Int32)
+  name: ConvertFromRybToRgb(int, int, int)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToRgb_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToRgb(System.Int32,System.Int32,System.Int32)
+  name.vb: ConvertFromRybToRgb(Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToRgb(int, int, int)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToRgb(Integer, Integer, Integer)
+  nameWithType: KernelColorConversionTools.ConvertFromRybToRgb(int, int, int)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromRybToRgb(Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToRgb(System.String)
+  name: ConvertFromRybToRgb(string)
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToRgb_System_String_
+  commentId: M:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToRgb(System.String)
+  name.vb: ConvertFromRybToRgb(String)
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToRgb(string)
+  fullName.vb: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToRgb(String)
+  nameWithType: KernelColorConversionTools.ConvertFromRybToRgb(string)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromRybToRgb(String)
+- uid: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToRgb*
+  name: ConvertFromRybToRgb
+  href: api/KS.ConsoleBase.Colors.KernelColorConversionTools.html#KS_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromRybToRgb_
+  commentId: Overload:KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToRgb
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToRgb
+  nameWithType: KernelColorConversionTools.ConvertFromRybToRgb
 - uid: KS.ConsoleBase.Colors.KernelColorSetErrorReasons
   name: KernelColorSetErrorReasons
   href: api/KS.ConsoleBase.Colors.KernelColorSetErrorReasons.html
