@@ -685,6 +685,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxInputColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxInputColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.PowerLineColor.yml",
       "output": {
         ".html": {
