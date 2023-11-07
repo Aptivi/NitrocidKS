@@ -18973,6 +18973,15 @@ references:
   fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(Byte)
   nameWithType: HexEditTools.AddNewByte(byte)
   nameWithType.vb: HexEditTools.AddNewByte(Byte)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(System.Byte,System.Int64)
+  name: AddNewByte(byte, long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_AddNewByte_System_Byte_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(System.Byte,System.Int64)
+  name.vb: AddNewByte(Byte, Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(byte, long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(Byte, Long)
+  nameWithType: HexEditTools.AddNewByte(byte, long)
+  nameWithType.vb: HexEditTools.AddNewByte(Byte, Long)
 - uid: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte*
   name: AddNewByte
   href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_AddNewByte_
