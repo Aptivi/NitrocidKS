@@ -15098,6 +15098,15 @@ references:
   fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex(Long, Long, Byte())
   nameWithType: BaseFilesystemDriver.RenderContentsInHex(long, long, byte[])
   nameWithType.vb: BaseFilesystemDriver.RenderContentsInHex(Long, Long, Byte())
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex(System.Int64,System.Int64,System.Int64,System.Byte[])
+  name: RenderContentsInHex(long, long, long, byte[])
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_RenderContentsInHex_System_Int64_System_Int64_System_Int64_System_Byte___
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex(System.Int64,System.Int64,System.Int64,System.Byte[])
+  name.vb: RenderContentsInHex(Long, Long, Long, Byte())
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex(long, long, long, byte[])
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex(Long, Long, Long, Byte())
+  nameWithType: BaseFilesystemDriver.RenderContentsInHex(long, long, long, byte[])
+  nameWithType.vb: BaseFilesystemDriver.RenderContentsInHex(Long, Long, Long, Byte())
 - uid: KS.Drivers.Filesystem.BaseFilesystemDriver.RenderContentsInHex*
   name: RenderContentsInHex
   href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_RenderContentsInHex_
@@ -16251,6 +16260,15 @@ references:
   fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex(Long, Long, Byte())
   nameWithType: IFilesystemDriver.RenderContentsInHex(long, long, byte[])
   nameWithType.vb: IFilesystemDriver.RenderContentsInHex(Long, Long, Byte())
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex(System.Int64,System.Int64,System.Int64,System.Byte[])
+  name: RenderContentsInHex(long, long, long, byte[])
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_RenderContentsInHex_System_Int64_System_Int64_System_Int64_System_Byte___
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex(System.Int64,System.Int64,System.Int64,System.Byte[])
+  name.vb: RenderContentsInHex(Long, Long, Long, Byte())
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex(long, long, long, byte[])
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex(Long, Long, Long, Byte())
+  nameWithType: IFilesystemDriver.RenderContentsInHex(long, long, long, byte[])
+  nameWithType.vb: IFilesystemDriver.RenderContentsInHex(Long, Long, Long, Byte())
 - uid: KS.Drivers.Filesystem.IFilesystemDriver.RenderContentsInHex*
   name: RenderContentsInHex
   href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_RenderContentsInHex_
@@ -18912,6 +18930,28 @@ references:
   commentId: N:KS.Files.Editors.HexEdit
   fullName: KS.Files.Editors.HexEdit
   nameWithType: KS.Files.Editors.HexEdit
+- uid: KS.Files.Editors.HexEdit.HexEditInteractive
+  name: HexEditInteractive
+  href: api/KS.Files.Editors.HexEdit.HexEditInteractive.html
+  commentId: T:KS.Files.Editors.HexEdit.HexEditInteractive
+  fullName: KS.Files.Editors.HexEdit.HexEditInteractive
+  nameWithType: HexEditInteractive
+- uid: KS.Files.Editors.HexEdit.HexEditInteractive.OpenInteractive(System.String)
+  name: OpenInteractive(string)
+  href: api/KS.Files.Editors.HexEdit.HexEditInteractive.html#KS_Files_Editors_HexEdit_HexEditInteractive_OpenInteractive_System_String_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditInteractive.OpenInteractive(System.String)
+  name.vb: OpenInteractive(String)
+  fullName: KS.Files.Editors.HexEdit.HexEditInteractive.OpenInteractive(string)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditInteractive.OpenInteractive(String)
+  nameWithType: HexEditInteractive.OpenInteractive(string)
+  nameWithType.vb: HexEditInteractive.OpenInteractive(String)
+- uid: KS.Files.Editors.HexEdit.HexEditInteractive.OpenInteractive*
+  name: OpenInteractive
+  href: api/KS.Files.Editors.HexEdit.HexEditInteractive.html#KS_Files_Editors_HexEdit_HexEditInteractive_OpenInteractive_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditInteractive.OpenInteractive
+  isSpec: "True"
+  fullName: KS.Files.Editors.HexEdit.HexEditInteractive.OpenInteractive
+  nameWithType: HexEditInteractive.OpenInteractive
 - uid: KS.Files.Editors.HexEdit.HexEditTools
   name: HexEditTools
   href: api/KS.Files.Editors.HexEdit.HexEditTools.html
@@ -19158,6 +19198,137 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.HexEdit.HexEditTools.WasHexEdited
   nameWithType: HexEditTools.WasHexEdited
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding
+  name: HexEditorBinding
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html
+  commentId: T:KS.Files.Editors.HexEdit.HexEditorBinding
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding
+  nameWithType: HexEditorBinding
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.Action
+  name: Action
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_Action
+  commentId: P:KS.Files.Editors.HexEdit.HexEditorBinding.Action
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.Action
+  nameWithType: HexEditorBinding.Action
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.Action*
+  name: Action
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_Action_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditorBinding.Action
+  isSpec: "True"
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.Action
+  nameWithType: HexEditorBinding.Action
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.Equals(KS.Files.Editors.HexEdit.HexEditorBinding)
+  name: Equals(HexEditorBinding)
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_Equals_KS_Files_Editors_HexEdit_HexEditorBinding_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditorBinding.Equals(KS.Files.Editors.HexEdit.HexEditorBinding)
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.Equals(KS.Files.Editors.HexEdit.HexEditorBinding)
+  nameWithType: HexEditorBinding.Equals(HexEditorBinding)
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.Equals(System.Object)
+  name: Equals(object)
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_Equals_System_Object_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditorBinding.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.Equals(object)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditorBinding.Equals(Object)
+  nameWithType: HexEditorBinding.Equals(object)
+  nameWithType.vb: HexEditorBinding.Equals(Object)
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.Equals*
+  name: Equals
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_Equals_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditorBinding.Equals
+  isSpec: "True"
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.Equals
+  nameWithType: HexEditorBinding.Equals
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.GetHashCode
+  name: GetHashCode()
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_GetHashCode
+  commentId: M:KS.Files.Editors.HexEdit.HexEditorBinding.GetHashCode
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.GetHashCode()
+  nameWithType: HexEditorBinding.GetHashCode()
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.GetHashCode*
+  name: GetHashCode
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_GetHashCode_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditorBinding.GetHashCode
+  isSpec: "True"
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.GetHashCode
+  nameWithType: HexEditorBinding.GetHashCode
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.Key
+  name: Key
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_Key
+  commentId: P:KS.Files.Editors.HexEdit.HexEditorBinding.Key
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.Key
+  nameWithType: HexEditorBinding.Key
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.Key*
+  name: Key
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_Key_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditorBinding.Key
+  isSpec: "True"
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.Key
+  nameWithType: HexEditorBinding.Key
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.KeyModifiers
+  name: KeyModifiers
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_KeyModifiers
+  commentId: P:KS.Files.Editors.HexEdit.HexEditorBinding.KeyModifiers
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.KeyModifiers
+  nameWithType: HexEditorBinding.KeyModifiers
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.KeyModifiers*
+  name: KeyModifiers
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_KeyModifiers_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditorBinding.KeyModifiers
+  isSpec: "True"
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.KeyModifiers
+  nameWithType: HexEditorBinding.KeyModifiers
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.Name
+  name: Name
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_Name
+  commentId: P:KS.Files.Editors.HexEdit.HexEditorBinding.Name
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.Name
+  nameWithType: HexEditorBinding.Name
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.Name*
+  name: Name
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_Name_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditorBinding.Name
+  isSpec: "True"
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.Name
+  nameWithType: HexEditorBinding.Name
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.op_Equality(KS.Files.Editors.HexEdit.HexEditorBinding,KS.Files.Editors.HexEdit.HexEditorBinding)
+  name: operator ==(HexEditorBinding, HexEditorBinding)
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_op_Equality_KS_Files_Editors_HexEdit_HexEditorBinding_KS_Files_Editors_HexEdit_HexEditorBinding_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditorBinding.op_Equality(KS.Files.Editors.HexEdit.HexEditorBinding,KS.Files.Editors.HexEdit.HexEditorBinding)
+  name.vb: =(HexEditorBinding, HexEditorBinding)
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.operator ==(KS.Files.Editors.HexEdit.HexEditorBinding, KS.Files.Editors.HexEdit.HexEditorBinding)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditorBinding.=(KS.Files.Editors.HexEdit.HexEditorBinding, KS.Files.Editors.HexEdit.HexEditorBinding)
+  nameWithType: HexEditorBinding.operator ==(HexEditorBinding, HexEditorBinding)
+  nameWithType.vb: HexEditorBinding.=(HexEditorBinding, HexEditorBinding)
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.op_Equality*
+  name: operator ==
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_op_Equality_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditorBinding.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.operator ==
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditorBinding.=
+  nameWithType: HexEditorBinding.operator ==
+  nameWithType.vb: HexEditorBinding.=
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.op_Inequality(KS.Files.Editors.HexEdit.HexEditorBinding,KS.Files.Editors.HexEdit.HexEditorBinding)
+  name: operator !=(HexEditorBinding, HexEditorBinding)
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_op_Inequality_KS_Files_Editors_HexEdit_HexEditorBinding_KS_Files_Editors_HexEdit_HexEditorBinding_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditorBinding.op_Inequality(KS.Files.Editors.HexEdit.HexEditorBinding,KS.Files.Editors.HexEdit.HexEditorBinding)
+  name.vb: <>(HexEditorBinding, HexEditorBinding)
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.operator !=(KS.Files.Editors.HexEdit.HexEditorBinding, KS.Files.Editors.HexEdit.HexEditorBinding)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditorBinding.<>(KS.Files.Editors.HexEdit.HexEditorBinding, KS.Files.Editors.HexEdit.HexEditorBinding)
+  nameWithType: HexEditorBinding.operator !=(HexEditorBinding, HexEditorBinding)
+  nameWithType.vb: HexEditorBinding.<>(HexEditorBinding, HexEditorBinding)
+- uid: KS.Files.Editors.HexEdit.HexEditorBinding.op_Inequality*
+  name: operator !=
+  href: api/KS.Files.Editors.HexEdit.HexEditorBinding.html#KS_Files_Editors_HexEdit_HexEditorBinding_op_Inequality_
+  commentId: Overload:KS.Files.Editors.HexEdit.HexEditorBinding.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: KS.Files.Editors.HexEdit.HexEditorBinding.operator !=
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditorBinding.<>
+  nameWithType: HexEditorBinding.operator !=
+  nameWithType.vb: HexEditorBinding.<>
 - uid: KS.Files.Editors.JsonShell
   name: KS.Files.Editors.JsonShell
   href: api/KS.Files.Editors.JsonShell.html
@@ -21593,6 +21764,15 @@ references:
   fullName.vb: KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex(Long, Long, Byte())
   nameWithType: FileContentPrinter.RenderContentsInHex(long, long, byte[])
   nameWithType.vb: FileContentPrinter.RenderContentsInHex(Long, Long, Byte())
+- uid: KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex(System.Int64,System.Int64,System.Int64,System.Byte[])
+  name: RenderContentsInHex(long, long, long, byte[])
+  href: api/KS.Files.Operations.Printing.FileContentPrinter.html#KS_Files_Operations_Printing_FileContentPrinter_RenderContentsInHex_System_Int64_System_Int64_System_Int64_System_Byte___
+  commentId: M:KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex(System.Int64,System.Int64,System.Int64,System.Byte[])
+  name.vb: RenderContentsInHex(Long, Long, Long, Byte())
+  fullName: KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex(long, long, long, byte[])
+  fullName.vb: KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex(Long, Long, Long, Byte())
+  nameWithType: FileContentPrinter.RenderContentsInHex(long, long, long, byte[])
+  nameWithType.vb: FileContentPrinter.RenderContentsInHex(Long, Long, Long, Byte())
 - uid: KS.Files.Operations.Printing.FileContentPrinter.RenderContentsInHex*
   name: RenderContentsInHex
   href: api/KS.Files.Operations.Printing.FileContentPrinter.html#KS_Files_Operations_Printing_FileContentPrinter_RenderContentsInHex_

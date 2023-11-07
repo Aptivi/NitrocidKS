@@ -1465,10 +1465,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Editors.HexEdit.HexEditInteractive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Editors.HexEdit.HexEditInteractive.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Files.Editors.HexEdit.HexEditTools.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Editors.HexEdit.HexEditTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Editors.HexEdit.HexEditorBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Editors.HexEdit.HexEditorBinding.html"
         }
       },
       "version": ""
