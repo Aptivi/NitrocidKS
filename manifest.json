@@ -705,6 +705,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.PowerLineColor.yml",
       "output": {
         ".html": {

@@ -8817,6 +8817,358 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressPlain
   nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressPlain
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor
+  name: InfoBoxSelectionColor
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html
+  commentId: T:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor
+  nameWithType: InfoBoxSelectionColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelection(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name: WriteInfoBoxSelection(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelection_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelection(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name.vb: WriteInfoBoxSelection(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelection(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, char, char, char, char, char, char, char, char, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelection(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelection(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, params object[])
+  nameWithType.vb: InfoBoxSelectionColor.WriteInfoBoxSelection(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelection(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Object[])
+  name: WriteInfoBoxSelection(InputChoiceInfo[], string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelection_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelection(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Object[])
+  name.vb: WriteInfoBoxSelection(InputChoiceInfo(), String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelection(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelection(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, ParamArray Object())
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelection(InputChoiceInfo[], string, params object[])
+  nameWithType.vb: InfoBoxSelectionColor.WriteInfoBoxSelection(InputChoiceInfo(), String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelection*
+  name: WriteInfoBoxSelection
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelection_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelection
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelection
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelection
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxSelectionColor(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionColor_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxSelectionColor(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColor(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, char, char, char, char, char, char, char, char, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColor(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionColor(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxSelectionColor.WriteInfoBoxSelectionColor(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxSelectionColor(InputChoiceInfo[], string, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionColor_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxSelectionColor(InputChoiceInfo(), String, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColor(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColor(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionColor(InputChoiceInfo[], string, Color, params object[])
+  nameWithType.vb: InfoBoxSelectionColor.WriteInfoBoxSelectionColor(InputChoiceInfo(), String, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxSelectionColor(InputChoiceInfo[], string, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionColor_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxSelectionColor(InputChoiceInfo(), String, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColor(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColor(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionColor(InputChoiceInfo[], string, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxSelectionColor.WriteInfoBoxSelectionColor(InputChoiceInfo(), String, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColor*
+  name: WriteInfoBoxSelectionColor
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionColor_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColor
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxSelectionColorBack(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionColorBack_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxSelectionColorBack(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, char, char, char, char, char, char, char, char, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, Color, Color, params object[])
+  nameWithType.vb: InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxSelectionColorBack(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, ConsoleColors, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionColorBack_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxSelectionColorBack(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, char, char, char, char, char, char, char, char, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, ConsoleColors, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxSelectionColorBack(InputChoiceInfo[], string, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionColorBack_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxSelectionColorBack(InputChoiceInfo(), String, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(InputChoiceInfo[], string, Color, Color, params object[])
+  nameWithType.vb: InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(InputChoiceInfo(), String, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxSelectionColorBack(InputChoiceInfo[], string, ConsoleColors, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionColorBack_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxSelectionColorBack(InputChoiceInfo(), String, ConsoleColors, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(InputChoiceInfo[], string, ConsoleColors, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack(InputChoiceInfo(), String, ConsoleColors, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack*
+  name: WriteInfoBoxSelectionColorBack
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionColorBack_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionColorBack
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxSelectionKernelColor(InputChoiceInfo[], string, KernelColorType, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionKernelColor_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxSelectionKernelColor(InputChoiceInfo(), String, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(InputChoiceInfo[], string, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(InputChoiceInfo(), String, KernelColorType, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxSelectionKernelColor(InputChoiceInfo[], string, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionKernelColor_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxSelectionKernelColor(InputChoiceInfo(), String, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(InputChoiceInfo[], string, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(InputChoiceInfo(), String, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxSelectionKernelColor(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionKernelColor_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxSelectionKernelColor(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, char, char, char, char, char, char, char, char, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxSelectionKernelColor(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionKernelColor_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxSelectionKernelColor(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, char, char, char, char, char, char, char, char, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor*
+  name: WriteInfoBoxSelectionKernelColor
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionKernelColor_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionKernelColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionPlain(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name: WriteInfoBoxSelectionPlain(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionPlain_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionPlain(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name.vb: WriteInfoBoxSelectionPlain(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionPlain(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, char, char, char, char, char, char, char, char, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionPlain(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionPlain(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, params object[])
+  nameWithType.vb: InfoBoxSelectionColor.WriteInfoBoxSelectionPlain(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionPlain(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Object[])
+  name: WriteInfoBoxSelectionPlain(InputChoiceInfo[], string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionPlain_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionPlain(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Object[])
+  name.vb: WriteInfoBoxSelectionPlain(InputChoiceInfo(), String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionPlain(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionPlain(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, ParamArray Object())
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionPlain(InputChoiceInfo[], string, params object[])
+  nameWithType.vb: InfoBoxSelectionColor.WriteInfoBoxSelectionPlain(InputChoiceInfo(), String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionPlain*
+  name: WriteInfoBoxSelectionPlain
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionColor_WriteInfoBoxSelectionPlain_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionPlain
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.WriteInfoBoxSelectionPlain
+  nameWithType: InfoBoxSelectionColor.WriteInfoBoxSelectionPlain
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor
+  name: InfoBoxSelectionMultipleColor
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html
+  commentId: T:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor
+  nameWithType: InfoBoxSelectionMultipleColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name: WriteInfoBoxSelectionMultiple(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultiple_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name.vb: WriteInfoBoxSelectionMultiple(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, char, char, char, char, char, char, char, char, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, params object[])
+  nameWithType.vb: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Object[])
+  name: WriteInfoBoxSelectionMultiple(InputChoiceInfo[], string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultiple_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Object[])
+  name.vb: WriteInfoBoxSelectionMultiple(InputChoiceInfo(), String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, ParamArray Object())
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple(InputChoiceInfo[], string, params object[])
+  nameWithType.vb: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple(InputChoiceInfo(), String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple*
+  name: WriteInfoBoxSelectionMultiple
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultiple_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiple
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxSelectionMultipleColor(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultipleColor_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxSelectionMultipleColor(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, char, char, char, char, char, char, char, char, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxSelectionMultipleColor(InputChoiceInfo[], string, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultipleColor_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxSelectionMultipleColor(InputChoiceInfo(), String, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(InputChoiceInfo[], string, Color, params object[])
+  nameWithType.vb: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(InputChoiceInfo(), String, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxSelectionMultipleColor(InputChoiceInfo[], string, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultipleColor_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxSelectionMultipleColor(InputChoiceInfo(), String, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(InputChoiceInfo[], string, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor(InputChoiceInfo(), String, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor*
+  name: WriteInfoBoxSelectionMultipleColor
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultipleColor_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultipleColorBack_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, char, char, char, char, char, char, char, char, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, Color, Color, params object[])
+  nameWithType.vb: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, ConsoleColors, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultipleColorBack_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, char, char, char, char, char, char, char, char, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, ConsoleColors, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo[], string, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultipleColorBack_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo(), String, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo[], string, Color, Color, params object[])
+  nameWithType.vb: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo(), String, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo[], string, ConsoleColors, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultipleColorBack_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo(), String, ConsoleColors, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo[], string, ConsoleColors, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack(InputChoiceInfo(), String, ConsoleColors, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack*
+  name: WriteInfoBoxSelectionMultipleColorBack
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultipleColorBack_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleColorBack
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo[], string, KernelColorType, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultipleKernelColor_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo(), String, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo[], string, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo(), String, KernelColorType, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo[], string, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultipleKernelColor_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo(), String, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo[], string, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo(), String, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultipleKernelColor_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, char, char, char, char, char, char, char, char, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultipleKernelColor_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, char, char, char, char, char, char, char, char, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor*
+  name: WriteInfoBoxSelectionMultipleKernelColor
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultipleKernelColor_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultipleKernelColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name: WriteInfoBoxSelectionMultiplePlain(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultiplePlain_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name.vb: WriteInfoBoxSelectionMultiplePlain(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, char, char, char, char, char, char, char, char, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain(InputChoiceInfo[], string, char, char, char, char, char, char, char, char, params object[])
+  nameWithType.vb: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain(InputChoiceInfo(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Object[])
+  name: WriteInfoBoxSelectionMultiplePlain(InputChoiceInfo[], string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultiplePlain_KS_ConsoleBase_Inputs_InputChoiceInfo___System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain(KS.ConsoleBase.Inputs.InputChoiceInfo[],System.String,System.Object[])
+  name.vb: WriteInfoBoxSelectionMultiplePlain(InputChoiceInfo(), String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain(KS.ConsoleBase.Inputs.InputChoiceInfo[], string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain(KS.ConsoleBase.Inputs.InputChoiceInfo(), String, ParamArray Object())
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain(InputChoiceInfo[], string, params object[])
+  nameWithType.vb: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain(InputChoiceInfo(), String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain*
+  name: WriteInfoBoxSelectionMultiplePlain
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxSelectionMultipleColor_WriteInfoBoxSelectionMultiplePlain_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain
+  nameWithType: InfoBoxSelectionMultipleColor.WriteInfoBoxSelectionMultiplePlain
 - uid: KS.ConsoleBase.Writers.FancyWriters.PowerLineColor
   name: PowerLineColor
   href: api/KS.ConsoleBase.Writers.FancyWriters.PowerLineColor.html
