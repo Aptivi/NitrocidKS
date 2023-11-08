@@ -8506,6 +8506,317 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxInputColor.WriteInfoBoxPlainInput
   nameWithType: InfoBoxInputColor.WriteInfoBoxPlainInput
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor
+  name: InfoBoxProgressColor
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html
+  commentId: T:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor
+  nameWithType: InfoBoxProgressColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(System.Double,System.String,System.Boolean,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name: WriteInfoBoxProgress(double, string, bool, char, char, char, char, char, char, char, char, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgress_System_Double_System_String_System_Boolean_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(System.Double,System.String,System.Boolean,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name.vb: WriteInfoBoxProgress(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(double, string, bool, char, char, char, char, char, char, char, char, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgress(double, string, bool, char, char, char, char, char, char, char, char, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgress(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(System.Double,System.String,System.Boolean,System.Object[])
+  name: WriteInfoBoxProgress(double, string, bool, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgress_System_Double_System_String_System_Boolean_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(System.Double,System.String,System.Boolean,System.Object[])
+  name.vb: WriteInfoBoxProgress(Double, String, Boolean, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(double, string, bool, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(Double, String, Boolean, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgress(double, string, bool, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgress(Double, String, Boolean, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name: WriteInfoBoxProgress(double, string, char, char, char, char, char, char, char, char, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgress_System_Double_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name.vb: WriteInfoBoxProgress(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(double, string, char, char, char, char, char, char, char, char, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgress(double, string, char, char, char, char, char, char, char, char, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgress(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(System.Double,System.String,System.Object[])
+  name: WriteInfoBoxProgress(double, string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgress_System_Double_System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(System.Double,System.String,System.Object[])
+  name.vb: WriteInfoBoxProgress(Double, String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(double, string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress(Double, String, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgress(double, string, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgress(Double, String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress*
+  name: WriteInfoBoxProgress
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgress_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgress
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgress
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,System.Boolean,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxProgressColor(double, string, bool, char, char, char, char, char, char, char, char, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColor_System_Double_System_String_System_Boolean_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,System.Boolean,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxProgressColor(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, bool, char, char, char, char, char, char, char, char, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, bool, char, char, char, char, char, char, char, char, Color, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,System.Boolean,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxProgressColor(double, string, bool, char, char, char, char, char, char, char, char, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColor_System_Double_System_String_System_Boolean_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,System.Boolean,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxProgressColor(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, bool, char, char, char, char, char, char, char, char, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, bool, char, char, char, char, char, char, char, char, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,System.Boolean,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxProgressColor(double, string, bool, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColor_System_Double_System_String_System_Boolean_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,System.Boolean,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxProgressColor(Double, String, Boolean, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, bool, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, Boolean, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, bool, Color, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, Boolean, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,System.Boolean,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxProgressColor(double, string, bool, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColor_System_Double_System_String_System_Boolean_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,System.Boolean,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxProgressColor(Double, String, Boolean, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, bool, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, Boolean, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, bool, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, Boolean, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxProgressColor(double, string, char, char, char, char, char, char, char, char, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColor_System_Double_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxProgressColor(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, char, char, char, char, char, char, char, char, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, char, char, char, char, char, char, char, char, Color, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxProgressColor(double, string, char, char, char, char, char, char, char, char, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColor_System_Double_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxProgressColor(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, char, char, char, char, char, char, char, char, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, char, char, char, char, char, char, char, char, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxProgressColor(double, string, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColor_System_Double_System_String_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxProgressColor(Double, String, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, Color, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxProgressColor(double, string, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColor_System_Double_System_String_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(System.Double,System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxProgressColor(Double, String, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColor(double, string, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColor(Double, String, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor*
+  name: WriteInfoBoxProgressColor
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColor_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColor
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,System.Boolean,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxProgressColorBack(double, string, bool, char, char, char, char, char, char, char, char, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColorBack_System_Double_System_String_System_Boolean_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,System.Boolean,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxProgressColorBack(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, bool, char, char, char, char, char, char, char, char, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, bool, char, char, char, char, char, char, char, char, Color, Color, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,System.Boolean,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxProgressColorBack(double, string, bool, char, char, char, char, char, char, char, char, ConsoleColors, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColorBack_System_Double_System_String_System_Boolean_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,System.Boolean,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxProgressColorBack(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, bool, char, char, char, char, char, char, char, char, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, bool, char, char, char, char, char, char, char, char, ConsoleColors, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,System.Boolean,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxProgressColorBack(double, string, bool, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColorBack_System_Double_System_String_System_Boolean_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,System.Boolean,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxProgressColorBack(Double, String, Boolean, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, bool, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, Boolean, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, bool, Color, Color, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, Boolean, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,System.Boolean,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxProgressColorBack(double, string, bool, ConsoleColors, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColorBack_System_Double_System_String_System_Boolean_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,System.Boolean,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxProgressColorBack(Double, String, Boolean, ConsoleColors, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, bool, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, Boolean, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, bool, ConsoleColors, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, Boolean, ConsoleColors, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxProgressColorBack(double, string, char, char, char, char, char, char, char, char, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColorBack_System_Double_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxProgressColorBack(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, char, char, char, char, char, char, char, char, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, char, char, char, char, char, char, char, char, Color, Color, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxProgressColorBack(double, string, char, char, char, char, char, char, char, char, ConsoleColors, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColorBack_System_Double_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxProgressColorBack(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, char, char, char, char, char, char, char, char, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, char, char, char, char, char, char, char, char, ConsoleColors, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxProgressColorBack(double, string, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColorBack_System_Double_System_String_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxProgressColorBack(Double, String, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, Color, Color, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxProgressColorBack(double, string, ConsoleColors, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColorBack_System_Double_System_String_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(System.Double,System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxProgressColorBack(Double, String, ConsoleColors, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(double, string, ConsoleColors, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressColorBack(Double, String, ConsoleColors, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack*
+  name: WriteInfoBoxProgressColorBack
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressColorBack_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressColorBack
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressColorBack
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxProgressKernelColor(double, string, KernelColorType, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressKernelColor_System_Double_System_String_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxProgressKernelColor(Double, String, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, KernelColorType, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxProgressKernelColor(double, string, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressKernelColor_System_Double_System_String_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxProgressKernelColor(Double, String, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,System.Boolean,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxProgressKernelColor(double, string, bool, KernelColorType, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressKernelColor_System_Double_System_String_System_Boolean_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,System.Boolean,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxProgressKernelColor(Double, String, Boolean, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, bool, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, Boolean, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, bool, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, Boolean, KernelColorType, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,System.Boolean,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxProgressKernelColor(double, string, bool, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressKernelColor_System_Double_System_String_System_Boolean_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,System.Boolean,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxProgressKernelColor(Double, String, Boolean, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, bool, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, Boolean, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, bool, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, Boolean, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,System.Boolean,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxProgressKernelColor(double, string, bool, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressKernelColor_System_Double_System_String_System_Boolean_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,System.Boolean,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxProgressKernelColor(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, bool, char, char, char, char, char, char, char, char, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, bool, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,System.Boolean,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxProgressKernelColor(double, string, bool, char, char, char, char, char, char, char, char, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressKernelColor_System_Double_System_String_System_Boolean_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,System.Boolean,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxProgressKernelColor(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, bool, char, char, char, char, char, char, char, char, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, bool, char, char, char, char, char, char, char, char, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, Boolean, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxProgressKernelColor(double, string, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressKernelColor_System_Double_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxProgressKernelColor(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, char, char, char, char, char, char, char, char, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxProgressKernelColor(double, string, char, char, char, char, char, char, char, char, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressKernelColor_System_Double_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxProgressKernelColor(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, char, char, char, char, char, char, char, char, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(double, string, char, char, char, char, char, char, char, char, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor*
+  name: WriteInfoBoxProgressKernelColor
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressKernelColor_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressKernelColor
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressKernelColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressPlain(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name: WriteInfoBoxProgressPlain(double, string, char, char, char, char, char, char, char, char, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressPlain_System_Double_System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressPlain(System.Double,System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name.vb: WriteInfoBoxProgressPlain(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressPlain(double, string, char, char, char, char, char, char, char, char, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressPlain(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressPlain(double, string, char, char, char, char, char, char, char, char, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressPlain(Double, String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressPlain(System.Double,System.String,System.Object[])
+  name: WriteInfoBoxProgressPlain(double, string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressPlain_System_Double_System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressPlain(System.Double,System.String,System.Object[])
+  name.vb: WriteInfoBoxProgressPlain(Double, String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressPlain(double, string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressPlain(Double, String, ParamArray Object())
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressPlain(double, string, params object[])
+  nameWithType.vb: InfoBoxProgressColor.WriteInfoBoxProgressPlain(Double, String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressPlain*
+  name: WriteInfoBoxProgressPlain
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxProgressColor_WriteInfoBoxProgressPlain_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressPlain
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.WriteInfoBoxProgressPlain
+  nameWithType: InfoBoxProgressColor.WriteInfoBoxProgressPlain
 - uid: KS.ConsoleBase.Writers.FancyWriters.PowerLineColor
   name: PowerLineColor
   href: api/KS.ConsoleBase.Writers.FancyWriters.PowerLineColor.html
