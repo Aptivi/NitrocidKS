@@ -35862,6 +35862,28 @@ references:
   commentId: N:KS.Misc.Reflection
   fullName: KS.Misc.Reflection
   nameWithType: KS.Misc.Reflection
+- uid: KS.Misc.Reflection.ArrayTools
+  name: ArrayTools
+  href: api/KS.Misc.Reflection.ArrayTools.html
+  commentId: T:KS.Misc.Reflection.ArrayTools
+  fullName: KS.Misc.Reflection.ArrayTools
+  nameWithType: ArrayTools
+- uid: KS.Misc.Reflection.ArrayTools.RandomizeArray*
+  name: RandomizeArray
+  href: api/KS.Misc.Reflection.ArrayTools.html#KS_Misc_Reflection_ArrayTools_RandomizeArray_
+  commentId: Overload:KS.Misc.Reflection.ArrayTools.RandomizeArray
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.ArrayTools.RandomizeArray
+  nameWithType: ArrayTools.RandomizeArray
+- uid: KS.Misc.Reflection.ArrayTools.RandomizeArray``1(``0[])
+  name: RandomizeArray<T>(T[])
+  href: api/KS.Misc.Reflection.ArrayTools.html#KS_Misc_Reflection_ArrayTools_RandomizeArray__1___0___
+  commentId: M:KS.Misc.Reflection.ArrayTools.RandomizeArray``1(``0[])
+  name.vb: RandomizeArray(Of T)(T())
+  fullName: KS.Misc.Reflection.ArrayTools.RandomizeArray<T>(T[])
+  fullName.vb: KS.Misc.Reflection.ArrayTools.RandomizeArray(Of T)(T())
+  nameWithType: ArrayTools.RandomizeArray<T>(T[])
+  nameWithType.vb: ArrayTools.RandomizeArray(Of T)(T())
 - uid: KS.Misc.Reflection.AssemblyLookup
   name: AssemblyLookup
   href: api/KS.Misc.Reflection.AssemblyLookup.html
