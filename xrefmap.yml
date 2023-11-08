@@ -8001,6 +8001,191 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.WriteFigletWherePlain
   nameWithType: FigletWhereColor.WriteFigletWherePlain
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor
+  name: InfoBoxButtonsColor
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html
+  commentId: T:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor
+  nameWithType: InfoBoxButtonsColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtons(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name: WriteInfoBoxButtons(string[], string, char, char, char, char, char, char, char, char, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtons_System_String___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtons(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name.vb: WriteInfoBoxButtons(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtons(string[], string, char, char, char, char, char, char, char, char, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtons(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtons(string[], string, char, char, char, char, char, char, char, char, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtons(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtons(System.String[],System.String,System.Object[])
+  name: WriteInfoBoxButtons(string[], string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtons_System_String___System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtons(System.String[],System.String,System.Object[])
+  name.vb: WriteInfoBoxButtons(String(), String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtons(string[], string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtons(String(), String, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtons(string[], string, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtons(String(), String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtons*
+  name: WriteInfoBoxButtons
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtons_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtons
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtons
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtons
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxButtonsColor(string[], string, char, char, char, char, char, char, char, char, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsColor_System_String___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxButtonsColor(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(string[], string, char, char, char, char, char, char, char, char, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsColor(string[], string, char, char, char, char, char, char, char, char, Color, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtonsColor(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxButtonsColor(string[], string, char, char, char, char, char, char, char, char, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsColor_System_String___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxButtonsColor(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(string[], string, char, char, char, char, char, char, char, char, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsColor(string[], string, char, char, char, char, char, char, char, char, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtonsColor(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(System.String[],System.String,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxButtonsColor(string[], string, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsColor_System_String___System_String_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(System.String[],System.String,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxButtonsColor(String(), String, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(string[], string, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(String(), String, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsColor(string[], string, Color, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtonsColor(String(), String, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(System.String[],System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxButtonsColor(string[], string, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsColor_System_String___System_String_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(System.String[],System.String,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxButtonsColor(String(), String, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(string[], string, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor(String(), String, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsColor(string[], string, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtonsColor(String(), String, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor*
+  name: WriteInfoBoxButtonsColor
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsColor_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColor
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxButtonsColorBack(string[], string, char, char, char, char, char, char, char, char, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsColorBack_System_String___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxButtonsColorBack(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(string[], string, char, char, char, char, char, char, char, char, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(string[], string, char, char, char, char, char, char, char, char, Color, Color, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxButtonsColorBack(string[], string, char, char, char, char, char, char, char, char, ConsoleColors, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsColorBack_System_String___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxButtonsColorBack(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(string[], string, char, char, char, char, char, char, char, char, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(string[], string, char, char, char, char, char, char, char, char, ConsoleColors, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, ConsoleColors, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(System.String[],System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: WriteInfoBoxButtonsColorBack(string[], string, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsColorBack_System_String___System_String_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(System.String[],System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: WriteInfoBoxButtonsColorBack(String(), String, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(string[], string, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(String(), String, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(string[], string, Color, Color, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(String(), String, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(System.String[],System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name: WriteInfoBoxButtonsColorBack(string[], string, ConsoleColors, ConsoleColors, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsColorBack_System_String___System_String_Terminaux_Colors_ConsoleColors_Terminaux_Colors_ConsoleColors_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(System.String[],System.String,Terminaux.Colors.ConsoleColors,Terminaux.Colors.ConsoleColors,System.Object[])
+  name.vb: WriteInfoBoxButtonsColorBack(String(), String, ConsoleColors, ConsoleColors, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(string[], string, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(String(), String, Terminaux.Colors.ConsoleColors, Terminaux.Colors.ConsoleColors, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(string[], string, ConsoleColors, ConsoleColors, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack(String(), String, ConsoleColors, ConsoleColors, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack*
+  name: WriteInfoBoxButtonsColorBack
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsColorBack_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsColorBack
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(System.String[],System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxButtonsKernelColor(string[], string, KernelColorType, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsKernelColor_System_String___System_String_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(System.String[],System.String,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxButtonsKernelColor(String(), String, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(string[], string, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(String(), String, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(string[], string, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(String(), String, KernelColorType, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(System.String[],System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxButtonsKernelColor(string[], string, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsKernelColor_System_String___System_String_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(System.String[],System.String,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxButtonsKernelColor(String(), String, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(string[], string, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(String(), String, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(string[], string, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(String(), String, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxButtonsKernelColor(string[], string, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsKernelColor_System_String___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxButtonsKernelColor(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(string[], string, char, char, char, char, char, char, char, char, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, KS.ConsoleBase.Colors.KernelColorType, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(string[], string, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteInfoBoxButtonsKernelColor(string[], string, char, char, char, char, char, char, char, char, KernelColorType, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsKernelColor_System_String___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_KS_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteInfoBoxButtonsKernelColor(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(string[], string, char, char, char, char, char, char, char, char, KS.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, KS.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(string[], string, char, char, char, char, char, char, char, char, KernelColorType, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor*
+  name: WriteInfoBoxButtonsKernelColor
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsKernelColor_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsKernelColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsPlain(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name: WriteInfoBoxButtonsPlain(string[], string, char, char, char, char, char, char, char, char, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsPlain_System_String___System_String_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsPlain(System.String[],System.String,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name.vb: WriteInfoBoxButtonsPlain(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsPlain(string[], string, char, char, char, char, char, char, char, char, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsPlain(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsPlain(string[], string, char, char, char, char, char, char, char, char, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtonsPlain(String(), String, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsPlain(System.String[],System.String,System.Object[])
+  name: WriteInfoBoxButtonsPlain(string[], string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsPlain_System_String___System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsPlain(System.String[],System.String,System.Object[])
+  name.vb: WriteInfoBoxButtonsPlain(String(), String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsPlain(string[], string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsPlain(String(), String, ParamArray Object())
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsPlain(string[], string, params object[])
+  nameWithType.vb: InfoBoxButtonsColor.WriteInfoBoxButtonsPlain(String(), String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsPlain*
+  name: WriteInfoBoxButtonsPlain
+  href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html#KS_ConsoleBase_Writers_FancyWriters_InfoBoxButtonsColor_WriteInfoBoxButtonsPlain_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsPlain
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.WriteInfoBoxButtonsPlain
+  nameWithType: InfoBoxButtonsColor.WriteInfoBoxButtonsPlain
 - uid: KS.ConsoleBase.Writers.FancyWriters.InfoBoxColor
   name: InfoBoxColor
   href: api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxColor.html
