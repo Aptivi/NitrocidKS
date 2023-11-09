@@ -1455,16 +1455,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Drivers.Sorting.SortingDriver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Drivers.Sorting.SortingDriver.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Drivers.Sorting.SortingDriverTools.yml",
       "output": {
         ".html": {
