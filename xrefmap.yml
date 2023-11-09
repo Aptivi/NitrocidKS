@@ -15896,6 +15896,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.MakeJsonFile
   nameWithType: BaseFilesystemDriver.MakeJsonFile
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.MakeSymlink(System.String,System.String)
+  name: MakeSymlink(string, string)
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_MakeSymlink_System_String_System_String_
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.MakeSymlink(System.String,System.String)
+  name.vb: MakeSymlink(String, String)
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.MakeSymlink(string, string)
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.MakeSymlink(String, String)
+  nameWithType: BaseFilesystemDriver.MakeSymlink(string, string)
+  nameWithType.vb: BaseFilesystemDriver.MakeSymlink(String, String)
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.MakeSymlink*
+  name: MakeSymlink
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_MakeSymlink_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.MakeSymlink
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.MakeSymlink
+  nameWithType: BaseFilesystemDriver.MakeSymlink
 - uid: KS.Drivers.Filesystem.BaseFilesystemDriver.MoveDirectory(System.String,System.String)
   name: MoveDirectory(string, string)
   href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_MoveDirectory_System_String_System_String_
@@ -17058,6 +17074,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.IFilesystemDriver.MakeJsonFile
   nameWithType: IFilesystemDriver.MakeJsonFile
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.MakeSymlink(System.String,System.String)
+  name: MakeSymlink(string, string)
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_MakeSymlink_System_String_System_String_
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.MakeSymlink(System.String,System.String)
+  name.vb: MakeSymlink(String, String)
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.MakeSymlink(string, string)
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.MakeSymlink(String, String)
+  nameWithType: IFilesystemDriver.MakeSymlink(string, string)
+  nameWithType.vb: IFilesystemDriver.MakeSymlink(String, String)
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.MakeSymlink*
+  name: MakeSymlink
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_MakeSymlink_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.MakeSymlink
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.MakeSymlink
+  nameWithType: IFilesystemDriver.MakeSymlink
 - uid: KS.Drivers.Filesystem.IFilesystemDriver.MoveDirectory(System.String,System.String)
   name: MoveDirectory(string, string)
   href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_MoveDirectory_System_String_System_String_
@@ -22627,6 +22659,22 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Making.MakeRandomJsonFile
   nameWithType: Making.MakeRandomJsonFile
+- uid: KS.Files.Operations.Making.MakeSymlink(System.String,System.String)
+  name: MakeSymlink(string, string)
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_MakeSymlink_System_String_System_String_
+  commentId: M:KS.Files.Operations.Making.MakeSymlink(System.String,System.String)
+  name.vb: MakeSymlink(String, String)
+  fullName: KS.Files.Operations.Making.MakeSymlink(string, string)
+  fullName.vb: KS.Files.Operations.Making.MakeSymlink(String, String)
+  nameWithType: Making.MakeSymlink(string, string)
+  nameWithType.vb: Making.MakeSymlink(String, String)
+- uid: KS.Files.Operations.Making.MakeSymlink*
+  name: MakeSymlink
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_MakeSymlink_
+  commentId: Overload:KS.Files.Operations.Making.MakeSymlink
+  isSpec: "True"
+  fullName: KS.Files.Operations.Making.MakeSymlink
+  nameWithType: Making.MakeSymlink
 - uid: KS.Files.Operations.Making.TryMakeDirectory(System.String,System.Boolean)
   name: TryMakeDirectory(string, bool)
   href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_TryMakeDirectory_System_String_System_Boolean_
@@ -22675,6 +22723,22 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Making.TryMakeJsonFile
   nameWithType: Making.TryMakeJsonFile
+- uid: KS.Files.Operations.Making.TryMakeSymlink(System.String,System.String)
+  name: TryMakeSymlink(string, string)
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_TryMakeSymlink_System_String_System_String_
+  commentId: M:KS.Files.Operations.Making.TryMakeSymlink(System.String,System.String)
+  name.vb: TryMakeSymlink(String, String)
+  fullName: KS.Files.Operations.Making.TryMakeSymlink(string, string)
+  fullName.vb: KS.Files.Operations.Making.TryMakeSymlink(String, String)
+  nameWithType: Making.TryMakeSymlink(string, string)
+  nameWithType.vb: Making.TryMakeSymlink(String, String)
+- uid: KS.Files.Operations.Making.TryMakeSymlink*
+  name: TryMakeSymlink
+  href: api/KS.Files.Operations.Making.html#KS_Files_Operations_Making_TryMakeSymlink_
+  commentId: Overload:KS.Files.Operations.Making.TryMakeSymlink
+  isSpec: "True"
+  fullName: KS.Files.Operations.Making.TryMakeSymlink
+  nameWithType: Making.TryMakeSymlink
 - uid: KS.Files.Operations.Manipulation
   name: Manipulation
   href: api/KS.Files.Operations.Manipulation.html
