@@ -20784,6 +20784,28 @@ references:
   commentId: N:KS.Files.Editors.TextEdit
   fullName: KS.Files.Editors.TextEdit
   nameWithType: KS.Files.Editors.TextEdit
+- uid: KS.Files.Editors.TextEdit.TextEditInteractive
+  name: TextEditInteractive
+  href: api/KS.Files.Editors.TextEdit.TextEditInteractive.html
+  commentId: T:KS.Files.Editors.TextEdit.TextEditInteractive
+  fullName: KS.Files.Editors.TextEdit.TextEditInteractive
+  nameWithType: TextEditInteractive
+- uid: KS.Files.Editors.TextEdit.TextEditInteractive.OpenInteractive(System.String)
+  name: OpenInteractive(string)
+  href: api/KS.Files.Editors.TextEdit.TextEditInteractive.html#KS_Files_Editors_TextEdit_TextEditInteractive_OpenInteractive_System_String_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditInteractive.OpenInteractive(System.String)
+  name.vb: OpenInteractive(String)
+  fullName: KS.Files.Editors.TextEdit.TextEditInteractive.OpenInteractive(string)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditInteractive.OpenInteractive(String)
+  nameWithType: TextEditInteractive.OpenInteractive(string)
+  nameWithType.vb: TextEditInteractive.OpenInteractive(String)
+- uid: KS.Files.Editors.TextEdit.TextEditInteractive.OpenInteractive*
+  name: OpenInteractive
+  href: api/KS.Files.Editors.TextEdit.TextEditInteractive.html#KS_Files_Editors_TextEdit_TextEditInteractive_OpenInteractive_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditInteractive.OpenInteractive
+  isSpec: "True"
+  fullName: KS.Files.Editors.TextEdit.TextEditInteractive.OpenInteractive
+  nameWithType: TextEditInteractive.OpenInteractive
 - uid: KS.Files.Editors.TextEdit.TextEditTools
   name: TextEditTools
   href: api/KS.Files.Editors.TextEdit.TextEditTools.html
@@ -21066,6 +21088,137 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.TextEdit.TextEditTools.WasTextEdited
   nameWithType: TextEditTools.WasTextEdited
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding
+  name: TextEditorBinding
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html
+  commentId: T:KS.Files.Editors.TextEdit.TextEditorBinding
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding
+  nameWithType: TextEditorBinding
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.Action
+  name: Action
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_Action
+  commentId: P:KS.Files.Editors.TextEdit.TextEditorBinding.Action
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.Action
+  nameWithType: TextEditorBinding.Action
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.Action*
+  name: Action
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_Action_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditorBinding.Action
+  isSpec: "True"
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.Action
+  nameWithType: TextEditorBinding.Action
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.Equals(KS.Files.Editors.TextEdit.TextEditorBinding)
+  name: Equals(TextEditorBinding)
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_Equals_KS_Files_Editors_TextEdit_TextEditorBinding_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditorBinding.Equals(KS.Files.Editors.TextEdit.TextEditorBinding)
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.Equals(KS.Files.Editors.TextEdit.TextEditorBinding)
+  nameWithType: TextEditorBinding.Equals(TextEditorBinding)
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.Equals(System.Object)
+  name: Equals(object)
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_Equals_System_Object_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditorBinding.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.Equals(object)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditorBinding.Equals(Object)
+  nameWithType: TextEditorBinding.Equals(object)
+  nameWithType.vb: TextEditorBinding.Equals(Object)
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.Equals*
+  name: Equals
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_Equals_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditorBinding.Equals
+  isSpec: "True"
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.Equals
+  nameWithType: TextEditorBinding.Equals
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.GetHashCode
+  name: GetHashCode()
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_GetHashCode
+  commentId: M:KS.Files.Editors.TextEdit.TextEditorBinding.GetHashCode
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.GetHashCode()
+  nameWithType: TextEditorBinding.GetHashCode()
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.GetHashCode*
+  name: GetHashCode
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_GetHashCode_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditorBinding.GetHashCode
+  isSpec: "True"
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.GetHashCode
+  nameWithType: TextEditorBinding.GetHashCode
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.Key
+  name: Key
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_Key
+  commentId: P:KS.Files.Editors.TextEdit.TextEditorBinding.Key
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.Key
+  nameWithType: TextEditorBinding.Key
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.Key*
+  name: Key
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_Key_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditorBinding.Key
+  isSpec: "True"
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.Key
+  nameWithType: TextEditorBinding.Key
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.KeyModifiers
+  name: KeyModifiers
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_KeyModifiers
+  commentId: P:KS.Files.Editors.TextEdit.TextEditorBinding.KeyModifiers
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.KeyModifiers
+  nameWithType: TextEditorBinding.KeyModifiers
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.KeyModifiers*
+  name: KeyModifiers
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_KeyModifiers_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditorBinding.KeyModifiers
+  isSpec: "True"
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.KeyModifiers
+  nameWithType: TextEditorBinding.KeyModifiers
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.Name
+  name: Name
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_Name
+  commentId: P:KS.Files.Editors.TextEdit.TextEditorBinding.Name
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.Name
+  nameWithType: TextEditorBinding.Name
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.Name*
+  name: Name
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_Name_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditorBinding.Name
+  isSpec: "True"
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.Name
+  nameWithType: TextEditorBinding.Name
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.op_Equality(KS.Files.Editors.TextEdit.TextEditorBinding,KS.Files.Editors.TextEdit.TextEditorBinding)
+  name: operator ==(TextEditorBinding, TextEditorBinding)
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_op_Equality_KS_Files_Editors_TextEdit_TextEditorBinding_KS_Files_Editors_TextEdit_TextEditorBinding_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditorBinding.op_Equality(KS.Files.Editors.TextEdit.TextEditorBinding,KS.Files.Editors.TextEdit.TextEditorBinding)
+  name.vb: =(TextEditorBinding, TextEditorBinding)
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.operator ==(KS.Files.Editors.TextEdit.TextEditorBinding, KS.Files.Editors.TextEdit.TextEditorBinding)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditorBinding.=(KS.Files.Editors.TextEdit.TextEditorBinding, KS.Files.Editors.TextEdit.TextEditorBinding)
+  nameWithType: TextEditorBinding.operator ==(TextEditorBinding, TextEditorBinding)
+  nameWithType.vb: TextEditorBinding.=(TextEditorBinding, TextEditorBinding)
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.op_Equality*
+  name: operator ==
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_op_Equality_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditorBinding.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.operator ==
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditorBinding.=
+  nameWithType: TextEditorBinding.operator ==
+  nameWithType.vb: TextEditorBinding.=
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.op_Inequality(KS.Files.Editors.TextEdit.TextEditorBinding,KS.Files.Editors.TextEdit.TextEditorBinding)
+  name: operator !=(TextEditorBinding, TextEditorBinding)
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_op_Inequality_KS_Files_Editors_TextEdit_TextEditorBinding_KS_Files_Editors_TextEdit_TextEditorBinding_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditorBinding.op_Inequality(KS.Files.Editors.TextEdit.TextEditorBinding,KS.Files.Editors.TextEdit.TextEditorBinding)
+  name.vb: <>(TextEditorBinding, TextEditorBinding)
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.operator !=(KS.Files.Editors.TextEdit.TextEditorBinding, KS.Files.Editors.TextEdit.TextEditorBinding)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditorBinding.<>(KS.Files.Editors.TextEdit.TextEditorBinding, KS.Files.Editors.TextEdit.TextEditorBinding)
+  nameWithType: TextEditorBinding.operator !=(TextEditorBinding, TextEditorBinding)
+  nameWithType.vb: TextEditorBinding.<>(TextEditorBinding, TextEditorBinding)
+- uid: KS.Files.Editors.TextEdit.TextEditorBinding.op_Inequality*
+  name: operator !=
+  href: api/KS.Files.Editors.TextEdit.TextEditorBinding.html#KS_Files_Editors_TextEdit_TextEditorBinding_op_Inequality_
+  commentId: Overload:KS.Files.Editors.TextEdit.TextEditorBinding.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: KS.Files.Editors.TextEdit.TextEditorBinding.operator !=
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditorBinding.<>
+  nameWithType: TextEditorBinding.operator !=
+  nameWithType.vb: TextEditorBinding.<>
 - uid: KS.Files.Extensions
   name: KS.Files.Extensions
   href: api/KS.Files.Extensions.html

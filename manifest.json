@@ -1585,10 +1585,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Editors.TextEdit.TextEditInteractive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Editors.TextEdit.TextEditInteractive.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Files.Editors.TextEdit.TextEditTools.yml",
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Editors.TextEdit.TextEditTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Editors.TextEdit.TextEditorBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Editors.TextEdit.TextEditorBinding.html"
         }
       },
       "version": ""
