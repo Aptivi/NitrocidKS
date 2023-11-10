@@ -3954,6 +3954,15 @@ references:
   fullName.vb: KS.ConsoleBase.Interactive.InteractiveTuiBinding.New(String, System.ConsoleKey, System.Action(Of Object, Integer))
   nameWithType: InteractiveTuiBinding.InteractiveTuiBinding(string, ConsoleKey, Action<object, int>)
   nameWithType.vb: InteractiveTuiBinding.New(String, ConsoleKey, Action(Of Object, Integer))
+- uid: KS.ConsoleBase.Interactive.InteractiveTuiBinding.#ctor(System.String,System.ConsoleKey,System.ConsoleModifiers,System.Action{System.Object,System.Int32})
+  name: InteractiveTuiBinding(string, ConsoleKey, ConsoleModifiers, Action<object, int>)
+  href: api/KS.ConsoleBase.Interactive.InteractiveTuiBinding.html#KS_ConsoleBase_Interactive_InteractiveTuiBinding__ctor_System_String_System_ConsoleKey_System_ConsoleModifiers_System_Action_System_Object_System_Int32__
+  commentId: M:KS.ConsoleBase.Interactive.InteractiveTuiBinding.#ctor(System.String,System.ConsoleKey,System.ConsoleModifiers,System.Action{System.Object,System.Int32})
+  name.vb: New(String, ConsoleKey, ConsoleModifiers, Action(Of Object, Integer))
+  fullName: KS.ConsoleBase.Interactive.InteractiveTuiBinding.InteractiveTuiBinding(string, System.ConsoleKey, System.ConsoleModifiers, System.Action<object, int>)
+  fullName.vb: KS.ConsoleBase.Interactive.InteractiveTuiBinding.New(String, System.ConsoleKey, System.ConsoleModifiers, System.Action(Of Object, Integer))
+  nameWithType: InteractiveTuiBinding.InteractiveTuiBinding(string, ConsoleKey, ConsoleModifiers, Action<object, int>)
+  nameWithType.vb: InteractiveTuiBinding.New(String, ConsoleKey, ConsoleModifiers, Action(Of Object, Integer))
 - uid: KS.ConsoleBase.Interactive.InteractiveTuiBinding.#ctor*
   name: InteractiveTuiBinding
   href: api/KS.ConsoleBase.Interactive.InteractiveTuiBinding.html#KS_ConsoleBase_Interactive_InteractiveTuiBinding__ctor_
@@ -3977,6 +3986,19 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Interactive.InteractiveTuiBinding.BindingAction
   nameWithType: InteractiveTuiBinding.BindingAction
+- uid: KS.ConsoleBase.Interactive.InteractiveTuiBinding.BindingKeyModifiers
+  name: BindingKeyModifiers
+  href: api/KS.ConsoleBase.Interactive.InteractiveTuiBinding.html#KS_ConsoleBase_Interactive_InteractiveTuiBinding_BindingKeyModifiers
+  commentId: P:KS.ConsoleBase.Interactive.InteractiveTuiBinding.BindingKeyModifiers
+  fullName: KS.ConsoleBase.Interactive.InteractiveTuiBinding.BindingKeyModifiers
+  nameWithType: InteractiveTuiBinding.BindingKeyModifiers
+- uid: KS.ConsoleBase.Interactive.InteractiveTuiBinding.BindingKeyModifiers*
+  name: BindingKeyModifiers
+  href: api/KS.ConsoleBase.Interactive.InteractiveTuiBinding.html#KS_ConsoleBase_Interactive_InteractiveTuiBinding_BindingKeyModifiers_
+  commentId: Overload:KS.ConsoleBase.Interactive.InteractiveTuiBinding.BindingKeyModifiers
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Interactive.InteractiveTuiBinding.BindingKeyModifiers
+  nameWithType: InteractiveTuiBinding.BindingKeyModifiers
 - uid: KS.ConsoleBase.Interactive.InteractiveTuiBinding.BindingKeyName
   name: BindingKeyName
   href: api/KS.ConsoleBase.Interactive.InteractiveTuiBinding.html#KS_ConsoleBase_Interactive_InteractiveTuiBinding_BindingKeyName
