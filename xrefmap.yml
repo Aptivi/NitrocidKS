@@ -20784,6 +20784,22 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.JsonShell.JsonTools.SerializeToString
   nameWithType: JsonTools.SerializeToString
+- uid: KS.Files.Editors.JsonShell.JsonTools.Set(System.String,System.String,System.String,System.String)
+  name: Set(string, string, string, string)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_Set_System_String_System_String_System_String_System_String_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.Set(System.String,System.String,System.String,System.String)
+  name.vb: Set(String, String, String, String)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.Set(string, string, string, string)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.Set(String, String, String, String)
+  nameWithType: JsonTools.Set(string, string, string, string)
+  nameWithType.vb: JsonTools.Set(String, String, String, String)
+- uid: KS.Files.Editors.JsonShell.JsonTools.Set*
+  name: Set
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_Set_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.Set
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.Set
+  nameWithType: JsonTools.Set
 - uid: KS.Files.Editors.JsonShell.JsonTools.WasJsonEdited
   name: WasJsonEdited()
   href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_WasJsonEdited
