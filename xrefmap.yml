@@ -22178,6 +22178,19 @@ references:
   isSpec: "True"
   fullName: KS.Files.Instances.FileSystemEntry.FilePath
   nameWithType: FileSystemEntry.FilePath
+- uid: KS.Files.Instances.FileSystemEntry.FileSize
+  name: FileSize
+  href: api/KS.Files.Instances.FileSystemEntry.html#KS_Files_Instances_FileSystemEntry_FileSize
+  commentId: P:KS.Files.Instances.FileSystemEntry.FileSize
+  fullName: KS.Files.Instances.FileSystemEntry.FileSize
+  nameWithType: FileSystemEntry.FileSize
+- uid: KS.Files.Instances.FileSystemEntry.FileSize*
+  name: FileSize
+  href: api/KS.Files.Instances.FileSystemEntry.html#KS_Files_Instances_FileSystemEntry_FileSize_
+  commentId: Overload:KS.Files.Instances.FileSystemEntry.FileSize
+  isSpec: "True"
+  fullName: KS.Files.Instances.FileSystemEntry.FileSize
+  nameWithType: FileSystemEntry.FileSize
 - uid: KS.Files.Instances.FileSystemEntry.OriginalFilePath
   name: OriginalFilePath
   href: api/KS.Files.Instances.FileSystemEntry.html#KS_Files_Instances_FileSystemEntry_OriginalFilePath
