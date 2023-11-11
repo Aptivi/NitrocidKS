@@ -20423,6 +20423,22 @@ references:
   commentId: T:KS.Files.Editors.JsonShell.JsonTools
   fullName: KS.Files.Editors.JsonShell.JsonTools
   nameWithType: JsonTools
+- uid: KS.Files.Editors.JsonShell.JsonTools.Add(System.String,System.String,System.String,System.String)
+  name: Add(string, string, string, string)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_Add_System_String_System_String_System_String_System_String_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.Add(System.String,System.String,System.String,System.String)
+  name.vb: Add(String, String, String, String)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.Add(string, string, string, string)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.Add(String, String, String, String)
+  nameWithType: JsonTools.Add(string, string, string, string)
+  nameWithType.vb: JsonTools.Add(String, String, String, String)
+- uid: KS.Files.Editors.JsonShell.JsonTools.Add*
+  name: Add
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_Add_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.Add
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.Add
+  nameWithType: JsonTools.Add
 - uid: KS.Files.Editors.JsonShell.JsonTools.AddNewArray(System.String,System.String,Newtonsoft.Json.Linq.JArray)
   name: AddNewArray(string, string, JArray)
   href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_AddNewArray_System_String_System_String_Newtonsoft_Json_Linq_JArray_
@@ -20532,38 +20548,76 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.JsonShell.JsonTools.CloseTextFile
   nameWithType: JsonTools.CloseTextFile
-- uid: KS.Files.Editors.JsonShell.JsonTools.GetProperty(System.String)
-  name: GetProperty(string)
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_GetProperty_System_String_
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.GetProperty(System.String)
-  name.vb: GetProperty(String)
-  fullName: KS.Files.Editors.JsonShell.JsonTools.GetProperty(string)
-  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.GetProperty(String)
-  nameWithType: JsonTools.GetProperty(string)
-  nameWithType.vb: JsonTools.GetProperty(String)
-- uid: KS.Files.Editors.JsonShell.JsonTools.GetProperty*
-  name: GetProperty
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_GetProperty_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.GetProperty
+- uid: KS.Files.Editors.JsonShell.JsonTools.DetermineRootType
+  name: DetermineRootType()
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_DetermineRootType
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.DetermineRootType
+  fullName: KS.Files.Editors.JsonShell.JsonTools.DetermineRootType()
+  nameWithType: JsonTools.DetermineRootType()
+- uid: KS.Files.Editors.JsonShell.JsonTools.DetermineRootType*
+  name: DetermineRootType
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_DetermineRootType_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.DetermineRootType
   isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.GetProperty
-  nameWithType: JsonTools.GetProperty
-- uid: KS.Files.Editors.JsonShell.JsonTools.GetPropertySafe(System.String,System.String)
-  name: GetPropertySafe(string, string)
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_GetPropertySafe_System_String_System_String_
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.GetPropertySafe(System.String,System.String)
-  name.vb: GetPropertySafe(String, String)
-  fullName: KS.Files.Editors.JsonShell.JsonTools.GetPropertySafe(string, string)
-  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.GetPropertySafe(String, String)
-  nameWithType: JsonTools.GetPropertySafe(string, string)
-  nameWithType.vb: JsonTools.GetPropertySafe(String, String)
-- uid: KS.Files.Editors.JsonShell.JsonTools.GetPropertySafe*
-  name: GetPropertySafe
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_GetPropertySafe_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.GetPropertySafe
+  fullName: KS.Files.Editors.JsonShell.JsonTools.DetermineRootType
+  nameWithType: JsonTools.DetermineRootType
+- uid: KS.Files.Editors.JsonShell.JsonTools.DetermineType(System.String)
+  name: DetermineType(string)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_DetermineType_System_String_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.DetermineType(System.String)
+  name.vb: DetermineType(String)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.DetermineType(string)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.DetermineType(String)
+  nameWithType: JsonTools.DetermineType(string)
+  nameWithType.vb: JsonTools.DetermineType(String)
+- uid: KS.Files.Editors.JsonShell.JsonTools.DetermineType*
+  name: DetermineType
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_DetermineType_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.DetermineType
   isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.GetPropertySafe
-  nameWithType: JsonTools.GetPropertySafe
+  fullName: KS.Files.Editors.JsonShell.JsonTools.DetermineType
+  nameWithType: JsonTools.DetermineType
+- uid: KS.Files.Editors.JsonShell.JsonTools.GetToken(System.String)
+  name: GetToken(string)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_GetToken_System_String_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.GetToken(System.String)
+  name.vb: GetToken(String)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.GetToken(string)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.GetToken(String)
+  nameWithType: JsonTools.GetToken(string)
+  nameWithType.vb: JsonTools.GetToken(String)
+- uid: KS.Files.Editors.JsonShell.JsonTools.GetToken*
+  name: GetToken
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_GetToken_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.GetToken
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.GetToken
+  nameWithType: JsonTools.GetToken
+- uid: KS.Files.Editors.JsonShell.JsonTools.GetTokenSafe(System.String)
+  name: GetTokenSafe(string)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_GetTokenSafe_System_String_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.GetTokenSafe(System.String)
+  name.vb: GetTokenSafe(String)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.GetTokenSafe(string)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.GetTokenSafe(String)
+  nameWithType: JsonTools.GetTokenSafe(string)
+  nameWithType.vb: JsonTools.GetTokenSafe(String)
+- uid: KS.Files.Editors.JsonShell.JsonTools.GetTokenSafe(System.String,System.String)
+  name: GetTokenSafe(string, string)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_GetTokenSafe_System_String_System_String_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.GetTokenSafe(System.String,System.String)
+  name.vb: GetTokenSafe(String, String)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.GetTokenSafe(string, string)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.GetTokenSafe(String, String)
+  nameWithType: JsonTools.GetTokenSafe(string, string)
+  nameWithType.vb: JsonTools.GetTokenSafe(String, String)
+- uid: KS.Files.Editors.JsonShell.JsonTools.GetTokenSafe*
+  name: GetTokenSafe
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_GetTokenSafe_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.GetTokenSafe
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.GetTokenSafe
+  nameWithType: JsonTools.GetTokenSafe
 - uid: KS.Files.Editors.JsonShell.JsonTools.HandleAutoSaveJsonFile
   name: HandleAutoSaveJsonFile()
   href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_HandleAutoSaveJsonFile
@@ -20625,6 +20679,22 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.JsonShell.JsonTools.OpenJsonFile
   nameWithType: JsonTools.OpenJsonFile
+- uid: KS.Files.Editors.JsonShell.JsonTools.Remove(System.String)
+  name: Remove(string)
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_Remove_System_String_
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.Remove(System.String)
+  name.vb: Remove(String)
+  fullName: KS.Files.Editors.JsonShell.JsonTools.Remove(string)
+  fullName.vb: KS.Files.Editors.JsonShell.JsonTools.Remove(String)
+  nameWithType: JsonTools.Remove(string)
+  nameWithType.vb: JsonTools.Remove(String)
+- uid: KS.Files.Editors.JsonShell.JsonTools.Remove*
+  name: Remove
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_Remove_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.Remove
+  isSpec: "True"
+  fullName: KS.Files.Editors.JsonShell.JsonTools.Remove
+  nameWithType: JsonTools.Remove
 - uid: KS.Files.Editors.JsonShell.JsonTools.RemoveObject(System.String,System.String)
   name: RemoveObject(string, string)
   href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_RemoveObject_System_String_System_String_
