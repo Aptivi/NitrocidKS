@@ -46553,6 +46553,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Shells.BaseShellInfo.NetworkConnectionType
   nameWithType: BaseShellInfo.NetworkConnectionType
+- uid: KS.Shell.ShellBase.Shells.BaseShellInfo.OneLineWrap
+  name: OneLineWrap
+  href: api/KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_OneLineWrap
+  commentId: P:KS.Shell.ShellBase.Shells.BaseShellInfo.OneLineWrap
+  fullName: KS.Shell.ShellBase.Shells.BaseShellInfo.OneLineWrap
+  nameWithType: BaseShellInfo.OneLineWrap
+- uid: KS.Shell.ShellBase.Shells.BaseShellInfo.OneLineWrap*
+  name: OneLineWrap
+  href: api/KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_OneLineWrap_
+  commentId: Overload:KS.Shell.ShellBase.Shells.BaseShellInfo.OneLineWrap
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.BaseShellInfo.OneLineWrap
+  nameWithType: BaseShellInfo.OneLineWrap
 - uid: KS.Shell.ShellBase.Shells.BaseShellInfo.ShellBase
   name: ShellBase
   href: api/KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_ShellBase
@@ -46737,6 +46750,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Shells.IShellInfo.NetworkConnectionType
   nameWithType: IShellInfo.NetworkConnectionType
+- uid: KS.Shell.ShellBase.Shells.IShellInfo.OneLineWrap
+  name: OneLineWrap
+  href: api/KS.Shell.ShellBase.Shells.IShellInfo.html#KS_Shell_ShellBase_Shells_IShellInfo_OneLineWrap
+  commentId: P:KS.Shell.ShellBase.Shells.IShellInfo.OneLineWrap
+  fullName: KS.Shell.ShellBase.Shells.IShellInfo.OneLineWrap
+  nameWithType: IShellInfo.OneLineWrap
+- uid: KS.Shell.ShellBase.Shells.IShellInfo.OneLineWrap*
+  name: OneLineWrap
+  href: api/KS.Shell.ShellBase.Shells.IShellInfo.html#KS_Shell_ShellBase_Shells_IShellInfo_OneLineWrap_
+  commentId: Overload:KS.Shell.ShellBase.Shells.IShellInfo.OneLineWrap
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.IShellInfo.OneLineWrap
+  nameWithType: IShellInfo.OneLineWrap
 - uid: KS.Shell.ShellBase.Shells.IShellInfo.ShellBase
   name: ShellBase
   href: api/KS.Shell.ShellBase.Shells.IShellInfo.html#KS_Shell_ShellBase_Shells_IShellInfo_ShellBase
