@@ -42862,6 +42862,24 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseArgumentArguments
   nameWithType: ArgumentsParser.ParseArgumentArguments
+- uid: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(System.String,KS.Shell.ShellBase.Commands.CommandInfo,KS.Shell.ShellBase.Shells.ShellType)
+  name: ParseShellCommandArguments(string, CommandInfo, ShellType)
+  href: api/KS.Shell.ShellBase.Arguments.ArgumentsParser.html#KS_Shell_ShellBase_Arguments_ArgumentsParser_ParseShellCommandArguments_System_String_KS_Shell_ShellBase_Commands_CommandInfo_KS_Shell_ShellBase_Shells_ShellType_
+  commentId: M:KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(System.String,KS.Shell.ShellBase.Commands.CommandInfo,KS.Shell.ShellBase.Shells.ShellType)
+  name.vb: ParseShellCommandArguments(String, CommandInfo, ShellType)
+  fullName: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(string, KS.Shell.ShellBase.Commands.CommandInfo, KS.Shell.ShellBase.Shells.ShellType)
+  fullName.vb: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(String, KS.Shell.ShellBase.Commands.CommandInfo, KS.Shell.ShellBase.Shells.ShellType)
+  nameWithType: ArgumentsParser.ParseShellCommandArguments(string, CommandInfo, ShellType)
+  nameWithType.vb: ArgumentsParser.ParseShellCommandArguments(String, CommandInfo, ShellType)
+- uid: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(System.String,KS.Shell.ShellBase.Commands.CommandInfo,System.String)
+  name: ParseShellCommandArguments(string, CommandInfo, string)
+  href: api/KS.Shell.ShellBase.Arguments.ArgumentsParser.html#KS_Shell_ShellBase_Arguments_ArgumentsParser_ParseShellCommandArguments_System_String_KS_Shell_ShellBase_Commands_CommandInfo_System_String_
+  commentId: M:KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(System.String,KS.Shell.ShellBase.Commands.CommandInfo,System.String)
+  name.vb: ParseShellCommandArguments(String, CommandInfo, String)
+  fullName: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(string, KS.Shell.ShellBase.Commands.CommandInfo, string)
+  fullName.vb: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(String, KS.Shell.ShellBase.Commands.CommandInfo, String)
+  nameWithType: ArgumentsParser.ParseShellCommandArguments(string, CommandInfo, string)
+  nameWithType.vb: ArgumentsParser.ParseShellCommandArguments(String, CommandInfo, String)
 - uid: KS.Shell.ShellBase.Arguments.ArgumentsParser.ParseShellCommandArguments(System.String,KS.Shell.ShellBase.Shells.ShellType)
   name: ParseShellCommandArguments(string, ShellType)
   href: api/KS.Shell.ShellBase.Arguments.ArgumentsParser.html#KS_Shell_ShellBase_Arguments_ArgumentsParser_ParseShellCommandArguments_System_String_KS_Shell_ShellBase_Shells_ShellType_
@@ -43903,6 +43921,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.CommandParameters.ArgumentsText
   nameWithType: CommandParameters.ArgumentsText
+- uid: KS.Shell.ShellBase.Commands.CommandParameters.CommandText
+  name: CommandText
+  href: api/KS.Shell.ShellBase.Commands.CommandParameters.html#KS_Shell_ShellBase_Commands_CommandParameters_CommandText
+  commentId: P:KS.Shell.ShellBase.Commands.CommandParameters.CommandText
+  fullName: KS.Shell.ShellBase.Commands.CommandParameters.CommandText
+  nameWithType: CommandParameters.CommandText
+- uid: KS.Shell.ShellBase.Commands.CommandParameters.CommandText*
+  name: CommandText
+  href: api/KS.Shell.ShellBase.Commands.CommandParameters.html#KS_Shell_ShellBase_Commands_CommandParameters_CommandText_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CommandParameters.CommandText
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Commands.CommandParameters.CommandText
+  nameWithType: CommandParameters.CommandText
 - uid: KS.Shell.ShellBase.Commands.CommandParameters.SwitchesList
   name: SwitchesList
   href: api/KS.Shell.ShellBase.Commands.CommandParameters.html#KS_Shell_ShellBase_Commands_CommandParameters_SwitchesList
@@ -46553,6 +46584,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Shells.BaseShellInfo.NetworkConnectionType
   nameWithType: BaseShellInfo.NetworkConnectionType
+- uid: KS.Shell.ShellBase.Shells.BaseShellInfo.NonSlashCommandInfo
+  name: NonSlashCommandInfo
+  href: api/KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_NonSlashCommandInfo
+  commentId: P:KS.Shell.ShellBase.Shells.BaseShellInfo.NonSlashCommandInfo
+  fullName: KS.Shell.ShellBase.Shells.BaseShellInfo.NonSlashCommandInfo
+  nameWithType: BaseShellInfo.NonSlashCommandInfo
+- uid: KS.Shell.ShellBase.Shells.BaseShellInfo.NonSlashCommandInfo*
+  name: NonSlashCommandInfo
+  href: api/KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_NonSlashCommandInfo_
+  commentId: Overload:KS.Shell.ShellBase.Shells.BaseShellInfo.NonSlashCommandInfo
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.BaseShellInfo.NonSlashCommandInfo
+  nameWithType: BaseShellInfo.NonSlashCommandInfo
 - uid: KS.Shell.ShellBase.Shells.BaseShellInfo.OneLineWrap
   name: OneLineWrap
   href: api/KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_OneLineWrap
@@ -46618,6 +46662,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Shells.BaseShellInfo.ShellType
   nameWithType: BaseShellInfo.ShellType
+- uid: KS.Shell.ShellBase.Shells.BaseShellInfo.SlashCommand
+  name: SlashCommand
+  href: api/KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_SlashCommand
+  commentId: P:KS.Shell.ShellBase.Shells.BaseShellInfo.SlashCommand
+  fullName: KS.Shell.ShellBase.Shells.BaseShellInfo.SlashCommand
+  nameWithType: BaseShellInfo.SlashCommand
+- uid: KS.Shell.ShellBase.Shells.BaseShellInfo.SlashCommand*
+  name: SlashCommand
+  href: api/KS.Shell.ShellBase.Shells.BaseShellInfo.html#KS_Shell_ShellBase_Shells_BaseShellInfo_SlashCommand_
+  commentId: Overload:KS.Shell.ShellBase.Shells.BaseShellInfo.SlashCommand
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.BaseShellInfo.SlashCommand
+  nameWithType: BaseShellInfo.SlashCommand
 - uid: KS.Shell.ShellBase.Shells.IShell
   name: IShell
   href: api/KS.Shell.ShellBase.Shells.IShell.html
@@ -46750,6 +46807,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Shells.IShellInfo.NetworkConnectionType
   nameWithType: IShellInfo.NetworkConnectionType
+- uid: KS.Shell.ShellBase.Shells.IShellInfo.NonSlashCommandInfo
+  name: NonSlashCommandInfo
+  href: api/KS.Shell.ShellBase.Shells.IShellInfo.html#KS_Shell_ShellBase_Shells_IShellInfo_NonSlashCommandInfo
+  commentId: P:KS.Shell.ShellBase.Shells.IShellInfo.NonSlashCommandInfo
+  fullName: KS.Shell.ShellBase.Shells.IShellInfo.NonSlashCommandInfo
+  nameWithType: IShellInfo.NonSlashCommandInfo
+- uid: KS.Shell.ShellBase.Shells.IShellInfo.NonSlashCommandInfo*
+  name: NonSlashCommandInfo
+  href: api/KS.Shell.ShellBase.Shells.IShellInfo.html#KS_Shell_ShellBase_Shells_IShellInfo_NonSlashCommandInfo_
+  commentId: Overload:KS.Shell.ShellBase.Shells.IShellInfo.NonSlashCommandInfo
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.IShellInfo.NonSlashCommandInfo
+  nameWithType: IShellInfo.NonSlashCommandInfo
 - uid: KS.Shell.ShellBase.Shells.IShellInfo.OneLineWrap
   name: OneLineWrap
   href: api/KS.Shell.ShellBase.Shells.IShellInfo.html#KS_Shell_ShellBase_Shells_IShellInfo_OneLineWrap
@@ -46802,6 +46872,19 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Shells.IShellInfo.ShellPresets
   nameWithType: IShellInfo.ShellPresets
+- uid: KS.Shell.ShellBase.Shells.IShellInfo.SlashCommand
+  name: SlashCommand
+  href: api/KS.Shell.ShellBase.Shells.IShellInfo.html#KS_Shell_ShellBase_Shells_IShellInfo_SlashCommand
+  commentId: P:KS.Shell.ShellBase.Shells.IShellInfo.SlashCommand
+  fullName: KS.Shell.ShellBase.Shells.IShellInfo.SlashCommand
+  nameWithType: IShellInfo.SlashCommand
+- uid: KS.Shell.ShellBase.Shells.IShellInfo.SlashCommand*
+  name: SlashCommand
+  href: api/KS.Shell.ShellBase.Shells.IShellInfo.html#KS_Shell_ShellBase_Shells_IShellInfo_SlashCommand_
+  commentId: Overload:KS.Shell.ShellBase.Shells.IShellInfo.SlashCommand
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Shells.IShellInfo.SlashCommand
+  nameWithType: IShellInfo.SlashCommand
 - uid: KS.Shell.ShellBase.Shells.ShellExecuteInfo
   name: ShellExecuteInfo
   href: api/KS.Shell.ShellBase.Shells.ShellExecuteInfo.html
