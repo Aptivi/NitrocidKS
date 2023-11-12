@@ -9935,6 +9935,38 @@ references:
   commentId: T:KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor
   fullName: KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor
   nameWithType: ProgressBarColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.RenderProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Boolean,System.Boolean)
+  name: RenderProgress(double, int, int, int, int, Color, Color, Color, bool, bool)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.html#KS_ConsoleBase_Writers_FancyWriters_ProgressBarColor_RenderProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_Terminaux_Colors_Color_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Boolean_System_Boolean_
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.RenderProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Boolean,System.Boolean)
+  name.vb: RenderProgress(Double, Integer, Integer, Integer, Integer, Color, Color, Color, Boolean, Boolean)
+  fullName: KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.RenderProgress(double, int, int, int, int, Terminaux.Colors.Color, Terminaux.Colors.Color, Terminaux.Colors.Color, bool, bool)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.RenderProgress(Double, Integer, Integer, Integer, Integer, Terminaux.Colors.Color, Terminaux.Colors.Color, Terminaux.Colors.Color, Boolean, Boolean)
+  nameWithType: ProgressBarColor.RenderProgress(double, int, int, int, int, Color, Color, Color, bool, bool)
+  nameWithType.vb: ProgressBarColor.RenderProgress(Double, Integer, Integer, Integer, Integer, Color, Color, Color, Boolean, Boolean)
+- uid: KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.RenderProgress*
+  name: RenderProgress
+  href: api/KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.html#KS_ConsoleBase_Writers_FancyWriters_ProgressBarColor_RenderProgress_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.RenderProgress
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.RenderProgress
+  nameWithType: ProgressBarColor.RenderProgress
+- uid: KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.RenderProgressPlain(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)
+  name: RenderProgressPlain(double, int, int, int, int, bool, bool)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.html#KS_ConsoleBase_Writers_FancyWriters_ProgressBarColor_RenderProgressPlain_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Boolean_
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.RenderProgressPlain(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)
+  name.vb: RenderProgressPlain(Double, Integer, Integer, Integer, Integer, Boolean, Boolean)
+  fullName: KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.RenderProgressPlain(double, int, int, int, int, bool, bool)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.RenderProgressPlain(Double, Integer, Integer, Integer, Integer, Boolean, Boolean)
+  nameWithType: ProgressBarColor.RenderProgressPlain(double, int, int, int, int, bool, bool)
+  nameWithType.vb: ProgressBarColor.RenderProgressPlain(Double, Integer, Integer, Integer, Integer, Boolean, Boolean)
+- uid: KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.RenderProgressPlain*
+  name: RenderProgressPlain
+  href: api/KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.html#KS_ConsoleBase_Writers_FancyWriters_ProgressBarColor_RenderProgressPlain_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.RenderProgressPlain
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.RenderProgressPlain
+  nameWithType: ProgressBarColor.RenderProgressPlain
 - uid: KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.WriteProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
   name: WriteProgress(double, int, int, KernelColorType, KernelColorType, KernelColorType, bool, bool)
   href: api/KS.ConsoleBase.Writers.FancyWriters.ProgressBarColor.html#KS_ConsoleBase_Writers_FancyWriters_ProgressBarColor_WriteProgress_System_Double_System_Int32_System_Int32_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Boolean_System_Boolean_
@@ -10252,6 +10284,38 @@ references:
   commentId: T:KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor
   fullName: KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor
   nameWithType: ProgressBarVerticalColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.RenderVerticalProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Boolean)
+  name: RenderVerticalProgress(double, int, int, int, int, Color, Color, bool)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.html#KS_ConsoleBase_Writers_FancyWriters_ProgressBarVerticalColor_RenderVerticalProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Boolean_
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.RenderVerticalProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Boolean)
+  name.vb: RenderVerticalProgress(Double, Integer, Integer, Integer, Integer, Color, Color, Boolean)
+  fullName: KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.RenderVerticalProgress(double, int, int, int, int, Terminaux.Colors.Color, Terminaux.Colors.Color, bool)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.RenderVerticalProgress(Double, Integer, Integer, Integer, Integer, Terminaux.Colors.Color, Terminaux.Colors.Color, Boolean)
+  nameWithType: ProgressBarVerticalColor.RenderVerticalProgress(double, int, int, int, int, Color, Color, bool)
+  nameWithType.vb: ProgressBarVerticalColor.RenderVerticalProgress(Double, Integer, Integer, Integer, Integer, Color, Color, Boolean)
+- uid: KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.RenderVerticalProgress*
+  name: RenderVerticalProgress
+  href: api/KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.html#KS_ConsoleBase_Writers_FancyWriters_ProgressBarVerticalColor_RenderVerticalProgress_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.RenderVerticalProgress
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.RenderVerticalProgress
+  nameWithType: ProgressBarVerticalColor.RenderVerticalProgress
+- uid: KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.RenderVerticalProgressPlain(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)
+  name: RenderVerticalProgressPlain(double, int, int, int, int, bool)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.html#KS_ConsoleBase_Writers_FancyWriters_ProgressBarVerticalColor_RenderVerticalProgressPlain_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.RenderVerticalProgressPlain(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)
+  name.vb: RenderVerticalProgressPlain(Double, Integer, Integer, Integer, Integer, Boolean)
+  fullName: KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.RenderVerticalProgressPlain(double, int, int, int, int, bool)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.RenderVerticalProgressPlain(Double, Integer, Integer, Integer, Integer, Boolean)
+  nameWithType: ProgressBarVerticalColor.RenderVerticalProgressPlain(double, int, int, int, int, bool)
+  nameWithType.vb: ProgressBarVerticalColor.RenderVerticalProgressPlain(Double, Integer, Integer, Integer, Integer, Boolean)
+- uid: KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.RenderVerticalProgressPlain*
+  name: RenderVerticalProgressPlain
+  href: api/KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.html#KS_ConsoleBase_Writers_FancyWriters_ProgressBarVerticalColor_RenderVerticalProgressPlain_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.RenderVerticalProgressPlain
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.RenderVerticalProgressPlain
+  nameWithType: ProgressBarVerticalColor.RenderVerticalProgressPlain
 - uid: KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.WriteVerticalProgress(System.Double,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Boolean)
   name: WriteVerticalProgress(double, int, int, KernelColorType, KernelColorType, bool)
   href: api/KS.ConsoleBase.Writers.FancyWriters.ProgressBarVerticalColor.html#KS_ConsoleBase_Writers_FancyWriters_ProgressBarVerticalColor_WriteVerticalProgress_System_Double_System_Int32_System_Int32_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Boolean_
