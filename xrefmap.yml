@@ -7837,6 +7837,40 @@ references:
   commentId: T:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor
   fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor
   nameWithType: TextWriterWhereColor
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name: RenderWherePlain(string, int, int, bool, int, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereColor_RenderWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name.vb: RenderWherePlain(String, Integer, Integer, Boolean, Integer, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain(string, int, int, bool, int, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain(String, Integer, Integer, Boolean, Integer, ParamArray Object())
+  nameWithType: TextWriterWhereColor.RenderWherePlain(string, int, int, bool, int, params object[])
+  nameWithType.vb: TextWriterWhereColor.RenderWherePlain(String, Integer, Integer, Boolean, Integer, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name: RenderWherePlain(string, int, int, bool, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereColor_RenderWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name.vb: RenderWherePlain(String, Integer, Integer, Boolean, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain(string, int, int, bool, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain(String, Integer, Integer, Boolean, ParamArray Object())
+  nameWithType: TextWriterWhereColor.RenderWherePlain(string, int, int, bool, params object[])
+  nameWithType.vb: TextWriterWhereColor.RenderWherePlain(String, Integer, Integer, Boolean, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name: RenderWherePlain(string, int, int, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereColor_RenderWherePlain_System_String_System_Int32_System_Int32_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name.vb: RenderWherePlain(String, Integer, Integer, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain(string, int, int, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain(String, Integer, Integer, ParamArray Object())
+  nameWithType: TextWriterWhereColor.RenderWherePlain(string, int, int, params object[])
+  nameWithType.vb: TextWriterWhereColor.RenderWherePlain(String, Integer, Integer, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain*
+  name: RenderWherePlain
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereColor_RenderWherePlain_
+  commentId: Overload:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain
+  nameWithType: TextWriterWhereColor.RenderWherePlain
 - uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhere(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
   name: WriteWhere(string, int, int, bool, int, params object[])
   href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereColor_WriteWhere_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
@@ -8054,6 +8088,40 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWhereKernelColor
   nameWithType: TextWriterWhereColor.WriteWhereKernelColor
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name: WriteWherePlain(string, int, int, bool, int, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereColor_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name.vb: WriteWherePlain(String, Integer, Integer, Boolean, Integer, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(string, int, int, bool, int, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(String, Integer, Integer, Boolean, Integer, ParamArray Object())
+  nameWithType: TextWriterWhereColor.WriteWherePlain(string, int, int, bool, int, params object[])
+  nameWithType.vb: TextWriterWhereColor.WriteWherePlain(String, Integer, Integer, Boolean, Integer, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name: WriteWherePlain(string, int, int, bool, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereColor_WriteWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name.vb: WriteWherePlain(String, Integer, Integer, Boolean, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(string, int, int, bool, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(String, Integer, Integer, Boolean, ParamArray Object())
+  nameWithType: TextWriterWhereColor.WriteWherePlain(string, int, int, bool, params object[])
+  nameWithType.vb: TextWriterWhereColor.WriteWherePlain(String, Integer, Integer, Boolean, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name: WriteWherePlain(string, int, int, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereColor_WriteWherePlain_System_String_System_Int32_System_Int32_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name.vb: WriteWherePlain(String, Integer, Integer, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(string, int, int, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain(String, Integer, Integer, ParamArray Object())
+  nameWithType: TextWriterWhereColor.WriteWherePlain(string, int, int, params object[])
+  nameWithType.vb: TextWriterWhereColor.WriteWherePlain(String, Integer, Integer, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain*
+  name: WriteWherePlain
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereColor_WriteWherePlain_
+  commentId: Overload:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.WriteWherePlain
+  nameWithType: TextWriterWhereColor.WriteWherePlain
 - uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor
   name: TextWriterWhereSlowColor
   href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.html
@@ -8277,6 +8345,40 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyKernelColor
   nameWithType: TextWriterWhereSlowColor.WriteWhereSlowlyKernelColor
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,System.Object[])
+  name: WriteWhereSlowlyPlain(string, bool, int, int, double, bool, int, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereSlowColor_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Int32_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,System.Object[])
+  name.vb: WriteWhereSlowlyPlain(String, Boolean, Integer, Integer, Double, Boolean, Integer, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyPlain(string, bool, int, int, double, bool, int, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyPlain(String, Boolean, Integer, Integer, Double, Boolean, Integer, ParamArray Object())
+  nameWithType: TextWriterWhereSlowColor.WriteWhereSlowlyPlain(string, bool, int, int, double, bool, int, params object[])
+  nameWithType.vb: TextWriterWhereSlowColor.WriteWhereSlowlyPlain(String, Boolean, Integer, Integer, Double, Boolean, Integer, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
+  name: WriteWhereSlowlyPlain(string, bool, int, int, double, bool, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereSlowColor_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Object[])
+  name.vb: WriteWhereSlowlyPlain(String, Boolean, Integer, Integer, Double, Boolean, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyPlain(string, bool, int, int, double, bool, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyPlain(String, Boolean, Integer, Integer, Double, Boolean, ParamArray Object())
+  nameWithType: TextWriterWhereSlowColor.WriteWhereSlowlyPlain(string, bool, int, int, double, bool, params object[])
+  nameWithType.vb: TextWriterWhereSlowColor.WriteWhereSlowlyPlain(String, Boolean, Integer, Integer, Double, Boolean, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
+  name: WriteWhereSlowlyPlain(string, bool, int, int, double, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereSlowColor_WriteWhereSlowlyPlain_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyPlain(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Object[])
+  name.vb: WriteWhereSlowlyPlain(String, Boolean, Integer, Integer, Double, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyPlain(string, bool, int, int, double, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyPlain(String, Boolean, Integer, Integer, Double, ParamArray Object())
+  nameWithType: TextWriterWhereSlowColor.WriteWhereSlowlyPlain(string, bool, int, int, double, params object[])
+  nameWithType.vb: TextWriterWhereSlowColor.WriteWhereSlowlyPlain(String, Boolean, Integer, Integer, Double, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyPlain*
+  name: WriteWhereSlowlyPlain
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereSlowColor_WriteWhereSlowlyPlain_
+  commentId: Overload:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyPlain
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereSlowColor.WriteWhereSlowlyPlain
+  nameWithType: TextWriterWhereSlowColor.WriteWhereSlowlyPlain
 - uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWrappedColor
   name: TextWriterWrappedColor
   href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWrappedColor.html
