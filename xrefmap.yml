@@ -32735,6 +32735,18 @@ references:
   commentId: F:KS.Kernel.Power.PowerMode.Reboot
   fullName: KS.Kernel.Power.PowerMode.Reboot
   nameWithType: PowerMode.Reboot
+- uid: KS.Kernel.Power.PowerMode.RebootDebug
+  name: RebootDebug
+  href: api/KS.Kernel.Power.PowerMode.html#KS_Kernel_Power_PowerMode_RebootDebug
+  commentId: F:KS.Kernel.Power.PowerMode.RebootDebug
+  fullName: KS.Kernel.Power.PowerMode.RebootDebug
+  nameWithType: PowerMode.RebootDebug
+- uid: KS.Kernel.Power.PowerMode.RebootMaintenance
+  name: RebootMaintenance
+  href: api/KS.Kernel.Power.PowerMode.html#KS_Kernel_Power_PowerMode_RebootMaintenance
+  commentId: F:KS.Kernel.Power.PowerMode.RebootMaintenance
+  fullName: KS.Kernel.Power.PowerMode.RebootMaintenance
+  nameWithType: PowerMode.RebootMaintenance
 - uid: KS.Kernel.Power.PowerMode.RebootSafe
   name: RebootSafe
   href: api/KS.Kernel.Power.PowerMode.html#KS_Kernel_Power_PowerMode_RebootSafe
@@ -32747,6 +32759,18 @@ references:
   commentId: F:KS.Kernel.Power.PowerMode.RemoteRestart
   fullName: KS.Kernel.Power.PowerMode.RemoteRestart
   nameWithType: PowerMode.RemoteRestart
+- uid: KS.Kernel.Power.PowerMode.RemoteRestartDebug
+  name: RemoteRestartDebug
+  href: api/KS.Kernel.Power.PowerMode.html#KS_Kernel_Power_PowerMode_RemoteRestartDebug
+  commentId: F:KS.Kernel.Power.PowerMode.RemoteRestartDebug
+  fullName: KS.Kernel.Power.PowerMode.RemoteRestartDebug
+  nameWithType: PowerMode.RemoteRestartDebug
+- uid: KS.Kernel.Power.PowerMode.RemoteRestartMaintenance
+  name: RemoteRestartMaintenance
+  href: api/KS.Kernel.Power.PowerMode.html#KS_Kernel_Power_PowerMode_RemoteRestartMaintenance
+  commentId: F:KS.Kernel.Power.PowerMode.RemoteRestartMaintenance
+  fullName: KS.Kernel.Power.PowerMode.RemoteRestartMaintenance
+  nameWithType: PowerMode.RemoteRestartMaintenance
 - uid: KS.Kernel.Power.PowerMode.RemoteRestartSafe
   name: RemoteRestartSafe
   href: api/KS.Kernel.Power.PowerMode.html#KS_Kernel_Power_PowerMode_RemoteRestartSafe
