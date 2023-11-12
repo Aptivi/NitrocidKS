@@ -5890,6 +5890,49 @@ references:
   commentId: T:KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor
   fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor
   nameWithType: ListWriterColor
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList*
+  name: RenderList
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListWriterColor_RenderList_
+  commentId: Overload:KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList
+  nameWithType: ListWriterColor.RenderList
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList``1(System.Collections.Generic.IEnumerable{``0})
+  name: RenderList<T>(IEnumerable<T>)
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListWriterColor_RenderList__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: RenderList(Of T)(IEnumerable(Of T))
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: ListWriterColor.RenderList<T>(IEnumerable<T>)
+  nameWithType.vb: ListWriterColor.RenderList(Of T)(IEnumerable(Of T))
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList``1(System.Collections.Generic.IEnumerable{``0},Terminaux.Colors.Color,Terminaux.Colors.Color)
+  name: RenderList<T>(IEnumerable<T>, Color, Color)
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListWriterColor_RenderList__1_System_Collections_Generic_IEnumerable___0__Terminaux_Colors_Color_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList``1(System.Collections.Generic.IEnumerable{``0},Terminaux.Colors.Color,Terminaux.Colors.Color)
+  name.vb: RenderList(Of T)(IEnumerable(Of T), Color, Color)
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList<T>(System.Collections.Generic.IEnumerable<T>, Terminaux.Colors.Color, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList(Of T)(System.Collections.Generic.IEnumerable(Of T), Terminaux.Colors.Color, Terminaux.Colors.Color)
+  nameWithType: ListWriterColor.RenderList<T>(IEnumerable<T>, Color, Color)
+  nameWithType.vb: ListWriterColor.RenderList(Of T)(IEnumerable(Of T), Color, Color)
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList``2(System.Collections.Generic.Dictionary{``0,``1})
+  name: RenderList<TKey, TValue>(Dictionary<TKey, TValue>)
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListWriterColor_RenderList__2_System_Collections_Generic_Dictionary___0___1__
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList``2(System.Collections.Generic.Dictionary{``0,``1})
+  name.vb: RenderList(Of TKey, TValue)(Dictionary(Of TKey, TValue))
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList<TKey, TValue>(System.Collections.Generic.Dictionary<TKey, TValue>)
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList(Of TKey, TValue)(System.Collections.Generic.Dictionary(Of TKey, TValue))
+  nameWithType: ListWriterColor.RenderList<TKey, TValue>(Dictionary<TKey, TValue>)
+  nameWithType.vb: ListWriterColor.RenderList(Of TKey, TValue)(Dictionary(Of TKey, TValue))
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList``2(System.Collections.Generic.Dictionary{``0,``1},Terminaux.Colors.Color,Terminaux.Colors.Color)
+  name: RenderList<TKey, TValue>(Dictionary<TKey, TValue>, Color, Color)
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListWriterColor_RenderList__2_System_Collections_Generic_Dictionary___0___1__Terminaux_Colors_Color_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList``2(System.Collections.Generic.Dictionary{``0,``1},Terminaux.Colors.Color,Terminaux.Colors.Color)
+  name.vb: RenderList(Of TKey, TValue)(Dictionary(Of TKey, TValue), Color, Color)
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList<TKey, TValue>(System.Collections.Generic.Dictionary<TKey, TValue>, Terminaux.Colors.Color, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.RenderList(Of TKey, TValue)(System.Collections.Generic.Dictionary(Of TKey, TValue), Terminaux.Colors.Color, Terminaux.Colors.Color)
+  nameWithType: ListWriterColor.RenderList<TKey, TValue>(Dictionary<TKey, TValue>, Color, Color)
+  nameWithType.vb: ListWriterColor.RenderList(Of TKey, TValue)(Dictionary(Of TKey, TValue), Color, Color)
 - uid: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteList*
   name: WriteList
   href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListWriterColor_WriteList_
@@ -5897,6 +5940,49 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteList
   nameWithType: ListWriterColor.WriteList
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain*
+  name: WriteListPlain
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListWriterColor_WriteListPlain_
+  commentId: Overload:KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain
+  nameWithType: ListWriterColor.WriteListPlain
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain``1(System.Collections.Generic.IEnumerable{``0})
+  name: WriteListPlain<T>(IEnumerable<T>)
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListWriterColor_WriteListPlain__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: WriteListPlain(Of T)(IEnumerable(Of T))
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: ListWriterColor.WriteListPlain<T>(IEnumerable<T>)
+  nameWithType.vb: ListWriterColor.WriteListPlain(Of T)(IEnumerable(Of T))
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)
+  name: WriteListPlain<T>(IEnumerable<T>, bool)
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListWriterColor_WriteListPlain__1_System_Collections_Generic_IEnumerable___0__System_Boolean_
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)
+  name.vb: WriteListPlain(Of T)(IEnumerable(Of T), Boolean)
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain<T>(System.Collections.Generic.IEnumerable<T>, bool)
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain(Of T)(System.Collections.Generic.IEnumerable(Of T), Boolean)
+  nameWithType: ListWriterColor.WriteListPlain<T>(IEnumerable<T>, bool)
+  nameWithType.vb: ListWriterColor.WriteListPlain(Of T)(IEnumerable(Of T), Boolean)
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain``2(System.Collections.Generic.Dictionary{``0,``1})
+  name: WriteListPlain<TKey, TValue>(Dictionary<TKey, TValue>)
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListWriterColor_WriteListPlain__2_System_Collections_Generic_Dictionary___0___1__
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain``2(System.Collections.Generic.Dictionary{``0,``1})
+  name.vb: WriteListPlain(Of TKey, TValue)(Dictionary(Of TKey, TValue))
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain<TKey, TValue>(System.Collections.Generic.Dictionary<TKey, TValue>)
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain(Of TKey, TValue)(System.Collections.Generic.Dictionary(Of TKey, TValue))
+  nameWithType: ListWriterColor.WriteListPlain<TKey, TValue>(Dictionary<TKey, TValue>)
+  nameWithType.vb: ListWriterColor.WriteListPlain(Of TKey, TValue)(Dictionary(Of TKey, TValue))
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain``2(System.Collections.Generic.Dictionary{``0,``1},System.Boolean)
+  name: WriteListPlain<TKey, TValue>(Dictionary<TKey, TValue>, bool)
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListWriterColor_WriteListPlain__2_System_Collections_Generic_Dictionary___0___1__System_Boolean_
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain``2(System.Collections.Generic.Dictionary{``0,``1},System.Boolean)
+  name.vb: WriteListPlain(Of TKey, TValue)(Dictionary(Of TKey, TValue), Boolean)
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain<TKey, TValue>(System.Collections.Generic.Dictionary<TKey, TValue>, bool)
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteListPlain(Of TKey, TValue)(System.Collections.Generic.Dictionary(Of TKey, TValue), Boolean)
+  nameWithType: ListWriterColor.WriteListPlain<TKey, TValue>(Dictionary<TKey, TValue>, bool)
+  nameWithType.vb: ListWriterColor.WriteListPlain(Of TKey, TValue)(Dictionary(Of TKey, TValue), Boolean)
 - uid: KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.WriteList``1(System.Collections.Generic.IEnumerable{``0})
   name: WriteList<T>(IEnumerable<T>)
   href: api/KS.ConsoleBase.Writers.ConsoleWriters.ListWriterColor.html#KS_ConsoleBase_Writers_ConsoleWriters_ListWriterColor_WriteList__1_System_Collections_Generic_IEnumerable___0__
