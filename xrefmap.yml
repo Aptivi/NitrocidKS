@@ -32466,6 +32466,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.KernelMain.VersionFull
   nameWithType: KernelMain.VersionFull
+- uid: KS.Kernel.KernelMain.VersionFullStr
+  name: VersionFullStr
+  href: api/KS.Kernel.KernelMain.html#KS_Kernel_KernelMain_VersionFullStr
+  commentId: P:KS.Kernel.KernelMain.VersionFullStr
+  fullName: KS.Kernel.KernelMain.VersionFullStr
+  nameWithType: KernelMain.VersionFullStr
+- uid: KS.Kernel.KernelMain.VersionFullStr*
+  name: VersionFullStr
+  href: api/KS.Kernel.KernelMain.html#KS_Kernel_KernelMain_VersionFullStr_
+  commentId: Overload:KS.Kernel.KernelMain.VersionFullStr
+  isSpec: "True"
+  fullName: KS.Kernel.KernelMain.VersionFullStr
+  nameWithType: KernelMain.VersionFullStr
 - uid: KS.Kernel.KernelPlatform
   name: KernelPlatform
   href: api/KS.Kernel.KernelPlatform.html

@@ -1277,7 +1277,7 @@
   "api/KS.Kernel.KernelMain.html": {
     "href": "api/KS.Kernel.KernelMain.html",
     "title": "Class KernelMain | Nitrocid KS API - Aptivi",
-    "keywords": "Class KernelMain Kernel main class Inheritance object KernelMain Namespace: KS.Kernel Assembly: Nitrocid.dll Syntax public static class KernelMain Properties | Edit this page View Source ApiVersion Kernel API version Declaration public static Version ApiVersion { get; } Property Value Type Description Version | Edit this page View Source Version Kernel version Declaration public static Version Version { get; } Property Value Type Description Version | Edit this page View Source VersionFull Kernel version (full) Declaration public static SemVer VersionFull { get; } Property Value Type Description SemVer"
+    "keywords": "Class KernelMain Kernel main class Inheritance object KernelMain Namespace: KS.Kernel Assembly: Nitrocid.dll Syntax public static class KernelMain Properties | Edit this page View Source ApiVersion Kernel API version Declaration public static Version ApiVersion { get; } Property Value Type Description Version | Edit this page View Source Version Kernel version Declaration public static Version Version { get; } Property Value Type Description Version | Edit this page View Source VersionFull Kernel version (full) Declaration public static SemVer VersionFull { get; } Property Value Type Description SemVer | Edit this page View Source VersionFullStr Kernel version (full) Declaration public static string VersionFullStr { get; } Property Value Type Description string"
   },
   "api/KS.Kernel.KernelPlatform.html": {
     "href": "api/KS.Kernel.KernelPlatform.html",
