@@ -265,6 +265,66 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxButtonsColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxButtonsColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxInputColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxInputColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxProgressColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxProgressColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxSelectionColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxSelectionColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxSelectionMultipleColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxSelectionMultipleColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InputStyle.yml",
       "output": {
         ".html": {
@@ -699,66 +759,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxButtonsColor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxColor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxColor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxInputColor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxInputColor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxProgressColor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionColor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.ConsoleBase.Writers.FancyWriters.InfoBoxSelectionMultipleColor.html"
         }
       },
       "version": ""
