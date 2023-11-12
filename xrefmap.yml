@@ -10805,6 +10805,38 @@ references:
   commentId: T:KS.ConsoleBase.Writers.FancyWriters.TableColor
   fullName: KS.ConsoleBase.Writers.FancyWriters.TableColor
   nameWithType: TableColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.TableColor.RenderTable(System.String[],System.String[0:,0:],System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Boolean,System.Collections.Generic.List{KS.ConsoleBase.Writers.FancyWriters.Tools.CellOptions})
+  name: RenderTable(string[], string[,], int, Color, Color, Color, Color, bool, List<CellOptions>)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.TableColor.html#KS_ConsoleBase_Writers_FancyWriters_TableColor_RenderTable_System_String___System_String_0__0___System_Int32_Terminaux_Colors_Color_Terminaux_Colors_Color_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Boolean_System_Collections_Generic_List_KS_ConsoleBase_Writers_FancyWriters_Tools_CellOptions__
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.TableColor.RenderTable(System.String[],System.String[0:,0:],System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Boolean,System.Collections.Generic.List{KS.ConsoleBase.Writers.FancyWriters.Tools.CellOptions})
+  name.vb: RenderTable(String(), String(,), Integer, Color, Color, Color, Color, Boolean, List(Of CellOptions))
+  fullName: KS.ConsoleBase.Writers.FancyWriters.TableColor.RenderTable(string[], string[,], int, Terminaux.Colors.Color, Terminaux.Colors.Color, Terminaux.Colors.Color, Terminaux.Colors.Color, bool, System.Collections.Generic.List<KS.ConsoleBase.Writers.FancyWriters.Tools.CellOptions>)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.TableColor.RenderTable(String(), String(,), Integer, Terminaux.Colors.Color, Terminaux.Colors.Color, Terminaux.Colors.Color, Terminaux.Colors.Color, Boolean, System.Collections.Generic.List(Of KS.ConsoleBase.Writers.FancyWriters.Tools.CellOptions))
+  nameWithType: TableColor.RenderTable(string[], string[,], int, Color, Color, Color, Color, bool, List<CellOptions>)
+  nameWithType.vb: TableColor.RenderTable(String(), String(,), Integer, Color, Color, Color, Color, Boolean, List(Of CellOptions))
+- uid: KS.ConsoleBase.Writers.FancyWriters.TableColor.RenderTable*
+  name: RenderTable
+  href: api/KS.ConsoleBase.Writers.FancyWriters.TableColor.html#KS_ConsoleBase_Writers_FancyWriters_TableColor_RenderTable_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.TableColor.RenderTable
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.TableColor.RenderTable
+  nameWithType: TableColor.RenderTable
+- uid: KS.ConsoleBase.Writers.FancyWriters.TableColor.RenderTablePlain(System.String[],System.String[0:,0:],System.Int32,System.Boolean,System.Collections.Generic.List{KS.ConsoleBase.Writers.FancyWriters.Tools.CellOptions})
+  name: RenderTablePlain(string[], string[,], int, bool, List<CellOptions>)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.TableColor.html#KS_ConsoleBase_Writers_FancyWriters_TableColor_RenderTablePlain_System_String___System_String_0__0___System_Int32_System_Boolean_System_Collections_Generic_List_KS_ConsoleBase_Writers_FancyWriters_Tools_CellOptions__
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.TableColor.RenderTablePlain(System.String[],System.String[0:,0:],System.Int32,System.Boolean,System.Collections.Generic.List{KS.ConsoleBase.Writers.FancyWriters.Tools.CellOptions})
+  name.vb: RenderTablePlain(String(), String(,), Integer, Boolean, List(Of CellOptions))
+  fullName: KS.ConsoleBase.Writers.FancyWriters.TableColor.RenderTablePlain(string[], string[,], int, bool, System.Collections.Generic.List<KS.ConsoleBase.Writers.FancyWriters.Tools.CellOptions>)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.TableColor.RenderTablePlain(String(), String(,), Integer, Boolean, System.Collections.Generic.List(Of KS.ConsoleBase.Writers.FancyWriters.Tools.CellOptions))
+  nameWithType: TableColor.RenderTablePlain(string[], string[,], int, bool, List<CellOptions>)
+  nameWithType.vb: TableColor.RenderTablePlain(String(), String(,), Integer, Boolean, List(Of CellOptions))
+- uid: KS.ConsoleBase.Writers.FancyWriters.TableColor.RenderTablePlain*
+  name: RenderTablePlain
+  href: api/KS.ConsoleBase.Writers.FancyWriters.TableColor.html#KS_ConsoleBase_Writers_FancyWriters_TableColor_RenderTablePlain_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.TableColor.RenderTablePlain
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.TableColor.RenderTablePlain
+  nameWithType: TableColor.RenderTablePlain
 - uid: KS.ConsoleBase.Writers.FancyWriters.TableColor.WriteTable(System.String[],System.String[0:,0:],System.Int32,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Collections.Generic.List{KS.ConsoleBase.Writers.FancyWriters.Tools.CellOptions})
   name: WriteTable(string[], string[,], int, KernelColorType, KernelColorType, KernelColorType, KernelColorType, bool, List<CellOptions>)
   href: api/KS.ConsoleBase.Writers.FancyWriters.TableColor.html#KS_ConsoleBase_Writers_FancyWriters_TableColor_WriteTable_System_String___System_String_0__0___System_Int32_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Boolean_System_Collections_Generic_List_KS_ConsoleBase_Writers_FancyWriters_Tools_CellOptions__
@@ -10848,6 +10880,22 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Writers.FancyWriters.TableColor.WriteTable
   nameWithType: TableColor.WriteTable
+- uid: KS.ConsoleBase.Writers.FancyWriters.TableColor.WriteTablePlain(System.String[],System.String[0:,0:],System.Int32,System.Boolean,System.Collections.Generic.List{KS.ConsoleBase.Writers.FancyWriters.Tools.CellOptions})
+  name: WriteTablePlain(string[], string[,], int, bool, List<CellOptions>)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.TableColor.html#KS_ConsoleBase_Writers_FancyWriters_TableColor_WriteTablePlain_System_String___System_String_0__0___System_Int32_System_Boolean_System_Collections_Generic_List_KS_ConsoleBase_Writers_FancyWriters_Tools_CellOptions__
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.TableColor.WriteTablePlain(System.String[],System.String[0:,0:],System.Int32,System.Boolean,System.Collections.Generic.List{KS.ConsoleBase.Writers.FancyWriters.Tools.CellOptions})
+  name.vb: WriteTablePlain(String(), String(,), Integer, Boolean, List(Of CellOptions))
+  fullName: KS.ConsoleBase.Writers.FancyWriters.TableColor.WriteTablePlain(string[], string[,], int, bool, System.Collections.Generic.List<KS.ConsoleBase.Writers.FancyWriters.Tools.CellOptions>)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.TableColor.WriteTablePlain(String(), String(,), Integer, Boolean, System.Collections.Generic.List(Of KS.ConsoleBase.Writers.FancyWriters.Tools.CellOptions))
+  nameWithType: TableColor.WriteTablePlain(string[], string[,], int, bool, List<CellOptions>)
+  nameWithType.vb: TableColor.WriteTablePlain(String(), String(,), Integer, Boolean, List(Of CellOptions))
+- uid: KS.ConsoleBase.Writers.FancyWriters.TableColor.WriteTablePlain*
+  name: WriteTablePlain
+  href: api/KS.ConsoleBase.Writers.FancyWriters.TableColor.html#KS_ConsoleBase_Writers_FancyWriters_TableColor_WriteTablePlain_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.TableColor.WriteTablePlain
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.TableColor.WriteTablePlain
+  nameWithType: TableColor.WriteTablePlain
 - uid: KS.ConsoleBase.Writers.FancyWriters.Tools
   name: KS.ConsoleBase.Writers.FancyWriters.Tools
   href: api/KS.ConsoleBase.Writers.FancyWriters.Tools.html
