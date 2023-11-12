@@ -7222,6 +7222,22 @@ references:
   commentId: T:KS.ConsoleBase.Writers.FancyWriters.BoxColor
   fullName: KS.ConsoleBase.Writers.FancyWriters.BoxColor
   nameWithType: BoxColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.BoxColor.RenderBox(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: RenderBox(int, int, int, int)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BoxColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxColor_RenderBox_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.BoxColor.RenderBox(System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: RenderBox(Integer, Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BoxColor.RenderBox(int, int, int, int)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BoxColor.RenderBox(Integer, Integer, Integer, Integer)
+  nameWithType: BoxColor.RenderBox(int, int, int, int)
+  nameWithType.vb: BoxColor.RenderBox(Integer, Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Writers.FancyWriters.BoxColor.RenderBox*
+  name: RenderBox
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BoxColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxColor_RenderBox_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.BoxColor.RenderBox
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BoxColor.RenderBox
+  nameWithType: BoxColor.RenderBox
 - uid: KS.ConsoleBase.Writers.FancyWriters.BoxColor.WriteBox(System.Int32,System.Int32,System.Int32,System.Int32)
   name: WriteBox(int, int, int, int)
   href: api/KS.ConsoleBase.Writers.FancyWriters.BoxColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxColor_WriteBox_System_Int32_System_Int32_System_Int32_System_Int32_
@@ -7287,6 +7303,22 @@ references:
   commentId: T:KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor
   fullName: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor
   nameWithType: BoxFrameColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char)
+  name: RenderBoxFrame(int, int, int, int, char, char, char, char, char, char, char, char)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameColor_RenderBoxFrame_System_Int32_System_Int32_System_Int32_System_Int32_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char)
+  name.vb: RenderBoxFrame(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char)
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(int, int, int, int, char, char, char, char, char, char, char, char)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char)
+  nameWithType: BoxFrameColor.RenderBoxFrame(int, int, int, int, char, char, char, char, char, char, char, char)
+  nameWithType.vb: BoxFrameColor.RenderBoxFrame(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char)
+- uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame*
+  name: RenderBoxFrame
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameColor_RenderBoxFrame_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame
+  nameWithType: BoxFrameColor.RenderBoxFrame
 - uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.WriteBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32)
   name: WriteBoxFrame(int, int, int, int)
   href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameColor_WriteBoxFrame_System_Int32_System_Int32_System_Int32_System_Int32_
@@ -7451,6 +7483,22 @@ references:
   commentId: T:KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor
   fullName: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor
   nameWithType: BoxFrameTextColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name: RenderBoxFrame(string, int, int, int, int, char, char, char, char, char, char, char, char, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameTextColor_RenderBoxFrame_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Object[])
+  name.vb: RenderBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(string, int, int, int, int, char, char, char, char, char, char, char, char, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+  nameWithType: BoxFrameTextColor.RenderBoxFrame(string, int, int, int, int, char, char, char, char, char, char, char, char, params object[])
+  nameWithType.vb: BoxFrameTextColor.RenderBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame*
+  name: RenderBoxFrame
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameTextColor_RenderBoxFrame_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame
+  nameWithType: BoxFrameTextColor.RenderBoxFrame
 - uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.WriteBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,KS.ConsoleBase.Colors.KernelColorType,KS.ConsoleBase.Colors.KernelColorType,System.Object[])
   name: WriteBoxFrame(string, int, int, int, int, KernelColorType, KernelColorType, params object[])
   href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameTextColor_WriteBoxFrame_System_String_System_Int32_System_Int32_System_Int32_System_Int32_KS_ConsoleBase_Colors_KernelColorType_KS_ConsoleBase_Colors_KernelColorType_System_Object___
