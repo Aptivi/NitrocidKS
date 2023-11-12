@@ -7663,6 +7663,49 @@ references:
   commentId: T:KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor
   fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor
   nameWithType: CenteredFigletTextColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(Figletize.Utilities.FigletizeFont,System.String,System.Object[])
+  name: RenderCenteredFiglet(FigletizeFont, string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredFigletTextColor_RenderCenteredFiglet_Figletize_Utilities_FigletizeFont_System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(Figletize.Utilities.FigletizeFont,System.String,System.Object[])
+  name.vb: RenderCenteredFiglet(FigletizeFont, String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(Figletize.Utilities.FigletizeFont, string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(Figletize.Utilities.FigletizeFont, String, ParamArray Object())
+  nameWithType: CenteredFigletTextColor.RenderCenteredFiglet(FigletizeFont, string, params object[])
+  nameWithType.vb: CenteredFigletTextColor.RenderCenteredFiglet(FigletizeFont, String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(Figletize.Utilities.FigletizeFont,System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: RenderCenteredFiglet(FigletizeFont, string, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredFigletTextColor_RenderCenteredFiglet_Figletize_Utilities_FigletizeFont_System_String_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(Figletize.Utilities.FigletizeFont,System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: RenderCenteredFiglet(FigletizeFont, String, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(Figletize.Utilities.FigletizeFont, string, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(Figletize.Utilities.FigletizeFont, String, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: CenteredFigletTextColor.RenderCenteredFiglet(FigletizeFont, string, Color, Color, params object[])
+  nameWithType.vb: CenteredFigletTextColor.RenderCenteredFiglet(FigletizeFont, String, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(System.Int32,Figletize.Utilities.FigletizeFont,System.String,System.Object[])
+  name: RenderCenteredFiglet(int, FigletizeFont, string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredFigletTextColor_RenderCenteredFiglet_System_Int32_Figletize_Utilities_FigletizeFont_System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(System.Int32,Figletize.Utilities.FigletizeFont,System.String,System.Object[])
+  name.vb: RenderCenteredFiglet(Integer, FigletizeFont, String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(int, Figletize.Utilities.FigletizeFont, string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(Integer, Figletize.Utilities.FigletizeFont, String, ParamArray Object())
+  nameWithType: CenteredFigletTextColor.RenderCenteredFiglet(int, FigletizeFont, string, params object[])
+  nameWithType.vb: CenteredFigletTextColor.RenderCenteredFiglet(Integer, FigletizeFont, String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(System.Int32,Figletize.Utilities.FigletizeFont,System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: RenderCenteredFiglet(int, FigletizeFont, string, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredFigletTextColor_RenderCenteredFiglet_System_Int32_Figletize_Utilities_FigletizeFont_System_String_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(System.Int32,Figletize.Utilities.FigletizeFont,System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: RenderCenteredFiglet(Integer, FigletizeFont, String, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(int, Figletize.Utilities.FigletizeFont, string, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet(Integer, Figletize.Utilities.FigletizeFont, String, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: CenteredFigletTextColor.RenderCenteredFiglet(int, FigletizeFont, string, Color, Color, params object[])
+  nameWithType.vb: CenteredFigletTextColor.RenderCenteredFiglet(Integer, FigletizeFont, String, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet*
+  name: RenderCenteredFiglet
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredFigletTextColor_RenderCenteredFiglet_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.RenderCenteredFiglet
+  nameWithType: CenteredFigletTextColor.RenderCenteredFiglet
 - uid: KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.WriteCenteredFiglet(Figletize.Utilities.FigletizeFont,System.String,System.Object[])
   name: WriteCenteredFiglet(FigletizeFont, string, params object[])
   href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredFigletTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredFigletTextColor_WriteCenteredFiglet_Figletize_Utilities_FigletizeFont_System_String_System_Object___
@@ -7823,6 +7866,92 @@ references:
   commentId: T:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor
   fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor
   nameWithType: CenteredTextColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(System.Int32,System.String,System.Object[])
+  name: RenderCentered(int, string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_RenderCentered_System_Int32_System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(System.Int32,System.String,System.Object[])
+  name.vb: RenderCentered(Integer, String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(int, string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(Integer, String, ParamArray Object())
+  nameWithType: CenteredTextColor.RenderCentered(int, string, params object[])
+  nameWithType.vb: CenteredTextColor.RenderCentered(Integer, String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(System.Int32,System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: RenderCentered(int, string, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_RenderCentered_System_Int32_System_String_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(System.Int32,System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: RenderCentered(Integer, String, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(int, string, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(Integer, String, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: CenteredTextColor.RenderCentered(int, string, Color, Color, params object[])
+  nameWithType.vb: CenteredTextColor.RenderCentered(Integer, String, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(System.String,System.Object[])
+  name: RenderCentered(string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_RenderCentered_System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(System.String,System.Object[])
+  name.vb: RenderCentered(String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(String, ParamArray Object())
+  nameWithType: CenteredTextColor.RenderCentered(string, params object[])
+  nameWithType.vb: CenteredTextColor.RenderCentered(String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: RenderCentered(string, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_RenderCentered_System_String_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: RenderCentered(String, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(string, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered(String, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: CenteredTextColor.RenderCentered(string, Color, Color, params object[])
+  nameWithType.vb: CenteredTextColor.RenderCentered(String, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered*
+  name: RenderCentered
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_RenderCentered_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCentered
+  nameWithType: CenteredTextColor.RenderCentered
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(System.Int32,System.String,System.Object[])
+  name: RenderCenteredOneLine(int, string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_RenderCenteredOneLine_System_Int32_System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(System.Int32,System.String,System.Object[])
+  name.vb: RenderCenteredOneLine(Integer, String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(int, string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(Integer, String, ParamArray Object())
+  nameWithType: CenteredTextColor.RenderCenteredOneLine(int, string, params object[])
+  nameWithType.vb: CenteredTextColor.RenderCenteredOneLine(Integer, String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(System.Int32,System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: RenderCenteredOneLine(int, string, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_RenderCenteredOneLine_System_Int32_System_String_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(System.Int32,System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: RenderCenteredOneLine(Integer, String, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(int, string, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(Integer, String, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: CenteredTextColor.RenderCenteredOneLine(int, string, Color, Color, params object[])
+  nameWithType.vb: CenteredTextColor.RenderCenteredOneLine(Integer, String, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(System.String,System.Object[])
+  name: RenderCenteredOneLine(string, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_RenderCenteredOneLine_System_String_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(System.String,System.Object[])
+  name.vb: RenderCenteredOneLine(String, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(string, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(String, ParamArray Object())
+  nameWithType: CenteredTextColor.RenderCenteredOneLine(string, params object[])
+  nameWithType.vb: CenteredTextColor.RenderCenteredOneLine(String, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: RenderCenteredOneLine(string, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_RenderCenteredOneLine_System_String_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(System.String,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: RenderCenteredOneLine(String, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(string, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine(String, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: CenteredTextColor.RenderCenteredOneLine(string, Color, Color, params object[])
+  nameWithType.vb: CenteredTextColor.RenderCenteredOneLine(String, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine*
+  name: RenderCenteredOneLine
+  href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_RenderCenteredOneLine_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.RenderCenteredOneLine
+  nameWithType: CenteredTextColor.RenderCenteredOneLine
 - uid: KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.WriteCentered(System.Int32,System.String,System.Object[])
   name: WriteCentered(int, string, params object[])
   href: api/KS.ConsoleBase.Writers.FancyWriters.CenteredTextColor.html#KS_ConsoleBase_Writers_FancyWriters_CenteredTextColor_WriteCentered_System_Int32_System_String_System_Object___
@@ -8137,6 +8266,31 @@ references:
   commentId: T:KS.ConsoleBase.Writers.FancyWriters.FigletColor
   fullName: KS.ConsoleBase.Writers.FancyWriters.FigletColor
   nameWithType: FigletColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.FigletColor.RenderFigletPlain(System.String,Figletize.Utilities.FigletizeFont,System.Object[])
+  name: RenderFigletPlain(string, FigletizeFont, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.FigletColor.html#KS_ConsoleBase_Writers_FancyWriters_FigletColor_RenderFigletPlain_System_String_Figletize_Utilities_FigletizeFont_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.FigletColor.RenderFigletPlain(System.String,Figletize.Utilities.FigletizeFont,System.Object[])
+  name.vb: RenderFigletPlain(String, FigletizeFont, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.FigletColor.RenderFigletPlain(string, Figletize.Utilities.FigletizeFont, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.FigletColor.RenderFigletPlain(String, Figletize.Utilities.FigletizeFont, ParamArray Object())
+  nameWithType: FigletColor.RenderFigletPlain(string, FigletizeFont, params object[])
+  nameWithType.vb: FigletColor.RenderFigletPlain(String, FigletizeFont, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.FigletColor.RenderFigletPlain(System.String,Figletize.Utilities.FigletizeFont,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: RenderFigletPlain(string, FigletizeFont, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.FigletColor.html#KS_ConsoleBase_Writers_FancyWriters_FigletColor_RenderFigletPlain_System_String_Figletize_Utilities_FigletizeFont_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.FigletColor.RenderFigletPlain(System.String,Figletize.Utilities.FigletizeFont,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: RenderFigletPlain(String, FigletizeFont, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.FigletColor.RenderFigletPlain(string, Figletize.Utilities.FigletizeFont, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.FigletColor.RenderFigletPlain(String, Figletize.Utilities.FigletizeFont, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: FigletColor.RenderFigletPlain(string, FigletizeFont, Color, Color, params object[])
+  nameWithType.vb: FigletColor.RenderFigletPlain(String, FigletizeFont, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.FigletColor.RenderFigletPlain*
+  name: RenderFigletPlain
+  href: api/KS.ConsoleBase.Writers.FancyWriters.FigletColor.html#KS_ConsoleBase_Writers_FancyWriters_FigletColor_RenderFigletPlain_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.FigletColor.RenderFigletPlain
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.FigletColor.RenderFigletPlain
+  nameWithType: FigletColor.RenderFigletPlain
 - uid: KS.ConsoleBase.Writers.FancyWriters.FigletColor.WriteFigletColor(System.String,Figletize.Utilities.FigletizeFont,Terminaux.Colors.Color,System.Object[])
   name: WriteFigletColor(string, FigletizeFont, Color, params object[])
   href: api/KS.ConsoleBase.Writers.FancyWriters.FigletColor.html#KS_ConsoleBase_Writers_FancyWriters_FigletColor_WriteFigletColor_System_String_Figletize_Utilities_FigletizeFont_Terminaux_Colors_Color_System_Object___
@@ -8234,6 +8388,22 @@ references:
   commentId: T:KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor
   fullName: KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor
   nameWithType: FigletWhereColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.RenderFigletWherePlain(System.String,System.Int32,System.Int32,System.Boolean,Figletize.Utilities.FigletizeFont,System.Object[])
+  name: RenderFigletWherePlain(string, int, int, bool, FigletizeFont, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.html#KS_ConsoleBase_Writers_FancyWriters_FigletWhereColor_RenderFigletWherePlain_System_String_System_Int32_System_Int32_System_Boolean_Figletize_Utilities_FigletizeFont_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.RenderFigletWherePlain(System.String,System.Int32,System.Int32,System.Boolean,Figletize.Utilities.FigletizeFont,System.Object[])
+  name.vb: RenderFigletWherePlain(String, Integer, Integer, Boolean, FigletizeFont, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.RenderFigletWherePlain(string, int, int, bool, Figletize.Utilities.FigletizeFont, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.RenderFigletWherePlain(String, Integer, Integer, Boolean, Figletize.Utilities.FigletizeFont, ParamArray Object())
+  nameWithType: FigletWhereColor.RenderFigletWherePlain(string, int, int, bool, FigletizeFont, params object[])
+  nameWithType.vb: FigletWhereColor.RenderFigletWherePlain(String, Integer, Integer, Boolean, FigletizeFont, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.RenderFigletWherePlain*
+  name: RenderFigletWherePlain
+  href: api/KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.html#KS_ConsoleBase_Writers_FancyWriters_FigletWhereColor_RenderFigletWherePlain_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.RenderFigletWherePlain
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.RenderFigletWherePlain
+  nameWithType: FigletWhereColor.RenderFigletWherePlain
 - uid: KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.WriteFigletWhereColor(System.String,System.Int32,System.Int32,System.Boolean,Figletize.Utilities.FigletizeFont,Terminaux.Colors.Color,System.Object[])
   name: WriteFigletWhereColor(string, int, int, bool, FigletizeFont, Color, params object[])
   href: api/KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.html#KS_ConsoleBase_Writers_FancyWriters_FigletWhereColor_WriteFigletWhereColor_System_String_System_Int32_System_Int32_System_Boolean_Figletize_Utilities_FigletizeFont_Terminaux_Colors_Color_System_Object___
@@ -11846,6 +12016,40 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Console.BaseConsoleDriver.ReadKey
   nameWithType: BaseConsoleDriver.ReadKey
+- uid: KS.Drivers.Console.BaseConsoleDriver.RenderWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name: RenderWherePlain(string, int, int, bool, int, params object[])
+  href: api/KS.Drivers.Console.BaseConsoleDriver.html#KS_Drivers_Console_BaseConsoleDriver_RenderWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.BaseConsoleDriver.RenderWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name.vb: RenderWherePlain(String, Integer, Integer, Boolean, Integer, ParamArray Object())
+  fullName: KS.Drivers.Console.BaseConsoleDriver.RenderWherePlain(string, int, int, bool, int, params object[])
+  fullName.vb: KS.Drivers.Console.BaseConsoleDriver.RenderWherePlain(String, Integer, Integer, Boolean, Integer, ParamArray Object())
+  nameWithType: BaseConsoleDriver.RenderWherePlain(string, int, int, bool, int, params object[])
+  nameWithType.vb: BaseConsoleDriver.RenderWherePlain(String, Integer, Integer, Boolean, Integer, ParamArray Object())
+- uid: KS.Drivers.Console.BaseConsoleDriver.RenderWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name: RenderWherePlain(string, int, int, bool, params object[])
+  href: api/KS.Drivers.Console.BaseConsoleDriver.html#KS_Drivers_Console_BaseConsoleDriver_RenderWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.BaseConsoleDriver.RenderWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name.vb: RenderWherePlain(String, Integer, Integer, Boolean, ParamArray Object())
+  fullName: KS.Drivers.Console.BaseConsoleDriver.RenderWherePlain(string, int, int, bool, params object[])
+  fullName.vb: KS.Drivers.Console.BaseConsoleDriver.RenderWherePlain(String, Integer, Integer, Boolean, ParamArray Object())
+  nameWithType: BaseConsoleDriver.RenderWherePlain(string, int, int, bool, params object[])
+  nameWithType.vb: BaseConsoleDriver.RenderWherePlain(String, Integer, Integer, Boolean, ParamArray Object())
+- uid: KS.Drivers.Console.BaseConsoleDriver.RenderWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name: RenderWherePlain(string, int, int, params object[])
+  href: api/KS.Drivers.Console.BaseConsoleDriver.html#KS_Drivers_Console_BaseConsoleDriver_RenderWherePlain_System_String_System_Int32_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.BaseConsoleDriver.RenderWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name.vb: RenderWherePlain(String, Integer, Integer, ParamArray Object())
+  fullName: KS.Drivers.Console.BaseConsoleDriver.RenderWherePlain(string, int, int, params object[])
+  fullName.vb: KS.Drivers.Console.BaseConsoleDriver.RenderWherePlain(String, Integer, Integer, ParamArray Object())
+  nameWithType: BaseConsoleDriver.RenderWherePlain(string, int, int, params object[])
+  nameWithType.vb: BaseConsoleDriver.RenderWherePlain(String, Integer, Integer, ParamArray Object())
+- uid: KS.Drivers.Console.BaseConsoleDriver.RenderWherePlain*
+  name: RenderWherePlain
+  href: api/KS.Drivers.Console.BaseConsoleDriver.html#KS_Drivers_Console_BaseConsoleDriver_RenderWherePlain_
+  commentId: Overload:KS.Drivers.Console.BaseConsoleDriver.RenderWherePlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.BaseConsoleDriver.RenderWherePlain
+  nameWithType: BaseConsoleDriver.RenderWherePlain
 - uid: KS.Drivers.Console.BaseConsoleDriver.ResetColor
   name: ResetColor()
   href: api/KS.Drivers.Console.BaseConsoleDriver.html#KS_Drivers_Console_BaseConsoleDriver_ResetColor
@@ -12388,6 +12592,40 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Console.IConsoleDriver.ReadKey
   nameWithType: IConsoleDriver.ReadKey
+- uid: KS.Drivers.Console.IConsoleDriver.RenderWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name: RenderWherePlain(string, int, int, bool, int, params object[])
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_RenderWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.IConsoleDriver.RenderWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
+  name.vb: RenderWherePlain(String, Integer, Integer, Boolean, Integer, ParamArray Object())
+  fullName: KS.Drivers.Console.IConsoleDriver.RenderWherePlain(string, int, int, bool, int, params object[])
+  fullName.vb: KS.Drivers.Console.IConsoleDriver.RenderWherePlain(String, Integer, Integer, Boolean, Integer, ParamArray Object())
+  nameWithType: IConsoleDriver.RenderWherePlain(string, int, int, bool, int, params object[])
+  nameWithType.vb: IConsoleDriver.RenderWherePlain(String, Integer, Integer, Boolean, Integer, ParamArray Object())
+- uid: KS.Drivers.Console.IConsoleDriver.RenderWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name: RenderWherePlain(string, int, int, bool, params object[])
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_RenderWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Object___
+  commentId: M:KS.Drivers.Console.IConsoleDriver.RenderWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Object[])
+  name.vb: RenderWherePlain(String, Integer, Integer, Boolean, ParamArray Object())
+  fullName: KS.Drivers.Console.IConsoleDriver.RenderWherePlain(string, int, int, bool, params object[])
+  fullName.vb: KS.Drivers.Console.IConsoleDriver.RenderWherePlain(String, Integer, Integer, Boolean, ParamArray Object())
+  nameWithType: IConsoleDriver.RenderWherePlain(string, int, int, bool, params object[])
+  nameWithType.vb: IConsoleDriver.RenderWherePlain(String, Integer, Integer, Boolean, ParamArray Object())
+- uid: KS.Drivers.Console.IConsoleDriver.RenderWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name: RenderWherePlain(string, int, int, params object[])
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_RenderWherePlain_System_String_System_Int32_System_Int32_System_Object___
+  commentId: M:KS.Drivers.Console.IConsoleDriver.RenderWherePlain(System.String,System.Int32,System.Int32,System.Object[])
+  name.vb: RenderWherePlain(String, Integer, Integer, ParamArray Object())
+  fullName: KS.Drivers.Console.IConsoleDriver.RenderWherePlain(string, int, int, params object[])
+  fullName.vb: KS.Drivers.Console.IConsoleDriver.RenderWherePlain(String, Integer, Integer, ParamArray Object())
+  nameWithType: IConsoleDriver.RenderWherePlain(string, int, int, params object[])
+  nameWithType.vb: IConsoleDriver.RenderWherePlain(String, Integer, Integer, ParamArray Object())
+- uid: KS.Drivers.Console.IConsoleDriver.RenderWherePlain*
+  name: RenderWherePlain
+  href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_RenderWherePlain_
+  commentId: Overload:KS.Drivers.Console.IConsoleDriver.RenderWherePlain
+  isSpec: "True"
+  fullName: KS.Drivers.Console.IConsoleDriver.RenderWherePlain
+  nameWithType: IConsoleDriver.RenderWherePlain
 - uid: KS.Drivers.Console.IConsoleDriver.ResetColor
   name: ResetColor()
   href: api/KS.Drivers.Console.IConsoleDriver.html#KS_Drivers_Console_IConsoleDriver_ResetColor
