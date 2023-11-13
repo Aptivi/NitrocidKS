@@ -385,6 +385,22 @@ references:
   fullName.vb: KS.ConsoleBase.Buffered.ScreenPart.New
   nameWithType: ScreenPart.ScreenPart
   nameWithType.vb: ScreenPart.New
+- uid: KS.ConsoleBase.Buffered.ScreenPart.AddDynamicText(System.Func{System.String})
+  name: AddDynamicText(Func<string>)
+  href: api/KS.ConsoleBase.Buffered.ScreenPart.html#KS_ConsoleBase_Buffered_ScreenPart_AddDynamicText_System_Func_System_String__
+  commentId: M:KS.ConsoleBase.Buffered.ScreenPart.AddDynamicText(System.Func{System.String})
+  name.vb: AddDynamicText(Func(Of String))
+  fullName: KS.ConsoleBase.Buffered.ScreenPart.AddDynamicText(System.Func<string>)
+  fullName.vb: KS.ConsoleBase.Buffered.ScreenPart.AddDynamicText(System.Func(Of String))
+  nameWithType: ScreenPart.AddDynamicText(Func<string>)
+  nameWithType.vb: ScreenPart.AddDynamicText(Func(Of String))
+- uid: KS.ConsoleBase.Buffered.ScreenPart.AddDynamicText*
+  name: AddDynamicText
+  href: api/KS.ConsoleBase.Buffered.ScreenPart.html#KS_ConsoleBase_Buffered_ScreenPart_AddDynamicText_
+  commentId: Overload:KS.ConsoleBase.Buffered.ScreenPart.AddDynamicText
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Buffered.ScreenPart.AddDynamicText
+  nameWithType: ScreenPart.AddDynamicText
 - uid: KS.ConsoleBase.Buffered.ScreenPart.AddText(System.String)
   name: AddText(string)
   href: api/KS.ConsoleBase.Buffered.ScreenPart.html#KS_ConsoleBase_Buffered_ScreenPart_AddText_System_String_
@@ -417,6 +433,22 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Buffered.ScreenPart.AddTextLine
   nameWithType: ScreenPart.AddTextLine
+- uid: KS.ConsoleBase.Buffered.ScreenPart.BackgroundColor(Terminaux.Colors.Color,System.Boolean)
+  name: BackgroundColor(Color, bool)
+  href: api/KS.ConsoleBase.Buffered.ScreenPart.html#KS_ConsoleBase_Buffered_ScreenPart_BackgroundColor_Terminaux_Colors_Color_System_Boolean_
+  commentId: M:KS.ConsoleBase.Buffered.ScreenPart.BackgroundColor(Terminaux.Colors.Color,System.Boolean)
+  name.vb: BackgroundColor(Color, Boolean)
+  fullName: KS.ConsoleBase.Buffered.ScreenPart.BackgroundColor(Terminaux.Colors.Color, bool)
+  fullName.vb: KS.ConsoleBase.Buffered.ScreenPart.BackgroundColor(Terminaux.Colors.Color, Boolean)
+  nameWithType: ScreenPart.BackgroundColor(Color, bool)
+  nameWithType.vb: ScreenPart.BackgroundColor(Color, Boolean)
+- uid: KS.ConsoleBase.Buffered.ScreenPart.BackgroundColor*
+  name: BackgroundColor
+  href: api/KS.ConsoleBase.Buffered.ScreenPart.html#KS_ConsoleBase_Buffered_ScreenPart_BackgroundColor_
+  commentId: Overload:KS.ConsoleBase.Buffered.ScreenPart.BackgroundColor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Buffered.ScreenPart.BackgroundColor
+  nameWithType: ScreenPart.BackgroundColor
 - uid: KS.ConsoleBase.Buffered.ScreenPart.Clear
   name: Clear()
   href: api/KS.ConsoleBase.Buffered.ScreenPart.html#KS_ConsoleBase_Buffered_ScreenPart_Clear
@@ -430,6 +462,22 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Buffered.ScreenPart.Clear
   nameWithType: ScreenPart.Clear
+- uid: KS.ConsoleBase.Buffered.ScreenPart.ForegroundColor(Terminaux.Colors.Color,System.Boolean)
+  name: ForegroundColor(Color, bool)
+  href: api/KS.ConsoleBase.Buffered.ScreenPart.html#KS_ConsoleBase_Buffered_ScreenPart_ForegroundColor_Terminaux_Colors_Color_System_Boolean_
+  commentId: M:KS.ConsoleBase.Buffered.ScreenPart.ForegroundColor(Terminaux.Colors.Color,System.Boolean)
+  name.vb: ForegroundColor(Color, Boolean)
+  fullName: KS.ConsoleBase.Buffered.ScreenPart.ForegroundColor(Terminaux.Colors.Color, bool)
+  fullName.vb: KS.ConsoleBase.Buffered.ScreenPart.ForegroundColor(Terminaux.Colors.Color, Boolean)
+  nameWithType: ScreenPart.ForegroundColor(Color, bool)
+  nameWithType.vb: ScreenPart.ForegroundColor(Color, Boolean)
+- uid: KS.ConsoleBase.Buffered.ScreenPart.ForegroundColor*
+  name: ForegroundColor
+  href: api/KS.ConsoleBase.Buffered.ScreenPart.html#KS_ConsoleBase_Buffered_ScreenPart_ForegroundColor_
+  commentId: Overload:KS.ConsoleBase.Buffered.ScreenPart.ForegroundColor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Buffered.ScreenPart.ForegroundColor
+  nameWithType: ScreenPart.ForegroundColor
 - uid: KS.ConsoleBase.Buffered.ScreenPart.GetBuffer
   name: GetBuffer()
   href: api/KS.ConsoleBase.Buffered.ScreenPart.html#KS_ConsoleBase_Buffered_ScreenPart_GetBuffer
@@ -443,6 +491,99 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Buffered.ScreenPart.GetBuffer
   nameWithType: ScreenPart.GetBuffer
+- uid: KS.ConsoleBase.Buffered.ScreenPart.Position(System.Int32,System.Int32)
+  name: Position(int, int)
+  href: api/KS.ConsoleBase.Buffered.ScreenPart.html#KS_ConsoleBase_Buffered_ScreenPart_Position_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Buffered.ScreenPart.Position(System.Int32,System.Int32)
+  name.vb: Position(Integer, Integer)
+  fullName: KS.ConsoleBase.Buffered.ScreenPart.Position(int, int)
+  fullName.vb: KS.ConsoleBase.Buffered.ScreenPart.Position(Integer, Integer)
+  nameWithType: ScreenPart.Position(int, int)
+  nameWithType.vb: ScreenPart.Position(Integer, Integer)
+- uid: KS.ConsoleBase.Buffered.ScreenPart.Position*
+  name: Position
+  href: api/KS.ConsoleBase.Buffered.ScreenPart.html#KS_ConsoleBase_Buffered_ScreenPart_Position_
+  commentId: Overload:KS.ConsoleBase.Buffered.ScreenPart.Position
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Buffered.ScreenPart.Position
+  nameWithType: ScreenPart.Position
+- uid: KS.ConsoleBase.Buffered.ScreenPart.ResetColor
+  name: ResetColor()
+  href: api/KS.ConsoleBase.Buffered.ScreenPart.html#KS_ConsoleBase_Buffered_ScreenPart_ResetColor
+  commentId: M:KS.ConsoleBase.Buffered.ScreenPart.ResetColor
+  fullName: KS.ConsoleBase.Buffered.ScreenPart.ResetColor()
+  nameWithType: ScreenPart.ResetColor()
+- uid: KS.ConsoleBase.Buffered.ScreenPart.ResetColor*
+  name: ResetColor
+  href: api/KS.ConsoleBase.Buffered.ScreenPart.html#KS_ConsoleBase_Buffered_ScreenPart_ResetColor_
+  commentId: Overload:KS.ConsoleBase.Buffered.ScreenPart.ResetColor
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Buffered.ScreenPart.ResetColor
+  nameWithType: ScreenPart.ResetColor
+- uid: KS.ConsoleBase.Buffered.ScreenTools
+  name: ScreenTools
+  href: api/KS.ConsoleBase.Buffered.ScreenTools.html
+  commentId: T:KS.ConsoleBase.Buffered.ScreenTools
+  fullName: KS.ConsoleBase.Buffered.ScreenTools
+  nameWithType: ScreenTools
+- uid: KS.ConsoleBase.Buffered.ScreenTools.CurrentScreen
+  name: CurrentScreen
+  href: api/KS.ConsoleBase.Buffered.ScreenTools.html#KS_ConsoleBase_Buffered_ScreenTools_CurrentScreen
+  commentId: P:KS.ConsoleBase.Buffered.ScreenTools.CurrentScreen
+  fullName: KS.ConsoleBase.Buffered.ScreenTools.CurrentScreen
+  nameWithType: ScreenTools.CurrentScreen
+- uid: KS.ConsoleBase.Buffered.ScreenTools.CurrentScreen*
+  name: CurrentScreen
+  href: api/KS.ConsoleBase.Buffered.ScreenTools.html#KS_ConsoleBase_Buffered_ScreenTools_CurrentScreen_
+  commentId: Overload:KS.ConsoleBase.Buffered.ScreenTools.CurrentScreen
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Buffered.ScreenTools.CurrentScreen
+  nameWithType: ScreenTools.CurrentScreen
+- uid: KS.ConsoleBase.Buffered.ScreenTools.Render
+  name: Render()
+  href: api/KS.ConsoleBase.Buffered.ScreenTools.html#KS_ConsoleBase_Buffered_ScreenTools_Render
+  commentId: M:KS.ConsoleBase.Buffered.ScreenTools.Render
+  fullName: KS.ConsoleBase.Buffered.ScreenTools.Render()
+  nameWithType: ScreenTools.Render()
+- uid: KS.ConsoleBase.Buffered.ScreenTools.Render(KS.ConsoleBase.Buffered.Screen)
+  name: Render(Screen)
+  href: api/KS.ConsoleBase.Buffered.ScreenTools.html#KS_ConsoleBase_Buffered_ScreenTools_Render_KS_ConsoleBase_Buffered_Screen_
+  commentId: M:KS.ConsoleBase.Buffered.ScreenTools.Render(KS.ConsoleBase.Buffered.Screen)
+  fullName: KS.ConsoleBase.Buffered.ScreenTools.Render(KS.ConsoleBase.Buffered.Screen)
+  nameWithType: ScreenTools.Render(Screen)
+- uid: KS.ConsoleBase.Buffered.ScreenTools.Render*
+  name: Render
+  href: api/KS.ConsoleBase.Buffered.ScreenTools.html#KS_ConsoleBase_Buffered_ScreenTools_Render_
+  commentId: Overload:KS.ConsoleBase.Buffered.ScreenTools.Render
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Buffered.ScreenTools.Render
+  nameWithType: ScreenTools.Render
+- uid: KS.ConsoleBase.Buffered.ScreenTools.SetCurrent(KS.ConsoleBase.Buffered.Screen)
+  name: SetCurrent(Screen)
+  href: api/KS.ConsoleBase.Buffered.ScreenTools.html#KS_ConsoleBase_Buffered_ScreenTools_SetCurrent_KS_ConsoleBase_Buffered_Screen_
+  commentId: M:KS.ConsoleBase.Buffered.ScreenTools.SetCurrent(KS.ConsoleBase.Buffered.Screen)
+  fullName: KS.ConsoleBase.Buffered.ScreenTools.SetCurrent(KS.ConsoleBase.Buffered.Screen)
+  nameWithType: ScreenTools.SetCurrent(Screen)
+- uid: KS.ConsoleBase.Buffered.ScreenTools.SetCurrent*
+  name: SetCurrent
+  href: api/KS.ConsoleBase.Buffered.ScreenTools.html#KS_ConsoleBase_Buffered_ScreenTools_SetCurrent_
+  commentId: Overload:KS.ConsoleBase.Buffered.ScreenTools.SetCurrent
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Buffered.ScreenTools.SetCurrent
+  nameWithType: ScreenTools.SetCurrent
+- uid: KS.ConsoleBase.Buffered.ScreenTools.UnsetCurrent(KS.ConsoleBase.Buffered.Screen)
+  name: UnsetCurrent(Screen)
+  href: api/KS.ConsoleBase.Buffered.ScreenTools.html#KS_ConsoleBase_Buffered_ScreenTools_UnsetCurrent_KS_ConsoleBase_Buffered_Screen_
+  commentId: M:KS.ConsoleBase.Buffered.ScreenTools.UnsetCurrent(KS.ConsoleBase.Buffered.Screen)
+  fullName: KS.ConsoleBase.Buffered.ScreenTools.UnsetCurrent(KS.ConsoleBase.Buffered.Screen)
+  nameWithType: ScreenTools.UnsetCurrent(Screen)
+- uid: KS.ConsoleBase.Buffered.ScreenTools.UnsetCurrent*
+  name: UnsetCurrent
+  href: api/KS.ConsoleBase.Buffered.ScreenTools.html#KS_ConsoleBase_Buffered_ScreenTools_UnsetCurrent_
+  commentId: Overload:KS.ConsoleBase.Buffered.ScreenTools.UnsetCurrent
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Buffered.ScreenTools.UnsetCurrent
+  nameWithType: ScreenTools.UnsetCurrent
 - uid: KS.ConsoleBase.Colors
   name: KS.ConsoleBase.Colors
   href: api/KS.ConsoleBase.Colors.html
