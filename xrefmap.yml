@@ -5113,19 +5113,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Interactive.BaseInteractiveTui.CurrentPane
   nameWithType: BaseInteractiveTui.CurrentPane
-- uid: KS.ConsoleBase.Interactive.BaseInteractiveTui.FastRefresh
-  name: FastRefresh
-  href: api/KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_FastRefresh
-  commentId: P:KS.ConsoleBase.Interactive.BaseInteractiveTui.FastRefresh
-  fullName: KS.ConsoleBase.Interactive.BaseInteractiveTui.FastRefresh
-  nameWithType: BaseInteractiveTui.FastRefresh
-- uid: KS.ConsoleBase.Interactive.BaseInteractiveTui.FastRefresh*
-  name: FastRefresh
-  href: api/KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_FastRefresh_
-  commentId: Overload:KS.ConsoleBase.Interactive.BaseInteractiveTui.FastRefresh
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.BaseInteractiveTui.FastRefresh
-  nameWithType: BaseInteractiveTui.FastRefresh
 - uid: KS.ConsoleBase.Interactive.BaseInteractiveTui.FirstPaneCurrentSelection
   name: FirstPaneCurrentSelection
   href: api/KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_FirstPaneCurrentSelection
@@ -5353,19 +5340,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Interactive.BaseInteractiveTui.PrimaryDataSource
   nameWithType: BaseInteractiveTui.PrimaryDataSource
-- uid: KS.ConsoleBase.Interactive.BaseInteractiveTui.RedrawRequired
-  name: RedrawRequired
-  href: api/KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_RedrawRequired
-  commentId: P:KS.ConsoleBase.Interactive.BaseInteractiveTui.RedrawRequired
-  fullName: KS.ConsoleBase.Interactive.BaseInteractiveTui.RedrawRequired
-  nameWithType: BaseInteractiveTui.RedrawRequired
-- uid: KS.ConsoleBase.Interactive.BaseInteractiveTui.RedrawRequired*
-  name: RedrawRequired
-  href: api/KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_RedrawRequired_
-  commentId: Overload:KS.ConsoleBase.Interactive.BaseInteractiveTui.RedrawRequired
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.BaseInteractiveTui.RedrawRequired
-  nameWithType: BaseInteractiveTui.RedrawRequired
 - uid: KS.ConsoleBase.Interactive.BaseInteractiveTui.RefreshInterval
   name: RefreshInterval
   href: api/KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_RefreshInterval
@@ -5479,19 +5453,6 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Interactive.IInteractiveTui.Bindings
   nameWithType: IInteractiveTui.Bindings
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.FastRefresh
-  name: FastRefresh
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_FastRefresh
-  commentId: P:KS.ConsoleBase.Interactive.IInteractiveTui.FastRefresh
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.FastRefresh
-  nameWithType: IInteractiveTui.FastRefresh
-- uid: KS.ConsoleBase.Interactive.IInteractiveTui.FastRefresh*
-  name: FastRefresh
-  href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_FastRefresh_
-  commentId: Overload:KS.ConsoleBase.Interactive.IInteractiveTui.FastRefresh
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.IInteractiveTui.FastRefresh
-  nameWithType: IInteractiveTui.FastRefresh
 - uid: KS.ConsoleBase.Interactive.IInteractiveTui.GetEntryFromItem(System.Object)
   name: GetEntryFromItem(object)
   href: api/KS.ConsoleBase.Interactive.IInteractiveTui.html#KS_ConsoleBase_Interactive_IInteractiveTui_GetEntryFromItem_System_Object_
@@ -5710,19 +5671,6 @@ references:
   commentId: T:KS.ConsoleBase.Interactive.InteractiveTuiTools
   fullName: KS.ConsoleBase.Interactive.InteractiveTuiTools
   nameWithType: InteractiveTuiTools
-- uid: KS.ConsoleBase.Interactive.InteractiveTuiTools.ForceRefreshSelection
-  name: ForceRefreshSelection()
-  href: api/KS.ConsoleBase.Interactive.InteractiveTuiTools.html#KS_ConsoleBase_Interactive_InteractiveTuiTools_ForceRefreshSelection
-  commentId: M:KS.ConsoleBase.Interactive.InteractiveTuiTools.ForceRefreshSelection
-  fullName: KS.ConsoleBase.Interactive.InteractiveTuiTools.ForceRefreshSelection()
-  nameWithType: InteractiveTuiTools.ForceRefreshSelection()
-- uid: KS.ConsoleBase.Interactive.InteractiveTuiTools.ForceRefreshSelection*
-  name: ForceRefreshSelection
-  href: api/KS.ConsoleBase.Interactive.InteractiveTuiTools.html#KS_ConsoleBase_Interactive_InteractiveTuiTools_ForceRefreshSelection_
-  commentId: Overload:KS.ConsoleBase.Interactive.InteractiveTuiTools.ForceRefreshSelection
-  isSpec: "True"
-  fullName: KS.ConsoleBase.Interactive.InteractiveTuiTools.ForceRefreshSelection
-  nameWithType: InteractiveTuiTools.ForceRefreshSelection
 - uid: KS.ConsoleBase.Interactive.InteractiveTuiTools.OpenInteractiveTui(KS.ConsoleBase.Interactive.BaseInteractiveTui)
   name: OpenInteractiveTui(BaseInteractiveTui)
   href: api/KS.ConsoleBase.Interactive.InteractiveTuiTools.html#KS_ConsoleBase_Interactive_InteractiveTuiTools_OpenInteractiveTui_KS_ConsoleBase_Interactive_BaseInteractiveTui_
@@ -36171,19 +36119,6 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Interactives.TaskManagerCli.Bindings
   nameWithType: TaskManagerCli.Bindings
-- uid: KS.Misc.Interactives.TaskManagerCli.FastRefresh
-  name: FastRefresh
-  href: api/KS.Misc.Interactives.TaskManagerCli.html#KS_Misc_Interactives_TaskManagerCli_FastRefresh
-  commentId: P:KS.Misc.Interactives.TaskManagerCli.FastRefresh
-  fullName: KS.Misc.Interactives.TaskManagerCli.FastRefresh
-  nameWithType: TaskManagerCli.FastRefresh
-- uid: KS.Misc.Interactives.TaskManagerCli.FastRefresh*
-  name: FastRefresh
-  href: api/KS.Misc.Interactives.TaskManagerCli.html#KS_Misc_Interactives_TaskManagerCli_FastRefresh_
-  commentId: Overload:KS.Misc.Interactives.TaskManagerCli.FastRefresh
-  isSpec: "True"
-  fullName: KS.Misc.Interactives.TaskManagerCli.FastRefresh
-  nameWithType: TaskManagerCli.FastRefresh
 - uid: KS.Misc.Interactives.TaskManagerCli.GetEntryFromItem(System.Object)
   name: GetEntryFromItem(object)
   href: api/KS.Misc.Interactives.TaskManagerCli.html#KS_Misc_Interactives_TaskManagerCli_GetEntryFromItem_System_Object_
