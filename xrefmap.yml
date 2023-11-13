@@ -539,18 +539,24 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Buffered.ScreenTools.CurrentScreen
   nameWithType: ScreenTools.CurrentScreen
-- uid: KS.ConsoleBase.Buffered.ScreenTools.Render
-  name: Render()
-  href: api/KS.ConsoleBase.Buffered.ScreenTools.html#KS_ConsoleBase_Buffered_ScreenTools_Render
-  commentId: M:KS.ConsoleBase.Buffered.ScreenTools.Render
-  fullName: KS.ConsoleBase.Buffered.ScreenTools.Render()
-  nameWithType: ScreenTools.Render()
-- uid: KS.ConsoleBase.Buffered.ScreenTools.Render(KS.ConsoleBase.Buffered.Screen)
-  name: Render(Screen)
-  href: api/KS.ConsoleBase.Buffered.ScreenTools.html#KS_ConsoleBase_Buffered_ScreenTools_Render_KS_ConsoleBase_Buffered_Screen_
-  commentId: M:KS.ConsoleBase.Buffered.ScreenTools.Render(KS.ConsoleBase.Buffered.Screen)
-  fullName: KS.ConsoleBase.Buffered.ScreenTools.Render(KS.ConsoleBase.Buffered.Screen)
-  nameWithType: ScreenTools.Render(Screen)
+- uid: KS.ConsoleBase.Buffered.ScreenTools.Render(KS.ConsoleBase.Buffered.Screen,System.Boolean)
+  name: Render(Screen, bool)
+  href: api/KS.ConsoleBase.Buffered.ScreenTools.html#KS_ConsoleBase_Buffered_ScreenTools_Render_KS_ConsoleBase_Buffered_Screen_System_Boolean_
+  commentId: M:KS.ConsoleBase.Buffered.ScreenTools.Render(KS.ConsoleBase.Buffered.Screen,System.Boolean)
+  name.vb: Render(Screen, Boolean)
+  fullName: KS.ConsoleBase.Buffered.ScreenTools.Render(KS.ConsoleBase.Buffered.Screen, bool)
+  fullName.vb: KS.ConsoleBase.Buffered.ScreenTools.Render(KS.ConsoleBase.Buffered.Screen, Boolean)
+  nameWithType: ScreenTools.Render(Screen, bool)
+  nameWithType.vb: ScreenTools.Render(Screen, Boolean)
+- uid: KS.ConsoleBase.Buffered.ScreenTools.Render(System.Boolean)
+  name: Render(bool)
+  href: api/KS.ConsoleBase.Buffered.ScreenTools.html#KS_ConsoleBase_Buffered_ScreenTools_Render_System_Boolean_
+  commentId: M:KS.ConsoleBase.Buffered.ScreenTools.Render(System.Boolean)
+  name.vb: Render(Boolean)
+  fullName: KS.ConsoleBase.Buffered.ScreenTools.Render(bool)
+  fullName.vb: KS.ConsoleBase.Buffered.ScreenTools.Render(Boolean)
+  nameWithType: ScreenTools.Render(bool)
+  nameWithType.vb: ScreenTools.Render(Boolean)
 - uid: KS.ConsoleBase.Buffered.ScreenTools.Render*
   name: Render
   href: api/KS.ConsoleBase.Buffered.ScreenTools.html#KS_ConsoleBase_Buffered_ScreenTools_Render_
