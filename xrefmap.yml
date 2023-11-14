@@ -32669,6 +32669,101 @@ references:
   commentId: F:KS.Kernel.Extensions.AddonType.Optional
   fullName: KS.Kernel.Extensions.AddonType.Optional
   nameWithType: AddonType.Optional
+- uid: KS.Kernel.Extensions.InterAddonTools
+  name: InterAddonTools
+  href: api/KS.Kernel.Extensions.InterAddonTools.html
+  commentId: T:KS.Kernel.Extensions.InterAddonTools
+  fullName: KS.Kernel.Extensions.InterAddonTools
+  nameWithType: InterAddonTools
+- uid: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String)
+  name: ExecuteCustomAddonFunction(string, string)
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_
+  commentId: M:KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String)
+  name.vb: ExecuteCustomAddonFunction(String, String)
+  fullName: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(string, string)
+  fullName.vb: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(String, String)
+  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(string, string)
+  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(String, String)
+- uid: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.Object[])
+  name: ExecuteCustomAddonFunction(string, string, params object[])
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_Object___
+  commentId: M:KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.Object[])
+  name.vb: ExecuteCustomAddonFunction(String, String, ParamArray Object())
+  fullName: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(string, string, params object[])
+  fullName.vb: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(String, String, ParamArray Object())
+  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(string, string, params object[])
+  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(String, String, ParamArray Object())
+- uid: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction*
+  name: ExecuteCustomAddonFunction
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_
+  commentId: Overload:KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction
+  isSpec: "True"
+  fullName: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction
+  nameWithType: InterAddonTools.ExecuteCustomAddonFunction
+- uid: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(System.String,System.String)
+  name: GetCustomAddonFieldValue(string, string)
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_System_String_System_String_
+  commentId: M:KS.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(System.String,System.String)
+  name.vb: GetCustomAddonFieldValue(String, String)
+  fullName: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(string, string)
+  fullName.vb: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(String, String)
+  nameWithType: InterAddonTools.GetCustomAddonFieldValue(string, string)
+  nameWithType.vb: InterAddonTools.GetCustomAddonFieldValue(String, String)
+- uid: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue*
+  name: GetCustomAddonFieldValue
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_
+  commentId: Overload:KS.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue
+  isSpec: "True"
+  fullName: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue
+  nameWithType: InterAddonTools.GetCustomAddonFieldValue
+- uid: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(System.String,System.String)
+  name: GetCustomAddonPropertyValue(string, string)
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_System_String_System_String_
+  commentId: M:KS.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(System.String,System.String)
+  name.vb: GetCustomAddonPropertyValue(String, String)
+  fullName: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(string, string)
+  fullName.vb: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(String, String)
+  nameWithType: InterAddonTools.GetCustomAddonPropertyValue(string, string)
+  nameWithType.vb: InterAddonTools.GetCustomAddonPropertyValue(String, String)
+- uid: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue*
+  name: GetCustomAddonPropertyValue
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_
+  commentId: Overload:KS.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue
+  isSpec: "True"
+  fullName: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue
+  nameWithType: InterAddonTools.GetCustomAddonPropertyValue
+- uid: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(System.String,System.String,System.Object)
+  name: SetCustomAddonFieldValue(string, string, object)
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_System_String_System_String_System_Object_
+  commentId: M:KS.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(System.String,System.String,System.Object)
+  name.vb: SetCustomAddonFieldValue(String, String, Object)
+  fullName: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(string, string, object)
+  fullName.vb: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(String, String, Object)
+  nameWithType: InterAddonTools.SetCustomAddonFieldValue(string, string, object)
+  nameWithType.vb: InterAddonTools.SetCustomAddonFieldValue(String, String, Object)
+- uid: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue*
+  name: SetCustomAddonFieldValue
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_
+  commentId: Overload:KS.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue
+  isSpec: "True"
+  fullName: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue
+  nameWithType: InterAddonTools.SetCustomAddonFieldValue
+- uid: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(System.String,System.String,System.Object)
+  name: SetCustomAddonPropertyValue(string, string, object)
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_System_String_System_String_System_Object_
+  commentId: M:KS.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(System.String,System.String,System.Object)
+  name.vb: SetCustomAddonPropertyValue(String, String, Object)
+  fullName: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(string, string, object)
+  fullName.vb: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(String, String, Object)
+  nameWithType: InterAddonTools.SetCustomAddonPropertyValue(string, string, object)
+  nameWithType.vb: InterAddonTools.SetCustomAddonPropertyValue(String, String, Object)
+- uid: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue*
+  name: SetCustomAddonPropertyValue
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_
+  commentId: Overload:KS.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue
+  isSpec: "True"
+  fullName: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue
+  nameWithType: InterAddonTools.SetCustomAddonPropertyValue
 - uid: KS.Kernel.Hardware
   name: KS.Kernel.Hardware
   href: api/KS.Kernel.Hardware.html
@@ -54262,6 +54357,12 @@ references:
   commentId: F:KS.Users.Permissions.PermissionTypes.ExecuteScripts
   fullName: KS.Users.Permissions.PermissionTypes.ExecuteScripts
   nameWithType: PermissionTypes.ExecuteScripts
+- uid: KS.Users.Permissions.PermissionTypes.InteraddonCommunication
+  name: InteraddonCommunication
+  href: api/KS.Users.Permissions.PermissionTypes.html#KS_Users_Permissions_PermissionTypes_InteraddonCommunication
+  commentId: F:KS.Users.Permissions.PermissionTypes.InteraddonCommunication
+  fullName: KS.Users.Permissions.PermissionTypes.InteraddonCommunication
+  nameWithType: PermissionTypes.InteraddonCommunication
 - uid: KS.Users.Permissions.PermissionTypes.IntermodCommunication
   name: IntermodCommunication
   href: api/KS.Users.Permissions.PermissionTypes.html#KS_Users_Permissions_PermissionTypes_IntermodCommunication

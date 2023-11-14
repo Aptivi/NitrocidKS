@@ -2505,6 +2505,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Extensions.InterAddonTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Extensions.InterAddonTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Extensions.yml",
       "output": {
         ".html": {
