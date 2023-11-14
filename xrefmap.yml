@@ -22156,6 +22156,15 @@ references:
   commentId: T:KS.Files.Editors.TextEdit.TextEditTools
   fullName: KS.Files.Editors.TextEdit.TextEditTools
   nameWithType: TextEditTools
+- uid: KS.Files.Editors.TextEdit.TextEditTools.AddNewLine(System.Collections.Generic.List{System.String},System.String)
+  name: AddNewLine(List<string>, string)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_AddNewLine_System_Collections_Generic_List_System_String__System_String_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.AddNewLine(System.Collections.Generic.List{System.String},System.String)
+  name.vb: AddNewLine(List(Of String), String)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.AddNewLine(System.Collections.Generic.List<string>, string)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.AddNewLine(System.Collections.Generic.List(Of String), String)
+  nameWithType: TextEditTools.AddNewLine(List<string>, string)
+  nameWithType.vb: TextEditTools.AddNewLine(List(Of String), String)
 - uid: KS.Files.Editors.TextEdit.TextEditTools.AddNewLine(System.String)
   name: AddNewLine(string)
   href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_AddNewLine_System_String_
@@ -22172,6 +22181,15 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.TextEdit.TextEditTools.AddNewLine
   nameWithType: TextEditTools.AddNewLine
+- uid: KS.Files.Editors.TextEdit.TextEditTools.AddNewLines(System.Collections.Generic.List{System.String},System.String[])
+  name: AddNewLines(List<string>, string[])
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_AddNewLines_System_Collections_Generic_List_System_String__System_String___
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.AddNewLines(System.Collections.Generic.List{System.String},System.String[])
+  name.vb: AddNewLines(List(Of String), String())
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.AddNewLines(System.Collections.Generic.List<string>, string[])
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.AddNewLines(System.Collections.Generic.List(Of String), String())
+  nameWithType: TextEditTools.AddNewLines(List<string>, string[])
+  nameWithType.vb: TextEditTools.AddNewLines(List(Of String), String())
 - uid: KS.Files.Editors.TextEdit.TextEditTools.AddNewLines(System.String[])
   name: AddNewLines(string[])
   href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_AddNewLines_System_String___
@@ -22201,6 +22219,15 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.TextEdit.TextEditTools.CloseTextFile
   nameWithType: TextEditTools.CloseTextFile
+- uid: KS.Files.Editors.TextEdit.TextEditTools.DeleteChar(System.Collections.Generic.List{System.String},System.Int32,System.Int32)
+  name: DeleteChar(List<string>, int, int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_DeleteChar_System_Collections_Generic_List_System_String__System_Int32_System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.DeleteChar(System.Collections.Generic.List{System.String},System.Int32,System.Int32)
+  name.vb: DeleteChar(List(Of String), Integer, Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.DeleteChar(System.Collections.Generic.List<string>, int, int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.DeleteChar(System.Collections.Generic.List(Of String), Integer, Integer)
+  nameWithType: TextEditTools.DeleteChar(List<string>, int, int)
+  nameWithType.vb: TextEditTools.DeleteChar(List(Of String), Integer, Integer)
 - uid: KS.Files.Editors.TextEdit.TextEditTools.DeleteChar(System.Int32,System.Int32)
   name: DeleteChar(int, int)
   href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_DeleteChar_System_Int32_System_Int32_
@@ -22217,6 +22244,15 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.TextEdit.TextEditTools.DeleteChar
   nameWithType: TextEditTools.DeleteChar
+- uid: KS.Files.Editors.TextEdit.TextEditTools.DeleteWord(System.Collections.Generic.List{System.String},System.String,System.Int32)
+  name: DeleteWord(List<string>, string, int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_DeleteWord_System_Collections_Generic_List_System_String__System_String_System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.DeleteWord(System.Collections.Generic.List{System.String},System.String,System.Int32)
+  name.vb: DeleteWord(List(Of String), String, Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.DeleteWord(System.Collections.Generic.List<string>, string, int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.DeleteWord(System.Collections.Generic.List(Of String), String, Integer)
+  nameWithType: TextEditTools.DeleteWord(List<string>, string, int)
+  nameWithType.vb: TextEditTools.DeleteWord(List(Of String), String, Integer)
 - uid: KS.Files.Editors.TextEdit.TextEditTools.DeleteWord(System.String,System.Int32)
   name: DeleteWord(string, int)
   href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_DeleteWord_System_String_System_Int32_
@@ -22280,6 +22316,24 @@ references:
   fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.QueryChar(Char, Integer)
   nameWithType: TextEditTools.QueryChar(char, int)
   nameWithType.vb: TextEditTools.QueryChar(Char, Integer)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.QueryChar(System.Collections.Generic.List{System.String},System.Char)
+  name: QueryChar(List<string>, char)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryChar_System_Collections_Generic_List_System_String__System_Char_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.QueryChar(System.Collections.Generic.List{System.String},System.Char)
+  name.vb: QueryChar(List(Of String), Char)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryChar(System.Collections.Generic.List<string>, char)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.QueryChar(System.Collections.Generic.List(Of String), Char)
+  nameWithType: TextEditTools.QueryChar(List<string>, char)
+  nameWithType.vb: TextEditTools.QueryChar(List(Of String), Char)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.QueryChar(System.Collections.Generic.List{System.String},System.Char,System.Int32)
+  name: QueryChar(List<string>, char, int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryChar_System_Collections_Generic_List_System_String__System_Char_System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.QueryChar(System.Collections.Generic.List{System.String},System.Char,System.Int32)
+  name.vb: QueryChar(List(Of String), Char, Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryChar(System.Collections.Generic.List<string>, char, int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.QueryChar(System.Collections.Generic.List(Of String), Char, Integer)
+  nameWithType: TextEditTools.QueryChar(List<string>, char, int)
+  nameWithType.vb: TextEditTools.QueryChar(List(Of String), Char, Integer)
 - uid: KS.Files.Editors.TextEdit.TextEditTools.QueryChar*
   name: QueryChar
   href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryChar_
@@ -22287,6 +22341,24 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryChar
   nameWithType: TextEditTools.QueryChar
+- uid: KS.Files.Editors.TextEdit.TextEditTools.QueryWord(System.Collections.Generic.List{System.String},System.String)
+  name: QueryWord(List<string>, string)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryWord_System_Collections_Generic_List_System_String__System_String_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.QueryWord(System.Collections.Generic.List{System.String},System.String)
+  name.vb: QueryWord(List(Of String), String)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryWord(System.Collections.Generic.List<string>, string)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.QueryWord(System.Collections.Generic.List(Of String), String)
+  nameWithType: TextEditTools.QueryWord(List<string>, string)
+  nameWithType.vb: TextEditTools.QueryWord(List(Of String), String)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.QueryWord(System.Collections.Generic.List{System.String},System.String,System.Int32)
+  name: QueryWord(List<string>, string, int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryWord_System_Collections_Generic_List_System_String__System_String_System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.QueryWord(System.Collections.Generic.List{System.String},System.String,System.Int32)
+  name.vb: QueryWord(List(Of String), String, Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryWord(System.Collections.Generic.List<string>, string, int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.QueryWord(System.Collections.Generic.List(Of String), String, Integer)
+  nameWithType: TextEditTools.QueryWord(List<string>, string, int)
+  nameWithType.vb: TextEditTools.QueryWord(List(Of String), String, Integer)
 - uid: KS.Files.Editors.TextEdit.TextEditTools.QueryWord(System.String)
   name: QueryWord(string)
   href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryWord_System_String_
@@ -22312,6 +22384,24 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryWord
   nameWithType: TextEditTools.QueryWord
+- uid: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(System.Collections.Generic.List{System.String},System.String)
+  name: QueryWordRegex(List<string>, string)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryWordRegex_System_Collections_Generic_List_System_String__System_String_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(System.Collections.Generic.List{System.String},System.String)
+  name.vb: QueryWordRegex(List(Of String), String)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(System.Collections.Generic.List<string>, string)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(System.Collections.Generic.List(Of String), String)
+  nameWithType: TextEditTools.QueryWordRegex(List<string>, string)
+  nameWithType.vb: TextEditTools.QueryWordRegex(List(Of String), String)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(System.Collections.Generic.List{System.String},System.String,System.Int32)
+  name: QueryWordRegex(List<string>, string, int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryWordRegex_System_Collections_Generic_List_System_String__System_String_System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(System.Collections.Generic.List{System.String},System.String,System.Int32)
+  name.vb: QueryWordRegex(List(Of String), String, Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(System.Collections.Generic.List<string>, string, int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(System.Collections.Generic.List(Of String), String, Integer)
+  nameWithType: TextEditTools.QueryWordRegex(List<string>, string, int)
+  nameWithType.vb: TextEditTools.QueryWordRegex(List(Of String), String, Integer)
 - uid: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex(System.String)
   name: QueryWordRegex(string)
   href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_QueryWordRegex_System_String_
@@ -22337,6 +22427,15 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.TextEdit.TextEditTools.QueryWordRegex
   nameWithType: TextEditTools.QueryWordRegex
+- uid: KS.Files.Editors.TextEdit.TextEditTools.RemoveLine(System.Collections.Generic.List{System.String},System.Int32)
+  name: RemoveLine(List<string>, int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_RemoveLine_System_Collections_Generic_List_System_String__System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.RemoveLine(System.Collections.Generic.List{System.String},System.Int32)
+  name.vb: RemoveLine(List(Of String), Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.RemoveLine(System.Collections.Generic.List<string>, int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.RemoveLine(System.Collections.Generic.List(Of String), Integer)
+  nameWithType: TextEditTools.RemoveLine(List<string>, int)
+  nameWithType.vb: TextEditTools.RemoveLine(List(Of String), Integer)
 - uid: KS.Files.Editors.TextEdit.TextEditTools.RemoveLine(System.Int32)
   name: RemoveLine(int)
   href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_RemoveLine_System_Int32_
@@ -22353,6 +22452,24 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.TextEdit.TextEditTools.RemoveLine
   nameWithType: TextEditTools.RemoveLine
+- uid: KS.Files.Editors.TextEdit.TextEditTools.Replace(System.Collections.Generic.List{System.String},System.String,System.String)
+  name: Replace(List<string>, string, string)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_Replace_System_Collections_Generic_List_System_String__System_String_System_String_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.Replace(System.Collections.Generic.List{System.String},System.String,System.String)
+  name.vb: Replace(List(Of String), String, String)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.Replace(System.Collections.Generic.List<string>, string, string)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.Replace(System.Collections.Generic.List(Of String), String, String)
+  nameWithType: TextEditTools.Replace(List<string>, string, string)
+  nameWithType.vb: TextEditTools.Replace(List(Of String), String, String)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.Replace(System.Collections.Generic.List{System.String},System.String,System.String,System.Int32)
+  name: Replace(List<string>, string, string, int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_Replace_System_Collections_Generic_List_System_String__System_String_System_String_System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.Replace(System.Collections.Generic.List{System.String},System.String,System.String,System.Int32)
+  name.vb: Replace(List(Of String), String, String, Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.Replace(System.Collections.Generic.List<string>, string, string, int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.Replace(System.Collections.Generic.List(Of String), String, String, Integer)
+  nameWithType: TextEditTools.Replace(List<string>, string, string, int)
+  nameWithType.vb: TextEditTools.Replace(List(Of String), String, String, Integer)
 - uid: KS.Files.Editors.TextEdit.TextEditTools.Replace(System.String,System.String)
   name: Replace(string, string)
   href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_Replace_System_String_System_String_
@@ -22378,6 +22495,24 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.TextEdit.TextEditTools.Replace
   nameWithType: TextEditTools.Replace
+- uid: KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(System.Collections.Generic.List{System.String},System.String,System.String)
+  name: ReplaceRegex(List<string>, string, string)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_ReplaceRegex_System_Collections_Generic_List_System_String__System_String_System_String_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(System.Collections.Generic.List{System.String},System.String,System.String)
+  name.vb: ReplaceRegex(List(Of String), String, String)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(System.Collections.Generic.List<string>, string, string)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(System.Collections.Generic.List(Of String), String, String)
+  nameWithType: TextEditTools.ReplaceRegex(List<string>, string, string)
+  nameWithType.vb: TextEditTools.ReplaceRegex(List(Of String), String, String)
+- uid: KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(System.Collections.Generic.List{System.String},System.String,System.String,System.Int32)
+  name: ReplaceRegex(List<string>, string, string, int)
+  href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_ReplaceRegex_System_Collections_Generic_List_System_String__System_String_System_String_System_Int32_
+  commentId: M:KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(System.Collections.Generic.List{System.String},System.String,System.String,System.Int32)
+  name.vb: ReplaceRegex(List(Of String), String, String, Integer)
+  fullName: KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(System.Collections.Generic.List<string>, string, string, int)
+  fullName.vb: KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(System.Collections.Generic.List(Of String), String, String, Integer)
+  nameWithType: TextEditTools.ReplaceRegex(List<string>, string, string, int)
+  nameWithType.vb: TextEditTools.ReplaceRegex(List(Of String), String, String, Integer)
 - uid: KS.Files.Editors.TextEdit.TextEditTools.ReplaceRegex(System.String,System.String)
   name: ReplaceRegex(string, string)
   href: api/KS.Files.Editors.TextEdit.TextEditTools.html#KS_Files_Editors_TextEdit_TextEditTools_ReplaceRegex_System_String_System_String_
