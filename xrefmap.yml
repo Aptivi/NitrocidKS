@@ -16993,6 +16993,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllBytes
   nameWithType: BaseFilesystemDriver.ReadAllBytes
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllBytesNoBlock(System.String)
+  name: ReadAllBytesNoBlock(string)
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_ReadAllBytesNoBlock_System_String_
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllBytesNoBlock(System.String)
+  name.vb: ReadAllBytesNoBlock(String)
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllBytesNoBlock(string)
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllBytesNoBlock(String)
+  nameWithType: BaseFilesystemDriver.ReadAllBytesNoBlock(string)
+  nameWithType.vb: BaseFilesystemDriver.ReadAllBytesNoBlock(String)
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllBytesNoBlock*
+  name: ReadAllBytesNoBlock
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_ReadAllBytesNoBlock_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllBytesNoBlock
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllBytesNoBlock
+  nameWithType: BaseFilesystemDriver.ReadAllBytesNoBlock
 - uid: KS.Drivers.Filesystem.BaseFilesystemDriver.ReadAllLinesNoBlock(System.String)
   name: ReadAllLinesNoBlock(string)
   href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_ReadAllLinesNoBlock_System_String_
@@ -17383,6 +17399,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytes
   nameWithType: BaseFilesystemDriver.WriteAllBytes
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytesNoBlock(System.String,System.Byte[])
+  name: WriteAllBytesNoBlock(string, byte[])
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WriteAllBytesNoBlock_System_String_System_Byte___
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytesNoBlock(System.String,System.Byte[])
+  name.vb: WriteAllBytesNoBlock(String, Byte())
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytesNoBlock(string, byte[])
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytesNoBlock(String, Byte())
+  nameWithType: BaseFilesystemDriver.WriteAllBytesNoBlock(string, byte[])
+  nameWithType.vb: BaseFilesystemDriver.WriteAllBytesNoBlock(String, Byte())
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytesNoBlock*
+  name: WriteAllBytesNoBlock
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WriteAllBytesNoBlock_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytesNoBlock
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllBytesNoBlock
+  nameWithType: BaseFilesystemDriver.WriteAllBytesNoBlock
 - uid: KS.Drivers.Filesystem.BaseFilesystemDriver.WriteAllLinesNoBlock(System.String,System.String[])
   name: WriteAllLinesNoBlock(string, string[])
   href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_WriteAllLinesNoBlock_System_String_System_String___
@@ -18171,6 +18203,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.IFilesystemDriver.ReadAllBytes
   nameWithType: IFilesystemDriver.ReadAllBytes
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.ReadAllBytesNoBlock(System.String)
+  name: ReadAllBytesNoBlock(string)
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_ReadAllBytesNoBlock_System_String_
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.ReadAllBytesNoBlock(System.String)
+  name.vb: ReadAllBytesNoBlock(String)
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.ReadAllBytesNoBlock(string)
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.ReadAllBytesNoBlock(String)
+  nameWithType: IFilesystemDriver.ReadAllBytesNoBlock(string)
+  nameWithType.vb: IFilesystemDriver.ReadAllBytesNoBlock(String)
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.ReadAllBytesNoBlock*
+  name: ReadAllBytesNoBlock
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_ReadAllBytesNoBlock_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.ReadAllBytesNoBlock
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.ReadAllBytesNoBlock
+  nameWithType: IFilesystemDriver.ReadAllBytesNoBlock
 - uid: KS.Drivers.Filesystem.IFilesystemDriver.ReadAllLinesNoBlock(System.String)
   name: ReadAllLinesNoBlock(string)
   href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_ReadAllLinesNoBlock_System_String_
@@ -18561,6 +18609,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytes
   nameWithType: IFilesystemDriver.WriteAllBytes
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytesNoBlock(System.String,System.Byte[])
+  name: WriteAllBytesNoBlock(string, byte[])
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WriteAllBytesNoBlock_System_String_System_Byte___
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytesNoBlock(System.String,System.Byte[])
+  name.vb: WriteAllBytesNoBlock(String, Byte())
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytesNoBlock(string, byte[])
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytesNoBlock(String, Byte())
+  nameWithType: IFilesystemDriver.WriteAllBytesNoBlock(string, byte[])
+  nameWithType.vb: IFilesystemDriver.WriteAllBytesNoBlock(String, Byte())
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytesNoBlock*
+  name: WriteAllBytesNoBlock
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WriteAllBytesNoBlock_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytesNoBlock
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllBytesNoBlock
+  nameWithType: IFilesystemDriver.WriteAllBytesNoBlock
 - uid: KS.Drivers.Filesystem.IFilesystemDriver.WriteAllLinesNoBlock(System.String,System.String[])
   name: WriteAllLinesNoBlock(string, string[])
   href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_WriteAllLinesNoBlock_System_String_System_String___
@@ -21086,6 +21150,24 @@ references:
   fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(Byte, Long)
   nameWithType: HexEditTools.AddNewByte(byte, long)
   nameWithType.vb: HexEditTools.AddNewByte(Byte, Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(System.Byte[],System.Byte)
+  name: AddNewByte(byte[], byte)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_AddNewByte_System_Byte___System_Byte_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(System.Byte[],System.Byte)
+  name.vb: AddNewByte(Byte(), Byte)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(byte[], byte)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(Byte(), Byte)
+  nameWithType: HexEditTools.AddNewByte(byte[], byte)
+  nameWithType.vb: HexEditTools.AddNewByte(Byte(), Byte)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(System.Byte[],System.Byte,System.Int64)
+  name: AddNewByte(byte[], byte, long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_AddNewByte_System_Byte___System_Byte_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(System.Byte[],System.Byte,System.Int64)
+  name.vb: AddNewByte(Byte(), Byte, Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(byte[], byte, long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte(Byte(), Byte, Long)
+  nameWithType: HexEditTools.AddNewByte(byte[], byte, long)
+  nameWithType.vb: HexEditTools.AddNewByte(Byte(), Byte, Long)
 - uid: KS.Files.Editors.HexEdit.HexEditTools.AddNewByte*
   name: AddNewByte
   href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_AddNewByte_
@@ -21102,6 +21184,15 @@ references:
   fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.AddNewBytes(Byte())
   nameWithType: HexEditTools.AddNewBytes(byte[])
   nameWithType.vb: HexEditTools.AddNewBytes(Byte())
+- uid: KS.Files.Editors.HexEdit.HexEditTools.AddNewBytes(System.Byte[],System.Byte[])
+  name: AddNewBytes(byte[], byte[])
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_AddNewBytes_System_Byte___System_Byte___
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.AddNewBytes(System.Byte[],System.Byte[])
+  name.vb: AddNewBytes(Byte(), Byte())
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.AddNewBytes(byte[], byte[])
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.AddNewBytes(Byte(), Byte())
+  nameWithType: HexEditTools.AddNewBytes(byte[], byte[])
+  nameWithType.vb: HexEditTools.AddNewBytes(Byte(), Byte())
 - uid: KS.Files.Editors.HexEdit.HexEditTools.AddNewBytes*
   name: AddNewBytes
   href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_AddNewBytes_
@@ -21122,6 +21213,15 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.HexEdit.HexEditTools.CloseBinaryFile
   nameWithType: HexEditTools.CloseBinaryFile
+- uid: KS.Files.Editors.HexEdit.HexEditTools.DeleteByte(System.Byte[],System.Int64)
+  name: DeleteByte(byte[], long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DeleteByte_System_Byte___System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.DeleteByte(System.Byte[],System.Int64)
+  name.vb: DeleteByte(Byte(), Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.DeleteByte(byte[], long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.DeleteByte(Byte(), Long)
+  nameWithType: HexEditTools.DeleteByte(byte[], long)
+  nameWithType.vb: HexEditTools.DeleteByte(Byte(), Long)
 - uid: KS.Files.Editors.HexEdit.HexEditTools.DeleteByte(System.Int64)
   name: DeleteByte(long)
   href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DeleteByte_System_Int64_
@@ -21138,6 +21238,24 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.HexEdit.HexEditTools.DeleteByte
   nameWithType: HexEditTools.DeleteByte
+- uid: KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(System.Byte[],System.Int64)
+  name: DeleteBytes(byte[], long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DeleteBytes_System_Byte___System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(System.Byte[],System.Int64)
+  name.vb: DeleteBytes(Byte(), Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(byte[], long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(Byte(), Long)
+  nameWithType: HexEditTools.DeleteBytes(byte[], long)
+  nameWithType.vb: HexEditTools.DeleteBytes(Byte(), Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(System.Byte[],System.Int64,System.Int64)
+  name: DeleteBytes(byte[], long, long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DeleteBytes_System_Byte___System_Int64_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(System.Byte[],System.Int64,System.Int64)
+  name.vb: DeleteBytes(Byte(), Long, Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(byte[], long, long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(Byte(), Long, Long)
+  nameWithType: HexEditTools.DeleteBytes(byte[], long, long)
+  nameWithType.vb: HexEditTools.DeleteBytes(Byte(), Long, Long)
 - uid: KS.Files.Editors.HexEdit.HexEditTools.DeleteBytes(System.Int64)
   name: DeleteBytes(long)
   href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DeleteBytes_System_Int64_
@@ -21169,6 +21287,33 @@ references:
   commentId: M:KS.Files.Editors.HexEdit.HexEditTools.DisplayHex
   fullName: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex()
   nameWithType: HexEditTools.DisplayHex()
+- uid: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(System.Byte[])
+  name: DisplayHex(byte[])
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DisplayHex_System_Byte___
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(System.Byte[])
+  name.vb: DisplayHex(Byte())
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(byte[])
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(Byte())
+  nameWithType: HexEditTools.DisplayHex(byte[])
+  nameWithType.vb: HexEditTools.DisplayHex(Byte())
+- uid: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(System.Byte[],System.Int64)
+  name: DisplayHex(byte[], long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DisplayHex_System_Byte___System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(System.Byte[],System.Int64)
+  name.vb: DisplayHex(Byte(), Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(byte[], long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(Byte(), Long)
+  nameWithType: HexEditTools.DisplayHex(byte[], long)
+  nameWithType.vb: HexEditTools.DisplayHex(Byte(), Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(System.Byte[],System.Int64,System.Int64)
+  name: DisplayHex(byte[], long, long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DisplayHex_System_Byte___System_Int64_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(System.Byte[],System.Int64,System.Int64)
+  name.vb: DisplayHex(Byte(), Long, Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(byte[], long, long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(Byte(), Long, Long)
+  nameWithType: HexEditTools.DisplayHex(byte[], long, long)
+  nameWithType.vb: HexEditTools.DisplayHex(Byte(), Long, Long)
 - uid: KS.Files.Editors.HexEdit.HexEditTools.DisplayHex(System.Int64)
   name: DisplayHex(long)
   href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_DisplayHex_System_Int64_
@@ -21250,6 +21395,33 @@ references:
   fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(Byte, Long, Long)
   nameWithType: HexEditTools.QueryByteAndDisplay(byte, long, long)
   nameWithType.vb: HexEditTools.QueryByteAndDisplay(Byte, Long, Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(System.Byte[],System.Byte)
+  name: QueryByteAndDisplay(byte[], byte)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_QueryByteAndDisplay_System_Byte___System_Byte_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(System.Byte[],System.Byte)
+  name.vb: QueryByteAndDisplay(Byte(), Byte)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(byte[], byte)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(Byte(), Byte)
+  nameWithType: HexEditTools.QueryByteAndDisplay(byte[], byte)
+  nameWithType.vb: HexEditTools.QueryByteAndDisplay(Byte(), Byte)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(System.Byte[],System.Byte,System.Int64)
+  name: QueryByteAndDisplay(byte[], byte, long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_QueryByteAndDisplay_System_Byte___System_Byte_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(System.Byte[],System.Byte,System.Int64)
+  name.vb: QueryByteAndDisplay(Byte(), Byte, Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(byte[], byte, long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(Byte(), Byte, Long)
+  nameWithType: HexEditTools.QueryByteAndDisplay(byte[], byte, long)
+  nameWithType.vb: HexEditTools.QueryByteAndDisplay(Byte(), Byte, Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(System.Byte[],System.Byte,System.Int64,System.Int64)
+  name: QueryByteAndDisplay(byte[], byte, long, long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_QueryByteAndDisplay_System_Byte___System_Byte_System_Int64_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(System.Byte[],System.Byte,System.Int64,System.Int64)
+  name.vb: QueryByteAndDisplay(Byte(), Byte, Long, Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(byte[], byte, long, long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay(Byte(), Byte, Long, Long)
+  nameWithType: HexEditTools.QueryByteAndDisplay(byte[], byte, long, long)
+  nameWithType.vb: HexEditTools.QueryByteAndDisplay(Byte(), Byte, Long, Long)
 - uid: KS.Files.Editors.HexEdit.HexEditTools.QueryByteAndDisplay*
   name: QueryByteAndDisplay
   href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_QueryByteAndDisplay_
@@ -21284,6 +21456,33 @@ references:
   fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.Replace(Byte, Byte, Long, Long)
   nameWithType: HexEditTools.Replace(byte, byte, long, long)
   nameWithType.vb: HexEditTools.Replace(Byte, Byte, Long, Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.Replace(System.Byte[],System.Byte,System.Byte)
+  name: Replace(byte[], byte, byte)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_Replace_System_Byte___System_Byte_System_Byte_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.Replace(System.Byte[],System.Byte,System.Byte)
+  name.vb: Replace(Byte(), Byte, Byte)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.Replace(byte[], byte, byte)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.Replace(Byte(), Byte, Byte)
+  nameWithType: HexEditTools.Replace(byte[], byte, byte)
+  nameWithType.vb: HexEditTools.Replace(Byte(), Byte, Byte)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.Replace(System.Byte[],System.Byte,System.Byte,System.Int64)
+  name: Replace(byte[], byte, byte, long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_Replace_System_Byte___System_Byte_System_Byte_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.Replace(System.Byte[],System.Byte,System.Byte,System.Int64)
+  name.vb: Replace(Byte(), Byte, Byte, Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.Replace(byte[], byte, byte, long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.Replace(Byte(), Byte, Byte, Long)
+  nameWithType: HexEditTools.Replace(byte[], byte, byte, long)
+  nameWithType.vb: HexEditTools.Replace(Byte(), Byte, Byte, Long)
+- uid: KS.Files.Editors.HexEdit.HexEditTools.Replace(System.Byte[],System.Byte,System.Byte,System.Int64,System.Int64)
+  name: Replace(byte[], byte, byte, long, long)
+  href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_Replace_System_Byte___System_Byte_System_Byte_System_Int64_System_Int64_
+  commentId: M:KS.Files.Editors.HexEdit.HexEditTools.Replace(System.Byte[],System.Byte,System.Byte,System.Int64,System.Int64)
+  name.vb: Replace(Byte(), Byte, Byte, Long, Long)
+  fullName: KS.Files.Editors.HexEdit.HexEditTools.Replace(byte[], byte, byte, long, long)
+  fullName.vb: KS.Files.Editors.HexEdit.HexEditTools.Replace(Byte(), Byte, Byte, Long, Long)
+  nameWithType: HexEditTools.Replace(byte[], byte, byte, long, long)
+  nameWithType.vb: HexEditTools.Replace(Byte(), Byte, Byte, Long, Long)
 - uid: KS.Files.Editors.HexEdit.HexEditTools.Replace*
   name: Replace
   href: api/KS.Files.Editors.HexEdit.HexEditTools.html#KS_Files_Editors_HexEdit_HexEditTools_Replace_
@@ -24538,6 +24737,22 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Reading.ReadAllBytes
   nameWithType: Reading.ReadAllBytes
+- uid: KS.Files.Operations.Reading.ReadAllBytesNoBlock(System.String)
+  name: ReadAllBytesNoBlock(string)
+  href: api/KS.Files.Operations.Reading.html#KS_Files_Operations_Reading_ReadAllBytesNoBlock_System_String_
+  commentId: M:KS.Files.Operations.Reading.ReadAllBytesNoBlock(System.String)
+  name.vb: ReadAllBytesNoBlock(String)
+  fullName: KS.Files.Operations.Reading.ReadAllBytesNoBlock(string)
+  fullName.vb: KS.Files.Operations.Reading.ReadAllBytesNoBlock(String)
+  nameWithType: Reading.ReadAllBytesNoBlock(string)
+  nameWithType.vb: Reading.ReadAllBytesNoBlock(String)
+- uid: KS.Files.Operations.Reading.ReadAllBytesNoBlock*
+  name: ReadAllBytesNoBlock
+  href: api/KS.Files.Operations.Reading.html#KS_Files_Operations_Reading_ReadAllBytesNoBlock_
+  commentId: Overload:KS.Files.Operations.Reading.ReadAllBytesNoBlock
+  isSpec: "True"
+  fullName: KS.Files.Operations.Reading.ReadAllBytesNoBlock
+  nameWithType: Reading.ReadAllBytesNoBlock
 - uid: KS.Files.Operations.Reading.ReadAllLinesNoBlock(System.String)
   name: ReadAllLinesNoBlock(string)
   href: api/KS.Files.Operations.Reading.html#KS_Files_Operations_Reading_ReadAllLinesNoBlock_System_String_
@@ -24751,6 +24966,22 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Writing.WriteAllBytes
   nameWithType: Writing.WriteAllBytes
+- uid: KS.Files.Operations.Writing.WriteAllBytesNoBlock(System.String,System.Byte[])
+  name: WriteAllBytesNoBlock(string, byte[])
+  href: api/KS.Files.Operations.Writing.html#KS_Files_Operations_Writing_WriteAllBytesNoBlock_System_String_System_Byte___
+  commentId: M:KS.Files.Operations.Writing.WriteAllBytesNoBlock(System.String,System.Byte[])
+  name.vb: WriteAllBytesNoBlock(String, Byte())
+  fullName: KS.Files.Operations.Writing.WriteAllBytesNoBlock(string, byte[])
+  fullName.vb: KS.Files.Operations.Writing.WriteAllBytesNoBlock(String, Byte())
+  nameWithType: Writing.WriteAllBytesNoBlock(string, byte[])
+  nameWithType.vb: Writing.WriteAllBytesNoBlock(String, Byte())
+- uid: KS.Files.Operations.Writing.WriteAllBytesNoBlock*
+  name: WriteAllBytesNoBlock
+  href: api/KS.Files.Operations.Writing.html#KS_Files_Operations_Writing_WriteAllBytesNoBlock_
+  commentId: Overload:KS.Files.Operations.Writing.WriteAllBytesNoBlock
+  isSpec: "True"
+  fullName: KS.Files.Operations.Writing.WriteAllBytesNoBlock
+  nameWithType: Writing.WriteAllBytesNoBlock
 - uid: KS.Files.Operations.Writing.WriteAllLinesNoBlock(System.String,System.String[])
   name: WriteAllLinesNoBlock(string, string[])
   href: api/KS.Files.Operations.Writing.html#KS_Files_Operations_Writing_WriteAllLinesNoBlock_System_String_System_String___
