@@ -8853,6 +8853,15 @@ references:
   commentId: T:KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor
   fullName: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor
   nameWithType: BoxFrameColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: RenderBoxFrame(int, int, int, int)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameColor_RenderBoxFrame_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: RenderBoxFrame(Integer, Integer, Integer, Integer)
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(int, int, int, int)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(Integer, Integer, Integer, Integer)
+  nameWithType: BoxFrameColor.RenderBoxFrame(int, int, int, int)
+  nameWithType.vb: BoxFrameColor.RenderBoxFrame(Integer, Integer, Integer, Integer)
 - uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char)
   name: RenderBoxFrame(int, int, int, int, char, char, char, char, char, char, char, char)
   href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameColor_RenderBoxFrame_System_Int32_System_Int32_System_Int32_System_Int32_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_
@@ -9042,6 +9051,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
   nameWithType: BoxFrameTextColor.RenderBoxFrame(string, int, int, int, int, char, char, char, char, char, char, char, char, params object[])
   nameWithType.vb: BoxFrameTextColor.RenderBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Object[])
+  name: RenderBoxFrame(string, int, int, int, int, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameTextColor_RenderBoxFrame_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Object[])
+  name.vb: RenderBoxFrame(String, Integer, Integer, Integer, Integer, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(string, int, int, int, int, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(String, Integer, Integer, Integer, Integer, ParamArray Object())
+  nameWithType: BoxFrameTextColor.RenderBoxFrame(string, int, int, int, int, params object[])
+  nameWithType.vb: BoxFrameTextColor.RenderBoxFrame(String, Integer, Integer, Integer, Integer, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame*
   name: RenderBoxFrame
   href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameTextColor_RenderBoxFrame_
