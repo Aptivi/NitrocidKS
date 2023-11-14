@@ -1159,10 +1159,15 @@
     "title": "Namespace KS.Kernel.Debugging.RemoteDebug.Command | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Kernel.Debugging.RemoteDebug.Command Classes RemoteDebugBaseCommand The command executor class RemoteDebugCommandArgumentInfo Command argument info class RemoteDebugCommandInfo Remote debug command information class RemoteDebugProvidedCommandArgumentInfo Remote debug - provided command arguments information class Interfaces IRemoteDebugCommand Base command executor"
   },
+  "api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html": {
+    "href": "api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html",
+    "title": "Class RemoteChatTools | Nitrocid KS API - Aptivi",
+    "keywords": "Class RemoteChatTools Remote chat module Inheritance object RemoteChatTools Namespace: KS.Kernel.Debugging.RemoteDebug.RemoteChat Assembly: Nitrocid.dll Syntax public static class RemoteChatTools Properties | Edit this page View Source DebugChatPort Remote debugger chat port Declaration public static int DebugChatPort { get; } Property Value Type Description int | Edit this page View Source RDebugChatStopping Whether the remote debug chat is stopping Declaration public static bool RDebugChatStopping { get; set; } Property Value Type Description bool | Edit this page View Source RDebugMessageFormat Remote debug message format Declaration public static string RDebugMessageFormat { get; } Property Value Type Description string Methods | Edit this page View Source StartRDebugger() Thread to accept connections after the listener starts Declaration public static void StartRDebugger()"
+  },
   "api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.html": {
     "href": "api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.html",
-    "title": "Class RemoteChat | Nitrocid KS API - Aptivi",
-    "keywords": "Class RemoteChat Remote chat module Inheritance object RemoteChat Namespace: KS.Kernel.Debugging.RemoteDebug Assembly: Nitrocid.dll Syntax public static class RemoteChat Properties | Edit this page View Source DebugChatPort Remote debugger chat port Declaration public static int DebugChatPort { get; } Property Value Type Description int | Edit this page View Source RDebugChatStopping Whether the remote debug chat is stopping Declaration public static bool RDebugChatStopping { get; set; } Property Value Type Description bool | Edit this page View Source RDebugMessageFormat Remote debug message format Declaration public static string RDebugMessageFormat { get; } Property Value Type Description string Methods | Edit this page View Source StartRDebugger() Thread to accept connections after the listener starts Declaration public static void StartRDebugger()"
+    "title": "Namespace KS.Kernel.Debugging.RemoteDebug.RemoteChat | Nitrocid KS API - Aptivi",
+    "keywords": "Namespace KS.Kernel.Debugging.RemoteDebug.RemoteChat Classes RemoteChatTools Remote chat module"
   },
   "api/KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice.html": {
     "href": "api/KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice.html",
@@ -1187,7 +1192,7 @@
   "api/KS.Kernel.Debugging.RemoteDebug.html": {
     "href": "api/KS.Kernel.Debugging.RemoteDebug.html",
     "title": "Namespace KS.Kernel.Debugging.RemoteDebug | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Kernel.Debugging.RemoteDebug Classes RemoteChat Remote chat module RemoteDebugDevice Remote debug device instance RemoteDebugDeviceInfo Remote debug device info class RemoteDebugTools Remote debug tool module RemoteDebugger Remote debugger module"
+    "keywords": "Namespace KS.Kernel.Debugging.RemoteDebug Classes RemoteDebugDevice Remote debug device instance RemoteDebugDeviceInfo Remote debug device info class RemoteDebugTools Remote debug tool module RemoteDebugger Remote debugger module"
   },
   "api/KS.Kernel.Debugging.html": {
     "href": "api/KS.Kernel.Debugging.html",

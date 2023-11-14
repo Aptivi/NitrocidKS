@@ -30516,63 +30516,69 @@ references:
   fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.SwitchesList
   nameWithType: RemoteDebugProvidedCommandArgumentInfo.SwitchesList
 - uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat
-  name: RemoteChat
+  name: KS.Kernel.Debugging.RemoteDebug.RemoteChat
   href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.html
-  commentId: T:KS.Kernel.Debugging.RemoteDebug.RemoteChat
+  commentId: N:KS.Kernel.Debugging.RemoteDebug.RemoteChat
   fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat
-  nameWithType: RemoteChat
-- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.DebugChatPort
+  nameWithType: KS.Kernel.Debugging.RemoteDebug.RemoteChat
+- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools
+  name: RemoteChatTools
+  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html
+  commentId: T:KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools
+  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools
+  nameWithType: RemoteChatTools
+- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.DebugChatPort
   name: DebugChatPort
-  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_DebugChatPort
-  commentId: P:KS.Kernel.Debugging.RemoteDebug.RemoteChat.DebugChatPort
-  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.DebugChatPort
-  nameWithType: RemoteChat.DebugChatPort
-- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.DebugChatPort*
+  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_RemoteChatTools_DebugChatPort
+  commentId: P:KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.DebugChatPort
+  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.DebugChatPort
+  nameWithType: RemoteChatTools.DebugChatPort
+- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.DebugChatPort*
   name: DebugChatPort
-  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_DebugChatPort_
-  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.RemoteChat.DebugChatPort
+  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_RemoteChatTools_DebugChatPort_
+  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.DebugChatPort
   isSpec: "True"
-  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.DebugChatPort
-  nameWithType: RemoteChat.DebugChatPort
-- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RDebugChatStopping
+  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.DebugChatPort
+  nameWithType: RemoteChatTools.DebugChatPort
+- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugChatStopping
   name: RDebugChatStopping
-  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_RDebugChatStopping
-  commentId: P:KS.Kernel.Debugging.RemoteDebug.RemoteChat.RDebugChatStopping
-  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RDebugChatStopping
-  nameWithType: RemoteChat.RDebugChatStopping
-- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RDebugChatStopping*
+  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_RemoteChatTools_RDebugChatStopping
+  commentId: P:KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugChatStopping
+  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugChatStopping
+  nameWithType: RemoteChatTools.RDebugChatStopping
+- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugChatStopping*
   name: RDebugChatStopping
-  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_RDebugChatStopping_
-  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.RemoteChat.RDebugChatStopping
+  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_RemoteChatTools_RDebugChatStopping_
+  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugChatStopping
   isSpec: "True"
-  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RDebugChatStopping
-  nameWithType: RemoteChat.RDebugChatStopping
-- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RDebugMessageFormat
+  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugChatStopping
+  nameWithType: RemoteChatTools.RDebugChatStopping
+- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugMessageFormat
   name: RDebugMessageFormat
-  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_RDebugMessageFormat
-  commentId: P:KS.Kernel.Debugging.RemoteDebug.RemoteChat.RDebugMessageFormat
-  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RDebugMessageFormat
-  nameWithType: RemoteChat.RDebugMessageFormat
-- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RDebugMessageFormat*
+  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_RemoteChatTools_RDebugMessageFormat
+  commentId: P:KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugMessageFormat
+  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugMessageFormat
+  nameWithType: RemoteChatTools.RDebugMessageFormat
+- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugMessageFormat*
   name: RDebugMessageFormat
-  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_RDebugMessageFormat_
-  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.RemoteChat.RDebugMessageFormat
+  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_RemoteChatTools_RDebugMessageFormat_
+  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugMessageFormat
   isSpec: "True"
-  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RDebugMessageFormat
-  nameWithType: RemoteChat.RDebugMessageFormat
-- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.StartRDebugger
+  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugMessageFormat
+  nameWithType: RemoteChatTools.RDebugMessageFormat
+- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.StartRDebugger
   name: StartRDebugger()
-  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_StartRDebugger
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.RemoteChat.StartRDebugger
-  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.StartRDebugger()
-  nameWithType: RemoteChat.StartRDebugger()
-- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.StartRDebugger*
+  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_RemoteChatTools_StartRDebugger
+  commentId: M:KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.StartRDebugger
+  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.StartRDebugger()
+  nameWithType: RemoteChatTools.StartRDebugger()
+- uid: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.StartRDebugger*
   name: StartRDebugger
-  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_StartRDebugger_
-  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.RemoteChat.StartRDebugger
+  href: api/KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html#KS_Kernel_Debugging_RemoteDebug_RemoteChat_RemoteChatTools_StartRDebugger_
+  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.StartRDebugger
   isSpec: "True"
-  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.StartRDebugger
-  nameWithType: RemoteChat.StartRDebugger
+  fullName: KS.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.StartRDebugger
+  nameWithType: RemoteChatTools.StartRDebugger
 - uid: KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice
   name: RemoteDebugDevice
   href: api/KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice.html
