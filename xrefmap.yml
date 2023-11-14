@@ -21771,19 +21771,19 @@ references:
   isSpec: "True"
   fullName: KS.Files.Editors.JsonShell.JsonTools.BeautifyJsonText
   nameWithType: JsonTools.BeautifyJsonText
-- uid: KS.Files.Editors.JsonShell.JsonTools.CloseTextFile
-  name: CloseTextFile()
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_CloseTextFile
-  commentId: M:KS.Files.Editors.JsonShell.JsonTools.CloseTextFile
-  fullName: KS.Files.Editors.JsonShell.JsonTools.CloseTextFile()
-  nameWithType: JsonTools.CloseTextFile()
-- uid: KS.Files.Editors.JsonShell.JsonTools.CloseTextFile*
-  name: CloseTextFile
-  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_CloseTextFile_
-  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.CloseTextFile
+- uid: KS.Files.Editors.JsonShell.JsonTools.CloseJsonFile
+  name: CloseJsonFile()
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_CloseJsonFile
+  commentId: M:KS.Files.Editors.JsonShell.JsonTools.CloseJsonFile
+  fullName: KS.Files.Editors.JsonShell.JsonTools.CloseJsonFile()
+  nameWithType: JsonTools.CloseJsonFile()
+- uid: KS.Files.Editors.JsonShell.JsonTools.CloseJsonFile*
+  name: CloseJsonFile
+  href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_CloseJsonFile_
+  commentId: Overload:KS.Files.Editors.JsonShell.JsonTools.CloseJsonFile
   isSpec: "True"
-  fullName: KS.Files.Editors.JsonShell.JsonTools.CloseTextFile
-  nameWithType: JsonTools.CloseTextFile
+  fullName: KS.Files.Editors.JsonShell.JsonTools.CloseJsonFile
+  nameWithType: JsonTools.CloseJsonFile
 - uid: KS.Files.Editors.JsonShell.JsonTools.DetermineRootType
   name: DetermineRootType()
   href: api/KS.Files.Editors.JsonShell.JsonTools.html#KS_Files_Editors_JsonShell_JsonTools_DetermineRootType
