@@ -1585,46 +1585,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Editors.JsonShell.JsonTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Editors.JsonShell.JsonTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Editors.JsonShell.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Editors.JsonShell.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Editors.SqlEdit.SqlEditTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Editors.SqlEdit.SqlEditTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.Editors.SqlEdit.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.Editors.SqlEdit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Files.Editors.TextEdit.TextEditInteractive.yml",
       "output": {
         ".html": {
@@ -3495,6 +3455,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Text.JsonTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Text.JsonTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Text.Probers.Motd.MalParse.yml",
       "output": {
         ".html": {
@@ -5059,226 +5029,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Shell.Shells.Hex.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Json.JsonShell.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Json.JsonShell.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Json.JsonShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Json.JsonShellCommon.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Json.Presets.JsonDefaultPreset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Json.Presets.JsonDefaultPreset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Json.Presets.JsonPowerLine1Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Json.Presets.JsonPowerLine1Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Json.Presets.JsonPowerLine2Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Json.Presets.JsonPowerLine2Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Json.Presets.JsonPowerLine3Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Json.Presets.JsonPowerLine3Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Json.Presets.JsonPowerLineBG1Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Json.Presets.JsonPowerLineBG1Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Json.Presets.JsonPowerLineBG2Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Json.Presets.JsonPowerLineBG2Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Json.Presets.JsonPowerLineBG3Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Json.Presets.JsonPowerLineBG3Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Json.Presets.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Json.Presets.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Json.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Json.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Sql.Presets.SqlDefaultPreset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Sql.Presets.SqlDefaultPreset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Sql.Presets.SqlPowerLine1Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Sql.Presets.SqlPowerLine1Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Sql.Presets.SqlPowerLine2Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Sql.Presets.SqlPowerLine2Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Sql.Presets.SqlPowerLine3Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Sql.Presets.SqlPowerLine3Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Sql.Presets.SqlPowerLineBG1Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Sql.Presets.SqlPowerLineBG1Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Sql.Presets.SqlPowerLineBG2Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Sql.Presets.SqlPowerLineBG2Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Sql.Presets.SqlPowerLineBG3Preset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Sql.Presets.SqlPowerLineBG3Preset.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Sql.Presets.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Sql.Presets.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Sql.SqlShell.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Sql.SqlShell.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Sql.SqlShellCommon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Sql.SqlShellCommon.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Shell.Shells.Sql.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Shell.Shells.Sql.html"
         }
       },
       "version": ""
