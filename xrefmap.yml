@@ -20757,15 +20757,15 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Sorting.BaseSortingDriver.SortNumbersFloat
   nameWithType: BaseSortingDriver.SortNumbersFloat
-- uid: KS.Drivers.Sorting.BaseSortingDriver.SortNumbersInt128(System.Int64[])
-  name: SortNumbersInt128(long[])
-  href: api/KS.Drivers.Sorting.BaseSortingDriver.html#KS_Drivers_Sorting_BaseSortingDriver_SortNumbersInt128_System_Int64___
-  commentId: M:KS.Drivers.Sorting.BaseSortingDriver.SortNumbersInt128(System.Int64[])
-  name.vb: SortNumbersInt128(Long())
-  fullName: KS.Drivers.Sorting.BaseSortingDriver.SortNumbersInt128(long[])
-  fullName.vb: KS.Drivers.Sorting.BaseSortingDriver.SortNumbersInt128(Long())
-  nameWithType: BaseSortingDriver.SortNumbersInt128(long[])
-  nameWithType.vb: BaseSortingDriver.SortNumbersInt128(Long())
+- uid: KS.Drivers.Sorting.BaseSortingDriver.SortNumbersInt128(System.Int128[])
+  name: SortNumbersInt128(Int128[])
+  href: api/KS.Drivers.Sorting.BaseSortingDriver.html#KS_Drivers_Sorting_BaseSortingDriver_SortNumbersInt128_System_Int128___
+  commentId: M:KS.Drivers.Sorting.BaseSortingDriver.SortNumbersInt128(System.Int128[])
+  name.vb: SortNumbersInt128(Int128())
+  fullName: KS.Drivers.Sorting.BaseSortingDriver.SortNumbersInt128(System.Int128[])
+  fullName.vb: KS.Drivers.Sorting.BaseSortingDriver.SortNumbersInt128(System.Int128())
+  nameWithType: BaseSortingDriver.SortNumbersInt128(Int128[])
+  nameWithType.vb: BaseSortingDriver.SortNumbersInt128(Int128())
 - uid: KS.Drivers.Sorting.BaseSortingDriver.SortNumbersInt128*
   name: SortNumbersInt128
   href: api/KS.Drivers.Sorting.BaseSortingDriver.html#KS_Drivers_Sorting_BaseSortingDriver_SortNumbersInt128_
@@ -20875,15 +20875,15 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Sorting.ISortingDriver.SortNumbersFloat
   nameWithType: ISortingDriver.SortNumbersFloat
-- uid: KS.Drivers.Sorting.ISortingDriver.SortNumbersInt128(System.Int64[])
-  name: SortNumbersInt128(long[])
-  href: api/KS.Drivers.Sorting.ISortingDriver.html#KS_Drivers_Sorting_ISortingDriver_SortNumbersInt128_System_Int64___
-  commentId: M:KS.Drivers.Sorting.ISortingDriver.SortNumbersInt128(System.Int64[])
-  name.vb: SortNumbersInt128(Long())
-  fullName: KS.Drivers.Sorting.ISortingDriver.SortNumbersInt128(long[])
-  fullName.vb: KS.Drivers.Sorting.ISortingDriver.SortNumbersInt128(Long())
-  nameWithType: ISortingDriver.SortNumbersInt128(long[])
-  nameWithType.vb: ISortingDriver.SortNumbersInt128(Long())
+- uid: KS.Drivers.Sorting.ISortingDriver.SortNumbersInt128(System.Int128[])
+  name: SortNumbersInt128(Int128[])
+  href: api/KS.Drivers.Sorting.ISortingDriver.html#KS_Drivers_Sorting_ISortingDriver_SortNumbersInt128_System_Int128___
+  commentId: M:KS.Drivers.Sorting.ISortingDriver.SortNumbersInt128(System.Int128[])
+  name.vb: SortNumbersInt128(Int128())
+  fullName: KS.Drivers.Sorting.ISortingDriver.SortNumbersInt128(System.Int128[])
+  fullName.vb: KS.Drivers.Sorting.ISortingDriver.SortNumbersInt128(System.Int128())
+  nameWithType: ISortingDriver.SortNumbersInt128(Int128[])
+  nameWithType.vb: ISortingDriver.SortNumbersInt128(Int128())
 - uid: KS.Drivers.Sorting.ISortingDriver.SortNumbersInt128*
   name: SortNumbersInt128
   href: api/KS.Drivers.Sorting.ISortingDriver.html#KS_Drivers_Sorting_ISortingDriver_SortNumbersInt128_
@@ -37938,6 +37938,15 @@ references:
   fullName.vb: KS.Misc.Reflection.ArrayTools.SortNumbers(Double())
   nameWithType: ArrayTools.SortNumbers(double[])
   nameWithType.vb: ArrayTools.SortNumbers(Double())
+- uid: KS.Misc.Reflection.ArrayTools.SortNumbers(System.Int128[])
+  name: SortNumbers(Int128[])
+  href: api/KS.Misc.Reflection.ArrayTools.html#KS_Misc_Reflection_ArrayTools_SortNumbers_System_Int128___
+  commentId: M:KS.Misc.Reflection.ArrayTools.SortNumbers(System.Int128[])
+  name.vb: SortNumbers(Int128())
+  fullName: KS.Misc.Reflection.ArrayTools.SortNumbers(System.Int128[])
+  fullName.vb: KS.Misc.Reflection.ArrayTools.SortNumbers(System.Int128())
+  nameWithType: ArrayTools.SortNumbers(Int128[])
+  nameWithType.vb: ArrayTools.SortNumbers(Int128())
 - uid: KS.Misc.Reflection.ArrayTools.SortNumbers(System.Int16[])
   name: SortNumbers(short[])
   href: api/KS.Misc.Reflection.ArrayTools.html#KS_Misc_Reflection_ArrayTools_SortNumbers_System_Int16___
