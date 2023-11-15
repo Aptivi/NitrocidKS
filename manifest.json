@@ -2515,6 +2515,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Extensions.InterAddonTranslations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Extensions.InterAddonTranslations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Extensions.KnownAddons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Extensions.KnownAddons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Extensions.yml",
       "output": {
         ".html": {

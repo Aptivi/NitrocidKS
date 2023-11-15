@@ -32675,6 +32675,24 @@ references:
   commentId: T:KS.Kernel.Extensions.InterAddonTools
   fullName: KS.Kernel.Extensions.InterAddonTools
   nameWithType: InterAddonTools
+- uid: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(KS.Kernel.Extensions.KnownAddons,System.String)
+  name: ExecuteCustomAddonFunction(KnownAddons, string)
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_KS_Kernel_Extensions_KnownAddons_System_String_
+  commentId: M:KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(KS.Kernel.Extensions.KnownAddons,System.String)
+  name.vb: ExecuteCustomAddonFunction(KnownAddons, String)
+  fullName: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(KS.Kernel.Extensions.KnownAddons, string)
+  fullName.vb: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(KS.Kernel.Extensions.KnownAddons, String)
+  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, string)
+  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, String)
+- uid: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(KS.Kernel.Extensions.KnownAddons,System.String,System.Object[])
+  name: ExecuteCustomAddonFunction(KnownAddons, string, params object[])
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_KS_Kernel_Extensions_KnownAddons_System_String_System_Object___
+  commentId: M:KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(KS.Kernel.Extensions.KnownAddons,System.String,System.Object[])
+  name.vb: ExecuteCustomAddonFunction(KnownAddons, String, ParamArray Object())
+  fullName: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(KS.Kernel.Extensions.KnownAddons, string, params object[])
+  fullName.vb: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(KS.Kernel.Extensions.KnownAddons, String, ParamArray Object())
+  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, string, params object[])
+  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, String, ParamArray Object())
 - uid: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String)
   name: ExecuteCustomAddonFunction(string, string)
   href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_
@@ -32700,6 +32718,15 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction
   nameWithType: InterAddonTools.ExecuteCustomAddonFunction
+- uid: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(KS.Kernel.Extensions.KnownAddons,System.String)
+  name: GetCustomAddonFieldValue(KnownAddons, string)
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_KS_Kernel_Extensions_KnownAddons_System_String_
+  commentId: M:KS.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(KS.Kernel.Extensions.KnownAddons,System.String)
+  name.vb: GetCustomAddonFieldValue(KnownAddons, String)
+  fullName: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(KS.Kernel.Extensions.KnownAddons, string)
+  fullName.vb: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(KS.Kernel.Extensions.KnownAddons, String)
+  nameWithType: InterAddonTools.GetCustomAddonFieldValue(KnownAddons, string)
+  nameWithType.vb: InterAddonTools.GetCustomAddonFieldValue(KnownAddons, String)
 - uid: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(System.String,System.String)
   name: GetCustomAddonFieldValue(string, string)
   href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_System_String_System_String_
@@ -32716,6 +32743,15 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue
   nameWithType: InterAddonTools.GetCustomAddonFieldValue
+- uid: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(KS.Kernel.Extensions.KnownAddons,System.String)
+  name: GetCustomAddonPropertyValue(KnownAddons, string)
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_KS_Kernel_Extensions_KnownAddons_System_String_
+  commentId: M:KS.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(KS.Kernel.Extensions.KnownAddons,System.String)
+  name.vb: GetCustomAddonPropertyValue(KnownAddons, String)
+  fullName: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(KS.Kernel.Extensions.KnownAddons, string)
+  fullName.vb: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(KS.Kernel.Extensions.KnownAddons, String)
+  nameWithType: InterAddonTools.GetCustomAddonPropertyValue(KnownAddons, string)
+  nameWithType.vb: InterAddonTools.GetCustomAddonPropertyValue(KnownAddons, String)
 - uid: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(System.String,System.String)
   name: GetCustomAddonPropertyValue(string, string)
   href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_System_String_System_String_
@@ -32732,6 +32768,15 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue
   nameWithType: InterAddonTools.GetCustomAddonPropertyValue
+- uid: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(KS.Kernel.Extensions.KnownAddons,System.String,System.Object)
+  name: SetCustomAddonFieldValue(KnownAddons, string, object)
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_KS_Kernel_Extensions_KnownAddons_System_String_System_Object_
+  commentId: M:KS.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(KS.Kernel.Extensions.KnownAddons,System.String,System.Object)
+  name.vb: SetCustomAddonFieldValue(KnownAddons, String, Object)
+  fullName: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(KS.Kernel.Extensions.KnownAddons, string, object)
+  fullName.vb: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(KS.Kernel.Extensions.KnownAddons, String, Object)
+  nameWithType: InterAddonTools.SetCustomAddonFieldValue(KnownAddons, string, object)
+  nameWithType.vb: InterAddonTools.SetCustomAddonFieldValue(KnownAddons, String, Object)
 - uid: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(System.String,System.String,System.Object)
   name: SetCustomAddonFieldValue(string, string, object)
   href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_System_String_System_String_System_Object_
@@ -32748,6 +32793,15 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue
   nameWithType: InterAddonTools.SetCustomAddonFieldValue
+- uid: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(KS.Kernel.Extensions.KnownAddons,System.String,System.Object)
+  name: SetCustomAddonPropertyValue(KnownAddons, string, object)
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_KS_Kernel_Extensions_KnownAddons_System_String_System_Object_
+  commentId: M:KS.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(KS.Kernel.Extensions.KnownAddons,System.String,System.Object)
+  name.vb: SetCustomAddonPropertyValue(KnownAddons, String, Object)
+  fullName: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(KS.Kernel.Extensions.KnownAddons, string, object)
+  fullName.vb: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(KS.Kernel.Extensions.KnownAddons, String, Object)
+  nameWithType: InterAddonTools.SetCustomAddonPropertyValue(KnownAddons, string, object)
+  nameWithType.vb: InterAddonTools.SetCustomAddonPropertyValue(KnownAddons, String, Object)
 - uid: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(System.String,System.String,System.Object)
   name: SetCustomAddonPropertyValue(string, string, object)
   href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_System_String_System_String_System_Object_
@@ -32764,6 +32818,242 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue
   nameWithType: InterAddonTools.SetCustomAddonPropertyValue
+- uid: KS.Kernel.Extensions.InterAddonTranslations
+  name: InterAddonTranslations
+  href: api/KS.Kernel.Extensions.InterAddonTranslations.html
+  commentId: T:KS.Kernel.Extensions.InterAddonTranslations
+  fullName: KS.Kernel.Extensions.InterAddonTranslations
+  nameWithType: InterAddonTranslations
+- uid: KS.Kernel.Extensions.InterAddonTranslations.GetAddonName(KS.Kernel.Extensions.KnownAddons)
+  name: GetAddonName(KnownAddons)
+  href: api/KS.Kernel.Extensions.InterAddonTranslations.html#KS_Kernel_Extensions_InterAddonTranslations_GetAddonName_KS_Kernel_Extensions_KnownAddons_
+  commentId: M:KS.Kernel.Extensions.InterAddonTranslations.GetAddonName(KS.Kernel.Extensions.KnownAddons)
+  fullName: KS.Kernel.Extensions.InterAddonTranslations.GetAddonName(KS.Kernel.Extensions.KnownAddons)
+  nameWithType: InterAddonTranslations.GetAddonName(KnownAddons)
+- uid: KS.Kernel.Extensions.InterAddonTranslations.GetAddonName*
+  name: GetAddonName
+  href: api/KS.Kernel.Extensions.InterAddonTranslations.html#KS_Kernel_Extensions_InterAddonTranslations_GetAddonName_
+  commentId: Overload:KS.Kernel.Extensions.InterAddonTranslations.GetAddonName
+  isSpec: "True"
+  fullName: KS.Kernel.Extensions.InterAddonTranslations.GetAddonName
+  nameWithType: InterAddonTranslations.GetAddonName
+- uid: KS.Kernel.Extensions.InterAddonTranslations.GetLocalizedAddonName(KS.Kernel.Extensions.KnownAddons)
+  name: GetLocalizedAddonName(KnownAddons)
+  href: api/KS.Kernel.Extensions.InterAddonTranslations.html#KS_Kernel_Extensions_InterAddonTranslations_GetLocalizedAddonName_KS_Kernel_Extensions_KnownAddons_
+  commentId: M:KS.Kernel.Extensions.InterAddonTranslations.GetLocalizedAddonName(KS.Kernel.Extensions.KnownAddons)
+  fullName: KS.Kernel.Extensions.InterAddonTranslations.GetLocalizedAddonName(KS.Kernel.Extensions.KnownAddons)
+  nameWithType: InterAddonTranslations.GetLocalizedAddonName(KnownAddons)
+- uid: KS.Kernel.Extensions.InterAddonTranslations.GetLocalizedAddonName*
+  name: GetLocalizedAddonName
+  href: api/KS.Kernel.Extensions.InterAddonTranslations.html#KS_Kernel_Extensions_InterAddonTranslations_GetLocalizedAddonName_
+  commentId: Overload:KS.Kernel.Extensions.InterAddonTranslations.GetLocalizedAddonName
+  isSpec: "True"
+  fullName: KS.Kernel.Extensions.InterAddonTranslations.GetLocalizedAddonName
+  nameWithType: InterAddonTranslations.GetLocalizedAddonName
+- uid: KS.Kernel.Extensions.KnownAddons
+  name: KnownAddons
+  href: api/KS.Kernel.Extensions.KnownAddons.html
+  commentId: T:KS.Kernel.Extensions.KnownAddons
+  fullName: KS.Kernel.Extensions.KnownAddons
+  nameWithType: KnownAddons
+- uid: KS.Kernel.Extensions.KnownAddons.AddonLanguagePacks
+  name: AddonLanguagePacks
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_AddonLanguagePacks
+  commentId: F:KS.Kernel.Extensions.KnownAddons.AddonLanguagePacks
+  fullName: KS.Kernel.Extensions.KnownAddons.AddonLanguagePacks
+  nameWithType: KnownAddons.AddonLanguagePacks
+- uid: KS.Kernel.Extensions.KnownAddons.AddonScreensaverPacks
+  name: AddonScreensaverPacks
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_AddonScreensaverPacks
+  commentId: F:KS.Kernel.Extensions.KnownAddons.AddonScreensaverPacks
+  fullName: KS.Kernel.Extensions.KnownAddons.AddonScreensaverPacks
+  nameWithType: KnownAddons.AddonScreensaverPacks
+- uid: KS.Kernel.Extensions.KnownAddons.AddonSplashPacks
+  name: AddonSplashPacks
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_AddonSplashPacks
+  commentId: F:KS.Kernel.Extensions.KnownAddons.AddonSplashPacks
+  fullName: KS.Kernel.Extensions.KnownAddons.AddonSplashPacks
+  nameWithType: KnownAddons.AddonSplashPacks
+- uid: KS.Kernel.Extensions.KnownAddons.AddonThemePacks
+  name: AddonThemePacks
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_AddonThemePacks
+  commentId: F:KS.Kernel.Extensions.KnownAddons.AddonThemePacks
+  fullName: KS.Kernel.Extensions.KnownAddons.AddonThemePacks
+  nameWithType: KnownAddons.AddonThemePacks
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasAmusements
+  name: ExtrasAmusements
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasAmusements
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasAmusements
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasAmusements
+  nameWithType: KnownAddons.ExtrasAmusements
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasArchiveShell
+  name: ExtrasArchiveShell
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasArchiveShell
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasArchiveShell
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasArchiveShell
+  nameWithType: KnownAddons.ExtrasArchiveShell
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasBassBoom
+  name: ExtrasBassBoom
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasBassBoom
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasBassBoom
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasBassBoom
+  nameWithType: KnownAddons.ExtrasBassBoom
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasCaffeine
+  name: ExtrasCaffeine
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasCaffeine
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasCaffeine
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasCaffeine
+  nameWithType: KnownAddons.ExtrasCaffeine
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasCalculators
+  name: ExtrasCalculators
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasCalculators
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasCalculators
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasCalculators
+  nameWithType: KnownAddons.ExtrasCalculators
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasCalendar
+  name: ExtrasCalendar
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasCalendar
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasCalendar
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasCalendar
+  nameWithType: KnownAddons.ExtrasCalendar
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasChatGpt
+  name: ExtrasChatGpt
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasChatGpt
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasChatGpt
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasChatGpt
+  nameWithType: KnownAddons.ExtrasChatGpt
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasColorConvert
+  name: ExtrasColorConvert
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasColorConvert
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasColorConvert
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasColorConvert
+  nameWithType: KnownAddons.ExtrasColorConvert
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasContacts
+  name: ExtrasContacts
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasContacts
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasContacts
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasContacts
+  nameWithType: KnownAddons.ExtrasContacts
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasDictionary
+  name: ExtrasDictionary
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasDictionary
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasDictionary
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasDictionary
+  nameWithType: KnownAddons.ExtrasDictionary
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasForecast
+  name: ExtrasForecast
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasForecast
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasForecast
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasForecast
+  nameWithType: KnownAddons.ExtrasForecast
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasFtpShell
+  name: ExtrasFtpShell
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasFtpShell
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasFtpShell
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasFtpShell
+  nameWithType: KnownAddons.ExtrasFtpShell
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasGitShell
+  name: ExtrasGitShell
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasGitShell
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasGitShell
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasGitShell
+  nameWithType: KnownAddons.ExtrasGitShell
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasHttpShell
+  name: ExtrasHttpShell
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasHttpShell
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasHttpShell
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasHttpShell
+  nameWithType: KnownAddons.ExtrasHttpShell
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasInternetRadioInfo
+  name: ExtrasInternetRadioInfo
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasInternetRadioInfo
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasInternetRadioInfo
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasInternetRadioInfo
+  nameWithType: KnownAddons.ExtrasInternetRadioInfo
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasLanguageStudio
+  name: ExtrasLanguageStudio
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasLanguageStudio
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasLanguageStudio
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasLanguageStudio
+  nameWithType: KnownAddons.ExtrasLanguageStudio
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasMailShell
+  name: ExtrasMailShell
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasMailShell
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasMailShell
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasMailShell
+  nameWithType: KnownAddons.ExtrasMailShell
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasNameGen
+  name: ExtrasNameGen
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasNameGen
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasNameGen
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasNameGen
+  nameWithType: KnownAddons.ExtrasNameGen
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasNotes
+  name: ExtrasNotes
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasNotes
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasNotes
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasNotes
+  nameWithType: KnownAddons.ExtrasNotes
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasRetroKS
+  name: ExtrasRetroKS
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasRetroKS
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasRetroKS
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasRetroKS
+  nameWithType: KnownAddons.ExtrasRetroKS
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasRssShell
+  name: ExtrasRssShell
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasRssShell
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasRssShell
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasRssShell
+  nameWithType: KnownAddons.ExtrasRssShell
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasSftpShell
+  name: ExtrasSftpShell
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasSftpShell
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasSftpShell
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasSftpShell
+  nameWithType: KnownAddons.ExtrasSftpShell
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasThemeStudio
+  name: ExtrasThemeStudio
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasThemeStudio
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasThemeStudio
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasThemeStudio
+  nameWithType: KnownAddons.ExtrasThemeStudio
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasTimeInfo
+  name: ExtrasTimeInfo
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasTimeInfo
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasTimeInfo
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasTimeInfo
+  nameWithType: KnownAddons.ExtrasTimeInfo
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasTimers
+  name: ExtrasTimers
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasTimers
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasTimers
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasTimers
+  nameWithType: KnownAddons.ExtrasTimers
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasTips
+  name: ExtrasTips
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasTips
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasTips
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasTips
+  nameWithType: KnownAddons.ExtrasTips
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasToDoList
+  name: ExtrasToDoList
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasToDoList
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasToDoList
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasToDoList
+  nameWithType: KnownAddons.ExtrasToDoList
+- uid: KS.Kernel.Extensions.KnownAddons.ExtrasUnitConv
+  name: ExtrasUnitConv
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_ExtrasUnitConv
+  commentId: F:KS.Kernel.Extensions.KnownAddons.ExtrasUnitConv
+  fullName: KS.Kernel.Extensions.KnownAddons.ExtrasUnitConv
+  nameWithType: KnownAddons.ExtrasUnitConv
+- uid: KS.Kernel.Extensions.KnownAddons.LegacyInxiNet
+  name: LegacyInxiNet
+  href: api/KS.Kernel.Extensions.KnownAddons.html#KS_Kernel_Extensions_KnownAddons_LegacyInxiNet
+  commentId: F:KS.Kernel.Extensions.KnownAddons.LegacyInxiNet
+  fullName: KS.Kernel.Extensions.KnownAddons.LegacyInxiNet
+  nameWithType: KnownAddons.LegacyInxiNet
 - uid: KS.Kernel.Hardware
   name: KS.Kernel.Hardware
   href: api/KS.Kernel.Hardware.html
