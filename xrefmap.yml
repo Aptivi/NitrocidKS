@@ -308,6 +308,22 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Buffered.Screen.AddBufferedPart
   nameWithType: Screen.AddBufferedPart
+- uid: KS.ConsoleBase.Buffered.Screen.EditBufferedPart(System.Int32,KS.ConsoleBase.Buffered.ScreenPart)
+  name: EditBufferedPart(int, ScreenPart)
+  href: api/KS.ConsoleBase.Buffered.Screen.html#KS_ConsoleBase_Buffered_Screen_EditBufferedPart_System_Int32_KS_ConsoleBase_Buffered_ScreenPart_
+  commentId: M:KS.ConsoleBase.Buffered.Screen.EditBufferedPart(System.Int32,KS.ConsoleBase.Buffered.ScreenPart)
+  name.vb: EditBufferedPart(Integer, ScreenPart)
+  fullName: KS.ConsoleBase.Buffered.Screen.EditBufferedPart(int, KS.ConsoleBase.Buffered.ScreenPart)
+  fullName.vb: KS.ConsoleBase.Buffered.Screen.EditBufferedPart(Integer, KS.ConsoleBase.Buffered.ScreenPart)
+  nameWithType: Screen.EditBufferedPart(int, ScreenPart)
+  nameWithType.vb: Screen.EditBufferedPart(Integer, ScreenPart)
+- uid: KS.ConsoleBase.Buffered.Screen.EditBufferedPart*
+  name: EditBufferedPart
+  href: api/KS.ConsoleBase.Buffered.Screen.html#KS_ConsoleBase_Buffered_Screen_EditBufferedPart_
+  commentId: Overload:KS.ConsoleBase.Buffered.Screen.EditBufferedPart
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Buffered.Screen.EditBufferedPart
+  nameWithType: Screen.EditBufferedPart
 - uid: KS.ConsoleBase.Buffered.Screen.GetBuffer
   name: GetBuffer()
   href: api/KS.ConsoleBase.Buffered.Screen.html#KS_ConsoleBase_Buffered_Screen_GetBuffer
@@ -39214,12 +39230,15 @@ references:
   commentId: T:KS.Misc.Splash.BaseSplash
   fullName: KS.Misc.Splash.BaseSplash
   nameWithType: BaseSplash
-- uid: KS.Misc.Splash.BaseSplash.Closing(KS.Misc.Splash.SplashContext)
-  name: Closing(SplashContext)
-  href: api/KS.Misc.Splash.BaseSplash.html#KS_Misc_Splash_BaseSplash_Closing_KS_Misc_Splash_SplashContext_
-  commentId: M:KS.Misc.Splash.BaseSplash.Closing(KS.Misc.Splash.SplashContext)
-  fullName: KS.Misc.Splash.BaseSplash.Closing(KS.Misc.Splash.SplashContext)
-  nameWithType: BaseSplash.Closing(SplashContext)
+- uid: KS.Misc.Splash.BaseSplash.Closing(KS.Misc.Splash.SplashContext,System.Boolean@)
+  name: Closing(SplashContext, out bool)
+  href: api/KS.Misc.Splash.BaseSplash.html#KS_Misc_Splash_BaseSplash_Closing_KS_Misc_Splash_SplashContext_System_Boolean__
+  commentId: M:KS.Misc.Splash.BaseSplash.Closing(KS.Misc.Splash.SplashContext,System.Boolean@)
+  name.vb: Closing(SplashContext, Boolean)
+  fullName: KS.Misc.Splash.BaseSplash.Closing(KS.Misc.Splash.SplashContext, out bool)
+  fullName.vb: KS.Misc.Splash.BaseSplash.Closing(KS.Misc.Splash.SplashContext, Boolean)
+  nameWithType: BaseSplash.Closing(SplashContext, out bool)
+  nameWithType.vb: BaseSplash.Closing(SplashContext, Boolean)
 - uid: KS.Misc.Splash.BaseSplash.Closing*
   name: Closing
   href: api/KS.Misc.Splash.BaseSplash.html#KS_Misc_Splash_BaseSplash_Closing_
@@ -39346,12 +39365,15 @@ references:
   commentId: T:KS.Misc.Splash.ISplash
   fullName: KS.Misc.Splash.ISplash
   nameWithType: ISplash
-- uid: KS.Misc.Splash.ISplash.Closing(KS.Misc.Splash.SplashContext)
-  name: Closing(SplashContext)
-  href: api/KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_Closing_KS_Misc_Splash_SplashContext_
-  commentId: M:KS.Misc.Splash.ISplash.Closing(KS.Misc.Splash.SplashContext)
-  fullName: KS.Misc.Splash.ISplash.Closing(KS.Misc.Splash.SplashContext)
-  nameWithType: ISplash.Closing(SplashContext)
+- uid: KS.Misc.Splash.ISplash.Closing(KS.Misc.Splash.SplashContext,System.Boolean@)
+  name: Closing(SplashContext, out bool)
+  href: api/KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_Closing_KS_Misc_Splash_SplashContext_System_Boolean__
+  commentId: M:KS.Misc.Splash.ISplash.Closing(KS.Misc.Splash.SplashContext,System.Boolean@)
+  name.vb: Closing(SplashContext, Boolean)
+  fullName: KS.Misc.Splash.ISplash.Closing(KS.Misc.Splash.SplashContext, out bool)
+  fullName.vb: KS.Misc.Splash.ISplash.Closing(KS.Misc.Splash.SplashContext, Boolean)
+  nameWithType: ISplash.Closing(SplashContext, out bool)
+  nameWithType.vb: ISplash.Closing(SplashContext, Boolean)
 - uid: KS.Misc.Splash.ISplash.Closing*
   name: Closing
   href: api/KS.Misc.Splash.ISplash.html#KS_Misc_Splash_ISplash_Closing_
