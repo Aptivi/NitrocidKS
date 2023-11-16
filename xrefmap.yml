@@ -32244,6 +32244,54 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue
   nameWithType: InterAddonTools.GetCustomAddonPropertyValue
+- uid: KS.Kernel.Extensions.InterAddonTools.ListAvailableFields(System.String)
+  name: ListAvailableFields(string)
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_
+  commentId: M:KS.Kernel.Extensions.InterAddonTools.ListAvailableFields(System.String)
+  name.vb: ListAvailableFields(String)
+  fullName: KS.Kernel.Extensions.InterAddonTools.ListAvailableFields(string)
+  fullName.vb: KS.Kernel.Extensions.InterAddonTools.ListAvailableFields(String)
+  nameWithType: InterAddonTools.ListAvailableFields(string)
+  nameWithType.vb: InterAddonTools.ListAvailableFields(String)
+- uid: KS.Kernel.Extensions.InterAddonTools.ListAvailableFields*
+  name: ListAvailableFields
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_ListAvailableFields_
+  commentId: Overload:KS.Kernel.Extensions.InterAddonTools.ListAvailableFields
+  isSpec: "True"
+  fullName: KS.Kernel.Extensions.InterAddonTools.ListAvailableFields
+  nameWithType: InterAddonTools.ListAvailableFields
+- uid: KS.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(System.String)
+  name: ListAvailableFunctions(string)
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_
+  commentId: M:KS.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(System.String)
+  name.vb: ListAvailableFunctions(String)
+  fullName: KS.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(string)
+  fullName.vb: KS.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(String)
+  nameWithType: InterAddonTools.ListAvailableFunctions(string)
+  nameWithType.vb: InterAddonTools.ListAvailableFunctions(String)
+- uid: KS.Kernel.Extensions.InterAddonTools.ListAvailableFunctions*
+  name: ListAvailableFunctions
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_
+  commentId: Overload:KS.Kernel.Extensions.InterAddonTools.ListAvailableFunctions
+  isSpec: "True"
+  fullName: KS.Kernel.Extensions.InterAddonTools.ListAvailableFunctions
+  nameWithType: InterAddonTools.ListAvailableFunctions
+- uid: KS.Kernel.Extensions.InterAddonTools.ListAvailableProperties(System.String)
+  name: ListAvailableProperties(string)
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_
+  commentId: M:KS.Kernel.Extensions.InterAddonTools.ListAvailableProperties(System.String)
+  name.vb: ListAvailableProperties(String)
+  fullName: KS.Kernel.Extensions.InterAddonTools.ListAvailableProperties(string)
+  fullName.vb: KS.Kernel.Extensions.InterAddonTools.ListAvailableProperties(String)
+  nameWithType: InterAddonTools.ListAvailableProperties(string)
+  nameWithType.vb: InterAddonTools.ListAvailableProperties(String)
+- uid: KS.Kernel.Extensions.InterAddonTools.ListAvailableProperties*
+  name: ListAvailableProperties
+  href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_ListAvailableProperties_
+  commentId: Overload:KS.Kernel.Extensions.InterAddonTools.ListAvailableProperties
+  isSpec: "True"
+  fullName: KS.Kernel.Extensions.InterAddonTools.ListAvailableProperties
+  nameWithType: InterAddonTools.ListAvailableProperties
 - uid: KS.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(KS.Kernel.Extensions.KnownAddons,System.String,System.Object)
   name: SetCustomAddonFieldValue(KnownAddons, string, object)
   href: api/KS.Kernel.Extensions.InterAddonTools.html#KS_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_KS_Kernel_Extensions_KnownAddons_System_String_System_Object_
@@ -41134,6 +41182,54 @@ references:
   isSpec: "True"
   fullName: KS.Modifications.Communication.InterModTools.GetCustomModPropertyValue
   nameWithType: InterModTools.GetCustomModPropertyValue
+- uid: KS.Modifications.Communication.InterModTools.ListAvailableFields(System.String)
+  name: ListAvailableFields(string)
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_ListAvailableFields_System_String_
+  commentId: M:KS.Modifications.Communication.InterModTools.ListAvailableFields(System.String)
+  name.vb: ListAvailableFields(String)
+  fullName: KS.Modifications.Communication.InterModTools.ListAvailableFields(string)
+  fullName.vb: KS.Modifications.Communication.InterModTools.ListAvailableFields(String)
+  nameWithType: InterModTools.ListAvailableFields(string)
+  nameWithType.vb: InterModTools.ListAvailableFields(String)
+- uid: KS.Modifications.Communication.InterModTools.ListAvailableFields*
+  name: ListAvailableFields
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_ListAvailableFields_
+  commentId: Overload:KS.Modifications.Communication.InterModTools.ListAvailableFields
+  isSpec: "True"
+  fullName: KS.Modifications.Communication.InterModTools.ListAvailableFields
+  nameWithType: InterModTools.ListAvailableFields
+- uid: KS.Modifications.Communication.InterModTools.ListAvailableFunctions(System.String)
+  name: ListAvailableFunctions(string)
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_ListAvailableFunctions_System_String_
+  commentId: M:KS.Modifications.Communication.InterModTools.ListAvailableFunctions(System.String)
+  name.vb: ListAvailableFunctions(String)
+  fullName: KS.Modifications.Communication.InterModTools.ListAvailableFunctions(string)
+  fullName.vb: KS.Modifications.Communication.InterModTools.ListAvailableFunctions(String)
+  nameWithType: InterModTools.ListAvailableFunctions(string)
+  nameWithType.vb: InterModTools.ListAvailableFunctions(String)
+- uid: KS.Modifications.Communication.InterModTools.ListAvailableFunctions*
+  name: ListAvailableFunctions
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_ListAvailableFunctions_
+  commentId: Overload:KS.Modifications.Communication.InterModTools.ListAvailableFunctions
+  isSpec: "True"
+  fullName: KS.Modifications.Communication.InterModTools.ListAvailableFunctions
+  nameWithType: InterModTools.ListAvailableFunctions
+- uid: KS.Modifications.Communication.InterModTools.ListAvailableProperties(System.String)
+  name: ListAvailableProperties(string)
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_ListAvailableProperties_System_String_
+  commentId: M:KS.Modifications.Communication.InterModTools.ListAvailableProperties(System.String)
+  name.vb: ListAvailableProperties(String)
+  fullName: KS.Modifications.Communication.InterModTools.ListAvailableProperties(string)
+  fullName.vb: KS.Modifications.Communication.InterModTools.ListAvailableProperties(String)
+  nameWithType: InterModTools.ListAvailableProperties(string)
+  nameWithType.vb: InterModTools.ListAvailableProperties(String)
+- uid: KS.Modifications.Communication.InterModTools.ListAvailableProperties*
+  name: ListAvailableProperties
+  href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_ListAvailableProperties_
+  commentId: Overload:KS.Modifications.Communication.InterModTools.ListAvailableProperties
+  isSpec: "True"
+  fullName: KS.Modifications.Communication.InterModTools.ListAvailableProperties
+  nameWithType: InterModTools.ListAvailableProperties
 - uid: KS.Modifications.Communication.InterModTools.SetCustomModFieldValue(System.String,System.String,System.Object)
   name: SetCustomModFieldValue(string, string, object)
   href: api/KS.Modifications.Communication.InterModTools.html#KS_Modifications_Communication_InterModTools_SetCustomModFieldValue_System_String_System_String_System_Object_
