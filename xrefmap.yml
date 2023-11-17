@@ -31725,6 +31725,12 @@ references:
   commentId: F:KS.Kernel.Exceptions.KernelExceptionType.InvalidPlaceholderAction
   fullName: KS.Kernel.Exceptions.KernelExceptionType.InvalidPlaceholderAction
   nameWithType: KernelExceptionType.InvalidPlaceholderAction
+- uid: KS.Kernel.Exceptions.KernelExceptionType.Journaling
+  name: Journaling
+  href: api/KS.Kernel.Exceptions.KernelExceptionType.html#KS_Kernel_Exceptions_KernelExceptionType_Journaling
+  commentId: F:KS.Kernel.Exceptions.KernelExceptionType.Journaling
+  fullName: KS.Kernel.Exceptions.KernelExceptionType.Journaling
+  nameWithType: KernelExceptionType.Journaling
 - uid: KS.Kernel.Exceptions.KernelExceptionType.JsonEditor
   name: JsonEditor
   href: api/KS.Kernel.Exceptions.KernelExceptionType.html#KS_Kernel_Exceptions_KernelExceptionType_JsonEditor
@@ -32739,6 +32745,15 @@ references:
   commentId: M:KS.Kernel.Journaling.JournalManager.GetJournalEntries
   fullName: KS.Kernel.Journaling.JournalManager.GetJournalEntries()
   nameWithType: JournalManager.GetJournalEntries()
+- uid: KS.Kernel.Journaling.JournalManager.GetJournalEntries(System.Int32)
+  name: GetJournalEntries(int)
+  href: api/KS.Kernel.Journaling.JournalManager.html#KS_Kernel_Journaling_JournalManager_GetJournalEntries_System_Int32_
+  commentId: M:KS.Kernel.Journaling.JournalManager.GetJournalEntries(System.Int32)
+  name.vb: GetJournalEntries(Integer)
+  fullName: KS.Kernel.Journaling.JournalManager.GetJournalEntries(int)
+  fullName.vb: KS.Kernel.Journaling.JournalManager.GetJournalEntries(Integer)
+  nameWithType: JournalManager.GetJournalEntries(int)
+  nameWithType.vb: JournalManager.GetJournalEntries(Integer)
 - uid: KS.Kernel.Journaling.JournalManager.GetJournalEntries*
   name: GetJournalEntries
   href: api/KS.Kernel.Journaling.JournalManager.html#KS_Kernel_Journaling_JournalManager_GetJournalEntries_
@@ -32752,6 +32767,15 @@ references:
   commentId: M:KS.Kernel.Journaling.JournalManager.PrintJournalLog
   fullName: KS.Kernel.Journaling.JournalManager.PrintJournalLog()
   nameWithType: JournalManager.PrintJournalLog()
+- uid: KS.Kernel.Journaling.JournalManager.PrintJournalLog(KS.Kernel.Journaling.JournalEntry[])
+  name: PrintJournalLog(JournalEntry[])
+  href: api/KS.Kernel.Journaling.JournalManager.html#KS_Kernel_Journaling_JournalManager_PrintJournalLog_KS_Kernel_Journaling_JournalEntry___
+  commentId: M:KS.Kernel.Journaling.JournalManager.PrintJournalLog(KS.Kernel.Journaling.JournalEntry[])
+  name.vb: PrintJournalLog(JournalEntry())
+  fullName: KS.Kernel.Journaling.JournalManager.PrintJournalLog(KS.Kernel.Journaling.JournalEntry[])
+  fullName.vb: KS.Kernel.Journaling.JournalManager.PrintJournalLog(KS.Kernel.Journaling.JournalEntry())
+  nameWithType: JournalManager.PrintJournalLog(JournalEntry[])
+  nameWithType.vb: JournalManager.PrintJournalLog(JournalEntry())
 - uid: KS.Kernel.Journaling.JournalManager.PrintJournalLog*
   name: PrintJournalLog
   href: api/KS.Kernel.Journaling.JournalManager.html#KS_Kernel_Journaling_JournalManager_PrintJournalLog_
