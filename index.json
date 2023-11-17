@@ -1682,7 +1682,7 @@
   "api/KS.Misc.Splash.SplashContext.html": {
     "href": "api/KS.Misc.Splash.SplashContext.html",
     "title": "Enum SplashContext | Nitrocid KS API - Aptivi",
-    "keywords": "Enum SplashContext Context of the splash Namespace: KS.Misc.Splash Assembly: Nitrocid.dll Syntax public enum SplashContext Fields Name Description Preboot The kernel is on the preboot stage Showcase The kernel is showcasing a splash screen ShuttingDown The kernel is shutting down StartingUp The kernel is starting up"
+    "keywords": "Enum SplashContext Context of the splash Namespace: KS.Misc.Splash Assembly: Nitrocid.dll Syntax public enum SplashContext Fields Name Description Preboot The kernel is on the preboot stage Rebooting The kernel is rebooting Showcase The kernel is showcasing a splash screen ShuttingDown The kernel is shutting down StartingUp The kernel is starting up"
   },
   "api/KS.Misc.Splash.SplashInfo.html": {
     "href": "api/KS.Misc.Splash.SplashInfo.html",
