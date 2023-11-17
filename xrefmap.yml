@@ -29310,6 +29310,40 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Debugging.DebugCheck.AssertFail
   nameWithType: DebugCheck.AssertFail
+- uid: KS.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean)
+  name: AssertNot(bool)
+  href: api/KS.Kernel.Debugging.DebugCheck.html#KS_Kernel_Debugging_DebugCheck_AssertNot_System_Boolean_
+  commentId: M:KS.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean)
+  name.vb: AssertNot(Boolean)
+  fullName: KS.Kernel.Debugging.DebugCheck.AssertNot(bool)
+  fullName.vb: KS.Kernel.Debugging.DebugCheck.AssertNot(Boolean)
+  nameWithType: DebugCheck.AssertNot(bool)
+  nameWithType.vb: DebugCheck.AssertNot(Boolean)
+- uid: KS.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean,System.String)
+  name: AssertNot(bool, string)
+  href: api/KS.Kernel.Debugging.DebugCheck.html#KS_Kernel_Debugging_DebugCheck_AssertNot_System_Boolean_System_String_
+  commentId: M:KS.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean,System.String)
+  name.vb: AssertNot(Boolean, String)
+  fullName: KS.Kernel.Debugging.DebugCheck.AssertNot(bool, string)
+  fullName.vb: KS.Kernel.Debugging.DebugCheck.AssertNot(Boolean, String)
+  nameWithType: DebugCheck.AssertNot(bool, string)
+  nameWithType.vb: DebugCheck.AssertNot(Boolean, String)
+- uid: KS.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean,System.String,System.Object[])
+  name: AssertNot(bool, string, params object[])
+  href: api/KS.Kernel.Debugging.DebugCheck.html#KS_Kernel_Debugging_DebugCheck_AssertNot_System_Boolean_System_String_System_Object___
+  commentId: M:KS.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean,System.String,System.Object[])
+  name.vb: AssertNot(Boolean, String, ParamArray Object())
+  fullName: KS.Kernel.Debugging.DebugCheck.AssertNot(bool, string, params object[])
+  fullName.vb: KS.Kernel.Debugging.DebugCheck.AssertNot(Boolean, String, ParamArray Object())
+  nameWithType: DebugCheck.AssertNot(bool, string, params object[])
+  nameWithType.vb: DebugCheck.AssertNot(Boolean, String, ParamArray Object())
+- uid: KS.Kernel.Debugging.DebugCheck.AssertNot*
+  name: AssertNot
+  href: api/KS.Kernel.Debugging.DebugCheck.html#KS_Kernel_Debugging_DebugCheck_AssertNot_
+  commentId: Overload:KS.Kernel.Debugging.DebugCheck.AssertNot
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.DebugCheck.AssertNot
+  nameWithType: DebugCheck.AssertNot
 - uid: KS.Kernel.Debugging.DebugCheck.AssertNotNull*
   name: AssertNotNull
   href: api/KS.Kernel.Debugging.DebugCheck.html#KS_Kernel_Debugging_DebugCheck_AssertNotNull_
