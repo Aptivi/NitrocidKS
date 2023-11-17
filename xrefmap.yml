@@ -45754,6 +45754,58 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Help.HelpPrint.ShowHelp
   nameWithType: HelpPrint.ShowHelp
+- uid: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(KS.Shell.ShellBase.Shells.ShellType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name: ShowHelpExtended(ShellType, bool, bool, bool, bool, bool, bool)
+  href: api/KS.Shell.ShellBase.Help.HelpPrint.html#KS_Shell_ShellBase_Help_HelpPrint_ShowHelpExtended_KS_Shell_ShellBase_Shells_ShellType_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(KS.Shell.ShellBase.Shells.ShellType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name.vb: ShowHelpExtended(ShellType, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(KS.Shell.ShellBase.Shells.ShellType, bool, bool, bool, bool, bool, bool)
+  fullName.vb: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(KS.Shell.ShellBase.Shells.ShellType, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  nameWithType: HelpPrint.ShowHelpExtended(ShellType, bool, bool, bool, bool, bool, bool)
+  nameWithType.vb: HelpPrint.ShowHelpExtended(ShellType, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name: ShowHelpExtended(bool, bool, bool, bool, bool, bool)
+  href: api/KS.Shell.ShellBase.Help.HelpPrint.html#KS_Shell_ShellBase_Help_HelpPrint_ShowHelpExtended_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name.vb: ShowHelpExtended(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(bool, bool, bool, bool, bool, bool)
+  fullName.vb: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  nameWithType: HelpPrint.ShowHelpExtended(bool, bool, bool, bool, bool, bool)
+  nameWithType.vb: HelpPrint.ShowHelpExtended(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(System.String,KS.Shell.ShellBase.Shells.ShellType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name: ShowHelpExtended(string, ShellType, bool, bool, bool, bool, bool, bool)
+  href: api/KS.Shell.ShellBase.Help.HelpPrint.html#KS_Shell_ShellBase_Help_HelpPrint_ShowHelpExtended_System_String_KS_Shell_ShellBase_Shells_ShellType_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(System.String,KS.Shell.ShellBase.Shells.ShellType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name.vb: ShowHelpExtended(String, ShellType, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(string, KS.Shell.ShellBase.Shells.ShellType, bool, bool, bool, bool, bool, bool)
+  fullName.vb: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(String, KS.Shell.ShellBase.Shells.ShellType, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  nameWithType: HelpPrint.ShowHelpExtended(string, ShellType, bool, bool, bool, bool, bool, bool)
+  nameWithType.vb: HelpPrint.ShowHelpExtended(String, ShellType, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name: ShowHelpExtended(string, bool, bool, bool, bool, bool, bool)
+  href: api/KS.Shell.ShellBase.Help.HelpPrint.html#KS_Shell_ShellBase_Help_HelpPrint_ShowHelpExtended_System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name.vb: ShowHelpExtended(String, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(string, bool, bool, bool, bool, bool, bool)
+  fullName.vb: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(String, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  nameWithType: HelpPrint.ShowHelpExtended(string, bool, bool, bool, bool, bool, bool)
+  nameWithType.vb: HelpPrint.ShowHelpExtended(String, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name: ShowHelpExtended(string, string, bool, bool, bool, bool, bool, bool)
+  href: api/KS.Shell.ShellBase.Help.HelpPrint.html#KS_Shell_ShellBase_Help_HelpPrint_ShowHelpExtended_System_String_System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name.vb: ShowHelpExtended(String, String, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(string, string, bool, bool, bool, bool, bool, bool)
+  fullName.vb: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended(String, String, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  nameWithType: HelpPrint.ShowHelpExtended(string, string, bool, bool, bool, bool, bool, bool)
+  nameWithType.vb: HelpPrint.ShowHelpExtended(String, String, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended*
+  name: ShowHelpExtended
+  href: api/KS.Shell.ShellBase.Help.HelpPrint.html#KS_Shell_ShellBase_Help_HelpPrint_ShowHelpExtended_
+  commentId: Overload:KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Help.HelpPrint.ShowHelpExtended
+  nameWithType: HelpPrint.ShowHelpExtended
 - uid: KS.Shell.ShellBase.Scripting
   name: KS.Shell.ShellBase.Scripting
   href: api/KS.Shell.ShellBase.Scripting.html
