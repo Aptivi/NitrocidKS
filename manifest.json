@@ -2285,6 +2285,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.yml",
       "output": {
         ".html": {

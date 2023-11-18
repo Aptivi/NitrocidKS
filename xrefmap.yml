@@ -29796,15 +29796,12 @@ references:
   commentId: T:KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand
   fullName: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand
   nameWithType: IRemoteDebugCommand
-- uid: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(System.String,System.String[],System.String[],KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
-  name: Execute(string, string[], string[], RemoteDebugDevice)
-  href: api/KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.html#KS_Kernel_Debugging_RemoteDebug_Command_IRemoteDebugCommand_Execute_System_String_System_String___System_String___KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(System.String,System.String[],System.String[],KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
-  name.vb: Execute(String, String(), String(), RemoteDebugDevice)
-  fullName: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(string, string[], string[], KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
-  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(String, String(), String(), KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
-  nameWithType: IRemoteDebugCommand.Execute(string, string[], string[], RemoteDebugDevice)
-  nameWithType.vb: IRemoteDebugCommand.Execute(String, String(), String(), RemoteDebugDevice)
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters,KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  name: Execute(RemoteDebugCommandParameters, RemoteDebugDevice)
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.html#KS_Kernel_Debugging_RemoteDebug_Command_IRemoteDebugCommand_Execute_KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_
+  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters,KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters, KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  nameWithType: IRemoteDebugCommand.Execute(RemoteDebugCommandParameters, RemoteDebugDevice)
 - uid: KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute*
   name: Execute
   href: api/KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.html#KS_Kernel_Debugging_RemoteDebug_Command_IRemoteDebugCommand_Execute_
@@ -29831,15 +29828,12 @@ references:
   commentId: T:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand
   fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand
   nameWithType: RemoteDebugBaseCommand
-- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute(System.String,System.String[],System.String[],KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
-  name: Execute(string, string[], string[], RemoteDebugDevice)
-  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugBaseCommand_Execute_System_String_System_String___System_String___KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_
-  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute(System.String,System.String[],System.String[],KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
-  name.vb: Execute(String, String(), String(), RemoteDebugDevice)
-  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute(string, string[], string[], KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
-  fullName.vb: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute(String, String(), String(), KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
-  nameWithType: RemoteDebugBaseCommand.Execute(string, string[], string[], RemoteDebugDevice)
-  nameWithType.vb: RemoteDebugBaseCommand.Execute(String, String(), String(), RemoteDebugDevice)
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute(KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters,KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  name: Execute(RemoteDebugCommandParameters, RemoteDebugDevice)
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugBaseCommand_Execute_KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_
+  commentId: M:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute(KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters,KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute(KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters, KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)
+  nameWithType: RemoteDebugBaseCommand.Execute(RemoteDebugCommandParameters, RemoteDebugDevice)
 - uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.Execute*
   name: Execute
   href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugBaseCommand.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugBaseCommand_Execute_
@@ -30032,6 +30026,90 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandInfo.HelpDefinition
   nameWithType: RemoteDebugCommandInfo.HelpDefinition
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters
+  name: RemoteDebugCommandParameters
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.html
+  commentId: T:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters
+  nameWithType: RemoteDebugCommandParameters
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsList
+  name: ArgumentsList
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_ArgumentsList
+  commentId: P:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsList
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsList
+  nameWithType: RemoteDebugCommandParameters.ArgumentsList
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsList*
+  name: ArgumentsList
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_ArgumentsList_
+  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsList
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsList
+  nameWithType: RemoteDebugCommandParameters.ArgumentsList
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsOriginalList
+  name: ArgumentsOriginalList
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_ArgumentsOriginalList
+  commentId: P:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsOriginalList
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsOriginalList
+  nameWithType: RemoteDebugCommandParameters.ArgumentsOriginalList
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsOriginalList*
+  name: ArgumentsOriginalList
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_ArgumentsOriginalList_
+  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsOriginalList
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsOriginalList
+  nameWithType: RemoteDebugCommandParameters.ArgumentsOriginalList
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsOriginalText
+  name: ArgumentsOriginalText
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_ArgumentsOriginalText
+  commentId: P:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsOriginalText
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsOriginalText
+  nameWithType: RemoteDebugCommandParameters.ArgumentsOriginalText
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsOriginalText*
+  name: ArgumentsOriginalText
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_ArgumentsOriginalText_
+  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsOriginalText
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsOriginalText
+  nameWithType: RemoteDebugCommandParameters.ArgumentsOriginalText
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsText
+  name: ArgumentsText
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_ArgumentsText
+  commentId: P:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsText
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsText
+  nameWithType: RemoteDebugCommandParameters.ArgumentsText
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsText*
+  name: ArgumentsText
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_ArgumentsText_
+  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsText
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.ArgumentsText
+  nameWithType: RemoteDebugCommandParameters.ArgumentsText
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.CommandText
+  name: CommandText
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_CommandText
+  commentId: P:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.CommandText
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.CommandText
+  nameWithType: RemoteDebugCommandParameters.CommandText
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.CommandText*
+  name: CommandText
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_CommandText_
+  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.CommandText
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.CommandText
+  nameWithType: RemoteDebugCommandParameters.CommandText
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.SwitchesList
+  name: SwitchesList
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_SwitchesList
+  commentId: P:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.SwitchesList
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.SwitchesList
+  nameWithType: RemoteDebugCommandParameters.SwitchesList
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.SwitchesList*
+  name: SwitchesList
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_SwitchesList_
+  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.SwitchesList
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.SwitchesList
+  nameWithType: RemoteDebugCommandParameters.SwitchesList
 - uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo
   name: RemoteDebugProvidedCommandArgumentInfo
   href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.html
@@ -30051,6 +30129,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.ArgumentsList
   nameWithType: RemoteDebugProvidedCommandArgumentInfo.ArgumentsList
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.ArgumentsListOrig
+  name: ArgumentsListOrig
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugProvidedCommandArgumentInfo_ArgumentsListOrig
+  commentId: P:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.ArgumentsListOrig
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.ArgumentsListOrig
+  nameWithType: RemoteDebugProvidedCommandArgumentInfo.ArgumentsListOrig
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.ArgumentsListOrig*
+  name: ArgumentsListOrig
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugProvidedCommandArgumentInfo_ArgumentsListOrig_
+  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.ArgumentsListOrig
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.ArgumentsListOrig
+  nameWithType: RemoteDebugProvidedCommandArgumentInfo.ArgumentsListOrig
 - uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.ArgumentsText
   name: ArgumentsText
   href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugProvidedCommandArgumentInfo_ArgumentsText
@@ -30064,6 +30155,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.ArgumentsText
   nameWithType: RemoteDebugProvidedCommandArgumentInfo.ArgumentsText
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.ArgumentsTextOrig
+  name: ArgumentsTextOrig
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugProvidedCommandArgumentInfo_ArgumentsTextOrig
+  commentId: P:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.ArgumentsTextOrig
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.ArgumentsTextOrig
+  nameWithType: RemoteDebugProvidedCommandArgumentInfo.ArgumentsTextOrig
+- uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.ArgumentsTextOrig*
+  name: ArgumentsTextOrig
+  href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugProvidedCommandArgumentInfo_ArgumentsTextOrig_
+  commentId: Overload:KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.ArgumentsTextOrig
+  isSpec: "True"
+  fullName: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.ArgumentsTextOrig
+  nameWithType: RemoteDebugProvidedCommandArgumentInfo.ArgumentsTextOrig
 - uid: KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.Command
   name: Command
   href: api/KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugProvidedCommandArgumentInfo.html#KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugProvidedCommandArgumentInfo_Command

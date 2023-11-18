@@ -96,19 +96,19 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_Command_IRemoteDebugCommand_Execute_System_String_System_String___System_String___KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(System.String%2CSystem.String%5B%5D%2CSystem.String%5B%5D%2CKS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_Command_IRemoteDebugCommand_Execute_KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters%2CKS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/Command/IRemoteDebugCommand.cs/#L35">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/Command/IRemoteDebugCommand.cs/#L33">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_RemoteDebug_Command_IRemoteDebugCommand_Execute_" data-uid="KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute*"></a>
-  <h4 id="KS_Kernel_Debugging_RemoteDebug_Command_IRemoteDebugCommand_Execute_System_String_System_String___System_String___KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_" data-uid="KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(System.String,System.String[],System.String[],KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)">Execute(string, string[], string[], RemoteDebugDevice)</h4>
+  <h4 id="KS_Kernel_Debugging_RemoteDebug_Command_IRemoteDebugCommand_Execute_KS_Kernel_Debugging_RemoteDebug_Command_RemoteDebugCommandParameters_KS_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_" data-uid="KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.Execute(KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters,KS.Kernel.Debugging.RemoteDebug.RemoteDebugDevice)">Execute(RemoteDebugCommandParameters, RemoteDebugDevice)</h4>
   <div class="markdown level1 summary"><p>Executes the command with the given argument</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Execute(string StringArgs, string[] ListArgsOnly, string[] ListSwitchesOnly, RemoteDebugDevice device)</code></pre>
+    <pre><code class="lang-csharp hljs">void Execute(RemoteDebugCommandParameters parameters, RemoteDebugDevice device)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -121,21 +121,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">StringArgs</span></td>
-        <td><p>Arguments in a string</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
-        <td><span class="parametername">ListArgsOnly</span></td>
-        <td><p>List of provided arguments</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
-        <td><span class="parametername">ListSwitchesOnly</span></td>
-        <td><p>List of provided switches</p>
+        <td><a class="xref" href="KS.Kernel.Debugging.RemoteDebug.Command.RemoteDebugCommandParameters.html">RemoteDebugCommandParameters</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Command parameters including passed arguments and switches information</p>
 </td>
       </tr>
       <tr>
@@ -151,7 +139,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Kernel_Debugging_RemoteDebug_Command_IRemoteDebugCommand_HelpHelper.md&amp;value=---%0Auid%3A%20KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.HelpHelper%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/Command/IRemoteDebugCommand.cs/#L40">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Debugging/RemoteDebug/Command/IRemoteDebugCommand.cs/#L38">View Source</a>
   </span>
   <a id="KS_Kernel_Debugging_RemoteDebug_Command_IRemoteDebugCommand_HelpHelper_" data-uid="KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.HelpHelper*"></a>
   <h4 id="KS_Kernel_Debugging_RemoteDebug_Command_IRemoteDebugCommand_HelpHelper" data-uid="KS.Kernel.Debugging.RemoteDebug.Command.IRemoteDebugCommand.HelpHelper">HelpHelper()</h4>
