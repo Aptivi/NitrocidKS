@@ -2015,20 +2015,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.PathLookup.PathLookupTools.yml",
+      "source_relative_path": "api/KS.Files.Paths.PathLookupTools.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Files.PathLookup.PathLookupTools.html"
+          "relative_path": "api/KS.Files.Paths.PathLookupTools.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.PathLookup.yml",
+      "source_relative_path": "api/KS.Files.Paths.PathsManagement.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.Files.PathLookup.html"
+          "relative_path": "api/KS.Files.Paths.PathsManagement.html"
         }
       },
       "version": ""
@@ -5467,11 +5467,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "api/toc.json"
-        },
         ".html": {
           "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
@@ -5510,11 +5510,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "toc.json"
-        },
         ".html": {
           "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""

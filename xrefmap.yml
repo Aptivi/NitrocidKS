@@ -24800,582 +24800,668 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Writing.WriteContentsText
   nameWithType: Writing.WriteContentsText
-- uid: KS.Files.PathLookup
-  name: KS.Files.PathLookup
-  href: api/KS.Files.PathLookup.html
-  commentId: N:KS.Files.PathLookup
-  fullName: KS.Files.PathLookup
-  nameWithType: KS.Files.PathLookup
-- uid: KS.Files.PathLookup.PathLookupTools
+- uid: KS.Files.Paths
+  name: KS.Files.Paths
+  href: api/KS.Files.Paths.html
+  commentId: N:KS.Files.Paths
+  fullName: KS.Files.Paths
+  nameWithType: KS.Files.Paths
+- uid: KS.Files.Paths.PathLookupTools
   name: PathLookupTools
-  href: api/KS.Files.PathLookup.PathLookupTools.html
-  commentId: T:KS.Files.PathLookup.PathLookupTools
-  fullName: KS.Files.PathLookup.PathLookupTools
+  href: api/KS.Files.Paths.PathLookupTools.html
+  commentId: T:KS.Files.Paths.PathLookupTools
+  fullName: KS.Files.Paths.PathLookupTools
   nameWithType: PathLookupTools
-- uid: KS.Files.PathLookup.PathLookupTools.AddToPathLookup(System.String)
+- uid: KS.Files.Paths.PathLookupTools.AddToPathLookup(System.String)
   name: AddToPathLookup(string)
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_AddToPathLookup_System_String_
-  commentId: M:KS.Files.PathLookup.PathLookupTools.AddToPathLookup(System.String)
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_AddToPathLookup_System_String_
+  commentId: M:KS.Files.Paths.PathLookupTools.AddToPathLookup(System.String)
   name.vb: AddToPathLookup(String)
-  fullName: KS.Files.PathLookup.PathLookupTools.AddToPathLookup(string)
-  fullName.vb: KS.Files.PathLookup.PathLookupTools.AddToPathLookup(String)
+  fullName: KS.Files.Paths.PathLookupTools.AddToPathLookup(string)
+  fullName.vb: KS.Files.Paths.PathLookupTools.AddToPathLookup(String)
   nameWithType: PathLookupTools.AddToPathLookup(string)
   nameWithType.vb: PathLookupTools.AddToPathLookup(String)
-- uid: KS.Files.PathLookup.PathLookupTools.AddToPathLookup(System.String,System.String)
+- uid: KS.Files.Paths.PathLookupTools.AddToPathLookup(System.String,System.String)
   name: AddToPathLookup(string, string)
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_AddToPathLookup_System_String_System_String_
-  commentId: M:KS.Files.PathLookup.PathLookupTools.AddToPathLookup(System.String,System.String)
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_AddToPathLookup_System_String_System_String_
+  commentId: M:KS.Files.Paths.PathLookupTools.AddToPathLookup(System.String,System.String)
   name.vb: AddToPathLookup(String, String)
-  fullName: KS.Files.PathLookup.PathLookupTools.AddToPathLookup(string, string)
-  fullName.vb: KS.Files.PathLookup.PathLookupTools.AddToPathLookup(String, String)
+  fullName: KS.Files.Paths.PathLookupTools.AddToPathLookup(string, string)
+  fullName.vb: KS.Files.Paths.PathLookupTools.AddToPathLookup(String, String)
   nameWithType: PathLookupTools.AddToPathLookup(string, string)
   nameWithType.vb: PathLookupTools.AddToPathLookup(String, String)
-- uid: KS.Files.PathLookup.PathLookupTools.AddToPathLookup*
+- uid: KS.Files.Paths.PathLookupTools.AddToPathLookup*
   name: AddToPathLookup
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_AddToPathLookup_
-  commentId: Overload:KS.Files.PathLookup.PathLookupTools.AddToPathLookup
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_AddToPathLookup_
+  commentId: Overload:KS.Files.Paths.PathLookupTools.AddToPathLookup
   isSpec: "True"
-  fullName: KS.Files.PathLookup.PathLookupTools.AddToPathLookup
+  fullName: KS.Files.Paths.PathLookupTools.AddToPathLookup
   nameWithType: PathLookupTools.AddToPathLookup
-- uid: KS.Files.PathLookup.PathLookupTools.FileExistsInPath(System.String,System.String@)
+- uid: KS.Files.Paths.PathLookupTools.FileExistsInPath(System.String,System.String@)
   name: FileExistsInPath(string, ref string)
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_FileExistsInPath_System_String_System_String__
-  commentId: M:KS.Files.PathLookup.PathLookupTools.FileExistsInPath(System.String,System.String@)
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_FileExistsInPath_System_String_System_String__
+  commentId: M:KS.Files.Paths.PathLookupTools.FileExistsInPath(System.String,System.String@)
   name.vb: FileExistsInPath(String, String)
-  fullName: KS.Files.PathLookup.PathLookupTools.FileExistsInPath(string, ref string)
-  fullName.vb: KS.Files.PathLookup.PathLookupTools.FileExistsInPath(String, String)
+  fullName: KS.Files.Paths.PathLookupTools.FileExistsInPath(string, ref string)
+  fullName.vb: KS.Files.Paths.PathLookupTools.FileExistsInPath(String, String)
   nameWithType: PathLookupTools.FileExistsInPath(string, ref string)
   nameWithType.vb: PathLookupTools.FileExistsInPath(String, String)
-- uid: KS.Files.PathLookup.PathLookupTools.FileExistsInPath*
+- uid: KS.Files.Paths.PathLookupTools.FileExistsInPath*
   name: FileExistsInPath
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_FileExistsInPath_
-  commentId: Overload:KS.Files.PathLookup.PathLookupTools.FileExistsInPath
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_FileExistsInPath_
+  commentId: Overload:KS.Files.Paths.PathLookupTools.FileExistsInPath
   isSpec: "True"
-  fullName: KS.Files.PathLookup.PathLookupTools.FileExistsInPath
+  fullName: KS.Files.Paths.PathLookupTools.FileExistsInPath
   nameWithType: PathLookupTools.FileExistsInPath
-- uid: KS.Files.PathLookup.PathLookupTools.GetPathList
+- uid: KS.Files.Paths.PathLookupTools.GetPathList
   name: GetPathList()
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_GetPathList
-  commentId: M:KS.Files.PathLookup.PathLookupTools.GetPathList
-  fullName: KS.Files.PathLookup.PathLookupTools.GetPathList()
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_GetPathList
+  commentId: M:KS.Files.Paths.PathLookupTools.GetPathList
+  fullName: KS.Files.Paths.PathLookupTools.GetPathList()
   nameWithType: PathLookupTools.GetPathList()
-- uid: KS.Files.PathLookup.PathLookupTools.GetPathList*
+- uid: KS.Files.Paths.PathLookupTools.GetPathList*
   name: GetPathList
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_GetPathList_
-  commentId: Overload:KS.Files.PathLookup.PathLookupTools.GetPathList
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_GetPathList_
+  commentId: Overload:KS.Files.Paths.PathLookupTools.GetPathList
   isSpec: "True"
-  fullName: KS.Files.PathLookup.PathLookupTools.GetPathList
+  fullName: KS.Files.Paths.PathLookupTools.GetPathList
   nameWithType: PathLookupTools.GetPathList
-- uid: KS.Files.PathLookup.PathLookupTools.PathLookupDelimiter
+- uid: KS.Files.Paths.PathLookupTools.PathLookupDelimiter
   name: PathLookupDelimiter
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_PathLookupDelimiter
-  commentId: P:KS.Files.PathLookup.PathLookupTools.PathLookupDelimiter
-  fullName: KS.Files.PathLookup.PathLookupTools.PathLookupDelimiter
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_PathLookupDelimiter
+  commentId: P:KS.Files.Paths.PathLookupTools.PathLookupDelimiter
+  fullName: KS.Files.Paths.PathLookupTools.PathLookupDelimiter
   nameWithType: PathLookupTools.PathLookupDelimiter
-- uid: KS.Files.PathLookup.PathLookupTools.PathLookupDelimiter*
+- uid: KS.Files.Paths.PathLookupTools.PathLookupDelimiter*
   name: PathLookupDelimiter
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_PathLookupDelimiter_
-  commentId: Overload:KS.Files.PathLookup.PathLookupTools.PathLookupDelimiter
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_PathLookupDelimiter_
+  commentId: Overload:KS.Files.Paths.PathLookupTools.PathLookupDelimiter
   isSpec: "True"
-  fullName: KS.Files.PathLookup.PathLookupTools.PathLookupDelimiter
+  fullName: KS.Files.Paths.PathLookupTools.PathLookupDelimiter
   nameWithType: PathLookupTools.PathLookupDelimiter
-- uid: KS.Files.PathLookup.PathLookupTools.PathsToLookup
+- uid: KS.Files.Paths.PathLookupTools.PathsToLookup
   name: PathsToLookup
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_PathsToLookup
-  commentId: P:KS.Files.PathLookup.PathLookupTools.PathsToLookup
-  fullName: KS.Files.PathLookup.PathLookupTools.PathsToLookup
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_PathsToLookup
+  commentId: P:KS.Files.Paths.PathLookupTools.PathsToLookup
+  fullName: KS.Files.Paths.PathLookupTools.PathsToLookup
   nameWithType: PathLookupTools.PathsToLookup
-- uid: KS.Files.PathLookup.PathLookupTools.PathsToLookup*
+- uid: KS.Files.Paths.PathLookupTools.PathsToLookup*
   name: PathsToLookup
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_PathsToLookup_
-  commentId: Overload:KS.Files.PathLookup.PathLookupTools.PathsToLookup
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_PathsToLookup_
+  commentId: Overload:KS.Files.Paths.PathLookupTools.PathsToLookup
   isSpec: "True"
-  fullName: KS.Files.PathLookup.PathLookupTools.PathsToLookup
+  fullName: KS.Files.Paths.PathLookupTools.PathsToLookup
   nameWithType: PathLookupTools.PathsToLookup
-- uid: KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup(System.String)
+- uid: KS.Files.Paths.PathLookupTools.RemoveFromPathLookup(System.String)
   name: RemoveFromPathLookup(string)
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_RemoveFromPathLookup_System_String_
-  commentId: M:KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup(System.String)
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_RemoveFromPathLookup_System_String_
+  commentId: M:KS.Files.Paths.PathLookupTools.RemoveFromPathLookup(System.String)
   name.vb: RemoveFromPathLookup(String)
-  fullName: KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup(string)
-  fullName.vb: KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup(String)
+  fullName: KS.Files.Paths.PathLookupTools.RemoveFromPathLookup(string)
+  fullName.vb: KS.Files.Paths.PathLookupTools.RemoveFromPathLookup(String)
   nameWithType: PathLookupTools.RemoveFromPathLookup(string)
   nameWithType.vb: PathLookupTools.RemoveFromPathLookup(String)
-- uid: KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup(System.String,System.String)
+- uid: KS.Files.Paths.PathLookupTools.RemoveFromPathLookup(System.String,System.String)
   name: RemoveFromPathLookup(string, string)
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_RemoveFromPathLookup_System_String_System_String_
-  commentId: M:KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup(System.String,System.String)
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_RemoveFromPathLookup_System_String_System_String_
+  commentId: M:KS.Files.Paths.PathLookupTools.RemoveFromPathLookup(System.String,System.String)
   name.vb: RemoveFromPathLookup(String, String)
-  fullName: KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup(string, string)
-  fullName.vb: KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup(String, String)
+  fullName: KS.Files.Paths.PathLookupTools.RemoveFromPathLookup(string, string)
+  fullName.vb: KS.Files.Paths.PathLookupTools.RemoveFromPathLookup(String, String)
   nameWithType: PathLookupTools.RemoveFromPathLookup(string, string)
   nameWithType.vb: PathLookupTools.RemoveFromPathLookup(String, String)
-- uid: KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup*
+- uid: KS.Files.Paths.PathLookupTools.RemoveFromPathLookup*
   name: RemoveFromPathLookup
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_RemoveFromPathLookup_
-  commentId: Overload:KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_RemoveFromPathLookup_
+  commentId: Overload:KS.Files.Paths.PathLookupTools.RemoveFromPathLookup
   isSpec: "True"
-  fullName: KS.Files.PathLookup.PathLookupTools.RemoveFromPathLookup
+  fullName: KS.Files.Paths.PathLookupTools.RemoveFromPathLookup
   nameWithType: PathLookupTools.RemoveFromPathLookup
-- uid: KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup(System.String)
+- uid: KS.Files.Paths.PathLookupTools.TryAddToPathLookup(System.String)
   name: TryAddToPathLookup(string)
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_TryAddToPathLookup_System_String_
-  commentId: M:KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup(System.String)
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_TryAddToPathLookup_System_String_
+  commentId: M:KS.Files.Paths.PathLookupTools.TryAddToPathLookup(System.String)
   name.vb: TryAddToPathLookup(String)
-  fullName: KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup(string)
-  fullName.vb: KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup(String)
+  fullName: KS.Files.Paths.PathLookupTools.TryAddToPathLookup(string)
+  fullName.vb: KS.Files.Paths.PathLookupTools.TryAddToPathLookup(String)
   nameWithType: PathLookupTools.TryAddToPathLookup(string)
   nameWithType.vb: PathLookupTools.TryAddToPathLookup(String)
-- uid: KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup(System.String,System.String)
+- uid: KS.Files.Paths.PathLookupTools.TryAddToPathLookup(System.String,System.String)
   name: TryAddToPathLookup(string, string)
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_TryAddToPathLookup_System_String_System_String_
-  commentId: M:KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup(System.String,System.String)
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_TryAddToPathLookup_System_String_System_String_
+  commentId: M:KS.Files.Paths.PathLookupTools.TryAddToPathLookup(System.String,System.String)
   name.vb: TryAddToPathLookup(String, String)
-  fullName: KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup(string, string)
-  fullName.vb: KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup(String, String)
+  fullName: KS.Files.Paths.PathLookupTools.TryAddToPathLookup(string, string)
+  fullName.vb: KS.Files.Paths.PathLookupTools.TryAddToPathLookup(String, String)
   nameWithType: PathLookupTools.TryAddToPathLookup(string, string)
   nameWithType.vb: PathLookupTools.TryAddToPathLookup(String, String)
-- uid: KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup*
+- uid: KS.Files.Paths.PathLookupTools.TryAddToPathLookup*
   name: TryAddToPathLookup
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_TryAddToPathLookup_
-  commentId: Overload:KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_TryAddToPathLookup_
+  commentId: Overload:KS.Files.Paths.PathLookupTools.TryAddToPathLookup
   isSpec: "True"
-  fullName: KS.Files.PathLookup.PathLookupTools.TryAddToPathLookup
+  fullName: KS.Files.Paths.PathLookupTools.TryAddToPathLookup
   nameWithType: PathLookupTools.TryAddToPathLookup
-- uid: KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup(System.String)
+- uid: KS.Files.Paths.PathLookupTools.TryRemoveFromPathLookup(System.String)
   name: TryRemoveFromPathLookup(string)
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_TryRemoveFromPathLookup_System_String_
-  commentId: M:KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup(System.String)
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_TryRemoveFromPathLookup_System_String_
+  commentId: M:KS.Files.Paths.PathLookupTools.TryRemoveFromPathLookup(System.String)
   name.vb: TryRemoveFromPathLookup(String)
-  fullName: KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup(string)
-  fullName.vb: KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup(String)
+  fullName: KS.Files.Paths.PathLookupTools.TryRemoveFromPathLookup(string)
+  fullName.vb: KS.Files.Paths.PathLookupTools.TryRemoveFromPathLookup(String)
   nameWithType: PathLookupTools.TryRemoveFromPathLookup(string)
   nameWithType.vb: PathLookupTools.TryRemoveFromPathLookup(String)
-- uid: KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup(System.String,System.String)
+- uid: KS.Files.Paths.PathLookupTools.TryRemoveFromPathLookup(System.String,System.String)
   name: TryRemoveFromPathLookup(string, string)
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_TryRemoveFromPathLookup_System_String_System_String_
-  commentId: M:KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup(System.String,System.String)
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_TryRemoveFromPathLookup_System_String_System_String_
+  commentId: M:KS.Files.Paths.PathLookupTools.TryRemoveFromPathLookup(System.String,System.String)
   name.vb: TryRemoveFromPathLookup(String, String)
-  fullName: KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup(string, string)
-  fullName.vb: KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup(String, String)
+  fullName: KS.Files.Paths.PathLookupTools.TryRemoveFromPathLookup(string, string)
+  fullName.vb: KS.Files.Paths.PathLookupTools.TryRemoveFromPathLookup(String, String)
   nameWithType: PathLookupTools.TryRemoveFromPathLookup(string, string)
   nameWithType.vb: PathLookupTools.TryRemoveFromPathLookup(String, String)
-- uid: KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup*
+- uid: KS.Files.Paths.PathLookupTools.TryRemoveFromPathLookup*
   name: TryRemoveFromPathLookup
-  href: api/KS.Files.PathLookup.PathLookupTools.html#KS_Files_PathLookup_PathLookupTools_TryRemoveFromPathLookup_
-  commentId: Overload:KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup
+  href: api/KS.Files.Paths.PathLookupTools.html#KS_Files_Paths_PathLookupTools_TryRemoveFromPathLookup_
+  commentId: Overload:KS.Files.Paths.PathLookupTools.TryRemoveFromPathLookup
   isSpec: "True"
-  fullName: KS.Files.PathLookup.PathLookupTools.TryRemoveFromPathLookup
+  fullName: KS.Files.Paths.PathLookupTools.TryRemoveFromPathLookup
   nameWithType: PathLookupTools.TryRemoveFromPathLookup
-- uid: KS.Files.Paths
-  name: Paths
-  href: api/KS.Files.Paths.html
-  commentId: T:KS.Files.Paths
-  fullName: KS.Files.Paths
-  nameWithType: Paths
-- uid: KS.Files.Paths.AddonsPath
+- uid: KS.Files.Paths.PathsManagement
+  name: PathsManagement
+  href: api/KS.Files.Paths.PathsManagement.html
+  commentId: T:KS.Files.Paths.PathsManagement
+  fullName: KS.Files.Paths.PathsManagement
+  nameWithType: PathsManagement
+- uid: KS.Files.Paths.PathsManagement.AddonsPath
   name: AddonsPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_AddonsPath
-  commentId: P:KS.Files.Paths.AddonsPath
-  fullName: KS.Files.Paths.AddonsPath
-  nameWithType: Paths.AddonsPath
-- uid: KS.Files.Paths.AddonsPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_AddonsPath
+  commentId: P:KS.Files.Paths.PathsManagement.AddonsPath
+  fullName: KS.Files.Paths.PathsManagement.AddonsPath
+  nameWithType: PathsManagement.AddonsPath
+- uid: KS.Files.Paths.PathsManagement.AddonsPath*
   name: AddonsPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_AddonsPath_
-  commentId: Overload:KS.Files.Paths.AddonsPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_AddonsPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.AddonsPath
   isSpec: "True"
-  fullName: KS.Files.Paths.AddonsPath
-  nameWithType: Paths.AddonsPath
-- uid: KS.Files.Paths.AliasesPath
+  fullName: KS.Files.Paths.PathsManagement.AddonsPath
+  nameWithType: PathsManagement.AddonsPath
+- uid: KS.Files.Paths.PathsManagement.AliasesPath
   name: AliasesPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_AliasesPath
-  commentId: P:KS.Files.Paths.AliasesPath
-  fullName: KS.Files.Paths.AliasesPath
-  nameWithType: Paths.AliasesPath
-- uid: KS.Files.Paths.AliasesPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_AliasesPath
+  commentId: P:KS.Files.Paths.PathsManagement.AliasesPath
+  fullName: KS.Files.Paths.PathsManagement.AliasesPath
+  nameWithType: PathsManagement.AliasesPath
+- uid: KS.Files.Paths.PathsManagement.AliasesPath*
   name: AliasesPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_AliasesPath_
-  commentId: Overload:KS.Files.Paths.AliasesPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_AliasesPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.AliasesPath
   isSpec: "True"
-  fullName: KS.Files.Paths.AliasesPath
-  nameWithType: Paths.AliasesPath
-- uid: KS.Files.Paths.AppDataPath
+  fullName: KS.Files.Paths.PathsManagement.AliasesPath
+  nameWithType: PathsManagement.AliasesPath
+- uid: KS.Files.Paths.PathsManagement.AppDataPath
   name: AppDataPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_AppDataPath
-  commentId: P:KS.Files.Paths.AppDataPath
-  fullName: KS.Files.Paths.AppDataPath
-  nameWithType: Paths.AppDataPath
-- uid: KS.Files.Paths.AppDataPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_AppDataPath
+  commentId: P:KS.Files.Paths.PathsManagement.AppDataPath
+  fullName: KS.Files.Paths.PathsManagement.AppDataPath
+  nameWithType: PathsManagement.AppDataPath
+- uid: KS.Files.Paths.PathsManagement.AppDataPath*
   name: AppDataPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_AppDataPath_
-  commentId: Overload:KS.Files.Paths.AppDataPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_AppDataPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.AppDataPath
   isSpec: "True"
-  fullName: KS.Files.Paths.AppDataPath
-  nameWithType: Paths.AppDataPath
-- uid: KS.Files.Paths.ConfigurationPath
+  fullName: KS.Files.Paths.PathsManagement.AppDataPath
+  nameWithType: PathsManagement.AppDataPath
+- uid: KS.Files.Paths.PathsManagement.ConfigurationPath
   name: ConfigurationPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ConfigurationPath
-  commentId: P:KS.Files.Paths.ConfigurationPath
-  fullName: KS.Files.Paths.ConfigurationPath
-  nameWithType: Paths.ConfigurationPath
-- uid: KS.Files.Paths.ConfigurationPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ConfigurationPath
+  commentId: P:KS.Files.Paths.PathsManagement.ConfigurationPath
+  fullName: KS.Files.Paths.PathsManagement.ConfigurationPath
+  nameWithType: PathsManagement.ConfigurationPath
+- uid: KS.Files.Paths.PathsManagement.ConfigurationPath*
   name: ConfigurationPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ConfigurationPath_
-  commentId: Overload:KS.Files.Paths.ConfigurationPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ConfigurationPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.ConfigurationPath
   isSpec: "True"
-  fullName: KS.Files.Paths.ConfigurationPath
-  nameWithType: Paths.ConfigurationPath
-- uid: KS.Files.Paths.ConsentsPath
+  fullName: KS.Files.Paths.PathsManagement.ConfigurationPath
+  nameWithType: PathsManagement.ConfigurationPath
+- uid: KS.Files.Paths.PathsManagement.ConsentsPath
   name: ConsentsPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ConsentsPath
-  commentId: P:KS.Files.Paths.ConsentsPath
-  fullName: KS.Files.Paths.ConsentsPath
-  nameWithType: Paths.ConsentsPath
-- uid: KS.Files.Paths.ConsentsPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ConsentsPath
+  commentId: P:KS.Files.Paths.PathsManagement.ConsentsPath
+  fullName: KS.Files.Paths.PathsManagement.ConsentsPath
+  nameWithType: PathsManagement.ConsentsPath
+- uid: KS.Files.Paths.PathsManagement.ConsentsPath*
   name: ConsentsPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ConsentsPath_
-  commentId: Overload:KS.Files.Paths.ConsentsPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ConsentsPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.ConsentsPath
   isSpec: "True"
-  fullName: KS.Files.Paths.ConsentsPath
-  nameWithType: Paths.ConsentsPath
-- uid: KS.Files.Paths.ContactsImportPath
+  fullName: KS.Files.Paths.PathsManagement.ConsentsPath
+  nameWithType: PathsManagement.ConsentsPath
+- uid: KS.Files.Paths.PathsManagement.ContactsImportPath
   name: ContactsImportPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ContactsImportPath
-  commentId: P:KS.Files.Paths.ContactsImportPath
-  fullName: KS.Files.Paths.ContactsImportPath
-  nameWithType: Paths.ContactsImportPath
-- uid: KS.Files.Paths.ContactsImportPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ContactsImportPath
+  commentId: P:KS.Files.Paths.PathsManagement.ContactsImportPath
+  fullName: KS.Files.Paths.PathsManagement.ContactsImportPath
+  nameWithType: PathsManagement.ContactsImportPath
+- uid: KS.Files.Paths.PathsManagement.ContactsImportPath*
   name: ContactsImportPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ContactsImportPath_
-  commentId: Overload:KS.Files.Paths.ContactsImportPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ContactsImportPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.ContactsImportPath
   isSpec: "True"
-  fullName: KS.Files.Paths.ContactsImportPath
-  nameWithType: Paths.ContactsImportPath
-- uid: KS.Files.Paths.ContactsPath
+  fullName: KS.Files.Paths.PathsManagement.ContactsImportPath
+  nameWithType: PathsManagement.ContactsImportPath
+- uid: KS.Files.Paths.PathsManagement.ContactsPath
   name: ContactsPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ContactsPath
-  commentId: P:KS.Files.Paths.ContactsPath
-  fullName: KS.Files.Paths.ContactsPath
-  nameWithType: Paths.ContactsPath
-- uid: KS.Files.Paths.ContactsPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ContactsPath
+  commentId: P:KS.Files.Paths.PathsManagement.ContactsPath
+  fullName: KS.Files.Paths.PathsManagement.ContactsPath
+  nameWithType: PathsManagement.ContactsPath
+- uid: KS.Files.Paths.PathsManagement.ContactsPath*
   name: ContactsPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ContactsPath_
-  commentId: Overload:KS.Files.Paths.ContactsPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ContactsPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.ContactsPath
   isSpec: "True"
-  fullName: KS.Files.Paths.ContactsPath
-  nameWithType: Paths.ContactsPath
-- uid: KS.Files.Paths.CustomLanguagesPath
+  fullName: KS.Files.Paths.PathsManagement.ContactsPath
+  nameWithType: PathsManagement.ContactsPath
+- uid: KS.Files.Paths.PathsManagement.CustomLanguagesPath
   name: CustomLanguagesPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_CustomLanguagesPath
-  commentId: P:KS.Files.Paths.CustomLanguagesPath
-  fullName: KS.Files.Paths.CustomLanguagesPath
-  nameWithType: Paths.CustomLanguagesPath
-- uid: KS.Files.Paths.CustomLanguagesPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_CustomLanguagesPath
+  commentId: P:KS.Files.Paths.PathsManagement.CustomLanguagesPath
+  fullName: KS.Files.Paths.PathsManagement.CustomLanguagesPath
+  nameWithType: PathsManagement.CustomLanguagesPath
+- uid: KS.Files.Paths.PathsManagement.CustomLanguagesPath*
   name: CustomLanguagesPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_CustomLanguagesPath_
-  commentId: Overload:KS.Files.Paths.CustomLanguagesPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_CustomLanguagesPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.CustomLanguagesPath
   isSpec: "True"
-  fullName: KS.Files.Paths.CustomLanguagesPath
-  nameWithType: Paths.CustomLanguagesPath
-- uid: KS.Files.Paths.CustomSplashesPath
+  fullName: KS.Files.Paths.PathsManagement.CustomLanguagesPath
+  nameWithType: PathsManagement.CustomLanguagesPath
+- uid: KS.Files.Paths.PathsManagement.CustomSplashesPath
   name: CustomSplashesPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_CustomSplashesPath
-  commentId: P:KS.Files.Paths.CustomSplashesPath
-  fullName: KS.Files.Paths.CustomSplashesPath
-  nameWithType: Paths.CustomSplashesPath
-- uid: KS.Files.Paths.CustomSplashesPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_CustomSplashesPath
+  commentId: P:KS.Files.Paths.PathsManagement.CustomSplashesPath
+  fullName: KS.Files.Paths.PathsManagement.CustomSplashesPath
+  nameWithType: PathsManagement.CustomSplashesPath
+- uid: KS.Files.Paths.PathsManagement.CustomSplashesPath*
   name: CustomSplashesPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_CustomSplashesPath_
-  commentId: Overload:KS.Files.Paths.CustomSplashesPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_CustomSplashesPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.CustomSplashesPath
   isSpec: "True"
-  fullName: KS.Files.Paths.CustomSplashesPath
-  nameWithType: Paths.CustomSplashesPath
-- uid: KS.Files.Paths.DebugDevicesPath
+  fullName: KS.Files.Paths.PathsManagement.CustomSplashesPath
+  nameWithType: PathsManagement.CustomSplashesPath
+- uid: KS.Files.Paths.PathsManagement.DebugDevicesPath
   name: DebugDevicesPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_DebugDevicesPath
-  commentId: P:KS.Files.Paths.DebugDevicesPath
-  fullName: KS.Files.Paths.DebugDevicesPath
-  nameWithType: Paths.DebugDevicesPath
-- uid: KS.Files.Paths.DebugDevicesPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_DebugDevicesPath
+  commentId: P:KS.Files.Paths.PathsManagement.DebugDevicesPath
+  fullName: KS.Files.Paths.PathsManagement.DebugDevicesPath
+  nameWithType: PathsManagement.DebugDevicesPath
+- uid: KS.Files.Paths.PathsManagement.DebugDevicesPath*
   name: DebugDevicesPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_DebugDevicesPath_
-  commentId: Overload:KS.Files.Paths.DebugDevicesPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_DebugDevicesPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.DebugDevicesPath
   isSpec: "True"
-  fullName: KS.Files.Paths.DebugDevicesPath
-  nameWithType: Paths.DebugDevicesPath
-- uid: KS.Files.Paths.DebuggingPath
+  fullName: KS.Files.Paths.PathsManagement.DebugDevicesPath
+  nameWithType: PathsManagement.DebugDevicesPath
+- uid: KS.Files.Paths.PathsManagement.DebuggingPath
   name: DebuggingPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_DebuggingPath
-  commentId: P:KS.Files.Paths.DebuggingPath
-  fullName: KS.Files.Paths.DebuggingPath
-  nameWithType: Paths.DebuggingPath
-- uid: KS.Files.Paths.DebuggingPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_DebuggingPath
+  commentId: P:KS.Files.Paths.PathsManagement.DebuggingPath
+  fullName: KS.Files.Paths.PathsManagement.DebuggingPath
+  nameWithType: PathsManagement.DebuggingPath
+- uid: KS.Files.Paths.PathsManagement.DebuggingPath*
   name: DebuggingPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_DebuggingPath_
-  commentId: Overload:KS.Files.Paths.DebuggingPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_DebuggingPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.DebuggingPath
   isSpec: "True"
-  fullName: KS.Files.Paths.DebuggingPath
-  nameWithType: Paths.DebuggingPath
-- uid: KS.Files.Paths.EventsPath
+  fullName: KS.Files.Paths.PathsManagement.DebuggingPath
+  nameWithType: PathsManagement.DebuggingPath
+- uid: KS.Files.Paths.PathsManagement.EventsPath
   name: EventsPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_EventsPath
-  commentId: P:KS.Files.Paths.EventsPath
-  fullName: KS.Files.Paths.EventsPath
-  nameWithType: Paths.EventsPath
-- uid: KS.Files.Paths.EventsPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_EventsPath
+  commentId: P:KS.Files.Paths.PathsManagement.EventsPath
+  fullName: KS.Files.Paths.PathsManagement.EventsPath
+  nameWithType: PathsManagement.EventsPath
+- uid: KS.Files.Paths.PathsManagement.EventsPath*
   name: EventsPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_EventsPath_
-  commentId: Overload:KS.Files.Paths.EventsPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_EventsPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.EventsPath
   isSpec: "True"
-  fullName: KS.Files.Paths.EventsPath
-  nameWithType: Paths.EventsPath
-- uid: KS.Files.Paths.ExecPath
+  fullName: KS.Files.Paths.PathsManagement.EventsPath
+  nameWithType: PathsManagement.EventsPath
+- uid: KS.Files.Paths.PathsManagement.ExecPath
   name: ExecPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ExecPath
-  commentId: P:KS.Files.Paths.ExecPath
-  fullName: KS.Files.Paths.ExecPath
-  nameWithType: Paths.ExecPath
-- uid: KS.Files.Paths.ExecPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ExecPath
+  commentId: P:KS.Files.Paths.PathsManagement.ExecPath
+  fullName: KS.Files.Paths.PathsManagement.ExecPath
+  nameWithType: PathsManagement.ExecPath
+- uid: KS.Files.Paths.PathsManagement.ExecPath*
   name: ExecPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ExecPath_
-  commentId: Overload:KS.Files.Paths.ExecPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ExecPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.ExecPath
   isSpec: "True"
-  fullName: KS.Files.Paths.ExecPath
-  nameWithType: Paths.ExecPath
-- uid: KS.Files.Paths.ExtensionHandlersPath
+  fullName: KS.Files.Paths.PathsManagement.ExecPath
+  nameWithType: PathsManagement.ExecPath
+- uid: KS.Files.Paths.PathsManagement.ExtensionHandlersPath
   name: ExtensionHandlersPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ExtensionHandlersPath
-  commentId: P:KS.Files.Paths.ExtensionHandlersPath
-  fullName: KS.Files.Paths.ExtensionHandlersPath
-  nameWithType: Paths.ExtensionHandlersPath
-- uid: KS.Files.Paths.ExtensionHandlersPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ExtensionHandlersPath
+  commentId: P:KS.Files.Paths.PathsManagement.ExtensionHandlersPath
+  fullName: KS.Files.Paths.PathsManagement.ExtensionHandlersPath
+  nameWithType: PathsManagement.ExtensionHandlersPath
+- uid: KS.Files.Paths.PathsManagement.ExtensionHandlersPath*
   name: ExtensionHandlersPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ExtensionHandlersPath_
-  commentId: Overload:KS.Files.Paths.ExtensionHandlersPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ExtensionHandlersPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.ExtensionHandlersPath
   isSpec: "True"
-  fullName: KS.Files.Paths.ExtensionHandlersPath
-  nameWithType: Paths.ExtensionHandlersPath
-- uid: KS.Files.Paths.GetKernelPath(KS.Files.KernelPathType)
+  fullName: KS.Files.Paths.PathsManagement.ExtensionHandlersPath
+  nameWithType: PathsManagement.ExtensionHandlersPath
+- uid: KS.Files.Paths.PathsManagement.GetKernelPath(KS.Files.KernelPathType)
   name: GetKernelPath(KernelPathType)
-  href: api/KS.Files.Paths.html#KS_Files_Paths_GetKernelPath_KS_Files_KernelPathType_
-  commentId: M:KS.Files.Paths.GetKernelPath(KS.Files.KernelPathType)
-  fullName: KS.Files.Paths.GetKernelPath(KS.Files.KernelPathType)
-  nameWithType: Paths.GetKernelPath(KernelPathType)
-- uid: KS.Files.Paths.GetKernelPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_GetKernelPath_KS_Files_KernelPathType_
+  commentId: M:KS.Files.Paths.PathsManagement.GetKernelPath(KS.Files.KernelPathType)
+  fullName: KS.Files.Paths.PathsManagement.GetKernelPath(KS.Files.KernelPathType)
+  nameWithType: PathsManagement.GetKernelPath(KernelPathType)
+- uid: KS.Files.Paths.PathsManagement.GetKernelPath(System.String)
+  name: GetKernelPath(string)
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_GetKernelPath_System_String_
+  commentId: M:KS.Files.Paths.PathsManagement.GetKernelPath(System.String)
+  name.vb: GetKernelPath(String)
+  fullName: KS.Files.Paths.PathsManagement.GetKernelPath(string)
+  fullName.vb: KS.Files.Paths.PathsManagement.GetKernelPath(String)
+  nameWithType: PathsManagement.GetKernelPath(string)
+  nameWithType.vb: PathsManagement.GetKernelPath(String)
+- uid: KS.Files.Paths.PathsManagement.GetKernelPath*
   name: GetKernelPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_GetKernelPath_
-  commentId: Overload:KS.Files.Paths.GetKernelPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_GetKernelPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.GetKernelPath
   isSpec: "True"
-  fullName: KS.Files.Paths.GetKernelPath
-  nameWithType: Paths.GetKernelPath
-- uid: KS.Files.Paths.HomePath
-  name: HomePath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_HomePath
-  commentId: P:KS.Files.Paths.HomePath
-  fullName: KS.Files.Paths.HomePath
-  nameWithType: Paths.HomePath
-- uid: KS.Files.Paths.HomePath*
-  name: HomePath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_HomePath_
-  commentId: Overload:KS.Files.Paths.HomePath
+  fullName: KS.Files.Paths.PathsManagement.GetKernelPath
+  nameWithType: PathsManagement.GetKernelPath
+- uid: KS.Files.Paths.PathsManagement.GetKernelPathName(KS.Files.KernelPathType)
+  name: GetKernelPathName(KernelPathType)
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_GetKernelPathName_KS_Files_KernelPathType_
+  commentId: M:KS.Files.Paths.PathsManagement.GetKernelPathName(KS.Files.KernelPathType)
+  fullName: KS.Files.Paths.PathsManagement.GetKernelPathName(KS.Files.KernelPathType)
+  nameWithType: PathsManagement.GetKernelPathName(KernelPathType)
+- uid: KS.Files.Paths.PathsManagement.GetKernelPathName*
+  name: GetKernelPathName
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_GetKernelPathName_
+  commentId: Overload:KS.Files.Paths.PathsManagement.GetKernelPathName
   isSpec: "True"
-  fullName: KS.Files.Paths.HomePath
-  nameWithType: Paths.HomePath
-- uid: KS.Files.Paths.IsResettable(KS.Files.KernelPathType)
+  fullName: KS.Files.Paths.PathsManagement.GetKernelPathName
+  nameWithType: PathsManagement.GetKernelPathName
+- uid: KS.Files.Paths.PathsManagement.HomePath
+  name: HomePath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_HomePath
+  commentId: P:KS.Files.Paths.PathsManagement.HomePath
+  fullName: KS.Files.Paths.PathsManagement.HomePath
+  nameWithType: PathsManagement.HomePath
+- uid: KS.Files.Paths.PathsManagement.HomePath*
+  name: HomePath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_HomePath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.HomePath
+  isSpec: "True"
+  fullName: KS.Files.Paths.PathsManagement.HomePath
+  nameWithType: PathsManagement.HomePath
+- uid: KS.Files.Paths.PathsManagement.IsKernelPathBuiltin(System.String)
+  name: IsKernelPathBuiltin(string)
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_IsKernelPathBuiltin_System_String_
+  commentId: M:KS.Files.Paths.PathsManagement.IsKernelPathBuiltin(System.String)
+  name.vb: IsKernelPathBuiltin(String)
+  fullName: KS.Files.Paths.PathsManagement.IsKernelPathBuiltin(string)
+  fullName.vb: KS.Files.Paths.PathsManagement.IsKernelPathBuiltin(String)
+  nameWithType: PathsManagement.IsKernelPathBuiltin(string)
+  nameWithType.vb: PathsManagement.IsKernelPathBuiltin(String)
+- uid: KS.Files.Paths.PathsManagement.IsKernelPathBuiltin*
+  name: IsKernelPathBuiltin
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_IsKernelPathBuiltin_
+  commentId: Overload:KS.Files.Paths.PathsManagement.IsKernelPathBuiltin
+  isSpec: "True"
+  fullName: KS.Files.Paths.PathsManagement.IsKernelPathBuiltin
+  nameWithType: PathsManagement.IsKernelPathBuiltin
+- uid: KS.Files.Paths.PathsManagement.IsKernelPathRegistered(System.String)
+  name: IsKernelPathRegistered(string)
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_IsKernelPathRegistered_System_String_
+  commentId: M:KS.Files.Paths.PathsManagement.IsKernelPathRegistered(System.String)
+  name.vb: IsKernelPathRegistered(String)
+  fullName: KS.Files.Paths.PathsManagement.IsKernelPathRegistered(string)
+  fullName.vb: KS.Files.Paths.PathsManagement.IsKernelPathRegistered(String)
+  nameWithType: PathsManagement.IsKernelPathRegistered(string)
+  nameWithType.vb: PathsManagement.IsKernelPathRegistered(String)
+- uid: KS.Files.Paths.PathsManagement.IsKernelPathRegistered*
+  name: IsKernelPathRegistered
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_IsKernelPathRegistered_
+  commentId: Overload:KS.Files.Paths.PathsManagement.IsKernelPathRegistered
+  isSpec: "True"
+  fullName: KS.Files.Paths.PathsManagement.IsKernelPathRegistered
+  nameWithType: PathsManagement.IsKernelPathRegistered
+- uid: KS.Files.Paths.PathsManagement.IsResettable(KS.Files.KernelPathType)
   name: IsResettable(KernelPathType)
-  href: api/KS.Files.Paths.html#KS_Files_Paths_IsResettable_KS_Files_KernelPathType_
-  commentId: M:KS.Files.Paths.IsResettable(KS.Files.KernelPathType)
-  fullName: KS.Files.Paths.IsResettable(KS.Files.KernelPathType)
-  nameWithType: Paths.IsResettable(KernelPathType)
-- uid: KS.Files.Paths.IsResettable*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_IsResettable_KS_Files_KernelPathType_
+  commentId: M:KS.Files.Paths.PathsManagement.IsResettable(KS.Files.KernelPathType)
+  fullName: KS.Files.Paths.PathsManagement.IsResettable(KS.Files.KernelPathType)
+  nameWithType: PathsManagement.IsResettable(KernelPathType)
+- uid: KS.Files.Paths.PathsManagement.IsResettable*
   name: IsResettable
-  href: api/KS.Files.Paths.html#KS_Files_Paths_IsResettable_
-  commentId: Overload:KS.Files.Paths.IsResettable
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_IsResettable_
+  commentId: Overload:KS.Files.Paths.PathsManagement.IsResettable
   isSpec: "True"
-  fullName: KS.Files.Paths.IsResettable
-  nameWithType: Paths.IsResettable
-- uid: KS.Files.Paths.JournalingPath
+  fullName: KS.Files.Paths.PathsManagement.IsResettable
+  nameWithType: PathsManagement.IsResettable
+- uid: KS.Files.Paths.PathsManagement.JournalingPath
   name: JournalingPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_JournalingPath
-  commentId: P:KS.Files.Paths.JournalingPath
-  fullName: KS.Files.Paths.JournalingPath
-  nameWithType: Paths.JournalingPath
-- uid: KS.Files.Paths.JournalingPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_JournalingPath
+  commentId: P:KS.Files.Paths.PathsManagement.JournalingPath
+  fullName: KS.Files.Paths.PathsManagement.JournalingPath
+  nameWithType: PathsManagement.JournalingPath
+- uid: KS.Files.Paths.PathsManagement.JournalingPath*
   name: JournalingPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_JournalingPath_
-  commentId: Overload:KS.Files.Paths.JournalingPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_JournalingPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.JournalingPath
   isSpec: "True"
-  fullName: KS.Files.Paths.JournalingPath
-  nameWithType: Paths.JournalingPath
-- uid: KS.Files.Paths.MALPath
+  fullName: KS.Files.Paths.PathsManagement.JournalingPath
+  nameWithType: PathsManagement.JournalingPath
+- uid: KS.Files.Paths.PathsManagement.MALPath
   name: MALPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_MALPath
-  commentId: P:KS.Files.Paths.MALPath
-  fullName: KS.Files.Paths.MALPath
-  nameWithType: Paths.MALPath
-- uid: KS.Files.Paths.MALPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_MALPath
+  commentId: P:KS.Files.Paths.PathsManagement.MALPath
+  fullName: KS.Files.Paths.PathsManagement.MALPath
+  nameWithType: PathsManagement.MALPath
+- uid: KS.Files.Paths.PathsManagement.MALPath*
   name: MALPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_MALPath_
-  commentId: Overload:KS.Files.Paths.MALPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_MALPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.MALPath
   isSpec: "True"
-  fullName: KS.Files.Paths.MALPath
-  nameWithType: Paths.MALPath
-- uid: KS.Files.Paths.MOTDPath
+  fullName: KS.Files.Paths.PathsManagement.MALPath
+  nameWithType: PathsManagement.MALPath
+- uid: KS.Files.Paths.PathsManagement.MOTDPath
   name: MOTDPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_MOTDPath
-  commentId: P:KS.Files.Paths.MOTDPath
-  fullName: KS.Files.Paths.MOTDPath
-  nameWithType: Paths.MOTDPath
-- uid: KS.Files.Paths.MOTDPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_MOTDPath
+  commentId: P:KS.Files.Paths.PathsManagement.MOTDPath
+  fullName: KS.Files.Paths.PathsManagement.MOTDPath
+  nameWithType: PathsManagement.MOTDPath
+- uid: KS.Files.Paths.PathsManagement.MOTDPath*
   name: MOTDPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_MOTDPath_
-  commentId: Overload:KS.Files.Paths.MOTDPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_MOTDPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.MOTDPath
   isSpec: "True"
-  fullName: KS.Files.Paths.MOTDPath
-  nameWithType: Paths.MOTDPath
-- uid: KS.Files.Paths.ModsPath
+  fullName: KS.Files.Paths.PathsManagement.MOTDPath
+  nameWithType: PathsManagement.MOTDPath
+- uid: KS.Files.Paths.PathsManagement.ModsPath
   name: ModsPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ModsPath
-  commentId: P:KS.Files.Paths.ModsPath
-  fullName: KS.Files.Paths.ModsPath
-  nameWithType: Paths.ModsPath
-- uid: KS.Files.Paths.ModsPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ModsPath
+  commentId: P:KS.Files.Paths.PathsManagement.ModsPath
+  fullName: KS.Files.Paths.PathsManagement.ModsPath
+  nameWithType: PathsManagement.ModsPath
+- uid: KS.Files.Paths.PathsManagement.ModsPath*
   name: ModsPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ModsPath_
-  commentId: Overload:KS.Files.Paths.ModsPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ModsPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.ModsPath
   isSpec: "True"
-  fullName: KS.Files.Paths.ModsPath
-  nameWithType: Paths.ModsPath
-- uid: KS.Files.Paths.RemindersPath
+  fullName: KS.Files.Paths.PathsManagement.ModsPath
+  nameWithType: PathsManagement.ModsPath
+- uid: KS.Files.Paths.PathsManagement.RegisterKernelPath(System.String,System.String)
+  name: RegisterKernelPath(string, string)
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_RegisterKernelPath_System_String_System_String_
+  commentId: M:KS.Files.Paths.PathsManagement.RegisterKernelPath(System.String,System.String)
+  name.vb: RegisterKernelPath(String, String)
+  fullName: KS.Files.Paths.PathsManagement.RegisterKernelPath(string, string)
+  fullName.vb: KS.Files.Paths.PathsManagement.RegisterKernelPath(String, String)
+  nameWithType: PathsManagement.RegisterKernelPath(string, string)
+  nameWithType.vb: PathsManagement.RegisterKernelPath(String, String)
+- uid: KS.Files.Paths.PathsManagement.RegisterKernelPath*
+  name: RegisterKernelPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_RegisterKernelPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.RegisterKernelPath
+  isSpec: "True"
+  fullName: KS.Files.Paths.PathsManagement.RegisterKernelPath
+  nameWithType: PathsManagement.RegisterKernelPath
+- uid: KS.Files.Paths.PathsManagement.RemindersPath
   name: RemindersPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_RemindersPath
-  commentId: P:KS.Files.Paths.RemindersPath
-  fullName: KS.Files.Paths.RemindersPath
-  nameWithType: Paths.RemindersPath
-- uid: KS.Files.Paths.RemindersPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_RemindersPath
+  commentId: P:KS.Files.Paths.PathsManagement.RemindersPath
+  fullName: KS.Files.Paths.PathsManagement.RemindersPath
+  nameWithType: PathsManagement.RemindersPath
+- uid: KS.Files.Paths.PathsManagement.RemindersPath*
   name: RemindersPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_RemindersPath_
-  commentId: Overload:KS.Files.Paths.RemindersPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_RemindersPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.RemindersPath
   isSpec: "True"
-  fullName: KS.Files.Paths.RemindersPath
-  nameWithType: Paths.RemindersPath
-- uid: KS.Files.Paths.RetroKSDownloadPath
+  fullName: KS.Files.Paths.PathsManagement.RemindersPath
+  nameWithType: PathsManagement.RemindersPath
+- uid: KS.Files.Paths.PathsManagement.RetroKSDownloadPath
   name: RetroKSDownloadPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_RetroKSDownloadPath
-  commentId: P:KS.Files.Paths.RetroKSDownloadPath
-  fullName: KS.Files.Paths.RetroKSDownloadPath
-  nameWithType: Paths.RetroKSDownloadPath
-- uid: KS.Files.Paths.RetroKSDownloadPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_RetroKSDownloadPath
+  commentId: P:KS.Files.Paths.PathsManagement.RetroKSDownloadPath
+  fullName: KS.Files.Paths.PathsManagement.RetroKSDownloadPath
+  nameWithType: PathsManagement.RetroKSDownloadPath
+- uid: KS.Files.Paths.PathsManagement.RetroKSDownloadPath*
   name: RetroKSDownloadPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_RetroKSDownloadPath_
-  commentId: Overload:KS.Files.Paths.RetroKSDownloadPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_RetroKSDownloadPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.RetroKSDownloadPath
   isSpec: "True"
-  fullName: KS.Files.Paths.RetroKSDownloadPath
-  nameWithType: Paths.RetroKSDownloadPath
-- uid: KS.Files.Paths.SaverConfigurationPath
+  fullName: KS.Files.Paths.PathsManagement.RetroKSDownloadPath
+  nameWithType: PathsManagement.RetroKSDownloadPath
+- uid: KS.Files.Paths.PathsManagement.SaverConfigurationPath
   name: SaverConfigurationPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_SaverConfigurationPath
-  commentId: P:KS.Files.Paths.SaverConfigurationPath
-  fullName: KS.Files.Paths.SaverConfigurationPath
-  nameWithType: Paths.SaverConfigurationPath
-- uid: KS.Files.Paths.SaverConfigurationPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_SaverConfigurationPath
+  commentId: P:KS.Files.Paths.PathsManagement.SaverConfigurationPath
+  fullName: KS.Files.Paths.PathsManagement.SaverConfigurationPath
+  nameWithType: PathsManagement.SaverConfigurationPath
+- uid: KS.Files.Paths.PathsManagement.SaverConfigurationPath*
   name: SaverConfigurationPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_SaverConfigurationPath_
-  commentId: Overload:KS.Files.Paths.SaverConfigurationPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_SaverConfigurationPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.SaverConfigurationPath
   isSpec: "True"
-  fullName: KS.Files.Paths.SaverConfigurationPath
-  nameWithType: Paths.SaverConfigurationPath
-- uid: KS.Files.Paths.ShellHistoriesPath
+  fullName: KS.Files.Paths.PathsManagement.SaverConfigurationPath
+  nameWithType: PathsManagement.SaverConfigurationPath
+- uid: KS.Files.Paths.PathsManagement.ShellHistoriesPath
   name: ShellHistoriesPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ShellHistoriesPath
-  commentId: P:KS.Files.Paths.ShellHistoriesPath
-  fullName: KS.Files.Paths.ShellHistoriesPath
-  nameWithType: Paths.ShellHistoriesPath
-- uid: KS.Files.Paths.ShellHistoriesPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ShellHistoriesPath
+  commentId: P:KS.Files.Paths.PathsManagement.ShellHistoriesPath
+  fullName: KS.Files.Paths.PathsManagement.ShellHistoriesPath
+  nameWithType: PathsManagement.ShellHistoriesPath
+- uid: KS.Files.Paths.PathsManagement.ShellHistoriesPath*
   name: ShellHistoriesPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ShellHistoriesPath_
-  commentId: Overload:KS.Files.Paths.ShellHistoriesPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ShellHistoriesPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.ShellHistoriesPath
   isSpec: "True"
-  fullName: KS.Files.Paths.ShellHistoriesPath
-  nameWithType: Paths.ShellHistoriesPath
-- uid: KS.Files.Paths.SpeedDialPath
+  fullName: KS.Files.Paths.PathsManagement.ShellHistoriesPath
+  nameWithType: PathsManagement.ShellHistoriesPath
+- uid: KS.Files.Paths.PathsManagement.SpeedDialPath
   name: SpeedDialPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_SpeedDialPath
-  commentId: P:KS.Files.Paths.SpeedDialPath
-  fullName: KS.Files.Paths.SpeedDialPath
-  nameWithType: Paths.SpeedDialPath
-- uid: KS.Files.Paths.SpeedDialPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_SpeedDialPath
+  commentId: P:KS.Files.Paths.PathsManagement.SpeedDialPath
+  fullName: KS.Files.Paths.PathsManagement.SpeedDialPath
+  nameWithType: PathsManagement.SpeedDialPath
+- uid: KS.Files.Paths.PathsManagement.SpeedDialPath*
   name: SpeedDialPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_SpeedDialPath_
-  commentId: Overload:KS.Files.Paths.SpeedDialPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_SpeedDialPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.SpeedDialPath
   isSpec: "True"
-  fullName: KS.Files.Paths.SpeedDialPath
-  nameWithType: Paths.SpeedDialPath
-- uid: KS.Files.Paths.SplashConfigurationPath
+  fullName: KS.Files.Paths.PathsManagement.SpeedDialPath
+  nameWithType: PathsManagement.SpeedDialPath
+- uid: KS.Files.Paths.PathsManagement.SplashConfigurationPath
   name: SplashConfigurationPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_SplashConfigurationPath
-  commentId: P:KS.Files.Paths.SplashConfigurationPath
-  fullName: KS.Files.Paths.SplashConfigurationPath
-  nameWithType: Paths.SplashConfigurationPath
-- uid: KS.Files.Paths.SplashConfigurationPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_SplashConfigurationPath
+  commentId: P:KS.Files.Paths.PathsManagement.SplashConfigurationPath
+  fullName: KS.Files.Paths.PathsManagement.SplashConfigurationPath
+  nameWithType: PathsManagement.SplashConfigurationPath
+- uid: KS.Files.Paths.PathsManagement.SplashConfigurationPath*
   name: SplashConfigurationPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_SplashConfigurationPath_
-  commentId: Overload:KS.Files.Paths.SplashConfigurationPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_SplashConfigurationPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.SplashConfigurationPath
   isSpec: "True"
-  fullName: KS.Files.Paths.SplashConfigurationPath
-  nameWithType: Paths.SplashConfigurationPath
-- uid: KS.Files.Paths.TempPath
+  fullName: KS.Files.Paths.PathsManagement.SplashConfigurationPath
+  nameWithType: PathsManagement.SplashConfigurationPath
+- uid: KS.Files.Paths.PathsManagement.TempPath
   name: TempPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_TempPath
-  commentId: P:KS.Files.Paths.TempPath
-  fullName: KS.Files.Paths.TempPath
-  nameWithType: Paths.TempPath
-- uid: KS.Files.Paths.TempPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_TempPath
+  commentId: P:KS.Files.Paths.PathsManagement.TempPath
+  fullName: KS.Files.Paths.PathsManagement.TempPath
+  nameWithType: PathsManagement.TempPath
+- uid: KS.Files.Paths.PathsManagement.TempPath*
   name: TempPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_TempPath_
-  commentId: Overload:KS.Files.Paths.TempPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_TempPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.TempPath
   isSpec: "True"
-  fullName: KS.Files.Paths.TempPath
-  nameWithType: Paths.TempPath
-- uid: KS.Files.Paths.ToDoListPath
+  fullName: KS.Files.Paths.PathsManagement.TempPath
+  nameWithType: PathsManagement.TempPath
+- uid: KS.Files.Paths.PathsManagement.ToDoListPath
   name: ToDoListPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ToDoListPath
-  commentId: P:KS.Files.Paths.ToDoListPath
-  fullName: KS.Files.Paths.ToDoListPath
-  nameWithType: Paths.ToDoListPath
-- uid: KS.Files.Paths.ToDoListPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ToDoListPath
+  commentId: P:KS.Files.Paths.PathsManagement.ToDoListPath
+  fullName: KS.Files.Paths.PathsManagement.ToDoListPath
+  nameWithType: PathsManagement.ToDoListPath
+- uid: KS.Files.Paths.PathsManagement.ToDoListPath*
   name: ToDoListPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_ToDoListPath_
-  commentId: Overload:KS.Files.Paths.ToDoListPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_ToDoListPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.ToDoListPath
   isSpec: "True"
-  fullName: KS.Files.Paths.ToDoListPath
-  nameWithType: Paths.ToDoListPath
-- uid: KS.Files.Paths.UserGroupsPath
+  fullName: KS.Files.Paths.PathsManagement.ToDoListPath
+  nameWithType: PathsManagement.ToDoListPath
+- uid: KS.Files.Paths.PathsManagement.UnregisterKernelPath(System.String)
+  name: UnregisterKernelPath(string)
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_UnregisterKernelPath_System_String_
+  commentId: M:KS.Files.Paths.PathsManagement.UnregisterKernelPath(System.String)
+  name.vb: UnregisterKernelPath(String)
+  fullName: KS.Files.Paths.PathsManagement.UnregisterKernelPath(string)
+  fullName.vb: KS.Files.Paths.PathsManagement.UnregisterKernelPath(String)
+  nameWithType: PathsManagement.UnregisterKernelPath(string)
+  nameWithType.vb: PathsManagement.UnregisterKernelPath(String)
+- uid: KS.Files.Paths.PathsManagement.UnregisterKernelPath*
+  name: UnregisterKernelPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_UnregisterKernelPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.UnregisterKernelPath
+  isSpec: "True"
+  fullName: KS.Files.Paths.PathsManagement.UnregisterKernelPath
+  nameWithType: PathsManagement.UnregisterKernelPath
+- uid: KS.Files.Paths.PathsManagement.UserGroupsPath
   name: UserGroupsPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_UserGroupsPath
-  commentId: P:KS.Files.Paths.UserGroupsPath
-  fullName: KS.Files.Paths.UserGroupsPath
-  nameWithType: Paths.UserGroupsPath
-- uid: KS.Files.Paths.UserGroupsPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_UserGroupsPath
+  commentId: P:KS.Files.Paths.PathsManagement.UserGroupsPath
+  fullName: KS.Files.Paths.PathsManagement.UserGroupsPath
+  nameWithType: PathsManagement.UserGroupsPath
+- uid: KS.Files.Paths.PathsManagement.UserGroupsPath*
   name: UserGroupsPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_UserGroupsPath_
-  commentId: Overload:KS.Files.Paths.UserGroupsPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_UserGroupsPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.UserGroupsPath
   isSpec: "True"
-  fullName: KS.Files.Paths.UserGroupsPath
-  nameWithType: Paths.UserGroupsPath
-- uid: KS.Files.Paths.UsersPath
+  fullName: KS.Files.Paths.PathsManagement.UserGroupsPath
+  nameWithType: PathsManagement.UserGroupsPath
+- uid: KS.Files.Paths.PathsManagement.UsersPath
   name: UsersPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_UsersPath
-  commentId: P:KS.Files.Paths.UsersPath
-  fullName: KS.Files.Paths.UsersPath
-  nameWithType: Paths.UsersPath
-- uid: KS.Files.Paths.UsersPath*
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_UsersPath
+  commentId: P:KS.Files.Paths.PathsManagement.UsersPath
+  fullName: KS.Files.Paths.PathsManagement.UsersPath
+  nameWithType: PathsManagement.UsersPath
+- uid: KS.Files.Paths.PathsManagement.UsersPath*
   name: UsersPath
-  href: api/KS.Files.Paths.html#KS_Files_Paths_UsersPath_
-  commentId: Overload:KS.Files.Paths.UsersPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_UsersPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.UsersPath
   isSpec: "True"
-  fullName: KS.Files.Paths.UsersPath
-  nameWithType: Paths.UsersPath
+  fullName: KS.Files.Paths.PathsManagement.UsersPath
+  nameWithType: PathsManagement.UsersPath
 - uid: KS.Kernel
   name: KS.Kernel
   href: api/KS.Kernel.html
