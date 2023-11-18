@@ -13,15 +13,12 @@ references:
   commentId: T:KS.Arguments.ArgumentExecutor
   fullName: KS.Arguments.ArgumentExecutor
   nameWithType: ArgumentExecutor
-- uid: KS.Arguments.ArgumentExecutor.Execute(System.String,System.String[],System.String[])
-  name: Execute(string, string[], string[])
-  href: api/KS.Arguments.ArgumentExecutor.html#KS_Arguments_ArgumentExecutor_Execute_System_String_System_String___System_String___
-  commentId: M:KS.Arguments.ArgumentExecutor.Execute(System.String,System.String[],System.String[])
-  name.vb: Execute(String, String(), String())
-  fullName: KS.Arguments.ArgumentExecutor.Execute(string, string[], string[])
-  fullName.vb: KS.Arguments.ArgumentExecutor.Execute(String, String(), String())
-  nameWithType: ArgumentExecutor.Execute(string, string[], string[])
-  nameWithType.vb: ArgumentExecutor.Execute(String, String(), String())
+- uid: KS.Arguments.ArgumentExecutor.Execute(KS.Arguments.ArgumentParameters)
+  name: Execute(ArgumentParameters)
+  href: api/KS.Arguments.ArgumentExecutor.html#KS_Arguments_ArgumentExecutor_Execute_KS_Arguments_ArgumentParameters_
+  commentId: M:KS.Arguments.ArgumentExecutor.Execute(KS.Arguments.ArgumentParameters)
+  fullName: KS.Arguments.ArgumentExecutor.Execute(KS.Arguments.ArgumentParameters)
+  nameWithType: ArgumentExecutor.Execute(ArgumentParameters)
 - uid: KS.Arguments.ArgumentExecutor.Execute*
   name: Execute
   href: api/KS.Arguments.ArgumentExecutor.html#KS_Arguments_ArgumentExecutor_Execute_
@@ -145,6 +142,90 @@ references:
   isSpec: "True"
   fullName: KS.Arguments.ArgumentInfo.Obsolete
   nameWithType: ArgumentInfo.Obsolete
+- uid: KS.Arguments.ArgumentParameters
+  name: ArgumentParameters
+  href: api/KS.Arguments.ArgumentParameters.html
+  commentId: T:KS.Arguments.ArgumentParameters
+  fullName: KS.Arguments.ArgumentParameters
+  nameWithType: ArgumentParameters
+- uid: KS.Arguments.ArgumentParameters.ArgumentText
+  name: ArgumentText
+  href: api/KS.Arguments.ArgumentParameters.html#KS_Arguments_ArgumentParameters_ArgumentText
+  commentId: P:KS.Arguments.ArgumentParameters.ArgumentText
+  fullName: KS.Arguments.ArgumentParameters.ArgumentText
+  nameWithType: ArgumentParameters.ArgumentText
+- uid: KS.Arguments.ArgumentParameters.ArgumentText*
+  name: ArgumentText
+  href: api/KS.Arguments.ArgumentParameters.html#KS_Arguments_ArgumentParameters_ArgumentText_
+  commentId: Overload:KS.Arguments.ArgumentParameters.ArgumentText
+  isSpec: "True"
+  fullName: KS.Arguments.ArgumentParameters.ArgumentText
+  nameWithType: ArgumentParameters.ArgumentText
+- uid: KS.Arguments.ArgumentParameters.ArgumentsList
+  name: ArgumentsList
+  href: api/KS.Arguments.ArgumentParameters.html#KS_Arguments_ArgumentParameters_ArgumentsList
+  commentId: P:KS.Arguments.ArgumentParameters.ArgumentsList
+  fullName: KS.Arguments.ArgumentParameters.ArgumentsList
+  nameWithType: ArgumentParameters.ArgumentsList
+- uid: KS.Arguments.ArgumentParameters.ArgumentsList*
+  name: ArgumentsList
+  href: api/KS.Arguments.ArgumentParameters.html#KS_Arguments_ArgumentParameters_ArgumentsList_
+  commentId: Overload:KS.Arguments.ArgumentParameters.ArgumentsList
+  isSpec: "True"
+  fullName: KS.Arguments.ArgumentParameters.ArgumentsList
+  nameWithType: ArgumentParameters.ArgumentsList
+- uid: KS.Arguments.ArgumentParameters.ArgumentsOriginalList
+  name: ArgumentsOriginalList
+  href: api/KS.Arguments.ArgumentParameters.html#KS_Arguments_ArgumentParameters_ArgumentsOriginalList
+  commentId: P:KS.Arguments.ArgumentParameters.ArgumentsOriginalList
+  fullName: KS.Arguments.ArgumentParameters.ArgumentsOriginalList
+  nameWithType: ArgumentParameters.ArgumentsOriginalList
+- uid: KS.Arguments.ArgumentParameters.ArgumentsOriginalList*
+  name: ArgumentsOriginalList
+  href: api/KS.Arguments.ArgumentParameters.html#KS_Arguments_ArgumentParameters_ArgumentsOriginalList_
+  commentId: Overload:KS.Arguments.ArgumentParameters.ArgumentsOriginalList
+  isSpec: "True"
+  fullName: KS.Arguments.ArgumentParameters.ArgumentsOriginalList
+  nameWithType: ArgumentParameters.ArgumentsOriginalList
+- uid: KS.Arguments.ArgumentParameters.ArgumentsOriginalText
+  name: ArgumentsOriginalText
+  href: api/KS.Arguments.ArgumentParameters.html#KS_Arguments_ArgumentParameters_ArgumentsOriginalText
+  commentId: P:KS.Arguments.ArgumentParameters.ArgumentsOriginalText
+  fullName: KS.Arguments.ArgumentParameters.ArgumentsOriginalText
+  nameWithType: ArgumentParameters.ArgumentsOriginalText
+- uid: KS.Arguments.ArgumentParameters.ArgumentsOriginalText*
+  name: ArgumentsOriginalText
+  href: api/KS.Arguments.ArgumentParameters.html#KS_Arguments_ArgumentParameters_ArgumentsOriginalText_
+  commentId: Overload:KS.Arguments.ArgumentParameters.ArgumentsOriginalText
+  isSpec: "True"
+  fullName: KS.Arguments.ArgumentParameters.ArgumentsOriginalText
+  nameWithType: ArgumentParameters.ArgumentsOriginalText
+- uid: KS.Arguments.ArgumentParameters.ArgumentsText
+  name: ArgumentsText
+  href: api/KS.Arguments.ArgumentParameters.html#KS_Arguments_ArgumentParameters_ArgumentsText
+  commentId: P:KS.Arguments.ArgumentParameters.ArgumentsText
+  fullName: KS.Arguments.ArgumentParameters.ArgumentsText
+  nameWithType: ArgumentParameters.ArgumentsText
+- uid: KS.Arguments.ArgumentParameters.ArgumentsText*
+  name: ArgumentsText
+  href: api/KS.Arguments.ArgumentParameters.html#KS_Arguments_ArgumentParameters_ArgumentsText_
+  commentId: Overload:KS.Arguments.ArgumentParameters.ArgumentsText
+  isSpec: "True"
+  fullName: KS.Arguments.ArgumentParameters.ArgumentsText
+  nameWithType: ArgumentParameters.ArgumentsText
+- uid: KS.Arguments.ArgumentParameters.SwitchesList
+  name: SwitchesList
+  href: api/KS.Arguments.ArgumentParameters.html#KS_Arguments_ArgumentParameters_SwitchesList
+  commentId: P:KS.Arguments.ArgumentParameters.SwitchesList
+  fullName: KS.Arguments.ArgumentParameters.SwitchesList
+  nameWithType: ArgumentParameters.SwitchesList
+- uid: KS.Arguments.ArgumentParameters.SwitchesList*
+  name: SwitchesList
+  href: api/KS.Arguments.ArgumentParameters.html#KS_Arguments_ArgumentParameters_SwitchesList_
+  commentId: Overload:KS.Arguments.ArgumentParameters.SwitchesList
+  isSpec: "True"
+  fullName: KS.Arguments.ArgumentParameters.SwitchesList
+  nameWithType: ArgumentParameters.SwitchesList
 - uid: KS.Arguments.ArgumentParse
   name: ArgumentParse
   href: api/KS.Arguments.ArgumentParse.html
@@ -229,15 +310,12 @@ references:
   commentId: T:KS.Arguments.IArgument
   fullName: KS.Arguments.IArgument
   nameWithType: IArgument
-- uid: KS.Arguments.IArgument.Execute(System.String,System.String[],System.String[])
-  name: Execute(string, string[], string[])
-  href: api/KS.Arguments.IArgument.html#KS_Arguments_IArgument_Execute_System_String_System_String___System_String___
-  commentId: M:KS.Arguments.IArgument.Execute(System.String,System.String[],System.String[])
-  name.vb: Execute(String, String(), String())
-  fullName: KS.Arguments.IArgument.Execute(string, string[], string[])
-  fullName.vb: KS.Arguments.IArgument.Execute(String, String(), String())
-  nameWithType: IArgument.Execute(string, string[], string[])
-  nameWithType.vb: IArgument.Execute(String, String(), String())
+- uid: KS.Arguments.IArgument.Execute(KS.Arguments.ArgumentParameters)
+  name: Execute(ArgumentParameters)
+  href: api/KS.Arguments.IArgument.html#KS_Arguments_IArgument_Execute_KS_Arguments_ArgumentParameters_
+  commentId: M:KS.Arguments.IArgument.Execute(KS.Arguments.ArgumentParameters)
+  fullName: KS.Arguments.IArgument.Execute(KS.Arguments.ArgumentParameters)
+  nameWithType: IArgument.Execute(ArgumentParameters)
 - uid: KS.Arguments.IArgument.Execute*
   name: Execute
   href: api/KS.Arguments.IArgument.html#KS_Arguments_IArgument_Execute_
