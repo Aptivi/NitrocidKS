@@ -157,7 +157,6 @@ Namespace Network.RemoteDebug
             RDebugStopping = False
             DebugTCP.Stop()
             DebugDevices.Clear()
-            Thread.CurrentThread.Abort()
         End Sub
 
         ''' <summary>
