@@ -113,7 +113,6 @@ Public Module RemoteDebugger
         RDebugStopping = False
         DebugTCP.Stop()
         dbgConns.Clear()
-        Thread.CurrentThread.Abort()
     End Sub
 
     ''' <summary>
