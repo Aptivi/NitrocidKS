@@ -45348,6 +45348,38 @@ references:
   isSpec: "True"
   fullName: KS.Shell.ShellBase.Commands.BaseCommand.HelpHelper
   nameWithType: BaseCommand.HelpHelper
+- uid: KS.Shell.ShellBase.Commands.CancellationHandlers
+  name: CancellationHandlers
+  href: api/KS.Shell.ShellBase.Commands.CancellationHandlers.html
+  commentId: T:KS.Shell.ShellBase.Commands.CancellationHandlers
+  fullName: KS.Shell.ShellBase.Commands.CancellationHandlers
+  nameWithType: CancellationHandlers
+- uid: KS.Shell.ShellBase.Commands.CancellationHandlers.AllowCancel
+  name: AllowCancel()
+  href: api/KS.Shell.ShellBase.Commands.CancellationHandlers.html#KS_Shell_ShellBase_Commands_CancellationHandlers_AllowCancel
+  commentId: M:KS.Shell.ShellBase.Commands.CancellationHandlers.AllowCancel
+  fullName: KS.Shell.ShellBase.Commands.CancellationHandlers.AllowCancel()
+  nameWithType: CancellationHandlers.AllowCancel()
+- uid: KS.Shell.ShellBase.Commands.CancellationHandlers.AllowCancel*
+  name: AllowCancel
+  href: api/KS.Shell.ShellBase.Commands.CancellationHandlers.html#KS_Shell_ShellBase_Commands_CancellationHandlers_AllowCancel_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CancellationHandlers.AllowCancel
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Commands.CancellationHandlers.AllowCancel
+  nameWithType: CancellationHandlers.AllowCancel
+- uid: KS.Shell.ShellBase.Commands.CancellationHandlers.InhibitCancel
+  name: InhibitCancel()
+  href: api/KS.Shell.ShellBase.Commands.CancellationHandlers.html#KS_Shell_ShellBase_Commands_CancellationHandlers_InhibitCancel
+  commentId: M:KS.Shell.ShellBase.Commands.CancellationHandlers.InhibitCancel
+  fullName: KS.Shell.ShellBase.Commands.CancellationHandlers.InhibitCancel()
+  nameWithType: CancellationHandlers.InhibitCancel()
+- uid: KS.Shell.ShellBase.Commands.CancellationHandlers.InhibitCancel*
+  name: InhibitCancel
+  href: api/KS.Shell.ShellBase.Commands.CancellationHandlers.html#KS_Shell_ShellBase_Commands_CancellationHandlers_InhibitCancel_
+  commentId: Overload:KS.Shell.ShellBase.Commands.CancellationHandlers.InhibitCancel
+  isSpec: "True"
+  fullName: KS.Shell.ShellBase.Commands.CancellationHandlers.InhibitCancel
+  nameWithType: CancellationHandlers.InhibitCancel
 - uid: KS.Shell.ShellBase.Commands.CommandExecutor
   name: CommandExecutor
   href: api/KS.Shell.ShellBase.Commands.CommandExecutor.html

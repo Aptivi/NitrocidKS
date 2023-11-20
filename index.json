@@ -2064,6 +2064,11 @@
     "title": "Class BaseCommand | Nitrocid KS API - Aptivi",
     "keywords": "Class BaseCommand The command executor class Inheritance object BaseCommand Implements ICommand Namespace: KS.Shell.ShellBase.Commands Assembly: Nitrocid.dll Syntax public abstract class BaseCommand : ICommand Methods | Edit this page View Source Execute(CommandParameters, ref string) Executes a command Declaration public virtual int Execute(CommandParameters parameters, ref string variableValue) Parameters Type Name Description CommandParameters parameters Command parameters including passed arguments and switches information string variableValue Variable value to provide to target variable while -set is passed Returns Type Description int Error code for the command | Edit this page View Source ExecuteDumb(CommandParameters, ref string) Executes a command on dumb consoles Declaration public virtual int ExecuteDumb(CommandParameters parameters, ref string variableValue) Parameters Type Name Description CommandParameters parameters Command parameters including passed arguments and switches information string variableValue Variable value to provide to target variable while -set is passed Returns Type Description int Error code for the command | Edit this page View Source HelpHelper() The help helper Declaration public virtual void HelpHelper() Implements ICommand"
   },
+  "api/KS.Shell.ShellBase.Commands.CancellationHandlers.html": {
+    "href": "api/KS.Shell.ShellBase.Commands.CancellationHandlers.html",
+    "title": "Class CancellationHandlers | Nitrocid KS API - Aptivi",
+    "keywords": "Class CancellationHandlers Cancellation handler tools Inheritance object CancellationHandlers Namespace: KS.Shell.ShellBase.Commands Assembly: Nitrocid.dll Syntax public static class CancellationHandlers Methods | Edit this page View Source AllowCancel() Allows cancelling the current command Declaration public static void AllowCancel() | Edit this page View Source InhibitCancel() Prevents cancelling the current command Declaration public static void InhibitCancel()"
+  },
   "api/KS.Shell.ShellBase.Commands.CommandExecutor.html": {
     "href": "api/KS.Shell.ShellBase.Commands.CommandExecutor.html",
     "title": "Class CommandExecutor | Nitrocid KS API - Aptivi",
@@ -2107,7 +2112,7 @@
   "api/KS.Shell.ShellBase.Commands.html": {
     "href": "api/KS.Shell.ShellBase.Commands.html",
     "title": "Namespace KS.Shell.ShellBase.Commands | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace KS.Shell.ShellBase.Commands Classes BaseCommand The command executor class CommandExecutor Command executor module CommandInfo Command information class CommandManager Command management class CommandParameters Command parameters that holds information about arguments and switches Interfaces ICommand Base command executor Enums CommandFlags Command flags"
+    "keywords": "Namespace KS.Shell.ShellBase.Commands Classes BaseCommand The command executor class CancellationHandlers Cancellation handler tools CommandExecutor Command executor module CommandInfo Command information class CommandManager Command management class CommandParameters Command parameters that holds information about arguments and switches Interfaces ICommand Base command executor Enums CommandFlags Command flags"
   },
   "api/KS.Shell.ShellBase.Help.HelpPrint.html": {
     "href": "api/KS.Shell.ShellBase.Help.HelpPrint.html",
