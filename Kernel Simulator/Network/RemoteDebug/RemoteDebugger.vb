@@ -155,11 +155,15 @@ Namespace Network.RemoteDebug
                 End Try
             End While
 
-            RStream.Wait()
-            RDebugStopping = False
-            DebugTCP.Stop()
-            DebugDevices.Clear()
-            Thread.CurrentThread.Interrupt()
+            Try
+                RStream.Wait()
+            Catch ex As Exception
+                Wdbg(DebugLevel.I, $"Failed to wait: {ex.Message}")
+            Finally
+                RDebugStopping = False
+                DebugTCP.Stop()
+                DebugDevices.Clear()
+            End Try
         End Sub
 
         ''' <summary>
