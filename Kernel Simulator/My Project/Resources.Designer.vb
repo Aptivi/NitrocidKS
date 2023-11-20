@@ -22,7 +22,7 @@ Namespace My.Resources
     '''<summary>
     '''  A strongly-typed resource class, for looking up localized strings, etc.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0"),  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0"),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
      Global.Microsoft.VisualBasic.HideModuleNameAttribute()>  _
@@ -478,7 +478,42 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to [{&quot;colorId&quot;:0,&quot;hexString&quot;:&quot;#000000&quot;,&quot;rgb&quot;:{&quot;r&quot;:0,&quot;g&quot;:0,&quot;b&quot;:0},&quot;hsl&quot;:{&quot;h&quot;:0,&quot;s&quot;:0,&quot;l&quot;:0},&quot;name&quot;:&quot;Black&quot;},{&quot;colorId&quot;:1,&quot;hexString&quot;:&quot;#800000&quot;,&quot;rgb&quot;:{&quot;r&quot;:128,&quot;g&quot;:0,&quot;b&quot;:0},&quot;hsl&quot;:{&quot;h&quot;:0,&quot;s&quot;:100,&quot;l&quot;:25},&quot;name&quot;:&quot;Maroon&quot;},{&quot;colorId&quot;:2,&quot;hexString&quot;:&quot;#008000&quot;,&quot;rgb&quot;:{&quot;r&quot;:0,&quot;g&quot;:128,&quot;b&quot;:0},&quot;hsl&quot;:{&quot;h&quot;:120,&quot;s&quot;:100,&quot;l&quot;:25},&quot;name&quot;:&quot;Green&quot;},{&quot;colorId&quot;:3,&quot;hexString&quot;:&quot;#808000&quot;,&quot;rgb&quot;:{&quot;r&quot;:128,&quot;g&quot;:128,&quot;b&quot;:0},&quot;hsl&quot;:{&quot;h&quot;:60,&quot;s&quot;:100,&quot;l&quot;:25},&quot;name&quot;:&quot;Olive&quot;},{&quot;colorId&quot;:4,&quot;hexString&quot;:&quot;#000080&quot;,&q....
+        '''  Looks up a localized string similar to [
+        '''  {
+        '''    &quot;colorId&quot;: 0,
+        '''    &quot;hexString&quot;: &quot;#000000&quot;,
+        '''    &quot;rgb&quot;: {
+        '''      &quot;r&quot;: 0,
+        '''      &quot;g&quot;: 0,
+        '''      &quot;b&quot;: 0
+        '''    },
+        '''    &quot;hsl&quot;: {
+        '''      &quot;h&quot;: 0,
+        '''      &quot;s&quot;: 0,
+        '''      &quot;l&quot;: 0
+        '''    },
+        '''    &quot;name&quot;: &quot;Black&quot;
+        '''  },
+        '''  {
+        '''    &quot;colorId&quot;: 1,
+        '''    &quot;hexString&quot;: &quot;#800000&quot;,
+        '''    &quot;rgb&quot;: {
+        '''      &quot;r&quot;: 128,
+        '''      &quot;g&quot;: 0,
+        '''      &quot;b&quot;: 0
+        '''    },
+        '''    &quot;hsl&quot;: {
+        '''      &quot;h&quot;: 0,
+        '''      &quot;s&quot;: 100,
+        '''      &quot;l&quot;: 25
+        '''    },
+        '''    &quot;name&quot;: &quot;Maroon&quot;
+        '''  },
+        '''  {
+        '''    &quot;colorId&quot;: 2,
+        '''    &quot;hexString&quot;: &quot;#008000&quot;,
+        '''    &quot;rgb&quot;: {
+        '''      &quot;r&quot;: 0 [rest of string was truncated]&quot;;.
         '''</summary>
         Public ReadOnly Property ConsoleColorsData() As String
             Get
@@ -1110,8 +1145,8 @@ Namespace My.Resources
         '''  &quot;Available commands: {0}&quot;: &quot;Dost?pne polecenia: {0}&quot;,
         '''  &quot;Write command: &quot;: &quot;Napisz polecenie:&quot;,
         '''  &quot;Command injection has been cancelled.&quot;: &quot;Wprowadzanie polece? zosta?o anulowane.&quot;,
-        '''  &quot;Separate boot arguments with commas without spaces, for example, &apos;motd,gpuprobe&apos;&quot;: &quot;Oddziel argumenty rozruchowe przecinkami bez spacji, na przyk?ad �motd, gpuprobe�&quot;,
-        '''  &quot;Separate commands on &apos;cmdinject&apos; with colons with spaces, for example, &apos;cmdinject setthemes Hacker : beep 1024 0.5&apos;&quot;: &quot;Oddzielne polecenia na �cmdi [rest of string was truncated]&quot;;.
+        '''  &quot;Separate boot arguments with commas without spaces, for example, &apos;motd,gpuprobe&apos;&quot;: &quot;Oddziel argumenty rozruchowe przecinkami bez spacji, na przyk?ad „motd, gpuprobe”&quot;,
+        '''  &quot;Separate commands on &apos;cmdinject&apos; with colons with spaces, for example, &apos;cmdinject setthemes Hacker : beep 1024 0.5&apos;&quot;: &quot;Oddzielne polecenia na „cmdi [rest of string was truncated]&quot;;.
         '''</summary>
         Public ReadOnly Property pol() As String
             Get
@@ -1192,7 +1227,7 @@ Namespace My.Resources
         '''  &quot;Write command: &quot;: &quot;Comanda de scriere:&quot;,
         '''  &quot;Command injection has been cancelled.&quot;: &quot;Injectarea comenzii a fost anulat?.&quot;,
         '''  &quot;Separate boot arguments with commas without spaces, for example, &apos;motd,gpuprobe&apos;&quot;: &quot;Separa?i argumentele de pornire cu virgule f?r? spa?ii, de exemplu, &apos;motd, gpuprobe&apos;&quot;,
-        '''  &quot;Separate commands on &apos;cmdinject&apos; with colons with spaces, for example, &apos;cmdinject setthemes Hacker : beep 1024 0.5&apos;&quot;: &quot;Separa comenzile de pe �cm [rest of string was truncated]&quot;;.
+        '''  &quot;Separate commands on &apos;cmdinject&apos; with colons with spaces, for example, &apos;cmdinject setthemes Hacker : beep 1024 0.5&apos;&quot;: &quot;Separa comenzile de pe „cm [rest of string was truncated]&quot;;.
         '''</summary>
         Public ReadOnly Property rmn() As String
             Get
@@ -1321,7 +1356,7 @@ Namespace My.Resources
         '''  &quot;Available commands: {0}&quot;: &quot;Dostupne komande: {0}&quot;,
         '''  &quot;Write command: &quot;: &quot;Vrite command:&quot;,
         '''  &quot;Command injection has been cancelled.&quot;: &quot;Ubacivanje komande je otkazano.&quot;,
-        '''  &quot;Separate boot arguments with commas without spaces, for example, &apos;motd,gpuprobe&apos;&quot;: &quot;Razdvojite argumente za pokretanje zarezima bez razmaka, na primer, �motd, gpuprobe�&quot;,
+        '''  &quot;Separate boot arguments with commas without spaces, for example, &apos;motd,gpuprobe&apos;&quot;: &quot;Razdvojite argumente za pokretanje zarezima bez razmaka, na primer, „motd, gpuprobe“&quot;,
         '''  &quot;Separate commands on &apos;cmdinject&apos; with colons with spaces, for example, &apos;cmdinject setthemes Hacker : beep 1024 0.5&apos;&quot;: &quot;Odvojite komande na &apos;cmdinject&apos; sa kol [rest of string was truncated]&quot;;.
         '''</summary>
         Public ReadOnly Property srb() As String
