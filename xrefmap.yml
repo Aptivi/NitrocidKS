@@ -8013,6 +8013,40 @@ references:
   commentId: T:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor
   fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor
   nameWithType: TextWriterWhereColor
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWhere(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: RenderWhere(string, int, int, bool, int, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereColor_RenderWhere_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWhere(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: RenderWhere(String, Integer, Integer, Boolean, Integer, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWhere(string, int, int, bool, int, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWhere(String, Integer, Integer, Boolean, Integer, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: TextWriterWhereColor.RenderWhere(string, int, int, bool, int, Color, Color, params object[])
+  nameWithType.vb: TextWriterWhereColor.RenderWhere(String, Integer, Integer, Boolean, Integer, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWhere(System.String,System.Int32,System.Int32,System.Boolean,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: RenderWhere(string, int, int, bool, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereColor_RenderWhere_System_String_System_Int32_System_Int32_System_Boolean_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWhere(System.String,System.Int32,System.Int32,System.Boolean,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: RenderWhere(String, Integer, Integer, Boolean, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWhere(string, int, int, bool, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWhere(String, Integer, Integer, Boolean, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: TextWriterWhereColor.RenderWhere(string, int, int, bool, Color, Color, params object[])
+  nameWithType.vb: TextWriterWhereColor.RenderWhere(String, Integer, Integer, Boolean, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWhere(System.String,System.Int32,System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: RenderWhere(string, int, int, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereColor_RenderWhere_System_String_System_Int32_System_Int32_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWhere(System.String,System.Int32,System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: RenderWhere(String, Integer, Integer, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWhere(string, int, int, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWhere(String, Integer, Integer, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: TextWriterWhereColor.RenderWhere(string, int, int, Color, Color, params object[])
+  nameWithType.vb: TextWriterWhereColor.RenderWhere(String, Integer, Integer, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWhere*
+  name: RenderWhere
+  href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereColor_RenderWhere_
+  commentId: Overload:KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWhere
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWhere
+  nameWithType: TextWriterWhereColor.RenderWhere
 - uid: KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.RenderWherePlain(System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Object[])
   name: RenderWherePlain(string, int, int, bool, int, params object[])
   href: api/KS.ConsoleBase.Writers.ConsoleWriters.TextWriterWhereColor.html#KS_ConsoleBase_Writers_ConsoleWriters_TextWriterWhereColor_RenderWherePlain_System_String_System_Int32_System_Int32_System_Boolean_System_Int32_System_Object___
@@ -8664,6 +8698,31 @@ references:
   commentId: T:KS.ConsoleBase.Writers.FancyWriters.BorderColor
   fullName: KS.ConsoleBase.Writers.FancyWriters.BorderColor
   nameWithType: BorderColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorder(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color)
+  name: RenderBorder(int, int, int, int, char, char, char, char, char, char, char, char, Color, Color)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BorderColor.html#KS_ConsoleBase_Writers_FancyWriters_BorderColor_RenderBorder_System_Int32_System_Int32_System_Int32_System_Int32_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_Color_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorder(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color)
+  name.vb: RenderBorder(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color)
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorder(int, int, int, int, char, char, char, char, char, char, char, char, Terminaux.Colors.Color, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorder(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.Color, Terminaux.Colors.Color)
+  nameWithType: BorderColor.RenderBorder(int, int, int, int, char, char, char, char, char, char, char, char, Color, Color)
+  nameWithType.vb: BorderColor.RenderBorder(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color)
+- uid: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorder(System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color)
+  name: RenderBorder(int, int, int, int, Color, Color)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BorderColor.html#KS_ConsoleBase_Writers_FancyWriters_BorderColor_RenderBorder_System_Int32_System_Int32_System_Int32_System_Int32_Terminaux_Colors_Color_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorder(System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color)
+  name.vb: RenderBorder(Integer, Integer, Integer, Integer, Color, Color)
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorder(int, int, int, int, Terminaux.Colors.Color, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorder(Integer, Integer, Integer, Integer, Terminaux.Colors.Color, Terminaux.Colors.Color)
+  nameWithType: BorderColor.RenderBorder(int, int, int, int, Color, Color)
+  nameWithType.vb: BorderColor.RenderBorder(Integer, Integer, Integer, Integer, Color, Color)
+- uid: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorder*
+  name: RenderBorder
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BorderColor.html#KS_ConsoleBase_Writers_FancyWriters_BorderColor_RenderBorder_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorder
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorder
+  nameWithType: BorderColor.RenderBorder
 - uid: KS.ConsoleBase.Writers.FancyWriters.BorderColor.RenderBorderPlain(System.Int32,System.Int32,System.Int32,System.Int32)
   name: RenderBorderPlain(int, int, int, int)
   href: api/KS.ConsoleBase.Writers.FancyWriters.BorderColor.html#KS_ConsoleBase_Writers_FancyWriters_BorderColor_RenderBorderPlain_System_Int32_System_Int32_System_Int32_System_Int32_
@@ -8862,6 +8921,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BoxColor.RenderBox(Integer, Integer, Integer, Integer)
   nameWithType: BoxColor.RenderBox(int, int, int, int)
   nameWithType.vb: BoxColor.RenderBox(Integer, Integer, Integer, Integer)
+- uid: KS.ConsoleBase.Writers.FancyWriters.BoxColor.RenderBox(System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name: RenderBox(int, int, int, int, Color)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BoxColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxColor_RenderBox_System_Int32_System_Int32_System_Int32_System_Int32_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.BoxColor.RenderBox(System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color)
+  name.vb: RenderBox(Integer, Integer, Integer, Integer, Color)
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BoxColor.RenderBox(int, int, int, int, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BoxColor.RenderBox(Integer, Integer, Integer, Integer, Terminaux.Colors.Color)
+  nameWithType: BoxColor.RenderBox(int, int, int, int, Color)
+  nameWithType.vb: BoxColor.RenderBox(Integer, Integer, Integer, Integer, Color)
 - uid: KS.ConsoleBase.Writers.FancyWriters.BoxColor.RenderBox*
   name: RenderBox
   href: api/KS.ConsoleBase.Writers.FancyWriters.BoxColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxColor_RenderBox_
@@ -8952,6 +9020,24 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char)
   nameWithType: BoxFrameColor.RenderBoxFrame(int, int, int, int, char, char, char, char, char, char, char, char)
   nameWithType.vb: BoxFrameColor.RenderBoxFrame(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char)
+- uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color)
+  name: RenderBoxFrame(int, int, int, int, char, char, char, char, char, char, char, char, Color, Color)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameColor_RenderBoxFrame_System_Int32_System_Int32_System_Int32_System_Int32_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_Color_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color)
+  name.vb: RenderBoxFrame(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color)
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(int, int, int, int, char, char, char, char, char, char, char, char, Terminaux.Colors.Color, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.Color, Terminaux.Colors.Color)
+  nameWithType: BoxFrameColor.RenderBoxFrame(int, int, int, int, char, char, char, char, char, char, char, char, Color, Color)
+  nameWithType.vb: BoxFrameColor.RenderBoxFrame(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color)
+- uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color)
+  name: RenderBoxFrame(int, int, int, int, Color, Color)
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameColor_RenderBoxFrame_System_Int32_System_Int32_System_Int32_System_Int32_Terminaux_Colors_Color_Terminaux_Colors_Color_
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color)
+  name.vb: RenderBoxFrame(Integer, Integer, Integer, Integer, Color, Color)
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(int, int, int, int, Terminaux.Colors.Color, Terminaux.Colors.Color)
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame(Integer, Integer, Integer, Integer, Terminaux.Colors.Color, Terminaux.Colors.Color)
+  nameWithType: BoxFrameColor.RenderBoxFrame(int, int, int, int, Color, Color)
+  nameWithType.vb: BoxFrameColor.RenderBoxFrame(Integer, Integer, Integer, Integer, Color, Color)
 - uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.RenderBoxFrame*
   name: RenderBoxFrame
   href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameColor_RenderBoxFrame_
@@ -9132,6 +9218,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
   nameWithType: BoxFrameTextColor.RenderBoxFrame(string, int, int, int, int, char, char, char, char, char, char, char, char, params object[])
   nameWithType.vb: BoxFrameTextColor.RenderBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: RenderBoxFrame(string, int, int, int, int, char, char, char, char, char, char, char, char, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameTextColor_RenderBoxFrame_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: RenderBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(string, int, int, int, int, char, char, char, char, char, char, char, char, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: BoxFrameTextColor.RenderBoxFrame(string, int, int, int, int, char, char, char, char, char, char, char, char, Color, Color, params object[])
+  nameWithType.vb: BoxFrameTextColor.RenderBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Color, Color, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Object[])
   name: RenderBoxFrame(string, int, int, int, int, params object[])
   href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameTextColor_RenderBoxFrame_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Object___
@@ -9141,6 +9236,15 @@ references:
   fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(String, Integer, Integer, Integer, Integer, ParamArray Object())
   nameWithType: BoxFrameTextColor.RenderBoxFrame(string, int, int, int, int, params object[])
   nameWithType.vb: BoxFrameTextColor.RenderBoxFrame(String, Integer, Integer, Integer, Integer, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: RenderBoxFrame(string, int, int, int, int, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameTextColor_RenderBoxFrame_System_String_System_Int32_System_Int32_System_Int32_System_Int32_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: RenderBoxFrame(String, Integer, Integer, Integer, Integer, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(string, int, int, int, int, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame(String, Integer, Integer, Integer, Integer, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: BoxFrameTextColor.RenderBoxFrame(string, int, int, int, int, Color, Color, params object[])
+  nameWithType.vb: BoxFrameTextColor.RenderBoxFrame(String, Integer, Integer, Integer, Integer, Color, Color, ParamArray Object())
 - uid: KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.RenderBoxFrame*
   name: RenderBoxFrame
   href: api/KS.ConsoleBase.Writers.FancyWriters.BoxFrameTextColor.html#KS_ConsoleBase_Writers_FancyWriters_BoxFrameTextColor_RenderBoxFrame_
@@ -10037,6 +10141,22 @@ references:
   commentId: T:KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor
   fullName: KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor
   nameWithType: FigletWhereColor
+- uid: KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.RenderFigletWhere(System.String,System.Int32,System.Int32,System.Boolean,Figletize.Utilities.FigletizeFont,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name: RenderFigletWhere(string, int, int, bool, FigletizeFont, Color, Color, params object[])
+  href: api/KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.html#KS_ConsoleBase_Writers_FancyWriters_FigletWhereColor_RenderFigletWhere_System_String_System_Int32_System_Int32_System_Boolean_Figletize_Utilities_FigletizeFont_Terminaux_Colors_Color_Terminaux_Colors_Color_System_Object___
+  commentId: M:KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.RenderFigletWhere(System.String,System.Int32,System.Int32,System.Boolean,Figletize.Utilities.FigletizeFont,Terminaux.Colors.Color,Terminaux.Colors.Color,System.Object[])
+  name.vb: RenderFigletWhere(String, Integer, Integer, Boolean, FigletizeFont, Color, Color, ParamArray Object())
+  fullName: KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.RenderFigletWhere(string, int, int, bool, Figletize.Utilities.FigletizeFont, Terminaux.Colors.Color, Terminaux.Colors.Color, params object[])
+  fullName.vb: KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.RenderFigletWhere(String, Integer, Integer, Boolean, Figletize.Utilities.FigletizeFont, Terminaux.Colors.Color, Terminaux.Colors.Color, ParamArray Object())
+  nameWithType: FigletWhereColor.RenderFigletWhere(string, int, int, bool, FigletizeFont, Color, Color, params object[])
+  nameWithType.vb: FigletWhereColor.RenderFigletWhere(String, Integer, Integer, Boolean, FigletizeFont, Color, Color, ParamArray Object())
+- uid: KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.RenderFigletWhere*
+  name: RenderFigletWhere
+  href: api/KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.html#KS_ConsoleBase_Writers_FancyWriters_FigletWhereColor_RenderFigletWhere_
+  commentId: Overload:KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.RenderFigletWhere
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.RenderFigletWhere
+  nameWithType: FigletWhereColor.RenderFigletWhere
 - uid: KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.RenderFigletWherePlain(System.String,System.Int32,System.Int32,System.Boolean,Figletize.Utilities.FigletizeFont,System.Object[])
   name: RenderFigletWherePlain(string, int, int, bool, FigletizeFont, params object[])
   href: api/KS.ConsoleBase.Writers.FancyWriters.FigletWhereColor.html#KS_ConsoleBase_Writers_FancyWriters_FigletWhereColor_RenderFigletWherePlain_System_String_System_Int32_System_Int32_System_Boolean_Figletize_Utilities_FigletizeFont_System_Object___
