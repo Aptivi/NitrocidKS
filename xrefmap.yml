@@ -41644,6 +41644,22 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Text.TextTools.SplitNewLines
   nameWithType: TextTools.SplitNewLines
+- uid: KS.Misc.Text.TextTools.SplitNewLinesOld(System.String)
+  name: SplitNewLinesOld(string)
+  href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_SplitNewLinesOld_System_String_
+  commentId: M:KS.Misc.Text.TextTools.SplitNewLinesOld(System.String)
+  name.vb: SplitNewLinesOld(String)
+  fullName: KS.Misc.Text.TextTools.SplitNewLinesOld(string)
+  fullName.vb: KS.Misc.Text.TextTools.SplitNewLinesOld(String)
+  nameWithType: TextTools.SplitNewLinesOld(string)
+  nameWithType.vb: TextTools.SplitNewLinesOld(String)
+- uid: KS.Misc.Text.TextTools.SplitNewLinesOld*
+  name: SplitNewLinesOld
+  href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_SplitNewLinesOld_
+  commentId: Overload:KS.Misc.Text.TextTools.SplitNewLinesOld
+  isSpec: "True"
+  fullName: KS.Misc.Text.TextTools.SplitNewLinesOld
+  nameWithType: TextTools.SplitNewLinesOld
 - uid: KS.Misc.Text.TextTools.StartsWithAnyOf(System.String,System.String[])
   name: StartsWithAnyOf(string, string[])
   href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_StartsWithAnyOf_System_String_System_String___
