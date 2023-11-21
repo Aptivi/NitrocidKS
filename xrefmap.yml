@@ -23878,6 +23878,47 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Copying.CopyFileOrDir
   nameWithType: Copying.CopyFileOrDir
+- uid: KS.Files.Operations.Copying.TryCopyDirectory(System.String,System.String)
+  name: TryCopyDirectory(string, string)
+  href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_TryCopyDirectory_System_String_System_String_
+  commentId: M:KS.Files.Operations.Copying.TryCopyDirectory(System.String,System.String)
+  name.vb: TryCopyDirectory(String, String)
+  fullName: KS.Files.Operations.Copying.TryCopyDirectory(string, string)
+  fullName.vb: KS.Files.Operations.Copying.TryCopyDirectory(String, String)
+  nameWithType: Copying.TryCopyDirectory(string, string)
+  nameWithType.vb: Copying.TryCopyDirectory(String, String)
+- uid: KS.Files.Operations.Copying.TryCopyDirectory(System.String,System.String,System.Boolean)
+  name: TryCopyDirectory(string, string, bool)
+  href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_TryCopyDirectory_System_String_System_String_System_Boolean_
+  commentId: M:KS.Files.Operations.Copying.TryCopyDirectory(System.String,System.String,System.Boolean)
+  name.vb: TryCopyDirectory(String, String, Boolean)
+  fullName: KS.Files.Operations.Copying.TryCopyDirectory(string, string, bool)
+  fullName.vb: KS.Files.Operations.Copying.TryCopyDirectory(String, String, Boolean)
+  nameWithType: Copying.TryCopyDirectory(string, string, bool)
+  nameWithType.vb: Copying.TryCopyDirectory(String, String, Boolean)
+- uid: KS.Files.Operations.Copying.TryCopyDirectory*
+  name: TryCopyDirectory
+  href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_TryCopyDirectory_
+  commentId: Overload:KS.Files.Operations.Copying.TryCopyDirectory
+  isSpec: "True"
+  fullName: KS.Files.Operations.Copying.TryCopyDirectory
+  nameWithType: Copying.TryCopyDirectory
+- uid: KS.Files.Operations.Copying.TryCopyFile(System.String,System.String)
+  name: TryCopyFile(string, string)
+  href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_TryCopyFile_System_String_System_String_
+  commentId: M:KS.Files.Operations.Copying.TryCopyFile(System.String,System.String)
+  name.vb: TryCopyFile(String, String)
+  fullName: KS.Files.Operations.Copying.TryCopyFile(string, string)
+  fullName.vb: KS.Files.Operations.Copying.TryCopyFile(String, String)
+  nameWithType: Copying.TryCopyFile(string, string)
+  nameWithType.vb: Copying.TryCopyFile(String, String)
+- uid: KS.Files.Operations.Copying.TryCopyFile*
+  name: TryCopyFile
+  href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_TryCopyFile_
+  commentId: Overload:KS.Files.Operations.Copying.TryCopyFile
+  isSpec: "True"
+  fullName: KS.Files.Operations.Copying.TryCopyFile
+  nameWithType: Copying.TryCopyFile
 - uid: KS.Files.Operations.Copying.TryCopyFileOrDir(System.String,System.String)
   name: TryCopyFileOrDir(string, string)
   href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_TryCopyFileOrDir_System_String_System_String_
@@ -24177,6 +24218,47 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Moving.MoveFileOrDir
   nameWithType: Moving.MoveFileOrDir
+- uid: KS.Files.Operations.Moving.TryMoveDirectory(System.String,System.String)
+  name: TryMoveDirectory(string, string)
+  href: api/KS.Files.Operations.Moving.html#KS_Files_Operations_Moving_TryMoveDirectory_System_String_System_String_
+  commentId: M:KS.Files.Operations.Moving.TryMoveDirectory(System.String,System.String)
+  name.vb: TryMoveDirectory(String, String)
+  fullName: KS.Files.Operations.Moving.TryMoveDirectory(string, string)
+  fullName.vb: KS.Files.Operations.Moving.TryMoveDirectory(String, String)
+  nameWithType: Moving.TryMoveDirectory(string, string)
+  nameWithType.vb: Moving.TryMoveDirectory(String, String)
+- uid: KS.Files.Operations.Moving.TryMoveDirectory(System.String,System.String,System.Boolean)
+  name: TryMoveDirectory(string, string, bool)
+  href: api/KS.Files.Operations.Moving.html#KS_Files_Operations_Moving_TryMoveDirectory_System_String_System_String_System_Boolean_
+  commentId: M:KS.Files.Operations.Moving.TryMoveDirectory(System.String,System.String,System.Boolean)
+  name.vb: TryMoveDirectory(String, String, Boolean)
+  fullName: KS.Files.Operations.Moving.TryMoveDirectory(string, string, bool)
+  fullName.vb: KS.Files.Operations.Moving.TryMoveDirectory(String, String, Boolean)
+  nameWithType: Moving.TryMoveDirectory(string, string, bool)
+  nameWithType.vb: Moving.TryMoveDirectory(String, String, Boolean)
+- uid: KS.Files.Operations.Moving.TryMoveDirectory*
+  name: TryMoveDirectory
+  href: api/KS.Files.Operations.Moving.html#KS_Files_Operations_Moving_TryMoveDirectory_
+  commentId: Overload:KS.Files.Operations.Moving.TryMoveDirectory
+  isSpec: "True"
+  fullName: KS.Files.Operations.Moving.TryMoveDirectory
+  nameWithType: Moving.TryMoveDirectory
+- uid: KS.Files.Operations.Moving.TryMoveFile(System.String,System.String)
+  name: TryMoveFile(string, string)
+  href: api/KS.Files.Operations.Moving.html#KS_Files_Operations_Moving_TryMoveFile_System_String_System_String_
+  commentId: M:KS.Files.Operations.Moving.TryMoveFile(System.String,System.String)
+  name.vb: TryMoveFile(String, String)
+  fullName: KS.Files.Operations.Moving.TryMoveFile(string, string)
+  fullName.vb: KS.Files.Operations.Moving.TryMoveFile(String, String)
+  nameWithType: Moving.TryMoveFile(string, string)
+  nameWithType.vb: Moving.TryMoveFile(String, String)
+- uid: KS.Files.Operations.Moving.TryMoveFile*
+  name: TryMoveFile
+  href: api/KS.Files.Operations.Moving.html#KS_Files_Operations_Moving_TryMoveFile_
+  commentId: Overload:KS.Files.Operations.Moving.TryMoveFile
+  isSpec: "True"
+  fullName: KS.Files.Operations.Moving.TryMoveFile
+  nameWithType: Moving.TryMoveFile
 - uid: KS.Files.Operations.Moving.TryMoveFileOrDir(System.String,System.String)
   name: TryMoveFileOrDir(string, string)
   href: api/KS.Files.Operations.Moving.html#KS_Files_Operations_Moving_TryMoveFileOrDir_System_String_System_String_

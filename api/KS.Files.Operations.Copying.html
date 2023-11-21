@@ -144,7 +144,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Operations_Copying_CopyDirectory_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Files.Operations.Copying.CopyDirectory(System.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Operations/Copying.cs/#L78">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Operations/Copying.cs/#L100">View Source</a>
   </span>
   <a id="KS_Files_Operations_Copying_CopyDirectory_" data-uid="KS.Files.Operations.Copying.CopyDirectory*"></a>
   <h4 id="KS_Files_Operations_Copying_CopyDirectory_System_String_System_String_System_Boolean_" data-uid="KS.Files.Operations.Copying.CopyDirectory(System.String,System.String,System.Boolean)">CopyDirectory(string, string, bool)</h4>
@@ -190,7 +190,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Operations_Copying_CopyFile_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Files.Operations.Copying.CopyFile(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Operations/Copying.cs/#L86">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Operations/Copying.cs/#L131">View Source</a>
   </span>
   <a id="KS_Files_Operations_Copying_CopyFile_" data-uid="KS.Files.Operations.Copying.CopyFile*"></a>
   <h4 id="KS_Files_Operations_Copying_CopyFile_System_String_System_String_" data-uid="KS.Files.Operations.Copying.CopyFile(System.String,System.String)">CopyFile(string, string)</h4>
@@ -261,6 +261,225 @@
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">Destination</span></td>
         <td><p>Target file or directory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Operations_Copying_TryCopyDirectory_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Files.Operations.Copying.TryCopyDirectory(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Operations/Copying.cs/#L79">View Source</a>
+  </span>
+  <a id="KS_Files_Operations_Copying_TryCopyDirectory_" data-uid="KS.Files.Operations.Copying.TryCopyDirectory*"></a>
+  <h4 id="KS_Files_Operations_Copying_TryCopyDirectory_System_String_System_String_" data-uid="KS.Files.Operations.Copying.TryCopyDirectory(System.String,System.String)">TryCopyDirectory(string, string)</h4>
+  <div class="markdown level1 summary"><p>Copies the directory from source to destination</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryCopyDirectory(string Source, string Destination)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Source</span></td>
+        <td><p>Source directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Destination</span></td>
+        <td><p>Target directory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if successful; False if unsuccessful</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Operations_Copying_TryCopyDirectory_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.Files.Operations.Copying.TryCopyDirectory(System.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Operations/Copying.cs/#L111">View Source</a>
+  </span>
+  <a id="KS_Files_Operations_Copying_TryCopyDirectory_" data-uid="KS.Files.Operations.Copying.TryCopyDirectory*"></a>
+  <h4 id="KS_Files_Operations_Copying_TryCopyDirectory_System_String_System_String_System_Boolean_" data-uid="KS.Files.Operations.Copying.TryCopyDirectory(System.String,System.String,System.Boolean)">TryCopyDirectory(string, string, bool)</h4>
+  <div class="markdown level1 summary"><p>Copies the directory from source to destination</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryCopyDirectory(string Source, string Destination, bool ShowProgress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Source</span></td>
+        <td><p>Source directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Destination</span></td>
+        <td><p>Target directory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ShowProgress</span></td>
+        <td><p>Whether or not to show what files are being copied</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if successful; False if unsuccessful</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Files_Operations_Copying_TryCopyFile_System_String_System_String_.md&amp;value=---%0Auid%3A%20KS.Files.Operations.Copying.TryCopyFile(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Files/Operations/Copying.cs/#L141">View Source</a>
+  </span>
+  <a id="KS_Files_Operations_Copying_TryCopyFile_" data-uid="KS.Files.Operations.Copying.TryCopyFile*"></a>
+  <h4 id="KS_Files_Operations_Copying_TryCopyFile_System_String_System_String_" data-uid="KS.Files.Operations.Copying.TryCopyFile(System.String,System.String)">TryCopyFile(string, string)</h4>
+  <div class="markdown level1 summary"><p>Copies the file from source to destination</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryCopyFile(string Source, string Destination)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Source</span></td>
+        <td><p>Source file</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Destination</span></td>
+        <td><p>Target directory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if successful; False if unsuccessful</p>
 </td>
       </tr>
     </tbody>
