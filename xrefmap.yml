@@ -16614,6 +16614,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.CopyDirectory
   nameWithType: BaseFilesystemDriver.CopyDirectory
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.CopyFile(System.String,System.String)
+  name: CopyFile(string, string)
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_CopyFile_System_String_System_String_
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.CopyFile(System.String,System.String)
+  name.vb: CopyFile(String, String)
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.CopyFile(string, string)
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.CopyFile(String, String)
+  nameWithType: BaseFilesystemDriver.CopyFile(string, string)
+  nameWithType.vb: BaseFilesystemDriver.CopyFile(String, String)
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.CopyFile*
+  name: CopyFile
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_CopyFile_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.CopyFile
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.CopyFile
+  nameWithType: BaseFilesystemDriver.CopyFile
 - uid: KS.Drivers.Filesystem.BaseFilesystemDriver.CopyFileOrDir(System.String,System.String)
   name: CopyFileOrDir(string, string)
   href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_CopyFileOrDir_System_String_System_String_
@@ -17096,6 +17112,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.MoveDirectory
   nameWithType: BaseFilesystemDriver.MoveDirectory
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.MoveFile(System.String,System.String)
+  name: MoveFile(string, string)
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_MoveFile_System_String_System_String_
+  commentId: M:KS.Drivers.Filesystem.BaseFilesystemDriver.MoveFile(System.String,System.String)
+  name.vb: MoveFile(String, String)
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.MoveFile(string, string)
+  fullName.vb: KS.Drivers.Filesystem.BaseFilesystemDriver.MoveFile(String, String)
+  nameWithType: BaseFilesystemDriver.MoveFile(string, string)
+  nameWithType.vb: BaseFilesystemDriver.MoveFile(String, String)
+- uid: KS.Drivers.Filesystem.BaseFilesystemDriver.MoveFile*
+  name: MoveFile
+  href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_MoveFile_
+  commentId: Overload:KS.Drivers.Filesystem.BaseFilesystemDriver.MoveFile
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.BaseFilesystemDriver.MoveFile
+  nameWithType: BaseFilesystemDriver.MoveFile
 - uid: KS.Drivers.Filesystem.BaseFilesystemDriver.MoveFileOrDir(System.String,System.String)
   name: MoveFileOrDir(string, string)
   href: api/KS.Drivers.Filesystem.BaseFilesystemDriver.html#KS_Drivers_Filesystem_BaseFilesystemDriver_MoveFileOrDir_System_String_System_String_
@@ -17876,6 +17908,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.IFilesystemDriver.CopyDirectory
   nameWithType: IFilesystemDriver.CopyDirectory
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.CopyFile(System.String,System.String)
+  name: CopyFile(string, string)
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_CopyFile_System_String_System_String_
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.CopyFile(System.String,System.String)
+  name.vb: CopyFile(String, String)
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.CopyFile(string, string)
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.CopyFile(String, String)
+  nameWithType: IFilesystemDriver.CopyFile(string, string)
+  nameWithType.vb: IFilesystemDriver.CopyFile(String, String)
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.CopyFile*
+  name: CopyFile
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_CopyFile_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.CopyFile
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.CopyFile
+  nameWithType: IFilesystemDriver.CopyFile
 - uid: KS.Drivers.Filesystem.IFilesystemDriver.CopyFileOrDir(System.String,System.String)
   name: CopyFileOrDir(string, string)
   href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_CopyFileOrDir_System_String_System_String_
@@ -18306,6 +18354,22 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.Filesystem.IFilesystemDriver.MoveDirectory
   nameWithType: IFilesystemDriver.MoveDirectory
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.MoveFile(System.String,System.String)
+  name: MoveFile(string, string)
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_MoveFile_System_String_System_String_
+  commentId: M:KS.Drivers.Filesystem.IFilesystemDriver.MoveFile(System.String,System.String)
+  name.vb: MoveFile(String, String)
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.MoveFile(string, string)
+  fullName.vb: KS.Drivers.Filesystem.IFilesystemDriver.MoveFile(String, String)
+  nameWithType: IFilesystemDriver.MoveFile(string, string)
+  nameWithType.vb: IFilesystemDriver.MoveFile(String, String)
+- uid: KS.Drivers.Filesystem.IFilesystemDriver.MoveFile*
+  name: MoveFile
+  href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_MoveFile_
+  commentId: Overload:KS.Drivers.Filesystem.IFilesystemDriver.MoveFile
+  isSpec: "True"
+  fullName: KS.Drivers.Filesystem.IFilesystemDriver.MoveFile
+  nameWithType: IFilesystemDriver.MoveFile
 - uid: KS.Drivers.Filesystem.IFilesystemDriver.MoveFileOrDir(System.String,System.String)
   name: MoveFileOrDir(string, string)
   href: api/KS.Drivers.Filesystem.IFilesystemDriver.html#KS_Drivers_Filesystem_IFilesystemDriver_MoveFileOrDir_System_String_System_String_
@@ -23782,6 +23846,22 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Copying.CopyDirectory
   nameWithType: Copying.CopyDirectory
+- uid: KS.Files.Operations.Copying.CopyFile(System.String,System.String)
+  name: CopyFile(string, string)
+  href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_CopyFile_System_String_System_String_
+  commentId: M:KS.Files.Operations.Copying.CopyFile(System.String,System.String)
+  name.vb: CopyFile(String, String)
+  fullName: KS.Files.Operations.Copying.CopyFile(string, string)
+  fullName.vb: KS.Files.Operations.Copying.CopyFile(String, String)
+  nameWithType: Copying.CopyFile(string, string)
+  nameWithType.vb: Copying.CopyFile(String, String)
+- uid: KS.Files.Operations.Copying.CopyFile*
+  name: CopyFile
+  href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_CopyFile_
+  commentId: Overload:KS.Files.Operations.Copying.CopyFile
+  isSpec: "True"
+  fullName: KS.Files.Operations.Copying.CopyFile
+  nameWithType: Copying.CopyFile
 - uid: KS.Files.Operations.Copying.CopyFileOrDir(System.String,System.String)
   name: CopyFileOrDir(string, string)
   href: api/KS.Files.Operations.Copying.html#KS_Files_Operations_Copying_CopyFileOrDir_System_String_System_String_
@@ -24065,6 +24145,22 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Moving.MoveDirectory
   nameWithType: Moving.MoveDirectory
+- uid: KS.Files.Operations.Moving.MoveFile(System.String,System.String)
+  name: MoveFile(string, string)
+  href: api/KS.Files.Operations.Moving.html#KS_Files_Operations_Moving_MoveFile_System_String_System_String_
+  commentId: M:KS.Files.Operations.Moving.MoveFile(System.String,System.String)
+  name.vb: MoveFile(String, String)
+  fullName: KS.Files.Operations.Moving.MoveFile(string, string)
+  fullName.vb: KS.Files.Operations.Moving.MoveFile(String, String)
+  nameWithType: Moving.MoveFile(string, string)
+  nameWithType.vb: Moving.MoveFile(String, String)
+- uid: KS.Files.Operations.Moving.MoveFile*
+  name: MoveFile
+  href: api/KS.Files.Operations.Moving.html#KS_Files_Operations_Moving_MoveFile_
+  commentId: Overload:KS.Files.Operations.Moving.MoveFile
+  isSpec: "True"
+  fullName: KS.Files.Operations.Moving.MoveFile
+  nameWithType: Moving.MoveFile
 - uid: KS.Files.Operations.Moving.MoveFileOrDir(System.String,System.String)
   name: MoveFileOrDir(string, string)
   href: api/KS.Files.Operations.Moving.html#KS_Files_Operations_Moving_MoveFileOrDir_System_String_System_String_
