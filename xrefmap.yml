@@ -33415,6 +33415,19 @@ references:
   isSpec: "True"
   fullName: KS.Kernel.KernelPlatform.IsOnUnix
   nameWithType: KernelPlatform.IsOnUnix
+- uid: KS.Kernel.KernelPlatform.IsOnUnixMusl
+  name: IsOnUnixMusl()
+  href: api/KS.Kernel.KernelPlatform.html#KS_Kernel_KernelPlatform_IsOnUnixMusl
+  commentId: M:KS.Kernel.KernelPlatform.IsOnUnixMusl
+  fullName: KS.Kernel.KernelPlatform.IsOnUnixMusl()
+  nameWithType: KernelPlatform.IsOnUnixMusl()
+- uid: KS.Kernel.KernelPlatform.IsOnUnixMusl*
+  name: IsOnUnixMusl
+  href: api/KS.Kernel.KernelPlatform.html#KS_Kernel_KernelPlatform_IsOnUnixMusl_
+  commentId: Overload:KS.Kernel.KernelPlatform.IsOnUnixMusl
+  isSpec: "True"
+  fullName: KS.Kernel.KernelPlatform.IsOnUnixMusl
+  nameWithType: KernelPlatform.IsOnUnixMusl
 - uid: KS.Kernel.KernelPlatform.IsOnWindows
   name: IsOnWindows()
   href: api/KS.Kernel.KernelPlatform.html#KS_Kernel_KernelPlatform_IsOnWindows
