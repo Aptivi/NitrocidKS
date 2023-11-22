@@ -5281,6 +5281,19 @@ references:
   isSpec: "True"
   fullName: KS.ConsoleBase.Interactive.BaseInteractiveTui.HandleExit
   nameWithType: BaseInteractiveTui.HandleExit
+- uid: KS.ConsoleBase.Interactive.BaseInteractiveTui.Instance
+  name: Instance
+  href: api/KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_Instance
+  commentId: P:KS.ConsoleBase.Interactive.BaseInteractiveTui.Instance
+  fullName: KS.ConsoleBase.Interactive.BaseInteractiveTui.Instance
+  nameWithType: BaseInteractiveTui.Instance
+- uid: KS.ConsoleBase.Interactive.BaseInteractiveTui.Instance*
+  name: Instance
+  href: api/KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_Instance_
+  commentId: Overload:KS.ConsoleBase.Interactive.BaseInteractiveTui.Instance
+  isSpec: "True"
+  fullName: KS.ConsoleBase.Interactive.BaseInteractiveTui.Instance
+  nameWithType: BaseInteractiveTui.Instance
 - uid: KS.ConsoleBase.Interactive.BaseInteractiveTui.KeyBindingOptionColor
   name: KeyBindingOptionColor
   href: api/KS.ConsoleBase.Interactive.BaseInteractiveTui.html#KS_ConsoleBase_Interactive_BaseInteractiveTui_KeyBindingOptionColor
