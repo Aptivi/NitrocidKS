@@ -25011,6 +25011,15 @@ references:
   commentId: M:KS.Files.Operations.Selection.SelectFile
   fullName: KS.Files.Operations.Selection.SelectFile()
   nameWithType: Selection.SelectFile()
+- uid: KS.Files.Operations.Selection.SelectFile(System.String)
+  name: SelectFile(string)
+  href: api/KS.Files.Operations.Selection.html#KS_Files_Operations_Selection_SelectFile_System_String_
+  commentId: M:KS.Files.Operations.Selection.SelectFile(System.String)
+  name.vb: SelectFile(String)
+  fullName: KS.Files.Operations.Selection.SelectFile(string)
+  fullName.vb: KS.Files.Operations.Selection.SelectFile(String)
+  nameWithType: Selection.SelectFile(string)
+  nameWithType.vb: Selection.SelectFile(String)
 - uid: KS.Files.Operations.Selection.SelectFile*
   name: SelectFile
   href: api/KS.Files.Operations.Selection.html#KS_Files_Operations_Selection_SelectFile_
@@ -25024,6 +25033,15 @@ references:
   commentId: M:KS.Files.Operations.Selection.SelectFolder
   fullName: KS.Files.Operations.Selection.SelectFolder()
   nameWithType: Selection.SelectFolder()
+- uid: KS.Files.Operations.Selection.SelectFolder(System.String)
+  name: SelectFolder(string)
+  href: api/KS.Files.Operations.Selection.html#KS_Files_Operations_Selection_SelectFolder_System_String_
+  commentId: M:KS.Files.Operations.Selection.SelectFolder(System.String)
+  name.vb: SelectFolder(String)
+  fullName: KS.Files.Operations.Selection.SelectFolder(string)
+  fullName.vb: KS.Files.Operations.Selection.SelectFolder(String)
+  nameWithType: Selection.SelectFolder(string)
+  nameWithType.vb: Selection.SelectFolder(String)
 - uid: KS.Files.Operations.Selection.SelectFolder*
   name: SelectFolder
   href: api/KS.Files.Operations.Selection.html#KS_Files_Operations_Selection_SelectFolder_
