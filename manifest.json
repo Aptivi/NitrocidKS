@@ -1995,6 +1995,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Operations.Selection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Operations.Selection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Files.Operations.Writing.yml",
       "output": {
         ".html": {
@@ -3059,6 +3069,26 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Misc.Interactives.FileManagerCli.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Interactives.FileSelectorCli.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Interactives.FileSelectorCli.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Interactives.FolderSelectorCli.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Interactives.FolderSelectorCli.html"
         }
       },
       "version": ""
