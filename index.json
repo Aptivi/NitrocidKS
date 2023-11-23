@@ -1334,6 +1334,16 @@
     "title": "Namespace KS.Kernel.Threading | Nitrocid KS API - Aptivi",
     "keywords": "Namespace KS.Kernel.Threading Classes KernelThread The kernel thread to simplify the access to making new threads, starting them, and stopping them ThreadManager Thread management module"
   },
+  "api/KS.Kernel.Time.Alarm.AlarmTools.html": {
+    "href": "api/KS.Kernel.Time.Alarm.AlarmTools.html",
+    "title": "Class AlarmTools | Nitrocid KS API - Aptivi",
+    "keywords": "Class AlarmTools Alarm tools Inheritance object AlarmTools Namespace: KS.Kernel.Time.Alarm Assembly: Nitrocid.dll Syntax public static class AlarmTools Methods | Edit this page View Source GetAlarmFromId(string) Gets an alarm from ID Declaration public static KeyValuePair<(string, string), DateTime> GetAlarmFromId(string alarmId) Parameters Type Name Description string alarmId String identifier of an alarm Returns Type Description KeyValuePair<(string, string), DateTime> A key value pair instance of the whole alarm. | Edit this page View Source IsAlarmRegistered(string) Checks to see if the alarm is registered Declaration public static bool IsAlarmRegistered(string alarmId) Parameters Type Name Description string alarmId String identifier of an alarm Returns Type Description bool True if found, false if not. | Edit this page View Source StartAlarm(string, string, int) Starts an alarm Declaration public static void StartAlarm(string alarmId, string alarmName, int alarmValue) Parameters Type Name Description string alarmId String identifier of the alarm string alarmName Name of the alarm int alarmValue Alarm value | Edit this page View Source StopAlarm(int) Stops an alarm Declaration public static void StopAlarm(int alarmIdx) Parameters Type Name Description int alarmIdx Index of an alarm | Edit this page View Source StopAlarm(string) Stops an alarm Declaration public static void StopAlarm(string alarmId) Parameters Type Name Description string alarmId String identifier of an alarm"
+  },
+  "api/KS.Kernel.Time.Alarm.html": {
+    "href": "api/KS.Kernel.Time.Alarm.html",
+    "title": "Namespace KS.Kernel.Time.Alarm | Nitrocid KS API - Aptivi",
+    "keywords": "Namespace KS.Kernel.Time.Alarm Classes AlarmTools Alarm tools"
+  },
   "api/KS.Kernel.Time.Calendars.BaseCalendar.html": {
     "href": "api/KS.Kernel.Time.Calendars.BaseCalendar.html",
     "title": "Class BaseCalendar | Nitrocid KS API - Aptivi",

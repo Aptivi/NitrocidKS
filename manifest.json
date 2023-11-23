@@ -2685,6 +2685,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Alarm.AlarmTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Alarm.AlarmTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Kernel.Time.Alarm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Kernel.Time.Alarm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Kernel.Time.Calendars.BaseCalendar.yml",
       "output": {
         ".html": {

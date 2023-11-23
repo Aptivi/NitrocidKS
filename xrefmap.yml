@@ -34314,6 +34314,91 @@ references:
   commentId: N:KS.Kernel.Time
   fullName: KS.Kernel.Time
   nameWithType: KS.Kernel.Time
+- uid: KS.Kernel.Time.Alarm
+  name: KS.Kernel.Time.Alarm
+  href: api/KS.Kernel.Time.Alarm.html
+  commentId: N:KS.Kernel.Time.Alarm
+  fullName: KS.Kernel.Time.Alarm
+  nameWithType: KS.Kernel.Time.Alarm
+- uid: KS.Kernel.Time.Alarm.AlarmTools
+  name: AlarmTools
+  href: api/KS.Kernel.Time.Alarm.AlarmTools.html
+  commentId: T:KS.Kernel.Time.Alarm.AlarmTools
+  fullName: KS.Kernel.Time.Alarm.AlarmTools
+  nameWithType: AlarmTools
+- uid: KS.Kernel.Time.Alarm.AlarmTools.GetAlarmFromId(System.String)
+  name: GetAlarmFromId(string)
+  href: api/KS.Kernel.Time.Alarm.AlarmTools.html#KS_Kernel_Time_Alarm_AlarmTools_GetAlarmFromId_System_String_
+  commentId: M:KS.Kernel.Time.Alarm.AlarmTools.GetAlarmFromId(System.String)
+  name.vb: GetAlarmFromId(String)
+  fullName: KS.Kernel.Time.Alarm.AlarmTools.GetAlarmFromId(string)
+  fullName.vb: KS.Kernel.Time.Alarm.AlarmTools.GetAlarmFromId(String)
+  nameWithType: AlarmTools.GetAlarmFromId(string)
+  nameWithType.vb: AlarmTools.GetAlarmFromId(String)
+- uid: KS.Kernel.Time.Alarm.AlarmTools.GetAlarmFromId*
+  name: GetAlarmFromId
+  href: api/KS.Kernel.Time.Alarm.AlarmTools.html#KS_Kernel_Time_Alarm_AlarmTools_GetAlarmFromId_
+  commentId: Overload:KS.Kernel.Time.Alarm.AlarmTools.GetAlarmFromId
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Alarm.AlarmTools.GetAlarmFromId
+  nameWithType: AlarmTools.GetAlarmFromId
+- uid: KS.Kernel.Time.Alarm.AlarmTools.IsAlarmRegistered(System.String)
+  name: IsAlarmRegistered(string)
+  href: api/KS.Kernel.Time.Alarm.AlarmTools.html#KS_Kernel_Time_Alarm_AlarmTools_IsAlarmRegistered_System_String_
+  commentId: M:KS.Kernel.Time.Alarm.AlarmTools.IsAlarmRegistered(System.String)
+  name.vb: IsAlarmRegistered(String)
+  fullName: KS.Kernel.Time.Alarm.AlarmTools.IsAlarmRegistered(string)
+  fullName.vb: KS.Kernel.Time.Alarm.AlarmTools.IsAlarmRegistered(String)
+  nameWithType: AlarmTools.IsAlarmRegistered(string)
+  nameWithType.vb: AlarmTools.IsAlarmRegistered(String)
+- uid: KS.Kernel.Time.Alarm.AlarmTools.IsAlarmRegistered*
+  name: IsAlarmRegistered
+  href: api/KS.Kernel.Time.Alarm.AlarmTools.html#KS_Kernel_Time_Alarm_AlarmTools_IsAlarmRegistered_
+  commentId: Overload:KS.Kernel.Time.Alarm.AlarmTools.IsAlarmRegistered
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Alarm.AlarmTools.IsAlarmRegistered
+  nameWithType: AlarmTools.IsAlarmRegistered
+- uid: KS.Kernel.Time.Alarm.AlarmTools.StartAlarm(System.String,System.String,System.Int32)
+  name: StartAlarm(string, string, int)
+  href: api/KS.Kernel.Time.Alarm.AlarmTools.html#KS_Kernel_Time_Alarm_AlarmTools_StartAlarm_System_String_System_String_System_Int32_
+  commentId: M:KS.Kernel.Time.Alarm.AlarmTools.StartAlarm(System.String,System.String,System.Int32)
+  name.vb: StartAlarm(String, String, Integer)
+  fullName: KS.Kernel.Time.Alarm.AlarmTools.StartAlarm(string, string, int)
+  fullName.vb: KS.Kernel.Time.Alarm.AlarmTools.StartAlarm(String, String, Integer)
+  nameWithType: AlarmTools.StartAlarm(string, string, int)
+  nameWithType.vb: AlarmTools.StartAlarm(String, String, Integer)
+- uid: KS.Kernel.Time.Alarm.AlarmTools.StartAlarm*
+  name: StartAlarm
+  href: api/KS.Kernel.Time.Alarm.AlarmTools.html#KS_Kernel_Time_Alarm_AlarmTools_StartAlarm_
+  commentId: Overload:KS.Kernel.Time.Alarm.AlarmTools.StartAlarm
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Alarm.AlarmTools.StartAlarm
+  nameWithType: AlarmTools.StartAlarm
+- uid: KS.Kernel.Time.Alarm.AlarmTools.StopAlarm(System.Int32)
+  name: StopAlarm(int)
+  href: api/KS.Kernel.Time.Alarm.AlarmTools.html#KS_Kernel_Time_Alarm_AlarmTools_StopAlarm_System_Int32_
+  commentId: M:KS.Kernel.Time.Alarm.AlarmTools.StopAlarm(System.Int32)
+  name.vb: StopAlarm(Integer)
+  fullName: KS.Kernel.Time.Alarm.AlarmTools.StopAlarm(int)
+  fullName.vb: KS.Kernel.Time.Alarm.AlarmTools.StopAlarm(Integer)
+  nameWithType: AlarmTools.StopAlarm(int)
+  nameWithType.vb: AlarmTools.StopAlarm(Integer)
+- uid: KS.Kernel.Time.Alarm.AlarmTools.StopAlarm(System.String)
+  name: StopAlarm(string)
+  href: api/KS.Kernel.Time.Alarm.AlarmTools.html#KS_Kernel_Time_Alarm_AlarmTools_StopAlarm_System_String_
+  commentId: M:KS.Kernel.Time.Alarm.AlarmTools.StopAlarm(System.String)
+  name.vb: StopAlarm(String)
+  fullName: KS.Kernel.Time.Alarm.AlarmTools.StopAlarm(string)
+  fullName.vb: KS.Kernel.Time.Alarm.AlarmTools.StopAlarm(String)
+  nameWithType: AlarmTools.StopAlarm(string)
+  nameWithType.vb: AlarmTools.StopAlarm(String)
+- uid: KS.Kernel.Time.Alarm.AlarmTools.StopAlarm*
+  name: StopAlarm
+  href: api/KS.Kernel.Time.Alarm.AlarmTools.html#KS_Kernel_Time_Alarm_AlarmTools_StopAlarm_
+  commentId: Overload:KS.Kernel.Time.Alarm.AlarmTools.StopAlarm
+  isSpec: "True"
+  fullName: KS.Kernel.Time.Alarm.AlarmTools.StopAlarm
+  nameWithType: AlarmTools.StopAlarm
 - uid: KS.Kernel.Time.Calendars
   name: KS.Kernel.Time.Calendars
   href: api/KS.Kernel.Time.Calendars.html
