@@ -37787,6 +37787,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Notifications.Notification.Equals
   nameWithType: Notification.Equals
+- uid: KS.Misc.Notifications.Notification.EqualsNoId(KS.Misc.Notifications.Notification)
+  name: EqualsNoId(Notification)
+  href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_EqualsNoId_KS_Misc_Notifications_Notification_
+  commentId: M:KS.Misc.Notifications.Notification.EqualsNoId(KS.Misc.Notifications.Notification)
+  fullName: KS.Misc.Notifications.Notification.EqualsNoId(KS.Misc.Notifications.Notification)
+  nameWithType: Notification.EqualsNoId(Notification)
+- uid: KS.Misc.Notifications.Notification.EqualsNoId*
+  name: EqualsNoId
+  href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_EqualsNoId_
+  commentId: Overload:KS.Misc.Notifications.Notification.EqualsNoId
+  isSpec: "True"
+  fullName: KS.Misc.Notifications.Notification.EqualsNoId
+  nameWithType: Notification.EqualsNoId
 - uid: KS.Misc.Notifications.Notification.GetHashCode
   name: GetHashCode()
   href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_GetHashCode
