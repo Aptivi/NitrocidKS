@@ -37800,6 +37800,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Notifications.Notification.GetHashCode
   nameWithType: Notification.GetHashCode
+- uid: KS.Misc.Notifications.Notification.Id
+  name: Id
+  href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_Id
+  commentId: P:KS.Misc.Notifications.Notification.Id
+  fullName: KS.Misc.Notifications.Notification.Id
+  nameWithType: Notification.Id
+- uid: KS.Misc.Notifications.Notification.Id*
+  name: Id
+  href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_Id_
+  commentId: Overload:KS.Misc.Notifications.Notification.Id
+  isSpec: "True"
+  fullName: KS.Misc.Notifications.Notification.Id
+  nameWithType: Notification.Id
 - uid: KS.Misc.Notifications.Notification.NotificationBorderColor
   name: NotificationBorderColor
   href: api/KS.Misc.Notifications.Notification.html#KS_Misc_Notifications_Notification_NotificationBorderColor
