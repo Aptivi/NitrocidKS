@@ -13717,6 +13717,15 @@ references:
   commentId: T:KS.Drivers.DriverHandler
   fullName: KS.Drivers.DriverHandler
   nameWithType: DriverHandler
+- uid: KS.Drivers.DriverHandler.BeginLocalDriver(KS.Drivers.DriverTypes,System.String)
+  name: BeginLocalDriver(DriverTypes, string)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_BeginLocalDriver_KS_Drivers_DriverTypes_System_String_
+  commentId: M:KS.Drivers.DriverHandler.BeginLocalDriver(KS.Drivers.DriverTypes,System.String)
+  name.vb: BeginLocalDriver(DriverTypes, String)
+  fullName: KS.Drivers.DriverHandler.BeginLocalDriver(KS.Drivers.DriverTypes, string)
+  fullName.vb: KS.Drivers.DriverHandler.BeginLocalDriver(KS.Drivers.DriverTypes, String)
+  nameWithType: DriverHandler.BeginLocalDriver(DriverTypes, string)
+  nameWithType.vb: DriverHandler.BeginLocalDriver(DriverTypes, String)
 - uid: KS.Drivers.DriverHandler.BeginLocalDriver*
   name: BeginLocalDriver
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_BeginLocalDriver_
@@ -13724,6 +13733,15 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.BeginLocalDriver
   nameWithType: DriverHandler.BeginLocalDriver
+- uid: KS.Drivers.DriverHandler.BeginLocalDriverSafe(KS.Drivers.DriverTypes,System.String)
+  name: BeginLocalDriverSafe(DriverTypes, string)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_BeginLocalDriverSafe_KS_Drivers_DriverTypes_System_String_
+  commentId: M:KS.Drivers.DriverHandler.BeginLocalDriverSafe(KS.Drivers.DriverTypes,System.String)
+  name.vb: BeginLocalDriverSafe(DriverTypes, String)
+  fullName: KS.Drivers.DriverHandler.BeginLocalDriverSafe(KS.Drivers.DriverTypes, string)
+  fullName.vb: KS.Drivers.DriverHandler.BeginLocalDriverSafe(KS.Drivers.DriverTypes, String)
+  nameWithType: DriverHandler.BeginLocalDriverSafe(DriverTypes, string)
+  nameWithType.vb: DriverHandler.BeginLocalDriverSafe(DriverTypes, String)
 - uid: KS.Drivers.DriverHandler.BeginLocalDriverSafe*
   name: BeginLocalDriverSafe
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_BeginLocalDriverSafe_
@@ -14009,6 +14027,12 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.CurrentSortingDriverLocal
   nameWithType: DriverHandler.CurrentSortingDriverLocal
+- uid: KS.Drivers.DriverHandler.EndLocalDriver(KS.Drivers.DriverTypes)
+  name: EndLocalDriver(DriverTypes)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_EndLocalDriver_KS_Drivers_DriverTypes_
+  commentId: M:KS.Drivers.DriverHandler.EndLocalDriver(KS.Drivers.DriverTypes)
+  fullName: KS.Drivers.DriverHandler.EndLocalDriver(KS.Drivers.DriverTypes)
+  nameWithType: DriverHandler.EndLocalDriver(DriverTypes)
 - uid: KS.Drivers.DriverHandler.EndLocalDriver*
   name: EndLocalDriver
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_EndLocalDriver_
@@ -14069,6 +14093,15 @@ references:
   fullName.vb: KS.Drivers.DriverHandler.GetCurrentDriver(Of TResult)()
   nameWithType: DriverHandler.GetCurrentDriver<TResult>()
   nameWithType.vb: DriverHandler.GetCurrentDriver(Of TResult)()
+- uid: KS.Drivers.DriverHandler.GetDriver(KS.Drivers.DriverTypes,System.String)
+  name: GetDriver(DriverTypes, string)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetDriver_KS_Drivers_DriverTypes_System_String_
+  commentId: M:KS.Drivers.DriverHandler.GetDriver(KS.Drivers.DriverTypes,System.String)
+  name.vb: GetDriver(DriverTypes, String)
+  fullName: KS.Drivers.DriverHandler.GetDriver(KS.Drivers.DriverTypes, string)
+  fullName.vb: KS.Drivers.DriverHandler.GetDriver(KS.Drivers.DriverTypes, String)
+  nameWithType: DriverHandler.GetDriver(DriverTypes, string)
+  nameWithType.vb: DriverHandler.GetDriver(DriverTypes, String)
 - uid: KS.Drivers.DriverHandler.GetDriver*
   name: GetDriver
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetDriver_
@@ -14076,6 +14109,12 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.GetDriver
   nameWithType: DriverHandler.GetDriver
+- uid: KS.Drivers.DriverHandler.GetDriverName(KS.Drivers.DriverTypes,KS.Drivers.IDriver)
+  name: GetDriverName(DriverTypes, IDriver)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetDriverName_KS_Drivers_DriverTypes_KS_Drivers_IDriver_
+  commentId: M:KS.Drivers.DriverHandler.GetDriverName(KS.Drivers.DriverTypes,KS.Drivers.IDriver)
+  fullName: KS.Drivers.DriverHandler.GetDriverName(KS.Drivers.DriverTypes, KS.Drivers.IDriver)
+  nameWithType: DriverHandler.GetDriverName(DriverTypes, IDriver)
 - uid: KS.Drivers.DriverHandler.GetDriverName*
   name: GetDriverName
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetDriverName_
@@ -14092,6 +14131,12 @@ references:
   fullName.vb: KS.Drivers.DriverHandler.GetDriverName(Of TResult)(KS.Drivers.IDriver)
   nameWithType: DriverHandler.GetDriverName<TResult>(IDriver)
   nameWithType.vb: DriverHandler.GetDriverName(Of TResult)(IDriver)
+- uid: KS.Drivers.DriverHandler.GetDriverNames(KS.Drivers.DriverTypes)
+  name: GetDriverNames(DriverTypes)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetDriverNames_KS_Drivers_DriverTypes_
+  commentId: M:KS.Drivers.DriverHandler.GetDriverNames(KS.Drivers.DriverTypes)
+  fullName: KS.Drivers.DriverHandler.GetDriverNames(KS.Drivers.DriverTypes)
+  nameWithType: DriverHandler.GetDriverNames(DriverTypes)
 - uid: KS.Drivers.DriverHandler.GetDriverNames*
   name: GetDriverNames
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetDriverNames_
@@ -14117,6 +14162,12 @@ references:
   fullName.vb: KS.Drivers.DriverHandler.GetDriver(Of TResult)(String)
   nameWithType: DriverHandler.GetDriver<TResult>(string)
   nameWithType.vb: DriverHandler.GetDriver(Of TResult)(String)
+- uid: KS.Drivers.DriverHandler.GetDrivers(KS.Drivers.DriverTypes)
+  name: GetDrivers(DriverTypes)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetDrivers_KS_Drivers_DriverTypes_
+  commentId: M:KS.Drivers.DriverHandler.GetDrivers(KS.Drivers.DriverTypes)
+  fullName: KS.Drivers.DriverHandler.GetDrivers(KS.Drivers.DriverTypes)
+  nameWithType: DriverHandler.GetDrivers(DriverTypes)
 - uid: KS.Drivers.DriverHandler.GetDrivers*
   name: GetDrivers
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetDrivers_
@@ -14133,6 +14184,12 @@ references:
   fullName.vb: KS.Drivers.DriverHandler.GetDrivers(Of TResult)()
   nameWithType: DriverHandler.GetDrivers<TResult>()
   nameWithType.vb: DriverHandler.GetDrivers(Of TResult)()
+- uid: KS.Drivers.DriverHandler.GetFallbackDriver(KS.Drivers.DriverTypes)
+  name: GetFallbackDriver(DriverTypes)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetFallbackDriver_KS_Drivers_DriverTypes_
+  commentId: M:KS.Drivers.DriverHandler.GetFallbackDriver(KS.Drivers.DriverTypes)
+  fullName: KS.Drivers.DriverHandler.GetFallbackDriver(KS.Drivers.DriverTypes)
+  nameWithType: DriverHandler.GetFallbackDriver(DriverTypes)
 - uid: KS.Drivers.DriverHandler.GetFallbackDriver*
   name: GetFallbackDriver
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetFallbackDriver_
@@ -14140,6 +14197,12 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.GetFallbackDriver
   nameWithType: DriverHandler.GetFallbackDriver
+- uid: KS.Drivers.DriverHandler.GetFallbackDriverName(KS.Drivers.DriverTypes)
+  name: GetFallbackDriverName(DriverTypes)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetFallbackDriverName_KS_Drivers_DriverTypes_
+  commentId: M:KS.Drivers.DriverHandler.GetFallbackDriverName(KS.Drivers.DriverTypes)
+  fullName: KS.Drivers.DriverHandler.GetFallbackDriverName(KS.Drivers.DriverTypes)
+  nameWithType: DriverHandler.GetFallbackDriverName(DriverTypes)
 - uid: KS.Drivers.DriverHandler.GetFallbackDriverName*
   name: GetFallbackDriverName
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_GetFallbackDriverName_
@@ -14187,6 +14250,24 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.IsBuiltin
   nameWithType: DriverHandler.IsBuiltin
+- uid: KS.Drivers.DriverHandler.IsBuiltin``1(KS.Drivers.IDriver)
+  name: IsBuiltin<TDriver>(IDriver)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_IsBuiltin__1_KS_Drivers_IDriver_
+  commentId: M:KS.Drivers.DriverHandler.IsBuiltin``1(KS.Drivers.IDriver)
+  name.vb: IsBuiltin(Of TDriver)(IDriver)
+  fullName: KS.Drivers.DriverHandler.IsBuiltin<TDriver>(KS.Drivers.IDriver)
+  fullName.vb: KS.Drivers.DriverHandler.IsBuiltin(Of TDriver)(KS.Drivers.IDriver)
+  nameWithType: DriverHandler.IsBuiltin<TDriver>(IDriver)
+  nameWithType.vb: DriverHandler.IsBuiltin(Of TDriver)(IDriver)
+- uid: KS.Drivers.DriverHandler.IsBuiltin``1(System.String)
+  name: IsBuiltin<TDriver>(string)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_IsBuiltin__1_System_String_
+  commentId: M:KS.Drivers.DriverHandler.IsBuiltin``1(System.String)
+  name.vb: IsBuiltin(Of TDriver)(String)
+  fullName: KS.Drivers.DriverHandler.IsBuiltin<TDriver>(string)
+  fullName.vb: KS.Drivers.DriverHandler.IsBuiltin(Of TDriver)(String)
+  nameWithType: DriverHandler.IsBuiltin<TDriver>(string)
+  nameWithType.vb: DriverHandler.IsBuiltin(Of TDriver)(String)
 - uid: KS.Drivers.DriverHandler.IsRegistered(KS.Drivers.DriverTypes,KS.Drivers.IDriver)
   name: IsRegistered(DriverTypes, IDriver)
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_IsRegistered_KS_Drivers_DriverTypes_KS_Drivers_IDriver_
@@ -14209,6 +14290,30 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.IsRegistered
   nameWithType: DriverHandler.IsRegistered
+- uid: KS.Drivers.DriverHandler.IsRegistered``1(KS.Drivers.IDriver)
+  name: IsRegistered<TDriver>(IDriver)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_IsRegistered__1_KS_Drivers_IDriver_
+  commentId: M:KS.Drivers.DriverHandler.IsRegistered``1(KS.Drivers.IDriver)
+  name.vb: IsRegistered(Of TDriver)(IDriver)
+  fullName: KS.Drivers.DriverHandler.IsRegistered<TDriver>(KS.Drivers.IDriver)
+  fullName.vb: KS.Drivers.DriverHandler.IsRegistered(Of TDriver)(KS.Drivers.IDriver)
+  nameWithType: DriverHandler.IsRegistered<TDriver>(IDriver)
+  nameWithType.vb: DriverHandler.IsRegistered(Of TDriver)(IDriver)
+- uid: KS.Drivers.DriverHandler.IsRegistered``1(System.String)
+  name: IsRegistered<TDriver>(string)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_IsRegistered__1_System_String_
+  commentId: M:KS.Drivers.DriverHandler.IsRegistered``1(System.String)
+  name.vb: IsRegistered(Of TDriver)(String)
+  fullName: KS.Drivers.DriverHandler.IsRegistered<TDriver>(string)
+  fullName.vb: KS.Drivers.DriverHandler.IsRegistered(Of TDriver)(String)
+  nameWithType: DriverHandler.IsRegistered<TDriver>(string)
+  nameWithType.vb: DriverHandler.IsRegistered(Of TDriver)(String)
+- uid: KS.Drivers.DriverHandler.RegisterDriver(KS.Drivers.DriverTypes,KS.Drivers.IDriver)
+  name: RegisterDriver(DriverTypes, IDriver)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_RegisterDriver_KS_Drivers_DriverTypes_KS_Drivers_IDriver_
+  commentId: M:KS.Drivers.DriverHandler.RegisterDriver(KS.Drivers.DriverTypes,KS.Drivers.IDriver)
+  fullName: KS.Drivers.DriverHandler.RegisterDriver(KS.Drivers.DriverTypes, KS.Drivers.IDriver)
+  nameWithType: DriverHandler.RegisterDriver(DriverTypes, IDriver)
 - uid: KS.Drivers.DriverHandler.RegisterDriver*
   name: RegisterDriver
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_RegisterDriver_
@@ -14216,15 +14321,24 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.RegisterDriver
   nameWithType: DriverHandler.RegisterDriver
-- uid: KS.Drivers.DriverHandler.RegisterDriver``1(KS.Drivers.DriverTypes,KS.Drivers.IDriver)
-  name: RegisterDriver<TDriver>(DriverTypes, IDriver)
-  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_RegisterDriver__1_KS_Drivers_DriverTypes_KS_Drivers_IDriver_
-  commentId: M:KS.Drivers.DriverHandler.RegisterDriver``1(KS.Drivers.DriverTypes,KS.Drivers.IDriver)
-  name.vb: RegisterDriver(Of TDriver)(DriverTypes, IDriver)
-  fullName: KS.Drivers.DriverHandler.RegisterDriver<TDriver>(KS.Drivers.DriverTypes, KS.Drivers.IDriver)
-  fullName.vb: KS.Drivers.DriverHandler.RegisterDriver(Of TDriver)(KS.Drivers.DriverTypes, KS.Drivers.IDriver)
-  nameWithType: DriverHandler.RegisterDriver<TDriver>(DriverTypes, IDriver)
-  nameWithType.vb: DriverHandler.RegisterDriver(Of TDriver)(DriverTypes, IDriver)
+- uid: KS.Drivers.DriverHandler.RegisterDriver``1(KS.Drivers.IDriver)
+  name: RegisterDriver<TDriver>(IDriver)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_RegisterDriver__1_KS_Drivers_IDriver_
+  commentId: M:KS.Drivers.DriverHandler.RegisterDriver``1(KS.Drivers.IDriver)
+  name.vb: RegisterDriver(Of TDriver)(IDriver)
+  fullName: KS.Drivers.DriverHandler.RegisterDriver<TDriver>(KS.Drivers.IDriver)
+  fullName.vb: KS.Drivers.DriverHandler.RegisterDriver(Of TDriver)(KS.Drivers.IDriver)
+  nameWithType: DriverHandler.RegisterDriver<TDriver>(IDriver)
+  nameWithType.vb: DriverHandler.RegisterDriver(Of TDriver)(IDriver)
+- uid: KS.Drivers.DriverHandler.SetDriver(KS.Drivers.DriverTypes,System.String)
+  name: SetDriver(DriverTypes, string)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_SetDriver_KS_Drivers_DriverTypes_System_String_
+  commentId: M:KS.Drivers.DriverHandler.SetDriver(KS.Drivers.DriverTypes,System.String)
+  name.vb: SetDriver(DriverTypes, String)
+  fullName: KS.Drivers.DriverHandler.SetDriver(KS.Drivers.DriverTypes, string)
+  fullName.vb: KS.Drivers.DriverHandler.SetDriver(KS.Drivers.DriverTypes, String)
+  nameWithType: DriverHandler.SetDriver(DriverTypes, string)
+  nameWithType.vb: DriverHandler.SetDriver(DriverTypes, String)
 - uid: KS.Drivers.DriverHandler.SetDriver*
   name: SetDriver
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_SetDriver_
@@ -14232,6 +14346,15 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.SetDriver
   nameWithType: DriverHandler.SetDriver
+- uid: KS.Drivers.DriverHandler.SetDriverSafe(KS.Drivers.DriverTypes,System.String)
+  name: SetDriverSafe(DriverTypes, string)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_SetDriverSafe_KS_Drivers_DriverTypes_System_String_
+  commentId: M:KS.Drivers.DriverHandler.SetDriverSafe(KS.Drivers.DriverTypes,System.String)
+  name.vb: SetDriverSafe(DriverTypes, String)
+  fullName: KS.Drivers.DriverHandler.SetDriverSafe(KS.Drivers.DriverTypes, string)
+  fullName.vb: KS.Drivers.DriverHandler.SetDriverSafe(KS.Drivers.DriverTypes, String)
+  nameWithType: DriverHandler.SetDriverSafe(DriverTypes, string)
+  nameWithType.vb: DriverHandler.SetDriverSafe(DriverTypes, String)
 - uid: KS.Drivers.DriverHandler.SetDriverSafe*
   name: SetDriverSafe
   href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_SetDriverSafe_
@@ -14273,6 +14396,15 @@ references:
   isSpec: "True"
   fullName: KS.Drivers.DriverHandler.UnregisterDriver
   nameWithType: DriverHandler.UnregisterDriver
+- uid: KS.Drivers.DriverHandler.UnregisterDriver``1(System.String)
+  name: UnregisterDriver<TDriver>(string)
+  href: api/KS.Drivers.DriverHandler.html#KS_Drivers_DriverHandler_UnregisterDriver__1_System_String_
+  commentId: M:KS.Drivers.DriverHandler.UnregisterDriver``1(System.String)
+  name.vb: UnregisterDriver(Of TDriver)(String)
+  fullName: KS.Drivers.DriverHandler.UnregisterDriver<TDriver>(string)
+  fullName.vb: KS.Drivers.DriverHandler.UnregisterDriver(Of TDriver)(String)
+  nameWithType: DriverHandler.UnregisterDriver<TDriver>(string)
+  nameWithType.vb: DriverHandler.UnregisterDriver(Of TDriver)(String)
 - uid: KS.Drivers.DriverTypes
   name: DriverTypes
   href: api/KS.Drivers.DriverTypes.html
