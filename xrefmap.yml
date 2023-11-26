@@ -23738,6 +23738,12 @@ references:
   commentId: F:KS.Files.KernelPathType.Mods
   fullName: KS.Files.KernelPathType.Mods
   nameWithType: KernelPathType.Mods
+- uid: KS.Files.KernelPathType.NotificationRecents
+  name: NotificationRecents
+  href: api/KS.Files.KernelPathType.html#KS_Files_KernelPathType_NotificationRecents
+  commentId: F:KS.Files.KernelPathType.NotificationRecents
+  fullName: KS.Files.KernelPathType.NotificationRecents
+  nameWithType: KernelPathType.NotificationRecents
 - uid: KS.Files.KernelPathType.Reminders
   name: Reminders
   href: api/KS.Files.KernelPathType.html#KS_Files_KernelPathType_Reminders
@@ -25783,6 +25789,19 @@ references:
   isSpec: "True"
   fullName: KS.Files.Paths.PathsManagement.ModsPath
   nameWithType: PathsManagement.ModsPath
+- uid: KS.Files.Paths.PathsManagement.NotificationRecentsPath
+  name: NotificationRecentsPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_NotificationRecentsPath
+  commentId: P:KS.Files.Paths.PathsManagement.NotificationRecentsPath
+  fullName: KS.Files.Paths.PathsManagement.NotificationRecentsPath
+  nameWithType: PathsManagement.NotificationRecentsPath
+- uid: KS.Files.Paths.PathsManagement.NotificationRecentsPath*
+  name: NotificationRecentsPath
+  href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_NotificationRecentsPath_
+  commentId: Overload:KS.Files.Paths.PathsManagement.NotificationRecentsPath
+  isSpec: "True"
+  fullName: KS.Files.Paths.PathsManagement.NotificationRecentsPath
+  nameWithType: PathsManagement.NotificationRecentsPath
 - uid: KS.Files.Paths.PathsManagement.RegisterKernelPath(System.String,System.String)
   name: RegisterKernelPath(string, string)
   href: api/KS.Files.Paths.PathsManagement.html#KS_Files_Paths_PathsManagement_RegisterKernelPath_System_String_System_String_
@@ -38320,6 +38339,19 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Notifications.NotificationManager.NotifyUpperRightCornerChar
   nameWithType: NotificationManager.NotifyUpperRightCornerChar
+- uid: KS.Misc.Notifications.NotificationManager.SaveRecents
+  name: SaveRecents()
+  href: api/KS.Misc.Notifications.NotificationManager.html#KS_Misc_Notifications_NotificationManager_SaveRecents
+  commentId: M:KS.Misc.Notifications.NotificationManager.SaveRecents
+  fullName: KS.Misc.Notifications.NotificationManager.SaveRecents()
+  nameWithType: NotificationManager.SaveRecents()
+- uid: KS.Misc.Notifications.NotificationManager.SaveRecents*
+  name: SaveRecents
+  href: api/KS.Misc.Notifications.NotificationManager.html#KS_Misc_Notifications_NotificationManager_SaveRecents_
+  commentId: Overload:KS.Misc.Notifications.NotificationManager.SaveRecents
+  isSpec: "True"
+  fullName: KS.Misc.Notifications.NotificationManager.SaveRecents
+  nameWithType: NotificationManager.SaveRecents
 - uid: KS.Misc.Notifications.NotificationPriority
   name: NotificationPriority
   href: api/KS.Misc.Notifications.NotificationPriority.html

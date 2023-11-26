@@ -104,7 +104,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification__ctor_System_String_System_String_KS_Misc_Notifications_NotificationPriority_KS_Misc_Notifications_NotificationType_.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.%23ctor(System.String%2CSystem.String%2CKS.Misc.Notifications.NotificationPriority%2CKS.Misc.Notifications.NotificationType)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L222">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L253">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification__ctor_" data-uid="KS.Misc.Notifications.Notification.#ctor*"></a>
   <h4 id="KS_Misc_Notifications_Notification__ctor_System_String_System_String_KS_Misc_Notifications_NotificationPriority_KS_Misc_Notifications_NotificationType_" data-uid="KS.Misc.Notifications.Notification.#ctor(System.String,System.String,KS.Misc.Notifications.NotificationPriority,KS.Misc.Notifications.NotificationType)">Notification(string, string, NotificationPriority, NotificationType)</h4>
@@ -158,7 +158,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_CustomBeepTimes.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.CustomBeepTimes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L102">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L117">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_CustomBeepTimes_" data-uid="KS.Misc.Notifications.Notification.CustomBeepTimes*"></a>
   <h4 id="KS_Misc_Notifications_Notification_CustomBeepTimes" data-uid="KS.Misc.Notifications.Notification.CustomBeepTimes">CustomBeepTimes</h4>
@@ -167,7 +167,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int CustomBeepTimes { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public int CustomBeepTimes { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -189,7 +190,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_CustomColor.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.CustomColor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L124">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L140">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_CustomColor_" data-uid="KS.Misc.Notifications.Notification.CustomColor*"></a>
   <h4 id="KS_Misc_Notifications_Notification_CustomColor" data-uid="KS.Misc.Notifications.Notification.CustomColor">CustomColor</h4>
@@ -198,7 +199,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color CustomColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public Color CustomColor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -220,7 +222,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_CustomDescriptionColor.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.CustomDescriptionColor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L134">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L152">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_CustomDescriptionColor_" data-uid="KS.Misc.Notifications.Notification.CustomDescriptionColor*"></a>
   <h4 id="KS_Misc_Notifications_Notification_CustomDescriptionColor" data-uid="KS.Misc.Notifications.Notification.CustomDescriptionColor">CustomDescriptionColor</h4>
@@ -229,7 +231,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color CustomDescriptionColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public Color CustomDescriptionColor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -251,7 +254,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_CustomLeftFrameChar.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.CustomLeftFrameChar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L184">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L212">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_CustomLeftFrameChar_" data-uid="KS.Misc.Notifications.Notification.CustomLeftFrameChar*"></a>
   <h4 id="KS_Misc_Notifications_Notification_CustomLeftFrameChar" data-uid="KS.Misc.Notifications.Notification.CustomLeftFrameChar">CustomLeftFrameChar</h4>
@@ -260,7 +263,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public char CustomLeftFrameChar { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public char CustomLeftFrameChar { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -282,7 +286,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_CustomLowerFrameChar.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.CustomLowerFrameChar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L179">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L206">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_CustomLowerFrameChar_" data-uid="KS.Misc.Notifications.Notification.CustomLowerFrameChar*"></a>
   <h4 id="KS_Misc_Notifications_Notification_CustomLowerFrameChar" data-uid="KS.Misc.Notifications.Notification.CustomLowerFrameChar">CustomLowerFrameChar</h4>
@@ -291,7 +295,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public char CustomLowerFrameChar { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public char CustomLowerFrameChar { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -313,7 +318,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_CustomLowerLeftCornerChar.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.CustomLowerLeftCornerChar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L164">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L188">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_CustomLowerLeftCornerChar_" data-uid="KS.Misc.Notifications.Notification.CustomLowerLeftCornerChar*"></a>
   <h4 id="KS_Misc_Notifications_Notification_CustomLowerLeftCornerChar" data-uid="KS.Misc.Notifications.Notification.CustomLowerLeftCornerChar">CustomLowerLeftCornerChar</h4>
@@ -322,7 +327,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public char CustomLowerLeftCornerChar { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public char CustomLowerLeftCornerChar { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -344,7 +350,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_CustomLowerRightCornerChar.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.CustomLowerRightCornerChar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L169">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L194">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_CustomLowerRightCornerChar_" data-uid="KS.Misc.Notifications.Notification.CustomLowerRightCornerChar*"></a>
   <h4 id="KS_Misc_Notifications_Notification_CustomLowerRightCornerChar" data-uid="KS.Misc.Notifications.Notification.CustomLowerRightCornerChar">CustomLowerRightCornerChar</h4>
@@ -353,7 +359,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public char CustomLowerRightCornerChar { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public char CustomLowerRightCornerChar { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -375,7 +382,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_CustomProgressColor.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.CustomProgressColor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L139">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L158">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_CustomProgressColor_" data-uid="KS.Misc.Notifications.Notification.CustomProgressColor*"></a>
   <h4 id="KS_Misc_Notifications_Notification_CustomProgressColor" data-uid="KS.Misc.Notifications.Notification.CustomProgressColor">CustomProgressColor</h4>
@@ -384,7 +391,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color CustomProgressColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public Color CustomProgressColor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -406,7 +414,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_CustomProgressFailureColor.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.CustomProgressFailureColor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L144">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L164">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_CustomProgressFailureColor_" data-uid="KS.Misc.Notifications.Notification.CustomProgressFailureColor*"></a>
   <h4 id="KS_Misc_Notifications_Notification_CustomProgressFailureColor" data-uid="KS.Misc.Notifications.Notification.CustomProgressFailureColor">CustomProgressFailureColor</h4>
@@ -415,7 +423,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color CustomProgressFailureColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public Color CustomProgressFailureColor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -437,7 +446,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_CustomProgressSuccessColor.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.CustomProgressSuccessColor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L149">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L170">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_CustomProgressSuccessColor_" data-uid="KS.Misc.Notifications.Notification.CustomProgressSuccessColor*"></a>
   <h4 id="KS_Misc_Notifications_Notification_CustomProgressSuccessColor" data-uid="KS.Misc.Notifications.Notification.CustomProgressSuccessColor">CustomProgressSuccessColor</h4>
@@ -446,7 +455,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color CustomProgressSuccessColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public Color CustomProgressSuccessColor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -468,7 +478,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_CustomRightFrameChar.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.CustomRightFrameChar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L189">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L218">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_CustomRightFrameChar_" data-uid="KS.Misc.Notifications.Notification.CustomRightFrameChar*"></a>
   <h4 id="KS_Misc_Notifications_Notification_CustomRightFrameChar" data-uid="KS.Misc.Notifications.Notification.CustomRightFrameChar">CustomRightFrameChar</h4>
@@ -477,7 +487,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public char CustomRightFrameChar { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public char CustomRightFrameChar { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -499,7 +510,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_CustomTitleColor.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.CustomTitleColor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L129">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L146">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_CustomTitleColor_" data-uid="KS.Misc.Notifications.Notification.CustomTitleColor*"></a>
   <h4 id="KS_Misc_Notifications_Notification_CustomTitleColor" data-uid="KS.Misc.Notifications.Notification.CustomTitleColor">CustomTitleColor</h4>
@@ -508,7 +519,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color CustomTitleColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public Color CustomTitleColor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -530,7 +542,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_CustomUpperFrameChar.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.CustomUpperFrameChar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L174">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L200">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_CustomUpperFrameChar_" data-uid="KS.Misc.Notifications.Notification.CustomUpperFrameChar*"></a>
   <h4 id="KS_Misc_Notifications_Notification_CustomUpperFrameChar" data-uid="KS.Misc.Notifications.Notification.CustomUpperFrameChar">CustomUpperFrameChar</h4>
@@ -539,7 +551,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public char CustomUpperFrameChar { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public char CustomUpperFrameChar { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -561,7 +574,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_CustomUpperLeftCornerChar.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.CustomUpperLeftCornerChar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L154">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L176">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_CustomUpperLeftCornerChar_" data-uid="KS.Misc.Notifications.Notification.CustomUpperLeftCornerChar*"></a>
   <h4 id="KS_Misc_Notifications_Notification_CustomUpperLeftCornerChar" data-uid="KS.Misc.Notifications.Notification.CustomUpperLeftCornerChar">CustomUpperLeftCornerChar</h4>
@@ -570,7 +583,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public char CustomUpperLeftCornerChar { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public char CustomUpperLeftCornerChar { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -592,7 +606,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_CustomUpperRightCornerChar.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.CustomUpperRightCornerChar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L159">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L182">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_CustomUpperRightCornerChar_" data-uid="KS.Misc.Notifications.Notification.CustomUpperRightCornerChar*"></a>
   <h4 id="KS_Misc_Notifications_Notification_CustomUpperRightCornerChar" data-uid="KS.Misc.Notifications.Notification.CustomUpperRightCornerChar">CustomUpperRightCornerChar</h4>
@@ -601,7 +615,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public char CustomUpperRightCornerChar { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public char CustomUpperRightCornerChar { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -623,7 +638,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_Desc.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.Desc%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L49">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L58">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_Desc_" data-uid="KS.Misc.Notifications.Notification.Desc*"></a>
   <h4 id="KS_Misc_Notifications_Notification_Desc" data-uid="KS.Misc.Notifications.Notification.Desc">Desc</h4>
@@ -632,7 +647,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Desc { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public string Desc { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -654,7 +670,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_Id.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.Id%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L39">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L45">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_Id_" data-uid="KS.Misc.Notifications.Notification.Id*"></a>
   <h4 id="KS_Misc_Notifications_Notification_Id" data-uid="KS.Misc.Notifications.Notification.Id">Id</h4>
@@ -663,7 +679,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Guid Id { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public Guid Id { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -685,7 +702,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_NotificationBorderColor.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.NotificationBorderColor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L200">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L230">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_NotificationBorderColor_" data-uid="KS.Misc.Notifications.Notification.NotificationBorderColor*"></a>
   <h4 id="KS_Misc_Notifications_Notification_NotificationBorderColor" data-uid="KS.Misc.Notifications.Notification.NotificationBorderColor">NotificationBorderColor</h4>
@@ -694,7 +711,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color NotificationBorderColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public Color NotificationBorderColor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -716,7 +734,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_Priority.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.Priority%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L54">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L64">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_Priority_" data-uid="KS.Misc.Notifications.Notification.Priority*"></a>
   <h4 id="KS_Misc_Notifications_Notification_Priority" data-uid="KS.Misc.Notifications.Notification.Priority">Priority</h4>
@@ -725,7 +743,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NotificationPriority Priority { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public NotificationPriority Priority { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -747,7 +766,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_Progress.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.Progress%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L74">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L88">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_Progress_" data-uid="KS.Misc.Notifications.Notification.Progress*"></a>
   <h4 id="KS_Misc_Notifications_Notification_Progress" data-uid="KS.Misc.Notifications.Notification.Progress">Progress</h4>
@@ -756,7 +775,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Progress { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public int Progress { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -778,7 +798,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_ProgressCompleted.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.ProgressCompleted%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L194">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L224">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_ProgressCompleted_" data-uid="KS.Misc.Notifications.Notification.ProgressCompleted*"></a>
   <h4 id="KS_Misc_Notifications_Notification_ProgressCompleted" data-uid="KS.Misc.Notifications.Notification.ProgressCompleted">ProgressCompleted</h4>
@@ -809,7 +829,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_ProgressIndeterminate.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.ProgressIndeterminate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L64">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L76">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_ProgressIndeterminate_" data-uid="KS.Misc.Notifications.Notification.ProgressIndeterminate*"></a>
   <h4 id="KS_Misc_Notifications_Notification_ProgressIndeterminate" data-uid="KS.Misc.Notifications.Notification.ProgressIndeterminate">ProgressIndeterminate</h4>
@@ -818,7 +838,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ProgressIndeterminate { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public bool ProgressIndeterminate { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -840,7 +861,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_ProgressState.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.ProgressState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L69">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L82">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_ProgressState_" data-uid="KS.Misc.Notifications.Notification.ProgressState*"></a>
   <h4 id="KS_Misc_Notifications_Notification_ProgressState" data-uid="KS.Misc.Notifications.Notification.ProgressState">ProgressState</h4>
@@ -849,7 +870,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NotificationProgressState ProgressState { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public NotificationProgressState ProgressState { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -871,7 +893,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_Title.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.Title%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L44">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L52">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_Title_" data-uid="KS.Misc.Notifications.Notification.Title*"></a>
   <h4 id="KS_Misc_Notifications_Notification_Title" data-uid="KS.Misc.Notifications.Notification.Title">Title</h4>
@@ -880,7 +902,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Title { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public string Title { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -902,7 +925,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_Type.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.Type%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L59">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L70">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_Type_" data-uid="KS.Misc.Notifications.Notification.Type*"></a>
   <h4 id="KS_Misc_Notifications_Notification_Type" data-uid="KS.Misc.Notifications.Notification.Type">Type</h4>
@@ -911,7 +934,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NotificationType Type { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty]
+public NotificationType Type { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -935,7 +959,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_Equals_KS_Misc_Notifications_Notification_.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.Equals(KS.Misc.Notifications.Notification)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L244">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L275">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_Equals_" data-uid="KS.Misc.Notifications.Notification.Equals*"></a>
   <h4 id="KS_Misc_Notifications_Notification_Equals_KS_Misc_Notifications_Notification_" data-uid="KS.Misc.Notifications.Notification.Equals(KS.Misc.Notifications.Notification)">Equals(Notification)</h4>
@@ -985,7 +1009,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_Equals_System_Object_.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.Equals(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L236">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L267">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_Equals_" data-uid="KS.Misc.Notifications.Notification.Equals*"></a>
   <h4 id="KS_Misc_Notifications_Notification_Equals_System_Object_" data-uid="KS.Misc.Notifications.Notification.Equals(System.Object)">Equals(object)</h4>
@@ -1037,7 +1061,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_EqualsNoId_KS_Misc_Notifications_Notification_.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.EqualsNoId(KS.Misc.Notifications.Notification)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L277">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L308">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_EqualsNoId_" data-uid="KS.Misc.Notifications.Notification.EqualsNoId*"></a>
   <h4 id="KS_Misc_Notifications_Notification_EqualsNoId_KS_Misc_Notifications_Notification_" data-uid="KS.Misc.Notifications.Notification.EqualsNoId(KS.Misc.Notifications.Notification)">EqualsNoId(Notification)</h4>
@@ -1087,7 +1111,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_GetHashCode.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.GetHashCode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L305">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L336">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_GetHashCode_" data-uid="KS.Misc.Notifications.Notification.GetHashCode*"></a>
   <h4 id="KS_Misc_Notifications_Notification_GetHashCode" data-uid="KS.Misc.Notifications.Notification.GetHashCode">GetHashCode()</h4>
@@ -1123,7 +1147,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_op_Equality_KS_Misc_Notifications_Notification_KS_Misc_Notifications_Notification_.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.op_Equality(KS.Misc.Notifications.Notification%2CKS.Misc.Notifications.Notification)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L334">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L365">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_op_Equality_" data-uid="KS.Misc.Notifications.Notification.op_Equality*"></a>
   <h4 id="KS_Misc_Notifications_Notification_op_Equality_KS_Misc_Notifications_Notification_KS_Misc_Notifications_Notification_" data-uid="KS.Misc.Notifications.Notification.op_Equality(KS.Misc.Notifications.Notification,KS.Misc.Notifications.Notification)">operator ==(Notification, Notification)</h4>
@@ -1175,7 +1199,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification_op_Inequality_KS_Misc_Notifications_Notification_KS_Misc_Notifications_Notification_.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification.op_Inequality(KS.Misc.Notifications.Notification%2CKS.Misc.Notifications.Notification)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L338">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L369">View Source</a>
   </span>
   <a id="KS_Misc_Notifications_Notification_op_Inequality_" data-uid="KS.Misc.Notifications.Notification.op_Inequality*"></a>
   <h4 id="KS_Misc_Notifications_Notification_op_Inequality_KS_Misc_Notifications_Notification_KS_Misc_Notifications_Notification_" data-uid="KS.Misc.Notifications.Notification.op_Inequality(KS.Misc.Notifications.Notification,KS.Misc.Notifications.Notification)">operator !=(Notification, Notification)</h4>
@@ -1234,7 +1258,7 @@
                     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_Misc_Notifications_Notification.md&amp;value=---%0Auid%3A%20KS.Misc.Notifications.Notification%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Notifications/Notification.cs/#L30" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
