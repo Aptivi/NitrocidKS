@@ -41903,6 +41903,38 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Text.TextTools.FormatString
   nameWithType: TextTools.FormatString
+- uid: KS.Misc.Text.TextTools.GetBase64Decoded(System.String)
+  name: GetBase64Decoded(string)
+  href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_GetBase64Decoded_System_String_
+  commentId: M:KS.Misc.Text.TextTools.GetBase64Decoded(System.String)
+  name.vb: GetBase64Decoded(String)
+  fullName: KS.Misc.Text.TextTools.GetBase64Decoded(string)
+  fullName.vb: KS.Misc.Text.TextTools.GetBase64Decoded(String)
+  nameWithType: TextTools.GetBase64Decoded(string)
+  nameWithType.vb: TextTools.GetBase64Decoded(String)
+- uid: KS.Misc.Text.TextTools.GetBase64Decoded*
+  name: GetBase64Decoded
+  href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_GetBase64Decoded_
+  commentId: Overload:KS.Misc.Text.TextTools.GetBase64Decoded
+  isSpec: "True"
+  fullName: KS.Misc.Text.TextTools.GetBase64Decoded
+  nameWithType: TextTools.GetBase64Decoded
+- uid: KS.Misc.Text.TextTools.GetBase64Encoded(System.String)
+  name: GetBase64Encoded(string)
+  href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_GetBase64Encoded_System_String_
+  commentId: M:KS.Misc.Text.TextTools.GetBase64Encoded(System.String)
+  name.vb: GetBase64Encoded(String)
+  fullName: KS.Misc.Text.TextTools.GetBase64Encoded(string)
+  fullName.vb: KS.Misc.Text.TextTools.GetBase64Encoded(String)
+  nameWithType: TextTools.GetBase64Encoded(string)
+  nameWithType.vb: TextTools.GetBase64Encoded(String)
+- uid: KS.Misc.Text.TextTools.GetBase64Encoded*
+  name: GetBase64Encoded
+  href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_GetBase64Encoded_
+  commentId: Overload:KS.Misc.Text.TextTools.GetBase64Encoded
+  isSpec: "True"
+  fullName: KS.Misc.Text.TextTools.GetBase64Encoded
+  nameWithType: TextTools.GetBase64Encoded
 - uid: KS.Misc.Text.TextTools.GetEnclosedDoubleQuotesType(System.String)
   name: GetEnclosedDoubleQuotesType(string)
   href: api/KS.Misc.Text.TextTools.html#KS_Misc_Text_TextTools_GetEnclosedDoubleQuotesType_System_String_
