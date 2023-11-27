@@ -265,80 +265,100 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.ChoiceOutputType.yml",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.Choice.ChoiceOutputType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.ChoiceOutputType.html"
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.Choice.ChoiceOutputType.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.ChoiceStyle.yml",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.Choice.ChoiceStyle.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.ChoiceStyle.html"
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.Choice.ChoiceStyle.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxButtonsColor.yml",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.Choice.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxButtonsColor.html"
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.Choice.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxColor.yml",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.Infobox.InfoBoxButtonsColor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxColor.html"
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.Infobox.InfoBoxButtonsColor.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxInputColor.yml",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.Infobox.InfoBoxColor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxInputColor.html"
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.Infobox.InfoBoxColor.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxProgressColor.yml",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.Infobox.InfoBoxInputColor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxProgressColor.html"
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.Infobox.InfoBoxInputColor.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxSelectionColor.yml",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.Infobox.InfoBoxProgressColor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxSelectionColor.html"
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.Infobox.InfoBoxProgressColor.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxSelectionMultipleColor.yml",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.Infobox.InfoBoxSelectionColor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoBoxSelectionMultipleColor.html"
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.Infobox.InfoBoxSelectionColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.Infobox.InfoBoxSelectionMultipleColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.Infobox.InfoBoxSelectionMultipleColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.Infobox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.Infobox.html"
         }
       },
       "version": ""
@@ -355,20 +375,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.SelectionMultipleStyle.yml",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.Selection.SelectionMultipleStyle.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.SelectionMultipleStyle.html"
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.Selection.SelectionMultipleStyle.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.SelectionStyle.yml",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.Selection.SelectionStyle.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.SelectionStyle.html"
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.Selection.SelectionStyle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.Selection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.Selection.html"
         }
       },
       "version": ""
@@ -1785,16 +1815,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Files.KernelPathType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Files.KernelPathType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Files.LineEndings.FilesystemNewlineStyle.yml",
       "output": {
         ".html": {
@@ -2029,6 +2049,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Files.Operations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Files.Paths.KernelPathType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Files.Paths.KernelPathType.html"
         }
       },
       "version": ""
