@@ -38879,6 +38879,22 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Reflection.ArrayTools.RandomizeArray
   nameWithType: ArrayTools.RandomizeArray
+- uid: KS.Misc.Reflection.ArrayTools.RandomizeArraySystem*
+  name: RandomizeArraySystem
+  href: api/KS.Misc.Reflection.ArrayTools.html#KS_Misc_Reflection_ArrayTools_RandomizeArraySystem_
+  commentId: Overload:KS.Misc.Reflection.ArrayTools.RandomizeArraySystem
+  isSpec: "True"
+  fullName: KS.Misc.Reflection.ArrayTools.RandomizeArraySystem
+  nameWithType: ArrayTools.RandomizeArraySystem
+- uid: KS.Misc.Reflection.ArrayTools.RandomizeArraySystem``1(``0[])
+  name: RandomizeArraySystem<T>(T[])
+  href: api/KS.Misc.Reflection.ArrayTools.html#KS_Misc_Reflection_ArrayTools_RandomizeArraySystem__1___0___
+  commentId: M:KS.Misc.Reflection.ArrayTools.RandomizeArraySystem``1(``0[])
+  name.vb: RandomizeArraySystem(Of T)(T())
+  fullName: KS.Misc.Reflection.ArrayTools.RandomizeArraySystem<T>(T[])
+  fullName.vb: KS.Misc.Reflection.ArrayTools.RandomizeArraySystem(Of T)(T())
+  nameWithType: ArrayTools.RandomizeArraySystem<T>(T[])
+  nameWithType.vb: ArrayTools.RandomizeArraySystem(Of T)(T())
 - uid: KS.Misc.Reflection.ArrayTools.RandomizeArray``1(``0[])
   name: RandomizeArray<T>(T[])
   href: api/KS.Misc.Reflection.ArrayTools.html#KS_Misc_Reflection_ArrayTools_RandomizeArray__1___0___
