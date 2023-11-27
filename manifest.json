@@ -365,6 +365,76 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoboxTitled.InfoBoxTitledButtonsColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoboxTitled.InfoBoxTitledButtonsColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoboxTitled.InfoBoxTitledColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoboxTitled.InfoBoxTitledColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoboxTitled.InfoBoxTitledInputColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoboxTitled.InfoBoxTitledInputColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoboxTitled.InfoBoxTitledProgressColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoboxTitled.InfoBoxTitledProgressColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoboxTitled.InfoBoxTitledSelectionColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoboxTitled.InfoBoxTitledSelectionColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoboxTitled.InfoBoxTitledSelectionMultipleColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoboxTitled.InfoBoxTitledSelectionMultipleColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoboxTitled.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Inputs.Styles.InfoboxTitled.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.Inputs.Styles.InputStyle.yml",
       "output": {
         ".html": {
