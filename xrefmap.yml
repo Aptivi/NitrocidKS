@@ -25379,6 +25379,28 @@ references:
   isSpec: "True"
   fullName: KS.Files.Operations.Selection.SelectFile
   nameWithType: Selection.SelectFile
+- uid: KS.Files.Operations.Selection.SelectFiles
+  name: SelectFiles()
+  href: api/KS.Files.Operations.Selection.html#KS_Files_Operations_Selection_SelectFiles
+  commentId: M:KS.Files.Operations.Selection.SelectFiles
+  fullName: KS.Files.Operations.Selection.SelectFiles()
+  nameWithType: Selection.SelectFiles()
+- uid: KS.Files.Operations.Selection.SelectFiles(System.String)
+  name: SelectFiles(string)
+  href: api/KS.Files.Operations.Selection.html#KS_Files_Operations_Selection_SelectFiles_System_String_
+  commentId: M:KS.Files.Operations.Selection.SelectFiles(System.String)
+  name.vb: SelectFiles(String)
+  fullName: KS.Files.Operations.Selection.SelectFiles(string)
+  fullName.vb: KS.Files.Operations.Selection.SelectFiles(String)
+  nameWithType: Selection.SelectFiles(string)
+  nameWithType.vb: Selection.SelectFiles(String)
+- uid: KS.Files.Operations.Selection.SelectFiles*
+  name: SelectFiles
+  href: api/KS.Files.Operations.Selection.html#KS_Files_Operations_Selection_SelectFiles_
+  commentId: Overload:KS.Files.Operations.Selection.SelectFiles
+  isSpec: "True"
+  fullName: KS.Files.Operations.Selection.SelectFiles
+  nameWithType: Selection.SelectFiles
 - uid: KS.Files.Operations.Selection.SelectFolder
   name: SelectFolder()
   href: api/KS.Files.Operations.Selection.html#KS_Files_Operations_Selection_SelectFolder
@@ -37548,6 +37570,83 @@ references:
   isSpec: "True"
   fullName: KS.Misc.Interactives.FileSelectorCli.SelectedFile
   nameWithType: FileSelectorCli.SelectedFile
+- uid: KS.Misc.Interactives.FilesSelectorCli
+  name: FilesSelectorCli
+  href: api/KS.Misc.Interactives.FilesSelectorCli.html
+  commentId: T:KS.Misc.Interactives.FilesSelectorCli
+  fullName: KS.Misc.Interactives.FilesSelectorCli
+  nameWithType: FilesSelectorCli
+- uid: KS.Misc.Interactives.FilesSelectorCli.Bindings
+  name: Bindings
+  href: api/KS.Misc.Interactives.FilesSelectorCli.html#KS_Misc_Interactives_FilesSelectorCli_Bindings
+  commentId: P:KS.Misc.Interactives.FilesSelectorCli.Bindings
+  fullName: KS.Misc.Interactives.FilesSelectorCli.Bindings
+  nameWithType: FilesSelectorCli.Bindings
+- uid: KS.Misc.Interactives.FilesSelectorCli.Bindings*
+  name: Bindings
+  href: api/KS.Misc.Interactives.FilesSelectorCli.html#KS_Misc_Interactives_FilesSelectorCli_Bindings_
+  commentId: Overload:KS.Misc.Interactives.FilesSelectorCli.Bindings
+  isSpec: "True"
+  fullName: KS.Misc.Interactives.FilesSelectorCli.Bindings
+  nameWithType: FilesSelectorCli.Bindings
+- uid: KS.Misc.Interactives.FilesSelectorCli.GetEntryFromItem(System.Object)
+  name: GetEntryFromItem(object)
+  href: api/KS.Misc.Interactives.FilesSelectorCli.html#KS_Misc_Interactives_FilesSelectorCli_GetEntryFromItem_System_Object_
+  commentId: M:KS.Misc.Interactives.FilesSelectorCli.GetEntryFromItem(System.Object)
+  name.vb: GetEntryFromItem(Object)
+  fullName: KS.Misc.Interactives.FilesSelectorCli.GetEntryFromItem(object)
+  fullName.vb: KS.Misc.Interactives.FilesSelectorCli.GetEntryFromItem(Object)
+  nameWithType: FilesSelectorCli.GetEntryFromItem(object)
+  nameWithType.vb: FilesSelectorCli.GetEntryFromItem(Object)
+- uid: KS.Misc.Interactives.FilesSelectorCli.GetEntryFromItem*
+  name: GetEntryFromItem
+  href: api/KS.Misc.Interactives.FilesSelectorCli.html#KS_Misc_Interactives_FilesSelectorCli_GetEntryFromItem_
+  commentId: Overload:KS.Misc.Interactives.FilesSelectorCli.GetEntryFromItem
+  isSpec: "True"
+  fullName: KS.Misc.Interactives.FilesSelectorCli.GetEntryFromItem
+  nameWithType: FilesSelectorCli.GetEntryFromItem
+- uid: KS.Misc.Interactives.FilesSelectorCli.PrimaryDataSource
+  name: PrimaryDataSource
+  href: api/KS.Misc.Interactives.FilesSelectorCli.html#KS_Misc_Interactives_FilesSelectorCli_PrimaryDataSource
+  commentId: P:KS.Misc.Interactives.FilesSelectorCli.PrimaryDataSource
+  fullName: KS.Misc.Interactives.FilesSelectorCli.PrimaryDataSource
+  nameWithType: FilesSelectorCli.PrimaryDataSource
+- uid: KS.Misc.Interactives.FilesSelectorCli.PrimaryDataSource*
+  name: PrimaryDataSource
+  href: api/KS.Misc.Interactives.FilesSelectorCli.html#KS_Misc_Interactives_FilesSelectorCli_PrimaryDataSource_
+  commentId: Overload:KS.Misc.Interactives.FilesSelectorCli.PrimaryDataSource
+  isSpec: "True"
+  fullName: KS.Misc.Interactives.FilesSelectorCli.PrimaryDataSource
+  nameWithType: FilesSelectorCli.PrimaryDataSource
+- uid: KS.Misc.Interactives.FilesSelectorCli.RenderStatus(System.Object)
+  name: RenderStatus(object)
+  href: api/KS.Misc.Interactives.FilesSelectorCli.html#KS_Misc_Interactives_FilesSelectorCli_RenderStatus_System_Object_
+  commentId: M:KS.Misc.Interactives.FilesSelectorCli.RenderStatus(System.Object)
+  name.vb: RenderStatus(Object)
+  fullName: KS.Misc.Interactives.FilesSelectorCli.RenderStatus(object)
+  fullName.vb: KS.Misc.Interactives.FilesSelectorCli.RenderStatus(Object)
+  nameWithType: FilesSelectorCli.RenderStatus(object)
+  nameWithType.vb: FilesSelectorCli.RenderStatus(Object)
+- uid: KS.Misc.Interactives.FilesSelectorCli.RenderStatus*
+  name: RenderStatus
+  href: api/KS.Misc.Interactives.FilesSelectorCli.html#KS_Misc_Interactives_FilesSelectorCli_RenderStatus_
+  commentId: Overload:KS.Misc.Interactives.FilesSelectorCli.RenderStatus
+  isSpec: "True"
+  fullName: KS.Misc.Interactives.FilesSelectorCli.RenderStatus
+  nameWithType: FilesSelectorCli.RenderStatus
+- uid: KS.Misc.Interactives.FilesSelectorCli.SelectedFiles
+  name: SelectedFiles
+  href: api/KS.Misc.Interactives.FilesSelectorCli.html#KS_Misc_Interactives_FilesSelectorCli_SelectedFiles
+  commentId: P:KS.Misc.Interactives.FilesSelectorCli.SelectedFiles
+  fullName: KS.Misc.Interactives.FilesSelectorCli.SelectedFiles
+  nameWithType: FilesSelectorCli.SelectedFiles
+- uid: KS.Misc.Interactives.FilesSelectorCli.SelectedFiles*
+  name: SelectedFiles
+  href: api/KS.Misc.Interactives.FilesSelectorCli.html#KS_Misc_Interactives_FilesSelectorCli_SelectedFiles_
+  commentId: Overload:KS.Misc.Interactives.FilesSelectorCli.SelectedFiles
+  isSpec: "True"
+  fullName: KS.Misc.Interactives.FilesSelectorCli.SelectedFiles
+  nameWithType: FilesSelectorCli.SelectedFiles
 - uid: KS.Misc.Interactives.FolderSelectorCli
   name: FolderSelectorCli
   href: api/KS.Misc.Interactives.FolderSelectorCli.html
