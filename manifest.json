@@ -3235,6 +3235,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Misc.Interactives.FoldersSelectorCli.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Misc.Interactives.FoldersSelectorCli.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Misc.Interactives.ManualViewerCli.yml",
       "output": {
         ".html": {
