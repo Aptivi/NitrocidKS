@@ -4175,6 +4175,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Security.Signing.AssemblySigning.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Security.Signing.AssemblySigning.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Security.Signing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Security.Signing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Shell.Prompts.IPromptPreset.yml",
       "output": {
         ".html": {
