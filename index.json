@@ -212,7 +212,7 @@
   "api/KS.ConsoleBase.Inputs.Styles.InputStyle.html": {
     "href": "api/KS.ConsoleBase.Inputs.Styles.InputStyle.html",
     "title": "Class InputStyle | Nitrocid KS API - Aptivi",
-    "keywords": "Class InputStyle Input style module Inheritance object InputStyle Namespace: KS.ConsoleBase.Inputs.Styles Assembly: Nitrocid.dll Syntax public static class InputStyle Methods | Edit this page View Source PromptInput(string) Prompts user for input (answer the question with your own answers) Declaration public static string PromptInput(string Question) Parameters Type Name Description string Question Returns Type Description string"
+    "keywords": "Class InputStyle Input style module Inheritance object InputStyle Namespace: KS.ConsoleBase.Inputs.Styles Assembly: Nitrocid.dll Syntax public static class InputStyle Methods | Edit this page View Source PromptInput(string) Prompts user for input (answer the question with your own answers) Declaration public static string PromptInput(string Question) Parameters Type Name Description string Question Returns Type Description string | Edit this page View Source PromptInputPassword(string) Prompts user for password (answer the question with your own answers) Declaration public static string PromptInputPassword(string Question) Parameters Type Name Description string Question Returns Type Description string"
   },
   "api/KS.ConsoleBase.Inputs.Styles.Selection.SelectionMultipleStyle.html": {
     "href": "api/KS.ConsoleBase.Inputs.Styles.Selection.SelectionMultipleStyle.html",
