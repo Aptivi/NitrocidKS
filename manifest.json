@@ -3865,16 +3865,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KS.Modifications.ModPartInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Modifications.ModPartInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KS.Modifications.yml",
       "output": {
         ".html": {
