@@ -104,7 +104,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen__ctor.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L106">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L201">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_Screen__ctor_" data-uid="KS.ConsoleBase.Buffered.Screen.#ctor*"></a>
   <h4 id="KS_ConsoleBase_Buffered_Screen__ctor" data-uid="KS.ConsoleBase.Buffered.Screen.#ctor">Screen()</h4>
@@ -122,7 +122,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen_ScreenParts.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen.ScreenParts%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L37">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L38">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_Screen_ScreenParts_" data-uid="KS.ConsoleBase.Buffered.Screen.ScreenParts*"></a>
   <h4 id="KS_ConsoleBase_Buffered_Screen_ScreenParts" data-uid="KS.ConsoleBase.Buffered.Screen.ScreenParts">ScreenParts</h4>
@@ -152,19 +152,19 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen_AddBufferedPart_KS_ConsoleBase_Buffered_ScreenPart_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen.AddBufferedPart(KS.ConsoleBase.Buffered.ScreenPart)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen_AddBufferedPart_System_String_KS_ConsoleBase_Buffered_ScreenPart_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen.AddBufferedPart(System.String%2CKS.ConsoleBase.Buffered.ScreenPart)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L45">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L47">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_Screen_AddBufferedPart_" data-uid="KS.ConsoleBase.Buffered.Screen.AddBufferedPart*"></a>
-  <h4 id="KS_ConsoleBase_Buffered_Screen_AddBufferedPart_KS_ConsoleBase_Buffered_ScreenPart_" data-uid="KS.ConsoleBase.Buffered.Screen.AddBufferedPart(KS.ConsoleBase.Buffered.ScreenPart)">AddBufferedPart(ScreenPart)</h4>
+  <h4 id="KS_ConsoleBase_Buffered_Screen_AddBufferedPart_System_String_KS_ConsoleBase_Buffered_ScreenPart_" data-uid="KS.ConsoleBase.Buffered.Screen.AddBufferedPart(System.String,KS.ConsoleBase.Buffered.ScreenPart)">AddBufferedPart(string, ScreenPart)</h4>
   <div class="markdown level1 summary"><p>Adds the buffered part to the list of screen parts</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddBufferedPart(ScreenPart part)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddBufferedPart(string name, ScreenPart part)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -176,6 +176,12 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Screen buffer part name</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="KS.ConsoleBase.Buffered.ScreenPart.html">ScreenPart</a></td>
         <td><span class="parametername">part</span></td>
@@ -201,10 +207,138 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen_CheckBufferedPart_System_Int32_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen.CheckBufferedPart(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L158">View Source</a>
+  </span>
+  <a id="KS_ConsoleBase_Buffered_Screen_CheckBufferedPart_" data-uid="KS.ConsoleBase.Buffered.Screen.CheckBufferedPart*"></a>
+  <h4 id="KS_ConsoleBase_Buffered_Screen_CheckBufferedPart_System_Int32_" data-uid="KS.ConsoleBase.Buffered.Screen.CheckBufferedPart(System.Int32)">CheckBufferedPart(int)</h4>
+  <div class="markdown level1 summary"><p>Checks the buffered part to the list of screen parts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckBufferedPart(int idx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>Part index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen_CheckBufferedPart_System_String_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen.CheckBufferedPart(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L173">View Source</a>
+  </span>
+  <a id="KS_ConsoleBase_Buffered_Screen_CheckBufferedPart_" data-uid="KS.ConsoleBase.Buffered.Screen.CheckBufferedPart*"></a>
+  <h4 id="KS_ConsoleBase_Buffered_Screen_CheckBufferedPart_System_String_" data-uid="KS.ConsoleBase.Buffered.Screen.CheckBufferedPart(System.String)">CheckBufferedPart(string)</h4>
+  <div class="markdown level1 summary"><p>Checks the buffered part to the list of screen parts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckBufferedPart(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Screen buffer part name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen_EditBufferedPart_System_Int32_KS_ConsoleBase_Buffered_ScreenPart_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen.EditBufferedPart(System.Int32%2CKS.ConsoleBase.Buffered.ScreenPart)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L60">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L66">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_Screen_EditBufferedPart_" data-uid="KS.ConsoleBase.Buffered.Screen.EditBufferedPart*"></a>
   <h4 id="KS_ConsoleBase_Buffered_Screen_EditBufferedPart_System_Int32_KS_ConsoleBase_Buffered_ScreenPart_" data-uid="KS.ConsoleBase.Buffered.Screen.EditBufferedPart(System.Int32,KS.ConsoleBase.Buffered.ScreenPart)">EditBufferedPart(int, ScreenPart)</h4>
@@ -256,10 +390,65 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen_EditBufferedPart_System_String_KS_ConsoleBase_Buffered_ScreenPart_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen.EditBufferedPart(System.String%2CKS.ConsoleBase.Buffered.ScreenPart)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L84">View Source</a>
+  </span>
+  <a id="KS_ConsoleBase_Buffered_Screen_EditBufferedPart_" data-uid="KS.ConsoleBase.Buffered.Screen.EditBufferedPart*"></a>
+  <h4 id="KS_ConsoleBase_Buffered_Screen_EditBufferedPart_System_String_KS_ConsoleBase_Buffered_ScreenPart_" data-uid="KS.ConsoleBase.Buffered.Screen.EditBufferedPart(System.String,KS.ConsoleBase.Buffered.ScreenPart)">EditBufferedPart(string, ScreenPart)</h4>
+  <div class="markdown level1 summary"><p>Edits the buffered part to the list of screen parts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EditBufferedPart(string name, ScreenPart part)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Screen buffer part name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KS.ConsoleBase.Buffered.ScreenPart.html">ScreenPart</a></td>
+        <td><span class="parametername">part</span></td>
+        <td><p>Buffered screen part to add to the screen part list for buffering</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen_GetBuffer.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen.GetBuffer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L95">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L190">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_Screen_GetBuffer_" data-uid="KS.ConsoleBase.Buffered.Screen.GetBuffer*"></a>
   <h4 id="KS_ConsoleBase_Buffered_Screen_GetBuffer" data-uid="KS.ConsoleBase.Buffered.Screen.GetBuffer">GetBuffer()</h4>
@@ -288,19 +477,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen_RemoveBufferedPart_KS_ConsoleBase_Buffered_ScreenPart_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen.RemoveBufferedPart(KS.ConsoleBase.Buffered.ScreenPart)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen_GetBufferedPart_System_Int32_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen.GetBufferedPart(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L76">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L129">View Source</a>
   </span>
-  <a id="KS_ConsoleBase_Buffered_Screen_RemoveBufferedPart_" data-uid="KS.ConsoleBase.Buffered.Screen.RemoveBufferedPart*"></a>
-  <h4 id="KS_ConsoleBase_Buffered_Screen_RemoveBufferedPart_KS_ConsoleBase_Buffered_ScreenPart_" data-uid="KS.ConsoleBase.Buffered.Screen.RemoveBufferedPart(KS.ConsoleBase.Buffered.ScreenPart)">RemoveBufferedPart(ScreenPart)</h4>
-  <div class="markdown level1 summary"><p>Removes the buffered part from the list of screen parts</p>
+  <a id="KS_ConsoleBase_Buffered_Screen_GetBufferedPart_" data-uid="KS.ConsoleBase.Buffered.Screen.GetBufferedPart*"></a>
+  <h4 id="KS_ConsoleBase_Buffered_Screen_GetBufferedPart_System_Int32_" data-uid="KS.ConsoleBase.Buffered.Screen.GetBufferedPart(System.Int32)">GetBufferedPart(int)</h4>
+  <div class="markdown level1 summary"><p>Gets the buffered part to the list of screen parts</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RemoveBufferedPart(ScreenPart part)</code></pre>
+    <pre><code class="lang-csharp hljs">public ScreenPart GetBufferedPart(int idx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -313,9 +502,186 @@
     </thead>
     <tbody>
       <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>Part index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
         <td><a class="xref" href="KS.ConsoleBase.Buffered.ScreenPart.html">ScreenPart</a></td>
-        <td><span class="parametername">part</span></td>
-        <td><p>Buffered screen part to add to the screen part list for buffering</p>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen_GetBufferedPart_System_String_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen.GetBufferedPart(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L144">View Source</a>
+  </span>
+  <a id="KS_ConsoleBase_Buffered_Screen_GetBufferedPart_" data-uid="KS.ConsoleBase.Buffered.Screen.GetBufferedPart*"></a>
+  <h4 id="KS_ConsoleBase_Buffered_Screen_GetBufferedPart_System_String_" data-uid="KS.ConsoleBase.Buffered.Screen.GetBufferedPart(System.String)">GetBufferedPart(string)</h4>
+  <div class="markdown level1 summary"><p>Gets the buffered part to the list of screen parts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScreenPart GetBufferedPart(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Screen buffer part name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.ConsoleBase.Buffered.ScreenPart.html">ScreenPart</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen_RemoveBufferedPart_System_Int32_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen.RemoveBufferedPart(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L100">View Source</a>
+  </span>
+  <a id="KS_ConsoleBase_Buffered_Screen_RemoveBufferedPart_" data-uid="KS.ConsoleBase.Buffered.Screen.RemoveBufferedPart*"></a>
+  <h4 id="KS_ConsoleBase_Buffered_Screen_RemoveBufferedPart_System_Int32_" data-uid="KS.ConsoleBase.Buffered.Screen.RemoveBufferedPart(System.Int32)">RemoveBufferedPart(int)</h4>
+  <div class="markdown level1 summary"><p>Removes the buffered part from the list of screen parts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveBufferedPart(int idx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>Part index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KS.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen_RemoveBufferedPart_System_String_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen.RemoveBufferedPart(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L115">View Source</a>
+  </span>
+  <a id="KS_ConsoleBase_Buffered_Screen_RemoveBufferedPart_" data-uid="KS.ConsoleBase.Buffered.Screen.RemoveBufferedPart*"></a>
+  <h4 id="KS_ConsoleBase_Buffered_Screen_RemoveBufferedPart_System_String_" data-uid="KS.ConsoleBase.Buffered.Screen.RemoveBufferedPart(System.String)">RemoveBufferedPart(string)</h4>
+  <div class="markdown level1 summary"><p>Removes the buffered part from the list of screen parts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveBufferedPart(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Screen buffer part name</p>
 </td>
       </tr>
     </tbody>
@@ -340,7 +706,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen_RemoveBufferedParts.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen.RemoveBufferedParts%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L88">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L183">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_Screen_RemoveBufferedParts_" data-uid="KS.ConsoleBase.Buffered.Screen.RemoveBufferedParts*"></a>
   <h4 id="KS_ConsoleBase_Buffered_Screen_RemoveBufferedParts" data-uid="KS.ConsoleBase.Buffered.Screen.RemoveBufferedParts">RemoveBufferedParts()</h4>
@@ -363,7 +729,7 @@
                     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_Screen.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.Screen%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L30" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/Screen.cs/#L31" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
