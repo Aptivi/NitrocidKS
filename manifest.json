@@ -4145,6 +4145,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.Security.Permissions.PermissionTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Security.Permissions.PermissionTypes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Security.Permissions.PermissionsTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Security.Permissions.PermissionsTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.Security.Permissions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.Security.Permissions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.Security.Privacy.Consents.ConsentedPermission.yml",
       "output": {
         ".html": {
@@ -5579,36 +5609,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KS.Users.Login.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Users.Permissions.PermissionTypes.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Users.Permissions.PermissionTypes.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Users.Permissions.PermissionsTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Users.Permissions.PermissionsTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KS.Users.Permissions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KS.Users.Permissions.html"
         }
       },
       "version": ""
