@@ -1055,6 +1055,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Writers.TextFancyWriters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Writers.TextFancyWriters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Writers.TextMiscWriters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Writers.TextMiscWriters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Writers.TextWriters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Writers.TextWriters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KS.ConsoleBase.Writers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KS.ConsoleBase.Writers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KS.ConsoleBase.yml",
       "output": {
         ".html": {
