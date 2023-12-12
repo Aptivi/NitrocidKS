@@ -104,7 +104,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_ScreenPart__ctor.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.ScreenPart.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L140">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L155">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_ScreenPart__ctor_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.#ctor*"></a>
   <h4 id="KS_ConsoleBase_Buffered_ScreenPart__ctor" data-uid="KS.ConsoleBase.Buffered.ScreenPart.#ctor">ScreenPart()</h4>
@@ -115,6 +115,44 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ScreenPart()</code></pre>
   </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_ScreenPart_Order.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.ScreenPart.Order%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L46">View Source</a>
+  </span>
+  <a id="KS_ConsoleBase_Buffered_ScreenPart_Order_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.Order*"></a>
+  <h4 id="KS_ConsoleBase_Buffered_ScreenPart_Order" data-uid="KS.ConsoleBase.Buffered.ScreenPart.Order">Order</h4>
+  <div class="markdown level1 summary"><p>Order to use while buffering the screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Order { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="KS_ConsoleBase_Buffered_ScreenPart_Order_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is compared in an ascending way so that the screen management system sorts the parts from the least important to
+the most important. For example, parts that are in order number 0 will get buffered before parts that have their
+order number of 1, and so on.</p>
+</div>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
@@ -122,7 +160,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_ScreenPart_AddDynamicText_System_Func_System_String__.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.ScreenPart.AddDynamicText(System.Func%7BSystem.String%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L55">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L70">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_ScreenPart_AddDynamicText_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.AddDynamicText*"></a>
   <h4 id="KS_ConsoleBase_Buffered_ScreenPart_AddDynamicText_System_Func_System_String__" data-uid="KS.ConsoleBase.Buffered.ScreenPart.AddDynamicText(System.Func{System.String})">AddDynamicText(Func&lt;string&gt;)</h4>
@@ -156,7 +194,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_ScreenPart_AddText_System_String_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.ScreenPart.AddText(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L41">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L56">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_ScreenPart_AddText_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.AddText*"></a>
   <h4 id="KS_ConsoleBase_Buffered_ScreenPart_AddText_System_String_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.AddText(System.String)">AddText(string)</h4>
@@ -190,7 +228,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_ScreenPart_AddTextLine_System_String_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.ScreenPart.AddTextLine(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L48">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L63">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_ScreenPart_AddTextLine_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.AddTextLine*"></a>
   <h4 id="KS_ConsoleBase_Buffered_ScreenPart_AddTextLine_System_String_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.AddTextLine(System.String)">AddTextLine(string)</h4>
@@ -224,7 +262,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_ScreenPart_BackgroundColor_Terminaux_Colors_Color_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.ScreenPart.BackgroundColor(Terminaux.Colors.Color%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L104">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L119">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_ScreenPart_BackgroundColor_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.BackgroundColor*"></a>
   <h4 id="KS_ConsoleBase_Buffered_ScreenPart_BackgroundColor_Terminaux_Colors_Color_System_Boolean_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.BackgroundColor(Terminaux.Colors.Color,System.Boolean)">BackgroundColor(Color, bool)</h4>
@@ -264,7 +302,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_ScreenPart_Clear.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.ScreenPart.Clear%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L122">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L137">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_ScreenPart_Clear_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.Clear*"></a>
   <h4 id="KS_ConsoleBase_Buffered_ScreenPart_Clear" data-uid="KS.ConsoleBase.Buffered.ScreenPart.Clear">Clear()</h4>
@@ -280,7 +318,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_ScreenPart_ForegroundColor_Terminaux_Colors_Color_System_Boolean_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.ScreenPart.ForegroundColor(Terminaux.Colors.Color%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L93">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L108">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_ScreenPart_ForegroundColor_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.ForegroundColor*"></a>
   <h4 id="KS_ConsoleBase_Buffered_ScreenPart_ForegroundColor_Terminaux_Colors_Color_System_Boolean_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.ForegroundColor(Terminaux.Colors.Color,System.Boolean)">ForegroundColor(Color, bool)</h4>
@@ -320,7 +358,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_ScreenPart_GetBuffer.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.ScreenPart.GetBuffer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L129">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L144">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_ScreenPart_GetBuffer_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.GetBuffer*"></a>
   <h4 id="KS_ConsoleBase_Buffered_ScreenPart_GetBuffer" data-uid="KS.ConsoleBase.Buffered.ScreenPart.GetBuffer">GetBuffer()</h4>
@@ -352,7 +390,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_ScreenPart_LeftPosition_System_Int32_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.ScreenPart.LeftPosition(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L67">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L82">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_ScreenPart_LeftPosition_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.LeftPosition*"></a>
   <h4 id="KS_ConsoleBase_Buffered_ScreenPart_LeftPosition_System_Int32_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.LeftPosition(System.Int32)">LeftPosition(int)</h4>
@@ -386,7 +424,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_ScreenPart_Position_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.ScreenPart.Position(System.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L82">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L97">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_ScreenPart_Position_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.Position*"></a>
   <h4 id="KS_ConsoleBase_Buffered_ScreenPart_Position_System_Int32_System_Int32_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.Position(System.Int32,System.Int32)">Position(int, int)</h4>
@@ -426,7 +464,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_ScreenPart_ResetColor.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.ScreenPart.ResetColor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L113">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L128">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_ScreenPart_ResetColor_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.ResetColor*"></a>
   <h4 id="KS_ConsoleBase_Buffered_ScreenPart_ResetColor" data-uid="KS.ConsoleBase.Buffered.ScreenPart.ResetColor">ResetColor()</h4>
@@ -442,7 +480,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=KS_ConsoleBase_Buffered_ScreenPart_TopPosition_System_Int32_.md&amp;value=---%0Auid%3A%20KS.ConsoleBase.Buffered.ScreenPart.TopPosition(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L74">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Buffered/ScreenPart.cs/#L89">View Source</a>
   </span>
   <a id="KS_ConsoleBase_Buffered_ScreenPart_TopPosition_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.TopPosition*"></a>
   <h4 id="KS_ConsoleBase_Buffered_ScreenPart_TopPosition_System_Int32_" data-uid="KS.ConsoleBase.Buffered.ScreenPart.TopPosition(System.Int32)">TopPosition(int)</h4>
