@@ -19,26 +19,13 @@ REM    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 REM This script builds KS and packs the artifacts. Use when you have VS installed.
 for /f "tokens=* USEBACKQ" %%f in (`type version`) do set ksversion=%%f
-set releaseconfig=%1
-if "%releaseconfig%" == "" set releaseconfig=Release
-
-echo Finding MSBuild...
-for /f "delims=" %%i in ('"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -latest -prerelease -products * -requires Microsoft.Component.MSBuild -find MSBuild\**\Bin\MSBuild.exe') do set msbuildpath=%%i
-if %errorlevel% == 0 goto :download
-echo There was an error trying to find MSBuild (%errorlevel%).
-goto :finished
-
-:download
-echo MSBuild found in %msbuildpath%
-echo Downloading packages...
-"%msbuildpath%" "..\Kernel Simulator.sln" -t:restore -p:Configuration=%releaseconfig%
-if %errorlevel% == 0 goto :build
-echo There was an error trying to download packages (%errorlevel%).
-goto :finished
 
 :build
 echo Building Kernel Simulator...
-"%msbuildpath%" "..\Kernel Simulator.sln" -p:Configuration=%releaseconfig%
+"%ProgramFiles%\dotnet\dotnet.exe" msbuild "..\Kernel Simulator.sln" -t:restore -p:Configuration=Release-dotnet
+"%ProgramFiles%\dotnet\dotnet.exe" msbuild "..\Kernel Simulator.sln" -p:Configuration=Release-dotnet
+"%ProgramFiles%\dotnet\dotnet.exe" msbuild "..\Kernel Simulator.sln" -t:restore -p:Configuration=Release
+"%ProgramFiles%\dotnet\dotnet.exe" msbuild "..\Kernel Simulator.sln" -p:Configuration=Release
 if %errorlevel% == 0 goto :success
 echo There was an error trying to build (%errorlevel%).
 goto :finished

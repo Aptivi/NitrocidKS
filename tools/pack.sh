@@ -31,6 +31,7 @@ fi
 echo Packing binary...
 find . -type f -iname \*.nupkg -delete >> ~/tmp/buildandpack.log
 (cd "../Kernel Simulator/KSBuild/net48/" && "$zippath" -r /tmp/$ksversion-bin.zip . && cd -) >> ~/tmp/buildandpack.log
+(cd "../Kernel Simulator/KSBuild/net6.0/" && "$zippath" -r /tmp/$ksversion-bin-dotnet.zip . && cd -) >> ~/tmp/buildandpack.log
 if [ ! $? == 0 ]; then
 	echo Packing using zip failed.
 	exit 1
@@ -38,6 +39,8 @@ fi
 
 # Inform success
 mv ~/tmp/$ksversion-bin.zip .
+mv ~/tmp/$ksversion-bin-dotnet.zip .
 cp "../Kernel Simulator/KSBuild/net48/Kernel Simulator.pdb" ./$ksversion.pdb
+cp "../Kernel Simulator/KSBuild/net6.0/Kernel Simulator.pdb" ./$ksversion-dotnet.pdb
 echo Build and pack successful.
 exit 0
