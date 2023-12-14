@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports System.IO
+Imports Terminaux.Colors.Selector
 
 Public Class Color
 
@@ -529,174 +530,10 @@ Public Module ColorTools
     ''' <param name="DefaultColorG">The default green color range of 0-255 to use</param>
     ''' <param name="DefaultColorB">The default blue color range of 0-255 to use</param>
     Public Function ColorWheel(TrueColor As Boolean, DefaultColor As ConsoleColors, DefaultColorR As Integer, DefaultColorG As Integer, DefaultColorB As Integer) As String
-        Dim CurrentColor As ConsoleColors = DefaultColor
-        Dim CurrentColorR As Integer = DefaultColorR
-        Dim CurrentColorG As Integer = DefaultColorG
-        Dim CurrentColorB As Integer = DefaultColorB
-        Dim CurrentRange As Char = "R"
-        Dim ColorWheelExiting As Boolean
-        Console.CursorVisible = False
-        While Not ColorWheelExiting
-            Console.Clear()
-            If TrueColor Then
-                Write(vbNewLine + DoTranslation("Select color using ""<-"" and ""->"" keys. Press ENTER to quit. Press ""i"" to insert color number manually."), True, ColTypes.Neutral)
-                Write(DoTranslation("Press ""t"" to switch to 255 color mode."), True, ColTypes.Neutral)
-
-                'The red color level
-                Write(vbNewLine + " <", False, If(CurrentRange = "R", ColTypes.Gray, ColTypes.Neutral))
-                WriteWhereC("R: {0}", (Console.CursorLeft + 30 - $"R: {CurrentColorR}".Length) / 2, Console.CursorTop, True, New Color($"{CurrentColorR};0;0"), CurrentColorR)
-                WriteWhere(">" + vbNewLine, Console.CursorLeft + 27, Console.CursorTop, False, If(CurrentRange = "R", ColTypes.Gray, ColTypes.Neutral))
-
-                'The green color level
-                Write(vbNewLine + " <", False, If(CurrentRange = "G", ColTypes.Gray, ColTypes.Neutral))
-                WriteWhereC("G: {0}", (Console.CursorLeft + 30 - $"G: {CurrentColorG}".Length) / 2, Console.CursorTop, True, New Color($"0;{CurrentColorG};0"), CurrentColorG)
-                WriteWhere(">" + vbNewLine, Console.CursorLeft + 27, Console.CursorTop, False, If(CurrentRange = "G", ColTypes.Gray, ColTypes.Neutral))
-
-                'The blue color level
-                Write(vbNewLine + " <", False, If(CurrentRange = "B", ColTypes.Gray, ColTypes.Neutral))
-                WriteWhereC("B: {0}", (Console.CursorLeft + 30 - $"B: {CurrentColorB}".Length) / 2, Console.CursorTop, True, New Color($"0;0;{CurrentColorB}"), CurrentColorB)
-                WriteWhere(">" + vbNewLine, Console.CursorLeft + 27, Console.CursorTop, False, If(CurrentRange = "B", ColTypes.Gray, ColTypes.Neutral))
-
-                'Show example
-                WriteC(vbNewLine + "- Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, New Color($"{CurrentColorR};{CurrentColorG};{CurrentColorB}"))
-
-                'Read and get response
-                Dim ConsoleResponse As ConsoleKeyInfo = Console.ReadKey(True)
-                If ConsoleResponse.Key = ConsoleKey.LeftArrow Then
-                    Select Case CurrentRange
-                        Case "R"
-                            If CurrentColorR = 0 Then
-                                CurrentColorR = 255
-                            Else
-                                CurrentColorR -= 1
-                            End If
-                        Case "G"
-                            If CurrentColorG = 0 Then
-                                CurrentColorG = 255
-                            Else
-                                CurrentColorG -= 1
-                            End If
-                        Case "B"
-                            If CurrentColorB = 0 Then
-                                CurrentColorB = 255
-                            Else
-                                CurrentColorB -= 1
-                            End If
-                    End Select
-                ElseIf ConsoleResponse.Key = ConsoleKey.RightArrow Then
-                    Select Case CurrentRange
-                        Case "R"
-                            If CurrentColorR = 255 Then
-                                CurrentColorR = 0
-                            Else
-                                CurrentColorR += 1
-                            End If
-                        Case "G"
-                            If CurrentColorG = 255 Then
-                                CurrentColorG = 0
-                            Else
-                                CurrentColorG += 1
-                            End If
-                        Case "B"
-                            If CurrentColorB = 255 Then
-                                CurrentColorB = 0
-                            Else
-                                CurrentColorB += 1
-                            End If
-                    End Select
-                ElseIf ConsoleResponse.Key = ConsoleKey.UpArrow Then
-                    Select Case CurrentRange
-                        Case "R"
-                            CurrentRange = "B"
-                        Case "G"
-                            CurrentRange = "R"
-                        Case "B"
-                            CurrentRange = "G"
-                    End Select
-                ElseIf ConsoleResponse.Key = ConsoleKey.DownArrow Then
-                    Select Case CurrentRange
-                        Case "R"
-                            CurrentRange = "G"
-                        Case "G"
-                            CurrentRange = "B"
-                        Case "B"
-                            CurrentRange = "R"
-                    End Select
-                ElseIf ConsoleResponse.Key = ConsoleKey.I Then
-                    Dim _DefaultColor As Integer
-                    Select Case CurrentRange
-                        Case "R"
-                            _DefaultColor = CurrentColorR
-                        Case "G"
-                            _DefaultColor = CurrentColorG
-                        Case "B"
-                            _DefaultColor = CurrentColorB
-                    End Select
-                    WriteWhere(DoTranslation("Enter color number from 0 to 255:") + " [{0}] ", 0, Console.WindowHeight - 1, False, ColTypes.Input, _DefaultColor)
-                    Dim ColorNum As String = Console.ReadLine
-                    If IsNumeric(ColorNum) Then
-                        If ColorNum >= 0 And ColorNum <= 255 Then
-                            Select Case CurrentRange
-                                Case "R"
-                                    CurrentColorR = ColorNum
-                                Case "G"
-                                    CurrentColorG = ColorNum
-                                Case "B"
-                                    CurrentColorB = ColorNum
-                            End Select
-                        End If
-                    End If
-                ElseIf ConsoleResponse.Key = ConsoleKey.T Then
-                    TrueColor = False
-                ElseIf ConsoleResponse.Key = ConsoleKey.Enter Then
-                    ColorWheelExiting = True
-                End If
-            Else
-                Write(vbNewLine + DoTranslation("Select color using ""<-"" and ""->"" keys. Use arrow up and arrow down keys to select between color ranges. Press ENTER to quit. Press ""i"" to insert color number manually."), True, ColTypes.Neutral)
-                Write(DoTranslation("Press ""t"" to switch to true color mode."), True, ColTypes.Neutral)
-
-                'The color selection
-                Write(vbNewLine + " <", False, ColTypes.Gray)
-                WriteWhereC(CurrentColor.ToString, (Console.CursorLeft + 30 - CurrentColor.ToString.Length) / 2, Console.CursorTop, True, New Color(CurrentColor))
-                WriteWhere(">", Console.CursorLeft + 27, Console.CursorTop, False, ColTypes.Gray)
-
-                'Show prompt
-                WriteC(vbNewLine + vbNewLine + "- Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, New Color(CurrentColor))
-
-                'Read and get response
-                Dim ConsoleResponse As ConsoleKeyInfo = Console.ReadKey(True)
-                If ConsoleResponse.Key = ConsoleKey.LeftArrow Then
-                    If CurrentColor = 0 Then
-                        CurrentColor = 255
-                    Else
-                        CurrentColor -= 1
-                    End If
-                ElseIf ConsoleResponse.Key = ConsoleKey.RightArrow Then
-                    If CurrentColor = 255 Then
-                        CurrentColor = 0
-                    Else
-                        CurrentColor += 1
-                    End If
-                ElseIf ConsoleResponse.Key = ConsoleKey.I Then
-                    WriteWhere(DoTranslation("Enter color number from 0 to 255:") + " [{0}] ", 0, Console.WindowHeight - 1, False, ColTypes.Input, CInt(CurrentColor))
-                    Dim ColorNum As String = Console.ReadLine
-                    If IsNumeric(ColorNum) Then
-                        If ColorNum >= 0 And ColorNum <= 255 Then
-                            CurrentColor = ColorNum
-                        End If
-                    End If
-                ElseIf ConsoleResponse.Key = ConsoleKey.T Then
-                    TrueColor = True
-                ElseIf ConsoleResponse.Key = ConsoleKey.Enter Then
-                    ColorWheelExiting = True
-                End If
-            End If
-        End While
-
         If TrueColor Then
-            Return $"{CurrentColorR};{CurrentColorG};{CurrentColorB}"
+            Return ColorSelector.OpenColorSelector($"{DefaultColorR};{DefaultColorG};{DefaultColorB}").PlainSequence
         Else
-            Return CurrentColor
+            Return ColorSelector.OpenColorSelector(DefaultColor).PlainSequence
         End If
     End Function
 
