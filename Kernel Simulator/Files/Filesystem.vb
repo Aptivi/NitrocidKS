@@ -1006,6 +1006,7 @@ Namespace Files
         Public Function TryParsePath(Path As String) As Boolean
             Try
                 ThrowOnInvalidPath(Path)
+                If Path Is Nothing Then Return False
                 Return Not Path.IndexOfAny(IO.Path.GetInvalidPathChars()) >= 0
             Catch ex As Exception
                 WStkTrc(ex)
@@ -1022,6 +1023,7 @@ Namespace Files
         Public Function TryParseFileName(Name As String) As Boolean
             Try
                 ThrowOnInvalidPath(Name)
+                If Name Is Nothing Then Return False
                 Return Not Name.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0
             Catch ex As Exception
                 WStkTrc(ex)
