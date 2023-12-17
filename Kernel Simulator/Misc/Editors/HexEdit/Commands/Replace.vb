@@ -28,16 +28,16 @@ Namespace Misc.Editors.HexEdit.Commands
                 Dim ByteFrom As Byte = Convert.ToByte(ListArgs(0), 16)
                 Dim ByteWith As Byte = Convert.ToByte(ListArgs(1), 16)
                 HexEdit_Replace(ByteFrom, ByteWith)
-                Write(DoTranslation("Byte replaced."), True, ColTypes.Success)
+                Write(DoTranslation("Byte replaced."), True, GetConsoleColor(ColTypes.Success))
             ElseIf ListArgs?.Count = 3 Then
                 If IsStringNumeric(ListArgs(2)) Then
                     If CLng(ListArgs(2)) <= HexEdit_FileBytes.LongCount Then
                         Dim ByteFrom As Byte = Convert.ToByte(ListArgs(0), 16)
                         Dim ByteWith As Byte = Convert.ToByte(ListArgs(1), 16)
                         HexEdit_Replace(ByteFrom, ByteWith, ListArgs(2))
-                        Write(DoTranslation("Byte replaced."), True, ColTypes.Success)
+                        Write(DoTranslation("Byte replaced."), True, GetConsoleColor(ColTypes.Success))
                     Else
-                        Write(DoTranslation("The specified byte number may not be larger than the file size."), True, ColTypes.Error)
+                        Write(DoTranslation("The specified byte number may not be larger than the file size."), True, GetConsoleColor(ColTypes.Error))
                     End If
                 End If
             ElseIf ListArgs?.Count > 3 Then
@@ -49,9 +49,9 @@ Namespace Misc.Editors.HexEdit.Commands
                         Dim ByteNumberEnd As Long = ListArgs(3)
                         ByteNumberStart.SwapIfSourceLarger(ByteNumberEnd)
                         HexEdit_Replace(ByteFrom, ByteWith, ByteNumberStart, ByteNumberEnd)
-                        Write(DoTranslation("Byte replaced."), True, ColTypes.Success)
+                        Write(DoTranslation("Byte replaced."), True, GetConsoleColor(ColTypes.Success))
                     Else
-                        Write(DoTranslation("The specified byte number may not be larger than the file size."), True, ColTypes.Error)
+                        Write(DoTranslation("The specified byte number may not be larger than the file size."), True, GetConsoleColor(ColTypes.Error))
                     End If
                 End If
             End If

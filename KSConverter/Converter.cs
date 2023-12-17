@@ -34,7 +34,7 @@ using KS.Network;
 using KS.Network.RemoteDebug;
 using KS.Shell.ShellBase.Aliases;
 using KS.Shell.ShellBase.Shells;
-using static KS.ConsoleBase.Colors.ColorTools;
+using static KS.ConsoleBase.Colors.KernelColorTools;
 
 namespace KSConverter
 {
@@ -67,7 +67,7 @@ namespace KSConverter
                 if (!Checking.FolderExists(ConverterTools.GetHomeDirectory() + "/KSBackup"))
                 {
                     // Just make it!
-                    TextWriterColor.Write("  - Backup directory not found. Creating directory...", true, ColTypes.Progress);
+                    TextWriterColor.Write("  - Backup directory not found. Creating directory...", true, GetConsoleColor(ColTypes.Progress));
                     Debug.WriteLine("Creating directory...");
                     Directory.CreateDirectory(ConverterTools.GetHomeDirectory() + "/KSBackup");
                 }
@@ -75,7 +75,7 @@ namespace KSConverter
                 {
                     // Directory found. Skip the creation.
                     Debug.WriteLine("Already found.");
-                    TextWriterColor.Write("  - Warning: backup directory is already found.", true, ColTypes.Warning);
+                    TextWriterColor.Write("  - Warning: backup directory is already found.", true, GetConsoleColor(ColTypes.Warning));
                 }
                 Console.WriteLine();
 
@@ -90,19 +90,19 @@ namespace KSConverter
                     {
                         // Move the old config file to backup
                         Debug.WriteLine($"Moving {ConfigEntry} from {ListOfOldPaths[ConfigEntry]} to {ListOfBackups[ConfigEntry]}...");
-                        TextWriterColor.Write("  - {0}: {1} -> {2}", true, ColTypes.Neutral, ConfigEntry, ListOfOldPaths[ConfigEntry], ListOfBackups[ConfigEntry]);
+                        TextWriterColor.Write("  - {0}: {1} -> {2}", true, GetConsoleColor(ColTypes.Neutral), ConfigEntry, ListOfOldPaths[ConfigEntry], ListOfBackups[ConfigEntry]);
                         File.Move(ListOfOldPaths[ConfigEntry], ListOfBackups[ConfigEntry]);
                     }
                     else if (Checking.FileExists(ListOfBackups[ConfigEntry]))
                     {
                         Debug.WriteLine("We already have backup!");
-                        TextWriterColor.Write("  - Warning: {0} already exists", true, ColTypes.Warning, ListOfBackups[ConfigEntry]);
+                        TextWriterColor.Write("  - Warning: {0} already exists", true, GetConsoleColor(ColTypes.Warning), ListOfBackups[ConfigEntry]);
                     }
                     else
                     {
                         // File not found. Skip it.
                         Debug.WriteLine("We don't have config.");
-                        TextWriterColor.Write("  - Warning: {0} not found in home directory.", true, ColTypes.Warning, ListOfOldPaths[ConfigEntry]);
+                        TextWriterColor.Write("  - Warning: {0} not found in home directory.", true, GetConsoleColor(ColTypes.Warning), ListOfOldPaths[ConfigEntry]);
                     }
                 }
                 Console.WriteLine();
@@ -113,18 +113,18 @@ namespace KSConverter
                 if (Checking.FileExists(ListOfBackups["BlockedDevices"]))
                 {
                     // Read blocked devices from old file
-                    TextWriterColor.Write("  - Reading blocked devices from blocked_devices.csv...", true, ColTypes.Progress);
+                    TextWriterColor.Write("  - Reading blocked devices from blocked_devices.csv...", true, GetConsoleColor(ColTypes.Progress));
                     Debug.WriteLine($"Calling File.ReadAllLines on {ListOfBackups["BlockedDevices"]}...");
                     var BlockedDevices = File.ReadAllLines(ListOfBackups["BlockedDevices"]).ToList();
                     Debug.WriteLine($"We have {BlockedDevices.Count} devices.");
-                    TextWriterColor.Write("  - {0} devices found.", true, ColTypes.Neutral, BlockedDevices.Count);
+                    TextWriterColor.Write("  - {0} devices found.", true, GetConsoleColor(ColTypes.Neutral), BlockedDevices.Count);
 
                     // Add blocked devices to new format
                     Debug.WriteLine($"Iterating {BlockedDevices.Count} blocked devices...");
                     foreach (string BlockedDevice in BlockedDevices)
                     {
                         Debug.WriteLine($"Adding blocked device {BlockedDevice} to the new config format...");
-                        TextWriterColor.Write("  - Adding {0} to DebugDeviceNames.json...", true, ColTypes.Progress, BlockedDevice);
+                        TextWriterColor.Write("  - Adding {0} to DebugDeviceNames.json...", true, GetConsoleColor(ColTypes.Progress), BlockedDevice);
                         RemoteDebugTools.AddDeviceToJson(BlockedDevice, false);
                         RemoteDebugTools.SetDeviceProperty(BlockedDevice, RemoteDebugTools.DeviceProperty.Blocked, true);
                     }
@@ -133,7 +133,7 @@ namespace KSConverter
                 {
                     // File not found. Skip stage.
                     Debug.WriteLine("We don't have file.");
-                    TextWriterColor.Write("  - Warning: blocked_devices.csv not found in home directory.", true, ColTypes.Warning);
+                    TextWriterColor.Write("  - Warning: blocked_devices.csv not found in home directory.", true, GetConsoleColor(ColTypes.Warning));
                 }
                 Console.WriteLine();
 
@@ -143,11 +143,11 @@ namespace KSConverter
                 if (Checking.FileExists(ListOfBackups["FTPSpeedDial"]))
                 {
                     // Read FTP speed dial addresses from old file
-                    TextWriterColor.Write("  - Reading FTP speed dial addresses from ftp_speeddial.csv...", true, ColTypes.Progress);
+                    TextWriterColor.Write("  - Reading FTP speed dial addresses from ftp_speeddial.csv...", true, GetConsoleColor(ColTypes.Progress));
                     Debug.WriteLine($"Calling File.ReadAllLines on {ListOfBackups["FTPSpeedDial"]}...");
                     var SpeedDialLines = File.ReadAllLines(ListOfBackups["FTPSpeedDial"]);
                     Debug.WriteLine($"We have {SpeedDialLines.Length} addresses.");
-                    TextWriterColor.Write("  - {0} addresses found.", true, ColTypes.Neutral, SpeedDialLines.Length);
+                    TextWriterColor.Write("  - {0} addresses found.", true, GetConsoleColor(ColTypes.Neutral), SpeedDialLines.Length);
 
                     // Add addresses to new format
                     foreach (string SpeedDialLine in SpeedDialLines)
@@ -165,7 +165,7 @@ namespace KSConverter
                         Debug.WriteLine($"Encryption = {Encryption}");
 
                         // Add the entry!
-                        TextWriterColor.Write("  - Adding {0} to FTP_SpeedDial.json...", true, ColTypes.Progress, Address);
+                        TextWriterColor.Write("  - Adding {0} to FTP_SpeedDial.json...", true, GetConsoleColor(ColTypes.Progress), Address);
                         NetworkTools.AddEntryToSpeedDial(Address, Convert.ToInt32(Port), Username, NetworkTools.SpeedDialType.FTP, Encryption);
                     }
                 }
@@ -173,7 +173,7 @@ namespace KSConverter
                 {
                     // File not found. Skip stage.
                     Debug.WriteLine("We don't have file.");
-                    TextWriterColor.Write("  - Warning: ftp_speeddial.csv not found in home directory.", true, ColTypes.Warning);
+                    TextWriterColor.Write("  - Warning: ftp_speeddial.csv not found in home directory.", true, GetConsoleColor(ColTypes.Warning));
                 }
                 Console.WriteLine();
 
@@ -183,11 +183,11 @@ namespace KSConverter
                 if (Checking.FileExists(ListOfBackups["Users"]))
                 {
                     // Read all users from old file
-                    TextWriterColor.Write("  - Reading users from users.csv...", true, ColTypes.Progress);
+                    TextWriterColor.Write("  - Reading users from users.csv...", true, GetConsoleColor(ColTypes.Progress));
                     Debug.WriteLine($"Calling File.ReadAllLines on {ListOfBackups["Users"]}...");
                     var UsersLines = File.ReadAllLines(ListOfBackups["Users"]);
                     Debug.WriteLine($"We have {UsersLines.Length} addresses.");
-                    TextWriterColor.Write("  - {0} users found.", true, ColTypes.Neutral, UsersLines.Length);
+                    TextWriterColor.Write("  - {0} users found.", true, GetConsoleColor(ColTypes.Neutral), UsersLines.Length);
 
                     // Add users to new format
                     foreach (string UsersLine in UsersLines)
@@ -208,7 +208,7 @@ namespace KSConverter
                         Debug.WriteLine($"Anonymous = {Anonymous}");
 
                         // Add the entry!
-                        TextWriterColor.Write("  - Adding {0} to Users.json...", true, ColTypes.Progress, Username);
+                        TextWriterColor.Write("  - Adding {0} to Users.json...", true, GetConsoleColor(ColTypes.Progress), Username);
                         UserManagement.InitializeUser(Username, Password, false);
                         if (Administrator == "True")
                         {
@@ -231,7 +231,7 @@ namespace KSConverter
                 {
                     // File not found. Skip stage.
                     Debug.WriteLine("We don't have file.");
-                    TextWriterColor.Write("  - Warning: users.csv not found in home directory.", true, ColTypes.Warning);
+                    TextWriterColor.Write("  - Warning: users.csv not found in home directory.", true, GetConsoleColor(ColTypes.Warning));
                 }
                 Console.WriteLine();
 
@@ -241,11 +241,11 @@ namespace KSConverter
                 if (Checking.FileExists(ListOfBackups["Aliases"]))
                 {
                     // Read all aliases from old file
-                    TextWriterColor.Write("  - Reading users from aliases.csv...", true, ColTypes.Progress);
+                    TextWriterColor.Write("  - Reading users from aliases.csv...", true, GetConsoleColor(ColTypes.Progress));
                     Debug.WriteLine($"Calling File.ReadAllLines on {ListOfBackups["Aliases"]}...");
                     var AliasesLines = File.ReadAllLines(ListOfBackups["Aliases"]);
                     Debug.WriteLine($"We have {AliasesLines.Length} aliases.");
-                    TextWriterColor.Write("  - {0} aliases found.", true, ColTypes.Neutral, AliasesLines.Length);
+                    TextWriterColor.Write("  - {0} aliases found.", true, GetConsoleColor(ColTypes.Neutral), AliasesLines.Length);
 
                     // Add aliases to new format
                     foreach (string AliasLine in AliasesLines)
@@ -261,7 +261,7 @@ namespace KSConverter
                         Debug.WriteLine($"AliasType = {AliasType}");
 
                         // Add the entry!
-                        TextWriterColor.Write("  - Adding {0} to Aliases.json...", true, ColTypes.Progress, AliasCommand);
+                        TextWriterColor.Write("  - Adding {0} to Aliases.json...", true, GetConsoleColor(ColTypes.Progress), AliasCommand);
                         switch (AliasType ?? "")
                         {
                             case "Shell":
@@ -301,7 +301,7 @@ namespace KSConverter
                                 }
                             default:
                                 {
-                                    TextWriterColor.Write("  - Invalid type {0}", true, ColTypes.Error, AliasType);
+                                    TextWriterColor.Write("  - Invalid type {0}", true, GetConsoleColor(ColTypes.Error), AliasType);
                                     break;
                                 }
                         }
@@ -309,14 +309,14 @@ namespace KSConverter
 
                     // Save the changes
                     Debug.WriteLine("Saving...");
-                    TextWriterColor.Write("  - Saving aliases to Aliases.json...", true, ColTypes.Progress);
+                    TextWriterColor.Write("  - Saving aliases to Aliases.json...", true, GetConsoleColor(ColTypes.Progress));
                     AliasManager.SaveAliases();
                 }
                 else
                 {
                     // File not found. Skip stage.
                     Debug.WriteLine("We don't have file.");
-                    TextWriterColor.Write("  - Warning: aliases.csv not found in home directory.", true, ColTypes.Warning);
+                    TextWriterColor.Write("  - Warning: aliases.csv not found in home directory.", true, GetConsoleColor(ColTypes.Warning));
                 }
                 Console.WriteLine();
 
@@ -327,46 +327,46 @@ namespace KSConverter
                 {
 #if !NETCOREAPP
                     // Read all config from old file
-                    TextWriterColor.Write("  - Reading config from kernelConfig.ini...", true, ColorTools.ColTypes.Progress);
+                    TextWriterColor.Write("  - Reading config from kernelConfig.ini...", true, KernelColorTools.ColTypes.Progress);
                     Debug.WriteLine("Reading configuration...");
                     if (!PreFivePointFive.ReadPreFivePointFiveConfig(ListOfBackups["Configuration"]))
                     {
                         if (!FivePointFive.ReadFivePointFiveConfig(ListOfBackups["Configuration"]))
                         {
                             Debug.WriteLine("Incompatible format. Both ReadPreFivePointFiveConfig and ReadFivePointFiveConfig returned False. Regenerating...");
-                            TextWriterColor.Write("  - Warning: kernelConfig.ini has incompatible format. Generating new config anyways...", true, ColorTools.ColTypes.Warning);
+                            TextWriterColor.Write("  - Warning: kernelConfig.ini has incompatible format. Generating new config anyways...", true, KernelColorTools.ColTypes.Warning);
                         }
                     }
 
                     // Save the changes
                     Debug.WriteLine("Saving...");
-                    TextWriterColor.Write("  - Saving configuration to KernelConfig.json...", true, ColorTools.ColTypes.Progress);
+                    TextWriterColor.Write("  - Saving configuration to KernelConfig.json...", true, KernelColorTools.ColTypes.Progress);
                     Config.CreateConfig();
 #else
                     // We need to use .NET Framework version of KSConverter to be able to fully use MadMilkman.Ini
                     // as we used it back when Kernel Simulator and MadMilkman.Ini were so tied to .NET Framework.
                     Debug.WriteLine("Config conversion needs to be done in .NET Framework.");
-                    TextWriterColor.Write("  - Warning: To convert kernel configuration from kernelConfig.ini to KernelConfig.json, you need to run the .NET Framework version of KSConverter.", true, ColTypes.Warning);
+                    TextWriterColor.Write("  - Warning: To convert kernel configuration from kernelConfig.ini to KernelConfig.json, you need to run the .NET Framework version of KSConverter.", true, GetConsoleColor(ColTypes.Warning));
 #endif
                 }
                 else
                 {
                     // File not found. Skip stage.
                     Debug.WriteLine("We don't have file.");
-                    TextWriterColor.Write("  - Warning: kernelConfig.ini not found in home directory.", true, ColTypes.Warning);
+                    TextWriterColor.Write("  - Warning: kernelConfig.ini not found in home directory.", true, GetConsoleColor(ColTypes.Warning));
                 }
                 Console.WriteLine();
 
                 // Print this message:
-                TextWriterColor.Write("- Successfully converted all settings to new format! Enjoy!", true, ColTypes.Success);
-                TextWriterColor.Write("- Press any key to exit.", true, ColTypes.Success);
+                TextWriterColor.Write("- Successfully converted all settings to new format! Enjoy!", true, GetConsoleColor(ColTypes.Success));
+                TextWriterColor.Write("- Press any key to exit.", true, GetConsoleColor(ColTypes.Success));
                 Console.ReadKey(true);
             }
             catch (Exception ex)
             {
-                TextWriterColor.Write("- Error converting settings: {0}", true, ColTypes.Error, ex.Message);
-                TextWriterColor.Write("- Press any key to exit. Stack trace below:", true, ColTypes.Error);
-                TextWriterColor.Write(ex.StackTrace, true, ColTypes.Neutral);
+                TextWriterColor.Write("- Error converting settings: {0}", true, GetConsoleColor(ColTypes.Error), ex.Message);
+                TextWriterColor.Write("- Press any key to exit. Stack trace below:", true, GetConsoleColor(ColTypes.Error));
+                TextWriterColor.Write(ex.StackTrace, true, GetConsoleColor(ColTypes.Neutral));
                 Console.ReadKey(true);
             }
         }

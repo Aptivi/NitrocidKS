@@ -24,7 +24,7 @@ Namespace TestShell.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             Dim Lang As String = ListArgs(0)
             Dim Message As String = ListArgs(1)
-            Write(DoTranslation(Message, Lang), True, ColTypes.Neutral)
+            Write(DoTranslation(Message, Lang), True, GetConsoleColor(ColTypes.Neutral))
         End Sub
 
     End Class

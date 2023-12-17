@@ -33,20 +33,20 @@ Namespace Shell.Commands
                     FinalArgs.Add(arg)
                 Else
                     Wdbg(DebugLevel.W, "Argument {0} not found.", arg)
-                    Write(DoTranslation("Argument {0} not found to inject."), True, ColTypes.Warning, arg)
+                    Write(DoTranslation("Argument {0} not found to inject."), True, color:=GetConsoleColor(ColTypes.Warning), arg)
                 End If
             Next
             If FinalArgs.Count = 0 Then
-                Write(DoTranslation("No arguments specified. Hint: Specify multiple arguments separated by spaces"), True, ColTypes.Error)
+                Write(DoTranslation("No arguments specified. Hint: Specify multiple arguments separated by spaces"), True, GetConsoleColor(ColTypes.Error))
             Else
                 EnteredArguments = New List(Of String)(FinalArgs)
                 ArgsInjected = True
-                Write(DoTranslation("Injected arguments, {0}, will be scheduled to run at next reboot."), True, ColTypes.Neutral, String.Join(", ", EnteredArguments))
+                Write(DoTranslation("Injected arguments, {0}, will be scheduled to run at next reboot."), True, color:=GetConsoleColor(ColTypes.Neutral), String.Join(", ", EnteredArguments))
             End If
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("where arguments will be {0}"), True, ColTypes.Neutral, String.Join(", ", AvailableArgs.Keys))
+            Write(DoTranslation("where arguments will be {0}"), True, color:=GetConsoleColor(ColTypes.Neutral), String.Join(", ", AvailableArgs.Keys))
         End Sub
 
     End Class

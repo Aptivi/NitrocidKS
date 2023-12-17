@@ -27,11 +27,11 @@ Namespace Shell.Commands
             Try
                 Dim Res As String = MathExpr.op_Implicit(StringArgs).Result
                 Wdbg(DebugLevel.I, "Res = {0}", Res)
-                Write(StringArgs + " = " + Res, True, ColTypes.Neutral)
+                Write(StringArgs + " = " + Res, True, GetConsoleColor(ColTypes.Neutral))
             Catch ex As Exception
                 Wdbg(DebugLevel.I, "Error trying to calculate expression {0}: {1}", StringArgs, ex.Message)
                 WStkTrc(ex)
-                Write(DoTranslation("Error in calculation.") + " {0}", True, ColTypes.Error, ex.Message)
+                Write(DoTranslation("Error in calculation.") + " {0}", True, color:=GetConsoleColor(ColTypes.Error), ex.Message)
             End Try
         End Sub
 

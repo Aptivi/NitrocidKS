@@ -39,7 +39,7 @@ Namespace Shell.Shells
             If ShellArgs.Length > 0 Then
                 FilePath = ShellArgs(0)
             Else
-                Write(DoTranslation("File not specified. Exiting shell..."), True, ColTypes.Error)
+                Write(DoTranslation("File not specified. Exiting shell..."), True, GetConsoleColor(ColTypes.Error))
                 Bail = True
             End If
 
@@ -50,7 +50,7 @@ Namespace Shell.Shells
                     If TextEdit_FileStream Is Nothing Then
                         Wdbg(DebugLevel.W, "File not open yet. Trying to open {0}...", FilePath)
                         If Not TextEdit_OpenTextFile(FilePath) Then
-                            Write(DoTranslation("Failed to open file. Exiting shell..."), True, ColTypes.Error)
+                            Write(DoTranslation("Failed to open file. Exiting shell..."), True, GetConsoleColor(ColTypes.Error))
                             Bail = True
                             Exit While
                         End If
@@ -81,7 +81,7 @@ Namespace Shell.Shells
                     Bail = True
                 Catch ex As Exception
                     WStkTrc(ex)
-                    Write(DoTranslation("There was an error in the shell.") + NewLine + "Error {0}: {1}", True, ColTypes.Error, ex.GetType.FullName, ex.Message)
+                    Write(DoTranslation("There was an error in the shell.") + NewLine + "Error {0}: {1}", True, color:=GetConsoleColor(ColTypes.Error), ex.GetType.FullName, ex.Message)
                     Continue While
                 End Try
             End While

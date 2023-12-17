@@ -26,20 +26,20 @@ Namespace Network.FTP.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If FtpConnected = True Then
                 'Print a message
-                Write(DoTranslation("Deleting {0}..."), True, ColTypes.Progress, ListArgs(0))
+                Write(DoTranslation("Deleting {0}..."), True, color:=GetConsoleColor(ColTypes.Progress), ListArgs(0))
 
                 'Make a confirmation message so user will not accidentally delete a file or folder
-                Write(DoTranslation("Are you sure you want to delete {0} <y/n>?") + " ", False, ColTypes.Input, ListArgs(0))
+                Write(DoTranslation("Are you sure you want to delete {0} <y/n>?") + " ", False, color:=GetConsoleColor(ColTypes.Input), ListArgs(0))
                 Dim answer As String = Console.ReadKey.KeyChar
                 Console.WriteLine()
 
                 Try
                     FTPDeleteRemote(ListArgs(0))
                 Catch ex As Exception
-                    Write(ex.Message, True, ColTypes.Error)
+                    Write(ex.Message, True, GetConsoleColor(ColTypes.Error))
                 End Try
             Else
-                Write(DoTranslation("You must connect to server with administrative privileges before performing the deletion."), True, ColTypes.Error)
+                Write(DoTranslation("You must connect to server with administrative privileges before performing the deletion."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

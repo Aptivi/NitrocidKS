@@ -27,16 +27,16 @@ Namespace Shell.Commands
             Dim Count As Integer = 1
             If Not NotifRecents.Count = 0 Then
                 For Each Notif As Notification In NotifRecents
-                    Write($"[{Count}/{NotifRecents.Count}] {Notif.Title}: ", False, ColTypes.ListEntry)
-                    Write(Notif.Desc, False, ColTypes.ListValue)
+                    Write($"[{Count}/{NotifRecents.Count}] {Notif.Title}: ", False, GetConsoleColor(ColTypes.ListEntry))
+                    Write(Notif.Desc, False, GetConsoleColor(ColTypes.ListValue))
                     If Notif.Type = NotifType.Progress Then
                         Write($" ({Notif.Progress}%)", False, If(Notif.ProgressFailed, ColTypes.Error, ColTypes.Success))
                     End If
-                    Write("", True, ColTypes.Neutral)
+                    Write("", True, GetConsoleColor(ColTypes.Neutral))
                     Count += 1
                 Next
             Else
-                Write(DoTranslation("No recent notifications"), True, ColTypes.Neutral)
+                Write(DoTranslation("No recent notifications"), True, GetConsoleColor(ColTypes.Neutral))
             End If
         End Sub
 

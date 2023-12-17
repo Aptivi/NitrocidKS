@@ -465,16 +465,16 @@ Namespace Login
             Dim AnswerType As Integer
 
             'First, select user name
-            Write(DoTranslation("It looks like you've got no user except root. This is bad. We'll guide you how to create one."), True, ColTypes.Neutral)
+            Write(DoTranslation("It looks like you've got no user except root. This is bad. We'll guide you how to create one."), True, GetConsoleColor(ColTypes.Neutral))
             While [Step] = 1
-                Write(DoTranslation("Write your username."), True, ColTypes.Neutral)
-                Write(">> ", False, ColTypes.Input)
+                Write(DoTranslation("Write your username."), True, GetConsoleColor(ColTypes.Neutral))
+                Write(">> ", False, GetConsoleColor(ColTypes.Input))
                 AnswerUsername = ReadLine()
                 Wdbg(DebugLevel.I, "Answer: {0}", AnswerUsername)
                 If String.IsNullOrWhiteSpace(AnswerUsername) Then
                     Wdbg(DebugLevel.W, "Username is not valid. Returning...")
-                    Write(DoTranslation("You must write your username."), True, ColTypes.Error)
-                    Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                    Write(DoTranslation("You must write your username."), True, GetConsoleColor(ColTypes.Error))
+                    Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
                     Console.ReadKey()
                 Else
                     [Step] += 1
@@ -483,14 +483,14 @@ Namespace Login
 
             'Second, write password
             While [Step] = 2
-                Write(DoTranslation("Write your password."), True, ColTypes.Neutral)
-                Write(">> ", False, ColTypes.Input)
+                Write(DoTranslation("Write your password."), True, GetConsoleColor(ColTypes.Neutral))
+                Write(">> ", False, GetConsoleColor(ColTypes.Input))
                 AnswerPassword = ReadLineNoInput()
                 Wdbg(DebugLevel.I, "Answer: {0}", AnswerPassword)
                 If String.IsNullOrWhiteSpace(AnswerPassword) Then
                     Wdbg(DebugLevel.W, "Password is not valid. Returning...")
-                    Write(DoTranslation("You must write your password."), True, ColTypes.Error)
-                    Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                    Write(DoTranslation("You must write your password."), True, GetConsoleColor(ColTypes.Error))
+                    Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
                     Console.ReadKey()
                 Else
                     [Step] += 1
@@ -499,10 +499,10 @@ Namespace Login
 
             'Third, select account type
             While [Step] = 3
-                Write(DoTranslation("Select account type.") + NewLine, True, ColTypes.Neutral)
-                Write(" 1) " + DoTranslation("Administrator: This account type has the most power in the kernel, allowing you to use system management programs."), True, ColTypes.Option)
-                Write(" 2) " + DoTranslation("Normal User: This account type is slightly more restricted than administrators."), True, ColTypes.Option)
-                Write(NewLine + ">> ", False, ColTypes.Input)
+                Write(DoTranslation("Select account type.") + NewLine, True, GetConsoleColor(ColTypes.Neutral))
+                Write(" 1) " + DoTranslation("Administrator: This account type has the most power in the kernel, allowing you to use system management programs."), True, GetConsoleColor(ColTypes.Option))
+                Write(" 2) " + DoTranslation("Normal User: This account type is slightly more restricted than administrators."), True, GetConsoleColor(ColTypes.Option))
+                Write(NewLine + ">> ", False, GetConsoleColor(ColTypes.Input))
                 If Integer.TryParse(ReadLine(), AnswerType) Then
                     Wdbg(DebugLevel.I, "Answer: {0}", AnswerType)
                     Select Case AnswerType
@@ -510,14 +510,14 @@ Namespace Login
                             [Step] += 1
                         Case Else '???
                             Wdbg(DebugLevel.W, "Option is not valid. Returning...")
-                            Write(DoTranslation("Specified option {0} is invalid."), True, ColTypes.Error, AnswerType)
-                            Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                            Write(DoTranslation("Specified option {0} is invalid."), True, color:=GetConsoleColor(ColTypes.Error), AnswerType)
+                            Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
                             Console.ReadKey()
                     End Select
                 Else
                     Wdbg(DebugLevel.W, "Answer is not numeric.")
-                    Write(DoTranslation("The answer must be numeric."), True, ColTypes.Error)
-                    Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                    Write(DoTranslation("The answer must be numeric."), True, GetConsoleColor(ColTypes.Error))
+                    Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
                     Console.ReadKey()
                 End If
             End While
@@ -525,14 +525,14 @@ Namespace Login
             'Fourth, write root password
             While [Step] = 4
                 If Users("root") = GetEmptyHash(Algorithms.SHA256) Then
-                    Write(DoTranslation("Write the administrator password. Make sure that you don't use this account unless you really know what you're doing."), True, ColTypes.Neutral)
-                    Write(">> ", False, ColTypes.Input)
+                    Write(DoTranslation("Write the administrator password. Make sure that you don't use this account unless you really know what you're doing."), True, GetConsoleColor(ColTypes.Neutral))
+                    Write(">> ", False, GetConsoleColor(ColTypes.Input))
                     AnswerRootPassword = ReadLineNoInput()
                     Wdbg(DebugLevel.I, "Answer: {0}", AnswerPassword)
                     If String.IsNullOrWhiteSpace(AnswerPassword) Then
                         Wdbg(DebugLevel.W, "Password is not valid. Returning...")
-                        Write(DoTranslation("You must write the administrator password."), True, ColTypes.Error)
-                        Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                        Write(DoTranslation("You must write the administrator password."), True, GetConsoleColor(ColTypes.Error))
+                        Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
                         Console.ReadKey()
                     Else
                         [Step] += 1
@@ -554,7 +554,7 @@ Namespace Login
             End If
 
             'Write a congratulating message
-            Write(DoTranslation("Congratulations! You've made a new account! To finish this off, log in as your new account."), True, ColTypes.Neutral)
+            Write(DoTranslation("Congratulations! You've made a new account! To finish this off, log in as your new account."), True, GetConsoleColor(ColTypes.Neutral))
         End Sub
 
         ''' <summary>

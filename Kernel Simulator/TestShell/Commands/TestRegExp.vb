@@ -29,7 +29,7 @@ Namespace TestShell.Commands
             Dim Matches As MatchCollection = Reg.Matches(ListArgs(1))
             Dim MatchNum As Integer = 1
             For Each Mat As Match In Matches
-                Write(DoTranslation("Match {0} ({1}): {2}"), True, ColTypes.Neutral, MatchNum, Exp, Mat)
+                Write(DoTranslation("Match {0} ({1}): {2}"), True, color:=GetConsoleColor(ColTypes.Neutral), MatchNum, Exp, Mat)
                 MatchNum += 1
             Next
         End Sub

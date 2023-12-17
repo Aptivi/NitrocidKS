@@ -168,7 +168,7 @@ namespace KSJsonifyLocales
                     // Show the generation message
                     Debug.WriteLine("Lines for {0} (Eng: {1}, Loc: {2})", fileName, fileLinesEng.Length, fileLines.Length);
                     if (!quiet)
-                        TextWriterColor.Write($"[{fileNumber}/{toParse.Count}] " + "Generating locale JSON for " + $"{fileName}...", true, ColorTools.ColTypes.Progress);
+                        TextWriterColor.Write($"[{fileNumber}/{toParse.Count}] " + "Generating locale JSON for " + $"{fileName}...", true, KernelColorTools.ColTypes.Progress);
 
                     // Make a JSON object for each language entry
                     var localizedJson = new JObject();
@@ -185,9 +185,9 @@ namespace KSJsonifyLocales
                             catch (Exception ex)
                             {
                                 if (!quiet)
-                                    TextWriterColor.Write($"[{fileNumber}/{toParse.Count}] " + "Malformed line" + $" {i + 1}: {fileLinesEng[i]} -> {fileLines[i]}", true, ColorTools.ColTypes.Error);
+                                    TextWriterColor.Write($"[{fileNumber}/{toParse.Count}] " + "Malformed line" + $" {i + 1}: {fileLinesEng[i]} -> {fileLines[i]}", true, KernelColorTools.ColTypes.Error);
                                 if (!quiet)
-                                    TextWriterColor.Write($"[{fileNumber}/{toParse.Count}] " + "Error trying to parse above line:" + $" {ex.Message}", true, ColorTools.ColTypes.Error);
+                                    TextWriterColor.Write($"[{fileNumber}/{toParse.Count}] " + "Error trying to parse above line:" + $" {ex.Message}", true, KernelColorTools.ColTypes.Error);
                             }
                         }
                     }
@@ -220,11 +220,11 @@ namespace KSJsonifyLocales
                         File.WriteAllText("Translations/Output/" + fileName + ".json", serializedLocale);
                     }
                     if (!quiet)
-                        TextWriterColor.Write($"[{fileNumber}/{toParse.Count}] " + "Saved new language JSON file to" + $" {fileName}.json!", true, ColorTools.ColTypes.Success);
+                        TextWriterColor.Write($"[{fileNumber}/{toParse.Count}] " + "Saved new language JSON file to" + $" {fileName}.json!", true, KernelColorTools.ColTypes.Success);
 
                     // Show elapsed time and reset
                     if (!quiet)
-                        TextWriterColor.Write($"[{fileNumber}/{toParse.Count}] " + "Time elapsed:" + $" {GenerationInterval.Elapsed}", true, ColorTools.ColTypes.StageTime);
+                        TextWriterColor.Write($"[{fileNumber}/{toParse.Count}] " + "Time elapsed:" + $" {GenerationInterval.Elapsed}", true, KernelColorTools.ColTypes.StageTime);
                     fileNumber += 1;
                     GenerationInterval.Restart();
                 }
@@ -233,14 +233,14 @@ namespace KSJsonifyLocales
             {
                 if (!quiet)
                 {
-                    TextWriterColor.Write("Unexpected error in converter:" + $" {ex.Message}", true, ColorTools.ColTypes.Error);
-                    TextWriterColor.Write(ex.StackTrace, true, ColorTools.ColTypes.Error);
+                    TextWriterColor.Write("Unexpected error in converter:" + $" {ex.Message}", true, KernelColorTools.ColTypes.Error);
+                    TextWriterColor.Write(ex.StackTrace, true, KernelColorTools.ColTypes.Error);
                 }
             }
 
             // Finish the program
             if (!quiet)
-                TextWriterColor.Write("Finished in " + $"{total.Elapsed}", true, ColorTools.ColTypes.Neutral);
+                TextWriterColor.Write("Finished in " + $"{total.Elapsed}", true, KernelColorTools.ColTypes.Neutral);
             total.Reset();
         }
     }

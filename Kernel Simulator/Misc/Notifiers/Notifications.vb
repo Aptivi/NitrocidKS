@@ -130,10 +130,10 @@ Namespace Misc.Notifications
 
                         'Write notification to console
                         Wdbg(DebugLevel.I, "Where to store: ({0}, {1}), Title top: {2}, Desc top: {3}", Console.WindowWidth - 40, Console.WindowTop, Console.WindowTop + 1, Console.WindowTop + 2)
-                        WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop, True, ColTypes.Neutral)
+                        WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop, True, GetConsoleColor(ColTypes.Neutral))
                         WriteWhere(Title + GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop + 1, True, NotifyTitleColor)
                         WriteWhere(Desc + GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop + 2, True, NotifyDescColor)
-                        WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop + 3, True, ColTypes.Neutral)
+                        WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop + 3, True, GetConsoleColor(ColTypes.Neutral))
 
                         'Optionally, draw a border
                         If DrawBorderNotification Then
@@ -183,7 +183,7 @@ Namespace Misc.Notifications
                                 Dim ProgressTitle As String = Title + " (" + CStr(NewNotification.Progress) + "%)"
                                 Wdbg(DebugLevel.I, "Where to store progress: {0},{1}", Console.WindowWidth - 40, Console.WindowTop + 3)
                                 Wdbg(DebugLevel.I, "Progress: {0}", NewNotification.Progress)
-                                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop, True, ColTypes.Neutral)
+                                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop, True, GetConsoleColor(ColTypes.Neutral))
                                 WriteWhere(ProgressTitle + GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop + 1, True, NotifyTitleColor, NewNotification.Progress)
                                 WriteWhere(Desc + GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop + 2, True, NotifyDescColor)
                                 WriteWhere("*".Repeat(NewNotification.Progress * 100 / 100 * (38 / 100)), Console.WindowWidth - 40, Console.WindowTop + 3, True, NotifyProgressColor)
@@ -213,23 +213,23 @@ Namespace Misc.Notifications
         ''' <param name="TopDesc">Vertical location of description</param>
         Private Sub NotifClearArea(Width As Integer, TopTitle As Integer, TopDesc As Integer, TopProg As Integer, TopOpenBorder As Integer, TopCloseBorder As Integer)
             If DrawBorderNotification Then
-                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 41, Console.WindowTop, True, ColTypes.Neutral)
-                WriteWhere(GetEsc() + "[0K", Width, TopOpenBorder, True, ColTypes.Neutral)
-                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 41, Console.WindowTop + 1, True, ColTypes.Neutral)
-                WriteWhere(GetEsc() + "[0K", Width, TopTitle, True, ColTypes.Neutral)
-                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 41, Console.WindowTop + 2, True, ColTypes.Neutral)
-                WriteWhere(GetEsc() + "[0K", Width, TopDesc, True, ColTypes.Neutral)
-                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 41, Console.WindowTop + 3, True, ColTypes.Neutral)
-                WriteWhere(GetEsc() + "[0K", Width, TopProg, True, ColTypes.Neutral)
-                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 41, Console.WindowTop + 4, True, ColTypes.Neutral)
-                WriteWhere(GetEsc() + "[0K", Width, TopCloseBorder, True, ColTypes.Neutral)
+                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 41, Console.WindowTop, True, GetConsoleColor(ColTypes.Neutral))
+                WriteWhere(GetEsc() + "[0K", Width, TopOpenBorder, True, GetConsoleColor(ColTypes.Neutral))
+                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 41, Console.WindowTop + 1, True, GetConsoleColor(ColTypes.Neutral))
+                WriteWhere(GetEsc() + "[0K", Width, TopTitle, True, GetConsoleColor(ColTypes.Neutral))
+                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 41, Console.WindowTop + 2, True, GetConsoleColor(ColTypes.Neutral))
+                WriteWhere(GetEsc() + "[0K", Width, TopDesc, True, GetConsoleColor(ColTypes.Neutral))
+                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 41, Console.WindowTop + 3, True, GetConsoleColor(ColTypes.Neutral))
+                WriteWhere(GetEsc() + "[0K", Width, TopProg, True, GetConsoleColor(ColTypes.Neutral))
+                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 41, Console.WindowTop + 4, True, GetConsoleColor(ColTypes.Neutral))
+                WriteWhere(GetEsc() + "[0K", Width, TopCloseBorder, True, GetConsoleColor(ColTypes.Neutral))
             Else
-                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop + 1, True, ColTypes.Neutral)
-                WriteWhere(GetEsc() + "[0K", Width, TopTitle, True, ColTypes.Neutral)
-                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop + 2, True, ColTypes.Neutral)
-                WriteWhere(GetEsc() + "[0K", Width, TopDesc, True, ColTypes.Neutral)
-                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop + 3, True, ColTypes.Neutral)
-                WriteWhere(GetEsc() + "[0K", Width, TopProg, True, ColTypes.Neutral)
+                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop + 1, True, GetConsoleColor(ColTypes.Neutral))
+                WriteWhere(GetEsc() + "[0K", Width, TopTitle, True, GetConsoleColor(ColTypes.Neutral))
+                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop + 2, True, GetConsoleColor(ColTypes.Neutral))
+                WriteWhere(GetEsc() + "[0K", Width, TopDesc, True, GetConsoleColor(ColTypes.Neutral))
+                WriteWhere(GetEsc() + "[0K", Console.WindowWidth - 40, Console.WindowTop + 3, True, GetConsoleColor(ColTypes.Neutral))
+                WriteWhere(GetEsc() + "[0K", Width, TopProg, True, GetConsoleColor(ColTypes.Neutral))
             End If
         End Sub
 

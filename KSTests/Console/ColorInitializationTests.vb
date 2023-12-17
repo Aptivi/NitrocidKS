@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports KS.ConsoleBase.Colors
+Imports Terminaux.Colors
 
 <TestFixture> Public Class ColorInitializationTests
 
@@ -41,8 +42,7 @@ Imports KS.ConsoleBase.Colors
         ColorInstance.R.ShouldBe(255)
         ColorInstance.G.ShouldBe(0)
         ColorInstance.B.ShouldBe(255)
-        ColorInstance.IsBright.ShouldBeTrue
-        ColorInstance.IsDark.ShouldBeFalse
+        ColorInstance.Brightness.ShouldBe(ColorBrightness.Light)
         ColorInstance.Hex.ShouldBe("#FF00FF")
     End Sub
 
@@ -67,8 +67,7 @@ Imports KS.ConsoleBase.Colors
         ColorInstance.R.ShouldBe(94)
         ColorInstance.G.ShouldBe(0)
         ColorInstance.B.ShouldBe(63)
-        ColorInstance.IsBright.ShouldBeTrue
-        ColorInstance.IsDark.ShouldBeFalse
+        ColorInstance.Brightness.ShouldBe(ColorBrightness.Light)
         ColorInstance.Hex.ShouldBe("#5E003F")
     End Sub
 
@@ -93,8 +92,7 @@ Imports KS.ConsoleBase.Colors
         ColorInstance.R.ShouldBe(15)
         ColorInstance.G.ShouldBe(15)
         ColorInstance.B.ShouldBe(15)
-        ColorInstance.IsBright.ShouldBeFalse
-        ColorInstance.IsDark.ShouldBeTrue
+        ColorInstance.Brightness.ShouldBe(ColorBrightness.Dark)
         ColorInstance.Hex.ShouldBe("#0F0F0F")
     End Sub
 

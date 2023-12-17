@@ -365,9 +365,9 @@ Namespace Network.Transfer
                             NotificationInstance.Progress = Progress
                         Else
                             If Not String.IsNullOrWhiteSpace(DownloadPercentagePrint) Then
-                                WriteWhere(ProbePlaces(DownloadPercentagePrint), 0, Console.CursorTop, False, ColTypes.Neutral, TransferInfo.DoneSize.FileSizeToString, TransferInfo.FileSize.FileSizeToString, Progress)
+                                WriteWhere(ProbePlaces(DownloadPercentagePrint), 0, Console.CursorTop, False, GetConsoleColor(ColTypes.Neutral), TransferInfo.DoneSize.FileSizeToString, TransferInfo.FileSize.FileSizeToString, Progress)
                             Else
-                                WriteWhere(DoTranslation("{0} of {1} downloaded.") + " | {2}%", 0, Console.CursorTop, False, ColTypes.Neutral, TransferInfo.DoneSize.FileSizeToString, TransferInfo.FileSize.FileSizeToString, Progress)
+                                WriteWhere(DoTranslation("{0} of {1} downloaded.") + " | {2}%", 0, Console.CursorTop, False, GetConsoleColor(ColTypes.Neutral), TransferInfo.DoneSize.FileSizeToString, TransferInfo.FileSize.FileSizeToString, Progress)
                             End If
                             ClearLineToRight()
                         End If

@@ -28,12 +28,12 @@ Namespace Shell.Commands
             Try
                 Dim Matches As List(Of String) = SearchFileForStringRegexp(ListArgs(1), New Regex(ListArgs(0), RegexOptions.IgnoreCase))
                 For Each Match As String In Matches
-                    Write(Match, True, ColTypes.Neutral)
+                    Write(Match, True, GetConsoleColor(ColTypes.Neutral))
                 Next
             Catch ex As Exception
                 Wdbg(DebugLevel.E, "Error trying to search {0} for {1}", ListArgs(0), ListArgs(1))
                 WStkTrc(ex)
-                Write(DoTranslation("Searching {0} for {1} failed.") + " {2}", True, ColTypes.Error, ListArgs(0), ListArgs(1), ex.Message)
+                Write(DoTranslation("Searching {0} for {1} failed.") + " {2}", True, color:=GetConsoleColor(ColTypes.Error), ListArgs(0), ListArgs(1), ex.Message)
             End Try
         End Sub
 

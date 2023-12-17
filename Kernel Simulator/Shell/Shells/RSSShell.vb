@@ -49,9 +49,9 @@ Namespace Shell.Shells
                     Do While String.IsNullOrWhiteSpace(RSSFeedLink)
                         Try
                             If Not String.IsNullOrWhiteSpace(RSSFeedUrlPromptStyle) Then
-                                Write(ProbePlaces(RSSFeedUrlPromptStyle), False, ColTypes.Input)
+                                Write(ProbePlaces(RSSFeedUrlPromptStyle), False, GetConsoleColor(ColTypes.Input))
                             Else
-                                Write(DoTranslation("Enter an RSS feed URL:") + " ", False, ColTypes.Input)
+                                Write(DoTranslation("Enter an RSS feed URL:") + " ", False, GetConsoleColor(ColTypes.Input))
                             End If
                             RSSFeedLink = ReadLine()
 
@@ -67,7 +67,7 @@ Namespace Shell.Shells
                         Catch ex As Exception
                             Wdbg(DebugLevel.E, "Failed to parse RSS feed URL {0}: {1}", FeedUrl, ex.Message)
                             WStkTrc(ex)
-                            Write(DoTranslation("Failed to parse feed URL:") + " {0}", True, ColTypes.Error, ex.Message)
+                            Write(DoTranslation("Failed to parse feed URL:") + " {0}", True, color:=GetConsoleColor(ColTypes.Error), ex.Message)
                             RSSFeedLink = ""
                         End Try
                     Loop
@@ -90,7 +90,7 @@ Namespace Shell.Shells
                     Catch ex As Exception
                         Wdbg(DebugLevel.E, "Failed to parse RSS feed URL {0}: {1}", RSSFeedLink, ex.Message)
                         WStkTrc(ex)
-                        Write(DoTranslation("Failed to parse feed URL:") + " {0}", True, ColTypes.Error, ex.Message)
+                        Write(DoTranslation("Failed to parse feed URL:") + " {0}", True, color:=GetConsoleColor(ColTypes.Error), ex.Message)
                         RSSFeedLink = ""
                     End Try
                 End If
@@ -126,7 +126,7 @@ Namespace Shell.Shells
                     Bail = True
                 Catch ex As Exception
                     WStkTrc(ex)
-                    Write(DoTranslation("There was an error in the shell.") + NewLine + "Error {0}: {1}", True, ColTypes.Error, ex.GetType.FullName, ex.Message)
+                    Write(DoTranslation("There was an error in the shell.") + NewLine + "Error {0}: {1}", True, color:=GetConsoleColor(ColTypes.Error), ex.GetType.FullName, ex.Message)
                     Continue While
                 End Try
             End While

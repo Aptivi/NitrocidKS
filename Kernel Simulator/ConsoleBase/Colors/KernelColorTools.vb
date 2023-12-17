@@ -18,9 +18,12 @@
 
 Imports System.IO
 Imports KS.Misc.Configuration
+Imports Terminaux.Colors.Models
+Imports Terminaux.Colors.Models.Parsing
+Imports TermColorTools = Terminaux.Colors.ColorTools
 
 Namespace ConsoleBase.Colors
-    Public Module ColorTools
+    Public Module KernelColorTools
 
         ''' <summary>
         ''' Enumeration for color types
@@ -288,13 +291,7 @@ Namespace ConsoleBase.Colors
         ''' Loads the background
         ''' </summary>
         Public Sub LoadBack()
-            Try
-                Wdbg(DebugLevel.I, "Filling background with background color")
-                SetConsoleColor(BackgroundColor, True)
-                Console.Clear()
-            Catch ex As Exception
-                Wdbg(DebugLevel.E, "Failed to set background: {0}", ex.Message)
-            End Try
+            TermColorTools.LoadBack(BackgroundColor)
         End Sub
 
         ''' <summary>
@@ -543,44 +540,44 @@ Namespace ConsoleBase.Colors
 
                 'Set the colors
                 Try
-                    ColorTools.InputColor = New Color(InputColor)
-                    ColorTools.LicenseColor = New Color(LicenseColor)
-                    ColorTools.ContKernelErrorColor = New Color(ContKernelErrorColor)
-                    ColorTools.UncontKernelErrorColor = New Color(UncontKernelErrorColor)
-                    ColorTools.HostNameShellColor = New Color(HostNameShellColor)
-                    ColorTools.UserNameShellColor = New Color(UserNameShellColor)
-                    ColorTools.BackgroundColor = New Color(BackgroundColor)
-                    ColorTools.NeutralTextColor = New Color(NeutralTextColor)
-                    ColorTools.ListEntryColor = New Color(ListEntryColor)
-                    ColorTools.ListValueColor = New Color(ListValueColor)
-                    ColorTools.StageColor = New Color(StageColor)
-                    ColorTools.ErrorColor = New Color(ErrorColor)
-                    ColorTools.WarningColor = New Color(WarningColor)
-                    ColorTools.OptionColor = New Color(OptionColor)
-                    ColorTools.BannerColor = New Color(BannerColor)
-                    ColorTools.NotificationTitleColor = New Color(NotificationTitleColor)
-                    ColorTools.NotificationDescriptionColor = New Color(NotificationDescriptionColor)
-                    ColorTools.NotificationProgressColor = New Color(NotificationProgressColor)
-                    ColorTools.NotificationFailureColor = New Color(NotificationFailureColor)
-                    ColorTools.QuestionColor = New Color(QuestionColor)
-                    ColorTools.SuccessColor = New Color(SuccessColor)
-                    ColorTools.UserDollarColor = New Color(UserDollarColor)
-                    ColorTools.TipColor = New Color(TipColor)
-                    ColorTools.SeparatorTextColor = New Color(SeparatorTextColor)
-                    ColorTools.SeparatorColor = New Color(SeparatorColor)
-                    ColorTools.ListTitleColor = New Color(ListTitleColor)
-                    ColorTools.DevelopmentWarningColor = New Color(DevelopmentWarningColor)
-                    ColorTools.StageTimeColor = New Color(StageTimeColor)
-                    ColorTools.ProgressColor = New Color(ProgressColor)
-                    ColorTools.BackOptionColor = New Color(BackOptionColor)
-                    ColorTools.LowPriorityBorderColor = New Color(LowPriorityBorderColor)
-                    ColorTools.MediumPriorityBorderColor = New Color(MediumPriorityBorderColor)
-                    ColorTools.HighPriorityBorderColor = New Color(HighPriorityBorderColor)
-                    ColorTools.TableSeparatorColor = New Color(TableSeparatorColor)
-                    ColorTools.TableHeaderColor = New Color(TableHeaderColor)
-                    ColorTools.TableValueColor = New Color(TableValueColor)
-                    ColorTools.SelectedOptionColor = New Color(SelectedOptionColor)
-                    ColorTools.AlternativeOptionColor = New Color(AlternativeOptionColor)
+                    KernelColorTools.InputColor = New Color(InputColor)
+                    KernelColorTools.LicenseColor = New Color(LicenseColor)
+                    KernelColorTools.ContKernelErrorColor = New Color(ContKernelErrorColor)
+                    KernelColorTools.UncontKernelErrorColor = New Color(UncontKernelErrorColor)
+                    KernelColorTools.HostNameShellColor = New Color(HostNameShellColor)
+                    KernelColorTools.UserNameShellColor = New Color(UserNameShellColor)
+                    KernelColorTools.BackgroundColor = New Color(BackgroundColor)
+                    KernelColorTools.NeutralTextColor = New Color(NeutralTextColor)
+                    KernelColorTools.ListEntryColor = New Color(ListEntryColor)
+                    KernelColorTools.ListValueColor = New Color(ListValueColor)
+                    KernelColorTools.StageColor = New Color(StageColor)
+                    KernelColorTools.ErrorColor = New Color(ErrorColor)
+                    KernelColorTools.WarningColor = New Color(WarningColor)
+                    KernelColorTools.OptionColor = New Color(OptionColor)
+                    KernelColorTools.BannerColor = New Color(BannerColor)
+                    KernelColorTools.NotificationTitleColor = New Color(NotificationTitleColor)
+                    KernelColorTools.NotificationDescriptionColor = New Color(NotificationDescriptionColor)
+                    KernelColorTools.NotificationProgressColor = New Color(NotificationProgressColor)
+                    KernelColorTools.NotificationFailureColor = New Color(NotificationFailureColor)
+                    KernelColorTools.QuestionColor = New Color(QuestionColor)
+                    KernelColorTools.SuccessColor = New Color(SuccessColor)
+                    KernelColorTools.UserDollarColor = New Color(UserDollarColor)
+                    KernelColorTools.TipColor = New Color(TipColor)
+                    KernelColorTools.SeparatorTextColor = New Color(SeparatorTextColor)
+                    KernelColorTools.SeparatorColor = New Color(SeparatorColor)
+                    KernelColorTools.ListTitleColor = New Color(ListTitleColor)
+                    KernelColorTools.DevelopmentWarningColor = New Color(DevelopmentWarningColor)
+                    KernelColorTools.StageTimeColor = New Color(StageTimeColor)
+                    KernelColorTools.ProgressColor = New Color(ProgressColor)
+                    KernelColorTools.BackOptionColor = New Color(BackOptionColor)
+                    KernelColorTools.LowPriorityBorderColor = New Color(LowPriorityBorderColor)
+                    KernelColorTools.MediumPriorityBorderColor = New Color(MediumPriorityBorderColor)
+                    KernelColorTools.HighPriorityBorderColor = New Color(HighPriorityBorderColor)
+                    KernelColorTools.TableSeparatorColor = New Color(TableSeparatorColor)
+                    KernelColorTools.TableHeaderColor = New Color(TableHeaderColor)
+                    KernelColorTools.TableValueColor = New Color(TableValueColor)
+                    KernelColorTools.SelectedOptionColor = New Color(SelectedOptionColor)
+                    KernelColorTools.AlternativeOptionColor = New Color(AlternativeOptionColor)
                     LoadBack()
                     MakePermanent()
 
@@ -601,7 +598,7 @@ Namespace ConsoleBase.Colors
         ''' Gets the gray color according to the brightness of the background color
         ''' </summary>
         Public Function GetGray() As Color
-            If BackgroundColor.IsBright Then
+            If BackgroundColor.Brightness = ColorBrightness.Light Then
                 Return NeutralTextColor
             Else
                 Return New Color(ConsoleColors.Gray)
@@ -713,22 +710,7 @@ Namespace ConsoleBase.Colors
         ''' <param name="Background">Whether to set background or not</param>
         Public Sub SetConsoleColor(ColorSequence As Color, Optional Background As Boolean = False)
             If ColoredShell Then
-                If ColorSequence Is Nothing Then Throw New ArgumentNullException(NameOf(ColorSequence))
-                Dim OldLeft As Integer = Console.CursorLeft
-                Dim OldTop As Integer = Console.CursorTop
-                If Background Then
-                    Console.Write(ColorSequence.VTSequenceBackground)
-                    If IsOnUnix() Then
-                        'Restore the CursorLeft value to its correct value in Mono. This is a workaround to fix incorrect Console.CursorLeft value.
-                        Console.SetCursorPosition(OldLeft, OldTop)
-                    End If
-                Else
-                    Console.Write(ColorSequence.VTSequenceForeground)
-                    If IsOnUnix() Then
-                        'Restore the CursorLeft value to its correct value in Mono. This is a workaround to fix incorrect Console.CursorLeft value.
-                        Console.SetCursorPosition(OldLeft, OldTop)
-                    End If
-                End If
+                TermColorTools.SetConsoleColor(ColorSequence, Background)
             End If
         End Sub
 
@@ -768,6 +750,89 @@ Namespace ConsoleBase.Colors
             Catch ex As Exception
                 Return False
             End Try
+        End Function
+
+        Public Function GetConsoleColor(colorType As ColTypes) As Color
+            Select Case colorType
+                Case ColTypes.Neutral
+                    Return NeutralTextColor
+                Case ColTypes.Input
+                    Return InputColor
+                Case ColTypes.Continuable
+                    Return ContKernelErrorColor
+                Case ColTypes.Uncontinuable
+                    Return UncontKernelErrorColor
+                Case ColTypes.HostName
+                    Return HostNameShellColor
+                Case ColTypes.UserName
+                    Return UserNameShellColor
+                Case ColTypes.License
+                    Return LicenseColor
+                Case ColTypes.Gray
+                    Return GetGray()
+                Case ColTypes.ListValue
+                    Return ListValueColor
+                Case ColTypes.ListEntry
+                    Return ListEntryColor
+                Case ColTypes.Stage
+                    Return StageColor
+                Case ColTypes.Error
+                    Return ErrorColor
+                Case ColTypes.Warning
+                    Return WarningColor
+                Case ColTypes.Option
+                    Return OptionColor
+                Case ColTypes.Banner
+                    Return BannerColor
+                Case ColTypes.NotificationTitle
+                    Return NotificationTitleColor
+                Case ColTypes.NotificationDescription
+                    Return NotificationDescriptionColor
+                Case ColTypes.NotificationProgress
+                    Return NotificationProgressColor
+                Case ColTypes.NotificationFailure
+                    Return NotificationFailureColor
+                Case ColTypes.Question
+                    Return QuestionColor
+                Case ColTypes.Success
+                    Return SuccessColor
+                Case ColTypes.UserDollarSign
+                    Return UserDollarColor
+                Case ColTypes.Tip
+                    Return TipColor
+                Case ColTypes.SeparatorText
+                    Return SeparatorTextColor
+                Case ColTypes.Separator
+                    Return SeparatorColor
+                Case ColTypes.ListTitle
+                    Return ListTitleColor
+                Case ColTypes.DevelopmentWarning
+                    Return DevelopmentWarningColor
+                Case ColTypes.StageTime
+                    Return StageTimeColor
+                Case ColTypes.Progress
+                    Return ProgressColor
+                Case ColTypes.BackOption
+                    Return BackOptionColor
+                Case ColTypes.LowPriorityBorder
+                    Return LowPriorityBorderColor
+                Case ColTypes.MediumPriorityBorder
+                    Return MediumPriorityBorderColor
+                Case ColTypes.HighPriorityBorder
+                    Return HighPriorityBorderColor
+                Case ColTypes.TableSeparator
+                    Return TableSeparatorColor
+                Case ColTypes.TableHeader
+                    Return TableHeaderColor
+                Case ColTypes.TableValue
+                    Return TableValueColor
+                Case ColTypes.SelectedOption
+                    Return SelectedOptionColor
+                Case ColTypes.AlternativeOption
+                    Return AlternativeOptionColor
+                Case Else
+                    Return NeutralTextColor
+            End Select
         End Function
 
         ''' <summary>
@@ -826,15 +891,8 @@ Namespace ConsoleBase.Colors
         ''' <param name="Hex">A hexadecimal representation of a color (#AABBCC for example)</param>
         ''' <returns>&lt;R&gt;;&lt;G&gt;;&lt;B&gt;</returns>
         Public Function ConvertFromHexToRGB(Hex As String) As String
-            If Hex.StartsWith("#") Then
-                Dim ColorDecimal As Integer = Convert.ToInt32(Hex.Substring(1), 16)
-                Dim R As Integer = CByte((ColorDecimal And &HFF0000) >> &H10)
-                Dim G As Integer = CByte((ColorDecimal And &HFF00) >> 8)
-                Dim B As Integer = CByte(ColorDecimal And &HFF)
-                Return $"{R};{G};{B}"
-            Else
-                Throw New Exceptions.ColorException(DoTranslation("Invalid hex color specifier."))
-            End If
+            Dim rgb As RedGreenBlue = ParsingTools.ParseSpecifierRgbHash(Hex)
+            Return $"{rgb.R};{rgb.G};{rgb.B}"
         End Function
 
         ''' <summary>
@@ -843,20 +901,8 @@ Namespace ConsoleBase.Colors
         ''' <param name="RGBSequence">&lt;R&gt;;&lt;G&gt;;&lt;B&gt;</param>
         ''' <returns>A hexadecimal representation of a color (#AABBCC for example)</returns>
         Public Function ConvertFromRGBToHex(RGBSequence As String) As String
-            If RGBSequence.Contains(";"c) Then
-                'Split the VT sequence into three parts
-                Dim ColorSpecifierArray() As String = RGBSequence.Split(";")
-                If ColorSpecifierArray.Length = 3 Then
-                    Dim R As Integer = ColorSpecifierArray(0)
-                    Dim G As Integer = ColorSpecifierArray(1)
-                    Dim B As Integer = ColorSpecifierArray(2)
-                    Return $"#{R:X2}{G:X2}{B:X2}"
-                Else
-                    Throw New Exceptions.ColorException(DoTranslation("Invalid RGB color specifier."))
-                End If
-            Else
-                Throw New Exceptions.ColorException(DoTranslation("Invalid RGB color specifier."))
-            End If
+            Dim rgb As Color = RGBSequence
+            Return rgb.Hex
         End Function
 
         ''' <summary>
@@ -867,10 +913,8 @@ Namespace ConsoleBase.Colors
         ''' <param name="B">The blue level</param>
         ''' <returns>A hexadecimal representation of a color (#AABBCC for example)</returns>
         Public Function ConvertFromRGBToHex(R As Integer, G As Integer, B As Integer) As String
-            If R < 0 Or R > 255 Then Throw New Exceptions.ColorException(DoTranslation("Invalid red color specifier."))
-            If G < 0 Or G > 255 Then Throw New Exceptions.ColorException(DoTranslation("Invalid green color specifier."))
-            If B < 0 Or B > 255 Then Throw New Exceptions.ColorException(DoTranslation("Invalid blue color specifier."))
-            Return $"#{R:X2}{G:X2}{B:X2}"
+            Dim rgb As Color = $"{R};{G};{B}"
+            Return rgb.Hex
         End Function
 
     End Module

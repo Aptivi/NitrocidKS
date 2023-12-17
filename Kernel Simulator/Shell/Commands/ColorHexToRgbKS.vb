@@ -27,8 +27,8 @@ Namespace Shell.Commands
 
             'Do the job
             RGB = ConvertFromHexToRGB(Hex)
-            Write("- " + DoTranslation("RGB color sequence:") + " ", False, ColTypes.ListEntry)
-            Write(RGB, True, ColTypes.ListValue)
+            Write("- " + DoTranslation("RGB color sequence:") + " ", False, GetConsoleColor(ColTypes.ListEntry))
+            Write(RGB, True, GetConsoleColor(ColTypes.ListValue))
         End Sub
 
     End Class

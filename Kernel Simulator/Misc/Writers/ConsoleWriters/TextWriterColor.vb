@@ -16,7 +16,7 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports KS.Misc.Reflection
+Imports TermWriter = Terminaux.Writer.ConsoleWriters.TextWriterColor
 
 Namespace Misc.Writers.ConsoleWriters
     Public Module TextWriterColor
@@ -30,34 +30,7 @@ Namespace Misc.Writers.ConsoleWriters
         ''' <param name="Line">Whether to print a new line or not</param>
         ''' <param name="vars">Variables to format the message before it's written.</param>
         Public Sub WritePlain(Text As String, Line As Boolean, ParamArray vars() As Object)
-            SyncLock WriteLock
-                Try
-                    'Get the filtered positions first.
-                    Dim FilteredLeft, FilteredTop As Integer
-                    If Not Line And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out)) Then GetFilteredPositions(Text, FilteredLeft, FilteredTop, vars)
-
-                    'Actually write
-                    If Line Then
-                        If Not vars.Length = 0 Then
-                            Console.WriteLine(Text, vars)
-                        Else
-                            Console.WriteLine(Text)
-                        End If
-                    Else
-                        If Not vars.Length = 0 Then
-                            Console.Write(Text, vars)
-                        Else
-                            Console.Write(Text)
-                        End If
-                    End If
-
-                    'Return to the processed position
-                    If Not Line And (DefConsoleOut Is Nothing Or Equals(DefConsoleOut, Console.Out)) Then Console.SetCursorPosition(FilteredLeft, FilteredTop)
-                Catch ex As Exception When Not ex.GetType.Name = "ThreadInterruptedException"
-                    WStkTrc(ex)
-                    KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)
-                End Try
-            End SyncLock
+            TermWriter.WritePlain(Text, Line, vars)
         End Sub
 
         ''' <summary>
@@ -117,7 +90,8 @@ Namespace Misc.Writers.ConsoleWriters
             SyncLock WriteLock
                 Try
                     'Try to write to console
-                    Console.BackgroundColor = If(IsStringNumeric(BackgroundColor.PlainSequence) AndAlso BackgroundColor.PlainSequence <= 15, [Enum].Parse(GetType(ConsoleColor), BackgroundColor.PlainSequence), ConsoleColor.Black)
+                    Dim result As ConsoleColor = ConsoleColor.Black
+                    Console.BackgroundColor = If([Enum].TryParse(BackgroundColor.PlainSequence, result), result, ConsoleColor.Black)
                     Console.ForegroundColor = color
 
                     'Write the text to console

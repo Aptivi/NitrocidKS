@@ -25,7 +25,7 @@ Namespace Shell.Commands
 #If SPECIFIER = "REL" Then
             CheckKernelUpdates()
 #Else
-            Write(DoTranslation("Checking for updates is disabled because you're running a development version."), True, ColTypes.Error)
+            Write(DoTranslation("Checking for updates is disabled because you're running a development version."), True, GetConsoleColor(ColTypes.Error))
 #End If
         End Sub
 

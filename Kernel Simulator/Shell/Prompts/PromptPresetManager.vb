@@ -282,7 +282,7 @@ Namespace Shell.Prompts
         ''' <param name="ShellType">Shell type</param>
         Public Sub WriteShellPrompt(ShellType As ShellType)
             Dim CurrentPresetBase As PromptPresetBase = GetCurrentPresetBaseFromShell(ShellType)
-            Write(CurrentPresetBase.PresetPrompt, False, ColTypes.Input)
+            Write(CurrentPresetBase.PresetPrompt, False, GetConsoleColor(ColTypes.Input))
         End Sub
 
         ''' <summary>

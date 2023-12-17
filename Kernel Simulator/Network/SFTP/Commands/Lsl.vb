@@ -37,9 +37,9 @@ Namespace Network.SFTP.Commands
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -showdetails: ", False, ColTypes.ListEntry) : Write(DoTranslation("Shows the file details in the list"), True, ColTypes.ListValue)
-            Write("  -suppressmessages: ", False, ColTypes.ListEntry) : Write(DoTranslation("Suppresses the annoying ""permission denied"" messages"), True, ColTypes.ListValue)
+            Write(DoTranslation("This command has the below switches that change how it works:"), True, GetConsoleColor(ColTypes.Neutral))
+            Write("  -showdetails: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Shows the file details in the list"), True, GetConsoleColor(ColTypes.ListValue))
+            Write("  -suppressmessages: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Suppresses the annoying ""permission denied"" messages"), True, GetConsoleColor(ColTypes.ListValue))
         End Sub
 
     End Class

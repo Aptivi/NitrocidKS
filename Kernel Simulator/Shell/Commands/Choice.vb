@@ -51,14 +51,14 @@ Namespace Shell.Commands
 
         Public Overrides Sub HelpHelper()
             Write(DoTranslation("where <$variable> is any variable that will be used to store response") + NewLine +
-                  DoTranslation("where <answers> are one-lettered answers of the question separated in slashes"), True, ColTypes.Neutral)
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -multiple: ", False, ColTypes.ListEntry) : Write(DoTranslation("Indicate that the answer can take more than one character"), True, ColTypes.ListValue)
-            Write("  -single: ", False, ColTypes.ListEntry) : Write(DoTranslation("Indicate that the answer can take just one character"), True, ColTypes.ListValue)
-            Write("  -o: ", False, ColTypes.ListEntry) : Write(DoTranslation("Print the question and the answers in one line"), True, ColTypes.ListValue)
-            Write("  -t: ", False, ColTypes.ListEntry) : Write(DoTranslation("Print the question and the answers in two lines"), True, ColTypes.ListValue)
-            Write("  -m: ", False, ColTypes.ListEntry) : Write(DoTranslation("Print the question and the answers in the modern way"), True, ColTypes.ListValue)
-            Write("  -a: ", False, ColTypes.ListEntry) : Write(DoTranslation("Print the question and the answers in a table"), True, ColTypes.ListValue)
+                  DoTranslation("where <answers> are one-lettered answers of the question separated in slashes"), True, GetConsoleColor(ColTypes.Neutral))
+            Write(DoTranslation("This command has the below switches that change how it works:"), True, GetConsoleColor(ColTypes.Neutral))
+            Write("  -multiple: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Indicate that the answer can take more than one character"), True, GetConsoleColor(ColTypes.ListValue))
+            Write("  -single: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Indicate that the answer can take just one character"), True, GetConsoleColor(ColTypes.ListValue))
+            Write("  -o: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Print the question and the answers in one line"), True, GetConsoleColor(ColTypes.ListValue))
+            Write("  -t: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Print the question and the answers in two lines"), True, GetConsoleColor(ColTypes.ListValue))
+            Write("  -m: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Print the question and the answers in the modern way"), True, GetConsoleColor(ColTypes.ListValue))
+            Write("  -a: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Print the question and the answers in a table"), True, GetConsoleColor(ColTypes.ListValue))
         End Sub
 
     End Class

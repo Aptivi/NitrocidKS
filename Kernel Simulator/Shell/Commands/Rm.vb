@@ -35,7 +35,7 @@ Namespace Shell.Commands
                     RemoveDirectory(Path)
                 Else
                     Wdbg(DebugLevel.W, "Trying to remove {0} which is not found.", Path)
-                    Write(DoTranslation("Can't remove {0} because it doesn't exist."), True, ColTypes.Error, Path)
+                    Write(DoTranslation("Can't remove {0} because it doesn't exist."), True, color:=GetConsoleColor(ColTypes.Error), Path)
                 End If
             Next
         End Sub

@@ -55,13 +55,13 @@ Namespace Misc.Writers.MiscWriters
 
                 'Finally, write the message
                 If StartScroll Then
-                    WriteSlowly(MessageWrite, True, 10, ColTypes.Banner, KernelVersion)
+                    WriteSlowly(MessageWrite, True, 10, GetConsoleColor(ColTypes.Banner), KernelVersion)
                 Else
-                    Write(MessageWrite, True, ColTypes.Banner, KernelVersion)
+                    Write(MessageWrite, True, GetConsoleColor(ColTypes.Banner), KernelVersion)
                 End If
 
                 If NewWelcomeStyle Then
-                    Write(NewLine + NewLine + GetFigletFont(BannerFigletFont).Render($"{KernelVersion}"), True, ColTypes.Neutral)
+                    Write(NewLine + NewLine + GetFigletFont(BannerFigletFont).Render($"{KernelVersion}"), True, GetConsoleColor(ColTypes.Neutral))
                 Else
                     'Show license
                     WriteLicense(True)

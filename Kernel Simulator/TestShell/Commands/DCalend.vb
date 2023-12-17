@@ -26,16 +26,16 @@ Namespace TestShell.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If ListArgs(0) = "Gregorian" Then
-                Write(RenderDate(New CultureInfo("en-US")), True, ColTypes.Neutral)
+                Write(RenderDate(New CultureInfo("en-US")), True, GetConsoleColor(ColTypes.Neutral))
             ElseIf ListArgs(0) = "Hijri" Then
                 Dim Cult As New CultureInfo("ar") : Cult.DateTimeFormat.Calendar = New HijriCalendar
-                Write(RenderDate(Cult), True, ColTypes.Neutral)
+                Write(RenderDate(Cult), True, GetConsoleColor(ColTypes.Neutral))
             ElseIf ListArgs(0) = "Persian" Then
-                Write(RenderDate(New CultureInfo("fa")), True, ColTypes.Neutral)
+                Write(RenderDate(New CultureInfo("fa")), True, GetConsoleColor(ColTypes.Neutral))
             ElseIf ListArgs(0) = "Saudi-Hijri" Then
-                Write(RenderDate(New CultureInfo("ar-SA")), True, ColTypes.Neutral)
+                Write(RenderDate(New CultureInfo("ar-SA")), True, GetConsoleColor(ColTypes.Neutral))
             ElseIf ListArgs(0) = "Thai-Buddhist" Then
-                Write(RenderDate(New CultureInfo("th-TH")), True, ColTypes.Neutral)
+                Write(RenderDate(New CultureInfo("th-TH")), True, GetConsoleColor(ColTypes.Neutral))
             End If
         End Sub
 

@@ -41,11 +41,11 @@ Namespace Files.Print
                             Write("- " + FileInfo.Name, False, ColTypes.Stage)
                             If ShowFileDetails Then Write(": ", False, ColTypes.Stage)
                         Else
-                            Write("- " + FileInfo.Name, False, ColTypes.ListEntry)
-                            If ShowFileDetails Then Write(": ", False, ColTypes.ListEntry)
+                            Write("- " + FileInfo.Name, False, GetConsoleColor(ColTypes.ListEntry))
+                            If ShowFileDetails Then Write(": ", False, GetConsoleColor(ColTypes.ListEntry))
                         End If
                         If ShowFileDetails Then
-                            Write(DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), False, ColTypes.ListValue,
+                            Write(DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), False, color:=GetConsoleColor(ColTypes.ListValue),
                                         DirectCast(FileInfo, FileInfo).Length.FileSizeToString, FileInfo.CreationTime.ToShortDateString, FileInfo.CreationTime.ToShortTimeString,
                                                                                                 FileInfo.LastWriteTime.ToShortDateString, FileInfo.LastWriteTime.ToShortTimeString)
                         End If
@@ -53,7 +53,7 @@ Namespace Files.Print
                     End If
                 End If
             Else
-                Write(DoTranslation("File {0} not found"), True, ColTypes.Error, FileInfo.FullName)
+                Write(DoTranslation("File {0} not found"), True, color:=GetConsoleColor(ColTypes.Error), FileInfo.FullName)
                 Wdbg(DebugLevel.I, "IO.FileExists = {0}", FileExists(FileInfo.FullName))
             End If
         End Sub

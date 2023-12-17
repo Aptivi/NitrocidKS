@@ -28,12 +28,12 @@ Namespace Misc.Editors.HexEdit.Commands
                 If IsStringNumeric(ListArgs(0)) Then
                     If CLng(ListArgs(0)) <= HexEdit_FileBytes.LongCount Then
                         HexEdit_DeleteBytes(ListArgs(0))
-                        Write(DoTranslation("Deleted bytes."), True, ColTypes.Success)
+                        Write(DoTranslation("Deleted bytes."), True, GetConsoleColor(ColTypes.Success))
                     Else
-                        Write(DoTranslation("The specified byte number may not be larger than the file size."), True, ColTypes.Error)
+                        Write(DoTranslation("The specified byte number may not be larger than the file size."), True, GetConsoleColor(ColTypes.Error))
                     End If
                 Else
-                    Write(DoTranslation("Specified Byte number {0} is not a valid number."), True, ColTypes.Error, ListArgs(0))
+                    Write(DoTranslation("Specified Byte number {0} is not a valid number."), True, color:=GetConsoleColor(ColTypes.Error), ListArgs(0))
                     Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs(0))
                 End If
             ElseIf ListArgs?.Count > 1 Then
@@ -44,10 +44,10 @@ Namespace Misc.Editors.HexEdit.Commands
                         ByteNumberStart.SwapIfSourceLarger(ByteNumberEnd)
                         HexEdit_DeleteBytes(ByteNumberStart, ByteNumberEnd)
                     Else
-                        Write(DoTranslation("The specified byte number may not be larger than the file size."), True, ColTypes.Error)
+                        Write(DoTranslation("The specified byte number may not be larger than the file size."), True, GetConsoleColor(ColTypes.Error))
                     End If
                 Else
-                    Write(DoTranslation("The byte number is not numeric."), True, ColTypes.Error)
+                    Write(DoTranslation("The byte number is not numeric."), True, GetConsoleColor(ColTypes.Error))
                     Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs(1))
                 End If
             End If

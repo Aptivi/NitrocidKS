@@ -31,46 +31,46 @@ Namespace Shell.Commands
             For Each Word As DictionaryWord In Words
                 'First, print the license out
                 WriteSeparator(DoTranslation("License information"), True)
-                Write("dictionaryapi.dev " + DoTranslation("API is licensed under") + $" {Word.LicenseInfo.Name}: {Word.LicenseInfo.Url}", True, ColTypes.Neutral)
+                Write("dictionaryapi.dev " + DoTranslation("API is licensed under") + $" {Word.LicenseInfo.Name}: {Word.LicenseInfo.Url}", True, GetConsoleColor(ColTypes.Neutral))
 
                 'Now, we can write the word information
                 WriteSeparator(DoTranslation("Word information for") + $" {ListArgs(0)}", True)
-                Write(DoTranslation("Word:"), False, ColTypes.ListEntry) : Write($" {Word.Word}", True, ColTypes.ListValue)
+                Write(DoTranslation("Word:"), False, GetConsoleColor(ColTypes.ListEntry)) : Write($" {Word.Word}", True, GetConsoleColor(ColTypes.ListValue))
 
                 'Meanings...
                 WriteSeparator(DoTranslation("Word meanings for") + $" {ListArgs(0)}", True)
                 For Each MeaningBase As DictionaryWord.Meaning In Word.Meanings
                     'Base part of speech
-                    Write(DoTranslation("Part of Speech:"), False, ColTypes.ListEntry) : Write($" {MeaningBase.PartOfSpeech}", True, ColTypes.ListValue)
+                    Write(DoTranslation("Part of Speech:"), False, GetConsoleColor(ColTypes.ListEntry)) : Write($" {MeaningBase.PartOfSpeech}", True, GetConsoleColor(ColTypes.ListValue))
 
                     'Get the definitions
                     For Each DefinitionBase As DictionaryWord.DefinitionType In MeaningBase.Definitions
                         'Write definition and, if applicable, example
-                        Write("  - " + DoTranslation("Definition:"), False, ColTypes.ListEntry) : Write($" {DefinitionBase.Definition}", True, ColTypes.ListValue)
-                        Write("  - " + DoTranslation("Example in Sentence:"), False, ColTypes.ListEntry) : Write($" {DefinitionBase.Example}", True, ColTypes.ListValue)
+                        Write("  - " + DoTranslation("Definition:"), False, GetConsoleColor(ColTypes.ListEntry)) : Write($" {DefinitionBase.Definition}", True, GetConsoleColor(ColTypes.ListValue))
+                        Write("  - " + DoTranslation("Example in Sentence:"), False, GetConsoleColor(ColTypes.ListEntry)) : Write($" {DefinitionBase.Example}", True, GetConsoleColor(ColTypes.ListValue))
 
                         'Now, write the specific synonyms (usually blank)
                         If DefinitionBase.Synonyms.Any Then
-                            Write("  - " + DoTranslation("Synonyms:"), True, ColTypes.ListEntry)
+                            Write("  - " + DoTranslation("Synonyms:"), True, GetConsoleColor(ColTypes.ListEntry))
                             WriteList(DefinitionBase.Synonyms)
                         End If
 
                         '...and the specific antonyms (usually blank)
                         If DefinitionBase.Antonyms.Any Then
-                            Write("  - " + DoTranslation("Antonyms:"), True, ColTypes.ListEntry)
+                            Write("  - " + DoTranslation("Antonyms:"), True, GetConsoleColor(ColTypes.ListEntry))
                             WriteList(DefinitionBase.Antonyms)
                         End If
                     Next
 
                     'Now, write the base synonyms (usually blank)
                     If MeaningBase.Synonyms.Any Then
-                        Write("  - " + DoTranslation("Synonyms:"), True, ColTypes.ListEntry)
+                        Write("  - " + DoTranslation("Synonyms:"), True, GetConsoleColor(ColTypes.ListEntry))
                         WriteList(MeaningBase.Synonyms)
                     End If
 
                     '...and the base antonyms (usually blank)
                     If MeaningBase.Antonyms.Any Then
-                        Write("  - " + DoTranslation("Antonyms:"), True, ColTypes.ListEntry)
+                        Write("  - " + DoTranslation("Antonyms:"), True, GetConsoleColor(ColTypes.ListEntry))
                         WriteList(MeaningBase.Antonyms)
                     End If
                 Next

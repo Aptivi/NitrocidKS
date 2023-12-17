@@ -208,13 +208,13 @@ End Class
         Name = "HelloGuys"
         Version = "1.0"
         ModPart = "Main"
-        W("Hello World", True, ColTypes.Neutral)
+        W("Hello World", True, GetConsoleColor(ColTypes.Neutral))
     End Sub
 ```
 4. Make your stop event handler by writing:
 ```vb
     Sub StopMod() Implements IScript.StopMod
-        W("Goodbye World", True, ColTypes.Neutral)
+        W("Goodbye World", True, GetConsoleColor(ColTypes.Neutral))
     End Sub
 ```
 5. Since we're not implementing commands nor event handlers, we're going to leave these blank:
@@ -241,10 +241,10 @@ End Class
             Name = "HelloGuys"
             Version = "1.0"
             ModPart = "Main"
-            Write("Hello World", True, ColTypes.Neutral)
+            Write("Hello World", True, GetConsoleColor(ColTypes.Neutral))
         End Sub
         Sub StopMod() Implements IScript.StopMod
-            Write("Goodbye World", True, ColTypes.Neutral)
+            Write("Goodbye World", True, GetConsoleColor(ColTypes.Neutral))
         End Sub
         Sub InitEvents(ev As String) Implements IScript.InitEvents
         End Sub

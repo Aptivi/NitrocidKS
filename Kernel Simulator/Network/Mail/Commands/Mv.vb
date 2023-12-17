@@ -29,7 +29,7 @@ Namespace Network.Mail.Commands
             If IsStringNumeric(ListArgs(0)) Then
                 MailMoveMessage(ListArgs(0), ListArgs(1))
             Else
-                Write(DoTranslation("Message number is not a numeric value."), True, ColTypes.Error)
+                Write(DoTranslation("Message number is not a numeric value."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

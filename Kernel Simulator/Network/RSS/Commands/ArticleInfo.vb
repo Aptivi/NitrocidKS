@@ -26,21 +26,21 @@ Namespace Network.RSS.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             Dim ArticleIndex As Integer = ListArgs(0) - 1
             If ArticleIndex > RSSFeedInstance.FeedArticles.Count - 1 Then
-                Write(DoTranslation("Article number couldn't be bigger than the available articles."), True, ColTypes.Error)
+                Write(DoTranslation("Article number couldn't be bigger than the available articles."), True, GetConsoleColor(ColTypes.Error))
                 Wdbg(DebugLevel.E, "Tried to access article number {0}, but count is {1}.", ArticleIndex, RSSFeedInstance.FeedArticles.Count - 1)
             Else
                 Dim Article As RSSArticle = RSSFeedInstance.FeedArticles(ArticleIndex)
-                Write("- " + DoTranslation("Title:") + " ", False, ColTypes.ListEntry)
-                Write(Article.ArticleTitle, True, ColTypes.ListValue)
-                Write("- " + DoTranslation("Link:") + " ", False, ColTypes.ListEntry)
-                Write(Article.ArticleLink, True, ColTypes.ListValue)
+                Write("- " + DoTranslation("Title:") + " ", False, GetConsoleColor(ColTypes.ListEntry))
+                Write(Article.ArticleTitle, True, GetConsoleColor(ColTypes.ListValue))
+                Write("- " + DoTranslation("Link:") + " ", False, GetConsoleColor(ColTypes.ListEntry))
+                Write(Article.ArticleLink, True, GetConsoleColor(ColTypes.ListValue))
                 For Each Variable As String In Article.ArticleVariables.Keys
                     If Not Variable = "title" And Not Variable = "link" And Not Variable = "summary" And Not Variable = "description" And Not Variable = "content" Then
-                        Write("- {0}: ", False, ColTypes.ListEntry, Variable)
-                        Write(Article.ArticleVariables(Variable).InnerText, True, ColTypes.ListValue)
+                        Write("- {0}: ", False, color:=GetConsoleColor(ColTypes.ListEntry), Variable)
+                        Write(Article.ArticleVariables(Variable).InnerText, True, GetConsoleColor(ColTypes.ListValue))
                     End If
                 Next
-                Write(NewLine + Article.ArticleDescription, True, ColTypes.Neutral)
+                Write(NewLine + Article.ArticleDescription, True, GetConsoleColor(ColTypes.Neutral))
             End If
         End Sub
 

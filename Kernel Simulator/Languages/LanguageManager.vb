@@ -158,12 +158,12 @@ Namespace Languages
                             ElseIf AlwaysTranslated Then
                                 If Not lang.EndsWith("-T") Then lang += "-T"
                             Else
-                                Write(DoTranslation("The language you've selected contains two variants. Select one:") + NewLine, True, ColTypes.Neutral)
-                                Write(" 1) " + DoTranslation("Transliterated version", lang), True, ColTypes.Option)
-                                Write(" 2) " + DoTranslation("Translated version", lang + "-T") + NewLine, True, ColTypes.Option)
+                                Write(DoTranslation("The language you've selected contains two variants. Select one:") + NewLine, True, GetConsoleColor(ColTypes.Neutral))
+                                Write(" 1) " + DoTranslation("Transliterated version", lang), True, GetConsoleColor(ColTypes.Option))
+                                Write(" 2) " + DoTranslation("Translated version", lang + "-T") + NewLine, True, GetConsoleColor(ColTypes.Option))
                                 Dim LanguageSet As Boolean
                                 While Not LanguageSet
-                                    Write(">> ", False, ColTypes.Input)
+                                    Write(">> ", False, GetConsoleColor(ColTypes.Input))
                                     Dim Answer As Integer
                                     Dim AnswerString As String = ReadLine(False)
                                     If Integer.TryParse(AnswerString, Answer) Then
@@ -173,10 +173,10 @@ Namespace Languages
                                                 If Answer = 2 Then lang += "-T"
                                                 LanguageSet = True
                                             Case Else
-                                                Write(DoTranslation("Invalid choice. Try again."), True, ColTypes.Error)
+                                                Write(DoTranslation("Invalid choice. Try again."), True, GetConsoleColor(ColTypes.Error))
                                         End Select
                                     Else
-                                        Write(DoTranslation("The answer must be numeric."), True, ColTypes.Error)
+                                        Write(DoTranslation("The answer must be numeric."), True, GetConsoleColor(ColTypes.Error))
                                     End If
                                 End While
                             End If
@@ -186,22 +186,22 @@ Namespace Languages
 
                 'Gangsta language contains strong language, so warn the user before setting
                 If lang = "pla" Then
-                    Write(DoTranslation("The gangsta language contains strong language that may make you feel uncomfortable reading it. Are you sure that you want to set the language anyways?"), True, ColTypes.Warning)
+                    Write(DoTranslation("The gangsta language contains strong language that may make you feel uncomfortable reading it. Are you sure that you want to set the language anyways?"), True, GetConsoleColor(ColTypes.Warning))
                     If Console.ReadKey(True).Key <> ConsoleKey.Y Then
                         Exit Sub
                     End If
                 End If
 
                 'Now, set the language!
-                Write(DoTranslation("Changing from: {0} to {1}..."), True, ColTypes.Neutral, CurrentLanguage, lang)
+                Write(DoTranslation("Changing from: {0} to {1}..."), True, color:=GetConsoleColor(ColTypes.Neutral), CurrentLanguage, lang)
                 If Not SetLang(lang) Then
-                    Write(DoTranslation("Failed to set language."), True, ColTypes.Error)
+                    Write(DoTranslation("Failed to set language."), True, GetConsoleColor(ColTypes.Error))
                 End If
                 If NotifyCodepageError Then
-                    Write(DoTranslation("Unable to set codepage. The language may not display properly."), True, ColTypes.Error)
+                    Write(DoTranslation("Unable to set codepage. The language may not display properly."), True, GetConsoleColor(ColTypes.Error))
                 End If
             Else
-                Write(DoTranslation("Invalid language") + " {0}", True, ColTypes.Error, lang)
+                Write(DoTranslation("Invalid language") + " {0}", True, color:=GetConsoleColor(ColTypes.Error), lang)
             End If
         End Sub
 

@@ -25,9 +25,9 @@ Namespace Network.RSS.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             For Each Article As RSSArticle In RSSFeedInstance.FeedArticles
-                Write("- {0}: ", False, ColTypes.ListEntry, Article.ArticleTitle)
-                Write(Article.ArticleLink, True, ColTypes.ListValue)
-                Write("    {0}", True, ColTypes.Neutral, Article.ArticleDescription.SplitNewLines(0).Truncate(200))
+                Write("- {0}: ", False, color:=GetConsoleColor(ColTypes.ListEntry), Article.ArticleTitle)
+                Write(Article.ArticleLink, True, GetConsoleColor(ColTypes.ListValue))
+                Write("    {0}", True, color:=GetConsoleColor(ColTypes.Neutral), Article.ArticleDescription.SplitNewLines(0).Truncate(200))
             Next
         End Sub
 

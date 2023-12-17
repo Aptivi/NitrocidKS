@@ -27,12 +27,12 @@ Namespace Misc.Editors.HexEdit.Commands
             If IsStringNumeric(ListArgs(0)) Then
                 If CInt(ListArgs(0)) <= HexEdit_FileBytes.LongCount Then
                     HexEdit_DeleteByte(ListArgs(0))
-                    Write(DoTranslation("Byte deleted."), True, ColTypes.Success)
+                    Write(DoTranslation("Byte deleted."), True, GetConsoleColor(ColTypes.Success))
                 Else
-                    Write(DoTranslation("The specified byte number may not be larger than the file size."), True, ColTypes.Error)
+                    Write(DoTranslation("The specified byte number may not be larger than the file size."), True, GetConsoleColor(ColTypes.Error))
                 End If
             Else
-                Write(DoTranslation("The byte number is not numeric."), True, ColTypes.Error)
+                Write(DoTranslation("The byte number is not numeric."), True, GetConsoleColor(ColTypes.Error))
                 Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs(0))
             End If
         End Sub

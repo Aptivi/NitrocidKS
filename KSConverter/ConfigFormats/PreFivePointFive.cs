@@ -24,6 +24,7 @@ using KS.ConsoleBase.Colors;
 using KS.Kernel;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell;
+using Terminaux.Colors;
 
 namespace KSConverter
 {
@@ -62,54 +63,54 @@ namespace KSConverter
                         if (line.Contains("User Name Shell Color = "))
                         {
                             if (Shell.ColoredShell == true)
-                                ColorTools.UserNameShellColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("User Name Shell Color = ", ""))));
+                                KernelColorTools.UserNameShellColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("User Name Shell Color = ", ""))));
                         }
                         else if (line.Contains("Host Name Shell Color = "))
                         {
                             if (Shell.ColoredShell == true)
-                                ColorTools.HostNameShellColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Host Name Shell Color = ", ""))));
+                                KernelColorTools.HostNameShellColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Host Name Shell Color = ", ""))));
                         }
                         else if (line.Contains("Continuable Kernel Error Color = "))
                         {
                             if (Shell.ColoredShell == true)
-                                ColorTools.ContKernelErrorColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Continuable Kernel Error Color = ", ""))));
+                                KernelColorTools.ContKernelErrorColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Continuable Kernel Error Color = ", ""))));
                         }
                         else if (line.Contains("Uncontinuable Kernel Error Color = "))
                         {
                             if (Shell.ColoredShell == true)
-                                ColorTools.UncontKernelErrorColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Uncontinuable Kernel Error Color = ", ""))));
+                                KernelColorTools.UncontKernelErrorColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Uncontinuable Kernel Error Color = ", ""))));
                         }
                         else if (line.Contains("Text Color = "))
                         {
                             if (Shell.ColoredShell == true)
-                                ColorTools.NeutralTextColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Text Color = ", ""))));
+                                KernelColorTools.NeutralTextColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Text Color = ", ""))));
                         }
                         else if (line.Contains("License Color = "))
                         {
                             if (Shell.ColoredShell == true)
-                                ColorTools.LicenseColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("License Color = ", ""))));
+                                KernelColorTools.LicenseColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("License Color = ", ""))));
                         }
                         else if (line.Contains("Background Color = "))
                         {
                             if (Shell.ColoredShell == true)
                             {
-                                ColorTools.BackgroundColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Background Color = ", ""))));
+                                KernelColorTools.BackgroundColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Background Color = ", ""))));
                             }
                         }
                         else if (line.Contains("Input Color = "))
                         {
                             if (Shell.ColoredShell == true)
-                                ColorTools.InputColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Input Color = ", ""))));
+                                KernelColorTools.InputColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Input Color = ", ""))));
                         }
                         else if (line.Contains("Listed command in Help Color = "))
                         {
                             if (Shell.ColoredShell == true)
-                                ColorTools.ListEntryColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Listed command in Help Color = ", ""))));
+                                KernelColorTools.ListEntryColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Listed command in Help Color = ", ""))));
                         }
                         else if (line.Contains("Definition of command in Help Color = "))
                         {
                             if (Shell.ColoredShell == true)
-                                ColorTools.ListValueColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Definition of command in Help Color = ", ""))));
+                                KernelColorTools.ListValueColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), line.Replace("Definition of command in Help Color = ", ""))));
                         }
                         else if (line.Contains("Maintenance Mode = "))
                         {
@@ -211,7 +212,7 @@ namespace KSConverter
             catch (Exception ex)
             {
                 Debug.WriteLine($"Error while converting config! {ex.Message}");
-                TextWriterColor.Write("  - Warning: Failed to completely convert config. Some of the configurations might not be fully migrated.", true, ColorTools.ColTypes.Warning);
+                TextWriterColor.Write("  - Warning: Failed to completely convert config. Some of the configurations might not be fully migrated.", true, KernelColorTools.ColTypes.Warning);
                 return false;
             }
         }

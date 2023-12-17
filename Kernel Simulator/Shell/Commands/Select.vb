@@ -37,7 +37,7 @@ Namespace Shell.Commands
 
         Public Overrides Sub HelpHelper()
             Write(DoTranslation("where <$variable> is any variable that will be used to store response") + NewLine +
-                  DoTranslation("where <answers> are one-lettered answers of the question separated in slashes"), True, ColTypes.Neutral)
+                  DoTranslation("where <answers> are one-lettered answers of the question separated in slashes"), True, GetConsoleColor(ColTypes.Neutral))
         End Sub
 
     End Class

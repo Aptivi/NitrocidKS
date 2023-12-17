@@ -27,14 +27,14 @@ Namespace Misc.Editors.TextEdit.Commands
             If IsStringNumeric(ListArgsOnly(0)) Then
                 If CInt(ListArgsOnly(0)) <= TextEdit_FileLines.Count Then
                     Dim OriginalLine As String = TextEdit_FileLines(ListArgsOnly(0) - 1)
-                    Write(">> ", False, ColTypes.Input)
+                    Write(">> ", False, GetConsoleColor(ColTypes.Input))
                     Dim EditedLine As String = ReadLine("", OriginalLine, False)
                     TextEdit_FileLines(ListArgsOnly(0) - 1) = EditedLine
                 Else
-                    Write(DoTranslation("The specified line number may not be larger than the last file line number."), True, ColTypes.Error)
+                    Write(DoTranslation("The specified line number may not be larger than the last file line number."), True, GetConsoleColor(ColTypes.Error))
                 End If
             Else
-                Write(DoTranslation("Specified line number {0} is not a valid number."), True, ColTypes.Error)
+                Write(DoTranslation("Specified line number {0} is not a valid number."), True, color:=GetConsoleColor(ColTypes.Error), ListArgsOnly(0))
                 Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs(0))
             End If
         End Sub

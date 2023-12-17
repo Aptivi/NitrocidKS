@@ -33,7 +33,7 @@ Namespace Shell.Commands
             If FileExists(JsonFile) Then
                 'Beautify the JSON and display it on screen
                 BeautifiedJson = BeautifyJson(JsonFile)
-                Write(BeautifiedJson, True, ColTypes.Neutral)
+                Write(BeautifiedJson, True, GetConsoleColor(ColTypes.Neutral))
 
                 'Beautify it to an output file specified (optional)
                 If ListArgs.Count > 1 Then
@@ -41,7 +41,7 @@ Namespace Shell.Commands
                     File.WriteAllText(JsonOutputFile, BeautifiedJson)
                 End If
             Else
-                Write(DoTranslation("File {0} not found."), True, ColTypes.Error, JsonFile)
+                Write(DoTranslation("File {0} not found."), True, color:=GetConsoleColor(ColTypes.Error), JsonFile)
             End If
         End Sub
 

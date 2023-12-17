@@ -72,7 +72,7 @@ Namespace Misc.Timers
             If EnableFigletTimer Then
                 WriteFigletWhere(CurrentRemainingString, TimeLeftPosition, TimeTopPosition, True, FigletFont, ColTypes.Neutral)
             Else
-                WriteWhere(CurrentRemainingString, TimeLeftPosition, TimeTopPosition, True, ColTypes.Neutral)
+                WriteWhere(CurrentRemainingString, TimeLeftPosition, TimeTopPosition, True, GetConsoleColor(ColTypes.Neutral))
             End If
 
             'Print the border
@@ -99,7 +99,7 @@ Namespace Misc.Timers
                             Dim UnparsedInterval As String = ReadLine()
                             If Not Double.TryParse(UnparsedInterval, TimerInterval) Then
                                 'Not numeric.
-                                WriteWhere(DoTranslation("Indicated timeout is not numeric."), 2, KeysTextTopPosition - 4, False, ColTypes.Error)
+                                WriteWhere(DoTranslation("Indicated timeout is not numeric."), 2, KeysTextTopPosition - 4, False, GetConsoleColor(ColTypes.Error))
                                 ClearLineToRight()
                                 Console.ReadKey()
                             Else
@@ -110,7 +110,7 @@ Namespace Misc.Timers
                                 If EnableFigletTimer Then
                                     WriteFigletWhere(RemainingString, TimeLeftPosition, TimeTopPosition, True, FigletFont, ColTypes.Neutral)
                                 Else
-                                    WriteWhere(RemainingString, TimeLeftPosition, TimeTopPosition, True, ColTypes.Neutral)
+                                    WriteWhere(RemainingString, TimeLeftPosition, TimeTopPosition, True, GetConsoleColor(ColTypes.Neutral))
                                 End If
                             End If
 
@@ -152,7 +152,7 @@ Namespace Misc.Timers
             If EnableFigletTimer Then
                 WriteFigletWhere(ElapsedText, TimeLeftPosition, TimeTopPosition, True, FigletFont, ColTypes.Success)
             Else
-                WriteWhere(ElapsedText, TimeLeftPosition, TimeTopPosition, True, ColTypes.Success)
+                WriteWhere(ElapsedText, TimeLeftPosition, TimeTopPosition, True, GetConsoleColor(ColTypes.Success))
             End If
             Timer.Stop()
         End Sub
@@ -179,7 +179,7 @@ Namespace Misc.Timers
                     If EnableFigletTimer Then
                         WriteFigletWhere(UntilText, TimeLeftPosition, TimeTopPosition, True, FigletFont, ColTypes.Neutral)
                     Else
-                        WriteWhere(UntilText, TimeLeftPosition, TimeTopPosition, True, ColTypes.Neutral)
+                        WriteWhere(UntilText, TimeLeftPosition, TimeTopPosition, True, GetConsoleColor(ColTypes.Neutral))
                     End If
                 Catch ex As ThreadInterruptedException
                     Exit While

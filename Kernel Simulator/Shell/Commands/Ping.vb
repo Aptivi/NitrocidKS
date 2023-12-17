@@ -41,17 +41,17 @@ Namespace Shell.Commands
                         Try
                             Dim PingReplied As PingReply = PingAddress(PingedAddress)
                             If PingReplied.Status = IPStatus.Success Then
-                                Write("[{1}] " + DoTranslation("Ping succeeded in {0} ms."), True, ColTypes.Neutral, PingReplied.RoundtripTime, CurrentTime)
+                                Write("[{1}] " + DoTranslation("Ping succeeded in {0} ms."), True, color:=GetConsoleColor(ColTypes.Neutral), PingReplied.RoundtripTime, CurrentTime)
                             Else
-                                Write("[{2}] " + DoTranslation("Failed to ping {0}: {1}"), True, ColTypes.Error, PingedAddress, PingReplied.Status, CurrentTime)
+                                Write("[{2}] " + DoTranslation("Failed to ping {0}: {1}"), True, color:=GetConsoleColor(ColTypes.Error), PingedAddress, PingReplied.Status, CurrentTime)
                             End If
                         Catch ex As Exception
-                            Write("[{2}] " + DoTranslation("Failed to ping {0}: {1}"), True, ColTypes.Error, PingedAddress, ex.Message, CurrentTime)
+                            Write("[{2}] " + DoTranslation("Failed to ping {0}: {1}"), True, color:=GetConsoleColor(ColTypes.Error), PingedAddress, ex.Message, CurrentTime)
                             WStkTrc(ex)
                         End Try
                     Next
                 Else
-                    Write(DoTranslation("Address may not be empty."), True, ColTypes.Error)
+                    Write(DoTranslation("Address may not be empty."), True, GetConsoleColor(ColTypes.Error))
                 End If
             Next
         End Sub

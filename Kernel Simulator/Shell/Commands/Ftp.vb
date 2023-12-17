@@ -29,10 +29,10 @@ Namespace Shell.Commands
                     StartShell(ShellType.FTPShell, ListArgs(0))
                 End If
             Catch ftpex As Exceptions.FTPShellException
-                Write(ftpex.Message, True, ColTypes.Error)
+                Write(ftpex.Message, True, GetConsoleColor(ColTypes.Error))
             Catch ex As Exception
                 WStkTrc(ex)
-                Write(DoTranslation("Unknown FTP shell error:") + " {0}", True, ColTypes.Error, ex.Message)
+                Write(DoTranslation("Unknown FTP shell error:") + " {0}", True, color:=GetConsoleColor(ColTypes.Error), ex.Message)
             End Try
         End Sub
 

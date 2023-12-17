@@ -36,7 +36,7 @@ Namespace Shell.Commands
                     GetLine(ListArgs(0), False, WrapOutputPath)
                     Dim WrapOutputStream As New StreamReader(WrapOutputPath)
                     Dim WrapOutput As String = WrapOutputStream.ReadToEnd
-                    WriteWrapped(WrapOutput, False, ColTypes.Neutral)
+                    WriteWrapped(WrapOutput, False, GetConsoleColor(ColTypes.Neutral))
                     If Not WrapOutput.EndsWith(NewLine) Then Console.WriteLine()
                     WrapOutputStream.Close()
                     File.Delete(WrapOutputPath)
@@ -45,10 +45,10 @@ Namespace Shell.Commands
                     For Each CommandInfo As CommandInfo In Shell.Commands.Values
                         If CommandInfo.Wrappable Then WrappableCmds.Add(CommandInfo.Command)
                     Next
-                    Write(DoTranslation("The command is not wrappable. These commands are wrappable:") + " {0}", True, ColTypes.Error, String.Join(", ", WrappableCmds.ToArray))
+                    Write(DoTranslation("The command is not wrappable. These commands are wrappable:") + " {0}", True, color:=GetConsoleColor(ColTypes.Error), String.Join(", ", WrappableCmds.ToArray))
                 End If
             Else
-                Write(DoTranslation("The wrappable command is not found."), True, ColTypes.Error)
+                Write(DoTranslation("The wrappable command is not found."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 
@@ -60,7 +60,7 @@ Namespace Shell.Commands
             Next
 
             'Print them along with help description
-            Write(DoTranslation("Wrappable commands:") + " {0}", True, ColTypes.Neutral, String.Join(", ", WrappableCmds.ToArray))
+            Write(DoTranslation("Wrappable commands:") + " {0}", True, color:=GetConsoleColor(ColTypes.Neutral), String.Join(", ", WrappableCmds.ToArray))
         End Sub
 
     End Class

@@ -24,15 +24,15 @@ Namespace Network.SFTP.Commands
         Implements ICommand
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
-            Write(DoTranslation("Uploading file {0}..."), True, ColTypes.Progress, ListArgs(0))
+            Write(DoTranslation("Uploading file {0}..."), True, color:=GetConsoleColor(ColTypes.Progress), ListArgs(0))
 
             'Begin the uploading process
             If SFTPUploadFile(ListArgs(0)) Then
                 Console.WriteLine()
-                Write(NewLine + DoTranslation("Uploaded file {0}"), True, ColTypes.Success, ListArgs(0))
+                Write(NewLine + DoTranslation("Uploaded file {0}"), True, color:=GetConsoleColor(ColTypes.Success), ListArgs(0))
             Else
                 Console.WriteLine()
-                Write(NewLine + DoTranslation("Failed to upload {0}"), True, ColTypes.Error, ListArgs(0))
+                Write(NewLine + DoTranslation("Failed to upload {0}"), True, color:=GetConsoleColor(ColTypes.Error), ListArgs(0))
             End If
         End Sub
 

@@ -29,7 +29,7 @@ Namespace Shell.Commands
             If FileExists(ListArgs(0)) Then
                 StartShell(ShellType.HexShell, ListArgs(0))
             Else
-                Write(DoTranslation("File doesn't exist."), True, ColTypes.Error)
+                Write(DoTranslation("File doesn't exist."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

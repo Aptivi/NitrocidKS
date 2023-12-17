@@ -113,7 +113,7 @@ The back message box screensaver tells people that the computer owner is gone, o
     Public Property SaverName As String Implements ICustomSaver.SaverName
     Public Property SaverSettings As Dictionary(Of String, Object) Implements ICustomSaver.SaverSettings
     Sub InitSaver() Implements ICustomSaver.InitSaver
-        W("Load this screensaver using ""setsaver SORSS""", False, True, ColTypes.Neutral)
+        W("Load this screensaver using ""setsaver SORSS""", False, True, GetConsoleColor(ColTypes.Neutral))
         SaverName = "SORSS"
         Initialized = True
     End Sub
@@ -158,11 +158,11 @@ The back message box screensaver tells people that the computer owner is gone, o
         Return text
     End Function
     Public Shared Sub InitializeBar(ByVal strlen As Integer)
-        W("   +-", False, ColTypes.Neutral)
+        W("   +-", False, GetConsoleColor(ColTypes.Neutral))
         For l As Integer = 0 To strlen - 1
-            W("-", False, ColTypes.Neutral)
+            W("-", False, GetConsoleColor(ColTypes.Neutral))
         Next
-        W("-+", True, ColTypes.Neutral)
+        W("-+", True, GetConsoleColor(ColTypes.Neutral))
     End Sub
     Public Shared Sub WriteMsg(ByVal TypeID As Integer, ByVal MsgID As Integer)
         Dim BackMessages As String() = {"<OWNER> will be back soon.", "<OWNER> is busy. He will be back soon."}
@@ -178,7 +178,7 @@ The back message box screensaver tells people that the computer owner is gone, o
                 text = ParsePlaces(RudeMessages(MsgID))
         End Select
         InitializeBar(text.Length)
-        W("   | {0} |", True, ColTypes.Neutral, text)
+        W("   | {0} |", True, GetConsoleColor(ColTypes.Neutral), text)
         InitializeBar(text.Length)
     End Sub
 ```
@@ -203,7 +203,7 @@ The back message box screensaver tells people that the computer owner is gone, o
         Public R_Random As New Random()
 
         Sub InitSaver() Implements ICustomSaver.InitSaver
-            Write("Set this screensaver as default using ""setsaver SORSS""", True, ColTypes.Neutral)
+            Write("Set this screensaver as default using ""setsaver SORSS""", True, GetConsoleColor(ColTypes.Neutral))
             SaverName = "SORSS"
             Initialized = True
         End Sub
@@ -233,11 +233,11 @@ The back message box screensaver tells people that the computer owner is gone, o
         End Sub
 
         Public Shared Sub InitializeBar(strlen As Integer)
-            Write("   +-", False, ColTypes.Neutral)
+            Write("   +-", False, GetConsoleColor(ColTypes.Neutral))
             For l As Integer = 0 To strlen - 1
-                Write("-", False, ColTypes.Neutral)
+                Write("-", False, GetConsoleColor(ColTypes.Neutral))
             Next
-            Write("-+", True, ColTypes.Neutral)
+            Write("-+", True, GetConsoleColor(ColTypes.Neutral))
         End Sub
 
         Public Shared Sub WriteMsg(TypeID As Integer, MsgID As Integer)
@@ -254,7 +254,7 @@ The back message box screensaver tells people that the computer owner is gone, o
                     text = ProbePlaces(RudeMessages(MsgID))
             End Select
             InitializeBar(text.Length)
-            Write("   | {0} |", True, ColTypes.Neutral, text)
+            Write("   | {0} |", True, GetConsoleColor(ColTypes.Neutral), text)
             InitializeBar(text.Length)
         End Sub
 

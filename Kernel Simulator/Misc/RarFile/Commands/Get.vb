@@ -34,8 +34,8 @@ Namespace Misc.RarFile.Commands
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -absolute: ", False, ColTypes.ListEntry) : Write(DoTranslation("Indicates that the target path is absolute"), True, ColTypes.ListValue)
+            Write(DoTranslation("This command has the below switches that change how it works:"), True, GetConsoleColor(ColTypes.Neutral))
+            Write("  -absolute: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Indicates that the target path is absolute"), True, GetConsoleColor(ColTypes.ListValue))
         End Sub
 
     End Class

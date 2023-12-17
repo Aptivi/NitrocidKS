@@ -58,9 +58,9 @@ Namespace Network.Mail
         Sub PromptUser()
             'Username or mail address
             If Not String.IsNullOrWhiteSpace(Mail_UserPromptStyle) Then
-                Write(ProbePlaces(Mail_UserPromptStyle), False, ColTypes.Input)
+                Write(ProbePlaces(Mail_UserPromptStyle), False, GetConsoleColor(ColTypes.Input))
             Else
-                Write(DoTranslation("Enter username or mail address: "), False, ColTypes.Input)
+                Write(DoTranslation("Enter username or mail address: "), False, GetConsoleColor(ColTypes.Input))
             End If
 
             'Try to get the username or e-mail address from the input
@@ -77,9 +77,9 @@ Namespace Network.Mail
             Wdbg(DebugLevel.I, "Username: {0}", Username)
             Mail_Authentication.UserName = Username
             If Not String.IsNullOrWhiteSpace(Mail_PassPromptStyle) Then
-                Write(ProbePlaces(Mail_PassPromptStyle), False, ColTypes.Input)
+                Write(ProbePlaces(Mail_PassPromptStyle), False, GetConsoleColor(ColTypes.Input))
             Else
-                Write(DoTranslation("Enter password: "), False, ColTypes.Input)
+                Write(DoTranslation("Enter password: "), False, GetConsoleColor(ColTypes.Input))
             End If
             Mail_Authentication.Password = ReadLineNoInput()
 
@@ -103,18 +103,18 @@ Namespace Network.Mail
             Dim SMTP_Port As Integer
             'IMAP server address and port
             If Not String.IsNullOrWhiteSpace(Mail_IMAPPromptStyle) Then
-                Write(ProbePlaces(Mail_IMAPPromptStyle), False, ColTypes.Input)
+                Write(ProbePlaces(Mail_IMAPPromptStyle), False, GetConsoleColor(ColTypes.Input))
             Else
-                Write(DoTranslation("Enter IMAP server address and port (<address> or <address>:[port]): "), False, ColTypes.Input)
+                Write(DoTranslation("Enter IMAP server address and port (<address> or <address>:[port]): "), False, GetConsoleColor(ColTypes.Input))
             End If
             IMAP_Address = ReadLine(False)
             Wdbg(DebugLevel.I, "IMAP Server: ""{0}""", IMAP_Address)
 
             'SMTP server address and port
             If Not String.IsNullOrWhiteSpace(Mail_SMTPPromptStyle) Then
-                Write(ProbePlaces(Mail_SMTPPromptStyle), False, ColTypes.Input)
+                Write(ProbePlaces(Mail_SMTPPromptStyle), False, GetConsoleColor(ColTypes.Input))
             Else
-                Write(DoTranslation("Enter SMTP server address and port (<address> or <address>:[port]): "), False, ColTypes.Input)
+                Write(DoTranslation("Enter SMTP server address and port (<address> or <address>:[port]): "), False, GetConsoleColor(ColTypes.Input))
             End If
             SMTP_Address = ReadLine(False)
             SMTP_Port = 587
@@ -191,18 +191,18 @@ Namespace Network.Mail
                 CryptographyContext.Register(GetType(PGPContext))
 
                 'IMAP Connection
-                Write(DoTranslation("Connecting to {0}..."), True, ColTypes.Neutral, Address)
+                Write(DoTranslation("Connecting to {0}..."), True, color:=GetConsoleColor(ColTypes.Neutral), Address)
                 Wdbg(DebugLevel.I, "Connecting to IMAP Server {0}:{1} with SSL...", Address, Port)
                 IMAP_Client.Connect(Address, Port, Security.SecureSocketOptions.SslOnConnect)
                 AddHandler IMAP_Client.WebAlert, AddressOf HandleWebAlert
 
                 'SMTP Connection
-                Write(DoTranslation("Connecting to {0}..."), True, ColTypes.Neutral, SmtpAddress)
+                Write(DoTranslation("Connecting to {0}..."), True, color:=GetConsoleColor(ColTypes.Neutral), SmtpAddress)
                 Wdbg(DebugLevel.I, "Connecting to SMTP Server {0}:{1} with SSL...", Address, Port)
                 SMTP_Client.Connect(SmtpAddress, SmtpPort, Security.SecureSocketOptions.StartTlsWhenAvailable)
 
                 'IMAP Authentication
-                Write(DoTranslation("Authenticating..."), True, ColTypes.Neutral)
+                Write(DoTranslation("Authenticating..."), True, GetConsoleColor(ColTypes.Neutral))
                 Wdbg(DebugLevel.I, "Authenticating {0} to IMAP server {1}...", Mail_Authentication.UserName, Address)
                 IMAP_Client.Authenticate(Mail_Authentication)
 
@@ -215,7 +215,7 @@ Namespace Network.Mail
                 Wdbg(DebugLevel.I, "Authentication succeeded. Opening shell...")
                 StartShell(ShellType.MailShell)
             Catch ex As Exception
-                Write(DoTranslation("Error while connecting to {0}: {1}"), True, ColTypes.Error, Address, ex.Message)
+                Write(DoTranslation("Error while connecting to {0}: {1}"), True, color:=GetConsoleColor(ColTypes.Error), Address, ex.Message)
                 WStkTrc(ex)
                 IMAP_Client.Disconnect(True)
                 SMTP_Client.Disconnect(True)

@@ -84,7 +84,7 @@ Namespace Shell.ShellBase.Commands
                 'Check to see if a requested command is obsolete
                 If TargetCommands(Command).Obsolete Then
                     Wdbg(DebugLevel.I, "The command requested {0} is obsolete", Command)
-                    DecisiveWrite(ShellType, DebugDeviceSocket, DoTranslation("This command is obsolete and will be removed in a future release."), True, ColTypes.Neutral)
+                    DecisiveWrite(ShellType, DebugDeviceSocket, DoTranslation("This command is obsolete and will be removed in a future release."), True, GetConsoleColor(ColTypes.Neutral))
                 End If
 
                 'If there are enough arguments provided, execute. Otherwise, fail with not enough arguments.
@@ -95,7 +95,7 @@ Namespace Shell.ShellBase.Commands
                         CommandBase.Execute(StrArgs, FullArgs, Args, Switches)
                     Else
                         Wdbg(DebugLevel.W, "User hasn't provided enough arguments for {0}", Command)
-                        DecisiveWrite(ShellType, DebugDeviceSocket, DoTranslation("There was not enough arguments. See below for usage:"), True, ColTypes.Neutral)
+                        DecisiveWrite(ShellType, DebugDeviceSocket, DoTranslation("There was not enough arguments. See below for usage:"), True, GetConsoleColor(ColTypes.Neutral))
                         ShowHelp(Command, ShellType)
                     End If
                 Else
@@ -108,7 +108,7 @@ Namespace Shell.ShellBase.Commands
             Catch ex As Exception
                 KernelEventManager.RaiseCommandError(RequestedCommand, ex)
                 WStkTrc(ex)
-                DecisiveWrite(ShellType, DebugDeviceSocket, DoTranslation("Error trying to execute command") + " {2}." + NewLine + DoTranslation("Error {0}: {1}"), True, ColTypes.Error, ex.GetType.FullName, ex.Message, RequestedCommand)
+                DecisiveWrite(ShellType, DebugDeviceSocket, DoTranslation("Error trying to execute command") + " {2}." + NewLine + DoTranslation("Error {0}: {1}"), True, color:=GetConsoleColor(ColTypes.Error), ex.GetType.FullName, ex.Message, RequestedCommand)
             End Try
         End Sub
 

@@ -24,10 +24,10 @@ Namespace Network.HTTP.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             Try
                 Dim SiteUri As New Uri(StringArgs)
-                Write(DoTranslation("Setting site to") + " {0}...", True, ColTypes.Progress, SiteUri.ToString)
+                Write(DoTranslation("Setting site to") + " {0}...", True, color:=GetConsoleColor(ColTypes.Progress), SiteUri.ToString)
                 HTTPSite = SiteUri.ToString
             Catch ex As Exception
-                Write(DoTranslation("The site URI format is invalid."), True, ColTypes.Error)
+                Write(DoTranslation("The site URI format is invalid."), True, GetConsoleColor(ColTypes.Error))
             End Try
         End Sub
 

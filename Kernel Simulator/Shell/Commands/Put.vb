@@ -33,20 +33,20 @@ Namespace Shell.Commands
                 Try
                     If Not (URL.StartsWith("ftp://") Or URL.StartsWith("ftps://") Or URL.StartsWith("ftpes://")) Then
                         If Not URL.StartsWith(" ") Then
-                            Write(DoTranslation("Uploading {0} to {1}..."), True, ColTypes.Neutral, FileName, URL)
+                            Write(DoTranslation("Uploading {0} to {1}..."), True, color:=GetConsoleColor(ColTypes.Neutral), FileName, URL)
                             If UploadFile(FileName, URL) Then
-                                Write(DoTranslation("Upload has completed."), True, ColTypes.Neutral)
+                                Write(DoTranslation("Upload has completed."), True, GetConsoleColor(ColTypes.Neutral))
                             End If
                         Else
-                            Write(DoTranslation("Specify the address"), True, ColTypes.Error)
+                            Write(DoTranslation("Specify the address"), True, GetConsoleColor(ColTypes.Error))
                         End If
                     Else
-                        Write(DoTranslation("Please use ""ftp"" if you are going to upload files to the FTP server."), True, ColTypes.Error)
+                        Write(DoTranslation("Please use ""ftp"" if you are going to upload files to the FTP server."), True, GetConsoleColor(ColTypes.Error))
                     End If
                     Exit Sub
                 Catch ex As Exception
                     TransferFinished = False
-                    Write(DoTranslation("Upload failed in try {0}: {1}"), True, ColTypes.Error, RetryCount, ex.Message)
+                    Write(DoTranslation("Upload failed in try {0}: {1}"), True, color:=GetConsoleColor(ColTypes.Error), RetryCount, ex.Message)
                     RetryCount += 1
                     Wdbg(DebugLevel.I, "Try count: {0}", RetryCount)
                     WStkTrc(ex)

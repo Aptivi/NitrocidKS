@@ -31,11 +31,11 @@ Namespace Network.FTP.Commands
             If [Enum].IsDefined(GetType(FtpHashAlgorithm), Hash) Then
                 Dim HashResults As Dictionary(Of String, FtpHash) = FTPGetHashes(RemoteDirectory, [Enum].Parse(GetType(FtpHashAlgorithm), Hash))
                 For Each Filename As String In HashResults.Keys
-                    Write("- " + Filename + ": ", False, ColTypes.ListEntry)
-                    Write(HashResults(Filename).Value, True, ColTypes.ListValue)
+                    Write("- " + Filename + ": ", False, GetConsoleColor(ColTypes.ListEntry))
+                    Write(HashResults(Filename).Value, True, GetConsoleColor(ColTypes.ListValue))
                 Next
             Else
-                Write(DoTranslation("Invalid encryption algorithm."), True, ColTypes.Error)
+                Write(DoTranslation("Invalid encryption algorithm."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

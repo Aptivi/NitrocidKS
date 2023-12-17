@@ -34,7 +34,7 @@ Namespace Misc.Editors.HexEdit.Commands
                         ByteNumber = ListArgs(0)
                         HexEdit_DisplayHex(ByteNumber)
                     Else
-                        Write(DoTranslation("The byte number is not numeric."), True, ColTypes.Error)
+                        Write(DoTranslation("The byte number is not numeric."), True, GetConsoleColor(ColTypes.Error))
                         Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs(0))
                     End If
                 Else
@@ -47,7 +47,7 @@ Namespace Misc.Editors.HexEdit.Commands
                         ByteNumberStart.SwapIfSourceLarger(ByteNumberEnd)
                         HexEdit_DisplayHex(ByteNumberStart, ByteNumberEnd)
                     Else
-                        Write(DoTranslation("The byte number is not numeric."), True, ColTypes.Error)
+                        Write(DoTranslation("The byte number is not numeric."), True, GetConsoleColor(ColTypes.Error))
                         Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs(0))
                     End If
                 End If

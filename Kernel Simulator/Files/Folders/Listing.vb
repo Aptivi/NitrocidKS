@@ -152,7 +152,7 @@ Namespace Files.Folders
                 'Try to create a list
                 Try
                     enumeration = CreateList(folder, Sort)
-                    If enumeration.Count = 0 Then Write(DoTranslation("Folder is empty."), True, ColTypes.Warning)
+                    If enumeration.Count = 0 Then Write(DoTranslation("Folder is empty."), True, GetConsoleColor(ColTypes.Warning))
 
                     'Enumerate each entry
                     Dim TotalSize As Long = 0
@@ -166,26 +166,26 @@ Namespace Files.Folders
                                 PrintDirectoryInfo(Entry)
                             End If
                         Catch ex As UnauthorizedAccessException
-                            If Not SuppressUnauthorizedMessage Then Write("- " + DoTranslation("You are not authorized to get info for {0}."), True, ColTypes.Error, Entry.Name)
+                            If Not SuppressUnauthorizedMessage Then Write("- " + DoTranslation("You are not authorized to get info for {0}."), True, color:=GetConsoleColor(ColTypes.Error), Entry.Name)
                             WStkTrc(ex)
                         End Try
                     Next
 
                     'Show total size in list optionally
-                    If ShowTotalSizeInList Then Write(NewLine + DoTranslation("Total size in folder:") + " {0}", True, ColTypes.Neutral, TotalSize.FileSizeToString)
+                    If ShowTotalSizeInList Then Write(NewLine + DoTranslation("Total size in folder:") + " {0}", True, color:=GetConsoleColor(ColTypes.Neutral), TotalSize.FileSizeToString)
                 Catch ex As Exception
-                    Write(DoTranslation("Unknown error while listing in directory: {0}"), True, ColTypes.Error, ex.Message)
+                    Write(DoTranslation("Unknown error while listing in directory: {0}"), True, color:=GetConsoleColor(ColTypes.Error), ex.Message)
                     WStkTrc(ex)
                 End Try
             ElseIf FileExists(folder) Then
                 Try
                     PrintFileInfo(New FileInfo(folder), ShowFileDetails)
                 Catch ex As UnauthorizedAccessException
-                    If Not SuppressUnauthorizedMessage Then Write("- " + DoTranslation("You are not authorized to get info for {0}."), True, ColTypes.Error, folder)
+                    If Not SuppressUnauthorizedMessage Then Write("- " + DoTranslation("You are not authorized to get info for {0}."), True, color:=GetConsoleColor(ColTypes.Error), folder)
                     WStkTrc(ex)
                 End Try
             Else
-                Write(DoTranslation("Directory {0} not found"), True, ColTypes.Error, folder)
+                Write(DoTranslation("Directory {0} not found"), True, color:=GetConsoleColor(ColTypes.Error), folder)
                 Wdbg(DebugLevel.I, "IO.FolderExists = {0}", FolderExists(folder))
             End If
         End Sub

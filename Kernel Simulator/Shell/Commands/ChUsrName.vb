@@ -23,7 +23,7 @@ Namespace Shell.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             ChangeUsername(ListArgs(0), ListArgs(1))
-            Write(DoTranslation("Username has been changed to {0}!"), True, ColTypes.Neutral, ListArgs(1))
+            Write(DoTranslation("Username has been changed to {0}!"), True, color:=GetConsoleColor(ColTypes.Neutral), ListArgs(1))
             If ListArgs(0) = CurrentUser.Username Then
                 LogoutRequested = True
             End If

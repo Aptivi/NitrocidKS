@@ -26,26 +26,26 @@ Namespace Network.HTTP.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If HTTPConnected = True Then
                 'Print a message
-                Write(DoTranslation("Getting {0}..."), True, ColTypes.Progress, ListArgs(0))
+                Write(DoTranslation("Getting {0}..."), True, color:=GetConsoleColor(ColTypes.Progress), ListArgs(0))
 
                 Try
                     Dim ResponseTask As Task(Of String) = HttpGetString(ListArgs(0))
                     ResponseTask.Wait()
                     Dim Response As String = ResponseTask.Result
-                    Write(Response, True, ColTypes.Neutral)
+                    Write(Response, True, GetConsoleColor(ColTypes.Neutral))
                 Catch aex As AggregateException
-                    Write(aex.Message + ":", True, ColTypes.Error)
+                    Write(aex.Message + ":", True, GetConsoleColor(ColTypes.Error))
                     For Each InnerException As Exception In aex.InnerExceptions
-                        Write("- " + InnerException.Message, True, ColTypes.Error)
+                        Write("- " + InnerException.Message, True, GetConsoleColor(ColTypes.Error))
                         If InnerException.InnerException IsNot Nothing Then
-                            Write("- " + InnerException.InnerException.Message, True, ColTypes.Error)
+                            Write("- " + InnerException.InnerException.Message, True, GetConsoleColor(ColTypes.Error))
                         End If
                     Next
                 Catch ex As Exception
-                    Write(ex.Message, True, ColTypes.Error)
+                    Write(ex.Message, True, GetConsoleColor(ColTypes.Error))
                 End Try
             Else
-                Write(DoTranslation("You must connect to server before performing transmission."), True, ColTypes.Error)
+                Write(DoTranslation("You must connect to server before performing transmission."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

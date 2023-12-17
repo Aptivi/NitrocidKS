@@ -28,12 +28,12 @@ Namespace Misc.Editors.TextEdit.Commands
                 If IsStringNumeric(ListArgs(2)) Then
                     If CInt(ListArgs(2)) <= TextEdit_FileLines.Count Then
                         TextEdit_Replace(ListArgs(0), ListArgs(1), ListArgs(2))
-                        Write(DoTranslation("String replaced."), True, ColTypes.Success)
+                        Write(DoTranslation("String replaced."), True, GetConsoleColor(ColTypes.Success))
                     Else
-                        Write(DoTranslation("The specified line number may not be larger than the last file line number."), True, ColTypes.Error)
+                        Write(DoTranslation("The specified line number may not be larger than the last file line number."), True, GetConsoleColor(ColTypes.Error))
                     End If
                 Else
-                    Write(DoTranslation("Specified line number {0} is not a valid number."), True, ColTypes.Error, ListArgs(2))
+                    Write(DoTranslation("Specified line number {0} is not a valid number."), True, color:=GetConsoleColor(ColTypes.Error), ListArgs(2))
                     Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs(2))
                 End If
             ElseIf ListArgs?.Count > 3 Then
@@ -44,10 +44,10 @@ Namespace Misc.Editors.TextEdit.Commands
                         LineNumberStart.SwapIfSourceLarger(LineNumberEnd)
                         For LineNumber = LineNumberStart To LineNumberEnd
                             TextEdit_Replace(ListArgs(0), ListArgs(1), LineNumber)
-                            Write(DoTranslation("String replaced in line {0}."), True, ColTypes.Success, LineNumber)
+                            Write(DoTranslation("String replaced in line {0}."), True, color:=GetConsoleColor(ColTypes.Success), LineNumber)
                         Next
                     Else
-                        Write(DoTranslation("The specified line number may not be larger than the last file line number."), True, ColTypes.Error)
+                        Write(DoTranslation("The specified line number may not be larger than the last file line number."), True, GetConsoleColor(ColTypes.Error))
                     End If
                 End If
             End If

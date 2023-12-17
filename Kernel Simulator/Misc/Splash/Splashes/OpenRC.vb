@@ -57,7 +57,7 @@ Namespace Misc.Splash.Splashes
             Beginning = True
             Wdbg(DebugLevel.I, "Splash opening. Clearing console...")
             Console.Clear()
-            Write(NewLine + $"   {OpenRCIndicatorColor.VTSequenceForeground}OpenRC {OpenRCVersionColor.VTSequenceForeground}0.13.11 {NeutralTextColor.VTSequenceForeground}is starting up {OpenRCPlaceholderColor.VTSequenceForeground}Kernel Simulator {KernelVersion}" + NewLine, True, ColTypes.Neutral)
+            Write(NewLine + $"   {OpenRCIndicatorColor.VTSequenceForeground}OpenRC {OpenRCVersionColor.VTSequenceForeground}0.13.11 {NeutralTextColor.VTSequenceForeground}is starting up {OpenRCPlaceholderColor.VTSequenceForeground}Kernel Simulator {KernelVersion}" + NewLine, True, GetConsoleColor(ColTypes.Neutral))
         End Sub
 
         Public Sub Display() Implements ISplash.Display
@@ -85,7 +85,7 @@ Namespace Misc.Splash.Splashes
                 WriteWhere(" ok ", IndicatorLeft + 1, IndicatorTop, True, OpenRCIndicatorColor)
             End If
             Write($" * ", False, OpenRCIndicatorColor)
-            Write(ProgressReport, True, ColTypes.Neutral, Vars)
+            Write(ProgressReport, True, GetConsoleColor(ColTypes.Neutral), Vars)
             If Not Beginning Then
                 IndicatorLeft = Console.WindowWidth - 8
                 IndicatorTop = Console.CursorTop - 1

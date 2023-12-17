@@ -39,11 +39,11 @@ Namespace Shell.Commands
                             TargetMod = ListArgsOnly(1)
                             TargetModPath = NeutralizePath(TargetMod, GetKernelPath(KernelPathType.Mods))
                             If Not (TryParsePath(TargetModPath) AndAlso FileExists(TargetModPath)) Then
-                                Write(DoTranslation("Mod not found or file has invalid characters."), True, ColTypes.Error)
+                                Write(DoTranslation("Mod not found or file has invalid characters."), True, GetConsoleColor(ColTypes.Error))
                                 Exit Sub
                             End If
                         Else
-                            Write(DoTranslation("Mod file is not specified."), True, ColTypes.Error)
+                            Write(DoTranslation("Mod file is not specified."), True, GetConsoleColor(ColTypes.Error))
                             Exit Sub
                         End If
                     Case "list", "listparts"
@@ -55,7 +55,7 @@ Namespace Shell.Commands
                 'Now, the actual logic
                 Select Case CommandMode
                     Case "start"
-                        Write(DoTranslation("Starting mod") + " {0}...", True, ColTypes.Neutral, Path.GetFileNameWithoutExtension(TargetMod))
+                        Write(DoTranslation("Starting mod") + " {0}...", True, color:=GetConsoleColor(ColTypes.Neutral), Path.GetFileNameWithoutExtension(TargetMod))
                         StartMod(Path.GetFileName(TargetModPath))
                     Case "stop"
                         StopMod(Path.GetFileName(TargetModPath))
@@ -63,33 +63,33 @@ Namespace Shell.Commands
                         For Each script As String In Mods.Keys
                             If Mods(script).ModFilePath = TargetModPath Then
                                 WriteSeparator(script, True)
-                                Write("- " + DoTranslation("Mod name:") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModName, True, ColTypes.ListValue)
-                                Write("- " + DoTranslation("Mod file name:") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModFileName, True, ColTypes.ListValue)
-                                Write("- " + DoTranslation("Mod file path:") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModFilePath, True, ColTypes.ListValue)
-                                Write("- " + DoTranslation("Mod version:") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModVersion, True, ColTypes.ListValue)
-                                Write("- " + DoTranslation("Mod parts:") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModParts.Count.ToString, True, ColTypes.ListValue)
+                                Write("- " + DoTranslation("Mod name:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModName, True, GetConsoleColor(ColTypes.ListValue))
+                                Write("- " + DoTranslation("Mod file name:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModFileName, True, GetConsoleColor(ColTypes.ListValue))
+                                Write("- " + DoTranslation("Mod file path:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModFilePath, True, GetConsoleColor(ColTypes.ListValue))
+                                Write("- " + DoTranslation("Mod version:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModVersion, True, GetConsoleColor(ColTypes.ListValue))
+                                Write("- " + DoTranslation("Mod parts:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModParts.Count.ToString, True, GetConsoleColor(ColTypes.ListValue))
                                 For Each ModPart As String In Mods(script).ModParts.Keys
                                     WriteSeparator("-- {0}", False, ModPart)
-                                    Write("- " + DoTranslation("Part version:") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModParts(ModPart).PartScript.Version, True, ColTypes.ListValue)
-                                    Write("- " + DoTranslation("Part file name:") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModParts(ModPart).PartFileName, True, ColTypes.ListValue)
-                                    Write("- " + DoTranslation("Part file path:") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModParts(ModPart).PartFilePath, True, ColTypes.ListValue)
+                                    Write("- " + DoTranslation("Part version:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModParts(ModPart).PartScript.Version, True, GetConsoleColor(ColTypes.ListValue))
+                                    Write("- " + DoTranslation("Part file name:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModParts(ModPart).PartFileName, True, GetConsoleColor(ColTypes.ListValue))
+                                    Write("- " + DoTranslation("Part file path:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModParts(ModPart).PartFilePath, True, GetConsoleColor(ColTypes.ListValue))
                                     If Mods(script).ModParts(ModPart).PartScript.Commands IsNot Nothing Then
                                         For Each ModCommand As String In Mods(script).ModParts(ModPart).PartScript.Commands.Keys
                                             WriteSeparator("--- {0}", False, ModCommand)
-                                            Write("- " + DoTranslation("Command name:") + " ", False, ColTypes.ListEntry) : Write(ModCommand, True, ColTypes.ListValue)
-                                            Write("- " + DoTranslation("Command definition:") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).HelpDefinition, True, ColTypes.ListValue)
-                                            Write("- " + DoTranslation("Command type:") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).Type.ToString, True, ColTypes.ListValue)
-                                            Write("- " + DoTranslation("Strict command?") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).Strict.ToString, True, ColTypes.ListValue)
-                                            Write("- " + DoTranslation("Wrappable command?") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).Wrappable.ToString, True, ColTypes.ListValue)
-                                            Write("- " + DoTranslation("Setting shell variable?") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).SettingVariable.ToString, True, ColTypes.ListValue)
-                                            Write("- " + DoTranslation("Can not run in maintenance mode?") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).NoMaintenance.ToString, True, ColTypes.ListValue)
-                                            Write("- " + DoTranslation("Obsolete?") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).Obsolete.ToString, True, ColTypes.ListValue)
+                                            Write("- " + DoTranslation("Command name:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(ModCommand, True, GetConsoleColor(ColTypes.ListValue))
+                                            Write("- " + DoTranslation("Command definition:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).HelpDefinition, True, GetConsoleColor(ColTypes.ListValue))
+                                            Write("- " + DoTranslation("Command type:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).Type.ToString, True, GetConsoleColor(ColTypes.ListValue))
+                                            Write("- " + DoTranslation("Strict command?") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).Strict.ToString, True, GetConsoleColor(ColTypes.ListValue))
+                                            Write("- " + DoTranslation("Wrappable command?") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).Wrappable.ToString, True, GetConsoleColor(ColTypes.ListValue))
+                                            Write("- " + DoTranslation("Setting shell variable?") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).SettingVariable.ToString, True, GetConsoleColor(ColTypes.ListValue))
+                                            Write("- " + DoTranslation("Can not run in maintenance mode?") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).NoMaintenance.ToString, True, GetConsoleColor(ColTypes.ListValue))
+                                            Write("- " + DoTranslation("Obsolete?") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).Obsolete.ToString, True, GetConsoleColor(ColTypes.ListValue))
                                             If Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).CommandArgumentInfo IsNot Nothing Then
                                                 For Each Usage As String In Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).CommandArgumentInfo.HelpUsages
-                                                    Write("- " + DoTranslation("Command usage:") + " ", False, ColTypes.ListEntry) : Write(Usage, True, ColTypes.ListValue)
+                                                    Write("- " + DoTranslation("Command usage:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Usage, True, GetConsoleColor(ColTypes.ListValue))
                                                 Next
-                                                Write("- " + DoTranslation("Arguments required?") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).CommandArgumentInfo.ArgumentsRequired.ToString, True, ColTypes.ListValue)
-                                                Write("- " + DoTranslation("Minimum count of required arguments:") + " ", False, ColTypes.ListEntry) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).CommandArgumentInfo.MinimumArguments.ToString, True, ColTypes.ListValue)
+                                                Write("- " + DoTranslation("Arguments required?") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).CommandArgumentInfo.ArgumentsRequired.ToString, True, GetConsoleColor(ColTypes.ListValue))
+                                                Write("- " + DoTranslation("Minimum count of required arguments:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods(script).ModParts(ModPart).PartScript.Commands(ModCommand).CommandArgumentInfo.MinimumArguments.ToString, True, GetConsoleColor(ColTypes.ListValue))
                                             End If
                                         Next
                                     End If
@@ -105,20 +105,20 @@ Namespace Shell.Commands
                     Case "list"
                         For Each [Mod] As String In ListMods(ModListTerm).Keys
                             WriteSeparator([Mod], True)
-                            Write("- " + DoTranslation("Mod name:") + " ", False, ColTypes.ListEntry) : Write(Mods([Mod]).ModName, True, ColTypes.ListValue)
-                            Write("- " + DoTranslation("Mod file name:") + " ", False, ColTypes.ListEntry) : Write(Mods([Mod]).ModFileName, True, ColTypes.ListValue)
-                            Write("- " + DoTranslation("Mod file path:") + " ", False, ColTypes.ListEntry) : Write(Mods([Mod]).ModFilePath, True, ColTypes.ListValue)
-                            Write("- " + DoTranslation("Mod version:") + " ", False, ColTypes.ListEntry) : Write(Mods([Mod]).ModVersion, True, ColTypes.ListValue)
-                            Write("- " + DoTranslation("Mod parts:") + " ", False, ColTypes.ListEntry) : Write(Mods([Mod]).ModParts.Count.ToString, True, ColTypes.ListValue)
+                            Write("- " + DoTranslation("Mod name:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods([Mod]).ModName, True, GetConsoleColor(ColTypes.ListValue))
+                            Write("- " + DoTranslation("Mod file name:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods([Mod]).ModFileName, True, GetConsoleColor(ColTypes.ListValue))
+                            Write("- " + DoTranslation("Mod file path:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods([Mod]).ModFilePath, True, GetConsoleColor(ColTypes.ListValue))
+                            Write("- " + DoTranslation("Mod version:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods([Mod]).ModVersion, True, GetConsoleColor(ColTypes.ListValue))
+                            Write("- " + DoTranslation("Mod parts:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods([Mod]).ModParts.Count.ToString, True, GetConsoleColor(ColTypes.ListValue))
                         Next
                     Case "listparts"
                         Dim ModList As Dictionary(Of String, ModInfo) = ListMods(ModListTerm)
                         For Each [Mod] As String In ModList.Keys
                             For Each Part As String In ModList([Mod]).ModParts.Keys
                                 WriteSeparator($"{[Mod]} > {Part}", True)
-                                Write("- " + DoTranslation("Mod part name:") + " ", False, ColTypes.ListEntry) : Write(ModList([Mod]).ModParts(Part).PartName, True, ColTypes.ListValue)
-                                Write("- " + DoTranslation("Mod part file name:") + " ", False, ColTypes.ListEntry) : Write(Mods([Mod]).ModParts(Part).PartFileName, True, ColTypes.ListValue)
-                                Write("- " + DoTranslation("Mod part file path:") + " ", False, ColTypes.ListEntry) : Write(Mods([Mod]).ModParts(Part).PartFilePath, True, ColTypes.ListValue)
+                                Write("- " + DoTranslation("Mod part name:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(ModList([Mod]).ModParts(Part).PartName, True, GetConsoleColor(ColTypes.ListValue))
+                                Write("- " + DoTranslation("Mod part file name:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods([Mod]).ModParts(Part).PartFileName, True, GetConsoleColor(ColTypes.ListValue))
+                                Write("- " + DoTranslation("Mod part file path:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Mods([Mod]).ModParts(Part).PartFilePath, True, GetConsoleColor(ColTypes.ListValue))
                             Next
                         Next
                     Case "reloadall"
@@ -128,11 +128,11 @@ Namespace Shell.Commands
                     Case "startall"
                         StartMods()
                     Case Else
-                        Write(DoTranslation("Invalid command {0}. Check the usage below:"), True, ColTypes.Error, CommandMode)
+                        Write(DoTranslation("Invalid command {0}. Check the usage below:"), True, color:=GetConsoleColor(ColTypes.Error), CommandMode)
                         ShowHelp("modman")
                 End Select
             Else
-                Write(DoTranslation("Mod management is disabled in safe mode."), True, ColTypes.Error)
+                Write(DoTranslation("Mod management is disabled in safe mode."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

@@ -33,7 +33,7 @@ Namespace Misc.Editors.HexEdit.Commands
                         Dim ByteContent As Byte = Convert.ToByte(ListArgs(0), 16)
                         HexEdit_QueryByteAndDisplay(ByteContent, ListArgs(1))
                     Else
-                        Write(DoTranslation("The specified byte number may not be larger than the file size."), True, ColTypes.Error)
+                        Write(DoTranslation("The specified byte number may not be larger than the file size."), True, GetConsoleColor(ColTypes.Error))
                     End If
                 End If
             ElseIf ListArgs?.Count > 2 Then
@@ -45,7 +45,7 @@ Namespace Misc.Editors.HexEdit.Commands
                         ByteNumberStart.SwapIfSourceLarger(ByteNumberEnd)
                         HexEdit_QueryByteAndDisplay(ByteContent, ByteNumberStart, ByteNumberEnd)
                     Else
-                        Write(DoTranslation("The specified byte number may not be larger than the file size."), True, ColTypes.Error)
+                        Write(DoTranslation("The specified byte number may not be larger than the file size."), True, GetConsoleColor(ColTypes.Error))
                     End If
                 End If
             End If

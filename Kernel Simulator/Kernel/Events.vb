@@ -227,7 +227,7 @@ Namespace Kernel
         ''' <summary>
         ''' Makes the mod respond to the event of login error
         ''' </summary>
-        Public Sub RespondLoginError(Username As String, Reason As String) Handles Me.LoginError
+        Public Sub RespondLoginError(Username As String, Reason As LoginErrorReasons) Handles Me.LoginError
             For Each ModPart As ModInfo In Mods.Values
                 For Each PartInfo As PartInfo In ModPart.ModParts.Values
                     Try
@@ -1943,7 +1943,7 @@ Namespace Kernel
         ''' <summary>
         ''' Makes the mod respond to the event of theme setting problem
         ''' </summary>
-        Public Sub RespondThemeSetError(Theme As String, Reason As String) Handles Me.ThemeSetError
+        Public Sub RespondThemeSetError(Theme As String, Reason As ThemeSetErrorReasons) Handles Me.ThemeSetError
             For Each ModPart As ModInfo In Mods.Values
                 For Each PartInfo As PartInfo In ModPart.ModParts.Values
                     Try
@@ -1977,7 +1977,7 @@ Namespace Kernel
         ''' <summary>
         ''' Makes the mod respond to the event of console colors having problems being set
         ''' </summary>
-        Public Sub RespondColorSetError(Reason As String) Handles Me.ColorSetError
+        Public Sub RespondColorSetError(Reason As ColorSetErrorReasons) Handles Me.ColorSetError
             For Each ModPart As ModInfo In Mods.Values
                 For Each PartInfo As PartInfo In ModPart.ModParts.Values
                     Try

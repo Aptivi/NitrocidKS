@@ -30,9 +30,9 @@ Namespace Network.FTP.Commands
             'Check to see if hash is found
             If [Enum].IsDefined(GetType(FtpHashAlgorithm), Hash) Then
                 Dim HashResult As FtpHash = FTPGetHash(RemoteFile, [Enum].Parse(GetType(FtpHashAlgorithm), Hash))
-                Write(HashResult.Value, True, ColTypes.Neutral)
+                Write(HashResult.Value, True, GetConsoleColor(ColTypes.Neutral))
             Else
-                Write(DoTranslation("Invalid encryption algorithm."), True, ColTypes.Error)
+                Write(DoTranslation("Invalid encryption algorithm."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

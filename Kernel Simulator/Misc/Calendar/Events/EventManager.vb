@@ -91,8 +91,8 @@ Namespace Misc.Calendar.Events
         ''' </summary>
         Public Sub ListEvents()
             For Each EventInstance As EventInfo In CalendarEvents
-                Write("- {0}: ", False, ColTypes.ListEntry, EventInstance.EventDate)
-                Write(EventInstance.EventTitle, True, ColTypes.ListValue)
+                Write("- {0}: ", False, GetConsoleColor(ColTypes.ListEntry), EventInstance.EventDate)
+                Write(EventInstance.EventTitle, True, GetConsoleColor(ColTypes.ListValue))
             Next
         End Sub
 

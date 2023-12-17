@@ -25,8 +25,8 @@ Namespace Shell.Commands
             If ListSwitchesOnly.Contains("-list") Then
                 Write(DoTranslation("Available languages:"), True, ColTypes.ListTitle)
                 For Each Language As String In Languages.Languages.Keys
-                    Write("- {0}: ", False, ColTypes.ListEntry, Language)
-                    Write(Languages.Languages(Language).FullLanguageName, True, ColTypes.ListValue)
+                    Write("- {0}: ", False, color:=GetConsoleColor(ColTypes.ListEntry), Language)
+                    Write(Languages.Languages(Language).FullLanguageName, True, GetConsoleColor(ColTypes.ListValue))
                 Next
             Else
                 Dim AlwaysTransliterated, AlwaysTranslated, Force As Boolean
@@ -38,11 +38,11 @@ Namespace Shell.Commands
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -alwaystransliterated: ", False, ColTypes.ListEntry) : Write(DoTranslation("Always use the transliterated version"), True, ColTypes.ListValue)
-            Write("  -alwaystranslated: ", False, ColTypes.ListEntry) : Write(DoTranslation("Always use the translated version"), True, ColTypes.ListValue)
-            Write("  -force: ", False, ColTypes.ListEntry) : Write(DoTranslation("Force switching language"), True, ColTypes.ListValue)
-            Write("  -list: ", False, ColTypes.ListEntry) : Write(DoTranslation("Lists available languages"), True, ColTypes.ListValue)
+            Write(DoTranslation("This command has the below switches that change how it works:"), True, GetConsoleColor(ColTypes.Neutral))
+            Write("  -alwaystransliterated: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Always use the transliterated version"), True, GetConsoleColor(ColTypes.ListValue))
+            Write("  -alwaystranslated: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Always use the translated version"), True, GetConsoleColor(ColTypes.ListValue))
+            Write("  -force: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Force switching language"), True, GetConsoleColor(ColTypes.ListValue))
+            Write("  -list: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Lists available languages"), True, GetConsoleColor(ColTypes.ListValue))
         End Sub
 
     End Class

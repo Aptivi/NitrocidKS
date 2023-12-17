@@ -31,8 +31,8 @@ Namespace Shell.Commands
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -modapi: ", False, ColTypes.ListEntry) : Write(DoTranslation("Opens the mod API documentation for the structure of the source code in its most current form"), True, ColTypes.ListValue)
+            Write(DoTranslation("This command has the below switches that change how it works:"), True, GetConsoleColor(ColTypes.Neutral))
+            Write("  -modapi: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Opens the mod API documentation for the structure of the source code in its most current form"), True, GetConsoleColor(ColTypes.ListValue))
         End Sub
 
     End Class

@@ -36,6 +36,7 @@ using KS.Network.SSH;
 using KS.Shell;
 using MadMilkman.Ini;
 using ManagedWeatherMap.Core;
+using Terminaux.Colors;
 
 namespace KSConverter
 {
@@ -106,35 +107,35 @@ namespace KSConverter
                 {
                     // We use New Color() to parse entered color. This is to ensure that the kernel can use the correct VT sequence.
                     if (ConfigReader.Sections["Colors"].Keys.Contains("User Name Shell Color"))
-                        ColorTools.UserNameShellColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["User Name Shell Color"].Value)));
+                        KernelColorTools.UserNameShellColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["User Name Shell Color"].Value)));
                     if (ConfigReader.Sections["Colors"].Keys.Contains("Host Name Shell Color"))
-                        ColorTools.HostNameShellColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Host Name Shell Color"].Value)));
+                        KernelColorTools.HostNameShellColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Host Name Shell Color"].Value)));
                     if (ConfigReader.Sections["Colors"].Keys.Contains("Continuable Kernel Error Color"))
-                        ColorTools.ContKernelErrorColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Continuable Kernel Error Color"].Value)));
+                        KernelColorTools.ContKernelErrorColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Continuable Kernel Error Color"].Value)));
                     if (ConfigReader.Sections["Colors"].Keys.Contains("Uncontinuable Kernel Error Color"))
-                        ColorTools.UncontKernelErrorColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Uncontinuable Kernel Error Color"].Value)));
+                        KernelColorTools.UncontKernelErrorColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Uncontinuable Kernel Error Color"].Value)));
                     if (ConfigReader.Sections["Colors"].Keys.Contains("Text Color"))
-                        ColorTools.NeutralTextColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Text Color"].Value)));
+                        KernelColorTools.NeutralTextColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Text Color"].Value)));
                     if (ConfigReader.Sections["Colors"].Keys.Contains("License Color"))
-                        ColorTools.LicenseColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["License Color"].Value)));
+                        KernelColorTools.LicenseColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["License Color"].Value)));
                     if (ConfigReader.Sections["Colors"].Keys.Contains("Background Color"))
-                        ColorTools.BackgroundColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Background Color"].Value)));
+                        KernelColorTools.BackgroundColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Background Color"].Value)));
                     if (ConfigReader.Sections["Colors"].Keys.Contains("Input Color"))
-                        ColorTools.InputColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Input Color"].Value)));
+                        KernelColorTools.InputColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Input Color"].Value)));
                     if (ConfigReader.Sections["Colors"].Keys.Contains("List Entry Color"))
-                        ColorTools.ListEntryColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["List Entry Color"].Value)));
+                        KernelColorTools.ListEntryColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["List Entry Color"].Value)));
                     if (ConfigReader.Sections["Colors"].Keys.Contains("List Value Color"))
-                        ColorTools.ListValueColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["List Value Color"].Value)));
+                        KernelColorTools.ListValueColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["List Value Color"].Value)));
                     if (ConfigReader.Sections["Colors"].Keys.Contains("Kernel Stage Color"))
-                        ColorTools.StageColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Kernel Stage Color"].Value)));
+                        KernelColorTools.StageColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Kernel Stage Color"].Value)));
                     if (ConfigReader.Sections["Colors"].Keys.Contains("Error Text Color"))
-                        ColorTools.ErrorColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Error Text Color"].Value)));
+                        KernelColorTools.ErrorColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Error Text Color"].Value)));
                     if (ConfigReader.Sections["Colors"].Keys.Contains("Warning Text Color"))
-                        ColorTools.WarningColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Warning Text Color"].Value)));
+                        KernelColorTools.WarningColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Warning Text Color"].Value)));
                     if (ConfigReader.Sections["Colors"].Keys.Contains("Option Color"))
-                        ColorTools.OptionColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Option Color"].Value)));
+                        KernelColorTools.OptionColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Option Color"].Value)));
                     if (ConfigReader.Sections["Colors"].Keys.Contains("Banner Color"))
-                        ColorTools.BannerColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Banner Color"].Value)));
+                        KernelColorTools.BannerColor = new Color(Convert.ToInt32(Enum.Parse(typeof(ConsoleColors), ConfigReader.Sections["Colors"].Keys["Banner Color"].Value)));
                 }
 
                 // Login section
@@ -572,7 +573,7 @@ namespace KSConverter
             catch (Exception ex)
             {
                 Debug.WriteLine($"Error while converting config! {ex.Message}");
-                TextWriterColor.Write("  - Warning: Failed to completely convert config. Some of the configurations might not be fully migrated.", true, ColorTools.ColTypes.Warning);
+                TextWriterColor.Write("  - Warning: Failed to completely convert config. Some of the configurations might not be fully migrated.", true, KernelColorTools.ColTypes.Warning);
                 return false;
             }
         }

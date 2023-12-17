@@ -42,7 +42,7 @@ Namespace Arguments
 
             'Prompts for the arguments
             While Not AnswerArgs = "q"
-                Write(">> ", False, ColTypes.Input)
+                Write(">> ", False, GetConsoleColor(ColTypes.Input))
                 AnswerArgs = ReadLine()
 
                 'Add an argument to the entered arguments list
@@ -51,16 +51,16 @@ Namespace Arguments
                         If AvailableArgs.ContainsKey(AnswerArg.Split(" "c)(0)) Then
                             EnteredArguments.Add(AnswerArg)
                         ElseIf Not String.IsNullOrWhiteSpace(AnswerArg.Split(" "c)(0)) Then
-                            Write(DoTranslation("The requested argument {0} is not found."), True, ColTypes.Error, AnswerArg.Split(" "c)(0))
+                            Write(DoTranslation("The requested argument {0} is not found."), True, color:=GetConsoleColor(ColTypes.Error), AnswerArg.Split(" "c)(0))
                         End If
                     Next
                 Else
                     If InjMode Then
                         ArgsInjected = True
                         KernelEventManager.RaiseArgumentsInjected(EnteredArguments)
-                        Write(DoTranslation("Injected arguments will be scheduled to run at next reboot."), True, ColTypes.Neutral)
+                        Write(DoTranslation("Injected arguments will be scheduled to run at next reboot."), True, GetConsoleColor(ColTypes.Neutral))
                     ElseIf EnteredArguments.Count <> 0 Then
-                        Write(DoTranslation("Starting the kernel with:") + " {0}", True, ColTypes.Neutral, String.Join(", ", EnteredArguments))
+                        Write(DoTranslation("Starting the kernel with:") + " {0}", True, color:=GetConsoleColor(ColTypes.Neutral), String.Join(", ", EnteredArguments))
                         ParseArguments(EnteredArguments, ArgumentType.KernelArgs)
                     End If
                 End If

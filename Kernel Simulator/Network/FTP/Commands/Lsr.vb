@@ -35,13 +35,13 @@ Namespace Network.FTP.Commands
             End If
             Entries.Sort()
             For Each Entry As String In Entries
-                Write(Entry, True, ColTypes.ListEntry)
+                Write(Entry, True, GetConsoleColor(ColTypes.ListEntry))
             Next
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -showdetails: ", False, ColTypes.ListEntry) : Write(DoTranslation("Shows the file details in the list"), True, ColTypes.ListValue)
+            Write(DoTranslation("This command has the below switches that change how it works:"), True, GetConsoleColor(ColTypes.Neutral))
+            Write("  -showdetails: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Shows the file details in the list"), True, GetConsoleColor(ColTypes.ListValue))
         End Sub
 
     End Class

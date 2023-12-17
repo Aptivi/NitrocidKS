@@ -126,13 +126,13 @@ Namespace Kernel
                     If CheckingForConsoleSize Then
                         'Check for the minimum console window requirements (80x24)
                         Do While Console.WindowWidth < 80 Or Console.WindowHeight < 24
-                            Write(DoTranslation("Your console is too small to run properly:") + " {0}x{1}", True, ColTypes.Warning, Console.WindowWidth, Console.WindowHeight)
-                            Write(DoTranslation("To have a better experience, resize your console window while still being on this screen. Press any key to continue..."), True, ColTypes.Warning)
+                            Write(DoTranslation("Your console is too small to run properly:") + " {0}x{1}", True, color:=GetConsoleColor(ColTypes.Warning), Console.WindowWidth, Console.WindowHeight)
+                            Write(DoTranslation("To have a better experience, resize your console window while still being on this screen. Press any key to continue..."), True, GetConsoleColor(ColTypes.Warning))
                             Console.ReadKey(True)
                         Loop
                     Else
                         Write(DoTranslation("Looks like you're bypassing the console size detection. Things may not work properly on small screens.") + NewLine +
-                              DoTranslation("To have a better experience, resize your console window while still being on this screen. Press any key to continue..."), True, ColTypes.Warning)
+                              DoTranslation("To have a better experience, resize your console window while still being on this screen. Press any key to continue..."), True, GetConsoleColor(ColTypes.Warning))
                         Console.ReadKey(True)
                         CheckingForConsoleSize = True
                     End If
@@ -230,7 +230,7 @@ Namespace Kernel
                     Else
                         ReadMOTD(MessageType.MOTD)
                         ReadMOTD(MessageType.MAL)
-                        Write(DoTranslation("Enter the admin password for maintenance."), True, ColTypes.Neutral)
+                        Write(DoTranslation("Enter the admin password for maintenance."), True, GetConsoleColor(ColTypes.Neutral))
                         If Users.ContainsKey("root") Then
                             Wdbg(DebugLevel.I, "Root account found. Prompting for password...")
                             ShowPasswordPrompt("root")

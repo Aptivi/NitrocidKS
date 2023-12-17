@@ -42,9 +42,9 @@ Namespace Files.Print
                 Dim Contents As String() = ReadContents(FilePath)
                 For ContentIndex As Integer = 0 To Contents.Length - 1
                     If PrintLineNumbers Then
-                        Write("{0,4}: ", False, ColTypes.ListEntry, ContentIndex + 1)
+                        Write("{0,4}: ", False, GetConsoleColor(ColTypes.ListEntry), ContentIndex + 1)
                     End If
-                    Write(Contents(ContentIndex), True, ColTypes.Neutral)
+                    Write(Contents(ContentIndex), True, GetConsoleColor(ColTypes.Neutral))
                 Next
             Next
         End Sub

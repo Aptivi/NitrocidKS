@@ -37,7 +37,7 @@ Namespace Shell.Commands
             Catch ex As Exception
                 Wdbg(DebugLevel.E, "Failed to satisfy condition. See above for more information: {0}", ex.Message)
                 WStkTrc(ex)
-                Write(DoTranslation("Failed to satisfy condition. More info here:") + " {0}", True, ColTypes.Error, ex.Message)
+                Write(DoTranslation("Failed to satisfy condition. More info here:") + " {0}", True, color:=GetConsoleColor(ColTypes.Error), ex.Message)
             End Try
         End Sub
 

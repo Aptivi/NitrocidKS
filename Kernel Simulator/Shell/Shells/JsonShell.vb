@@ -38,7 +38,7 @@ Namespace Shell.Shells
             If ShellArgs.Length > 0 Then
                 FilePath = ShellArgs(0)
             Else
-                Write(DoTranslation("File not specified. Exiting shell..."), True, ColTypes.Error)
+                Write(DoTranslation("File not specified. Exiting shell..."), True, GetConsoleColor(ColTypes.Error))
                 Bail = True
             End If
 
@@ -47,7 +47,7 @@ Namespace Shell.Shells
                 If JsonShell_FileStream Is Nothing Then
                     Wdbg(DebugLevel.W, "File not open yet. Trying to open {0}...", FilePath)
                     If Not JsonShell_OpenJsonFile(FilePath) Then
-                        Write(DoTranslation("Failed to open file. Exiting shell..."), True, ColTypes.Error)
+                        Write(DoTranslation("Failed to open file. Exiting shell..."), True, GetConsoleColor(ColTypes.Error))
                         Exit While
                     End If
                     JsonShell_AutoSave.Start()

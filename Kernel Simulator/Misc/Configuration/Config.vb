@@ -2027,7 +2027,7 @@ Namespace Misc.Configuration
             Try
                 TryReadConfig()
             Catch cex As Exceptions.ConfigException
-                Write(cex.Message, True, ColTypes.Error)
+                Write(cex.Message, True, GetConsoleColor(ColTypes.Error))
                 WStkTrc(cex)
             End Try
         End Sub

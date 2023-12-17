@@ -31,7 +31,7 @@ Namespace Shell.Commands
                     StartRDebugThread()
                 End If
             Else
-                Write(DoTranslation("Debugging not enabled."), True, ColTypes.Error)
+                Write(DoTranslation("Debugging not enabled."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

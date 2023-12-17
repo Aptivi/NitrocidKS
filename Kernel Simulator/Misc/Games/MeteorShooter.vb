@@ -164,7 +164,7 @@ Namespace Misc.Games
                 'Game is over. Move to the Finally block.
             Catch ex As Exception
                 'Game is over with an unexpected error.
-                WriteWhere(DoTranslation("Unexpected error") + ": {0}", 0, Console.WindowHeight - 1, False, ConsoleColor.Red, ex.Message)
+                WriteWhere(DoTranslation("Unexpected error") + $": {ex.Message}", 0, Console.WindowHeight - 1, False, ConsoleColor.Red)
                 SleepNoBlock(3000, MeteorDrawThread)
                 Console.Clear()
             Finally

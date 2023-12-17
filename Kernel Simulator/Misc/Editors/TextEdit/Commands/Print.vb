@@ -36,13 +36,13 @@ Namespace Misc.Editors.TextEdit.Commands
                         If CInt(ListArgs(0)) <= TextEdit_FileLines.Count Then
                             Dim Line As String = TextEdit_FileLines(LineNumber - 1)
                             Wdbg(DebugLevel.I, "Line number: {0} ({1})", LineNumber, Line)
-                            Write("- {0}: ", False, ColTypes.ListEntry, LineNumber)
-                            Write(Line, True, ColTypes.ListValue)
+                            Write("- {0}: ", False, color:=GetConsoleColor(ColTypes.ListEntry), LineNumber)
+                            Write(Line, True, GetConsoleColor(ColTypes.ListValue))
                         Else
-                            Write(DoTranslation("The specified line number may not be larger than the last file line number."), True, ColTypes.Error)
+                            Write(DoTranslation("The specified line number may not be larger than the last file line number."), True, GetConsoleColor(ColTypes.Error))
                         End If
                     Else
-                        Write(DoTranslation("Specified line number {0} is not a valid number."), True, ColTypes.Error, ListArgs(0))
+                        Write(DoTranslation("Specified line number {0} is not a valid number."), True, color:=GetConsoleColor(ColTypes.Error), ListArgs(0))
                         Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs(0))
                     End If
                 Else
@@ -58,22 +58,22 @@ Namespace Misc.Editors.TextEdit.Commands
                             For LineNumber = LineNumberStart To LineNumberEnd
                                 Dim Line As String = TextEdit_FileLines(LineNumber - 1)
                                 Wdbg(DebugLevel.I, "Line number: {0} ({1})", LineNumber, Line)
-                                Write("- {0}: ", False, ColTypes.ListEntry, LineNumber)
-                                Write(Line, True, ColTypes.ListValue)
+                                Write("- {0}: ", False, color:=GetConsoleColor(ColTypes.ListEntry), LineNumber)
+                                Write(Line, True, GetConsoleColor(ColTypes.ListValue))
                             Next
                         Else
-                            Write(DoTranslation("The specified line number may not be larger than the last file line number."), True, ColTypes.Error)
+                            Write(DoTranslation("The specified line number may not be larger than the last file line number."), True, GetConsoleColor(ColTypes.Error))
                         End If
                     Else
-                        Write(DoTranslation("Specified line number {0} is not a valid number."), True, ColTypes.Error, ListArgs(0))
+                        Write(DoTranslation("Specified line number {0} is not a valid number."), True, color:=GetConsoleColor(ColTypes.Error), ListArgs(0))
                         Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs(0))
                     End If
                 End If
             Else
                 For Each Line As String In TextEdit_FileLines
                     Wdbg(DebugLevel.I, "Line number: {0} ({1})", LineNumber, Line)
-                    Write("- {0}: ", False, ColTypes.ListEntry, LineNumber)
-                    Write(Line, True, ColTypes.ListValue)
+                    Write("- {0}: ", False, color:=GetConsoleColor(ColTypes.ListEntry), LineNumber)
+                    Write(Line, True, GetConsoleColor(ColTypes.ListValue))
                     LineNumber += 1
                 Next
             End If

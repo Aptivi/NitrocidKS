@@ -37,11 +37,11 @@ Namespace Shell.Commands
                             TargetLanguage = ListArgsOnly(1)
                             TargetLanguagePath = NeutralizePath(TargetLanguage + ".json", GetKernelPath(KernelPathType.CustomLanguages))
                             If Not (TryParsePath(TargetLanguagePath) AndAlso FileExists(TargetLanguagePath)) And Not Languages.Languages.ContainsKey(TargetLanguage) Then
-                                Write(DoTranslation("Language not found or file has invalid characters."), True, ColTypes.Error)
+                                Write(DoTranslation("Language not found or file has invalid characters."), True, GetConsoleColor(ColTypes.Error))
                                 Exit Sub
                             End If
                         Else
-                            Write(DoTranslation("Language is not specified."), True, ColTypes.Error)
+                            Write(DoTranslation("Language is not specified."), True, GetConsoleColor(ColTypes.Error))
                             Exit Sub
                         End If
                     Case "list"
@@ -62,20 +62,20 @@ Namespace Shell.Commands
                     Case "list"
                         For Each Language As String In ListLanguages(LanguageListTerm).Keys
                             WriteSeparator(Language, True)
-                            Write("- " + DoTranslation("Language short name:") + " ", False, ColTypes.ListEntry) : Write(Languages.Languages(Language).ThreeLetterLanguageName, True, ColTypes.ListValue)
-                            Write("- " + DoTranslation("Language full name:") + " ", False, ColTypes.ListEntry) : Write(Languages.Languages(Language).FullLanguageName, True, ColTypes.ListValue)
-                            Write("- " + DoTranslation("Language transliterable:") + " ", False, ColTypes.ListEntry) : Write($"{Languages.Languages(Language).Transliterable}", True, ColTypes.ListValue)
-                            Write("- " + DoTranslation("Custom language:") + " ", False, ColTypes.ListEntry) : Write($"{Languages.Languages(Language).Custom}", True, ColTypes.ListValue)
+                            Write("- " + DoTranslation("Language short name:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Languages.Languages(Language).ThreeLetterLanguageName, True, GetConsoleColor(ColTypes.ListValue))
+                            Write("- " + DoTranslation("Language full name:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(Languages.Languages(Language).FullLanguageName, True, GetConsoleColor(ColTypes.ListValue))
+                            Write("- " + DoTranslation("Language transliterable:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write($"{Languages.Languages(Language).Transliterable}", True, GetConsoleColor(ColTypes.ListValue))
+                            Write("- " + DoTranslation("Custom language:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write($"{Languages.Languages(Language).Custom}", True, GetConsoleColor(ColTypes.ListValue))
                         Next
                     Case "reloadall"
                         UninstallCustomLanguages()
                         InstallCustomLanguages()
                     Case Else
-                        Write(DoTranslation("Invalid command {0}. Check the usage below:"), True, ColTypes.Error, CommandMode)
+                        Write(DoTranslation("Invalid command {0}. Check the usage below:"), True, color:=GetConsoleColor(ColTypes.Error), CommandMode)
                         ShowHelp("langman")
                 End Select
             Else
-                Write(DoTranslation("Language management is disabled in safe mode."), True, ColTypes.Error)
+                Write(DoTranslation("Language management is disabled in safe mode."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

@@ -86,20 +86,20 @@ Namespace Misc.Games
 
                 'Prompt user for character
                 Try
-                    Write(DoTranslation("Current character:") + " {0}", True, ColTypes.Neutral, SelectedChar)
-                    Write("> ", False, ColTypes.Input)
+                    Write(DoTranslation("Current character:") + " {0}", True, color:=GetConsoleColor(ColTypes.Neutral), SelectedChar)
+                    Write("> ", False, GetConsoleColor(ColTypes.Input))
                     WrittenChar = ReadKeyTimeout(False, TimeSpan.FromMilliseconds(SpeedTimeout))
                     Console.WriteLine()
 
                     'Check to see if the user has pressed the correct character
                     If WrittenChar.KeyChar = SelectedChar Then
-                        Write(DoTranslation("You've pressed the right character!"), True, ColTypes.Success)
+                        Write(DoTranslation("You've pressed the right character!"), True, GetConsoleColor(ColTypes.Success))
                     ElseIf Not WrittenChar.Key = ConsoleKey.Escape Or Not WrittenChar.Modifiers = ConsoleModifiers.Control And WrittenChar.Key = ConsoleKey.C Then
-                        Write(DoTranslation("You've pressed the wrong character."), True, ColTypes.Warning)
+                        Write(DoTranslation("You've pressed the wrong character."), True, GetConsoleColor(ColTypes.Warning))
                     End If
                 Catch ex As Exceptions.ConsoleReadTimeoutException
                     Console.WriteLine()
-                    Write(DoTranslation("Character not pressed on time."), True, ColTypes.Warning)
+                    Write(DoTranslation("Character not pressed on time."), True, GetConsoleColor(ColTypes.Warning))
                 End Try
             End While
         End Sub

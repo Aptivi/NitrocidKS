@@ -121,8 +121,8 @@ Namespace Misc.Splash.Splashes
         ''' <param name="ProgressReport">The progress text</param>
         Sub UpdateProgressReport(Progress As Integer, ProgressReport As String, ParamArray Vars() As Object)
             Dim RenderedText As String = ProgressReport.Truncate(Console.WindowWidth - ProgressReportWritePositionX - ProgressWritePositionX - 3)
-            WriteWhere("{0}%", ProgressWritePositionX, ProgressWritePositionY, True, ColTypes.Progress, Progress.ToString.PadLeft(3))
-            WriteWhere(RenderedText, ProgressReportWritePositionX, ProgressReportWritePositionY, False, ColTypes.Neutral, Vars)
+            WriteWhere("{0}%", ProgressWritePositionX, ProgressWritePositionY, True, color:=GetConsoleColor(ColTypes.Progress), Progress.ToString.PadLeft(3))
+            WriteWhere(RenderedText, ProgressReportWritePositionX, ProgressReportWritePositionY, False, GetConsoleColor(ColTypes.Neutral), Vars)
             ClearLineToRight()
         End Sub
 

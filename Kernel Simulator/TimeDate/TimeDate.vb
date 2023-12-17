@@ -54,10 +54,10 @@ Namespace TimeDate
                     If CornerTimeDate = True And Not InSaver Then
                         oldWid = Console.WindowWidth - TimeString.Length - 1
                         oldTop = Console.WindowTop
-                        WriteWhere(TimeString, Console.WindowWidth - TimeString.Length - 1, Console.WindowTop, True, ColTypes.Neutral)
+                        WriteWhere(TimeString, Console.WindowWidth - TimeString.Length - 1, Console.WindowTop, True, GetConsoleColor(ColTypes.Neutral))
                     End If
                     Thread.Sleep(1000)
-                    If oldWid <> 0 Then WriteWhere(" ".Repeat(TimeString.Length), oldWid, oldTop, True, ColTypes.Neutral)
+                    If oldWid <> 0 Then WriteWhere(" ".Repeat(TimeString.Length), oldWid, oldTop, True, GetConsoleColor(ColTypes.Neutral))
                 Loop
             Catch ex As ThreadInterruptedException
                 Wdbg(DebugLevel.W, "Aborting time/date change thread.")
@@ -82,10 +82,10 @@ Namespace TimeDate
         ''' Shows current time, date, and timezone.
         ''' </summary>
         Public Sub ShowCurrentTimes()
-            Write("datetime: ", False, ColTypes.ListEntry) : Write(DoTranslation("Current time is {0}"), True, ColTypes.ListValue, RenderTime)
-            Write("datetime: ", False, ColTypes.ListEntry) : Write(DoTranslation("Today is {0}"), True, ColTypes.ListValue, RenderDate)
-            Write("datetime: ", False, ColTypes.ListEntry) : Write(DoTranslation("Time and date in UTC: {0}"), True, ColTypes.ListValue, RenderUtc)
-            Write("datetime: ", False, ColTypes.ListEntry) : Write(DoTranslation("Time Zone:") + " {0} ({1})", True, ColTypes.ListValue, TimeZoneInfo.Local.StandardName, TimeZoneInfo.Local.GetUtcOffset(KernelDateTime).ToString(If(TimeZoneInfo.Local.GetUtcOffset(KernelDateTime) < TimeSpan.Zero, "\-", "\+") + "hh\:mm\:ss"))
+            Write("datetime: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Current time is {0}"), True, color:=GetConsoleColor(ColTypes.ListValue), RenderTime)
+            Write("datetime: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Today is {0}"), True, color:=GetConsoleColor(ColTypes.ListValue), RenderDate)
+            Write("datetime: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Time and date in UTC: {0}"), True, color:=GetConsoleColor(ColTypes.ListValue), RenderUtc)
+            Write("datetime: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Time Zone:") + " {0} ({1})", True, color:=GetConsoleColor(ColTypes.ListValue), TimeZoneInfo.Local.StandardName, TimeZoneInfo.Local.GetUtcOffset(KernelDateTime).ToString(If(TimeZoneInfo.Local.GetUtcOffset(KernelDateTime) < TimeSpan.Zero, "\-", "\+") + "hh\:mm\:ss"))
         End Sub
 
         ''' <summary>

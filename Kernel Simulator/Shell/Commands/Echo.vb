@@ -22,7 +22,7 @@ Namespace Shell.Commands
         Implements ICommand
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
-            Write(ProbePlaces(StringArgs), True, ColTypes.Neutral)
+            Write(ProbePlaces(StringArgs), True, GetConsoleColor(ColTypes.Neutral))
         End Sub
 
     End Class

@@ -30,7 +30,7 @@ Namespace Network.SFTP
         ''' <param name="address">An FTP server. You may specify it like "[address]" or "[address]:[port]"</param>
         Public Sub SFTPTryToConnect(address As String)
             If SFTPConnected = True Then
-                Write(DoTranslation("You should disconnect from server before connecting to another server"), True, ColTypes.Error)
+                Write(DoTranslation("You should disconnect from server before connecting to another server"), True, GetConsoleColor(ColTypes.Error))
             Else
                 Try
                     'Create an SFTP stream to connect to
@@ -44,9 +44,9 @@ Namespace Network.SFTP
 
                     'Prompt for username
                     If Not String.IsNullOrWhiteSpace(SFTPUserPromptStyle) Then
-                        Write(ProbePlaces(SFTPUserPromptStyle), False, ColTypes.Input, address)
+                        Write(ProbePlaces(SFTPUserPromptStyle), False, GetConsoleColor(ColTypes.Input), address)
                     Else
-                        Write(DoTranslation("Username for {0}: "), False, ColTypes.Input, address)
+                        Write(DoTranslation("Username for {0}: "), False, color:=GetConsoleColor(ColTypes.Input), address)
                     End If
                     SFTPUser = ReadLine()
                     If SFTPUser = "" Then
@@ -62,7 +62,7 @@ Namespace Network.SFTP
                 Catch ex As Exception
                     Wdbg(DebugLevel.W, "Error connecting to {0}: {1}", address, ex.Message)
                     WStkTrc(ex)
-                    Write(DoTranslation("Error when trying to connect to {0}: {1}"), True, ColTypes.Error, address, ex.Message)
+                    Write(DoTranslation("Error when trying to connect to {0}: {1}"), True, color:=GetConsoleColor(ColTypes.Error), address, ex.Message)
                 End Try
             End If
         End Sub
@@ -72,12 +72,12 @@ Namespace Network.SFTP
         ''' </summary>
         Private Sub ConnectSFTP()
             'Connect
-            Write(DoTranslation("Trying to connect to {0}..."), True, ColTypes.Neutral, ClientSFTP.ConnectionInfo.Host)
+            Write(DoTranslation("Trying to connect to {0}..."), True, color:=GetConsoleColor(ColTypes.Neutral), ClientSFTP.ConnectionInfo.Host)
             Wdbg(DebugLevel.I, "Connecting to {0} with {1}...", ClientSFTP.ConnectionInfo.Host)
             ClientSFTP.Connect()
 
             'Show that it's connected
-            Write(DoTranslation("Connected to {0}"), True, ColTypes.Neutral, ClientSFTP.ConnectionInfo.Host)
+            Write(DoTranslation("Connected to {0}"), True, color:=GetConsoleColor(ColTypes.Neutral), ClientSFTP.ConnectionInfo.Host)
             Wdbg(DebugLevel.I, "Connected.")
             SFTPConnected = True
 
@@ -112,7 +112,7 @@ Namespace Network.SFTP
                 Dim SpeedDialHeaders As String() = {"#", DoTranslation("Host Name"), DoTranslation("Host Port"), DoTranslation("Username")}
                 Dim SpeedDialData(SpeedDialLines.Count - 1, 3) As String
                 If Not SpeedDialLines.Count = 0 Then
-                    Write(DoTranslation("Select an address to connect to:"), True, ColTypes.Neutral)
+                    Write(DoTranslation("Select an address to connect to:"), True, GetConsoleColor(ColTypes.Neutral))
                     For i As Integer = 0 To SpeedDialLines.Count - 1
                         Dim SpeedDialAddress As String = SpeedDialLines.Keys(i)
                         Wdbg(DebugLevel.I, "Speed dial address: {0}", SpeedDialAddress)
@@ -124,7 +124,7 @@ Namespace Network.SFTP
                     WriteTable(SpeedDialHeaders, SpeedDialData, 2, ColTypes.Option)
                     Console.WriteLine()
                     While Answering
-                        Write(">> ", False, ColTypes.Input)
+                        Write(">> ", False, GetConsoleColor(ColTypes.Input))
                         Answer = ReadLine()
                         Wdbg(DebugLevel.I, "Response: {0}", Answer)
                         If IsStringNumeric(Answer) Then
@@ -143,20 +143,20 @@ Namespace Network.SFTP
                                 ConnectSFTP()
                             Else
                                 Wdbg(DebugLevel.I, "Response is out-of-bounds. Retrying...")
-                                Write(DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), True, ColTypes.Error, SpeedDialLines.Count)
+                                Write(DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), True, color:=GetConsoleColor(ColTypes.Error), SpeedDialLines.Count)
                             End If
                         Else
                             Wdbg(DebugLevel.W, "Response isn't numeric. IsStringNumeric(Answer) returned false.")
-                            Write(DoTranslation("The selection is not a number. Try again."), True, ColTypes.Error)
+                            Write(DoTranslation("The selection is not a number. Try again."), True, GetConsoleColor(ColTypes.Error))
                         End If
                     End While
                 Else
                     Wdbg(DebugLevel.E, "Speed dial is empty. Lines count is 0.")
-                    Write(DoTranslation("Speed dial is empty. Connect to a server to add an address to it."), True, ColTypes.Error)
+                    Write(DoTranslation("Speed dial is empty. Connect to a server to add an address to it."), True, GetConsoleColor(ColTypes.Error))
                 End If
             Else
                 Wdbg(DebugLevel.E, "File doesn't exist.")
-                Write(DoTranslation("Speed dial doesn't exist. Connect to a server to add an address to it."), True, ColTypes.Error)
+                Write(DoTranslation("Speed dial doesn't exist. Connect to a server to add an address to it."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

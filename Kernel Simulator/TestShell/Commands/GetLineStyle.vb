@@ -25,7 +25,7 @@ Namespace TestShell.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             Dim Style As FilesystemNewlineStyle = GetLineEndingFromFile(ListArgsOnly(0))
-            Write(DoTranslation("Newline style:") + " {0}", True, ColTypes.Neutral, Style.ToString)
+            Write(DoTranslation("Newline style:") + " {0}", True, color:=GetConsoleColor(ColTypes.Neutral), Style.ToString)
         End Sub
 
     End Class

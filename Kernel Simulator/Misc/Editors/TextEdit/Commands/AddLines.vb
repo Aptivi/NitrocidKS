@@ -26,9 +26,9 @@ Namespace Misc.Editors.TextEdit.Commands
             Dim FinalLine As String = ""
 
             'Keep prompting for lines until the user finishes
-            Write(DoTranslation("Enter the text that you want to append to the end of the file. When you're done, write ""EOF"" on its own line."), True, ColTypes.Neutral)
+            Write(DoTranslation("Enter the text that you want to append to the end of the file. When you're done, write ""EOF"" on its own line."), True, GetConsoleColor(ColTypes.Neutral))
             Do Until FinalLine = "EOF"
-                Write(">> ", False, ColTypes.Input)
+                Write(">> ", False, GetConsoleColor(ColTypes.Input))
                 FinalLine = ReadLine(False)
                 If Not FinalLine = "EOF" Then
                     FinalLines.Add(FinalLine)

@@ -368,163 +368,163 @@ Namespace ConsoleBase.Themes.Studio
         ''' </summary>
         Sub PreparePreview()
             Console.Clear()
-            Write(DoTranslation("Here's how your theme will look like:") + NewLine, True, ColTypes.Neutral)
+            Write(DoTranslation("Here's how your theme will look like:") + NewLine, True, GetConsoleColor(ColTypes.Neutral))
 
             'Print every possibility of color types
             'Input color
-            Write("*) " + DoTranslation("Input color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Input color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedInputColor)
 
             'License color
-            Write("*) " + DoTranslation("License color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("License color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedLicenseColor)
 
             'Continuable kernel error color
-            Write("*) " + DoTranslation("Continuable kernel error color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Continuable kernel error color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedContKernelErrorColor)
 
             'Uncontinuable kernel error color
-            Write("*) " + DoTranslation("Uncontinuable kernel error color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Uncontinuable kernel error color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedUncontKernelErrorColor)
 
             'Host name color
-            Write("*) " + DoTranslation("Host name color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Host name color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedHostNameShellColor)
 
             'User name color
-            Write("*) " + DoTranslation("User name color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("User name color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedUserNameShellColor)
 
             'Background color
-            Write("*) " + DoTranslation("Background color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Background color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedBackgroundColor)
 
             'Neutral text color
-            Write("*) " + DoTranslation("Neutral text color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Neutral text color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedNeutralTextColor)
 
             'List entry color
-            Write("*) " + DoTranslation("List entry color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("List entry color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedListEntryColor)
 
             'List value color
-            Write("*) " + DoTranslation("List value color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("List value color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedListValueColor)
 
             'Stage color
-            Write("*) " + DoTranslation("Stage color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Stage color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedStageColor)
 
             'Error color
-            Write("*) " + DoTranslation("Error color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Error color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedErrorColor)
 
             'Warning color
-            Write("*) " + DoTranslation("Warning color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Warning color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedWarningColor)
 
             'Option color
-            Write("*) " + DoTranslation("Option color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Option color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, _SelectedOptionColor)
 
             'Banner color
-            Write("*) " + DoTranslation("Banner color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Banner color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedBannerColor)
 
             'Notification title color
-            Write("*) " + DoTranslation("Notification title color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Notification title color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedNotificationTitleColor)
 
             'Notification description color
-            Write("*) " + DoTranslation("Notification description color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Notification description color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedNotificationDescriptionColor)
 
             'Notification progress color
-            Write("*) " + DoTranslation("Notification progress color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Notification progress color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedNotificationProgressColor)
 
             'Notification failure color
-            Write("*) " + DoTranslation("Notification failure color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Notification failure color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedNotificationFailureColor)
 
             'Question color
-            Write("*) " + DoTranslation("Question color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Question color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedQuestionColor)
 
             'Success color
-            Write("*) " + DoTranslation("Success color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Success color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedSuccessColor)
 
             'User dollar color
-            Write("*) " + DoTranslation("User dollar color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("User dollar color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedUserDollarColor)
 
             'Tip color
-            Write("*) " + DoTranslation("Tip color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Tip color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedTipColor)
 
             'Separator text color
-            Write("*) " + DoTranslation("Separator text color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Separator text color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedSeparatorTextColor)
 
             'Separator color
-            Write("*) " + DoTranslation("Separator color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Separator color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedSeparatorColor)
 
             'List title color
-            Write("*) " + DoTranslation("List title color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("List title color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedListTitleColor)
 
             'Development warning color
-            Write("*) " + DoTranslation("Development warning color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Development warning color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedDevelopmentWarningColor)
 
             'Stage time color
-            Write("*) " + DoTranslation("Stage time color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Stage time color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedStageTimeColor)
 
             'Progress color
-            Write("*) " + DoTranslation("Progress color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Progress color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedProgressColor)
 
             'Back option color
-            Write("*) " + DoTranslation("Back option color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Back option color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedBackOptionColor)
 
             'Low priority border color
-            Write("*) " + DoTranslation("Low priority border color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Low priority border color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedLowPriorityBorderColor)
 
             'Medium priority border color
-            Write("*) " + DoTranslation("Medium priority border color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Medium priority border color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedMediumPriorityBorderColor)
 
             'High priority border color
-            Write("*) " + DoTranslation("High priority border color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("High priority border color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedHighPriorityBorderColor)
 
             'Table separator color
-            Write("*) " + DoTranslation("Table separator color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Table separator color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedTableSeparatorColor)
 
             'Table header color
-            Write("*) " + DoTranslation("Table header color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Table header color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedTableHeaderColor)
 
             'Table value color
-            Write("*) " + DoTranslation("Table value color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Table value color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedTableValueColor)
 
             'Selected option color
-            Write("*) " + DoTranslation("Selected option color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Selected option color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedSelectedOptionColor)
 
             'Selected option color
-            Write("*) " + DoTranslation("Alternative option color") + ": ", False, ColTypes.Option)
+            Write("*) " + DoTranslation("Alternative option color") + ": ", False, GetConsoleColor(ColTypes.Option))
             Write("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", True, SelectedAlternativeOptionColor)
 
             'Pause until a key is pressed
-            Write(NewLine + DoTranslation("Press any key to go back."), True, ColTypes.Neutral)
+            Write(NewLine + DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Neutral))
             Console.ReadKey()
         End Sub
 

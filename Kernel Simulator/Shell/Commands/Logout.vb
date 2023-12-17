@@ -25,7 +25,7 @@ Namespace Shell.Commands
             If ShellStack.Count = 1 Then
                 LogoutRequested = True
             Else
-                Write(DoTranslation("Cannot log out from the subshell."), True, ColTypes.Error)
+                Write(DoTranslation("Cannot log out from the subshell."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

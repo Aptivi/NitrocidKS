@@ -55,7 +55,7 @@ Namespace Misc.Writers.FancyWriters
             'Write the closing minus sign.
             Dim OldTop As Integer = Console.CursorTop
             RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-            If Margin > 0 Then Write(" ".Repeat(Margin), False, ColTypes.Neutral)
+            If Margin > 0 Then Write(" ".Repeat(Margin), False, GetConsoleColor(ColTypes.Neutral))
             Write("-".Repeat(RepeatTimes), True, ColTypes.TableSeparator)
 
             'Fix CursorTop value on Unix systems.
@@ -98,7 +98,7 @@ Namespace Misc.Writers.FancyWriters
                     'Write the closing minus sign.
                     OldTop = Console.CursorTop
                     RepeatTimes = Console.WindowWidth - Console.CursorLeft - (Margin * 2)
-                    If Margin > 0 Then Write(" ".Repeat(Margin), False, ColTypes.Neutral)
+                    If Margin > 0 Then Write(" ".Repeat(Margin), False, GetConsoleColor(ColTypes.Neutral))
                     Write("-".Repeat(RepeatTimes), True, ColTypes.TableSeparator)
 
                     'Fix CursorTop value on Unix systems.
@@ -241,7 +241,7 @@ Namespace Misc.Writers.FancyWriters
                 For RowValueIndex As Integer = 0 To Rows.GetLength(1) - 1
                     Dim ColoredCell As Boolean
                     Dim CellColor As Color = NeutralTextColor
-                    Dim CellBackgroundColor As Color = ColorTools.BackgroundColor
+                    Dim CellBackgroundColor As Color = KernelColorTools.BackgroundColor
                     Dim RowValue As String = Rows(RowIndex, RowValueIndex)
                     Dim ColumnPosition As Integer = ColumnPositions(RowValueIndex)
                     If RowValue Is Nothing Then RowValue = ""
@@ -593,7 +593,7 @@ Namespace Misc.Writers.FancyWriters
                 For RowValueIndex As Integer = 0 To Rows.GetLength(1) - 1
                     Dim ColoredCell As Boolean
                     Dim CellColor As Color = NeutralTextColor
-                    Dim CellBackgroundColor As Color = ColorTools.BackgroundColor
+                    Dim CellBackgroundColor As Color = KernelColorTools.BackgroundColor
                     Dim RowValue As String = Rows(RowIndex, RowValueIndex)
                     Dim ColumnPosition As Integer = ColumnPositions(RowValueIndex)
                     If RowValue Is Nothing Then RowValue = ""

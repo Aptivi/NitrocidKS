@@ -31,17 +31,17 @@ Namespace Shell.Commands
             Dim QuantityInfos As QuantityInfo() = Quantity.Infos.Where(Function(x) x.Name = UnitType).ToArray()
             Dim TargetUnitInstance As [Enum] = UnitsNetSetup.Default.UnitParser.Parse(TargetUnit, QuantityInfos(0).UnitType)
             Dim ConvertedUnit As IQuantity = Quantity.Parse(QuantityInfos(0).ValueType, $"{QuantityNum} {SourceUnit}").ToUnit(TargetUnitInstance)
-            Write("- {0} => {1}: ", False, ColTypes.ListEntry, SourceUnit, TargetUnit)
-            Write(ConvertedUnit.ToString(CurrentCult.NumberFormat), True, ColTypes.ListValue)
+            Write("- {0} => {1}: ", False, color:=GetConsoleColor(ColTypes.ListEntry), SourceUnit, TargetUnit)
+            Write(ConvertedUnit.ToString(CurrentCult.NumberFormat), True, GetConsoleColor(ColTypes.ListValue))
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("Available unit types and their units:"), True, ColTypes.Neutral)
+            Write(DoTranslation("Available unit types and their units:"), True, GetConsoleColor(ColTypes.Neutral))
             For Each QuantityInfo As QuantityInfo In Quantity.Infos
-                Write("- {0}:", True, ColTypes.ListEntry, QuantityInfo.Name)
+                Write("- {0}:", True, color:=GetConsoleColor(ColTypes.ListEntry), QuantityInfo.Name)
                 For Each UnitValues As [Enum] In QuantityInfo.UnitInfos().Select(Function(x) x.Value)
-                    Write("  - {0}: ", False, ColTypes.ListEntry, String.Join(", ", UnitsNetSetup.Default.UnitAbbreviations.GetDefaultAbbreviation(UnitValues.GetType, Convert.ToInt32(UnitValues))))
-                    Write(UnitValues.ToString(), True, ColTypes.ListValue)
+                    Write("  - {0}: ", False, color:=GetConsoleColor(ColTypes.ListEntry), String.Join(", ", UnitsNetSetup.Default.UnitAbbreviations.GetDefaultAbbreviation(UnitValues.GetType, Convert.ToInt32(UnitValues))))
+                    Write(UnitValues.ToString(), True, GetConsoleColor(ColTypes.ListValue))
                 Next
             Next
         End Sub

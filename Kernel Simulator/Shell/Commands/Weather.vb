@@ -34,8 +34,8 @@ Namespace Shell.Commands
                 If ListArgsOnly.Length > 1 Then
                     APIKey = ListArgsOnly(1)
                 ElseIf String.IsNullOrEmpty(APIKey) Then
-                    Write(DoTranslation("You can get your own API key at https://home.openweathermap.org/api_keys."), True, ColTypes.Neutral)
-                    Write(DoTranslation("Enter your API key:") + " ", False, ColTypes.Input)
+                    Write(DoTranslation("You can get your own API key at https://home.openweathermap.org/api_keys."), True, GetConsoleColor(ColTypes.Neutral))
+                    Write(DoTranslation("Enter your API key:") + " ", False, GetConsoleColor(ColTypes.Input))
                     APIKey = ReadLineNoInput()
                     Forecast.ApiKey = APIKey
                 End If
@@ -44,9 +44,9 @@ Namespace Shell.Commands
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("You can always consult http://bulk.openweathermap.org/sample/city.list.json.gz for the list of cities with their IDs.") + " " + DoTranslation("Or, pass ""listcities"" to this command."), True, ColTypes.Neutral)
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -list: ", False, ColTypes.ListEntry) : Write(DoTranslation("Shows all the available cities"), True, ColTypes.ListValue)
+            Write(DoTranslation("You can always consult http://bulk.openweathermap.org/sample/city.list.json.gz for the list of cities with their IDs.") + " " + DoTranslation("Or, pass ""listcities"" to this command."), True, GetConsoleColor(ColTypes.Neutral))
+            Write(DoTranslation("This command has the below switches that change how it works:"), True, GetConsoleColor(ColTypes.Neutral))
+            Write("  -list: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Shows all the available cities"), True, GetConsoleColor(ColTypes.ListValue))
         End Sub
 
     End Class

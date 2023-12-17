@@ -83,7 +83,7 @@ Namespace Misc.Writers.FancyWriters
                 WriteWhere(ProgressUpperLeftCornerChar + ProgressUpperFrameChar.Repeat(Console.WindowWidth - 10) + ProgressUpperRightCornerChar, Left, Top, True, FrameColor)
                 WriteWhere(ProgressLeftFrameChar + " ".Repeat(Console.WindowWidth - 10) + ProgressRightFrameChar, Left, Top + 1, True, FrameColor)
                 WriteWhere(ProgressLowerLeftCornerChar + ProgressLowerFrameChar.Repeat(Console.WindowWidth - 10) + ProgressLowerRightCornerChar, Left, Top + 2, True, FrameColor)
-                WriteWhere(" ".Repeat(PercentRepeat(Progress, 100, 10)), Left + 1, Top + 1, True, ColTypes.Neutral, ProgressColor)
+                WriteWhere(" ".Repeat(PercentRepeat(Progress, 100, 10)), Left + 1, Top + 1, True, GetConsoleColor(ColTypes.Neutral), ProgressColor)
             Catch ex As Exception When Not ex.GetType.Name = "ThreadInterruptedException"
                 WStkTrc(ex)
                 KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)

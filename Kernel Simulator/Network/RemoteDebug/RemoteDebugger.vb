@@ -149,7 +149,7 @@ Namespace Network.RemoteDebug
                         Dim RemoteDebugError As New Notification(DoTranslation("Remote debugger connection error"), ex.Message, NotifPriority.Medium, NotifType.Normal)
                         NotifySend(RemoteDebugError)
                     Else
-                        Write(DoTranslation("Remote debugger connection error") + ": {0}", True, ColTypes.Error, ex.Message)
+                        Write(DoTranslation("Remote debugger connection error") + ": {0}", True, color:=GetConsoleColor(ColTypes.Error), ex.Message)
                     End If
                     WStkTrc(ex)
                 End Try

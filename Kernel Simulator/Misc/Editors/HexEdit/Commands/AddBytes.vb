@@ -26,16 +26,16 @@ Namespace Misc.Editors.HexEdit.Commands
             Dim FinalByte As String = ""
 
             'Keep prompting for bytes until the user finishes
-            Write(DoTranslation("Enter a byte on its own line that you want to append to the end of the file. When you're done, write ""EOF"" on its own line."), True, ColTypes.Neutral)
+            Write(DoTranslation("Enter a byte on its own line that you want to append to the end of the file. When you're done, write ""EOF"" on its own line."), True, GetConsoleColor(ColTypes.Neutral))
             Do Until FinalByte = "EOF"
-                Write(">> ", False, ColTypes.Input)
+                Write(">> ", False, GetConsoleColor(ColTypes.Input))
                 FinalByte = ReadLine(False)
                 If Not FinalByte = "EOF" Then
                     Dim ByteContent As Byte
                     If Byte.TryParse(FinalByte, Globalization.NumberStyles.HexNumber, Nothing, ByteContent) Then
                         FinalBytes.Add(ByteContent)
                     Else
-                        Write(DoTranslation("Not a valid byte."), True, ColTypes.Error)
+                        Write(DoTranslation("Not a valid byte."), True, GetConsoleColor(ColTypes.Error))
                     End If
                 End If
             Loop

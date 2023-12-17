@@ -41,10 +41,10 @@ Namespace Files.Print
                 'Print information
                 If (DirectoryInfo.Attributes = FileAttributes.Hidden And HiddenFiles) Or Not DirectoryInfo.Attributes.HasFlag(FileAttributes.Hidden) Then
                     If (IsOnWindows() And (Not DirectoryInfo.Name.StartsWith(".") Or (DirectoryInfo.Name.StartsWith(".") And HiddenFiles))) Or IsOnUnix() Then
-                        Write("- " + DirectoryInfo.Name + "/", False, ColTypes.ListEntry)
+                        Write("- " + DirectoryInfo.Name + "/", False, GetConsoleColor(ColTypes.ListEntry))
                         If ShowDirectoryDetails Then
-                            Write(": ", False, ColTypes.ListEntry)
-                            Write(DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), False, ColTypes.ListValue,
+                            Write(": ", False, GetConsoleColor(ColTypes.ListEntry))
+                            Write(DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), False, color:=GetConsoleColor(ColTypes.ListValue),
                           TotalSize.FileSizeToString, DirectoryInfo.CreationTime.ToShortDateString, DirectoryInfo.CreationTime.ToShortTimeString,
                                                       DirectoryInfo.LastWriteTime.ToShortDateString, DirectoryInfo.LastWriteTime.ToShortTimeString)
                         End If
@@ -52,7 +52,7 @@ Namespace Files.Print
                     End If
                 End If
             Else
-                Write(DoTranslation("Directory {0} not found"), True, ColTypes.Error, DirectoryInfo.FullName)
+                Write(DoTranslation("Directory {0} not found"), True, color:=GetConsoleColor(ColTypes.Error), DirectoryInfo.FullName)
                 Wdbg(DebugLevel.I, "IO.FolderExists = {0}", FolderExists(DirectoryInfo.FullName))
             End If
         End Sub

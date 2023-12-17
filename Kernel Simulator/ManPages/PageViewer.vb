@@ -43,9 +43,9 @@ Namespace ManPages
                 Wdbg(DebugLevel.I, "Todo count for ""{0}"": {1}", ManualTitle, Pages(ManualTitle).Todos.Count.ToString)
                 If Pages(ManualTitle).Todos.Count <> 0 Then
                     Wdbg(DebugLevel.I, "Todos are found in manpage.")
-                    Write(DoTranslation("This manual page needs work for:"), True, ColTypes.Warning)
+                    Write(DoTranslation("This manual page needs work for:"), True, GetConsoleColor(ColTypes.Warning))
                     WriteList(Pages(ManualTitle).Todos, True)
-                    Write(NewLine + DoTranslation("Press any key to read the manual page..."), False, ColTypes.Warning)
+                    Write(NewLine + DoTranslation("Press any key to read the manual page..."), False, GetConsoleColor(ColTypes.Warning))
                     Console.ReadKey()
                 End If
 
@@ -113,7 +113,7 @@ Namespace ManPages
                 For Each line As String In IncompleteSentences
                     'Write the line
                     Dim OldTop As Integer = Console.CursorTop + 1
-                    Write(line, True, ColTypes.Neutral)
+                    Write(line, True, GetConsoleColor(ColTypes.Neutral))
                     If OldTop <> Console.CursorTop Then Console.CursorTop = OldTop
 
                     'Check to see if we're at the end
@@ -141,7 +141,7 @@ Namespace ManPages
                 Wdbg(DebugLevel.I, "Exiting...")
                 Console.Clear()
             Else
-                Write(DoTranslation("Manual page {0} not found."), True, ColTypes.Neutral, ManualTitle)
+                Write(DoTranslation("Manual page {0} not found."), True, color:=GetConsoleColor(ColTypes.Neutral), ManualTitle)
             End If
         End Sub
 

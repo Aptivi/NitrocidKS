@@ -105,7 +105,7 @@ Namespace Shell.ShellBase.Commands
                 If HelpUsages.Length <> 0 Then
                     'Print the usage information holder
                     Dim Indent As Boolean
-                    DecisiveWrite(CommandType, DebugDeviceSocket, DoTranslation("Usage:"), False, ColTypes.ListEntry)
+                    DecisiveWrite(CommandType, DebugDeviceSocket, DoTranslation("Usage:"), False, GetConsoleColor(ColTypes.ListEntry))
 
                     'If remote debug, set the command to be prepended by the slash
                     If CommandType = ShellType.RemoteDebugShell Then FinalCommand = $"/{FinalCommand}"
@@ -113,15 +113,15 @@ Namespace Shell.ShellBase.Commands
                     'Enumerate through the available help usages
                     For Each HelpUsage As String In HelpUsages
                         'Indent, if necessary
-                        If Indent Then DecisiveWrite(CommandType, DebugDeviceSocket, " ".Repeat(UsageLength), False, ColTypes.ListEntry)
-                        DecisiveWrite(CommandType, DebugDeviceSocket, $" {FinalCommand} {HelpUsage}", True, ColTypes.ListEntry)
+                        If Indent Then DecisiveWrite(CommandType, DebugDeviceSocket, " ".Repeat(UsageLength), False, GetConsoleColor(ColTypes.ListEntry))
+                        DecisiveWrite(CommandType, DebugDeviceSocket, $" {FinalCommand} {HelpUsage}", True, GetConsoleColor(ColTypes.ListEntry))
                         Indent = True
                     Next
                 End If
 
                 'Write the description now
                 If String.IsNullOrEmpty(HelpDefinition) Then HelpDefinition = DoTranslation("Command defined by ") + command
-                DecisiveWrite(CommandType, DebugDeviceSocket, DoTranslation("Description:") + $" {HelpDefinition}", True, ColTypes.ListValue)
+                DecisiveWrite(CommandType, DebugDeviceSocket, DoTranslation("Description:") + $" {HelpDefinition}", True, GetConsoleColor(ColTypes.ListValue))
 
                 'Extra help action for some commands
                 FinalCommandList(FinalCommand).CommandBase?.HelpHelper()
@@ -132,29 +132,29 @@ Namespace Shell.ShellBase.Commands
                     DecisiveWrite(CommandType, DebugDeviceSocket, DoTranslation("General commands:") + If(ShowCommandsCount And ShowShellCommandsCount, " [{0}]", ""), True, ColTypes.ListTitle, CommandList.Count)
 
                     'Check the command list count and print not implemented. This is an extremely rare situation.
-                    If CommandList.Count = 0 Then DecisiveWrite(CommandType, DebugDeviceSocket, "- " + DoTranslation("Shell commands not implemented!!!"), True, ColTypes.Warning)
+                    If CommandList.Count = 0 Then DecisiveWrite(CommandType, DebugDeviceSocket, "- " + DoTranslation("Shell commands not implemented!!!"), True, GetConsoleColor(ColTypes.Warning))
                     For Each cmd As String In CommandList.Keys
                         If ((Not CommandList(cmd).Strict) Or (CommandList(cmd).Strict And HasPermission(CurrentUser?.Username, PermissionType.Administrator))) And
                             (Maintenance And Not CommandList(cmd).NoMaintenance Or Not Maintenance) Then
                             DecisiveWrite(CommandType, DebugDeviceSocket, "- {0}: ", False, If(UnifiedCommandDict.ContainsKey(cmd), ColTypes.Success, ColTypes.ListEntry), cmd)
-                            DecisiveWrite(CommandType, DebugDeviceSocket, "{0}", True, ColTypes.ListValue, CommandList(cmd).GetTranslatedHelpEntry)
+                            DecisiveWrite(CommandType, DebugDeviceSocket, "{0}", True, GetConsoleColor(ColTypes.ListValue), CommandList(cmd).GetTranslatedHelpEntry)
                         End If
                     Next
 
                     'The mod commands
                     DecisiveWrite(CommandType, DebugDeviceSocket, NewLine + DoTranslation("Mod commands:") + If(ShowCommandsCount And ShowModCommandsCount, " [{0}]", ""), True, ColTypes.ListTitle, ModCommandList.Count)
-                    If ModCommandList.Count = 0 Then DecisiveWrite(CommandType, DebugDeviceSocket, "- " + DoTranslation("No mod commands."), True, ColTypes.Warning)
+                    If ModCommandList.Count = 0 Then DecisiveWrite(CommandType, DebugDeviceSocket, "- " + DoTranslation("No mod commands."), True, GetConsoleColor(ColTypes.Warning))
                     For Each cmd As String In ModCommandList.Keys
-                        DecisiveWrite(CommandType, DebugDeviceSocket, "- {0}: ", False, ColTypes.ListEntry, cmd)
-                        DecisiveWrite(CommandType, DebugDeviceSocket, "{0}", True, ColTypes.ListValue, ModCommandList(cmd).HelpDefinition)
+                        DecisiveWrite(CommandType, DebugDeviceSocket, "- {0}: ", False, GetConsoleColor(ColTypes.ListEntry), cmd)
+                        DecisiveWrite(CommandType, DebugDeviceSocket, "{0}", True, GetConsoleColor(ColTypes.ListValue), ModCommandList(cmd).HelpDefinition)
                     Next
 
                     'The alias commands
                     DecisiveWrite(CommandType, DebugDeviceSocket, NewLine + DoTranslation("Alias commands:") + If(ShowCommandsCount And ShowShellAliasesCount, " [{0}]", ""), True, ColTypes.ListTitle, AliasedCommandList.Count)
-                    If AliasedCommandList.Count = 0 Then DecisiveWrite(CommandType, DebugDeviceSocket, "- " + DoTranslation("No alias commands."), True, ColTypes.Warning)
+                    If AliasedCommandList.Count = 0 Then DecisiveWrite(CommandType, DebugDeviceSocket, "- " + DoTranslation("No alias commands."), True, GetConsoleColor(ColTypes.Warning))
                     For Each cmd As String In AliasedCommandList.Keys
-                        DecisiveWrite(CommandType, DebugDeviceSocket, "- {0}: ", False, ColTypes.ListEntry, cmd)
-                        DecisiveWrite(CommandType, DebugDeviceSocket, "{0}", True, ColTypes.ListValue, CommandList(AliasedCommandList(cmd)).GetTranslatedHelpEntry)
+                        DecisiveWrite(CommandType, DebugDeviceSocket, "- {0}: ", False, GetConsoleColor(ColTypes.ListEntry), cmd)
+                        DecisiveWrite(CommandType, DebugDeviceSocket, "{0}", True, GetConsoleColor(ColTypes.ListValue), CommandList(AliasedCommandList(cmd)).GetTranslatedHelpEntry)
                     Next
 
                     'A tip for you all
@@ -165,20 +165,20 @@ Namespace Shell.ShellBase.Commands
                     For Each cmd As String In CommandList.Keys
                         If ((Not CommandList(cmd).Strict) Or (CommandList(cmd).Strict And HasPermission(CurrentUser?.Username, PermissionType.Administrator))) And
                             (Maintenance And Not CommandList(cmd).NoMaintenance Or Not Maintenance) Then
-                            DecisiveWrite(CommandType, DebugDeviceSocket, "{0}, ", False, ColTypes.ListEntry, cmd)
+                            DecisiveWrite(CommandType, DebugDeviceSocket, "{0}, ", False, GetConsoleColor(ColTypes.ListEntry), cmd)
                         End If
                     Next
 
                     'The mod commands
                     For Each cmd As String In ModCommandList.Keys
-                        DecisiveWrite(CommandType, DebugDeviceSocket, "{0}, ", False, ColTypes.ListEntry, cmd)
+                        DecisiveWrite(CommandType, DebugDeviceSocket, "{0}, ", False, GetConsoleColor(ColTypes.ListEntry), cmd)
                     Next
 
                     'The alias commands
-                    DecisiveWrite(CommandType, DebugDeviceSocket, String.Join(", ", AliasedCommandList.Keys), True, ColTypes.ListEntry)
+                    DecisiveWrite(CommandType, DebugDeviceSocket, String.Join(", ", AliasedCommandList.Keys), True, GetConsoleColor(ColTypes.ListEntry))
                 End If
             Else
-                DecisiveWrite(CommandType, DebugDeviceSocket, DoTranslation("No help for command ""{0}""."), True, ColTypes.Error, command)
+                DecisiveWrite(CommandType, DebugDeviceSocket, DoTranslation("No help for command ""{0}""."), True, GetConsoleColor(ColTypes.Error), command)
             End If
         End Sub
 

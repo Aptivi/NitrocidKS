@@ -25,7 +25,7 @@ Namespace TestShell.Commands
             Dim TransitionChar As Char = Convert.ToChar(&HE0B0)
             Dim PadlockChar As Char = Convert.ToChar(&HE0A2)
             Dim GitBranchChar As Char = Convert.ToChar(&HE0A0)
-            Write(DoTranslation("Be sure to use a console font supporting PowerLine glyphs, or the output may not render properly. We recommend") + " Cascadia Code/Mono PL", True, ColTypes.Warning)
+            Write(DoTranslation("Be sure to use a console font supporting PowerLine glyphs, or the output may not render properly. We recommend") + " Cascadia Code/Mono PL", True, GetConsoleColor(ColTypes.Warning))
             Write(" One ", False, New Color(ConsoleColor.Black), New Color(85, 255, 255))
             Write(TransitionChar, False, New Color(85, 255, 255), New Color(255, 85, 255))
             Write(" Two ", False, New Color(ConsoleColor.Black), New Color(255, 85, 255))

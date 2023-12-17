@@ -26,12 +26,12 @@ Namespace Shell.Commands
 
             'Do the job
             Dim rgb As String() = ConvertFromHexToRGB(Hex).Split(";")
-            Write("- " + DoTranslation("Red color level:") + " ", False, ColTypes.ListEntry)
-            Write($"{rgb(0)}", True, ColTypes.ListValue)
-            Write("- " + DoTranslation("Green color level:") + " ", False, ColTypes.ListEntry)
-            Write($"{rgb(1)}", True, ColTypes.ListValue)
-            Write("- " + DoTranslation("Blue color level:") + " ", False, ColTypes.ListEntry)
-            Write($"{rgb(2)}", True, ColTypes.ListValue)
+            Write("- " + DoTranslation("Red color level:") + " ", False, GetConsoleColor(ColTypes.ListEntry))
+            Write($"{rgb(0)}", True, GetConsoleColor(ColTypes.ListValue))
+            Write("- " + DoTranslation("Green color level:") + " ", False, GetConsoleColor(ColTypes.ListEntry))
+            Write($"{rgb(1)}", True, GetConsoleColor(ColTypes.ListValue))
+            Write("- " + DoTranslation("Blue color level:") + " ", False, GetConsoleColor(ColTypes.ListEntry))
+            Write($"{rgb(2)}", True, GetConsoleColor(ColTypes.ListValue))
         End Sub
 
         Private Shared Function ConvertFromHexToRGB(Hex As String) As String

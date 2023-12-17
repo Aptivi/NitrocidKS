@@ -38,15 +38,15 @@ Namespace Misc.Games
             While True
                 RandomWord = Words.ElementAt(RandomDriver.Next(Words.Count))
                 Wdbg(DebugLevel.I, "Word: {0}", RandomWord)
-                Write(RandomWord, True, ColTypes.Input)
+                Write(RandomWord, True, GetConsoleColor(ColTypes.Input))
                 SpeltWord = ReadLineNoInput("")
 
                 If SpeltWord = RandomWord Then
                     Wdbg(DebugLevel.I, "Spelt: {0} = {1}", SpeltWord, RandomWord)
-                    Write(DoTranslation("Spelt perfectly!"), True, ColTypes.Success)
+                    Write(DoTranslation("Spelt perfectly!"), True, GetConsoleColor(ColTypes.Success))
                 Else
                     Wdbg(DebugLevel.I, "Spelt: {0} != {1}", SpeltWord, RandomWord)
-                    Write(DoTranslation("Spelt incorrectly."), True, ColTypes.Warning)
+                    Write(DoTranslation("Spelt incorrectly."), True, GetConsoleColor(ColTypes.Warning))
                 End If
             End While
         End Sub

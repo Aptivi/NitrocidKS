@@ -33,10 +33,10 @@ Namespace Shell.Commands
                         Console.Beep()
                     End If
                 Else
-                    Write(DoTranslation("Time must be numeric."), True, ColTypes.Error)
+                    Write(DoTranslation("Time must be numeric."), True, GetConsoleColor(ColTypes.Error))
                 End If
             Else
-                Write(DoTranslation("Frequency must be numeric. If it's numeric, ensure that it is >= 37 and <= 32767."), True, ColTypes.Error)
+                Write(DoTranslation("Frequency must be numeric. If it's numeric, ensure that it is >= 37 and <= 32767."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

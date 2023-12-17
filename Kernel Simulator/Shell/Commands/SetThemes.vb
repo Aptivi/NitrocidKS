@@ -36,12 +36,12 @@ Namespace Shell.Commands
                 'Save it to configuration
                 MakePermanent()
             Else
-                Write(DoTranslation("Colors are not available. Turn on colored shell in the kernel config."), True, ColTypes.Neutral)
+                Write(DoTranslation("Colors are not available. Turn on colored shell in the kernel config."), True, GetConsoleColor(ColTypes.Neutral))
             End If
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write("<Theme>: ThemeName.json, " + String.Join(", ", Themes.Themes.Keys), True, ColTypes.Neutral)
+            Write("<Theme>: ThemeName.json, " + String.Join(", ", Themes.Themes.Keys), True, GetConsoleColor(ColTypes.Neutral))
         End Sub
 
     End Class

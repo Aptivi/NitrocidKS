@@ -42,8 +42,8 @@ Namespace Network.Mail
         ''' </summary>
         Sub HandleWebAlert(sender As Object, e As WebAlertEventArgs)
             Wdbg(DebugLevel.I, "WebAlert URI: {0}", e.WebUri.AbsoluteUri)
-            Write(e.Message, True, ColTypes.Warning)
-            Write(DoTranslation("Opening URL... Make sure to follow the steps shown on the screen."), True, ColTypes.Neutral)
+            Write(e.Message, True, GetConsoleColor(ColTypes.Warning))
+            Write(DoTranslation("Opening URL... Make sure to follow the steps shown on the screen."), True, GetConsoleColor(ColTypes.Neutral))
             Process.Start(e.WebUri.AbsoluteUri).WaitForExit()
         End Sub
 

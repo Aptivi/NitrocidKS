@@ -16,7 +16,7 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports KS.ConsoleBase.Colors
+Imports Terminaux.Colors
 
 <TestFixture> Public Class ConsoleColorsInfoInitializationTests
 
@@ -32,8 +32,7 @@ Imports KS.ConsoleBase.Colors
         ConsoleColorsInfoInstance.R.ShouldBe(218)
         ConsoleColorsInfoInstance.G.ShouldBe(218)
         ConsoleColorsInfoInstance.B.ShouldBe(218)
-        ConsoleColorsInfoInstance.IsBright.ShouldBeTrue
-        ConsoleColorsInfoInstance.IsDark.ShouldBeFalse
+        ConsoleColorsInfoInstance.Color.Brightness.ShouldBe(ColorBrightness.Light)
     End Sub
 
     ''' <summary>
@@ -48,8 +47,7 @@ Imports KS.ConsoleBase.Colors
         ConsoleColorsInfoInstance.R.ShouldBe(28)
         ConsoleColorsInfoInstance.G.ShouldBe(28)
         ConsoleColorsInfoInstance.B.ShouldBe(28)
-        ConsoleColorsInfoInstance.IsBright.ShouldBeFalse
-        ConsoleColorsInfoInstance.IsDark.ShouldBeTrue
+        ConsoleColorsInfoInstance.Color.Brightness.ShouldBe(ColorBrightness.Dark)
     End Sub
 
 End Class

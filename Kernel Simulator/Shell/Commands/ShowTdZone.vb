@@ -29,13 +29,13 @@ Namespace Shell.Commands
             If ShowAll Then
                 ShowAllTimeZones()
             Else
-                If Not ShowTimeZones(ListArgsOnly(0)) Then Write(DoTranslation("Timezone is specified incorrectly."), True, ColTypes.Error)
+                If Not ShowTimeZones(ListArgsOnly(0)) Then Write(DoTranslation("Timezone is specified incorrectly."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -all: ", False, ColTypes.ListEntry) : Write(DoTranslation("Shows all the time zones"), True, ColTypes.ListValue)
+            Write(DoTranslation("This command has the below switches that change how it works:"), True, GetConsoleColor(ColTypes.Neutral))
+            Write("  -all: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Shows all the time zones"), True, GetConsoleColor(ColTypes.ListValue))
         End Sub
 
     End Class

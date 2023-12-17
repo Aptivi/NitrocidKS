@@ -42,5 +42,26 @@ Namespace Misc.Writers.MiscWriters
             End If
         End Sub
 
+        ''' <summary>
+        ''' Decides where to write the text
+        ''' </summary>
+        ''' <param name="CommandType">A specified command type</param>
+        ''' <param name="DebugDeviceSocket">Only for remote debug shell. Specifies the debug device socket.</param>
+        ''' <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+        ''' <param name="Line">Whether to print a new line or not</param>
+        ''' <param name="color">A color to use.</param>
+        ''' <param name="vars">Variables to format the message before it's written.</param>
+        Public Sub DecisiveWrite(CommandType As ShellType, DebugDeviceSocket As StreamWriter, Text As String, Line As Boolean, color As Color, ParamArray vars() As Object)
+            If Not CommandType = ShellType.RemoteDebugShell Then
+                Write(Text, Line, color, vars)
+            ElseIf DebugDeviceSocket IsNot Nothing Then
+                If Line Then
+                    DebugDeviceSocket.WriteLine(Text, vars)
+                Else
+                    DebugDeviceSocket.Write(Text, vars)
+                End If
+            End If
+        End Sub
+
     End Module
 End Namespace

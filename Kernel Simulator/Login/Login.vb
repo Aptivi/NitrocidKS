@@ -89,7 +89,7 @@ Namespace Login
                 'Show MOTD once
                 Wdbg(DebugLevel.I, "showMOTDOnceFlag = {0}, showMOTD = {1}", ShowMOTDOnceFlag, ShowMOTD)
                 If ShowMOTDOnceFlag = True And ShowMOTD = True Then
-                    Write(NewLine + ProbePlaces(MOTDMessage), True, ColTypes.Banner)
+                    Write(NewLine + ProbePlaces(MOTDMessage), True, GetConsoleColor(ColTypes.Banner))
                 End If
                 ShowMOTDOnceFlag = False
 
@@ -102,7 +102,7 @@ Namespace Login
 
                     'Prompt user to choose a user
                     Do Until AnswerUserInt <> 0
-                        Write(">> ", False, ColTypes.Input)
+                        Write(">> ", False, GetConsoleColor(ColTypes.Input))
                         Dim AnswerUserString As String = ReadLine()
 
                         'Parse input
@@ -115,36 +115,36 @@ Namespace Login
                                     ShowPasswordPrompt(SelectedUser)
                                 Else
                                     Wdbg(DebugLevel.W, "User can't log in. (User is in disabled list)")
-                                    Write(DoTranslation("User is disabled."), True, ColTypes.Error)
+                                    Write(DoTranslation("User is disabled."), True, GetConsoleColor(ColTypes.Error))
                                     KernelEventManager.RaiseLoginError(SelectedUser, LoginErrorReasons.Disabled)
                                 End If
                             Else
-                                Write(DoTranslation("The answer must be numeric."), True, ColTypes.Error)
+                                Write(DoTranslation("The answer must be numeric."), True, GetConsoleColor(ColTypes.Error))
                             End If
                         Else
-                            Write(DoTranslation("Please enter a user number."), True, ColTypes.Error)
+                            Write(DoTranslation("Please enter a user number."), True, GetConsoleColor(ColTypes.Error))
                         End If
                     Loop
                 Else
                     'Generate user list
-                    If ShowAvailableUsers Then Write(DoTranslation("Available usernames: {0}"), True, ColTypes.Neutral, String.Join(", ", UsersList))
+                    If ShowAvailableUsers Then Write(DoTranslation("Available usernames: {0}"), True, color:=GetConsoleColor(ColTypes.Neutral), String.Join(", ", UsersList))
 
                     'Prompt user to login
                     If Not String.IsNullOrWhiteSpace(UsernamePrompt) Then
-                        Write(ProbePlaces(UsernamePrompt), False, ColTypes.Input)
+                        Write(ProbePlaces(UsernamePrompt), False, GetConsoleColor(ColTypes.Input))
                     Else
-                        Write(DoTranslation("Username: "), False, ColTypes.Input)
+                        Write(DoTranslation("Username: "), False, GetConsoleColor(ColTypes.Input))
                     End If
                     Dim answeruser As String = ReadLine()
 
                     'Parse input
                     If answeruser.Contains(" ") Then
                         Wdbg(DebugLevel.W, "Spaces found in username.")
-                        Write(DoTranslation("Spaces are not allowed."), True, ColTypes.Error)
+                        Write(DoTranslation("Spaces are not allowed."), True, GetConsoleColor(ColTypes.Error))
                         KernelEventManager.RaiseLoginError(answeruser, LoginErrorReasons.Spaces)
                     ElseIf answeruser.IndexOfAny("[~`!@#$%^&*()-+=|{}':;.,<>/?]".ToCharArray) <> -1 Then
                         Wdbg(DebugLevel.W, "Unknown characters found in username.")
-                        Write(DoTranslation("Special characters are not allowed."), True, ColTypes.Error)
+                        Write(DoTranslation("Special characters are not allowed."), True, GetConsoleColor(ColTypes.Error))
                         KernelEventManager.RaiseLoginError(answeruser, LoginErrorReasons.SpecialCharacters)
                     ElseIf Users.ContainsKey(answeruser) Then
                         Wdbg(DebugLevel.I, "Username correct. Finding if the user is disabled...")
@@ -153,12 +153,12 @@ Namespace Login
                             ShowPasswordPrompt(answeruser)
                         Else
                             Wdbg(DebugLevel.W, "User can't log in. (User is in disabled list)")
-                            Write(DoTranslation("User is disabled."), True, ColTypes.Error)
+                            Write(DoTranslation("User is disabled."), True, GetConsoleColor(ColTypes.Error))
                             KernelEventManager.RaiseLoginError(answeruser, LoginErrorReasons.Disabled)
                         End If
                     Else
                         Wdbg(DebugLevel.E, "Username not found.")
-                        Write(DoTranslation("Wrong username."), True, ColTypes.Error)
+                        Write(DoTranslation("Wrong username."), True, GetConsoleColor(ColTypes.Error))
                         KernelEventManager.RaiseLoginError(answeruser, LoginErrorReasons.NotFound)
                     End If
                 End If
@@ -187,9 +187,9 @@ Namespace Login
                     'Wait for input
                     Wdbg(DebugLevel.I, "Password not empty")
                     If Not String.IsNullOrWhiteSpace(PasswordPrompt) Then
-                        Write(ProbePlaces(PasswordPrompt), False, ColTypes.Input)
+                        Write(ProbePlaces(PasswordPrompt), False, GetConsoleColor(ColTypes.Input))
                     Else
-                        Write(DoTranslation("{0}'s password: "), False, ColTypes.Input, usernamerequested)
+                        Write(DoTranslation("{0}'s password: "), False, color:=GetConsoleColor(ColTypes.Input), usernamerequested)
                     End If
 
                     'Get input
@@ -207,7 +207,7 @@ Namespace Login
                         Exit Sub
                     Else
                         Wdbg(DebugLevel.I, "Passowrd written wrong...")
-                        Write(DoTranslation("Wrong password."), True, ColTypes.Error)
+                        Write(DoTranslation("Wrong password."), True, GetConsoleColor(ColTypes.Error))
                         KernelEventManager.RaiseLoginError(usernamerequested, LoginErrorReasons.WrongPassword)
                         If Not Maintenance Then
                             If Not LockMode Then
@@ -246,7 +246,7 @@ Namespace Login
             If LockMode = True Then LockMode = False
             Wdbg(DebugLevel.I, "Lock released.")
             ShowMOTDOnceFlag = True
-            If ShowMAL Then Write(ProbePlaces(MAL), True, ColTypes.Banner)
+            If ShowMAL Then Write(ProbePlaces(MAL), True, GetConsoleColor(ColTypes.Banner))
             ShowHeadlineLogin()
 
             'Fire event PostLogin

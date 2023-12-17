@@ -25,14 +25,14 @@ Namespace Network.FTP.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If FtpConnected Then
-                Write(DoTranslation("Copying {0} to {1}..."), True, ColTypes.Neutral, ListArgs(0), ListArgs(1))
+                Write(DoTranslation("Copying {0} to {1}..."), True, color:=GetConsoleColor(ColTypes.Neutral), ListArgs(0), ListArgs(1))
                 If FTPCopyItem(ListArgs(0), ListArgs(1)) Then
-                    Write(NewLine + DoTranslation("Copied successfully"), True, ColTypes.Success)
+                    Write(NewLine + DoTranslation("Copied successfully"), True, GetConsoleColor(ColTypes.Success))
                 Else
-                    Write(NewLine + DoTranslation("Failed to copy {0} to {1}."), True, ColTypes.Error, ListArgs(0), ListArgs(1))
+                    Write(NewLine + DoTranslation("Failed to copy {0} to {1}."), True, color:=GetConsoleColor(ColTypes.Error), ListArgs(0), ListArgs(1))
                 End If
             Else
-                Write(DoTranslation("You must connect to server before performing transmission."), True, ColTypes.Error)
+                Write(DoTranslation("You must connect to server before performing transmission."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

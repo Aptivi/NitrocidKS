@@ -26,12 +26,12 @@ Namespace Shell.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If RDebugBlocked.Contains(ListArgs(0)) Then
                 If TryRemoveFromBlockList(ListArgs(0)) Then
-                    Write(DoTranslation("{0} can now join remote debug again."), True, ColTypes.Neutral, ListArgs(0))
+                    Write(DoTranslation("{0} can now join remote debug again."), True, color:=GetConsoleColor(ColTypes.Neutral), ListArgs(0))
                 Else
-                    Write(DoTranslation("Failed to unblock {0}."), True, ColTypes.Neutral, ListArgs(0))
+                    Write(DoTranslation("Failed to unblock {0}."), True, color:=GetConsoleColor(ColTypes.Neutral), ListArgs(0))
                 End If
             Else
-                Write(DoTranslation("{0} is not blocked yet."), True, ColTypes.Neutral, ListArgs(0))
+                Write(DoTranslation("{0} is not blocked yet."), True, color:=GetConsoleColor(ColTypes.Neutral), ListArgs(0))
             End If
         End Sub
 

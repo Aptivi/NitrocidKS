@@ -87,7 +87,7 @@ Namespace Misc.Forecast
             End If
             Wdbg(DebugLevel.I, "City name: {0}, City ID: {1}", WeatherInfo.CityName, WeatherInfo.CityID)
             WriteSeparator(DoTranslation("-- Weather info for {0} --"), False, WeatherInfo.CityName)
-            Write(DoTranslation("Weather: {0}"), True, ColTypes.Neutral, WeatherInfo.Weather)
+            Write(DoTranslation("Weather: {0}"), True, color:=GetConsoleColor(ColTypes.Neutral), WeatherInfo.Weather)
             If WeatherInfo.TemperatureMeasurement = UnitMeasurement.Metric Then
                 WeatherSpecifier += "C"
             ElseIf WeatherInfo.TemperatureMeasurement = UnitMeasurement.Kelvin Then
@@ -96,12 +96,12 @@ Namespace Misc.Forecast
                 WeatherSpecifier += "F"
                 WindSpeedSpecifier = "mph"
             End If
-            Write(DoTranslation("Temperature: {0}") + WeatherSpecifier, True, ColTypes.Neutral, WeatherInfo.Temperature.ToString("N2"))
-            Write(DoTranslation("Feels like: {0}") + WeatherSpecifier, True, ColTypes.Neutral, WeatherInfo.FeelsLike.ToString("N2"))
-            Write(DoTranslation("Wind speed: {0}") + " {1}", True, ColTypes.Neutral, WeatherInfo.WindSpeed.ToString("N2"), WindSpeedSpecifier)
-            Write(DoTranslation("Wind direction: {0}") + "°", True, ColTypes.Neutral, WeatherInfo.WindDirection.ToString("N2"))
-            Write(DoTranslation("Pressure: {0}") + " hPa", True, ColTypes.Neutral, WeatherInfo.Pressure.ToString("N2"))
-            Write(DoTranslation("Humidity: {0}") + "%", True, ColTypes.Neutral, WeatherInfo.Humidity.ToString("N2"))
+            Write(DoTranslation("Temperature: {0}") + WeatherSpecifier, True, color:=GetConsoleColor(ColTypes.Neutral), WeatherInfo.Temperature.ToString("N2"))
+            Write(DoTranslation("Feels like: {0}") + WeatherSpecifier, True, color:=GetConsoleColor(ColTypes.Neutral), WeatherInfo.FeelsLike.ToString("N2"))
+            Write(DoTranslation("Wind speed: {0}") + " {1}", True, color:=GetConsoleColor(ColTypes.Neutral), WeatherInfo.WindSpeed.ToString("N2"), WindSpeedSpecifier)
+            Write(DoTranslation("Wind direction: {0}") + "°", True, color:=GetConsoleColor(ColTypes.Neutral), WeatherInfo.WindDirection.ToString("N2"))
+            Write(DoTranslation("Pressure: {0}") + " hPa", True, color:=GetConsoleColor(ColTypes.Neutral), WeatherInfo.Pressure.ToString("N2"))
+            Write(DoTranslation("Humidity: {0}") + "%", True, color:=GetConsoleColor(ColTypes.Neutral), WeatherInfo.Humidity.ToString("N2"))
         End Sub
 
     End Module

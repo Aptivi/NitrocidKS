@@ -185,6 +185,7 @@
     <Import Include="System.Linq" />
     <Import Include="System.Net" />
     <Import Include="System.Xml.Linq" />
+    <Import Include="Terminaux.Colors" />
   </ItemGroup>
   <!-- KS Import Information End -->
 

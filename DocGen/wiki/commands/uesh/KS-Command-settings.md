@@ -12,7 +12,7 @@ It starts with the list of sections to start from. Once the user selects one, th
 
 If you just want to try out a setting without saving to the configuration file, you can change a setting and exit it immediately. It only survives the current session until you decide to save the changes to the configuration file.
 
-Some settings allow you to specify a string, a number, or by the usage of another API, like the `ColorWheel()` tool.
+Some settings allow you to specify a string, a number, or by the usage of another API, like the `ColorSelector.OpenColorSelector()` tool.
 
 In the string or long string values, if you used the `/clear` value, it will blank out the value. In some settings, if you just pressed ENTER, it'll use the same value that the kernel uses at the moment.
 

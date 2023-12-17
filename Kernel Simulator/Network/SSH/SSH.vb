@@ -60,9 +60,9 @@ Namespace Network.SSH
             While True
                 'Ask for authentication method
                 Write(DoTranslation("How do you want to authenticate?") + NewLine, True, ColTypes.Question)
-                Write("1) " + DoTranslation("Private key file"), True, ColTypes.Option)
-                Write("2) " + DoTranslation("Password") + NewLine, True, ColTypes.Option)
-                Write(">> ", False, ColTypes.Input)
+                Write("1) " + DoTranslation("Private key file"), True, GetConsoleColor(ColTypes.Option))
+                Write("2) " + DoTranslation("Password") + NewLine, True, GetConsoleColor(ColTypes.Option))
+                Write(">> ", False, GetConsoleColor(ColTypes.Input))
                 If Integer.TryParse(ReadLine(False), Answer) Then
                     'Check for answer
                     Select Case Answer
@@ -70,14 +70,14 @@ Namespace Network.SSH
                             Exit While
                         Case Else
                             Wdbg(DebugLevel.W, "Option is not valid. Returning...")
-                            Write(DoTranslation("Specified option {0} is invalid."), True, ColTypes.Error, Answer)
-                            Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                            Write(DoTranslation("Specified option {0} is invalid."), True, color:=GetConsoleColor(ColTypes.Error), Answer)
+                            Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
                             Console.ReadKey()
                     End Select
                 Else
                     Wdbg(DebugLevel.W, "Answer is not numeric.")
-                    Write(DoTranslation("The answer must be numeric."), True, ColTypes.Error)
-                    Write(DoTranslation("Press any key to go back."), True, ColTypes.Error)
+                    Write(DoTranslation("The answer must be numeric."), True, GetConsoleColor(ColTypes.Error))
+                    Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
                     Console.ReadKey()
                 End If
             End While
@@ -92,12 +92,12 @@ Namespace Network.SSH
                         Dim PrivateKeyAuth As PrivateKeyFile
 
                         'Ask for location
-                        Write(DoTranslation("Enter the location of the private key for {0}. Write ""q"" to finish adding keys: "), False, ColTypes.Input, Username)
+                        Write(DoTranslation("Enter the location of the private key for {0}. Write ""q"" to finish adding keys: "), False, color:=GetConsoleColor(ColTypes.Input), Username)
                         PrivateKeyFile = ReadLine(False)
                         PrivateKeyFile = NeutralizePath(PrivateKeyFile)
                         If FileExists(PrivateKeyFile) Then
                             'Ask for passphrase
-                            Write(DoTranslation("Enter the passphrase for key {0}: "), False, ColTypes.Input, PrivateKeyFile)
+                            Write(DoTranslation("Enter the passphrase for key {0}: "), False, color:=GetConsoleColor(ColTypes.Input), PrivateKeyFile)
                             PrivateKeyPassphrase = ReadLineNoInput()
 
                             'Add authentication method
@@ -111,12 +111,12 @@ Namespace Network.SSH
                             Catch ex As Exception
                                 WStkTrc(ex)
                                 Wdbg(DebugLevel.E, "Error trying to add private key authentication method: {0}", ex.Message)
-                                Write(DoTranslation("Error trying to add private key:") + " {0}", True, ColTypes.Error, ex.Message)
+                                Write(DoTranslation("Error trying to add private key:") + " {0}", True, color:=GetConsoleColor(ColTypes.Error), ex.Message)
                             End Try
                         ElseIf PrivateKeyFile.EndsWith("/q") Then
                             Exit While
                         Else
-                            Write(DoTranslation("Key file {0} doesn't exist."), True, ColTypes.Error, PrivateKeyFile)
+                            Write(DoTranslation("Key file {0} doesn't exist."), True, color:=GetConsoleColor(ColTypes.Error), PrivateKeyFile)
                         End If
                     End While
 
@@ -126,7 +126,7 @@ Namespace Network.SSH
                     Dim Pass As String
 
                     'Ask for password
-                    Write(DoTranslation("Enter the password for {0}: "), False, ColTypes.Input, Username)
+                    Write(DoTranslation("Enter the password for {0}: "), False, color:=GetConsoleColor(ColTypes.Input), Username)
                     Pass = ReadLineNoInput()
 
                     'Add authentication method
@@ -169,7 +169,7 @@ Namespace Network.SSH
                 End If
             Catch ex As Exception
                 KernelEventManager.RaiseSSHError(ex)
-                Write(DoTranslation("Error trying to connect to SSH server: {0}"), True, ColTypes.Error, ex.Message)
+                Write(DoTranslation("Error trying to connect to SSH server: {0}"), True, color:=GetConsoleColor(ColTypes.Error), ex.Message)
                 WStkTrc(ex)
             End Try
         End Sub
@@ -185,7 +185,7 @@ Namespace Network.SSH
             Dim BannerMessageLines() As String = e.BannerMessage.SplitNewLines
             For Each BannerLine As String In BannerMessageLines
                 Wdbg(DebugLevel.I, BannerLine)
-                Write(BannerLine, True, ColTypes.Neutral)
+                Write(BannerLine, True, GetConsoleColor(ColTypes.Neutral))
             Next
         End Sub
 
@@ -216,10 +216,10 @@ Namespace Network.SSH
             Catch ex As Exception
                 Wdbg(DebugLevel.E, "Error on SSH shell in {0}: {1}", SSHClient.ConnectionInfo.Host, ex.Message)
                 WStkTrc(ex)
-                Write(DoTranslation("Error on SSH shell") + ": {0}", True, ColTypes.Error, ex.Message)
+                Write(DoTranslation("Error on SSH shell") + ": {0}", True, color:=GetConsoleColor(ColTypes.Error), ex.Message)
             Finally
                 Wdbg(DebugLevel.I, "Connected: {0}", SSHClient.IsConnected)
-                Write(NewLine + DoTranslation("SSH Disconnected."), True, ColTypes.Neutral)
+                Write(NewLine + DoTranslation("SSH Disconnected."), True, GetConsoleColor(ColTypes.Neutral))
                 DisconnectionRequested = False
 
                 'Remove handler for SSH
@@ -255,20 +255,20 @@ Namespace Network.SSH
                         SSHClient.Disconnect()
                     End If
                     While Not SSHCErrorReader.EndOfStream
-                        Write(SSHCErrorReader.ReadLine(), True, ColTypes.Neutral)
+                        Write(SSHCErrorReader.ReadLine(), True, GetConsoleColor(ColTypes.Neutral))
                     End While
                     While Not SSHCOutputReader.EndOfStream
-                        Write(SSHCOutputReader.ReadLine(), True, ColTypes.Neutral)
+                        Write(SSHCOutputReader.ReadLine(), True, GetConsoleColor(ColTypes.Neutral))
                     End While
                 End While
             Catch ex As Exception
                 Wdbg(DebugLevel.E, "Error trying to execute SSH command ""{0}"" to {1}: {2}", Command, SSHClient.ConnectionInfo.Host, ex.Message)
                 WStkTrc(ex)
-                Write(DoTranslation("Error executing SSH command") + " {0}: {1}", True, ColTypes.Error, Command, ex.Message)
+                Write(DoTranslation("Error executing SSH command") + " {0}: {1}", True, color:=GetConsoleColor(ColTypes.Error), Command, ex.Message)
                 KernelEventManager.RaiseSSHCommandError(SSHClient.ConnectionInfo.Host + ":" + CStr(SSHClient.ConnectionInfo.Port), Command, ex)
             Finally
                 Wdbg(DebugLevel.I, "Connected: {0}", SSHClient.IsConnected)
-                Write(NewLine + DoTranslation("SSH Disconnected."), True, ColTypes.Neutral)
+                Write(NewLine + DoTranslation("SSH Disconnected."), True, GetConsoleColor(ColTypes.Neutral))
                 DisconnectionRequested = False
                 KernelEventManager.RaiseSSHPostExecuteCommand(SSHClient.ConnectionInfo.Host + ":" + CStr(SSHClient.ConnectionInfo.Port), Command)
 

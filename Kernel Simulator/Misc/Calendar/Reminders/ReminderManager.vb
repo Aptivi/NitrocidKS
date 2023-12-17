@@ -105,8 +105,8 @@ Namespace Misc.Calendar.Reminders
         ''' </summary>
         Public Sub ListReminders()
             For Each Reminder As ReminderInfo In Reminders
-                Write("- {0}: ", False, ColTypes.ListEntry, Reminder.ReminderDate)
-                Write(Reminder.ReminderTitle, True, ColTypes.ListValue)
+                Write("- {0}: ", False, GetConsoleColor(ColTypes.ListEntry), Reminder.ReminderDate)
+                Write(Reminder.ReminderTitle, True, GetConsoleColor(ColTypes.ListValue))
             Next
         End Sub
 

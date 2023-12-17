@@ -27,22 +27,22 @@ Namespace Shell.Commands
 
             'Check to see if we have the numeric arguments
             If Not Integer.TryParse(ListArgsOnly(0), R) Then
-                Write(DoTranslation("The red color level must be numeric."), True, ColTypes.Error)
+                Write(DoTranslation("The red color level must be numeric."), True, GetConsoleColor(ColTypes.Error))
                 Exit Sub
             End If
             If Not Integer.TryParse(ListArgsOnly(1), G) Then
-                Write(DoTranslation("The green color level must be numeric."), True, ColTypes.Error)
+                Write(DoTranslation("The green color level must be numeric."), True, GetConsoleColor(ColTypes.Error))
                 Exit Sub
             End If
             If Not Integer.TryParse(ListArgsOnly(2), B) Then
-                Write(DoTranslation("The blue color level must be numeric."), True, ColTypes.Error)
+                Write(DoTranslation("The blue color level must be numeric."), True, GetConsoleColor(ColTypes.Error))
                 Exit Sub
             End If
 
             'Do the job
             Hex = ConvertFromRGBToHex(R, G, B)
-            Write("- " + DoTranslation("Color hexadecimal representation:") + " ", False, ColTypes.ListEntry)
-            Write(Hex, True, ColTypes.ListValue)
+            Write("- " + DoTranslation("Color hexadecimal representation:") + " ", False, GetConsoleColor(ColTypes.ListEntry))
+            Write(Hex, True, GetConsoleColor(ColTypes.ListValue))
         End Sub
 
     End Class

@@ -23,7 +23,7 @@ Namespace Misc.RarFile.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If Not ChangeWorkingRarLocalDirectory(ListArgs(0)) Then
-                Write(DoTranslation("Directory {0} doesn't exist"), True, ColTypes.Error, ListArgs(0))
+                Write(DoTranslation("Directory {0} doesn't exist"), True, color:=GetConsoleColor(ColTypes.Error), ListArgs(0))
             End If
         End Sub
 

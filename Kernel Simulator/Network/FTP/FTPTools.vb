@@ -47,9 +47,9 @@ Namespace Network.FTP
 
             'Prompt for password
             If Not String.IsNullOrWhiteSpace(FtpPassPromptStyle) Then
-                Write(ProbePlaces(FtpPassPromptStyle), False, ColTypes.Input, user)
+                Write(ProbePlaces(FtpPassPromptStyle), False, GetConsoleColor(ColTypes.Input), user)
             Else
-                Write(DoTranslation("Password for {0}: "), False, ColTypes.Input, user)
+                Write(DoTranslation("Password for {0}: "), False, color:=GetConsoleColor(ColTypes.Input), user)
             End If
 
             'Get input
@@ -68,7 +68,7 @@ Namespace Network.FTP
         ''' <param name="address">An FTP server. You may specify it like "[address]" or "[address]:[port]"</param>
         Public Sub TryToConnect(address As String)
             If FtpConnected = True Then
-                Write(DoTranslation("You should disconnect from server before connecting to another server"), True, ColTypes.Error)
+                Write(DoTranslation("You should disconnect from server before connecting to another server"), True, GetConsoleColor(ColTypes.Error))
             Else
                 Try
                     'Create an FTP stream to connect to
@@ -96,9 +96,9 @@ Namespace Network.FTP
 
                     'Prompt for username
                     If Not String.IsNullOrWhiteSpace(FtpUserPromptStyle) Then
-                        Write(ProbePlaces(FtpUserPromptStyle), False, ColTypes.Input, address)
+                        Write(ProbePlaces(FtpUserPromptStyle), False, GetConsoleColor(ColTypes.Input), address)
                     Else
-                        Write(DoTranslation("Username for {0}: "), False, ColTypes.Input, address)
+                        Write(DoTranslation("Username for {0}: "), False, color:=GetConsoleColor(ColTypes.Input), address)
                     End If
                     FtpUser = ReadLine()
                     If FtpUser = "" Then
@@ -111,7 +111,7 @@ Namespace Network.FTP
                 Catch ex As Exception
                     Wdbg(DebugLevel.W, "Error connecting to {0}: {1}", address, ex.Message)
                     WStkTrc(ex)
-                    Write(DoTranslation("Error when trying to connect to {0}: {1}"), True, ColTypes.Error, address, ex.Message)
+                    Write(DoTranslation("Error when trying to connect to {0}: {1}"), True, color:=GetConsoleColor(ColTypes.Error), address, ex.Message)
                 End Try
             End If
         End Sub
@@ -121,7 +121,7 @@ Namespace Network.FTP
         ''' </summary>
         Private Sub ConnectFTP()
             'Prepare profiles
-            Write(DoTranslation("Preparing profiles... It could take several minutes..."), True, ColTypes.Neutral)
+            Write(DoTranslation("Preparing profiles... It could take several minutes..."), True, GetConsoleColor(ColTypes.Neutral))
             Dim profiles As List(Of FtpProfile) = ClientFTP.AutoDetect(FTPFirstProfileOnly)
             Dim profsel As New FtpProfile
             Wdbg(DebugLevel.I, "Profile count: {0}", profiles.Count)
@@ -133,7 +133,7 @@ Namespace Network.FTP
                     Dim profanswered As Boolean
                     Dim ProfHeaders As String() = {"#", DoTranslation("Host Name"), DoTranslation("Username"), DoTranslation("Data Type"), DoTranslation("Encoding"), DoTranslation("Encryption"), DoTranslation("Protocols")}
                     Dim ProfData(profiles.Count - 1, 6) As String
-                    Write(DoTranslation("More than one profile found. Select one:"), True, ColTypes.Neutral)
+                    Write(DoTranslation("More than one profile found. Select one:"), True, GetConsoleColor(ColTypes.Neutral))
                     For i As Integer = 0 To profiles.Count - 1
                         ProfData(i, 0) = i + 1
                         ProfData(i, 1) = profiles(i).Host
@@ -145,7 +145,7 @@ Namespace Network.FTP
                     Next
                     WriteTable(ProfHeaders, ProfData, 2, ColTypes.Option)
                     While Not profanswered
-                        Write(NewLine + ">> ", False, ColTypes.Input)
+                        Write(NewLine + ">> ", False, GetConsoleColor(ColTypes.Input))
                         profanswer = ReadLine()
                         Wdbg(DebugLevel.I, "Selection: {0}", profanswer)
                         If IsStringNumeric(profanswer) Then
@@ -156,7 +156,7 @@ Namespace Network.FTP
                                 profanswered = True
                             Catch ex As Exception
                                 Wdbg(DebugLevel.I, "Profile invalid")
-                                Write(DoTranslation("Invalid profile selection.") + NewLine, True, ColTypes.Error)
+                                Write(DoTranslation("Invalid profile selection.") + NewLine, True, GetConsoleColor(ColTypes.Error))
                                 WStkTrc(ex)
                             End Try
                         End If
@@ -165,26 +165,26 @@ Namespace Network.FTP
             ElseIf profiles.Count = 1 Then
                 profsel = profiles(0) 'Select first profile
             Else 'Failed trying to get profiles
-                Write(DoTranslation("Error when trying to connect to {0}: Connection timeout or lost connection"), True, ColTypes.Error, ClientFTP.Host)
+                Write(DoTranslation("Error when trying to connect to {0}: Connection timeout or lost connection"), True, color:=GetConsoleColor(ColTypes.Error), ClientFTP.Host)
                 Exit Sub
             End If
 
             'Connect
-            Write(DoTranslation("Trying to connect to {0} with profile {1}..."), True, ColTypes.Neutral, ClientFTP.Host, profiles.IndexOf(profsel))
+            Write(DoTranslation("Trying to connect to {0} with profile {1}..."), True, color:=GetConsoleColor(ColTypes.Neutral), ClientFTP.Host, profiles.IndexOf(profsel))
             Wdbg(DebugLevel.I, "Connecting to {0} with {1}...", ClientFTP.Host, profiles.IndexOf(profsel))
             ClientFTP.Connect(profsel)
 
             'Show that it's connected
-            Write(DoTranslation("Connected to {0}"), True, ColTypes.Success, ClientFTP.Host)
+            Write(DoTranslation("Connected to {0}"), True, color:=GetConsoleColor(ColTypes.Success), ClientFTP.Host)
             Wdbg(DebugLevel.I, "Connected.")
             FtpConnected = True
 
             'If MOTD exists, show it
             If FtpShowMotd Then
                 If ClientFTP.FileExists("welcome.msg") Then
-                    Write(FTPDownloadToString("welcome.msg"), True, ColTypes.Banner)
+                    Write(FTPDownloadToString("welcome.msg"), True, GetConsoleColor(ColTypes.Banner))
                 ElseIf ClientFTP.FileExists(".message") Then
-                    Write(FTPDownloadToString(".message"), True, ColTypes.Banner)
+                    Write(FTPDownloadToString(".message"), True, GetConsoleColor(ColTypes.Banner))
                 End If
             End If
 
@@ -218,8 +218,8 @@ Namespace Network.FTP
                 e.Accept = True
             Else
                 Wdbg(DebugLevel.W, $"Certificate error is {e.PolicyErrors}")
-                Write(DoTranslation("During certificate validation, there are certificate errors. It might be the first time you've connected to the server or the certificate might have been expired. Here's an error:"), True, ColTypes.Error)
-                Write("- {0}", True, ColTypes.Error, e.PolicyErrors.ToString)
+                Write(DoTranslation("During certificate validation, there are certificate errors. It might be the first time you've connected to the server or the certificate might have been expired. Here's an error:"), True, GetConsoleColor(ColTypes.Error))
+                Write("- {0}", True, color:=GetConsoleColor(ColTypes.Error), e.PolicyErrors.ToString)
                 If FtpAlwaysAcceptInvalidCerts Then
                     Wdbg(DebugLevel.W, "Certificate accepted, although there are errors.")
                     Wdbg(DebugLevel.I, e.Certificate.GetRawCertDataString)
@@ -238,7 +238,7 @@ Namespace Network.FTP
                             e.Accept = True
                         ElseIf Answer.ToLower <> "n" Then
                             Wdbg(DebugLevel.W, "Invalid answer.")
-                            Write(DoTranslation("Invalid answer. Please try again."), True, ColTypes.Error)
+                            Write(DoTranslation("Invalid answer. Please try again."), True, GetConsoleColor(ColTypes.Error))
                         End If
                     Loop
                 End If
@@ -257,7 +257,7 @@ Namespace Network.FTP
                 Dim SpeedDialHeaders As String() = {"#", DoTranslation("Host Name"), DoTranslation("Host Port"), DoTranslation("Username"), DoTranslation("Encryption")}
                 Dim SpeedDialData(SpeedDialLines.Count - 1, 4) As String
                 If Not SpeedDialLines.Count = 0 Then
-                    Write(DoTranslation("Select an address to connect to:"), True, ColTypes.Neutral)
+                    Write(DoTranslation("Select an address to connect to:"), True, GetConsoleColor(ColTypes.Neutral))
                     For i As Integer = 0 To SpeedDialLines.Count - 1
                         Dim SpeedDialAddress As String = SpeedDialLines.Keys(i)
                         Wdbg(DebugLevel.I, "Speed dial address: {0}", SpeedDialAddress)
@@ -270,7 +270,7 @@ Namespace Network.FTP
                     WriteTable(SpeedDialHeaders, SpeedDialData, 2, ColTypes.Option)
                     Console.WriteLine()
                     While Answering
-                        Write(">> ", False, ColTypes.Input)
+                        Write(">> ", False, GetConsoleColor(ColTypes.Input))
                         Answer = ReadLine()
                         Wdbg(DebugLevel.I, "Response: {0}", Answer)
                         If IsStringNumeric(Answer) Then
@@ -289,20 +289,20 @@ Namespace Network.FTP
                                 PromptForPassword(Username, Address, Port, Encryption)
                             Else
                                 Wdbg(DebugLevel.I, "Response is out-of-bounds. Retrying...")
-                                Write(DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), True, ColTypes.Error, SpeedDialLines.Count)
+                                Write(DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), True, color:=GetConsoleColor(ColTypes.Error), SpeedDialLines.Count)
                             End If
                         Else
                             Wdbg(DebugLevel.W, "Response isn't numeric. IsStringNumeric(Answer) returned false.")
-                            Write(DoTranslation("The selection is not a number. Try again."), True, ColTypes.Error)
+                            Write(DoTranslation("The selection is not a number. Try again."), True, GetConsoleColor(ColTypes.Error))
                         End If
                     End While
                 Else
                     Wdbg(DebugLevel.E, "Speed dial is empty. Lines count is 0.")
-                    Write(DoTranslation("Speed dial is empty. Connect to a server to add an address to it."), True, ColTypes.Error)
+                    Write(DoTranslation("Speed dial is empty. Connect to a server to add an address to it."), True, GetConsoleColor(ColTypes.Error))
                 End If
             Else
                 Wdbg(DebugLevel.E, "File doesn't exist.")
-                Write(DoTranslation("Speed dial doesn't exist. Connect to a server to add an address to it."), True, ColTypes.Error)
+                Write(DoTranslation("Speed dial doesn't exist. Connect to a server to add an address to it."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

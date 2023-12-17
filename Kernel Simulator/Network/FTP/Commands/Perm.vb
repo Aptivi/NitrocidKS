@@ -26,12 +26,12 @@ Namespace Network.FTP.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If FtpConnected Then
                 If FTPChangePermissions(ListArgs(0), ListArgs(1)) Then
-                    Write(DoTranslation("Permissions set successfully for file") + " {0}", True, ColTypes.Success, ListArgs(0))
+                    Write(DoTranslation("Permissions set successfully for file") + " {0}", True, color:=GetConsoleColor(ColTypes.Success), ListArgs(0))
                 Else
-                    Write(DoTranslation("Failed to set permissions of {0} to {1}."), True, ColTypes.Error, ListArgs(0), ListArgs(1))
+                    Write(DoTranslation("Failed to set permissions of {0} to {1}."), True, color:=GetConsoleColor(ColTypes.Error), ListArgs(0), ListArgs(1))
                 End If
             Else
-                Write(DoTranslation("You must connect to server before performing filesystem operations."), True, ColTypes.Error)
+                Write(DoTranslation("You must connect to server before performing filesystem operations."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

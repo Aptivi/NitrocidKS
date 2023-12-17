@@ -211,13 +211,13 @@ Namespace Network.RSS
                 Try
                     Dim Feed As New RSSFeed(RssHeadlineUrl, RSSFeedType.Infer)
                     If Not Feed.FeedArticles.Count = 0 Then
-                        Write(DoTranslation("Latest news:") + " ", False, ColTypes.ListEntry)
-                        Write(Feed.FeedArticles(0).ArticleTitle, True, ColTypes.ListValue)
+                        Write(DoTranslation("Latest news:") + " ", False, GetConsoleColor(ColTypes.ListEntry))
+                        Write(Feed.FeedArticles(0).ArticleTitle, True, GetConsoleColor(ColTypes.ListValue))
                     End If
                 Catch ex As Exception
                     Wdbg(DebugLevel.E, "Failed to get latest news: {0}", ex.Message)
                     WStkTrc(ex)
-                    Write(DoTranslation("Failed to get the latest news."), True, ColTypes.Error)
+                    Write(DoTranslation("Failed to get the latest news."), True, GetConsoleColor(ColTypes.Error))
                 End Try
             End If
         End Sub
@@ -238,21 +238,21 @@ Namespace Network.RSS
 
             'Try to get the feed list
             Try
-                Write(DoTranslation("Downloading feed list..."), True, ColTypes.Progress)
+                Write(DoTranslation("Downloading feed list..."), True, GetConsoleColor(ColTypes.Progress))
                 If String.IsNullOrEmpty(FeedListJsonText) Then FeedListJsonText = DownloadString("https://cdn.jsdelivr.net/gh/yavuz/news-feed-list-of-countries@master/news-feed-list-of-countries.json")
                 FeedListJson = JToken.Parse(FeedListJsonText)
                 FeedListJsonCountries = FeedListJson.SelectTokens("*").Where(Function(c) c("newSources").Any()).ToArray
             Catch ex As Exception
                 Wdbg(DebugLevel.E, "Failed to get feed list: {0}", ex.Message)
                 WStkTrc(ex)
-                Write(DoTranslation("Failed to download feed list."), True, ColTypes.Error)
+                Write(DoTranslation("Failed to download feed list."), True, GetConsoleColor(ColTypes.Error))
             End Try
 
             'Country selection
             While StepNumber = 1
                 'If the JSON token is actually full, show the list of countries
                 Console.Clear()
-                WriteWhere(DoTranslation("Select your country by pressing the arrow left or arrow right keys. Press ENTER to confirm your selection."), 0, 1, False, ColTypes.Neutral)
+                WriteWhere(DoTranslation("Select your country by pressing the arrow left or arrow right keys. Press ENTER to confirm your selection."), 0, 1, False, GetConsoleColor(ColTypes.Neutral))
                 Write(NewLine + NewLine + "   < ", False, ColTypes.Gray)
 
                 'The cursor positions for the arrow elements
@@ -260,9 +260,9 @@ Namespace Network.RSS
                 Dim ItemName As String = $"{FeedListJsonCountries(SelectedCountryIndex)("name")} [{FeedListJsonCountries(SelectedCountryIndex)("iso")}]"
                 Dim ArrowLeftXPosition As Integer = Console.CursorLeft + MaxLength + $" [{FeedListJsonCountries(SelectedCountryIndex)("iso")}]".Length
                 Dim ItemNameXPosition As Integer = Console.CursorLeft + ((ArrowLeftXPosition - Console.CursorLeft) / 2) - (ItemName.Length / 2)
-                WriteWhere(ItemName, ItemNameXPosition, Console.CursorTop, True, ColTypes.Option)
+                WriteWhere(ItemName, ItemNameXPosition, Console.CursorTop, True, GetConsoleColor(ColTypes.Option))
                 WriteWhere(" >", ArrowLeftXPosition, Console.CursorTop, False, ColTypes.Gray)
-                Write(NewLine + NewLine + DoTranslation("This country has {0} news sources."), True, ColTypes.Neutral, FeedListJsonCountries(SelectedCountryIndex)("newSources").Count)
+                Write(NewLine + NewLine + DoTranslation("This country has {0} news sources."), True, color:=GetConsoleColor(ColTypes.Neutral), FeedListJsonCountries(SelectedCountryIndex)("newSources").Count)
 
                 'Read and get response
                 Dim ConsoleResponse As ConsoleKeyInfo = Console.ReadKey(True)
@@ -296,17 +296,17 @@ Namespace Network.RSS
             End While
 
             'News source selection
-            Write(DoTranslation("Select your favorite news source by writing the number. Press ENTER to confirm your selection.") + NewLine, True, ColTypes.Neutral)
+            Write(DoTranslation("Select your favorite news source by writing the number. Press ENTER to confirm your selection.") + NewLine, True, GetConsoleColor(ColTypes.Neutral))
             For SourceIndex As Integer = 0 To FeedListJsonNewsSources.Length - 1
                 Dim NewsSource As JToken = FeedListJsonNewsSources(SourceIndex)
                 Dim NewsSourceTitle As String = NewsSource("site")("title").ToString().Trim
-                Write("{0}) {1}", True, ColTypes.Option, SourceIndex + 1, NewsSourceTitle)
+                Write("{0}) {1}", True, color:=GetConsoleColor(ColTypes.Option), SourceIndex + 1, NewsSourceTitle)
             Next
             Console.WriteLine()
             While StepNumber = 2
                 'Print input
                 Wdbg(DebugLevel.W, "{0} news sources.", FeedListJsonNewsSources.Length)
-                Write(">> ", False, ColTypes.Input)
+                Write(">> ", False, GetConsoleColor(ColTypes.Input))
 
                 'Read and parse the answer
                 Dim AnswerStr As String = ReadLine()
@@ -322,16 +322,16 @@ Namespace Network.RSS
                         StepNumber += 1
                     Else
                         Wdbg(DebugLevel.W, "Answer is out of range.")
-                        Write(DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), True, ColTypes.Error, FeedListJsonNewsSources.Length)
+                        Write(DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), True, color:=GetConsoleColor(ColTypes.Error), FeedListJsonNewsSources.Length)
                     End If
                 Else
                     Wdbg(DebugLevel.W, "Answer is not numeric.")
-                    Write(DoTranslation("The answer must be numeric."), True, ColTypes.Error)
+                    Write(DoTranslation("The answer must be numeric."), True, GetConsoleColor(ColTypes.Error))
                 End If
             End While
 
             'News feed selection
-            Write(DoTranslation("Select a feed for your favorite news source. Press ENTER to confirm your selection.") + NewLine, True, ColTypes.Neutral)
+            Write(DoTranslation("Select a feed for your favorite news source. Press ENTER to confirm your selection.") + NewLine, True, GetConsoleColor(ColTypes.Neutral))
             For SourceFeedIndex As Integer = 0 To FeedListJsonNewsSourceFeeds.Length - 1
                 Dim NewsSourceFeed As JToken = FeedListJsonNewsSourceFeeds(SourceFeedIndex)
                 Dim NewsSourceTitle As String = NewsSourceFeed("title")
@@ -340,13 +340,13 @@ Namespace Network.RSS
                     NewsSourceTitle = FeedListJsonNewsSources(SelectedNewsSourceIndex)("site")("title")
                 End If
                 NewsSourceTitle = NewsSourceTitle.Trim()
-                Write("{0}) {1}: {2}", True, ColTypes.Option, SourceFeedIndex + 1, NewsSourceTitle, NewsSourceFeed("url"))
+                Write("{0}) {1}: {2}", True, color:=GetConsoleColor(ColTypes.Option), SourceFeedIndex + 1, NewsSourceTitle, NewsSourceFeed("url"))
             Next
             Console.WriteLine()
             While StepNumber = 3
                 'Print input
                 Wdbg(DebugLevel.W, "{0} news source feeds.", FeedListJsonNewsSourceFeeds.Length)
-                Write(">> ", False, ColTypes.Input)
+                Write(">> ", False, GetConsoleColor(ColTypes.Input))
 
                 'Read and parse the answer
                 Dim AnswerStr As String = ReadLine()
@@ -361,11 +361,11 @@ Namespace Network.RSS
                         StepNumber += 1
                     Else
                         Wdbg(DebugLevel.W, "Answer is out of range.")
-                        Write(DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), True, ColTypes.Error, FeedListJsonNewsSourceFeeds.Length)
+                        Write(DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), True, color:=GetConsoleColor(ColTypes.Error), FeedListJsonNewsSourceFeeds.Length)
                     End If
                 Else
                     Wdbg(DebugLevel.W, "Answer is not numeric.")
-                    Write(DoTranslation("The answer must be numeric."), True, ColTypes.Error)
+                    Write(DoTranslation("The answer must be numeric."), True, GetConsoleColor(ColTypes.Error))
                 End If
             End While
 

@@ -23,9 +23,9 @@ Namespace Network.FTP.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If FtpConnected Then
-                Write(DoTranslation("Remote directory: {0}"), True, ColTypes.Neutral, FtpCurrentRemoteDir)
+                Write(DoTranslation("Remote directory: {0}"), True, color:=GetConsoleColor(ColTypes.Neutral), FtpCurrentRemoteDir)
             Else
-                Write(DoTranslation("You must connect to server before getting current remote directory."), True, ColTypes.Error)
+                Write(DoTranslation("You must connect to server before getting current remote directory."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

@@ -35,19 +35,19 @@ Namespace Network
             'Probe for adapter capabilities
             For Each adapter As NetworkInterface In adapters
                 adapterNumber += 1
-                Write("==========================================", True, ColTypes.Neutral)
+                Write("==========================================", True, GetConsoleColor(ColTypes.Neutral))
 
                 'See if it supports IPv6
                 If Not adapter.Supports(NetworkInterfaceComponent.IPv6) Then
                     Wdbg(DebugLevel.W, "{0} doesn't support IPv6. Trying to get information about IPv4.", adapter.Description)
-                    Write(DoTranslation("Adapter {0} doesn't support IPv6. Continuing..."), True, ColTypes.Error, adapter.Description)
+                    Write(DoTranslation("Adapter {0} doesn't support IPv6. Continuing..."), True, color:=GetConsoleColor(ColTypes.Error), adapter.Description)
                     NoV6 = True
                 End If
 
                 'See if it supports IPv4
                 If Not adapter.Supports(NetworkInterfaceComponent.IPv4) Then
                     Wdbg(DebugLevel.E, "{0} doesn't support IPv4.", adapter.Description)
-                    Write(DoTranslation("Adapter {0} doesn't support IPv4. Probe failed."), True, ColTypes.Error, adapter.Description)
+                    Write(DoTranslation("Adapter {0} doesn't support IPv4. Probe failed."), True, color:=GetConsoleColor(ColTypes.Error), adapter.Description)
                     NoV4 = True
                 End If
 
@@ -65,11 +65,11 @@ Namespace Network
 #Disable Warning BC42104
                         If p6 Is Nothing Then
                             Wdbg(DebugLevel.W, "Failed to get IPv6 properties.")
-                            Write(DoTranslation("Failed to get IPv6 properties for adapter {0}. Continuing..."), True, ColTypes.Error, adapter.Description)
+                            Write(DoTranslation("Failed to get IPv6 properties for adapter {0}. Continuing..."), True, color:=GetConsoleColor(ColTypes.Error), adapter.Description)
                         End If
                         If p Is Nothing Then
                             Wdbg(DebugLevel.E, "Failed to get IPv4 properties.")
-                            Write(DoTranslation("Failed to get properties for adapter {0}"), True, ColTypes.Error, adapter.Description)
+                            Write(DoTranslation("Failed to get properties for adapter {0}"), True, color:=GetConsoleColor(ColTypes.Error), adapter.Description)
                             Failed = True
                         End If
                         WStkTrc(ex)
@@ -79,7 +79,7 @@ Namespace Network
                     'Check if statistics is nothing
                     If s Is Nothing Then
                         Wdbg(DebugLevel.E, "Failed to get statistics.")
-                        Write(DoTranslation("Failed to get statistics for adapter {0}"), True, ColTypes.Error, adapter.Description)
+                        Write(DoTranslation("Failed to get statistics for adapter {0}"), True, color:=GetConsoleColor(ColTypes.Error), adapter.Description)
                         Failed = True
                     End If
 
@@ -98,7 +98,7 @@ Namespace Network
 
             'Print general IPv4 and IPv6 information
             If GeneralNetworkInformation Then
-                Write("==========================================", True, ColTypes.Neutral)
+                Write("==========================================", True, GetConsoleColor(ColTypes.Neutral))
                 PrintGeneralNetInfo(gs4, gs6)
             End If
         End Sub
@@ -119,13 +119,13 @@ Namespace Network
                   DoTranslation("DHCP Enabled:") + " {3}" + NewLine +
                   DoTranslation("Non-unicast packets:") + " {4}/{5}" + NewLine +
                   DoTranslation("Unicast packets:") + " {6}/{7}" + NewLine +
-                  DoTranslation("Error incoming/outgoing packets:") + " {8}/{9}", True, ColTypes.Neutral,
+                  DoTranslation("Error incoming/outgoing packets:") + " {8}/{9}", True, GetConsoleColor(ColTypes.Neutral),
                   AdapterNumber, NInterface.Description, Properties.Mtu, Properties.IsDhcpEnabled, Statistics.NonUnicastPacketsSent, Statistics.NonUnicastPacketsReceived,
                   Statistics.UnicastPacketsSent, Statistics.UnicastPacketsReceived, Statistics.IncomingPacketsWithErrors, Statistics.OutgoingPacketsWithErrors)
             Else
                 Write(DoTranslation("IPv4 information:") + NewLine +
                   DoTranslation("Adapter Number:") + " {0}" + NewLine +
-                  DoTranslation("Adapter Name:") + " {1}", True, ColTypes.Neutral,
+                  DoTranslation("Adapter Name:") + " {1}", True, GetConsoleColor(ColTypes.Neutral),
                   AdapterNumber, NInterface.Description)
             End If
         End Sub
@@ -141,12 +141,12 @@ Namespace Network
                 Write(DoTranslation("IPv6 information:") + NewLine +
                   DoTranslation("Adapter Number:") + " {0}" + NewLine +
                   DoTranslation("Adapter Name:") + " {1}" + NewLine +
-                  DoTranslation("Maximum Transmission Unit: {2} Units"), True, ColTypes.Neutral,
+                  DoTranslation("Maximum Transmission Unit: {2} Units"), True, GetConsoleColor(ColTypes.Neutral),
                   AdapterNumber, NInterface.Description, Properties.Mtu)
             Else
                 Write(DoTranslation("IPv6 information:") + NewLine +
                   DoTranslation("Adapter Number:") + " {0}" + NewLine +
-                  DoTranslation("Adapter Name:") + " {1}", True, ColTypes.Neutral,
+                  DoTranslation("Adapter Name:") + " {1}", True, GetConsoleColor(ColTypes.Neutral),
                   AdapterNumber, NInterface.Description)
             End If
         End Sub
@@ -164,7 +164,7 @@ Namespace Network
               DoTranslation("General IPv4 properties") + NewLine +
               DoTranslation("Packets (inbound):") + " {7}/{8}" + NewLine +
               DoTranslation("Packets (outbound):") + " {9}/{10}" + NewLine +
-              DoTranslation("Errors in received packets:") + " {11}/{12}/{13}", True, ColTypes.Neutral,
+              DoTranslation("Errors in received packets:") + " {11}/{12}/{13}", True, GetConsoleColor(ColTypes.Neutral),
               IPv6Stat.ReceivedPackets, IPv6Stat.ReceivedPacketsDelivered, IPv6Stat.OutputPacketRequests, IPv6Stat.OutputPacketsDiscarded, IPv6Stat.ReceivedPacketsWithAddressErrors,
               IPv6Stat.ReceivedPacketsWithHeadersErrors, IPv6Stat.ReceivedPacketsWithUnknownProtocol, IPv4Stat.ReceivedPackets, IPv4Stat.ReceivedPacketsDelivered, IPv4Stat.OutputPacketRequests,
               IPv4Stat.OutputPacketsDiscarded, IPv4Stat.ReceivedPacketsWithAddressErrors, IPv4Stat.ReceivedPacketsWithHeadersErrors, IPv4Stat.ReceivedPacketsWithUnknownProtocol)

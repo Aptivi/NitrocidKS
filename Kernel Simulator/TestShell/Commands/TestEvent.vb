@@ -28,7 +28,7 @@ Namespace TestShell.Commands
                 Dim SubName As String = "Raise" + ListArgs(0)
                 CallByName(New Events, SubName, CallType.Method)
             Catch ex As Exception
-                Write(DoTranslation("Failure to raise event {0}: {1}"), True, ColTypes.Error, ListArgs(0))
+                TextWriterColor.Write(DoTranslation("Failure to raise event {0}: {1}"), True, color:=GetConsoleColor(ColTypes.Error), ListArgs(0))
             End Try
         End Sub
 

@@ -44,7 +44,7 @@ Namespace Misc.Calendar
             Dim CalendarCellOptions As New List(Of CellOptions)
 
             'Populate the calendar data
-            WriteWhere(CalendarTitle, CInt((Console.WindowWidth - CalendarTitle.Length) / 2), Console.CursorTop, True, ColTypes.Neutral)
+            WriteWhere(CalendarTitle, CInt((Console.WindowWidth - CalendarTitle.Length) / 2), Console.CursorTop, True, GetConsoleColor(ColTypes.Neutral))
             Console.WriteLine()
             For CurrentDay As Integer = 1 To DateTo.Day
                 Dim CurrentDate As New Date(Year, Month, CurrentDay, CurrentCult.DateTimeFormat.Calendar)

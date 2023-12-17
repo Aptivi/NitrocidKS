@@ -42,8 +42,8 @@ Namespace Shell.Commands
                         Dim spent As New Stopwatch
                         spent.Start() 'Time when you're on a breakpoint is counted
                         Dim encrypted As String = GetEncryptedFile(file, AlgorithmEnum)
-                        Write("{0} ({1})", True, ColTypes.Neutral, encrypted, AlgorithmEnum)
-                        Write(DoTranslation("Time spent: {0} milliseconds"), True, ColTypes.Neutral, spent.ElapsedMilliseconds)
+                        Write("{0} ({1})", True, color:=GetConsoleColor(ColTypes.Neutral), encrypted, AlgorithmEnum)
+                        Write(DoTranslation("Time spent: {0} milliseconds"), True, color:=GetConsoleColor(ColTypes.Neutral), spent.ElapsedMilliseconds)
                         If UseRelative Then
                             FileBuilder.AppendLine($"- {ListArgsOnly(1)}: {encrypted} ({AlgorithmEnum})")
                         Else
@@ -55,8 +55,8 @@ Namespace Shell.Commands
                     Dim spent As New Stopwatch
                     spent.Start() 'Time when you're on a breakpoint is counted
                     Dim encrypted As String = GetEncryptedFile(file, AlgorithmEnum)
-                    Write(encrypted, True, ColTypes.Neutral)
-                    Write(DoTranslation("Time spent: {0} milliseconds"), True, ColTypes.Neutral, spent.ElapsedMilliseconds)
+                    Write(encrypted, True, GetConsoleColor(ColTypes.Neutral))
+                    Write(DoTranslation("Time spent: {0} milliseconds"), True, color:=GetConsoleColor(ColTypes.Neutral), spent.ElapsedMilliseconds)
                     If UseRelative Then
                         FileBuilder.AppendLine($"- {ListArgsOnly(1)}: {encrypted} ({AlgorithmEnum})")
                     Else
@@ -64,7 +64,7 @@ Namespace Shell.Commands
                     End If
                     spent.Stop()
                 Else
-                    Write(DoTranslation("Invalid encryption algorithm."), True, ColTypes.Error)
+                    Write(DoTranslation("Invalid encryption algorithm."), True, GetConsoleColor(ColTypes.Error))
                 End If
                 If Not out = "" Then
                     Dim FStream As New StreamWriter(out)
@@ -72,13 +72,13 @@ Namespace Shell.Commands
                     FStream.Flush()
                 End If
             Else
-                Write(DoTranslation("{0} is not found."), True, ColTypes.Error, file)
+                Write(DoTranslation("{0} is not found."), True, color:=GetConsoleColor(ColTypes.Error), file)
             End If
         End Sub
 
         Public Overrides Sub HelpHelper()
-            Write(DoTranslation("This command has the below switches that change how it works:"), True, ColTypes.Neutral)
-            Write("  -relative: ", False, ColTypes.ListEntry) : Write(DoTranslation("Uses relative path instead of absolute"), True, ColTypes.ListValue)
+            Write(DoTranslation("This command has the below switches that change how it works:"), True, GetConsoleColor(ColTypes.Neutral))
+            Write("  -relative: ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(DoTranslation("Uses relative path instead of absolute"), True, GetConsoleColor(ColTypes.ListValue))
         End Sub
 
     End Class

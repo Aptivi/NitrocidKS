@@ -82,7 +82,7 @@ Namespace Misc.Games
             Dim Score, CommentNumber As Long
 
             'Download the names list
-            Write(DoTranslation("Downloading names..."), True, ColTypes.Progress)
+            Write(DoTranslation("Downloading names..."), True, GetConsoleColor(ColTypes.Progress))
             PopulateNames()
             For NameNum As Integer = 1 To LoveOrHateUsersCount
                 Dim GeneratedName As String = GenerateNames()(0)
@@ -103,10 +103,10 @@ Namespace Misc.Games
 
                 'Ask the user the question
                 WriteSeparator("[S: {0} / C: {1}]", True, Score, CommentNumber)
-                Write(DoTranslation("If someone made this comment to your video:"), True, ColTypes.Neutral)
-                Write("- {0}:", False, ColTypes.ListEntry, RandomUser)
-                Write(" {0}", True, ColTypes.ListValue, RandomComment)
-                Write(DoTranslation("How would you respond?") + " <A/T/Q> ", False, ColTypes.Input)
+                Write(DoTranslation("If someone made this comment to your video:"), True, GetConsoleColor(ColTypes.Neutral))
+                Write("- {0}:", False, color:=GetConsoleColor(ColTypes.ListEntry), RandomUser)
+                Write(" {0}", True, color:=GetConsoleColor(ColTypes.ListValue), RandomComment)
+                Write(DoTranslation("How would you respond?") + " <A/T/Q> ", False, GetConsoleColor(ColTypes.Input))
                 Response = Console.ReadKey.KeyChar
                 Console.WriteLine()
                 Wdbg(DebugLevel.I, "Response: {0}", Response)
@@ -117,22 +117,22 @@ Namespace Misc.Games
                         Select Case Type
                             Case CommentType.Love
                                 Wdbg(DebugLevel.I, "Apologized to love comment")
-                                Write("[-1] " + DoTranslation("Apologized to love comment. Not good enough."), True, ColTypes.Neutral)
+                                Write("[-1] " + DoTranslation("Apologized to love comment. Not good enough."), True, GetConsoleColor(ColTypes.Neutral))
                                 Score -= 1
                             Case CommentType.Hate
                                 Wdbg(DebugLevel.I, "Apologized to hate comment")
-                                Write("[+1] " + DoTranslation("You've apologized to a hate comment! Excellent!"), True, ColTypes.Neutral)
+                                Write("[+1] " + DoTranslation("You've apologized to a hate comment! Excellent!"), True, GetConsoleColor(ColTypes.Neutral))
                                 Score += 1
                         End Select
                     Case "t" 'Thank
                         Select Case Type
                             Case CommentType.Love
                                 Wdbg(DebugLevel.I, "Thanked love comment")
-                                Write("[+1] " + DoTranslation("Great! {0} will appreciate your thanks."), True, ColTypes.Neutral, RandomUser)
+                                Write("[+1] " + DoTranslation("Great! {0} will appreciate your thanks."), True, color:=GetConsoleColor(ColTypes.Neutral), RandomUser)
                                 Score += 1
                             Case CommentType.Hate
                                 Wdbg(DebugLevel.I, "Thanked hate comment")
-                                Write("[-1] " + DoTranslation("You just thanked the hater for the hate comment!"), True, ColTypes.Neutral)
+                                Write("[-1] " + DoTranslation("You just thanked the hater for the hate comment!"), True, GetConsoleColor(ColTypes.Neutral))
                                 Score -= 1
                         End Select
                     Case "q" 'Quit
@@ -140,7 +140,7 @@ Namespace Misc.Games
                         ExitRequested = True
                     Case Else
                         Wdbg(DebugLevel.I, "No such selection")
-                        Write(DoTranslation("Invalid selection. Going to the next comment..."), True, ColTypes.Error)
+                        Write(DoTranslation("Invalid selection. Going to the next comment..."), True, GetConsoleColor(ColTypes.Error))
                 End Select
             End While
         End Sub

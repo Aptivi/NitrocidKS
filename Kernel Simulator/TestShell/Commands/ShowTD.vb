@@ -24,7 +24,7 @@ Namespace TestShell.Commands
         Implements ICommand
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
-            Write(Render, True, ColTypes.Neutral)
+            Write(Render, True, GetConsoleColor(ColTypes.Neutral))
         End Sub
 
     End Class

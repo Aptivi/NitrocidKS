@@ -25,7 +25,7 @@ Namespace Network.SFTP.Commands
             If Not SFTPConnected Then
                 SFTPQuickConnect()
             Else
-                Write(DoTranslation("You should disconnect from server before connecting to another server"), True, ColTypes.Error)
+                Write(DoTranslation("You should disconnect from server before connecting to another server"), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

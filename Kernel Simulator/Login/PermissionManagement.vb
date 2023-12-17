@@ -73,17 +73,17 @@ Namespace Login
                 Wdbg(DebugLevel.I, "Mode: {0}", PermissionMode)
                 If PermissionMode = PermissionManagementMode.Allow Then
                     AddPermission(PermType, Username)
-                    Write(DoTranslation("The user {0} has been added to the ""{1}"" list."), True, ColTypes.Neutral, Username, PermType.ToString)
+                    Write(DoTranslation("The user {0} has been added to the ""{1}"" list."), True, color:=GetConsoleColor(ColTypes.Neutral), Username, PermType.ToString)
                 ElseIf PermissionMode = PermissionManagementMode.Disallow Then
                     RemovePermission(PermType, Username)
-                    Write(DoTranslation("The user {0} has been removed from the ""{1}"" list."), True, ColTypes.Neutral, Username, PermType.ToString)
+                    Write(DoTranslation("The user {0} has been removed from the ""{1}"" list."), True, color:=GetConsoleColor(ColTypes.Neutral), Username, PermType.ToString)
                 Else
                     Wdbg(DebugLevel.W, "Mode is invalid")
-                    Write(DoTranslation("Invalid mode {0}"), True, ColTypes.Error, PermissionMode)
+                    Write(DoTranslation("Invalid mode {0}"), True, color:=GetConsoleColor(ColTypes.Error), PermissionMode)
                 End If
             Catch ex As Exception
                 Write(DoTranslation("You have either found a bug, or the permission you tried to add or remove is already done, or other error.") + NewLine +
-              DoTranslation("Error {0}: {1}"), True, ColTypes.Error, ex.GetType.FullName, ex.Message)
+                      DoTranslation("Error {0}: {1}"), True, color:=GetConsoleColor(ColTypes.Error), ex.GetType.FullName, ex.Message)
                 WStkTrc(ex)
             End Try
         End Sub

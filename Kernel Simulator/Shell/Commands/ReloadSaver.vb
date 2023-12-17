@@ -27,13 +27,13 @@ Namespace Shell.Commands
             If Not SafeMode Then
                 ParseCustomSaver(ListArgs(0))
             Else
-                Write(DoTranslation("Reloading not allowed in safe mode."), True, ColTypes.Error)
+                Write(DoTranslation("Reloading not allowed in safe mode."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 
         Public Overrides Sub HelpHelper()
             'Print available screensavers
-            Write(DoTranslation("where customsaver will be") + " {0}", True, ColTypes.Neutral, String.Join(", ", CustomSavers.Keys))
+            Write(DoTranslation("where customsaver will be") + " {0}", True, color:=GetConsoleColor(ColTypes.Neutral), String.Join(", ", CustomSavers.Keys))
         End Sub
 
     End Class

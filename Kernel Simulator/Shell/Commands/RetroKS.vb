@@ -37,7 +37,7 @@ Namespace Shell.Commands
 #Else
             Dim ExecutableName As String = "RetroKS.exe"
 #End If
-            Write(DoTranslation("Checking for updates..."), True, ColTypes.Neutral)
+            Write(DoTranslation("Checking for updates..."), True, GetConsoleColor(ColTypes.Neutral))
 
             'Because api.github.com requires the UserAgent header to be put, else, 403 error occurs. Fortunately for us, "Aptivi" is enough.
             WClient.DefaultRequestHeaders.Add("User-Agent", "Aptivi")
@@ -82,14 +82,14 @@ Namespace Shell.Commands
             'Check to see if we already have RetroKS installed and up-to-date
             If (FileExists(RetroExecKSPath) AndAlso SemVer.ParseWithRev(AssemblyName.GetAssemblyName(RetroExecKSPath).Version.ToString()) < SortedVersions(0).UpdateVersion) Or
                 Not FileExists(RetroExecKSPath) Then
-                Write(DoTranslation("Downloading version") + " {0}...", True, ColTypes.Neutral, SortedVersions(0).UpdateVersion.ToString)
+                Write(DoTranslation("Downloading version") + " {0}...", True, color:=GetConsoleColor(ColTypes.Neutral), SortedVersions(0).UpdateVersion.ToString)
 
                 'Download RetroKS
                 Dim RetroKSURI As Uri = SortedVersions(0).UpdateURL
                 DownloadFile(RetroKSURI.ToString, RetroKSPath)
 
                 'Extract it
-                Write(DoTranslation("Installing version") + " {0}...", True, ColTypes.Neutral, SortedVersions(0).UpdateVersion.ToString)
+                Write(DoTranslation("Installing version") + " {0}...", True, color:=GetConsoleColor(ColTypes.Neutral), SortedVersions(0).UpdateVersion.ToString)
                 Using archive = RarArchive.Open(RetroKSPath)
                     For Each entry In archive.Entries.Where(Function(e) Not e.IsDirectory)
                         entry.WriteToDirectory(RetroKSDownloadPath, New ExtractionOptions() With {
@@ -101,7 +101,7 @@ Namespace Shell.Commands
             End If
 
             'Now, run the assembly
-            Write(DoTranslation("Going back to 2018..."), True, ColTypes.Neutral)
+            Write(DoTranslation("Going back to 2018..."), True, GetConsoleColor(ColTypes.Neutral))
             Assembly.LoadFrom(RetroExecKSPath).EntryPoint.Invoke("", Array.Empty(Of Object))
 
             'Clear the console

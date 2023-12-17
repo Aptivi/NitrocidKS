@@ -116,7 +116,7 @@ Namespace Files.Operations
             For Each SourceFile As FileInfo In SourceFiles
                 Dim DestinationFilePath As String = Path.Combine(Destination, SourceFile.Name)
                 Wdbg(DebugLevel.I, "Copying file {0} to destination...", DestinationFilePath)
-                If ShowProgress Then Write("-> {0}", True, ColTypes.Neutral, DestinationFilePath)
+                If ShowProgress Then Write("-> {0}", True, color:=GetConsoleColor(ColTypes.Neutral), DestinationFilePath)
                 SourceFile.CopyTo(DestinationFilePath, True)
             Next
 
@@ -124,7 +124,7 @@ Namespace Files.Operations
             For Each SourceDirectory As DirectoryInfo In SourceDirectories
                 Dim DestinationDirectoryPath As String = Path.Combine(Destination, SourceDirectory.Name)
                 Wdbg(DebugLevel.I, "Calling CopyDirectory() with destination {0}...", DestinationDirectoryPath)
-                If ShowProgress Then Write("* {0}", True, ColTypes.Neutral, DestinationDirectoryPath)
+                If ShowProgress Then Write("* {0}", True, color:=GetConsoleColor(ColTypes.Neutral), DestinationDirectoryPath)
                 CopyDirectory(SourceDirectory.FullName, DestinationDirectoryPath)
             Next
         End Sub

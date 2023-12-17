@@ -64,7 +64,7 @@ Namespace Shell.Shells
                     CancelRequested = False
                     Bail = True
                 Catch ex As Exception
-                    Write(DoTranslation("Error in test shell: {0}"), True, ColTypes.Error, ex.Message)
+                    Write(DoTranslation("Error in test shell: {0}"), True, color:=GetConsoleColor(ColTypes.Error), ex.Message)
                     Wdbg(DebugLevel.E, "Error: {0}", ex.Message)
                     WStkTrc(ex)
                 End Try

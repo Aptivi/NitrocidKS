@@ -235,7 +235,7 @@ Namespace Misc.Editors.HexEdit
                     '   0x00000020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
                     '   0x00000030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
                     '... and so on.
-                    Write($"0x{StartByte - 1:X8}", False, ColTypes.ListEntry)
+                    Write($"0x{StartByte - 1:X8}", False, GetConsoleColor(ColTypes.ListEntry))
                     Dim ByteWritePositionX As Integer = Console.CursorLeft + 2
                     Dim ByteCharWritePositionX As Integer = 61 + (ByteWritePositionX - 12)
                     Dim ByteNumberEachSixteen As Integer = 1
@@ -256,8 +256,8 @@ Namespace Misc.Editors.HexEdit
                             RenderedByteChar = ProjectedByteChar
                         End If
                         Wdbg(DebugLevel.I, "Rendered byte char: {0}", ProjectedByteChar)
-                        WriteWhere($"{CurrentByte:X2}", ByteWritePositionX + (3 * (ByteNumberEachSixteen - 1)), Console.CursorTop, False, ColTypes.ListValue)
-                        WriteWhere($"{RenderedByteChar}", ByteCharWritePositionX + (ByteNumberEachSixteen - 1), Console.CursorTop, False, ColTypes.ListValue)
+                        WriteWhere($"{CurrentByte:X2}", ByteWritePositionX + (3 * (ByteNumberEachSixteen - 1)), Console.CursorTop, False, GetConsoleColor(ColTypes.ListValue))
+                        WriteWhere($"{RenderedByteChar}", ByteCharWritePositionX + (ByteNumberEachSixteen - 1), Console.CursorTop, False, GetConsoleColor(ColTypes.ListValue))
 
                         'Increase the byte number
                         ByteNumberEachSixteen += 1
@@ -265,17 +265,17 @@ Namespace Misc.Editors.HexEdit
                         'Check to see if we've exceeded 16 bytes
                         If ByteNumberEachSixteen > 16 Then
                             'OK, let's increase the byte iteration and get the next line ready
-                            Write(NewLine + $"0x{CurrentByteNumber:X8}", False, ColTypes.ListEntry)
+                            Write(NewLine + $"0x{CurrentByteNumber:X8}", False, GetConsoleColor(ColTypes.ListEntry))
                             ByteWritePositionX = Console.CursorLeft + 2
                             ByteCharWritePositionX = 61 + (ByteWritePositionX - 12)
                             ByteNumberEachSixteen = 1
                         End If
                     Next
-                    Write("", True, ColTypes.Neutral)
+                    Write("", True, GetConsoleColor(ColTypes.Neutral))
                 ElseIf StartByte > HexEdit_FileBytes.LongCount Then
-                    Write(DoTranslation("The specified start byte number may not be larger than the file size."), True, ColTypes.Error)
+                    Write(DoTranslation("The specified start byte number may not be larger than the file size."), True, GetConsoleColor(ColTypes.Error))
                 ElseIf EndByte > HexEdit_FileBytes.LongCount Then
-                    Write(DoTranslation("The specified end byte number may not be larger than the file size."), True, ColTypes.Error)
+                    Write(DoTranslation("The specified end byte number may not be larger than the file size."), True, GetConsoleColor(ColTypes.Error))
                 End If
             Else
                 Throw New InvalidOperationException(DoTranslation("The hex editor hasn't opened a file stream yet."))
@@ -307,7 +307,7 @@ Namespace Misc.Editors.HexEdit
                         If HexEdit_FileBytes(ByteNumber - 1) = ByteContent Then
                             Dim ByteRenderStart As Long = ByteNumber - 2
                             Dim ByteRenderEnd As Long = ByteNumber + 2
-                            Write($"- 0x{ByteNumber:X8}: ", False, ColTypes.ListEntry)
+                            Write($"- 0x{ByteNumber:X8}: ", False, GetConsoleColor(ColTypes.ListEntry))
                             For ByteRenderNumber As Long = ByteRenderStart To ByteRenderEnd
                                 If ByteRenderStart < 0 Then ByteRenderStart = 1
                                 If ByteRenderEnd > HexEdit_FileBytes.LongCount Then ByteRenderEnd = HexEdit_FileBytes.LongCount
@@ -324,13 +324,13 @@ Namespace Misc.Editors.HexEdit
                                 End If
                                 Write($"0x{ByteRenderNumber:X2}({RenderedByteChar}) ", False, If(UseHighlight, ColTypes.Success, ColTypes.ListValue))
                             Next
-                            Write("", True, ColTypes.Neutral)
+                            Write("", True, GetConsoleColor(ColTypes.Neutral))
                         End If
                     Next
                 ElseIf StartByte > HexEdit_FileBytes.LongCount Then
-                    Write(DoTranslation("The specified start byte number may not be larger than the file size."), True, ColTypes.Error)
+                    Write(DoTranslation("The specified start byte number may not be larger than the file size."), True, GetConsoleColor(ColTypes.Error))
                 ElseIf EndByte > HexEdit_FileBytes.LongCount Then
-                    Write(DoTranslation("The specified end byte number may not be larger than the file size."), True, ColTypes.Error)
+                    Write(DoTranslation("The specified end byte number may not be larger than the file size."), True, GetConsoleColor(ColTypes.Error))
                 End If
             Else
                 Throw New InvalidOperationException(DoTranslation("The hex editor hasn't opened a file stream yet."))
@@ -372,9 +372,9 @@ Namespace Misc.Editors.HexEdit
                         End If
                     Next
                 ElseIf StartByte > HexEdit_FileBytes.LongCount Then
-                    Write(DoTranslation("The specified start byte number may not be larger than the file size."), True, ColTypes.Error)
+                    Write(DoTranslation("The specified start byte number may not be larger than the file size."), True, GetConsoleColor(ColTypes.Error))
                 ElseIf EndByte > HexEdit_FileBytes.LongCount Then
-                    Write(DoTranslation("The specified end byte number may not be larger than the file size."), True, ColTypes.Error)
+                    Write(DoTranslation("The specified end byte number may not be larger than the file size."), True, GetConsoleColor(ColTypes.Error))
                 End If
             Else
                 Throw New InvalidOperationException(DoTranslation("The hex editor hasn't opened a file stream yet."))

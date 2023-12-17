@@ -26,10 +26,10 @@ Namespace Network.HTTP.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             If HTTPConnected = True Then
                 'Print a message
-                Write(DoTranslation("Deleting {0}..."), True, ColTypes.Progress, ListArgs(0))
+                Write(DoTranslation("Deleting {0}..."), True, color:=GetConsoleColor(ColTypes.Progress), ListArgs(0))
 
                 'Make a confirmation message so user will not accidentally delete a file or folder
-                Write(DoTranslation("Are you sure you want to delete {0} <y/n>?") + " ", False, ColTypes.Input, ListArgs(0))
+                Write(DoTranslation("Are you sure you want to delete {0} <y/n>?") + " ", False, color:=GetConsoleColor(ColTypes.Input), ListArgs(0))
                 Dim answer As String = Console.ReadKey.KeyChar
                 Console.WriteLine()
 
@@ -37,18 +37,18 @@ Namespace Network.HTTP.Commands
                     Dim DeleteTask As Task = HttpDelete(ListArgs(0))
                     DeleteTask.Wait()
                 Catch aex As AggregateException
-                    Write(aex.Message + ":", True, ColTypes.Error)
+                    Write(aex.Message + ":", True, GetConsoleColor(ColTypes.Error))
                     For Each InnerException As Exception In aex.InnerExceptions
-                        Write("- " + InnerException.Message, True, ColTypes.Error)
+                        Write("- " + InnerException.Message, True, GetConsoleColor(ColTypes.Error))
                         If InnerException.InnerException IsNot Nothing Then
-                            Write("- " + InnerException.InnerException.Message, True, ColTypes.Error)
+                            Write("- " + InnerException.InnerException.Message, True, GetConsoleColor(ColTypes.Error))
                         End If
                     Next
                 Catch ex As Exception
-                    Write(ex.Message, True, ColTypes.Error)
+                    Write(ex.Message, True, GetConsoleColor(ColTypes.Error))
                 End Try
             Else
-                Write(DoTranslation("You must connect to server with administrative privileges before performing the deletion."), True, ColTypes.Error)
+                Write(DoTranslation("You must connect to server with administrative privileges before performing the deletion."), True, GetConsoleColor(ColTypes.Error))
             End If
         End Sub
 

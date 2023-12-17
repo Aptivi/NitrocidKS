@@ -72,8 +72,8 @@ Namespace Misc.Splash.Splashes
         End Sub
 
         Public Sub Report(Progress As Integer, ProgressReport As String, ParamArray Vars() As Object) Implements ISplash.Report
-            If Not Beginning Then Write(".", True, ColTypes.Neutral)
-            Write($"{ProgressReport}:", False, ColTypes.Neutral, Vars)
+            If Not Beginning Then Write(".", True, GetConsoleColor(ColTypes.Neutral))
+            Write($"{ProgressReport}:", False, GetConsoleColor(ColTypes.Neutral), Vars)
             Beginning = False
         End Sub
 
