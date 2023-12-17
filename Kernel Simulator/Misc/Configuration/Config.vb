@@ -48,6 +48,7 @@ Imports KS.Network.Transfer
 Imports KS.Shell.Prompts
 Imports MimeKit.Text
 Imports Newtonsoft.Json.Linq
+Imports Terminaux.Inputs.Styles.Choice
 
 Namespace Misc.Configuration
     Public Module Config

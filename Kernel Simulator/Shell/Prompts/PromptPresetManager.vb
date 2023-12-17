@@ -31,6 +31,7 @@ Imports KS.Shell.Prompts.Presets.Hex
 Imports KS.Shell.Prompts.Presets.FTP
 Imports KS.Shell.Prompts.Presets.RAR
 Imports KS.Kernel.Exceptions
+Imports Terminaux.Inputs.Styles.Choice
 
 Namespace Shell.Prompts
     Public Module PromptPresetManager
@@ -118,7 +119,7 @@ Namespace Shell.Prompts
             'Check to see if we have the preset
             If Presets.ContainsKey(PresetName) Then
                 SetPresetInternal(PresetName, ShellType, Presets)
-            ElseIf CustomPresets.ContainsKey(Presetname) Then
+            ElseIf CustomPresets.ContainsKey(PresetName) Then
                 SetPresetInternal(PresetName, ShellType, CustomPresets)
             Else
                 If ThrowOnNotFound Then

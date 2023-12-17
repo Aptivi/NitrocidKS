@@ -16,6 +16,8 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Imports TermSelectionStyle = Terminaux.Inputs.Styles.Selection.SelectionStyle
+
 Namespace ConsoleBase.Inputs.Styles
     Public Module SelectionStyle
 
@@ -35,49 +37,7 @@ Namespace ConsoleBase.Inputs.Styles
         ''' <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
         ''' <param name="AnswersTitles">Working titles for each answer. It must be the same amount as the answers.</param>
         Public Function PromptSelection(Question As String, AnswersStr As String, AnswersTitles() As String) As Integer
-            Dim HighlightedAnswer As Integer = 1
-            While True
-                'Variables
-                Dim answers As String() = AnswersStr.Split("/")
-                Dim Answer As ConsoleKeyInfo
-                Console.Clear()
-
-                'Check to see if the answer titles are the same
-                If answers.Length <> AnswersTitles.Length Then
-                    ReDim Preserve AnswersTitles(answers.Length - 1)
-                End If
-
-                'Ask a question
-                Write(Question + NewLine, True, ColTypes.Question)
-                For AnswerIndex As Integer = 0 To answers.Length - 1
-                    Dim AnswerInstance As String = answers(AnswerIndex)
-                    Dim AnswerTitle As String = AnswersTitles(AnswerIndex)
-                    Write($" {AnswerInstance}) {AnswerTitle}", True, If(AnswerIndex + 1 = HighlightedAnswer, ColTypes.SelectedOption, ColTypes.Option))
-                Next
-
-                'Wait for an answer
-                Answer = Console.ReadKey(True)
-                Console.WriteLine()
-
-                'Check the answer
-                Select Case Answer.Key
-                    Case ConsoleKey.UpArrow
-                        HighlightedAnswer -= 1
-                        If HighlightedAnswer = 0 Then
-                            HighlightedAnswer = answers.Length
-                        End If
-                    Case ConsoleKey.DownArrow
-                        If HighlightedAnswer = answers.Length Then
-                            HighlightedAnswer = 0
-                        End If
-                        HighlightedAnswer += 1
-                    Case ConsoleKey.Enter
-                        Return HighlightedAnswer
-                    Case ConsoleKey.Escape
-                        Return -1
-                End Select
-            End While
-            Return -1
+            Return TermSelectionStyle.PromptSelection(Question, AnswersStr, AnswersTitles)
         End Function
 
     End Module

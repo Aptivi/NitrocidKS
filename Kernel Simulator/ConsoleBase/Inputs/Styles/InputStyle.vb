@@ -16,6 +16,8 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Imports TermInputStyle = Terminaux.Inputs.Styles.InputStyle
+
 Namespace ConsoleBase.Inputs.Styles
     Public Module InputStyle
 
@@ -23,21 +25,7 @@ Namespace ConsoleBase.Inputs.Styles
         ''' Prompts user for input (answer the question with your own answers)
         ''' </summary>
         Public Function PromptInput(Question As String) As String
-            While True
-                'Variables
-                Dim Answer As String
-                Wdbg(DebugLevel.I, "Question: {0}", Question)
-
-                'Ask a question
-                Write(Question, False, ColTypes.Question)
-                SetConsoleColor(InputColor)
-
-                'Wait for an answer
-                Answer = ReadLine()
-                Wdbg(DebugLevel.I, "Answer: {0}", Answer)
-
-                Return Answer
-            End While
+            Return TermInputStyle.PromptInput(Question)
         End Function
 
     End Module

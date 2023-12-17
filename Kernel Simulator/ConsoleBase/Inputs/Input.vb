@@ -1,4 +1,5 @@
 ﻿
+
 '    Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 '
 '    This file is part of Kernel Simulator
@@ -16,12 +17,8 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-
-#If NETCOREAPP Then
-Imports System.Threading
-#End If
-
 Imports Terminaux.Reader
+Imports TermInput = Terminaux.Inputs.Input
 
 Namespace ConsoleBase.Inputs
     Public Module Input
@@ -64,11 +61,7 @@ Namespace ConsoleBase.Inputs
         ''' <param name="DefaultValue">Default value</param>
         ''' <param name="UseCtrlCAsInput">Whether to treat CTRL + C as input</param>
         Public Function ReadLine(InputText As String, DefaultValue As String, UseCtrlCAsInput As Boolean) As String
-            'Store the initial CtrlCEnabled value. This is so we can restore the state of CTRL + C being enabled.
-            Dim ReaderSettings As TermReaderSettings = GlobalSettings
-            ReaderSettings.TreatCtrlCAsInput = UseCtrlCAsInput
-            Dim Output As String = TermReader.Read(InputText, DefaultValue, ReaderSettings)
-            Return Output
+            Return TermInput.ReadLine(InputText, DefaultValue, New TermReaderSettings() With {.TreatCtrlCAsInput = UseCtrlCAsInput})
         End Function
 
         ''' <summary>
@@ -87,11 +80,7 @@ Namespace ConsoleBase.Inputs
         ''' </summary>
         ''' <param name="MaskChar">Specifies the password mask character</param>
         Public Function ReadLineNoInput(MaskChar As Char) As String
-            'Store the initial v value. This is so we can restore the state of MaskChar.
-            Dim ReaderSettings As TermReaderSettings = GlobalSettings
-            ReaderSettings.PasswordMaskChar = MaskChar
-            Dim Output As String = TermReader.ReadPassword("", ReaderSettings)
-            Return Output
+            Return TermInput.ReadLineNoInput(MaskChar)
         End Function
 
         ''' <summary>
@@ -100,66 +89,15 @@ Namespace ConsoleBase.Inputs
         ''' <param name="Intercept"></param>
         ''' <param name="Timeout"></param>
         Public Function ReadKeyTimeout(Intercept As Boolean, Timeout As TimeSpan) As ConsoleKeyInfo
-            Dim CurrentMilliseconds As Double
-            While Not Console.KeyAvailable
-                If Not CurrentMilliseconds = Timeout.TotalMilliseconds Then
-                    CurrentMilliseconds += 1
-                Else
-                    Throw New Exceptions.ConsoleReadTimeoutException(DoTranslation("User didn't provide any input in a timely fashion."))
-                End If
-                Threading.Thread.Sleep(1)
-            End While
-            Return Console.ReadKey(Intercept)
-        End Function
-
-        ''' <summary>
-        ''' Reads the next line of characters until the condition is met or the user pressed ENTER
-        ''' </summary>
-        ''' <param name="Condition">The condition to be met</param>
-        Public Function ReadLineUntil(ByRef Condition As Boolean) As String
-            Dim Final As String = ""
-            Dim Finished As Boolean
-            While Not Finished
-                Dim KeyInfo As ConsoleKeyInfo
-                Dim KeyCharacter As Char
-                While Not Console.KeyAvailable
-                    If Condition Then Finished = True
-                    Threading.Thread.Sleep(1)
-                    If Finished Then Exit While
-                End While
-                If Not Finished Then
-                    KeyInfo = Console.ReadKey(True)
-                    KeyCharacter = KeyInfo.KeyChar
-                    If KeyCharacter = vbCr Or KeyCharacter = vbLf Then
-                        Finished = True
-                    ElseIf KeyInfo.Key = ConsoleKey.Backspace Then
-                        If Not Final.Length = 0 Then
-                            Final = Final.Remove(Final.Length - 1)
-                            Console.Write(GetEsc() + "D") 'Cursor backwards by one character
-                            Console.Write(GetEsc() + "[1X") 'Remove a character
-                        End If
-                    Else
-                        Final += KeyCharacter
-                        Console.Write(KeyCharacter)
-                    End If
-                End If
-            End While
-            Return Final
+            Return TermInput.ReadKeyTimeout(Intercept, Timeout)
         End Function
 
         ''' <summary>
         ''' Detects the keypress
         ''' </summary>
-        Public Sub DetectKeypress()
-#If NETCOREAPP Then
-            Do Until Console.KeyAvailable
-                Thread.Sleep(1)
-            Loop
-            Console.ReadKey(True)
-#Else
-            Console.ReadKey()
-#End If
-        End Sub
+        Public Function DetectKeypress() As ConsoleKeyInfo
+            Return TermInput.DetectKeypress()
+        End Function
 
     End Module
 End Namespace

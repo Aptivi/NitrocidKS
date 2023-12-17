@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports KS.ConsoleBase.Inputs.Styles
+Imports Terminaux.Inputs.Styles.Choice
 
 Namespace Scripting.Interaction
     Public Module UESHCommands

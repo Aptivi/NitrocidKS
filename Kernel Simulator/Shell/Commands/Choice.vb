@@ -18,6 +18,7 @@
 
 Imports KS.ConsoleBase.Inputs.Styles
 Imports KS.Scripting.Interaction
+Imports Terminaux.Inputs.Styles.Choice
 
 Namespace Shell.Commands
     Class ChoiceCommand
