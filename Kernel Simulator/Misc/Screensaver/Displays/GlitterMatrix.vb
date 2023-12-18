@@ -75,32 +75,32 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SetConsoleColor(New Color(GlitterMatrixBackgroundColor), True)
             SetConsoleColor(New Color(GlitterMatrixForegroundColor))
-            Console.Clear()
-            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", Console.WindowWidth, Console.WindowHeight)
+            ConsoleWrapper.Clear()
+            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight)
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
-            Console.CursorVisible = False
-            Dim Left As Integer = RandomDriver.Next(Console.WindowWidth)
-            Dim Top As Integer = RandomDriver.Next(Console.WindowHeight)
+            ConsoleWrapper.CursorVisible = False
+            Dim Left As Integer = RandomDriver.Next(ConsoleWrapper.WindowWidth)
+            Dim Top As Integer = RandomDriver.Next(ConsoleWrapper.WindowHeight)
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Selected left and top: {0}, {1}", Left, Top)
-            Console.SetCursorPosition(Left, Top)
-            If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+            ConsoleWrapper.SetCursorPosition(Left, Top)
+            If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
             If Not ResizeSyncing Then
-                Console.Write(CStr(RandomDriver.Next(2)))
+                WritePlain(RandomDriver.Next(2), False)
             Else
                 WdbgConditional(ScreensaverDebug, DebugLevel.W, "Color-syncing. Clearing...")
-                Console.Clear()
+                ConsoleWrapper.Clear()
             End If
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(GlitterMatrixDelay, ScreensaverDisplayerThread)
         End Sub
 

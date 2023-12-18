@@ -215,59 +215,59 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SetConsoleColor(New Color(FlashTextBackgroundColor), True)
-            Console.Clear()
-            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", Console.WindowWidth, Console.WindowHeight)
+            ConsoleWrapper.Clear()
+            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight)
 
             'Select position
-            Left = RandomDriver.Next(Console.WindowWidth)
-            Top = RandomDriver.Next(Console.WindowHeight)
+            Left = RandomDriver.Next(ConsoleWrapper.WindowWidth)
+            Top = RandomDriver.Next(ConsoleWrapper.WindowHeight)
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Selected left and top: {0}, {1}", Left, Top)
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
 
             'Make two delay halves to make up one half for screen with text and one half for screen with no text to make a flashing effect
             Dim HalfDelay As Integer = FlashTextDelay / 2
 
             'Make a flashing text
             Console.BackgroundColor = ConsoleColor.Black
-            Console.Clear()
+            ConsoleWrapper.Clear()
             If FlashTextTrueColor Then
                 Dim RedColorNum As Integer = RandomDriver.Next(FlashTextMinimumRedColorLevel, FlashTextMaximumRedColorLevel)
                 Dim GreenColorNum As Integer = RandomDriver.Next(FlashTextMinimumGreenColorLevel, FlashTextMaximumGreenColorLevel)
                 Dim BlueColorNum As Integer = RandomDriver.Next(FlashTextMinimumBlueColorLevel, FlashTextMaximumBlueColorLevel)
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum)
                 Dim ColorStorage As New Color(RedColorNum, GreenColorNum, BlueColorNum)
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If Not ResizeSyncing Then
                     WriteWhere(FlashTextWrite, Left, Top, True, ColorStorage)
                 End If
             ElseIf FlashText255Colors Then
                 Dim ColorNum As Integer = RandomDriver.Next(FlashTextMinimumColorLevel, FlashTextMaximumColorLevel)
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum)
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If Not ResizeSyncing Then
                     WriteWhere(FlashTextWrite, Left, Top, True, New Color(ColorNum))
                 End If
             Else
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If Not ResizeSyncing Then
                     WriteWhere(FlashTextWrite, Left, Top, True, colors(RandomDriver.Next(FlashTextMinimumColorLevel, FlashTextMaximumColorLevel)))
                 End If
             End If
             SleepNoBlock(HalfDelay, ScreensaverDisplayerThread)
             Console.BackgroundColor = ConsoleColor.Black
-            Console.Clear()
+            ConsoleWrapper.Clear()
             SleepNoBlock(HalfDelay, ScreensaverDisplayerThread)
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
         End Sub
 
     End Class

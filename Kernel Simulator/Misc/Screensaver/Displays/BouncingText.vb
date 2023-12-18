@@ -228,19 +228,19 @@ Namespace Misc.Screensaver.Displays
 
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SetConsoleColor(New Color(BouncingTextBackgroundColor), True)
             SetConsoleColor(New Color(BouncingTextForegroundColor))
-            Console.Clear()
-            RowText = Console.WindowHeight / 2
-            ColumnFirstLetter = (Console.WindowWidth / 2) - BouncingTextWrite.Length / 2
-            ColumnLastLetter = (Console.WindowWidth / 2) + BouncingTextWrite.Length / 2
+            ConsoleWrapper.Clear()
+            RowText = ConsoleWrapper.WindowHeight / 2
+            ColumnFirstLetter = (ConsoleWrapper.WindowWidth / 2) - BouncingTextWrite.Length / 2
+            ColumnLastLetter = (ConsoleWrapper.WindowWidth / 2) + BouncingTextWrite.Length / 2
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
-            Console.CursorVisible = False
-            Console.Clear()
+            ConsoleWrapper.CursorVisible = False
+            ConsoleWrapper.Clear()
 
             'Define the color
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Row text: {0}", RowText)
@@ -250,14 +250,14 @@ Namespace Misc.Screensaver.Displays
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Defining color...")
                 BouncingColor = ChangeBouncingTextColor()
             End If
-            If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+            If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
             If Not ResizeSyncing Then
                 WriteWhere(BouncingTextWrite, ColumnFirstLetter, RowText, True, BouncingColor)
             Else
                 WdbgConditional(ScreensaverDebug, DebugLevel.W, "We're resize-syncing! Setting RowText, ColumnFirstLetter, and ColumnLastLetter to its original position...")
-                RowText = Console.WindowHeight / 2
-                ColumnFirstLetter = (Console.WindowWidth / 2) - BouncingTextWrite.Length / 2
-                ColumnLastLetter = (Console.WindowWidth / 2) + BouncingTextWrite.Length / 2
+                RowText = ConsoleWrapper.WindowHeight / 2
+                ColumnFirstLetter = (ConsoleWrapper.WindowWidth / 2) - BouncingTextWrite.Length / 2
+                ColumnLastLetter = (ConsoleWrapper.WindowWidth / 2) + BouncingTextWrite.Length / 2
             End If
 
             'Change the direction of text
@@ -285,7 +285,7 @@ Namespace Misc.Screensaver.Displays
             End If
 
             'Check to see if the text is on the edge
-            If RowText = Console.WindowHeight - 2 Then
+            If RowText = ConsoleWrapper.WindowHeight - 2 Then
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "We're on the bottom.")
                 Direction = Direction.Replace("Bottom", "Top")
                 BouncingColor = ChangeBouncingTextColor()
@@ -295,7 +295,7 @@ Namespace Misc.Screensaver.Displays
                 BouncingColor = ChangeBouncingTextColor()
             End If
 
-            If ColumnLastLetter = Console.WindowWidth - 1 Then
+            If ColumnLastLetter = ConsoleWrapper.WindowWidth - 1 Then
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "We're on the right.")
                 Direction = Direction.Replace("Right", "Left")
                 BouncingColor = ChangeBouncingTextColor()
@@ -307,8 +307,8 @@ Namespace Misc.Screensaver.Displays
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(BouncingTextDelay, ScreensaverDisplayerThread)
         End Sub
 

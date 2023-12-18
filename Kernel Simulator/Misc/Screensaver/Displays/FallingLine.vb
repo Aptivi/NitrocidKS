@@ -205,21 +205,21 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             Console.BackgroundColor = ConsoleColor.Black
             Console.ForegroundColor = ConsoleColor.White
-            Console.Clear()
-            Console.CursorVisible = False
+            ConsoleWrapper.Clear()
+            ConsoleWrapper.CursorVisible = False
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
             'Choose the column for the falling line
-            ColumnLine = RandomDriver.Next(Console.WindowWidth)
+            ColumnLine = RandomDriver.Next(ConsoleWrapper.WindowWidth)
 
             'Now, determine the fall start and end position
             Dim FallStart As Integer = 0
-            Dim FallEnd As Integer = Console.WindowHeight - 1
+            Dim FallEnd As Integer = ConsoleWrapper.WindowHeight - 1
 
             'Select the color
             Dim ColorStorage As Color
@@ -244,7 +244,7 @@ Namespace Misc.Screensaver.Displays
             'Make the line fall down
             For Fall As Integer = FallStart To FallEnd
                 'Check to see if user decided to resize
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit For
 
                 'Print a block and add the covered position to the list so fading down can be done
@@ -259,7 +259,7 @@ Namespace Misc.Screensaver.Displays
             'Fade the line down. Please note that this requires true-color support in the terminal to work properly.
             For StepNum As Integer = 0 To FallingLineMaxSteps
                 'Check to see if user decided to resize
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit For
 
                 'Set thresholds
@@ -278,7 +278,7 @@ Namespace Misc.Screensaver.Displays
                 Dim CurrentFadeColor As New Color(CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut)
                 For Each PositionTuple As Tuple(Of Integer, Integer) In CoveredPositions
                     'Check to see if user decided to resize
-                    If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                    If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                     If ResizeSyncing Then Exit For
 
                     'Actually fade the line out
@@ -294,8 +294,8 @@ Namespace Misc.Screensaver.Displays
             'Reset resize sync
             CoveredPositions.Clear()
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(FallingLineDelay, ScreensaverDisplayerThread)
         End Sub
 

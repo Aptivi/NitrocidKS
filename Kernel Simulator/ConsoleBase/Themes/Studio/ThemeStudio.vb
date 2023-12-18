@@ -37,7 +37,7 @@ Namespace ConsoleBase.Themes.Studio
 
             While Not StudioExiting
                 Wdbg(DebugLevel.I, "Studio not exiting yet. Populating {0} options...", MaximumOptions)
-                Console.Clear()
+                ConsoleWrapper.Clear()
                 Write(DoTranslation("Making a new theme ""{0}"".") + NewLine, True, color:=GetConsoleColor(ColTypes.Neutral), ThemeName)
 
                 'List options
@@ -79,7 +79,7 @@ Namespace ConsoleBase.Themes.Studio
                 Write("36) " + DoTranslation("Table value color") + ": [{0}] ", True, color:=GetConsoleColor(ColTypes.Option), SelectedTableValueColor.PlainSequence)
                 Write("37) " + DoTranslation("Selected option color") + ": [{0}] ", True, color:=GetConsoleColor(ColTypes.Option), SelectedSelectedOptionColor.PlainSequence)
                 Write("38) " + DoTranslation("Alternative option color") + ": [{0}] ", True, color:=GetConsoleColor(ColTypes.Option), SelectedAlternativeOptionColor.PlainSequence)
-                Console.WriteLine()
+                WritePlain("", True)
 
                 'List saving and loading options
                 Write("39) " + DoTranslation("Save Theme to Current Directory"), True, color:=GetConsoleColor(ColTypes.AlternativeOption))
@@ -91,7 +91,7 @@ Namespace ConsoleBase.Themes.Studio
                 Write("45) " + DoTranslation("Load Current Colors"), True, color:=GetConsoleColor(ColTypes.AlternativeOption))
                 Write("46) " + DoTranslation("Preview..."), True, color:=GetConsoleColor(ColTypes.AlternativeOption))
                 Write("47) " + DoTranslation("Exit"), True, color:=GetConsoleColor(ColTypes.AlternativeOption))
-                Console.WriteLine()
+                WritePlain("", True)
 
                 'Prompt user
                 Wdbg(DebugLevel.I, "Waiting for user input...")

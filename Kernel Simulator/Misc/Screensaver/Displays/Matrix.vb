@@ -52,27 +52,27 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             Console.BackgroundColor = ConsoleColor.Black
             Console.ForegroundColor = ConsoleColor.Green
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
-            Console.CursorVisible = False
-            If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+            ConsoleWrapper.CursorVisible = False
+            If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
             If Not ResizeSyncing Then
-                Console.Write(CStr(RandomDriver.Next(2)))
+                WritePlain(CStr(RandomDriver.Next(2)), False)
             Else
                 WdbgConditional(ScreensaverDebug, DebugLevel.W, "Resize-syncing. Clearing...")
-                Console.Clear()
+                ConsoleWrapper.Clear()
             End If
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(MatrixDelay, ScreensaverDisplayerThread)
         End Sub
 

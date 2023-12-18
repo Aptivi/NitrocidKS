@@ -35,17 +35,17 @@ Namespace Misc.Writers.ConsoleWriters
                     'Format string as needed
                     If Not vars.Length = 0 Then Text = FormatString(Text, vars)
 
-                    OldTop = Console.CursorTop
+                    OldTop = ConsoleWrapper.CursorTop
                     For Each TextChar As Char In Text.ToString.ToCharArray
-                        Console.Write(TextChar)
-                        LinesMade += Console.CursorTop - OldTop
-                        OldTop = Console.CursorTop
-                        If LinesMade = Console.WindowHeight - 1 Then
+                        WritePlain(TextChar, False)
+                        LinesMade += ConsoleWrapper.CursorTop - OldTop
+                        OldTop = ConsoleWrapper.CursorTop
+                        If LinesMade = ConsoleWrapper.WindowHeight - 1 Then
                             If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                             LinesMade = 0
                         End If
                     Next
-                    If Line Then Console.WriteLine()
+                    If Line Then WritePlain("", True)
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadInterruptedException"
                     WStkTrc(ex)
                     KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)

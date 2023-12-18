@@ -230,7 +230,7 @@ Namespace Network.FTP
                         Write(DoTranslation("Are you sure that you want to connect?") + " (y/n) ", False, ColTypes.Question)
                         SetConsoleColor(InputColor)
                         Answer = DetectKeypress().KeyChar
-                        Console.WriteLine()
+                        WritePlain("", True)
                         Wdbg(DebugLevel.I, $"Answer is {Answer}")
                         If Answer.ToLower = "y" Then
                             Wdbg(DebugLevel.W, "Certificate accepted, although there are errors.")
@@ -268,7 +268,7 @@ Namespace Network.FTP
                         SpeedDialData(i, 4) = SpeedDialLines(SpeedDialAddress)("FTP Encryption Mode")
                     Next
                     WriteTable(SpeedDialHeaders, SpeedDialData, 2, ColTypes.Option)
-                    Console.WriteLine()
+                    WritePlain("", True)
                     While Answering
                         Write(">> ", False, GetConsoleColor(ColTypes.Input))
                         Answer = ReadLine()

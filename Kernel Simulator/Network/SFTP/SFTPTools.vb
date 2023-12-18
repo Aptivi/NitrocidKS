@@ -122,7 +122,7 @@ Namespace Network.SFTP
                         SpeedDialData(i, 3) = SpeedDialLines(SpeedDialAddress)("User")
                     Next
                     WriteTable(SpeedDialHeaders, SpeedDialData, 2, ColTypes.Option)
-                    Console.WriteLine()
+                    WritePlain("", True)
                     While Answering
                         Write(">> ", False, GetConsoleColor(ColTypes.Input))
                         Answer = ReadLine()

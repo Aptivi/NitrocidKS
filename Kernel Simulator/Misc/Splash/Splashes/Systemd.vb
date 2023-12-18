@@ -53,14 +53,14 @@ Namespace Misc.Splash.Splashes
         Public Sub Opening() Implements ISplash.Opening
             Beginning = True
             Wdbg(DebugLevel.I, "Splash opening. Clearing console...")
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
         Public Sub Display() Implements ISplash.Display
             Try
                 Wdbg(DebugLevel.I, "Splash displaying.")
-                IndicatorLeft = Console.CursorLeft + 2
-                IndicatorTop = Console.CursorTop
+                IndicatorLeft = ConsoleWrapper.CursorLeft + 2
+                IndicatorTop = ConsoleWrapper.CursorTop
                 While Not SplashClosing
                     Thread.Sleep(1)
                 End While
@@ -72,7 +72,7 @@ Namespace Misc.Splash.Splashes
         Public Sub Closing() Implements ISplash.Closing
             SplashClosing = True
             Wdbg(DebugLevel.I, "Splash closing. Clearing console...")
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
         Public Sub Report(Progress As Integer, ProgressReport As String, ParamArray Vars() As Object) Implements ISplash.Report
@@ -80,7 +80,7 @@ Namespace Misc.Splash.Splashes
             Write($" [      ] {ProgressReport}", True, GetConsoleColor(ColTypes.Neutral), Vars)
             If Not Beginning Then
                 IndicatorLeft = 2
-                IndicatorTop = Console.CursorTop - 1
+                IndicatorTop = ConsoleWrapper.CursorTop - 1
             End If
             Beginning = False
         End Sub

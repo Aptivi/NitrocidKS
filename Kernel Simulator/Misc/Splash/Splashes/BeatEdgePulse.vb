@@ -68,7 +68,7 @@ Namespace Misc.Splash.Splashes
         Public Sub Opening() Implements ISplash.Opening
             Wdbg(DebugLevel.I, "Splash opening. Clearing console...")
             Console.BackgroundColor = ConsoleColor.Black
-            Console.Clear()
+            ConsoleWrapper.Clear()
             RandomDriver = New Random
             BeatEdgePulseSettings.RandomDriver = RandomDriver
         End Sub
@@ -90,7 +90,7 @@ Namespace Misc.Splash.Splashes
             SplashClosing = True
             Wdbg(DebugLevel.I, "Splash closing. Clearing console...")
             SetConsoleColor(BackgroundColor, True)
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
         Public Sub Report(Progress As Integer, ProgressReport As String, ParamArray Vars() As Object) Implements ISplash.Report

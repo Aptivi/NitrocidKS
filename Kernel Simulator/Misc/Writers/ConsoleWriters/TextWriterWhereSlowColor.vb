@@ -52,30 +52,30 @@ Namespace Misc.Writers.ConsoleWriters
                     If Not vars.Length = 0 Then msg = FormatString(msg, vars)
 
                     'Write text in another place slowly
-                    Dim OldLeft As Integer = Console.CursorLeft
-                    Dim OldTop As Integer = Console.CursorTop
+                    Dim OldLeft As Integer = ConsoleWrapper.CursorLeft
+                    Dim OldTop As Integer = ConsoleWrapper.CursorTop
                     Dim Paragraphs() As String = msg.SplitNewLines
-                    Console.SetCursorPosition(Left, Top)
+                    ConsoleWrapper.SetCursorPosition(Left, Top)
                     For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
                         'We can now check to see if we're writing a letter past the console window width
                         Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
                         For Each ParagraphChar As Char In MessageParagraph
                             Thread.Sleep(MsEachLetter)
-                            If Console.CursorLeft = Console.WindowWidth Then
-                                Console.CursorTop += 1
-                                Console.CursorLeft = Left
+                            If ConsoleWrapper.CursorLeft = ConsoleWrapper.WindowWidth Then
+                                ConsoleWrapper.CursorTop += 1
+                                ConsoleWrapper.CursorLeft = Left
                             End If
-                            Console.Write(ParagraphChar)
-                            If Line Then Console.WriteLine()
+                            WritePlain(ParagraphChar, False)
+                            If Line Then WritePlain("", True)
                         Next
 
                         'We're starting with the new paragraph, so we increase the CursorTop value by 1.
                         If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
-                            Console.CursorTop += 1
-                            Console.CursorLeft = Left
+                            ConsoleWrapper.CursorTop += 1
+                            ConsoleWrapper.CursorLeft = Left
                         End If
                     Next
-                    If [Return] Then Console.SetCursorPosition(OldLeft, OldTop)
+                    If [Return] Then ConsoleWrapper.SetCursorPosition(OldLeft, OldTop)
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadInterruptedException"
                     WStkTrc(ex)
                     KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)

@@ -30,7 +30,7 @@ Namespace Shell.ShellBase
             SyncLock GetCancelSyncLock(ShellStack(ShellStack.Count - 1).ShellType)
                 If e.SpecialKey = ConsoleSpecialKey.ControlC Then
                     CancelRequested = True
-                    Console.WriteLine()
+                    WritePlain("", True)
                     DefConsoleOut = Console.Out
                     Console.SetOut(StreamWriter.Null)
                     e.Cancel = True

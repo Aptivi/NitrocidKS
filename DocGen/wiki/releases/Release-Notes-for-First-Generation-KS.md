@@ -188,7 +188,7 @@ In the exact form:
    ```vb
    System.Console.ForegroundColor = CType(inputColor, ConsoleColor)
    answerargs = System.Console.ReadLine()
-   System.Console.ResetColor()
+   System.TermExts.ResetColors()
    ```
 4. Added the real command-line arguments (Running CMD on the KS root folder and running the executable file with arguments like "KS.exe createConf")
    * createConf: Makes the kernel create the config file then exit

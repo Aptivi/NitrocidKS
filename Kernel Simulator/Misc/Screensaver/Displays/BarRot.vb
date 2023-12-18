@@ -469,16 +469,16 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             Console.BackgroundColor = ConsoleColor.Black
             Console.ForegroundColor = ConsoleColor.White
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
-            Console.CursorVisible = False
-            If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+            ConsoleWrapper.CursorVisible = False
+            If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
 
             'Select a color range for the ramp
             Dim RedColorNumFrom As Integer = RandomDriver.Next(BarRotMinimumRedColorLevelStart, BarRotMaximumRedColorLevelStart)
@@ -491,7 +491,7 @@ Namespace Misc.Screensaver.Displays
 
             'Set start and end widths for the ramp frame
             Dim RampFrameStartWidth As Integer = 4
-            Dim RampFrameEndWidth As Integer = Console.WindowWidth - RampFrameStartWidth
+            Dim RampFrameEndWidth As Integer = ConsoleWrapper.WindowWidth - RampFrameStartWidth
             Dim RampFrameSpaces As Integer = RampFrameEndWidth - RampFrameStartWidth
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Start width: {0}, End width: {1}, Spaces: {2}", RampFrameStartWidth, RampFrameEndWidth, RampFrameSpaces)
 
@@ -506,7 +506,7 @@ Namespace Misc.Screensaver.Displays
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Steps by {0} spaces (RGB: {1};{2};{3})", RampFrameSpaces, RampColorRedSteps, RampColorGreenSteps, RampColorBlueSteps)
 
             'Let the ramp be printed in the center
-            Dim RampCenterPosition As Integer = Console.WindowHeight / 2
+            Dim RampCenterPosition As Integer = ConsoleWrapper.WindowHeight / 2
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Center position: {0}", RampCenterPosition)
 
             'Set the current positions
@@ -536,7 +536,7 @@ Namespace Misc.Screensaver.Displays
 
             'Set the console color and fill the ramp!
             Do Until Convert.ToInt32(RampCurrentColorRed) = RedColorNumTo And Convert.ToInt32(RampCurrentColorGreen) = GreenColorNumTo And Convert.ToInt32(RampCurrentColorBlue) = BlueColorNumTo
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit Do
 
                 'Populate the variables for sub-gradients
@@ -571,15 +571,15 @@ Namespace Misc.Screensaver.Displays
                 'Try to fill the ramp
                 Dim RampSubgradientStepsMade As Integer = 0
                 Do Until RampSubgradientStepsMade = RampFrameSpaces
-                    If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                    If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                     If ResizeSyncing Then Exit Do
-                    Console.SetCursorPosition(RampCurrentPositionLeft, RampCenterPosition - 1)
-                    Console.Write(" "c)
-                    Console.SetCursorPosition(RampCurrentPositionLeft, RampCenterPosition)
-                    Console.Write(" "c)
-                    Console.SetCursorPosition(RampCurrentPositionLeft, RampCenterPosition + 1)
-                    Console.Write(" "c)
-                    RampCurrentPositionLeft = Console.CursorLeft
+                    ConsoleWrapper.SetCursorPosition(RampCurrentPositionLeft, RampCenterPosition - 1)
+                    WritePlain(" ", False)
+                    ConsoleWrapper.SetCursorPosition(RampCurrentPositionLeft, RampCenterPosition)
+                    WritePlain(" ", False)
+                    ConsoleWrapper.SetCursorPosition(RampCurrentPositionLeft, RampCenterPosition + 1)
+                    WritePlain(" ", False)
+                    RampCurrentPositionLeft = ConsoleWrapper.CursorLeft
                     RampSubgradientStepsMade += 1
 
                     'Change the colors
@@ -606,12 +606,12 @@ Namespace Misc.Screensaver.Displays
             'Clear the scene
             SleepNoBlock(BarRotNextRampDelay, ScreensaverDisplayerThread)
             Console.BackgroundColor = ConsoleColor.Black
-            Console.Clear()
+            ConsoleWrapper.Clear()
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
         End Sub
 
     End Class

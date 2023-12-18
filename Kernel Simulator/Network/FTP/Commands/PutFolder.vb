@@ -29,10 +29,10 @@ Namespace Network.FTP.Commands
             Write(DoTranslation("Uploading folder {0}..."), True, color:=GetConsoleColor(ColTypes.Progress), ListArgs(0))
             Dim Result As Boolean = If(Not String.IsNullOrWhiteSpace(LocalFolder), FTPUploadFolder(RemoteFolder, LocalFolder), FTPUploadFolder(RemoteFolder))
             If Result Then
-                Console.WriteLine()
+                WritePlain("", True)
                 Write(NewLine + DoTranslation("Uploaded folder {0}"), True, color:=GetConsoleColor(ColTypes.Success), ListArgs(0))
             Else
-                Console.WriteLine()
+                WritePlain("", True)
                 Write(NewLine + DoTranslation("Failed to upload {0}"), True, color:=GetConsoleColor(ColTypes.Error), ListArgs(0))
             End If
         End Sub

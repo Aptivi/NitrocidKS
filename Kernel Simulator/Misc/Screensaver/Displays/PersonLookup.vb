@@ -126,8 +126,8 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
             Console.BackgroundColor = ConsoleColor.Black
             Console.ForegroundColor = ConsoleColor.Green
-            Console.Clear()
-            Console.CursorVisible = False
+            ConsoleWrapper.Clear()
+            ConsoleWrapper.CursorVisible = False
 
             'Generate names
             Dim NumberOfPeople As Integer = RandomDriver.Next(PersonLookupMinimumNames, PersonLookupMaximumNames)
@@ -144,7 +144,7 @@ Namespace Misc.Screensaver.Displays
                 Dim LastName As String = GeneratedName.Substring(GeneratedName.IndexOf(" ") + 1)
 
                 'Print all information
-                Console.Clear()
+                ConsoleWrapper.Clear()
                 WriteWherePlain("  - Name:                {0}", 0, 1, False, GeneratedName)
                 WriteWherePlain("  - First Name:          {0}", 0, 2, False, FirstName)
                 WriteWherePlain("  - Last Name / Surname: {0}", 0, 3, False, LastName)

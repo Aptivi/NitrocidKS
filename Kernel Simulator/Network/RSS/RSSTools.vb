@@ -251,17 +251,17 @@ Namespace Network.RSS
             'Country selection
             While StepNumber = 1
                 'If the JSON token is actually full, show the list of countries
-                Console.Clear()
+                ConsoleWrapper.Clear()
                 WriteWhere(DoTranslation("Select your country by pressing the arrow left or arrow right keys. Press ENTER to confirm your selection."), 0, 1, False, GetConsoleColor(ColTypes.Neutral))
                 Write(NewLine + NewLine + "   < ", False, ColTypes.Gray)
 
                 'The cursor positions for the arrow elements
                 Dim MaxLength As Integer = FeedListJsonCountries.Max(Function(x) x("name").ToString.Length)
                 Dim ItemName As String = $"{FeedListJsonCountries(SelectedCountryIndex)("name")} [{FeedListJsonCountries(SelectedCountryIndex)("iso")}]"
-                Dim ArrowLeftXPosition As Integer = Console.CursorLeft + MaxLength + $" [{FeedListJsonCountries(SelectedCountryIndex)("iso")}]".Length
-                Dim ItemNameXPosition As Integer = Console.CursorLeft + ((ArrowLeftXPosition - Console.CursorLeft) / 2) - (ItemName.Length / 2)
-                WriteWhere(ItemName, ItemNameXPosition, Console.CursorTop, True, GetConsoleColor(ColTypes.Option))
-                WriteWhere(" >", ArrowLeftXPosition, Console.CursorTop, False, ColTypes.Gray)
+                Dim ArrowLeftXPosition As Integer = ConsoleWrapper.CursorLeft + MaxLength + $" [{FeedListJsonCountries(SelectedCountryIndex)("iso")}]".Length
+                Dim ItemNameXPosition As Integer = ConsoleWrapper.CursorLeft + ((ArrowLeftXPosition - ConsoleWrapper.CursorLeft) / 2) - (ItemName.Length / 2)
+                WriteWhere(ItemName, ItemNameXPosition, ConsoleWrapper.CursorTop, True, GetConsoleColor(ColTypes.Option))
+                WriteWhere(" >", ArrowLeftXPosition, ConsoleWrapper.CursorTop, False, ColTypes.Gray)
                 Write(NewLine + NewLine + DoTranslation("This country has {0} news sources."), True, color:=GetConsoleColor(ColTypes.Neutral), FeedListJsonCountries(SelectedCountryIndex)("newSources").Count)
 
                 'Read and get response
@@ -290,7 +290,7 @@ Namespace Network.RSS
                     'Go to the next step
                     Wdbg(DebugLevel.I, "Selected country: {0}", FeedListJsonCountries(SelectedCountryIndex)("name"))
                     FeedListJsonNewsSources = FeedListJsonCountries(SelectedCountryIndex)("newSources").ToArray
-                    Console.WriteLine()
+                    WritePlain("", True)
                     StepNumber += 1
                 End If
             End While
@@ -302,7 +302,7 @@ Namespace Network.RSS
                 Dim NewsSourceTitle As String = NewsSource("site")("title").ToString().Trim
                 Write("{0}) {1}", True, color:=GetConsoleColor(ColTypes.Option), SourceIndex + 1, NewsSourceTitle)
             Next
-            Console.WriteLine()
+            WritePlain("", True)
             While StepNumber = 2
                 'Print input
                 Wdbg(DebugLevel.W, "{0} news sources.", FeedListJsonNewsSources.Length)
@@ -318,7 +318,7 @@ Namespace Network.RSS
                         Wdbg(DebugLevel.W, "Answer is in range.")
                         SelectedNewsSourceIndex = AnswerInt - 1
                         FeedListJsonNewsSourceFeeds = FeedListJsonNewsSources(SelectedNewsSourceIndex)("feedUrls").ToArray
-                        Console.WriteLine()
+                        WritePlain("", True)
                         StepNumber += 1
                     Else
                         Wdbg(DebugLevel.W, "Answer is out of range.")
@@ -342,7 +342,7 @@ Namespace Network.RSS
                 NewsSourceTitle = NewsSourceTitle.Trim()
                 Write("{0}) {1}: {2}", True, color:=GetConsoleColor(ColTypes.Option), SourceFeedIndex + 1, NewsSourceTitle, NewsSourceFeed("url"))
             Next
-            Console.WriteLine()
+            WritePlain("", True)
             While StepNumber = 3
                 'Print input
                 Wdbg(DebugLevel.W, "{0} news source feeds.", FeedListJsonNewsSourceFeeds.Length)

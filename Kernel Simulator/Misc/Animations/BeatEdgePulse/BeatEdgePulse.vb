@@ -29,10 +29,10 @@ Namespace Misc.Animations.BeatEdgePulse
         ''' Simulates the beat pulsing animation
         ''' </summary>
         Public Sub Simulate(Settings As BeatEdgePulseSettings)
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             Dim RandomDriver As Random = Settings.RandomDriver
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
             Dim BeatInterval As Integer = 60000 / Settings.BeatEdgePulseDelay
             Dim BeatIntervalStep As Integer = BeatInterval / Settings.BeatEdgePulseMaxSteps
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Beat interval from {0} BPM: {1}", Settings.BeatEdgePulseDelay, BeatInterval)
@@ -88,7 +88,7 @@ Namespace Misc.Animations.BeatEdgePulse
             Dim CurrentColorGreenIn As Integer = 0
             Dim CurrentColorBlueIn As Integer = 0
             For CurrentStep As Integer = Settings.BeatEdgePulseMaxSteps To 1 Step -1
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit For
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", CurrentStep, BeatIntervalStep)
                 SleepNoBlock(BeatIntervalStep, System.Threading.Thread.CurrentThread)
@@ -96,7 +96,7 @@ Namespace Misc.Animations.BeatEdgePulse
                 CurrentColorGreenIn += ThresholdGreen
                 CurrentColorBlueIn += ThresholdBlue
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Color in (R;G;B: {0};{1};{2})", CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn)
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If Not ResizeSyncing Then
                     SetConsoleColor(New Color(CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn), True)
                     FillIn()
@@ -105,7 +105,7 @@ Namespace Misc.Animations.BeatEdgePulse
 
             'Fade out
             For CurrentStep As Integer = 1 To Settings.BeatEdgePulseMaxSteps
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit For
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Step {0}/{1} each {2} ms", CurrentStep, Settings.BeatEdgePulseMaxSteps, BeatIntervalStep)
                 SleepNoBlock(BeatIntervalStep, System.Threading.Thread.CurrentThread)
@@ -113,7 +113,7 @@ Namespace Misc.Animations.BeatEdgePulse
                 Dim CurrentColorGreenOut As Integer = GreenColorNum - ThresholdGreen * CurrentStep
                 Dim CurrentColorBlueOut As Integer = BlueColorNum - ThresholdBlue * CurrentStep
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum)
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If Not ResizeSyncing Then
                     SetConsoleColor(New Color($"{CurrentColorRedOut};{CurrentColorGreenOut};{CurrentColorBlueOut}"), True)
                     FillIn()
@@ -122,8 +122,8 @@ Namespace Misc.Animations.BeatEdgePulse
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(Settings.BeatEdgePulseDelay, System.Threading.Thread.CurrentThread)
         End Sub
 
@@ -132,44 +132,44 @@ Namespace Misc.Animations.BeatEdgePulse
             Dim FloorBottomLeftEdge As Integer = 0
             Wdbg(DebugLevel.I, "Top left edge: {0}, Bottom left edge: {1}", FloorTopLeftEdge, FloorBottomLeftEdge)
 
-            Dim FloorTopRightEdge As Integer = Console.WindowWidth - 1
-            Dim FloorBottomRightEdge As Integer = Console.WindowWidth - 1
+            Dim FloorTopRightEdge As Integer = ConsoleWrapper.WindowWidth - 1
+            Dim FloorBottomRightEdge As Integer = ConsoleWrapper.WindowWidth - 1
             Wdbg(DebugLevel.I, "Top right edge: {0}, Bottom right edge: {1}", FloorTopRightEdge, FloorBottomRightEdge)
 
             Dim FloorTopEdge As Integer = 0
-            Dim FloorBottomEdge As Integer = Console.WindowHeight - 1
+            Dim FloorBottomEdge As Integer = ConsoleWrapper.WindowHeight - 1
             Wdbg(DebugLevel.I, "Top edge: {0}, Bottom edge: {1}", FloorTopEdge, FloorBottomEdge)
 
             Dim FloorLeftEdge As Integer = 0
-            Dim FloorRightEdge As Integer = Console.WindowWidth - 2
+            Dim FloorRightEdge As Integer = ConsoleWrapper.WindowWidth - 2
             Wdbg(DebugLevel.I, "Left edge: {0}, Right edge: {1}", FloorLeftEdge, FloorRightEdge)
 
             'First, draw the floor top edge
             For x As Integer = FloorTopLeftEdge To FloorTopRightEdge
-                Console.SetCursorPosition(x, 0)
+                ConsoleWrapper.SetCursorPosition(x, 0)
                 Wdbg(DebugLevel.I, "Drawing floor top edge ({0}, {1})", x, 1)
-                Console.Write(" ")
+                WritePlain(" ", False)
             Next
 
             'Second, draw the floor bottom edge
             For x As Integer = FloorBottomLeftEdge To FloorBottomRightEdge
-                Console.SetCursorPosition(x, FloorBottomEdge)
+                ConsoleWrapper.SetCursorPosition(x, FloorBottomEdge)
                 Wdbg(DebugLevel.I, "Drawing floor bottom edge ({0}, {1})", x, FloorBottomEdge)
-                Console.Write(" ")
+                WritePlain(" ", False)
             Next
 
             'Third, draw the floor left edge
             For y As Integer = FloorTopEdge To FloorBottomEdge
-                Console.SetCursorPosition(FloorLeftEdge, y)
+                ConsoleWrapper.SetCursorPosition(FloorLeftEdge, y)
                 Wdbg(DebugLevel.I, "Drawing floor left edge ({0}, {1})", FloorLeftEdge, y)
-                Console.Write("  ")
+                WritePlain("  ", False)
             Next
 
             'Finally, draw the floor right edge
             For y As Integer = FloorTopEdge To FloorBottomEdge
-                Console.SetCursorPosition(FloorRightEdge, y)
+                ConsoleWrapper.SetCursorPosition(FloorRightEdge, y)
                 Wdbg(DebugLevel.I, "Drawing floor right edge ({0}, {1})", FloorRightEdge, y)
-                Console.Write("  ")
+                WritePlain("  ", False)
             Next
         End Sub
 

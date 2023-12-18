@@ -190,17 +190,17 @@ Namespace Misc.Screensaver.Displays
             'Variable preparations
             RandomDriver = New Random
             Console.BackgroundColor = ConsoleColor.Black
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
-            Console.CursorVisible = False
-            Console.Clear()
+            ConsoleWrapper.CursorVisible = False
+            ConsoleWrapper.Clear()
 
             'Write date and time
             SetConsoleColor(ChangeDateAndTimeColor)
-            WriteWherePlain(RenderDate, Console.WindowWidth / 2 - RenderDate.Length / 2, Console.WindowHeight / 2 - 1)
-            WriteWherePlain(RenderTime, Console.WindowWidth / 2 - RenderTime.Length / 2, Console.WindowHeight / 2)
+            WriteWherePlain(RenderDate, ConsoleWrapper.WindowWidth / 2 - RenderDate.Length / 2, ConsoleWrapper.WindowHeight / 2 - 1)
+            WriteWherePlain(RenderTime, ConsoleWrapper.WindowWidth / 2 - RenderTime.Length / 2, ConsoleWrapper.WindowHeight / 2)
 
             'Delay
             SleepNoBlock(DateAndTimeDelay, ScreensaverDisplayerThread)

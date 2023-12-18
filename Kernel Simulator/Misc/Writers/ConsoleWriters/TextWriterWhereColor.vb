@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports KS.Misc.Reflection
+Imports Terminaux.Base
 
 Namespace Misc.Writers.ConsoleWriters
     Public Module TextWriterWhereColor
@@ -49,38 +50,38 @@ Namespace Misc.Writers.ConsoleWriters
                     If Not vars.Length = 0 Then msg = FormatString(msg, vars)
 
                     'Write text in another place. By the way, we check the text for newlines and console width excess
-                    Dim OldLeft As Integer = Console.CursorLeft
-                    Dim OldTop As Integer = Console.CursorTop
+                    Dim OldLeft As Integer = ConsoleWrapper.CursorLeft
+                    Dim OldTop As Integer = ConsoleWrapper.CursorTop
                     Dim Paragraphs() As String = msg.SplitNewLines
-                    Console.SetCursorPosition(Left, Top)
+                    ConsoleWrapper.SetCursorPosition(Left, Top)
                     For MessageParagraphIndex As Integer = 0 To Paragraphs.Length - 1
                         'We can now check to see if we're writing a letter past the console window width
                         Dim MessageParagraph As String = Paragraphs(MessageParagraphIndex)
                         For Each ParagraphChar As Char In MessageParagraph
-                            If Console.CursorLeft = Console.WindowWidth Then
-                                If Console.CursorTop = Console.BufferHeight - 1 Then
+                            If ConsoleWrapper.CursorLeft = ConsoleWrapper.WindowWidth Then
+                                If ConsoleWrapper.CursorTop = Console.BufferHeight - 1 Then
                                     'We've reached the end of buffer. Write the line to scroll.
-                                    Console.WriteLine()
+                                    WritePlain("", True)
                                 Else
-                                    Console.CursorTop += 1
+                                    ConsoleWrapper.CursorTop += 1
                                 End If
-                                Console.CursorLeft = Left
+                                ConsoleWrapper.CursorLeft = Left
                             End If
-                            Console.Write(ParagraphChar)
+                            WritePlain(ParagraphChar, False)
                         Next
 
                         'We're starting with the new paragraph, so we increase the CursorTop value by 1.
                         If Not MessageParagraphIndex = Paragraphs.Length - 1 Then
-                            If Console.CursorTop = Console.BufferHeight - 1 Then
+                            If ConsoleWrapper.CursorTop = Console.BufferHeight - 1 Then
                                 'We've reached the end of buffer. Write the line to scroll.
-                                Console.WriteLine()
+                                WritePlain("", True)
                             Else
-                                Console.CursorTop += 1
+                                ConsoleWrapper.CursorTop += 1
                             End If
-                            Console.CursorLeft = Left
+                            ConsoleWrapper.CursorLeft = Left
                         End If
                     Next
-                    If [Return] Then Console.SetCursorPosition(OldLeft, OldTop)
+                    If [Return] Then ConsoleWrapper.SetCursorPosition(OldLeft, OldTop)
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadInterruptedException"
                     WStkTrc(ex)
                     KernelError(KernelErrorLevel.C, False, 0, DoTranslation("There is a serious error when printing text."), ex)

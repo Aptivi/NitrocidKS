@@ -49,7 +49,7 @@ Namespace Files.Print
                                         DirectCast(FileInfo, FileInfo).Length.FileSizeToString, FileInfo.CreationTime.ToShortDateString, FileInfo.CreationTime.ToShortTimeString,
                                                                                                 FileInfo.LastWriteTime.ToShortDateString, FileInfo.LastWriteTime.ToShortTimeString)
                         End If
-                        Console.WriteLine()
+                        WritePlain("", True)
                     End If
                 End If
             Else

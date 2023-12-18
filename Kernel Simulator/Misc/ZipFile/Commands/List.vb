@@ -37,7 +37,7 @@ Namespace Misc.ZipFile.Commands
                 If Not Entry.IsDirectory Then 'Entry is a file
                     Write("{0} ({1})", True, color:=GetConsoleColor(ColTypes.ListValue), Entry.CompressedSize.FileSizeToString, Entry.Size.FileSizeToString)
                 Else
-                    Console.WriteLine()
+                    WritePlain("", True)
                 End If
             Next
         End Sub

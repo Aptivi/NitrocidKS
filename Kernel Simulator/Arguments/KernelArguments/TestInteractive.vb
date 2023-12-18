@@ -17,6 +17,7 @@
 
 Imports KS.Arguments.ArgumentBase
 Imports KS.TestShell
+Imports TermExts = Terminaux.Base.ConsoleExtensions
 
 Namespace Arguments.KernelArguments
     Class TestInteractiveArgument
@@ -30,8 +31,8 @@ Namespace Arguments.KernelArguments
             StageTimer.Start()
             If Test_ShutdownFlag Then
                 'Clear the console and reset the colors
-                Console.ResetColor()
-                Console.Clear()
+                TermExts.ResetColors()
+                ConsoleWrapper.Clear()
                 Environment.Exit(0)
             End If
         End Sub

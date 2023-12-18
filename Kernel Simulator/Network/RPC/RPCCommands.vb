@@ -140,7 +140,7 @@ Namespace Network.RPC
                         ElseIf Message.StartsWith("ExecConfirm") Then
                             If LoggedIn Then
                                 Wdbg(DebugLevel.I, "Exec confirmed from remote access.")
-                                Console.WriteLine()
+                                WritePlain("", True)
                                 GetLine(Message.Replace("ExecConfirm, ", "").Replace(NewLine, ""))
                             Else
                                 Wdbg(DebugLevel.W, "Tried to exec from remote access while not logged in. Dropping packet...")

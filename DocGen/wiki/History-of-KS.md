@@ -80,7 +80,7 @@ So, we have loaded the project into MonoDevelop, but when we built the project, 
 
 After we removed the hardware initialization statement from Kernel.vb, the kernel started up, but there's another problem.
 
-Although Mono's Console.Write(Line) can parse arguments correctly, W(ln) can't. However, it's fixed in later versions.
+Although Mono's WritePlain(Line) can parse arguments correctly, W(ln) can't. However, it's fixed in later versions.
 
 We made everything as necessary to fix this problem, and it succeeded. We fixed other crashing or exception (AmbiguousMatchException) problems.
 

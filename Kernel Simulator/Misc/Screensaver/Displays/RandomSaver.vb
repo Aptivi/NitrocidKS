@@ -32,8 +32,8 @@ Namespace Misc.Screensaver.Displays
             RandomDriver = New Random
             Console.BackgroundColor = ConsoleColor.Black
             Console.ForegroundColor = ConsoleColor.White
-            Console.Clear()
-            Console.CursorVisible = False
+            ConsoleWrapper.Clear()
+            ConsoleWrapper.CursorVisible = False
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic

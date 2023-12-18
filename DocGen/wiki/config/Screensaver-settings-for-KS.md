@@ -98,7 +98,7 @@ For the progress min-max color values, refer to the topmost table, because they'
 |:----------------|:----------|:------------------|:---
 | Text Shown      | `string`  | A text            | The text that is shown.
 | Always centered | `boolean` | `true` or `false` | Whether the text shown is always on the middle
-| Use Console API | `boolean` | `true` or `false` | Whether to use the standard Console.Clear() or to use the VT sequence.
+| Use Console API | `boolean` | `true` or `false` | Whether to use the standard ConsoleWrapper.Clear() or to use the VT sequence.
 
 ### BeatFader
 

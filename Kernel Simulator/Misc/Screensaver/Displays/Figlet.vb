@@ -217,18 +217,18 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             Console.BackgroundColor = ConsoleColor.Black
             Console.ForegroundColor = ConsoleColor.White
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
-            Dim ConsoleMiddleWidth As Integer = Console.WindowWidth / 2
-            Dim ConsoleMiddleHeight As Integer = Console.WindowHeight / 2
+            Dim ConsoleMiddleWidth As Integer = ConsoleWrapper.WindowWidth / 2
+            Dim ConsoleMiddleHeight As Integer = ConsoleWrapper.WindowHeight / 2
             Dim FigletFontUsed As FiggleFont = GetFigletFont(FigletFont)
-            Console.CursorVisible = False
-            Console.Clear()
+            ConsoleWrapper.CursorVisible = False
+            ConsoleWrapper.Clear()
 
             'Set colors
             Dim ColorStorage As New Color(255, 255, 255)
@@ -255,7 +255,7 @@ Namespace Misc.Screensaver.Displays
             Dim FigletWidth As Integer = ConsoleMiddleWidth - FigletWriteLines(0).Length / 2
 
             'Actually write it
-            If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+            If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
             If Not ResizeSyncing Then
                 If Figlet255Colors Or FigletTrueColor Then
                     WriteWhere(FigletWrite, FigletWidth, FigletHeight, True, ColorStorage)
@@ -267,8 +267,8 @@ Namespace Misc.Screensaver.Displays
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
         End Sub
 
     End Class

@@ -66,26 +66,26 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             Console.BackgroundColor = ConsoleColor.Black
             Console.ForegroundColor = ConsoleColor.White
-            Console.CursorVisible = False
-            Console.Clear()
+            ConsoleWrapper.CursorVisible = False
+            ConsoleWrapper.Clear()
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
             'Select random positions to generate the glitch
             Dim GlitchDense As Double = If(GlitchDensity > 100, 100, GlitchDensity) / 100
-            Dim AmountOfBlocks As Integer = Console.WindowWidth * Console.WindowHeight
+            Dim AmountOfBlocks As Integer = ConsoleWrapper.WindowWidth * ConsoleWrapper.WindowHeight
             Dim BlocksToCover As Integer = AmountOfBlocks * GlitchDense
             Dim CoveredBlocks As New ArrayList
             Do Until CoveredBlocks.Count = BlocksToCover Or ResizeSyncing
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If Not ResizeSyncing Then
-                    Dim CoverX As Integer = RandomDriver.Next(Console.WindowWidth)
-                    Dim CoverY As Integer = RandomDriver.Next(Console.WindowHeight)
-                    Console.SetCursorPosition(CoverX, CoverY)
+                    Dim CoverX As Integer = RandomDriver.Next(ConsoleWrapper.WindowWidth)
+                    Dim CoverY As Integer = RandomDriver.Next(ConsoleWrapper.WindowHeight)
+                    ConsoleWrapper.SetCursorPosition(CoverX, CoverY)
 
                     'Select random glitch type
                     Dim GlitchType As GlitchType = [Enum].Parse(GetType(GlitchType), RandomDriver.Next(5))
@@ -135,26 +135,26 @@ Namespace Misc.Screensaver.Displays
                     Select Case GlitchType
                         Case GlitchType.RandomLetter
                             If ColorLetter Then SetConsoleColor(ColorLetterInstance) Else Console.ForegroundColor = ConsoleColor.White
-                            Console.Write(Letter)
+                            WritePlain(Letter, False)
                         Case GlitchType.RandomSymbol
                             If ColorLetter Then SetConsoleColor(ColorLetterInstance) Else Console.ForegroundColor = ConsoleColor.White
-                            Console.Write(Symbol)
+                            WritePlain(Symbol, False)
                         Case GlitchType.RedGreenBlueColor
                             SetConsoleColor(ColorBlockInstance, True)
-                            Console.Write(" ")
+                            WritePlain(" ", False)
                         Case GlitchType.RedGreenBlueColorWithRandomLetter
                             If ColorLetter Then SetConsoleColor(ColorLetterInstance) Else Console.ForegroundColor = ConsoleColor.White
                             SetConsoleColor(ColorBlockInstance, True)
-                            Console.Write(Letter)
+                            WritePlain(Letter, False)
                         Case GlitchType.RedGreenBlueColorWithRandomSymbol
                             If ColorLetter Then SetConsoleColor(ColorLetterInstance) Else Console.ForegroundColor = ConsoleColor.White
                             SetConsoleColor(ColorBlockInstance, True)
-                            Console.Write(Symbol)
+                            WritePlain(Symbol, False)
                     End Select
                     If Not CoveredBlocks.Contains(CStr(CoverX) + ", " + CStr(CoverY)) Then CoveredBlocks.Add(CStr(CoverX) + ", " + CStr(CoverY))
                 Else
                     'We're resizing.
-                    Console.CursorVisible = False
+                    ConsoleWrapper.CursorVisible = False
                     Exit Do
                 End If
                 SleepNoBlock(GlitchDelay, ScreensaverDisplayerThread)
@@ -162,8 +162,8 @@ Namespace Misc.Screensaver.Displays
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
         End Sub
 
     End Class

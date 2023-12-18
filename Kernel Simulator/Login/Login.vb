@@ -79,7 +79,7 @@ Namespace Login
                 'Clear console if ClearOnLogin is set to True (If a user has enabled Clear Screen on Login)
                 If ClearOnLogin = True Then
                     Wdbg(DebugLevel.I, "Clearing screen...")
-                    Console.Clear()
+                    ConsoleWrapper.Clear()
                 End If
 
                 'Read MOTD and MAL

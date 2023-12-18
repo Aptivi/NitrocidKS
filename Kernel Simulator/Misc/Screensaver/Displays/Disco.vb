@@ -225,8 +225,8 @@ Namespace Misc.Screensaver.Displays
             'Variable preparations
             RandomDriver = New Random
             Console.BackgroundColor = ConsoleColor.Black
-            Console.Clear()
-            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", Console.WindowWidth, Console.WindowHeight)
+            ConsoleWrapper.Clear()
+            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight)
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
@@ -240,7 +240,7 @@ Namespace Misc.Screensaver.Displays
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Maximum blue color level: {0}", MaximumColorsB)
             Dim FedColors As ConsoleColors() = {ConsoleColors.Black, ConsoleColors.White}
 
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
 
             'Select the background color
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Cycling colors: {0}", DiscoCycleColors)
@@ -289,7 +289,7 @@ Namespace Misc.Screensaver.Displays
             End If
 
             'Make the disco effect!
-            Console.Clear()
+            ConsoleWrapper.Clear()
 
             'Switch to the next color
             If DiscoTrueColor Then

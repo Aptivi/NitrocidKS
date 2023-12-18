@@ -131,10 +131,10 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SetConsoleColor(New Color(TypewriterTextColor))
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
@@ -143,7 +143,7 @@ Namespace Misc.Screensaver.Displays
             Dim TypeWrite As String = TypewriterWrite
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Minimum speed from {0} WPM: {1} CPM", TypewriterWritingSpeedMin, CpmSpeedMin)
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Maximum speed from {0} WPM: {1} CPM", TypewriterWritingSpeedMax, CpmSpeedMax)
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
             'Typewriter can also deal with files written on the field that is used for storing text, so check to see if the path exists.
             Wdbg(DebugLevel.I, "Checking ""{0}"" to see if it's a file path", TypewriterWrite)
             If TryParsePath(TypewriterWrite) AndAlso FileExists(TypewriterWrite) Then
@@ -154,7 +154,7 @@ Namespace Misc.Screensaver.Displays
 
             'For each line, write four spaces, and extra two spaces if paragraph starts.
             For Each Paragraph As String In TypeWrite.SplitNewLines
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit For
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "New paragraph: {0}", Paragraph)
 
@@ -168,7 +168,7 @@ Namespace Misc.Screensaver.Displays
                 'the first time and will be reverted back to zero after the incomplete sentence is formed.
                 Dim ReservedCharacters As Integer = 4
                 For Each ParagraphChar As Char In Paragraph
-                    If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                    If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                     If ResizeSyncing Then Exit For
 
                     'Append the character into the incomplete sentence builder.
@@ -176,7 +176,7 @@ Namespace Misc.Screensaver.Displays
                     CharactersParsed += 1
 
                     'Check to see if we're at the maximum character number
-                    If IncompleteSentenceBuilder.Length = Console.WindowWidth - 2 - ReservedCharacters Or Paragraph.Length = CharactersParsed Then
+                    If IncompleteSentenceBuilder.Length = ConsoleWrapper.WindowWidth - 2 - ReservedCharacters Or Paragraph.Length = CharactersParsed Then
                         'We're at the character number of maximum character. Add the sentence to the list for "wrapping" in columns.
                         WdbgConditional(ScreensaverDebug, DebugLevel.I, "Adding {0} to the list... Incomplete sentences: {1}", IncompleteSentenceBuilder.ToString, IncompleteSentences.Count)
                         IncompleteSentences.Add(IncompleteSentenceBuilder.ToString)
@@ -188,19 +188,19 @@ Namespace Misc.Screensaver.Displays
                 Next
 
                 'Prepare display (make a paragraph indentation)
-                If Not Console.CursorTop = Console.WindowHeight - 2 Then
-                    Console.WriteLine()
-                    Console.Write("    ")
-                    WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", Console.CursorLeft, Console.CursorTop)
+                If Not ConsoleWrapper.CursorTop = ConsoleWrapper.WindowHeight - 2 Then
+                    WritePlain("", True)
+                    WritePlain("    ", False)
+                    WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop)
                 End If
 
                 'Get struck character and write it
                 For SentenceIndex As Integer = 0 To IncompleteSentences.Count - 1
                     Dim Sentence As String = IncompleteSentences(SentenceIndex)
-                    If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                    If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                     If ResizeSyncing Then Exit For
                     For Each StruckChar As Char In Sentence
-                        If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                        If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                         If ResizeSyncing Then Exit For
 
                         'Calculate needed milliseconds from two WPM speeds (minimum and maximum)
@@ -209,44 +209,44 @@ Namespace Misc.Screensaver.Displays
                         WdbgConditional(ScreensaverDebug, DebugLevel.I, "Delay for {0} CPM: {1} ms", SelectedCpm, WriteMs)
 
                         'If we're at the end of the page, clear the screen
-                        If Console.CursorTop = Console.WindowHeight - 2 Then
-                            WdbgConditional(ScreensaverDebug, DebugLevel.I, "We're at the end of the page! {0} = {1}", Console.CursorTop, Console.WindowHeight - 2)
+                        If ConsoleWrapper.CursorTop = ConsoleWrapper.WindowHeight - 2 Then
+                            WdbgConditional(ScreensaverDebug, DebugLevel.I, "We're at the end of the page! {0} = {1}", ConsoleWrapper.CursorTop, ConsoleWrapper.WindowHeight - 2)
                             SleepNoBlock(TypewriterNewScreenDelay, ScreensaverDisplayerThread)
-                            Console.Clear()
-                            Console.WriteLine()
+                            ConsoleWrapper.Clear()
+                            WritePlain("", True)
                             If SentenceIndex = 0 Then
-                                Console.Write("    ")
+                                WritePlain("    ", False)
                             Else
-                                Console.Write(" ")
+                                WritePlain(" ", False)
                             End If
-                            WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", Console.CursorLeft, Console.CursorTop)
+                            WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop)
                         End If
 
                         'If we need to show the arrow indicator, update its position
                         If TypewriterShowArrowPos Then
-                            Dim OldTop As Integer = Console.CursorTop
-                            Dim OldLeft As Integer = Console.CursorLeft
-                            Console.SetCursorPosition(OldLeft, Console.WindowHeight - 1)
-                            WdbgConditional(ScreensaverDebug, DebugLevel.I, "Arrow drawn in {0}, {1}", Console.CursorLeft, Console.CursorTop)
-                            Console.Write(GetEsc() + "[1K^" + GetEsc() + "[K")
-                            Console.SetCursorPosition(OldLeft, OldTop)
+                            Dim OldTop As Integer = ConsoleWrapper.CursorTop
+                            Dim OldLeft As Integer = ConsoleWrapper.CursorLeft
+                            ConsoleWrapper.SetCursorPosition(OldLeft, ConsoleWrapper.WindowHeight - 1)
+                            WdbgConditional(ScreensaverDebug, DebugLevel.I, "Arrow drawn in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop)
+                            WritePlain(GetEsc() + "[1K^" + GetEsc() + "[K", False)
+                            ConsoleWrapper.SetCursorPosition(OldLeft, OldTop)
                             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Returned to {0}, {1}", OldLeft, OldTop)
                         End If
 
                         'Write the final character to the console and wait
-                        Console.Write(StruckChar)
+                        WritePlain(StruckChar, False)
                         SleepNoBlock(WriteMs, ScreensaverDisplayerThread)
                     Next
-                    Console.WriteLine()
-                    Console.Write(" ")
-                    WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", Console.CursorLeft, Console.CursorTop)
+                    WritePlain("", True)
+                    WritePlain(" ", False)
+                    WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop)
                 Next
             Next
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(TypewriterDelay, ScreensaverDisplayerThread)
         End Sub
 

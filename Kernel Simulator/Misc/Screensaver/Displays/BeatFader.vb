@@ -229,8 +229,8 @@ Namespace Misc.Screensaver.Displays
             'Variable preparations
             RandomDriver = New Random
             Console.BackgroundColor = ConsoleColor.Black
-            Console.Clear()
-            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", Console.WindowWidth, Console.WindowHeight)
+            ConsoleWrapper.Clear()
+            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight)
             BeatFaderSettingsInstance = New Animations.BeatFader.BeatFaderSettings With {
                 .BeatFader255Colors = BeatFader255Colors,
                 .BeatFaderTrueColor = BeatFaderTrueColor,

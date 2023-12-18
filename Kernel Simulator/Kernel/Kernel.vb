@@ -31,6 +31,7 @@ Imports System.IO
 Imports System.Reflection.Assembly
 Imports System.Threading
 Imports KS.Misc.Notifications
+Imports TermExts = Terminaux.Base.ConsoleExtensions
 
 #If SPECIFIER = "REL" Then
 Imports KS.Network
@@ -125,8 +126,8 @@ Namespace Kernel
                     'Check for console size
                     If CheckingForConsoleSize Then
                         'Check for the minimum console window requirements (80x24)
-                        Do While Console.WindowWidth < 80 Or Console.WindowHeight < 24
-                            Write(DoTranslation("Your console is too small to run properly:") + " {0}x{1}", True, color:=GetConsoleColor(ColTypes.Warning), Console.WindowWidth, Console.WindowHeight)
+                        Do While ConsoleWrapper.WindowWidth < 80 Or ConsoleWrapper.WindowHeight < 24
+                            Write(DoTranslation("Your console is too small to run properly:") + " {0}x{1}", True, color:=GetConsoleColor(ColTypes.Warning), ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight)
                             Write(DoTranslation("To have a better experience, resize your console window while still being on this screen. Press any key to continue..."), True, GetConsoleColor(ColTypes.Warning))
                             DetectKeypress()
                         Loop
@@ -219,7 +220,7 @@ Namespace Kernel
 
                     'Show license if new style used
                     If NewWelcomeStyle Or EnableSplash Then
-                        Console.WriteLine()
+                        WritePlain("", True)
                         WriteSeparator(DoTranslation("License information"), True, ColTypes.Stage)
                         WriteLicense(False)
                     End If
@@ -258,8 +259,8 @@ Namespace Kernel
             End While
 
             'Clear the console and reset the colors
-            Console.ResetColor()
-            Console.Clear()
+            TermExts.ResetColors()
+            ConsoleWrapper.Clear()
 
             'If "No APM" is enabled, simply print the text
             If SimulateNoAPM Then

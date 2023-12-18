@@ -29,13 +29,13 @@ Namespace Misc.Animations.Pulse
         ''' Simulates the pulsing animation
         ''' </summary>
         Public Sub Simulate(Settings As PulseSettings)
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             Dim RandomDriver As Random = Settings.RandomDriver
             Dim RedColorNum As Integer = RandomDriver.Next(Settings.PulseMinimumRedColorLevel, Settings.PulseMaximumRedColorLevel)
             Dim GreenColorNum As Integer = RandomDriver.Next(Settings.PulseMinimumGreenColorLevel, Settings.PulseMaximumGreenColorLevel)
             Dim BlueColorNum As Integer = RandomDriver.Next(Settings.PulseMinimumBlueColorLevel, Settings.PulseMaximumBlueColorLevel)
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
 
             'Set thresholds
             Dim ThresholdRed As Double = RedColorNum / Settings.PulseMaxSteps
@@ -48,7 +48,7 @@ Namespace Misc.Animations.Pulse
             Dim CurrentColorGreenIn As Integer = 0
             Dim CurrentColorBlueIn As Integer = 0
             For CurrentStep As Integer = Settings.PulseMaxSteps To 1 Step -1
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit For
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", CurrentStep, Settings.PulseMaxSteps)
                 SleepNoBlock(Settings.PulseDelay, System.Threading.Thread.CurrentThread)
@@ -56,16 +56,16 @@ Namespace Misc.Animations.Pulse
                 CurrentColorGreenIn += ThresholdGreen
                 CurrentColorBlueIn += ThresholdBlue
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Color in (R;G;B: {0};{1};{2})", CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn)
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If Not ResizeSyncing Then
                     SetConsoleColor(New Color(CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn), True)
-                    Console.Clear()
+                    ConsoleWrapper.Clear()
                 End If
             Next
 
             'Fade out
             For CurrentStep As Integer = 1 To Settings.PulseMaxSteps
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit For
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", CurrentStep, Settings.PulseMaxSteps)
                 SleepNoBlock(Settings.PulseDelay, System.Threading.Thread.CurrentThread)
@@ -75,14 +75,14 @@ Namespace Misc.Animations.Pulse
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut)
                 If Not ResizeSyncing Then
                     SetConsoleColor(New Color(CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut), True)
-                    Console.Clear()
+                    ConsoleWrapper.Clear()
                 End If
             Next
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(Settings.PulseDelay, System.Threading.Thread.CurrentThread)
         End Sub
 

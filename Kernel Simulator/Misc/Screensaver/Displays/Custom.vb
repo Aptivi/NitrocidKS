@@ -16,17 +16,14 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+Imports Terminaux.Base
+
 Namespace Misc.Screensaver.Displays
     Public Class CustomDisplay
         Inherits BaseScreensaver
         Implements IScreensaver
 
         Private ReadOnly Property CustomSaver As BaseScreensaver
-
-        'To Screensaver Developers: ONLY put the effect code in your scrnSaver() sub.
-        '                           Set colors, write welcome message, etc. with the exception of infinite loop and the effect code in preDisplay() sub
-        '                           Recommended: Turn off console cursor, and clear the screen in preDisplay() sub.
-        '                           Substitute: TextWriterColor.Write() with System.Console.WriteLine() or System.Console.Write().
 
         'WARNING: Please refrain from using ICustomSaver; use IScreensaver instead, which is more dynamic.
         '         This implementation doesn't call PostDisplay().
@@ -36,7 +33,7 @@ Namespace Misc.Screensaver.Displays
 
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
             Wdbg(DebugLevel.I, "Entered CustomSaver.ScreensaverPreparation().")
             CustomSaver.ScreensaverPreparation()
             Wdbg(DebugLevel.I, "Exited CustomSaver.ScreensaverPreparation().")

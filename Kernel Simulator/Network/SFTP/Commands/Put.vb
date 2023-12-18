@@ -28,10 +28,10 @@ Namespace Network.SFTP.Commands
 
             'Begin the uploading process
             If SFTPUploadFile(ListArgs(0)) Then
-                Console.WriteLine()
+                WritePlain("", True)
                 Write(NewLine + DoTranslation("Uploaded file {0}"), True, color:=GetConsoleColor(ColTypes.Success), ListArgs(0))
             Else
-                Console.WriteLine()
+                WritePlain("", True)
                 Write(NewLine + DoTranslation("Failed to upload {0}"), True, color:=GetConsoleColor(ColTypes.Error), ListArgs(0))
             End If
         End Sub

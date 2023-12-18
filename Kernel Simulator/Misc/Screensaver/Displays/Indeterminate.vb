@@ -406,11 +406,11 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             Console.BackgroundColor = ConsoleColor.Black
-            Console.Clear()
-            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", Console.WindowWidth, Console.WindowHeight)
+            ConsoleWrapper.Clear()
+            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight)
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
@@ -420,17 +420,17 @@ Namespace Misc.Screensaver.Displays
             Dim ColorNum As Integer = RandomDriver.Next(IndeterminateMinimumColorLevel, IndeterminateMaximumColorLevel)
 
             'Console resizing can sometimes cause the cursor to remain visible. This happens on Windows 10's terminal.
-            Console.CursorVisible = False
-            If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+            ConsoleWrapper.CursorVisible = False
+            If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
 
             'Set start and end widths for the ramp frame
             Dim RampFrameStartWidth As Integer = 4
-            Dim RampFrameEndWidth As Integer = Console.WindowWidth - RampFrameStartWidth
+            Dim RampFrameEndWidth As Integer = ConsoleWrapper.WindowWidth - RampFrameStartWidth
             Dim RampFrameSpaces As Integer = RampFrameEndWidth - RampFrameStartWidth
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Start width: {0}, End width: {1}, Spaces: {2}", RampFrameStartWidth, RampFrameEndWidth, RampFrameSpaces)
 
             'Let the ramp be printed in the center
-            Dim RampCenterPosition As Integer = Console.WindowHeight / 2
+            Dim RampCenterPosition As Integer = ConsoleWrapper.WindowHeight / 2
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Center position: {0}", RampCenterPosition)
 
             'Draw the frame
@@ -463,7 +463,7 @@ Namespace Misc.Screensaver.Displays
             'Fill the ramp!
             Do Until (IndeterminateCurrentBlockEnd = RampFrameBlockEndWidth And IndeterminateCurrentBlockDirection = IndeterminateDirection.LeftToRight) Or
                      (IndeterminateCurrentBlockStart = RampFrameBlockStartWidth And IndeterminateCurrentBlockDirection = IndeterminateDirection.RightToLeft)
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit Do
 
                 'Clear the ramp
@@ -513,10 +513,10 @@ Namespace Misc.Screensaver.Displays
             End Select
 
             Console.BackgroundColor = ConsoleColor.Black
-            Console.Clear()
+            ConsoleWrapper.Clear()
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(IndeterminateDelay, ScreensaverDisplayerThread)
         End Sub
 

@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports System.Text
+Imports Terminaux.Base
 
 Namespace ManPages
     Public Module PageViewer
@@ -36,7 +37,7 @@ Namespace ManPages
                 Dim InfoPlace As Integer
 
                 'Get the bottom place
-                InfoPlace = Console.WindowHeight - 1
+                InfoPlace = ConsoleWrapper.WindowHeight - 1
                 Wdbg(DebugLevel.I, "Bottom info height is {0}", InfoPlace)
 
                 'If there is any To-do, write them to the console
@@ -50,17 +51,17 @@ Namespace ManPages
                 End If
 
                 'Clear screen for readability
-                Console.Clear()
+                ConsoleWrapper.Clear()
 
                 'Write the information to the console
                 If Not String.IsNullOrWhiteSpace(ManpageInfoStyle) Then
-                    WriteWhere(ProbePlaces(ManpageInfoStyle), Console.CursorLeft, InfoPlace, True, BackgroundColor, NeutralTextColor, Pages(ManualTitle).Title, Pages(ManualTitle).Revision)
+                    WriteWhere(ProbePlaces(ManpageInfoStyle), ConsoleWrapper.CursorLeft, InfoPlace, True, BackgroundColor, NeutralTextColor, Pages(ManualTitle).Title, Pages(ManualTitle).Revision)
                 Else
-                    WriteWhere(" {0} [v{1}] ", Console.CursorLeft, InfoPlace, True, BackgroundColor, NeutralTextColor, Pages(ManualTitle).Title, Pages(ManualTitle).Revision)
+                    WriteWhere(" {0} [v{1}] ", ConsoleWrapper.CursorLeft, InfoPlace, True, BackgroundColor, NeutralTextColor, Pages(ManualTitle).Title, Pages(ManualTitle).Revision)
                 End If
 
                 'Disable blinking cursor
-                Console.CursorVisible = False
+                ConsoleWrapper.CursorVisible = False
 
                 'Split the sentences to parts to deal with sentence lengths that are longer than the console window width
                 Dim IncompleteSentences As New List(Of String)
@@ -95,7 +96,7 @@ Namespace ManPages
 
                         'Check to see if we're at the maximum character number
                         If Not InEsc Then
-                            If IncompleteSentenceBuilder.Length - EscapeCharacters = Console.WindowWidth - Convert.ToInt32(IsOnUnix) Or line.Length = CharactersParsed Then
+                            If IncompleteSentenceBuilder.Length - EscapeCharacters = ConsoleWrapper.WindowWidth - Convert.ToInt32(IsOnUnix) Or line.Length = CharactersParsed Then
                                 'We're at the character number of maximum character. Add the sentence to the list for "wrapping" in columns.
                                 Wdbg(DebugLevel.I, "Adding {0} to the list... Incomplete sentences: {1}", IncompleteSentenceBuilder.ToString, IncompleteSentences.Count)
                                 IncompleteSentences.Add(IncompleteSentenceBuilder.ToString)
@@ -112,22 +113,22 @@ Namespace ManPages
                 'Write the body
                 For Each line As String In IncompleteSentences
                     'Write the line
-                    Dim OldTop As Integer = Console.CursorTop + 1
+                    Dim OldTop As Integer = ConsoleWrapper.CursorTop + 1
                     Write(line, True, GetConsoleColor(ColTypes.Neutral))
-                    If OldTop <> Console.CursorTop Then Console.CursorTop = OldTop
+                    If OldTop <> ConsoleWrapper.CursorTop Then ConsoleWrapper.CursorTop = OldTop
 
                     'Check to see if we're at the end
-                    If Console.CursorTop = InfoPlace - 1 Then
+                    If ConsoleWrapper.CursorTop = InfoPlace - 1 Then
                         Dim PressedKey As ConsoleKeyInfo = DetectKeypress()
                         If PressedKey.Key = ConsoleKey.Escape Then
-                            Console.Clear()
+                            ConsoleWrapper.Clear()
                             Exit Sub
                         Else
-                            Console.Clear()
+                            ConsoleWrapper.Clear()
                             If Not String.IsNullOrWhiteSpace(ManpageInfoStyle) Then
-                                WriteWhere(ProbePlaces(ManpageInfoStyle), Console.CursorLeft, InfoPlace, True, BackgroundColor, NeutralTextColor, Pages(ManualTitle).Title, Pages(ManualTitle).Revision)
+                                WriteWhere(ProbePlaces(ManpageInfoStyle), ConsoleWrapper.CursorLeft, InfoPlace, True, BackgroundColor, NeutralTextColor, Pages(ManualTitle).Title, Pages(ManualTitle).Revision)
                             Else
-                                WriteWhere(" {0} (v{1}) ", Console.CursorLeft, InfoPlace, True, BackgroundColor, NeutralTextColor, Pages(ManualTitle).Title, Pages(ManualTitle).Revision)
+                                WriteWhere(" {0} (v{1}) ", ConsoleWrapper.CursorLeft, InfoPlace, True, BackgroundColor, NeutralTextColor, Pages(ManualTitle).Title, Pages(ManualTitle).Revision)
                             End If
                         End If
                     End If
@@ -139,7 +140,7 @@ Namespace ManPages
 
                 'Clean up
                 Wdbg(DebugLevel.I, "Exiting...")
-                Console.Clear()
+                ConsoleWrapper.Clear()
             Else
                 Write(DoTranslation("Manual page {0} not found."), True, color:=GetConsoleColor(ColTypes.Neutral), ManualTitle)
             End If

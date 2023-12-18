@@ -36,13 +36,13 @@ Namespace Network.FTP.Transfer
             If Percentage.Progress < 0 Then
                 progressFlag = False
             Else
-                ConsoleOriginalPosition_LEFT = Console.CursorLeft
-                ConsoleOriginalPosition_TOP = Console.CursorTop
+                ConsoleOriginalPosition_LEFT = ConsoleWrapper.CursorLeft
+                ConsoleOriginalPosition_TOP = ConsoleWrapper.CursorTop
                 If progressFlag = True And Percentage.Progress <> 100 Then
                     Write(" {0}% (ETA: {1}d {2}:{3}:{4} @ {5})", False, color:=GetConsoleColor(ColTypes.Progress), Percentage.Progress.ToString("N2"), Percentage.ETA.Days, Percentage.ETA.Hours, Percentage.ETA.Minutes, Percentage.ETA.Seconds, Percentage.TransferSpeedToString)
                     ClearLineToRight()
                 End If
-                Console.SetCursorPosition(ConsoleOriginalPosition_LEFT, ConsoleOriginalPosition_TOP)
+                ConsoleWrapper.SetCursorPosition(ConsoleOriginalPosition_LEFT, ConsoleOriginalPosition_TOP)
             End If
         End Sub
 
@@ -54,14 +54,14 @@ Namespace Network.FTP.Transfer
             If Percentage.Progress < 0 Then
                 progressFlag = False
             Else
-                ConsoleOriginalPosition_LEFT = Console.CursorLeft
-                ConsoleOriginalPosition_TOP = Console.CursorTop
+                ConsoleOriginalPosition_LEFT = ConsoleWrapper.CursorLeft
+                ConsoleOriginalPosition_TOP = ConsoleWrapper.CursorTop
                 If progressFlag = True And Percentage.Progress <> 100 Then
                     Write("- [{0}/{1}] {2}: ", False, color:=GetConsoleColor(ColTypes.ListEntry), Percentage.FileIndex + 1, Percentage.FileCount, Percentage.RemotePath)
                     Write("{0}% (ETA: {1}d {2}:{3}:{4} @ {5})", False, color:=GetConsoleColor(ColTypes.Progress), Percentage.Progress.ToString("N2"), Percentage.ETA.Days, Percentage.ETA.Hours, Percentage.ETA.Minutes, Percentage.ETA.Seconds, Percentage.TransferSpeedToString)
                     ClearLineToRight()
                 End If
-                Console.SetCursorPosition(ConsoleOriginalPosition_LEFT, ConsoleOriginalPosition_TOP)
+                ConsoleWrapper.SetCursorPosition(ConsoleOriginalPosition_LEFT, ConsoleOriginalPosition_TOP)
             End If
         End Sub
 

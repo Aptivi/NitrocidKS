@@ -38,8 +38,8 @@ Namespace Misc.Timers
         ''' </summary>
         Sub OpenTimer()
             'Clear for cleanliness
-            Console.Clear()
-            Console.CursorVisible = False
+            ConsoleWrapper.Clear()
+            ConsoleWrapper.CursorVisible = False
 
             'Populate the figlet font (if any)
             Dim FigletFont As FiggleFont = GetFigletFont(TimerFigletFont)
@@ -48,8 +48,8 @@ Namespace Misc.Timers
             Dim TimerInterval As Double = 60000
 
             'Populate the positions for time
-            Dim HalfWidth As Integer = Console.WindowWidth / 2
-            Dim HalfHeight As Integer = Console.WindowHeight / 2
+            Dim HalfWidth As Integer = ConsoleWrapper.WindowWidth / 2
+            Dim HalfHeight As Integer = ConsoleWrapper.WindowHeight / 2
             Dim CurrentRemainingString As String = GetRemainingTimeFromNow(TimerInterval)
             Dim TimeLeftPosition As Integer = 0
             Dim TimeTopPosition As Integer = 0
@@ -62,7 +62,7 @@ Namespace Misc.Timers
             'Populate the keys text variable
             Dim KeysText As String = "[ENTER] " + DoTranslation("Start (re)counting down") + " | [T] " + DoTranslation("Set interval") + " | [ESC] " + DoTranslation("Exit")
             Dim KeysTextLeftPosition As Integer = HalfWidth - (KeysText.Length / 2)
-            Dim KeysTextTopPosition As Integer = Console.WindowHeight - 2
+            Dim KeysTextTopPosition As Integer = ConsoleWrapper.WindowHeight - 2
             Dim KeysKeypress As ConsoleKey
 
             'Print the keys text
@@ -76,7 +76,7 @@ Namespace Misc.Timers
             End If
 
             'Print the border
-            WriteWhere("═".Repeat(Console.WindowWidth), 0, KeysTextTopPosition - 2, True, ColTypes.Gray)
+            WriteWhere("═".Repeat(ConsoleWrapper.WindowWidth), 0, KeysTextTopPosition - 2, True, ColTypes.Gray)
 
             'Wait for a keypress
             While KeysKeypress <> ConsoleKey.Escape
@@ -115,7 +115,7 @@ Namespace Misc.Timers
                             End If
 
                             'Clean up
-                            Console.SetCursorPosition(0, KeysTextTopPosition - 4)
+                            ConsoleWrapper.SetCursorPosition(0, KeysTextTopPosition - 4)
                             ClearLineToRight()
                         End If
                     Case ConsoleKey.Escape
@@ -128,8 +128,8 @@ Namespace Misc.Timers
 
             'Clear for cleanliness
             Timer = New Timer
-            Console.Clear()
-            Console.CursorVisible = True
+            ConsoleWrapper.Clear()
+            ConsoleWrapper.CursorVisible = True
         End Sub
 
         ''' <summary>
@@ -137,8 +137,8 @@ Namespace Misc.Timers
         ''' </summary>
         Private Sub TimerElapsed(sender As Object, e As ElapsedEventArgs) Handles Timer.Elapsed
             Dim FigletFont As FiggleFont = GetFigletFont(TimerFigletFont)
-            Dim HalfWidth As Integer = Console.WindowWidth / 2
-            Dim HalfHeight As Integer = Console.WindowHeight / 2
+            Dim HalfWidth As Integer = ConsoleWrapper.WindowWidth / 2
+            Dim HalfHeight As Integer = ConsoleWrapper.WindowHeight / 2
             Dim ElapsedText As String = New TimeSpan().ToString("d\.hh\:mm\:ss\.fff", CurrentCult)
             Dim TimeLeftPosition As Integer = 0
             Dim TimeTopPosition As Integer = 0
@@ -165,8 +165,8 @@ Namespace Misc.Timers
             While TimerUpdate.IsAlive
                 Try
                     Dim Until As TimeSpan = TimerStarted.AddMilliseconds(Timer.Interval) - Date.Now
-                    Dim HalfWidth As Integer = Console.WindowWidth / 2
-                    Dim HalfHeight As Integer = Console.WindowHeight / 2
+                    Dim HalfWidth As Integer = ConsoleWrapper.WindowWidth / 2
+                    Dim HalfHeight As Integer = ConsoleWrapper.WindowHeight / 2
                     Dim UntilText As String = Until.ToString("d\.hh\:mm\:ss\.fff", CurrentCult)
                     Dim TimeLeftPosition As Integer = 0
                     Dim TimeTopPosition As Integer = 0
@@ -193,8 +193,8 @@ Namespace Misc.Timers
         Private Sub UpdateRemainingPositions(RemainingTimeText As String, ByRef TimeLeftPosition As Integer, ByRef TimeTopPosition As Integer)
             'Some initial variables
             Dim FigletFont As FiggleFont = GetFigletFont(TimerFigletFont)
-            Dim HalfWidth As Integer = Console.WindowWidth / 2
-            Dim HalfHeight As Integer = Console.WindowHeight / 2
+            Dim HalfWidth As Integer = ConsoleWrapper.WindowWidth / 2
+            Dim HalfHeight As Integer = ConsoleWrapper.WindowHeight / 2
 
             'Get the Figlet time left and top position
             Dim FigletTimeLeftPosition As Integer = HalfWidth - (GetFigletWidth(RemainingTimeText, FigletFont) / 2)
@@ -212,8 +212,8 @@ Namespace Misc.Timers
         Private Sub ClearRemainingTimeDisplay(RemainingTimeText As String, FigletOldWidth As Integer, FigletOldWidthEnd As Integer)
             'Some initial variables
             Dim FigletFont As FiggleFont = GetFigletFont(TimerFigletFont)
-            Dim HalfWidth As Integer = Console.WindowWidth / 2
-            Dim HalfHeight As Integer = Console.WindowHeight / 2
+            Dim HalfWidth As Integer = ConsoleWrapper.WindowWidth / 2
+            Dim HalfHeight As Integer = ConsoleWrapper.WindowHeight / 2
 
             'Get the Figlet time left and top position
             Dim FigletTimeLeftPosition As Integer = HalfWidth - (GetFigletWidth(RemainingTimeText, FigletFont) / 2)
@@ -224,13 +224,13 @@ Namespace Misc.Timers
             'If figlet is enabled, clear the display
             If EnableFigletTimer Then
                 For FigletTimePosition As Integer = FigletTimeTopPosition To FigletTimeBottomPosition
-                    Console.CursorTop = FigletTimePosition
+                    ConsoleWrapper.CursorTop = FigletTimePosition
                     For Position As Integer = FigletOldWidth - 1 To FigletTimeLeftPosition - 1
-                        Console.CursorLeft = Position
+                        ConsoleWrapper.CursorLeft = Position
                         Write(" ", False, NeutralTextColor, BackgroundColor)
                     Next
                     For Position As Integer = FigletOldWidthEnd To FigletTimeLeftEndPosition + 1
-                        Console.CursorLeft = Position
+                        ConsoleWrapper.CursorLeft = Position
                         Write(" ", False, NeutralTextColor, BackgroundColor)
                     Next
                 Next

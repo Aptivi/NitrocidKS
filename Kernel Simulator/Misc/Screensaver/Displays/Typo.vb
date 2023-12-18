@@ -141,10 +141,10 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SetConsoleColor(New Color(TypoTextColor))
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
@@ -154,16 +154,16 @@ Namespace Misc.Screensaver.Displays
             Dim CapStrikes As New List(Of String) From {"Q~!@WSA", "R$#EDFGT%", "U&^YHJKI*", "P)(OL:""{_+}|", "?"":> ", "M<LKJN ", "VBHGFC ", "ZXDSA "}
             Dim CapSymbols As String = "~!@$#%&^*)(:""{_+}|?><"
 
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
 
             'Prepare display (make a paragraph indentation)
-            Console.WriteLine()
-            Console.Write("    ")
-            WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", Console.CursorLeft, Console.CursorTop)
+            WritePlain("", True)
+            WritePlain("    ", False)
+            WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop)
 
             'Get struck character and write it
             For Each StruckChar As Char In TypoWrite
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit For
 
                 'Calculate needed milliseconds from two WPM speeds (minimum and maximum)
@@ -218,18 +218,18 @@ Namespace Misc.Screensaver.Displays
                 End If
 
                 'Write the final character to the console and wait
-                If Not StruckChar = vbNullChar Then Console.Write(StruckChar)
+                If Not StruckChar = vbNullChar Then WritePlain(StruckChar, False)
                 SleepNoBlock(WriteMs, ScreensaverDisplayerThread)
             Next
 
             'Wait until retry
-            Console.WriteLine()
+            WritePlain("", True)
             If Not ResizeSyncing Then SleepNoBlock(TypoWriteAgainDelay, ScreensaverDisplayerThread)
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(TypoDelay, ScreensaverDisplayerThread)
         End Sub
 

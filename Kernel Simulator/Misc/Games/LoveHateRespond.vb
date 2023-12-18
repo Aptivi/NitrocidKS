@@ -108,7 +108,7 @@ Namespace Misc.Games
                 Write(" {0}", True, color:=GetConsoleColor(ColTypes.ListValue), RandomComment)
                 Write(DoTranslation("How would you respond?") + " <A/T/Q> ", False, GetConsoleColor(ColTypes.Input))
                 Response = DetectKeypress().KeyChar
-                Console.WriteLine()
+                WritePlain("", True)
                 Wdbg(DebugLevel.I, "Response: {0}", Response)
 
                 'Parse response

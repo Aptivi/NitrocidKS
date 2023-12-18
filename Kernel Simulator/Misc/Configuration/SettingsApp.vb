@@ -45,7 +45,7 @@ Namespace Misc.Configuration
             CurrentSettingsType = SettingsType
 
             While Not PromptFinished
-                Console.Clear()
+                ConsoleWrapper.Clear()
 
                 'Populate answers
                 Dim inputs As New List(Of InputChoiceInfo)
@@ -127,7 +127,7 @@ Namespace Misc.Configuration
                     'The selected answer is "Exit"
                     Wdbg(DebugLevel.W, "Exiting...")
                     PromptFinished = True
-                    Console.Clear()
+                    ConsoleWrapper.Clear()
                 Else
                     'Invalid selection
                     Wdbg(DebugLevel.W, "Option is not valid. Returning...")
@@ -226,7 +226,7 @@ Namespace Misc.Configuration
                     End If
                 End While
             Catch ex As Exception
-                Console.Clear()
+                ConsoleWrapper.Clear()
                 Wdbg(DebugLevel.I, "Error trying to open section: {0}", ex.Message)
                 WriteSeparator("???", True)
                 Write(NewLine + "X) " + DoTranslation("Invalid section entered. Please go back."), True, GetConsoleColor(ColTypes.Error))
@@ -296,7 +296,7 @@ Namespace Misc.Configuration
                 Dim AnswerInt As Integer
 
                 While Not KeyFinished
-                    Console.Clear()
+                    ConsoleWrapper.Clear()
 
                     'Make an introductory banner
                     WriteSeparator(DoTranslation(Section + " Settings...") + " > " + DoTranslation(KeyName), True)
@@ -345,12 +345,12 @@ Namespace Misc.Configuration
 #Disable Warning BC42104
                     'If the type is boolean, write the two options
                     If KeyType = SettingsKeyType.SBoolean Then
-                        Console.WriteLine()
+                        WritePlain("", True)
                         MaxKeyOptions = 2
                         Write(" 1) " + DoTranslation("Enable"), True, GetConsoleColor(ColTypes.Option))
                         Write(" 2) " + DoTranslation("Disable"), True, GetConsoleColor(ColTypes.Option))
                     End If
-                    Console.WriteLine()
+                    WritePlain("", True)
 
                     'If the type is a color, initialize the color wheel
                     If KeyType = SettingsKeyType.SColor Then
@@ -361,11 +361,11 @@ Namespace Misc.Configuration
                     If KeyType = SettingsKeyType.SSelection Then
                         Write(DoTranslation("Current items:"), True, ColTypes.ListTitle)
                         WriteList(SelectFrom)
-                        Console.WriteLine()
+                        WritePlain("", True)
                     ElseIf KeyType = SettingsKeyType.SList Then
                         Write(DoTranslation("Current items:"), True, ColTypes.ListTitle)
                         WriteList(TargetList)
-                        Console.WriteLine()
+                        WritePlain("", True)
                     End If
 
                     'Add an option to go back.
@@ -434,13 +434,13 @@ Namespace Misc.Configuration
                             ElseIf KeyType = SettingsKeyType.SIntSlider Then
                                 Dim PressedKey As ConsoleKey
                                 Dim CurrentValue As Integer = KeyDefaultValue
-                                Console.CursorVisible = False
+                                ConsoleWrapper.CursorVisible = False
                                 Do Until PressedKey = ConsoleKey.Enter
                                     'Draw the progress bar
-                                    WriteProgress(100 * (CurrentValue / IntSliderMaximumValue), 4, Console.WindowHeight - 4)
+                                    WriteProgress(100 * (CurrentValue / IntSliderMaximumValue), 4, ConsoleWrapper.WindowHeight - 4)
 
                                     'Show the current value
-                                    WriteWhere(DoTranslation("Current value:") + " {0} / {1} - {2}" + GetEsc() + "[0K", 5, Console.WindowHeight - 5, False, GetConsoleColor(ColTypes.Neutral), CurrentValue, IntSliderMinimumValue, IntSliderMaximumValue)
+                                    WriteWhere(DoTranslation("Current value:") + " {0} / {1} - {2}" + GetEsc() + "[0K", 5, ConsoleWrapper.WindowHeight - 5, False, GetConsoleColor(ColTypes.Neutral), CurrentValue, IntSliderMinimumValue, IntSliderMaximumValue)
 
                                     'Parse the user input
                                     PressedKey = DetectKeypress().Key
@@ -451,7 +451,7 @@ Namespace Misc.Configuration
                                             If CurrentValue < IntSliderMaximumValue Then CurrentValue += 1
                                         Case ConsoleKey.Enter
                                             AnswerString = CurrentValue
-                                            Console.CursorVisible = True
+                                            ConsoleWrapper.CursorVisible = True
                                     End Select
                                 Loop
                             Else
@@ -686,7 +686,7 @@ Namespace Misc.Configuration
 #Enable Warning BC42104
                 End While
             Catch ex As Exception
-                Console.Clear()
+                ConsoleWrapper.Clear()
                 Wdbg(DebugLevel.I, "Error trying to open section: {0}", ex.Message)
                 WStkTrc(ex)
                 WriteSeparator(DoTranslation(Section + " Settings...") + " > ???", True)

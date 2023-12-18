@@ -367,7 +367,7 @@ Namespace ConsoleBase.Themes.Studio
         ''' Prepares the preview
         ''' </summary>
         Sub PreparePreview()
-            Console.Clear()
+            ConsoleWrapper.Clear()
             Write(DoTranslation("Here's how your theme will look like:") + NewLine, True, GetConsoleColor(ColTypes.Neutral))
 
             'Print every possibility of color types

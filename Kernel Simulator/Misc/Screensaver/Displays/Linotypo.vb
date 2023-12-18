@@ -214,21 +214,21 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SetConsoleColor(New Color(LinotypoTextColor))
-            Console.Clear()
-            Console.CursorVisible = False
-            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", Console.WindowWidth, Console.WindowHeight)
+            ConsoleWrapper.Clear()
+            ConsoleWrapper.CursorVisible = False
+            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight)
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
             Dim CpmSpeedMin As Integer = LinotypoWritingSpeedMin * 5
             Dim CpmSpeedMax As Integer = LinotypoWritingSpeedMax * 5
-            Dim MaxCharacters As Integer = ((Console.WindowWidth - 2) / LinotypoTextColumns) - 3
+            Dim MaxCharacters As Integer = ((ConsoleWrapper.WindowWidth - 2) / LinotypoTextColumns) - 3
             Dim CurrentColumn As Integer = 1
-            Dim CurrentColumnRowConsole As Integer = Console.CursorLeft
-            Dim ColumnRowConsoleThreshold As Integer = Console.WindowWidth / LinotypoTextColumns
+            Dim CurrentColumnRowConsole As Integer = ConsoleWrapper.CursorLeft
+            Dim ColumnRowConsoleThreshold As Integer = ConsoleWrapper.WindowWidth / LinotypoTextColumns
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Minimum speed from {0} WPM: {1} CPM", LinotypoWritingSpeedMin, CpmSpeedMin)
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Maximum speed from {0} WPM: {1} CPM", LinotypoWritingSpeedMax, CpmSpeedMax)
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Maximum characters: {0} (satisfying {1} columns)", MaxCharacters, LinotypoTextColumns)
@@ -259,7 +259,7 @@ Namespace Misc.Screensaver.Displays
 
             'For each line, write four spaces, and extra two spaces if paragraph starts.
             For Each Paragraph As String In LinotypeWrite.SplitNewLines
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit For
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "New paragraph: {0}", Paragraph)
 
@@ -270,13 +270,13 @@ Namespace Misc.Screensaver.Displays
                 'We need to make sure that we indent spaces for each new paragraph.
                 If CurrentColumn = 1 Then
                     WdbgConditional(ScreensaverDebug, DebugLevel.I, "Column 1. Printing newline...")
-                    Console.WriteLine()
+                    WritePlain("", True)
                 Else
                     WdbgConditional(ScreensaverDebug, DebugLevel.I, "Column {0}. Setting left to {1}...", CurrentColumn, CurrentColumnRowConsole)
-                    Console.SetCursorPosition(CurrentColumnRowConsole, Console.CursorTop + 1)
+                    ConsoleWrapper.SetCursorPosition(CurrentColumnRowConsole, ConsoleWrapper.CursorTop + 1)
                 End If
-                Console.Write("    ")
-                WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", Console.CursorLeft, Console.CursorTop)
+                WritePlain("    ", False)
+                WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop)
                 Dim NewLineDone As Boolean = True
 
                 'Split the paragraph into sentences that have the length of maximum characters that can be printed for each column
@@ -291,7 +291,7 @@ Namespace Misc.Screensaver.Displays
                 'the first time and will be reverted back to zero after the incomplete sentence is formed.
                 Dim ReservedCharacters As Integer = 4
                 For Each ParagraphChar As Char In Paragraph
-                    If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                    If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                     If ResizeSyncing Then Exit For
 
                     'Append the character into the incomplete sentence builder.
@@ -313,21 +313,21 @@ Namespace Misc.Screensaver.Displays
                 'Get struck character and write it
                 For IncompleteSentenceIndex As Integer = 0 To IncompleteSentences.Count - 1
                     Dim IncompleteSentence As String = IncompleteSentences(IncompleteSentenceIndex)
-                    If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                    If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                     If ResizeSyncing Then Exit For
 
                     'Check if we need to indent a sentence
                     If Not NewLineDone Then
                         If CurrentColumn = 1 Then
                             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Column 1. Printing newline...")
-                            Console.WriteLine()
+                            WritePlain("", True)
                         Else
                             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Column {0}. Setting left to {1}...", CurrentColumn, CurrentColumnRowConsole)
-                            Console.SetCursorPosition(CurrentColumnRowConsole, Console.CursorTop + 1)
+                            ConsoleWrapper.SetCursorPosition(CurrentColumnRowConsole, ConsoleWrapper.CursorTop + 1)
                         End If
                     End If
-                    Console.Write("  ")
-                    WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", Console.CursorLeft, Console.CursorTop)
+                    WritePlain("  ", False)
+                    WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop)
 
                     'We need to store which column and which key from the linotype keyboard layout is taken.
                     Dim LinotypeColumnIndex As Integer = 0
@@ -336,24 +336,24 @@ Namespace Misc.Screensaver.Displays
 
                     'Process the incomplete sentences
                     For StruckCharIndex As Integer = 0 To IncompleteSentence.Length - 1
-                        If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                        If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                         If ResizeSyncing Then Exit For
 
                         'Sometimes, typing error can be made in the last line and the line is repeated on the first line in the different
                         'column, but it ruins the overall beautiful look of the paragraphs, considering how it is split in columns. We
                         'need to re-indent the sentence.
-                        If Console.CursorTop = 0 Then
+                        If ConsoleWrapper.CursorTop = 0 Then
                             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Line repeat in first line in new column. Indenting...")
                             If CurrentColumn = 1 Then
                                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Column 1. Printing newline...")
-                                Console.WriteLine()
+                                WritePlain("", True)
                             Else
                                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Column {0}. Setting left to {1}...", CurrentColumn, CurrentColumnRowConsole)
-                                Console.SetCursorPosition(CurrentColumnRowConsole, Console.CursorTop + 1)
+                                ConsoleWrapper.SetCursorPosition(CurrentColumnRowConsole, ConsoleWrapper.CursorTop + 1)
                             End If
-                            Console.Write("  ")
-                            If IncompleteSentenceIndex = 0 Then Console.Write("    ")
-                            WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", Console.CursorLeft, Console.CursorTop)
+                            WritePlain("  ", False)
+                            If IncompleteSentenceIndex = 0 Then WritePlain("    ", False)
+                            WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop)
                         End If
 
                         'Select a character
@@ -460,7 +460,7 @@ Namespace Misc.Screensaver.Displays
                         End If
 
                         'Write the final character to the console and wait
-                        If Not StruckChar = vbNullChar Then Console.Write(StruckChar)
+                        If Not StruckChar = vbNullChar Then WritePlain(StruckChar, False)
                         SleepNoBlock(WriteMs, ScreensaverDisplayerThread)
 
                         'If we're on the character counter mode, increment this for every character until the "line fill" mode starts
@@ -482,18 +482,18 @@ Namespace Misc.Screensaver.Displays
                             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Etaoin mode off because end of sentence.")
                             StruckCharIndex = -1
                             EtaoinMode = False
-                            If Console.CursorTop >= Console.WindowHeight - 2 Then
+                            If ConsoleWrapper.CursorTop >= ConsoleWrapper.WindowHeight - 2 Then
                                 HandleNextColumn(CurrentColumn, CurrentColumnRowConsole, ColumnRowConsoleThreshold)
                             Else
                                 If CurrentColumn = 1 Then
                                     WdbgConditional(ScreensaverDebug, DebugLevel.I, "Column 1. Printing newline...")
-                                    Console.WriteLine()
+                                    WritePlain("", True)
                                 Else
                                     WdbgConditional(ScreensaverDebug, DebugLevel.I, "Column {0}. Setting left to {1}...", CurrentColumn, CurrentColumnRowConsole)
-                                    Console.SetCursorPosition(CurrentColumnRowConsole, Console.CursorTop + 1)
+                                    ConsoleWrapper.SetCursorPosition(CurrentColumnRowConsole, ConsoleWrapper.CursorTop + 1)
                                 End If
-                                Console.Write("  ")
-                                WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", Console.CursorLeft, Console.CursorTop)
+                                WritePlain("  ", False)
+                                WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop)
                             End If
                         End If
                     Next
@@ -518,8 +518,8 @@ Namespace Misc.Screensaver.Displays
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(LinotypoDelay, ScreensaverDisplayerThread)
         End Sub
 
@@ -531,36 +531,36 @@ Namespace Misc.Screensaver.Displays
         ''' <param name="ColumnRowConsoleThreshold"></param>
         Sub HandleNextColumn(ByRef CurrentColumn As Integer, ByRef CurrentColumnRowConsole As Integer, ColumnRowConsoleThreshold As Integer)
             If LinotypoTextColumns > 1 Then
-                If Console.CursorTop >= Console.WindowHeight - 2 Then
+                If ConsoleWrapper.CursorTop >= ConsoleWrapper.WindowHeight - 2 Then
                     'We're on the bottom, so...
                     If CurrentColumn >= LinotypoTextColumns Then
                         '...wait until retry
                         WdbgConditional(ScreensaverDebug, DebugLevel.I, "Drawn all columns. Waiting {0} ms...", LinotypoNewScreenDelay)
-                        Console.WriteLine()
+                        WritePlain("", True)
                         SleepNoBlock(LinotypoNewScreenDelay, ScreensaverDisplayerThread)
 
                         '...and make a new screen
-                        Console.Clear()
+                        ConsoleWrapper.Clear()
                         CurrentColumn = 1
-                        CurrentColumnRowConsole = Console.CursorLeft
+                        CurrentColumnRowConsole = ConsoleWrapper.CursorLeft
                     Else
                         '...we're moving to the next column
                         CurrentColumn += 1
                         CurrentColumnRowConsole += ColumnRowConsoleThreshold
-                        Console.SetCursorPosition(CurrentColumnRowConsole, 0)
+                        ConsoleWrapper.SetCursorPosition(CurrentColumnRowConsole, 0)
                         WdbgConditional(ScreensaverDebug, DebugLevel.I, "New column. Moving to {0}...", CurrentColumnRowConsole)
                     End If
                 End If
-            ElseIf LinotypoTextColumns = 1 And Console.CursorTop >= Console.WindowHeight - 2 Then
+            ElseIf LinotypoTextColumns = 1 And ConsoleWrapper.CursorTop >= ConsoleWrapper.WindowHeight - 2 Then
                 'We're on the bottom, so wait until retry...
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Drawn all text. Waiting {0} ms...", LinotypoNewScreenDelay)
-                Console.WriteLine()
+                WritePlain("", True)
                 SleepNoBlock(LinotypoNewScreenDelay, ScreensaverDisplayerThread)
 
                 '...and make a new screen
-                Console.Clear()
+                ConsoleWrapper.Clear()
                 CurrentColumn = 1
-                CurrentColumnRowConsole = Console.CursorLeft
+                CurrentColumnRowConsole = ConsoleWrapper.CursorLeft
             End If
         End Sub
 

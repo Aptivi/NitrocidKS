@@ -35,7 +35,7 @@ Namespace Arguments
             'Shows available arguments
             Write(DoTranslation("Available kernel arguments:"), True, ColTypes.ListTitle)
             ShowArgsHelp(ArgumentType.KernelArgs)
-            Console.WriteLine()
+            WritePlain("", True)
             Write("* " + DoTranslation("Press ""q"" if you're done."), True, ColTypes.Tip)
             Write("* " + DoTranslation("Multiple kernel arguments can be separated with commas without spaces, for example:") + " ""debug,safe""", True, ColTypes.Tip)
             Write("* " + DoTranslation("Multiple injected commands can be separated with colons with spaces, for example:") + " cmdinject ""beep 100 500 : echo Hello!""", True, ColTypes.Tip)

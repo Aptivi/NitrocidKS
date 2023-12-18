@@ -25,7 +25,7 @@ Namespace Shell.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             InitializeSnaker(False)
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
     End Class

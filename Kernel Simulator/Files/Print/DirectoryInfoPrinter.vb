@@ -48,7 +48,7 @@ Namespace Files.Print
                           TotalSize.FileSizeToString, DirectoryInfo.CreationTime.ToShortDateString, DirectoryInfo.CreationTime.ToShortTimeString,
                                                       DirectoryInfo.LastWriteTime.ToShortDateString, DirectoryInfo.LastWriteTime.ToShortTimeString)
                         End If
-                        Console.WriteLine()
+                        WritePlain("", True)
                     End If
                 End If
             Else

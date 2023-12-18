@@ -23,6 +23,7 @@ Imports System.Threading
 Imports System.Threading.Tasks
 Imports KS.Files.Folders
 Imports KS.Misc.Notifications
+Imports Terminaux.Base
 
 Namespace Network.Transfer
     Public Module NetworkTransfer
@@ -119,7 +120,7 @@ Namespace Network.Transfer
 
             'We're done downloading. Check to see if it's actually an error
             TransferFinished = False
-            If ShowProgress And Not SuppressDownloadMessage Then Console.WriteLine()
+            If ShowProgress And Not SuppressDownloadMessage Then WritePlain("", True)
             SuppressDownloadMessage = False
             If IsError Then
                 If DownloadNotificationProvoke Then DownloadNotif.ProgressFailed = True
@@ -176,7 +177,7 @@ Namespace Network.Transfer
 
             'We're done uploading. Check to see if it's actually an error
             TransferFinished = False
-            If ShowProgress And Not SuppressUploadMessage Then Console.WriteLine()
+            If ShowProgress And Not SuppressUploadMessage Then WritePlain("", True)
             SuppressUploadMessage = False
             If IsError Then
                 If UploadNotificationProvoke Then UploadNotif.ProgressFailed = True
@@ -241,7 +242,7 @@ Namespace Network.Transfer
 
             'We're done downloading. Check to see if it's actually an error
             TransferFinished = False
-            If ShowProgress And Not SuppressDownloadMessage Then Console.WriteLine()
+            If ShowProgress And Not SuppressDownloadMessage Then WritePlain("", True)
             SuppressDownloadMessage = False
             If IsError Then
                 If DownloadNotificationProvoke Then DownloadNotif.ProgressFailed = True
@@ -295,7 +296,7 @@ Namespace Network.Transfer
 
             'We're done uploading. Check to see if it's actually an error
             TransferFinished = False
-            If ShowProgress And Not SuppressUploadMessage Then Console.WriteLine()
+            If ShowProgress And Not SuppressUploadMessage Then WritePlain("", True)
             SuppressUploadMessage = False
             If IsError Then
                 If UploadNotificationProvoke Then UploadNotif.ProgressFailed = True
@@ -365,9 +366,9 @@ Namespace Network.Transfer
                             NotificationInstance.Progress = Progress
                         Else
                             If Not String.IsNullOrWhiteSpace(DownloadPercentagePrint) Then
-                                WriteWhere(ProbePlaces(DownloadPercentagePrint), 0, Console.CursorTop, False, GetConsoleColor(ColTypes.Neutral), TransferInfo.DoneSize.FileSizeToString, TransferInfo.FileSize.FileSizeToString, Progress)
+                                WriteWhere(ProbePlaces(DownloadPercentagePrint), 0, ConsoleWrapper.CursorTop, False, GetConsoleColor(ColTypes.Neutral), TransferInfo.DoneSize.FileSizeToString, TransferInfo.FileSize.FileSizeToString, Progress)
                             Else
-                                WriteWhere(DoTranslation("{0} of {1} downloaded.") + " | {2}%", 0, Console.CursorTop, False, GetConsoleColor(ColTypes.Neutral), TransferInfo.DoneSize.FileSizeToString, TransferInfo.FileSize.FileSizeToString, Progress)
+                                WriteWhere(DoTranslation("{0} of {1} downloaded.") + " | {2}%", 0, ConsoleWrapper.CursorTop, False, GetConsoleColor(ColTypes.Neutral), TransferInfo.DoneSize.FileSizeToString, TransferInfo.FileSize.FileSizeToString, Progress)
                             End If
                             ClearLineToRight()
                         End If

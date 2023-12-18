@@ -70,7 +70,7 @@ Namespace Shell.Commands
                         Write(DoTranslation("Invalid encryption algorithm."), True, GetConsoleColor(ColTypes.Error))
                         Exit For
                     End If
-                    Console.WriteLine()
+                    WritePlain("", True)
                 Next
                 If Not out = "" Then
                     Dim FStream As New StreamWriter(out)

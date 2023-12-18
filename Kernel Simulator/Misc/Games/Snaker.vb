@@ -29,16 +29,16 @@ Namespace Misc.Games
         Sub InitializeSnaker(Simulation As Boolean)
             'Variables
             Dim RandomDriver As New Random()
-            Dim CurrentWindowWidth As Integer = Console.WindowWidth
-            Dim CurrentWindowHeight As Integer = Console.WindowHeight
+            Dim CurrentWindowWidth As Integer = ConsoleWrapper.WindowWidth
+            Dim CurrentWindowHeight As Integer = ConsoleWrapper.WindowHeight
             Dim ResizeSyncing As Boolean
             Dim SnakeLength As Integer = 1
             Dim SnakeMassPositions As New List(Of String)
             Dim Direction As SnakeDirection = SnakeDirection.Bottom
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
             Console.BackgroundColor = ConsoleColor.Black
             Console.ForegroundColor = ConsoleColor.White
-            Console.Clear()
+            ConsoleWrapper.Clear()
 
             'Get the floor color ready
             Dim FloorColor As Color = ChangeSnakeColor()
@@ -49,45 +49,45 @@ Namespace Misc.Games
                 Dim FloorBottomLeftEdge As Integer = 2
                 Wdbg(DebugLevel.I, "Top left edge: {0}, Bottom left edge: {1}", FloorTopLeftEdge, FloorBottomLeftEdge)
 
-                Dim FloorTopRightEdge As Integer = Console.WindowWidth - 3
-                Dim FloorBottomRightEdge As Integer = Console.WindowWidth - 3
+                Dim FloorTopRightEdge As Integer = ConsoleWrapper.WindowWidth - 3
+                Dim FloorBottomRightEdge As Integer = ConsoleWrapper.WindowWidth - 3
                 Wdbg(DebugLevel.I, "Top right edge: {0}, Bottom right edge: {1}", FloorTopRightEdge, FloorBottomRightEdge)
 
                 Dim FloorTopEdge As Integer = 2
-                Dim FloorBottomEdge As Integer = Console.WindowHeight - 2
+                Dim FloorBottomEdge As Integer = ConsoleWrapper.WindowHeight - 2
                 Wdbg(DebugLevel.I, "Top edge: {0}, Bottom edge: {1}", FloorTopEdge, FloorBottomEdge)
 
                 Dim FloorLeftEdge As Integer = 2
-                Dim FloorRightEdge As Integer = Console.WindowWidth - 4
+                Dim FloorRightEdge As Integer = ConsoleWrapper.WindowWidth - 4
                 Wdbg(DebugLevel.I, "Left edge: {0}, Right edge: {1}", FloorLeftEdge, FloorRightEdge)
                 SetConsoleColor(FloorColor, True)
 
                 'First, draw the floor top edge
                 For x As Integer = FloorTopLeftEdge To FloorTopRightEdge
-                    Console.SetCursorPosition(x, 1)
+                    ConsoleWrapper.SetCursorPosition(x, 1)
                     Wdbg(DebugLevel.I, "Drawing floor top edge ({0}, {1})", x, 1)
-                    Console.Write(" ")
+                    WritePlain(" ", False)
                 Next
 
                 'Second, draw the floor bottom edge
                 For x As Integer = FloorBottomLeftEdge To FloorBottomRightEdge
-                    Console.SetCursorPosition(x, FloorBottomEdge)
+                    ConsoleWrapper.SetCursorPosition(x, FloorBottomEdge)
                     Wdbg(DebugLevel.I, "Drawing floor bottom edge ({0}, {1})", x, FloorBottomEdge)
-                    Console.Write(" ")
+                    WritePlain(" ", False)
                 Next
 
                 'Third, draw the floor left edge
                 For y As Integer = FloorTopEdge To FloorBottomEdge
-                    Console.SetCursorPosition(FloorLeftEdge, y)
+                    ConsoleWrapper.SetCursorPosition(FloorLeftEdge, y)
                     Wdbg(DebugLevel.I, "Drawing floor left edge ({0}, {1})", FloorLeftEdge, y)
-                    Console.Write("  ")
+                    WritePlain("  ", False)
                 Next
 
                 'Finally, draw the floor right edge
                 For y As Integer = FloorTopEdge To FloorBottomEdge
-                    Console.SetCursorPosition(FloorRightEdge, y)
+                    ConsoleWrapper.SetCursorPosition(FloorRightEdge, y)
                     Wdbg(DebugLevel.I, "Drawing floor right edge ({0}, {1})", FloorRightEdge, y)
-                    Console.Write("  ")
+                    WritePlain("  ", False)
                 Next
             End If
 
@@ -98,16 +98,16 @@ Namespace Misc.Games
             If Not ResizeSyncing Then
                 Dim Dead As Boolean = False
                 Dim FloorTopEdge As Integer = 1
-                Dim FloorBottomEdge As Integer = Console.WindowHeight - 2
+                Dim FloorBottomEdge As Integer = ConsoleWrapper.WindowHeight - 2
                 Dim FloorLeftEdge As Integer = 3
-                Dim FloorRightEdge As Integer = Console.WindowWidth - 4
+                Dim FloorRightEdge As Integer = ConsoleWrapper.WindowWidth - 4
                 Wdbg(DebugLevel.I, "Floor top edge {0}", FloorTopEdge)
                 Wdbg(DebugLevel.I, "Floor bottom edge {0}", FloorBottomEdge)
                 Wdbg(DebugLevel.I, "Floor left edge {0}", FloorLeftEdge)
                 Wdbg(DebugLevel.I, "Floor right edge {0}", FloorRightEdge)
 
-                Dim SnakeCurrentX As Integer = Console.WindowWidth / 2
-                Dim SnakeCurrentY As Integer = Console.WindowHeight / 2
+                Dim SnakeCurrentX As Integer = ConsoleWrapper.WindowWidth / 2
+                Dim SnakeCurrentY As Integer = ConsoleWrapper.WindowHeight / 2
                 Wdbg(DebugLevel.I, "Initial snake position ({0}, {1})", SnakeCurrentX, SnakeCurrentY)
 
                 Dim SnakeAppleX As Integer = RandomDriver.Next(FloorLeftEdge + 1, FloorRightEdge - 1)
@@ -125,13 +125,13 @@ Namespace Misc.Games
                 Do Until Dead
                     'Delay
                     If Simulation Then SleepNoBlock(SnakerDelay, ScreensaverDisplayerThread) Else Thread.Sleep(SnakerDelay)
-                    If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                    If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                     If ResizeSyncing Then Exit Do
 
                     'Remove excess mass
                     Console.BackgroundColor = ConsoleColor.Black
-                    Console.SetCursorPosition(SnakeLastTailToWipeX, SnakeLastTailToWipeY)
-                    Console.Write(" ")
+                    ConsoleWrapper.SetCursorPosition(SnakeLastTailToWipeX, SnakeLastTailToWipeY)
+                    WritePlain(" ", False)
 
                     'Set the snake color
                     SetConsoleColor(SnakeColor, True)
@@ -139,8 +139,8 @@ Namespace Misc.Games
                     'Draw an apple
                     If Not AppleDrawn Then
                         AppleDrawn = True
-                        Console.SetCursorPosition(SnakeAppleX, SnakeAppleY)
-                        Console.Write("+")
+                        ConsoleWrapper.SetCursorPosition(SnakeAppleX, SnakeAppleY)
+                        WritePlain("+", False)
                         Wdbg(DebugLevel.I, "Drawn apple at ({0}, {1})", SnakeAppleX, SnakeAppleY)
                     End If
 
@@ -149,9 +149,9 @@ Namespace Misc.Games
                         Dim PositionStrings() As String = SnakeMassPositions(PositionIndex).Split("/")
                         Dim PositionX As Integer = PositionStrings(0)
                         Dim PositionY As Integer = PositionStrings(1)
-                        Console.SetCursorPosition(PositionX, PositionY)
-                        Console.Write(" ")
-                        Console.SetCursorPosition(PositionX, PositionY)
+                        ConsoleWrapper.SetCursorPosition(PositionX, PositionY)
+                        WritePlain(" ", False)
+                        ConsoleWrapper.SetCursorPosition(PositionX, PositionY)
                         Wdbg(DebugLevel.I, "Drawn snake at ({0}, {1}) for mass {2}/{3}", PositionX, PositionY, PositionIndex + 1, SnakeMassPositions.Count)
                     Next
 
@@ -267,8 +267,8 @@ Namespace Misc.Games
 
                     'If dead, show dead face
                     If Dead Then
-                        Console.SetCursorPosition(SnakePreviousX, SnakePreviousY)
-                        Console.Write("X")
+                        ConsoleWrapper.SetCursorPosition(SnakePreviousX, SnakePreviousY)
+                        WritePlain("X", False)
                         Wdbg(DebugLevel.I, "Snake dead at {0}/{1}.", SnakePreviousX, SnakePreviousY)
                     End If
 
@@ -293,7 +293,7 @@ Namespace Misc.Games
             SnakeMassPositions.Clear()
             Console.BackgroundColor = ConsoleColor.Black
             Console.ForegroundColor = ConsoleColor.White
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
         ''' <summary>

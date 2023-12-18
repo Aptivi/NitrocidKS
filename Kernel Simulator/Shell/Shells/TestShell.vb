@@ -34,7 +34,7 @@ Namespace Shell.Shells
 
         Public Overrides Sub InitializeShell(ParamArray ShellArgs() As Object) Implements IShell.InitializeShell
             'Show the welcome message
-            Console.WriteLine()
+            WritePlain("", True)
             WriteSeparator(DoTranslation("Welcome to Test Shell!"), True)
 
             'Actual shell logic

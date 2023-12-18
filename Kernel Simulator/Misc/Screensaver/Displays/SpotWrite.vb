@@ -92,15 +92,15 @@ Namespace Misc.Screensaver.Displays
 
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SetConsoleColor(New Color(SpotWriteTextColor))
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
             Dim TypeWrite As String = SpotWriteWrite
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
 
             'SpotWrite can also deal with files written on the field that is used for storing text, so check to see if the path exists.
             Wdbg(DebugLevel.I, "Checking ""{0}"" to see if it's a file path", SpotWriteWrite)
@@ -112,7 +112,7 @@ Namespace Misc.Screensaver.Displays
 
             'For each line, write four spaces, and extra two spaces if paragraph starts.
             For Each Paragraph As String In TypeWrite.SplitNewLines
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit For
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "New paragraph: {0}", Paragraph)
 
@@ -126,7 +126,7 @@ Namespace Misc.Screensaver.Displays
                 'the first time and will be reverted back to zero after the incomplete sentence is formed.
                 Dim ReservedCharacters As Integer = 4
                 For Each ParagraphChar As Char In Paragraph
-                    If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                    If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                     If ResizeSyncing Then Exit For
 
                     'Append the character into the incomplete sentence builder.
@@ -134,7 +134,7 @@ Namespace Misc.Screensaver.Displays
                     CharactersParsed += 1
 
                     'Check to see if we're at the maximum character number
-                    If IncompleteSentenceBuilder.Length = Console.WindowWidth - 2 - ReservedCharacters Or Paragraph.Length = CharactersParsed Then
+                    If IncompleteSentenceBuilder.Length = ConsoleWrapper.WindowWidth - 2 - ReservedCharacters Or Paragraph.Length = CharactersParsed Then
                         'We're at the character number of maximum character. Add the sentence to the list for "wrapping" in columns.
                         WdbgConditional(ScreensaverDebug, DebugLevel.I, "Adding {0} to the list... Incomplete sentences: {1}", IncompleteSentenceBuilder.ToString, IncompleteSentences.Count)
                         IncompleteSentences.Add(IncompleteSentenceBuilder.ToString)
@@ -146,47 +146,47 @@ Namespace Misc.Screensaver.Displays
                 Next
 
                 'Prepare display (make a paragraph indentation)
-                If Not Console.CursorTop = Console.WindowHeight - 2 Then
-                    Console.SetCursorPosition(0, Console.CursorTop + 1)
-                    Console.Write("    ")
-                    WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", Console.CursorLeft, Console.CursorTop)
+                If Not ConsoleWrapper.CursorTop = ConsoleWrapper.WindowHeight - 2 Then
+                    ConsoleWrapper.SetCursorPosition(0, ConsoleWrapper.CursorTop + 1)
+                    WritePlain("    ", False)
+                    WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop)
                 End If
 
                 'Get struck character and write it
                 For SentenceIndex As Integer = 0 To IncompleteSentences.Count - 1
                     Dim Sentence As String = IncompleteSentences(SentenceIndex)
-                    If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                    If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                     If ResizeSyncing Then Exit For
                     For Each StruckChar As Char In Sentence
-                        If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                        If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                         If ResizeSyncing Then Exit For
 
                         'If we're at the end of the page, clear the screen
-                        If Console.CursorTop = Console.WindowHeight - 2 Then
-                            WdbgConditional(ScreensaverDebug, DebugLevel.I, "We're at the end of the page! {0} = {1}", Console.CursorTop, Console.WindowHeight - 2)
+                        If ConsoleWrapper.CursorTop = ConsoleWrapper.WindowHeight - 2 Then
+                            WdbgConditional(ScreensaverDebug, DebugLevel.I, "We're at the end of the page! {0} = {1}", ConsoleWrapper.CursorTop, ConsoleWrapper.WindowHeight - 2)
                             SleepNoBlock(SpotWriteNewScreenDelay, ScreensaverDisplayerThread)
-                            Console.Clear()
-                            Console.WriteLine()
+                            ConsoleWrapper.Clear()
+                            WritePlain("", True)
                             If SentenceIndex = 0 Then
-                                Console.Write("    ")
+                                WritePlain("    ", False)
                             Else
-                                Console.Write(" ")
+                                WritePlain(" ", False)
                             End If
-                            WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", Console.CursorLeft, Console.CursorTop)
+                            WdbgConditional(ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop)
                         End If
 
                         'Write the final character to the console and wait
-                        Console.Write(GetEsc() + "[1K" + StruckChar + GetEsc() + "[K")
+                        WritePlain(GetEsc() + "[1K" + StruckChar + GetEsc() + "[K", False)
                         SleepNoBlock(SpotWriteDelay, ScreensaverDisplayerThread)
                     Next
-                    Console.Write(GetEsc() + "[1K")
+                    WritePlain(GetEsc() + "[1K", False)
                 Next
             Next
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(SpotWriteDelay, ScreensaverDisplayerThread)
         End Sub
 

@@ -56,7 +56,7 @@ Namespace Misc.Splash.Splashes
                     Case TextLocation.Top
                         Return 1
                     Case TextLocation.Bottom
-                        Return Console.WindowHeight - 6
+                        Return ConsoleWrapper.WindowHeight - 6
                     Case Else
                         Return 1
                 End Select
@@ -75,7 +75,7 @@ Namespace Misc.Splash.Splashes
                     Case TextLocation.Top
                         Return 1
                     Case TextLocation.Bottom
-                        Return Console.WindowHeight - 6
+                        Return ConsoleWrapper.WindowHeight - 6
                     Case Else
                         Return 1
                 End Select
@@ -85,7 +85,7 @@ Namespace Misc.Splash.Splashes
         'Actual logic
         Public Sub Opening() Implements ISplash.Opening
             Wdbg(DebugLevel.I, "Splash opening. Clearing console...")
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
         Public Sub Display() Implements ISplash.Display
@@ -107,7 +107,7 @@ Namespace Misc.Splash.Splashes
         Public Sub Closing() Implements ISplash.Closing
             SplashClosing = True
             Wdbg(DebugLevel.I, "Splash closing. Clearing console...")
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
         Public Sub Report(Progress As Integer, ProgressReport As String, ParamArray Vars() As Object) Implements ISplash.Report
@@ -121,7 +121,7 @@ Namespace Misc.Splash.Splashes
         ''' <param name="ProgressReport">The progress text</param>
         Sub UpdateProgressReport(Progress As Integer, ProgressReport As String, ParamArray Vars() As Object)
             'Display the text and percentage
-            Dim RenderedText As String = ProgressReport.Truncate(Console.WindowWidth - ProgressReportWritePositionX - ProgressWritePositionX - 3)
+            Dim RenderedText As String = ProgressReport.Truncate(ConsoleWrapper.WindowWidth - ProgressReportWritePositionX - ProgressWritePositionX - 3)
             WriteWhere("{0}%", ProgressWritePositionX, ProgressWritePositionY, True, color:=GetConsoleColor(ColTypes.Progress), Progress.ToString.PadLeft(3))
             WriteWhere(RenderedText, ProgressReportWritePositionX, ProgressReportWritePositionY, False, GetConsoleColor(ColTypes.Neutral), Vars)
             ClearLineToRight()
@@ -129,9 +129,9 @@ Namespace Misc.Splash.Splashes
             'Display the progress bar
             If Not String.IsNullOrEmpty(ProgressProgressColor) And TryParseColor(ProgressProgressColor) Then
                 Dim ProgressColor As New Color(ProgressProgressColor)
-                WriteProgress(Progress, 4, Console.WindowHeight - 4, ProgressColor)
+                WriteProgress(Progress, 4, ConsoleWrapper.WindowHeight - 4, ProgressColor)
             Else
-                WriteProgress(Progress, 4, Console.WindowHeight - 4)
+                WriteProgress(Progress, 4, ConsoleWrapper.WindowHeight - 4)
             End If
         End Sub
 

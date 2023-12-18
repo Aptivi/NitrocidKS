@@ -67,7 +67,7 @@ Namespace Misc.Splash.Splashes
         'Actual logic
         Public Sub Opening() Implements ISplash.Opening
             Wdbg(DebugLevel.I, "Splash opening. Clearing console...")
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
         Public Sub Display() Implements ISplash.Display
@@ -87,7 +87,7 @@ Namespace Misc.Splash.Splashes
             SplashClosing = True
             Wdbg(DebugLevel.I, "Splash closing. Clearing console...")
             SetConsoleColor(BackgroundColor, True)
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
         Public Sub Report(Progress As Integer, ProgressReport As String, ParamArray Vars() As Object) Implements ISplash.Report

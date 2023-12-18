@@ -41,14 +41,14 @@ Namespace Misc.Games
             Meteors.Clear()
 
             'Make the spaceship height in the center
-            SpaceshipHeight = Console.WindowHeight / 2
+            SpaceshipHeight = ConsoleWrapper.WindowHeight / 2
 
             'Start the draw thread
             MeteorDrawThread.Stop()
             MeteorDrawThread.Start()
 
             'Remove the cursor
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
 
             'Now, handle input
             Dim Keypress As ConsoleKeyInfo
@@ -62,7 +62,7 @@ Namespace Misc.Games
                         Case ConsoleKey.UpArrow
                             If SpaceshipHeight > 0 Then SpaceshipHeight -= 1
                         Case ConsoleKey.DownArrow
-                            If SpaceshipHeight < Console.WindowHeight Then SpaceshipHeight += 1
+                            If SpaceshipHeight < ConsoleWrapper.WindowHeight Then SpaceshipHeight += 1
                         Case ConsoleKey.Spacebar
                             If Bullets.Count < MaxBullets Then Bullets.Add(New Tuple(Of Integer, Integer)(1, SpaceshipHeight))
                         Case ConsoleKey.Escape
@@ -81,7 +81,7 @@ Namespace Misc.Games
             Try
                 While Not GameEnded
                     'Clear screen
-                    Console.Clear()
+                    ConsoleWrapper.Clear()
 
                     'Move the meteors left
                     For Meteor As Integer = 0 To Meteors.Count - 1
@@ -100,7 +100,7 @@ Namespace Misc.Games
                     'If any bullet is out of X range, delete it
                     For BulletIndex As Integer = Bullets.Count - 1 To 0 Step -1
                         Dim Bullet = Bullets(BulletIndex)
-                        If Bullet.Item1 >= Console.WindowWidth Then
+                        If Bullet.Item1 >= ConsoleWrapper.WindowWidth Then
                             'The bullet went beyond. Remove it.
                             Bullets.RemoveAt(BulletIndex)
                         End If
@@ -119,8 +119,8 @@ Namespace Misc.Games
                     Dim MeteorShowProbability As Double = 10 / 100
                     Dim MeteorShowGuaranteed As Boolean = RandomDriver.NextDouble < MeteorShowProbability
                     If MeteorShowGuaranteed And Meteors.Count < MaxMeteors Then
-                        Dim MeteorX As Integer = Console.WindowWidth - 1
-                        Dim MeteorY As Integer = RandomDriver.Next(Console.WindowHeight - 1)
+                        Dim MeteorX As Integer = ConsoleWrapper.WindowWidth - 1
+                        Dim MeteorY As Integer = RandomDriver.Next(ConsoleWrapper.WindowHeight - 1)
                         Meteors.Add(New Tuple(Of Integer, Integer)(MeteorX, MeteorY))
                     End If
 
@@ -164,14 +164,14 @@ Namespace Misc.Games
                 'Game is over. Move to the Finally block.
             Catch ex As Exception
                 'Game is over with an unexpected error.
-                WriteWhere(DoTranslation("Unexpected error") + $": {ex.Message}", 0, Console.WindowHeight - 1, False, ConsoleColor.Red)
+                WriteWhere(DoTranslation("Unexpected error") + $": {ex.Message}", 0, ConsoleWrapper.WindowHeight - 1, False, ConsoleColor.Red)
                 SleepNoBlock(3000, MeteorDrawThread)
-                Console.Clear()
+                ConsoleWrapper.Clear()
             Finally
                 'Write game over
-                WriteWhere(DoTranslation("Game over"), 0, Console.WindowHeight - 1, False, ConsoleColor.Red)
+                WriteWhere(DoTranslation("Game over"), 0, ConsoleWrapper.WindowHeight - 1, False, ConsoleColor.Red)
                 SleepNoBlock(3000, MeteorDrawThread)
-                Console.Clear()
+                ConsoleWrapper.Clear()
             End Try
         End Sub
 

@@ -122,7 +122,7 @@ Namespace Hardware
                         For Each HardwareValuePropertyInfo As PropertyInfo In FieldValueDict(HardwareKey).GetType.GetProperties
                             Write("  - {0}: ", False, color:=GetConsoleColor(ColTypes.ListEntry), HardwareValuePropertyInfo.Name)
                             If Field.Name = "HDD" And HardwareValuePropertyInfo.Name = "Partitions" Then
-                                Console.WriteLine()
+                                WritePlain("", True)
                                 Dim Partitions As IDictionary = TryCast(HardwareValuePropertyInfo.GetValue(FieldValueDict(HardwareKey)), IDictionary)
                                 If Partitions IsNot Nothing Then
                                     For Each PartitionKey As String In Partitions.Keys

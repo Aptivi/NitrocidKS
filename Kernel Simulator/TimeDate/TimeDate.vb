@@ -52,9 +52,9 @@ Namespace TimeDate
                     KernelDateTime = Date.Now
                     KernelDateTimeUtc = Date.UtcNow
                     If CornerTimeDate = True And Not InSaver Then
-                        oldWid = Console.WindowWidth - TimeString.Length - 1
+                        oldWid = ConsoleWrapper.WindowWidth - TimeString.Length - 1
                         oldTop = Console.WindowTop
-                        WriteWhere(TimeString, Console.WindowWidth - TimeString.Length - 1, Console.WindowTop, True, GetConsoleColor(ColTypes.Neutral))
+                        WriteWhere(TimeString, ConsoleWrapper.WindowWidth - TimeString.Length - 1, Console.WindowTop, True, GetConsoleColor(ColTypes.Neutral))
                     End If
                     Thread.Sleep(1000)
                     If oldWid <> 0 Then WriteWhere(" ".Repeat(TimeString.Length), oldWid, oldTop, True, GetConsoleColor(ColTypes.Neutral))

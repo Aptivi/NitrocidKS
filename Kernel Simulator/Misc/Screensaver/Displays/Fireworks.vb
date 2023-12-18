@@ -202,21 +202,21 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             Console.BackgroundColor = ConsoleColor.Black
             Console.ForegroundColor = ConsoleColor.White
-            Console.Clear()
-            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", Console.WindowWidth, Console.WindowHeight)
+            ConsoleWrapper.Clear()
+            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight)
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
             'Variables
-            Dim HalfHeight As Integer = Console.WindowHeight / 2
-            Dim LaunchPositionX As Integer = RandomDriver.Next(Console.WindowWidth)
-            Dim LaunchPositionY As Integer = Console.WindowHeight - 1
-            Dim IgnitePositionX As Integer = RandomDriver.Next(Console.WindowWidth)
+            Dim HalfHeight As Integer = ConsoleWrapper.WindowHeight / 2
+            Dim LaunchPositionX As Integer = RandomDriver.Next(ConsoleWrapper.WindowWidth)
+            Dim LaunchPositionY As Integer = ConsoleWrapper.WindowHeight - 1
+            Dim IgnitePositionX As Integer = RandomDriver.Next(ConsoleWrapper.WindowWidth)
             Dim IgnitePositionY As Integer = RandomDriver.Next(HalfHeight, HalfHeight * 1.5)
             LaunchPositionX.SwapIfSourceLarger(IgnitePositionX)
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Launch position {0}, {1}", LaunchPositionX, LaunchPositionY)
@@ -233,7 +233,7 @@ Namespace Misc.Screensaver.Displays
             Dim IgniteColor As New Color(255, 255, 255)
 
             'Select a color
-            Console.Clear()
+            ConsoleWrapper.Clear()
             If FireworksTrueColor Then
                 Dim RedColorNum As Integer = RandomDriver.Next(FireworksMinimumRedColorLevel, FireworksMaximumRedColorLevel)
                 Dim GreenColorNum As Integer = RandomDriver.Next(FireworksMinimumGreenColorLevel, FireworksMaximumGreenColorLevel)
@@ -251,16 +251,16 @@ Namespace Misc.Screensaver.Displays
                 Dim CurrentX As Double = LaunchPositionX
                 Dim CurrentY As Integer = LaunchPositionY
                 Do Until CurrentX >= IgnitePositionX And CurrentY <= IgnitePositionY
-                    If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                    If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                     If ResizeSyncing Then Exit Do
                     WdbgConditional(ScreensaverDebug, DebugLevel.I, "Current position: {0}, {1}", CurrentX, CurrentY)
-                    Console.SetCursorPosition(CurrentX, CurrentY)
-                    Console.Write(" ")
+                    ConsoleWrapper.SetCursorPosition(CurrentX, CurrentY)
+                    WritePlain(" ", False)
 
                     'Delay writing
                     SleepNoBlock(FireworksDelay, ScreensaverDisplayerThread)
                     Console.BackgroundColor = ConsoleColor.Black
-                    Console.Clear()
+                    ConsoleWrapper.Clear()
                     SetConsoleColor(New Color(255, 255, 255), True)
 
                     'Change positions
@@ -272,7 +272,7 @@ Namespace Misc.Screensaver.Displays
             'Blow it up!
             If Not ResizeSyncing Then
                 For Radius As Integer = 0 To FireworkRadius
-                    If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                    If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                     If ResizeSyncing Then Exit For
 
                     'Variables
@@ -287,38 +287,38 @@ Namespace Misc.Screensaver.Displays
 
                     'Draw the explosion
                     SetConsoleColor(IgniteColor, True)
-                    If UpperParticleY < Console.WindowHeight Then
+                    If UpperParticleY < ConsoleWrapper.WindowHeight Then
                         WdbgConditional(ScreensaverDebug, DebugLevel.I, "Making upper particle at {0}, {1}", IgnitePositionX, UpperParticleY)
-                        Console.SetCursorPosition(IgnitePositionX, UpperParticleY)
-                        Console.Write(" ")
+                        ConsoleWrapper.SetCursorPosition(IgnitePositionX, UpperParticleY)
+                        WritePlain(" ", False)
                     End If
-                    If LowerParticleY < Console.WindowHeight Then
+                    If LowerParticleY < ConsoleWrapper.WindowHeight Then
                         WdbgConditional(ScreensaverDebug, DebugLevel.I, "Making lower particle at {0}, {1}", IgnitePositionX, LowerParticleY)
-                        Console.SetCursorPosition(IgnitePositionX, LowerParticleY)
-                        Console.Write(" ")
+                        ConsoleWrapper.SetCursorPosition(IgnitePositionX, LowerParticleY)
+                        WritePlain(" ", False)
                     End If
-                    If LeftParticleX < Console.WindowWidth Then
+                    If LeftParticleX < ConsoleWrapper.WindowWidth Then
                         WdbgConditional(ScreensaverDebug, DebugLevel.I, "Making left particle at {0}, {1}", LeftParticleX, IgnitePositionY)
-                        Console.SetCursorPosition(LeftParticleX, IgnitePositionY)
-                        Console.Write(" ")
+                        ConsoleWrapper.SetCursorPosition(LeftParticleX, IgnitePositionY)
+                        WritePlain(" ", False)
                     End If
-                    If RightParticleX < Console.WindowWidth Then
+                    If RightParticleX < ConsoleWrapper.WindowWidth Then
                         WdbgConditional(ScreensaverDebug, DebugLevel.I, "Making right particle at {0}, {1}", RightParticleX, IgnitePositionY)
-                        Console.SetCursorPosition(RightParticleX, IgnitePositionY)
-                        Console.Write(" ")
+                        ConsoleWrapper.SetCursorPosition(RightParticleX, IgnitePositionY)
+                        WritePlain(" ", False)
                     End If
 
                     'Delay writing
                     SleepNoBlock(FireworksDelay, ScreensaverDisplayerThread)
                     Console.BackgroundColor = ConsoleColor.Black
-                    Console.Clear()
+                    ConsoleWrapper.Clear()
                 Next
             End If
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
         End Sub
 
     End Class

@@ -29,23 +29,23 @@ Namespace Misc.Animations.Fader
         ''' Simulates the fading animation
         ''' </summary>
         Public Sub Simulate(Settings As FaderSettings)
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             Dim RandomDriver As Random = Settings.RandomDriver
             Dim RedColorNum As Integer = RandomDriver.Next(Settings.FaderMinimumRedColorLevel, Settings.FaderMaximumRedColorLevel)
             Dim GreenColorNum As Integer = RandomDriver.Next(Settings.FaderMinimumGreenColorLevel, Settings.FaderMaximumGreenColorLevel)
             Dim BlueColorNum As Integer = RandomDriver.Next(Settings.FaderMinimumBlueColorLevel, Settings.FaderMaximumBlueColorLevel)
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
 
             'Check the text
-            Dim Left As Integer = RandomDriver.Next(Console.WindowWidth)
-            Dim Top As Integer = RandomDriver.Next(Console.WindowHeight)
+            Dim Left As Integer = RandomDriver.Next(ConsoleWrapper.WindowWidth)
+            Dim Top As Integer = RandomDriver.Next(ConsoleWrapper.WindowHeight)
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Selected left and top: {0}, {1}", Left, Top)
-            If Settings.FaderWrite.Length + Left >= Console.WindowWidth Then
-                WdbgConditional(ScreensaverDebug, DebugLevel.I, "Text length of {0} exceeded window width of {1}.", Settings.FaderWrite.Length + Left, Console.WindowWidth)
+            If Settings.FaderWrite.Length + Left >= ConsoleWrapper.WindowWidth Then
+                WdbgConditional(ScreensaverDebug, DebugLevel.I, "Text length of {0} exceeded window width of {1}.", Settings.FaderWrite.Length + Left, ConsoleWrapper.WindowWidth)
                 Left -= Settings.FaderWrite.Length + 1
             End If
-            Console.SetCursorPosition(Left, Top)
+            ConsoleWrapper.SetCursorPosition(Left, Top)
             Console.BackgroundColor = ConsoleColor.Black
             ClearKeepPosition()
 
@@ -60,7 +60,7 @@ Namespace Misc.Animations.Fader
             Dim CurrentColorGreenIn As Integer = 0
             Dim CurrentColorBlueIn As Integer = 0
             For CurrentStep As Integer = Settings.FaderMaxSteps To 1 Step -1
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit For
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", CurrentStep, Settings.FaderMaxSteps)
                 SleepNoBlock(Settings.FaderDelay, System.Threading.Thread.CurrentThread)
@@ -68,7 +68,7 @@ Namespace Misc.Animations.Fader
                 CurrentColorGreenIn += ThresholdGreen
                 CurrentColorBlueIn += ThresholdBlue
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Color in (R;G;B: {0};{1};{2})", CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn)
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If Not ResizeSyncing Then WriteWhere(Settings.FaderWrite, Left, Top, True, New Color(CurrentColorRedIn & ";" & CurrentColorGreenIn & ";" & CurrentColorBlueIn), New Color(ConsoleColors.Black))
             Next
 
@@ -78,7 +78,7 @@ Namespace Misc.Animations.Fader
 
             'Fade out
             For CurrentStep As Integer = 1 To Settings.FaderMaxSteps
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit For
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", CurrentStep, Settings.FaderMaxSteps)
                 SleepNoBlock(Settings.FaderDelay, System.Threading.Thread.CurrentThread)
@@ -91,8 +91,8 @@ Namespace Misc.Animations.Fader
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(Settings.FaderDelay, System.Threading.Thread.CurrentThread)
         End Sub
 

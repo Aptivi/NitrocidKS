@@ -201,33 +201,33 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             Console.BackgroundColor = ConsoleColor.Black
-            Console.Clear()
-            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", Console.WindowWidth, Console.WindowHeight)
+            ConsoleWrapper.Clear()
+            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight)
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
             If ResizeSyncing Then
                 Console.BackgroundColor = ConsoleColor.Black
-                Console.Clear()
+                ConsoleWrapper.Clear()
 
                 'Reset resize sync
                 ResizeSyncing = False
-                CurrentWindowWidth = Console.WindowWidth
-                CurrentWindowHeight = Console.WindowHeight
+                CurrentWindowWidth = ConsoleWrapper.WindowWidth
+                CurrentWindowHeight = ConsoleWrapper.WindowHeight
             Else
                 Dim Drawable As Boolean = True
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
 
                 'Get the required positions for the box
-                Dim BoxStartX As Integer = RandomDriver.Next(Console.WindowWidth)
-                Dim BoxEndX As Integer = RandomDriver.Next(Console.WindowWidth)
+                Dim BoxStartX As Integer = RandomDriver.Next(ConsoleWrapper.WindowWidth)
+                Dim BoxEndX As Integer = RandomDriver.Next(ConsoleWrapper.WindowWidth)
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Box X position {0} -> {1}", BoxStartX, BoxEndX)
-                Dim BoxStartY As Integer = RandomDriver.Next(Console.WindowHeight)
-                Dim BoxEndY As Integer = RandomDriver.Next(Console.WindowHeight)
+                Dim BoxStartY As Integer = RandomDriver.Next(ConsoleWrapper.WindowHeight)
+                Dim BoxEndY As Integer = RandomDriver.Next(ConsoleWrapper.WindowHeight)
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Box Y position {0} -> {1}", BoxStartY, BoxEndY)
 
                 'Check to see if start is less than or equal to end
@@ -262,30 +262,30 @@ Namespace Misc.Screensaver.Displays
                         For X As Integer = BoxStartX To BoxEndX
                             For Y As Integer = BoxStartY To BoxEndY
                                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Filling {0},{1}...", X, Y)
-                                Console.SetCursorPosition(X, Y)
-                                Console.Write(" ")
+                                ConsoleWrapper.SetCursorPosition(X, Y)
+                                WritePlain(" ", False)
                             Next
                         Next
                     Else
                         'Draw the upper and lower borders
                         For X As Integer = BoxStartX To BoxEndX
-                            Console.SetCursorPosition(X, BoxStartY)
-                            Console.Write(" ")
+                            ConsoleWrapper.SetCursorPosition(X, BoxStartY)
+                            WritePlain(" ", False)
                             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Drawn upper border at {0}", X)
-                            Console.SetCursorPosition(X, BoxEndY)
-                            Console.Write(" ")
+                            ConsoleWrapper.SetCursorPosition(X, BoxEndY)
+                            WritePlain(" ", False)
                             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Drawn lower border at {0}", X)
                         Next
 
                         'Draw the left and right borders
                         For Y As Integer = BoxStartY To BoxEndY
-                            Console.SetCursorPosition(BoxStartX, Y)
-                            Console.Write(" ")
-                            If Not BoxStartX >= Console.WindowWidth - 1 Then Console.Write(" ")
+                            ConsoleWrapper.SetCursorPosition(BoxStartX, Y)
+                            WritePlain(" ", False)
+                            If Not BoxStartX >= ConsoleWrapper.WindowWidth - 1 Then WritePlain(" ", False)
                             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Drawn left border at {0}", Y)
-                            Console.SetCursorPosition(BoxEndX, Y)
-                            Console.Write(" ")
-                            If Not BoxEndX >= Console.WindowWidth - 1 Then Console.Write(" ")
+                            ConsoleWrapper.SetCursorPosition(BoxEndX, Y)
+                            WritePlain(" ", False)
+                            If Not BoxEndX >= ConsoleWrapper.WindowWidth - 1 Then WritePlain(" ", False)
                             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Drawn right border at {0}", Y)
                         Next
                     End If

@@ -39,10 +39,10 @@ Namespace Misc.Writers.ConsoleWriters
                     Dim chars As List(Of Char) = msg.ToCharArray.ToList
                     For Each ch As Char In chars
                         Thread.Sleep(MsEachLetter)
-                        Console.Write(ch)
+                        WritePlain(ch, False)
                     Next
                     If Line Then
-                        Console.WriteLine()
+                        WritePlain("", True)
                     End If
                 Catch ex As Exception When Not ex.GetType.Name = "ThreadInterruptedException"
                     WStkTrc(ex)
@@ -110,7 +110,8 @@ Namespace Misc.Writers.ConsoleWriters
         Public Sub WriteSlowly(msg As String, Line As Boolean, MsEachLetter As Double, color As ConsoleColor, ParamArray vars() As Object)
             SyncLock WriteLock
                 Try
-                    Console.BackgroundColor = If(IsStringNumeric(BackgroundColor.PlainSequence) AndAlso BackgroundColor.PlainSequence <= 15, [Enum].Parse(GetType(ConsoleColor), BackgroundColor.PlainSequence), ConsoleColor.Black)
+                    Dim result As ConsoleColor = ConsoleColor.Black
+                    Console.BackgroundColor = If([Enum].TryParse(BackgroundColor.PlainSequence, result), result, ConsoleColor.Black)
                     Console.ForegroundColor = color
 
                     'Write text slowly
@@ -134,8 +135,8 @@ Namespace Misc.Writers.ConsoleWriters
         Public Sub WriteSlowly(msg As String, Line As Boolean, MsEachLetter As Double, ForegroundColor As ConsoleColor, BackgroundColor As ConsoleColor, ParamArray vars() As Object)
             SyncLock WriteLock
                 Try
-                    Console.BackgroundColor = BackgroundColor
-                    Console.ForegroundColor = ForegroundColor
+                    SetConsoleColor(BackgroundColor, True)
+                    SetConsoleColor(ForegroundColor)
 
                     'Write text slowly
                     WriteSlowlyPlain(msg, Line, MsEachLetter, vars)

@@ -40,7 +40,7 @@ Namespace Misc.Writers.ConsoleWriters
                     Dim OldTop As Integer
 
                     'Try to write list to console
-                    OldTop = Console.CursorTop
+                    OldTop = ConsoleWrapper.CursorTop
                     For Each ListEntry As TKey In List.Keys
                         Dim Values As New List(Of Object)
                         If TryCast(List(ListEntry), IEnumerable) IsNot Nothing And TryCast(List(ListEntry), String) Is Nothing Then
@@ -52,9 +52,9 @@ Namespace Misc.Writers.ConsoleWriters
                             Write("- {0}: ", False, GetConsoleColor(ColTypes.ListEntry), ListEntry) : Write("{0}", True, GetConsoleColor(ColTypes.ListValue), List(ListEntry))
                         End If
                         If Wrap Then
-                            LinesMade += Console.CursorTop - OldTop
-                            OldTop = Console.CursorTop
-                            If LinesMade = Console.WindowHeight - 1 Then
+                            LinesMade += ConsoleWrapper.CursorTop - OldTop
+                            OldTop = ConsoleWrapper.CursorTop
+                            If LinesMade = ConsoleWrapper.WindowHeight - 1 Then
                                 If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                                 LinesMade = 0
                             End If
@@ -96,7 +96,7 @@ Namespace Misc.Writers.ConsoleWriters
                     Dim OldTop As Integer
 
                     'Try to write list to console
-                    OldTop = Console.CursorTop
+                    OldTop = ConsoleWrapper.CursorTop
                     For Each ListEntry As TKey In List.Keys
                         Dim Values As New List(Of Object)
                         If TryCast(List(ListEntry), IEnumerable) IsNot Nothing And TryCast(List(ListEntry), String) Is Nothing Then
@@ -108,9 +108,9 @@ Namespace Misc.Writers.ConsoleWriters
                             Write("- {0}: ", False, ListKeyColor, ListEntry) : Write("{0}", True, ListValueColor, List(ListEntry))
                         End If
                         If Wrap Then
-                            LinesMade += Console.CursorTop - OldTop
-                            OldTop = Console.CursorTop
-                            If LinesMade = Console.WindowHeight - 1 Then
+                            LinesMade += ConsoleWrapper.CursorTop - OldTop
+                            OldTop = ConsoleWrapper.CursorTop
+                            If LinesMade = ConsoleWrapper.WindowHeight - 1 Then
                                 If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                                 LinesMade = 0
                             End If
@@ -152,7 +152,7 @@ Namespace Misc.Writers.ConsoleWriters
                     Dim OldTop As Integer
 
                     'Try to write list to console
-                    OldTop = Console.CursorTop
+                    OldTop = ConsoleWrapper.CursorTop
                     For Each ListEntry As TKey In List.Keys
                         Dim Values As New List(Of Object)
                         If TryCast(List(ListEntry), IEnumerable) IsNot Nothing And TryCast(List(ListEntry), String) Is Nothing Then
@@ -164,9 +164,9 @@ Namespace Misc.Writers.ConsoleWriters
                             Write("- {0}: ", False, ListKeyColor, ListEntry) : Write("{0}", True, ListValueColor, List(ListEntry))
                         End If
                         If Wrap Then
-                            LinesMade += Console.CursorTop - OldTop
-                            OldTop = Console.CursorTop
-                            If LinesMade = Console.WindowHeight - 1 Then
+                            LinesMade += ConsoleWrapper.CursorTop - OldTop
+                            OldTop = ConsoleWrapper.CursorTop
+                            If LinesMade = ConsoleWrapper.WindowHeight - 1 Then
                                 If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                                 LinesMade = 0
                             End If
@@ -206,7 +206,7 @@ Namespace Misc.Writers.ConsoleWriters
                     Dim EntryNumber As Integer = 1
 
                     'Try to write list to console
-                    OldTop = Console.CursorTop
+                    OldTop = ConsoleWrapper.CursorTop
                     For Each ListEntry As T In List
                         Dim Values As New List(Of Object)
                         If TryCast(ListEntry, IEnumerable) IsNot Nothing And TryCast(ListEntry, String) Is Nothing Then
@@ -219,9 +219,9 @@ Namespace Misc.Writers.ConsoleWriters
                         End If
                         EntryNumber += 1
                         If Wrap Then
-                            LinesMade += Console.CursorTop - OldTop
-                            OldTop = Console.CursorTop
-                            If LinesMade = Console.WindowHeight - 1 Then
+                            LinesMade += ConsoleWrapper.CursorTop - OldTop
+                            OldTop = ConsoleWrapper.CursorTop
+                            If LinesMade = ConsoleWrapper.WindowHeight - 1 Then
                                 If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                                 LinesMade = 0
                             End If
@@ -264,7 +264,7 @@ Namespace Misc.Writers.ConsoleWriters
                     Dim EntryNumber As Integer = 1
 
                     'Try to write list to console
-                    OldTop = Console.CursorTop
+                    OldTop = ConsoleWrapper.CursorTop
                     For Each ListEntry As T In List
                         Dim Values As New List(Of Object)
                         If TryCast(ListEntry, IEnumerable) IsNot Nothing And TryCast(ListEntry, String) Is Nothing Then
@@ -277,9 +277,9 @@ Namespace Misc.Writers.ConsoleWriters
                         End If
                         EntryNumber += 1
                         If Wrap Then
-                            LinesMade += Console.CursorTop - OldTop
-                            OldTop = Console.CursorTop
-                            If LinesMade = Console.WindowHeight - 1 Then
+                            LinesMade += ConsoleWrapper.CursorTop - OldTop
+                            OldTop = ConsoleWrapper.CursorTop
+                            If LinesMade = ConsoleWrapper.WindowHeight - 1 Then
                                 If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                                 LinesMade = 0
                             End If
@@ -322,7 +322,7 @@ Namespace Misc.Writers.ConsoleWriters
                     Dim EntryNumber As Integer = 1
 
                     'Try to write list to console
-                    OldTop = Console.CursorTop
+                    OldTop = ConsoleWrapper.CursorTop
                     For Each ListEntry As T In List
                         Dim Values As New List(Of Object)
                         If TryCast(ListEntry, IEnumerable) IsNot Nothing And TryCast(ListEntry, String) Is Nothing Then
@@ -335,9 +335,9 @@ Namespace Misc.Writers.ConsoleWriters
                         End If
                         EntryNumber += 1
                         If Wrap Then
-                            LinesMade += Console.CursorTop - OldTop
-                            OldTop = Console.CursorTop
-                            If LinesMade = Console.WindowHeight - 1 Then
+                            LinesMade += ConsoleWrapper.CursorTop - OldTop
+                            OldTop = ConsoleWrapper.CursorTop
+                            If LinesMade = ConsoleWrapper.WindowHeight - 1 Then
                                 If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                                 LinesMade = 0
                             End If

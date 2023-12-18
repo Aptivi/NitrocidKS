@@ -215,18 +215,18 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
-            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", Console.WindowWidth, Console.WindowHeight)
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
+            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight)
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
 
             'Select a color
             If LinesTrueColor Then
                 SetConsoleColor(New Color(LinesBackgroundColor), True)
-                Console.Clear()
+                ConsoleWrapper.Clear()
                 Dim RedColorNum As Integer = RandomDriver.Next(LinesMinimumRedColorLevel, LinesMaximumRedColorLevel)
                 Dim GreenColorNum As Integer = RandomDriver.Next(LinesMinimumGreenColorLevel, LinesMaximumGreenColorLevel)
                 Dim BlueColorNum As Integer = RandomDriver.Next(LinesMinimumBlueColorLevel, LinesMaximumBlueColorLevel)
@@ -235,12 +235,12 @@ Namespace Misc.Screensaver.Displays
                 SetConsoleColor(ColorStorage)
             ElseIf Lines255Colors Then
                 SetConsoleColor(New Color(LinesBackgroundColor), True)
-                Console.Clear()
+                ConsoleWrapper.Clear()
                 Dim color As Integer = RandomDriver.Next(LinesMinimumColorLevel, LinesMaximumColorLevel)
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Got color ({0})", color)
                 SetConsoleColor(New Color(color))
             Else
-                Console.Clear()
+                ConsoleWrapper.Clear()
                 SetConsoleColor(New Color(LinesBackgroundColor), True)
                 Console.ForegroundColor = colors(RandomDriver.Next(LinesMinimumColorLevel, LinesMaximumColorLevel))
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.ForegroundColor)
@@ -248,23 +248,23 @@ Namespace Misc.Screensaver.Displays
 
             'Draw a line
             Dim Line As String = ""
-            Dim Top As Integer = New Random().Next(Console.WindowHeight)
+            Dim Top As Integer = New Random().Next(ConsoleWrapper.WindowHeight)
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Got top position ({0})", Top)
-            For i As Integer = 1 To Console.WindowWidth
+            For i As Integer = 1 To ConsoleWrapper.WindowWidth
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Forming line using {0} or the default ""-""...", LinesLineChar)
                 Line += If(Not String.IsNullOrWhiteSpace(LinesLineChar), LinesLineChar, "-")
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Line: {0}", Line)
             Next
-            If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+            If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
             If Not ResizeSyncing Then
-                Console.SetCursorPosition(0, Top)
+                ConsoleWrapper.SetCursorPosition(0, Top)
                 Console.WriteLine(Line)
             End If
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(LinesDelay, ScreensaverDisplayerThread)
         End Sub
 

@@ -106,7 +106,7 @@ Namespace Shell.Commands
 
             'Clear the console
             SetConsoleColor(BackgroundColor, True)
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
 
     End Class

@@ -60,7 +60,7 @@ Namespace Network.Mail.Transfer
                 End If
 
                 'Prepare view
-                Console.WriteLine()
+                WritePlain("", True)
 
                 'Print all the addresses that sent the mail
                 Wdbg(DebugLevel.I, "{0} senders.", Msg.From.Count)
@@ -81,7 +81,7 @@ Namespace Network.Mail.Transfer
                 Write(DoTranslation("- Sent at {0} in {1}"), True, color:=GetConsoleColor(ColTypes.ListEntry), RenderTime(Msg.Date.DateTime), RenderDate(Msg.Date.DateTime))
 
                 'Prepare subject
-                Console.WriteLine()
+                WritePlain("", True)
                 Wdbg(DebugLevel.I, "Subject length: {0}, {1}", Msg.Subject.Length, Msg.Subject)
                 Write($"- {Msg.Subject}", False, GetConsoleColor(ColTypes.ListEntry))
 
@@ -90,11 +90,11 @@ Namespace Network.Mail.Transfer
                 If Msg.Attachments.Count > 0 Then
                     Write(" - [*]", True, GetConsoleColor(ColTypes.ListEntry))
                 Else
-                    Console.WriteLine()
+                    WritePlain("", True)
                 End If
 
                 'Prepare body
-                Console.WriteLine()
+                WritePlain("", True)
                 Wdbg(DebugLevel.I, "Displaying body...")
                 Dim DecryptedMessage As Dictionary(Of String, MimeEntity)
                 Wdbg(DebugLevel.I, "To decrypt: {0}", Decrypt)
@@ -133,7 +133,7 @@ Namespace Network.Mail.Transfer
                 Else
                     Write(Msg.GetTextBody(Mail_TextFormat), True, GetConsoleColor(ColTypes.ListValue))
                 End If
-                Console.WriteLine()
+                WritePlain("", True)
 
                 'Populate attachments
 #Disable Warning BC42104

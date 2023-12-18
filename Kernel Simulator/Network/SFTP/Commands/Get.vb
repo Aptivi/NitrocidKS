@@ -26,10 +26,10 @@ Namespace Network.SFTP.Commands
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             Write(DoTranslation("Downloading file {0}..."), False, color:=GetConsoleColor(ColTypes.Progress), ListArgs(0))
             If SFTPGetFile(ListArgs(0)) Then
-                Console.WriteLine()
+                WritePlain("", True)
                 Write(DoTranslation("Downloaded file {0}."), True, color:=GetConsoleColor(ColTypes.Success), ListArgs(0))
             Else
-                Console.WriteLine()
+                WritePlain("", True)
                 Write(DoTranslation("Download failed for file {0}."), True, color:=GetConsoleColor(ColTypes.Error), ListArgs(0))
             End If
         End Sub

@@ -91,7 +91,7 @@ Namespace Misc.Screensaver.Displays
             End Set
         End Property
         ''' <summary>
-        ''' [Marquee] Whether to use the Console.Clear() API (slow) or use the line-clearing VT sequence (fast).
+        ''' [Marquee] Whether to use the ConsoleWrapper.Clear() API (slow) or use the line-clearing VT sequence (fast).
         ''' </summary>
         Public Property MarqueeUseConsoleAPI As Boolean
             Get
@@ -218,28 +218,28 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SetConsoleColor(New Color(MarqueeBackgroundColor), True)
             Console.ForegroundColor = ConsoleColor.White
-            Console.Clear()
+            ConsoleWrapper.Clear()
             MarqueeWrite = MarqueeWrite.ReplaceAll({vbCr, vbLf}, " - ")
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
-            Console.CursorVisible = False
-            Console.Clear()
+            ConsoleWrapper.CursorVisible = False
+            ConsoleWrapper.Clear()
 
             'Ensure that the top position of the written text is always centered if AlwaysCentered is enabled. Else, select a random height.
-            Dim TopPrinted As Integer = Console.WindowHeight / 2
+            Dim TopPrinted As Integer = ConsoleWrapper.WindowHeight / 2
             If Not MarqueeAlwaysCentered Then
-                TopPrinted = RandomDriver.Next(Console.WindowHeight - 1)
+                TopPrinted = RandomDriver.Next(ConsoleWrapper.WindowHeight - 1)
             End If
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Top position: {0}", TopPrinted)
 
             'Start with the left position as the right position.
-            Dim CurrentLeft As Integer = Console.WindowWidth - 1
-            Dim CurrentLeftOtherEnd As Integer = Console.WindowWidth - 1
+            Dim CurrentLeft As Integer = ConsoleWrapper.WindowWidth - 1
+            Dim CurrentLeftOtherEnd As Integer = ConsoleWrapper.WindowWidth - 1
             Dim CurrentCharacterNum As Integer = 0
 
             'We need to set colors for the text.
@@ -261,9 +261,9 @@ Namespace Misc.Screensaver.Displays
             'If the text is at the right and is longer than the console width, crop it until it's complete.
             Do Until CurrentLeftOtherEnd = 0
                 SleepNoBlock(MarqueeDelay, ScreensaverDisplayerThread)
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit Do
-                If MarqueeUseConsoleAPI Then Console.Clear()
+                If MarqueeUseConsoleAPI Then ConsoleWrapper.Clear()
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Current left: {0} | Current left on other end: {1}", CurrentLeft, CurrentLeftOtherEnd)
 
                 'Declare variable for written marquee text
@@ -285,8 +285,8 @@ Namespace Misc.Screensaver.Displays
                 If Not MarqueeUseConsoleAPI Then MarqueeWritten += GetEsc() + "[0K"
 
                 'Set the appropriate cursor position and write the results
-                Console.SetCursorPosition(CurrentLeft, TopPrinted)
-                Console.Write(MarqueeWritten)
+                ConsoleWrapper.SetCursorPosition(CurrentLeft, TopPrinted)
+                WritePlain(MarqueeWritten, False)
                 If Middle Then CurrentCharacterNum += 1
 
                 'If we're not on the left, decrement the current left position
@@ -304,8 +304,8 @@ Namespace Misc.Screensaver.Displays
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(MarqueeDelay, ScreensaverDisplayerThread)
         End Sub
 

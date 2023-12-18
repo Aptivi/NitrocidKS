@@ -60,7 +60,7 @@ Namespace Shell.Shells
                         'waiting for the command.
                         SyncLock GetCancelSyncLock(ShellType)
                             'Enable cursor (We put it here to avoid repeated "CursorVisible = True" statements in different command codes)
-                            Console.CursorVisible = True
+                            ConsoleWrapper.CursorVisible = True
 
                             'Write a prompt
                             If DefConsoleOut IsNot Nothing Then

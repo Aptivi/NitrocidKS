@@ -955,14 +955,14 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             CurrentTicks = ProgressClockCycleColorsTicks
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
-            Console.CursorVisible = False
-            Console.Clear()
+            ConsoleWrapper.CursorVisible = False
+            ConsoleWrapper.Clear()
 
             'Prepare colors
             Dim RedColorNumHours, GreenColorNumHours, BlueColorNumHours As Integer
@@ -1023,36 +1023,36 @@ Namespace Misc.Screensaver.Displays
                 ColorStorageSeconds = New Color(ProgressClockSecondsProgressColor)
                 ColorStorage = New Color(ProgressClockProgressColor)
             End If
-            ProgressFillPositionHours = CInt(Console.WindowHeight / 2) - 10
+            ProgressFillPositionHours = CInt(ConsoleWrapper.WindowHeight / 2) - 10
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Fill position for progress (Hours) {0}", ProgressFillPositionHours)
-            ProgressFillPositionMinutes = CInt(Console.WindowHeight / 2) - 1
+            ProgressFillPositionMinutes = CInt(ConsoleWrapper.WindowHeight / 2) - 1
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Fill position for progress (Minutes) {0}", ProgressFillPositionMinutes)
-            ProgressFillPositionSeconds = CInt(Console.WindowHeight / 2) + 8
+            ProgressFillPositionSeconds = CInt(ConsoleWrapper.WindowHeight / 2) + 8
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Fill position for progress (Seconds) {0}", ProgressFillPositionSeconds)
-            InformationPositionHours = CInt(Console.WindowHeight / 2) - 12
+            InformationPositionHours = CInt(ConsoleWrapper.WindowHeight / 2) - 12
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Fill position for info (Hours) {0}", InformationPositionHours)
-            InformationPositionMinutes = CInt(Console.WindowHeight / 2) - 3
+            InformationPositionMinutes = CInt(ConsoleWrapper.WindowHeight / 2) - 3
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Fill position for info (Minutes) {0}", InformationPositionMinutes)
-            InformationPositionSeconds = CInt(Console.WindowHeight / 2) + 6
+            InformationPositionSeconds = CInt(ConsoleWrapper.WindowHeight / 2) + 6
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Fill position for info (Seconds) {0}", InformationPositionSeconds)
 
 #Disable Warning BC42104
-            If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+            If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
             If Not ResizeSyncing Then
                 'Hours
-                WriteWhere(ProgressClockLowerLeftCornerCharHours + ProgressClockLowerFrameCharHours.Repeat(Console.WindowWidth - 10) + ProgressClockLowerRightCornerCharHours, 4, CInt(Console.WindowHeight / 2) - 9, True, ColorStorageHours)         'Bottom of Hours
-                WriteWhere(ProgressClockLeftFrameCharHours + " ".Repeat(Console.WindowWidth - 10) + ProgressClockRightFrameCharHours, 4, ProgressFillPositionHours, True, ColorStorageHours)                                                           'Medium of Hours
-                WriteWhere(ProgressClockUpperLeftCornerCharHours + ProgressClockUpperFrameCharHours.Repeat(Console.WindowWidth - 10) + ProgressClockUpperRightCornerCharHours, 4, CInt(Console.WindowHeight / 2) - 11, True, ColorStorageHours)        'Top of Hours
+                WriteWhere(ProgressClockLowerLeftCornerCharHours + ProgressClockLowerFrameCharHours.Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockLowerRightCornerCharHours, 4, CInt(ConsoleWrapper.WindowHeight / 2) - 9, True, ColorStorageHours)         'Bottom of Hours
+                WriteWhere(ProgressClockLeftFrameCharHours + " ".Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockRightFrameCharHours, 4, ProgressFillPositionHours, True, ColorStorageHours)                                                           'Medium of Hours
+                WriteWhere(ProgressClockUpperLeftCornerCharHours + ProgressClockUpperFrameCharHours.Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockUpperRightCornerCharHours, 4, CInt(ConsoleWrapper.WindowHeight / 2) - 11, True, ColorStorageHours)        'Top of Hours
 
                 'Minutes
-                WriteWhere(ProgressClockLowerLeftCornerCharMinutes + ProgressClockLowerFrameCharMinutes.Repeat(Console.WindowWidth - 10) + ProgressClockLowerRightCornerCharMinutes, 4, CInt(Console.WindowHeight / 2), True, ColorStorageMinutes)     'Bottom of Minutes
-                WriteWhere(ProgressClockLeftFrameCharMinutes + " ".Repeat(Console.WindowWidth - 10) + ProgressClockRightFrameCharMinutes, 4, ProgressFillPositionMinutes, True, ColorStorageMinutes)                                                   'Medium of Minutes
-                WriteWhere(ProgressClockUpperLeftCornerCharMinutes + ProgressClockUpperFrameCharMinutes.Repeat(Console.WindowWidth - 10) + ProgressClockUpperRightCornerCharMinutes, 4, CInt(Console.WindowHeight / 2) - 2, True, ColorStorageMinutes) 'Top of Minutes
+                WriteWhere(ProgressClockLowerLeftCornerCharMinutes + ProgressClockLowerFrameCharMinutes.Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockLowerRightCornerCharMinutes, 4, CInt(ConsoleWrapper.WindowHeight / 2), True, ColorStorageMinutes)     'Bottom of Minutes
+                WriteWhere(ProgressClockLeftFrameCharMinutes + " ".Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockRightFrameCharMinutes, 4, ProgressFillPositionMinutes, True, ColorStorageMinutes)                                                   'Medium of Minutes
+                WriteWhere(ProgressClockUpperLeftCornerCharMinutes + ProgressClockUpperFrameCharMinutes.Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockUpperRightCornerCharMinutes, 4, CInt(ConsoleWrapper.WindowHeight / 2) - 2, True, ColorStorageMinutes) 'Top of Minutes
 
                 'Seconds
-                WriteWhere(ProgressClockLowerLeftCornerCharSeconds + ProgressClockLowerFrameCharSeconds.Repeat(Console.WindowWidth - 10) + ProgressClockLowerRightCornerCharSeconds, 4, CInt(Console.WindowHeight / 2) + 9, True, ColorStorageSeconds) 'Bottom of Seconds
-                WriteWhere(ProgressClockLeftFrameCharSeconds + " ".Repeat(Console.WindowWidth - 10) + ProgressClockRightFrameCharSeconds, 4, ProgressFillPositionSeconds, True, ColorStorageSeconds)                                                   'Medium of Seconds
-                WriteWhere(ProgressClockUpperLeftCornerCharSeconds + ProgressClockUpperFrameCharSeconds.Repeat(Console.WindowWidth - 10) + ProgressClockUpperRightCornerCharSeconds, 4, CInt(Console.WindowHeight / 2) + 7, True, ColorStorageSeconds) 'Top of Seconds
+                WriteWhere(ProgressClockLowerLeftCornerCharSeconds + ProgressClockLowerFrameCharSeconds.Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockLowerRightCornerCharSeconds, 4, CInt(ConsoleWrapper.WindowHeight / 2) + 9, True, ColorStorageSeconds) 'Bottom of Seconds
+                WriteWhere(ProgressClockLeftFrameCharSeconds + " ".Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockRightFrameCharSeconds, 4, ProgressFillPositionSeconds, True, ColorStorageSeconds)                                                   'Medium of Seconds
+                WriteWhere(ProgressClockUpperLeftCornerCharSeconds + ProgressClockUpperFrameCharSeconds.Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockUpperRightCornerCharSeconds, 4, CInt(ConsoleWrapper.WindowHeight / 2) + 7, True, ColorStorageSeconds) 'Top of Seconds
 
                 'Fill progress for hours, minutes, and seconds
                 If Not KernelDateTime.Hour = 0 Then WriteWhere(" ".Repeat(PercentRepeat(KernelDateTime.Hour, 24, 10)), 5, ProgressFillPositionHours, True, Color.Empty, ColorStorageHours)
@@ -1077,14 +1077,14 @@ Namespace Misc.Screensaver.Displays
                 End If
 
                 'Print date information
-                WriteWhere(Render, Console.WindowWidth / 2 - Render.Length / 2, Console.WindowHeight - 2, ColorStorageSeconds)
+                WriteWhere(Render, ConsoleWrapper.WindowWidth / 2 - Render.Length / 2, ConsoleWrapper.WindowHeight - 2, ColorStorageSeconds)
             End If
             If ProgressClockCycleColors Then CurrentTicks += 1
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(ProgressClockDelay, ScreensaverDisplayerThread)
         End Sub
 

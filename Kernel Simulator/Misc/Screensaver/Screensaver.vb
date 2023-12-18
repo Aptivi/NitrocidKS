@@ -186,7 +186,7 @@ Namespace Misc.Screensaver
         Friend Sub HandleSaverCancel()
             Wdbg(DebugLevel.W, "Cancellation is pending. Cleaning everything up...")
             LoadBack()
-            Console.CursorVisible = True
+            ConsoleWrapper.CursorVisible = True
             Wdbg(DebugLevel.I, "All clean. Screensaver stopped.")
             SaverAutoReset.Set()
         End Sub

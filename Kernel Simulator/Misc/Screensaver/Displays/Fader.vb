@@ -189,8 +189,8 @@ Namespace Misc.Screensaver.Displays
             'Variable preparations
             RandomDriver = New Random
             SetConsoleColor(New Color(FaderBackgroundColor), True)
-            Console.Clear()
-            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", Console.WindowWidth, Console.WindowHeight)
+            ConsoleWrapper.Clear()
+            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight)
             FaderSettingsInstance = New Animations.Fader.FaderSettings With {
                 .FaderDelay = FaderDelay,
                 .FaderWrite = FaderWrite,

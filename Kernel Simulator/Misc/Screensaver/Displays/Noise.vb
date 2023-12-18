@@ -66,29 +66,29 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
             Dim NoiseDense As Double = If(NoiseDensity > 100, 100, NoiseDensity) / 100
 
             Console.BackgroundColor = ConsoleColor.DarkGray
-            Console.CursorVisible = False
-            Console.Clear()
+            ConsoleWrapper.CursorVisible = False
+            ConsoleWrapper.Clear()
             Console.BackgroundColor = ConsoleColor.Black
 
             'Select random positions to generate noise
-            Dim AmountOfBlocks As Integer = Console.WindowWidth * Console.WindowHeight
+            Dim AmountOfBlocks As Integer = ConsoleWrapper.WindowWidth * ConsoleWrapper.WindowHeight
             Dim BlocksToCover As Integer = AmountOfBlocks * NoiseDense
             Dim CoveredBlocks As New ArrayList
             Do Until CoveredBlocks.Count = BlocksToCover Or ResizeSyncing
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If Not ResizeSyncing Then
-                    Dim CoverX As Integer = RandomDriver.Next(Console.WindowWidth)
-                    Dim CoverY As Integer = RandomDriver.Next(Console.WindowHeight)
-                    Console.SetCursorPosition(CoverX, CoverY)
-                    Console.Write(" ")
+                    Dim CoverX As Integer = RandomDriver.Next(ConsoleWrapper.WindowWidth)
+                    Dim CoverY As Integer = RandomDriver.Next(ConsoleWrapper.WindowHeight)
+                    ConsoleWrapper.SetCursorPosition(CoverX, CoverY)
+                    WritePlain(" ", False)
                     If Not CoveredBlocks.Contains(CStr(CoverX) + ", " + CStr(CoverY)) Then CoveredBlocks.Add(CStr(CoverX) + ", " + CStr(CoverY))
                 Else
                     'We're resizing.
@@ -98,8 +98,8 @@ Namespace Misc.Screensaver.Displays
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(NoiseNewScreenDelay, ScreensaverDisplayerThread)
         End Sub
 

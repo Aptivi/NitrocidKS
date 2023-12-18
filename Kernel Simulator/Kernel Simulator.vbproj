@@ -183,6 +183,7 @@
     <Import Include="System.Net" />
     <Import Include="System.Xml.Linq" />
     <Import Include="Terminaux.Colors" />
+    <Import Include="Terminaux.Base" />
   </ItemGroup>
   <!-- KS Import Information End -->
 

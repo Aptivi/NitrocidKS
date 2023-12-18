@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports KS.Files.Read
+Imports TermLineHandle = Terminaux.Writer.MiscWriters.LineHandleWriter
 
 Namespace Misc.Writers.MiscWriters
     Public Module LineHandleWriter
@@ -116,19 +117,7 @@ Namespace Misc.Writers.MiscWriters
         ''' <param name="ColumnNumber">Column number (not index). This tells the handle where to place itself</param>
         ''' <param name="ColorType">The type of color</param>
         Public Sub PrintLineWithHandle(Array() As String, LineNumber As Integer, ColumnNumber As Integer, ColorType As ColTypes)
-            'Get the line index from number
-            If LineNumber <= 0 Then LineNumber = 1
-            If LineNumber > Array.Length Then LineNumber = Array.Length
-            Dim LineIndex As Integer = LineNumber - 1
-
-            'Get the line
-            Dim LineContent As String = Array(LineIndex)
-            Write(" | " + LineContent, True, ColorType)
-
-            'Place the column handle
-            Dim RepeatBlanks As Integer = ColumnNumber - 1
-            If RepeatBlanks < 0 Then RepeatBlanks = 0
-            Write(" | " + " ".Repeat(RepeatBlanks) + "^", True, ColorType)
+            TermLineHandle.PrintLineWithHandle(Array, LineNumber, ColumnNumber, GetConsoleColor(ColorType))
         End Sub
 
     End Module

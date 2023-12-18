@@ -38,6 +38,7 @@ Imports KS.Network.Transfer
 Imports KS.Shell.ShellBase.Aliases
 Imports KS.Scripting
 Imports KS.TimeDate
+Imports TermExts = Terminaux.Base.ConsoleExtensions
 
 Namespace Kernel
     Public Module KernelTools
@@ -284,7 +285,7 @@ Namespace Kernel
                     Write(DoTranslation("Rebooting..."), True, GetConsoleColor(ColTypes.Neutral))
                     ResetEverything()
                     KernelEventManager.RaisePostReboot()
-                    Console.Clear()
+                    ConsoleWrapper.Clear()
                     RebootRequested = True
                     LogoutRequested = True
                 Case PowerMode.RemoteShutdown
@@ -501,8 +502,8 @@ Namespace Kernel
             Next
 
             'Clear the console and reset the colors
-            Console.ResetColor()
-            Console.Clear()
+            TermExts.ResetColors()
+            ConsoleWrapper.Clear()
             Environment.Exit(0)
         End Sub
 
@@ -522,7 +523,7 @@ Namespace Kernel
                 If ShowStageFinishTimes Then
                     ReportProgress(DoTranslation("Stage finished in") + $" {StageTimer.Elapsed}", 10, ColTypes.StageTime)
                     StageTimer.Reset()
-                    Console.WriteLine()
+                    WritePlain("", True)
                 End If
             Else
                 If ShowStageFinishTimes Then
@@ -534,7 +535,7 @@ Namespace Kernel
             'Actually report the stage
             If StageNumber >= 1 And StageNumber <= 4 Then
                 If Not EnableSplash And Not QuietKernel Then
-                    Console.WriteLine()
+                    WritePlain("", True)
                     WriteSeparator(StageText, False, ColTypes.Stage)
                 End If
                 Wdbg(DebugLevel.I, $"- Kernel stage {StageNumber} | Text: {StageText}")

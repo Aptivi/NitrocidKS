@@ -27,8 +27,8 @@ Namespace Misc.Screensaver
         Public Overridable Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             Console.BackgroundColor = ConsoleColor.Black
             Console.ForegroundColor = ConsoleColor.White
-            Console.Clear()
-            Console.CursorVisible = False
+            ConsoleWrapper.Clear()
+            ConsoleWrapper.CursorVisible = False
         End Sub
 
         Public Overridable Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic

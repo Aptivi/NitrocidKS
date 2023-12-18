@@ -195,21 +195,21 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SetConsoleColor(New Color(LighterBackgroundColor), True)
-            Console.Clear()
-            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", Console.WindowWidth, Console.WindowHeight)
+            ConsoleWrapper.Clear()
+            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight)
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
 
             'Select a position
-            Dim Left As Integer = RandomDriver.Next(Console.WindowWidth)
-            Dim Top As Integer = RandomDriver.Next(Console.WindowHeight)
+            Dim Left As Integer = RandomDriver.Next(ConsoleWrapper.WindowWidth)
+            Dim Top As Integer = RandomDriver.Next(ConsoleWrapper.WindowHeight)
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Selected left and top: {0}, {1}", Left, Top)
-            Console.SetCursorPosition(Left, Top)
+            ConsoleWrapper.SetCursorPosition(Left, Top)
             If Not CoveredPositions.Any(Function(t) t.Item1 = Left And t.Item2 = Top) Then
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Covering position...")
                 CoveredPositions.Add(New Tuple(Of Integer, Integer)(Left, Top))
@@ -223,10 +223,10 @@ Namespace Misc.Screensaver.Displays
                 Dim BlueColorNum As Integer = RandomDriver.Next(LighterMinimumBlueColorLevel, LighterMaximumBlueColorLevel)
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum)
                 Dim ColorStorage As New Color(RedColorNum, GreenColorNum, BlueColorNum)
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If Not ResizeSyncing Then
                     SetConsoleColor(ColorStorage, True)
-                    Console.Write(" ")
+                    WritePlain(" ", False)
                 Else
                     WdbgConditional(ScreensaverDebug, DebugLevel.W, "Resize-syncing. Clearing covered positions...")
                     CoveredPositions.Clear()
@@ -234,20 +234,20 @@ Namespace Misc.Screensaver.Displays
             ElseIf Lighter255Colors Then
                 Dim ColorNum As Integer = RandomDriver.Next(LighterMinimumColorLevel, LighterMaximumColorLevel)
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum)
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If Not ResizeSyncing Then
                     SetConsoleColor(New Color(ColorNum), True)
-                    Console.Write(" ")
+                    WritePlain(" ", False)
                 Else
                     WdbgConditional(ScreensaverDebug, DebugLevel.W, "Resize-syncing. Clearing covered positions...")
                     CoveredPositions.Clear()
                 End If
             Else
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If Not ResizeSyncing Then
                     Console.BackgroundColor = colors(RandomDriver.Next(LighterMinimumColorLevel, LighterMaximumColorLevel))
                     WdbgConditional(ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.BackgroundColor)
-                    Console.Write(" ")
+                    WritePlain(" ", False)
                 Else
                     WdbgConditional(ScreensaverDebug, DebugLevel.W, "Resize-syncing. Clearing covered positions...")
                     CoveredPositions.Clear()
@@ -260,11 +260,11 @@ Namespace Misc.Screensaver.Displays
                 Dim WipeLeft As Integer = CoveredPositions(0).ToString.Substring(0, CoveredPositions(0).ToString.IndexOf(";"))
                 Dim WipeTop As Integer = CoveredPositions(0).ToString.Substring(CoveredPositions(0).ToString.IndexOf(";") + 1)
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Wiping in {0}, {1}...", WipeLeft, WipeTop)
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If Not ResizeSyncing Then
-                    Console.SetCursorPosition(WipeLeft, WipeTop)
+                    ConsoleWrapper.SetCursorPosition(WipeLeft, WipeTop)
                     SetConsoleColor(New Color(LighterBackgroundColor), True)
-                    Console.Write(" ")
+                    WritePlain(" ", False)
                     CoveredPositions.RemoveAt(0)
                 Else
                     WdbgConditional(ScreensaverDebug, DebugLevel.W, "Resize-syncing. Clearing covered positions...")
@@ -274,8 +274,8 @@ Namespace Misc.Screensaver.Displays
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(LighterDelay, ScreensaverDisplayerThread)
         End Sub
 

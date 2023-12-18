@@ -29,13 +29,13 @@ Namespace Misc.Animations.FaderBack
         ''' Simulates the background fading animation
         ''' </summary>
         Public Sub Simulate(Settings As FaderBackSettings)
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             Dim RandomDriver As Random = Settings.RandomDriver
             Dim RedColorNum As Integer = RandomDriver.Next(Settings.FaderBackMinimumRedColorLevel, Settings.FaderBackMaximumRedColorLevel)
             Dim GreenColorNum As Integer = RandomDriver.Next(Settings.FaderBackMinimumGreenColorLevel, Settings.FaderBackMaximumGreenColorLevel)
             Dim BlueColorNum As Integer = RandomDriver.Next(Settings.FaderBackMinimumBlueColorLevel, Settings.FaderBackMaximumBlueColorLevel)
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
 
             'Set thresholds
             Dim ThresholdRed As Double = RedColorNum / Settings.FaderBackMaxSteps
@@ -48,7 +48,7 @@ Namespace Misc.Animations.FaderBack
             Dim CurrentColorGreenIn As Integer = 0
             Dim CurrentColorBlueIn As Integer = 0
             For CurrentStep As Integer = Settings.FaderBackMaxSteps To 1 Step -1
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit For
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", CurrentStep, Settings.FaderBackMaxSteps)
                 SleepNoBlock(Settings.FaderBackDelay, System.Threading.Thread.CurrentThread)
@@ -57,7 +57,7 @@ Namespace Misc.Animations.FaderBack
                 CurrentColorBlueIn += ThresholdBlue
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Color in (R;G;B: {0};{1};{2})", CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn)
                 SetConsoleColor(New Color($"{CurrentColorRedIn};{CurrentColorGreenIn};{CurrentColorBlueIn}"), True)
-                Console.Clear()
+                ConsoleWrapper.Clear()
             Next
 
             'Wait until fade out
@@ -68,7 +68,7 @@ Namespace Misc.Animations.FaderBack
 
             'Fade out
             For CurrentStep As Integer = 1 To Settings.FaderBackMaxSteps
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit For
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", CurrentStep, Settings.FaderBackMaxSteps)
                 SleepNoBlock(Settings.FaderBackDelay, System.Threading.Thread.CurrentThread)
@@ -77,13 +77,13 @@ Namespace Misc.Animations.FaderBack
                 Dim CurrentColorBlueOut As Integer = BlueColorNum - ThresholdBlue * CurrentStep
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut)
                 SetConsoleColor(New Color($"{CurrentColorRedOut};{CurrentColorGreenOut};{CurrentColorBlueOut}"), True)
-                Console.Clear()
+                ConsoleWrapper.Clear()
             Next
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(Settings.FaderBackDelay, System.Threading.Thread.CurrentThread)
         End Sub
 

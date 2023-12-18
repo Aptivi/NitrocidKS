@@ -29,10 +29,10 @@ Namespace Misc.Animations.BeatFader
         ''' Simulates the beat fading animation
         ''' </summary>
         Public Sub Simulate(Settings As BeatFaderSettings)
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             Dim RandomDriver As Random = Settings.RandomDriver
-            Console.CursorVisible = False
+            ConsoleWrapper.CursorVisible = False
             Dim BeatInterval As Integer = 60000 / Settings.BeatFaderDelay
             Dim BeatIntervalStep As Integer = BeatInterval / Settings.BeatFaderMaxSteps
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Beat interval from {0} BPM: {1}", Settings.BeatFaderDelay, BeatInterval)
@@ -85,7 +85,7 @@ Namespace Misc.Animations.BeatFader
 
             'Fade out
             For CurrentStep As Integer = 1 To Settings.BeatFaderMaxSteps
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If ResizeSyncing Then Exit For
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Step {0}/{1} each {2} ms", CurrentStep, Settings.BeatFaderMaxSteps, BeatIntervalStep)
                 SleepNoBlock(BeatIntervalStep, System.Threading.Thread.CurrentThread)
@@ -93,17 +93,17 @@ Namespace Misc.Animations.BeatFader
                 Dim CurrentColorGreenOut As Integer = GreenColorNum - ThresholdGreen * CurrentStep
                 Dim CurrentColorBlueOut As Integer = BlueColorNum - ThresholdBlue * CurrentStep
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum)
-                If CurrentWindowHeight <> Console.WindowHeight Or CurrentWindowWidth <> Console.WindowWidth Then ResizeSyncing = True
+                If CurrentWindowHeight <> ConsoleWrapper.WindowHeight Or CurrentWindowWidth <> ConsoleWrapper.WindowWidth Then ResizeSyncing = True
                 If Not ResizeSyncing Then
                     SetConsoleColor(New Color($"{CurrentColorRedOut};{CurrentColorGreenOut};{CurrentColorBlueOut}"), True)
-                    Console.Clear()
+                    ConsoleWrapper.Clear()
                 End If
             Next
 
             'Reset resize sync
             ResizeSyncing = False
-            CurrentWindowWidth = Console.WindowWidth
-            CurrentWindowHeight = Console.WindowHeight
+            CurrentWindowWidth = ConsoleWrapper.WindowWidth
+            CurrentWindowHeight = ConsoleWrapper.WindowHeight
             SleepNoBlock(Settings.BeatFaderDelay, System.Threading.Thread.CurrentThread)
         End Sub
 

@@ -225,8 +225,8 @@ Namespace Misc.Screensaver.Displays
             RandomDriver = New Random
             Console.BackgroundColor = ConsoleColor.Black
             Console.ForegroundColor = ConsoleColor.White
-            Console.Clear()
-            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", Console.WindowWidth, Console.WindowHeight)
+            ConsoleWrapper.Clear()
+            Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight)
             BeatEdgePulseSettingsInstance = New Animations.BeatEdgePulse.BeatEdgePulseSettings With {
                 .BeatEdgePulse255Colors = BeatEdgePulse255Colors,
                 .BeatEdgePulseTrueColor = BeatEdgePulseTrueColor,

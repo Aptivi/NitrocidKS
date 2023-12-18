@@ -78,7 +78,7 @@ namespace KSConverter
                     Debug.WriteLine("Already found.");
                     TextWriterColor.Write("  - Warning: backup directory is already found.", true, GetConsoleColor(ColTypes.Warning));
                 }
-                Console.WriteLine();
+                TextWriterColor.WritePlain("", true);
 
                 // Make backup of old configuration files in case something goes wrong during conversion.
                 SeparatorWriterColor.WriteSeparator("[2/7] Making backup of old configuration files", true, ColTypes.Stage);
@@ -106,7 +106,7 @@ namespace KSConverter
                         TextWriterColor.Write("  - Warning: {0} not found in home directory.", true, GetConsoleColor(ColTypes.Warning), ListOfOldPaths[ConfigEntry]);
                     }
                 }
-                Console.WriteLine();
+                TextWriterColor.WritePlain("", true);
 
                 // Import all blocked devices to DebugDeviceNames.json
                 SeparatorWriterColor.WriteSeparator("[3/7] Importing all blocked devices to DebugDeviceNames.json", true, ColTypes.Stage);
@@ -136,7 +136,7 @@ namespace KSConverter
                     Debug.WriteLine("We don't have file.");
                     TextWriterColor.Write("  - Warning: blocked_devices.csv not found in home directory.", true, GetConsoleColor(ColTypes.Warning));
                 }
-                Console.WriteLine();
+                TextWriterColor.WritePlain("", true);
 
                 // Import all FTP speed dial settings to JSON
                 SeparatorWriterColor.WriteSeparator("[4/7] Importing all FTP speed dial addresses to FTP_SpeedDial.json", true, ColTypes.Stage);
@@ -176,7 +176,7 @@ namespace KSConverter
                     Debug.WriteLine("We don't have file.");
                     TextWriterColor.Write("  - Warning: ftp_speeddial.csv not found in home directory.", true, GetConsoleColor(ColTypes.Warning));
                 }
-                Console.WriteLine();
+                TextWriterColor.WritePlain("", true);
 
                 // Import all users to JSON
                 SeparatorWriterColor.WriteSeparator("[5/7] Importing all users to Users.json", true, ColTypes.Stage);
@@ -234,7 +234,7 @@ namespace KSConverter
                     Debug.WriteLine("We don't have file.");
                     TextWriterColor.Write("  - Warning: users.csv not found in home directory.", true, GetConsoleColor(ColTypes.Warning));
                 }
-                Console.WriteLine();
+                TextWriterColor.WritePlain("", true);
 
                 // Import all aliases to JSON
                 SeparatorWriterColor.WriteSeparator("[6/7] Importing all aliases to Aliases.json", true, ColTypes.Stage);
@@ -319,7 +319,7 @@ namespace KSConverter
                     Debug.WriteLine("We don't have file.");
                     TextWriterColor.Write("  - Warning: aliases.csv not found in home directory.", true, GetConsoleColor(ColTypes.Warning));
                 }
-                Console.WriteLine();
+                TextWriterColor.WritePlain("", true);
 
                 // Import all config to JSON
                 SeparatorWriterColor.WriteSeparator("[7/7] Importing all kernel config to KernelConfig.json", true, ColTypes.Stage);
@@ -356,7 +356,7 @@ namespace KSConverter
                     Debug.WriteLine("We don't have file.");
                     TextWriterColor.Write("  - Warning: kernelConfig.ini not found in home directory.", true, GetConsoleColor(ColTypes.Warning));
                 }
-                Console.WriteLine();
+                TextWriterColor.WritePlain("", true);
 
                 // Print this message:
                 TextWriterColor.Write("- Successfully converted all settings to new format! Enjoy!", true, GetConsoleColor(ColTypes.Success));

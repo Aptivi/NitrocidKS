@@ -48,7 +48,7 @@ Namespace Shell.Commands
                 Write(DoTranslation("Help command simplified:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(SimHelp.ToString, True, GetConsoleColor(ColTypes.ListValue))
                 Write(DoTranslation("MOTD on Login:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(ShowMOTD.ToString, True, GetConsoleColor(ColTypes.ListValue))
                 Write(DoTranslation("Time/Date on corner:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(CornerTimeDate.ToString, True, GetConsoleColor(ColTypes.ListValue))
-                Console.WriteLine()
+                WritePlain("", True)
             End If
 
             If ShowHardwareInfo Then
@@ -56,7 +56,7 @@ Namespace Shell.Commands
                 WriteSeparator(DoTranslation("Hardware settings"), True)
                 ListHardware()
                 Write(DoTranslation("Use ""hwinfo"" for extended information about hardware."), True, ColTypes.Tip)
-                Console.WriteLine()
+                WritePlain("", True)
             End If
 
             If ShowUserInfo Then
@@ -65,7 +65,7 @@ Namespace Shell.Commands
                 Write(DoTranslation("Current user name:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(CurrentUser.Username, True, GetConsoleColor(ColTypes.ListValue))
                 Write(DoTranslation("Current host name:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(HostName, True, GetConsoleColor(ColTypes.ListValue))
                 Write(DoTranslation("Available usernames:") + " ", False, GetConsoleColor(ColTypes.ListEntry)) : Write(String.Join(", ", ListAllUsers), True, GetConsoleColor(ColTypes.ListValue))
-                Console.WriteLine()
+                WritePlain("", True)
             End If
 
             If ShowMessageOfTheDay Then

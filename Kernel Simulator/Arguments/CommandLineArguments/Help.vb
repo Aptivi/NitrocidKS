@@ -16,6 +16,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports KS.Arguments.ArgumentBase
+Imports TermExts = Terminaux.Base.ConsoleExtensions
 
 Namespace Arguments.CommandLineArguments
     Class CommandLine_HelpArgument
@@ -26,19 +27,19 @@ Namespace Arguments.CommandLineArguments
             'Command-line arguments
             Write(DoTranslation("Command-line arguments:"), True, ColTypes.ListTitle)
             ShowArgsHelp(ArgumentType.CommandLineArgs)
-            Console.WriteLine()
+            WritePlain("", True)
 
             'Pre-boot command-line arguments
             Write(DoTranslation("Pre-boot command-line arguments:"), True, ColTypes.ListTitle)
             ShowArgsHelp(ArgumentType.PreBootCommandLineArgs)
-            Console.WriteLine()
+            WritePlain("", True)
 
             'Either start the kernel or exit it
             Write(DoTranslation("* Press any key to start the kernel or ESC to exit."), True, ColTypes.Tip)
             If DetectKeypress().Key = ConsoleKey.Escape Then
                 'Clear the console and reset the colors
-                Console.ResetColor()
-                Console.Clear()
+                TermExts.ResetColors()
+                ConsoleWrapper.Clear()
                 Environment.Exit(0)
             End If
         End Sub

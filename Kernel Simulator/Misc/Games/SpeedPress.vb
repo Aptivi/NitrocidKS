@@ -89,7 +89,7 @@ Namespace Misc.Games
                     Write(DoTranslation("Current character:") + " {0}", True, color:=GetConsoleColor(ColTypes.Neutral), SelectedChar)
                     Write("> ", False, GetConsoleColor(ColTypes.Input))
                     WrittenChar = ReadKeyTimeout(False, TimeSpan.FromMilliseconds(SpeedTimeout))
-                    Console.WriteLine()
+                    WritePlain("", True)
 
                     'Check to see if the user has pressed the correct character
                     If WrittenChar.KeyChar = SelectedChar Then
@@ -98,7 +98,7 @@ Namespace Misc.Games
                         Write(DoTranslation("You've pressed the wrong character."), True, GetConsoleColor(ColTypes.Warning))
                     End If
                 Catch ex As Exceptions.ConsoleReadTimeoutException
-                    Console.WriteLine()
+                    WritePlain("", True)
                     Write(DoTranslation("Character not pressed on time."), True, GetConsoleColor(ColTypes.Warning))
                 End Try
             End While

@@ -48,7 +48,7 @@ Namespace Misc.Writers.MiscWriters
         ''' </summary>
         Sub WriteMessage()
             If Not EnableSplash Then
-                Console.CursorVisible = False
+                ConsoleWrapper.CursorVisible = False
 
                 'The default message to write
                 Dim MessageWrite As String = GetCustomBanner()
@@ -66,7 +66,7 @@ Namespace Misc.Writers.MiscWriters
                     'Show license
                     WriteLicense(True)
                 End If
-                Console.CursorVisible = True
+                ConsoleWrapper.CursorVisible = True
             End If
         End Sub
 
@@ -80,7 +80,7 @@ Namespace Misc.Writers.MiscWriters
                             "    This is free software, and you are welcome to redistribute it" + NewLine +
                             "    under certain conditions; See COPYING file in source code." + NewLine, True, ColTypes.License)
             Write("* " + DoTranslation("For more information about the terms and conditions of using this software, visit") + " http://www.gnu.org/licenses/", True, ColTypes.License)
-            If TwoNewlines Then Console.WriteLine()
+            If TwoNewlines Then WritePlain("", True)
         End Sub
 
     End Module

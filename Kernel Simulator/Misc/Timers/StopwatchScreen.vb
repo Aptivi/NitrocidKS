@@ -34,22 +34,22 @@ Namespace Misc.Timers
         ''' </summary>
         Sub OpenStopwatch()
             'Clear for cleanliness
-            Console.Clear()
-            Console.CursorVisible = False
+            ConsoleWrapper.Clear()
+            ConsoleWrapper.CursorVisible = False
 
             'Populate the positions for time
             Dim LapsText As String = DoTranslation("Lap")
-            Dim HalfWidth As Integer = Console.WindowWidth / 2
-            Dim HalfHeight As Integer = Console.WindowHeight / 2
+            Dim HalfWidth As Integer = ConsoleWrapper.WindowWidth / 2
+            Dim HalfHeight As Integer = ConsoleWrapper.WindowHeight / 2
             Dim TimeLeftPosition As Integer = HalfWidth * 1.5 - Stopwatch.Elapsed.ToString("d\.hh\:mm\:ss\.fff", CurrentCult).Length / 2
             Dim TimeTopPosition As Integer = HalfHeight - 2
             Dim LapsCurrentLapLeftPosition As Integer = 4
-            Dim LapsCurrentLapTopPosition As Integer = Console.WindowHeight - 6
+            Dim LapsCurrentLapTopPosition As Integer = ConsoleWrapper.WindowHeight - 6
 
             'Populate the keys text variable
             Dim KeysText As String = "[ENTER] " + DoTranslation("Start or stop") + " | [L] " + DoTranslation("Lap") + " | [R] " + DoTranslation("Reset") + " | [ESC] " + DoTranslation("Exit")
             Dim KeysTextLeftPosition As Integer = HalfWidth - (KeysText.Length / 2)
-            Dim KeysTextTopPosition As Integer = Console.WindowHeight - 2
+            Dim KeysTextTopPosition As Integer = ConsoleWrapper.WindowHeight - 2
             Dim KeysKeypress As ConsoleKey
 
             'Print the keys text
@@ -100,7 +100,7 @@ Namespace Misc.Timers
                         'Clear the laps and the laps list
                         Laps.Clear()
                         For Y As Integer = 1 To LapsCurrentLapTopPosition - 1
-                            Console.SetCursorPosition(LapsCurrentLapLeftPosition, Y)
+                            ConsoleWrapper.SetCursorPosition(LapsCurrentLapLeftPosition, Y)
                             ClearLineToRight()
                         Next
 
@@ -108,7 +108,7 @@ Namespace Misc.Timers
                         LapColor = NeutralTextColor
                         WriteWhere(DoTranslation("Lap") + " {0}: {1}", LapsCurrentLapLeftPosition, LapsCurrentLapTopPosition, False, LapColor, Laps.Count + 1, LappedStopwatch.Elapsed.ToString("d\.hh\:mm\:ss\.fff", CurrentCult))
                         ClearLineToRight()
-                        Console.SetCursorPosition(0, TimeTopPosition)
+                        ConsoleWrapper.SetCursorPosition(0, TimeTopPosition)
                         ClearLineToRight()
                         WriteWhere(Stopwatch.Elapsed.ToString("d\.hh\:mm\:ss\.fff", CurrentCult), TimeLeftPosition, TimeTopPosition, False, LapColor)
                         MakeBorder()
@@ -122,8 +122,8 @@ Namespace Misc.Timers
 
             'Clear for cleanliness
             Laps.Clear()
-            Console.Clear()
-            Console.CursorVisible = True
+            ConsoleWrapper.Clear()
+            ConsoleWrapper.CursorVisible = True
         End Sub
 
         ''' <summary>
@@ -132,12 +132,12 @@ Namespace Misc.Timers
         Private Sub UpdateStopwatchElapsedDisplay()
             'Populate the positions for time and for lap list
             Dim LapsText As String = DoTranslation("Lap")
-            Dim HalfWidth As Integer = Console.WindowWidth / 2
-            Dim HalfHeight As Integer = Console.WindowHeight / 2
+            Dim HalfWidth As Integer = ConsoleWrapper.WindowWidth / 2
+            Dim HalfHeight As Integer = ConsoleWrapper.WindowHeight / 2
             Dim TimeLeftPosition As Integer = HalfWidth * 1.5 - Stopwatch.Elapsed.ToString("d\.hh\:mm\:ss\.fff", CurrentCult).Length / 2
             Dim TimeTopPosition As Integer = HalfHeight - 2
             Dim LapsCurrentLapLeftPosition As Integer = 4
-            Dim LapsCurrentLapTopPosition As Integer = Console.WindowHeight - 6
+            Dim LapsCurrentLapTopPosition As Integer = ConsoleWrapper.WindowHeight - 6
             Dim LapsLapsListLeftPosition As Integer = 4
             Dim LapsLapsListTopPosition As Integer = 3
 
@@ -149,7 +149,7 @@ Namespace Misc.Timers
 
                     'Update the laps list if new lap is acknowledged
                     If NewLapAcknowledged Then
-                        Dim LapsListEndBorder As Integer = Console.WindowHeight - 10
+                        Dim LapsListEndBorder As Integer = ConsoleWrapper.WindowHeight - 10
                         Dim LapsListBuilder As New StringBuilder
                         Dim BorderDifference As Integer = Laps.Count - LapsListEndBorder
                         If BorderDifference < 0 Then BorderDifference = 0
@@ -170,10 +170,10 @@ Namespace Misc.Timers
         ''' Makes the display border
         ''' </summary>
         Sub MakeBorder()
-            Dim KeysTextTopPosition As Integer = Console.WindowHeight - 2
-            Dim HalfWidth As Integer = Console.WindowWidth / 2
-            WriteWhere("═".Repeat(Console.WindowWidth), 0, KeysTextTopPosition - 2, True, ColTypes.Gray)
-            WriteWhere("═".Repeat(Console.WindowWidth), 0, 1, True, ColTypes.Gray)
+            Dim KeysTextTopPosition As Integer = ConsoleWrapper.WindowHeight - 2
+            Dim HalfWidth As Integer = ConsoleWrapper.WindowWidth / 2
+            WriteWhere("═".Repeat(ConsoleWrapper.WindowWidth), 0, KeysTextTopPosition - 2, True, ColTypes.Gray)
+            WriteWhere("═".Repeat(ConsoleWrapper.WindowWidth), 0, 1, True, ColTypes.Gray)
             For Height = 2 To KeysTextTopPosition - 2
                 WriteWhere("║", HalfWidth, Height, True, ColTypes.Gray)
             Next

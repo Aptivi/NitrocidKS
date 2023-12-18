@@ -177,7 +177,7 @@ Namespace Misc.Splash
         ''' </summary>
         Sub OpenSplash()
             If EnableSplash Then
-                Console.CursorVisible = False
+                ConsoleWrapper.CursorVisible = False
                 CurrentSplash.Opening()
                 SplashThread.Stop()
                 SplashThread.Start()
@@ -191,7 +191,7 @@ Namespace Misc.Splash
             If EnableSplash Then
                 CurrentSplash.Closing()
                 SplashThread.Stop()
-                Console.CursorVisible = True
+                ConsoleWrapper.CursorVisible = True
                 CurrentSplash.SplashClosing = False
             End If
             _KernelBooted = True

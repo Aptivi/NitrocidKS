@@ -132,7 +132,7 @@ The back message box screensaver tells people that the computer owner is gone, o
 ```
 7. Write on the ScrnSaver() sub:
 ```vb
-    Console.Clear()
+    ConsoleWrapper.Clear()
     If Custom.CancellationPending = True Then 'This will fix the issue for the task being busy.
         Exit Sub
     End If
@@ -215,12 +215,12 @@ The back message box screensaver tells people that the computer owner is gone, o
         End Sub
 
         Sub ScrnSaver() Implements ICustomSaver.ScrnSaver
-            Console.Clear()
+            ConsoleWrapper.Clear()
             Dim SOR_Integer As Integer = SOR_Random.Next(1, 4) 'Chooses whether it's Soon, Overnight or Rude
             Dim Soon_MsgID As Integer = S_Random.Next(0, 2) 'Selects messages in the Soon array
             Dim Over_MsgID As Integer = O_Random.Next(0, 2) 'Selects messages in the Overnight array
             Dim Rude_MsgID As Integer = R_Random.Next(0, 3) 'Selects messages in the Rude array
-            Console.SetCursorPosition(0, 1)
+            ConsoleWrapper.SetCursorPosition(0, 1)
             Select Case SOR_Integer
                 Case 1 'Soon
                     WriteMsg(SOR_Integer, Soon_MsgID)
@@ -292,7 +292,7 @@ The back message box screensaver tells people that the computer owner is gone, o
 ```
 4. Write inside the ScrnSaver sub:
 ```vb
-Console.Clear()
+ConsoleWrapper.Clear()
 ```
 5. The code should look like this:
 ```vb
@@ -310,7 +310,7 @@ Console.Clear()
         Public Sub PreDisplay() Implements ICustomSaver.PreDisplay
         End Sub
         Public Sub ScrnSaver() Implements ICustomSaver.ScrnSaver
-            Console.Clear()
+            ConsoleWrapper.Clear()
         End Sub
         Public Sub PostDisplay() Implements ICustomSaver.PostDisplay
         End Sub

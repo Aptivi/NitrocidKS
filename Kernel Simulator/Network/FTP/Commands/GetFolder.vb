@@ -29,10 +29,10 @@ Namespace Network.FTP.Commands
             Write(DoTranslation("Downloading folder {0}..."), True, color:=GetConsoleColor(ColTypes.Progress), RemoteFolder)
             Dim Result As Boolean = If(Not String.IsNullOrWhiteSpace(LocalFolder), FTPGetFolder(RemoteFolder, LocalFolder), FTPGetFolder(RemoteFolder))
             If Result Then
-                Console.WriteLine()
+                WritePlain("", True)
                 Write(DoTranslation("Downloaded folder {0}."), True, color:=GetConsoleColor(ColTypes.Success), RemoteFolder)
             Else
-                Console.WriteLine()
+                WritePlain("", True)
                 Write(DoTranslation("Download failed for folder {0}."), True, color:=GetConsoleColor(ColTypes.Error), RemoteFolder)
             End If
         End Sub
