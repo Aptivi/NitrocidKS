@@ -25,6 +25,9 @@ Imports KS.Misc.Reflection
 Imports KS.Misc.Screensaver.Customized
 Imports KS.Misc.Screensaver
 Imports Terminaux.Colors.Selector
+Imports TermSeparator = Terminaux.Writer.FancyWriters.SeparatorWriterColor
+Imports Terminaux.Inputs.Styles.Selection
+Imports Terminaux.Inputs
 
 Namespace Misc.Configuration
     Public Module SettingsApp
@@ -36,7 +39,6 @@ Namespace Misc.Configuration
         ''' </summary>
         Sub OpenMainPage(SettingsType As SettingsType)
             Dim PromptFinished As Boolean
-            Dim AnswerString As String
             Dim AnswerInt As Integer
             Dim SettingsToken As JToken = OpenSettingsResource(SettingsType)
             Dim MaxSections As Integer = SettingsToken.Count
@@ -45,102 +47,91 @@ Namespace Misc.Configuration
             While Not PromptFinished
                 Console.Clear()
 
-                'List sections
-                WriteSeparator(DoTranslation("Welcome to Settings!"), True)
-                Write(NewLine + DoTranslation("Select section:") + NewLine, True, GetConsoleColor(ColTypes.Neutral))
+                'Populate answers
+                Dim inputs As New List(Of InputChoiceInfo)
+                Dim inputsAlt As New List(Of InputChoiceInfo) From
+                {
+                    New InputChoiceInfo($"{MaxSections + 1}", DoTranslation("Find a Setting")),
+                    New InputChoiceInfo($"{MaxSections + 2}", DoTranslation("Save Settings")),
+                    New InputChoiceInfo($"{MaxSections + 3}", DoTranslation("Save Settings As")),
+                    New InputChoiceInfo($"{MaxSections + 4}", DoTranslation("Load Settings From")),
+                    New InputChoiceInfo($"{MaxSections + 5}", DoTranslation("Exit"))
+                }
                 For SectionIndex As Integer = 0 To MaxSections - 1
                     Dim Section As JProperty = SettingsToken.ToList(SectionIndex)
                     If SettingsType <> SettingsType.Normal Then
-                        Write(" {0}) " + Section.Name + "...", True, color:=GetConsoleColor(ColTypes.Option), SectionIndex + 1)
+                        inputs.Add(New InputChoiceInfo($"{SectionIndex + 1}", Section.Name + "..."))
                     Else
-                        Write(" {0}) " + DoTranslation(Section.Name + " Settings..."), True, color:=GetConsoleColor(ColTypes.Option), SectionIndex + 1)
+                        inputs.Add(New InputChoiceInfo($"{SectionIndex + 1}", DoTranslation(Section.Name + " Settings...")))
                     End If
                 Next
-                Console.WriteLine()
-                Write(" {0}) " + DoTranslation("Find a Setting"), True, color:=GetConsoleColor(ColTypes.AlternativeOption), MaxSections + 1)
-                Write(" {0}) " + DoTranslation("Save Settings"), True, color:=GetConsoleColor(ColTypes.AlternativeOption), MaxSections + 2)
-                Write(" {0}) " + DoTranslation("Save Settings As"), True, color:=GetConsoleColor(ColTypes.AlternativeOption), MaxSections + 3)
-                Write(" {0}) " + DoTranslation("Load Settings From"), True, color:=GetConsoleColor(ColTypes.AlternativeOption), MaxSections + 4)
-                Write(" {0}) " + DoTranslation("Exit"), True, color:=GetConsoleColor(ColTypes.AlternativeOption), MaxSections + 5)
 
-                'Prompt user
-                Console.WriteLine()
-                Write("> ", False, GetConsoleColor(ColTypes.Input))
-                AnswerString = ReadLine()
-                Wdbg(DebugLevel.I, "User answered {0}", AnswerString)
-                Console.WriteLine()
+                'Prompt for selection
+                AnswerInt = SelectionStyle.PromptSelection(TermSeparator.RenderSeparator(DoTranslation("Welcome to Settings!"), True) + NewLine + NewLine + DoTranslation("Select section:"), inputs, inputsAlt)
 
                 'Check for input
-                Wdbg(DebugLevel.I, "Is the answer numeric? {0}", IsStringNumeric(AnswerString))
-                If Integer.TryParse(AnswerString, AnswerInt) Then
-                    Wdbg(DebugLevel.I, "Succeeded. Checking the answer if it points to the right direction...")
-                    If AnswerInt >= 1 And AnswerInt <= MaxSections Then
-                        'The selected answer is a section
-                        Dim SelectedSection As JProperty = SettingsToken.ToList(AnswerInt - 1)
-                        Wdbg(DebugLevel.I, "Opening section {0}...", SelectedSection.Name)
-                        OpenSection(SelectedSection.Name, SettingsToken)
-                    ElseIf AnswerInt = MaxSections + 1 Then
-                        'The selected answer is "Find a Setting"
-                        VariableFinder(SettingsToken)
-                    ElseIf AnswerInt = MaxSections + 2 Then
-                        'The selected answer is "Save Settings"
-                        Wdbg(DebugLevel.I, "Saving settings...")
+                Wdbg(DebugLevel.I, "Succeeded. Checking the answer if it points to the right direction...")
+                If AnswerInt >= 1 And AnswerInt <= MaxSections Then
+                    'The selected answer is a section
+                    Dim SelectedSection As JProperty = SettingsToken.ToList(AnswerInt - 1)
+                    Wdbg(DebugLevel.I, "Opening section {0}...", SelectedSection.Name)
+                    OpenSection(SelectedSection.Name, SettingsToken)
+                ElseIf AnswerInt = MaxSections + 1 Then
+                    'The selected answer is "Find a Setting"
+                    VariableFinder(SettingsToken)
+                ElseIf AnswerInt = MaxSections + 2 Then
+                    'The selected answer is "Save Settings"
+                    Wdbg(DebugLevel.I, "Saving settings...")
+                    Try
+                        CreateConfig()
+                        SaveCustomSaverSettings()
+                    Catch ex As Exception
+                        Write(ex.Message, True, GetConsoleColor(ColTypes.Error))
+                        WStkTrc(ex)
+                        Console.ReadKey()
+                    End Try
+                ElseIf AnswerInt = MaxSections + 3 Then
+                    'The selected answer is "Save Settings As"
+                    Write(DoTranslation("Where do you want to save the current kernel settings?"), True, ColTypes.Question)
+                    Dim Location As String = NeutralizePath(ReadLine())
+                    If Not FileExists(Location) Then
                         Try
-                            CreateConfig()
-                            SaveCustomSaverSettings()
+                            CreateConfig(Location)
                         Catch ex As Exception
                             Write(ex.Message, True, GetConsoleColor(ColTypes.Error))
                             WStkTrc(ex)
                             Console.ReadKey()
                         End Try
-                    ElseIf AnswerInt = MaxSections + 3 Then
-                        'The selected answer is "Save Settings As"
-                        Write(DoTranslation("Where do you want to save the current kernel settings?"), True, ColTypes.Question)
-                        Dim Location As String = NeutralizePath(ReadLine())
-                        If Not FileExists(Location) Then
-                            Try
-                                CreateConfig(Location)
-                            Catch ex As Exception
-                                Write(ex.Message, True, GetConsoleColor(ColTypes.Error))
-                                WStkTrc(ex)
-                                Console.ReadKey()
-                            End Try
-                        Else
-                            Write(DoTranslation("Can't save kernel settings on top of existing file."), True, GetConsoleColor(ColTypes.Error))
-                            Console.ReadKey()
-                        End If
-                    ElseIf AnswerInt = MaxSections + 4 Then
-                        'The selected answer is "Load Settings From"
-                        Write(DoTranslation("Where do you want to load the current kernel settings from?"), True, ColTypes.Question)
-                        Dim Location As String = NeutralizePath(ReadLine())
-                        If FileExists(Location) Then
-                            Try
-                                ReadConfig(Location)
-                                CreateConfig()
-                            Catch ex As Exception
-                                Write(ex.Message, True, GetConsoleColor(ColTypes.Error))
-                                WStkTrc(ex)
-                                Console.ReadKey()
-                            End Try
-                        Else
-                            Write(DoTranslation("File not found."), True, GetConsoleColor(ColTypes.Error))
-                            Console.ReadKey()
-                        End If
-                    ElseIf AnswerInt = MaxSections + 5 Then
-                        'The selected answer is "Exit"
-                        Wdbg(DebugLevel.W, "Exiting...")
-                        PromptFinished = True
-                        Console.Clear()
                     Else
-                        'Invalid selection
-                        Wdbg(DebugLevel.W, "Option is not valid. Returning...")
-                        Write(DoTranslation("Specified option {0} is invalid."), True, color:=GetConsoleColor(ColTypes.Error), AnswerInt)
-                        Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
+                        Write(DoTranslation("Can't save kernel settings on top of existing file."), True, GetConsoleColor(ColTypes.Error))
                         Console.ReadKey()
                     End If
+                ElseIf AnswerInt = MaxSections + 4 Then
+                    'The selected answer is "Load Settings From"
+                    Write(DoTranslation("Where do you want to load the current kernel settings from?"), True, ColTypes.Question)
+                    Dim Location As String = NeutralizePath(ReadLine())
+                    If FileExists(Location) Then
+                        Try
+                            ReadConfig(Location)
+                            CreateConfig()
+                        Catch ex As Exception
+                            Write(ex.Message, True, GetConsoleColor(ColTypes.Error))
+                            WStkTrc(ex)
+                            Console.ReadKey()
+                        End Try
+                    Else
+                        Write(DoTranslation("File not found."), True, GetConsoleColor(ColTypes.Error))
+                        Console.ReadKey()
+                    End If
+                ElseIf AnswerInt = MaxSections + 5 Then
+                    'The selected answer is "Exit"
+                    Wdbg(DebugLevel.W, "Exiting...")
+                    PromptFinished = True
+                    Console.Clear()
                 Else
-                    Wdbg(DebugLevel.W, "Answer is not numeric.")
-                    Write(DoTranslation("The answer must be numeric."), True, GetConsoleColor(ColTypes.Error))
+                    'Invalid selection
+                    Wdbg(DebugLevel.W, "Option is not valid. Returning...")
+                    Write(DoTranslation("Specified option {0} is invalid."), True, color:=GetConsoleColor(ColTypes.Error), AnswerInt)
                     Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
                     Console.ReadKey()
                 End If
@@ -156,7 +147,6 @@ Namespace Misc.Configuration
             Try
                 'General variables
                 Dim SectionFinished As Boolean
-                Dim AnswerString As String
                 Dim AnswerInt As Integer
                 Dim SectionTokenGeneral As JToken = SettingsToken(Section)
                 Dim SectionToken As JToken = SectionTokenGeneral("Keys")
@@ -164,9 +154,9 @@ Namespace Misc.Configuration
                 Dim MaxOptions As Integer = SectionToken.Count
 
                 While Not SectionFinished
-                    Console.Clear()
-                    WriteSeparator(DoTranslation(Section + " Settings..."), True)
-                    Write(NewLine + DoTranslation(SectionDescription) + NewLine, True, GetConsoleColor(ColTypes.Neutral))
+
+                    Dim inputs As New List(Of InputChoiceInfo)
+                    Dim inputsAlt As New List(Of InputChoiceInfo)
 
                     'List options
                     For SectionIndex As Integer = 0 To MaxOptions - 1
@@ -179,7 +169,7 @@ Namespace Misc.Configuration
                         'Print the option
                         If VariableType = SettingsKeyType.SMaskedString Then
                             'Don't print the default value! We don't want to reveal passwords.
-                            Write(" {0}) " + DoTranslation(Setting("Name")), True, color:=GetConsoleColor(ColTypes.Option), SectionIndex + 1)
+                            inputs.Add(New InputChoiceInfo($"{SectionIndex + 1}", DoTranslation(Setting("Name"))))
                         Else
                             'Determine how to get the current value
                             If VariableProperty Is Nothing Then
@@ -199,47 +189,38 @@ Namespace Misc.Configuration
                                 'Get the property value from variable
                                 CurrentValue = GetPropertyValueInVariable(Variable, VariableProperty)
                             End If
-                            Write(" {0}) " + DoTranslation(Setting("Name")) + " [{1}]", True, color:=GetConsoleColor(ColTypes.Option), SectionIndex + 1, CurrentValue)
+                            inputs.Add(New InputChoiceInfo($"{SectionIndex + 1}", DoTranslation(Setting("Name")) + $" [{CurrentValue}]"))
                         End If
                     Next
-                    Console.WriteLine()
+
+                    'Check to see if we need to preview the screensaver
                     If CurrentSettingsType = SettingsType.Screensaver Then
-                        Write(" {0}) " + DoTranslation("Preview screensaver"), True, color:=GetConsoleColor(ColTypes.BackOption), MaxOptions + 1)
-                        Write(" {0}) " + DoTranslation("Go Back...") + NewLine, True, color:=GetConsoleColor(ColTypes.BackOption), MaxOptions + 2)
+                        inputsAlt.Add(New InputChoiceInfo($"{MaxOptions + 1}", DoTranslation("Preview screensaver")))
+                        inputsAlt.Add(New InputChoiceInfo($"{MaxOptions + 2}", DoTranslation("Go Back...")))
                     Else
-                        Write(" {0}) " + DoTranslation("Go Back...") + NewLine, True, color:=GetConsoleColor(ColTypes.BackOption), MaxOptions + 1)
+                        inputsAlt.Add(New InputChoiceInfo($"{MaxOptions + 1}", DoTranslation("Go Back...")))
                     End If
                     Wdbg(DebugLevel.W, "Section {0} has {1} selections.", Section, MaxOptions)
 
-                    'Prompt user and check for input
-                    Write("> ", False, GetConsoleColor(ColTypes.Input))
-                    AnswerString = ReadLine()
-                    Wdbg(DebugLevel.I, "User answered {0}", AnswerString)
-                    Console.WriteLine()
+                    'Prompt for selection
+                    AnswerInt = SelectionStyle.PromptSelection(TermSeparator.RenderSeparator(DoTranslation(Section + " Settings..."), True) + NewLine + NewLine + DoTranslation(SectionDescription), inputs, inputsAlt)
 
-                    Wdbg(DebugLevel.I, "Is the answer numeric? {0}", IsStringNumeric(AnswerString))
-                    If Integer.TryParse(AnswerString, AnswerInt) Then
-                        Wdbg(DebugLevel.I, "Succeeded. Checking the answer if it points to the right direction...")
-                        If AnswerInt >= 1 And AnswerInt <= MaxOptions Then
-                            Wdbg(DebugLevel.I, "Opening key {0} from section {1}...", AnswerInt, Section)
-                            OpenKey(Section, AnswerInt, SettingsToken)
-                        ElseIf AnswerInt = MaxOptions + 1 And CurrentSettingsType = SettingsType.Screensaver Then
-                            'Preview screensaver
-                            Wdbg(DebugLevel.I, "User requested screensaver preview.")
-                            ShowSavers(Section)
-                        ElseIf AnswerInt = MaxOptions + 1 Or (AnswerInt = MaxOptions + 2 And CurrentSettingsType = SettingsType.Screensaver) Then
-                            'Go Back...
-                            Wdbg(DebugLevel.I, "User requested exit. Returning...")
-                            SectionFinished = True
-                        Else
-                            Wdbg(DebugLevel.W, "Option is not valid. Returning...")
-                            Write(DoTranslation("Specified option {0} is invalid."), True, color:=GetConsoleColor(ColTypes.Error), AnswerInt)
-                            Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                            Console.ReadKey()
-                        End If
+                    'Check for answer
+                    Wdbg(DebugLevel.I, "Succeeded. Checking the answer if it points to the right direction...")
+                    If AnswerInt >= 1 And AnswerInt <= MaxOptions Then
+                        Wdbg(DebugLevel.I, "Opening key {0} from section {1}...", AnswerInt, Section)
+                        OpenKey(Section, AnswerInt, SettingsToken)
+                    ElseIf AnswerInt = MaxOptions + 1 And CurrentSettingsType = SettingsType.Screensaver Then
+                        'Preview screensaver
+                        Wdbg(DebugLevel.I, "User requested screensaver preview.")
+                        ShowSavers(Section)
+                    ElseIf AnswerInt = MaxOptions + 1 Or (AnswerInt = MaxOptions + 2 And CurrentSettingsType = SettingsType.Screensaver) Then
+                        'Go Back...
+                        Wdbg(DebugLevel.I, "User requested exit. Returning...")
+                        SectionFinished = True
                     Else
-                        Wdbg(DebugLevel.W, "Answer is not numeric.")
-                        Write(DoTranslation("The answer must be numeric."), True, GetConsoleColor(ColTypes.Error))
+                        Wdbg(DebugLevel.W, "Option is not valid. Returning...")
+                        Write(DoTranslation("Specified option {0} is invalid."), True, color:=GetConsoleColor(ColTypes.Error), AnswerInt)
                         Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
                         Console.ReadKey()
                     End If
@@ -735,24 +716,28 @@ Namespace Misc.Configuration
 
             'Write the settings
             If Not Results.Count = 0 Then
-                WriteList(Results)
+                'Populate answers
+                Dim inputs As New List(Of InputChoiceInfo)
+                Dim inputsAlt As New List(Of InputChoiceInfo) From
+                {
+                    New InputChoiceInfo($"{Results.Count + 1}", DoTranslation("Go Back..."))
+                }
+                For resultIndex As Integer = 0 To Results.Count - 1
+                    Dim result As String = Results(resultIndex)
+                    inputs.Add(New InputChoiceInfo($"{resultIndex + 1}", result))
+                Next
 
-                'Prompt for the number of setting to go to
-                Write(DoTranslation("Write the number of the setting to go to. Any other character means go back."), True, GetConsoleColor(ColTypes.Neutral))
-                Wdbg(DebugLevel.I, "Prompting user for writing...")
-                Write(">> ", False, GetConsoleColor(ColTypes.Input))
-                SettingsNumber = ReadLine()
+                'Prompt for selection
+                Dim AnswerInt As Integer = SelectionStyle.PromptSelection(TermSeparator.RenderSeparator(DoTranslation("Welcome to Settings!"), True) + NewLine + NewLine + DoTranslation("Select section:"), inputs, inputsAlt)
 
                 'Parse the input and go to setting
-                If IsStringNumeric(SettingsNumber) Then
-                    Dim ChosenSettingIndex As Integer = CInt(SettingsNumber) - 1
-                    Dim ChosenSetting As String = Results(ChosenSettingIndex)
-                    Dim SectionIndex As Integer = CInt(ChosenSetting.AsSpan.Slice(1, ChosenSetting.IndexOf("/") - 1).ToString) - 1
-                    Dim KeyNumber As Integer = ChosenSetting.AsSpan.Slice(ChosenSetting.IndexOf("/") + 1, ChosenSetting.IndexOf("]") - (ChosenSetting.IndexOf("/") + 1)).ToString
-                    Dim Section As JProperty = SettingsToken.ToList()(SectionIndex)
-                    Dim SectionName As String = Section.Name
-                    OpenKey(SectionName, KeyNumber, SettingsToken)
-                End If
+                Dim ChosenSettingIndex As Integer = AnswerInt - 1
+                Dim ChosenSetting As String = Results(ChosenSettingIndex)
+                Dim SectionIndex As Integer = CInt(ChosenSetting.AsSpan.Slice(1, ChosenSetting.IndexOf("/") - 1).ToString) - 1
+                Dim KeyNumber As Integer = ChosenSetting.AsSpan.Slice(ChosenSetting.IndexOf("/") + 1, ChosenSetting.IndexOf("]") - (ChosenSetting.IndexOf("/") + 1)).ToString
+                Dim Section As JProperty = SettingsToken.ToList()(SectionIndex)
+                Dim SectionName As String = Section.Name
+                OpenKey(SectionName, KeyNumber, SettingsToken)
             Else
                 Write(DoTranslation("Nothing is found. Make sure that you've written the setting correctly."), True, GetConsoleColor(ColTypes.Error))
                 Console.ReadKey()
