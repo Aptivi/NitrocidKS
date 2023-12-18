@@ -702,7 +702,6 @@ Namespace Misc.Configuration
         ''' </summary>
         Sub VariableFinder(SettingsToken As JToken)
             Dim SearchFor As String
-            Dim SettingsNumber As String
             Dim Results As List(Of String)
 
             'Prompt the user

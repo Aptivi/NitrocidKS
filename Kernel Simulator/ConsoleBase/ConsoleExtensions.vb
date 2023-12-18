@@ -16,8 +16,8 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports KS.Misc.Reflection
-Imports System.Text.RegularExpressions
+Imports Terminaux.Base
+Imports TermConsoleExtensions = Terminaux.Base.ConsoleExtensions
 
 Namespace ConsoleBase
     Public Module ConsoleExtensions
@@ -26,17 +26,14 @@ Namespace ConsoleBase
         ''' Clears the console buffer, but keeps the current cursor position
         ''' </summary>
         Public Sub ClearKeepPosition()
-            Dim Left As Integer = Console.CursorLeft
-            Dim Top As Integer = Console.CursorTop
-            Console.Clear()
-            Console.SetCursorPosition(Left, Top)
+            TermConsoleExtensions.ClearKeepPosition()
         End Sub
 
         ''' <summary>
         ''' Clears the line to the right
         ''' </summary>
         Public Sub ClearLineToRight()
-            Console.Write(GetEsc() + "[0K")
+            TermConsoleExtensions.ClearLineToRight()
         End Sub
 
         ''' <summary>
@@ -47,7 +44,7 @@ Namespace ConsoleBase
         ''' <param name="WidthOffset">The console window width offset. It's usually a multiple of 2.</param>
         ''' <returns>How many times to repeat the character</returns>
         Public Function PercentRepeat(CurrentNumber As Integer, MaximumNumber As Integer, WidthOffset As Integer) As Integer
-            Return CurrentNumber * 100 / MaximumNumber * ((Console.WindowWidth - WidthOffset) * 0.01)
+            Return TermConsoleExtensions.PercentRepeat(CurrentNumber, MaximumNumber, WidthOffset)
         End Function
 
         ''' <summary>
@@ -58,7 +55,7 @@ Namespace ConsoleBase
         ''' <param name="TargetWidth">The target width</param>
         ''' <returns>How many times to repeat the character</returns>
         Public Function PercentRepeatTargeted(CurrentNumber As Integer, MaximumNumber As Integer, TargetWidth As Integer) As Integer
-            Return CurrentNumber * 100 / MaximumNumber * (TargetWidth * 0.01)
+            Return TermConsoleExtensions.PercentRepeatTargeted(CurrentNumber, MaximumNumber, TargetWidth)
         End Function
 
         ''' <summary>
@@ -67,9 +64,7 @@ Namespace ConsoleBase
         ''' <param name="Text">The text that contains the VT sequences</param>
         ''' <returns>The text that doesn't contain the VT sequences</returns>
         Public Function FilterVTSequences(Text As String) As String
-            'Filter all sequences
-            Text = Regex.Replace(Text, "(\x9D|\x1B\]).+(\x07|\x9c)|\x1b [F-Nf-n]|\x1b#[3-8]|\x1b%[@Gg]|\x1b[()*+][A-Za-z0-9=`<>]|\x1b[()*+]\""[>4?]|\x1b[()*+]%[0-6=]|\x1b[()*+]&[4-5]|\x1b[-.\/][ABFHLM]|\x1b[6-9Fcl-o=>\|\}~]|(\x9f|\x1b_).+\x9c|(\x90|\x1bP).+\x9c|(\x9B|\x1B\[)[0-?]*[ -\/]*[@-~]|(\x9e|\x1b\^).+\x9c|\x1b[DEHMNOVWXYZ78]", "")
-            Return Text
+            Return TermConsoleExtensions.FilterVTSequences(Text)
         End Function
 
         ''' <summary>
@@ -79,60 +74,27 @@ Namespace ConsoleBase
         ''' <param name="Left">The filtered left position</param>
         ''' <param name="Top">The filtered top position</param>
         Public Sub GetFilteredPositions(Text As String, ByRef Left As Integer, ByRef Top As Integer, ParamArray Vars() As Object)
-            'Filter all text from the VT escape sequences
-            Text = FilterVTSequences(Text)
-
-            'Seek through filtered text (make it seem like it came from Linux by removing CR (\r)), return to the old position, and return the filtered positions
-            Text = FormatString(Text, Vars)
-            Text = Text.Replace(Convert.ToString(Convert.ToChar(13)), "")
-            Dim LeftSeekPosition As Integer = Console.CursorLeft
-            Dim TopSeekPosition As Integer = Console.CursorTop
-
-            'Set the correct old position
-            For i As Integer = 1 To Text.Length
-                If Text(i - 1) = Convert.ToChar(10) And TopSeekPosition < Console.BufferHeight - 1 Then
-                    TopSeekPosition += 1
-                    LeftSeekPosition = 0
-                ElseIf Text(i - 1) <> Convert.ToChar(10) Then
-                    'Simulate seeking through text
-                    LeftSeekPosition += 1
-                    If LeftSeekPosition >= Console.WindowWidth Then
-                        'We've reached end of line
-                        LeftSeekPosition = 0
-
-                        'Get down by one line
-                        TopSeekPosition += 1
-                        If TopSeekPosition > Console.BufferHeight - 1 Then
-                            'We're at the end of buffer! Decrement by one.
-                            TopSeekPosition -= 1
-                        End If
-                    End If
-                End If
-            Next
-            Left = LeftSeekPosition
-            Top = TopSeekPosition
+            Dim pos As (Integer, Integer) = TermConsoleExtensions.GetFilteredPositions(Text, False, Vars)
+            Left = pos.Item1
+            Top = pos.Item2
         End Sub
 
         ''' <summary>
         ''' Polls $TERM_PROGRAM to get terminal emulator
         ''' </summary>
         Public Function GetTerminalEmulator() As String
-            Return If(Environment.GetEnvironmentVariable("TERM_PROGRAM"), "")
+            Return ConsolePlatform.GetTerminalEmulator()
         End Function
 
         ''' <summary>
         ''' Polls $TERM to get terminal type (vt100, dumb, ...)
         ''' </summary>
         Public Function GetTerminalType() As String
-            Return If(Environment.GetEnvironmentVariable("TERM"), "")
+            Return ConsolePlatform.GetTerminalType()
         End Function
 
         Public Sub SetTitle(Text As String)
-            Dim BellChar As Char = Convert.ToChar(7)
-            Dim EscapeChar As Char = Convert.ToChar(27)
-            Dim Sequence As String = $"{EscapeChar}]0;{Text}{BellChar}"
-            Console.Title = Text
-            WritePlain(Sequence, False)
+            TermConsoleExtensions.SetTitle(Text)
         End Sub
 
     End Module
