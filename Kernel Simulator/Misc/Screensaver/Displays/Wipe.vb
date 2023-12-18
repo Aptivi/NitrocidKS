@@ -225,8 +225,7 @@ Namespace Misc.Screensaver.Displays
             End If
 
             'Set max height according to platform
-            Dim MaxWindowHeight As Integer = ConsoleWrapper.WindowHeight
-            If IsOnUnix() Then MaxWindowHeight -= 1
+            Dim MaxWindowHeight As Integer = ConsoleWrapper.WindowHeight - 1
             WdbgConditional(ScreensaverDebug, DebugLevel.I, "Max height {0}", MaxWindowHeight)
 
             'Print a space {Column} times until the entire screen is wiped.
