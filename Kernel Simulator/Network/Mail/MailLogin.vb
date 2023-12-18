@@ -20,8 +20,9 @@ Imports MailKit
 Imports MailKit.Net.Imap
 Imports MailKit.Net.Smtp
 Imports MimeKit.Cryptography
-Imports Addresstigator
 Imports KS.Network.Mail.PGP
+Imports Textify.Online.MailAddress
+Imports Textify.Online.MailAddress.IspInfo
 
 Namespace Network.Mail
     Module MailLogin
@@ -153,7 +154,7 @@ Namespace Network.Mail
         ''' <returns>Server address. Otherwise, null.</returns>
         Public Function ServerDetect(Address As String, Type As ServerType) As String
             'Get the mail server dynamically
-            Dim DynamicConfiguration As ClientConfig = Tools.GetIspConfig(Address)
+            Dim DynamicConfiguration As ClientConfig = IspTools.GetIspConfig(Address)
             Dim ReturnedMailAddress As String = ""
             Dim ReturnedMailPort As Integer
             Select Case Type

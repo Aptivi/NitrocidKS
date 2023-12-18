@@ -16,8 +16,7 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports Dictify.Manager.DictionaryManager
-Imports Dictify.Models
+Imports Textify.Online.EnglishDictionary
 
 Namespace Shell.Commands
     Class DictCommand
@@ -25,7 +24,7 @@ Namespace Shell.Commands
         Implements ICommand
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
-            Dim Words As DictionaryWord() = GetWordInfo(ListArgsOnly(0))
+            Dim Words As DictionaryWord() = DictionaryManager.GetWordInfo(ListArgsOnly(0))
 
             'Iterate for each word
             For Each Word As DictionaryWord In Words

@@ -16,7 +16,7 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports Namer.NameGenerator
+Imports Textify.NameGen
 
 Namespace Shell.Commands
     Class GenNameCommand
@@ -37,8 +37,8 @@ Namespace Shell.Commands
             If ListArgsOnly.Length >= 5 Then SurnameSuffix = ListArgsOnly(4)
 
             'Generate n names
-            PopulateNames()
-            NamesList = GenerateNames(NamesCount, NamePrefix, NameSuffix, SurnamePrefix, SurnameSuffix)
+            NameGenerator.PopulateNames()
+            NamesList = NameGenerator.GenerateNames(NamesCount, NamePrefix, NameSuffix, SurnamePrefix, SurnameSuffix)
             WriteList(NamesList)
         End Sub
 

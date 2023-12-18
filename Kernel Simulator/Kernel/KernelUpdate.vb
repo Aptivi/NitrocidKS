@@ -17,7 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports Newtonsoft.Json.Linq
-Imports SemanVer.Instance
+Imports Textify.Versioning
 
 Namespace Kernel
     Public Class KernelUpdate

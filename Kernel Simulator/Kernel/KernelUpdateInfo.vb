@@ -16,7 +16,7 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports SemanVer.Instance
+Imports Textify.Versioning
 
 Namespace Kernel
     Public Class KernelUpdateInfo

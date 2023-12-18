@@ -16,7 +16,7 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports Namer.NameGenerator
+Imports Textify.NameGen
 
 Namespace Misc.Games
     Public Module LoveHateRespond
@@ -83,9 +83,9 @@ Namespace Misc.Games
 
             'Download the names list
             Write(DoTranslation("Downloading names..."), True, GetConsoleColor(ColTypes.Progress))
-            PopulateNames()
+            NameGenerator.PopulateNames()
             For NameNum As Integer = 1 To LoveOrHateUsersCount
-                Dim GeneratedName As String = GenerateNames()(0)
+                Dim GeneratedName As String = NameGenerator.GenerateNames()(0)
                 Users.Add($"{GeneratedName}", RandomDriver.Next(2))
             Next
 

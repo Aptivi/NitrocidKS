@@ -17,7 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports KS.TimeDate
-Imports Namer.NameGenerator
+Imports Textify.NameGen
 
 Namespace Misc.Screensaver.Displays
     Public Module PersonLookupSettings
@@ -120,7 +120,7 @@ Namespace Misc.Screensaver.Displays
         Public Overrides Sub ScreensaverPreparation() Implements IScreensaver.ScreensaverPreparation
             'Variable preparations
             RandomDriver = New Random
-            PopulateNames()
+            NameGenerator.PopulateNames()
         End Sub
 
         Public Overrides Sub ScreensaverLogic() Implements IScreensaver.ScreensaverLogic
@@ -131,7 +131,7 @@ Namespace Misc.Screensaver.Displays
 
             'Generate names
             Dim NumberOfPeople As Integer = RandomDriver.Next(PersonLookupMinimumNames, PersonLookupMaximumNames)
-            Dim NamesToLookup As String() = GenerateNames(NumberOfPeople)
+            Dim NamesToLookup As String() = NameGenerator.GenerateNames(NumberOfPeople)
 
             'Loop through names
             For Each GeneratedName As String In NamesToLookup

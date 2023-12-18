@@ -24,7 +24,7 @@ Imports SharpCompress.Archives
 Imports SharpCompress.Archives.Rar
 Imports SharpCompress.Common
 Imports System.Reflection
-Imports SemanVer.Instance
+Imports Textify.Versioning
 
 Namespace Shell.Commands
     Class RetroKSCommand

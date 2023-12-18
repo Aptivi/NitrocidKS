@@ -111,9 +111,7 @@
 
   <!-- KS Dependencies Information -->
   <ItemGroup>
-    <PackageReference Include="Addresstigator" Version="0.1.0.5" />
     <PackageReference Include="Crc32.NET" Version="1.2.0" />
-    <PackageReference Include="Dictify" Version="1.1.2" />
     <PackageReference Include="Figgle" Version="0.5.1" />
     <PackageReference Include="FluentFTP" Version="48.0.3" />
     <PackageReference Include="GRILO.Boot" Version="0.1.0.3" />
@@ -122,17 +120,16 @@
     <PackageReference Include="MailKit" Version="4.3.0" />
     <PackageReference Include="ManagedWeatherMap" Version="1.2.2" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
-    <PackageReference Include="Namer" Version="1.3.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="NuGet.Build.Tasks.Pack" Version="6.8.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="SemanVer" Version="1.1.1" />
     <PackageReference Include="SharpCompress" Version="0.34.2" />
     <PackageReference Include="SSH.NET" Version="2023.0.0" />
     <PackageReference Include="StringMath" Version="4.1.0" />
     <PackageReference Include="Terminaux" Version="2.0.2" />
+    <PackageReference Include="Textify.Online" Version="1.1.0" />
     <PackageReference Include="UnitsNet" Version="5.38.2" />
   </ItemGroup>
   <!-- KS Dependencies Information End -->
