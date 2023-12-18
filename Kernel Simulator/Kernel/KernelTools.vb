@@ -275,19 +275,19 @@ Namespace Kernel
                 Case PowerMode.Shutdown
                     KernelEventManager.RaisePreShutdown()
                     Write(DoTranslation("Shutting down..."), True, GetConsoleColor(ColTypes.Neutral))
-                    ResetEverything()
-                    KernelEventManager.RaisePostShutdown()
                     RebootRequested = True
                     LogoutRequested = True
                     KernelShutdown = True
+                    ResetEverything()
+                    KernelEventManager.RaisePostShutdown()
                 Case PowerMode.Reboot, PowerMode.RebootSafe
                     KernelEventManager.RaisePreReboot()
                     Write(DoTranslation("Rebooting..."), True, GetConsoleColor(ColTypes.Neutral))
+                    RebootRequested = True
+                    LogoutRequested = True
                     ResetEverything()
                     KernelEventManager.RaisePostReboot()
                     ConsoleWrapper.Clear()
-                    RebootRequested = True
-                    LogoutRequested = True
                 Case PowerMode.RemoteShutdown
                     SendCommand("<Request:Shutdown>(" + IP + ")", IP, Port)
                 Case PowerMode.RemoteRestart
