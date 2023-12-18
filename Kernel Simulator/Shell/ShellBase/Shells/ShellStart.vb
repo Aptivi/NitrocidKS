@@ -116,6 +116,8 @@ Namespace Shell.ShellBase.Shells
                     Return New HexShell()
                 Case ShellType.RARShell
                     Return New RarShell()
+                Case Else
+                    Return New UESHShell()
             End Select
         End Function
 

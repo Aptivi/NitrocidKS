@@ -142,7 +142,7 @@ Namespace Network.RSS
         ''' <param name="FeedProperty">Feed property name</param>
         ''' <param name="FeedNode">Feed XML node</param>
         ''' <param name="FeedType">Feed type</param>
-        Function GetFeedProperty(FeedProperty As String, FeedNode As XmlNodeList, FeedType As RSSFeedType) As Object
+        Function GetFeedProperty(FeedProperty As String, FeedNode As XmlNodeList, FeedType As RSSFeedType) As String
             Select Case FeedType
                 Case RSSFeedType.RSS2
                     For Each Node As XmlNode In FeedNode(0) '<channel>
@@ -169,6 +169,7 @@ Namespace Network.RSS
                 Case Else
                     Throw New Exceptions.InvalidFeedTypeException(DoTranslation("Invalid RSS feed type."))
             End Select
+            Return ""
         End Function
 
         ''' <summary>

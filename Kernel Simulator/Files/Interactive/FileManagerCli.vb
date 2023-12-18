@@ -182,9 +182,6 @@ Namespace Files.Interactive
             ' Don't do anything if we haven't been provided anything.
             If currentFileSystemInfo Is Nothing Then Return
 
-            ' .NET managed info
-            Dim asmName As AssemblyName = Nothing
-
             ' Render the final information string
             Try
                 Dim finalInfoRendered = New StringBuilder()

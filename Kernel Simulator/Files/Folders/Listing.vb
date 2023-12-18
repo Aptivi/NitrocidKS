@@ -108,6 +108,8 @@ Namespace Files.Folders
                     Return FileSystemEntry.LastAccessTime
                 Case FilesystemSortOptions.LastWriteTime
                     Return FileSystemEntry.LastWriteTime
+                Case Else
+                    Return FileSystemEntry.FullName
             End Select
         End Function
 

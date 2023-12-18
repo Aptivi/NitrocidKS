@@ -32,6 +32,7 @@ Namespace Network.RemoteDebug.Commands
                                             If Device.ClientIP = DeviceAddress Then
                                                 Return Device
                                             End If
+                                            Return Nothing
                                         End Function)(0).ClientName = ListArgs(0)
                     SocketStreamWriter.WriteLine(DoTranslation("Hi, {0}!").FormatString(ListArgs(0)))
                 Else

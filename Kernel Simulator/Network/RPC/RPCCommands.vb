@@ -188,17 +188,6 @@ Namespace Network.RPC
             End While
         End Sub
 
-        Private Sub HandleExec(value As String)
-            Dim Command = value.Replace("ExecConfirm, ", "").Replace(NewLine, "")
-            If LoggedIn Then
-                Wdbg(DebugLevel.I, "Exec confirmed from remote access.")
-                WritePlain("", True)
-                GetLine(Command)
-            Else
-                Wdbg(DebugLevel.W, "Tried to exec from remote access while not logged in. Dropping packet...")
-            End If
-        End Sub
-
         Private Sub HandleAcknowledge(value As String)
             Dim IPAddr = value.Replace("AckConfirm, ", "").Replace(NewLine, "")
             Wdbg(DebugLevel.I, "{0} says ""Hello.""", IPAddr)

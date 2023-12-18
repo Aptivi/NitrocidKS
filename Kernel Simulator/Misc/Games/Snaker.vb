@@ -307,13 +307,10 @@ Namespace Misc.Games
                 Dim BlueColorNum As Integer = RandomDriver.Next(SnakerMinimumBlueColorLevel, SnakerMaximumBlueColorLevel)
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum)
                 Return New Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}")
-            ElseIf Snaker255Colors Then
+            Else
                 Dim ColorNum As Integer = RandomDriver.Next(SnakerMinimumColorLevel, SnakerMaximumColorLevel)
                 WdbgConditional(ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum)
                 Return New Color(ColorNum)
-            Else
-                Console.BackgroundColor = colors(RandomDriver.Next(SnakerMinimumColorLevel, SnakerMaximumColorLevel))
-                WdbgConditional(ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.BackgroundColor)
             End If
         End Function
 

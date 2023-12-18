@@ -476,7 +476,9 @@ Namespace Modifications
                 Case ShellType.HexShell
                     Return HexEdit_ModCommands
                 Case ShellType.RARShell
-                    Return RARShell_ModCommands
+                    Return RarShell_ModCommands
+                Case Else
+                    Return ModCommands
             End Select
         End Function
 
