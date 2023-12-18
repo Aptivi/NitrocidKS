@@ -4,6 +4,8 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Aptivi/NitrocidKS?color=purple&label=size) [![GitHub All Releases](https://img.shields.io/github/downloads/Aptivi/NitrocidKS/total?color=purple&label=d/l)](https://github.com/Aptivi/NitrocidKS/releases) [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Aptivi/NitrocidKS?color=purple&include_prereleases&label=github)](https://github.com/Aptivi/NitrocidKS/releases/latest) [![Chocolatey Version (including pre-releases)](https://img.shields.io/chocolatey/v/ks?color=purple&include_prereleases)](https://chocolatey.org/packages/KS/) [![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/KS?color=purple)](https://www.nuget.org/packages/KS/)
 
+**WARNING: This version is no longer maintained. Please use 0.0.24.x or higher.**
+
 Kernel Simulator simulates the future of our planned kernel that's coming as soon as it's finished. It consists of the kernel, the built-in shell known as UESH, and the built-in applications.
 
 Not only it has some basic commands, but it also provides script support, network support, and tons of awesome things.
