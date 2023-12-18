@@ -115,8 +115,28 @@ Namespace Misc.Threading
         ''' Waits for the kernel thread to finish
         ''' </summary>
         Public Sub Wait()
-            Wdbg(DebugLevel.I, "Waiting for kernel thread {0} with ID {1}", BaseThread.Name, BaseThread.ManagedThreadId)
-            BaseThread.Join()
+            If Not BaseThread.IsAlive Then Return
+
+            Try
+                Wdbg(DebugLevel.I, "Waiting for kernel thread {0} with ID {1}", BaseThread.Name, BaseThread.ManagedThreadId)
+                BaseThread.Join()
+            Catch ex As Exception When (ex.GetType().Name <> NameOf(ThreadInterruptedException) AndAlso ex.GetType().Name <> NameOf(ThreadStateException))
+                Wdbg(DebugLevel.I, "Can't wait for kernel thread: {0}", ex.Message)
+            End Try
+        End Sub
+
+        ''' <summary>
+        ''' Waits for the kernel thread to finish
+        ''' </summary>
+        Public Sub Wait(Time As Long)
+            If Not BaseThread.IsAlive Then Return
+
+            Try
+                Wdbg(DebugLevel.I, "Waiting for kernel thread {0} with ID {1} for {2} ms...", BaseThread.Name, BaseThread.ManagedThreadId, Time)
+                BaseThread.Join(Time)
+            Catch ex As Exception When (ex.GetType().Name <> NameOf(ThreadInterruptedException) AndAlso ex.GetType().Name <> NameOf(ThreadStateException))
+                Wdbg(DebugLevel.I, "Can't wait for kernel thread: {0}", ex.Message)
+            End Try
         End Sub
 
     End Class

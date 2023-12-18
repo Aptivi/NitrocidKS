@@ -44,13 +44,7 @@ Namespace Misc.Threading
         ''' <param name="Time">Time in milliseconds</param>
         ''' <param name="ThreadWork">The working thread</param>
         Public Sub SleepNoBlock(Time As Long, ThreadWork As Thread)
-            Dim WorkFinished As Boolean
-            Dim TimeCount As Long
-            Do Until WorkFinished Or TimeCount = Time
-                Thread.Sleep(1)
-                If Not ThreadWork.IsAlive Then WorkFinished = True
-                TimeCount += 1
-            Loop
+            ThreadWork.Join(Time)
         End Sub
 
         ''' <summary>
@@ -59,13 +53,7 @@ Namespace Misc.Threading
         ''' <param name="Time">Time in milliseconds</param>
         ''' <param name="ThreadWork">The working thread</param>
         Public Sub SleepNoBlock(Time As Long, ThreadWork As KernelThread)
-            Dim WorkFinished As Boolean
-            Dim TimeCount As Long
-            Do Until WorkFinished Or TimeCount = Time
-                Thread.Sleep(1)
-                If Not ThreadWork.IsAlive Then WorkFinished = True
-                TimeCount += 1
-            Loop
+            ThreadWork.Wait(Time)
         End Sub
 
         ''' <summary>
