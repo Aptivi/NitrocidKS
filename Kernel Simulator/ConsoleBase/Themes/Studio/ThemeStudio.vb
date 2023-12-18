@@ -314,13 +314,13 @@ Namespace ConsoleBase.Themes.Studio
                         Wdbg(DebugLevel.W, "Option is not valid. Returning...")
                         Write(DoTranslation("Specified option {0} is invalid."), True, color:=GetConsoleColor(ColTypes.Error), NumericResponse)
                         Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                        Console.ReadKey()
+                        DetectKeypress()
                     End If
                 Else
                     Wdbg(DebugLevel.W, "Answer is not numeric.")
                     Write(DoTranslation("The answer must be numeric."), True, GetConsoleColor(ColTypes.Error))
                     Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                    Console.ReadKey()
+                    DetectKeypress()
                 End If
             End While
 

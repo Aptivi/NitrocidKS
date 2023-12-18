@@ -35,7 +35,7 @@ Namespace Arguments.CommandLineArguments
 
             'Either start the kernel or exit it
             Write(DoTranslation("* Press any key to start the kernel or ESC to exit."), True, ColTypes.Tip)
-            If Console.ReadKey(True).Key = ConsoleKey.Escape Then
+            If DetectKeypress().Key = ConsoleKey.Escape Then
                 'Clear the console and reset the colors
                 Console.ResetColor()
                 Console.Clear()

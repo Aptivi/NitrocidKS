@@ -229,7 +229,7 @@ Namespace Network.FTP
                     Do Until Answer.ToLower = "y" Or Answer.ToLower = "n"
                         Write(DoTranslation("Are you sure that you want to connect?") + " (y/n) ", False, ColTypes.Question)
                         SetConsoleColor(InputColor)
-                        Answer = Console.ReadKey.KeyChar
+                        Answer = DetectKeypress().KeyChar
                         Console.WriteLine()
                         Wdbg(DebugLevel.I, $"Answer is {Answer}")
                         If Answer.ToLower = "y" Then

@@ -24,6 +24,7 @@ using System.Linq;
 using FluentFTP;
 using KS.ConsoleBase;
 using KS.ConsoleBase.Colors;
+using KS.ConsoleBase.Inputs;
 using KS.Files;
 using KS.Files.Querying;
 using KS.Login;
@@ -360,14 +361,14 @@ namespace KSConverter
                 // Print this message:
                 TextWriterColor.Write("- Successfully converted all settings to new format! Enjoy!", true, GetConsoleColor(ColTypes.Success));
                 TextWriterColor.Write("- Press any key to exit.", true, GetConsoleColor(ColTypes.Success));
-                Console.ReadKey(true);
+                Input.DetectKeypress();
             }
             catch (Exception ex)
             {
                 TextWriterColor.Write("- Error converting settings: {0}", true, GetConsoleColor(ColTypes.Error), ex.Message);
                 TextWriterColor.Write("- Press any key to exit. Stack trace below:", true, GetConsoleColor(ColTypes.Error));
                 TextWriterColor.Write(ex.StackTrace, true, GetConsoleColor(ColTypes.Neutral));
-                Console.ReadKey(true);
+				Input.DetectKeypress();
             }
         }
 

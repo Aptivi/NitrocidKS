@@ -80,7 +80,7 @@ Namespace Misc.Timers
 
             'Wait for a keypress
             While KeysKeypress <> ConsoleKey.Escape
-                KeysKeypress = Console.ReadKey(True).Key
+                KeysKeypress = DetectKeypress().Key
 
                 'Check for a keypress
                 Select Case KeysKeypress
@@ -101,7 +101,7 @@ Namespace Misc.Timers
                                 'Not numeric.
                                 WriteWhere(DoTranslation("Indicated timeout is not numeric."), 2, KeysTextTopPosition - 4, False, GetConsoleColor(ColTypes.Error))
                                 ClearLineToRight()
-                                Console.ReadKey()
+                                DetectKeypress()
                             Else
                                 'Update the remaining time
                                 Dim RemainingString As String = GetRemainingTimeFromNow(TimerInterval)

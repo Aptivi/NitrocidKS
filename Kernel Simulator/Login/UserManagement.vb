@@ -475,7 +475,7 @@ Namespace Login
                     Wdbg(DebugLevel.W, "Username is not valid. Returning...")
                     Write(DoTranslation("You must write your username."), True, GetConsoleColor(ColTypes.Error))
                     Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                    Console.ReadKey()
+                    DetectKeypress()
                 Else
                     [Step] += 1
                 End If
@@ -491,7 +491,7 @@ Namespace Login
                     Wdbg(DebugLevel.W, "Password is not valid. Returning...")
                     Write(DoTranslation("You must write your password."), True, GetConsoleColor(ColTypes.Error))
                     Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                    Console.ReadKey()
+                    DetectKeypress()
                 Else
                     [Step] += 1
                 End If
@@ -512,13 +512,13 @@ Namespace Login
                             Wdbg(DebugLevel.W, "Option is not valid. Returning...")
                             Write(DoTranslation("Specified option {0} is invalid."), True, color:=GetConsoleColor(ColTypes.Error), AnswerType)
                             Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                            Console.ReadKey()
+                            DetectKeypress()
                     End Select
                 Else
                     Wdbg(DebugLevel.W, "Answer is not numeric.")
                     Write(DoTranslation("The answer must be numeric."), True, GetConsoleColor(ColTypes.Error))
                     Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                    Console.ReadKey()
+                    DetectKeypress()
                 End If
             End While
 
@@ -533,7 +533,7 @@ Namespace Login
                         Wdbg(DebugLevel.W, "Password is not valid. Returning...")
                         Write(DoTranslation("You must write the administrator password."), True, GetConsoleColor(ColTypes.Error))
                         Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                        Console.ReadKey()
+                        DetectKeypress()
                     Else
                         [Step] += 1
                     End If

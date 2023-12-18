@@ -128,12 +128,12 @@ Namespace Kernel
                         Do While Console.WindowWidth < 80 Or Console.WindowHeight < 24
                             Write(DoTranslation("Your console is too small to run properly:") + " {0}x{1}", True, color:=GetConsoleColor(ColTypes.Warning), Console.WindowWidth, Console.WindowHeight)
                             Write(DoTranslation("To have a better experience, resize your console window while still being on this screen. Press any key to continue..."), True, GetConsoleColor(ColTypes.Warning))
-                            Console.ReadKey(True)
+                            DetectKeypress()
                         Loop
                     Else
                         Write(DoTranslation("Looks like you're bypassing the console size detection. Things may not work properly on small screens.") + NewLine +
                               DoTranslation("To have a better experience, resize your console window while still being on this screen. Press any key to continue..."), True, GetConsoleColor(ColTypes.Warning))
-                        Console.ReadKey(True)
+                        DetectKeypress()
                         CheckingForConsoleSize = True
                     End If
 
@@ -264,7 +264,7 @@ Namespace Kernel
             'If "No APM" is enabled, simply print the text
             If SimulateNoAPM Then
                 Console.WriteLine(DoTranslation("It's now safe to turn off your computer."))
-                Console.ReadKey(True)
+                DetectKeypress()
             End If
         End Sub
 

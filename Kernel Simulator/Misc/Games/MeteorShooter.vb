@@ -55,7 +55,7 @@ Namespace Misc.Games
             While Not GameEnded
                 If Console.KeyAvailable Then
                     'Read the key
-                    Keypress = Console.ReadKey(True)
+                    Keypress = DetectKeypress()
 
                     'Select command based on key value
                     Select Case Keypress.Key

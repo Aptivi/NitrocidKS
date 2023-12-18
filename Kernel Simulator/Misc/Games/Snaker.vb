@@ -196,7 +196,7 @@ Namespace Misc.Games
                     Else
                         'User pressed the arrow button to move the snake
                         If Console.KeyAvailable Then
-                            Dim Pressed As ConsoleKey = Console.ReadKey(True).Key
+                            Dim Pressed As ConsoleKey = DetectKeypress().Key
                             Select Case Pressed
                                 Case ConsoleKey.DownArrow
                                     If DidHorizontal Then

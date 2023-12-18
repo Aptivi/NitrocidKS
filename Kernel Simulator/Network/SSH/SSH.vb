@@ -72,13 +72,13 @@ Namespace Network.SSH
                             Wdbg(DebugLevel.W, "Option is not valid. Returning...")
                             Write(DoTranslation("Specified option {0} is invalid."), True, color:=GetConsoleColor(ColTypes.Error), Answer)
                             Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                            Console.ReadKey()
+                            DetectKeypress()
                     End Select
                 Else
                     Wdbg(DebugLevel.W, "Answer is not numeric.")
                     Write(DoTranslation("The answer must be numeric."), True, GetConsoleColor(ColTypes.Error))
                     Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                    Console.ReadKey()
+                    DetectKeypress()
                 End If
             End While
 

@@ -265,7 +265,7 @@ Namespace Network.RSS
                 Write(NewLine + NewLine + DoTranslation("This country has {0} news sources."), True, color:=GetConsoleColor(ColTypes.Neutral), FeedListJsonCountries(SelectedCountryIndex)("newSources").Count)
 
                 'Read and get response
-                Dim ConsoleResponse As ConsoleKeyInfo = Console.ReadKey(True)
+                Dim ConsoleResponse As ConsoleKeyInfo = DetectKeypress()
                 Wdbg(DebugLevel.I, "Keypress: {0}", ConsoleResponse.Key.ToString)
                 If ConsoleResponse.Key = ConsoleKey.LeftArrow Then
                     'Decrement country index by 1

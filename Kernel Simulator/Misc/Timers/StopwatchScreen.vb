@@ -64,7 +64,7 @@ Namespace Misc.Timers
 
             While KeysKeypress <> ConsoleKey.Escape
                 'Wait for a keypress
-                KeysKeypress = Console.ReadKey(True).Key
+                KeysKeypress = DetectKeypress().Key
 
                 'Check for a keypress
                 Select Case KeysKeypress

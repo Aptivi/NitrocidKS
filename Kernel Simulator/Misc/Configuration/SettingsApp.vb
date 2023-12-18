@@ -88,7 +88,7 @@ Namespace Misc.Configuration
                     Catch ex As Exception
                         Write(ex.Message, True, GetConsoleColor(ColTypes.Error))
                         WStkTrc(ex)
-                        Console.ReadKey()
+                        DetectKeypress()
                     End Try
                 ElseIf AnswerInt = MaxSections + 3 Then
                     'The selected answer is "Save Settings As"
@@ -100,11 +100,11 @@ Namespace Misc.Configuration
                         Catch ex As Exception
                             Write(ex.Message, True, GetConsoleColor(ColTypes.Error))
                             WStkTrc(ex)
-                            Console.ReadKey()
+                            DetectKeypress()
                         End Try
                     Else
                         Write(DoTranslation("Can't save kernel settings on top of existing file."), True, GetConsoleColor(ColTypes.Error))
-                        Console.ReadKey()
+                        DetectKeypress()
                     End If
                 ElseIf AnswerInt = MaxSections + 4 Then
                     'The selected answer is "Load Settings From"
@@ -117,11 +117,11 @@ Namespace Misc.Configuration
                         Catch ex As Exception
                             Write(ex.Message, True, GetConsoleColor(ColTypes.Error))
                             WStkTrc(ex)
-                            Console.ReadKey()
+                            DetectKeypress()
                         End Try
                     Else
                         Write(DoTranslation("File not found."), True, GetConsoleColor(ColTypes.Error))
-                        Console.ReadKey()
+                        DetectKeypress()
                     End If
                 ElseIf AnswerInt = MaxSections + 5 Then
                     'The selected answer is "Exit"
@@ -133,7 +133,7 @@ Namespace Misc.Configuration
                     Wdbg(DebugLevel.W, "Option is not valid. Returning...")
                     Write(DoTranslation("Specified option {0} is invalid."), True, color:=GetConsoleColor(ColTypes.Error), AnswerInt)
                     Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                    Console.ReadKey()
+                    DetectKeypress()
                 End If
             End While
         End Sub
@@ -222,7 +222,7 @@ Namespace Misc.Configuration
                         Wdbg(DebugLevel.W, "Option is not valid. Returning...")
                         Write(DoTranslation("Specified option {0} is invalid."), True, color:=GetConsoleColor(ColTypes.Error), AnswerInt)
                         Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                        Console.ReadKey()
+                        DetectKeypress()
                     End If
                 End While
             Catch ex As Exception
@@ -232,7 +232,7 @@ Namespace Misc.Configuration
                 Write(NewLine + "X) " + DoTranslation("Invalid section entered. Please go back."), True, GetConsoleColor(ColTypes.Error))
                 Write("X) " + DoTranslation("If you're sure that you've opened the right section, check this message out:"), True, GetConsoleColor(ColTypes.Error))
                 Write("X) " + ex.Message, True, GetConsoleColor(ColTypes.Error))
-                Console.ReadKey()
+                DetectKeypress()
             End Try
         End Sub
 
@@ -430,7 +430,7 @@ Namespace Misc.Configuration
                             If KeyType = SettingsKeyType.SMaskedString Then
                                 AnswerString = ReadLineNoInput()
                             ElseIf KeyType = SettingsKeyType.SChar Then
-                                AnswerString = Console.ReadKey().KeyChar
+                                AnswerString = DetectKeypress().KeyChar
                             ElseIf KeyType = SettingsKeyType.SIntSlider Then
                                 Dim PressedKey As ConsoleKey
                                 Dim CurrentValue As Integer = KeyDefaultValue
@@ -443,7 +443,7 @@ Namespace Misc.Configuration
                                     WriteWhere(DoTranslation("Current value:") + " {0} / {1} - {2}" + GetEsc() + "[0K", 5, Console.WindowHeight - 5, False, GetConsoleColor(ColTypes.Neutral), CurrentValue, IntSliderMinimumValue, IntSliderMaximumValue)
 
                                     'Parse the user input
-                                    PressedKey = Console.ReadKey().Key
+                                    PressedKey = DetectKeypress().Key
                                     Select Case PressedKey
                                         Case ConsoleKey.LeftArrow
                                             If CurrentValue > IntSliderMinimumValue Then CurrentValue -= 1
@@ -502,7 +502,7 @@ Namespace Misc.Configuration
                                     Wdbg(DebugLevel.W, "Option is not valid. Returning...")
                                     Write(DoTranslation("Specified option {0} is invalid."), True, color:=GetConsoleColor(ColTypes.Error), AnswerInt)
                                     Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                                    Console.ReadKey()
+                                    DetectKeypress()
                                 End If
                             Case SettingsKeyType.SSelection
                                 'We're dealing with selection
@@ -548,18 +548,18 @@ Namespace Misc.Configuration
                                         Wdbg(DebugLevel.W, "Answer is not valid.")
                                         Write(DoTranslation("The answer may not exceed the entries shown."), True, GetConsoleColor(ColTypes.Error))
                                         Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                                        Console.ReadKey()
+                                        DetectKeypress()
                                     End If
                                 ElseIf AnswerInt = 0 And Not SelectionEnumZeroBased Then
                                     Wdbg(DebugLevel.W, "Zero is not allowed.")
                                     Write(DoTranslation("The answer may not be zero."), True, GetConsoleColor(ColTypes.Error))
                                     Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                                    Console.ReadKey()
+                                    DetectKeypress()
                                 Else
                                     Wdbg(DebugLevel.W, "Negative values are disallowed.")
                                     Write(DoTranslation("The answer may not be negative."), True, GetConsoleColor(ColTypes.Error))
                                     Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                                    Console.ReadKey()
+                                    DetectKeypress()
                                 End If
                             Case SettingsKeyType.SInt
                                 'We're dealing with integers
@@ -581,7 +581,7 @@ Namespace Misc.Configuration
                                     Wdbg(DebugLevel.W, "Negative values are disallowed.")
                                     Write(DoTranslation("The answer may not be negative."), True, GetConsoleColor(ColTypes.Error))
                                     Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                                    Console.ReadKey()
+                                    DetectKeypress()
                                 End If
                             Case SettingsKeyType.SIntSlider
                                 'We're dealing with integers with limits
@@ -680,7 +680,7 @@ Namespace Misc.Configuration
                                 Wdbg(DebugLevel.W, "Answer is not valid.")
                                 Write(DoTranslation("The answer is invalid. Check to make sure that the answer is numeric for config entries that need numbers as answers."), True, GetConsoleColor(ColTypes.Error))
                                 Write(DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Error))
-                                Console.ReadKey()
+                                DetectKeypress()
                         End Select
                     End If
 #Enable Warning BC42104
@@ -693,7 +693,7 @@ Namespace Misc.Configuration
                 Write(NewLine + "X) " + DoTranslation("Invalid section entered. Please go back."), True, GetConsoleColor(ColTypes.Error))
                 Write("X) " + DoTranslation("If you're sure that you've opened the right section, check this message out:"), True, GetConsoleColor(ColTypes.Error))
                 Write("X) " + ex.Message, True, GetConsoleColor(ColTypes.Error))
-                Console.ReadKey()
+                DetectKeypress()
             End Try
         End Sub
 
@@ -739,7 +739,7 @@ Namespace Misc.Configuration
                 OpenKey(SectionName, KeyNumber, SettingsToken)
             Else
                 Write(DoTranslation("Nothing is found. Make sure that you've written the setting correctly."), True, GetConsoleColor(ColTypes.Error))
-                Console.ReadKey()
+                DetectKeypress()
             End If
         End Sub
 

@@ -55,12 +55,12 @@ Namespace Misc.Writers.ConsoleWriters
                             LinesMade += Console.CursorTop - OldTop
                             OldTop = Console.CursorTop
                             If LinesMade = Console.WindowHeight - 1 Then
-                                If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                                If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                                 LinesMade = 0
                             End If
                         Else
                             If Console.KeyAvailable Then
-                                If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                                If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                             End If
                         End If
                     Next
@@ -111,12 +111,12 @@ Namespace Misc.Writers.ConsoleWriters
                             LinesMade += Console.CursorTop - OldTop
                             OldTop = Console.CursorTop
                             If LinesMade = Console.WindowHeight - 1 Then
-                                If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                                If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                                 LinesMade = 0
                             End If
                         Else
                             If Console.KeyAvailable Then
-                                If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                                If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                             End If
                         End If
                     Next
@@ -167,12 +167,12 @@ Namespace Misc.Writers.ConsoleWriters
                             LinesMade += Console.CursorTop - OldTop
                             OldTop = Console.CursorTop
                             If LinesMade = Console.WindowHeight - 1 Then
-                                If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                                If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                                 LinesMade = 0
                             End If
                         Else
                             If Console.KeyAvailable Then
-                                If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                                If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                             End If
                         End If
                     Next
@@ -222,12 +222,12 @@ Namespace Misc.Writers.ConsoleWriters
                             LinesMade += Console.CursorTop - OldTop
                             OldTop = Console.CursorTop
                             If LinesMade = Console.WindowHeight - 1 Then
-                                If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                                If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                                 LinesMade = 0
                             End If
                         Else
                             If Console.KeyAvailable Then
-                                If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                                If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                             End If
                         End If
                     Next
@@ -280,12 +280,12 @@ Namespace Misc.Writers.ConsoleWriters
                             LinesMade += Console.CursorTop - OldTop
                             OldTop = Console.CursorTop
                             If LinesMade = Console.WindowHeight - 1 Then
-                                If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                                If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                                 LinesMade = 0
                             End If
                         Else
                             If Console.KeyAvailable Then
-                                If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                                If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                             End If
                         End If
                     Next
@@ -338,12 +338,12 @@ Namespace Misc.Writers.ConsoleWriters
                             LinesMade += Console.CursorTop - OldTop
                             OldTop = Console.CursorTop
                             If LinesMade = Console.WindowHeight - 1 Then
-                                If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                                If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                                 LinesMade = 0
                             End If
                         Else
                             If Console.KeyAvailable Then
-                                If Console.ReadKey(True).Key = ConsoleKey.Escape Then Exit For
+                                If DetectKeypress().Key = ConsoleKey.Escape Then Exit For
                             End If
                         End If
                     Next

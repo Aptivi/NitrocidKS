@@ -187,7 +187,7 @@ Namespace Languages
                 'Gangsta language contains strong language, so warn the user before setting
                 If lang = "pla" Then
                     Write(DoTranslation("The gangsta language contains strong language that may make you feel uncomfortable reading it. Are you sure that you want to set the language anyways?"), True, GetConsoleColor(ColTypes.Warning))
-                    If Console.ReadKey(True).Key <> ConsoleKey.Y Then
+                    If DetectKeypress().Key <> ConsoleKey.Y Then
                         Exit Sub
                     End If
                 End If

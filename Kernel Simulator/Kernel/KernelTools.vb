@@ -126,7 +126,7 @@ Namespace Kernel
                         KernelEventManager.RaiseContKernelError(ErrorType, Reboot, RebootTime, Description, Exc, Variables)
                         Write(DoTranslation("[{0}] panic: {1} -- Press any key to continue using the kernel."), True, color:=GetConsoleColor(ColTypes.Continuable), ErrorType, Description)
                         If ShowStackTraceOnKernelError And Exc IsNot Nothing Then Write(Exc.StackTrace, True, GetConsoleColor(ColTypes.Continuable))
-                        Console.ReadKey()
+                        DetectKeypress()
                     Case Else
                         If Reboot Then
                             'Offer the user to wait for the set time interval before the kernel reboots.
@@ -140,7 +140,7 @@ Namespace Kernel
                             Wdbg(DebugLevel.W, "Reboot is False, ErrorType is not double or continuable.")
                             Write(DoTranslation("[{0}] panic: {1} -- Press any key to shutdown."), True, color:=GetConsoleColor(ColTypes.Uncontinuable), ErrorType, Description)
                             If ShowStackTraceOnKernelError And Exc IsNot Nothing Then Write(Exc.StackTrace, True, GetConsoleColor(ColTypes.Uncontinuable))
-                            Console.ReadKey()
+                            DetectKeypress()
                             PowerManage(PowerMode.Shutdown)
                         End If
                 End Select

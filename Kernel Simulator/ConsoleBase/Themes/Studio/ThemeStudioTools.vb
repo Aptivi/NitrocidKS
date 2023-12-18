@@ -525,7 +525,7 @@ Namespace ConsoleBase.Themes.Studio
 
             'Pause until a key is pressed
             Write(NewLine + DoTranslation("Press any key to go back."), True, GetConsoleColor(ColTypes.Neutral))
-            Console.ReadKey()
+            DetectKeypress()
         End Sub
 
     End Module

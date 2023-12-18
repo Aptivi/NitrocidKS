@@ -46,7 +46,7 @@ Namespace ManPages
                     Write(DoTranslation("This manual page needs work for:"), True, GetConsoleColor(ColTypes.Warning))
                     WriteList(Pages(ManualTitle).Todos, True)
                     Write(NewLine + DoTranslation("Press any key to read the manual page..."), False, GetConsoleColor(ColTypes.Warning))
-                    Console.ReadKey()
+                    DetectKeypress()
                 End If
 
                 'Clear screen for readability
@@ -118,7 +118,7 @@ Namespace ManPages
 
                     'Check to see if we're at the end
                     If Console.CursorTop = InfoPlace - 1 Then
-                        Dim PressedKey As ConsoleKeyInfo = Console.ReadKey()
+                        Dim PressedKey As ConsoleKeyInfo = DetectKeypress()
                         If PressedKey.Key = ConsoleKey.Escape Then
                             Console.Clear()
                             Exit Sub
@@ -135,7 +135,7 @@ Namespace ManPages
 
                 'Stop on last page
                 Wdbg(DebugLevel.I, "We're on the last page.")
-                Console.ReadKey()
+                DetectKeypress()
 
                 'Clean up
                 Wdbg(DebugLevel.I, "Exiting...")

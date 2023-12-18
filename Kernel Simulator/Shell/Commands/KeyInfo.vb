@@ -23,7 +23,7 @@ Namespace Shell.Commands
 
         Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
             Write(DoTranslation("Enter a key or a combination of keys to display its information."), True, GetConsoleColor(ColTypes.Neutral))
-            Dim KeyPress As ConsoleKeyInfo = Console.ReadKey(True)
+            Dim KeyPress As ConsoleKeyInfo = DetectKeypress()
 
             'Pressed key
             Write("- " + DoTranslation("Pressed key") + ": ", False, GetConsoleColor(ColTypes.ListEntry))

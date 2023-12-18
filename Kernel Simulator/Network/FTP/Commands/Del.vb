@@ -30,7 +30,7 @@ Namespace Network.FTP.Commands
 
                 'Make a confirmation message so user will not accidentally delete a file or folder
                 Write(DoTranslation("Are you sure you want to delete {0} <y/n>?") + " ", False, color:=GetConsoleColor(ColTypes.Input), ListArgs(0))
-                Dim answer As String = Console.ReadKey.KeyChar
+                Dim answer As String = DetectKeypress().KeyChar
                 Console.WriteLine()
 
                 Try
