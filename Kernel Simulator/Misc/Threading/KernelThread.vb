@@ -101,6 +101,8 @@ Namespace Misc.Threading
         Public Sub [Stop]()
             Wdbg(DebugLevel.I, "Stopping kernel thread {0} with ID {1}", Name, BaseThread.ManagedThreadId)
             BaseThread.Interrupt()
+            If IsAlive Then _
+                Wait(60000)
 
             'Remake the thread to avoid illegal state exceptions
             If IsParameterized Then
