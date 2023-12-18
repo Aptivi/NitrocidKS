@@ -94,6 +94,7 @@ Namespace Shell
             {"http", New CommandInfo("http", ShellType.Shell, "Starts the HTTP shell", New CommandArgumentInfo(Array.Empty(Of String), False, 0), New HttpCommand)},
             {"hwinfo", New CommandInfo("hwinfo", ShellType.Shell, "Prints hardware information", New CommandArgumentInfo({"<HardwareType>"}, True, 1), New HwInfoCommand, False, True)},
             {"if", New CommandInfo("if", ShellType.Shell, "Executes commands once the UESH expressions are satisfied", New CommandArgumentInfo({"<uesh-expression> <command>"}, True, 2), New IfCommand)},
+            {"ifm", New CommandInfo("ifm", ShellType.Shell, "Interactive system host file manager", New CommandArgumentInfo({"[firstPanePath] [secondPanePath]"}, False, 0), New IfmCommand)},
             {"input", New CommandInfo("input", ShellType.Shell, "Allows user to enter input", New CommandArgumentInfo({"<$variable> <question>"}, True, 2), New InputCommand, False, False, False, False, True)},
             {"jsonbeautify", New CommandInfo("jsonbeautify", ShellType.Shell, "Beautifies the JSON file", New CommandArgumentInfo({"<jsonfile> [output]"}, True, 1), New JsonBeautifyCommand, False, True)},
             {"jsonminify", New CommandInfo("jsonminify", ShellType.Shell, "Minifies the JSON file", New CommandArgumentInfo({"<jsonfile> [output]"}, True, 1), New JsonMinifyCommand, False, True)},

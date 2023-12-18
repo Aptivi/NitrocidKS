@@ -367,6 +367,9 @@ Namespace Kernel
             'Install cancellation handler
             If Not CancellationHandlerInstalled Then AddHandler Console.CancelKeyPress, AddressOf CancelCommand
 
+            'Initialize resize listener
+            ConsoleResizeListener.StartResizeListener()
+
             'Initialize aliases
             InitAliases()
 
