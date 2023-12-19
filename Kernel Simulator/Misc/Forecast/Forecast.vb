@@ -86,7 +86,7 @@ Namespace Misc.Forecast
                 WeatherInfo = GetWeatherInfo(CityID, APIKey)
             End If
             Wdbg(DebugLevel.I, "City name: {0}, City ID: {1}", WeatherInfo.CityName, WeatherInfo.CityID)
-            WriteSeparator(DoTranslation("-- Weather info for {0} --"), False, WeatherInfo.CityName)
+            WriteSeparator(DoTranslation("-- Weather info for {0} --"), False, ColTypes:=ColTypes.Separator, WeatherInfo.CityName)
             Write(DoTranslation("Weather: {0}"), True, color:=GetConsoleColor(ColTypes.Neutral), WeatherInfo.Weather)
             If WeatherInfo.TemperatureMeasurement = UnitMeasurement.Metric Then
                 WeatherSpecifier += "C"
