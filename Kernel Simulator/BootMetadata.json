@@ -1,22 +1,22 @@
 [
     {
-        "OverrideTitle": "Kernel Simulator 0.0.24.15",
+        "OverrideTitle": "Kernel Simulator 0.0.24.16",
         "Arguments": []
     },
     {
-        "OverrideTitle": "Kernel Simulator 0.0.24.15 - args",
+        "OverrideTitle": "Kernel Simulator 0.0.24.16 - args",
         "Arguments": [ "args" ]
     },
     {
-        "OverrideTitle": "Kernel Simulator 0.0.24.15 - debug",
+        "OverrideTitle": "Kernel Simulator 0.0.24.16 - debug",
         "Arguments": [ "debug" ]
     },
     {
-        "OverrideTitle": "Kernel Simulator 0.0.24.15 - test shell",
+        "OverrideTitle": "Kernel Simulator 0.0.24.16 - test shell",
         "Arguments": [ "testInteractive" ]
     },
     {
-        "OverrideTitle": "Kernel Simulator 0.0.24.15 - force on small console",
+        "OverrideTitle": "Kernel Simulator 0.0.24.16 - force on small console",
         "Arguments": [ "bypasssizedetection" ]
     }
 ]
