@@ -21,7 +21,6 @@ Imports System.Text
 Imports System.Threading
 Imports KS.Misc.Notifications
 Imports KS.Misc.Screensaver
-Imports Renci.SshNet.Security
 
 Namespace Network.RPC
     ''' <summary>

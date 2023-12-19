@@ -23,7 +23,6 @@ Imports System.Threading
 Imports System.Threading.Tasks
 Imports KS.Files.Folders
 Imports KS.Misc.Notifications
-Imports Terminaux.Base
 
 Namespace Network.Transfer
     Public Module NetworkTransfer

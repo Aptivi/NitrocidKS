@@ -35,12 +35,12 @@ using KS.Network.RPC;
 using KS.Network.SSH;
 using KS.Shell;
 using MadMilkman.Ini;
-using ManagedWeatherMap.Core;
+using Nettify.Weather;
 using Terminaux.Colors;
 
 namespace KSConverter
 {
-    static class FivePointFive
+	static class FivePointFive
     {
         /// <summary>
         /// Takes configuration values and installs them to appropriate variables.

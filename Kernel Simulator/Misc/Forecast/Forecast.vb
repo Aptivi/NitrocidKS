@@ -16,8 +16,8 @@
 '    You should have received a copy of the GNU General Public License
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Imports ManagedWeatherMap.Core
 Imports KS.Misc.Reflection
+Imports Nettify.Weather
 
 Namespace Misc.Forecast
     Public Module Forecast
@@ -30,8 +30,8 @@ Namespace Misc.Forecast
         ''' </summary>
         ''' <param name="CityID">City ID</param>
         ''' <returns>A class containing properties of weather information</returns>
-        Public Function GetWeatherInfo(CityID As Long) As ForecastInfo
-            Return ManagedWeatherMap.Core.Forecast.GetWeatherInfo(CityID:=CityID, ApiKey, PreferredUnit)
+        Public Function GetWeatherInfo(CityID As Long) As WeatherForecastInfo
+            Return WeatherForecast.GetWeatherInfo(CityID:=CityID, ApiKey, PreferredUnit)
         End Function
 
         ''' <summary>
@@ -40,8 +40,8 @@ Namespace Misc.Forecast
         ''' <param name="CityID">City ID</param>
         ''' <param name="APIKey">API key</param>
         ''' <returns>A class containing properties of weather information</returns>
-        Public Function GetWeatherInfo(CityID As Long, APIKey As String) As ForecastInfo
-            Return ManagedWeatherMap.Core.Forecast.GetWeatherInfo(CityID:=CityID, APIKey, PreferredUnit)
+        Public Function GetWeatherInfo(CityID As Long, APIKey As String) As WeatherForecastInfo
+            Return WeatherForecast.GetWeatherInfo(CityID:=CityID, APIKey, PreferredUnit)
         End Function
 
         ''' <summary>
@@ -49,8 +49,8 @@ Namespace Misc.Forecast
         ''' </summary>
         ''' <param name="CityName">City name</param>
         ''' <returns>A class containing properties of weather information</returns>
-        Public Function GetWeatherInfo(CityName As String) As ForecastInfo
-            Return ManagedWeatherMap.Core.Forecast.GetWeatherInfo(CityName:=CityName, ApiKey, PreferredUnit)
+        Public Function GetWeatherInfo(CityName As String) As WeatherForecastInfo
+            Return WeatherForecast.GetWeatherInfo(CityName:=CityName, ApiKey, PreferredUnit)
         End Function
 
         ''' <summary>
@@ -59,8 +59,8 @@ Namespace Misc.Forecast
         ''' <param name="CityName">City name</param>
         ''' <param name="APIKey">API key</param>
         ''' <returns>A class containing properties of weather information</returns>
-        Public Function GetWeatherInfo(CityName As String, APIKey As String) As ForecastInfo
-            Return ManagedWeatherMap.Core.Forecast.GetWeatherInfo(CityName:=CityName, APIKey, PreferredUnit)
+        Public Function GetWeatherInfo(CityName As String, APIKey As String) As WeatherForecastInfo
+            Return WeatherForecast.GetWeatherInfo(CityName:=CityName, APIKey, PreferredUnit)
         End Function
 
         ''' <summary>
@@ -77,7 +77,7 @@ Namespace Misc.Forecast
         ''' <param name="CityID">City ID or name</param>
         ''' <param name="APIKey">API Key</param>
         Public Sub PrintWeatherInfo(CityID As String, APIKey As String)
-            Dim WeatherInfo As ForecastInfo
+            Dim WeatherInfo As WeatherForecastInfo
             Dim WeatherSpecifier As String = "°"
             Dim WindSpeedSpecifier As String = "m.s"
             If IsStringNumeric(CityID) Then

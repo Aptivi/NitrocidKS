@@ -18,7 +18,6 @@
 
 Imports KS.Misc.Calendar.Events
 Imports KS.Misc.Calendar.Reminders
-Imports KS.Misc.Writers.FancyWriters.Tools
 Imports Terminaux.Writer.FancyWriters.Tools
 
 Namespace Misc.Calendar

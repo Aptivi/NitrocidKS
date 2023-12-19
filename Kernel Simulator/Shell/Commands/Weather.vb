@@ -17,6 +17,7 @@
 '    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Imports KS.Misc.Forecast
+Imports Nettify.Weather
 
 Namespace Shell.Commands
     Class WeatherCommand
@@ -27,7 +28,7 @@ Namespace Shell.Commands
             Dim ListMode As Boolean
             If ListSwitchesOnly.Contains("-list") Then ListMode = True
             If ListMode Then
-                Dim Cities As Dictionary(Of Long, String) = ManagedWeatherMap.Core.Forecast.ListAllCities()
+                Dim Cities As Dictionary(Of Long, String) = WeatherForecast.ListAllCities()
                 WriteList(Cities)
             Else
                 Dim APIKey As String = Forecast.ApiKey

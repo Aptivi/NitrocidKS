@@ -953,17 +953,17 @@
                 "Variable": "LongTimeDate",
                 "Description": "The time and date will be longer, showing full month names, etc."
             },
-            {
-                "Name": "Preferred Unit for Temperature",
-                "Type": "SSelection",
-                "Variable": "PreferredUnit",
-                "IsEnumeration": true,
-                "EnumerationInternal": false,
-                "Enumeration": "ManagedWeatherMap.Core.UnitMeasurement",
-                "EnumerationAssembly": "ManagedWeatherMap",
-                "EnumerationZeroBased": false,
-                "Description": "Select your preferred unit for temperature (this only applies to the \"weather\" command)"
-            },
+          {
+            "Name": "Preferred Unit for Temperature",
+            "Type": "SSelection",
+            "Variable": "PreferredUnit",
+            "IsEnumeration": true,
+            "EnumerationInternal": false,
+            "Enumeration": "Nettify.Weather.UnitMeasurement",
+            "EnumerationAssembly": "Nettify",
+            "EnumerationZeroBased": false,
+            "Description": "Select your preferred unit for temperature (this only applies to the \"weather\" command)"
+          },
             {
                 "Name": "Enable text editor autosave",
                 "Type": "SBoolean",
