@@ -111,7 +111,7 @@ namespace KS.Misc.Writers.DebugWriters
                         }
                     }
 #if ENABLEIMMEDIATEWINDOWDEBUG
-						Debug.WriteLine($"{KernelDateTime.ToShortDateString} {KernelDateTime.ToShortTimeString} [{Level}] ({Func} - {Source}:{LineNum}): {text}", vars);
+                        Debug.WriteLine($"{KernelDateTime.ToShortDateString} {KernelDateTime.ToShortTimeString} [{Level}] ({Func} - {Source}:{LineNum}): {text}", vars);
 #endif
                     else // Rare case, unless debug symbol is not found on archives.
                     {
@@ -129,7 +129,7 @@ namespace KS.Misc.Writers.DebugWriters
                             }
                         }
 #if ENABLEIMMEDIATEWINDOWDEBUG
-							Debug.WriteLine($"{KernelDateTime.ToShortDateString} {KernelDateTime.ToShortTimeString}: [{Level}] {text}", vars)
+                            Debug.WriteLine($"{KernelDateTime.ToShortDateString} {KernelDateTime.ToShortTimeString}: [{Level}] {text}", vars)
 #endif
                     }
 
@@ -191,7 +191,7 @@ namespace KS.Misc.Writers.DebugWriters
                     }
                 }
 #if ENABLEIMMEDIATEWINDOWDEBUG
-							Debug.WriteLine($"{KernelDateTime.ToShortDateString} {KernelDateTime.ToShortTimeString}: [{Level}] {text}", vars)
+                            Debug.WriteLine($"{KernelDateTime.ToShortDateString} {KernelDateTime.ToShortTimeString}: [{Level}] {text}", vars)
 #endif
                 // Disconnect offending clients who are disconnected
                 foreach (int i in OffendingIndex)

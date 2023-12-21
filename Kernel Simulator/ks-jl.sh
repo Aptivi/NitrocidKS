@@ -18,9 +18,9 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 if [ -e "/usr/lib/ks/KSJsonifyLocales.exe" ]; then
-	mono "/usr/lib/ks/KSJsonifyLocales.exe" $@
+    mono "/usr/lib/ks/KSJsonifyLocales.exe" $@
 elif [ -e "./KSJsonifyLocales.exe" ]; then
-	mono "./KSJsonifyLocales.exe" $@
+    mono "./KSJsonifyLocales.exe" $@
 else
-	echo "Unable to find the entry point."
+    echo "Unable to find the entry point."
 fi

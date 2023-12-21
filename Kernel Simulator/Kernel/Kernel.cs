@@ -90,22 +90,22 @@ namespace KS.Kernel
 
         // #ifdef'd variables
 #if NETCOREAPP
-		internal const string KernelSimulatorMoniker = ".NET CoreCLR";
+        internal const string KernelSimulatorMoniker = ".NET CoreCLR";
 #else
         internal const string KernelSimulatorMoniker = ".NET Framework";
 #endif
 #if SPECIFIERREL
-		internal readonly static string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker}";
+        internal readonly static string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker}";
 #elif SPECIFIERRC
-		internal readonly static string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker} - Release Candidate";
+        internal readonly static string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker} - Release Candidate";
 #elif SPECIFIERDEV
 #if MILESTONE
-		internal readonly static string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker} - Developer Preview - Milestone 1";
+        internal readonly static string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker} - Developer Preview - Milestone 1";
 #else
         internal static readonly string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker} - Developer Preview";
 #endif
 #else
-		internal readonly static string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker} - Unsupported Release";
+        internal readonly static string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker} - Unsupported Release";
 #endif
         /// <summary>
         /// Entry point
@@ -141,28 +141,28 @@ namespace KS.Kernel
 
                     // Download debug symbols if not found (loads automatically, useful for debugging problems and stack traces)
 #if SPECIFIERREL
-					if (!NetworkTools.NetworkAvailable)
-					{
+                    if (!NetworkTools.NetworkAvailable)
+                    {
                         Notifications.NotifySend(
                             new Notification(
                                 Translate.DoTranslation("No network while downloading debug data"),
                                 Translate.DoTranslation("Check your internet connection and try again."),
                                 Notifications.NotifPriority.Medium, Notifications.NotifType.Normal
                             ));
-					}
-					if (NetworkTools.NetworkAvailable)
-					{
-						if (!Checking.FileExists(GetExecutingAssembly().Location.Replace(".exe", ".pdb")))
-						{
-							try
-							{
+                    }
+                    if (NetworkTools.NetworkAvailable)
+                    {
+                        if (!Checking.FileExists(GetExecutingAssembly().Location.Replace(".exe", ".pdb")))
+                        {
+                            try
+                            {
 #if NETCOREAPP
-								NetworkTransfer.DownloadFile($"https://github.com/Aptivi/NitrocidKS/releases/download/v{KernelVersion}-beta/{KernelVersion}-dotnet.pdb", false, Assembly.GetExecutingAssembly().Location.Replace(".exe", ".pdb"));
+                                NetworkTransfer.DownloadFile($"https://github.com/Aptivi/NitrocidKS/releases/download/v{KernelVersion}-beta/{KernelVersion}-dotnet.pdb", false, Assembly.GetExecutingAssembly().Location.Replace(".exe", ".pdb"));
 #else
                                 NetworkTransfer.DownloadFile($"https://github.com/Aptivi/NitrocidKS/releases/download/v{KernelVersion}-beta/{KernelVersion}.pdb", false, Assembly.GetExecutingAssembly().Location.Replace(".exe", ".pdb"));
 #endif
-							}
-							catch (Exception)
+                            }
+                            catch (Exception)
                             {
                                 Notifications.NotifySend(
                                     new Notification(
@@ -170,9 +170,9 @@ namespace KS.Kernel
                                         Translate.DoTranslation("There is an error while downloading debug data. Check your internet connection."),
                                         Notifications.NotifPriority.Medium, Notifications.NotifType.Normal
                                     ));
-							}
-						}
-					}
+                            }
+                        }
+                    }
 #endif
                     // Check for console size
                     if (Flags.CheckingForConsoleSize)
@@ -229,8 +229,8 @@ namespace KS.Kernel
 
                     // Check for kernel updates
 #if SPECIFIERREL
-					if (Flags.CheckUpdateStart)
-							KernelTools.CheckKernelUpdates();
+                    if (Flags.CheckUpdateStart)
+                            KernelTools.CheckKernelUpdates();
 #endif
 
                     // Phase 2: Probe hardware

@@ -22,20 +22,20 @@ unrarexistent=$?
 
 # Run the entry point
 if [ -e "/usr/lib/ks/Kernel Simulator.exe" ]; then
-	mono "/usr/lib/ks/Kernel Simulator.exe" $@
+    mono "/usr/lib/ks/Kernel Simulator.exe" $@
 elif [ -e "./Kernel Simulator.exe" ]; then
-	mono "./Kernel Simulator.exe" $@
+    mono "./Kernel Simulator.exe" $@
 else
-	echo "Unable to find the entry point."
+    echo "Unable to find the entry point."
 fi
 
 # Check to see if we have unrar and update.rar
 if [ ! $unrarexistent == 0 ]; then
-	echo unrar is not found.
-	exit 1
+    echo unrar is not found.
+    exit 1
 fi
 if [ -e "./update.rar" ]; then
-	# TODO: We only support update.rar located in the current directory.
-	echo Update found. Installing...
-	"$unrarpath" x -ep1 -r "./update.rar"
+    # TODO: We only support update.rar located in the current directory.
+    echo Update found. Installing...
+    "$unrarpath" x -ep1 -r "./update.rar"
 fi

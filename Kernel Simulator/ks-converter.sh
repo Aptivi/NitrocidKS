@@ -18,9 +18,9 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 if [ -e "/usr/lib/ks/KSConverter.exe" ]; then
-	mono "/usr/lib/ks/KSConverter.exe" $@
+    mono "/usr/lib/ks/KSConverter.exe" $@
 elif [ -e "./KSConverter.exe" ]; then
-	mono "./KSConverter.exe" $@
+    mono "./KSConverter.exe" $@
 else
-	echo "Unable to find the entry point."
+    echo "Unable to find the entry point."
 fi

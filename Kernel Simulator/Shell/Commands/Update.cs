@@ -21,6 +21,10 @@ using KS.Shell.ShellBase.Commands;
 
 #if SPECIFIERREL
 using KS.Kernel;
+#else
+using KS.ConsoleBase.Colors;
+using KS.Languages;
+using KS.Misc.Writers.ConsoleWriters;
 #endif
 
 namespace KS.Shell.Commands
@@ -31,7 +35,7 @@ namespace KS.Shell.Commands
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
 #if SPECIFIERREL
-			KernelTools.CheckKernelUpdates();
+            KernelTools.CheckKernelUpdates();
 #else
             TextWriterColor.Write(Translate.DoTranslation("Checking for updates is disabled because you're running a development version."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
 #endif

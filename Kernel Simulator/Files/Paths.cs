@@ -88,14 +88,14 @@ namespace KS.Files
             get
             {
 #if NETCOREAPP
-				if (PlatformDetector.IsOnUnix())
-				{
-					return Environment.GetEnvironmentVariable("HOME") + "/.config/retroks/exec/coreclr";
-				}
-				else
-				{
-					return (Environment.GetEnvironmentVariable("LOCALAPPDATA") + "/RetroKS/exec/coreclr").Replace(@"\", "/");
-				}
+                if (PlatformDetector.IsOnUnix())
+                {
+                    return Environment.GetEnvironmentVariable("HOME") + "/.config/retroks/exec/coreclr";
+                }
+                else
+                {
+                    return (Environment.GetEnvironmentVariable("LOCALAPPDATA") + "/RetroKS/exec/coreclr").Replace(@"\", "/");
+                }
 #else
                 if (PlatformDetector.IsOnUnix())
                 {

@@ -97,7 +97,7 @@ namespace KS.Kernel
                 {
                     string url = (string)asset["browser_download_url"];
 #if NETCOREAPP
-					if (url.EndsWith("-bin-dotnet.zip") || url.EndsWith("-bin-dotnet.rar"))
+                    if (url.EndsWith("-bin-dotnet.zip") || url.EndsWith("-bin-dotnet.rar"))
 #else
                     if (url.EndsWith("-bin.zip") || url.EndsWith("-bin.rar"))
 #endif

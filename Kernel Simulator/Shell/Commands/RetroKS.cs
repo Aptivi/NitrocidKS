@@ -64,7 +64,7 @@ namespace KS.Shell.Commands
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
 #if NETCOREAPP
-			string ExecutableName = "RetroKS.dll";
+            string ExecutableName = "RetroKS.dll";
 #else
             string ExecutableName = "RetroKS.exe";
 #endif
@@ -93,7 +93,7 @@ namespace KS.Shell.Commands
                 string RetroKSURL;
                 var RetroKSAssets = RetroKS.SelectToken("assets");
 #if NETCOREAPP
-				RetroKSURL = (string)RetroKSAssets[0]["browser_download_url"];
+                RetroKSURL = (string)RetroKSAssets[0]["browser_download_url"];
 #else
                 if (RetroKSAssets.Count() > 1)
                 {
