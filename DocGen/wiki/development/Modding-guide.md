@@ -98,7 +98,7 @@ Class MyModCommand
     Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
         If StringArgs = "Something" Then
             'Write your code
-        End If
+        endif
     End Sub
 
 End Class
@@ -112,7 +112,7 @@ Class MyModCommand
     Public Overrides Sub Execute(StringArgs As String, ListArgs() As String, ListArgsOnly As String(), ListSwitchesOnly As String()) Implements ICommand.Execute
         If ListArgsOnly(0) = "Arg1" Then
             'Write your code for the first argument
-        End If
+        endif
     End Sub
 
 End Class
@@ -124,7 +124,7 @@ Sub InitEvents(ByVal ev As String) Implements IScript.InitEvents
     'Replace EventName with events that are found on "Events for Mod Developers"
     If ev = "EventName" Then
         'Your code below
-    End If
+    endif
 End Sub
 ```
    ii) If you're handling multiple events, write the handle code below:
@@ -135,7 +135,7 @@ Sub InitEvents(ByVal ev As String) Implements IScript.InitEvents
         'Your code below
     ElseIf ev = "AnotherEvent" Then
         'Your code below
-    End If
+    endif
 End Sub
 ```
    iii) IMPORTANT NOTICE! Never try to use infinite loops in handlers unless you're making infinite loops that exits if the specified condition is met, or in the test environment. That will lock the kernel up.
@@ -148,7 +148,7 @@ Sub InitEvents(ByVal ev As String, ParamArray Args As Object()) Implements IScri
         'Your code below
     ElseIf ev = "AnotherEvent" Then
         'Your code below
-    End If
+    endif
 End Sub
 ```
 9. Right-click on the solution and press Build.

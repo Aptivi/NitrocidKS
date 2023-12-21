@@ -135,7 +135,7 @@ The back message box screensaver tells people that the computer owner is gone, o
     ConsoleWrapper.Clear()
     If Custom.CancellationPending = True Then 'This will fix the issue for the task being busy.
         Exit Sub
-    End If
+    endif
     Dim SOR_Integer As Integer = SOR_Random.Next(1, 4) 'Chooses whether it's Soon, Overnight or Rude
     Dim Soon_MsgID As Integer = SOR_Random.Next(0, 2) 'Selects messages in the Soon array
     Dim Over_MsgID As Integer = SOR_Random.Next(0, 2) 'Selects messages in the Overnight array
