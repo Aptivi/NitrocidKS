@@ -100,8 +100,8 @@ namespace KS.Kernel
 					if (url.EndsWith("-bin-dotnet.zip") || url.EndsWith("-bin-dotnet.rar"))
 #else
                     if (url.EndsWith("-bin.zip") || url.EndsWith("-bin.rar"))
-                    {
 #endif
+                    {
                         KernelUpdateURL = url;
                         break;
                     }

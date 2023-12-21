@@ -93,7 +93,7 @@ namespace KS.Shell.Commands
                 string RetroKSURL;
                 var RetroKSAssets = RetroKS.SelectToken("assets");
 #if NETCOREAPP
-				RetroKSURL = RetroKSAssets[0]["browser_download_url"];
+				RetroKSURL = (string)RetroKSAssets[0]["browser_download_url"];
 #else
                 if (RetroKSAssets.Count() > 1)
                 {

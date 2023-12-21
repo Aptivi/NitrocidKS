@@ -70,6 +70,7 @@ using TermExts = Terminaux.Base.ConsoleExtensions;
 #if SPECIFIERREL
 using KS.Network;
 using KS.Network.Transfer;
+using System.Reflection;
 #endif
 
 namespace KS.Kernel
@@ -140,29 +141,35 @@ namespace KS.Kernel
 
                     // Download debug symbols if not found (loads automatically, useful for debugging problems and stack traces)
 #if SPECIFIERREL
-					if (!NetworkAvailable)
+					if (!NetworkTools.NetworkAvailable)
 					{
-						Notifications.NotifySend(New Notification(Translate.DoTranslation("No network while downloading debug data"),
-							Translate.DoTranslation("Check your internet connection and try again."),
-							NotifPriority.Medium, NotifType.Normal))
+                        Notifications.NotifySend(
+                            new Notification(
+                                Translate.DoTranslation("No network while downloading debug data"),
+                                Translate.DoTranslation("Check your internet connection and try again."),
+                                Notifications.NotifPriority.Medium, Notifications.NotifType.Normal
+                            ));
 					}
-					if (NetworkAvailable)
+					if (NetworkTools.NetworkAvailable)
 					{
-						if (!Checking.FileExists(Assembly.GetExecutingAssembly().Location.Replace(".exe", ".pdb")))
+						if (!Checking.FileExists(GetExecutingAssembly().Location.Replace(".exe", ".pdb")))
 						{
 							try
 							{
 #if NETCOREAPP
-								NetworkTransfer.DownloadFile($"https://github.com/Aptivi/NitrocidKS/releases/download/v{KernelVersion}-beta/{KernelVersion}-dotnet.pdb", false, Assembly.GetExecutingAssembly().Location.Replace(".exe", ".pdb"))
+								NetworkTransfer.DownloadFile($"https://github.com/Aptivi/NitrocidKS/releases/download/v{KernelVersion}-beta/{KernelVersion}-dotnet.pdb", false, Assembly.GetExecutingAssembly().Location.Replace(".exe", ".pdb"));
 #else
-								NetworkTransfer.DownloadFile($"https://github.com/Aptivi/NitrocidKS/releases/download/v{KernelVersion}-beta/{KernelVersion}.pdb", false, Assembly.GetExecutingAssembly().Location.Replace(".exe", ".pdb"))
+                                NetworkTransfer.DownloadFile($"https://github.com/Aptivi/NitrocidKS/releases/download/v{KernelVersion}-beta/{KernelVersion}.pdb", false, Assembly.GetExecutingAssembly().Location.Replace(".exe", ".pdb"));
 #endif
 							}
-							catch (Exception ex)
-							{
-								Notifications.NotifySend(New Notification(Translate.DoTranslation("Error downloading debug data"),
-									Translate.DoTranslation("There is an error while downloading debug data. Check your internet connection."),
-									NotifPriority.Medium, NotifType.Normal))
+							catch (Exception)
+                            {
+                                Notifications.NotifySend(
+                                    new Notification(
+                                        Translate.DoTranslation("Error downloading debug data"),
+                                        Translate.DoTranslation("There is an error while downloading debug data. Check your internet connection."),
+                                        Notifications.NotifPriority.Medium, Notifications.NotifType.Normal
+                                    ));
 							}
 						}
 					}
